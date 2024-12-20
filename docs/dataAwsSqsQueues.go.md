@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsSqsQueues.DataAwsSqsQueues.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawssqsqueues"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssqsqueues"
 
 dataawssqsqueues.NewDataAwsSqsQueues(scope Construct, id *string, config DataAwsSqsQueuesConfig) DataAwsSqsQueues
 ```
@@ -290,7 +290,7 @@ func ResetQueueNamePrefix()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsSqsQueues.DataAwsSqsQueues.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawssqsqueues"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssqsqueues"
 
 dataawssqsqueues.DataAwsSqsQueues_IsConstruct(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsSqsQueues.DataAwsSqsQueues.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawssqsqueues"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssqsqueues"
 
 dataawssqsqueues.DataAwsSqsQueues_IsTerraformElement(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ dataawssqsqueues.DataAwsSqsQueues_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsSqsQueues.DataAwsSqsQueues.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawssqsqueues"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssqsqueues"
 
 dataawssqsqueues.DataAwsSqsQueues_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ dataawssqsqueues.DataAwsSqsQueues_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsSqsQueues.DataAwsSqsQueues.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawssqsqueues"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssqsqueues"
 
 dataawssqsqueues.DataAwsSqsQueues_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -612,7 +612,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsSqsQueues.DataAwsSqsQueuesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawssqsqueues"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssqsqueues"
 
 &dataawssqsqueues.DataAwsSqsQueuesConfig {
 	Connection: interface{},
