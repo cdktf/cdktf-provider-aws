@@ -4,12 +4,12 @@
 
 ### DataAwsServicePrincipal <a name="DataAwsServicePrincipal" id="@cdktf/provider-aws.dataAwsServicePrincipal.DataAwsServicePrincipal"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/data-sources/service_principal aws_service_principal}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/data-sources/service_principal aws_service_principal}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsServicePrincipal.DataAwsServicePrincipal.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsserviceprincipal"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsserviceprincipal"
 
 dataawsserviceprincipal.NewDataAwsServicePrincipal(scope Construct, id *string, config DataAwsServicePrincipalConfig) DataAwsServicePrincipal
 ```
@@ -283,7 +283,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsServicePrincipal.DataAwsServicePrincipal.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsserviceprincipal"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsserviceprincipal"
 
 dataawsserviceprincipal.DataAwsServicePrincipal_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsServicePrincipal.DataAwsServicePrincipal.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsserviceprincipal"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsserviceprincipal"
 
 dataawsserviceprincipal.DataAwsServicePrincipal_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ dataawsserviceprincipal.DataAwsServicePrincipal_IsTerraformElement(x interface{}
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsServicePrincipal.DataAwsServicePrincipal.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsserviceprincipal"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsserviceprincipal"
 
 dataawsserviceprincipal.DataAwsServicePrincipal_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ dataawsserviceprincipal.DataAwsServicePrincipal_IsTerraformDataSource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsServicePrincipal.DataAwsServicePrincipal.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsserviceprincipal"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsserviceprincipal"
 
 dataawsserviceprincipal.DataAwsServicePrincipal_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -372,7 +372,7 @@ The construct id used in the generated config for the DataAwsServicePrincipal to
 
 The id of the existing DataAwsServicePrincipal that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/data-sources/service_principal#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/data-sources/service_principal#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -627,7 +627,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsServicePrincipal.DataAwsServicePrincipalConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsserviceprincipal"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsserviceprincipal"
 
 &dataawsserviceprincipal.DataAwsServicePrincipalConfig {
 	Connection: interface{},
@@ -653,8 +653,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsserviceprincipal"
 | <code><a href="#@cdktf/provider-aws.dataAwsServicePrincipal.DataAwsServicePrincipalConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsServicePrincipal.DataAwsServicePrincipalConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsServicePrincipal.DataAwsServicePrincipalConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsServicePrincipal.DataAwsServicePrincipalConfig.property.serviceName">ServiceName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/data-sources/service_principal#service_name DataAwsServicePrincipal#service_name}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsServicePrincipal.DataAwsServicePrincipalConfig.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/data-sources/service_principal#region DataAwsServicePrincipal#region}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsServicePrincipal.DataAwsServicePrincipalConfig.property.serviceName">ServiceName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/data-sources/service_principal#service_name DataAwsServicePrincipal#service_name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsServicePrincipal.DataAwsServicePrincipalConfig.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/data-sources/service_principal#region DataAwsServicePrincipal#region}. |
 
 ---
 
@@ -736,7 +736,7 @@ ServiceName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/data-sources/service_principal#service_name DataAwsServicePrincipal#service_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/data-sources/service_principal#service_name DataAwsServicePrincipal#service_name}.
 
 ---
 
@@ -748,7 +748,7 @@ Region *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/data-sources/service_principal#region DataAwsServicePrincipal#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/data-sources/service_principal#region DataAwsServicePrincipal#region}.
 
 ---
 

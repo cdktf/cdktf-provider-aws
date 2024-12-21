@@ -4,12 +4,12 @@
 
 ### SecuritylakeDataLake <a name="SecuritylakeDataLake" id="@cdktf/provider-aws.securitylakeDataLake.SecuritylakeDataLake"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/securitylake_data_lake aws_securitylake_data_lake}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/resources/securitylake_data_lake aws_securitylake_data_lake}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securitylakeDataLake.SecuritylakeDataLake.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securitylakedatalake"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securitylakedatalake"
 
 securitylakedatalake.NewSecuritylakeDataLake(scope Construct, id *string, config SecuritylakeDataLakeConfig) SecuritylakeDataLake
 ```
@@ -425,7 +425,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.securitylakeDataLake.SecuritylakeDataLake.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securitylakedatalake"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securitylakedatalake"
 
 securitylakedatalake.SecuritylakeDataLake_IsConstruct(x interface{}) *bool
 ```
@@ -457,7 +457,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.securitylakeDataLake.SecuritylakeDataLake.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securitylakedatalake"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securitylakedatalake"
 
 securitylakedatalake.SecuritylakeDataLake_IsTerraformElement(x interface{}) *bool
 ```
@@ -471,7 +471,7 @@ securitylakedatalake.SecuritylakeDataLake_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.securitylakeDataLake.SecuritylakeDataLake.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securitylakedatalake"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securitylakedatalake"
 
 securitylakedatalake.SecuritylakeDataLake_IsTerraformResource(x interface{}) *bool
 ```
@@ -485,7 +485,7 @@ securitylakedatalake.SecuritylakeDataLake_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.securitylakeDataLake.SecuritylakeDataLake.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securitylakedatalake"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securitylakedatalake"
 
 securitylakedatalake.SecuritylakeDataLake_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -514,7 +514,7 @@ The construct id used in the generated config for the SecuritylakeDataLake to im
 
 The id of the existing SecuritylakeDataLake that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/securitylake_data_lake#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/resources/securitylake_data_lake#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -846,7 +846,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securitylakeDataLake.SecuritylakeDataLakeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securitylakedatalake"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securitylakedatalake"
 
 &securitylakedatalake.SecuritylakeDataLakeConfig {
 	Connection: interface{},
@@ -859,7 +859,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securitylakedatalake"
 	MetaStoreManagerRoleArn: *string,
 	Configuration: interface{},
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v19.securitylakeDataLake.SecuritylakeDataLakeTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.securitylakeDataLake.SecuritylakeDataLakeTimeouts,
 }
 ```
 
@@ -874,9 +874,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securitylakedatalake"
 | <code><a href="#@cdktf/provider-aws.securitylakeDataLake.SecuritylakeDataLakeConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securitylakeDataLake.SecuritylakeDataLakeConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securitylakeDataLake.SecuritylakeDataLakeConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securitylakeDataLake.SecuritylakeDataLakeConfig.property.metaStoreManagerRoleArn">MetaStoreManagerRoleArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/securitylake_data_lake#meta_store_manager_role_arn SecuritylakeDataLake#meta_store_manager_role_arn}. |
+| <code><a href="#@cdktf/provider-aws.securitylakeDataLake.SecuritylakeDataLakeConfig.property.metaStoreManagerRoleArn">MetaStoreManagerRoleArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/resources/securitylake_data_lake#meta_store_manager_role_arn SecuritylakeDataLake#meta_store_manager_role_arn}. |
 | <code><a href="#@cdktf/provider-aws.securitylakeDataLake.SecuritylakeDataLakeConfig.property.configuration">Configuration</a></code> | <code>interface{}</code> | configuration block. |
-| <code><a href="#@cdktf/provider-aws.securitylakeDataLake.SecuritylakeDataLakeConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/securitylake_data_lake#tags SecuritylakeDataLake#tags}. |
+| <code><a href="#@cdktf/provider-aws.securitylakeDataLake.SecuritylakeDataLakeConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/resources/securitylake_data_lake#tags SecuritylakeDataLake#tags}. |
 | <code><a href="#@cdktf/provider-aws.securitylakeDataLake.SecuritylakeDataLakeConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-aws.securitylakeDataLake.SecuritylakeDataLakeTimeouts">SecuritylakeDataLakeTimeouts</a></code> | timeouts block. |
 
 ---
@@ -959,7 +959,7 @@ MetaStoreManagerRoleArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/securitylake_data_lake#meta_store_manager_role_arn SecuritylakeDataLake#meta_store_manager_role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/resources/securitylake_data_lake#meta_store_manager_role_arn SecuritylakeDataLake#meta_store_manager_role_arn}.
 
 ---
 
@@ -973,7 +973,7 @@ Configuration interface{}
 
 configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/securitylake_data_lake#configuration SecuritylakeDataLake#configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/resources/securitylake_data_lake#configuration SecuritylakeDataLake#configuration}
 
 ---
 
@@ -985,7 +985,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/securitylake_data_lake#tags SecuritylakeDataLake#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/resources/securitylake_data_lake#tags SecuritylakeDataLake#tags}.
 
 ---
 
@@ -999,7 +999,7 @@ Timeouts SecuritylakeDataLakeTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/securitylake_data_lake#timeouts SecuritylakeDataLake#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/resources/securitylake_data_lake#timeouts SecuritylakeDataLake#timeouts}
 
 ---
 
@@ -1008,7 +1008,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securitylakeDataLake.SecuritylakeDataLakeConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securitylakedatalake"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securitylakedatalake"
 
 &securitylakedatalake.SecuritylakeDataLakeConfiguration {
 	Region: *string,
@@ -1022,8 +1022,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securitylakedatalake"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securitylakeDataLake.SecuritylakeDataLakeConfiguration.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/securitylake_data_lake#region SecuritylakeDataLake#region}. |
-| <code><a href="#@cdktf/provider-aws.securitylakeDataLake.SecuritylakeDataLakeConfiguration.property.encryptionConfiguration">EncryptionConfiguration</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/securitylake_data_lake#encryption_configuration SecuritylakeDataLake#encryption_configuration}. |
+| <code><a href="#@cdktf/provider-aws.securitylakeDataLake.SecuritylakeDataLakeConfiguration.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/resources/securitylake_data_lake#region SecuritylakeDataLake#region}. |
+| <code><a href="#@cdktf/provider-aws.securitylakeDataLake.SecuritylakeDataLakeConfiguration.property.encryptionConfiguration">EncryptionConfiguration</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/resources/securitylake_data_lake#encryption_configuration SecuritylakeDataLake#encryption_configuration}. |
 | <code><a href="#@cdktf/provider-aws.securitylakeDataLake.SecuritylakeDataLakeConfiguration.property.lifecycleConfiguration">LifecycleConfiguration</a></code> | <code>interface{}</code> | lifecycle_configuration block. |
 | <code><a href="#@cdktf/provider-aws.securitylakeDataLake.SecuritylakeDataLakeConfiguration.property.replicationConfiguration">ReplicationConfiguration</a></code> | <code>interface{}</code> | replication_configuration block. |
 
@@ -1037,7 +1037,7 @@ Region *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/securitylake_data_lake#region SecuritylakeDataLake#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/resources/securitylake_data_lake#region SecuritylakeDataLake#region}.
 
 ---
 
@@ -1049,7 +1049,7 @@ EncryptionConfiguration interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/securitylake_data_lake#encryption_configuration SecuritylakeDataLake#encryption_configuration}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/resources/securitylake_data_lake#encryption_configuration SecuritylakeDataLake#encryption_configuration}.
 
 ---
 
@@ -1063,7 +1063,7 @@ LifecycleConfiguration interface{}
 
 lifecycle_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/securitylake_data_lake#lifecycle_configuration SecuritylakeDataLake#lifecycle_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/resources/securitylake_data_lake#lifecycle_configuration SecuritylakeDataLake#lifecycle_configuration}
 
 ---
 
@@ -1077,7 +1077,7 @@ ReplicationConfiguration interface{}
 
 replication_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/securitylake_data_lake#replication_configuration SecuritylakeDataLake#replication_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/resources/securitylake_data_lake#replication_configuration SecuritylakeDataLake#replication_configuration}
 
 ---
 
@@ -1086,7 +1086,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securitylakeDataLake.SecuritylakeDataLakeConfigurationEncryptionConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securitylakedatalake"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securitylakedatalake"
 
 &securitylakedatalake.SecuritylakeDataLakeConfigurationEncryptionConfiguration {
 	KmsKeyId: *string,
@@ -1097,7 +1097,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securitylakedatalake"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securitylakeDataLake.SecuritylakeDataLakeConfigurationEncryptionConfiguration.property.kmsKeyId">KmsKeyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/securitylake_data_lake#kms_key_id SecuritylakeDataLake#kms_key_id}. |
+| <code><a href="#@cdktf/provider-aws.securitylakeDataLake.SecuritylakeDataLakeConfigurationEncryptionConfiguration.property.kmsKeyId">KmsKeyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/resources/securitylake_data_lake#kms_key_id SecuritylakeDataLake#kms_key_id}. |
 
 ---
 
@@ -1109,7 +1109,7 @@ KmsKeyId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/securitylake_data_lake#kms_key_id SecuritylakeDataLake#kms_key_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/resources/securitylake_data_lake#kms_key_id SecuritylakeDataLake#kms_key_id}.
 
 ---
 
@@ -1118,7 +1118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securitylakeDataLake.SecuritylakeDataLakeConfigurationLifecycleConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securitylakedatalake"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securitylakedatalake"
 
 &securitylakedatalake.SecuritylakeDataLakeConfigurationLifecycleConfiguration {
 	Expiration: interface{},
@@ -1145,7 +1145,7 @@ Expiration interface{}
 
 expiration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/securitylake_data_lake#expiration SecuritylakeDataLake#expiration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/resources/securitylake_data_lake#expiration SecuritylakeDataLake#expiration}
 
 ---
 
@@ -1159,7 +1159,7 @@ Transition interface{}
 
 transition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/securitylake_data_lake#transition SecuritylakeDataLake#transition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/resources/securitylake_data_lake#transition SecuritylakeDataLake#transition}
 
 ---
 
@@ -1168,7 +1168,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securitylakeDataLake.SecuritylakeDataLakeConfigurationLifecycleConfigurationExpiration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securitylakedatalake"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securitylakedatalake"
 
 &securitylakedatalake.SecuritylakeDataLakeConfigurationLifecycleConfigurationExpiration {
 	Days: *f64,
@@ -1179,7 +1179,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securitylakedatalake"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securitylakeDataLake.SecuritylakeDataLakeConfigurationLifecycleConfigurationExpiration.property.days">Days</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/securitylake_data_lake#days SecuritylakeDataLake#days}. |
+| <code><a href="#@cdktf/provider-aws.securitylakeDataLake.SecuritylakeDataLakeConfigurationLifecycleConfigurationExpiration.property.days">Days</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/resources/securitylake_data_lake#days SecuritylakeDataLake#days}. |
 
 ---
 
@@ -1191,7 +1191,7 @@ Days *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/securitylake_data_lake#days SecuritylakeDataLake#days}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/resources/securitylake_data_lake#days SecuritylakeDataLake#days}.
 
 ---
 
@@ -1200,7 +1200,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securitylakeDataLake.SecuritylakeDataLakeConfigurationLifecycleConfigurationTransition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securitylakedatalake"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securitylakedatalake"
 
 &securitylakedatalake.SecuritylakeDataLakeConfigurationLifecycleConfigurationTransition {
 	Days: *f64,
@@ -1212,8 +1212,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securitylakedatalake"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securitylakeDataLake.SecuritylakeDataLakeConfigurationLifecycleConfigurationTransition.property.days">Days</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/securitylake_data_lake#days SecuritylakeDataLake#days}. |
-| <code><a href="#@cdktf/provider-aws.securitylakeDataLake.SecuritylakeDataLakeConfigurationLifecycleConfigurationTransition.property.storageClass">StorageClass</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/securitylake_data_lake#storage_class SecuritylakeDataLake#storage_class}. |
+| <code><a href="#@cdktf/provider-aws.securitylakeDataLake.SecuritylakeDataLakeConfigurationLifecycleConfigurationTransition.property.days">Days</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/resources/securitylake_data_lake#days SecuritylakeDataLake#days}. |
+| <code><a href="#@cdktf/provider-aws.securitylakeDataLake.SecuritylakeDataLakeConfigurationLifecycleConfigurationTransition.property.storageClass">StorageClass</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/resources/securitylake_data_lake#storage_class SecuritylakeDataLake#storage_class}. |
 
 ---
 
@@ -1225,7 +1225,7 @@ Days *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/securitylake_data_lake#days SecuritylakeDataLake#days}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/resources/securitylake_data_lake#days SecuritylakeDataLake#days}.
 
 ---
 
@@ -1237,7 +1237,7 @@ StorageClass *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/securitylake_data_lake#storage_class SecuritylakeDataLake#storage_class}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/resources/securitylake_data_lake#storage_class SecuritylakeDataLake#storage_class}.
 
 ---
 
@@ -1246,7 +1246,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securitylakeDataLake.SecuritylakeDataLakeConfigurationReplicationConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securitylakedatalake"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securitylakedatalake"
 
 &securitylakedatalake.SecuritylakeDataLakeConfigurationReplicationConfiguration {
 	Regions: *[]*string,
@@ -1258,8 +1258,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securitylakedatalake"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securitylakeDataLake.SecuritylakeDataLakeConfigurationReplicationConfiguration.property.regions">Regions</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/securitylake_data_lake#regions SecuritylakeDataLake#regions}. |
-| <code><a href="#@cdktf/provider-aws.securitylakeDataLake.SecuritylakeDataLakeConfigurationReplicationConfiguration.property.roleArn">RoleArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/securitylake_data_lake#role_arn SecuritylakeDataLake#role_arn}. |
+| <code><a href="#@cdktf/provider-aws.securitylakeDataLake.SecuritylakeDataLakeConfigurationReplicationConfiguration.property.regions">Regions</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/resources/securitylake_data_lake#regions SecuritylakeDataLake#regions}. |
+| <code><a href="#@cdktf/provider-aws.securitylakeDataLake.SecuritylakeDataLakeConfigurationReplicationConfiguration.property.roleArn">RoleArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/resources/securitylake_data_lake#role_arn SecuritylakeDataLake#role_arn}. |
 
 ---
 
@@ -1271,7 +1271,7 @@ Regions *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/securitylake_data_lake#regions SecuritylakeDataLake#regions}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/resources/securitylake_data_lake#regions SecuritylakeDataLake#regions}.
 
 ---
 
@@ -1283,7 +1283,7 @@ RoleArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/securitylake_data_lake#role_arn SecuritylakeDataLake#role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/resources/securitylake_data_lake#role_arn SecuritylakeDataLake#role_arn}.
 
 ---
 
@@ -1292,7 +1292,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securitylakeDataLake.SecuritylakeDataLakeTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securitylakedatalake"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securitylakedatalake"
 
 &securitylakedatalake.SecuritylakeDataLakeTimeouts {
 	Create: *string,
@@ -1321,7 +1321,7 @@ Create *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/securitylake_data_lake#create SecuritylakeDataLake#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/resources/securitylake_data_lake#create SecuritylakeDataLake#create}
 
 ---
 
@@ -1335,7 +1335,7 @@ Delete *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/securitylake_data_lake#delete SecuritylakeDataLake#delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/resources/securitylake_data_lake#delete SecuritylakeDataLake#delete}
 
 ---
 
@@ -1349,7 +1349,7 @@ Update *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/securitylake_data_lake#update SecuritylakeDataLake#update}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/resources/securitylake_data_lake#update SecuritylakeDataLake#update}
 
 ---
 
@@ -1360,7 +1360,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securitylakeDataLake.SecuritylakeDataLakeConfigurationEncryptionConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securitylakedatalake"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securitylakedatalake"
 
 securitylakedatalake.NewSecuritylakeDataLakeConfigurationEncryptionConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecuritylakeDataLakeConfigurationEncryptionConfigurationList
 ```
@@ -1520,7 +1520,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securitylakeDataLake.SecuritylakeDataLakeConfigurationEncryptionConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securitylakedatalake"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securitylakedatalake"
 
 securitylakedatalake.NewSecuritylakeDataLakeConfigurationEncryptionConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecuritylakeDataLakeConfigurationEncryptionConfigurationOutputReference
 ```
@@ -1816,7 +1816,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securitylakeDataLake.SecuritylakeDataLakeConfigurationLifecycleConfigurationExpirationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securitylakedatalake"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securitylakedatalake"
 
 securitylakedatalake.NewSecuritylakeDataLakeConfigurationLifecycleConfigurationExpirationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecuritylakeDataLakeConfigurationLifecycleConfigurationExpirationList
 ```
@@ -1976,7 +1976,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securitylakeDataLake.SecuritylakeDataLakeConfigurationLifecycleConfigurationExpirationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securitylakedatalake"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securitylakedatalake"
 
 securitylakedatalake.NewSecuritylakeDataLakeConfigurationLifecycleConfigurationExpirationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecuritylakeDataLakeConfigurationLifecycleConfigurationExpirationOutputReference
 ```
@@ -2272,7 +2272,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securitylakeDataLake.SecuritylakeDataLakeConfigurationLifecycleConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securitylakedatalake"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securitylakedatalake"
 
 securitylakedatalake.NewSecuritylakeDataLakeConfigurationLifecycleConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecuritylakeDataLakeConfigurationLifecycleConfigurationList
 ```
@@ -2432,7 +2432,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securitylakeDataLake.SecuritylakeDataLakeConfigurationLifecycleConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securitylakedatalake"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securitylakedatalake"
 
 securitylakedatalake.NewSecuritylakeDataLakeConfigurationLifecycleConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecuritylakeDataLakeConfigurationLifecycleConfigurationOutputReference
 ```
@@ -2783,7 +2783,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securitylakeDataLake.SecuritylakeDataLakeConfigurationLifecycleConfigurationTransitionList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securitylakedatalake"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securitylakedatalake"
 
 securitylakedatalake.NewSecuritylakeDataLakeConfigurationLifecycleConfigurationTransitionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecuritylakeDataLakeConfigurationLifecycleConfigurationTransitionList
 ```
@@ -2943,7 +2943,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securitylakeDataLake.SecuritylakeDataLakeConfigurationLifecycleConfigurationTransitionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securitylakedatalake"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securitylakedatalake"
 
 securitylakedatalake.NewSecuritylakeDataLakeConfigurationLifecycleConfigurationTransitionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecuritylakeDataLakeConfigurationLifecycleConfigurationTransitionOutputReference
 ```
@@ -3268,7 +3268,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securitylakeDataLake.SecuritylakeDataLakeConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securitylakedatalake"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securitylakedatalake"
 
 securitylakedatalake.NewSecuritylakeDataLakeConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecuritylakeDataLakeConfigurationList
 ```
@@ -3428,7 +3428,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securitylakeDataLake.SecuritylakeDataLakeConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securitylakedatalake"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securitylakedatalake"
 
 securitylakedatalake.NewSecuritylakeDataLakeConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecuritylakeDataLakeConfigurationOutputReference
 ```
@@ -3843,7 +3843,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securitylakeDataLake.SecuritylakeDataLakeConfigurationReplicationConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securitylakedatalake"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securitylakedatalake"
 
 securitylakedatalake.NewSecuritylakeDataLakeConfigurationReplicationConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecuritylakeDataLakeConfigurationReplicationConfigurationList
 ```
@@ -4003,7 +4003,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securitylakeDataLake.SecuritylakeDataLakeConfigurationReplicationConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securitylakedatalake"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securitylakedatalake"
 
 securitylakedatalake.NewSecuritylakeDataLakeConfigurationReplicationConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecuritylakeDataLakeConfigurationReplicationConfigurationOutputReference
 ```
@@ -4328,7 +4328,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securitylakeDataLake.SecuritylakeDataLakeTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securitylakedatalake"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securitylakedatalake"
 
 securitylakedatalake.NewSecuritylakeDataLakeTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SecuritylakeDataLakeTimeoutsOutputReference
 ```

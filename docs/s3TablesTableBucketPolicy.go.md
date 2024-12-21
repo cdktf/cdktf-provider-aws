@@ -4,12 +4,12 @@
 
 ### S3TablesTableBucketPolicy <a name="S3TablesTableBucketPolicy" id="@cdktf/provider-aws.s3TablesTableBucketPolicy.S3TablesTableBucketPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/s3tables_table_bucket_policy aws_s3tables_table_bucket_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/resources/s3tables_table_bucket_policy aws_s3tables_table_bucket_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.s3TablesTableBucketPolicy.S3TablesTableBucketPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/s3tablestablebucketpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3tablestablebucketpolicy"
 
 s3tablestablebucketpolicy.NewS3TablesTableBucketPolicy(scope Construct, id *string, config S3TablesTableBucketPolicyConfig) S3TablesTableBucketPolicy
 ```
@@ -378,7 +378,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.s3TablesTableBucketPolicy.S3TablesTableBucketPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/s3tablestablebucketpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3tablestablebucketpolicy"
 
 s3tablestablebucketpolicy.S3TablesTableBucketPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -410,7 +410,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.s3TablesTableBucketPolicy.S3TablesTableBucketPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/s3tablestablebucketpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3tablestablebucketpolicy"
 
 s3tablestablebucketpolicy.S3TablesTableBucketPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ s3tablestablebucketpolicy.S3TablesTableBucketPolicy_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.s3TablesTableBucketPolicy.S3TablesTableBucketPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/s3tablestablebucketpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3tablestablebucketpolicy"
 
 s3tablestablebucketpolicy.S3TablesTableBucketPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ s3tablestablebucketpolicy.S3TablesTableBucketPolicy_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.s3TablesTableBucketPolicy.S3TablesTableBucketPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/s3tablestablebucketpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3tablestablebucketpolicy"
 
 s3tablestablebucketpolicy.S3TablesTableBucketPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -467,7 +467,7 @@ The construct id used in the generated config for the S3TablesTableBucketPolicy 
 
 The id of the existing S3TablesTableBucketPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/s3tables_table_bucket_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/resources/s3tables_table_bucket_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -711,7 +711,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.s3TablesTableBucketPolicy.S3TablesTableBucketPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/s3tablestablebucketpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3tablestablebucketpolicy"
 
 &s3tablestablebucketpolicy.S3TablesTableBucketPolicyConfig {
 	Connection: interface{},
@@ -737,8 +737,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/s3tablestablebucketpolicy
 | <code><a href="#@cdktf/provider-aws.s3TablesTableBucketPolicy.S3TablesTableBucketPolicyConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.s3TablesTableBucketPolicy.S3TablesTableBucketPolicyConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.s3TablesTableBucketPolicy.S3TablesTableBucketPolicyConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3TablesTableBucketPolicy.S3TablesTableBucketPolicyConfig.property.resourcePolicy">ResourcePolicy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/s3tables_table_bucket_policy#resource_policy S3TablesTableBucketPolicy#resource_policy}. |
-| <code><a href="#@cdktf/provider-aws.s3TablesTableBucketPolicy.S3TablesTableBucketPolicyConfig.property.tableBucketArn">TableBucketArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/s3tables_table_bucket_policy#table_bucket_arn S3TablesTableBucketPolicy#table_bucket_arn}. |
+| <code><a href="#@cdktf/provider-aws.s3TablesTableBucketPolicy.S3TablesTableBucketPolicyConfig.property.resourcePolicy">ResourcePolicy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/resources/s3tables_table_bucket_policy#resource_policy S3TablesTableBucketPolicy#resource_policy}. |
+| <code><a href="#@cdktf/provider-aws.s3TablesTableBucketPolicy.S3TablesTableBucketPolicyConfig.property.tableBucketArn">TableBucketArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/resources/s3tables_table_bucket_policy#table_bucket_arn S3TablesTableBucketPolicy#table_bucket_arn}. |
 
 ---
 
@@ -820,7 +820,7 @@ ResourcePolicy *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/s3tables_table_bucket_policy#resource_policy S3TablesTableBucketPolicy#resource_policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/resources/s3tables_table_bucket_policy#resource_policy S3TablesTableBucketPolicy#resource_policy}.
 
 ---
 
@@ -832,7 +832,7 @@ TableBucketArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/s3tables_table_bucket_policy#table_bucket_arn S3TablesTableBucketPolicy#table_bucket_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/resources/s3tables_table_bucket_policy#table_bucket_arn S3TablesTableBucketPolicy#table_bucket_arn}.
 
 ---
 

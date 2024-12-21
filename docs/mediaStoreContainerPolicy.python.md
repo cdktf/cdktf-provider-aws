@@ -4,7 +4,7 @@
 
 ### MediaStoreContainerPolicy <a name="MediaStoreContainerPolicy" id="@cdktf/provider-aws.mediaStoreContainerPolicy.MediaStoreContainerPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/media_store_container_policy aws_media_store_container_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/resources/media_store_container_policy aws_media_store_container_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.mediaStoreContainerPolicy.MediaStoreContainerPolicy.Initializer"></a>
 
@@ -38,9 +38,9 @@ mediaStoreContainerPolicy.MediaStoreContainerPolicy(
 | <code><a href="#@cdktf/provider-aws.mediaStoreContainerPolicy.MediaStoreContainerPolicy.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.mediaStoreContainerPolicy.MediaStoreContainerPolicy.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.mediaStoreContainerPolicy.MediaStoreContainerPolicy.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.mediaStoreContainerPolicy.MediaStoreContainerPolicy.Initializer.parameter.containerName">container_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/media_store_container_policy#container_name MediaStoreContainerPolicy#container_name}. |
-| <code><a href="#@cdktf/provider-aws.mediaStoreContainerPolicy.MediaStoreContainerPolicy.Initializer.parameter.policy">policy</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/media_store_container_policy#policy MediaStoreContainerPolicy#policy}. |
-| <code><a href="#@cdktf/provider-aws.mediaStoreContainerPolicy.MediaStoreContainerPolicy.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/media_store_container_policy#id MediaStoreContainerPolicy#id}. |
+| <code><a href="#@cdktf/provider-aws.mediaStoreContainerPolicy.MediaStoreContainerPolicy.Initializer.parameter.containerName">container_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/resources/media_store_container_policy#container_name MediaStoreContainerPolicy#container_name}. |
+| <code><a href="#@cdktf/provider-aws.mediaStoreContainerPolicy.MediaStoreContainerPolicy.Initializer.parameter.policy">policy</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/resources/media_store_container_policy#policy MediaStoreContainerPolicy#policy}. |
+| <code><a href="#@cdktf/provider-aws.mediaStoreContainerPolicy.MediaStoreContainerPolicy.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/resources/media_store_container_policy#id MediaStoreContainerPolicy#id}. |
 
 ---
 
@@ -108,7 +108,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/media_store_container_policy#container_name MediaStoreContainerPolicy#container_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/resources/media_store_container_policy#container_name MediaStoreContainerPolicy#container_name}.
 
 ---
 
@@ -116,7 +116,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/media_store_container_policy#policy MediaStoreContainerPolicy#policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/resources/media_store_container_policy#policy MediaStoreContainerPolicy#policy}.
 
 ---
 
@@ -124,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/media_store_container_policy#id MediaStoreContainerPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/resources/media_store_container_policy#id MediaStoreContainerPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -607,7 +607,7 @@ The construct id used in the generated config for the MediaStoreContainerPolicy 
 
 The id of the existing MediaStoreContainerPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/media_store_container_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/resources/media_store_container_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -900,9 +900,9 @@ mediaStoreContainerPolicy.MediaStoreContainerPolicyConfig(
 | <code><a href="#@cdktf/provider-aws.mediaStoreContainerPolicy.MediaStoreContainerPolicyConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.mediaStoreContainerPolicy.MediaStoreContainerPolicyConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.mediaStoreContainerPolicy.MediaStoreContainerPolicyConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.mediaStoreContainerPolicy.MediaStoreContainerPolicyConfig.property.containerName">container_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/media_store_container_policy#container_name MediaStoreContainerPolicy#container_name}. |
-| <code><a href="#@cdktf/provider-aws.mediaStoreContainerPolicy.MediaStoreContainerPolicyConfig.property.policy">policy</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/media_store_container_policy#policy MediaStoreContainerPolicy#policy}. |
-| <code><a href="#@cdktf/provider-aws.mediaStoreContainerPolicy.MediaStoreContainerPolicyConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/media_store_container_policy#id MediaStoreContainerPolicy#id}. |
+| <code><a href="#@cdktf/provider-aws.mediaStoreContainerPolicy.MediaStoreContainerPolicyConfig.property.containerName">container_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/resources/media_store_container_policy#container_name MediaStoreContainerPolicy#container_name}. |
+| <code><a href="#@cdktf/provider-aws.mediaStoreContainerPolicy.MediaStoreContainerPolicyConfig.property.policy">policy</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/resources/media_store_container_policy#policy MediaStoreContainerPolicy#policy}. |
+| <code><a href="#@cdktf/provider-aws.mediaStoreContainerPolicy.MediaStoreContainerPolicyConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/resources/media_store_container_policy#id MediaStoreContainerPolicy#id}. |
 
 ---
 
@@ -984,7 +984,7 @@ container_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/media_store_container_policy#container_name MediaStoreContainerPolicy#container_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/resources/media_store_container_policy#container_name MediaStoreContainerPolicy#container_name}.
 
 ---
 
@@ -996,7 +996,7 @@ policy: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/media_store_container_policy#policy MediaStoreContainerPolicy#policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/resources/media_store_container_policy#policy MediaStoreContainerPolicy#policy}.
 
 ---
 
@@ -1008,7 +1008,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/media_store_container_policy#id MediaStoreContainerPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/resources/media_store_container_policy#id MediaStoreContainerPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

@@ -1,3 +1,3 @@
 # `aws_swf_domain`
 
-Refer to the Terraform Registry for docs: [`aws_swf_domain`](https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/swf_domain).
+Refer to the Terraform Registry for docs: [`aws_swf_domain`](https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/resources/swf_domain).

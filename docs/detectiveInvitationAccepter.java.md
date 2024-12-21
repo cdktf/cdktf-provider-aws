@@ -4,7 +4,7 @@
 
 ### DetectiveInvitationAccepter <a name="DetectiveInvitationAccepter" id="@cdktf/provider-aws.detectiveInvitationAccepter.DetectiveInvitationAccepter"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/detective_invitation_accepter aws_detective_invitation_accepter}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/resources/detective_invitation_accepter aws_detective_invitation_accepter}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.detectiveInvitationAccepter.DetectiveInvitationAccepter.Initializer"></a>
 
@@ -39,8 +39,8 @@ DetectiveInvitationAccepter.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-aws.detectiveInvitationAccepter.DetectiveInvitationAccepter.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.detectiveInvitationAccepter.DetectiveInvitationAccepter.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.detectiveInvitationAccepter.DetectiveInvitationAccepter.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.detectiveInvitationAccepter.DetectiveInvitationAccepter.Initializer.parameter.graphArn">graphArn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/detective_invitation_accepter#graph_arn DetectiveInvitationAccepter#graph_arn}. |
-| <code><a href="#@cdktf/provider-aws.detectiveInvitationAccepter.DetectiveInvitationAccepter.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/detective_invitation_accepter#id DetectiveInvitationAccepter#id}. |
+| <code><a href="#@cdktf/provider-aws.detectiveInvitationAccepter.DetectiveInvitationAccepter.Initializer.parameter.graphArn">graphArn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/resources/detective_invitation_accepter#graph_arn DetectiveInvitationAccepter#graph_arn}. |
+| <code><a href="#@cdktf/provider-aws.detectiveInvitationAccepter.DetectiveInvitationAccepter.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/resources/detective_invitation_accepter#id DetectiveInvitationAccepter#id}. |
 
 ---
 
@@ -108,7 +108,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/detective_invitation_accepter#graph_arn DetectiveInvitationAccepter#graph_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/resources/detective_invitation_accepter#graph_arn DetectiveInvitationAccepter#graph_arn}.
 
 ---
 
@@ -116,7 +116,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/detective_invitation_accepter#id DetectiveInvitationAccepter#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/resources/detective_invitation_accepter#id DetectiveInvitationAccepter#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -553,7 +553,7 @@ The construct id used in the generated config for the DetectiveInvitationAccepte
 
 The id of the existing DetectiveInvitationAccepter that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/detective_invitation_accepter#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/resources/detective_invitation_accepter#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -827,8 +827,8 @@ DetectiveInvitationAccepterConfig.builder()
 | <code><a href="#@cdktf/provider-aws.detectiveInvitationAccepter.DetectiveInvitationAccepterConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.detectiveInvitationAccepter.DetectiveInvitationAccepterConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.detectiveInvitationAccepter.DetectiveInvitationAccepterConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.detectiveInvitationAccepter.DetectiveInvitationAccepterConfig.property.graphArn">graphArn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/detective_invitation_accepter#graph_arn DetectiveInvitationAccepter#graph_arn}. |
-| <code><a href="#@cdktf/provider-aws.detectiveInvitationAccepter.DetectiveInvitationAccepterConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/detective_invitation_accepter#id DetectiveInvitationAccepter#id}. |
+| <code><a href="#@cdktf/provider-aws.detectiveInvitationAccepter.DetectiveInvitationAccepterConfig.property.graphArn">graphArn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/resources/detective_invitation_accepter#graph_arn DetectiveInvitationAccepter#graph_arn}. |
+| <code><a href="#@cdktf/provider-aws.detectiveInvitationAccepter.DetectiveInvitationAccepterConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/resources/detective_invitation_accepter#id DetectiveInvitationAccepter#id}. |
 
 ---
 
@@ -910,7 +910,7 @@ public java.lang.String getGraphArn();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/detective_invitation_accepter#graph_arn DetectiveInvitationAccepter#graph_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/resources/detective_invitation_accepter#graph_arn DetectiveInvitationAccepter#graph_arn}.
 
 ---
 
@@ -922,7 +922,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/detective_invitation_accepter#id DetectiveInvitationAccepter#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/resources/detective_invitation_accepter#id DetectiveInvitationAccepter#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

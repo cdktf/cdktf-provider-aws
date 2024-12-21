@@ -1,3 +1,3 @@
 # `aws_connect_phone_number`
 
-Refer to the Terraform Registry for docs: [`aws_connect_phone_number`](https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/connect_phone_number).
+Refer to the Terraform Registry for docs: [`aws_connect_phone_number`](https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/resources/connect_phone_number).
