@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/data-sources/kinesis_firehose_delivery_stream
 // generated from terraform resource schema
 
