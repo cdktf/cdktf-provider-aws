@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.macie2CustomDataIdentifier.Macie2CustomDataIdentifier.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/macie2customdataidentifier"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/macie2customdataidentifier"
 
 macie2customdataidentifier.NewMacie2CustomDataIdentifier(scope Construct, id *string, config Macie2CustomDataIdentifierConfig) Macie2CustomDataIdentifier
 ```
@@ -448,7 +448,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.macie2CustomDataIdentifier.Macie2CustomDataIdentifier.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/macie2customdataidentifier"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/macie2customdataidentifier"
 
 macie2customdataidentifier.Macie2CustomDataIdentifier_IsConstruct(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.macie2CustomDataIdentifier.Macie2CustomDataIdentifier.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/macie2customdataidentifier"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/macie2customdataidentifier"
 
 macie2customdataidentifier.Macie2CustomDataIdentifier_IsTerraformElement(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ macie2customdataidentifier.Macie2CustomDataIdentifier_IsTerraformElement(x inter
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.macie2CustomDataIdentifier.Macie2CustomDataIdentifier.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/macie2customdataidentifier"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/macie2customdataidentifier"
 
 macie2customdataidentifier.Macie2CustomDataIdentifier_IsTerraformResource(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ macie2customdataidentifier.Macie2CustomDataIdentifier_IsTerraformResource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.macie2CustomDataIdentifier.Macie2CustomDataIdentifier.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/macie2customdataidentifier"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/macie2customdataidentifier"
 
 macie2customdataidentifier.Macie2CustomDataIdentifier_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -979,7 +979,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.macie2CustomDataIdentifier.Macie2CustomDataIdentifierConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/macie2customdataidentifier"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/macie2customdataidentifier"
 
 &macie2customdataidentifier.Macie2CustomDataIdentifierConfig {
 	Connection: interface{},
