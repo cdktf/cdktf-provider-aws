@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.codebuildSourceCredential.CodebuildSourceCredential.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/codebuildsourcecredential"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/codebuildsourcecredential"
 
 codebuildsourcecredential.NewCodebuildSourceCredential(scope Construct, id *string, config CodebuildSourceCredentialConfig) CodebuildSourceCredential
 ```
@@ -392,7 +392,7 @@ func ResetUserName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.codebuildSourceCredential.CodebuildSourceCredential.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/codebuildsourcecredential"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/codebuildsourcecredential"
 
 codebuildsourcecredential.CodebuildSourceCredential_IsConstruct(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.codebuildSourceCredential.CodebuildSourceCredential.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/codebuildsourcecredential"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/codebuildsourcecredential"
 
 codebuildsourcecredential.CodebuildSourceCredential_IsTerraformElement(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ codebuildsourcecredential.CodebuildSourceCredential_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.codebuildSourceCredential.CodebuildSourceCredential.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/codebuildsourcecredential"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/codebuildsourcecredential"
 
 codebuildsourcecredential.CodebuildSourceCredential_IsTerraformResource(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ codebuildsourcecredential.CodebuildSourceCredential_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.codebuildSourceCredential.CodebuildSourceCredential.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/codebuildsourcecredential"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/codebuildsourcecredential"
 
 codebuildsourcecredential.CodebuildSourceCredential_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -802,7 +802,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.codebuildSourceCredential.CodebuildSourceCredentialConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/codebuildsourcecredential"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/codebuildsourcecredential"
 
 &codebuildsourcecredential.CodebuildSourceCredentialConfig {
 	Connection: interface{},
