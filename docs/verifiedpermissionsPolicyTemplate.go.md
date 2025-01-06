@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.verifiedpermissionsPolicyTemplate.VerifiedpermissionsPolicyTemplate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/verifiedpermissionspolicytemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/verifiedpermissionspolicytemplate"
 
 verifiedpermissionspolicytemplate.NewVerifiedpermissionsPolicyTemplate(scope Construct, id *string, config VerifiedpermissionsPolicyTemplateConfig) VerifiedpermissionsPolicyTemplate
 ```
@@ -385,7 +385,7 @@ func ResetDescription()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.verifiedpermissionsPolicyTemplate.VerifiedpermissionsPolicyTemplate.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/verifiedpermissionspolicytemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/verifiedpermissionspolicytemplate"
 
 verifiedpermissionspolicytemplate.VerifiedpermissionsPolicyTemplate_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +417,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.verifiedpermissionsPolicyTemplate.VerifiedpermissionsPolicyTemplate.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/verifiedpermissionspolicytemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/verifiedpermissionspolicytemplate"
 
 verifiedpermissionspolicytemplate.VerifiedpermissionsPolicyTemplate_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ verifiedpermissionspolicytemplate.VerifiedpermissionsPolicyTemplate_IsTerraformE
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.verifiedpermissionsPolicyTemplate.VerifiedpermissionsPolicyTemplate.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/verifiedpermissionspolicytemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/verifiedpermissionspolicytemplate"
 
 verifiedpermissionspolicytemplate.VerifiedpermissionsPolicyTemplate_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ verifiedpermissionspolicytemplate.VerifiedpermissionsPolicyTemplate_IsTerraformR
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.verifiedpermissionsPolicyTemplate.VerifiedpermissionsPolicyTemplate.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/verifiedpermissionspolicytemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/verifiedpermissionspolicytemplate"
 
 verifiedpermissionspolicytemplate.VerifiedpermissionsPolicyTemplate_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -773,7 +773,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.verifiedpermissionsPolicyTemplate.VerifiedpermissionsPolicyTemplateConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/verifiedpermissionspolicytemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/verifiedpermissionspolicytemplate"
 
 &verifiedpermissionspolicytemplate.VerifiedpermissionsPolicyTemplateConfig {
 	Connection: interface{},
