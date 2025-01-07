@@ -19,7 +19,7 @@ jobs:
     if: contains(github.event.pull_request.labels.*.name, 'automerge') && !contains(github.event.pull_request.labels.*.name, 'do-not-merge') && github.event.pull_request.draft == false
     steps:
       - name: Checkout
-        uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
       - name: Turn on automerge for this PR by a trusted user or bot
         if: github.event.pull_request.user.login == 'team-tf-cdk' || contains(fromJSON('["OWNER", "MEMBER", "COLLABORATOR"]'), github.event.pull_request.author_association) || github.actor == 'dependabot[bot]'
         env:

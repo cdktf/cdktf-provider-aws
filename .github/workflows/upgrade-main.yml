@@ -15,13 +15,13 @@ jobs:
       patch_created: ${{ steps.create_patch.outputs.patch_created }}
     steps:
       - name: Checkout
-        uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
         with:
           ref: main
       - name: Set git config safe.directory
         run: git config --global --add safe.directory $(pwd)
       - name: Setup Node.js
-        uses: actions/setup-node@1e60f620b9541d16bece96c5465dc8ee9832be0b
+        uses: actions/setup-node@39370e3970a6d050c480ffad4ff0ed4d3fdee5af
         with:
           node-version: 18.12.0
       - name: Install dependencies
@@ -36,7 +36,7 @@ jobs:
         working-directory: ./
       - name: Upload patch
         if: steps.create_patch.outputs.patch_created
-        uses: actions/upload-artifact@89ef406dd8d7e03cfd12d9e0a4a378f454709029
+        uses: actions/upload-artifact@6f51ac03b9356f520e9adb1b1b7802705f340c2b
         with:
           name: repo.patch
           path: repo.patch
@@ -50,7 +50,7 @@ jobs:
     if: ${{ needs.upgrade.outputs.patch_created }}
     steps:
       - name: Checkout
-        uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
         with:
           ref: main
       - name: Set git config safe.directory
@@ -68,7 +68,7 @@ jobs:
           git config user.email "github-team-tf-cdk@hashicorp.com"
       - name: Create Pull Request
         id: create-pr
-        uses: peter-evans/create-pull-request@c5a7806660adbe173f04e3e038b0ccdcd758773c
+        uses: peter-evans/create-pull-request@67ccf781d68cd99b580ae25a5c18a1cc84ffff1f
         with:
           token: ${{ secrets.PROJEN_GITHUB_TOKEN }}
           commit-message: |-
