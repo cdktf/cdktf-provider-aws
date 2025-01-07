@@ -14,7 +14,7 @@ jobs:
     if: github.event.issue.user.login != 'team-tf-cdk' && !contains(fromJSON('["OWNER", "MEMBER", "COLLABORATOR", "CONTRIBUTOR"]'), github.event.issue.author_association)
     steps:
       - name: Checkout
-        uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
       - name: Auto-close issues by non-collaborators
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
