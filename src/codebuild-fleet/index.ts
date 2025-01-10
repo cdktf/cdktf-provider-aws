@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/resources/codebuild_fleet
+// https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/resources/codebuild_fleet
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,51 +13,57 @@ import * as cdktf from 'cdktf';
 
 export interface CodebuildFleetConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/resources/codebuild_fleet#base_capacity CodebuildFleet#base_capacity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/resources/codebuild_fleet#base_capacity CodebuildFleet#base_capacity}
   */
   readonly baseCapacity: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/resources/codebuild_fleet#compute_type CodebuildFleet#compute_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/resources/codebuild_fleet#compute_type CodebuildFleet#compute_type}
   */
   readonly computeType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/resources/codebuild_fleet#environment_type CodebuildFleet#environment_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/resources/codebuild_fleet#environment_type CodebuildFleet#environment_type}
   */
   readonly environmentType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/resources/codebuild_fleet#fleet_service_role CodebuildFleet#fleet_service_role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/resources/codebuild_fleet#fleet_service_role CodebuildFleet#fleet_service_role}
   */
   readonly fleetServiceRole?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/resources/codebuild_fleet#image_id CodebuildFleet#image_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/resources/codebuild_fleet#image_id CodebuildFleet#image_id}
   */
   readonly imageId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/resources/codebuild_fleet#name CodebuildFleet#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/resources/codebuild_fleet#name CodebuildFleet#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/resources/codebuild_fleet#overflow_behavior CodebuildFleet#overflow_behavior}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/resources/codebuild_fleet#overflow_behavior CodebuildFleet#overflow_behavior}
   */
   readonly overflowBehavior?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/resources/codebuild_fleet#tags CodebuildFleet#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/resources/codebuild_fleet#tags CodebuildFleet#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/resources/codebuild_fleet#tags_all CodebuildFleet#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/resources/codebuild_fleet#tags_all CodebuildFleet#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
+  * compute_configuration block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/resources/codebuild_fleet#compute_configuration CodebuildFleet#compute_configuration}
+  */
+  readonly computeConfiguration?: CodebuildFleetComputeConfiguration;
+  /**
   * scaling_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/resources/codebuild_fleet#scaling_configuration CodebuildFleet#scaling_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/resources/codebuild_fleet#scaling_configuration CodebuildFleet#scaling_configuration}
   */
   readonly scalingConfiguration?: CodebuildFleetScalingConfiguration;
   /**
   * vpc_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/resources/codebuild_fleet#vpc_config CodebuildFleet#vpc_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/resources/codebuild_fleet#vpc_config CodebuildFleet#vpc_config}
   */
   readonly vpcConfig?: CodebuildFleetVpcConfig[] | cdktf.IResolvable;
 }
@@ -146,13 +152,196 @@ export class CodebuildFleetStatusList extends cdktf.ComplexList {
     return new CodebuildFleetStatusOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface CodebuildFleetComputeConfiguration {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/resources/codebuild_fleet#disk CodebuildFleet#disk}
+  */
+  readonly disk?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/resources/codebuild_fleet#machine_type CodebuildFleet#machine_type}
+  */
+  readonly machineType?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/resources/codebuild_fleet#memory CodebuildFleet#memory}
+  */
+  readonly memory?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/resources/codebuild_fleet#vcpu CodebuildFleet#vcpu}
+  */
+  readonly vcpu?: number;
+}
+
+export function codebuildFleetComputeConfigurationToTerraform(struct?: CodebuildFleetComputeConfigurationOutputReference | CodebuildFleetComputeConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    disk: cdktf.numberToTerraform(struct!.disk),
+    machine_type: cdktf.stringToTerraform(struct!.machineType),
+    memory: cdktf.numberToTerraform(struct!.memory),
+    vcpu: cdktf.numberToTerraform(struct!.vcpu),
+  }
+}
+
+
+export function codebuildFleetComputeConfigurationToHclTerraform(struct?: CodebuildFleetComputeConfigurationOutputReference | CodebuildFleetComputeConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    disk: {
+      value: cdktf.numberToHclTerraform(struct!.disk),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    machine_type: {
+      value: cdktf.stringToHclTerraform(struct!.machineType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    memory: {
+      value: cdktf.numberToHclTerraform(struct!.memory),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    vcpu: {
+      value: cdktf.numberToHclTerraform(struct!.vcpu),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class CodebuildFleetComputeConfigurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): CodebuildFleetComputeConfiguration | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._disk !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.disk = this._disk;
+    }
+    if (this._machineType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.machineType = this._machineType;
+    }
+    if (this._memory !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.memory = this._memory;
+    }
+    if (this._vcpu !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.vcpu = this._vcpu;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CodebuildFleetComputeConfiguration | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._disk = undefined;
+      this._machineType = undefined;
+      this._memory = undefined;
+      this._vcpu = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._disk = value.disk;
+      this._machineType = value.machineType;
+      this._memory = value.memory;
+      this._vcpu = value.vcpu;
+    }
+  }
+
+  // disk - computed: true, optional: true, required: false
+  private _disk?: number; 
+  public get disk() {
+    return this.getNumberAttribute('disk');
+  }
+  public set disk(value: number) {
+    this._disk = value;
+  }
+  public resetDisk() {
+    this._disk = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get diskInput() {
+    return this._disk;
+  }
+
+  // machine_type - computed: false, optional: true, required: false
+  private _machineType?: string; 
+  public get machineType() {
+    return this.getStringAttribute('machine_type');
+  }
+  public set machineType(value: string) {
+    this._machineType = value;
+  }
+  public resetMachineType() {
+    this._machineType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get machineTypeInput() {
+    return this._machineType;
+  }
+
+  // memory - computed: true, optional: true, required: false
+  private _memory?: number; 
+  public get memory() {
+    return this.getNumberAttribute('memory');
+  }
+  public set memory(value: number) {
+    this._memory = value;
+  }
+  public resetMemory() {
+    this._memory = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get memoryInput() {
+    return this._memory;
+  }
+
+  // vcpu - computed: true, optional: true, required: false
+  private _vcpu?: number; 
+  public get vcpu() {
+    return this.getNumberAttribute('vcpu');
+  }
+  public set vcpu(value: number) {
+    this._vcpu = value;
+  }
+  public resetVcpu() {
+    this._vcpu = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get vcpuInput() {
+    return this._vcpu;
+  }
+}
 export interface CodebuildFleetScalingConfigurationTargetTrackingScalingConfigs {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/resources/codebuild_fleet#metric_type CodebuildFleet#metric_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/resources/codebuild_fleet#metric_type CodebuildFleet#metric_type}
   */
   readonly metricType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/resources/codebuild_fleet#target_value CodebuildFleet#target_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/resources/codebuild_fleet#target_value CodebuildFleet#target_value}
   */
   readonly targetValue?: number;
 }
@@ -297,17 +486,17 @@ export class CodebuildFleetScalingConfigurationTargetTrackingScalingConfigsList 
 }
 export interface CodebuildFleetScalingConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/resources/codebuild_fleet#max_capacity CodebuildFleet#max_capacity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/resources/codebuild_fleet#max_capacity CodebuildFleet#max_capacity}
   */
   readonly maxCapacity?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/resources/codebuild_fleet#scaling_type CodebuildFleet#scaling_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/resources/codebuild_fleet#scaling_type CodebuildFleet#scaling_type}
   */
   readonly scalingType?: string;
   /**
   * target_tracking_scaling_configs block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/resources/codebuild_fleet#target_tracking_scaling_configs CodebuildFleet#target_tracking_scaling_configs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/resources/codebuild_fleet#target_tracking_scaling_configs CodebuildFleet#target_tracking_scaling_configs}
   */
   readonly targetTrackingScalingConfigs?: CodebuildFleetScalingConfigurationTargetTrackingScalingConfigs[] | cdktf.IResolvable;
 }
@@ -454,15 +643,15 @@ export class CodebuildFleetScalingConfigurationOutputReference extends cdktf.Com
 }
 export interface CodebuildFleetVpcConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/resources/codebuild_fleet#security_group_ids CodebuildFleet#security_group_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/resources/codebuild_fleet#security_group_ids CodebuildFleet#security_group_ids}
   */
   readonly securityGroupIds: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/resources/codebuild_fleet#subnets CodebuildFleet#subnets}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/resources/codebuild_fleet#subnets CodebuildFleet#subnets}
   */
   readonly subnets: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/resources/codebuild_fleet#vpc_id CodebuildFleet#vpc_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/resources/codebuild_fleet#vpc_id CodebuildFleet#vpc_id}
   */
   readonly vpcId: string;
 }
@@ -627,7 +816,7 @@ export class CodebuildFleetVpcConfigList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/resources/codebuild_fleet aws_codebuild_fleet}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/resources/codebuild_fleet aws_codebuild_fleet}
 */
 export class CodebuildFleet extends cdktf.TerraformResource {
 
@@ -643,7 +832,7 @@ export class CodebuildFleet extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a CodebuildFleet resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CodebuildFleet to import
-  * @param importFromId The id of the existing CodebuildFleet that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/resources/codebuild_fleet#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing CodebuildFleet that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/resources/codebuild_fleet#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CodebuildFleet to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -655,7 +844,7 @@ export class CodebuildFleet extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/resources/codebuild_fleet aws_codebuild_fleet} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/resources/codebuild_fleet aws_codebuild_fleet} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -666,7 +855,7 @@ export class CodebuildFleet extends cdktf.TerraformResource {
       terraformResourceType: 'aws_codebuild_fleet',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.82.2',
+        providerVersion: '5.83.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -686,6 +875,7 @@ export class CodebuildFleet extends cdktf.TerraformResource {
     this._overflowBehavior = config.overflowBehavior;
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
+    this._computeConfiguration.internalValue = config.computeConfiguration;
     this._scalingConfiguration.internalValue = config.scalingConfiguration;
     this._vpcConfig.internalValue = config.vpcConfig;
   }
@@ -852,6 +1042,22 @@ export class CodebuildFleet extends cdktf.TerraformResource {
     return this._tagsAll;
   }
 
+  // compute_configuration - computed: false, optional: true, required: false
+  private _computeConfiguration = new CodebuildFleetComputeConfigurationOutputReference(this, "compute_configuration");
+  public get computeConfiguration() {
+    return this._computeConfiguration;
+  }
+  public putComputeConfiguration(value: CodebuildFleetComputeConfiguration) {
+    this._computeConfiguration.internalValue = value;
+  }
+  public resetComputeConfiguration() {
+    this._computeConfiguration.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get computeConfigurationInput() {
+    return this._computeConfiguration.internalValue;
+  }
+
   // scaling_configuration - computed: false, optional: true, required: false
   private _scalingConfiguration = new CodebuildFleetScalingConfigurationOutputReference(this, "scaling_configuration");
   public get scalingConfiguration() {
@@ -899,6 +1105,7 @@ export class CodebuildFleet extends cdktf.TerraformResource {
       overflow_behavior: cdktf.stringToTerraform(this._overflowBehavior),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
+      compute_configuration: codebuildFleetComputeConfigurationToTerraform(this._computeConfiguration.internalValue),
       scaling_configuration: codebuildFleetScalingConfigurationToTerraform(this._scalingConfiguration.internalValue),
       vpc_config: cdktf.listMapper(codebuildFleetVpcConfigToTerraform, true)(this._vpcConfig.internalValue),
     };
@@ -959,6 +1166,12 @@ export class CodebuildFleet extends cdktf.TerraformResource {
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
+      },
+      compute_configuration: {
+        value: codebuildFleetComputeConfigurationToHclTerraform(this._computeConfiguration.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "CodebuildFleetComputeConfigurationList",
       },
       scaling_configuration: {
         value: codebuildFleetScalingConfigurationToHclTerraform(this._scalingConfiguration.internalValue),

@@ -1,3 +1,3 @@
 # `aws_ses_receipt_filter`
 
-Refer to the Terraform Registry for docs: [`aws_ses_receipt_filter`](https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/resources/ses_receipt_filter).
+Refer to the Terraform Registry for docs: [`aws_ses_receipt_filter`](https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/resources/ses_receipt_filter).

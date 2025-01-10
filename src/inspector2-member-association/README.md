@@ -1,3 +1,3 @@
 # `aws_inspector2_member_association`
 
-Refer to the Terraform Registry for docs: [`aws_inspector2_member_association`](https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/resources/inspector2_member_association).
+Refer to the Terraform Registry for docs: [`aws_inspector2_member_association`](https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/resources/inspector2_member_association).

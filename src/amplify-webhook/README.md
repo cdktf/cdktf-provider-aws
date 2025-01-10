@@ -1,3 +1,3 @@
 # `aws_amplify_webhook`
 
-Refer to the Terraform Registry for docs: [`aws_amplify_webhook`](https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/resources/amplify_webhook).
+Refer to the Terraform Registry for docs: [`aws_amplify_webhook`](https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/resources/amplify_webhook).
