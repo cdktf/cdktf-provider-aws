@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.fsxOntapStorageVirtualMachine.FsxOntapStorageVirtualMachine.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxontapstoragevirtualmachine"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fsxontapstoragevirtualmachine"
 
 fsxontapstoragevirtualmachine.NewFsxOntapStorageVirtualMachine(scope Construct, id *string, config FsxOntapStorageVirtualMachineConfig) FsxOntapStorageVirtualMachine
 ```
@@ -453,7 +453,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.fsxOntapStorageVirtualMachine.FsxOntapStorageVirtualMachine.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxontapstoragevirtualmachine"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fsxontapstoragevirtualmachine"
 
 fsxontapstoragevirtualmachine.FsxOntapStorageVirtualMachine_IsConstruct(x interface{}) *bool
 ```
@@ -485,7 +485,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.fsxOntapStorageVirtualMachine.FsxOntapStorageVirtualMachine.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxontapstoragevirtualmachine"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fsxontapstoragevirtualmachine"
 
 fsxontapstoragevirtualmachine.FsxOntapStorageVirtualMachine_IsTerraformElement(x interface{}) *bool
 ```
@@ -499,7 +499,7 @@ fsxontapstoragevirtualmachine.FsxOntapStorageVirtualMachine_IsTerraformElement(x
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.fsxOntapStorageVirtualMachine.FsxOntapStorageVirtualMachine.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxontapstoragevirtualmachine"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fsxontapstoragevirtualmachine"
 
 fsxontapstoragevirtualmachine.FsxOntapStorageVirtualMachine_IsTerraformResource(x interface{}) *bool
 ```
@@ -513,7 +513,7 @@ fsxontapstoragevirtualmachine.FsxOntapStorageVirtualMachine_IsTerraformResource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.fsxOntapStorageVirtualMachine.FsxOntapStorageVirtualMachine.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxontapstoragevirtualmachine"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fsxontapstoragevirtualmachine"
 
 fsxontapstoragevirtualmachine.FsxOntapStorageVirtualMachine_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -984,11 +984,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.fsxOntapStorageVirtualMachine.FsxOntapStorageVirtualMachineActiveDirectoryConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxontapstoragevirtualmachine"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fsxontapstoragevirtualmachine"
 
 &fsxontapstoragevirtualmachine.FsxOntapStorageVirtualMachineActiveDirectoryConfiguration {
 	NetbiosName: *string,
-	SelfManagedActiveDirectoryConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.fsxOntapStorageVirtualMachine.FsxOntapStorageVirtualMachineActiveDirectoryConfigurationSelfManagedActiveDirectoryConfiguration,
+	SelfManagedActiveDirectoryConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v19.fsxOntapStorageVirtualMachine.FsxOntapStorageVirtualMachineActiveDirectoryConfigurationSelfManagedActiveDirectoryConfiguration,
 }
 ```
 
@@ -1032,7 +1032,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.fsxOntapStorageVirtualMachine.FsxOntapStorageVirtualMachineActiveDirectoryConfigurationSelfManagedActiveDirectoryConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxontapstoragevirtualmachine"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fsxontapstoragevirtualmachine"
 
 &fsxontapstoragevirtualmachine.FsxOntapStorageVirtualMachineActiveDirectoryConfigurationSelfManagedActiveDirectoryConfiguration {
 	DnsIps: *[]*string,
@@ -1134,7 +1134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.fsxOntapStorageVirtualMachine.FsxOntapStorageVirtualMachineConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxontapstoragevirtualmachine"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fsxontapstoragevirtualmachine"
 
 &fsxontapstoragevirtualmachine.FsxOntapStorageVirtualMachineConfig {
 	Connection: interface{},
@@ -1146,13 +1146,13 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxontapstoragevirtualmachine
 	Provisioners: *[]interface{},
 	FileSystemId: *string,
 	Name: *string,
-	ActiveDirectoryConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.fsxOntapStorageVirtualMachine.FsxOntapStorageVirtualMachineActiveDirectoryConfiguration,
+	ActiveDirectoryConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v19.fsxOntapStorageVirtualMachine.FsxOntapStorageVirtualMachineActiveDirectoryConfiguration,
 	Id: *string,
 	RootVolumeSecurityStyle: *string,
 	SvmAdminPassword: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.fsxOntapStorageVirtualMachine.FsxOntapStorageVirtualMachineTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v19.fsxOntapStorageVirtualMachine.FsxOntapStorageVirtualMachineTimeouts,
 }
 ```
 
@@ -1369,7 +1369,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.fsxOntapStorageVirtualMachine.FsxOntapStorageVirtualMachineEndpoints.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxontapstoragevirtualmachine"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fsxontapstoragevirtualmachine"
 
 &fsxontapstoragevirtualmachine.FsxOntapStorageVirtualMachineEndpoints {
 
@@ -1382,7 +1382,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxontapstoragevirtualmachine
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.fsxOntapStorageVirtualMachine.FsxOntapStorageVirtualMachineEndpointsIscsi.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxontapstoragevirtualmachine"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fsxontapstoragevirtualmachine"
 
 &fsxontapstoragevirtualmachine.FsxOntapStorageVirtualMachineEndpointsIscsi {
 
@@ -1395,7 +1395,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxontapstoragevirtualmachine
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.fsxOntapStorageVirtualMachine.FsxOntapStorageVirtualMachineEndpointsManagement.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxontapstoragevirtualmachine"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fsxontapstoragevirtualmachine"
 
 &fsxontapstoragevirtualmachine.FsxOntapStorageVirtualMachineEndpointsManagement {
 
@@ -1408,7 +1408,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxontapstoragevirtualmachine
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.fsxOntapStorageVirtualMachine.FsxOntapStorageVirtualMachineEndpointsNfs.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxontapstoragevirtualmachine"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fsxontapstoragevirtualmachine"
 
 &fsxontapstoragevirtualmachine.FsxOntapStorageVirtualMachineEndpointsNfs {
 
@@ -1421,7 +1421,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxontapstoragevirtualmachine
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.fsxOntapStorageVirtualMachine.FsxOntapStorageVirtualMachineEndpointsSmb.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxontapstoragevirtualmachine"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fsxontapstoragevirtualmachine"
 
 &fsxontapstoragevirtualmachine.FsxOntapStorageVirtualMachineEndpointsSmb {
 
@@ -1434,7 +1434,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxontapstoragevirtualmachine
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.fsxOntapStorageVirtualMachine.FsxOntapStorageVirtualMachineTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxontapstoragevirtualmachine"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fsxontapstoragevirtualmachine"
 
 &fsxontapstoragevirtualmachine.FsxOntapStorageVirtualMachineTimeouts {
 	Create: *string,
@@ -1496,7 +1496,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.fsxOntapStorageVirtualMachine.FsxOntapStorageVirtualMachineActiveDirectoryConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxontapstoragevirtualmachine"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fsxontapstoragevirtualmachine"
 
 fsxontapstoragevirtualmachine.NewFsxOntapStorageVirtualMachineActiveDirectoryConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FsxOntapStorageVirtualMachineActiveDirectoryConfigurationOutputReference
 ```
@@ -1816,7 +1816,7 @@ func InternalValue() FsxOntapStorageVirtualMachineActiveDirectoryConfiguration
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.fsxOntapStorageVirtualMachine.FsxOntapStorageVirtualMachineActiveDirectoryConfigurationSelfManagedActiveDirectoryConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxontapstoragevirtualmachine"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fsxontapstoragevirtualmachine"
 
 fsxontapstoragevirtualmachine.NewFsxOntapStorageVirtualMachineActiveDirectoryConfigurationSelfManagedActiveDirectoryConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FsxOntapStorageVirtualMachineActiveDirectoryConfigurationSelfManagedActiveDirectoryConfigurationOutputReference
 ```
@@ -2211,7 +2211,7 @@ func InternalValue() FsxOntapStorageVirtualMachineActiveDirectoryConfigurationSe
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.fsxOntapStorageVirtualMachine.FsxOntapStorageVirtualMachineEndpointsIscsiList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxontapstoragevirtualmachine"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fsxontapstoragevirtualmachine"
 
 fsxontapstoragevirtualmachine.NewFsxOntapStorageVirtualMachineEndpointsIscsiList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FsxOntapStorageVirtualMachineEndpointsIscsiList
 ```
@@ -2360,7 +2360,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.fsxOntapStorageVirtualMachine.FsxOntapStorageVirtualMachineEndpointsIscsiOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxontapstoragevirtualmachine"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fsxontapstoragevirtualmachine"
 
 fsxontapstoragevirtualmachine.NewFsxOntapStorageVirtualMachineEndpointsIscsiOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FsxOntapStorageVirtualMachineEndpointsIscsiOutputReference
 ```
@@ -2649,7 +2649,7 @@ func InternalValue() FsxOntapStorageVirtualMachineEndpointsIscsi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.fsxOntapStorageVirtualMachine.FsxOntapStorageVirtualMachineEndpointsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxontapstoragevirtualmachine"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fsxontapstoragevirtualmachine"
 
 fsxontapstoragevirtualmachine.NewFsxOntapStorageVirtualMachineEndpointsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FsxOntapStorageVirtualMachineEndpointsList
 ```
@@ -2798,7 +2798,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.fsxOntapStorageVirtualMachine.FsxOntapStorageVirtualMachineEndpointsManagementList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxontapstoragevirtualmachine"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fsxontapstoragevirtualmachine"
 
 fsxontapstoragevirtualmachine.NewFsxOntapStorageVirtualMachineEndpointsManagementList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FsxOntapStorageVirtualMachineEndpointsManagementList
 ```
@@ -2947,7 +2947,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.fsxOntapStorageVirtualMachine.FsxOntapStorageVirtualMachineEndpointsManagementOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxontapstoragevirtualmachine"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fsxontapstoragevirtualmachine"
 
 fsxontapstoragevirtualmachine.NewFsxOntapStorageVirtualMachineEndpointsManagementOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FsxOntapStorageVirtualMachineEndpointsManagementOutputReference
 ```
@@ -3236,7 +3236,7 @@ func InternalValue() FsxOntapStorageVirtualMachineEndpointsManagement
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.fsxOntapStorageVirtualMachine.FsxOntapStorageVirtualMachineEndpointsNfsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxontapstoragevirtualmachine"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fsxontapstoragevirtualmachine"
 
 fsxontapstoragevirtualmachine.NewFsxOntapStorageVirtualMachineEndpointsNfsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FsxOntapStorageVirtualMachineEndpointsNfsList
 ```
@@ -3385,7 +3385,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.fsxOntapStorageVirtualMachine.FsxOntapStorageVirtualMachineEndpointsNfsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxontapstoragevirtualmachine"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fsxontapstoragevirtualmachine"
 
 fsxontapstoragevirtualmachine.NewFsxOntapStorageVirtualMachineEndpointsNfsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FsxOntapStorageVirtualMachineEndpointsNfsOutputReference
 ```
@@ -3674,7 +3674,7 @@ func InternalValue() FsxOntapStorageVirtualMachineEndpointsNfs
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.fsxOntapStorageVirtualMachine.FsxOntapStorageVirtualMachineEndpointsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxontapstoragevirtualmachine"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fsxontapstoragevirtualmachine"
 
 fsxontapstoragevirtualmachine.NewFsxOntapStorageVirtualMachineEndpointsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FsxOntapStorageVirtualMachineEndpointsOutputReference
 ```
@@ -3985,7 +3985,7 @@ func InternalValue() FsxOntapStorageVirtualMachineEndpoints
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.fsxOntapStorageVirtualMachine.FsxOntapStorageVirtualMachineEndpointsSmbList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxontapstoragevirtualmachine"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fsxontapstoragevirtualmachine"
 
 fsxontapstoragevirtualmachine.NewFsxOntapStorageVirtualMachineEndpointsSmbList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FsxOntapStorageVirtualMachineEndpointsSmbList
 ```
@@ -4134,7 +4134,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.fsxOntapStorageVirtualMachine.FsxOntapStorageVirtualMachineEndpointsSmbOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxontapstoragevirtualmachine"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fsxontapstoragevirtualmachine"
 
 fsxontapstoragevirtualmachine.NewFsxOntapStorageVirtualMachineEndpointsSmbOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FsxOntapStorageVirtualMachineEndpointsSmbOutputReference
 ```
@@ -4423,7 +4423,7 @@ func InternalValue() FsxOntapStorageVirtualMachineEndpointsSmb
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.fsxOntapStorageVirtualMachine.FsxOntapStorageVirtualMachineTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxontapstoragevirtualmachine"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fsxontapstoragevirtualmachine"
 
 fsxontapstoragevirtualmachine.NewFsxOntapStorageVirtualMachineTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FsxOntapStorageVirtualMachineTimeoutsOutputReference
 ```

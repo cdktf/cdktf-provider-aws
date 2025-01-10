@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.vpclatticeResourceGateway.VpclatticeResourceGateway.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/vpclatticeresourcegateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/vpclatticeresourcegateway"
 
 vpclatticeresourcegateway.NewVpclatticeResourceGateway(scope Construct, id *string, config VpclatticeResourceGatewayConfig) VpclatticeResourceGateway
 ```
@@ -419,7 +419,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.vpclatticeResourceGateway.VpclatticeResourceGateway.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/vpclatticeresourcegateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/vpclatticeresourcegateway"
 
 vpclatticeresourcegateway.VpclatticeResourceGateway_IsConstruct(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.vpclatticeResourceGateway.VpclatticeResourceGateway.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/vpclatticeresourcegateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/vpclatticeresourcegateway"
 
 vpclatticeresourcegateway.VpclatticeResourceGateway_IsTerraformElement(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ vpclatticeresourcegateway.VpclatticeResourceGateway_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.vpclatticeResourceGateway.VpclatticeResourceGateway.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/vpclatticeresourcegateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/vpclatticeresourcegateway"
 
 vpclatticeresourcegateway.VpclatticeResourceGateway_IsTerraformResource(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ vpclatticeresourcegateway.VpclatticeResourceGateway_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.vpclatticeResourceGateway.VpclatticeResourceGateway.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/vpclatticeresourcegateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/vpclatticeresourcegateway"
 
 vpclatticeresourcegateway.VpclatticeResourceGateway_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -906,7 +906,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.vpclatticeResourceGateway.VpclatticeResourceGatewayConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/vpclatticeresourcegateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/vpclatticeresourcegateway"
 
 &vpclatticeresourcegateway.VpclatticeResourceGatewayConfig {
 	Connection: interface{},
@@ -922,7 +922,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/vpclatticeresourcegateway"
 	IpAddressType: *string,
 	SecurityGroupIds: *[]*string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.vpclatticeResourceGateway.VpclatticeResourceGatewayTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v19.vpclatticeResourceGateway.VpclatticeResourceGatewayTimeouts,
 }
 ```
 
@@ -1108,7 +1108,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.vpclatticeResourceGateway.VpclatticeResourceGatewayTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/vpclatticeresourcegateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/vpclatticeresourcegateway"
 
 &vpclatticeresourcegateway.VpclatticeResourceGatewayTimeouts {
 	Create: *string,
@@ -1176,7 +1176,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.vpclatticeResourceGateway.VpclatticeResourceGatewayTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/vpclatticeresourcegateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/vpclatticeresourcegateway"
 
 vpclatticeresourcegateway.NewVpclatticeResourceGatewayTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VpclatticeResourceGatewayTimeoutsOutputReference
 ```
