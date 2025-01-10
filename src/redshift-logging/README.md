@@ -1,3 +1,3 @@
 # `aws_redshift_logging`
 
-Refer to the Terraform Registry for docs: [`aws_redshift_logging`](https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/resources/redshift_logging).
+Refer to the Terraform Registry for docs: [`aws_redshift_logging`](https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/resources/redshift_logging).

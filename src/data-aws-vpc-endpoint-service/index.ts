@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/data-sources/vpc_endpoint_service
+// https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/data-sources/vpc_endpoint_service
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,48 +8,52 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsVpcEndpointServiceConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/data-sources/vpc_endpoint_service#id DataAwsVpcEndpointService#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/data-sources/vpc_endpoint_service#id DataAwsVpcEndpointService#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/data-sources/vpc_endpoint_service#service DataAwsVpcEndpointService#service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/data-sources/vpc_endpoint_service#service DataAwsVpcEndpointService#service}
   */
   readonly service?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/data-sources/vpc_endpoint_service#service_name DataAwsVpcEndpointService#service_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/data-sources/vpc_endpoint_service#service_name DataAwsVpcEndpointService#service_name}
   */
   readonly serviceName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/data-sources/vpc_endpoint_service#service_type DataAwsVpcEndpointService#service_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/data-sources/vpc_endpoint_service#service_regions DataAwsVpcEndpointService#service_regions}
+  */
+  readonly serviceRegions?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/data-sources/vpc_endpoint_service#service_type DataAwsVpcEndpointService#service_type}
   */
   readonly serviceType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/data-sources/vpc_endpoint_service#tags DataAwsVpcEndpointService#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/data-sources/vpc_endpoint_service#tags DataAwsVpcEndpointService#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
   * filter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/data-sources/vpc_endpoint_service#filter DataAwsVpcEndpointService#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/data-sources/vpc_endpoint_service#filter DataAwsVpcEndpointService#filter}
   */
   readonly filter?: DataAwsVpcEndpointServiceFilter[] | cdktf.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/data-sources/vpc_endpoint_service#timeouts DataAwsVpcEndpointService#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/data-sources/vpc_endpoint_service#timeouts DataAwsVpcEndpointService#timeouts}
   */
   readonly timeouts?: DataAwsVpcEndpointServiceTimeouts;
 }
 export interface DataAwsVpcEndpointServiceFilter {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/data-sources/vpc_endpoint_service#name DataAwsVpcEndpointService#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/data-sources/vpc_endpoint_service#name DataAwsVpcEndpointService#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/data-sources/vpc_endpoint_service#values DataAwsVpcEndpointService#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/data-sources/vpc_endpoint_service#values DataAwsVpcEndpointService#values}
   */
   readonly values: string[];
 }
@@ -193,7 +192,7 @@ export class DataAwsVpcEndpointServiceFilterList extends cdktf.ComplexList {
 }
 export interface DataAwsVpcEndpointServiceTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/data-sources/vpc_endpoint_service#read DataAwsVpcEndpointService#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/data-sources/vpc_endpoint_service#read DataAwsVpcEndpointService#read}
   */
   readonly read?: string;
 }
@@ -287,7 +286,7 @@ export class DataAwsVpcEndpointServiceTimeoutsOutputReference extends cdktf.Comp
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/data-sources/vpc_endpoint_service aws_vpc_endpoint_service}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/data-sources/vpc_endpoint_service aws_vpc_endpoint_service}
 */
 export class DataAwsVpcEndpointService extends cdktf.TerraformDataSource {
 
@@ -303,7 +302,7 @@ export class DataAwsVpcEndpointService extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataAwsVpcEndpointService resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsVpcEndpointService to import
-  * @param importFromId The id of the existing DataAwsVpcEndpointService that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/data-sources/vpc_endpoint_service#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsVpcEndpointService that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/data-sources/vpc_endpoint_service#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsVpcEndpointService to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -315,7 +314,7 @@ export class DataAwsVpcEndpointService extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/data-sources/vpc_endpoint_service aws_vpc_endpoint_service} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/data-sources/vpc_endpoint_service aws_vpc_endpoint_service} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -326,7 +325,7 @@ export class DataAwsVpcEndpointService extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_vpc_endpoint_service',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.82.2',
+        providerVersion: '5.83.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -340,6 +339,7 @@ export class DataAwsVpcEndpointService extends cdktf.TerraformDataSource {
     this._id = config.id;
     this._service = config.service;
     this._serviceName = config.serviceName;
+    this._serviceRegions = config.serviceRegions;
     this._serviceType = config.serviceType;
     this._tags = config.tags;
     this._filter.internalValue = config.filter;
@@ -406,6 +406,11 @@ export class DataAwsVpcEndpointService extends cdktf.TerraformDataSource {
     return cdktf.Fn.tolist(this.getListAttribute('private_dns_names'));
   }
 
+  // region - computed: true, optional: false, required: false
+  public get region() {
+    return this.getStringAttribute('region');
+  }
+
   // service - computed: false, optional: true, required: false
   private _service?: string; 
   public get service() {
@@ -441,6 +446,22 @@ export class DataAwsVpcEndpointService extends cdktf.TerraformDataSource {
   // Temporarily expose input value. Use with caution.
   public get serviceNameInput() {
     return this._serviceName;
+  }
+
+  // service_regions - computed: false, optional: true, required: false
+  private _serviceRegions?: string[]; 
+  public get serviceRegions() {
+    return cdktf.Fn.tolist(this.getListAttribute('service_regions'));
+  }
+  public set serviceRegions(value: string[]) {
+    this._serviceRegions = value;
+  }
+  public resetServiceRegions() {
+    this._serviceRegions = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get serviceRegionsInput() {
+    return this._serviceRegions;
   }
 
   // service_type - computed: true, optional: true, required: false
@@ -526,6 +547,7 @@ export class DataAwsVpcEndpointService extends cdktf.TerraformDataSource {
       id: cdktf.stringToTerraform(this._id),
       service: cdktf.stringToTerraform(this._service),
       service_name: cdktf.stringToTerraform(this._serviceName),
+      service_regions: cdktf.listMapper(cdktf.stringToTerraform, false)(this._serviceRegions),
       service_type: cdktf.stringToTerraform(this._serviceType),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       filter: cdktf.listMapper(dataAwsVpcEndpointServiceFilterToTerraform, true)(this._filter.internalValue),
@@ -552,6 +574,12 @@ export class DataAwsVpcEndpointService extends cdktf.TerraformDataSource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      service_regions: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._serviceRegions),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
       },
       service_type: {
         value: cdktf.stringToHclTerraform(this._serviceType),

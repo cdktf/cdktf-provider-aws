@@ -4,12 +4,12 @@
 
 ### DataAwsInstance <a name="DataAwsInstance" id="@cdktf/provider-aws.dataAwsInstance.DataAwsInstance"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/data-sources/instance aws_instance}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/data-sources/instance aws_instance}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsInstance.DataAwsInstance.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsinstance"
 
 dataawsinstance.NewDataAwsInstance(scope Construct, id *string, config DataAwsInstanceConfig) DataAwsInstance
 ```
@@ -358,7 +358,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsInstance.DataAwsInstance.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsinstance"
 
 dataawsinstance.DataAwsInstance_IsConstruct(x interface{}) *bool
 ```
@@ -390,7 +390,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsInstance.DataAwsInstance.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsinstance"
 
 dataawsinstance.DataAwsInstance_IsTerraformElement(x interface{}) *bool
 ```
@@ -404,7 +404,7 @@ dataawsinstance.DataAwsInstance_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsInstance.DataAwsInstance.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsinstance"
 
 dataawsinstance.DataAwsInstance_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -418,7 +418,7 @@ dataawsinstance.DataAwsInstance_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsInstance.DataAwsInstance.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsinstance"
 
 dataawsinstance.DataAwsInstance_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -447,7 +447,7 @@ The construct id used in the generated config for the DataAwsInstance to import.
 
 The id of the existing DataAwsInstance that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/data-sources/instance#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/data-sources/instance#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1252,7 +1252,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsInstance.DataAwsInstanceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsinstance"
 
 &dataawsinstance.DataAwsInstanceConfig {
 	Connection: interface{},
@@ -1269,7 +1269,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsinstance"
 	InstanceId: *string,
 	InstanceTags: *map[string]*string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v19.dataAwsInstance.DataAwsInstanceTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.dataAwsInstance.DataAwsInstanceTimeouts,
 }
 ```
 
@@ -1284,13 +1284,13 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsinstance"
 | <code><a href="#@cdktf/provider-aws.dataAwsInstance.DataAwsInstanceConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsInstance.DataAwsInstanceConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsInstance.DataAwsInstanceConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsInstance.DataAwsInstanceConfig.property.fetchPasswordData">FetchPasswordData</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/data-sources/instance#get_password_data DataAwsInstance#get_password_data}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsInstance.DataAwsInstanceConfig.property.fetchUserData">FetchUserData</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/data-sources/instance#get_user_data DataAwsInstance#get_user_data}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsInstance.DataAwsInstanceConfig.property.fetchPasswordData">FetchPasswordData</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/data-sources/instance#get_password_data DataAwsInstance#get_password_data}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsInstance.DataAwsInstanceConfig.property.fetchUserData">FetchUserData</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/data-sources/instance#get_user_data DataAwsInstance#get_user_data}. |
 | <code><a href="#@cdktf/provider-aws.dataAwsInstance.DataAwsInstanceConfig.property.filter">Filter</a></code> | <code>interface{}</code> | filter block. |
-| <code><a href="#@cdktf/provider-aws.dataAwsInstance.DataAwsInstanceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/data-sources/instance#id DataAwsInstance#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsInstance.DataAwsInstanceConfig.property.instanceId">InstanceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/data-sources/instance#instance_id DataAwsInstance#instance_id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsInstance.DataAwsInstanceConfig.property.instanceTags">InstanceTags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/data-sources/instance#instance_tags DataAwsInstance#instance_tags}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsInstance.DataAwsInstanceConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/data-sources/instance#tags DataAwsInstance#tags}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsInstance.DataAwsInstanceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/data-sources/instance#id DataAwsInstance#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsInstance.DataAwsInstanceConfig.property.instanceId">InstanceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/data-sources/instance#instance_id DataAwsInstance#instance_id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsInstance.DataAwsInstanceConfig.property.instanceTags">InstanceTags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/data-sources/instance#instance_tags DataAwsInstance#instance_tags}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsInstance.DataAwsInstanceConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/data-sources/instance#tags DataAwsInstance#tags}. |
 | <code><a href="#@cdktf/provider-aws.dataAwsInstance.DataAwsInstanceConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-aws.dataAwsInstance.DataAwsInstanceTimeouts">DataAwsInstanceTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1373,7 +1373,7 @@ FetchPasswordData interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/data-sources/instance#get_password_data DataAwsInstance#get_password_data}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/data-sources/instance#get_password_data DataAwsInstance#get_password_data}.
 
 ---
 
@@ -1385,7 +1385,7 @@ FetchUserData interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/data-sources/instance#get_user_data DataAwsInstance#get_user_data}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/data-sources/instance#get_user_data DataAwsInstance#get_user_data}.
 
 ---
 
@@ -1399,7 +1399,7 @@ Filter interface{}
 
 filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/data-sources/instance#filter DataAwsInstance#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/data-sources/instance#filter DataAwsInstance#filter}
 
 ---
 
@@ -1411,7 +1411,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/data-sources/instance#id DataAwsInstance#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/data-sources/instance#id DataAwsInstance#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1426,7 +1426,7 @@ InstanceId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/data-sources/instance#instance_id DataAwsInstance#instance_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/data-sources/instance#instance_id DataAwsInstance#instance_id}.
 
 ---
 
@@ -1438,7 +1438,7 @@ InstanceTags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/data-sources/instance#instance_tags DataAwsInstance#instance_tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/data-sources/instance#instance_tags DataAwsInstance#instance_tags}.
 
 ---
 
@@ -1450,7 +1450,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/data-sources/instance#tags DataAwsInstance#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/data-sources/instance#tags DataAwsInstance#tags}.
 
 ---
 
@@ -1464,7 +1464,7 @@ Timeouts DataAwsInstanceTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/data-sources/instance#timeouts DataAwsInstance#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/data-sources/instance#timeouts DataAwsInstance#timeouts}
 
 ---
 
@@ -1473,7 +1473,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsInstance.DataAwsInstanceCreditSpecification.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsinstance"
 
 &dataawsinstance.DataAwsInstanceCreditSpecification {
 
@@ -1486,7 +1486,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsinstance"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsInstance.DataAwsInstanceEbsBlockDevice.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsinstance"
 
 &dataawsinstance.DataAwsInstanceEbsBlockDevice {
 
@@ -1499,7 +1499,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsinstance"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsInstance.DataAwsInstanceEnclaveOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsinstance"
 
 &dataawsinstance.DataAwsInstanceEnclaveOptions {
 
@@ -1512,7 +1512,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsinstance"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsInstance.DataAwsInstanceEphemeralBlockDevice.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsinstance"
 
 &dataawsinstance.DataAwsInstanceEphemeralBlockDevice {
 
@@ -1525,7 +1525,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsinstance"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsInstance.DataAwsInstanceFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsinstance"
 
 &dataawsinstance.DataAwsInstanceFilter {
 	Name: *string,
@@ -1537,8 +1537,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsinstance"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dataAwsInstance.DataAwsInstanceFilter.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/data-sources/instance#name DataAwsInstance#name}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsInstance.DataAwsInstanceFilter.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/data-sources/instance#values DataAwsInstance#values}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsInstance.DataAwsInstanceFilter.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/data-sources/instance#name DataAwsInstance#name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsInstance.DataAwsInstanceFilter.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/data-sources/instance#values DataAwsInstance#values}. |
 
 ---
 
@@ -1550,7 +1550,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/data-sources/instance#name DataAwsInstance#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/data-sources/instance#name DataAwsInstance#name}.
 
 ---
 
@@ -1562,7 +1562,7 @@ Values *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/data-sources/instance#values DataAwsInstance#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/data-sources/instance#values DataAwsInstance#values}.
 
 ---
 
@@ -1571,7 +1571,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsInstance.DataAwsInstanceMaintenanceOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsinstance"
 
 &dataawsinstance.DataAwsInstanceMaintenanceOptions {
 
@@ -1584,7 +1584,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsinstance"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsInstance.DataAwsInstanceMetadataOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsinstance"
 
 &dataawsinstance.DataAwsInstanceMetadataOptions {
 
@@ -1597,7 +1597,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsinstance"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsInstance.DataAwsInstancePrivateDnsNameOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsinstance"
 
 &dataawsinstance.DataAwsInstancePrivateDnsNameOptions {
 
@@ -1610,7 +1610,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsinstance"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsInstance.DataAwsInstanceRootBlockDevice.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsinstance"
 
 &dataawsinstance.DataAwsInstanceRootBlockDevice {
 
@@ -1623,7 +1623,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsinstance"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsInstance.DataAwsInstanceTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsinstance"
 
 &dataawsinstance.DataAwsInstanceTimeouts {
 	Read: *string,
@@ -1634,7 +1634,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsinstance"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dataAwsInstance.DataAwsInstanceTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/data-sources/instance#read DataAwsInstance#read}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsInstance.DataAwsInstanceTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/data-sources/instance#read DataAwsInstance#read}. |
 
 ---
 
@@ -1646,7 +1646,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/data-sources/instance#read DataAwsInstance#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/data-sources/instance#read DataAwsInstance#read}.
 
 ---
 
@@ -1657,7 +1657,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsInstance.DataAwsInstanceCreditSpecificationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsinstance"
 
 dataawsinstance.NewDataAwsInstanceCreditSpecificationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsInstanceCreditSpecificationList
 ```
@@ -1806,7 +1806,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsInstance.DataAwsInstanceCreditSpecificationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsinstance"
 
 dataawsinstance.NewDataAwsInstanceCreditSpecificationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsInstanceCreditSpecificationOutputReference
 ```
@@ -2084,7 +2084,7 @@ func InternalValue() DataAwsInstanceCreditSpecification
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsInstance.DataAwsInstanceEbsBlockDeviceList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsinstance"
 
 dataawsinstance.NewDataAwsInstanceEbsBlockDeviceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsInstanceEbsBlockDeviceList
 ```
@@ -2233,7 +2233,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsInstance.DataAwsInstanceEbsBlockDeviceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsinstance"
 
 dataawsinstance.NewDataAwsInstanceEbsBlockDeviceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsInstanceEbsBlockDeviceOutputReference
 ```
@@ -2621,7 +2621,7 @@ func InternalValue() DataAwsInstanceEbsBlockDevice
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsInstance.DataAwsInstanceEnclaveOptionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsinstance"
 
 dataawsinstance.NewDataAwsInstanceEnclaveOptionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsInstanceEnclaveOptionsList
 ```
@@ -2770,7 +2770,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsInstance.DataAwsInstanceEnclaveOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsinstance"
 
 dataawsinstance.NewDataAwsInstanceEnclaveOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsInstanceEnclaveOptionsOutputReference
 ```
@@ -3048,7 +3048,7 @@ func InternalValue() DataAwsInstanceEnclaveOptions
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsInstance.DataAwsInstanceEphemeralBlockDeviceList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsinstance"
 
 dataawsinstance.NewDataAwsInstanceEphemeralBlockDeviceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsInstanceEphemeralBlockDeviceList
 ```
@@ -3197,7 +3197,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsInstance.DataAwsInstanceEphemeralBlockDeviceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsinstance"
 
 dataawsinstance.NewDataAwsInstanceEphemeralBlockDeviceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsInstanceEphemeralBlockDeviceOutputReference
 ```
@@ -3497,7 +3497,7 @@ func InternalValue() DataAwsInstanceEphemeralBlockDevice
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsInstance.DataAwsInstanceFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsinstance"
 
 dataawsinstance.NewDataAwsInstanceFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsInstanceFilterList
 ```
@@ -3657,7 +3657,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsInstance.DataAwsInstanceFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsinstance"
 
 dataawsinstance.NewDataAwsInstanceFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsInstanceFilterOutputReference
 ```
@@ -3968,7 +3968,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsInstance.DataAwsInstanceMaintenanceOptionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsinstance"
 
 dataawsinstance.NewDataAwsInstanceMaintenanceOptionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsInstanceMaintenanceOptionsList
 ```
@@ -4117,7 +4117,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsInstance.DataAwsInstanceMaintenanceOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsinstance"
 
 dataawsinstance.NewDataAwsInstanceMaintenanceOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsInstanceMaintenanceOptionsOutputReference
 ```
@@ -4395,7 +4395,7 @@ func InternalValue() DataAwsInstanceMaintenanceOptions
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsInstance.DataAwsInstanceMetadataOptionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsinstance"
 
 dataawsinstance.NewDataAwsInstanceMetadataOptionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsInstanceMetadataOptionsList
 ```
@@ -4544,7 +4544,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsInstance.DataAwsInstanceMetadataOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsinstance"
 
 dataawsinstance.NewDataAwsInstanceMetadataOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsInstanceMetadataOptionsOutputReference
 ```
@@ -4866,7 +4866,7 @@ func InternalValue() DataAwsInstanceMetadataOptions
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsInstance.DataAwsInstancePrivateDnsNameOptionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsinstance"
 
 dataawsinstance.NewDataAwsInstancePrivateDnsNameOptionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsInstancePrivateDnsNameOptionsList
 ```
@@ -5015,7 +5015,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsInstance.DataAwsInstancePrivateDnsNameOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsinstance"
 
 dataawsinstance.NewDataAwsInstancePrivateDnsNameOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsInstancePrivateDnsNameOptionsOutputReference
 ```
@@ -5315,7 +5315,7 @@ func InternalValue() DataAwsInstancePrivateDnsNameOptions
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsInstance.DataAwsInstanceRootBlockDeviceList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsinstance"
 
 dataawsinstance.NewDataAwsInstanceRootBlockDeviceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsInstanceRootBlockDeviceList
 ```
@@ -5464,7 +5464,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsInstance.DataAwsInstanceRootBlockDeviceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsinstance"
 
 dataawsinstance.NewDataAwsInstanceRootBlockDeviceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsInstanceRootBlockDeviceOutputReference
 ```
@@ -5841,7 +5841,7 @@ func InternalValue() DataAwsInstanceRootBlockDevice
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsInstance.DataAwsInstanceTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsinstance"
 
 dataawsinstance.NewDataAwsInstanceTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAwsInstanceTimeoutsOutputReference
 ```

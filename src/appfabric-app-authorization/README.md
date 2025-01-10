@@ -1,3 +1,3 @@
 # `aws_appfabric_app_authorization`
 
-Refer to the Terraform Registry for docs: [`aws_appfabric_app_authorization`](https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/resources/appfabric_app_authorization).
+Refer to the Terraform Registry for docs: [`aws_appfabric_app_authorization`](https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/resources/appfabric_app_authorization).

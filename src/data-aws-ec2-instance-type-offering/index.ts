@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/data-sources/ec2_instance_type_offering
+// https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/data-sources/ec2_instance_type_offering
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,40 +8,40 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsEc2InstanceTypeOfferingConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/data-sources/ec2_instance_type_offering#id DataAwsEc2InstanceTypeOffering#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/data-sources/ec2_instance_type_offering#id DataAwsEc2InstanceTypeOffering#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/data-sources/ec2_instance_type_offering#location_type DataAwsEc2InstanceTypeOffering#location_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/data-sources/ec2_instance_type_offering#location_type DataAwsEc2InstanceTypeOffering#location_type}
   */
   readonly locationType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/data-sources/ec2_instance_type_offering#preferred_instance_types DataAwsEc2InstanceTypeOffering#preferred_instance_types}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/data-sources/ec2_instance_type_offering#preferred_instance_types DataAwsEc2InstanceTypeOffering#preferred_instance_types}
   */
   readonly preferredInstanceTypes?: string[];
   /**
   * filter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/data-sources/ec2_instance_type_offering#filter DataAwsEc2InstanceTypeOffering#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/data-sources/ec2_instance_type_offering#filter DataAwsEc2InstanceTypeOffering#filter}
   */
   readonly filter?: DataAwsEc2InstanceTypeOfferingFilter[] | cdktf.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/data-sources/ec2_instance_type_offering#timeouts DataAwsEc2InstanceTypeOffering#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/data-sources/ec2_instance_type_offering#timeouts DataAwsEc2InstanceTypeOffering#timeouts}
   */
   readonly timeouts?: DataAwsEc2InstanceTypeOfferingTimeouts;
 }
 export interface DataAwsEc2InstanceTypeOfferingFilter {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/data-sources/ec2_instance_type_offering#name DataAwsEc2InstanceTypeOffering#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/data-sources/ec2_instance_type_offering#name DataAwsEc2InstanceTypeOffering#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/data-sources/ec2_instance_type_offering#values DataAwsEc2InstanceTypeOffering#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/data-sources/ec2_instance_type_offering#values DataAwsEc2InstanceTypeOffering#values}
   */
   readonly values: string[];
 }
@@ -185,7 +180,7 @@ export class DataAwsEc2InstanceTypeOfferingFilterList extends cdktf.ComplexList 
 }
 export interface DataAwsEc2InstanceTypeOfferingTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/data-sources/ec2_instance_type_offering#read DataAwsEc2InstanceTypeOffering#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/data-sources/ec2_instance_type_offering#read DataAwsEc2InstanceTypeOffering#read}
   */
   readonly read?: string;
 }
@@ -279,7 +274,7 @@ export class DataAwsEc2InstanceTypeOfferingTimeoutsOutputReference extends cdktf
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/data-sources/ec2_instance_type_offering aws_ec2_instance_type_offering}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/data-sources/ec2_instance_type_offering aws_ec2_instance_type_offering}
 */
 export class DataAwsEc2InstanceTypeOffering extends cdktf.TerraformDataSource {
 
@@ -295,7 +290,7 @@ export class DataAwsEc2InstanceTypeOffering extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataAwsEc2InstanceTypeOffering resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsEc2InstanceTypeOffering to import
-  * @param importFromId The id of the existing DataAwsEc2InstanceTypeOffering that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/data-sources/ec2_instance_type_offering#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsEc2InstanceTypeOffering that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/data-sources/ec2_instance_type_offering#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsEc2InstanceTypeOffering to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -307,7 +302,7 @@ export class DataAwsEc2InstanceTypeOffering extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/data-sources/ec2_instance_type_offering aws_ec2_instance_type_offering} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/data-sources/ec2_instance_type_offering aws_ec2_instance_type_offering} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -318,7 +313,7 @@ export class DataAwsEc2InstanceTypeOffering extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_ec2_instance_type_offering',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.82.2',
+        providerVersion: '5.83.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

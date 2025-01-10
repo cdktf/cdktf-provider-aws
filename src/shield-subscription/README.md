@@ -1,3 +1,3 @@
 # `aws_shield_subscription`
 
-Refer to the Terraform Registry for docs: [`aws_shield_subscription`](https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/resources/shield_subscription).
+Refer to the Terraform Registry for docs: [`aws_shield_subscription`](https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/resources/shield_subscription).
