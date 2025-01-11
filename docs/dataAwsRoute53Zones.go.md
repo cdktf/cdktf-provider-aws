@@ -4,12 +4,12 @@
 
 ### DataAwsRoute53Zones <a name="DataAwsRoute53Zones" id="@cdktf/provider-aws.dataAwsRoute53Zones.DataAwsRoute53Zones"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/data-sources/route53_zones aws_route53_zones}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/data-sources/route53_zones aws_route53_zones}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsRoute53Zones.DataAwsRoute53Zones.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsroute53zones"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsroute53zones"
 
 dataawsroute53zones.NewDataAwsRoute53Zones(scope Construct, id *string, config DataAwsRoute53ZonesConfig) DataAwsRoute53Zones
 ```
@@ -276,7 +276,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsRoute53Zones.DataAwsRoute53Zones.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsroute53zones"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsroute53zones"
 
 dataawsroute53zones.DataAwsRoute53Zones_IsConstruct(x interface{}) *bool
 ```
@@ -308,7 +308,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsRoute53Zones.DataAwsRoute53Zones.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsroute53zones"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsroute53zones"
 
 dataawsroute53zones.DataAwsRoute53Zones_IsTerraformElement(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ dataawsroute53zones.DataAwsRoute53Zones_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsRoute53Zones.DataAwsRoute53Zones.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsroute53zones"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsroute53zones"
 
 dataawsroute53zones.DataAwsRoute53Zones_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ dataawsroute53zones.DataAwsRoute53Zones_IsTerraformDataSource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsRoute53Zones.DataAwsRoute53Zones.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsroute53zones"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsroute53zones"
 
 dataawsroute53zones.DataAwsRoute53Zones_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -365,7 +365,7 @@ The construct id used in the generated config for the DataAwsRoute53Zones to imp
 
 The id of the existing DataAwsRoute53Zones that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/data-sources/route53_zones#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/data-sources/route53_zones#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -565,7 +565,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsRoute53Zones.DataAwsRoute53ZonesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsroute53zones"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsroute53zones"
 
 &dataawsroute53zones.DataAwsRoute53ZonesConfig {
 	Connection: interface{},

@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/resources/s3tables_namespace
+// https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/s3tables_namespace
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,17 +8,17 @@ import * as cdktf from 'cdktf';
 
 export interface S3TablesNamespaceConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/resources/s3tables_namespace#namespace S3TablesNamespace#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/s3tables_namespace#namespace S3TablesNamespace#namespace}
   */
   readonly namespace: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/resources/s3tables_namespace#table_bucket_arn S3TablesNamespace#table_bucket_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/s3tables_namespace#table_bucket_arn S3TablesNamespace#table_bucket_arn}
   */
   readonly tableBucketArn: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/resources/s3tables_namespace aws_s3tables_namespace}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/s3tables_namespace aws_s3tables_namespace}
 */
 export class S3TablesNamespace extends cdktf.TerraformResource {
 
@@ -39,7 +34,7 @@ export class S3TablesNamespace extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a S3TablesNamespace resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the S3TablesNamespace to import
-  * @param importFromId The id of the existing S3TablesNamespace that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/resources/s3tables_namespace#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing S3TablesNamespace that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/s3tables_namespace#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the S3TablesNamespace to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -51,7 +46,7 @@ export class S3TablesNamespace extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/resources/s3tables_namespace aws_s3tables_namespace} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/s3tables_namespace aws_s3tables_namespace} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -62,7 +57,7 @@ export class S3TablesNamespace extends cdktf.TerraformResource {
       terraformResourceType: 'aws_s3tables_namespace',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.83.0',
+        providerVersion: '5.83.1',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
