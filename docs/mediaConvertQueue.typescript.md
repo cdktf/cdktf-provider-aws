@@ -4,7 +4,7 @@
 
 ### MediaConvertQueue <a name="MediaConvertQueue" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/resources/media_convert_queue aws_media_convert_queue}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/media_convert_queue aws_media_convert_queue}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.Initializer"></a>
 
@@ -529,7 +529,7 @@ The construct id used in the generated config for the MediaConvertQueue to impor
 
 The id of the existing MediaConvertQueue that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/resources/media_convert_queue#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/media_convert_queue#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -932,14 +932,14 @@ const mediaConvertQueueConfig: mediaConvertQueue.MediaConvertQueueConfig = { ...
 | <code><a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueueConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueueConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueueConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueueConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/resources/media_convert_queue#name MediaConvertQueue#name}. |
-| <code><a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueueConfig.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/resources/media_convert_queue#description MediaConvertQueue#description}. |
-| <code><a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueueConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/resources/media_convert_queue#id MediaConvertQueue#id}. |
-| <code><a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueueConfig.property.pricingPlan">pricingPlan</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/resources/media_convert_queue#pricing_plan MediaConvertQueue#pricing_plan}. |
+| <code><a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueueConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/media_convert_queue#name MediaConvertQueue#name}. |
+| <code><a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueueConfig.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/media_convert_queue#description MediaConvertQueue#description}. |
+| <code><a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueueConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/media_convert_queue#id MediaConvertQueue#id}. |
+| <code><a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueueConfig.property.pricingPlan">pricingPlan</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/media_convert_queue#pricing_plan MediaConvertQueue#pricing_plan}. |
 | <code><a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueueConfig.property.reservationPlanSettings">reservationPlanSettings</a></code> | <code><a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettings">MediaConvertQueueReservationPlanSettings</a></code> | reservation_plan_settings block. |
-| <code><a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueueConfig.property.status">status</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/resources/media_convert_queue#status MediaConvertQueue#status}. |
-| <code><a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueueConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/resources/media_convert_queue#tags MediaConvertQueue#tags}. |
-| <code><a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueueConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/resources/media_convert_queue#tags_all MediaConvertQueue#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueueConfig.property.status">status</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/media_convert_queue#status MediaConvertQueue#status}. |
+| <code><a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueueConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/media_convert_queue#tags MediaConvertQueue#tags}. |
+| <code><a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueueConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/media_convert_queue#tags_all MediaConvertQueue#tags_all}. |
 
 ---
 
@@ -1021,7 +1021,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/resources/media_convert_queue#name MediaConvertQueue#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/media_convert_queue#name MediaConvertQueue#name}.
 
 ---
 
@@ -1033,7 +1033,7 @@ public readonly description: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/resources/media_convert_queue#description MediaConvertQueue#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/media_convert_queue#description MediaConvertQueue#description}.
 
 ---
 
@@ -1045,7 +1045,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/resources/media_convert_queue#id MediaConvertQueue#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/media_convert_queue#id MediaConvertQueue#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1060,7 +1060,7 @@ public readonly pricingPlan: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/resources/media_convert_queue#pricing_plan MediaConvertQueue#pricing_plan}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/media_convert_queue#pricing_plan MediaConvertQueue#pricing_plan}.
 
 ---
 
@@ -1074,7 +1074,7 @@ public readonly reservationPlanSettings: MediaConvertQueueReservationPlanSetting
 
 reservation_plan_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/resources/media_convert_queue#reservation_plan_settings MediaConvertQueue#reservation_plan_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/media_convert_queue#reservation_plan_settings MediaConvertQueue#reservation_plan_settings}
 
 ---
 
@@ -1086,7 +1086,7 @@ public readonly status: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/resources/media_convert_queue#status MediaConvertQueue#status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/media_convert_queue#status MediaConvertQueue#status}.
 
 ---
 
@@ -1098,7 +1098,7 @@ public readonly tags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/resources/media_convert_queue#tags MediaConvertQueue#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/media_convert_queue#tags MediaConvertQueue#tags}.
 
 ---
 
@@ -1110,7 +1110,7 @@ public readonly tagsAll: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/resources/media_convert_queue#tags_all MediaConvertQueue#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/media_convert_queue#tags_all MediaConvertQueue#tags_all}.
 
 ---
 
@@ -1128,9 +1128,9 @@ const mediaConvertQueueReservationPlanSettings: mediaConvertQueue.MediaConvertQu
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettings.property.commitment">commitment</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/resources/media_convert_queue#commitment MediaConvertQueue#commitment}. |
-| <code><a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettings.property.renewalType">renewalType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/resources/media_convert_queue#renewal_type MediaConvertQueue#renewal_type}. |
-| <code><a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettings.property.reservedSlots">reservedSlots</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/resources/media_convert_queue#reserved_slots MediaConvertQueue#reserved_slots}. |
+| <code><a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettings.property.commitment">commitment</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/media_convert_queue#commitment MediaConvertQueue#commitment}. |
+| <code><a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettings.property.renewalType">renewalType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/media_convert_queue#renewal_type MediaConvertQueue#renewal_type}. |
+| <code><a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettings.property.reservedSlots">reservedSlots</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/media_convert_queue#reserved_slots MediaConvertQueue#reserved_slots}. |
 
 ---
 
@@ -1142,7 +1142,7 @@ public readonly commitment: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/resources/media_convert_queue#commitment MediaConvertQueue#commitment}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/media_convert_queue#commitment MediaConvertQueue#commitment}.
 
 ---
 
@@ -1154,7 +1154,7 @@ public readonly renewalType: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/resources/media_convert_queue#renewal_type MediaConvertQueue#renewal_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/media_convert_queue#renewal_type MediaConvertQueue#renewal_type}.
 
 ---
 
@@ -1166,7 +1166,7 @@ public readonly reservedSlots: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/resources/media_convert_queue#reserved_slots MediaConvertQueue#reserved_slots}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/media_convert_queue#reserved_slots MediaConvertQueue#reserved_slots}.
 
 ---
 
