@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsNetworkmanagerSite.DataAwsNetworkmanagerSite.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsnetworkmanagersite"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsnetworkmanagersite"
 
 dataawsnetworkmanagersite.NewDataAwsNetworkmanagerSite(scope Construct, id *string, config DataAwsNetworkmanagerSiteConfig) DataAwsNetworkmanagerSite
 ```
@@ -290,7 +290,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsNetworkmanagerSite.DataAwsNetworkmanagerSite.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsnetworkmanagersite"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsnetworkmanagersite"
 
 dataawsnetworkmanagersite.DataAwsNetworkmanagerSite_IsConstruct(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsNetworkmanagerSite.DataAwsNetworkmanagerSite.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsnetworkmanagersite"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsnetworkmanagersite"
 
 dataawsnetworkmanagersite.DataAwsNetworkmanagerSite_IsTerraformElement(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ dataawsnetworkmanagersite.DataAwsNetworkmanagerSite_IsTerraformElement(x interfa
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsNetworkmanagerSite.DataAwsNetworkmanagerSite.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsnetworkmanagersite"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsnetworkmanagersite"
 
 dataawsnetworkmanagersite.DataAwsNetworkmanagerSite_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ dataawsnetworkmanagersite.DataAwsNetworkmanagerSite_IsTerraformDataSource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsNetworkmanagerSite.DataAwsNetworkmanagerSite.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsnetworkmanagersite"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsnetworkmanagersite"
 
 dataawsnetworkmanagersite.DataAwsNetworkmanagerSite_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -678,7 +678,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsNetworkmanagerSite.DataAwsNetworkmanagerSiteConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsnetworkmanagersite"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsnetworkmanagersite"
 
 &dataawsnetworkmanagersite.DataAwsNetworkmanagerSiteConfig {
 	Connection: interface{},
@@ -839,7 +839,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsNetworkmanagerSite.DataAwsNetworkmanagerSiteLocation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsnetworkmanagersite"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsnetworkmanagersite"
 
 &dataawsnetworkmanagersite.DataAwsNetworkmanagerSiteLocation {
 
@@ -854,7 +854,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsnetworkmanagersite"
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsNetworkmanagerSite.DataAwsNetworkmanagerSiteLocationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsnetworkmanagersite"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsnetworkmanagersite"
 
 dataawsnetworkmanagersite.NewDataAwsNetworkmanagerSiteLocationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsNetworkmanagerSiteLocationList
 ```
@@ -1003,7 +1003,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsNetworkmanagerSite.DataAwsNetworkmanagerSiteLocationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsnetworkmanagersite"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsnetworkmanagersite"
 
 dataawsnetworkmanagersite.NewDataAwsNetworkmanagerSiteLocationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsNetworkmanagerSiteLocationOutputReference
 ```
