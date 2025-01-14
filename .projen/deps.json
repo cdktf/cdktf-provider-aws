@@ -91,6 +91,11 @@
       "type": "override"
     },
     {
+      "name": "cssstyle",
+      "version": "4.1.0",
+      "type": "override"
+    },
+    {
       "name": "cdktf",
       "version": "^0.20.0",
       "type": "peer"

@@ -69,7 +69,8 @@
     "constructs": "^10.3.0"
   },
   "resolutions": {
-    "@types/yargs": "17.0.13"
+    "@types/yargs": "17.0.13",
+    "cssstyle": "4.1.0"
   },
   "keywords": [
     "aws",

@@ -225,9 +225,9 @@
     glob "10.4.5"
 
 "@cdktf/provider-project@^0.6.0":
-  version "0.6.28"
-  resolved "https://registry.yarnpkg.com/@cdktf/provider-project/-/provider-project-0.6.28.tgz#5515411cfa6ac05d930a66599978a57118441c43"
-  integrity sha512-u4O+HX7B3kmVIHwIYTSk7g9v25L3MzHIGyIOLLZFlo2XFUGwjj9cS+goy0tDbo1K1dsyg2DBH6xTU4qsFBjT0A==
+  version "0.6.29"
+  resolved "https://registry.yarnpkg.com/@cdktf/provider-project/-/provider-project-0.6.29.tgz#7a39d85ce87ff0f0e9960db229392357a01058f0"
+  integrity sha512-F1bF07PQoFG8BX76R0yCdRzG4I3AxrHuDenXIjd7j+5f9b+/awmt8jLXSu+ADdy/P3zf7E58QnKKiedzJGrl6w==
   dependencies:
     change-case "^4.1.2"
     fs-extra "^10.1.0"
@@ -1534,7 +1534,7 @@ cross-spawn@7.0.6, cross-spawn@^7.0.0, cross-spawn@^7.0.3:
     shebang-command "^2.0.0"
     which "^2.0.1"
 
-cssstyle@^4.1.0:
+cssstyle@4.1.0, cssstyle@^4.1.0:
   version "4.1.0"
   resolved "https://registry.yarnpkg.com/cssstyle/-/cssstyle-4.1.0.tgz#161faee382af1bafadb6d3867a92a19bcb4aea70"
   integrity sha512-h66W1URKpBS5YMI/V8PyXvTMFT8SupJ1IzoIV8IeBC/ji8WVmrO8dGlTi+2dh6whmdk6BiKJLD/ZBkhWbcg6nA==
