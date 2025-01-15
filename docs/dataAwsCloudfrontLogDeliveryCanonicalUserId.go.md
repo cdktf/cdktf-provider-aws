@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsCloudfrontLogDeliveryCanonicalUserId.DataAwsCloudfrontLogDeliveryCanonicalUserId.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawscloudfrontlogdeliverycanonicaluserid"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscloudfrontlogdeliverycanonicaluserid"
 
 dataawscloudfrontlogdeliverycanonicaluserid.NewDataAwsCloudfrontLogDeliveryCanonicalUserId(scope Construct, id *string, config DataAwsCloudfrontLogDeliveryCanonicalUserIdConfig) DataAwsCloudfrontLogDeliveryCanonicalUserId
 ```
@@ -290,7 +290,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsCloudfrontLogDeliveryCanonicalUserId.DataAwsCloudfrontLogDeliveryCanonicalUserId.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawscloudfrontlogdeliverycanonicaluserid"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscloudfrontlogdeliverycanonicaluserid"
 
 dataawscloudfrontlogdeliverycanonicaluserid.DataAwsCloudfrontLogDeliveryCanonicalUserId_IsConstruct(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsCloudfrontLogDeliveryCanonicalUserId.DataAwsCloudfrontLogDeliveryCanonicalUserId.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawscloudfrontlogdeliverycanonicaluserid"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscloudfrontlogdeliverycanonicaluserid"
 
 dataawscloudfrontlogdeliverycanonicaluserid.DataAwsCloudfrontLogDeliveryCanonicalUserId_IsTerraformElement(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ dataawscloudfrontlogdeliverycanonicaluserid.DataAwsCloudfrontLogDeliveryCanonica
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsCloudfrontLogDeliveryCanonicalUserId.DataAwsCloudfrontLogDeliveryCanonicalUserId.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawscloudfrontlogdeliverycanonicaluserid"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscloudfrontlogdeliverycanonicaluserid"
 
 dataawscloudfrontlogdeliverycanonicaluserid.DataAwsCloudfrontLogDeliveryCanonicalUserId_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ dataawscloudfrontlogdeliverycanonicaluserid.DataAwsCloudfrontLogDeliveryCanonica
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsCloudfrontLogDeliveryCanonicalUserId.DataAwsCloudfrontLogDeliveryCanonicalUserId.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawscloudfrontlogdeliverycanonicaluserid"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscloudfrontlogdeliverycanonicaluserid"
 
 dataawscloudfrontlogdeliverycanonicaluserid.DataAwsCloudfrontLogDeliveryCanonicalUserId_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -601,7 +601,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsCloudfrontLogDeliveryCanonicalUserId.DataAwsCloudfrontLogDeliveryCanonicalUserIdConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawscloudfrontlogdeliverycanonicaluserid"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscloudfrontlogdeliverycanonicaluserid"
 
 &dataawscloudfrontlogdeliverycanonicaluserid.DataAwsCloudfrontLogDeliveryCanonicalUserIdConfig {
 	Connection: interface{},

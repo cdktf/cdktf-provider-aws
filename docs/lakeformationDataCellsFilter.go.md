@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lakeformationDataCellsFilter.LakeformationDataCellsFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lakeformationdatacellsfilter"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lakeformationdatacellsfilter"
 
 lakeformationdatacellsfilter.NewLakeformationDataCellsFilter(scope Construct, id *string, config LakeformationDataCellsFilterConfig) LakeformationDataCellsFilter
 ```
@@ -418,7 +418,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.lakeformationDataCellsFilter.LakeformationDataCellsFilter.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lakeformationdatacellsfilter"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lakeformationdatacellsfilter"
 
 lakeformationdatacellsfilter.LakeformationDataCellsFilter_IsConstruct(x interface{}) *bool
 ```
@@ -450,7 +450,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.lakeformationDataCellsFilter.LakeformationDataCellsFilter.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lakeformationdatacellsfilter"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lakeformationdatacellsfilter"
 
 lakeformationdatacellsfilter.LakeformationDataCellsFilter_IsTerraformElement(x interface{}) *bool
 ```
@@ -464,7 +464,7 @@ lakeformationdatacellsfilter.LakeformationDataCellsFilter_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.lakeformationDataCellsFilter.LakeformationDataCellsFilter.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lakeformationdatacellsfilter"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lakeformationdatacellsfilter"
 
 lakeformationdatacellsfilter.LakeformationDataCellsFilter_IsTerraformResource(x interface{}) *bool
 ```
@@ -478,7 +478,7 @@ lakeformationdatacellsfilter.LakeformationDataCellsFilter_IsTerraformResource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.lakeformationDataCellsFilter.LakeformationDataCellsFilter.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lakeformationdatacellsfilter"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lakeformationdatacellsfilter"
 
 lakeformationdatacellsfilter.LakeformationDataCellsFilter_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -762,7 +762,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lakeformationDataCellsFilter.LakeformationDataCellsFilterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lakeformationdatacellsfilter"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lakeformationdatacellsfilter"
 
 &lakeformationdatacellsfilter.LakeformationDataCellsFilterConfig {
 	Connection: interface{},
@@ -773,7 +773,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lakeformationdatacellsfil
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	TableData: interface{},
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v19.lakeformationDataCellsFilter.LakeformationDataCellsFilterTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.lakeformationDataCellsFilter.LakeformationDataCellsFilterTimeouts,
 }
 ```
 
@@ -896,7 +896,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lakeformationDataCellsFilter.LakeformationDataCellsFilterTableData.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lakeformationdatacellsfilter"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lakeformationdatacellsfilter"
 
 &lakeformationdatacellsfilter.LakeformationDataCellsFilterTableData {
 	DatabaseName: *string,
@@ -1030,7 +1030,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lakeformationDataCellsFilter.LakeformationDataCellsFilterTableDataColumnWildcard.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lakeformationdatacellsfilter"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lakeformationdatacellsfilter"
 
 &lakeformationdatacellsfilter.LakeformationDataCellsFilterTableDataColumnWildcard {
 	ExcludedColumnNames: *[]*string,
@@ -1062,7 +1062,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lakeformationDataCellsFilter.LakeformationDataCellsFilterTableDataRowFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lakeformationdatacellsfilter"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lakeformationdatacellsfilter"
 
 &lakeformationdatacellsfilter.LakeformationDataCellsFilterTableDataRowFilter {
 	AllRowsWildcard: interface{},
@@ -1110,7 +1110,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lakeformationDataCellsFilter.LakeformationDataCellsFilterTableDataRowFilterAllRowsWildcard.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lakeformationdatacellsfilter"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lakeformationdatacellsfilter"
 
 &lakeformationdatacellsfilter.LakeformationDataCellsFilterTableDataRowFilterAllRowsWildcard {
 
@@ -1123,7 +1123,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lakeformationdatacellsfil
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lakeformationDataCellsFilter.LakeformationDataCellsFilterTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lakeformationdatacellsfilter"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lakeformationdatacellsfilter"
 
 &lakeformationdatacellsfilter.LakeformationDataCellsFilterTimeouts {
 	Create: *string,
@@ -1159,7 +1159,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lakeformationDataCellsFilter.LakeformationDataCellsFilterTableDataColumnWildcardList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lakeformationdatacellsfilter"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lakeformationdatacellsfilter"
 
 lakeformationdatacellsfilter.NewLakeformationDataCellsFilterTableDataColumnWildcardList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LakeformationDataCellsFilterTableDataColumnWildcardList
 ```
@@ -1319,7 +1319,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lakeformationDataCellsFilter.LakeformationDataCellsFilterTableDataColumnWildcardOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lakeformationdatacellsfilter"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lakeformationdatacellsfilter"
 
 lakeformationdatacellsfilter.NewLakeformationDataCellsFilterTableDataColumnWildcardOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LakeformationDataCellsFilterTableDataColumnWildcardOutputReference
 ```
@@ -1615,7 +1615,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lakeformationDataCellsFilter.LakeformationDataCellsFilterTableDataList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lakeformationdatacellsfilter"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lakeformationdatacellsfilter"
 
 lakeformationdatacellsfilter.NewLakeformationDataCellsFilterTableDataList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LakeformationDataCellsFilterTableDataList
 ```
@@ -1775,7 +1775,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lakeformationDataCellsFilter.LakeformationDataCellsFilterTableDataOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lakeformationdatacellsfilter"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lakeformationdatacellsfilter"
 
 lakeformationdatacellsfilter.NewLakeformationDataCellsFilterTableDataOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LakeformationDataCellsFilterTableDataOutputReference
 ```
@@ -2272,7 +2272,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lakeformationDataCellsFilter.LakeformationDataCellsFilterTableDataRowFilterAllRowsWildcardList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lakeformationdatacellsfilter"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lakeformationdatacellsfilter"
 
 lakeformationdatacellsfilter.NewLakeformationDataCellsFilterTableDataRowFilterAllRowsWildcardList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LakeformationDataCellsFilterTableDataRowFilterAllRowsWildcardList
 ```
@@ -2432,7 +2432,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lakeformationDataCellsFilter.LakeformationDataCellsFilterTableDataRowFilterAllRowsWildcardOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lakeformationdatacellsfilter"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lakeformationdatacellsfilter"
 
 lakeformationdatacellsfilter.NewLakeformationDataCellsFilterTableDataRowFilterAllRowsWildcardOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LakeformationDataCellsFilterTableDataRowFilterAllRowsWildcardOutputReference
 ```
@@ -2699,7 +2699,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lakeformationDataCellsFilter.LakeformationDataCellsFilterTableDataRowFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lakeformationdatacellsfilter"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lakeformationdatacellsfilter"
 
 lakeformationdatacellsfilter.NewLakeformationDataCellsFilterTableDataRowFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LakeformationDataCellsFilterTableDataRowFilterList
 ```
@@ -2859,7 +2859,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lakeformationDataCellsFilter.LakeformationDataCellsFilterTableDataRowFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lakeformationdatacellsfilter"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lakeformationdatacellsfilter"
 
 lakeformationdatacellsfilter.NewLakeformationDataCellsFilterTableDataRowFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LakeformationDataCellsFilterTableDataRowFilterOutputReference
 ```
@@ -3197,7 +3197,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lakeformationDataCellsFilter.LakeformationDataCellsFilterTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lakeformationdatacellsfilter"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lakeformationdatacellsfilter"
 
 lakeformationdatacellsfilter.NewLakeformationDataCellsFilterTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LakeformationDataCellsFilterTimeoutsOutputReference
 ```

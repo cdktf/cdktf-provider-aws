@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.defaultSecurityGroup.DefaultSecurityGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/defaultsecuritygroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/defaultsecuritygroup"
 
 defaultsecuritygroup.NewDefaultSecurityGroup(scope Construct, id *string, config DefaultSecurityGroupConfig) DefaultSecurityGroup
 ```
@@ -453,7 +453,7 @@ func ResetVpcId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.defaultSecurityGroup.DefaultSecurityGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/defaultsecuritygroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/defaultsecuritygroup"
 
 defaultsecuritygroup.DefaultSecurityGroup_IsConstruct(x interface{}) *bool
 ```
@@ -485,7 +485,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.defaultSecurityGroup.DefaultSecurityGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/defaultsecuritygroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/defaultsecuritygroup"
 
 defaultsecuritygroup.DefaultSecurityGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -499,7 +499,7 @@ defaultsecuritygroup.DefaultSecurityGroup_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.defaultSecurityGroup.DefaultSecurityGroup.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/defaultsecuritygroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/defaultsecuritygroup"
 
 defaultsecuritygroup.DefaultSecurityGroup_IsTerraformResource(x interface{}) *bool
 ```
@@ -513,7 +513,7 @@ defaultsecuritygroup.DefaultSecurityGroup_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.defaultSecurityGroup.DefaultSecurityGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/defaultsecuritygroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/defaultsecuritygroup"
 
 defaultsecuritygroup.DefaultSecurityGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -951,7 +951,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.defaultSecurityGroup.DefaultSecurityGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/defaultsecuritygroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/defaultsecuritygroup"
 
 &defaultsecuritygroup.DefaultSecurityGroupConfig {
 	Connection: interface{},
@@ -1154,7 +1154,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.defaultSecurityGroup.DefaultSecurityGroupEgress.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/defaultsecuritygroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/defaultsecuritygroup"
 
 &defaultsecuritygroup.DefaultSecurityGroupEgress {
 	CidrBlocks: *[]*string,
@@ -1298,7 +1298,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.defaultSecurityGroup.DefaultSecurityGroupIngress.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/defaultsecuritygroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/defaultsecuritygroup"
 
 &defaultsecuritygroup.DefaultSecurityGroupIngress {
 	CidrBlocks: *[]*string,
@@ -1444,7 +1444,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.defaultSecurityGroup.DefaultSecurityGroupEgressList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/defaultsecuritygroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/defaultsecuritygroup"
 
 defaultsecuritygroup.NewDefaultSecurityGroupEgressList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DefaultSecurityGroupEgressList
 ```
@@ -1604,7 +1604,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.defaultSecurityGroup.DefaultSecurityGroupEgressOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/defaultsecuritygroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/defaultsecuritygroup"
 
 defaultsecuritygroup.NewDefaultSecurityGroupEgressOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DefaultSecurityGroupEgressOutputReference
 ```
@@ -2132,7 +2132,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.defaultSecurityGroup.DefaultSecurityGroupIngressList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/defaultsecuritygroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/defaultsecuritygroup"
 
 defaultsecuritygroup.NewDefaultSecurityGroupIngressList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DefaultSecurityGroupIngressList
 ```
@@ -2292,7 +2292,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.defaultSecurityGroup.DefaultSecurityGroupIngressOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/defaultsecuritygroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/defaultsecuritygroup"
 
 defaultsecuritygroup.NewDefaultSecurityGroupIngressOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DefaultSecurityGroupIngressOutputReference
 ```

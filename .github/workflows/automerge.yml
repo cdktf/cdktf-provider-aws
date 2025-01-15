@@ -11,17 +11,25 @@ on:
       - synchronize
 concurrency:
   group: ${{ github.workflow }}-${{ github.head_ref }}
+  cancel-in-progress: true
 jobs:
   automerge:
     runs-on: ubuntu-latest
     permissions:
       contents: read
+    env:
+      GIT_REF: ${{ github.event.pull_request.head.ref }}
+      GIT_REPO: ${{ github.event.pull_request.head.repo.full_name }}
+      PR_ID: ${{ github.event.pull_request.number }}
     if: contains(github.event.pull_request.labels.*.name, 'automerge') && !contains(github.event.pull_request.labels.*.name, 'do-not-merge') && github.event.pull_request.draft == false
     steps:
       - name: Checkout
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          ref: ${{ env.GIT_REF }}
+          repository: ${{ env.GIT_REPO }}
       - name: Turn on automerge for this PR by a trusted user or bot
         if: github.event.pull_request.user.login == 'team-tf-cdk' || contains(fromJSON('["OWNER", "MEMBER", "COLLABORATOR"]'), github.event.pull_request.author_association) || github.actor == 'dependabot[bot]'
         env:
           GH_TOKEN: ${{ secrets.PROJEN_GITHUB_TOKEN }}
-        run: gh pr merge --auto --squash ${{ github.event.pull_request.number }}
+        run: gh pr merge --auto --squash $PR_ID
