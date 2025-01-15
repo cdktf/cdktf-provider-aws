@@ -10,26 +10,31 @@ on:
       - reopened
 concurrency:
   group: ${{ github.workflow }}-${{ github.head_ref }}
+  cancel-in-progress: true
 jobs:
   approve:
     runs-on: ubuntu-latest
     permissions:
       contents: read
       pull-requests: write
+    env:
+      GIT_REF: ${{ github.event.pull_request.head.ref }}
+      GIT_REPO: ${{ github.event.pull_request.head.repo.full_name }}
+      PR_ID: ${{ github.event.pull_request.number }}
     if: contains(github.event.pull_request.labels.*.name, 'auto-approve') && github.event.pull_request.draft == false
     steps:
       - name: Checkout PR
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
         with:
-          ref: ${{ github.event.pull_request.head.ref }}
-          repository: ${{ github.event.pull_request.head.repo.full_name }}
+          ref: ${{ env.GIT_REF }}
+          repository: ${{ env.GIT_REPO }}
       - name: Auto-approve PRs by other users as team-tf-cdk
         if: github.event.pull_request.user.login != 'team-tf-cdk' && (contains(fromJSON('["OWNER", "MEMBER", "COLLABORATOR"]'), github.event.pull_request.author_association) || github.actor == 'dependabot[bot]')
         env:
           GH_TOKEN: ${{ secrets.PROJEN_GITHUB_TOKEN }}
-        run: gh pr review ${{ github.event.pull_request.number }} --approve
+        run: gh pr review $PR_ID --approve
       - name: Auto-approve PRs by team-tf-cdk as github-actions[bot]
         if: github.event.pull_request.user.login == 'team-tf-cdk'
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: gh pr review ${{ github.event.pull_request.number }} --approve
+        run: gh pr review $PR_ID --approve
