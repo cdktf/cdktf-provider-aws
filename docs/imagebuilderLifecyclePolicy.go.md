@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.imagebuilderLifecyclePolicy.ImagebuilderLifecyclePolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/imagebuilderlifecyclepolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/imagebuilderlifecyclepolicy"
 
 imagebuilderlifecyclepolicy.NewImagebuilderLifecyclePolicy(scope Construct, id *string, config ImagebuilderLifecyclePolicyConfig) ImagebuilderLifecyclePolicy
 ```
@@ -439,7 +439,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.imagebuilderLifecyclePolicy.ImagebuilderLifecyclePolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/imagebuilderlifecyclepolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/imagebuilderlifecyclepolicy"
 
 imagebuilderlifecyclepolicy.ImagebuilderLifecyclePolicy_IsConstruct(x interface{}) *bool
 ```
@@ -471,7 +471,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.imagebuilderLifecyclePolicy.ImagebuilderLifecyclePolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/imagebuilderlifecyclepolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/imagebuilderlifecyclepolicy"
 
 imagebuilderlifecyclepolicy.ImagebuilderLifecyclePolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -485,7 +485,7 @@ imagebuilderlifecyclepolicy.ImagebuilderLifecyclePolicy_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.imagebuilderLifecyclePolicy.ImagebuilderLifecyclePolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/imagebuilderlifecyclepolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/imagebuilderlifecyclepolicy"
 
 imagebuilderlifecyclepolicy.ImagebuilderLifecyclePolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -499,7 +499,7 @@ imagebuilderlifecyclepolicy.ImagebuilderLifecyclePolicy_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.imagebuilderLifecyclePolicy.ImagebuilderLifecyclePolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/imagebuilderlifecyclepolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/imagebuilderlifecyclepolicy"
 
 imagebuilderlifecyclepolicy.ImagebuilderLifecyclePolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -937,7 +937,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.imagebuilderLifecyclePolicy.ImagebuilderLifecyclePolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/imagebuilderlifecyclepolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/imagebuilderlifecyclepolicy"
 
 &imagebuilderlifecyclepolicy.ImagebuilderLifecyclePolicyConfig {
 	Connection: interface{},
@@ -1155,7 +1155,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.imagebuilderLifecyclePolicy.ImagebuilderLifecyclePolicyPolicyDetail.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/imagebuilderlifecyclepolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/imagebuilderlifecyclepolicy"
 
 &imagebuilderlifecyclepolicy.ImagebuilderLifecyclePolicyPolicyDetail {
 	Action: interface{},
@@ -1221,7 +1221,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.imagebuilderLifecyclePolicy.ImagebuilderLifecyclePolicyPolicyDetailAction.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/imagebuilderlifecyclepolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/imagebuilderlifecyclepolicy"
 
 &imagebuilderlifecyclepolicy.ImagebuilderLifecyclePolicyPolicyDetailAction {
 	Type: *string,
@@ -1269,7 +1269,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.imagebuilderLifecyclePolicy.ImagebuilderLifecyclePolicyPolicyDetailActionIncludeResources.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/imagebuilderlifecyclepolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/imagebuilderlifecyclepolicy"
 
 &imagebuilderlifecyclepolicy.ImagebuilderLifecyclePolicyPolicyDetailActionIncludeResources {
 	Amis: interface{},
@@ -1329,7 +1329,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.imagebuilderLifecyclePolicy.ImagebuilderLifecyclePolicyPolicyDetailExclusionRules.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/imagebuilderlifecyclepolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/imagebuilderlifecyclepolicy"
 
 &imagebuilderlifecyclepolicy.ImagebuilderLifecyclePolicyPolicyDetailExclusionRules {
 	Amis: interface{},
@@ -1377,7 +1377,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.imagebuilderLifecyclePolicy.ImagebuilderLifecyclePolicyPolicyDetailExclusionRulesAmis.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/imagebuilderlifecyclepolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/imagebuilderlifecyclepolicy"
 
 &imagebuilderlifecyclepolicy.ImagebuilderLifecyclePolicyPolicyDetailExclusionRulesAmis {
 	IsPublic: interface{},
@@ -1467,7 +1467,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.imagebuilderLifecyclePolicy.ImagebuilderLifecyclePolicyPolicyDetailExclusionRulesAmisLastLaunched.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/imagebuilderlifecyclepolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/imagebuilderlifecyclepolicy"
 
 &imagebuilderlifecyclepolicy.ImagebuilderLifecyclePolicyPolicyDetailExclusionRulesAmisLastLaunched {
 	Unit: *string,
@@ -1513,7 +1513,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.imagebuilderLifecyclePolicy.ImagebuilderLifecyclePolicyPolicyDetailFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/imagebuilderlifecyclepolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/imagebuilderlifecyclepolicy"
 
 &imagebuilderlifecyclepolicy.ImagebuilderLifecyclePolicyPolicyDetailFilter {
 	Type: *string,
@@ -1587,7 +1587,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.imagebuilderLifecyclePolicy.ImagebuilderLifecyclePolicyResourceSelection.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/imagebuilderlifecyclepolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/imagebuilderlifecyclepolicy"
 
 &imagebuilderlifecyclepolicy.ImagebuilderLifecyclePolicyResourceSelection {
 	Recipe: interface{},
@@ -1635,7 +1635,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.imagebuilderLifecyclePolicy.ImagebuilderLifecyclePolicyResourceSelectionRecipe.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/imagebuilderlifecyclepolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/imagebuilderlifecyclepolicy"
 
 &imagebuilderlifecyclepolicy.ImagebuilderLifecyclePolicyResourceSelectionRecipe {
 	Name: *string,
@@ -1683,7 +1683,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.imagebuilderLifecyclePolicy.ImagebuilderLifecyclePolicyPolicyDetailActionIncludeResourcesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/imagebuilderlifecyclepolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/imagebuilderlifecyclepolicy"
 
 imagebuilderlifecyclepolicy.NewImagebuilderLifecyclePolicyPolicyDetailActionIncludeResourcesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ImagebuilderLifecyclePolicyPolicyDetailActionIncludeResourcesList
 ```
@@ -1843,7 +1843,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.imagebuilderLifecyclePolicy.ImagebuilderLifecyclePolicyPolicyDetailActionIncludeResourcesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/imagebuilderlifecyclepolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/imagebuilderlifecyclepolicy"
 
 imagebuilderlifecyclepolicy.NewImagebuilderLifecyclePolicyPolicyDetailActionIncludeResourcesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ImagebuilderLifecyclePolicyPolicyDetailActionIncludeResourcesOutputReference
 ```
@@ -2197,7 +2197,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.imagebuilderLifecyclePolicy.ImagebuilderLifecyclePolicyPolicyDetailActionList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/imagebuilderlifecyclepolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/imagebuilderlifecyclepolicy"
 
 imagebuilderlifecyclepolicy.NewImagebuilderLifecyclePolicyPolicyDetailActionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ImagebuilderLifecyclePolicyPolicyDetailActionList
 ```
@@ -2357,7 +2357,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.imagebuilderLifecyclePolicy.ImagebuilderLifecyclePolicyPolicyDetailActionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/imagebuilderlifecyclepolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/imagebuilderlifecyclepolicy"
 
 imagebuilderlifecyclepolicy.NewImagebuilderLifecyclePolicyPolicyDetailActionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ImagebuilderLifecyclePolicyPolicyDetailActionOutputReference
 ```
@@ -2688,7 +2688,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.imagebuilderLifecyclePolicy.ImagebuilderLifecyclePolicyPolicyDetailExclusionRulesAmisLastLaunchedList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/imagebuilderlifecyclepolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/imagebuilderlifecyclepolicy"
 
 imagebuilderlifecyclepolicy.NewImagebuilderLifecyclePolicyPolicyDetailExclusionRulesAmisLastLaunchedList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ImagebuilderLifecyclePolicyPolicyDetailExclusionRulesAmisLastLaunchedList
 ```
@@ -2848,7 +2848,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.imagebuilderLifecyclePolicy.ImagebuilderLifecyclePolicyPolicyDetailExclusionRulesAmisLastLaunchedOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/imagebuilderlifecyclepolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/imagebuilderlifecyclepolicy"
 
 imagebuilderlifecyclepolicy.NewImagebuilderLifecyclePolicyPolicyDetailExclusionRulesAmisLastLaunchedOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ImagebuilderLifecyclePolicyPolicyDetailExclusionRulesAmisLastLaunchedOutputReference
 ```
@@ -3159,7 +3159,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.imagebuilderLifecyclePolicy.ImagebuilderLifecyclePolicyPolicyDetailExclusionRulesAmisList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/imagebuilderlifecyclepolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/imagebuilderlifecyclepolicy"
 
 imagebuilderlifecyclepolicy.NewImagebuilderLifecyclePolicyPolicyDetailExclusionRulesAmisList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ImagebuilderLifecyclePolicyPolicyDetailExclusionRulesAmisList
 ```
@@ -3319,7 +3319,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.imagebuilderLifecyclePolicy.ImagebuilderLifecyclePolicyPolicyDetailExclusionRulesAmisOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/imagebuilderlifecyclepolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/imagebuilderlifecyclepolicy"
 
 imagebuilderlifecyclepolicy.NewImagebuilderLifecyclePolicyPolicyDetailExclusionRulesAmisOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ImagebuilderLifecyclePolicyPolicyDetailExclusionRulesAmisOutputReference
 ```
@@ -3744,7 +3744,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.imagebuilderLifecyclePolicy.ImagebuilderLifecyclePolicyPolicyDetailExclusionRulesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/imagebuilderlifecyclepolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/imagebuilderlifecyclepolicy"
 
 imagebuilderlifecyclepolicy.NewImagebuilderLifecyclePolicyPolicyDetailExclusionRulesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ImagebuilderLifecyclePolicyPolicyDetailExclusionRulesList
 ```
@@ -3904,7 +3904,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.imagebuilderLifecyclePolicy.ImagebuilderLifecyclePolicyPolicyDetailExclusionRulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/imagebuilderlifecyclepolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/imagebuilderlifecyclepolicy"
 
 imagebuilderlifecyclepolicy.NewImagebuilderLifecyclePolicyPolicyDetailExclusionRulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ImagebuilderLifecyclePolicyPolicyDetailExclusionRulesOutputReference
 ```
@@ -4242,7 +4242,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.imagebuilderLifecyclePolicy.ImagebuilderLifecyclePolicyPolicyDetailFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/imagebuilderlifecyclepolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/imagebuilderlifecyclepolicy"
 
 imagebuilderlifecyclepolicy.NewImagebuilderLifecyclePolicyPolicyDetailFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ImagebuilderLifecyclePolicyPolicyDetailFilterList
 ```
@@ -4402,7 +4402,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.imagebuilderLifecyclePolicy.ImagebuilderLifecyclePolicyPolicyDetailFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/imagebuilderlifecyclepolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/imagebuilderlifecyclepolicy"
 
 imagebuilderlifecyclepolicy.NewImagebuilderLifecyclePolicyPolicyDetailFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ImagebuilderLifecyclePolicyPolicyDetailFilterOutputReference
 ```
@@ -4771,7 +4771,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.imagebuilderLifecyclePolicy.ImagebuilderLifecyclePolicyPolicyDetailList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/imagebuilderlifecyclepolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/imagebuilderlifecyclepolicy"
 
 imagebuilderlifecyclepolicy.NewImagebuilderLifecyclePolicyPolicyDetailList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ImagebuilderLifecyclePolicyPolicyDetailList
 ```
@@ -4931,7 +4931,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.imagebuilderLifecyclePolicy.ImagebuilderLifecyclePolicyPolicyDetailOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/imagebuilderlifecyclepolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/imagebuilderlifecyclepolicy"
 
 imagebuilderlifecyclepolicy.NewImagebuilderLifecyclePolicyPolicyDetailOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ImagebuilderLifecyclePolicyPolicyDetailOutputReference
 ```
@@ -5324,7 +5324,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.imagebuilderLifecyclePolicy.ImagebuilderLifecyclePolicyResourceSelectionList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/imagebuilderlifecyclepolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/imagebuilderlifecyclepolicy"
 
 imagebuilderlifecyclepolicy.NewImagebuilderLifecyclePolicyResourceSelectionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ImagebuilderLifecyclePolicyResourceSelectionList
 ```
@@ -5484,7 +5484,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.imagebuilderLifecyclePolicy.ImagebuilderLifecyclePolicyResourceSelectionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/imagebuilderlifecyclepolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/imagebuilderlifecyclepolicy"
 
 imagebuilderlifecyclepolicy.NewImagebuilderLifecyclePolicyResourceSelectionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ImagebuilderLifecyclePolicyResourceSelectionOutputReference
 ```
@@ -5822,7 +5822,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.imagebuilderLifecyclePolicy.ImagebuilderLifecyclePolicyResourceSelectionRecipeList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/imagebuilderlifecyclepolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/imagebuilderlifecyclepolicy"
 
 imagebuilderlifecyclepolicy.NewImagebuilderLifecyclePolicyResourceSelectionRecipeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ImagebuilderLifecyclePolicyResourceSelectionRecipeList
 ```
@@ -5982,7 +5982,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.imagebuilderLifecyclePolicy.ImagebuilderLifecyclePolicyResourceSelectionRecipeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/imagebuilderlifecyclepolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/imagebuilderlifecyclepolicy"
 
 imagebuilderlifecyclepolicy.NewImagebuilderLifecyclePolicyResourceSelectionRecipeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ImagebuilderLifecyclePolicyResourceSelectionRecipeOutputReference
 ```
