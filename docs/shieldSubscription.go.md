@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.shieldSubscription.ShieldSubscription.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/shieldsubscription"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/shieldsubscription"
 
 shieldsubscription.NewShieldSubscription(scope Construct, id *string, config ShieldSubscriptionConfig) ShieldSubscription
 ```
@@ -392,7 +392,7 @@ func ResetSkipDestroy()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.shieldSubscription.ShieldSubscription.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/shieldsubscription"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/shieldsubscription"
 
 shieldsubscription.ShieldSubscription_IsConstruct(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.shieldSubscription.ShieldSubscription.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/shieldsubscription"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/shieldsubscription"
 
 shieldsubscription.ShieldSubscription_IsTerraformElement(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ shieldsubscription.ShieldSubscription_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.shieldSubscription.ShieldSubscription.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/shieldsubscription"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/shieldsubscription"
 
 shieldsubscription.ShieldSubscription_IsTerraformResource(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ shieldsubscription.ShieldSubscription_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.shieldSubscription.ShieldSubscription.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/shieldsubscription"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/shieldsubscription"
 
 shieldsubscription.ShieldSubscription_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -736,7 +736,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.shieldSubscription.ShieldSubscriptionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/shieldsubscription"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/shieldsubscription"
 
 &shieldsubscription.ShieldSubscriptionConfig {
 	Connection: interface{},
