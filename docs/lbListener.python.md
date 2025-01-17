@@ -4,7 +4,7 @@
 
 ### LbListener <a name="LbListener" id="@cdktf/provider-aws.lbListener.LbListener"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener aws_lb_listener}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener aws_lb_listener}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lbListener.LbListener.Initializer"></a>
 
@@ -29,6 +29,25 @@ lbListener.LbListener(
   mutual_authentication: LbListenerMutualAuthentication = None,
   port: typing.Union[int, float] = None,
   protocol: str = None,
+  routing_http_request_x_amzn_mtls_clientcert_header_name: str = None,
+  routing_http_request_x_amzn_mtls_clientcert_issuer_header_name: str = None,
+  routing_http_request_x_amzn_mtls_clientcert_leaf_header_name: str = None,
+  routing_http_request_x_amzn_mtls_clientcert_serial_number_header_name: str = None,
+  routing_http_request_x_amzn_mtls_clientcert_subject_header_name: str = None,
+  routing_http_request_x_amzn_mtls_clientcert_validity_header_name: str = None,
+  routing_http_request_x_amzn_tls_cipher_suite_header_name: str = None,
+  routing_http_request_x_amzn_tls_version_header_name: str = None,
+  routing_http_response_access_control_allow_credentials_header_value: str = None,
+  routing_http_response_access_control_allow_headers_header_value: str = None,
+  routing_http_response_access_control_allow_methods_header_value: str = None,
+  routing_http_response_access_control_allow_origin_header_value: str = None,
+  routing_http_response_access_control_expose_headers_header_value: str = None,
+  routing_http_response_access_control_max_age_header_value: str = None,
+  routing_http_response_content_security_policy_header_value: str = None,
+  routing_http_response_server_enabled: typing.Union[bool, IResolvable] = None,
+  routing_http_response_strict_transport_security_header_value: str = None,
+  routing_http_response_x_content_type_options_header_value: str = None,
+  routing_http_response_x_frame_options_header_value: str = None,
   ssl_policy: str = None,
   tags: typing.Mapping[str] = None,
   tags_all: typing.Mapping[str] = None,
@@ -49,17 +68,36 @@ lbListener.LbListener(
 | <code><a href="#@cdktf/provider-aws.lbListener.LbListener.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lbListener.LbListener.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lbListener.LbListener.Initializer.parameter.defaultAction">default_action</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.lbListener.LbListenerDefaultAction">LbListenerDefaultAction</a>]]</code> | default_action block. |
-| <code><a href="#@cdktf/provider-aws.lbListener.LbListener.Initializer.parameter.loadBalancerArn">load_balancer_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#load_balancer_arn LbListener#load_balancer_arn}. |
-| <code><a href="#@cdktf/provider-aws.lbListener.LbListener.Initializer.parameter.alpnPolicy">alpn_policy</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#alpn_policy LbListener#alpn_policy}. |
-| <code><a href="#@cdktf/provider-aws.lbListener.LbListener.Initializer.parameter.certificateArn">certificate_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#certificate_arn LbListener#certificate_arn}. |
-| <code><a href="#@cdktf/provider-aws.lbListener.LbListener.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#id LbListener#id}. |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListener.Initializer.parameter.loadBalancerArn">load_balancer_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#load_balancer_arn LbListener#load_balancer_arn}. |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListener.Initializer.parameter.alpnPolicy">alpn_policy</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#alpn_policy LbListener#alpn_policy}. |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListener.Initializer.parameter.certificateArn">certificate_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#certificate_arn LbListener#certificate_arn}. |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListener.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#id LbListener#id}. |
 | <code><a href="#@cdktf/provider-aws.lbListener.LbListener.Initializer.parameter.mutualAuthentication">mutual_authentication</a></code> | <code><a href="#@cdktf/provider-aws.lbListener.LbListenerMutualAuthentication">LbListenerMutualAuthentication</a></code> | mutual_authentication block. |
-| <code><a href="#@cdktf/provider-aws.lbListener.LbListener.Initializer.parameter.port">port</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#port LbListener#port}. |
-| <code><a href="#@cdktf/provider-aws.lbListener.LbListener.Initializer.parameter.protocol">protocol</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#protocol LbListener#protocol}. |
-| <code><a href="#@cdktf/provider-aws.lbListener.LbListener.Initializer.parameter.sslPolicy">ssl_policy</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#ssl_policy LbListener#ssl_policy}. |
-| <code><a href="#@cdktf/provider-aws.lbListener.LbListener.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#tags LbListener#tags}. |
-| <code><a href="#@cdktf/provider-aws.lbListener.LbListener.Initializer.parameter.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#tags_all LbListener#tags_all}. |
-| <code><a href="#@cdktf/provider-aws.lbListener.LbListener.Initializer.parameter.tcpIdleTimeoutSeconds">tcp_idle_timeout_seconds</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#tcp_idle_timeout_seconds LbListener#tcp_idle_timeout_seconds}. |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListener.Initializer.parameter.port">port</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#port LbListener#port}. |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListener.Initializer.parameter.protocol">protocol</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#protocol LbListener#protocol}. |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListener.Initializer.parameter.routingHttpRequestXAmznMtlsClientcertHeaderName">routing_http_request_x_amzn_mtls_clientcert_header_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#routing_http_request_x_amzn_mtls_clientcert_header_name LbListener#routing_http_request_x_amzn_mtls_clientcert_header_name}. |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListener.Initializer.parameter.routingHttpRequestXAmznMtlsClientcertIssuerHeaderName">routing_http_request_x_amzn_mtls_clientcert_issuer_header_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#routing_http_request_x_amzn_mtls_clientcert_issuer_header_name LbListener#routing_http_request_x_amzn_mtls_clientcert_issuer_header_name}. |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListener.Initializer.parameter.routingHttpRequestXAmznMtlsClientcertLeafHeaderName">routing_http_request_x_amzn_mtls_clientcert_leaf_header_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#routing_http_request_x_amzn_mtls_clientcert_leaf_header_name LbListener#routing_http_request_x_amzn_mtls_clientcert_leaf_header_name}. |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListener.Initializer.parameter.routingHttpRequestXAmznMtlsClientcertSerialNumberHeaderName">routing_http_request_x_amzn_mtls_clientcert_serial_number_header_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#routing_http_request_x_amzn_mtls_clientcert_serial_number_header_name LbListener#routing_http_request_x_amzn_mtls_clientcert_serial_number_header_name}. |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListener.Initializer.parameter.routingHttpRequestXAmznMtlsClientcertSubjectHeaderName">routing_http_request_x_amzn_mtls_clientcert_subject_header_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#routing_http_request_x_amzn_mtls_clientcert_subject_header_name LbListener#routing_http_request_x_amzn_mtls_clientcert_subject_header_name}. |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListener.Initializer.parameter.routingHttpRequestXAmznMtlsClientcertValidityHeaderName">routing_http_request_x_amzn_mtls_clientcert_validity_header_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#routing_http_request_x_amzn_mtls_clientcert_validity_header_name LbListener#routing_http_request_x_amzn_mtls_clientcert_validity_header_name}. |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListener.Initializer.parameter.routingHttpRequestXAmznTlsCipherSuiteHeaderName">routing_http_request_x_amzn_tls_cipher_suite_header_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#routing_http_request_x_amzn_tls_cipher_suite_header_name LbListener#routing_http_request_x_amzn_tls_cipher_suite_header_name}. |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListener.Initializer.parameter.routingHttpRequestXAmznTlsVersionHeaderName">routing_http_request_x_amzn_tls_version_header_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#routing_http_request_x_amzn_tls_version_header_name LbListener#routing_http_request_x_amzn_tls_version_header_name}. |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListener.Initializer.parameter.routingHttpResponseAccessControlAllowCredentialsHeaderValue">routing_http_response_access_control_allow_credentials_header_value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#routing_http_response_access_control_allow_credentials_header_value LbListener#routing_http_response_access_control_allow_credentials_header_value}. |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListener.Initializer.parameter.routingHttpResponseAccessControlAllowHeadersHeaderValue">routing_http_response_access_control_allow_headers_header_value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#routing_http_response_access_control_allow_headers_header_value LbListener#routing_http_response_access_control_allow_headers_header_value}. |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListener.Initializer.parameter.routingHttpResponseAccessControlAllowMethodsHeaderValue">routing_http_response_access_control_allow_methods_header_value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#routing_http_response_access_control_allow_methods_header_value LbListener#routing_http_response_access_control_allow_methods_header_value}. |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListener.Initializer.parameter.routingHttpResponseAccessControlAllowOriginHeaderValue">routing_http_response_access_control_allow_origin_header_value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#routing_http_response_access_control_allow_origin_header_value LbListener#routing_http_response_access_control_allow_origin_header_value}. |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListener.Initializer.parameter.routingHttpResponseAccessControlExposeHeadersHeaderValue">routing_http_response_access_control_expose_headers_header_value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#routing_http_response_access_control_expose_headers_header_value LbListener#routing_http_response_access_control_expose_headers_header_value}. |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListener.Initializer.parameter.routingHttpResponseAccessControlMaxAgeHeaderValue">routing_http_response_access_control_max_age_header_value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#routing_http_response_access_control_max_age_header_value LbListener#routing_http_response_access_control_max_age_header_value}. |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListener.Initializer.parameter.routingHttpResponseContentSecurityPolicyHeaderValue">routing_http_response_content_security_policy_header_value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#routing_http_response_content_security_policy_header_value LbListener#routing_http_response_content_security_policy_header_value}. |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListener.Initializer.parameter.routingHttpResponseServerEnabled">routing_http_response_server_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#routing_http_response_server_enabled LbListener#routing_http_response_server_enabled}. |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListener.Initializer.parameter.routingHttpResponseStrictTransportSecurityHeaderValue">routing_http_response_strict_transport_security_header_value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#routing_http_response_strict_transport_security_header_value LbListener#routing_http_response_strict_transport_security_header_value}. |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListener.Initializer.parameter.routingHttpResponseXContentTypeOptionsHeaderValue">routing_http_response_x_content_type_options_header_value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#routing_http_response_x_content_type_options_header_value LbListener#routing_http_response_x_content_type_options_header_value}. |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListener.Initializer.parameter.routingHttpResponseXFrameOptionsHeaderValue">routing_http_response_x_frame_options_header_value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#routing_http_response_x_frame_options_header_value LbListener#routing_http_response_x_frame_options_header_value}. |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListener.Initializer.parameter.sslPolicy">ssl_policy</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#ssl_policy LbListener#ssl_policy}. |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListener.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#tags LbListener#tags}. |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListener.Initializer.parameter.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#tags_all LbListener#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListener.Initializer.parameter.tcpIdleTimeoutSeconds">tcp_idle_timeout_seconds</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#tcp_idle_timeout_seconds LbListener#tcp_idle_timeout_seconds}. |
 | <code><a href="#@cdktf/provider-aws.lbListener.LbListener.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-aws.lbListener.LbListenerTimeouts">LbListenerTimeouts</a></code> | timeouts block. |
 
 ---
@@ -130,7 +168,7 @@ Must be unique amongst siblings in the same scope
 
 default_action block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#default_action LbListener#default_action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#default_action LbListener#default_action}
 
 ---
 
@@ -138,7 +176,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#load_balancer_arn LbListener#load_balancer_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#load_balancer_arn LbListener#load_balancer_arn}.
 
 ---
 
@@ -146,7 +184,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#alpn_policy LbListener#alpn_policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#alpn_policy LbListener#alpn_policy}.
 
 ---
 
@@ -154,7 +192,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#certificate_arn LbListener#certificate_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#certificate_arn LbListener#certificate_arn}.
 
 ---
 
@@ -162,7 +200,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#id LbListener#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#id LbListener#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -175,7 +213,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 mutual_authentication block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#mutual_authentication LbListener#mutual_authentication}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#mutual_authentication LbListener#mutual_authentication}
 
 ---
 
@@ -183,7 +221,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#port LbListener#port}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#port LbListener#port}.
 
 ---
 
@@ -191,7 +229,159 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#protocol LbListener#protocol}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#protocol LbListener#protocol}.
+
+---
+
+##### `routing_http_request_x_amzn_mtls_clientcert_header_name`<sup>Optional</sup> <a name="routing_http_request_x_amzn_mtls_clientcert_header_name" id="@cdktf/provider-aws.lbListener.LbListener.Initializer.parameter.routingHttpRequestXAmznMtlsClientcertHeaderName"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#routing_http_request_x_amzn_mtls_clientcert_header_name LbListener#routing_http_request_x_amzn_mtls_clientcert_header_name}.
+
+---
+
+##### `routing_http_request_x_amzn_mtls_clientcert_issuer_header_name`<sup>Optional</sup> <a name="routing_http_request_x_amzn_mtls_clientcert_issuer_header_name" id="@cdktf/provider-aws.lbListener.LbListener.Initializer.parameter.routingHttpRequestXAmznMtlsClientcertIssuerHeaderName"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#routing_http_request_x_amzn_mtls_clientcert_issuer_header_name LbListener#routing_http_request_x_amzn_mtls_clientcert_issuer_header_name}.
+
+---
+
+##### `routing_http_request_x_amzn_mtls_clientcert_leaf_header_name`<sup>Optional</sup> <a name="routing_http_request_x_amzn_mtls_clientcert_leaf_header_name" id="@cdktf/provider-aws.lbListener.LbListener.Initializer.parameter.routingHttpRequestXAmznMtlsClientcertLeafHeaderName"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#routing_http_request_x_amzn_mtls_clientcert_leaf_header_name LbListener#routing_http_request_x_amzn_mtls_clientcert_leaf_header_name}.
+
+---
+
+##### `routing_http_request_x_amzn_mtls_clientcert_serial_number_header_name`<sup>Optional</sup> <a name="routing_http_request_x_amzn_mtls_clientcert_serial_number_header_name" id="@cdktf/provider-aws.lbListener.LbListener.Initializer.parameter.routingHttpRequestXAmznMtlsClientcertSerialNumberHeaderName"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#routing_http_request_x_amzn_mtls_clientcert_serial_number_header_name LbListener#routing_http_request_x_amzn_mtls_clientcert_serial_number_header_name}.
+
+---
+
+##### `routing_http_request_x_amzn_mtls_clientcert_subject_header_name`<sup>Optional</sup> <a name="routing_http_request_x_amzn_mtls_clientcert_subject_header_name" id="@cdktf/provider-aws.lbListener.LbListener.Initializer.parameter.routingHttpRequestXAmznMtlsClientcertSubjectHeaderName"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#routing_http_request_x_amzn_mtls_clientcert_subject_header_name LbListener#routing_http_request_x_amzn_mtls_clientcert_subject_header_name}.
+
+---
+
+##### `routing_http_request_x_amzn_mtls_clientcert_validity_header_name`<sup>Optional</sup> <a name="routing_http_request_x_amzn_mtls_clientcert_validity_header_name" id="@cdktf/provider-aws.lbListener.LbListener.Initializer.parameter.routingHttpRequestXAmznMtlsClientcertValidityHeaderName"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#routing_http_request_x_amzn_mtls_clientcert_validity_header_name LbListener#routing_http_request_x_amzn_mtls_clientcert_validity_header_name}.
+
+---
+
+##### `routing_http_request_x_amzn_tls_cipher_suite_header_name`<sup>Optional</sup> <a name="routing_http_request_x_amzn_tls_cipher_suite_header_name" id="@cdktf/provider-aws.lbListener.LbListener.Initializer.parameter.routingHttpRequestXAmznTlsCipherSuiteHeaderName"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#routing_http_request_x_amzn_tls_cipher_suite_header_name LbListener#routing_http_request_x_amzn_tls_cipher_suite_header_name}.
+
+---
+
+##### `routing_http_request_x_amzn_tls_version_header_name`<sup>Optional</sup> <a name="routing_http_request_x_amzn_tls_version_header_name" id="@cdktf/provider-aws.lbListener.LbListener.Initializer.parameter.routingHttpRequestXAmznTlsVersionHeaderName"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#routing_http_request_x_amzn_tls_version_header_name LbListener#routing_http_request_x_amzn_tls_version_header_name}.
+
+---
+
+##### `routing_http_response_access_control_allow_credentials_header_value`<sup>Optional</sup> <a name="routing_http_response_access_control_allow_credentials_header_value" id="@cdktf/provider-aws.lbListener.LbListener.Initializer.parameter.routingHttpResponseAccessControlAllowCredentialsHeaderValue"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#routing_http_response_access_control_allow_credentials_header_value LbListener#routing_http_response_access_control_allow_credentials_header_value}.
+
+---
+
+##### `routing_http_response_access_control_allow_headers_header_value`<sup>Optional</sup> <a name="routing_http_response_access_control_allow_headers_header_value" id="@cdktf/provider-aws.lbListener.LbListener.Initializer.parameter.routingHttpResponseAccessControlAllowHeadersHeaderValue"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#routing_http_response_access_control_allow_headers_header_value LbListener#routing_http_response_access_control_allow_headers_header_value}.
+
+---
+
+##### `routing_http_response_access_control_allow_methods_header_value`<sup>Optional</sup> <a name="routing_http_response_access_control_allow_methods_header_value" id="@cdktf/provider-aws.lbListener.LbListener.Initializer.parameter.routingHttpResponseAccessControlAllowMethodsHeaderValue"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#routing_http_response_access_control_allow_methods_header_value LbListener#routing_http_response_access_control_allow_methods_header_value}.
+
+---
+
+##### `routing_http_response_access_control_allow_origin_header_value`<sup>Optional</sup> <a name="routing_http_response_access_control_allow_origin_header_value" id="@cdktf/provider-aws.lbListener.LbListener.Initializer.parameter.routingHttpResponseAccessControlAllowOriginHeaderValue"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#routing_http_response_access_control_allow_origin_header_value LbListener#routing_http_response_access_control_allow_origin_header_value}.
+
+---
+
+##### `routing_http_response_access_control_expose_headers_header_value`<sup>Optional</sup> <a name="routing_http_response_access_control_expose_headers_header_value" id="@cdktf/provider-aws.lbListener.LbListener.Initializer.parameter.routingHttpResponseAccessControlExposeHeadersHeaderValue"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#routing_http_response_access_control_expose_headers_header_value LbListener#routing_http_response_access_control_expose_headers_header_value}.
+
+---
+
+##### `routing_http_response_access_control_max_age_header_value`<sup>Optional</sup> <a name="routing_http_response_access_control_max_age_header_value" id="@cdktf/provider-aws.lbListener.LbListener.Initializer.parameter.routingHttpResponseAccessControlMaxAgeHeaderValue"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#routing_http_response_access_control_max_age_header_value LbListener#routing_http_response_access_control_max_age_header_value}.
+
+---
+
+##### `routing_http_response_content_security_policy_header_value`<sup>Optional</sup> <a name="routing_http_response_content_security_policy_header_value" id="@cdktf/provider-aws.lbListener.LbListener.Initializer.parameter.routingHttpResponseContentSecurityPolicyHeaderValue"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#routing_http_response_content_security_policy_header_value LbListener#routing_http_response_content_security_policy_header_value}.
+
+---
+
+##### `routing_http_response_server_enabled`<sup>Optional</sup> <a name="routing_http_response_server_enabled" id="@cdktf/provider-aws.lbListener.LbListener.Initializer.parameter.routingHttpResponseServerEnabled"></a>
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#routing_http_response_server_enabled LbListener#routing_http_response_server_enabled}.
+
+---
+
+##### `routing_http_response_strict_transport_security_header_value`<sup>Optional</sup> <a name="routing_http_response_strict_transport_security_header_value" id="@cdktf/provider-aws.lbListener.LbListener.Initializer.parameter.routingHttpResponseStrictTransportSecurityHeaderValue"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#routing_http_response_strict_transport_security_header_value LbListener#routing_http_response_strict_transport_security_header_value}.
+
+---
+
+##### `routing_http_response_x_content_type_options_header_value`<sup>Optional</sup> <a name="routing_http_response_x_content_type_options_header_value" id="@cdktf/provider-aws.lbListener.LbListener.Initializer.parameter.routingHttpResponseXContentTypeOptionsHeaderValue"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#routing_http_response_x_content_type_options_header_value LbListener#routing_http_response_x_content_type_options_header_value}.
+
+---
+
+##### `routing_http_response_x_frame_options_header_value`<sup>Optional</sup> <a name="routing_http_response_x_frame_options_header_value" id="@cdktf/provider-aws.lbListener.LbListener.Initializer.parameter.routingHttpResponseXFrameOptionsHeaderValue"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#routing_http_response_x_frame_options_header_value LbListener#routing_http_response_x_frame_options_header_value}.
 
 ---
 
@@ -199,7 +389,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#ssl_policy LbListener#ssl_policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#ssl_policy LbListener#ssl_policy}.
 
 ---
 
@@ -207,7 +397,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#tags LbListener#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#tags LbListener#tags}.
 
 ---
 
@@ -215,7 +405,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#tags_all LbListener#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#tags_all LbListener#tags_all}.
 
 ---
 
@@ -223,7 +413,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#tcp_idle_timeout_seconds LbListener#tcp_idle_timeout_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#tcp_idle_timeout_seconds LbListener#tcp_idle_timeout_seconds}.
 
 ---
 
@@ -233,7 +423,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#timeouts LbListener#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#timeouts LbListener#timeouts}
 
 ---
 
@@ -273,6 +463,25 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktf/provider-aws.lbListener.LbListener.resetMutualAuthentication">reset_mutual_authentication</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lbListener.LbListener.resetPort">reset_port</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lbListener.LbListener.resetProtocol">reset_protocol</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListener.resetRoutingHttpRequestXAmznMtlsClientcertHeaderName">reset_routing_http_request_x_amzn_mtls_clientcert_header_name</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListener.resetRoutingHttpRequestXAmznMtlsClientcertIssuerHeaderName">reset_routing_http_request_x_amzn_mtls_clientcert_issuer_header_name</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListener.resetRoutingHttpRequestXAmznMtlsClientcertLeafHeaderName">reset_routing_http_request_x_amzn_mtls_clientcert_leaf_header_name</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListener.resetRoutingHttpRequestXAmznMtlsClientcertSerialNumberHeaderName">reset_routing_http_request_x_amzn_mtls_clientcert_serial_number_header_name</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListener.resetRoutingHttpRequestXAmznMtlsClientcertSubjectHeaderName">reset_routing_http_request_x_amzn_mtls_clientcert_subject_header_name</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListener.resetRoutingHttpRequestXAmznMtlsClientcertValidityHeaderName">reset_routing_http_request_x_amzn_mtls_clientcert_validity_header_name</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListener.resetRoutingHttpRequestXAmznTlsCipherSuiteHeaderName">reset_routing_http_request_x_amzn_tls_cipher_suite_header_name</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListener.resetRoutingHttpRequestXAmznTlsVersionHeaderName">reset_routing_http_request_x_amzn_tls_version_header_name</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListener.resetRoutingHttpResponseAccessControlAllowCredentialsHeaderValue">reset_routing_http_response_access_control_allow_credentials_header_value</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListener.resetRoutingHttpResponseAccessControlAllowHeadersHeaderValue">reset_routing_http_response_access_control_allow_headers_header_value</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListener.resetRoutingHttpResponseAccessControlAllowMethodsHeaderValue">reset_routing_http_response_access_control_allow_methods_header_value</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListener.resetRoutingHttpResponseAccessControlAllowOriginHeaderValue">reset_routing_http_response_access_control_allow_origin_header_value</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListener.resetRoutingHttpResponseAccessControlExposeHeadersHeaderValue">reset_routing_http_response_access_control_expose_headers_header_value</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListener.resetRoutingHttpResponseAccessControlMaxAgeHeaderValue">reset_routing_http_response_access_control_max_age_header_value</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListener.resetRoutingHttpResponseContentSecurityPolicyHeaderValue">reset_routing_http_response_content_security_policy_header_value</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListener.resetRoutingHttpResponseServerEnabled">reset_routing_http_response_server_enabled</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListener.resetRoutingHttpResponseStrictTransportSecurityHeaderValue">reset_routing_http_response_strict_transport_security_header_value</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListener.resetRoutingHttpResponseXContentTypeOptionsHeaderValue">reset_routing_http_response_x_content_type_options_header_value</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListener.resetRoutingHttpResponseXFrameOptionsHeaderValue">reset_routing_http_response_x_frame_options_header_value</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lbListener.LbListener.resetSslPolicy">reset_ssl_policy</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lbListener.LbListener.resetTags">reset_tags</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lbListener.LbListener.resetTagsAll">reset_tags_all</a></code> | *No description.* |
@@ -635,7 +844,7 @@ def put_mutual_authentication(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#mode LbListener#mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#mode LbListener#mode}.
 
 ---
 
@@ -643,7 +852,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#advertise_trust_store_ca_names LbListener#advertise_trust_store_ca_names}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#advertise_trust_store_ca_names LbListener#advertise_trust_store_ca_names}.
 
 ---
 
@@ -651,7 +860,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#ignore_client_certificate_expiry LbListener#ignore_client_certificate_expiry}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#ignore_client_certificate_expiry LbListener#ignore_client_certificate_expiry}.
 
 ---
 
@@ -659,7 +868,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#trust_store_arn LbListener#trust_store_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#trust_store_arn LbListener#trust_store_arn}.
 
 ---
 
@@ -676,7 +885,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#create LbListener#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#create LbListener#create}.
 
 ---
 
@@ -684,7 +893,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#update LbListener#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#update LbListener#update}.
 
 ---
 
@@ -722,6 +931,120 @@ def reset_port() -> None
 
 ```python
 def reset_protocol() -> None
+```
+
+##### `reset_routing_http_request_x_amzn_mtls_clientcert_header_name` <a name="reset_routing_http_request_x_amzn_mtls_clientcert_header_name" id="@cdktf/provider-aws.lbListener.LbListener.resetRoutingHttpRequestXAmznMtlsClientcertHeaderName"></a>
+
+```python
+def reset_routing_http_request_x_amzn_mtls_clientcert_header_name() -> None
+```
+
+##### `reset_routing_http_request_x_amzn_mtls_clientcert_issuer_header_name` <a name="reset_routing_http_request_x_amzn_mtls_clientcert_issuer_header_name" id="@cdktf/provider-aws.lbListener.LbListener.resetRoutingHttpRequestXAmznMtlsClientcertIssuerHeaderName"></a>
+
+```python
+def reset_routing_http_request_x_amzn_mtls_clientcert_issuer_header_name() -> None
+```
+
+##### `reset_routing_http_request_x_amzn_mtls_clientcert_leaf_header_name` <a name="reset_routing_http_request_x_amzn_mtls_clientcert_leaf_header_name" id="@cdktf/provider-aws.lbListener.LbListener.resetRoutingHttpRequestXAmznMtlsClientcertLeafHeaderName"></a>
+
+```python
+def reset_routing_http_request_x_amzn_mtls_clientcert_leaf_header_name() -> None
+```
+
+##### `reset_routing_http_request_x_amzn_mtls_clientcert_serial_number_header_name` <a name="reset_routing_http_request_x_amzn_mtls_clientcert_serial_number_header_name" id="@cdktf/provider-aws.lbListener.LbListener.resetRoutingHttpRequestXAmznMtlsClientcertSerialNumberHeaderName"></a>
+
+```python
+def reset_routing_http_request_x_amzn_mtls_clientcert_serial_number_header_name() -> None
+```
+
+##### `reset_routing_http_request_x_amzn_mtls_clientcert_subject_header_name` <a name="reset_routing_http_request_x_amzn_mtls_clientcert_subject_header_name" id="@cdktf/provider-aws.lbListener.LbListener.resetRoutingHttpRequestXAmznMtlsClientcertSubjectHeaderName"></a>
+
+```python
+def reset_routing_http_request_x_amzn_mtls_clientcert_subject_header_name() -> None
+```
+
+##### `reset_routing_http_request_x_amzn_mtls_clientcert_validity_header_name` <a name="reset_routing_http_request_x_amzn_mtls_clientcert_validity_header_name" id="@cdktf/provider-aws.lbListener.LbListener.resetRoutingHttpRequestXAmznMtlsClientcertValidityHeaderName"></a>
+
+```python
+def reset_routing_http_request_x_amzn_mtls_clientcert_validity_header_name() -> None
+```
+
+##### `reset_routing_http_request_x_amzn_tls_cipher_suite_header_name` <a name="reset_routing_http_request_x_amzn_tls_cipher_suite_header_name" id="@cdktf/provider-aws.lbListener.LbListener.resetRoutingHttpRequestXAmznTlsCipherSuiteHeaderName"></a>
+
+```python
+def reset_routing_http_request_x_amzn_tls_cipher_suite_header_name() -> None
+```
+
+##### `reset_routing_http_request_x_amzn_tls_version_header_name` <a name="reset_routing_http_request_x_amzn_tls_version_header_name" id="@cdktf/provider-aws.lbListener.LbListener.resetRoutingHttpRequestXAmznTlsVersionHeaderName"></a>
+
+```python
+def reset_routing_http_request_x_amzn_tls_version_header_name() -> None
+```
+
+##### `reset_routing_http_response_access_control_allow_credentials_header_value` <a name="reset_routing_http_response_access_control_allow_credentials_header_value" id="@cdktf/provider-aws.lbListener.LbListener.resetRoutingHttpResponseAccessControlAllowCredentialsHeaderValue"></a>
+
+```python
+def reset_routing_http_response_access_control_allow_credentials_header_value() -> None
+```
+
+##### `reset_routing_http_response_access_control_allow_headers_header_value` <a name="reset_routing_http_response_access_control_allow_headers_header_value" id="@cdktf/provider-aws.lbListener.LbListener.resetRoutingHttpResponseAccessControlAllowHeadersHeaderValue"></a>
+
+```python
+def reset_routing_http_response_access_control_allow_headers_header_value() -> None
+```
+
+##### `reset_routing_http_response_access_control_allow_methods_header_value` <a name="reset_routing_http_response_access_control_allow_methods_header_value" id="@cdktf/provider-aws.lbListener.LbListener.resetRoutingHttpResponseAccessControlAllowMethodsHeaderValue"></a>
+
+```python
+def reset_routing_http_response_access_control_allow_methods_header_value() -> None
+```
+
+##### `reset_routing_http_response_access_control_allow_origin_header_value` <a name="reset_routing_http_response_access_control_allow_origin_header_value" id="@cdktf/provider-aws.lbListener.LbListener.resetRoutingHttpResponseAccessControlAllowOriginHeaderValue"></a>
+
+```python
+def reset_routing_http_response_access_control_allow_origin_header_value() -> None
+```
+
+##### `reset_routing_http_response_access_control_expose_headers_header_value` <a name="reset_routing_http_response_access_control_expose_headers_header_value" id="@cdktf/provider-aws.lbListener.LbListener.resetRoutingHttpResponseAccessControlExposeHeadersHeaderValue"></a>
+
+```python
+def reset_routing_http_response_access_control_expose_headers_header_value() -> None
+```
+
+##### `reset_routing_http_response_access_control_max_age_header_value` <a name="reset_routing_http_response_access_control_max_age_header_value" id="@cdktf/provider-aws.lbListener.LbListener.resetRoutingHttpResponseAccessControlMaxAgeHeaderValue"></a>
+
+```python
+def reset_routing_http_response_access_control_max_age_header_value() -> None
+```
+
+##### `reset_routing_http_response_content_security_policy_header_value` <a name="reset_routing_http_response_content_security_policy_header_value" id="@cdktf/provider-aws.lbListener.LbListener.resetRoutingHttpResponseContentSecurityPolicyHeaderValue"></a>
+
+```python
+def reset_routing_http_response_content_security_policy_header_value() -> None
+```
+
+##### `reset_routing_http_response_server_enabled` <a name="reset_routing_http_response_server_enabled" id="@cdktf/provider-aws.lbListener.LbListener.resetRoutingHttpResponseServerEnabled"></a>
+
+```python
+def reset_routing_http_response_server_enabled() -> None
+```
+
+##### `reset_routing_http_response_strict_transport_security_header_value` <a name="reset_routing_http_response_strict_transport_security_header_value" id="@cdktf/provider-aws.lbListener.LbListener.resetRoutingHttpResponseStrictTransportSecurityHeaderValue"></a>
+
+```python
+def reset_routing_http_response_strict_transport_security_header_value() -> None
+```
+
+##### `reset_routing_http_response_x_content_type_options_header_value` <a name="reset_routing_http_response_x_content_type_options_header_value" id="@cdktf/provider-aws.lbListener.LbListener.resetRoutingHttpResponseXContentTypeOptionsHeaderValue"></a>
+
+```python
+def reset_routing_http_response_x_content_type_options_header_value() -> None
+```
+
+##### `reset_routing_http_response_x_frame_options_header_value` <a name="reset_routing_http_response_x_frame_options_header_value" id="@cdktf/provider-aws.lbListener.LbListener.resetRoutingHttpResponseXFrameOptionsHeaderValue"></a>
+
+```python
+def reset_routing_http_response_x_frame_options_header_value() -> None
 ```
 
 ##### `reset_ssl_policy` <a name="reset_ssl_policy" id="@cdktf/provider-aws.lbListener.LbListener.resetSslPolicy"></a>
@@ -868,7 +1191,7 @@ The construct id used in the generated config for the LbListener to import.
 
 The id of the existing LbListener that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -910,6 +1233,25 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1
 | <code><a href="#@cdktf/provider-aws.lbListener.LbListener.property.mutualAuthenticationInput">mutual_authentication_input</a></code> | <code><a href="#@cdktf/provider-aws.lbListener.LbListenerMutualAuthentication">LbListenerMutualAuthentication</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lbListener.LbListener.property.portInput">port_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lbListener.LbListener.property.protocolInput">protocol_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListener.property.routingHttpRequestXAmznMtlsClientcertHeaderNameInput">routing_http_request_x_amzn_mtls_clientcert_header_name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListener.property.routingHttpRequestXAmznMtlsClientcertIssuerHeaderNameInput">routing_http_request_x_amzn_mtls_clientcert_issuer_header_name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListener.property.routingHttpRequestXAmznMtlsClientcertLeafHeaderNameInput">routing_http_request_x_amzn_mtls_clientcert_leaf_header_name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListener.property.routingHttpRequestXAmznMtlsClientcertSerialNumberHeaderNameInput">routing_http_request_x_amzn_mtls_clientcert_serial_number_header_name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListener.property.routingHttpRequestXAmznMtlsClientcertSubjectHeaderNameInput">routing_http_request_x_amzn_mtls_clientcert_subject_header_name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListener.property.routingHttpRequestXAmznMtlsClientcertValidityHeaderNameInput">routing_http_request_x_amzn_mtls_clientcert_validity_header_name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListener.property.routingHttpRequestXAmznTlsCipherSuiteHeaderNameInput">routing_http_request_x_amzn_tls_cipher_suite_header_name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListener.property.routingHttpRequestXAmznTlsVersionHeaderNameInput">routing_http_request_x_amzn_tls_version_header_name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListener.property.routingHttpResponseAccessControlAllowCredentialsHeaderValueInput">routing_http_response_access_control_allow_credentials_header_value_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListener.property.routingHttpResponseAccessControlAllowHeadersHeaderValueInput">routing_http_response_access_control_allow_headers_header_value_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListener.property.routingHttpResponseAccessControlAllowMethodsHeaderValueInput">routing_http_response_access_control_allow_methods_header_value_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListener.property.routingHttpResponseAccessControlAllowOriginHeaderValueInput">routing_http_response_access_control_allow_origin_header_value_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListener.property.routingHttpResponseAccessControlExposeHeadersHeaderValueInput">routing_http_response_access_control_expose_headers_header_value_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListener.property.routingHttpResponseAccessControlMaxAgeHeaderValueInput">routing_http_response_access_control_max_age_header_value_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListener.property.routingHttpResponseContentSecurityPolicyHeaderValueInput">routing_http_response_content_security_policy_header_value_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListener.property.routingHttpResponseServerEnabledInput">routing_http_response_server_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListener.property.routingHttpResponseStrictTransportSecurityHeaderValueInput">routing_http_response_strict_transport_security_header_value_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListener.property.routingHttpResponseXContentTypeOptionsHeaderValueInput">routing_http_response_x_content_type_options_header_value_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListener.property.routingHttpResponseXFrameOptionsHeaderValueInput">routing_http_response_x_frame_options_header_value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lbListener.LbListener.property.sslPolicyInput">ssl_policy_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lbListener.LbListener.property.tagsAllInput">tags_all_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lbListener.LbListener.property.tagsInput">tags_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
@@ -921,6 +1263,25 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1
 | <code><a href="#@cdktf/provider-aws.lbListener.LbListener.property.loadBalancerArn">load_balancer_arn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lbListener.LbListener.property.port">port</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lbListener.LbListener.property.protocol">protocol</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListener.property.routingHttpRequestXAmznMtlsClientcertHeaderName">routing_http_request_x_amzn_mtls_clientcert_header_name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListener.property.routingHttpRequestXAmznMtlsClientcertIssuerHeaderName">routing_http_request_x_amzn_mtls_clientcert_issuer_header_name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListener.property.routingHttpRequestXAmznMtlsClientcertLeafHeaderName">routing_http_request_x_amzn_mtls_clientcert_leaf_header_name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListener.property.routingHttpRequestXAmznMtlsClientcertSerialNumberHeaderName">routing_http_request_x_amzn_mtls_clientcert_serial_number_header_name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListener.property.routingHttpRequestXAmznMtlsClientcertSubjectHeaderName">routing_http_request_x_amzn_mtls_clientcert_subject_header_name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListener.property.routingHttpRequestXAmznMtlsClientcertValidityHeaderName">routing_http_request_x_amzn_mtls_clientcert_validity_header_name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListener.property.routingHttpRequestXAmznTlsCipherSuiteHeaderName">routing_http_request_x_amzn_tls_cipher_suite_header_name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListener.property.routingHttpRequestXAmznTlsVersionHeaderName">routing_http_request_x_amzn_tls_version_header_name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListener.property.routingHttpResponseAccessControlAllowCredentialsHeaderValue">routing_http_response_access_control_allow_credentials_header_value</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListener.property.routingHttpResponseAccessControlAllowHeadersHeaderValue">routing_http_response_access_control_allow_headers_header_value</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListener.property.routingHttpResponseAccessControlAllowMethodsHeaderValue">routing_http_response_access_control_allow_methods_header_value</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListener.property.routingHttpResponseAccessControlAllowOriginHeaderValue">routing_http_response_access_control_allow_origin_header_value</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListener.property.routingHttpResponseAccessControlExposeHeadersHeaderValue">routing_http_response_access_control_expose_headers_header_value</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListener.property.routingHttpResponseAccessControlMaxAgeHeaderValue">routing_http_response_access_control_max_age_header_value</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListener.property.routingHttpResponseContentSecurityPolicyHeaderValue">routing_http_response_content_security_policy_header_value</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListener.property.routingHttpResponseServerEnabled">routing_http_response_server_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListener.property.routingHttpResponseStrictTransportSecurityHeaderValue">routing_http_response_strict_transport_security_header_value</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListener.property.routingHttpResponseXContentTypeOptionsHeaderValue">routing_http_response_x_content_type_options_header_value</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListener.property.routingHttpResponseXFrameOptionsHeaderValue">routing_http_response_x_frame_options_header_value</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lbListener.LbListener.property.sslPolicy">ssl_policy</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lbListener.LbListener.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lbListener.LbListener.property.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
@@ -1190,6 +1551,196 @@ protocol_input: str
 
 ---
 
+##### `routing_http_request_x_amzn_mtls_clientcert_header_name_input`<sup>Optional</sup> <a name="routing_http_request_x_amzn_mtls_clientcert_header_name_input" id="@cdktf/provider-aws.lbListener.LbListener.property.routingHttpRequestXAmznMtlsClientcertHeaderNameInput"></a>
+
+```python
+routing_http_request_x_amzn_mtls_clientcert_header_name_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `routing_http_request_x_amzn_mtls_clientcert_issuer_header_name_input`<sup>Optional</sup> <a name="routing_http_request_x_amzn_mtls_clientcert_issuer_header_name_input" id="@cdktf/provider-aws.lbListener.LbListener.property.routingHttpRequestXAmznMtlsClientcertIssuerHeaderNameInput"></a>
+
+```python
+routing_http_request_x_amzn_mtls_clientcert_issuer_header_name_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `routing_http_request_x_amzn_mtls_clientcert_leaf_header_name_input`<sup>Optional</sup> <a name="routing_http_request_x_amzn_mtls_clientcert_leaf_header_name_input" id="@cdktf/provider-aws.lbListener.LbListener.property.routingHttpRequestXAmznMtlsClientcertLeafHeaderNameInput"></a>
+
+```python
+routing_http_request_x_amzn_mtls_clientcert_leaf_header_name_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `routing_http_request_x_amzn_mtls_clientcert_serial_number_header_name_input`<sup>Optional</sup> <a name="routing_http_request_x_amzn_mtls_clientcert_serial_number_header_name_input" id="@cdktf/provider-aws.lbListener.LbListener.property.routingHttpRequestXAmznMtlsClientcertSerialNumberHeaderNameInput"></a>
+
+```python
+routing_http_request_x_amzn_mtls_clientcert_serial_number_header_name_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `routing_http_request_x_amzn_mtls_clientcert_subject_header_name_input`<sup>Optional</sup> <a name="routing_http_request_x_amzn_mtls_clientcert_subject_header_name_input" id="@cdktf/provider-aws.lbListener.LbListener.property.routingHttpRequestXAmznMtlsClientcertSubjectHeaderNameInput"></a>
+
+```python
+routing_http_request_x_amzn_mtls_clientcert_subject_header_name_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `routing_http_request_x_amzn_mtls_clientcert_validity_header_name_input`<sup>Optional</sup> <a name="routing_http_request_x_amzn_mtls_clientcert_validity_header_name_input" id="@cdktf/provider-aws.lbListener.LbListener.property.routingHttpRequestXAmznMtlsClientcertValidityHeaderNameInput"></a>
+
+```python
+routing_http_request_x_amzn_mtls_clientcert_validity_header_name_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `routing_http_request_x_amzn_tls_cipher_suite_header_name_input`<sup>Optional</sup> <a name="routing_http_request_x_amzn_tls_cipher_suite_header_name_input" id="@cdktf/provider-aws.lbListener.LbListener.property.routingHttpRequestXAmznTlsCipherSuiteHeaderNameInput"></a>
+
+```python
+routing_http_request_x_amzn_tls_cipher_suite_header_name_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `routing_http_request_x_amzn_tls_version_header_name_input`<sup>Optional</sup> <a name="routing_http_request_x_amzn_tls_version_header_name_input" id="@cdktf/provider-aws.lbListener.LbListener.property.routingHttpRequestXAmznTlsVersionHeaderNameInput"></a>
+
+```python
+routing_http_request_x_amzn_tls_version_header_name_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `routing_http_response_access_control_allow_credentials_header_value_input`<sup>Optional</sup> <a name="routing_http_response_access_control_allow_credentials_header_value_input" id="@cdktf/provider-aws.lbListener.LbListener.property.routingHttpResponseAccessControlAllowCredentialsHeaderValueInput"></a>
+
+```python
+routing_http_response_access_control_allow_credentials_header_value_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `routing_http_response_access_control_allow_headers_header_value_input`<sup>Optional</sup> <a name="routing_http_response_access_control_allow_headers_header_value_input" id="@cdktf/provider-aws.lbListener.LbListener.property.routingHttpResponseAccessControlAllowHeadersHeaderValueInput"></a>
+
+```python
+routing_http_response_access_control_allow_headers_header_value_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `routing_http_response_access_control_allow_methods_header_value_input`<sup>Optional</sup> <a name="routing_http_response_access_control_allow_methods_header_value_input" id="@cdktf/provider-aws.lbListener.LbListener.property.routingHttpResponseAccessControlAllowMethodsHeaderValueInput"></a>
+
+```python
+routing_http_response_access_control_allow_methods_header_value_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `routing_http_response_access_control_allow_origin_header_value_input`<sup>Optional</sup> <a name="routing_http_response_access_control_allow_origin_header_value_input" id="@cdktf/provider-aws.lbListener.LbListener.property.routingHttpResponseAccessControlAllowOriginHeaderValueInput"></a>
+
+```python
+routing_http_response_access_control_allow_origin_header_value_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `routing_http_response_access_control_expose_headers_header_value_input`<sup>Optional</sup> <a name="routing_http_response_access_control_expose_headers_header_value_input" id="@cdktf/provider-aws.lbListener.LbListener.property.routingHttpResponseAccessControlExposeHeadersHeaderValueInput"></a>
+
+```python
+routing_http_response_access_control_expose_headers_header_value_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `routing_http_response_access_control_max_age_header_value_input`<sup>Optional</sup> <a name="routing_http_response_access_control_max_age_header_value_input" id="@cdktf/provider-aws.lbListener.LbListener.property.routingHttpResponseAccessControlMaxAgeHeaderValueInput"></a>
+
+```python
+routing_http_response_access_control_max_age_header_value_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `routing_http_response_content_security_policy_header_value_input`<sup>Optional</sup> <a name="routing_http_response_content_security_policy_header_value_input" id="@cdktf/provider-aws.lbListener.LbListener.property.routingHttpResponseContentSecurityPolicyHeaderValueInput"></a>
+
+```python
+routing_http_response_content_security_policy_header_value_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `routing_http_response_server_enabled_input`<sup>Optional</sup> <a name="routing_http_response_server_enabled_input" id="@cdktf/provider-aws.lbListener.LbListener.property.routingHttpResponseServerEnabledInput"></a>
+
+```python
+routing_http_response_server_enabled_input: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
+##### `routing_http_response_strict_transport_security_header_value_input`<sup>Optional</sup> <a name="routing_http_response_strict_transport_security_header_value_input" id="@cdktf/provider-aws.lbListener.LbListener.property.routingHttpResponseStrictTransportSecurityHeaderValueInput"></a>
+
+```python
+routing_http_response_strict_transport_security_header_value_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `routing_http_response_x_content_type_options_header_value_input`<sup>Optional</sup> <a name="routing_http_response_x_content_type_options_header_value_input" id="@cdktf/provider-aws.lbListener.LbListener.property.routingHttpResponseXContentTypeOptionsHeaderValueInput"></a>
+
+```python
+routing_http_response_x_content_type_options_header_value_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `routing_http_response_x_frame_options_header_value_input`<sup>Optional</sup> <a name="routing_http_response_x_frame_options_header_value_input" id="@cdktf/provider-aws.lbListener.LbListener.property.routingHttpResponseXFrameOptionsHeaderValueInput"></a>
+
+```python
+routing_http_response_x_frame_options_header_value_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `ssl_policy_input`<sup>Optional</sup> <a name="ssl_policy_input" id="@cdktf/provider-aws.lbListener.LbListener.property.sslPolicyInput"></a>
 
 ```python
@@ -1300,6 +1851,196 @@ protocol: str
 
 ---
 
+##### `routing_http_request_x_amzn_mtls_clientcert_header_name`<sup>Required</sup> <a name="routing_http_request_x_amzn_mtls_clientcert_header_name" id="@cdktf/provider-aws.lbListener.LbListener.property.routingHttpRequestXAmznMtlsClientcertHeaderName"></a>
+
+```python
+routing_http_request_x_amzn_mtls_clientcert_header_name: str
+```
+
+- *Type:* str
+
+---
+
+##### `routing_http_request_x_amzn_mtls_clientcert_issuer_header_name`<sup>Required</sup> <a name="routing_http_request_x_amzn_mtls_clientcert_issuer_header_name" id="@cdktf/provider-aws.lbListener.LbListener.property.routingHttpRequestXAmznMtlsClientcertIssuerHeaderName"></a>
+
+```python
+routing_http_request_x_amzn_mtls_clientcert_issuer_header_name: str
+```
+
+- *Type:* str
+
+---
+
+##### `routing_http_request_x_amzn_mtls_clientcert_leaf_header_name`<sup>Required</sup> <a name="routing_http_request_x_amzn_mtls_clientcert_leaf_header_name" id="@cdktf/provider-aws.lbListener.LbListener.property.routingHttpRequestXAmznMtlsClientcertLeafHeaderName"></a>
+
+```python
+routing_http_request_x_amzn_mtls_clientcert_leaf_header_name: str
+```
+
+- *Type:* str
+
+---
+
+##### `routing_http_request_x_amzn_mtls_clientcert_serial_number_header_name`<sup>Required</sup> <a name="routing_http_request_x_amzn_mtls_clientcert_serial_number_header_name" id="@cdktf/provider-aws.lbListener.LbListener.property.routingHttpRequestXAmznMtlsClientcertSerialNumberHeaderName"></a>
+
+```python
+routing_http_request_x_amzn_mtls_clientcert_serial_number_header_name: str
+```
+
+- *Type:* str
+
+---
+
+##### `routing_http_request_x_amzn_mtls_clientcert_subject_header_name`<sup>Required</sup> <a name="routing_http_request_x_amzn_mtls_clientcert_subject_header_name" id="@cdktf/provider-aws.lbListener.LbListener.property.routingHttpRequestXAmznMtlsClientcertSubjectHeaderName"></a>
+
+```python
+routing_http_request_x_amzn_mtls_clientcert_subject_header_name: str
+```
+
+- *Type:* str
+
+---
+
+##### `routing_http_request_x_amzn_mtls_clientcert_validity_header_name`<sup>Required</sup> <a name="routing_http_request_x_amzn_mtls_clientcert_validity_header_name" id="@cdktf/provider-aws.lbListener.LbListener.property.routingHttpRequestXAmznMtlsClientcertValidityHeaderName"></a>
+
+```python
+routing_http_request_x_amzn_mtls_clientcert_validity_header_name: str
+```
+
+- *Type:* str
+
+---
+
+##### `routing_http_request_x_amzn_tls_cipher_suite_header_name`<sup>Required</sup> <a name="routing_http_request_x_amzn_tls_cipher_suite_header_name" id="@cdktf/provider-aws.lbListener.LbListener.property.routingHttpRequestXAmznTlsCipherSuiteHeaderName"></a>
+
+```python
+routing_http_request_x_amzn_tls_cipher_suite_header_name: str
+```
+
+- *Type:* str
+
+---
+
+##### `routing_http_request_x_amzn_tls_version_header_name`<sup>Required</sup> <a name="routing_http_request_x_amzn_tls_version_header_name" id="@cdktf/provider-aws.lbListener.LbListener.property.routingHttpRequestXAmznTlsVersionHeaderName"></a>
+
+```python
+routing_http_request_x_amzn_tls_version_header_name: str
+```
+
+- *Type:* str
+
+---
+
+##### `routing_http_response_access_control_allow_credentials_header_value`<sup>Required</sup> <a name="routing_http_response_access_control_allow_credentials_header_value" id="@cdktf/provider-aws.lbListener.LbListener.property.routingHttpResponseAccessControlAllowCredentialsHeaderValue"></a>
+
+```python
+routing_http_response_access_control_allow_credentials_header_value: str
+```
+
+- *Type:* str
+
+---
+
+##### `routing_http_response_access_control_allow_headers_header_value`<sup>Required</sup> <a name="routing_http_response_access_control_allow_headers_header_value" id="@cdktf/provider-aws.lbListener.LbListener.property.routingHttpResponseAccessControlAllowHeadersHeaderValue"></a>
+
+```python
+routing_http_response_access_control_allow_headers_header_value: str
+```
+
+- *Type:* str
+
+---
+
+##### `routing_http_response_access_control_allow_methods_header_value`<sup>Required</sup> <a name="routing_http_response_access_control_allow_methods_header_value" id="@cdktf/provider-aws.lbListener.LbListener.property.routingHttpResponseAccessControlAllowMethodsHeaderValue"></a>
+
+```python
+routing_http_response_access_control_allow_methods_header_value: str
+```
+
+- *Type:* str
+
+---
+
+##### `routing_http_response_access_control_allow_origin_header_value`<sup>Required</sup> <a name="routing_http_response_access_control_allow_origin_header_value" id="@cdktf/provider-aws.lbListener.LbListener.property.routingHttpResponseAccessControlAllowOriginHeaderValue"></a>
+
+```python
+routing_http_response_access_control_allow_origin_header_value: str
+```
+
+- *Type:* str
+
+---
+
+##### `routing_http_response_access_control_expose_headers_header_value`<sup>Required</sup> <a name="routing_http_response_access_control_expose_headers_header_value" id="@cdktf/provider-aws.lbListener.LbListener.property.routingHttpResponseAccessControlExposeHeadersHeaderValue"></a>
+
+```python
+routing_http_response_access_control_expose_headers_header_value: str
+```
+
+- *Type:* str
+
+---
+
+##### `routing_http_response_access_control_max_age_header_value`<sup>Required</sup> <a name="routing_http_response_access_control_max_age_header_value" id="@cdktf/provider-aws.lbListener.LbListener.property.routingHttpResponseAccessControlMaxAgeHeaderValue"></a>
+
+```python
+routing_http_response_access_control_max_age_header_value: str
+```
+
+- *Type:* str
+
+---
+
+##### `routing_http_response_content_security_policy_header_value`<sup>Required</sup> <a name="routing_http_response_content_security_policy_header_value" id="@cdktf/provider-aws.lbListener.LbListener.property.routingHttpResponseContentSecurityPolicyHeaderValue"></a>
+
+```python
+routing_http_response_content_security_policy_header_value: str
+```
+
+- *Type:* str
+
+---
+
+##### `routing_http_response_server_enabled`<sup>Required</sup> <a name="routing_http_response_server_enabled" id="@cdktf/provider-aws.lbListener.LbListener.property.routingHttpResponseServerEnabled"></a>
+
+```python
+routing_http_response_server_enabled: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
+##### `routing_http_response_strict_transport_security_header_value`<sup>Required</sup> <a name="routing_http_response_strict_transport_security_header_value" id="@cdktf/provider-aws.lbListener.LbListener.property.routingHttpResponseStrictTransportSecurityHeaderValue"></a>
+
+```python
+routing_http_response_strict_transport_security_header_value: str
+```
+
+- *Type:* str
+
+---
+
+##### `routing_http_response_x_content_type_options_header_value`<sup>Required</sup> <a name="routing_http_response_x_content_type_options_header_value" id="@cdktf/provider-aws.lbListener.LbListener.property.routingHttpResponseXContentTypeOptionsHeaderValue"></a>
+
+```python
+routing_http_response_x_content_type_options_header_value: str
+```
+
+- *Type:* str
+
+---
+
+##### `routing_http_response_x_frame_options_header_value`<sup>Required</sup> <a name="routing_http_response_x_frame_options_header_value" id="@cdktf/provider-aws.lbListener.LbListener.property.routingHttpResponseXFrameOptionsHeaderValue"></a>
+
+```python
+routing_http_response_x_frame_options_header_value: str
+```
+
+- *Type:* str
+
+---
+
 ##### `ssl_policy`<sup>Required</sup> <a name="ssl_policy" id="@cdktf/provider-aws.lbListener.LbListener.property.sslPolicy"></a>
 
 ```python
@@ -1383,6 +2124,25 @@ lbListener.LbListenerConfig(
   mutual_authentication: LbListenerMutualAuthentication = None,
   port: typing.Union[int, float] = None,
   protocol: str = None,
+  routing_http_request_x_amzn_mtls_clientcert_header_name: str = None,
+  routing_http_request_x_amzn_mtls_clientcert_issuer_header_name: str = None,
+  routing_http_request_x_amzn_mtls_clientcert_leaf_header_name: str = None,
+  routing_http_request_x_amzn_mtls_clientcert_serial_number_header_name: str = None,
+  routing_http_request_x_amzn_mtls_clientcert_subject_header_name: str = None,
+  routing_http_request_x_amzn_mtls_clientcert_validity_header_name: str = None,
+  routing_http_request_x_amzn_tls_cipher_suite_header_name: str = None,
+  routing_http_request_x_amzn_tls_version_header_name: str = None,
+  routing_http_response_access_control_allow_credentials_header_value: str = None,
+  routing_http_response_access_control_allow_headers_header_value: str = None,
+  routing_http_response_access_control_allow_methods_header_value: str = None,
+  routing_http_response_access_control_allow_origin_header_value: str = None,
+  routing_http_response_access_control_expose_headers_header_value: str = None,
+  routing_http_response_access_control_max_age_header_value: str = None,
+  routing_http_response_content_security_policy_header_value: str = None,
+  routing_http_response_server_enabled: typing.Union[bool, IResolvable] = None,
+  routing_http_response_strict_transport_security_header_value: str = None,
+  routing_http_response_x_content_type_options_header_value: str = None,
+  routing_http_response_x_frame_options_header_value: str = None,
   ssl_policy: str = None,
   tags: typing.Mapping[str] = None,
   tags_all: typing.Mapping[str] = None,
@@ -1403,17 +2163,36 @@ lbListener.LbListenerConfig(
 | <code><a href="#@cdktf/provider-aws.lbListener.LbListenerConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lbListener.LbListenerConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lbListener.LbListenerConfig.property.defaultAction">default_action</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.lbListener.LbListenerDefaultAction">LbListenerDefaultAction</a>]]</code> | default_action block. |
-| <code><a href="#@cdktf/provider-aws.lbListener.LbListenerConfig.property.loadBalancerArn">load_balancer_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#load_balancer_arn LbListener#load_balancer_arn}. |
-| <code><a href="#@cdktf/provider-aws.lbListener.LbListenerConfig.property.alpnPolicy">alpn_policy</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#alpn_policy LbListener#alpn_policy}. |
-| <code><a href="#@cdktf/provider-aws.lbListener.LbListenerConfig.property.certificateArn">certificate_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#certificate_arn LbListener#certificate_arn}. |
-| <code><a href="#@cdktf/provider-aws.lbListener.LbListenerConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#id LbListener#id}. |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListenerConfig.property.loadBalancerArn">load_balancer_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#load_balancer_arn LbListener#load_balancer_arn}. |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListenerConfig.property.alpnPolicy">alpn_policy</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#alpn_policy LbListener#alpn_policy}. |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListenerConfig.property.certificateArn">certificate_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#certificate_arn LbListener#certificate_arn}. |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListenerConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#id LbListener#id}. |
 | <code><a href="#@cdktf/provider-aws.lbListener.LbListenerConfig.property.mutualAuthentication">mutual_authentication</a></code> | <code><a href="#@cdktf/provider-aws.lbListener.LbListenerMutualAuthentication">LbListenerMutualAuthentication</a></code> | mutual_authentication block. |
-| <code><a href="#@cdktf/provider-aws.lbListener.LbListenerConfig.property.port">port</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#port LbListener#port}. |
-| <code><a href="#@cdktf/provider-aws.lbListener.LbListenerConfig.property.protocol">protocol</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#protocol LbListener#protocol}. |
-| <code><a href="#@cdktf/provider-aws.lbListener.LbListenerConfig.property.sslPolicy">ssl_policy</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#ssl_policy LbListener#ssl_policy}. |
-| <code><a href="#@cdktf/provider-aws.lbListener.LbListenerConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#tags LbListener#tags}. |
-| <code><a href="#@cdktf/provider-aws.lbListener.LbListenerConfig.property.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#tags_all LbListener#tags_all}. |
-| <code><a href="#@cdktf/provider-aws.lbListener.LbListenerConfig.property.tcpIdleTimeoutSeconds">tcp_idle_timeout_seconds</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#tcp_idle_timeout_seconds LbListener#tcp_idle_timeout_seconds}. |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListenerConfig.property.port">port</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#port LbListener#port}. |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListenerConfig.property.protocol">protocol</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#protocol LbListener#protocol}. |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListenerConfig.property.routingHttpRequestXAmznMtlsClientcertHeaderName">routing_http_request_x_amzn_mtls_clientcert_header_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#routing_http_request_x_amzn_mtls_clientcert_header_name LbListener#routing_http_request_x_amzn_mtls_clientcert_header_name}. |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListenerConfig.property.routingHttpRequestXAmznMtlsClientcertIssuerHeaderName">routing_http_request_x_amzn_mtls_clientcert_issuer_header_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#routing_http_request_x_amzn_mtls_clientcert_issuer_header_name LbListener#routing_http_request_x_amzn_mtls_clientcert_issuer_header_name}. |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListenerConfig.property.routingHttpRequestXAmznMtlsClientcertLeafHeaderName">routing_http_request_x_amzn_mtls_clientcert_leaf_header_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#routing_http_request_x_amzn_mtls_clientcert_leaf_header_name LbListener#routing_http_request_x_amzn_mtls_clientcert_leaf_header_name}. |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListenerConfig.property.routingHttpRequestXAmznMtlsClientcertSerialNumberHeaderName">routing_http_request_x_amzn_mtls_clientcert_serial_number_header_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#routing_http_request_x_amzn_mtls_clientcert_serial_number_header_name LbListener#routing_http_request_x_amzn_mtls_clientcert_serial_number_header_name}. |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListenerConfig.property.routingHttpRequestXAmznMtlsClientcertSubjectHeaderName">routing_http_request_x_amzn_mtls_clientcert_subject_header_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#routing_http_request_x_amzn_mtls_clientcert_subject_header_name LbListener#routing_http_request_x_amzn_mtls_clientcert_subject_header_name}. |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListenerConfig.property.routingHttpRequestXAmznMtlsClientcertValidityHeaderName">routing_http_request_x_amzn_mtls_clientcert_validity_header_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#routing_http_request_x_amzn_mtls_clientcert_validity_header_name LbListener#routing_http_request_x_amzn_mtls_clientcert_validity_header_name}. |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListenerConfig.property.routingHttpRequestXAmznTlsCipherSuiteHeaderName">routing_http_request_x_amzn_tls_cipher_suite_header_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#routing_http_request_x_amzn_tls_cipher_suite_header_name LbListener#routing_http_request_x_amzn_tls_cipher_suite_header_name}. |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListenerConfig.property.routingHttpRequestXAmznTlsVersionHeaderName">routing_http_request_x_amzn_tls_version_header_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#routing_http_request_x_amzn_tls_version_header_name LbListener#routing_http_request_x_amzn_tls_version_header_name}. |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListenerConfig.property.routingHttpResponseAccessControlAllowCredentialsHeaderValue">routing_http_response_access_control_allow_credentials_header_value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#routing_http_response_access_control_allow_credentials_header_value LbListener#routing_http_response_access_control_allow_credentials_header_value}. |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListenerConfig.property.routingHttpResponseAccessControlAllowHeadersHeaderValue">routing_http_response_access_control_allow_headers_header_value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#routing_http_response_access_control_allow_headers_header_value LbListener#routing_http_response_access_control_allow_headers_header_value}. |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListenerConfig.property.routingHttpResponseAccessControlAllowMethodsHeaderValue">routing_http_response_access_control_allow_methods_header_value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#routing_http_response_access_control_allow_methods_header_value LbListener#routing_http_response_access_control_allow_methods_header_value}. |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListenerConfig.property.routingHttpResponseAccessControlAllowOriginHeaderValue">routing_http_response_access_control_allow_origin_header_value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#routing_http_response_access_control_allow_origin_header_value LbListener#routing_http_response_access_control_allow_origin_header_value}. |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListenerConfig.property.routingHttpResponseAccessControlExposeHeadersHeaderValue">routing_http_response_access_control_expose_headers_header_value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#routing_http_response_access_control_expose_headers_header_value LbListener#routing_http_response_access_control_expose_headers_header_value}. |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListenerConfig.property.routingHttpResponseAccessControlMaxAgeHeaderValue">routing_http_response_access_control_max_age_header_value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#routing_http_response_access_control_max_age_header_value LbListener#routing_http_response_access_control_max_age_header_value}. |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListenerConfig.property.routingHttpResponseContentSecurityPolicyHeaderValue">routing_http_response_content_security_policy_header_value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#routing_http_response_content_security_policy_header_value LbListener#routing_http_response_content_security_policy_header_value}. |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListenerConfig.property.routingHttpResponseServerEnabled">routing_http_response_server_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#routing_http_response_server_enabled LbListener#routing_http_response_server_enabled}. |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListenerConfig.property.routingHttpResponseStrictTransportSecurityHeaderValue">routing_http_response_strict_transport_security_header_value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#routing_http_response_strict_transport_security_header_value LbListener#routing_http_response_strict_transport_security_header_value}. |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListenerConfig.property.routingHttpResponseXContentTypeOptionsHeaderValue">routing_http_response_x_content_type_options_header_value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#routing_http_response_x_content_type_options_header_value LbListener#routing_http_response_x_content_type_options_header_value}. |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListenerConfig.property.routingHttpResponseXFrameOptionsHeaderValue">routing_http_response_x_frame_options_header_value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#routing_http_response_x_frame_options_header_value LbListener#routing_http_response_x_frame_options_header_value}. |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListenerConfig.property.sslPolicy">ssl_policy</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#ssl_policy LbListener#ssl_policy}. |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListenerConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#tags LbListener#tags}. |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListenerConfig.property.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#tags_all LbListener#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListenerConfig.property.tcpIdleTimeoutSeconds">tcp_idle_timeout_seconds</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#tcp_idle_timeout_seconds LbListener#tcp_idle_timeout_seconds}. |
 | <code><a href="#@cdktf/provider-aws.lbListener.LbListenerConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-aws.lbListener.LbListenerTimeouts">LbListenerTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1498,7 +2277,7 @@ default_action: typing.Union[IResolvable, typing.List[LbListenerDefaultAction]]
 
 default_action block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#default_action LbListener#default_action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#default_action LbListener#default_action}
 
 ---
 
@@ -1510,7 +2289,7 @@ load_balancer_arn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#load_balancer_arn LbListener#load_balancer_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#load_balancer_arn LbListener#load_balancer_arn}.
 
 ---
 
@@ -1522,7 +2301,7 @@ alpn_policy: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#alpn_policy LbListener#alpn_policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#alpn_policy LbListener#alpn_policy}.
 
 ---
 
@@ -1534,7 +2313,7 @@ certificate_arn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#certificate_arn LbListener#certificate_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#certificate_arn LbListener#certificate_arn}.
 
 ---
 
@@ -1546,7 +2325,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#id LbListener#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#id LbListener#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1563,7 +2342,7 @@ mutual_authentication: LbListenerMutualAuthentication
 
 mutual_authentication block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#mutual_authentication LbListener#mutual_authentication}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#mutual_authentication LbListener#mutual_authentication}
 
 ---
 
@@ -1575,7 +2354,7 @@ port: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#port LbListener#port}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#port LbListener#port}.
 
 ---
 
@@ -1587,7 +2366,235 @@ protocol: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#protocol LbListener#protocol}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#protocol LbListener#protocol}.
+
+---
+
+##### `routing_http_request_x_amzn_mtls_clientcert_header_name`<sup>Optional</sup> <a name="routing_http_request_x_amzn_mtls_clientcert_header_name" id="@cdktf/provider-aws.lbListener.LbListenerConfig.property.routingHttpRequestXAmznMtlsClientcertHeaderName"></a>
+
+```python
+routing_http_request_x_amzn_mtls_clientcert_header_name: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#routing_http_request_x_amzn_mtls_clientcert_header_name LbListener#routing_http_request_x_amzn_mtls_clientcert_header_name}.
+
+---
+
+##### `routing_http_request_x_amzn_mtls_clientcert_issuer_header_name`<sup>Optional</sup> <a name="routing_http_request_x_amzn_mtls_clientcert_issuer_header_name" id="@cdktf/provider-aws.lbListener.LbListenerConfig.property.routingHttpRequestXAmznMtlsClientcertIssuerHeaderName"></a>
+
+```python
+routing_http_request_x_amzn_mtls_clientcert_issuer_header_name: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#routing_http_request_x_amzn_mtls_clientcert_issuer_header_name LbListener#routing_http_request_x_amzn_mtls_clientcert_issuer_header_name}.
+
+---
+
+##### `routing_http_request_x_amzn_mtls_clientcert_leaf_header_name`<sup>Optional</sup> <a name="routing_http_request_x_amzn_mtls_clientcert_leaf_header_name" id="@cdktf/provider-aws.lbListener.LbListenerConfig.property.routingHttpRequestXAmznMtlsClientcertLeafHeaderName"></a>
+
+```python
+routing_http_request_x_amzn_mtls_clientcert_leaf_header_name: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#routing_http_request_x_amzn_mtls_clientcert_leaf_header_name LbListener#routing_http_request_x_amzn_mtls_clientcert_leaf_header_name}.
+
+---
+
+##### `routing_http_request_x_amzn_mtls_clientcert_serial_number_header_name`<sup>Optional</sup> <a name="routing_http_request_x_amzn_mtls_clientcert_serial_number_header_name" id="@cdktf/provider-aws.lbListener.LbListenerConfig.property.routingHttpRequestXAmznMtlsClientcertSerialNumberHeaderName"></a>
+
+```python
+routing_http_request_x_amzn_mtls_clientcert_serial_number_header_name: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#routing_http_request_x_amzn_mtls_clientcert_serial_number_header_name LbListener#routing_http_request_x_amzn_mtls_clientcert_serial_number_header_name}.
+
+---
+
+##### `routing_http_request_x_amzn_mtls_clientcert_subject_header_name`<sup>Optional</sup> <a name="routing_http_request_x_amzn_mtls_clientcert_subject_header_name" id="@cdktf/provider-aws.lbListener.LbListenerConfig.property.routingHttpRequestXAmznMtlsClientcertSubjectHeaderName"></a>
+
+```python
+routing_http_request_x_amzn_mtls_clientcert_subject_header_name: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#routing_http_request_x_amzn_mtls_clientcert_subject_header_name LbListener#routing_http_request_x_amzn_mtls_clientcert_subject_header_name}.
+
+---
+
+##### `routing_http_request_x_amzn_mtls_clientcert_validity_header_name`<sup>Optional</sup> <a name="routing_http_request_x_amzn_mtls_clientcert_validity_header_name" id="@cdktf/provider-aws.lbListener.LbListenerConfig.property.routingHttpRequestXAmznMtlsClientcertValidityHeaderName"></a>
+
+```python
+routing_http_request_x_amzn_mtls_clientcert_validity_header_name: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#routing_http_request_x_amzn_mtls_clientcert_validity_header_name LbListener#routing_http_request_x_amzn_mtls_clientcert_validity_header_name}.
+
+---
+
+##### `routing_http_request_x_amzn_tls_cipher_suite_header_name`<sup>Optional</sup> <a name="routing_http_request_x_amzn_tls_cipher_suite_header_name" id="@cdktf/provider-aws.lbListener.LbListenerConfig.property.routingHttpRequestXAmznTlsCipherSuiteHeaderName"></a>
+
+```python
+routing_http_request_x_amzn_tls_cipher_suite_header_name: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#routing_http_request_x_amzn_tls_cipher_suite_header_name LbListener#routing_http_request_x_amzn_tls_cipher_suite_header_name}.
+
+---
+
+##### `routing_http_request_x_amzn_tls_version_header_name`<sup>Optional</sup> <a name="routing_http_request_x_amzn_tls_version_header_name" id="@cdktf/provider-aws.lbListener.LbListenerConfig.property.routingHttpRequestXAmznTlsVersionHeaderName"></a>
+
+```python
+routing_http_request_x_amzn_tls_version_header_name: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#routing_http_request_x_amzn_tls_version_header_name LbListener#routing_http_request_x_amzn_tls_version_header_name}.
+
+---
+
+##### `routing_http_response_access_control_allow_credentials_header_value`<sup>Optional</sup> <a name="routing_http_response_access_control_allow_credentials_header_value" id="@cdktf/provider-aws.lbListener.LbListenerConfig.property.routingHttpResponseAccessControlAllowCredentialsHeaderValue"></a>
+
+```python
+routing_http_response_access_control_allow_credentials_header_value: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#routing_http_response_access_control_allow_credentials_header_value LbListener#routing_http_response_access_control_allow_credentials_header_value}.
+
+---
+
+##### `routing_http_response_access_control_allow_headers_header_value`<sup>Optional</sup> <a name="routing_http_response_access_control_allow_headers_header_value" id="@cdktf/provider-aws.lbListener.LbListenerConfig.property.routingHttpResponseAccessControlAllowHeadersHeaderValue"></a>
+
+```python
+routing_http_response_access_control_allow_headers_header_value: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#routing_http_response_access_control_allow_headers_header_value LbListener#routing_http_response_access_control_allow_headers_header_value}.
+
+---
+
+##### `routing_http_response_access_control_allow_methods_header_value`<sup>Optional</sup> <a name="routing_http_response_access_control_allow_methods_header_value" id="@cdktf/provider-aws.lbListener.LbListenerConfig.property.routingHttpResponseAccessControlAllowMethodsHeaderValue"></a>
+
+```python
+routing_http_response_access_control_allow_methods_header_value: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#routing_http_response_access_control_allow_methods_header_value LbListener#routing_http_response_access_control_allow_methods_header_value}.
+
+---
+
+##### `routing_http_response_access_control_allow_origin_header_value`<sup>Optional</sup> <a name="routing_http_response_access_control_allow_origin_header_value" id="@cdktf/provider-aws.lbListener.LbListenerConfig.property.routingHttpResponseAccessControlAllowOriginHeaderValue"></a>
+
+```python
+routing_http_response_access_control_allow_origin_header_value: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#routing_http_response_access_control_allow_origin_header_value LbListener#routing_http_response_access_control_allow_origin_header_value}.
+
+---
+
+##### `routing_http_response_access_control_expose_headers_header_value`<sup>Optional</sup> <a name="routing_http_response_access_control_expose_headers_header_value" id="@cdktf/provider-aws.lbListener.LbListenerConfig.property.routingHttpResponseAccessControlExposeHeadersHeaderValue"></a>
+
+```python
+routing_http_response_access_control_expose_headers_header_value: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#routing_http_response_access_control_expose_headers_header_value LbListener#routing_http_response_access_control_expose_headers_header_value}.
+
+---
+
+##### `routing_http_response_access_control_max_age_header_value`<sup>Optional</sup> <a name="routing_http_response_access_control_max_age_header_value" id="@cdktf/provider-aws.lbListener.LbListenerConfig.property.routingHttpResponseAccessControlMaxAgeHeaderValue"></a>
+
+```python
+routing_http_response_access_control_max_age_header_value: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#routing_http_response_access_control_max_age_header_value LbListener#routing_http_response_access_control_max_age_header_value}.
+
+---
+
+##### `routing_http_response_content_security_policy_header_value`<sup>Optional</sup> <a name="routing_http_response_content_security_policy_header_value" id="@cdktf/provider-aws.lbListener.LbListenerConfig.property.routingHttpResponseContentSecurityPolicyHeaderValue"></a>
+
+```python
+routing_http_response_content_security_policy_header_value: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#routing_http_response_content_security_policy_header_value LbListener#routing_http_response_content_security_policy_header_value}.
+
+---
+
+##### `routing_http_response_server_enabled`<sup>Optional</sup> <a name="routing_http_response_server_enabled" id="@cdktf/provider-aws.lbListener.LbListenerConfig.property.routingHttpResponseServerEnabled"></a>
+
+```python
+routing_http_response_server_enabled: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#routing_http_response_server_enabled LbListener#routing_http_response_server_enabled}.
+
+---
+
+##### `routing_http_response_strict_transport_security_header_value`<sup>Optional</sup> <a name="routing_http_response_strict_transport_security_header_value" id="@cdktf/provider-aws.lbListener.LbListenerConfig.property.routingHttpResponseStrictTransportSecurityHeaderValue"></a>
+
+```python
+routing_http_response_strict_transport_security_header_value: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#routing_http_response_strict_transport_security_header_value LbListener#routing_http_response_strict_transport_security_header_value}.
+
+---
+
+##### `routing_http_response_x_content_type_options_header_value`<sup>Optional</sup> <a name="routing_http_response_x_content_type_options_header_value" id="@cdktf/provider-aws.lbListener.LbListenerConfig.property.routingHttpResponseXContentTypeOptionsHeaderValue"></a>
+
+```python
+routing_http_response_x_content_type_options_header_value: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#routing_http_response_x_content_type_options_header_value LbListener#routing_http_response_x_content_type_options_header_value}.
+
+---
+
+##### `routing_http_response_x_frame_options_header_value`<sup>Optional</sup> <a name="routing_http_response_x_frame_options_header_value" id="@cdktf/provider-aws.lbListener.LbListenerConfig.property.routingHttpResponseXFrameOptionsHeaderValue"></a>
+
+```python
+routing_http_response_x_frame_options_header_value: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#routing_http_response_x_frame_options_header_value LbListener#routing_http_response_x_frame_options_header_value}.
 
 ---
 
@@ -1599,7 +2606,7 @@ ssl_policy: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#ssl_policy LbListener#ssl_policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#ssl_policy LbListener#ssl_policy}.
 
 ---
 
@@ -1611,7 +2618,7 @@ tags: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#tags LbListener#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#tags LbListener#tags}.
 
 ---
 
@@ -1623,7 +2630,7 @@ tags_all: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#tags_all LbListener#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#tags_all LbListener#tags_all}.
 
 ---
 
@@ -1635,7 +2642,7 @@ tcp_idle_timeout_seconds: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#tcp_idle_timeout_seconds LbListener#tcp_idle_timeout_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#tcp_idle_timeout_seconds LbListener#tcp_idle_timeout_seconds}.
 
 ---
 
@@ -1649,7 +2656,7 @@ timeouts: LbListenerTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#timeouts LbListener#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#timeouts LbListener#timeouts}
 
 ---
 
@@ -1676,14 +2683,14 @@ lbListener.LbListenerDefaultAction(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.lbListener.LbListenerDefaultAction.property.type">type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#type LbListener#type}. |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListenerDefaultAction.property.type">type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#type LbListener#type}. |
 | <code><a href="#@cdktf/provider-aws.lbListener.LbListenerDefaultAction.property.authenticateCognito">authenticate_cognito</a></code> | <code><a href="#@cdktf/provider-aws.lbListener.LbListenerDefaultActionAuthenticateCognito">LbListenerDefaultActionAuthenticateCognito</a></code> | authenticate_cognito block. |
 | <code><a href="#@cdktf/provider-aws.lbListener.LbListenerDefaultAction.property.authenticateOidc">authenticate_oidc</a></code> | <code><a href="#@cdktf/provider-aws.lbListener.LbListenerDefaultActionAuthenticateOidc">LbListenerDefaultActionAuthenticateOidc</a></code> | authenticate_oidc block. |
 | <code><a href="#@cdktf/provider-aws.lbListener.LbListenerDefaultAction.property.fixedResponse">fixed_response</a></code> | <code><a href="#@cdktf/provider-aws.lbListener.LbListenerDefaultActionFixedResponse">LbListenerDefaultActionFixedResponse</a></code> | fixed_response block. |
 | <code><a href="#@cdktf/provider-aws.lbListener.LbListenerDefaultAction.property.forward">forward</a></code> | <code><a href="#@cdktf/provider-aws.lbListener.LbListenerDefaultActionForward">LbListenerDefaultActionForward</a></code> | forward block. |
-| <code><a href="#@cdktf/provider-aws.lbListener.LbListenerDefaultAction.property.order">order</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#order LbListener#order}. |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListenerDefaultAction.property.order">order</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#order LbListener#order}. |
 | <code><a href="#@cdktf/provider-aws.lbListener.LbListenerDefaultAction.property.redirect">redirect</a></code> | <code><a href="#@cdktf/provider-aws.lbListener.LbListenerDefaultActionRedirect">LbListenerDefaultActionRedirect</a></code> | redirect block. |
-| <code><a href="#@cdktf/provider-aws.lbListener.LbListenerDefaultAction.property.targetGroupArn">target_group_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#target_group_arn LbListener#target_group_arn}. |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListenerDefaultAction.property.targetGroupArn">target_group_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#target_group_arn LbListener#target_group_arn}. |
 
 ---
 
@@ -1695,7 +2702,7 @@ type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#type LbListener#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#type LbListener#type}.
 
 ---
 
@@ -1709,7 +2716,7 @@ authenticate_cognito: LbListenerDefaultActionAuthenticateCognito
 
 authenticate_cognito block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#authenticate_cognito LbListener#authenticate_cognito}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#authenticate_cognito LbListener#authenticate_cognito}
 
 ---
 
@@ -1723,7 +2730,7 @@ authenticate_oidc: LbListenerDefaultActionAuthenticateOidc
 
 authenticate_oidc block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#authenticate_oidc LbListener#authenticate_oidc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#authenticate_oidc LbListener#authenticate_oidc}
 
 ---
 
@@ -1737,7 +2744,7 @@ fixed_response: LbListenerDefaultActionFixedResponse
 
 fixed_response block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#fixed_response LbListener#fixed_response}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#fixed_response LbListener#fixed_response}
 
 ---
 
@@ -1751,7 +2758,7 @@ forward: LbListenerDefaultActionForward
 
 forward block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#forward LbListener#forward}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#forward LbListener#forward}
 
 ---
 
@@ -1763,7 +2770,7 @@ order: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#order LbListener#order}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#order LbListener#order}.
 
 ---
 
@@ -1777,7 +2784,7 @@ redirect: LbListenerDefaultActionRedirect
 
 redirect block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#redirect LbListener#redirect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#redirect LbListener#redirect}
 
 ---
 
@@ -1789,7 +2796,7 @@ target_group_arn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#target_group_arn LbListener#target_group_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#target_group_arn LbListener#target_group_arn}.
 
 ---
 
@@ -1816,14 +2823,14 @@ lbListener.LbListenerDefaultActionAuthenticateCognito(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.lbListener.LbListenerDefaultActionAuthenticateCognito.property.userPoolArn">user_pool_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#user_pool_arn LbListener#user_pool_arn}. |
-| <code><a href="#@cdktf/provider-aws.lbListener.LbListenerDefaultActionAuthenticateCognito.property.userPoolClientId">user_pool_client_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#user_pool_client_id LbListener#user_pool_client_id}. |
-| <code><a href="#@cdktf/provider-aws.lbListener.LbListenerDefaultActionAuthenticateCognito.property.userPoolDomain">user_pool_domain</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#user_pool_domain LbListener#user_pool_domain}. |
-| <code><a href="#@cdktf/provider-aws.lbListener.LbListenerDefaultActionAuthenticateCognito.property.authenticationRequestExtraParams">authentication_request_extra_params</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#authentication_request_extra_params LbListener#authentication_request_extra_params}. |
-| <code><a href="#@cdktf/provider-aws.lbListener.LbListenerDefaultActionAuthenticateCognito.property.onUnauthenticatedRequest">on_unauthenticated_request</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#on_unauthenticated_request LbListener#on_unauthenticated_request}. |
-| <code><a href="#@cdktf/provider-aws.lbListener.LbListenerDefaultActionAuthenticateCognito.property.scope">scope</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#scope LbListener#scope}. |
-| <code><a href="#@cdktf/provider-aws.lbListener.LbListenerDefaultActionAuthenticateCognito.property.sessionCookieName">session_cookie_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#session_cookie_name LbListener#session_cookie_name}. |
-| <code><a href="#@cdktf/provider-aws.lbListener.LbListenerDefaultActionAuthenticateCognito.property.sessionTimeout">session_timeout</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#session_timeout LbListener#session_timeout}. |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListenerDefaultActionAuthenticateCognito.property.userPoolArn">user_pool_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#user_pool_arn LbListener#user_pool_arn}. |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListenerDefaultActionAuthenticateCognito.property.userPoolClientId">user_pool_client_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#user_pool_client_id LbListener#user_pool_client_id}. |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListenerDefaultActionAuthenticateCognito.property.userPoolDomain">user_pool_domain</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#user_pool_domain LbListener#user_pool_domain}. |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListenerDefaultActionAuthenticateCognito.property.authenticationRequestExtraParams">authentication_request_extra_params</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#authentication_request_extra_params LbListener#authentication_request_extra_params}. |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListenerDefaultActionAuthenticateCognito.property.onUnauthenticatedRequest">on_unauthenticated_request</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#on_unauthenticated_request LbListener#on_unauthenticated_request}. |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListenerDefaultActionAuthenticateCognito.property.scope">scope</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#scope LbListener#scope}. |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListenerDefaultActionAuthenticateCognito.property.sessionCookieName">session_cookie_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#session_cookie_name LbListener#session_cookie_name}. |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListenerDefaultActionAuthenticateCognito.property.sessionTimeout">session_timeout</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#session_timeout LbListener#session_timeout}. |
 
 ---
 
@@ -1835,7 +2842,7 @@ user_pool_arn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#user_pool_arn LbListener#user_pool_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#user_pool_arn LbListener#user_pool_arn}.
 
 ---
 
@@ -1847,7 +2854,7 @@ user_pool_client_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#user_pool_client_id LbListener#user_pool_client_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#user_pool_client_id LbListener#user_pool_client_id}.
 
 ---
 
@@ -1859,7 +2866,7 @@ user_pool_domain: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#user_pool_domain LbListener#user_pool_domain}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#user_pool_domain LbListener#user_pool_domain}.
 
 ---
 
@@ -1871,7 +2878,7 @@ authentication_request_extra_params: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#authentication_request_extra_params LbListener#authentication_request_extra_params}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#authentication_request_extra_params LbListener#authentication_request_extra_params}.
 
 ---
 
@@ -1883,7 +2890,7 @@ on_unauthenticated_request: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#on_unauthenticated_request LbListener#on_unauthenticated_request}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#on_unauthenticated_request LbListener#on_unauthenticated_request}.
 
 ---
 
@@ -1895,7 +2902,7 @@ scope: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#scope LbListener#scope}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#scope LbListener#scope}.
 
 ---
 
@@ -1907,7 +2914,7 @@ session_cookie_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#session_cookie_name LbListener#session_cookie_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#session_cookie_name LbListener#session_cookie_name}.
 
 ---
 
@@ -1919,7 +2926,7 @@ session_timeout: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#session_timeout LbListener#session_timeout}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#session_timeout LbListener#session_timeout}.
 
 ---
 
@@ -1949,17 +2956,17 @@ lbListener.LbListenerDefaultActionAuthenticateOidc(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.lbListener.LbListenerDefaultActionAuthenticateOidc.property.authorizationEndpoint">authorization_endpoint</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#authorization_endpoint LbListener#authorization_endpoint}. |
-| <code><a href="#@cdktf/provider-aws.lbListener.LbListenerDefaultActionAuthenticateOidc.property.clientId">client_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#client_id LbListener#client_id}. |
-| <code><a href="#@cdktf/provider-aws.lbListener.LbListenerDefaultActionAuthenticateOidc.property.clientSecret">client_secret</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#client_secret LbListener#client_secret}. |
-| <code><a href="#@cdktf/provider-aws.lbListener.LbListenerDefaultActionAuthenticateOidc.property.issuer">issuer</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#issuer LbListener#issuer}. |
-| <code><a href="#@cdktf/provider-aws.lbListener.LbListenerDefaultActionAuthenticateOidc.property.tokenEndpoint">token_endpoint</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#token_endpoint LbListener#token_endpoint}. |
-| <code><a href="#@cdktf/provider-aws.lbListener.LbListenerDefaultActionAuthenticateOidc.property.userInfoEndpoint">user_info_endpoint</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#user_info_endpoint LbListener#user_info_endpoint}. |
-| <code><a href="#@cdktf/provider-aws.lbListener.LbListenerDefaultActionAuthenticateOidc.property.authenticationRequestExtraParams">authentication_request_extra_params</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#authentication_request_extra_params LbListener#authentication_request_extra_params}. |
-| <code><a href="#@cdktf/provider-aws.lbListener.LbListenerDefaultActionAuthenticateOidc.property.onUnauthenticatedRequest">on_unauthenticated_request</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#on_unauthenticated_request LbListener#on_unauthenticated_request}. |
-| <code><a href="#@cdktf/provider-aws.lbListener.LbListenerDefaultActionAuthenticateOidc.property.scope">scope</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#scope LbListener#scope}. |
-| <code><a href="#@cdktf/provider-aws.lbListener.LbListenerDefaultActionAuthenticateOidc.property.sessionCookieName">session_cookie_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#session_cookie_name LbListener#session_cookie_name}. |
-| <code><a href="#@cdktf/provider-aws.lbListener.LbListenerDefaultActionAuthenticateOidc.property.sessionTimeout">session_timeout</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#session_timeout LbListener#session_timeout}. |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListenerDefaultActionAuthenticateOidc.property.authorizationEndpoint">authorization_endpoint</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#authorization_endpoint LbListener#authorization_endpoint}. |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListenerDefaultActionAuthenticateOidc.property.clientId">client_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#client_id LbListener#client_id}. |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListenerDefaultActionAuthenticateOidc.property.clientSecret">client_secret</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#client_secret LbListener#client_secret}. |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListenerDefaultActionAuthenticateOidc.property.issuer">issuer</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#issuer LbListener#issuer}. |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListenerDefaultActionAuthenticateOidc.property.tokenEndpoint">token_endpoint</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#token_endpoint LbListener#token_endpoint}. |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListenerDefaultActionAuthenticateOidc.property.userInfoEndpoint">user_info_endpoint</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#user_info_endpoint LbListener#user_info_endpoint}. |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListenerDefaultActionAuthenticateOidc.property.authenticationRequestExtraParams">authentication_request_extra_params</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#authentication_request_extra_params LbListener#authentication_request_extra_params}. |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListenerDefaultActionAuthenticateOidc.property.onUnauthenticatedRequest">on_unauthenticated_request</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#on_unauthenticated_request LbListener#on_unauthenticated_request}. |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListenerDefaultActionAuthenticateOidc.property.scope">scope</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#scope LbListener#scope}. |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListenerDefaultActionAuthenticateOidc.property.sessionCookieName">session_cookie_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#session_cookie_name LbListener#session_cookie_name}. |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListenerDefaultActionAuthenticateOidc.property.sessionTimeout">session_timeout</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#session_timeout LbListener#session_timeout}. |
 
 ---
 
@@ -1971,7 +2978,7 @@ authorization_endpoint: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#authorization_endpoint LbListener#authorization_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#authorization_endpoint LbListener#authorization_endpoint}.
 
 ---
 
@@ -1983,7 +2990,7 @@ client_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#client_id LbListener#client_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#client_id LbListener#client_id}.
 
 ---
 
@@ -1995,7 +3002,7 @@ client_secret: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#client_secret LbListener#client_secret}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#client_secret LbListener#client_secret}.
 
 ---
 
@@ -2007,7 +3014,7 @@ issuer: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#issuer LbListener#issuer}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#issuer LbListener#issuer}.
 
 ---
 
@@ -2019,7 +3026,7 @@ token_endpoint: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#token_endpoint LbListener#token_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#token_endpoint LbListener#token_endpoint}.
 
 ---
 
@@ -2031,7 +3038,7 @@ user_info_endpoint: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#user_info_endpoint LbListener#user_info_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#user_info_endpoint LbListener#user_info_endpoint}.
 
 ---
 
@@ -2043,7 +3050,7 @@ authentication_request_extra_params: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#authentication_request_extra_params LbListener#authentication_request_extra_params}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#authentication_request_extra_params LbListener#authentication_request_extra_params}.
 
 ---
 
@@ -2055,7 +3062,7 @@ on_unauthenticated_request: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#on_unauthenticated_request LbListener#on_unauthenticated_request}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#on_unauthenticated_request LbListener#on_unauthenticated_request}.
 
 ---
 
@@ -2067,7 +3074,7 @@ scope: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#scope LbListener#scope}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#scope LbListener#scope}.
 
 ---
 
@@ -2079,7 +3086,7 @@ session_cookie_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#session_cookie_name LbListener#session_cookie_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#session_cookie_name LbListener#session_cookie_name}.
 
 ---
 
@@ -2091,7 +3098,7 @@ session_timeout: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#session_timeout LbListener#session_timeout}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#session_timeout LbListener#session_timeout}.
 
 ---
 
@@ -2113,9 +3120,9 @@ lbListener.LbListenerDefaultActionFixedResponse(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.lbListener.LbListenerDefaultActionFixedResponse.property.contentType">content_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#content_type LbListener#content_type}. |
-| <code><a href="#@cdktf/provider-aws.lbListener.LbListenerDefaultActionFixedResponse.property.messageBody">message_body</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#message_body LbListener#message_body}. |
-| <code><a href="#@cdktf/provider-aws.lbListener.LbListenerDefaultActionFixedResponse.property.statusCode">status_code</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#status_code LbListener#status_code}. |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListenerDefaultActionFixedResponse.property.contentType">content_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#content_type LbListener#content_type}. |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListenerDefaultActionFixedResponse.property.messageBody">message_body</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#message_body LbListener#message_body}. |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListenerDefaultActionFixedResponse.property.statusCode">status_code</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#status_code LbListener#status_code}. |
 
 ---
 
@@ -2127,7 +3134,7 @@ content_type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#content_type LbListener#content_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#content_type LbListener#content_type}.
 
 ---
 
@@ -2139,7 +3146,7 @@ message_body: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#message_body LbListener#message_body}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#message_body LbListener#message_body}.
 
 ---
 
@@ -2151,7 +3158,7 @@ status_code: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#status_code LbListener#status_code}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#status_code LbListener#status_code}.
 
 ---
 
@@ -2187,7 +3194,7 @@ target_group: typing.Union[IResolvable, typing.List[LbListenerDefaultActionForwa
 
 target_group block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#target_group LbListener#target_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#target_group LbListener#target_group}
 
 ---
 
@@ -2201,7 +3208,7 @@ stickiness: LbListenerDefaultActionForwardStickiness
 
 stickiness block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#stickiness LbListener#stickiness}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#stickiness LbListener#stickiness}
 
 ---
 
@@ -2222,8 +3229,8 @@ lbListener.LbListenerDefaultActionForwardStickiness(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.lbListener.LbListenerDefaultActionForwardStickiness.property.duration">duration</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#duration LbListener#duration}. |
-| <code><a href="#@cdktf/provider-aws.lbListener.LbListenerDefaultActionForwardStickiness.property.enabled">enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#enabled LbListener#enabled}. |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListenerDefaultActionForwardStickiness.property.duration">duration</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#duration LbListener#duration}. |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListenerDefaultActionForwardStickiness.property.enabled">enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#enabled LbListener#enabled}. |
 
 ---
 
@@ -2235,7 +3242,7 @@ duration: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#duration LbListener#duration}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#duration LbListener#duration}.
 
 ---
 
@@ -2247,7 +3254,7 @@ enabled: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#enabled LbListener#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#enabled LbListener#enabled}.
 
 ---
 
@@ -2268,8 +3275,8 @@ lbListener.LbListenerDefaultActionForwardTargetGroup(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.lbListener.LbListenerDefaultActionForwardTargetGroup.property.arn">arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#arn LbListener#arn}. |
-| <code><a href="#@cdktf/provider-aws.lbListener.LbListenerDefaultActionForwardTargetGroup.property.weight">weight</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#weight LbListener#weight}. |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListenerDefaultActionForwardTargetGroup.property.arn">arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#arn LbListener#arn}. |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListenerDefaultActionForwardTargetGroup.property.weight">weight</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#weight LbListener#weight}. |
 
 ---
 
@@ -2281,7 +3288,7 @@ arn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#arn LbListener#arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#arn LbListener#arn}.
 
 ---
 
@@ -2293,7 +3300,7 @@ weight: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#weight LbListener#weight}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#weight LbListener#weight}.
 
 ---
 
@@ -2318,12 +3325,12 @@ lbListener.LbListenerDefaultActionRedirect(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.lbListener.LbListenerDefaultActionRedirect.property.statusCode">status_code</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#status_code LbListener#status_code}. |
-| <code><a href="#@cdktf/provider-aws.lbListener.LbListenerDefaultActionRedirect.property.host">host</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#host LbListener#host}. |
-| <code><a href="#@cdktf/provider-aws.lbListener.LbListenerDefaultActionRedirect.property.path">path</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#path LbListener#path}. |
-| <code><a href="#@cdktf/provider-aws.lbListener.LbListenerDefaultActionRedirect.property.port">port</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#port LbListener#port}. |
-| <code><a href="#@cdktf/provider-aws.lbListener.LbListenerDefaultActionRedirect.property.protocol">protocol</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#protocol LbListener#protocol}. |
-| <code><a href="#@cdktf/provider-aws.lbListener.LbListenerDefaultActionRedirect.property.query">query</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#query LbListener#query}. |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListenerDefaultActionRedirect.property.statusCode">status_code</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#status_code LbListener#status_code}. |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListenerDefaultActionRedirect.property.host">host</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#host LbListener#host}. |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListenerDefaultActionRedirect.property.path">path</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#path LbListener#path}. |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListenerDefaultActionRedirect.property.port">port</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#port LbListener#port}. |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListenerDefaultActionRedirect.property.protocol">protocol</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#protocol LbListener#protocol}. |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListenerDefaultActionRedirect.property.query">query</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#query LbListener#query}. |
 
 ---
 
@@ -2335,7 +3342,7 @@ status_code: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#status_code LbListener#status_code}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#status_code LbListener#status_code}.
 
 ---
 
@@ -2347,7 +3354,7 @@ host: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#host LbListener#host}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#host LbListener#host}.
 
 ---
 
@@ -2359,7 +3366,7 @@ path: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#path LbListener#path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#path LbListener#path}.
 
 ---
 
@@ -2371,7 +3378,7 @@ port: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#port LbListener#port}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#port LbListener#port}.
 
 ---
 
@@ -2383,7 +3390,7 @@ protocol: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#protocol LbListener#protocol}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#protocol LbListener#protocol}.
 
 ---
 
@@ -2395,7 +3402,7 @@ query: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#query LbListener#query}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#query LbListener#query}.
 
 ---
 
@@ -2418,10 +3425,10 @@ lbListener.LbListenerMutualAuthentication(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.lbListener.LbListenerMutualAuthentication.property.mode">mode</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#mode LbListener#mode}. |
-| <code><a href="#@cdktf/provider-aws.lbListener.LbListenerMutualAuthentication.property.advertiseTrustStoreCaNames">advertise_trust_store_ca_names</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#advertise_trust_store_ca_names LbListener#advertise_trust_store_ca_names}. |
-| <code><a href="#@cdktf/provider-aws.lbListener.LbListenerMutualAuthentication.property.ignoreClientCertificateExpiry">ignore_client_certificate_expiry</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#ignore_client_certificate_expiry LbListener#ignore_client_certificate_expiry}. |
-| <code><a href="#@cdktf/provider-aws.lbListener.LbListenerMutualAuthentication.property.trustStoreArn">trust_store_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#trust_store_arn LbListener#trust_store_arn}. |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListenerMutualAuthentication.property.mode">mode</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#mode LbListener#mode}. |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListenerMutualAuthentication.property.advertiseTrustStoreCaNames">advertise_trust_store_ca_names</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#advertise_trust_store_ca_names LbListener#advertise_trust_store_ca_names}. |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListenerMutualAuthentication.property.ignoreClientCertificateExpiry">ignore_client_certificate_expiry</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#ignore_client_certificate_expiry LbListener#ignore_client_certificate_expiry}. |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListenerMutualAuthentication.property.trustStoreArn">trust_store_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#trust_store_arn LbListener#trust_store_arn}. |
 
 ---
 
@@ -2433,7 +3440,7 @@ mode: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#mode LbListener#mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#mode LbListener#mode}.
 
 ---
 
@@ -2445,7 +3452,7 @@ advertise_trust_store_ca_names: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#advertise_trust_store_ca_names LbListener#advertise_trust_store_ca_names}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#advertise_trust_store_ca_names LbListener#advertise_trust_store_ca_names}.
 
 ---
 
@@ -2457,7 +3464,7 @@ ignore_client_certificate_expiry: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#ignore_client_certificate_expiry LbListener#ignore_client_certificate_expiry}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#ignore_client_certificate_expiry LbListener#ignore_client_certificate_expiry}.
 
 ---
 
@@ -2469,7 +3476,7 @@ trust_store_arn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#trust_store_arn LbListener#trust_store_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#trust_store_arn LbListener#trust_store_arn}.
 
 ---
 
@@ -2490,8 +3497,8 @@ lbListener.LbListenerTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.lbListener.LbListenerTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#create LbListener#create}. |
-| <code><a href="#@cdktf/provider-aws.lbListener.LbListenerTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#update LbListener#update}. |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListenerTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#create LbListener#create}. |
+| <code><a href="#@cdktf/provider-aws.lbListener.LbListenerTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#update LbListener#update}. |
 
 ---
 
@@ -2503,7 +3510,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#create LbListener#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#create LbListener#create}.
 
 ---
 
@@ -2515,7 +3522,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#update LbListener#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#update LbListener#update}.
 
 ---
 
@@ -4155,7 +5162,7 @@ def put_stickiness(
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#duration LbListener#duration}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#duration LbListener#duration}.
 
 ---
 
@@ -4163,7 +5170,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#enabled LbListener#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#enabled LbListener#enabled}.
 
 ---
 
@@ -5566,7 +6573,7 @@ def put_authenticate_cognito(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#user_pool_arn LbListener#user_pool_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#user_pool_arn LbListener#user_pool_arn}.
 
 ---
 
@@ -5574,7 +6581,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#user_pool_client_id LbListener#user_pool_client_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#user_pool_client_id LbListener#user_pool_client_id}.
 
 ---
 
@@ -5582,7 +6589,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#user_pool_domain LbListener#user_pool_domain}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#user_pool_domain LbListener#user_pool_domain}.
 
 ---
 
@@ -5590,7 +6597,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#authentication_request_extra_params LbListener#authentication_request_extra_params}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#authentication_request_extra_params LbListener#authentication_request_extra_params}.
 
 ---
 
@@ -5598,7 +6605,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#on_unauthenticated_request LbListener#on_unauthenticated_request}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#on_unauthenticated_request LbListener#on_unauthenticated_request}.
 
 ---
 
@@ -5606,7 +6613,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#scope LbListener#scope}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#scope LbListener#scope}.
 
 ---
 
@@ -5614,7 +6621,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#session_cookie_name LbListener#session_cookie_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#session_cookie_name LbListener#session_cookie_name}.
 
 ---
 
@@ -5622,7 +6629,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#session_timeout LbListener#session_timeout}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#session_timeout LbListener#session_timeout}.
 
 ---
 
@@ -5648,7 +6655,7 @@ def put_authenticate_oidc(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#authorization_endpoint LbListener#authorization_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#authorization_endpoint LbListener#authorization_endpoint}.
 
 ---
 
@@ -5656,7 +6663,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#client_id LbListener#client_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#client_id LbListener#client_id}.
 
 ---
 
@@ -5664,7 +6671,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#client_secret LbListener#client_secret}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#client_secret LbListener#client_secret}.
 
 ---
 
@@ -5672,7 +6679,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#issuer LbListener#issuer}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#issuer LbListener#issuer}.
 
 ---
 
@@ -5680,7 +6687,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#token_endpoint LbListener#token_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#token_endpoint LbListener#token_endpoint}.
 
 ---
 
@@ -5688,7 +6695,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#user_info_endpoint LbListener#user_info_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#user_info_endpoint LbListener#user_info_endpoint}.
 
 ---
 
@@ -5696,7 +6703,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#authentication_request_extra_params LbListener#authentication_request_extra_params}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#authentication_request_extra_params LbListener#authentication_request_extra_params}.
 
 ---
 
@@ -5704,7 +6711,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#on_unauthenticated_request LbListener#on_unauthenticated_request}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#on_unauthenticated_request LbListener#on_unauthenticated_request}.
 
 ---
 
@@ -5712,7 +6719,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#scope LbListener#scope}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#scope LbListener#scope}.
 
 ---
 
@@ -5720,7 +6727,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#session_cookie_name LbListener#session_cookie_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#session_cookie_name LbListener#session_cookie_name}.
 
 ---
 
@@ -5728,7 +6735,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#session_timeout LbListener#session_timeout}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#session_timeout LbListener#session_timeout}.
 
 ---
 
@@ -5746,7 +6753,7 @@ def put_fixed_response(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#content_type LbListener#content_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#content_type LbListener#content_type}.
 
 ---
 
@@ -5754,7 +6761,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#message_body LbListener#message_body}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#message_body LbListener#message_body}.
 
 ---
 
@@ -5762,7 +6769,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#status_code LbListener#status_code}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#status_code LbListener#status_code}.
 
 ---
 
@@ -5781,7 +6788,7 @@ def put_forward(
 
 target_group block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#target_group LbListener#target_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#target_group LbListener#target_group}
 
 ---
 
@@ -5791,7 +6798,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 stickiness block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#stickiness LbListener#stickiness}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#stickiness LbListener#stickiness}
 
 ---
 
@@ -5812,7 +6819,7 @@ def put_redirect(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#status_code LbListener#status_code}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#status_code LbListener#status_code}.
 
 ---
 
@@ -5820,7 +6827,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#host LbListener#host}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#host LbListener#host}.
 
 ---
 
@@ -5828,7 +6835,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#path LbListener#path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#path LbListener#path}.
 
 ---
 
@@ -5836,7 +6843,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#port LbListener#port}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#port LbListener#port}.
 
 ---
 
@@ -5844,7 +6851,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#protocol LbListener#protocol}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#protocol LbListener#protocol}.
 
 ---
 
@@ -5852,7 +6859,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener#query LbListener#query}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener#query LbListener#query}.
 
 ---
 

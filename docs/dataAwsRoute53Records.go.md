@@ -4,12 +4,12 @@
 
 ### DataAwsRoute53Records <a name="DataAwsRoute53Records" id="@cdktf/provider-aws.dataAwsRoute53Records.DataAwsRoute53Records"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/data-sources/route53_records aws_route53_records}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/data-sources/route53_records aws_route53_records}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsRoute53Records.DataAwsRoute53Records.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsroute53records"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsroute53records"
 
 dataawsroute53records.NewDataAwsRoute53Records(scope Construct, id *string, config DataAwsRoute53RecordsConfig) DataAwsRoute53Records
 ```
@@ -283,7 +283,7 @@ func ResetNameRegex()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsRoute53Records.DataAwsRoute53Records.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsroute53records"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsroute53records"
 
 dataawsroute53records.DataAwsRoute53Records_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsRoute53Records.DataAwsRoute53Records.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsroute53records"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsroute53records"
 
 dataawsroute53records.DataAwsRoute53Records_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ dataawsroute53records.DataAwsRoute53Records_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsRoute53Records.DataAwsRoute53Records.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsroute53records"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsroute53records"
 
 dataawsroute53records.DataAwsRoute53Records_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ dataawsroute53records.DataAwsRoute53Records_IsTerraformDataSource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsRoute53Records.DataAwsRoute53Records.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsroute53records"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsroute53records"
 
 dataawsroute53records.DataAwsRoute53Records_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -372,7 +372,7 @@ The construct id used in the generated config for the DataAwsRoute53Records to i
 
 The id of the existing DataAwsRoute53Records that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/data-sources/route53_records#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/data-sources/route53_records#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -605,7 +605,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsRoute53Records.DataAwsRoute53RecordsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsroute53records"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsroute53records"
 
 &dataawsroute53records.DataAwsRoute53RecordsConfig {
 	Connection: interface{},
@@ -631,8 +631,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsroute53records"
 | <code><a href="#@cdktf/provider-aws.dataAwsRoute53Records.DataAwsRoute53RecordsConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsRoute53Records.DataAwsRoute53RecordsConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsRoute53Records.DataAwsRoute53RecordsConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsRoute53Records.DataAwsRoute53RecordsConfig.property.zoneId">ZoneId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/data-sources/route53_records#zone_id DataAwsRoute53Records#zone_id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsRoute53Records.DataAwsRoute53RecordsConfig.property.nameRegex">NameRegex</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/data-sources/route53_records#name_regex DataAwsRoute53Records#name_regex}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsRoute53Records.DataAwsRoute53RecordsConfig.property.zoneId">ZoneId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/data-sources/route53_records#zone_id DataAwsRoute53Records#zone_id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsRoute53Records.DataAwsRoute53RecordsConfig.property.nameRegex">NameRegex</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/data-sources/route53_records#name_regex DataAwsRoute53Records#name_regex}. |
 
 ---
 
@@ -714,7 +714,7 @@ ZoneId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/data-sources/route53_records#zone_id DataAwsRoute53Records#zone_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/data-sources/route53_records#zone_id DataAwsRoute53Records#zone_id}.
 
 ---
 
@@ -726,7 +726,7 @@ NameRegex *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/data-sources/route53_records#name_regex DataAwsRoute53Records#name_regex}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/data-sources/route53_records#name_regex DataAwsRoute53Records#name_regex}.
 
 ---
 
@@ -735,7 +735,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsRoute53Records.DataAwsRoute53RecordsResourceRecordSets.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsroute53records"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsroute53records"
 
 &dataawsroute53records.DataAwsRoute53RecordsResourceRecordSets {
 
@@ -748,7 +748,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsroute53records"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsRoute53Records.DataAwsRoute53RecordsResourceRecordSetsAliasTarget.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsroute53records"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsroute53records"
 
 &dataawsroute53records.DataAwsRoute53RecordsResourceRecordSetsAliasTarget {
 
@@ -761,7 +761,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsroute53records"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsRoute53Records.DataAwsRoute53RecordsResourceRecordSetsCidrRoutingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsroute53records"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsroute53records"
 
 &dataawsroute53records.DataAwsRoute53RecordsResourceRecordSetsCidrRoutingConfig {
 
@@ -774,7 +774,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsroute53records"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsRoute53Records.DataAwsRoute53RecordsResourceRecordSetsGeolocation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsroute53records"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsroute53records"
 
 &dataawsroute53records.DataAwsRoute53RecordsResourceRecordSetsGeolocation {
 
@@ -787,7 +787,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsroute53records"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsRoute53Records.DataAwsRoute53RecordsResourceRecordSetsGeoproximityLocation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsroute53records"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsroute53records"
 
 &dataawsroute53records.DataAwsRoute53RecordsResourceRecordSetsGeoproximityLocation {
 
@@ -800,7 +800,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsroute53records"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsRoute53Records.DataAwsRoute53RecordsResourceRecordSetsGeoproximityLocationCoordinates.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsroute53records"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsroute53records"
 
 &dataawsroute53records.DataAwsRoute53RecordsResourceRecordSetsGeoproximityLocationCoordinates {
 
@@ -813,7 +813,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsroute53records"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsRoute53Records.DataAwsRoute53RecordsResourceRecordSetsResourceRecords.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsroute53records"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsroute53records"
 
 &dataawsroute53records.DataAwsRoute53RecordsResourceRecordSetsResourceRecords {
 
@@ -828,7 +828,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsroute53records"
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsRoute53Records.DataAwsRoute53RecordsResourceRecordSetsAliasTargetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsroute53records"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsroute53records"
 
 dataawsroute53records.NewDataAwsRoute53RecordsResourceRecordSetsAliasTargetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAwsRoute53RecordsResourceRecordSetsAliasTargetOutputReference
 ```
@@ -1110,7 +1110,7 @@ func InternalValue() DataAwsRoute53RecordsResourceRecordSetsAliasTarget
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsRoute53Records.DataAwsRoute53RecordsResourceRecordSetsCidrRoutingConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsroute53records"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsroute53records"
 
 dataawsroute53records.NewDataAwsRoute53RecordsResourceRecordSetsCidrRoutingConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAwsRoute53RecordsResourceRecordSetsCidrRoutingConfigOutputReference
 ```
@@ -1381,7 +1381,7 @@ func InternalValue() DataAwsRoute53RecordsResourceRecordSetsCidrRoutingConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsRoute53Records.DataAwsRoute53RecordsResourceRecordSetsGeolocationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsroute53records"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsroute53records"
 
 dataawsroute53records.NewDataAwsRoute53RecordsResourceRecordSetsGeolocationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAwsRoute53RecordsResourceRecordSetsGeolocationOutputReference
 ```
@@ -1663,7 +1663,7 @@ func InternalValue() DataAwsRoute53RecordsResourceRecordSetsGeolocation
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsRoute53Records.DataAwsRoute53RecordsResourceRecordSetsGeoproximityLocationCoordinatesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsroute53records"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsroute53records"
 
 dataawsroute53records.NewDataAwsRoute53RecordsResourceRecordSetsGeoproximityLocationCoordinatesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAwsRoute53RecordsResourceRecordSetsGeoproximityLocationCoordinatesOutputReference
 ```
@@ -1934,7 +1934,7 @@ func InternalValue() DataAwsRoute53RecordsResourceRecordSetsGeoproximityLocation
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsRoute53Records.DataAwsRoute53RecordsResourceRecordSetsGeoproximityLocationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsroute53records"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsroute53records"
 
 dataawsroute53records.NewDataAwsRoute53RecordsResourceRecordSetsGeoproximityLocationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAwsRoute53RecordsResourceRecordSetsGeoproximityLocationOutputReference
 ```
@@ -2227,7 +2227,7 @@ func InternalValue() DataAwsRoute53RecordsResourceRecordSetsGeoproximityLocation
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsRoute53Records.DataAwsRoute53RecordsResourceRecordSetsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsroute53records"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsroute53records"
 
 dataawsroute53records.NewDataAwsRoute53RecordsResourceRecordSetsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsRoute53RecordsResourceRecordSetsList
 ```
@@ -2376,7 +2376,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsRoute53Records.DataAwsRoute53RecordsResourceRecordSetsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsroute53records"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsroute53records"
 
 dataawsroute53records.NewDataAwsRoute53RecordsResourceRecordSetsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsRoute53RecordsResourceRecordSetsOutputReference
 ```
@@ -2808,7 +2808,7 @@ func InternalValue() DataAwsRoute53RecordsResourceRecordSets
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsRoute53Records.DataAwsRoute53RecordsResourceRecordSetsResourceRecordsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsroute53records"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsroute53records"
 
 dataawsroute53records.NewDataAwsRoute53RecordsResourceRecordSetsResourceRecordsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsRoute53RecordsResourceRecordSetsResourceRecordsList
 ```
@@ -2957,7 +2957,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsRoute53Records.DataAwsRoute53RecordsResourceRecordSetsResourceRecordsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsroute53records"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsroute53records"
 
 dataawsroute53records.NewDataAwsRoute53RecordsResourceRecordSetsResourceRecordsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsRoute53RecordsResourceRecordSetsResourceRecordsOutputReference
 ```

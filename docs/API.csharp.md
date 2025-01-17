@@ -1465,6 +1465,7 @@ The following submodules are available:
 - [mainRouteTableAssociation](./mainRouteTableAssociation.csharp.md)
 - [mediaConvertQueue](./mediaConvertQueue.csharp.md)
 - [mediaPackageChannel](./mediaPackageChannel.csharp.md)
+- [mediaPackagev2ChannelGroup](./mediaPackagev2ChannelGroup.csharp.md)
 - [mediaStoreContainer](./mediaStoreContainer.csharp.md)
 - [mediaStoreContainerPolicy](./mediaStoreContainerPolicy.csharp.md)
 - [medialiveChannel](./medialiveChannel.csharp.md)

@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/s3control_multi_region_access_point_policy
+// https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/s3control_multi_region_access_point_policy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,11 +8,11 @@ import * as cdktf from 'cdktf';
 
 export interface S3ControlMultiRegionAccessPointPolicyConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/s3control_multi_region_access_point_policy#account_id S3ControlMultiRegionAccessPointPolicy#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/s3control_multi_region_access_point_policy#account_id S3ControlMultiRegionAccessPointPolicy#account_id}
   */
   readonly accountId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/s3control_multi_region_access_point_policy#id S3ControlMultiRegionAccessPointPolicy#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/s3control_multi_region_access_point_policy#id S3ControlMultiRegionAccessPointPolicy#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -26,23 +21,23 @@ export interface S3ControlMultiRegionAccessPointPolicyConfig extends cdktf.Terra
   /**
   * details block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/s3control_multi_region_access_point_policy#details S3ControlMultiRegionAccessPointPolicy#details}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/s3control_multi_region_access_point_policy#details S3ControlMultiRegionAccessPointPolicy#details}
   */
   readonly details: S3ControlMultiRegionAccessPointPolicyDetails;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/s3control_multi_region_access_point_policy#timeouts S3ControlMultiRegionAccessPointPolicy#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/s3control_multi_region_access_point_policy#timeouts S3ControlMultiRegionAccessPointPolicy#timeouts}
   */
   readonly timeouts?: S3ControlMultiRegionAccessPointPolicyTimeouts;
 }
 export interface S3ControlMultiRegionAccessPointPolicyDetails {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/s3control_multi_region_access_point_policy#name S3ControlMultiRegionAccessPointPolicy#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/s3control_multi_region_access_point_policy#name S3ControlMultiRegionAccessPointPolicy#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/s3control_multi_region_access_point_policy#policy S3ControlMultiRegionAccessPointPolicy#policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/s3control_multi_region_access_point_policy#policy S3ControlMultiRegionAccessPointPolicy#policy}
   */
   readonly policy: string;
 }
@@ -149,11 +144,11 @@ export class S3ControlMultiRegionAccessPointPolicyDetailsOutputReference extends
 }
 export interface S3ControlMultiRegionAccessPointPolicyTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/s3control_multi_region_access_point_policy#create S3ControlMultiRegionAccessPointPolicy#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/s3control_multi_region_access_point_policy#create S3ControlMultiRegionAccessPointPolicy#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/s3control_multi_region_access_point_policy#update S3ControlMultiRegionAccessPointPolicy#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/s3control_multi_region_access_point_policy#update S3ControlMultiRegionAccessPointPolicy#update}
   */
   readonly update?: string;
 }
@@ -276,7 +271,7 @@ export class S3ControlMultiRegionAccessPointPolicyTimeoutsOutputReference extend
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/s3control_multi_region_access_point_policy aws_s3control_multi_region_access_point_policy}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/s3control_multi_region_access_point_policy aws_s3control_multi_region_access_point_policy}
 */
 export class S3ControlMultiRegionAccessPointPolicy extends cdktf.TerraformResource {
 
@@ -292,7 +287,7 @@ export class S3ControlMultiRegionAccessPointPolicy extends cdktf.TerraformResour
   * Generates CDKTF code for importing a S3ControlMultiRegionAccessPointPolicy resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the S3ControlMultiRegionAccessPointPolicy to import
-  * @param importFromId The id of the existing S3ControlMultiRegionAccessPointPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/s3control_multi_region_access_point_policy#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing S3ControlMultiRegionAccessPointPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/s3control_multi_region_access_point_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the S3ControlMultiRegionAccessPointPolicy to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -304,7 +299,7 @@ export class S3ControlMultiRegionAccessPointPolicy extends cdktf.TerraformResour
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/s3control_multi_region_access_point_policy aws_s3control_multi_region_access_point_policy} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/s3control_multi_region_access_point_policy aws_s3control_multi_region_access_point_policy} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -315,7 +310,7 @@ export class S3ControlMultiRegionAccessPointPolicy extends cdktf.TerraformResour
       terraformResourceType: 'aws_s3control_multi_region_access_point_policy',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.83.1',
+        providerVersion: '5.84.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

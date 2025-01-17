@@ -1465,6 +1465,7 @@ The following submodules are available:
 - [mainRouteTableAssociation](./mainRouteTableAssociation.python.md)
 - [mediaConvertQueue](./mediaConvertQueue.python.md)
 - [mediaPackageChannel](./mediaPackageChannel.python.md)
+- [mediaPackagev2ChannelGroup](./mediaPackagev2ChannelGroup.python.md)
 - [mediaStoreContainer](./mediaStoreContainer.python.md)
 - [mediaStoreContainerPolicy](./mediaStoreContainerPolicy.python.md)
 - [medialiveChannel](./medialiveChannel.python.md)

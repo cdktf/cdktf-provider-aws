@@ -4,7 +4,7 @@
 
 ### DataAwsLbs <a name="DataAwsLbs" id="@cdktf/provider-aws.dataAwsLbs.DataAwsLbs"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/data-sources/lbs aws_lbs}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/data-sources/lbs aws_lbs}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsLbs.DataAwsLbs.Initializer"></a>
 
@@ -379,7 +379,7 @@ The construct id used in the generated config for the DataAwsLbs to import.
 
 The id of the existing DataAwsLbs that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/data-sources/lbs#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/data-sources/lbs#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -638,8 +638,8 @@ new DataAwsLbsConfig {
 | <code><a href="#@cdktf/provider-aws.dataAwsLbs.DataAwsLbsConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsLbs.DataAwsLbsConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsLbs.DataAwsLbsConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsLbs.DataAwsLbsConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/data-sources/lbs#id DataAwsLbs#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsLbs.DataAwsLbsConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/data-sources/lbs#tags DataAwsLbs#tags}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsLbs.DataAwsLbsConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/data-sources/lbs#id DataAwsLbs#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsLbs.DataAwsLbsConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/data-sources/lbs#tags DataAwsLbs#tags}. |
 
 ---
 
@@ -721,7 +721,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/data-sources/lbs#id DataAwsLbs#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/data-sources/lbs#id DataAwsLbs#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -736,7 +736,7 @@ public System.Collections.Generic.IDictionary<string, string> Tags { get; set; }
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/data-sources/lbs#tags DataAwsLbs#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/data-sources/lbs#tags DataAwsLbs#tags}.
 
 ---
 

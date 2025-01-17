@@ -4,12 +4,12 @@
 
 ### DataAwsElasticBeanstalkHostedZone <a name="DataAwsElasticBeanstalkHostedZone" id="@cdktf/provider-aws.dataAwsElasticBeanstalkHostedZone.DataAwsElasticBeanstalkHostedZone"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/data-sources/elastic_beanstalk_hosted_zone aws_elastic_beanstalk_hosted_zone}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/data-sources/elastic_beanstalk_hosted_zone aws_elastic_beanstalk_hosted_zone}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsElasticBeanstalkHostedZone.DataAwsElasticBeanstalkHostedZone.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawselasticbeanstalkhostedzone"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawselasticbeanstalkhostedzone"
 
 dataawselasticbeanstalkhostedzone.NewDataAwsElasticBeanstalkHostedZone(scope Construct, id *string, config DataAwsElasticBeanstalkHostedZoneConfig) DataAwsElasticBeanstalkHostedZone
 ```
@@ -290,7 +290,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsElasticBeanstalkHostedZone.DataAwsElasticBeanstalkHostedZone.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawselasticbeanstalkhostedzone"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawselasticbeanstalkhostedzone"
 
 dataawselasticbeanstalkhostedzone.DataAwsElasticBeanstalkHostedZone_IsConstruct(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsElasticBeanstalkHostedZone.DataAwsElasticBeanstalkHostedZone.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawselasticbeanstalkhostedzone"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawselasticbeanstalkhostedzone"
 
 dataawselasticbeanstalkhostedzone.DataAwsElasticBeanstalkHostedZone_IsTerraformElement(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ dataawselasticbeanstalkhostedzone.DataAwsElasticBeanstalkHostedZone_IsTerraformE
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsElasticBeanstalkHostedZone.DataAwsElasticBeanstalkHostedZone.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawselasticbeanstalkhostedzone"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawselasticbeanstalkhostedzone"
 
 dataawselasticbeanstalkhostedzone.DataAwsElasticBeanstalkHostedZone_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ dataawselasticbeanstalkhostedzone.DataAwsElasticBeanstalkHostedZone_IsTerraformD
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsElasticBeanstalkHostedZone.DataAwsElasticBeanstalkHostedZone.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawselasticbeanstalkhostedzone"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawselasticbeanstalkhostedzone"
 
 dataawselasticbeanstalkhostedzone.DataAwsElasticBeanstalkHostedZone_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -379,7 +379,7 @@ The construct id used in the generated config for the DataAwsElasticBeanstalkHos
 
 The id of the existing DataAwsElasticBeanstalkHostedZone that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/data-sources/elastic_beanstalk_hosted_zone#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/data-sources/elastic_beanstalk_hosted_zone#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -601,7 +601,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsElasticBeanstalkHostedZone.DataAwsElasticBeanstalkHostedZoneConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawselasticbeanstalkhostedzone"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawselasticbeanstalkhostedzone"
 
 &dataawselasticbeanstalkhostedzone.DataAwsElasticBeanstalkHostedZoneConfig {
 	Connection: interface{},
@@ -627,8 +627,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawselasticbeanstalkho
 | <code><a href="#@cdktf/provider-aws.dataAwsElasticBeanstalkHostedZone.DataAwsElasticBeanstalkHostedZoneConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsElasticBeanstalkHostedZone.DataAwsElasticBeanstalkHostedZoneConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsElasticBeanstalkHostedZone.DataAwsElasticBeanstalkHostedZoneConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsElasticBeanstalkHostedZone.DataAwsElasticBeanstalkHostedZoneConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/data-sources/elastic_beanstalk_hosted_zone#id DataAwsElasticBeanstalkHostedZone#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsElasticBeanstalkHostedZone.DataAwsElasticBeanstalkHostedZoneConfig.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/data-sources/elastic_beanstalk_hosted_zone#region DataAwsElasticBeanstalkHostedZone#region}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsElasticBeanstalkHostedZone.DataAwsElasticBeanstalkHostedZoneConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/data-sources/elastic_beanstalk_hosted_zone#id DataAwsElasticBeanstalkHostedZone#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsElasticBeanstalkHostedZone.DataAwsElasticBeanstalkHostedZoneConfig.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/data-sources/elastic_beanstalk_hosted_zone#region DataAwsElasticBeanstalkHostedZone#region}. |
 
 ---
 
@@ -710,7 +710,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/data-sources/elastic_beanstalk_hosted_zone#id DataAwsElasticBeanstalkHostedZone#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/data-sources/elastic_beanstalk_hosted_zone#id DataAwsElasticBeanstalkHostedZone#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -725,7 +725,7 @@ Region *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/data-sources/elastic_beanstalk_hosted_zone#region DataAwsElasticBeanstalkHostedZone#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/data-sources/elastic_beanstalk_hosted_zone#region DataAwsElasticBeanstalkHostedZone#region}.
 
 ---
 

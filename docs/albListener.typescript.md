@@ -4,7 +4,7 @@
 
 ### AlbListener <a name="AlbListener" id="@cdktf/provider-aws.albListener.AlbListener"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/alb_listener aws_alb_listener}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener aws_alb_listener}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.albListener.AlbListener.Initializer"></a>
 
@@ -82,6 +82,25 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.albListener.AlbListener.resetMutualAuthentication">resetMutualAuthentication</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.albListener.AlbListener.resetPort">resetPort</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.albListener.AlbListener.resetProtocol">resetProtocol</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListener.resetRoutingHttpRequestXAmznMtlsClientcertHeaderName">resetRoutingHttpRequestXAmznMtlsClientcertHeaderName</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListener.resetRoutingHttpRequestXAmznMtlsClientcertIssuerHeaderName">resetRoutingHttpRequestXAmznMtlsClientcertIssuerHeaderName</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListener.resetRoutingHttpRequestXAmznMtlsClientcertLeafHeaderName">resetRoutingHttpRequestXAmznMtlsClientcertLeafHeaderName</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListener.resetRoutingHttpRequestXAmznMtlsClientcertSerialNumberHeaderName">resetRoutingHttpRequestXAmznMtlsClientcertSerialNumberHeaderName</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListener.resetRoutingHttpRequestXAmznMtlsClientcertSubjectHeaderName">resetRoutingHttpRequestXAmznMtlsClientcertSubjectHeaderName</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListener.resetRoutingHttpRequestXAmznMtlsClientcertValidityHeaderName">resetRoutingHttpRequestXAmznMtlsClientcertValidityHeaderName</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListener.resetRoutingHttpRequestXAmznTlsCipherSuiteHeaderName">resetRoutingHttpRequestXAmznTlsCipherSuiteHeaderName</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListener.resetRoutingHttpRequestXAmznTlsVersionHeaderName">resetRoutingHttpRequestXAmznTlsVersionHeaderName</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListener.resetRoutingHttpResponseAccessControlAllowCredentialsHeaderValue">resetRoutingHttpResponseAccessControlAllowCredentialsHeaderValue</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListener.resetRoutingHttpResponseAccessControlAllowHeadersHeaderValue">resetRoutingHttpResponseAccessControlAllowHeadersHeaderValue</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListener.resetRoutingHttpResponseAccessControlAllowMethodsHeaderValue">resetRoutingHttpResponseAccessControlAllowMethodsHeaderValue</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListener.resetRoutingHttpResponseAccessControlAllowOriginHeaderValue">resetRoutingHttpResponseAccessControlAllowOriginHeaderValue</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListener.resetRoutingHttpResponseAccessControlExposeHeadersHeaderValue">resetRoutingHttpResponseAccessControlExposeHeadersHeaderValue</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListener.resetRoutingHttpResponseAccessControlMaxAgeHeaderValue">resetRoutingHttpResponseAccessControlMaxAgeHeaderValue</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListener.resetRoutingHttpResponseContentSecurityPolicyHeaderValue">resetRoutingHttpResponseContentSecurityPolicyHeaderValue</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListener.resetRoutingHttpResponseServerEnabled">resetRoutingHttpResponseServerEnabled</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListener.resetRoutingHttpResponseStrictTransportSecurityHeaderValue">resetRoutingHttpResponseStrictTransportSecurityHeaderValue</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListener.resetRoutingHttpResponseXContentTypeOptionsHeaderValue">resetRoutingHttpResponseXContentTypeOptionsHeaderValue</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListener.resetRoutingHttpResponseXFrameOptionsHeaderValue">resetRoutingHttpResponseXFrameOptionsHeaderValue</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.albListener.AlbListener.resetSslPolicy">resetSslPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.albListener.AlbListener.resetTags">resetTags</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.albListener.AlbListener.resetTagsAll">resetTagsAll</a></code> | *No description.* |
@@ -450,6 +469,120 @@ public resetPort(): void
 public resetProtocol(): void
 ```
 
+##### `resetRoutingHttpRequestXAmznMtlsClientcertHeaderName` <a name="resetRoutingHttpRequestXAmznMtlsClientcertHeaderName" id="@cdktf/provider-aws.albListener.AlbListener.resetRoutingHttpRequestXAmznMtlsClientcertHeaderName"></a>
+
+```typescript
+public resetRoutingHttpRequestXAmznMtlsClientcertHeaderName(): void
+```
+
+##### `resetRoutingHttpRequestXAmznMtlsClientcertIssuerHeaderName` <a name="resetRoutingHttpRequestXAmznMtlsClientcertIssuerHeaderName" id="@cdktf/provider-aws.albListener.AlbListener.resetRoutingHttpRequestXAmznMtlsClientcertIssuerHeaderName"></a>
+
+```typescript
+public resetRoutingHttpRequestXAmznMtlsClientcertIssuerHeaderName(): void
+```
+
+##### `resetRoutingHttpRequestXAmznMtlsClientcertLeafHeaderName` <a name="resetRoutingHttpRequestXAmznMtlsClientcertLeafHeaderName" id="@cdktf/provider-aws.albListener.AlbListener.resetRoutingHttpRequestXAmznMtlsClientcertLeafHeaderName"></a>
+
+```typescript
+public resetRoutingHttpRequestXAmznMtlsClientcertLeafHeaderName(): void
+```
+
+##### `resetRoutingHttpRequestXAmznMtlsClientcertSerialNumberHeaderName` <a name="resetRoutingHttpRequestXAmznMtlsClientcertSerialNumberHeaderName" id="@cdktf/provider-aws.albListener.AlbListener.resetRoutingHttpRequestXAmznMtlsClientcertSerialNumberHeaderName"></a>
+
+```typescript
+public resetRoutingHttpRequestXAmznMtlsClientcertSerialNumberHeaderName(): void
+```
+
+##### `resetRoutingHttpRequestXAmznMtlsClientcertSubjectHeaderName` <a name="resetRoutingHttpRequestXAmznMtlsClientcertSubjectHeaderName" id="@cdktf/provider-aws.albListener.AlbListener.resetRoutingHttpRequestXAmznMtlsClientcertSubjectHeaderName"></a>
+
+```typescript
+public resetRoutingHttpRequestXAmznMtlsClientcertSubjectHeaderName(): void
+```
+
+##### `resetRoutingHttpRequestXAmznMtlsClientcertValidityHeaderName` <a name="resetRoutingHttpRequestXAmznMtlsClientcertValidityHeaderName" id="@cdktf/provider-aws.albListener.AlbListener.resetRoutingHttpRequestXAmznMtlsClientcertValidityHeaderName"></a>
+
+```typescript
+public resetRoutingHttpRequestXAmznMtlsClientcertValidityHeaderName(): void
+```
+
+##### `resetRoutingHttpRequestXAmznTlsCipherSuiteHeaderName` <a name="resetRoutingHttpRequestXAmznTlsCipherSuiteHeaderName" id="@cdktf/provider-aws.albListener.AlbListener.resetRoutingHttpRequestXAmznTlsCipherSuiteHeaderName"></a>
+
+```typescript
+public resetRoutingHttpRequestXAmznTlsCipherSuiteHeaderName(): void
+```
+
+##### `resetRoutingHttpRequestXAmznTlsVersionHeaderName` <a name="resetRoutingHttpRequestXAmznTlsVersionHeaderName" id="@cdktf/provider-aws.albListener.AlbListener.resetRoutingHttpRequestXAmznTlsVersionHeaderName"></a>
+
+```typescript
+public resetRoutingHttpRequestXAmznTlsVersionHeaderName(): void
+```
+
+##### `resetRoutingHttpResponseAccessControlAllowCredentialsHeaderValue` <a name="resetRoutingHttpResponseAccessControlAllowCredentialsHeaderValue" id="@cdktf/provider-aws.albListener.AlbListener.resetRoutingHttpResponseAccessControlAllowCredentialsHeaderValue"></a>
+
+```typescript
+public resetRoutingHttpResponseAccessControlAllowCredentialsHeaderValue(): void
+```
+
+##### `resetRoutingHttpResponseAccessControlAllowHeadersHeaderValue` <a name="resetRoutingHttpResponseAccessControlAllowHeadersHeaderValue" id="@cdktf/provider-aws.albListener.AlbListener.resetRoutingHttpResponseAccessControlAllowHeadersHeaderValue"></a>
+
+```typescript
+public resetRoutingHttpResponseAccessControlAllowHeadersHeaderValue(): void
+```
+
+##### `resetRoutingHttpResponseAccessControlAllowMethodsHeaderValue` <a name="resetRoutingHttpResponseAccessControlAllowMethodsHeaderValue" id="@cdktf/provider-aws.albListener.AlbListener.resetRoutingHttpResponseAccessControlAllowMethodsHeaderValue"></a>
+
+```typescript
+public resetRoutingHttpResponseAccessControlAllowMethodsHeaderValue(): void
+```
+
+##### `resetRoutingHttpResponseAccessControlAllowOriginHeaderValue` <a name="resetRoutingHttpResponseAccessControlAllowOriginHeaderValue" id="@cdktf/provider-aws.albListener.AlbListener.resetRoutingHttpResponseAccessControlAllowOriginHeaderValue"></a>
+
+```typescript
+public resetRoutingHttpResponseAccessControlAllowOriginHeaderValue(): void
+```
+
+##### `resetRoutingHttpResponseAccessControlExposeHeadersHeaderValue` <a name="resetRoutingHttpResponseAccessControlExposeHeadersHeaderValue" id="@cdktf/provider-aws.albListener.AlbListener.resetRoutingHttpResponseAccessControlExposeHeadersHeaderValue"></a>
+
+```typescript
+public resetRoutingHttpResponseAccessControlExposeHeadersHeaderValue(): void
+```
+
+##### `resetRoutingHttpResponseAccessControlMaxAgeHeaderValue` <a name="resetRoutingHttpResponseAccessControlMaxAgeHeaderValue" id="@cdktf/provider-aws.albListener.AlbListener.resetRoutingHttpResponseAccessControlMaxAgeHeaderValue"></a>
+
+```typescript
+public resetRoutingHttpResponseAccessControlMaxAgeHeaderValue(): void
+```
+
+##### `resetRoutingHttpResponseContentSecurityPolicyHeaderValue` <a name="resetRoutingHttpResponseContentSecurityPolicyHeaderValue" id="@cdktf/provider-aws.albListener.AlbListener.resetRoutingHttpResponseContentSecurityPolicyHeaderValue"></a>
+
+```typescript
+public resetRoutingHttpResponseContentSecurityPolicyHeaderValue(): void
+```
+
+##### `resetRoutingHttpResponseServerEnabled` <a name="resetRoutingHttpResponseServerEnabled" id="@cdktf/provider-aws.albListener.AlbListener.resetRoutingHttpResponseServerEnabled"></a>
+
+```typescript
+public resetRoutingHttpResponseServerEnabled(): void
+```
+
+##### `resetRoutingHttpResponseStrictTransportSecurityHeaderValue` <a name="resetRoutingHttpResponseStrictTransportSecurityHeaderValue" id="@cdktf/provider-aws.albListener.AlbListener.resetRoutingHttpResponseStrictTransportSecurityHeaderValue"></a>
+
+```typescript
+public resetRoutingHttpResponseStrictTransportSecurityHeaderValue(): void
+```
+
+##### `resetRoutingHttpResponseXContentTypeOptionsHeaderValue` <a name="resetRoutingHttpResponseXContentTypeOptionsHeaderValue" id="@cdktf/provider-aws.albListener.AlbListener.resetRoutingHttpResponseXContentTypeOptionsHeaderValue"></a>
+
+```typescript
+public resetRoutingHttpResponseXContentTypeOptionsHeaderValue(): void
+```
+
+##### `resetRoutingHttpResponseXFrameOptionsHeaderValue` <a name="resetRoutingHttpResponseXFrameOptionsHeaderValue" id="@cdktf/provider-aws.albListener.AlbListener.resetRoutingHttpResponseXFrameOptionsHeaderValue"></a>
+
+```typescript
+public resetRoutingHttpResponseXFrameOptionsHeaderValue(): void
+```
+
 ##### `resetSslPolicy` <a name="resetSslPolicy" id="@cdktf/provider-aws.albListener.AlbListener.resetSslPolicy"></a>
 
 ```typescript
@@ -583,7 +716,7 @@ The construct id used in the generated config for the AlbListener to import.
 
 The id of the existing AlbListener that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/alb_listener#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -625,6 +758,25 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1
 | <code><a href="#@cdktf/provider-aws.albListener.AlbListener.property.mutualAuthenticationInput">mutualAuthenticationInput</a></code> | <code><a href="#@cdktf/provider-aws.albListener.AlbListenerMutualAuthentication">AlbListenerMutualAuthentication</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.albListener.AlbListener.property.portInput">portInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.albListener.AlbListener.property.protocolInput">protocolInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListener.property.routingHttpRequestXAmznMtlsClientcertHeaderNameInput">routingHttpRequestXAmznMtlsClientcertHeaderNameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListener.property.routingHttpRequestXAmznMtlsClientcertIssuerHeaderNameInput">routingHttpRequestXAmznMtlsClientcertIssuerHeaderNameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListener.property.routingHttpRequestXAmznMtlsClientcertLeafHeaderNameInput">routingHttpRequestXAmznMtlsClientcertLeafHeaderNameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListener.property.routingHttpRequestXAmznMtlsClientcertSerialNumberHeaderNameInput">routingHttpRequestXAmznMtlsClientcertSerialNumberHeaderNameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListener.property.routingHttpRequestXAmznMtlsClientcertSubjectHeaderNameInput">routingHttpRequestXAmznMtlsClientcertSubjectHeaderNameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListener.property.routingHttpRequestXAmznMtlsClientcertValidityHeaderNameInput">routingHttpRequestXAmznMtlsClientcertValidityHeaderNameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListener.property.routingHttpRequestXAmznTlsCipherSuiteHeaderNameInput">routingHttpRequestXAmznTlsCipherSuiteHeaderNameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListener.property.routingHttpRequestXAmznTlsVersionHeaderNameInput">routingHttpRequestXAmznTlsVersionHeaderNameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListener.property.routingHttpResponseAccessControlAllowCredentialsHeaderValueInput">routingHttpResponseAccessControlAllowCredentialsHeaderValueInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListener.property.routingHttpResponseAccessControlAllowHeadersHeaderValueInput">routingHttpResponseAccessControlAllowHeadersHeaderValueInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListener.property.routingHttpResponseAccessControlAllowMethodsHeaderValueInput">routingHttpResponseAccessControlAllowMethodsHeaderValueInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListener.property.routingHttpResponseAccessControlAllowOriginHeaderValueInput">routingHttpResponseAccessControlAllowOriginHeaderValueInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListener.property.routingHttpResponseAccessControlExposeHeadersHeaderValueInput">routingHttpResponseAccessControlExposeHeadersHeaderValueInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListener.property.routingHttpResponseAccessControlMaxAgeHeaderValueInput">routingHttpResponseAccessControlMaxAgeHeaderValueInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListener.property.routingHttpResponseContentSecurityPolicyHeaderValueInput">routingHttpResponseContentSecurityPolicyHeaderValueInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListener.property.routingHttpResponseServerEnabledInput">routingHttpResponseServerEnabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListener.property.routingHttpResponseStrictTransportSecurityHeaderValueInput">routingHttpResponseStrictTransportSecurityHeaderValueInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListener.property.routingHttpResponseXContentTypeOptionsHeaderValueInput">routingHttpResponseXContentTypeOptionsHeaderValueInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListener.property.routingHttpResponseXFrameOptionsHeaderValueInput">routingHttpResponseXFrameOptionsHeaderValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.albListener.AlbListener.property.sslPolicyInput">sslPolicyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.albListener.AlbListener.property.tagsAllInput">tagsAllInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.albListener.AlbListener.property.tagsInput">tagsInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
@@ -636,6 +788,25 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1
 | <code><a href="#@cdktf/provider-aws.albListener.AlbListener.property.loadBalancerArn">loadBalancerArn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.albListener.AlbListener.property.port">port</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.albListener.AlbListener.property.protocol">protocol</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListener.property.routingHttpRequestXAmznMtlsClientcertHeaderName">routingHttpRequestXAmznMtlsClientcertHeaderName</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListener.property.routingHttpRequestXAmznMtlsClientcertIssuerHeaderName">routingHttpRequestXAmznMtlsClientcertIssuerHeaderName</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListener.property.routingHttpRequestXAmznMtlsClientcertLeafHeaderName">routingHttpRequestXAmznMtlsClientcertLeafHeaderName</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListener.property.routingHttpRequestXAmznMtlsClientcertSerialNumberHeaderName">routingHttpRequestXAmznMtlsClientcertSerialNumberHeaderName</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListener.property.routingHttpRequestXAmznMtlsClientcertSubjectHeaderName">routingHttpRequestXAmznMtlsClientcertSubjectHeaderName</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListener.property.routingHttpRequestXAmznMtlsClientcertValidityHeaderName">routingHttpRequestXAmznMtlsClientcertValidityHeaderName</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListener.property.routingHttpRequestXAmznTlsCipherSuiteHeaderName">routingHttpRequestXAmznTlsCipherSuiteHeaderName</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListener.property.routingHttpRequestXAmznTlsVersionHeaderName">routingHttpRequestXAmznTlsVersionHeaderName</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListener.property.routingHttpResponseAccessControlAllowCredentialsHeaderValue">routingHttpResponseAccessControlAllowCredentialsHeaderValue</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListener.property.routingHttpResponseAccessControlAllowHeadersHeaderValue">routingHttpResponseAccessControlAllowHeadersHeaderValue</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListener.property.routingHttpResponseAccessControlAllowMethodsHeaderValue">routingHttpResponseAccessControlAllowMethodsHeaderValue</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListener.property.routingHttpResponseAccessControlAllowOriginHeaderValue">routingHttpResponseAccessControlAllowOriginHeaderValue</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListener.property.routingHttpResponseAccessControlExposeHeadersHeaderValue">routingHttpResponseAccessControlExposeHeadersHeaderValue</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListener.property.routingHttpResponseAccessControlMaxAgeHeaderValue">routingHttpResponseAccessControlMaxAgeHeaderValue</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListener.property.routingHttpResponseContentSecurityPolicyHeaderValue">routingHttpResponseContentSecurityPolicyHeaderValue</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListener.property.routingHttpResponseServerEnabled">routingHttpResponseServerEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListener.property.routingHttpResponseStrictTransportSecurityHeaderValue">routingHttpResponseStrictTransportSecurityHeaderValue</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListener.property.routingHttpResponseXContentTypeOptionsHeaderValue">routingHttpResponseXContentTypeOptionsHeaderValue</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListener.property.routingHttpResponseXFrameOptionsHeaderValue">routingHttpResponseXFrameOptionsHeaderValue</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.albListener.AlbListener.property.sslPolicy">sslPolicy</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.albListener.AlbListener.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.albListener.AlbListener.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
@@ -905,6 +1076,196 @@ public readonly protocolInput: string;
 
 ---
 
+##### `routingHttpRequestXAmznMtlsClientcertHeaderNameInput`<sup>Optional</sup> <a name="routingHttpRequestXAmznMtlsClientcertHeaderNameInput" id="@cdktf/provider-aws.albListener.AlbListener.property.routingHttpRequestXAmznMtlsClientcertHeaderNameInput"></a>
+
+```typescript
+public readonly routingHttpRequestXAmznMtlsClientcertHeaderNameInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `routingHttpRequestXAmznMtlsClientcertIssuerHeaderNameInput`<sup>Optional</sup> <a name="routingHttpRequestXAmznMtlsClientcertIssuerHeaderNameInput" id="@cdktf/provider-aws.albListener.AlbListener.property.routingHttpRequestXAmznMtlsClientcertIssuerHeaderNameInput"></a>
+
+```typescript
+public readonly routingHttpRequestXAmznMtlsClientcertIssuerHeaderNameInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `routingHttpRequestXAmznMtlsClientcertLeafHeaderNameInput`<sup>Optional</sup> <a name="routingHttpRequestXAmznMtlsClientcertLeafHeaderNameInput" id="@cdktf/provider-aws.albListener.AlbListener.property.routingHttpRequestXAmznMtlsClientcertLeafHeaderNameInput"></a>
+
+```typescript
+public readonly routingHttpRequestXAmznMtlsClientcertLeafHeaderNameInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `routingHttpRequestXAmznMtlsClientcertSerialNumberHeaderNameInput`<sup>Optional</sup> <a name="routingHttpRequestXAmznMtlsClientcertSerialNumberHeaderNameInput" id="@cdktf/provider-aws.albListener.AlbListener.property.routingHttpRequestXAmznMtlsClientcertSerialNumberHeaderNameInput"></a>
+
+```typescript
+public readonly routingHttpRequestXAmznMtlsClientcertSerialNumberHeaderNameInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `routingHttpRequestXAmznMtlsClientcertSubjectHeaderNameInput`<sup>Optional</sup> <a name="routingHttpRequestXAmznMtlsClientcertSubjectHeaderNameInput" id="@cdktf/provider-aws.albListener.AlbListener.property.routingHttpRequestXAmznMtlsClientcertSubjectHeaderNameInput"></a>
+
+```typescript
+public readonly routingHttpRequestXAmznMtlsClientcertSubjectHeaderNameInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `routingHttpRequestXAmznMtlsClientcertValidityHeaderNameInput`<sup>Optional</sup> <a name="routingHttpRequestXAmznMtlsClientcertValidityHeaderNameInput" id="@cdktf/provider-aws.albListener.AlbListener.property.routingHttpRequestXAmznMtlsClientcertValidityHeaderNameInput"></a>
+
+```typescript
+public readonly routingHttpRequestXAmznMtlsClientcertValidityHeaderNameInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `routingHttpRequestXAmznTlsCipherSuiteHeaderNameInput`<sup>Optional</sup> <a name="routingHttpRequestXAmznTlsCipherSuiteHeaderNameInput" id="@cdktf/provider-aws.albListener.AlbListener.property.routingHttpRequestXAmznTlsCipherSuiteHeaderNameInput"></a>
+
+```typescript
+public readonly routingHttpRequestXAmznTlsCipherSuiteHeaderNameInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `routingHttpRequestXAmznTlsVersionHeaderNameInput`<sup>Optional</sup> <a name="routingHttpRequestXAmznTlsVersionHeaderNameInput" id="@cdktf/provider-aws.albListener.AlbListener.property.routingHttpRequestXAmznTlsVersionHeaderNameInput"></a>
+
+```typescript
+public readonly routingHttpRequestXAmznTlsVersionHeaderNameInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `routingHttpResponseAccessControlAllowCredentialsHeaderValueInput`<sup>Optional</sup> <a name="routingHttpResponseAccessControlAllowCredentialsHeaderValueInput" id="@cdktf/provider-aws.albListener.AlbListener.property.routingHttpResponseAccessControlAllowCredentialsHeaderValueInput"></a>
+
+```typescript
+public readonly routingHttpResponseAccessControlAllowCredentialsHeaderValueInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `routingHttpResponseAccessControlAllowHeadersHeaderValueInput`<sup>Optional</sup> <a name="routingHttpResponseAccessControlAllowHeadersHeaderValueInput" id="@cdktf/provider-aws.albListener.AlbListener.property.routingHttpResponseAccessControlAllowHeadersHeaderValueInput"></a>
+
+```typescript
+public readonly routingHttpResponseAccessControlAllowHeadersHeaderValueInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `routingHttpResponseAccessControlAllowMethodsHeaderValueInput`<sup>Optional</sup> <a name="routingHttpResponseAccessControlAllowMethodsHeaderValueInput" id="@cdktf/provider-aws.albListener.AlbListener.property.routingHttpResponseAccessControlAllowMethodsHeaderValueInput"></a>
+
+```typescript
+public readonly routingHttpResponseAccessControlAllowMethodsHeaderValueInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `routingHttpResponseAccessControlAllowOriginHeaderValueInput`<sup>Optional</sup> <a name="routingHttpResponseAccessControlAllowOriginHeaderValueInput" id="@cdktf/provider-aws.albListener.AlbListener.property.routingHttpResponseAccessControlAllowOriginHeaderValueInput"></a>
+
+```typescript
+public readonly routingHttpResponseAccessControlAllowOriginHeaderValueInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `routingHttpResponseAccessControlExposeHeadersHeaderValueInput`<sup>Optional</sup> <a name="routingHttpResponseAccessControlExposeHeadersHeaderValueInput" id="@cdktf/provider-aws.albListener.AlbListener.property.routingHttpResponseAccessControlExposeHeadersHeaderValueInput"></a>
+
+```typescript
+public readonly routingHttpResponseAccessControlExposeHeadersHeaderValueInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `routingHttpResponseAccessControlMaxAgeHeaderValueInput`<sup>Optional</sup> <a name="routingHttpResponseAccessControlMaxAgeHeaderValueInput" id="@cdktf/provider-aws.albListener.AlbListener.property.routingHttpResponseAccessControlMaxAgeHeaderValueInput"></a>
+
+```typescript
+public readonly routingHttpResponseAccessControlMaxAgeHeaderValueInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `routingHttpResponseContentSecurityPolicyHeaderValueInput`<sup>Optional</sup> <a name="routingHttpResponseContentSecurityPolicyHeaderValueInput" id="@cdktf/provider-aws.albListener.AlbListener.property.routingHttpResponseContentSecurityPolicyHeaderValueInput"></a>
+
+```typescript
+public readonly routingHttpResponseContentSecurityPolicyHeaderValueInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `routingHttpResponseServerEnabledInput`<sup>Optional</sup> <a name="routingHttpResponseServerEnabledInput" id="@cdktf/provider-aws.albListener.AlbListener.property.routingHttpResponseServerEnabledInput"></a>
+
+```typescript
+public readonly routingHttpResponseServerEnabledInput: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
+##### `routingHttpResponseStrictTransportSecurityHeaderValueInput`<sup>Optional</sup> <a name="routingHttpResponseStrictTransportSecurityHeaderValueInput" id="@cdktf/provider-aws.albListener.AlbListener.property.routingHttpResponseStrictTransportSecurityHeaderValueInput"></a>
+
+```typescript
+public readonly routingHttpResponseStrictTransportSecurityHeaderValueInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `routingHttpResponseXContentTypeOptionsHeaderValueInput`<sup>Optional</sup> <a name="routingHttpResponseXContentTypeOptionsHeaderValueInput" id="@cdktf/provider-aws.albListener.AlbListener.property.routingHttpResponseXContentTypeOptionsHeaderValueInput"></a>
+
+```typescript
+public readonly routingHttpResponseXContentTypeOptionsHeaderValueInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `routingHttpResponseXFrameOptionsHeaderValueInput`<sup>Optional</sup> <a name="routingHttpResponseXFrameOptionsHeaderValueInput" id="@cdktf/provider-aws.albListener.AlbListener.property.routingHttpResponseXFrameOptionsHeaderValueInput"></a>
+
+```typescript
+public readonly routingHttpResponseXFrameOptionsHeaderValueInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `sslPolicyInput`<sup>Optional</sup> <a name="sslPolicyInput" id="@cdktf/provider-aws.albListener.AlbListener.property.sslPolicyInput"></a>
 
 ```typescript
@@ -1015,6 +1376,196 @@ public readonly protocol: string;
 
 ---
 
+##### `routingHttpRequestXAmznMtlsClientcertHeaderName`<sup>Required</sup> <a name="routingHttpRequestXAmznMtlsClientcertHeaderName" id="@cdktf/provider-aws.albListener.AlbListener.property.routingHttpRequestXAmznMtlsClientcertHeaderName"></a>
+
+```typescript
+public readonly routingHttpRequestXAmznMtlsClientcertHeaderName: string;
+```
+
+- *Type:* string
+
+---
+
+##### `routingHttpRequestXAmznMtlsClientcertIssuerHeaderName`<sup>Required</sup> <a name="routingHttpRequestXAmznMtlsClientcertIssuerHeaderName" id="@cdktf/provider-aws.albListener.AlbListener.property.routingHttpRequestXAmznMtlsClientcertIssuerHeaderName"></a>
+
+```typescript
+public readonly routingHttpRequestXAmznMtlsClientcertIssuerHeaderName: string;
+```
+
+- *Type:* string
+
+---
+
+##### `routingHttpRequestXAmznMtlsClientcertLeafHeaderName`<sup>Required</sup> <a name="routingHttpRequestXAmznMtlsClientcertLeafHeaderName" id="@cdktf/provider-aws.albListener.AlbListener.property.routingHttpRequestXAmznMtlsClientcertLeafHeaderName"></a>
+
+```typescript
+public readonly routingHttpRequestXAmznMtlsClientcertLeafHeaderName: string;
+```
+
+- *Type:* string
+
+---
+
+##### `routingHttpRequestXAmznMtlsClientcertSerialNumberHeaderName`<sup>Required</sup> <a name="routingHttpRequestXAmznMtlsClientcertSerialNumberHeaderName" id="@cdktf/provider-aws.albListener.AlbListener.property.routingHttpRequestXAmznMtlsClientcertSerialNumberHeaderName"></a>
+
+```typescript
+public readonly routingHttpRequestXAmznMtlsClientcertSerialNumberHeaderName: string;
+```
+
+- *Type:* string
+
+---
+
+##### `routingHttpRequestXAmznMtlsClientcertSubjectHeaderName`<sup>Required</sup> <a name="routingHttpRequestXAmznMtlsClientcertSubjectHeaderName" id="@cdktf/provider-aws.albListener.AlbListener.property.routingHttpRequestXAmznMtlsClientcertSubjectHeaderName"></a>
+
+```typescript
+public readonly routingHttpRequestXAmznMtlsClientcertSubjectHeaderName: string;
+```
+
+- *Type:* string
+
+---
+
+##### `routingHttpRequestXAmznMtlsClientcertValidityHeaderName`<sup>Required</sup> <a name="routingHttpRequestXAmznMtlsClientcertValidityHeaderName" id="@cdktf/provider-aws.albListener.AlbListener.property.routingHttpRequestXAmznMtlsClientcertValidityHeaderName"></a>
+
+```typescript
+public readonly routingHttpRequestXAmznMtlsClientcertValidityHeaderName: string;
+```
+
+- *Type:* string
+
+---
+
+##### `routingHttpRequestXAmznTlsCipherSuiteHeaderName`<sup>Required</sup> <a name="routingHttpRequestXAmznTlsCipherSuiteHeaderName" id="@cdktf/provider-aws.albListener.AlbListener.property.routingHttpRequestXAmznTlsCipherSuiteHeaderName"></a>
+
+```typescript
+public readonly routingHttpRequestXAmznTlsCipherSuiteHeaderName: string;
+```
+
+- *Type:* string
+
+---
+
+##### `routingHttpRequestXAmznTlsVersionHeaderName`<sup>Required</sup> <a name="routingHttpRequestXAmznTlsVersionHeaderName" id="@cdktf/provider-aws.albListener.AlbListener.property.routingHttpRequestXAmznTlsVersionHeaderName"></a>
+
+```typescript
+public readonly routingHttpRequestXAmznTlsVersionHeaderName: string;
+```
+
+- *Type:* string
+
+---
+
+##### `routingHttpResponseAccessControlAllowCredentialsHeaderValue`<sup>Required</sup> <a name="routingHttpResponseAccessControlAllowCredentialsHeaderValue" id="@cdktf/provider-aws.albListener.AlbListener.property.routingHttpResponseAccessControlAllowCredentialsHeaderValue"></a>
+
+```typescript
+public readonly routingHttpResponseAccessControlAllowCredentialsHeaderValue: string;
+```
+
+- *Type:* string
+
+---
+
+##### `routingHttpResponseAccessControlAllowHeadersHeaderValue`<sup>Required</sup> <a name="routingHttpResponseAccessControlAllowHeadersHeaderValue" id="@cdktf/provider-aws.albListener.AlbListener.property.routingHttpResponseAccessControlAllowHeadersHeaderValue"></a>
+
+```typescript
+public readonly routingHttpResponseAccessControlAllowHeadersHeaderValue: string;
+```
+
+- *Type:* string
+
+---
+
+##### `routingHttpResponseAccessControlAllowMethodsHeaderValue`<sup>Required</sup> <a name="routingHttpResponseAccessControlAllowMethodsHeaderValue" id="@cdktf/provider-aws.albListener.AlbListener.property.routingHttpResponseAccessControlAllowMethodsHeaderValue"></a>
+
+```typescript
+public readonly routingHttpResponseAccessControlAllowMethodsHeaderValue: string;
+```
+
+- *Type:* string
+
+---
+
+##### `routingHttpResponseAccessControlAllowOriginHeaderValue`<sup>Required</sup> <a name="routingHttpResponseAccessControlAllowOriginHeaderValue" id="@cdktf/provider-aws.albListener.AlbListener.property.routingHttpResponseAccessControlAllowOriginHeaderValue"></a>
+
+```typescript
+public readonly routingHttpResponseAccessControlAllowOriginHeaderValue: string;
+```
+
+- *Type:* string
+
+---
+
+##### `routingHttpResponseAccessControlExposeHeadersHeaderValue`<sup>Required</sup> <a name="routingHttpResponseAccessControlExposeHeadersHeaderValue" id="@cdktf/provider-aws.albListener.AlbListener.property.routingHttpResponseAccessControlExposeHeadersHeaderValue"></a>
+
+```typescript
+public readonly routingHttpResponseAccessControlExposeHeadersHeaderValue: string;
+```
+
+- *Type:* string
+
+---
+
+##### `routingHttpResponseAccessControlMaxAgeHeaderValue`<sup>Required</sup> <a name="routingHttpResponseAccessControlMaxAgeHeaderValue" id="@cdktf/provider-aws.albListener.AlbListener.property.routingHttpResponseAccessControlMaxAgeHeaderValue"></a>
+
+```typescript
+public readonly routingHttpResponseAccessControlMaxAgeHeaderValue: string;
+```
+
+- *Type:* string
+
+---
+
+##### `routingHttpResponseContentSecurityPolicyHeaderValue`<sup>Required</sup> <a name="routingHttpResponseContentSecurityPolicyHeaderValue" id="@cdktf/provider-aws.albListener.AlbListener.property.routingHttpResponseContentSecurityPolicyHeaderValue"></a>
+
+```typescript
+public readonly routingHttpResponseContentSecurityPolicyHeaderValue: string;
+```
+
+- *Type:* string
+
+---
+
+##### `routingHttpResponseServerEnabled`<sup>Required</sup> <a name="routingHttpResponseServerEnabled" id="@cdktf/provider-aws.albListener.AlbListener.property.routingHttpResponseServerEnabled"></a>
+
+```typescript
+public readonly routingHttpResponseServerEnabled: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
+##### `routingHttpResponseStrictTransportSecurityHeaderValue`<sup>Required</sup> <a name="routingHttpResponseStrictTransportSecurityHeaderValue" id="@cdktf/provider-aws.albListener.AlbListener.property.routingHttpResponseStrictTransportSecurityHeaderValue"></a>
+
+```typescript
+public readonly routingHttpResponseStrictTransportSecurityHeaderValue: string;
+```
+
+- *Type:* string
+
+---
+
+##### `routingHttpResponseXContentTypeOptionsHeaderValue`<sup>Required</sup> <a name="routingHttpResponseXContentTypeOptionsHeaderValue" id="@cdktf/provider-aws.albListener.AlbListener.property.routingHttpResponseXContentTypeOptionsHeaderValue"></a>
+
+```typescript
+public readonly routingHttpResponseXContentTypeOptionsHeaderValue: string;
+```
+
+- *Type:* string
+
+---
+
+##### `routingHttpResponseXFrameOptionsHeaderValue`<sup>Required</sup> <a name="routingHttpResponseXFrameOptionsHeaderValue" id="@cdktf/provider-aws.albListener.AlbListener.property.routingHttpResponseXFrameOptionsHeaderValue"></a>
+
+```typescript
+public readonly routingHttpResponseXFrameOptionsHeaderValue: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `sslPolicy`<sup>Required</sup> <a name="sslPolicy" id="@cdktf/provider-aws.albListener.AlbListener.property.sslPolicy"></a>
 
 ```typescript
@@ -1097,17 +1648,36 @@ const albListenerConfig: albListener.AlbListenerConfig = { ... }
 | <code><a href="#@cdktf/provider-aws.albListener.AlbListenerConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.albListener.AlbListenerConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.albListener.AlbListenerConfig.property.defaultAction">defaultAction</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultAction">AlbListenerDefaultAction</a>[]</code> | default_action block. |
-| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerConfig.property.loadBalancerArn">loadBalancerArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/alb_listener#load_balancer_arn AlbListener#load_balancer_arn}. |
-| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerConfig.property.alpnPolicy">alpnPolicy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/alb_listener#alpn_policy AlbListener#alpn_policy}. |
-| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerConfig.property.certificateArn">certificateArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/alb_listener#certificate_arn AlbListener#certificate_arn}. |
-| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/alb_listener#id AlbListener#id}. |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerConfig.property.loadBalancerArn">loadBalancerArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener#load_balancer_arn AlbListener#load_balancer_arn}. |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerConfig.property.alpnPolicy">alpnPolicy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener#alpn_policy AlbListener#alpn_policy}. |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerConfig.property.certificateArn">certificateArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener#certificate_arn AlbListener#certificate_arn}. |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener#id AlbListener#id}. |
 | <code><a href="#@cdktf/provider-aws.albListener.AlbListenerConfig.property.mutualAuthentication">mutualAuthentication</a></code> | <code><a href="#@cdktf/provider-aws.albListener.AlbListenerMutualAuthentication">AlbListenerMutualAuthentication</a></code> | mutual_authentication block. |
-| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerConfig.property.port">port</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/alb_listener#port AlbListener#port}. |
-| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerConfig.property.protocol">protocol</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/alb_listener#protocol AlbListener#protocol}. |
-| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerConfig.property.sslPolicy">sslPolicy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/alb_listener#ssl_policy AlbListener#ssl_policy}. |
-| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/alb_listener#tags AlbListener#tags}. |
-| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/alb_listener#tags_all AlbListener#tags_all}. |
-| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerConfig.property.tcpIdleTimeoutSeconds">tcpIdleTimeoutSeconds</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/alb_listener#tcp_idle_timeout_seconds AlbListener#tcp_idle_timeout_seconds}. |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerConfig.property.port">port</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener#port AlbListener#port}. |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerConfig.property.protocol">protocol</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener#protocol AlbListener#protocol}. |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerConfig.property.routingHttpRequestXAmznMtlsClientcertHeaderName">routingHttpRequestXAmznMtlsClientcertHeaderName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener#routing_http_request_x_amzn_mtls_clientcert_header_name AlbListener#routing_http_request_x_amzn_mtls_clientcert_header_name}. |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerConfig.property.routingHttpRequestXAmznMtlsClientcertIssuerHeaderName">routingHttpRequestXAmznMtlsClientcertIssuerHeaderName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener#routing_http_request_x_amzn_mtls_clientcert_issuer_header_name AlbListener#routing_http_request_x_amzn_mtls_clientcert_issuer_header_name}. |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerConfig.property.routingHttpRequestXAmznMtlsClientcertLeafHeaderName">routingHttpRequestXAmznMtlsClientcertLeafHeaderName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener#routing_http_request_x_amzn_mtls_clientcert_leaf_header_name AlbListener#routing_http_request_x_amzn_mtls_clientcert_leaf_header_name}. |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerConfig.property.routingHttpRequestXAmznMtlsClientcertSerialNumberHeaderName">routingHttpRequestXAmznMtlsClientcertSerialNumberHeaderName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener#routing_http_request_x_amzn_mtls_clientcert_serial_number_header_name AlbListener#routing_http_request_x_amzn_mtls_clientcert_serial_number_header_name}. |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerConfig.property.routingHttpRequestXAmznMtlsClientcertSubjectHeaderName">routingHttpRequestXAmznMtlsClientcertSubjectHeaderName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener#routing_http_request_x_amzn_mtls_clientcert_subject_header_name AlbListener#routing_http_request_x_amzn_mtls_clientcert_subject_header_name}. |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerConfig.property.routingHttpRequestXAmznMtlsClientcertValidityHeaderName">routingHttpRequestXAmznMtlsClientcertValidityHeaderName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener#routing_http_request_x_amzn_mtls_clientcert_validity_header_name AlbListener#routing_http_request_x_amzn_mtls_clientcert_validity_header_name}. |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerConfig.property.routingHttpRequestXAmznTlsCipherSuiteHeaderName">routingHttpRequestXAmznTlsCipherSuiteHeaderName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener#routing_http_request_x_amzn_tls_cipher_suite_header_name AlbListener#routing_http_request_x_amzn_tls_cipher_suite_header_name}. |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerConfig.property.routingHttpRequestXAmznTlsVersionHeaderName">routingHttpRequestXAmznTlsVersionHeaderName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener#routing_http_request_x_amzn_tls_version_header_name AlbListener#routing_http_request_x_amzn_tls_version_header_name}. |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerConfig.property.routingHttpResponseAccessControlAllowCredentialsHeaderValue">routingHttpResponseAccessControlAllowCredentialsHeaderValue</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener#routing_http_response_access_control_allow_credentials_header_value AlbListener#routing_http_response_access_control_allow_credentials_header_value}. |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerConfig.property.routingHttpResponseAccessControlAllowHeadersHeaderValue">routingHttpResponseAccessControlAllowHeadersHeaderValue</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener#routing_http_response_access_control_allow_headers_header_value AlbListener#routing_http_response_access_control_allow_headers_header_value}. |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerConfig.property.routingHttpResponseAccessControlAllowMethodsHeaderValue">routingHttpResponseAccessControlAllowMethodsHeaderValue</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener#routing_http_response_access_control_allow_methods_header_value AlbListener#routing_http_response_access_control_allow_methods_header_value}. |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerConfig.property.routingHttpResponseAccessControlAllowOriginHeaderValue">routingHttpResponseAccessControlAllowOriginHeaderValue</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener#routing_http_response_access_control_allow_origin_header_value AlbListener#routing_http_response_access_control_allow_origin_header_value}. |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerConfig.property.routingHttpResponseAccessControlExposeHeadersHeaderValue">routingHttpResponseAccessControlExposeHeadersHeaderValue</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener#routing_http_response_access_control_expose_headers_header_value AlbListener#routing_http_response_access_control_expose_headers_header_value}. |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerConfig.property.routingHttpResponseAccessControlMaxAgeHeaderValue">routingHttpResponseAccessControlMaxAgeHeaderValue</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener#routing_http_response_access_control_max_age_header_value AlbListener#routing_http_response_access_control_max_age_header_value}. |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerConfig.property.routingHttpResponseContentSecurityPolicyHeaderValue">routingHttpResponseContentSecurityPolicyHeaderValue</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener#routing_http_response_content_security_policy_header_value AlbListener#routing_http_response_content_security_policy_header_value}. |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerConfig.property.routingHttpResponseServerEnabled">routingHttpResponseServerEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener#routing_http_response_server_enabled AlbListener#routing_http_response_server_enabled}. |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerConfig.property.routingHttpResponseStrictTransportSecurityHeaderValue">routingHttpResponseStrictTransportSecurityHeaderValue</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener#routing_http_response_strict_transport_security_header_value AlbListener#routing_http_response_strict_transport_security_header_value}. |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerConfig.property.routingHttpResponseXContentTypeOptionsHeaderValue">routingHttpResponseXContentTypeOptionsHeaderValue</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener#routing_http_response_x_content_type_options_header_value AlbListener#routing_http_response_x_content_type_options_header_value}. |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerConfig.property.routingHttpResponseXFrameOptionsHeaderValue">routingHttpResponseXFrameOptionsHeaderValue</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener#routing_http_response_x_frame_options_header_value AlbListener#routing_http_response_x_frame_options_header_value}. |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerConfig.property.sslPolicy">sslPolicy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener#ssl_policy AlbListener#ssl_policy}. |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener#tags AlbListener#tags}. |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener#tags_all AlbListener#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerConfig.property.tcpIdleTimeoutSeconds">tcpIdleTimeoutSeconds</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener#tcp_idle_timeout_seconds AlbListener#tcp_idle_timeout_seconds}. |
 | <code><a href="#@cdktf/provider-aws.albListener.AlbListenerConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-aws.albListener.AlbListenerTimeouts">AlbListenerTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1192,7 +1762,7 @@ public readonly defaultAction: IResolvable | AlbListenerDefaultAction[];
 
 default_action block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/alb_listener#default_action AlbListener#default_action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener#default_action AlbListener#default_action}
 
 ---
 
@@ -1204,7 +1774,7 @@ public readonly loadBalancerArn: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/alb_listener#load_balancer_arn AlbListener#load_balancer_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener#load_balancer_arn AlbListener#load_balancer_arn}.
 
 ---
 
@@ -1216,7 +1786,7 @@ public readonly alpnPolicy: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/alb_listener#alpn_policy AlbListener#alpn_policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener#alpn_policy AlbListener#alpn_policy}.
 
 ---
 
@@ -1228,7 +1798,7 @@ public readonly certificateArn: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/alb_listener#certificate_arn AlbListener#certificate_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener#certificate_arn AlbListener#certificate_arn}.
 
 ---
 
@@ -1240,7 +1810,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/alb_listener#id AlbListener#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener#id AlbListener#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1257,7 +1827,7 @@ public readonly mutualAuthentication: AlbListenerMutualAuthentication;
 
 mutual_authentication block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/alb_listener#mutual_authentication AlbListener#mutual_authentication}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener#mutual_authentication AlbListener#mutual_authentication}
 
 ---
 
@@ -1269,7 +1839,7 @@ public readonly port: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/alb_listener#port AlbListener#port}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener#port AlbListener#port}.
 
 ---
 
@@ -1281,7 +1851,235 @@ public readonly protocol: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/alb_listener#protocol AlbListener#protocol}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener#protocol AlbListener#protocol}.
+
+---
+
+##### `routingHttpRequestXAmznMtlsClientcertHeaderName`<sup>Optional</sup> <a name="routingHttpRequestXAmznMtlsClientcertHeaderName" id="@cdktf/provider-aws.albListener.AlbListenerConfig.property.routingHttpRequestXAmznMtlsClientcertHeaderName"></a>
+
+```typescript
+public readonly routingHttpRequestXAmznMtlsClientcertHeaderName: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener#routing_http_request_x_amzn_mtls_clientcert_header_name AlbListener#routing_http_request_x_amzn_mtls_clientcert_header_name}.
+
+---
+
+##### `routingHttpRequestXAmznMtlsClientcertIssuerHeaderName`<sup>Optional</sup> <a name="routingHttpRequestXAmznMtlsClientcertIssuerHeaderName" id="@cdktf/provider-aws.albListener.AlbListenerConfig.property.routingHttpRequestXAmznMtlsClientcertIssuerHeaderName"></a>
+
+```typescript
+public readonly routingHttpRequestXAmznMtlsClientcertIssuerHeaderName: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener#routing_http_request_x_amzn_mtls_clientcert_issuer_header_name AlbListener#routing_http_request_x_amzn_mtls_clientcert_issuer_header_name}.
+
+---
+
+##### `routingHttpRequestXAmznMtlsClientcertLeafHeaderName`<sup>Optional</sup> <a name="routingHttpRequestXAmznMtlsClientcertLeafHeaderName" id="@cdktf/provider-aws.albListener.AlbListenerConfig.property.routingHttpRequestXAmznMtlsClientcertLeafHeaderName"></a>
+
+```typescript
+public readonly routingHttpRequestXAmznMtlsClientcertLeafHeaderName: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener#routing_http_request_x_amzn_mtls_clientcert_leaf_header_name AlbListener#routing_http_request_x_amzn_mtls_clientcert_leaf_header_name}.
+
+---
+
+##### `routingHttpRequestXAmznMtlsClientcertSerialNumberHeaderName`<sup>Optional</sup> <a name="routingHttpRequestXAmznMtlsClientcertSerialNumberHeaderName" id="@cdktf/provider-aws.albListener.AlbListenerConfig.property.routingHttpRequestXAmznMtlsClientcertSerialNumberHeaderName"></a>
+
+```typescript
+public readonly routingHttpRequestXAmznMtlsClientcertSerialNumberHeaderName: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener#routing_http_request_x_amzn_mtls_clientcert_serial_number_header_name AlbListener#routing_http_request_x_amzn_mtls_clientcert_serial_number_header_name}.
+
+---
+
+##### `routingHttpRequestXAmznMtlsClientcertSubjectHeaderName`<sup>Optional</sup> <a name="routingHttpRequestXAmznMtlsClientcertSubjectHeaderName" id="@cdktf/provider-aws.albListener.AlbListenerConfig.property.routingHttpRequestXAmznMtlsClientcertSubjectHeaderName"></a>
+
+```typescript
+public readonly routingHttpRequestXAmznMtlsClientcertSubjectHeaderName: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener#routing_http_request_x_amzn_mtls_clientcert_subject_header_name AlbListener#routing_http_request_x_amzn_mtls_clientcert_subject_header_name}.
+
+---
+
+##### `routingHttpRequestXAmznMtlsClientcertValidityHeaderName`<sup>Optional</sup> <a name="routingHttpRequestXAmznMtlsClientcertValidityHeaderName" id="@cdktf/provider-aws.albListener.AlbListenerConfig.property.routingHttpRequestXAmznMtlsClientcertValidityHeaderName"></a>
+
+```typescript
+public readonly routingHttpRequestXAmznMtlsClientcertValidityHeaderName: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener#routing_http_request_x_amzn_mtls_clientcert_validity_header_name AlbListener#routing_http_request_x_amzn_mtls_clientcert_validity_header_name}.
+
+---
+
+##### `routingHttpRequestXAmznTlsCipherSuiteHeaderName`<sup>Optional</sup> <a name="routingHttpRequestXAmznTlsCipherSuiteHeaderName" id="@cdktf/provider-aws.albListener.AlbListenerConfig.property.routingHttpRequestXAmznTlsCipherSuiteHeaderName"></a>
+
+```typescript
+public readonly routingHttpRequestXAmznTlsCipherSuiteHeaderName: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener#routing_http_request_x_amzn_tls_cipher_suite_header_name AlbListener#routing_http_request_x_amzn_tls_cipher_suite_header_name}.
+
+---
+
+##### `routingHttpRequestXAmznTlsVersionHeaderName`<sup>Optional</sup> <a name="routingHttpRequestXAmznTlsVersionHeaderName" id="@cdktf/provider-aws.albListener.AlbListenerConfig.property.routingHttpRequestXAmznTlsVersionHeaderName"></a>
+
+```typescript
+public readonly routingHttpRequestXAmznTlsVersionHeaderName: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener#routing_http_request_x_amzn_tls_version_header_name AlbListener#routing_http_request_x_amzn_tls_version_header_name}.
+
+---
+
+##### `routingHttpResponseAccessControlAllowCredentialsHeaderValue`<sup>Optional</sup> <a name="routingHttpResponseAccessControlAllowCredentialsHeaderValue" id="@cdktf/provider-aws.albListener.AlbListenerConfig.property.routingHttpResponseAccessControlAllowCredentialsHeaderValue"></a>
+
+```typescript
+public readonly routingHttpResponseAccessControlAllowCredentialsHeaderValue: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener#routing_http_response_access_control_allow_credentials_header_value AlbListener#routing_http_response_access_control_allow_credentials_header_value}.
+
+---
+
+##### `routingHttpResponseAccessControlAllowHeadersHeaderValue`<sup>Optional</sup> <a name="routingHttpResponseAccessControlAllowHeadersHeaderValue" id="@cdktf/provider-aws.albListener.AlbListenerConfig.property.routingHttpResponseAccessControlAllowHeadersHeaderValue"></a>
+
+```typescript
+public readonly routingHttpResponseAccessControlAllowHeadersHeaderValue: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener#routing_http_response_access_control_allow_headers_header_value AlbListener#routing_http_response_access_control_allow_headers_header_value}.
+
+---
+
+##### `routingHttpResponseAccessControlAllowMethodsHeaderValue`<sup>Optional</sup> <a name="routingHttpResponseAccessControlAllowMethodsHeaderValue" id="@cdktf/provider-aws.albListener.AlbListenerConfig.property.routingHttpResponseAccessControlAllowMethodsHeaderValue"></a>
+
+```typescript
+public readonly routingHttpResponseAccessControlAllowMethodsHeaderValue: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener#routing_http_response_access_control_allow_methods_header_value AlbListener#routing_http_response_access_control_allow_methods_header_value}.
+
+---
+
+##### `routingHttpResponseAccessControlAllowOriginHeaderValue`<sup>Optional</sup> <a name="routingHttpResponseAccessControlAllowOriginHeaderValue" id="@cdktf/provider-aws.albListener.AlbListenerConfig.property.routingHttpResponseAccessControlAllowOriginHeaderValue"></a>
+
+```typescript
+public readonly routingHttpResponseAccessControlAllowOriginHeaderValue: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener#routing_http_response_access_control_allow_origin_header_value AlbListener#routing_http_response_access_control_allow_origin_header_value}.
+
+---
+
+##### `routingHttpResponseAccessControlExposeHeadersHeaderValue`<sup>Optional</sup> <a name="routingHttpResponseAccessControlExposeHeadersHeaderValue" id="@cdktf/provider-aws.albListener.AlbListenerConfig.property.routingHttpResponseAccessControlExposeHeadersHeaderValue"></a>
+
+```typescript
+public readonly routingHttpResponseAccessControlExposeHeadersHeaderValue: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener#routing_http_response_access_control_expose_headers_header_value AlbListener#routing_http_response_access_control_expose_headers_header_value}.
+
+---
+
+##### `routingHttpResponseAccessControlMaxAgeHeaderValue`<sup>Optional</sup> <a name="routingHttpResponseAccessControlMaxAgeHeaderValue" id="@cdktf/provider-aws.albListener.AlbListenerConfig.property.routingHttpResponseAccessControlMaxAgeHeaderValue"></a>
+
+```typescript
+public readonly routingHttpResponseAccessControlMaxAgeHeaderValue: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener#routing_http_response_access_control_max_age_header_value AlbListener#routing_http_response_access_control_max_age_header_value}.
+
+---
+
+##### `routingHttpResponseContentSecurityPolicyHeaderValue`<sup>Optional</sup> <a name="routingHttpResponseContentSecurityPolicyHeaderValue" id="@cdktf/provider-aws.albListener.AlbListenerConfig.property.routingHttpResponseContentSecurityPolicyHeaderValue"></a>
+
+```typescript
+public readonly routingHttpResponseContentSecurityPolicyHeaderValue: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener#routing_http_response_content_security_policy_header_value AlbListener#routing_http_response_content_security_policy_header_value}.
+
+---
+
+##### `routingHttpResponseServerEnabled`<sup>Optional</sup> <a name="routingHttpResponseServerEnabled" id="@cdktf/provider-aws.albListener.AlbListenerConfig.property.routingHttpResponseServerEnabled"></a>
+
+```typescript
+public readonly routingHttpResponseServerEnabled: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener#routing_http_response_server_enabled AlbListener#routing_http_response_server_enabled}.
+
+---
+
+##### `routingHttpResponseStrictTransportSecurityHeaderValue`<sup>Optional</sup> <a name="routingHttpResponseStrictTransportSecurityHeaderValue" id="@cdktf/provider-aws.albListener.AlbListenerConfig.property.routingHttpResponseStrictTransportSecurityHeaderValue"></a>
+
+```typescript
+public readonly routingHttpResponseStrictTransportSecurityHeaderValue: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener#routing_http_response_strict_transport_security_header_value AlbListener#routing_http_response_strict_transport_security_header_value}.
+
+---
+
+##### `routingHttpResponseXContentTypeOptionsHeaderValue`<sup>Optional</sup> <a name="routingHttpResponseXContentTypeOptionsHeaderValue" id="@cdktf/provider-aws.albListener.AlbListenerConfig.property.routingHttpResponseXContentTypeOptionsHeaderValue"></a>
+
+```typescript
+public readonly routingHttpResponseXContentTypeOptionsHeaderValue: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener#routing_http_response_x_content_type_options_header_value AlbListener#routing_http_response_x_content_type_options_header_value}.
+
+---
+
+##### `routingHttpResponseXFrameOptionsHeaderValue`<sup>Optional</sup> <a name="routingHttpResponseXFrameOptionsHeaderValue" id="@cdktf/provider-aws.albListener.AlbListenerConfig.property.routingHttpResponseXFrameOptionsHeaderValue"></a>
+
+```typescript
+public readonly routingHttpResponseXFrameOptionsHeaderValue: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener#routing_http_response_x_frame_options_header_value AlbListener#routing_http_response_x_frame_options_header_value}.
 
 ---
 
@@ -1293,7 +2091,7 @@ public readonly sslPolicy: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/alb_listener#ssl_policy AlbListener#ssl_policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener#ssl_policy AlbListener#ssl_policy}.
 
 ---
 
@@ -1305,7 +2103,7 @@ public readonly tags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/alb_listener#tags AlbListener#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener#tags AlbListener#tags}.
 
 ---
 
@@ -1317,7 +2115,7 @@ public readonly tagsAll: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/alb_listener#tags_all AlbListener#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener#tags_all AlbListener#tags_all}.
 
 ---
 
@@ -1329,7 +2127,7 @@ public readonly tcpIdleTimeoutSeconds: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/alb_listener#tcp_idle_timeout_seconds AlbListener#tcp_idle_timeout_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener#tcp_idle_timeout_seconds AlbListener#tcp_idle_timeout_seconds}.
 
 ---
 
@@ -1343,7 +2141,7 @@ public readonly timeouts: AlbListenerTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/alb_listener#timeouts AlbListener#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener#timeouts AlbListener#timeouts}
 
 ---
 
@@ -1361,14 +2159,14 @@ const albListenerDefaultAction: albListener.AlbListenerDefaultAction = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultAction.property.type">type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/alb_listener#type AlbListener#type}. |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultAction.property.type">type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener#type AlbListener#type}. |
 | <code><a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultAction.property.authenticateCognito">authenticateCognito</a></code> | <code><a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultActionAuthenticateCognito">AlbListenerDefaultActionAuthenticateCognito</a></code> | authenticate_cognito block. |
 | <code><a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultAction.property.authenticateOidc">authenticateOidc</a></code> | <code><a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultActionAuthenticateOidc">AlbListenerDefaultActionAuthenticateOidc</a></code> | authenticate_oidc block. |
 | <code><a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultAction.property.fixedResponse">fixedResponse</a></code> | <code><a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultActionFixedResponse">AlbListenerDefaultActionFixedResponse</a></code> | fixed_response block. |
 | <code><a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultAction.property.forward">forward</a></code> | <code><a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultActionForward">AlbListenerDefaultActionForward</a></code> | forward block. |
-| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultAction.property.order">order</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/alb_listener#order AlbListener#order}. |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultAction.property.order">order</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener#order AlbListener#order}. |
 | <code><a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultAction.property.redirect">redirect</a></code> | <code><a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultActionRedirect">AlbListenerDefaultActionRedirect</a></code> | redirect block. |
-| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultAction.property.targetGroupArn">targetGroupArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/alb_listener#target_group_arn AlbListener#target_group_arn}. |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultAction.property.targetGroupArn">targetGroupArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener#target_group_arn AlbListener#target_group_arn}. |
 
 ---
 
@@ -1380,7 +2178,7 @@ public readonly type: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/alb_listener#type AlbListener#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener#type AlbListener#type}.
 
 ---
 
@@ -1394,7 +2192,7 @@ public readonly authenticateCognito: AlbListenerDefaultActionAuthenticateCognito
 
 authenticate_cognito block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/alb_listener#authenticate_cognito AlbListener#authenticate_cognito}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener#authenticate_cognito AlbListener#authenticate_cognito}
 
 ---
 
@@ -1408,7 +2206,7 @@ public readonly authenticateOidc: AlbListenerDefaultActionAuthenticateOidc;
 
 authenticate_oidc block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/alb_listener#authenticate_oidc AlbListener#authenticate_oidc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener#authenticate_oidc AlbListener#authenticate_oidc}
 
 ---
 
@@ -1422,7 +2220,7 @@ public readonly fixedResponse: AlbListenerDefaultActionFixedResponse;
 
 fixed_response block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/alb_listener#fixed_response AlbListener#fixed_response}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener#fixed_response AlbListener#fixed_response}
 
 ---
 
@@ -1436,7 +2234,7 @@ public readonly forward: AlbListenerDefaultActionForward;
 
 forward block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/alb_listener#forward AlbListener#forward}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener#forward AlbListener#forward}
 
 ---
 
@@ -1448,7 +2246,7 @@ public readonly order: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/alb_listener#order AlbListener#order}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener#order AlbListener#order}.
 
 ---
 
@@ -1462,7 +2260,7 @@ public readonly redirect: AlbListenerDefaultActionRedirect;
 
 redirect block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/alb_listener#redirect AlbListener#redirect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener#redirect AlbListener#redirect}
 
 ---
 
@@ -1474,7 +2272,7 @@ public readonly targetGroupArn: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/alb_listener#target_group_arn AlbListener#target_group_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener#target_group_arn AlbListener#target_group_arn}.
 
 ---
 
@@ -1492,14 +2290,14 @@ const albListenerDefaultActionAuthenticateCognito: albListener.AlbListenerDefaul
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultActionAuthenticateCognito.property.userPoolArn">userPoolArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/alb_listener#user_pool_arn AlbListener#user_pool_arn}. |
-| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultActionAuthenticateCognito.property.userPoolClientId">userPoolClientId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/alb_listener#user_pool_client_id AlbListener#user_pool_client_id}. |
-| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultActionAuthenticateCognito.property.userPoolDomain">userPoolDomain</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/alb_listener#user_pool_domain AlbListener#user_pool_domain}. |
-| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultActionAuthenticateCognito.property.authenticationRequestExtraParams">authenticationRequestExtraParams</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/alb_listener#authentication_request_extra_params AlbListener#authentication_request_extra_params}. |
-| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultActionAuthenticateCognito.property.onUnauthenticatedRequest">onUnauthenticatedRequest</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/alb_listener#on_unauthenticated_request AlbListener#on_unauthenticated_request}. |
-| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultActionAuthenticateCognito.property.scope">scope</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/alb_listener#scope AlbListener#scope}. |
-| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultActionAuthenticateCognito.property.sessionCookieName">sessionCookieName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/alb_listener#session_cookie_name AlbListener#session_cookie_name}. |
-| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultActionAuthenticateCognito.property.sessionTimeout">sessionTimeout</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/alb_listener#session_timeout AlbListener#session_timeout}. |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultActionAuthenticateCognito.property.userPoolArn">userPoolArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener#user_pool_arn AlbListener#user_pool_arn}. |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultActionAuthenticateCognito.property.userPoolClientId">userPoolClientId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener#user_pool_client_id AlbListener#user_pool_client_id}. |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultActionAuthenticateCognito.property.userPoolDomain">userPoolDomain</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener#user_pool_domain AlbListener#user_pool_domain}. |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultActionAuthenticateCognito.property.authenticationRequestExtraParams">authenticationRequestExtraParams</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener#authentication_request_extra_params AlbListener#authentication_request_extra_params}. |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultActionAuthenticateCognito.property.onUnauthenticatedRequest">onUnauthenticatedRequest</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener#on_unauthenticated_request AlbListener#on_unauthenticated_request}. |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultActionAuthenticateCognito.property.scope">scope</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener#scope AlbListener#scope}. |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultActionAuthenticateCognito.property.sessionCookieName">sessionCookieName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener#session_cookie_name AlbListener#session_cookie_name}. |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultActionAuthenticateCognito.property.sessionTimeout">sessionTimeout</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener#session_timeout AlbListener#session_timeout}. |
 
 ---
 
@@ -1511,7 +2309,7 @@ public readonly userPoolArn: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/alb_listener#user_pool_arn AlbListener#user_pool_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener#user_pool_arn AlbListener#user_pool_arn}.
 
 ---
 
@@ -1523,7 +2321,7 @@ public readonly userPoolClientId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/alb_listener#user_pool_client_id AlbListener#user_pool_client_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener#user_pool_client_id AlbListener#user_pool_client_id}.
 
 ---
 
@@ -1535,7 +2333,7 @@ public readonly userPoolDomain: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/alb_listener#user_pool_domain AlbListener#user_pool_domain}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener#user_pool_domain AlbListener#user_pool_domain}.
 
 ---
 
@@ -1547,7 +2345,7 @@ public readonly authenticationRequestExtraParams: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/alb_listener#authentication_request_extra_params AlbListener#authentication_request_extra_params}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener#authentication_request_extra_params AlbListener#authentication_request_extra_params}.
 
 ---
 
@@ -1559,7 +2357,7 @@ public readonly onUnauthenticatedRequest: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/alb_listener#on_unauthenticated_request AlbListener#on_unauthenticated_request}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener#on_unauthenticated_request AlbListener#on_unauthenticated_request}.
 
 ---
 
@@ -1571,7 +2369,7 @@ public readonly scope: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/alb_listener#scope AlbListener#scope}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener#scope AlbListener#scope}.
 
 ---
 
@@ -1583,7 +2381,7 @@ public readonly sessionCookieName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/alb_listener#session_cookie_name AlbListener#session_cookie_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener#session_cookie_name AlbListener#session_cookie_name}.
 
 ---
 
@@ -1595,7 +2393,7 @@ public readonly sessionTimeout: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/alb_listener#session_timeout AlbListener#session_timeout}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener#session_timeout AlbListener#session_timeout}.
 
 ---
 
@@ -1613,17 +2411,17 @@ const albListenerDefaultActionAuthenticateOidc: albListener.AlbListenerDefaultAc
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultActionAuthenticateOidc.property.authorizationEndpoint">authorizationEndpoint</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/alb_listener#authorization_endpoint AlbListener#authorization_endpoint}. |
-| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultActionAuthenticateOidc.property.clientId">clientId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/alb_listener#client_id AlbListener#client_id}. |
-| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultActionAuthenticateOidc.property.clientSecret">clientSecret</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/alb_listener#client_secret AlbListener#client_secret}. |
-| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultActionAuthenticateOidc.property.issuer">issuer</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/alb_listener#issuer AlbListener#issuer}. |
-| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultActionAuthenticateOidc.property.tokenEndpoint">tokenEndpoint</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/alb_listener#token_endpoint AlbListener#token_endpoint}. |
-| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultActionAuthenticateOidc.property.userInfoEndpoint">userInfoEndpoint</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/alb_listener#user_info_endpoint AlbListener#user_info_endpoint}. |
-| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultActionAuthenticateOidc.property.authenticationRequestExtraParams">authenticationRequestExtraParams</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/alb_listener#authentication_request_extra_params AlbListener#authentication_request_extra_params}. |
-| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultActionAuthenticateOidc.property.onUnauthenticatedRequest">onUnauthenticatedRequest</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/alb_listener#on_unauthenticated_request AlbListener#on_unauthenticated_request}. |
-| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultActionAuthenticateOidc.property.scope">scope</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/alb_listener#scope AlbListener#scope}. |
-| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultActionAuthenticateOidc.property.sessionCookieName">sessionCookieName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/alb_listener#session_cookie_name AlbListener#session_cookie_name}. |
-| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultActionAuthenticateOidc.property.sessionTimeout">sessionTimeout</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/alb_listener#session_timeout AlbListener#session_timeout}. |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultActionAuthenticateOidc.property.authorizationEndpoint">authorizationEndpoint</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener#authorization_endpoint AlbListener#authorization_endpoint}. |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultActionAuthenticateOidc.property.clientId">clientId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener#client_id AlbListener#client_id}. |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultActionAuthenticateOidc.property.clientSecret">clientSecret</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener#client_secret AlbListener#client_secret}. |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultActionAuthenticateOidc.property.issuer">issuer</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener#issuer AlbListener#issuer}. |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultActionAuthenticateOidc.property.tokenEndpoint">tokenEndpoint</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener#token_endpoint AlbListener#token_endpoint}. |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultActionAuthenticateOidc.property.userInfoEndpoint">userInfoEndpoint</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener#user_info_endpoint AlbListener#user_info_endpoint}. |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultActionAuthenticateOidc.property.authenticationRequestExtraParams">authenticationRequestExtraParams</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener#authentication_request_extra_params AlbListener#authentication_request_extra_params}. |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultActionAuthenticateOidc.property.onUnauthenticatedRequest">onUnauthenticatedRequest</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener#on_unauthenticated_request AlbListener#on_unauthenticated_request}. |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultActionAuthenticateOidc.property.scope">scope</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener#scope AlbListener#scope}. |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultActionAuthenticateOidc.property.sessionCookieName">sessionCookieName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener#session_cookie_name AlbListener#session_cookie_name}. |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultActionAuthenticateOidc.property.sessionTimeout">sessionTimeout</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener#session_timeout AlbListener#session_timeout}. |
 
 ---
 
@@ -1635,7 +2433,7 @@ public readonly authorizationEndpoint: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/alb_listener#authorization_endpoint AlbListener#authorization_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener#authorization_endpoint AlbListener#authorization_endpoint}.
 
 ---
 
@@ -1647,7 +2445,7 @@ public readonly clientId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/alb_listener#client_id AlbListener#client_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener#client_id AlbListener#client_id}.
 
 ---
 
@@ -1659,7 +2457,7 @@ public readonly clientSecret: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/alb_listener#client_secret AlbListener#client_secret}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener#client_secret AlbListener#client_secret}.
 
 ---
 
@@ -1671,7 +2469,7 @@ public readonly issuer: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/alb_listener#issuer AlbListener#issuer}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener#issuer AlbListener#issuer}.
 
 ---
 
@@ -1683,7 +2481,7 @@ public readonly tokenEndpoint: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/alb_listener#token_endpoint AlbListener#token_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener#token_endpoint AlbListener#token_endpoint}.
 
 ---
 
@@ -1695,7 +2493,7 @@ public readonly userInfoEndpoint: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/alb_listener#user_info_endpoint AlbListener#user_info_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener#user_info_endpoint AlbListener#user_info_endpoint}.
 
 ---
 
@@ -1707,7 +2505,7 @@ public readonly authenticationRequestExtraParams: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/alb_listener#authentication_request_extra_params AlbListener#authentication_request_extra_params}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener#authentication_request_extra_params AlbListener#authentication_request_extra_params}.
 
 ---
 
@@ -1719,7 +2517,7 @@ public readonly onUnauthenticatedRequest: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/alb_listener#on_unauthenticated_request AlbListener#on_unauthenticated_request}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener#on_unauthenticated_request AlbListener#on_unauthenticated_request}.
 
 ---
 
@@ -1731,7 +2529,7 @@ public readonly scope: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/alb_listener#scope AlbListener#scope}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener#scope AlbListener#scope}.
 
 ---
 
@@ -1743,7 +2541,7 @@ public readonly sessionCookieName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/alb_listener#session_cookie_name AlbListener#session_cookie_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener#session_cookie_name AlbListener#session_cookie_name}.
 
 ---
 
@@ -1755,7 +2553,7 @@ public readonly sessionTimeout: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/alb_listener#session_timeout AlbListener#session_timeout}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener#session_timeout AlbListener#session_timeout}.
 
 ---
 
@@ -1773,9 +2571,9 @@ const albListenerDefaultActionFixedResponse: albListener.AlbListenerDefaultActio
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultActionFixedResponse.property.contentType">contentType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/alb_listener#content_type AlbListener#content_type}. |
-| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultActionFixedResponse.property.messageBody">messageBody</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/alb_listener#message_body AlbListener#message_body}. |
-| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultActionFixedResponse.property.statusCode">statusCode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/alb_listener#status_code AlbListener#status_code}. |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultActionFixedResponse.property.contentType">contentType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener#content_type AlbListener#content_type}. |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultActionFixedResponse.property.messageBody">messageBody</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener#message_body AlbListener#message_body}. |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultActionFixedResponse.property.statusCode">statusCode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener#status_code AlbListener#status_code}. |
 
 ---
 
@@ -1787,7 +2585,7 @@ public readonly contentType: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/alb_listener#content_type AlbListener#content_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener#content_type AlbListener#content_type}.
 
 ---
 
@@ -1799,7 +2597,7 @@ public readonly messageBody: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/alb_listener#message_body AlbListener#message_body}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener#message_body AlbListener#message_body}.
 
 ---
 
@@ -1811,7 +2609,7 @@ public readonly statusCode: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/alb_listener#status_code AlbListener#status_code}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener#status_code AlbListener#status_code}.
 
 ---
 
@@ -1844,7 +2642,7 @@ public readonly targetGroup: IResolvable | AlbListenerDefaultActionForwardTarget
 
 target_group block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/alb_listener#target_group AlbListener#target_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener#target_group AlbListener#target_group}
 
 ---
 
@@ -1858,7 +2656,7 @@ public readonly stickiness: AlbListenerDefaultActionForwardStickiness;
 
 stickiness block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/alb_listener#stickiness AlbListener#stickiness}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener#stickiness AlbListener#stickiness}
 
 ---
 
@@ -1876,8 +2674,8 @@ const albListenerDefaultActionForwardStickiness: albListener.AlbListenerDefaultA
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultActionForwardStickiness.property.duration">duration</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/alb_listener#duration AlbListener#duration}. |
-| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultActionForwardStickiness.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/alb_listener#enabled AlbListener#enabled}. |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultActionForwardStickiness.property.duration">duration</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener#duration AlbListener#duration}. |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultActionForwardStickiness.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener#enabled AlbListener#enabled}. |
 
 ---
 
@@ -1889,7 +2687,7 @@ public readonly duration: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/alb_listener#duration AlbListener#duration}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener#duration AlbListener#duration}.
 
 ---
 
@@ -1901,7 +2699,7 @@ public readonly enabled: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/alb_listener#enabled AlbListener#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener#enabled AlbListener#enabled}.
 
 ---
 
@@ -1919,8 +2717,8 @@ const albListenerDefaultActionForwardTargetGroup: albListener.AlbListenerDefault
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultActionForwardTargetGroup.property.arn">arn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/alb_listener#arn AlbListener#arn}. |
-| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultActionForwardTargetGroup.property.weight">weight</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/alb_listener#weight AlbListener#weight}. |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultActionForwardTargetGroup.property.arn">arn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener#arn AlbListener#arn}. |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultActionForwardTargetGroup.property.weight">weight</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener#weight AlbListener#weight}. |
 
 ---
 
@@ -1932,7 +2730,7 @@ public readonly arn: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/alb_listener#arn AlbListener#arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener#arn AlbListener#arn}.
 
 ---
 
@@ -1944,7 +2742,7 @@ public readonly weight: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/alb_listener#weight AlbListener#weight}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener#weight AlbListener#weight}.
 
 ---
 
@@ -1962,12 +2760,12 @@ const albListenerDefaultActionRedirect: albListener.AlbListenerDefaultActionRedi
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultActionRedirect.property.statusCode">statusCode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/alb_listener#status_code AlbListener#status_code}. |
-| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultActionRedirect.property.host">host</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/alb_listener#host AlbListener#host}. |
-| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultActionRedirect.property.path">path</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/alb_listener#path AlbListener#path}. |
-| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultActionRedirect.property.port">port</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/alb_listener#port AlbListener#port}. |
-| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultActionRedirect.property.protocol">protocol</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/alb_listener#protocol AlbListener#protocol}. |
-| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultActionRedirect.property.query">query</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/alb_listener#query AlbListener#query}. |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultActionRedirect.property.statusCode">statusCode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener#status_code AlbListener#status_code}. |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultActionRedirect.property.host">host</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener#host AlbListener#host}. |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultActionRedirect.property.path">path</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener#path AlbListener#path}. |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultActionRedirect.property.port">port</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener#port AlbListener#port}. |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultActionRedirect.property.protocol">protocol</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener#protocol AlbListener#protocol}. |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultActionRedirect.property.query">query</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener#query AlbListener#query}. |
 
 ---
 
@@ -1979,7 +2777,7 @@ public readonly statusCode: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/alb_listener#status_code AlbListener#status_code}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener#status_code AlbListener#status_code}.
 
 ---
 
@@ -1991,7 +2789,7 @@ public readonly host: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/alb_listener#host AlbListener#host}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener#host AlbListener#host}.
 
 ---
 
@@ -2003,7 +2801,7 @@ public readonly path: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/alb_listener#path AlbListener#path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener#path AlbListener#path}.
 
 ---
 
@@ -2015,7 +2813,7 @@ public readonly port: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/alb_listener#port AlbListener#port}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener#port AlbListener#port}.
 
 ---
 
@@ -2027,7 +2825,7 @@ public readonly protocol: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/alb_listener#protocol AlbListener#protocol}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener#protocol AlbListener#protocol}.
 
 ---
 
@@ -2039,7 +2837,7 @@ public readonly query: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/alb_listener#query AlbListener#query}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener#query AlbListener#query}.
 
 ---
 
@@ -2057,10 +2855,10 @@ const albListenerMutualAuthentication: albListener.AlbListenerMutualAuthenticati
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerMutualAuthentication.property.mode">mode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/alb_listener#mode AlbListener#mode}. |
-| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerMutualAuthentication.property.advertiseTrustStoreCaNames">advertiseTrustStoreCaNames</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/alb_listener#advertise_trust_store_ca_names AlbListener#advertise_trust_store_ca_names}. |
-| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerMutualAuthentication.property.ignoreClientCertificateExpiry">ignoreClientCertificateExpiry</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/alb_listener#ignore_client_certificate_expiry AlbListener#ignore_client_certificate_expiry}. |
-| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerMutualAuthentication.property.trustStoreArn">trustStoreArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/alb_listener#trust_store_arn AlbListener#trust_store_arn}. |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerMutualAuthentication.property.mode">mode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener#mode AlbListener#mode}. |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerMutualAuthentication.property.advertiseTrustStoreCaNames">advertiseTrustStoreCaNames</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener#advertise_trust_store_ca_names AlbListener#advertise_trust_store_ca_names}. |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerMutualAuthentication.property.ignoreClientCertificateExpiry">ignoreClientCertificateExpiry</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener#ignore_client_certificate_expiry AlbListener#ignore_client_certificate_expiry}. |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerMutualAuthentication.property.trustStoreArn">trustStoreArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener#trust_store_arn AlbListener#trust_store_arn}. |
 
 ---
 
@@ -2072,7 +2870,7 @@ public readonly mode: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/alb_listener#mode AlbListener#mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener#mode AlbListener#mode}.
 
 ---
 
@@ -2084,7 +2882,7 @@ public readonly advertiseTrustStoreCaNames: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/alb_listener#advertise_trust_store_ca_names AlbListener#advertise_trust_store_ca_names}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener#advertise_trust_store_ca_names AlbListener#advertise_trust_store_ca_names}.
 
 ---
 
@@ -2096,7 +2894,7 @@ public readonly ignoreClientCertificateExpiry: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/alb_listener#ignore_client_certificate_expiry AlbListener#ignore_client_certificate_expiry}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener#ignore_client_certificate_expiry AlbListener#ignore_client_certificate_expiry}.
 
 ---
 
@@ -2108,7 +2906,7 @@ public readonly trustStoreArn: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/alb_listener#trust_store_arn AlbListener#trust_store_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener#trust_store_arn AlbListener#trust_store_arn}.
 
 ---
 
@@ -2126,8 +2924,8 @@ const albListenerTimeouts: albListener.AlbListenerTimeouts = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/alb_listener#create AlbListener#create}. |
-| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/alb_listener#update AlbListener#update}. |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener#create AlbListener#create}. |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener#update AlbListener#update}. |
 
 ---
 
@@ -2139,7 +2937,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/alb_listener#create AlbListener#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener#create AlbListener#create}.
 
 ---
 
@@ -2151,7 +2949,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/alb_listener#update AlbListener#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/alb_listener#update AlbListener#update}.
 
 ---
 

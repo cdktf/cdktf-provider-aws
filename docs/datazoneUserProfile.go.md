@@ -4,12 +4,12 @@
 
 ### DatazoneUserProfile <a name="DatazoneUserProfile" id="@cdktf/provider-aws.datazoneUserProfile.DatazoneUserProfile"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/datazone_user_profile aws_datazone_user_profile}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/datazone_user_profile aws_datazone_user_profile}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.datazoneUserProfile.DatazoneUserProfile.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/datazoneuserprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/datazoneuserprofile"
 
 datazoneuserprofile.NewDatazoneUserProfile(scope Construct, id *string, config DatazoneUserProfileConfig) DatazoneUserProfile
 ```
@@ -412,7 +412,7 @@ func ResetUserType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.datazoneUserProfile.DatazoneUserProfile.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/datazoneuserprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/datazoneuserprofile"
 
 datazoneuserprofile.DatazoneUserProfile_IsConstruct(x interface{}) *bool
 ```
@@ -444,7 +444,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.datazoneUserProfile.DatazoneUserProfile.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/datazoneuserprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/datazoneuserprofile"
 
 datazoneuserprofile.DatazoneUserProfile_IsTerraformElement(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ datazoneuserprofile.DatazoneUserProfile_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.datazoneUserProfile.DatazoneUserProfile.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/datazoneuserprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/datazoneuserprofile"
 
 datazoneuserprofile.DatazoneUserProfile_IsTerraformResource(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ datazoneuserprofile.DatazoneUserProfile_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.datazoneUserProfile.DatazoneUserProfile.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/datazoneuserprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/datazoneuserprofile"
 
 datazoneuserprofile.DatazoneUserProfile_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -501,7 +501,7 @@ The construct id used in the generated config for the DatazoneUserProfile to imp
 
 The id of the existing DatazoneUserProfile that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/datazone_user_profile#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/datazone_user_profile#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -844,7 +844,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.datazoneUserProfile.DatazoneUserProfileConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/datazoneuserprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/datazoneuserprofile"
 
 &datazoneuserprofile.DatazoneUserProfileConfig {
 	Connection: interface{},
@@ -857,7 +857,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/datazoneuserprofile"
 	DomainIdentifier: *string,
 	UserIdentifier: *string,
 	Status: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v19.datazoneUserProfile.DatazoneUserProfileTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.datazoneUserProfile.DatazoneUserProfileTimeouts,
 	UserType: *string,
 }
 ```
@@ -873,11 +873,11 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/datazoneuserprofile"
 | <code><a href="#@cdktf/provider-aws.datazoneUserProfile.DatazoneUserProfileConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.datazoneUserProfile.DatazoneUserProfileConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.datazoneUserProfile.DatazoneUserProfileConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.datazoneUserProfile.DatazoneUserProfileConfig.property.domainIdentifier">DomainIdentifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/datazone_user_profile#domain_identifier DatazoneUserProfile#domain_identifier}. |
-| <code><a href="#@cdktf/provider-aws.datazoneUserProfile.DatazoneUserProfileConfig.property.userIdentifier">UserIdentifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/datazone_user_profile#user_identifier DatazoneUserProfile#user_identifier}. |
-| <code><a href="#@cdktf/provider-aws.datazoneUserProfile.DatazoneUserProfileConfig.property.status">Status</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/datazone_user_profile#status DatazoneUserProfile#status}. |
+| <code><a href="#@cdktf/provider-aws.datazoneUserProfile.DatazoneUserProfileConfig.property.domainIdentifier">DomainIdentifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/datazone_user_profile#domain_identifier DatazoneUserProfile#domain_identifier}. |
+| <code><a href="#@cdktf/provider-aws.datazoneUserProfile.DatazoneUserProfileConfig.property.userIdentifier">UserIdentifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/datazone_user_profile#user_identifier DatazoneUserProfile#user_identifier}. |
+| <code><a href="#@cdktf/provider-aws.datazoneUserProfile.DatazoneUserProfileConfig.property.status">Status</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/datazone_user_profile#status DatazoneUserProfile#status}. |
 | <code><a href="#@cdktf/provider-aws.datazoneUserProfile.DatazoneUserProfileConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-aws.datazoneUserProfile.DatazoneUserProfileTimeouts">DatazoneUserProfileTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktf/provider-aws.datazoneUserProfile.DatazoneUserProfileConfig.property.userType">UserType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/datazone_user_profile#user_type DatazoneUserProfile#user_type}. |
+| <code><a href="#@cdktf/provider-aws.datazoneUserProfile.DatazoneUserProfileConfig.property.userType">UserType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/datazone_user_profile#user_type DatazoneUserProfile#user_type}. |
 
 ---
 
@@ -959,7 +959,7 @@ DomainIdentifier *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/datazone_user_profile#domain_identifier DatazoneUserProfile#domain_identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/datazone_user_profile#domain_identifier DatazoneUserProfile#domain_identifier}.
 
 ---
 
@@ -971,7 +971,7 @@ UserIdentifier *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/datazone_user_profile#user_identifier DatazoneUserProfile#user_identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/datazone_user_profile#user_identifier DatazoneUserProfile#user_identifier}.
 
 ---
 
@@ -983,7 +983,7 @@ Status *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/datazone_user_profile#status DatazoneUserProfile#status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/datazone_user_profile#status DatazoneUserProfile#status}.
 
 ---
 
@@ -997,7 +997,7 @@ Timeouts DatazoneUserProfileTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/datazone_user_profile#timeouts DatazoneUserProfile#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/datazone_user_profile#timeouts DatazoneUserProfile#timeouts}
 
 ---
 
@@ -1009,7 +1009,7 @@ UserType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/datazone_user_profile#user_type DatazoneUserProfile#user_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/datazone_user_profile#user_type DatazoneUserProfile#user_type}.
 
 ---
 
@@ -1018,7 +1018,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.datazoneUserProfile.DatazoneUserProfileDetails.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/datazoneuserprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/datazoneuserprofile"
 
 &datazoneuserprofile.DatazoneUserProfileDetails {
 
@@ -1031,7 +1031,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/datazoneuserprofile"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.datazoneUserProfile.DatazoneUserProfileDetailsIam.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/datazoneuserprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/datazoneuserprofile"
 
 &datazoneuserprofile.DatazoneUserProfileDetailsIam {
 
@@ -1044,7 +1044,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/datazoneuserprofile"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.datazoneUserProfile.DatazoneUserProfileDetailsSso.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/datazoneuserprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/datazoneuserprofile"
 
 &datazoneuserprofile.DatazoneUserProfileDetailsSso {
 
@@ -1057,7 +1057,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/datazoneuserprofile"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.datazoneUserProfile.DatazoneUserProfileTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/datazoneuserprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/datazoneuserprofile"
 
 &datazoneuserprofile.DatazoneUserProfileTimeouts {
 	Create: *string,
@@ -1084,7 +1084,7 @@ Create *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/datazone_user_profile#create DatazoneUserProfile#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/datazone_user_profile#create DatazoneUserProfile#create}
 
 ---
 
@@ -1098,7 +1098,7 @@ Update *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/datazone_user_profile#update DatazoneUserProfile#update}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/datazone_user_profile#update DatazoneUserProfile#update}
 
 ---
 
@@ -1109,7 +1109,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.datazoneUserProfile.DatazoneUserProfileDetailsIamList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/datazoneuserprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/datazoneuserprofile"
 
 datazoneuserprofile.NewDatazoneUserProfileDetailsIamList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DatazoneUserProfileDetailsIamList
 ```
@@ -1258,7 +1258,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.datazoneUserProfile.DatazoneUserProfileDetailsIamOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/datazoneuserprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/datazoneuserprofile"
 
 datazoneuserprofile.NewDatazoneUserProfileDetailsIamOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DatazoneUserProfileDetailsIamOutputReference
 ```
@@ -1536,7 +1536,7 @@ func InternalValue() DatazoneUserProfileDetailsIam
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.datazoneUserProfile.DatazoneUserProfileDetailsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/datazoneuserprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/datazoneuserprofile"
 
 datazoneuserprofile.NewDatazoneUserProfileDetailsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DatazoneUserProfileDetailsList
 ```
@@ -1685,7 +1685,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.datazoneUserProfile.DatazoneUserProfileDetailsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/datazoneuserprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/datazoneuserprofile"
 
 datazoneuserprofile.NewDatazoneUserProfileDetailsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DatazoneUserProfileDetailsOutputReference
 ```
@@ -1974,7 +1974,7 @@ func InternalValue() DatazoneUserProfileDetails
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.datazoneUserProfile.DatazoneUserProfileDetailsSsoList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/datazoneuserprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/datazoneuserprofile"
 
 datazoneuserprofile.NewDatazoneUserProfileDetailsSsoList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DatazoneUserProfileDetailsSsoList
 ```
@@ -2123,7 +2123,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.datazoneUserProfile.DatazoneUserProfileDetailsSsoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/datazoneuserprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/datazoneuserprofile"
 
 datazoneuserprofile.NewDatazoneUserProfileDetailsSsoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DatazoneUserProfileDetailsSsoOutputReference
 ```
@@ -2423,7 +2423,7 @@ func InternalValue() DatazoneUserProfileDetailsSso
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.datazoneUserProfile.DatazoneUserProfileTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/datazoneuserprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/datazoneuserprofile"
 
 datazoneuserprofile.NewDatazoneUserProfileTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DatazoneUserProfileTimeoutsOutputReference
 ```

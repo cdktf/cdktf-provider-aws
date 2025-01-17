@@ -4,12 +4,12 @@
 
 ### DataAwsApprunnerHostedZoneId <a name="DataAwsApprunnerHostedZoneId" id="@cdktf/provider-aws.dataAwsApprunnerHostedZoneId.DataAwsApprunnerHostedZoneId"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/data-sources/apprunner_hosted_zone_id aws_apprunner_hosted_zone_id}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/data-sources/apprunner_hosted_zone_id aws_apprunner_hosted_zone_id}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsApprunnerHostedZoneId.DataAwsApprunnerHostedZoneId.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsapprunnerhostedzoneid"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsapprunnerhostedzoneid"
 
 dataawsapprunnerhostedzoneid.NewDataAwsApprunnerHostedZoneId(scope Construct, id *string, config DataAwsApprunnerHostedZoneIdConfig) DataAwsApprunnerHostedZoneId
 ```
@@ -283,7 +283,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsApprunnerHostedZoneId.DataAwsApprunnerHostedZoneId.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsapprunnerhostedzoneid"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsapprunnerhostedzoneid"
 
 dataawsapprunnerhostedzoneid.DataAwsApprunnerHostedZoneId_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsApprunnerHostedZoneId.DataAwsApprunnerHostedZoneId.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsapprunnerhostedzoneid"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsapprunnerhostedzoneid"
 
 dataawsapprunnerhostedzoneid.DataAwsApprunnerHostedZoneId_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ dataawsapprunnerhostedzoneid.DataAwsApprunnerHostedZoneId_IsTerraformElement(x i
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsApprunnerHostedZoneId.DataAwsApprunnerHostedZoneId.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsapprunnerhostedzoneid"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsapprunnerhostedzoneid"
 
 dataawsapprunnerhostedzoneid.DataAwsApprunnerHostedZoneId_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ dataawsapprunnerhostedzoneid.DataAwsApprunnerHostedZoneId_IsTerraformDataSource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsApprunnerHostedZoneId.DataAwsApprunnerHostedZoneId.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsapprunnerhostedzoneid"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsapprunnerhostedzoneid"
 
 dataawsapprunnerhostedzoneid.DataAwsApprunnerHostedZoneId_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -372,7 +372,7 @@ The construct id used in the generated config for the DataAwsApprunnerHostedZone
 
 The id of the existing DataAwsApprunnerHostedZoneId that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/data-sources/apprunner_hosted_zone_id#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/data-sources/apprunner_hosted_zone_id#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -583,7 +583,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsApprunnerHostedZoneId.DataAwsApprunnerHostedZoneIdConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsapprunnerhostedzoneid"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsapprunnerhostedzoneid"
 
 &dataawsapprunnerhostedzoneid.DataAwsApprunnerHostedZoneIdConfig {
 	Connection: interface{},
@@ -608,7 +608,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsapprunnerhostedzon
 | <code><a href="#@cdktf/provider-aws.dataAwsApprunnerHostedZoneId.DataAwsApprunnerHostedZoneIdConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsApprunnerHostedZoneId.DataAwsApprunnerHostedZoneIdConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsApprunnerHostedZoneId.DataAwsApprunnerHostedZoneIdConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsApprunnerHostedZoneId.DataAwsApprunnerHostedZoneIdConfig.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/data-sources/apprunner_hosted_zone_id#region DataAwsApprunnerHostedZoneId#region}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsApprunnerHostedZoneId.DataAwsApprunnerHostedZoneIdConfig.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/data-sources/apprunner_hosted_zone_id#region DataAwsApprunnerHostedZoneId#region}. |
 
 ---
 
@@ -690,7 +690,7 @@ Region *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/data-sources/apprunner_hosted_zone_id#region DataAwsApprunnerHostedZoneId#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/data-sources/apprunner_hosted_zone_id#region DataAwsApprunnerHostedZoneId#region}.
 
 ---
 
