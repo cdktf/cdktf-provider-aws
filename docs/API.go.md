@@ -1465,6 +1465,7 @@ The following submodules are available:
 - [mainRouteTableAssociation](./mainRouteTableAssociation.go.md)
 - [mediaConvertQueue](./mediaConvertQueue.go.md)
 - [mediaPackageChannel](./mediaPackageChannel.go.md)
+- [mediaPackagev2ChannelGroup](./mediaPackagev2ChannelGroup.go.md)
 - [mediaStoreContainer](./mediaStoreContainer.go.md)
 - [mediaStoreContainerPolicy](./mediaStoreContainerPolicy.go.md)
 - [medialiveChannel](./medialiveChannel.go.md)

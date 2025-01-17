@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/ec2_subnet_cidr_reservation
+// https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/ec2_subnet_cidr_reservation
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,32 +13,32 @@ import * as cdktf from 'cdktf';
 
 export interface Ec2SubnetCidrReservationConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/ec2_subnet_cidr_reservation#cidr_block Ec2SubnetCidrReservation#cidr_block}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/ec2_subnet_cidr_reservation#cidr_block Ec2SubnetCidrReservation#cidr_block}
   */
   readonly cidrBlock: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/ec2_subnet_cidr_reservation#description Ec2SubnetCidrReservation#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/ec2_subnet_cidr_reservation#description Ec2SubnetCidrReservation#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/ec2_subnet_cidr_reservation#id Ec2SubnetCidrReservation#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/ec2_subnet_cidr_reservation#id Ec2SubnetCidrReservation#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/ec2_subnet_cidr_reservation#reservation_type Ec2SubnetCidrReservation#reservation_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/ec2_subnet_cidr_reservation#reservation_type Ec2SubnetCidrReservation#reservation_type}
   */
   readonly reservationType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/ec2_subnet_cidr_reservation#subnet_id Ec2SubnetCidrReservation#subnet_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/ec2_subnet_cidr_reservation#subnet_id Ec2SubnetCidrReservation#subnet_id}
   */
   readonly subnetId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/ec2_subnet_cidr_reservation aws_ec2_subnet_cidr_reservation}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/ec2_subnet_cidr_reservation aws_ec2_subnet_cidr_reservation}
 */
 export class Ec2SubnetCidrReservation extends cdktf.TerraformResource {
 
@@ -54,7 +54,7 @@ export class Ec2SubnetCidrReservation extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a Ec2SubnetCidrReservation resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Ec2SubnetCidrReservation to import
-  * @param importFromId The id of the existing Ec2SubnetCidrReservation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/ec2_subnet_cidr_reservation#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Ec2SubnetCidrReservation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/ec2_subnet_cidr_reservation#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Ec2SubnetCidrReservation to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -66,7 +66,7 @@ export class Ec2SubnetCidrReservation extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/ec2_subnet_cidr_reservation aws_ec2_subnet_cidr_reservation} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/ec2_subnet_cidr_reservation aws_ec2_subnet_cidr_reservation} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -77,7 +77,7 @@ export class Ec2SubnetCidrReservation extends cdktf.TerraformResource {
       terraformResourceType: 'aws_ec2_subnet_cidr_reservation',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.83.1',
+        providerVersion: '5.84.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

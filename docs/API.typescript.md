@@ -1465,6 +1465,7 @@ The following submodules are available:
 - [mainRouteTableAssociation](./mainRouteTableAssociation.typescript.md)
 - [mediaConvertQueue](./mediaConvertQueue.typescript.md)
 - [mediaPackageChannel](./mediaPackageChannel.typescript.md)
+- [mediaPackagev2ChannelGroup](./mediaPackagev2ChannelGroup.typescript.md)
 - [mediaStoreContainer](./mediaStoreContainer.typescript.md)
 - [mediaStoreContainerPolicy](./mediaStoreContainerPolicy.typescript.md)
 - [medialiveChannel](./medialiveChannel.typescript.md)

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/data-sources/ec2_instance_type
+// https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/data-sources/ec2_instance_type
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,20 +13,20 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsEc2InstanceTypeConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/data-sources/ec2_instance_type#id DataAwsEc2InstanceType#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/data-sources/ec2_instance_type#id DataAwsEc2InstanceType#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/data-sources/ec2_instance_type#instance_type DataAwsEc2InstanceType#instance_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/data-sources/ec2_instance_type#instance_type DataAwsEc2InstanceType#instance_type}
   */
   readonly instanceType: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/data-sources/ec2_instance_type#timeouts DataAwsEc2InstanceType#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/data-sources/ec2_instance_type#timeouts DataAwsEc2InstanceType#timeouts}
   */
   readonly timeouts?: DataAwsEc2InstanceTypeTimeouts;
 }
@@ -271,6 +271,11 @@ export class DataAwsEc2InstanceTypeInferenceAcceleratorsOutputReference extends 
     return this.getStringAttribute('manufacturer');
   }
 
+  // memory_size - computed: true, optional: false, required: false
+  public get memorySize() {
+    return this.getNumberAttribute('memory_size');
+  }
+
   // name - computed: true, optional: false, required: false
   public get name() {
     return this.getStringAttribute('name');
@@ -380,9 +385,289 @@ export class DataAwsEc2InstanceTypeInstanceDisksList extends cdktf.ComplexList {
     return new DataAwsEc2InstanceTypeInstanceDisksOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface DataAwsEc2InstanceTypeMediaAccelerators {
+}
+
+export function dataAwsEc2InstanceTypeMediaAcceleratorsToTerraform(struct?: DataAwsEc2InstanceTypeMediaAccelerators): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataAwsEc2InstanceTypeMediaAcceleratorsToHclTerraform(struct?: DataAwsEc2InstanceTypeMediaAccelerators): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataAwsEc2InstanceTypeMediaAcceleratorsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsEc2InstanceTypeMediaAccelerators | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsEc2InstanceTypeMediaAccelerators | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // count - computed: true, optional: false, required: false
+  public get count() {
+    return this.getNumberAttribute('count');
+  }
+
+  // manufacturer - computed: true, optional: false, required: false
+  public get manufacturer() {
+    return this.getStringAttribute('manufacturer');
+  }
+
+  // memory_size - computed: true, optional: false, required: false
+  public get memorySize() {
+    return this.getNumberAttribute('memory_size');
+  }
+
+  // name - computed: true, optional: false, required: false
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+}
+
+export class DataAwsEc2InstanceTypeMediaAcceleratorsList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsEc2InstanceTypeMediaAcceleratorsOutputReference {
+    return new DataAwsEc2InstanceTypeMediaAcceleratorsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataAwsEc2InstanceTypeNetworkCards {
+}
+
+export function dataAwsEc2InstanceTypeNetworkCardsToTerraform(struct?: DataAwsEc2InstanceTypeNetworkCards): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataAwsEc2InstanceTypeNetworkCardsToHclTerraform(struct?: DataAwsEc2InstanceTypeNetworkCards): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataAwsEc2InstanceTypeNetworkCardsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsEc2InstanceTypeNetworkCards | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsEc2InstanceTypeNetworkCards | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // baseline_bandwidth - computed: true, optional: false, required: false
+  public get baselineBandwidth() {
+    return this.getNumberAttribute('baseline_bandwidth');
+  }
+
+  // index - computed: true, optional: false, required: false
+  public get index() {
+    return this.getNumberAttribute('index');
+  }
+
+  // maximum_interfaces - computed: true, optional: false, required: false
+  public get maximumInterfaces() {
+    return this.getNumberAttribute('maximum_interfaces');
+  }
+
+  // peak_bandwidth - computed: true, optional: false, required: false
+  public get peakBandwidth() {
+    return this.getNumberAttribute('peak_bandwidth');
+  }
+
+  // performance - computed: true, optional: false, required: false
+  public get performance() {
+    return this.getStringAttribute('performance');
+  }
+}
+
+export class DataAwsEc2InstanceTypeNetworkCardsList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsEc2InstanceTypeNetworkCardsOutputReference {
+    return new DataAwsEc2InstanceTypeNetworkCardsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataAwsEc2InstanceTypeNeuronDevices {
+}
+
+export function dataAwsEc2InstanceTypeNeuronDevicesToTerraform(struct?: DataAwsEc2InstanceTypeNeuronDevices): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataAwsEc2InstanceTypeNeuronDevicesToHclTerraform(struct?: DataAwsEc2InstanceTypeNeuronDevices): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataAwsEc2InstanceTypeNeuronDevicesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsEc2InstanceTypeNeuronDevices | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsEc2InstanceTypeNeuronDevices | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // core_count - computed: true, optional: false, required: false
+  public get coreCount() {
+    return this.getNumberAttribute('core_count');
+  }
+
+  // core_version - computed: true, optional: false, required: false
+  public get coreVersion() {
+    return this.getNumberAttribute('core_version');
+  }
+
+  // count - computed: true, optional: false, required: false
+  public get count() {
+    return this.getNumberAttribute('count');
+  }
+
+  // memory_size - computed: true, optional: false, required: false
+  public get memorySize() {
+    return this.getNumberAttribute('memory_size');
+  }
+
+  // name - computed: true, optional: false, required: false
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+}
+
+export class DataAwsEc2InstanceTypeNeuronDevicesList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsEc2InstanceTypeNeuronDevicesOutputReference {
+    return new DataAwsEc2InstanceTypeNeuronDevicesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface DataAwsEc2InstanceTypeTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/data-sources/ec2_instance_type#read DataAwsEc2InstanceType#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/data-sources/ec2_instance_type#read DataAwsEc2InstanceType#read}
   */
   readonly read?: string;
 }
@@ -476,7 +761,7 @@ export class DataAwsEc2InstanceTypeTimeoutsOutputReference extends cdktf.Complex
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/data-sources/ec2_instance_type aws_ec2_instance_type}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/data-sources/ec2_instance_type aws_ec2_instance_type}
 */
 export class DataAwsEc2InstanceType extends cdktf.TerraformDataSource {
 
@@ -492,7 +777,7 @@ export class DataAwsEc2InstanceType extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataAwsEc2InstanceType resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsEc2InstanceType to import
-  * @param importFromId The id of the existing DataAwsEc2InstanceType that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/data-sources/ec2_instance_type#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsEc2InstanceType that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/data-sources/ec2_instance_type#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsEc2InstanceType to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -504,7 +789,7 @@ export class DataAwsEc2InstanceType extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/data-sources/ec2_instance_type aws_ec2_instance_type} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/data-sources/ec2_instance_type aws_ec2_instance_type} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -515,7 +800,7 @@ export class DataAwsEc2InstanceType extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_ec2_instance_type',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.83.1',
+        providerVersion: '5.84.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -540,9 +825,19 @@ export class DataAwsEc2InstanceType extends cdktf.TerraformDataSource {
     return this.getBooleanAttribute('auto_recovery_supported');
   }
 
+  // bandwidth_weightings - computed: true, optional: false, required: false
+  public get bandwidthWeightings() {
+    return cdktf.Fn.tolist(this.getListAttribute('bandwidth_weightings'));
+  }
+
   // bare_metal - computed: true, optional: false, required: false
   public get bareMetal() {
     return this.getBooleanAttribute('bare_metal');
+  }
+
+  // boot_modes - computed: true, optional: false, required: false
+  public get bootModes() {
+    return cdktf.Fn.tolist(this.getListAttribute('boot_modes'));
   }
 
   // burstable_performance_supported - computed: true, optional: false, required: false
@@ -563,6 +858,11 @@ export class DataAwsEc2InstanceType extends cdktf.TerraformDataSource {
   // default_cores - computed: true, optional: false, required: false
   public get defaultCores() {
     return this.getNumberAttribute('default_cores');
+  }
+
+  // default_network_card_index - computed: true, optional: false, required: false
+  public get defaultNetworkCardIndex() {
+    return this.getNumberAttribute('default_network_card_index');
   }
 
   // default_threads_per_core - computed: true, optional: false, required: false
@@ -620,9 +920,19 @@ export class DataAwsEc2InstanceType extends cdktf.TerraformDataSource {
     return this.getNumberAttribute('ebs_performance_maximum_throughput');
   }
 
+  // efa_maximum_interfaces - computed: true, optional: false, required: false
+  public get efaMaximumInterfaces() {
+    return this.getNumberAttribute('efa_maximum_interfaces');
+  }
+
   // efa_supported - computed: true, optional: false, required: false
   public get efaSupported() {
     return this.getBooleanAttribute('efa_supported');
+  }
+
+  // ena_srd_supported - computed: true, optional: false, required: false
+  public get enaSrdSupported() {
+    return this.getBooleanAttribute('ena_srd_supported');
   }
 
   // ena_support - computed: true, optional: false, required: false
@@ -733,9 +1043,21 @@ export class DataAwsEc2InstanceType extends cdktf.TerraformDataSource {
     return this.getNumberAttribute('maximum_network_interfaces');
   }
 
+  // media_accelerators - computed: true, optional: false, required: false
+  private _mediaAccelerators = new DataAwsEc2InstanceTypeMediaAcceleratorsList(this, "media_accelerators", true);
+  public get mediaAccelerators() {
+    return this._mediaAccelerators;
+  }
+
   // memory_size - computed: true, optional: false, required: false
   public get memorySize() {
     return this.getNumberAttribute('memory_size');
+  }
+
+  // network_cards - computed: true, optional: false, required: false
+  private _networkCards = new DataAwsEc2InstanceTypeNetworkCardsList(this, "network_cards", true);
+  public get networkCards() {
+    return this._networkCards;
   }
 
   // network_performance - computed: true, optional: false, required: false
@@ -743,9 +1065,40 @@ export class DataAwsEc2InstanceType extends cdktf.TerraformDataSource {
     return this.getStringAttribute('network_performance');
   }
 
+  // neuron_devices - computed: true, optional: false, required: false
+  private _neuronDevices = new DataAwsEc2InstanceTypeNeuronDevicesList(this, "neuron_devices", true);
+  public get neuronDevices() {
+    return this._neuronDevices;
+  }
+
+  // nitro_enclaves_support - computed: true, optional: false, required: false
+  public get nitroEnclavesSupport() {
+    return this.getStringAttribute('nitro_enclaves_support');
+  }
+
+  // nitro_tpm_support - computed: true, optional: false, required: false
+  public get nitroTpmSupport() {
+    return this.getStringAttribute('nitro_tpm_support');
+  }
+
+  // nitro_tpm_supported_versions - computed: true, optional: false, required: false
+  public get nitroTpmSupportedVersions() {
+    return cdktf.Fn.tolist(this.getListAttribute('nitro_tpm_supported_versions'));
+  }
+
+  // phc_support - computed: true, optional: false, required: false
+  public get phcSupport() {
+    return this.getStringAttribute('phc_support');
+  }
+
   // supported_architectures - computed: true, optional: false, required: false
   public get supportedArchitectures() {
     return this.getListAttribute('supported_architectures');
+  }
+
+  // supported_cpu_features - computed: true, optional: false, required: false
+  public get supportedCpuFeatures() {
+    return cdktf.Fn.tolist(this.getListAttribute('supported_cpu_features'));
   }
 
   // supported_placement_strategies - computed: true, optional: false, required: false
@@ -783,9 +1136,24 @@ export class DataAwsEc2InstanceType extends cdktf.TerraformDataSource {
     return this.getNumberAttribute('total_gpu_memory');
   }
 
+  // total_inference_memory - computed: true, optional: false, required: false
+  public get totalInferenceMemory() {
+    return this.getNumberAttribute('total_inference_memory');
+  }
+
   // total_instance_storage - computed: true, optional: false, required: false
   public get totalInstanceStorage() {
     return this.getNumberAttribute('total_instance_storage');
+  }
+
+  // total_media_memory - computed: true, optional: false, required: false
+  public get totalMediaMemory() {
+    return this.getNumberAttribute('total_media_memory');
+  }
+
+  // total_neuron_device_memory - computed: true, optional: false, required: false
+  public get totalNeuronDeviceMemory() {
+    return this.getNumberAttribute('total_neuron_device_memory');
   }
 
   // valid_cores - computed: true, optional: false, required: false

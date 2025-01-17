@@ -869,6 +869,7 @@ export * as macie2OrganizationAdminAccount from './macie2-organization-admin-acc
 export * as mainRouteTableAssociation from './main-route-table-association';
 export * as mediaConvertQueue from './media-convert-queue';
 export * as mediaPackageChannel from './media-package-channel';
+export * as mediaPackagev2ChannelGroup from './media-packagev2-channel-group';
 export * as mediaStoreContainer from './media-store-container';
 export * as mediaStoreContainerPolicy from './media-store-container-policy';
 export * as medialiveChannel from './medialive-channel';
