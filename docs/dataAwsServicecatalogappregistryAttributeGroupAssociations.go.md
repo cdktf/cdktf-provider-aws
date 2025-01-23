@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsServicecatalogappregistryAttributeGroupAssociations.DataAwsServicecatalogappregistryAttributeGroupAssociations.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsservicecatalogappregistryattributegroupassociations"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsservicecatalogappregistryattributegroupassociations"
 
 dataawsservicecatalogappregistryattributegroupassociations.NewDataAwsServicecatalogappregistryAttributeGroupAssociations(scope Construct, id *string, config DataAwsServicecatalogappregistryAttributeGroupAssociationsConfig) DataAwsServicecatalogappregistryAttributeGroupAssociations
 ```
@@ -290,7 +290,7 @@ func ResetName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsServicecatalogappregistryAttributeGroupAssociations.DataAwsServicecatalogappregistryAttributeGroupAssociations.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsservicecatalogappregistryattributegroupassociations"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsservicecatalogappregistryattributegroupassociations"
 
 dataawsservicecatalogappregistryattributegroupassociations.DataAwsServicecatalogappregistryAttributeGroupAssociations_IsConstruct(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsServicecatalogappregistryAttributeGroupAssociations.DataAwsServicecatalogappregistryAttributeGroupAssociations.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsservicecatalogappregistryattributegroupassociations"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsservicecatalogappregistryattributegroupassociations"
 
 dataawsservicecatalogappregistryattributegroupassociations.DataAwsServicecatalogappregistryAttributeGroupAssociations_IsTerraformElement(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ dataawsservicecatalogappregistryattributegroupassociations.DataAwsServicecatalog
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsServicecatalogappregistryAttributeGroupAssociations.DataAwsServicecatalogappregistryAttributeGroupAssociations.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsservicecatalogappregistryattributegroupassociations"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsservicecatalogappregistryattributegroupassociations"
 
 dataawsservicecatalogappregistryattributegroupassociations.DataAwsServicecatalogappregistryAttributeGroupAssociations_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ dataawsservicecatalogappregistryattributegroupassociations.DataAwsServicecatalog
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsServicecatalogappregistryAttributeGroupAssociations.DataAwsServicecatalogappregistryAttributeGroupAssociations.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsservicecatalogappregistryattributegroupassociations"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsservicecatalogappregistryattributegroupassociations"
 
 dataawsservicecatalogappregistryattributegroupassociations.DataAwsServicecatalogappregistryAttributeGroupAssociations_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -612,7 +612,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsServicecatalogappregistryAttributeGroupAssociations.DataAwsServicecatalogappregistryAttributeGroupAssociationsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsservicecatalogappregistryattributegroupassociations"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsservicecatalogappregistryattributegroupassociations"
 
 &dataawsservicecatalogappregistryattributegroupassociations.DataAwsServicecatalogappregistryAttributeGroupAssociationsConfig {
 	Connection: interface{},
