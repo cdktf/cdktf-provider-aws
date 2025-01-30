@@ -55,14 +55,14 @@
     "commit-and-tag-version": "^12",
     "constructs": "^10.3.0",
     "dot-prop": "^5.2.0",
-    "jsii": "~5.4.0",
+    "jsii": "~5.5.0",
     "jsii-diff": "^1.106.0",
     "jsii-docgen": "^10.2.3",
     "jsii-pacmak": "^1.106.0",
-    "jsii-rosetta": "~5.4.0",
+    "jsii-rosetta": "~5.5.0",
     "projen": "^0.91.6",
     "semver": "^7.5.3",
-    "typescript": "~5.4.0"
+    "typescript": "~5.5.0"
   },
   "peerDependencies": {
     "cdktf": "^0.20.0",
