@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/vpc_endpoint
+// https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/vpc_endpoint
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,80 +8,88 @@ import * as cdktf from 'cdktf';
 
 export interface VpcEndpointConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/vpc_endpoint#auto_accept VpcEndpoint#auto_accept}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/vpc_endpoint#auto_accept VpcEndpoint#auto_accept}
   */
   readonly autoAccept?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/vpc_endpoint#id VpcEndpoint#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/vpc_endpoint#id VpcEndpoint#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/vpc_endpoint#ip_address_type VpcEndpoint#ip_address_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/vpc_endpoint#ip_address_type VpcEndpoint#ip_address_type}
   */
   readonly ipAddressType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/vpc_endpoint#policy VpcEndpoint#policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/vpc_endpoint#policy VpcEndpoint#policy}
   */
   readonly policy?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/vpc_endpoint#private_dns_enabled VpcEndpoint#private_dns_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/vpc_endpoint#private_dns_enabled VpcEndpoint#private_dns_enabled}
   */
   readonly privateDnsEnabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/vpc_endpoint#route_table_ids VpcEndpoint#route_table_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/vpc_endpoint#resource_configuration_arn VpcEndpoint#resource_configuration_arn}
+  */
+  readonly resourceConfigurationArn?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/vpc_endpoint#route_table_ids VpcEndpoint#route_table_ids}
   */
   readonly routeTableIds?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/vpc_endpoint#security_group_ids VpcEndpoint#security_group_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/vpc_endpoint#security_group_ids VpcEndpoint#security_group_ids}
   */
   readonly securityGroupIds?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/vpc_endpoint#service_name VpcEndpoint#service_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/vpc_endpoint#service_name VpcEndpoint#service_name}
   */
-  readonly serviceName: string;
+  readonly serviceName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/vpc_endpoint#service_region VpcEndpoint#service_region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/vpc_endpoint#service_network_arn VpcEndpoint#service_network_arn}
+  */
+  readonly serviceNetworkArn?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/vpc_endpoint#service_region VpcEndpoint#service_region}
   */
   readonly serviceRegion?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/vpc_endpoint#subnet_ids VpcEndpoint#subnet_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/vpc_endpoint#subnet_ids VpcEndpoint#subnet_ids}
   */
   readonly subnetIds?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/vpc_endpoint#tags VpcEndpoint#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/vpc_endpoint#tags VpcEndpoint#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/vpc_endpoint#tags_all VpcEndpoint#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/vpc_endpoint#tags_all VpcEndpoint#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/vpc_endpoint#vpc_endpoint_type VpcEndpoint#vpc_endpoint_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/vpc_endpoint#vpc_endpoint_type VpcEndpoint#vpc_endpoint_type}
   */
   readonly vpcEndpointType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/vpc_endpoint#vpc_id VpcEndpoint#vpc_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/vpc_endpoint#vpc_id VpcEndpoint#vpc_id}
   */
   readonly vpcId: string;
   /**
   * dns_options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/vpc_endpoint#dns_options VpcEndpoint#dns_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/vpc_endpoint#dns_options VpcEndpoint#dns_options}
   */
   readonly dnsOptions?: VpcEndpointDnsOptions;
   /**
   * subnet_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/vpc_endpoint#subnet_configuration VpcEndpoint#subnet_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/vpc_endpoint#subnet_configuration VpcEndpoint#subnet_configuration}
   */
   readonly subnetConfiguration?: VpcEndpointSubnetConfiguration[] | cdktf.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/vpc_endpoint#timeouts VpcEndpoint#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/vpc_endpoint#timeouts VpcEndpoint#timeouts}
   */
   readonly timeouts?: VpcEndpointTimeouts;
 }
@@ -172,11 +175,11 @@ export class VpcEndpointDnsEntryList extends cdktf.ComplexList {
 }
 export interface VpcEndpointDnsOptions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/vpc_endpoint#dns_record_ip_type VpcEndpoint#dns_record_ip_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/vpc_endpoint#dns_record_ip_type VpcEndpoint#dns_record_ip_type}
   */
   readonly dnsRecordIpType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/vpc_endpoint#private_dns_only_for_inbound_resolver_endpoint VpcEndpoint#private_dns_only_for_inbound_resolver_endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/vpc_endpoint#private_dns_only_for_inbound_resolver_endpoint VpcEndpoint#private_dns_only_for_inbound_resolver_endpoint}
   */
   readonly privateDnsOnlyForInboundResolverEndpoint?: boolean | cdktf.IResolvable;
 }
@@ -289,15 +292,15 @@ export class VpcEndpointDnsOptionsOutputReference extends cdktf.ComplexObject {
 }
 export interface VpcEndpointSubnetConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/vpc_endpoint#ipv4 VpcEndpoint#ipv4}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/vpc_endpoint#ipv4 VpcEndpoint#ipv4}
   */
   readonly ipv4?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/vpc_endpoint#ipv6 VpcEndpoint#ipv6}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/vpc_endpoint#ipv6 VpcEndpoint#ipv6}
   */
   readonly ipv6?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/vpc_endpoint#subnet_id VpcEndpoint#subnet_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/vpc_endpoint#subnet_id VpcEndpoint#subnet_id}
   */
   readonly subnetId?: string;
 }
@@ -471,15 +474,15 @@ export class VpcEndpointSubnetConfigurationList extends cdktf.ComplexList {
 }
 export interface VpcEndpointTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/vpc_endpoint#create VpcEndpoint#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/vpc_endpoint#create VpcEndpoint#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/vpc_endpoint#delete VpcEndpoint#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/vpc_endpoint#delete VpcEndpoint#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/vpc_endpoint#update VpcEndpoint#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/vpc_endpoint#update VpcEndpoint#update}
   */
   readonly update?: string;
 }
@@ -631,7 +634,7 @@ export class VpcEndpointTimeoutsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/vpc_endpoint aws_vpc_endpoint}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/vpc_endpoint aws_vpc_endpoint}
 */
 export class VpcEndpoint extends cdktf.TerraformResource {
 
@@ -647,7 +650,7 @@ export class VpcEndpoint extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a VpcEndpoint resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the VpcEndpoint to import
-  * @param importFromId The id of the existing VpcEndpoint that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/vpc_endpoint#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing VpcEndpoint that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/vpc_endpoint#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the VpcEndpoint to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -659,7 +662,7 @@ export class VpcEndpoint extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/vpc_endpoint aws_vpc_endpoint} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/vpc_endpoint aws_vpc_endpoint} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -670,7 +673,7 @@ export class VpcEndpoint extends cdktf.TerraformResource {
       terraformResourceType: 'aws_vpc_endpoint',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.84.0',
+        providerVersion: '5.85.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -686,9 +689,11 @@ export class VpcEndpoint extends cdktf.TerraformResource {
     this._ipAddressType = config.ipAddressType;
     this._policy = config.policy;
     this._privateDnsEnabled = config.privateDnsEnabled;
+    this._resourceConfigurationArn = config.resourceConfigurationArn;
     this._routeTableIds = config.routeTableIds;
     this._securityGroupIds = config.securityGroupIds;
     this._serviceName = config.serviceName;
+    this._serviceNetworkArn = config.serviceNetworkArn;
     this._serviceRegion = config.serviceRegion;
     this._subnetIds = config.subnetIds;
     this._tags = config.tags;
@@ -820,6 +825,22 @@ export class VpcEndpoint extends cdktf.TerraformResource {
     return this.getBooleanAttribute('requester_managed');
   }
 
+  // resource_configuration_arn - computed: false, optional: true, required: false
+  private _resourceConfigurationArn?: string; 
+  public get resourceConfigurationArn() {
+    return this.getStringAttribute('resource_configuration_arn');
+  }
+  public set resourceConfigurationArn(value: string) {
+    this._resourceConfigurationArn = value;
+  }
+  public resetResourceConfigurationArn() {
+    this._resourceConfigurationArn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get resourceConfigurationArnInput() {
+    return this._resourceConfigurationArn;
+  }
+
   // route_table_ids - computed: true, optional: true, required: false
   private _routeTableIds?: string[]; 
   public get routeTableIds() {
@@ -852,7 +873,7 @@ export class VpcEndpoint extends cdktf.TerraformResource {
     return this._securityGroupIds;
   }
 
-  // service_name - computed: false, optional: false, required: true
+  // service_name - computed: false, optional: true, required: false
   private _serviceName?: string; 
   public get serviceName() {
     return this.getStringAttribute('service_name');
@@ -860,9 +881,28 @@ export class VpcEndpoint extends cdktf.TerraformResource {
   public set serviceName(value: string) {
     this._serviceName = value;
   }
+  public resetServiceName() {
+    this._serviceName = undefined;
+  }
   // Temporarily expose input value. Use with caution.
   public get serviceNameInput() {
     return this._serviceName;
+  }
+
+  // service_network_arn - computed: false, optional: true, required: false
+  private _serviceNetworkArn?: string; 
+  public get serviceNetworkArn() {
+    return this.getStringAttribute('service_network_arn');
+  }
+  public set serviceNetworkArn(value: string) {
+    this._serviceNetworkArn = value;
+  }
+  public resetServiceNetworkArn() {
+    this._serviceNetworkArn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get serviceNetworkArnInput() {
+    return this._serviceNetworkArn;
   }
 
   // service_region - computed: true, optional: true, required: false
@@ -1022,9 +1062,11 @@ export class VpcEndpoint extends cdktf.TerraformResource {
       ip_address_type: cdktf.stringToTerraform(this._ipAddressType),
       policy: cdktf.stringToTerraform(this._policy),
       private_dns_enabled: cdktf.booleanToTerraform(this._privateDnsEnabled),
+      resource_configuration_arn: cdktf.stringToTerraform(this._resourceConfigurationArn),
       route_table_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._routeTableIds),
       security_group_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._securityGroupIds),
       service_name: cdktf.stringToTerraform(this._serviceName),
+      service_network_arn: cdktf.stringToTerraform(this._serviceNetworkArn),
       service_region: cdktf.stringToTerraform(this._serviceRegion),
       subnet_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._subnetIds),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
@@ -1069,6 +1111,12 @@ export class VpcEndpoint extends cdktf.TerraformResource {
         type: "simple",
         storageClassType: "boolean",
       },
+      resource_configuration_arn: {
+        value: cdktf.stringToHclTerraform(this._resourceConfigurationArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
       route_table_ids: {
         value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._routeTableIds),
         isBlock: false,
@@ -1083,6 +1131,12 @@ export class VpcEndpoint extends cdktf.TerraformResource {
       },
       service_name: {
         value: cdktf.stringToHclTerraform(this._serviceName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      service_network_arn: {
+        value: cdktf.stringToHclTerraform(this._serviceNetworkArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

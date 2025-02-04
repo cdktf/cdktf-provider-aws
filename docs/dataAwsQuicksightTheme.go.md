@@ -4,12 +4,12 @@
 
 ### DataAwsQuicksightTheme <a name="DataAwsQuicksightTheme" id="@cdktf/provider-aws.dataAwsQuicksightTheme.DataAwsQuicksightTheme"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/data-sources/quicksight_theme aws_quicksight_theme}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/data-sources/quicksight_theme aws_quicksight_theme}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsQuicksightTheme.DataAwsQuicksightTheme.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsquicksighttheme"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsquicksighttheme"
 
 dataawsquicksighttheme.NewDataAwsQuicksightTheme(scope Construct, id *string, config DataAwsQuicksightThemeConfig) DataAwsQuicksightTheme
 ```
@@ -297,7 +297,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsQuicksightTheme.DataAwsQuicksightTheme.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsquicksighttheme"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsquicksighttheme"
 
 dataawsquicksighttheme.DataAwsQuicksightTheme_IsConstruct(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsQuicksightTheme.DataAwsQuicksightTheme.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsquicksighttheme"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsquicksighttheme"
 
 dataawsquicksighttheme.DataAwsQuicksightTheme_IsTerraformElement(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ dataawsquicksighttheme.DataAwsQuicksightTheme_IsTerraformElement(x interface{}) 
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsQuicksightTheme.DataAwsQuicksightTheme.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsquicksighttheme"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsquicksighttheme"
 
 dataawsquicksighttheme.DataAwsQuicksightTheme_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ dataawsquicksighttheme.DataAwsQuicksightTheme_IsTerraformDataSource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsQuicksightTheme.DataAwsQuicksightTheme.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsquicksighttheme"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsquicksighttheme"
 
 dataawsquicksighttheme.DataAwsQuicksightTheme_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -386,7 +386,7 @@ The construct id used in the generated config for the DataAwsQuicksightTheme to 
 
 The id of the existing DataAwsQuicksightTheme that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/data-sources/quicksight_theme#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/data-sources/quicksight_theme#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -762,7 +762,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsQuicksightTheme.DataAwsQuicksightThemeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsquicksighttheme"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsquicksighttheme"
 
 &dataawsquicksighttheme.DataAwsQuicksightThemeConfig {
 	Connection: interface{},
@@ -790,10 +790,10 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsquicksighttheme"
 | <code><a href="#@cdktf/provider-aws.dataAwsQuicksightTheme.DataAwsQuicksightThemeConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsQuicksightTheme.DataAwsQuicksightThemeConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsQuicksightTheme.DataAwsQuicksightThemeConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsQuicksightTheme.DataAwsQuicksightThemeConfig.property.themeId">ThemeId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/data-sources/quicksight_theme#theme_id DataAwsQuicksightTheme#theme_id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsQuicksightTheme.DataAwsQuicksightThemeConfig.property.awsAccountId">AwsAccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/data-sources/quicksight_theme#aws_account_id DataAwsQuicksightTheme#aws_account_id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsQuicksightTheme.DataAwsQuicksightThemeConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/data-sources/quicksight_theme#id DataAwsQuicksightTheme#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsQuicksightTheme.DataAwsQuicksightThemeConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/data-sources/quicksight_theme#tags DataAwsQuicksightTheme#tags}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsQuicksightTheme.DataAwsQuicksightThemeConfig.property.themeId">ThemeId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/data-sources/quicksight_theme#theme_id DataAwsQuicksightTheme#theme_id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsQuicksightTheme.DataAwsQuicksightThemeConfig.property.awsAccountId">AwsAccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/data-sources/quicksight_theme#aws_account_id DataAwsQuicksightTheme#aws_account_id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsQuicksightTheme.DataAwsQuicksightThemeConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/data-sources/quicksight_theme#id DataAwsQuicksightTheme#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsQuicksightTheme.DataAwsQuicksightThemeConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/data-sources/quicksight_theme#tags DataAwsQuicksightTheme#tags}. |
 
 ---
 
@@ -875,7 +875,7 @@ ThemeId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/data-sources/quicksight_theme#theme_id DataAwsQuicksightTheme#theme_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/data-sources/quicksight_theme#theme_id DataAwsQuicksightTheme#theme_id}.
 
 ---
 
@@ -887,7 +887,7 @@ AwsAccountId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/data-sources/quicksight_theme#aws_account_id DataAwsQuicksightTheme#aws_account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/data-sources/quicksight_theme#aws_account_id DataAwsQuicksightTheme#aws_account_id}.
 
 ---
 
@@ -899,7 +899,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/data-sources/quicksight_theme#id DataAwsQuicksightTheme#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/data-sources/quicksight_theme#id DataAwsQuicksightTheme#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -914,7 +914,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/data-sources/quicksight_theme#tags DataAwsQuicksightTheme#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/data-sources/quicksight_theme#tags DataAwsQuicksightTheme#tags}.
 
 ---
 
@@ -923,7 +923,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsQuicksightTheme.DataAwsQuicksightThemeConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsquicksighttheme"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsquicksighttheme"
 
 &dataawsquicksighttheme.DataAwsQuicksightThemeConfiguration {
 
@@ -936,7 +936,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsquicksighttheme"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsQuicksightTheme.DataAwsQuicksightThemeConfigurationDataColorPalette.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsquicksighttheme"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsquicksighttheme"
 
 &dataawsquicksighttheme.DataAwsQuicksightThemeConfigurationDataColorPalette {
 
@@ -949,7 +949,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsquicksighttheme"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsQuicksightTheme.DataAwsQuicksightThemeConfigurationSheet.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsquicksighttheme"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsquicksighttheme"
 
 &dataawsquicksighttheme.DataAwsQuicksightThemeConfigurationSheet {
 
@@ -962,7 +962,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsquicksighttheme"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsQuicksightTheme.DataAwsQuicksightThemeConfigurationSheetTile.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsquicksighttheme"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsquicksighttheme"
 
 &dataawsquicksighttheme.DataAwsQuicksightThemeConfigurationSheetTile {
 
@@ -975,7 +975,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsquicksighttheme"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsQuicksightTheme.DataAwsQuicksightThemeConfigurationSheetTileBorder.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsquicksighttheme"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsquicksighttheme"
 
 &dataawsquicksighttheme.DataAwsQuicksightThemeConfigurationSheetTileBorder {
 
@@ -988,7 +988,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsquicksighttheme"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsQuicksightTheme.DataAwsQuicksightThemeConfigurationSheetTileLayout.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsquicksighttheme"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsquicksighttheme"
 
 &dataawsquicksighttheme.DataAwsQuicksightThemeConfigurationSheetTileLayout {
 
@@ -1001,7 +1001,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsquicksighttheme"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsQuicksightTheme.DataAwsQuicksightThemeConfigurationSheetTileLayoutGutter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsquicksighttheme"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsquicksighttheme"
 
 &dataawsquicksighttheme.DataAwsQuicksightThemeConfigurationSheetTileLayoutGutter {
 
@@ -1014,7 +1014,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsquicksighttheme"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsQuicksightTheme.DataAwsQuicksightThemeConfigurationSheetTileLayoutMargin.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsquicksighttheme"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsquicksighttheme"
 
 &dataawsquicksighttheme.DataAwsQuicksightThemeConfigurationSheetTileLayoutMargin {
 
@@ -1027,7 +1027,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsquicksighttheme"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsQuicksightTheme.DataAwsQuicksightThemeConfigurationTypography.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsquicksighttheme"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsquicksighttheme"
 
 &dataawsquicksighttheme.DataAwsQuicksightThemeConfigurationTypography {
 
@@ -1040,7 +1040,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsquicksighttheme"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsQuicksightTheme.DataAwsQuicksightThemeConfigurationTypographyFontFamilies.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsquicksighttheme"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsquicksighttheme"
 
 &dataawsquicksighttheme.DataAwsQuicksightThemeConfigurationTypographyFontFamilies {
 
@@ -1053,7 +1053,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsquicksighttheme"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsQuicksightTheme.DataAwsQuicksightThemeConfigurationUiColorPalette.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsquicksighttheme"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsquicksighttheme"
 
 &dataawsquicksighttheme.DataAwsQuicksightThemeConfigurationUiColorPalette {
 
@@ -1066,7 +1066,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsquicksighttheme"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsQuicksightTheme.DataAwsQuicksightThemePermissions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsquicksighttheme"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsquicksighttheme"
 
 &dataawsquicksighttheme.DataAwsQuicksightThemePermissions {
 
@@ -1081,7 +1081,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsquicksighttheme"
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsQuicksightTheme.DataAwsQuicksightThemeConfigurationDataColorPaletteList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsquicksighttheme"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsquicksighttheme"
 
 dataawsquicksighttheme.NewDataAwsQuicksightThemeConfigurationDataColorPaletteList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsQuicksightThemeConfigurationDataColorPaletteList
 ```
@@ -1230,7 +1230,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsQuicksightTheme.DataAwsQuicksightThemeConfigurationDataColorPaletteOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsquicksighttheme"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsquicksighttheme"
 
 dataawsquicksighttheme.NewDataAwsQuicksightThemeConfigurationDataColorPaletteOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsQuicksightThemeConfigurationDataColorPaletteOutputReference
 ```
@@ -1530,7 +1530,7 @@ func InternalValue() DataAwsQuicksightThemeConfigurationDataColorPalette
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsQuicksightTheme.DataAwsQuicksightThemeConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsquicksighttheme"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsquicksighttheme"
 
 dataawsquicksighttheme.NewDataAwsQuicksightThemeConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsQuicksightThemeConfigurationList
 ```
@@ -1679,7 +1679,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsQuicksightTheme.DataAwsQuicksightThemeConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsquicksighttheme"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsquicksighttheme"
 
 dataawsquicksighttheme.NewDataAwsQuicksightThemeConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsQuicksightThemeConfigurationOutputReference
 ```
@@ -1990,7 +1990,7 @@ func InternalValue() DataAwsQuicksightThemeConfiguration
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsQuicksightTheme.DataAwsQuicksightThemeConfigurationSheetList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsquicksighttheme"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsquicksighttheme"
 
 dataawsquicksighttheme.NewDataAwsQuicksightThemeConfigurationSheetList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsQuicksightThemeConfigurationSheetList
 ```
@@ -2139,7 +2139,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsQuicksightTheme.DataAwsQuicksightThemeConfigurationSheetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsquicksighttheme"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsquicksighttheme"
 
 dataawsquicksighttheme.NewDataAwsQuicksightThemeConfigurationSheetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsQuicksightThemeConfigurationSheetOutputReference
 ```
@@ -2428,7 +2428,7 @@ func InternalValue() DataAwsQuicksightThemeConfigurationSheet
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsQuicksightTheme.DataAwsQuicksightThemeConfigurationSheetTileBorderList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsquicksighttheme"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsquicksighttheme"
 
 dataawsquicksighttheme.NewDataAwsQuicksightThemeConfigurationSheetTileBorderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsQuicksightThemeConfigurationSheetTileBorderList
 ```
@@ -2577,7 +2577,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsQuicksightTheme.DataAwsQuicksightThemeConfigurationSheetTileBorderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsquicksighttheme"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsquicksighttheme"
 
 dataawsquicksighttheme.NewDataAwsQuicksightThemeConfigurationSheetTileBorderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsQuicksightThemeConfigurationSheetTileBorderOutputReference
 ```
@@ -2855,7 +2855,7 @@ func InternalValue() DataAwsQuicksightThemeConfigurationSheetTileBorder
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsQuicksightTheme.DataAwsQuicksightThemeConfigurationSheetTileLayoutGutterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsquicksighttheme"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsquicksighttheme"
 
 dataawsquicksighttheme.NewDataAwsQuicksightThemeConfigurationSheetTileLayoutGutterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsQuicksightThemeConfigurationSheetTileLayoutGutterList
 ```
@@ -3004,7 +3004,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsQuicksightTheme.DataAwsQuicksightThemeConfigurationSheetTileLayoutGutterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsquicksighttheme"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsquicksighttheme"
 
 dataawsquicksighttheme.NewDataAwsQuicksightThemeConfigurationSheetTileLayoutGutterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsQuicksightThemeConfigurationSheetTileLayoutGutterOutputReference
 ```
@@ -3282,7 +3282,7 @@ func InternalValue() DataAwsQuicksightThemeConfigurationSheetTileLayoutGutter
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsQuicksightTheme.DataAwsQuicksightThemeConfigurationSheetTileLayoutList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsquicksighttheme"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsquicksighttheme"
 
 dataawsquicksighttheme.NewDataAwsQuicksightThemeConfigurationSheetTileLayoutList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsQuicksightThemeConfigurationSheetTileLayoutList
 ```
@@ -3431,7 +3431,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsQuicksightTheme.DataAwsQuicksightThemeConfigurationSheetTileLayoutMarginList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsquicksighttheme"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsquicksighttheme"
 
 dataawsquicksighttheme.NewDataAwsQuicksightThemeConfigurationSheetTileLayoutMarginList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsQuicksightThemeConfigurationSheetTileLayoutMarginList
 ```
@@ -3580,7 +3580,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsQuicksightTheme.DataAwsQuicksightThemeConfigurationSheetTileLayoutMarginOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsquicksighttheme"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsquicksighttheme"
 
 dataawsquicksighttheme.NewDataAwsQuicksightThemeConfigurationSheetTileLayoutMarginOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsQuicksightThemeConfigurationSheetTileLayoutMarginOutputReference
 ```
@@ -3858,7 +3858,7 @@ func InternalValue() DataAwsQuicksightThemeConfigurationSheetTileLayoutMargin
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsQuicksightTheme.DataAwsQuicksightThemeConfigurationSheetTileLayoutOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsquicksighttheme"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsquicksighttheme"
 
 dataawsquicksighttheme.NewDataAwsQuicksightThemeConfigurationSheetTileLayoutOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsQuicksightThemeConfigurationSheetTileLayoutOutputReference
 ```
@@ -4147,7 +4147,7 @@ func InternalValue() DataAwsQuicksightThemeConfigurationSheetTileLayout
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsQuicksightTheme.DataAwsQuicksightThemeConfigurationSheetTileList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsquicksighttheme"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsquicksighttheme"
 
 dataawsquicksighttheme.NewDataAwsQuicksightThemeConfigurationSheetTileList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsQuicksightThemeConfigurationSheetTileList
 ```
@@ -4296,7 +4296,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsQuicksightTheme.DataAwsQuicksightThemeConfigurationSheetTileOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsquicksighttheme"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsquicksighttheme"
 
 dataawsquicksighttheme.NewDataAwsQuicksightThemeConfigurationSheetTileOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsQuicksightThemeConfigurationSheetTileOutputReference
 ```
@@ -4574,7 +4574,7 @@ func InternalValue() DataAwsQuicksightThemeConfigurationSheetTile
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsQuicksightTheme.DataAwsQuicksightThemeConfigurationTypographyFontFamiliesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsquicksighttheme"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsquicksighttheme"
 
 dataawsquicksighttheme.NewDataAwsQuicksightThemeConfigurationTypographyFontFamiliesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsQuicksightThemeConfigurationTypographyFontFamiliesList
 ```
@@ -4723,7 +4723,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsQuicksightTheme.DataAwsQuicksightThemeConfigurationTypographyFontFamiliesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsquicksighttheme"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsquicksighttheme"
 
 dataawsquicksighttheme.NewDataAwsQuicksightThemeConfigurationTypographyFontFamiliesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsQuicksightThemeConfigurationTypographyFontFamiliesOutputReference
 ```
@@ -5001,7 +5001,7 @@ func InternalValue() DataAwsQuicksightThemeConfigurationTypographyFontFamilies
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsQuicksightTheme.DataAwsQuicksightThemeConfigurationTypographyList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsquicksighttheme"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsquicksighttheme"
 
 dataawsquicksighttheme.NewDataAwsQuicksightThemeConfigurationTypographyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsQuicksightThemeConfigurationTypographyList
 ```
@@ -5150,7 +5150,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsQuicksightTheme.DataAwsQuicksightThemeConfigurationTypographyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsquicksighttheme"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsquicksighttheme"
 
 dataawsquicksighttheme.NewDataAwsQuicksightThemeConfigurationTypographyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsQuicksightThemeConfigurationTypographyOutputReference
 ```
@@ -5428,7 +5428,7 @@ func InternalValue() DataAwsQuicksightThemeConfigurationTypography
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsQuicksightTheme.DataAwsQuicksightThemeConfigurationUiColorPaletteList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsquicksighttheme"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsquicksighttheme"
 
 dataawsquicksighttheme.NewDataAwsQuicksightThemeConfigurationUiColorPaletteList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsQuicksightThemeConfigurationUiColorPaletteList
 ```
@@ -5577,7 +5577,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsQuicksightTheme.DataAwsQuicksightThemeConfigurationUiColorPaletteOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsquicksighttheme"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsquicksighttheme"
 
 dataawsquicksighttheme.NewDataAwsQuicksightThemeConfigurationUiColorPaletteOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsQuicksightThemeConfigurationUiColorPaletteOutputReference
 ```
@@ -6020,7 +6020,7 @@ func InternalValue() DataAwsQuicksightThemeConfigurationUiColorPalette
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsQuicksightTheme.DataAwsQuicksightThemePermissionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsquicksighttheme"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsquicksighttheme"
 
 dataawsquicksighttheme.NewDataAwsQuicksightThemePermissionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsQuicksightThemePermissionsList
 ```
@@ -6169,7 +6169,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsQuicksightTheme.DataAwsQuicksightThemePermissionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsquicksighttheme"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsquicksighttheme"
 
 dataawsquicksighttheme.NewDataAwsQuicksightThemePermissionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsQuicksightThemePermissionsOutputReference
 ```

@@ -4,7 +4,7 @@
 
 ### RekognitionProject <a name="RekognitionProject" id="@cdktf/provider-aws.rekognitionProject.RekognitionProject"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/rekognition_project aws_rekognition_project}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/rekognition_project aws_rekognition_project}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.rekognitionProject.RekognitionProject.Initializer"></a>
 
@@ -76,6 +76,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.rekognitionProject.RekognitionProject.putTimeouts">putTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.rekognitionProject.RekognitionProject.resetAutoUpdate">resetAutoUpdate</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.rekognitionProject.RekognitionProject.resetFeature">resetFeature</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.rekognitionProject.RekognitionProject.resetTags">resetTags</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.rekognitionProject.RekognitionProject.resetTimeouts">resetTimeouts</a></code> | *No description.* |
 
 ---
@@ -392,6 +393,12 @@ public resetAutoUpdate(): void
 public resetFeature(): void
 ```
 
+##### `resetTags` <a name="resetTags" id="@cdktf/provider-aws.rekognitionProject.RekognitionProject.resetTags"></a>
+
+```typescript
+public resetTags(): void
+```
+
 ##### `resetTimeouts` <a name="resetTimeouts" id="@cdktf/provider-aws.rekognitionProject.RekognitionProject.resetTimeouts"></a>
 
 ```typescript
@@ -501,7 +508,7 @@ The construct id used in the generated config for the RekognitionProject to impo
 
 The id of the existing RekognitionProject that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/rekognition_project#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/rekognition_project#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -533,14 +540,17 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0
 | <code><a href="#@cdktf/provider-aws.rekognitionProject.RekognitionProject.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.rekognitionProject.RekognitionProject.property.arn">arn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.rekognitionProject.RekognitionProject.property.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.rekognitionProject.RekognitionProject.property.tagsAll">tagsAll</a></code> | <code>cdktf.StringMap</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.rekognitionProject.RekognitionProject.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-aws.rekognitionProject.RekognitionProjectTimeoutsOutputReference">RekognitionProjectTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.rekognitionProject.RekognitionProject.property.autoUpdateInput">autoUpdateInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.rekognitionProject.RekognitionProject.property.featureInput">featureInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.rekognitionProject.RekognitionProject.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.rekognitionProject.RekognitionProject.property.tagsInput">tagsInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.rekognitionProject.RekognitionProject.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.rekognitionProject.RekognitionProjectTimeouts">RekognitionProjectTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.rekognitionProject.RekognitionProject.property.autoUpdate">autoUpdate</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.rekognitionProject.RekognitionProject.property.feature">feature</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.rekognitionProject.RekognitionProject.property.name">name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.rekognitionProject.RekognitionProject.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 
 ---
 
@@ -706,6 +716,16 @@ public readonly id: string;
 
 ---
 
+##### `tagsAll`<sup>Required</sup> <a name="tagsAll" id="@cdktf/provider-aws.rekognitionProject.RekognitionProject.property.tagsAll"></a>
+
+```typescript
+public readonly tagsAll: StringMap;
+```
+
+- *Type:* cdktf.StringMap
+
+---
+
 ##### `timeouts`<sup>Required</sup> <a name="timeouts" id="@cdktf/provider-aws.rekognitionProject.RekognitionProject.property.timeouts"></a>
 
 ```typescript
@@ -746,6 +766,16 @@ public readonly nameInput: string;
 
 ---
 
+##### `tagsInput`<sup>Optional</sup> <a name="tagsInput" id="@cdktf/provider-aws.rekognitionProject.RekognitionProject.property.tagsInput"></a>
+
+```typescript
+public readonly tagsInput: {[ key: string ]: string};
+```
+
+- *Type:* {[ key: string ]: string}
+
+---
+
 ##### `timeoutsInput`<sup>Optional</sup> <a name="timeoutsInput" id="@cdktf/provider-aws.rekognitionProject.RekognitionProject.property.timeoutsInput"></a>
 
 ```typescript
@@ -783,6 +813,16 @@ public readonly name: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `tags`<sup>Required</sup> <a name="tags" id="@cdktf/provider-aws.rekognitionProject.RekognitionProject.property.tags"></a>
+
+```typescript
+public readonly tags: {[ key: string ]: string};
+```
+
+- *Type:* {[ key: string ]: string}
 
 ---
 
@@ -827,9 +867,10 @@ const rekognitionProjectConfig: rekognitionProject.RekognitionProjectConfig = { 
 | <code><a href="#@cdktf/provider-aws.rekognitionProject.RekognitionProjectConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.rekognitionProject.RekognitionProjectConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.rekognitionProject.RekognitionProjectConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.rekognitionProject.RekognitionProjectConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/rekognition_project#name RekognitionProject#name}. |
-| <code><a href="#@cdktf/provider-aws.rekognitionProject.RekognitionProjectConfig.property.autoUpdate">autoUpdate</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/rekognition_project#auto_update RekognitionProject#auto_update}. |
-| <code><a href="#@cdktf/provider-aws.rekognitionProject.RekognitionProjectConfig.property.feature">feature</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/rekognition_project#feature RekognitionProject#feature}. |
+| <code><a href="#@cdktf/provider-aws.rekognitionProject.RekognitionProjectConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/rekognition_project#name RekognitionProject#name}. |
+| <code><a href="#@cdktf/provider-aws.rekognitionProject.RekognitionProjectConfig.property.autoUpdate">autoUpdate</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/rekognition_project#auto_update RekognitionProject#auto_update}. |
+| <code><a href="#@cdktf/provider-aws.rekognitionProject.RekognitionProjectConfig.property.feature">feature</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/rekognition_project#feature RekognitionProject#feature}. |
+| <code><a href="#@cdktf/provider-aws.rekognitionProject.RekognitionProjectConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/rekognition_project#tags RekognitionProject#tags}. |
 | <code><a href="#@cdktf/provider-aws.rekognitionProject.RekognitionProjectConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-aws.rekognitionProject.RekognitionProjectTimeouts">RekognitionProjectTimeouts</a></code> | timeouts block. |
 
 ---
@@ -912,7 +953,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/rekognition_project#name RekognitionProject#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/rekognition_project#name RekognitionProject#name}.
 
 ---
 
@@ -924,7 +965,7 @@ public readonly autoUpdate: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/rekognition_project#auto_update RekognitionProject#auto_update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/rekognition_project#auto_update RekognitionProject#auto_update}.
 
 ---
 
@@ -936,7 +977,19 @@ public readonly feature: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/rekognition_project#feature RekognitionProject#feature}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/rekognition_project#feature RekognitionProject#feature}.
+
+---
+
+##### `tags`<sup>Optional</sup> <a name="tags" id="@cdktf/provider-aws.rekognitionProject.RekognitionProjectConfig.property.tags"></a>
+
+```typescript
+public readonly tags: {[ key: string ]: string};
+```
+
+- *Type:* {[ key: string ]: string}
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/rekognition_project#tags RekognitionProject#tags}.
 
 ---
 
@@ -950,7 +1003,7 @@ public readonly timeouts: RekognitionProjectTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/rekognition_project#timeouts RekognitionProject#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/rekognition_project#timeouts RekognitionProject#timeouts}
 
 ---
 
@@ -983,7 +1036,7 @@ public readonly create: string;
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/rekognition_project#create RekognitionProject#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/rekognition_project#create RekognitionProject#create}
 
 ---
 
@@ -997,7 +1050,7 @@ public readonly delete: string;
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/rekognition_project#delete RekognitionProject#delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/rekognition_project#delete RekognitionProject#delete}
 
 ---
 

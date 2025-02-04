@@ -4,12 +4,12 @@
 
 ### Ec2SerialConsoleAccess <a name="Ec2SerialConsoleAccess" id="@cdktf/provider-aws.ec2SerialConsoleAccess.Ec2SerialConsoleAccess"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/ec2_serial_console_access aws_ec2_serial_console_access}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/ec2_serial_console_access aws_ec2_serial_console_access}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ec2SerialConsoleAccess.Ec2SerialConsoleAccess.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ec2serialconsoleaccess"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2serialconsoleaccess"
 
 ec2serialconsoleaccess.NewEc2SerialConsoleAccess(scope Construct, id *string, config Ec2SerialConsoleAccessConfig) Ec2SerialConsoleAccess
 ```
@@ -392,7 +392,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.ec2SerialConsoleAccess.Ec2SerialConsoleAccess.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ec2serialconsoleaccess"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2serialconsoleaccess"
 
 ec2serialconsoleaccess.Ec2SerialConsoleAccess_IsConstruct(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.ec2SerialConsoleAccess.Ec2SerialConsoleAccess.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ec2serialconsoleaccess"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2serialconsoleaccess"
 
 ec2serialconsoleaccess.Ec2SerialConsoleAccess_IsTerraformElement(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ ec2serialconsoleaccess.Ec2SerialConsoleAccess_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.ec2SerialConsoleAccess.Ec2SerialConsoleAccess.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ec2serialconsoleaccess"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2serialconsoleaccess"
 
 ec2serialconsoleaccess.Ec2SerialConsoleAccess_IsTerraformResource(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ ec2serialconsoleaccess.Ec2SerialConsoleAccess_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.ec2SerialConsoleAccess.Ec2SerialConsoleAccess.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ec2serialconsoleaccess"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2serialconsoleaccess"
 
 ec2serialconsoleaccess.Ec2SerialConsoleAccess_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -481,7 +481,7 @@ The construct id used in the generated config for the Ec2SerialConsoleAccess to 
 
 The id of the existing Ec2SerialConsoleAccess that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/ec2_serial_console_access#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/ec2_serial_console_access#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -725,7 +725,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ec2SerialConsoleAccess.Ec2SerialConsoleAccessConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ec2serialconsoleaccess"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2serialconsoleaccess"
 
 &ec2serialconsoleaccess.Ec2SerialConsoleAccessConfig {
 	Connection: interface{},
@@ -751,8 +751,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ec2serialconsoleaccess"
 | <code><a href="#@cdktf/provider-aws.ec2SerialConsoleAccess.Ec2SerialConsoleAccessConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2SerialConsoleAccess.Ec2SerialConsoleAccessConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2SerialConsoleAccess.Ec2SerialConsoleAccessConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ec2SerialConsoleAccess.Ec2SerialConsoleAccessConfig.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/ec2_serial_console_access#enabled Ec2SerialConsoleAccess#enabled}. |
-| <code><a href="#@cdktf/provider-aws.ec2SerialConsoleAccess.Ec2SerialConsoleAccessConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/ec2_serial_console_access#id Ec2SerialConsoleAccess#id}. |
+| <code><a href="#@cdktf/provider-aws.ec2SerialConsoleAccess.Ec2SerialConsoleAccessConfig.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/ec2_serial_console_access#enabled Ec2SerialConsoleAccess#enabled}. |
+| <code><a href="#@cdktf/provider-aws.ec2SerialConsoleAccess.Ec2SerialConsoleAccessConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/ec2_serial_console_access#id Ec2SerialConsoleAccess#id}. |
 
 ---
 
@@ -834,7 +834,7 @@ Enabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/ec2_serial_console_access#enabled Ec2SerialConsoleAccess#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/ec2_serial_console_access#enabled Ec2SerialConsoleAccess#enabled}.
 
 ---
 
@@ -846,7 +846,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/ec2_serial_console_access#id Ec2SerialConsoleAccess#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/ec2_serial_console_access#id Ec2SerialConsoleAccess#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

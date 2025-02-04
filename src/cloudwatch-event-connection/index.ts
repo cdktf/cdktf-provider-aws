@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/cloudwatch_event_connection
+// https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/cloudwatch_event_connection
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,38 +8,44 @@ import * as cdktf from 'cdktf';
 
 export interface CloudwatchEventConnectionConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/cloudwatch_event_connection#authorization_type CloudwatchEventConnection#authorization_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/cloudwatch_event_connection#authorization_type CloudwatchEventConnection#authorization_type}
   */
   readonly authorizationType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/cloudwatch_event_connection#description CloudwatchEventConnection#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/cloudwatch_event_connection#description CloudwatchEventConnection#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/cloudwatch_event_connection#id CloudwatchEventConnection#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/cloudwatch_event_connection#id CloudwatchEventConnection#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/cloudwatch_event_connection#name CloudwatchEventConnection#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/cloudwatch_event_connection#name CloudwatchEventConnection#name}
   */
   readonly name: string;
   /**
   * auth_parameters block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/cloudwatch_event_connection#auth_parameters CloudwatchEventConnection#auth_parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/cloudwatch_event_connection#auth_parameters CloudwatchEventConnection#auth_parameters}
   */
   readonly authParameters: CloudwatchEventConnectionAuthParameters;
+  /**
+  * invocation_connectivity_parameters block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/cloudwatch_event_connection#invocation_connectivity_parameters CloudwatchEventConnection#invocation_connectivity_parameters}
+  */
+  readonly invocationConnectivityParameters?: CloudwatchEventConnectionInvocationConnectivityParameters;
 }
 export interface CloudwatchEventConnectionAuthParametersApiKey {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/cloudwatch_event_connection#key CloudwatchEventConnection#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/cloudwatch_event_connection#key CloudwatchEventConnection#key}
   */
   readonly key: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/cloudwatch_event_connection#value CloudwatchEventConnection#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/cloudwatch_event_connection#value CloudwatchEventConnection#value}
   */
   readonly value: string;
 }
@@ -151,11 +152,11 @@ export class CloudwatchEventConnectionAuthParametersApiKeyOutputReference extend
 }
 export interface CloudwatchEventConnectionAuthParametersBasic {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/cloudwatch_event_connection#password CloudwatchEventConnection#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/cloudwatch_event_connection#password CloudwatchEventConnection#password}
   */
   readonly password: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/cloudwatch_event_connection#username CloudwatchEventConnection#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/cloudwatch_event_connection#username CloudwatchEventConnection#username}
   */
   readonly username: string;
 }
@@ -262,15 +263,15 @@ export class CloudwatchEventConnectionAuthParametersBasicOutputReference extends
 }
 export interface CloudwatchEventConnectionAuthParametersInvocationHttpParametersBody {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/cloudwatch_event_connection#is_value_secret CloudwatchEventConnection#is_value_secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/cloudwatch_event_connection#is_value_secret CloudwatchEventConnection#is_value_secret}
   */
   readonly isValueSecret?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/cloudwatch_event_connection#key CloudwatchEventConnection#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/cloudwatch_event_connection#key CloudwatchEventConnection#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/cloudwatch_event_connection#value CloudwatchEventConnection#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/cloudwatch_event_connection#value CloudwatchEventConnection#value}
   */
   readonly value?: string;
 }
@@ -444,15 +445,15 @@ export class CloudwatchEventConnectionAuthParametersInvocationHttpParametersBody
 }
 export interface CloudwatchEventConnectionAuthParametersInvocationHttpParametersHeader {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/cloudwatch_event_connection#is_value_secret CloudwatchEventConnection#is_value_secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/cloudwatch_event_connection#is_value_secret CloudwatchEventConnection#is_value_secret}
   */
   readonly isValueSecret?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/cloudwatch_event_connection#key CloudwatchEventConnection#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/cloudwatch_event_connection#key CloudwatchEventConnection#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/cloudwatch_event_connection#value CloudwatchEventConnection#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/cloudwatch_event_connection#value CloudwatchEventConnection#value}
   */
   readonly value?: string;
 }
@@ -626,15 +627,15 @@ export class CloudwatchEventConnectionAuthParametersInvocationHttpParametersHead
 }
 export interface CloudwatchEventConnectionAuthParametersInvocationHttpParametersQueryString {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/cloudwatch_event_connection#is_value_secret CloudwatchEventConnection#is_value_secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/cloudwatch_event_connection#is_value_secret CloudwatchEventConnection#is_value_secret}
   */
   readonly isValueSecret?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/cloudwatch_event_connection#key CloudwatchEventConnection#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/cloudwatch_event_connection#key CloudwatchEventConnection#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/cloudwatch_event_connection#value CloudwatchEventConnection#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/cloudwatch_event_connection#value CloudwatchEventConnection#value}
   */
   readonly value?: string;
 }
@@ -810,19 +811,19 @@ export interface CloudwatchEventConnectionAuthParametersInvocationHttpParameters
   /**
   * body block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/cloudwatch_event_connection#body CloudwatchEventConnection#body}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/cloudwatch_event_connection#body CloudwatchEventConnection#body}
   */
   readonly body?: CloudwatchEventConnectionAuthParametersInvocationHttpParametersBody[] | cdktf.IResolvable;
   /**
   * header block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/cloudwatch_event_connection#header CloudwatchEventConnection#header}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/cloudwatch_event_connection#header CloudwatchEventConnection#header}
   */
   readonly header?: CloudwatchEventConnectionAuthParametersInvocationHttpParametersHeader[] | cdktf.IResolvable;
   /**
   * query_string block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/cloudwatch_event_connection#query_string CloudwatchEventConnection#query_string}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/cloudwatch_event_connection#query_string CloudwatchEventConnection#query_string}
   */
   readonly queryString?: CloudwatchEventConnectionAuthParametersInvocationHttpParametersQueryString[] | cdktf.IResolvable;
 }
@@ -964,11 +965,11 @@ export class CloudwatchEventConnectionAuthParametersInvocationHttpParametersOutp
 }
 export interface CloudwatchEventConnectionAuthParametersOauthClientParameters {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/cloudwatch_event_connection#client_id CloudwatchEventConnection#client_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/cloudwatch_event_connection#client_id CloudwatchEventConnection#client_id}
   */
   readonly clientId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/cloudwatch_event_connection#client_secret CloudwatchEventConnection#client_secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/cloudwatch_event_connection#client_secret CloudwatchEventConnection#client_secret}
   */
   readonly clientSecret: string;
 }
@@ -1075,15 +1076,15 @@ export class CloudwatchEventConnectionAuthParametersOauthClientParametersOutputR
 }
 export interface CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersBody {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/cloudwatch_event_connection#is_value_secret CloudwatchEventConnection#is_value_secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/cloudwatch_event_connection#is_value_secret CloudwatchEventConnection#is_value_secret}
   */
   readonly isValueSecret?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/cloudwatch_event_connection#key CloudwatchEventConnection#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/cloudwatch_event_connection#key CloudwatchEventConnection#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/cloudwatch_event_connection#value CloudwatchEventConnection#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/cloudwatch_event_connection#value CloudwatchEventConnection#value}
   */
   readonly value?: string;
 }
@@ -1257,15 +1258,15 @@ export class CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersBody
 }
 export interface CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersHeader {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/cloudwatch_event_connection#is_value_secret CloudwatchEventConnection#is_value_secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/cloudwatch_event_connection#is_value_secret CloudwatchEventConnection#is_value_secret}
   */
   readonly isValueSecret?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/cloudwatch_event_connection#key CloudwatchEventConnection#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/cloudwatch_event_connection#key CloudwatchEventConnection#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/cloudwatch_event_connection#value CloudwatchEventConnection#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/cloudwatch_event_connection#value CloudwatchEventConnection#value}
   */
   readonly value?: string;
 }
@@ -1439,15 +1440,15 @@ export class CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersHead
 }
 export interface CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersQueryString {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/cloudwatch_event_connection#is_value_secret CloudwatchEventConnection#is_value_secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/cloudwatch_event_connection#is_value_secret CloudwatchEventConnection#is_value_secret}
   */
   readonly isValueSecret?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/cloudwatch_event_connection#key CloudwatchEventConnection#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/cloudwatch_event_connection#key CloudwatchEventConnection#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/cloudwatch_event_connection#value CloudwatchEventConnection#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/cloudwatch_event_connection#value CloudwatchEventConnection#value}
   */
   readonly value?: string;
 }
@@ -1623,19 +1624,19 @@ export interface CloudwatchEventConnectionAuthParametersOauthOauthHttpParameters
   /**
   * body block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/cloudwatch_event_connection#body CloudwatchEventConnection#body}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/cloudwatch_event_connection#body CloudwatchEventConnection#body}
   */
   readonly body?: CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersBody[] | cdktf.IResolvable;
   /**
   * header block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/cloudwatch_event_connection#header CloudwatchEventConnection#header}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/cloudwatch_event_connection#header CloudwatchEventConnection#header}
   */
   readonly header?: CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersHeader[] | cdktf.IResolvable;
   /**
   * query_string block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/cloudwatch_event_connection#query_string CloudwatchEventConnection#query_string}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/cloudwatch_event_connection#query_string CloudwatchEventConnection#query_string}
   */
   readonly queryString?: CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersQueryString[] | cdktf.IResolvable;
 }
@@ -1777,23 +1778,23 @@ export class CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersOutp
 }
 export interface CloudwatchEventConnectionAuthParametersOauth {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/cloudwatch_event_connection#authorization_endpoint CloudwatchEventConnection#authorization_endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/cloudwatch_event_connection#authorization_endpoint CloudwatchEventConnection#authorization_endpoint}
   */
   readonly authorizationEndpoint: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/cloudwatch_event_connection#http_method CloudwatchEventConnection#http_method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/cloudwatch_event_connection#http_method CloudwatchEventConnection#http_method}
   */
   readonly httpMethod: string;
   /**
   * client_parameters block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/cloudwatch_event_connection#client_parameters CloudwatchEventConnection#client_parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/cloudwatch_event_connection#client_parameters CloudwatchEventConnection#client_parameters}
   */
   readonly clientParameters?: CloudwatchEventConnectionAuthParametersOauthClientParameters;
   /**
   * oauth_http_parameters block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/cloudwatch_event_connection#oauth_http_parameters CloudwatchEventConnection#oauth_http_parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/cloudwatch_event_connection#oauth_http_parameters CloudwatchEventConnection#oauth_http_parameters}
   */
   readonly oauthHttpParameters: CloudwatchEventConnectionAuthParametersOauthOauthHttpParameters;
 }
@@ -1957,25 +1958,25 @@ export interface CloudwatchEventConnectionAuthParameters {
   /**
   * api_key block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/cloudwatch_event_connection#api_key CloudwatchEventConnection#api_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/cloudwatch_event_connection#api_key CloudwatchEventConnection#api_key}
   */
   readonly apiKey?: CloudwatchEventConnectionAuthParametersApiKey;
   /**
   * basic block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/cloudwatch_event_connection#basic CloudwatchEventConnection#basic}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/cloudwatch_event_connection#basic CloudwatchEventConnection#basic}
   */
   readonly basic?: CloudwatchEventConnectionAuthParametersBasic;
   /**
   * invocation_http_parameters block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/cloudwatch_event_connection#invocation_http_parameters CloudwatchEventConnection#invocation_http_parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/cloudwatch_event_connection#invocation_http_parameters CloudwatchEventConnection#invocation_http_parameters}
   */
   readonly invocationHttpParameters?: CloudwatchEventConnectionAuthParametersInvocationHttpParameters;
   /**
   * oauth block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/cloudwatch_event_connection#oauth CloudwatchEventConnection#oauth}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/cloudwatch_event_connection#oauth CloudwatchEventConnection#oauth}
   */
   readonly oauth?: CloudwatchEventConnectionAuthParametersOauth;
 }
@@ -2144,9 +2145,178 @@ export class CloudwatchEventConnectionAuthParametersOutputReference extends cdkt
     return this._oauth.internalValue;
   }
 }
+export interface CloudwatchEventConnectionInvocationConnectivityParametersResourceParameters {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/cloudwatch_event_connection#resource_configuration_arn CloudwatchEventConnection#resource_configuration_arn}
+  */
+  readonly resourceConfigurationArn: string;
+}
+
+export function cloudwatchEventConnectionInvocationConnectivityParametersResourceParametersToTerraform(struct?: CloudwatchEventConnectionInvocationConnectivityParametersResourceParametersOutputReference | CloudwatchEventConnectionInvocationConnectivityParametersResourceParameters): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    resource_configuration_arn: cdktf.stringToTerraform(struct!.resourceConfigurationArn),
+  }
+}
+
+
+export function cloudwatchEventConnectionInvocationConnectivityParametersResourceParametersToHclTerraform(struct?: CloudwatchEventConnectionInvocationConnectivityParametersResourceParametersOutputReference | CloudwatchEventConnectionInvocationConnectivityParametersResourceParameters): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    resource_configuration_arn: {
+      value: cdktf.stringToHclTerraform(struct!.resourceConfigurationArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class CloudwatchEventConnectionInvocationConnectivityParametersResourceParametersOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): CloudwatchEventConnectionInvocationConnectivityParametersResourceParameters | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._resourceConfigurationArn !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.resourceConfigurationArn = this._resourceConfigurationArn;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CloudwatchEventConnectionInvocationConnectivityParametersResourceParameters | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._resourceConfigurationArn = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._resourceConfigurationArn = value.resourceConfigurationArn;
+    }
+  }
+
+  // resource_association_arn - computed: true, optional: false, required: false
+  public get resourceAssociationArn() {
+    return this.getStringAttribute('resource_association_arn');
+  }
+
+  // resource_configuration_arn - computed: false, optional: false, required: true
+  private _resourceConfigurationArn?: string; 
+  public get resourceConfigurationArn() {
+    return this.getStringAttribute('resource_configuration_arn');
+  }
+  public set resourceConfigurationArn(value: string) {
+    this._resourceConfigurationArn = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get resourceConfigurationArnInput() {
+    return this._resourceConfigurationArn;
+  }
+}
+export interface CloudwatchEventConnectionInvocationConnectivityParameters {
+  /**
+  * resource_parameters block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/cloudwatch_event_connection#resource_parameters CloudwatchEventConnection#resource_parameters}
+  */
+  readonly resourceParameters: CloudwatchEventConnectionInvocationConnectivityParametersResourceParameters;
+}
+
+export function cloudwatchEventConnectionInvocationConnectivityParametersToTerraform(struct?: CloudwatchEventConnectionInvocationConnectivityParametersOutputReference | CloudwatchEventConnectionInvocationConnectivityParameters): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    resource_parameters: cloudwatchEventConnectionInvocationConnectivityParametersResourceParametersToTerraform(struct!.resourceParameters),
+  }
+}
+
+
+export function cloudwatchEventConnectionInvocationConnectivityParametersToHclTerraform(struct?: CloudwatchEventConnectionInvocationConnectivityParametersOutputReference | CloudwatchEventConnectionInvocationConnectivityParameters): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    resource_parameters: {
+      value: cloudwatchEventConnectionInvocationConnectivityParametersResourceParametersToHclTerraform(struct!.resourceParameters),
+      isBlock: true,
+      type: "list",
+      storageClassType: "CloudwatchEventConnectionInvocationConnectivityParametersResourceParametersList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class CloudwatchEventConnectionInvocationConnectivityParametersOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): CloudwatchEventConnectionInvocationConnectivityParameters | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._resourceParameters?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.resourceParameters = this._resourceParameters?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CloudwatchEventConnectionInvocationConnectivityParameters | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._resourceParameters.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._resourceParameters.internalValue = value.resourceParameters;
+    }
+  }
+
+  // resource_parameters - computed: false, optional: false, required: true
+  private _resourceParameters = new CloudwatchEventConnectionInvocationConnectivityParametersResourceParametersOutputReference(this, "resource_parameters");
+  public get resourceParameters() {
+    return this._resourceParameters;
+  }
+  public putResourceParameters(value: CloudwatchEventConnectionInvocationConnectivityParametersResourceParameters) {
+    this._resourceParameters.internalValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get resourceParametersInput() {
+    return this._resourceParameters.internalValue;
+  }
+}
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/cloudwatch_event_connection aws_cloudwatch_event_connection}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/cloudwatch_event_connection aws_cloudwatch_event_connection}
 */
 export class CloudwatchEventConnection extends cdktf.TerraformResource {
 
@@ -2162,7 +2332,7 @@ export class CloudwatchEventConnection extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a CloudwatchEventConnection resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CloudwatchEventConnection to import
-  * @param importFromId The id of the existing CloudwatchEventConnection that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/cloudwatch_event_connection#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing CloudwatchEventConnection that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/cloudwatch_event_connection#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CloudwatchEventConnection to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -2174,7 +2344,7 @@ export class CloudwatchEventConnection extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/cloudwatch_event_connection aws_cloudwatch_event_connection} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/cloudwatch_event_connection aws_cloudwatch_event_connection} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -2185,7 +2355,7 @@ export class CloudwatchEventConnection extends cdktf.TerraformResource {
       terraformResourceType: 'aws_cloudwatch_event_connection',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.84.0',
+        providerVersion: '5.85.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -2201,6 +2371,7 @@ export class CloudwatchEventConnection extends cdktf.TerraformResource {
     this._id = config.id;
     this._name = config.name;
     this._authParameters.internalValue = config.authParameters;
+    this._invocationConnectivityParameters.internalValue = config.invocationConnectivityParameters;
   }
 
   // ==========
@@ -2288,6 +2459,22 @@ export class CloudwatchEventConnection extends cdktf.TerraformResource {
     return this._authParameters.internalValue;
   }
 
+  // invocation_connectivity_parameters - computed: false, optional: true, required: false
+  private _invocationConnectivityParameters = new CloudwatchEventConnectionInvocationConnectivityParametersOutputReference(this, "invocation_connectivity_parameters");
+  public get invocationConnectivityParameters() {
+    return this._invocationConnectivityParameters;
+  }
+  public putInvocationConnectivityParameters(value: CloudwatchEventConnectionInvocationConnectivityParameters) {
+    this._invocationConnectivityParameters.internalValue = value;
+  }
+  public resetInvocationConnectivityParameters() {
+    this._invocationConnectivityParameters.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get invocationConnectivityParametersInput() {
+    return this._invocationConnectivityParameters.internalValue;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -2299,6 +2486,7 @@ export class CloudwatchEventConnection extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       auth_parameters: cloudwatchEventConnectionAuthParametersToTerraform(this._authParameters.internalValue),
+      invocation_connectivity_parameters: cloudwatchEventConnectionInvocationConnectivityParametersToTerraform(this._invocationConnectivityParameters.internalValue),
     };
   }
 
@@ -2333,6 +2521,12 @@ export class CloudwatchEventConnection extends cdktf.TerraformResource {
         isBlock: true,
         type: "list",
         storageClassType: "CloudwatchEventConnectionAuthParametersList",
+      },
+      invocation_connectivity_parameters: {
+        value: cloudwatchEventConnectionInvocationConnectivityParametersToHclTerraform(this._invocationConnectivityParameters.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "CloudwatchEventConnectionInvocationConnectivityParametersList",
       },
     };
 

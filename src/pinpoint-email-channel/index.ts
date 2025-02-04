@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/pinpoint_email_channel
+// https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/pinpoint_email_channel
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,40 +8,44 @@ import * as cdktf from 'cdktf';
 
 export interface PinpointEmailChannelConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/pinpoint_email_channel#application_id PinpointEmailChannel#application_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/pinpoint_email_channel#application_id PinpointEmailChannel#application_id}
   */
   readonly applicationId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/pinpoint_email_channel#configuration_set PinpointEmailChannel#configuration_set}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/pinpoint_email_channel#configuration_set PinpointEmailChannel#configuration_set}
   */
   readonly configurationSet?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/pinpoint_email_channel#enabled PinpointEmailChannel#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/pinpoint_email_channel#enabled PinpointEmailChannel#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/pinpoint_email_channel#from_address PinpointEmailChannel#from_address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/pinpoint_email_channel#from_address PinpointEmailChannel#from_address}
   */
   readonly fromAddress: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/pinpoint_email_channel#id PinpointEmailChannel#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/pinpoint_email_channel#id PinpointEmailChannel#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/pinpoint_email_channel#identity PinpointEmailChannel#identity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/pinpoint_email_channel#identity PinpointEmailChannel#identity}
   */
   readonly identity: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/pinpoint_email_channel#role_arn PinpointEmailChannel#role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/pinpoint_email_channel#orchestration_sending_role_arn PinpointEmailChannel#orchestration_sending_role_arn}
+  */
+  readonly orchestrationSendingRoleArn?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/pinpoint_email_channel#role_arn PinpointEmailChannel#role_arn}
   */
   readonly roleArn?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/pinpoint_email_channel aws_pinpoint_email_channel}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/pinpoint_email_channel aws_pinpoint_email_channel}
 */
 export class PinpointEmailChannel extends cdktf.TerraformResource {
 
@@ -62,7 +61,7 @@ export class PinpointEmailChannel extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a PinpointEmailChannel resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the PinpointEmailChannel to import
-  * @param importFromId The id of the existing PinpointEmailChannel that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/pinpoint_email_channel#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing PinpointEmailChannel that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/pinpoint_email_channel#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the PinpointEmailChannel to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -74,7 +73,7 @@ export class PinpointEmailChannel extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/pinpoint_email_channel aws_pinpoint_email_channel} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/pinpoint_email_channel aws_pinpoint_email_channel} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -85,7 +84,7 @@ export class PinpointEmailChannel extends cdktf.TerraformResource {
       terraformResourceType: 'aws_pinpoint_email_channel',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.84.0',
+        providerVersion: '5.85.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -102,6 +101,7 @@ export class PinpointEmailChannel extends cdktf.TerraformResource {
     this._fromAddress = config.fromAddress;
     this._id = config.id;
     this._identity = config.identity;
+    this._orchestrationSendingRoleArn = config.orchestrationSendingRoleArn;
     this._roleArn = config.roleArn;
   }
 
@@ -201,6 +201,22 @@ export class PinpointEmailChannel extends cdktf.TerraformResource {
     return this.getNumberAttribute('messages_per_second');
   }
 
+  // orchestration_sending_role_arn - computed: false, optional: true, required: false
+  private _orchestrationSendingRoleArn?: string; 
+  public get orchestrationSendingRoleArn() {
+    return this.getStringAttribute('orchestration_sending_role_arn');
+  }
+  public set orchestrationSendingRoleArn(value: string) {
+    this._orchestrationSendingRoleArn = value;
+  }
+  public resetOrchestrationSendingRoleArn() {
+    this._orchestrationSendingRoleArn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get orchestrationSendingRoleArnInput() {
+    return this._orchestrationSendingRoleArn;
+  }
+
   // role_arn - computed: false, optional: true, required: false
   private _roleArn?: string; 
   public get roleArn() {
@@ -229,6 +245,7 @@ export class PinpointEmailChannel extends cdktf.TerraformResource {
       from_address: cdktf.stringToTerraform(this._fromAddress),
       id: cdktf.stringToTerraform(this._id),
       identity: cdktf.stringToTerraform(this._identity),
+      orchestration_sending_role_arn: cdktf.stringToTerraform(this._orchestrationSendingRoleArn),
       role_arn: cdktf.stringToTerraform(this._roleArn),
     };
   }
@@ -267,6 +284,12 @@ export class PinpointEmailChannel extends cdktf.TerraformResource {
       },
       identity: {
         value: cdktf.stringToHclTerraform(this._identity),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      orchestration_sending_role_arn: {
+        value: cdktf.stringToHclTerraform(this._orchestrationSendingRoleArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
