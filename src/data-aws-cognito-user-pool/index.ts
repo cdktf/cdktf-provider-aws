@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/data-sources/cognito_user_pool
+// https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/data-sources/cognito_user_pool
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsCognitoUserPoolConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/data-sources/cognito_user_pool#user_pool_id DataAwsCognitoUserPool#user_pool_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/data-sources/cognito_user_pool#user_pool_id DataAwsCognitoUserPool#user_pool_id}
   */
   readonly userPoolId: string;
 }
@@ -1171,7 +1171,7 @@ export class DataAwsCognitoUserPoolSchemaAttributesList extends cdktf.ComplexLis
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/data-sources/cognito_user_pool aws_cognito_user_pool}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/data-sources/cognito_user_pool aws_cognito_user_pool}
 */
 export class DataAwsCognitoUserPool extends cdktf.TerraformDataSource {
 
@@ -1187,7 +1187,7 @@ export class DataAwsCognitoUserPool extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataAwsCognitoUserPool resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsCognitoUserPool to import
-  * @param importFromId The id of the existing DataAwsCognitoUserPool that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/data-sources/cognito_user_pool#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsCognitoUserPool that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/data-sources/cognito_user_pool#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsCognitoUserPool to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -1199,7 +1199,7 @@ export class DataAwsCognitoUserPool extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/data-sources/cognito_user_pool aws_cognito_user_pool} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/data-sources/cognito_user_pool aws_cognito_user_pool} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1210,7 +1210,7 @@ export class DataAwsCognitoUserPool extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_cognito_user_pool',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.84.0',
+        providerVersion: '5.85.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

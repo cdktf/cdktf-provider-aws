@@ -665,6 +665,7 @@ Object.defineProperty(exports, 'guarddutyInviteAccepter', { get: function () { r
 Object.defineProperty(exports, 'guarddutyIpset', { get: function () { return require('./guardduty-ipset'); } });
 Object.defineProperty(exports, 'guarddutyMalwareProtectionPlan', { get: function () { return require('./guardduty-malware-protection-plan'); } });
 Object.defineProperty(exports, 'guarddutyMember', { get: function () { return require('./guardduty-member'); } });
+Object.defineProperty(exports, 'guarddutyMemberDetectorFeature', { get: function () { return require('./guardduty-member-detector-feature'); } });
 Object.defineProperty(exports, 'guarddutyOrganizationAdminAccount', { get: function () { return require('./guardduty-organization-admin-account'); } });
 Object.defineProperty(exports, 'guarddutyOrganizationConfiguration', { get: function () { return require('./guardduty-organization-configuration'); } });
 Object.defineProperty(exports, 'guarddutyOrganizationConfigurationFeature', { get: function () { return require('./guardduty-organization-configuration-feature'); } });
@@ -1115,6 +1116,7 @@ Object.defineProperty(exports, 'route53VpcAssociationAuthorization', { get: func
 Object.defineProperty(exports, 'route53Zone', { get: function () { return require('./route53-zone'); } });
 Object.defineProperty(exports, 'route53ZoneAssociation', { get: function () { return require('./route53-zone-association'); } });
 Object.defineProperty(exports, 'route53DomainsDelegationSignerRecord', { get: function () { return require('./route53domains-delegation-signer-record'); } });
+Object.defineProperty(exports, 'route53DomainsDomain', { get: function () { return require('./route53domains-domain'); } });
 Object.defineProperty(exports, 'route53DomainsRegisteredDomain', { get: function () { return require('./route53domains-registered-domain'); } });
 Object.defineProperty(exports, 'route53ProfilesAssociation', { get: function () { return require('./route53profiles-association'); } });
 Object.defineProperty(exports, 'route53ProfilesProfile', { get: function () { return require('./route53profiles-profile'); } });
@@ -1364,6 +1366,7 @@ Object.defineProperty(exports, 'syntheticsCanary', { get: function () { return r
 Object.defineProperty(exports, 'syntheticsGroup', { get: function () { return require('./synthetics-group'); } });
 Object.defineProperty(exports, 'syntheticsGroupAssociation', { get: function () { return require('./synthetics-group-association'); } });
 Object.defineProperty(exports, 'timestreaminfluxdbDbInstance', { get: function () { return require('./timestreaminfluxdb-db-instance'); } });
+Object.defineProperty(exports, 'timestreamqueryScheduledQuery', { get: function () { return require('./timestreamquery-scheduled-query'); } });
 Object.defineProperty(exports, 'timestreamwriteDatabase', { get: function () { return require('./timestreamwrite-database'); } });
 Object.defineProperty(exports, 'timestreamwriteTable', { get: function () { return require('./timestreamwrite-table'); } });
 Object.defineProperty(exports, 'transcribeLanguageModel', { get: function () { return require('./transcribe-language-model'); } });
@@ -1430,10 +1433,12 @@ Object.defineProperty(exports, 'vpclatticeAccessLogSubscription', { get: functio
 Object.defineProperty(exports, 'vpclatticeAuthPolicy', { get: function () { return require('./vpclattice-auth-policy'); } });
 Object.defineProperty(exports, 'vpclatticeListener', { get: function () { return require('./vpclattice-listener'); } });
 Object.defineProperty(exports, 'vpclatticeListenerRule', { get: function () { return require('./vpclattice-listener-rule'); } });
+Object.defineProperty(exports, 'vpclatticeResourceConfiguration', { get: function () { return require('./vpclattice-resource-configuration'); } });
 Object.defineProperty(exports, 'vpclatticeResourceGateway', { get: function () { return require('./vpclattice-resource-gateway'); } });
 Object.defineProperty(exports, 'vpclatticeResourcePolicy', { get: function () { return require('./vpclattice-resource-policy'); } });
 Object.defineProperty(exports, 'vpclatticeService', { get: function () { return require('./vpclattice-service'); } });
 Object.defineProperty(exports, 'vpclatticeServiceNetwork', { get: function () { return require('./vpclattice-service-network'); } });
+Object.defineProperty(exports, 'vpclatticeServiceNetworkResourceAssociation', { get: function () { return require('./vpclattice-service-network-resource-association'); } });
 Object.defineProperty(exports, 'vpclatticeServiceNetworkServiceAssociation', { get: function () { return require('./vpclattice-service-network-service-association'); } });
 Object.defineProperty(exports, 'vpclatticeServiceNetworkVpcAssociation', { get: function () { return require('./vpclattice-service-network-vpc-association'); } });
 Object.defineProperty(exports, 'vpclatticeTargetGroup', { get: function () { return require('./vpclattice-target-group'); } });
@@ -2046,10 +2051,12 @@ Object.defineProperty(exports, 'dataAwsVpc', { get: function () { return require
 Object.defineProperty(exports, 'dataAwsVpcDhcpOptions', { get: function () { return require('./data-aws-vpc-dhcp-options'); } });
 Object.defineProperty(exports, 'dataAwsVpcEndpoint', { get: function () { return require('./data-aws-vpc-endpoint'); } });
 Object.defineProperty(exports, 'dataAwsVpcEndpointService', { get: function () { return require('./data-aws-vpc-endpoint-service'); } });
+Object.defineProperty(exports, 'dataAwsVpcIpam', { get: function () { return require('./data-aws-vpc-ipam'); } });
 Object.defineProperty(exports, 'dataAwsVpcIpamPool', { get: function () { return require('./data-aws-vpc-ipam-pool'); } });
 Object.defineProperty(exports, 'dataAwsVpcIpamPoolCidrs', { get: function () { return require('./data-aws-vpc-ipam-pool-cidrs'); } });
 Object.defineProperty(exports, 'dataAwsVpcIpamPools', { get: function () { return require('./data-aws-vpc-ipam-pools'); } });
 Object.defineProperty(exports, 'dataAwsVpcIpamPreviewNextCidr', { get: function () { return require('./data-aws-vpc-ipam-preview-next-cidr'); } });
+Object.defineProperty(exports, 'dataAwsVpcIpams', { get: function () { return require('./data-aws-vpc-ipams'); } });
 Object.defineProperty(exports, 'dataAwsVpcPeeringConnection', { get: function () { return require('./data-aws-vpc-peering-connection'); } });
 Object.defineProperty(exports, 'dataAwsVpcPeeringConnections', { get: function () { return require('./data-aws-vpc-peering-connections'); } });
 Object.defineProperty(exports, 'dataAwsVpcSecurityGroupRule', { get: function () { return require('./data-aws-vpc-security-group-rule'); } });
