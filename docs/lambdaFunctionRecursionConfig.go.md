@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lambdaFunctionRecursionConfig.LambdaFunctionRecursionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lambdafunctionrecursionconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lambdafunctionrecursionconfig"
 
 lambdafunctionrecursionconfig.NewLambdaFunctionRecursionConfig(scope Construct, id *string, config LambdaFunctionRecursionConfigConfig) LambdaFunctionRecursionConfig
 ```
@@ -378,7 +378,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.lambdaFunctionRecursionConfig.LambdaFunctionRecursionConfig.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lambdafunctionrecursionconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lambdafunctionrecursionconfig"
 
 lambdafunctionrecursionconfig.LambdaFunctionRecursionConfig_IsConstruct(x interface{}) *bool
 ```
@@ -410,7 +410,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.lambdaFunctionRecursionConfig.LambdaFunctionRecursionConfig.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lambdafunctionrecursionconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lambdafunctionrecursionconfig"
 
 lambdafunctionrecursionconfig.LambdaFunctionRecursionConfig_IsTerraformElement(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ lambdafunctionrecursionconfig.LambdaFunctionRecursionConfig_IsTerraformElement(x
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.lambdaFunctionRecursionConfig.LambdaFunctionRecursionConfig.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lambdafunctionrecursionconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lambdafunctionrecursionconfig"
 
 lambdafunctionrecursionconfig.LambdaFunctionRecursionConfig_IsTerraformResource(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ lambdafunctionrecursionconfig.LambdaFunctionRecursionConfig_IsTerraformResource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.lambdaFunctionRecursionConfig.LambdaFunctionRecursionConfig.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lambdafunctionrecursionconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lambdafunctionrecursionconfig"
 
 lambdafunctionrecursionconfig.LambdaFunctionRecursionConfig_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -711,7 +711,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lambdaFunctionRecursionConfig.LambdaFunctionRecursionConfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lambdafunctionrecursionconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lambdafunctionrecursionconfig"
 
 &lambdafunctionrecursionconfig.LambdaFunctionRecursionConfigConfig {
 	Connection: interface{},
