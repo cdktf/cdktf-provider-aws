@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/s3_bucket_lifecycle_configuration
+// https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/resources/s3_bucket_lifecycle_configuration
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,45 +13,38 @@ import * as cdktf from 'cdktf';
 
 export interface S3BucketLifecycleConfigurationConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/s3_bucket_lifecycle_configuration#bucket S3BucketLifecycleConfiguration#bucket}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/resources/s3_bucket_lifecycle_configuration#bucket S3BucketLifecycleConfiguration#bucket}
   */
   readonly bucket: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/s3_bucket_lifecycle_configuration#expected_bucket_owner S3BucketLifecycleConfiguration#expected_bucket_owner}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/resources/s3_bucket_lifecycle_configuration#expected_bucket_owner S3BucketLifecycleConfiguration#expected_bucket_owner}
   */
   readonly expectedBucketOwner?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/s3_bucket_lifecycle_configuration#id S3BucketLifecycleConfiguration#id}
-  *
-  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-  */
-  readonly id?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/s3_bucket_lifecycle_configuration#transition_default_minimum_object_size S3BucketLifecycleConfiguration#transition_default_minimum_object_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/resources/s3_bucket_lifecycle_configuration#transition_default_minimum_object_size S3BucketLifecycleConfiguration#transition_default_minimum_object_size}
   */
   readonly transitionDefaultMinimumObjectSize?: string;
   /**
   * rule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/s3_bucket_lifecycle_configuration#rule S3BucketLifecycleConfiguration#rule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/resources/s3_bucket_lifecycle_configuration#rule S3BucketLifecycleConfiguration#rule}
   */
-  readonly rule: S3BucketLifecycleConfigurationRule[] | cdktf.IResolvable;
+  readonly rule?: S3BucketLifecycleConfigurationRule[] | cdktf.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/s3_bucket_lifecycle_configuration#timeouts S3BucketLifecycleConfiguration#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/resources/s3_bucket_lifecycle_configuration#timeouts S3BucketLifecycleConfiguration#timeouts}
   */
   readonly timeouts?: S3BucketLifecycleConfigurationTimeouts;
 }
 export interface S3BucketLifecycleConfigurationRuleAbortIncompleteMultipartUpload {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/s3_bucket_lifecycle_configuration#days_after_initiation S3BucketLifecycleConfiguration#days_after_initiation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/resources/s3_bucket_lifecycle_configuration#days_after_initiation S3BucketLifecycleConfiguration#days_after_initiation}
   */
   readonly daysAfterInitiation?: number;
 }
 
-export function s3BucketLifecycleConfigurationRuleAbortIncompleteMultipartUploadToTerraform(struct?: S3BucketLifecycleConfigurationRuleAbortIncompleteMultipartUploadOutputReference | S3BucketLifecycleConfigurationRuleAbortIncompleteMultipartUpload): any {
+export function s3BucketLifecycleConfigurationRuleAbortIncompleteMultipartUploadToTerraform(struct?: S3BucketLifecycleConfigurationRuleAbortIncompleteMultipartUpload | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -62,7 +55,7 @@ export function s3BucketLifecycleConfigurationRuleAbortIncompleteMultipartUpload
 }
 
 
-export function s3BucketLifecycleConfigurationRuleAbortIncompleteMultipartUploadToHclTerraform(struct?: S3BucketLifecycleConfigurationRuleAbortIncompleteMultipartUploadOutputReference | S3BucketLifecycleConfigurationRuleAbortIncompleteMultipartUpload): any {
+export function s3BucketLifecycleConfigurationRuleAbortIncompleteMultipartUploadToHclTerraform(struct?: S3BucketLifecycleConfigurationRuleAbortIncompleteMultipartUpload | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -82,16 +75,22 @@ export function s3BucketLifecycleConfigurationRuleAbortIncompleteMultipartUpload
 
 export class S3BucketLifecycleConfigurationRuleAbortIncompleteMultipartUploadOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): S3BucketLifecycleConfigurationRuleAbortIncompleteMultipartUpload | undefined {
+  public get internalValue(): S3BucketLifecycleConfigurationRuleAbortIncompleteMultipartUpload | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._daysAfterInitiation !== undefined) {
@@ -101,13 +100,19 @@ export class S3BucketLifecycleConfigurationRuleAbortIncompleteMultipartUploadOut
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: S3BucketLifecycleConfigurationRuleAbortIncompleteMultipartUpload | undefined) {
+  public set internalValue(value: S3BucketLifecycleConfigurationRuleAbortIncompleteMultipartUpload | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._daysAfterInitiation = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._daysAfterInitiation = value.daysAfterInitiation;
     }
   }
@@ -128,22 +133,42 @@ export class S3BucketLifecycleConfigurationRuleAbortIncompleteMultipartUploadOut
     return this._daysAfterInitiation;
   }
 }
+
+export class S3BucketLifecycleConfigurationRuleAbortIncompleteMultipartUploadList extends cdktf.ComplexList {
+  public internalValue? : S3BucketLifecycleConfigurationRuleAbortIncompleteMultipartUpload[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): S3BucketLifecycleConfigurationRuleAbortIncompleteMultipartUploadOutputReference {
+    return new S3BucketLifecycleConfigurationRuleAbortIncompleteMultipartUploadOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface S3BucketLifecycleConfigurationRuleExpiration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/s3_bucket_lifecycle_configuration#date S3BucketLifecycleConfiguration#date}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/resources/s3_bucket_lifecycle_configuration#date S3BucketLifecycleConfiguration#date}
   */
   readonly date?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/s3_bucket_lifecycle_configuration#days S3BucketLifecycleConfiguration#days}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/resources/s3_bucket_lifecycle_configuration#days S3BucketLifecycleConfiguration#days}
   */
   readonly days?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/s3_bucket_lifecycle_configuration#expired_object_delete_marker S3BucketLifecycleConfiguration#expired_object_delete_marker}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/resources/s3_bucket_lifecycle_configuration#expired_object_delete_marker S3BucketLifecycleConfiguration#expired_object_delete_marker}
   */
   readonly expiredObjectDeleteMarker?: boolean | cdktf.IResolvable;
 }
 
-export function s3BucketLifecycleConfigurationRuleExpirationToTerraform(struct?: S3BucketLifecycleConfigurationRuleExpirationOutputReference | S3BucketLifecycleConfigurationRuleExpiration): any {
+export function s3BucketLifecycleConfigurationRuleExpirationToTerraform(struct?: S3BucketLifecycleConfigurationRuleExpiration | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -156,7 +181,7 @@ export function s3BucketLifecycleConfigurationRuleExpirationToTerraform(struct?:
 }
 
 
-export function s3BucketLifecycleConfigurationRuleExpirationToHclTerraform(struct?: S3BucketLifecycleConfigurationRuleExpirationOutputReference | S3BucketLifecycleConfigurationRuleExpiration): any {
+export function s3BucketLifecycleConfigurationRuleExpirationToHclTerraform(struct?: S3BucketLifecycleConfigurationRuleExpiration | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -188,16 +213,22 @@ export function s3BucketLifecycleConfigurationRuleExpirationToHclTerraform(struc
 
 export class S3BucketLifecycleConfigurationRuleExpirationOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): S3BucketLifecycleConfigurationRuleExpiration | undefined {
+  public get internalValue(): S3BucketLifecycleConfigurationRuleExpiration | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._date !== undefined) {
@@ -215,15 +246,21 @@ export class S3BucketLifecycleConfigurationRuleExpirationOutputReference extends
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: S3BucketLifecycleConfigurationRuleExpiration | undefined) {
+  public set internalValue(value: S3BucketLifecycleConfigurationRuleExpiration | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._date = undefined;
       this._days = undefined;
       this._expiredObjectDeleteMarker = undefined;
     }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._date = value.date;
       this._days = value.days;
       this._expiredObjectDeleteMarker = value.expiredObjectDeleteMarker;
@@ -246,7 +283,7 @@ export class S3BucketLifecycleConfigurationRuleExpirationOutputReference extends
     return this._date;
   }
 
-  // days - computed: false, optional: true, required: false
+  // days - computed: true, optional: true, required: false
   private _days?: number; 
   public get days() {
     return this.getNumberAttribute('days');
@@ -278,26 +315,46 @@ export class S3BucketLifecycleConfigurationRuleExpirationOutputReference extends
     return this._expiredObjectDeleteMarker;
   }
 }
+
+export class S3BucketLifecycleConfigurationRuleExpirationList extends cdktf.ComplexList {
+  public internalValue? : S3BucketLifecycleConfigurationRuleExpiration[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): S3BucketLifecycleConfigurationRuleExpirationOutputReference {
+    return new S3BucketLifecycleConfigurationRuleExpirationOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface S3BucketLifecycleConfigurationRuleFilterAnd {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/s3_bucket_lifecycle_configuration#object_size_greater_than S3BucketLifecycleConfiguration#object_size_greater_than}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/resources/s3_bucket_lifecycle_configuration#object_size_greater_than S3BucketLifecycleConfiguration#object_size_greater_than}
   */
   readonly objectSizeGreaterThan?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/s3_bucket_lifecycle_configuration#object_size_less_than S3BucketLifecycleConfiguration#object_size_less_than}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/resources/s3_bucket_lifecycle_configuration#object_size_less_than S3BucketLifecycleConfiguration#object_size_less_than}
   */
   readonly objectSizeLessThan?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/s3_bucket_lifecycle_configuration#prefix S3BucketLifecycleConfiguration#prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/resources/s3_bucket_lifecycle_configuration#prefix S3BucketLifecycleConfiguration#prefix}
   */
   readonly prefix?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/s3_bucket_lifecycle_configuration#tags S3BucketLifecycleConfiguration#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/resources/s3_bucket_lifecycle_configuration#tags S3BucketLifecycleConfiguration#tags}
   */
   readonly tags?: { [key: string]: string };
 }
 
-export function s3BucketLifecycleConfigurationRuleFilterAndToTerraform(struct?: S3BucketLifecycleConfigurationRuleFilterAndOutputReference | S3BucketLifecycleConfigurationRuleFilterAnd): any {
+export function s3BucketLifecycleConfigurationRuleFilterAndToTerraform(struct?: S3BucketLifecycleConfigurationRuleFilterAnd | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -311,7 +368,7 @@ export function s3BucketLifecycleConfigurationRuleFilterAndToTerraform(struct?: 
 }
 
 
-export function s3BucketLifecycleConfigurationRuleFilterAndToHclTerraform(struct?: S3BucketLifecycleConfigurationRuleFilterAndOutputReference | S3BucketLifecycleConfigurationRuleFilterAnd): any {
+export function s3BucketLifecycleConfigurationRuleFilterAndToHclTerraform(struct?: S3BucketLifecycleConfigurationRuleFilterAnd | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -349,16 +406,22 @@ export function s3BucketLifecycleConfigurationRuleFilterAndToHclTerraform(struct
 
 export class S3BucketLifecycleConfigurationRuleFilterAndOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): S3BucketLifecycleConfigurationRuleFilterAnd | undefined {
+  public get internalValue(): S3BucketLifecycleConfigurationRuleFilterAnd | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._objectSizeGreaterThan !== undefined) {
@@ -380,16 +443,22 @@ export class S3BucketLifecycleConfigurationRuleFilterAndOutputReference extends 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: S3BucketLifecycleConfigurationRuleFilterAnd | undefined) {
+  public set internalValue(value: S3BucketLifecycleConfigurationRuleFilterAnd | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._objectSizeGreaterThan = undefined;
       this._objectSizeLessThan = undefined;
       this._prefix = undefined;
       this._tags = undefined;
     }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._objectSizeGreaterThan = value.objectSizeGreaterThan;
       this._objectSizeLessThan = value.objectSizeLessThan;
       this._prefix = value.prefix;
@@ -397,7 +466,7 @@ export class S3BucketLifecycleConfigurationRuleFilterAndOutputReference extends 
     }
   }
 
-  // object_size_greater_than - computed: false, optional: true, required: false
+  // object_size_greater_than - computed: true, optional: true, required: false
   private _objectSizeGreaterThan?: number; 
   public get objectSizeGreaterThan() {
     return this.getNumberAttribute('object_size_greater_than');
@@ -413,7 +482,7 @@ export class S3BucketLifecycleConfigurationRuleFilterAndOutputReference extends 
     return this._objectSizeGreaterThan;
   }
 
-  // object_size_less_than - computed: false, optional: true, required: false
+  // object_size_less_than - computed: true, optional: true, required: false
   private _objectSizeLessThan?: number; 
   public get objectSizeLessThan() {
     return this.getNumberAttribute('object_size_less_than');
@@ -429,7 +498,7 @@ export class S3BucketLifecycleConfigurationRuleFilterAndOutputReference extends 
     return this._objectSizeLessThan;
   }
 
-  // prefix - computed: false, optional: true, required: false
+  // prefix - computed: true, optional: true, required: false
   private _prefix?: string; 
   public get prefix() {
     return this.getStringAttribute('prefix');
@@ -461,18 +530,38 @@ export class S3BucketLifecycleConfigurationRuleFilterAndOutputReference extends 
     return this._tags;
   }
 }
+
+export class S3BucketLifecycleConfigurationRuleFilterAndList extends cdktf.ComplexList {
+  public internalValue? : S3BucketLifecycleConfigurationRuleFilterAnd[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): S3BucketLifecycleConfigurationRuleFilterAndOutputReference {
+    return new S3BucketLifecycleConfigurationRuleFilterAndOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface S3BucketLifecycleConfigurationRuleFilterTag {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/s3_bucket_lifecycle_configuration#key S3BucketLifecycleConfiguration#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/resources/s3_bucket_lifecycle_configuration#key S3BucketLifecycleConfiguration#key}
   */
   readonly key: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/s3_bucket_lifecycle_configuration#value S3BucketLifecycleConfiguration#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/resources/s3_bucket_lifecycle_configuration#value S3BucketLifecycleConfiguration#value}
   */
   readonly value: string;
 }
 
-export function s3BucketLifecycleConfigurationRuleFilterTagToTerraform(struct?: S3BucketLifecycleConfigurationRuleFilterTagOutputReference | S3BucketLifecycleConfigurationRuleFilterTag): any {
+export function s3BucketLifecycleConfigurationRuleFilterTagToTerraform(struct?: S3BucketLifecycleConfigurationRuleFilterTag | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -484,7 +573,7 @@ export function s3BucketLifecycleConfigurationRuleFilterTagToTerraform(struct?: 
 }
 
 
-export function s3BucketLifecycleConfigurationRuleFilterTagToHclTerraform(struct?: S3BucketLifecycleConfigurationRuleFilterTagOutputReference | S3BucketLifecycleConfigurationRuleFilterTag): any {
+export function s3BucketLifecycleConfigurationRuleFilterTagToHclTerraform(struct?: S3BucketLifecycleConfigurationRuleFilterTag | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -510,16 +599,22 @@ export function s3BucketLifecycleConfigurationRuleFilterTagToHclTerraform(struct
 
 export class S3BucketLifecycleConfigurationRuleFilterTagOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): S3BucketLifecycleConfigurationRuleFilterTag | undefined {
+  public get internalValue(): S3BucketLifecycleConfigurationRuleFilterTag | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._key !== undefined) {
@@ -533,14 +628,20 @@ export class S3BucketLifecycleConfigurationRuleFilterTagOutputReference extends 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: S3BucketLifecycleConfigurationRuleFilterTag | undefined) {
+  public set internalValue(value: S3BucketLifecycleConfigurationRuleFilterTag | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._key = undefined;
       this._value = undefined;
     }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._key = value.key;
       this._value = value.value;
     }
@@ -572,65 +673,85 @@ export class S3BucketLifecycleConfigurationRuleFilterTagOutputReference extends 
     return this._value;
   }
 }
+
+export class S3BucketLifecycleConfigurationRuleFilterTagList extends cdktf.ComplexList {
+  public internalValue? : S3BucketLifecycleConfigurationRuleFilterTag[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): S3BucketLifecycleConfigurationRuleFilterTagOutputReference {
+    return new S3BucketLifecycleConfigurationRuleFilterTagOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface S3BucketLifecycleConfigurationRuleFilter {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/s3_bucket_lifecycle_configuration#object_size_greater_than S3BucketLifecycleConfiguration#object_size_greater_than}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/resources/s3_bucket_lifecycle_configuration#object_size_greater_than S3BucketLifecycleConfiguration#object_size_greater_than}
   */
-  readonly objectSizeGreaterThan?: string;
+  readonly objectSizeGreaterThan?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/s3_bucket_lifecycle_configuration#object_size_less_than S3BucketLifecycleConfiguration#object_size_less_than}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/resources/s3_bucket_lifecycle_configuration#object_size_less_than S3BucketLifecycleConfiguration#object_size_less_than}
   */
-  readonly objectSizeLessThan?: string;
+  readonly objectSizeLessThan?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/s3_bucket_lifecycle_configuration#prefix S3BucketLifecycleConfiguration#prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/resources/s3_bucket_lifecycle_configuration#prefix S3BucketLifecycleConfiguration#prefix}
   */
   readonly prefix?: string;
   /**
   * and block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/s3_bucket_lifecycle_configuration#and S3BucketLifecycleConfiguration#and}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/resources/s3_bucket_lifecycle_configuration#and S3BucketLifecycleConfiguration#and}
   */
-  readonly and?: S3BucketLifecycleConfigurationRuleFilterAnd;
+  readonly and?: S3BucketLifecycleConfigurationRuleFilterAnd[] | cdktf.IResolvable;
   /**
   * tag block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/s3_bucket_lifecycle_configuration#tag S3BucketLifecycleConfiguration#tag}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/resources/s3_bucket_lifecycle_configuration#tag S3BucketLifecycleConfiguration#tag}
   */
-  readonly tag?: S3BucketLifecycleConfigurationRuleFilterTag;
+  readonly tag?: S3BucketLifecycleConfigurationRuleFilterTag[] | cdktf.IResolvable;
 }
 
-export function s3BucketLifecycleConfigurationRuleFilterToTerraform(struct?: S3BucketLifecycleConfigurationRuleFilterOutputReference | S3BucketLifecycleConfigurationRuleFilter): any {
+export function s3BucketLifecycleConfigurationRuleFilterToTerraform(struct?: S3BucketLifecycleConfigurationRuleFilter | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    object_size_greater_than: cdktf.stringToTerraform(struct!.objectSizeGreaterThan),
-    object_size_less_than: cdktf.stringToTerraform(struct!.objectSizeLessThan),
+    object_size_greater_than: cdktf.numberToTerraform(struct!.objectSizeGreaterThan),
+    object_size_less_than: cdktf.numberToTerraform(struct!.objectSizeLessThan),
     prefix: cdktf.stringToTerraform(struct!.prefix),
-    and: s3BucketLifecycleConfigurationRuleFilterAndToTerraform(struct!.and),
-    tag: s3BucketLifecycleConfigurationRuleFilterTagToTerraform(struct!.tag),
+    and: cdktf.listMapper(s3BucketLifecycleConfigurationRuleFilterAndToTerraform, true)(struct!.and),
+    tag: cdktf.listMapper(s3BucketLifecycleConfigurationRuleFilterTagToTerraform, true)(struct!.tag),
   }
 }
 
 
-export function s3BucketLifecycleConfigurationRuleFilterToHclTerraform(struct?: S3BucketLifecycleConfigurationRuleFilterOutputReference | S3BucketLifecycleConfigurationRuleFilter): any {
+export function s3BucketLifecycleConfigurationRuleFilterToHclTerraform(struct?: S3BucketLifecycleConfigurationRuleFilter | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     object_size_greater_than: {
-      value: cdktf.stringToHclTerraform(struct!.objectSizeGreaterThan),
+      value: cdktf.numberToHclTerraform(struct!.objectSizeGreaterThan),
       isBlock: false,
       type: "simple",
-      storageClassType: "string",
+      storageClassType: "number",
     },
     object_size_less_than: {
-      value: cdktf.stringToHclTerraform(struct!.objectSizeLessThan),
+      value: cdktf.numberToHclTerraform(struct!.objectSizeLessThan),
       isBlock: false,
       type: "simple",
-      storageClassType: "string",
+      storageClassType: "number",
     },
     prefix: {
       value: cdktf.stringToHclTerraform(struct!.prefix),
@@ -639,13 +760,13 @@ export function s3BucketLifecycleConfigurationRuleFilterToHclTerraform(struct?: 
       storageClassType: "string",
     },
     and: {
-      value: s3BucketLifecycleConfigurationRuleFilterAndToHclTerraform(struct!.and),
+      value: cdktf.listMapperHcl(s3BucketLifecycleConfigurationRuleFilterAndToHclTerraform, true)(struct!.and),
       isBlock: true,
       type: "list",
       storageClassType: "S3BucketLifecycleConfigurationRuleFilterAndList",
     },
     tag: {
-      value: s3BucketLifecycleConfigurationRuleFilterTagToHclTerraform(struct!.tag),
+      value: cdktf.listMapperHcl(s3BucketLifecycleConfigurationRuleFilterTagToHclTerraform, true)(struct!.tag),
       isBlock: true,
       type: "list",
       storageClassType: "S3BucketLifecycleConfigurationRuleFilterTagList",
@@ -658,16 +779,22 @@ export function s3BucketLifecycleConfigurationRuleFilterToHclTerraform(struct?: 
 
 export class S3BucketLifecycleConfigurationRuleFilterOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): S3BucketLifecycleConfigurationRuleFilter | undefined {
+  public get internalValue(): S3BucketLifecycleConfigurationRuleFilter | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._objectSizeGreaterThan !== undefined) {
@@ -693,17 +820,23 @@ export class S3BucketLifecycleConfigurationRuleFilterOutputReference extends cdk
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: S3BucketLifecycleConfigurationRuleFilter | undefined) {
+  public set internalValue(value: S3BucketLifecycleConfigurationRuleFilter | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._objectSizeGreaterThan = undefined;
       this._objectSizeLessThan = undefined;
       this._prefix = undefined;
       this._and.internalValue = undefined;
       this._tag.internalValue = undefined;
     }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._objectSizeGreaterThan = value.objectSizeGreaterThan;
       this._objectSizeLessThan = value.objectSizeLessThan;
       this._prefix = value.prefix;
@@ -712,12 +845,12 @@ export class S3BucketLifecycleConfigurationRuleFilterOutputReference extends cdk
     }
   }
 
-  // object_size_greater_than - computed: false, optional: true, required: false
-  private _objectSizeGreaterThan?: string; 
+  // object_size_greater_than - computed: true, optional: true, required: false
+  private _objectSizeGreaterThan?: number; 
   public get objectSizeGreaterThan() {
-    return this.getStringAttribute('object_size_greater_than');
+    return this.getNumberAttribute('object_size_greater_than');
   }
-  public set objectSizeGreaterThan(value: string) {
+  public set objectSizeGreaterThan(value: number) {
     this._objectSizeGreaterThan = value;
   }
   public resetObjectSizeGreaterThan() {
@@ -728,12 +861,12 @@ export class S3BucketLifecycleConfigurationRuleFilterOutputReference extends cdk
     return this._objectSizeGreaterThan;
   }
 
-  // object_size_less_than - computed: false, optional: true, required: false
-  private _objectSizeLessThan?: string; 
+  // object_size_less_than - computed: true, optional: true, required: false
+  private _objectSizeLessThan?: number; 
   public get objectSizeLessThan() {
-    return this.getStringAttribute('object_size_less_than');
+    return this.getNumberAttribute('object_size_less_than');
   }
-  public set objectSizeLessThan(value: string) {
+  public set objectSizeLessThan(value: number) {
     this._objectSizeLessThan = value;
   }
   public resetObjectSizeLessThan() {
@@ -744,7 +877,7 @@ export class S3BucketLifecycleConfigurationRuleFilterOutputReference extends cdk
     return this._objectSizeLessThan;
   }
 
-  // prefix - computed: false, optional: true, required: false
+  // prefix - computed: true, optional: true, required: false
   private _prefix?: string; 
   public get prefix() {
     return this.getStringAttribute('prefix');
@@ -761,11 +894,11 @@ export class S3BucketLifecycleConfigurationRuleFilterOutputReference extends cdk
   }
 
   // and - computed: false, optional: true, required: false
-  private _and = new S3BucketLifecycleConfigurationRuleFilterAndOutputReference(this, "and");
+  private _and = new S3BucketLifecycleConfigurationRuleFilterAndList(this, "and", false);
   public get and() {
     return this._and;
   }
-  public putAnd(value: S3BucketLifecycleConfigurationRuleFilterAnd) {
+  public putAnd(value: S3BucketLifecycleConfigurationRuleFilterAnd[] | cdktf.IResolvable) {
     this._and.internalValue = value;
   }
   public resetAnd() {
@@ -777,11 +910,11 @@ export class S3BucketLifecycleConfigurationRuleFilterOutputReference extends cdk
   }
 
   // tag - computed: false, optional: true, required: false
-  private _tag = new S3BucketLifecycleConfigurationRuleFilterTagOutputReference(this, "tag");
+  private _tag = new S3BucketLifecycleConfigurationRuleFilterTagList(this, "tag", false);
   public get tag() {
     return this._tag;
   }
-  public putTag(value: S3BucketLifecycleConfigurationRuleFilterTag) {
+  public putTag(value: S3BucketLifecycleConfigurationRuleFilterTag[] | cdktf.IResolvable) {
     this._tag.internalValue = value;
   }
   public resetTag() {
@@ -792,40 +925,60 @@ export class S3BucketLifecycleConfigurationRuleFilterOutputReference extends cdk
     return this._tag.internalValue;
   }
 }
+
+export class S3BucketLifecycleConfigurationRuleFilterList extends cdktf.ComplexList {
+  public internalValue? : S3BucketLifecycleConfigurationRuleFilter[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): S3BucketLifecycleConfigurationRuleFilterOutputReference {
+    return new S3BucketLifecycleConfigurationRuleFilterOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface S3BucketLifecycleConfigurationRuleNoncurrentVersionExpiration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/s3_bucket_lifecycle_configuration#newer_noncurrent_versions S3BucketLifecycleConfiguration#newer_noncurrent_versions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/resources/s3_bucket_lifecycle_configuration#newer_noncurrent_versions S3BucketLifecycleConfiguration#newer_noncurrent_versions}
   */
-  readonly newerNoncurrentVersions?: string;
+  readonly newerNoncurrentVersions?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/s3_bucket_lifecycle_configuration#noncurrent_days S3BucketLifecycleConfiguration#noncurrent_days}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/resources/s3_bucket_lifecycle_configuration#noncurrent_days S3BucketLifecycleConfiguration#noncurrent_days}
   */
   readonly noncurrentDays?: number;
 }
 
-export function s3BucketLifecycleConfigurationRuleNoncurrentVersionExpirationToTerraform(struct?: S3BucketLifecycleConfigurationRuleNoncurrentVersionExpirationOutputReference | S3BucketLifecycleConfigurationRuleNoncurrentVersionExpiration): any {
+export function s3BucketLifecycleConfigurationRuleNoncurrentVersionExpirationToTerraform(struct?: S3BucketLifecycleConfigurationRuleNoncurrentVersionExpiration | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    newer_noncurrent_versions: cdktf.stringToTerraform(struct!.newerNoncurrentVersions),
+    newer_noncurrent_versions: cdktf.numberToTerraform(struct!.newerNoncurrentVersions),
     noncurrent_days: cdktf.numberToTerraform(struct!.noncurrentDays),
   }
 }
 
 
-export function s3BucketLifecycleConfigurationRuleNoncurrentVersionExpirationToHclTerraform(struct?: S3BucketLifecycleConfigurationRuleNoncurrentVersionExpirationOutputReference | S3BucketLifecycleConfigurationRuleNoncurrentVersionExpiration): any {
+export function s3BucketLifecycleConfigurationRuleNoncurrentVersionExpirationToHclTerraform(struct?: S3BucketLifecycleConfigurationRuleNoncurrentVersionExpiration | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     newer_noncurrent_versions: {
-      value: cdktf.stringToHclTerraform(struct!.newerNoncurrentVersions),
+      value: cdktf.numberToHclTerraform(struct!.newerNoncurrentVersions),
       isBlock: false,
       type: "simple",
-      storageClassType: "string",
+      storageClassType: "number",
     },
     noncurrent_days: {
       value: cdktf.numberToHclTerraform(struct!.noncurrentDays),
@@ -841,16 +994,22 @@ export function s3BucketLifecycleConfigurationRuleNoncurrentVersionExpirationToH
 
 export class S3BucketLifecycleConfigurationRuleNoncurrentVersionExpirationOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): S3BucketLifecycleConfigurationRuleNoncurrentVersionExpiration | undefined {
+  public get internalValue(): S3BucketLifecycleConfigurationRuleNoncurrentVersionExpiration | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._newerNoncurrentVersions !== undefined) {
@@ -864,25 +1023,31 @@ export class S3BucketLifecycleConfigurationRuleNoncurrentVersionExpirationOutput
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: S3BucketLifecycleConfigurationRuleNoncurrentVersionExpiration | undefined) {
+  public set internalValue(value: S3BucketLifecycleConfigurationRuleNoncurrentVersionExpiration | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._newerNoncurrentVersions = undefined;
       this._noncurrentDays = undefined;
     }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._newerNoncurrentVersions = value.newerNoncurrentVersions;
       this._noncurrentDays = value.noncurrentDays;
     }
   }
 
-  // newer_noncurrent_versions - computed: false, optional: true, required: false
-  private _newerNoncurrentVersions?: string; 
+  // newer_noncurrent_versions - computed: true, optional: true, required: false
+  private _newerNoncurrentVersions?: number; 
   public get newerNoncurrentVersions() {
-    return this.getStringAttribute('newer_noncurrent_versions');
+    return this.getNumberAttribute('newer_noncurrent_versions');
   }
-  public set newerNoncurrentVersions(value: string) {
+  public set newerNoncurrentVersions(value: number) {
     this._newerNoncurrentVersions = value;
   }
   public resetNewerNoncurrentVersions() {
@@ -893,7 +1058,7 @@ export class S3BucketLifecycleConfigurationRuleNoncurrentVersionExpirationOutput
     return this._newerNoncurrentVersions;
   }
 
-  // noncurrent_days - computed: false, optional: true, required: false
+  // noncurrent_days - computed: true, optional: true, required: false
   private _noncurrentDays?: number; 
   public get noncurrentDays() {
     return this.getNumberAttribute('noncurrent_days');
@@ -909,17 +1074,37 @@ export class S3BucketLifecycleConfigurationRuleNoncurrentVersionExpirationOutput
     return this._noncurrentDays;
   }
 }
+
+export class S3BucketLifecycleConfigurationRuleNoncurrentVersionExpirationList extends cdktf.ComplexList {
+  public internalValue? : S3BucketLifecycleConfigurationRuleNoncurrentVersionExpiration[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): S3BucketLifecycleConfigurationRuleNoncurrentVersionExpirationOutputReference {
+    return new S3BucketLifecycleConfigurationRuleNoncurrentVersionExpirationOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface S3BucketLifecycleConfigurationRuleNoncurrentVersionTransition {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/s3_bucket_lifecycle_configuration#newer_noncurrent_versions S3BucketLifecycleConfiguration#newer_noncurrent_versions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/resources/s3_bucket_lifecycle_configuration#newer_noncurrent_versions S3BucketLifecycleConfiguration#newer_noncurrent_versions}
   */
-  readonly newerNoncurrentVersions?: string;
+  readonly newerNoncurrentVersions?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/s3_bucket_lifecycle_configuration#noncurrent_days S3BucketLifecycleConfiguration#noncurrent_days}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/resources/s3_bucket_lifecycle_configuration#noncurrent_days S3BucketLifecycleConfiguration#noncurrent_days}
   */
   readonly noncurrentDays?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/s3_bucket_lifecycle_configuration#storage_class S3BucketLifecycleConfiguration#storage_class}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/resources/s3_bucket_lifecycle_configuration#storage_class S3BucketLifecycleConfiguration#storage_class}
   */
   readonly storageClass: string;
 }
@@ -930,7 +1115,7 @@ export function s3BucketLifecycleConfigurationRuleNoncurrentVersionTransitionToT
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    newer_noncurrent_versions: cdktf.stringToTerraform(struct!.newerNoncurrentVersions),
+    newer_noncurrent_versions: cdktf.numberToTerraform(struct!.newerNoncurrentVersions),
     noncurrent_days: cdktf.numberToTerraform(struct!.noncurrentDays),
     storage_class: cdktf.stringToTerraform(struct!.storageClass),
   }
@@ -944,10 +1129,10 @@ export function s3BucketLifecycleConfigurationRuleNoncurrentVersionTransitionToH
   }
   const attrs = {
     newer_noncurrent_versions: {
-      value: cdktf.stringToHclTerraform(struct!.newerNoncurrentVersions),
+      value: cdktf.numberToHclTerraform(struct!.newerNoncurrentVersions),
       isBlock: false,
       type: "simple",
-      storageClassType: "string",
+      storageClassType: "number",
     },
     noncurrent_days: {
       value: cdktf.numberToHclTerraform(struct!.noncurrentDays),
@@ -1023,12 +1208,12 @@ export class S3BucketLifecycleConfigurationRuleNoncurrentVersionTransitionOutput
     }
   }
 
-  // newer_noncurrent_versions - computed: false, optional: true, required: false
-  private _newerNoncurrentVersions?: string; 
+  // newer_noncurrent_versions - computed: true, optional: true, required: false
+  private _newerNoncurrentVersions?: number; 
   public get newerNoncurrentVersions() {
-    return this.getStringAttribute('newer_noncurrent_versions');
+    return this.getNumberAttribute('newer_noncurrent_versions');
   }
-  public set newerNoncurrentVersions(value: string) {
+  public set newerNoncurrentVersions(value: number) {
     this._newerNoncurrentVersions = value;
   }
   public resetNewerNoncurrentVersions() {
@@ -1039,7 +1224,7 @@ export class S3BucketLifecycleConfigurationRuleNoncurrentVersionTransitionOutput
     return this._newerNoncurrentVersions;
   }
 
-  // noncurrent_days - computed: false, optional: true, required: false
+  // noncurrent_days - computed: true, optional: true, required: false
   private _noncurrentDays?: number; 
   public get noncurrentDays() {
     return this.getNumberAttribute('noncurrent_days');
@@ -1090,15 +1275,15 @@ export class S3BucketLifecycleConfigurationRuleNoncurrentVersionTransitionList e
 }
 export interface S3BucketLifecycleConfigurationRuleTransition {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/s3_bucket_lifecycle_configuration#date S3BucketLifecycleConfiguration#date}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/resources/s3_bucket_lifecycle_configuration#date S3BucketLifecycleConfiguration#date}
   */
   readonly date?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/s3_bucket_lifecycle_configuration#days S3BucketLifecycleConfiguration#days}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/resources/s3_bucket_lifecycle_configuration#days S3BucketLifecycleConfiguration#days}
   */
   readonly days?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/s3_bucket_lifecycle_configuration#storage_class S3BucketLifecycleConfiguration#storage_class}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/resources/s3_bucket_lifecycle_configuration#storage_class S3BucketLifecycleConfiguration#storage_class}
   */
   readonly storageClass: string;
 }
@@ -1218,7 +1403,7 @@ export class S3BucketLifecycleConfigurationRuleTransitionOutputReference extends
     return this._date;
   }
 
-  // days - computed: false, optional: true, required: false
+  // days - computed: true, optional: true, required: false
   private _days?: number; 
   public get days() {
     return this.getNumberAttribute('days');
@@ -1269,54 +1454,54 @@ export class S3BucketLifecycleConfigurationRuleTransitionList extends cdktf.Comp
 }
 export interface S3BucketLifecycleConfigurationRule {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/s3_bucket_lifecycle_configuration#id S3BucketLifecycleConfiguration#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/resources/s3_bucket_lifecycle_configuration#id S3BucketLifecycleConfiguration#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/s3_bucket_lifecycle_configuration#prefix S3BucketLifecycleConfiguration#prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/resources/s3_bucket_lifecycle_configuration#prefix S3BucketLifecycleConfiguration#prefix}
   */
   readonly prefix?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/s3_bucket_lifecycle_configuration#status S3BucketLifecycleConfiguration#status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/resources/s3_bucket_lifecycle_configuration#status S3BucketLifecycleConfiguration#status}
   */
   readonly status: string;
   /**
   * abort_incomplete_multipart_upload block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/s3_bucket_lifecycle_configuration#abort_incomplete_multipart_upload S3BucketLifecycleConfiguration#abort_incomplete_multipart_upload}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/resources/s3_bucket_lifecycle_configuration#abort_incomplete_multipart_upload S3BucketLifecycleConfiguration#abort_incomplete_multipart_upload}
   */
-  readonly abortIncompleteMultipartUpload?: S3BucketLifecycleConfigurationRuleAbortIncompleteMultipartUpload;
+  readonly abortIncompleteMultipartUpload?: S3BucketLifecycleConfigurationRuleAbortIncompleteMultipartUpload[] | cdktf.IResolvable;
   /**
   * expiration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/s3_bucket_lifecycle_configuration#expiration S3BucketLifecycleConfiguration#expiration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/resources/s3_bucket_lifecycle_configuration#expiration S3BucketLifecycleConfiguration#expiration}
   */
-  readonly expiration?: S3BucketLifecycleConfigurationRuleExpiration;
+  readonly expiration?: S3BucketLifecycleConfigurationRuleExpiration[] | cdktf.IResolvable;
   /**
   * filter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/s3_bucket_lifecycle_configuration#filter S3BucketLifecycleConfiguration#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/resources/s3_bucket_lifecycle_configuration#filter S3BucketLifecycleConfiguration#filter}
   */
-  readonly filter?: S3BucketLifecycleConfigurationRuleFilter;
+  readonly filter?: S3BucketLifecycleConfigurationRuleFilter[] | cdktf.IResolvable;
   /**
   * noncurrent_version_expiration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/s3_bucket_lifecycle_configuration#noncurrent_version_expiration S3BucketLifecycleConfiguration#noncurrent_version_expiration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/resources/s3_bucket_lifecycle_configuration#noncurrent_version_expiration S3BucketLifecycleConfiguration#noncurrent_version_expiration}
   */
-  readonly noncurrentVersionExpiration?: S3BucketLifecycleConfigurationRuleNoncurrentVersionExpiration;
+  readonly noncurrentVersionExpiration?: S3BucketLifecycleConfigurationRuleNoncurrentVersionExpiration[] | cdktf.IResolvable;
   /**
   * noncurrent_version_transition block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/s3_bucket_lifecycle_configuration#noncurrent_version_transition S3BucketLifecycleConfiguration#noncurrent_version_transition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/resources/s3_bucket_lifecycle_configuration#noncurrent_version_transition S3BucketLifecycleConfiguration#noncurrent_version_transition}
   */
   readonly noncurrentVersionTransition?: S3BucketLifecycleConfigurationRuleNoncurrentVersionTransition[] | cdktf.IResolvable;
   /**
   * transition block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/s3_bucket_lifecycle_configuration#transition S3BucketLifecycleConfiguration#transition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/resources/s3_bucket_lifecycle_configuration#transition S3BucketLifecycleConfiguration#transition}
   */
   readonly transition?: S3BucketLifecycleConfigurationRuleTransition[] | cdktf.IResolvable;
 }
@@ -1330,10 +1515,10 @@ export function s3BucketLifecycleConfigurationRuleToTerraform(struct?: S3BucketL
     id: cdktf.stringToTerraform(struct!.id),
     prefix: cdktf.stringToTerraform(struct!.prefix),
     status: cdktf.stringToTerraform(struct!.status),
-    abort_incomplete_multipart_upload: s3BucketLifecycleConfigurationRuleAbortIncompleteMultipartUploadToTerraform(struct!.abortIncompleteMultipartUpload),
-    expiration: s3BucketLifecycleConfigurationRuleExpirationToTerraform(struct!.expiration),
-    filter: s3BucketLifecycleConfigurationRuleFilterToTerraform(struct!.filter),
-    noncurrent_version_expiration: s3BucketLifecycleConfigurationRuleNoncurrentVersionExpirationToTerraform(struct!.noncurrentVersionExpiration),
+    abort_incomplete_multipart_upload: cdktf.listMapper(s3BucketLifecycleConfigurationRuleAbortIncompleteMultipartUploadToTerraform, true)(struct!.abortIncompleteMultipartUpload),
+    expiration: cdktf.listMapper(s3BucketLifecycleConfigurationRuleExpirationToTerraform, true)(struct!.expiration),
+    filter: cdktf.listMapper(s3BucketLifecycleConfigurationRuleFilterToTerraform, true)(struct!.filter),
+    noncurrent_version_expiration: cdktf.listMapper(s3BucketLifecycleConfigurationRuleNoncurrentVersionExpirationToTerraform, true)(struct!.noncurrentVersionExpiration),
     noncurrent_version_transition: cdktf.listMapper(s3BucketLifecycleConfigurationRuleNoncurrentVersionTransitionToTerraform, true)(struct!.noncurrentVersionTransition),
     transition: cdktf.listMapper(s3BucketLifecycleConfigurationRuleTransitionToTerraform, true)(struct!.transition),
   }
@@ -1365,25 +1550,25 @@ export function s3BucketLifecycleConfigurationRuleToHclTerraform(struct?: S3Buck
       storageClassType: "string",
     },
     abort_incomplete_multipart_upload: {
-      value: s3BucketLifecycleConfigurationRuleAbortIncompleteMultipartUploadToHclTerraform(struct!.abortIncompleteMultipartUpload),
+      value: cdktf.listMapperHcl(s3BucketLifecycleConfigurationRuleAbortIncompleteMultipartUploadToHclTerraform, true)(struct!.abortIncompleteMultipartUpload),
       isBlock: true,
       type: "list",
       storageClassType: "S3BucketLifecycleConfigurationRuleAbortIncompleteMultipartUploadList",
     },
     expiration: {
-      value: s3BucketLifecycleConfigurationRuleExpirationToHclTerraform(struct!.expiration),
+      value: cdktf.listMapperHcl(s3BucketLifecycleConfigurationRuleExpirationToHclTerraform, true)(struct!.expiration),
       isBlock: true,
       type: "list",
       storageClassType: "S3BucketLifecycleConfigurationRuleExpirationList",
     },
     filter: {
-      value: s3BucketLifecycleConfigurationRuleFilterToHclTerraform(struct!.filter),
+      value: cdktf.listMapperHcl(s3BucketLifecycleConfigurationRuleFilterToHclTerraform, true)(struct!.filter),
       isBlock: true,
       type: "list",
       storageClassType: "S3BucketLifecycleConfigurationRuleFilterList",
     },
     noncurrent_version_expiration: {
-      value: s3BucketLifecycleConfigurationRuleNoncurrentVersionExpirationToHclTerraform(struct!.noncurrentVersionExpiration),
+      value: cdktf.listMapperHcl(s3BucketLifecycleConfigurationRuleNoncurrentVersionExpirationToHclTerraform, true)(struct!.noncurrentVersionExpiration),
       isBlock: true,
       type: "list",
       storageClassType: "S3BucketLifecycleConfigurationRuleNoncurrentVersionExpirationList",
@@ -1511,7 +1696,7 @@ export class S3BucketLifecycleConfigurationRuleOutputReference extends cdktf.Com
     return this._id;
   }
 
-  // prefix - computed: false, optional: true, required: false
+  // prefix - computed: true, optional: true, required: false
   private _prefix?: string; 
   public get prefix() {
     return this.getStringAttribute('prefix');
@@ -1541,11 +1726,11 @@ export class S3BucketLifecycleConfigurationRuleOutputReference extends cdktf.Com
   }
 
   // abort_incomplete_multipart_upload - computed: false, optional: true, required: false
-  private _abortIncompleteMultipartUpload = new S3BucketLifecycleConfigurationRuleAbortIncompleteMultipartUploadOutputReference(this, "abort_incomplete_multipart_upload");
+  private _abortIncompleteMultipartUpload = new S3BucketLifecycleConfigurationRuleAbortIncompleteMultipartUploadList(this, "abort_incomplete_multipart_upload", false);
   public get abortIncompleteMultipartUpload() {
     return this._abortIncompleteMultipartUpload;
   }
-  public putAbortIncompleteMultipartUpload(value: S3BucketLifecycleConfigurationRuleAbortIncompleteMultipartUpload) {
+  public putAbortIncompleteMultipartUpload(value: S3BucketLifecycleConfigurationRuleAbortIncompleteMultipartUpload[] | cdktf.IResolvable) {
     this._abortIncompleteMultipartUpload.internalValue = value;
   }
   public resetAbortIncompleteMultipartUpload() {
@@ -1557,11 +1742,11 @@ export class S3BucketLifecycleConfigurationRuleOutputReference extends cdktf.Com
   }
 
   // expiration - computed: false, optional: true, required: false
-  private _expiration = new S3BucketLifecycleConfigurationRuleExpirationOutputReference(this, "expiration");
+  private _expiration = new S3BucketLifecycleConfigurationRuleExpirationList(this, "expiration", false);
   public get expiration() {
     return this._expiration;
   }
-  public putExpiration(value: S3BucketLifecycleConfigurationRuleExpiration) {
+  public putExpiration(value: S3BucketLifecycleConfigurationRuleExpiration[] | cdktf.IResolvable) {
     this._expiration.internalValue = value;
   }
   public resetExpiration() {
@@ -1573,11 +1758,11 @@ export class S3BucketLifecycleConfigurationRuleOutputReference extends cdktf.Com
   }
 
   // filter - computed: false, optional: true, required: false
-  private _filter = new S3BucketLifecycleConfigurationRuleFilterOutputReference(this, "filter");
+  private _filter = new S3BucketLifecycleConfigurationRuleFilterList(this, "filter", false);
   public get filter() {
     return this._filter;
   }
-  public putFilter(value: S3BucketLifecycleConfigurationRuleFilter) {
+  public putFilter(value: S3BucketLifecycleConfigurationRuleFilter[] | cdktf.IResolvable) {
     this._filter.internalValue = value;
   }
   public resetFilter() {
@@ -1589,11 +1774,11 @@ export class S3BucketLifecycleConfigurationRuleOutputReference extends cdktf.Com
   }
 
   // noncurrent_version_expiration - computed: false, optional: true, required: false
-  private _noncurrentVersionExpiration = new S3BucketLifecycleConfigurationRuleNoncurrentVersionExpirationOutputReference(this, "noncurrent_version_expiration");
+  private _noncurrentVersionExpiration = new S3BucketLifecycleConfigurationRuleNoncurrentVersionExpirationList(this, "noncurrent_version_expiration", false);
   public get noncurrentVersionExpiration() {
     return this._noncurrentVersionExpiration;
   }
-  public putNoncurrentVersionExpiration(value: S3BucketLifecycleConfigurationRuleNoncurrentVersionExpiration) {
+  public putNoncurrentVersionExpiration(value: S3BucketLifecycleConfigurationRuleNoncurrentVersionExpiration[] | cdktf.IResolvable) {
     this._noncurrentVersionExpiration.internalValue = value;
   }
   public resetNoncurrentVersionExpiration() {
@@ -1658,11 +1843,15 @@ export class S3BucketLifecycleConfigurationRuleList extends cdktf.ComplexList {
 }
 export interface S3BucketLifecycleConfigurationTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/s3_bucket_lifecycle_configuration#create S3BucketLifecycleConfiguration#create}
+  * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/resources/s3_bucket_lifecycle_configuration#create S3BucketLifecycleConfiguration#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/s3_bucket_lifecycle_configuration#update S3BucketLifecycleConfiguration#update}
+  * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/resources/s3_bucket_lifecycle_configuration#update S3BucketLifecycleConfiguration#update}
   */
   readonly update?: string;
 }
@@ -1785,7 +1974,7 @@ export class S3BucketLifecycleConfigurationTimeoutsOutputReference extends cdktf
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/s3_bucket_lifecycle_configuration aws_s3_bucket_lifecycle_configuration}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/resources/s3_bucket_lifecycle_configuration aws_s3_bucket_lifecycle_configuration}
 */
 export class S3BucketLifecycleConfiguration extends cdktf.TerraformResource {
 
@@ -1801,7 +1990,7 @@ export class S3BucketLifecycleConfiguration extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a S3BucketLifecycleConfiguration resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the S3BucketLifecycleConfiguration to import
-  * @param importFromId The id of the existing S3BucketLifecycleConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/s3_bucket_lifecycle_configuration#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing S3BucketLifecycleConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/resources/s3_bucket_lifecycle_configuration#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the S3BucketLifecycleConfiguration to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -1813,7 +2002,7 @@ export class S3BucketLifecycleConfiguration extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/s3_bucket_lifecycle_configuration aws_s3_bucket_lifecycle_configuration} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/resources/s3_bucket_lifecycle_configuration aws_s3_bucket_lifecycle_configuration} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1824,7 +2013,7 @@ export class S3BucketLifecycleConfiguration extends cdktf.TerraformResource {
       terraformResourceType: 'aws_s3_bucket_lifecycle_configuration',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.85.0',
+        providerVersion: '5.86.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -1837,7 +2026,6 @@ export class S3BucketLifecycleConfiguration extends cdktf.TerraformResource {
     });
     this._bucket = config.bucket;
     this._expectedBucketOwner = config.expectedBucketOwner;
-    this._id = config.id;
     this._transitionDefaultMinimumObjectSize = config.transitionDefaultMinimumObjectSize;
     this._rule.internalValue = config.rule;
     this._timeouts.internalValue = config.timeouts;
@@ -1860,7 +2048,7 @@ export class S3BucketLifecycleConfiguration extends cdktf.TerraformResource {
     return this._bucket;
   }
 
-  // expected_bucket_owner - computed: false, optional: true, required: false
+  // expected_bucket_owner - computed: true, optional: true, required: false
   private _expectedBucketOwner?: string; 
   public get expectedBucketOwner() {
     return this.getStringAttribute('expected_bucket_owner');
@@ -1876,20 +2064,9 @@ export class S3BucketLifecycleConfiguration extends cdktf.TerraformResource {
     return this._expectedBucketOwner;
   }
 
-  // id - computed: true, optional: true, required: false
-  private _id?: string; 
+  // id - computed: true, optional: false, required: false
   public get id() {
     return this.getStringAttribute('id');
-  }
-  public set id(value: string) {
-    this._id = value;
-  }
-  public resetId() {
-    this._id = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get idInput() {
-    return this._id;
   }
 
   // transition_default_minimum_object_size - computed: true, optional: true, required: false
@@ -1908,13 +2085,16 @@ export class S3BucketLifecycleConfiguration extends cdktf.TerraformResource {
     return this._transitionDefaultMinimumObjectSize;
   }
 
-  // rule - computed: false, optional: false, required: true
+  // rule - computed: false, optional: true, required: false
   private _rule = new S3BucketLifecycleConfigurationRuleList(this, "rule", false);
   public get rule() {
     return this._rule;
   }
   public putRule(value: S3BucketLifecycleConfigurationRule[] | cdktf.IResolvable) {
     this._rule.internalValue = value;
+  }
+  public resetRule() {
+    this._rule.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get ruleInput() {
@@ -1945,7 +2125,6 @@ export class S3BucketLifecycleConfiguration extends cdktf.TerraformResource {
     return {
       bucket: cdktf.stringToTerraform(this._bucket),
       expected_bucket_owner: cdktf.stringToTerraform(this._expectedBucketOwner),
-      id: cdktf.stringToTerraform(this._id),
       transition_default_minimum_object_size: cdktf.stringToTerraform(this._transitionDefaultMinimumObjectSize),
       rule: cdktf.listMapper(s3BucketLifecycleConfigurationRuleToTerraform, true)(this._rule.internalValue),
       timeouts: s3BucketLifecycleConfigurationTimeoutsToTerraform(this._timeouts.internalValue),
@@ -1962,12 +2141,6 @@ export class S3BucketLifecycleConfiguration extends cdktf.TerraformResource {
       },
       expected_bucket_owner: {
         value: cdktf.stringToHclTerraform(this._expectedBucketOwner),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
-      },
-      id: {
-        value: cdktf.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
