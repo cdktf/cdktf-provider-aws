@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.bedrockagentAgent.BedrockagentAgent.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/bedrockagentagent"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/bedrockagentagent"
 
 bedrockagentagent.NewBedrockagentAgent(scope Construct, id *string, config BedrockagentAgentConfig) BedrockagentAgent
 ```
@@ -494,7 +494,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.bedrockagentAgent.BedrockagentAgent.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/bedrockagentagent"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/bedrockagentagent"
 
 bedrockagentagent.BedrockagentAgent_IsConstruct(x interface{}) *bool
 ```
@@ -526,7 +526,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.bedrockagentAgent.BedrockagentAgent.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/bedrockagentagent"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/bedrockagentagent"
 
 bedrockagentagent.BedrockagentAgent_IsTerraformElement(x interface{}) *bool
 ```
@@ -540,7 +540,7 @@ bedrockagentagent.BedrockagentAgent_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.bedrockagentAgent.BedrockagentAgent.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/bedrockagentagent"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/bedrockagentagent"
 
 bedrockagentagent.BedrockagentAgent_IsTerraformResource(x interface{}) *bool
 ```
@@ -554,7 +554,7 @@ bedrockagentagent.BedrockagentAgent_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.bedrockagentAgent.BedrockagentAgent.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/bedrockagentagent"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/bedrockagentagent"
 
 bedrockagentagent.BedrockagentAgent_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1146,7 +1146,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.bedrockagentAgent.BedrockagentAgentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/bedrockagentagent"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/bedrockagentagent"
 
 &bedrockagentagent.BedrockagentAgentConfig {
 	Connection: interface{},
@@ -1169,7 +1169,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/bedrockagentagent"
 	PromptOverrideConfiguration: interface{},
 	SkipResourceInUseCheck: interface{},
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.bedrockagentAgent.BedrockagentAgentTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v19.bedrockagentAgent.BedrockagentAgentTimeouts,
 }
 ```
 
@@ -1446,7 +1446,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.bedrockagentAgent.BedrockagentAgentGuardrailConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/bedrockagentagent"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/bedrockagentagent"
 
 &bedrockagentagent.BedrockagentAgentGuardrailConfiguration {
 	GuardrailIdentifier: *string,
@@ -1492,7 +1492,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.bedrockagentAgent.BedrockagentAgentPromptOverrideConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/bedrockagentagent"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/bedrockagentagent"
 
 &bedrockagentagent.BedrockagentAgentPromptOverrideConfiguration {
 	OverrideLambda: *string,
@@ -1538,7 +1538,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.bedrockagentAgent.BedrockagentAgentPromptOverrideConfigurationPromptConfigurations.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/bedrockagentagent"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/bedrockagentagent"
 
 &bedrockagentagent.BedrockagentAgentPromptOverrideConfigurationPromptConfigurations {
 	BasePromptTemplate: *string,
@@ -1640,7 +1640,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.bedrockagentAgent.BedrockagentAgentPromptOverrideConfigurationPromptConfigurationsInferenceConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/bedrockagentagent"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/bedrockagentagent"
 
 &bedrockagentagent.BedrockagentAgentPromptOverrideConfigurationPromptConfigurationsInferenceConfiguration {
 	MaxLength: *f64,
@@ -1728,7 +1728,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.bedrockagentAgent.BedrockagentAgentTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/bedrockagentagent"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/bedrockagentagent"
 
 &bedrockagentagent.BedrockagentAgentTimeouts {
 	Create: *string,
@@ -1796,7 +1796,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.bedrockagentAgent.BedrockagentAgentGuardrailConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/bedrockagentagent"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/bedrockagentagent"
 
 bedrockagentagent.NewBedrockagentAgentGuardrailConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentAgentGuardrailConfigurationList
 ```
@@ -1956,7 +1956,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.bedrockagentAgent.BedrockagentAgentGuardrailConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/bedrockagentagent"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/bedrockagentagent"
 
 bedrockagentagent.NewBedrockagentAgentGuardrailConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentAgentGuardrailConfigurationOutputReference
 ```
@@ -2281,7 +2281,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.bedrockagentAgent.BedrockagentAgentPromptOverrideConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/bedrockagentagent"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/bedrockagentagent"
 
 bedrockagentagent.NewBedrockagentAgentPromptOverrideConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentAgentPromptOverrideConfigurationList
 ```
@@ -2441,7 +2441,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.bedrockagentAgent.BedrockagentAgentPromptOverrideConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/bedrockagentagent"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/bedrockagentagent"
 
 bedrockagentagent.NewBedrockagentAgentPromptOverrideConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentAgentPromptOverrideConfigurationOutputReference
 ```
@@ -2779,7 +2779,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.bedrockagentAgent.BedrockagentAgentPromptOverrideConfigurationPromptConfigurationsInferenceConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/bedrockagentagent"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/bedrockagentagent"
 
 bedrockagentagent.NewBedrockagentAgentPromptOverrideConfigurationPromptConfigurationsInferenceConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentAgentPromptOverrideConfigurationPromptConfigurationsInferenceConfigurationList
 ```
@@ -2939,7 +2939,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.bedrockagentAgent.BedrockagentAgentPromptOverrideConfigurationPromptConfigurationsInferenceConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/bedrockagentagent"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/bedrockagentagent"
 
 bedrockagentagent.NewBedrockagentAgentPromptOverrideConfigurationPromptConfigurationsInferenceConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentAgentPromptOverrideConfigurationPromptConfigurationsInferenceConfigurationOutputReference
 ```
@@ -3351,7 +3351,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.bedrockagentAgent.BedrockagentAgentPromptOverrideConfigurationPromptConfigurationsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/bedrockagentagent"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/bedrockagentagent"
 
 bedrockagentagent.NewBedrockagentAgentPromptOverrideConfigurationPromptConfigurationsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentAgentPromptOverrideConfigurationPromptConfigurationsList
 ```
@@ -3511,7 +3511,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.bedrockagentAgent.BedrockagentAgentPromptOverrideConfigurationPromptConfigurationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/bedrockagentagent"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/bedrockagentagent"
 
 bedrockagentagent.NewBedrockagentAgentPromptOverrideConfigurationPromptConfigurationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentAgentPromptOverrideConfigurationPromptConfigurationsOutputReference
 ```
@@ -3965,7 +3965,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.bedrockagentAgent.BedrockagentAgentTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/bedrockagentagent"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/bedrockagentagent"
 
 bedrockagentagent.NewBedrockagentAgentTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BedrockagentAgentTimeoutsOutputReference
 ```
