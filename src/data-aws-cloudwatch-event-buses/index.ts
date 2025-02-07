@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/data-sources/cloudwatch_event_buses
+// https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/data-sources/cloudwatch_event_buses
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsCloudwatchEventBusesConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/data-sources/cloudwatch_event_buses#name_prefix DataAwsCloudwatchEventBuses#name_prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/data-sources/cloudwatch_event_buses#name_prefix DataAwsCloudwatchEventBuses#name_prefix}
   */
   readonly namePrefix?: string;
 }
@@ -119,7 +114,7 @@ export class DataAwsCloudwatchEventBusesEventBusesList extends cdktf.ComplexList
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/data-sources/cloudwatch_event_buses aws_cloudwatch_event_buses}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/data-sources/cloudwatch_event_buses aws_cloudwatch_event_buses}
 */
 export class DataAwsCloudwatchEventBuses extends cdktf.TerraformDataSource {
 
@@ -135,7 +130,7 @@ export class DataAwsCloudwatchEventBuses extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataAwsCloudwatchEventBuses resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsCloudwatchEventBuses to import
-  * @param importFromId The id of the existing DataAwsCloudwatchEventBuses that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/data-sources/cloudwatch_event_buses#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsCloudwatchEventBuses that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/data-sources/cloudwatch_event_buses#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsCloudwatchEventBuses to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -147,7 +142,7 @@ export class DataAwsCloudwatchEventBuses extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/data-sources/cloudwatch_event_buses aws_cloudwatch_event_buses} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/data-sources/cloudwatch_event_buses aws_cloudwatch_event_buses} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -158,7 +153,7 @@ export class DataAwsCloudwatchEventBuses extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_cloudwatch_event_buses',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.85.0',
+        providerVersion: '5.86.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

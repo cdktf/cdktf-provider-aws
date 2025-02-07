@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/data-sources/prometheus_default_scraper_configuration
+// https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/data-sources/prometheus_default_scraper_configuration
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,7 +10,7 @@ export interface DataAwsPrometheusDefaultScraperConfigurationConfig extends cdkt
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/data-sources/prometheus_default_scraper_configuration aws_prometheus_default_scraper_configuration}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/data-sources/prometheus_default_scraper_configuration aws_prometheus_default_scraper_configuration}
 */
 export class DataAwsPrometheusDefaultScraperConfiguration extends cdktf.TerraformDataSource {
 
@@ -31,7 +26,7 @@ export class DataAwsPrometheusDefaultScraperConfiguration extends cdktf.Terrafor
   * Generates CDKTF code for importing a DataAwsPrometheusDefaultScraperConfiguration resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsPrometheusDefaultScraperConfiguration to import
-  * @param importFromId The id of the existing DataAwsPrometheusDefaultScraperConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/data-sources/prometheus_default_scraper_configuration#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsPrometheusDefaultScraperConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/data-sources/prometheus_default_scraper_configuration#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsPrometheusDefaultScraperConfiguration to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -43,7 +38,7 @@ export class DataAwsPrometheusDefaultScraperConfiguration extends cdktf.Terrafor
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/data-sources/prometheus_default_scraper_configuration aws_prometheus_default_scraper_configuration} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/data-sources/prometheus_default_scraper_configuration aws_prometheus_default_scraper_configuration} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -54,7 +49,7 @@ export class DataAwsPrometheusDefaultScraperConfiguration extends cdktf.Terrafor
       terraformResourceType: 'aws_prometheus_default_scraper_configuration',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.85.0',
+        providerVersion: '5.86.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

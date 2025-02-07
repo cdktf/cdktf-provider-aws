@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/data-sources/apigatewayv2_export
+// https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/data-sources/apigatewayv2_export
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,40 +8,40 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsApigatewayv2ExportConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/data-sources/apigatewayv2_export#api_id DataAwsApigatewayv2Export#api_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/data-sources/apigatewayv2_export#api_id DataAwsApigatewayv2Export#api_id}
   */
   readonly apiId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/data-sources/apigatewayv2_export#export_version DataAwsApigatewayv2Export#export_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/data-sources/apigatewayv2_export#export_version DataAwsApigatewayv2Export#export_version}
   */
   readonly exportVersion?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/data-sources/apigatewayv2_export#id DataAwsApigatewayv2Export#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/data-sources/apigatewayv2_export#id DataAwsApigatewayv2Export#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/data-sources/apigatewayv2_export#include_extensions DataAwsApigatewayv2Export#include_extensions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/data-sources/apigatewayv2_export#include_extensions DataAwsApigatewayv2Export#include_extensions}
   */
   readonly includeExtensions?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/data-sources/apigatewayv2_export#output_type DataAwsApigatewayv2Export#output_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/data-sources/apigatewayv2_export#output_type DataAwsApigatewayv2Export#output_type}
   */
   readonly outputType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/data-sources/apigatewayv2_export#specification DataAwsApigatewayv2Export#specification}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/data-sources/apigatewayv2_export#specification DataAwsApigatewayv2Export#specification}
   */
   readonly specification: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/data-sources/apigatewayv2_export#stage_name DataAwsApigatewayv2Export#stage_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/data-sources/apigatewayv2_export#stage_name DataAwsApigatewayv2Export#stage_name}
   */
   readonly stageName?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/data-sources/apigatewayv2_export aws_apigatewayv2_export}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/data-sources/apigatewayv2_export aws_apigatewayv2_export}
 */
 export class DataAwsApigatewayv2Export extends cdktf.TerraformDataSource {
 
@@ -62,7 +57,7 @@ export class DataAwsApigatewayv2Export extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataAwsApigatewayv2Export resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsApigatewayv2Export to import
-  * @param importFromId The id of the existing DataAwsApigatewayv2Export that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/data-sources/apigatewayv2_export#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsApigatewayv2Export that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/data-sources/apigatewayv2_export#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsApigatewayv2Export to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -74,7 +69,7 @@ export class DataAwsApigatewayv2Export extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/data-sources/apigatewayv2_export aws_apigatewayv2_export} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/data-sources/apigatewayv2_export aws_apigatewayv2_export} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -85,7 +80,7 @@ export class DataAwsApigatewayv2Export extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_apigatewayv2_export',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.85.0',
+        providerVersion: '5.86.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

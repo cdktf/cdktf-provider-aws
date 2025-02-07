@@ -4,12 +4,12 @@
 
 ### DataAwsEcsClusters <a name="DataAwsEcsClusters" id="@cdktf/provider-aws.dataAwsEcsClusters.DataAwsEcsClusters"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/data-sources/ecs_clusters aws_ecs_clusters}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/data-sources/ecs_clusters aws_ecs_clusters}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEcsClusters.DataAwsEcsClusters.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsecsclusters"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsecsclusters"
 
 dataawsecsclusters.NewDataAwsEcsClusters(scope Construct, id *string, config DataAwsEcsClustersConfig) DataAwsEcsClusters
 ```
@@ -276,7 +276,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsEcsClusters.DataAwsEcsClusters.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsecsclusters"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsecsclusters"
 
 dataawsecsclusters.DataAwsEcsClusters_IsConstruct(x interface{}) *bool
 ```
@@ -308,7 +308,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsEcsClusters.DataAwsEcsClusters.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsecsclusters"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsecsclusters"
 
 dataawsecsclusters.DataAwsEcsClusters_IsTerraformElement(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ dataawsecsclusters.DataAwsEcsClusters_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsEcsClusters.DataAwsEcsClusters.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsecsclusters"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsecsclusters"
 
 dataawsecsclusters.DataAwsEcsClusters_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ dataawsecsclusters.DataAwsEcsClusters_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsEcsClusters.DataAwsEcsClusters.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsecsclusters"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsecsclusters"
 
 dataawsecsclusters.DataAwsEcsClusters_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -365,7 +365,7 @@ The construct id used in the generated config for the DataAwsEcsClusters to impo
 
 The id of the existing DataAwsEcsClusters that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/data-sources/ecs_clusters#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/data-sources/ecs_clusters#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -554,7 +554,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEcsClusters.DataAwsEcsClustersConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsecsclusters"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsecsclusters"
 
 &dataawsecsclusters.DataAwsEcsClustersConfig {
 	Connection: interface{},
