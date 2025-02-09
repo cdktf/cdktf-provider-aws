@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opsworksInstance.OpsworksInstance.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/opsworksinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksinstance"
 
 opsworksinstance.NewOpsworksInstance(scope Construct, id *string, config OpsworksInstanceConfig) OpsworksInstance
 ```
@@ -640,7 +640,7 @@ func ResetVirtualizationType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.opsworksInstance.OpsworksInstance.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/opsworksinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksinstance"
 
 opsworksinstance.OpsworksInstance_IsConstruct(x interface{}) *bool
 ```
@@ -672,7 +672,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.opsworksInstance.OpsworksInstance.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/opsworksinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksinstance"
 
 opsworksinstance.OpsworksInstance_IsTerraformElement(x interface{}) *bool
 ```
@@ -686,7 +686,7 @@ opsworksinstance.OpsworksInstance_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.opsworksInstance.OpsworksInstance.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/opsworksinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksinstance"
 
 opsworksinstance.OpsworksInstance_IsTerraformResource(x interface{}) *bool
 ```
@@ -700,7 +700,7 @@ opsworksinstance.OpsworksInstance_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.opsworksInstance.OpsworksInstance.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/opsworksinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksinstance"
 
 opsworksinstance.OpsworksInstance_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1798,7 +1798,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.opsworksInstance.OpsworksInstanceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/opsworksinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksinstance"
 
 &opsworksinstance.OpsworksInstanceConfig {
 	Connection: interface{},
@@ -1838,7 +1838,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/opsworksinstance"
 	Status: *string,
 	SubnetId: *string,
 	Tenancy: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v19.opsworksInstance.OpsworksInstanceTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.opsworksInstance.OpsworksInstanceTimeouts,
 	VirtualizationType: *string,
 }
 ```
@@ -2359,7 +2359,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.opsworksInstance.OpsworksInstanceEbsBlockDevice.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/opsworksinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksinstance"
 
 &opsworksinstance.OpsworksInstanceEbsBlockDevice {
 	DeviceName: *string,
@@ -2461,7 +2461,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.opsworksInstance.OpsworksInstanceEphemeralBlockDevice.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/opsworksinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksinstance"
 
 &opsworksinstance.OpsworksInstanceEphemeralBlockDevice {
 	DeviceName: *string,
@@ -2507,7 +2507,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.opsworksInstance.OpsworksInstanceRootBlockDevice.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/opsworksinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksinstance"
 
 &opsworksinstance.OpsworksInstanceRootBlockDevice {
 	DeleteOnTermination: interface{},
@@ -2581,7 +2581,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.opsworksInstance.OpsworksInstanceTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/opsworksinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksinstance"
 
 &opsworksinstance.OpsworksInstanceTimeouts {
 	Create: *string,
@@ -2643,7 +2643,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opsworksInstance.OpsworksInstanceEbsBlockDeviceList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/opsworksinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksinstance"
 
 opsworksinstance.NewOpsworksInstanceEbsBlockDeviceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OpsworksInstanceEbsBlockDeviceList
 ```
@@ -2803,7 +2803,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opsworksInstance.OpsworksInstanceEbsBlockDeviceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/opsworksinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksinstance"
 
 opsworksinstance.NewOpsworksInstanceEbsBlockDeviceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OpsworksInstanceEbsBlockDeviceOutputReference
 ```
@@ -3237,7 +3237,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opsworksInstance.OpsworksInstanceEphemeralBlockDeviceList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/opsworksinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksinstance"
 
 opsworksinstance.NewOpsworksInstanceEphemeralBlockDeviceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OpsworksInstanceEphemeralBlockDeviceList
 ```
@@ -3397,7 +3397,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opsworksInstance.OpsworksInstanceEphemeralBlockDeviceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/opsworksinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksinstance"
 
 opsworksinstance.NewOpsworksInstanceEphemeralBlockDeviceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OpsworksInstanceEphemeralBlockDeviceOutputReference
 ```
@@ -3708,7 +3708,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opsworksInstance.OpsworksInstanceRootBlockDeviceList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/opsworksinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksinstance"
 
 opsworksinstance.NewOpsworksInstanceRootBlockDeviceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OpsworksInstanceRootBlockDeviceList
 ```
@@ -3868,7 +3868,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opsworksInstance.OpsworksInstanceRootBlockDeviceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/opsworksinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksinstance"
 
 opsworksinstance.NewOpsworksInstanceRootBlockDeviceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OpsworksInstanceRootBlockDeviceOutputReference
 ```
@@ -4251,7 +4251,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opsworksInstance.OpsworksInstanceTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/opsworksinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksinstance"
 
 opsworksinstance.NewOpsworksInstanceTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OpsworksInstanceTimeoutsOutputReference
 ```

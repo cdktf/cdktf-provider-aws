@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchjobdefinition"
 
 dataawsbatchjobdefinition.NewDataAwsBatchJobDefinition(scope Construct, id *string, config DataAwsBatchJobDefinitionConfig) DataAwsBatchJobDefinition
 ```
@@ -304,7 +304,7 @@ func ResetStatus()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinition.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchjobdefinition"
 
 dataawsbatchjobdefinition.DataAwsBatchJobDefinition_IsConstruct(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinition.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchjobdefinition"
 
 dataawsbatchjobdefinition.DataAwsBatchJobDefinition_IsTerraformElement(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ dataawsbatchjobdefinition.DataAwsBatchJobDefinition_IsTerraformElement(x interfa
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinition.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchjobdefinition"
 
 dataawsbatchjobdefinition.DataAwsBatchJobDefinition_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -364,7 +364,7 @@ dataawsbatchjobdefinition.DataAwsBatchJobDefinition_IsTerraformDataSource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinition.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchjobdefinition"
 
 dataawsbatchjobdefinition.DataAwsBatchJobDefinition_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -769,7 +769,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchjobdefinition"
 
 &dataawsbatchjobdefinition.DataAwsBatchJobDefinitionConfig {
 	Connection: interface{},
@@ -927,7 +927,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionEksProperties.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchjobdefinition"
 
 &dataawsbatchjobdefinition.DataAwsBatchJobDefinitionEksProperties {
 
@@ -940,7 +940,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionEksPropertiesPodProperties.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchjobdefinition"
 
 &dataawsbatchjobdefinition.DataAwsBatchJobDefinitionEksPropertiesPodProperties {
 
@@ -953,7 +953,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionEksPropertiesPodPropertiesContainers.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchjobdefinition"
 
 &dataawsbatchjobdefinition.DataAwsBatchJobDefinitionEksPropertiesPodPropertiesContainers {
 
@@ -966,7 +966,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionEksPropertiesPodPropertiesContainersEnv.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchjobdefinition"
 
 &dataawsbatchjobdefinition.DataAwsBatchJobDefinitionEksPropertiesPodPropertiesContainersEnv {
 
@@ -979,7 +979,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionEksPropertiesPodPropertiesContainersResources.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchjobdefinition"
 
 &dataawsbatchjobdefinition.DataAwsBatchJobDefinitionEksPropertiesPodPropertiesContainersResources {
 
@@ -992,7 +992,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionEksPropertiesPodPropertiesContainersSecurityContext.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchjobdefinition"
 
 &dataawsbatchjobdefinition.DataAwsBatchJobDefinitionEksPropertiesPodPropertiesContainersSecurityContext {
 
@@ -1005,7 +1005,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionEksPropertiesPodPropertiesContainersVolumeMounts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchjobdefinition"
 
 &dataawsbatchjobdefinition.DataAwsBatchJobDefinitionEksPropertiesPodPropertiesContainersVolumeMounts {
 
@@ -1018,7 +1018,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionEksPropertiesPodPropertiesImagePullSecrets.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchjobdefinition"
 
 &dataawsbatchjobdefinition.DataAwsBatchJobDefinitionEksPropertiesPodPropertiesImagePullSecrets {
 
@@ -1031,7 +1031,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionEksPropertiesPodPropertiesInitContainers.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchjobdefinition"
 
 &dataawsbatchjobdefinition.DataAwsBatchJobDefinitionEksPropertiesPodPropertiesInitContainers {
 
@@ -1044,7 +1044,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionEksPropertiesPodPropertiesInitContainersEnv.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchjobdefinition"
 
 &dataawsbatchjobdefinition.DataAwsBatchJobDefinitionEksPropertiesPodPropertiesInitContainersEnv {
 
@@ -1057,7 +1057,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionEksPropertiesPodPropertiesInitContainersResources.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchjobdefinition"
 
 &dataawsbatchjobdefinition.DataAwsBatchJobDefinitionEksPropertiesPodPropertiesInitContainersResources {
 
@@ -1070,7 +1070,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionEksPropertiesPodPropertiesInitContainersSecurityContext.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchjobdefinition"
 
 &dataawsbatchjobdefinition.DataAwsBatchJobDefinitionEksPropertiesPodPropertiesInitContainersSecurityContext {
 
@@ -1083,7 +1083,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionEksPropertiesPodPropertiesInitContainersVolumeMounts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchjobdefinition"
 
 &dataawsbatchjobdefinition.DataAwsBatchJobDefinitionEksPropertiesPodPropertiesInitContainersVolumeMounts {
 
@@ -1096,7 +1096,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionEksPropertiesPodPropertiesMetadata.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchjobdefinition"
 
 &dataawsbatchjobdefinition.DataAwsBatchJobDefinitionEksPropertiesPodPropertiesMetadata {
 
@@ -1109,7 +1109,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionEksPropertiesPodPropertiesVolumes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchjobdefinition"
 
 &dataawsbatchjobdefinition.DataAwsBatchJobDefinitionEksPropertiesPodPropertiesVolumes {
 
@@ -1122,7 +1122,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionEksPropertiesPodPropertiesVolumesEmptyDir.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchjobdefinition"
 
 &dataawsbatchjobdefinition.DataAwsBatchJobDefinitionEksPropertiesPodPropertiesVolumesEmptyDir {
 
@@ -1135,7 +1135,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionEksPropertiesPodPropertiesVolumesHostPath.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchjobdefinition"
 
 &dataawsbatchjobdefinition.DataAwsBatchJobDefinitionEksPropertiesPodPropertiesVolumesHostPath {
 
@@ -1148,7 +1148,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionEksPropertiesPodPropertiesVolumesSecret.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchjobdefinition"
 
 &dataawsbatchjobdefinition.DataAwsBatchJobDefinitionEksPropertiesPodPropertiesVolumesSecret {
 
@@ -1161,7 +1161,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionNodeProperties.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchjobdefinition"
 
 &dataawsbatchjobdefinition.DataAwsBatchJobDefinitionNodeProperties {
 
@@ -1174,7 +1174,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionNodePropertiesNodeRangeProperties.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchjobdefinition"
 
 &dataawsbatchjobdefinition.DataAwsBatchJobDefinitionNodePropertiesNodeRangeProperties {
 
@@ -1187,7 +1187,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainer.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchjobdefinition"
 
 &dataawsbatchjobdefinition.DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainer {
 
@@ -1200,7 +1200,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerEnvironment.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchjobdefinition"
 
 &dataawsbatchjobdefinition.DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerEnvironment {
 
@@ -1213,7 +1213,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerEphemeralStorage.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchjobdefinition"
 
 &dataawsbatchjobdefinition.DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerEphemeralStorage {
 
@@ -1226,7 +1226,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerFargatePlatformConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchjobdefinition"
 
 &dataawsbatchjobdefinition.DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerFargatePlatformConfiguration {
 
@@ -1239,7 +1239,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerLinuxParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchjobdefinition"
 
 &dataawsbatchjobdefinition.DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerLinuxParameters {
 
@@ -1252,7 +1252,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerLinuxParametersDevices.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchjobdefinition"
 
 &dataawsbatchjobdefinition.DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerLinuxParametersDevices {
 
@@ -1265,7 +1265,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerLinuxParametersTmpfs.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchjobdefinition"
 
 &dataawsbatchjobdefinition.DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerLinuxParametersTmpfs {
 
@@ -1278,7 +1278,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerLogConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchjobdefinition"
 
 &dataawsbatchjobdefinition.DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerLogConfiguration {
 
@@ -1291,7 +1291,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerLogConfigurationSecretOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchjobdefinition"
 
 &dataawsbatchjobdefinition.DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerLogConfigurationSecretOptions {
 
@@ -1304,7 +1304,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerMountPoints.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchjobdefinition"
 
 &dataawsbatchjobdefinition.DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerMountPoints {
 
@@ -1317,7 +1317,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerNetworkConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchjobdefinition"
 
 &dataawsbatchjobdefinition.DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerNetworkConfiguration {
 
@@ -1330,7 +1330,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerResourceRequirements.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchjobdefinition"
 
 &dataawsbatchjobdefinition.DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerResourceRequirements {
 
@@ -1343,7 +1343,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerRuntimePlatform.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchjobdefinition"
 
 &dataawsbatchjobdefinition.DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerRuntimePlatform {
 
@@ -1356,7 +1356,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerSecrets.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchjobdefinition"
 
 &dataawsbatchjobdefinition.DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerSecrets {
 
@@ -1369,7 +1369,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerUlimits.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchjobdefinition"
 
 &dataawsbatchjobdefinition.DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerUlimits {
 
@@ -1382,7 +1382,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerVolumes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchjobdefinition"
 
 &dataawsbatchjobdefinition.DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerVolumes {
 
@@ -1395,7 +1395,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerVolumesEfsVolumeConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchjobdefinition"
 
 &dataawsbatchjobdefinition.DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerVolumesEfsVolumeConfiguration {
 
@@ -1408,7 +1408,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerVolumesEfsVolumeConfigurationAuthorizationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchjobdefinition"
 
 &dataawsbatchjobdefinition.DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerVolumesEfsVolumeConfigurationAuthorizationConfig {
 
@@ -1421,7 +1421,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerVolumesHost.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchjobdefinition"
 
 &dataawsbatchjobdefinition.DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerVolumesHost {
 
@@ -1434,7 +1434,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionRetryStrategy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchjobdefinition"
 
 &dataawsbatchjobdefinition.DataAwsBatchJobDefinitionRetryStrategy {
 
@@ -1447,7 +1447,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionRetryStrategyEvaluateOnExit.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchjobdefinition"
 
 &dataawsbatchjobdefinition.DataAwsBatchJobDefinitionRetryStrategyEvaluateOnExit {
 
@@ -1460,7 +1460,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionTimeout.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchjobdefinition"
 
 &dataawsbatchjobdefinition.DataAwsBatchJobDefinitionTimeout {
 
@@ -1475,7 +1475,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionEksPropertiesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchjobdefinition"
 
 dataawsbatchjobdefinition.NewDataAwsBatchJobDefinitionEksPropertiesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsBatchJobDefinitionEksPropertiesList
 ```
@@ -1624,7 +1624,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionEksPropertiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchjobdefinition"
 
 dataawsbatchjobdefinition.NewDataAwsBatchJobDefinitionEksPropertiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsBatchJobDefinitionEksPropertiesOutputReference
 ```
@@ -1902,7 +1902,7 @@ func InternalValue() DataAwsBatchJobDefinitionEksProperties
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionEksPropertiesPodPropertiesContainersEnvList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchjobdefinition"
 
 dataawsbatchjobdefinition.NewDataAwsBatchJobDefinitionEksPropertiesPodPropertiesContainersEnvList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsBatchJobDefinitionEksPropertiesPodPropertiesContainersEnvList
 ```
@@ -2051,7 +2051,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionEksPropertiesPodPropertiesContainersEnvOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchjobdefinition"
 
 dataawsbatchjobdefinition.NewDataAwsBatchJobDefinitionEksPropertiesPodPropertiesContainersEnvOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsBatchJobDefinitionEksPropertiesPodPropertiesContainersEnvOutputReference
 ```
@@ -2340,7 +2340,7 @@ func InternalValue() DataAwsBatchJobDefinitionEksPropertiesPodPropertiesContaine
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionEksPropertiesPodPropertiesContainersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchjobdefinition"
 
 dataawsbatchjobdefinition.NewDataAwsBatchJobDefinitionEksPropertiesPodPropertiesContainersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsBatchJobDefinitionEksPropertiesPodPropertiesContainersList
 ```
@@ -2489,7 +2489,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionEksPropertiesPodPropertiesContainersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchjobdefinition"
 
 dataawsbatchjobdefinition.NewDataAwsBatchJobDefinitionEksPropertiesPodPropertiesContainersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsBatchJobDefinitionEksPropertiesPodPropertiesContainersOutputReference
 ```
@@ -2855,7 +2855,7 @@ func InternalValue() DataAwsBatchJobDefinitionEksPropertiesPodPropertiesContaine
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionEksPropertiesPodPropertiesContainersResourcesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchjobdefinition"
 
 dataawsbatchjobdefinition.NewDataAwsBatchJobDefinitionEksPropertiesPodPropertiesContainersResourcesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsBatchJobDefinitionEksPropertiesPodPropertiesContainersResourcesList
 ```
@@ -3004,7 +3004,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionEksPropertiesPodPropertiesContainersResourcesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchjobdefinition"
 
 dataawsbatchjobdefinition.NewDataAwsBatchJobDefinitionEksPropertiesPodPropertiesContainersResourcesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsBatchJobDefinitionEksPropertiesPodPropertiesContainersResourcesOutputReference
 ```
@@ -3293,7 +3293,7 @@ func InternalValue() DataAwsBatchJobDefinitionEksPropertiesPodPropertiesContaine
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionEksPropertiesPodPropertiesContainersSecurityContextList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchjobdefinition"
 
 dataawsbatchjobdefinition.NewDataAwsBatchJobDefinitionEksPropertiesPodPropertiesContainersSecurityContextList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsBatchJobDefinitionEksPropertiesPodPropertiesContainersSecurityContextList
 ```
@@ -3442,7 +3442,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionEksPropertiesPodPropertiesContainersSecurityContextOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchjobdefinition"
 
 dataawsbatchjobdefinition.NewDataAwsBatchJobDefinitionEksPropertiesPodPropertiesContainersSecurityContextOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsBatchJobDefinitionEksPropertiesPodPropertiesContainersSecurityContextOutputReference
 ```
@@ -3764,7 +3764,7 @@ func InternalValue() DataAwsBatchJobDefinitionEksPropertiesPodPropertiesContaine
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionEksPropertiesPodPropertiesContainersVolumeMountsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchjobdefinition"
 
 dataawsbatchjobdefinition.NewDataAwsBatchJobDefinitionEksPropertiesPodPropertiesContainersVolumeMountsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsBatchJobDefinitionEksPropertiesPodPropertiesContainersVolumeMountsList
 ```
@@ -3913,7 +3913,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionEksPropertiesPodPropertiesContainersVolumeMountsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchjobdefinition"
 
 dataawsbatchjobdefinition.NewDataAwsBatchJobDefinitionEksPropertiesPodPropertiesContainersVolumeMountsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsBatchJobDefinitionEksPropertiesPodPropertiesContainersVolumeMountsOutputReference
 ```
@@ -4213,7 +4213,7 @@ func InternalValue() DataAwsBatchJobDefinitionEksPropertiesPodPropertiesContaine
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionEksPropertiesPodPropertiesImagePullSecretsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchjobdefinition"
 
 dataawsbatchjobdefinition.NewDataAwsBatchJobDefinitionEksPropertiesPodPropertiesImagePullSecretsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsBatchJobDefinitionEksPropertiesPodPropertiesImagePullSecretsList
 ```
@@ -4362,7 +4362,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionEksPropertiesPodPropertiesImagePullSecretsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchjobdefinition"
 
 dataawsbatchjobdefinition.NewDataAwsBatchJobDefinitionEksPropertiesPodPropertiesImagePullSecretsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsBatchJobDefinitionEksPropertiesPodPropertiesImagePullSecretsOutputReference
 ```
@@ -4640,7 +4640,7 @@ func InternalValue() DataAwsBatchJobDefinitionEksPropertiesPodPropertiesImagePul
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionEksPropertiesPodPropertiesInitContainersEnvList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchjobdefinition"
 
 dataawsbatchjobdefinition.NewDataAwsBatchJobDefinitionEksPropertiesPodPropertiesInitContainersEnvList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsBatchJobDefinitionEksPropertiesPodPropertiesInitContainersEnvList
 ```
@@ -4789,7 +4789,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionEksPropertiesPodPropertiesInitContainersEnvOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchjobdefinition"
 
 dataawsbatchjobdefinition.NewDataAwsBatchJobDefinitionEksPropertiesPodPropertiesInitContainersEnvOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsBatchJobDefinitionEksPropertiesPodPropertiesInitContainersEnvOutputReference
 ```
@@ -5078,7 +5078,7 @@ func InternalValue() DataAwsBatchJobDefinitionEksPropertiesPodPropertiesInitCont
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionEksPropertiesPodPropertiesInitContainersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchjobdefinition"
 
 dataawsbatchjobdefinition.NewDataAwsBatchJobDefinitionEksPropertiesPodPropertiesInitContainersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsBatchJobDefinitionEksPropertiesPodPropertiesInitContainersList
 ```
@@ -5227,7 +5227,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionEksPropertiesPodPropertiesInitContainersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchjobdefinition"
 
 dataawsbatchjobdefinition.NewDataAwsBatchJobDefinitionEksPropertiesPodPropertiesInitContainersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsBatchJobDefinitionEksPropertiesPodPropertiesInitContainersOutputReference
 ```
@@ -5593,7 +5593,7 @@ func InternalValue() DataAwsBatchJobDefinitionEksPropertiesPodPropertiesInitCont
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionEksPropertiesPodPropertiesInitContainersResourcesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchjobdefinition"
 
 dataawsbatchjobdefinition.NewDataAwsBatchJobDefinitionEksPropertiesPodPropertiesInitContainersResourcesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsBatchJobDefinitionEksPropertiesPodPropertiesInitContainersResourcesList
 ```
@@ -5742,7 +5742,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionEksPropertiesPodPropertiesInitContainersResourcesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchjobdefinition"
 
 dataawsbatchjobdefinition.NewDataAwsBatchJobDefinitionEksPropertiesPodPropertiesInitContainersResourcesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsBatchJobDefinitionEksPropertiesPodPropertiesInitContainersResourcesOutputReference
 ```
@@ -6031,7 +6031,7 @@ func InternalValue() DataAwsBatchJobDefinitionEksPropertiesPodPropertiesInitCont
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionEksPropertiesPodPropertiesInitContainersSecurityContextList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchjobdefinition"
 
 dataawsbatchjobdefinition.NewDataAwsBatchJobDefinitionEksPropertiesPodPropertiesInitContainersSecurityContextList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsBatchJobDefinitionEksPropertiesPodPropertiesInitContainersSecurityContextList
 ```
@@ -6180,7 +6180,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionEksPropertiesPodPropertiesInitContainersSecurityContextOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchjobdefinition"
 
 dataawsbatchjobdefinition.NewDataAwsBatchJobDefinitionEksPropertiesPodPropertiesInitContainersSecurityContextOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsBatchJobDefinitionEksPropertiesPodPropertiesInitContainersSecurityContextOutputReference
 ```
@@ -6502,7 +6502,7 @@ func InternalValue() DataAwsBatchJobDefinitionEksPropertiesPodPropertiesInitCont
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionEksPropertiesPodPropertiesInitContainersVolumeMountsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchjobdefinition"
 
 dataawsbatchjobdefinition.NewDataAwsBatchJobDefinitionEksPropertiesPodPropertiesInitContainersVolumeMountsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsBatchJobDefinitionEksPropertiesPodPropertiesInitContainersVolumeMountsList
 ```
@@ -6651,7 +6651,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionEksPropertiesPodPropertiesInitContainersVolumeMountsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchjobdefinition"
 
 dataawsbatchjobdefinition.NewDataAwsBatchJobDefinitionEksPropertiesPodPropertiesInitContainersVolumeMountsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsBatchJobDefinitionEksPropertiesPodPropertiesInitContainersVolumeMountsOutputReference
 ```
@@ -6951,7 +6951,7 @@ func InternalValue() DataAwsBatchJobDefinitionEksPropertiesPodPropertiesInitCont
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionEksPropertiesPodPropertiesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchjobdefinition"
 
 dataawsbatchjobdefinition.NewDataAwsBatchJobDefinitionEksPropertiesPodPropertiesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsBatchJobDefinitionEksPropertiesPodPropertiesList
 ```
@@ -7100,7 +7100,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionEksPropertiesPodPropertiesMetadataList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchjobdefinition"
 
 dataawsbatchjobdefinition.NewDataAwsBatchJobDefinitionEksPropertiesPodPropertiesMetadataList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsBatchJobDefinitionEksPropertiesPodPropertiesMetadataList
 ```
@@ -7249,7 +7249,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionEksPropertiesPodPropertiesMetadataOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchjobdefinition"
 
 dataawsbatchjobdefinition.NewDataAwsBatchJobDefinitionEksPropertiesPodPropertiesMetadataOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsBatchJobDefinitionEksPropertiesPodPropertiesMetadataOutputReference
 ```
@@ -7527,7 +7527,7 @@ func InternalValue() DataAwsBatchJobDefinitionEksPropertiesPodPropertiesMetadata
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionEksPropertiesPodPropertiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchjobdefinition"
 
 dataawsbatchjobdefinition.NewDataAwsBatchJobDefinitionEksPropertiesPodPropertiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsBatchJobDefinitionEksPropertiesPodPropertiesOutputReference
 ```
@@ -7893,7 +7893,7 @@ func InternalValue() DataAwsBatchJobDefinitionEksPropertiesPodProperties
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionEksPropertiesPodPropertiesVolumesEmptyDirList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchjobdefinition"
 
 dataawsbatchjobdefinition.NewDataAwsBatchJobDefinitionEksPropertiesPodPropertiesVolumesEmptyDirList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsBatchJobDefinitionEksPropertiesPodPropertiesVolumesEmptyDirList
 ```
@@ -8042,7 +8042,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionEksPropertiesPodPropertiesVolumesEmptyDirOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchjobdefinition"
 
 dataawsbatchjobdefinition.NewDataAwsBatchJobDefinitionEksPropertiesPodPropertiesVolumesEmptyDirOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsBatchJobDefinitionEksPropertiesPodPropertiesVolumesEmptyDirOutputReference
 ```
@@ -8331,7 +8331,7 @@ func InternalValue() DataAwsBatchJobDefinitionEksPropertiesPodPropertiesVolumesE
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionEksPropertiesPodPropertiesVolumesHostPathList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchjobdefinition"
 
 dataawsbatchjobdefinition.NewDataAwsBatchJobDefinitionEksPropertiesPodPropertiesVolumesHostPathList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsBatchJobDefinitionEksPropertiesPodPropertiesVolumesHostPathList
 ```
@@ -8480,7 +8480,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionEksPropertiesPodPropertiesVolumesHostPathOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchjobdefinition"
 
 dataawsbatchjobdefinition.NewDataAwsBatchJobDefinitionEksPropertiesPodPropertiesVolumesHostPathOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsBatchJobDefinitionEksPropertiesPodPropertiesVolumesHostPathOutputReference
 ```
@@ -8758,7 +8758,7 @@ func InternalValue() DataAwsBatchJobDefinitionEksPropertiesPodPropertiesVolumesH
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionEksPropertiesPodPropertiesVolumesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchjobdefinition"
 
 dataawsbatchjobdefinition.NewDataAwsBatchJobDefinitionEksPropertiesPodPropertiesVolumesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsBatchJobDefinitionEksPropertiesPodPropertiesVolumesList
 ```
@@ -8907,7 +8907,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionEksPropertiesPodPropertiesVolumesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchjobdefinition"
 
 dataawsbatchjobdefinition.NewDataAwsBatchJobDefinitionEksPropertiesPodPropertiesVolumesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsBatchJobDefinitionEksPropertiesPodPropertiesVolumesOutputReference
 ```
@@ -9218,7 +9218,7 @@ func InternalValue() DataAwsBatchJobDefinitionEksPropertiesPodPropertiesVolumes
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionEksPropertiesPodPropertiesVolumesSecretList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchjobdefinition"
 
 dataawsbatchjobdefinition.NewDataAwsBatchJobDefinitionEksPropertiesPodPropertiesVolumesSecretList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsBatchJobDefinitionEksPropertiesPodPropertiesVolumesSecretList
 ```
@@ -9367,7 +9367,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionEksPropertiesPodPropertiesVolumesSecretOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchjobdefinition"
 
 dataawsbatchjobdefinition.NewDataAwsBatchJobDefinitionEksPropertiesPodPropertiesVolumesSecretOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsBatchJobDefinitionEksPropertiesPodPropertiesVolumesSecretOutputReference
 ```
@@ -9656,7 +9656,7 @@ func InternalValue() DataAwsBatchJobDefinitionEksPropertiesPodPropertiesVolumesS
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionNodePropertiesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchjobdefinition"
 
 dataawsbatchjobdefinition.NewDataAwsBatchJobDefinitionNodePropertiesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsBatchJobDefinitionNodePropertiesList
 ```
@@ -9805,7 +9805,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerEnvironmentList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchjobdefinition"
 
 dataawsbatchjobdefinition.NewDataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerEnvironmentList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerEnvironmentList
 ```
@@ -9954,7 +9954,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerEnvironmentOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchjobdefinition"
 
 dataawsbatchjobdefinition.NewDataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerEnvironmentOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerEnvironmentOutputReference
 ```
@@ -10243,7 +10243,7 @@ func InternalValue() DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesC
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerEphemeralStorageList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchjobdefinition"
 
 dataawsbatchjobdefinition.NewDataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerEphemeralStorageList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerEphemeralStorageList
 ```
@@ -10392,7 +10392,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerEphemeralStorageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchjobdefinition"
 
 dataawsbatchjobdefinition.NewDataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerEphemeralStorageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerEphemeralStorageOutputReference
 ```
@@ -10670,7 +10670,7 @@ func InternalValue() DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesC
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerFargatePlatformConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchjobdefinition"
 
 dataawsbatchjobdefinition.NewDataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerFargatePlatformConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerFargatePlatformConfigurationList
 ```
@@ -10819,7 +10819,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerFargatePlatformConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchjobdefinition"
 
 dataawsbatchjobdefinition.NewDataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerFargatePlatformConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerFargatePlatformConfigurationOutputReference
 ```
@@ -11097,7 +11097,7 @@ func InternalValue() DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesC
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerLinuxParametersDevicesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchjobdefinition"
 
 dataawsbatchjobdefinition.NewDataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerLinuxParametersDevicesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerLinuxParametersDevicesList
 ```
@@ -11246,7 +11246,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerLinuxParametersDevicesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchjobdefinition"
 
 dataawsbatchjobdefinition.NewDataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerLinuxParametersDevicesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerLinuxParametersDevicesOutputReference
 ```
@@ -11546,7 +11546,7 @@ func InternalValue() DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesC
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerLinuxParametersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchjobdefinition"
 
 dataawsbatchjobdefinition.NewDataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerLinuxParametersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerLinuxParametersList
 ```
@@ -11695,7 +11695,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerLinuxParametersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchjobdefinition"
 
 dataawsbatchjobdefinition.NewDataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerLinuxParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerLinuxParametersOutputReference
 ```
@@ -12028,7 +12028,7 @@ func InternalValue() DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesC
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerLinuxParametersTmpfsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchjobdefinition"
 
 dataawsbatchjobdefinition.NewDataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerLinuxParametersTmpfsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerLinuxParametersTmpfsList
 ```
@@ -12177,7 +12177,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerLinuxParametersTmpfsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchjobdefinition"
 
 dataawsbatchjobdefinition.NewDataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerLinuxParametersTmpfsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerLinuxParametersTmpfsOutputReference
 ```
@@ -12477,7 +12477,7 @@ func InternalValue() DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesC
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchjobdefinition"
 
 dataawsbatchjobdefinition.NewDataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerList
 ```
@@ -12626,7 +12626,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerLogConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchjobdefinition"
 
 dataawsbatchjobdefinition.NewDataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerLogConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerLogConfigurationList
 ```
@@ -12775,7 +12775,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerLogConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchjobdefinition"
 
 dataawsbatchjobdefinition.NewDataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerLogConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerLogConfigurationOutputReference
 ```
@@ -13075,7 +13075,7 @@ func InternalValue() DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesC
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerLogConfigurationSecretOptionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchjobdefinition"
 
 dataawsbatchjobdefinition.NewDataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerLogConfigurationSecretOptionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerLogConfigurationSecretOptionsList
 ```
@@ -13224,7 +13224,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerLogConfigurationSecretOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchjobdefinition"
 
 dataawsbatchjobdefinition.NewDataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerLogConfigurationSecretOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerLogConfigurationSecretOptionsOutputReference
 ```
@@ -13513,7 +13513,7 @@ func InternalValue() DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesC
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerMountPointsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchjobdefinition"
 
 dataawsbatchjobdefinition.NewDataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerMountPointsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerMountPointsList
 ```
@@ -13662,7 +13662,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerMountPointsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchjobdefinition"
 
 dataawsbatchjobdefinition.NewDataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerMountPointsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerMountPointsOutputReference
 ```
@@ -13962,7 +13962,7 @@ func InternalValue() DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesC
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerNetworkConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchjobdefinition"
 
 dataawsbatchjobdefinition.NewDataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerNetworkConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerNetworkConfigurationList
 ```
@@ -14111,7 +14111,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerNetworkConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchjobdefinition"
 
 dataawsbatchjobdefinition.NewDataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerNetworkConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerNetworkConfigurationOutputReference
 ```
@@ -14389,7 +14389,7 @@ func InternalValue() DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesC
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchjobdefinition"
 
 dataawsbatchjobdefinition.NewDataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerOutputReference
 ```
@@ -14876,7 +14876,7 @@ func InternalValue() DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesC
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerResourceRequirementsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchjobdefinition"
 
 dataawsbatchjobdefinition.NewDataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerResourceRequirementsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerResourceRequirementsList
 ```
@@ -15025,7 +15025,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerResourceRequirementsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchjobdefinition"
 
 dataawsbatchjobdefinition.NewDataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerResourceRequirementsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerResourceRequirementsOutputReference
 ```
@@ -15314,7 +15314,7 @@ func InternalValue() DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesC
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerRuntimePlatformList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchjobdefinition"
 
 dataawsbatchjobdefinition.NewDataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerRuntimePlatformList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerRuntimePlatformList
 ```
@@ -15463,7 +15463,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerRuntimePlatformOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchjobdefinition"
 
 dataawsbatchjobdefinition.NewDataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerRuntimePlatformOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerRuntimePlatformOutputReference
 ```
@@ -15752,7 +15752,7 @@ func InternalValue() DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesC
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerSecretsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchjobdefinition"
 
 dataawsbatchjobdefinition.NewDataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerSecretsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerSecretsList
 ```
@@ -15901,7 +15901,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerSecretsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchjobdefinition"
 
 dataawsbatchjobdefinition.NewDataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerSecretsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerSecretsOutputReference
 ```
@@ -16190,7 +16190,7 @@ func InternalValue() DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesC
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerUlimitsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchjobdefinition"
 
 dataawsbatchjobdefinition.NewDataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerUlimitsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerUlimitsList
 ```
@@ -16339,7 +16339,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerUlimitsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchjobdefinition"
 
 dataawsbatchjobdefinition.NewDataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerUlimitsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerUlimitsOutputReference
 ```
@@ -16639,7 +16639,7 @@ func InternalValue() DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesC
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerVolumesEfsVolumeConfigurationAuthorizationConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchjobdefinition"
 
 dataawsbatchjobdefinition.NewDataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerVolumesEfsVolumeConfigurationAuthorizationConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerVolumesEfsVolumeConfigurationAuthorizationConfigList
 ```
@@ -16788,7 +16788,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerVolumesEfsVolumeConfigurationAuthorizationConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchjobdefinition"
 
 dataawsbatchjobdefinition.NewDataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerVolumesEfsVolumeConfigurationAuthorizationConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerVolumesEfsVolumeConfigurationAuthorizationConfigOutputReference
 ```
@@ -17077,7 +17077,7 @@ func InternalValue() DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesC
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerVolumesEfsVolumeConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchjobdefinition"
 
 dataawsbatchjobdefinition.NewDataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerVolumesEfsVolumeConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerVolumesEfsVolumeConfigurationList
 ```
@@ -17226,7 +17226,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerVolumesEfsVolumeConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchjobdefinition"
 
 dataawsbatchjobdefinition.NewDataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerVolumesEfsVolumeConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerVolumesEfsVolumeConfigurationOutputReference
 ```
@@ -17548,7 +17548,7 @@ func InternalValue() DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesC
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerVolumesHostList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchjobdefinition"
 
 dataawsbatchjobdefinition.NewDataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerVolumesHostList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerVolumesHostList
 ```
@@ -17697,7 +17697,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerVolumesHostOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchjobdefinition"
 
 dataawsbatchjobdefinition.NewDataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerVolumesHostOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerVolumesHostOutputReference
 ```
@@ -17975,7 +17975,7 @@ func InternalValue() DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesC
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerVolumesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchjobdefinition"
 
 dataawsbatchjobdefinition.NewDataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerVolumesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerVolumesList
 ```
@@ -18124,7 +18124,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerVolumesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchjobdefinition"
 
 dataawsbatchjobdefinition.NewDataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerVolumesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerVolumesOutputReference
 ```
@@ -18424,7 +18424,7 @@ func InternalValue() DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesC
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchjobdefinition"
 
 dataawsbatchjobdefinition.NewDataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesList
 ```
@@ -18573,7 +18573,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchjobdefinition"
 
 dataawsbatchjobdefinition.NewDataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesOutputReference
 ```
@@ -18862,7 +18862,7 @@ func InternalValue() DataAwsBatchJobDefinitionNodePropertiesNodeRangeProperties
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionNodePropertiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchjobdefinition"
 
 dataawsbatchjobdefinition.NewDataAwsBatchJobDefinitionNodePropertiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsBatchJobDefinitionNodePropertiesOutputReference
 ```
@@ -19162,7 +19162,7 @@ func InternalValue() DataAwsBatchJobDefinitionNodeProperties
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionRetryStrategyEvaluateOnExitList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchjobdefinition"
 
 dataawsbatchjobdefinition.NewDataAwsBatchJobDefinitionRetryStrategyEvaluateOnExitList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsBatchJobDefinitionRetryStrategyEvaluateOnExitList
 ```
@@ -19311,7 +19311,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionRetryStrategyEvaluateOnExitOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchjobdefinition"
 
 dataawsbatchjobdefinition.NewDataAwsBatchJobDefinitionRetryStrategyEvaluateOnExitOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsBatchJobDefinitionRetryStrategyEvaluateOnExitOutputReference
 ```
@@ -19622,7 +19622,7 @@ func InternalValue() DataAwsBatchJobDefinitionRetryStrategyEvaluateOnExit
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionRetryStrategyList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchjobdefinition"
 
 dataawsbatchjobdefinition.NewDataAwsBatchJobDefinitionRetryStrategyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsBatchJobDefinitionRetryStrategyList
 ```
@@ -19771,7 +19771,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionRetryStrategyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchjobdefinition"
 
 dataawsbatchjobdefinition.NewDataAwsBatchJobDefinitionRetryStrategyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsBatchJobDefinitionRetryStrategyOutputReference
 ```
@@ -20060,7 +20060,7 @@ func InternalValue() DataAwsBatchJobDefinitionRetryStrategy
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionTimeoutList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchjobdefinition"
 
 dataawsbatchjobdefinition.NewDataAwsBatchJobDefinitionTimeoutList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsBatchJobDefinitionTimeoutList
 ```
@@ -20209,7 +20209,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionTimeoutOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchjobdefinition"
 
 dataawsbatchjobdefinition.NewDataAwsBatchJobDefinitionTimeoutOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsBatchJobDefinitionTimeoutOutputReference
 ```
