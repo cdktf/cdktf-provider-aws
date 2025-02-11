@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/resources/apigatewayv2_domain_name
+// https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/apigatewayv2_domain_name
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,58 +13,58 @@ import * as cdktf from 'cdktf';
 
 export interface Apigatewayv2DomainNameConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/resources/apigatewayv2_domain_name#domain_name Apigatewayv2DomainName#domain_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/apigatewayv2_domain_name#domain_name Apigatewayv2DomainName#domain_name}
   */
   readonly domainName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/resources/apigatewayv2_domain_name#id Apigatewayv2DomainName#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/apigatewayv2_domain_name#id Apigatewayv2DomainName#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/resources/apigatewayv2_domain_name#tags Apigatewayv2DomainName#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/apigatewayv2_domain_name#tags Apigatewayv2DomainName#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/resources/apigatewayv2_domain_name#tags_all Apigatewayv2DomainName#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/apigatewayv2_domain_name#tags_all Apigatewayv2DomainName#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
   * domain_name_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/resources/apigatewayv2_domain_name#domain_name_configuration Apigatewayv2DomainName#domain_name_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/apigatewayv2_domain_name#domain_name_configuration Apigatewayv2DomainName#domain_name_configuration}
   */
   readonly domainNameConfiguration: Apigatewayv2DomainNameDomainNameConfiguration;
   /**
   * mutual_tls_authentication block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/resources/apigatewayv2_domain_name#mutual_tls_authentication Apigatewayv2DomainName#mutual_tls_authentication}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/apigatewayv2_domain_name#mutual_tls_authentication Apigatewayv2DomainName#mutual_tls_authentication}
   */
   readonly mutualTlsAuthentication?: Apigatewayv2DomainNameMutualTlsAuthentication;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/resources/apigatewayv2_domain_name#timeouts Apigatewayv2DomainName#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/apigatewayv2_domain_name#timeouts Apigatewayv2DomainName#timeouts}
   */
   readonly timeouts?: Apigatewayv2DomainNameTimeouts;
 }
 export interface Apigatewayv2DomainNameDomainNameConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/resources/apigatewayv2_domain_name#certificate_arn Apigatewayv2DomainName#certificate_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/apigatewayv2_domain_name#certificate_arn Apigatewayv2DomainName#certificate_arn}
   */
   readonly certificateArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/resources/apigatewayv2_domain_name#endpoint_type Apigatewayv2DomainName#endpoint_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/apigatewayv2_domain_name#endpoint_type Apigatewayv2DomainName#endpoint_type}
   */
   readonly endpointType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/resources/apigatewayv2_domain_name#ownership_verification_certificate_arn Apigatewayv2DomainName#ownership_verification_certificate_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/apigatewayv2_domain_name#ownership_verification_certificate_arn Apigatewayv2DomainName#ownership_verification_certificate_arn}
   */
   readonly ownershipVerificationCertificateArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/resources/apigatewayv2_domain_name#security_policy Apigatewayv2DomainName#security_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/apigatewayv2_domain_name#security_policy Apigatewayv2DomainName#security_policy}
   */
   readonly securityPolicy: string;
 }
@@ -236,11 +236,11 @@ export class Apigatewayv2DomainNameDomainNameConfigurationOutputReference extend
 }
 export interface Apigatewayv2DomainNameMutualTlsAuthentication {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/resources/apigatewayv2_domain_name#truststore_uri Apigatewayv2DomainName#truststore_uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/apigatewayv2_domain_name#truststore_uri Apigatewayv2DomainName#truststore_uri}
   */
   readonly truststoreUri: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/resources/apigatewayv2_domain_name#truststore_version Apigatewayv2DomainName#truststore_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/apigatewayv2_domain_name#truststore_version Apigatewayv2DomainName#truststore_version}
   */
   readonly truststoreVersion?: string;
 }
@@ -350,11 +350,11 @@ export class Apigatewayv2DomainNameMutualTlsAuthenticationOutputReference extend
 }
 export interface Apigatewayv2DomainNameTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/resources/apigatewayv2_domain_name#create Apigatewayv2DomainName#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/apigatewayv2_domain_name#create Apigatewayv2DomainName#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/resources/apigatewayv2_domain_name#update Apigatewayv2DomainName#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/apigatewayv2_domain_name#update Apigatewayv2DomainName#update}
   */
   readonly update?: string;
 }
@@ -477,7 +477,7 @@ export class Apigatewayv2DomainNameTimeoutsOutputReference extends cdktf.Complex
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/resources/apigatewayv2_domain_name aws_apigatewayv2_domain_name}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/apigatewayv2_domain_name aws_apigatewayv2_domain_name}
 */
 export class Apigatewayv2DomainName extends cdktf.TerraformResource {
 
@@ -493,7 +493,7 @@ export class Apigatewayv2DomainName extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a Apigatewayv2DomainName resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Apigatewayv2DomainName to import
-  * @param importFromId The id of the existing Apigatewayv2DomainName that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/resources/apigatewayv2_domain_name#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Apigatewayv2DomainName that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/apigatewayv2_domain_name#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Apigatewayv2DomainName to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -505,7 +505,7 @@ export class Apigatewayv2DomainName extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/resources/apigatewayv2_domain_name aws_apigatewayv2_domain_name} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/apigatewayv2_domain_name aws_apigatewayv2_domain_name} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -516,7 +516,7 @@ export class Apigatewayv2DomainName extends cdktf.TerraformResource {
       terraformResourceType: 'aws_apigatewayv2_domain_name',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.86.0',
+        providerVersion: '5.86.1',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

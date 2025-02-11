@@ -4,7 +4,7 @@
 
 ### Route53ProfilesAssociation <a name="Route53ProfilesAssociation" id="@cdktf/provider-aws.route53ProfilesAssociation.Route53ProfilesAssociation"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/resources/route53profiles_association aws_route53profiles_association}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/route53profiles_association aws_route53profiles_association}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.route53ProfilesAssociation.Route53ProfilesAssociation.Initializer"></a>
 
@@ -42,10 +42,10 @@ Route53ProfilesAssociation.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-aws.route53ProfilesAssociation.Route53ProfilesAssociation.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.route53ProfilesAssociation.Route53ProfilesAssociation.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.route53ProfilesAssociation.Route53ProfilesAssociation.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.route53ProfilesAssociation.Route53ProfilesAssociation.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/resources/route53profiles_association#name Route53ProfilesAssociation#name}. |
-| <code><a href="#@cdktf/provider-aws.route53ProfilesAssociation.Route53ProfilesAssociation.Initializer.parameter.profileId">profileId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/resources/route53profiles_association#profile_id Route53ProfilesAssociation#profile_id}. |
-| <code><a href="#@cdktf/provider-aws.route53ProfilesAssociation.Route53ProfilesAssociation.Initializer.parameter.resourceId">resourceId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/resources/route53profiles_association#resource_id Route53ProfilesAssociation#resource_id}. |
-| <code><a href="#@cdktf/provider-aws.route53ProfilesAssociation.Route53ProfilesAssociation.Initializer.parameter.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/resources/route53profiles_association#tags Route53ProfilesAssociation#tags}. |
+| <code><a href="#@cdktf/provider-aws.route53ProfilesAssociation.Route53ProfilesAssociation.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/route53profiles_association#name Route53ProfilesAssociation#name}. |
+| <code><a href="#@cdktf/provider-aws.route53ProfilesAssociation.Route53ProfilesAssociation.Initializer.parameter.profileId">profileId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/route53profiles_association#profile_id Route53ProfilesAssociation#profile_id}. |
+| <code><a href="#@cdktf/provider-aws.route53ProfilesAssociation.Route53ProfilesAssociation.Initializer.parameter.resourceId">resourceId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/route53profiles_association#resource_id Route53ProfilesAssociation#resource_id}. |
+| <code><a href="#@cdktf/provider-aws.route53ProfilesAssociation.Route53ProfilesAssociation.Initializer.parameter.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/route53profiles_association#tags Route53ProfilesAssociation#tags}. |
 | <code><a href="#@cdktf/provider-aws.route53ProfilesAssociation.Route53ProfilesAssociation.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-aws.route53ProfilesAssociation.Route53ProfilesAssociationTimeouts">Route53ProfilesAssociationTimeouts</a></code> | timeouts block. |
 
 ---
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/resources/route53profiles_association#name Route53ProfilesAssociation#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/route53profiles_association#name Route53ProfilesAssociation#name}.
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/resources/route53profiles_association#profile_id Route53ProfilesAssociation#profile_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/route53profiles_association#profile_id Route53ProfilesAssociation#profile_id}.
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/resources/route53profiles_association#resource_id Route53ProfilesAssociation#resource_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/route53profiles_association#resource_id Route53ProfilesAssociation#resource_id}.
 
 ---
 
@@ -138,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/resources/route53profiles_association#tags Route53ProfilesAssociation#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/route53profiles_association#tags Route53ProfilesAssociation#tags}.
 
 ---
 
@@ -148,7 +148,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/resources/route53profiles_association#timeouts Route53ProfilesAssociation#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/route53profiles_association#timeouts Route53ProfilesAssociation#timeouts}
 
 ---
 
@@ -602,7 +602,7 @@ The construct id used in the generated config for the Route53ProfilesAssociation
 
 The id of the existing Route53ProfilesAssociation that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/resources/route53profiles_association#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/route53profiles_association#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1011,10 +1011,10 @@ Route53ProfilesAssociationConfig.builder()
 | <code><a href="#@cdktf/provider-aws.route53ProfilesAssociation.Route53ProfilesAssociationConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.route53ProfilesAssociation.Route53ProfilesAssociationConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.route53ProfilesAssociation.Route53ProfilesAssociationConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.route53ProfilesAssociation.Route53ProfilesAssociationConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/resources/route53profiles_association#name Route53ProfilesAssociation#name}. |
-| <code><a href="#@cdktf/provider-aws.route53ProfilesAssociation.Route53ProfilesAssociationConfig.property.profileId">profileId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/resources/route53profiles_association#profile_id Route53ProfilesAssociation#profile_id}. |
-| <code><a href="#@cdktf/provider-aws.route53ProfilesAssociation.Route53ProfilesAssociationConfig.property.resourceId">resourceId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/resources/route53profiles_association#resource_id Route53ProfilesAssociation#resource_id}. |
-| <code><a href="#@cdktf/provider-aws.route53ProfilesAssociation.Route53ProfilesAssociationConfig.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/resources/route53profiles_association#tags Route53ProfilesAssociation#tags}. |
+| <code><a href="#@cdktf/provider-aws.route53ProfilesAssociation.Route53ProfilesAssociationConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/route53profiles_association#name Route53ProfilesAssociation#name}. |
+| <code><a href="#@cdktf/provider-aws.route53ProfilesAssociation.Route53ProfilesAssociationConfig.property.profileId">profileId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/route53profiles_association#profile_id Route53ProfilesAssociation#profile_id}. |
+| <code><a href="#@cdktf/provider-aws.route53ProfilesAssociation.Route53ProfilesAssociationConfig.property.resourceId">resourceId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/route53profiles_association#resource_id Route53ProfilesAssociation#resource_id}. |
+| <code><a href="#@cdktf/provider-aws.route53ProfilesAssociation.Route53ProfilesAssociationConfig.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/route53profiles_association#tags Route53ProfilesAssociation#tags}. |
 | <code><a href="#@cdktf/provider-aws.route53ProfilesAssociation.Route53ProfilesAssociationConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-aws.route53ProfilesAssociation.Route53ProfilesAssociationTimeouts">Route53ProfilesAssociationTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1097,7 +1097,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/resources/route53profiles_association#name Route53ProfilesAssociation#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/route53profiles_association#name Route53ProfilesAssociation#name}.
 
 ---
 
@@ -1109,7 +1109,7 @@ public java.lang.String getProfileId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/resources/route53profiles_association#profile_id Route53ProfilesAssociation#profile_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/route53profiles_association#profile_id Route53ProfilesAssociation#profile_id}.
 
 ---
 
@@ -1121,7 +1121,7 @@ public java.lang.String getResourceId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/resources/route53profiles_association#resource_id Route53ProfilesAssociation#resource_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/route53profiles_association#resource_id Route53ProfilesAssociation#resource_id}.
 
 ---
 
@@ -1133,7 +1133,7 @@ public java.util.Map<java.lang.String, java.lang.String> getTags();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/resources/route53profiles_association#tags Route53ProfilesAssociation#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/route53profiles_association#tags Route53ProfilesAssociation#tags}.
 
 ---
 
@@ -1147,7 +1147,7 @@ public Route53ProfilesAssociationTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/resources/route53profiles_association#timeouts Route53ProfilesAssociation#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/route53profiles_association#timeouts Route53ProfilesAssociation#timeouts}
 
 ---
 
@@ -1185,7 +1185,7 @@ public java.lang.String getCreate();
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/resources/route53profiles_association#create Route53ProfilesAssociation#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/route53profiles_association#create Route53ProfilesAssociation#create}
 
 ---
 
@@ -1199,7 +1199,7 @@ public java.lang.String getDelete();
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/resources/route53profiles_association#delete Route53ProfilesAssociation#delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/route53profiles_association#delete Route53ProfilesAssociation#delete}
 
 ---
 
@@ -1213,7 +1213,7 @@ public java.lang.String getUpdate();
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/resources/route53profiles_association#update Route53ProfilesAssociation#update}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/route53profiles_association#update Route53ProfilesAssociation#update}
 
 ---
 

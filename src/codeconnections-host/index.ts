@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/resources/codeconnections_host
+// https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/codeconnections_host
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,31 +13,31 @@ import * as cdktf from 'cdktf';
 
 export interface CodeconnectionsHostConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/resources/codeconnections_host#name CodeconnectionsHost#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/codeconnections_host#name CodeconnectionsHost#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/resources/codeconnections_host#provider_endpoint CodeconnectionsHost#provider_endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/codeconnections_host#provider_endpoint CodeconnectionsHost#provider_endpoint}
   */
   readonly providerEndpoint: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/resources/codeconnections_host#provider_type CodeconnectionsHost#provider_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/codeconnections_host#provider_type CodeconnectionsHost#provider_type}
   */
   readonly providerType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/resources/codeconnections_host#tags CodeconnectionsHost#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/codeconnections_host#tags CodeconnectionsHost#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/resources/codeconnections_host#timeouts CodeconnectionsHost#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/codeconnections_host#timeouts CodeconnectionsHost#timeouts}
   */
   readonly timeouts?: CodeconnectionsHostTimeouts;
   /**
   * vpc_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/resources/codeconnections_host#vpc_configuration CodeconnectionsHost#vpc_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/codeconnections_host#vpc_configuration CodeconnectionsHost#vpc_configuration}
   */
   readonly vpcConfiguration?: CodeconnectionsHostVpcConfiguration[] | cdktf.IResolvable;
 }
@@ -45,19 +45,19 @@ export interface CodeconnectionsHostTimeouts {
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/resources/codeconnections_host#create CodeconnectionsHost#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/codeconnections_host#create CodeconnectionsHost#create}
   */
   readonly create?: string;
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/resources/codeconnections_host#delete CodeconnectionsHost#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/codeconnections_host#delete CodeconnectionsHost#delete}
   */
   readonly delete?: string;
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/resources/codeconnections_host#update CodeconnectionsHost#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/codeconnections_host#update CodeconnectionsHost#update}
   */
   readonly update?: string;
 }
@@ -209,19 +209,19 @@ export class CodeconnectionsHostTimeoutsOutputReference extends cdktf.ComplexObj
 }
 export interface CodeconnectionsHostVpcConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/resources/codeconnections_host#security_group_ids CodeconnectionsHost#security_group_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/codeconnections_host#security_group_ids CodeconnectionsHost#security_group_ids}
   */
   readonly securityGroupIds: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/resources/codeconnections_host#subnet_ids CodeconnectionsHost#subnet_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/codeconnections_host#subnet_ids CodeconnectionsHost#subnet_ids}
   */
   readonly subnetIds: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/resources/codeconnections_host#tls_certificate CodeconnectionsHost#tls_certificate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/codeconnections_host#tls_certificate CodeconnectionsHost#tls_certificate}
   */
   readonly tlsCertificate?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/resources/codeconnections_host#vpc_id CodeconnectionsHost#vpc_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/codeconnections_host#vpc_id CodeconnectionsHost#vpc_id}
   */
   readonly vpcId: string;
 }
@@ -415,7 +415,7 @@ export class CodeconnectionsHostVpcConfigurationList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/resources/codeconnections_host aws_codeconnections_host}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/codeconnections_host aws_codeconnections_host}
 */
 export class CodeconnectionsHost extends cdktf.TerraformResource {
 
@@ -431,7 +431,7 @@ export class CodeconnectionsHost extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a CodeconnectionsHost resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CodeconnectionsHost to import
-  * @param importFromId The id of the existing CodeconnectionsHost that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/resources/codeconnections_host#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing CodeconnectionsHost that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/codeconnections_host#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CodeconnectionsHost to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -443,7 +443,7 @@ export class CodeconnectionsHost extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/resources/codeconnections_host aws_codeconnections_host} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/codeconnections_host aws_codeconnections_host} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -454,7 +454,7 @@ export class CodeconnectionsHost extends cdktf.TerraformResource {
       terraformResourceType: 'aws_codeconnections_host',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.86.0',
+        providerVersion: '5.86.1',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
