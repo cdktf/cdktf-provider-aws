@@ -1,3 +1,3 @@
 # `aws_route53_vpc_association_authorization`
 
-Refer to the Terraform Registry for docs: [`aws_route53_vpc_association_authorization`](https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/resources/route53_vpc_association_authorization).
+Refer to the Terraform Registry for docs: [`aws_route53_vpc_association_authorization`](https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/route53_vpc_association_authorization).

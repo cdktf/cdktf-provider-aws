@@ -1,3 +1,3 @@
 # `aws_ssmincidents_replication_set`
 
-Refer to the Terraform Registry for docs: [`aws_ssmincidents_replication_set`](https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/resources/ssmincidents_replication_set).
+Refer to the Terraform Registry for docs: [`aws_ssmincidents_replication_set`](https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/ssmincidents_replication_set).

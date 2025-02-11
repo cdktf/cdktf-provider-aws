@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/resources/bedrock_inference_profile
+// https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/bedrock_inference_profile
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,27 +8,27 @@ import * as cdktf from 'cdktf';
 
 export interface BedrockInferenceProfileConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/resources/bedrock_inference_profile#description BedrockInferenceProfile#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/bedrock_inference_profile#description BedrockInferenceProfile#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/resources/bedrock_inference_profile#name BedrockInferenceProfile#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/bedrock_inference_profile#name BedrockInferenceProfile#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/resources/bedrock_inference_profile#tags BedrockInferenceProfile#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/bedrock_inference_profile#tags BedrockInferenceProfile#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
   * model_source block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/resources/bedrock_inference_profile#model_source BedrockInferenceProfile#model_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/bedrock_inference_profile#model_source BedrockInferenceProfile#model_source}
   */
   readonly modelSource?: BedrockInferenceProfileModelSource[] | cdktf.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/resources/bedrock_inference_profile#timeouts BedrockInferenceProfile#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/bedrock_inference_profile#timeouts BedrockInferenceProfile#timeouts}
   */
   readonly timeouts?: BedrockInferenceProfileTimeouts;
 }
@@ -114,7 +109,7 @@ export class BedrockInferenceProfileModelsList extends cdktf.ComplexList {
 }
 export interface BedrockInferenceProfileModelSource {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/resources/bedrock_inference_profile#copy_from BedrockInferenceProfile#copy_from}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/bedrock_inference_profile#copy_from BedrockInferenceProfile#copy_from}
   */
   readonly copyFrom: string;
 }
@@ -229,19 +224,19 @@ export interface BedrockInferenceProfileTimeouts {
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/resources/bedrock_inference_profile#create BedrockInferenceProfile#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/bedrock_inference_profile#create BedrockInferenceProfile#create}
   */
   readonly create?: string;
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/resources/bedrock_inference_profile#delete BedrockInferenceProfile#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/bedrock_inference_profile#delete BedrockInferenceProfile#delete}
   */
   readonly delete?: string;
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/resources/bedrock_inference_profile#update BedrockInferenceProfile#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/bedrock_inference_profile#update BedrockInferenceProfile#update}
   */
   readonly update?: string;
 }
@@ -393,7 +388,7 @@ export class BedrockInferenceProfileTimeoutsOutputReference extends cdktf.Comple
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/resources/bedrock_inference_profile aws_bedrock_inference_profile}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/bedrock_inference_profile aws_bedrock_inference_profile}
 */
 export class BedrockInferenceProfile extends cdktf.TerraformResource {
 
@@ -409,7 +404,7 @@ export class BedrockInferenceProfile extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a BedrockInferenceProfile resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the BedrockInferenceProfile to import
-  * @param importFromId The id of the existing BedrockInferenceProfile that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/resources/bedrock_inference_profile#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing BedrockInferenceProfile that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/bedrock_inference_profile#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the BedrockInferenceProfile to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -421,7 +416,7 @@ export class BedrockInferenceProfile extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/resources/bedrock_inference_profile aws_bedrock_inference_profile} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/bedrock_inference_profile aws_bedrock_inference_profile} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -432,7 +427,7 @@ export class BedrockInferenceProfile extends cdktf.TerraformResource {
       terraformResourceType: 'aws_bedrock_inference_profile',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.86.0',
+        providerVersion: '5.86.1',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

@@ -1,3 +1,3 @@
 # `aws_quicksight_template_alias`
 
-Refer to the Terraform Registry for docs: [`aws_quicksight_template_alias`](https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/resources/quicksight_template_alias).
+Refer to the Terraform Registry for docs: [`aws_quicksight_template_alias`](https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/quicksight_template_alias).

@@ -4,12 +4,12 @@
 
 ### ServicecatalogappregistryAttributeGroupAssociation <a name="ServicecatalogappregistryAttributeGroupAssociation" id="@cdktf/provider-aws.servicecatalogappregistryAttributeGroupAssociation.ServicecatalogappregistryAttributeGroupAssociation"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/resources/servicecatalogappregistry_attribute_group_association aws_servicecatalogappregistry_attribute_group_association}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/servicecatalogappregistry_attribute_group_association aws_servicecatalogappregistry_attribute_group_association}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.servicecatalogappregistryAttributeGroupAssociation.ServicecatalogappregistryAttributeGroupAssociation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/servicecatalogappregistryattributegroupassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/servicecatalogappregistryattributegroupassociation"
 
 servicecatalogappregistryattributegroupassociation.NewServicecatalogappregistryAttributeGroupAssociation(scope Construct, id *string, config ServicecatalogappregistryAttributeGroupAssociationConfig) ServicecatalogappregistryAttributeGroupAssociation
 ```
@@ -378,7 +378,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.servicecatalogappregistryAttributeGroupAssociation.ServicecatalogappregistryAttributeGroupAssociation.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/servicecatalogappregistryattributegroupassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/servicecatalogappregistryattributegroupassociation"
 
 servicecatalogappregistryattributegroupassociation.ServicecatalogappregistryAttributeGroupAssociation_IsConstruct(x interface{}) *bool
 ```
@@ -410,7 +410,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.servicecatalogappregistryAttributeGroupAssociation.ServicecatalogappregistryAttributeGroupAssociation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/servicecatalogappregistryattributegroupassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/servicecatalogappregistryattributegroupassociation"
 
 servicecatalogappregistryattributegroupassociation.ServicecatalogappregistryAttributeGroupAssociation_IsTerraformElement(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ servicecatalogappregistryattributegroupassociation.ServicecatalogappregistryAttr
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.servicecatalogappregistryAttributeGroupAssociation.ServicecatalogappregistryAttributeGroupAssociation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/servicecatalogappregistryattributegroupassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/servicecatalogappregistryattributegroupassociation"
 
 servicecatalogappregistryattributegroupassociation.ServicecatalogappregistryAttributeGroupAssociation_IsTerraformResource(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ servicecatalogappregistryattributegroupassociation.ServicecatalogappregistryAttr
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.servicecatalogappregistryAttributeGroupAssociation.ServicecatalogappregistryAttributeGroupAssociation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/servicecatalogappregistryattributegroupassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/servicecatalogappregistryattributegroupassociation"
 
 servicecatalogappregistryattributegroupassociation.ServicecatalogappregistryAttributeGroupAssociation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -467,7 +467,7 @@ The construct id used in the generated config for the ServicecatalogappregistryA
 
 The id of the existing ServicecatalogappregistryAttributeGroupAssociation that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/resources/servicecatalogappregistry_attribute_group_association#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/servicecatalogappregistry_attribute_group_association#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -711,7 +711,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.servicecatalogappregistryAttributeGroupAssociation.ServicecatalogappregistryAttributeGroupAssociationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/servicecatalogappregistryattributegroupassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/servicecatalogappregistryattributegroupassociation"
 
 &servicecatalogappregistryattributegroupassociation.ServicecatalogappregistryAttributeGroupAssociationConfig {
 	Connection: interface{},
@@ -822,7 +822,7 @@ ApplicationId *string
 
 ID of the application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/resources/servicecatalogappregistry_attribute_group_association#application_id ServicecatalogappregistryAttributeGroupAssociation#application_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/servicecatalogappregistry_attribute_group_association#application_id ServicecatalogappregistryAttributeGroupAssociation#application_id}
 
 ---
 
@@ -836,7 +836,7 @@ AttributeGroupId *string
 
 ID of the attribute group to associate with the application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/resources/servicecatalogappregistry_attribute_group_association#attribute_group_id ServicecatalogappregistryAttributeGroupAssociation#attribute_group_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/servicecatalogappregistry_attribute_group_association#attribute_group_id ServicecatalogappregistryAttributeGroupAssociation#attribute_group_id}
 
 ---
 
