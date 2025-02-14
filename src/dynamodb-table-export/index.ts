@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/dynamodb_table_export
+// https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/dynamodb_table_export
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,58 +8,218 @@ import * as cdktf from 'cdktf';
 
 export interface DynamodbTableExportConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/dynamodb_table_export#export_format DynamodbTableExport#export_format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/dynamodb_table_export#export_format DynamodbTableExport#export_format}
   */
   readonly exportFormat?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/dynamodb_table_export#export_time DynamodbTableExport#export_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/dynamodb_table_export#export_time DynamodbTableExport#export_time}
   */
   readonly exportTime?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/dynamodb_table_export#id DynamodbTableExport#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/dynamodb_table_export#export_type DynamodbTableExport#export_type}
+  */
+  readonly exportType?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/dynamodb_table_export#id DynamodbTableExport#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/dynamodb_table_export#s3_bucket DynamodbTableExport#s3_bucket}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/dynamodb_table_export#s3_bucket DynamodbTableExport#s3_bucket}
   */
   readonly s3Bucket: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/dynamodb_table_export#s3_bucket_owner DynamodbTableExport#s3_bucket_owner}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/dynamodb_table_export#s3_bucket_owner DynamodbTableExport#s3_bucket_owner}
   */
   readonly s3BucketOwner?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/dynamodb_table_export#s3_prefix DynamodbTableExport#s3_prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/dynamodb_table_export#s3_prefix DynamodbTableExport#s3_prefix}
   */
   readonly s3Prefix?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/dynamodb_table_export#s3_sse_algorithm DynamodbTableExport#s3_sse_algorithm}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/dynamodb_table_export#s3_sse_algorithm DynamodbTableExport#s3_sse_algorithm}
   */
   readonly s3SseAlgorithm?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/dynamodb_table_export#s3_sse_kms_key_id DynamodbTableExport#s3_sse_kms_key_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/dynamodb_table_export#s3_sse_kms_key_id DynamodbTableExport#s3_sse_kms_key_id}
   */
   readonly s3SseKmsKeyId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/dynamodb_table_export#table_arn DynamodbTableExport#table_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/dynamodb_table_export#table_arn DynamodbTableExport#table_arn}
   */
   readonly tableArn: string;
   /**
+  * incremental_export_specification block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/dynamodb_table_export#incremental_export_specification DynamodbTableExport#incremental_export_specification}
+  */
+  readonly incrementalExportSpecification?: DynamodbTableExportIncrementalExportSpecification;
+  /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/dynamodb_table_export#timeouts DynamodbTableExport#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/dynamodb_table_export#timeouts DynamodbTableExport#timeouts}
   */
   readonly timeouts?: DynamodbTableExportTimeouts;
 }
+export interface DynamodbTableExportIncrementalExportSpecification {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/dynamodb_table_export#export_from_time DynamodbTableExport#export_from_time}
+  */
+  readonly exportFromTime?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/dynamodb_table_export#export_to_time DynamodbTableExport#export_to_time}
+  */
+  readonly exportToTime?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/dynamodb_table_export#export_view_type DynamodbTableExport#export_view_type}
+  */
+  readonly exportViewType?: string;
+}
+
+export function dynamodbTableExportIncrementalExportSpecificationToTerraform(struct?: DynamodbTableExportIncrementalExportSpecificationOutputReference | DynamodbTableExportIncrementalExportSpecification): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    export_from_time: cdktf.stringToTerraform(struct!.exportFromTime),
+    export_to_time: cdktf.stringToTerraform(struct!.exportToTime),
+    export_view_type: cdktf.stringToTerraform(struct!.exportViewType),
+  }
+}
+
+
+export function dynamodbTableExportIncrementalExportSpecificationToHclTerraform(struct?: DynamodbTableExportIncrementalExportSpecificationOutputReference | DynamodbTableExportIncrementalExportSpecification): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    export_from_time: {
+      value: cdktf.stringToHclTerraform(struct!.exportFromTime),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    export_to_time: {
+      value: cdktf.stringToHclTerraform(struct!.exportToTime),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    export_view_type: {
+      value: cdktf.stringToHclTerraform(struct!.exportViewType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class DynamodbTableExportIncrementalExportSpecificationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): DynamodbTableExportIncrementalExportSpecification | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._exportFromTime !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.exportFromTime = this._exportFromTime;
+    }
+    if (this._exportToTime !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.exportToTime = this._exportToTime;
+    }
+    if (this._exportViewType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.exportViewType = this._exportViewType;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DynamodbTableExportIncrementalExportSpecification | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._exportFromTime = undefined;
+      this._exportToTime = undefined;
+      this._exportViewType = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._exportFromTime = value.exportFromTime;
+      this._exportToTime = value.exportToTime;
+      this._exportViewType = value.exportViewType;
+    }
+  }
+
+  // export_from_time - computed: true, optional: true, required: false
+  private _exportFromTime?: string; 
+  public get exportFromTime() {
+    return this.getStringAttribute('export_from_time');
+  }
+  public set exportFromTime(value: string) {
+    this._exportFromTime = value;
+  }
+  public resetExportFromTime() {
+    this._exportFromTime = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get exportFromTimeInput() {
+    return this._exportFromTime;
+  }
+
+  // export_to_time - computed: true, optional: true, required: false
+  private _exportToTime?: string; 
+  public get exportToTime() {
+    return this.getStringAttribute('export_to_time');
+  }
+  public set exportToTime(value: string) {
+    this._exportToTime = value;
+  }
+  public resetExportToTime() {
+    this._exportToTime = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get exportToTimeInput() {
+    return this._exportToTime;
+  }
+
+  // export_view_type - computed: true, optional: true, required: false
+  private _exportViewType?: string; 
+  public get exportViewType() {
+    return this.getStringAttribute('export_view_type');
+  }
+  public set exportViewType(value: string) {
+    this._exportViewType = value;
+  }
+  public resetExportViewType() {
+    this._exportViewType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get exportViewTypeInput() {
+    return this._exportViewType;
+  }
+}
 export interface DynamodbTableExportTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/dynamodb_table_export#create DynamodbTableExport#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/dynamodb_table_export#create DynamodbTableExport#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/dynamodb_table_export#delete DynamodbTableExport#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/dynamodb_table_export#delete DynamodbTableExport#delete}
   */
   readonly delete?: string;
 }
@@ -187,7 +342,7 @@ export class DynamodbTableExportTimeoutsOutputReference extends cdktf.ComplexObj
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/dynamodb_table_export aws_dynamodb_table_export}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/dynamodb_table_export aws_dynamodb_table_export}
 */
 export class DynamodbTableExport extends cdktf.TerraformResource {
 
@@ -203,7 +358,7 @@ export class DynamodbTableExport extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a DynamodbTableExport resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DynamodbTableExport to import
-  * @param importFromId The id of the existing DynamodbTableExport that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/dynamodb_table_export#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DynamodbTableExport that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/dynamodb_table_export#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DynamodbTableExport to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -215,7 +370,7 @@ export class DynamodbTableExport extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/dynamodb_table_export aws_dynamodb_table_export} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/dynamodb_table_export aws_dynamodb_table_export} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -226,7 +381,7 @@ export class DynamodbTableExport extends cdktf.TerraformResource {
       terraformResourceType: 'aws_dynamodb_table_export',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.86.1',
+        providerVersion: '5.87.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -239,6 +394,7 @@ export class DynamodbTableExport extends cdktf.TerraformResource {
     });
     this._exportFormat = config.exportFormat;
     this._exportTime = config.exportTime;
+    this._exportType = config.exportType;
     this._id = config.id;
     this._s3Bucket = config.s3Bucket;
     this._s3BucketOwner = config.s3BucketOwner;
@@ -246,6 +402,7 @@ export class DynamodbTableExport extends cdktf.TerraformResource {
     this._s3SseAlgorithm = config.s3SseAlgorithm;
     this._s3SseKmsKeyId = config.s3SseKmsKeyId;
     this._tableArn = config.tableArn;
+    this._incrementalExportSpecification.internalValue = config.incrementalExportSpecification;
     this._timeouts.internalValue = config.timeouts;
   }
 
@@ -303,6 +460,22 @@ export class DynamodbTableExport extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get exportTimeInput() {
     return this._exportTime;
+  }
+
+  // export_type - computed: true, optional: true, required: false
+  private _exportType?: string; 
+  public get exportType() {
+    return this.getStringAttribute('export_type');
+  }
+  public set exportType(value: string) {
+    this._exportType = value;
+  }
+  public resetExportType() {
+    this._exportType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get exportTypeInput() {
+    return this._exportType;
   }
 
   // id - computed: true, optional: true, required: false
@@ -426,6 +599,22 @@ export class DynamodbTableExport extends cdktf.TerraformResource {
     return this._tableArn;
   }
 
+  // incremental_export_specification - computed: false, optional: true, required: false
+  private _incrementalExportSpecification = new DynamodbTableExportIncrementalExportSpecificationOutputReference(this, "incremental_export_specification");
+  public get incrementalExportSpecification() {
+    return this._incrementalExportSpecification;
+  }
+  public putIncrementalExportSpecification(value: DynamodbTableExportIncrementalExportSpecification) {
+    this._incrementalExportSpecification.internalValue = value;
+  }
+  public resetIncrementalExportSpecification() {
+    this._incrementalExportSpecification.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get incrementalExportSpecificationInput() {
+    return this._incrementalExportSpecification.internalValue;
+  }
+
   // timeouts - computed: false, optional: true, required: false
   private _timeouts = new DynamodbTableExportTimeoutsOutputReference(this, "timeouts");
   public get timeouts() {
@@ -450,6 +639,7 @@ export class DynamodbTableExport extends cdktf.TerraformResource {
     return {
       export_format: cdktf.stringToTerraform(this._exportFormat),
       export_time: cdktf.stringToTerraform(this._exportTime),
+      export_type: cdktf.stringToTerraform(this._exportType),
       id: cdktf.stringToTerraform(this._id),
       s3_bucket: cdktf.stringToTerraform(this._s3Bucket),
       s3_bucket_owner: cdktf.stringToTerraform(this._s3BucketOwner),
@@ -457,6 +647,7 @@ export class DynamodbTableExport extends cdktf.TerraformResource {
       s3_sse_algorithm: cdktf.stringToTerraform(this._s3SseAlgorithm),
       s3_sse_kms_key_id: cdktf.stringToTerraform(this._s3SseKmsKeyId),
       table_arn: cdktf.stringToTerraform(this._tableArn),
+      incremental_export_specification: dynamodbTableExportIncrementalExportSpecificationToTerraform(this._incrementalExportSpecification.internalValue),
       timeouts: dynamodbTableExportTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -471,6 +662,12 @@ export class DynamodbTableExport extends cdktf.TerraformResource {
       },
       export_time: {
         value: cdktf.stringToHclTerraform(this._exportTime),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      export_type: {
+        value: cdktf.stringToHclTerraform(this._exportType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -516,6 +713,12 @@ export class DynamodbTableExport extends cdktf.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      incremental_export_specification: {
+        value: dynamodbTableExportIncrementalExportSpecificationToHclTerraform(this._incrementalExportSpecification.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "DynamodbTableExportIncrementalExportSpecificationList",
       },
       timeouts: {
         value: dynamodbTableExportTimeoutsToHclTerraform(this._timeouts.internalValue),

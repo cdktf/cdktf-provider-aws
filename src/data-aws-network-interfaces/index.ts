@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/data-sources/network_interfaces
+// https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/data-sources/network_interfaces
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,36 +8,36 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsNetworkInterfacesConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/data-sources/network_interfaces#id DataAwsNetworkInterfaces#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/data-sources/network_interfaces#id DataAwsNetworkInterfaces#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/data-sources/network_interfaces#tags DataAwsNetworkInterfaces#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/data-sources/network_interfaces#tags DataAwsNetworkInterfaces#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
   * filter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/data-sources/network_interfaces#filter DataAwsNetworkInterfaces#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/data-sources/network_interfaces#filter DataAwsNetworkInterfaces#filter}
   */
   readonly filter?: DataAwsNetworkInterfacesFilter[] | cdktf.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/data-sources/network_interfaces#timeouts DataAwsNetworkInterfaces#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/data-sources/network_interfaces#timeouts DataAwsNetworkInterfaces#timeouts}
   */
   readonly timeouts?: DataAwsNetworkInterfacesTimeouts;
 }
 export interface DataAwsNetworkInterfacesFilter {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/data-sources/network_interfaces#name DataAwsNetworkInterfaces#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/data-sources/network_interfaces#name DataAwsNetworkInterfaces#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/data-sources/network_interfaces#values DataAwsNetworkInterfaces#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/data-sources/network_interfaces#values DataAwsNetworkInterfaces#values}
   */
   readonly values: string[];
 }
@@ -181,7 +176,7 @@ export class DataAwsNetworkInterfacesFilterList extends cdktf.ComplexList {
 }
 export interface DataAwsNetworkInterfacesTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/data-sources/network_interfaces#read DataAwsNetworkInterfaces#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/data-sources/network_interfaces#read DataAwsNetworkInterfaces#read}
   */
   readonly read?: string;
 }
@@ -275,7 +270,7 @@ export class DataAwsNetworkInterfacesTimeoutsOutputReference extends cdktf.Compl
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/data-sources/network_interfaces aws_network_interfaces}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/data-sources/network_interfaces aws_network_interfaces}
 */
 export class DataAwsNetworkInterfaces extends cdktf.TerraformDataSource {
 
@@ -291,7 +286,7 @@ export class DataAwsNetworkInterfaces extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataAwsNetworkInterfaces resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsNetworkInterfaces to import
-  * @param importFromId The id of the existing DataAwsNetworkInterfaces that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/data-sources/network_interfaces#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsNetworkInterfaces that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/data-sources/network_interfaces#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsNetworkInterfaces to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -303,7 +298,7 @@ export class DataAwsNetworkInterfaces extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/data-sources/network_interfaces aws_network_interfaces} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/data-sources/network_interfaces aws_network_interfaces} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -314,7 +309,7 @@ export class DataAwsNetworkInterfaces extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_network_interfaces',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.86.1',
+        providerVersion: '5.87.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

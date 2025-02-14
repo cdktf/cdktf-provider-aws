@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/ssm_parameter
+// https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/ssm_parameter
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,68 +8,76 @@ import * as cdktf from 'cdktf';
 
 export interface SsmParameterConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/ssm_parameter#allowed_pattern SsmParameter#allowed_pattern}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/ssm_parameter#allowed_pattern SsmParameter#allowed_pattern}
   */
   readonly allowedPattern?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/ssm_parameter#arn SsmParameter#arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/ssm_parameter#arn SsmParameter#arn}
   */
   readonly arn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/ssm_parameter#data_type SsmParameter#data_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/ssm_parameter#data_type SsmParameter#data_type}
   */
   readonly dataType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/ssm_parameter#description SsmParameter#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/ssm_parameter#description SsmParameter#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/ssm_parameter#id SsmParameter#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/ssm_parameter#id SsmParameter#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/ssm_parameter#insecure_value SsmParameter#insecure_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/ssm_parameter#insecure_value SsmParameter#insecure_value}
   */
   readonly insecureValue?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/ssm_parameter#key_id SsmParameter#key_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/ssm_parameter#key_id SsmParameter#key_id}
   */
   readonly keyId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/ssm_parameter#name SsmParameter#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/ssm_parameter#name SsmParameter#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/ssm_parameter#overwrite SsmParameter#overwrite}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/ssm_parameter#overwrite SsmParameter#overwrite}
   */
   readonly overwrite?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/ssm_parameter#tags SsmParameter#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/ssm_parameter#tags SsmParameter#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/ssm_parameter#tags_all SsmParameter#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/ssm_parameter#tags_all SsmParameter#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/ssm_parameter#tier SsmParameter#tier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/ssm_parameter#tier SsmParameter#tier}
   */
   readonly tier?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/ssm_parameter#type SsmParameter#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/ssm_parameter#type SsmParameter#type}
   */
   readonly type: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/ssm_parameter#value SsmParameter#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/ssm_parameter#value SsmParameter#value}
   */
   readonly value?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/ssm_parameter#value_wo SsmParameter#value_wo}
+  */
+  readonly valueWo?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/ssm_parameter#value_wo_version SsmParameter#value_wo_version}
+  */
+  readonly valueWoVersion?: number;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/ssm_parameter aws_ssm_parameter}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/ssm_parameter aws_ssm_parameter}
 */
 export class SsmParameter extends cdktf.TerraformResource {
 
@@ -90,7 +93,7 @@ export class SsmParameter extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a SsmParameter resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SsmParameter to import
-  * @param importFromId The id of the existing SsmParameter that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/ssm_parameter#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing SsmParameter that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/ssm_parameter#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SsmParameter to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -102,7 +105,7 @@ export class SsmParameter extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/ssm_parameter aws_ssm_parameter} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/ssm_parameter aws_ssm_parameter} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -113,7 +116,7 @@ export class SsmParameter extends cdktf.TerraformResource {
       terraformResourceType: 'aws_ssm_parameter',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.86.1',
+        providerVersion: '5.87.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -138,6 +141,8 @@ export class SsmParameter extends cdktf.TerraformResource {
     this._tier = config.tier;
     this._type = config.type;
     this._value = config.value;
+    this._valueWo = config.valueWo;
+    this._valueWoVersion = config.valueWoVersion;
   }
 
   // ==========
@@ -206,6 +211,11 @@ export class SsmParameter extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get descriptionInput() {
     return this._description;
+  }
+
+  // has_value_wo - computed: true, optional: false, required: false
+  public get hasValueWo() {
+    return this.getBooleanAttribute('has_value_wo');
   }
 
   // id - computed: true, optional: true, required: false
@@ -362,6 +372,38 @@ export class SsmParameter extends cdktf.TerraformResource {
     return this._value;
   }
 
+  // value_wo - computed: false, optional: true, required: false
+  private _valueWo?: string; 
+  public get valueWo() {
+    return this.getStringAttribute('value_wo');
+  }
+  public set valueWo(value: string) {
+    this._valueWo = value;
+  }
+  public resetValueWo() {
+    this._valueWo = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valueWoInput() {
+    return this._valueWo;
+  }
+
+  // value_wo_version - computed: false, optional: true, required: false
+  private _valueWoVersion?: number; 
+  public get valueWoVersion() {
+    return this.getNumberAttribute('value_wo_version');
+  }
+  public set valueWoVersion(value: number) {
+    this._valueWoVersion = value;
+  }
+  public resetValueWoVersion() {
+    this._valueWoVersion = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valueWoVersionInput() {
+    return this._valueWoVersion;
+  }
+
   // version - computed: true, optional: false, required: false
   public get version() {
     return this.getNumberAttribute('version');
@@ -387,6 +429,8 @@ export class SsmParameter extends cdktf.TerraformResource {
       tier: cdktf.stringToTerraform(this._tier),
       type: cdktf.stringToTerraform(this._type),
       value: cdktf.stringToTerraform(this._value),
+      value_wo: cdktf.stringToTerraform(this._valueWo),
+      value_wo_version: cdktf.numberToTerraform(this._valueWoVersion),
     };
   }
 
@@ -475,6 +519,18 @@ export class SsmParameter extends cdktf.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      value_wo: {
+        value: cdktf.stringToHclTerraform(this._valueWo),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      value_wo_version: {
+        value: cdktf.numberToHclTerraform(this._valueWoVersion),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
       },
     };
 

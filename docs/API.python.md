@@ -232,6 +232,7 @@ The following submodules are available:
 - [cloudtrailEventDataStore](./cloudtrailEventDataStore.python.md)
 - [cloudtrailOrganizationDelegatedAdminAccount](./cloudtrailOrganizationDelegatedAdminAccount.python.md)
 - [cloudwatchCompositeAlarm](./cloudwatchCompositeAlarm.python.md)
+- [cloudwatchContributorInsightRule](./cloudwatchContributorInsightRule.python.md)
 - [cloudwatchDashboard](./cloudwatchDashboard.python.md)
 - [cloudwatchEventApiDestination](./cloudwatchEventApiDestination.python.md)
 - [cloudwatchEventArchive](./cloudwatchEventArchive.python.md)

@@ -4,12 +4,12 @@
 
 ### CostoptimizationhubPreferences <a name="CostoptimizationhubPreferences" id="@cdktf/provider-aws.costoptimizationhubPreferences.CostoptimizationhubPreferences"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/costoptimizationhub_preferences aws_costoptimizationhub_preferences}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/costoptimizationhub_preferences aws_costoptimizationhub_preferences}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.costoptimizationhubPreferences.CostoptimizationhubPreferences.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/costoptimizationhubpreferences"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/costoptimizationhubpreferences"
 
 costoptimizationhubpreferences.NewCostoptimizationhubPreferences(scope Construct, id *string, config CostoptimizationhubPreferencesConfig) CostoptimizationhubPreferences
 ```
@@ -392,7 +392,7 @@ func ResetSavingsEstimationMode()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.costoptimizationhubPreferences.CostoptimizationhubPreferences.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/costoptimizationhubpreferences"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/costoptimizationhubpreferences"
 
 costoptimizationhubpreferences.CostoptimizationhubPreferences_IsConstruct(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.costoptimizationhubPreferences.CostoptimizationhubPreferences.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/costoptimizationhubpreferences"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/costoptimizationhubpreferences"
 
 costoptimizationhubpreferences.CostoptimizationhubPreferences_IsTerraformElement(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ costoptimizationhubpreferences.CostoptimizationhubPreferences_IsTerraformElement
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.costoptimizationhubPreferences.CostoptimizationhubPreferences.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/costoptimizationhubpreferences"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/costoptimizationhubpreferences"
 
 costoptimizationhubpreferences.CostoptimizationhubPreferences_IsTerraformResource(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ costoptimizationhubpreferences.CostoptimizationhubPreferences_IsTerraformResourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.costoptimizationhubPreferences.CostoptimizationhubPreferences.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/costoptimizationhubpreferences"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/costoptimizationhubpreferences"
 
 costoptimizationhubpreferences.CostoptimizationhubPreferences_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -481,7 +481,7 @@ The construct id used in the generated config for the CostoptimizationhubPrefere
 
 The id of the existing CostoptimizationhubPreferences that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/costoptimizationhub_preferences#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/costoptimizationhub_preferences#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -736,7 +736,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.costoptimizationhubPreferences.CostoptimizationhubPreferencesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/costoptimizationhubpreferences"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/costoptimizationhubpreferences"
 
 &costoptimizationhubpreferences.CostoptimizationhubPreferencesConfig {
 	Connection: interface{},
@@ -762,8 +762,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/costoptimizationhubprefer
 | <code><a href="#@cdktf/provider-aws.costoptimizationhubPreferences.CostoptimizationhubPreferencesConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.costoptimizationhubPreferences.CostoptimizationhubPreferencesConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.costoptimizationhubPreferences.CostoptimizationhubPreferencesConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.costoptimizationhubPreferences.CostoptimizationhubPreferencesConfig.property.memberAccountDiscountVisibility">MemberAccountDiscountVisibility</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/costoptimizationhub_preferences#member_account_discount_visibility CostoptimizationhubPreferences#member_account_discount_visibility}. |
-| <code><a href="#@cdktf/provider-aws.costoptimizationhubPreferences.CostoptimizationhubPreferencesConfig.property.savingsEstimationMode">SavingsEstimationMode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/costoptimizationhub_preferences#savings_estimation_mode CostoptimizationhubPreferences#savings_estimation_mode}. |
+| <code><a href="#@cdktf/provider-aws.costoptimizationhubPreferences.CostoptimizationhubPreferencesConfig.property.memberAccountDiscountVisibility">MemberAccountDiscountVisibility</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/costoptimizationhub_preferences#member_account_discount_visibility CostoptimizationhubPreferences#member_account_discount_visibility}. |
+| <code><a href="#@cdktf/provider-aws.costoptimizationhubPreferences.CostoptimizationhubPreferencesConfig.property.savingsEstimationMode">SavingsEstimationMode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/costoptimizationhub_preferences#savings_estimation_mode CostoptimizationhubPreferences#savings_estimation_mode}. |
 
 ---
 
@@ -845,7 +845,7 @@ MemberAccountDiscountVisibility *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/costoptimizationhub_preferences#member_account_discount_visibility CostoptimizationhubPreferences#member_account_discount_visibility}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/costoptimizationhub_preferences#member_account_discount_visibility CostoptimizationhubPreferences#member_account_discount_visibility}.
 
 ---
 
@@ -857,7 +857,7 @@ SavingsEstimationMode *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/costoptimizationhub_preferences#savings_estimation_mode CostoptimizationhubPreferences#savings_estimation_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/costoptimizationhub_preferences#savings_estimation_mode CostoptimizationhubPreferences#savings_estimation_mode}.
 
 ---
 

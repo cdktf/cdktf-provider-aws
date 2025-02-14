@@ -232,6 +232,7 @@ The following submodules are available:
 - [cloudtrailEventDataStore](./cloudtrailEventDataStore.csharp.md)
 - [cloudtrailOrganizationDelegatedAdminAccount](./cloudtrailOrganizationDelegatedAdminAccount.csharp.md)
 - [cloudwatchCompositeAlarm](./cloudwatchCompositeAlarm.csharp.md)
+- [cloudwatchContributorInsightRule](./cloudwatchContributorInsightRule.csharp.md)
 - [cloudwatchDashboard](./cloudwatchDashboard.csharp.md)
 - [cloudwatchEventApiDestination](./cloudwatchEventApiDestination.csharp.md)
 - [cloudwatchEventArchive](./cloudwatchEventArchive.csharp.md)

@@ -232,6 +232,7 @@ The following submodules are available:
 - [cloudtrailEventDataStore](./cloudtrailEventDataStore.java.md)
 - [cloudtrailOrganizationDelegatedAdminAccount](./cloudtrailOrganizationDelegatedAdminAccount.java.md)
 - [cloudwatchCompositeAlarm](./cloudwatchCompositeAlarm.java.md)
+- [cloudwatchContributorInsightRule](./cloudwatchContributorInsightRule.java.md)
 - [cloudwatchDashboard](./cloudwatchDashboard.java.md)
 - [cloudwatchEventApiDestination](./cloudwatchEventApiDestination.java.md)
 - [cloudwatchEventArchive](./cloudwatchEventArchive.java.md)

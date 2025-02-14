@@ -4,12 +4,12 @@
 
 ### DatazoneAssetType <a name="DatazoneAssetType" id="@cdktf/provider-aws.datazoneAssetType.DatazoneAssetType"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/datazone_asset_type aws_datazone_asset_type}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/datazone_asset_type aws_datazone_asset_type}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.datazoneAssetType.DatazoneAssetType.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/datazoneassettype"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/datazoneassettype"
 
 datazoneassettype.NewDatazoneAssetType(scope Construct, id *string, config DatazoneAssetTypeConfig) DatazoneAssetType
 ```
@@ -425,7 +425,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.datazoneAssetType.DatazoneAssetType.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/datazoneassettype"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/datazoneassettype"
 
 datazoneassettype.DatazoneAssetType_IsConstruct(x interface{}) *bool
 ```
@@ -457,7 +457,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.datazoneAssetType.DatazoneAssetType.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/datazoneassettype"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/datazoneassettype"
 
 datazoneassettype.DatazoneAssetType_IsTerraformElement(x interface{}) *bool
 ```
@@ -471,7 +471,7 @@ datazoneassettype.DatazoneAssetType_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.datazoneAssetType.DatazoneAssetType.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/datazoneassettype"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/datazoneassettype"
 
 datazoneassettype.DatazoneAssetType_IsTerraformResource(x interface{}) *bool
 ```
@@ -485,7 +485,7 @@ datazoneassettype.DatazoneAssetType_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.datazoneAssetType.DatazoneAssetType.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/datazoneassettype"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/datazoneassettype"
 
 datazoneassettype.DatazoneAssetType_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -514,7 +514,7 @@ The construct id used in the generated config for the DatazoneAssetType to impor
 
 The id of the existing DatazoneAssetType that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/datazone_asset_type#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/datazone_asset_type#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -879,7 +879,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.datazoneAssetType.DatazoneAssetTypeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/datazoneassettype"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/datazoneassettype"
 
 &datazoneassettype.DatazoneAssetTypeConfig {
 	Connection: interface{},
@@ -894,7 +894,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/datazoneassettype"
 	OwningProjectIdentifier: *string,
 	Description: *string,
 	FormsInput: interface{},
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v19.datazoneAssetType.DatazoneAssetTypeTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.datazoneAssetType.DatazoneAssetTypeTimeouts,
 }
 ```
 
@@ -909,10 +909,10 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/datazoneassettype"
 | <code><a href="#@cdktf/provider-aws.datazoneAssetType.DatazoneAssetTypeConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.datazoneAssetType.DatazoneAssetTypeConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.datazoneAssetType.DatazoneAssetTypeConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.datazoneAssetType.DatazoneAssetTypeConfig.property.domainIdentifier">DomainIdentifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/datazone_asset_type#domain_identifier DatazoneAssetType#domain_identifier}. |
-| <code><a href="#@cdktf/provider-aws.datazoneAssetType.DatazoneAssetTypeConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/datazone_asset_type#name DatazoneAssetType#name}. |
-| <code><a href="#@cdktf/provider-aws.datazoneAssetType.DatazoneAssetTypeConfig.property.owningProjectIdentifier">OwningProjectIdentifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/datazone_asset_type#owning_project_identifier DatazoneAssetType#owning_project_identifier}. |
-| <code><a href="#@cdktf/provider-aws.datazoneAssetType.DatazoneAssetTypeConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/datazone_asset_type#description DatazoneAssetType#description}. |
+| <code><a href="#@cdktf/provider-aws.datazoneAssetType.DatazoneAssetTypeConfig.property.domainIdentifier">DomainIdentifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/datazone_asset_type#domain_identifier DatazoneAssetType#domain_identifier}. |
+| <code><a href="#@cdktf/provider-aws.datazoneAssetType.DatazoneAssetTypeConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/datazone_asset_type#name DatazoneAssetType#name}. |
+| <code><a href="#@cdktf/provider-aws.datazoneAssetType.DatazoneAssetTypeConfig.property.owningProjectIdentifier">OwningProjectIdentifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/datazone_asset_type#owning_project_identifier DatazoneAssetType#owning_project_identifier}. |
+| <code><a href="#@cdktf/provider-aws.datazoneAssetType.DatazoneAssetTypeConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/datazone_asset_type#description DatazoneAssetType#description}. |
 | <code><a href="#@cdktf/provider-aws.datazoneAssetType.DatazoneAssetTypeConfig.property.formsInput">FormsInput</a></code> | <code>interface{}</code> | forms_input block. |
 | <code><a href="#@cdktf/provider-aws.datazoneAssetType.DatazoneAssetTypeConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-aws.datazoneAssetType.DatazoneAssetTypeTimeouts">DatazoneAssetTypeTimeouts</a></code> | timeouts block. |
 
@@ -996,7 +996,7 @@ DomainIdentifier *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/datazone_asset_type#domain_identifier DatazoneAssetType#domain_identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/datazone_asset_type#domain_identifier DatazoneAssetType#domain_identifier}.
 
 ---
 
@@ -1008,7 +1008,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/datazone_asset_type#name DatazoneAssetType#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/datazone_asset_type#name DatazoneAssetType#name}.
 
 ---
 
@@ -1020,7 +1020,7 @@ OwningProjectIdentifier *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/datazone_asset_type#owning_project_identifier DatazoneAssetType#owning_project_identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/datazone_asset_type#owning_project_identifier DatazoneAssetType#owning_project_identifier}.
 
 ---
 
@@ -1032,7 +1032,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/datazone_asset_type#description DatazoneAssetType#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/datazone_asset_type#description DatazoneAssetType#description}.
 
 ---
 
@@ -1046,7 +1046,7 @@ FormsInput interface{}
 
 forms_input block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/datazone_asset_type#forms_input DatazoneAssetType#forms_input}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/datazone_asset_type#forms_input DatazoneAssetType#forms_input}
 
 ---
 
@@ -1060,7 +1060,7 @@ Timeouts DatazoneAssetTypeTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/datazone_asset_type#timeouts DatazoneAssetType#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/datazone_asset_type#timeouts DatazoneAssetType#timeouts}
 
 ---
 
@@ -1069,7 +1069,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.datazoneAssetType.DatazoneAssetTypeFormsInput.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/datazoneassettype"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/datazoneassettype"
 
 &datazoneassettype.DatazoneAssetTypeFormsInput {
 	MapBlockKey: *string,
@@ -1083,10 +1083,10 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/datazoneassettype"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.datazoneAssetType.DatazoneAssetTypeFormsInput.property.mapBlockKey">MapBlockKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/datazone_asset_type#map_block_key DatazoneAssetType#map_block_key}. |
-| <code><a href="#@cdktf/provider-aws.datazoneAssetType.DatazoneAssetTypeFormsInput.property.typeIdentifier">TypeIdentifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/datazone_asset_type#type_identifier DatazoneAssetType#type_identifier}. |
-| <code><a href="#@cdktf/provider-aws.datazoneAssetType.DatazoneAssetTypeFormsInput.property.typeRevision">TypeRevision</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/datazone_asset_type#type_revision DatazoneAssetType#type_revision}. |
-| <code><a href="#@cdktf/provider-aws.datazoneAssetType.DatazoneAssetTypeFormsInput.property.required">Required</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/datazone_asset_type#required DatazoneAssetType#required}. |
+| <code><a href="#@cdktf/provider-aws.datazoneAssetType.DatazoneAssetTypeFormsInput.property.mapBlockKey">MapBlockKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/datazone_asset_type#map_block_key DatazoneAssetType#map_block_key}. |
+| <code><a href="#@cdktf/provider-aws.datazoneAssetType.DatazoneAssetTypeFormsInput.property.typeIdentifier">TypeIdentifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/datazone_asset_type#type_identifier DatazoneAssetType#type_identifier}. |
+| <code><a href="#@cdktf/provider-aws.datazoneAssetType.DatazoneAssetTypeFormsInput.property.typeRevision">TypeRevision</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/datazone_asset_type#type_revision DatazoneAssetType#type_revision}. |
+| <code><a href="#@cdktf/provider-aws.datazoneAssetType.DatazoneAssetTypeFormsInput.property.required">Required</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/datazone_asset_type#required DatazoneAssetType#required}. |
 
 ---
 
@@ -1098,7 +1098,7 @@ MapBlockKey *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/datazone_asset_type#map_block_key DatazoneAssetType#map_block_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/datazone_asset_type#map_block_key DatazoneAssetType#map_block_key}.
 
 ---
 
@@ -1110,7 +1110,7 @@ TypeIdentifier *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/datazone_asset_type#type_identifier DatazoneAssetType#type_identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/datazone_asset_type#type_identifier DatazoneAssetType#type_identifier}.
 
 ---
 
@@ -1122,7 +1122,7 @@ TypeRevision *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/datazone_asset_type#type_revision DatazoneAssetType#type_revision}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/datazone_asset_type#type_revision DatazoneAssetType#type_revision}.
 
 ---
 
@@ -1134,7 +1134,7 @@ Required interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/datazone_asset_type#required DatazoneAssetType#required}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/datazone_asset_type#required DatazoneAssetType#required}.
 
 ---
 
@@ -1143,7 +1143,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.datazoneAssetType.DatazoneAssetTypeTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/datazoneassettype"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/datazoneassettype"
 
 &datazoneassettype.DatazoneAssetTypeTimeouts {
 	Create: *string,
@@ -1168,7 +1168,7 @@ Create *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/datazone_asset_type#create DatazoneAssetType#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/datazone_asset_type#create DatazoneAssetType#create}
 
 ---
 
@@ -1179,7 +1179,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.datazoneAssetType.DatazoneAssetTypeFormsInputList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/datazoneassettype"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/datazoneassettype"
 
 datazoneassettype.NewDatazoneAssetTypeFormsInputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DatazoneAssetTypeFormsInputList
 ```
@@ -1339,7 +1339,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.datazoneAssetType.DatazoneAssetTypeFormsInputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/datazoneassettype"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/datazoneassettype"
 
 datazoneassettype.NewDatazoneAssetTypeFormsInputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DatazoneAssetTypeFormsInputOutputReference
 ```
@@ -1701,7 +1701,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.datazoneAssetType.DatazoneAssetTypeTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/datazoneassettype"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/datazoneassettype"
 
 datazoneassettype.NewDatazoneAssetTypeTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DatazoneAssetTypeTimeoutsOutputReference
 ```

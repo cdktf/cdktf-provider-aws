@@ -1,3 +1,3 @@
 # `aws_route53domains_delegation_signer_record`
 
-Refer to the Terraform Registry for docs: [`aws_route53domains_delegation_signer_record`](https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/route53domains_delegation_signer_record).
+Refer to the Terraform Registry for docs: [`aws_route53domains_delegation_signer_record`](https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/route53domains_delegation_signer_record).

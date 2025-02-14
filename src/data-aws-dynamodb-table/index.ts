@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/data-sources/dynamodb_table
+// https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/data-sources/dynamodb_table
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,24 +8,24 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsDynamodbTableConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/data-sources/dynamodb_table#id DataAwsDynamodbTable#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/data-sources/dynamodb_table#id DataAwsDynamodbTable#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/data-sources/dynamodb_table#name DataAwsDynamodbTable#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/data-sources/dynamodb_table#name DataAwsDynamodbTable#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/data-sources/dynamodb_table#tags DataAwsDynamodbTable#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/data-sources/dynamodb_table#tags DataAwsDynamodbTable#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
   * server_side_encryption block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/data-sources/dynamodb_table#server_side_encryption DataAwsDynamodbTable#server_side_encryption}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/data-sources/dynamodb_table#server_side_encryption DataAwsDynamodbTable#server_side_encryption}
   */
   readonly serverSideEncryption?: DataAwsDynamodbTableServerSideEncryption;
 }
@@ -114,6 +109,86 @@ export class DataAwsDynamodbTableAttributeList extends cdktf.ComplexList {
     return new DataAwsDynamodbTableAttributeOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface DataAwsDynamodbTableGlobalSecondaryIndexOnDemandThroughput {
+}
+
+export function dataAwsDynamodbTableGlobalSecondaryIndexOnDemandThroughputToTerraform(struct?: DataAwsDynamodbTableGlobalSecondaryIndexOnDemandThroughput): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataAwsDynamodbTableGlobalSecondaryIndexOnDemandThroughputToHclTerraform(struct?: DataAwsDynamodbTableGlobalSecondaryIndexOnDemandThroughput): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataAwsDynamodbTableGlobalSecondaryIndexOnDemandThroughputOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsDynamodbTableGlobalSecondaryIndexOnDemandThroughput | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsDynamodbTableGlobalSecondaryIndexOnDemandThroughput | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // max_read_request_units - computed: true, optional: false, required: false
+  public get maxReadRequestUnits() {
+    return this.getNumberAttribute('max_read_request_units');
+  }
+
+  // max_write_request_units - computed: true, optional: false, required: false
+  public get maxWriteRequestUnits() {
+    return this.getNumberAttribute('max_write_request_units');
+  }
+}
+
+export class DataAwsDynamodbTableGlobalSecondaryIndexOnDemandThroughputList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsDynamodbTableGlobalSecondaryIndexOnDemandThroughputOutputReference {
+    return new DataAwsDynamodbTableGlobalSecondaryIndexOnDemandThroughputOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface DataAwsDynamodbTableGlobalSecondaryIndex {
 }
 
@@ -178,6 +253,12 @@ export class DataAwsDynamodbTableGlobalSecondaryIndexOutputReference extends cdk
   // non_key_attributes - computed: true, optional: false, required: false
   public get nonKeyAttributes() {
     return this.getListAttribute('non_key_attributes');
+  }
+
+  // on_demand_throughput - computed: true, optional: false, required: false
+  private _onDemandThroughput = new DataAwsDynamodbTableGlobalSecondaryIndexOnDemandThroughputList(this, "on_demand_throughput", false);
+  public get onDemandThroughput() {
+    return this._onDemandThroughput;
   }
 
   // projection_type - computed: true, optional: false, required: false
@@ -307,6 +388,86 @@ export class DataAwsDynamodbTableLocalSecondaryIndexList extends cdktf.ComplexLi
   */
   public get(index: number): DataAwsDynamodbTableLocalSecondaryIndexOutputReference {
     return new DataAwsDynamodbTableLocalSecondaryIndexOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataAwsDynamodbTableOnDemandThroughput {
+}
+
+export function dataAwsDynamodbTableOnDemandThroughputToTerraform(struct?: DataAwsDynamodbTableOnDemandThroughput): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataAwsDynamodbTableOnDemandThroughputToHclTerraform(struct?: DataAwsDynamodbTableOnDemandThroughput): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataAwsDynamodbTableOnDemandThroughputOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsDynamodbTableOnDemandThroughput | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsDynamodbTableOnDemandThroughput | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // max_read_request_units - computed: true, optional: false, required: false
+  public get maxReadRequestUnits() {
+    return this.getNumberAttribute('max_read_request_units');
+  }
+
+  // max_write_request_units - computed: true, optional: false, required: false
+  public get maxWriteRequestUnits() {
+    return this.getNumberAttribute('max_write_request_units');
+  }
+}
+
+export class DataAwsDynamodbTableOnDemandThroughputList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsDynamodbTableOnDemandThroughputOutputReference {
+    return new DataAwsDynamodbTableOnDemandThroughputOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 export interface DataAwsDynamodbTablePointInTimeRecovery {
@@ -605,7 +766,7 @@ export class DataAwsDynamodbTableServerSideEncryptionOutputReference extends cdk
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/data-sources/dynamodb_table aws_dynamodb_table}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/data-sources/dynamodb_table aws_dynamodb_table}
 */
 export class DataAwsDynamodbTable extends cdktf.TerraformDataSource {
 
@@ -621,7 +782,7 @@ export class DataAwsDynamodbTable extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataAwsDynamodbTable resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsDynamodbTable to import
-  * @param importFromId The id of the existing DataAwsDynamodbTable that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/data-sources/dynamodb_table#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsDynamodbTable that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/data-sources/dynamodb_table#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsDynamodbTable to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -633,7 +794,7 @@ export class DataAwsDynamodbTable extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/data-sources/dynamodb_table aws_dynamodb_table} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/data-sources/dynamodb_table aws_dynamodb_table} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -644,7 +805,7 @@ export class DataAwsDynamodbTable extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_dynamodb_table',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.86.1',
+        providerVersion: '5.87.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -730,6 +891,12 @@ export class DataAwsDynamodbTable extends cdktf.TerraformDataSource {
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
     return this._name;
+  }
+
+  // on_demand_throughput - computed: true, optional: false, required: false
+  private _onDemandThroughput = new DataAwsDynamodbTableOnDemandThroughputList(this, "on_demand_throughput", false);
+  public get onDemandThroughput() {
+    return this._onDemandThroughput;
   }
 
   // point_in_time_recovery - computed: true, optional: false, required: false
