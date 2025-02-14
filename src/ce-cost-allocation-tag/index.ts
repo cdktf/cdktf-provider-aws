@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/ce_cost_allocation_tag
+// https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/ce_cost_allocation_tag
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,24 +13,24 @@ import * as cdktf from 'cdktf';
 
 export interface CeCostAllocationTagConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/ce_cost_allocation_tag#id CeCostAllocationTag#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/ce_cost_allocation_tag#id CeCostAllocationTag#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/ce_cost_allocation_tag#status CeCostAllocationTag#status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/ce_cost_allocation_tag#status CeCostAllocationTag#status}
   */
   readonly status: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/ce_cost_allocation_tag#tag_key CeCostAllocationTag#tag_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/ce_cost_allocation_tag#tag_key CeCostAllocationTag#tag_key}
   */
   readonly tagKey: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/ce_cost_allocation_tag aws_ce_cost_allocation_tag}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/ce_cost_allocation_tag aws_ce_cost_allocation_tag}
 */
 export class CeCostAllocationTag extends cdktf.TerraformResource {
 
@@ -46,7 +46,7 @@ export class CeCostAllocationTag extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a CeCostAllocationTag resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CeCostAllocationTag to import
-  * @param importFromId The id of the existing CeCostAllocationTag that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/ce_cost_allocation_tag#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing CeCostAllocationTag that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/ce_cost_allocation_tag#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CeCostAllocationTag to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -58,7 +58,7 @@ export class CeCostAllocationTag extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/ce_cost_allocation_tag aws_ce_cost_allocation_tag} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/ce_cost_allocation_tag aws_ce_cost_allocation_tag} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -69,7 +69,7 @@ export class CeCostAllocationTag extends cdktf.TerraformResource {
       terraformResourceType: 'aws_ce_cost_allocation_tag',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.86.1',
+        providerVersion: '5.87.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

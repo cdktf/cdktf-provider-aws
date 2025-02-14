@@ -232,6 +232,7 @@ export * as cloudtrail from './cloudtrail';
 export * as cloudtrailEventDataStore from './cloudtrail-event-data-store';
 export * as cloudtrailOrganizationDelegatedAdminAccount from './cloudtrail-organization-delegated-admin-account';
 export * as cloudwatchCompositeAlarm from './cloudwatch-composite-alarm';
+export * as cloudwatchContributorInsightRule from './cloudwatch-contributor-insight-rule';
 export * as cloudwatchDashboard from './cloudwatch-dashboard';
 export * as cloudwatchEventApiDestination from './cloudwatch-event-api-destination';
 export * as cloudwatchEventArchive from './cloudwatch-event-archive';

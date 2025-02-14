@@ -1,3 +1,3 @@
 # `aws_eks_identity_provider_config`
 
-Refer to the Terraform Registry for docs: [`aws_eks_identity_provider_config`](https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/eks_identity_provider_config).
+Refer to the Terraform Registry for docs: [`aws_eks_identity_provider_config`](https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/eks_identity_provider_config).

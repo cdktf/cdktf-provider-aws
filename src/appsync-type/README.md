@@ -1,3 +1,3 @@
 # `aws_appsync_type`
 
-Refer to the Terraform Registry for docs: [`aws_appsync_type`](https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/appsync_type).
+Refer to the Terraform Registry for docs: [`aws_appsync_type`](https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/appsync_type).

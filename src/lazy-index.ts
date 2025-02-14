@@ -232,6 +232,7 @@ Object.defineProperty(exports, 'cloudtrail', { get: function () { return require
 Object.defineProperty(exports, 'cloudtrailEventDataStore', { get: function () { return require('./cloudtrail-event-data-store'); } });
 Object.defineProperty(exports, 'cloudtrailOrganizationDelegatedAdminAccount', { get: function () { return require('./cloudtrail-organization-delegated-admin-account'); } });
 Object.defineProperty(exports, 'cloudwatchCompositeAlarm', { get: function () { return require('./cloudwatch-composite-alarm'); } });
+Object.defineProperty(exports, 'cloudwatchContributorInsightRule', { get: function () { return require('./cloudwatch-contributor-insight-rule'); } });
 Object.defineProperty(exports, 'cloudwatchDashboard', { get: function () { return require('./cloudwatch-dashboard'); } });
 Object.defineProperty(exports, 'cloudwatchEventApiDestination', { get: function () { return require('./cloudwatch-event-api-destination'); } });
 Object.defineProperty(exports, 'cloudwatchEventArchive', { get: function () { return require('./cloudwatch-event-archive'); } });

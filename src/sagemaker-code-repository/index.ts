@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/sagemaker_code_repository
+// https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/sagemaker_code_repository
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,42 +13,42 @@ import * as cdktf from 'cdktf';
 
 export interface SagemakerCodeRepositoryConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/sagemaker_code_repository#code_repository_name SagemakerCodeRepository#code_repository_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/sagemaker_code_repository#code_repository_name SagemakerCodeRepository#code_repository_name}
   */
   readonly codeRepositoryName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/sagemaker_code_repository#id SagemakerCodeRepository#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/sagemaker_code_repository#id SagemakerCodeRepository#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/sagemaker_code_repository#tags SagemakerCodeRepository#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/sagemaker_code_repository#tags SagemakerCodeRepository#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/sagemaker_code_repository#tags_all SagemakerCodeRepository#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/sagemaker_code_repository#tags_all SagemakerCodeRepository#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
   * git_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/sagemaker_code_repository#git_config SagemakerCodeRepository#git_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/sagemaker_code_repository#git_config SagemakerCodeRepository#git_config}
   */
   readonly gitConfig: SagemakerCodeRepositoryGitConfig;
 }
 export interface SagemakerCodeRepositoryGitConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/sagemaker_code_repository#branch SagemakerCodeRepository#branch}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/sagemaker_code_repository#branch SagemakerCodeRepository#branch}
   */
   readonly branch?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/sagemaker_code_repository#repository_url SagemakerCodeRepository#repository_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/sagemaker_code_repository#repository_url SagemakerCodeRepository#repository_url}
   */
   readonly repositoryUrl: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/sagemaker_code_repository#secret_arn SagemakerCodeRepository#secret_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/sagemaker_code_repository#secret_arn SagemakerCodeRepository#secret_arn}
   */
   readonly secretArn?: string;
 }
@@ -187,7 +187,7 @@ export class SagemakerCodeRepositoryGitConfigOutputReference extends cdktf.Compl
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/sagemaker_code_repository aws_sagemaker_code_repository}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/sagemaker_code_repository aws_sagemaker_code_repository}
 */
 export class SagemakerCodeRepository extends cdktf.TerraformResource {
 
@@ -203,7 +203,7 @@ export class SagemakerCodeRepository extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a SagemakerCodeRepository resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SagemakerCodeRepository to import
-  * @param importFromId The id of the existing SagemakerCodeRepository that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/sagemaker_code_repository#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing SagemakerCodeRepository that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/sagemaker_code_repository#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SagemakerCodeRepository to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -215,7 +215,7 @@ export class SagemakerCodeRepository extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/sagemaker_code_repository aws_sagemaker_code_repository} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/sagemaker_code_repository aws_sagemaker_code_repository} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -226,7 +226,7 @@ export class SagemakerCodeRepository extends cdktf.TerraformResource {
       terraformResourceType: 'aws_sagemaker_code_repository',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.86.1',
+        providerVersion: '5.87.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
