@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.datasyncLocationFsxLustreFileSystem.DatasyncLocationFsxLustreFileSystem.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/datasynclocationfsxlustrefilesystem"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/datasynclocationfsxlustrefilesystem"
 
 datasynclocationfsxlustrefilesystem.NewDatasyncLocationFsxLustreFileSystem(scope Construct, id *string, config DatasyncLocationFsxLustreFileSystemConfig) DatasyncLocationFsxLustreFileSystem
 ```
@@ -406,7 +406,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.datasyncLocationFsxLustreFileSystem.DatasyncLocationFsxLustreFileSystem.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/datasynclocationfsxlustrefilesystem"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/datasynclocationfsxlustrefilesystem"
 
 datasynclocationfsxlustrefilesystem.DatasyncLocationFsxLustreFileSystem_IsConstruct(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.datasyncLocationFsxLustreFileSystem.DatasyncLocationFsxLustreFileSystem.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/datasynclocationfsxlustrefilesystem"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/datasynclocationfsxlustrefilesystem"
 
 datasynclocationfsxlustrefilesystem.DatasyncLocationFsxLustreFileSystem_IsTerraformElement(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ datasynclocationfsxlustrefilesystem.DatasyncLocationFsxLustreFileSystem_IsTerraf
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.datasyncLocationFsxLustreFileSystem.DatasyncLocationFsxLustreFileSystem.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/datasynclocationfsxlustrefilesystem"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/datasynclocationfsxlustrefilesystem"
 
 datasynclocationfsxlustrefilesystem.DatasyncLocationFsxLustreFileSystem_IsTerraformResource(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ datasynclocationfsxlustrefilesystem.DatasyncLocationFsxLustreFileSystem_IsTerraf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.datasyncLocationFsxLustreFileSystem.DatasyncLocationFsxLustreFileSystem.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/datasynclocationfsxlustrefilesystem"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/datasynclocationfsxlustrefilesystem"
 
 datasynclocationfsxlustrefilesystem.DatasyncLocationFsxLustreFileSystem_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -860,7 +860,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.datasyncLocationFsxLustreFileSystem.DatasyncLocationFsxLustreFileSystemConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/datasynclocationfsxlustrefilesystem"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/datasynclocationfsxlustrefilesystem"
 
 &datasynclocationfsxlustrefilesystem.DatasyncLocationFsxLustreFileSystemConfig {
 	Connection: interface{},
