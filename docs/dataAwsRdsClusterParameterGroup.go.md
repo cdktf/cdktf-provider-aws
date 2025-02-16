@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsRdsClusterParameterGroup.DataAwsRdsClusterParameterGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsrdsclusterparametergroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsrdsclusterparametergroup"
 
 dataawsrdsclusterparametergroup.NewDataAwsRdsClusterParameterGroup(scope Construct, id *string, config DataAwsRdsClusterParameterGroupConfig) DataAwsRdsClusterParameterGroup
 ```
@@ -276,7 +276,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsRdsClusterParameterGroup.DataAwsRdsClusterParameterGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsrdsclusterparametergroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsrdsclusterparametergroup"
 
 dataawsrdsclusterparametergroup.DataAwsRdsClusterParameterGroup_IsConstruct(x interface{}) *bool
 ```
@@ -308,7 +308,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsRdsClusterParameterGroup.DataAwsRdsClusterParameterGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsrdsclusterparametergroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsrdsclusterparametergroup"
 
 dataawsrdsclusterparametergroup.DataAwsRdsClusterParameterGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ dataawsrdsclusterparametergroup.DataAwsRdsClusterParameterGroup_IsTerraformEleme
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsRdsClusterParameterGroup.DataAwsRdsClusterParameterGroup.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsrdsclusterparametergroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsrdsclusterparametergroup"
 
 dataawsrdsclusterparametergroup.DataAwsRdsClusterParameterGroup_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ dataawsrdsclusterparametergroup.DataAwsRdsClusterParameterGroup_IsTerraformDataS
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsRdsClusterParameterGroup.DataAwsRdsClusterParameterGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsrdsclusterparametergroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsrdsclusterparametergroup"
 
 dataawsrdsclusterparametergroup.DataAwsRdsClusterParameterGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -598,7 +598,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsRdsClusterParameterGroup.DataAwsRdsClusterParameterGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsrdsclusterparametergroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsrdsclusterparametergroup"
 
 &dataawsrdsclusterparametergroup.DataAwsRdsClusterParameterGroupConfig {
 	Connection: interface{},

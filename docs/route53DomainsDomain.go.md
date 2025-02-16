@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.route53DomainsDomain.Route53DomainsDomain.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/route53domainsdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/route53domainsdomain"
 
 route53domainsdomain.NewRoute53DomainsDomain(scope Construct, id *string, config Route53DomainsDomainConfig) Route53DomainsDomain
 ```
@@ -554,7 +554,7 @@ func ResetTransferLock()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.route53DomainsDomain.Route53DomainsDomain.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/route53domainsdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/route53domainsdomain"
 
 route53domainsdomain.Route53DomainsDomain_IsConstruct(x interface{}) *bool
 ```
@@ -586,7 +586,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.route53DomainsDomain.Route53DomainsDomain.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/route53domainsdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/route53domainsdomain"
 
 route53domainsdomain.Route53DomainsDomain_IsTerraformElement(x interface{}) *bool
 ```
@@ -600,7 +600,7 @@ route53domainsdomain.Route53DomainsDomain_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.route53DomainsDomain.Route53DomainsDomain.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/route53domainsdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/route53domainsdomain"
 
 route53domainsdomain.Route53DomainsDomain_IsTerraformResource(x interface{}) *bool
 ```
@@ -614,7 +614,7 @@ route53domainsdomain.Route53DomainsDomain_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.route53DomainsDomain.Route53DomainsDomain.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/route53domainsdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/route53domainsdomain"
 
 route53domainsdomain.Route53DomainsDomain_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1294,7 +1294,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.route53DomainsDomain.Route53DomainsDomainAdminContact.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/route53domainsdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/route53domainsdomain"
 
 &route53domainsdomain.Route53DomainsDomainAdminContact {
 	AddressLine1: *string,
@@ -1510,7 +1510,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.route53DomainsDomain.Route53DomainsDomainAdminContactExtraParam.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/route53domainsdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/route53domainsdomain"
 
 &route53domainsdomain.Route53DomainsDomainAdminContactExtraParam {
 	Name: *string,
@@ -1556,7 +1556,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.route53DomainsDomain.Route53DomainsDomainBillingContact.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/route53domainsdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/route53domainsdomain"
 
 &route53domainsdomain.Route53DomainsDomainBillingContact {
 	AddressLine1: *string,
@@ -1770,7 +1770,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.route53DomainsDomain.Route53DomainsDomainBillingContactExtraParam.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/route53domainsdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/route53domainsdomain"
 
 &route53domainsdomain.Route53DomainsDomainBillingContactExtraParam {
 	Name: *string,
@@ -1816,7 +1816,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.route53DomainsDomain.Route53DomainsDomainConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/route53domainsdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/route53domainsdomain"
 
 &route53domainsdomain.Route53DomainsDomainConfig {
 	Connection: interface{},
@@ -1839,7 +1839,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/route53domainsdomain"
 	Tags: *map[string]*string,
 	TechContact: interface{},
 	TechPrivacy: interface{},
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.route53DomainsDomain.Route53DomainsDomainTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v19.route53DomainsDomain.Route53DomainsDomainTimeouts,
 	TransferLock: interface{},
 }
 ```
@@ -2136,7 +2136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.route53DomainsDomain.Route53DomainsDomainNameServer.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/route53domainsdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/route53domainsdomain"
 
 &route53domainsdomain.Route53DomainsDomainNameServer {
 	GlueIps: *[]*string,
@@ -2182,7 +2182,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.route53DomainsDomain.Route53DomainsDomainRegistrantContact.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/route53domainsdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/route53domainsdomain"
 
 &route53domainsdomain.Route53DomainsDomainRegistrantContact {
 	AddressLine1: *string,
@@ -2398,7 +2398,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.route53DomainsDomain.Route53DomainsDomainRegistrantContactExtraParam.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/route53domainsdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/route53domainsdomain"
 
 &route53domainsdomain.Route53DomainsDomainRegistrantContactExtraParam {
 	Name: *string,
@@ -2444,7 +2444,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.route53DomainsDomain.Route53DomainsDomainTechContact.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/route53domainsdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/route53domainsdomain"
 
 &route53domainsdomain.Route53DomainsDomainTechContact {
 	AddressLine1: *string,
@@ -2660,7 +2660,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.route53DomainsDomain.Route53DomainsDomainTechContactExtraParam.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/route53domainsdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/route53domainsdomain"
 
 &route53domainsdomain.Route53DomainsDomainTechContactExtraParam {
 	Name: *string,
@@ -2706,7 +2706,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.route53DomainsDomain.Route53DomainsDomainTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/route53domainsdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/route53domainsdomain"
 
 &route53domainsdomain.Route53DomainsDomainTimeouts {
 	Create: *string,
@@ -2774,7 +2774,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.route53DomainsDomain.Route53DomainsDomainAdminContactExtraParamList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/route53domainsdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/route53domainsdomain"
 
 route53domainsdomain.NewRoute53DomainsDomainAdminContactExtraParamList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Route53DomainsDomainAdminContactExtraParamList
 ```
@@ -2934,7 +2934,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.route53DomainsDomain.Route53DomainsDomainAdminContactExtraParamOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/route53domainsdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/route53domainsdomain"
 
 route53domainsdomain.NewRoute53DomainsDomainAdminContactExtraParamOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Route53DomainsDomainAdminContactExtraParamOutputReference
 ```
@@ -3245,7 +3245,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.route53DomainsDomain.Route53DomainsDomainAdminContactList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/route53domainsdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/route53domainsdomain"
 
 route53domainsdomain.NewRoute53DomainsDomainAdminContactList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Route53DomainsDomainAdminContactList
 ```
@@ -3405,7 +3405,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.route53DomainsDomain.Route53DomainsDomainAdminContactOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/route53domainsdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/route53domainsdomain"
 
 route53domainsdomain.NewRoute53DomainsDomainAdminContactOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Route53DomainsDomainAdminContactOutputReference
 ```
@@ -4091,7 +4091,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.route53DomainsDomain.Route53DomainsDomainBillingContactExtraParamList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/route53domainsdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/route53domainsdomain"
 
 route53domainsdomain.NewRoute53DomainsDomainBillingContactExtraParamList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Route53DomainsDomainBillingContactExtraParamList
 ```
@@ -4251,7 +4251,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.route53DomainsDomain.Route53DomainsDomainBillingContactExtraParamOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/route53domainsdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/route53domainsdomain"
 
 route53domainsdomain.NewRoute53DomainsDomainBillingContactExtraParamOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Route53DomainsDomainBillingContactExtraParamOutputReference
 ```
@@ -4576,7 +4576,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.route53DomainsDomain.Route53DomainsDomainBillingContactList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/route53domainsdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/route53domainsdomain"
 
 route53domainsdomain.NewRoute53DomainsDomainBillingContactList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Route53DomainsDomainBillingContactList
 ```
@@ -4736,7 +4736,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.route53DomainsDomain.Route53DomainsDomainBillingContactOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/route53domainsdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/route53domainsdomain"
 
 route53domainsdomain.NewRoute53DomainsDomainBillingContactOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Route53DomainsDomainBillingContactOutputReference
 ```
@@ -5422,7 +5422,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.route53DomainsDomain.Route53DomainsDomainNameServerList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/route53domainsdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/route53domainsdomain"
 
 route53domainsdomain.NewRoute53DomainsDomainNameServerList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Route53DomainsDomainNameServerList
 ```
@@ -5582,7 +5582,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.route53DomainsDomain.Route53DomainsDomainNameServerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/route53domainsdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/route53domainsdomain"
 
 route53domainsdomain.NewRoute53DomainsDomainNameServerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Route53DomainsDomainNameServerOutputReference
 ```
@@ -5907,7 +5907,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.route53DomainsDomain.Route53DomainsDomainRegistrantContactExtraParamList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/route53domainsdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/route53domainsdomain"
 
 route53domainsdomain.NewRoute53DomainsDomainRegistrantContactExtraParamList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Route53DomainsDomainRegistrantContactExtraParamList
 ```
@@ -6067,7 +6067,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.route53DomainsDomain.Route53DomainsDomainRegistrantContactExtraParamOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/route53domainsdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/route53domainsdomain"
 
 route53domainsdomain.NewRoute53DomainsDomainRegistrantContactExtraParamOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Route53DomainsDomainRegistrantContactExtraParamOutputReference
 ```
@@ -6378,7 +6378,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.route53DomainsDomain.Route53DomainsDomainRegistrantContactList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/route53domainsdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/route53domainsdomain"
 
 route53domainsdomain.NewRoute53DomainsDomainRegistrantContactList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Route53DomainsDomainRegistrantContactList
 ```
@@ -6538,7 +6538,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.route53DomainsDomain.Route53DomainsDomainRegistrantContactOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/route53domainsdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/route53domainsdomain"
 
 route53domainsdomain.NewRoute53DomainsDomainRegistrantContactOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Route53DomainsDomainRegistrantContactOutputReference
 ```
@@ -7224,7 +7224,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.route53DomainsDomain.Route53DomainsDomainTechContactExtraParamList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/route53domainsdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/route53domainsdomain"
 
 route53domainsdomain.NewRoute53DomainsDomainTechContactExtraParamList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Route53DomainsDomainTechContactExtraParamList
 ```
@@ -7384,7 +7384,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.route53DomainsDomain.Route53DomainsDomainTechContactExtraParamOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/route53domainsdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/route53domainsdomain"
 
 route53domainsdomain.NewRoute53DomainsDomainTechContactExtraParamOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Route53DomainsDomainTechContactExtraParamOutputReference
 ```
@@ -7695,7 +7695,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.route53DomainsDomain.Route53DomainsDomainTechContactList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/route53domainsdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/route53domainsdomain"
 
 route53domainsdomain.NewRoute53DomainsDomainTechContactList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Route53DomainsDomainTechContactList
 ```
@@ -7855,7 +7855,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.route53DomainsDomain.Route53DomainsDomainTechContactOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/route53domainsdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/route53domainsdomain"
 
 route53domainsdomain.NewRoute53DomainsDomainTechContactOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Route53DomainsDomainTechContactOutputReference
 ```
@@ -8541,7 +8541,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.route53DomainsDomain.Route53DomainsDomainTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/route53domainsdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/route53domainsdomain"
 
 route53domainsdomain.NewRoute53DomainsDomainTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Route53DomainsDomainTimeoutsOutputReference
 ```
