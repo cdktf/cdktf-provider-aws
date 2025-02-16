@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.syntheticsGroupAssociation.SyntheticsGroupAssociation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/syntheticsgroupassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/syntheticsgroupassociation"
 
 syntheticsgroupassociation.NewSyntheticsGroupAssociation(scope Construct, id *string, config SyntheticsGroupAssociationConfig) SyntheticsGroupAssociation
 ```
@@ -385,7 +385,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.syntheticsGroupAssociation.SyntheticsGroupAssociation.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/syntheticsgroupassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/syntheticsgroupassociation"
 
 syntheticsgroupassociation.SyntheticsGroupAssociation_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +417,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.syntheticsGroupAssociation.SyntheticsGroupAssociation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/syntheticsgroupassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/syntheticsgroupassociation"
 
 syntheticsgroupassociation.SyntheticsGroupAssociation_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ syntheticsgroupassociation.SyntheticsGroupAssociation_IsTerraformElement(x inter
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.syntheticsGroupAssociation.SyntheticsGroupAssociation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/syntheticsgroupassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/syntheticsgroupassociation"
 
 syntheticsgroupassociation.SyntheticsGroupAssociation_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ syntheticsgroupassociation.SyntheticsGroupAssociation_IsTerraformResource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.syntheticsGroupAssociation.SyntheticsGroupAssociation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/syntheticsgroupassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/syntheticsgroupassociation"
 
 syntheticsgroupassociation.SyntheticsGroupAssociation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -762,7 +762,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.syntheticsGroupAssociation.SyntheticsGroupAssociationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/syntheticsgroupassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/syntheticsgroupassociation"
 
 &syntheticsgroupassociation.SyntheticsGroupAssociationConfig {
 	Connection: interface{},
