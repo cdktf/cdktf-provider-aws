@@ -1,3 +1,3 @@
 # `aws_iot_thing_principal_attachment`
 
-Refer to the Terraform Registry for docs: [`aws_iot_thing_principal_attachment`](https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/iot_thing_principal_attachment).
+Refer to the Terraform Registry for docs: [`aws_iot_thing_principal_attachment`](https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/iot_thing_principal_attachment).

@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/opensearch_package_association
+// https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/opensearch_package_association
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,34 +8,34 @@ import * as cdktf from 'cdktf';
 
 export interface OpensearchPackageAssociationConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/opensearch_package_association#domain_name OpensearchPackageAssociation#domain_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/opensearch_package_association#domain_name OpensearchPackageAssociation#domain_name}
   */
   readonly domainName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/opensearch_package_association#id OpensearchPackageAssociation#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/opensearch_package_association#id OpensearchPackageAssociation#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/opensearch_package_association#package_id OpensearchPackageAssociation#package_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/opensearch_package_association#package_id OpensearchPackageAssociation#package_id}
   */
   readonly packageId: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/opensearch_package_association#timeouts OpensearchPackageAssociation#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/opensearch_package_association#timeouts OpensearchPackageAssociation#timeouts}
   */
   readonly timeouts?: OpensearchPackageAssociationTimeouts;
 }
 export interface OpensearchPackageAssociationTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/opensearch_package_association#create OpensearchPackageAssociation#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/opensearch_package_association#create OpensearchPackageAssociation#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/opensearch_package_association#delete OpensearchPackageAssociation#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/opensearch_package_association#delete OpensearchPackageAssociation#delete}
   */
   readonly delete?: string;
 }
@@ -163,7 +158,7 @@ export class OpensearchPackageAssociationTimeoutsOutputReference extends cdktf.C
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/opensearch_package_association aws_opensearch_package_association}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/opensearch_package_association aws_opensearch_package_association}
 */
 export class OpensearchPackageAssociation extends cdktf.TerraformResource {
 
@@ -179,7 +174,7 @@ export class OpensearchPackageAssociation extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a OpensearchPackageAssociation resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the OpensearchPackageAssociation to import
-  * @param importFromId The id of the existing OpensearchPackageAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/opensearch_package_association#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing OpensearchPackageAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/opensearch_package_association#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the OpensearchPackageAssociation to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -191,7 +186,7 @@ export class OpensearchPackageAssociation extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/opensearch_package_association aws_opensearch_package_association} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/opensearch_package_association aws_opensearch_package_association} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -202,7 +197,7 @@ export class OpensearchPackageAssociation extends cdktf.TerraformResource {
       terraformResourceType: 'aws_opensearch_package_association',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.87.0',
+        providerVersion: '5.88.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

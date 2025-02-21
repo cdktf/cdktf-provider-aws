@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/ssoadmin_application_access_scope
+// https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/ssoadmin_application_access_scope
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,21 +8,21 @@ import * as cdktf from 'cdktf';
 
 export interface SsoadminApplicationAccessScopeConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/ssoadmin_application_access_scope#application_arn SsoadminApplicationAccessScope#application_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/ssoadmin_application_access_scope#application_arn SsoadminApplicationAccessScope#application_arn}
   */
   readonly applicationArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/ssoadmin_application_access_scope#authorized_targets SsoadminApplicationAccessScope#authorized_targets}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/ssoadmin_application_access_scope#authorized_targets SsoadminApplicationAccessScope#authorized_targets}
   */
   readonly authorizedTargets?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/ssoadmin_application_access_scope#scope SsoadminApplicationAccessScope#scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/ssoadmin_application_access_scope#scope SsoadminApplicationAccessScope#scope}
   */
   readonly scope: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/ssoadmin_application_access_scope aws_ssoadmin_application_access_scope}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/ssoadmin_application_access_scope aws_ssoadmin_application_access_scope}
 */
 export class SsoadminApplicationAccessScope extends cdktf.TerraformResource {
 
@@ -43,7 +38,7 @@ export class SsoadminApplicationAccessScope extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a SsoadminApplicationAccessScope resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SsoadminApplicationAccessScope to import
-  * @param importFromId The id of the existing SsoadminApplicationAccessScope that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/ssoadmin_application_access_scope#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing SsoadminApplicationAccessScope that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/ssoadmin_application_access_scope#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SsoadminApplicationAccessScope to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -55,7 +50,7 @@ export class SsoadminApplicationAccessScope extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/ssoadmin_application_access_scope aws_ssoadmin_application_access_scope} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/ssoadmin_application_access_scope aws_ssoadmin_application_access_scope} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -66,7 +61,7 @@ export class SsoadminApplicationAccessScope extends cdktf.TerraformResource {
       terraformResourceType: 'aws_ssoadmin_application_access_scope',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.87.0',
+        providerVersion: '5.88.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

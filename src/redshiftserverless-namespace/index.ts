@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/redshiftserverless_namespace
+// https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/redshiftserverless_namespace
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,64 +8,72 @@ import * as cdktf from 'cdktf';
 
 export interface RedshiftserverlessNamespaceConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/redshiftserverless_namespace#admin_password_secret_kms_key_id RedshiftserverlessNamespace#admin_password_secret_kms_key_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/redshiftserverless_namespace#admin_password_secret_kms_key_id RedshiftserverlessNamespace#admin_password_secret_kms_key_id}
   */
   readonly adminPasswordSecretKmsKeyId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/redshiftserverless_namespace#admin_user_password RedshiftserverlessNamespace#admin_user_password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/redshiftserverless_namespace#admin_user_password RedshiftserverlessNamespace#admin_user_password}
   */
   readonly adminUserPassword?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/redshiftserverless_namespace#admin_username RedshiftserverlessNamespace#admin_username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/redshiftserverless_namespace#admin_user_password_wo RedshiftserverlessNamespace#admin_user_password_wo}
+  */
+  readonly adminUserPasswordWo?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/redshiftserverless_namespace#admin_user_password_wo_version RedshiftserverlessNamespace#admin_user_password_wo_version}
+  */
+  readonly adminUserPasswordWoVersion?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/redshiftserverless_namespace#admin_username RedshiftserverlessNamespace#admin_username}
   */
   readonly adminUsername?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/redshiftserverless_namespace#db_name RedshiftserverlessNamespace#db_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/redshiftserverless_namespace#db_name RedshiftserverlessNamespace#db_name}
   */
   readonly dbName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/redshiftserverless_namespace#default_iam_role_arn RedshiftserverlessNamespace#default_iam_role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/redshiftserverless_namespace#default_iam_role_arn RedshiftserverlessNamespace#default_iam_role_arn}
   */
   readonly defaultIamRoleArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/redshiftserverless_namespace#iam_roles RedshiftserverlessNamespace#iam_roles}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/redshiftserverless_namespace#iam_roles RedshiftserverlessNamespace#iam_roles}
   */
   readonly iamRoles?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/redshiftserverless_namespace#id RedshiftserverlessNamespace#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/redshiftserverless_namespace#id RedshiftserverlessNamespace#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/redshiftserverless_namespace#kms_key_id RedshiftserverlessNamespace#kms_key_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/redshiftserverless_namespace#kms_key_id RedshiftserverlessNamespace#kms_key_id}
   */
   readonly kmsKeyId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/redshiftserverless_namespace#log_exports RedshiftserverlessNamespace#log_exports}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/redshiftserverless_namespace#log_exports RedshiftserverlessNamespace#log_exports}
   */
   readonly logExports?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/redshiftserverless_namespace#manage_admin_password RedshiftserverlessNamespace#manage_admin_password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/redshiftserverless_namespace#manage_admin_password RedshiftserverlessNamespace#manage_admin_password}
   */
   readonly manageAdminPassword?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/redshiftserverless_namespace#namespace_name RedshiftserverlessNamespace#namespace_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/redshiftserverless_namespace#namespace_name RedshiftserverlessNamespace#namespace_name}
   */
   readonly namespaceName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/redshiftserverless_namespace#tags RedshiftserverlessNamespace#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/redshiftserverless_namespace#tags RedshiftserverlessNamespace#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/redshiftserverless_namespace#tags_all RedshiftserverlessNamespace#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/redshiftserverless_namespace#tags_all RedshiftserverlessNamespace#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/redshiftserverless_namespace aws_redshiftserverless_namespace}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/redshiftserverless_namespace aws_redshiftserverless_namespace}
 */
 export class RedshiftserverlessNamespace extends cdktf.TerraformResource {
 
@@ -86,7 +89,7 @@ export class RedshiftserverlessNamespace extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a RedshiftserverlessNamespace resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the RedshiftserverlessNamespace to import
-  * @param importFromId The id of the existing RedshiftserverlessNamespace that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/redshiftserverless_namespace#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing RedshiftserverlessNamespace that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/redshiftserverless_namespace#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the RedshiftserverlessNamespace to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -98,7 +101,7 @@ export class RedshiftserverlessNamespace extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/redshiftserverless_namespace aws_redshiftserverless_namespace} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/redshiftserverless_namespace aws_redshiftserverless_namespace} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -109,7 +112,7 @@ export class RedshiftserverlessNamespace extends cdktf.TerraformResource {
       terraformResourceType: 'aws_redshiftserverless_namespace',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.87.0',
+        providerVersion: '5.88.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -122,6 +125,8 @@ export class RedshiftserverlessNamespace extends cdktf.TerraformResource {
     });
     this._adminPasswordSecretKmsKeyId = config.adminPasswordSecretKmsKeyId;
     this._adminUserPassword = config.adminUserPassword;
+    this._adminUserPasswordWo = config.adminUserPasswordWo;
+    this._adminUserPasswordWoVersion = config.adminUserPasswordWoVersion;
     this._adminUsername = config.adminUsername;
     this._dbName = config.dbName;
     this._defaultIamRoleArn = config.defaultIamRoleArn;
@@ -174,6 +179,38 @@ export class RedshiftserverlessNamespace extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get adminUserPasswordInput() {
     return this._adminUserPassword;
+  }
+
+  // admin_user_password_wo - computed: false, optional: true, required: false
+  private _adminUserPasswordWo?: string; 
+  public get adminUserPasswordWo() {
+    return this.getStringAttribute('admin_user_password_wo');
+  }
+  public set adminUserPasswordWo(value: string) {
+    this._adminUserPasswordWo = value;
+  }
+  public resetAdminUserPasswordWo() {
+    this._adminUserPasswordWo = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get adminUserPasswordWoInput() {
+    return this._adminUserPasswordWo;
+  }
+
+  // admin_user_password_wo_version - computed: false, optional: true, required: false
+  private _adminUserPasswordWoVersion?: number; 
+  public get adminUserPasswordWoVersion() {
+    return this.getNumberAttribute('admin_user_password_wo_version');
+  }
+  public set adminUserPasswordWoVersion(value: number) {
+    this._adminUserPasswordWoVersion = value;
+  }
+  public resetAdminUserPasswordWoVersion() {
+    this._adminUserPasswordWoVersion = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get adminUserPasswordWoVersionInput() {
+    return this._adminUserPasswordWoVersion;
   }
 
   // admin_username - computed: true, optional: true, required: false
@@ -367,6 +404,8 @@ export class RedshiftserverlessNamespace extends cdktf.TerraformResource {
     return {
       admin_password_secret_kms_key_id: cdktf.stringToTerraform(this._adminPasswordSecretKmsKeyId),
       admin_user_password: cdktf.stringToTerraform(this._adminUserPassword),
+      admin_user_password_wo: cdktf.stringToTerraform(this._adminUserPasswordWo),
+      admin_user_password_wo_version: cdktf.numberToTerraform(this._adminUserPasswordWoVersion),
       admin_username: cdktf.stringToTerraform(this._adminUsername),
       db_name: cdktf.stringToTerraform(this._dbName),
       default_iam_role_arn: cdktf.stringToTerraform(this._defaultIamRoleArn),
@@ -394,6 +433,18 @@ export class RedshiftserverlessNamespace extends cdktf.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      admin_user_password_wo: {
+        value: cdktf.stringToHclTerraform(this._adminUserPasswordWo),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      admin_user_password_wo_version: {
+        value: cdktf.numberToHclTerraform(this._adminUserPasswordWoVersion),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
       },
       admin_username: {
         value: cdktf.stringToHclTerraform(this._adminUsername),

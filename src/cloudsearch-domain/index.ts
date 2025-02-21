@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/cloudsearch_domain
+// https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/cloudsearch_domain
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,52 +8,52 @@ import * as cdktf from 'cdktf';
 
 export interface CloudsearchDomainConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/cloudsearch_domain#id CloudsearchDomain#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/cloudsearch_domain#id CloudsearchDomain#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/cloudsearch_domain#multi_az CloudsearchDomain#multi_az}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/cloudsearch_domain#multi_az CloudsearchDomain#multi_az}
   */
   readonly multiAz?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/cloudsearch_domain#name CloudsearchDomain#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/cloudsearch_domain#name CloudsearchDomain#name}
   */
   readonly name: string;
   /**
   * endpoint_options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/cloudsearch_domain#endpoint_options CloudsearchDomain#endpoint_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/cloudsearch_domain#endpoint_options CloudsearchDomain#endpoint_options}
   */
   readonly endpointOptions?: CloudsearchDomainEndpointOptions;
   /**
   * index_field block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/cloudsearch_domain#index_field CloudsearchDomain#index_field}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/cloudsearch_domain#index_field CloudsearchDomain#index_field}
   */
   readonly indexField?: CloudsearchDomainIndexField[] | cdktf.IResolvable;
   /**
   * scaling_parameters block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/cloudsearch_domain#scaling_parameters CloudsearchDomain#scaling_parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/cloudsearch_domain#scaling_parameters CloudsearchDomain#scaling_parameters}
   */
   readonly scalingParameters?: CloudsearchDomainScalingParameters;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/cloudsearch_domain#timeouts CloudsearchDomain#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/cloudsearch_domain#timeouts CloudsearchDomain#timeouts}
   */
   readonly timeouts?: CloudsearchDomainTimeouts;
 }
 export interface CloudsearchDomainEndpointOptions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/cloudsearch_domain#enforce_https CloudsearchDomain#enforce_https}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/cloudsearch_domain#enforce_https CloudsearchDomain#enforce_https}
   */
   readonly enforceHttps?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/cloudsearch_domain#tls_security_policy CloudsearchDomain#tls_security_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/cloudsearch_domain#tls_security_policy CloudsearchDomain#tls_security_policy}
   */
   readonly tlsSecurityPolicy?: string;
 }
@@ -171,43 +166,43 @@ export class CloudsearchDomainEndpointOptionsOutputReference extends cdktf.Compl
 }
 export interface CloudsearchDomainIndexField {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/cloudsearch_domain#analysis_scheme CloudsearchDomain#analysis_scheme}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/cloudsearch_domain#analysis_scheme CloudsearchDomain#analysis_scheme}
   */
   readonly analysisScheme?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/cloudsearch_domain#default_value CloudsearchDomain#default_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/cloudsearch_domain#default_value CloudsearchDomain#default_value}
   */
   readonly defaultValue?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/cloudsearch_domain#facet CloudsearchDomain#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/cloudsearch_domain#facet CloudsearchDomain#facet}
   */
   readonly facet?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/cloudsearch_domain#highlight CloudsearchDomain#highlight}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/cloudsearch_domain#highlight CloudsearchDomain#highlight}
   */
   readonly highlight?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/cloudsearch_domain#name CloudsearchDomain#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/cloudsearch_domain#name CloudsearchDomain#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/cloudsearch_domain#return CloudsearchDomain#return}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/cloudsearch_domain#return CloudsearchDomain#return}
   */
   readonly return?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/cloudsearch_domain#search CloudsearchDomain#search}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/cloudsearch_domain#search CloudsearchDomain#search}
   */
   readonly search?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/cloudsearch_domain#sort CloudsearchDomain#sort}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/cloudsearch_domain#sort CloudsearchDomain#sort}
   */
   readonly sort?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/cloudsearch_domain#source_fields CloudsearchDomain#source_fields}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/cloudsearch_domain#source_fields CloudsearchDomain#source_fields}
   */
   readonly sourceFields?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/cloudsearch_domain#type CloudsearchDomain#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/cloudsearch_domain#type CloudsearchDomain#type}
   */
   readonly type: string;
 }
@@ -578,15 +573,15 @@ export class CloudsearchDomainIndexFieldList extends cdktf.ComplexList {
 }
 export interface CloudsearchDomainScalingParameters {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/cloudsearch_domain#desired_instance_type CloudsearchDomain#desired_instance_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/cloudsearch_domain#desired_instance_type CloudsearchDomain#desired_instance_type}
   */
   readonly desiredInstanceType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/cloudsearch_domain#desired_partition_count CloudsearchDomain#desired_partition_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/cloudsearch_domain#desired_partition_count CloudsearchDomain#desired_partition_count}
   */
   readonly desiredPartitionCount?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/cloudsearch_domain#desired_replication_count CloudsearchDomain#desired_replication_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/cloudsearch_domain#desired_replication_count CloudsearchDomain#desired_replication_count}
   */
   readonly desiredReplicationCount?: number;
 }
@@ -728,15 +723,15 @@ export class CloudsearchDomainScalingParametersOutputReference extends cdktf.Com
 }
 export interface CloudsearchDomainTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/cloudsearch_domain#create CloudsearchDomain#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/cloudsearch_domain#create CloudsearchDomain#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/cloudsearch_domain#delete CloudsearchDomain#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/cloudsearch_domain#delete CloudsearchDomain#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/cloudsearch_domain#update CloudsearchDomain#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/cloudsearch_domain#update CloudsearchDomain#update}
   */
   readonly update?: string;
 }
@@ -888,7 +883,7 @@ export class CloudsearchDomainTimeoutsOutputReference extends cdktf.ComplexObjec
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/cloudsearch_domain aws_cloudsearch_domain}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/cloudsearch_domain aws_cloudsearch_domain}
 */
 export class CloudsearchDomain extends cdktf.TerraformResource {
 
@@ -904,7 +899,7 @@ export class CloudsearchDomain extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a CloudsearchDomain resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CloudsearchDomain to import
-  * @param importFromId The id of the existing CloudsearchDomain that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/cloudsearch_domain#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing CloudsearchDomain that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/cloudsearch_domain#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CloudsearchDomain to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -916,7 +911,7 @@ export class CloudsearchDomain extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/cloudsearch_domain aws_cloudsearch_domain} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/cloudsearch_domain aws_cloudsearch_domain} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -927,7 +922,7 @@ export class CloudsearchDomain extends cdktf.TerraformResource {
       terraformResourceType: 'aws_cloudsearch_domain',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.87.0',
+        providerVersion: '5.88.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

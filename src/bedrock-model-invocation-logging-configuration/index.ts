@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/bedrock_model_invocation_logging_configuration
+// https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/bedrock_model_invocation_logging_configuration
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +10,17 @@ export interface BedrockModelInvocationLoggingConfigurationConfig extends cdktf.
   /**
   * logging_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/bedrock_model_invocation_logging_configuration#logging_config BedrockModelInvocationLoggingConfiguration#logging_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/bedrock_model_invocation_logging_configuration#logging_config BedrockModelInvocationLoggingConfiguration#logging_config}
   */
   readonly loggingConfig?: BedrockModelInvocationLoggingConfigurationLoggingConfig;
 }
 export interface BedrockModelInvocationLoggingConfigurationLoggingConfigCloudwatchConfigLargeDataDeliveryS3Config {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/bedrock_model_invocation_logging_configuration#bucket_name BedrockModelInvocationLoggingConfiguration#bucket_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/bedrock_model_invocation_logging_configuration#bucket_name BedrockModelInvocationLoggingConfiguration#bucket_name}
   */
   readonly bucketName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/bedrock_model_invocation_logging_configuration#key_prefix BedrockModelInvocationLoggingConfiguration#key_prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/bedrock_model_invocation_logging_configuration#key_prefix BedrockModelInvocationLoggingConfiguration#key_prefix}
   */
   readonly keyPrefix?: string;
 }
@@ -148,17 +143,17 @@ export class BedrockModelInvocationLoggingConfigurationLoggingConfigCloudwatchCo
 }
 export interface BedrockModelInvocationLoggingConfigurationLoggingConfigCloudwatchConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/bedrock_model_invocation_logging_configuration#log_group_name BedrockModelInvocationLoggingConfiguration#log_group_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/bedrock_model_invocation_logging_configuration#log_group_name BedrockModelInvocationLoggingConfiguration#log_group_name}
   */
   readonly logGroupName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/bedrock_model_invocation_logging_configuration#role_arn BedrockModelInvocationLoggingConfiguration#role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/bedrock_model_invocation_logging_configuration#role_arn BedrockModelInvocationLoggingConfiguration#role_arn}
   */
   readonly roleArn?: string;
   /**
   * large_data_delivery_s3_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/bedrock_model_invocation_logging_configuration#large_data_delivery_s3_config BedrockModelInvocationLoggingConfiguration#large_data_delivery_s3_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/bedrock_model_invocation_logging_configuration#large_data_delivery_s3_config BedrockModelInvocationLoggingConfiguration#large_data_delivery_s3_config}
   */
   readonly largeDataDeliveryS3Config?: BedrockModelInvocationLoggingConfigurationLoggingConfigCloudwatchConfigLargeDataDeliveryS3Config;
 }
@@ -310,11 +305,11 @@ export class BedrockModelInvocationLoggingConfigurationLoggingConfigCloudwatchCo
 }
 export interface BedrockModelInvocationLoggingConfigurationLoggingConfigS3Config {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/bedrock_model_invocation_logging_configuration#bucket_name BedrockModelInvocationLoggingConfiguration#bucket_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/bedrock_model_invocation_logging_configuration#bucket_name BedrockModelInvocationLoggingConfiguration#bucket_name}
   */
   readonly bucketName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/bedrock_model_invocation_logging_configuration#key_prefix BedrockModelInvocationLoggingConfiguration#key_prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/bedrock_model_invocation_logging_configuration#key_prefix BedrockModelInvocationLoggingConfiguration#key_prefix}
   */
   readonly keyPrefix?: string;
 }
@@ -437,27 +432,31 @@ export class BedrockModelInvocationLoggingConfigurationLoggingConfigS3ConfigOutp
 }
 export interface BedrockModelInvocationLoggingConfigurationLoggingConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/bedrock_model_invocation_logging_configuration#embedding_data_delivery_enabled BedrockModelInvocationLoggingConfiguration#embedding_data_delivery_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/bedrock_model_invocation_logging_configuration#embedding_data_delivery_enabled BedrockModelInvocationLoggingConfiguration#embedding_data_delivery_enabled}
   */
-  readonly embeddingDataDeliveryEnabled: boolean | cdktf.IResolvable;
+  readonly embeddingDataDeliveryEnabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/bedrock_model_invocation_logging_configuration#image_data_delivery_enabled BedrockModelInvocationLoggingConfiguration#image_data_delivery_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/bedrock_model_invocation_logging_configuration#image_data_delivery_enabled BedrockModelInvocationLoggingConfiguration#image_data_delivery_enabled}
   */
-  readonly imageDataDeliveryEnabled: boolean | cdktf.IResolvable;
+  readonly imageDataDeliveryEnabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/bedrock_model_invocation_logging_configuration#text_data_delivery_enabled BedrockModelInvocationLoggingConfiguration#text_data_delivery_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/bedrock_model_invocation_logging_configuration#text_data_delivery_enabled BedrockModelInvocationLoggingConfiguration#text_data_delivery_enabled}
   */
-  readonly textDataDeliveryEnabled: boolean | cdktf.IResolvable;
+  readonly textDataDeliveryEnabled?: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/bedrock_model_invocation_logging_configuration#video_data_delivery_enabled BedrockModelInvocationLoggingConfiguration#video_data_delivery_enabled}
+  */
+  readonly videoDataDeliveryEnabled?: boolean | cdktf.IResolvable;
   /**
   * cloudwatch_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/bedrock_model_invocation_logging_configuration#cloudwatch_config BedrockModelInvocationLoggingConfiguration#cloudwatch_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/bedrock_model_invocation_logging_configuration#cloudwatch_config BedrockModelInvocationLoggingConfiguration#cloudwatch_config}
   */
   readonly cloudwatchConfig?: BedrockModelInvocationLoggingConfigurationLoggingConfigCloudwatchConfig;
   /**
   * s3_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/bedrock_model_invocation_logging_configuration#s3_config BedrockModelInvocationLoggingConfiguration#s3_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/bedrock_model_invocation_logging_configuration#s3_config BedrockModelInvocationLoggingConfiguration#s3_config}
   */
   readonly s3Config?: BedrockModelInvocationLoggingConfigurationLoggingConfigS3Config;
 }
@@ -471,6 +470,7 @@ export function bedrockModelInvocationLoggingConfigurationLoggingConfigToTerrafo
     embedding_data_delivery_enabled: cdktf.booleanToTerraform(struct!.embeddingDataDeliveryEnabled),
     image_data_delivery_enabled: cdktf.booleanToTerraform(struct!.imageDataDeliveryEnabled),
     text_data_delivery_enabled: cdktf.booleanToTerraform(struct!.textDataDeliveryEnabled),
+    video_data_delivery_enabled: cdktf.booleanToTerraform(struct!.videoDataDeliveryEnabled),
     cloudwatch_config: bedrockModelInvocationLoggingConfigurationLoggingConfigCloudwatchConfigToTerraform(struct!.cloudwatchConfig),
     s3_config: bedrockModelInvocationLoggingConfigurationLoggingConfigS3ConfigToTerraform(struct!.s3Config),
   }
@@ -497,6 +497,12 @@ export function bedrockModelInvocationLoggingConfigurationLoggingConfigToHclTerr
     },
     text_data_delivery_enabled: {
       value: cdktf.booleanToHclTerraform(struct!.textDataDeliveryEnabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    video_data_delivery_enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.videoDataDeliveryEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -549,6 +555,10 @@ export class BedrockModelInvocationLoggingConfigurationLoggingConfigOutputRefere
       hasAnyValues = true;
       internalValueResult.textDataDeliveryEnabled = this._textDataDeliveryEnabled;
     }
+    if (this._videoDataDeliveryEnabled !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.videoDataDeliveryEnabled = this._videoDataDeliveryEnabled;
+    }
     if (this._cloudwatchConfig?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.cloudwatchConfig = this._cloudwatchConfig?.internalValue;
@@ -567,6 +577,7 @@ export class BedrockModelInvocationLoggingConfigurationLoggingConfigOutputRefere
       this._embeddingDataDeliveryEnabled = undefined;
       this._imageDataDeliveryEnabled = undefined;
       this._textDataDeliveryEnabled = undefined;
+      this._videoDataDeliveryEnabled = undefined;
       this._cloudwatchConfig.internalValue = undefined;
       this._s3Config.internalValue = undefined;
     }
@@ -580,12 +591,13 @@ export class BedrockModelInvocationLoggingConfigurationLoggingConfigOutputRefere
       this._embeddingDataDeliveryEnabled = value.embeddingDataDeliveryEnabled;
       this._imageDataDeliveryEnabled = value.imageDataDeliveryEnabled;
       this._textDataDeliveryEnabled = value.textDataDeliveryEnabled;
+      this._videoDataDeliveryEnabled = value.videoDataDeliveryEnabled;
       this._cloudwatchConfig.internalValue = value.cloudwatchConfig;
       this._s3Config.internalValue = value.s3Config;
     }
   }
 
-  // embedding_data_delivery_enabled - computed: false, optional: false, required: true
+  // embedding_data_delivery_enabled - computed: true, optional: true, required: false
   private _embeddingDataDeliveryEnabled?: boolean | cdktf.IResolvable; 
   public get embeddingDataDeliveryEnabled() {
     return this.getBooleanAttribute('embedding_data_delivery_enabled');
@@ -593,12 +605,15 @@ export class BedrockModelInvocationLoggingConfigurationLoggingConfigOutputRefere
   public set embeddingDataDeliveryEnabled(value: boolean | cdktf.IResolvable) {
     this._embeddingDataDeliveryEnabled = value;
   }
+  public resetEmbeddingDataDeliveryEnabled() {
+    this._embeddingDataDeliveryEnabled = undefined;
+  }
   // Temporarily expose input value. Use with caution.
   public get embeddingDataDeliveryEnabledInput() {
     return this._embeddingDataDeliveryEnabled;
   }
 
-  // image_data_delivery_enabled - computed: false, optional: false, required: true
+  // image_data_delivery_enabled - computed: true, optional: true, required: false
   private _imageDataDeliveryEnabled?: boolean | cdktf.IResolvable; 
   public get imageDataDeliveryEnabled() {
     return this.getBooleanAttribute('image_data_delivery_enabled');
@@ -606,12 +621,15 @@ export class BedrockModelInvocationLoggingConfigurationLoggingConfigOutputRefere
   public set imageDataDeliveryEnabled(value: boolean | cdktf.IResolvable) {
     this._imageDataDeliveryEnabled = value;
   }
+  public resetImageDataDeliveryEnabled() {
+    this._imageDataDeliveryEnabled = undefined;
+  }
   // Temporarily expose input value. Use with caution.
   public get imageDataDeliveryEnabledInput() {
     return this._imageDataDeliveryEnabled;
   }
 
-  // text_data_delivery_enabled - computed: false, optional: false, required: true
+  // text_data_delivery_enabled - computed: true, optional: true, required: false
   private _textDataDeliveryEnabled?: boolean | cdktf.IResolvable; 
   public get textDataDeliveryEnabled() {
     return this.getBooleanAttribute('text_data_delivery_enabled');
@@ -619,9 +637,28 @@ export class BedrockModelInvocationLoggingConfigurationLoggingConfigOutputRefere
   public set textDataDeliveryEnabled(value: boolean | cdktf.IResolvable) {
     this._textDataDeliveryEnabled = value;
   }
+  public resetTextDataDeliveryEnabled() {
+    this._textDataDeliveryEnabled = undefined;
+  }
   // Temporarily expose input value. Use with caution.
   public get textDataDeliveryEnabledInput() {
     return this._textDataDeliveryEnabled;
+  }
+
+  // video_data_delivery_enabled - computed: true, optional: true, required: false
+  private _videoDataDeliveryEnabled?: boolean | cdktf.IResolvable; 
+  public get videoDataDeliveryEnabled() {
+    return this.getBooleanAttribute('video_data_delivery_enabled');
+  }
+  public set videoDataDeliveryEnabled(value: boolean | cdktf.IResolvable) {
+    this._videoDataDeliveryEnabled = value;
+  }
+  public resetVideoDataDeliveryEnabled() {
+    this._videoDataDeliveryEnabled = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get videoDataDeliveryEnabledInput() {
+    return this._videoDataDeliveryEnabled;
   }
 
   // cloudwatch_config - computed: false, optional: true, required: false
@@ -658,7 +695,7 @@ export class BedrockModelInvocationLoggingConfigurationLoggingConfigOutputRefere
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/bedrock_model_invocation_logging_configuration aws_bedrock_model_invocation_logging_configuration}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/bedrock_model_invocation_logging_configuration aws_bedrock_model_invocation_logging_configuration}
 */
 export class BedrockModelInvocationLoggingConfiguration extends cdktf.TerraformResource {
 
@@ -674,7 +711,7 @@ export class BedrockModelInvocationLoggingConfiguration extends cdktf.TerraformR
   * Generates CDKTF code for importing a BedrockModelInvocationLoggingConfiguration resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the BedrockModelInvocationLoggingConfiguration to import
-  * @param importFromId The id of the existing BedrockModelInvocationLoggingConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/bedrock_model_invocation_logging_configuration#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing BedrockModelInvocationLoggingConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/bedrock_model_invocation_logging_configuration#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the BedrockModelInvocationLoggingConfiguration to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -686,7 +723,7 @@ export class BedrockModelInvocationLoggingConfiguration extends cdktf.TerraformR
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/bedrock_model_invocation_logging_configuration aws_bedrock_model_invocation_logging_configuration} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/bedrock_model_invocation_logging_configuration aws_bedrock_model_invocation_logging_configuration} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -697,7 +734,7 @@ export class BedrockModelInvocationLoggingConfiguration extends cdktf.TerraformR
       terraformResourceType: 'aws_bedrock_model_invocation_logging_configuration',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.87.0',
+        providerVersion: '5.88.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

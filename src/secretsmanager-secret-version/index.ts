@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/secretsmanager_secret_version
+// https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/secretsmanager_secret_version
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,32 +8,40 @@ import * as cdktf from 'cdktf';
 
 export interface SecretsmanagerSecretVersionConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/secretsmanager_secret_version#id SecretsmanagerSecretVersion#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/secretsmanager_secret_version#id SecretsmanagerSecretVersion#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/secretsmanager_secret_version#secret_binary SecretsmanagerSecretVersion#secret_binary}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/secretsmanager_secret_version#secret_binary SecretsmanagerSecretVersion#secret_binary}
   */
   readonly secretBinary?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/secretsmanager_secret_version#secret_id SecretsmanagerSecretVersion#secret_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/secretsmanager_secret_version#secret_id SecretsmanagerSecretVersion#secret_id}
   */
   readonly secretId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/secretsmanager_secret_version#secret_string SecretsmanagerSecretVersion#secret_string}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/secretsmanager_secret_version#secret_string SecretsmanagerSecretVersion#secret_string}
   */
   readonly secretString?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/secretsmanager_secret_version#version_stages SecretsmanagerSecretVersion#version_stages}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/secretsmanager_secret_version#secret_string_wo SecretsmanagerSecretVersion#secret_string_wo}
+  */
+  readonly secretStringWo?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/secretsmanager_secret_version#secret_string_wo_version SecretsmanagerSecretVersion#secret_string_wo_version}
+  */
+  readonly secretStringWoVersion?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/secretsmanager_secret_version#version_stages SecretsmanagerSecretVersion#version_stages}
   */
   readonly versionStages?: string[];
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/secretsmanager_secret_version aws_secretsmanager_secret_version}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/secretsmanager_secret_version aws_secretsmanager_secret_version}
 */
 export class SecretsmanagerSecretVersion extends cdktf.TerraformResource {
 
@@ -54,7 +57,7 @@ export class SecretsmanagerSecretVersion extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a SecretsmanagerSecretVersion resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SecretsmanagerSecretVersion to import
-  * @param importFromId The id of the existing SecretsmanagerSecretVersion that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/secretsmanager_secret_version#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing SecretsmanagerSecretVersion that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/secretsmanager_secret_version#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SecretsmanagerSecretVersion to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -66,7 +69,7 @@ export class SecretsmanagerSecretVersion extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/secretsmanager_secret_version aws_secretsmanager_secret_version} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/secretsmanager_secret_version aws_secretsmanager_secret_version} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -77,7 +80,7 @@ export class SecretsmanagerSecretVersion extends cdktf.TerraformResource {
       terraformResourceType: 'aws_secretsmanager_secret_version',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.87.0',
+        providerVersion: '5.88.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -92,6 +95,8 @@ export class SecretsmanagerSecretVersion extends cdktf.TerraformResource {
     this._secretBinary = config.secretBinary;
     this._secretId = config.secretId;
     this._secretString = config.secretString;
+    this._secretStringWo = config.secretStringWo;
+    this._secretStringWoVersion = config.secretStringWoVersion;
     this._versionStages = config.versionStages;
   }
 
@@ -102,6 +107,11 @@ export class SecretsmanagerSecretVersion extends cdktf.TerraformResource {
   // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
+  }
+
+  // has_secret_string_wo - computed: true, optional: false, required: false
+  public get hasSecretStringWo() {
+    return this.getBooleanAttribute('has_secret_string_wo');
   }
 
   // id - computed: true, optional: true, required: false
@@ -165,6 +175,38 @@ export class SecretsmanagerSecretVersion extends cdktf.TerraformResource {
     return this._secretString;
   }
 
+  // secret_string_wo - computed: false, optional: true, required: false
+  private _secretStringWo?: string; 
+  public get secretStringWo() {
+    return this.getStringAttribute('secret_string_wo');
+  }
+  public set secretStringWo(value: string) {
+    this._secretStringWo = value;
+  }
+  public resetSecretStringWo() {
+    this._secretStringWo = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get secretStringWoInput() {
+    return this._secretStringWo;
+  }
+
+  // secret_string_wo_version - computed: false, optional: true, required: false
+  private _secretStringWoVersion?: number; 
+  public get secretStringWoVersion() {
+    return this.getNumberAttribute('secret_string_wo_version');
+  }
+  public set secretStringWoVersion(value: number) {
+    this._secretStringWoVersion = value;
+  }
+  public resetSecretStringWoVersion() {
+    this._secretStringWoVersion = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get secretStringWoVersionInput() {
+    return this._secretStringWoVersion;
+  }
+
   // version_id - computed: true, optional: false, required: false
   public get versionId() {
     return this.getStringAttribute('version_id');
@@ -196,6 +238,8 @@ export class SecretsmanagerSecretVersion extends cdktf.TerraformResource {
       secret_binary: cdktf.stringToTerraform(this._secretBinary),
       secret_id: cdktf.stringToTerraform(this._secretId),
       secret_string: cdktf.stringToTerraform(this._secretString),
+      secret_string_wo: cdktf.stringToTerraform(this._secretStringWo),
+      secret_string_wo_version: cdktf.numberToTerraform(this._secretStringWoVersion),
       version_stages: cdktf.listMapper(cdktf.stringToTerraform, false)(this._versionStages),
     };
   }
@@ -225,6 +269,18 @@ export class SecretsmanagerSecretVersion extends cdktf.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      secret_string_wo: {
+        value: cdktf.stringToHclTerraform(this._secretStringWo),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      secret_string_wo_version: {
+        value: cdktf.numberToHclTerraform(this._secretStringWoVersion),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
       },
       version_stages: {
         value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._versionStages),
