@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.fmsPolicy.FmsPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/fmspolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fmspolicy"
 
 fmspolicy.NewFmsPolicy(scope Construct, id *string, config FmsPolicyConfig) FmsPolicy
 ```
@@ -508,7 +508,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.fmsPolicy.FmsPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/fmspolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fmspolicy"
 
 fmspolicy.FmsPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -540,7 +540,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.fmsPolicy.FmsPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/fmspolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fmspolicy"
 
 fmspolicy.FmsPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -554,7 +554,7 @@ fmspolicy.FmsPolicy_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.fmsPolicy.FmsPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/fmspolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fmspolicy"
 
 fmspolicy.FmsPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -568,7 +568,7 @@ fmspolicy.FmsPolicy_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.fmsPolicy.FmsPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/fmspolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fmspolicy"
 
 fmspolicy.FmsPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1171,7 +1171,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.fmsPolicy.FmsPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/fmspolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fmspolicy"
 
 &fmspolicy.FmsPolicyConfig {
 	Connection: interface{},
@@ -1183,13 +1183,13 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/fmspolicy"
 	Provisioners: *[]interface{},
 	ExcludeResourceTags: interface{},
 	Name: *string,
-	SecurityServicePolicyData: github.com/cdktf/cdktf-provider-aws-go/aws.fmsPolicy.FmsPolicySecurityServicePolicyData,
+	SecurityServicePolicyData: github.com/cdktf/cdktf-provider-aws-go/aws/v19.fmsPolicy.FmsPolicySecurityServicePolicyData,
 	DeleteAllPolicyResources: interface{},
 	DeleteUnusedFmManagedResources: interface{},
 	Description: *string,
-	ExcludeMap: github.com/cdktf/cdktf-provider-aws-go/aws.fmsPolicy.FmsPolicyExcludeMap,
+	ExcludeMap: github.com/cdktf/cdktf-provider-aws-go/aws/v19.fmsPolicy.FmsPolicyExcludeMap,
 	Id: *string,
-	IncludeMap: github.com/cdktf/cdktf-provider-aws-go/aws.fmsPolicy.FmsPolicyIncludeMap,
+	IncludeMap: github.com/cdktf/cdktf-provider-aws-go/aws/v19.fmsPolicy.FmsPolicyIncludeMap,
 	RemediationEnabled: interface{},
 	ResourceSetIds: *[]*string,
 	ResourceTags: *map[string]*string,
@@ -1506,7 +1506,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.fmsPolicy.FmsPolicyExcludeMap.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/fmspolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fmspolicy"
 
 &fmspolicy.FmsPolicyExcludeMap {
 	Account: *[]*string,
@@ -1552,7 +1552,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.fmsPolicy.FmsPolicyIncludeMap.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/fmspolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fmspolicy"
 
 &fmspolicy.FmsPolicyIncludeMap {
 	Account: *[]*string,
@@ -1598,12 +1598,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.fmsPolicy.FmsPolicySecurityServicePolicyData.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/fmspolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fmspolicy"
 
 &fmspolicy.FmsPolicySecurityServicePolicyData {
 	Type: *string,
 	ManagedServiceData: *string,
-	PolicyOption: github.com/cdktf/cdktf-provider-aws-go/aws.fmsPolicy.FmsPolicySecurityServicePolicyDataPolicyOption,
+	PolicyOption: github.com/cdktf/cdktf-provider-aws-go/aws/v19.fmsPolicy.FmsPolicySecurityServicePolicyDataPolicyOption,
 }
 ```
 
@@ -1660,12 +1660,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.fmsPolicy.FmsPolicySecurityServicePolicyDataPolicyOption.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/fmspolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fmspolicy"
 
 &fmspolicy.FmsPolicySecurityServicePolicyDataPolicyOption {
-	NetworkAclCommonPolicy: github.com/cdktf/cdktf-provider-aws-go/aws.fmsPolicy.FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicy,
-	NetworkFirewallPolicy: github.com/cdktf/cdktf-provider-aws-go/aws.fmsPolicy.FmsPolicySecurityServicePolicyDataPolicyOptionNetworkFirewallPolicy,
-	ThirdPartyFirewallPolicy: github.com/cdktf/cdktf-provider-aws-go/aws.fmsPolicy.FmsPolicySecurityServicePolicyDataPolicyOptionThirdPartyFirewallPolicy,
+	NetworkAclCommonPolicy: github.com/cdktf/cdktf-provider-aws-go/aws/v19.fmsPolicy.FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicy,
+	NetworkFirewallPolicy: github.com/cdktf/cdktf-provider-aws-go/aws/v19.fmsPolicy.FmsPolicySecurityServicePolicyDataPolicyOptionNetworkFirewallPolicy,
+	ThirdPartyFirewallPolicy: github.com/cdktf/cdktf-provider-aws-go/aws/v19.fmsPolicy.FmsPolicySecurityServicePolicyDataPolicyOptionThirdPartyFirewallPolicy,
 }
 ```
 
@@ -1726,10 +1726,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.fmsPolicy.FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/fmspolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fmspolicy"
 
 &fmspolicy.FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicy {
-	NetworkAclEntrySet: github.com/cdktf/cdktf-provider-aws-go/aws.fmsPolicy.FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySet,
+	NetworkAclEntrySet: github.com/cdktf/cdktf-provider-aws-go/aws/v19.fmsPolicy.FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySet,
 }
 ```
 
@@ -1760,7 +1760,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.fmsPolicy.FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySet.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/fmspolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fmspolicy"
 
 &fmspolicy.FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySet {
 	ForceRemediateForFirstEntries: interface{},
@@ -1838,7 +1838,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.fmsPolicy.FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetFirstEntry.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/fmspolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fmspolicy"
 
 &fmspolicy.FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetFirstEntry {
 	Egress: interface{},
@@ -1958,7 +1958,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.fmsPolicy.FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetFirstEntryIcmpTypeCode.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/fmspolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fmspolicy"
 
 &fmspolicy.FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetFirstEntryIcmpTypeCode {
 	Code: *f64,
@@ -2004,7 +2004,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.fmsPolicy.FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetFirstEntryPortRange.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/fmspolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fmspolicy"
 
 &fmspolicy.FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetFirstEntryPortRange {
 	From: *f64,
@@ -2050,7 +2050,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.fmsPolicy.FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetLastEntry.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/fmspolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fmspolicy"
 
 &fmspolicy.FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetLastEntry {
 	Egress: interface{},
@@ -2170,7 +2170,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.fmsPolicy.FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetLastEntryIcmpTypeCode.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/fmspolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fmspolicy"
 
 &fmspolicy.FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetLastEntryIcmpTypeCode {
 	Code: *f64,
@@ -2216,7 +2216,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.fmsPolicy.FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetLastEntryPortRange.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/fmspolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fmspolicy"
 
 &fmspolicy.FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetLastEntryPortRange {
 	From: *f64,
@@ -2262,7 +2262,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.fmsPolicy.FmsPolicySecurityServicePolicyDataPolicyOptionNetworkFirewallPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/fmspolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fmspolicy"
 
 &fmspolicy.FmsPolicySecurityServicePolicyDataPolicyOptionNetworkFirewallPolicy {
 	FirewallDeploymentModel: *string,
@@ -2294,7 +2294,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.fmsPolicy.FmsPolicySecurityServicePolicyDataPolicyOptionThirdPartyFirewallPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/fmspolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fmspolicy"
 
 &fmspolicy.FmsPolicySecurityServicePolicyDataPolicyOptionThirdPartyFirewallPolicy {
 	FirewallDeploymentModel: *string,
@@ -2328,7 +2328,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.fmsPolicy.FmsPolicyExcludeMapOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/fmspolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fmspolicy"
 
 fmspolicy.NewFmsPolicyExcludeMapOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FmsPolicyExcludeMapOutputReference
 ```
@@ -2635,7 +2635,7 @@ func InternalValue() FmsPolicyExcludeMap
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.fmsPolicy.FmsPolicyIncludeMapOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/fmspolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fmspolicy"
 
 fmspolicy.NewFmsPolicyIncludeMapOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FmsPolicyIncludeMapOutputReference
 ```
@@ -2942,7 +2942,7 @@ func InternalValue() FmsPolicyIncludeMap
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.fmsPolicy.FmsPolicySecurityServicePolicyDataOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/fmspolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fmspolicy"
 
 fmspolicy.NewFmsPolicySecurityServicePolicyDataOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FmsPolicySecurityServicePolicyDataOutputReference
 ```
@@ -3284,7 +3284,7 @@ func InternalValue() FmsPolicySecurityServicePolicyData
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.fmsPolicy.FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetFirstEntryIcmpTypeCodeList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/fmspolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fmspolicy"
 
 fmspolicy.NewFmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetFirstEntryIcmpTypeCodeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetFirstEntryIcmpTypeCodeList
 ```
@@ -3444,7 +3444,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.fmsPolicy.FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetFirstEntryIcmpTypeCodeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/fmspolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fmspolicy"
 
 fmspolicy.NewFmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetFirstEntryIcmpTypeCodeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetFirstEntryIcmpTypeCodeOutputReference
 ```
@@ -3769,7 +3769,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.fmsPolicy.FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetFirstEntryList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/fmspolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fmspolicy"
 
 fmspolicy.NewFmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetFirstEntryList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetFirstEntryList
 ```
@@ -3929,7 +3929,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.fmsPolicy.FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetFirstEntryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/fmspolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fmspolicy"
 
 fmspolicy.NewFmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetFirstEntryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetFirstEntryOutputReference
 ```
@@ -4404,7 +4404,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.fmsPolicy.FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetFirstEntryPortRangeList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/fmspolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fmspolicy"
 
 fmspolicy.NewFmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetFirstEntryPortRangeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetFirstEntryPortRangeList
 ```
@@ -4564,7 +4564,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.fmsPolicy.FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetFirstEntryPortRangeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/fmspolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fmspolicy"
 
 fmspolicy.NewFmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetFirstEntryPortRangeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetFirstEntryPortRangeOutputReference
 ```
@@ -4889,7 +4889,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.fmsPolicy.FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetLastEntryIcmpTypeCodeList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/fmspolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fmspolicy"
 
 fmspolicy.NewFmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetLastEntryIcmpTypeCodeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetLastEntryIcmpTypeCodeList
 ```
@@ -5049,7 +5049,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.fmsPolicy.FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetLastEntryIcmpTypeCodeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/fmspolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fmspolicy"
 
 fmspolicy.NewFmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetLastEntryIcmpTypeCodeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetLastEntryIcmpTypeCodeOutputReference
 ```
@@ -5374,7 +5374,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.fmsPolicy.FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetLastEntryList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/fmspolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fmspolicy"
 
 fmspolicy.NewFmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetLastEntryList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetLastEntryList
 ```
@@ -5534,7 +5534,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.fmsPolicy.FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetLastEntryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/fmspolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fmspolicy"
 
 fmspolicy.NewFmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetLastEntryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetLastEntryOutputReference
 ```
@@ -6009,7 +6009,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.fmsPolicy.FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetLastEntryPortRangeList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/fmspolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fmspolicy"
 
 fmspolicy.NewFmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetLastEntryPortRangeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetLastEntryPortRangeList
 ```
@@ -6169,7 +6169,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.fmsPolicy.FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetLastEntryPortRangeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/fmspolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fmspolicy"
 
 fmspolicy.NewFmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetLastEntryPortRangeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetLastEntryPortRangeOutputReference
 ```
@@ -6494,7 +6494,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.fmsPolicy.FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/fmspolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fmspolicy"
 
 fmspolicy.NewFmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetOutputReference
 ```
@@ -6871,7 +6871,7 @@ func InternalValue() FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCom
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.fmsPolicy.FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/fmspolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fmspolicy"
 
 fmspolicy.NewFmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyOutputReference
 ```
@@ -7162,7 +7162,7 @@ func InternalValue() FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCom
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.fmsPolicy.FmsPolicySecurityServicePolicyDataPolicyOptionNetworkFirewallPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/fmspolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fmspolicy"
 
 fmspolicy.NewFmsPolicySecurityServicePolicyDataPolicyOptionNetworkFirewallPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FmsPolicySecurityServicePolicyDataPolicyOptionNetworkFirewallPolicyOutputReference
 ```
@@ -7440,7 +7440,7 @@ func InternalValue() FmsPolicySecurityServicePolicyDataPolicyOptionNetworkFirewa
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.fmsPolicy.FmsPolicySecurityServicePolicyDataPolicyOptionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/fmspolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fmspolicy"
 
 fmspolicy.NewFmsPolicySecurityServicePolicyDataPolicyOptionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FmsPolicySecurityServicePolicyDataPolicyOptionOutputReference
 ```
@@ -7815,7 +7815,7 @@ func InternalValue() FmsPolicySecurityServicePolicyDataPolicyOption
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.fmsPolicy.FmsPolicySecurityServicePolicyDataPolicyOptionThirdPartyFirewallPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/fmspolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fmspolicy"
 
 fmspolicy.NewFmsPolicySecurityServicePolicyDataPolicyOptionThirdPartyFirewallPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FmsPolicySecurityServicePolicyDataPolicyOptionThirdPartyFirewallPolicyOutputReference
 ```

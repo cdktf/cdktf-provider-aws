@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsWafSubscribedRuleGroup.DataAwsWafSubscribedRuleGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawswafsubscribedrulegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawswafsubscribedrulegroup"
 
 dataawswafsubscribedrulegroup.NewDataAwsWafSubscribedRuleGroup(scope Construct, id *string, config DataAwsWafSubscribedRuleGroupConfig) DataAwsWafSubscribedRuleGroup
 ```
@@ -297,7 +297,7 @@ func ResetName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsWafSubscribedRuleGroup.DataAwsWafSubscribedRuleGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawswafsubscribedrulegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawswafsubscribedrulegroup"
 
 dataawswafsubscribedrulegroup.DataAwsWafSubscribedRuleGroup_IsConstruct(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsWafSubscribedRuleGroup.DataAwsWafSubscribedRuleGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawswafsubscribedrulegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawswafsubscribedrulegroup"
 
 dataawswafsubscribedrulegroup.DataAwsWafSubscribedRuleGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ dataawswafsubscribedrulegroup.DataAwsWafSubscribedRuleGroup_IsTerraformElement(x
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsWafSubscribedRuleGroup.DataAwsWafSubscribedRuleGroup.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawswafsubscribedrulegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawswafsubscribedrulegroup"
 
 dataawswafsubscribedrulegroup.DataAwsWafSubscribedRuleGroup_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ dataawswafsubscribedrulegroup.DataAwsWafSubscribedRuleGroup_IsTerraformDataSourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsWafSubscribedRuleGroup.DataAwsWafSubscribedRuleGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawswafsubscribedrulegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawswafsubscribedrulegroup"
 
 dataawswafsubscribedrulegroup.DataAwsWafSubscribedRuleGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -630,7 +630,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsWafSubscribedRuleGroup.DataAwsWafSubscribedRuleGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawswafsubscribedrulegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawswafsubscribedrulegroup"
 
 &dataawswafsubscribedrulegroup.DataAwsWafSubscribedRuleGroupConfig {
 	Connection: interface{},

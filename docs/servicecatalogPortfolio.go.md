@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.servicecatalogPortfolio.ServicecatalogPortfolio.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/servicecatalogportfolio"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/servicecatalogportfolio"
 
 servicecatalogportfolio.NewServicecatalogPortfolio(scope Construct, id *string, config ServicecatalogPortfolioConfig) ServicecatalogPortfolio
 ```
@@ -426,7 +426,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.servicecatalogPortfolio.ServicecatalogPortfolio.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/servicecatalogportfolio"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/servicecatalogportfolio"
 
 servicecatalogportfolio.ServicecatalogPortfolio_IsConstruct(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.servicecatalogPortfolio.ServicecatalogPortfolio.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/servicecatalogportfolio"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/servicecatalogportfolio"
 
 servicecatalogportfolio.ServicecatalogPortfolio_IsTerraformElement(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ servicecatalogportfolio.ServicecatalogPortfolio_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.servicecatalogPortfolio.ServicecatalogPortfolio.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/servicecatalogportfolio"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/servicecatalogportfolio"
 
 servicecatalogportfolio.ServicecatalogPortfolio_IsTerraformResource(x interface{}) *bool
 ```
@@ -486,7 +486,7 @@ servicecatalogportfolio.ServicecatalogPortfolio_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.servicecatalogPortfolio.ServicecatalogPortfolio.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/servicecatalogportfolio"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/servicecatalogportfolio"
 
 servicecatalogportfolio.ServicecatalogPortfolio_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -891,7 +891,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.servicecatalogPortfolio.ServicecatalogPortfolioConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/servicecatalogportfolio"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/servicecatalogportfolio"
 
 &servicecatalogportfolio.ServicecatalogPortfolioConfig {
 	Connection: interface{},
@@ -907,7 +907,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/servicecatalogportfolio"
 	Id: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.servicecatalogPortfolio.ServicecatalogPortfolioTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v19.servicecatalogPortfolio.ServicecatalogPortfolioTimeouts,
 }
 ```
 
@@ -1096,7 +1096,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.servicecatalogPortfolio.ServicecatalogPortfolioTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/servicecatalogportfolio"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/servicecatalogportfolio"
 
 &servicecatalogportfolio.ServicecatalogPortfolioTimeouts {
 	Create: *string,
@@ -1172,7 +1172,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.servicecatalogPortfolio.ServicecatalogPortfolioTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/servicecatalogportfolio"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/servicecatalogportfolio"
 
 servicecatalogportfolio.NewServicecatalogPortfolioTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ServicecatalogPortfolioTimeoutsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.finspaceKxScalingGroup.FinspaceKxScalingGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/finspacekxscalinggroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/finspacekxscalinggroup"
 
 finspacekxscalinggroup.NewFinspaceKxScalingGroup(scope Construct, id *string, config FinspaceKxScalingGroupConfig) FinspaceKxScalingGroup
 ```
@@ -419,7 +419,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.finspaceKxScalingGroup.FinspaceKxScalingGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/finspacekxscalinggroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/finspacekxscalinggroup"
 
 finspacekxscalinggroup.FinspaceKxScalingGroup_IsConstruct(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.finspaceKxScalingGroup.FinspaceKxScalingGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/finspacekxscalinggroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/finspacekxscalinggroup"
 
 finspacekxscalinggroup.FinspaceKxScalingGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ finspacekxscalinggroup.FinspaceKxScalingGroup_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.finspaceKxScalingGroup.FinspaceKxScalingGroup.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/finspacekxscalinggroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/finspacekxscalinggroup"
 
 finspacekxscalinggroup.FinspaceKxScalingGroup_IsTerraformResource(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ finspacekxscalinggroup.FinspaceKxScalingGroup_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.finspaceKxScalingGroup.FinspaceKxScalingGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/finspacekxscalinggroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/finspacekxscalinggroup"
 
 finspacekxscalinggroup.FinspaceKxScalingGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -950,7 +950,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.finspaceKxScalingGroup.FinspaceKxScalingGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/finspacekxscalinggroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/finspacekxscalinggroup"
 
 &finspacekxscalinggroup.FinspaceKxScalingGroupConfig {
 	Connection: interface{},
@@ -967,7 +967,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/finspacekxscalinggroup"
 	Id: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.finspaceKxScalingGroup.FinspaceKxScalingGroupTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v19.finspaceKxScalingGroup.FinspaceKxScalingGroupTimeouts,
 }
 ```
 
@@ -1169,7 +1169,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.finspaceKxScalingGroup.FinspaceKxScalingGroupTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/finspacekxscalinggroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/finspacekxscalinggroup"
 
 &finspacekxscalinggroup.FinspaceKxScalingGroupTimeouts {
 	Create: *string,
@@ -1231,7 +1231,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.finspaceKxScalingGroup.FinspaceKxScalingGroupTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/finspacekxscalinggroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/finspacekxscalinggroup"
 
 finspacekxscalinggroup.NewFinspaceKxScalingGroupTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FinspaceKxScalingGroupTimeoutsOutputReference
 ```
