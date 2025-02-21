@@ -4,7 +4,7 @@
 
 ### RdsInstanceState <a name="RdsInstanceState" id="@cdktf/provider-aws.rdsInstanceState.RdsInstanceState"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/rds_instance_state aws_rds_instance_state}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/rds_instance_state aws_rds_instance_state}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.rdsInstanceState.RdsInstanceState.Initializer"></a>
 
@@ -487,7 +487,7 @@ The construct id used in the generated config for the RdsInstanceState to import
 
 The id of the existing RdsInstanceState that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/rds_instance_state#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/rds_instance_state#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -769,8 +769,8 @@ const rdsInstanceStateConfig: rdsInstanceState.RdsInstanceStateConfig = { ... }
 | <code><a href="#@cdktf/provider-aws.rdsInstanceState.RdsInstanceStateConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.rdsInstanceState.RdsInstanceStateConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.rdsInstanceState.RdsInstanceStateConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.rdsInstanceState.RdsInstanceStateConfig.property.identifier">identifier</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/rds_instance_state#identifier RdsInstanceState#identifier}. |
-| <code><a href="#@cdktf/provider-aws.rdsInstanceState.RdsInstanceStateConfig.property.state">state</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/rds_instance_state#state RdsInstanceState#state}. |
+| <code><a href="#@cdktf/provider-aws.rdsInstanceState.RdsInstanceStateConfig.property.identifier">identifier</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/rds_instance_state#identifier RdsInstanceState#identifier}. |
+| <code><a href="#@cdktf/provider-aws.rdsInstanceState.RdsInstanceStateConfig.property.state">state</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/rds_instance_state#state RdsInstanceState#state}. |
 | <code><a href="#@cdktf/provider-aws.rdsInstanceState.RdsInstanceStateConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-aws.rdsInstanceState.RdsInstanceStateTimeouts">RdsInstanceStateTimeouts</a></code> | timeouts block. |
 
 ---
@@ -853,7 +853,7 @@ public readonly identifier: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/rds_instance_state#identifier RdsInstanceState#identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/rds_instance_state#identifier RdsInstanceState#identifier}.
 
 ---
 
@@ -865,7 +865,7 @@ public readonly state: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/rds_instance_state#state RdsInstanceState#state}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/rds_instance_state#state RdsInstanceState#state}.
 
 ---
 
@@ -879,7 +879,7 @@ public readonly timeouts: RdsInstanceStateTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/rds_instance_state#timeouts RdsInstanceState#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/rds_instance_state#timeouts RdsInstanceState#timeouts}
 
 ---
 
@@ -912,7 +912,7 @@ public readonly create: string;
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/rds_instance_state#create RdsInstanceState#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/rds_instance_state#create RdsInstanceState#create}
 
 ---
 
@@ -926,7 +926,7 @@ public readonly update: string;
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/rds_instance_state#update RdsInstanceState#update}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/rds_instance_state#update RdsInstanceState#update}
 
 ---
 

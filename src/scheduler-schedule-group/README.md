@@ -1,3 +1,3 @@
 # `aws_scheduler_schedule_group`
 
-Refer to the Terraform Registry for docs: [`aws_scheduler_schedule_group`](https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/scheduler_schedule_group).
+Refer to the Terraform Registry for docs: [`aws_scheduler_schedule_group`](https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/scheduler_schedule_group).
