@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudwatchContributorInsightRule.CloudwatchContributorInsightRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatchcontributorinsightrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cloudwatchcontributorinsightrule"
 
 cloudwatchcontributorinsightrule.NewCloudwatchContributorInsightRule(scope Construct, id *string, config CloudwatchContributorInsightRuleConfig) CloudwatchContributorInsightRule
 ```
@@ -392,7 +392,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.cloudwatchContributorInsightRule.CloudwatchContributorInsightRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatchcontributorinsightrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cloudwatchcontributorinsightrule"
 
 cloudwatchcontributorinsightrule.CloudwatchContributorInsightRule_IsConstruct(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.cloudwatchContributorInsightRule.CloudwatchContributorInsightRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatchcontributorinsightrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cloudwatchcontributorinsightrule"
 
 cloudwatchcontributorinsightrule.CloudwatchContributorInsightRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ cloudwatchcontributorinsightrule.CloudwatchContributorInsightRule_IsTerraformEle
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.cloudwatchContributorInsightRule.CloudwatchContributorInsightRule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatchcontributorinsightrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cloudwatchcontributorinsightrule"
 
 cloudwatchcontributorinsightrule.CloudwatchContributorInsightRule_IsTerraformResource(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ cloudwatchcontributorinsightrule.CloudwatchContributorInsightRule_IsTerraformRes
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.cloudwatchContributorInsightRule.CloudwatchContributorInsightRule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatchcontributorinsightrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cloudwatchcontributorinsightrule"
 
 cloudwatchcontributorinsightrule.CloudwatchContributorInsightRule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -791,7 +791,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudwatchContributorInsightRule.CloudwatchContributorInsightRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatchcontributorinsightrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cloudwatchcontributorinsightrule"
 
 &cloudwatchcontributorinsightrule.CloudwatchContributorInsightRuleConfig {
 	Connection: interface{},
