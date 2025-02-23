@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/sesv2_email_identity_feedback_attributes
 // generated from terraform resource schema
 

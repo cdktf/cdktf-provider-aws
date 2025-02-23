@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsVpcPeeringConnection.DataAwsVpcPeeringConnection.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsvpcpeeringconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsvpcpeeringconnection"
 
 dataawsvpcpeeringconnection.NewDataAwsVpcPeeringConnection(scope Construct, id *string, config DataAwsVpcPeeringConnectionConfig) DataAwsVpcPeeringConnection
 ```
@@ -393,7 +393,7 @@ func ResetVpcId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsVpcPeeringConnection.DataAwsVpcPeeringConnection.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsvpcpeeringconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsvpcpeeringconnection"
 
 dataawsvpcpeeringconnection.DataAwsVpcPeeringConnection_IsConstruct(x interface{}) *bool
 ```
@@ -425,7 +425,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsVpcPeeringConnection.DataAwsVpcPeeringConnection.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsvpcpeeringconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsvpcpeeringconnection"
 
 dataawsvpcpeeringconnection.DataAwsVpcPeeringConnection_IsTerraformElement(x interface{}) *bool
 ```
@@ -439,7 +439,7 @@ dataawsvpcpeeringconnection.DataAwsVpcPeeringConnection_IsTerraformElement(x int
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsVpcPeeringConnection.DataAwsVpcPeeringConnection.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsvpcpeeringconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsvpcpeeringconnection"
 
 dataawsvpcpeeringconnection.DataAwsVpcPeeringConnection_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -453,7 +453,7 @@ dataawsvpcpeeringconnection.DataAwsVpcPeeringConnection_IsTerraformDataSource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsVpcPeeringConnection.DataAwsVpcPeeringConnection.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsvpcpeeringconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsvpcpeeringconnection"
 
 dataawsvpcpeeringconnection.DataAwsVpcPeeringConnection_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1012,7 +1012,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsVpcPeeringConnection.DataAwsVpcPeeringConnectionCidrBlockSet.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsvpcpeeringconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsvpcpeeringconnection"
 
 &dataawsvpcpeeringconnection.DataAwsVpcPeeringConnectionCidrBlockSet {
 
@@ -1025,7 +1025,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsvpcpeeringconnecti
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsVpcPeeringConnection.DataAwsVpcPeeringConnectionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsvpcpeeringconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsvpcpeeringconnection"
 
 &dataawsvpcpeeringconnection.DataAwsVpcPeeringConnectionConfig {
 	Connection: interface{},
@@ -1046,7 +1046,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsvpcpeeringconnecti
 	Region: *string,
 	Status: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v19.dataAwsVpcPeeringConnection.DataAwsVpcPeeringConnectionTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.dataAwsVpcPeeringConnection.DataAwsVpcPeeringConnectionTimeouts,
 	VpcId: *string,
 }
 ```
@@ -1316,7 +1316,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsVpcPeeringConnection.DataAwsVpcPeeringConnectionFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsvpcpeeringconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsvpcpeeringconnection"
 
 &dataawsvpcpeeringconnection.DataAwsVpcPeeringConnectionFilter {
 	Name: *string,
@@ -1362,7 +1362,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsVpcPeeringConnection.DataAwsVpcPeeringConnectionIpv6CidrBlockSet.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsvpcpeeringconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsvpcpeeringconnection"
 
 &dataawsvpcpeeringconnection.DataAwsVpcPeeringConnectionIpv6CidrBlockSet {
 
@@ -1375,7 +1375,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsvpcpeeringconnecti
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsVpcPeeringConnection.DataAwsVpcPeeringConnectionPeerCidrBlockSet.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsvpcpeeringconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsvpcpeeringconnection"
 
 &dataawsvpcpeeringconnection.DataAwsVpcPeeringConnectionPeerCidrBlockSet {
 
@@ -1388,7 +1388,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsvpcpeeringconnecti
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsVpcPeeringConnection.DataAwsVpcPeeringConnectionPeerIpv6CidrBlockSet.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsvpcpeeringconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsvpcpeeringconnection"
 
 &dataawsvpcpeeringconnection.DataAwsVpcPeeringConnectionPeerIpv6CidrBlockSet {
 
@@ -1401,7 +1401,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsvpcpeeringconnecti
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsVpcPeeringConnection.DataAwsVpcPeeringConnectionTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsvpcpeeringconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsvpcpeeringconnection"
 
 &dataawsvpcpeeringconnection.DataAwsVpcPeeringConnectionTimeouts {
 	Read: *string,
@@ -1435,7 +1435,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsVpcPeeringConnection.DataAwsVpcPeeringConnectionCidrBlockSetList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsvpcpeeringconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsvpcpeeringconnection"
 
 dataawsvpcpeeringconnection.NewDataAwsVpcPeeringConnectionCidrBlockSetList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsVpcPeeringConnectionCidrBlockSetList
 ```
@@ -1584,7 +1584,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsVpcPeeringConnection.DataAwsVpcPeeringConnectionCidrBlockSetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsvpcpeeringconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsvpcpeeringconnection"
 
 dataawsvpcpeeringconnection.NewDataAwsVpcPeeringConnectionCidrBlockSetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsVpcPeeringConnectionCidrBlockSetOutputReference
 ```
@@ -1862,7 +1862,7 @@ func InternalValue() DataAwsVpcPeeringConnectionCidrBlockSet
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsVpcPeeringConnection.DataAwsVpcPeeringConnectionFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsvpcpeeringconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsvpcpeeringconnection"
 
 dataawsvpcpeeringconnection.NewDataAwsVpcPeeringConnectionFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsVpcPeeringConnectionFilterList
 ```
@@ -2022,7 +2022,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsVpcPeeringConnection.DataAwsVpcPeeringConnectionFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsvpcpeeringconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsvpcpeeringconnection"
 
 dataawsvpcpeeringconnection.NewDataAwsVpcPeeringConnectionFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsVpcPeeringConnectionFilterOutputReference
 ```
@@ -2333,7 +2333,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsVpcPeeringConnection.DataAwsVpcPeeringConnectionIpv6CidrBlockSetList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsvpcpeeringconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsvpcpeeringconnection"
 
 dataawsvpcpeeringconnection.NewDataAwsVpcPeeringConnectionIpv6CidrBlockSetList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsVpcPeeringConnectionIpv6CidrBlockSetList
 ```
@@ -2482,7 +2482,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsVpcPeeringConnection.DataAwsVpcPeeringConnectionIpv6CidrBlockSetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsvpcpeeringconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsvpcpeeringconnection"
 
 dataawsvpcpeeringconnection.NewDataAwsVpcPeeringConnectionIpv6CidrBlockSetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsVpcPeeringConnectionIpv6CidrBlockSetOutputReference
 ```
@@ -2760,7 +2760,7 @@ func InternalValue() DataAwsVpcPeeringConnectionIpv6CidrBlockSet
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsVpcPeeringConnection.DataAwsVpcPeeringConnectionPeerCidrBlockSetList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsvpcpeeringconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsvpcpeeringconnection"
 
 dataawsvpcpeeringconnection.NewDataAwsVpcPeeringConnectionPeerCidrBlockSetList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsVpcPeeringConnectionPeerCidrBlockSetList
 ```
@@ -2909,7 +2909,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsVpcPeeringConnection.DataAwsVpcPeeringConnectionPeerCidrBlockSetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsvpcpeeringconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsvpcpeeringconnection"
 
 dataawsvpcpeeringconnection.NewDataAwsVpcPeeringConnectionPeerCidrBlockSetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsVpcPeeringConnectionPeerCidrBlockSetOutputReference
 ```
@@ -3187,7 +3187,7 @@ func InternalValue() DataAwsVpcPeeringConnectionPeerCidrBlockSet
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsVpcPeeringConnection.DataAwsVpcPeeringConnectionPeerIpv6CidrBlockSetList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsvpcpeeringconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsvpcpeeringconnection"
 
 dataawsvpcpeeringconnection.NewDataAwsVpcPeeringConnectionPeerIpv6CidrBlockSetList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsVpcPeeringConnectionPeerIpv6CidrBlockSetList
 ```
@@ -3336,7 +3336,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsVpcPeeringConnection.DataAwsVpcPeeringConnectionPeerIpv6CidrBlockSetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsvpcpeeringconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsvpcpeeringconnection"
 
 dataawsvpcpeeringconnection.NewDataAwsVpcPeeringConnectionPeerIpv6CidrBlockSetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsVpcPeeringConnectionPeerIpv6CidrBlockSetOutputReference
 ```
@@ -3614,7 +3614,7 @@ func InternalValue() DataAwsVpcPeeringConnectionPeerIpv6CidrBlockSet
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsVpcPeeringConnection.DataAwsVpcPeeringConnectionTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsvpcpeeringconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsvpcpeeringconnection"
 
 dataawsvpcpeeringconnection.NewDataAwsVpcPeeringConnectionTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAwsVpcPeeringConnectionTimeoutsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudwatchLogDeliverySource.CloudwatchLogDeliverySource.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cloudwatchlogdeliverysource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatchlogdeliverysource"
 
 cloudwatchlogdeliverysource.NewCloudwatchLogDeliverySource(scope Construct, id *string, config CloudwatchLogDeliverySourceConfig) CloudwatchLogDeliverySource
 ```
@@ -385,7 +385,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.cloudwatchLogDeliverySource.CloudwatchLogDeliverySource.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cloudwatchlogdeliverysource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatchlogdeliverysource"
 
 cloudwatchlogdeliverysource.CloudwatchLogDeliverySource_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +417,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.cloudwatchLogDeliverySource.CloudwatchLogDeliverySource.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cloudwatchlogdeliverysource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatchlogdeliverysource"
 
 cloudwatchlogdeliverysource.CloudwatchLogDeliverySource_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ cloudwatchlogdeliverysource.CloudwatchLogDeliverySource_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.cloudwatchLogDeliverySource.CloudwatchLogDeliverySource.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cloudwatchlogdeliverysource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatchlogdeliverysource"
 
 cloudwatchlogdeliverysource.CloudwatchLogDeliverySource_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ cloudwatchlogdeliverysource.CloudwatchLogDeliverySource_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.cloudwatchLogDeliverySource.CloudwatchLogDeliverySource.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cloudwatchlogdeliverysource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatchlogdeliverysource"
 
 cloudwatchlogdeliverysource.CloudwatchLogDeliverySource_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -795,7 +795,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudwatchLogDeliverySource.CloudwatchLogDeliverySourceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cloudwatchlogdeliverysource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatchlogdeliverysource"
 
 &cloudwatchlogdeliverysource.CloudwatchLogDeliverySourceConfig {
 	Connection: interface{},
