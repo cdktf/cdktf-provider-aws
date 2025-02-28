@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.s3BucketRequestPaymentConfiguration.S3BucketRequestPaymentConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketrequestpaymentconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/s3bucketrequestpaymentconfiguration"
 
 s3bucketrequestpaymentconfiguration.NewS3BucketRequestPaymentConfiguration(scope Construct, id *string, config S3BucketRequestPaymentConfigurationConfig) S3BucketRequestPaymentConfiguration
 ```
@@ -392,7 +392,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.s3BucketRequestPaymentConfiguration.S3BucketRequestPaymentConfiguration.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketrequestpaymentconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/s3bucketrequestpaymentconfiguration"
 
 s3bucketrequestpaymentconfiguration.S3BucketRequestPaymentConfiguration_IsConstruct(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.s3BucketRequestPaymentConfiguration.S3BucketRequestPaymentConfiguration.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketrequestpaymentconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/s3bucketrequestpaymentconfiguration"
 
 s3bucketrequestpaymentconfiguration.S3BucketRequestPaymentConfiguration_IsTerraformElement(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ s3bucketrequestpaymentconfiguration.S3BucketRequestPaymentConfiguration_IsTerraf
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.s3BucketRequestPaymentConfiguration.S3BucketRequestPaymentConfiguration.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketrequestpaymentconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/s3bucketrequestpaymentconfiguration"
 
 s3bucketrequestpaymentconfiguration.S3BucketRequestPaymentConfiguration_IsTerraformResource(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ s3bucketrequestpaymentconfiguration.S3BucketRequestPaymentConfiguration_IsTerraf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.s3BucketRequestPaymentConfiguration.S3BucketRequestPaymentConfiguration.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketrequestpaymentconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/s3bucketrequestpaymentconfiguration"
 
 s3bucketrequestpaymentconfiguration.S3BucketRequestPaymentConfiguration_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -769,7 +769,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.s3BucketRequestPaymentConfiguration.S3BucketRequestPaymentConfigurationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketrequestpaymentconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/s3bucketrequestpaymentconfiguration"
 
 &s3bucketrequestpaymentconfiguration.S3BucketRequestPaymentConfigurationConfig {
 	Connection: interface{},

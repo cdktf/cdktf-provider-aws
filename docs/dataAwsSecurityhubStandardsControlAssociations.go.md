@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsSecurityhubStandardsControlAssociations.DataAwsSecurityhubStandardsControlAssociations.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssecurityhubstandardscontrolassociations"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawssecurityhubstandardscontrolassociations"
 
 dataawssecurityhubstandardscontrolassociations.NewDataAwsSecurityhubStandardsControlAssociations(scope Construct, id *string, config DataAwsSecurityhubStandardsControlAssociationsConfig) DataAwsSecurityhubStandardsControlAssociations
 ```
@@ -276,7 +276,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsSecurityhubStandardsControlAssociations.DataAwsSecurityhubStandardsControlAssociations.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssecurityhubstandardscontrolassociations"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawssecurityhubstandardscontrolassociations"
 
 dataawssecurityhubstandardscontrolassociations.DataAwsSecurityhubStandardsControlAssociations_IsConstruct(x interface{}) *bool
 ```
@@ -308,7 +308,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsSecurityhubStandardsControlAssociations.DataAwsSecurityhubStandardsControlAssociations.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssecurityhubstandardscontrolassociations"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawssecurityhubstandardscontrolassociations"
 
 dataawssecurityhubstandardscontrolassociations.DataAwsSecurityhubStandardsControlAssociations_IsTerraformElement(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ dataawssecurityhubstandardscontrolassociations.DataAwsSecurityhubStandardsContro
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsSecurityhubStandardsControlAssociations.DataAwsSecurityhubStandardsControlAssociations.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssecurityhubstandardscontrolassociations"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawssecurityhubstandardscontrolassociations"
 
 dataawssecurityhubstandardscontrolassociations.DataAwsSecurityhubStandardsControlAssociations_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ dataawssecurityhubstandardscontrolassociations.DataAwsSecurityhubStandardsContro
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsSecurityhubStandardsControlAssociations.DataAwsSecurityhubStandardsControlAssociations.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssecurityhubstandardscontrolassociations"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawssecurityhubstandardscontrolassociations"
 
 dataawssecurityhubstandardscontrolassociations.DataAwsSecurityhubStandardsControlAssociations_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -587,7 +587,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsSecurityhubStandardsControlAssociations.DataAwsSecurityhubStandardsControlAssociationsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssecurityhubstandardscontrolassociations"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawssecurityhubstandardscontrolassociations"
 
 &dataawssecurityhubstandardscontrolassociations.DataAwsSecurityhubStandardsControlAssociationsConfig {
 	Connection: interface{},
@@ -703,7 +703,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsSecurityhubStandardsControlAssociations.DataAwsSecurityhubStandardsControlAssociationsStandardsControlAssociations.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssecurityhubstandardscontrolassociations"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawssecurityhubstandardscontrolassociations"
 
 &dataawssecurityhubstandardscontrolassociations.DataAwsSecurityhubStandardsControlAssociationsStandardsControlAssociations {
 
@@ -718,7 +718,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssecurityhubstandardsco
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsSecurityhubStandardsControlAssociations.DataAwsSecurityhubStandardsControlAssociationsStandardsControlAssociationsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssecurityhubstandardscontrolassociations"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawssecurityhubstandardscontrolassociations"
 
 dataawssecurityhubstandardscontrolassociations.NewDataAwsSecurityhubStandardsControlAssociationsStandardsControlAssociationsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsSecurityhubStandardsControlAssociationsStandardsControlAssociationsList
 ```
@@ -867,7 +867,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsSecurityhubStandardsControlAssociations.DataAwsSecurityhubStandardsControlAssociationsStandardsControlAssociationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssecurityhubstandardscontrolassociations"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawssecurityhubstandardscontrolassociations"
 
 dataawssecurityhubstandardscontrolassociations.NewDataAwsSecurityhubStandardsControlAssociationsStandardsControlAssociationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsSecurityhubStandardsControlAssociationsStandardsControlAssociationsOutputReference
 ```

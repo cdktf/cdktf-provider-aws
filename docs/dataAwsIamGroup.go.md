@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsIamGroup.DataAwsIamGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiamgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsiamgroup"
 
 dataawsiamgroup.NewDataAwsIamGroup(scope Construct, id *string, config DataAwsIamGroupConfig) DataAwsIamGroup
 ```
@@ -283,7 +283,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsIamGroup.DataAwsIamGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiamgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsiamgroup"
 
 dataawsiamgroup.DataAwsIamGroup_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsIamGroup.DataAwsIamGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiamgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsiamgroup"
 
 dataawsiamgroup.DataAwsIamGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ dataawsiamgroup.DataAwsIamGroup_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsIamGroup.DataAwsIamGroup.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiamgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsiamgroup"
 
 dataawsiamgroup.DataAwsIamGroup_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ dataawsiamgroup.DataAwsIamGroup_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsIamGroup.DataAwsIamGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiamgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsiamgroup"
 
 dataawsiamgroup.DataAwsIamGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -638,7 +638,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsIamGroup.DataAwsIamGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiamgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsiamgroup"
 
 &dataawsiamgroup.DataAwsIamGroupConfig {
 	Connection: interface{},
@@ -771,7 +771,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsIamGroup.DataAwsIamGroupUsers.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiamgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsiamgroup"
 
 &dataawsiamgroup.DataAwsIamGroupUsers {
 
@@ -786,7 +786,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiamgroup"
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsIamGroup.DataAwsIamGroupUsersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiamgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsiamgroup"
 
 dataawsiamgroup.NewDataAwsIamGroupUsersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsIamGroupUsersList
 ```
@@ -935,7 +935,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsIamGroup.DataAwsIamGroupUsersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiamgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsiamgroup"
 
 dataawsiamgroup.NewDataAwsIamGroupUsersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsIamGroupUsersOutputReference
 ```

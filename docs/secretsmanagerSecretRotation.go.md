@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/secretsmanagersecretrotation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/secretsmanagersecretrotation"
 
 secretsmanagersecretrotation.NewSecretsmanagerSecretRotation(scope Construct, id *string, config SecretsmanagerSecretRotationConfig) SecretsmanagerSecretRotation
 ```
@@ -412,7 +412,7 @@ func ResetRotationLambdaArn()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotation.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/secretsmanagersecretrotation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/secretsmanagersecretrotation"
 
 secretsmanagersecretrotation.SecretsmanagerSecretRotation_IsConstruct(x interface{}) *bool
 ```
@@ -444,7 +444,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/secretsmanagersecretrotation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/secretsmanagersecretrotation"
 
 secretsmanagersecretrotation.SecretsmanagerSecretRotation_IsTerraformElement(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ secretsmanagersecretrotation.SecretsmanagerSecretRotation_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/secretsmanagersecretrotation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/secretsmanagersecretrotation"
 
 secretsmanagersecretrotation.SecretsmanagerSecretRotation_IsTerraformResource(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ secretsmanagersecretrotation.SecretsmanagerSecretRotation_IsTerraformResource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/secretsmanagersecretrotation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/secretsmanagersecretrotation"
 
 secretsmanagersecretrotation.SecretsmanagerSecretRotation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -822,7 +822,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/secretsmanagersecretrotation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/secretsmanagersecretrotation"
 
 &secretsmanagersecretrotation.SecretsmanagerSecretRotationConfig {
 	Connection: interface{},
@@ -832,7 +832,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/secretsmanagersecretrotation"
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	RotationRules: github.com/cdktf/cdktf-provider-aws-go/aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationRotationRules,
+	RotationRules: github.com/cdktf/cdktf-provider-aws-go/aws/v19.secretsmanagerSecretRotation.SecretsmanagerSecretRotationRotationRules,
 	SecretId: *string,
 	Id: *string,
 	RotateImmediately: interface{},
@@ -999,7 +999,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationRotationRules.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/secretsmanagersecretrotation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/secretsmanagersecretrotation"
 
 &secretsmanagersecretrotation.SecretsmanagerSecretRotationRotationRules {
 	AutomaticallyAfterDays: *f64,
@@ -1061,7 +1061,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationRotationRulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/secretsmanagersecretrotation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/secretsmanagersecretrotation"
 
 secretsmanagersecretrotation.NewSecretsmanagerSecretRotationRotationRulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SecretsmanagerSecretRotationRotationRulesOutputReference
 ```
