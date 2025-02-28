@@ -4,7 +4,7 @@
 
 ### ShieldSubscription <a name="ShieldSubscription" id="@cdktf/provider-aws.shieldSubscription.ShieldSubscription"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/shield_subscription aws_shield_subscription}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/shield_subscription aws_shield_subscription}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.shieldSubscription.ShieldSubscription.Initializer"></a>
 
@@ -481,7 +481,7 @@ The construct id used in the generated config for the ShieldSubscription to impo
 
 The id of the existing ShieldSubscription that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/shield_subscription#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/shield_subscription#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -753,7 +753,7 @@ const shieldSubscriptionConfig: shieldSubscription.ShieldSubscriptionConfig = { 
 | <code><a href="#@cdktf/provider-aws.shieldSubscription.ShieldSubscriptionConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.shieldSubscription.ShieldSubscriptionConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.shieldSubscription.ShieldSubscriptionConfig.property.autoRenew">autoRenew</a></code> | <code>string</code> | Whether to automatically renew the subscription when it expires. |
-| <code><a href="#@cdktf/provider-aws.shieldSubscription.ShieldSubscriptionConfig.property.skipDestroy">skipDestroy</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/shield_subscription#skip_destroy ShieldSubscription#skip_destroy}. |
+| <code><a href="#@cdktf/provider-aws.shieldSubscription.ShieldSubscriptionConfig.property.skipDestroy">skipDestroy</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/shield_subscription#skip_destroy ShieldSubscription#skip_destroy}. |
 
 ---
 
@@ -837,7 +837,7 @@ public readonly autoRenew: string;
 
 Whether to automatically renew the subscription when it expires.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/shield_subscription#auto_renew ShieldSubscription#auto_renew}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/shield_subscription#auto_renew ShieldSubscription#auto_renew}
 
 ---
 
@@ -849,7 +849,7 @@ public readonly skipDestroy: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/shield_subscription#skip_destroy ShieldSubscription#skip_destroy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/shield_subscription#skip_destroy ShieldSubscription#skip_destroy}.
 
 ---
 
