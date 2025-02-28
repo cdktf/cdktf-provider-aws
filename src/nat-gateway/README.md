@@ -1,3 +1,3 @@
 # `aws_nat_gateway`
 
-Refer to the Terraform Registry for docs: [`aws_nat_gateway`](https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/nat_gateway).
+Refer to the Terraform Registry for docs: [`aws_nat_gateway`](https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/nat_gateway).
