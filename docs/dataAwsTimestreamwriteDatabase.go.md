@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsTimestreamwriteDatabase.DataAwsTimestreamwriteDatabase.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawstimestreamwritedatabase"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawstimestreamwritedatabase"
 
 dataawstimestreamwritedatabase.NewDataAwsTimestreamwriteDatabase(scope Construct, id *string, config DataAwsTimestreamwriteDatabaseConfig) DataAwsTimestreamwriteDatabase
 ```
@@ -276,7 +276,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsTimestreamwriteDatabase.DataAwsTimestreamwriteDatabase.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawstimestreamwritedatabase"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawstimestreamwritedatabase"
 
 dataawstimestreamwritedatabase.DataAwsTimestreamwriteDatabase_IsConstruct(x interface{}) *bool
 ```
@@ -308,7 +308,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsTimestreamwriteDatabase.DataAwsTimestreamwriteDatabase.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawstimestreamwritedatabase"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawstimestreamwritedatabase"
 
 dataawstimestreamwritedatabase.DataAwsTimestreamwriteDatabase_IsTerraformElement(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ dataawstimestreamwritedatabase.DataAwsTimestreamwriteDatabase_IsTerraformElement
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsTimestreamwriteDatabase.DataAwsTimestreamwriteDatabase.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawstimestreamwritedatabase"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawstimestreamwritedatabase"
 
 dataawstimestreamwritedatabase.DataAwsTimestreamwriteDatabase_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ dataawstimestreamwritedatabase.DataAwsTimestreamwriteDatabase_IsTerraformDataSou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsTimestreamwriteDatabase.DataAwsTimestreamwriteDatabase.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawstimestreamwritedatabase"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawstimestreamwritedatabase"
 
 dataawstimestreamwritedatabase.DataAwsTimestreamwriteDatabase_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -620,7 +620,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsTimestreamwriteDatabase.DataAwsTimestreamwriteDatabaseConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawstimestreamwritedatabase"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawstimestreamwritedatabase"
 
 &dataawstimestreamwritedatabase.DataAwsTimestreamwriteDatabaseConfig {
 	Connection: interface{},

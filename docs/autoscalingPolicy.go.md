@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.autoscalingPolicy.AutoscalingPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/autoscalingpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/autoscalingpolicy"
 
 autoscalingpolicy.NewAutoscalingPolicy(scope Construct, id *string, config AutoscalingPolicyConfig) AutoscalingPolicy
 ```
@@ -501,7 +501,7 @@ func ResetTargetTrackingConfiguration()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.autoscalingPolicy.AutoscalingPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/autoscalingpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/autoscalingpolicy"
 
 autoscalingpolicy.AutoscalingPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -533,7 +533,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.autoscalingPolicy.AutoscalingPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/autoscalingpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/autoscalingpolicy"
 
 autoscalingpolicy.AutoscalingPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -547,7 +547,7 @@ autoscalingpolicy.AutoscalingPolicy_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.autoscalingPolicy.AutoscalingPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/autoscalingpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/autoscalingpolicy"
 
 autoscalingpolicy.AutoscalingPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -561,7 +561,7 @@ autoscalingpolicy.AutoscalingPolicy_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.autoscalingPolicy.AutoscalingPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/autoscalingpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/autoscalingpolicy"
 
 autoscalingpolicy.AutoscalingPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1109,7 +1109,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.autoscalingPolicy.AutoscalingPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/autoscalingpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/autoscalingpolicy"
 
 &autoscalingpolicy.AutoscalingPolicyConfig {
 	Connection: interface{},
@@ -1129,10 +1129,10 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/autoscalingpolicy"
 	MetricAggregationType: *string,
 	MinAdjustmentMagnitude: *f64,
 	PolicyType: *string,
-	PredictiveScalingConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.autoscalingPolicy.AutoscalingPolicyPredictiveScalingConfiguration,
+	PredictiveScalingConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v19.autoscalingPolicy.AutoscalingPolicyPredictiveScalingConfiguration,
 	ScalingAdjustment: *f64,
 	StepAdjustment: interface{},
-	TargetTrackingConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.autoscalingPolicy.AutoscalingPolicyTargetTrackingConfiguration,
+	TargetTrackingConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v19.autoscalingPolicy.AutoscalingPolicyTargetTrackingConfiguration,
 }
 ```
 
@@ -1416,10 +1416,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.autoscalingPolicy.AutoscalingPolicyPredictiveScalingConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/autoscalingpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/autoscalingpolicy"
 
 &autoscalingpolicy.AutoscalingPolicyPredictiveScalingConfiguration {
-	MetricSpecification: github.com/cdktf/cdktf-provider-aws-go/aws.autoscalingPolicy.AutoscalingPolicyPredictiveScalingConfigurationMetricSpecification,
+	MetricSpecification: github.com/cdktf/cdktf-provider-aws-go/aws/v19.autoscalingPolicy.AutoscalingPolicyPredictiveScalingConfigurationMetricSpecification,
 	MaxCapacityBreachBehavior: *string,
 	MaxCapacityBuffer: *string,
 	Mode: *string,
@@ -1506,16 +1506,16 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.autoscalingPolicy.AutoscalingPolicyPredictiveScalingConfigurationMetricSpecification.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/autoscalingpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/autoscalingpolicy"
 
 &autoscalingpolicy.AutoscalingPolicyPredictiveScalingConfigurationMetricSpecification {
 	TargetValue: *f64,
-	CustomizedCapacityMetricSpecification: github.com/cdktf/cdktf-provider-aws-go/aws.autoscalingPolicy.AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedCapacityMetricSpecification,
-	CustomizedLoadMetricSpecification: github.com/cdktf/cdktf-provider-aws-go/aws.autoscalingPolicy.AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedLoadMetricSpecification,
-	CustomizedScalingMetricSpecification: github.com/cdktf/cdktf-provider-aws-go/aws.autoscalingPolicy.AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedScalingMetricSpecification,
-	PredefinedLoadMetricSpecification: github.com/cdktf/cdktf-provider-aws-go/aws.autoscalingPolicy.AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationPredefinedLoadMetricSpecification,
-	PredefinedMetricPairSpecification: github.com/cdktf/cdktf-provider-aws-go/aws.autoscalingPolicy.AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationPredefinedMetricPairSpecification,
-	PredefinedScalingMetricSpecification: github.com/cdktf/cdktf-provider-aws-go/aws.autoscalingPolicy.AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationPredefinedScalingMetricSpecification,
+	CustomizedCapacityMetricSpecification: github.com/cdktf/cdktf-provider-aws-go/aws/v19.autoscalingPolicy.AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedCapacityMetricSpecification,
+	CustomizedLoadMetricSpecification: github.com/cdktf/cdktf-provider-aws-go/aws/v19.autoscalingPolicy.AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedLoadMetricSpecification,
+	CustomizedScalingMetricSpecification: github.com/cdktf/cdktf-provider-aws-go/aws/v19.autoscalingPolicy.AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedScalingMetricSpecification,
+	PredefinedLoadMetricSpecification: github.com/cdktf/cdktf-provider-aws-go/aws/v19.autoscalingPolicy.AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationPredefinedLoadMetricSpecification,
+	PredefinedMetricPairSpecification: github.com/cdktf/cdktf-provider-aws-go/aws/v19.autoscalingPolicy.AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationPredefinedMetricPairSpecification,
+	PredefinedScalingMetricSpecification: github.com/cdktf/cdktf-provider-aws-go/aws/v19.autoscalingPolicy.AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationPredefinedScalingMetricSpecification,
 }
 ```
 
@@ -1634,7 +1634,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.autoscalingPolicy.AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedCapacityMetricSpecification.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/autoscalingpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/autoscalingpolicy"
 
 &autoscalingpolicy.AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedCapacityMetricSpecification {
 	MetricDataQueries: interface{},
@@ -1668,13 +1668,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.autoscalingPolicy.AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedCapacityMetricSpecificationMetricDataQueries.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/autoscalingpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/autoscalingpolicy"
 
 &autoscalingpolicy.AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedCapacityMetricSpecificationMetricDataQueries {
 	Id: *string,
 	Expression: *string,
 	Label: *string,
-	MetricStat: github.com/cdktf/cdktf-provider-aws-go/aws.autoscalingPolicy.AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedCapacityMetricSpecificationMetricDataQueriesMetricStat,
+	MetricStat: github.com/cdktf/cdktf-provider-aws-go/aws/v19.autoscalingPolicy.AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedCapacityMetricSpecificationMetricDataQueriesMetricStat,
 	ReturnData: interface{},
 }
 ```
@@ -1761,10 +1761,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.autoscalingPolicy.AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedCapacityMetricSpecificationMetricDataQueriesMetricStat.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/autoscalingpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/autoscalingpolicy"
 
 &autoscalingpolicy.AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedCapacityMetricSpecificationMetricDataQueriesMetricStat {
-	Metric: github.com/cdktf/cdktf-provider-aws-go/aws.autoscalingPolicy.AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedCapacityMetricSpecificationMetricDataQueriesMetricStatMetric,
+	Metric: github.com/cdktf/cdktf-provider-aws-go/aws/v19.autoscalingPolicy.AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedCapacityMetricSpecificationMetricDataQueriesMetricStatMetric,
 	Stat: *string,
 	Unit: *string,
 }
@@ -1823,7 +1823,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.autoscalingPolicy.AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedCapacityMetricSpecificationMetricDataQueriesMetricStatMetric.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/autoscalingpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/autoscalingpolicy"
 
 &autoscalingpolicy.AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedCapacityMetricSpecificationMetricDataQueriesMetricStatMetric {
 	MetricName: *string,
@@ -1885,7 +1885,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.autoscalingPolicy.AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedCapacityMetricSpecificationMetricDataQueriesMetricStatMetricDimensions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/autoscalingpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/autoscalingpolicy"
 
 &autoscalingpolicy.AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedCapacityMetricSpecificationMetricDataQueriesMetricStatMetricDimensions {
 	Name: *string,
@@ -1931,7 +1931,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.autoscalingPolicy.AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedLoadMetricSpecification.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/autoscalingpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/autoscalingpolicy"
 
 &autoscalingpolicy.AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedLoadMetricSpecification {
 	MetricDataQueries: interface{},
@@ -1965,13 +1965,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.autoscalingPolicy.AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedLoadMetricSpecificationMetricDataQueries.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/autoscalingpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/autoscalingpolicy"
 
 &autoscalingpolicy.AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedLoadMetricSpecificationMetricDataQueries {
 	Id: *string,
 	Expression: *string,
 	Label: *string,
-	MetricStat: github.com/cdktf/cdktf-provider-aws-go/aws.autoscalingPolicy.AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedLoadMetricSpecificationMetricDataQueriesMetricStat,
+	MetricStat: github.com/cdktf/cdktf-provider-aws-go/aws/v19.autoscalingPolicy.AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedLoadMetricSpecificationMetricDataQueriesMetricStat,
 	ReturnData: interface{},
 }
 ```
@@ -2058,10 +2058,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.autoscalingPolicy.AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedLoadMetricSpecificationMetricDataQueriesMetricStat.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/autoscalingpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/autoscalingpolicy"
 
 &autoscalingpolicy.AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedLoadMetricSpecificationMetricDataQueriesMetricStat {
-	Metric: github.com/cdktf/cdktf-provider-aws-go/aws.autoscalingPolicy.AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedLoadMetricSpecificationMetricDataQueriesMetricStatMetric,
+	Metric: github.com/cdktf/cdktf-provider-aws-go/aws/v19.autoscalingPolicy.AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedLoadMetricSpecificationMetricDataQueriesMetricStatMetric,
 	Stat: *string,
 	Unit: *string,
 }
@@ -2120,7 +2120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.autoscalingPolicy.AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedLoadMetricSpecificationMetricDataQueriesMetricStatMetric.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/autoscalingpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/autoscalingpolicy"
 
 &autoscalingpolicy.AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedLoadMetricSpecificationMetricDataQueriesMetricStatMetric {
 	MetricName: *string,
@@ -2182,7 +2182,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.autoscalingPolicy.AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedLoadMetricSpecificationMetricDataQueriesMetricStatMetricDimensions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/autoscalingpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/autoscalingpolicy"
 
 &autoscalingpolicy.AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedLoadMetricSpecificationMetricDataQueriesMetricStatMetricDimensions {
 	Name: *string,
@@ -2228,7 +2228,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.autoscalingPolicy.AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedScalingMetricSpecification.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/autoscalingpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/autoscalingpolicy"
 
 &autoscalingpolicy.AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedScalingMetricSpecification {
 	MetricDataQueries: interface{},
@@ -2262,13 +2262,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.autoscalingPolicy.AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedScalingMetricSpecificationMetricDataQueries.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/autoscalingpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/autoscalingpolicy"
 
 &autoscalingpolicy.AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedScalingMetricSpecificationMetricDataQueries {
 	Id: *string,
 	Expression: *string,
 	Label: *string,
-	MetricStat: github.com/cdktf/cdktf-provider-aws-go/aws.autoscalingPolicy.AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedScalingMetricSpecificationMetricDataQueriesMetricStat,
+	MetricStat: github.com/cdktf/cdktf-provider-aws-go/aws/v19.autoscalingPolicy.AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedScalingMetricSpecificationMetricDataQueriesMetricStat,
 	ReturnData: interface{},
 }
 ```
@@ -2355,10 +2355,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.autoscalingPolicy.AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedScalingMetricSpecificationMetricDataQueriesMetricStat.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/autoscalingpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/autoscalingpolicy"
 
 &autoscalingpolicy.AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedScalingMetricSpecificationMetricDataQueriesMetricStat {
-	Metric: github.com/cdktf/cdktf-provider-aws-go/aws.autoscalingPolicy.AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedScalingMetricSpecificationMetricDataQueriesMetricStatMetric,
+	Metric: github.com/cdktf/cdktf-provider-aws-go/aws/v19.autoscalingPolicy.AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedScalingMetricSpecificationMetricDataQueriesMetricStatMetric,
 	Stat: *string,
 	Unit: *string,
 }
@@ -2417,7 +2417,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.autoscalingPolicy.AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedScalingMetricSpecificationMetricDataQueriesMetricStatMetric.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/autoscalingpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/autoscalingpolicy"
 
 &autoscalingpolicy.AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedScalingMetricSpecificationMetricDataQueriesMetricStatMetric {
 	MetricName: *string,
@@ -2479,7 +2479,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.autoscalingPolicy.AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedScalingMetricSpecificationMetricDataQueriesMetricStatMetricDimensions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/autoscalingpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/autoscalingpolicy"
 
 &autoscalingpolicy.AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedScalingMetricSpecificationMetricDataQueriesMetricStatMetricDimensions {
 	Name: *string,
@@ -2525,7 +2525,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.autoscalingPolicy.AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationPredefinedLoadMetricSpecification.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/autoscalingpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/autoscalingpolicy"
 
 &autoscalingpolicy.AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationPredefinedLoadMetricSpecification {
 	PredefinedMetricType: *string,
@@ -2571,7 +2571,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.autoscalingPolicy.AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationPredefinedMetricPairSpecification.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/autoscalingpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/autoscalingpolicy"
 
 &autoscalingpolicy.AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationPredefinedMetricPairSpecification {
 	PredefinedMetricType: *string,
@@ -2617,7 +2617,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.autoscalingPolicy.AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationPredefinedScalingMetricSpecification.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/autoscalingpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/autoscalingpolicy"
 
 &autoscalingpolicy.AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationPredefinedScalingMetricSpecification {
 	PredefinedMetricType: *string,
@@ -2663,7 +2663,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.autoscalingPolicy.AutoscalingPolicyStepAdjustment.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/autoscalingpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/autoscalingpolicy"
 
 &autoscalingpolicy.AutoscalingPolicyStepAdjustment {
 	ScalingAdjustment: *f64,
@@ -2723,13 +2723,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.autoscalingPolicy.AutoscalingPolicyTargetTrackingConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/autoscalingpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/autoscalingpolicy"
 
 &autoscalingpolicy.AutoscalingPolicyTargetTrackingConfiguration {
 	TargetValue: *f64,
-	CustomizedMetricSpecification: github.com/cdktf/cdktf-provider-aws-go/aws.autoscalingPolicy.AutoscalingPolicyTargetTrackingConfigurationCustomizedMetricSpecification,
+	CustomizedMetricSpecification: github.com/cdktf/cdktf-provider-aws-go/aws/v19.autoscalingPolicy.AutoscalingPolicyTargetTrackingConfigurationCustomizedMetricSpecification,
 	DisableScaleIn: interface{},
-	PredefinedMetricSpecification: github.com/cdktf/cdktf-provider-aws-go/aws.autoscalingPolicy.AutoscalingPolicyTargetTrackingConfigurationPredefinedMetricSpecification,
+	PredefinedMetricSpecification: github.com/cdktf/cdktf-provider-aws-go/aws/v19.autoscalingPolicy.AutoscalingPolicyTargetTrackingConfigurationPredefinedMetricSpecification,
 }
 ```
 
@@ -2801,7 +2801,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.autoscalingPolicy.AutoscalingPolicyTargetTrackingConfigurationCustomizedMetricSpecification.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/autoscalingpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/autoscalingpolicy"
 
 &autoscalingpolicy.AutoscalingPolicyTargetTrackingConfigurationCustomizedMetricSpecification {
 	MetricDimension: interface{},
@@ -2921,7 +2921,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.autoscalingPolicy.AutoscalingPolicyTargetTrackingConfigurationCustomizedMetricSpecificationMetricDimension.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/autoscalingpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/autoscalingpolicy"
 
 &autoscalingpolicy.AutoscalingPolicyTargetTrackingConfigurationCustomizedMetricSpecificationMetricDimension {
 	Name: *string,
@@ -2967,13 +2967,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.autoscalingPolicy.AutoscalingPolicyTargetTrackingConfigurationCustomizedMetricSpecificationMetrics.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/autoscalingpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/autoscalingpolicy"
 
 &autoscalingpolicy.AutoscalingPolicyTargetTrackingConfigurationCustomizedMetricSpecificationMetrics {
 	Id: *string,
 	Expression: *string,
 	Label: *string,
-	MetricStat: github.com/cdktf/cdktf-provider-aws-go/aws.autoscalingPolicy.AutoscalingPolicyTargetTrackingConfigurationCustomizedMetricSpecificationMetricsMetricStat,
+	MetricStat: github.com/cdktf/cdktf-provider-aws-go/aws/v19.autoscalingPolicy.AutoscalingPolicyTargetTrackingConfigurationCustomizedMetricSpecificationMetricsMetricStat,
 	ReturnData: interface{},
 }
 ```
@@ -3060,10 +3060,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.autoscalingPolicy.AutoscalingPolicyTargetTrackingConfigurationCustomizedMetricSpecificationMetricsMetricStat.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/autoscalingpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/autoscalingpolicy"
 
 &autoscalingpolicy.AutoscalingPolicyTargetTrackingConfigurationCustomizedMetricSpecificationMetricsMetricStat {
-	Metric: github.com/cdktf/cdktf-provider-aws-go/aws.autoscalingPolicy.AutoscalingPolicyTargetTrackingConfigurationCustomizedMetricSpecificationMetricsMetricStatMetric,
+	Metric: github.com/cdktf/cdktf-provider-aws-go/aws/v19.autoscalingPolicy.AutoscalingPolicyTargetTrackingConfigurationCustomizedMetricSpecificationMetricsMetricStatMetric,
 	Stat: *string,
 	Period: *f64,
 	Unit: *string,
@@ -3136,7 +3136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.autoscalingPolicy.AutoscalingPolicyTargetTrackingConfigurationCustomizedMetricSpecificationMetricsMetricStatMetric.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/autoscalingpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/autoscalingpolicy"
 
 &autoscalingpolicy.AutoscalingPolicyTargetTrackingConfigurationCustomizedMetricSpecificationMetricsMetricStatMetric {
 	MetricName: *string,
@@ -3198,7 +3198,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.autoscalingPolicy.AutoscalingPolicyTargetTrackingConfigurationCustomizedMetricSpecificationMetricsMetricStatMetricDimensions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/autoscalingpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/autoscalingpolicy"
 
 &autoscalingpolicy.AutoscalingPolicyTargetTrackingConfigurationCustomizedMetricSpecificationMetricsMetricStatMetricDimensions {
 	Name: *string,
@@ -3244,7 +3244,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.autoscalingPolicy.AutoscalingPolicyTargetTrackingConfigurationPredefinedMetricSpecification.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/autoscalingpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/autoscalingpolicy"
 
 &autoscalingpolicy.AutoscalingPolicyTargetTrackingConfigurationPredefinedMetricSpecification {
 	PredefinedMetricType: *string,
@@ -3292,7 +3292,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.autoscalingPolicy.AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedCapacityMetricSpecificationMetricDataQueriesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/autoscalingpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/autoscalingpolicy"
 
 autoscalingpolicy.NewAutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedCapacityMetricSpecificationMetricDataQueriesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedCapacityMetricSpecificationMetricDataQueriesList
 ```
@@ -3452,7 +3452,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.autoscalingPolicy.AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedCapacityMetricSpecificationMetricDataQueriesMetricStatMetricDimensionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/autoscalingpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/autoscalingpolicy"
 
 autoscalingpolicy.NewAutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedCapacityMetricSpecificationMetricDataQueriesMetricStatMetricDimensionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedCapacityMetricSpecificationMetricDataQueriesMetricStatMetricDimensionsList
 ```
@@ -3612,7 +3612,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.autoscalingPolicy.AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedCapacityMetricSpecificationMetricDataQueriesMetricStatMetricDimensionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/autoscalingpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/autoscalingpolicy"
 
 autoscalingpolicy.NewAutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedCapacityMetricSpecificationMetricDataQueriesMetricStatMetricDimensionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedCapacityMetricSpecificationMetricDataQueriesMetricStatMetricDimensionsOutputReference
 ```
@@ -3923,7 +3923,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.autoscalingPolicy.AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedCapacityMetricSpecificationMetricDataQueriesMetricStatMetricOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/autoscalingpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/autoscalingpolicy"
 
 autoscalingpolicy.NewAutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedCapacityMetricSpecificationMetricDataQueriesMetricStatMetricOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedCapacityMetricSpecificationMetricDataQueriesMetricStatMetricOutputReference
 ```
@@ -4258,7 +4258,7 @@ func InternalValue() AutoscalingPolicyPredictiveScalingConfigurationMetricSpecif
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.autoscalingPolicy.AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedCapacityMetricSpecificationMetricDataQueriesMetricStatOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/autoscalingpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/autoscalingpolicy"
 
 autoscalingpolicy.NewAutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedCapacityMetricSpecificationMetricDataQueriesMetricStatOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedCapacityMetricSpecificationMetricDataQueriesMetricStatOutputReference
 ```
@@ -4593,7 +4593,7 @@ func InternalValue() AutoscalingPolicyPredictiveScalingConfigurationMetricSpecif
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.autoscalingPolicy.AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedCapacityMetricSpecificationMetricDataQueriesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/autoscalingpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/autoscalingpolicy"
 
 autoscalingpolicy.NewAutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedCapacityMetricSpecificationMetricDataQueriesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedCapacityMetricSpecificationMetricDataQueriesOutputReference
 ```
@@ -5011,7 +5011,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.autoscalingPolicy.AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedCapacityMetricSpecificationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/autoscalingpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/autoscalingpolicy"
 
 autoscalingpolicy.NewAutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedCapacityMetricSpecificationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedCapacityMetricSpecificationOutputReference
 ```
@@ -5295,7 +5295,7 @@ func InternalValue() AutoscalingPolicyPredictiveScalingConfigurationMetricSpecif
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.autoscalingPolicy.AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedLoadMetricSpecificationMetricDataQueriesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/autoscalingpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/autoscalingpolicy"
 
 autoscalingpolicy.NewAutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedLoadMetricSpecificationMetricDataQueriesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedLoadMetricSpecificationMetricDataQueriesList
 ```
@@ -5455,7 +5455,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.autoscalingPolicy.AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedLoadMetricSpecificationMetricDataQueriesMetricStatMetricDimensionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/autoscalingpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/autoscalingpolicy"
 
 autoscalingpolicy.NewAutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedLoadMetricSpecificationMetricDataQueriesMetricStatMetricDimensionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedLoadMetricSpecificationMetricDataQueriesMetricStatMetricDimensionsList
 ```
@@ -5615,7 +5615,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.autoscalingPolicy.AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedLoadMetricSpecificationMetricDataQueriesMetricStatMetricDimensionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/autoscalingpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/autoscalingpolicy"
 
 autoscalingpolicy.NewAutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedLoadMetricSpecificationMetricDataQueriesMetricStatMetricDimensionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedLoadMetricSpecificationMetricDataQueriesMetricStatMetricDimensionsOutputReference
 ```
@@ -5926,7 +5926,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.autoscalingPolicy.AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedLoadMetricSpecificationMetricDataQueriesMetricStatMetricOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/autoscalingpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/autoscalingpolicy"
 
 autoscalingpolicy.NewAutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedLoadMetricSpecificationMetricDataQueriesMetricStatMetricOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedLoadMetricSpecificationMetricDataQueriesMetricStatMetricOutputReference
 ```
@@ -6261,7 +6261,7 @@ func InternalValue() AutoscalingPolicyPredictiveScalingConfigurationMetricSpecif
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.autoscalingPolicy.AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedLoadMetricSpecificationMetricDataQueriesMetricStatOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/autoscalingpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/autoscalingpolicy"
 
 autoscalingpolicy.NewAutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedLoadMetricSpecificationMetricDataQueriesMetricStatOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedLoadMetricSpecificationMetricDataQueriesMetricStatOutputReference
 ```
@@ -6596,7 +6596,7 @@ func InternalValue() AutoscalingPolicyPredictiveScalingConfigurationMetricSpecif
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.autoscalingPolicy.AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedLoadMetricSpecificationMetricDataQueriesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/autoscalingpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/autoscalingpolicy"
 
 autoscalingpolicy.NewAutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedLoadMetricSpecificationMetricDataQueriesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedLoadMetricSpecificationMetricDataQueriesOutputReference
 ```
@@ -7014,7 +7014,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.autoscalingPolicy.AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedLoadMetricSpecificationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/autoscalingpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/autoscalingpolicy"
 
 autoscalingpolicy.NewAutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedLoadMetricSpecificationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedLoadMetricSpecificationOutputReference
 ```
@@ -7298,7 +7298,7 @@ func InternalValue() AutoscalingPolicyPredictiveScalingConfigurationMetricSpecif
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.autoscalingPolicy.AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedScalingMetricSpecificationMetricDataQueriesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/autoscalingpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/autoscalingpolicy"
 
 autoscalingpolicy.NewAutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedScalingMetricSpecificationMetricDataQueriesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedScalingMetricSpecificationMetricDataQueriesList
 ```
@@ -7458,7 +7458,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.autoscalingPolicy.AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedScalingMetricSpecificationMetricDataQueriesMetricStatMetricDimensionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/autoscalingpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/autoscalingpolicy"
 
 autoscalingpolicy.NewAutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedScalingMetricSpecificationMetricDataQueriesMetricStatMetricDimensionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedScalingMetricSpecificationMetricDataQueriesMetricStatMetricDimensionsList
 ```
@@ -7618,7 +7618,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.autoscalingPolicy.AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedScalingMetricSpecificationMetricDataQueriesMetricStatMetricDimensionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/autoscalingpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/autoscalingpolicy"
 
 autoscalingpolicy.NewAutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedScalingMetricSpecificationMetricDataQueriesMetricStatMetricDimensionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedScalingMetricSpecificationMetricDataQueriesMetricStatMetricDimensionsOutputReference
 ```
@@ -7929,7 +7929,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.autoscalingPolicy.AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedScalingMetricSpecificationMetricDataQueriesMetricStatMetricOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/autoscalingpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/autoscalingpolicy"
 
 autoscalingpolicy.NewAutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedScalingMetricSpecificationMetricDataQueriesMetricStatMetricOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedScalingMetricSpecificationMetricDataQueriesMetricStatMetricOutputReference
 ```
@@ -8264,7 +8264,7 @@ func InternalValue() AutoscalingPolicyPredictiveScalingConfigurationMetricSpecif
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.autoscalingPolicy.AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedScalingMetricSpecificationMetricDataQueriesMetricStatOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/autoscalingpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/autoscalingpolicy"
 
 autoscalingpolicy.NewAutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedScalingMetricSpecificationMetricDataQueriesMetricStatOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedScalingMetricSpecificationMetricDataQueriesMetricStatOutputReference
 ```
@@ -8599,7 +8599,7 @@ func InternalValue() AutoscalingPolicyPredictiveScalingConfigurationMetricSpecif
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.autoscalingPolicy.AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedScalingMetricSpecificationMetricDataQueriesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/autoscalingpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/autoscalingpolicy"
 
 autoscalingpolicy.NewAutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedScalingMetricSpecificationMetricDataQueriesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedScalingMetricSpecificationMetricDataQueriesOutputReference
 ```
@@ -9017,7 +9017,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.autoscalingPolicy.AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedScalingMetricSpecificationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/autoscalingpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/autoscalingpolicy"
 
 autoscalingpolicy.NewAutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedScalingMetricSpecificationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationCustomizedScalingMetricSpecificationOutputReference
 ```
@@ -9301,7 +9301,7 @@ func InternalValue() AutoscalingPolicyPredictiveScalingConfigurationMetricSpecif
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.autoscalingPolicy.AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/autoscalingpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/autoscalingpolicy"
 
 autoscalingpolicy.NewAutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationOutputReference
 ```
@@ -9824,7 +9824,7 @@ func InternalValue() AutoscalingPolicyPredictiveScalingConfigurationMetricSpecif
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.autoscalingPolicy.AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationPredefinedLoadMetricSpecificationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/autoscalingpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/autoscalingpolicy"
 
 autoscalingpolicy.NewAutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationPredefinedLoadMetricSpecificationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationPredefinedLoadMetricSpecificationOutputReference
 ```
@@ -10124,7 +10124,7 @@ func InternalValue() AutoscalingPolicyPredictiveScalingConfigurationMetricSpecif
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.autoscalingPolicy.AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationPredefinedMetricPairSpecificationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/autoscalingpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/autoscalingpolicy"
 
 autoscalingpolicy.NewAutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationPredefinedMetricPairSpecificationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationPredefinedMetricPairSpecificationOutputReference
 ```
@@ -10424,7 +10424,7 @@ func InternalValue() AutoscalingPolicyPredictiveScalingConfigurationMetricSpecif
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.autoscalingPolicy.AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationPredefinedScalingMetricSpecificationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/autoscalingpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/autoscalingpolicy"
 
 autoscalingpolicy.NewAutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationPredefinedScalingMetricSpecificationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationPredefinedScalingMetricSpecificationOutputReference
 ```
@@ -10724,7 +10724,7 @@ func InternalValue() AutoscalingPolicyPredictiveScalingConfigurationMetricSpecif
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.autoscalingPolicy.AutoscalingPolicyPredictiveScalingConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/autoscalingpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/autoscalingpolicy"
 
 autoscalingpolicy.NewAutoscalingPolicyPredictiveScalingConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AutoscalingPolicyPredictiveScalingConfigurationOutputReference
 ```
@@ -11124,7 +11124,7 @@ func InternalValue() AutoscalingPolicyPredictiveScalingConfiguration
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.autoscalingPolicy.AutoscalingPolicyStepAdjustmentList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/autoscalingpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/autoscalingpolicy"
 
 autoscalingpolicy.NewAutoscalingPolicyStepAdjustmentList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AutoscalingPolicyStepAdjustmentList
 ```
@@ -11284,7 +11284,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.autoscalingPolicy.AutoscalingPolicyStepAdjustmentOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/autoscalingpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/autoscalingpolicy"
 
 autoscalingpolicy.NewAutoscalingPolicyStepAdjustmentOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AutoscalingPolicyStepAdjustmentOutputReference
 ```
@@ -11631,7 +11631,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.autoscalingPolicy.AutoscalingPolicyTargetTrackingConfigurationCustomizedMetricSpecificationMetricDimensionList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/autoscalingpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/autoscalingpolicy"
 
 autoscalingpolicy.NewAutoscalingPolicyTargetTrackingConfigurationCustomizedMetricSpecificationMetricDimensionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AutoscalingPolicyTargetTrackingConfigurationCustomizedMetricSpecificationMetricDimensionList
 ```
@@ -11791,7 +11791,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.autoscalingPolicy.AutoscalingPolicyTargetTrackingConfigurationCustomizedMetricSpecificationMetricDimensionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/autoscalingpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/autoscalingpolicy"
 
 autoscalingpolicy.NewAutoscalingPolicyTargetTrackingConfigurationCustomizedMetricSpecificationMetricDimensionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AutoscalingPolicyTargetTrackingConfigurationCustomizedMetricSpecificationMetricDimensionOutputReference
 ```
@@ -12102,7 +12102,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.autoscalingPolicy.AutoscalingPolicyTargetTrackingConfigurationCustomizedMetricSpecificationMetricsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/autoscalingpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/autoscalingpolicy"
 
 autoscalingpolicy.NewAutoscalingPolicyTargetTrackingConfigurationCustomizedMetricSpecificationMetricsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AutoscalingPolicyTargetTrackingConfigurationCustomizedMetricSpecificationMetricsList
 ```
@@ -12262,7 +12262,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.autoscalingPolicy.AutoscalingPolicyTargetTrackingConfigurationCustomizedMetricSpecificationMetricsMetricStatMetricDimensionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/autoscalingpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/autoscalingpolicy"
 
 autoscalingpolicy.NewAutoscalingPolicyTargetTrackingConfigurationCustomizedMetricSpecificationMetricsMetricStatMetricDimensionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AutoscalingPolicyTargetTrackingConfigurationCustomizedMetricSpecificationMetricsMetricStatMetricDimensionsList
 ```
@@ -12422,7 +12422,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.autoscalingPolicy.AutoscalingPolicyTargetTrackingConfigurationCustomizedMetricSpecificationMetricsMetricStatMetricDimensionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/autoscalingpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/autoscalingpolicy"
 
 autoscalingpolicy.NewAutoscalingPolicyTargetTrackingConfigurationCustomizedMetricSpecificationMetricsMetricStatMetricDimensionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AutoscalingPolicyTargetTrackingConfigurationCustomizedMetricSpecificationMetricsMetricStatMetricDimensionsOutputReference
 ```
@@ -12733,7 +12733,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.autoscalingPolicy.AutoscalingPolicyTargetTrackingConfigurationCustomizedMetricSpecificationMetricsMetricStatMetricOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/autoscalingpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/autoscalingpolicy"
 
 autoscalingpolicy.NewAutoscalingPolicyTargetTrackingConfigurationCustomizedMetricSpecificationMetricsMetricStatMetricOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AutoscalingPolicyTargetTrackingConfigurationCustomizedMetricSpecificationMetricsMetricStatMetricOutputReference
 ```
@@ -13068,7 +13068,7 @@ func InternalValue() AutoscalingPolicyTargetTrackingConfigurationCustomizedMetri
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.autoscalingPolicy.AutoscalingPolicyTargetTrackingConfigurationCustomizedMetricSpecificationMetricsMetricStatOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/autoscalingpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/autoscalingpolicy"
 
 autoscalingpolicy.NewAutoscalingPolicyTargetTrackingConfigurationCustomizedMetricSpecificationMetricsMetricStatOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AutoscalingPolicyTargetTrackingConfigurationCustomizedMetricSpecificationMetricsMetricStatOutputReference
 ```
@@ -13432,7 +13432,7 @@ func InternalValue() AutoscalingPolicyTargetTrackingConfigurationCustomizedMetri
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.autoscalingPolicy.AutoscalingPolicyTargetTrackingConfigurationCustomizedMetricSpecificationMetricsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/autoscalingpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/autoscalingpolicy"
 
 autoscalingpolicy.NewAutoscalingPolicyTargetTrackingConfigurationCustomizedMetricSpecificationMetricsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AutoscalingPolicyTargetTrackingConfigurationCustomizedMetricSpecificationMetricsOutputReference
 ```
@@ -13850,7 +13850,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.autoscalingPolicy.AutoscalingPolicyTargetTrackingConfigurationCustomizedMetricSpecificationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/autoscalingpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/autoscalingpolicy"
 
 autoscalingpolicy.NewAutoscalingPolicyTargetTrackingConfigurationCustomizedMetricSpecificationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AutoscalingPolicyTargetTrackingConfigurationCustomizedMetricSpecificationOutputReference
 ```
@@ -14328,7 +14328,7 @@ func InternalValue() AutoscalingPolicyTargetTrackingConfigurationCustomizedMetri
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.autoscalingPolicy.AutoscalingPolicyTargetTrackingConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/autoscalingpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/autoscalingpolicy"
 
 autoscalingpolicy.NewAutoscalingPolicyTargetTrackingConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AutoscalingPolicyTargetTrackingConfigurationOutputReference
 ```
@@ -14712,7 +14712,7 @@ func InternalValue() AutoscalingPolicyTargetTrackingConfiguration
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.autoscalingPolicy.AutoscalingPolicyTargetTrackingConfigurationPredefinedMetricSpecificationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/autoscalingpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/autoscalingpolicy"
 
 autoscalingpolicy.NewAutoscalingPolicyTargetTrackingConfigurationPredefinedMetricSpecificationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AutoscalingPolicyTargetTrackingConfigurationPredefinedMetricSpecificationOutputReference
 ```
