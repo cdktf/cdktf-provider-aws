@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/route53recoverycontrolconfig_cluster
 // generated from terraform resource schema
 
