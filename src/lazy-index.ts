@@ -348,6 +348,7 @@ Object.defineProperty(exports, 'customerGateway', { get: function () { return re
 Object.defineProperty(exports, 'customerprofilesDomain', { get: function () { return require('./customerprofiles-domain'); } });
 Object.defineProperty(exports, 'customerprofilesProfile', { get: function () { return require('./customerprofiles-profile'); } });
 Object.defineProperty(exports, 'dataexchangeDataSet', { get: function () { return require('./dataexchange-data-set'); } });
+Object.defineProperty(exports, 'dataexchangeEventAction', { get: function () { return require('./dataexchange-event-action'); } });
 Object.defineProperty(exports, 'dataexchangeRevision', { get: function () { return require('./dataexchange-revision'); } });
 Object.defineProperty(exports, 'datapipelinePipeline', { get: function () { return require('./datapipeline-pipeline'); } });
 Object.defineProperty(exports, 'datapipelinePipelineDefinition', { get: function () { return require('./datapipeline-pipeline-definition'); } });
@@ -783,6 +784,7 @@ Object.defineProperty(exports, 'kmsReplicaKey', { get: function () { return requ
 Object.defineProperty(exports, 'lakeformationDataCellsFilter', { get: function () { return require('./lakeformation-data-cells-filter'); } });
 Object.defineProperty(exports, 'lakeformationDataLakeSettings', { get: function () { return require('./lakeformation-data-lake-settings'); } });
 Object.defineProperty(exports, 'lakeformationLfTag', { get: function () { return require('./lakeformation-lf-tag'); } });
+Object.defineProperty(exports, 'lakeformationOptIn', { get: function () { return require('./lakeformation-opt-in'); } });
 Object.defineProperty(exports, 'lakeformationPermissions', { get: function () { return require('./lakeformation-permissions'); } });
 Object.defineProperty(exports, 'lakeformationResource', { get: function () { return require('./lakeformation-resource'); } });
 Object.defineProperty(exports, 'lakeformationResourceLfTag', { get: function () { return require('./lakeformation-resource-lf-tag'); } });

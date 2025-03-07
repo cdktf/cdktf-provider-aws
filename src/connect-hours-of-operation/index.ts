@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/connect_hours_of_operation
+// https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/connect_hours_of_operation
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,50 +13,50 @@ import * as cdktf from 'cdktf';
 
 export interface ConnectHoursOfOperationConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/connect_hours_of_operation#description ConnectHoursOfOperation#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/connect_hours_of_operation#description ConnectHoursOfOperation#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/connect_hours_of_operation#id ConnectHoursOfOperation#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/connect_hours_of_operation#id ConnectHoursOfOperation#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/connect_hours_of_operation#instance_id ConnectHoursOfOperation#instance_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/connect_hours_of_operation#instance_id ConnectHoursOfOperation#instance_id}
   */
   readonly instanceId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/connect_hours_of_operation#name ConnectHoursOfOperation#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/connect_hours_of_operation#name ConnectHoursOfOperation#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/connect_hours_of_operation#tags ConnectHoursOfOperation#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/connect_hours_of_operation#tags ConnectHoursOfOperation#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/connect_hours_of_operation#tags_all ConnectHoursOfOperation#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/connect_hours_of_operation#tags_all ConnectHoursOfOperation#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/connect_hours_of_operation#time_zone ConnectHoursOfOperation#time_zone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/connect_hours_of_operation#time_zone ConnectHoursOfOperation#time_zone}
   */
   readonly timeZone: string;
   /**
   * config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/connect_hours_of_operation#config ConnectHoursOfOperation#config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/connect_hours_of_operation#config ConnectHoursOfOperation#config}
   */
   readonly config: ConnectHoursOfOperationConfigA[] | cdktf.IResolvable;
 }
 export interface ConnectHoursOfOperationConfigEndTime {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/connect_hours_of_operation#hours ConnectHoursOfOperation#hours}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/connect_hours_of_operation#hours ConnectHoursOfOperation#hours}
   */
   readonly hours: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/connect_hours_of_operation#minutes ConnectHoursOfOperation#minutes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/connect_hours_of_operation#minutes ConnectHoursOfOperation#minutes}
   */
   readonly minutes: number;
 }
@@ -163,11 +163,11 @@ export class ConnectHoursOfOperationConfigEndTimeOutputReference extends cdktf.C
 }
 export interface ConnectHoursOfOperationConfigStartTime {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/connect_hours_of_operation#hours ConnectHoursOfOperation#hours}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/connect_hours_of_operation#hours ConnectHoursOfOperation#hours}
   */
   readonly hours: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/connect_hours_of_operation#minutes ConnectHoursOfOperation#minutes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/connect_hours_of_operation#minutes ConnectHoursOfOperation#minutes}
   */
   readonly minutes: number;
 }
@@ -274,19 +274,19 @@ export class ConnectHoursOfOperationConfigStartTimeOutputReference extends cdktf
 }
 export interface ConnectHoursOfOperationConfigA {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/connect_hours_of_operation#day ConnectHoursOfOperation#day}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/connect_hours_of_operation#day ConnectHoursOfOperation#day}
   */
   readonly day: string;
   /**
   * end_time block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/connect_hours_of_operation#end_time ConnectHoursOfOperation#end_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/connect_hours_of_operation#end_time ConnectHoursOfOperation#end_time}
   */
   readonly endTime: ConnectHoursOfOperationConfigEndTime;
   /**
   * start_time block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/connect_hours_of_operation#start_time ConnectHoursOfOperation#start_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/connect_hours_of_operation#start_time ConnectHoursOfOperation#start_time}
   */
   readonly startTime: ConnectHoursOfOperationConfigStartTime;
 }
@@ -451,7 +451,7 @@ export class ConnectHoursOfOperationConfigAList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/connect_hours_of_operation aws_connect_hours_of_operation}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/connect_hours_of_operation aws_connect_hours_of_operation}
 */
 export class ConnectHoursOfOperation extends cdktf.TerraformResource {
 
@@ -467,7 +467,7 @@ export class ConnectHoursOfOperation extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ConnectHoursOfOperation resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ConnectHoursOfOperation to import
-  * @param importFromId The id of the existing ConnectHoursOfOperation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/connect_hours_of_operation#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ConnectHoursOfOperation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/connect_hours_of_operation#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ConnectHoursOfOperation to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -479,7 +479,7 @@ export class ConnectHoursOfOperation extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/connect_hours_of_operation aws_connect_hours_of_operation} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/connect_hours_of_operation aws_connect_hours_of_operation} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -490,7 +490,7 @@ export class ConnectHoursOfOperation extends cdktf.TerraformResource {
       terraformResourceType: 'aws_connect_hours_of_operation',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.89.0',
+        providerVersion: '5.90.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

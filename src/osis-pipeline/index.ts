@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/osis_pipeline
+// https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/osis_pipeline
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,59 +13,59 @@ import * as cdktf from 'cdktf';
 
 export interface OsisPipelineConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/osis_pipeline#max_units OsisPipeline#max_units}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/osis_pipeline#max_units OsisPipeline#max_units}
   */
   readonly maxUnits: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/osis_pipeline#min_units OsisPipeline#min_units}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/osis_pipeline#min_units OsisPipeline#min_units}
   */
   readonly minUnits: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/osis_pipeline#pipeline_configuration_body OsisPipeline#pipeline_configuration_body}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/osis_pipeline#pipeline_configuration_body OsisPipeline#pipeline_configuration_body}
   */
   readonly pipelineConfigurationBody: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/osis_pipeline#pipeline_name OsisPipeline#pipeline_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/osis_pipeline#pipeline_name OsisPipeline#pipeline_name}
   */
   readonly pipelineName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/osis_pipeline#tags OsisPipeline#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/osis_pipeline#tags OsisPipeline#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
   * buffer_options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/osis_pipeline#buffer_options OsisPipeline#buffer_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/osis_pipeline#buffer_options OsisPipeline#buffer_options}
   */
   readonly bufferOptions?: OsisPipelineBufferOptions[] | cdktf.IResolvable;
   /**
   * encryption_at_rest_options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/osis_pipeline#encryption_at_rest_options OsisPipeline#encryption_at_rest_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/osis_pipeline#encryption_at_rest_options OsisPipeline#encryption_at_rest_options}
   */
   readonly encryptionAtRestOptions?: OsisPipelineEncryptionAtRestOptions[] | cdktf.IResolvable;
   /**
   * log_publishing_options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/osis_pipeline#log_publishing_options OsisPipeline#log_publishing_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/osis_pipeline#log_publishing_options OsisPipeline#log_publishing_options}
   */
   readonly logPublishingOptions?: OsisPipelineLogPublishingOptions[] | cdktf.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/osis_pipeline#timeouts OsisPipeline#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/osis_pipeline#timeouts OsisPipeline#timeouts}
   */
   readonly timeouts?: OsisPipelineTimeouts;
   /**
   * vpc_options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/osis_pipeline#vpc_options OsisPipeline#vpc_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/osis_pipeline#vpc_options OsisPipeline#vpc_options}
   */
   readonly vpcOptions?: OsisPipelineVpcOptions[] | cdktf.IResolvable;
 }
 export interface OsisPipelineBufferOptions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/osis_pipeline#persistent_buffer_enabled OsisPipeline#persistent_buffer_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/osis_pipeline#persistent_buffer_enabled OsisPipeline#persistent_buffer_enabled}
   */
   readonly persistentBufferEnabled: boolean | cdktf.IResolvable;
 }
@@ -178,7 +178,7 @@ export class OsisPipelineBufferOptionsList extends cdktf.ComplexList {
 }
 export interface OsisPipelineEncryptionAtRestOptions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/osis_pipeline#kms_key_arn OsisPipeline#kms_key_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/osis_pipeline#kms_key_arn OsisPipeline#kms_key_arn}
   */
   readonly kmsKeyArn: string;
 }
@@ -291,7 +291,7 @@ export class OsisPipelineEncryptionAtRestOptionsList extends cdktf.ComplexList {
 }
 export interface OsisPipelineLogPublishingOptionsCloudwatchLogDestination {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/osis_pipeline#log_group OsisPipeline#log_group}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/osis_pipeline#log_group OsisPipeline#log_group}
   */
   readonly logGroup: string;
 }
@@ -404,13 +404,13 @@ export class OsisPipelineLogPublishingOptionsCloudwatchLogDestinationList extend
 }
 export interface OsisPipelineLogPublishingOptions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/osis_pipeline#is_logging_enabled OsisPipeline#is_logging_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/osis_pipeline#is_logging_enabled OsisPipeline#is_logging_enabled}
   */
   readonly isLoggingEnabled?: boolean | cdktf.IResolvable;
   /**
   * cloudwatch_log_destination block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/osis_pipeline#cloudwatch_log_destination OsisPipeline#cloudwatch_log_destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/osis_pipeline#cloudwatch_log_destination OsisPipeline#cloudwatch_log_destination}
   */
   readonly cloudwatchLogDestination?: OsisPipelineLogPublishingOptionsCloudwatchLogDestination[] | cdktf.IResolvable;
 }
@@ -557,19 +557,19 @@ export interface OsisPipelineTimeouts {
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/osis_pipeline#create OsisPipeline#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/osis_pipeline#create OsisPipeline#create}
   */
   readonly create?: string;
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/osis_pipeline#delete OsisPipeline#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/osis_pipeline#delete OsisPipeline#delete}
   */
   readonly delete?: string;
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/osis_pipeline#update OsisPipeline#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/osis_pipeline#update OsisPipeline#update}
   */
   readonly update?: string;
 }
@@ -721,13 +721,17 @@ export class OsisPipelineTimeoutsOutputReference extends cdktf.ComplexObject {
 }
 export interface OsisPipelineVpcOptions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/osis_pipeline#security_group_ids OsisPipeline#security_group_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/osis_pipeline#security_group_ids OsisPipeline#security_group_ids}
   */
   readonly securityGroupIds?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/osis_pipeline#subnet_ids OsisPipeline#subnet_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/osis_pipeline#subnet_ids OsisPipeline#subnet_ids}
   */
   readonly subnetIds: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/osis_pipeline#vpc_endpoint_management OsisPipeline#vpc_endpoint_management}
+  */
+  readonly vpcEndpointManagement?: string;
 }
 
 export function osisPipelineVpcOptionsToTerraform(struct?: OsisPipelineVpcOptions | cdktf.IResolvable): any {
@@ -738,6 +742,7 @@ export function osisPipelineVpcOptionsToTerraform(struct?: OsisPipelineVpcOption
   return {
     security_group_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.securityGroupIds),
     subnet_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.subnetIds),
+    vpc_endpoint_management: cdktf.stringToTerraform(struct!.vpcEndpointManagement),
   }
 }
 
@@ -759,6 +764,12 @@ export function osisPipelineVpcOptionsToHclTerraform(struct?: OsisPipelineVpcOpt
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
+    },
+    vpc_endpoint_management: {
+      value: cdktf.stringToHclTerraform(struct!.vpcEndpointManagement),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
     },
   };
 
@@ -794,6 +805,10 @@ export class OsisPipelineVpcOptionsOutputReference extends cdktf.ComplexObject {
       hasAnyValues = true;
       internalValueResult.subnetIds = this._subnetIds;
     }
+    if (this._vpcEndpointManagement !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.vpcEndpointManagement = this._vpcEndpointManagement;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -803,6 +818,7 @@ export class OsisPipelineVpcOptionsOutputReference extends cdktf.ComplexObject {
       this.resolvableValue = undefined;
       this._securityGroupIds = undefined;
       this._subnetIds = undefined;
+      this._vpcEndpointManagement = undefined;
     }
     else if (cdktf.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
@@ -813,6 +829,7 @@ export class OsisPipelineVpcOptionsOutputReference extends cdktf.ComplexObject {
       this.resolvableValue = undefined;
       this._securityGroupIds = value.securityGroupIds;
       this._subnetIds = value.subnetIds;
+      this._vpcEndpointManagement = value.vpcEndpointManagement;
     }
   }
 
@@ -844,6 +861,22 @@ export class OsisPipelineVpcOptionsOutputReference extends cdktf.ComplexObject {
   public get subnetIdsInput() {
     return this._subnetIds;
   }
+
+  // vpc_endpoint_management - computed: false, optional: true, required: false
+  private _vpcEndpointManagement?: string; 
+  public get vpcEndpointManagement() {
+    return this.getStringAttribute('vpc_endpoint_management');
+  }
+  public set vpcEndpointManagement(value: string) {
+    this._vpcEndpointManagement = value;
+  }
+  public resetVpcEndpointManagement() {
+    this._vpcEndpointManagement = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get vpcEndpointManagementInput() {
+    return this._vpcEndpointManagement;
+  }
 }
 
 export class OsisPipelineVpcOptionsList extends cdktf.ComplexList {
@@ -867,7 +900,7 @@ export class OsisPipelineVpcOptionsList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/osis_pipeline aws_osis_pipeline}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/osis_pipeline aws_osis_pipeline}
 */
 export class OsisPipeline extends cdktf.TerraformResource {
 
@@ -883,7 +916,7 @@ export class OsisPipeline extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a OsisPipeline resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the OsisPipeline to import
-  * @param importFromId The id of the existing OsisPipeline that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/osis_pipeline#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing OsisPipeline that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/osis_pipeline#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the OsisPipeline to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -895,7 +928,7 @@ export class OsisPipeline extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/osis_pipeline aws_osis_pipeline} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/osis_pipeline aws_osis_pipeline} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -906,7 +939,7 @@ export class OsisPipeline extends cdktf.TerraformResource {
       terraformResourceType: 'aws_osis_pipeline',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.89.0',
+        providerVersion: '5.90.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

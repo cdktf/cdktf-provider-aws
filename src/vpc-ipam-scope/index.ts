@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/vpc_ipam_scope
+// https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/vpc_ipam_scope
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,46 +13,46 @@ import * as cdktf from 'cdktf';
 
 export interface VpcIpamScopeConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/vpc_ipam_scope#description VpcIpamScope#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/vpc_ipam_scope#description VpcIpamScope#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/vpc_ipam_scope#id VpcIpamScope#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/vpc_ipam_scope#id VpcIpamScope#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/vpc_ipam_scope#ipam_id VpcIpamScope#ipam_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/vpc_ipam_scope#ipam_id VpcIpamScope#ipam_id}
   */
   readonly ipamId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/vpc_ipam_scope#tags VpcIpamScope#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/vpc_ipam_scope#tags VpcIpamScope#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/vpc_ipam_scope#tags_all VpcIpamScope#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/vpc_ipam_scope#tags_all VpcIpamScope#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/vpc_ipam_scope#timeouts VpcIpamScope#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/vpc_ipam_scope#timeouts VpcIpamScope#timeouts}
   */
   readonly timeouts?: VpcIpamScopeTimeouts;
 }
 export interface VpcIpamScopeTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/vpc_ipam_scope#create VpcIpamScope#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/vpc_ipam_scope#create VpcIpamScope#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/vpc_ipam_scope#delete VpcIpamScope#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/vpc_ipam_scope#delete VpcIpamScope#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/vpc_ipam_scope#update VpcIpamScope#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/vpc_ipam_scope#update VpcIpamScope#update}
   */
   readonly update?: string;
 }
@@ -204,7 +204,7 @@ export class VpcIpamScopeTimeoutsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/vpc_ipam_scope aws_vpc_ipam_scope}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/vpc_ipam_scope aws_vpc_ipam_scope}
 */
 export class VpcIpamScope extends cdktf.TerraformResource {
 
@@ -220,7 +220,7 @@ export class VpcIpamScope extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a VpcIpamScope resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the VpcIpamScope to import
-  * @param importFromId The id of the existing VpcIpamScope that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/vpc_ipam_scope#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing VpcIpamScope that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/vpc_ipam_scope#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the VpcIpamScope to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -232,7 +232,7 @@ export class VpcIpamScope extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/vpc_ipam_scope aws_vpc_ipam_scope} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/vpc_ipam_scope aws_vpc_ipam_scope} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -243,7 +243,7 @@ export class VpcIpamScope extends cdktf.TerraformResource {
       terraformResourceType: 'aws_vpc_ipam_scope',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.89.0',
+        providerVersion: '5.90.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
