@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/glue_classifier
+// https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/glue_classifier
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,76 +8,76 @@ import * as cdktf from 'cdktf';
 
 export interface GlueClassifierConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/glue_classifier#id GlueClassifier#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/glue_classifier#id GlueClassifier#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/glue_classifier#name GlueClassifier#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/glue_classifier#name GlueClassifier#name}
   */
   readonly name: string;
   /**
   * csv_classifier block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/glue_classifier#csv_classifier GlueClassifier#csv_classifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/glue_classifier#csv_classifier GlueClassifier#csv_classifier}
   */
   readonly csvClassifier?: GlueClassifierCsvClassifier;
   /**
   * grok_classifier block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/glue_classifier#grok_classifier GlueClassifier#grok_classifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/glue_classifier#grok_classifier GlueClassifier#grok_classifier}
   */
   readonly grokClassifier?: GlueClassifierGrokClassifier;
   /**
   * json_classifier block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/glue_classifier#json_classifier GlueClassifier#json_classifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/glue_classifier#json_classifier GlueClassifier#json_classifier}
   */
   readonly jsonClassifier?: GlueClassifierJsonClassifier;
   /**
   * xml_classifier block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/glue_classifier#xml_classifier GlueClassifier#xml_classifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/glue_classifier#xml_classifier GlueClassifier#xml_classifier}
   */
   readonly xmlClassifier?: GlueClassifierXmlClassifier;
 }
 export interface GlueClassifierCsvClassifier {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/glue_classifier#allow_single_column GlueClassifier#allow_single_column}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/glue_classifier#allow_single_column GlueClassifier#allow_single_column}
   */
   readonly allowSingleColumn?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/glue_classifier#contains_header GlueClassifier#contains_header}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/glue_classifier#contains_header GlueClassifier#contains_header}
   */
   readonly containsHeader?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/glue_classifier#custom_datatype_configured GlueClassifier#custom_datatype_configured}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/glue_classifier#custom_datatype_configured GlueClassifier#custom_datatype_configured}
   */
   readonly customDatatypeConfigured?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/glue_classifier#custom_datatypes GlueClassifier#custom_datatypes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/glue_classifier#custom_datatypes GlueClassifier#custom_datatypes}
   */
   readonly customDatatypes?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/glue_classifier#delimiter GlueClassifier#delimiter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/glue_classifier#delimiter GlueClassifier#delimiter}
   */
   readonly delimiter?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/glue_classifier#disable_value_trimming GlueClassifier#disable_value_trimming}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/glue_classifier#disable_value_trimming GlueClassifier#disable_value_trimming}
   */
   readonly disableValueTrimming?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/glue_classifier#header GlueClassifier#header}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/glue_classifier#header GlueClassifier#header}
   */
   readonly header?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/glue_classifier#quote_symbol GlueClassifier#quote_symbol}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/glue_classifier#quote_symbol GlueClassifier#quote_symbol}
   */
   readonly quoteSymbol?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/glue_classifier#serde GlueClassifier#serde}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/glue_classifier#serde GlueClassifier#serde}
   */
   readonly serde?: string;
 }
@@ -398,15 +393,15 @@ export class GlueClassifierCsvClassifierOutputReference extends cdktf.ComplexObj
 }
 export interface GlueClassifierGrokClassifier {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/glue_classifier#classification GlueClassifier#classification}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/glue_classifier#classification GlueClassifier#classification}
   */
   readonly classification: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/glue_classifier#custom_patterns GlueClassifier#custom_patterns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/glue_classifier#custom_patterns GlueClassifier#custom_patterns}
   */
   readonly customPatterns?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/glue_classifier#grok_pattern GlueClassifier#grok_pattern}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/glue_classifier#grok_pattern GlueClassifier#grok_pattern}
   */
   readonly grokPattern: string;
 }
@@ -542,7 +537,7 @@ export class GlueClassifierGrokClassifierOutputReference extends cdktf.ComplexOb
 }
 export interface GlueClassifierJsonClassifier {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/glue_classifier#json_path GlueClassifier#json_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/glue_classifier#json_path GlueClassifier#json_path}
   */
   readonly jsonPath: string;
 }
@@ -623,11 +618,11 @@ export class GlueClassifierJsonClassifierOutputReference extends cdktf.ComplexOb
 }
 export interface GlueClassifierXmlClassifier {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/glue_classifier#classification GlueClassifier#classification}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/glue_classifier#classification GlueClassifier#classification}
   */
   readonly classification: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/glue_classifier#row_tag GlueClassifier#row_tag}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/glue_classifier#row_tag GlueClassifier#row_tag}
   */
   readonly rowTag: string;
 }
@@ -734,7 +729,7 @@ export class GlueClassifierXmlClassifierOutputReference extends cdktf.ComplexObj
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/glue_classifier aws_glue_classifier}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/glue_classifier aws_glue_classifier}
 */
 export class GlueClassifier extends cdktf.TerraformResource {
 
@@ -750,7 +745,7 @@ export class GlueClassifier extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GlueClassifier resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GlueClassifier to import
-  * @param importFromId The id of the existing GlueClassifier that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/glue_classifier#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GlueClassifier that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/glue_classifier#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GlueClassifier to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -762,7 +757,7 @@ export class GlueClassifier extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/glue_classifier aws_glue_classifier} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/glue_classifier aws_glue_classifier} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -773,7 +768,7 @@ export class GlueClassifier extends cdktf.TerraformResource {
       terraformResourceType: 'aws_glue_classifier',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.89.0',
+        providerVersion: '5.90.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

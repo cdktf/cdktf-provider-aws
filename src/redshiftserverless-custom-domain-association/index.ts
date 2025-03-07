@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/redshiftserverless_custom_domain_association
+// https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/redshiftserverless_custom_domain_association
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,21 +8,21 @@ import * as cdktf from 'cdktf';
 
 export interface RedshiftserverlessCustomDomainAssociationConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/redshiftserverless_custom_domain_association#custom_domain_certificate_arn RedshiftserverlessCustomDomainAssociation#custom_domain_certificate_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/redshiftserverless_custom_domain_association#custom_domain_certificate_arn RedshiftserverlessCustomDomainAssociation#custom_domain_certificate_arn}
   */
   readonly customDomainCertificateArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/redshiftserverless_custom_domain_association#custom_domain_name RedshiftserverlessCustomDomainAssociation#custom_domain_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/redshiftserverless_custom_domain_association#custom_domain_name RedshiftserverlessCustomDomainAssociation#custom_domain_name}
   */
   readonly customDomainName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/redshiftserverless_custom_domain_association#workgroup_name RedshiftserverlessCustomDomainAssociation#workgroup_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/redshiftserverless_custom_domain_association#workgroup_name RedshiftserverlessCustomDomainAssociation#workgroup_name}
   */
   readonly workgroupName: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/redshiftserverless_custom_domain_association aws_redshiftserverless_custom_domain_association}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/redshiftserverless_custom_domain_association aws_redshiftserverless_custom_domain_association}
 */
 export class RedshiftserverlessCustomDomainAssociation extends cdktf.TerraformResource {
 
@@ -43,7 +38,7 @@ export class RedshiftserverlessCustomDomainAssociation extends cdktf.TerraformRe
   * Generates CDKTF code for importing a RedshiftserverlessCustomDomainAssociation resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the RedshiftserverlessCustomDomainAssociation to import
-  * @param importFromId The id of the existing RedshiftserverlessCustomDomainAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/redshiftserverless_custom_domain_association#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing RedshiftserverlessCustomDomainAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/redshiftserverless_custom_domain_association#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the RedshiftserverlessCustomDomainAssociation to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -55,7 +50,7 @@ export class RedshiftserverlessCustomDomainAssociation extends cdktf.TerraformRe
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/redshiftserverless_custom_domain_association aws_redshiftserverless_custom_domain_association} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/redshiftserverless_custom_domain_association aws_redshiftserverless_custom_domain_association} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -66,7 +61,7 @@ export class RedshiftserverlessCustomDomainAssociation extends cdktf.TerraformRe
       terraformResourceType: 'aws_redshiftserverless_custom_domain_association',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.89.0',
+        providerVersion: '5.90.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

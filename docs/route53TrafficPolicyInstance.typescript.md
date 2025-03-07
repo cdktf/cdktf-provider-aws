@@ -4,7 +4,7 @@
 
 ### Route53TrafficPolicyInstance <a name="Route53TrafficPolicyInstance" id="@cdktf/provider-aws.route53TrafficPolicyInstance.Route53TrafficPolicyInstance"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/route53_traffic_policy_instance aws_route53_traffic_policy_instance}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/route53_traffic_policy_instance aws_route53_traffic_policy_instance}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.route53TrafficPolicyInstance.Route53TrafficPolicyInstance.Initializer"></a>
 
@@ -474,7 +474,7 @@ The construct id used in the generated config for the Route53TrafficPolicyInstan
 
 The id of the existing Route53TrafficPolicyInstance that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/route53_traffic_policy_instance#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/route53_traffic_policy_instance#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -504,6 +504,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0
 | <code><a href="#@cdktf/provider-aws.route53TrafficPolicyInstance.Route53TrafficPolicyInstance.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.route53TrafficPolicyInstance.Route53TrafficPolicyInstance.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.route53TrafficPolicyInstance.Route53TrafficPolicyInstance.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.route53TrafficPolicyInstance.Route53TrafficPolicyInstance.property.arn">arn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.route53TrafficPolicyInstance.Route53TrafficPolicyInstance.property.hostedZoneIdInput">hostedZoneIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.route53TrafficPolicyInstance.Route53TrafficPolicyInstance.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.route53TrafficPolicyInstance.Route53TrafficPolicyInstance.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
@@ -658,6 +659,16 @@ public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExe
 ```
 
 - *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
+
+---
+
+##### `arn`<sup>Required</sup> <a name="arn" id="@cdktf/provider-aws.route53TrafficPolicyInstance.Route53TrafficPolicyInstance.property.arn"></a>
+
+```typescript
+public readonly arn: string;
+```
+
+- *Type:* string
 
 ---
 
@@ -822,12 +833,12 @@ const route53TrafficPolicyInstanceConfig: route53TrafficPolicyInstance.Route53Tr
 | <code><a href="#@cdktf/provider-aws.route53TrafficPolicyInstance.Route53TrafficPolicyInstanceConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.route53TrafficPolicyInstance.Route53TrafficPolicyInstanceConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.route53TrafficPolicyInstance.Route53TrafficPolicyInstanceConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.route53TrafficPolicyInstance.Route53TrafficPolicyInstanceConfig.property.hostedZoneId">hostedZoneId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/route53_traffic_policy_instance#hosted_zone_id Route53TrafficPolicyInstance#hosted_zone_id}. |
-| <code><a href="#@cdktf/provider-aws.route53TrafficPolicyInstance.Route53TrafficPolicyInstanceConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/route53_traffic_policy_instance#name Route53TrafficPolicyInstance#name}. |
-| <code><a href="#@cdktf/provider-aws.route53TrafficPolicyInstance.Route53TrafficPolicyInstanceConfig.property.trafficPolicyId">trafficPolicyId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/route53_traffic_policy_instance#traffic_policy_id Route53TrafficPolicyInstance#traffic_policy_id}. |
-| <code><a href="#@cdktf/provider-aws.route53TrafficPolicyInstance.Route53TrafficPolicyInstanceConfig.property.trafficPolicyVersion">trafficPolicyVersion</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/route53_traffic_policy_instance#traffic_policy_version Route53TrafficPolicyInstance#traffic_policy_version}. |
-| <code><a href="#@cdktf/provider-aws.route53TrafficPolicyInstance.Route53TrafficPolicyInstanceConfig.property.ttl">ttl</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/route53_traffic_policy_instance#ttl Route53TrafficPolicyInstance#ttl}. |
-| <code><a href="#@cdktf/provider-aws.route53TrafficPolicyInstance.Route53TrafficPolicyInstanceConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/route53_traffic_policy_instance#id Route53TrafficPolicyInstance#id}. |
+| <code><a href="#@cdktf/provider-aws.route53TrafficPolicyInstance.Route53TrafficPolicyInstanceConfig.property.hostedZoneId">hostedZoneId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/route53_traffic_policy_instance#hosted_zone_id Route53TrafficPolicyInstance#hosted_zone_id}. |
+| <code><a href="#@cdktf/provider-aws.route53TrafficPolicyInstance.Route53TrafficPolicyInstanceConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/route53_traffic_policy_instance#name Route53TrafficPolicyInstance#name}. |
+| <code><a href="#@cdktf/provider-aws.route53TrafficPolicyInstance.Route53TrafficPolicyInstanceConfig.property.trafficPolicyId">trafficPolicyId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/route53_traffic_policy_instance#traffic_policy_id Route53TrafficPolicyInstance#traffic_policy_id}. |
+| <code><a href="#@cdktf/provider-aws.route53TrafficPolicyInstance.Route53TrafficPolicyInstanceConfig.property.trafficPolicyVersion">trafficPolicyVersion</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/route53_traffic_policy_instance#traffic_policy_version Route53TrafficPolicyInstance#traffic_policy_version}. |
+| <code><a href="#@cdktf/provider-aws.route53TrafficPolicyInstance.Route53TrafficPolicyInstanceConfig.property.ttl">ttl</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/route53_traffic_policy_instance#ttl Route53TrafficPolicyInstance#ttl}. |
+| <code><a href="#@cdktf/provider-aws.route53TrafficPolicyInstance.Route53TrafficPolicyInstanceConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/route53_traffic_policy_instance#id Route53TrafficPolicyInstance#id}. |
 
 ---
 
@@ -909,7 +920,7 @@ public readonly hostedZoneId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/route53_traffic_policy_instance#hosted_zone_id Route53TrafficPolicyInstance#hosted_zone_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/route53_traffic_policy_instance#hosted_zone_id Route53TrafficPolicyInstance#hosted_zone_id}.
 
 ---
 
@@ -921,7 +932,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/route53_traffic_policy_instance#name Route53TrafficPolicyInstance#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/route53_traffic_policy_instance#name Route53TrafficPolicyInstance#name}.
 
 ---
 
@@ -933,7 +944,7 @@ public readonly trafficPolicyId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/route53_traffic_policy_instance#traffic_policy_id Route53TrafficPolicyInstance#traffic_policy_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/route53_traffic_policy_instance#traffic_policy_id Route53TrafficPolicyInstance#traffic_policy_id}.
 
 ---
 
@@ -945,7 +956,7 @@ public readonly trafficPolicyVersion: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/route53_traffic_policy_instance#traffic_policy_version Route53TrafficPolicyInstance#traffic_policy_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/route53_traffic_policy_instance#traffic_policy_version Route53TrafficPolicyInstance#traffic_policy_version}.
 
 ---
 
@@ -957,7 +968,7 @@ public readonly ttl: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/route53_traffic_policy_instance#ttl Route53TrafficPolicyInstance#ttl}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/route53_traffic_policy_instance#ttl Route53TrafficPolicyInstance#ttl}.
 
 ---
 
@@ -969,7 +980,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/route53_traffic_policy_instance#id Route53TrafficPolicyInstance#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/route53_traffic_policy_instance#id Route53TrafficPolicyInstance#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

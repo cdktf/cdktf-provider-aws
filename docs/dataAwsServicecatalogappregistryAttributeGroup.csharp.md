@@ -4,7 +4,7 @@
 
 ### DataAwsServicecatalogappregistryAttributeGroup <a name="DataAwsServicecatalogappregistryAttributeGroup" id="@cdktf/provider-aws.dataAwsServicecatalogappregistryAttributeGroup.DataAwsServicecatalogappregistryAttributeGroup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/data-sources/servicecatalogappregistry_attribute_group aws_servicecatalogappregistry_attribute_group}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/data-sources/servicecatalogappregistry_attribute_group aws_servicecatalogappregistry_attribute_group}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsServicecatalogappregistryAttributeGroup.DataAwsServicecatalogappregistryAttributeGroup.Initializer"></a>
 
@@ -386,7 +386,7 @@ The construct id used in the generated config for the DataAwsServicecatalogappre
 
 The id of the existing DataAwsServicecatalogappregistryAttributeGroup that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/data-sources/servicecatalogappregistry_attribute_group#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/data-sources/servicecatalogappregistry_attribute_group#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -690,9 +690,9 @@ new DataAwsServicecatalogappregistryAttributeGroupConfig {
 | <code><a href="#@cdktf/provider-aws.dataAwsServicecatalogappregistryAttributeGroup.DataAwsServicecatalogappregistryAttributeGroupConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsServicecatalogappregistryAttributeGroup.DataAwsServicecatalogappregistryAttributeGroupConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsServicecatalogappregistryAttributeGroup.DataAwsServicecatalogappregistryAttributeGroupConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsServicecatalogappregistryAttributeGroup.DataAwsServicecatalogappregistryAttributeGroupConfig.property.arn">Arn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/data-sources/servicecatalogappregistry_attribute_group#arn DataAwsServicecatalogappregistryAttributeGroup#arn}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsServicecatalogappregistryAttributeGroup.DataAwsServicecatalogappregistryAttributeGroupConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/data-sources/servicecatalogappregistry_attribute_group#id DataAwsServicecatalogappregistryAttributeGroup#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsServicecatalogappregistryAttributeGroup.DataAwsServicecatalogappregistryAttributeGroupConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/data-sources/servicecatalogappregistry_attribute_group#name DataAwsServicecatalogappregistryAttributeGroup#name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsServicecatalogappregistryAttributeGroup.DataAwsServicecatalogappregistryAttributeGroupConfig.property.arn">Arn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/data-sources/servicecatalogappregistry_attribute_group#arn DataAwsServicecatalogappregistryAttributeGroup#arn}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsServicecatalogappregistryAttributeGroup.DataAwsServicecatalogappregistryAttributeGroupConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/data-sources/servicecatalogappregistry_attribute_group#id DataAwsServicecatalogappregistryAttributeGroup#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsServicecatalogappregistryAttributeGroup.DataAwsServicecatalogappregistryAttributeGroupConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/data-sources/servicecatalogappregistry_attribute_group#name DataAwsServicecatalogappregistryAttributeGroup#name}. |
 
 ---
 
@@ -774,7 +774,7 @@ public string Arn { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/data-sources/servicecatalogappregistry_attribute_group#arn DataAwsServicecatalogappregistryAttributeGroup#arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/data-sources/servicecatalogappregistry_attribute_group#arn DataAwsServicecatalogappregistryAttributeGroup#arn}.
 
 ---
 
@@ -786,7 +786,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/data-sources/servicecatalogappregistry_attribute_group#id DataAwsServicecatalogappregistryAttributeGroup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/data-sources/servicecatalogappregistry_attribute_group#id DataAwsServicecatalogappregistryAttributeGroup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -801,7 +801,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/data-sources/servicecatalogappregistry_attribute_group#name DataAwsServicecatalogappregistryAttributeGroup#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/data-sources/servicecatalogappregistry_attribute_group#name DataAwsServicecatalogappregistryAttributeGroup#name}.
 
 ---
 

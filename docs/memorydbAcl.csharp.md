@@ -4,7 +4,7 @@
 
 ### MemorydbAcl <a name="MemorydbAcl" id="@cdktf/provider-aws.memorydbAcl.MemorydbAcl"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/memorydb_acl aws_memorydb_acl}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/memorydb_acl aws_memorydb_acl}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.memorydbAcl.MemorydbAcl.Initializer"></a>
 
@@ -509,7 +509,7 @@ The construct id used in the generated config for the MemorydbAcl to import.
 
 The id of the existing MemorydbAcl that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/memorydb_acl#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/memorydb_acl#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -893,12 +893,12 @@ new MemorydbAclConfig {
 | <code><a href="#@cdktf/provider-aws.memorydbAcl.MemorydbAclConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.memorydbAcl.MemorydbAclConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.memorydbAcl.MemorydbAclConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.memorydbAcl.MemorydbAclConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/memorydb_acl#id MemorydbAcl#id}. |
-| <code><a href="#@cdktf/provider-aws.memorydbAcl.MemorydbAclConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/memorydb_acl#name MemorydbAcl#name}. |
-| <code><a href="#@cdktf/provider-aws.memorydbAcl.MemorydbAclConfig.property.namePrefix">NamePrefix</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/memorydb_acl#name_prefix MemorydbAcl#name_prefix}. |
-| <code><a href="#@cdktf/provider-aws.memorydbAcl.MemorydbAclConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/memorydb_acl#tags MemorydbAcl#tags}. |
-| <code><a href="#@cdktf/provider-aws.memorydbAcl.MemorydbAclConfig.property.tagsAll">TagsAll</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/memorydb_acl#tags_all MemorydbAcl#tags_all}. |
-| <code><a href="#@cdktf/provider-aws.memorydbAcl.MemorydbAclConfig.property.userNames">UserNames</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/memorydb_acl#user_names MemorydbAcl#user_names}. |
+| <code><a href="#@cdktf/provider-aws.memorydbAcl.MemorydbAclConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/memorydb_acl#id MemorydbAcl#id}. |
+| <code><a href="#@cdktf/provider-aws.memorydbAcl.MemorydbAclConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/memorydb_acl#name MemorydbAcl#name}. |
+| <code><a href="#@cdktf/provider-aws.memorydbAcl.MemorydbAclConfig.property.namePrefix">NamePrefix</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/memorydb_acl#name_prefix MemorydbAcl#name_prefix}. |
+| <code><a href="#@cdktf/provider-aws.memorydbAcl.MemorydbAclConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/memorydb_acl#tags MemorydbAcl#tags}. |
+| <code><a href="#@cdktf/provider-aws.memorydbAcl.MemorydbAclConfig.property.tagsAll">TagsAll</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/memorydb_acl#tags_all MemorydbAcl#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.memorydbAcl.MemorydbAclConfig.property.userNames">UserNames</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/memorydb_acl#user_names MemorydbAcl#user_names}. |
 
 ---
 
@@ -980,7 +980,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/memorydb_acl#id MemorydbAcl#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/memorydb_acl#id MemorydbAcl#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -995,7 +995,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/memorydb_acl#name MemorydbAcl#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/memorydb_acl#name MemorydbAcl#name}.
 
 ---
 
@@ -1007,7 +1007,7 @@ public string NamePrefix { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/memorydb_acl#name_prefix MemorydbAcl#name_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/memorydb_acl#name_prefix MemorydbAcl#name_prefix}.
 
 ---
 
@@ -1019,7 +1019,7 @@ public System.Collections.Generic.IDictionary<string, string> Tags { get; set; }
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/memorydb_acl#tags MemorydbAcl#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/memorydb_acl#tags MemorydbAcl#tags}.
 
 ---
 
@@ -1031,7 +1031,7 @@ public System.Collections.Generic.IDictionary<string, string> TagsAll { get; set
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/memorydb_acl#tags_all MemorydbAcl#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/memorydb_acl#tags_all MemorydbAcl#tags_all}.
 
 ---
 
@@ -1043,7 +1043,7 @@ public string[] UserNames { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/memorydb_acl#user_names MemorydbAcl#user_names}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/memorydb_acl#user_names MemorydbAcl#user_names}.
 
 ---
 

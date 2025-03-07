@@ -4,12 +4,12 @@
 
 ### NetworkmonitorProbe <a name="NetworkmonitorProbe" id="@cdktf/provider-aws.networkmonitorProbe.NetworkmonitorProbe"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/networkmonitor_probe aws_networkmonitor_probe}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/networkmonitor_probe aws_networkmonitor_probe}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.networkmonitorProbe.NetworkmonitorProbe.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/networkmonitorprobe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/networkmonitorprobe"
 
 networkmonitorprobe.NewNetworkmonitorProbe(scope Construct, id *string, config NetworkmonitorProbeConfig) NetworkmonitorProbe
 ```
@@ -399,7 +399,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.networkmonitorProbe.NetworkmonitorProbe.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/networkmonitorprobe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/networkmonitorprobe"
 
 networkmonitorprobe.NetworkmonitorProbe_IsConstruct(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.networkmonitorProbe.NetworkmonitorProbe.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/networkmonitorprobe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/networkmonitorprobe"
 
 networkmonitorprobe.NetworkmonitorProbe_IsTerraformElement(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ networkmonitorprobe.NetworkmonitorProbe_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.networkmonitorProbe.NetworkmonitorProbe.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/networkmonitorprobe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/networkmonitorprobe"
 
 networkmonitorprobe.NetworkmonitorProbe_IsTerraformResource(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ networkmonitorprobe.NetworkmonitorProbe_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.networkmonitorProbe.NetworkmonitorProbe.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/networkmonitorprobe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/networkmonitorprobe"
 
 networkmonitorprobe.NetworkmonitorProbe_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -488,7 +488,7 @@ The construct id used in the generated config for the NetworkmonitorProbe to imp
 
 The id of the existing NetworkmonitorProbe that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/networkmonitor_probe#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/networkmonitor_probe#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -908,7 +908,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.networkmonitorProbe.NetworkmonitorProbeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/networkmonitorprobe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/networkmonitorprobe"
 
 &networkmonitorprobe.NetworkmonitorProbeConfig {
 	Connection: interface{},
@@ -939,13 +939,13 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/networkmonitorprobe"
 | <code><a href="#@cdktf/provider-aws.networkmonitorProbe.NetworkmonitorProbeConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.networkmonitorProbe.NetworkmonitorProbeConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.networkmonitorProbe.NetworkmonitorProbeConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.networkmonitorProbe.NetworkmonitorProbeConfig.property.destination">Destination</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/networkmonitor_probe#destination NetworkmonitorProbe#destination}. |
-| <code><a href="#@cdktf/provider-aws.networkmonitorProbe.NetworkmonitorProbeConfig.property.monitorName">MonitorName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/networkmonitor_probe#monitor_name NetworkmonitorProbe#monitor_name}. |
-| <code><a href="#@cdktf/provider-aws.networkmonitorProbe.NetworkmonitorProbeConfig.property.protocol">Protocol</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/networkmonitor_probe#protocol NetworkmonitorProbe#protocol}. |
-| <code><a href="#@cdktf/provider-aws.networkmonitorProbe.NetworkmonitorProbeConfig.property.sourceArn">SourceArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/networkmonitor_probe#source_arn NetworkmonitorProbe#source_arn}. |
-| <code><a href="#@cdktf/provider-aws.networkmonitorProbe.NetworkmonitorProbeConfig.property.destinationPort">DestinationPort</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/networkmonitor_probe#destination_port NetworkmonitorProbe#destination_port}. |
-| <code><a href="#@cdktf/provider-aws.networkmonitorProbe.NetworkmonitorProbeConfig.property.packetSize">PacketSize</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/networkmonitor_probe#packet_size NetworkmonitorProbe#packet_size}. |
-| <code><a href="#@cdktf/provider-aws.networkmonitorProbe.NetworkmonitorProbeConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/networkmonitor_probe#tags NetworkmonitorProbe#tags}. |
+| <code><a href="#@cdktf/provider-aws.networkmonitorProbe.NetworkmonitorProbeConfig.property.destination">Destination</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/networkmonitor_probe#destination NetworkmonitorProbe#destination}. |
+| <code><a href="#@cdktf/provider-aws.networkmonitorProbe.NetworkmonitorProbeConfig.property.monitorName">MonitorName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/networkmonitor_probe#monitor_name NetworkmonitorProbe#monitor_name}. |
+| <code><a href="#@cdktf/provider-aws.networkmonitorProbe.NetworkmonitorProbeConfig.property.protocol">Protocol</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/networkmonitor_probe#protocol NetworkmonitorProbe#protocol}. |
+| <code><a href="#@cdktf/provider-aws.networkmonitorProbe.NetworkmonitorProbeConfig.property.sourceArn">SourceArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/networkmonitor_probe#source_arn NetworkmonitorProbe#source_arn}. |
+| <code><a href="#@cdktf/provider-aws.networkmonitorProbe.NetworkmonitorProbeConfig.property.destinationPort">DestinationPort</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/networkmonitor_probe#destination_port NetworkmonitorProbe#destination_port}. |
+| <code><a href="#@cdktf/provider-aws.networkmonitorProbe.NetworkmonitorProbeConfig.property.packetSize">PacketSize</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/networkmonitor_probe#packet_size NetworkmonitorProbe#packet_size}. |
+| <code><a href="#@cdktf/provider-aws.networkmonitorProbe.NetworkmonitorProbeConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/networkmonitor_probe#tags NetworkmonitorProbe#tags}. |
 
 ---
 
@@ -1027,7 +1027,7 @@ Destination *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/networkmonitor_probe#destination NetworkmonitorProbe#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/networkmonitor_probe#destination NetworkmonitorProbe#destination}.
 
 ---
 
@@ -1039,7 +1039,7 @@ MonitorName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/networkmonitor_probe#monitor_name NetworkmonitorProbe#monitor_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/networkmonitor_probe#monitor_name NetworkmonitorProbe#monitor_name}.
 
 ---
 
@@ -1051,7 +1051,7 @@ Protocol *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/networkmonitor_probe#protocol NetworkmonitorProbe#protocol}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/networkmonitor_probe#protocol NetworkmonitorProbe#protocol}.
 
 ---
 
@@ -1063,7 +1063,7 @@ SourceArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/networkmonitor_probe#source_arn NetworkmonitorProbe#source_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/networkmonitor_probe#source_arn NetworkmonitorProbe#source_arn}.
 
 ---
 
@@ -1075,7 +1075,7 @@ DestinationPort *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/networkmonitor_probe#destination_port NetworkmonitorProbe#destination_port}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/networkmonitor_probe#destination_port NetworkmonitorProbe#destination_port}.
 
 ---
 
@@ -1087,7 +1087,7 @@ PacketSize *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/networkmonitor_probe#packet_size NetworkmonitorProbe#packet_size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/networkmonitor_probe#packet_size NetworkmonitorProbe#packet_size}.
 
 ---
 
@@ -1099,7 +1099,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/networkmonitor_probe#tags NetworkmonitorProbe#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/networkmonitor_probe#tags NetworkmonitorProbe#tags}.
 
 ---
 

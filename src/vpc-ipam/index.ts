@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/vpc_ipam
+// https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/vpc_ipam
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,52 +8,52 @@ import * as cdktf from 'cdktf';
 
 export interface VpcIpamConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/vpc_ipam#cascade VpcIpam#cascade}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/vpc_ipam#cascade VpcIpam#cascade}
   */
   readonly cascade?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/vpc_ipam#description VpcIpam#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/vpc_ipam#description VpcIpam#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/vpc_ipam#enable_private_gua VpcIpam#enable_private_gua}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/vpc_ipam#enable_private_gua VpcIpam#enable_private_gua}
   */
   readonly enablePrivateGua?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/vpc_ipam#id VpcIpam#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/vpc_ipam#id VpcIpam#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/vpc_ipam#tags VpcIpam#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/vpc_ipam#tags VpcIpam#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/vpc_ipam#tags_all VpcIpam#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/vpc_ipam#tags_all VpcIpam#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/vpc_ipam#tier VpcIpam#tier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/vpc_ipam#tier VpcIpam#tier}
   */
   readonly tier?: string;
   /**
   * operating_regions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/vpc_ipam#operating_regions VpcIpam#operating_regions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/vpc_ipam#operating_regions VpcIpam#operating_regions}
   */
   readonly operatingRegions: VpcIpamOperatingRegions[] | cdktf.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/vpc_ipam#timeouts VpcIpam#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/vpc_ipam#timeouts VpcIpam#timeouts}
   */
   readonly timeouts?: VpcIpamTimeouts;
 }
 export interface VpcIpamOperatingRegions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/vpc_ipam#region_name VpcIpam#region_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/vpc_ipam#region_name VpcIpam#region_name}
   */
   readonly regionName: string;
 }
@@ -171,15 +166,15 @@ export class VpcIpamOperatingRegionsList extends cdktf.ComplexList {
 }
 export interface VpcIpamTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/vpc_ipam#create VpcIpam#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/vpc_ipam#create VpcIpam#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/vpc_ipam#delete VpcIpam#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/vpc_ipam#delete VpcIpam#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/vpc_ipam#update VpcIpam#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/vpc_ipam#update VpcIpam#update}
   */
   readonly update?: string;
 }
@@ -331,7 +326,7 @@ export class VpcIpamTimeoutsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/vpc_ipam aws_vpc_ipam}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/vpc_ipam aws_vpc_ipam}
 */
 export class VpcIpam extends cdktf.TerraformResource {
 
@@ -347,7 +342,7 @@ export class VpcIpam extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a VpcIpam resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the VpcIpam to import
-  * @param importFromId The id of the existing VpcIpam that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/vpc_ipam#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing VpcIpam that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/vpc_ipam#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the VpcIpam to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -359,7 +354,7 @@ export class VpcIpam extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/vpc_ipam aws_vpc_ipam} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/vpc_ipam aws_vpc_ipam} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -370,7 +365,7 @@ export class VpcIpam extends cdktf.TerraformResource {
       terraformResourceType: 'aws_vpc_ipam',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.89.0',
+        providerVersion: '5.90.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

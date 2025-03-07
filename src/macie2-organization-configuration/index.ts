@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/macie2_organization_configuration
+// https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/macie2_organization_configuration
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,13 +10,13 @@ export interface Macie2OrganizationConfigurationConfig extends cdktf.TerraformMe
   /**
   * Whether to enable Amazon Macie automatically for accounts that are added to the organization in AWS Organizations
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/macie2_organization_configuration#auto_enable Macie2OrganizationConfiguration#auto_enable}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/macie2_organization_configuration#auto_enable Macie2OrganizationConfiguration#auto_enable}
   */
   readonly autoEnable: boolean | cdktf.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/macie2_organization_configuration aws_macie2_organization_configuration}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/macie2_organization_configuration aws_macie2_organization_configuration}
 */
 export class Macie2OrganizationConfiguration extends cdktf.TerraformResource {
 
@@ -37,7 +32,7 @@ export class Macie2OrganizationConfiguration extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a Macie2OrganizationConfiguration resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Macie2OrganizationConfiguration to import
-  * @param importFromId The id of the existing Macie2OrganizationConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/macie2_organization_configuration#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Macie2OrganizationConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/macie2_organization_configuration#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Macie2OrganizationConfiguration to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -49,7 +44,7 @@ export class Macie2OrganizationConfiguration extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/macie2_organization_configuration aws_macie2_organization_configuration} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/macie2_organization_configuration aws_macie2_organization_configuration} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -60,7 +55,7 @@ export class Macie2OrganizationConfiguration extends cdktf.TerraformResource {
       terraformResourceType: 'aws_macie2_organization_configuration',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.89.0',
+        providerVersion: '5.90.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

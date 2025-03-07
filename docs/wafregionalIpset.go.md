@@ -4,12 +4,12 @@
 
 ### WafregionalIpset <a name="WafregionalIpset" id="@cdktf/provider-aws.wafregionalIpset.WafregionalIpset"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/wafregional_ipset aws_wafregional_ipset}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/wafregional_ipset aws_wafregional_ipset}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafregionalIpset.WafregionalIpset.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafregionalipset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafregionalipset"
 
 wafregionalipset.NewWafregionalIpset(scope Construct, id *string, config WafregionalIpsetConfig) WafregionalIpset
 ```
@@ -405,7 +405,7 @@ func ResetIpSetDescriptor()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.wafregionalIpset.WafregionalIpset.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafregionalipset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafregionalipset"
 
 wafregionalipset.WafregionalIpset_IsConstruct(x interface{}) *bool
 ```
@@ -437,7 +437,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.wafregionalIpset.WafregionalIpset.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafregionalipset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafregionalipset"
 
 wafregionalipset.WafregionalIpset_IsTerraformElement(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ wafregionalipset.WafregionalIpset_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.wafregionalIpset.WafregionalIpset.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafregionalipset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafregionalipset"
 
 wafregionalipset.WafregionalIpset_IsTerraformResource(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ wafregionalipset.WafregionalIpset_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.wafregionalIpset.WafregionalIpset.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafregionalipset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafregionalipset"
 
 wafregionalipset.WafregionalIpset_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -494,7 +494,7 @@ The construct id used in the generated config for the WafregionalIpset to import
 
 The id of the existing WafregionalIpset that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/wafregional_ipset#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/wafregional_ipset#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -771,7 +771,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.wafregionalIpset.WafregionalIpsetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafregionalipset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafregionalipset"
 
 &wafregionalipset.WafregionalIpsetConfig {
 	Connection: interface{},
@@ -798,8 +798,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafregionalipset"
 | <code><a href="#@cdktf/provider-aws.wafregionalIpset.WafregionalIpsetConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.wafregionalIpset.WafregionalIpsetConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.wafregionalIpset.WafregionalIpsetConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.wafregionalIpset.WafregionalIpsetConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/wafregional_ipset#name WafregionalIpset#name}. |
-| <code><a href="#@cdktf/provider-aws.wafregionalIpset.WafregionalIpsetConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/wafregional_ipset#id WafregionalIpset#id}. |
+| <code><a href="#@cdktf/provider-aws.wafregionalIpset.WafregionalIpsetConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/wafregional_ipset#name WafregionalIpset#name}. |
+| <code><a href="#@cdktf/provider-aws.wafregionalIpset.WafregionalIpsetConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/wafregional_ipset#id WafregionalIpset#id}. |
 | <code><a href="#@cdktf/provider-aws.wafregionalIpset.WafregionalIpsetConfig.property.ipSetDescriptor">IpSetDescriptor</a></code> | <code>interface{}</code> | ip_set_descriptor block. |
 
 ---
@@ -882,7 +882,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/wafregional_ipset#name WafregionalIpset#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/wafregional_ipset#name WafregionalIpset#name}.
 
 ---
 
@@ -894,7 +894,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/wafregional_ipset#id WafregionalIpset#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/wafregional_ipset#id WafregionalIpset#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -911,7 +911,7 @@ IpSetDescriptor interface{}
 
 ip_set_descriptor block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/wafregional_ipset#ip_set_descriptor WafregionalIpset#ip_set_descriptor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/wafregional_ipset#ip_set_descriptor WafregionalIpset#ip_set_descriptor}
 
 ---
 
@@ -920,7 +920,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.wafregionalIpset.WafregionalIpsetIpSetDescriptor.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafregionalipset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafregionalipset"
 
 &wafregionalipset.WafregionalIpsetIpSetDescriptor {
 	Type: *string,
@@ -932,8 +932,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafregionalipset"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.wafregionalIpset.WafregionalIpsetIpSetDescriptor.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/wafregional_ipset#type WafregionalIpset#type}. |
-| <code><a href="#@cdktf/provider-aws.wafregionalIpset.WafregionalIpsetIpSetDescriptor.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/wafregional_ipset#value WafregionalIpset#value}. |
+| <code><a href="#@cdktf/provider-aws.wafregionalIpset.WafregionalIpsetIpSetDescriptor.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/wafregional_ipset#type WafregionalIpset#type}. |
+| <code><a href="#@cdktf/provider-aws.wafregionalIpset.WafregionalIpsetIpSetDescriptor.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/wafregional_ipset#value WafregionalIpset#value}. |
 
 ---
 
@@ -945,7 +945,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/wafregional_ipset#type WafregionalIpset#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/wafregional_ipset#type WafregionalIpset#type}.
 
 ---
 
@@ -957,7 +957,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/wafregional_ipset#value WafregionalIpset#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/wafregional_ipset#value WafregionalIpset#value}.
 
 ---
 
@@ -968,7 +968,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafregionalIpset.WafregionalIpsetIpSetDescriptorList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafregionalipset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafregionalipset"
 
 wafregionalipset.NewWafregionalIpsetIpSetDescriptorList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WafregionalIpsetIpSetDescriptorList
 ```
@@ -1128,7 +1128,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafregionalIpset.WafregionalIpsetIpSetDescriptorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafregionalipset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafregionalipset"
 
 wafregionalipset.NewWafregionalIpsetIpSetDescriptorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WafregionalIpsetIpSetDescriptorOutputReference
 ```

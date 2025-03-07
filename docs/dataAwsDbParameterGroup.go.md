@@ -4,12 +4,12 @@
 
 ### DataAwsDbParameterGroup <a name="DataAwsDbParameterGroup" id="@cdktf/provider-aws.dataAwsDbParameterGroup.DataAwsDbParameterGroup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/data-sources/db_parameter_group aws_db_parameter_group}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/data-sources/db_parameter_group aws_db_parameter_group}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsDbParameterGroup.DataAwsDbParameterGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsdbparametergroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdbparametergroup"
 
 dataawsdbparametergroup.NewDataAwsDbParameterGroup(scope Construct, id *string, config DataAwsDbParameterGroupConfig) DataAwsDbParameterGroup
 ```
@@ -283,7 +283,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsDbParameterGroup.DataAwsDbParameterGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsdbparametergroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdbparametergroup"
 
 dataawsdbparametergroup.DataAwsDbParameterGroup_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsDbParameterGroup.DataAwsDbParameterGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsdbparametergroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdbparametergroup"
 
 dataawsdbparametergroup.DataAwsDbParameterGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ dataawsdbparametergroup.DataAwsDbParameterGroup_IsTerraformElement(x interface{}
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsDbParameterGroup.DataAwsDbParameterGroup.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsdbparametergroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdbparametergroup"
 
 dataawsdbparametergroup.DataAwsDbParameterGroup_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ dataawsdbparametergroup.DataAwsDbParameterGroup_IsTerraformDataSource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsDbParameterGroup.DataAwsDbParameterGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsdbparametergroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdbparametergroup"
 
 dataawsdbparametergroup.DataAwsDbParameterGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -372,7 +372,7 @@ The construct id used in the generated config for the DataAwsDbParameterGroup to
 
 The id of the existing DataAwsDbParameterGroup that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/data-sources/db_parameter_group#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/data-sources/db_parameter_group#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -627,7 +627,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsDbParameterGroup.DataAwsDbParameterGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsdbparametergroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdbparametergroup"
 
 &dataawsdbparametergroup.DataAwsDbParameterGroupConfig {
 	Connection: interface{},
@@ -653,8 +653,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsdbparametergroup"
 | <code><a href="#@cdktf/provider-aws.dataAwsDbParameterGroup.DataAwsDbParameterGroupConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsDbParameterGroup.DataAwsDbParameterGroupConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsDbParameterGroup.DataAwsDbParameterGroupConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsDbParameterGroup.DataAwsDbParameterGroupConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/data-sources/db_parameter_group#name DataAwsDbParameterGroup#name}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsDbParameterGroup.DataAwsDbParameterGroupConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/data-sources/db_parameter_group#id DataAwsDbParameterGroup#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsDbParameterGroup.DataAwsDbParameterGroupConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/data-sources/db_parameter_group#name DataAwsDbParameterGroup#name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsDbParameterGroup.DataAwsDbParameterGroupConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/data-sources/db_parameter_group#id DataAwsDbParameterGroup#id}. |
 
 ---
 
@@ -736,7 +736,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/data-sources/db_parameter_group#name DataAwsDbParameterGroup#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/data-sources/db_parameter_group#name DataAwsDbParameterGroup#name}.
 
 ---
 
@@ -748,7 +748,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/data-sources/db_parameter_group#id DataAwsDbParameterGroup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/data-sources/db_parameter_group#id DataAwsDbParameterGroup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
