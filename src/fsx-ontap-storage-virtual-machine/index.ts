@@ -1,3 +1,8 @@
+/**
+ * Copyright (c) HashiCorp, Inc.
+ * SPDX-License-Identifier: MPL-2.0
+ */
+
 // https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/fsx_ontap_storage_virtual_machine
 // generated from terraform resource schema
 
