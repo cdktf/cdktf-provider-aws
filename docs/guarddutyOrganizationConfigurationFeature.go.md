@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.guarddutyOrganizationConfigurationFeature.GuarddutyOrganizationConfigurationFeature.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/guarddutyorganizationconfigurationfeature"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/guarddutyorganizationconfigurationfeature"
 
 guarddutyorganizationconfigurationfeature.NewGuarddutyOrganizationConfigurationFeature(scope Construct, id *string, config GuarddutyOrganizationConfigurationFeatureConfig) GuarddutyOrganizationConfigurationFeature
 ```
@@ -405,7 +405,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.guarddutyOrganizationConfigurationFeature.GuarddutyOrganizationConfigurationFeature.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/guarddutyorganizationconfigurationfeature"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/guarddutyorganizationconfigurationfeature"
 
 guarddutyorganizationconfigurationfeature.GuarddutyOrganizationConfigurationFeature_IsConstruct(x interface{}) *bool
 ```
@@ -437,7 +437,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.guarddutyOrganizationConfigurationFeature.GuarddutyOrganizationConfigurationFeature.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/guarddutyorganizationconfigurationfeature"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/guarddutyorganizationconfigurationfeature"
 
 guarddutyorganizationconfigurationfeature.GuarddutyOrganizationConfigurationFeature_IsTerraformElement(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ guarddutyorganizationconfigurationfeature.GuarddutyOrganizationConfigurationFeat
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.guarddutyOrganizationConfigurationFeature.GuarddutyOrganizationConfigurationFeature.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/guarddutyorganizationconfigurationfeature"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/guarddutyorganizationconfigurationfeature"
 
 guarddutyorganizationconfigurationfeature.GuarddutyOrganizationConfigurationFeature_IsTerraformResource(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ guarddutyorganizationconfigurationfeature.GuarddutyOrganizationConfigurationFeat
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.guarddutyOrganizationConfigurationFeature.GuarddutyOrganizationConfigurationFeature.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/guarddutyorganizationconfigurationfeature"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/guarddutyorganizationconfigurationfeature"
 
 guarddutyorganizationconfigurationfeature.GuarddutyOrganizationConfigurationFeature_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -804,7 +804,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.guarddutyOrganizationConfigurationFeature.GuarddutyOrganizationConfigurationFeatureAdditionalConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/guarddutyorganizationconfigurationfeature"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/guarddutyorganizationconfigurationfeature"
 
 &guarddutyorganizationconfigurationfeature.GuarddutyOrganizationConfigurationFeatureAdditionalConfiguration {
 	AutoEnable: *string,
@@ -850,7 +850,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.guarddutyOrganizationConfigurationFeature.GuarddutyOrganizationConfigurationFeatureConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/guarddutyorganizationconfigurationfeature"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/guarddutyorganizationconfigurationfeature"
 
 &guarddutyorganizationconfigurationfeature.GuarddutyOrganizationConfigurationFeatureConfig {
 	Connection: interface{},
@@ -1029,7 +1029,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.guarddutyOrganizationConfigurationFeature.GuarddutyOrganizationConfigurationFeatureAdditionalConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/guarddutyorganizationconfigurationfeature"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/guarddutyorganizationconfigurationfeature"
 
 guarddutyorganizationconfigurationfeature.NewGuarddutyOrganizationConfigurationFeatureAdditionalConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GuarddutyOrganizationConfigurationFeatureAdditionalConfigurationList
 ```
@@ -1189,7 +1189,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.guarddutyOrganizationConfigurationFeature.GuarddutyOrganizationConfigurationFeatureAdditionalConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/guarddutyorganizationconfigurationfeature"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/guarddutyorganizationconfigurationfeature"
 
 guarddutyorganizationconfigurationfeature.NewGuarddutyOrganizationConfigurationFeatureAdditionalConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GuarddutyOrganizationConfigurationFeatureAdditionalConfigurationOutputReference
 ```
