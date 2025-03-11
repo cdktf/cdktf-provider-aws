@@ -1625,6 +1625,7 @@ export * as dataAwsCurReportDefinition from './data-aws-cur-report-definition';
 export * as dataAwsCustomerGateway from './data-aws-customer-gateway';
 export * as dataAwsDatapipelinePipeline from './data-aws-datapipeline-pipeline';
 export * as dataAwsDatapipelinePipelineDefinition from './data-aws-datapipeline-pipeline-definition';
+export * as dataAwsDatazoneDomain from './data-aws-datazone-domain';
 export * as dataAwsDatazoneEnvironmentBlueprint from './data-aws-datazone-environment-blueprint';
 export * as dataAwsDbClusterSnapshot from './data-aws-db-cluster-snapshot';
 export * as dataAwsDbEventCategories from './data-aws-db-event-categories';

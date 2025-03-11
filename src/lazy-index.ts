@@ -1625,6 +1625,7 @@ Object.defineProperty(exports, 'dataAwsCurReportDefinition', { get: function () 
 Object.defineProperty(exports, 'dataAwsCustomerGateway', { get: function () { return require('./data-aws-customer-gateway'); } });
 Object.defineProperty(exports, 'dataAwsDatapipelinePipeline', { get: function () { return require('./data-aws-datapipeline-pipeline'); } });
 Object.defineProperty(exports, 'dataAwsDatapipelinePipelineDefinition', { get: function () { return require('./data-aws-datapipeline-pipeline-definition'); } });
+Object.defineProperty(exports, 'dataAwsDatazoneDomain', { get: function () { return require('./data-aws-datazone-domain'); } });
 Object.defineProperty(exports, 'dataAwsDatazoneEnvironmentBlueprint', { get: function () { return require('./data-aws-datazone-environment-blueprint'); } });
 Object.defineProperty(exports, 'dataAwsDbClusterSnapshot', { get: function () { return require('./data-aws-db-cluster-snapshot'); } });
 Object.defineProperty(exports, 'dataAwsDbEventCategories', { get: function () { return require('./data-aws-db-event-categories'); } });

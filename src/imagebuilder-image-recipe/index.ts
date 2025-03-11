@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/imagebuilder_image_recipe
+// https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/imagebuilder_image_recipe
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,94 +13,94 @@ import * as cdktf from 'cdktf';
 
 export interface ImagebuilderImageRecipeConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/imagebuilder_image_recipe#description ImagebuilderImageRecipe#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/imagebuilder_image_recipe#description ImagebuilderImageRecipe#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/imagebuilder_image_recipe#id ImagebuilderImageRecipe#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/imagebuilder_image_recipe#id ImagebuilderImageRecipe#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/imagebuilder_image_recipe#name ImagebuilderImageRecipe#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/imagebuilder_image_recipe#name ImagebuilderImageRecipe#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/imagebuilder_image_recipe#parent_image ImagebuilderImageRecipe#parent_image}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/imagebuilder_image_recipe#parent_image ImagebuilderImageRecipe#parent_image}
   */
   readonly parentImage: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/imagebuilder_image_recipe#tags ImagebuilderImageRecipe#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/imagebuilder_image_recipe#tags ImagebuilderImageRecipe#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/imagebuilder_image_recipe#tags_all ImagebuilderImageRecipe#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/imagebuilder_image_recipe#tags_all ImagebuilderImageRecipe#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/imagebuilder_image_recipe#user_data_base64 ImagebuilderImageRecipe#user_data_base64}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/imagebuilder_image_recipe#user_data_base64 ImagebuilderImageRecipe#user_data_base64}
   */
   readonly userDataBase64?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/imagebuilder_image_recipe#version ImagebuilderImageRecipe#version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/imagebuilder_image_recipe#version ImagebuilderImageRecipe#version}
   */
   readonly version: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/imagebuilder_image_recipe#working_directory ImagebuilderImageRecipe#working_directory}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/imagebuilder_image_recipe#working_directory ImagebuilderImageRecipe#working_directory}
   */
   readonly workingDirectory?: string;
   /**
   * block_device_mapping block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/imagebuilder_image_recipe#block_device_mapping ImagebuilderImageRecipe#block_device_mapping}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/imagebuilder_image_recipe#block_device_mapping ImagebuilderImageRecipe#block_device_mapping}
   */
   readonly blockDeviceMapping?: ImagebuilderImageRecipeBlockDeviceMapping[] | cdktf.IResolvable;
   /**
   * component block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/imagebuilder_image_recipe#component ImagebuilderImageRecipe#component}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/imagebuilder_image_recipe#component ImagebuilderImageRecipe#component}
   */
   readonly component: ImagebuilderImageRecipeComponent[] | cdktf.IResolvable;
   /**
   * systems_manager_agent block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/imagebuilder_image_recipe#systems_manager_agent ImagebuilderImageRecipe#systems_manager_agent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/imagebuilder_image_recipe#systems_manager_agent ImagebuilderImageRecipe#systems_manager_agent}
   */
   readonly systemsManagerAgent?: ImagebuilderImageRecipeSystemsManagerAgent;
 }
 export interface ImagebuilderImageRecipeBlockDeviceMappingEbs {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/imagebuilder_image_recipe#delete_on_termination ImagebuilderImageRecipe#delete_on_termination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/imagebuilder_image_recipe#delete_on_termination ImagebuilderImageRecipe#delete_on_termination}
   */
   readonly deleteOnTermination?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/imagebuilder_image_recipe#encrypted ImagebuilderImageRecipe#encrypted}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/imagebuilder_image_recipe#encrypted ImagebuilderImageRecipe#encrypted}
   */
   readonly encrypted?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/imagebuilder_image_recipe#iops ImagebuilderImageRecipe#iops}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/imagebuilder_image_recipe#iops ImagebuilderImageRecipe#iops}
   */
   readonly iops?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/imagebuilder_image_recipe#kms_key_id ImagebuilderImageRecipe#kms_key_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/imagebuilder_image_recipe#kms_key_id ImagebuilderImageRecipe#kms_key_id}
   */
   readonly kmsKeyId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/imagebuilder_image_recipe#snapshot_id ImagebuilderImageRecipe#snapshot_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/imagebuilder_image_recipe#snapshot_id ImagebuilderImageRecipe#snapshot_id}
   */
   readonly snapshotId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/imagebuilder_image_recipe#throughput ImagebuilderImageRecipe#throughput}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/imagebuilder_image_recipe#throughput ImagebuilderImageRecipe#throughput}
   */
   readonly throughput?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/imagebuilder_image_recipe#volume_size ImagebuilderImageRecipe#volume_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/imagebuilder_image_recipe#volume_size ImagebuilderImageRecipe#volume_size}
   */
   readonly volumeSize?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/imagebuilder_image_recipe#volume_type ImagebuilderImageRecipe#volume_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/imagebuilder_image_recipe#volume_type ImagebuilderImageRecipe#volume_type}
   */
   readonly volumeType?: string;
 }
@@ -387,21 +387,21 @@ export class ImagebuilderImageRecipeBlockDeviceMappingEbsOutputReference extends
 }
 export interface ImagebuilderImageRecipeBlockDeviceMapping {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/imagebuilder_image_recipe#device_name ImagebuilderImageRecipe#device_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/imagebuilder_image_recipe#device_name ImagebuilderImageRecipe#device_name}
   */
   readonly deviceName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/imagebuilder_image_recipe#no_device ImagebuilderImageRecipe#no_device}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/imagebuilder_image_recipe#no_device ImagebuilderImageRecipe#no_device}
   */
   readonly noDevice?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/imagebuilder_image_recipe#virtual_name ImagebuilderImageRecipe#virtual_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/imagebuilder_image_recipe#virtual_name ImagebuilderImageRecipe#virtual_name}
   */
   readonly virtualName?: string;
   /**
   * ebs block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/imagebuilder_image_recipe#ebs ImagebuilderImageRecipe#ebs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/imagebuilder_image_recipe#ebs ImagebuilderImageRecipe#ebs}
   */
   readonly ebs?: ImagebuilderImageRecipeBlockDeviceMappingEbs;
 }
@@ -604,11 +604,11 @@ export class ImagebuilderImageRecipeBlockDeviceMappingList extends cdktf.Complex
 }
 export interface ImagebuilderImageRecipeComponentParameter {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/imagebuilder_image_recipe#name ImagebuilderImageRecipe#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/imagebuilder_image_recipe#name ImagebuilderImageRecipe#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/imagebuilder_image_recipe#value ImagebuilderImageRecipe#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/imagebuilder_image_recipe#value ImagebuilderImageRecipe#value}
   */
   readonly value: string;
 }
@@ -747,13 +747,13 @@ export class ImagebuilderImageRecipeComponentParameterList extends cdktf.Complex
 }
 export interface ImagebuilderImageRecipeComponent {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/imagebuilder_image_recipe#component_arn ImagebuilderImageRecipe#component_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/imagebuilder_image_recipe#component_arn ImagebuilderImageRecipe#component_arn}
   */
   readonly componentArn: string;
   /**
   * parameter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/imagebuilder_image_recipe#parameter ImagebuilderImageRecipe#parameter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/imagebuilder_image_recipe#parameter ImagebuilderImageRecipe#parameter}
   */
   readonly parameter?: ImagebuilderImageRecipeComponentParameter[] | cdktf.IResolvable;
 }
@@ -895,7 +895,7 @@ export class ImagebuilderImageRecipeComponentList extends cdktf.ComplexList {
 }
 export interface ImagebuilderImageRecipeSystemsManagerAgent {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/imagebuilder_image_recipe#uninstall_after_build ImagebuilderImageRecipe#uninstall_after_build}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/imagebuilder_image_recipe#uninstall_after_build ImagebuilderImageRecipe#uninstall_after_build}
   */
   readonly uninstallAfterBuild: boolean | cdktf.IResolvable;
 }
@@ -976,7 +976,7 @@ export class ImagebuilderImageRecipeSystemsManagerAgentOutputReference extends c
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/imagebuilder_image_recipe aws_imagebuilder_image_recipe}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/imagebuilder_image_recipe aws_imagebuilder_image_recipe}
 */
 export class ImagebuilderImageRecipe extends cdktf.TerraformResource {
 
@@ -992,7 +992,7 @@ export class ImagebuilderImageRecipe extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ImagebuilderImageRecipe resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ImagebuilderImageRecipe to import
-  * @param importFromId The id of the existing ImagebuilderImageRecipe that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/imagebuilder_image_recipe#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ImagebuilderImageRecipe that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/imagebuilder_image_recipe#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ImagebuilderImageRecipe to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -1004,7 +1004,7 @@ export class ImagebuilderImageRecipe extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/imagebuilder_image_recipe aws_imagebuilder_image_recipe} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/imagebuilder_image_recipe aws_imagebuilder_image_recipe} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1015,7 +1015,7 @@ export class ImagebuilderImageRecipe extends cdktf.TerraformResource {
       terraformResourceType: 'aws_imagebuilder_image_recipe',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.90.0',
+        providerVersion: '5.90.1',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

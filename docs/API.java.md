@@ -474,6 +474,7 @@ The following submodules are available:
 - [dataAwsCustomerGateway](./dataAwsCustomerGateway.java.md)
 - [dataAwsDatapipelinePipeline](./dataAwsDatapipelinePipeline.java.md)
 - [dataAwsDatapipelinePipelineDefinition](./dataAwsDatapipelinePipelineDefinition.java.md)
+- [dataAwsDatazoneDomain](./dataAwsDatazoneDomain.java.md)
 - [dataAwsDatazoneEnvironmentBlueprint](./dataAwsDatazoneEnvironmentBlueprint.java.md)
 - [dataAwsDbClusterSnapshot](./dataAwsDbClusterSnapshot.java.md)
 - [dataAwsDbEventCategories](./dataAwsDbEventCategories.java.md)

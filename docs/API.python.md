@@ -474,6 +474,7 @@ The following submodules are available:
 - [dataAwsCustomerGateway](./dataAwsCustomerGateway.python.md)
 - [dataAwsDatapipelinePipeline](./dataAwsDatapipelinePipeline.python.md)
 - [dataAwsDatapipelinePipelineDefinition](./dataAwsDatapipelinePipelineDefinition.python.md)
+- [dataAwsDatazoneDomain](./dataAwsDatazoneDomain.python.md)
 - [dataAwsDatazoneEnvironmentBlueprint](./dataAwsDatazoneEnvironmentBlueprint.python.md)
 - [dataAwsDbClusterSnapshot](./dataAwsDbClusterSnapshot.python.md)
 - [dataAwsDbEventCategories](./dataAwsDbEventCategories.python.md)
