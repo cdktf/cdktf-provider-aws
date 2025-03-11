@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsBedrockInferenceProfile.DataAwsBedrockInferenceProfile.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbedrockinferenceprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbedrockinferenceprofile"
 
 dataawsbedrockinferenceprofile.NewDataAwsBedrockInferenceProfile(scope Construct, id *string, config DataAwsBedrockInferenceProfileConfig) DataAwsBedrockInferenceProfile
 ```
@@ -276,7 +276,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsBedrockInferenceProfile.DataAwsBedrockInferenceProfile.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbedrockinferenceprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbedrockinferenceprofile"
 
 dataawsbedrockinferenceprofile.DataAwsBedrockInferenceProfile_IsConstruct(x interface{}) *bool
 ```
@@ -308,7 +308,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsBedrockInferenceProfile.DataAwsBedrockInferenceProfile.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbedrockinferenceprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbedrockinferenceprofile"
 
 dataawsbedrockinferenceprofile.DataAwsBedrockInferenceProfile_IsTerraformElement(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ dataawsbedrockinferenceprofile.DataAwsBedrockInferenceProfile_IsTerraformElement
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsBedrockInferenceProfile.DataAwsBedrockInferenceProfile.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbedrockinferenceprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbedrockinferenceprofile"
 
 dataawsbedrockinferenceprofile.DataAwsBedrockInferenceProfile_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ dataawsbedrockinferenceprofile.DataAwsBedrockInferenceProfile_IsTerraformDataSou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsBedrockInferenceProfile.DataAwsBedrockInferenceProfile.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbedrockinferenceprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbedrockinferenceprofile"
 
 dataawsbedrockinferenceprofile.DataAwsBedrockInferenceProfile_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -653,7 +653,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsBedrockInferenceProfile.DataAwsBedrockInferenceProfileConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbedrockinferenceprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbedrockinferenceprofile"
 
 &dataawsbedrockinferenceprofile.DataAwsBedrockInferenceProfileConfig {
 	Connection: interface{},
@@ -769,7 +769,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsBedrockInferenceProfile.DataAwsBedrockInferenceProfileModels.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbedrockinferenceprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbedrockinferenceprofile"
 
 &dataawsbedrockinferenceprofile.DataAwsBedrockInferenceProfileModels {
 
@@ -784,7 +784,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbedrockinferenceprofil
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsBedrockInferenceProfile.DataAwsBedrockInferenceProfileModelsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbedrockinferenceprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbedrockinferenceprofile"
 
 dataawsbedrockinferenceprofile.NewDataAwsBedrockInferenceProfileModelsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsBedrockInferenceProfileModelsList
 ```
@@ -933,7 +933,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsBedrockInferenceProfile.DataAwsBedrockInferenceProfileModelsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbedrockinferenceprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbedrockinferenceprofile"
 
 dataawsbedrockinferenceprofile.NewDataAwsBedrockInferenceProfileModelsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsBedrockInferenceProfileModelsOutputReference
 ```

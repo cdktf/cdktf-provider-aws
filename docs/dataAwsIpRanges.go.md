@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsIpRanges.DataAwsIpRanges.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsipranges"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsipranges"
 
 dataawsipranges.NewDataAwsIpRanges(scope Construct, id *string, config DataAwsIpRangesConfig) DataAwsIpRanges
 ```
@@ -297,7 +297,7 @@ func ResetUrl()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsIpRanges.DataAwsIpRanges.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsipranges"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsipranges"
 
 dataawsipranges.DataAwsIpRanges_IsConstruct(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsIpRanges.DataAwsIpRanges.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsipranges"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsipranges"
 
 dataawsipranges.DataAwsIpRanges_IsTerraformElement(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ dataawsipranges.DataAwsIpRanges_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsIpRanges.DataAwsIpRanges.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsipranges"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsipranges"
 
 dataawsipranges.DataAwsIpRanges_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ dataawsipranges.DataAwsIpRanges_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsIpRanges.DataAwsIpRanges.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsipranges"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsipranges"
 
 dataawsipranges.DataAwsIpRanges_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -696,7 +696,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsIpRanges.DataAwsIpRangesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsipranges"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsipranges"
 
 &dataawsipranges.DataAwsIpRangesConfig {
 	Connection: interface{},

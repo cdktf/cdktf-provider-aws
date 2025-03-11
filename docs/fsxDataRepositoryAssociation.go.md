@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.fsxDataRepositoryAssociation.FsxDataRepositoryAssociation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxdatarepositoryassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fsxdatarepositoryassociation"
 
 fsxdatarepositoryassociation.NewFsxDataRepositoryAssociation(scope Construct, id *string, config FsxDataRepositoryAssociationConfig) FsxDataRepositoryAssociation
 ```
@@ -460,7 +460,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.fsxDataRepositoryAssociation.FsxDataRepositoryAssociation.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxdatarepositoryassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fsxdatarepositoryassociation"
 
 fsxdatarepositoryassociation.FsxDataRepositoryAssociation_IsConstruct(x interface{}) *bool
 ```
@@ -492,7 +492,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.fsxDataRepositoryAssociation.FsxDataRepositoryAssociation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxdatarepositoryassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fsxdatarepositoryassociation"
 
 fsxdatarepositoryassociation.FsxDataRepositoryAssociation_IsTerraformElement(x interface{}) *bool
 ```
@@ -506,7 +506,7 @@ fsxdatarepositoryassociation.FsxDataRepositoryAssociation_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.fsxDataRepositoryAssociation.FsxDataRepositoryAssociation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxdatarepositoryassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fsxdatarepositoryassociation"
 
 fsxdatarepositoryassociation.FsxDataRepositoryAssociation_IsTerraformResource(x interface{}) *bool
 ```
@@ -520,7 +520,7 @@ fsxdatarepositoryassociation.FsxDataRepositoryAssociation_IsTerraformResource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.fsxDataRepositoryAssociation.FsxDataRepositoryAssociation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxdatarepositoryassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fsxdatarepositoryassociation"
 
 fsxdatarepositoryassociation.FsxDataRepositoryAssociation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1013,7 +1013,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.fsxDataRepositoryAssociation.FsxDataRepositoryAssociationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxdatarepositoryassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fsxdatarepositoryassociation"
 
 &fsxdatarepositoryassociation.FsxDataRepositoryAssociationConfig {
 	Connection: interface{},
@@ -1030,10 +1030,10 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxdatarepositoryassociation"
 	DeleteDataInFilesystem: interface{},
 	Id: *string,
 	ImportedFileChunkSize: *f64,
-	S3: github.com/cdktf/cdktf-provider-aws-go/aws.fsxDataRepositoryAssociation.FsxDataRepositoryAssociationS3,
+	S3: github.com/cdktf/cdktf-provider-aws-go/aws/v19.fsxDataRepositoryAssociation.FsxDataRepositoryAssociationS3,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.fsxDataRepositoryAssociation.FsxDataRepositoryAssociationTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v19.fsxDataRepositoryAssociation.FsxDataRepositoryAssociationTimeouts,
 }
 ```
 
@@ -1276,11 +1276,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.fsxDataRepositoryAssociation.FsxDataRepositoryAssociationS3.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxdatarepositoryassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fsxdatarepositoryassociation"
 
 &fsxdatarepositoryassociation.FsxDataRepositoryAssociationS3 {
-	AutoExportPolicy: github.com/cdktf/cdktf-provider-aws-go/aws.fsxDataRepositoryAssociation.FsxDataRepositoryAssociationS3AutoExportPolicy,
-	AutoImportPolicy: github.com/cdktf/cdktf-provider-aws-go/aws.fsxDataRepositoryAssociation.FsxDataRepositoryAssociationS3AutoImportPolicy,
+	AutoExportPolicy: github.com/cdktf/cdktf-provider-aws-go/aws/v19.fsxDataRepositoryAssociation.FsxDataRepositoryAssociationS3AutoExportPolicy,
+	AutoImportPolicy: github.com/cdktf/cdktf-provider-aws-go/aws/v19.fsxDataRepositoryAssociation.FsxDataRepositoryAssociationS3AutoImportPolicy,
 }
 ```
 
@@ -1326,7 +1326,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.fsxDataRepositoryAssociation.FsxDataRepositoryAssociationS3AutoExportPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxdatarepositoryassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fsxdatarepositoryassociation"
 
 &fsxdatarepositoryassociation.FsxDataRepositoryAssociationS3AutoExportPolicy {
 	Events: *[]*string,
@@ -1358,7 +1358,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.fsxDataRepositoryAssociation.FsxDataRepositoryAssociationS3AutoImportPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxdatarepositoryassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fsxdatarepositoryassociation"
 
 &fsxdatarepositoryassociation.FsxDataRepositoryAssociationS3AutoImportPolicy {
 	Events: *[]*string,
@@ -1390,7 +1390,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.fsxDataRepositoryAssociation.FsxDataRepositoryAssociationTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxdatarepositoryassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fsxdatarepositoryassociation"
 
 &fsxdatarepositoryassociation.FsxDataRepositoryAssociationTimeouts {
 	Create: *string,
@@ -1452,7 +1452,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.fsxDataRepositoryAssociation.FsxDataRepositoryAssociationS3AutoExportPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxdatarepositoryassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fsxdatarepositoryassociation"
 
 fsxdatarepositoryassociation.NewFsxDataRepositoryAssociationS3AutoExportPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FsxDataRepositoryAssociationS3AutoExportPolicyOutputReference
 ```
@@ -1730,7 +1730,7 @@ func InternalValue() FsxDataRepositoryAssociationS3AutoExportPolicy
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.fsxDataRepositoryAssociation.FsxDataRepositoryAssociationS3AutoImportPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxdatarepositoryassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fsxdatarepositoryassociation"
 
 fsxdatarepositoryassociation.NewFsxDataRepositoryAssociationS3AutoImportPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FsxDataRepositoryAssociationS3AutoImportPolicyOutputReference
 ```
@@ -2008,7 +2008,7 @@ func InternalValue() FsxDataRepositoryAssociationS3AutoImportPolicy
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.fsxDataRepositoryAssociation.FsxDataRepositoryAssociationS3OutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxdatarepositoryassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fsxdatarepositoryassociation"
 
 fsxdatarepositoryassociation.NewFsxDataRepositoryAssociationS3OutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FsxDataRepositoryAssociationS3OutputReference
 ```
@@ -2341,7 +2341,7 @@ func InternalValue() FsxDataRepositoryAssociationS3
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.fsxDataRepositoryAssociation.FsxDataRepositoryAssociationTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxdatarepositoryassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fsxdatarepositoryassociation"
 
 fsxdatarepositoryassociation.NewFsxDataRepositoryAssociationTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FsxDataRepositoryAssociationTimeoutsOutputReference
 ```

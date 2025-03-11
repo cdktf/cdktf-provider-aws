@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.codebuildFleet.CodebuildFleet.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/codebuildfleet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/codebuildfleet"
 
 codebuildfleet.NewCodebuildFleet(scope Construct, id *string, config CodebuildFleetConfig) CodebuildFleet
 ```
@@ -473,7 +473,7 @@ func ResetVpcConfig()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.codebuildFleet.CodebuildFleet.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/codebuildfleet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/codebuildfleet"
 
 codebuildfleet.CodebuildFleet_IsConstruct(x interface{}) *bool
 ```
@@ -505,7 +505,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.codebuildFleet.CodebuildFleet.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/codebuildfleet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/codebuildfleet"
 
 codebuildfleet.CodebuildFleet_IsTerraformElement(x interface{}) *bool
 ```
@@ -519,7 +519,7 @@ codebuildfleet.CodebuildFleet_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.codebuildFleet.CodebuildFleet.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/codebuildfleet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/codebuildfleet"
 
 codebuildfleet.CodebuildFleet_IsTerraformResource(x interface{}) *bool
 ```
@@ -533,7 +533,7 @@ codebuildfleet.CodebuildFleet_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.codebuildFleet.CodebuildFleet.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/codebuildfleet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/codebuildfleet"
 
 codebuildfleet.CodebuildFleet_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1081,7 +1081,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.codebuildFleet.CodebuildFleetComputeConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/codebuildfleet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/codebuildfleet"
 
 &codebuildfleet.CodebuildFleetComputeConfiguration {
 	Disk: *f64,
@@ -1155,7 +1155,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.codebuildFleet.CodebuildFleetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/codebuildfleet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/codebuildfleet"
 
 &codebuildfleet.CodebuildFleetConfig {
 	Connection: interface{},
@@ -1169,11 +1169,11 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/codebuildfleet"
 	ComputeType: *string,
 	EnvironmentType: *string,
 	Name: *string,
-	ComputeConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.codebuildFleet.CodebuildFleetComputeConfiguration,
+	ComputeConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v19.codebuildFleet.CodebuildFleetComputeConfiguration,
 	FleetServiceRole: *string,
 	ImageId: *string,
 	OverflowBehavior: *string,
-	ScalingConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.codebuildFleet.CodebuildFleetScalingConfiguration,
+	ScalingConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v19.codebuildFleet.CodebuildFleetScalingConfiguration,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
 	VpcConfig: interface{},
@@ -1431,7 +1431,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.codebuildFleet.CodebuildFleetScalingConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/codebuildfleet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/codebuildfleet"
 
 &codebuildfleet.CodebuildFleetScalingConfiguration {
 	MaxCapacity: *f64,
@@ -1493,7 +1493,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.codebuildFleet.CodebuildFleetScalingConfigurationTargetTrackingScalingConfigs.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/codebuildfleet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/codebuildfleet"
 
 &codebuildfleet.CodebuildFleetScalingConfigurationTargetTrackingScalingConfigs {
 	MetricType: *string,
@@ -1539,7 +1539,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.codebuildFleet.CodebuildFleetStatus.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/codebuildfleet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/codebuildfleet"
 
 &codebuildfleet.CodebuildFleetStatus {
 
@@ -1552,7 +1552,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/codebuildfleet"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.codebuildFleet.CodebuildFleetVpcConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/codebuildfleet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/codebuildfleet"
 
 &codebuildfleet.CodebuildFleetVpcConfig {
 	SecurityGroupIds: *[]*string,
@@ -1614,7 +1614,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.codebuildFleet.CodebuildFleetComputeConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/codebuildfleet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/codebuildfleet"
 
 codebuildfleet.NewCodebuildFleetComputeConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CodebuildFleetComputeConfigurationOutputReference
 ```
@@ -1979,7 +1979,7 @@ func InternalValue() CodebuildFleetComputeConfiguration
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.codebuildFleet.CodebuildFleetScalingConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/codebuildfleet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/codebuildfleet"
 
 codebuildfleet.NewCodebuildFleetScalingConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CodebuildFleetScalingConfigurationOutputReference
 ```
@@ -2339,7 +2339,7 @@ func InternalValue() CodebuildFleetScalingConfiguration
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.codebuildFleet.CodebuildFleetScalingConfigurationTargetTrackingScalingConfigsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/codebuildfleet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/codebuildfleet"
 
 codebuildfleet.NewCodebuildFleetScalingConfigurationTargetTrackingScalingConfigsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CodebuildFleetScalingConfigurationTargetTrackingScalingConfigsList
 ```
@@ -2499,7 +2499,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.codebuildFleet.CodebuildFleetScalingConfigurationTargetTrackingScalingConfigsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/codebuildfleet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/codebuildfleet"
 
 codebuildfleet.NewCodebuildFleetScalingConfigurationTargetTrackingScalingConfigsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CodebuildFleetScalingConfigurationTargetTrackingScalingConfigsOutputReference
 ```
@@ -2824,7 +2824,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.codebuildFleet.CodebuildFleetStatusList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/codebuildfleet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/codebuildfleet"
 
 codebuildfleet.NewCodebuildFleetStatusList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CodebuildFleetStatusList
 ```
@@ -2973,7 +2973,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.codebuildFleet.CodebuildFleetStatusOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/codebuildfleet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/codebuildfleet"
 
 codebuildfleet.NewCodebuildFleetStatusOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CodebuildFleetStatusOutputReference
 ```
@@ -3273,7 +3273,7 @@ func InternalValue() CodebuildFleetStatus
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.codebuildFleet.CodebuildFleetVpcConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/codebuildfleet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/codebuildfleet"
 
 codebuildfleet.NewCodebuildFleetVpcConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CodebuildFleetVpcConfigList
 ```
@@ -3433,7 +3433,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.codebuildFleet.CodebuildFleetVpcConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/codebuildfleet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/codebuildfleet"
 
 codebuildfleet.NewCodebuildFleetVpcConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CodebuildFleetVpcConfigOutputReference
 ```
