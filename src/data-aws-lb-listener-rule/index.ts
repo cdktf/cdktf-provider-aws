@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/data-sources/lb_listener_rule
+// https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/data-sources/lb_listener_rule
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,27 +8,27 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsLbListenerRuleConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/data-sources/lb_listener_rule#arn DataAwsLbListenerRule#arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/data-sources/lb_listener_rule#arn DataAwsLbListenerRule#arn}
   */
   readonly arn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/data-sources/lb_listener_rule#listener_arn DataAwsLbListenerRule#listener_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/data-sources/lb_listener_rule#listener_arn DataAwsLbListenerRule#listener_arn}
   */
   readonly listenerArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/data-sources/lb_listener_rule#priority DataAwsLbListenerRule#priority}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/data-sources/lb_listener_rule#priority DataAwsLbListenerRule#priority}
   */
   readonly priority?: number;
   /**
   * action block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/data-sources/lb_listener_rule#action DataAwsLbListenerRule#action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/data-sources/lb_listener_rule#action DataAwsLbListenerRule#action}
   */
   readonly action?: DataAwsLbListenerRuleAction[] | cdktf.IResolvable;
   /**
   * condition block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/data-sources/lb_listener_rule#condition DataAwsLbListenerRule#condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/data-sources/lb_listener_rule#condition DataAwsLbListenerRule#condition}
   */
   readonly condition?: DataAwsLbListenerRuleCondition[] | cdktf.IResolvable;
 }
@@ -485,7 +480,7 @@ export interface DataAwsLbListenerRuleActionForward {
   /**
   * target_group block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/data-sources/lb_listener_rule#target_group DataAwsLbListenerRule#target_group}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/data-sources/lb_listener_rule#target_group DataAwsLbListenerRule#target_group}
   */
   readonly targetGroup?: DataAwsLbListenerRuleActionForwardTargetGroup[] | cdktf.IResolvable;
 }
@@ -676,7 +671,7 @@ export interface DataAwsLbListenerRuleAction {
   /**
   * forward block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/data-sources/lb_listener_rule#forward DataAwsLbListenerRule#forward}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/data-sources/lb_listener_rule#forward DataAwsLbListenerRule#forward}
   */
   readonly forward?: DataAwsLbListenerRuleActionForward;
 }
@@ -1180,7 +1175,7 @@ export interface DataAwsLbListenerRuleConditionQueryString {
   /**
   * values block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/data-sources/lb_listener_rule#values DataAwsLbListenerRule#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/data-sources/lb_listener_rule#values DataAwsLbListenerRule#values}
   */
   readonly values?: DataAwsLbListenerRuleConditionQueryStringValues[] | cdktf.IResolvable;
 }
@@ -1340,7 +1335,7 @@ export interface DataAwsLbListenerRuleCondition {
   /**
   * query_string block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/data-sources/lb_listener_rule#query_string DataAwsLbListenerRule#query_string}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/data-sources/lb_listener_rule#query_string DataAwsLbListenerRule#query_string}
   */
   readonly queryString?: DataAwsLbListenerRuleConditionQueryString;
 }
@@ -1486,7 +1481,7 @@ export class DataAwsLbListenerRuleConditionList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/data-sources/lb_listener_rule aws_lb_listener_rule}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/data-sources/lb_listener_rule aws_lb_listener_rule}
 */
 export class DataAwsLbListenerRule extends cdktf.TerraformDataSource {
 
@@ -1502,7 +1497,7 @@ export class DataAwsLbListenerRule extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataAwsLbListenerRule resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsLbListenerRule to import
-  * @param importFromId The id of the existing DataAwsLbListenerRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/data-sources/lb_listener_rule#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsLbListenerRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/data-sources/lb_listener_rule#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsLbListenerRule to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -1514,7 +1509,7 @@ export class DataAwsLbListenerRule extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/data-sources/lb_listener_rule aws_lb_listener_rule} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/data-sources/lb_listener_rule aws_lb_listener_rule} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1525,7 +1520,7 @@ export class DataAwsLbListenerRule extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_lb_listener_rule',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.90.0',
+        providerVersion: '5.90.1',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

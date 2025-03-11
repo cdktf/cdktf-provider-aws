@@ -474,6 +474,7 @@ The following submodules are available:
 - [dataAwsCustomerGateway](./dataAwsCustomerGateway.typescript.md)
 - [dataAwsDatapipelinePipeline](./dataAwsDatapipelinePipeline.typescript.md)
 - [dataAwsDatapipelinePipelineDefinition](./dataAwsDatapipelinePipelineDefinition.typescript.md)
+- [dataAwsDatazoneDomain](./dataAwsDatazoneDomain.typescript.md)
 - [dataAwsDatazoneEnvironmentBlueprint](./dataAwsDatazoneEnvironmentBlueprint.typescript.md)
 - [dataAwsDbClusterSnapshot](./dataAwsDbClusterSnapshot.typescript.md)
 - [dataAwsDbEventCategories](./dataAwsDbEventCategories.typescript.md)

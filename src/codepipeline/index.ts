@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/codepipeline
+// https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/codepipeline
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,71 +8,71 @@ import * as cdktf from 'cdktf';
 
 export interface CodepipelineConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/codepipeline#execution_mode Codepipeline#execution_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/codepipeline#execution_mode Codepipeline#execution_mode}
   */
   readonly executionMode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/codepipeline#id Codepipeline#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/codepipeline#id Codepipeline#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/codepipeline#name Codepipeline#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/codepipeline#name Codepipeline#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/codepipeline#pipeline_type Codepipeline#pipeline_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/codepipeline#pipeline_type Codepipeline#pipeline_type}
   */
   readonly pipelineType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/codepipeline#role_arn Codepipeline#role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/codepipeline#role_arn Codepipeline#role_arn}
   */
   readonly roleArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/codepipeline#tags Codepipeline#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/codepipeline#tags Codepipeline#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/codepipeline#tags_all Codepipeline#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/codepipeline#tags_all Codepipeline#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
   * artifact_store block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/codepipeline#artifact_store Codepipeline#artifact_store}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/codepipeline#artifact_store Codepipeline#artifact_store}
   */
   readonly artifactStore: CodepipelineArtifactStore[] | cdktf.IResolvable;
   /**
   * stage block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/codepipeline#stage Codepipeline#stage}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/codepipeline#stage Codepipeline#stage}
   */
   readonly stage: CodepipelineStage[] | cdktf.IResolvable;
   /**
   * trigger block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/codepipeline#trigger Codepipeline#trigger}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/codepipeline#trigger Codepipeline#trigger}
   */
   readonly trigger?: CodepipelineTrigger[] | cdktf.IResolvable;
   /**
   * variable block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/codepipeline#variable Codepipeline#variable}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/codepipeline#variable Codepipeline#variable}
   */
   readonly variable?: CodepipelineVariable[] | cdktf.IResolvable;
 }
 export interface CodepipelineArtifactStoreEncryptionKey {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/codepipeline#id Codepipeline#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/codepipeline#id Codepipeline#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/codepipeline#type Codepipeline#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/codepipeline#type Codepipeline#type}
   */
   readonly type: string;
 }
@@ -184,21 +179,21 @@ export class CodepipelineArtifactStoreEncryptionKeyOutputReference extends cdktf
 }
 export interface CodepipelineArtifactStore {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/codepipeline#location Codepipeline#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/codepipeline#location Codepipeline#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/codepipeline#region Codepipeline#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/codepipeline#region Codepipeline#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/codepipeline#type Codepipeline#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/codepipeline#type Codepipeline#type}
   */
   readonly type: string;
   /**
   * encryption_key block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/codepipeline#encryption_key Codepipeline#encryption_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/codepipeline#encryption_key Codepipeline#encryption_key}
   */
   readonly encryptionKey?: CodepipelineArtifactStoreEncryptionKey;
 }
@@ -395,55 +390,55 @@ export class CodepipelineArtifactStoreList extends cdktf.ComplexList {
 }
 export interface CodepipelineStageAction {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/codepipeline#category Codepipeline#category}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/codepipeline#category Codepipeline#category}
   */
   readonly category: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/codepipeline#configuration Codepipeline#configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/codepipeline#configuration Codepipeline#configuration}
   */
   readonly configuration?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/codepipeline#input_artifacts Codepipeline#input_artifacts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/codepipeline#input_artifacts Codepipeline#input_artifacts}
   */
   readonly inputArtifacts?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/codepipeline#name Codepipeline#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/codepipeline#name Codepipeline#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/codepipeline#namespace Codepipeline#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/codepipeline#namespace Codepipeline#namespace}
   */
   readonly namespace?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/codepipeline#output_artifacts Codepipeline#output_artifacts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/codepipeline#output_artifacts Codepipeline#output_artifacts}
   */
   readonly outputArtifacts?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/codepipeline#owner Codepipeline#owner}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/codepipeline#owner Codepipeline#owner}
   */
   readonly owner: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/codepipeline#provider Codepipeline#provider}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/codepipeline#provider Codepipeline#provider}
   */
   readonly provider: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/codepipeline#region Codepipeline#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/codepipeline#region Codepipeline#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/codepipeline#role_arn Codepipeline#role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/codepipeline#role_arn Codepipeline#role_arn}
   */
   readonly roleArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/codepipeline#run_order Codepipeline#run_order}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/codepipeline#run_order Codepipeline#run_order}
   */
   readonly runOrder?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/codepipeline#timeout_in_minutes Codepipeline#timeout_in_minutes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/codepipeline#timeout_in_minutes Codepipeline#timeout_in_minutes}
   */
   readonly timeoutInMinutes?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/codepipeline#version Codepipeline#version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/codepipeline#version Codepipeline#version}
   */
   readonly version: string;
 }
@@ -890,17 +885,2347 @@ export class CodepipelineStageActionList extends cdktf.ComplexList {
     return new CodepipelineStageActionOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface CodepipelineStageBeforeEntryConditionRuleRuleTypeId {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/codepipeline#category Codepipeline#category}
+  */
+  readonly category: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/codepipeline#owner Codepipeline#owner}
+  */
+  readonly owner?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/codepipeline#provider Codepipeline#provider}
+  */
+  readonly provider: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/codepipeline#version Codepipeline#version}
+  */
+  readonly version?: string;
+}
+
+export function codepipelineStageBeforeEntryConditionRuleRuleTypeIdToTerraform(struct?: CodepipelineStageBeforeEntryConditionRuleRuleTypeIdOutputReference | CodepipelineStageBeforeEntryConditionRuleRuleTypeId): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    category: cdktf.stringToTerraform(struct!.category),
+    owner: cdktf.stringToTerraform(struct!.owner),
+    provider: cdktf.stringToTerraform(struct!.provider),
+    version: cdktf.stringToTerraform(struct!.version),
+  }
+}
+
+
+export function codepipelineStageBeforeEntryConditionRuleRuleTypeIdToHclTerraform(struct?: CodepipelineStageBeforeEntryConditionRuleRuleTypeIdOutputReference | CodepipelineStageBeforeEntryConditionRuleRuleTypeId): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    category: {
+      value: cdktf.stringToHclTerraform(struct!.category),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    owner: {
+      value: cdktf.stringToHclTerraform(struct!.owner),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    provider: {
+      value: cdktf.stringToHclTerraform(struct!.provider),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    version: {
+      value: cdktf.stringToHclTerraform(struct!.version),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class CodepipelineStageBeforeEntryConditionRuleRuleTypeIdOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): CodepipelineStageBeforeEntryConditionRuleRuleTypeId | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._category !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.category = this._category;
+    }
+    if (this._owner !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.owner = this._owner;
+    }
+    if (this._provider !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.provider = this._provider;
+    }
+    if (this._version !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.version = this._version;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CodepipelineStageBeforeEntryConditionRuleRuleTypeId | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._category = undefined;
+      this._owner = undefined;
+      this._provider = undefined;
+      this._version = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._category = value.category;
+      this._owner = value.owner;
+      this._provider = value.provider;
+      this._version = value.version;
+    }
+  }
+
+  // category - computed: false, optional: false, required: true
+  private _category?: string; 
+  public get category() {
+    return this.getStringAttribute('category');
+  }
+  public set category(value: string) {
+    this._category = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get categoryInput() {
+    return this._category;
+  }
+
+  // owner - computed: false, optional: true, required: false
+  private _owner?: string; 
+  public get owner() {
+    return this.getStringAttribute('owner');
+  }
+  public set owner(value: string) {
+    this._owner = value;
+  }
+  public resetOwner() {
+    this._owner = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ownerInput() {
+    return this._owner;
+  }
+
+  // provider - computed: false, optional: false, required: true
+  private _provider?: string; 
+  public get provider() {
+    return this.getStringAttribute('provider');
+  }
+  public set provider(value: string) {
+    this._provider = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get providerInput() {
+    return this._provider;
+  }
+
+  // version - computed: false, optional: true, required: false
+  private _version?: string; 
+  public get version() {
+    return this.getStringAttribute('version');
+  }
+  public set version(value: string) {
+    this._version = value;
+  }
+  public resetVersion() {
+    this._version = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get versionInput() {
+    return this._version;
+  }
+}
+export interface CodepipelineStageBeforeEntryConditionRule {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/codepipeline#commands Codepipeline#commands}
+  */
+  readonly commands?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/codepipeline#configuration Codepipeline#configuration}
+  */
+  readonly configuration?: { [key: string]: string };
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/codepipeline#input_artifacts Codepipeline#input_artifacts}
+  */
+  readonly inputArtifacts?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/codepipeline#name Codepipeline#name}
+  */
+  readonly name: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/codepipeline#region Codepipeline#region}
+  */
+  readonly region?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/codepipeline#role_arn Codepipeline#role_arn}
+  */
+  readonly roleArn?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/codepipeline#timeout_in_minutes Codepipeline#timeout_in_minutes}
+  */
+  readonly timeoutInMinutes?: number;
+  /**
+  * rule_type_id block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/codepipeline#rule_type_id Codepipeline#rule_type_id}
+  */
+  readonly ruleTypeId: CodepipelineStageBeforeEntryConditionRuleRuleTypeId;
+}
+
+export function codepipelineStageBeforeEntryConditionRuleToTerraform(struct?: CodepipelineStageBeforeEntryConditionRule | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    commands: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.commands),
+    configuration: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.configuration),
+    input_artifacts: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.inputArtifacts),
+    name: cdktf.stringToTerraform(struct!.name),
+    region: cdktf.stringToTerraform(struct!.region),
+    role_arn: cdktf.stringToTerraform(struct!.roleArn),
+    timeout_in_minutes: cdktf.numberToTerraform(struct!.timeoutInMinutes),
+    rule_type_id: codepipelineStageBeforeEntryConditionRuleRuleTypeIdToTerraform(struct!.ruleTypeId),
+  }
+}
+
+
+export function codepipelineStageBeforeEntryConditionRuleToHclTerraform(struct?: CodepipelineStageBeforeEntryConditionRule | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    commands: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.commands),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    configuration: {
+      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.configuration),
+      isBlock: false,
+      type: "map",
+      storageClassType: "stringMap",
+    },
+    input_artifacts: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.inputArtifacts),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    region: {
+      value: cdktf.stringToHclTerraform(struct!.region),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    role_arn: {
+      value: cdktf.stringToHclTerraform(struct!.roleArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    timeout_in_minutes: {
+      value: cdktf.numberToHclTerraform(struct!.timeoutInMinutes),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    rule_type_id: {
+      value: codepipelineStageBeforeEntryConditionRuleRuleTypeIdToHclTerraform(struct!.ruleTypeId),
+      isBlock: true,
+      type: "list",
+      storageClassType: "CodepipelineStageBeforeEntryConditionRuleRuleTypeIdList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class CodepipelineStageBeforeEntryConditionRuleOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): CodepipelineStageBeforeEntryConditionRule | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._commands !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.commands = this._commands;
+    }
+    if (this._configuration !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.configuration = this._configuration;
+    }
+    if (this._inputArtifacts !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.inputArtifacts = this._inputArtifacts;
+    }
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._region !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.region = this._region;
+    }
+    if (this._roleArn !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.roleArn = this._roleArn;
+    }
+    if (this._timeoutInMinutes !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.timeoutInMinutes = this._timeoutInMinutes;
+    }
+    if (this._ruleTypeId?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ruleTypeId = this._ruleTypeId?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CodepipelineStageBeforeEntryConditionRule | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._commands = undefined;
+      this._configuration = undefined;
+      this._inputArtifacts = undefined;
+      this._name = undefined;
+      this._region = undefined;
+      this._roleArn = undefined;
+      this._timeoutInMinutes = undefined;
+      this._ruleTypeId.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._commands = value.commands;
+      this._configuration = value.configuration;
+      this._inputArtifacts = value.inputArtifacts;
+      this._name = value.name;
+      this._region = value.region;
+      this._roleArn = value.roleArn;
+      this._timeoutInMinutes = value.timeoutInMinutes;
+      this._ruleTypeId.internalValue = value.ruleTypeId;
+    }
+  }
+
+  // commands - computed: false, optional: true, required: false
+  private _commands?: string[]; 
+  public get commands() {
+    return this.getListAttribute('commands');
+  }
+  public set commands(value: string[]) {
+    this._commands = value;
+  }
+  public resetCommands() {
+    this._commands = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get commandsInput() {
+    return this._commands;
+  }
+
+  // configuration - computed: false, optional: true, required: false
+  private _configuration?: { [key: string]: string }; 
+  public get configuration() {
+    return this.getStringMapAttribute('configuration');
+  }
+  public set configuration(value: { [key: string]: string }) {
+    this._configuration = value;
+  }
+  public resetConfiguration() {
+    this._configuration = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get configurationInput() {
+    return this._configuration;
+  }
+
+  // input_artifacts - computed: false, optional: true, required: false
+  private _inputArtifacts?: string[]; 
+  public get inputArtifacts() {
+    return this.getListAttribute('input_artifacts');
+  }
+  public set inputArtifacts(value: string[]) {
+    this._inputArtifacts = value;
+  }
+  public resetInputArtifacts() {
+    this._inputArtifacts = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get inputArtifactsInput() {
+    return this._inputArtifacts;
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // region - computed: false, optional: true, required: false
+  private _region?: string; 
+  public get region() {
+    return this.getStringAttribute('region');
+  }
+  public set region(value: string) {
+    this._region = value;
+  }
+  public resetRegion() {
+    this._region = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get regionInput() {
+    return this._region;
+  }
+
+  // role_arn - computed: false, optional: true, required: false
+  private _roleArn?: string; 
+  public get roleArn() {
+    return this.getStringAttribute('role_arn');
+  }
+  public set roleArn(value: string) {
+    this._roleArn = value;
+  }
+  public resetRoleArn() {
+    this._roleArn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get roleArnInput() {
+    return this._roleArn;
+  }
+
+  // timeout_in_minutes - computed: false, optional: true, required: false
+  private _timeoutInMinutes?: number; 
+  public get timeoutInMinutes() {
+    return this.getNumberAttribute('timeout_in_minutes');
+  }
+  public set timeoutInMinutes(value: number) {
+    this._timeoutInMinutes = value;
+  }
+  public resetTimeoutInMinutes() {
+    this._timeoutInMinutes = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeoutInMinutesInput() {
+    return this._timeoutInMinutes;
+  }
+
+  // rule_type_id - computed: false, optional: false, required: true
+  private _ruleTypeId = new CodepipelineStageBeforeEntryConditionRuleRuleTypeIdOutputReference(this, "rule_type_id");
+  public get ruleTypeId() {
+    return this._ruleTypeId;
+  }
+  public putRuleTypeId(value: CodepipelineStageBeforeEntryConditionRuleRuleTypeId) {
+    this._ruleTypeId.internalValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ruleTypeIdInput() {
+    return this._ruleTypeId.internalValue;
+  }
+}
+
+export class CodepipelineStageBeforeEntryConditionRuleList extends cdktf.ComplexList {
+  public internalValue? : CodepipelineStageBeforeEntryConditionRule[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): CodepipelineStageBeforeEntryConditionRuleOutputReference {
+    return new CodepipelineStageBeforeEntryConditionRuleOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface CodepipelineStageBeforeEntryCondition {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/codepipeline#result Codepipeline#result}
+  */
+  readonly result?: string;
+  /**
+  * rule block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/codepipeline#rule Codepipeline#rule}
+  */
+  readonly rule: CodepipelineStageBeforeEntryConditionRule[] | cdktf.IResolvable;
+}
+
+export function codepipelineStageBeforeEntryConditionToTerraform(struct?: CodepipelineStageBeforeEntryConditionOutputReference | CodepipelineStageBeforeEntryCondition): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    result: cdktf.stringToTerraform(struct!.result),
+    rule: cdktf.listMapper(codepipelineStageBeforeEntryConditionRuleToTerraform, true)(struct!.rule),
+  }
+}
+
+
+export function codepipelineStageBeforeEntryConditionToHclTerraform(struct?: CodepipelineStageBeforeEntryConditionOutputReference | CodepipelineStageBeforeEntryCondition): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    result: {
+      value: cdktf.stringToHclTerraform(struct!.result),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    rule: {
+      value: cdktf.listMapperHcl(codepipelineStageBeforeEntryConditionRuleToHclTerraform, true)(struct!.rule),
+      isBlock: true,
+      type: "list",
+      storageClassType: "CodepipelineStageBeforeEntryConditionRuleList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class CodepipelineStageBeforeEntryConditionOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): CodepipelineStageBeforeEntryCondition | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._result !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.result = this._result;
+    }
+    if (this._rule?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.rule = this._rule?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CodepipelineStageBeforeEntryCondition | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._result = undefined;
+      this._rule.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._result = value.result;
+      this._rule.internalValue = value.rule;
+    }
+  }
+
+  // result - computed: false, optional: true, required: false
+  private _result?: string; 
+  public get result() {
+    return this.getStringAttribute('result');
+  }
+  public set result(value: string) {
+    this._result = value;
+  }
+  public resetResult() {
+    this._result = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get resultInput() {
+    return this._result;
+  }
+
+  // rule - computed: false, optional: false, required: true
+  private _rule = new CodepipelineStageBeforeEntryConditionRuleList(this, "rule", false);
+  public get rule() {
+    return this._rule;
+  }
+  public putRule(value: CodepipelineStageBeforeEntryConditionRule[] | cdktf.IResolvable) {
+    this._rule.internalValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ruleInput() {
+    return this._rule.internalValue;
+  }
+}
+export interface CodepipelineStageBeforeEntry {
+  /**
+  * condition block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/codepipeline#condition Codepipeline#condition}
+  */
+  readonly condition: CodepipelineStageBeforeEntryCondition;
+}
+
+export function codepipelineStageBeforeEntryToTerraform(struct?: CodepipelineStageBeforeEntryOutputReference | CodepipelineStageBeforeEntry): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    condition: codepipelineStageBeforeEntryConditionToTerraform(struct!.condition),
+  }
+}
+
+
+export function codepipelineStageBeforeEntryToHclTerraform(struct?: CodepipelineStageBeforeEntryOutputReference | CodepipelineStageBeforeEntry): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    condition: {
+      value: codepipelineStageBeforeEntryConditionToHclTerraform(struct!.condition),
+      isBlock: true,
+      type: "list",
+      storageClassType: "CodepipelineStageBeforeEntryConditionList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class CodepipelineStageBeforeEntryOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): CodepipelineStageBeforeEntry | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._condition?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.condition = this._condition?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CodepipelineStageBeforeEntry | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._condition.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._condition.internalValue = value.condition;
+    }
+  }
+
+  // condition - computed: false, optional: false, required: true
+  private _condition = new CodepipelineStageBeforeEntryConditionOutputReference(this, "condition");
+  public get condition() {
+    return this._condition;
+  }
+  public putCondition(value: CodepipelineStageBeforeEntryCondition) {
+    this._condition.internalValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get conditionInput() {
+    return this._condition.internalValue;
+  }
+}
+export interface CodepipelineStageOnFailureConditionRuleRuleTypeId {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/codepipeline#category Codepipeline#category}
+  */
+  readonly category: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/codepipeline#owner Codepipeline#owner}
+  */
+  readonly owner?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/codepipeline#provider Codepipeline#provider}
+  */
+  readonly provider: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/codepipeline#version Codepipeline#version}
+  */
+  readonly version?: string;
+}
+
+export function codepipelineStageOnFailureConditionRuleRuleTypeIdToTerraform(struct?: CodepipelineStageOnFailureConditionRuleRuleTypeIdOutputReference | CodepipelineStageOnFailureConditionRuleRuleTypeId): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    category: cdktf.stringToTerraform(struct!.category),
+    owner: cdktf.stringToTerraform(struct!.owner),
+    provider: cdktf.stringToTerraform(struct!.provider),
+    version: cdktf.stringToTerraform(struct!.version),
+  }
+}
+
+
+export function codepipelineStageOnFailureConditionRuleRuleTypeIdToHclTerraform(struct?: CodepipelineStageOnFailureConditionRuleRuleTypeIdOutputReference | CodepipelineStageOnFailureConditionRuleRuleTypeId): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    category: {
+      value: cdktf.stringToHclTerraform(struct!.category),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    owner: {
+      value: cdktf.stringToHclTerraform(struct!.owner),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    provider: {
+      value: cdktf.stringToHclTerraform(struct!.provider),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    version: {
+      value: cdktf.stringToHclTerraform(struct!.version),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class CodepipelineStageOnFailureConditionRuleRuleTypeIdOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): CodepipelineStageOnFailureConditionRuleRuleTypeId | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._category !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.category = this._category;
+    }
+    if (this._owner !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.owner = this._owner;
+    }
+    if (this._provider !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.provider = this._provider;
+    }
+    if (this._version !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.version = this._version;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CodepipelineStageOnFailureConditionRuleRuleTypeId | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._category = undefined;
+      this._owner = undefined;
+      this._provider = undefined;
+      this._version = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._category = value.category;
+      this._owner = value.owner;
+      this._provider = value.provider;
+      this._version = value.version;
+    }
+  }
+
+  // category - computed: false, optional: false, required: true
+  private _category?: string; 
+  public get category() {
+    return this.getStringAttribute('category');
+  }
+  public set category(value: string) {
+    this._category = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get categoryInput() {
+    return this._category;
+  }
+
+  // owner - computed: false, optional: true, required: false
+  private _owner?: string; 
+  public get owner() {
+    return this.getStringAttribute('owner');
+  }
+  public set owner(value: string) {
+    this._owner = value;
+  }
+  public resetOwner() {
+    this._owner = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ownerInput() {
+    return this._owner;
+  }
+
+  // provider - computed: false, optional: false, required: true
+  private _provider?: string; 
+  public get provider() {
+    return this.getStringAttribute('provider');
+  }
+  public set provider(value: string) {
+    this._provider = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get providerInput() {
+    return this._provider;
+  }
+
+  // version - computed: false, optional: true, required: false
+  private _version?: string; 
+  public get version() {
+    return this.getStringAttribute('version');
+  }
+  public set version(value: string) {
+    this._version = value;
+  }
+  public resetVersion() {
+    this._version = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get versionInput() {
+    return this._version;
+  }
+}
+export interface CodepipelineStageOnFailureConditionRule {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/codepipeline#commands Codepipeline#commands}
+  */
+  readonly commands?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/codepipeline#configuration Codepipeline#configuration}
+  */
+  readonly configuration?: { [key: string]: string };
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/codepipeline#input_artifacts Codepipeline#input_artifacts}
+  */
+  readonly inputArtifacts?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/codepipeline#name Codepipeline#name}
+  */
+  readonly name: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/codepipeline#region Codepipeline#region}
+  */
+  readonly region?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/codepipeline#role_arn Codepipeline#role_arn}
+  */
+  readonly roleArn?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/codepipeline#timeout_in_minutes Codepipeline#timeout_in_minutes}
+  */
+  readonly timeoutInMinutes?: number;
+  /**
+  * rule_type_id block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/codepipeline#rule_type_id Codepipeline#rule_type_id}
+  */
+  readonly ruleTypeId: CodepipelineStageOnFailureConditionRuleRuleTypeId;
+}
+
+export function codepipelineStageOnFailureConditionRuleToTerraform(struct?: CodepipelineStageOnFailureConditionRule | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    commands: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.commands),
+    configuration: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.configuration),
+    input_artifacts: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.inputArtifacts),
+    name: cdktf.stringToTerraform(struct!.name),
+    region: cdktf.stringToTerraform(struct!.region),
+    role_arn: cdktf.stringToTerraform(struct!.roleArn),
+    timeout_in_minutes: cdktf.numberToTerraform(struct!.timeoutInMinutes),
+    rule_type_id: codepipelineStageOnFailureConditionRuleRuleTypeIdToTerraform(struct!.ruleTypeId),
+  }
+}
+
+
+export function codepipelineStageOnFailureConditionRuleToHclTerraform(struct?: CodepipelineStageOnFailureConditionRule | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    commands: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.commands),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    configuration: {
+      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.configuration),
+      isBlock: false,
+      type: "map",
+      storageClassType: "stringMap",
+    },
+    input_artifacts: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.inputArtifacts),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    region: {
+      value: cdktf.stringToHclTerraform(struct!.region),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    role_arn: {
+      value: cdktf.stringToHclTerraform(struct!.roleArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    timeout_in_minutes: {
+      value: cdktf.numberToHclTerraform(struct!.timeoutInMinutes),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    rule_type_id: {
+      value: codepipelineStageOnFailureConditionRuleRuleTypeIdToHclTerraform(struct!.ruleTypeId),
+      isBlock: true,
+      type: "list",
+      storageClassType: "CodepipelineStageOnFailureConditionRuleRuleTypeIdList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class CodepipelineStageOnFailureConditionRuleOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): CodepipelineStageOnFailureConditionRule | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._commands !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.commands = this._commands;
+    }
+    if (this._configuration !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.configuration = this._configuration;
+    }
+    if (this._inputArtifacts !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.inputArtifacts = this._inputArtifacts;
+    }
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._region !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.region = this._region;
+    }
+    if (this._roleArn !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.roleArn = this._roleArn;
+    }
+    if (this._timeoutInMinutes !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.timeoutInMinutes = this._timeoutInMinutes;
+    }
+    if (this._ruleTypeId?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ruleTypeId = this._ruleTypeId?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CodepipelineStageOnFailureConditionRule | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._commands = undefined;
+      this._configuration = undefined;
+      this._inputArtifacts = undefined;
+      this._name = undefined;
+      this._region = undefined;
+      this._roleArn = undefined;
+      this._timeoutInMinutes = undefined;
+      this._ruleTypeId.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._commands = value.commands;
+      this._configuration = value.configuration;
+      this._inputArtifacts = value.inputArtifacts;
+      this._name = value.name;
+      this._region = value.region;
+      this._roleArn = value.roleArn;
+      this._timeoutInMinutes = value.timeoutInMinutes;
+      this._ruleTypeId.internalValue = value.ruleTypeId;
+    }
+  }
+
+  // commands - computed: false, optional: true, required: false
+  private _commands?: string[]; 
+  public get commands() {
+    return this.getListAttribute('commands');
+  }
+  public set commands(value: string[]) {
+    this._commands = value;
+  }
+  public resetCommands() {
+    this._commands = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get commandsInput() {
+    return this._commands;
+  }
+
+  // configuration - computed: false, optional: true, required: false
+  private _configuration?: { [key: string]: string }; 
+  public get configuration() {
+    return this.getStringMapAttribute('configuration');
+  }
+  public set configuration(value: { [key: string]: string }) {
+    this._configuration = value;
+  }
+  public resetConfiguration() {
+    this._configuration = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get configurationInput() {
+    return this._configuration;
+  }
+
+  // input_artifacts - computed: false, optional: true, required: false
+  private _inputArtifacts?: string[]; 
+  public get inputArtifacts() {
+    return this.getListAttribute('input_artifacts');
+  }
+  public set inputArtifacts(value: string[]) {
+    this._inputArtifacts = value;
+  }
+  public resetInputArtifacts() {
+    this._inputArtifacts = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get inputArtifactsInput() {
+    return this._inputArtifacts;
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // region - computed: false, optional: true, required: false
+  private _region?: string; 
+  public get region() {
+    return this.getStringAttribute('region');
+  }
+  public set region(value: string) {
+    this._region = value;
+  }
+  public resetRegion() {
+    this._region = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get regionInput() {
+    return this._region;
+  }
+
+  // role_arn - computed: false, optional: true, required: false
+  private _roleArn?: string; 
+  public get roleArn() {
+    return this.getStringAttribute('role_arn');
+  }
+  public set roleArn(value: string) {
+    this._roleArn = value;
+  }
+  public resetRoleArn() {
+    this._roleArn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get roleArnInput() {
+    return this._roleArn;
+  }
+
+  // timeout_in_minutes - computed: false, optional: true, required: false
+  private _timeoutInMinutes?: number; 
+  public get timeoutInMinutes() {
+    return this.getNumberAttribute('timeout_in_minutes');
+  }
+  public set timeoutInMinutes(value: number) {
+    this._timeoutInMinutes = value;
+  }
+  public resetTimeoutInMinutes() {
+    this._timeoutInMinutes = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeoutInMinutesInput() {
+    return this._timeoutInMinutes;
+  }
+
+  // rule_type_id - computed: false, optional: false, required: true
+  private _ruleTypeId = new CodepipelineStageOnFailureConditionRuleRuleTypeIdOutputReference(this, "rule_type_id");
+  public get ruleTypeId() {
+    return this._ruleTypeId;
+  }
+  public putRuleTypeId(value: CodepipelineStageOnFailureConditionRuleRuleTypeId) {
+    this._ruleTypeId.internalValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ruleTypeIdInput() {
+    return this._ruleTypeId.internalValue;
+  }
+}
+
+export class CodepipelineStageOnFailureConditionRuleList extends cdktf.ComplexList {
+  public internalValue? : CodepipelineStageOnFailureConditionRule[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): CodepipelineStageOnFailureConditionRuleOutputReference {
+    return new CodepipelineStageOnFailureConditionRuleOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface CodepipelineStageOnFailureCondition {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/codepipeline#result Codepipeline#result}
+  */
+  readonly result?: string;
+  /**
+  * rule block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/codepipeline#rule Codepipeline#rule}
+  */
+  readonly rule: CodepipelineStageOnFailureConditionRule[] | cdktf.IResolvable;
+}
+
+export function codepipelineStageOnFailureConditionToTerraform(struct?: CodepipelineStageOnFailureConditionOutputReference | CodepipelineStageOnFailureCondition): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    result: cdktf.stringToTerraform(struct!.result),
+    rule: cdktf.listMapper(codepipelineStageOnFailureConditionRuleToTerraform, true)(struct!.rule),
+  }
+}
+
+
+export function codepipelineStageOnFailureConditionToHclTerraform(struct?: CodepipelineStageOnFailureConditionOutputReference | CodepipelineStageOnFailureCondition): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    result: {
+      value: cdktf.stringToHclTerraform(struct!.result),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    rule: {
+      value: cdktf.listMapperHcl(codepipelineStageOnFailureConditionRuleToHclTerraform, true)(struct!.rule),
+      isBlock: true,
+      type: "list",
+      storageClassType: "CodepipelineStageOnFailureConditionRuleList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class CodepipelineStageOnFailureConditionOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): CodepipelineStageOnFailureCondition | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._result !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.result = this._result;
+    }
+    if (this._rule?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.rule = this._rule?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CodepipelineStageOnFailureCondition | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._result = undefined;
+      this._rule.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._result = value.result;
+      this._rule.internalValue = value.rule;
+    }
+  }
+
+  // result - computed: false, optional: true, required: false
+  private _result?: string; 
+  public get result() {
+    return this.getStringAttribute('result');
+  }
+  public set result(value: string) {
+    this._result = value;
+  }
+  public resetResult() {
+    this._result = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get resultInput() {
+    return this._result;
+  }
+
+  // rule - computed: false, optional: false, required: true
+  private _rule = new CodepipelineStageOnFailureConditionRuleList(this, "rule", false);
+  public get rule() {
+    return this._rule;
+  }
+  public putRule(value: CodepipelineStageOnFailureConditionRule[] | cdktf.IResolvable) {
+    this._rule.internalValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ruleInput() {
+    return this._rule.internalValue;
+  }
+}
+export interface CodepipelineStageOnFailureRetryConfiguration {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/codepipeline#retry_mode Codepipeline#retry_mode}
+  */
+  readonly retryMode?: string;
+}
+
+export function codepipelineStageOnFailureRetryConfigurationToTerraform(struct?: CodepipelineStageOnFailureRetryConfigurationOutputReference | CodepipelineStageOnFailureRetryConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    retry_mode: cdktf.stringToTerraform(struct!.retryMode),
+  }
+}
+
+
+export function codepipelineStageOnFailureRetryConfigurationToHclTerraform(struct?: CodepipelineStageOnFailureRetryConfigurationOutputReference | CodepipelineStageOnFailureRetryConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    retry_mode: {
+      value: cdktf.stringToHclTerraform(struct!.retryMode),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class CodepipelineStageOnFailureRetryConfigurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): CodepipelineStageOnFailureRetryConfiguration | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._retryMode !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.retryMode = this._retryMode;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CodepipelineStageOnFailureRetryConfiguration | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._retryMode = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._retryMode = value.retryMode;
+    }
+  }
+
+  // retry_mode - computed: false, optional: true, required: false
+  private _retryMode?: string; 
+  public get retryMode() {
+    return this.getStringAttribute('retry_mode');
+  }
+  public set retryMode(value: string) {
+    this._retryMode = value;
+  }
+  public resetRetryMode() {
+    this._retryMode = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get retryModeInput() {
+    return this._retryMode;
+  }
+}
+export interface CodepipelineStageOnFailure {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/codepipeline#result Codepipeline#result}
+  */
+  readonly result?: string;
+  /**
+  * condition block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/codepipeline#condition Codepipeline#condition}
+  */
+  readonly condition?: CodepipelineStageOnFailureCondition;
+  /**
+  * retry_configuration block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/codepipeline#retry_configuration Codepipeline#retry_configuration}
+  */
+  readonly retryConfiguration?: CodepipelineStageOnFailureRetryConfiguration;
+}
+
+export function codepipelineStageOnFailureToTerraform(struct?: CodepipelineStageOnFailureOutputReference | CodepipelineStageOnFailure): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    result: cdktf.stringToTerraform(struct!.result),
+    condition: codepipelineStageOnFailureConditionToTerraform(struct!.condition),
+    retry_configuration: codepipelineStageOnFailureRetryConfigurationToTerraform(struct!.retryConfiguration),
+  }
+}
+
+
+export function codepipelineStageOnFailureToHclTerraform(struct?: CodepipelineStageOnFailureOutputReference | CodepipelineStageOnFailure): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    result: {
+      value: cdktf.stringToHclTerraform(struct!.result),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    condition: {
+      value: codepipelineStageOnFailureConditionToHclTerraform(struct!.condition),
+      isBlock: true,
+      type: "list",
+      storageClassType: "CodepipelineStageOnFailureConditionList",
+    },
+    retry_configuration: {
+      value: codepipelineStageOnFailureRetryConfigurationToHclTerraform(struct!.retryConfiguration),
+      isBlock: true,
+      type: "list",
+      storageClassType: "CodepipelineStageOnFailureRetryConfigurationList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class CodepipelineStageOnFailureOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): CodepipelineStageOnFailure | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._result !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.result = this._result;
+    }
+    if (this._condition?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.condition = this._condition?.internalValue;
+    }
+    if (this._retryConfiguration?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.retryConfiguration = this._retryConfiguration?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CodepipelineStageOnFailure | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._result = undefined;
+      this._condition.internalValue = undefined;
+      this._retryConfiguration.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._result = value.result;
+      this._condition.internalValue = value.condition;
+      this._retryConfiguration.internalValue = value.retryConfiguration;
+    }
+  }
+
+  // result - computed: false, optional: true, required: false
+  private _result?: string; 
+  public get result() {
+    return this.getStringAttribute('result');
+  }
+  public set result(value: string) {
+    this._result = value;
+  }
+  public resetResult() {
+    this._result = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get resultInput() {
+    return this._result;
+  }
+
+  // condition - computed: false, optional: true, required: false
+  private _condition = new CodepipelineStageOnFailureConditionOutputReference(this, "condition");
+  public get condition() {
+    return this._condition;
+  }
+  public putCondition(value: CodepipelineStageOnFailureCondition) {
+    this._condition.internalValue = value;
+  }
+  public resetCondition() {
+    this._condition.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get conditionInput() {
+    return this._condition.internalValue;
+  }
+
+  // retry_configuration - computed: false, optional: true, required: false
+  private _retryConfiguration = new CodepipelineStageOnFailureRetryConfigurationOutputReference(this, "retry_configuration");
+  public get retryConfiguration() {
+    return this._retryConfiguration;
+  }
+  public putRetryConfiguration(value: CodepipelineStageOnFailureRetryConfiguration) {
+    this._retryConfiguration.internalValue = value;
+  }
+  public resetRetryConfiguration() {
+    this._retryConfiguration.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get retryConfigurationInput() {
+    return this._retryConfiguration.internalValue;
+  }
+}
+export interface CodepipelineStageOnSuccessConditionRuleRuleTypeId {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/codepipeline#category Codepipeline#category}
+  */
+  readonly category: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/codepipeline#owner Codepipeline#owner}
+  */
+  readonly owner?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/codepipeline#provider Codepipeline#provider}
+  */
+  readonly provider: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/codepipeline#version Codepipeline#version}
+  */
+  readonly version?: string;
+}
+
+export function codepipelineStageOnSuccessConditionRuleRuleTypeIdToTerraform(struct?: CodepipelineStageOnSuccessConditionRuleRuleTypeIdOutputReference | CodepipelineStageOnSuccessConditionRuleRuleTypeId): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    category: cdktf.stringToTerraform(struct!.category),
+    owner: cdktf.stringToTerraform(struct!.owner),
+    provider: cdktf.stringToTerraform(struct!.provider),
+    version: cdktf.stringToTerraform(struct!.version),
+  }
+}
+
+
+export function codepipelineStageOnSuccessConditionRuleRuleTypeIdToHclTerraform(struct?: CodepipelineStageOnSuccessConditionRuleRuleTypeIdOutputReference | CodepipelineStageOnSuccessConditionRuleRuleTypeId): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    category: {
+      value: cdktf.stringToHclTerraform(struct!.category),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    owner: {
+      value: cdktf.stringToHclTerraform(struct!.owner),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    provider: {
+      value: cdktf.stringToHclTerraform(struct!.provider),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    version: {
+      value: cdktf.stringToHclTerraform(struct!.version),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class CodepipelineStageOnSuccessConditionRuleRuleTypeIdOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): CodepipelineStageOnSuccessConditionRuleRuleTypeId | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._category !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.category = this._category;
+    }
+    if (this._owner !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.owner = this._owner;
+    }
+    if (this._provider !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.provider = this._provider;
+    }
+    if (this._version !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.version = this._version;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CodepipelineStageOnSuccessConditionRuleRuleTypeId | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._category = undefined;
+      this._owner = undefined;
+      this._provider = undefined;
+      this._version = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._category = value.category;
+      this._owner = value.owner;
+      this._provider = value.provider;
+      this._version = value.version;
+    }
+  }
+
+  // category - computed: false, optional: false, required: true
+  private _category?: string; 
+  public get category() {
+    return this.getStringAttribute('category');
+  }
+  public set category(value: string) {
+    this._category = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get categoryInput() {
+    return this._category;
+  }
+
+  // owner - computed: false, optional: true, required: false
+  private _owner?: string; 
+  public get owner() {
+    return this.getStringAttribute('owner');
+  }
+  public set owner(value: string) {
+    this._owner = value;
+  }
+  public resetOwner() {
+    this._owner = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ownerInput() {
+    return this._owner;
+  }
+
+  // provider - computed: false, optional: false, required: true
+  private _provider?: string; 
+  public get provider() {
+    return this.getStringAttribute('provider');
+  }
+  public set provider(value: string) {
+    this._provider = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get providerInput() {
+    return this._provider;
+  }
+
+  // version - computed: false, optional: true, required: false
+  private _version?: string; 
+  public get version() {
+    return this.getStringAttribute('version');
+  }
+  public set version(value: string) {
+    this._version = value;
+  }
+  public resetVersion() {
+    this._version = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get versionInput() {
+    return this._version;
+  }
+}
+export interface CodepipelineStageOnSuccessConditionRule {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/codepipeline#commands Codepipeline#commands}
+  */
+  readonly commands?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/codepipeline#configuration Codepipeline#configuration}
+  */
+  readonly configuration?: { [key: string]: string };
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/codepipeline#input_artifacts Codepipeline#input_artifacts}
+  */
+  readonly inputArtifacts?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/codepipeline#name Codepipeline#name}
+  */
+  readonly name: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/codepipeline#region Codepipeline#region}
+  */
+  readonly region?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/codepipeline#role_arn Codepipeline#role_arn}
+  */
+  readonly roleArn?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/codepipeline#timeout_in_minutes Codepipeline#timeout_in_minutes}
+  */
+  readonly timeoutInMinutes?: number;
+  /**
+  * rule_type_id block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/codepipeline#rule_type_id Codepipeline#rule_type_id}
+  */
+  readonly ruleTypeId: CodepipelineStageOnSuccessConditionRuleRuleTypeId;
+}
+
+export function codepipelineStageOnSuccessConditionRuleToTerraform(struct?: CodepipelineStageOnSuccessConditionRule | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    commands: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.commands),
+    configuration: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.configuration),
+    input_artifacts: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.inputArtifacts),
+    name: cdktf.stringToTerraform(struct!.name),
+    region: cdktf.stringToTerraform(struct!.region),
+    role_arn: cdktf.stringToTerraform(struct!.roleArn),
+    timeout_in_minutes: cdktf.numberToTerraform(struct!.timeoutInMinutes),
+    rule_type_id: codepipelineStageOnSuccessConditionRuleRuleTypeIdToTerraform(struct!.ruleTypeId),
+  }
+}
+
+
+export function codepipelineStageOnSuccessConditionRuleToHclTerraform(struct?: CodepipelineStageOnSuccessConditionRule | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    commands: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.commands),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    configuration: {
+      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.configuration),
+      isBlock: false,
+      type: "map",
+      storageClassType: "stringMap",
+    },
+    input_artifacts: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.inputArtifacts),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    region: {
+      value: cdktf.stringToHclTerraform(struct!.region),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    role_arn: {
+      value: cdktf.stringToHclTerraform(struct!.roleArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    timeout_in_minutes: {
+      value: cdktf.numberToHclTerraform(struct!.timeoutInMinutes),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    rule_type_id: {
+      value: codepipelineStageOnSuccessConditionRuleRuleTypeIdToHclTerraform(struct!.ruleTypeId),
+      isBlock: true,
+      type: "list",
+      storageClassType: "CodepipelineStageOnSuccessConditionRuleRuleTypeIdList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class CodepipelineStageOnSuccessConditionRuleOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): CodepipelineStageOnSuccessConditionRule | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._commands !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.commands = this._commands;
+    }
+    if (this._configuration !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.configuration = this._configuration;
+    }
+    if (this._inputArtifacts !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.inputArtifacts = this._inputArtifacts;
+    }
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._region !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.region = this._region;
+    }
+    if (this._roleArn !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.roleArn = this._roleArn;
+    }
+    if (this._timeoutInMinutes !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.timeoutInMinutes = this._timeoutInMinutes;
+    }
+    if (this._ruleTypeId?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ruleTypeId = this._ruleTypeId?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CodepipelineStageOnSuccessConditionRule | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._commands = undefined;
+      this._configuration = undefined;
+      this._inputArtifacts = undefined;
+      this._name = undefined;
+      this._region = undefined;
+      this._roleArn = undefined;
+      this._timeoutInMinutes = undefined;
+      this._ruleTypeId.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._commands = value.commands;
+      this._configuration = value.configuration;
+      this._inputArtifacts = value.inputArtifacts;
+      this._name = value.name;
+      this._region = value.region;
+      this._roleArn = value.roleArn;
+      this._timeoutInMinutes = value.timeoutInMinutes;
+      this._ruleTypeId.internalValue = value.ruleTypeId;
+    }
+  }
+
+  // commands - computed: false, optional: true, required: false
+  private _commands?: string[]; 
+  public get commands() {
+    return this.getListAttribute('commands');
+  }
+  public set commands(value: string[]) {
+    this._commands = value;
+  }
+  public resetCommands() {
+    this._commands = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get commandsInput() {
+    return this._commands;
+  }
+
+  // configuration - computed: false, optional: true, required: false
+  private _configuration?: { [key: string]: string }; 
+  public get configuration() {
+    return this.getStringMapAttribute('configuration');
+  }
+  public set configuration(value: { [key: string]: string }) {
+    this._configuration = value;
+  }
+  public resetConfiguration() {
+    this._configuration = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get configurationInput() {
+    return this._configuration;
+  }
+
+  // input_artifacts - computed: false, optional: true, required: false
+  private _inputArtifacts?: string[]; 
+  public get inputArtifacts() {
+    return this.getListAttribute('input_artifacts');
+  }
+  public set inputArtifacts(value: string[]) {
+    this._inputArtifacts = value;
+  }
+  public resetInputArtifacts() {
+    this._inputArtifacts = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get inputArtifactsInput() {
+    return this._inputArtifacts;
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // region - computed: false, optional: true, required: false
+  private _region?: string; 
+  public get region() {
+    return this.getStringAttribute('region');
+  }
+  public set region(value: string) {
+    this._region = value;
+  }
+  public resetRegion() {
+    this._region = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get regionInput() {
+    return this._region;
+  }
+
+  // role_arn - computed: false, optional: true, required: false
+  private _roleArn?: string; 
+  public get roleArn() {
+    return this.getStringAttribute('role_arn');
+  }
+  public set roleArn(value: string) {
+    this._roleArn = value;
+  }
+  public resetRoleArn() {
+    this._roleArn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get roleArnInput() {
+    return this._roleArn;
+  }
+
+  // timeout_in_minutes - computed: false, optional: true, required: false
+  private _timeoutInMinutes?: number; 
+  public get timeoutInMinutes() {
+    return this.getNumberAttribute('timeout_in_minutes');
+  }
+  public set timeoutInMinutes(value: number) {
+    this._timeoutInMinutes = value;
+  }
+  public resetTimeoutInMinutes() {
+    this._timeoutInMinutes = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeoutInMinutesInput() {
+    return this._timeoutInMinutes;
+  }
+
+  // rule_type_id - computed: false, optional: false, required: true
+  private _ruleTypeId = new CodepipelineStageOnSuccessConditionRuleRuleTypeIdOutputReference(this, "rule_type_id");
+  public get ruleTypeId() {
+    return this._ruleTypeId;
+  }
+  public putRuleTypeId(value: CodepipelineStageOnSuccessConditionRuleRuleTypeId) {
+    this._ruleTypeId.internalValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ruleTypeIdInput() {
+    return this._ruleTypeId.internalValue;
+  }
+}
+
+export class CodepipelineStageOnSuccessConditionRuleList extends cdktf.ComplexList {
+  public internalValue? : CodepipelineStageOnSuccessConditionRule[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): CodepipelineStageOnSuccessConditionRuleOutputReference {
+    return new CodepipelineStageOnSuccessConditionRuleOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface CodepipelineStageOnSuccessCondition {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/codepipeline#result Codepipeline#result}
+  */
+  readonly result?: string;
+  /**
+  * rule block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/codepipeline#rule Codepipeline#rule}
+  */
+  readonly rule: CodepipelineStageOnSuccessConditionRule[] | cdktf.IResolvable;
+}
+
+export function codepipelineStageOnSuccessConditionToTerraform(struct?: CodepipelineStageOnSuccessConditionOutputReference | CodepipelineStageOnSuccessCondition): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    result: cdktf.stringToTerraform(struct!.result),
+    rule: cdktf.listMapper(codepipelineStageOnSuccessConditionRuleToTerraform, true)(struct!.rule),
+  }
+}
+
+
+export function codepipelineStageOnSuccessConditionToHclTerraform(struct?: CodepipelineStageOnSuccessConditionOutputReference | CodepipelineStageOnSuccessCondition): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    result: {
+      value: cdktf.stringToHclTerraform(struct!.result),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    rule: {
+      value: cdktf.listMapperHcl(codepipelineStageOnSuccessConditionRuleToHclTerraform, true)(struct!.rule),
+      isBlock: true,
+      type: "list",
+      storageClassType: "CodepipelineStageOnSuccessConditionRuleList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class CodepipelineStageOnSuccessConditionOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): CodepipelineStageOnSuccessCondition | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._result !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.result = this._result;
+    }
+    if (this._rule?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.rule = this._rule?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CodepipelineStageOnSuccessCondition | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._result = undefined;
+      this._rule.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._result = value.result;
+      this._rule.internalValue = value.rule;
+    }
+  }
+
+  // result - computed: false, optional: true, required: false
+  private _result?: string; 
+  public get result() {
+    return this.getStringAttribute('result');
+  }
+  public set result(value: string) {
+    this._result = value;
+  }
+  public resetResult() {
+    this._result = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get resultInput() {
+    return this._result;
+  }
+
+  // rule - computed: false, optional: false, required: true
+  private _rule = new CodepipelineStageOnSuccessConditionRuleList(this, "rule", false);
+  public get rule() {
+    return this._rule;
+  }
+  public putRule(value: CodepipelineStageOnSuccessConditionRule[] | cdktf.IResolvable) {
+    this._rule.internalValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ruleInput() {
+    return this._rule.internalValue;
+  }
+}
+export interface CodepipelineStageOnSuccess {
+  /**
+  * condition block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/codepipeline#condition Codepipeline#condition}
+  */
+  readonly condition: CodepipelineStageOnSuccessCondition;
+}
+
+export function codepipelineStageOnSuccessToTerraform(struct?: CodepipelineStageOnSuccessOutputReference | CodepipelineStageOnSuccess): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    condition: codepipelineStageOnSuccessConditionToTerraform(struct!.condition),
+  }
+}
+
+
+export function codepipelineStageOnSuccessToHclTerraform(struct?: CodepipelineStageOnSuccessOutputReference | CodepipelineStageOnSuccess): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    condition: {
+      value: codepipelineStageOnSuccessConditionToHclTerraform(struct!.condition),
+      isBlock: true,
+      type: "list",
+      storageClassType: "CodepipelineStageOnSuccessConditionList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class CodepipelineStageOnSuccessOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): CodepipelineStageOnSuccess | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._condition?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.condition = this._condition?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CodepipelineStageOnSuccess | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._condition.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._condition.internalValue = value.condition;
+    }
+  }
+
+  // condition - computed: false, optional: false, required: true
+  private _condition = new CodepipelineStageOnSuccessConditionOutputReference(this, "condition");
+  public get condition() {
+    return this._condition;
+  }
+  public putCondition(value: CodepipelineStageOnSuccessCondition) {
+    this._condition.internalValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get conditionInput() {
+    return this._condition.internalValue;
+  }
+}
 export interface CodepipelineStage {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/codepipeline#name Codepipeline#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/codepipeline#name Codepipeline#name}
   */
   readonly name: string;
   /**
   * action block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/codepipeline#action Codepipeline#action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/codepipeline#action Codepipeline#action}
   */
   readonly action: CodepipelineStageAction[] | cdktf.IResolvable;
+  /**
+  * before_entry block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/codepipeline#before_entry Codepipeline#before_entry}
+  */
+  readonly beforeEntry?: CodepipelineStageBeforeEntry;
+  /**
+  * on_failure block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/codepipeline#on_failure Codepipeline#on_failure}
+  */
+  readonly onFailure?: CodepipelineStageOnFailure;
+  /**
+  * on_success block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/codepipeline#on_success Codepipeline#on_success}
+  */
+  readonly onSuccess?: CodepipelineStageOnSuccess;
 }
 
 export function codepipelineStageToTerraform(struct?: CodepipelineStage | cdktf.IResolvable): any {
@@ -911,6 +3236,9 @@ export function codepipelineStageToTerraform(struct?: CodepipelineStage | cdktf.
   return {
     name: cdktf.stringToTerraform(struct!.name),
     action: cdktf.listMapper(codepipelineStageActionToTerraform, true)(struct!.action),
+    before_entry: codepipelineStageBeforeEntryToTerraform(struct!.beforeEntry),
+    on_failure: codepipelineStageOnFailureToTerraform(struct!.onFailure),
+    on_success: codepipelineStageOnSuccessToTerraform(struct!.onSuccess),
   }
 }
 
@@ -932,6 +3260,24 @@ export function codepipelineStageToHclTerraform(struct?: CodepipelineStage | cdk
       isBlock: true,
       type: "list",
       storageClassType: "CodepipelineStageActionList",
+    },
+    before_entry: {
+      value: codepipelineStageBeforeEntryToHclTerraform(struct!.beforeEntry),
+      isBlock: true,
+      type: "list",
+      storageClassType: "CodepipelineStageBeforeEntryList",
+    },
+    on_failure: {
+      value: codepipelineStageOnFailureToHclTerraform(struct!.onFailure),
+      isBlock: true,
+      type: "list",
+      storageClassType: "CodepipelineStageOnFailureList",
+    },
+    on_success: {
+      value: codepipelineStageOnSuccessToHclTerraform(struct!.onSuccess),
+      isBlock: true,
+      type: "list",
+      storageClassType: "CodepipelineStageOnSuccessList",
     },
   };
 
@@ -967,6 +3313,18 @@ export class CodepipelineStageOutputReference extends cdktf.ComplexObject {
       hasAnyValues = true;
       internalValueResult.action = this._action?.internalValue;
     }
+    if (this._beforeEntry?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.beforeEntry = this._beforeEntry?.internalValue;
+    }
+    if (this._onFailure?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.onFailure = this._onFailure?.internalValue;
+    }
+    if (this._onSuccess?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.onSuccess = this._onSuccess?.internalValue;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -976,6 +3334,9 @@ export class CodepipelineStageOutputReference extends cdktf.ComplexObject {
       this.resolvableValue = undefined;
       this._name = undefined;
       this._action.internalValue = undefined;
+      this._beforeEntry.internalValue = undefined;
+      this._onFailure.internalValue = undefined;
+      this._onSuccess.internalValue = undefined;
     }
     else if (cdktf.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
@@ -986,6 +3347,9 @@ export class CodepipelineStageOutputReference extends cdktf.ComplexObject {
       this.resolvableValue = undefined;
       this._name = value.name;
       this._action.internalValue = value.action;
+      this._beforeEntry.internalValue = value.beforeEntry;
+      this._onFailure.internalValue = value.onFailure;
+      this._onSuccess.internalValue = value.onSuccess;
     }
   }
 
@@ -1014,6 +3378,54 @@ export class CodepipelineStageOutputReference extends cdktf.ComplexObject {
   public get actionInput() {
     return this._action.internalValue;
   }
+
+  // before_entry - computed: false, optional: true, required: false
+  private _beforeEntry = new CodepipelineStageBeforeEntryOutputReference(this, "before_entry");
+  public get beforeEntry() {
+    return this._beforeEntry;
+  }
+  public putBeforeEntry(value: CodepipelineStageBeforeEntry) {
+    this._beforeEntry.internalValue = value;
+  }
+  public resetBeforeEntry() {
+    this._beforeEntry.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get beforeEntryInput() {
+    return this._beforeEntry.internalValue;
+  }
+
+  // on_failure - computed: false, optional: true, required: false
+  private _onFailure = new CodepipelineStageOnFailureOutputReference(this, "on_failure");
+  public get onFailure() {
+    return this._onFailure;
+  }
+  public putOnFailure(value: CodepipelineStageOnFailure) {
+    this._onFailure.internalValue = value;
+  }
+  public resetOnFailure() {
+    this._onFailure.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get onFailureInput() {
+    return this._onFailure.internalValue;
+  }
+
+  // on_success - computed: false, optional: true, required: false
+  private _onSuccess = new CodepipelineStageOnSuccessOutputReference(this, "on_success");
+  public get onSuccess() {
+    return this._onSuccess;
+  }
+  public putOnSuccess(value: CodepipelineStageOnSuccess) {
+    this._onSuccess.internalValue = value;
+  }
+  public resetOnSuccess() {
+    this._onSuccess.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get onSuccessInput() {
+    return this._onSuccess.internalValue;
+  }
 }
 
 export class CodepipelineStageList extends cdktf.ComplexList {
@@ -1037,11 +3449,11 @@ export class CodepipelineStageList extends cdktf.ComplexList {
 }
 export interface CodepipelineTriggerGitConfigurationPullRequestBranches {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/codepipeline#excludes Codepipeline#excludes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/codepipeline#excludes Codepipeline#excludes}
   */
   readonly excludes?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/codepipeline#includes Codepipeline#includes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/codepipeline#includes Codepipeline#includes}
   */
   readonly includes?: string[];
 }
@@ -1154,11 +3566,11 @@ export class CodepipelineTriggerGitConfigurationPullRequestBranchesOutputReferen
 }
 export interface CodepipelineTriggerGitConfigurationPullRequestFilePaths {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/codepipeline#excludes Codepipeline#excludes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/codepipeline#excludes Codepipeline#excludes}
   */
   readonly excludes?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/codepipeline#includes Codepipeline#includes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/codepipeline#includes Codepipeline#includes}
   */
   readonly includes?: string[];
 }
@@ -1271,19 +3683,19 @@ export class CodepipelineTriggerGitConfigurationPullRequestFilePathsOutputRefere
 }
 export interface CodepipelineTriggerGitConfigurationPullRequest {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/codepipeline#events Codepipeline#events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/codepipeline#events Codepipeline#events}
   */
   readonly events?: string[];
   /**
   * branches block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/codepipeline#branches Codepipeline#branches}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/codepipeline#branches Codepipeline#branches}
   */
   readonly branches?: CodepipelineTriggerGitConfigurationPullRequestBranches;
   /**
   * file_paths block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/codepipeline#file_paths Codepipeline#file_paths}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/codepipeline#file_paths Codepipeline#file_paths}
   */
   readonly filePaths?: CodepipelineTriggerGitConfigurationPullRequestFilePaths;
 }
@@ -1457,11 +3869,11 @@ export class CodepipelineTriggerGitConfigurationPullRequestList extends cdktf.Co
 }
 export interface CodepipelineTriggerGitConfigurationPushBranches {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/codepipeline#excludes Codepipeline#excludes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/codepipeline#excludes Codepipeline#excludes}
   */
   readonly excludes?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/codepipeline#includes Codepipeline#includes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/codepipeline#includes Codepipeline#includes}
   */
   readonly includes?: string[];
 }
@@ -1574,11 +3986,11 @@ export class CodepipelineTriggerGitConfigurationPushBranchesOutputReference exte
 }
 export interface CodepipelineTriggerGitConfigurationPushFilePaths {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/codepipeline#excludes Codepipeline#excludes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/codepipeline#excludes Codepipeline#excludes}
   */
   readonly excludes?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/codepipeline#includes Codepipeline#includes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/codepipeline#includes Codepipeline#includes}
   */
   readonly includes?: string[];
 }
@@ -1691,11 +4103,11 @@ export class CodepipelineTriggerGitConfigurationPushFilePathsOutputReference ext
 }
 export interface CodepipelineTriggerGitConfigurationPushTags {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/codepipeline#excludes Codepipeline#excludes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/codepipeline#excludes Codepipeline#excludes}
   */
   readonly excludes?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/codepipeline#includes Codepipeline#includes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/codepipeline#includes Codepipeline#includes}
   */
   readonly includes?: string[];
 }
@@ -1810,19 +4222,19 @@ export interface CodepipelineTriggerGitConfigurationPush {
   /**
   * branches block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/codepipeline#branches Codepipeline#branches}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/codepipeline#branches Codepipeline#branches}
   */
   readonly branches?: CodepipelineTriggerGitConfigurationPushBranches;
   /**
   * file_paths block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/codepipeline#file_paths Codepipeline#file_paths}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/codepipeline#file_paths Codepipeline#file_paths}
   */
   readonly filePaths?: CodepipelineTriggerGitConfigurationPushFilePaths;
   /**
   * tags block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/codepipeline#tags Codepipeline#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/codepipeline#tags Codepipeline#tags}
   */
   readonly tags?: CodepipelineTriggerGitConfigurationPushTags;
 }
@@ -1996,19 +4408,19 @@ export class CodepipelineTriggerGitConfigurationPushList extends cdktf.ComplexLi
 }
 export interface CodepipelineTriggerGitConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/codepipeline#source_action_name Codepipeline#source_action_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/codepipeline#source_action_name Codepipeline#source_action_name}
   */
   readonly sourceActionName: string;
   /**
   * pull_request block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/codepipeline#pull_request Codepipeline#pull_request}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/codepipeline#pull_request Codepipeline#pull_request}
   */
   readonly pullRequest?: CodepipelineTriggerGitConfigurationPullRequest[] | cdktf.IResolvable;
   /**
   * push block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/codepipeline#push Codepipeline#push}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/codepipeline#push Codepipeline#push}
   */
   readonly push?: CodepipelineTriggerGitConfigurationPush[] | cdktf.IResolvable;
 }
@@ -2147,13 +4559,13 @@ export class CodepipelineTriggerGitConfigurationOutputReference extends cdktf.Co
 }
 export interface CodepipelineTrigger {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/codepipeline#provider_type Codepipeline#provider_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/codepipeline#provider_type Codepipeline#provider_type}
   */
   readonly providerType: string;
   /**
   * git_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/codepipeline#git_configuration Codepipeline#git_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/codepipeline#git_configuration Codepipeline#git_configuration}
   */
   readonly gitConfiguration: CodepipelineTriggerGitConfiguration;
 }
@@ -2292,15 +4704,15 @@ export class CodepipelineTriggerList extends cdktf.ComplexList {
 }
 export interface CodepipelineVariable {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/codepipeline#default_value Codepipeline#default_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/codepipeline#default_value Codepipeline#default_value}
   */
   readonly defaultValue?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/codepipeline#description Codepipeline#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/codepipeline#description Codepipeline#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/codepipeline#name Codepipeline#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/codepipeline#name Codepipeline#name}
   */
   readonly name: string;
 }
@@ -2471,7 +4883,7 @@ export class CodepipelineVariableList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/codepipeline aws_codepipeline}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/codepipeline aws_codepipeline}
 */
 export class Codepipeline extends cdktf.TerraformResource {
 
@@ -2487,7 +4899,7 @@ export class Codepipeline extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a Codepipeline resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Codepipeline to import
-  * @param importFromId The id of the existing Codepipeline that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/codepipeline#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Codepipeline that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/codepipeline#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Codepipeline to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -2499,7 +4911,7 @@ export class Codepipeline extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/codepipeline aws_codepipeline} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/codepipeline aws_codepipeline} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -2510,7 +4922,7 @@ export class Codepipeline extends cdktf.TerraformResource {
       terraformResourceType: 'aws_codepipeline',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.90.0',
+        providerVersion: '5.90.1',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

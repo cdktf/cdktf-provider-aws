@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/organizations_policy_attachment
+// https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/organizations_policy_attachment
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,28 +8,28 @@ import * as cdktf from 'cdktf';
 
 export interface OrganizationsPolicyAttachmentConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/organizations_policy_attachment#id OrganizationsPolicyAttachment#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/organizations_policy_attachment#id OrganizationsPolicyAttachment#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/organizations_policy_attachment#policy_id OrganizationsPolicyAttachment#policy_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/organizations_policy_attachment#policy_id OrganizationsPolicyAttachment#policy_id}
   */
   readonly policyId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/organizations_policy_attachment#skip_destroy OrganizationsPolicyAttachment#skip_destroy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/organizations_policy_attachment#skip_destroy OrganizationsPolicyAttachment#skip_destroy}
   */
   readonly skipDestroy?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/organizations_policy_attachment#target_id OrganizationsPolicyAttachment#target_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/organizations_policy_attachment#target_id OrganizationsPolicyAttachment#target_id}
   */
   readonly targetId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/organizations_policy_attachment aws_organizations_policy_attachment}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/organizations_policy_attachment aws_organizations_policy_attachment}
 */
 export class OrganizationsPolicyAttachment extends cdktf.TerraformResource {
 
@@ -50,7 +45,7 @@ export class OrganizationsPolicyAttachment extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a OrganizationsPolicyAttachment resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the OrganizationsPolicyAttachment to import
-  * @param importFromId The id of the existing OrganizationsPolicyAttachment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/organizations_policy_attachment#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing OrganizationsPolicyAttachment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/organizations_policy_attachment#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the OrganizationsPolicyAttachment to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -62,7 +57,7 @@ export class OrganizationsPolicyAttachment extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/organizations_policy_attachment aws_organizations_policy_attachment} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/organizations_policy_attachment aws_organizations_policy_attachment} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -73,7 +68,7 @@ export class OrganizationsPolicyAttachment extends cdktf.TerraformResource {
       terraformResourceType: 'aws_organizations_policy_attachment',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.90.0',
+        providerVersion: '5.90.1',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

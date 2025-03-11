@@ -4,12 +4,12 @@
 
 ### CostoptimizationhubEnrollmentStatus <a name="CostoptimizationhubEnrollmentStatus" id="@cdktf/provider-aws.costoptimizationhubEnrollmentStatus.CostoptimizationhubEnrollmentStatus"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/costoptimizationhub_enrollment_status aws_costoptimizationhub_enrollment_status}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/costoptimizationhub_enrollment_status aws_costoptimizationhub_enrollment_status}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.costoptimizationhubEnrollmentStatus.CostoptimizationhubEnrollmentStatus.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/costoptimizationhubenrollmentstatus"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/costoptimizationhubenrollmentstatus"
 
 costoptimizationhubenrollmentstatus.NewCostoptimizationhubEnrollmentStatus(scope Construct, id *string, config CostoptimizationhubEnrollmentStatusConfig) CostoptimizationhubEnrollmentStatus
 ```
@@ -385,7 +385,7 @@ func ResetIncludeMemberAccounts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.costoptimizationhubEnrollmentStatus.CostoptimizationhubEnrollmentStatus.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/costoptimizationhubenrollmentstatus"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/costoptimizationhubenrollmentstatus"
 
 costoptimizationhubenrollmentstatus.CostoptimizationhubEnrollmentStatus_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +417,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.costoptimizationhubEnrollmentStatus.CostoptimizationhubEnrollmentStatus.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/costoptimizationhubenrollmentstatus"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/costoptimizationhubenrollmentstatus"
 
 costoptimizationhubenrollmentstatus.CostoptimizationhubEnrollmentStatus_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ costoptimizationhubenrollmentstatus.CostoptimizationhubEnrollmentStatus_IsTerraf
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.costoptimizationhubEnrollmentStatus.CostoptimizationhubEnrollmentStatus.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/costoptimizationhubenrollmentstatus"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/costoptimizationhubenrollmentstatus"
 
 costoptimizationhubenrollmentstatus.CostoptimizationhubEnrollmentStatus_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ costoptimizationhubenrollmentstatus.CostoptimizationhubEnrollmentStatus_IsTerraf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.costoptimizationhubEnrollmentStatus.CostoptimizationhubEnrollmentStatus.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/costoptimizationhubenrollmentstatus"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/costoptimizationhubenrollmentstatus"
 
 costoptimizationhubenrollmentstatus.CostoptimizationhubEnrollmentStatus_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -474,7 +474,7 @@ The construct id used in the generated config for the CostoptimizationhubEnrollm
 
 The id of the existing CostoptimizationhubEnrollmentStatus that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/costoptimizationhub_enrollment_status#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/costoptimizationhub_enrollment_status#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -718,7 +718,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.costoptimizationhubEnrollmentStatus.CostoptimizationhubEnrollmentStatusConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/costoptimizationhubenrollmentstatus"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/costoptimizationhubenrollmentstatus"
 
 &costoptimizationhubenrollmentstatus.CostoptimizationhubEnrollmentStatusConfig {
 	Connection: interface{},
@@ -743,7 +743,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/costoptimizationhubenroll
 | <code><a href="#@cdktf/provider-aws.costoptimizationhubEnrollmentStatus.CostoptimizationhubEnrollmentStatusConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.costoptimizationhubEnrollmentStatus.CostoptimizationhubEnrollmentStatusConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.costoptimizationhubEnrollmentStatus.CostoptimizationhubEnrollmentStatusConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.costoptimizationhubEnrollmentStatus.CostoptimizationhubEnrollmentStatusConfig.property.includeMemberAccounts">IncludeMemberAccounts</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/costoptimizationhub_enrollment_status#include_member_accounts CostoptimizationhubEnrollmentStatus#include_member_accounts}. |
+| <code><a href="#@cdktf/provider-aws.costoptimizationhubEnrollmentStatus.CostoptimizationhubEnrollmentStatusConfig.property.includeMemberAccounts">IncludeMemberAccounts</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/costoptimizationhub_enrollment_status#include_member_accounts CostoptimizationhubEnrollmentStatus#include_member_accounts}. |
 
 ---
 
@@ -825,7 +825,7 @@ IncludeMemberAccounts interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/costoptimizationhub_enrollment_status#include_member_accounts CostoptimizationhubEnrollmentStatus#include_member_accounts}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/costoptimizationhub_enrollment_status#include_member_accounts CostoptimizationhubEnrollmentStatus#include_member_accounts}.
 
 ---
 
