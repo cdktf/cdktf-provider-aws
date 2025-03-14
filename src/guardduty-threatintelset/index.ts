@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/guardduty_threatintelset
+// https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/guardduty_threatintelset
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,44 +13,44 @@ import * as cdktf from 'cdktf';
 
 export interface GuarddutyThreatintelsetConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/guardduty_threatintelset#activate GuarddutyThreatintelset#activate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/guardduty_threatintelset#activate GuarddutyThreatintelset#activate}
   */
   readonly activate: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/guardduty_threatintelset#detector_id GuarddutyThreatintelset#detector_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/guardduty_threatintelset#detector_id GuarddutyThreatintelset#detector_id}
   */
   readonly detectorId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/guardduty_threatintelset#format GuarddutyThreatintelset#format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/guardduty_threatintelset#format GuarddutyThreatintelset#format}
   */
   readonly format: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/guardduty_threatintelset#id GuarddutyThreatintelset#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/guardduty_threatintelset#id GuarddutyThreatintelset#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/guardduty_threatintelset#location GuarddutyThreatintelset#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/guardduty_threatintelset#location GuarddutyThreatintelset#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/guardduty_threatintelset#name GuarddutyThreatintelset#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/guardduty_threatintelset#name GuarddutyThreatintelset#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/guardduty_threatintelset#tags GuarddutyThreatintelset#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/guardduty_threatintelset#tags GuarddutyThreatintelset#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/guardduty_threatintelset#tags_all GuarddutyThreatintelset#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/guardduty_threatintelset#tags_all GuarddutyThreatintelset#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/guardduty_threatintelset aws_guardduty_threatintelset}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/guardduty_threatintelset aws_guardduty_threatintelset}
 */
 export class GuarddutyThreatintelset extends cdktf.TerraformResource {
 
@@ -66,7 +66,7 @@ export class GuarddutyThreatintelset extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GuarddutyThreatintelset resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GuarddutyThreatintelset to import
-  * @param importFromId The id of the existing GuarddutyThreatintelset that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/guardduty_threatintelset#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GuarddutyThreatintelset that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/guardduty_threatintelset#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GuarddutyThreatintelset to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -78,7 +78,7 @@ export class GuarddutyThreatintelset extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/guardduty_threatintelset aws_guardduty_threatintelset} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/guardduty_threatintelset aws_guardduty_threatintelset} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -89,7 +89,7 @@ export class GuarddutyThreatintelset extends cdktf.TerraformResource {
       terraformResourceType: 'aws_guardduty_threatintelset',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.90.1',
+        providerVersion: '5.91.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

@@ -920,6 +920,7 @@ Object.defineProperty(exports, 'networkAclAssociation', { get: function () { ret
 Object.defineProperty(exports, 'networkAclRule', { get: function () { return require('./network-acl-rule'); } });
 Object.defineProperty(exports, 'networkInterface', { get: function () { return require('./network-interface'); } });
 Object.defineProperty(exports, 'networkInterfaceAttachment', { get: function () { return require('./network-interface-attachment'); } });
+Object.defineProperty(exports, 'networkInterfacePermission', { get: function () { return require('./network-interface-permission'); } });
 Object.defineProperty(exports, 'networkInterfaceSgAttachment', { get: function () { return require('./network-interface-sg-attachment'); } });
 Object.defineProperty(exports, 'networkfirewallFirewall', { get: function () { return require('./networkfirewall-firewall'); } });
 Object.defineProperty(exports, 'networkfirewallFirewallPolicy', { get: function () { return require('./networkfirewall-firewall-policy'); } });
@@ -1107,6 +1108,7 @@ Object.defineProperty(exports, 'route53HostedZoneDnssec', { get: function () { r
 Object.defineProperty(exports, 'route53KeySigningKey', { get: function () { return require('./route53-key-signing-key'); } });
 Object.defineProperty(exports, 'route53QueryLog', { get: function () { return require('./route53-query-log'); } });
 Object.defineProperty(exports, 'route53Record', { get: function () { return require('./route53-record'); } });
+Object.defineProperty(exports, 'route53RecordsExclusive', { get: function () { return require('./route53-records-exclusive'); } });
 Object.defineProperty(exports, 'route53ResolverConfig', { get: function () { return require('./route53-resolver-config'); } });
 Object.defineProperty(exports, 'route53ResolverDnssecConfig', { get: function () { return require('./route53-resolver-dnssec-config'); } });
 Object.defineProperty(exports, 'route53ResolverEndpoint', { get: function () { return require('./route53-resolver-endpoint'); } });
