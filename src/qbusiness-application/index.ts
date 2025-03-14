@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/qbusiness_application
+// https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/qbusiness_application
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,47 +10,47 @@ export interface QbusinessApplicationConfig extends cdktf.TerraformMetaArguments
   /**
   * A description of the Amazon Q application.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/qbusiness_application#description QbusinessApplication#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/qbusiness_application#description QbusinessApplication#description}
   */
   readonly description?: string;
   /**
   * The display name of the Amazon Q application.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/qbusiness_application#display_name QbusinessApplication#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/qbusiness_application#display_name QbusinessApplication#display_name}
   */
   readonly displayName: string;
   /**
   * The Amazon Resource Name (ARN) of the IAM service role that provides permissions for the Amazon Q application.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/qbusiness_application#iam_service_role_arn QbusinessApplication#iam_service_role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/qbusiness_application#iam_service_role_arn QbusinessApplication#iam_service_role_arn}
   */
   readonly iamServiceRoleArn: string;
   /**
   * ARN of the IAM Identity Center instance you are either creating for—or connecting to—your Amazon Q Business application
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/qbusiness_application#identity_center_instance_arn QbusinessApplication#identity_center_instance_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/qbusiness_application#identity_center_instance_arn QbusinessApplication#identity_center_instance_arn}
   */
   readonly identityCenterInstanceArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/qbusiness_application#tags QbusinessApplication#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/qbusiness_application#tags QbusinessApplication#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
   * attachments_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/qbusiness_application#attachments_configuration QbusinessApplication#attachments_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/qbusiness_application#attachments_configuration QbusinessApplication#attachments_configuration}
   */
   readonly attachmentsConfiguration?: QbusinessApplicationAttachmentsConfiguration[] | cdktf.IResolvable;
   /**
   * encryption_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/qbusiness_application#encryption_configuration QbusinessApplication#encryption_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/qbusiness_application#encryption_configuration QbusinessApplication#encryption_configuration}
   */
   readonly encryptionConfiguration?: QbusinessApplicationEncryptionConfiguration[] | cdktf.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/qbusiness_application#timeouts QbusinessApplication#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/qbusiness_application#timeouts QbusinessApplication#timeouts}
   */
   readonly timeouts?: QbusinessApplicationTimeouts;
 }
@@ -63,7 +58,7 @@ export interface QbusinessApplicationAttachmentsConfiguration {
   /**
   * Status information about whether file upload functionality is activated or deactivated for your end user.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/qbusiness_application#attachments_control_mode QbusinessApplication#attachments_control_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/qbusiness_application#attachments_control_mode QbusinessApplication#attachments_control_mode}
   */
   readonly attachmentsControlMode: string;
 }
@@ -178,7 +173,7 @@ export interface QbusinessApplicationEncryptionConfiguration {
   /**
   * The identifier of the AWS KMS key that is used to encrypt your data. Amazon Q doesn't support asymmetric keys.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/qbusiness_application#kms_key_id QbusinessApplication#kms_key_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/qbusiness_application#kms_key_id QbusinessApplication#kms_key_id}
   */
   readonly kmsKeyId: string;
 }
@@ -293,19 +288,19 @@ export interface QbusinessApplicationTimeouts {
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/qbusiness_application#create QbusinessApplication#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/qbusiness_application#create QbusinessApplication#create}
   */
   readonly create?: string;
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/qbusiness_application#delete QbusinessApplication#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/qbusiness_application#delete QbusinessApplication#delete}
   */
   readonly delete?: string;
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/qbusiness_application#update QbusinessApplication#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/qbusiness_application#update QbusinessApplication#update}
   */
   readonly update?: string;
 }
@@ -457,7 +452,7 @@ export class QbusinessApplicationTimeoutsOutputReference extends cdktf.ComplexOb
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/qbusiness_application aws_qbusiness_application}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/qbusiness_application aws_qbusiness_application}
 */
 export class QbusinessApplication extends cdktf.TerraformResource {
 
@@ -473,7 +468,7 @@ export class QbusinessApplication extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a QbusinessApplication resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the QbusinessApplication to import
-  * @param importFromId The id of the existing QbusinessApplication that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/qbusiness_application#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing QbusinessApplication that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/qbusiness_application#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the QbusinessApplication to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -485,7 +480,7 @@ export class QbusinessApplication extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/qbusiness_application aws_qbusiness_application} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/qbusiness_application aws_qbusiness_application} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -496,7 +491,7 @@ export class QbusinessApplication extends cdktf.TerraformResource {
       terraformResourceType: 'aws_qbusiness_application',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.90.1',
+        providerVersion: '5.91.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

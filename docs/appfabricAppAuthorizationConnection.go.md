@@ -4,12 +4,12 @@
 
 ### AppfabricAppAuthorizationConnection <a name="AppfabricAppAuthorizationConnection" id="@cdktf/provider-aws.appfabricAppAuthorizationConnection.AppfabricAppAuthorizationConnection"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/appfabric_app_authorization_connection aws_appfabric_app_authorization_connection}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/appfabric_app_authorization_connection aws_appfabric_app_authorization_connection}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appfabricAppAuthorizationConnection.AppfabricAppAuthorizationConnection.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/appfabricappauthorizationconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appfabricappauthorizationconnection"
 
 appfabricappauthorizationconnection.NewAppfabricAppAuthorizationConnection(scope Construct, id *string, config AppfabricAppAuthorizationConnectionConfig) AppfabricAppAuthorizationConnection
 ```
@@ -418,7 +418,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.appfabricAppAuthorizationConnection.AppfabricAppAuthorizationConnection.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/appfabricappauthorizationconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appfabricappauthorizationconnection"
 
 appfabricappauthorizationconnection.AppfabricAppAuthorizationConnection_IsConstruct(x interface{}) *bool
 ```
@@ -450,7 +450,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.appfabricAppAuthorizationConnection.AppfabricAppAuthorizationConnection.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/appfabricappauthorizationconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appfabricappauthorizationconnection"
 
 appfabricappauthorizationconnection.AppfabricAppAuthorizationConnection_IsTerraformElement(x interface{}) *bool
 ```
@@ -464,7 +464,7 @@ appfabricappauthorizationconnection.AppfabricAppAuthorizationConnection_IsTerraf
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.appfabricAppAuthorizationConnection.AppfabricAppAuthorizationConnection.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/appfabricappauthorizationconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appfabricappauthorizationconnection"
 
 appfabricappauthorizationconnection.AppfabricAppAuthorizationConnection_IsTerraformResource(x interface{}) *bool
 ```
@@ -478,7 +478,7 @@ appfabricappauthorizationconnection.AppfabricAppAuthorizationConnection_IsTerraf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.appfabricAppAuthorizationConnection.AppfabricAppAuthorizationConnection.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/appfabricappauthorizationconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appfabricappauthorizationconnection"
 
 appfabricappauthorizationconnection.AppfabricAppAuthorizationConnection_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -507,7 +507,7 @@ The construct id used in the generated config for the AppfabricAppAuthorizationC
 
 The id of the existing AppfabricAppAuthorizationConnection that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/appfabric_app_authorization_connection#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/appfabric_app_authorization_connection#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -828,7 +828,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appfabricAppAuthorizationConnection.AppfabricAppAuthorizationConnectionAuthRequest.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/appfabricappauthorizationconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appfabricappauthorizationconnection"
 
 &appfabricappauthorizationconnection.AppfabricAppAuthorizationConnectionAuthRequest {
 	Code: *string,
@@ -840,8 +840,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/appfabricappauthorization
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appfabricAppAuthorizationConnection.AppfabricAppAuthorizationConnectionAuthRequest.property.code">Code</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/appfabric_app_authorization_connection#code AppfabricAppAuthorizationConnection#code}. |
-| <code><a href="#@cdktf/provider-aws.appfabricAppAuthorizationConnection.AppfabricAppAuthorizationConnectionAuthRequest.property.redirectUri">RedirectUri</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/appfabric_app_authorization_connection#redirect_uri AppfabricAppAuthorizationConnection#redirect_uri}. |
+| <code><a href="#@cdktf/provider-aws.appfabricAppAuthorizationConnection.AppfabricAppAuthorizationConnectionAuthRequest.property.code">Code</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/appfabric_app_authorization_connection#code AppfabricAppAuthorizationConnection#code}. |
+| <code><a href="#@cdktf/provider-aws.appfabricAppAuthorizationConnection.AppfabricAppAuthorizationConnectionAuthRequest.property.redirectUri">RedirectUri</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/appfabric_app_authorization_connection#redirect_uri AppfabricAppAuthorizationConnection#redirect_uri}. |
 
 ---
 
@@ -853,7 +853,7 @@ Code *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/appfabric_app_authorization_connection#code AppfabricAppAuthorizationConnection#code}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/appfabric_app_authorization_connection#code AppfabricAppAuthorizationConnection#code}.
 
 ---
 
@@ -865,7 +865,7 @@ RedirectUri *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/appfabric_app_authorization_connection#redirect_uri AppfabricAppAuthorizationConnection#redirect_uri}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/appfabric_app_authorization_connection#redirect_uri AppfabricAppAuthorizationConnection#redirect_uri}.
 
 ---
 
@@ -874,7 +874,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appfabricAppAuthorizationConnection.AppfabricAppAuthorizationConnectionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/appfabricappauthorizationconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appfabricappauthorizationconnection"
 
 &appfabricappauthorizationconnection.AppfabricAppAuthorizationConnectionConfig {
 	Connection: interface{},
@@ -887,7 +887,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/appfabricappauthorization
 	AppAuthorizationArn: *string,
 	AppBundleArn: *string,
 	AuthRequest: interface{},
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v19.appfabricAppAuthorizationConnection.AppfabricAppAuthorizationConnectionTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.appfabricAppAuthorizationConnection.AppfabricAppAuthorizationConnectionTimeouts,
 }
 ```
 
@@ -902,8 +902,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/appfabricappauthorization
 | <code><a href="#@cdktf/provider-aws.appfabricAppAuthorizationConnection.AppfabricAppAuthorizationConnectionConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appfabricAppAuthorizationConnection.AppfabricAppAuthorizationConnectionConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appfabricAppAuthorizationConnection.AppfabricAppAuthorizationConnectionConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appfabricAppAuthorizationConnection.AppfabricAppAuthorizationConnectionConfig.property.appAuthorizationArn">AppAuthorizationArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/appfabric_app_authorization_connection#app_authorization_arn AppfabricAppAuthorizationConnection#app_authorization_arn}. |
-| <code><a href="#@cdktf/provider-aws.appfabricAppAuthorizationConnection.AppfabricAppAuthorizationConnectionConfig.property.appBundleArn">AppBundleArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/appfabric_app_authorization_connection#app_bundle_arn AppfabricAppAuthorizationConnection#app_bundle_arn}. |
+| <code><a href="#@cdktf/provider-aws.appfabricAppAuthorizationConnection.AppfabricAppAuthorizationConnectionConfig.property.appAuthorizationArn">AppAuthorizationArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/appfabric_app_authorization_connection#app_authorization_arn AppfabricAppAuthorizationConnection#app_authorization_arn}. |
+| <code><a href="#@cdktf/provider-aws.appfabricAppAuthorizationConnection.AppfabricAppAuthorizationConnectionConfig.property.appBundleArn">AppBundleArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/appfabric_app_authorization_connection#app_bundle_arn AppfabricAppAuthorizationConnection#app_bundle_arn}. |
 | <code><a href="#@cdktf/provider-aws.appfabricAppAuthorizationConnection.AppfabricAppAuthorizationConnectionConfig.property.authRequest">AuthRequest</a></code> | <code>interface{}</code> | auth_request block. |
 | <code><a href="#@cdktf/provider-aws.appfabricAppAuthorizationConnection.AppfabricAppAuthorizationConnectionConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-aws.appfabricAppAuthorizationConnection.AppfabricAppAuthorizationConnectionTimeouts">AppfabricAppAuthorizationConnectionTimeouts</a></code> | timeouts block. |
 
@@ -987,7 +987,7 @@ AppAuthorizationArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/appfabric_app_authorization_connection#app_authorization_arn AppfabricAppAuthorizationConnection#app_authorization_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/appfabric_app_authorization_connection#app_authorization_arn AppfabricAppAuthorizationConnection#app_authorization_arn}.
 
 ---
 
@@ -999,7 +999,7 @@ AppBundleArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/appfabric_app_authorization_connection#app_bundle_arn AppfabricAppAuthorizationConnection#app_bundle_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/appfabric_app_authorization_connection#app_bundle_arn AppfabricAppAuthorizationConnection#app_bundle_arn}.
 
 ---
 
@@ -1013,7 +1013,7 @@ AuthRequest interface{}
 
 auth_request block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/appfabric_app_authorization_connection#auth_request AppfabricAppAuthorizationConnection#auth_request}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/appfabric_app_authorization_connection#auth_request AppfabricAppAuthorizationConnection#auth_request}
 
 ---
 
@@ -1027,7 +1027,7 @@ Timeouts AppfabricAppAuthorizationConnectionTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/appfabric_app_authorization_connection#timeouts AppfabricAppAuthorizationConnection#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/appfabric_app_authorization_connection#timeouts AppfabricAppAuthorizationConnection#timeouts}
 
 ---
 
@@ -1036,7 +1036,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appfabricAppAuthorizationConnection.AppfabricAppAuthorizationConnectionTenant.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/appfabricappauthorizationconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appfabricappauthorizationconnection"
 
 &appfabricappauthorizationconnection.AppfabricAppAuthorizationConnectionTenant {
 
@@ -1049,7 +1049,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/appfabricappauthorization
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appfabricAppAuthorizationConnection.AppfabricAppAuthorizationConnectionTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/appfabricappauthorizationconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appfabricappauthorizationconnection"
 
 &appfabricappauthorizationconnection.AppfabricAppAuthorizationConnectionTimeouts {
 	Create: *string,
@@ -1074,7 +1074,7 @@ Create *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/appfabric_app_authorization_connection#create AppfabricAppAuthorizationConnection#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/appfabric_app_authorization_connection#create AppfabricAppAuthorizationConnection#create}
 
 ---
 
@@ -1085,7 +1085,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appfabricAppAuthorizationConnection.AppfabricAppAuthorizationConnectionAuthRequestList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/appfabricappauthorizationconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appfabricappauthorizationconnection"
 
 appfabricappauthorizationconnection.NewAppfabricAppAuthorizationConnectionAuthRequestList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppfabricAppAuthorizationConnectionAuthRequestList
 ```
@@ -1245,7 +1245,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appfabricAppAuthorizationConnection.AppfabricAppAuthorizationConnectionAuthRequestOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/appfabricappauthorizationconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appfabricappauthorizationconnection"
 
 appfabricappauthorizationconnection.NewAppfabricAppAuthorizationConnectionAuthRequestOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppfabricAppAuthorizationConnectionAuthRequestOutputReference
 ```
@@ -1556,7 +1556,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appfabricAppAuthorizationConnection.AppfabricAppAuthorizationConnectionTenantList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/appfabricappauthorizationconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appfabricappauthorizationconnection"
 
 appfabricappauthorizationconnection.NewAppfabricAppAuthorizationConnectionTenantList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppfabricAppAuthorizationConnectionTenantList
 ```
@@ -1705,7 +1705,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appfabricAppAuthorizationConnection.AppfabricAppAuthorizationConnectionTenantOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/appfabricappauthorizationconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appfabricappauthorizationconnection"
 
 appfabricappauthorizationconnection.NewAppfabricAppAuthorizationConnectionTenantOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppfabricAppAuthorizationConnectionTenantOutputReference
 ```
@@ -1994,7 +1994,7 @@ func InternalValue() AppfabricAppAuthorizationConnectionTenant
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appfabricAppAuthorizationConnection.AppfabricAppAuthorizationConnectionTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/appfabricappauthorizationconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appfabricappauthorizationconnection"
 
 appfabricappauthorizationconnection.NewAppfabricAppAuthorizationConnectionTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppfabricAppAuthorizationConnectionTimeoutsOutputReference
 ```

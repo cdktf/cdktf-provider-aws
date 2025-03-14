@@ -4,7 +4,7 @@
 
 ### AppfabricIngestion <a name="AppfabricIngestion" id="@cdktf/provider-aws.appfabricIngestion.AppfabricIngestion"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/appfabric_ingestion aws_appfabric_ingestion}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/appfabric_ingestion aws_appfabric_ingestion}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appfabricIngestion.AppfabricIngestion.Initializer"></a>
 
@@ -42,11 +42,11 @@ AppfabricIngestion.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-aws.appfabricIngestion.AppfabricIngestion.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appfabricIngestion.AppfabricIngestion.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appfabricIngestion.AppfabricIngestion.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appfabricIngestion.AppfabricIngestion.Initializer.parameter.app">app</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/appfabric_ingestion#app AppfabricIngestion#app}. |
-| <code><a href="#@cdktf/provider-aws.appfabricIngestion.AppfabricIngestion.Initializer.parameter.appBundleArn">appBundleArn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/appfabric_ingestion#app_bundle_arn AppfabricIngestion#app_bundle_arn}. |
-| <code><a href="#@cdktf/provider-aws.appfabricIngestion.AppfabricIngestion.Initializer.parameter.ingestionType">ingestionType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/appfabric_ingestion#ingestion_type AppfabricIngestion#ingestion_type}. |
-| <code><a href="#@cdktf/provider-aws.appfabricIngestion.AppfabricIngestion.Initializer.parameter.tenantId">tenantId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/appfabric_ingestion#tenant_id AppfabricIngestion#tenant_id}. |
-| <code><a href="#@cdktf/provider-aws.appfabricIngestion.AppfabricIngestion.Initializer.parameter.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/appfabric_ingestion#tags AppfabricIngestion#tags}. |
+| <code><a href="#@cdktf/provider-aws.appfabricIngestion.AppfabricIngestion.Initializer.parameter.app">app</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/appfabric_ingestion#app AppfabricIngestion#app}. |
+| <code><a href="#@cdktf/provider-aws.appfabricIngestion.AppfabricIngestion.Initializer.parameter.appBundleArn">appBundleArn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/appfabric_ingestion#app_bundle_arn AppfabricIngestion#app_bundle_arn}. |
+| <code><a href="#@cdktf/provider-aws.appfabricIngestion.AppfabricIngestion.Initializer.parameter.ingestionType">ingestionType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/appfabric_ingestion#ingestion_type AppfabricIngestion#ingestion_type}. |
+| <code><a href="#@cdktf/provider-aws.appfabricIngestion.AppfabricIngestion.Initializer.parameter.tenantId">tenantId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/appfabric_ingestion#tenant_id AppfabricIngestion#tenant_id}. |
+| <code><a href="#@cdktf/provider-aws.appfabricIngestion.AppfabricIngestion.Initializer.parameter.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/appfabric_ingestion#tags AppfabricIngestion#tags}. |
 
 ---
 
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/appfabric_ingestion#app AppfabricIngestion#app}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/appfabric_ingestion#app AppfabricIngestion#app}.
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/appfabric_ingestion#app_bundle_arn AppfabricIngestion#app_bundle_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/appfabric_ingestion#app_bundle_arn AppfabricIngestion#app_bundle_arn}.
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/appfabric_ingestion#ingestion_type AppfabricIngestion#ingestion_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/appfabric_ingestion#ingestion_type AppfabricIngestion#ingestion_type}.
 
 ---
 
@@ -138,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/appfabric_ingestion#tenant_id AppfabricIngestion#tenant_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/appfabric_ingestion#tenant_id AppfabricIngestion#tenant_id}.
 
 ---
 
@@ -146,7 +146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/appfabric_ingestion#tags AppfabricIngestion#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/appfabric_ingestion#tags AppfabricIngestion#tags}.
 
 ---
 
@@ -580,7 +580,7 @@ The construct id used in the generated config for the AppfabricIngestion to impo
 
 The id of the existing AppfabricIngestion that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/appfabric_ingestion#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/appfabric_ingestion#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -956,11 +956,11 @@ AppfabricIngestionConfig.builder()
 | <code><a href="#@cdktf/provider-aws.appfabricIngestion.AppfabricIngestionConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appfabricIngestion.AppfabricIngestionConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appfabricIngestion.AppfabricIngestionConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appfabricIngestion.AppfabricIngestionConfig.property.app">app</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/appfabric_ingestion#app AppfabricIngestion#app}. |
-| <code><a href="#@cdktf/provider-aws.appfabricIngestion.AppfabricIngestionConfig.property.appBundleArn">appBundleArn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/appfabric_ingestion#app_bundle_arn AppfabricIngestion#app_bundle_arn}. |
-| <code><a href="#@cdktf/provider-aws.appfabricIngestion.AppfabricIngestionConfig.property.ingestionType">ingestionType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/appfabric_ingestion#ingestion_type AppfabricIngestion#ingestion_type}. |
-| <code><a href="#@cdktf/provider-aws.appfabricIngestion.AppfabricIngestionConfig.property.tenantId">tenantId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/appfabric_ingestion#tenant_id AppfabricIngestion#tenant_id}. |
-| <code><a href="#@cdktf/provider-aws.appfabricIngestion.AppfabricIngestionConfig.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/appfabric_ingestion#tags AppfabricIngestion#tags}. |
+| <code><a href="#@cdktf/provider-aws.appfabricIngestion.AppfabricIngestionConfig.property.app">app</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/appfabric_ingestion#app AppfabricIngestion#app}. |
+| <code><a href="#@cdktf/provider-aws.appfabricIngestion.AppfabricIngestionConfig.property.appBundleArn">appBundleArn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/appfabric_ingestion#app_bundle_arn AppfabricIngestion#app_bundle_arn}. |
+| <code><a href="#@cdktf/provider-aws.appfabricIngestion.AppfabricIngestionConfig.property.ingestionType">ingestionType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/appfabric_ingestion#ingestion_type AppfabricIngestion#ingestion_type}. |
+| <code><a href="#@cdktf/provider-aws.appfabricIngestion.AppfabricIngestionConfig.property.tenantId">tenantId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/appfabric_ingestion#tenant_id AppfabricIngestion#tenant_id}. |
+| <code><a href="#@cdktf/provider-aws.appfabricIngestion.AppfabricIngestionConfig.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/appfabric_ingestion#tags AppfabricIngestion#tags}. |
 
 ---
 
@@ -1042,7 +1042,7 @@ public java.lang.String getApp();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/appfabric_ingestion#app AppfabricIngestion#app}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/appfabric_ingestion#app AppfabricIngestion#app}.
 
 ---
 
@@ -1054,7 +1054,7 @@ public java.lang.String getAppBundleArn();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/appfabric_ingestion#app_bundle_arn AppfabricIngestion#app_bundle_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/appfabric_ingestion#app_bundle_arn AppfabricIngestion#app_bundle_arn}.
 
 ---
 
@@ -1066,7 +1066,7 @@ public java.lang.String getIngestionType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/appfabric_ingestion#ingestion_type AppfabricIngestion#ingestion_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/appfabric_ingestion#ingestion_type AppfabricIngestion#ingestion_type}.
 
 ---
 
@@ -1078,7 +1078,7 @@ public java.lang.String getTenantId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/appfabric_ingestion#tenant_id AppfabricIngestion#tenant_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/appfabric_ingestion#tenant_id AppfabricIngestion#tenant_id}.
 
 ---
 
@@ -1090,7 +1090,7 @@ public java.util.Map<java.lang.String, java.lang.String> getTags();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/appfabric_ingestion#tags AppfabricIngestion#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/appfabric_ingestion#tags AppfabricIngestion#tags}.
 
 ---
 

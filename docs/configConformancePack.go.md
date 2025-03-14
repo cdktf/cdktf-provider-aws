@@ -4,12 +4,12 @@
 
 ### ConfigConformancePack <a name="ConfigConformancePack" id="@cdktf/provider-aws.configConformancePack.ConfigConformancePack"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/config_conformance_pack aws_config_conformance_pack}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/config_conformance_pack aws_config_conformance_pack}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.configConformancePack.ConfigConformancePack.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/configconformancepack"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/configconformancepack"
 
 configconformancepack.NewConfigConformancePack(scope Construct, id *string, config ConfigConformancePackConfig) ConfigConformancePack
 ```
@@ -433,7 +433,7 @@ func ResetTemplateS3Uri()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.configConformancePack.ConfigConformancePack.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/configconformancepack"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/configconformancepack"
 
 configconformancepack.ConfigConformancePack_IsConstruct(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.configConformancePack.ConfigConformancePack.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/configconformancepack"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/configconformancepack"
 
 configconformancepack.ConfigConformancePack_IsTerraformElement(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ configconformancepack.ConfigConformancePack_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.configConformancePack.ConfigConformancePack.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/configconformancepack"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/configconformancepack"
 
 configconformancepack.ConfigConformancePack_IsTerraformResource(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ configconformancepack.ConfigConformancePack_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.configConformancePack.ConfigConformancePack.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/configconformancepack"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/configconformancepack"
 
 configconformancepack.ConfigConformancePack_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -522,7 +522,7 @@ The construct id used in the generated config for the ConfigConformancePack to i
 
 The id of the existing ConfigConformancePack that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/config_conformance_pack#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/config_conformance_pack#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -887,7 +887,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.configConformancePack.ConfigConformancePackConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/configconformancepack"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/configconformancepack"
 
 &configconformancepack.ConfigConformancePackConfig {
 	Connection: interface{},
@@ -918,13 +918,13 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/configconformancepack"
 | <code><a href="#@cdktf/provider-aws.configConformancePack.ConfigConformancePackConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.configConformancePack.ConfigConformancePackConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.configConformancePack.ConfigConformancePackConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConformancePack.ConfigConformancePackConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/config_conformance_pack#name ConfigConformancePack#name}. |
-| <code><a href="#@cdktf/provider-aws.configConformancePack.ConfigConformancePackConfig.property.deliveryS3Bucket">DeliveryS3Bucket</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/config_conformance_pack#delivery_s3_bucket ConfigConformancePack#delivery_s3_bucket}. |
-| <code><a href="#@cdktf/provider-aws.configConformancePack.ConfigConformancePackConfig.property.deliveryS3KeyPrefix">DeliveryS3KeyPrefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/config_conformance_pack#delivery_s3_key_prefix ConfigConformancePack#delivery_s3_key_prefix}. |
-| <code><a href="#@cdktf/provider-aws.configConformancePack.ConfigConformancePackConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/config_conformance_pack#id ConfigConformancePack#id}. |
+| <code><a href="#@cdktf/provider-aws.configConformancePack.ConfigConformancePackConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/config_conformance_pack#name ConfigConformancePack#name}. |
+| <code><a href="#@cdktf/provider-aws.configConformancePack.ConfigConformancePackConfig.property.deliveryS3Bucket">DeliveryS3Bucket</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/config_conformance_pack#delivery_s3_bucket ConfigConformancePack#delivery_s3_bucket}. |
+| <code><a href="#@cdktf/provider-aws.configConformancePack.ConfigConformancePackConfig.property.deliveryS3KeyPrefix">DeliveryS3KeyPrefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/config_conformance_pack#delivery_s3_key_prefix ConfigConformancePack#delivery_s3_key_prefix}. |
+| <code><a href="#@cdktf/provider-aws.configConformancePack.ConfigConformancePackConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/config_conformance_pack#id ConfigConformancePack#id}. |
 | <code><a href="#@cdktf/provider-aws.configConformancePack.ConfigConformancePackConfig.property.inputParameter">InputParameter</a></code> | <code>interface{}</code> | input_parameter block. |
-| <code><a href="#@cdktf/provider-aws.configConformancePack.ConfigConformancePackConfig.property.templateBody">TemplateBody</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/config_conformance_pack#template_body ConfigConformancePack#template_body}. |
-| <code><a href="#@cdktf/provider-aws.configConformancePack.ConfigConformancePackConfig.property.templateS3Uri">TemplateS3Uri</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/config_conformance_pack#template_s3_uri ConfigConformancePack#template_s3_uri}. |
+| <code><a href="#@cdktf/provider-aws.configConformancePack.ConfigConformancePackConfig.property.templateBody">TemplateBody</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/config_conformance_pack#template_body ConfigConformancePack#template_body}. |
+| <code><a href="#@cdktf/provider-aws.configConformancePack.ConfigConformancePackConfig.property.templateS3Uri">TemplateS3Uri</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/config_conformance_pack#template_s3_uri ConfigConformancePack#template_s3_uri}. |
 
 ---
 
@@ -1006,7 +1006,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/config_conformance_pack#name ConfigConformancePack#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/config_conformance_pack#name ConfigConformancePack#name}.
 
 ---
 
@@ -1018,7 +1018,7 @@ DeliveryS3Bucket *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/config_conformance_pack#delivery_s3_bucket ConfigConformancePack#delivery_s3_bucket}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/config_conformance_pack#delivery_s3_bucket ConfigConformancePack#delivery_s3_bucket}.
 
 ---
 
@@ -1030,7 +1030,7 @@ DeliveryS3KeyPrefix *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/config_conformance_pack#delivery_s3_key_prefix ConfigConformancePack#delivery_s3_key_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/config_conformance_pack#delivery_s3_key_prefix ConfigConformancePack#delivery_s3_key_prefix}.
 
 ---
 
@@ -1042,7 +1042,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/config_conformance_pack#id ConfigConformancePack#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/config_conformance_pack#id ConfigConformancePack#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1059,7 +1059,7 @@ InputParameter interface{}
 
 input_parameter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/config_conformance_pack#input_parameter ConfigConformancePack#input_parameter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/config_conformance_pack#input_parameter ConfigConformancePack#input_parameter}
 
 ---
 
@@ -1071,7 +1071,7 @@ TemplateBody *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/config_conformance_pack#template_body ConfigConformancePack#template_body}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/config_conformance_pack#template_body ConfigConformancePack#template_body}.
 
 ---
 
@@ -1083,7 +1083,7 @@ TemplateS3Uri *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/config_conformance_pack#template_s3_uri ConfigConformancePack#template_s3_uri}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/config_conformance_pack#template_s3_uri ConfigConformancePack#template_s3_uri}.
 
 ---
 
@@ -1092,7 +1092,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.configConformancePack.ConfigConformancePackInputParameter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/configconformancepack"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/configconformancepack"
 
 &configconformancepack.ConfigConformancePackInputParameter {
 	ParameterName: *string,
@@ -1104,8 +1104,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/configconformancepack"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.configConformancePack.ConfigConformancePackInputParameter.property.parameterName">ParameterName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/config_conformance_pack#parameter_name ConfigConformancePack#parameter_name}. |
-| <code><a href="#@cdktf/provider-aws.configConformancePack.ConfigConformancePackInputParameter.property.parameterValue">ParameterValue</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/config_conformance_pack#parameter_value ConfigConformancePack#parameter_value}. |
+| <code><a href="#@cdktf/provider-aws.configConformancePack.ConfigConformancePackInputParameter.property.parameterName">ParameterName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/config_conformance_pack#parameter_name ConfigConformancePack#parameter_name}. |
+| <code><a href="#@cdktf/provider-aws.configConformancePack.ConfigConformancePackInputParameter.property.parameterValue">ParameterValue</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/config_conformance_pack#parameter_value ConfigConformancePack#parameter_value}. |
 
 ---
 
@@ -1117,7 +1117,7 @@ ParameterName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/config_conformance_pack#parameter_name ConfigConformancePack#parameter_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/config_conformance_pack#parameter_name ConfigConformancePack#parameter_name}.
 
 ---
 
@@ -1129,7 +1129,7 @@ ParameterValue *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/config_conformance_pack#parameter_value ConfigConformancePack#parameter_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/config_conformance_pack#parameter_value ConfigConformancePack#parameter_value}.
 
 ---
 
@@ -1140,7 +1140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.configConformancePack.ConfigConformancePackInputParameterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/configconformancepack"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/configconformancepack"
 
 configconformancepack.NewConfigConformancePackInputParameterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ConfigConformancePackInputParameterList
 ```
@@ -1300,7 +1300,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.configConformancePack.ConfigConformancePackInputParameterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/configconformancepack"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/configconformancepack"
 
 configconformancepack.NewConfigConformancePackInputParameterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ConfigConformancePackInputParameterOutputReference
 ```

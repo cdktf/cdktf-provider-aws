@@ -4,7 +4,7 @@
 
 ### DataAwsPrefixList <a name="DataAwsPrefixList" id="@cdktf/provider-aws.dataAwsPrefixList.DataAwsPrefixList"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/data-sources/prefix_list aws_prefix_list}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/data-sources/prefix_list aws_prefix_list}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsPrefixList.DataAwsPrefixList.Initializer"></a>
 
@@ -426,7 +426,7 @@ The construct id used in the generated config for the DataAwsPrefixList to impor
 
 The id of the existing DataAwsPrefixList that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/data-sources/prefix_list#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/data-sources/prefix_list#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -742,9 +742,9 @@ const dataAwsPrefixListConfig: dataAwsPrefixList.DataAwsPrefixListConfig = { ...
 | <code><a href="#@cdktf/provider-aws.dataAwsPrefixList.DataAwsPrefixListConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsPrefixList.DataAwsPrefixListConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsPrefixList.DataAwsPrefixListConfig.property.filter">filter</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.dataAwsPrefixList.DataAwsPrefixListFilter">DataAwsPrefixListFilter</a>[]</code> | filter block. |
-| <code><a href="#@cdktf/provider-aws.dataAwsPrefixList.DataAwsPrefixListConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/data-sources/prefix_list#id DataAwsPrefixList#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsPrefixList.DataAwsPrefixListConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/data-sources/prefix_list#name DataAwsPrefixList#name}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsPrefixList.DataAwsPrefixListConfig.property.prefixListId">prefixListId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/data-sources/prefix_list#prefix_list_id DataAwsPrefixList#prefix_list_id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsPrefixList.DataAwsPrefixListConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/data-sources/prefix_list#id DataAwsPrefixList#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsPrefixList.DataAwsPrefixListConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/data-sources/prefix_list#name DataAwsPrefixList#name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsPrefixList.DataAwsPrefixListConfig.property.prefixListId">prefixListId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/data-sources/prefix_list#prefix_list_id DataAwsPrefixList#prefix_list_id}. |
 | <code><a href="#@cdktf/provider-aws.dataAwsPrefixList.DataAwsPrefixListConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-aws.dataAwsPrefixList.DataAwsPrefixListTimeouts">DataAwsPrefixListTimeouts</a></code> | timeouts block. |
 
 ---
@@ -829,7 +829,7 @@ public readonly filter: IResolvable | DataAwsPrefixListFilter[];
 
 filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/data-sources/prefix_list#filter DataAwsPrefixList#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/data-sources/prefix_list#filter DataAwsPrefixList#filter}
 
 ---
 
@@ -841,7 +841,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/data-sources/prefix_list#id DataAwsPrefixList#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/data-sources/prefix_list#id DataAwsPrefixList#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -856,7 +856,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/data-sources/prefix_list#name DataAwsPrefixList#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/data-sources/prefix_list#name DataAwsPrefixList#name}.
 
 ---
 
@@ -868,7 +868,7 @@ public readonly prefixListId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/data-sources/prefix_list#prefix_list_id DataAwsPrefixList#prefix_list_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/data-sources/prefix_list#prefix_list_id DataAwsPrefixList#prefix_list_id}.
 
 ---
 
@@ -882,7 +882,7 @@ public readonly timeouts: DataAwsPrefixListTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/data-sources/prefix_list#timeouts DataAwsPrefixList#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/data-sources/prefix_list#timeouts DataAwsPrefixList#timeouts}
 
 ---
 
@@ -900,8 +900,8 @@ const dataAwsPrefixListFilter: dataAwsPrefixList.DataAwsPrefixListFilter = { ...
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dataAwsPrefixList.DataAwsPrefixListFilter.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/data-sources/prefix_list#name DataAwsPrefixList#name}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsPrefixList.DataAwsPrefixListFilter.property.values">values</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/data-sources/prefix_list#values DataAwsPrefixList#values}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsPrefixList.DataAwsPrefixListFilter.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/data-sources/prefix_list#name DataAwsPrefixList#name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsPrefixList.DataAwsPrefixListFilter.property.values">values</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/data-sources/prefix_list#values DataAwsPrefixList#values}. |
 
 ---
 
@@ -913,7 +913,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/data-sources/prefix_list#name DataAwsPrefixList#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/data-sources/prefix_list#name DataAwsPrefixList#name}.
 
 ---
 
@@ -925,7 +925,7 @@ public readonly values: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/data-sources/prefix_list#values DataAwsPrefixList#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/data-sources/prefix_list#values DataAwsPrefixList#values}.
 
 ---
 
@@ -943,7 +943,7 @@ const dataAwsPrefixListTimeouts: dataAwsPrefixList.DataAwsPrefixListTimeouts = {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dataAwsPrefixList.DataAwsPrefixListTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/data-sources/prefix_list#read DataAwsPrefixList#read}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsPrefixList.DataAwsPrefixListTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/data-sources/prefix_list#read DataAwsPrefixList#read}. |
 
 ---
 
@@ -955,7 +955,7 @@ public readonly read: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/data-sources/prefix_list#read DataAwsPrefixList#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/data-sources/prefix_list#read DataAwsPrefixList#read}.
 
 ---
 
