@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appsyncSourceApiAssociation.AppsyncSourceApiAssociation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appsyncsourceapiassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/appsyncsourceapiassociation"
 
 appsyncsourceapiassociation.NewAppsyncSourceApiAssociation(scope Construct, id *string, config AppsyncSourceApiAssociationConfig) AppsyncSourceApiAssociation
 ```
@@ -453,7 +453,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.appsyncSourceApiAssociation.AppsyncSourceApiAssociation.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appsyncsourceapiassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/appsyncsourceapiassociation"
 
 appsyncsourceapiassociation.AppsyncSourceApiAssociation_IsConstruct(x interface{}) *bool
 ```
@@ -485,7 +485,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.appsyncSourceApiAssociation.AppsyncSourceApiAssociation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appsyncsourceapiassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/appsyncsourceapiassociation"
 
 appsyncsourceapiassociation.AppsyncSourceApiAssociation_IsTerraformElement(x interface{}) *bool
 ```
@@ -499,7 +499,7 @@ appsyncsourceapiassociation.AppsyncSourceApiAssociation_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.appsyncSourceApiAssociation.AppsyncSourceApiAssociation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appsyncsourceapiassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/appsyncsourceapiassociation"
 
 appsyncsourceapiassociation.AppsyncSourceApiAssociation_IsTerraformResource(x interface{}) *bool
 ```
@@ -513,7 +513,7 @@ appsyncsourceapiassociation.AppsyncSourceApiAssociation_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.appsyncSourceApiAssociation.AppsyncSourceApiAssociation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appsyncsourceapiassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/appsyncsourceapiassociation"
 
 appsyncsourceapiassociation.AppsyncSourceApiAssociation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -929,7 +929,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appsyncSourceApiAssociation.AppsyncSourceApiAssociationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appsyncsourceapiassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/appsyncsourceapiassociation"
 
 &appsyncsourceapiassociation.AppsyncSourceApiAssociationConfig {
 	Connection: interface{},
@@ -945,7 +945,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/appsyncsourceapiassociation"
 	SourceApiArn: *string,
 	SourceApiAssociationConfig: interface{},
 	SourceApiId: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.appsyncSourceApiAssociation.AppsyncSourceApiAssociationTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v19.appsyncSourceApiAssociation.AppsyncSourceApiAssociationTimeouts,
 }
 ```
 
@@ -1131,7 +1131,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appsyncSourceApiAssociation.AppsyncSourceApiAssociationSourceApiAssociationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appsyncsourceapiassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/appsyncsourceapiassociation"
 
 &appsyncsourceapiassociation.AppsyncSourceApiAssociationSourceApiAssociationConfig {
 	MergeType: *string,
@@ -1163,7 +1163,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appsyncSourceApiAssociation.AppsyncSourceApiAssociationTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appsyncsourceapiassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/appsyncsourceapiassociation"
 
 &appsyncsourceapiassociation.AppsyncSourceApiAssociationTimeouts {
 	Create: *string,
@@ -1231,7 +1231,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appsyncSourceApiAssociation.AppsyncSourceApiAssociationSourceApiAssociationConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appsyncsourceapiassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/appsyncsourceapiassociation"
 
 appsyncsourceapiassociation.NewAppsyncSourceApiAssociationSourceApiAssociationConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppsyncSourceApiAssociationSourceApiAssociationConfigList
 ```
@@ -1391,7 +1391,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appsyncSourceApiAssociation.AppsyncSourceApiAssociationSourceApiAssociationConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appsyncsourceapiassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/appsyncsourceapiassociation"
 
 appsyncsourceapiassociation.NewAppsyncSourceApiAssociationSourceApiAssociationConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppsyncSourceApiAssociationSourceApiAssociationConfigOutputReference
 ```
@@ -1687,7 +1687,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appsyncSourceApiAssociation.AppsyncSourceApiAssociationTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appsyncsourceapiassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/appsyncsourceapiassociation"
 
 appsyncsourceapiassociation.NewAppsyncSourceApiAssociationTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppsyncSourceApiAssociationTimeoutsOutputReference
 ```

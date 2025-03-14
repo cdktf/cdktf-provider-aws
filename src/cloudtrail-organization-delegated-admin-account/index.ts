@@ -1,3 +1,8 @@
+/**
+ * Copyright (c) HashiCorp, Inc.
+ * SPDX-License-Identifier: MPL-2.0
+ */
+
 // https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/cloudtrail_organization_delegated_admin_account
 // generated from terraform resource schema
 
