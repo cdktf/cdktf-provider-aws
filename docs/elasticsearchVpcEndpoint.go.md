@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.elasticsearchVpcEndpoint.ElasticsearchVpcEndpoint.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/elasticsearchvpcendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/elasticsearchvpcendpoint"
 
 elasticsearchvpcendpoint.NewElasticsearchVpcEndpoint(scope Construct, id *string, config ElasticsearchVpcEndpointConfig) ElasticsearchVpcEndpoint
 ```
@@ -418,7 +418,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.elasticsearchVpcEndpoint.ElasticsearchVpcEndpoint.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/elasticsearchvpcendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/elasticsearchvpcendpoint"
 
 elasticsearchvpcendpoint.ElasticsearchVpcEndpoint_IsConstruct(x interface{}) *bool
 ```
@@ -450,7 +450,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.elasticsearchVpcEndpoint.ElasticsearchVpcEndpoint.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/elasticsearchvpcendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/elasticsearchvpcendpoint"
 
 elasticsearchvpcendpoint.ElasticsearchVpcEndpoint_IsTerraformElement(x interface{}) *bool
 ```
@@ -464,7 +464,7 @@ elasticsearchvpcendpoint.ElasticsearchVpcEndpoint_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.elasticsearchVpcEndpoint.ElasticsearchVpcEndpoint.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/elasticsearchvpcendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/elasticsearchvpcendpoint"
 
 elasticsearchvpcendpoint.ElasticsearchVpcEndpoint_IsTerraformResource(x interface{}) *bool
 ```
@@ -478,7 +478,7 @@ elasticsearchvpcendpoint.ElasticsearchVpcEndpoint_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.elasticsearchVpcEndpoint.ElasticsearchVpcEndpoint.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/elasticsearchvpcendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/elasticsearchvpcendpoint"
 
 elasticsearchvpcendpoint.ElasticsearchVpcEndpoint_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -806,7 +806,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.elasticsearchVpcEndpoint.ElasticsearchVpcEndpointConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/elasticsearchvpcendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/elasticsearchvpcendpoint"
 
 &elasticsearchvpcendpoint.ElasticsearchVpcEndpointConfig {
 	Connection: interface{},
@@ -817,9 +817,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/elasticsearchvpcendpoint"
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	DomainArn: *string,
-	VpcOptions: github.com/cdktf/cdktf-provider-aws-go/aws.elasticsearchVpcEndpoint.ElasticsearchVpcEndpointVpcOptions,
+	VpcOptions: github.com/cdktf/cdktf-provider-aws-go/aws/v19.elasticsearchVpcEndpoint.ElasticsearchVpcEndpointVpcOptions,
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.elasticsearchVpcEndpoint.ElasticsearchVpcEndpointTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v19.elasticsearchVpcEndpoint.ElasticsearchVpcEndpointTimeouts,
 }
 ```
 
@@ -971,7 +971,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.elasticsearchVpcEndpoint.ElasticsearchVpcEndpointTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/elasticsearchvpcendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/elasticsearchvpcendpoint"
 
 &elasticsearchvpcendpoint.ElasticsearchVpcEndpointTimeouts {
 	Create: *string,
@@ -1031,7 +1031,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.elasticsearchVpcEndpoint.ElasticsearchVpcEndpointVpcOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/elasticsearchvpcendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/elasticsearchvpcendpoint"
 
 &elasticsearchvpcendpoint.ElasticsearchVpcEndpointVpcOptions {
 	SubnetIds: *[]*string,
@@ -1079,7 +1079,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.elasticsearchVpcEndpoint.ElasticsearchVpcEndpointTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/elasticsearchvpcendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/elasticsearchvpcendpoint"
 
 elasticsearchvpcendpoint.NewElasticsearchVpcEndpointTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ElasticsearchVpcEndpointTimeoutsOutputReference
 ```
@@ -1415,7 +1415,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.elasticsearchVpcEndpoint.ElasticsearchVpcEndpointVpcOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/elasticsearchvpcendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/elasticsearchvpcendpoint"
 
 elasticsearchvpcendpoint.NewElasticsearchVpcEndpointVpcOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ElasticsearchVpcEndpointVpcOptionsOutputReference
 ```
