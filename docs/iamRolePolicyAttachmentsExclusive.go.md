@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iamRolePolicyAttachmentsExclusive.IamRolePolicyAttachmentsExclusive.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iamrolepolicyattachmentsexclusive"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iamrolepolicyattachmentsexclusive"
 
 iamrolepolicyattachmentsexclusive.NewIamRolePolicyAttachmentsExclusive(scope Construct, id *string, config IamRolePolicyAttachmentsExclusiveConfig) IamRolePolicyAttachmentsExclusive
 ```
@@ -378,7 +378,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.iamRolePolicyAttachmentsExclusive.IamRolePolicyAttachmentsExclusive.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iamrolepolicyattachmentsexclusive"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iamrolepolicyattachmentsexclusive"
 
 iamrolepolicyattachmentsexclusive.IamRolePolicyAttachmentsExclusive_IsConstruct(x interface{}) *bool
 ```
@@ -410,7 +410,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.iamRolePolicyAttachmentsExclusive.IamRolePolicyAttachmentsExclusive.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iamrolepolicyattachmentsexclusive"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iamrolepolicyattachmentsexclusive"
 
 iamrolepolicyattachmentsexclusive.IamRolePolicyAttachmentsExclusive_IsTerraformElement(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ iamrolepolicyattachmentsexclusive.IamRolePolicyAttachmentsExclusive_IsTerraformE
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.iamRolePolicyAttachmentsExclusive.IamRolePolicyAttachmentsExclusive.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iamrolepolicyattachmentsexclusive"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iamrolepolicyattachmentsexclusive"
 
 iamrolepolicyattachmentsexclusive.IamRolePolicyAttachmentsExclusive_IsTerraformResource(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ iamrolepolicyattachmentsexclusive.IamRolePolicyAttachmentsExclusive_IsTerraformR
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.iamRolePolicyAttachmentsExclusive.IamRolePolicyAttachmentsExclusive.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iamrolepolicyattachmentsexclusive"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iamrolepolicyattachmentsexclusive"
 
 iamrolepolicyattachmentsexclusive.IamRolePolicyAttachmentsExclusive_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -711,7 +711,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.iamRolePolicyAttachmentsExclusive.IamRolePolicyAttachmentsExclusiveConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iamrolepolicyattachmentsexclusive"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iamrolepolicyattachmentsexclusive"
 
 &iamrolepolicyattachmentsexclusive.IamRolePolicyAttachmentsExclusiveConfig {
 	Connection: interface{},

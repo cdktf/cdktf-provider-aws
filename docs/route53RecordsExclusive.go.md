@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.route53RecordsExclusive.Route53RecordsExclusive.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/route53recordsexclusive"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/route53recordsexclusive"
 
 route53recordsexclusive.NewRoute53RecordsExclusive(scope Construct, id *string, config Route53RecordsExclusiveConfig) Route53RecordsExclusive
 ```
@@ -418,7 +418,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.route53RecordsExclusive.Route53RecordsExclusive.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/route53recordsexclusive"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/route53recordsexclusive"
 
 route53recordsexclusive.Route53RecordsExclusive_IsConstruct(x interface{}) *bool
 ```
@@ -450,7 +450,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.route53RecordsExclusive.Route53RecordsExclusive.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/route53recordsexclusive"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/route53recordsexclusive"
 
 route53recordsexclusive.Route53RecordsExclusive_IsTerraformElement(x interface{}) *bool
 ```
@@ -464,7 +464,7 @@ route53recordsexclusive.Route53RecordsExclusive_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.route53RecordsExclusive.Route53RecordsExclusive.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/route53recordsexclusive"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/route53recordsexclusive"
 
 route53recordsexclusive.Route53RecordsExclusive_IsTerraformResource(x interface{}) *bool
 ```
@@ -478,7 +478,7 @@ route53recordsexclusive.Route53RecordsExclusive_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.route53RecordsExclusive.Route53RecordsExclusive.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/route53recordsexclusive"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/route53recordsexclusive"
 
 route53recordsexclusive.Route53RecordsExclusive_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -773,7 +773,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.route53RecordsExclusive.Route53RecordsExclusiveConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/route53recordsexclusive"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/route53recordsexclusive"
 
 &route53recordsexclusive.Route53RecordsExclusiveConfig {
 	Connection: interface{},
@@ -785,7 +785,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/route53recordsexclusive"
 	Provisioners: *[]interface{},
 	ZoneId: *string,
 	ResourceRecordSet: interface{},
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v19.route53RecordsExclusive.Route53RecordsExclusiveTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.route53RecordsExclusive.Route53RecordsExclusiveTimeouts,
 }
 ```
 
@@ -921,7 +921,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.route53RecordsExclusive.Route53RecordsExclusiveResourceRecordSet.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/route53recordsexclusive"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/route53recordsexclusive"
 
 &route53recordsexclusive.Route53RecordsExclusiveResourceRecordSet {
 	Name: *string,
@@ -1159,7 +1159,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.route53RecordsExclusive.Route53RecordsExclusiveResourceRecordSetAliasTarget.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/route53recordsexclusive"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/route53recordsexclusive"
 
 &route53recordsexclusive.Route53RecordsExclusiveResourceRecordSetAliasTarget {
 	DnsName: *string,
@@ -1219,7 +1219,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.route53RecordsExclusive.Route53RecordsExclusiveResourceRecordSetCidrRoutingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/route53recordsexclusive"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/route53recordsexclusive"
 
 &route53recordsexclusive.Route53RecordsExclusiveResourceRecordSetCidrRoutingConfig {
 	CollectionId: *string,
@@ -1265,7 +1265,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.route53RecordsExclusive.Route53RecordsExclusiveResourceRecordSetGeolocation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/route53recordsexclusive"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/route53recordsexclusive"
 
 &route53recordsexclusive.Route53RecordsExclusiveResourceRecordSetGeolocation {
 	ContinentCode: *string,
@@ -1325,7 +1325,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.route53RecordsExclusive.Route53RecordsExclusiveResourceRecordSetGeoproximityLocation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/route53recordsexclusive"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/route53recordsexclusive"
 
 &route53recordsexclusive.Route53RecordsExclusiveResourceRecordSetGeoproximityLocation {
 	AwsRegion: *string,
@@ -1401,7 +1401,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.route53RecordsExclusive.Route53RecordsExclusiveResourceRecordSetGeoproximityLocationCoordinates.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/route53recordsexclusive"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/route53recordsexclusive"
 
 &route53recordsexclusive.Route53RecordsExclusiveResourceRecordSetGeoproximityLocationCoordinates {
 	Latitude: *string,
@@ -1447,7 +1447,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.route53RecordsExclusive.Route53RecordsExclusiveResourceRecordSetResourceRecords.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/route53recordsexclusive"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/route53recordsexclusive"
 
 &route53recordsexclusive.Route53RecordsExclusiveResourceRecordSetResourceRecords {
 	Value: *string,
@@ -1479,7 +1479,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.route53RecordsExclusive.Route53RecordsExclusiveTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/route53recordsexclusive"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/route53recordsexclusive"
 
 &route53recordsexclusive.Route53RecordsExclusiveTimeouts {
 	Create: *string,
@@ -1531,7 +1531,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.route53RecordsExclusive.Route53RecordsExclusiveResourceRecordSetAliasTargetList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/route53recordsexclusive"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/route53recordsexclusive"
 
 route53recordsexclusive.NewRoute53RecordsExclusiveResourceRecordSetAliasTargetList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Route53RecordsExclusiveResourceRecordSetAliasTargetList
 ```
@@ -1691,7 +1691,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.route53RecordsExclusive.Route53RecordsExclusiveResourceRecordSetAliasTargetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/route53recordsexclusive"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/route53recordsexclusive"
 
 route53recordsexclusive.NewRoute53RecordsExclusiveResourceRecordSetAliasTargetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Route53RecordsExclusiveResourceRecordSetAliasTargetOutputReference
 ```
@@ -2024,7 +2024,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.route53RecordsExclusive.Route53RecordsExclusiveResourceRecordSetCidrRoutingConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/route53recordsexclusive"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/route53recordsexclusive"
 
 route53recordsexclusive.NewRoute53RecordsExclusiveResourceRecordSetCidrRoutingConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Route53RecordsExclusiveResourceRecordSetCidrRoutingConfigList
 ```
@@ -2184,7 +2184,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.route53RecordsExclusive.Route53RecordsExclusiveResourceRecordSetCidrRoutingConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/route53recordsexclusive"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/route53recordsexclusive"
 
 route53recordsexclusive.NewRoute53RecordsExclusiveResourceRecordSetCidrRoutingConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Route53RecordsExclusiveResourceRecordSetCidrRoutingConfigOutputReference
 ```
@@ -2495,7 +2495,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.route53RecordsExclusive.Route53RecordsExclusiveResourceRecordSetGeolocationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/route53recordsexclusive"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/route53recordsexclusive"
 
 route53recordsexclusive.NewRoute53RecordsExclusiveResourceRecordSetGeolocationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Route53RecordsExclusiveResourceRecordSetGeolocationList
 ```
@@ -2655,7 +2655,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.route53RecordsExclusive.Route53RecordsExclusiveResourceRecordSetGeolocationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/route53recordsexclusive"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/route53recordsexclusive"
 
 route53recordsexclusive.NewRoute53RecordsExclusiveResourceRecordSetGeolocationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Route53RecordsExclusiveResourceRecordSetGeolocationOutputReference
 ```
@@ -3009,7 +3009,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.route53RecordsExclusive.Route53RecordsExclusiveResourceRecordSetGeoproximityLocationCoordinatesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/route53recordsexclusive"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/route53recordsexclusive"
 
 route53recordsexclusive.NewRoute53RecordsExclusiveResourceRecordSetGeoproximityLocationCoordinatesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Route53RecordsExclusiveResourceRecordSetGeoproximityLocationCoordinatesList
 ```
@@ -3169,7 +3169,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.route53RecordsExclusive.Route53RecordsExclusiveResourceRecordSetGeoproximityLocationCoordinatesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/route53recordsexclusive"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/route53recordsexclusive"
 
 route53recordsexclusive.NewRoute53RecordsExclusiveResourceRecordSetGeoproximityLocationCoordinatesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Route53RecordsExclusiveResourceRecordSetGeoproximityLocationCoordinatesOutputReference
 ```
@@ -3480,7 +3480,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.route53RecordsExclusive.Route53RecordsExclusiveResourceRecordSetGeoproximityLocationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/route53recordsexclusive"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/route53recordsexclusive"
 
 route53recordsexclusive.NewRoute53RecordsExclusiveResourceRecordSetGeoproximityLocationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Route53RecordsExclusiveResourceRecordSetGeoproximityLocationList
 ```
@@ -3640,7 +3640,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.route53RecordsExclusive.Route53RecordsExclusiveResourceRecordSetGeoproximityLocationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/route53recordsexclusive"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/route53recordsexclusive"
 
 route53recordsexclusive.NewRoute53RecordsExclusiveResourceRecordSetGeoproximityLocationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Route53RecordsExclusiveResourceRecordSetGeoproximityLocationOutputReference
 ```
@@ -4036,7 +4036,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.route53RecordsExclusive.Route53RecordsExclusiveResourceRecordSetList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/route53recordsexclusive"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/route53recordsexclusive"
 
 route53recordsexclusive.NewRoute53RecordsExclusiveResourceRecordSetList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Route53RecordsExclusiveResourceRecordSetList
 ```
@@ -4196,7 +4196,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.route53RecordsExclusive.Route53RecordsExclusiveResourceRecordSetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/route53recordsexclusive"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/route53recordsexclusive"
 
 route53recordsexclusive.NewRoute53RecordsExclusiveResourceRecordSetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Route53RecordsExclusiveResourceRecordSetOutputReference
 ```
@@ -4956,7 +4956,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.route53RecordsExclusive.Route53RecordsExclusiveResourceRecordSetResourceRecordsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/route53recordsexclusive"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/route53recordsexclusive"
 
 route53recordsexclusive.NewRoute53RecordsExclusiveResourceRecordSetResourceRecordsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Route53RecordsExclusiveResourceRecordSetResourceRecordsList
 ```
@@ -5116,7 +5116,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.route53RecordsExclusive.Route53RecordsExclusiveResourceRecordSetResourceRecordsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/route53recordsexclusive"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/route53recordsexclusive"
 
 route53recordsexclusive.NewRoute53RecordsExclusiveResourceRecordSetResourceRecordsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Route53RecordsExclusiveResourceRecordSetResourceRecordsOutputReference
 ```
@@ -5405,7 +5405,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.route53RecordsExclusive.Route53RecordsExclusiveTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/route53recordsexclusive"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/route53recordsexclusive"
 
 route53recordsexclusive.NewRoute53RecordsExclusiveTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Route53RecordsExclusiveTimeoutsOutputReference
 ```

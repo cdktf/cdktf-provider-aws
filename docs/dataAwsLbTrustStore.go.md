@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsLbTrustStore.DataAwsLbTrustStore.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawslbtruststore"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawslbtruststore"
 
 dataawslbtruststore.NewDataAwsLbTrustStore(scope Construct, id *string, config DataAwsLbTrustStoreConfig) DataAwsLbTrustStore
 ```
@@ -297,7 +297,7 @@ func ResetName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsLbTrustStore.DataAwsLbTrustStore.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawslbtruststore"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawslbtruststore"
 
 dataawslbtruststore.DataAwsLbTrustStore_IsConstruct(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsLbTrustStore.DataAwsLbTrustStore.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawslbtruststore"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawslbtruststore"
 
 dataawslbtruststore.DataAwsLbTrustStore_IsTerraformElement(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ dataawslbtruststore.DataAwsLbTrustStore_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsLbTrustStore.DataAwsLbTrustStore.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawslbtruststore"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawslbtruststore"
 
 dataawslbtruststore.DataAwsLbTrustStore_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ dataawslbtruststore.DataAwsLbTrustStore_IsTerraformDataSource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsLbTrustStore.DataAwsLbTrustStore.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawslbtruststore"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawslbtruststore"
 
 dataawslbtruststore.DataAwsLbTrustStore_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -630,7 +630,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsLbTrustStore.DataAwsLbTrustStoreConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawslbtruststore"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawslbtruststore"
 
 &dataawslbtruststore.DataAwsLbTrustStoreConfig {
 	Connection: interface{},
