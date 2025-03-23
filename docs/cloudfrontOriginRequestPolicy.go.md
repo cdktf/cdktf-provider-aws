@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudfrontOriginRequestPolicy.CloudfrontOriginRequestPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontoriginrequestpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cloudfrontoriginrequestpolicy"
 
 cloudfrontoriginrequestpolicy.NewCloudfrontOriginRequestPolicy(scope Construct, id *string, config CloudfrontOriginRequestPolicyConfig) CloudfrontOriginRequestPolicy
 ```
@@ -431,7 +431,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.cloudfrontOriginRequestPolicy.CloudfrontOriginRequestPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontoriginrequestpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cloudfrontoriginrequestpolicy"
 
 cloudfrontoriginrequestpolicy.CloudfrontOriginRequestPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -463,7 +463,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.cloudfrontOriginRequestPolicy.CloudfrontOriginRequestPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontoriginrequestpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cloudfrontoriginrequestpolicy"
 
 cloudfrontoriginrequestpolicy.CloudfrontOriginRequestPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -477,7 +477,7 @@ cloudfrontoriginrequestpolicy.CloudfrontOriginRequestPolicy_IsTerraformElement(x
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.cloudfrontOriginRequestPolicy.CloudfrontOriginRequestPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontoriginrequestpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cloudfrontoriginrequestpolicy"
 
 cloudfrontoriginrequestpolicy.CloudfrontOriginRequestPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -491,7 +491,7 @@ cloudfrontoriginrequestpolicy.CloudfrontOriginRequestPolicy_IsTerraformResource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.cloudfrontOriginRequestPolicy.CloudfrontOriginRequestPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontoriginrequestpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cloudfrontoriginrequestpolicy"
 
 cloudfrontoriginrequestpolicy.CloudfrontOriginRequestPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -874,7 +874,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudfrontOriginRequestPolicy.CloudfrontOriginRequestPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontoriginrequestpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cloudfrontoriginrequestpolicy"
 
 &cloudfrontoriginrequestpolicy.CloudfrontOriginRequestPolicyConfig {
 	Connection: interface{},
@@ -884,10 +884,10 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontoriginrequestpolicy
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	CookiesConfig: github.com/cdktf/cdktf-provider-aws-go/aws.cloudfrontOriginRequestPolicy.CloudfrontOriginRequestPolicyCookiesConfig,
-	HeadersConfig: github.com/cdktf/cdktf-provider-aws-go/aws.cloudfrontOriginRequestPolicy.CloudfrontOriginRequestPolicyHeadersConfig,
+	CookiesConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v19.cloudfrontOriginRequestPolicy.CloudfrontOriginRequestPolicyCookiesConfig,
+	HeadersConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v19.cloudfrontOriginRequestPolicy.CloudfrontOriginRequestPolicyHeadersConfig,
 	Name: *string,
-	QueryStringsConfig: github.com/cdktf/cdktf-provider-aws-go/aws.cloudfrontOriginRequestPolicy.CloudfrontOriginRequestPolicyQueryStringsConfig,
+	QueryStringsConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v19.cloudfrontOriginRequestPolicy.CloudfrontOriginRequestPolicyQueryStringsConfig,
 	Comment: *string,
 	Id: *string,
 }
@@ -1069,11 +1069,11 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudfrontOriginRequestPolicy.CloudfrontOriginRequestPolicyCookiesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontoriginrequestpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cloudfrontoriginrequestpolicy"
 
 &cloudfrontoriginrequestpolicy.CloudfrontOriginRequestPolicyCookiesConfig {
 	CookieBehavior: *string,
-	Cookies: github.com/cdktf/cdktf-provider-aws-go/aws.cloudfrontOriginRequestPolicy.CloudfrontOriginRequestPolicyCookiesConfigCookies,
+	Cookies: github.com/cdktf/cdktf-provider-aws-go/aws/v19.cloudfrontOriginRequestPolicy.CloudfrontOriginRequestPolicyCookiesConfigCookies,
 }
 ```
 
@@ -1117,7 +1117,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudfrontOriginRequestPolicy.CloudfrontOriginRequestPolicyCookiesConfigCookies.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontoriginrequestpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cloudfrontoriginrequestpolicy"
 
 &cloudfrontoriginrequestpolicy.CloudfrontOriginRequestPolicyCookiesConfigCookies {
 	Items: *[]*string,
@@ -1149,11 +1149,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudfrontOriginRequestPolicy.CloudfrontOriginRequestPolicyHeadersConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontoriginrequestpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cloudfrontoriginrequestpolicy"
 
 &cloudfrontoriginrequestpolicy.CloudfrontOriginRequestPolicyHeadersConfig {
 	HeaderBehavior: *string,
-	Headers: github.com/cdktf/cdktf-provider-aws-go/aws.cloudfrontOriginRequestPolicy.CloudfrontOriginRequestPolicyHeadersConfigHeaders,
+	Headers: github.com/cdktf/cdktf-provider-aws-go/aws/v19.cloudfrontOriginRequestPolicy.CloudfrontOriginRequestPolicyHeadersConfigHeaders,
 }
 ```
 
@@ -1197,7 +1197,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudfrontOriginRequestPolicy.CloudfrontOriginRequestPolicyHeadersConfigHeaders.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontoriginrequestpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cloudfrontoriginrequestpolicy"
 
 &cloudfrontoriginrequestpolicy.CloudfrontOriginRequestPolicyHeadersConfigHeaders {
 	Items: *[]*string,
@@ -1229,11 +1229,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudfrontOriginRequestPolicy.CloudfrontOriginRequestPolicyQueryStringsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontoriginrequestpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cloudfrontoriginrequestpolicy"
 
 &cloudfrontoriginrequestpolicy.CloudfrontOriginRequestPolicyQueryStringsConfig {
 	QueryStringBehavior: *string,
-	QueryStrings: github.com/cdktf/cdktf-provider-aws-go/aws.cloudfrontOriginRequestPolicy.CloudfrontOriginRequestPolicyQueryStringsConfigQueryStrings,
+	QueryStrings: github.com/cdktf/cdktf-provider-aws-go/aws/v19.cloudfrontOriginRequestPolicy.CloudfrontOriginRequestPolicyQueryStringsConfigQueryStrings,
 }
 ```
 
@@ -1277,7 +1277,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudfrontOriginRequestPolicy.CloudfrontOriginRequestPolicyQueryStringsConfigQueryStrings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontoriginrequestpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cloudfrontoriginrequestpolicy"
 
 &cloudfrontoriginrequestpolicy.CloudfrontOriginRequestPolicyQueryStringsConfigQueryStrings {
 	Items: *[]*string,
@@ -1311,7 +1311,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudfrontOriginRequestPolicy.CloudfrontOriginRequestPolicyCookiesConfigCookiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontoriginrequestpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cloudfrontoriginrequestpolicy"
 
 cloudfrontoriginrequestpolicy.NewCloudfrontOriginRequestPolicyCookiesConfigCookiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudfrontOriginRequestPolicyCookiesConfigCookiesOutputReference
 ```
@@ -1589,7 +1589,7 @@ func InternalValue() CloudfrontOriginRequestPolicyCookiesConfigCookies
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudfrontOriginRequestPolicy.CloudfrontOriginRequestPolicyCookiesConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontoriginrequestpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cloudfrontoriginrequestpolicy"
 
 cloudfrontoriginrequestpolicy.NewCloudfrontOriginRequestPolicyCookiesConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudfrontOriginRequestPolicyCookiesConfigOutputReference
 ```
@@ -1902,7 +1902,7 @@ func InternalValue() CloudfrontOriginRequestPolicyCookiesConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudfrontOriginRequestPolicy.CloudfrontOriginRequestPolicyHeadersConfigHeadersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontoriginrequestpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cloudfrontoriginrequestpolicy"
 
 cloudfrontoriginrequestpolicy.NewCloudfrontOriginRequestPolicyHeadersConfigHeadersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudfrontOriginRequestPolicyHeadersConfigHeadersOutputReference
 ```
@@ -2180,7 +2180,7 @@ func InternalValue() CloudfrontOriginRequestPolicyHeadersConfigHeaders
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudfrontOriginRequestPolicy.CloudfrontOriginRequestPolicyHeadersConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontoriginrequestpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cloudfrontoriginrequestpolicy"
 
 cloudfrontoriginrequestpolicy.NewCloudfrontOriginRequestPolicyHeadersConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudfrontOriginRequestPolicyHeadersConfigOutputReference
 ```
@@ -2500,7 +2500,7 @@ func InternalValue() CloudfrontOriginRequestPolicyHeadersConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudfrontOriginRequestPolicy.CloudfrontOriginRequestPolicyQueryStringsConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontoriginrequestpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cloudfrontoriginrequestpolicy"
 
 cloudfrontoriginrequestpolicy.NewCloudfrontOriginRequestPolicyQueryStringsConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudfrontOriginRequestPolicyQueryStringsConfigOutputReference
 ```
@@ -2813,7 +2813,7 @@ func InternalValue() CloudfrontOriginRequestPolicyQueryStringsConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudfrontOriginRequestPolicy.CloudfrontOriginRequestPolicyQueryStringsConfigQueryStringsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontoriginrequestpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cloudfrontoriginrequestpolicy"
 
 cloudfrontoriginrequestpolicy.NewCloudfrontOriginRequestPolicyQueryStringsConfigQueryStringsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudfrontOriginRequestPolicyQueryStringsConfigQueryStringsOutputReference
 ```

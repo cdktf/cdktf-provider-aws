@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafRegexPatternSet.WafRegexPatternSet.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/wafregexpatternset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafregexpatternset"
 
 wafregexpatternset.NewWafRegexPatternSet(scope Construct, id *string, config WafRegexPatternSetConfig) WafRegexPatternSet
 ```
@@ -392,7 +392,7 @@ func ResetRegexPatternStrings()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.wafRegexPatternSet.WafRegexPatternSet.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/wafregexpatternset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafregexpatternset"
 
 wafregexpatternset.WafRegexPatternSet_IsConstruct(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.wafRegexPatternSet.WafRegexPatternSet.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/wafregexpatternset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafregexpatternset"
 
 wafregexpatternset.WafRegexPatternSet_IsTerraformElement(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ wafregexpatternset.WafRegexPatternSet_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.wafRegexPatternSet.WafRegexPatternSet.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/wafregexpatternset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafregexpatternset"
 
 wafregexpatternset.WafRegexPatternSet_IsTerraformResource(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ wafregexpatternset.WafRegexPatternSet_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.wafRegexPatternSet.WafRegexPatternSet.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/wafregexpatternset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafregexpatternset"
 
 wafregexpatternset.WafRegexPatternSet_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -758,7 +758,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.wafRegexPatternSet.WafRegexPatternSetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/wafregexpatternset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafregexpatternset"
 
 &wafregexpatternset.WafRegexPatternSetConfig {
 	Connection: interface{},
