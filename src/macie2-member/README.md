@@ -1,3 +1,3 @@
 # `aws_macie2_member`
 
-Refer to the Terraform Registry for docs: [`aws_macie2_member`](https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/macie2_member).
+Refer to the Terraform Registry for docs: [`aws_macie2_member`](https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/macie2_member).

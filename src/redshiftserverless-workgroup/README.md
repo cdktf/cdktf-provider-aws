@@ -1,3 +1,3 @@
 # `aws_redshiftserverless_workgroup`
 
-Refer to the Terraform Registry for docs: [`aws_redshiftserverless_workgroup`](https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/redshiftserverless_workgroup).
+Refer to the Terraform Registry for docs: [`aws_redshiftserverless_workgroup`](https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/redshiftserverless_workgroup).

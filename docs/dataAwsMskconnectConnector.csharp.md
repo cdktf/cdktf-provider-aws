@@ -4,7 +4,7 @@
 
 ### DataAwsMskconnectConnector <a name="DataAwsMskconnectConnector" id="@cdktf/provider-aws.dataAwsMskconnectConnector.DataAwsMskconnectConnector"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/data-sources/mskconnect_connector aws_mskconnect_connector}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/data-sources/mskconnect_connector aws_mskconnect_connector}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsMskconnectConnector.DataAwsMskconnectConnector.Initializer"></a>
 
@@ -379,7 +379,7 @@ The construct id used in the generated config for the DataAwsMskconnectConnector
 
 The id of the existing DataAwsMskconnectConnector that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/data-sources/mskconnect_connector#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/data-sources/mskconnect_connector#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -683,9 +683,9 @@ new DataAwsMskconnectConnectorConfig {
 | <code><a href="#@cdktf/provider-aws.dataAwsMskconnectConnector.DataAwsMskconnectConnectorConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsMskconnectConnector.DataAwsMskconnectConnectorConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsMskconnectConnector.DataAwsMskconnectConnectorConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsMskconnectConnector.DataAwsMskconnectConnectorConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/data-sources/mskconnect_connector#name DataAwsMskconnectConnector#name}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsMskconnectConnector.DataAwsMskconnectConnectorConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/data-sources/mskconnect_connector#id DataAwsMskconnectConnector#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsMskconnectConnector.DataAwsMskconnectConnectorConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/data-sources/mskconnect_connector#tags DataAwsMskconnectConnector#tags}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsMskconnectConnector.DataAwsMskconnectConnectorConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/data-sources/mskconnect_connector#name DataAwsMskconnectConnector#name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsMskconnectConnector.DataAwsMskconnectConnectorConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/data-sources/mskconnect_connector#id DataAwsMskconnectConnector#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsMskconnectConnector.DataAwsMskconnectConnectorConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/data-sources/mskconnect_connector#tags DataAwsMskconnectConnector#tags}. |
 
 ---
 
@@ -767,7 +767,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/data-sources/mskconnect_connector#name DataAwsMskconnectConnector#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/data-sources/mskconnect_connector#name DataAwsMskconnectConnector#name}.
 
 ---
 
@@ -779,7 +779,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/data-sources/mskconnect_connector#id DataAwsMskconnectConnector#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/data-sources/mskconnect_connector#id DataAwsMskconnectConnector#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -794,7 +794,7 @@ public System.Collections.Generic.IDictionary<string, string> Tags { get; set; }
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/data-sources/mskconnect_connector#tags DataAwsMskconnectConnector#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/data-sources/mskconnect_connector#tags DataAwsMskconnectConnector#tags}.
 
 ---
 

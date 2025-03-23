@@ -4,12 +4,12 @@
 
 ### Macie2OrganizationConfiguration <a name="Macie2OrganizationConfiguration" id="@cdktf/provider-aws.macie2OrganizationConfiguration.Macie2OrganizationConfiguration"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/macie2_organization_configuration aws_macie2_organization_configuration}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/macie2_organization_configuration aws_macie2_organization_configuration}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.macie2OrganizationConfiguration.Macie2OrganizationConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/macie2organizationconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/macie2organizationconfiguration"
 
 macie2organizationconfiguration.NewMacie2OrganizationConfiguration(scope Construct, id *string, config Macie2OrganizationConfigurationConfig) Macie2OrganizationConfiguration
 ```
@@ -378,7 +378,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.macie2OrganizationConfiguration.Macie2OrganizationConfiguration.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/macie2organizationconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/macie2organizationconfiguration"
 
 macie2organizationconfiguration.Macie2OrganizationConfiguration_IsConstruct(x interface{}) *bool
 ```
@@ -410,7 +410,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.macie2OrganizationConfiguration.Macie2OrganizationConfiguration.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/macie2organizationconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/macie2organizationconfiguration"
 
 macie2organizationconfiguration.Macie2OrganizationConfiguration_IsTerraformElement(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ macie2organizationconfiguration.Macie2OrganizationConfiguration_IsTerraformEleme
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.macie2OrganizationConfiguration.Macie2OrganizationConfiguration.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/macie2organizationconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/macie2organizationconfiguration"
 
 macie2organizationconfiguration.Macie2OrganizationConfiguration_IsTerraformResource(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ macie2organizationconfiguration.Macie2OrganizationConfiguration_IsTerraformResou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.macie2OrganizationConfiguration.Macie2OrganizationConfiguration.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/macie2organizationconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/macie2organizationconfiguration"
 
 macie2organizationconfiguration.Macie2OrganizationConfiguration_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -467,7 +467,7 @@ The construct id used in the generated config for the Macie2OrganizationConfigur
 
 The id of the existing Macie2OrganizationConfiguration that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/macie2_organization_configuration#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/macie2_organization_configuration#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -689,7 +689,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.macie2OrganizationConfiguration.Macie2OrganizationConfigurationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/macie2organizationconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/macie2organizationconfiguration"
 
 &macie2organizationconfiguration.Macie2OrganizationConfigurationConfig {
 	Connection: interface{},
@@ -798,7 +798,7 @@ AutoEnable interface{}
 
 Whether to enable Amazon Macie automatically for accounts that are added to the organization in AWS Organizations.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/macie2_organization_configuration#auto_enable Macie2OrganizationConfiguration#auto_enable}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/macie2_organization_configuration#auto_enable Macie2OrganizationConfiguration#auto_enable}
 
 ---
 
