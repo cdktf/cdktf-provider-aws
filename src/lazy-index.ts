@@ -123,6 +123,7 @@ Object.defineProperty(exports, 'appsyncGraphqlApi', { get: function () { return 
 Object.defineProperty(exports, 'appsyncResolver', { get: function () { return require('./appsync-resolver'); } });
 Object.defineProperty(exports, 'appsyncSourceApiAssociation', { get: function () { return require('./appsync-source-api-association'); } });
 Object.defineProperty(exports, 'appsyncType', { get: function () { return require('./appsync-type'); } });
+Object.defineProperty(exports, 'athenaCapacityReservation', { get: function () { return require('./athena-capacity-reservation'); } });
 Object.defineProperty(exports, 'athenaDataCatalog', { get: function () { return require('./athena-data-catalog'); } });
 Object.defineProperty(exports, 'athenaDatabase', { get: function () { return require('./athena-database'); } });
 Object.defineProperty(exports, 'athenaNamedQuery', { get: function () { return require('./athena-named-query'); } });
@@ -1509,6 +1510,7 @@ Object.defineProperty(exports, 'dataAwsAlbTargetGroup', { get: function () { ret
 Object.defineProperty(exports, 'dataAwsAmi', { get: function () { return require('./data-aws-ami'); } });
 Object.defineProperty(exports, 'dataAwsAmiIds', { get: function () { return require('./data-aws-ami-ids'); } });
 Object.defineProperty(exports, 'dataAwsApiGatewayApiKey', { get: function () { return require('./data-aws-api-gateway-api-key'); } });
+Object.defineProperty(exports, 'dataAwsApiGatewayApiKeys', { get: function () { return require('./data-aws-api-gateway-api-keys'); } });
 Object.defineProperty(exports, 'dataAwsApiGatewayAuthorizer', { get: function () { return require('./data-aws-api-gateway-authorizer'); } });
 Object.defineProperty(exports, 'dataAwsApiGatewayAuthorizers', { get: function () { return require('./data-aws-api-gateway-authorizers'); } });
 Object.defineProperty(exports, 'dataAwsApiGatewayDomainName', { get: function () { return require('./data-aws-api-gateway-domain-name'); } });
@@ -1727,6 +1729,7 @@ Object.defineProperty(exports, 'dataAwsEksAddon', { get: function () { return re
 Object.defineProperty(exports, 'dataAwsEksAddonVersion', { get: function () { return require('./data-aws-eks-addon-version'); } });
 Object.defineProperty(exports, 'dataAwsEksCluster', { get: function () { return require('./data-aws-eks-cluster'); } });
 Object.defineProperty(exports, 'dataAwsEksClusterAuth', { get: function () { return require('./data-aws-eks-cluster-auth'); } });
+Object.defineProperty(exports, 'dataAwsEksClusterVersions', { get: function () { return require('./data-aws-eks-cluster-versions'); } });
 Object.defineProperty(exports, 'dataAwsEksClusters', { get: function () { return require('./data-aws-eks-clusters'); } });
 Object.defineProperty(exports, 'dataAwsEksNodeGroup', { get: function () { return require('./data-aws-eks-node-group'); } });
 Object.defineProperty(exports, 'dataAwsEksNodeGroups', { get: function () { return require('./data-aws-eks-node-groups'); } });
@@ -1779,8 +1782,10 @@ Object.defineProperty(exports, 'dataAwsIamUser', { get: function () { return req
 Object.defineProperty(exports, 'dataAwsIamUserSshKey', { get: function () { return require('./data-aws-iam-user-ssh-key'); } });
 Object.defineProperty(exports, 'dataAwsIamUsers', { get: function () { return require('./data-aws-iam-users'); } });
 Object.defineProperty(exports, 'dataAwsIdentitystoreGroup', { get: function () { return require('./data-aws-identitystore-group'); } });
+Object.defineProperty(exports, 'dataAwsIdentitystoreGroupMemberships', { get: function () { return require('./data-aws-identitystore-group-memberships'); } });
 Object.defineProperty(exports, 'dataAwsIdentitystoreGroups', { get: function () { return require('./data-aws-identitystore-groups'); } });
 Object.defineProperty(exports, 'dataAwsIdentitystoreUser', { get: function () { return require('./data-aws-identitystore-user'); } });
+Object.defineProperty(exports, 'dataAwsIdentitystoreUsers', { get: function () { return require('./data-aws-identitystore-users'); } });
 Object.defineProperty(exports, 'dataAwsImagebuilderComponent', { get: function () { return require('./data-aws-imagebuilder-component'); } });
 Object.defineProperty(exports, 'dataAwsImagebuilderComponents', { get: function () { return require('./data-aws-imagebuilder-components'); } });
 Object.defineProperty(exports, 'dataAwsImagebuilderContainerRecipe', { get: function () { return require('./data-aws-imagebuilder-container-recipe'); } });

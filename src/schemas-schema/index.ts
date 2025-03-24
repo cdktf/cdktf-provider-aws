@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/schemas_schema
+// https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/schemas_schema
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,44 +13,44 @@ import * as cdktf from 'cdktf';
 
 export interface SchemasSchemaConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/schemas_schema#content SchemasSchema#content}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/schemas_schema#content SchemasSchema#content}
   */
   readonly content: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/schemas_schema#description SchemasSchema#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/schemas_schema#description SchemasSchema#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/schemas_schema#id SchemasSchema#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/schemas_schema#id SchemasSchema#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/schemas_schema#name SchemasSchema#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/schemas_schema#name SchemasSchema#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/schemas_schema#registry_name SchemasSchema#registry_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/schemas_schema#registry_name SchemasSchema#registry_name}
   */
   readonly registryName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/schemas_schema#tags SchemasSchema#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/schemas_schema#tags SchemasSchema#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/schemas_schema#tags_all SchemasSchema#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/schemas_schema#tags_all SchemasSchema#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/schemas_schema#type SchemasSchema#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/schemas_schema#type SchemasSchema#type}
   */
   readonly type: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/schemas_schema aws_schemas_schema}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/schemas_schema aws_schemas_schema}
 */
 export class SchemasSchema extends cdktf.TerraformResource {
 
@@ -66,7 +66,7 @@ export class SchemasSchema extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a SchemasSchema resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SchemasSchema to import
-  * @param importFromId The id of the existing SchemasSchema that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/schemas_schema#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing SchemasSchema that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/schemas_schema#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SchemasSchema to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -78,7 +78,7 @@ export class SchemasSchema extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/schemas_schema aws_schemas_schema} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/schemas_schema aws_schemas_schema} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -89,7 +89,7 @@ export class SchemasSchema extends cdktf.TerraformResource {
       terraformResourceType: 'aws_schemas_schema',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.91.0',
+        providerVersion: '5.92.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

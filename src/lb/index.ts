@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/lb
+// https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/lb
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,148 +13,154 @@ import * as cdktf from 'cdktf';
 
 export interface LbConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/lb#client_keep_alive Lb#client_keep_alive}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/lb#client_keep_alive Lb#client_keep_alive}
   */
   readonly clientKeepAlive?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/lb#customer_owned_ipv4_pool Lb#customer_owned_ipv4_pool}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/lb#customer_owned_ipv4_pool Lb#customer_owned_ipv4_pool}
   */
   readonly customerOwnedIpv4Pool?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/lb#desync_mitigation_mode Lb#desync_mitigation_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/lb#desync_mitigation_mode Lb#desync_mitigation_mode}
   */
   readonly desyncMitigationMode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/lb#dns_record_client_routing_policy Lb#dns_record_client_routing_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/lb#dns_record_client_routing_policy Lb#dns_record_client_routing_policy}
   */
   readonly dnsRecordClientRoutingPolicy?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/lb#drop_invalid_header_fields Lb#drop_invalid_header_fields}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/lb#drop_invalid_header_fields Lb#drop_invalid_header_fields}
   */
   readonly dropInvalidHeaderFields?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/lb#enable_cross_zone_load_balancing Lb#enable_cross_zone_load_balancing}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/lb#enable_cross_zone_load_balancing Lb#enable_cross_zone_load_balancing}
   */
   readonly enableCrossZoneLoadBalancing?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/lb#enable_deletion_protection Lb#enable_deletion_protection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/lb#enable_deletion_protection Lb#enable_deletion_protection}
   */
   readonly enableDeletionProtection?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/lb#enable_http2 Lb#enable_http2}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/lb#enable_http2 Lb#enable_http2}
   */
   readonly enableHttp2?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/lb#enable_tls_version_and_cipher_suite_headers Lb#enable_tls_version_and_cipher_suite_headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/lb#enable_tls_version_and_cipher_suite_headers Lb#enable_tls_version_and_cipher_suite_headers}
   */
   readonly enableTlsVersionAndCipherSuiteHeaders?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/lb#enable_waf_fail_open Lb#enable_waf_fail_open}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/lb#enable_waf_fail_open Lb#enable_waf_fail_open}
   */
   readonly enableWafFailOpen?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/lb#enable_xff_client_port Lb#enable_xff_client_port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/lb#enable_xff_client_port Lb#enable_xff_client_port}
   */
   readonly enableXffClientPort?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/lb#enable_zonal_shift Lb#enable_zonal_shift}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/lb#enable_zonal_shift Lb#enable_zonal_shift}
   */
   readonly enableZonalShift?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/lb#enforce_security_group_inbound_rules_on_private_link_traffic Lb#enforce_security_group_inbound_rules_on_private_link_traffic}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/lb#enforce_security_group_inbound_rules_on_private_link_traffic Lb#enforce_security_group_inbound_rules_on_private_link_traffic}
   */
   readonly enforceSecurityGroupInboundRulesOnPrivateLinkTraffic?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/lb#id Lb#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/lb#id Lb#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/lb#idle_timeout Lb#idle_timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/lb#idle_timeout Lb#idle_timeout}
   */
   readonly idleTimeout?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/lb#internal Lb#internal}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/lb#internal Lb#internal}
   */
   readonly internal?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/lb#ip_address_type Lb#ip_address_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/lb#ip_address_type Lb#ip_address_type}
   */
   readonly ipAddressType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/lb#load_balancer_type Lb#load_balancer_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/lb#load_balancer_type Lb#load_balancer_type}
   */
   readonly loadBalancerType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/lb#name Lb#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/lb#name Lb#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/lb#name_prefix Lb#name_prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/lb#name_prefix Lb#name_prefix}
   */
   readonly namePrefix?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/lb#preserve_host_header Lb#preserve_host_header}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/lb#preserve_host_header Lb#preserve_host_header}
   */
   readonly preserveHostHeader?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/lb#security_groups Lb#security_groups}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/lb#security_groups Lb#security_groups}
   */
   readonly securityGroups?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/lb#subnets Lb#subnets}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/lb#subnets Lb#subnets}
   */
   readonly subnets?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/lb#tags Lb#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/lb#tags Lb#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/lb#tags_all Lb#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/lb#tags_all Lb#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/lb#xff_header_processing_mode Lb#xff_header_processing_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/lb#xff_header_processing_mode Lb#xff_header_processing_mode}
   */
   readonly xffHeaderProcessingMode?: string;
   /**
   * access_logs block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/lb#access_logs Lb#access_logs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/lb#access_logs Lb#access_logs}
   */
   readonly accessLogs?: LbAccessLogs;
   /**
   * connection_logs block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/lb#connection_logs Lb#connection_logs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/lb#connection_logs Lb#connection_logs}
   */
   readonly connectionLogs?: LbConnectionLogs;
   /**
+  * ipam_pools block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/lb#ipam_pools Lb#ipam_pools}
+  */
+  readonly ipamPools?: LbIpamPools;
+  /**
   * subnet_mapping block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/lb#subnet_mapping Lb#subnet_mapping}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/lb#subnet_mapping Lb#subnet_mapping}
   */
   readonly subnetMapping?: LbSubnetMapping[] | cdktf.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/lb#timeouts Lb#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/lb#timeouts Lb#timeouts}
   */
   readonly timeouts?: LbTimeouts;
 }
 export interface LbAccessLogs {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/lb#bucket Lb#bucket}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/lb#bucket Lb#bucket}
   */
   readonly bucket: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/lb#enabled Lb#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/lb#enabled Lb#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/lb#prefix Lb#prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/lb#prefix Lb#prefix}
   */
   readonly prefix?: string;
 }
@@ -293,15 +299,15 @@ export class LbAccessLogsOutputReference extends cdktf.ComplexObject {
 }
 export interface LbConnectionLogs {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/lb#bucket Lb#bucket}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/lb#bucket Lb#bucket}
   */
   readonly bucket: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/lb#enabled Lb#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/lb#enabled Lb#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/lb#prefix Lb#prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/lb#prefix Lb#prefix}
   */
   readonly prefix?: string;
 }
@@ -438,21 +444,102 @@ export class LbConnectionLogsOutputReference extends cdktf.ComplexObject {
     return this._prefix;
   }
 }
+export interface LbIpamPools {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/lb#ipv4_ipam_pool_id Lb#ipv4_ipam_pool_id}
+  */
+  readonly ipv4IpamPoolId: string;
+}
+
+export function lbIpamPoolsToTerraform(struct?: LbIpamPoolsOutputReference | LbIpamPools): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    ipv4_ipam_pool_id: cdktf.stringToTerraform(struct!.ipv4IpamPoolId),
+  }
+}
+
+
+export function lbIpamPoolsToHclTerraform(struct?: LbIpamPoolsOutputReference | LbIpamPools): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    ipv4_ipam_pool_id: {
+      value: cdktf.stringToHclTerraform(struct!.ipv4IpamPoolId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class LbIpamPoolsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): LbIpamPools | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._ipv4IpamPoolId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ipv4IpamPoolId = this._ipv4IpamPoolId;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: LbIpamPools | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._ipv4IpamPoolId = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._ipv4IpamPoolId = value.ipv4IpamPoolId;
+    }
+  }
+
+  // ipv4_ipam_pool_id - computed: false, optional: false, required: true
+  private _ipv4IpamPoolId?: string; 
+  public get ipv4IpamPoolId() {
+    return this.getStringAttribute('ipv4_ipam_pool_id');
+  }
+  public set ipv4IpamPoolId(value: string) {
+    this._ipv4IpamPoolId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ipv4IpamPoolIdInput() {
+    return this._ipv4IpamPoolId;
+  }
+}
 export interface LbSubnetMapping {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/lb#allocation_id Lb#allocation_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/lb#allocation_id Lb#allocation_id}
   */
   readonly allocationId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/lb#ipv6_address Lb#ipv6_address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/lb#ipv6_address Lb#ipv6_address}
   */
   readonly ipv6Address?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/lb#private_ipv4_address Lb#private_ipv4_address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/lb#private_ipv4_address Lb#private_ipv4_address}
   */
   readonly privateIpv4Address?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/lb#subnet_id Lb#subnet_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/lb#subnet_id Lb#subnet_id}
   */
   readonly subnetId: string;
 }
@@ -657,15 +744,15 @@ export class LbSubnetMappingList extends cdktf.ComplexList {
 }
 export interface LbTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/lb#create Lb#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/lb#create Lb#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/lb#delete Lb#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/lb#delete Lb#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/lb#update Lb#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/lb#update Lb#update}
   */
   readonly update?: string;
 }
@@ -817,7 +904,7 @@ export class LbTimeoutsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/lb aws_lb}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/lb aws_lb}
 */
 export class Lb extends cdktf.TerraformResource {
 
@@ -833,7 +920,7 @@ export class Lb extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a Lb resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Lb to import
-  * @param importFromId The id of the existing Lb that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/lb#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Lb that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/lb#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Lb to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -845,7 +932,7 @@ export class Lb extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/lb aws_lb} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/lb aws_lb} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -856,7 +943,7 @@ export class Lb extends cdktf.TerraformResource {
       terraformResourceType: 'aws_lb',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.91.0',
+        providerVersion: '5.92.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -895,6 +982,7 @@ export class Lb extends cdktf.TerraformResource {
     this._xffHeaderProcessingMode = config.xffHeaderProcessingMode;
     this._accessLogs.internalValue = config.accessLogs;
     this._connectionLogs.internalValue = config.connectionLogs;
+    this._ipamPools.internalValue = config.ipamPools;
     this._subnetMapping.internalValue = config.subnetMapping;
     this._timeouts.internalValue = config.timeouts;
   }
@@ -1376,6 +1464,22 @@ export class Lb extends cdktf.TerraformResource {
     return this._connectionLogs.internalValue;
   }
 
+  // ipam_pools - computed: false, optional: true, required: false
+  private _ipamPools = new LbIpamPoolsOutputReference(this, "ipam_pools");
+  public get ipamPools() {
+    return this._ipamPools;
+  }
+  public putIpamPools(value: LbIpamPools) {
+    this._ipamPools.internalValue = value;
+  }
+  public resetIpamPools() {
+    this._ipamPools.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ipamPoolsInput() {
+    return this._ipamPools.internalValue;
+  }
+
   // subnet_mapping - computed: false, optional: true, required: false
   private _subnetMapping = new LbSubnetMappingList(this, "subnet_mapping", true);
   public get subnetMapping() {
@@ -1442,6 +1546,7 @@ export class Lb extends cdktf.TerraformResource {
       xff_header_processing_mode: cdktf.stringToTerraform(this._xffHeaderProcessingMode),
       access_logs: lbAccessLogsToTerraform(this._accessLogs.internalValue),
       connection_logs: lbConnectionLogsToTerraform(this._connectionLogs.internalValue),
+      ipam_pools: lbIpamPoolsToTerraform(this._ipamPools.internalValue),
       subnet_mapping: cdktf.listMapper(lbSubnetMappingToTerraform, true)(this._subnetMapping.internalValue),
       timeouts: lbTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -1616,6 +1721,12 @@ export class Lb extends cdktf.TerraformResource {
         isBlock: true,
         type: "list",
         storageClassType: "LbConnectionLogsList",
+      },
+      ipam_pools: {
+        value: lbIpamPoolsToHclTerraform(this._ipamPools.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "LbIpamPoolsList",
       },
       subnet_mapping: {
         value: cdktf.listMapperHcl(lbSubnetMappingToHclTerraform, true)(this._subnetMapping.internalValue),

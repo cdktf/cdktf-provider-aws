@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/codecatalyst_source_repository
+// https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/codecatalyst_source_repository
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,46 +13,46 @@ import * as cdktf from 'cdktf';
 
 export interface CodecatalystSourceRepositoryConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/codecatalyst_source_repository#description CodecatalystSourceRepository#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/codecatalyst_source_repository#description CodecatalystSourceRepository#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/codecatalyst_source_repository#id CodecatalystSourceRepository#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/codecatalyst_source_repository#id CodecatalystSourceRepository#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/codecatalyst_source_repository#name CodecatalystSourceRepository#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/codecatalyst_source_repository#name CodecatalystSourceRepository#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/codecatalyst_source_repository#project_name CodecatalystSourceRepository#project_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/codecatalyst_source_repository#project_name CodecatalystSourceRepository#project_name}
   */
   readonly projectName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/codecatalyst_source_repository#space_name CodecatalystSourceRepository#space_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/codecatalyst_source_repository#space_name CodecatalystSourceRepository#space_name}
   */
   readonly spaceName: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/codecatalyst_source_repository#timeouts CodecatalystSourceRepository#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/codecatalyst_source_repository#timeouts CodecatalystSourceRepository#timeouts}
   */
   readonly timeouts?: CodecatalystSourceRepositoryTimeouts;
 }
 export interface CodecatalystSourceRepositoryTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/codecatalyst_source_repository#create CodecatalystSourceRepository#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/codecatalyst_source_repository#create CodecatalystSourceRepository#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/codecatalyst_source_repository#delete CodecatalystSourceRepository#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/codecatalyst_source_repository#delete CodecatalystSourceRepository#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/codecatalyst_source_repository#update CodecatalystSourceRepository#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/codecatalyst_source_repository#update CodecatalystSourceRepository#update}
   */
   readonly update?: string;
 }
@@ -204,7 +204,7 @@ export class CodecatalystSourceRepositoryTimeoutsOutputReference extends cdktf.C
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/codecatalyst_source_repository aws_codecatalyst_source_repository}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/codecatalyst_source_repository aws_codecatalyst_source_repository}
 */
 export class CodecatalystSourceRepository extends cdktf.TerraformResource {
 
@@ -220,7 +220,7 @@ export class CodecatalystSourceRepository extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a CodecatalystSourceRepository resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CodecatalystSourceRepository to import
-  * @param importFromId The id of the existing CodecatalystSourceRepository that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/codecatalyst_source_repository#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing CodecatalystSourceRepository that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/codecatalyst_source_repository#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CodecatalystSourceRepository to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -232,7 +232,7 @@ export class CodecatalystSourceRepository extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/codecatalyst_source_repository aws_codecatalyst_source_repository} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/codecatalyst_source_repository aws_codecatalyst_source_repository} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -243,7 +243,7 @@ export class CodecatalystSourceRepository extends cdktf.TerraformResource {
       terraformResourceType: 'aws_codecatalyst_source_repository',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.91.0',
+        providerVersion: '5.92.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

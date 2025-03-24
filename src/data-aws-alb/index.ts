@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/data-sources/alb
+// https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/data-sources/alb
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,28 +13,28 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsAlbConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/data-sources/alb#arn DataAwsAlb#arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/data-sources/alb#arn DataAwsAlb#arn}
   */
   readonly arn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/data-sources/alb#id DataAwsAlb#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/data-sources/alb#id DataAwsAlb#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/data-sources/alb#name DataAwsAlb#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/data-sources/alb#name DataAwsAlb#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/data-sources/alb#tags DataAwsAlb#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/data-sources/alb#tags DataAwsAlb#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/data-sources/alb#timeouts DataAwsAlb#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/data-sources/alb#timeouts DataAwsAlb#timeouts}
   */
   readonly timeouts?: DataAwsAlbTimeouts;
 }
@@ -208,6 +208,81 @@ export class DataAwsAlbConnectionLogsList extends cdktf.ComplexList {
     return new DataAwsAlbConnectionLogsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface DataAwsAlbIpamPools {
+}
+
+export function dataAwsAlbIpamPoolsToTerraform(struct?: DataAwsAlbIpamPools): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataAwsAlbIpamPoolsToHclTerraform(struct?: DataAwsAlbIpamPools): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataAwsAlbIpamPoolsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsAlbIpamPools | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsAlbIpamPools | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // ipv4_ipam_pool_id - computed: true, optional: false, required: false
+  public get ipv4IpamPoolId() {
+    return this.getStringAttribute('ipv4_ipam_pool_id');
+  }
+}
+
+export class DataAwsAlbIpamPoolsList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsAlbIpamPoolsOutputReference {
+    return new DataAwsAlbIpamPoolsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface DataAwsAlbSubnetMapping {
 }
 
@@ -305,7 +380,7 @@ export class DataAwsAlbSubnetMappingList extends cdktf.ComplexList {
 }
 export interface DataAwsAlbTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/data-sources/alb#read DataAwsAlb#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/data-sources/alb#read DataAwsAlb#read}
   */
   readonly read?: string;
 }
@@ -399,7 +474,7 @@ export class DataAwsAlbTimeoutsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/data-sources/alb aws_alb}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/data-sources/alb aws_alb}
 */
 export class DataAwsAlb extends cdktf.TerraformDataSource {
 
@@ -415,7 +490,7 @@ export class DataAwsAlb extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataAwsAlb resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsAlb to import
-  * @param importFromId The id of the existing DataAwsAlb that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/data-sources/alb#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsAlb that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/data-sources/alb#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsAlb to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -427,7 +502,7 @@ export class DataAwsAlb extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/data-sources/alb aws_alb} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/data-sources/alb aws_alb} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -438,7 +513,7 @@ export class DataAwsAlb extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_alb',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.91.0',
+        providerVersion: '5.92.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -592,6 +667,12 @@ export class DataAwsAlb extends cdktf.TerraformDataSource {
   // ip_address_type - computed: true, optional: false, required: false
   public get ipAddressType() {
     return this.getStringAttribute('ip_address_type');
+  }
+
+  // ipam_pools - computed: true, optional: false, required: false
+  private _ipamPools = new DataAwsAlbIpamPoolsList(this, "ipam_pools", false);
+  public get ipamPools() {
+    return this._ipamPools;
   }
 
   // load_balancer_type - computed: true, optional: false, required: false
