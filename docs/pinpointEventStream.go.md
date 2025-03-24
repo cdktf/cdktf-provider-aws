@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.pinpointEventStream.PinpointEventStream.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/pinpointeventstream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/pinpointeventstream"
 
 pinpointeventstream.NewPinpointEventStream(scope Construct, id *string, config PinpointEventStreamConfig) PinpointEventStream
 ```
@@ -385,7 +385,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.pinpointEventStream.PinpointEventStream.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/pinpointeventstream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/pinpointeventstream"
 
 pinpointeventstream.PinpointEventStream_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +417,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.pinpointEventStream.PinpointEventStream.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/pinpointeventstream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/pinpointeventstream"
 
 pinpointeventstream.PinpointEventStream_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ pinpointeventstream.PinpointEventStream_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.pinpointEventStream.PinpointEventStream.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/pinpointeventstream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/pinpointeventstream"
 
 pinpointeventstream.PinpointEventStream_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ pinpointeventstream.PinpointEventStream_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.pinpointEventStream.PinpointEventStream.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/pinpointeventstream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/pinpointeventstream"
 
 pinpointeventstream.PinpointEventStream_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -762,7 +762,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.pinpointEventStream.PinpointEventStreamConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/pinpointeventstream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/pinpointeventstream"
 
 &pinpointeventstream.PinpointEventStreamConfig {
 	Connection: interface{},

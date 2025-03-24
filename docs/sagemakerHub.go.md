@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sagemakerHub.SagemakerHub.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/sagemakerhub"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerhub"
 
 sagemakerhub.NewSagemakerHub(scope Construct, id *string, config SagemakerHubConfig) SagemakerHub
 ```
@@ -433,7 +433,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.sagemakerHub.SagemakerHub.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/sagemakerhub"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerhub"
 
 sagemakerhub.SagemakerHub_IsConstruct(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.sagemakerHub.SagemakerHub.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/sagemakerhub"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerhub"
 
 sagemakerhub.SagemakerHub_IsTerraformElement(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ sagemakerhub.SagemakerHub_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.sagemakerHub.SagemakerHub.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/sagemakerhub"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerhub"
 
 sagemakerhub.SagemakerHub_IsTerraformResource(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ sagemakerhub.SagemakerHub_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.sagemakerHub.SagemakerHub.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/sagemakerhub"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerhub"
 
 sagemakerhub.SagemakerHub_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -909,7 +909,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.sagemakerHub.SagemakerHubConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/sagemakerhub"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerhub"
 
 &sagemakerhub.SagemakerHubConfig {
 	Connection: interface{},
@@ -924,7 +924,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/sagemakerhub"
 	HubDisplayName: *string,
 	HubSearchKeywords: *[]*string,
 	Id: *string,
-	S3StorageConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v19.sagemakerHub.SagemakerHubS3StorageConfig,
+	S3StorageConfig: github.com/cdktf/cdktf-provider-aws-go/aws.sagemakerHub.SagemakerHubS3StorageConfig,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
 }
@@ -1128,7 +1128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.sagemakerHub.SagemakerHubS3StorageConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/sagemakerhub"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerhub"
 
 &sagemakerhub.SagemakerHubS3StorageConfig {
 	S3OutputPath: *string,
@@ -1162,7 +1162,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sagemakerHub.SagemakerHubS3StorageConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/sagemakerhub"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerhub"
 
 sagemakerhub.NewSagemakerHubS3StorageConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SagemakerHubS3StorageConfigOutputReference
 ```
