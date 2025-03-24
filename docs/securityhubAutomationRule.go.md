@@ -4,12 +4,12 @@
 
 ### SecurityhubAutomationRule <a name="SecurityhubAutomationRule" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule aws_securityhub_automation_rule}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule aws_securityhub_automation_rule}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRule(scope Construct, id *string, config SecurityhubAutomationRuleConfig) SecurityhubAutomationRule
 ```
@@ -439,7 +439,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 securityhubautomationrule.SecurityhubAutomationRule_IsConstruct(x interface{}) *bool
 ```
@@ -471,7 +471,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 securityhubautomationrule.SecurityhubAutomationRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -485,7 +485,7 @@ securityhubautomationrule.SecurityhubAutomationRule_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 securityhubautomationrule.SecurityhubAutomationRule_IsTerraformResource(x interface{}) *bool
 ```
@@ -499,7 +499,7 @@ securityhubautomationrule.SecurityhubAutomationRule_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 securityhubautomationrule.SecurityhubAutomationRule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -528,7 +528,7 @@ The construct id used in the generated config for the SecurityhubAutomationRule 
 
 The id of the existing SecurityhubAutomationRule that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -937,7 +937,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 &securityhubautomationrule.SecurityhubAutomationRuleActions {
 	FindingFieldsUpdate: interface{},
@@ -950,7 +950,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActions.property.findingFieldsUpdate">FindingFieldsUpdate</a></code> | <code>interface{}</code> | finding_fields_update block. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActions.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#type SecurityhubAutomationRule#type}. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActions.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#type SecurityhubAutomationRule#type}. |
 
 ---
 
@@ -964,7 +964,7 @@ FindingFieldsUpdate interface{}
 
 finding_fields_update block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#finding_fields_update SecurityhubAutomationRule#finding_fields_update}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#finding_fields_update SecurityhubAutomationRule#finding_fields_update}
 
 ---
 
@@ -976,7 +976,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#type SecurityhubAutomationRule#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#type SecurityhubAutomationRule#type}.
 
 ---
 
@@ -985,7 +985,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 &securityhubautomationrule.SecurityhubAutomationRuleActionsFindingFieldsUpdate {
 	Confidence: *f64,
@@ -1004,14 +1004,14 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdate.property.confidence">Confidence</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#confidence SecurityhubAutomationRule#confidence}. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdate.property.criticality">Criticality</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#criticality SecurityhubAutomationRule#criticality}. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdate.property.confidence">Confidence</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#confidence SecurityhubAutomationRule#confidence}. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdate.property.criticality">Criticality</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#criticality SecurityhubAutomationRule#criticality}. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdate.property.note">Note</a></code> | <code>interface{}</code> | note block. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdate.property.relatedFindings">RelatedFindings</a></code> | <code>interface{}</code> | related_findings block. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdate.property.severity">Severity</a></code> | <code>interface{}</code> | severity block. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdate.property.types">Types</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#types SecurityhubAutomationRule#types}. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdate.property.userDefinedFields">UserDefinedFields</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#user_defined_fields SecurityhubAutomationRule#user_defined_fields}. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdate.property.verificationState">VerificationState</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#verification_state SecurityhubAutomationRule#verification_state}. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdate.property.types">Types</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#types SecurityhubAutomationRule#types}. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdate.property.userDefinedFields">UserDefinedFields</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#user_defined_fields SecurityhubAutomationRule#user_defined_fields}. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdate.property.verificationState">VerificationState</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#verification_state SecurityhubAutomationRule#verification_state}. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdate.property.workflow">Workflow</a></code> | <code>interface{}</code> | workflow block. |
 
 ---
@@ -1024,7 +1024,7 @@ Confidence *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#confidence SecurityhubAutomationRule#confidence}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#confidence SecurityhubAutomationRule#confidence}.
 
 ---
 
@@ -1036,7 +1036,7 @@ Criticality *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#criticality SecurityhubAutomationRule#criticality}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#criticality SecurityhubAutomationRule#criticality}.
 
 ---
 
@@ -1050,7 +1050,7 @@ Note interface{}
 
 note block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#note SecurityhubAutomationRule#note}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#note SecurityhubAutomationRule#note}
 
 ---
 
@@ -1064,7 +1064,7 @@ RelatedFindings interface{}
 
 related_findings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#related_findings SecurityhubAutomationRule#related_findings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#related_findings SecurityhubAutomationRule#related_findings}
 
 ---
 
@@ -1078,7 +1078,7 @@ Severity interface{}
 
 severity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#severity SecurityhubAutomationRule#severity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#severity SecurityhubAutomationRule#severity}
 
 ---
 
@@ -1090,7 +1090,7 @@ Types *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#types SecurityhubAutomationRule#types}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#types SecurityhubAutomationRule#types}.
 
 ---
 
@@ -1102,7 +1102,7 @@ UserDefinedFields *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#user_defined_fields SecurityhubAutomationRule#user_defined_fields}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#user_defined_fields SecurityhubAutomationRule#user_defined_fields}.
 
 ---
 
@@ -1114,7 +1114,7 @@ VerificationState *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#verification_state SecurityhubAutomationRule#verification_state}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#verification_state SecurityhubAutomationRule#verification_state}.
 
 ---
 
@@ -1128,7 +1128,7 @@ Workflow interface{}
 
 workflow block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#workflow SecurityhubAutomationRule#workflow}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#workflow SecurityhubAutomationRule#workflow}
 
 ---
 
@@ -1137,7 +1137,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateNote.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 &securityhubautomationrule.SecurityhubAutomationRuleActionsFindingFieldsUpdateNote {
 	Text: *string,
@@ -1149,8 +1149,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateNote.property.text">Text</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#text SecurityhubAutomationRule#text}. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateNote.property.updatedBy">UpdatedBy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#updated_by SecurityhubAutomationRule#updated_by}. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateNote.property.text">Text</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#text SecurityhubAutomationRule#text}. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateNote.property.updatedBy">UpdatedBy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#updated_by SecurityhubAutomationRule#updated_by}. |
 
 ---
 
@@ -1162,7 +1162,7 @@ Text *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#text SecurityhubAutomationRule#text}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#text SecurityhubAutomationRule#text}.
 
 ---
 
@@ -1174,7 +1174,7 @@ UpdatedBy *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#updated_by SecurityhubAutomationRule#updated_by}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#updated_by SecurityhubAutomationRule#updated_by}.
 
 ---
 
@@ -1183,7 +1183,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 &securityhubautomationrule.SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings {
 	Id: *string,
@@ -1195,8 +1195,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#id SecurityhubAutomationRule#id}. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings.property.productArn">ProductArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#product_arn SecurityhubAutomationRule#product_arn}. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#id SecurityhubAutomationRule#id}. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings.property.productArn">ProductArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#product_arn SecurityhubAutomationRule#product_arn}. |
 
 ---
 
@@ -1208,7 +1208,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#id SecurityhubAutomationRule#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#id SecurityhubAutomationRule#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1223,7 +1223,7 @@ ProductArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#product_arn SecurityhubAutomationRule#product_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#product_arn SecurityhubAutomationRule#product_arn}.
 
 ---
 
@@ -1232,7 +1232,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 &securityhubautomationrule.SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity {
 	Label: *string,
@@ -1244,8 +1244,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity.property.label">Label</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#label SecurityhubAutomationRule#label}. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity.property.product">Product</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#product SecurityhubAutomationRule#product}. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity.property.label">Label</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#label SecurityhubAutomationRule#label}. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity.property.product">Product</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#product SecurityhubAutomationRule#product}. |
 
 ---
 
@@ -1257,7 +1257,7 @@ Label *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#label SecurityhubAutomationRule#label}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#label SecurityhubAutomationRule#label}.
 
 ---
 
@@ -1269,7 +1269,7 @@ Product *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#product SecurityhubAutomationRule#product}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#product SecurityhubAutomationRule#product}.
 
 ---
 
@@ -1278,7 +1278,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 &securityhubautomationrule.SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow {
 	Status: *string,
@@ -1289,7 +1289,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow.property.status">Status</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#status SecurityhubAutomationRule#status}. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow.property.status">Status</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#status SecurityhubAutomationRule#status}. |
 
 ---
 
@@ -1301,7 +1301,7 @@ Status *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#status SecurityhubAutomationRule#status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#status SecurityhubAutomationRule#status}.
 
 ---
 
@@ -1310,7 +1310,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 &securityhubautomationrule.SecurityhubAutomationRuleConfig {
 	Connection: interface{},
@@ -1342,14 +1342,14 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#description SecurityhubAutomationRule#description}. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleConfig.property.ruleName">RuleName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#rule_name SecurityhubAutomationRule#rule_name}. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleConfig.property.ruleOrder">RuleOrder</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#rule_order SecurityhubAutomationRule#rule_order}. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#description SecurityhubAutomationRule#description}. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleConfig.property.ruleName">RuleName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#rule_name SecurityhubAutomationRule#rule_name}. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleConfig.property.ruleOrder">RuleOrder</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#rule_order SecurityhubAutomationRule#rule_order}. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleConfig.property.actions">Actions</a></code> | <code>interface{}</code> | actions block. |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleConfig.property.criteria">Criteria</a></code> | <code>interface{}</code> | criteria block. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleConfig.property.isTerminal">IsTerminal</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#is_terminal SecurityhubAutomationRule#is_terminal}. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleConfig.property.ruleStatus">RuleStatus</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#rule_status SecurityhubAutomationRule#rule_status}. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#tags SecurityhubAutomationRule#tags}. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleConfig.property.isTerminal">IsTerminal</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#is_terminal SecurityhubAutomationRule#is_terminal}. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleConfig.property.ruleStatus">RuleStatus</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#rule_status SecurityhubAutomationRule#rule_status}. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#tags SecurityhubAutomationRule#tags}. |
 
 ---
 
@@ -1431,7 +1431,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#description SecurityhubAutomationRule#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#description SecurityhubAutomationRule#description}.
 
 ---
 
@@ -1443,7 +1443,7 @@ RuleName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#rule_name SecurityhubAutomationRule#rule_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#rule_name SecurityhubAutomationRule#rule_name}.
 
 ---
 
@@ -1455,7 +1455,7 @@ RuleOrder *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#rule_order SecurityhubAutomationRule#rule_order}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#rule_order SecurityhubAutomationRule#rule_order}.
 
 ---
 
@@ -1469,7 +1469,7 @@ Actions interface{}
 
 actions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#actions SecurityhubAutomationRule#actions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#actions SecurityhubAutomationRule#actions}
 
 ---
 
@@ -1483,7 +1483,7 @@ Criteria interface{}
 
 criteria block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#criteria SecurityhubAutomationRule#criteria}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#criteria SecurityhubAutomationRule#criteria}
 
 ---
 
@@ -1495,7 +1495,7 @@ IsTerminal interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#is_terminal SecurityhubAutomationRule#is_terminal}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#is_terminal SecurityhubAutomationRule#is_terminal}.
 
 ---
 
@@ -1507,7 +1507,7 @@ RuleStatus *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#rule_status SecurityhubAutomationRule#rule_status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#rule_status SecurityhubAutomationRule#rule_status}.
 
 ---
 
@@ -1519,7 +1519,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#tags SecurityhubAutomationRule#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#tags SecurityhubAutomationRule#tags}.
 
 ---
 
@@ -1528,7 +1528,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 &securityhubautomationrule.SecurityhubAutomationRuleCriteria {
 	AwsAccountId: interface{},
@@ -1627,7 +1627,7 @@ AwsAccountId interface{}
 
 aws_account_id block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#aws_account_id SecurityhubAutomationRule#aws_account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#aws_account_id SecurityhubAutomationRule#aws_account_id}
 
 ---
 
@@ -1641,7 +1641,7 @@ AwsAccountName interface{}
 
 aws_account_name block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#aws_account_name SecurityhubAutomationRule#aws_account_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#aws_account_name SecurityhubAutomationRule#aws_account_name}
 
 ---
 
@@ -1655,7 +1655,7 @@ CompanyName interface{}
 
 company_name block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#company_name SecurityhubAutomationRule#company_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#company_name SecurityhubAutomationRule#company_name}
 
 ---
 
@@ -1669,7 +1669,7 @@ ComplianceAssociatedStandardsId interface{}
 
 compliance_associated_standards_id block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#compliance_associated_standards_id SecurityhubAutomationRule#compliance_associated_standards_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#compliance_associated_standards_id SecurityhubAutomationRule#compliance_associated_standards_id}
 
 ---
 
@@ -1683,7 +1683,7 @@ ComplianceSecurityControlId interface{}
 
 compliance_security_control_id block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#compliance_security_control_id SecurityhubAutomationRule#compliance_security_control_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#compliance_security_control_id SecurityhubAutomationRule#compliance_security_control_id}
 
 ---
 
@@ -1697,7 +1697,7 @@ ComplianceStatus interface{}
 
 compliance_status block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#compliance_status SecurityhubAutomationRule#compliance_status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#compliance_status SecurityhubAutomationRule#compliance_status}
 
 ---
 
@@ -1711,7 +1711,7 @@ Confidence interface{}
 
 confidence block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#confidence SecurityhubAutomationRule#confidence}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#confidence SecurityhubAutomationRule#confidence}
 
 ---
 
@@ -1725,7 +1725,7 @@ CreatedAt interface{}
 
 created_at block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#created_at SecurityhubAutomationRule#created_at}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#created_at SecurityhubAutomationRule#created_at}
 
 ---
 
@@ -1739,7 +1739,7 @@ Criticality interface{}
 
 criticality block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#criticality SecurityhubAutomationRule#criticality}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#criticality SecurityhubAutomationRule#criticality}
 
 ---
 
@@ -1753,7 +1753,7 @@ Description interface{}
 
 description block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#description SecurityhubAutomationRule#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#description SecurityhubAutomationRule#description}
 
 ---
 
@@ -1767,7 +1767,7 @@ FirstObservedAt interface{}
 
 first_observed_at block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#first_observed_at SecurityhubAutomationRule#first_observed_at}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#first_observed_at SecurityhubAutomationRule#first_observed_at}
 
 ---
 
@@ -1781,7 +1781,7 @@ GeneratorId interface{}
 
 generator_id block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#generator_id SecurityhubAutomationRule#generator_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#generator_id SecurityhubAutomationRule#generator_id}
 
 ---
 
@@ -1795,7 +1795,7 @@ Id interface{}
 
 id block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#id SecurityhubAutomationRule#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#id SecurityhubAutomationRule#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1812,7 +1812,7 @@ LastObservedAt interface{}
 
 last_observed_at block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#last_observed_at SecurityhubAutomationRule#last_observed_at}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#last_observed_at SecurityhubAutomationRule#last_observed_at}
 
 ---
 
@@ -1826,7 +1826,7 @@ NoteText interface{}
 
 note_text block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#note_text SecurityhubAutomationRule#note_text}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#note_text SecurityhubAutomationRule#note_text}
 
 ---
 
@@ -1840,7 +1840,7 @@ NoteUpdatedAt interface{}
 
 note_updated_at block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#note_updated_at SecurityhubAutomationRule#note_updated_at}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#note_updated_at SecurityhubAutomationRule#note_updated_at}
 
 ---
 
@@ -1854,7 +1854,7 @@ NoteUpdatedBy interface{}
 
 note_updated_by block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#note_updated_by SecurityhubAutomationRule#note_updated_by}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#note_updated_by SecurityhubAutomationRule#note_updated_by}
 
 ---
 
@@ -1868,7 +1868,7 @@ ProductArn interface{}
 
 product_arn block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#product_arn SecurityhubAutomationRule#product_arn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#product_arn SecurityhubAutomationRule#product_arn}
 
 ---
 
@@ -1882,7 +1882,7 @@ ProductName interface{}
 
 product_name block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#product_name SecurityhubAutomationRule#product_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#product_name SecurityhubAutomationRule#product_name}
 
 ---
 
@@ -1896,7 +1896,7 @@ RecordState interface{}
 
 record_state block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#record_state SecurityhubAutomationRule#record_state}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#record_state SecurityhubAutomationRule#record_state}
 
 ---
 
@@ -1910,7 +1910,7 @@ RelatedFindingsId interface{}
 
 related_findings_id block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#related_findings_id SecurityhubAutomationRule#related_findings_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#related_findings_id SecurityhubAutomationRule#related_findings_id}
 
 ---
 
@@ -1924,7 +1924,7 @@ RelatedFindingsProductArn interface{}
 
 related_findings_product_arn block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#related_findings_product_arn SecurityhubAutomationRule#related_findings_product_arn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#related_findings_product_arn SecurityhubAutomationRule#related_findings_product_arn}
 
 ---
 
@@ -1938,7 +1938,7 @@ ResourceApplicationArn interface{}
 
 resource_application_arn block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#resource_application_arn SecurityhubAutomationRule#resource_application_arn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#resource_application_arn SecurityhubAutomationRule#resource_application_arn}
 
 ---
 
@@ -1952,7 +1952,7 @@ ResourceApplicationName interface{}
 
 resource_application_name block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#resource_application_name SecurityhubAutomationRule#resource_application_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#resource_application_name SecurityhubAutomationRule#resource_application_name}
 
 ---
 
@@ -1966,7 +1966,7 @@ ResourceDetailsOther interface{}
 
 resource_details_other block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#resource_details_other SecurityhubAutomationRule#resource_details_other}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#resource_details_other SecurityhubAutomationRule#resource_details_other}
 
 ---
 
@@ -1980,7 +1980,7 @@ ResourceId interface{}
 
 resource_id block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#resource_id SecurityhubAutomationRule#resource_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#resource_id SecurityhubAutomationRule#resource_id}
 
 ---
 
@@ -1994,7 +1994,7 @@ ResourcePartition interface{}
 
 resource_partition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#resource_partition SecurityhubAutomationRule#resource_partition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#resource_partition SecurityhubAutomationRule#resource_partition}
 
 ---
 
@@ -2008,7 +2008,7 @@ ResourceRegion interface{}
 
 resource_region block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#resource_region SecurityhubAutomationRule#resource_region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#resource_region SecurityhubAutomationRule#resource_region}
 
 ---
 
@@ -2022,7 +2022,7 @@ ResourceTags interface{}
 
 resource_tags block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#resource_tags SecurityhubAutomationRule#resource_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#resource_tags SecurityhubAutomationRule#resource_tags}
 
 ---
 
@@ -2036,7 +2036,7 @@ ResourceType interface{}
 
 resource_type block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#resource_type SecurityhubAutomationRule#resource_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#resource_type SecurityhubAutomationRule#resource_type}
 
 ---
 
@@ -2050,7 +2050,7 @@ SeverityLabel interface{}
 
 severity_label block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#severity_label SecurityhubAutomationRule#severity_label}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#severity_label SecurityhubAutomationRule#severity_label}
 
 ---
 
@@ -2064,7 +2064,7 @@ SourceUrl interface{}
 
 source_url block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#source_url SecurityhubAutomationRule#source_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#source_url SecurityhubAutomationRule#source_url}
 
 ---
 
@@ -2078,7 +2078,7 @@ Title interface{}
 
 title block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#title SecurityhubAutomationRule#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#title SecurityhubAutomationRule#title}
 
 ---
 
@@ -2092,7 +2092,7 @@ Type interface{}
 
 type block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#type SecurityhubAutomationRule#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#type SecurityhubAutomationRule#type}
 
 ---
 
@@ -2106,7 +2106,7 @@ UpdatedAt interface{}
 
 updated_at block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#updated_at SecurityhubAutomationRule#updated_at}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#updated_at SecurityhubAutomationRule#updated_at}
 
 ---
 
@@ -2120,7 +2120,7 @@ UserDefinedFields interface{}
 
 user_defined_fields block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#user_defined_fields SecurityhubAutomationRule#user_defined_fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#user_defined_fields SecurityhubAutomationRule#user_defined_fields}
 
 ---
 
@@ -2134,7 +2134,7 @@ VerificationState interface{}
 
 verification_state block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#verification_state SecurityhubAutomationRule#verification_state}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#verification_state SecurityhubAutomationRule#verification_state}
 
 ---
 
@@ -2148,7 +2148,7 @@ WorkflowStatus interface{}
 
 workflow_status block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#workflow_status SecurityhubAutomationRule#workflow_status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#workflow_status SecurityhubAutomationRule#workflow_status}
 
 ---
 
@@ -2157,7 +2157,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountId.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 &securityhubautomationrule.SecurityhubAutomationRuleCriteriaAwsAccountId {
 	Comparison: *string,
@@ -2169,8 +2169,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountId.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountId.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountId.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountId.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}. |
 
 ---
 
@@ -2182,7 +2182,7 @@ Comparison *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}.
 
 ---
 
@@ -2194,7 +2194,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}.
 
 ---
 
@@ -2203,7 +2203,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountName.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 &securityhubautomationrule.SecurityhubAutomationRuleCriteriaAwsAccountName {
 	Comparison: *string,
@@ -2215,8 +2215,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountName.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountName.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountName.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountName.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}. |
 
 ---
 
@@ -2228,7 +2228,7 @@ Comparison *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}.
 
 ---
 
@@ -2240,7 +2240,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}.
 
 ---
 
@@ -2249,7 +2249,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCompanyName.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 &securityhubautomationrule.SecurityhubAutomationRuleCriteriaCompanyName {
 	Comparison: *string,
@@ -2261,8 +2261,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCompanyName.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCompanyName.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCompanyName.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCompanyName.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}. |
 
 ---
 
@@ -2274,7 +2274,7 @@ Comparison *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}.
 
 ---
 
@@ -2286,7 +2286,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}.
 
 ---
 
@@ -2295,7 +2295,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 &securityhubautomationrule.SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId {
 	Comparison: *string,
@@ -2307,8 +2307,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}. |
 
 ---
 
@@ -2320,7 +2320,7 @@ Comparison *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}.
 
 ---
 
@@ -2332,7 +2332,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}.
 
 ---
 
@@ -2341,7 +2341,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceSecurityControlId.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 &securityhubautomationrule.SecurityhubAutomationRuleCriteriaComplianceSecurityControlId {
 	Comparison: *string,
@@ -2353,8 +2353,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceSecurityControlId.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceSecurityControlId.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceSecurityControlId.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceSecurityControlId.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}. |
 
 ---
 
@@ -2366,7 +2366,7 @@ Comparison *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}.
 
 ---
 
@@ -2378,7 +2378,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}.
 
 ---
 
@@ -2387,7 +2387,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceStatus.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 &securityhubautomationrule.SecurityhubAutomationRuleCriteriaComplianceStatus {
 	Comparison: *string,
@@ -2399,8 +2399,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceStatus.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceStatus.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceStatus.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceStatus.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}. |
 
 ---
 
@@ -2412,7 +2412,7 @@ Comparison *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}.
 
 ---
 
@@ -2424,7 +2424,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}.
 
 ---
 
@@ -2433,7 +2433,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaConfidence.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 &securityhubautomationrule.SecurityhubAutomationRuleCriteriaConfidence {
 	Eq: *f64,
@@ -2448,11 +2448,11 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaConfidence.property.eq">Eq</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#eq SecurityhubAutomationRule#eq}. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaConfidence.property.gt">Gt</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#gt SecurityhubAutomationRule#gt}. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaConfidence.property.gte">Gte</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#gte SecurityhubAutomationRule#gte}. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaConfidence.property.lt">Lt</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#lt SecurityhubAutomationRule#lt}. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaConfidence.property.lte">Lte</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#lte SecurityhubAutomationRule#lte}. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaConfidence.property.eq">Eq</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#eq SecurityhubAutomationRule#eq}. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaConfidence.property.gt">Gt</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#gt SecurityhubAutomationRule#gt}. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaConfidence.property.gte">Gte</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#gte SecurityhubAutomationRule#gte}. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaConfidence.property.lt">Lt</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#lt SecurityhubAutomationRule#lt}. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaConfidence.property.lte">Lte</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#lte SecurityhubAutomationRule#lte}. |
 
 ---
 
@@ -2464,7 +2464,7 @@ Eq *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#eq SecurityhubAutomationRule#eq}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#eq SecurityhubAutomationRule#eq}.
 
 ---
 
@@ -2476,7 +2476,7 @@ Gt *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#gt SecurityhubAutomationRule#gt}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#gt SecurityhubAutomationRule#gt}.
 
 ---
 
@@ -2488,7 +2488,7 @@ Gte *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#gte SecurityhubAutomationRule#gte}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#gte SecurityhubAutomationRule#gte}.
 
 ---
 
@@ -2500,7 +2500,7 @@ Lt *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#lt SecurityhubAutomationRule#lt}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#lt SecurityhubAutomationRule#lt}.
 
 ---
 
@@ -2512,7 +2512,7 @@ Lte *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#lte SecurityhubAutomationRule#lte}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#lte SecurityhubAutomationRule#lte}.
 
 ---
 
@@ -2521,7 +2521,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAt.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 &securityhubautomationrule.SecurityhubAutomationRuleCriteriaCreatedAt {
 	DateRange: interface{},
@@ -2535,8 +2535,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAt.property.dateRange">DateRange</a></code> | <code>interface{}</code> | date_range block. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAt.property.end">End</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#end SecurityhubAutomationRule#end}. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAt.property.start">Start</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#start SecurityhubAutomationRule#start}. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAt.property.end">End</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#end SecurityhubAutomationRule#end}. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAt.property.start">Start</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#start SecurityhubAutomationRule#start}. |
 
 ---
 
@@ -2550,7 +2550,7 @@ DateRange interface{}
 
 date_range block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#date_range SecurityhubAutomationRule#date_range}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#date_range SecurityhubAutomationRule#date_range}
 
 ---
 
@@ -2562,7 +2562,7 @@ End *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#end SecurityhubAutomationRule#end}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#end SecurityhubAutomationRule#end}.
 
 ---
 
@@ -2574,7 +2574,7 @@ Start *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#start SecurityhubAutomationRule#start}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#start SecurityhubAutomationRule#start}.
 
 ---
 
@@ -2583,7 +2583,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtDateRange.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 &securityhubautomationrule.SecurityhubAutomationRuleCriteriaCreatedAtDateRange {
 	Unit: *string,
@@ -2595,8 +2595,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtDateRange.property.unit">Unit</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#unit SecurityhubAutomationRule#unit}. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtDateRange.property.value">Value</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtDateRange.property.unit">Unit</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#unit SecurityhubAutomationRule#unit}. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtDateRange.property.value">Value</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}. |
 
 ---
 
@@ -2608,7 +2608,7 @@ Unit *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#unit SecurityhubAutomationRule#unit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#unit SecurityhubAutomationRule#unit}.
 
 ---
 
@@ -2620,7 +2620,7 @@ Value *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}.
 
 ---
 
@@ -2629,7 +2629,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCriticality.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 &securityhubautomationrule.SecurityhubAutomationRuleCriteriaCriticality {
 	Eq: *f64,
@@ -2644,11 +2644,11 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCriticality.property.eq">Eq</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#eq SecurityhubAutomationRule#eq}. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCriticality.property.gt">Gt</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#gt SecurityhubAutomationRule#gt}. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCriticality.property.gte">Gte</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#gte SecurityhubAutomationRule#gte}. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCriticality.property.lt">Lt</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#lt SecurityhubAutomationRule#lt}. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCriticality.property.lte">Lte</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#lte SecurityhubAutomationRule#lte}. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCriticality.property.eq">Eq</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#eq SecurityhubAutomationRule#eq}. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCriticality.property.gt">Gt</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#gt SecurityhubAutomationRule#gt}. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCriticality.property.gte">Gte</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#gte SecurityhubAutomationRule#gte}. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCriticality.property.lt">Lt</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#lt SecurityhubAutomationRule#lt}. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCriticality.property.lte">Lte</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#lte SecurityhubAutomationRule#lte}. |
 
 ---
 
@@ -2660,7 +2660,7 @@ Eq *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#eq SecurityhubAutomationRule#eq}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#eq SecurityhubAutomationRule#eq}.
 
 ---
 
@@ -2672,7 +2672,7 @@ Gt *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#gt SecurityhubAutomationRule#gt}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#gt SecurityhubAutomationRule#gt}.
 
 ---
 
@@ -2684,7 +2684,7 @@ Gte *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#gte SecurityhubAutomationRule#gte}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#gte SecurityhubAutomationRule#gte}.
 
 ---
 
@@ -2696,7 +2696,7 @@ Lt *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#lt SecurityhubAutomationRule#lt}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#lt SecurityhubAutomationRule#lt}.
 
 ---
 
@@ -2708,7 +2708,7 @@ Lte *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#lte SecurityhubAutomationRule#lte}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#lte SecurityhubAutomationRule#lte}.
 
 ---
 
@@ -2717,7 +2717,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaDescription.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 &securityhubautomationrule.SecurityhubAutomationRuleCriteriaDescription {
 	Comparison: *string,
@@ -2729,8 +2729,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaDescription.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaDescription.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaDescription.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaDescription.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}. |
 
 ---
 
@@ -2742,7 +2742,7 @@ Comparison *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}.
 
 ---
 
@@ -2754,7 +2754,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}.
 
 ---
 
@@ -2763,7 +2763,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAt.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 &securityhubautomationrule.SecurityhubAutomationRuleCriteriaFirstObservedAt {
 	DateRange: interface{},
@@ -2777,8 +2777,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAt.property.dateRange">DateRange</a></code> | <code>interface{}</code> | date_range block. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAt.property.end">End</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#end SecurityhubAutomationRule#end}. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAt.property.start">Start</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#start SecurityhubAutomationRule#start}. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAt.property.end">End</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#end SecurityhubAutomationRule#end}. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAt.property.start">Start</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#start SecurityhubAutomationRule#start}. |
 
 ---
 
@@ -2792,7 +2792,7 @@ DateRange interface{}
 
 date_range block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#date_range SecurityhubAutomationRule#date_range}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#date_range SecurityhubAutomationRule#date_range}
 
 ---
 
@@ -2804,7 +2804,7 @@ End *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#end SecurityhubAutomationRule#end}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#end SecurityhubAutomationRule#end}.
 
 ---
 
@@ -2816,7 +2816,7 @@ Start *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#start SecurityhubAutomationRule#start}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#start SecurityhubAutomationRule#start}.
 
 ---
 
@@ -2825,7 +2825,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 &securityhubautomationrule.SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange {
 	Unit: *string,
@@ -2837,8 +2837,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange.property.unit">Unit</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#unit SecurityhubAutomationRule#unit}. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange.property.value">Value</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange.property.unit">Unit</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#unit SecurityhubAutomationRule#unit}. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange.property.value">Value</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}. |
 
 ---
 
@@ -2850,7 +2850,7 @@ Unit *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#unit SecurityhubAutomationRule#unit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#unit SecurityhubAutomationRule#unit}.
 
 ---
 
@@ -2862,7 +2862,7 @@ Value *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}.
 
 ---
 
@@ -2871,7 +2871,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaGeneratorId.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 &securityhubautomationrule.SecurityhubAutomationRuleCriteriaGeneratorId {
 	Comparison: *string,
@@ -2883,8 +2883,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaGeneratorId.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaGeneratorId.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaGeneratorId.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaGeneratorId.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}. |
 
 ---
 
@@ -2896,7 +2896,7 @@ Comparison *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}.
 
 ---
 
@@ -2908,7 +2908,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}.
 
 ---
 
@@ -2917,7 +2917,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaId.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 &securityhubautomationrule.SecurityhubAutomationRuleCriteriaId {
 	Comparison: *string,
@@ -2929,8 +2929,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaId.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaId.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaId.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaId.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}. |
 
 ---
 
@@ -2942,7 +2942,7 @@ Comparison *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}.
 
 ---
 
@@ -2954,7 +2954,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}.
 
 ---
 
@@ -2963,7 +2963,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAt.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 &securityhubautomationrule.SecurityhubAutomationRuleCriteriaLastObservedAt {
 	DateRange: interface{},
@@ -2977,8 +2977,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAt.property.dateRange">DateRange</a></code> | <code>interface{}</code> | date_range block. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAt.property.end">End</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#end SecurityhubAutomationRule#end}. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAt.property.start">Start</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#start SecurityhubAutomationRule#start}. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAt.property.end">End</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#end SecurityhubAutomationRule#end}. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAt.property.start">Start</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#start SecurityhubAutomationRule#start}. |
 
 ---
 
@@ -2992,7 +2992,7 @@ DateRange interface{}
 
 date_range block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#date_range SecurityhubAutomationRule#date_range}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#date_range SecurityhubAutomationRule#date_range}
 
 ---
 
@@ -3004,7 +3004,7 @@ End *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#end SecurityhubAutomationRule#end}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#end SecurityhubAutomationRule#end}.
 
 ---
 
@@ -3016,7 +3016,7 @@ Start *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#start SecurityhubAutomationRule#start}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#start SecurityhubAutomationRule#start}.
 
 ---
 
@@ -3025,7 +3025,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtDateRange.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 &securityhubautomationrule.SecurityhubAutomationRuleCriteriaLastObservedAtDateRange {
 	Unit: *string,
@@ -3037,8 +3037,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtDateRange.property.unit">Unit</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#unit SecurityhubAutomationRule#unit}. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtDateRange.property.value">Value</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtDateRange.property.unit">Unit</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#unit SecurityhubAutomationRule#unit}. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtDateRange.property.value">Value</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}. |
 
 ---
 
@@ -3050,7 +3050,7 @@ Unit *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#unit SecurityhubAutomationRule#unit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#unit SecurityhubAutomationRule#unit}.
 
 ---
 
@@ -3062,7 +3062,7 @@ Value *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}.
 
 ---
 
@@ -3071,7 +3071,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteText.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 &securityhubautomationrule.SecurityhubAutomationRuleCriteriaNoteText {
 	Comparison: *string,
@@ -3083,8 +3083,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteText.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteText.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteText.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteText.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}. |
 
 ---
 
@@ -3096,7 +3096,7 @@ Comparison *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}.
 
 ---
 
@@ -3108,7 +3108,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}.
 
 ---
 
@@ -3117,7 +3117,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAt.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 &securityhubautomationrule.SecurityhubAutomationRuleCriteriaNoteUpdatedAt {
 	DateRange: interface{},
@@ -3131,8 +3131,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAt.property.dateRange">DateRange</a></code> | <code>interface{}</code> | date_range block. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAt.property.end">End</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#end SecurityhubAutomationRule#end}. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAt.property.start">Start</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#start SecurityhubAutomationRule#start}. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAt.property.end">End</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#end SecurityhubAutomationRule#end}. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAt.property.start">Start</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#start SecurityhubAutomationRule#start}. |
 
 ---
 
@@ -3146,7 +3146,7 @@ DateRange interface{}
 
 date_range block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#date_range SecurityhubAutomationRule#date_range}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#date_range SecurityhubAutomationRule#date_range}
 
 ---
 
@@ -3158,7 +3158,7 @@ End *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#end SecurityhubAutomationRule#end}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#end SecurityhubAutomationRule#end}.
 
 ---
 
@@ -3170,7 +3170,7 @@ Start *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#start SecurityhubAutomationRule#start}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#start SecurityhubAutomationRule#start}.
 
 ---
 
@@ -3179,7 +3179,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 &securityhubautomationrule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange {
 	Unit: *string,
@@ -3191,8 +3191,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange.property.unit">Unit</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#unit SecurityhubAutomationRule#unit}. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange.property.value">Value</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange.property.unit">Unit</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#unit SecurityhubAutomationRule#unit}. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange.property.value">Value</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}. |
 
 ---
 
@@ -3204,7 +3204,7 @@ Unit *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#unit SecurityhubAutomationRule#unit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#unit SecurityhubAutomationRule#unit}.
 
 ---
 
@@ -3216,7 +3216,7 @@ Value *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}.
 
 ---
 
@@ -3225,7 +3225,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedBy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 &securityhubautomationrule.SecurityhubAutomationRuleCriteriaNoteUpdatedBy {
 	Comparison: *string,
@@ -3237,8 +3237,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedBy.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedBy.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedBy.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedBy.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}. |
 
 ---
 
@@ -3250,7 +3250,7 @@ Comparison *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}.
 
 ---
 
@@ -3262,7 +3262,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}.
 
 ---
 
@@ -3271,7 +3271,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductArn.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 &securityhubautomationrule.SecurityhubAutomationRuleCriteriaProductArn {
 	Comparison: *string,
@@ -3283,8 +3283,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductArn.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductArn.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductArn.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductArn.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}. |
 
 ---
 
@@ -3296,7 +3296,7 @@ Comparison *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}.
 
 ---
 
@@ -3308,7 +3308,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}.
 
 ---
 
@@ -3317,7 +3317,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductName.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 &securityhubautomationrule.SecurityhubAutomationRuleCriteriaProductName {
 	Comparison: *string,
@@ -3329,8 +3329,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductName.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductName.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductName.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductName.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}. |
 
 ---
 
@@ -3342,7 +3342,7 @@ Comparison *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}.
 
 ---
 
@@ -3354,7 +3354,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}.
 
 ---
 
@@ -3363,7 +3363,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRecordState.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 &securityhubautomationrule.SecurityhubAutomationRuleCriteriaRecordState {
 	Comparison: *string,
@@ -3375,8 +3375,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRecordState.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRecordState.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRecordState.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRecordState.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}. |
 
 ---
 
@@ -3388,7 +3388,7 @@ Comparison *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}.
 
 ---
 
@@ -3400,7 +3400,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}.
 
 ---
 
@@ -3409,7 +3409,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsId.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 &securityhubautomationrule.SecurityhubAutomationRuleCriteriaRelatedFindingsId {
 	Comparison: *string,
@@ -3421,8 +3421,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsId.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsId.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsId.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsId.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}. |
 
 ---
 
@@ -3434,7 +3434,7 @@ Comparison *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}.
 
 ---
 
@@ -3446,7 +3446,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}.
 
 ---
 
@@ -3455,7 +3455,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 &securityhubautomationrule.SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn {
 	Comparison: *string,
@@ -3467,8 +3467,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}. |
 
 ---
 
@@ -3480,7 +3480,7 @@ Comparison *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}.
 
 ---
 
@@ -3492,7 +3492,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}.
 
 ---
 
@@ -3501,7 +3501,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationArn.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 &securityhubautomationrule.SecurityhubAutomationRuleCriteriaResourceApplicationArn {
 	Comparison: *string,
@@ -3513,8 +3513,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationArn.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationArn.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationArn.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationArn.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}. |
 
 ---
 
@@ -3526,7 +3526,7 @@ Comparison *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}.
 
 ---
 
@@ -3538,7 +3538,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}.
 
 ---
 
@@ -3547,7 +3547,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationName.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 &securityhubautomationrule.SecurityhubAutomationRuleCriteriaResourceApplicationName {
 	Comparison: *string,
@@ -3559,8 +3559,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationName.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationName.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationName.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationName.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}. |
 
 ---
 
@@ -3572,7 +3572,7 @@ Comparison *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}.
 
 ---
 
@@ -3584,7 +3584,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}.
 
 ---
 
@@ -3593,7 +3593,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceDetailsOther.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 &securityhubautomationrule.SecurityhubAutomationRuleCriteriaResourceDetailsOther {
 	Comparison: *string,
@@ -3606,9 +3606,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceDetailsOther.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceDetailsOther.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#key SecurityhubAutomationRule#key}. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceDetailsOther.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceDetailsOther.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceDetailsOther.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#key SecurityhubAutomationRule#key}. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceDetailsOther.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}. |
 
 ---
 
@@ -3620,7 +3620,7 @@ Comparison *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}.
 
 ---
 
@@ -3632,7 +3632,7 @@ Key *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#key SecurityhubAutomationRule#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#key SecurityhubAutomationRule#key}.
 
 ---
 
@@ -3644,7 +3644,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}.
 
 ---
 
@@ -3653,7 +3653,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceId.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 &securityhubautomationrule.SecurityhubAutomationRuleCriteriaResourceId {
 	Comparison: *string,
@@ -3665,8 +3665,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceId.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceId.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceId.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceId.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}. |
 
 ---
 
@@ -3678,7 +3678,7 @@ Comparison *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}.
 
 ---
 
@@ -3690,7 +3690,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}.
 
 ---
 
@@ -3699,7 +3699,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourcePartition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 &securityhubautomationrule.SecurityhubAutomationRuleCriteriaResourcePartition {
 	Comparison: *string,
@@ -3711,8 +3711,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourcePartition.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourcePartition.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourcePartition.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourcePartition.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}. |
 
 ---
 
@@ -3724,7 +3724,7 @@ Comparison *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}.
 
 ---
 
@@ -3736,7 +3736,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}.
 
 ---
 
@@ -3745,7 +3745,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceRegion.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 &securityhubautomationrule.SecurityhubAutomationRuleCriteriaResourceRegion {
 	Comparison: *string,
@@ -3757,8 +3757,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceRegion.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceRegion.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceRegion.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceRegion.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}. |
 
 ---
 
@@ -3770,7 +3770,7 @@ Comparison *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}.
 
 ---
 
@@ -3782,7 +3782,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}.
 
 ---
 
@@ -3791,7 +3791,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTags.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 &securityhubautomationrule.SecurityhubAutomationRuleCriteriaResourceTags {
 	Comparison: *string,
@@ -3804,9 +3804,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTags.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTags.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#key SecurityhubAutomationRule#key}. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTags.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTags.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTags.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#key SecurityhubAutomationRule#key}. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTags.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}. |
 
 ---
 
@@ -3818,7 +3818,7 @@ Comparison *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}.
 
 ---
 
@@ -3830,7 +3830,7 @@ Key *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#key SecurityhubAutomationRule#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#key SecurityhubAutomationRule#key}.
 
 ---
 
@@ -3842,7 +3842,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}.
 
 ---
 
@@ -3851,7 +3851,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceType.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 &securityhubautomationrule.SecurityhubAutomationRuleCriteriaResourceType {
 	Comparison: *string,
@@ -3863,8 +3863,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceType.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceType.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceType.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceType.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}. |
 
 ---
 
@@ -3876,7 +3876,7 @@ Comparison *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}.
 
 ---
 
@@ -3888,7 +3888,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}.
 
 ---
 
@@ -3897,7 +3897,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSeverityLabel.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 &securityhubautomationrule.SecurityhubAutomationRuleCriteriaSeverityLabel {
 	Comparison: *string,
@@ -3909,8 +3909,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSeverityLabel.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSeverityLabel.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSeverityLabel.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSeverityLabel.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}. |
 
 ---
 
@@ -3922,7 +3922,7 @@ Comparison *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}.
 
 ---
 
@@ -3934,7 +3934,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}.
 
 ---
 
@@ -3943,7 +3943,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSourceUrl.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 &securityhubautomationrule.SecurityhubAutomationRuleCriteriaSourceUrl {
 	Comparison: *string,
@@ -3955,8 +3955,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSourceUrl.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSourceUrl.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSourceUrl.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSourceUrl.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}. |
 
 ---
 
@@ -3968,7 +3968,7 @@ Comparison *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}.
 
 ---
 
@@ -3980,7 +3980,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}.
 
 ---
 
@@ -3989,7 +3989,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTitle.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 &securityhubautomationrule.SecurityhubAutomationRuleCriteriaTitle {
 	Comparison: *string,
@@ -4001,8 +4001,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTitle.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTitle.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTitle.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTitle.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}. |
 
 ---
 
@@ -4014,7 +4014,7 @@ Comparison *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}.
 
 ---
 
@@ -4026,7 +4026,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}.
 
 ---
 
@@ -4035,7 +4035,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaType.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 &securityhubautomationrule.SecurityhubAutomationRuleCriteriaType {
 	Comparison: *string,
@@ -4047,8 +4047,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaType.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaType.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaType.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaType.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}. |
 
 ---
 
@@ -4060,7 +4060,7 @@ Comparison *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}.
 
 ---
 
@@ -4072,7 +4072,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}.
 
 ---
 
@@ -4081,7 +4081,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAt.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 &securityhubautomationrule.SecurityhubAutomationRuleCriteriaUpdatedAt {
 	DateRange: interface{},
@@ -4095,8 +4095,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAt.property.dateRange">DateRange</a></code> | <code>interface{}</code> | date_range block. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAt.property.end">End</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#end SecurityhubAutomationRule#end}. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAt.property.start">Start</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#start SecurityhubAutomationRule#start}. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAt.property.end">End</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#end SecurityhubAutomationRule#end}. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAt.property.start">Start</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#start SecurityhubAutomationRule#start}. |
 
 ---
 
@@ -4110,7 +4110,7 @@ DateRange interface{}
 
 date_range block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#date_range SecurityhubAutomationRule#date_range}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#date_range SecurityhubAutomationRule#date_range}
 
 ---
 
@@ -4122,7 +4122,7 @@ End *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#end SecurityhubAutomationRule#end}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#end SecurityhubAutomationRule#end}.
 
 ---
 
@@ -4134,7 +4134,7 @@ Start *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#start SecurityhubAutomationRule#start}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#start SecurityhubAutomationRule#start}.
 
 ---
 
@@ -4143,7 +4143,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtDateRange.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 &securityhubautomationrule.SecurityhubAutomationRuleCriteriaUpdatedAtDateRange {
 	Unit: *string,
@@ -4155,8 +4155,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtDateRange.property.unit">Unit</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#unit SecurityhubAutomationRule#unit}. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtDateRange.property.value">Value</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtDateRange.property.unit">Unit</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#unit SecurityhubAutomationRule#unit}. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtDateRange.property.value">Value</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}. |
 
 ---
 
@@ -4168,7 +4168,7 @@ Unit *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#unit SecurityhubAutomationRule#unit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#unit SecurityhubAutomationRule#unit}.
 
 ---
 
@@ -4180,7 +4180,7 @@ Value *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}.
 
 ---
 
@@ -4189,7 +4189,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUserDefinedFields.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 &securityhubautomationrule.SecurityhubAutomationRuleCriteriaUserDefinedFields {
 	Comparison: *string,
@@ -4202,9 +4202,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUserDefinedFields.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUserDefinedFields.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#key SecurityhubAutomationRule#key}. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUserDefinedFields.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUserDefinedFields.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUserDefinedFields.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#key SecurityhubAutomationRule#key}. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUserDefinedFields.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}. |
 
 ---
 
@@ -4216,7 +4216,7 @@ Comparison *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}.
 
 ---
 
@@ -4228,7 +4228,7 @@ Key *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#key SecurityhubAutomationRule#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#key SecurityhubAutomationRule#key}.
 
 ---
 
@@ -4240,7 +4240,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}.
 
 ---
 
@@ -4249,7 +4249,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaVerificationState.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 &securityhubautomationrule.SecurityhubAutomationRuleCriteriaVerificationState {
 	Comparison: *string,
@@ -4261,8 +4261,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaVerificationState.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaVerificationState.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaVerificationState.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaVerificationState.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}. |
 
 ---
 
@@ -4274,7 +4274,7 @@ Comparison *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}.
 
 ---
 
@@ -4286,7 +4286,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}.
 
 ---
 
@@ -4295,7 +4295,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaWorkflowStatus.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 &securityhubautomationrule.SecurityhubAutomationRuleCriteriaWorkflowStatus {
 	Comparison: *string,
@@ -4307,8 +4307,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaWorkflowStatus.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}. |
-| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaWorkflowStatus.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaWorkflowStatus.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}. |
+| <code><a href="#@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaWorkflowStatus.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}. |
 
 ---
 
@@ -4320,7 +4320,7 @@ Comparison *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}.
 
 ---
 
@@ -4332,7 +4332,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}.
 
 ---
 
@@ -4343,7 +4343,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleActionsFindingFieldsUpdateList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubAutomationRuleActionsFindingFieldsUpdateList
 ```
@@ -4503,7 +4503,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateNoteList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleActionsFindingFieldsUpdateNoteList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubAutomationRuleActionsFindingFieldsUpdateNoteList
 ```
@@ -4663,7 +4663,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateNoteOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleActionsFindingFieldsUpdateNoteOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubAutomationRuleActionsFindingFieldsUpdateNoteOutputReference
 ```
@@ -4974,7 +4974,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleActionsFindingFieldsUpdateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubAutomationRuleActionsFindingFieldsUpdateOutputReference
 ```
@@ -5554,7 +5554,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindingsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindingsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindingsList
 ```
@@ -5714,7 +5714,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindingsOutputReference
 ```
@@ -6025,7 +6025,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverityList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleActionsFindingFieldsUpdateSeverityList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverityList
 ```
@@ -6185,7 +6185,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleActionsFindingFieldsUpdateSeverityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverityOutputReference
 ```
@@ -6510,7 +6510,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflowList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflowList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflowList
 ```
@@ -6670,7 +6670,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflowOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflowOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflowOutputReference
 ```
@@ -6966,7 +6966,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleActionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubAutomationRuleActionsList
 ```
@@ -7126,7 +7126,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleActionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubAutomationRuleActionsOutputReference
 ```
@@ -7464,7 +7464,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountIdList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaAwsAccountIdList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubAutomationRuleCriteriaAwsAccountIdList
 ```
@@ -7624,7 +7624,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountIdOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaAwsAccountIdOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubAutomationRuleCriteriaAwsAccountIdOutputReference
 ```
@@ -7935,7 +7935,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountNameList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaAwsAccountNameList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubAutomationRuleCriteriaAwsAccountNameList
 ```
@@ -8095,7 +8095,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountNameOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaAwsAccountNameOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubAutomationRuleCriteriaAwsAccountNameOutputReference
 ```
@@ -8406,7 +8406,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCompanyNameList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaCompanyNameList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubAutomationRuleCriteriaCompanyNameList
 ```
@@ -8566,7 +8566,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCompanyNameOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaCompanyNameOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubAutomationRuleCriteriaCompanyNameOutputReference
 ```
@@ -8877,7 +8877,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsIdList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsIdList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsIdList
 ```
@@ -9037,7 +9037,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsIdOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsIdOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsIdOutputReference
 ```
@@ -9348,7 +9348,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceSecurityControlIdList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaComplianceSecurityControlIdList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubAutomationRuleCriteriaComplianceSecurityControlIdList
 ```
@@ -9508,7 +9508,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceSecurityControlIdOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaComplianceSecurityControlIdOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubAutomationRuleCriteriaComplianceSecurityControlIdOutputReference
 ```
@@ -9819,7 +9819,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceStatusList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaComplianceStatusList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubAutomationRuleCriteriaComplianceStatusList
 ```
@@ -9979,7 +9979,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceStatusOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaComplianceStatusOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubAutomationRuleCriteriaComplianceStatusOutputReference
 ```
@@ -10290,7 +10290,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaConfidenceList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaConfidenceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubAutomationRuleCriteriaConfidenceList
 ```
@@ -10450,7 +10450,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaConfidenceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaConfidenceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubAutomationRuleCriteriaConfidenceOutputReference
 ```
@@ -10862,7 +10862,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtDateRangeList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaCreatedAtDateRangeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubAutomationRuleCriteriaCreatedAtDateRangeList
 ```
@@ -11022,7 +11022,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtDateRangeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaCreatedAtDateRangeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubAutomationRuleCriteriaCreatedAtDateRangeOutputReference
 ```
@@ -11333,7 +11333,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaCreatedAtList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubAutomationRuleCriteriaCreatedAtList
 ```
@@ -11493,7 +11493,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaCreatedAtOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubAutomationRuleCriteriaCreatedAtOutputReference
 ```
@@ -11860,7 +11860,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCriticalityList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaCriticalityList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubAutomationRuleCriteriaCriticalityList
 ```
@@ -12020,7 +12020,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCriticalityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaCriticalityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubAutomationRuleCriteriaCriticalityOutputReference
 ```
@@ -12432,7 +12432,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaDescriptionList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaDescriptionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubAutomationRuleCriteriaDescriptionList
 ```
@@ -12592,7 +12592,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaDescriptionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaDescriptionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubAutomationRuleCriteriaDescriptionOutputReference
 ```
@@ -12903,7 +12903,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtDateRangeList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaFirstObservedAtDateRangeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubAutomationRuleCriteriaFirstObservedAtDateRangeList
 ```
@@ -13063,7 +13063,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtDateRangeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaFirstObservedAtDateRangeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubAutomationRuleCriteriaFirstObservedAtDateRangeOutputReference
 ```
@@ -13374,7 +13374,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaFirstObservedAtList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubAutomationRuleCriteriaFirstObservedAtList
 ```
@@ -13534,7 +13534,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaFirstObservedAtOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubAutomationRuleCriteriaFirstObservedAtOutputReference
 ```
@@ -13901,7 +13901,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaGeneratorIdList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaGeneratorIdList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubAutomationRuleCriteriaGeneratorIdList
 ```
@@ -14061,7 +14061,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaGeneratorIdOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaGeneratorIdOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubAutomationRuleCriteriaGeneratorIdOutputReference
 ```
@@ -14372,7 +14372,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaIdList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaIdList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubAutomationRuleCriteriaIdList
 ```
@@ -14532,7 +14532,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaIdOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaIdOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubAutomationRuleCriteriaIdOutputReference
 ```
@@ -14843,7 +14843,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtDateRangeList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaLastObservedAtDateRangeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubAutomationRuleCriteriaLastObservedAtDateRangeList
 ```
@@ -15003,7 +15003,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtDateRangeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaLastObservedAtDateRangeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubAutomationRuleCriteriaLastObservedAtDateRangeOutputReference
 ```
@@ -15314,7 +15314,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaLastObservedAtList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubAutomationRuleCriteriaLastObservedAtList
 ```
@@ -15474,7 +15474,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaLastObservedAtOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubAutomationRuleCriteriaLastObservedAtOutputReference
 ```
@@ -15841,7 +15841,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubAutomationRuleCriteriaList
 ```
@@ -16001,7 +16001,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteTextList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaNoteTextList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubAutomationRuleCriteriaNoteTextList
 ```
@@ -16161,7 +16161,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteTextOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaNoteTextOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubAutomationRuleCriteriaNoteTextOutputReference
 ```
@@ -16472,7 +16472,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRangeList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRangeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRangeList
 ```
@@ -16632,7 +16632,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRangeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRangeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRangeOutputReference
 ```
@@ -16943,7 +16943,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaNoteUpdatedAtList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubAutomationRuleCriteriaNoteUpdatedAtList
 ```
@@ -17103,7 +17103,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaNoteUpdatedAtOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubAutomationRuleCriteriaNoteUpdatedAtOutputReference
 ```
@@ -17470,7 +17470,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedByList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaNoteUpdatedByList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubAutomationRuleCriteriaNoteUpdatedByList
 ```
@@ -17630,7 +17630,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedByOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaNoteUpdatedByOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubAutomationRuleCriteriaNoteUpdatedByOutputReference
 ```
@@ -17941,7 +17941,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubAutomationRuleCriteriaOutputReference
 ```
@@ -19804,7 +19804,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductArnList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaProductArnList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubAutomationRuleCriteriaProductArnList
 ```
@@ -19964,7 +19964,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductArnOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaProductArnOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubAutomationRuleCriteriaProductArnOutputReference
 ```
@@ -20275,7 +20275,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductNameList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaProductNameList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubAutomationRuleCriteriaProductNameList
 ```
@@ -20435,7 +20435,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductNameOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaProductNameOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubAutomationRuleCriteriaProductNameOutputReference
 ```
@@ -20746,7 +20746,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRecordStateList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaRecordStateList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubAutomationRuleCriteriaRecordStateList
 ```
@@ -20906,7 +20906,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRecordStateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaRecordStateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubAutomationRuleCriteriaRecordStateOutputReference
 ```
@@ -21217,7 +21217,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsIdList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaRelatedFindingsIdList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubAutomationRuleCriteriaRelatedFindingsIdList
 ```
@@ -21377,7 +21377,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsIdOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaRelatedFindingsIdOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubAutomationRuleCriteriaRelatedFindingsIdOutputReference
 ```
@@ -21688,7 +21688,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsProductArnList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaRelatedFindingsProductArnList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubAutomationRuleCriteriaRelatedFindingsProductArnList
 ```
@@ -21848,7 +21848,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsProductArnOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaRelatedFindingsProductArnOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubAutomationRuleCriteriaRelatedFindingsProductArnOutputReference
 ```
@@ -22159,7 +22159,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationArnList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaResourceApplicationArnList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubAutomationRuleCriteriaResourceApplicationArnList
 ```
@@ -22319,7 +22319,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationArnOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaResourceApplicationArnOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubAutomationRuleCriteriaResourceApplicationArnOutputReference
 ```
@@ -22630,7 +22630,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationNameList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaResourceApplicationNameList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubAutomationRuleCriteriaResourceApplicationNameList
 ```
@@ -22790,7 +22790,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationNameOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaResourceApplicationNameOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubAutomationRuleCriteriaResourceApplicationNameOutputReference
 ```
@@ -23101,7 +23101,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceDetailsOtherList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaResourceDetailsOtherList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubAutomationRuleCriteriaResourceDetailsOtherList
 ```
@@ -23261,7 +23261,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceDetailsOtherOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaResourceDetailsOtherOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubAutomationRuleCriteriaResourceDetailsOtherOutputReference
 ```
@@ -23594,7 +23594,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceIdList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaResourceIdList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubAutomationRuleCriteriaResourceIdList
 ```
@@ -23754,7 +23754,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceIdOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaResourceIdOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubAutomationRuleCriteriaResourceIdOutputReference
 ```
@@ -24065,7 +24065,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourcePartitionList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaResourcePartitionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubAutomationRuleCriteriaResourcePartitionList
 ```
@@ -24225,7 +24225,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourcePartitionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaResourcePartitionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubAutomationRuleCriteriaResourcePartitionOutputReference
 ```
@@ -24536,7 +24536,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceRegionList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaResourceRegionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubAutomationRuleCriteriaResourceRegionList
 ```
@@ -24696,7 +24696,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceRegionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaResourceRegionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubAutomationRuleCriteriaResourceRegionOutputReference
 ```
@@ -25007,7 +25007,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTagsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaResourceTagsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubAutomationRuleCriteriaResourceTagsList
 ```
@@ -25167,7 +25167,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTagsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaResourceTagsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubAutomationRuleCriteriaResourceTagsOutputReference
 ```
@@ -25500,7 +25500,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTypeList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaResourceTypeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubAutomationRuleCriteriaResourceTypeList
 ```
@@ -25660,7 +25660,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTypeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaResourceTypeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubAutomationRuleCriteriaResourceTypeOutputReference
 ```
@@ -25971,7 +25971,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSeverityLabelList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaSeverityLabelList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubAutomationRuleCriteriaSeverityLabelList
 ```
@@ -26131,7 +26131,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSeverityLabelOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaSeverityLabelOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubAutomationRuleCriteriaSeverityLabelOutputReference
 ```
@@ -26442,7 +26442,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSourceUrlList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaSourceUrlList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubAutomationRuleCriteriaSourceUrlList
 ```
@@ -26602,7 +26602,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSourceUrlOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaSourceUrlOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubAutomationRuleCriteriaSourceUrlOutputReference
 ```
@@ -26913,7 +26913,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTitleList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaTitleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubAutomationRuleCriteriaTitleList
 ```
@@ -27073,7 +27073,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTitleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaTitleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubAutomationRuleCriteriaTitleOutputReference
 ```
@@ -27384,7 +27384,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTypeList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaTypeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubAutomationRuleCriteriaTypeList
 ```
@@ -27544,7 +27544,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTypeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaTypeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubAutomationRuleCriteriaTypeOutputReference
 ```
@@ -27855,7 +27855,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtDateRangeList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaUpdatedAtDateRangeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubAutomationRuleCriteriaUpdatedAtDateRangeList
 ```
@@ -28015,7 +28015,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtDateRangeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaUpdatedAtDateRangeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubAutomationRuleCriteriaUpdatedAtDateRangeOutputReference
 ```
@@ -28326,7 +28326,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaUpdatedAtList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubAutomationRuleCriteriaUpdatedAtList
 ```
@@ -28486,7 +28486,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaUpdatedAtOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubAutomationRuleCriteriaUpdatedAtOutputReference
 ```
@@ -28853,7 +28853,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUserDefinedFieldsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaUserDefinedFieldsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubAutomationRuleCriteriaUserDefinedFieldsList
 ```
@@ -29013,7 +29013,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUserDefinedFieldsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaUserDefinedFieldsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubAutomationRuleCriteriaUserDefinedFieldsOutputReference
 ```
@@ -29346,7 +29346,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaVerificationStateList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaVerificationStateList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubAutomationRuleCriteriaVerificationStateList
 ```
@@ -29506,7 +29506,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaVerificationStateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaVerificationStateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubAutomationRuleCriteriaVerificationStateOutputReference
 ```
@@ -29817,7 +29817,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaWorkflowStatusList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaWorkflowStatusList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubAutomationRuleCriteriaWorkflowStatusList
 ```
@@ -29977,7 +29977,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaWorkflowStatusOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubautomationrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaWorkflowStatusOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubAutomationRuleCriteriaWorkflowStatusOutputReference
 ```

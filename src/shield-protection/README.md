@@ -1,3 +1,3 @@
 # `aws_shield_protection`
 
-Refer to the Terraform Registry for docs: [`aws_shield_protection`](https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/shield_protection).
+Refer to the Terraform Registry for docs: [`aws_shield_protection`](https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/shield_protection).
