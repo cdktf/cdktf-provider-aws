@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/verifiedaccess_endpoint
+// https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/verifiedaccess_endpoint
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,98 +8,581 @@ import * as cdktf from 'cdktf';
 
 export interface VerifiedaccessEndpointConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/verifiedaccess_endpoint#application_domain VerifiedaccessEndpoint#application_domain}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/verifiedaccess_endpoint#application_domain VerifiedaccessEndpoint#application_domain}
   */
-  readonly applicationDomain: string;
+  readonly applicationDomain?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/verifiedaccess_endpoint#attachment_type VerifiedaccessEndpoint#attachment_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/verifiedaccess_endpoint#attachment_type VerifiedaccessEndpoint#attachment_type}
   */
   readonly attachmentType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/verifiedaccess_endpoint#description VerifiedaccessEndpoint#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/verifiedaccess_endpoint#description VerifiedaccessEndpoint#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/verifiedaccess_endpoint#domain_certificate_arn VerifiedaccessEndpoint#domain_certificate_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/verifiedaccess_endpoint#domain_certificate_arn VerifiedaccessEndpoint#domain_certificate_arn}
   */
-  readonly domainCertificateArn: string;
+  readonly domainCertificateArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/verifiedaccess_endpoint#endpoint_domain_prefix VerifiedaccessEndpoint#endpoint_domain_prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/verifiedaccess_endpoint#endpoint_domain_prefix VerifiedaccessEndpoint#endpoint_domain_prefix}
   */
-  readonly endpointDomainPrefix: string;
+  readonly endpointDomainPrefix?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/verifiedaccess_endpoint#endpoint_type VerifiedaccessEndpoint#endpoint_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/verifiedaccess_endpoint#endpoint_type VerifiedaccessEndpoint#endpoint_type}
   */
   readonly endpointType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/verifiedaccess_endpoint#id VerifiedaccessEndpoint#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/verifiedaccess_endpoint#id VerifiedaccessEndpoint#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/verifiedaccess_endpoint#policy_document VerifiedaccessEndpoint#policy_document}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/verifiedaccess_endpoint#policy_document VerifiedaccessEndpoint#policy_document}
   */
   readonly policyDocument?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/verifiedaccess_endpoint#security_group_ids VerifiedaccessEndpoint#security_group_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/verifiedaccess_endpoint#security_group_ids VerifiedaccessEndpoint#security_group_ids}
   */
   readonly securityGroupIds?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/verifiedaccess_endpoint#tags VerifiedaccessEndpoint#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/verifiedaccess_endpoint#tags VerifiedaccessEndpoint#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/verifiedaccess_endpoint#tags_all VerifiedaccessEndpoint#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/verifiedaccess_endpoint#tags_all VerifiedaccessEndpoint#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/verifiedaccess_endpoint#verified_access_group_id VerifiedaccessEndpoint#verified_access_group_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/verifiedaccess_endpoint#verified_access_group_id VerifiedaccessEndpoint#verified_access_group_id}
   */
   readonly verifiedAccessGroupId: string;
   /**
+  * cidr_options block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/verifiedaccess_endpoint#cidr_options VerifiedaccessEndpoint#cidr_options}
+  */
+  readonly cidrOptions?: VerifiedaccessEndpointCidrOptions;
+  /**
   * load_balancer_options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/verifiedaccess_endpoint#load_balancer_options VerifiedaccessEndpoint#load_balancer_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/verifiedaccess_endpoint#load_balancer_options VerifiedaccessEndpoint#load_balancer_options}
   */
   readonly loadBalancerOptions?: VerifiedaccessEndpointLoadBalancerOptions;
   /**
   * network_interface_options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/verifiedaccess_endpoint#network_interface_options VerifiedaccessEndpoint#network_interface_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/verifiedaccess_endpoint#network_interface_options VerifiedaccessEndpoint#network_interface_options}
   */
   readonly networkInterfaceOptions?: VerifiedaccessEndpointNetworkInterfaceOptions;
   /**
+  * rds_options block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/verifiedaccess_endpoint#rds_options VerifiedaccessEndpoint#rds_options}
+  */
+  readonly rdsOptions?: VerifiedaccessEndpointRdsOptions;
+  /**
   * sse_specification block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/verifiedaccess_endpoint#sse_specification VerifiedaccessEndpoint#sse_specification}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/verifiedaccess_endpoint#sse_specification VerifiedaccessEndpoint#sse_specification}
   */
   readonly sseSpecification?: VerifiedaccessEndpointSseSpecification;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/verifiedaccess_endpoint#timeouts VerifiedaccessEndpoint#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/verifiedaccess_endpoint#timeouts VerifiedaccessEndpoint#timeouts}
   */
   readonly timeouts?: VerifiedaccessEndpointTimeouts;
 }
-export interface VerifiedaccessEndpointLoadBalancerOptions {
+export interface VerifiedaccessEndpointCidrOptionsPortRange {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/verifiedaccess_endpoint#load_balancer_arn VerifiedaccessEndpoint#load_balancer_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/verifiedaccess_endpoint#from_port VerifiedaccessEndpoint#from_port}
   */
-  readonly loadBalancerArn?: string;
+  readonly fromPort: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/verifiedaccess_endpoint#port VerifiedaccessEndpoint#port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/verifiedaccess_endpoint#to_port VerifiedaccessEndpoint#to_port}
   */
-  readonly port?: number;
+  readonly toPort: number;
+}
+
+export function verifiedaccessEndpointCidrOptionsPortRangeToTerraform(struct?: VerifiedaccessEndpointCidrOptionsPortRange | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    from_port: cdktf.numberToTerraform(struct!.fromPort),
+    to_port: cdktf.numberToTerraform(struct!.toPort),
+  }
+}
+
+
+export function verifiedaccessEndpointCidrOptionsPortRangeToHclTerraform(struct?: VerifiedaccessEndpointCidrOptionsPortRange | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    from_port: {
+      value: cdktf.numberToHclTerraform(struct!.fromPort),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    to_port: {
+      value: cdktf.numberToHclTerraform(struct!.toPort),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class VerifiedaccessEndpointCidrOptionsPortRangeOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/verifiedaccess_endpoint#protocol VerifiedaccessEndpoint#protocol}
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): VerifiedaccessEndpointCidrOptionsPortRange | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._fromPort !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.fromPort = this._fromPort;
+    }
+    if (this._toPort !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.toPort = this._toPort;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: VerifiedaccessEndpointCidrOptionsPortRange | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._fromPort = undefined;
+      this._toPort = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._fromPort = value.fromPort;
+      this._toPort = value.toPort;
+    }
+  }
+
+  // from_port - computed: false, optional: false, required: true
+  private _fromPort?: number; 
+  public get fromPort() {
+    return this.getNumberAttribute('from_port');
+  }
+  public set fromPort(value: number) {
+    this._fromPort = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get fromPortInput() {
+    return this._fromPort;
+  }
+
+  // to_port - computed: false, optional: false, required: true
+  private _toPort?: number; 
+  public get toPort() {
+    return this.getNumberAttribute('to_port');
+  }
+  public set toPort(value: number) {
+    this._toPort = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get toPortInput() {
+    return this._toPort;
+  }
+}
+
+export class VerifiedaccessEndpointCidrOptionsPortRangeList extends cdktf.ComplexList {
+  public internalValue? : VerifiedaccessEndpointCidrOptionsPortRange[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): VerifiedaccessEndpointCidrOptionsPortRangeOutputReference {
+    return new VerifiedaccessEndpointCidrOptionsPortRangeOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface VerifiedaccessEndpointCidrOptions {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/verifiedaccess_endpoint#cidr VerifiedaccessEndpoint#cidr}
+  */
+  readonly cidr: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/verifiedaccess_endpoint#protocol VerifiedaccessEndpoint#protocol}
   */
   readonly protocol?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/verifiedaccess_endpoint#subnet_ids VerifiedaccessEndpoint#subnet_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/verifiedaccess_endpoint#subnet_ids VerifiedaccessEndpoint#subnet_ids}
   */
   readonly subnetIds?: string[];
+  /**
+  * port_range block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/verifiedaccess_endpoint#port_range VerifiedaccessEndpoint#port_range}
+  */
+  readonly portRange: VerifiedaccessEndpointCidrOptionsPortRange[] | cdktf.IResolvable;
+}
+
+export function verifiedaccessEndpointCidrOptionsToTerraform(struct?: VerifiedaccessEndpointCidrOptionsOutputReference | VerifiedaccessEndpointCidrOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    cidr: cdktf.stringToTerraform(struct!.cidr),
+    protocol: cdktf.stringToTerraform(struct!.protocol),
+    subnet_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.subnetIds),
+    port_range: cdktf.listMapper(verifiedaccessEndpointCidrOptionsPortRangeToTerraform, true)(struct!.portRange),
+  }
+}
+
+
+export function verifiedaccessEndpointCidrOptionsToHclTerraform(struct?: VerifiedaccessEndpointCidrOptionsOutputReference | VerifiedaccessEndpointCidrOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    cidr: {
+      value: cdktf.stringToHclTerraform(struct!.cidr),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    protocol: {
+      value: cdktf.stringToHclTerraform(struct!.protocol),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    subnet_ids: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.subnetIds),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    port_range: {
+      value: cdktf.listMapperHcl(verifiedaccessEndpointCidrOptionsPortRangeToHclTerraform, true)(struct!.portRange),
+      isBlock: true,
+      type: "set",
+      storageClassType: "VerifiedaccessEndpointCidrOptionsPortRangeList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class VerifiedaccessEndpointCidrOptionsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): VerifiedaccessEndpointCidrOptions | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._cidr !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.cidr = this._cidr;
+    }
+    if (this._protocol !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.protocol = this._protocol;
+    }
+    if (this._subnetIds !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.subnetIds = this._subnetIds;
+    }
+    if (this._portRange?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.portRange = this._portRange?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: VerifiedaccessEndpointCidrOptions | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._cidr = undefined;
+      this._protocol = undefined;
+      this._subnetIds = undefined;
+      this._portRange.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._cidr = value.cidr;
+      this._protocol = value.protocol;
+      this._subnetIds = value.subnetIds;
+      this._portRange.internalValue = value.portRange;
+    }
+  }
+
+  // cidr - computed: false, optional: false, required: true
+  private _cidr?: string; 
+  public get cidr() {
+    return this.getStringAttribute('cidr');
+  }
+  public set cidr(value: string) {
+    this._cidr = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get cidrInput() {
+    return this._cidr;
+  }
+
+  // protocol - computed: false, optional: true, required: false
+  private _protocol?: string; 
+  public get protocol() {
+    return this.getStringAttribute('protocol');
+  }
+  public set protocol(value: string) {
+    this._protocol = value;
+  }
+  public resetProtocol() {
+    this._protocol = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get protocolInput() {
+    return this._protocol;
+  }
+
+  // subnet_ids - computed: false, optional: true, required: false
+  private _subnetIds?: string[]; 
+  public get subnetIds() {
+    return cdktf.Fn.tolist(this.getListAttribute('subnet_ids'));
+  }
+  public set subnetIds(value: string[]) {
+    this._subnetIds = value;
+  }
+  public resetSubnetIds() {
+    this._subnetIds = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get subnetIdsInput() {
+    return this._subnetIds;
+  }
+
+  // port_range - computed: false, optional: false, required: true
+  private _portRange = new VerifiedaccessEndpointCidrOptionsPortRangeList(this, "port_range", true);
+  public get portRange() {
+    return this._portRange;
+  }
+  public putPortRange(value: VerifiedaccessEndpointCidrOptionsPortRange[] | cdktf.IResolvable) {
+    this._portRange.internalValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get portRangeInput() {
+    return this._portRange.internalValue;
+  }
+}
+export interface VerifiedaccessEndpointLoadBalancerOptionsPortRange {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/verifiedaccess_endpoint#from_port VerifiedaccessEndpoint#from_port}
+  */
+  readonly fromPort: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/verifiedaccess_endpoint#to_port VerifiedaccessEndpoint#to_port}
+  */
+  readonly toPort: number;
+}
+
+export function verifiedaccessEndpointLoadBalancerOptionsPortRangeToTerraform(struct?: VerifiedaccessEndpointLoadBalancerOptionsPortRange | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    from_port: cdktf.numberToTerraform(struct!.fromPort),
+    to_port: cdktf.numberToTerraform(struct!.toPort),
+  }
+}
+
+
+export function verifiedaccessEndpointLoadBalancerOptionsPortRangeToHclTerraform(struct?: VerifiedaccessEndpointLoadBalancerOptionsPortRange | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    from_port: {
+      value: cdktf.numberToHclTerraform(struct!.fromPort),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    to_port: {
+      value: cdktf.numberToHclTerraform(struct!.toPort),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class VerifiedaccessEndpointLoadBalancerOptionsPortRangeOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): VerifiedaccessEndpointLoadBalancerOptionsPortRange | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._fromPort !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.fromPort = this._fromPort;
+    }
+    if (this._toPort !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.toPort = this._toPort;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: VerifiedaccessEndpointLoadBalancerOptionsPortRange | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._fromPort = undefined;
+      this._toPort = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._fromPort = value.fromPort;
+      this._toPort = value.toPort;
+    }
+  }
+
+  // from_port - computed: false, optional: false, required: true
+  private _fromPort?: number; 
+  public get fromPort() {
+    return this.getNumberAttribute('from_port');
+  }
+  public set fromPort(value: number) {
+    this._fromPort = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get fromPortInput() {
+    return this._fromPort;
+  }
+
+  // to_port - computed: false, optional: false, required: true
+  private _toPort?: number; 
+  public get toPort() {
+    return this.getNumberAttribute('to_port');
+  }
+  public set toPort(value: number) {
+    this._toPort = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get toPortInput() {
+    return this._toPort;
+  }
+}
+
+export class VerifiedaccessEndpointLoadBalancerOptionsPortRangeList extends cdktf.ComplexList {
+  public internalValue? : VerifiedaccessEndpointLoadBalancerOptionsPortRange[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): VerifiedaccessEndpointLoadBalancerOptionsPortRangeOutputReference {
+    return new VerifiedaccessEndpointLoadBalancerOptionsPortRangeOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface VerifiedaccessEndpointLoadBalancerOptions {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/verifiedaccess_endpoint#load_balancer_arn VerifiedaccessEndpoint#load_balancer_arn}
+  */
+  readonly loadBalancerArn?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/verifiedaccess_endpoint#port VerifiedaccessEndpoint#port}
+  */
+  readonly port?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/verifiedaccess_endpoint#protocol VerifiedaccessEndpoint#protocol}
+  */
+  readonly protocol?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/verifiedaccess_endpoint#subnet_ids VerifiedaccessEndpoint#subnet_ids}
+  */
+  readonly subnetIds?: string[];
+  /**
+  * port_range block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/verifiedaccess_endpoint#port_range VerifiedaccessEndpoint#port_range}
+  */
+  readonly portRange?: VerifiedaccessEndpointLoadBalancerOptionsPortRange[] | cdktf.IResolvable;
 }
 
 export function verifiedaccessEndpointLoadBalancerOptionsToTerraform(struct?: VerifiedaccessEndpointLoadBalancerOptionsOutputReference | VerifiedaccessEndpointLoadBalancerOptions): any {
@@ -117,6 +595,7 @@ export function verifiedaccessEndpointLoadBalancerOptionsToTerraform(struct?: Ve
     port: cdktf.numberToTerraform(struct!.port),
     protocol: cdktf.stringToTerraform(struct!.protocol),
     subnet_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.subnetIds),
+    port_range: cdktf.listMapper(verifiedaccessEndpointLoadBalancerOptionsPortRangeToTerraform, true)(struct!.portRange),
   }
 }
 
@@ -150,6 +629,12 @@ export function verifiedaccessEndpointLoadBalancerOptionsToHclTerraform(struct?:
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
+    },
+    port_range: {
+      value: cdktf.listMapperHcl(verifiedaccessEndpointLoadBalancerOptionsPortRangeToHclTerraform, true)(struct!.portRange),
+      isBlock: true,
+      type: "set",
+      storageClassType: "VerifiedaccessEndpointLoadBalancerOptionsPortRangeList",
     },
   };
 
@@ -187,6 +672,10 @@ export class VerifiedaccessEndpointLoadBalancerOptionsOutputReference extends cd
       hasAnyValues = true;
       internalValueResult.subnetIds = this._subnetIds;
     }
+    if (this._portRange?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.portRange = this._portRange?.internalValue;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -197,6 +686,7 @@ export class VerifiedaccessEndpointLoadBalancerOptionsOutputReference extends cd
       this._port = undefined;
       this._protocol = undefined;
       this._subnetIds = undefined;
+      this._portRange.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
@@ -204,6 +694,7 @@ export class VerifiedaccessEndpointLoadBalancerOptionsOutputReference extends cd
       this._port = value.port;
       this._protocol = value.protocol;
       this._subnetIds = value.subnetIds;
+      this._portRange.internalValue = value.portRange;
     }
   }
 
@@ -270,20 +761,185 @@ export class VerifiedaccessEndpointLoadBalancerOptionsOutputReference extends cd
   public get subnetIdsInput() {
     return this._subnetIds;
   }
+
+  // port_range - computed: false, optional: true, required: false
+  private _portRange = new VerifiedaccessEndpointLoadBalancerOptionsPortRangeList(this, "port_range", true);
+  public get portRange() {
+    return this._portRange;
+  }
+  public putPortRange(value: VerifiedaccessEndpointLoadBalancerOptionsPortRange[] | cdktf.IResolvable) {
+    this._portRange.internalValue = value;
+  }
+  public resetPortRange() {
+    this._portRange.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get portRangeInput() {
+    return this._portRange.internalValue;
+  }
+}
+export interface VerifiedaccessEndpointNetworkInterfaceOptionsPortRange {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/verifiedaccess_endpoint#from_port VerifiedaccessEndpoint#from_port}
+  */
+  readonly fromPort: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/verifiedaccess_endpoint#to_port VerifiedaccessEndpoint#to_port}
+  */
+  readonly toPort: number;
+}
+
+export function verifiedaccessEndpointNetworkInterfaceOptionsPortRangeToTerraform(struct?: VerifiedaccessEndpointNetworkInterfaceOptionsPortRange | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    from_port: cdktf.numberToTerraform(struct!.fromPort),
+    to_port: cdktf.numberToTerraform(struct!.toPort),
+  }
+}
+
+
+export function verifiedaccessEndpointNetworkInterfaceOptionsPortRangeToHclTerraform(struct?: VerifiedaccessEndpointNetworkInterfaceOptionsPortRange | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    from_port: {
+      value: cdktf.numberToHclTerraform(struct!.fromPort),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    to_port: {
+      value: cdktf.numberToHclTerraform(struct!.toPort),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class VerifiedaccessEndpointNetworkInterfaceOptionsPortRangeOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): VerifiedaccessEndpointNetworkInterfaceOptionsPortRange | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._fromPort !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.fromPort = this._fromPort;
+    }
+    if (this._toPort !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.toPort = this._toPort;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: VerifiedaccessEndpointNetworkInterfaceOptionsPortRange | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._fromPort = undefined;
+      this._toPort = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._fromPort = value.fromPort;
+      this._toPort = value.toPort;
+    }
+  }
+
+  // from_port - computed: false, optional: false, required: true
+  private _fromPort?: number; 
+  public get fromPort() {
+    return this.getNumberAttribute('from_port');
+  }
+  public set fromPort(value: number) {
+    this._fromPort = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get fromPortInput() {
+    return this._fromPort;
+  }
+
+  // to_port - computed: false, optional: false, required: true
+  private _toPort?: number; 
+  public get toPort() {
+    return this.getNumberAttribute('to_port');
+  }
+  public set toPort(value: number) {
+    this._toPort = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get toPortInput() {
+    return this._toPort;
+  }
+}
+
+export class VerifiedaccessEndpointNetworkInterfaceOptionsPortRangeList extends cdktf.ComplexList {
+  public internalValue? : VerifiedaccessEndpointNetworkInterfaceOptionsPortRange[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): VerifiedaccessEndpointNetworkInterfaceOptionsPortRangeOutputReference {
+    return new VerifiedaccessEndpointNetworkInterfaceOptionsPortRangeOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
 }
 export interface VerifiedaccessEndpointNetworkInterfaceOptions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/verifiedaccess_endpoint#network_interface_id VerifiedaccessEndpoint#network_interface_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/verifiedaccess_endpoint#network_interface_id VerifiedaccessEndpoint#network_interface_id}
   */
   readonly networkInterfaceId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/verifiedaccess_endpoint#port VerifiedaccessEndpoint#port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/verifiedaccess_endpoint#port VerifiedaccessEndpoint#port}
   */
   readonly port?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/verifiedaccess_endpoint#protocol VerifiedaccessEndpoint#protocol}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/verifiedaccess_endpoint#protocol VerifiedaccessEndpoint#protocol}
   */
   readonly protocol?: string;
+  /**
+  * port_range block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/verifiedaccess_endpoint#port_range VerifiedaccessEndpoint#port_range}
+  */
+  readonly portRange?: VerifiedaccessEndpointNetworkInterfaceOptionsPortRange[] | cdktf.IResolvable;
 }
 
 export function verifiedaccessEndpointNetworkInterfaceOptionsToTerraform(struct?: VerifiedaccessEndpointNetworkInterfaceOptionsOutputReference | VerifiedaccessEndpointNetworkInterfaceOptions): any {
@@ -295,6 +951,7 @@ export function verifiedaccessEndpointNetworkInterfaceOptionsToTerraform(struct?
     network_interface_id: cdktf.stringToTerraform(struct!.networkInterfaceId),
     port: cdktf.numberToTerraform(struct!.port),
     protocol: cdktf.stringToTerraform(struct!.protocol),
+    port_range: cdktf.listMapper(verifiedaccessEndpointNetworkInterfaceOptionsPortRangeToTerraform, true)(struct!.portRange),
   }
 }
 
@@ -322,6 +979,12 @@ export function verifiedaccessEndpointNetworkInterfaceOptionsToHclTerraform(stru
       isBlock: false,
       type: "simple",
       storageClassType: "string",
+    },
+    port_range: {
+      value: cdktf.listMapperHcl(verifiedaccessEndpointNetworkInterfaceOptionsPortRangeToHclTerraform, true)(struct!.portRange),
+      isBlock: true,
+      type: "set",
+      storageClassType: "VerifiedaccessEndpointNetworkInterfaceOptionsPortRangeList",
     },
   };
 
@@ -355,6 +1018,10 @@ export class VerifiedaccessEndpointNetworkInterfaceOptionsOutputReference extend
       hasAnyValues = true;
       internalValueResult.protocol = this._protocol;
     }
+    if (this._portRange?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.portRange = this._portRange?.internalValue;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -364,12 +1031,14 @@ export class VerifiedaccessEndpointNetworkInterfaceOptionsOutputReference extend
       this._networkInterfaceId = undefined;
       this._port = undefined;
       this._protocol = undefined;
+      this._portRange.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._networkInterfaceId = value.networkInterfaceId;
       this._port = value.port;
       this._protocol = value.protocol;
+      this._portRange.internalValue = value.portRange;
     }
   }
 
@@ -420,14 +1089,312 @@ export class VerifiedaccessEndpointNetworkInterfaceOptionsOutputReference extend
   public get protocolInput() {
     return this._protocol;
   }
+
+  // port_range - computed: false, optional: true, required: false
+  private _portRange = new VerifiedaccessEndpointNetworkInterfaceOptionsPortRangeList(this, "port_range", true);
+  public get portRange() {
+    return this._portRange;
+  }
+  public putPortRange(value: VerifiedaccessEndpointNetworkInterfaceOptionsPortRange[] | cdktf.IResolvable) {
+    this._portRange.internalValue = value;
+  }
+  public resetPortRange() {
+    this._portRange.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get portRangeInput() {
+    return this._portRange.internalValue;
+  }
+}
+export interface VerifiedaccessEndpointRdsOptions {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/verifiedaccess_endpoint#port VerifiedaccessEndpoint#port}
+  */
+  readonly port?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/verifiedaccess_endpoint#protocol VerifiedaccessEndpoint#protocol}
+  */
+  readonly protocol?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/verifiedaccess_endpoint#rds_db_cluster_arn VerifiedaccessEndpoint#rds_db_cluster_arn}
+  */
+  readonly rdsDbClusterArn?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/verifiedaccess_endpoint#rds_db_instance_arn VerifiedaccessEndpoint#rds_db_instance_arn}
+  */
+  readonly rdsDbInstanceArn?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/verifiedaccess_endpoint#rds_db_proxy_arn VerifiedaccessEndpoint#rds_db_proxy_arn}
+  */
+  readonly rdsDbProxyArn?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/verifiedaccess_endpoint#rds_endpoint VerifiedaccessEndpoint#rds_endpoint}
+  */
+  readonly rdsEndpoint?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/verifiedaccess_endpoint#subnet_ids VerifiedaccessEndpoint#subnet_ids}
+  */
+  readonly subnetIds?: string[];
+}
+
+export function verifiedaccessEndpointRdsOptionsToTerraform(struct?: VerifiedaccessEndpointRdsOptionsOutputReference | VerifiedaccessEndpointRdsOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    port: cdktf.numberToTerraform(struct!.port),
+    protocol: cdktf.stringToTerraform(struct!.protocol),
+    rds_db_cluster_arn: cdktf.stringToTerraform(struct!.rdsDbClusterArn),
+    rds_db_instance_arn: cdktf.stringToTerraform(struct!.rdsDbInstanceArn),
+    rds_db_proxy_arn: cdktf.stringToTerraform(struct!.rdsDbProxyArn),
+    rds_endpoint: cdktf.stringToTerraform(struct!.rdsEndpoint),
+    subnet_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.subnetIds),
+  }
+}
+
+
+export function verifiedaccessEndpointRdsOptionsToHclTerraform(struct?: VerifiedaccessEndpointRdsOptionsOutputReference | VerifiedaccessEndpointRdsOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    port: {
+      value: cdktf.numberToHclTerraform(struct!.port),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    protocol: {
+      value: cdktf.stringToHclTerraform(struct!.protocol),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    rds_db_cluster_arn: {
+      value: cdktf.stringToHclTerraform(struct!.rdsDbClusterArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    rds_db_instance_arn: {
+      value: cdktf.stringToHclTerraform(struct!.rdsDbInstanceArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    rds_db_proxy_arn: {
+      value: cdktf.stringToHclTerraform(struct!.rdsDbProxyArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    rds_endpoint: {
+      value: cdktf.stringToHclTerraform(struct!.rdsEndpoint),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    subnet_ids: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.subnetIds),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class VerifiedaccessEndpointRdsOptionsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): VerifiedaccessEndpointRdsOptions | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._port !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.port = this._port;
+    }
+    if (this._protocol !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.protocol = this._protocol;
+    }
+    if (this._rdsDbClusterArn !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.rdsDbClusterArn = this._rdsDbClusterArn;
+    }
+    if (this._rdsDbInstanceArn !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.rdsDbInstanceArn = this._rdsDbInstanceArn;
+    }
+    if (this._rdsDbProxyArn !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.rdsDbProxyArn = this._rdsDbProxyArn;
+    }
+    if (this._rdsEndpoint !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.rdsEndpoint = this._rdsEndpoint;
+    }
+    if (this._subnetIds !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.subnetIds = this._subnetIds;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: VerifiedaccessEndpointRdsOptions | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._port = undefined;
+      this._protocol = undefined;
+      this._rdsDbClusterArn = undefined;
+      this._rdsDbInstanceArn = undefined;
+      this._rdsDbProxyArn = undefined;
+      this._rdsEndpoint = undefined;
+      this._subnetIds = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._port = value.port;
+      this._protocol = value.protocol;
+      this._rdsDbClusterArn = value.rdsDbClusterArn;
+      this._rdsDbInstanceArn = value.rdsDbInstanceArn;
+      this._rdsDbProxyArn = value.rdsDbProxyArn;
+      this._rdsEndpoint = value.rdsEndpoint;
+      this._subnetIds = value.subnetIds;
+    }
+  }
+
+  // port - computed: false, optional: true, required: false
+  private _port?: number; 
+  public get port() {
+    return this.getNumberAttribute('port');
+  }
+  public set port(value: number) {
+    this._port = value;
+  }
+  public resetPort() {
+    this._port = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get portInput() {
+    return this._port;
+  }
+
+  // protocol - computed: false, optional: true, required: false
+  private _protocol?: string; 
+  public get protocol() {
+    return this.getStringAttribute('protocol');
+  }
+  public set protocol(value: string) {
+    this._protocol = value;
+  }
+  public resetProtocol() {
+    this._protocol = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get protocolInput() {
+    return this._protocol;
+  }
+
+  // rds_db_cluster_arn - computed: false, optional: true, required: false
+  private _rdsDbClusterArn?: string; 
+  public get rdsDbClusterArn() {
+    return this.getStringAttribute('rds_db_cluster_arn');
+  }
+  public set rdsDbClusterArn(value: string) {
+    this._rdsDbClusterArn = value;
+  }
+  public resetRdsDbClusterArn() {
+    this._rdsDbClusterArn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get rdsDbClusterArnInput() {
+    return this._rdsDbClusterArn;
+  }
+
+  // rds_db_instance_arn - computed: false, optional: true, required: false
+  private _rdsDbInstanceArn?: string; 
+  public get rdsDbInstanceArn() {
+    return this.getStringAttribute('rds_db_instance_arn');
+  }
+  public set rdsDbInstanceArn(value: string) {
+    this._rdsDbInstanceArn = value;
+  }
+  public resetRdsDbInstanceArn() {
+    this._rdsDbInstanceArn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get rdsDbInstanceArnInput() {
+    return this._rdsDbInstanceArn;
+  }
+
+  // rds_db_proxy_arn - computed: false, optional: true, required: false
+  private _rdsDbProxyArn?: string; 
+  public get rdsDbProxyArn() {
+    return this.getStringAttribute('rds_db_proxy_arn');
+  }
+  public set rdsDbProxyArn(value: string) {
+    this._rdsDbProxyArn = value;
+  }
+  public resetRdsDbProxyArn() {
+    this._rdsDbProxyArn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get rdsDbProxyArnInput() {
+    return this._rdsDbProxyArn;
+  }
+
+  // rds_endpoint - computed: false, optional: true, required: false
+  private _rdsEndpoint?: string; 
+  public get rdsEndpoint() {
+    return this.getStringAttribute('rds_endpoint');
+  }
+  public set rdsEndpoint(value: string) {
+    this._rdsEndpoint = value;
+  }
+  public resetRdsEndpoint() {
+    this._rdsEndpoint = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get rdsEndpointInput() {
+    return this._rdsEndpoint;
+  }
+
+  // subnet_ids - computed: false, optional: true, required: false
+  private _subnetIds?: string[]; 
+  public get subnetIds() {
+    return cdktf.Fn.tolist(this.getListAttribute('subnet_ids'));
+  }
+  public set subnetIds(value: string[]) {
+    this._subnetIds = value;
+  }
+  public resetSubnetIds() {
+    this._subnetIds = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get subnetIdsInput() {
+    return this._subnetIds;
+  }
 }
 export interface VerifiedaccessEndpointSseSpecification {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/verifiedaccess_endpoint#customer_managed_key_enabled VerifiedaccessEndpoint#customer_managed_key_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/verifiedaccess_endpoint#customer_managed_key_enabled VerifiedaccessEndpoint#customer_managed_key_enabled}
   */
   readonly customerManagedKeyEnabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/verifiedaccess_endpoint#kms_key_arn VerifiedaccessEndpoint#kms_key_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/verifiedaccess_endpoint#kms_key_arn VerifiedaccessEndpoint#kms_key_arn}
   */
   readonly kmsKeyArn?: string;
 }
@@ -540,15 +1507,15 @@ export class VerifiedaccessEndpointSseSpecificationOutputReference extends cdktf
 }
 export interface VerifiedaccessEndpointTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/verifiedaccess_endpoint#create VerifiedaccessEndpoint#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/verifiedaccess_endpoint#create VerifiedaccessEndpoint#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/verifiedaccess_endpoint#delete VerifiedaccessEndpoint#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/verifiedaccess_endpoint#delete VerifiedaccessEndpoint#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/verifiedaccess_endpoint#update VerifiedaccessEndpoint#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/verifiedaccess_endpoint#update VerifiedaccessEndpoint#update}
   */
   readonly update?: string;
 }
@@ -700,7 +1667,7 @@ export class VerifiedaccessEndpointTimeoutsOutputReference extends cdktf.Complex
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/verifiedaccess_endpoint aws_verifiedaccess_endpoint}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/verifiedaccess_endpoint aws_verifiedaccess_endpoint}
 */
 export class VerifiedaccessEndpoint extends cdktf.TerraformResource {
 
@@ -716,7 +1683,7 @@ export class VerifiedaccessEndpoint extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a VerifiedaccessEndpoint resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the VerifiedaccessEndpoint to import
-  * @param importFromId The id of the existing VerifiedaccessEndpoint that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/verifiedaccess_endpoint#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing VerifiedaccessEndpoint that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/verifiedaccess_endpoint#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the VerifiedaccessEndpoint to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -728,7 +1695,7 @@ export class VerifiedaccessEndpoint extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/verifiedaccess_endpoint aws_verifiedaccess_endpoint} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/verifiedaccess_endpoint aws_verifiedaccess_endpoint} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -739,7 +1706,7 @@ export class VerifiedaccessEndpoint extends cdktf.TerraformResource {
       terraformResourceType: 'aws_verifiedaccess_endpoint',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.92.0',
+        providerVersion: '5.93.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -762,8 +1729,10 @@ export class VerifiedaccessEndpoint extends cdktf.TerraformResource {
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
     this._verifiedAccessGroupId = config.verifiedAccessGroupId;
+    this._cidrOptions.internalValue = config.cidrOptions;
     this._loadBalancerOptions.internalValue = config.loadBalancerOptions;
     this._networkInterfaceOptions.internalValue = config.networkInterfaceOptions;
+    this._rdsOptions.internalValue = config.rdsOptions;
     this._sseSpecification.internalValue = config.sseSpecification;
     this._timeouts.internalValue = config.timeouts;
   }
@@ -772,13 +1741,16 @@ export class VerifiedaccessEndpoint extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // application_domain - computed: false, optional: false, required: true
+  // application_domain - computed: false, optional: true, required: false
   private _applicationDomain?: string; 
   public get applicationDomain() {
     return this.getStringAttribute('application_domain');
   }
   public set applicationDomain(value: string) {
     this._applicationDomain = value;
+  }
+  public resetApplicationDomain() {
+    this._applicationDomain = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get applicationDomainInput() {
@@ -819,13 +1791,16 @@ export class VerifiedaccessEndpoint extends cdktf.TerraformResource {
     return this.getStringAttribute('device_validation_domain');
   }
 
-  // domain_certificate_arn - computed: false, optional: false, required: true
+  // domain_certificate_arn - computed: false, optional: true, required: false
   private _domainCertificateArn?: string; 
   public get domainCertificateArn() {
     return this.getStringAttribute('domain_certificate_arn');
   }
   public set domainCertificateArn(value: string) {
     this._domainCertificateArn = value;
+  }
+  public resetDomainCertificateArn() {
+    this._domainCertificateArn = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get domainCertificateArnInput() {
@@ -837,13 +1812,16 @@ export class VerifiedaccessEndpoint extends cdktf.TerraformResource {
     return this.getStringAttribute('endpoint_domain');
   }
 
-  // endpoint_domain_prefix - computed: false, optional: false, required: true
+  // endpoint_domain_prefix - computed: false, optional: true, required: false
   private _endpointDomainPrefix?: string; 
   public get endpointDomainPrefix() {
     return this.getStringAttribute('endpoint_domain_prefix');
   }
   public set endpointDomainPrefix(value: string) {
     this._endpointDomainPrefix = value;
+  }
+  public resetEndpointDomainPrefix() {
+    this._endpointDomainPrefix = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get endpointDomainPrefixInput() {
@@ -961,6 +1939,22 @@ export class VerifiedaccessEndpoint extends cdktf.TerraformResource {
     return this.getStringAttribute('verified_access_instance_id');
   }
 
+  // cidr_options - computed: false, optional: true, required: false
+  private _cidrOptions = new VerifiedaccessEndpointCidrOptionsOutputReference(this, "cidr_options");
+  public get cidrOptions() {
+    return this._cidrOptions;
+  }
+  public putCidrOptions(value: VerifiedaccessEndpointCidrOptions) {
+    this._cidrOptions.internalValue = value;
+  }
+  public resetCidrOptions() {
+    this._cidrOptions.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get cidrOptionsInput() {
+    return this._cidrOptions.internalValue;
+  }
+
   // load_balancer_options - computed: false, optional: true, required: false
   private _loadBalancerOptions = new VerifiedaccessEndpointLoadBalancerOptionsOutputReference(this, "load_balancer_options");
   public get loadBalancerOptions() {
@@ -991,6 +1985,22 @@ export class VerifiedaccessEndpoint extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get networkInterfaceOptionsInput() {
     return this._networkInterfaceOptions.internalValue;
+  }
+
+  // rds_options - computed: false, optional: true, required: false
+  private _rdsOptions = new VerifiedaccessEndpointRdsOptionsOutputReference(this, "rds_options");
+  public get rdsOptions() {
+    return this._rdsOptions;
+  }
+  public putRdsOptions(value: VerifiedaccessEndpointRdsOptions) {
+    this._rdsOptions.internalValue = value;
+  }
+  public resetRdsOptions() {
+    this._rdsOptions.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get rdsOptionsInput() {
+    return this._rdsOptions.internalValue;
   }
 
   // sse_specification - computed: false, optional: true, required: false
@@ -1043,8 +2053,10 @@ export class VerifiedaccessEndpoint extends cdktf.TerraformResource {
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       verified_access_group_id: cdktf.stringToTerraform(this._verifiedAccessGroupId),
+      cidr_options: verifiedaccessEndpointCidrOptionsToTerraform(this._cidrOptions.internalValue),
       load_balancer_options: verifiedaccessEndpointLoadBalancerOptionsToTerraform(this._loadBalancerOptions.internalValue),
       network_interface_options: verifiedaccessEndpointNetworkInterfaceOptionsToTerraform(this._networkInterfaceOptions.internalValue),
+      rds_options: verifiedaccessEndpointRdsOptionsToTerraform(this._rdsOptions.internalValue),
       sse_specification: verifiedaccessEndpointSseSpecificationToTerraform(this._sseSpecification.internalValue),
       timeouts: verifiedaccessEndpointTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -1124,6 +2136,12 @@ export class VerifiedaccessEndpoint extends cdktf.TerraformResource {
         type: "simple",
         storageClassType: "string",
       },
+      cidr_options: {
+        value: verifiedaccessEndpointCidrOptionsToHclTerraform(this._cidrOptions.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "VerifiedaccessEndpointCidrOptionsList",
+      },
       load_balancer_options: {
         value: verifiedaccessEndpointLoadBalancerOptionsToHclTerraform(this._loadBalancerOptions.internalValue),
         isBlock: true,
@@ -1135,6 +2153,12 @@ export class VerifiedaccessEndpoint extends cdktf.TerraformResource {
         isBlock: true,
         type: "list",
         storageClassType: "VerifiedaccessEndpointNetworkInterfaceOptionsList",
+      },
+      rds_options: {
+        value: verifiedaccessEndpointRdsOptionsToHclTerraform(this._rdsOptions.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "VerifiedaccessEndpointRdsOptionsList",
       },
       sse_specification: {
         value: verifiedaccessEndpointSseSpecificationToHclTerraform(this._sseSpecification.internalValue),
