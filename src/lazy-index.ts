@@ -52,6 +52,7 @@ Object.defineProperty(exports, 'apiGatewayRequestValidator', { get: function () 
 Object.defineProperty(exports, 'apiGatewayResource', { get: function () { return require('./api-gateway-resource'); } });
 Object.defineProperty(exports, 'apiGatewayRestApi', { get: function () { return require('./api-gateway-rest-api'); } });
 Object.defineProperty(exports, 'apiGatewayRestApiPolicy', { get: function () { return require('./api-gateway-rest-api-policy'); } });
+Object.defineProperty(exports, 'apiGatewayRestApiPut', { get: function () { return require('./api-gateway-rest-api-put'); } });
 Object.defineProperty(exports, 'apiGatewayStage', { get: function () { return require('./api-gateway-stage'); } });
 Object.defineProperty(exports, 'apiGatewayUsagePlan', { get: function () { return require('./api-gateway-usage-plan'); } });
 Object.defineProperty(exports, 'apiGatewayUsagePlanKey', { get: function () { return require('./api-gateway-usage-plan-key'); } });

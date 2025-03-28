@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/s3_bucket_logging
+// https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/s3_bucket_logging
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,59 +13,59 @@ import * as cdktf from 'cdktf';
 
 export interface S3BucketLoggingAConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/s3_bucket_logging#bucket S3BucketLoggingA#bucket}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/s3_bucket_logging#bucket S3BucketLoggingA#bucket}
   */
   readonly bucket: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/s3_bucket_logging#expected_bucket_owner S3BucketLoggingA#expected_bucket_owner}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/s3_bucket_logging#expected_bucket_owner S3BucketLoggingA#expected_bucket_owner}
   */
   readonly expectedBucketOwner?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/s3_bucket_logging#id S3BucketLoggingA#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/s3_bucket_logging#id S3BucketLoggingA#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/s3_bucket_logging#target_bucket S3BucketLoggingA#target_bucket}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/s3_bucket_logging#target_bucket S3BucketLoggingA#target_bucket}
   */
   readonly targetBucket: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/s3_bucket_logging#target_prefix S3BucketLoggingA#target_prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/s3_bucket_logging#target_prefix S3BucketLoggingA#target_prefix}
   */
   readonly targetPrefix: string;
   /**
   * target_grant block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/s3_bucket_logging#target_grant S3BucketLoggingA#target_grant}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/s3_bucket_logging#target_grant S3BucketLoggingA#target_grant}
   */
   readonly targetGrant?: S3BucketLoggingTargetGrant[] | cdktf.IResolvable;
   /**
   * target_object_key_format block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/s3_bucket_logging#target_object_key_format S3BucketLoggingA#target_object_key_format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/s3_bucket_logging#target_object_key_format S3BucketLoggingA#target_object_key_format}
   */
   readonly targetObjectKeyFormat?: S3BucketLoggingTargetObjectKeyFormat;
 }
 export interface S3BucketLoggingTargetGrantGrantee {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/s3_bucket_logging#email_address S3BucketLoggingA#email_address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/s3_bucket_logging#email_address S3BucketLoggingA#email_address}
   */
   readonly emailAddress?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/s3_bucket_logging#id S3BucketLoggingA#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/s3_bucket_logging#id S3BucketLoggingA#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/s3_bucket_logging#type S3BucketLoggingA#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/s3_bucket_logging#type S3BucketLoggingA#type}
   */
   readonly type: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/s3_bucket_logging#uri S3BucketLoggingA#uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/s3_bucket_logging#uri S3BucketLoggingA#uri}
   */
   readonly uri?: string;
 }
@@ -238,13 +238,13 @@ export class S3BucketLoggingTargetGrantGranteeOutputReference extends cdktf.Comp
 }
 export interface S3BucketLoggingTargetGrant {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/s3_bucket_logging#permission S3BucketLoggingA#permission}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/s3_bucket_logging#permission S3BucketLoggingA#permission}
   */
   readonly permission: string;
   /**
   * grantee block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/s3_bucket_logging#grantee S3BucketLoggingA#grantee}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/s3_bucket_logging#grantee S3BucketLoggingA#grantee}
   */
   readonly grantee: S3BucketLoggingTargetGrantGrantee;
 }
@@ -383,7 +383,7 @@ export class S3BucketLoggingTargetGrantList extends cdktf.ComplexList {
 }
 export interface S3BucketLoggingTargetObjectKeyFormatPartitionedPrefix {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/s3_bucket_logging#partition_date_source S3BucketLoggingA#partition_date_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/s3_bucket_logging#partition_date_source S3BucketLoggingA#partition_date_source}
   */
   readonly partitionDateSource: string;
 }
@@ -515,13 +515,13 @@ export interface S3BucketLoggingTargetObjectKeyFormat {
   /**
   * partitioned_prefix block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/s3_bucket_logging#partitioned_prefix S3BucketLoggingA#partitioned_prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/s3_bucket_logging#partitioned_prefix S3BucketLoggingA#partitioned_prefix}
   */
   readonly partitionedPrefix?: S3BucketLoggingTargetObjectKeyFormatPartitionedPrefix;
   /**
   * simple_prefix block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/s3_bucket_logging#simple_prefix S3BucketLoggingA#simple_prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/s3_bucket_logging#simple_prefix S3BucketLoggingA#simple_prefix}
   */
   readonly simplePrefix?: S3BucketLoggingTargetObjectKeyFormatSimplePrefix;
 }
@@ -634,7 +634,7 @@ export class S3BucketLoggingTargetObjectKeyFormatOutputReference extends cdktf.C
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/s3_bucket_logging aws_s3_bucket_logging}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/s3_bucket_logging aws_s3_bucket_logging}
 */
 export class S3BucketLoggingA extends cdktf.TerraformResource {
 
@@ -650,7 +650,7 @@ export class S3BucketLoggingA extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a S3BucketLoggingA resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the S3BucketLoggingA to import
-  * @param importFromId The id of the existing S3BucketLoggingA that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/s3_bucket_logging#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing S3BucketLoggingA that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/s3_bucket_logging#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the S3BucketLoggingA to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -662,7 +662,7 @@ export class S3BucketLoggingA extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/s3_bucket_logging aws_s3_bucket_logging} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/s3_bucket_logging aws_s3_bucket_logging} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -673,7 +673,7 @@ export class S3BucketLoggingA extends cdktf.TerraformResource {
       terraformResourceType: 'aws_s3_bucket_logging',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.92.0',
+        providerVersion: '5.93.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

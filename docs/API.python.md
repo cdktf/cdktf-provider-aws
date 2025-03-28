@@ -52,6 +52,7 @@ The following submodules are available:
 - [apiGatewayResource](./apiGatewayResource.python.md)
 - [apiGatewayRestApi](./apiGatewayRestApi.python.md)
 - [apiGatewayRestApiPolicy](./apiGatewayRestApiPolicy.python.md)
+- [apiGatewayRestApiPut](./apiGatewayRestApiPut.python.md)
 - [apiGatewayStage](./apiGatewayStage.python.md)
 - [apiGatewayUsagePlan](./apiGatewayUsagePlan.python.md)
 - [apiGatewayUsagePlanKey](./apiGatewayUsagePlanKey.python.md)

@@ -4,7 +4,7 @@
 
 ### WafRule <a name="WafRule" id="@cdktf/provider-aws.wafRule.WafRule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/waf_rule aws_waf_rule}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/waf_rule aws_waf_rule}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafRule.WafRule.Initializer"></a>
 
@@ -508,7 +508,7 @@ The construct id used in the generated config for the WafRule to import.
 
 The id of the existing WafRule that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/waf_rule#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/waf_rule#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -881,12 +881,12 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafrule"
 | <code><a href="#@cdktf/provider-aws.wafRule.WafRuleConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.wafRule.WafRuleConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.wafRule.WafRuleConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.wafRule.WafRuleConfig.property.metricName">MetricName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/waf_rule#metric_name WafRule#metric_name}. |
-| <code><a href="#@cdktf/provider-aws.wafRule.WafRuleConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/waf_rule#name WafRule#name}. |
-| <code><a href="#@cdktf/provider-aws.wafRule.WafRuleConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/waf_rule#id WafRule#id}. |
+| <code><a href="#@cdktf/provider-aws.wafRule.WafRuleConfig.property.metricName">MetricName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/waf_rule#metric_name WafRule#metric_name}. |
+| <code><a href="#@cdktf/provider-aws.wafRule.WafRuleConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/waf_rule#name WafRule#name}. |
+| <code><a href="#@cdktf/provider-aws.wafRule.WafRuleConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/waf_rule#id WafRule#id}. |
 | <code><a href="#@cdktf/provider-aws.wafRule.WafRuleConfig.property.predicates">Predicates</a></code> | <code>interface{}</code> | predicates block. |
-| <code><a href="#@cdktf/provider-aws.wafRule.WafRuleConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/waf_rule#tags WafRule#tags}. |
-| <code><a href="#@cdktf/provider-aws.wafRule.WafRuleConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/waf_rule#tags_all WafRule#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.wafRule.WafRuleConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/waf_rule#tags WafRule#tags}. |
+| <code><a href="#@cdktf/provider-aws.wafRule.WafRuleConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/waf_rule#tags_all WafRule#tags_all}. |
 
 ---
 
@@ -968,7 +968,7 @@ MetricName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/waf_rule#metric_name WafRule#metric_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/waf_rule#metric_name WafRule#metric_name}.
 
 ---
 
@@ -980,7 +980,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/waf_rule#name WafRule#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/waf_rule#name WafRule#name}.
 
 ---
 
@@ -992,7 +992,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/waf_rule#id WafRule#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/waf_rule#id WafRule#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1009,7 +1009,7 @@ Predicates interface{}
 
 predicates block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/waf_rule#predicates WafRule#predicates}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/waf_rule#predicates WafRule#predicates}
 
 ---
 
@@ -1021,7 +1021,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/waf_rule#tags WafRule#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/waf_rule#tags WafRule#tags}.
 
 ---
 
@@ -1033,7 +1033,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/waf_rule#tags_all WafRule#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/waf_rule#tags_all WafRule#tags_all}.
 
 ---
 
@@ -1055,9 +1055,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafrule"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.wafRule.WafRulePredicates.property.dataId">DataId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/waf_rule#data_id WafRule#data_id}. |
-| <code><a href="#@cdktf/provider-aws.wafRule.WafRulePredicates.property.negated">Negated</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/waf_rule#negated WafRule#negated}. |
-| <code><a href="#@cdktf/provider-aws.wafRule.WafRulePredicates.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/waf_rule#type WafRule#type}. |
+| <code><a href="#@cdktf/provider-aws.wafRule.WafRulePredicates.property.dataId">DataId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/waf_rule#data_id WafRule#data_id}. |
+| <code><a href="#@cdktf/provider-aws.wafRule.WafRulePredicates.property.negated">Negated</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/waf_rule#negated WafRule#negated}. |
+| <code><a href="#@cdktf/provider-aws.wafRule.WafRulePredicates.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/waf_rule#type WafRule#type}. |
 
 ---
 
@@ -1069,7 +1069,7 @@ DataId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/waf_rule#data_id WafRule#data_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/waf_rule#data_id WafRule#data_id}.
 
 ---
 
@@ -1081,7 +1081,7 @@ Negated interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/waf_rule#negated WafRule#negated}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/waf_rule#negated WafRule#negated}.
 
 ---
 
@@ -1093,7 +1093,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/waf_rule#type WafRule#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/waf_rule#type WafRule#type}.
 
 ---
 

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/verifiedaccess_trust_provider
+// https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/verifiedaccess_trust_provider
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,62 +13,74 @@ import * as cdktf from 'cdktf';
 
 export interface VerifiedaccessTrustProviderConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/verifiedaccess_trust_provider#description VerifiedaccessTrustProvider#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/verifiedaccess_trust_provider#description VerifiedaccessTrustProvider#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/verifiedaccess_trust_provider#device_trust_provider_type VerifiedaccessTrustProvider#device_trust_provider_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/verifiedaccess_trust_provider#device_trust_provider_type VerifiedaccessTrustProvider#device_trust_provider_type}
   */
   readonly deviceTrustProviderType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/verifiedaccess_trust_provider#id VerifiedaccessTrustProvider#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/verifiedaccess_trust_provider#id VerifiedaccessTrustProvider#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/verifiedaccess_trust_provider#policy_reference_name VerifiedaccessTrustProvider#policy_reference_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/verifiedaccess_trust_provider#policy_reference_name VerifiedaccessTrustProvider#policy_reference_name}
   */
   readonly policyReferenceName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/verifiedaccess_trust_provider#tags VerifiedaccessTrustProvider#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/verifiedaccess_trust_provider#tags VerifiedaccessTrustProvider#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/verifiedaccess_trust_provider#tags_all VerifiedaccessTrustProvider#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/verifiedaccess_trust_provider#tags_all VerifiedaccessTrustProvider#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/verifiedaccess_trust_provider#trust_provider_type VerifiedaccessTrustProvider#trust_provider_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/verifiedaccess_trust_provider#trust_provider_type VerifiedaccessTrustProvider#trust_provider_type}
   */
   readonly trustProviderType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/verifiedaccess_trust_provider#user_trust_provider_type VerifiedaccessTrustProvider#user_trust_provider_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/verifiedaccess_trust_provider#user_trust_provider_type VerifiedaccessTrustProvider#user_trust_provider_type}
   */
   readonly userTrustProviderType?: string;
   /**
   * device_options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/verifiedaccess_trust_provider#device_options VerifiedaccessTrustProvider#device_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/verifiedaccess_trust_provider#device_options VerifiedaccessTrustProvider#device_options}
   */
   readonly deviceOptions?: VerifiedaccessTrustProviderDeviceOptions;
   /**
+  * native_application_oidc_options block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/verifiedaccess_trust_provider#native_application_oidc_options VerifiedaccessTrustProvider#native_application_oidc_options}
+  */
+  readonly nativeApplicationOidcOptions?: VerifiedaccessTrustProviderNativeApplicationOidcOptions;
+  /**
   * oidc_options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/verifiedaccess_trust_provider#oidc_options VerifiedaccessTrustProvider#oidc_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/verifiedaccess_trust_provider#oidc_options VerifiedaccessTrustProvider#oidc_options}
   */
   readonly oidcOptions?: VerifiedaccessTrustProviderOidcOptions;
   /**
+  * sse_specification block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/verifiedaccess_trust_provider#sse_specification VerifiedaccessTrustProvider#sse_specification}
+  */
+  readonly sseSpecification?: VerifiedaccessTrustProviderSseSpecification;
+  /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/verifiedaccess_trust_provider#timeouts VerifiedaccessTrustProvider#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/verifiedaccess_trust_provider#timeouts VerifiedaccessTrustProvider#timeouts}
   */
   readonly timeouts?: VerifiedaccessTrustProviderTimeouts;
 }
 export interface VerifiedaccessTrustProviderDeviceOptions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/verifiedaccess_trust_provider#tenant_id VerifiedaccessTrustProvider#tenant_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/verifiedaccess_trust_provider#tenant_id VerifiedaccessTrustProvider#tenant_id}
   */
   readonly tenantId?: string;
 }
@@ -150,33 +162,345 @@ export class VerifiedaccessTrustProviderDeviceOptionsOutputReference extends cdk
     return this._tenantId;
   }
 }
-export interface VerifiedaccessTrustProviderOidcOptions {
+export interface VerifiedaccessTrustProviderNativeApplicationOidcOptions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/verifiedaccess_trust_provider#authorization_endpoint VerifiedaccessTrustProvider#authorization_endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/verifiedaccess_trust_provider#authorization_endpoint VerifiedaccessTrustProvider#authorization_endpoint}
   */
   readonly authorizationEndpoint?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/verifiedaccess_trust_provider#client_id VerifiedaccessTrustProvider#client_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/verifiedaccess_trust_provider#client_id VerifiedaccessTrustProvider#client_id}
   */
   readonly clientId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/verifiedaccess_trust_provider#client_secret VerifiedaccessTrustProvider#client_secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/verifiedaccess_trust_provider#client_secret VerifiedaccessTrustProvider#client_secret}
   */
   readonly clientSecret: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/verifiedaccess_trust_provider#issuer VerifiedaccessTrustProvider#issuer}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/verifiedaccess_trust_provider#issuer VerifiedaccessTrustProvider#issuer}
   */
   readonly issuer?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/verifiedaccess_trust_provider#scope VerifiedaccessTrustProvider#scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/verifiedaccess_trust_provider#public_signing_key_endpoint VerifiedaccessTrustProvider#public_signing_key_endpoint}
+  */
+  readonly publicSigningKeyEndpoint?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/verifiedaccess_trust_provider#scope VerifiedaccessTrustProvider#scope}
   */
   readonly scope?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/verifiedaccess_trust_provider#token_endpoint VerifiedaccessTrustProvider#token_endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/verifiedaccess_trust_provider#token_endpoint VerifiedaccessTrustProvider#token_endpoint}
   */
   readonly tokenEndpoint?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/verifiedaccess_trust_provider#user_info_endpoint VerifiedaccessTrustProvider#user_info_endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/verifiedaccess_trust_provider#user_info_endpoint VerifiedaccessTrustProvider#user_info_endpoint}
+  */
+  readonly userInfoEndpoint?: string;
+}
+
+export function verifiedaccessTrustProviderNativeApplicationOidcOptionsToTerraform(struct?: VerifiedaccessTrustProviderNativeApplicationOidcOptionsOutputReference | VerifiedaccessTrustProviderNativeApplicationOidcOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    authorization_endpoint: cdktf.stringToTerraform(struct!.authorizationEndpoint),
+    client_id: cdktf.stringToTerraform(struct!.clientId),
+    client_secret: cdktf.stringToTerraform(struct!.clientSecret),
+    issuer: cdktf.stringToTerraform(struct!.issuer),
+    public_signing_key_endpoint: cdktf.stringToTerraform(struct!.publicSigningKeyEndpoint),
+    scope: cdktf.stringToTerraform(struct!.scope),
+    token_endpoint: cdktf.stringToTerraform(struct!.tokenEndpoint),
+    user_info_endpoint: cdktf.stringToTerraform(struct!.userInfoEndpoint),
+  }
+}
+
+
+export function verifiedaccessTrustProviderNativeApplicationOidcOptionsToHclTerraform(struct?: VerifiedaccessTrustProviderNativeApplicationOidcOptionsOutputReference | VerifiedaccessTrustProviderNativeApplicationOidcOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    authorization_endpoint: {
+      value: cdktf.stringToHclTerraform(struct!.authorizationEndpoint),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    client_id: {
+      value: cdktf.stringToHclTerraform(struct!.clientId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    client_secret: {
+      value: cdktf.stringToHclTerraform(struct!.clientSecret),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    issuer: {
+      value: cdktf.stringToHclTerraform(struct!.issuer),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    public_signing_key_endpoint: {
+      value: cdktf.stringToHclTerraform(struct!.publicSigningKeyEndpoint),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    scope: {
+      value: cdktf.stringToHclTerraform(struct!.scope),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    token_endpoint: {
+      value: cdktf.stringToHclTerraform(struct!.tokenEndpoint),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    user_info_endpoint: {
+      value: cdktf.stringToHclTerraform(struct!.userInfoEndpoint),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class VerifiedaccessTrustProviderNativeApplicationOidcOptionsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): VerifiedaccessTrustProviderNativeApplicationOidcOptions | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._authorizationEndpoint !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.authorizationEndpoint = this._authorizationEndpoint;
+    }
+    if (this._clientId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.clientId = this._clientId;
+    }
+    if (this._clientSecret !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.clientSecret = this._clientSecret;
+    }
+    if (this._issuer !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.issuer = this._issuer;
+    }
+    if (this._publicSigningKeyEndpoint !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.publicSigningKeyEndpoint = this._publicSigningKeyEndpoint;
+    }
+    if (this._scope !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.scope = this._scope;
+    }
+    if (this._tokenEndpoint !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.tokenEndpoint = this._tokenEndpoint;
+    }
+    if (this._userInfoEndpoint !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.userInfoEndpoint = this._userInfoEndpoint;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: VerifiedaccessTrustProviderNativeApplicationOidcOptions | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._authorizationEndpoint = undefined;
+      this._clientId = undefined;
+      this._clientSecret = undefined;
+      this._issuer = undefined;
+      this._publicSigningKeyEndpoint = undefined;
+      this._scope = undefined;
+      this._tokenEndpoint = undefined;
+      this._userInfoEndpoint = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._authorizationEndpoint = value.authorizationEndpoint;
+      this._clientId = value.clientId;
+      this._clientSecret = value.clientSecret;
+      this._issuer = value.issuer;
+      this._publicSigningKeyEndpoint = value.publicSigningKeyEndpoint;
+      this._scope = value.scope;
+      this._tokenEndpoint = value.tokenEndpoint;
+      this._userInfoEndpoint = value.userInfoEndpoint;
+    }
+  }
+
+  // authorization_endpoint - computed: false, optional: true, required: false
+  private _authorizationEndpoint?: string; 
+  public get authorizationEndpoint() {
+    return this.getStringAttribute('authorization_endpoint');
+  }
+  public set authorizationEndpoint(value: string) {
+    this._authorizationEndpoint = value;
+  }
+  public resetAuthorizationEndpoint() {
+    this._authorizationEndpoint = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get authorizationEndpointInput() {
+    return this._authorizationEndpoint;
+  }
+
+  // client_id - computed: false, optional: true, required: false
+  private _clientId?: string; 
+  public get clientId() {
+    return this.getStringAttribute('client_id');
+  }
+  public set clientId(value: string) {
+    this._clientId = value;
+  }
+  public resetClientId() {
+    this._clientId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get clientIdInput() {
+    return this._clientId;
+  }
+
+  // client_secret - computed: false, optional: false, required: true
+  private _clientSecret?: string; 
+  public get clientSecret() {
+    return this.getStringAttribute('client_secret');
+  }
+  public set clientSecret(value: string) {
+    this._clientSecret = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get clientSecretInput() {
+    return this._clientSecret;
+  }
+
+  // issuer - computed: false, optional: true, required: false
+  private _issuer?: string; 
+  public get issuer() {
+    return this.getStringAttribute('issuer');
+  }
+  public set issuer(value: string) {
+    this._issuer = value;
+  }
+  public resetIssuer() {
+    this._issuer = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get issuerInput() {
+    return this._issuer;
+  }
+
+  // public_signing_key_endpoint - computed: false, optional: true, required: false
+  private _publicSigningKeyEndpoint?: string; 
+  public get publicSigningKeyEndpoint() {
+    return this.getStringAttribute('public_signing_key_endpoint');
+  }
+  public set publicSigningKeyEndpoint(value: string) {
+    this._publicSigningKeyEndpoint = value;
+  }
+  public resetPublicSigningKeyEndpoint() {
+    this._publicSigningKeyEndpoint = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get publicSigningKeyEndpointInput() {
+    return this._publicSigningKeyEndpoint;
+  }
+
+  // scope - computed: false, optional: true, required: false
+  private _scope?: string; 
+  public get scope() {
+    return this.getStringAttribute('scope');
+  }
+  public set scope(value: string) {
+    this._scope = value;
+  }
+  public resetScope() {
+    this._scope = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get scopeInput() {
+    return this._scope;
+  }
+
+  // token_endpoint - computed: false, optional: true, required: false
+  private _tokenEndpoint?: string; 
+  public get tokenEndpoint() {
+    return this.getStringAttribute('token_endpoint');
+  }
+  public set tokenEndpoint(value: string) {
+    this._tokenEndpoint = value;
+  }
+  public resetTokenEndpoint() {
+    this._tokenEndpoint = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tokenEndpointInput() {
+    return this._tokenEndpoint;
+  }
+
+  // user_info_endpoint - computed: false, optional: true, required: false
+  private _userInfoEndpoint?: string; 
+  public get userInfoEndpoint() {
+    return this.getStringAttribute('user_info_endpoint');
+  }
+  public set userInfoEndpoint(value: string) {
+    this._userInfoEndpoint = value;
+  }
+  public resetUserInfoEndpoint() {
+    this._userInfoEndpoint = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get userInfoEndpointInput() {
+    return this._userInfoEndpoint;
+  }
+}
+export interface VerifiedaccessTrustProviderOidcOptions {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/verifiedaccess_trust_provider#authorization_endpoint VerifiedaccessTrustProvider#authorization_endpoint}
+  */
+  readonly authorizationEndpoint?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/verifiedaccess_trust_provider#client_id VerifiedaccessTrustProvider#client_id}
+  */
+  readonly clientId?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/verifiedaccess_trust_provider#client_secret VerifiedaccessTrustProvider#client_secret}
+  */
+  readonly clientSecret: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/verifiedaccess_trust_provider#issuer VerifiedaccessTrustProvider#issuer}
+  */
+  readonly issuer?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/verifiedaccess_trust_provider#scope VerifiedaccessTrustProvider#scope}
+  */
+  readonly scope?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/verifiedaccess_trust_provider#token_endpoint VerifiedaccessTrustProvider#token_endpoint}
+  */
+  readonly tokenEndpoint?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/verifiedaccess_trust_provider#user_info_endpoint VerifiedaccessTrustProvider#user_info_endpoint}
   */
   readonly userInfoEndpoint?: string;
 }
@@ -429,17 +753,134 @@ export class VerifiedaccessTrustProviderOidcOptionsOutputReference extends cdktf
     return this._userInfoEndpoint;
   }
 }
+export interface VerifiedaccessTrustProviderSseSpecification {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/verifiedaccess_trust_provider#customer_managed_key_enabled VerifiedaccessTrustProvider#customer_managed_key_enabled}
+  */
+  readonly customerManagedKeyEnabled?: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/verifiedaccess_trust_provider#kms_key_arn VerifiedaccessTrustProvider#kms_key_arn}
+  */
+  readonly kmsKeyArn?: string;
+}
+
+export function verifiedaccessTrustProviderSseSpecificationToTerraform(struct?: VerifiedaccessTrustProviderSseSpecificationOutputReference | VerifiedaccessTrustProviderSseSpecification): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    customer_managed_key_enabled: cdktf.booleanToTerraform(struct!.customerManagedKeyEnabled),
+    kms_key_arn: cdktf.stringToTerraform(struct!.kmsKeyArn),
+  }
+}
+
+
+export function verifiedaccessTrustProviderSseSpecificationToHclTerraform(struct?: VerifiedaccessTrustProviderSseSpecificationOutputReference | VerifiedaccessTrustProviderSseSpecification): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    customer_managed_key_enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.customerManagedKeyEnabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    kms_key_arn: {
+      value: cdktf.stringToHclTerraform(struct!.kmsKeyArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class VerifiedaccessTrustProviderSseSpecificationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): VerifiedaccessTrustProviderSseSpecification | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._customerManagedKeyEnabled !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.customerManagedKeyEnabled = this._customerManagedKeyEnabled;
+    }
+    if (this._kmsKeyArn !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.kmsKeyArn = this._kmsKeyArn;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: VerifiedaccessTrustProviderSseSpecification | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._customerManagedKeyEnabled = undefined;
+      this._kmsKeyArn = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._customerManagedKeyEnabled = value.customerManagedKeyEnabled;
+      this._kmsKeyArn = value.kmsKeyArn;
+    }
+  }
+
+  // customer_managed_key_enabled - computed: false, optional: true, required: false
+  private _customerManagedKeyEnabled?: boolean | cdktf.IResolvable; 
+  public get customerManagedKeyEnabled() {
+    return this.getBooleanAttribute('customer_managed_key_enabled');
+  }
+  public set customerManagedKeyEnabled(value: boolean | cdktf.IResolvable) {
+    this._customerManagedKeyEnabled = value;
+  }
+  public resetCustomerManagedKeyEnabled() {
+    this._customerManagedKeyEnabled = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get customerManagedKeyEnabledInput() {
+    return this._customerManagedKeyEnabled;
+  }
+
+  // kms_key_arn - computed: false, optional: true, required: false
+  private _kmsKeyArn?: string; 
+  public get kmsKeyArn() {
+    return this.getStringAttribute('kms_key_arn');
+  }
+  public set kmsKeyArn(value: string) {
+    this._kmsKeyArn = value;
+  }
+  public resetKmsKeyArn() {
+    this._kmsKeyArn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get kmsKeyArnInput() {
+    return this._kmsKeyArn;
+  }
+}
 export interface VerifiedaccessTrustProviderTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/verifiedaccess_trust_provider#create VerifiedaccessTrustProvider#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/verifiedaccess_trust_provider#create VerifiedaccessTrustProvider#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/verifiedaccess_trust_provider#delete VerifiedaccessTrustProvider#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/verifiedaccess_trust_provider#delete VerifiedaccessTrustProvider#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/verifiedaccess_trust_provider#update VerifiedaccessTrustProvider#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/verifiedaccess_trust_provider#update VerifiedaccessTrustProvider#update}
   */
   readonly update?: string;
 }
@@ -591,7 +1032,7 @@ export class VerifiedaccessTrustProviderTimeoutsOutputReference extends cdktf.Co
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/verifiedaccess_trust_provider aws_verifiedaccess_trust_provider}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/verifiedaccess_trust_provider aws_verifiedaccess_trust_provider}
 */
 export class VerifiedaccessTrustProvider extends cdktf.TerraformResource {
 
@@ -607,7 +1048,7 @@ export class VerifiedaccessTrustProvider extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a VerifiedaccessTrustProvider resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the VerifiedaccessTrustProvider to import
-  * @param importFromId The id of the existing VerifiedaccessTrustProvider that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/verifiedaccess_trust_provider#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing VerifiedaccessTrustProvider that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/verifiedaccess_trust_provider#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the VerifiedaccessTrustProvider to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -619,7 +1060,7 @@ export class VerifiedaccessTrustProvider extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/verifiedaccess_trust_provider aws_verifiedaccess_trust_provider} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/verifiedaccess_trust_provider aws_verifiedaccess_trust_provider} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -630,7 +1071,7 @@ export class VerifiedaccessTrustProvider extends cdktf.TerraformResource {
       terraformResourceType: 'aws_verifiedaccess_trust_provider',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.92.0',
+        providerVersion: '5.93.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -650,7 +1091,9 @@ export class VerifiedaccessTrustProvider extends cdktf.TerraformResource {
     this._trustProviderType = config.trustProviderType;
     this._userTrustProviderType = config.userTrustProviderType;
     this._deviceOptions.internalValue = config.deviceOptions;
+    this._nativeApplicationOidcOptions.internalValue = config.nativeApplicationOidcOptions;
     this._oidcOptions.internalValue = config.oidcOptions;
+    this._sseSpecification.internalValue = config.sseSpecification;
     this._timeouts.internalValue = config.timeouts;
   }
 
@@ -796,6 +1239,22 @@ export class VerifiedaccessTrustProvider extends cdktf.TerraformResource {
     return this._deviceOptions.internalValue;
   }
 
+  // native_application_oidc_options - computed: false, optional: true, required: false
+  private _nativeApplicationOidcOptions = new VerifiedaccessTrustProviderNativeApplicationOidcOptionsOutputReference(this, "native_application_oidc_options");
+  public get nativeApplicationOidcOptions() {
+    return this._nativeApplicationOidcOptions;
+  }
+  public putNativeApplicationOidcOptions(value: VerifiedaccessTrustProviderNativeApplicationOidcOptions) {
+    this._nativeApplicationOidcOptions.internalValue = value;
+  }
+  public resetNativeApplicationOidcOptions() {
+    this._nativeApplicationOidcOptions.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nativeApplicationOidcOptionsInput() {
+    return this._nativeApplicationOidcOptions.internalValue;
+  }
+
   // oidc_options - computed: false, optional: true, required: false
   private _oidcOptions = new VerifiedaccessTrustProviderOidcOptionsOutputReference(this, "oidc_options");
   public get oidcOptions() {
@@ -810,6 +1269,22 @@ export class VerifiedaccessTrustProvider extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get oidcOptionsInput() {
     return this._oidcOptions.internalValue;
+  }
+
+  // sse_specification - computed: false, optional: true, required: false
+  private _sseSpecification = new VerifiedaccessTrustProviderSseSpecificationOutputReference(this, "sse_specification");
+  public get sseSpecification() {
+    return this._sseSpecification;
+  }
+  public putSseSpecification(value: VerifiedaccessTrustProviderSseSpecification) {
+    this._sseSpecification.internalValue = value;
+  }
+  public resetSseSpecification() {
+    this._sseSpecification.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sseSpecificationInput() {
+    return this._sseSpecification.internalValue;
   }
 
   // timeouts - computed: false, optional: true, required: false
@@ -843,7 +1318,9 @@ export class VerifiedaccessTrustProvider extends cdktf.TerraformResource {
       trust_provider_type: cdktf.stringToTerraform(this._trustProviderType),
       user_trust_provider_type: cdktf.stringToTerraform(this._userTrustProviderType),
       device_options: verifiedaccessTrustProviderDeviceOptionsToTerraform(this._deviceOptions.internalValue),
+      native_application_oidc_options: verifiedaccessTrustProviderNativeApplicationOidcOptionsToTerraform(this._nativeApplicationOidcOptions.internalValue),
       oidc_options: verifiedaccessTrustProviderOidcOptionsToTerraform(this._oidcOptions.internalValue),
+      sse_specification: verifiedaccessTrustProviderSseSpecificationToTerraform(this._sseSpecification.internalValue),
       timeouts: verifiedaccessTrustProviderTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -904,11 +1381,23 @@ export class VerifiedaccessTrustProvider extends cdktf.TerraformResource {
         type: "list",
         storageClassType: "VerifiedaccessTrustProviderDeviceOptionsList",
       },
+      native_application_oidc_options: {
+        value: verifiedaccessTrustProviderNativeApplicationOidcOptionsToHclTerraform(this._nativeApplicationOidcOptions.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "VerifiedaccessTrustProviderNativeApplicationOidcOptionsList",
+      },
       oidc_options: {
         value: verifiedaccessTrustProviderOidcOptionsToHclTerraform(this._oidcOptions.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "VerifiedaccessTrustProviderOidcOptionsList",
+      },
+      sse_specification: {
+        value: verifiedaccessTrustProviderSseSpecificationToHclTerraform(this._sseSpecification.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "VerifiedaccessTrustProviderSseSpecificationList",
       },
       timeouts: {
         value: verifiedaccessTrustProviderTimeoutsToHclTerraform(this._timeouts.internalValue),

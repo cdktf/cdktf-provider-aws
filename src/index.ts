@@ -52,6 +52,7 @@ export * as apiGatewayRequestValidator from './api-gateway-request-validator';
 export * as apiGatewayResource from './api-gateway-resource';
 export * as apiGatewayRestApi from './api-gateway-rest-api';
 export * as apiGatewayRestApiPolicy from './api-gateway-rest-api-policy';
+export * as apiGatewayRestApiPut from './api-gateway-rest-api-put';
 export * as apiGatewayStage from './api-gateway-stage';
 export * as apiGatewayUsagePlan from './api-gateway-usage-plan';
 export * as apiGatewayUsagePlanKey from './api-gateway-usage-plan-key';

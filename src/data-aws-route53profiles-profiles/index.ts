@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/data-sources/route53profiles_profiles
+// https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/data-sources/route53profiles_profiles
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -105,7 +105,7 @@ export class DataAwsRoute53ProfilesProfilesProfilesList extends cdktf.ComplexLis
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/data-sources/route53profiles_profiles aws_route53profiles_profiles}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/data-sources/route53profiles_profiles aws_route53profiles_profiles}
 */
 export class DataAwsRoute53ProfilesProfiles extends cdktf.TerraformDataSource {
 
@@ -121,7 +121,7 @@ export class DataAwsRoute53ProfilesProfiles extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataAwsRoute53ProfilesProfiles resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsRoute53ProfilesProfiles to import
-  * @param importFromId The id of the existing DataAwsRoute53ProfilesProfiles that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/data-sources/route53profiles_profiles#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsRoute53ProfilesProfiles that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/data-sources/route53profiles_profiles#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsRoute53ProfilesProfiles to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -133,7 +133,7 @@ export class DataAwsRoute53ProfilesProfiles extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/data-sources/route53profiles_profiles aws_route53profiles_profiles} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/data-sources/route53profiles_profiles aws_route53profiles_profiles} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -144,7 +144,7 @@ export class DataAwsRoute53ProfilesProfiles extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_route53profiles_profiles',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.92.0',
+        providerVersion: '5.93.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
