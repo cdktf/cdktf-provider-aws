@@ -4,12 +4,12 @@
 
 ### DataAwsIdentitystoreGroupMemberships <a name="DataAwsIdentitystoreGroupMemberships" id="@cdktf/provider-aws.dataAwsIdentitystoreGroupMemberships.DataAwsIdentitystoreGroupMemberships"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/data-sources/identitystore_group_memberships aws_identitystore_group_memberships}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/data-sources/identitystore_group_memberships aws_identitystore_group_memberships}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsIdentitystoreGroupMemberships.DataAwsIdentitystoreGroupMemberships.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsidentitystoregroupmemberships"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsidentitystoregroupmemberships"
 
 dataawsidentitystoregroupmemberships.NewDataAwsIdentitystoreGroupMemberships(scope Construct, id *string, config DataAwsIdentitystoreGroupMembershipsConfig) DataAwsIdentitystoreGroupMemberships
 ```
@@ -276,7 +276,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsIdentitystoreGroupMemberships.DataAwsIdentitystoreGroupMemberships.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsidentitystoregroupmemberships"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsidentitystoregroupmemberships"
 
 dataawsidentitystoregroupmemberships.DataAwsIdentitystoreGroupMemberships_IsConstruct(x interface{}) *bool
 ```
@@ -308,7 +308,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsIdentitystoreGroupMemberships.DataAwsIdentitystoreGroupMemberships.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsidentitystoregroupmemberships"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsidentitystoregroupmemberships"
 
 dataawsidentitystoregroupmemberships.DataAwsIdentitystoreGroupMemberships_IsTerraformElement(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ dataawsidentitystoregroupmemberships.DataAwsIdentitystoreGroupMemberships_IsTerr
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsIdentitystoreGroupMemberships.DataAwsIdentitystoreGroupMemberships.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsidentitystoregroupmemberships"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsidentitystoregroupmemberships"
 
 dataawsidentitystoregroupmemberships.DataAwsIdentitystoreGroupMemberships_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ dataawsidentitystoregroupmemberships.DataAwsIdentitystoreGroupMemberships_IsTerr
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsIdentitystoreGroupMemberships.DataAwsIdentitystoreGroupMemberships.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsidentitystoregroupmemberships"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsidentitystoregroupmemberships"
 
 dataawsidentitystoregroupmemberships.DataAwsIdentitystoreGroupMemberships_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -365,7 +365,7 @@ The construct id used in the generated config for the DataAwsIdentitystoreGroupM
 
 The id of the existing DataAwsIdentitystoreGroupMemberships that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/data-sources/identitystore_group_memberships#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/data-sources/identitystore_group_memberships#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -598,7 +598,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsIdentitystoreGroupMemberships.DataAwsIdentitystoreGroupMembershipsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsidentitystoregroupmemberships"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsidentitystoregroupmemberships"
 
 &dataawsidentitystoregroupmemberships.DataAwsIdentitystoreGroupMembershipsConfig {
 	Connection: interface{},
@@ -624,8 +624,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsidentitystoregroup
 | <code><a href="#@cdktf/provider-aws.dataAwsIdentitystoreGroupMemberships.DataAwsIdentitystoreGroupMembershipsConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsIdentitystoreGroupMemberships.DataAwsIdentitystoreGroupMembershipsConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsIdentitystoreGroupMemberships.DataAwsIdentitystoreGroupMembershipsConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsIdentitystoreGroupMemberships.DataAwsIdentitystoreGroupMembershipsConfig.property.groupId">GroupId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/data-sources/identitystore_group_memberships#group_id DataAwsIdentitystoreGroupMemberships#group_id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsIdentitystoreGroupMemberships.DataAwsIdentitystoreGroupMembershipsConfig.property.identityStoreId">IdentityStoreId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/data-sources/identitystore_group_memberships#identity_store_id DataAwsIdentitystoreGroupMemberships#identity_store_id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsIdentitystoreGroupMemberships.DataAwsIdentitystoreGroupMembershipsConfig.property.groupId">GroupId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/data-sources/identitystore_group_memberships#group_id DataAwsIdentitystoreGroupMemberships#group_id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsIdentitystoreGroupMemberships.DataAwsIdentitystoreGroupMembershipsConfig.property.identityStoreId">IdentityStoreId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/data-sources/identitystore_group_memberships#identity_store_id DataAwsIdentitystoreGroupMemberships#identity_store_id}. |
 
 ---
 
@@ -707,7 +707,7 @@ GroupId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/data-sources/identitystore_group_memberships#group_id DataAwsIdentitystoreGroupMemberships#group_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/data-sources/identitystore_group_memberships#group_id DataAwsIdentitystoreGroupMemberships#group_id}.
 
 ---
 
@@ -719,7 +719,7 @@ IdentityStoreId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/data-sources/identitystore_group_memberships#identity_store_id DataAwsIdentitystoreGroupMemberships#identity_store_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/data-sources/identitystore_group_memberships#identity_store_id DataAwsIdentitystoreGroupMemberships#identity_store_id}.
 
 ---
 
@@ -728,7 +728,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsIdentitystoreGroupMemberships.DataAwsIdentitystoreGroupMembershipsGroupMemberships.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsidentitystoregroupmemberships"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsidentitystoregroupmemberships"
 
 &dataawsidentitystoregroupmemberships.DataAwsIdentitystoreGroupMembershipsGroupMemberships {
 
@@ -741,7 +741,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsidentitystoregroup
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsIdentitystoreGroupMemberships.DataAwsIdentitystoreGroupMembershipsGroupMembershipsMemberId.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsidentitystoregroupmemberships"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsidentitystoregroupmemberships"
 
 &dataawsidentitystoregroupmemberships.DataAwsIdentitystoreGroupMembershipsGroupMembershipsMemberId {
 
@@ -756,7 +756,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsidentitystoregroup
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsIdentitystoreGroupMemberships.DataAwsIdentitystoreGroupMembershipsGroupMembershipsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsidentitystoregroupmemberships"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsidentitystoregroupmemberships"
 
 dataawsidentitystoregroupmemberships.NewDataAwsIdentitystoreGroupMembershipsGroupMembershipsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsIdentitystoreGroupMembershipsGroupMembershipsList
 ```
@@ -905,7 +905,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsIdentitystoreGroupMemberships.DataAwsIdentitystoreGroupMembershipsGroupMembershipsMemberIdOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsidentitystoregroupmemberships"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsidentitystoregroupmemberships"
 
 dataawsidentitystoregroupmemberships.NewDataAwsIdentitystoreGroupMembershipsGroupMembershipsMemberIdOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAwsIdentitystoreGroupMembershipsGroupMembershipsMemberIdOutputReference
 ```
@@ -1165,7 +1165,7 @@ func InternalValue() DataAwsIdentitystoreGroupMembershipsGroupMembershipsMemberI
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsIdentitystoreGroupMemberships.DataAwsIdentitystoreGroupMembershipsGroupMembershipsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsidentitystoregroupmemberships"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsidentitystoregroupmemberships"
 
 dataawsidentitystoregroupmemberships.NewDataAwsIdentitystoreGroupMembershipsGroupMembershipsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsIdentitystoreGroupMembershipsGroupMembershipsOutputReference
 ```

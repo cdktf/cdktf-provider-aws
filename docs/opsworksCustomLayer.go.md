@@ -4,12 +4,12 @@
 
 ### OpsworksCustomLayer <a name="OpsworksCustomLayer" id="@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayer"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/opsworks_custom_layer aws_opsworks_custom_layer}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/opsworks_custom_layer aws_opsworks_custom_layer}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayer.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/opsworkscustomlayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworkscustomlayer"
 
 opsworkscustomlayer.NewOpsworksCustomLayer(scope Construct, id *string, config OpsworksCustomLayerConfig) OpsworksCustomLayer
 ```
@@ -578,7 +578,7 @@ func ResetUseEbsOptimizedInstances()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayer.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/opsworkscustomlayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworkscustomlayer"
 
 opsworkscustomlayer.OpsworksCustomLayer_IsConstruct(x interface{}) *bool
 ```
@@ -610,7 +610,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayer.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/opsworkscustomlayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworkscustomlayer"
 
 opsworkscustomlayer.OpsworksCustomLayer_IsTerraformElement(x interface{}) *bool
 ```
@@ -624,7 +624,7 @@ opsworkscustomlayer.OpsworksCustomLayer_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayer.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/opsworkscustomlayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworkscustomlayer"
 
 opsworkscustomlayer.OpsworksCustomLayer_IsTerraformResource(x interface{}) *bool
 ```
@@ -638,7 +638,7 @@ opsworkscustomlayer.OpsworksCustomLayer_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayer.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/opsworkscustomlayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworkscustomlayer"
 
 opsworkscustomlayer.OpsworksCustomLayer_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -667,7 +667,7 @@ The construct id used in the generated config for the OpsworksCustomLayer to imp
 
 The id of the existing OpsworksCustomLayer that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/opsworks_custom_layer#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/opsworks_custom_layer#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1450,7 +1450,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerCloudwatchConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/opsworkscustomlayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworkscustomlayer"
 
 &opsworkscustomlayer.OpsworksCustomLayerCloudwatchConfiguration {
 	Enabled: interface{},
@@ -1462,7 +1462,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/opsworkscustomlayer"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerCloudwatchConfiguration.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/opsworks_custom_layer#enabled OpsworksCustomLayer#enabled}. |
+| <code><a href="#@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerCloudwatchConfiguration.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/opsworks_custom_layer#enabled OpsworksCustomLayer#enabled}. |
 | <code><a href="#@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerCloudwatchConfiguration.property.logStreams">LogStreams</a></code> | <code>interface{}</code> | log_streams block. |
 
 ---
@@ -1475,7 +1475,7 @@ Enabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/opsworks_custom_layer#enabled OpsworksCustomLayer#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/opsworks_custom_layer#enabled OpsworksCustomLayer#enabled}.
 
 ---
 
@@ -1489,7 +1489,7 @@ LogStreams interface{}
 
 log_streams block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/opsworks_custom_layer#log_streams OpsworksCustomLayer#log_streams}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/opsworks_custom_layer#log_streams OpsworksCustomLayer#log_streams}
 
 ---
 
@@ -1498,7 +1498,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerCloudwatchConfigurationLogStreams.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/opsworkscustomlayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworkscustomlayer"
 
 &opsworkscustomlayer.OpsworksCustomLayerCloudwatchConfigurationLogStreams {
 	File: *string,
@@ -1519,17 +1519,17 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/opsworkscustomlayer"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerCloudwatchConfigurationLogStreams.property.file">File</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/opsworks_custom_layer#file OpsworksCustomLayer#file}. |
-| <code><a href="#@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerCloudwatchConfigurationLogStreams.property.logGroupName">LogGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/opsworks_custom_layer#log_group_name OpsworksCustomLayer#log_group_name}. |
-| <code><a href="#@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerCloudwatchConfigurationLogStreams.property.batchCount">BatchCount</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/opsworks_custom_layer#batch_count OpsworksCustomLayer#batch_count}. |
-| <code><a href="#@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerCloudwatchConfigurationLogStreams.property.batchSize">BatchSize</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/opsworks_custom_layer#batch_size OpsworksCustomLayer#batch_size}. |
-| <code><a href="#@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerCloudwatchConfigurationLogStreams.property.bufferDuration">BufferDuration</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/opsworks_custom_layer#buffer_duration OpsworksCustomLayer#buffer_duration}. |
-| <code><a href="#@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerCloudwatchConfigurationLogStreams.property.datetimeFormat">DatetimeFormat</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/opsworks_custom_layer#datetime_format OpsworksCustomLayer#datetime_format}. |
-| <code><a href="#@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerCloudwatchConfigurationLogStreams.property.encoding">Encoding</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/opsworks_custom_layer#encoding OpsworksCustomLayer#encoding}. |
-| <code><a href="#@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerCloudwatchConfigurationLogStreams.property.fileFingerprintLines">FileFingerprintLines</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/opsworks_custom_layer#file_fingerprint_lines OpsworksCustomLayer#file_fingerprint_lines}. |
-| <code><a href="#@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerCloudwatchConfigurationLogStreams.property.initialPosition">InitialPosition</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/opsworks_custom_layer#initial_position OpsworksCustomLayer#initial_position}. |
-| <code><a href="#@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerCloudwatchConfigurationLogStreams.property.multilineStartPattern">MultilineStartPattern</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/opsworks_custom_layer#multiline_start_pattern OpsworksCustomLayer#multiline_start_pattern}. |
-| <code><a href="#@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerCloudwatchConfigurationLogStreams.property.timeZone">TimeZone</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/opsworks_custom_layer#time_zone OpsworksCustomLayer#time_zone}. |
+| <code><a href="#@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerCloudwatchConfigurationLogStreams.property.file">File</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/opsworks_custom_layer#file OpsworksCustomLayer#file}. |
+| <code><a href="#@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerCloudwatchConfigurationLogStreams.property.logGroupName">LogGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/opsworks_custom_layer#log_group_name OpsworksCustomLayer#log_group_name}. |
+| <code><a href="#@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerCloudwatchConfigurationLogStreams.property.batchCount">BatchCount</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/opsworks_custom_layer#batch_count OpsworksCustomLayer#batch_count}. |
+| <code><a href="#@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerCloudwatchConfigurationLogStreams.property.batchSize">BatchSize</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/opsworks_custom_layer#batch_size OpsworksCustomLayer#batch_size}. |
+| <code><a href="#@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerCloudwatchConfigurationLogStreams.property.bufferDuration">BufferDuration</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/opsworks_custom_layer#buffer_duration OpsworksCustomLayer#buffer_duration}. |
+| <code><a href="#@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerCloudwatchConfigurationLogStreams.property.datetimeFormat">DatetimeFormat</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/opsworks_custom_layer#datetime_format OpsworksCustomLayer#datetime_format}. |
+| <code><a href="#@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerCloudwatchConfigurationLogStreams.property.encoding">Encoding</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/opsworks_custom_layer#encoding OpsworksCustomLayer#encoding}. |
+| <code><a href="#@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerCloudwatchConfigurationLogStreams.property.fileFingerprintLines">FileFingerprintLines</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/opsworks_custom_layer#file_fingerprint_lines OpsworksCustomLayer#file_fingerprint_lines}. |
+| <code><a href="#@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerCloudwatchConfigurationLogStreams.property.initialPosition">InitialPosition</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/opsworks_custom_layer#initial_position OpsworksCustomLayer#initial_position}. |
+| <code><a href="#@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerCloudwatchConfigurationLogStreams.property.multilineStartPattern">MultilineStartPattern</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/opsworks_custom_layer#multiline_start_pattern OpsworksCustomLayer#multiline_start_pattern}. |
+| <code><a href="#@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerCloudwatchConfigurationLogStreams.property.timeZone">TimeZone</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/opsworks_custom_layer#time_zone OpsworksCustomLayer#time_zone}. |
 
 ---
 
@@ -1541,7 +1541,7 @@ File *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/opsworks_custom_layer#file OpsworksCustomLayer#file}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/opsworks_custom_layer#file OpsworksCustomLayer#file}.
 
 ---
 
@@ -1553,7 +1553,7 @@ LogGroupName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/opsworks_custom_layer#log_group_name OpsworksCustomLayer#log_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/opsworks_custom_layer#log_group_name OpsworksCustomLayer#log_group_name}.
 
 ---
 
@@ -1565,7 +1565,7 @@ BatchCount *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/opsworks_custom_layer#batch_count OpsworksCustomLayer#batch_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/opsworks_custom_layer#batch_count OpsworksCustomLayer#batch_count}.
 
 ---
 
@@ -1577,7 +1577,7 @@ BatchSize *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/opsworks_custom_layer#batch_size OpsworksCustomLayer#batch_size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/opsworks_custom_layer#batch_size OpsworksCustomLayer#batch_size}.
 
 ---
 
@@ -1589,7 +1589,7 @@ BufferDuration *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/opsworks_custom_layer#buffer_duration OpsworksCustomLayer#buffer_duration}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/opsworks_custom_layer#buffer_duration OpsworksCustomLayer#buffer_duration}.
 
 ---
 
@@ -1601,7 +1601,7 @@ DatetimeFormat *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/opsworks_custom_layer#datetime_format OpsworksCustomLayer#datetime_format}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/opsworks_custom_layer#datetime_format OpsworksCustomLayer#datetime_format}.
 
 ---
 
@@ -1613,7 +1613,7 @@ Encoding *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/opsworks_custom_layer#encoding OpsworksCustomLayer#encoding}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/opsworks_custom_layer#encoding OpsworksCustomLayer#encoding}.
 
 ---
 
@@ -1625,7 +1625,7 @@ FileFingerprintLines *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/opsworks_custom_layer#file_fingerprint_lines OpsworksCustomLayer#file_fingerprint_lines}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/opsworks_custom_layer#file_fingerprint_lines OpsworksCustomLayer#file_fingerprint_lines}.
 
 ---
 
@@ -1637,7 +1637,7 @@ InitialPosition *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/opsworks_custom_layer#initial_position OpsworksCustomLayer#initial_position}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/opsworks_custom_layer#initial_position OpsworksCustomLayer#initial_position}.
 
 ---
 
@@ -1649,7 +1649,7 @@ MultilineStartPattern *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/opsworks_custom_layer#multiline_start_pattern OpsworksCustomLayer#multiline_start_pattern}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/opsworks_custom_layer#multiline_start_pattern OpsworksCustomLayer#multiline_start_pattern}.
 
 ---
 
@@ -1661,7 +1661,7 @@ TimeZone *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/opsworks_custom_layer#time_zone OpsworksCustomLayer#time_zone}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/opsworks_custom_layer#time_zone OpsworksCustomLayer#time_zone}.
 
 ---
 
@@ -1670,7 +1670,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/opsworkscustomlayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworkscustomlayer"
 
 &opsworkscustomlayer.OpsworksCustomLayerConfig {
 	Connection: interface{},
@@ -1686,7 +1686,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/opsworkscustomlayer"
 	AutoAssignElasticIps: interface{},
 	AutoAssignPublicIps: interface{},
 	AutoHealing: interface{},
-	CloudwatchConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v19.opsworksCustomLayer.OpsworksCustomLayerCloudwatchConfiguration,
+	CloudwatchConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.opsworksCustomLayer.OpsworksCustomLayerCloudwatchConfiguration,
 	CustomConfigureRecipes: *[]*string,
 	CustomDeployRecipes: *[]*string,
 	CustomInstanceProfileArn: *string,
@@ -1701,7 +1701,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/opsworkscustomlayer"
 	Id: *string,
 	InstallUpdatesOnBoot: interface{},
 	InstanceShutdownTimeout: *f64,
-	LoadBasedAutoScaling: github.com/cdktf/cdktf-provider-aws-go/aws/v19.opsworksCustomLayer.OpsworksCustomLayerLoadBasedAutoScaling,
+	LoadBasedAutoScaling: github.com/cdktf/cdktf-provider-aws-go/aws.opsworksCustomLayer.OpsworksCustomLayerLoadBasedAutoScaling,
 	SystemPackages: *[]*string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
@@ -1720,32 +1720,32 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/opsworkscustomlayer"
 | <code><a href="#@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/opsworks_custom_layer#name OpsworksCustomLayer#name}. |
-| <code><a href="#@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerConfig.property.shortName">ShortName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/opsworks_custom_layer#short_name OpsworksCustomLayer#short_name}. |
-| <code><a href="#@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerConfig.property.stackId">StackId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/opsworks_custom_layer#stack_id OpsworksCustomLayer#stack_id}. |
-| <code><a href="#@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerConfig.property.autoAssignElasticIps">AutoAssignElasticIps</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/opsworks_custom_layer#auto_assign_elastic_ips OpsworksCustomLayer#auto_assign_elastic_ips}. |
-| <code><a href="#@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerConfig.property.autoAssignPublicIps">AutoAssignPublicIps</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/opsworks_custom_layer#auto_assign_public_ips OpsworksCustomLayer#auto_assign_public_ips}. |
-| <code><a href="#@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerConfig.property.autoHealing">AutoHealing</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/opsworks_custom_layer#auto_healing OpsworksCustomLayer#auto_healing}. |
+| <code><a href="#@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/opsworks_custom_layer#name OpsworksCustomLayer#name}. |
+| <code><a href="#@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerConfig.property.shortName">ShortName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/opsworks_custom_layer#short_name OpsworksCustomLayer#short_name}. |
+| <code><a href="#@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerConfig.property.stackId">StackId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/opsworks_custom_layer#stack_id OpsworksCustomLayer#stack_id}. |
+| <code><a href="#@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerConfig.property.autoAssignElasticIps">AutoAssignElasticIps</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/opsworks_custom_layer#auto_assign_elastic_ips OpsworksCustomLayer#auto_assign_elastic_ips}. |
+| <code><a href="#@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerConfig.property.autoAssignPublicIps">AutoAssignPublicIps</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/opsworks_custom_layer#auto_assign_public_ips OpsworksCustomLayer#auto_assign_public_ips}. |
+| <code><a href="#@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerConfig.property.autoHealing">AutoHealing</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/opsworks_custom_layer#auto_healing OpsworksCustomLayer#auto_healing}. |
 | <code><a href="#@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerConfig.property.cloudwatchConfiguration">CloudwatchConfiguration</a></code> | <code><a href="#@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerCloudwatchConfiguration">OpsworksCustomLayerCloudwatchConfiguration</a></code> | cloudwatch_configuration block. |
-| <code><a href="#@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerConfig.property.customConfigureRecipes">CustomConfigureRecipes</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/opsworks_custom_layer#custom_configure_recipes OpsworksCustomLayer#custom_configure_recipes}. |
-| <code><a href="#@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerConfig.property.customDeployRecipes">CustomDeployRecipes</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/opsworks_custom_layer#custom_deploy_recipes OpsworksCustomLayer#custom_deploy_recipes}. |
-| <code><a href="#@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerConfig.property.customInstanceProfileArn">CustomInstanceProfileArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/opsworks_custom_layer#custom_instance_profile_arn OpsworksCustomLayer#custom_instance_profile_arn}. |
-| <code><a href="#@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerConfig.property.customJson">CustomJson</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/opsworks_custom_layer#custom_json OpsworksCustomLayer#custom_json}. |
-| <code><a href="#@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerConfig.property.customSecurityGroupIds">CustomSecurityGroupIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/opsworks_custom_layer#custom_security_group_ids OpsworksCustomLayer#custom_security_group_ids}. |
-| <code><a href="#@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerConfig.property.customSetupRecipes">CustomSetupRecipes</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/opsworks_custom_layer#custom_setup_recipes OpsworksCustomLayer#custom_setup_recipes}. |
-| <code><a href="#@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerConfig.property.customShutdownRecipes">CustomShutdownRecipes</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/opsworks_custom_layer#custom_shutdown_recipes OpsworksCustomLayer#custom_shutdown_recipes}. |
-| <code><a href="#@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerConfig.property.customUndeployRecipes">CustomUndeployRecipes</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/opsworks_custom_layer#custom_undeploy_recipes OpsworksCustomLayer#custom_undeploy_recipes}. |
-| <code><a href="#@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerConfig.property.drainElbOnShutdown">DrainElbOnShutdown</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/opsworks_custom_layer#drain_elb_on_shutdown OpsworksCustomLayer#drain_elb_on_shutdown}. |
+| <code><a href="#@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerConfig.property.customConfigureRecipes">CustomConfigureRecipes</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/opsworks_custom_layer#custom_configure_recipes OpsworksCustomLayer#custom_configure_recipes}. |
+| <code><a href="#@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerConfig.property.customDeployRecipes">CustomDeployRecipes</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/opsworks_custom_layer#custom_deploy_recipes OpsworksCustomLayer#custom_deploy_recipes}. |
+| <code><a href="#@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerConfig.property.customInstanceProfileArn">CustomInstanceProfileArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/opsworks_custom_layer#custom_instance_profile_arn OpsworksCustomLayer#custom_instance_profile_arn}. |
+| <code><a href="#@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerConfig.property.customJson">CustomJson</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/opsworks_custom_layer#custom_json OpsworksCustomLayer#custom_json}. |
+| <code><a href="#@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerConfig.property.customSecurityGroupIds">CustomSecurityGroupIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/opsworks_custom_layer#custom_security_group_ids OpsworksCustomLayer#custom_security_group_ids}. |
+| <code><a href="#@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerConfig.property.customSetupRecipes">CustomSetupRecipes</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/opsworks_custom_layer#custom_setup_recipes OpsworksCustomLayer#custom_setup_recipes}. |
+| <code><a href="#@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerConfig.property.customShutdownRecipes">CustomShutdownRecipes</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/opsworks_custom_layer#custom_shutdown_recipes OpsworksCustomLayer#custom_shutdown_recipes}. |
+| <code><a href="#@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerConfig.property.customUndeployRecipes">CustomUndeployRecipes</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/opsworks_custom_layer#custom_undeploy_recipes OpsworksCustomLayer#custom_undeploy_recipes}. |
+| <code><a href="#@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerConfig.property.drainElbOnShutdown">DrainElbOnShutdown</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/opsworks_custom_layer#drain_elb_on_shutdown OpsworksCustomLayer#drain_elb_on_shutdown}. |
 | <code><a href="#@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerConfig.property.ebsVolume">EbsVolume</a></code> | <code>interface{}</code> | ebs_volume block. |
-| <code><a href="#@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerConfig.property.elasticLoadBalancer">ElasticLoadBalancer</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/opsworks_custom_layer#elastic_load_balancer OpsworksCustomLayer#elastic_load_balancer}. |
-| <code><a href="#@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/opsworks_custom_layer#id OpsworksCustomLayer#id}. |
-| <code><a href="#@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerConfig.property.installUpdatesOnBoot">InstallUpdatesOnBoot</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/opsworks_custom_layer#install_updates_on_boot OpsworksCustomLayer#install_updates_on_boot}. |
-| <code><a href="#@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerConfig.property.instanceShutdownTimeout">InstanceShutdownTimeout</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/opsworks_custom_layer#instance_shutdown_timeout OpsworksCustomLayer#instance_shutdown_timeout}. |
+| <code><a href="#@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerConfig.property.elasticLoadBalancer">ElasticLoadBalancer</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/opsworks_custom_layer#elastic_load_balancer OpsworksCustomLayer#elastic_load_balancer}. |
+| <code><a href="#@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/opsworks_custom_layer#id OpsworksCustomLayer#id}. |
+| <code><a href="#@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerConfig.property.installUpdatesOnBoot">InstallUpdatesOnBoot</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/opsworks_custom_layer#install_updates_on_boot OpsworksCustomLayer#install_updates_on_boot}. |
+| <code><a href="#@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerConfig.property.instanceShutdownTimeout">InstanceShutdownTimeout</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/opsworks_custom_layer#instance_shutdown_timeout OpsworksCustomLayer#instance_shutdown_timeout}. |
 | <code><a href="#@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerConfig.property.loadBasedAutoScaling">LoadBasedAutoScaling</a></code> | <code><a href="#@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerLoadBasedAutoScaling">OpsworksCustomLayerLoadBasedAutoScaling</a></code> | load_based_auto_scaling block. |
-| <code><a href="#@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerConfig.property.systemPackages">SystemPackages</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/opsworks_custom_layer#system_packages OpsworksCustomLayer#system_packages}. |
-| <code><a href="#@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/opsworks_custom_layer#tags OpsworksCustomLayer#tags}. |
-| <code><a href="#@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/opsworks_custom_layer#tags_all OpsworksCustomLayer#tags_all}. |
-| <code><a href="#@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerConfig.property.useEbsOptimizedInstances">UseEbsOptimizedInstances</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/opsworks_custom_layer#use_ebs_optimized_instances OpsworksCustomLayer#use_ebs_optimized_instances}. |
+| <code><a href="#@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerConfig.property.systemPackages">SystemPackages</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/opsworks_custom_layer#system_packages OpsworksCustomLayer#system_packages}. |
+| <code><a href="#@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/opsworks_custom_layer#tags OpsworksCustomLayer#tags}. |
+| <code><a href="#@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/opsworks_custom_layer#tags_all OpsworksCustomLayer#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerConfig.property.useEbsOptimizedInstances">UseEbsOptimizedInstances</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/opsworks_custom_layer#use_ebs_optimized_instances OpsworksCustomLayer#use_ebs_optimized_instances}. |
 
 ---
 
@@ -1827,7 +1827,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/opsworks_custom_layer#name OpsworksCustomLayer#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/opsworks_custom_layer#name OpsworksCustomLayer#name}.
 
 ---
 
@@ -1839,7 +1839,7 @@ ShortName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/opsworks_custom_layer#short_name OpsworksCustomLayer#short_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/opsworks_custom_layer#short_name OpsworksCustomLayer#short_name}.
 
 ---
 
@@ -1851,7 +1851,7 @@ StackId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/opsworks_custom_layer#stack_id OpsworksCustomLayer#stack_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/opsworks_custom_layer#stack_id OpsworksCustomLayer#stack_id}.
 
 ---
 
@@ -1863,7 +1863,7 @@ AutoAssignElasticIps interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/opsworks_custom_layer#auto_assign_elastic_ips OpsworksCustomLayer#auto_assign_elastic_ips}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/opsworks_custom_layer#auto_assign_elastic_ips OpsworksCustomLayer#auto_assign_elastic_ips}.
 
 ---
 
@@ -1875,7 +1875,7 @@ AutoAssignPublicIps interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/opsworks_custom_layer#auto_assign_public_ips OpsworksCustomLayer#auto_assign_public_ips}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/opsworks_custom_layer#auto_assign_public_ips OpsworksCustomLayer#auto_assign_public_ips}.
 
 ---
 
@@ -1887,7 +1887,7 @@ AutoHealing interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/opsworks_custom_layer#auto_healing OpsworksCustomLayer#auto_healing}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/opsworks_custom_layer#auto_healing OpsworksCustomLayer#auto_healing}.
 
 ---
 
@@ -1901,7 +1901,7 @@ CloudwatchConfiguration OpsworksCustomLayerCloudwatchConfiguration
 
 cloudwatch_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/opsworks_custom_layer#cloudwatch_configuration OpsworksCustomLayer#cloudwatch_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/opsworks_custom_layer#cloudwatch_configuration OpsworksCustomLayer#cloudwatch_configuration}
 
 ---
 
@@ -1913,7 +1913,7 @@ CustomConfigureRecipes *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/opsworks_custom_layer#custom_configure_recipes OpsworksCustomLayer#custom_configure_recipes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/opsworks_custom_layer#custom_configure_recipes OpsworksCustomLayer#custom_configure_recipes}.
 
 ---
 
@@ -1925,7 +1925,7 @@ CustomDeployRecipes *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/opsworks_custom_layer#custom_deploy_recipes OpsworksCustomLayer#custom_deploy_recipes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/opsworks_custom_layer#custom_deploy_recipes OpsworksCustomLayer#custom_deploy_recipes}.
 
 ---
 
@@ -1937,7 +1937,7 @@ CustomInstanceProfileArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/opsworks_custom_layer#custom_instance_profile_arn OpsworksCustomLayer#custom_instance_profile_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/opsworks_custom_layer#custom_instance_profile_arn OpsworksCustomLayer#custom_instance_profile_arn}.
 
 ---
 
@@ -1949,7 +1949,7 @@ CustomJson *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/opsworks_custom_layer#custom_json OpsworksCustomLayer#custom_json}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/opsworks_custom_layer#custom_json OpsworksCustomLayer#custom_json}.
 
 ---
 
@@ -1961,7 +1961,7 @@ CustomSecurityGroupIds *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/opsworks_custom_layer#custom_security_group_ids OpsworksCustomLayer#custom_security_group_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/opsworks_custom_layer#custom_security_group_ids OpsworksCustomLayer#custom_security_group_ids}.
 
 ---
 
@@ -1973,7 +1973,7 @@ CustomSetupRecipes *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/opsworks_custom_layer#custom_setup_recipes OpsworksCustomLayer#custom_setup_recipes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/opsworks_custom_layer#custom_setup_recipes OpsworksCustomLayer#custom_setup_recipes}.
 
 ---
 
@@ -1985,7 +1985,7 @@ CustomShutdownRecipes *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/opsworks_custom_layer#custom_shutdown_recipes OpsworksCustomLayer#custom_shutdown_recipes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/opsworks_custom_layer#custom_shutdown_recipes OpsworksCustomLayer#custom_shutdown_recipes}.
 
 ---
 
@@ -1997,7 +1997,7 @@ CustomUndeployRecipes *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/opsworks_custom_layer#custom_undeploy_recipes OpsworksCustomLayer#custom_undeploy_recipes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/opsworks_custom_layer#custom_undeploy_recipes OpsworksCustomLayer#custom_undeploy_recipes}.
 
 ---
 
@@ -2009,7 +2009,7 @@ DrainElbOnShutdown interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/opsworks_custom_layer#drain_elb_on_shutdown OpsworksCustomLayer#drain_elb_on_shutdown}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/opsworks_custom_layer#drain_elb_on_shutdown OpsworksCustomLayer#drain_elb_on_shutdown}.
 
 ---
 
@@ -2023,7 +2023,7 @@ EbsVolume interface{}
 
 ebs_volume block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/opsworks_custom_layer#ebs_volume OpsworksCustomLayer#ebs_volume}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/opsworks_custom_layer#ebs_volume OpsworksCustomLayer#ebs_volume}
 
 ---
 
@@ -2035,7 +2035,7 @@ ElasticLoadBalancer *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/opsworks_custom_layer#elastic_load_balancer OpsworksCustomLayer#elastic_load_balancer}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/opsworks_custom_layer#elastic_load_balancer OpsworksCustomLayer#elastic_load_balancer}.
 
 ---
 
@@ -2047,7 +2047,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/opsworks_custom_layer#id OpsworksCustomLayer#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/opsworks_custom_layer#id OpsworksCustomLayer#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2062,7 +2062,7 @@ InstallUpdatesOnBoot interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/opsworks_custom_layer#install_updates_on_boot OpsworksCustomLayer#install_updates_on_boot}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/opsworks_custom_layer#install_updates_on_boot OpsworksCustomLayer#install_updates_on_boot}.
 
 ---
 
@@ -2074,7 +2074,7 @@ InstanceShutdownTimeout *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/opsworks_custom_layer#instance_shutdown_timeout OpsworksCustomLayer#instance_shutdown_timeout}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/opsworks_custom_layer#instance_shutdown_timeout OpsworksCustomLayer#instance_shutdown_timeout}.
 
 ---
 
@@ -2088,7 +2088,7 @@ LoadBasedAutoScaling OpsworksCustomLayerLoadBasedAutoScaling
 
 load_based_auto_scaling block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/opsworks_custom_layer#load_based_auto_scaling OpsworksCustomLayer#load_based_auto_scaling}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/opsworks_custom_layer#load_based_auto_scaling OpsworksCustomLayer#load_based_auto_scaling}
 
 ---
 
@@ -2100,7 +2100,7 @@ SystemPackages *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/opsworks_custom_layer#system_packages OpsworksCustomLayer#system_packages}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/opsworks_custom_layer#system_packages OpsworksCustomLayer#system_packages}.
 
 ---
 
@@ -2112,7 +2112,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/opsworks_custom_layer#tags OpsworksCustomLayer#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/opsworks_custom_layer#tags OpsworksCustomLayer#tags}.
 
 ---
 
@@ -2124,7 +2124,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/opsworks_custom_layer#tags_all OpsworksCustomLayer#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/opsworks_custom_layer#tags_all OpsworksCustomLayer#tags_all}.
 
 ---
 
@@ -2136,7 +2136,7 @@ UseEbsOptimizedInstances interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/opsworks_custom_layer#use_ebs_optimized_instances OpsworksCustomLayer#use_ebs_optimized_instances}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/opsworks_custom_layer#use_ebs_optimized_instances OpsworksCustomLayer#use_ebs_optimized_instances}.
 
 ---
 
@@ -2145,7 +2145,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerEbsVolume.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/opsworkscustomlayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworkscustomlayer"
 
 &opsworkscustomlayer.OpsworksCustomLayerEbsVolume {
 	MountPoint: *string,
@@ -2162,13 +2162,13 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/opsworkscustomlayer"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerEbsVolume.property.mountPoint">MountPoint</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/opsworks_custom_layer#mount_point OpsworksCustomLayer#mount_point}. |
-| <code><a href="#@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerEbsVolume.property.numberOfDisks">NumberOfDisks</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/opsworks_custom_layer#number_of_disks OpsworksCustomLayer#number_of_disks}. |
-| <code><a href="#@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerEbsVolume.property.size">Size</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/opsworks_custom_layer#size OpsworksCustomLayer#size}. |
-| <code><a href="#@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerEbsVolume.property.encrypted">Encrypted</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/opsworks_custom_layer#encrypted OpsworksCustomLayer#encrypted}. |
-| <code><a href="#@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerEbsVolume.property.iops">Iops</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/opsworks_custom_layer#iops OpsworksCustomLayer#iops}. |
-| <code><a href="#@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerEbsVolume.property.raidLevel">RaidLevel</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/opsworks_custom_layer#raid_level OpsworksCustomLayer#raid_level}. |
-| <code><a href="#@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerEbsVolume.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/opsworks_custom_layer#type OpsworksCustomLayer#type}. |
+| <code><a href="#@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerEbsVolume.property.mountPoint">MountPoint</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/opsworks_custom_layer#mount_point OpsworksCustomLayer#mount_point}. |
+| <code><a href="#@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerEbsVolume.property.numberOfDisks">NumberOfDisks</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/opsworks_custom_layer#number_of_disks OpsworksCustomLayer#number_of_disks}. |
+| <code><a href="#@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerEbsVolume.property.size">Size</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/opsworks_custom_layer#size OpsworksCustomLayer#size}. |
+| <code><a href="#@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerEbsVolume.property.encrypted">Encrypted</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/opsworks_custom_layer#encrypted OpsworksCustomLayer#encrypted}. |
+| <code><a href="#@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerEbsVolume.property.iops">Iops</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/opsworks_custom_layer#iops OpsworksCustomLayer#iops}. |
+| <code><a href="#@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerEbsVolume.property.raidLevel">RaidLevel</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/opsworks_custom_layer#raid_level OpsworksCustomLayer#raid_level}. |
+| <code><a href="#@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerEbsVolume.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/opsworks_custom_layer#type OpsworksCustomLayer#type}. |
 
 ---
 
@@ -2180,7 +2180,7 @@ MountPoint *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/opsworks_custom_layer#mount_point OpsworksCustomLayer#mount_point}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/opsworks_custom_layer#mount_point OpsworksCustomLayer#mount_point}.
 
 ---
 
@@ -2192,7 +2192,7 @@ NumberOfDisks *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/opsworks_custom_layer#number_of_disks OpsworksCustomLayer#number_of_disks}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/opsworks_custom_layer#number_of_disks OpsworksCustomLayer#number_of_disks}.
 
 ---
 
@@ -2204,7 +2204,7 @@ Size *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/opsworks_custom_layer#size OpsworksCustomLayer#size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/opsworks_custom_layer#size OpsworksCustomLayer#size}.
 
 ---
 
@@ -2216,7 +2216,7 @@ Encrypted interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/opsworks_custom_layer#encrypted OpsworksCustomLayer#encrypted}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/opsworks_custom_layer#encrypted OpsworksCustomLayer#encrypted}.
 
 ---
 
@@ -2228,7 +2228,7 @@ Iops *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/opsworks_custom_layer#iops OpsworksCustomLayer#iops}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/opsworks_custom_layer#iops OpsworksCustomLayer#iops}.
 
 ---
 
@@ -2240,7 +2240,7 @@ RaidLevel *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/opsworks_custom_layer#raid_level OpsworksCustomLayer#raid_level}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/opsworks_custom_layer#raid_level OpsworksCustomLayer#raid_level}.
 
 ---
 
@@ -2252,7 +2252,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/opsworks_custom_layer#type OpsworksCustomLayer#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/opsworks_custom_layer#type OpsworksCustomLayer#type}.
 
 ---
 
@@ -2261,12 +2261,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerLoadBasedAutoScaling.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/opsworkscustomlayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworkscustomlayer"
 
 &opsworkscustomlayer.OpsworksCustomLayerLoadBasedAutoScaling {
-	Downscaling: github.com/cdktf/cdktf-provider-aws-go/aws/v19.opsworksCustomLayer.OpsworksCustomLayerLoadBasedAutoScalingDownscaling,
+	Downscaling: github.com/cdktf/cdktf-provider-aws-go/aws.opsworksCustomLayer.OpsworksCustomLayerLoadBasedAutoScalingDownscaling,
 	Enable: interface{},
-	Upscaling: github.com/cdktf/cdktf-provider-aws-go/aws/v19.opsworksCustomLayer.OpsworksCustomLayerLoadBasedAutoScalingUpscaling,
+	Upscaling: github.com/cdktf/cdktf-provider-aws-go/aws.opsworksCustomLayer.OpsworksCustomLayerLoadBasedAutoScalingUpscaling,
 }
 ```
 
@@ -2275,7 +2275,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/opsworkscustomlayer"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerLoadBasedAutoScaling.property.downscaling">Downscaling</a></code> | <code><a href="#@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerLoadBasedAutoScalingDownscaling">OpsworksCustomLayerLoadBasedAutoScalingDownscaling</a></code> | downscaling block. |
-| <code><a href="#@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerLoadBasedAutoScaling.property.enable">Enable</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/opsworks_custom_layer#enable OpsworksCustomLayer#enable}. |
+| <code><a href="#@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerLoadBasedAutoScaling.property.enable">Enable</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/opsworks_custom_layer#enable OpsworksCustomLayer#enable}. |
 | <code><a href="#@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerLoadBasedAutoScaling.property.upscaling">Upscaling</a></code> | <code><a href="#@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerLoadBasedAutoScalingUpscaling">OpsworksCustomLayerLoadBasedAutoScalingUpscaling</a></code> | upscaling block. |
 
 ---
@@ -2290,7 +2290,7 @@ Downscaling OpsworksCustomLayerLoadBasedAutoScalingDownscaling
 
 downscaling block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/opsworks_custom_layer#downscaling OpsworksCustomLayer#downscaling}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/opsworks_custom_layer#downscaling OpsworksCustomLayer#downscaling}
 
 ---
 
@@ -2302,7 +2302,7 @@ Enable interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/opsworks_custom_layer#enable OpsworksCustomLayer#enable}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/opsworks_custom_layer#enable OpsworksCustomLayer#enable}.
 
 ---
 
@@ -2316,7 +2316,7 @@ Upscaling OpsworksCustomLayerLoadBasedAutoScalingUpscaling
 
 upscaling block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/opsworks_custom_layer#upscaling OpsworksCustomLayer#upscaling}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/opsworks_custom_layer#upscaling OpsworksCustomLayer#upscaling}
 
 ---
 
@@ -2325,7 +2325,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerLoadBasedAutoScalingDownscaling.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/opsworkscustomlayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworkscustomlayer"
 
 &opsworkscustomlayer.OpsworksCustomLayerLoadBasedAutoScalingDownscaling {
 	Alarms: *[]*string,
@@ -2342,13 +2342,13 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/opsworkscustomlayer"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerLoadBasedAutoScalingDownscaling.property.alarms">Alarms</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/opsworks_custom_layer#alarms OpsworksCustomLayer#alarms}. |
-| <code><a href="#@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerLoadBasedAutoScalingDownscaling.property.cpuThreshold">CpuThreshold</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/opsworks_custom_layer#cpu_threshold OpsworksCustomLayer#cpu_threshold}. |
-| <code><a href="#@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerLoadBasedAutoScalingDownscaling.property.ignoreMetricsTime">IgnoreMetricsTime</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/opsworks_custom_layer#ignore_metrics_time OpsworksCustomLayer#ignore_metrics_time}. |
-| <code><a href="#@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerLoadBasedAutoScalingDownscaling.property.instanceCount">InstanceCount</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/opsworks_custom_layer#instance_count OpsworksCustomLayer#instance_count}. |
-| <code><a href="#@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerLoadBasedAutoScalingDownscaling.property.loadThreshold">LoadThreshold</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/opsworks_custom_layer#load_threshold OpsworksCustomLayer#load_threshold}. |
-| <code><a href="#@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerLoadBasedAutoScalingDownscaling.property.memoryThreshold">MemoryThreshold</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/opsworks_custom_layer#memory_threshold OpsworksCustomLayer#memory_threshold}. |
-| <code><a href="#@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerLoadBasedAutoScalingDownscaling.property.thresholdsWaitTime">ThresholdsWaitTime</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/opsworks_custom_layer#thresholds_wait_time OpsworksCustomLayer#thresholds_wait_time}. |
+| <code><a href="#@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerLoadBasedAutoScalingDownscaling.property.alarms">Alarms</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/opsworks_custom_layer#alarms OpsworksCustomLayer#alarms}. |
+| <code><a href="#@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerLoadBasedAutoScalingDownscaling.property.cpuThreshold">CpuThreshold</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/opsworks_custom_layer#cpu_threshold OpsworksCustomLayer#cpu_threshold}. |
+| <code><a href="#@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerLoadBasedAutoScalingDownscaling.property.ignoreMetricsTime">IgnoreMetricsTime</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/opsworks_custom_layer#ignore_metrics_time OpsworksCustomLayer#ignore_metrics_time}. |
+| <code><a href="#@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerLoadBasedAutoScalingDownscaling.property.instanceCount">InstanceCount</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/opsworks_custom_layer#instance_count OpsworksCustomLayer#instance_count}. |
+| <code><a href="#@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerLoadBasedAutoScalingDownscaling.property.loadThreshold">LoadThreshold</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/opsworks_custom_layer#load_threshold OpsworksCustomLayer#load_threshold}. |
+| <code><a href="#@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerLoadBasedAutoScalingDownscaling.property.memoryThreshold">MemoryThreshold</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/opsworks_custom_layer#memory_threshold OpsworksCustomLayer#memory_threshold}. |
+| <code><a href="#@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerLoadBasedAutoScalingDownscaling.property.thresholdsWaitTime">ThresholdsWaitTime</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/opsworks_custom_layer#thresholds_wait_time OpsworksCustomLayer#thresholds_wait_time}. |
 
 ---
 
@@ -2360,7 +2360,7 @@ Alarms *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/opsworks_custom_layer#alarms OpsworksCustomLayer#alarms}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/opsworks_custom_layer#alarms OpsworksCustomLayer#alarms}.
 
 ---
 
@@ -2372,7 +2372,7 @@ CpuThreshold *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/opsworks_custom_layer#cpu_threshold OpsworksCustomLayer#cpu_threshold}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/opsworks_custom_layer#cpu_threshold OpsworksCustomLayer#cpu_threshold}.
 
 ---
 
@@ -2384,7 +2384,7 @@ IgnoreMetricsTime *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/opsworks_custom_layer#ignore_metrics_time OpsworksCustomLayer#ignore_metrics_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/opsworks_custom_layer#ignore_metrics_time OpsworksCustomLayer#ignore_metrics_time}.
 
 ---
 
@@ -2396,7 +2396,7 @@ InstanceCount *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/opsworks_custom_layer#instance_count OpsworksCustomLayer#instance_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/opsworks_custom_layer#instance_count OpsworksCustomLayer#instance_count}.
 
 ---
 
@@ -2408,7 +2408,7 @@ LoadThreshold *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/opsworks_custom_layer#load_threshold OpsworksCustomLayer#load_threshold}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/opsworks_custom_layer#load_threshold OpsworksCustomLayer#load_threshold}.
 
 ---
 
@@ -2420,7 +2420,7 @@ MemoryThreshold *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/opsworks_custom_layer#memory_threshold OpsworksCustomLayer#memory_threshold}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/opsworks_custom_layer#memory_threshold OpsworksCustomLayer#memory_threshold}.
 
 ---
 
@@ -2432,7 +2432,7 @@ ThresholdsWaitTime *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/opsworks_custom_layer#thresholds_wait_time OpsworksCustomLayer#thresholds_wait_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/opsworks_custom_layer#thresholds_wait_time OpsworksCustomLayer#thresholds_wait_time}.
 
 ---
 
@@ -2441,7 +2441,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerLoadBasedAutoScalingUpscaling.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/opsworkscustomlayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworkscustomlayer"
 
 &opsworkscustomlayer.OpsworksCustomLayerLoadBasedAutoScalingUpscaling {
 	Alarms: *[]*string,
@@ -2458,13 +2458,13 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/opsworkscustomlayer"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerLoadBasedAutoScalingUpscaling.property.alarms">Alarms</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/opsworks_custom_layer#alarms OpsworksCustomLayer#alarms}. |
-| <code><a href="#@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerLoadBasedAutoScalingUpscaling.property.cpuThreshold">CpuThreshold</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/opsworks_custom_layer#cpu_threshold OpsworksCustomLayer#cpu_threshold}. |
-| <code><a href="#@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerLoadBasedAutoScalingUpscaling.property.ignoreMetricsTime">IgnoreMetricsTime</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/opsworks_custom_layer#ignore_metrics_time OpsworksCustomLayer#ignore_metrics_time}. |
-| <code><a href="#@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerLoadBasedAutoScalingUpscaling.property.instanceCount">InstanceCount</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/opsworks_custom_layer#instance_count OpsworksCustomLayer#instance_count}. |
-| <code><a href="#@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerLoadBasedAutoScalingUpscaling.property.loadThreshold">LoadThreshold</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/opsworks_custom_layer#load_threshold OpsworksCustomLayer#load_threshold}. |
-| <code><a href="#@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerLoadBasedAutoScalingUpscaling.property.memoryThreshold">MemoryThreshold</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/opsworks_custom_layer#memory_threshold OpsworksCustomLayer#memory_threshold}. |
-| <code><a href="#@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerLoadBasedAutoScalingUpscaling.property.thresholdsWaitTime">ThresholdsWaitTime</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/opsworks_custom_layer#thresholds_wait_time OpsworksCustomLayer#thresholds_wait_time}. |
+| <code><a href="#@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerLoadBasedAutoScalingUpscaling.property.alarms">Alarms</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/opsworks_custom_layer#alarms OpsworksCustomLayer#alarms}. |
+| <code><a href="#@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerLoadBasedAutoScalingUpscaling.property.cpuThreshold">CpuThreshold</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/opsworks_custom_layer#cpu_threshold OpsworksCustomLayer#cpu_threshold}. |
+| <code><a href="#@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerLoadBasedAutoScalingUpscaling.property.ignoreMetricsTime">IgnoreMetricsTime</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/opsworks_custom_layer#ignore_metrics_time OpsworksCustomLayer#ignore_metrics_time}. |
+| <code><a href="#@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerLoadBasedAutoScalingUpscaling.property.instanceCount">InstanceCount</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/opsworks_custom_layer#instance_count OpsworksCustomLayer#instance_count}. |
+| <code><a href="#@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerLoadBasedAutoScalingUpscaling.property.loadThreshold">LoadThreshold</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/opsworks_custom_layer#load_threshold OpsworksCustomLayer#load_threshold}. |
+| <code><a href="#@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerLoadBasedAutoScalingUpscaling.property.memoryThreshold">MemoryThreshold</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/opsworks_custom_layer#memory_threshold OpsworksCustomLayer#memory_threshold}. |
+| <code><a href="#@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerLoadBasedAutoScalingUpscaling.property.thresholdsWaitTime">ThresholdsWaitTime</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/opsworks_custom_layer#thresholds_wait_time OpsworksCustomLayer#thresholds_wait_time}. |
 
 ---
 
@@ -2476,7 +2476,7 @@ Alarms *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/opsworks_custom_layer#alarms OpsworksCustomLayer#alarms}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/opsworks_custom_layer#alarms OpsworksCustomLayer#alarms}.
 
 ---
 
@@ -2488,7 +2488,7 @@ CpuThreshold *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/opsworks_custom_layer#cpu_threshold OpsworksCustomLayer#cpu_threshold}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/opsworks_custom_layer#cpu_threshold OpsworksCustomLayer#cpu_threshold}.
 
 ---
 
@@ -2500,7 +2500,7 @@ IgnoreMetricsTime *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/opsworks_custom_layer#ignore_metrics_time OpsworksCustomLayer#ignore_metrics_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/opsworks_custom_layer#ignore_metrics_time OpsworksCustomLayer#ignore_metrics_time}.
 
 ---
 
@@ -2512,7 +2512,7 @@ InstanceCount *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/opsworks_custom_layer#instance_count OpsworksCustomLayer#instance_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/opsworks_custom_layer#instance_count OpsworksCustomLayer#instance_count}.
 
 ---
 
@@ -2524,7 +2524,7 @@ LoadThreshold *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/opsworks_custom_layer#load_threshold OpsworksCustomLayer#load_threshold}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/opsworks_custom_layer#load_threshold OpsworksCustomLayer#load_threshold}.
 
 ---
 
@@ -2536,7 +2536,7 @@ MemoryThreshold *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/opsworks_custom_layer#memory_threshold OpsworksCustomLayer#memory_threshold}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/opsworks_custom_layer#memory_threshold OpsworksCustomLayer#memory_threshold}.
 
 ---
 
@@ -2548,7 +2548,7 @@ ThresholdsWaitTime *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/opsworks_custom_layer#thresholds_wait_time OpsworksCustomLayer#thresholds_wait_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/opsworks_custom_layer#thresholds_wait_time OpsworksCustomLayer#thresholds_wait_time}.
 
 ---
 
@@ -2559,7 +2559,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerCloudwatchConfigurationLogStreamsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/opsworkscustomlayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworkscustomlayer"
 
 opsworkscustomlayer.NewOpsworksCustomLayerCloudwatchConfigurationLogStreamsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OpsworksCustomLayerCloudwatchConfigurationLogStreamsList
 ```
@@ -2719,7 +2719,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerCloudwatchConfigurationLogStreamsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/opsworkscustomlayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworkscustomlayer"
 
 opsworkscustomlayer.NewOpsworksCustomLayerCloudwatchConfigurationLogStreamsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OpsworksCustomLayerCloudwatchConfigurationLogStreamsOutputReference
 ```
@@ -3291,7 +3291,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerCloudwatchConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/opsworkscustomlayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworkscustomlayer"
 
 opsworkscustomlayer.NewOpsworksCustomLayerCloudwatchConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OpsworksCustomLayerCloudwatchConfigurationOutputReference
 ```
@@ -3611,7 +3611,7 @@ func InternalValue() OpsworksCustomLayerCloudwatchConfiguration
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerEbsVolumeList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/opsworkscustomlayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworkscustomlayer"
 
 opsworkscustomlayer.NewOpsworksCustomLayerEbsVolumeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OpsworksCustomLayerEbsVolumeList
 ```
@@ -3771,7 +3771,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerEbsVolumeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/opsworkscustomlayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworkscustomlayer"
 
 opsworkscustomlayer.NewOpsworksCustomLayerEbsVolumeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OpsworksCustomLayerEbsVolumeOutputReference
 ```
@@ -4220,7 +4220,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerLoadBasedAutoScalingDownscalingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/opsworkscustomlayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworkscustomlayer"
 
 opsworkscustomlayer.NewOpsworksCustomLayerLoadBasedAutoScalingDownscalingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OpsworksCustomLayerLoadBasedAutoScalingDownscalingOutputReference
 ```
@@ -4672,7 +4672,7 @@ func InternalValue() OpsworksCustomLayerLoadBasedAutoScalingDownscaling
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerLoadBasedAutoScalingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/opsworkscustomlayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworkscustomlayer"
 
 opsworkscustomlayer.NewOpsworksCustomLayerLoadBasedAutoScalingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OpsworksCustomLayerLoadBasedAutoScalingOutputReference
 ```
@@ -5034,7 +5034,7 @@ func InternalValue() OpsworksCustomLayerLoadBasedAutoScaling
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerLoadBasedAutoScalingUpscalingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/opsworkscustomlayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworkscustomlayer"
 
 opsworkscustomlayer.NewOpsworksCustomLayerLoadBasedAutoScalingUpscalingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OpsworksCustomLayerLoadBasedAutoScalingUpscalingOutputReference
 ```

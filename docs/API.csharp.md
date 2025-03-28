@@ -52,6 +52,7 @@ The following submodules are available:
 - [apiGatewayResource](./apiGatewayResource.csharp.md)
 - [apiGatewayRestApi](./apiGatewayRestApi.csharp.md)
 - [apiGatewayRestApiPolicy](./apiGatewayRestApiPolicy.csharp.md)
+- [apiGatewayRestApiPut](./apiGatewayRestApiPut.csharp.md)
 - [apiGatewayStage](./apiGatewayStage.csharp.md)
 - [apiGatewayUsagePlan](./apiGatewayUsagePlan.csharp.md)
 - [apiGatewayUsagePlanKey](./apiGatewayUsagePlanKey.csharp.md)

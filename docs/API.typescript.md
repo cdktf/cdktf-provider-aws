@@ -52,6 +52,7 @@ The following submodules are available:
 - [apiGatewayResource](./apiGatewayResource.typescript.md)
 - [apiGatewayRestApi](./apiGatewayRestApi.typescript.md)
 - [apiGatewayRestApiPolicy](./apiGatewayRestApiPolicy.typescript.md)
+- [apiGatewayRestApiPut](./apiGatewayRestApiPut.typescript.md)
 - [apiGatewayStage](./apiGatewayStage.typescript.md)
 - [apiGatewayUsagePlan](./apiGatewayUsagePlan.typescript.md)
 - [apiGatewayUsagePlanKey](./apiGatewayUsagePlanKey.typescript.md)

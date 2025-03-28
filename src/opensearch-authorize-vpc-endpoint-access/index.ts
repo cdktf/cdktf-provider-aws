@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/opensearch_authorize_vpc_endpoint_access
+// https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/opensearch_authorize_vpc_endpoint_access
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,11 +8,11 @@ import * as cdktf from 'cdktf';
 
 export interface OpensearchAuthorizeVpcEndpointAccessConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/opensearch_authorize_vpc_endpoint_access#account OpensearchAuthorizeVpcEndpointAccess#account}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/opensearch_authorize_vpc_endpoint_access#account OpensearchAuthorizeVpcEndpointAccess#account}
   */
   readonly account: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/opensearch_authorize_vpc_endpoint_access#domain_name OpensearchAuthorizeVpcEndpointAccess#domain_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/opensearch_authorize_vpc_endpoint_access#domain_name OpensearchAuthorizeVpcEndpointAccess#domain_name}
   */
   readonly domainName: string;
 }
@@ -103,7 +98,7 @@ export class OpensearchAuthorizeVpcEndpointAccessAuthorizedPrincipalList extends
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/opensearch_authorize_vpc_endpoint_access aws_opensearch_authorize_vpc_endpoint_access}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/opensearch_authorize_vpc_endpoint_access aws_opensearch_authorize_vpc_endpoint_access}
 */
 export class OpensearchAuthorizeVpcEndpointAccess extends cdktf.TerraformResource {
 
@@ -119,7 +114,7 @@ export class OpensearchAuthorizeVpcEndpointAccess extends cdktf.TerraformResourc
   * Generates CDKTF code for importing a OpensearchAuthorizeVpcEndpointAccess resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the OpensearchAuthorizeVpcEndpointAccess to import
-  * @param importFromId The id of the existing OpensearchAuthorizeVpcEndpointAccess that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/opensearch_authorize_vpc_endpoint_access#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing OpensearchAuthorizeVpcEndpointAccess that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/opensearch_authorize_vpc_endpoint_access#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the OpensearchAuthorizeVpcEndpointAccess to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -131,7 +126,7 @@ export class OpensearchAuthorizeVpcEndpointAccess extends cdktf.TerraformResourc
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/opensearch_authorize_vpc_endpoint_access aws_opensearch_authorize_vpc_endpoint_access} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/opensearch_authorize_vpc_endpoint_access aws_opensearch_authorize_vpc_endpoint_access} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -142,7 +137,7 @@ export class OpensearchAuthorizeVpcEndpointAccess extends cdktf.TerraformResourc
       terraformResourceType: 'aws_opensearch_authorize_vpc_endpoint_access',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.92.0',
+        providerVersion: '5.93.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

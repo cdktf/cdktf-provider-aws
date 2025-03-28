@@ -4,7 +4,7 @@
 
 ### EcrAccountSetting <a name="EcrAccountSetting" id="@cdktf/provider-aws.ecrAccountSetting.EcrAccountSetting"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/ecr_account_setting aws_ecr_account_setting}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/ecr_account_setting aws_ecr_account_setting}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ecrAccountSetting.EcrAccountSetting.Initializer"></a>
 
@@ -37,8 +37,8 @@ ecrAccountSetting.EcrAccountSetting(
 | <code><a href="#@cdktf/provider-aws.ecrAccountSetting.EcrAccountSetting.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecrAccountSetting.EcrAccountSetting.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecrAccountSetting.EcrAccountSetting.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ecrAccountSetting.EcrAccountSetting.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/ecr_account_setting#name EcrAccountSetting#name}. |
-| <code><a href="#@cdktf/provider-aws.ecrAccountSetting.EcrAccountSetting.Initializer.parameter.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/ecr_account_setting#value EcrAccountSetting#value}. |
+| <code><a href="#@cdktf/provider-aws.ecrAccountSetting.EcrAccountSetting.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/ecr_account_setting#name EcrAccountSetting#name}. |
+| <code><a href="#@cdktf/provider-aws.ecrAccountSetting.EcrAccountSetting.Initializer.parameter.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/ecr_account_setting#value EcrAccountSetting#value}. |
 
 ---
 
@@ -106,7 +106,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/ecr_account_setting#name EcrAccountSetting#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/ecr_account_setting#name EcrAccountSetting#name}.
 
 ---
 
@@ -114,7 +114,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/ecr_account_setting#value EcrAccountSetting#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/ecr_account_setting#value EcrAccountSetting#value}.
 
 ---
 
@@ -587,7 +587,7 @@ The construct id used in the generated config for the EcrAccountSetting to impor
 
 The id of the existing EcrAccountSetting that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/ecr_account_setting#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/ecr_account_setting#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -857,8 +857,8 @@ ecrAccountSetting.EcrAccountSettingConfig(
 | <code><a href="#@cdktf/provider-aws.ecrAccountSetting.EcrAccountSettingConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecrAccountSetting.EcrAccountSettingConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecrAccountSetting.EcrAccountSettingConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ecrAccountSetting.EcrAccountSettingConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/ecr_account_setting#name EcrAccountSetting#name}. |
-| <code><a href="#@cdktf/provider-aws.ecrAccountSetting.EcrAccountSettingConfig.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/ecr_account_setting#value EcrAccountSetting#value}. |
+| <code><a href="#@cdktf/provider-aws.ecrAccountSetting.EcrAccountSettingConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/ecr_account_setting#name EcrAccountSetting#name}. |
+| <code><a href="#@cdktf/provider-aws.ecrAccountSetting.EcrAccountSettingConfig.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/ecr_account_setting#value EcrAccountSetting#value}. |
 
 ---
 
@@ -940,7 +940,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/ecr_account_setting#name EcrAccountSetting#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/ecr_account_setting#name EcrAccountSetting#name}.
 
 ---
 
@@ -952,7 +952,7 @@ value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/ecr_account_setting#value EcrAccountSetting#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/ecr_account_setting#value EcrAccountSetting#value}.
 
 ---
 

@@ -1,3 +1,3 @@
 # `aws_securityhub_product_subscription`
 
-Refer to the Terraform Registry for docs: [`aws_securityhub_product_subscription`](https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securityhub_product_subscription).
+Refer to the Terraform Registry for docs: [`aws_securityhub_product_subscription`](https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/securityhub_product_subscription).

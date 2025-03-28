@@ -1,3 +1,3 @@
 # `data_aws_sfn_alias`
 
-Refer to the Terraform Registry for docs: [`data_aws_sfn_alias`](https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/data-sources/sfn_alias).
+Refer to the Terraform Registry for docs: [`data_aws_sfn_alias`](https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/data-sources/sfn_alias).
