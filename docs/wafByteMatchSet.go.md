@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafByteMatchSet.WafByteMatchSet.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafbytematchset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafbytematchset"
 
 wafbytematchset.NewWafByteMatchSet(scope Construct, id *string, config WafByteMatchSetConfig) WafByteMatchSet
 ```
@@ -405,7 +405,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.wafByteMatchSet.WafByteMatchSet.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafbytematchset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafbytematchset"
 
 wafbytematchset.WafByteMatchSet_IsConstruct(x interface{}) *bool
 ```
@@ -437,7 +437,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.wafByteMatchSet.WafByteMatchSet.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafbytematchset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafbytematchset"
 
 wafbytematchset.WafByteMatchSet_IsTerraformElement(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ wafbytematchset.WafByteMatchSet_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.wafByteMatchSet.WafByteMatchSet.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafbytematchset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafbytematchset"
 
 wafbytematchset.WafByteMatchSet_IsTerraformResource(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ wafbytematchset.WafByteMatchSet_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.wafByteMatchSet.WafByteMatchSet.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafbytematchset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafbytematchset"
 
 wafbytematchset.WafByteMatchSet_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -771,10 +771,10 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.wafByteMatchSet.WafByteMatchSetByteMatchTuples.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafbytematchset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafbytematchset"
 
 &wafbytematchset.WafByteMatchSetByteMatchTuples {
-	FieldToMatch: github.com/cdktf/cdktf-provider-aws-go/aws/v19.wafByteMatchSet.WafByteMatchSetByteMatchTuplesFieldToMatch,
+	FieldToMatch: github.com/cdktf/cdktf-provider-aws-go/aws.wafByteMatchSet.WafByteMatchSetByteMatchTuplesFieldToMatch,
 	PositionalConstraint: *string,
 	TextTransformation: *string,
 	TargetString: *string,
@@ -847,7 +847,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.wafByteMatchSet.WafByteMatchSetByteMatchTuplesFieldToMatch.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafbytematchset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafbytematchset"
 
 &wafbytematchset.WafByteMatchSetByteMatchTuplesFieldToMatch {
 	Type: *string,
@@ -893,7 +893,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.wafByteMatchSet.WafByteMatchSetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafbytematchset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafbytematchset"
 
 &wafbytematchset.WafByteMatchSetConfig {
 	Connection: interface{},
@@ -1044,7 +1044,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafByteMatchSet.WafByteMatchSetByteMatchTuplesFieldToMatchOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafbytematchset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafbytematchset"
 
 wafbytematchset.NewWafByteMatchSetByteMatchTuplesFieldToMatchOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WafByteMatchSetByteMatchTuplesFieldToMatchOutputReference
 ```
@@ -1344,7 +1344,7 @@ func InternalValue() WafByteMatchSetByteMatchTuplesFieldToMatch
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafByteMatchSet.WafByteMatchSetByteMatchTuplesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafbytematchset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafbytematchset"
 
 wafbytematchset.NewWafByteMatchSetByteMatchTuplesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WafByteMatchSetByteMatchTuplesList
 ```
@@ -1504,7 +1504,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafByteMatchSet.WafByteMatchSetByteMatchTuplesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafbytematchset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafbytematchset"
 
 wafbytematchset.NewWafByteMatchSetByteMatchTuplesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WafByteMatchSetByteMatchTuplesOutputReference
 ```
