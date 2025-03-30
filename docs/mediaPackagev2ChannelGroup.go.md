@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.mediaPackagev2ChannelGroup.MediaPackagev2ChannelGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/mediapackagev2channelgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/mediapackagev2channelgroup"
 
 mediapackagev2channelgroup.NewMediaPackagev2ChannelGroup(scope Construct, id *string, config MediaPackagev2ChannelGroupConfig) MediaPackagev2ChannelGroup
 ```
@@ -392,7 +392,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.mediaPackagev2ChannelGroup.MediaPackagev2ChannelGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/mediapackagev2channelgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/mediapackagev2channelgroup"
 
 mediapackagev2channelgroup.MediaPackagev2ChannelGroup_IsConstruct(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.mediaPackagev2ChannelGroup.MediaPackagev2ChannelGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/mediapackagev2channelgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/mediapackagev2channelgroup"
 
 mediapackagev2channelgroup.MediaPackagev2ChannelGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ mediapackagev2channelgroup.MediaPackagev2ChannelGroup_IsTerraformElement(x inter
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.mediaPackagev2ChannelGroup.MediaPackagev2ChannelGroup.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/mediapackagev2channelgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/mediapackagev2channelgroup"
 
 mediapackagev2channelgroup.MediaPackagev2ChannelGroup_IsTerraformResource(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ mediapackagev2channelgroup.MediaPackagev2ChannelGroup_IsTerraformResource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.mediaPackagev2ChannelGroup.MediaPackagev2ChannelGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/mediapackagev2channelgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/mediapackagev2channelgroup"
 
 mediapackagev2channelgroup.MediaPackagev2ChannelGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -780,7 +780,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.mediaPackagev2ChannelGroup.MediaPackagev2ChannelGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/mediapackagev2channelgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/mediapackagev2channelgroup"
 
 &mediapackagev2channelgroup.MediaPackagev2ChannelGroupConfig {
 	Connection: interface{},
