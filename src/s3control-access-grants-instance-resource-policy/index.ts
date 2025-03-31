@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/s3control_access_grants_instance_resource_policy
 // generated from terraform resource schema
 
