@@ -4,7 +4,7 @@
 
 ### IamOrganizationsFeatures <a name="IamOrganizationsFeatures" id="@cdktf/provider-aws.iamOrganizationsFeatures.IamOrganizationsFeatures"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/iam_organizations_features aws_iam_organizations_features}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.0/docs/resources/iam_organizations_features aws_iam_organizations_features}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iamOrganizationsFeatures.IamOrganizationsFeatures.Initializer"></a>
 
@@ -467,7 +467,7 @@ The construct id used in the generated config for the IamOrganizationsFeatures t
 
 The id of the existing IamOrganizationsFeatures that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/iam_organizations_features#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.0/docs/resources/iam_organizations_features#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -725,7 +725,7 @@ new IamOrganizationsFeaturesConfig {
 | <code><a href="#@cdktf/provider-aws.iamOrganizationsFeatures.IamOrganizationsFeaturesConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iamOrganizationsFeatures.IamOrganizationsFeaturesConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iamOrganizationsFeatures.IamOrganizationsFeaturesConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iamOrganizationsFeatures.IamOrganizationsFeaturesConfig.property.enabledFeatures">EnabledFeatures</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/iam_organizations_features#enabled_features IamOrganizationsFeatures#enabled_features}. |
+| <code><a href="#@cdktf/provider-aws.iamOrganizationsFeatures.IamOrganizationsFeaturesConfig.property.enabledFeatures">EnabledFeatures</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.0/docs/resources/iam_organizations_features#enabled_features IamOrganizationsFeatures#enabled_features}. |
 
 ---
 
@@ -807,7 +807,7 @@ public string[] EnabledFeatures { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/iam_organizations_features#enabled_features IamOrganizationsFeatures#enabled_features}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.0/docs/resources/iam_organizations_features#enabled_features IamOrganizationsFeatures#enabled_features}.
 
 ---
 
