@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/glue_job
+// https://registry.terraform.io/providers/hashicorp/aws/5.94.0/docs/resources/glue_job
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,118 +13,124 @@ import * as cdktf from 'cdktf';
 
 export interface GlueJobConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/glue_job#connections GlueJob#connections}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.0/docs/resources/glue_job#connections GlueJob#connections}
   */
   readonly connections?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/glue_job#default_arguments GlueJob#default_arguments}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.0/docs/resources/glue_job#default_arguments GlueJob#default_arguments}
   */
   readonly defaultArguments?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/glue_job#description GlueJob#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.0/docs/resources/glue_job#description GlueJob#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/glue_job#execution_class GlueJob#execution_class}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.0/docs/resources/glue_job#execution_class GlueJob#execution_class}
   */
   readonly executionClass?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/glue_job#glue_version GlueJob#glue_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.0/docs/resources/glue_job#glue_version GlueJob#glue_version}
   */
   readonly glueVersion?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/glue_job#id GlueJob#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.0/docs/resources/glue_job#id GlueJob#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/glue_job#job_run_queuing_enabled GlueJob#job_run_queuing_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.0/docs/resources/glue_job#job_run_queuing_enabled GlueJob#job_run_queuing_enabled}
   */
   readonly jobRunQueuingEnabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/glue_job#maintenance_window GlueJob#maintenance_window}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.0/docs/resources/glue_job#maintenance_window GlueJob#maintenance_window}
   */
   readonly maintenanceWindow?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/glue_job#max_capacity GlueJob#max_capacity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.0/docs/resources/glue_job#max_capacity GlueJob#max_capacity}
   */
   readonly maxCapacity?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/glue_job#max_retries GlueJob#max_retries}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.0/docs/resources/glue_job#max_retries GlueJob#max_retries}
   */
   readonly maxRetries?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/glue_job#name GlueJob#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.0/docs/resources/glue_job#name GlueJob#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/glue_job#non_overridable_arguments GlueJob#non_overridable_arguments}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.0/docs/resources/glue_job#non_overridable_arguments GlueJob#non_overridable_arguments}
   */
   readonly nonOverridableArguments?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/glue_job#number_of_workers GlueJob#number_of_workers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.0/docs/resources/glue_job#number_of_workers GlueJob#number_of_workers}
   */
   readonly numberOfWorkers?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/glue_job#role_arn GlueJob#role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.0/docs/resources/glue_job#role_arn GlueJob#role_arn}
   */
   readonly roleArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/glue_job#security_configuration GlueJob#security_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.0/docs/resources/glue_job#security_configuration GlueJob#security_configuration}
   */
   readonly securityConfiguration?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/glue_job#tags GlueJob#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.0/docs/resources/glue_job#tags GlueJob#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/glue_job#tags_all GlueJob#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.0/docs/resources/glue_job#tags_all GlueJob#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/glue_job#timeout GlueJob#timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.0/docs/resources/glue_job#timeout GlueJob#timeout}
   */
   readonly timeout?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/glue_job#worker_type GlueJob#worker_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.0/docs/resources/glue_job#worker_type GlueJob#worker_type}
   */
   readonly workerType?: string;
   /**
   * command block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/glue_job#command GlueJob#command}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.0/docs/resources/glue_job#command GlueJob#command}
   */
   readonly command: GlueJobCommand;
   /**
   * execution_property block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/glue_job#execution_property GlueJob#execution_property}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.0/docs/resources/glue_job#execution_property GlueJob#execution_property}
   */
   readonly executionProperty?: GlueJobExecutionProperty;
   /**
   * notification_property block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/glue_job#notification_property GlueJob#notification_property}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.0/docs/resources/glue_job#notification_property GlueJob#notification_property}
   */
   readonly notificationProperty?: GlueJobNotificationProperty;
+  /**
+  * source_control_details block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.0/docs/resources/glue_job#source_control_details GlueJob#source_control_details}
+  */
+  readonly sourceControlDetails?: GlueJobSourceControlDetails;
 }
 export interface GlueJobCommand {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/glue_job#name GlueJob#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.0/docs/resources/glue_job#name GlueJob#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/glue_job#python_version GlueJob#python_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.0/docs/resources/glue_job#python_version GlueJob#python_version}
   */
   readonly pythonVersion?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/glue_job#runtime GlueJob#runtime}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.0/docs/resources/glue_job#runtime GlueJob#runtime}
   */
   readonly runtime?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/glue_job#script_location GlueJob#script_location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.0/docs/resources/glue_job#script_location GlueJob#script_location}
   */
   readonly scriptLocation: string;
 }
@@ -292,7 +298,7 @@ export class GlueJobCommandOutputReference extends cdktf.ComplexObject {
 }
 export interface GlueJobExecutionProperty {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/glue_job#max_concurrent_runs GlueJob#max_concurrent_runs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.0/docs/resources/glue_job#max_concurrent_runs GlueJob#max_concurrent_runs}
   */
   readonly maxConcurrentRuns?: number;
 }
@@ -376,7 +382,7 @@ export class GlueJobExecutionPropertyOutputReference extends cdktf.ComplexObject
 }
 export interface GlueJobNotificationProperty {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/glue_job#notify_delay_after GlueJob#notify_delay_after}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.0/docs/resources/glue_job#notify_delay_after GlueJob#notify_delay_after}
   */
   readonly notifyDelayAfter?: number;
 }
@@ -458,9 +464,324 @@ export class GlueJobNotificationPropertyOutputReference extends cdktf.ComplexObj
     return this._notifyDelayAfter;
   }
 }
+export interface GlueJobSourceControlDetails {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.0/docs/resources/glue_job#auth_strategy GlueJob#auth_strategy}
+  */
+  readonly authStrategy?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.0/docs/resources/glue_job#auth_token GlueJob#auth_token}
+  */
+  readonly authToken?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.0/docs/resources/glue_job#branch GlueJob#branch}
+  */
+  readonly branch?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.0/docs/resources/glue_job#folder GlueJob#folder}
+  */
+  readonly folder?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.0/docs/resources/glue_job#last_commit_id GlueJob#last_commit_id}
+  */
+  readonly lastCommitId?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.0/docs/resources/glue_job#owner GlueJob#owner}
+  */
+  readonly owner?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.0/docs/resources/glue_job#provider GlueJob#provider}
+  */
+  readonly provider?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.0/docs/resources/glue_job#repository GlueJob#repository}
+  */
+  readonly repository?: string;
+}
+
+export function glueJobSourceControlDetailsToTerraform(struct?: GlueJobSourceControlDetailsOutputReference | GlueJobSourceControlDetails): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    auth_strategy: cdktf.stringToTerraform(struct!.authStrategy),
+    auth_token: cdktf.stringToTerraform(struct!.authToken),
+    branch: cdktf.stringToTerraform(struct!.branch),
+    folder: cdktf.stringToTerraform(struct!.folder),
+    last_commit_id: cdktf.stringToTerraform(struct!.lastCommitId),
+    owner: cdktf.stringToTerraform(struct!.owner),
+    provider: cdktf.stringToTerraform(struct!.provider),
+    repository: cdktf.stringToTerraform(struct!.repository),
+  }
+}
+
+
+export function glueJobSourceControlDetailsToHclTerraform(struct?: GlueJobSourceControlDetailsOutputReference | GlueJobSourceControlDetails): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    auth_strategy: {
+      value: cdktf.stringToHclTerraform(struct!.authStrategy),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    auth_token: {
+      value: cdktf.stringToHclTerraform(struct!.authToken),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    branch: {
+      value: cdktf.stringToHclTerraform(struct!.branch),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    folder: {
+      value: cdktf.stringToHclTerraform(struct!.folder),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    last_commit_id: {
+      value: cdktf.stringToHclTerraform(struct!.lastCommitId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    owner: {
+      value: cdktf.stringToHclTerraform(struct!.owner),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    provider: {
+      value: cdktf.stringToHclTerraform(struct!.provider),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    repository: {
+      value: cdktf.stringToHclTerraform(struct!.repository),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GlueJobSourceControlDetailsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GlueJobSourceControlDetails | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._authStrategy !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.authStrategy = this._authStrategy;
+    }
+    if (this._authToken !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.authToken = this._authToken;
+    }
+    if (this._branch !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.branch = this._branch;
+    }
+    if (this._folder !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.folder = this._folder;
+    }
+    if (this._lastCommitId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.lastCommitId = this._lastCommitId;
+    }
+    if (this._owner !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.owner = this._owner;
+    }
+    if (this._provider !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.provider = this._provider;
+    }
+    if (this._repository !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.repository = this._repository;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GlueJobSourceControlDetails | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._authStrategy = undefined;
+      this._authToken = undefined;
+      this._branch = undefined;
+      this._folder = undefined;
+      this._lastCommitId = undefined;
+      this._owner = undefined;
+      this._provider = undefined;
+      this._repository = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._authStrategy = value.authStrategy;
+      this._authToken = value.authToken;
+      this._branch = value.branch;
+      this._folder = value.folder;
+      this._lastCommitId = value.lastCommitId;
+      this._owner = value.owner;
+      this._provider = value.provider;
+      this._repository = value.repository;
+    }
+  }
+
+  // auth_strategy - computed: false, optional: true, required: false
+  private _authStrategy?: string; 
+  public get authStrategy() {
+    return this.getStringAttribute('auth_strategy');
+  }
+  public set authStrategy(value: string) {
+    this._authStrategy = value;
+  }
+  public resetAuthStrategy() {
+    this._authStrategy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get authStrategyInput() {
+    return this._authStrategy;
+  }
+
+  // auth_token - computed: false, optional: true, required: false
+  private _authToken?: string; 
+  public get authToken() {
+    return this.getStringAttribute('auth_token');
+  }
+  public set authToken(value: string) {
+    this._authToken = value;
+  }
+  public resetAuthToken() {
+    this._authToken = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get authTokenInput() {
+    return this._authToken;
+  }
+
+  // branch - computed: false, optional: true, required: false
+  private _branch?: string; 
+  public get branch() {
+    return this.getStringAttribute('branch');
+  }
+  public set branch(value: string) {
+    this._branch = value;
+  }
+  public resetBranch() {
+    this._branch = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get branchInput() {
+    return this._branch;
+  }
+
+  // folder - computed: false, optional: true, required: false
+  private _folder?: string; 
+  public get folder() {
+    return this.getStringAttribute('folder');
+  }
+  public set folder(value: string) {
+    this._folder = value;
+  }
+  public resetFolder() {
+    this._folder = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get folderInput() {
+    return this._folder;
+  }
+
+  // last_commit_id - computed: false, optional: true, required: false
+  private _lastCommitId?: string; 
+  public get lastCommitId() {
+    return this.getStringAttribute('last_commit_id');
+  }
+  public set lastCommitId(value: string) {
+    this._lastCommitId = value;
+  }
+  public resetLastCommitId() {
+    this._lastCommitId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get lastCommitIdInput() {
+    return this._lastCommitId;
+  }
+
+  // owner - computed: false, optional: true, required: false
+  private _owner?: string; 
+  public get owner() {
+    return this.getStringAttribute('owner');
+  }
+  public set owner(value: string) {
+    this._owner = value;
+  }
+  public resetOwner() {
+    this._owner = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ownerInput() {
+    return this._owner;
+  }
+
+  // provider - computed: false, optional: true, required: false
+  private _provider?: string; 
+  public get provider() {
+    return this.getStringAttribute('provider');
+  }
+  public set provider(value: string) {
+    this._provider = value;
+  }
+  public resetProvider() {
+    this._provider = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get providerInput() {
+    return this._provider;
+  }
+
+  // repository - computed: false, optional: true, required: false
+  private _repository?: string; 
+  public get repository() {
+    return this.getStringAttribute('repository');
+  }
+  public set repository(value: string) {
+    this._repository = value;
+  }
+  public resetRepository() {
+    this._repository = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get repositoryInput() {
+    return this._repository;
+  }
+}
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/glue_job aws_glue_job}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.0/docs/resources/glue_job aws_glue_job}
 */
 export class GlueJob extends cdktf.TerraformResource {
 
@@ -476,7 +797,7 @@ export class GlueJob extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GlueJob resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GlueJob to import
-  * @param importFromId The id of the existing GlueJob that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/glue_job#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GlueJob that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.0/docs/resources/glue_job#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GlueJob to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -488,7 +809,7 @@ export class GlueJob extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/glue_job aws_glue_job} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.0/docs/resources/glue_job aws_glue_job} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -499,7 +820,7 @@ export class GlueJob extends cdktf.TerraformResource {
       terraformResourceType: 'aws_glue_job',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.93.0',
+        providerVersion: '5.94.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -532,6 +853,7 @@ export class GlueJob extends cdktf.TerraformResource {
     this._command.internalValue = config.command;
     this._executionProperty.internalValue = config.executionProperty;
     this._notificationProperty.internalValue = config.notificationProperty;
+    this._sourceControlDetails.internalValue = config.sourceControlDetails;
   }
 
   // ==========
@@ -886,6 +1208,22 @@ export class GlueJob extends cdktf.TerraformResource {
     return this._notificationProperty.internalValue;
   }
 
+  // source_control_details - computed: false, optional: true, required: false
+  private _sourceControlDetails = new GlueJobSourceControlDetailsOutputReference(this, "source_control_details");
+  public get sourceControlDetails() {
+    return this._sourceControlDetails;
+  }
+  public putSourceControlDetails(value: GlueJobSourceControlDetails) {
+    this._sourceControlDetails.internalValue = value;
+  }
+  public resetSourceControlDetails() {
+    this._sourceControlDetails.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sourceControlDetailsInput() {
+    return this._sourceControlDetails.internalValue;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -914,6 +1252,7 @@ export class GlueJob extends cdktf.TerraformResource {
       command: glueJobCommandToTerraform(this._command.internalValue),
       execution_property: glueJobExecutionPropertyToTerraform(this._executionProperty.internalValue),
       notification_property: glueJobNotificationPropertyToTerraform(this._notificationProperty.internalValue),
+      source_control_details: glueJobSourceControlDetailsToTerraform(this._sourceControlDetails.internalValue),
     };
   }
 
@@ -1050,6 +1389,12 @@ export class GlueJob extends cdktf.TerraformResource {
         isBlock: true,
         type: "list",
         storageClassType: "GlueJobNotificationPropertyList",
+      },
+      source_control_details: {
+        value: glueJobSourceControlDetailsToHclTerraform(this._sourceControlDetails.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GlueJobSourceControlDetailsList",
       },
     };
 
