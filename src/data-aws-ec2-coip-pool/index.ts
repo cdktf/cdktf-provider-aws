@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/data-sources/ec2_coip_pool
+// https://registry.terraform.io/providers/hashicorp/aws/5.94.0/docs/data-sources/ec2_coip_pool
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,44 +8,44 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsEc2CoipPoolConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/data-sources/ec2_coip_pool#id DataAwsEc2CoipPool#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.0/docs/data-sources/ec2_coip_pool#id DataAwsEc2CoipPool#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/data-sources/ec2_coip_pool#local_gateway_route_table_id DataAwsEc2CoipPool#local_gateway_route_table_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.0/docs/data-sources/ec2_coip_pool#local_gateway_route_table_id DataAwsEc2CoipPool#local_gateway_route_table_id}
   */
   readonly localGatewayRouteTableId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/data-sources/ec2_coip_pool#pool_id DataAwsEc2CoipPool#pool_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.0/docs/data-sources/ec2_coip_pool#pool_id DataAwsEc2CoipPool#pool_id}
   */
   readonly poolId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/data-sources/ec2_coip_pool#tags DataAwsEc2CoipPool#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.0/docs/data-sources/ec2_coip_pool#tags DataAwsEc2CoipPool#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
   * filter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/data-sources/ec2_coip_pool#filter DataAwsEc2CoipPool#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.0/docs/data-sources/ec2_coip_pool#filter DataAwsEc2CoipPool#filter}
   */
   readonly filter?: DataAwsEc2CoipPoolFilter[] | cdktf.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/data-sources/ec2_coip_pool#timeouts DataAwsEc2CoipPool#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.0/docs/data-sources/ec2_coip_pool#timeouts DataAwsEc2CoipPool#timeouts}
   */
   readonly timeouts?: DataAwsEc2CoipPoolTimeouts;
 }
 export interface DataAwsEc2CoipPoolFilter {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/data-sources/ec2_coip_pool#name DataAwsEc2CoipPool#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.0/docs/data-sources/ec2_coip_pool#name DataAwsEc2CoipPool#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/data-sources/ec2_coip_pool#values DataAwsEc2CoipPool#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.0/docs/data-sources/ec2_coip_pool#values DataAwsEc2CoipPool#values}
   */
   readonly values: string[];
 }
@@ -189,7 +184,7 @@ export class DataAwsEc2CoipPoolFilterList extends cdktf.ComplexList {
 }
 export interface DataAwsEc2CoipPoolTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/data-sources/ec2_coip_pool#read DataAwsEc2CoipPool#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.0/docs/data-sources/ec2_coip_pool#read DataAwsEc2CoipPool#read}
   */
   readonly read?: string;
 }
@@ -283,7 +278,7 @@ export class DataAwsEc2CoipPoolTimeoutsOutputReference extends cdktf.ComplexObje
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/data-sources/ec2_coip_pool aws_ec2_coip_pool}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.0/docs/data-sources/ec2_coip_pool aws_ec2_coip_pool}
 */
 export class DataAwsEc2CoipPool extends cdktf.TerraformDataSource {
 
@@ -299,7 +294,7 @@ export class DataAwsEc2CoipPool extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataAwsEc2CoipPool resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsEc2CoipPool to import
-  * @param importFromId The id of the existing DataAwsEc2CoipPool that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/data-sources/ec2_coip_pool#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsEc2CoipPool that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.0/docs/data-sources/ec2_coip_pool#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsEc2CoipPool to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -311,7 +306,7 @@ export class DataAwsEc2CoipPool extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/data-sources/ec2_coip_pool aws_ec2_coip_pool} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.0/docs/data-sources/ec2_coip_pool aws_ec2_coip_pool} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -322,7 +317,7 @@ export class DataAwsEc2CoipPool extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_ec2_coip_pool',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.93.0',
+        providerVersion: '5.94.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
