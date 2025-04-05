@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.94.0/docs/data-sources/transfer_connector
+// https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/data-sources/transfer_connector
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsTransferConnectorConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.0/docs/data-sources/transfer_connector#id DataAwsTransferConnector#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/data-sources/transfer_connector#id DataAwsTransferConnector#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -217,7 +212,7 @@ export class DataAwsTransferConnectorSftpConfigList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.0/docs/data-sources/transfer_connector aws_transfer_connector}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/data-sources/transfer_connector aws_transfer_connector}
 */
 export class DataAwsTransferConnector extends cdktf.TerraformDataSource {
 
@@ -233,7 +228,7 @@ export class DataAwsTransferConnector extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataAwsTransferConnector resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsTransferConnector to import
-  * @param importFromId The id of the existing DataAwsTransferConnector that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.0/docs/data-sources/transfer_connector#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsTransferConnector that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/data-sources/transfer_connector#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsTransferConnector to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -245,7 +240,7 @@ export class DataAwsTransferConnector extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.0/docs/data-sources/transfer_connector aws_transfer_connector} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/data-sources/transfer_connector aws_transfer_connector} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -256,7 +251,7 @@ export class DataAwsTransferConnector extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_transfer_connector',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.94.0',
+        providerVersion: '5.94.1',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

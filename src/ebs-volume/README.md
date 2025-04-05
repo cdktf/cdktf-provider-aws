@@ -1,3 +1,3 @@
 # `aws_ebs_volume`
 
-Refer to the Terraform Registry for docs: [`aws_ebs_volume`](https://registry.terraform.io/providers/hashicorp/aws/5.94.0/docs/resources/ebs_volume).
+Refer to the Terraform Registry for docs: [`aws_ebs_volume`](https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/ebs_volume).

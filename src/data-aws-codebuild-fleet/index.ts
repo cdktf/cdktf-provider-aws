@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.94.0/docs/data-sources/codebuild_fleet
+// https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/data-sources/codebuild_fleet
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,11 +8,11 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsCodebuildFleetConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.0/docs/data-sources/codebuild_fleet#name DataAwsCodebuildFleet#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/data-sources/codebuild_fleet#name DataAwsCodebuildFleet#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.0/docs/data-sources/codebuild_fleet#tags DataAwsCodebuildFleet#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/data-sources/codebuild_fleet#tags DataAwsCodebuildFleet#tags}
   */
   readonly tags?: { [key: string]: string };
 }
@@ -454,7 +449,7 @@ export class DataAwsCodebuildFleetVpcConfigList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.0/docs/data-sources/codebuild_fleet aws_codebuild_fleet}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/data-sources/codebuild_fleet aws_codebuild_fleet}
 */
 export class DataAwsCodebuildFleet extends cdktf.TerraformDataSource {
 
@@ -470,7 +465,7 @@ export class DataAwsCodebuildFleet extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataAwsCodebuildFleet resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsCodebuildFleet to import
-  * @param importFromId The id of the existing DataAwsCodebuildFleet that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.0/docs/data-sources/codebuild_fleet#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsCodebuildFleet that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/data-sources/codebuild_fleet#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsCodebuildFleet to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -482,7 +477,7 @@ export class DataAwsCodebuildFleet extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.0/docs/data-sources/codebuild_fleet aws_codebuild_fleet} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/data-sources/codebuild_fleet aws_codebuild_fleet} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -493,7 +488,7 @@ export class DataAwsCodebuildFleet extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_codebuild_fleet',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.94.0',
+        providerVersion: '5.94.1',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

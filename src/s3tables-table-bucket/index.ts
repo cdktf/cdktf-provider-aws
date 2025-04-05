@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.94.0/docs/resources/s3tables_table_bucket
+// https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/s3tables_table_bucket
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,21 +8,21 @@ import * as cdktf from 'cdktf';
 
 export interface S3TablesTableBucketConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.0/docs/resources/s3tables_table_bucket#maintenance_configuration S3TablesTableBucket#maintenance_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/s3tables_table_bucket#maintenance_configuration S3TablesTableBucket#maintenance_configuration}
   */
   readonly maintenanceConfiguration?: S3TablesTableBucketMaintenanceConfiguration;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.0/docs/resources/s3tables_table_bucket#name S3TablesTableBucket#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/s3tables_table_bucket#name S3TablesTableBucket#name}
   */
   readonly name: string;
 }
 export interface S3TablesTableBucketMaintenanceConfigurationIcebergUnreferencedFileRemovalSettings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.0/docs/resources/s3tables_table_bucket#non_current_days S3TablesTableBucket#non_current_days}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/s3tables_table_bucket#non_current_days S3TablesTableBucket#non_current_days}
   */
   readonly nonCurrentDays?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.0/docs/resources/s3tables_table_bucket#unreferenced_days S3TablesTableBucket#unreferenced_days}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/s3tables_table_bucket#unreferenced_days S3TablesTableBucket#unreferenced_days}
   */
   readonly unreferencedDays?: number;
 }
@@ -150,11 +145,11 @@ export class S3TablesTableBucketMaintenanceConfigurationIcebergUnreferencedFileR
 }
 export interface S3TablesTableBucketMaintenanceConfigurationIcebergUnreferencedFileRemoval {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.0/docs/resources/s3tables_table_bucket#settings S3TablesTableBucket#settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/s3tables_table_bucket#settings S3TablesTableBucket#settings}
   */
   readonly settings?: S3TablesTableBucketMaintenanceConfigurationIcebergUnreferencedFileRemovalSettings;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.0/docs/resources/s3tables_table_bucket#status S3TablesTableBucket#status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/s3tables_table_bucket#status S3TablesTableBucket#status}
   */
   readonly status?: string;
 }
@@ -277,7 +272,7 @@ export class S3TablesTableBucketMaintenanceConfigurationIcebergUnreferencedFileR
 }
 export interface S3TablesTableBucketMaintenanceConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.0/docs/resources/s3tables_table_bucket#iceberg_unreferenced_file_removal S3TablesTableBucket#iceberg_unreferenced_file_removal}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/s3tables_table_bucket#iceberg_unreferenced_file_removal S3TablesTableBucket#iceberg_unreferenced_file_removal}
   */
   readonly icebergUnreferencedFileRemoval?: S3TablesTableBucketMaintenanceConfigurationIcebergUnreferencedFileRemoval;
 }
@@ -371,7 +366,7 @@ export class S3TablesTableBucketMaintenanceConfigurationOutputReference extends 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.0/docs/resources/s3tables_table_bucket aws_s3tables_table_bucket}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/s3tables_table_bucket aws_s3tables_table_bucket}
 */
 export class S3TablesTableBucket extends cdktf.TerraformResource {
 
@@ -387,7 +382,7 @@ export class S3TablesTableBucket extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a S3TablesTableBucket resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the S3TablesTableBucket to import
-  * @param importFromId The id of the existing S3TablesTableBucket that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.0/docs/resources/s3tables_table_bucket#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing S3TablesTableBucket that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/s3tables_table_bucket#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the S3TablesTableBucket to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -399,7 +394,7 @@ export class S3TablesTableBucket extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.0/docs/resources/s3tables_table_bucket aws_s3tables_table_bucket} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/s3tables_table_bucket aws_s3tables_table_bucket} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -410,7 +405,7 @@ export class S3TablesTableBucket extends cdktf.TerraformResource {
       terraformResourceType: 'aws_s3tables_table_bucket',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.94.0',
+        providerVersion: '5.94.1',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

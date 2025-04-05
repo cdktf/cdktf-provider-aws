@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.94.0/docs/resources/accessanalyzer_analyzer
+// https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/accessanalyzer_analyzer
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,38 +8,38 @@ import * as cdktf from 'cdktf';
 
 export interface AccessanalyzerAnalyzerConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.0/docs/resources/accessanalyzer_analyzer#analyzer_name AccessanalyzerAnalyzer#analyzer_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/accessanalyzer_analyzer#analyzer_name AccessanalyzerAnalyzer#analyzer_name}
   */
   readonly analyzerName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.0/docs/resources/accessanalyzer_analyzer#id AccessanalyzerAnalyzer#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/accessanalyzer_analyzer#id AccessanalyzerAnalyzer#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.0/docs/resources/accessanalyzer_analyzer#tags AccessanalyzerAnalyzer#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/accessanalyzer_analyzer#tags AccessanalyzerAnalyzer#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.0/docs/resources/accessanalyzer_analyzer#tags_all AccessanalyzerAnalyzer#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/accessanalyzer_analyzer#tags_all AccessanalyzerAnalyzer#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.0/docs/resources/accessanalyzer_analyzer#type AccessanalyzerAnalyzer#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/accessanalyzer_analyzer#type AccessanalyzerAnalyzer#type}
   */
   readonly type?: string;
   /**
   * configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.0/docs/resources/accessanalyzer_analyzer#configuration AccessanalyzerAnalyzer#configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/accessanalyzer_analyzer#configuration AccessanalyzerAnalyzer#configuration}
   */
   readonly configuration?: AccessanalyzerAnalyzerConfiguration;
 }
 export interface AccessanalyzerAnalyzerConfigurationUnusedAccess {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.0/docs/resources/accessanalyzer_analyzer#unused_access_age AccessanalyzerAnalyzer#unused_access_age}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/accessanalyzer_analyzer#unused_access_age AccessanalyzerAnalyzer#unused_access_age}
   */
   readonly unusedAccessAge?: number;
 }
@@ -130,7 +125,7 @@ export interface AccessanalyzerAnalyzerConfiguration {
   /**
   * unused_access block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.0/docs/resources/accessanalyzer_analyzer#unused_access AccessanalyzerAnalyzer#unused_access}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/accessanalyzer_analyzer#unused_access AccessanalyzerAnalyzer#unused_access}
   */
   readonly unusedAccess?: AccessanalyzerAnalyzerConfigurationUnusedAccess;
 }
@@ -214,7 +209,7 @@ export class AccessanalyzerAnalyzerConfigurationOutputReference extends cdktf.Co
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.0/docs/resources/accessanalyzer_analyzer aws_accessanalyzer_analyzer}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/accessanalyzer_analyzer aws_accessanalyzer_analyzer}
 */
 export class AccessanalyzerAnalyzer extends cdktf.TerraformResource {
 
@@ -230,7 +225,7 @@ export class AccessanalyzerAnalyzer extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a AccessanalyzerAnalyzer resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AccessanalyzerAnalyzer to import
-  * @param importFromId The id of the existing AccessanalyzerAnalyzer that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.0/docs/resources/accessanalyzer_analyzer#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing AccessanalyzerAnalyzer that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/accessanalyzer_analyzer#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AccessanalyzerAnalyzer to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -242,7 +237,7 @@ export class AccessanalyzerAnalyzer extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.0/docs/resources/accessanalyzer_analyzer aws_accessanalyzer_analyzer} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/accessanalyzer_analyzer aws_accessanalyzer_analyzer} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -253,7 +248,7 @@ export class AccessanalyzerAnalyzer extends cdktf.TerraformResource {
       terraformResourceType: 'aws_accessanalyzer_analyzer',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.94.0',
+        providerVersion: '5.94.1',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
