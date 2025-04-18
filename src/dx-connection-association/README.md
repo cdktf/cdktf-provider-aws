@@ -1,3 +1,3 @@
 # `aws_dx_connection_association`
 
-Refer to the Terraform Registry for docs: [`aws_dx_connection_association`](https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/dx_connection_association).
+Refer to the Terraform Registry for docs: [`aws_dx_connection_association`](https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/dx_connection_association).

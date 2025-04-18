@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/pinpoint_apns_voip_channel
+// https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/pinpoint_apns_voip_channel
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,52 +8,52 @@ import * as cdktf from 'cdktf';
 
 export interface PinpointApnsVoipChannelConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/pinpoint_apns_voip_channel#application_id PinpointApnsVoipChannel#application_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/pinpoint_apns_voip_channel#application_id PinpointApnsVoipChannel#application_id}
   */
   readonly applicationId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/pinpoint_apns_voip_channel#bundle_id PinpointApnsVoipChannel#bundle_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/pinpoint_apns_voip_channel#bundle_id PinpointApnsVoipChannel#bundle_id}
   */
   readonly bundleId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/pinpoint_apns_voip_channel#certificate PinpointApnsVoipChannel#certificate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/pinpoint_apns_voip_channel#certificate PinpointApnsVoipChannel#certificate}
   */
   readonly certificate?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/pinpoint_apns_voip_channel#default_authentication_method PinpointApnsVoipChannel#default_authentication_method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/pinpoint_apns_voip_channel#default_authentication_method PinpointApnsVoipChannel#default_authentication_method}
   */
   readonly defaultAuthenticationMethod?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/pinpoint_apns_voip_channel#enabled PinpointApnsVoipChannel#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/pinpoint_apns_voip_channel#enabled PinpointApnsVoipChannel#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/pinpoint_apns_voip_channel#id PinpointApnsVoipChannel#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/pinpoint_apns_voip_channel#id PinpointApnsVoipChannel#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/pinpoint_apns_voip_channel#private_key PinpointApnsVoipChannel#private_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/pinpoint_apns_voip_channel#private_key PinpointApnsVoipChannel#private_key}
   */
   readonly privateKey?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/pinpoint_apns_voip_channel#team_id PinpointApnsVoipChannel#team_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/pinpoint_apns_voip_channel#team_id PinpointApnsVoipChannel#team_id}
   */
   readonly teamId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/pinpoint_apns_voip_channel#token_key PinpointApnsVoipChannel#token_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/pinpoint_apns_voip_channel#token_key PinpointApnsVoipChannel#token_key}
   */
   readonly tokenKey?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/pinpoint_apns_voip_channel#token_key_id PinpointApnsVoipChannel#token_key_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/pinpoint_apns_voip_channel#token_key_id PinpointApnsVoipChannel#token_key_id}
   */
   readonly tokenKeyId?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/pinpoint_apns_voip_channel aws_pinpoint_apns_voip_channel}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/pinpoint_apns_voip_channel aws_pinpoint_apns_voip_channel}
 */
 export class PinpointApnsVoipChannel extends cdktf.TerraformResource {
 
@@ -74,7 +69,7 @@ export class PinpointApnsVoipChannel extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a PinpointApnsVoipChannel resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the PinpointApnsVoipChannel to import
-  * @param importFromId The id of the existing PinpointApnsVoipChannel that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/pinpoint_apns_voip_channel#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing PinpointApnsVoipChannel that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/pinpoint_apns_voip_channel#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the PinpointApnsVoipChannel to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -86,7 +81,7 @@ export class PinpointApnsVoipChannel extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/pinpoint_apns_voip_channel aws_pinpoint_apns_voip_channel} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/pinpoint_apns_voip_channel aws_pinpoint_apns_voip_channel} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -97,7 +92,7 @@ export class PinpointApnsVoipChannel extends cdktf.TerraformResource {
       terraformResourceType: 'aws_pinpoint_apns_voip_channel',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.94.1',
+        providerVersion: '5.95.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

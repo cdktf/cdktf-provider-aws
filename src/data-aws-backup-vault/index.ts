@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/data-sources/backup_vault
+// https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/data-sources/backup_vault
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,24 +8,24 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsBackupVaultConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/data-sources/backup_vault#id DataAwsBackupVault#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/data-sources/backup_vault#id DataAwsBackupVault#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/data-sources/backup_vault#name DataAwsBackupVault#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/data-sources/backup_vault#name DataAwsBackupVault#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/data-sources/backup_vault#tags DataAwsBackupVault#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/data-sources/backup_vault#tags DataAwsBackupVault#tags}
   */
   readonly tags?: { [key: string]: string };
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/data-sources/backup_vault aws_backup_vault}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/data-sources/backup_vault aws_backup_vault}
 */
 export class DataAwsBackupVault extends cdktf.TerraformDataSource {
 
@@ -46,7 +41,7 @@ export class DataAwsBackupVault extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataAwsBackupVault resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsBackupVault to import
-  * @param importFromId The id of the existing DataAwsBackupVault that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/data-sources/backup_vault#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsBackupVault that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/data-sources/backup_vault#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsBackupVault to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -58,7 +53,7 @@ export class DataAwsBackupVault extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/data-sources/backup_vault aws_backup_vault} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/data-sources/backup_vault aws_backup_vault} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -69,7 +64,7 @@ export class DataAwsBackupVault extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_backup_vault',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.94.1',
+        providerVersion: '5.95.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

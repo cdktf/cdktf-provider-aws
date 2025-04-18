@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/api_gateway_rest_api_put
+// https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/api_gateway_rest_api_put
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,29 +8,29 @@ import * as cdktf from 'cdktf';
 
 export interface ApiGatewayRestApiPutConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/api_gateway_rest_api_put#body ApiGatewayRestApiPut#body}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/api_gateway_rest_api_put#body ApiGatewayRestApiPut#body}
   */
   readonly body: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/api_gateway_rest_api_put#fail_on_warnings ApiGatewayRestApiPut#fail_on_warnings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/api_gateway_rest_api_put#fail_on_warnings ApiGatewayRestApiPut#fail_on_warnings}
   */
   readonly failOnWarnings?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/api_gateway_rest_api_put#parameters ApiGatewayRestApiPut#parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/api_gateway_rest_api_put#parameters ApiGatewayRestApiPut#parameters}
   */
   readonly parameters?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/api_gateway_rest_api_put#rest_api_id ApiGatewayRestApiPut#rest_api_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/api_gateway_rest_api_put#rest_api_id ApiGatewayRestApiPut#rest_api_id}
   */
   readonly restApiId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/api_gateway_rest_api_put#triggers ApiGatewayRestApiPut#triggers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/api_gateway_rest_api_put#triggers ApiGatewayRestApiPut#triggers}
   */
   readonly triggers?: { [key: string]: string };
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/api_gateway_rest_api_put#timeouts ApiGatewayRestApiPut#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/api_gateway_rest_api_put#timeouts ApiGatewayRestApiPut#timeouts}
   */
   readonly timeouts?: ApiGatewayRestApiPutTimeouts;
 }
@@ -43,7 +38,7 @@ export interface ApiGatewayRestApiPutTimeouts {
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/api_gateway_rest_api_put#create ApiGatewayRestApiPut#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/api_gateway_rest_api_put#create ApiGatewayRestApiPut#create}
   */
   readonly create?: string;
 }
@@ -137,7 +132,7 @@ export class ApiGatewayRestApiPutTimeoutsOutputReference extends cdktf.ComplexOb
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/api_gateway_rest_api_put aws_api_gateway_rest_api_put}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/api_gateway_rest_api_put aws_api_gateway_rest_api_put}
 */
 export class ApiGatewayRestApiPut extends cdktf.TerraformResource {
 
@@ -153,7 +148,7 @@ export class ApiGatewayRestApiPut extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ApiGatewayRestApiPut resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ApiGatewayRestApiPut to import
-  * @param importFromId The id of the existing ApiGatewayRestApiPut that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/api_gateway_rest_api_put#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ApiGatewayRestApiPut that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/api_gateway_rest_api_put#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ApiGatewayRestApiPut to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -165,7 +160,7 @@ export class ApiGatewayRestApiPut extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/api_gateway_rest_api_put aws_api_gateway_rest_api_put} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/api_gateway_rest_api_put aws_api_gateway_rest_api_put} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -176,7 +171,7 @@ export class ApiGatewayRestApiPut extends cdktf.TerraformResource {
       terraformResourceType: 'aws_api_gateway_rest_api_put',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.94.1',
+        providerVersion: '5.95.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
