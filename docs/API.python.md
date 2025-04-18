@@ -1677,6 +1677,7 @@ The following submodules are available:
 - [redshiftEventSubscription](./redshiftEventSubscription.python.md)
 - [redshiftHsmClientCertificate](./redshiftHsmClientCertificate.python.md)
 - [redshiftHsmConfiguration](./redshiftHsmConfiguration.python.md)
+- [redshiftIntegration](./redshiftIntegration.python.md)
 - [redshiftLogging](./redshiftLogging.python.md)
 - [redshiftParameterGroup](./redshiftParameterGroup.python.md)
 - [redshiftPartner](./redshiftPartner.python.md)

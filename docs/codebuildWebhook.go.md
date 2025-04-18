@@ -4,7 +4,7 @@
 
 ### CodebuildWebhook <a name="CodebuildWebhook" id="@cdktf/provider-aws.codebuildWebhook.CodebuildWebhook"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/codebuild_webhook aws_codebuild_webhook}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/codebuild_webhook aws_codebuild_webhook}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.codebuildWebhook.CodebuildWebhook.Initializer"></a>
 
@@ -79,6 +79,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.codebuildWebhook.CodebuildWebhook.resetBuildType">ResetBuildType</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.codebuildWebhook.CodebuildWebhook.resetFilterGroup">ResetFilterGroup</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.codebuildWebhook.CodebuildWebhook.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.codebuildWebhook.CodebuildWebhook.resetManualCreation">ResetManualCreation</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.codebuildWebhook.CodebuildWebhook.resetScopeConfiguration">ResetScopeConfiguration</a></code> | *No description.* |
 
 ---
@@ -419,6 +420,12 @@ func ResetFilterGroup()
 func ResetId()
 ```
 
+##### `ResetManualCreation` <a name="ResetManualCreation" id="@cdktf/provider-aws.codebuildWebhook.CodebuildWebhook.resetManualCreation"></a>
+
+```go
+func ResetManualCreation()
+```
+
 ##### `ResetScopeConfiguration` <a name="ResetScopeConfiguration" id="@cdktf/provider-aws.codebuildWebhook.CodebuildWebhook.resetScopeConfiguration"></a>
 
 ```go
@@ -528,7 +535,7 @@ The construct id used in the generated config for the CodebuildWebhook to import
 
 The id of the existing CodebuildWebhook that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/codebuild_webhook#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/codebuild_webhook#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -567,11 +574,13 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1
 | <code><a href="#@cdktf/provider-aws.codebuildWebhook.CodebuildWebhook.property.buildTypeInput">BuildTypeInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.codebuildWebhook.CodebuildWebhook.property.filterGroupInput">FilterGroupInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.codebuildWebhook.CodebuildWebhook.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.codebuildWebhook.CodebuildWebhook.property.manualCreationInput">ManualCreationInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.codebuildWebhook.CodebuildWebhook.property.projectNameInput">ProjectNameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.codebuildWebhook.CodebuildWebhook.property.scopeConfigurationInput">ScopeConfigurationInput</a></code> | <code><a href="#@cdktf/provider-aws.codebuildWebhook.CodebuildWebhookScopeConfiguration">CodebuildWebhookScopeConfiguration</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.codebuildWebhook.CodebuildWebhook.property.branchFilter">BranchFilter</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.codebuildWebhook.CodebuildWebhook.property.buildType">BuildType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.codebuildWebhook.CodebuildWebhook.property.id">Id</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.codebuildWebhook.CodebuildWebhook.property.manualCreation">ManualCreation</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.codebuildWebhook.CodebuildWebhook.property.projectName">ProjectName</a></code> | <code>*string</code> | *No description.* |
 
 ---
@@ -808,6 +817,16 @@ func IdInput() *string
 
 ---
 
+##### `ManualCreationInput`<sup>Optional</sup> <a name="ManualCreationInput" id="@cdktf/provider-aws.codebuildWebhook.CodebuildWebhook.property.manualCreationInput"></a>
+
+```go
+func ManualCreationInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
 ##### `ProjectNameInput`<sup>Optional</sup> <a name="ProjectNameInput" id="@cdktf/provider-aws.codebuildWebhook.CodebuildWebhook.property.projectNameInput"></a>
 
 ```go
@@ -855,6 +874,16 @@ func Id() *string
 ```
 
 - *Type:* *string
+
+---
+
+##### `ManualCreation`<sup>Required</sup> <a name="ManualCreation" id="@cdktf/provider-aws.codebuildWebhook.CodebuildWebhook.property.manualCreation"></a>
+
+```go
+func ManualCreation() interface{}
+```
+
+- *Type:* interface{}
 
 ---
 
@@ -908,6 +937,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/codebuildwebhook"
 	BuildType: *string,
 	FilterGroup: interface{},
 	Id: *string,
+	ManualCreation: interface{},
 	ScopeConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v19.codebuildWebhook.CodebuildWebhookScopeConfiguration,
 }
 ```
@@ -923,11 +953,12 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/codebuildwebhook"
 | <code><a href="#@cdktf/provider-aws.codebuildWebhook.CodebuildWebhookConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.codebuildWebhook.CodebuildWebhookConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.codebuildWebhook.CodebuildWebhookConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.codebuildWebhook.CodebuildWebhookConfig.property.projectName">ProjectName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/codebuild_webhook#project_name CodebuildWebhook#project_name}. |
-| <code><a href="#@cdktf/provider-aws.codebuildWebhook.CodebuildWebhookConfig.property.branchFilter">BranchFilter</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/codebuild_webhook#branch_filter CodebuildWebhook#branch_filter}. |
-| <code><a href="#@cdktf/provider-aws.codebuildWebhook.CodebuildWebhookConfig.property.buildType">BuildType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/codebuild_webhook#build_type CodebuildWebhook#build_type}. |
+| <code><a href="#@cdktf/provider-aws.codebuildWebhook.CodebuildWebhookConfig.property.projectName">ProjectName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/codebuild_webhook#project_name CodebuildWebhook#project_name}. |
+| <code><a href="#@cdktf/provider-aws.codebuildWebhook.CodebuildWebhookConfig.property.branchFilter">BranchFilter</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/codebuild_webhook#branch_filter CodebuildWebhook#branch_filter}. |
+| <code><a href="#@cdktf/provider-aws.codebuildWebhook.CodebuildWebhookConfig.property.buildType">BuildType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/codebuild_webhook#build_type CodebuildWebhook#build_type}. |
 | <code><a href="#@cdktf/provider-aws.codebuildWebhook.CodebuildWebhookConfig.property.filterGroup">FilterGroup</a></code> | <code>interface{}</code> | filter_group block. |
-| <code><a href="#@cdktf/provider-aws.codebuildWebhook.CodebuildWebhookConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/codebuild_webhook#id CodebuildWebhook#id}. |
+| <code><a href="#@cdktf/provider-aws.codebuildWebhook.CodebuildWebhookConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/codebuild_webhook#id CodebuildWebhook#id}. |
+| <code><a href="#@cdktf/provider-aws.codebuildWebhook.CodebuildWebhookConfig.property.manualCreation">ManualCreation</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/codebuild_webhook#manual_creation CodebuildWebhook#manual_creation}. |
 | <code><a href="#@cdktf/provider-aws.codebuildWebhook.CodebuildWebhookConfig.property.scopeConfiguration">ScopeConfiguration</a></code> | <code><a href="#@cdktf/provider-aws.codebuildWebhook.CodebuildWebhookScopeConfiguration">CodebuildWebhookScopeConfiguration</a></code> | scope_configuration block. |
 
 ---
@@ -1010,7 +1041,7 @@ ProjectName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/codebuild_webhook#project_name CodebuildWebhook#project_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/codebuild_webhook#project_name CodebuildWebhook#project_name}.
 
 ---
 
@@ -1022,7 +1053,7 @@ BranchFilter *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/codebuild_webhook#branch_filter CodebuildWebhook#branch_filter}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/codebuild_webhook#branch_filter CodebuildWebhook#branch_filter}.
 
 ---
 
@@ -1034,7 +1065,7 @@ BuildType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/codebuild_webhook#build_type CodebuildWebhook#build_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/codebuild_webhook#build_type CodebuildWebhook#build_type}.
 
 ---
 
@@ -1048,7 +1079,7 @@ FilterGroup interface{}
 
 filter_group block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/codebuild_webhook#filter_group CodebuildWebhook#filter_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/codebuild_webhook#filter_group CodebuildWebhook#filter_group}
 
 ---
 
@@ -1060,10 +1091,22 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/codebuild_webhook#id CodebuildWebhook#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/codebuild_webhook#id CodebuildWebhook#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `ManualCreation`<sup>Optional</sup> <a name="ManualCreation" id="@cdktf/provider-aws.codebuildWebhook.CodebuildWebhookConfig.property.manualCreation"></a>
+
+```go
+ManualCreation interface{}
+```
+
+- *Type:* interface{}
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/codebuild_webhook#manual_creation CodebuildWebhook#manual_creation}.
 
 ---
 
@@ -1077,7 +1120,7 @@ ScopeConfiguration CodebuildWebhookScopeConfiguration
 
 scope_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/codebuild_webhook#scope_configuration CodebuildWebhook#scope_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/codebuild_webhook#scope_configuration CodebuildWebhook#scope_configuration}
 
 ---
 
@@ -1111,7 +1154,7 @@ Filter interface{}
 
 filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/codebuild_webhook#filter CodebuildWebhook#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/codebuild_webhook#filter CodebuildWebhook#filter}
 
 ---
 
@@ -1133,9 +1176,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/codebuildwebhook"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.codebuildWebhook.CodebuildWebhookFilterGroupFilter.property.pattern">Pattern</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/codebuild_webhook#pattern CodebuildWebhook#pattern}. |
-| <code><a href="#@cdktf/provider-aws.codebuildWebhook.CodebuildWebhookFilterGroupFilter.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/codebuild_webhook#type CodebuildWebhook#type}. |
-| <code><a href="#@cdktf/provider-aws.codebuildWebhook.CodebuildWebhookFilterGroupFilter.property.excludeMatchedPattern">ExcludeMatchedPattern</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/codebuild_webhook#exclude_matched_pattern CodebuildWebhook#exclude_matched_pattern}. |
+| <code><a href="#@cdktf/provider-aws.codebuildWebhook.CodebuildWebhookFilterGroupFilter.property.pattern">Pattern</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/codebuild_webhook#pattern CodebuildWebhook#pattern}. |
+| <code><a href="#@cdktf/provider-aws.codebuildWebhook.CodebuildWebhookFilterGroupFilter.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/codebuild_webhook#type CodebuildWebhook#type}. |
+| <code><a href="#@cdktf/provider-aws.codebuildWebhook.CodebuildWebhookFilterGroupFilter.property.excludeMatchedPattern">ExcludeMatchedPattern</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/codebuild_webhook#exclude_matched_pattern CodebuildWebhook#exclude_matched_pattern}. |
 
 ---
 
@@ -1147,7 +1190,7 @@ Pattern *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/codebuild_webhook#pattern CodebuildWebhook#pattern}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/codebuild_webhook#pattern CodebuildWebhook#pattern}.
 
 ---
 
@@ -1159,7 +1202,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/codebuild_webhook#type CodebuildWebhook#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/codebuild_webhook#type CodebuildWebhook#type}.
 
 ---
 
@@ -1171,7 +1214,7 @@ ExcludeMatchedPattern interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/codebuild_webhook#exclude_matched_pattern CodebuildWebhook#exclude_matched_pattern}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/codebuild_webhook#exclude_matched_pattern CodebuildWebhook#exclude_matched_pattern}.
 
 ---
 
@@ -1193,9 +1236,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/codebuildwebhook"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.codebuildWebhook.CodebuildWebhookScopeConfiguration.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/codebuild_webhook#name CodebuildWebhook#name}. |
-| <code><a href="#@cdktf/provider-aws.codebuildWebhook.CodebuildWebhookScopeConfiguration.property.scope">Scope</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/codebuild_webhook#scope CodebuildWebhook#scope}. |
-| <code><a href="#@cdktf/provider-aws.codebuildWebhook.CodebuildWebhookScopeConfiguration.property.domain">Domain</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/codebuild_webhook#domain CodebuildWebhook#domain}. |
+| <code><a href="#@cdktf/provider-aws.codebuildWebhook.CodebuildWebhookScopeConfiguration.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/codebuild_webhook#name CodebuildWebhook#name}. |
+| <code><a href="#@cdktf/provider-aws.codebuildWebhook.CodebuildWebhookScopeConfiguration.property.scope">Scope</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/codebuild_webhook#scope CodebuildWebhook#scope}. |
+| <code><a href="#@cdktf/provider-aws.codebuildWebhook.CodebuildWebhookScopeConfiguration.property.domain">Domain</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/codebuild_webhook#domain CodebuildWebhook#domain}. |
 
 ---
 
@@ -1207,7 +1250,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/codebuild_webhook#name CodebuildWebhook#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/codebuild_webhook#name CodebuildWebhook#name}.
 
 ---
 
@@ -1219,7 +1262,7 @@ Scope *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/codebuild_webhook#scope CodebuildWebhook#scope}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/codebuild_webhook#scope CodebuildWebhook#scope}.
 
 ---
 
@@ -1231,7 +1274,7 @@ Domain *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/codebuild_webhook#domain CodebuildWebhook#domain}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/codebuild_webhook#domain CodebuildWebhook#domain}.
 
 ---
 
