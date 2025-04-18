@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/customerprofiles_profile
+// https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/customerprofiles_profile
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,148 +13,148 @@ import * as cdktf from 'cdktf';
 
 export interface CustomerprofilesProfileConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/customerprofiles_profile#account_number CustomerprofilesProfile#account_number}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/customerprofiles_profile#account_number CustomerprofilesProfile#account_number}
   */
   readonly accountNumber?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/customerprofiles_profile#additional_information CustomerprofilesProfile#additional_information}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/customerprofiles_profile#additional_information CustomerprofilesProfile#additional_information}
   */
   readonly additionalInformation?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/customerprofiles_profile#attributes CustomerprofilesProfile#attributes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/customerprofiles_profile#attributes CustomerprofilesProfile#attributes}
   */
   readonly attributes?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/customerprofiles_profile#birth_date CustomerprofilesProfile#birth_date}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/customerprofiles_profile#birth_date CustomerprofilesProfile#birth_date}
   */
   readonly birthDate?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/customerprofiles_profile#business_email_address CustomerprofilesProfile#business_email_address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/customerprofiles_profile#business_email_address CustomerprofilesProfile#business_email_address}
   */
   readonly businessEmailAddress?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/customerprofiles_profile#business_name CustomerprofilesProfile#business_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/customerprofiles_profile#business_name CustomerprofilesProfile#business_name}
   */
   readonly businessName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/customerprofiles_profile#business_phone_number CustomerprofilesProfile#business_phone_number}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/customerprofiles_profile#business_phone_number CustomerprofilesProfile#business_phone_number}
   */
   readonly businessPhoneNumber?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/customerprofiles_profile#domain_name CustomerprofilesProfile#domain_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/customerprofiles_profile#domain_name CustomerprofilesProfile#domain_name}
   */
   readonly domainName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/customerprofiles_profile#email_address CustomerprofilesProfile#email_address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/customerprofiles_profile#email_address CustomerprofilesProfile#email_address}
   */
   readonly emailAddress?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/customerprofiles_profile#first_name CustomerprofilesProfile#first_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/customerprofiles_profile#first_name CustomerprofilesProfile#first_name}
   */
   readonly firstName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/customerprofiles_profile#gender_string CustomerprofilesProfile#gender_string}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/customerprofiles_profile#gender_string CustomerprofilesProfile#gender_string}
   */
   readonly genderString?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/customerprofiles_profile#home_phone_number CustomerprofilesProfile#home_phone_number}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/customerprofiles_profile#home_phone_number CustomerprofilesProfile#home_phone_number}
   */
   readonly homePhoneNumber?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/customerprofiles_profile#id CustomerprofilesProfile#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/customerprofiles_profile#id CustomerprofilesProfile#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/customerprofiles_profile#last_name CustomerprofilesProfile#last_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/customerprofiles_profile#last_name CustomerprofilesProfile#last_name}
   */
   readonly lastName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/customerprofiles_profile#middle_name CustomerprofilesProfile#middle_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/customerprofiles_profile#middle_name CustomerprofilesProfile#middle_name}
   */
   readonly middleName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/customerprofiles_profile#mobile_phone_number CustomerprofilesProfile#mobile_phone_number}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/customerprofiles_profile#mobile_phone_number CustomerprofilesProfile#mobile_phone_number}
   */
   readonly mobilePhoneNumber?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/customerprofiles_profile#party_type_string CustomerprofilesProfile#party_type_string}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/customerprofiles_profile#party_type_string CustomerprofilesProfile#party_type_string}
   */
   readonly partyTypeString?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/customerprofiles_profile#personal_email_address CustomerprofilesProfile#personal_email_address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/customerprofiles_profile#personal_email_address CustomerprofilesProfile#personal_email_address}
   */
   readonly personalEmailAddress?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/customerprofiles_profile#phone_number CustomerprofilesProfile#phone_number}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/customerprofiles_profile#phone_number CustomerprofilesProfile#phone_number}
   */
   readonly phoneNumber?: string;
   /**
   * address block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/customerprofiles_profile#address CustomerprofilesProfile#address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/customerprofiles_profile#address CustomerprofilesProfile#address}
   */
   readonly address?: CustomerprofilesProfileAddress;
   /**
   * billing_address block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/customerprofiles_profile#billing_address CustomerprofilesProfile#billing_address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/customerprofiles_profile#billing_address CustomerprofilesProfile#billing_address}
   */
   readonly billingAddress?: CustomerprofilesProfileBillingAddress;
   /**
   * mailing_address block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/customerprofiles_profile#mailing_address CustomerprofilesProfile#mailing_address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/customerprofiles_profile#mailing_address CustomerprofilesProfile#mailing_address}
   */
   readonly mailingAddress?: CustomerprofilesProfileMailingAddress;
   /**
   * shipping_address block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/customerprofiles_profile#shipping_address CustomerprofilesProfile#shipping_address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/customerprofiles_profile#shipping_address CustomerprofilesProfile#shipping_address}
   */
   readonly shippingAddress?: CustomerprofilesProfileShippingAddress;
 }
 export interface CustomerprofilesProfileAddress {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/customerprofiles_profile#address_1 CustomerprofilesProfile#address_1}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/customerprofiles_profile#address_1 CustomerprofilesProfile#address_1}
   */
   readonly address1?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/customerprofiles_profile#address_2 CustomerprofilesProfile#address_2}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/customerprofiles_profile#address_2 CustomerprofilesProfile#address_2}
   */
   readonly address2?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/customerprofiles_profile#address_3 CustomerprofilesProfile#address_3}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/customerprofiles_profile#address_3 CustomerprofilesProfile#address_3}
   */
   readonly address3?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/customerprofiles_profile#address_4 CustomerprofilesProfile#address_4}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/customerprofiles_profile#address_4 CustomerprofilesProfile#address_4}
   */
   readonly address4?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/customerprofiles_profile#city CustomerprofilesProfile#city}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/customerprofiles_profile#city CustomerprofilesProfile#city}
   */
   readonly city?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/customerprofiles_profile#country CustomerprofilesProfile#country}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/customerprofiles_profile#country CustomerprofilesProfile#country}
   */
   readonly country?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/customerprofiles_profile#county CustomerprofilesProfile#county}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/customerprofiles_profile#county CustomerprofilesProfile#county}
   */
   readonly county?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/customerprofiles_profile#postal_code CustomerprofilesProfile#postal_code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/customerprofiles_profile#postal_code CustomerprofilesProfile#postal_code}
   */
   readonly postalCode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/customerprofiles_profile#province CustomerprofilesProfile#province}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/customerprofiles_profile#province CustomerprofilesProfile#province}
   */
   readonly province?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/customerprofiles_profile#state CustomerprofilesProfile#state}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/customerprofiles_profile#state CustomerprofilesProfile#state}
   */
   readonly state?: string;
 }
@@ -499,43 +499,43 @@ export class CustomerprofilesProfileAddressOutputReference extends cdktf.Complex
 }
 export interface CustomerprofilesProfileBillingAddress {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/customerprofiles_profile#address_1 CustomerprofilesProfile#address_1}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/customerprofiles_profile#address_1 CustomerprofilesProfile#address_1}
   */
   readonly address1?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/customerprofiles_profile#address_2 CustomerprofilesProfile#address_2}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/customerprofiles_profile#address_2 CustomerprofilesProfile#address_2}
   */
   readonly address2?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/customerprofiles_profile#address_3 CustomerprofilesProfile#address_3}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/customerprofiles_profile#address_3 CustomerprofilesProfile#address_3}
   */
   readonly address3?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/customerprofiles_profile#address_4 CustomerprofilesProfile#address_4}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/customerprofiles_profile#address_4 CustomerprofilesProfile#address_4}
   */
   readonly address4?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/customerprofiles_profile#city CustomerprofilesProfile#city}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/customerprofiles_profile#city CustomerprofilesProfile#city}
   */
   readonly city?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/customerprofiles_profile#country CustomerprofilesProfile#country}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/customerprofiles_profile#country CustomerprofilesProfile#country}
   */
   readonly country?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/customerprofiles_profile#county CustomerprofilesProfile#county}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/customerprofiles_profile#county CustomerprofilesProfile#county}
   */
   readonly county?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/customerprofiles_profile#postal_code CustomerprofilesProfile#postal_code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/customerprofiles_profile#postal_code CustomerprofilesProfile#postal_code}
   */
   readonly postalCode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/customerprofiles_profile#province CustomerprofilesProfile#province}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/customerprofiles_profile#province CustomerprofilesProfile#province}
   */
   readonly province?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/customerprofiles_profile#state CustomerprofilesProfile#state}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/customerprofiles_profile#state CustomerprofilesProfile#state}
   */
   readonly state?: string;
 }
@@ -880,43 +880,43 @@ export class CustomerprofilesProfileBillingAddressOutputReference extends cdktf.
 }
 export interface CustomerprofilesProfileMailingAddress {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/customerprofiles_profile#address_1 CustomerprofilesProfile#address_1}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/customerprofiles_profile#address_1 CustomerprofilesProfile#address_1}
   */
   readonly address1?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/customerprofiles_profile#address_2 CustomerprofilesProfile#address_2}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/customerprofiles_profile#address_2 CustomerprofilesProfile#address_2}
   */
   readonly address2?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/customerprofiles_profile#address_3 CustomerprofilesProfile#address_3}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/customerprofiles_profile#address_3 CustomerprofilesProfile#address_3}
   */
   readonly address3?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/customerprofiles_profile#address_4 CustomerprofilesProfile#address_4}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/customerprofiles_profile#address_4 CustomerprofilesProfile#address_4}
   */
   readonly address4?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/customerprofiles_profile#city CustomerprofilesProfile#city}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/customerprofiles_profile#city CustomerprofilesProfile#city}
   */
   readonly city?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/customerprofiles_profile#country CustomerprofilesProfile#country}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/customerprofiles_profile#country CustomerprofilesProfile#country}
   */
   readonly country?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/customerprofiles_profile#county CustomerprofilesProfile#county}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/customerprofiles_profile#county CustomerprofilesProfile#county}
   */
   readonly county?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/customerprofiles_profile#postal_code CustomerprofilesProfile#postal_code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/customerprofiles_profile#postal_code CustomerprofilesProfile#postal_code}
   */
   readonly postalCode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/customerprofiles_profile#province CustomerprofilesProfile#province}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/customerprofiles_profile#province CustomerprofilesProfile#province}
   */
   readonly province?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/customerprofiles_profile#state CustomerprofilesProfile#state}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/customerprofiles_profile#state CustomerprofilesProfile#state}
   */
   readonly state?: string;
 }
@@ -1261,43 +1261,43 @@ export class CustomerprofilesProfileMailingAddressOutputReference extends cdktf.
 }
 export interface CustomerprofilesProfileShippingAddress {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/customerprofiles_profile#address_1 CustomerprofilesProfile#address_1}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/customerprofiles_profile#address_1 CustomerprofilesProfile#address_1}
   */
   readonly address1?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/customerprofiles_profile#address_2 CustomerprofilesProfile#address_2}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/customerprofiles_profile#address_2 CustomerprofilesProfile#address_2}
   */
   readonly address2?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/customerprofiles_profile#address_3 CustomerprofilesProfile#address_3}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/customerprofiles_profile#address_3 CustomerprofilesProfile#address_3}
   */
   readonly address3?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/customerprofiles_profile#address_4 CustomerprofilesProfile#address_4}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/customerprofiles_profile#address_4 CustomerprofilesProfile#address_4}
   */
   readonly address4?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/customerprofiles_profile#city CustomerprofilesProfile#city}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/customerprofiles_profile#city CustomerprofilesProfile#city}
   */
   readonly city?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/customerprofiles_profile#country CustomerprofilesProfile#country}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/customerprofiles_profile#country CustomerprofilesProfile#country}
   */
   readonly country?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/customerprofiles_profile#county CustomerprofilesProfile#county}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/customerprofiles_profile#county CustomerprofilesProfile#county}
   */
   readonly county?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/customerprofiles_profile#postal_code CustomerprofilesProfile#postal_code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/customerprofiles_profile#postal_code CustomerprofilesProfile#postal_code}
   */
   readonly postalCode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/customerprofiles_profile#province CustomerprofilesProfile#province}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/customerprofiles_profile#province CustomerprofilesProfile#province}
   */
   readonly province?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/customerprofiles_profile#state CustomerprofilesProfile#state}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/customerprofiles_profile#state CustomerprofilesProfile#state}
   */
   readonly state?: string;
 }
@@ -1642,7 +1642,7 @@ export class CustomerprofilesProfileShippingAddressOutputReference extends cdktf
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/customerprofiles_profile aws_customerprofiles_profile}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/customerprofiles_profile aws_customerprofiles_profile}
 */
 export class CustomerprofilesProfile extends cdktf.TerraformResource {
 
@@ -1658,7 +1658,7 @@ export class CustomerprofilesProfile extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a CustomerprofilesProfile resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CustomerprofilesProfile to import
-  * @param importFromId The id of the existing CustomerprofilesProfile that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/customerprofiles_profile#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing CustomerprofilesProfile that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/customerprofiles_profile#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CustomerprofilesProfile to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -1670,7 +1670,7 @@ export class CustomerprofilesProfile extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/customerprofiles_profile aws_customerprofiles_profile} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/customerprofiles_profile aws_customerprofiles_profile} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1681,7 +1681,7 @@ export class CustomerprofilesProfile extends cdktf.TerraformResource {
       terraformResourceType: 'aws_customerprofiles_profile',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.94.1',
+        providerVersion: '5.95.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

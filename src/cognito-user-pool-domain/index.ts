@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/cognito_user_pool_domain
+// https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/cognito_user_pool_domain
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,28 +13,32 @@ import * as cdktf from 'cdktf';
 
 export interface CognitoUserPoolDomainConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/cognito_user_pool_domain#certificate_arn CognitoUserPoolDomain#certificate_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/cognito_user_pool_domain#certificate_arn CognitoUserPoolDomain#certificate_arn}
   */
   readonly certificateArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/cognito_user_pool_domain#domain CognitoUserPoolDomain#domain}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/cognito_user_pool_domain#domain CognitoUserPoolDomain#domain}
   */
   readonly domain: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/cognito_user_pool_domain#id CognitoUserPoolDomain#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/cognito_user_pool_domain#id CognitoUserPoolDomain#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/cognito_user_pool_domain#user_pool_id CognitoUserPoolDomain#user_pool_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/cognito_user_pool_domain#managed_login_version CognitoUserPoolDomain#managed_login_version}
+  */
+  readonly managedLoginVersion?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/cognito_user_pool_domain#user_pool_id CognitoUserPoolDomain#user_pool_id}
   */
   readonly userPoolId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/cognito_user_pool_domain aws_cognito_user_pool_domain}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/cognito_user_pool_domain aws_cognito_user_pool_domain}
 */
 export class CognitoUserPoolDomain extends cdktf.TerraformResource {
 
@@ -50,7 +54,7 @@ export class CognitoUserPoolDomain extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a CognitoUserPoolDomain resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CognitoUserPoolDomain to import
-  * @param importFromId The id of the existing CognitoUserPoolDomain that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/cognito_user_pool_domain#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing CognitoUserPoolDomain that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/cognito_user_pool_domain#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CognitoUserPoolDomain to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -62,7 +66,7 @@ export class CognitoUserPoolDomain extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/cognito_user_pool_domain aws_cognito_user_pool_domain} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/cognito_user_pool_domain aws_cognito_user_pool_domain} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -73,7 +77,7 @@ export class CognitoUserPoolDomain extends cdktf.TerraformResource {
       terraformResourceType: 'aws_cognito_user_pool_domain',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.94.1',
+        providerVersion: '5.95.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -87,6 +91,7 @@ export class CognitoUserPoolDomain extends cdktf.TerraformResource {
     this._certificateArn = config.certificateArn;
     this._domain = config.domain;
     this._id = config.id;
+    this._managedLoginVersion = config.managedLoginVersion;
     this._userPoolId = config.userPoolId;
   }
 
@@ -159,6 +164,22 @@ export class CognitoUserPoolDomain extends cdktf.TerraformResource {
     return this._id;
   }
 
+  // managed_login_version - computed: true, optional: true, required: false
+  private _managedLoginVersion?: number; 
+  public get managedLoginVersion() {
+    return this.getNumberAttribute('managed_login_version');
+  }
+  public set managedLoginVersion(value: number) {
+    this._managedLoginVersion = value;
+  }
+  public resetManagedLoginVersion() {
+    this._managedLoginVersion = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get managedLoginVersionInput() {
+    return this._managedLoginVersion;
+  }
+
   // s3_bucket - computed: true, optional: false, required: false
   public get s3Bucket() {
     return this.getStringAttribute('s3_bucket');
@@ -191,6 +212,7 @@ export class CognitoUserPoolDomain extends cdktf.TerraformResource {
       certificate_arn: cdktf.stringToTerraform(this._certificateArn),
       domain: cdktf.stringToTerraform(this._domain),
       id: cdktf.stringToTerraform(this._id),
+      managed_login_version: cdktf.numberToTerraform(this._managedLoginVersion),
       user_pool_id: cdktf.stringToTerraform(this._userPoolId),
     };
   }
@@ -214,6 +236,12 @@ export class CognitoUserPoolDomain extends cdktf.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      managed_login_version: {
+        value: cdktf.numberToHclTerraform(this._managedLoginVersion),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
       },
       user_pool_id: {
         value: cdktf.stringToHclTerraform(this._userPoolId),

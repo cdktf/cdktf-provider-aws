@@ -1677,6 +1677,7 @@ The following submodules are available:
 - [redshiftEventSubscription](./redshiftEventSubscription.typescript.md)
 - [redshiftHsmClientCertificate](./redshiftHsmClientCertificate.typescript.md)
 - [redshiftHsmConfiguration](./redshiftHsmConfiguration.typescript.md)
+- [redshiftIntegration](./redshiftIntegration.typescript.md)
 - [redshiftLogging](./redshiftLogging.typescript.md)
 - [redshiftParameterGroup](./redshiftParameterGroup.typescript.md)
 - [redshiftPartner](./redshiftPartner.typescript.md)

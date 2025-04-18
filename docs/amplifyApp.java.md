@@ -4,7 +4,7 @@
 
 ### AmplifyApp <a name="AmplifyApp" id="@cdktf/provider-aws.amplifyApp.AmplifyApp"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/amplify_app aws_amplify_app}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/amplify_app aws_amplify_app}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.Initializer"></a>
 
@@ -30,6 +30,7 @@ AmplifyApp.Builder.create(Construct scope, java.lang.String id)
 //  .basicAuthCredentials(java.lang.String)
 //  .buildSpec(java.lang.String)
 //  .cacheConfig(AmplifyAppCacheConfig)
+//  .computeRoleArn(java.lang.String)
 //  .customHeaders(java.lang.String)
 //  .customRule(IResolvable)
 //  .customRule(java.util.List<AmplifyAppCustomRule>)
@@ -64,28 +65,29 @@ AmplifyApp.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/amplify_app#name AmplifyApp#name}. |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.accessToken">accessToken</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/amplify_app#access_token AmplifyApp#access_token}. |
+| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/amplify_app#name AmplifyApp#name}. |
+| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.accessToken">accessToken</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/amplify_app#access_token AmplifyApp#access_token}. |
 | <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.autoBranchCreationConfig">autoBranchCreationConfig</a></code> | <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfig">AmplifyAppAutoBranchCreationConfig</a></code> | auto_branch_creation_config block. |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.autoBranchCreationPatterns">autoBranchCreationPatterns</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/amplify_app#auto_branch_creation_patterns AmplifyApp#auto_branch_creation_patterns}. |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.basicAuthCredentials">basicAuthCredentials</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/amplify_app#basic_auth_credentials AmplifyApp#basic_auth_credentials}. |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.buildSpec">buildSpec</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/amplify_app#build_spec AmplifyApp#build_spec}. |
+| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.autoBranchCreationPatterns">autoBranchCreationPatterns</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/amplify_app#auto_branch_creation_patterns AmplifyApp#auto_branch_creation_patterns}. |
+| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.basicAuthCredentials">basicAuthCredentials</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/amplify_app#basic_auth_credentials AmplifyApp#basic_auth_credentials}. |
+| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.buildSpec">buildSpec</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/amplify_app#build_spec AmplifyApp#build_spec}. |
 | <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.cacheConfig">cacheConfig</a></code> | <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppCacheConfig">AmplifyAppCacheConfig</a></code> | cache_config block. |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.customHeaders">customHeaders</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/amplify_app#custom_headers AmplifyApp#custom_headers}. |
+| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.computeRoleArn">computeRoleArn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/amplify_app#compute_role_arn AmplifyApp#compute_role_arn}. |
+| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.customHeaders">customHeaders</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/amplify_app#custom_headers AmplifyApp#custom_headers}. |
 | <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.customRule">customRule</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppCustomRule">AmplifyAppCustomRule</a>></code> | custom_rule block. |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/amplify_app#description AmplifyApp#description}. |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.enableAutoBranchCreation">enableAutoBranchCreation</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/amplify_app#enable_auto_branch_creation AmplifyApp#enable_auto_branch_creation}. |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.enableBasicAuth">enableBasicAuth</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/amplify_app#enable_basic_auth AmplifyApp#enable_basic_auth}. |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.enableBranchAutoBuild">enableBranchAutoBuild</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/amplify_app#enable_branch_auto_build AmplifyApp#enable_branch_auto_build}. |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.enableBranchAutoDeletion">enableBranchAutoDeletion</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/amplify_app#enable_branch_auto_deletion AmplifyApp#enable_branch_auto_deletion}. |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.environmentVariables">environmentVariables</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/amplify_app#environment_variables AmplifyApp#environment_variables}. |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.iamServiceRoleArn">iamServiceRoleArn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/amplify_app#iam_service_role_arn AmplifyApp#iam_service_role_arn}. |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/amplify_app#id AmplifyApp#id}. |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.oauthToken">oauthToken</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/amplify_app#oauth_token AmplifyApp#oauth_token}. |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.platform">platform</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/amplify_app#platform AmplifyApp#platform}. |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.repository">repository</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/amplify_app#repository AmplifyApp#repository}. |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/amplify_app#tags AmplifyApp#tags}. |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.tagsAll">tagsAll</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/amplify_app#tags_all AmplifyApp#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/amplify_app#description AmplifyApp#description}. |
+| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.enableAutoBranchCreation">enableAutoBranchCreation</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/amplify_app#enable_auto_branch_creation AmplifyApp#enable_auto_branch_creation}. |
+| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.enableBasicAuth">enableBasicAuth</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/amplify_app#enable_basic_auth AmplifyApp#enable_basic_auth}. |
+| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.enableBranchAutoBuild">enableBranchAutoBuild</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/amplify_app#enable_branch_auto_build AmplifyApp#enable_branch_auto_build}. |
+| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.enableBranchAutoDeletion">enableBranchAutoDeletion</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/amplify_app#enable_branch_auto_deletion AmplifyApp#enable_branch_auto_deletion}. |
+| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.environmentVariables">environmentVariables</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/amplify_app#environment_variables AmplifyApp#environment_variables}. |
+| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.iamServiceRoleArn">iamServiceRoleArn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/amplify_app#iam_service_role_arn AmplifyApp#iam_service_role_arn}. |
+| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/amplify_app#id AmplifyApp#id}. |
+| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.oauthToken">oauthToken</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/amplify_app#oauth_token AmplifyApp#oauth_token}. |
+| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.platform">platform</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/amplify_app#platform AmplifyApp#platform}. |
+| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.repository">repository</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/amplify_app#repository AmplifyApp#repository}. |
+| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/amplify_app#tags AmplifyApp#tags}. |
+| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.tagsAll">tagsAll</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/amplify_app#tags_all AmplifyApp#tags_all}. |
 
 ---
 
@@ -153,7 +155,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/amplify_app#name AmplifyApp#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/amplify_app#name AmplifyApp#name}.
 
 ---
 
@@ -161,7 +163,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/amplify_app#access_token AmplifyApp#access_token}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/amplify_app#access_token AmplifyApp#access_token}.
 
 ---
 
@@ -171,7 +173,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 auto_branch_creation_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/amplify_app#auto_branch_creation_config AmplifyApp#auto_branch_creation_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/amplify_app#auto_branch_creation_config AmplifyApp#auto_branch_creation_config}
 
 ---
 
@@ -179,7 +181,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/amplify_app#auto_branch_creation_patterns AmplifyApp#auto_branch_creation_patterns}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/amplify_app#auto_branch_creation_patterns AmplifyApp#auto_branch_creation_patterns}.
 
 ---
 
@@ -187,7 +189,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/amplify_app#basic_auth_credentials AmplifyApp#basic_auth_credentials}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/amplify_app#basic_auth_credentials AmplifyApp#basic_auth_credentials}.
 
 ---
 
@@ -195,7 +197,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/amplify_app#build_spec AmplifyApp#build_spec}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/amplify_app#build_spec AmplifyApp#build_spec}.
 
 ---
 
@@ -205,7 +207,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 cache_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/amplify_app#cache_config AmplifyApp#cache_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/amplify_app#cache_config AmplifyApp#cache_config}
+
+---
+
+##### `computeRoleArn`<sup>Optional</sup> <a name="computeRoleArn" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.computeRoleArn"></a>
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/amplify_app#compute_role_arn AmplifyApp#compute_role_arn}.
 
 ---
 
@@ -213,7 +223,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/amplify_app#custom_headers AmplifyApp#custom_headers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/amplify_app#custom_headers AmplifyApp#custom_headers}.
 
 ---
 
@@ -223,7 +233,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 custom_rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/amplify_app#custom_rule AmplifyApp#custom_rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/amplify_app#custom_rule AmplifyApp#custom_rule}
 
 ---
 
@@ -231,7 +241,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/amplify_app#description AmplifyApp#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/amplify_app#description AmplifyApp#description}.
 
 ---
 
@@ -239,7 +249,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/amplify_app#enable_auto_branch_creation AmplifyApp#enable_auto_branch_creation}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/amplify_app#enable_auto_branch_creation AmplifyApp#enable_auto_branch_creation}.
 
 ---
 
@@ -247,7 +257,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/amplify_app#enable_basic_auth AmplifyApp#enable_basic_auth}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/amplify_app#enable_basic_auth AmplifyApp#enable_basic_auth}.
 
 ---
 
@@ -255,7 +265,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/amplify_app#enable_branch_auto_build AmplifyApp#enable_branch_auto_build}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/amplify_app#enable_branch_auto_build AmplifyApp#enable_branch_auto_build}.
 
 ---
 
@@ -263,7 +273,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/amplify_app#enable_branch_auto_deletion AmplifyApp#enable_branch_auto_deletion}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/amplify_app#enable_branch_auto_deletion AmplifyApp#enable_branch_auto_deletion}.
 
 ---
 
@@ -271,7 +281,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/amplify_app#environment_variables AmplifyApp#environment_variables}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/amplify_app#environment_variables AmplifyApp#environment_variables}.
 
 ---
 
@@ -279,7 +289,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/amplify_app#iam_service_role_arn AmplifyApp#iam_service_role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/amplify_app#iam_service_role_arn AmplifyApp#iam_service_role_arn}.
 
 ---
 
@@ -287,7 +297,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/amplify_app#id AmplifyApp#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/amplify_app#id AmplifyApp#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -298,7 +308,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/amplify_app#oauth_token AmplifyApp#oauth_token}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/amplify_app#oauth_token AmplifyApp#oauth_token}.
 
 ---
 
@@ -306,7 +316,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/amplify_app#platform AmplifyApp#platform}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/amplify_app#platform AmplifyApp#platform}.
 
 ---
 
@@ -314,7 +324,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/amplify_app#repository AmplifyApp#repository}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/amplify_app#repository AmplifyApp#repository}.
 
 ---
 
@@ -322,7 +332,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/amplify_app#tags AmplifyApp#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/amplify_app#tags AmplifyApp#tags}.
 
 ---
 
@@ -330,7 +340,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/amplify_app#tags_all AmplifyApp#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/amplify_app#tags_all AmplifyApp#tags_all}.
 
 ---
 
@@ -370,6 +380,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.resetBasicAuthCredentials">resetBasicAuthCredentials</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.resetBuildSpec">resetBuildSpec</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.resetCacheConfig">resetCacheConfig</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.resetComputeRoleArn">resetComputeRoleArn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.resetCustomHeaders">resetCustomHeaders</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.resetCustomRule">resetCustomRule</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.resetDescription">resetDescription</a></code> | *No description.* |
@@ -750,6 +761,12 @@ public void resetBuildSpec()
 public void resetCacheConfig()
 ```
 
+##### `resetComputeRoleArn` <a name="resetComputeRoleArn" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.resetComputeRoleArn"></a>
+
+```java
+public void resetComputeRoleArn()
+```
+
 ##### `resetCustomHeaders` <a name="resetCustomHeaders" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.resetCustomHeaders"></a>
 
 ```java
@@ -943,7 +960,7 @@ The construct id used in the generated config for the AmplifyApp to import.
 
 The id of the existing AmplifyApp that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/amplify_app#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/amplify_app#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -985,6 +1002,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1
 | <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.property.basicAuthCredentialsInput">basicAuthCredentialsInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.property.buildSpecInput">buildSpecInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.property.cacheConfigInput">cacheConfigInput</a></code> | <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppCacheConfig">AmplifyAppCacheConfig</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.property.computeRoleArnInput">computeRoleArnInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.property.customHeadersInput">customHeadersInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.property.customRuleInput">customRuleInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppCustomRule">AmplifyAppCustomRule</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.property.descriptionInput">descriptionInput</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -1005,6 +1023,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1
 | <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.property.autoBranchCreationPatterns">autoBranchCreationPatterns</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.property.basicAuthCredentials">basicAuthCredentials</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.property.buildSpec">buildSpec</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.property.computeRoleArn">computeRoleArn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.property.customHeaders">customHeaders</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.property.description">description</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.property.enableAutoBranchCreation">enableAutoBranchCreation</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
@@ -1285,6 +1304,16 @@ public AmplifyAppCacheConfig getCacheConfigInput();
 
 ---
 
+##### `computeRoleArnInput`<sup>Optional</sup> <a name="computeRoleArnInput" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.property.computeRoleArnInput"></a>
+
+```java
+public java.lang.String getComputeRoleArnInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `customHeadersInput`<sup>Optional</sup> <a name="customHeadersInput" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.property.customHeadersInput"></a>
 
 ```java
@@ -1479,6 +1508,16 @@ public java.lang.String getBasicAuthCredentials();
 
 ```java
 public java.lang.String getBuildSpec();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `computeRoleArn`<sup>Required</sup> <a name="computeRoleArn" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.property.computeRoleArn"></a>
+
+```java
+public java.lang.String getComputeRoleArn();
 ```
 
 - *Type:* java.lang.String
@@ -1684,16 +1723,16 @@ AmplifyAppAutoBranchCreationConfig.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfig.property.basicAuthCredentials">basicAuthCredentials</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/amplify_app#basic_auth_credentials AmplifyApp#basic_auth_credentials}. |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfig.property.buildSpec">buildSpec</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/amplify_app#build_spec AmplifyApp#build_spec}. |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfig.property.enableAutoBuild">enableAutoBuild</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/amplify_app#enable_auto_build AmplifyApp#enable_auto_build}. |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfig.property.enableBasicAuth">enableBasicAuth</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/amplify_app#enable_basic_auth AmplifyApp#enable_basic_auth}. |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfig.property.enablePerformanceMode">enablePerformanceMode</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/amplify_app#enable_performance_mode AmplifyApp#enable_performance_mode}. |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfig.property.enablePullRequestPreview">enablePullRequestPreview</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/amplify_app#enable_pull_request_preview AmplifyApp#enable_pull_request_preview}. |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfig.property.environmentVariables">environmentVariables</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/amplify_app#environment_variables AmplifyApp#environment_variables}. |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfig.property.framework">framework</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/amplify_app#framework AmplifyApp#framework}. |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfig.property.pullRequestEnvironmentName">pullRequestEnvironmentName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/amplify_app#pull_request_environment_name AmplifyApp#pull_request_environment_name}. |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfig.property.stage">stage</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/amplify_app#stage AmplifyApp#stage}. |
+| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfig.property.basicAuthCredentials">basicAuthCredentials</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/amplify_app#basic_auth_credentials AmplifyApp#basic_auth_credentials}. |
+| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfig.property.buildSpec">buildSpec</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/amplify_app#build_spec AmplifyApp#build_spec}. |
+| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfig.property.enableAutoBuild">enableAutoBuild</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/amplify_app#enable_auto_build AmplifyApp#enable_auto_build}. |
+| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfig.property.enableBasicAuth">enableBasicAuth</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/amplify_app#enable_basic_auth AmplifyApp#enable_basic_auth}. |
+| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfig.property.enablePerformanceMode">enablePerformanceMode</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/amplify_app#enable_performance_mode AmplifyApp#enable_performance_mode}. |
+| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfig.property.enablePullRequestPreview">enablePullRequestPreview</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/amplify_app#enable_pull_request_preview AmplifyApp#enable_pull_request_preview}. |
+| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfig.property.environmentVariables">environmentVariables</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/amplify_app#environment_variables AmplifyApp#environment_variables}. |
+| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfig.property.framework">framework</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/amplify_app#framework AmplifyApp#framework}. |
+| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfig.property.pullRequestEnvironmentName">pullRequestEnvironmentName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/amplify_app#pull_request_environment_name AmplifyApp#pull_request_environment_name}. |
+| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfig.property.stage">stage</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/amplify_app#stage AmplifyApp#stage}. |
 
 ---
 
@@ -1705,7 +1744,7 @@ public java.lang.String getBasicAuthCredentials();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/amplify_app#basic_auth_credentials AmplifyApp#basic_auth_credentials}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/amplify_app#basic_auth_credentials AmplifyApp#basic_auth_credentials}.
 
 ---
 
@@ -1717,7 +1756,7 @@ public java.lang.String getBuildSpec();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/amplify_app#build_spec AmplifyApp#build_spec}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/amplify_app#build_spec AmplifyApp#build_spec}.
 
 ---
 
@@ -1729,7 +1768,7 @@ public java.lang.Object getEnableAutoBuild();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/amplify_app#enable_auto_build AmplifyApp#enable_auto_build}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/amplify_app#enable_auto_build AmplifyApp#enable_auto_build}.
 
 ---
 
@@ -1741,7 +1780,7 @@ public java.lang.Object getEnableBasicAuth();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/amplify_app#enable_basic_auth AmplifyApp#enable_basic_auth}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/amplify_app#enable_basic_auth AmplifyApp#enable_basic_auth}.
 
 ---
 
@@ -1753,7 +1792,7 @@ public java.lang.Object getEnablePerformanceMode();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/amplify_app#enable_performance_mode AmplifyApp#enable_performance_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/amplify_app#enable_performance_mode AmplifyApp#enable_performance_mode}.
 
 ---
 
@@ -1765,7 +1804,7 @@ public java.lang.Object getEnablePullRequestPreview();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/amplify_app#enable_pull_request_preview AmplifyApp#enable_pull_request_preview}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/amplify_app#enable_pull_request_preview AmplifyApp#enable_pull_request_preview}.
 
 ---
 
@@ -1777,7 +1816,7 @@ public java.util.Map<java.lang.String, java.lang.String> getEnvironmentVariables
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/amplify_app#environment_variables AmplifyApp#environment_variables}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/amplify_app#environment_variables AmplifyApp#environment_variables}.
 
 ---
 
@@ -1789,7 +1828,7 @@ public java.lang.String getFramework();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/amplify_app#framework AmplifyApp#framework}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/amplify_app#framework AmplifyApp#framework}.
 
 ---
 
@@ -1801,7 +1840,7 @@ public java.lang.String getPullRequestEnvironmentName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/amplify_app#pull_request_environment_name AmplifyApp#pull_request_environment_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/amplify_app#pull_request_environment_name AmplifyApp#pull_request_environment_name}.
 
 ---
 
@@ -1813,7 +1852,7 @@ public java.lang.String getStage();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/amplify_app#stage AmplifyApp#stage}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/amplify_app#stage AmplifyApp#stage}.
 
 ---
 
@@ -1833,7 +1872,7 @@ AmplifyAppCacheConfig.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppCacheConfig.property.type">type</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/amplify_app#type AmplifyApp#type}. |
+| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppCacheConfig.property.type">type</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/amplify_app#type AmplifyApp#type}. |
 
 ---
 
@@ -1845,7 +1884,7 @@ public java.lang.String getType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/amplify_app#type AmplifyApp#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/amplify_app#type AmplifyApp#type}.
 
 ---
 
@@ -1875,6 +1914,7 @@ AmplifyAppConfig.builder()
 //  .basicAuthCredentials(java.lang.String)
 //  .buildSpec(java.lang.String)
 //  .cacheConfig(AmplifyAppCacheConfig)
+//  .computeRoleArn(java.lang.String)
 //  .customHeaders(java.lang.String)
 //  .customRule(IResolvable)
 //  .customRule(java.util.List<AmplifyAppCustomRule>)
@@ -1909,28 +1949,29 @@ AmplifyAppConfig.builder()
 | <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/amplify_app#name AmplifyApp#name}. |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppConfig.property.accessToken">accessToken</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/amplify_app#access_token AmplifyApp#access_token}. |
+| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/amplify_app#name AmplifyApp#name}. |
+| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppConfig.property.accessToken">accessToken</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/amplify_app#access_token AmplifyApp#access_token}. |
 | <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppConfig.property.autoBranchCreationConfig">autoBranchCreationConfig</a></code> | <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfig">AmplifyAppAutoBranchCreationConfig</a></code> | auto_branch_creation_config block. |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppConfig.property.autoBranchCreationPatterns">autoBranchCreationPatterns</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/amplify_app#auto_branch_creation_patterns AmplifyApp#auto_branch_creation_patterns}. |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppConfig.property.basicAuthCredentials">basicAuthCredentials</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/amplify_app#basic_auth_credentials AmplifyApp#basic_auth_credentials}. |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppConfig.property.buildSpec">buildSpec</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/amplify_app#build_spec AmplifyApp#build_spec}. |
+| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppConfig.property.autoBranchCreationPatterns">autoBranchCreationPatterns</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/amplify_app#auto_branch_creation_patterns AmplifyApp#auto_branch_creation_patterns}. |
+| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppConfig.property.basicAuthCredentials">basicAuthCredentials</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/amplify_app#basic_auth_credentials AmplifyApp#basic_auth_credentials}. |
+| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppConfig.property.buildSpec">buildSpec</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/amplify_app#build_spec AmplifyApp#build_spec}. |
 | <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppConfig.property.cacheConfig">cacheConfig</a></code> | <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppCacheConfig">AmplifyAppCacheConfig</a></code> | cache_config block. |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppConfig.property.customHeaders">customHeaders</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/amplify_app#custom_headers AmplifyApp#custom_headers}. |
+| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppConfig.property.computeRoleArn">computeRoleArn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/amplify_app#compute_role_arn AmplifyApp#compute_role_arn}. |
+| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppConfig.property.customHeaders">customHeaders</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/amplify_app#custom_headers AmplifyApp#custom_headers}. |
 | <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppConfig.property.customRule">customRule</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppCustomRule">AmplifyAppCustomRule</a>></code> | custom_rule block. |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppConfig.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/amplify_app#description AmplifyApp#description}. |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppConfig.property.enableAutoBranchCreation">enableAutoBranchCreation</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/amplify_app#enable_auto_branch_creation AmplifyApp#enable_auto_branch_creation}. |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppConfig.property.enableBasicAuth">enableBasicAuth</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/amplify_app#enable_basic_auth AmplifyApp#enable_basic_auth}. |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppConfig.property.enableBranchAutoBuild">enableBranchAutoBuild</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/amplify_app#enable_branch_auto_build AmplifyApp#enable_branch_auto_build}. |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppConfig.property.enableBranchAutoDeletion">enableBranchAutoDeletion</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/amplify_app#enable_branch_auto_deletion AmplifyApp#enable_branch_auto_deletion}. |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppConfig.property.environmentVariables">environmentVariables</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/amplify_app#environment_variables AmplifyApp#environment_variables}. |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppConfig.property.iamServiceRoleArn">iamServiceRoleArn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/amplify_app#iam_service_role_arn AmplifyApp#iam_service_role_arn}. |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/amplify_app#id AmplifyApp#id}. |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppConfig.property.oauthToken">oauthToken</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/amplify_app#oauth_token AmplifyApp#oauth_token}. |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppConfig.property.platform">platform</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/amplify_app#platform AmplifyApp#platform}. |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppConfig.property.repository">repository</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/amplify_app#repository AmplifyApp#repository}. |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppConfig.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/amplify_app#tags AmplifyApp#tags}. |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppConfig.property.tagsAll">tagsAll</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/amplify_app#tags_all AmplifyApp#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppConfig.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/amplify_app#description AmplifyApp#description}. |
+| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppConfig.property.enableAutoBranchCreation">enableAutoBranchCreation</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/amplify_app#enable_auto_branch_creation AmplifyApp#enable_auto_branch_creation}. |
+| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppConfig.property.enableBasicAuth">enableBasicAuth</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/amplify_app#enable_basic_auth AmplifyApp#enable_basic_auth}. |
+| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppConfig.property.enableBranchAutoBuild">enableBranchAutoBuild</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/amplify_app#enable_branch_auto_build AmplifyApp#enable_branch_auto_build}. |
+| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppConfig.property.enableBranchAutoDeletion">enableBranchAutoDeletion</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/amplify_app#enable_branch_auto_deletion AmplifyApp#enable_branch_auto_deletion}. |
+| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppConfig.property.environmentVariables">environmentVariables</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/amplify_app#environment_variables AmplifyApp#environment_variables}. |
+| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppConfig.property.iamServiceRoleArn">iamServiceRoleArn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/amplify_app#iam_service_role_arn AmplifyApp#iam_service_role_arn}. |
+| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/amplify_app#id AmplifyApp#id}. |
+| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppConfig.property.oauthToken">oauthToken</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/amplify_app#oauth_token AmplifyApp#oauth_token}. |
+| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppConfig.property.platform">platform</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/amplify_app#platform AmplifyApp#platform}. |
+| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppConfig.property.repository">repository</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/amplify_app#repository AmplifyApp#repository}. |
+| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppConfig.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/amplify_app#tags AmplifyApp#tags}. |
+| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppConfig.property.tagsAll">tagsAll</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/amplify_app#tags_all AmplifyApp#tags_all}. |
 
 ---
 
@@ -2012,7 +2053,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/amplify_app#name AmplifyApp#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/amplify_app#name AmplifyApp#name}.
 
 ---
 
@@ -2024,7 +2065,7 @@ public java.lang.String getAccessToken();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/amplify_app#access_token AmplifyApp#access_token}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/amplify_app#access_token AmplifyApp#access_token}.
 
 ---
 
@@ -2038,7 +2079,7 @@ public AmplifyAppAutoBranchCreationConfig getAutoBranchCreationConfig();
 
 auto_branch_creation_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/amplify_app#auto_branch_creation_config AmplifyApp#auto_branch_creation_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/amplify_app#auto_branch_creation_config AmplifyApp#auto_branch_creation_config}
 
 ---
 
@@ -2050,7 +2091,7 @@ public java.util.List<java.lang.String> getAutoBranchCreationPatterns();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/amplify_app#auto_branch_creation_patterns AmplifyApp#auto_branch_creation_patterns}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/amplify_app#auto_branch_creation_patterns AmplifyApp#auto_branch_creation_patterns}.
 
 ---
 
@@ -2062,7 +2103,7 @@ public java.lang.String getBasicAuthCredentials();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/amplify_app#basic_auth_credentials AmplifyApp#basic_auth_credentials}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/amplify_app#basic_auth_credentials AmplifyApp#basic_auth_credentials}.
 
 ---
 
@@ -2074,7 +2115,7 @@ public java.lang.String getBuildSpec();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/amplify_app#build_spec AmplifyApp#build_spec}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/amplify_app#build_spec AmplifyApp#build_spec}.
 
 ---
 
@@ -2088,7 +2129,19 @@ public AmplifyAppCacheConfig getCacheConfig();
 
 cache_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/amplify_app#cache_config AmplifyApp#cache_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/amplify_app#cache_config AmplifyApp#cache_config}
+
+---
+
+##### `computeRoleArn`<sup>Optional</sup> <a name="computeRoleArn" id="@cdktf/provider-aws.amplifyApp.AmplifyAppConfig.property.computeRoleArn"></a>
+
+```java
+public java.lang.String getComputeRoleArn();
+```
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/amplify_app#compute_role_arn AmplifyApp#compute_role_arn}.
 
 ---
 
@@ -2100,7 +2153,7 @@ public java.lang.String getCustomHeaders();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/amplify_app#custom_headers AmplifyApp#custom_headers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/amplify_app#custom_headers AmplifyApp#custom_headers}.
 
 ---
 
@@ -2114,7 +2167,7 @@ public java.lang.Object getCustomRule();
 
 custom_rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/amplify_app#custom_rule AmplifyApp#custom_rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/amplify_app#custom_rule AmplifyApp#custom_rule}
 
 ---
 
@@ -2126,7 +2179,7 @@ public java.lang.String getDescription();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/amplify_app#description AmplifyApp#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/amplify_app#description AmplifyApp#description}.
 
 ---
 
@@ -2138,7 +2191,7 @@ public java.lang.Object getEnableAutoBranchCreation();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/amplify_app#enable_auto_branch_creation AmplifyApp#enable_auto_branch_creation}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/amplify_app#enable_auto_branch_creation AmplifyApp#enable_auto_branch_creation}.
 
 ---
 
@@ -2150,7 +2203,7 @@ public java.lang.Object getEnableBasicAuth();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/amplify_app#enable_basic_auth AmplifyApp#enable_basic_auth}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/amplify_app#enable_basic_auth AmplifyApp#enable_basic_auth}.
 
 ---
 
@@ -2162,7 +2215,7 @@ public java.lang.Object getEnableBranchAutoBuild();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/amplify_app#enable_branch_auto_build AmplifyApp#enable_branch_auto_build}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/amplify_app#enable_branch_auto_build AmplifyApp#enable_branch_auto_build}.
 
 ---
 
@@ -2174,7 +2227,7 @@ public java.lang.Object getEnableBranchAutoDeletion();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/amplify_app#enable_branch_auto_deletion AmplifyApp#enable_branch_auto_deletion}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/amplify_app#enable_branch_auto_deletion AmplifyApp#enable_branch_auto_deletion}.
 
 ---
 
@@ -2186,7 +2239,7 @@ public java.util.Map<java.lang.String, java.lang.String> getEnvironmentVariables
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/amplify_app#environment_variables AmplifyApp#environment_variables}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/amplify_app#environment_variables AmplifyApp#environment_variables}.
 
 ---
 
@@ -2198,7 +2251,7 @@ public java.lang.String getIamServiceRoleArn();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/amplify_app#iam_service_role_arn AmplifyApp#iam_service_role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/amplify_app#iam_service_role_arn AmplifyApp#iam_service_role_arn}.
 
 ---
 
@@ -2210,7 +2263,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/amplify_app#id AmplifyApp#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/amplify_app#id AmplifyApp#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2225,7 +2278,7 @@ public java.lang.String getOauthToken();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/amplify_app#oauth_token AmplifyApp#oauth_token}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/amplify_app#oauth_token AmplifyApp#oauth_token}.
 
 ---
 
@@ -2237,7 +2290,7 @@ public java.lang.String getPlatform();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/amplify_app#platform AmplifyApp#platform}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/amplify_app#platform AmplifyApp#platform}.
 
 ---
 
@@ -2249,7 +2302,7 @@ public java.lang.String getRepository();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/amplify_app#repository AmplifyApp#repository}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/amplify_app#repository AmplifyApp#repository}.
 
 ---
 
@@ -2261,7 +2314,7 @@ public java.util.Map<java.lang.String, java.lang.String> getTags();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/amplify_app#tags AmplifyApp#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/amplify_app#tags AmplifyApp#tags}.
 
 ---
 
@@ -2273,7 +2326,7 @@ public java.util.Map<java.lang.String, java.lang.String> getTagsAll();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/amplify_app#tags_all AmplifyApp#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/amplify_app#tags_all AmplifyApp#tags_all}.
 
 ---
 
@@ -2296,10 +2349,10 @@ AmplifyAppCustomRule.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppCustomRule.property.source">source</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/amplify_app#source AmplifyApp#source}. |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppCustomRule.property.target">target</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/amplify_app#target AmplifyApp#target}. |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppCustomRule.property.condition">condition</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/amplify_app#condition AmplifyApp#condition}. |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppCustomRule.property.status">status</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/amplify_app#status AmplifyApp#status}. |
+| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppCustomRule.property.source">source</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/amplify_app#source AmplifyApp#source}. |
+| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppCustomRule.property.target">target</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/amplify_app#target AmplifyApp#target}. |
+| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppCustomRule.property.condition">condition</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/amplify_app#condition AmplifyApp#condition}. |
+| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppCustomRule.property.status">status</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/amplify_app#status AmplifyApp#status}. |
 
 ---
 
@@ -2311,7 +2364,7 @@ public java.lang.String getSource();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/amplify_app#source AmplifyApp#source}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/amplify_app#source AmplifyApp#source}.
 
 ---
 
@@ -2323,7 +2376,7 @@ public java.lang.String getTarget();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/amplify_app#target AmplifyApp#target}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/amplify_app#target AmplifyApp#target}.
 
 ---
 
@@ -2335,7 +2388,7 @@ public java.lang.String getCondition();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/amplify_app#condition AmplifyApp#condition}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/amplify_app#condition AmplifyApp#condition}.
 
 ---
 
@@ -2347,7 +2400,7 @@ public java.lang.String getStatus();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/amplify_app#status AmplifyApp#status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/amplify_app#status AmplifyApp#status}.
 
 ---
 

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/redshiftserverless_workgroup
+// https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/redshiftserverless_workgroup
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,66 +13,72 @@ import * as cdktf from 'cdktf';
 
 export interface RedshiftserverlessWorkgroupConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/redshiftserverless_workgroup#base_capacity RedshiftserverlessWorkgroup#base_capacity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/redshiftserverless_workgroup#base_capacity RedshiftserverlessWorkgroup#base_capacity}
   */
   readonly baseCapacity?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/redshiftserverless_workgroup#enhanced_vpc_routing RedshiftserverlessWorkgroup#enhanced_vpc_routing}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/redshiftserverless_workgroup#enhanced_vpc_routing RedshiftserverlessWorkgroup#enhanced_vpc_routing}
   */
   readonly enhancedVpcRouting?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/redshiftserverless_workgroup#id RedshiftserverlessWorkgroup#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/redshiftserverless_workgroup#id RedshiftserverlessWorkgroup#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/redshiftserverless_workgroup#max_capacity RedshiftserverlessWorkgroup#max_capacity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/redshiftserverless_workgroup#max_capacity RedshiftserverlessWorkgroup#max_capacity}
   */
   readonly maxCapacity?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/redshiftserverless_workgroup#namespace_name RedshiftserverlessWorkgroup#namespace_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/redshiftserverless_workgroup#namespace_name RedshiftserverlessWorkgroup#namespace_name}
   */
   readonly namespaceName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/redshiftserverless_workgroup#port RedshiftserverlessWorkgroup#port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/redshiftserverless_workgroup#port RedshiftserverlessWorkgroup#port}
   */
   readonly port?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/redshiftserverless_workgroup#publicly_accessible RedshiftserverlessWorkgroup#publicly_accessible}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/redshiftserverless_workgroup#publicly_accessible RedshiftserverlessWorkgroup#publicly_accessible}
   */
   readonly publiclyAccessible?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/redshiftserverless_workgroup#security_group_ids RedshiftserverlessWorkgroup#security_group_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/redshiftserverless_workgroup#security_group_ids RedshiftserverlessWorkgroup#security_group_ids}
   */
   readonly securityGroupIds?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/redshiftserverless_workgroup#subnet_ids RedshiftserverlessWorkgroup#subnet_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/redshiftserverless_workgroup#subnet_ids RedshiftserverlessWorkgroup#subnet_ids}
   */
   readonly subnetIds?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/redshiftserverless_workgroup#tags RedshiftserverlessWorkgroup#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/redshiftserverless_workgroup#tags RedshiftserverlessWorkgroup#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/redshiftserverless_workgroup#tags_all RedshiftserverlessWorkgroup#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/redshiftserverless_workgroup#tags_all RedshiftserverlessWorkgroup#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/redshiftserverless_workgroup#workgroup_name RedshiftserverlessWorkgroup#workgroup_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/redshiftserverless_workgroup#workgroup_name RedshiftserverlessWorkgroup#workgroup_name}
   */
   readonly workgroupName: string;
   /**
   * config_parameter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/redshiftserverless_workgroup#config_parameter RedshiftserverlessWorkgroup#config_parameter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/redshiftserverless_workgroup#config_parameter RedshiftserverlessWorkgroup#config_parameter}
   */
   readonly configParameter?: RedshiftserverlessWorkgroupConfigParameter[] | cdktf.IResolvable;
   /**
+  * price_performance_target block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/redshiftserverless_workgroup#price_performance_target RedshiftserverlessWorkgroup#price_performance_target}
+  */
+  readonly pricePerformanceTarget?: RedshiftserverlessWorkgroupPricePerformanceTarget;
+  /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/redshiftserverless_workgroup#timeouts RedshiftserverlessWorkgroup#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/redshiftserverless_workgroup#timeouts RedshiftserverlessWorkgroup#timeouts}
   */
   readonly timeouts?: RedshiftserverlessWorkgroupTimeouts;
 }
@@ -340,11 +346,11 @@ export class RedshiftserverlessWorkgroupEndpointList extends cdktf.ComplexList {
 }
 export interface RedshiftserverlessWorkgroupConfigParameter {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/redshiftserverless_workgroup#parameter_key RedshiftserverlessWorkgroup#parameter_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/redshiftserverless_workgroup#parameter_key RedshiftserverlessWorkgroup#parameter_key}
   */
   readonly parameterKey: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/redshiftserverless_workgroup#parameter_value RedshiftserverlessWorkgroup#parameter_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/redshiftserverless_workgroup#parameter_value RedshiftserverlessWorkgroup#parameter_value}
   */
   readonly parameterValue: string;
 }
@@ -481,17 +487,131 @@ export class RedshiftserverlessWorkgroupConfigParameterList extends cdktf.Comple
     return new RedshiftserverlessWorkgroupConfigParameterOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface RedshiftserverlessWorkgroupPricePerformanceTarget {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/redshiftserverless_workgroup#enabled RedshiftserverlessWorkgroup#enabled}
+  */
+  readonly enabled: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/redshiftserverless_workgroup#level RedshiftserverlessWorkgroup#level}
+  */
+  readonly level?: number;
+}
+
+export function redshiftserverlessWorkgroupPricePerformanceTargetToTerraform(struct?: RedshiftserverlessWorkgroupPricePerformanceTargetOutputReference | RedshiftserverlessWorkgroupPricePerformanceTarget): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    enabled: cdktf.booleanToTerraform(struct!.enabled),
+    level: cdktf.numberToTerraform(struct!.level),
+  }
+}
+
+
+export function redshiftserverlessWorkgroupPricePerformanceTargetToHclTerraform(struct?: RedshiftserverlessWorkgroupPricePerformanceTargetOutputReference | RedshiftserverlessWorkgroupPricePerformanceTarget): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    level: {
+      value: cdktf.numberToHclTerraform(struct!.level),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class RedshiftserverlessWorkgroupPricePerformanceTargetOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): RedshiftserverlessWorkgroupPricePerformanceTarget | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._enabled !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.enabled = this._enabled;
+    }
+    if (this._level !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.level = this._level;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: RedshiftserverlessWorkgroupPricePerformanceTarget | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._enabled = undefined;
+      this._level = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._enabled = value.enabled;
+      this._level = value.level;
+    }
+  }
+
+  // enabled - computed: false, optional: false, required: true
+  private _enabled?: boolean | cdktf.IResolvable; 
+  public get enabled() {
+    return this.getBooleanAttribute('enabled');
+  }
+  public set enabled(value: boolean | cdktf.IResolvable) {
+    this._enabled = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enabledInput() {
+    return this._enabled;
+  }
+
+  // level - computed: false, optional: true, required: false
+  private _level?: number; 
+  public get level() {
+    return this.getNumberAttribute('level');
+  }
+  public set level(value: number) {
+    this._level = value;
+  }
+  public resetLevel() {
+    this._level = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get levelInput() {
+    return this._level;
+  }
+}
 export interface RedshiftserverlessWorkgroupTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/redshiftserverless_workgroup#create RedshiftserverlessWorkgroup#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/redshiftserverless_workgroup#create RedshiftserverlessWorkgroup#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/redshiftserverless_workgroup#delete RedshiftserverlessWorkgroup#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/redshiftserverless_workgroup#delete RedshiftserverlessWorkgroup#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/redshiftserverless_workgroup#update RedshiftserverlessWorkgroup#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/redshiftserverless_workgroup#update RedshiftserverlessWorkgroup#update}
   */
   readonly update?: string;
 }
@@ -643,7 +763,7 @@ export class RedshiftserverlessWorkgroupTimeoutsOutputReference extends cdktf.Co
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/redshiftserverless_workgroup aws_redshiftserverless_workgroup}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/redshiftserverless_workgroup aws_redshiftserverless_workgroup}
 */
 export class RedshiftserverlessWorkgroup extends cdktf.TerraformResource {
 
@@ -659,7 +779,7 @@ export class RedshiftserverlessWorkgroup extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a RedshiftserverlessWorkgroup resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the RedshiftserverlessWorkgroup to import
-  * @param importFromId The id of the existing RedshiftserverlessWorkgroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/redshiftserverless_workgroup#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing RedshiftserverlessWorkgroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/redshiftserverless_workgroup#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the RedshiftserverlessWorkgroup to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -671,7 +791,7 @@ export class RedshiftserverlessWorkgroup extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/redshiftserverless_workgroup aws_redshiftserverless_workgroup} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/redshiftserverless_workgroup aws_redshiftserverless_workgroup} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -682,7 +802,7 @@ export class RedshiftserverlessWorkgroup extends cdktf.TerraformResource {
       terraformResourceType: 'aws_redshiftserverless_workgroup',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.94.1',
+        providerVersion: '5.95.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -706,6 +826,7 @@ export class RedshiftserverlessWorkgroup extends cdktf.TerraformResource {
     this._tagsAll = config.tagsAll;
     this._workgroupName = config.workgroupName;
     this._configParameter.internalValue = config.configParameter;
+    this._pricePerformanceTarget.internalValue = config.pricePerformanceTarget;
     this._timeouts.internalValue = config.timeouts;
   }
 
@@ -931,6 +1052,22 @@ export class RedshiftserverlessWorkgroup extends cdktf.TerraformResource {
     return this._configParameter.internalValue;
   }
 
+  // price_performance_target - computed: false, optional: true, required: false
+  private _pricePerformanceTarget = new RedshiftserverlessWorkgroupPricePerformanceTargetOutputReference(this, "price_performance_target");
+  public get pricePerformanceTarget() {
+    return this._pricePerformanceTarget;
+  }
+  public putPricePerformanceTarget(value: RedshiftserverlessWorkgroupPricePerformanceTarget) {
+    this._pricePerformanceTarget.internalValue = value;
+  }
+  public resetPricePerformanceTarget() {
+    this._pricePerformanceTarget.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pricePerformanceTargetInput() {
+    return this._pricePerformanceTarget.internalValue;
+  }
+
   // timeouts - computed: false, optional: true, required: false
   private _timeouts = new RedshiftserverlessWorkgroupTimeoutsOutputReference(this, "timeouts");
   public get timeouts() {
@@ -966,6 +1103,7 @@ export class RedshiftserverlessWorkgroup extends cdktf.TerraformResource {
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       workgroup_name: cdktf.stringToTerraform(this._workgroupName),
       config_parameter: cdktf.listMapper(redshiftserverlessWorkgroupConfigParameterToTerraform, true)(this._configParameter.internalValue),
+      price_performance_target: redshiftserverlessWorkgroupPricePerformanceTargetToTerraform(this._pricePerformanceTarget.internalValue),
       timeouts: redshiftserverlessWorkgroupTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -1049,6 +1187,12 @@ export class RedshiftserverlessWorkgroup extends cdktf.TerraformResource {
         isBlock: true,
         type: "set",
         storageClassType: "RedshiftserverlessWorkgroupConfigParameterList",
+      },
+      price_performance_target: {
+        value: redshiftserverlessWorkgroupPricePerformanceTargetToHclTerraform(this._pricePerformanceTarget.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "RedshiftserverlessWorkgroupPricePerformanceTargetList",
       },
       timeouts: {
         value: redshiftserverlessWorkgroupTimeoutsToHclTerraform(this._timeouts.internalValue),

@@ -1072,6 +1072,7 @@ export * as redshiftEndpointAuthorization from './redshift-endpoint-authorizatio
 export * as redshiftEventSubscription from './redshift-event-subscription';
 export * as redshiftHsmClientCertificate from './redshift-hsm-client-certificate';
 export * as redshiftHsmConfiguration from './redshift-hsm-configuration';
+export * as redshiftIntegration from './redshift-integration';
 export * as redshiftLogging from './redshift-logging';
 export * as redshiftParameterGroup from './redshift-parameter-group';
 export * as redshiftPartner from './redshift-partner';

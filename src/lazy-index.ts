@@ -1072,6 +1072,7 @@ Object.defineProperty(exports, 'redshiftEndpointAuthorization', { get: function 
 Object.defineProperty(exports, 'redshiftEventSubscription', { get: function () { return require('./redshift-event-subscription'); } });
 Object.defineProperty(exports, 'redshiftHsmClientCertificate', { get: function () { return require('./redshift-hsm-client-certificate'); } });
 Object.defineProperty(exports, 'redshiftHsmConfiguration', { get: function () { return require('./redshift-hsm-configuration'); } });
+Object.defineProperty(exports, 'redshiftIntegration', { get: function () { return require('./redshift-integration'); } });
 Object.defineProperty(exports, 'redshiftLogging', { get: function () { return require('./redshift-logging'); } });
 Object.defineProperty(exports, 'redshiftParameterGroup', { get: function () { return require('./redshift-parameter-group'); } });
 Object.defineProperty(exports, 'redshiftPartner', { get: function () { return require('./redshift-partner'); } });

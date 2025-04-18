@@ -4,7 +4,7 @@
 
 ### SagemakerImageVersion <a name="SagemakerImageVersion" id="@cdktf/provider-aws.sagemakerImageVersion.SagemakerImageVersion"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/sagemaker_image_version aws_sagemaker_image_version}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/sagemaker_image_version aws_sagemaker_image_version}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sagemakerImageVersion.SagemakerImageVersion.Initializer"></a>
 
@@ -23,7 +23,14 @@ sagemakerImageVersion.SagemakerImageVersion(
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
   base_image: str,
   image_name: str,
-  id: str = None
+  horovod: typing.Union[bool, IResolvable] = None,
+  id: str = None,
+  job_type: str = None,
+  ml_framework: str = None,
+  processor: str = None,
+  programming_lang: str = None,
+  release_notes: str = None,
+  vendor_guidance: str = None
 )
 ```
 
@@ -38,9 +45,16 @@ sagemakerImageVersion.SagemakerImageVersion(
 | <code><a href="#@cdktf/provider-aws.sagemakerImageVersion.SagemakerImageVersion.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.sagemakerImageVersion.SagemakerImageVersion.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.sagemakerImageVersion.SagemakerImageVersion.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.sagemakerImageVersion.SagemakerImageVersion.Initializer.parameter.baseImage">base_image</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/sagemaker_image_version#base_image SagemakerImageVersion#base_image}. |
-| <code><a href="#@cdktf/provider-aws.sagemakerImageVersion.SagemakerImageVersion.Initializer.parameter.imageName">image_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/sagemaker_image_version#image_name SagemakerImageVersion#image_name}. |
-| <code><a href="#@cdktf/provider-aws.sagemakerImageVersion.SagemakerImageVersion.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/sagemaker_image_version#id SagemakerImageVersion#id}. |
+| <code><a href="#@cdktf/provider-aws.sagemakerImageVersion.SagemakerImageVersion.Initializer.parameter.baseImage">base_image</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/sagemaker_image_version#base_image SagemakerImageVersion#base_image}. |
+| <code><a href="#@cdktf/provider-aws.sagemakerImageVersion.SagemakerImageVersion.Initializer.parameter.imageName">image_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/sagemaker_image_version#image_name SagemakerImageVersion#image_name}. |
+| <code><a href="#@cdktf/provider-aws.sagemakerImageVersion.SagemakerImageVersion.Initializer.parameter.horovod">horovod</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/sagemaker_image_version#horovod SagemakerImageVersion#horovod}. |
+| <code><a href="#@cdktf/provider-aws.sagemakerImageVersion.SagemakerImageVersion.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/sagemaker_image_version#id SagemakerImageVersion#id}. |
+| <code><a href="#@cdktf/provider-aws.sagemakerImageVersion.SagemakerImageVersion.Initializer.parameter.jobType">job_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/sagemaker_image_version#job_type SagemakerImageVersion#job_type}. |
+| <code><a href="#@cdktf/provider-aws.sagemakerImageVersion.SagemakerImageVersion.Initializer.parameter.mlFramework">ml_framework</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/sagemaker_image_version#ml_framework SagemakerImageVersion#ml_framework}. |
+| <code><a href="#@cdktf/provider-aws.sagemakerImageVersion.SagemakerImageVersion.Initializer.parameter.processor">processor</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/sagemaker_image_version#processor SagemakerImageVersion#processor}. |
+| <code><a href="#@cdktf/provider-aws.sagemakerImageVersion.SagemakerImageVersion.Initializer.parameter.programmingLang">programming_lang</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/sagemaker_image_version#programming_lang SagemakerImageVersion#programming_lang}. |
+| <code><a href="#@cdktf/provider-aws.sagemakerImageVersion.SagemakerImageVersion.Initializer.parameter.releaseNotes">release_notes</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/sagemaker_image_version#release_notes SagemakerImageVersion#release_notes}. |
+| <code><a href="#@cdktf/provider-aws.sagemakerImageVersion.SagemakerImageVersion.Initializer.parameter.vendorGuidance">vendor_guidance</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/sagemaker_image_version#vendor_guidance SagemakerImageVersion#vendor_guidance}. |
 
 ---
 
@@ -108,7 +122,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/sagemaker_image_version#base_image SagemakerImageVersion#base_image}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/sagemaker_image_version#base_image SagemakerImageVersion#base_image}.
 
 ---
 
@@ -116,7 +130,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/sagemaker_image_version#image_name SagemakerImageVersion#image_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/sagemaker_image_version#image_name SagemakerImageVersion#image_name}.
+
+---
+
+##### `horovod`<sup>Optional</sup> <a name="horovod" id="@cdktf/provider-aws.sagemakerImageVersion.SagemakerImageVersion.Initializer.parameter.horovod"></a>
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/sagemaker_image_version#horovod SagemakerImageVersion#horovod}.
 
 ---
 
@@ -124,10 +146,58 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/sagemaker_image_version#id SagemakerImageVersion#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/sagemaker_image_version#id SagemakerImageVersion#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `job_type`<sup>Optional</sup> <a name="job_type" id="@cdktf/provider-aws.sagemakerImageVersion.SagemakerImageVersion.Initializer.parameter.jobType"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/sagemaker_image_version#job_type SagemakerImageVersion#job_type}.
+
+---
+
+##### `ml_framework`<sup>Optional</sup> <a name="ml_framework" id="@cdktf/provider-aws.sagemakerImageVersion.SagemakerImageVersion.Initializer.parameter.mlFramework"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/sagemaker_image_version#ml_framework SagemakerImageVersion#ml_framework}.
+
+---
+
+##### `processor`<sup>Optional</sup> <a name="processor" id="@cdktf/provider-aws.sagemakerImageVersion.SagemakerImageVersion.Initializer.parameter.processor"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/sagemaker_image_version#processor SagemakerImageVersion#processor}.
+
+---
+
+##### `programming_lang`<sup>Optional</sup> <a name="programming_lang" id="@cdktf/provider-aws.sagemakerImageVersion.SagemakerImageVersion.Initializer.parameter.programmingLang"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/sagemaker_image_version#programming_lang SagemakerImageVersion#programming_lang}.
+
+---
+
+##### `release_notes`<sup>Optional</sup> <a name="release_notes" id="@cdktf/provider-aws.sagemakerImageVersion.SagemakerImageVersion.Initializer.parameter.releaseNotes"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/sagemaker_image_version#release_notes SagemakerImageVersion#release_notes}.
+
+---
+
+##### `vendor_guidance`<sup>Optional</sup> <a name="vendor_guidance" id="@cdktf/provider-aws.sagemakerImageVersion.SagemakerImageVersion.Initializer.parameter.vendorGuidance"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/sagemaker_image_version#vendor_guidance SagemakerImageVersion#vendor_guidance}.
 
 ---
 
@@ -158,7 +228,14 @@ If you experience problems setting this value it might not be settable. Please t
 | <code><a href="#@cdktf/provider-aws.sagemakerImageVersion.SagemakerImageVersion.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktf/provider-aws.sagemakerImageVersion.SagemakerImageVersion.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-aws.sagemakerImageVersion.SagemakerImageVersion.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktf/provider-aws.sagemakerImageVersion.SagemakerImageVersion.resetHorovod">reset_horovod</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.sagemakerImageVersion.SagemakerImageVersion.resetId">reset_id</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.sagemakerImageVersion.SagemakerImageVersion.resetJobType">reset_job_type</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.sagemakerImageVersion.SagemakerImageVersion.resetMlFramework">reset_ml_framework</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.sagemakerImageVersion.SagemakerImageVersion.resetProcessor">reset_processor</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.sagemakerImageVersion.SagemakerImageVersion.resetProgrammingLang">reset_programming_lang</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.sagemakerImageVersion.SagemakerImageVersion.resetReleaseNotes">reset_release_notes</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.sagemakerImageVersion.SagemakerImageVersion.resetVendorGuidance">reset_vendor_guidance</a></code> | *No description.* |
 
 ---
 
@@ -487,10 +564,52 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `reset_horovod` <a name="reset_horovod" id="@cdktf/provider-aws.sagemakerImageVersion.SagemakerImageVersion.resetHorovod"></a>
+
+```python
+def reset_horovod() -> None
+```
+
 ##### `reset_id` <a name="reset_id" id="@cdktf/provider-aws.sagemakerImageVersion.SagemakerImageVersion.resetId"></a>
 
 ```python
 def reset_id() -> None
+```
+
+##### `reset_job_type` <a name="reset_job_type" id="@cdktf/provider-aws.sagemakerImageVersion.SagemakerImageVersion.resetJobType"></a>
+
+```python
+def reset_job_type() -> None
+```
+
+##### `reset_ml_framework` <a name="reset_ml_framework" id="@cdktf/provider-aws.sagemakerImageVersion.SagemakerImageVersion.resetMlFramework"></a>
+
+```python
+def reset_ml_framework() -> None
+```
+
+##### `reset_processor` <a name="reset_processor" id="@cdktf/provider-aws.sagemakerImageVersion.SagemakerImageVersion.resetProcessor"></a>
+
+```python
+def reset_processor() -> None
+```
+
+##### `reset_programming_lang` <a name="reset_programming_lang" id="@cdktf/provider-aws.sagemakerImageVersion.SagemakerImageVersion.resetProgrammingLang"></a>
+
+```python
+def reset_programming_lang() -> None
+```
+
+##### `reset_release_notes` <a name="reset_release_notes" id="@cdktf/provider-aws.sagemakerImageVersion.SagemakerImageVersion.resetReleaseNotes"></a>
+
+```python
+def reset_release_notes() -> None
+```
+
+##### `reset_vendor_guidance` <a name="reset_vendor_guidance" id="@cdktf/provider-aws.sagemakerImageVersion.SagemakerImageVersion.resetVendorGuidance"></a>
+
+```python
+def reset_vendor_guidance() -> None
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -607,7 +726,7 @@ The construct id used in the generated config for the SagemakerImageVersion to i
 
 The id of the existing SagemakerImageVersion that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/sagemaker_image_version#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/sagemaker_image_version#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -642,11 +761,25 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1
 | <code><a href="#@cdktf/provider-aws.sagemakerImageVersion.SagemakerImageVersion.property.imageArn">image_arn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.sagemakerImageVersion.SagemakerImageVersion.property.version">version</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.sagemakerImageVersion.SagemakerImageVersion.property.baseImageInput">base_image_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.sagemakerImageVersion.SagemakerImageVersion.property.horovodInput">horovod_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.sagemakerImageVersion.SagemakerImageVersion.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.sagemakerImageVersion.SagemakerImageVersion.property.imageNameInput">image_name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.sagemakerImageVersion.SagemakerImageVersion.property.jobTypeInput">job_type_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.sagemakerImageVersion.SagemakerImageVersion.property.mlFrameworkInput">ml_framework_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.sagemakerImageVersion.SagemakerImageVersion.property.processorInput">processor_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.sagemakerImageVersion.SagemakerImageVersion.property.programmingLangInput">programming_lang_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.sagemakerImageVersion.SagemakerImageVersion.property.releaseNotesInput">release_notes_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.sagemakerImageVersion.SagemakerImageVersion.property.vendorGuidanceInput">vendor_guidance_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.sagemakerImageVersion.SagemakerImageVersion.property.baseImage">base_image</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.sagemakerImageVersion.SagemakerImageVersion.property.horovod">horovod</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.sagemakerImageVersion.SagemakerImageVersion.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.sagemakerImageVersion.SagemakerImageVersion.property.imageName">image_name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.sagemakerImageVersion.SagemakerImageVersion.property.jobType">job_type</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.sagemakerImageVersion.SagemakerImageVersion.property.mlFramework">ml_framework</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.sagemakerImageVersion.SagemakerImageVersion.property.processor">processor</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.sagemakerImageVersion.SagemakerImageVersion.property.programmingLang">programming_lang</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.sagemakerImageVersion.SagemakerImageVersion.property.releaseNotes">release_notes</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.sagemakerImageVersion.SagemakerImageVersion.property.vendorGuidance">vendor_guidance</a></code> | <code>str</code> | *No description.* |
 
 ---
 
@@ -842,6 +975,16 @@ base_image_input: str
 
 ---
 
+##### `horovod_input`<sup>Optional</sup> <a name="horovod_input" id="@cdktf/provider-aws.sagemakerImageVersion.SagemakerImageVersion.property.horovodInput"></a>
+
+```python
+horovod_input: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
 ##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktf/provider-aws.sagemakerImageVersion.SagemakerImageVersion.property.idInput"></a>
 
 ```python
@@ -862,6 +1005,66 @@ image_name_input: str
 
 ---
 
+##### `job_type_input`<sup>Optional</sup> <a name="job_type_input" id="@cdktf/provider-aws.sagemakerImageVersion.SagemakerImageVersion.property.jobTypeInput"></a>
+
+```python
+job_type_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `ml_framework_input`<sup>Optional</sup> <a name="ml_framework_input" id="@cdktf/provider-aws.sagemakerImageVersion.SagemakerImageVersion.property.mlFrameworkInput"></a>
+
+```python
+ml_framework_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `processor_input`<sup>Optional</sup> <a name="processor_input" id="@cdktf/provider-aws.sagemakerImageVersion.SagemakerImageVersion.property.processorInput"></a>
+
+```python
+processor_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `programming_lang_input`<sup>Optional</sup> <a name="programming_lang_input" id="@cdktf/provider-aws.sagemakerImageVersion.SagemakerImageVersion.property.programmingLangInput"></a>
+
+```python
+programming_lang_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `release_notes_input`<sup>Optional</sup> <a name="release_notes_input" id="@cdktf/provider-aws.sagemakerImageVersion.SagemakerImageVersion.property.releaseNotesInput"></a>
+
+```python
+release_notes_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `vendor_guidance_input`<sup>Optional</sup> <a name="vendor_guidance_input" id="@cdktf/provider-aws.sagemakerImageVersion.SagemakerImageVersion.property.vendorGuidanceInput"></a>
+
+```python
+vendor_guidance_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `base_image`<sup>Required</sup> <a name="base_image" id="@cdktf/provider-aws.sagemakerImageVersion.SagemakerImageVersion.property.baseImage"></a>
 
 ```python
@@ -869,6 +1072,16 @@ base_image: str
 ```
 
 - *Type:* str
+
+---
+
+##### `horovod`<sup>Required</sup> <a name="horovod" id="@cdktf/provider-aws.sagemakerImageVersion.SagemakerImageVersion.property.horovod"></a>
+
+```python
+horovod: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
 
 ---
 
@@ -886,6 +1099,66 @@ id: str
 
 ```python
 image_name: str
+```
+
+- *Type:* str
+
+---
+
+##### `job_type`<sup>Required</sup> <a name="job_type" id="@cdktf/provider-aws.sagemakerImageVersion.SagemakerImageVersion.property.jobType"></a>
+
+```python
+job_type: str
+```
+
+- *Type:* str
+
+---
+
+##### `ml_framework`<sup>Required</sup> <a name="ml_framework" id="@cdktf/provider-aws.sagemakerImageVersion.SagemakerImageVersion.property.mlFramework"></a>
+
+```python
+ml_framework: str
+```
+
+- *Type:* str
+
+---
+
+##### `processor`<sup>Required</sup> <a name="processor" id="@cdktf/provider-aws.sagemakerImageVersion.SagemakerImageVersion.property.processor"></a>
+
+```python
+processor: str
+```
+
+- *Type:* str
+
+---
+
+##### `programming_lang`<sup>Required</sup> <a name="programming_lang" id="@cdktf/provider-aws.sagemakerImageVersion.SagemakerImageVersion.property.programmingLang"></a>
+
+```python
+programming_lang: str
+```
+
+- *Type:* str
+
+---
+
+##### `release_notes`<sup>Required</sup> <a name="release_notes" id="@cdktf/provider-aws.sagemakerImageVersion.SagemakerImageVersion.property.releaseNotes"></a>
+
+```python
+release_notes: str
+```
+
+- *Type:* str
+
+---
+
+##### `vendor_guidance`<sup>Required</sup> <a name="vendor_guidance" id="@cdktf/provider-aws.sagemakerImageVersion.SagemakerImageVersion.property.vendorGuidance"></a>
+
+```python
+vendor_guidance: str
 ```
 
 - *Type:* str
@@ -929,7 +1202,14 @@ sagemakerImageVersion.SagemakerImageVersionConfig(
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
   base_image: str,
   image_name: str,
-  id: str = None
+  horovod: typing.Union[bool, IResolvable] = None,
+  id: str = None,
+  job_type: str = None,
+  ml_framework: str = None,
+  processor: str = None,
+  programming_lang: str = None,
+  release_notes: str = None,
+  vendor_guidance: str = None
 )
 ```
 
@@ -944,9 +1224,16 @@ sagemakerImageVersion.SagemakerImageVersionConfig(
 | <code><a href="#@cdktf/provider-aws.sagemakerImageVersion.SagemakerImageVersionConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.sagemakerImageVersion.SagemakerImageVersionConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.sagemakerImageVersion.SagemakerImageVersionConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.sagemakerImageVersion.SagemakerImageVersionConfig.property.baseImage">base_image</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/sagemaker_image_version#base_image SagemakerImageVersion#base_image}. |
-| <code><a href="#@cdktf/provider-aws.sagemakerImageVersion.SagemakerImageVersionConfig.property.imageName">image_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/sagemaker_image_version#image_name SagemakerImageVersion#image_name}. |
-| <code><a href="#@cdktf/provider-aws.sagemakerImageVersion.SagemakerImageVersionConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/sagemaker_image_version#id SagemakerImageVersion#id}. |
+| <code><a href="#@cdktf/provider-aws.sagemakerImageVersion.SagemakerImageVersionConfig.property.baseImage">base_image</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/sagemaker_image_version#base_image SagemakerImageVersion#base_image}. |
+| <code><a href="#@cdktf/provider-aws.sagemakerImageVersion.SagemakerImageVersionConfig.property.imageName">image_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/sagemaker_image_version#image_name SagemakerImageVersion#image_name}. |
+| <code><a href="#@cdktf/provider-aws.sagemakerImageVersion.SagemakerImageVersionConfig.property.horovod">horovod</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/sagemaker_image_version#horovod SagemakerImageVersion#horovod}. |
+| <code><a href="#@cdktf/provider-aws.sagemakerImageVersion.SagemakerImageVersionConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/sagemaker_image_version#id SagemakerImageVersion#id}. |
+| <code><a href="#@cdktf/provider-aws.sagemakerImageVersion.SagemakerImageVersionConfig.property.jobType">job_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/sagemaker_image_version#job_type SagemakerImageVersion#job_type}. |
+| <code><a href="#@cdktf/provider-aws.sagemakerImageVersion.SagemakerImageVersionConfig.property.mlFramework">ml_framework</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/sagemaker_image_version#ml_framework SagemakerImageVersion#ml_framework}. |
+| <code><a href="#@cdktf/provider-aws.sagemakerImageVersion.SagemakerImageVersionConfig.property.processor">processor</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/sagemaker_image_version#processor SagemakerImageVersion#processor}. |
+| <code><a href="#@cdktf/provider-aws.sagemakerImageVersion.SagemakerImageVersionConfig.property.programmingLang">programming_lang</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/sagemaker_image_version#programming_lang SagemakerImageVersion#programming_lang}. |
+| <code><a href="#@cdktf/provider-aws.sagemakerImageVersion.SagemakerImageVersionConfig.property.releaseNotes">release_notes</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/sagemaker_image_version#release_notes SagemakerImageVersion#release_notes}. |
+| <code><a href="#@cdktf/provider-aws.sagemakerImageVersion.SagemakerImageVersionConfig.property.vendorGuidance">vendor_guidance</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/sagemaker_image_version#vendor_guidance SagemakerImageVersion#vendor_guidance}. |
 
 ---
 
@@ -1028,7 +1315,7 @@ base_image: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/sagemaker_image_version#base_image SagemakerImageVersion#base_image}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/sagemaker_image_version#base_image SagemakerImageVersion#base_image}.
 
 ---
 
@@ -1040,7 +1327,19 @@ image_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/sagemaker_image_version#image_name SagemakerImageVersion#image_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/sagemaker_image_version#image_name SagemakerImageVersion#image_name}.
+
+---
+
+##### `horovod`<sup>Optional</sup> <a name="horovod" id="@cdktf/provider-aws.sagemakerImageVersion.SagemakerImageVersionConfig.property.horovod"></a>
+
+```python
+horovod: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/sagemaker_image_version#horovod SagemakerImageVersion#horovod}.
 
 ---
 
@@ -1052,10 +1351,82 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/sagemaker_image_version#id SagemakerImageVersion#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/sagemaker_image_version#id SagemakerImageVersion#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `job_type`<sup>Optional</sup> <a name="job_type" id="@cdktf/provider-aws.sagemakerImageVersion.SagemakerImageVersionConfig.property.jobType"></a>
+
+```python
+job_type: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/sagemaker_image_version#job_type SagemakerImageVersion#job_type}.
+
+---
+
+##### `ml_framework`<sup>Optional</sup> <a name="ml_framework" id="@cdktf/provider-aws.sagemakerImageVersion.SagemakerImageVersionConfig.property.mlFramework"></a>
+
+```python
+ml_framework: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/sagemaker_image_version#ml_framework SagemakerImageVersion#ml_framework}.
+
+---
+
+##### `processor`<sup>Optional</sup> <a name="processor" id="@cdktf/provider-aws.sagemakerImageVersion.SagemakerImageVersionConfig.property.processor"></a>
+
+```python
+processor: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/sagemaker_image_version#processor SagemakerImageVersion#processor}.
+
+---
+
+##### `programming_lang`<sup>Optional</sup> <a name="programming_lang" id="@cdktf/provider-aws.sagemakerImageVersion.SagemakerImageVersionConfig.property.programmingLang"></a>
+
+```python
+programming_lang: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/sagemaker_image_version#programming_lang SagemakerImageVersion#programming_lang}.
+
+---
+
+##### `release_notes`<sup>Optional</sup> <a name="release_notes" id="@cdktf/provider-aws.sagemakerImageVersion.SagemakerImageVersionConfig.property.releaseNotes"></a>
+
+```python
+release_notes: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/sagemaker_image_version#release_notes SagemakerImageVersion#release_notes}.
+
+---
+
+##### `vendor_guidance`<sup>Optional</sup> <a name="vendor_guidance" id="@cdktf/provider-aws.sagemakerImageVersion.SagemakerImageVersionConfig.property.vendorGuidance"></a>
+
+```python
+vendor_guidance: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/sagemaker_image_version#vendor_guidance SagemakerImageVersion#vendor_guidance}.
 
 ---
 

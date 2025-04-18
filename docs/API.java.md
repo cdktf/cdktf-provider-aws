@@ -1677,6 +1677,7 @@ The following submodules are available:
 - [redshiftEventSubscription](./redshiftEventSubscription.java.md)
 - [redshiftHsmClientCertificate](./redshiftHsmClientCertificate.java.md)
 - [redshiftHsmConfiguration](./redshiftHsmConfiguration.java.md)
+- [redshiftIntegration](./redshiftIntegration.java.md)
 - [redshiftLogging](./redshiftLogging.java.md)
 - [redshiftParameterGroup](./redshiftParameterGroup.java.md)
 - [redshiftPartner](./redshiftPartner.java.md)

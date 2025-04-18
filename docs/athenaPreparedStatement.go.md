@@ -4,7 +4,7 @@
 
 ### AthenaPreparedStatement <a name="AthenaPreparedStatement" id="@cdktf/provider-aws.athenaPreparedStatement.AthenaPreparedStatement"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/athena_prepared_statement aws_athena_prepared_statement}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/athena_prepared_statement aws_athena_prepared_statement}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.athenaPreparedStatement.AthenaPreparedStatement.Initializer"></a>
 
@@ -501,7 +501,7 @@ The construct id used in the generated config for the AthenaPreparedStatement to
 
 The id of the existing AthenaPreparedStatement that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/athena_prepared_statement#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/athena_prepared_statement#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -863,11 +863,11 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/athenapreparedstatement"
 | <code><a href="#@cdktf/provider-aws.athenaPreparedStatement.AthenaPreparedStatementConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.athenaPreparedStatement.AthenaPreparedStatementConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.athenaPreparedStatement.AthenaPreparedStatementConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.athenaPreparedStatement.AthenaPreparedStatementConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/athena_prepared_statement#name AthenaPreparedStatement#name}. |
-| <code><a href="#@cdktf/provider-aws.athenaPreparedStatement.AthenaPreparedStatementConfig.property.queryStatement">QueryStatement</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/athena_prepared_statement#query_statement AthenaPreparedStatement#query_statement}. |
-| <code><a href="#@cdktf/provider-aws.athenaPreparedStatement.AthenaPreparedStatementConfig.property.workgroup">Workgroup</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/athena_prepared_statement#workgroup AthenaPreparedStatement#workgroup}. |
-| <code><a href="#@cdktf/provider-aws.athenaPreparedStatement.AthenaPreparedStatementConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/athena_prepared_statement#description AthenaPreparedStatement#description}. |
-| <code><a href="#@cdktf/provider-aws.athenaPreparedStatement.AthenaPreparedStatementConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/athena_prepared_statement#id AthenaPreparedStatement#id}. |
+| <code><a href="#@cdktf/provider-aws.athenaPreparedStatement.AthenaPreparedStatementConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/athena_prepared_statement#name AthenaPreparedStatement#name}. |
+| <code><a href="#@cdktf/provider-aws.athenaPreparedStatement.AthenaPreparedStatementConfig.property.queryStatement">QueryStatement</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/athena_prepared_statement#query_statement AthenaPreparedStatement#query_statement}. |
+| <code><a href="#@cdktf/provider-aws.athenaPreparedStatement.AthenaPreparedStatementConfig.property.workgroup">Workgroup</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/athena_prepared_statement#workgroup AthenaPreparedStatement#workgroup}. |
+| <code><a href="#@cdktf/provider-aws.athenaPreparedStatement.AthenaPreparedStatementConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/athena_prepared_statement#description AthenaPreparedStatement#description}. |
+| <code><a href="#@cdktf/provider-aws.athenaPreparedStatement.AthenaPreparedStatementConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/athena_prepared_statement#id AthenaPreparedStatement#id}. |
 | <code><a href="#@cdktf/provider-aws.athenaPreparedStatement.AthenaPreparedStatementConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-aws.athenaPreparedStatement.AthenaPreparedStatementTimeouts">AthenaPreparedStatementTimeouts</a></code> | timeouts block. |
 
 ---
@@ -950,7 +950,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/athena_prepared_statement#name AthenaPreparedStatement#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/athena_prepared_statement#name AthenaPreparedStatement#name}.
 
 ---
 
@@ -962,7 +962,7 @@ QueryStatement *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/athena_prepared_statement#query_statement AthenaPreparedStatement#query_statement}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/athena_prepared_statement#query_statement AthenaPreparedStatement#query_statement}.
 
 ---
 
@@ -974,7 +974,7 @@ Workgroup *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/athena_prepared_statement#workgroup AthenaPreparedStatement#workgroup}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/athena_prepared_statement#workgroup AthenaPreparedStatement#workgroup}.
 
 ---
 
@@ -986,7 +986,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/athena_prepared_statement#description AthenaPreparedStatement#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/athena_prepared_statement#description AthenaPreparedStatement#description}.
 
 ---
 
@@ -998,7 +998,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/athena_prepared_statement#id AthenaPreparedStatement#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/athena_prepared_statement#id AthenaPreparedStatement#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1015,7 +1015,7 @@ Timeouts AthenaPreparedStatementTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/athena_prepared_statement#timeouts AthenaPreparedStatement#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/athena_prepared_statement#timeouts AthenaPreparedStatement#timeouts}
 
 ---
 
@@ -1037,9 +1037,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/athenapreparedstatement"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.athenaPreparedStatement.AthenaPreparedStatementTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/athena_prepared_statement#create AthenaPreparedStatement#create}. |
-| <code><a href="#@cdktf/provider-aws.athenaPreparedStatement.AthenaPreparedStatementTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/athena_prepared_statement#delete AthenaPreparedStatement#delete}. |
-| <code><a href="#@cdktf/provider-aws.athenaPreparedStatement.AthenaPreparedStatementTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/athena_prepared_statement#update AthenaPreparedStatement#update}. |
+| <code><a href="#@cdktf/provider-aws.athenaPreparedStatement.AthenaPreparedStatementTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/athena_prepared_statement#create AthenaPreparedStatement#create}. |
+| <code><a href="#@cdktf/provider-aws.athenaPreparedStatement.AthenaPreparedStatementTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/athena_prepared_statement#delete AthenaPreparedStatement#delete}. |
+| <code><a href="#@cdktf/provider-aws.athenaPreparedStatement.AthenaPreparedStatementTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/athena_prepared_statement#update AthenaPreparedStatement#update}. |
 
 ---
 
@@ -1051,7 +1051,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/athena_prepared_statement#create AthenaPreparedStatement#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/athena_prepared_statement#create AthenaPreparedStatement#create}.
 
 ---
 
@@ -1063,7 +1063,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/athena_prepared_statement#delete AthenaPreparedStatement#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/athena_prepared_statement#delete AthenaPreparedStatement#delete}.
 
 ---
 
@@ -1075,7 +1075,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/athena_prepared_statement#update AthenaPreparedStatement#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/athena_prepared_statement#update AthenaPreparedStatement#update}.
 
 ---
 

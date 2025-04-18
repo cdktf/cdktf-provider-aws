@@ -1677,6 +1677,7 @@ The following submodules are available:
 - [redshiftEventSubscription](./redshiftEventSubscription.csharp.md)
 - [redshiftHsmClientCertificate](./redshiftHsmClientCertificate.csharp.md)
 - [redshiftHsmConfiguration](./redshiftHsmConfiguration.csharp.md)
+- [redshiftIntegration](./redshiftIntegration.csharp.md)
 - [redshiftLogging](./redshiftLogging.csharp.md)
 - [redshiftParameterGroup](./redshiftParameterGroup.csharp.md)
 - [redshiftPartner](./redshiftPartner.csharp.md)

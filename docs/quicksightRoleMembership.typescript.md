@@ -4,7 +4,7 @@
 
 ### QuicksightRoleMembership <a name="QuicksightRoleMembership" id="@cdktf/provider-aws.quicksightRoleMembership.QuicksightRoleMembership"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/quicksight_role_membership aws_quicksight_role_membership}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/quicksight_role_membership aws_quicksight_role_membership}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightRoleMembership.QuicksightRoleMembership.Initializer"></a>
 
@@ -481,7 +481,7 @@ The construct id used in the generated config for the QuicksightRoleMembership t
 
 The id of the existing QuicksightRoleMembership that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/quicksight_role_membership#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/quicksight_role_membership#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -785,10 +785,10 @@ const quicksightRoleMembershipConfig: quicksightRoleMembership.QuicksightRoleMem
 | <code><a href="#@cdktf/provider-aws.quicksightRoleMembership.QuicksightRoleMembershipConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.quicksightRoleMembership.QuicksightRoleMembershipConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.quicksightRoleMembership.QuicksightRoleMembershipConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.quicksightRoleMembership.QuicksightRoleMembershipConfig.property.memberName">memberName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/quicksight_role_membership#member_name QuicksightRoleMembership#member_name}. |
-| <code><a href="#@cdktf/provider-aws.quicksightRoleMembership.QuicksightRoleMembershipConfig.property.role">role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/quicksight_role_membership#role QuicksightRoleMembership#role}. |
-| <code><a href="#@cdktf/provider-aws.quicksightRoleMembership.QuicksightRoleMembershipConfig.property.awsAccountId">awsAccountId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/quicksight_role_membership#aws_account_id QuicksightRoleMembership#aws_account_id}. |
-| <code><a href="#@cdktf/provider-aws.quicksightRoleMembership.QuicksightRoleMembershipConfig.property.namespace">namespace</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/quicksight_role_membership#namespace QuicksightRoleMembership#namespace}. |
+| <code><a href="#@cdktf/provider-aws.quicksightRoleMembership.QuicksightRoleMembershipConfig.property.memberName">memberName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/quicksight_role_membership#member_name QuicksightRoleMembership#member_name}. |
+| <code><a href="#@cdktf/provider-aws.quicksightRoleMembership.QuicksightRoleMembershipConfig.property.role">role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/quicksight_role_membership#role QuicksightRoleMembership#role}. |
+| <code><a href="#@cdktf/provider-aws.quicksightRoleMembership.QuicksightRoleMembershipConfig.property.awsAccountId">awsAccountId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/quicksight_role_membership#aws_account_id QuicksightRoleMembership#aws_account_id}. |
+| <code><a href="#@cdktf/provider-aws.quicksightRoleMembership.QuicksightRoleMembershipConfig.property.namespace">namespace</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/quicksight_role_membership#namespace QuicksightRoleMembership#namespace}. |
 
 ---
 
@@ -870,7 +870,7 @@ public readonly memberName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/quicksight_role_membership#member_name QuicksightRoleMembership#member_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/quicksight_role_membership#member_name QuicksightRoleMembership#member_name}.
 
 ---
 
@@ -882,7 +882,7 @@ public readonly role: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/quicksight_role_membership#role QuicksightRoleMembership#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/quicksight_role_membership#role QuicksightRoleMembership#role}.
 
 ---
 
@@ -894,7 +894,7 @@ public readonly awsAccountId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/quicksight_role_membership#aws_account_id QuicksightRoleMembership#aws_account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/quicksight_role_membership#aws_account_id QuicksightRoleMembership#aws_account_id}.
 
 ---
 
@@ -906,7 +906,7 @@ public readonly namespace: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/quicksight_role_membership#namespace QuicksightRoleMembership#namespace}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/quicksight_role_membership#namespace QuicksightRoleMembership#namespace}.
 
 ---
 

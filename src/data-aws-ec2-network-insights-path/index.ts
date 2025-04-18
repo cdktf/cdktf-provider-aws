@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/data-sources/ec2_network_insights_path
+// https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/data-sources/ec2_network_insights_path
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,34 +13,538 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsEc2NetworkInsightsPathConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/data-sources/ec2_network_insights_path#id DataAwsEc2NetworkInsightsPath#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/data-sources/ec2_network_insights_path#id DataAwsEc2NetworkInsightsPath#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/data-sources/ec2_network_insights_path#network_insights_path_id DataAwsEc2NetworkInsightsPath#network_insights_path_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/data-sources/ec2_network_insights_path#network_insights_path_id DataAwsEc2NetworkInsightsPath#network_insights_path_id}
   */
   readonly networkInsightsPathId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/data-sources/ec2_network_insights_path#tags DataAwsEc2NetworkInsightsPath#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/data-sources/ec2_network_insights_path#tags DataAwsEc2NetworkInsightsPath#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
   * filter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/data-sources/ec2_network_insights_path#filter DataAwsEc2NetworkInsightsPath#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/data-sources/ec2_network_insights_path#filter DataAwsEc2NetworkInsightsPath#filter}
   */
   readonly filter?: DataAwsEc2NetworkInsightsPathFilter[] | cdktf.IResolvable;
 }
+export interface DataAwsEc2NetworkInsightsPathFilterAtDestinationDestinationPortRange {
+}
+
+export function dataAwsEc2NetworkInsightsPathFilterAtDestinationDestinationPortRangeToTerraform(struct?: DataAwsEc2NetworkInsightsPathFilterAtDestinationDestinationPortRange): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataAwsEc2NetworkInsightsPathFilterAtDestinationDestinationPortRangeToHclTerraform(struct?: DataAwsEc2NetworkInsightsPathFilterAtDestinationDestinationPortRange): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataAwsEc2NetworkInsightsPathFilterAtDestinationDestinationPortRangeOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsEc2NetworkInsightsPathFilterAtDestinationDestinationPortRange | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsEc2NetworkInsightsPathFilterAtDestinationDestinationPortRange | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // from_port - computed: true, optional: false, required: false
+  public get fromPort() {
+    return this.getNumberAttribute('from_port');
+  }
+
+  // to_port - computed: true, optional: false, required: false
+  public get toPort() {
+    return this.getNumberAttribute('to_port');
+  }
+}
+
+export class DataAwsEc2NetworkInsightsPathFilterAtDestinationDestinationPortRangeList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsEc2NetworkInsightsPathFilterAtDestinationDestinationPortRangeOutputReference {
+    return new DataAwsEc2NetworkInsightsPathFilterAtDestinationDestinationPortRangeOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataAwsEc2NetworkInsightsPathFilterAtDestinationSourcePortRange {
+}
+
+export function dataAwsEc2NetworkInsightsPathFilterAtDestinationSourcePortRangeToTerraform(struct?: DataAwsEc2NetworkInsightsPathFilterAtDestinationSourcePortRange): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataAwsEc2NetworkInsightsPathFilterAtDestinationSourcePortRangeToHclTerraform(struct?: DataAwsEc2NetworkInsightsPathFilterAtDestinationSourcePortRange): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataAwsEc2NetworkInsightsPathFilterAtDestinationSourcePortRangeOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsEc2NetworkInsightsPathFilterAtDestinationSourcePortRange | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsEc2NetworkInsightsPathFilterAtDestinationSourcePortRange | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // from_port - computed: true, optional: false, required: false
+  public get fromPort() {
+    return this.getNumberAttribute('from_port');
+  }
+
+  // to_port - computed: true, optional: false, required: false
+  public get toPort() {
+    return this.getNumberAttribute('to_port');
+  }
+}
+
+export class DataAwsEc2NetworkInsightsPathFilterAtDestinationSourcePortRangeList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsEc2NetworkInsightsPathFilterAtDestinationSourcePortRangeOutputReference {
+    return new DataAwsEc2NetworkInsightsPathFilterAtDestinationSourcePortRangeOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataAwsEc2NetworkInsightsPathFilterAtDestination {
+}
+
+export function dataAwsEc2NetworkInsightsPathFilterAtDestinationToTerraform(struct?: DataAwsEc2NetworkInsightsPathFilterAtDestination): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataAwsEc2NetworkInsightsPathFilterAtDestinationToHclTerraform(struct?: DataAwsEc2NetworkInsightsPathFilterAtDestination): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataAwsEc2NetworkInsightsPathFilterAtDestinationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsEc2NetworkInsightsPathFilterAtDestination | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsEc2NetworkInsightsPathFilterAtDestination | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // destination_address - computed: true, optional: false, required: false
+  public get destinationAddress() {
+    return this.getStringAttribute('destination_address');
+  }
+
+  // destination_port_range - computed: true, optional: false, required: false
+  private _destinationPortRange = new DataAwsEc2NetworkInsightsPathFilterAtDestinationDestinationPortRangeList(this, "destination_port_range", false);
+  public get destinationPortRange() {
+    return this._destinationPortRange;
+  }
+
+  // source_address - computed: true, optional: false, required: false
+  public get sourceAddress() {
+    return this.getStringAttribute('source_address');
+  }
+
+  // source_port_range - computed: true, optional: false, required: false
+  private _sourcePortRange = new DataAwsEc2NetworkInsightsPathFilterAtDestinationSourcePortRangeList(this, "source_port_range", false);
+  public get sourcePortRange() {
+    return this._sourcePortRange;
+  }
+}
+
+export class DataAwsEc2NetworkInsightsPathFilterAtDestinationList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsEc2NetworkInsightsPathFilterAtDestinationOutputReference {
+    return new DataAwsEc2NetworkInsightsPathFilterAtDestinationOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataAwsEc2NetworkInsightsPathFilterAtSourceDestinationPortRange {
+}
+
+export function dataAwsEc2NetworkInsightsPathFilterAtSourceDestinationPortRangeToTerraform(struct?: DataAwsEc2NetworkInsightsPathFilterAtSourceDestinationPortRange): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataAwsEc2NetworkInsightsPathFilterAtSourceDestinationPortRangeToHclTerraform(struct?: DataAwsEc2NetworkInsightsPathFilterAtSourceDestinationPortRange): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataAwsEc2NetworkInsightsPathFilterAtSourceDestinationPortRangeOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsEc2NetworkInsightsPathFilterAtSourceDestinationPortRange | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsEc2NetworkInsightsPathFilterAtSourceDestinationPortRange | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // from_port - computed: true, optional: false, required: false
+  public get fromPort() {
+    return this.getNumberAttribute('from_port');
+  }
+
+  // to_port - computed: true, optional: false, required: false
+  public get toPort() {
+    return this.getNumberAttribute('to_port');
+  }
+}
+
+export class DataAwsEc2NetworkInsightsPathFilterAtSourceDestinationPortRangeList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsEc2NetworkInsightsPathFilterAtSourceDestinationPortRangeOutputReference {
+    return new DataAwsEc2NetworkInsightsPathFilterAtSourceDestinationPortRangeOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataAwsEc2NetworkInsightsPathFilterAtSourceSourcePortRange {
+}
+
+export function dataAwsEc2NetworkInsightsPathFilterAtSourceSourcePortRangeToTerraform(struct?: DataAwsEc2NetworkInsightsPathFilterAtSourceSourcePortRange): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataAwsEc2NetworkInsightsPathFilterAtSourceSourcePortRangeToHclTerraform(struct?: DataAwsEc2NetworkInsightsPathFilterAtSourceSourcePortRange): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataAwsEc2NetworkInsightsPathFilterAtSourceSourcePortRangeOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsEc2NetworkInsightsPathFilterAtSourceSourcePortRange | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsEc2NetworkInsightsPathFilterAtSourceSourcePortRange | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // from_port - computed: true, optional: false, required: false
+  public get fromPort() {
+    return this.getNumberAttribute('from_port');
+  }
+
+  // to_port - computed: true, optional: false, required: false
+  public get toPort() {
+    return this.getNumberAttribute('to_port');
+  }
+}
+
+export class DataAwsEc2NetworkInsightsPathFilterAtSourceSourcePortRangeList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsEc2NetworkInsightsPathFilterAtSourceSourcePortRangeOutputReference {
+    return new DataAwsEc2NetworkInsightsPathFilterAtSourceSourcePortRangeOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataAwsEc2NetworkInsightsPathFilterAtSource {
+}
+
+export function dataAwsEc2NetworkInsightsPathFilterAtSourceToTerraform(struct?: DataAwsEc2NetworkInsightsPathFilterAtSource): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataAwsEc2NetworkInsightsPathFilterAtSourceToHclTerraform(struct?: DataAwsEc2NetworkInsightsPathFilterAtSource): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataAwsEc2NetworkInsightsPathFilterAtSourceOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsEc2NetworkInsightsPathFilterAtSource | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsEc2NetworkInsightsPathFilterAtSource | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // destination_address - computed: true, optional: false, required: false
+  public get destinationAddress() {
+    return this.getStringAttribute('destination_address');
+  }
+
+  // destination_port_range - computed: true, optional: false, required: false
+  private _destinationPortRange = new DataAwsEc2NetworkInsightsPathFilterAtSourceDestinationPortRangeList(this, "destination_port_range", false);
+  public get destinationPortRange() {
+    return this._destinationPortRange;
+  }
+
+  // source_address - computed: true, optional: false, required: false
+  public get sourceAddress() {
+    return this.getStringAttribute('source_address');
+  }
+
+  // source_port_range - computed: true, optional: false, required: false
+  private _sourcePortRange = new DataAwsEc2NetworkInsightsPathFilterAtSourceSourcePortRangeList(this, "source_port_range", false);
+  public get sourcePortRange() {
+    return this._sourcePortRange;
+  }
+}
+
+export class DataAwsEc2NetworkInsightsPathFilterAtSourceList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsEc2NetworkInsightsPathFilterAtSourceOutputReference {
+    return new DataAwsEc2NetworkInsightsPathFilterAtSourceOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface DataAwsEc2NetworkInsightsPathFilter {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/data-sources/ec2_network_insights_path#name DataAwsEc2NetworkInsightsPath#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/data-sources/ec2_network_insights_path#name DataAwsEc2NetworkInsightsPath#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/data-sources/ec2_network_insights_path#values DataAwsEc2NetworkInsightsPath#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/data-sources/ec2_network_insights_path#values DataAwsEc2NetworkInsightsPath#values}
   */
   readonly values: string[];
 }
@@ -179,7 +683,7 @@ export class DataAwsEc2NetworkInsightsPathFilterList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/data-sources/ec2_network_insights_path aws_ec2_network_insights_path}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/data-sources/ec2_network_insights_path aws_ec2_network_insights_path}
 */
 export class DataAwsEc2NetworkInsightsPath extends cdktf.TerraformDataSource {
 
@@ -195,7 +699,7 @@ export class DataAwsEc2NetworkInsightsPath extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataAwsEc2NetworkInsightsPath resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsEc2NetworkInsightsPath to import
-  * @param importFromId The id of the existing DataAwsEc2NetworkInsightsPath that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/data-sources/ec2_network_insights_path#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsEc2NetworkInsightsPath that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/data-sources/ec2_network_insights_path#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsEc2NetworkInsightsPath to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -207,7 +711,7 @@ export class DataAwsEc2NetworkInsightsPath extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/data-sources/ec2_network_insights_path aws_ec2_network_insights_path} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/data-sources/ec2_network_insights_path aws_ec2_network_insights_path} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -218,7 +722,7 @@ export class DataAwsEc2NetworkInsightsPath extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_ec2_network_insights_path',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.94.1',
+        providerVersion: '5.95.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -262,6 +766,18 @@ export class DataAwsEc2NetworkInsightsPath extends cdktf.TerraformDataSource {
   // destination_port - computed: true, optional: false, required: false
   public get destinationPort() {
     return this.getNumberAttribute('destination_port');
+  }
+
+  // filter_at_destination - computed: true, optional: false, required: false
+  private _filterAtDestination = new DataAwsEc2NetworkInsightsPathFilterAtDestinationList(this, "filter_at_destination", false);
+  public get filterAtDestination() {
+    return this._filterAtDestination;
+  }
+
+  // filter_at_source - computed: true, optional: false, required: false
+  private _filterAtSource = new DataAwsEc2NetworkInsightsPathFilterAtSourceList(this, "filter_at_source", false);
+  public get filterAtSource() {
+    return this._filterAtSource;
   }
 
   // id - computed: true, optional: true, required: false
