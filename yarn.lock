@@ -235,9 +235,9 @@
     glob "10.4.5"
 
 "@cdktf/provider-project@^0.6.0":
-  version "0.6.53"
-  resolved "https://registry.yarnpkg.com/@cdktf/provider-project/-/provider-project-0.6.53.tgz#f091928ab87e1291ef69390550de0ba3f7f3fa0d"
-  integrity sha512-pgCB8VqFqZPqj888uI0eu7ftA4pML16MzSqZ8BmVNy63s8X/dkqe1bxr1wj+rdht+/t8uinVCcdS/UUOQmkiaw==
+  version "0.6.54"
+  resolved "https://registry.yarnpkg.com/@cdktf/provider-project/-/provider-project-0.6.54.tgz#58491129b647d9b75ae3a9b3080750a9bbe908ae"
+  integrity sha512-tW58K/OJZBDogttARibn2lGGiCA2UfOVKaLvL3hAEPdm+SVbr0poNfYrtt+ZDtiXIuezbAirrCItTTLFH6Soyw==
   dependencies:
     change-case "^4.1.2"
     fs-extra "^10.1.0"
@@ -4561,9 +4561,9 @@ typedarray@^0.0.6:
   integrity sha512-/aCDEGatGvZ2BIk+HmLf4ifCJFwvKFNb9/JeZPMulfgFracn9QFcAf5GO8B/mweUjSoblS5In0cWhqpfs/5PQA==
 
 typescript@next:
-  version "5.9.0-dev.20250417"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.9.0-dev.20250417.tgz#6be817dd48a3297e84416db6d8522fa1d0301e65"
-  integrity sha512-1/Lqu1vRxNv1wOBoUQMu/z8jsFmPGGZSaSuaEWRWJVcQy7Pxoy16Zil3pzhLdw+C6Jx30iq1IcsCn8ZmUfUl+A==
+  version "5.9.0-dev.20250420"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.9.0-dev.20250420.tgz#76f8278941233ae0b3180d9048c1e8f5edafecb9"
+  integrity sha512-ppWgSCFU8kNrq4UMwG25rWc4zi15LI0xi7r6UPE0Alyl5usK/ghKmZHGHnHvm+N0um2VwFkacUbUwKYeAXS2bw==
 
 typescript@~5.4:
   version "5.4.5"
