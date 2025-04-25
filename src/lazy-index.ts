@@ -1751,6 +1751,7 @@ Object.defineProperty(exports, 'dataAwsElbServiceAccount', { get: function () { 
 Object.defineProperty(exports, 'dataAwsEmrReleaseLabels', { get: function () { return require('./data-aws-emr-release-labels'); } });
 Object.defineProperty(exports, 'dataAwsEmrSupportedInstanceTypes', { get: function () { return require('./data-aws-emr-supported-instance-types'); } });
 Object.defineProperty(exports, 'dataAwsEmrcontainersVirtualCluster', { get: function () { return require('./data-aws-emrcontainers-virtual-cluster'); } });
+Object.defineProperty(exports, 'dataAwsFisExperimentTemplates', { get: function () { return require('./data-aws-fis-experiment-templates'); } });
 Object.defineProperty(exports, 'dataAwsFsxOntapFileSystem', { get: function () { return require('./data-aws-fsx-ontap-file-system'); } });
 Object.defineProperty(exports, 'dataAwsFsxOntapStorageVirtualMachine', { get: function () { return require('./data-aws-fsx-ontap-storage-virtual-machine'); } });
 Object.defineProperty(exports, 'dataAwsFsxOntapStorageVirtualMachines', { get: function () { return require('./data-aws-fsx-ontap-storage-virtual-machines'); } });
@@ -2071,6 +2072,7 @@ Object.defineProperty(exports, 'dataAwsVerifiedpermissionsPolicyStore', { get: f
 Object.defineProperty(exports, 'dataAwsVpc', { get: function () { return require('./data-aws-vpc'); } });
 Object.defineProperty(exports, 'dataAwsVpcDhcpOptions', { get: function () { return require('./data-aws-vpc-dhcp-options'); } });
 Object.defineProperty(exports, 'dataAwsVpcEndpoint', { get: function () { return require('./data-aws-vpc-endpoint'); } });
+Object.defineProperty(exports, 'dataAwsVpcEndpointAssociations', { get: function () { return require('./data-aws-vpc-endpoint-associations'); } });
 Object.defineProperty(exports, 'dataAwsVpcEndpointService', { get: function () { return require('./data-aws-vpc-endpoint-service'); } });
 Object.defineProperty(exports, 'dataAwsVpcIpam', { get: function () { return require('./data-aws-vpc-ipam'); } });
 Object.defineProperty(exports, 'dataAwsVpcIpamPool', { get: function () { return require('./data-aws-vpc-ipam-pool'); } });

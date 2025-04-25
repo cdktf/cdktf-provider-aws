@@ -4,7 +4,7 @@
 
 ### DetectiveMember <a name="DetectiveMember" id="@cdktf/provider-aws.detectiveMember.DetectiveMember"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/detective_member aws_detective_member}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/detective_member aws_detective_member}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.detectiveMember.DetectiveMember.Initializer"></a>
 
@@ -488,7 +488,7 @@ The construct id used in the generated config for the DetectiveMember to import.
 
 The id of the existing DetectiveMember that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/detective_member#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/detective_member#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -916,12 +916,12 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/detectivemember"
 | <code><a href="#@cdktf/provider-aws.detectiveMember.DetectiveMemberConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.detectiveMember.DetectiveMemberConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.detectiveMember.DetectiveMemberConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.detectiveMember.DetectiveMemberConfig.property.accountId">AccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/detective_member#account_id DetectiveMember#account_id}. |
-| <code><a href="#@cdktf/provider-aws.detectiveMember.DetectiveMemberConfig.property.emailAddress">EmailAddress</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/detective_member#email_address DetectiveMember#email_address}. |
-| <code><a href="#@cdktf/provider-aws.detectiveMember.DetectiveMemberConfig.property.graphArn">GraphArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/detective_member#graph_arn DetectiveMember#graph_arn}. |
-| <code><a href="#@cdktf/provider-aws.detectiveMember.DetectiveMemberConfig.property.disableEmailNotification">DisableEmailNotification</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/detective_member#disable_email_notification DetectiveMember#disable_email_notification}. |
-| <code><a href="#@cdktf/provider-aws.detectiveMember.DetectiveMemberConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/detective_member#id DetectiveMember#id}. |
-| <code><a href="#@cdktf/provider-aws.detectiveMember.DetectiveMemberConfig.property.message">Message</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/detective_member#message DetectiveMember#message}. |
+| <code><a href="#@cdktf/provider-aws.detectiveMember.DetectiveMemberConfig.property.accountId">AccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/detective_member#account_id DetectiveMember#account_id}. |
+| <code><a href="#@cdktf/provider-aws.detectiveMember.DetectiveMemberConfig.property.emailAddress">EmailAddress</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/detective_member#email_address DetectiveMember#email_address}. |
+| <code><a href="#@cdktf/provider-aws.detectiveMember.DetectiveMemberConfig.property.graphArn">GraphArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/detective_member#graph_arn DetectiveMember#graph_arn}. |
+| <code><a href="#@cdktf/provider-aws.detectiveMember.DetectiveMemberConfig.property.disableEmailNotification">DisableEmailNotification</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/detective_member#disable_email_notification DetectiveMember#disable_email_notification}. |
+| <code><a href="#@cdktf/provider-aws.detectiveMember.DetectiveMemberConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/detective_member#id DetectiveMember#id}. |
+| <code><a href="#@cdktf/provider-aws.detectiveMember.DetectiveMemberConfig.property.message">Message</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/detective_member#message DetectiveMember#message}. |
 
 ---
 
@@ -1003,7 +1003,7 @@ AccountId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/detective_member#account_id DetectiveMember#account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/detective_member#account_id DetectiveMember#account_id}.
 
 ---
 
@@ -1015,7 +1015,7 @@ EmailAddress *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/detective_member#email_address DetectiveMember#email_address}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/detective_member#email_address DetectiveMember#email_address}.
 
 ---
 
@@ -1027,7 +1027,7 @@ GraphArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/detective_member#graph_arn DetectiveMember#graph_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/detective_member#graph_arn DetectiveMember#graph_arn}.
 
 ---
 
@@ -1039,7 +1039,7 @@ DisableEmailNotification interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/detective_member#disable_email_notification DetectiveMember#disable_email_notification}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/detective_member#disable_email_notification DetectiveMember#disable_email_notification}.
 
 ---
 
@@ -1051,7 +1051,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/detective_member#id DetectiveMember#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/detective_member#id DetectiveMember#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1066,7 +1066,7 @@ Message *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/detective_member#message DetectiveMember#message}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/detective_member#message DetectiveMember#message}.
 
 ---
 

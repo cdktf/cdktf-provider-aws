@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/securityhub_standards_control_association
+// https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/securityhub_standards_control_association
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,25 +13,25 @@ import * as cdktf from 'cdktf';
 
 export interface SecurityhubStandardsControlAssociationConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/securityhub_standards_control_association#association_status SecurityhubStandardsControlAssociation#association_status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/securityhub_standards_control_association#association_status SecurityhubStandardsControlAssociation#association_status}
   */
   readonly associationStatus: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/securityhub_standards_control_association#security_control_id SecurityhubStandardsControlAssociation#security_control_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/securityhub_standards_control_association#security_control_id SecurityhubStandardsControlAssociation#security_control_id}
   */
   readonly securityControlId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/securityhub_standards_control_association#standards_arn SecurityhubStandardsControlAssociation#standards_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/securityhub_standards_control_association#standards_arn SecurityhubStandardsControlAssociation#standards_arn}
   */
   readonly standardsArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/securityhub_standards_control_association#updated_reason SecurityhubStandardsControlAssociation#updated_reason}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/securityhub_standards_control_association#updated_reason SecurityhubStandardsControlAssociation#updated_reason}
   */
   readonly updatedReason?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/securityhub_standards_control_association aws_securityhub_standards_control_association}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/securityhub_standards_control_association aws_securityhub_standards_control_association}
 */
 export class SecurityhubStandardsControlAssociation extends cdktf.TerraformResource {
 
@@ -47,7 +47,7 @@ export class SecurityhubStandardsControlAssociation extends cdktf.TerraformResou
   * Generates CDKTF code for importing a SecurityhubStandardsControlAssociation resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SecurityhubStandardsControlAssociation to import
-  * @param importFromId The id of the existing SecurityhubStandardsControlAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/securityhub_standards_control_association#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing SecurityhubStandardsControlAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/securityhub_standards_control_association#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SecurityhubStandardsControlAssociation to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -59,7 +59,7 @@ export class SecurityhubStandardsControlAssociation extends cdktf.TerraformResou
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/securityhub_standards_control_association aws_securityhub_standards_control_association} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/securityhub_standards_control_association aws_securityhub_standards_control_association} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -70,7 +70,7 @@ export class SecurityhubStandardsControlAssociation extends cdktf.TerraformResou
       terraformResourceType: 'aws_securityhub_standards_control_association',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.95.0',
+        providerVersion: '5.96.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/comprehend_entity_recognizer
+// https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/comprehend_entity_recognizer
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,74 +13,74 @@ import * as cdktf from 'cdktf';
 
 export interface ComprehendEntityRecognizerConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/comprehend_entity_recognizer#data_access_role_arn ComprehendEntityRecognizer#data_access_role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/comprehend_entity_recognizer#data_access_role_arn ComprehendEntityRecognizer#data_access_role_arn}
   */
   readonly dataAccessRoleArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/comprehend_entity_recognizer#id ComprehendEntityRecognizer#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/comprehend_entity_recognizer#id ComprehendEntityRecognizer#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/comprehend_entity_recognizer#language_code ComprehendEntityRecognizer#language_code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/comprehend_entity_recognizer#language_code ComprehendEntityRecognizer#language_code}
   */
   readonly languageCode: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/comprehend_entity_recognizer#model_kms_key_id ComprehendEntityRecognizer#model_kms_key_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/comprehend_entity_recognizer#model_kms_key_id ComprehendEntityRecognizer#model_kms_key_id}
   */
   readonly modelKmsKeyId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/comprehend_entity_recognizer#name ComprehendEntityRecognizer#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/comprehend_entity_recognizer#name ComprehendEntityRecognizer#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/comprehend_entity_recognizer#tags ComprehendEntityRecognizer#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/comprehend_entity_recognizer#tags ComprehendEntityRecognizer#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/comprehend_entity_recognizer#tags_all ComprehendEntityRecognizer#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/comprehend_entity_recognizer#tags_all ComprehendEntityRecognizer#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/comprehend_entity_recognizer#version_name ComprehendEntityRecognizer#version_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/comprehend_entity_recognizer#version_name ComprehendEntityRecognizer#version_name}
   */
   readonly versionName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/comprehend_entity_recognizer#version_name_prefix ComprehendEntityRecognizer#version_name_prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/comprehend_entity_recognizer#version_name_prefix ComprehendEntityRecognizer#version_name_prefix}
   */
   readonly versionNamePrefix?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/comprehend_entity_recognizer#volume_kms_key_id ComprehendEntityRecognizer#volume_kms_key_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/comprehend_entity_recognizer#volume_kms_key_id ComprehendEntityRecognizer#volume_kms_key_id}
   */
   readonly volumeKmsKeyId?: string;
   /**
   * input_data_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/comprehend_entity_recognizer#input_data_config ComprehendEntityRecognizer#input_data_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/comprehend_entity_recognizer#input_data_config ComprehendEntityRecognizer#input_data_config}
   */
   readonly inputDataConfig: ComprehendEntityRecognizerInputDataConfig;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/comprehend_entity_recognizer#timeouts ComprehendEntityRecognizer#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/comprehend_entity_recognizer#timeouts ComprehendEntityRecognizer#timeouts}
   */
   readonly timeouts?: ComprehendEntityRecognizerTimeouts;
   /**
   * vpc_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/comprehend_entity_recognizer#vpc_config ComprehendEntityRecognizer#vpc_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/comprehend_entity_recognizer#vpc_config ComprehendEntityRecognizer#vpc_config}
   */
   readonly vpcConfig?: ComprehendEntityRecognizerVpcConfig;
 }
 export interface ComprehendEntityRecognizerInputDataConfigAnnotations {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/comprehend_entity_recognizer#s3_uri ComprehendEntityRecognizer#s3_uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/comprehend_entity_recognizer#s3_uri ComprehendEntityRecognizer#s3_uri}
   */
   readonly s3Uri: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/comprehend_entity_recognizer#test_s3_uri ComprehendEntityRecognizer#test_s3_uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/comprehend_entity_recognizer#test_s3_uri ComprehendEntityRecognizer#test_s3_uri}
   */
   readonly testS3Uri?: string;
 }
@@ -190,27 +190,27 @@ export class ComprehendEntityRecognizerInputDataConfigAnnotationsOutputReference
 }
 export interface ComprehendEntityRecognizerInputDataConfigAugmentedManifests {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/comprehend_entity_recognizer#annotation_data_s3_uri ComprehendEntityRecognizer#annotation_data_s3_uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/comprehend_entity_recognizer#annotation_data_s3_uri ComprehendEntityRecognizer#annotation_data_s3_uri}
   */
   readonly annotationDataS3Uri?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/comprehend_entity_recognizer#attribute_names ComprehendEntityRecognizer#attribute_names}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/comprehend_entity_recognizer#attribute_names ComprehendEntityRecognizer#attribute_names}
   */
   readonly attributeNames: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/comprehend_entity_recognizer#document_type ComprehendEntityRecognizer#document_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/comprehend_entity_recognizer#document_type ComprehendEntityRecognizer#document_type}
   */
   readonly documentType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/comprehend_entity_recognizer#s3_uri ComprehendEntityRecognizer#s3_uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/comprehend_entity_recognizer#s3_uri ComprehendEntityRecognizer#s3_uri}
   */
   readonly s3Uri: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/comprehend_entity_recognizer#source_documents_s3_uri ComprehendEntityRecognizer#source_documents_s3_uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/comprehend_entity_recognizer#source_documents_s3_uri ComprehendEntityRecognizer#source_documents_s3_uri}
   */
   readonly sourceDocumentsS3Uri?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/comprehend_entity_recognizer#split ComprehendEntityRecognizer#split}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/comprehend_entity_recognizer#split ComprehendEntityRecognizer#split}
   */
   readonly split?: string;
 }
@@ -465,15 +465,15 @@ export class ComprehendEntityRecognizerInputDataConfigAugmentedManifestsList ext
 }
 export interface ComprehendEntityRecognizerInputDataConfigDocuments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/comprehend_entity_recognizer#input_format ComprehendEntityRecognizer#input_format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/comprehend_entity_recognizer#input_format ComprehendEntityRecognizer#input_format}
   */
   readonly inputFormat?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/comprehend_entity_recognizer#s3_uri ComprehendEntityRecognizer#s3_uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/comprehend_entity_recognizer#s3_uri ComprehendEntityRecognizer#s3_uri}
   */
   readonly s3Uri: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/comprehend_entity_recognizer#test_s3_uri ComprehendEntityRecognizer#test_s3_uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/comprehend_entity_recognizer#test_s3_uri ComprehendEntityRecognizer#test_s3_uri}
   */
   readonly testS3Uri?: string;
 }
@@ -612,7 +612,7 @@ export class ComprehendEntityRecognizerInputDataConfigDocumentsOutputReference e
 }
 export interface ComprehendEntityRecognizerInputDataConfigEntityListStruct {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/comprehend_entity_recognizer#s3_uri ComprehendEntityRecognizer#s3_uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/comprehend_entity_recognizer#s3_uri ComprehendEntityRecognizer#s3_uri}
   */
   readonly s3Uri: string;
 }
@@ -693,7 +693,7 @@ export class ComprehendEntityRecognizerInputDataConfigEntityListStructOutputRefe
 }
 export interface ComprehendEntityRecognizerInputDataConfigEntityTypes {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/comprehend_entity_recognizer#type ComprehendEntityRecognizer#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/comprehend_entity_recognizer#type ComprehendEntityRecognizer#type}
   */
   readonly type: string;
 }
@@ -806,37 +806,37 @@ export class ComprehendEntityRecognizerInputDataConfigEntityTypesList extends cd
 }
 export interface ComprehendEntityRecognizerInputDataConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/comprehend_entity_recognizer#data_format ComprehendEntityRecognizer#data_format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/comprehend_entity_recognizer#data_format ComprehendEntityRecognizer#data_format}
   */
   readonly dataFormat?: string;
   /**
   * annotations block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/comprehend_entity_recognizer#annotations ComprehendEntityRecognizer#annotations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/comprehend_entity_recognizer#annotations ComprehendEntityRecognizer#annotations}
   */
   readonly annotations?: ComprehendEntityRecognizerInputDataConfigAnnotations;
   /**
   * augmented_manifests block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/comprehend_entity_recognizer#augmented_manifests ComprehendEntityRecognizer#augmented_manifests}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/comprehend_entity_recognizer#augmented_manifests ComprehendEntityRecognizer#augmented_manifests}
   */
   readonly augmentedManifests?: ComprehendEntityRecognizerInputDataConfigAugmentedManifests[] | cdktf.IResolvable;
   /**
   * documents block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/comprehend_entity_recognizer#documents ComprehendEntityRecognizer#documents}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/comprehend_entity_recognizer#documents ComprehendEntityRecognizer#documents}
   */
   readonly documents?: ComprehendEntityRecognizerInputDataConfigDocuments;
   /**
   * entity_list block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/comprehend_entity_recognizer#entity_list ComprehendEntityRecognizer#entity_list}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/comprehend_entity_recognizer#entity_list ComprehendEntityRecognizer#entity_list}
   */
   readonly entityList?: ComprehendEntityRecognizerInputDataConfigEntityListStruct;
   /**
   * entity_types block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/comprehend_entity_recognizer#entity_types ComprehendEntityRecognizer#entity_types}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/comprehend_entity_recognizer#entity_types ComprehendEntityRecognizer#entity_types}
   */
   readonly entityTypes: ComprehendEntityRecognizerInputDataConfigEntityTypes[] | cdktf.IResolvable;
 }
@@ -1062,15 +1062,15 @@ export class ComprehendEntityRecognizerInputDataConfigOutputReference extends cd
 }
 export interface ComprehendEntityRecognizerTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/comprehend_entity_recognizer#create ComprehendEntityRecognizer#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/comprehend_entity_recognizer#create ComprehendEntityRecognizer#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/comprehend_entity_recognizer#delete ComprehendEntityRecognizer#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/comprehend_entity_recognizer#delete ComprehendEntityRecognizer#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/comprehend_entity_recognizer#update ComprehendEntityRecognizer#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/comprehend_entity_recognizer#update ComprehendEntityRecognizer#update}
   */
   readonly update?: string;
 }
@@ -1222,11 +1222,11 @@ export class ComprehendEntityRecognizerTimeoutsOutputReference extends cdktf.Com
 }
 export interface ComprehendEntityRecognizerVpcConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/comprehend_entity_recognizer#security_group_ids ComprehendEntityRecognizer#security_group_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/comprehend_entity_recognizer#security_group_ids ComprehendEntityRecognizer#security_group_ids}
   */
   readonly securityGroupIds: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/comprehend_entity_recognizer#subnets ComprehendEntityRecognizer#subnets}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/comprehend_entity_recognizer#subnets ComprehendEntityRecognizer#subnets}
   */
   readonly subnets: string[];
 }
@@ -1333,7 +1333,7 @@ export class ComprehendEntityRecognizerVpcConfigOutputReference extends cdktf.Co
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/comprehend_entity_recognizer aws_comprehend_entity_recognizer}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/comprehend_entity_recognizer aws_comprehend_entity_recognizer}
 */
 export class ComprehendEntityRecognizer extends cdktf.TerraformResource {
 
@@ -1349,7 +1349,7 @@ export class ComprehendEntityRecognizer extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ComprehendEntityRecognizer resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ComprehendEntityRecognizer to import
-  * @param importFromId The id of the existing ComprehendEntityRecognizer that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/comprehend_entity_recognizer#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ComprehendEntityRecognizer that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/comprehend_entity_recognizer#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ComprehendEntityRecognizer to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -1361,7 +1361,7 @@ export class ComprehendEntityRecognizer extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/comprehend_entity_recognizer aws_comprehend_entity_recognizer} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/comprehend_entity_recognizer aws_comprehend_entity_recognizer} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1372,7 +1372,7 @@ export class ComprehendEntityRecognizer extends cdktf.TerraformResource {
       terraformResourceType: 'aws_comprehend_entity_recognizer',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.95.0',
+        providerVersion: '5.96.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

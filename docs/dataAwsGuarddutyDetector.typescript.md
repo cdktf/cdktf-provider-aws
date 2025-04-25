@@ -4,7 +4,7 @@
 
 ### DataAwsGuarddutyDetector <a name="DataAwsGuarddutyDetector" id="@cdktf/provider-aws.dataAwsGuarddutyDetector.DataAwsGuarddutyDetector"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/data-sources/guardduty_detector aws_guardduty_detector}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/data-sources/guardduty_detector aws_guardduty_detector}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsGuarddutyDetector.DataAwsGuarddutyDetector.Initializer"></a>
 
@@ -68,6 +68,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.dataAwsGuarddutyDetector.DataAwsGuarddutyDetector.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsGuarddutyDetector.DataAwsGuarddutyDetector.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsGuarddutyDetector.DataAwsGuarddutyDetector.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsGuarddutyDetector.DataAwsGuarddutyDetector.resetTags">resetTags</a></code> | *No description.* |
 
 ---
 
@@ -269,6 +270,12 @@ public interpolationForAttribute(terraformAttribute: string): IResolvable
 public resetId(): void
 ```
 
+##### `resetTags` <a name="resetTags" id="@cdktf/provider-aws.dataAwsGuarddutyDetector.DataAwsGuarddutyDetector.resetTags"></a>
+
+```typescript
+public resetTags(): void
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -372,7 +379,7 @@ The construct id used in the generated config for the DataAwsGuarddutyDetector t
 
 The id of the existing DataAwsGuarddutyDetector that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/data-sources/guardduty_detector#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/data-sources/guardduty_detector#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -400,12 +407,15 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0
 | <code><a href="#@cdktf/provider-aws.dataAwsGuarddutyDetector.DataAwsGuarddutyDetector.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsGuarddutyDetector.DataAwsGuarddutyDetector.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsGuarddutyDetector.DataAwsGuarddutyDetector.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsGuarddutyDetector.DataAwsGuarddutyDetector.property.arn">arn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsGuarddutyDetector.DataAwsGuarddutyDetector.property.features">features</a></code> | <code><a href="#@cdktf/provider-aws.dataAwsGuarddutyDetector.DataAwsGuarddutyDetectorFeaturesList">DataAwsGuarddutyDetectorFeaturesList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsGuarddutyDetector.DataAwsGuarddutyDetector.property.findingPublishingFrequency">findingPublishingFrequency</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsGuarddutyDetector.DataAwsGuarddutyDetector.property.serviceRoleArn">serviceRoleArn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsGuarddutyDetector.DataAwsGuarddutyDetector.property.status">status</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsGuarddutyDetector.DataAwsGuarddutyDetector.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsGuarddutyDetector.DataAwsGuarddutyDetector.property.tagsInput">tagsInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsGuarddutyDetector.DataAwsGuarddutyDetector.property.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsGuarddutyDetector.DataAwsGuarddutyDetector.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 
 ---
 
@@ -531,6 +541,16 @@ public readonly provider: TerraformProvider;
 
 ---
 
+##### `arn`<sup>Required</sup> <a name="arn" id="@cdktf/provider-aws.dataAwsGuarddutyDetector.DataAwsGuarddutyDetector.property.arn"></a>
+
+```typescript
+public readonly arn: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `features`<sup>Required</sup> <a name="features" id="@cdktf/provider-aws.dataAwsGuarddutyDetector.DataAwsGuarddutyDetector.property.features"></a>
 
 ```typescript
@@ -581,6 +601,16 @@ public readonly idInput: string;
 
 ---
 
+##### `tagsInput`<sup>Optional</sup> <a name="tagsInput" id="@cdktf/provider-aws.dataAwsGuarddutyDetector.DataAwsGuarddutyDetector.property.tagsInput"></a>
+
+```typescript
+public readonly tagsInput: {[ key: string ]: string};
+```
+
+- *Type:* {[ key: string ]: string}
+
+---
+
 ##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.dataAwsGuarddutyDetector.DataAwsGuarddutyDetector.property.id"></a>
 
 ```typescript
@@ -588,6 +618,16 @@ public readonly id: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `tags`<sup>Required</sup> <a name="tags" id="@cdktf/provider-aws.dataAwsGuarddutyDetector.DataAwsGuarddutyDetector.property.tags"></a>
+
+```typescript
+public readonly tags: {[ key: string ]: string};
+```
+
+- *Type:* {[ key: string ]: string}
 
 ---
 
@@ -632,7 +672,8 @@ const dataAwsGuarddutyDetectorConfig: dataAwsGuarddutyDetector.DataAwsGuarddutyD
 | <code><a href="#@cdktf/provider-aws.dataAwsGuarddutyDetector.DataAwsGuarddutyDetectorConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsGuarddutyDetector.DataAwsGuarddutyDetectorConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsGuarddutyDetector.DataAwsGuarddutyDetectorConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsGuarddutyDetector.DataAwsGuarddutyDetectorConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/data-sources/guardduty_detector#id DataAwsGuarddutyDetector#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsGuarddutyDetector.DataAwsGuarddutyDetectorConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/data-sources/guardduty_detector#id DataAwsGuarddutyDetector#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsGuarddutyDetector.DataAwsGuarddutyDetectorConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/data-sources/guardduty_detector#tags DataAwsGuarddutyDetector#tags}. |
 
 ---
 
@@ -714,10 +755,22 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/data-sources/guardduty_detector#id DataAwsGuarddutyDetector#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/data-sources/guardduty_detector#id DataAwsGuarddutyDetector#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `tags`<sup>Optional</sup> <a name="tags" id="@cdktf/provider-aws.dataAwsGuarddutyDetector.DataAwsGuarddutyDetectorConfig.property.tags"></a>
+
+```typescript
+public readonly tags: {[ key: string ]: string};
+```
+
+- *Type:* {[ key: string ]: string}
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/data-sources/guardduty_detector#tags DataAwsGuarddutyDetector#tags}.
 
 ---
 

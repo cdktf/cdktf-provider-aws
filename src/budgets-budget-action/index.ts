@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/budgets_budget_action
+// https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/budgets_budget_action
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,76 +13,76 @@ import * as cdktf from 'cdktf';
 
 export interface BudgetsBudgetActionConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/budgets_budget_action#account_id BudgetsBudgetAction#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/budgets_budget_action#account_id BudgetsBudgetAction#account_id}
   */
   readonly accountId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/budgets_budget_action#action_type BudgetsBudgetAction#action_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/budgets_budget_action#action_type BudgetsBudgetAction#action_type}
   */
   readonly actionType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/budgets_budget_action#approval_model BudgetsBudgetAction#approval_model}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/budgets_budget_action#approval_model BudgetsBudgetAction#approval_model}
   */
   readonly approvalModel: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/budgets_budget_action#budget_name BudgetsBudgetAction#budget_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/budgets_budget_action#budget_name BudgetsBudgetAction#budget_name}
   */
   readonly budgetName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/budgets_budget_action#execution_role_arn BudgetsBudgetAction#execution_role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/budgets_budget_action#execution_role_arn BudgetsBudgetAction#execution_role_arn}
   */
   readonly executionRoleArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/budgets_budget_action#id BudgetsBudgetAction#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/budgets_budget_action#id BudgetsBudgetAction#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/budgets_budget_action#notification_type BudgetsBudgetAction#notification_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/budgets_budget_action#notification_type BudgetsBudgetAction#notification_type}
   */
   readonly notificationType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/budgets_budget_action#tags BudgetsBudgetAction#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/budgets_budget_action#tags BudgetsBudgetAction#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/budgets_budget_action#tags_all BudgetsBudgetAction#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/budgets_budget_action#tags_all BudgetsBudgetAction#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
   * action_threshold block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/budgets_budget_action#action_threshold BudgetsBudgetAction#action_threshold}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/budgets_budget_action#action_threshold BudgetsBudgetAction#action_threshold}
   */
   readonly actionThreshold: BudgetsBudgetActionActionThreshold;
   /**
   * definition block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/budgets_budget_action#definition BudgetsBudgetAction#definition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/budgets_budget_action#definition BudgetsBudgetAction#definition}
   */
   readonly definition: BudgetsBudgetActionDefinition;
   /**
   * subscriber block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/budgets_budget_action#subscriber BudgetsBudgetAction#subscriber}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/budgets_budget_action#subscriber BudgetsBudgetAction#subscriber}
   */
   readonly subscriber: BudgetsBudgetActionSubscriber[] | cdktf.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/budgets_budget_action#timeouts BudgetsBudgetAction#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/budgets_budget_action#timeouts BudgetsBudgetAction#timeouts}
   */
   readonly timeouts?: BudgetsBudgetActionTimeouts;
 }
 export interface BudgetsBudgetActionActionThreshold {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/budgets_budget_action#action_threshold_type BudgetsBudgetAction#action_threshold_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/budgets_budget_action#action_threshold_type BudgetsBudgetAction#action_threshold_type}
   */
   readonly actionThresholdType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/budgets_budget_action#action_threshold_value BudgetsBudgetAction#action_threshold_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/budgets_budget_action#action_threshold_value BudgetsBudgetAction#action_threshold_value}
   */
   readonly actionThresholdValue: number;
 }
@@ -189,19 +189,19 @@ export class BudgetsBudgetActionActionThresholdOutputReference extends cdktf.Com
 }
 export interface BudgetsBudgetActionDefinitionIamActionDefinition {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/budgets_budget_action#groups BudgetsBudgetAction#groups}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/budgets_budget_action#groups BudgetsBudgetAction#groups}
   */
   readonly groups?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/budgets_budget_action#policy_arn BudgetsBudgetAction#policy_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/budgets_budget_action#policy_arn BudgetsBudgetAction#policy_arn}
   */
   readonly policyArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/budgets_budget_action#roles BudgetsBudgetAction#roles}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/budgets_budget_action#roles BudgetsBudgetAction#roles}
   */
   readonly roles?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/budgets_budget_action#users BudgetsBudgetAction#users}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/budgets_budget_action#users BudgetsBudgetAction#users}
   */
   readonly users?: string[];
 }
@@ -369,11 +369,11 @@ export class BudgetsBudgetActionDefinitionIamActionDefinitionOutputReference ext
 }
 export interface BudgetsBudgetActionDefinitionScpActionDefinition {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/budgets_budget_action#policy_id BudgetsBudgetAction#policy_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/budgets_budget_action#policy_id BudgetsBudgetAction#policy_id}
   */
   readonly policyId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/budgets_budget_action#target_ids BudgetsBudgetAction#target_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/budgets_budget_action#target_ids BudgetsBudgetAction#target_ids}
   */
   readonly targetIds: string[];
 }
@@ -480,15 +480,15 @@ export class BudgetsBudgetActionDefinitionScpActionDefinitionOutputReference ext
 }
 export interface BudgetsBudgetActionDefinitionSsmActionDefinition {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/budgets_budget_action#action_sub_type BudgetsBudgetAction#action_sub_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/budgets_budget_action#action_sub_type BudgetsBudgetAction#action_sub_type}
   */
   readonly actionSubType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/budgets_budget_action#instance_ids BudgetsBudgetAction#instance_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/budgets_budget_action#instance_ids BudgetsBudgetAction#instance_ids}
   */
   readonly instanceIds: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/budgets_budget_action#region BudgetsBudgetAction#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/budgets_budget_action#region BudgetsBudgetAction#region}
   */
   readonly region: string;
 }
@@ -623,19 +623,19 @@ export interface BudgetsBudgetActionDefinition {
   /**
   * iam_action_definition block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/budgets_budget_action#iam_action_definition BudgetsBudgetAction#iam_action_definition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/budgets_budget_action#iam_action_definition BudgetsBudgetAction#iam_action_definition}
   */
   readonly iamActionDefinition?: BudgetsBudgetActionDefinitionIamActionDefinition;
   /**
   * scp_action_definition block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/budgets_budget_action#scp_action_definition BudgetsBudgetAction#scp_action_definition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/budgets_budget_action#scp_action_definition BudgetsBudgetAction#scp_action_definition}
   */
   readonly scpActionDefinition?: BudgetsBudgetActionDefinitionScpActionDefinition;
   /**
   * ssm_action_definition block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/budgets_budget_action#ssm_action_definition BudgetsBudgetAction#ssm_action_definition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/budgets_budget_action#ssm_action_definition BudgetsBudgetAction#ssm_action_definition}
   */
   readonly ssmActionDefinition?: BudgetsBudgetActionDefinitionSsmActionDefinition;
 }
@@ -777,11 +777,11 @@ export class BudgetsBudgetActionDefinitionOutputReference extends cdktf.ComplexO
 }
 export interface BudgetsBudgetActionSubscriber {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/budgets_budget_action#address BudgetsBudgetAction#address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/budgets_budget_action#address BudgetsBudgetAction#address}
   */
   readonly address: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/budgets_budget_action#subscription_type BudgetsBudgetAction#subscription_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/budgets_budget_action#subscription_type BudgetsBudgetAction#subscription_type}
   */
   readonly subscriptionType: string;
 }
@@ -920,15 +920,15 @@ export class BudgetsBudgetActionSubscriberList extends cdktf.ComplexList {
 }
 export interface BudgetsBudgetActionTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/budgets_budget_action#create BudgetsBudgetAction#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/budgets_budget_action#create BudgetsBudgetAction#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/budgets_budget_action#delete BudgetsBudgetAction#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/budgets_budget_action#delete BudgetsBudgetAction#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/budgets_budget_action#update BudgetsBudgetAction#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/budgets_budget_action#update BudgetsBudgetAction#update}
   */
   readonly update?: string;
 }
@@ -1080,7 +1080,7 @@ export class BudgetsBudgetActionTimeoutsOutputReference extends cdktf.ComplexObj
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/budgets_budget_action aws_budgets_budget_action}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/budgets_budget_action aws_budgets_budget_action}
 */
 export class BudgetsBudgetAction extends cdktf.TerraformResource {
 
@@ -1096,7 +1096,7 @@ export class BudgetsBudgetAction extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a BudgetsBudgetAction resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the BudgetsBudgetAction to import
-  * @param importFromId The id of the existing BudgetsBudgetAction that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/budgets_budget_action#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing BudgetsBudgetAction that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/budgets_budget_action#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the BudgetsBudgetAction to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -1108,7 +1108,7 @@ export class BudgetsBudgetAction extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/budgets_budget_action aws_budgets_budget_action} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/budgets_budget_action aws_budgets_budget_action} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1119,7 +1119,7 @@ export class BudgetsBudgetAction extends cdktf.TerraformResource {
       terraformResourceType: 'aws_budgets_budget_action',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.95.0',
+        providerVersion: '5.96.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

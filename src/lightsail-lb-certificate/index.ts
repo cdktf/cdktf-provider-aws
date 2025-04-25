@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/lightsail_lb_certificate
+// https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/lightsail_lb_certificate
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,26 +13,26 @@ import * as cdktf from 'cdktf';
 
 export interface LightsailLbCertificateConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/lightsail_lb_certificate#domain_name LightsailLbCertificate#domain_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/lightsail_lb_certificate#domain_name LightsailLbCertificate#domain_name}
   */
   readonly domainName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/lightsail_lb_certificate#id LightsailLbCertificate#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/lightsail_lb_certificate#id LightsailLbCertificate#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/lightsail_lb_certificate#lb_name LightsailLbCertificate#lb_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/lightsail_lb_certificate#lb_name LightsailLbCertificate#lb_name}
   */
   readonly lbName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/lightsail_lb_certificate#name LightsailLbCertificate#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/lightsail_lb_certificate#name LightsailLbCertificate#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/lightsail_lb_certificate#subject_alternative_names LightsailLbCertificate#subject_alternative_names}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/lightsail_lb_certificate#subject_alternative_names LightsailLbCertificate#subject_alternative_names}
   */
   readonly subjectAlternativeNames?: string[];
 }
@@ -128,7 +128,7 @@ export class LightsailLbCertificateDomainValidationRecordsList extends cdktf.Com
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/lightsail_lb_certificate aws_lightsail_lb_certificate}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/lightsail_lb_certificate aws_lightsail_lb_certificate}
 */
 export class LightsailLbCertificate extends cdktf.TerraformResource {
 
@@ -144,7 +144,7 @@ export class LightsailLbCertificate extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a LightsailLbCertificate resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the LightsailLbCertificate to import
-  * @param importFromId The id of the existing LightsailLbCertificate that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/lightsail_lb_certificate#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing LightsailLbCertificate that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/lightsail_lb_certificate#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the LightsailLbCertificate to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -156,7 +156,7 @@ export class LightsailLbCertificate extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/lightsail_lb_certificate aws_lightsail_lb_certificate} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/lightsail_lb_certificate aws_lightsail_lb_certificate} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -167,7 +167,7 @@ export class LightsailLbCertificate extends cdktf.TerraformResource {
       terraformResourceType: 'aws_lightsail_lb_certificate',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.95.0',
+        providerVersion: '5.96.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
