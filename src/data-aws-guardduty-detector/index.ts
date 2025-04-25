@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/data-sources/guardduty_detector
+// https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/data-sources/guardduty_detector
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,12 +8,16 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsGuarddutyDetectorConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/data-sources/guardduty_detector#id DataAwsGuarddutyDetector#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/data-sources/guardduty_detector#id DataAwsGuarddutyDetector#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/data-sources/guardduty_detector#tags DataAwsGuarddutyDetector#tags}
+  */
+  readonly tags?: { [key: string]: string };
 }
 export interface DataAwsGuarddutyDetectorFeaturesAdditionalConfiguration {
 }
@@ -188,7 +187,7 @@ export class DataAwsGuarddutyDetectorFeaturesList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/data-sources/guardduty_detector aws_guardduty_detector}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/data-sources/guardduty_detector aws_guardduty_detector}
 */
 export class DataAwsGuarddutyDetector extends cdktf.TerraformDataSource {
 
@@ -204,7 +203,7 @@ export class DataAwsGuarddutyDetector extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataAwsGuarddutyDetector resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsGuarddutyDetector to import
-  * @param importFromId The id of the existing DataAwsGuarddutyDetector that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/data-sources/guardduty_detector#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsGuarddutyDetector that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/data-sources/guardduty_detector#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsGuarddutyDetector to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -216,7 +215,7 @@ export class DataAwsGuarddutyDetector extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/data-sources/guardduty_detector aws_guardduty_detector} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/data-sources/guardduty_detector aws_guardduty_detector} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -227,7 +226,7 @@ export class DataAwsGuarddutyDetector extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_guardduty_detector',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.95.0',
+        providerVersion: '5.96.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -239,11 +238,17 @@ export class DataAwsGuarddutyDetector extends cdktf.TerraformDataSource {
       forEach: config.forEach
     });
     this._id = config.id;
+    this._tags = config.tags;
   }
 
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // arn - computed: true, optional: false, required: false
+  public get arn() {
+    return this.getStringAttribute('arn');
+  }
 
   // features - computed: true, optional: false, required: false
   private _features = new DataAwsGuarddutyDetectorFeaturesList(this, "features", false);
@@ -282,6 +287,22 @@ export class DataAwsGuarddutyDetector extends cdktf.TerraformDataSource {
     return this.getStringAttribute('status');
   }
 
+  // tags - computed: true, optional: true, required: false
+  private _tags?: { [key: string]: string }; 
+  public get tags() {
+    return this.getStringMapAttribute('tags');
+  }
+  public set tags(value: { [key: string]: string }) {
+    this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -289,6 +310,7 @@ export class DataAwsGuarddutyDetector extends cdktf.TerraformDataSource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       id: cdktf.stringToTerraform(this._id),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
     };
   }
 
@@ -299,6 +321,12 @@ export class DataAwsGuarddutyDetector extends cdktf.TerraformDataSource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
       },
     };
 
