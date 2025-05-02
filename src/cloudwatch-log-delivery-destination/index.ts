@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/cloudwatch_log_delivery_destination
+// https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/cloudwatch_log_delivery_destination
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,27 +8,27 @@ import * as cdktf from 'cdktf';
 
 export interface CloudwatchLogDeliveryDestinationConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/cloudwatch_log_delivery_destination#name CloudwatchLogDeliveryDestination#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/cloudwatch_log_delivery_destination#name CloudwatchLogDeliveryDestination#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/cloudwatch_log_delivery_destination#output_format CloudwatchLogDeliveryDestination#output_format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/cloudwatch_log_delivery_destination#output_format CloudwatchLogDeliveryDestination#output_format}
   */
   readonly outputFormat?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/cloudwatch_log_delivery_destination#tags CloudwatchLogDeliveryDestination#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/cloudwatch_log_delivery_destination#tags CloudwatchLogDeliveryDestination#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
   * delivery_destination_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/cloudwatch_log_delivery_destination#delivery_destination_configuration CloudwatchLogDeliveryDestination#delivery_destination_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/cloudwatch_log_delivery_destination#delivery_destination_configuration CloudwatchLogDeliveryDestination#delivery_destination_configuration}
   */
   readonly deliveryDestinationConfiguration?: CloudwatchLogDeliveryDestinationDeliveryDestinationConfiguration[] | cdktf.IResolvable;
 }
 export interface CloudwatchLogDeliveryDestinationDeliveryDestinationConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/cloudwatch_log_delivery_destination#destination_resource_arn CloudwatchLogDeliveryDestination#destination_resource_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/cloudwatch_log_delivery_destination#destination_resource_arn CloudwatchLogDeliveryDestination#destination_resource_arn}
   */
   readonly destinationResourceArn: string;
 }
@@ -146,7 +141,7 @@ export class CloudwatchLogDeliveryDestinationDeliveryDestinationConfigurationLis
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/cloudwatch_log_delivery_destination aws_cloudwatch_log_delivery_destination}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/cloudwatch_log_delivery_destination aws_cloudwatch_log_delivery_destination}
 */
 export class CloudwatchLogDeliveryDestination extends cdktf.TerraformResource {
 
@@ -162,7 +157,7 @@ export class CloudwatchLogDeliveryDestination extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a CloudwatchLogDeliveryDestination resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CloudwatchLogDeliveryDestination to import
-  * @param importFromId The id of the existing CloudwatchLogDeliveryDestination that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/cloudwatch_log_delivery_destination#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing CloudwatchLogDeliveryDestination that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/cloudwatch_log_delivery_destination#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CloudwatchLogDeliveryDestination to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -174,7 +169,7 @@ export class CloudwatchLogDeliveryDestination extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/cloudwatch_log_delivery_destination aws_cloudwatch_log_delivery_destination} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/cloudwatch_log_delivery_destination aws_cloudwatch_log_delivery_destination} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -185,7 +180,7 @@ export class CloudwatchLogDeliveryDestination extends cdktf.TerraformResource {
       terraformResourceType: 'aws_cloudwatch_log_delivery_destination',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.96.0',
+        providerVersion: '5.97.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

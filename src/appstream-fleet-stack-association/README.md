@@ -1,3 +1,3 @@
 # `aws_appstream_fleet_stack_association`
 
-Refer to the Terraform Registry for docs: [`aws_appstream_fleet_stack_association`](https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/appstream_fleet_stack_association).
+Refer to the Terraform Registry for docs: [`aws_appstream_fleet_stack_association`](https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/appstream_fleet_stack_association).

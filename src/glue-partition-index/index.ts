@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/glue_partition_index
+// https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/glue_partition_index
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,44 +8,44 @@ import * as cdktf from 'cdktf';
 
 export interface GluePartitionIndexConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/glue_partition_index#catalog_id GluePartitionIndex#catalog_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/glue_partition_index#catalog_id GluePartitionIndex#catalog_id}
   */
   readonly catalogId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/glue_partition_index#database_name GluePartitionIndex#database_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/glue_partition_index#database_name GluePartitionIndex#database_name}
   */
   readonly databaseName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/glue_partition_index#id GluePartitionIndex#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/glue_partition_index#id GluePartitionIndex#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/glue_partition_index#table_name GluePartitionIndex#table_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/glue_partition_index#table_name GluePartitionIndex#table_name}
   */
   readonly tableName: string;
   /**
   * partition_index block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/glue_partition_index#partition_index GluePartitionIndex#partition_index}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/glue_partition_index#partition_index GluePartitionIndex#partition_index}
   */
   readonly partitionIndex: GluePartitionIndexPartitionIndex;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/glue_partition_index#timeouts GluePartitionIndex#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/glue_partition_index#timeouts GluePartitionIndex#timeouts}
   */
   readonly timeouts?: GluePartitionIndexTimeouts;
 }
 export interface GluePartitionIndexPartitionIndex {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/glue_partition_index#index_name GluePartitionIndex#index_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/glue_partition_index#index_name GluePartitionIndex#index_name}
   */
   readonly indexName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/glue_partition_index#keys GluePartitionIndex#keys}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/glue_partition_index#keys GluePartitionIndex#keys}
   */
   readonly keys?: string[];
 }
@@ -168,11 +163,11 @@ export class GluePartitionIndexPartitionIndexOutputReference extends cdktf.Compl
 }
 export interface GluePartitionIndexTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/glue_partition_index#create GluePartitionIndex#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/glue_partition_index#create GluePartitionIndex#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/glue_partition_index#delete GluePartitionIndex#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/glue_partition_index#delete GluePartitionIndex#delete}
   */
   readonly delete?: string;
 }
@@ -295,7 +290,7 @@ export class GluePartitionIndexTimeoutsOutputReference extends cdktf.ComplexObje
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/glue_partition_index aws_glue_partition_index}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/glue_partition_index aws_glue_partition_index}
 */
 export class GluePartitionIndex extends cdktf.TerraformResource {
 
@@ -311,7 +306,7 @@ export class GluePartitionIndex extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GluePartitionIndex resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GluePartitionIndex to import
-  * @param importFromId The id of the existing GluePartitionIndex that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/glue_partition_index#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GluePartitionIndex that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/glue_partition_index#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GluePartitionIndex to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -323,7 +318,7 @@ export class GluePartitionIndex extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/glue_partition_index aws_glue_partition_index} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/glue_partition_index aws_glue_partition_index} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -334,7 +329,7 @@ export class GluePartitionIndex extends cdktf.TerraformResource {
       terraformResourceType: 'aws_glue_partition_index',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.96.0',
+        providerVersion: '5.97.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

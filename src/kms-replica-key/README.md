@@ -1,3 +1,3 @@
 # `aws_kms_replica_key`
 
-Refer to the Terraform Registry for docs: [`aws_kms_replica_key`](https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/kms_replica_key).
+Refer to the Terraform Registry for docs: [`aws_kms_replica_key`](https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/kms_replica_key).
