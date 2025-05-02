@@ -1091,6 +1091,7 @@ The following submodules are available:
 - [ec2ClientVpnEndpoint](./ec2ClientVpnEndpoint.python.md)
 - [ec2ClientVpnNetworkAssociation](./ec2ClientVpnNetworkAssociation.python.md)
 - [ec2ClientVpnRoute](./ec2ClientVpnRoute.python.md)
+- [ec2DefaultCreditSpecification](./ec2DefaultCreditSpecification.python.md)
 - [ec2Fleet](./ec2Fleet.python.md)
 - [ec2Host](./ec2Host.python.md)
 - [ec2ImageBlockPublicAccess](./ec2ImageBlockPublicAccess.python.md)

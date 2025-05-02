@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/apigatewayv2_route
+// https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/apigatewayv2_route
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,70 +13,70 @@ import * as cdktf from 'cdktf';
 
 export interface Apigatewayv2RouteConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/apigatewayv2_route#api_id Apigatewayv2Route#api_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/apigatewayv2_route#api_id Apigatewayv2Route#api_id}
   */
   readonly apiId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/apigatewayv2_route#api_key_required Apigatewayv2Route#api_key_required}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/apigatewayv2_route#api_key_required Apigatewayv2Route#api_key_required}
   */
   readonly apiKeyRequired?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/apigatewayv2_route#authorization_scopes Apigatewayv2Route#authorization_scopes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/apigatewayv2_route#authorization_scopes Apigatewayv2Route#authorization_scopes}
   */
   readonly authorizationScopes?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/apigatewayv2_route#authorization_type Apigatewayv2Route#authorization_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/apigatewayv2_route#authorization_type Apigatewayv2Route#authorization_type}
   */
   readonly authorizationType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/apigatewayv2_route#authorizer_id Apigatewayv2Route#authorizer_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/apigatewayv2_route#authorizer_id Apigatewayv2Route#authorizer_id}
   */
   readonly authorizerId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/apigatewayv2_route#id Apigatewayv2Route#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/apigatewayv2_route#id Apigatewayv2Route#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/apigatewayv2_route#model_selection_expression Apigatewayv2Route#model_selection_expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/apigatewayv2_route#model_selection_expression Apigatewayv2Route#model_selection_expression}
   */
   readonly modelSelectionExpression?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/apigatewayv2_route#operation_name Apigatewayv2Route#operation_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/apigatewayv2_route#operation_name Apigatewayv2Route#operation_name}
   */
   readonly operationName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/apigatewayv2_route#request_models Apigatewayv2Route#request_models}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/apigatewayv2_route#request_models Apigatewayv2Route#request_models}
   */
   readonly requestModels?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/apigatewayv2_route#route_key Apigatewayv2Route#route_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/apigatewayv2_route#route_key Apigatewayv2Route#route_key}
   */
   readonly routeKey: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/apigatewayv2_route#route_response_selection_expression Apigatewayv2Route#route_response_selection_expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/apigatewayv2_route#route_response_selection_expression Apigatewayv2Route#route_response_selection_expression}
   */
   readonly routeResponseSelectionExpression?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/apigatewayv2_route#target Apigatewayv2Route#target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/apigatewayv2_route#target Apigatewayv2Route#target}
   */
   readonly target?: string;
   /**
   * request_parameter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/apigatewayv2_route#request_parameter Apigatewayv2Route#request_parameter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/apigatewayv2_route#request_parameter Apigatewayv2Route#request_parameter}
   */
   readonly requestParameter?: Apigatewayv2RouteRequestParameter[] | cdktf.IResolvable;
 }
 export interface Apigatewayv2RouteRequestParameter {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/apigatewayv2_route#request_parameter_key Apigatewayv2Route#request_parameter_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/apigatewayv2_route#request_parameter_key Apigatewayv2Route#request_parameter_key}
   */
   readonly requestParameterKey: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/apigatewayv2_route#required Apigatewayv2Route#required}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/apigatewayv2_route#required Apigatewayv2Route#required}
   */
   readonly required: boolean | cdktf.IResolvable;
 }
@@ -215,7 +215,7 @@ export class Apigatewayv2RouteRequestParameterList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/apigatewayv2_route aws_apigatewayv2_route}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/apigatewayv2_route aws_apigatewayv2_route}
 */
 export class Apigatewayv2Route extends cdktf.TerraformResource {
 
@@ -231,7 +231,7 @@ export class Apigatewayv2Route extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a Apigatewayv2Route resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Apigatewayv2Route to import
-  * @param importFromId The id of the existing Apigatewayv2Route that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/apigatewayv2_route#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Apigatewayv2Route that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/apigatewayv2_route#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Apigatewayv2Route to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -243,7 +243,7 @@ export class Apigatewayv2Route extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/apigatewayv2_route aws_apigatewayv2_route} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/apigatewayv2_route aws_apigatewayv2_route} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -254,7 +254,7 @@ export class Apigatewayv2Route extends cdktf.TerraformResource {
       terraformResourceType: 'aws_apigatewayv2_route',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.96.0',
+        providerVersion: '5.97.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

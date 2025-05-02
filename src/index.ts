@@ -485,6 +485,7 @@ export * as ec2ClientVpnAuthorizationRule from './ec2-client-vpn-authorization-r
 export * as ec2ClientVpnEndpoint from './ec2-client-vpn-endpoint';
 export * as ec2ClientVpnNetworkAssociation from './ec2-client-vpn-network-association';
 export * as ec2ClientVpnRoute from './ec2-client-vpn-route';
+export * as ec2DefaultCreditSpecification from './ec2-default-credit-specification';
 export * as ec2Fleet from './ec2-fleet';
 export * as ec2Host from './ec2-host';
 export * as ec2ImageBlockPublicAccess from './ec2-image-block-public-access';

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/vpclattice_resource_configuration
+// https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/vpclattice_resource_configuration
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,53 +13,53 @@ import * as cdktf from 'cdktf';
 
 export interface VpclatticeResourceConfigurationConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/vpclattice_resource_configuration#allow_association_to_shareable_service_network VpclatticeResourceConfiguration#allow_association_to_shareable_service_network}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/vpclattice_resource_configuration#allow_association_to_shareable_service_network VpclatticeResourceConfiguration#allow_association_to_shareable_service_network}
   */
   readonly allowAssociationToShareableServiceNetwork?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/vpclattice_resource_configuration#name VpclatticeResourceConfiguration#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/vpclattice_resource_configuration#name VpclatticeResourceConfiguration#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/vpclattice_resource_configuration#port_ranges VpclatticeResourceConfiguration#port_ranges}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/vpclattice_resource_configuration#port_ranges VpclatticeResourceConfiguration#port_ranges}
   */
   readonly portRanges?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/vpclattice_resource_configuration#protocol VpclatticeResourceConfiguration#protocol}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/vpclattice_resource_configuration#protocol VpclatticeResourceConfiguration#protocol}
   */
   readonly protocol?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/vpclattice_resource_configuration#resource_configuration_group_id VpclatticeResourceConfiguration#resource_configuration_group_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/vpclattice_resource_configuration#resource_configuration_group_id VpclatticeResourceConfiguration#resource_configuration_group_id}
   */
   readonly resourceConfigurationGroupId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/vpclattice_resource_configuration#resource_gateway_identifier VpclatticeResourceConfiguration#resource_gateway_identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/vpclattice_resource_configuration#resource_gateway_identifier VpclatticeResourceConfiguration#resource_gateway_identifier}
   */
   readonly resourceGatewayIdentifier?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/vpclattice_resource_configuration#tags VpclatticeResourceConfiguration#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/vpclattice_resource_configuration#tags VpclatticeResourceConfiguration#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/vpclattice_resource_configuration#type VpclatticeResourceConfiguration#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/vpclattice_resource_configuration#type VpclatticeResourceConfiguration#type}
   */
   readonly type?: string;
   /**
   * resource_configuration_definition block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/vpclattice_resource_configuration#resource_configuration_definition VpclatticeResourceConfiguration#resource_configuration_definition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/vpclattice_resource_configuration#resource_configuration_definition VpclatticeResourceConfiguration#resource_configuration_definition}
   */
   readonly resourceConfigurationDefinition?: VpclatticeResourceConfigurationResourceConfigurationDefinition[] | cdktf.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/vpclattice_resource_configuration#timeouts VpclatticeResourceConfiguration#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/vpclattice_resource_configuration#timeouts VpclatticeResourceConfiguration#timeouts}
   */
   readonly timeouts?: VpclatticeResourceConfigurationTimeouts;
 }
 export interface VpclatticeResourceConfigurationResourceConfigurationDefinitionArnResource {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/vpclattice_resource_configuration#arn VpclatticeResourceConfiguration#arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/vpclattice_resource_configuration#arn VpclatticeResourceConfiguration#arn}
   */
   readonly arn: string;
 }
@@ -172,11 +172,11 @@ export class VpclatticeResourceConfigurationResourceConfigurationDefinitionArnRe
 }
 export interface VpclatticeResourceConfigurationResourceConfigurationDefinitionDnsResource {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/vpclattice_resource_configuration#domain_name VpclatticeResourceConfiguration#domain_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/vpclattice_resource_configuration#domain_name VpclatticeResourceConfiguration#domain_name}
   */
   readonly domainName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/vpclattice_resource_configuration#ip_address_type VpclatticeResourceConfiguration#ip_address_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/vpclattice_resource_configuration#ip_address_type VpclatticeResourceConfiguration#ip_address_type}
   */
   readonly ipAddressType: string;
 }
@@ -315,7 +315,7 @@ export class VpclatticeResourceConfigurationResourceConfigurationDefinitionDnsRe
 }
 export interface VpclatticeResourceConfigurationResourceConfigurationDefinitionIpResource {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/vpclattice_resource_configuration#ip_address VpclatticeResourceConfiguration#ip_address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/vpclattice_resource_configuration#ip_address VpclatticeResourceConfiguration#ip_address}
   */
   readonly ipAddress: string;
 }
@@ -430,19 +430,19 @@ export interface VpclatticeResourceConfigurationResourceConfigurationDefinition 
   /**
   * arn_resource block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/vpclattice_resource_configuration#arn_resource VpclatticeResourceConfiguration#arn_resource}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/vpclattice_resource_configuration#arn_resource VpclatticeResourceConfiguration#arn_resource}
   */
   readonly arnResource?: VpclatticeResourceConfigurationResourceConfigurationDefinitionArnResource[] | cdktf.IResolvable;
   /**
   * dns_resource block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/vpclattice_resource_configuration#dns_resource VpclatticeResourceConfiguration#dns_resource}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/vpclattice_resource_configuration#dns_resource VpclatticeResourceConfiguration#dns_resource}
   */
   readonly dnsResource?: VpclatticeResourceConfigurationResourceConfigurationDefinitionDnsResource[] | cdktf.IResolvable;
   /**
   * ip_resource block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/vpclattice_resource_configuration#ip_resource VpclatticeResourceConfiguration#ip_resource}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/vpclattice_resource_configuration#ip_resource VpclatticeResourceConfiguration#ip_resource}
   */
   readonly ipResource?: VpclatticeResourceConfigurationResourceConfigurationDefinitionIpResource[] | cdktf.IResolvable;
 }
@@ -618,19 +618,19 @@ export interface VpclatticeResourceConfigurationTimeouts {
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/vpclattice_resource_configuration#create VpclatticeResourceConfiguration#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/vpclattice_resource_configuration#create VpclatticeResourceConfiguration#create}
   */
   readonly create?: string;
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/vpclattice_resource_configuration#delete VpclatticeResourceConfiguration#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/vpclattice_resource_configuration#delete VpclatticeResourceConfiguration#delete}
   */
   readonly delete?: string;
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/vpclattice_resource_configuration#update VpclatticeResourceConfiguration#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/vpclattice_resource_configuration#update VpclatticeResourceConfiguration#update}
   */
   readonly update?: string;
 }
@@ -782,7 +782,7 @@ export class VpclatticeResourceConfigurationTimeoutsOutputReference extends cdkt
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/vpclattice_resource_configuration aws_vpclattice_resource_configuration}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/vpclattice_resource_configuration aws_vpclattice_resource_configuration}
 */
 export class VpclatticeResourceConfiguration extends cdktf.TerraformResource {
 
@@ -798,7 +798,7 @@ export class VpclatticeResourceConfiguration extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a VpclatticeResourceConfiguration resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the VpclatticeResourceConfiguration to import
-  * @param importFromId The id of the existing VpclatticeResourceConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/vpclattice_resource_configuration#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing VpclatticeResourceConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/vpclattice_resource_configuration#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the VpclatticeResourceConfiguration to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -810,7 +810,7 @@ export class VpclatticeResourceConfiguration extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/vpclattice_resource_configuration aws_vpclattice_resource_configuration} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/vpclattice_resource_configuration aws_vpclattice_resource_configuration} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -821,7 +821,7 @@ export class VpclatticeResourceConfiguration extends cdktf.TerraformResource {
       terraformResourceType: 'aws_vpclattice_resource_configuration',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.96.0',
+        providerVersion: '5.97.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

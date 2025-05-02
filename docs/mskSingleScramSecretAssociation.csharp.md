@@ -4,7 +4,7 @@
 
 ### MskSingleScramSecretAssociation <a name="MskSingleScramSecretAssociation" id="@cdktf/provider-aws.mskSingleScramSecretAssociation.MskSingleScramSecretAssociation"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/msk_single_scram_secret_association aws_msk_single_scram_secret_association}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/msk_single_scram_secret_association aws_msk_single_scram_secret_association}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.mskSingleScramSecretAssociation.MskSingleScramSecretAssociation.Initializer"></a>
 
@@ -467,7 +467,7 @@ The construct id used in the generated config for the MskSingleScramSecretAssoci
 
 The id of the existing MskSingleScramSecretAssociation that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/msk_single_scram_secret_association#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/msk_single_scram_secret_association#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -748,8 +748,8 @@ new MskSingleScramSecretAssociationConfig {
 | <code><a href="#@cdktf/provider-aws.mskSingleScramSecretAssociation.MskSingleScramSecretAssociationConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.mskSingleScramSecretAssociation.MskSingleScramSecretAssociationConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.mskSingleScramSecretAssociation.MskSingleScramSecretAssociationConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.mskSingleScramSecretAssociation.MskSingleScramSecretAssociationConfig.property.clusterArn">ClusterArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/msk_single_scram_secret_association#cluster_arn MskSingleScramSecretAssociation#cluster_arn}. |
-| <code><a href="#@cdktf/provider-aws.mskSingleScramSecretAssociation.MskSingleScramSecretAssociationConfig.property.secretArn">SecretArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/msk_single_scram_secret_association#secret_arn MskSingleScramSecretAssociation#secret_arn}. |
+| <code><a href="#@cdktf/provider-aws.mskSingleScramSecretAssociation.MskSingleScramSecretAssociationConfig.property.clusterArn">ClusterArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/msk_single_scram_secret_association#cluster_arn MskSingleScramSecretAssociation#cluster_arn}. |
+| <code><a href="#@cdktf/provider-aws.mskSingleScramSecretAssociation.MskSingleScramSecretAssociationConfig.property.secretArn">SecretArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/msk_single_scram_secret_association#secret_arn MskSingleScramSecretAssociation#secret_arn}. |
 
 ---
 
@@ -831,7 +831,7 @@ public string ClusterArn { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/msk_single_scram_secret_association#cluster_arn MskSingleScramSecretAssociation#cluster_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/msk_single_scram_secret_association#cluster_arn MskSingleScramSecretAssociation#cluster_arn}.
 
 ---
 
@@ -843,7 +843,7 @@ public string SecretArn { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/msk_single_scram_secret_association#secret_arn MskSingleScramSecretAssociation#secret_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/msk_single_scram_secret_association#secret_arn MskSingleScramSecretAssociation#secret_arn}.
 
 ---
 

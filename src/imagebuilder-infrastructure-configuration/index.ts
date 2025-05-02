@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/imagebuilder_infrastructure_configuration
+// https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/imagebuilder_infrastructure_configuration
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,80 +13,86 @@ import * as cdktf from 'cdktf';
 
 export interface ImagebuilderInfrastructureConfigurationConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/imagebuilder_infrastructure_configuration#description ImagebuilderInfrastructureConfiguration#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/imagebuilder_infrastructure_configuration#description ImagebuilderInfrastructureConfiguration#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/imagebuilder_infrastructure_configuration#id ImagebuilderInfrastructureConfiguration#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/imagebuilder_infrastructure_configuration#id ImagebuilderInfrastructureConfiguration#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/imagebuilder_infrastructure_configuration#instance_profile_name ImagebuilderInfrastructureConfiguration#instance_profile_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/imagebuilder_infrastructure_configuration#instance_profile_name ImagebuilderInfrastructureConfiguration#instance_profile_name}
   */
   readonly instanceProfileName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/imagebuilder_infrastructure_configuration#instance_types ImagebuilderInfrastructureConfiguration#instance_types}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/imagebuilder_infrastructure_configuration#instance_types ImagebuilderInfrastructureConfiguration#instance_types}
   */
   readonly instanceTypes?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/imagebuilder_infrastructure_configuration#key_pair ImagebuilderInfrastructureConfiguration#key_pair}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/imagebuilder_infrastructure_configuration#key_pair ImagebuilderInfrastructureConfiguration#key_pair}
   */
   readonly keyPair?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/imagebuilder_infrastructure_configuration#name ImagebuilderInfrastructureConfiguration#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/imagebuilder_infrastructure_configuration#name ImagebuilderInfrastructureConfiguration#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/imagebuilder_infrastructure_configuration#resource_tags ImagebuilderInfrastructureConfiguration#resource_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/imagebuilder_infrastructure_configuration#resource_tags ImagebuilderInfrastructureConfiguration#resource_tags}
   */
   readonly resourceTags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/imagebuilder_infrastructure_configuration#security_group_ids ImagebuilderInfrastructureConfiguration#security_group_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/imagebuilder_infrastructure_configuration#security_group_ids ImagebuilderInfrastructureConfiguration#security_group_ids}
   */
   readonly securityGroupIds?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/imagebuilder_infrastructure_configuration#sns_topic_arn ImagebuilderInfrastructureConfiguration#sns_topic_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/imagebuilder_infrastructure_configuration#sns_topic_arn ImagebuilderInfrastructureConfiguration#sns_topic_arn}
   */
   readonly snsTopicArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/imagebuilder_infrastructure_configuration#subnet_id ImagebuilderInfrastructureConfiguration#subnet_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/imagebuilder_infrastructure_configuration#subnet_id ImagebuilderInfrastructureConfiguration#subnet_id}
   */
   readonly subnetId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/imagebuilder_infrastructure_configuration#tags ImagebuilderInfrastructureConfiguration#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/imagebuilder_infrastructure_configuration#tags ImagebuilderInfrastructureConfiguration#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/imagebuilder_infrastructure_configuration#tags_all ImagebuilderInfrastructureConfiguration#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/imagebuilder_infrastructure_configuration#tags_all ImagebuilderInfrastructureConfiguration#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/imagebuilder_infrastructure_configuration#terminate_instance_on_failure ImagebuilderInfrastructureConfiguration#terminate_instance_on_failure}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/imagebuilder_infrastructure_configuration#terminate_instance_on_failure ImagebuilderInfrastructureConfiguration#terminate_instance_on_failure}
   */
   readonly terminateInstanceOnFailure?: boolean | cdktf.IResolvable;
   /**
   * instance_metadata_options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/imagebuilder_infrastructure_configuration#instance_metadata_options ImagebuilderInfrastructureConfiguration#instance_metadata_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/imagebuilder_infrastructure_configuration#instance_metadata_options ImagebuilderInfrastructureConfiguration#instance_metadata_options}
   */
   readonly instanceMetadataOptions?: ImagebuilderInfrastructureConfigurationInstanceMetadataOptions;
   /**
   * logging block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/imagebuilder_infrastructure_configuration#logging ImagebuilderInfrastructureConfiguration#logging}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/imagebuilder_infrastructure_configuration#logging ImagebuilderInfrastructureConfiguration#logging}
   */
   readonly logging?: ImagebuilderInfrastructureConfigurationLogging;
+  /**
+  * placement block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/imagebuilder_infrastructure_configuration#placement ImagebuilderInfrastructureConfiguration#placement}
+  */
+  readonly placement?: ImagebuilderInfrastructureConfigurationPlacement;
 }
 export interface ImagebuilderInfrastructureConfigurationInstanceMetadataOptions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/imagebuilder_infrastructure_configuration#http_put_response_hop_limit ImagebuilderInfrastructureConfiguration#http_put_response_hop_limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/imagebuilder_infrastructure_configuration#http_put_response_hop_limit ImagebuilderInfrastructureConfiguration#http_put_response_hop_limit}
   */
   readonly httpPutResponseHopLimit?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/imagebuilder_infrastructure_configuration#http_tokens ImagebuilderInfrastructureConfiguration#http_tokens}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/imagebuilder_infrastructure_configuration#http_tokens ImagebuilderInfrastructureConfiguration#http_tokens}
   */
   readonly httpTokens?: string;
 }
@@ -199,11 +205,11 @@ export class ImagebuilderInfrastructureConfigurationInstanceMetadataOptionsOutpu
 }
 export interface ImagebuilderInfrastructureConfigurationLoggingS3Logs {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/imagebuilder_infrastructure_configuration#s3_bucket_name ImagebuilderInfrastructureConfiguration#s3_bucket_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/imagebuilder_infrastructure_configuration#s3_bucket_name ImagebuilderInfrastructureConfiguration#s3_bucket_name}
   */
   readonly s3BucketName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/imagebuilder_infrastructure_configuration#s3_key_prefix ImagebuilderInfrastructureConfiguration#s3_key_prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/imagebuilder_infrastructure_configuration#s3_key_prefix ImagebuilderInfrastructureConfiguration#s3_key_prefix}
   */
   readonly s3KeyPrefix?: string;
 }
@@ -315,7 +321,7 @@ export interface ImagebuilderInfrastructureConfigurationLogging {
   /**
   * s3_logs block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/imagebuilder_infrastructure_configuration#s3_logs ImagebuilderInfrastructureConfiguration#s3_logs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/imagebuilder_infrastructure_configuration#s3_logs ImagebuilderInfrastructureConfiguration#s3_logs}
   */
   readonly s3Logs: ImagebuilderInfrastructureConfigurationLoggingS3Logs;
 }
@@ -394,9 +400,192 @@ export class ImagebuilderInfrastructureConfigurationLoggingOutputReference exten
     return this._s3Logs.internalValue;
   }
 }
+export interface ImagebuilderInfrastructureConfigurationPlacement {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/imagebuilder_infrastructure_configuration#availability_zone ImagebuilderInfrastructureConfiguration#availability_zone}
+  */
+  readonly availabilityZone?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/imagebuilder_infrastructure_configuration#host_id ImagebuilderInfrastructureConfiguration#host_id}
+  */
+  readonly hostId?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/imagebuilder_infrastructure_configuration#host_resource_group_arn ImagebuilderInfrastructureConfiguration#host_resource_group_arn}
+  */
+  readonly hostResourceGroupArn?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/imagebuilder_infrastructure_configuration#tenancy ImagebuilderInfrastructureConfiguration#tenancy}
+  */
+  readonly tenancy?: string;
+}
+
+export function imagebuilderInfrastructureConfigurationPlacementToTerraform(struct?: ImagebuilderInfrastructureConfigurationPlacementOutputReference | ImagebuilderInfrastructureConfigurationPlacement): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    availability_zone: cdktf.stringToTerraform(struct!.availabilityZone),
+    host_id: cdktf.stringToTerraform(struct!.hostId),
+    host_resource_group_arn: cdktf.stringToTerraform(struct!.hostResourceGroupArn),
+    tenancy: cdktf.stringToTerraform(struct!.tenancy),
+  }
+}
+
+
+export function imagebuilderInfrastructureConfigurationPlacementToHclTerraform(struct?: ImagebuilderInfrastructureConfigurationPlacementOutputReference | ImagebuilderInfrastructureConfigurationPlacement): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    availability_zone: {
+      value: cdktf.stringToHclTerraform(struct!.availabilityZone),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    host_id: {
+      value: cdktf.stringToHclTerraform(struct!.hostId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    host_resource_group_arn: {
+      value: cdktf.stringToHclTerraform(struct!.hostResourceGroupArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    tenancy: {
+      value: cdktf.stringToHclTerraform(struct!.tenancy),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ImagebuilderInfrastructureConfigurationPlacementOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): ImagebuilderInfrastructureConfigurationPlacement | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._availabilityZone !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.availabilityZone = this._availabilityZone;
+    }
+    if (this._hostId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.hostId = this._hostId;
+    }
+    if (this._hostResourceGroupArn !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.hostResourceGroupArn = this._hostResourceGroupArn;
+    }
+    if (this._tenancy !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.tenancy = this._tenancy;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ImagebuilderInfrastructureConfigurationPlacement | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._availabilityZone = undefined;
+      this._hostId = undefined;
+      this._hostResourceGroupArn = undefined;
+      this._tenancy = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._availabilityZone = value.availabilityZone;
+      this._hostId = value.hostId;
+      this._hostResourceGroupArn = value.hostResourceGroupArn;
+      this._tenancy = value.tenancy;
+    }
+  }
+
+  // availability_zone - computed: false, optional: true, required: false
+  private _availabilityZone?: string; 
+  public get availabilityZone() {
+    return this.getStringAttribute('availability_zone');
+  }
+  public set availabilityZone(value: string) {
+    this._availabilityZone = value;
+  }
+  public resetAvailabilityZone() {
+    this._availabilityZone = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get availabilityZoneInput() {
+    return this._availabilityZone;
+  }
+
+  // host_id - computed: false, optional: true, required: false
+  private _hostId?: string; 
+  public get hostId() {
+    return this.getStringAttribute('host_id');
+  }
+  public set hostId(value: string) {
+    this._hostId = value;
+  }
+  public resetHostId() {
+    this._hostId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get hostIdInput() {
+    return this._hostId;
+  }
+
+  // host_resource_group_arn - computed: false, optional: true, required: false
+  private _hostResourceGroupArn?: string; 
+  public get hostResourceGroupArn() {
+    return this.getStringAttribute('host_resource_group_arn');
+  }
+  public set hostResourceGroupArn(value: string) {
+    this._hostResourceGroupArn = value;
+  }
+  public resetHostResourceGroupArn() {
+    this._hostResourceGroupArn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get hostResourceGroupArnInput() {
+    return this._hostResourceGroupArn;
+  }
+
+  // tenancy - computed: false, optional: true, required: false
+  private _tenancy?: string; 
+  public get tenancy() {
+    return this.getStringAttribute('tenancy');
+  }
+  public set tenancy(value: string) {
+    this._tenancy = value;
+  }
+  public resetTenancy() {
+    this._tenancy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tenancyInput() {
+    return this._tenancy;
+  }
+}
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/imagebuilder_infrastructure_configuration aws_imagebuilder_infrastructure_configuration}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/imagebuilder_infrastructure_configuration aws_imagebuilder_infrastructure_configuration}
 */
 export class ImagebuilderInfrastructureConfiguration extends cdktf.TerraformResource {
 
@@ -412,7 +601,7 @@ export class ImagebuilderInfrastructureConfiguration extends cdktf.TerraformReso
   * Generates CDKTF code for importing a ImagebuilderInfrastructureConfiguration resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ImagebuilderInfrastructureConfiguration to import
-  * @param importFromId The id of the existing ImagebuilderInfrastructureConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/imagebuilder_infrastructure_configuration#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ImagebuilderInfrastructureConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/imagebuilder_infrastructure_configuration#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ImagebuilderInfrastructureConfiguration to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -424,7 +613,7 @@ export class ImagebuilderInfrastructureConfiguration extends cdktf.TerraformReso
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/imagebuilder_infrastructure_configuration aws_imagebuilder_infrastructure_configuration} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/imagebuilder_infrastructure_configuration aws_imagebuilder_infrastructure_configuration} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -435,7 +624,7 @@ export class ImagebuilderInfrastructureConfiguration extends cdktf.TerraformReso
       terraformResourceType: 'aws_imagebuilder_infrastructure_configuration',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.96.0',
+        providerVersion: '5.97.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -461,6 +650,7 @@ export class ImagebuilderInfrastructureConfiguration extends cdktf.TerraformReso
     this._terminateInstanceOnFailure = config.terminateInstanceOnFailure;
     this._instanceMetadataOptions.internalValue = config.instanceMetadataOptions;
     this._logging.internalValue = config.logging;
+    this._placement.internalValue = config.placement;
   }
 
   // ==========
@@ -716,6 +906,22 @@ export class ImagebuilderInfrastructureConfiguration extends cdktf.TerraformReso
     return this._logging.internalValue;
   }
 
+  // placement - computed: false, optional: true, required: false
+  private _placement = new ImagebuilderInfrastructureConfigurationPlacementOutputReference(this, "placement");
+  public get placement() {
+    return this._placement;
+  }
+  public putPlacement(value: ImagebuilderInfrastructureConfigurationPlacement) {
+    this._placement.internalValue = value;
+  }
+  public resetPlacement() {
+    this._placement.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get placementInput() {
+    return this._placement.internalValue;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -737,6 +943,7 @@ export class ImagebuilderInfrastructureConfiguration extends cdktf.TerraformReso
       terminate_instance_on_failure: cdktf.booleanToTerraform(this._terminateInstanceOnFailure),
       instance_metadata_options: imagebuilderInfrastructureConfigurationInstanceMetadataOptionsToTerraform(this._instanceMetadataOptions.internalValue),
       logging: imagebuilderInfrastructureConfigurationLoggingToTerraform(this._logging.internalValue),
+      placement: imagebuilderInfrastructureConfigurationPlacementToTerraform(this._placement.internalValue),
     };
   }
 
@@ -831,6 +1038,12 @@ export class ImagebuilderInfrastructureConfiguration extends cdktf.TerraformReso
         isBlock: true,
         type: "list",
         storageClassType: "ImagebuilderInfrastructureConfigurationLoggingList",
+      },
+      placement: {
+        value: imagebuilderInfrastructureConfigurationPlacementToHclTerraform(this._placement.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "ImagebuilderInfrastructureConfigurationPlacementList",
       },
     };
 

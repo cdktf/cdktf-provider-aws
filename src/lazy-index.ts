@@ -485,6 +485,7 @@ Object.defineProperty(exports, 'ec2ClientVpnAuthorizationRule', { get: function 
 Object.defineProperty(exports, 'ec2ClientVpnEndpoint', { get: function () { return require('./ec2-client-vpn-endpoint'); } });
 Object.defineProperty(exports, 'ec2ClientVpnNetworkAssociation', { get: function () { return require('./ec2-client-vpn-network-association'); } });
 Object.defineProperty(exports, 'ec2ClientVpnRoute', { get: function () { return require('./ec2-client-vpn-route'); } });
+Object.defineProperty(exports, 'ec2DefaultCreditSpecification', { get: function () { return require('./ec2-default-credit-specification'); } });
 Object.defineProperty(exports, 'ec2Fleet', { get: function () { return require('./ec2-fleet'); } });
 Object.defineProperty(exports, 'ec2Host', { get: function () { return require('./ec2-host'); } });
 Object.defineProperty(exports, 'ec2ImageBlockPublicAccess', { get: function () { return require('./ec2-image-block-public-access'); } });

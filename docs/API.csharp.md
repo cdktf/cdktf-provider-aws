@@ -1091,6 +1091,7 @@ The following submodules are available:
 - [ec2ClientVpnEndpoint](./ec2ClientVpnEndpoint.csharp.md)
 - [ec2ClientVpnNetworkAssociation](./ec2ClientVpnNetworkAssociation.csharp.md)
 - [ec2ClientVpnRoute](./ec2ClientVpnRoute.csharp.md)
+- [ec2DefaultCreditSpecification](./ec2DefaultCreditSpecification.csharp.md)
 - [ec2Fleet](./ec2Fleet.csharp.md)
 - [ec2Host](./ec2Host.csharp.md)
 - [ec2ImageBlockPublicAccess](./ec2ImageBlockPublicAccess.csharp.md)
