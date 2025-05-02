@@ -1091,6 +1091,7 @@ The following submodules are available:
 - [ec2ClientVpnEndpoint](./ec2ClientVpnEndpoint.java.md)
 - [ec2ClientVpnNetworkAssociation](./ec2ClientVpnNetworkAssociation.java.md)
 - [ec2ClientVpnRoute](./ec2ClientVpnRoute.java.md)
+- [ec2DefaultCreditSpecification](./ec2DefaultCreditSpecification.java.md)
 - [ec2Fleet](./ec2Fleet.java.md)
 - [ec2Host](./ec2Host.java.md)
 - [ec2ImageBlockPublicAccess](./ec2ImageBlockPublicAccess.java.md)

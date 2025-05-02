@@ -1091,6 +1091,7 @@ The following submodules are available:
 - [ec2ClientVpnEndpoint](./ec2ClientVpnEndpoint.go.md)
 - [ec2ClientVpnNetworkAssociation](./ec2ClientVpnNetworkAssociation.go.md)
 - [ec2ClientVpnRoute](./ec2ClientVpnRoute.go.md)
+- [ec2DefaultCreditSpecification](./ec2DefaultCreditSpecification.go.md)
 - [ec2Fleet](./ec2Fleet.go.md)
 - [ec2Host](./ec2Host.go.md)
 - [ec2ImageBlockPublicAccess](./ec2ImageBlockPublicAccess.go.md)

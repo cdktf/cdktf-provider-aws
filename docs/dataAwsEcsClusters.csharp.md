@@ -4,7 +4,7 @@
 
 ### DataAwsEcsClusters <a name="DataAwsEcsClusters" id="@cdktf/provider-aws.dataAwsEcsClusters.DataAwsEcsClusters"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/data-sources/ecs_clusters aws_ecs_clusters}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/data-sources/ecs_clusters aws_ecs_clusters}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEcsClusters.DataAwsEcsClusters.Initializer"></a>
 
@@ -365,7 +365,7 @@ The construct id used in the generated config for the DataAwsEcsClusters to impo
 
 The id of the existing DataAwsEcsClusters that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/data-sources/ecs_clusters#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/data-sources/ecs_clusters#import import section} in the documentation of this resource for the id to use
 
 ---
 

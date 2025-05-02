@@ -1091,6 +1091,7 @@ The following submodules are available:
 - [ec2ClientVpnEndpoint](./ec2ClientVpnEndpoint.typescript.md)
 - [ec2ClientVpnNetworkAssociation](./ec2ClientVpnNetworkAssociation.typescript.md)
 - [ec2ClientVpnRoute](./ec2ClientVpnRoute.typescript.md)
+- [ec2DefaultCreditSpecification](./ec2DefaultCreditSpecification.typescript.md)
 - [ec2Fleet](./ec2Fleet.typescript.md)
 - [ec2Host](./ec2Host.typescript.md)
 - [ec2ImageBlockPublicAccess](./ec2ImageBlockPublicAccess.typescript.md)
