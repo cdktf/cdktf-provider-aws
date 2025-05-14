@@ -235,9 +235,9 @@
     glob "10.4.5"
 
 "@cdktf/provider-project@^0.6.0":
-  version "0.6.55"
-  resolved "https://registry.yarnpkg.com/@cdktf/provider-project/-/provider-project-0.6.55.tgz#32a5f11fc698ffd2e3ffb487fc39fd9c009a94d6"
-  integrity sha512-Nmr1ovoFChXNqxrS3Y1aIgtv72vcjNdOaF6OT1+D0vNrcJ5H/kKbBIc+3iVzgXueiL4VLq05ctFl4gBw0h0n2Q==
+  version "0.6.57"
+  resolved "https://registry.yarnpkg.com/@cdktf/provider-project/-/provider-project-0.6.57.tgz#17701ce5ea8394b883b527a560e2dbb0b2646c20"
+  integrity sha512-tj3wy+W42jHCE3uMZxN3FOsD7yM6wE5+4xOQZI4ZULMAISY/2FGMqhIe2hkiU7RRXw+qopiPq3CAUVFNSZqh8w==
   dependencies:
     change-case "^4.1.2"
     fs-extra "^10.1.0"
