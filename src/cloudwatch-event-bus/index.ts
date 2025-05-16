@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/cloudwatch_event_bus
+// https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/cloudwatch_event_bus
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,40 +13,130 @@ import * as cdktf from 'cdktf';
 
 export interface CloudwatchEventBusConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/cloudwatch_event_bus#description CloudwatchEventBus#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/cloudwatch_event_bus#description CloudwatchEventBus#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/cloudwatch_event_bus#event_source_name CloudwatchEventBus#event_source_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/cloudwatch_event_bus#event_source_name CloudwatchEventBus#event_source_name}
   */
   readonly eventSourceName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/cloudwatch_event_bus#id CloudwatchEventBus#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/cloudwatch_event_bus#id CloudwatchEventBus#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/cloudwatch_event_bus#kms_key_identifier CloudwatchEventBus#kms_key_identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/cloudwatch_event_bus#kms_key_identifier CloudwatchEventBus#kms_key_identifier}
   */
   readonly kmsKeyIdentifier?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/cloudwatch_event_bus#name CloudwatchEventBus#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/cloudwatch_event_bus#name CloudwatchEventBus#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/cloudwatch_event_bus#tags CloudwatchEventBus#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/cloudwatch_event_bus#tags CloudwatchEventBus#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/cloudwatch_event_bus#tags_all CloudwatchEventBus#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/cloudwatch_event_bus#tags_all CloudwatchEventBus#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
+  /**
+  * dead_letter_config block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/cloudwatch_event_bus#dead_letter_config CloudwatchEventBus#dead_letter_config}
+  */
+  readonly deadLetterConfig?: CloudwatchEventBusDeadLetterConfig;
+}
+export interface CloudwatchEventBusDeadLetterConfig {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/cloudwatch_event_bus#arn CloudwatchEventBus#arn}
+  */
+  readonly arn?: string;
+}
+
+export function cloudwatchEventBusDeadLetterConfigToTerraform(struct?: CloudwatchEventBusDeadLetterConfigOutputReference | CloudwatchEventBusDeadLetterConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    arn: cdktf.stringToTerraform(struct!.arn),
+  }
+}
+
+
+export function cloudwatchEventBusDeadLetterConfigToHclTerraform(struct?: CloudwatchEventBusDeadLetterConfigOutputReference | CloudwatchEventBusDeadLetterConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    arn: {
+      value: cdktf.stringToHclTerraform(struct!.arn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class CloudwatchEventBusDeadLetterConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): CloudwatchEventBusDeadLetterConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._arn !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.arn = this._arn;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CloudwatchEventBusDeadLetterConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._arn = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._arn = value.arn;
+    }
+  }
+
+  // arn - computed: false, optional: true, required: false
+  private _arn?: string; 
+  public get arn() {
+    return this.getStringAttribute('arn');
+  }
+  public set arn(value: string) {
+    this._arn = value;
+  }
+  public resetArn() {
+    this._arn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get arnInput() {
+    return this._arn;
+  }
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/cloudwatch_event_bus aws_cloudwatch_event_bus}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/cloudwatch_event_bus aws_cloudwatch_event_bus}
 */
 export class CloudwatchEventBus extends cdktf.TerraformResource {
 
@@ -62,7 +152,7 @@ export class CloudwatchEventBus extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a CloudwatchEventBus resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CloudwatchEventBus to import
-  * @param importFromId The id of the existing CloudwatchEventBus that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/cloudwatch_event_bus#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing CloudwatchEventBus that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/cloudwatch_event_bus#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CloudwatchEventBus to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -74,7 +164,7 @@ export class CloudwatchEventBus extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/cloudwatch_event_bus aws_cloudwatch_event_bus} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/cloudwatch_event_bus aws_cloudwatch_event_bus} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -85,7 +175,7 @@ export class CloudwatchEventBus extends cdktf.TerraformResource {
       terraformResourceType: 'aws_cloudwatch_event_bus',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.97.0',
+        providerVersion: '5.98.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -103,6 +193,7 @@ export class CloudwatchEventBus extends cdktf.TerraformResource {
     this._name = config.name;
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
+    this._deadLetterConfig.internalValue = config.deadLetterConfig;
   }
 
   // ==========
@@ -223,6 +314,22 @@ export class CloudwatchEventBus extends cdktf.TerraformResource {
     return this._tagsAll;
   }
 
+  // dead_letter_config - computed: false, optional: true, required: false
+  private _deadLetterConfig = new CloudwatchEventBusDeadLetterConfigOutputReference(this, "dead_letter_config");
+  public get deadLetterConfig() {
+    return this._deadLetterConfig;
+  }
+  public putDeadLetterConfig(value: CloudwatchEventBusDeadLetterConfig) {
+    this._deadLetterConfig.internalValue = value;
+  }
+  public resetDeadLetterConfig() {
+    this._deadLetterConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deadLetterConfigInput() {
+    return this._deadLetterConfig.internalValue;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -236,6 +343,7 @@ export class CloudwatchEventBus extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
+      dead_letter_config: cloudwatchEventBusDeadLetterConfigToTerraform(this._deadLetterConfig.internalValue),
     };
   }
 
@@ -282,6 +390,12 @@ export class CloudwatchEventBus extends cdktf.TerraformResource {
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
+      },
+      dead_letter_config: {
+        value: cloudwatchEventBusDeadLetterConfigToHclTerraform(this._deadLetterConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "CloudwatchEventBusDeadLetterConfigList",
       },
     };
 

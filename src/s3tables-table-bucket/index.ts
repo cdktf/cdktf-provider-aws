@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/s3tables_table_bucket
+// https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/s3tables_table_bucket
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,21 +13,152 @@ import * as cdktf from 'cdktf';
 
 export interface S3TablesTableBucketConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/s3tables_table_bucket#maintenance_configuration S3TablesTableBucket#maintenance_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/s3tables_table_bucket#encryption_configuration S3TablesTableBucket#encryption_configuration}
+  */
+  readonly encryptionConfiguration?: S3TablesTableBucketEncryptionConfiguration;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/s3tables_table_bucket#maintenance_configuration S3TablesTableBucket#maintenance_configuration}
   */
   readonly maintenanceConfiguration?: S3TablesTableBucketMaintenanceConfiguration;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/s3tables_table_bucket#name S3TablesTableBucket#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/s3tables_table_bucket#name S3TablesTableBucket#name}
   */
   readonly name: string;
 }
+export interface S3TablesTableBucketEncryptionConfiguration {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/s3tables_table_bucket#kms_key_arn S3TablesTableBucket#kms_key_arn}
+  */
+  readonly kmsKeyArn?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/s3tables_table_bucket#sse_algorithm S3TablesTableBucket#sse_algorithm}
+  */
+  readonly sseAlgorithm?: string;
+}
+
+export function s3TablesTableBucketEncryptionConfigurationToTerraform(struct?: S3TablesTableBucketEncryptionConfiguration | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    kms_key_arn: cdktf.stringToTerraform(struct!.kmsKeyArn),
+    sse_algorithm: cdktf.stringToTerraform(struct!.sseAlgorithm),
+  }
+}
+
+
+export function s3TablesTableBucketEncryptionConfigurationToHclTerraform(struct?: S3TablesTableBucketEncryptionConfiguration | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    kms_key_arn: {
+      value: cdktf.stringToHclTerraform(struct!.kmsKeyArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    sse_algorithm: {
+      value: cdktf.stringToHclTerraform(struct!.sseAlgorithm),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class S3TablesTableBucketEncryptionConfigurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): S3TablesTableBucketEncryptionConfiguration | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._kmsKeyArn !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.kmsKeyArn = this._kmsKeyArn;
+    }
+    if (this._sseAlgorithm !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.sseAlgorithm = this._sseAlgorithm;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: S3TablesTableBucketEncryptionConfiguration | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._kmsKeyArn = undefined;
+      this._sseAlgorithm = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._kmsKeyArn = value.kmsKeyArn;
+      this._sseAlgorithm = value.sseAlgorithm;
+    }
+  }
+
+  // kms_key_arn - computed: false, optional: true, required: false
+  private _kmsKeyArn?: string; 
+  public get kmsKeyArn() {
+    return this.getStringAttribute('kms_key_arn');
+  }
+  public set kmsKeyArn(value: string) {
+    this._kmsKeyArn = value;
+  }
+  public resetKmsKeyArn() {
+    this._kmsKeyArn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get kmsKeyArnInput() {
+    return this._kmsKeyArn;
+  }
+
+  // sse_algorithm - computed: false, optional: true, required: false
+  private _sseAlgorithm?: string; 
+  public get sseAlgorithm() {
+    return this.getStringAttribute('sse_algorithm');
+  }
+  public set sseAlgorithm(value: string) {
+    this._sseAlgorithm = value;
+  }
+  public resetSseAlgorithm() {
+    this._sseAlgorithm = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sseAlgorithmInput() {
+    return this._sseAlgorithm;
+  }
+}
 export interface S3TablesTableBucketMaintenanceConfigurationIcebergUnreferencedFileRemovalSettings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/s3tables_table_bucket#non_current_days S3TablesTableBucket#non_current_days}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/s3tables_table_bucket#non_current_days S3TablesTableBucket#non_current_days}
   */
   readonly nonCurrentDays?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/s3tables_table_bucket#unreferenced_days S3TablesTableBucket#unreferenced_days}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/s3tables_table_bucket#unreferenced_days S3TablesTableBucket#unreferenced_days}
   */
   readonly unreferencedDays?: number;
 }
@@ -150,11 +281,11 @@ export class S3TablesTableBucketMaintenanceConfigurationIcebergUnreferencedFileR
 }
 export interface S3TablesTableBucketMaintenanceConfigurationIcebergUnreferencedFileRemoval {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/s3tables_table_bucket#settings S3TablesTableBucket#settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/s3tables_table_bucket#settings S3TablesTableBucket#settings}
   */
   readonly settings?: S3TablesTableBucketMaintenanceConfigurationIcebergUnreferencedFileRemovalSettings;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/s3tables_table_bucket#status S3TablesTableBucket#status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/s3tables_table_bucket#status S3TablesTableBucket#status}
   */
   readonly status?: string;
 }
@@ -277,7 +408,7 @@ export class S3TablesTableBucketMaintenanceConfigurationIcebergUnreferencedFileR
 }
 export interface S3TablesTableBucketMaintenanceConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/s3tables_table_bucket#iceberg_unreferenced_file_removal S3TablesTableBucket#iceberg_unreferenced_file_removal}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/s3tables_table_bucket#iceberg_unreferenced_file_removal S3TablesTableBucket#iceberg_unreferenced_file_removal}
   */
   readonly icebergUnreferencedFileRemoval?: S3TablesTableBucketMaintenanceConfigurationIcebergUnreferencedFileRemoval;
 }
@@ -371,7 +502,7 @@ export class S3TablesTableBucketMaintenanceConfigurationOutputReference extends 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/s3tables_table_bucket aws_s3tables_table_bucket}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/s3tables_table_bucket aws_s3tables_table_bucket}
 */
 export class S3TablesTableBucket extends cdktf.TerraformResource {
 
@@ -387,7 +518,7 @@ export class S3TablesTableBucket extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a S3TablesTableBucket resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the S3TablesTableBucket to import
-  * @param importFromId The id of the existing S3TablesTableBucket that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/s3tables_table_bucket#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing S3TablesTableBucket that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/s3tables_table_bucket#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the S3TablesTableBucket to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -399,7 +530,7 @@ export class S3TablesTableBucket extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/s3tables_table_bucket aws_s3tables_table_bucket} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/s3tables_table_bucket aws_s3tables_table_bucket} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -410,7 +541,7 @@ export class S3TablesTableBucket extends cdktf.TerraformResource {
       terraformResourceType: 'aws_s3tables_table_bucket',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.97.0',
+        providerVersion: '5.98.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -421,6 +552,7 @@ export class S3TablesTableBucket extends cdktf.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
+    this._encryptionConfiguration.internalValue = config.encryptionConfiguration;
     this._maintenanceConfiguration.internalValue = config.maintenanceConfiguration;
     this._name = config.name;
   }
@@ -437,6 +569,22 @@ export class S3TablesTableBucket extends cdktf.TerraformResource {
   // created_at - computed: true, optional: false, required: false
   public get createdAt() {
     return this.getStringAttribute('created_at');
+  }
+
+  // encryption_configuration - computed: false, optional: true, required: false
+  private _encryptionConfiguration = new S3TablesTableBucketEncryptionConfigurationOutputReference(this, "encryption_configuration");
+  public get encryptionConfiguration() {
+    return this._encryptionConfiguration;
+  }
+  public putEncryptionConfiguration(value: S3TablesTableBucketEncryptionConfiguration) {
+    this._encryptionConfiguration.internalValue = value;
+  }
+  public resetEncryptionConfiguration() {
+    this._encryptionConfiguration.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get encryptionConfigurationInput() {
+    return this._encryptionConfiguration.internalValue;
   }
 
   // maintenance_configuration - computed: true, optional: true, required: false
@@ -479,6 +627,7 @@ export class S3TablesTableBucket extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      encryption_configuration: s3TablesTableBucketEncryptionConfigurationToTerraform(this._encryptionConfiguration.internalValue),
       maintenance_configuration: s3TablesTableBucketMaintenanceConfigurationToTerraform(this._maintenanceConfiguration.internalValue),
       name: cdktf.stringToTerraform(this._name),
     };
@@ -486,6 +635,12 @@ export class S3TablesTableBucket extends cdktf.TerraformResource {
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
+      encryption_configuration: {
+        value: s3TablesTableBucketEncryptionConfigurationToHclTerraform(this._encryptionConfiguration.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "S3TablesTableBucketEncryptionConfiguration",
+      },
       maintenance_configuration: {
         value: s3TablesTableBucketMaintenanceConfigurationToHclTerraform(this._maintenanceConfiguration.internalValue),
         isBlock: true,

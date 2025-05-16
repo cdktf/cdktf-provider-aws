@@ -1,3 +1,3 @@
 # `data_aws_elastic_beanstalk_solution_stack`
 
-Refer to the Terraform Registry for docs: [`data_aws_elastic_beanstalk_solution_stack`](https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/data-sources/elastic_beanstalk_solution_stack).
+Refer to the Terraform Registry for docs: [`data_aws_elastic_beanstalk_solution_stack`](https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/data-sources/elastic_beanstalk_solution_stack).

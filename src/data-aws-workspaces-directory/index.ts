@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/data-sources/workspaces_directory
+// https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/data-sources/workspaces_directory
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,20 +13,100 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsWorkspacesDirectoryConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/data-sources/workspaces_directory#directory_id DataAwsWorkspacesDirectory#directory_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/data-sources/workspaces_directory#directory_id DataAwsWorkspacesDirectory#directory_id}
   */
   readonly directoryId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/data-sources/workspaces_directory#id DataAwsWorkspacesDirectory#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/data-sources/workspaces_directory#id DataAwsWorkspacesDirectory#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/data-sources/workspaces_directory#tags DataAwsWorkspacesDirectory#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/data-sources/workspaces_directory#tags DataAwsWorkspacesDirectory#tags}
   */
   readonly tags?: { [key: string]: string };
+}
+export interface DataAwsWorkspacesDirectoryActiveDirectoryConfig {
+}
+
+export function dataAwsWorkspacesDirectoryActiveDirectoryConfigToTerraform(struct?: DataAwsWorkspacesDirectoryActiveDirectoryConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataAwsWorkspacesDirectoryActiveDirectoryConfigToHclTerraform(struct?: DataAwsWorkspacesDirectoryActiveDirectoryConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataAwsWorkspacesDirectoryActiveDirectoryConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsWorkspacesDirectoryActiveDirectoryConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsWorkspacesDirectoryActiveDirectoryConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // domain_name - computed: true, optional: false, required: false
+  public get domainName() {
+    return this.getStringAttribute('domain_name');
+  }
+
+  // service_account_secret_arn - computed: true, optional: false, required: false
+  public get serviceAccountSecretArn() {
+    return this.getStringAttribute('service_account_secret_arn');
+  }
+}
+
+export class DataAwsWorkspacesDirectoryActiveDirectoryConfigList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsWorkspacesDirectoryActiveDirectoryConfigOutputReference {
+    return new DataAwsWorkspacesDirectoryActiveDirectoryConfigOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
 }
 export interface DataAwsWorkspacesDirectoryCertificateBasedAuthProperties {
 }
@@ -495,7 +575,7 @@ export class DataAwsWorkspacesDirectoryWorkspaceCreationPropertiesList extends c
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/data-sources/workspaces_directory aws_workspaces_directory}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/data-sources/workspaces_directory aws_workspaces_directory}
 */
 export class DataAwsWorkspacesDirectory extends cdktf.TerraformDataSource {
 
@@ -511,7 +591,7 @@ export class DataAwsWorkspacesDirectory extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataAwsWorkspacesDirectory resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsWorkspacesDirectory to import
-  * @param importFromId The id of the existing DataAwsWorkspacesDirectory that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/data-sources/workspaces_directory#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsWorkspacesDirectory that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/data-sources/workspaces_directory#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsWorkspacesDirectory to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -523,7 +603,7 @@ export class DataAwsWorkspacesDirectory extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/data-sources/workspaces_directory aws_workspaces_directory} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/data-sources/workspaces_directory aws_workspaces_directory} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -534,7 +614,7 @@ export class DataAwsWorkspacesDirectory extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_workspaces_directory',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.97.0',
+        providerVersion: '5.98.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -553,6 +633,12 @@ export class DataAwsWorkspacesDirectory extends cdktf.TerraformDataSource {
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // active_directory_config - computed: true, optional: false, required: false
+  private _activeDirectoryConfig = new DataAwsWorkspacesDirectoryActiveDirectoryConfigList(this, "active_directory_config", true);
+  public get activeDirectoryConfig() {
+    return this._activeDirectoryConfig;
+  }
 
   // alias - computed: true, optional: false, required: false
   public get alias() {
@@ -662,6 +748,11 @@ export class DataAwsWorkspacesDirectory extends cdktf.TerraformDataSource {
     return this._tags;
   }
 
+  // user_identity_type - computed: true, optional: false, required: false
+  public get userIdentityType() {
+    return this.getStringAttribute('user_identity_type');
+  }
+
   // workspace_access_properties - computed: true, optional: false, required: false
   private _workspaceAccessProperties = new DataAwsWorkspacesDirectoryWorkspaceAccessPropertiesList(this, "workspace_access_properties", false);
   public get workspaceAccessProperties() {
@@ -674,9 +765,24 @@ export class DataAwsWorkspacesDirectory extends cdktf.TerraformDataSource {
     return this._workspaceCreationProperties;
   }
 
+  // workspace_directory_description - computed: true, optional: false, required: false
+  public get workspaceDirectoryDescription() {
+    return this.getStringAttribute('workspace_directory_description');
+  }
+
+  // workspace_directory_name - computed: true, optional: false, required: false
+  public get workspaceDirectoryName() {
+    return this.getStringAttribute('workspace_directory_name');
+  }
+
   // workspace_security_group_id - computed: true, optional: false, required: false
   public get workspaceSecurityGroupId() {
     return this.getStringAttribute('workspace_security_group_id');
+  }
+
+  // workspace_type - computed: true, optional: false, required: false
+  public get workspaceType() {
+    return this.getStringAttribute('workspace_type');
   }
 
   // =========
