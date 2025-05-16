@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/msk_single_scram_secret_association
+// https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/msk_single_scram_secret_association
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,17 +8,17 @@ import * as cdktf from 'cdktf';
 
 export interface MskSingleScramSecretAssociationConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/msk_single_scram_secret_association#cluster_arn MskSingleScramSecretAssociation#cluster_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/msk_single_scram_secret_association#cluster_arn MskSingleScramSecretAssociation#cluster_arn}
   */
   readonly clusterArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/msk_single_scram_secret_association#secret_arn MskSingleScramSecretAssociation#secret_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/msk_single_scram_secret_association#secret_arn MskSingleScramSecretAssociation#secret_arn}
   */
   readonly secretArn: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/msk_single_scram_secret_association aws_msk_single_scram_secret_association}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/msk_single_scram_secret_association aws_msk_single_scram_secret_association}
 */
 export class MskSingleScramSecretAssociation extends cdktf.TerraformResource {
 
@@ -39,7 +34,7 @@ export class MskSingleScramSecretAssociation extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a MskSingleScramSecretAssociation resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the MskSingleScramSecretAssociation to import
-  * @param importFromId The id of the existing MskSingleScramSecretAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/msk_single_scram_secret_association#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing MskSingleScramSecretAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/msk_single_scram_secret_association#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the MskSingleScramSecretAssociation to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -51,7 +46,7 @@ export class MskSingleScramSecretAssociation extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/msk_single_scram_secret_association aws_msk_single_scram_secret_association} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/msk_single_scram_secret_association aws_msk_single_scram_secret_association} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -62,7 +57,7 @@ export class MskSingleScramSecretAssociation extends cdktf.TerraformResource {
       terraformResourceType: 'aws_msk_single_scram_secret_association',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.97.0',
+        providerVersion: '5.98.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

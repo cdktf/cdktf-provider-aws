@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/cognito_managed_user_pool_client
+// https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/cognito_managed_user_pool_client
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,117 +8,123 @@ import * as cdktf from 'cdktf';
 
 export interface CognitoManagedUserPoolClientConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/cognito_managed_user_pool_client#access_token_validity CognitoManagedUserPoolClient#access_token_validity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/cognito_managed_user_pool_client#access_token_validity CognitoManagedUserPoolClient#access_token_validity}
   */
   readonly accessTokenValidity?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/cognito_managed_user_pool_client#allowed_oauth_flows CognitoManagedUserPoolClient#allowed_oauth_flows}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/cognito_managed_user_pool_client#allowed_oauth_flows CognitoManagedUserPoolClient#allowed_oauth_flows}
   */
   readonly allowedOauthFlows?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/cognito_managed_user_pool_client#allowed_oauth_flows_user_pool_client CognitoManagedUserPoolClient#allowed_oauth_flows_user_pool_client}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/cognito_managed_user_pool_client#allowed_oauth_flows_user_pool_client CognitoManagedUserPoolClient#allowed_oauth_flows_user_pool_client}
   */
   readonly allowedOauthFlowsUserPoolClient?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/cognito_managed_user_pool_client#allowed_oauth_scopes CognitoManagedUserPoolClient#allowed_oauth_scopes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/cognito_managed_user_pool_client#allowed_oauth_scopes CognitoManagedUserPoolClient#allowed_oauth_scopes}
   */
   readonly allowedOauthScopes?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/cognito_managed_user_pool_client#auth_session_validity CognitoManagedUserPoolClient#auth_session_validity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/cognito_managed_user_pool_client#auth_session_validity CognitoManagedUserPoolClient#auth_session_validity}
   */
   readonly authSessionValidity?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/cognito_managed_user_pool_client#callback_urls CognitoManagedUserPoolClient#callback_urls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/cognito_managed_user_pool_client#callback_urls CognitoManagedUserPoolClient#callback_urls}
   */
   readonly callbackUrls?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/cognito_managed_user_pool_client#default_redirect_uri CognitoManagedUserPoolClient#default_redirect_uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/cognito_managed_user_pool_client#default_redirect_uri CognitoManagedUserPoolClient#default_redirect_uri}
   */
   readonly defaultRedirectUri?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/cognito_managed_user_pool_client#enable_propagate_additional_user_context_data CognitoManagedUserPoolClient#enable_propagate_additional_user_context_data}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/cognito_managed_user_pool_client#enable_propagate_additional_user_context_data CognitoManagedUserPoolClient#enable_propagate_additional_user_context_data}
   */
   readonly enablePropagateAdditionalUserContextData?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/cognito_managed_user_pool_client#enable_token_revocation CognitoManagedUserPoolClient#enable_token_revocation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/cognito_managed_user_pool_client#enable_token_revocation CognitoManagedUserPoolClient#enable_token_revocation}
   */
   readonly enableTokenRevocation?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/cognito_managed_user_pool_client#explicit_auth_flows CognitoManagedUserPoolClient#explicit_auth_flows}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/cognito_managed_user_pool_client#explicit_auth_flows CognitoManagedUserPoolClient#explicit_auth_flows}
   */
   readonly explicitAuthFlows?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/cognito_managed_user_pool_client#id_token_validity CognitoManagedUserPoolClient#id_token_validity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/cognito_managed_user_pool_client#id_token_validity CognitoManagedUserPoolClient#id_token_validity}
   */
   readonly idTokenValidity?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/cognito_managed_user_pool_client#logout_urls CognitoManagedUserPoolClient#logout_urls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/cognito_managed_user_pool_client#logout_urls CognitoManagedUserPoolClient#logout_urls}
   */
   readonly logoutUrls?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/cognito_managed_user_pool_client#name_pattern CognitoManagedUserPoolClient#name_pattern}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/cognito_managed_user_pool_client#name_pattern CognitoManagedUserPoolClient#name_pattern}
   */
   readonly namePattern?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/cognito_managed_user_pool_client#name_prefix CognitoManagedUserPoolClient#name_prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/cognito_managed_user_pool_client#name_prefix CognitoManagedUserPoolClient#name_prefix}
   */
   readonly namePrefix?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/cognito_managed_user_pool_client#prevent_user_existence_errors CognitoManagedUserPoolClient#prevent_user_existence_errors}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/cognito_managed_user_pool_client#prevent_user_existence_errors CognitoManagedUserPoolClient#prevent_user_existence_errors}
   */
   readonly preventUserExistenceErrors?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/cognito_managed_user_pool_client#read_attributes CognitoManagedUserPoolClient#read_attributes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/cognito_managed_user_pool_client#read_attributes CognitoManagedUserPoolClient#read_attributes}
   */
   readonly readAttributes?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/cognito_managed_user_pool_client#refresh_token_validity CognitoManagedUserPoolClient#refresh_token_validity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/cognito_managed_user_pool_client#refresh_token_validity CognitoManagedUserPoolClient#refresh_token_validity}
   */
   readonly refreshTokenValidity?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/cognito_managed_user_pool_client#supported_identity_providers CognitoManagedUserPoolClient#supported_identity_providers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/cognito_managed_user_pool_client#supported_identity_providers CognitoManagedUserPoolClient#supported_identity_providers}
   */
   readonly supportedIdentityProviders?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/cognito_managed_user_pool_client#user_pool_id CognitoManagedUserPoolClient#user_pool_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/cognito_managed_user_pool_client#user_pool_id CognitoManagedUserPoolClient#user_pool_id}
   */
   readonly userPoolId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/cognito_managed_user_pool_client#write_attributes CognitoManagedUserPoolClient#write_attributes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/cognito_managed_user_pool_client#write_attributes CognitoManagedUserPoolClient#write_attributes}
   */
   readonly writeAttributes?: string[];
   /**
   * analytics_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/cognito_managed_user_pool_client#analytics_configuration CognitoManagedUserPoolClient#analytics_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/cognito_managed_user_pool_client#analytics_configuration CognitoManagedUserPoolClient#analytics_configuration}
   */
   readonly analyticsConfiguration?: CognitoManagedUserPoolClientAnalyticsConfiguration[] | cdktf.IResolvable;
   /**
+  * refresh_token_rotation block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/cognito_managed_user_pool_client#refresh_token_rotation CognitoManagedUserPoolClient#refresh_token_rotation}
+  */
+  readonly refreshTokenRotation?: CognitoManagedUserPoolClientRefreshTokenRotation[] | cdktf.IResolvable;
+  /**
   * token_validity_units block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/cognito_managed_user_pool_client#token_validity_units CognitoManagedUserPoolClient#token_validity_units}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/cognito_managed_user_pool_client#token_validity_units CognitoManagedUserPoolClient#token_validity_units}
   */
   readonly tokenValidityUnits?: CognitoManagedUserPoolClientTokenValidityUnits[] | cdktf.IResolvable;
 }
 export interface CognitoManagedUserPoolClientAnalyticsConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/cognito_managed_user_pool_client#application_arn CognitoManagedUserPoolClient#application_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/cognito_managed_user_pool_client#application_arn CognitoManagedUserPoolClient#application_arn}
   */
   readonly applicationArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/cognito_managed_user_pool_client#application_id CognitoManagedUserPoolClient#application_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/cognito_managed_user_pool_client#application_id CognitoManagedUserPoolClient#application_id}
   */
   readonly applicationId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/cognito_managed_user_pool_client#external_id CognitoManagedUserPoolClient#external_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/cognito_managed_user_pool_client#external_id CognitoManagedUserPoolClient#external_id}
   */
   readonly externalId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/cognito_managed_user_pool_client#role_arn CognitoManagedUserPoolClient#role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/cognito_managed_user_pool_client#role_arn CognitoManagedUserPoolClient#role_arn}
   */
   readonly roleArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/cognito_managed_user_pool_client#user_data_shared CognitoManagedUserPoolClient#user_data_shared}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/cognito_managed_user_pool_client#user_data_shared CognitoManagedUserPoolClient#user_data_shared}
   */
   readonly userDataShared?: boolean | cdktf.IResolvable;
 }
@@ -353,17 +354,163 @@ export class CognitoManagedUserPoolClientAnalyticsConfigurationList extends cdkt
     return new CognitoManagedUserPoolClientAnalyticsConfigurationOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface CognitoManagedUserPoolClientRefreshTokenRotation {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/cognito_managed_user_pool_client#feature CognitoManagedUserPoolClient#feature}
+  */
+  readonly feature: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/cognito_managed_user_pool_client#retry_grace_period_seconds CognitoManagedUserPoolClient#retry_grace_period_seconds}
+  */
+  readonly retryGracePeriodSeconds?: number;
+}
+
+export function cognitoManagedUserPoolClientRefreshTokenRotationToTerraform(struct?: CognitoManagedUserPoolClientRefreshTokenRotation | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    feature: cdktf.stringToTerraform(struct!.feature),
+    retry_grace_period_seconds: cdktf.numberToTerraform(struct!.retryGracePeriodSeconds),
+  }
+}
+
+
+export function cognitoManagedUserPoolClientRefreshTokenRotationToHclTerraform(struct?: CognitoManagedUserPoolClientRefreshTokenRotation | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    feature: {
+      value: cdktf.stringToHclTerraform(struct!.feature),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    retry_grace_period_seconds: {
+      value: cdktf.numberToHclTerraform(struct!.retryGracePeriodSeconds),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class CognitoManagedUserPoolClientRefreshTokenRotationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): CognitoManagedUserPoolClientRefreshTokenRotation | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._feature !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.feature = this._feature;
+    }
+    if (this._retryGracePeriodSeconds !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.retryGracePeriodSeconds = this._retryGracePeriodSeconds;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CognitoManagedUserPoolClientRefreshTokenRotation | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._feature = undefined;
+      this._retryGracePeriodSeconds = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._feature = value.feature;
+      this._retryGracePeriodSeconds = value.retryGracePeriodSeconds;
+    }
+  }
+
+  // feature - computed: false, optional: false, required: true
+  private _feature?: string; 
+  public get feature() {
+    return this.getStringAttribute('feature');
+  }
+  public set feature(value: string) {
+    this._feature = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get featureInput() {
+    return this._feature;
+  }
+
+  // retry_grace_period_seconds - computed: false, optional: true, required: false
+  private _retryGracePeriodSeconds?: number; 
+  public get retryGracePeriodSeconds() {
+    return this.getNumberAttribute('retry_grace_period_seconds');
+  }
+  public set retryGracePeriodSeconds(value: number) {
+    this._retryGracePeriodSeconds = value;
+  }
+  public resetRetryGracePeriodSeconds() {
+    this._retryGracePeriodSeconds = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get retryGracePeriodSecondsInput() {
+    return this._retryGracePeriodSeconds;
+  }
+}
+
+export class CognitoManagedUserPoolClientRefreshTokenRotationList extends cdktf.ComplexList {
+  public internalValue? : CognitoManagedUserPoolClientRefreshTokenRotation[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): CognitoManagedUserPoolClientRefreshTokenRotationOutputReference {
+    return new CognitoManagedUserPoolClientRefreshTokenRotationOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface CognitoManagedUserPoolClientTokenValidityUnits {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/cognito_managed_user_pool_client#access_token CognitoManagedUserPoolClient#access_token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/cognito_managed_user_pool_client#access_token CognitoManagedUserPoolClient#access_token}
   */
   readonly accessToken?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/cognito_managed_user_pool_client#id_token CognitoManagedUserPoolClient#id_token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/cognito_managed_user_pool_client#id_token CognitoManagedUserPoolClient#id_token}
   */
   readonly idToken?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/cognito_managed_user_pool_client#refresh_token CognitoManagedUserPoolClient#refresh_token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/cognito_managed_user_pool_client#refresh_token CognitoManagedUserPoolClient#refresh_token}
   */
   readonly refreshToken?: string;
 }
@@ -537,7 +684,7 @@ export class CognitoManagedUserPoolClientTokenValidityUnitsList extends cdktf.Co
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/cognito_managed_user_pool_client aws_cognito_managed_user_pool_client}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/cognito_managed_user_pool_client aws_cognito_managed_user_pool_client}
 */
 export class CognitoManagedUserPoolClient extends cdktf.TerraformResource {
 
@@ -553,7 +700,7 @@ export class CognitoManagedUserPoolClient extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a CognitoManagedUserPoolClient resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CognitoManagedUserPoolClient to import
-  * @param importFromId The id of the existing CognitoManagedUserPoolClient that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/cognito_managed_user_pool_client#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing CognitoManagedUserPoolClient that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/cognito_managed_user_pool_client#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CognitoManagedUserPoolClient to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -565,7 +712,7 @@ export class CognitoManagedUserPoolClient extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/cognito_managed_user_pool_client aws_cognito_managed_user_pool_client} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/cognito_managed_user_pool_client aws_cognito_managed_user_pool_client} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -576,7 +723,7 @@ export class CognitoManagedUserPoolClient extends cdktf.TerraformResource {
       terraformResourceType: 'aws_cognito_managed_user_pool_client',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.97.0',
+        providerVersion: '5.98.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -608,6 +755,7 @@ export class CognitoManagedUserPoolClient extends cdktf.TerraformResource {
     this._userPoolId = config.userPoolId;
     this._writeAttributes = config.writeAttributes;
     this._analyticsConfiguration.internalValue = config.analyticsConfiguration;
+    this._refreshTokenRotation.internalValue = config.refreshTokenRotation;
     this._tokenValidityUnits.internalValue = config.tokenValidityUnits;
   }
 
@@ -963,6 +1111,22 @@ export class CognitoManagedUserPoolClient extends cdktf.TerraformResource {
     return this._analyticsConfiguration.internalValue;
   }
 
+  // refresh_token_rotation - computed: false, optional: true, required: false
+  private _refreshTokenRotation = new CognitoManagedUserPoolClientRefreshTokenRotationList(this, "refresh_token_rotation", false);
+  public get refreshTokenRotation() {
+    return this._refreshTokenRotation;
+  }
+  public putRefreshTokenRotation(value: CognitoManagedUserPoolClientRefreshTokenRotation[] | cdktf.IResolvable) {
+    this._refreshTokenRotation.internalValue = value;
+  }
+  public resetRefreshTokenRotation() {
+    this._refreshTokenRotation.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get refreshTokenRotationInput() {
+    return this._refreshTokenRotation.internalValue;
+  }
+
   // token_validity_units - computed: false, optional: true, required: false
   private _tokenValidityUnits = new CognitoManagedUserPoolClientTokenValidityUnitsList(this, "token_validity_units", false);
   public get tokenValidityUnits() {
@@ -1006,6 +1170,7 @@ export class CognitoManagedUserPoolClient extends cdktf.TerraformResource {
       user_pool_id: cdktf.stringToTerraform(this._userPoolId),
       write_attributes: cdktf.listMapper(cdktf.stringToTerraform, false)(this._writeAttributes),
       analytics_configuration: cdktf.listMapper(cognitoManagedUserPoolClientAnalyticsConfigurationToTerraform, true)(this._analyticsConfiguration.internalValue),
+      refresh_token_rotation: cdktf.listMapper(cognitoManagedUserPoolClientRefreshTokenRotationToTerraform, true)(this._refreshTokenRotation.internalValue),
       token_validity_units: cdktf.listMapper(cognitoManagedUserPoolClientTokenValidityUnitsToTerraform, true)(this._tokenValidityUnits.internalValue),
     };
   }
@@ -1137,6 +1302,12 @@ export class CognitoManagedUserPoolClient extends cdktf.TerraformResource {
         isBlock: true,
         type: "list",
         storageClassType: "CognitoManagedUserPoolClientAnalyticsConfigurationList",
+      },
+      refresh_token_rotation: {
+        value: cdktf.listMapperHcl(cognitoManagedUserPoolClientRefreshTokenRotationToHclTerraform, true)(this._refreshTokenRotation.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "CognitoManagedUserPoolClientRefreshTokenRotationList",
       },
       token_validity_units: {
         value: cdktf.listMapperHcl(cognitoManagedUserPoolClientTokenValidityUnitsToHclTerraform, true)(this._tokenValidityUnits.internalValue),
