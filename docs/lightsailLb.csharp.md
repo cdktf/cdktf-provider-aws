@@ -4,7 +4,7 @@
 
 ### LightsailLb <a name="LightsailLb" id="@cdktf/provider-aws.lightsailLb.LightsailLb"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/lightsail_lb aws_lightsail_lb}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/lightsail_lb aws_lightsail_lb}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lightsailLb.LightsailLb.Initializer"></a>
 
@@ -502,7 +502,7 @@ The construct id used in the generated config for the LightsailLb to import.
 
 The id of the existing LightsailLb that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/lightsail_lb#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/lightsail_lb#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -953,13 +953,13 @@ new LightsailLbConfig {
 | <code><a href="#@cdktf/provider-aws.lightsailLb.LightsailLbConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lightsailLb.LightsailLbConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lightsailLb.LightsailLbConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lightsailLb.LightsailLbConfig.property.instancePort">InstancePort</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/lightsail_lb#instance_port LightsailLb#instance_port}. |
-| <code><a href="#@cdktf/provider-aws.lightsailLb.LightsailLbConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/lightsail_lb#name LightsailLb#name}. |
-| <code><a href="#@cdktf/provider-aws.lightsailLb.LightsailLbConfig.property.healthCheckPath">HealthCheckPath</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/lightsail_lb#health_check_path LightsailLb#health_check_path}. |
-| <code><a href="#@cdktf/provider-aws.lightsailLb.LightsailLbConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/lightsail_lb#id LightsailLb#id}. |
-| <code><a href="#@cdktf/provider-aws.lightsailLb.LightsailLbConfig.property.ipAddressType">IpAddressType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/lightsail_lb#ip_address_type LightsailLb#ip_address_type}. |
-| <code><a href="#@cdktf/provider-aws.lightsailLb.LightsailLbConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/lightsail_lb#tags LightsailLb#tags}. |
-| <code><a href="#@cdktf/provider-aws.lightsailLb.LightsailLbConfig.property.tagsAll">TagsAll</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/lightsail_lb#tags_all LightsailLb#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.lightsailLb.LightsailLbConfig.property.instancePort">InstancePort</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/lightsail_lb#instance_port LightsailLb#instance_port}. |
+| <code><a href="#@cdktf/provider-aws.lightsailLb.LightsailLbConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/lightsail_lb#name LightsailLb#name}. |
+| <code><a href="#@cdktf/provider-aws.lightsailLb.LightsailLbConfig.property.healthCheckPath">HealthCheckPath</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/lightsail_lb#health_check_path LightsailLb#health_check_path}. |
+| <code><a href="#@cdktf/provider-aws.lightsailLb.LightsailLbConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/lightsail_lb#id LightsailLb#id}. |
+| <code><a href="#@cdktf/provider-aws.lightsailLb.LightsailLbConfig.property.ipAddressType">IpAddressType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/lightsail_lb#ip_address_type LightsailLb#ip_address_type}. |
+| <code><a href="#@cdktf/provider-aws.lightsailLb.LightsailLbConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/lightsail_lb#tags LightsailLb#tags}. |
+| <code><a href="#@cdktf/provider-aws.lightsailLb.LightsailLbConfig.property.tagsAll">TagsAll</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/lightsail_lb#tags_all LightsailLb#tags_all}. |
 
 ---
 
@@ -1041,7 +1041,7 @@ public double InstancePort { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/lightsail_lb#instance_port LightsailLb#instance_port}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/lightsail_lb#instance_port LightsailLb#instance_port}.
 
 ---
 
@@ -1053,7 +1053,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/lightsail_lb#name LightsailLb#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/lightsail_lb#name LightsailLb#name}.
 
 ---
 
@@ -1065,7 +1065,7 @@ public string HealthCheckPath { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/lightsail_lb#health_check_path LightsailLb#health_check_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/lightsail_lb#health_check_path LightsailLb#health_check_path}.
 
 ---
 
@@ -1077,7 +1077,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/lightsail_lb#id LightsailLb#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/lightsail_lb#id LightsailLb#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1092,7 +1092,7 @@ public string IpAddressType { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/lightsail_lb#ip_address_type LightsailLb#ip_address_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/lightsail_lb#ip_address_type LightsailLb#ip_address_type}.
 
 ---
 
@@ -1104,7 +1104,7 @@ public System.Collections.Generic.IDictionary<string, string> Tags { get; set; }
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/lightsail_lb#tags LightsailLb#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/lightsail_lb#tags LightsailLb#tags}.
 
 ---
 
@@ -1116,7 +1116,7 @@ public System.Collections.Generic.IDictionary<string, string> TagsAll { get; set
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/lightsail_lb#tags_all LightsailLb#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/lightsail_lb#tags_all LightsailLb#tags_all}.
 
 ---
 

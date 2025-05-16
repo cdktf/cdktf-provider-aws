@@ -1,3 +1,8 @@
+/**
+ * Copyright (c) HashiCorp, Inc.
+ * SPDX-License-Identifier: MPL-2.0
+ */
+
 // https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/vpc_endpoint_service_allowed_principal
 // generated from terraform resource schema
 

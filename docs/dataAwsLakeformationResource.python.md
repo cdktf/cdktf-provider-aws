@@ -4,7 +4,7 @@
 
 ### DataAwsLakeformationResource <a name="DataAwsLakeformationResource" id="@cdktf/provider-aws.dataAwsLakeformationResource.DataAwsLakeformationResource"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/data-sources/lakeformation_resource aws_lakeformation_resource}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/data-sources/lakeformation_resource aws_lakeformation_resource}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsLakeformationResource.DataAwsLakeformationResource.Initializer"></a>
 
@@ -37,8 +37,8 @@ dataAwsLakeformationResource.DataAwsLakeformationResource(
 | <code><a href="#@cdktf/provider-aws.dataAwsLakeformationResource.DataAwsLakeformationResource.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsLakeformationResource.DataAwsLakeformationResource.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsLakeformationResource.DataAwsLakeformationResource.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsLakeformationResource.DataAwsLakeformationResource.Initializer.parameter.arn">arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/data-sources/lakeformation_resource#arn DataAwsLakeformationResource#arn}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsLakeformationResource.DataAwsLakeformationResource.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/data-sources/lakeformation_resource#id DataAwsLakeformationResource#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsLakeformationResource.DataAwsLakeformationResource.Initializer.parameter.arn">arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/data-sources/lakeformation_resource#arn DataAwsLakeformationResource#arn}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsLakeformationResource.DataAwsLakeformationResource.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/data-sources/lakeformation_resource#id DataAwsLakeformationResource#id}. |
 
 ---
 
@@ -106,7 +106,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/data-sources/lakeformation_resource#arn DataAwsLakeformationResource#arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/data-sources/lakeformation_resource#arn DataAwsLakeformationResource#arn}.
 
 ---
 
@@ -114,7 +114,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/data-sources/lakeformation_resource#id DataAwsLakeformationResource#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/data-sources/lakeformation_resource#id DataAwsLakeformationResource#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -483,7 +483,7 @@ The construct id used in the generated config for the DataAwsLakeformationResour
 
 The id of the existing DataAwsLakeformationResource that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/data-sources/lakeformation_resource#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/data-sources/lakeformation_resource#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -753,8 +753,8 @@ dataAwsLakeformationResource.DataAwsLakeformationResourceConfig(
 | <code><a href="#@cdktf/provider-aws.dataAwsLakeformationResource.DataAwsLakeformationResourceConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsLakeformationResource.DataAwsLakeformationResourceConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsLakeformationResource.DataAwsLakeformationResourceConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsLakeformationResource.DataAwsLakeformationResourceConfig.property.arn">arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/data-sources/lakeformation_resource#arn DataAwsLakeformationResource#arn}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsLakeformationResource.DataAwsLakeformationResourceConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/data-sources/lakeformation_resource#id DataAwsLakeformationResource#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsLakeformationResource.DataAwsLakeformationResourceConfig.property.arn">arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/data-sources/lakeformation_resource#arn DataAwsLakeformationResource#arn}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsLakeformationResource.DataAwsLakeformationResourceConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/data-sources/lakeformation_resource#id DataAwsLakeformationResource#id}. |
 
 ---
 
@@ -836,7 +836,7 @@ arn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/data-sources/lakeformation_resource#arn DataAwsLakeformationResource#arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/data-sources/lakeformation_resource#arn DataAwsLakeformationResource#arn}.
 
 ---
 
@@ -848,7 +848,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/data-sources/lakeformation_resource#id DataAwsLakeformationResource#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/data-sources/lakeformation_resource#id DataAwsLakeformationResource#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
