@@ -4,7 +4,7 @@
 
 ### SnapshotCreateVolumePermission <a name="SnapshotCreateVolumePermission" id="@cdktf/provider-aws.snapshotCreateVolumePermission.SnapshotCreateVolumePermission"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/snapshot_create_volume_permission aws_snapshot_create_volume_permission}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/snapshot_create_volume_permission aws_snapshot_create_volume_permission}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.snapshotCreateVolumePermission.SnapshotCreateVolumePermission.Initializer"></a>
 
@@ -41,9 +41,9 @@ SnapshotCreateVolumePermission.Builder.create(Construct scope, java.lang.String 
 | <code><a href="#@cdktf/provider-aws.snapshotCreateVolumePermission.SnapshotCreateVolumePermission.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.snapshotCreateVolumePermission.SnapshotCreateVolumePermission.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.snapshotCreateVolumePermission.SnapshotCreateVolumePermission.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snapshotCreateVolumePermission.SnapshotCreateVolumePermission.Initializer.parameter.accountId">accountId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/snapshot_create_volume_permission#account_id SnapshotCreateVolumePermission#account_id}. |
-| <code><a href="#@cdktf/provider-aws.snapshotCreateVolumePermission.SnapshotCreateVolumePermission.Initializer.parameter.snapshotId">snapshotId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/snapshot_create_volume_permission#snapshot_id SnapshotCreateVolumePermission#snapshot_id}. |
-| <code><a href="#@cdktf/provider-aws.snapshotCreateVolumePermission.SnapshotCreateVolumePermission.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/snapshot_create_volume_permission#id SnapshotCreateVolumePermission#id}. |
+| <code><a href="#@cdktf/provider-aws.snapshotCreateVolumePermission.SnapshotCreateVolumePermission.Initializer.parameter.accountId">accountId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/snapshot_create_volume_permission#account_id SnapshotCreateVolumePermission#account_id}. |
+| <code><a href="#@cdktf/provider-aws.snapshotCreateVolumePermission.SnapshotCreateVolumePermission.Initializer.parameter.snapshotId">snapshotId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/snapshot_create_volume_permission#snapshot_id SnapshotCreateVolumePermission#snapshot_id}. |
+| <code><a href="#@cdktf/provider-aws.snapshotCreateVolumePermission.SnapshotCreateVolumePermission.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/snapshot_create_volume_permission#id SnapshotCreateVolumePermission#id}. |
 | <code><a href="#@cdktf/provider-aws.snapshotCreateVolumePermission.SnapshotCreateVolumePermission.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-aws.snapshotCreateVolumePermission.SnapshotCreateVolumePermissionTimeouts">SnapshotCreateVolumePermissionTimeouts</a></code> | timeouts block. |
 
 ---
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/snapshot_create_volume_permission#account_id SnapshotCreateVolumePermission#account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/snapshot_create_volume_permission#account_id SnapshotCreateVolumePermission#account_id}.
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/snapshot_create_volume_permission#snapshot_id SnapshotCreateVolumePermission#snapshot_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/snapshot_create_volume_permission#snapshot_id SnapshotCreateVolumePermission#snapshot_id}.
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/snapshot_create_volume_permission#id SnapshotCreateVolumePermission#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/snapshot_create_volume_permission#id SnapshotCreateVolumePermission#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -141,7 +141,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/snapshot_create_volume_permission#timeouts SnapshotCreateVolumePermission#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/snapshot_create_volume_permission#timeouts SnapshotCreateVolumePermission#timeouts}
 
 ---
 
@@ -595,7 +595,7 @@ The construct id used in the generated config for the SnapshotCreateVolumePermis
 
 The id of the existing SnapshotCreateVolumePermission that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/snapshot_create_volume_permission#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/snapshot_create_volume_permission#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -915,9 +915,9 @@ SnapshotCreateVolumePermissionConfig.builder()
 | <code><a href="#@cdktf/provider-aws.snapshotCreateVolumePermission.SnapshotCreateVolumePermissionConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.snapshotCreateVolumePermission.SnapshotCreateVolumePermissionConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.snapshotCreateVolumePermission.SnapshotCreateVolumePermissionConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snapshotCreateVolumePermission.SnapshotCreateVolumePermissionConfig.property.accountId">accountId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/snapshot_create_volume_permission#account_id SnapshotCreateVolumePermission#account_id}. |
-| <code><a href="#@cdktf/provider-aws.snapshotCreateVolumePermission.SnapshotCreateVolumePermissionConfig.property.snapshotId">snapshotId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/snapshot_create_volume_permission#snapshot_id SnapshotCreateVolumePermission#snapshot_id}. |
-| <code><a href="#@cdktf/provider-aws.snapshotCreateVolumePermission.SnapshotCreateVolumePermissionConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/snapshot_create_volume_permission#id SnapshotCreateVolumePermission#id}. |
+| <code><a href="#@cdktf/provider-aws.snapshotCreateVolumePermission.SnapshotCreateVolumePermissionConfig.property.accountId">accountId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/snapshot_create_volume_permission#account_id SnapshotCreateVolumePermission#account_id}. |
+| <code><a href="#@cdktf/provider-aws.snapshotCreateVolumePermission.SnapshotCreateVolumePermissionConfig.property.snapshotId">snapshotId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/snapshot_create_volume_permission#snapshot_id SnapshotCreateVolumePermission#snapshot_id}. |
+| <code><a href="#@cdktf/provider-aws.snapshotCreateVolumePermission.SnapshotCreateVolumePermissionConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/snapshot_create_volume_permission#id SnapshotCreateVolumePermission#id}. |
 | <code><a href="#@cdktf/provider-aws.snapshotCreateVolumePermission.SnapshotCreateVolumePermissionConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-aws.snapshotCreateVolumePermission.SnapshotCreateVolumePermissionTimeouts">SnapshotCreateVolumePermissionTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1000,7 +1000,7 @@ public java.lang.String getAccountId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/snapshot_create_volume_permission#account_id SnapshotCreateVolumePermission#account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/snapshot_create_volume_permission#account_id SnapshotCreateVolumePermission#account_id}.
 
 ---
 
@@ -1012,7 +1012,7 @@ public java.lang.String getSnapshotId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/snapshot_create_volume_permission#snapshot_id SnapshotCreateVolumePermission#snapshot_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/snapshot_create_volume_permission#snapshot_id SnapshotCreateVolumePermission#snapshot_id}.
 
 ---
 
@@ -1024,7 +1024,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/snapshot_create_volume_permission#id SnapshotCreateVolumePermission#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/snapshot_create_volume_permission#id SnapshotCreateVolumePermission#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1041,7 +1041,7 @@ public SnapshotCreateVolumePermissionTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/snapshot_create_volume_permission#timeouts SnapshotCreateVolumePermission#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/snapshot_create_volume_permission#timeouts SnapshotCreateVolumePermission#timeouts}
 
 ---
 
@@ -1062,8 +1062,8 @@ SnapshotCreateVolumePermissionTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.snapshotCreateVolumePermission.SnapshotCreateVolumePermissionTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/snapshot_create_volume_permission#create SnapshotCreateVolumePermission#create}. |
-| <code><a href="#@cdktf/provider-aws.snapshotCreateVolumePermission.SnapshotCreateVolumePermissionTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/snapshot_create_volume_permission#delete SnapshotCreateVolumePermission#delete}. |
+| <code><a href="#@cdktf/provider-aws.snapshotCreateVolumePermission.SnapshotCreateVolumePermissionTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/snapshot_create_volume_permission#create SnapshotCreateVolumePermission#create}. |
+| <code><a href="#@cdktf/provider-aws.snapshotCreateVolumePermission.SnapshotCreateVolumePermissionTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/snapshot_create_volume_permission#delete SnapshotCreateVolumePermission#delete}. |
 
 ---
 
@@ -1075,7 +1075,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/snapshot_create_volume_permission#create SnapshotCreateVolumePermission#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/snapshot_create_volume_permission#create SnapshotCreateVolumePermission#create}.
 
 ---
 
@@ -1087,7 +1087,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/snapshot_create_volume_permission#delete SnapshotCreateVolumePermission#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/snapshot_create_volume_permission#delete SnapshotCreateVolumePermission#delete}.
 
 ---
 

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/prometheus_scraper
+// https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/prometheus_scraper
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,45 +13,45 @@ import * as cdktf from 'cdktf';
 
 export interface PrometheusScraperConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/prometheus_scraper#alias PrometheusScraper#alias}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/prometheus_scraper#alias PrometheusScraper#alias}
   */
   readonly alias?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/prometheus_scraper#scrape_configuration PrometheusScraper#scrape_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/prometheus_scraper#scrape_configuration PrometheusScraper#scrape_configuration}
   */
   readonly scrapeConfiguration: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/prometheus_scraper#tags PrometheusScraper#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/prometheus_scraper#tags PrometheusScraper#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
   * destination block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/prometheus_scraper#destination PrometheusScraper#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/prometheus_scraper#destination PrometheusScraper#destination}
   */
   readonly destination?: PrometheusScraperDestination[] | cdktf.IResolvable;
   /**
   * role_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/prometheus_scraper#role_configuration PrometheusScraper#role_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/prometheus_scraper#role_configuration PrometheusScraper#role_configuration}
   */
   readonly roleConfiguration?: PrometheusScraperRoleConfiguration[] | cdktf.IResolvable;
   /**
   * source block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/prometheus_scraper#source PrometheusScraper#source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/prometheus_scraper#source PrometheusScraper#source}
   */
   readonly source?: PrometheusScraperSource[] | cdktf.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/prometheus_scraper#timeouts PrometheusScraper#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/prometheus_scraper#timeouts PrometheusScraper#timeouts}
   */
   readonly timeouts?: PrometheusScraperTimeouts;
 }
 export interface PrometheusScraperDestinationAmp {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/prometheus_scraper#workspace_arn PrometheusScraper#workspace_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/prometheus_scraper#workspace_arn PrometheusScraper#workspace_arn}
   */
   readonly workspaceArn: string;
 }
@@ -166,7 +166,7 @@ export interface PrometheusScraperDestination {
   /**
   * amp block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/prometheus_scraper#amp PrometheusScraper#amp}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/prometheus_scraper#amp PrometheusScraper#amp}
   */
   readonly amp?: PrometheusScraperDestinationAmp[] | cdktf.IResolvable;
 }
@@ -282,11 +282,11 @@ export class PrometheusScraperDestinationList extends cdktf.ComplexList {
 }
 export interface PrometheusScraperRoleConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/prometheus_scraper#source_role_arn PrometheusScraper#source_role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/prometheus_scraper#source_role_arn PrometheusScraper#source_role_arn}
   */
   readonly sourceRoleArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/prometheus_scraper#target_role_arn PrometheusScraper#target_role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/prometheus_scraper#target_role_arn PrometheusScraper#target_role_arn}
   */
   readonly targetRoleArn?: string;
 }
@@ -431,15 +431,15 @@ export class PrometheusScraperRoleConfigurationList extends cdktf.ComplexList {
 }
 export interface PrometheusScraperSourceEks {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/prometheus_scraper#cluster_arn PrometheusScraper#cluster_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/prometheus_scraper#cluster_arn PrometheusScraper#cluster_arn}
   */
   readonly clusterArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/prometheus_scraper#security_group_ids PrometheusScraper#security_group_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/prometheus_scraper#security_group_ids PrometheusScraper#security_group_ids}
   */
   readonly securityGroupIds?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/prometheus_scraper#subnet_ids PrometheusScraper#subnet_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/prometheus_scraper#subnet_ids PrometheusScraper#subnet_ids}
   */
   readonly subnetIds: string[];
 }
@@ -609,7 +609,7 @@ export interface PrometheusScraperSource {
   /**
   * eks block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/prometheus_scraper#eks PrometheusScraper#eks}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/prometheus_scraper#eks PrometheusScraper#eks}
   */
   readonly eks?: PrometheusScraperSourceEks[] | cdktf.IResolvable;
 }
@@ -727,19 +727,19 @@ export interface PrometheusScraperTimeouts {
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/prometheus_scraper#create PrometheusScraper#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/prometheus_scraper#create PrometheusScraper#create}
   */
   readonly create?: string;
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/prometheus_scraper#delete PrometheusScraper#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/prometheus_scraper#delete PrometheusScraper#delete}
   */
   readonly delete?: string;
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/prometheus_scraper#update PrometheusScraper#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/prometheus_scraper#update PrometheusScraper#update}
   */
   readonly update?: string;
 }
@@ -891,7 +891,7 @@ export class PrometheusScraperTimeoutsOutputReference extends cdktf.ComplexObjec
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/prometheus_scraper aws_prometheus_scraper}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/prometheus_scraper aws_prometheus_scraper}
 */
 export class PrometheusScraper extends cdktf.TerraformResource {
 
@@ -907,7 +907,7 @@ export class PrometheusScraper extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a PrometheusScraper resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the PrometheusScraper to import
-  * @param importFromId The id of the existing PrometheusScraper that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/prometheus_scraper#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing PrometheusScraper that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/prometheus_scraper#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the PrometheusScraper to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -919,7 +919,7 @@ export class PrometheusScraper extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/prometheus_scraper aws_prometheus_scraper} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/prometheus_scraper aws_prometheus_scraper} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -930,7 +930,7 @@ export class PrometheusScraper extends cdktf.TerraformResource {
       terraformResourceType: 'aws_prometheus_scraper',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.98.0',
+        providerVersion: '5.99.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

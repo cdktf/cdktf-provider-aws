@@ -4,7 +4,7 @@
 
 ### LightsailDomain <a name="LightsailDomain" id="@cdktf/provider-aws.lightsailDomain.LightsailDomain"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/lightsail_domain aws_lightsail_domain}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/lightsail_domain aws_lightsail_domain}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lightsailDomain.LightsailDomain.Initializer"></a>
 
@@ -37,8 +37,8 @@ lightsailDomain.LightsailDomain(
 | <code><a href="#@cdktf/provider-aws.lightsailDomain.LightsailDomain.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lightsailDomain.LightsailDomain.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lightsailDomain.LightsailDomain.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lightsailDomain.LightsailDomain.Initializer.parameter.domainName">domain_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/lightsail_domain#domain_name LightsailDomain#domain_name}. |
-| <code><a href="#@cdktf/provider-aws.lightsailDomain.LightsailDomain.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/lightsail_domain#id LightsailDomain#id}. |
+| <code><a href="#@cdktf/provider-aws.lightsailDomain.LightsailDomain.Initializer.parameter.domainName">domain_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/lightsail_domain#domain_name LightsailDomain#domain_name}. |
+| <code><a href="#@cdktf/provider-aws.lightsailDomain.LightsailDomain.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/lightsail_domain#id LightsailDomain#id}. |
 
 ---
 
@@ -106,7 +106,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/lightsail_domain#domain_name LightsailDomain#domain_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/lightsail_domain#domain_name LightsailDomain#domain_name}.
 
 ---
 
@@ -114,7 +114,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/lightsail_domain#id LightsailDomain#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/lightsail_domain#id LightsailDomain#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -597,7 +597,7 @@ The construct id used in the generated config for the LightsailDomain to import.
 
 The id of the existing LightsailDomain that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/lightsail_domain#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/lightsail_domain#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -878,8 +878,8 @@ lightsailDomain.LightsailDomainConfig(
 | <code><a href="#@cdktf/provider-aws.lightsailDomain.LightsailDomainConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lightsailDomain.LightsailDomainConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lightsailDomain.LightsailDomainConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lightsailDomain.LightsailDomainConfig.property.domainName">domain_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/lightsail_domain#domain_name LightsailDomain#domain_name}. |
-| <code><a href="#@cdktf/provider-aws.lightsailDomain.LightsailDomainConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/lightsail_domain#id LightsailDomain#id}. |
+| <code><a href="#@cdktf/provider-aws.lightsailDomain.LightsailDomainConfig.property.domainName">domain_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/lightsail_domain#domain_name LightsailDomain#domain_name}. |
+| <code><a href="#@cdktf/provider-aws.lightsailDomain.LightsailDomainConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/lightsail_domain#id LightsailDomain#id}. |
 
 ---
 
@@ -961,7 +961,7 @@ domain_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/lightsail_domain#domain_name LightsailDomain#domain_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/lightsail_domain#domain_name LightsailDomain#domain_name}.
 
 ---
 
@@ -973,7 +973,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/lightsail_domain#id LightsailDomain#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/lightsail_domain#id LightsailDomain#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
