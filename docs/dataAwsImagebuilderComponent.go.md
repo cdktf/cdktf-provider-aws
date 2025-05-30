@@ -4,7 +4,7 @@
 
 ### DataAwsImagebuilderComponent <a name="DataAwsImagebuilderComponent" id="@cdktf/provider-aws.dataAwsImagebuilderComponent.DataAwsImagebuilderComponent"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/data-sources/imagebuilder_component aws_imagebuilder_component}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/data-sources/imagebuilder_component aws_imagebuilder_component}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsImagebuilderComponent.DataAwsImagebuilderComponent.Initializer"></a>
 
@@ -379,7 +379,7 @@ The construct id used in the generated config for the DataAwsImagebuilderCompone
 
 The id of the existing DataAwsImagebuilderComponent that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/data-sources/imagebuilder_component#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/data-sources/imagebuilder_component#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -782,9 +782,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsimagebuildercompon
 | <code><a href="#@cdktf/provider-aws.dataAwsImagebuilderComponent.DataAwsImagebuilderComponentConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsImagebuilderComponent.DataAwsImagebuilderComponentConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsImagebuilderComponent.DataAwsImagebuilderComponentConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsImagebuilderComponent.DataAwsImagebuilderComponentConfig.property.arn">Arn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/data-sources/imagebuilder_component#arn DataAwsImagebuilderComponent#arn}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsImagebuilderComponent.DataAwsImagebuilderComponentConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/data-sources/imagebuilder_component#id DataAwsImagebuilderComponent#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsImagebuilderComponent.DataAwsImagebuilderComponentConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/data-sources/imagebuilder_component#tags DataAwsImagebuilderComponent#tags}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsImagebuilderComponent.DataAwsImagebuilderComponentConfig.property.arn">Arn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/data-sources/imagebuilder_component#arn DataAwsImagebuilderComponent#arn}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsImagebuilderComponent.DataAwsImagebuilderComponentConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/data-sources/imagebuilder_component#id DataAwsImagebuilderComponent#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsImagebuilderComponent.DataAwsImagebuilderComponentConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/data-sources/imagebuilder_component#tags DataAwsImagebuilderComponent#tags}. |
 
 ---
 
@@ -866,7 +866,7 @@ Arn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/data-sources/imagebuilder_component#arn DataAwsImagebuilderComponent#arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/data-sources/imagebuilder_component#arn DataAwsImagebuilderComponent#arn}.
 
 ---
 
@@ -878,7 +878,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/data-sources/imagebuilder_component#id DataAwsImagebuilderComponent#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/data-sources/imagebuilder_component#id DataAwsImagebuilderComponent#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -893,7 +893,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/data-sources/imagebuilder_component#tags DataAwsImagebuilderComponent#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/data-sources/imagebuilder_component#tags DataAwsImagebuilderComponent#tags}.
 
 ---
 
