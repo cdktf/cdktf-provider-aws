@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/ec2_managed_prefix_list
+// https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/ec2_managed_prefix_list
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,46 +8,46 @@ import * as cdktf from 'cdktf';
 
 export interface Ec2ManagedPrefixListConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/ec2_managed_prefix_list#address_family Ec2ManagedPrefixList#address_family}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/ec2_managed_prefix_list#address_family Ec2ManagedPrefixList#address_family}
   */
   readonly addressFamily: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/ec2_managed_prefix_list#id Ec2ManagedPrefixList#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/ec2_managed_prefix_list#id Ec2ManagedPrefixList#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/ec2_managed_prefix_list#max_entries Ec2ManagedPrefixList#max_entries}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/ec2_managed_prefix_list#max_entries Ec2ManagedPrefixList#max_entries}
   */
   readonly maxEntries: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/ec2_managed_prefix_list#name Ec2ManagedPrefixList#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/ec2_managed_prefix_list#name Ec2ManagedPrefixList#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/ec2_managed_prefix_list#tags Ec2ManagedPrefixList#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/ec2_managed_prefix_list#tags Ec2ManagedPrefixList#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/ec2_managed_prefix_list#tags_all Ec2ManagedPrefixList#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/ec2_managed_prefix_list#tags_all Ec2ManagedPrefixList#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
   * entry block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/ec2_managed_prefix_list#entry Ec2ManagedPrefixList#entry}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/ec2_managed_prefix_list#entry Ec2ManagedPrefixList#entry}
   */
   readonly entry?: Ec2ManagedPrefixListEntry[] | cdktf.IResolvable;
 }
 export interface Ec2ManagedPrefixListEntry {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/ec2_managed_prefix_list#cidr Ec2ManagedPrefixList#cidr}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/ec2_managed_prefix_list#cidr Ec2ManagedPrefixList#cidr}
   */
   readonly cidr: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/ec2_managed_prefix_list#description Ec2ManagedPrefixList#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/ec2_managed_prefix_list#description Ec2ManagedPrefixList#description}
   */
   readonly description?: string;
 }
@@ -194,7 +189,7 @@ export class Ec2ManagedPrefixListEntryList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/ec2_managed_prefix_list aws_ec2_managed_prefix_list}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/ec2_managed_prefix_list aws_ec2_managed_prefix_list}
 */
 export class Ec2ManagedPrefixList extends cdktf.TerraformResource {
 
@@ -210,7 +205,7 @@ export class Ec2ManagedPrefixList extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a Ec2ManagedPrefixList resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Ec2ManagedPrefixList to import
-  * @param importFromId The id of the existing Ec2ManagedPrefixList that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/ec2_managed_prefix_list#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Ec2ManagedPrefixList that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/ec2_managed_prefix_list#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Ec2ManagedPrefixList to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -222,7 +217,7 @@ export class Ec2ManagedPrefixList extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/ec2_managed_prefix_list aws_ec2_managed_prefix_list} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/ec2_managed_prefix_list aws_ec2_managed_prefix_list} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -233,7 +228,7 @@ export class Ec2ManagedPrefixList extends cdktf.TerraformResource {
       terraformResourceType: 'aws_ec2_managed_prefix_list',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.98.0',
+        providerVersion: '5.99.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

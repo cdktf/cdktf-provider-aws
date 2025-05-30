@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/wafv2_api_key
+// https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/wafv2_api_key
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,19 +10,19 @@ export interface Wafv2ApiKeyConfig extends cdktf.TerraformMetaArguments {
   /**
   * Specifies whether this is for an AWS CloudFront distribution or for a regional application. Valid values are CLOUDFRONT or REGIONAL.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/wafv2_api_key#scope Wafv2ApiKey#scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/wafv2_api_key#scope Wafv2ApiKey#scope}
   */
   readonly scope: string;
   /**
   * The domains that you want to be able to use the API key with, for example example.com. Maximum of 5 domains.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/wafv2_api_key#token_domains Wafv2ApiKey#token_domains}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/wafv2_api_key#token_domains Wafv2ApiKey#token_domains}
   */
   readonly tokenDomains: string[];
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/wafv2_api_key aws_wafv2_api_key}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/wafv2_api_key aws_wafv2_api_key}
 */
 export class Wafv2ApiKey extends cdktf.TerraformResource {
 
@@ -43,7 +38,7 @@ export class Wafv2ApiKey extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a Wafv2ApiKey resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Wafv2ApiKey to import
-  * @param importFromId The id of the existing Wafv2ApiKey that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/wafv2_api_key#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Wafv2ApiKey that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/wafv2_api_key#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Wafv2ApiKey to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -55,7 +50,7 @@ export class Wafv2ApiKey extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/wafv2_api_key aws_wafv2_api_key} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/wafv2_api_key aws_wafv2_api_key} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -66,7 +61,7 @@ export class Wafv2ApiKey extends cdktf.TerraformResource {
       terraformResourceType: 'aws_wafv2_api_key',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.98.0',
+        providerVersion: '5.99.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

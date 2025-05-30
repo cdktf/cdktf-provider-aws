@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/data-sources/account_primary_contact
+// https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/data-sources/account_primary_contact
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,13 +8,13 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsAccountPrimaryContactConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/data-sources/account_primary_contact#account_id DataAwsAccountPrimaryContact#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/data-sources/account_primary_contact#account_id DataAwsAccountPrimaryContact#account_id}
   */
   readonly accountId?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/data-sources/account_primary_contact aws_account_primary_contact}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/data-sources/account_primary_contact aws_account_primary_contact}
 */
 export class DataAwsAccountPrimaryContact extends cdktf.TerraformDataSource {
 
@@ -35,7 +30,7 @@ export class DataAwsAccountPrimaryContact extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataAwsAccountPrimaryContact resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsAccountPrimaryContact to import
-  * @param importFromId The id of the existing DataAwsAccountPrimaryContact that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/data-sources/account_primary_contact#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsAccountPrimaryContact that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/data-sources/account_primary_contact#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsAccountPrimaryContact to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -47,7 +42,7 @@ export class DataAwsAccountPrimaryContact extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/data-sources/account_primary_contact aws_account_primary_contact} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/data-sources/account_primary_contact aws_account_primary_contact} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -58,7 +53,7 @@ export class DataAwsAccountPrimaryContact extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_account_primary_contact',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.98.0',
+        providerVersion: '5.99.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
