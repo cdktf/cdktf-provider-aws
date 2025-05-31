@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/waf_web_acl
+// https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/resources/waf_web_acl
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,50 +13,50 @@ import * as cdktf from 'cdktf';
 
 export interface WafWebAclConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/waf_web_acl#id WafWebAcl#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/resources/waf_web_acl#id WafWebAcl#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/waf_web_acl#metric_name WafWebAcl#metric_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/resources/waf_web_acl#metric_name WafWebAcl#metric_name}
   */
   readonly metricName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/waf_web_acl#name WafWebAcl#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/resources/waf_web_acl#name WafWebAcl#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/waf_web_acl#tags WafWebAcl#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/resources/waf_web_acl#tags WafWebAcl#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/waf_web_acl#tags_all WafWebAcl#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/resources/waf_web_acl#tags_all WafWebAcl#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
   * default_action block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/waf_web_acl#default_action WafWebAcl#default_action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/resources/waf_web_acl#default_action WafWebAcl#default_action}
   */
   readonly defaultAction: WafWebAclDefaultAction;
   /**
   * logging_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/waf_web_acl#logging_configuration WafWebAcl#logging_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/resources/waf_web_acl#logging_configuration WafWebAcl#logging_configuration}
   */
   readonly loggingConfiguration?: WafWebAclLoggingConfiguration;
   /**
   * rules block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/waf_web_acl#rules WafWebAcl#rules}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/resources/waf_web_acl#rules WafWebAcl#rules}
   */
   readonly rules?: WafWebAclRules[] | cdktf.IResolvable;
 }
 export interface WafWebAclDefaultAction {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/waf_web_acl#type WafWebAcl#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/resources/waf_web_acl#type WafWebAcl#type}
   */
   readonly type: string;
 }
@@ -137,11 +137,11 @@ export class WafWebAclDefaultActionOutputReference extends cdktf.ComplexObject {
 }
 export interface WafWebAclLoggingConfigurationRedactedFieldsFieldToMatch {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/waf_web_acl#data WafWebAcl#data}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/resources/waf_web_acl#data WafWebAcl#data}
   */
   readonly data?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/waf_web_acl#type WafWebAcl#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/resources/waf_web_acl#type WafWebAcl#type}
   */
   readonly type: string;
 }
@@ -285,7 +285,7 @@ export interface WafWebAclLoggingConfigurationRedactedFields {
   /**
   * field_to_match block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/waf_web_acl#field_to_match WafWebAcl#field_to_match}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/resources/waf_web_acl#field_to_match WafWebAcl#field_to_match}
   */
   readonly fieldToMatch: WafWebAclLoggingConfigurationRedactedFieldsFieldToMatch[] | cdktf.IResolvable;
 }
@@ -366,13 +366,13 @@ export class WafWebAclLoggingConfigurationRedactedFieldsOutputReference extends 
 }
 export interface WafWebAclLoggingConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/waf_web_acl#log_destination WafWebAcl#log_destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/resources/waf_web_acl#log_destination WafWebAcl#log_destination}
   */
   readonly logDestination: string;
   /**
   * redacted_fields block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/waf_web_acl#redacted_fields WafWebAcl#redacted_fields}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/resources/waf_web_acl#redacted_fields WafWebAcl#redacted_fields}
   */
   readonly redactedFields?: WafWebAclLoggingConfigurationRedactedFields;
 }
@@ -482,7 +482,7 @@ export class WafWebAclLoggingConfigurationOutputReference extends cdktf.ComplexO
 }
 export interface WafWebAclRulesAction {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/waf_web_acl#type WafWebAcl#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/resources/waf_web_acl#type WafWebAcl#type}
   */
   readonly type: string;
 }
@@ -563,7 +563,7 @@ export class WafWebAclRulesActionOutputReference extends cdktf.ComplexObject {
 }
 export interface WafWebAclRulesOverrideAction {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/waf_web_acl#type WafWebAcl#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/resources/waf_web_acl#type WafWebAcl#type}
   */
   readonly type: string;
 }
@@ -644,27 +644,27 @@ export class WafWebAclRulesOverrideActionOutputReference extends cdktf.ComplexOb
 }
 export interface WafWebAclRules {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/waf_web_acl#priority WafWebAcl#priority}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/resources/waf_web_acl#priority WafWebAcl#priority}
   */
   readonly priority: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/waf_web_acl#rule_id WafWebAcl#rule_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/resources/waf_web_acl#rule_id WafWebAcl#rule_id}
   */
   readonly ruleId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/waf_web_acl#type WafWebAcl#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/resources/waf_web_acl#type WafWebAcl#type}
   */
   readonly type?: string;
   /**
   * action block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/waf_web_acl#action WafWebAcl#action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/resources/waf_web_acl#action WafWebAcl#action}
   */
   readonly action?: WafWebAclRulesAction;
   /**
   * override_action block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/waf_web_acl#override_action WafWebAcl#override_action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/resources/waf_web_acl#override_action WafWebAcl#override_action}
   */
   readonly overrideAction?: WafWebAclRulesOverrideAction;
 }
@@ -890,7 +890,7 @@ export class WafWebAclRulesList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/waf_web_acl aws_waf_web_acl}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/resources/waf_web_acl aws_waf_web_acl}
 */
 export class WafWebAcl extends cdktf.TerraformResource {
 
@@ -906,7 +906,7 @@ export class WafWebAcl extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a WafWebAcl resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the WafWebAcl to import
-  * @param importFromId The id of the existing WafWebAcl that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/waf_web_acl#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing WafWebAcl that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/resources/waf_web_acl#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the WafWebAcl to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -918,7 +918,7 @@ export class WafWebAcl extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/waf_web_acl aws_waf_web_acl} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/resources/waf_web_acl aws_waf_web_acl} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -929,7 +929,7 @@ export class WafWebAcl extends cdktf.TerraformResource {
       terraformResourceType: 'aws_waf_web_acl',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.99.0',
+        providerVersion: '5.99.1',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

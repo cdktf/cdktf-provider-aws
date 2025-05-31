@@ -4,7 +4,7 @@
 
 ### DataAwsIamSamlProvider <a name="DataAwsIamSamlProvider" id="@cdktf/provider-aws.dataAwsIamSamlProvider.DataAwsIamSamlProvider"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/data-sources/iam_saml_provider aws_iam_saml_provider}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/data-sources/iam_saml_provider aws_iam_saml_provider}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsIamSamlProvider.DataAwsIamSamlProvider.Initializer"></a>
 
@@ -38,9 +38,9 @@ dataAwsIamSamlProvider.DataAwsIamSamlProvider(
 | <code><a href="#@cdktf/provider-aws.dataAwsIamSamlProvider.DataAwsIamSamlProvider.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsIamSamlProvider.DataAwsIamSamlProvider.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsIamSamlProvider.DataAwsIamSamlProvider.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsIamSamlProvider.DataAwsIamSamlProvider.Initializer.parameter.arn">arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/data-sources/iam_saml_provider#arn DataAwsIamSamlProvider#arn}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsIamSamlProvider.DataAwsIamSamlProvider.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/data-sources/iam_saml_provider#id DataAwsIamSamlProvider#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsIamSamlProvider.DataAwsIamSamlProvider.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/data-sources/iam_saml_provider#tags DataAwsIamSamlProvider#tags}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsIamSamlProvider.DataAwsIamSamlProvider.Initializer.parameter.arn">arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/data-sources/iam_saml_provider#arn DataAwsIamSamlProvider#arn}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsIamSamlProvider.DataAwsIamSamlProvider.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/data-sources/iam_saml_provider#id DataAwsIamSamlProvider#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsIamSamlProvider.DataAwsIamSamlProvider.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/data-sources/iam_saml_provider#tags DataAwsIamSamlProvider#tags}. |
 
 ---
 
@@ -108,7 +108,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/data-sources/iam_saml_provider#arn DataAwsIamSamlProvider#arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/data-sources/iam_saml_provider#arn DataAwsIamSamlProvider#arn}.
 
 ---
 
@@ -116,7 +116,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/data-sources/iam_saml_provider#id DataAwsIamSamlProvider#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/data-sources/iam_saml_provider#id DataAwsIamSamlProvider#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -127,7 +127,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/data-sources/iam_saml_provider#tags DataAwsIamSamlProvider#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/data-sources/iam_saml_provider#tags DataAwsIamSamlProvider#tags}.
 
 ---
 
@@ -500,7 +500,7 @@ The construct id used in the generated config for the DataAwsIamSamlProvider to 
 
 The id of the existing DataAwsIamSamlProvider that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/data-sources/iam_saml_provider#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/data-sources/iam_saml_provider#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -815,9 +815,9 @@ dataAwsIamSamlProvider.DataAwsIamSamlProviderConfig(
 | <code><a href="#@cdktf/provider-aws.dataAwsIamSamlProvider.DataAwsIamSamlProviderConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsIamSamlProvider.DataAwsIamSamlProviderConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsIamSamlProvider.DataAwsIamSamlProviderConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsIamSamlProvider.DataAwsIamSamlProviderConfig.property.arn">arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/data-sources/iam_saml_provider#arn DataAwsIamSamlProvider#arn}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsIamSamlProvider.DataAwsIamSamlProviderConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/data-sources/iam_saml_provider#id DataAwsIamSamlProvider#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsIamSamlProvider.DataAwsIamSamlProviderConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/data-sources/iam_saml_provider#tags DataAwsIamSamlProvider#tags}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsIamSamlProvider.DataAwsIamSamlProviderConfig.property.arn">arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/data-sources/iam_saml_provider#arn DataAwsIamSamlProvider#arn}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsIamSamlProvider.DataAwsIamSamlProviderConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/data-sources/iam_saml_provider#id DataAwsIamSamlProvider#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsIamSamlProvider.DataAwsIamSamlProviderConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/data-sources/iam_saml_provider#tags DataAwsIamSamlProvider#tags}. |
 
 ---
 
@@ -899,7 +899,7 @@ arn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/data-sources/iam_saml_provider#arn DataAwsIamSamlProvider#arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/data-sources/iam_saml_provider#arn DataAwsIamSamlProvider#arn}.
 
 ---
 
@@ -911,7 +911,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/data-sources/iam_saml_provider#id DataAwsIamSamlProvider#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/data-sources/iam_saml_provider#id DataAwsIamSamlProvider#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -926,7 +926,7 @@ tags: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/data-sources/iam_saml_provider#tags DataAwsIamSamlProvider#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/data-sources/iam_saml_provider#tags DataAwsIamSamlProvider#tags}.
 
 ---
 
