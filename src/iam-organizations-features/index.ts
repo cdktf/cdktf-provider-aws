@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/iam_organizations_features
+// https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/resources/iam_organizations_features
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,13 +8,13 @@ import * as cdktf from 'cdktf';
 
 export interface IamOrganizationsFeaturesConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/iam_organizations_features#enabled_features IamOrganizationsFeatures#enabled_features}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/resources/iam_organizations_features#enabled_features IamOrganizationsFeatures#enabled_features}
   */
   readonly enabledFeatures: string[];
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/iam_organizations_features aws_iam_organizations_features}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/resources/iam_organizations_features aws_iam_organizations_features}
 */
 export class IamOrganizationsFeatures extends cdktf.TerraformResource {
 
@@ -35,7 +30,7 @@ export class IamOrganizationsFeatures extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a IamOrganizationsFeatures resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the IamOrganizationsFeatures to import
-  * @param importFromId The id of the existing IamOrganizationsFeatures that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/iam_organizations_features#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing IamOrganizationsFeatures that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/resources/iam_organizations_features#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the IamOrganizationsFeatures to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -47,7 +42,7 @@ export class IamOrganizationsFeatures extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/iam_organizations_features aws_iam_organizations_features} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/resources/iam_organizations_features aws_iam_organizations_features} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -58,7 +53,7 @@ export class IamOrganizationsFeatures extends cdktf.TerraformResource {
       terraformResourceType: 'aws_iam_organizations_features',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.99.0',
+        providerVersion: '5.99.1',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

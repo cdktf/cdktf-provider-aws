@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/devopsguru_event_sources_config
+// https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/resources/devopsguru_event_sources_config
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,13 +10,13 @@ export interface DevopsguruEventSourcesConfigConfig extends cdktf.TerraformMetaA
   /**
   * event_sources block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/devopsguru_event_sources_config#event_sources DevopsguruEventSourcesConfig#event_sources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/resources/devopsguru_event_sources_config#event_sources DevopsguruEventSourcesConfig#event_sources}
   */
   readonly eventSources?: DevopsguruEventSourcesConfigEventSources[] | cdktf.IResolvable;
 }
 export interface DevopsguruEventSourcesConfigEventSourcesAmazonCodeGuruProfiler {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/devopsguru_event_sources_config#status DevopsguruEventSourcesConfig#status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/resources/devopsguru_event_sources_config#status DevopsguruEventSourcesConfig#status}
   */
   readonly status: string;
 }
@@ -136,7 +131,7 @@ export interface DevopsguruEventSourcesConfigEventSources {
   /**
   * amazon_code_guru_profiler block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/devopsguru_event_sources_config#amazon_code_guru_profiler DevopsguruEventSourcesConfig#amazon_code_guru_profiler}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/resources/devopsguru_event_sources_config#amazon_code_guru_profiler DevopsguruEventSourcesConfig#amazon_code_guru_profiler}
   */
   readonly amazonCodeGuruProfiler?: DevopsguruEventSourcesConfigEventSourcesAmazonCodeGuruProfiler[] | cdktf.IResolvable;
 }
@@ -252,7 +247,7 @@ export class DevopsguruEventSourcesConfigEventSourcesList extends cdktf.ComplexL
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/devopsguru_event_sources_config aws_devopsguru_event_sources_config}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/resources/devopsguru_event_sources_config aws_devopsguru_event_sources_config}
 */
 export class DevopsguruEventSourcesConfig extends cdktf.TerraformResource {
 
@@ -268,7 +263,7 @@ export class DevopsguruEventSourcesConfig extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a DevopsguruEventSourcesConfig resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DevopsguruEventSourcesConfig to import
-  * @param importFromId The id of the existing DevopsguruEventSourcesConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/devopsguru_event_sources_config#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DevopsguruEventSourcesConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/resources/devopsguru_event_sources_config#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DevopsguruEventSourcesConfig to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -280,7 +275,7 @@ export class DevopsguruEventSourcesConfig extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/devopsguru_event_sources_config aws_devopsguru_event_sources_config} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/resources/devopsguru_event_sources_config aws_devopsguru_event_sources_config} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -291,7 +286,7 @@ export class DevopsguruEventSourcesConfig extends cdktf.TerraformResource {
       terraformResourceType: 'aws_devopsguru_event_sources_config',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.99.0',
+        providerVersion: '5.99.1',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

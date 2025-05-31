@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/data-sources/fis_experiment_templates
+// https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/data-sources/fis_experiment_templates
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,13 +8,13 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsFisExperimentTemplatesConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/data-sources/fis_experiment_templates#tags DataAwsFisExperimentTemplates#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/data-sources/fis_experiment_templates#tags DataAwsFisExperimentTemplates#tags}
   */
   readonly tags?: { [key: string]: string };
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/data-sources/fis_experiment_templates aws_fis_experiment_templates}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/data-sources/fis_experiment_templates aws_fis_experiment_templates}
 */
 export class DataAwsFisExperimentTemplates extends cdktf.TerraformDataSource {
 
@@ -35,7 +30,7 @@ export class DataAwsFisExperimentTemplates extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataAwsFisExperimentTemplates resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsFisExperimentTemplates to import
-  * @param importFromId The id of the existing DataAwsFisExperimentTemplates that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/data-sources/fis_experiment_templates#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsFisExperimentTemplates that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/data-sources/fis_experiment_templates#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsFisExperimentTemplates to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -47,7 +42,7 @@ export class DataAwsFisExperimentTemplates extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/data-sources/fis_experiment_templates aws_fis_experiment_templates} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/data-sources/fis_experiment_templates aws_fis_experiment_templates} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -58,7 +53,7 @@ export class DataAwsFisExperimentTemplates extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_fis_experiment_templates',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.99.0',
+        providerVersion: '5.99.1',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

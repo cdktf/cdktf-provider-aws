@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/ssm_maintenance_window
+// https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/resources/ssm_maintenance_window
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,68 +8,68 @@ import * as cdktf from 'cdktf';
 
 export interface SsmMaintenanceWindowConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/ssm_maintenance_window#allow_unassociated_targets SsmMaintenanceWindow#allow_unassociated_targets}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/resources/ssm_maintenance_window#allow_unassociated_targets SsmMaintenanceWindow#allow_unassociated_targets}
   */
   readonly allowUnassociatedTargets?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/ssm_maintenance_window#cutoff SsmMaintenanceWindow#cutoff}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/resources/ssm_maintenance_window#cutoff SsmMaintenanceWindow#cutoff}
   */
   readonly cutoff: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/ssm_maintenance_window#description SsmMaintenanceWindow#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/resources/ssm_maintenance_window#description SsmMaintenanceWindow#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/ssm_maintenance_window#duration SsmMaintenanceWindow#duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/resources/ssm_maintenance_window#duration SsmMaintenanceWindow#duration}
   */
   readonly duration: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/ssm_maintenance_window#enabled SsmMaintenanceWindow#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/resources/ssm_maintenance_window#enabled SsmMaintenanceWindow#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/ssm_maintenance_window#end_date SsmMaintenanceWindow#end_date}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/resources/ssm_maintenance_window#end_date SsmMaintenanceWindow#end_date}
   */
   readonly endDate?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/ssm_maintenance_window#id SsmMaintenanceWindow#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/resources/ssm_maintenance_window#id SsmMaintenanceWindow#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/ssm_maintenance_window#name SsmMaintenanceWindow#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/resources/ssm_maintenance_window#name SsmMaintenanceWindow#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/ssm_maintenance_window#schedule SsmMaintenanceWindow#schedule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/resources/ssm_maintenance_window#schedule SsmMaintenanceWindow#schedule}
   */
   readonly schedule: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/ssm_maintenance_window#schedule_offset SsmMaintenanceWindow#schedule_offset}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/resources/ssm_maintenance_window#schedule_offset SsmMaintenanceWindow#schedule_offset}
   */
   readonly scheduleOffset?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/ssm_maintenance_window#schedule_timezone SsmMaintenanceWindow#schedule_timezone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/resources/ssm_maintenance_window#schedule_timezone SsmMaintenanceWindow#schedule_timezone}
   */
   readonly scheduleTimezone?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/ssm_maintenance_window#start_date SsmMaintenanceWindow#start_date}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/resources/ssm_maintenance_window#start_date SsmMaintenanceWindow#start_date}
   */
   readonly startDate?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/ssm_maintenance_window#tags SsmMaintenanceWindow#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/resources/ssm_maintenance_window#tags SsmMaintenanceWindow#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/ssm_maintenance_window#tags_all SsmMaintenanceWindow#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/resources/ssm_maintenance_window#tags_all SsmMaintenanceWindow#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/ssm_maintenance_window aws_ssm_maintenance_window}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/resources/ssm_maintenance_window aws_ssm_maintenance_window}
 */
 export class SsmMaintenanceWindow extends cdktf.TerraformResource {
 
@@ -90,7 +85,7 @@ export class SsmMaintenanceWindow extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a SsmMaintenanceWindow resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SsmMaintenanceWindow to import
-  * @param importFromId The id of the existing SsmMaintenanceWindow that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/ssm_maintenance_window#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing SsmMaintenanceWindow that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/resources/ssm_maintenance_window#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SsmMaintenanceWindow to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -102,7 +97,7 @@ export class SsmMaintenanceWindow extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/ssm_maintenance_window aws_ssm_maintenance_window} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/resources/ssm_maintenance_window aws_ssm_maintenance_window} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -113,7 +108,7 @@ export class SsmMaintenanceWindow extends cdktf.TerraformResource {
       terraformResourceType: 'aws_ssm_maintenance_window',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.99.0',
+        providerVersion: '5.99.1',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

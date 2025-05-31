@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/servicecatalog_budget_resource_association
+// https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/resources/servicecatalog_budget_resource_association
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,38 +8,38 @@ import * as cdktf from 'cdktf';
 
 export interface ServicecatalogBudgetResourceAssociationConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/servicecatalog_budget_resource_association#budget_name ServicecatalogBudgetResourceAssociation#budget_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/resources/servicecatalog_budget_resource_association#budget_name ServicecatalogBudgetResourceAssociation#budget_name}
   */
   readonly budgetName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/servicecatalog_budget_resource_association#id ServicecatalogBudgetResourceAssociation#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/resources/servicecatalog_budget_resource_association#id ServicecatalogBudgetResourceAssociation#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/servicecatalog_budget_resource_association#resource_id ServicecatalogBudgetResourceAssociation#resource_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/resources/servicecatalog_budget_resource_association#resource_id ServicecatalogBudgetResourceAssociation#resource_id}
   */
   readonly resourceId: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/servicecatalog_budget_resource_association#timeouts ServicecatalogBudgetResourceAssociation#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/resources/servicecatalog_budget_resource_association#timeouts ServicecatalogBudgetResourceAssociation#timeouts}
   */
   readonly timeouts?: ServicecatalogBudgetResourceAssociationTimeouts;
 }
 export interface ServicecatalogBudgetResourceAssociationTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/servicecatalog_budget_resource_association#create ServicecatalogBudgetResourceAssociation#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/resources/servicecatalog_budget_resource_association#create ServicecatalogBudgetResourceAssociation#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/servicecatalog_budget_resource_association#delete ServicecatalogBudgetResourceAssociation#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/resources/servicecatalog_budget_resource_association#delete ServicecatalogBudgetResourceAssociation#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/servicecatalog_budget_resource_association#read ServicecatalogBudgetResourceAssociation#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/resources/servicecatalog_budget_resource_association#read ServicecatalogBudgetResourceAssociation#read}
   */
   readonly read?: string;
 }
@@ -196,7 +191,7 @@ export class ServicecatalogBudgetResourceAssociationTimeoutsOutputReference exte
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/servicecatalog_budget_resource_association aws_servicecatalog_budget_resource_association}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/resources/servicecatalog_budget_resource_association aws_servicecatalog_budget_resource_association}
 */
 export class ServicecatalogBudgetResourceAssociation extends cdktf.TerraformResource {
 
@@ -212,7 +207,7 @@ export class ServicecatalogBudgetResourceAssociation extends cdktf.TerraformReso
   * Generates CDKTF code for importing a ServicecatalogBudgetResourceAssociation resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ServicecatalogBudgetResourceAssociation to import
-  * @param importFromId The id of the existing ServicecatalogBudgetResourceAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/servicecatalog_budget_resource_association#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ServicecatalogBudgetResourceAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/resources/servicecatalog_budget_resource_association#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ServicecatalogBudgetResourceAssociation to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -224,7 +219,7 @@ export class ServicecatalogBudgetResourceAssociation extends cdktf.TerraformReso
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/servicecatalog_budget_resource_association aws_servicecatalog_budget_resource_association} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/resources/servicecatalog_budget_resource_association aws_servicecatalog_budget_resource_association} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -235,7 +230,7 @@ export class ServicecatalogBudgetResourceAssociation extends cdktf.TerraformReso
       terraformResourceType: 'aws_servicecatalog_budget_resource_association',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.99.0',
+        providerVersion: '5.99.1',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
