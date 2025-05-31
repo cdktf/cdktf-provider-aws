@@ -4,7 +4,7 @@
 
 ### SagemakerServicecatalogPortfolioStatus <a name="SagemakerServicecatalogPortfolioStatus" id="@cdktf/provider-aws.sagemakerServicecatalogPortfolioStatus.SagemakerServicecatalogPortfolioStatus"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/sagemaker_servicecatalog_portfolio_status aws_sagemaker_servicecatalog_portfolio_status}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/resources/sagemaker_servicecatalog_portfolio_status aws_sagemaker_servicecatalog_portfolio_status}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sagemakerServicecatalogPortfolioStatus.SagemakerServicecatalogPortfolioStatus.Initializer"></a>
 
@@ -474,7 +474,7 @@ The construct id used in the generated config for the SagemakerServicecatalogPor
 
 The id of the existing SagemakerServicecatalogPortfolioStatus that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/sagemaker_servicecatalog_portfolio_status#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/resources/sagemaker_servicecatalog_portfolio_status#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -734,8 +734,8 @@ const sagemakerServicecatalogPortfolioStatusConfig: sagemakerServicecatalogPortf
 | <code><a href="#@cdktf/provider-aws.sagemakerServicecatalogPortfolioStatus.SagemakerServicecatalogPortfolioStatusConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.sagemakerServicecatalogPortfolioStatus.SagemakerServicecatalogPortfolioStatusConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.sagemakerServicecatalogPortfolioStatus.SagemakerServicecatalogPortfolioStatusConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.sagemakerServicecatalogPortfolioStatus.SagemakerServicecatalogPortfolioStatusConfig.property.status">status</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/sagemaker_servicecatalog_portfolio_status#status SagemakerServicecatalogPortfolioStatus#status}. |
-| <code><a href="#@cdktf/provider-aws.sagemakerServicecatalogPortfolioStatus.SagemakerServicecatalogPortfolioStatusConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/sagemaker_servicecatalog_portfolio_status#id SagemakerServicecatalogPortfolioStatus#id}. |
+| <code><a href="#@cdktf/provider-aws.sagemakerServicecatalogPortfolioStatus.SagemakerServicecatalogPortfolioStatusConfig.property.status">status</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/resources/sagemaker_servicecatalog_portfolio_status#status SagemakerServicecatalogPortfolioStatus#status}. |
+| <code><a href="#@cdktf/provider-aws.sagemakerServicecatalogPortfolioStatus.SagemakerServicecatalogPortfolioStatusConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/resources/sagemaker_servicecatalog_portfolio_status#id SagemakerServicecatalogPortfolioStatus#id}. |
 
 ---
 
@@ -817,7 +817,7 @@ public readonly status: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/sagemaker_servicecatalog_portfolio_status#status SagemakerServicecatalogPortfolioStatus#status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/resources/sagemaker_servicecatalog_portfolio_status#status SagemakerServicecatalogPortfolioStatus#status}.
 
 ---
 
@@ -829,7 +829,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/sagemaker_servicecatalog_portfolio_status#id SagemakerServicecatalogPortfolioStatus#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/resources/sagemaker_servicecatalog_portfolio_status#id SagemakerServicecatalogPortfolioStatus#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
