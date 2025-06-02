@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsPath.DataAwsEc2NetworkInsightsPath.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsec2networkinsightspath"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsec2networkinsightspath"
 
 dataawsec2networkinsightspath.NewDataAwsEc2NetworkInsightsPath(scope Construct, id *string, config DataAwsEc2NetworkInsightsPathConfig) DataAwsEc2NetworkInsightsPath
 ```
@@ -317,7 +317,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsPath.DataAwsEc2NetworkInsightsPath.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsec2networkinsightspath"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsec2networkinsightspath"
 
 dataawsec2networkinsightspath.DataAwsEc2NetworkInsightsPath_IsConstruct(x interface{}) *bool
 ```
@@ -349,7 +349,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsPath.DataAwsEc2NetworkInsightsPath.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsec2networkinsightspath"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsec2networkinsightspath"
 
 dataawsec2networkinsightspath.DataAwsEc2NetworkInsightsPath_IsTerraformElement(x interface{}) *bool
 ```
@@ -363,7 +363,7 @@ dataawsec2networkinsightspath.DataAwsEc2NetworkInsightsPath_IsTerraformElement(x
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsPath.DataAwsEc2NetworkInsightsPath.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsec2networkinsightspath"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsec2networkinsightspath"
 
 dataawsec2networkinsightspath.DataAwsEc2NetworkInsightsPath_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -377,7 +377,7 @@ dataawsec2networkinsightspath.DataAwsEc2NetworkInsightsPath_IsTerraformDataSourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsPath.DataAwsEc2NetworkInsightsPath.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsec2networkinsightspath"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsec2networkinsightspath"
 
 dataawsec2networkinsightspath.DataAwsEc2NetworkInsightsPath_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -793,7 +793,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsPath.DataAwsEc2NetworkInsightsPathConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsec2networkinsightspath"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsec2networkinsightspath"
 
 &dataawsec2networkinsightspath.DataAwsEc2NetworkInsightsPathConfig {
 	Connection: interface{},
@@ -956,7 +956,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsPath.DataAwsEc2NetworkInsightsPathFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsec2networkinsightspath"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsec2networkinsightspath"
 
 &dataawsec2networkinsightspath.DataAwsEc2NetworkInsightsPathFilter {
 	Name: *string,
@@ -1002,7 +1002,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsPath.DataAwsEc2NetworkInsightsPathFilterAtDestination.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsec2networkinsightspath"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsec2networkinsightspath"
 
 &dataawsec2networkinsightspath.DataAwsEc2NetworkInsightsPathFilterAtDestination {
 
@@ -1015,7 +1015,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsec2networkinsights
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsPath.DataAwsEc2NetworkInsightsPathFilterAtDestinationDestinationPortRange.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsec2networkinsightspath"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsec2networkinsightspath"
 
 &dataawsec2networkinsightspath.DataAwsEc2NetworkInsightsPathFilterAtDestinationDestinationPortRange {
 
@@ -1028,7 +1028,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsec2networkinsights
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsPath.DataAwsEc2NetworkInsightsPathFilterAtDestinationSourcePortRange.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsec2networkinsightspath"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsec2networkinsightspath"
 
 &dataawsec2networkinsightspath.DataAwsEc2NetworkInsightsPathFilterAtDestinationSourcePortRange {
 
@@ -1041,7 +1041,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsec2networkinsights
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsPath.DataAwsEc2NetworkInsightsPathFilterAtSource.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsec2networkinsightspath"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsec2networkinsightspath"
 
 &dataawsec2networkinsightspath.DataAwsEc2NetworkInsightsPathFilterAtSource {
 
@@ -1054,7 +1054,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsec2networkinsights
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsPath.DataAwsEc2NetworkInsightsPathFilterAtSourceDestinationPortRange.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsec2networkinsightspath"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsec2networkinsightspath"
 
 &dataawsec2networkinsightspath.DataAwsEc2NetworkInsightsPathFilterAtSourceDestinationPortRange {
 
@@ -1067,7 +1067,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsec2networkinsights
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsPath.DataAwsEc2NetworkInsightsPathFilterAtSourceSourcePortRange.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsec2networkinsightspath"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsec2networkinsightspath"
 
 &dataawsec2networkinsightspath.DataAwsEc2NetworkInsightsPathFilterAtSourceSourcePortRange {
 
@@ -1082,7 +1082,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsec2networkinsights
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsPath.DataAwsEc2NetworkInsightsPathFilterAtDestinationDestinationPortRangeList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsec2networkinsightspath"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsec2networkinsightspath"
 
 dataawsec2networkinsightspath.NewDataAwsEc2NetworkInsightsPathFilterAtDestinationDestinationPortRangeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEc2NetworkInsightsPathFilterAtDestinationDestinationPortRangeList
 ```
@@ -1231,7 +1231,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsPath.DataAwsEc2NetworkInsightsPathFilterAtDestinationDestinationPortRangeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsec2networkinsightspath"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsec2networkinsightspath"
 
 dataawsec2networkinsightspath.NewDataAwsEc2NetworkInsightsPathFilterAtDestinationDestinationPortRangeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEc2NetworkInsightsPathFilterAtDestinationDestinationPortRangeOutputReference
 ```
@@ -1520,7 +1520,7 @@ func InternalValue() DataAwsEc2NetworkInsightsPathFilterAtDestinationDestination
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsPath.DataAwsEc2NetworkInsightsPathFilterAtDestinationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsec2networkinsightspath"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsec2networkinsightspath"
 
 dataawsec2networkinsightspath.NewDataAwsEc2NetworkInsightsPathFilterAtDestinationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEc2NetworkInsightsPathFilterAtDestinationList
 ```
@@ -1669,7 +1669,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsPath.DataAwsEc2NetworkInsightsPathFilterAtDestinationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsec2networkinsightspath"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsec2networkinsightspath"
 
 dataawsec2networkinsightspath.NewDataAwsEc2NetworkInsightsPathFilterAtDestinationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEc2NetworkInsightsPathFilterAtDestinationOutputReference
 ```
@@ -1980,7 +1980,7 @@ func InternalValue() DataAwsEc2NetworkInsightsPathFilterAtDestination
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsPath.DataAwsEc2NetworkInsightsPathFilterAtDestinationSourcePortRangeList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsec2networkinsightspath"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsec2networkinsightspath"
 
 dataawsec2networkinsightspath.NewDataAwsEc2NetworkInsightsPathFilterAtDestinationSourcePortRangeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEc2NetworkInsightsPathFilterAtDestinationSourcePortRangeList
 ```
@@ -2129,7 +2129,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsPath.DataAwsEc2NetworkInsightsPathFilterAtDestinationSourcePortRangeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsec2networkinsightspath"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsec2networkinsightspath"
 
 dataawsec2networkinsightspath.NewDataAwsEc2NetworkInsightsPathFilterAtDestinationSourcePortRangeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEc2NetworkInsightsPathFilterAtDestinationSourcePortRangeOutputReference
 ```
@@ -2418,7 +2418,7 @@ func InternalValue() DataAwsEc2NetworkInsightsPathFilterAtDestinationSourcePortR
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsPath.DataAwsEc2NetworkInsightsPathFilterAtSourceDestinationPortRangeList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsec2networkinsightspath"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsec2networkinsightspath"
 
 dataawsec2networkinsightspath.NewDataAwsEc2NetworkInsightsPathFilterAtSourceDestinationPortRangeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEc2NetworkInsightsPathFilterAtSourceDestinationPortRangeList
 ```
@@ -2567,7 +2567,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsPath.DataAwsEc2NetworkInsightsPathFilterAtSourceDestinationPortRangeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsec2networkinsightspath"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsec2networkinsightspath"
 
 dataawsec2networkinsightspath.NewDataAwsEc2NetworkInsightsPathFilterAtSourceDestinationPortRangeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEc2NetworkInsightsPathFilterAtSourceDestinationPortRangeOutputReference
 ```
@@ -2856,7 +2856,7 @@ func InternalValue() DataAwsEc2NetworkInsightsPathFilterAtSourceDestinationPortR
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsPath.DataAwsEc2NetworkInsightsPathFilterAtSourceList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsec2networkinsightspath"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsec2networkinsightspath"
 
 dataawsec2networkinsightspath.NewDataAwsEc2NetworkInsightsPathFilterAtSourceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEc2NetworkInsightsPathFilterAtSourceList
 ```
@@ -3005,7 +3005,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsPath.DataAwsEc2NetworkInsightsPathFilterAtSourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsec2networkinsightspath"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsec2networkinsightspath"
 
 dataawsec2networkinsightspath.NewDataAwsEc2NetworkInsightsPathFilterAtSourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEc2NetworkInsightsPathFilterAtSourceOutputReference
 ```
@@ -3316,7 +3316,7 @@ func InternalValue() DataAwsEc2NetworkInsightsPathFilterAtSource
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsPath.DataAwsEc2NetworkInsightsPathFilterAtSourceSourcePortRangeList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsec2networkinsightspath"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsec2networkinsightspath"
 
 dataawsec2networkinsightspath.NewDataAwsEc2NetworkInsightsPathFilterAtSourceSourcePortRangeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEc2NetworkInsightsPathFilterAtSourceSourcePortRangeList
 ```
@@ -3465,7 +3465,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsPath.DataAwsEc2NetworkInsightsPathFilterAtSourceSourcePortRangeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsec2networkinsightspath"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsec2networkinsightspath"
 
 dataawsec2networkinsightspath.NewDataAwsEc2NetworkInsightsPathFilterAtSourceSourcePortRangeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEc2NetworkInsightsPathFilterAtSourceSourcePortRangeOutputReference
 ```
@@ -3754,7 +3754,7 @@ func InternalValue() DataAwsEc2NetworkInsightsPathFilterAtSourceSourcePortRange
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsPath.DataAwsEc2NetworkInsightsPathFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsec2networkinsightspath"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsec2networkinsightspath"
 
 dataawsec2networkinsightspath.NewDataAwsEc2NetworkInsightsPathFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEc2NetworkInsightsPathFilterList
 ```
@@ -3914,7 +3914,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2NetworkInsightsPath.DataAwsEc2NetworkInsightsPathFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsec2networkinsightspath"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsec2networkinsightspath"
 
 dataawsec2networkinsightspath.NewDataAwsEc2NetworkInsightsPathFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEc2NetworkInsightsPathFilterOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.workspaceswebUserSettings.WorkspaceswebUserSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/workspaceswebusersettings"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/workspaceswebusersettings"
 
 workspaceswebusersettings.NewWorkspaceswebUserSettings(scope Construct, id *string, config WorkspaceswebUserSettingsConfig) WorkspaceswebUserSettings
 ```
@@ -460,7 +460,7 @@ func ResetToolbarConfiguration()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.workspaceswebUserSettings.WorkspaceswebUserSettings.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/workspaceswebusersettings"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/workspaceswebusersettings"
 
 workspaceswebusersettings.WorkspaceswebUserSettings_IsConstruct(x interface{}) *bool
 ```
@@ -492,7 +492,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.workspaceswebUserSettings.WorkspaceswebUserSettings.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/workspaceswebusersettings"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/workspaceswebusersettings"
 
 workspaceswebusersettings.WorkspaceswebUserSettings_IsTerraformElement(x interface{}) *bool
 ```
@@ -506,7 +506,7 @@ workspaceswebusersettings.WorkspaceswebUserSettings_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.workspaceswebUserSettings.WorkspaceswebUserSettings.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/workspaceswebusersettings"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/workspaceswebusersettings"
 
 workspaceswebusersettings.WorkspaceswebUserSettings_IsTerraformResource(x interface{}) *bool
 ```
@@ -520,7 +520,7 @@ workspaceswebusersettings.WorkspaceswebUserSettings_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.workspaceswebUserSettings.WorkspaceswebUserSettings.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/workspaceswebusersettings"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/workspaceswebusersettings"
 
 workspaceswebusersettings.WorkspaceswebUserSettings_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1068,7 +1068,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.workspaceswebUserSettings.WorkspaceswebUserSettingsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/workspaceswebusersettings"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/workspaceswebusersettings"
 
 &workspaceswebusersettings.WorkspaceswebUserSettingsConfig {
 	Connection: interface{},
@@ -1356,7 +1356,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.workspaceswebUserSettings.WorkspaceswebUserSettingsCookieSynchronizationConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/workspaceswebusersettings"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/workspaceswebusersettings"
 
 &workspaceswebusersettings.WorkspaceswebUserSettingsCookieSynchronizationConfiguration {
 	Allowlist: interface{},
@@ -1406,7 +1406,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.workspaceswebUserSettings.WorkspaceswebUserSettingsCookieSynchronizationConfigurationAllowlistStruct.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/workspaceswebusersettings"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/workspaceswebusersettings"
 
 &workspaceswebusersettings.WorkspaceswebUserSettingsCookieSynchronizationConfigurationAllowlistStruct {
 	Domain: *string,
@@ -1466,7 +1466,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.workspaceswebUserSettings.WorkspaceswebUserSettingsCookieSynchronizationConfigurationBlocklistStruct.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/workspaceswebusersettings"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/workspaceswebusersettings"
 
 &workspaceswebusersettings.WorkspaceswebUserSettingsCookieSynchronizationConfigurationBlocklistStruct {
 	Domain: *string,
@@ -1526,7 +1526,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.workspaceswebUserSettings.WorkspaceswebUserSettingsToolbarConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/workspaceswebusersettings"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/workspaceswebusersettings"
 
 &workspaceswebusersettings.WorkspaceswebUserSettingsToolbarConfiguration {
 	HiddenToolbarItems: *[]*string,
@@ -1602,7 +1602,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.workspaceswebUserSettings.WorkspaceswebUserSettingsCookieSynchronizationConfigurationAllowlistStructList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/workspaceswebusersettings"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/workspaceswebusersettings"
 
 workspaceswebusersettings.NewWorkspaceswebUserSettingsCookieSynchronizationConfigurationAllowlistStructList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WorkspaceswebUserSettingsCookieSynchronizationConfigurationAllowlistStructList
 ```
@@ -1762,7 +1762,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.workspaceswebUserSettings.WorkspaceswebUserSettingsCookieSynchronizationConfigurationAllowlistStructOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/workspaceswebusersettings"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/workspaceswebusersettings"
 
 workspaceswebusersettings.NewWorkspaceswebUserSettingsCookieSynchronizationConfigurationAllowlistStructOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WorkspaceswebUserSettingsCookieSynchronizationConfigurationAllowlistStructOutputReference
 ```
@@ -2109,7 +2109,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.workspaceswebUserSettings.WorkspaceswebUserSettingsCookieSynchronizationConfigurationBlocklistStructList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/workspaceswebusersettings"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/workspaceswebusersettings"
 
 workspaceswebusersettings.NewWorkspaceswebUserSettingsCookieSynchronizationConfigurationBlocklistStructList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WorkspaceswebUserSettingsCookieSynchronizationConfigurationBlocklistStructList
 ```
@@ -2269,7 +2269,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.workspaceswebUserSettings.WorkspaceswebUserSettingsCookieSynchronizationConfigurationBlocklistStructOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/workspaceswebusersettings"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/workspaceswebusersettings"
 
 workspaceswebusersettings.NewWorkspaceswebUserSettingsCookieSynchronizationConfigurationBlocklistStructOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WorkspaceswebUserSettingsCookieSynchronizationConfigurationBlocklistStructOutputReference
 ```
@@ -2616,7 +2616,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.workspaceswebUserSettings.WorkspaceswebUserSettingsCookieSynchronizationConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/workspaceswebusersettings"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/workspaceswebusersettings"
 
 workspaceswebusersettings.NewWorkspaceswebUserSettingsCookieSynchronizationConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WorkspaceswebUserSettingsCookieSynchronizationConfigurationList
 ```
@@ -2776,7 +2776,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.workspaceswebUserSettings.WorkspaceswebUserSettingsCookieSynchronizationConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/workspaceswebusersettings"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/workspaceswebusersettings"
 
 workspaceswebusersettings.NewWorkspaceswebUserSettingsCookieSynchronizationConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WorkspaceswebUserSettingsCookieSynchronizationConfigurationOutputReference
 ```
@@ -3127,7 +3127,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.workspaceswebUserSettings.WorkspaceswebUserSettingsToolbarConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/workspaceswebusersettings"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/workspaceswebusersettings"
 
 workspaceswebusersettings.NewWorkspaceswebUserSettingsToolbarConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WorkspaceswebUserSettingsToolbarConfigurationList
 ```
@@ -3287,7 +3287,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.workspaceswebUserSettings.WorkspaceswebUserSettingsToolbarConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/workspaceswebusersettings"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/workspaceswebusersettings"
 
 workspaceswebusersettings.NewWorkspaceswebUserSettingsToolbarConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WorkspaceswebUserSettingsToolbarConfigurationOutputReference
 ```

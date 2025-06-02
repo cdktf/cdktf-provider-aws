@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAccountPrimaryContact.DataAwsAccountPrimaryContact.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsaccountprimarycontact"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsaccountprimarycontact"
 
 dataawsaccountprimarycontact.NewDataAwsAccountPrimaryContact(scope Construct, id *string, config DataAwsAccountPrimaryContactConfig) DataAwsAccountPrimaryContact
 ```
@@ -283,7 +283,7 @@ func ResetAccountId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsAccountPrimaryContact.DataAwsAccountPrimaryContact.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsaccountprimarycontact"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsaccountprimarycontact"
 
 dataawsaccountprimarycontact.DataAwsAccountPrimaryContact_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsAccountPrimaryContact.DataAwsAccountPrimaryContact.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsaccountprimarycontact"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsaccountprimarycontact"
 
 dataawsaccountprimarycontact.DataAwsAccountPrimaryContact_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ dataawsaccountprimarycontact.DataAwsAccountPrimaryContact_IsTerraformElement(x i
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsAccountPrimaryContact.DataAwsAccountPrimaryContact.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsaccountprimarycontact"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsaccountprimarycontact"
 
 dataawsaccountprimarycontact.DataAwsAccountPrimaryContact_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ dataawsaccountprimarycontact.DataAwsAccountPrimaryContact_IsTerraformDataSource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsAccountPrimaryContact.DataAwsAccountPrimaryContact.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsaccountprimarycontact"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsaccountprimarycontact"
 
 dataawsaccountprimarycontact.DataAwsAccountPrimaryContact_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -704,7 +704,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsAccountPrimaryContact.DataAwsAccountPrimaryContactConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsaccountprimarycontact"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsaccountprimarycontact"
 
 &dataawsaccountprimarycontact.DataAwsAccountPrimaryContactConfig {
 	Connection: interface{},

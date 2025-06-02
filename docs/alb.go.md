@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.alb.Alb.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/alb"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/alb"
 
 alb.NewAlb(scope Construct, id *string, config AlbConfig) Alb
 ```
@@ -680,7 +680,7 @@ func ResetXffHeaderProcessingMode()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.alb.Alb.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/alb"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/alb"
 
 alb.Alb_IsConstruct(x interface{}) *bool
 ```
@@ -712,7 +712,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.alb.Alb.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/alb"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/alb"
 
 alb.Alb_IsTerraformElement(x interface{}) *bool
 ```
@@ -726,7 +726,7 @@ alb.Alb_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.alb.Alb.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/alb"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/alb"
 
 alb.Alb_IsTerraformResource(x interface{}) *bool
 ```
@@ -740,7 +740,7 @@ alb.Alb_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.alb.Alb.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/alb"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/alb"
 
 alb.Alb_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1728,7 +1728,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.alb.AlbAccessLogs.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/alb"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/alb"
 
 &alb.AlbAccessLogs {
 	Bucket: *string,
@@ -1788,7 +1788,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.alb.AlbConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/alb"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/alb"
 
 &alb.AlbConfig {
 	Connection: interface{},
@@ -1798,9 +1798,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/alb"
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	AccessLogs: github.com/cdktf/cdktf-provider-aws-go/aws/v19.alb.AlbAccessLogs,
+	AccessLogs: github.com/cdktf/cdktf-provider-aws-go/aws/v20.alb.AlbAccessLogs,
 	ClientKeepAlive: *f64,
-	ConnectionLogs: github.com/cdktf/cdktf-provider-aws-go/aws/v19.alb.AlbConnectionLogs,
+	ConnectionLogs: github.com/cdktf/cdktf-provider-aws-go/aws/v20.alb.AlbConnectionLogs,
 	CustomerOwnedIpv4Pool: *string,
 	DesyncMitigationMode: *string,
 	DnsRecordClientRoutingPolicy: *string,
@@ -1817,9 +1817,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/alb"
 	IdleTimeout: *f64,
 	Internal: interface{},
 	IpAddressType: *string,
-	IpamPools: github.com/cdktf/cdktf-provider-aws-go/aws/v19.alb.AlbIpamPools,
+	IpamPools: github.com/cdktf/cdktf-provider-aws-go/aws/v20.alb.AlbIpamPools,
 	LoadBalancerType: *string,
-	MinimumLoadBalancerCapacity: github.com/cdktf/cdktf-provider-aws-go/aws/v19.alb.AlbMinimumLoadBalancerCapacity,
+	MinimumLoadBalancerCapacity: github.com/cdktf/cdktf-provider-aws-go/aws/v20.alb.AlbMinimumLoadBalancerCapacity,
 	Name: *string,
 	NamePrefix: *string,
 	PreserveHostHeader: interface{},
@@ -1828,7 +1828,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/alb"
 	Subnets: *[]*string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v19.alb.AlbTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v20.alb.AlbTimeouts,
 	XffHeaderProcessingMode: *string,
 }
 ```
@@ -2353,7 +2353,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.alb.AlbConnectionLogs.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/alb"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/alb"
 
 &alb.AlbConnectionLogs {
 	Bucket: *string,
@@ -2413,7 +2413,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.alb.AlbIpamPools.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/alb"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/alb"
 
 &alb.AlbIpamPools {
 	Ipv4IpamPoolId: *string,
@@ -2445,7 +2445,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.alb.AlbMinimumLoadBalancerCapacity.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/alb"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/alb"
 
 &alb.AlbMinimumLoadBalancerCapacity {
 	CapacityUnits: *f64,
@@ -2477,7 +2477,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.alb.AlbSubnetMapping.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/alb"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/alb"
 
 &alb.AlbSubnetMapping {
 	SubnetId: *string,
@@ -2551,7 +2551,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.alb.AlbTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/alb"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/alb"
 
 &alb.AlbTimeouts {
 	Create: *string,
@@ -2613,7 +2613,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.alb.AlbAccessLogsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/alb"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/alb"
 
 alb.NewAlbAccessLogsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AlbAccessLogsOutputReference
 ```
@@ -2942,7 +2942,7 @@ func InternalValue() AlbAccessLogs
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.alb.AlbConnectionLogsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/alb"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/alb"
 
 alb.NewAlbConnectionLogsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AlbConnectionLogsOutputReference
 ```
@@ -3271,7 +3271,7 @@ func InternalValue() AlbConnectionLogs
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.alb.AlbIpamPoolsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/alb"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/alb"
 
 alb.NewAlbIpamPoolsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AlbIpamPoolsOutputReference
 ```
@@ -3542,7 +3542,7 @@ func InternalValue() AlbIpamPools
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.alb.AlbMinimumLoadBalancerCapacityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/alb"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/alb"
 
 alb.NewAlbMinimumLoadBalancerCapacityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AlbMinimumLoadBalancerCapacityOutputReference
 ```
@@ -3813,7 +3813,7 @@ func InternalValue() AlbMinimumLoadBalancerCapacity
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.alb.AlbSubnetMappingList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/alb"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/alb"
 
 alb.NewAlbSubnetMappingList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AlbSubnetMappingList
 ```
@@ -3973,7 +3973,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.alb.AlbSubnetMappingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/alb"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/alb"
 
 alb.NewAlbSubnetMappingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AlbSubnetMappingOutputReference
 ```
@@ -4360,7 +4360,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.alb.AlbTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/alb"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/alb"
 
 alb.NewAlbTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AlbTimeoutsOutputReference
 ```
