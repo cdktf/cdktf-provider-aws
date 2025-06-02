@@ -15,12 +15,12 @@
     },
     {
       "name": "@cdktf/provider-project",
-      "version": "^0.6.0",
+      "version": "^0.7.0",
       "type": "build"
     },
     {
       "name": "@types/node",
-      "version": "^18",
+      "version": "^20",
       "type": "build"
     },
     {
@@ -88,11 +88,6 @@
     {
       "name": "@types/yargs",
       "version": "17.0.13",
-      "type": "override"
-    },
-    {
-      "name": "cssstyle",
-      "version": "4.1.0",
       "type": "override"
     },
     {
