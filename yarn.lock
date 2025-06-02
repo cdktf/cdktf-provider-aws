@@ -234,10 +234,10 @@
     fs-extra "8.1.0"
     glob "10.4.5"
 
-"@cdktf/provider-project@^0.6.0":
-  version "0.6.60"
-  resolved "https://registry.yarnpkg.com/@cdktf/provider-project/-/provider-project-0.6.60.tgz#06e54907dcdffedd54ae09e327d35e4b135ded51"
-  integrity sha512-ZeOq2tCmE+60+ePQu93IpnHPEqKFZ6CD64Vq3LIP068/ddkCcZS+YOn3n2Mm03N/2IRmi40BWpnDare+LjA81g==
+"@cdktf/provider-project@^0.7.0":
+  version "0.7.0"
+  resolved "https://registry.yarnpkg.com/@cdktf/provider-project/-/provider-project-0.7.0.tgz#d0fcb8b81d8df1211b567398f5b7265b80e39ab6"
+  integrity sha512-9PPRt0+v59SevU/It1Sg8hxpZIf0rmJsR0NNa1VhzH2YmF7FfHrS/6lG6y/VvBaFR4WouMLspgvJMfsKV18mkg==
   dependencies:
     change-case "^4.1.2"
     fs-extra "^10.1.0"
@@ -636,12 +636,12 @@
   dependencies:
     undici-types "~5.26.4"
 
-"@types/node@^18":
-  version "18.19.87"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-18.19.87.tgz#690f000cc51e3c7f48bc00f7e86fac6eb550b709"
-  integrity sha512-OIAAu6ypnVZHmsHCeJ+7CCSub38QNBS9uceMQeg7K5Ur0Jr+wG9wEOEvvMbhp09pxD5czIUy/jND7s7Tb6Nw7A==
+"@types/node@^20":
+  version "20.17.57"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-20.17.57.tgz#f807455e3303ba8ba08fcb1db90619356abfaa99"
+  integrity sha512-f3T4y6VU4fVQDKVqJV4Uppy8c1p/sVvS3peyqxyWnzkqXFJLRU7Y1Bl7rMS1Qe9z0v4M6McY0Fp9yBsgHJUsWQ==
   dependencies:
-    undici-types "~5.26.4"
+    undici-types "~6.19.2"
 
 "@types/node@^20.10.7", "@types/node@^20.4.2":
   version "20.17.31"
@@ -1537,7 +1537,7 @@ cross-spawn@^6.0.0:
     shebang-command "^1.2.0"
     which "^1.2.9"
 
-cssstyle@4.1.0, cssstyle@^4.1.0:
+cssstyle@^4.1.0:
   version "4.1.0"
   resolved "https://registry.yarnpkg.com/cssstyle/-/cssstyle-4.1.0.tgz#161faee382af1bafadb6d3867a92a19bcb4aea70"
   integrity sha512-h66W1URKpBS5YMI/V8PyXvTMFT8SupJ1IzoIV8IeBC/ji8WVmrO8dGlTi+2dh6whmdk6BiKJLD/ZBkhWbcg6nA==

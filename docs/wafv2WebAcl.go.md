@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAcl.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2webacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/wafv2webacl"
 
 wafv2webacl.NewWafv2WebAcl(scope Construct, id *string, config Wafv2WebAclConfig) Wafv2WebAcl
 ```
@@ -580,7 +580,7 @@ func ResetTokenDomains()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAcl.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2webacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/wafv2webacl"
 
 wafv2webacl.Wafv2WebAcl_IsConstruct(x interface{}) *bool
 ```
@@ -612,7 +612,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAcl.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2webacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/wafv2webacl"
 
 wafv2webacl.Wafv2WebAcl_IsTerraformElement(x interface{}) *bool
 ```
@@ -626,7 +626,7 @@ wafv2webacl.Wafv2WebAcl_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAcl.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2webacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/wafv2webacl"
 
 wafv2webacl.Wafv2WebAcl_IsTerraformResource(x interface{}) *bool
 ```
@@ -640,7 +640,7 @@ wafv2webacl.Wafv2WebAcl_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAcl.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2webacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/wafv2webacl"
 
 wafv2webacl.Wafv2WebAcl_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1287,7 +1287,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclAssociationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2webacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/wafv2webacl"
 
 &wafv2webacl.Wafv2WebAclAssociationConfig {
 	RequestBody: interface{},
@@ -1321,14 +1321,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclAssociationConfigRequestBody.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2webacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/wafv2webacl"
 
 &wafv2webacl.Wafv2WebAclAssociationConfigRequestBody {
-	ApiGateway: github.com/cdktf/cdktf-provider-aws-go/aws/v19.wafv2WebAcl.Wafv2WebAclAssociationConfigRequestBodyApiGateway,
-	AppRunnerService: github.com/cdktf/cdktf-provider-aws-go/aws/v19.wafv2WebAcl.Wafv2WebAclAssociationConfigRequestBodyAppRunnerService,
-	Cloudfront: github.com/cdktf/cdktf-provider-aws-go/aws/v19.wafv2WebAcl.Wafv2WebAclAssociationConfigRequestBodyCloudfront,
-	CognitoUserPool: github.com/cdktf/cdktf-provider-aws-go/aws/v19.wafv2WebAcl.Wafv2WebAclAssociationConfigRequestBodyCognitoUserPool,
-	VerifiedAccessInstance: github.com/cdktf/cdktf-provider-aws-go/aws/v19.wafv2WebAcl.Wafv2WebAclAssociationConfigRequestBodyVerifiedAccessInstance,
+	ApiGateway: github.com/cdktf/cdktf-provider-aws-go/aws/v20.wafv2WebAcl.Wafv2WebAclAssociationConfigRequestBodyApiGateway,
+	AppRunnerService: github.com/cdktf/cdktf-provider-aws-go/aws/v20.wafv2WebAcl.Wafv2WebAclAssociationConfigRequestBodyAppRunnerService,
+	Cloudfront: github.com/cdktf/cdktf-provider-aws-go/aws/v20.wafv2WebAcl.Wafv2WebAclAssociationConfigRequestBodyCloudfront,
+	CognitoUserPool: github.com/cdktf/cdktf-provider-aws-go/aws/v20.wafv2WebAcl.Wafv2WebAclAssociationConfigRequestBodyCognitoUserPool,
+	VerifiedAccessInstance: github.com/cdktf/cdktf-provider-aws-go/aws/v20.wafv2WebAcl.Wafv2WebAclAssociationConfigRequestBodyVerifiedAccessInstance,
 }
 ```
 
@@ -1419,7 +1419,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclAssociationConfigRequestBodyApiGateway.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2webacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/wafv2webacl"
 
 &wafv2webacl.Wafv2WebAclAssociationConfigRequestBodyApiGateway {
 	DefaultSizeInspectionLimit: *string,
@@ -1451,7 +1451,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclAssociationConfigRequestBodyAppRunnerService.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2webacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/wafv2webacl"
 
 &wafv2webacl.Wafv2WebAclAssociationConfigRequestBodyAppRunnerService {
 	DefaultSizeInspectionLimit: *string,
@@ -1483,7 +1483,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclAssociationConfigRequestBodyCloudfront.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2webacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/wafv2webacl"
 
 &wafv2webacl.Wafv2WebAclAssociationConfigRequestBodyCloudfront {
 	DefaultSizeInspectionLimit: *string,
@@ -1515,7 +1515,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclAssociationConfigRequestBodyCognitoUserPool.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2webacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/wafv2webacl"
 
 &wafv2webacl.Wafv2WebAclAssociationConfigRequestBodyCognitoUserPool {
 	DefaultSizeInspectionLimit: *string,
@@ -1547,7 +1547,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclAssociationConfigRequestBodyVerifiedAccessInstance.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2webacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/wafv2webacl"
 
 &wafv2webacl.Wafv2WebAclAssociationConfigRequestBodyVerifiedAccessInstance {
 	DefaultSizeInspectionLimit: *string,
@@ -1579,10 +1579,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclCaptchaConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2webacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/wafv2webacl"
 
 &wafv2webacl.Wafv2WebAclCaptchaConfig {
-	ImmunityTimeProperty: github.com/cdktf/cdktf-provider-aws-go/aws/v19.wafv2WebAcl.Wafv2WebAclCaptchaConfigImmunityTimeProperty,
+	ImmunityTimeProperty: github.com/cdktf/cdktf-provider-aws-go/aws/v20.wafv2WebAcl.Wafv2WebAclCaptchaConfigImmunityTimeProperty,
 }
 ```
 
@@ -1613,7 +1613,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclCaptchaConfigImmunityTimeProperty.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2webacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/wafv2webacl"
 
 &wafv2webacl.Wafv2WebAclCaptchaConfigImmunityTimeProperty {
 	ImmunityTime: *f64,
@@ -1645,10 +1645,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclChallengeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2webacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/wafv2webacl"
 
 &wafv2webacl.Wafv2WebAclChallengeConfig {
-	ImmunityTimeProperty: github.com/cdktf/cdktf-provider-aws-go/aws/v19.wafv2WebAcl.Wafv2WebAclChallengeConfigImmunityTimeProperty,
+	ImmunityTimeProperty: github.com/cdktf/cdktf-provider-aws-go/aws/v20.wafv2WebAcl.Wafv2WebAclChallengeConfigImmunityTimeProperty,
 }
 ```
 
@@ -1679,7 +1679,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclChallengeConfigImmunityTimeProperty.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2webacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/wafv2webacl"
 
 &wafv2webacl.Wafv2WebAclChallengeConfigImmunityTimeProperty {
 	ImmunityTime: *f64,
@@ -1711,7 +1711,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2webacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/wafv2webacl"
 
 &wafv2webacl.Wafv2WebAclConfig {
 	Connection: interface{},
@@ -1721,14 +1721,14 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2webacl"
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	DefaultAction: github.com/cdktf/cdktf-provider-aws-go/aws/v19.wafv2WebAcl.Wafv2WebAclDefaultAction,
+	DefaultAction: github.com/cdktf/cdktf-provider-aws-go/aws/v20.wafv2WebAcl.Wafv2WebAclDefaultAction,
 	Scope: *string,
-	VisibilityConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v19.wafv2WebAcl.Wafv2WebAclVisibilityConfig,
-	AssociationConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v19.wafv2WebAcl.Wafv2WebAclAssociationConfig,
-	CaptchaConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v19.wafv2WebAcl.Wafv2WebAclCaptchaConfig,
-	ChallengeConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v19.wafv2WebAcl.Wafv2WebAclChallengeConfig,
+	VisibilityConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v20.wafv2WebAcl.Wafv2WebAclVisibilityConfig,
+	AssociationConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v20.wafv2WebAcl.Wafv2WebAclAssociationConfig,
+	CaptchaConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v20.wafv2WebAcl.Wafv2WebAclCaptchaConfig,
+	ChallengeConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v20.wafv2WebAcl.Wafv2WebAclChallengeConfig,
 	CustomResponseBody: interface{},
-	DataProtectionConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v19.wafv2WebAcl.Wafv2WebAclDataProtectionConfig,
+	DataProtectionConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v20.wafv2WebAcl.Wafv2WebAclDataProtectionConfig,
 	Description: *string,
 	Id: *string,
 	Name: *string,
@@ -2070,7 +2070,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclCustomResponseBody.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2webacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/wafv2webacl"
 
 &wafv2webacl.Wafv2WebAclCustomResponseBody {
 	Content: *string,
@@ -2130,7 +2130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclDataProtectionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2webacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/wafv2webacl"
 
 &wafv2webacl.Wafv2WebAclDataProtectionConfig {
 	DataProtection: interface{},
@@ -2164,11 +2164,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclDataProtectionConfigDataProtection.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2webacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/wafv2webacl"
 
 &wafv2webacl.Wafv2WebAclDataProtectionConfigDataProtection {
 	Action: *string,
-	Field: github.com/cdktf/cdktf-provider-aws-go/aws/v19.wafv2WebAcl.Wafv2WebAclDataProtectionConfigDataProtectionField,
+	Field: github.com/cdktf/cdktf-provider-aws-go/aws/v20.wafv2WebAcl.Wafv2WebAclDataProtectionConfigDataProtectionField,
 	ExcludeRateBasedDetails: interface{},
 	ExcludeRuleMatchDetails: interface{},
 }
@@ -2240,7 +2240,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclDataProtectionConfigDataProtectionField.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2webacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/wafv2webacl"
 
 &wafv2webacl.Wafv2WebAclDataProtectionConfigDataProtectionField {
 	FieldType: *string,
@@ -2286,11 +2286,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclDefaultAction.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2webacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/wafv2webacl"
 
 &wafv2webacl.Wafv2WebAclDefaultAction {
-	Allow: github.com/cdktf/cdktf-provider-aws-go/aws/v19.wafv2WebAcl.Wafv2WebAclDefaultActionAllow,
-	Block: github.com/cdktf/cdktf-provider-aws-go/aws/v19.wafv2WebAcl.Wafv2WebAclDefaultActionBlock,
+	Allow: github.com/cdktf/cdktf-provider-aws-go/aws/v20.wafv2WebAcl.Wafv2WebAclDefaultActionAllow,
+	Block: github.com/cdktf/cdktf-provider-aws-go/aws/v20.wafv2WebAcl.Wafv2WebAclDefaultActionBlock,
 }
 ```
 
@@ -2336,10 +2336,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclDefaultActionAllow.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2webacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/wafv2webacl"
 
 &wafv2webacl.Wafv2WebAclDefaultActionAllow {
-	CustomRequestHandling: github.com/cdktf/cdktf-provider-aws-go/aws/v19.wafv2WebAcl.Wafv2WebAclDefaultActionAllowCustomRequestHandling,
+	CustomRequestHandling: github.com/cdktf/cdktf-provider-aws-go/aws/v20.wafv2WebAcl.Wafv2WebAclDefaultActionAllowCustomRequestHandling,
 }
 ```
 
@@ -2370,7 +2370,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclDefaultActionAllowCustomRequestHandling.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2webacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/wafv2webacl"
 
 &wafv2webacl.Wafv2WebAclDefaultActionAllowCustomRequestHandling {
 	InsertHeader: interface{},
@@ -2404,7 +2404,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclDefaultActionAllowCustomRequestHandlingInsertHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2webacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/wafv2webacl"
 
 &wafv2webacl.Wafv2WebAclDefaultActionAllowCustomRequestHandlingInsertHeader {
 	Name: *string,
@@ -2450,10 +2450,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclDefaultActionBlock.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2webacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/wafv2webacl"
 
 &wafv2webacl.Wafv2WebAclDefaultActionBlock {
-	CustomResponse: github.com/cdktf/cdktf-provider-aws-go/aws/v19.wafv2WebAcl.Wafv2WebAclDefaultActionBlockCustomResponse,
+	CustomResponse: github.com/cdktf/cdktf-provider-aws-go/aws/v20.wafv2WebAcl.Wafv2WebAclDefaultActionBlockCustomResponse,
 }
 ```
 
@@ -2484,7 +2484,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclDefaultActionBlockCustomResponse.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2webacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/wafv2webacl"
 
 &wafv2webacl.Wafv2WebAclDefaultActionBlockCustomResponse {
 	ResponseCode: *f64,
@@ -2546,7 +2546,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclDefaultActionBlockCustomResponseResponseHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2webacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/wafv2webacl"
 
 &wafv2webacl.Wafv2WebAclDefaultActionBlockCustomResponseResponseHeader {
 	Name: *string,
@@ -2592,16 +2592,16 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2webacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/wafv2webacl"
 
 &wafv2webacl.Wafv2WebAclRule {
 	Name: *string,
 	Priority: *f64,
-	VisibilityConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v19.wafv2WebAcl.Wafv2WebAclRuleVisibilityConfig,
-	Action: github.com/cdktf/cdktf-provider-aws-go/aws/v19.wafv2WebAcl.Wafv2WebAclRuleAction,
-	CaptchaConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v19.wafv2WebAcl.Wafv2WebAclRuleCaptchaConfig,
-	ChallengeConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v19.wafv2WebAcl.Wafv2WebAclRuleChallengeConfig,
-	OverrideAction: github.com/cdktf/cdktf-provider-aws-go/aws/v19.wafv2WebAcl.Wafv2WebAclRuleOverrideAction,
+	VisibilityConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v20.wafv2WebAcl.Wafv2WebAclRuleVisibilityConfig,
+	Action: github.com/cdktf/cdktf-provider-aws-go/aws/v20.wafv2WebAcl.Wafv2WebAclRuleAction,
+	CaptchaConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v20.wafv2WebAcl.Wafv2WebAclRuleCaptchaConfig,
+	ChallengeConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v20.wafv2WebAcl.Wafv2WebAclRuleChallengeConfig,
+	OverrideAction: github.com/cdktf/cdktf-provider-aws-go/aws/v20.wafv2WebAcl.Wafv2WebAclRuleOverrideAction,
 	RuleLabel: interface{},
 	Statement: interface{},
 }
@@ -2750,14 +2750,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleAction.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2webacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/wafv2webacl"
 
 &wafv2webacl.Wafv2WebAclRuleAction {
-	Allow: github.com/cdktf/cdktf-provider-aws-go/aws/v19.wafv2WebAcl.Wafv2WebAclRuleActionAllow,
-	Block: github.com/cdktf/cdktf-provider-aws-go/aws/v19.wafv2WebAcl.Wafv2WebAclRuleActionBlock,
-	Captcha: github.com/cdktf/cdktf-provider-aws-go/aws/v19.wafv2WebAcl.Wafv2WebAclRuleActionCaptcha,
-	Challenge: github.com/cdktf/cdktf-provider-aws-go/aws/v19.wafv2WebAcl.Wafv2WebAclRuleActionChallenge,
-	Count: github.com/cdktf/cdktf-provider-aws-go/aws/v19.wafv2WebAcl.Wafv2WebAclRuleActionCount,
+	Allow: github.com/cdktf/cdktf-provider-aws-go/aws/v20.wafv2WebAcl.Wafv2WebAclRuleActionAllow,
+	Block: github.com/cdktf/cdktf-provider-aws-go/aws/v20.wafv2WebAcl.Wafv2WebAclRuleActionBlock,
+	Captcha: github.com/cdktf/cdktf-provider-aws-go/aws/v20.wafv2WebAcl.Wafv2WebAclRuleActionCaptcha,
+	Challenge: github.com/cdktf/cdktf-provider-aws-go/aws/v20.wafv2WebAcl.Wafv2WebAclRuleActionChallenge,
+	Count: github.com/cdktf/cdktf-provider-aws-go/aws/v20.wafv2WebAcl.Wafv2WebAclRuleActionCount,
 }
 ```
 
@@ -2848,10 +2848,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleActionAllow.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2webacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/wafv2webacl"
 
 &wafv2webacl.Wafv2WebAclRuleActionAllow {
-	CustomRequestHandling: github.com/cdktf/cdktf-provider-aws-go/aws/v19.wafv2WebAcl.Wafv2WebAclRuleActionAllowCustomRequestHandling,
+	CustomRequestHandling: github.com/cdktf/cdktf-provider-aws-go/aws/v20.wafv2WebAcl.Wafv2WebAclRuleActionAllowCustomRequestHandling,
 }
 ```
 
@@ -2882,7 +2882,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleActionAllowCustomRequestHandling.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2webacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/wafv2webacl"
 
 &wafv2webacl.Wafv2WebAclRuleActionAllowCustomRequestHandling {
 	InsertHeader: interface{},
@@ -2916,7 +2916,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleActionAllowCustomRequestHandlingInsertHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2webacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/wafv2webacl"
 
 &wafv2webacl.Wafv2WebAclRuleActionAllowCustomRequestHandlingInsertHeader {
 	Name: *string,
@@ -2962,10 +2962,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleActionBlock.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2webacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/wafv2webacl"
 
 &wafv2webacl.Wafv2WebAclRuleActionBlock {
-	CustomResponse: github.com/cdktf/cdktf-provider-aws-go/aws/v19.wafv2WebAcl.Wafv2WebAclRuleActionBlockCustomResponse,
+	CustomResponse: github.com/cdktf/cdktf-provider-aws-go/aws/v20.wafv2WebAcl.Wafv2WebAclRuleActionBlockCustomResponse,
 }
 ```
 
@@ -2996,7 +2996,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleActionBlockCustomResponse.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2webacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/wafv2webacl"
 
 &wafv2webacl.Wafv2WebAclRuleActionBlockCustomResponse {
 	ResponseCode: *f64,
@@ -3058,7 +3058,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleActionBlockCustomResponseResponseHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2webacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/wafv2webacl"
 
 &wafv2webacl.Wafv2WebAclRuleActionBlockCustomResponseResponseHeader {
 	Name: *string,
@@ -3104,10 +3104,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleActionCaptcha.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2webacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/wafv2webacl"
 
 &wafv2webacl.Wafv2WebAclRuleActionCaptcha {
-	CustomRequestHandling: github.com/cdktf/cdktf-provider-aws-go/aws/v19.wafv2WebAcl.Wafv2WebAclRuleActionCaptchaCustomRequestHandling,
+	CustomRequestHandling: github.com/cdktf/cdktf-provider-aws-go/aws/v20.wafv2WebAcl.Wafv2WebAclRuleActionCaptchaCustomRequestHandling,
 }
 ```
 
@@ -3138,7 +3138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleActionCaptchaCustomRequestHandling.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2webacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/wafv2webacl"
 
 &wafv2webacl.Wafv2WebAclRuleActionCaptchaCustomRequestHandling {
 	InsertHeader: interface{},
@@ -3172,7 +3172,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleActionCaptchaCustomRequestHandlingInsertHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2webacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/wafv2webacl"
 
 &wafv2webacl.Wafv2WebAclRuleActionCaptchaCustomRequestHandlingInsertHeader {
 	Name: *string,
@@ -3218,10 +3218,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleActionChallenge.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2webacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/wafv2webacl"
 
 &wafv2webacl.Wafv2WebAclRuleActionChallenge {
-	CustomRequestHandling: github.com/cdktf/cdktf-provider-aws-go/aws/v19.wafv2WebAcl.Wafv2WebAclRuleActionChallengeCustomRequestHandling,
+	CustomRequestHandling: github.com/cdktf/cdktf-provider-aws-go/aws/v20.wafv2WebAcl.Wafv2WebAclRuleActionChallengeCustomRequestHandling,
 }
 ```
 
@@ -3252,7 +3252,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleActionChallengeCustomRequestHandling.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2webacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/wafv2webacl"
 
 &wafv2webacl.Wafv2WebAclRuleActionChallengeCustomRequestHandling {
 	InsertHeader: interface{},
@@ -3286,7 +3286,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleActionChallengeCustomRequestHandlingInsertHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2webacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/wafv2webacl"
 
 &wafv2webacl.Wafv2WebAclRuleActionChallengeCustomRequestHandlingInsertHeader {
 	Name: *string,
@@ -3332,10 +3332,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleActionCount.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2webacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/wafv2webacl"
 
 &wafv2webacl.Wafv2WebAclRuleActionCount {
-	CustomRequestHandling: github.com/cdktf/cdktf-provider-aws-go/aws/v19.wafv2WebAcl.Wafv2WebAclRuleActionCountCustomRequestHandling,
+	CustomRequestHandling: github.com/cdktf/cdktf-provider-aws-go/aws/v20.wafv2WebAcl.Wafv2WebAclRuleActionCountCustomRequestHandling,
 }
 ```
 
@@ -3366,7 +3366,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleActionCountCustomRequestHandling.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2webacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/wafv2webacl"
 
 &wafv2webacl.Wafv2WebAclRuleActionCountCustomRequestHandling {
 	InsertHeader: interface{},
@@ -3400,7 +3400,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleActionCountCustomRequestHandlingInsertHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2webacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/wafv2webacl"
 
 &wafv2webacl.Wafv2WebAclRuleActionCountCustomRequestHandlingInsertHeader {
 	Name: *string,
@@ -3446,10 +3446,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleCaptchaConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2webacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/wafv2webacl"
 
 &wafv2webacl.Wafv2WebAclRuleCaptchaConfig {
-	ImmunityTimeProperty: github.com/cdktf/cdktf-provider-aws-go/aws/v19.wafv2WebAcl.Wafv2WebAclRuleCaptchaConfigImmunityTimeProperty,
+	ImmunityTimeProperty: github.com/cdktf/cdktf-provider-aws-go/aws/v20.wafv2WebAcl.Wafv2WebAclRuleCaptchaConfigImmunityTimeProperty,
 }
 ```
 
@@ -3480,7 +3480,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleCaptchaConfigImmunityTimeProperty.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2webacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/wafv2webacl"
 
 &wafv2webacl.Wafv2WebAclRuleCaptchaConfigImmunityTimeProperty {
 	ImmunityTime: *f64,
@@ -3512,10 +3512,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleChallengeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2webacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/wafv2webacl"
 
 &wafv2webacl.Wafv2WebAclRuleChallengeConfig {
-	ImmunityTimeProperty: github.com/cdktf/cdktf-provider-aws-go/aws/v19.wafv2WebAcl.Wafv2WebAclRuleChallengeConfigImmunityTimeProperty,
+	ImmunityTimeProperty: github.com/cdktf/cdktf-provider-aws-go/aws/v20.wafv2WebAcl.Wafv2WebAclRuleChallengeConfigImmunityTimeProperty,
 }
 ```
 
@@ -3546,7 +3546,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleChallengeConfigImmunityTimeProperty.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2webacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/wafv2webacl"
 
 &wafv2webacl.Wafv2WebAclRuleChallengeConfigImmunityTimeProperty {
 	ImmunityTime: *f64,
@@ -3578,11 +3578,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleOverrideAction.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2webacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/wafv2webacl"
 
 &wafv2webacl.Wafv2WebAclRuleOverrideAction {
-	Count: github.com/cdktf/cdktf-provider-aws-go/aws/v19.wafv2WebAcl.Wafv2WebAclRuleOverrideActionCount,
-	None: github.com/cdktf/cdktf-provider-aws-go/aws/v19.wafv2WebAcl.Wafv2WebAclRuleOverrideActionNone,
+	Count: github.com/cdktf/cdktf-provider-aws-go/aws/v20.wafv2WebAcl.Wafv2WebAclRuleOverrideActionCount,
+	None: github.com/cdktf/cdktf-provider-aws-go/aws/v20.wafv2WebAcl.Wafv2WebAclRuleOverrideActionNone,
 }
 ```
 
@@ -3628,7 +3628,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleOverrideActionCount.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2webacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/wafv2webacl"
 
 &wafv2webacl.Wafv2WebAclRuleOverrideActionCount {
 
@@ -3641,7 +3641,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2webacl"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleOverrideActionNone.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2webacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/wafv2webacl"
 
 &wafv2webacl.Wafv2WebAclRuleOverrideActionNone {
 
@@ -3654,7 +3654,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2webacl"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleRuleLabel.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2webacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/wafv2webacl"
 
 &wafv2webacl.Wafv2WebAclRuleRuleLabel {
 	Name: *string,
@@ -3686,7 +3686,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleVisibilityConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2webacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/wafv2webacl"
 
 &wafv2webacl.Wafv2WebAclRuleVisibilityConfig {
 	CloudwatchMetricsEnabled: interface{},
@@ -3746,7 +3746,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclVisibilityConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2webacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/wafv2webacl"
 
 &wafv2webacl.Wafv2WebAclVisibilityConfig {
 	CloudwatchMetricsEnabled: interface{},
@@ -3808,7 +3808,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclAssociationConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2webacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/wafv2webacl"
 
 wafv2webacl.NewWafv2WebAclAssociationConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Wafv2WebAclAssociationConfigOutputReference
 ```
@@ -4099,7 +4099,7 @@ func InternalValue() Wafv2WebAclAssociationConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclAssociationConfigRequestBodyApiGatewayOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2webacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/wafv2webacl"
 
 wafv2webacl.NewWafv2WebAclAssociationConfigRequestBodyApiGatewayOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Wafv2WebAclAssociationConfigRequestBodyApiGatewayOutputReference
 ```
@@ -4370,7 +4370,7 @@ func InternalValue() Wafv2WebAclAssociationConfigRequestBodyApiGateway
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclAssociationConfigRequestBodyAppRunnerServiceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2webacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/wafv2webacl"
 
 wafv2webacl.NewWafv2WebAclAssociationConfigRequestBodyAppRunnerServiceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Wafv2WebAclAssociationConfigRequestBodyAppRunnerServiceOutputReference
 ```
@@ -4641,7 +4641,7 @@ func InternalValue() Wafv2WebAclAssociationConfigRequestBodyAppRunnerService
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclAssociationConfigRequestBodyCloudfrontOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2webacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/wafv2webacl"
 
 wafv2webacl.NewWafv2WebAclAssociationConfigRequestBodyCloudfrontOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Wafv2WebAclAssociationConfigRequestBodyCloudfrontOutputReference
 ```
@@ -4912,7 +4912,7 @@ func InternalValue() Wafv2WebAclAssociationConfigRequestBodyCloudfront
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclAssociationConfigRequestBodyCognitoUserPoolOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2webacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/wafv2webacl"
 
 wafv2webacl.NewWafv2WebAclAssociationConfigRequestBodyCognitoUserPoolOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Wafv2WebAclAssociationConfigRequestBodyCognitoUserPoolOutputReference
 ```
@@ -5183,7 +5183,7 @@ func InternalValue() Wafv2WebAclAssociationConfigRequestBodyCognitoUserPool
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclAssociationConfigRequestBodyList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2webacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/wafv2webacl"
 
 wafv2webacl.NewWafv2WebAclAssociationConfigRequestBodyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclAssociationConfigRequestBodyList
 ```
@@ -5343,7 +5343,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclAssociationConfigRequestBodyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2webacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/wafv2webacl"
 
 wafv2webacl.NewWafv2WebAclAssociationConfigRequestBodyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclAssociationConfigRequestBodyOutputReference
 ```
@@ -5820,7 +5820,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclAssociationConfigRequestBodyVerifiedAccessInstanceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2webacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/wafv2webacl"
 
 wafv2webacl.NewWafv2WebAclAssociationConfigRequestBodyVerifiedAccessInstanceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Wafv2WebAclAssociationConfigRequestBodyVerifiedAccessInstanceOutputReference
 ```
@@ -6091,7 +6091,7 @@ func InternalValue() Wafv2WebAclAssociationConfigRequestBodyVerifiedAccessInstan
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclCaptchaConfigImmunityTimePropertyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2webacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/wafv2webacl"
 
 wafv2webacl.NewWafv2WebAclCaptchaConfigImmunityTimePropertyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Wafv2WebAclCaptchaConfigImmunityTimePropertyOutputReference
 ```
@@ -6369,7 +6369,7 @@ func InternalValue() Wafv2WebAclCaptchaConfigImmunityTimeProperty
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclCaptchaConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2webacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/wafv2webacl"
 
 wafv2webacl.NewWafv2WebAclCaptchaConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Wafv2WebAclCaptchaConfigOutputReference
 ```
@@ -6660,7 +6660,7 @@ func InternalValue() Wafv2WebAclCaptchaConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclChallengeConfigImmunityTimePropertyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2webacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/wafv2webacl"
 
 wafv2webacl.NewWafv2WebAclChallengeConfigImmunityTimePropertyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Wafv2WebAclChallengeConfigImmunityTimePropertyOutputReference
 ```
@@ -6938,7 +6938,7 @@ func InternalValue() Wafv2WebAclChallengeConfigImmunityTimeProperty
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclChallengeConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2webacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/wafv2webacl"
 
 wafv2webacl.NewWafv2WebAclChallengeConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Wafv2WebAclChallengeConfigOutputReference
 ```
@@ -7229,7 +7229,7 @@ func InternalValue() Wafv2WebAclChallengeConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclCustomResponseBodyList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2webacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/wafv2webacl"
 
 wafv2webacl.NewWafv2WebAclCustomResponseBodyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclCustomResponseBodyList
 ```
@@ -7389,7 +7389,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclCustomResponseBodyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2webacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/wafv2webacl"
 
 wafv2webacl.NewWafv2WebAclCustomResponseBodyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclCustomResponseBodyOutputReference
 ```
@@ -7722,7 +7722,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclDataProtectionConfigDataProtectionFieldOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2webacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/wafv2webacl"
 
 wafv2webacl.NewWafv2WebAclDataProtectionConfigDataProtectionFieldOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Wafv2WebAclDataProtectionConfigDataProtectionFieldOutputReference
 ```
@@ -8022,7 +8022,7 @@ func InternalValue() Wafv2WebAclDataProtectionConfigDataProtectionField
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclDataProtectionConfigDataProtectionList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2webacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/wafv2webacl"
 
 wafv2webacl.NewWafv2WebAclDataProtectionConfigDataProtectionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclDataProtectionConfigDataProtectionList
 ```
@@ -8182,7 +8182,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclDataProtectionConfigDataProtectionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2webacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/wafv2webacl"
 
 wafv2webacl.NewWafv2WebAclDataProtectionConfigDataProtectionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclDataProtectionConfigDataProtectionOutputReference
 ```
@@ -8564,7 +8564,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclDataProtectionConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2webacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/wafv2webacl"
 
 wafv2webacl.NewWafv2WebAclDataProtectionConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Wafv2WebAclDataProtectionConfigOutputReference
 ```
@@ -8855,7 +8855,7 @@ func InternalValue() Wafv2WebAclDataProtectionConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclDefaultActionAllowCustomRequestHandlingInsertHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2webacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/wafv2webacl"
 
 wafv2webacl.NewWafv2WebAclDefaultActionAllowCustomRequestHandlingInsertHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclDefaultActionAllowCustomRequestHandlingInsertHeaderList
 ```
@@ -9015,7 +9015,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclDefaultActionAllowCustomRequestHandlingInsertHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2webacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/wafv2webacl"
 
 wafv2webacl.NewWafv2WebAclDefaultActionAllowCustomRequestHandlingInsertHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclDefaultActionAllowCustomRequestHandlingInsertHeaderOutputReference
 ```
@@ -9326,7 +9326,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclDefaultActionAllowCustomRequestHandlingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2webacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/wafv2webacl"
 
 wafv2webacl.NewWafv2WebAclDefaultActionAllowCustomRequestHandlingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Wafv2WebAclDefaultActionAllowCustomRequestHandlingOutputReference
 ```
@@ -9610,7 +9610,7 @@ func InternalValue() Wafv2WebAclDefaultActionAllowCustomRequestHandling
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclDefaultActionAllowOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2webacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/wafv2webacl"
 
 wafv2webacl.NewWafv2WebAclDefaultActionAllowOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Wafv2WebAclDefaultActionAllowOutputReference
 ```
@@ -9901,7 +9901,7 @@ func InternalValue() Wafv2WebAclDefaultActionAllow
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclDefaultActionBlockCustomResponseOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2webacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/wafv2webacl"
 
 wafv2webacl.NewWafv2WebAclDefaultActionBlockCustomResponseOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Wafv2WebAclDefaultActionBlockCustomResponseOutputReference
 ```
@@ -10243,7 +10243,7 @@ func InternalValue() Wafv2WebAclDefaultActionBlockCustomResponse
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclDefaultActionBlockCustomResponseResponseHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2webacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/wafv2webacl"
 
 wafv2webacl.NewWafv2WebAclDefaultActionBlockCustomResponseResponseHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclDefaultActionBlockCustomResponseResponseHeaderList
 ```
@@ -10403,7 +10403,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclDefaultActionBlockCustomResponseResponseHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2webacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/wafv2webacl"
 
 wafv2webacl.NewWafv2WebAclDefaultActionBlockCustomResponseResponseHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclDefaultActionBlockCustomResponseResponseHeaderOutputReference
 ```
@@ -10714,7 +10714,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclDefaultActionBlockOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2webacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/wafv2webacl"
 
 wafv2webacl.NewWafv2WebAclDefaultActionBlockOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Wafv2WebAclDefaultActionBlockOutputReference
 ```
@@ -11005,7 +11005,7 @@ func InternalValue() Wafv2WebAclDefaultActionBlock
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclDefaultActionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2webacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/wafv2webacl"
 
 wafv2webacl.NewWafv2WebAclDefaultActionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Wafv2WebAclDefaultActionOutputReference
 ```
@@ -11338,7 +11338,7 @@ func InternalValue() Wafv2WebAclDefaultAction
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleActionAllowCustomRequestHandlingInsertHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2webacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/wafv2webacl"
 
 wafv2webacl.NewWafv2WebAclRuleActionAllowCustomRequestHandlingInsertHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleActionAllowCustomRequestHandlingInsertHeaderList
 ```
@@ -11498,7 +11498,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleActionAllowCustomRequestHandlingInsertHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2webacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/wafv2webacl"
 
 wafv2webacl.NewWafv2WebAclRuleActionAllowCustomRequestHandlingInsertHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleActionAllowCustomRequestHandlingInsertHeaderOutputReference
 ```
@@ -11809,7 +11809,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleActionAllowCustomRequestHandlingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2webacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/wafv2webacl"
 
 wafv2webacl.NewWafv2WebAclRuleActionAllowCustomRequestHandlingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Wafv2WebAclRuleActionAllowCustomRequestHandlingOutputReference
 ```
@@ -12093,7 +12093,7 @@ func InternalValue() Wafv2WebAclRuleActionAllowCustomRequestHandling
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleActionAllowOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2webacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/wafv2webacl"
 
 wafv2webacl.NewWafv2WebAclRuleActionAllowOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Wafv2WebAclRuleActionAllowOutputReference
 ```
@@ -12384,7 +12384,7 @@ func InternalValue() Wafv2WebAclRuleActionAllow
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleActionBlockCustomResponseOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2webacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/wafv2webacl"
 
 wafv2webacl.NewWafv2WebAclRuleActionBlockCustomResponseOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Wafv2WebAclRuleActionBlockCustomResponseOutputReference
 ```
@@ -12726,7 +12726,7 @@ func InternalValue() Wafv2WebAclRuleActionBlockCustomResponse
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleActionBlockCustomResponseResponseHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2webacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/wafv2webacl"
 
 wafv2webacl.NewWafv2WebAclRuleActionBlockCustomResponseResponseHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleActionBlockCustomResponseResponseHeaderList
 ```
@@ -12886,7 +12886,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleActionBlockCustomResponseResponseHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2webacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/wafv2webacl"
 
 wafv2webacl.NewWafv2WebAclRuleActionBlockCustomResponseResponseHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleActionBlockCustomResponseResponseHeaderOutputReference
 ```
@@ -13197,7 +13197,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleActionBlockOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2webacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/wafv2webacl"
 
 wafv2webacl.NewWafv2WebAclRuleActionBlockOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Wafv2WebAclRuleActionBlockOutputReference
 ```
@@ -13488,7 +13488,7 @@ func InternalValue() Wafv2WebAclRuleActionBlock
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleActionCaptchaCustomRequestHandlingInsertHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2webacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/wafv2webacl"
 
 wafv2webacl.NewWafv2WebAclRuleActionCaptchaCustomRequestHandlingInsertHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleActionCaptchaCustomRequestHandlingInsertHeaderList
 ```
@@ -13648,7 +13648,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleActionCaptchaCustomRequestHandlingInsertHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2webacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/wafv2webacl"
 
 wafv2webacl.NewWafv2WebAclRuleActionCaptchaCustomRequestHandlingInsertHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleActionCaptchaCustomRequestHandlingInsertHeaderOutputReference
 ```
@@ -13959,7 +13959,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleActionCaptchaCustomRequestHandlingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2webacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/wafv2webacl"
 
 wafv2webacl.NewWafv2WebAclRuleActionCaptchaCustomRequestHandlingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Wafv2WebAclRuleActionCaptchaCustomRequestHandlingOutputReference
 ```
@@ -14243,7 +14243,7 @@ func InternalValue() Wafv2WebAclRuleActionCaptchaCustomRequestHandling
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleActionCaptchaOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2webacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/wafv2webacl"
 
 wafv2webacl.NewWafv2WebAclRuleActionCaptchaOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Wafv2WebAclRuleActionCaptchaOutputReference
 ```
@@ -14534,7 +14534,7 @@ func InternalValue() Wafv2WebAclRuleActionCaptcha
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleActionChallengeCustomRequestHandlingInsertHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2webacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/wafv2webacl"
 
 wafv2webacl.NewWafv2WebAclRuleActionChallengeCustomRequestHandlingInsertHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleActionChallengeCustomRequestHandlingInsertHeaderList
 ```
@@ -14694,7 +14694,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleActionChallengeCustomRequestHandlingInsertHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2webacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/wafv2webacl"
 
 wafv2webacl.NewWafv2WebAclRuleActionChallengeCustomRequestHandlingInsertHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleActionChallengeCustomRequestHandlingInsertHeaderOutputReference
 ```
@@ -15005,7 +15005,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleActionChallengeCustomRequestHandlingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2webacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/wafv2webacl"
 
 wafv2webacl.NewWafv2WebAclRuleActionChallengeCustomRequestHandlingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Wafv2WebAclRuleActionChallengeCustomRequestHandlingOutputReference
 ```
@@ -15289,7 +15289,7 @@ func InternalValue() Wafv2WebAclRuleActionChallengeCustomRequestHandling
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleActionChallengeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2webacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/wafv2webacl"
 
 wafv2webacl.NewWafv2WebAclRuleActionChallengeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Wafv2WebAclRuleActionChallengeOutputReference
 ```
@@ -15580,7 +15580,7 @@ func InternalValue() Wafv2WebAclRuleActionChallenge
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleActionCountCustomRequestHandlingInsertHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2webacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/wafv2webacl"
 
 wafv2webacl.NewWafv2WebAclRuleActionCountCustomRequestHandlingInsertHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleActionCountCustomRequestHandlingInsertHeaderList
 ```
@@ -15740,7 +15740,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleActionCountCustomRequestHandlingInsertHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2webacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/wafv2webacl"
 
 wafv2webacl.NewWafv2WebAclRuleActionCountCustomRequestHandlingInsertHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleActionCountCustomRequestHandlingInsertHeaderOutputReference
 ```
@@ -16051,7 +16051,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleActionCountCustomRequestHandlingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2webacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/wafv2webacl"
 
 wafv2webacl.NewWafv2WebAclRuleActionCountCustomRequestHandlingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Wafv2WebAclRuleActionCountCustomRequestHandlingOutputReference
 ```
@@ -16335,7 +16335,7 @@ func InternalValue() Wafv2WebAclRuleActionCountCustomRequestHandling
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleActionCountOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2webacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/wafv2webacl"
 
 wafv2webacl.NewWafv2WebAclRuleActionCountOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Wafv2WebAclRuleActionCountOutputReference
 ```
@@ -16626,7 +16626,7 @@ func InternalValue() Wafv2WebAclRuleActionCount
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleActionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2webacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/wafv2webacl"
 
 wafv2webacl.NewWafv2WebAclRuleActionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Wafv2WebAclRuleActionOutputReference
 ```
@@ -17085,7 +17085,7 @@ func InternalValue() Wafv2WebAclRuleAction
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleCaptchaConfigImmunityTimePropertyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2webacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/wafv2webacl"
 
 wafv2webacl.NewWafv2WebAclRuleCaptchaConfigImmunityTimePropertyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Wafv2WebAclRuleCaptchaConfigImmunityTimePropertyOutputReference
 ```
@@ -17363,7 +17363,7 @@ func InternalValue() Wafv2WebAclRuleCaptchaConfigImmunityTimeProperty
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleCaptchaConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2webacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/wafv2webacl"
 
 wafv2webacl.NewWafv2WebAclRuleCaptchaConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Wafv2WebAclRuleCaptchaConfigOutputReference
 ```
@@ -17654,7 +17654,7 @@ func InternalValue() Wafv2WebAclRuleCaptchaConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleChallengeConfigImmunityTimePropertyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2webacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/wafv2webacl"
 
 wafv2webacl.NewWafv2WebAclRuleChallengeConfigImmunityTimePropertyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Wafv2WebAclRuleChallengeConfigImmunityTimePropertyOutputReference
 ```
@@ -17932,7 +17932,7 @@ func InternalValue() Wafv2WebAclRuleChallengeConfigImmunityTimeProperty
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleChallengeConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2webacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/wafv2webacl"
 
 wafv2webacl.NewWafv2WebAclRuleChallengeConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Wafv2WebAclRuleChallengeConfigOutputReference
 ```
@@ -18223,7 +18223,7 @@ func InternalValue() Wafv2WebAclRuleChallengeConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2webacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/wafv2webacl"
 
 wafv2webacl.NewWafv2WebAclRuleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleList
 ```
@@ -18383,7 +18383,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2webacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/wafv2webacl"
 
 wafv2webacl.NewWafv2WebAclRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleOutputReference
 ```
@@ -18968,7 +18968,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleOverrideActionCountOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2webacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/wafv2webacl"
 
 wafv2webacl.NewWafv2WebAclRuleOverrideActionCountOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Wafv2WebAclRuleOverrideActionCountOutputReference
 ```
@@ -19217,7 +19217,7 @@ func InternalValue() Wafv2WebAclRuleOverrideActionCount
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleOverrideActionNoneOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2webacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/wafv2webacl"
 
 wafv2webacl.NewWafv2WebAclRuleOverrideActionNoneOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Wafv2WebAclRuleOverrideActionNoneOutputReference
 ```
@@ -19466,7 +19466,7 @@ func InternalValue() Wafv2WebAclRuleOverrideActionNone
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleOverrideActionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2webacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/wafv2webacl"
 
 wafv2webacl.NewWafv2WebAclRuleOverrideActionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Wafv2WebAclRuleOverrideActionOutputReference
 ```
@@ -19799,7 +19799,7 @@ func InternalValue() Wafv2WebAclRuleOverrideAction
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleRuleLabelList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2webacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/wafv2webacl"
 
 wafv2webacl.NewWafv2WebAclRuleRuleLabelList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclRuleRuleLabelList
 ```
@@ -19959,7 +19959,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleRuleLabelOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2webacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/wafv2webacl"
 
 wafv2webacl.NewWafv2WebAclRuleRuleLabelOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclRuleRuleLabelOutputReference
 ```
@@ -20248,7 +20248,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleVisibilityConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2webacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/wafv2webacl"
 
 wafv2webacl.NewWafv2WebAclRuleVisibilityConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Wafv2WebAclRuleVisibilityConfigOutputReference
 ```
@@ -20563,7 +20563,7 @@ func InternalValue() Wafv2WebAclRuleVisibilityConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclVisibilityConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2webacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/wafv2webacl"
 
 wafv2webacl.NewWafv2WebAclVisibilityConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Wafv2WebAclVisibilityConfigOutputReference
 ```

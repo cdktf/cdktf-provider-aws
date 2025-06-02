@@ -33,7 +33,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@cdca7365b2dadb8aad0a33bc7601856ffabcc48e
         with:
-          node-version: 18.12.0
+          node-version: 20.9.0
       - name: Install dependencies
         run: yarn install --check-files --frozen-lockfile
       - name: release
@@ -73,7 +73,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@cdca7365b2dadb8aad0a33bc7601856ffabcc48e
         with:
-          node-version: 18.12.0
+          node-version: 20.9.0
       - name: Install
         run: yarn install
       - name: Check deprecation status
@@ -101,7 +101,7 @@ jobs:
     steps:
       - uses: actions/setup-node@cdca7365b2dadb8aad0a33bc7601856ffabcc48e
         with:
-          node-version: 18.12.0
+          node-version: 20.9.0
       - name: Download build artifacts
         uses: actions/download-artifact@95815c38cf2ff2164869cbab79da8d1f422bc89e
         with:
@@ -140,7 +140,7 @@ jobs:
     steps:
       - uses: actions/setup-node@cdca7365b2dadb8aad0a33bc7601856ffabcc48e
         with:
-          node-version: 18.12.0
+          node-version: 20.9.0
       - name: Download build artifacts
         uses: actions/download-artifact@95815c38cf2ff2164869cbab79da8d1f422bc89e
         with:
@@ -197,7 +197,7 @@ jobs:
           java-version: "11"
       - uses: actions/setup-node@cdca7365b2dadb8aad0a33bc7601856ffabcc48e
         with:
-          node-version: 18.12.0
+          node-version: 20.9.0
       - name: Download build artifacts
         uses: actions/download-artifact@95815c38cf2ff2164869cbab79da8d1f422bc89e
         with:
@@ -254,7 +254,7 @@ jobs:
     steps:
       - uses: actions/setup-node@cdca7365b2dadb8aad0a33bc7601856ffabcc48e
         with:
-          node-version: 18.12.0
+          node-version: 20.9.0
       - uses: actions/setup-python@42375524e23c412d93fb67b49958b491fce71c38
         with:
           python-version: 3.x
@@ -309,7 +309,7 @@ jobs:
     steps:
       - uses: actions/setup-node@cdca7365b2dadb8aad0a33bc7601856ffabcc48e
         with:
-          node-version: 18.12.0
+          node-version: 20.9.0
       - uses: actions/setup-dotnet@67a3573c9a986a3f9c594539f4ab511d57bb3ce9
         with:
           dotnet-version: 6.x
@@ -363,7 +363,7 @@ jobs:
     steps:
       - uses: actions/setup-node@cdca7365b2dadb8aad0a33bc7601856ffabcc48e
         with:
-          node-version: 18.12.0
+          node-version: 20.9.0
       - uses: actions/setup-go@0aaccfd150d50ccaeb58ebd88d36e91967a5f35b
         with:
           go-version: ^1.18.0

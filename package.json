@@ -48,8 +48,8 @@
     "@action-validator/cli": "^0.6.0",
     "@action-validator/core": "^0.6.0",
     "@actions/core": "^1.1.0",
-    "@cdktf/provider-project": "^0.6.0",
-    "@types/node": "^18",
+    "@cdktf/provider-project": "^0.7.0",
+    "@types/node": "^20",
     "cdktf": "^0.20.0",
     "cdktf-cli": "^0.20.0",
     "commit-and-tag-version": "^12",
@@ -69,8 +69,7 @@
     "constructs": "^10.3.0"
   },
   "resolutions": {
-    "@types/yargs": "17.0.13",
-    "cssstyle": "4.1.0"
+    "@types/yargs": "17.0.13"
   },
   "keywords": [
     "aws",
@@ -80,7 +79,7 @@
     "terraform"
   ],
   "engines": {
-    "node": ">= 18.12.0"
+    "node": ">= 20.9.0"
   },
   "main": "lib/index.js",
   "license": "MPL-2.0",

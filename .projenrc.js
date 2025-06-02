@@ -11,10 +11,10 @@ const project = new CdktfProviderProject({
   terraformProvider: "aws@~> 5.0",
   cdktfVersion: "^0.20.0",
   constructsVersion: "^10.3.0",
-  minNodeVersion: "18.12.0",
+  minNodeVersion: "20.9.0",
   typescriptVersion: "~5.7.0", // JSII and TS should always use the same major/minor version range
   jsiiVersion: "~5.7.0", // JSII and TS should always use the same major/minor version range
-  devDeps: ["@cdktf/provider-project@^0.6.0"],
+  devDeps: ["@cdktf/provider-project@^0.7.0"],
   isDeprecated: false,
 });
 

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsFisExperimentTemplates.DataAwsFisExperimentTemplates.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsfisexperimenttemplates"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsfisexperimenttemplates"
 
 dataawsfisexperimenttemplates.NewDataAwsFisExperimentTemplates(scope Construct, id *string, config DataAwsFisExperimentTemplatesConfig) DataAwsFisExperimentTemplates
 ```
@@ -283,7 +283,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsFisExperimentTemplates.DataAwsFisExperimentTemplates.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsfisexperimenttemplates"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsfisexperimenttemplates"
 
 dataawsfisexperimenttemplates.DataAwsFisExperimentTemplates_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsFisExperimentTemplates.DataAwsFisExperimentTemplates.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsfisexperimenttemplates"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsfisexperimenttemplates"
 
 dataawsfisexperimenttemplates.DataAwsFisExperimentTemplates_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ dataawsfisexperimenttemplates.DataAwsFisExperimentTemplates_IsTerraformElement(x
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsFisExperimentTemplates.DataAwsFisExperimentTemplates.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsfisexperimenttemplates"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsfisexperimenttemplates"
 
 dataawsfisexperimenttemplates.DataAwsFisExperimentTemplates_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ dataawsfisexperimenttemplates.DataAwsFisExperimentTemplates_IsTerraformDataSourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsFisExperimentTemplates.DataAwsFisExperimentTemplates.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsfisexperimenttemplates"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsfisexperimenttemplates"
 
 dataawsfisexperimenttemplates.DataAwsFisExperimentTemplates_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -583,7 +583,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsFisExperimentTemplates.DataAwsFisExperimentTemplatesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsfisexperimenttemplates"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsfisexperimenttemplates"
 
 &dataawsfisexperimenttemplates.DataAwsFisExperimentTemplatesConfig {
 	Connection: interface{},

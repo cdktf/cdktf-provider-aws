@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dxHostedPublicVirtualInterfaceAccepter.DxHostedPublicVirtualInterfaceAccepter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dxhostedpublicvirtualinterfaceaccepter"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dxhostedpublicvirtualinterfaceaccepter"
 
 dxhostedpublicvirtualinterfaceaccepter.NewDxHostedPublicVirtualInterfaceAccepter(scope Construct, id *string, config DxHostedPublicVirtualInterfaceAccepterConfig) DxHostedPublicVirtualInterfaceAccepter
 ```
@@ -419,7 +419,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dxHostedPublicVirtualInterfaceAccepter.DxHostedPublicVirtualInterfaceAccepter.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dxhostedpublicvirtualinterfaceaccepter"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dxhostedpublicvirtualinterfaceaccepter"
 
 dxhostedpublicvirtualinterfaceaccepter.DxHostedPublicVirtualInterfaceAccepter_IsConstruct(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dxHostedPublicVirtualInterfaceAccepter.DxHostedPublicVirtualInterfaceAccepter.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dxhostedpublicvirtualinterfaceaccepter"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dxhostedpublicvirtualinterfaceaccepter"
 
 dxhostedpublicvirtualinterfaceaccepter.DxHostedPublicVirtualInterfaceAccepter_IsTerraformElement(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ dxhostedpublicvirtualinterfaceaccepter.DxHostedPublicVirtualInterfaceAccepter_Is
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.dxHostedPublicVirtualInterfaceAccepter.DxHostedPublicVirtualInterfaceAccepter.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dxhostedpublicvirtualinterfaceaccepter"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dxhostedpublicvirtualinterfaceaccepter"
 
 dxhostedpublicvirtualinterfaceaccepter.DxHostedPublicVirtualInterfaceAccepter_IsTerraformResource(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ dxhostedpublicvirtualinterfaceaccepter.DxHostedPublicVirtualInterfaceAccepter_Is
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dxHostedPublicVirtualInterfaceAccepter.DxHostedPublicVirtualInterfaceAccepter.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dxhostedpublicvirtualinterfaceaccepter"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dxhostedpublicvirtualinterfaceaccepter"
 
 dxhostedpublicvirtualinterfaceaccepter.DxHostedPublicVirtualInterfaceAccepter_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -829,7 +829,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dxHostedPublicVirtualInterfaceAccepter.DxHostedPublicVirtualInterfaceAccepterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dxhostedpublicvirtualinterfaceaccepter"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dxhostedpublicvirtualinterfaceaccepter"
 
 &dxhostedpublicvirtualinterfaceaccepter.DxHostedPublicVirtualInterfaceAccepterConfig {
 	Connection: interface{},
@@ -843,7 +843,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dxhostedpublicvirtualinte
 	Id: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v19.dxHostedPublicVirtualInterfaceAccepter.DxHostedPublicVirtualInterfaceAccepterTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v20.dxHostedPublicVirtualInterfaceAccepter.DxHostedPublicVirtualInterfaceAccepterTimeouts,
 }
 ```
 
@@ -1006,7 +1006,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dxHostedPublicVirtualInterfaceAccepter.DxHostedPublicVirtualInterfaceAccepterTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dxhostedpublicvirtualinterfaceaccepter"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dxhostedpublicvirtualinterfaceaccepter"
 
 &dxhostedpublicvirtualinterfaceaccepter.DxHostedPublicVirtualInterfaceAccepterTimeouts {
 	Create: *string,
@@ -1054,7 +1054,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dxHostedPublicVirtualInterfaceAccepter.DxHostedPublicVirtualInterfaceAccepterTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dxhostedpublicvirtualinterfaceaccepter"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dxhostedpublicvirtualinterfaceaccepter"
 
 dxhostedpublicvirtualinterfaceaccepter.NewDxHostedPublicVirtualInterfaceAccepterTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DxHostedPublicVirtualInterfaceAccepterTimeoutsOutputReference
 ```
