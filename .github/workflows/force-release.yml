@@ -8,23 +8,41 @@ on:
         type: string
         required: true
         description: The sha of the commit to release
+      publish_to_npm:
+        type: boolean
+        default: false
+        description: Whether or not to publish to NPM
+      publish_to_maven:
+        type: boolean
+        default: false
+        description: Whether or not to publish to Maven
+      publish_to_pypi:
+        type: boolean
+        default: false
+        description: Whether or not to publish to PyPi
+      publish_to_nuget:
+        type: boolean
+        default: false
+        description: Whether or not to publish to NuGet
       publish_to_go:
         type: boolean
-        required: true
-        description: Whether to publish to Go Repository
+        default: false
+        description: Whether or not to publish to Go
 jobs:
-  force-release:
+  release:
     runs-on: custom-linux-medium
     permissions:
       contents: write
+    outputs:
+      tag_exists: ${{ steps.check_tag_exists.outputs.exists }}
     env:
       CI: "true"
     steps:
       - name: Checkout
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
         with:
-          ref: ${{ inputs.sha }}
           fetch-depth: 0
+          ref: ${{ inputs.sha }}
       - name: Set git config safe.directory
         run: git config --global --add safe.directory $(pwd)
       - name: Set git identity
@@ -37,32 +55,231 @@ jobs:
           node-version: 20.9.0
       - name: Install dependencies
         run: yarn install --check-files --frozen-lockfile
-      - name: build
-        run: npx projen build
+      - name: release
+        run: npx projen release
+      - name: Check for new commits or cancel via faking a SHA if release was cancelled
+        id: git_remote
+        run: node ./scripts/should-release.js && (echo "latest_commit=$(git ls-remote origin -h ${{ github.ref }} | cut -f1)" >> $GITHUB_OUTPUT && cat $GITHUB_OUTPUT) || echo "latest_commit=release_cancelled" >> $GITHUB_OUTPUT
       - name: Backup artifact permissions
         run: cd dist && getfacl -R . > permissions-backup.acl
         continue-on-error: true
       - name: Upload artifact
+        if: ${{ steps.git_remote.outputs.latest_commit == github.sha }}
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
         with:
           name: build-artifact
           path: dist
           overwrite: true
-  force_release_golang:
-    name: Publish to Github Go Repository
-    needs: force-release
+  release_github:
+    name: Publish to GitHub Releases
+    needs: release
+    runs-on: custom-linux-medium
+    permissions:
+      contents: write
+      issues: write
+    if: needs.release.outputs.tag_exists != 'true'
+    steps:
+      - uses: actions/setup-node@cdca7365b2dadb8aad0a33bc7601856ffabcc48e
+        with:
+          node-version: 20.9.0
+      - name: Download build artifacts
+        uses: actions/download-artifact@95815c38cf2ff2164869cbab79da8d1f422bc89e
+        with:
+          name: build-artifact
+          path: dist
+      - name: Restore build artifact permissions
+        run: cd dist && setfacl --restore=permissions-backup.acl
+        continue-on-error: true
+      - name: Release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+          GITHUB_REF: ${{ inputs.sha }}
+        run: errout=$(mktemp); gh release create $(cat dist/releasetag.txt) -R $GITHUB_REPOSITORY -F dist/changelog.md -t $(cat dist/releasetag.txt) --target $GITHUB_REF 2> $errout && true; exitcode=$?; if [ $exitcode -ne 0 ] && ! grep -q "Release.tag_name already exists" $errout; then cat $errout; exit $exitcode; fi
+  release_npm:
+    name: Publish to npm
+    needs: release
     runs-on: custom-linux-medium
     permissions:
       contents: read
-    env:
-      CI: "true"
+      issues: write
+    if: ${{ inputs.publish_to_npm }}
     steps:
-      - name: Setup Node.js
-        uses: actions/setup-node@cdca7365b2dadb8aad0a33bc7601856ffabcc48e
+      - uses: actions/setup-node@cdca7365b2dadb8aad0a33bc7601856ffabcc48e
         with:
           node-version: 20.9.0
-      - name: Setup Go
-        uses: actions/setup-go@0aaccfd150d50ccaeb58ebd88d36e91967a5f35b
+      - name: Download build artifacts
+        uses: actions/download-artifact@95815c38cf2ff2164869cbab79da8d1f422bc89e
+        with:
+          name: build-artifact
+          path: dist
+      - name: Restore build artifact permissions
+        run: cd dist && setfacl --restore=permissions-backup.acl
+        continue-on-error: true
+      - name: Checkout
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          path: .repo
+      - name: Install Dependencies
+        run: cd .repo && yarn install --check-files --frozen-lockfile
+      - name: Extract build artifact
+        run: tar --strip-components=1 -xzvf dist/js/*.tgz -C .repo
+      - name: Move build artifact out of the way
+        run: mv dist dist.old
+      - name: Create js artifact
+        run: cd .repo && npx projen package:js
+      - name: Collect js artifact
+        run: mv .repo/dist dist
+      - name: Release
+        env:
+          NPM_DIST_TAG: latest
+          NPM_REGISTRY: registry.npmjs.org
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: npx -p publib@latest publib-npm
+  release_maven:
+    name: Publish to Maven Central
+    needs: release
+    runs-on: custom-linux-medium
+    permissions:
+      contents: read
+      issues: write
+    if: ${{ inputs.publish_to_maven }}
+    steps:
+      - uses: actions/setup-java@3a4f6e1af504cf6a31855fa899c6aa5355ba6c12
+        with:
+          distribution: corretto
+          java-version: "11"
+      - uses: actions/setup-node@cdca7365b2dadb8aad0a33bc7601856ffabcc48e
+        with:
+          node-version: 20.9.0
+      - name: Download build artifacts
+        uses: actions/download-artifact@95815c38cf2ff2164869cbab79da8d1f422bc89e
+        with:
+          name: build-artifact
+          path: dist
+      - name: Restore build artifact permissions
+        run: cd dist && setfacl --restore=permissions-backup.acl
+        continue-on-error: true
+      - name: Checkout
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          path: .repo
+      - name: Install Dependencies
+        run: cd .repo && yarn install --check-files --frozen-lockfile
+      - name: Extract build artifact
+        run: tar --strip-components=1 -xzvf dist/js/*.tgz -C .repo
+      - name: Move build artifact out of the way
+        run: mv dist dist.old
+      - name: Create java artifact
+        run: cd .repo && npx projen package:java
+      - name: Collect java artifact
+        run: mv .repo/dist dist
+      - name: Release
+        env:
+          MAVEN_ENDPOINT: https://hashicorp.oss.sonatype.org
+          MAVEN_GPG_PRIVATE_KEY: ${{ secrets.MAVEN_GPG_PRIVATE_KEY }}
+          MAVEN_GPG_PRIVATE_KEY_PASSPHRASE: ${{ secrets.MAVEN_GPG_PRIVATE_KEY_PASSPHRASE }}
+          MAVEN_PASSWORD: ${{ secrets.MAVEN_PASSWORD }}
+          MAVEN_USERNAME: ${{ secrets.MAVEN_USERNAME }}
+          MAVEN_STAGING_PROFILE_ID: ${{ secrets.MAVEN_STAGING_PROFILE_ID }}
+          MAVEN_OPTS: --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.lang.reflect=ALL-UNNAMED --add-opens=java.base/java.text=ALL-UNNAMED --add-opens=java.desktop/java.awt.font=ALL-UNNAMED
+        run: npx -p publib@latest publib-maven
+  release_pypi:
+    name: Publish to PyPI
+    needs: release
+    runs-on: custom-linux-medium
+    permissions:
+      contents: read
+      issues: write
+    if: ${{ inputs.publish_to_pypi }}
+    steps:
+      - uses: actions/setup-node@cdca7365b2dadb8aad0a33bc7601856ffabcc48e
+        with:
+          node-version: 20.9.0
+      - uses: actions/setup-python@42375524e23c412d93fb67b49958b491fce71c38
+        with:
+          python-version: 3.x
+      - name: Download build artifacts
+        uses: actions/download-artifact@95815c38cf2ff2164869cbab79da8d1f422bc89e
+        with:
+          name: build-artifact
+          path: dist
+      - name: Restore build artifact permissions
+        run: cd dist && setfacl --restore=permissions-backup.acl
+        continue-on-error: true
+      - name: Checkout
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          path: .repo
+      - name: Install Dependencies
+        run: cd .repo && yarn install --check-files --frozen-lockfile
+      - name: Extract build artifact
+        run: tar --strip-components=1 -xzvf dist/js/*.tgz -C .repo
+      - name: Move build artifact out of the way
+        run: mv dist dist.old
+      - name: Create python artifact
+        run: cd .repo && npx projen package:python
+      - name: Collect python artifact
+        run: mv .repo/dist dist
+      - name: Release
+        env:
+          TWINE_USERNAME: ${{ secrets.TWINE_USERNAME }}
+          TWINE_PASSWORD: ${{ secrets.TWINE_PASSWORD }}
+        run: npx -p publib@latest publib-pypi
+  release_nuget:
+    name: Publish to NuGet Gallery
+    needs: release
+    runs-on: custom-linux-medium
+    permissions:
+      contents: read
+      issues: write
+    if: ${{ inputs.publish_to_nuget }}
+    steps:
+      - uses: actions/setup-node@cdca7365b2dadb8aad0a33bc7601856ffabcc48e
+        with:
+          node-version: 20.9.0
+      - uses: actions/setup-dotnet@67a3573c9a986a3f9c594539f4ab511d57bb3ce9
+        with:
+          dotnet-version: 6.x
+      - name: Download build artifacts
+        uses: actions/download-artifact@95815c38cf2ff2164869cbab79da8d1f422bc89e
+        with:
+          name: build-artifact
+          path: dist
+      - name: Restore build artifact permissions
+        run: cd dist && setfacl --restore=permissions-backup.acl
+        continue-on-error: true
+      - name: Checkout
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          path: .repo
+      - name: Install Dependencies
+        run: cd .repo && yarn install --check-files --frozen-lockfile
+      - name: Extract build artifact
+        run: tar --strip-components=1 -xzvf dist/js/*.tgz -C .repo
+      - name: Move build artifact out of the way
+        run: mv dist dist.old
+      - name: Create dotnet artifact
+        run: cd .repo && npx projen package:dotnet
+      - name: Collect dotnet artifact
+        run: mv .repo/dist dist
+      - name: Release
+        env:
+          NUGET_API_KEY: ${{ secrets.NUGET_API_KEY }}
+        run: npx -p publib@latest publib-nuget
+  release_golang:
+    name: Publish to GitHub Go Module Repository
+    needs: release
+    runs-on: custom-linux-medium
+    permissions:
+      contents: read
+      issues: write
+    if: ${{ inputs.publish_to_go }}
+    steps:
+      - uses: actions/setup-node@cdca7365b2dadb8aad0a33bc7601856ffabcc48e
+        with:
+          node-version: 20.9.0
+      - uses: actions/setup-go@0aaccfd150d50ccaeb58ebd88d36e91967a5f35b
         with:
           go-version: ^1.18.0
       - name: Download build artifacts
@@ -106,7 +323,6 @@ jobs:
       - name: Collect go Artifact
         run: mv .repo/dist dist
       - name: Release
-        if: ${{ inputs.publish_to_go }}
         env:
           GIT_USER_NAME: CDK for Terraform Team
           GIT_USER_EMAIL: github-team-tf-cdk@hashicorp.com
