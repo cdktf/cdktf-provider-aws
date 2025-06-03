@@ -54,7 +54,7 @@ jobs:
         with:
           node-version: 20.9.0
       - name: Install dependencies
-        run: yarn install --check-files --frozen-lockfile
+        run: npx projen unconditional-release
       - name: release
         run: npx projen release
       - name: Check for new commits or cancel via faking a SHA if release was cancelled

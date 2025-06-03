@@ -335,6 +335,31 @@
         }
       ]
     },
+    "unconditional-release": {
+      "name": "unconditional-release",
+      "description": "Prepare a release from \"main\" branch",
+      "env": {
+        "RELEASE": "true",
+        "MIN_MAJOR": "1"
+      },
+      "steps": [
+        {
+          "exec": "rm -fr dist"
+        },
+        {
+          "spawn": "bump"
+        },
+        {
+          "spawn": "build"
+        },
+        {
+          "spawn": "unbump"
+        },
+        {
+          "exec": "git diff --ignore-space-at-eol --exit-code"
+        }
+      ]
+    },
     "upgrade": {
       "name": "upgrade",
       "description": "upgrade dependencies",

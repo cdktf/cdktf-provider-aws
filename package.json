@@ -30,6 +30,7 @@
     "test": "jest --passWithNoTests",
     "unbump": "npx projen unbump",
     "unconditional-bump": "npx projen unconditional-bump",
+    "unconditional-release": "npx projen unconditional-release",
     "upgrade": "npx projen upgrade",
     "validate-workflows": "npx projen validate-workflows",
     "watch": "npx projen watch",
