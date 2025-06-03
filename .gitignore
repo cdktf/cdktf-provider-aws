@@ -57,11 +57,11 @@ package-lock.json
 !/scripts/check-for-upgrades.js
 !/.github/workflows/provider-upgrade.yml
 !/.github/workflows/alert-open-prs.yml
-!/.github/workflows/force-release.yml
 !/.github/dependabot.yml
 !/.github/CODEOWNERS
 !/scripts/should-release.js
 API.md
 !/docs/*.md
 !/.copywrite.hcl
+!/.github/workflows/force-release.yml
 !/.projenrc.js
