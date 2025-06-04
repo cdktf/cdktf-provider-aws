@@ -8,8 +8,8 @@ const { CdktfProviderProject } = require("@cdktf/provider-project");
 const project = new CdktfProviderProject({
   useCustomGithubRunner: true,
   terraformProvider: "aws@~> 5.0",
-  cdktfVersion: "^0.20.0",
-  constructsVersion: "^10.3.0",
+  cdktfVersion: "^0.21.0",
+  constructsVersion: "^10.4.2",
   minNodeVersion: "20.9.0",
   typescriptVersion: "~5.7.0", // JSII and TS should always use the same major/minor version range
   jsiiVersion: "~5.7.0", // JSII and TS should always use the same major/minor version range

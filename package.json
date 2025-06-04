@@ -51,10 +51,10 @@
     "@actions/core": "^1.1.0",
     "@cdktf/provider-project": "^0.7.0",
     "@types/node": "^20",
-    "cdktf": "^0.20.0",
-    "cdktf-cli": "^0.20.0",
+    "cdktf": "^0.21.0",
+    "cdktf-cli": "^0.21.0",
     "commit-and-tag-version": "^12",
-    "constructs": "^10.3.0",
+    "constructs": "^10.4.2",
     "dot-prop": "^5.2.0",
     "jsii": "~5.7.0",
     "jsii-diff": "^1.111.0",
@@ -66,8 +66,8 @@
     "typescript": "~5.7.0"
   },
   "peerDependencies": {
-    "cdktf": "^0.20.0",
-    "constructs": "^10.3.0"
+    "cdktf": "^0.21.0",
+    "constructs": "^10.4.2"
   },
   "resolutions": {
     "@types/yargs": "17.0.13"
