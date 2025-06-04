@@ -26,6 +26,8 @@ jobs:
         uses: actions/setup-node@cdca7365b2dadb8aad0a33bc7601856ffabcc48e
         with:
           node-version: 20.9.0
+      - name: Setup Copywrite tool
+        uses: hashicorp/setup-copywrite@32638da2d4e81d56a0764aa1547882fc4d209636
       - run: yarn install
       - id: check_version
         run: yarn check-if-new-provider-version
@@ -38,6 +40,9 @@ jobs:
           CHECKPOINT_DISABLE: "1"
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: yarn fetch
+      - name: Add headers using Copywrite tool
+        if: ${{ steps.check_version.outputs.new_version == 'available' }}
+        run: copywrite headers
       - name: get provider updated version
         id: new_version
         if: ${{ steps.check_version.outputs.new_version == 'available' }}
