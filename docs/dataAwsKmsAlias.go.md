@@ -4,7 +4,7 @@
 
 ### DataAwsKmsAlias <a name="DataAwsKmsAlias" id="@cdktf/provider-aws.dataAwsKmsAlias.DataAwsKmsAlias"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/data-sources/kms_alias aws_kms_alias}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/kms_alias aws_kms_alias}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsKmsAlias.DataAwsKmsAlias.Initializer"></a>
 
@@ -372,7 +372,7 @@ The construct id used in the generated config for the DataAwsKmsAlias to import.
 
 The id of the existing DataAwsKmsAlias that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/data-sources/kms_alias#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/kms_alias#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -653,8 +653,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawskmsalias"
 | <code><a href="#@cdktf/provider-aws.dataAwsKmsAlias.DataAwsKmsAliasConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsKmsAlias.DataAwsKmsAliasConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsKmsAlias.DataAwsKmsAliasConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsKmsAlias.DataAwsKmsAliasConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/data-sources/kms_alias#name DataAwsKmsAlias#name}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsKmsAlias.DataAwsKmsAliasConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/data-sources/kms_alias#id DataAwsKmsAlias#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsKmsAlias.DataAwsKmsAliasConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/kms_alias#name DataAwsKmsAlias#name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsKmsAlias.DataAwsKmsAliasConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/kms_alias#id DataAwsKmsAlias#id}. |
 
 ---
 
@@ -736,7 +736,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/data-sources/kms_alias#name DataAwsKmsAlias#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/kms_alias#name DataAwsKmsAlias#name}.
 
 ---
 
@@ -748,7 +748,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/data-sources/kms_alias#id DataAwsKmsAlias#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/kms_alias#id DataAwsKmsAlias#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
