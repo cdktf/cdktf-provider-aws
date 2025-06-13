@@ -444,6 +444,8 @@ Object.defineProperty(exports, 'docdbGlobalCluster', { get: function () { return
 Object.defineProperty(exports, 'docdbSubnetGroup', { get: function () { return require('./docdb-subnet-group'); } });
 Object.defineProperty(exports, 'docdbelasticCluster', { get: function () { return require('./docdbelastic-cluster'); } });
 Object.defineProperty(exports, 'drsReplicationConfigurationTemplate', { get: function () { return require('./drs-replication-configuration-template'); } });
+Object.defineProperty(exports, 'dsqlCluster', { get: function () { return require('./dsql-cluster'); } });
+Object.defineProperty(exports, 'dsqlClusterPeering', { get: function () { return require('./dsql-cluster-peering'); } });
 Object.defineProperty(exports, 'dxBgpPeer', { get: function () { return require('./dx-bgp-peer'); } });
 Object.defineProperty(exports, 'dxConnection', { get: function () { return require('./dx-connection'); } });
 Object.defineProperty(exports, 'dxConnectionAssociation', { get: function () { return require('./dx-connection-association'); } });
@@ -1027,6 +1029,7 @@ Object.defineProperty(exports, 'prometheusAlertManagerDefinition', { get: functi
 Object.defineProperty(exports, 'prometheusRuleGroupNamespace', { get: function () { return require('./prometheus-rule-group-namespace'); } });
 Object.defineProperty(exports, 'prometheusScraper', { get: function () { return require('./prometheus-scraper'); } });
 Object.defineProperty(exports, 'prometheusWorkspace', { get: function () { return require('./prometheus-workspace'); } });
+Object.defineProperty(exports, 'prometheusWorkspaceConfiguration', { get: function () { return require('./prometheus-workspace-configuration'); } });
 Object.defineProperty(exports, 'proxyProtocolPolicy', { get: function () { return require('./proxy-protocol-policy'); } });
 Object.defineProperty(exports, 'qbusinessApplication', { get: function () { return require('./qbusiness-application'); } });
 Object.defineProperty(exports, 'qldbLedger', { get: function () { return require('./qldb-ledger'); } });
@@ -1192,6 +1195,7 @@ Object.defineProperty(exports, 's3ControlAccessPointPolicy', { get: function () 
 Object.defineProperty(exports, 's3ControlBucket', { get: function () { return require('./s3control-bucket'); } });
 Object.defineProperty(exports, 's3ControlBucketLifecycleConfiguration', { get: function () { return require('./s3control-bucket-lifecycle-configuration'); } });
 Object.defineProperty(exports, 's3ControlBucketPolicy', { get: function () { return require('./s3control-bucket-policy'); } });
+Object.defineProperty(exports, 's3ControlDirectoryBucketAccessPointScope', { get: function () { return require('./s3control-directory-bucket-access-point-scope'); } });
 Object.defineProperty(exports, 's3ControlMultiRegionAccessPoint', { get: function () { return require('./s3control-multi-region-access-point'); } });
 Object.defineProperty(exports, 's3ControlMultiRegionAccessPointPolicy', { get: function () { return require('./s3control-multi-region-access-point-policy'); } });
 Object.defineProperty(exports, 's3ControlObjectLambdaAccessPoint', { get: function () { return require('./s3control-object-lambda-access-point'); } });
@@ -1451,6 +1455,11 @@ Object.defineProperty(exports, 'vpcNetworkPerformanceMetricSubscription', { get:
 Object.defineProperty(exports, 'vpcPeeringConnection', { get: function () { return require('./vpc-peering-connection'); } });
 Object.defineProperty(exports, 'vpcPeeringConnectionAccepter', { get: function () { return require('./vpc-peering-connection-accepter'); } });
 Object.defineProperty(exports, 'vpcPeeringConnectionOptions', { get: function () { return require('./vpc-peering-connection-options'); } });
+Object.defineProperty(exports, 'vpcRouteServer', { get: function () { return require('./vpc-route-server'); } });
+Object.defineProperty(exports, 'vpcRouteServerEndpoint', { get: function () { return require('./vpc-route-server-endpoint'); } });
+Object.defineProperty(exports, 'vpcRouteServerPeer', { get: function () { return require('./vpc-route-server-peer'); } });
+Object.defineProperty(exports, 'vpcRouteServerPropagation', { get: function () { return require('./vpc-route-server-propagation'); } });
+Object.defineProperty(exports, 'vpcRouteServerVpcAssociation', { get: function () { return require('./vpc-route-server-vpc-association'); } });
 Object.defineProperty(exports, 'vpcSecurityGroupEgressRule', { get: function () { return require('./vpc-security-group-egress-rule'); } });
 Object.defineProperty(exports, 'vpcSecurityGroupIngressRule', { get: function () { return require('./vpc-security-group-ingress-rule'); } });
 Object.defineProperty(exports, 'vpcSecurityGroupVpcAssociation', { get: function () { return require('./vpc-security-group-vpc-association'); } });
@@ -1512,7 +1521,10 @@ Object.defineProperty(exports, 'workspacesDirectory', { get: function () { retur
 Object.defineProperty(exports, 'workspacesIpGroup', { get: function () { return require('./workspaces-ip-group'); } });
 Object.defineProperty(exports, 'workspacesWorkspace', { get: function () { return require('./workspaces-workspace'); } });
 Object.defineProperty(exports, 'workspaceswebBrowserSettings', { get: function () { return require('./workspacesweb-browser-settings'); } });
+Object.defineProperty(exports, 'workspaceswebDataProtectionSettings', { get: function () { return require('./workspacesweb-data-protection-settings'); } });
+Object.defineProperty(exports, 'workspaceswebIpAccessSettings', { get: function () { return require('./workspacesweb-ip-access-settings'); } });
 Object.defineProperty(exports, 'workspaceswebNetworkSettings', { get: function () { return require('./workspacesweb-network-settings'); } });
+Object.defineProperty(exports, 'workspaceswebUserAccessLoggingSettings', { get: function () { return require('./workspacesweb-user-access-logging-settings'); } });
 Object.defineProperty(exports, 'workspaceswebUserSettings', { get: function () { return require('./workspacesweb-user-settings'); } });
 Object.defineProperty(exports, 'xrayEncryptionConfig', { get: function () { return require('./xray-encryption-config'); } });
 Object.defineProperty(exports, 'xrayGroup', { get: function () { return require('./xray-group'); } });

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/resources/opensearchserverless_security_policy
+// https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/opensearchserverless_security_policy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,25 +13,33 @@ import * as cdktf from 'cdktf';
 
 export interface OpensearchserverlessSecurityPolicyConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/resources/opensearchserverless_security_policy#description OpensearchserverlessSecurityPolicy#description}
+  * Description of the policy. Typically used to store information about the permissions defined in the policy.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/opensearchserverless_security_policy#description OpensearchserverlessSecurityPolicy#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/resources/opensearchserverless_security_policy#name OpensearchserverlessSecurityPolicy#name}
+  * Name of the policy.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/opensearchserverless_security_policy#name OpensearchserverlessSecurityPolicy#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/resources/opensearchserverless_security_policy#policy OpensearchserverlessSecurityPolicy#policy}
+  * JSON policy document to use as the content for the new policy.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/opensearchserverless_security_policy#policy OpensearchserverlessSecurityPolicy#policy}
   */
   readonly policy: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/resources/opensearchserverless_security_policy#type OpensearchserverlessSecurityPolicy#type}
+  * Type of security policy. One of `encryption` or `network`.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/opensearchserverless_security_policy#type OpensearchserverlessSecurityPolicy#type}
   */
   readonly type: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/resources/opensearchserverless_security_policy aws_opensearchserverless_security_policy}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/opensearchserverless_security_policy aws_opensearchserverless_security_policy}
 */
 export class OpensearchserverlessSecurityPolicy extends cdktf.TerraformResource {
 
@@ -47,7 +55,7 @@ export class OpensearchserverlessSecurityPolicy extends cdktf.TerraformResource 
   * Generates CDKTF code for importing a OpensearchserverlessSecurityPolicy resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the OpensearchserverlessSecurityPolicy to import
-  * @param importFromId The id of the existing OpensearchserverlessSecurityPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/resources/opensearchserverless_security_policy#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing OpensearchserverlessSecurityPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/opensearchserverless_security_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the OpensearchserverlessSecurityPolicy to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -59,7 +67,7 @@ export class OpensearchserverlessSecurityPolicy extends cdktf.TerraformResource 
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/resources/opensearchserverless_security_policy aws_opensearchserverless_security_policy} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/opensearchserverless_security_policy aws_opensearchserverless_security_policy} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -70,7 +78,7 @@ export class OpensearchserverlessSecurityPolicy extends cdktf.TerraformResource 
       terraformResourceType: 'aws_opensearchserverless_security_policy',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.99.1',
+        providerVersion: '5.100.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

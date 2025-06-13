@@ -1,3 +1,3 @@
 # `aws_ssmquicksetup_configuration_manager`
 
-Refer to the Terraform Registry for docs: [`aws_ssmquicksetup_configuration_manager`](https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/resources/ssmquicksetup_configuration_manager).
+Refer to the Terraform Registry for docs: [`aws_ssmquicksetup_configuration_manager`](https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ssmquicksetup_configuration_manager).
