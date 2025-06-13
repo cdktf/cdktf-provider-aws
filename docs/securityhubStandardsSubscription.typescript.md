@@ -4,7 +4,7 @@
 
 ### SecurityhubStandardsSubscription <a name="SecurityhubStandardsSubscription" id="@cdktf/provider-aws.securityhubStandardsSubscription.SecurityhubStandardsSubscription"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/resources/securityhub_standards_subscription aws_securityhub_standards_subscription}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_standards_subscription aws_securityhub_standards_subscription}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubStandardsSubscription.SecurityhubStandardsSubscription.Initializer"></a>
 
@@ -494,7 +494,7 @@ The construct id used in the generated config for the SecurityhubStandardsSubscr
 
 The id of the existing SecurityhubStandardsSubscription that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/resources/securityhub_standards_subscription#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_standards_subscription#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -776,8 +776,8 @@ const securityhubStandardsSubscriptionConfig: securityhubStandardsSubscription.S
 | <code><a href="#@cdktf/provider-aws.securityhubStandardsSubscription.SecurityhubStandardsSubscriptionConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubStandardsSubscription.SecurityhubStandardsSubscriptionConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubStandardsSubscription.SecurityhubStandardsSubscriptionConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubStandardsSubscription.SecurityhubStandardsSubscriptionConfig.property.standardsArn">standardsArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/resources/securityhub_standards_subscription#standards_arn SecurityhubStandardsSubscription#standards_arn}. |
-| <code><a href="#@cdktf/provider-aws.securityhubStandardsSubscription.SecurityhubStandardsSubscriptionConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/resources/securityhub_standards_subscription#id SecurityhubStandardsSubscription#id}. |
+| <code><a href="#@cdktf/provider-aws.securityhubStandardsSubscription.SecurityhubStandardsSubscriptionConfig.property.standardsArn">standardsArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_standards_subscription#standards_arn SecurityhubStandardsSubscription#standards_arn}. |
+| <code><a href="#@cdktf/provider-aws.securityhubStandardsSubscription.SecurityhubStandardsSubscriptionConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_standards_subscription#id SecurityhubStandardsSubscription#id}. |
 | <code><a href="#@cdktf/provider-aws.securityhubStandardsSubscription.SecurityhubStandardsSubscriptionConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-aws.securityhubStandardsSubscription.SecurityhubStandardsSubscriptionTimeouts">SecurityhubStandardsSubscriptionTimeouts</a></code> | timeouts block. |
 
 ---
@@ -860,7 +860,7 @@ public readonly standardsArn: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/resources/securityhub_standards_subscription#standards_arn SecurityhubStandardsSubscription#standards_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_standards_subscription#standards_arn SecurityhubStandardsSubscription#standards_arn}.
 
 ---
 
@@ -872,7 +872,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/resources/securityhub_standards_subscription#id SecurityhubStandardsSubscription#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_standards_subscription#id SecurityhubStandardsSubscription#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -889,7 +889,7 @@ public readonly timeouts: SecurityhubStandardsSubscriptionTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/resources/securityhub_standards_subscription#timeouts SecurityhubStandardsSubscription#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_standards_subscription#timeouts SecurityhubStandardsSubscription#timeouts}
 
 ---
 
@@ -907,8 +907,8 @@ const securityhubStandardsSubscriptionTimeouts: securityhubStandardsSubscription
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubStandardsSubscription.SecurityhubStandardsSubscriptionTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/resources/securityhub_standards_subscription#create SecurityhubStandardsSubscription#create}. |
-| <code><a href="#@cdktf/provider-aws.securityhubStandardsSubscription.SecurityhubStandardsSubscriptionTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/resources/securityhub_standards_subscription#delete SecurityhubStandardsSubscription#delete}. |
+| <code><a href="#@cdktf/provider-aws.securityhubStandardsSubscription.SecurityhubStandardsSubscriptionTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_standards_subscription#create SecurityhubStandardsSubscription#create}. |
+| <code><a href="#@cdktf/provider-aws.securityhubStandardsSubscription.SecurityhubStandardsSubscriptionTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_standards_subscription#delete SecurityhubStandardsSubscription#delete}. |
 
 ---
 
@@ -920,7 +920,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/resources/securityhub_standards_subscription#create SecurityhubStandardsSubscription#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_standards_subscription#create SecurityhubStandardsSubscription#create}.
 
 ---
 
@@ -932,7 +932,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/resources/securityhub_standards_subscription#delete SecurityhubStandardsSubscription#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_standards_subscription#delete SecurityhubStandardsSubscription#delete}.
 
 ---
 

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/resources/cloudwatch_log_delivery_source
+// https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/cloudwatch_log_delivery_source
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,25 +13,25 @@ import * as cdktf from 'cdktf';
 
 export interface CloudwatchLogDeliverySourceConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/resources/cloudwatch_log_delivery_source#log_type CloudwatchLogDeliverySource#log_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/cloudwatch_log_delivery_source#log_type CloudwatchLogDeliverySource#log_type}
   */
   readonly logType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/resources/cloudwatch_log_delivery_source#name CloudwatchLogDeliverySource#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/cloudwatch_log_delivery_source#name CloudwatchLogDeliverySource#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/resources/cloudwatch_log_delivery_source#resource_arn CloudwatchLogDeliverySource#resource_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/cloudwatch_log_delivery_source#resource_arn CloudwatchLogDeliverySource#resource_arn}
   */
   readonly resourceArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/resources/cloudwatch_log_delivery_source#tags CloudwatchLogDeliverySource#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/cloudwatch_log_delivery_source#tags CloudwatchLogDeliverySource#tags}
   */
   readonly tags?: { [key: string]: string };
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/resources/cloudwatch_log_delivery_source aws_cloudwatch_log_delivery_source}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/cloudwatch_log_delivery_source aws_cloudwatch_log_delivery_source}
 */
 export class CloudwatchLogDeliverySource extends cdktf.TerraformResource {
 
@@ -47,7 +47,7 @@ export class CloudwatchLogDeliverySource extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a CloudwatchLogDeliverySource resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CloudwatchLogDeliverySource to import
-  * @param importFromId The id of the existing CloudwatchLogDeliverySource that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/resources/cloudwatch_log_delivery_source#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing CloudwatchLogDeliverySource that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/cloudwatch_log_delivery_source#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CloudwatchLogDeliverySource to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -59,7 +59,7 @@ export class CloudwatchLogDeliverySource extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/resources/cloudwatch_log_delivery_source aws_cloudwatch_log_delivery_source} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/cloudwatch_log_delivery_source aws_cloudwatch_log_delivery_source} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -70,7 +70,7 @@ export class CloudwatchLogDeliverySource extends cdktf.TerraformResource {
       terraformResourceType: 'aws_cloudwatch_log_delivery_source',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.99.1',
+        providerVersion: '5.100.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

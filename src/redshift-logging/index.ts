@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/resources/redshift_logging
+// https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/redshift_logging
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,29 +13,29 @@ import * as cdktf from 'cdktf';
 
 export interface RedshiftLoggingConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/resources/redshift_logging#bucket_name RedshiftLogging#bucket_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/redshift_logging#bucket_name RedshiftLogging#bucket_name}
   */
   readonly bucketName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/resources/redshift_logging#cluster_identifier RedshiftLogging#cluster_identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/redshift_logging#cluster_identifier RedshiftLogging#cluster_identifier}
   */
   readonly clusterIdentifier: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/resources/redshift_logging#log_destination_type RedshiftLogging#log_destination_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/redshift_logging#log_destination_type RedshiftLogging#log_destination_type}
   */
   readonly logDestinationType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/resources/redshift_logging#log_exports RedshiftLogging#log_exports}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/redshift_logging#log_exports RedshiftLogging#log_exports}
   */
   readonly logExports?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/resources/redshift_logging#s3_key_prefix RedshiftLogging#s3_key_prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/redshift_logging#s3_key_prefix RedshiftLogging#s3_key_prefix}
   */
   readonly s3KeyPrefix?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/resources/redshift_logging aws_redshift_logging}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/redshift_logging aws_redshift_logging}
 */
 export class RedshiftLogging extends cdktf.TerraformResource {
 
@@ -51,7 +51,7 @@ export class RedshiftLogging extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a RedshiftLogging resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the RedshiftLogging to import
-  * @param importFromId The id of the existing RedshiftLogging that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/resources/redshift_logging#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing RedshiftLogging that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/redshift_logging#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the RedshiftLogging to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -63,7 +63,7 @@ export class RedshiftLogging extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/resources/redshift_logging aws_redshift_logging} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/redshift_logging aws_redshift_logging} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -74,7 +74,7 @@ export class RedshiftLogging extends cdktf.TerraformResource {
       terraformResourceType: 'aws_redshift_logging',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.99.1',
+        providerVersion: '5.100.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

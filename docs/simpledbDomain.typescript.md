@@ -4,7 +4,7 @@
 
 ### SimpledbDomain <a name="SimpledbDomain" id="@cdktf/provider-aws.simpledbDomain.SimpledbDomain"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/resources/simpledb_domain aws_simpledb_domain}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/simpledb_domain aws_simpledb_domain}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.simpledbDomain.SimpledbDomain.Initializer"></a>
 
@@ -467,7 +467,7 @@ The construct id used in the generated config for the SimpledbDomain to import.
 
 The id of the existing SimpledbDomain that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/resources/simpledb_domain#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/simpledb_domain#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -716,7 +716,7 @@ const simpledbDomainConfig: simpledbDomain.SimpledbDomainConfig = { ... }
 | <code><a href="#@cdktf/provider-aws.simpledbDomain.SimpledbDomainConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.simpledbDomain.SimpledbDomainConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.simpledbDomain.SimpledbDomainConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.simpledbDomain.SimpledbDomainConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/resources/simpledb_domain#name SimpledbDomain#name}. |
+| <code><a href="#@cdktf/provider-aws.simpledbDomain.SimpledbDomainConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/simpledb_domain#name SimpledbDomain#name}. |
 
 ---
 
@@ -798,7 +798,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/resources/simpledb_domain#name SimpledbDomain#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/simpledb_domain#name SimpledbDomain#name}.
 
 ---
 
