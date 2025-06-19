@@ -4,7 +4,7 @@
 
 ### DataAwsRoute53ResolverFirewallConfig <a name="DataAwsRoute53ResolverFirewallConfig" id="@cdktf/provider-aws.dataAwsRoute53ResolverFirewallConfig.DataAwsRoute53ResolverFirewallConfig"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/route53_resolver_firewall_config aws_route53_resolver_firewall_config}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/route53_resolver_firewall_config aws_route53_resolver_firewall_config}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsRoute53ResolverFirewallConfig.DataAwsRoute53ResolverFirewallConfig.Initializer"></a>
 
@@ -68,6 +68,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.dataAwsRoute53ResolverFirewallConfig.DataAwsRoute53ResolverFirewallConfig.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsRoute53ResolverFirewallConfig.DataAwsRoute53ResolverFirewallConfig.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsRoute53ResolverFirewallConfig.DataAwsRoute53ResolverFirewallConfig.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsRoute53ResolverFirewallConfig.DataAwsRoute53ResolverFirewallConfig.resetRegion">ResetRegion</a></code> | *No description.* |
 
 ---
 
@@ -269,6 +270,12 @@ private IResolvable InterpolationForAttribute(string TerraformAttribute)
 private void ResetId()
 ```
 
+##### `ResetRegion` <a name="ResetRegion" id="@cdktf/provider-aws.dataAwsRoute53ResolverFirewallConfig.DataAwsRoute53ResolverFirewallConfig.resetRegion"></a>
+
+```csharp
+private void ResetRegion()
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -372,7 +379,7 @@ The construct id used in the generated config for the DataAwsRoute53ResolverFire
 
 The id of the existing DataAwsRoute53ResolverFirewallConfig that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/route53_resolver_firewall_config#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/route53_resolver_firewall_config#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -403,8 +410,10 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.dataAwsRoute53ResolverFirewallConfig.DataAwsRoute53ResolverFirewallConfig.property.firewallFailOpen">FirewallFailOpen</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsRoute53ResolverFirewallConfig.DataAwsRoute53ResolverFirewallConfig.property.ownerId">OwnerId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsRoute53ResolverFirewallConfig.DataAwsRoute53ResolverFirewallConfig.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsRoute53ResolverFirewallConfig.DataAwsRoute53ResolverFirewallConfig.property.regionInput">RegionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsRoute53ResolverFirewallConfig.DataAwsRoute53ResolverFirewallConfig.property.resourceIdInput">ResourceIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsRoute53ResolverFirewallConfig.DataAwsRoute53ResolverFirewallConfig.property.id">Id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsRoute53ResolverFirewallConfig.DataAwsRoute53ResolverFirewallConfig.property.region">Region</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsRoute53ResolverFirewallConfig.DataAwsRoute53ResolverFirewallConfig.property.resourceId">ResourceId</a></code> | <code>string</code> | *No description.* |
 
 ---
@@ -561,6 +570,16 @@ public string IdInput { get; }
 
 ---
 
+##### `RegionInput`<sup>Optional</sup> <a name="RegionInput" id="@cdktf/provider-aws.dataAwsRoute53ResolverFirewallConfig.DataAwsRoute53ResolverFirewallConfig.property.regionInput"></a>
+
+```csharp
+public string RegionInput { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `ResourceIdInput`<sup>Optional</sup> <a name="ResourceIdInput" id="@cdktf/provider-aws.dataAwsRoute53ResolverFirewallConfig.DataAwsRoute53ResolverFirewallConfig.property.resourceIdInput"></a>
 
 ```csharp
@@ -575,6 +594,16 @@ public string ResourceIdInput { get; }
 
 ```csharp
 public string Id { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Region`<sup>Required</sup> <a name="Region" id="@cdktf/provider-aws.dataAwsRoute53ResolverFirewallConfig.DataAwsRoute53ResolverFirewallConfig.property.region"></a>
+
+```csharp
+public string Region { get; }
 ```
 
 - *Type:* string
@@ -627,7 +656,8 @@ new DataAwsRoute53ResolverFirewallConfigConfig {
     TerraformProvider Provider = null,
     object[] Provisioners = null,
     string ResourceId,
-    string Id = null
+    string Id = null,
+    string Region = null
 };
 ```
 
@@ -642,8 +672,9 @@ new DataAwsRoute53ResolverFirewallConfigConfig {
 | <code><a href="#@cdktf/provider-aws.dataAwsRoute53ResolverFirewallConfig.DataAwsRoute53ResolverFirewallConfigConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsRoute53ResolverFirewallConfig.DataAwsRoute53ResolverFirewallConfigConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsRoute53ResolverFirewallConfig.DataAwsRoute53ResolverFirewallConfigConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsRoute53ResolverFirewallConfig.DataAwsRoute53ResolverFirewallConfigConfig.property.resourceId">ResourceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/route53_resolver_firewall_config#resource_id DataAwsRoute53ResolverFirewallConfig#resource_id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsRoute53ResolverFirewallConfig.DataAwsRoute53ResolverFirewallConfigConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/route53_resolver_firewall_config#id DataAwsRoute53ResolverFirewallConfig#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsRoute53ResolverFirewallConfig.DataAwsRoute53ResolverFirewallConfigConfig.property.resourceId">ResourceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/route53_resolver_firewall_config#resource_id DataAwsRoute53ResolverFirewallConfig#resource_id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsRoute53ResolverFirewallConfig.DataAwsRoute53ResolverFirewallConfigConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/route53_resolver_firewall_config#id DataAwsRoute53ResolverFirewallConfig#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsRoute53ResolverFirewallConfig.DataAwsRoute53ResolverFirewallConfigConfig.property.region">Region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
 
@@ -725,7 +756,7 @@ public string ResourceId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/route53_resolver_firewall_config#resource_id DataAwsRoute53ResolverFirewallConfig#resource_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/route53_resolver_firewall_config#resource_id DataAwsRoute53ResolverFirewallConfig#resource_id}.
 
 ---
 
@@ -737,10 +768,24 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/route53_resolver_firewall_config#id DataAwsRoute53ResolverFirewallConfig#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/route53_resolver_firewall_config#id DataAwsRoute53ResolverFirewallConfig#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `Region`<sup>Optional</sup> <a name="Region" id="@cdktf/provider-aws.dataAwsRoute53ResolverFirewallConfig.DataAwsRoute53ResolverFirewallConfigConfig.property.region"></a>
+
+```csharp
+public string Region { get; set; }
+```
+
+- *Type:* string
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/route53_resolver_firewall_config#region DataAwsRoute53ResolverFirewallConfig#region}
 
 ---
 

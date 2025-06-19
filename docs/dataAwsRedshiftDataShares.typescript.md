@@ -4,7 +4,7 @@
 
 ### DataAwsRedshiftDataShares <a name="DataAwsRedshiftDataShares" id="@cdktf/provider-aws.dataAwsRedshiftDataShares.DataAwsRedshiftDataShares"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/redshift_data_shares aws_redshift_data_shares}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/redshift_data_shares aws_redshift_data_shares}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsRedshiftDataShares.DataAwsRedshiftDataShares.Initializer"></a>
 
@@ -67,8 +67,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.dataAwsRedshiftDataShares.DataAwsRedshiftDataShares.getStringAttribute">getStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsRedshiftDataShares.DataAwsRedshiftDataShares.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsRedshiftDataShares.DataAwsRedshiftDataShares.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsRedshiftDataShares.DataAwsRedshiftDataShares.putDataShares">putDataShares</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsRedshiftDataShares.DataAwsRedshiftDataShares.resetDataShares">resetDataShares</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsRedshiftDataShares.DataAwsRedshiftDataShares.resetRegion">resetRegion</a></code> | *No description.* |
 
 ---
 
@@ -264,22 +263,10 @@ public interpolationForAttribute(terraformAttribute: string): IResolvable
 
 ---
 
-##### `putDataShares` <a name="putDataShares" id="@cdktf/provider-aws.dataAwsRedshiftDataShares.DataAwsRedshiftDataShares.putDataShares"></a>
+##### `resetRegion` <a name="resetRegion" id="@cdktf/provider-aws.dataAwsRedshiftDataShares.DataAwsRedshiftDataShares.resetRegion"></a>
 
 ```typescript
-public putDataShares(value: IResolvable | DataAwsRedshiftDataSharesDataShares[]): void
-```
-
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.dataAwsRedshiftDataShares.DataAwsRedshiftDataShares.putDataShares.parameter.value"></a>
-
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.dataAwsRedshiftDataShares.DataAwsRedshiftDataSharesDataShares">DataAwsRedshiftDataSharesDataShares</a>[]
-
----
-
-##### `resetDataShares` <a name="resetDataShares" id="@cdktf/provider-aws.dataAwsRedshiftDataShares.DataAwsRedshiftDataShares.resetDataShares"></a>
-
-```typescript
-public resetDataShares(): void
+public resetRegion(): void
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -385,7 +372,7 @@ The construct id used in the generated config for the DataAwsRedshiftDataShares 
 
 The id of the existing DataAwsRedshiftDataShares that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/redshift_data_shares#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/redshift_data_shares#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -415,7 +402,8 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.dataAwsRedshiftDataShares.DataAwsRedshiftDataShares.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsRedshiftDataShares.DataAwsRedshiftDataShares.property.dataShares">dataShares</a></code> | <code><a href="#@cdktf/provider-aws.dataAwsRedshiftDataShares.DataAwsRedshiftDataSharesDataSharesList">DataAwsRedshiftDataSharesDataSharesList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsRedshiftDataShares.DataAwsRedshiftDataShares.property.id">id</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsRedshiftDataShares.DataAwsRedshiftDataShares.property.dataSharesInput">dataSharesInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.dataAwsRedshiftDataShares.DataAwsRedshiftDataSharesDataShares">DataAwsRedshiftDataSharesDataShares</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsRedshiftDataShares.DataAwsRedshiftDataShares.property.regionInput">regionInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsRedshiftDataShares.DataAwsRedshiftDataShares.property.region">region</a></code> | <code>string</code> | *No description.* |
 
 ---
 
@@ -561,13 +549,23 @@ public readonly id: string;
 
 ---
 
-##### `dataSharesInput`<sup>Optional</sup> <a name="dataSharesInput" id="@cdktf/provider-aws.dataAwsRedshiftDataShares.DataAwsRedshiftDataShares.property.dataSharesInput"></a>
+##### `regionInput`<sup>Optional</sup> <a name="regionInput" id="@cdktf/provider-aws.dataAwsRedshiftDataShares.DataAwsRedshiftDataShares.property.regionInput"></a>
 
 ```typescript
-public readonly dataSharesInput: IResolvable | DataAwsRedshiftDataSharesDataShares[];
+public readonly regionInput: string;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.dataAwsRedshiftDataShares.DataAwsRedshiftDataSharesDataShares">DataAwsRedshiftDataSharesDataShares</a>[]
+- *Type:* string
+
+---
+
+##### `region`<sup>Required</sup> <a name="region" id="@cdktf/provider-aws.dataAwsRedshiftDataShares.DataAwsRedshiftDataShares.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
 
 ---
 
@@ -612,7 +610,7 @@ const dataAwsRedshiftDataSharesConfig: dataAwsRedshiftDataShares.DataAwsRedshift
 | <code><a href="#@cdktf/provider-aws.dataAwsRedshiftDataShares.DataAwsRedshiftDataSharesConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsRedshiftDataShares.DataAwsRedshiftDataSharesConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsRedshiftDataShares.DataAwsRedshiftDataSharesConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsRedshiftDataShares.DataAwsRedshiftDataSharesConfig.property.dataShares">dataShares</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.dataAwsRedshiftDataShares.DataAwsRedshiftDataSharesDataShares">DataAwsRedshiftDataSharesDataShares</a>[]</code> | data_shares block. |
+| <code><a href="#@cdktf/provider-aws.dataAwsRedshiftDataShares.DataAwsRedshiftDataSharesConfig.property.region">region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
 
@@ -686,17 +684,17 @@ public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExe
 
 ---
 
-##### `dataShares`<sup>Optional</sup> <a name="dataShares" id="@cdktf/provider-aws.dataAwsRedshiftDataShares.DataAwsRedshiftDataSharesConfig.property.dataShares"></a>
+##### `region`<sup>Optional</sup> <a name="region" id="@cdktf/provider-aws.dataAwsRedshiftDataShares.DataAwsRedshiftDataSharesConfig.property.region"></a>
 
 ```typescript
-public readonly dataShares: IResolvable | DataAwsRedshiftDataSharesDataShares[];
+public readonly region: string;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.dataAwsRedshiftDataShares.DataAwsRedshiftDataSharesDataShares">DataAwsRedshiftDataSharesDataShares</a>[]
+- *Type:* string
 
-data_shares block.
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/redshift_data_shares#data_shares DataAwsRedshiftDataShares#data_shares}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/redshift_data_shares#region DataAwsRedshiftDataShares#region}
 
 ---
 
@@ -834,7 +832,6 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.dataAwsRedshiftDataShares.DataAwsRedshiftDataSharesDataSharesList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.dataAwsRedshiftDataShares.DataAwsRedshiftDataSharesDataSharesList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsRedshiftDataShares.DataAwsRedshiftDataSharesDataSharesList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.dataAwsRedshiftDataShares.DataAwsRedshiftDataSharesDataShares">DataAwsRedshiftDataSharesDataShares</a>[]</code> | *No description.* |
 
 ---
 
@@ -859,16 +856,6 @@ public readonly fqn: string;
 ```
 
 - *Type:* string
-
----
-
-##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.dataAwsRedshiftDataShares.DataAwsRedshiftDataSharesDataSharesList.property.internalValue"></a>
-
-```typescript
-public readonly internalValue: IResolvable | DataAwsRedshiftDataSharesDataShares[];
-```
-
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.dataAwsRedshiftDataShares.DataAwsRedshiftDataSharesDataShares">DataAwsRedshiftDataSharesDataShares</a>[]
 
 ---
 
@@ -1104,7 +1091,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.dataAwsRedshiftDataShares.DataAwsRedshiftDataSharesDataSharesOutputReference.property.dataShareArn">dataShareArn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsRedshiftDataShares.DataAwsRedshiftDataSharesDataSharesOutputReference.property.managedBy">managedBy</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsRedshiftDataShares.DataAwsRedshiftDataSharesDataSharesOutputReference.property.producerArn">producerArn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsRedshiftDataShares.DataAwsRedshiftDataSharesDataSharesOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.dataAwsRedshiftDataShares.DataAwsRedshiftDataSharesDataShares">DataAwsRedshiftDataSharesDataShares</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsRedshiftDataShares.DataAwsRedshiftDataSharesDataSharesOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.dataAwsRedshiftDataShares.DataAwsRedshiftDataSharesDataShares">DataAwsRedshiftDataSharesDataShares</a></code> | *No description.* |
 
 ---
 
@@ -1165,10 +1152,10 @@ public readonly producerArn: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.dataAwsRedshiftDataShares.DataAwsRedshiftDataSharesDataSharesOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: IResolvable | DataAwsRedshiftDataSharesDataShares;
+public readonly internalValue: DataAwsRedshiftDataSharesDataShares;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.dataAwsRedshiftDataShares.DataAwsRedshiftDataSharesDataShares">DataAwsRedshiftDataSharesDataShares</a>
+- *Type:* <a href="#@cdktf/provider-aws.dataAwsRedshiftDataShares.DataAwsRedshiftDataSharesDataShares">DataAwsRedshiftDataSharesDataShares</a>
 
 ---
 

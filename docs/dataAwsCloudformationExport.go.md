@@ -4,12 +4,12 @@
 
 ### DataAwsCloudformationExport <a name="DataAwsCloudformationExport" id="@cdktf/provider-aws.dataAwsCloudformationExport.DataAwsCloudformationExport"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/cloudformation_export aws_cloudformation_export}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/cloudformation_export aws_cloudformation_export}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsCloudformationExport.DataAwsCloudformationExport.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawscloudformationexport"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawscloudformationexport"
 
 dataawscloudformationexport.NewDataAwsCloudformationExport(scope Construct, id *string, config DataAwsCloudformationExportConfig) DataAwsCloudformationExport
 ```
@@ -68,6 +68,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.dataAwsCloudformationExport.DataAwsCloudformationExport.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsCloudformationExport.DataAwsCloudformationExport.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsCloudformationExport.DataAwsCloudformationExport.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsCloudformationExport.DataAwsCloudformationExport.resetRegion">ResetRegion</a></code> | *No description.* |
 
 ---
 
@@ -269,6 +270,12 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 func ResetId()
 ```
 
+##### `ResetRegion` <a name="ResetRegion" id="@cdktf/provider-aws.dataAwsCloudformationExport.DataAwsCloudformationExport.resetRegion"></a>
+
+```go
+func ResetRegion()
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -283,7 +290,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsCloudformationExport.DataAwsCloudformationExport.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawscloudformationexport"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawscloudformationexport"
 
 dataawscloudformationexport.DataAwsCloudformationExport_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsCloudformationExport.DataAwsCloudformationExport.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawscloudformationexport"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawscloudformationexport"
 
 dataawscloudformationexport.DataAwsCloudformationExport_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +336,7 @@ dataawscloudformationexport.DataAwsCloudformationExport_IsTerraformElement(x int
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsCloudformationExport.DataAwsCloudformationExport.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawscloudformationexport"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawscloudformationexport"
 
 dataawscloudformationexport.DataAwsCloudformationExport_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +350,7 @@ dataawscloudformationexport.DataAwsCloudformationExport_IsTerraformDataSource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsCloudformationExport.DataAwsCloudformationExport.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawscloudformationexport"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawscloudformationexport"
 
 dataawscloudformationexport.DataAwsCloudformationExport_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -372,7 +379,7 @@ The construct id used in the generated config for the DataAwsCloudformationExpor
 
 The id of the existing DataAwsCloudformationExport that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/cloudformation_export#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/cloudformation_export#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -404,8 +411,10 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.dataAwsCloudformationExport.DataAwsCloudformationExport.property.value">Value</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsCloudformationExport.DataAwsCloudformationExport.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsCloudformationExport.DataAwsCloudformationExport.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsCloudformationExport.DataAwsCloudformationExport.property.regionInput">RegionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsCloudformationExport.DataAwsCloudformationExport.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsCloudformationExport.DataAwsCloudformationExport.property.name">Name</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsCloudformationExport.DataAwsCloudformationExport.property.region">Region</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
@@ -571,6 +580,16 @@ func NameInput() *string
 
 ---
 
+##### `RegionInput`<sup>Optional</sup> <a name="RegionInput" id="@cdktf/provider-aws.dataAwsCloudformationExport.DataAwsCloudformationExport.property.regionInput"></a>
+
+```go
+func RegionInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-aws.dataAwsCloudformationExport.DataAwsCloudformationExport.property.id"></a>
 
 ```go
@@ -585,6 +604,16 @@ func Id() *string
 
 ```go
 func Name() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Region`<sup>Required</sup> <a name="Region" id="@cdktf/provider-aws.dataAwsCloudformationExport.DataAwsCloudformationExport.property.region"></a>
+
+```go
+func Region() *string
 ```
 
 - *Type:* *string
@@ -616,7 +645,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsCloudformationExport.DataAwsCloudformationExportConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawscloudformationexport"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawscloudformationexport"
 
 &dataawscloudformationexport.DataAwsCloudformationExportConfig {
 	Connection: interface{},
@@ -628,6 +657,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawscloudformationexpo
 	Provisioners: *[]interface{},
 	Name: *string,
 	Id: *string,
+	Region: *string,
 }
 ```
 
@@ -642,8 +672,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawscloudformationexpo
 | <code><a href="#@cdktf/provider-aws.dataAwsCloudformationExport.DataAwsCloudformationExportConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsCloudformationExport.DataAwsCloudformationExportConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsCloudformationExport.DataAwsCloudformationExportConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsCloudformationExport.DataAwsCloudformationExportConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/cloudformation_export#name DataAwsCloudformationExport#name}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsCloudformationExport.DataAwsCloudformationExportConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/cloudformation_export#id DataAwsCloudformationExport#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsCloudformationExport.DataAwsCloudformationExportConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/cloudformation_export#name DataAwsCloudformationExport#name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsCloudformationExport.DataAwsCloudformationExportConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/cloudformation_export#id DataAwsCloudformationExport#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsCloudformationExport.DataAwsCloudformationExportConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
 
@@ -725,7 +756,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/cloudformation_export#name DataAwsCloudformationExport#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/cloudformation_export#name DataAwsCloudformationExport#name}.
 
 ---
 
@@ -737,10 +768,24 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/cloudformation_export#id DataAwsCloudformationExport#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/cloudformation_export#id DataAwsCloudformationExport#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `Region`<sup>Optional</sup> <a name="Region" id="@cdktf/provider-aws.dataAwsCloudformationExport.DataAwsCloudformationExportConfig.property.region"></a>
+
+```go
+Region *string
+```
+
+- *Type:* *string
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/cloudformation_export#region DataAwsCloudformationExport#region}
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### InternetGateway <a name="InternetGateway" id="@cdktf/provider-aws.internetGateway.InternetGateway"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/internet_gateway aws_internet_gateway}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/internet_gateway aws_internet_gateway}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.internetGateway.InternetGateway.Initializer"></a>
 
@@ -75,6 +75,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.internetGateway.InternetGateway.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-aws.internetGateway.InternetGateway.putTimeouts">PutTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.internetGateway.InternetGateway.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.internetGateway.InternetGateway.resetRegion">ResetRegion</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.internetGateway.InternetGateway.resetTags">ResetTags</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.internetGateway.InternetGateway.resetTagsAll">ResetTagsAll</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.internetGateway.InternetGateway.resetTimeouts">ResetTimeouts</a></code> | *No description.* |
@@ -388,6 +389,12 @@ private void PutTimeouts(InternetGatewayTimeouts Value)
 private void ResetId()
 ```
 
+##### `ResetRegion` <a name="ResetRegion" id="@cdktf/provider-aws.internetGateway.InternetGateway.resetRegion"></a>
+
+```csharp
+private void ResetRegion()
+```
+
 ##### `ResetTags` <a name="ResetTags" id="@cdktf/provider-aws.internetGateway.InternetGateway.resetTags"></a>
 
 ```csharp
@@ -515,7 +522,7 @@ The construct id used in the generated config for the InternetGateway to import.
 
 The id of the existing InternetGateway that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/internet_gateway#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/internet_gateway#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -549,11 +556,13 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.internetGateway.InternetGateway.property.ownerId">OwnerId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.internetGateway.InternetGateway.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-aws.internetGateway.InternetGatewayTimeoutsOutputReference">InternetGatewayTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.internetGateway.InternetGateway.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.internetGateway.InternetGateway.property.regionInput">RegionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.internetGateway.InternetGateway.property.tagsAllInput">TagsAllInput</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.internetGateway.InternetGateway.property.tagsInput">TagsInput</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.internetGateway.InternetGateway.property.timeoutsInput">TimeoutsInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.internetGateway.InternetGateway.property.vpcIdInput">VpcIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.internetGateway.InternetGateway.property.id">Id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.internetGateway.InternetGateway.property.region">Region</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.internetGateway.InternetGateway.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.internetGateway.InternetGateway.property.tagsAll">TagsAll</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.internetGateway.InternetGateway.property.vpcId">VpcId</a></code> | <code>string</code> | *No description.* |
@@ -742,6 +751,16 @@ public string IdInput { get; }
 
 ---
 
+##### `RegionInput`<sup>Optional</sup> <a name="RegionInput" id="@cdktf/provider-aws.internetGateway.InternetGateway.property.regionInput"></a>
+
+```csharp
+public string RegionInput { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `TagsAllInput`<sup>Optional</sup> <a name="TagsAllInput" id="@cdktf/provider-aws.internetGateway.InternetGateway.property.tagsAllInput"></a>
 
 ```csharp
@@ -786,6 +805,16 @@ public string VpcIdInput { get; }
 
 ```csharp
 public string Id { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Region`<sup>Required</sup> <a name="Region" id="@cdktf/provider-aws.internetGateway.InternetGateway.property.region"></a>
+
+```csharp
+public string Region { get; }
 ```
 
 - *Type:* string
@@ -858,6 +887,7 @@ new InternetGatewayConfig {
     TerraformProvider Provider = null,
     object[] Provisioners = null,
     string Id = null,
+    string Region = null,
     System.Collections.Generic.IDictionary<string, string> Tags = null,
     System.Collections.Generic.IDictionary<string, string> TagsAll = null,
     InternetGatewayTimeouts Timeouts = null,
@@ -876,11 +906,12 @@ new InternetGatewayConfig {
 | <code><a href="#@cdktf/provider-aws.internetGateway.InternetGatewayConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.internetGateway.InternetGatewayConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.internetGateway.InternetGatewayConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.internetGateway.InternetGatewayConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/internet_gateway#id InternetGateway#id}. |
-| <code><a href="#@cdktf/provider-aws.internetGateway.InternetGatewayConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/internet_gateway#tags InternetGateway#tags}. |
-| <code><a href="#@cdktf/provider-aws.internetGateway.InternetGatewayConfig.property.tagsAll">TagsAll</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/internet_gateway#tags_all InternetGateway#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.internetGateway.InternetGatewayConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/internet_gateway#id InternetGateway#id}. |
+| <code><a href="#@cdktf/provider-aws.internetGateway.InternetGatewayConfig.property.region">Region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
+| <code><a href="#@cdktf/provider-aws.internetGateway.InternetGatewayConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/internet_gateway#tags InternetGateway#tags}. |
+| <code><a href="#@cdktf/provider-aws.internetGateway.InternetGatewayConfig.property.tagsAll">TagsAll</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/internet_gateway#tags_all InternetGateway#tags_all}. |
 | <code><a href="#@cdktf/provider-aws.internetGateway.InternetGatewayConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-aws.internetGateway.InternetGatewayTimeouts">InternetGatewayTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktf/provider-aws.internetGateway.InternetGatewayConfig.property.vpcId">VpcId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/internet_gateway#vpc_id InternetGateway#vpc_id}. |
+| <code><a href="#@cdktf/provider-aws.internetGateway.InternetGatewayConfig.property.vpcId">VpcId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/internet_gateway#vpc_id InternetGateway#vpc_id}. |
 
 ---
 
@@ -962,10 +993,24 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/internet_gateway#id InternetGateway#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/internet_gateway#id InternetGateway#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `Region`<sup>Optional</sup> <a name="Region" id="@cdktf/provider-aws.internetGateway.InternetGatewayConfig.property.region"></a>
+
+```csharp
+public string Region { get; set; }
+```
+
+- *Type:* string
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/internet_gateway#region InternetGateway#region}
 
 ---
 
@@ -977,7 +1022,7 @@ public System.Collections.Generic.IDictionary<string, string> Tags { get; set; }
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/internet_gateway#tags InternetGateway#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/internet_gateway#tags InternetGateway#tags}.
 
 ---
 
@@ -989,7 +1034,7 @@ public System.Collections.Generic.IDictionary<string, string> TagsAll { get; set
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/internet_gateway#tags_all InternetGateway#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/internet_gateway#tags_all InternetGateway#tags_all}.
 
 ---
 
@@ -1003,7 +1048,7 @@ public InternetGatewayTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/internet_gateway#timeouts InternetGateway#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/internet_gateway#timeouts InternetGateway#timeouts}
 
 ---
 
@@ -1015,7 +1060,7 @@ public string VpcId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/internet_gateway#vpc_id InternetGateway#vpc_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/internet_gateway#vpc_id InternetGateway#vpc_id}.
 
 ---
 
@@ -1037,9 +1082,9 @@ new InternetGatewayTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.internetGateway.InternetGatewayTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/internet_gateway#create InternetGateway#create}. |
-| <code><a href="#@cdktf/provider-aws.internetGateway.InternetGatewayTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/internet_gateway#delete InternetGateway#delete}. |
-| <code><a href="#@cdktf/provider-aws.internetGateway.InternetGatewayTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/internet_gateway#update InternetGateway#update}. |
+| <code><a href="#@cdktf/provider-aws.internetGateway.InternetGatewayTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/internet_gateway#create InternetGateway#create}. |
+| <code><a href="#@cdktf/provider-aws.internetGateway.InternetGatewayTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/internet_gateway#delete InternetGateway#delete}. |
+| <code><a href="#@cdktf/provider-aws.internetGateway.InternetGatewayTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/internet_gateway#update InternetGateway#update}. |
 
 ---
 
@@ -1051,7 +1096,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/internet_gateway#create InternetGateway#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/internet_gateway#create InternetGateway#create}.
 
 ---
 
@@ -1063,7 +1108,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/internet_gateway#delete InternetGateway#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/internet_gateway#delete InternetGateway#delete}.
 
 ---
 
@@ -1075,7 +1120,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/internet_gateway#update InternetGateway#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/internet_gateway#update InternetGateway#update}.
 
 ---
 

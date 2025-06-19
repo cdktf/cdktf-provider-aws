@@ -4,7 +4,7 @@
 
 ### DataAwsEksNodeGroups <a name="DataAwsEksNodeGroups" id="@cdktf/provider-aws.dataAwsEksNodeGroups.DataAwsEksNodeGroups"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/eks_node_groups aws_eks_node_groups}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/eks_node_groups aws_eks_node_groups}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEksNodeGroups.DataAwsEksNodeGroups.Initializer"></a>
 
@@ -68,6 +68,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.dataAwsEksNodeGroups.DataAwsEksNodeGroups.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsEksNodeGroups.DataAwsEksNodeGroups.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsEksNodeGroups.DataAwsEksNodeGroups.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsEksNodeGroups.DataAwsEksNodeGroups.resetRegion">ResetRegion</a></code> | *No description.* |
 
 ---
 
@@ -269,6 +270,12 @@ private IResolvable InterpolationForAttribute(string TerraformAttribute)
 private void ResetId()
 ```
 
+##### `ResetRegion` <a name="ResetRegion" id="@cdktf/provider-aws.dataAwsEksNodeGroups.DataAwsEksNodeGroups.resetRegion"></a>
+
+```csharp
+private void ResetRegion()
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -372,7 +379,7 @@ The construct id used in the generated config for the DataAwsEksNodeGroups to im
 
 The id of the existing DataAwsEksNodeGroups that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/eks_node_groups#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/eks_node_groups#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -403,8 +410,10 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.dataAwsEksNodeGroups.DataAwsEksNodeGroups.property.names">Names</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsEksNodeGroups.DataAwsEksNodeGroups.property.clusterNameInput">ClusterNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsEksNodeGroups.DataAwsEksNodeGroups.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsEksNodeGroups.DataAwsEksNodeGroups.property.regionInput">RegionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsEksNodeGroups.DataAwsEksNodeGroups.property.clusterName">ClusterName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsEksNodeGroups.DataAwsEksNodeGroups.property.id">Id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsEksNodeGroups.DataAwsEksNodeGroups.property.region">Region</a></code> | <code>string</code> | *No description.* |
 
 ---
 
@@ -560,6 +569,16 @@ public string IdInput { get; }
 
 ---
 
+##### `RegionInput`<sup>Optional</sup> <a name="RegionInput" id="@cdktf/provider-aws.dataAwsEksNodeGroups.DataAwsEksNodeGroups.property.regionInput"></a>
+
+```csharp
+public string RegionInput { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `ClusterName`<sup>Required</sup> <a name="ClusterName" id="@cdktf/provider-aws.dataAwsEksNodeGroups.DataAwsEksNodeGroups.property.clusterName"></a>
 
 ```csharp
@@ -574,6 +593,16 @@ public string ClusterName { get; }
 
 ```csharp
 public string Id { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Region`<sup>Required</sup> <a name="Region" id="@cdktf/provider-aws.dataAwsEksNodeGroups.DataAwsEksNodeGroups.property.region"></a>
+
+```csharp
+public string Region { get; }
 ```
 
 - *Type:* string
@@ -616,7 +645,8 @@ new DataAwsEksNodeGroupsConfig {
     TerraformProvider Provider = null,
     object[] Provisioners = null,
     string ClusterName,
-    string Id = null
+    string Id = null,
+    string Region = null
 };
 ```
 
@@ -631,8 +661,9 @@ new DataAwsEksNodeGroupsConfig {
 | <code><a href="#@cdktf/provider-aws.dataAwsEksNodeGroups.DataAwsEksNodeGroupsConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsEksNodeGroups.DataAwsEksNodeGroupsConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsEksNodeGroups.DataAwsEksNodeGroupsConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsEksNodeGroups.DataAwsEksNodeGroupsConfig.property.clusterName">ClusterName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/eks_node_groups#cluster_name DataAwsEksNodeGroups#cluster_name}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsEksNodeGroups.DataAwsEksNodeGroupsConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/eks_node_groups#id DataAwsEksNodeGroups#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsEksNodeGroups.DataAwsEksNodeGroupsConfig.property.clusterName">ClusterName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/eks_node_groups#cluster_name DataAwsEksNodeGroups#cluster_name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsEksNodeGroups.DataAwsEksNodeGroupsConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/eks_node_groups#id DataAwsEksNodeGroups#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsEksNodeGroups.DataAwsEksNodeGroupsConfig.property.region">Region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
 
@@ -714,7 +745,7 @@ public string ClusterName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/eks_node_groups#cluster_name DataAwsEksNodeGroups#cluster_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/eks_node_groups#cluster_name DataAwsEksNodeGroups#cluster_name}.
 
 ---
 
@@ -726,10 +757,24 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/eks_node_groups#id DataAwsEksNodeGroups#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/eks_node_groups#id DataAwsEksNodeGroups#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `Region`<sup>Optional</sup> <a name="Region" id="@cdktf/provider-aws.dataAwsEksNodeGroups.DataAwsEksNodeGroupsConfig.property.region"></a>
+
+```csharp
+public string Region { get; set; }
+```
+
+- *Type:* string
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/eks_node_groups#region DataAwsEksNodeGroups#region}
 
 ---
 

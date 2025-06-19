@@ -4,7 +4,7 @@
 
 ### DataexchangeRevision <a name="DataexchangeRevision" id="@cdktf/provider-aws.dataexchangeRevision.DataexchangeRevision"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/dataexchange_revision aws_dataexchange_revision}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/dataexchange_revision aws_dataexchange_revision}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataexchangeRevision.DataexchangeRevision.Initializer"></a>
 
@@ -24,6 +24,7 @@ dataexchangeRevision.DataexchangeRevision(
   data_set_id: str,
   comment: str = None,
   id: str = None,
+  region: str = None,
   tags: typing.Mapping[str] = None,
   tags_all: typing.Mapping[str] = None
 )
@@ -40,11 +41,12 @@ dataexchangeRevision.DataexchangeRevision(
 | <code><a href="#@cdktf/provider-aws.dataexchangeRevision.DataexchangeRevision.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataexchangeRevision.DataexchangeRevision.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataexchangeRevision.DataexchangeRevision.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataexchangeRevision.DataexchangeRevision.Initializer.parameter.dataSetId">data_set_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/dataexchange_revision#data_set_id DataexchangeRevision#data_set_id}. |
-| <code><a href="#@cdktf/provider-aws.dataexchangeRevision.DataexchangeRevision.Initializer.parameter.comment">comment</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/dataexchange_revision#comment DataexchangeRevision#comment}. |
-| <code><a href="#@cdktf/provider-aws.dataexchangeRevision.DataexchangeRevision.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/dataexchange_revision#id DataexchangeRevision#id}. |
-| <code><a href="#@cdktf/provider-aws.dataexchangeRevision.DataexchangeRevision.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/dataexchange_revision#tags DataexchangeRevision#tags}. |
-| <code><a href="#@cdktf/provider-aws.dataexchangeRevision.DataexchangeRevision.Initializer.parameter.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/dataexchange_revision#tags_all DataexchangeRevision#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.dataexchangeRevision.DataexchangeRevision.Initializer.parameter.dataSetId">data_set_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/dataexchange_revision#data_set_id DataexchangeRevision#data_set_id}. |
+| <code><a href="#@cdktf/provider-aws.dataexchangeRevision.DataexchangeRevision.Initializer.parameter.comment">comment</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/dataexchange_revision#comment DataexchangeRevision#comment}. |
+| <code><a href="#@cdktf/provider-aws.dataexchangeRevision.DataexchangeRevision.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/dataexchange_revision#id DataexchangeRevision#id}. |
+| <code><a href="#@cdktf/provider-aws.dataexchangeRevision.DataexchangeRevision.Initializer.parameter.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
+| <code><a href="#@cdktf/provider-aws.dataexchangeRevision.DataexchangeRevision.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/dataexchange_revision#tags DataexchangeRevision#tags}. |
+| <code><a href="#@cdktf/provider-aws.dataexchangeRevision.DataexchangeRevision.Initializer.parameter.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/dataexchange_revision#tags_all DataexchangeRevision#tags_all}. |
 
 ---
 
@@ -112,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/dataexchange_revision#data_set_id DataexchangeRevision#data_set_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/dataexchange_revision#data_set_id DataexchangeRevision#data_set_id}.
 
 ---
 
@@ -120,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/dataexchange_revision#comment DataexchangeRevision#comment}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/dataexchange_revision#comment DataexchangeRevision#comment}.
 
 ---
 
@@ -128,10 +130,20 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/dataexchange_revision#id DataexchangeRevision#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/dataexchange_revision#id DataexchangeRevision#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdktf/provider-aws.dataexchangeRevision.DataexchangeRevision.Initializer.parameter.region"></a>
+
+- *Type:* str
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/dataexchange_revision#region DataexchangeRevision#region}
 
 ---
 
@@ -139,7 +151,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/dataexchange_revision#tags DataexchangeRevision#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/dataexchange_revision#tags DataexchangeRevision#tags}.
 
 ---
 
@@ -147,7 +159,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/dataexchange_revision#tags_all DataexchangeRevision#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/dataexchange_revision#tags_all DataexchangeRevision#tags_all}.
 
 ---
 
@@ -180,6 +192,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktf/provider-aws.dataexchangeRevision.DataexchangeRevision.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-aws.dataexchangeRevision.DataexchangeRevision.resetComment">reset_comment</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataexchangeRevision.DataexchangeRevision.resetId">reset_id</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataexchangeRevision.DataexchangeRevision.resetRegion">reset_region</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataexchangeRevision.DataexchangeRevision.resetTags">reset_tags</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataexchangeRevision.DataexchangeRevision.resetTagsAll">reset_tags_all</a></code> | *No description.* |
 
@@ -522,6 +535,12 @@ def reset_comment() -> None
 def reset_id() -> None
 ```
 
+##### `reset_region` <a name="reset_region" id="@cdktf/provider-aws.dataexchangeRevision.DataexchangeRevision.resetRegion"></a>
+
+```python
+def reset_region() -> None
+```
+
 ##### `reset_tags` <a name="reset_tags" id="@cdktf/provider-aws.dataexchangeRevision.DataexchangeRevision.resetTags"></a>
 
 ```python
@@ -648,7 +667,7 @@ The construct id used in the generated config for the DataexchangeRevision to im
 
 The id of the existing DataexchangeRevision that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/dataexchange_revision#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/dataexchange_revision#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -683,11 +702,13 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.dataexchangeRevision.DataexchangeRevision.property.commentInput">comment_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataexchangeRevision.DataexchangeRevision.property.dataSetIdInput">data_set_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataexchangeRevision.DataexchangeRevision.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataexchangeRevision.DataexchangeRevision.property.regionInput">region_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataexchangeRevision.DataexchangeRevision.property.tagsAllInput">tags_all_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataexchangeRevision.DataexchangeRevision.property.tagsInput">tags_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataexchangeRevision.DataexchangeRevision.property.comment">comment</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataexchangeRevision.DataexchangeRevision.property.dataSetId">data_set_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataexchangeRevision.DataexchangeRevision.property.id">id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataexchangeRevision.DataexchangeRevision.property.region">region</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataexchangeRevision.DataexchangeRevision.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataexchangeRevision.DataexchangeRevision.property.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 
@@ -885,6 +906,16 @@ id_input: str
 
 ---
 
+##### `region_input`<sup>Optional</sup> <a name="region_input" id="@cdktf/provider-aws.dataexchangeRevision.DataexchangeRevision.property.regionInput"></a>
+
+```python
+region_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `tags_all_input`<sup>Optional</sup> <a name="tags_all_input" id="@cdktf/provider-aws.dataexchangeRevision.DataexchangeRevision.property.tagsAllInput"></a>
 
 ```python
@@ -929,6 +960,16 @@ data_set_id: str
 
 ```python
 id: str
+```
+
+- *Type:* str
+
+---
+
+##### `region`<sup>Required</sup> <a name="region" id="@cdktf/provider-aws.dataexchangeRevision.DataexchangeRevision.property.region"></a>
+
+```python
+region: str
 ```
 
 - *Type:* str
@@ -993,6 +1034,7 @@ dataexchangeRevision.DataexchangeRevisionConfig(
   data_set_id: str,
   comment: str = None,
   id: str = None,
+  region: str = None,
   tags: typing.Mapping[str] = None,
   tags_all: typing.Mapping[str] = None
 )
@@ -1009,11 +1051,12 @@ dataexchangeRevision.DataexchangeRevisionConfig(
 | <code><a href="#@cdktf/provider-aws.dataexchangeRevision.DataexchangeRevisionConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataexchangeRevision.DataexchangeRevisionConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataexchangeRevision.DataexchangeRevisionConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataexchangeRevision.DataexchangeRevisionConfig.property.dataSetId">data_set_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/dataexchange_revision#data_set_id DataexchangeRevision#data_set_id}. |
-| <code><a href="#@cdktf/provider-aws.dataexchangeRevision.DataexchangeRevisionConfig.property.comment">comment</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/dataexchange_revision#comment DataexchangeRevision#comment}. |
-| <code><a href="#@cdktf/provider-aws.dataexchangeRevision.DataexchangeRevisionConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/dataexchange_revision#id DataexchangeRevision#id}. |
-| <code><a href="#@cdktf/provider-aws.dataexchangeRevision.DataexchangeRevisionConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/dataexchange_revision#tags DataexchangeRevision#tags}. |
-| <code><a href="#@cdktf/provider-aws.dataexchangeRevision.DataexchangeRevisionConfig.property.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/dataexchange_revision#tags_all DataexchangeRevision#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.dataexchangeRevision.DataexchangeRevisionConfig.property.dataSetId">data_set_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/dataexchange_revision#data_set_id DataexchangeRevision#data_set_id}. |
+| <code><a href="#@cdktf/provider-aws.dataexchangeRevision.DataexchangeRevisionConfig.property.comment">comment</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/dataexchange_revision#comment DataexchangeRevision#comment}. |
+| <code><a href="#@cdktf/provider-aws.dataexchangeRevision.DataexchangeRevisionConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/dataexchange_revision#id DataexchangeRevision#id}. |
+| <code><a href="#@cdktf/provider-aws.dataexchangeRevision.DataexchangeRevisionConfig.property.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
+| <code><a href="#@cdktf/provider-aws.dataexchangeRevision.DataexchangeRevisionConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/dataexchange_revision#tags DataexchangeRevision#tags}. |
+| <code><a href="#@cdktf/provider-aws.dataexchangeRevision.DataexchangeRevisionConfig.property.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/dataexchange_revision#tags_all DataexchangeRevision#tags_all}. |
 
 ---
 
@@ -1095,7 +1138,7 @@ data_set_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/dataexchange_revision#data_set_id DataexchangeRevision#data_set_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/dataexchange_revision#data_set_id DataexchangeRevision#data_set_id}.
 
 ---
 
@@ -1107,7 +1150,7 @@ comment: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/dataexchange_revision#comment DataexchangeRevision#comment}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/dataexchange_revision#comment DataexchangeRevision#comment}.
 
 ---
 
@@ -1119,10 +1162,24 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/dataexchange_revision#id DataexchangeRevision#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/dataexchange_revision#id DataexchangeRevision#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdktf/provider-aws.dataexchangeRevision.DataexchangeRevisionConfig.property.region"></a>
+
+```python
+region: str
+```
+
+- *Type:* str
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/dataexchange_revision#region DataexchangeRevision#region}
 
 ---
 
@@ -1134,7 +1191,7 @@ tags: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/dataexchange_revision#tags DataexchangeRevision#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/dataexchange_revision#tags DataexchangeRevision#tags}.
 
 ---
 
@@ -1146,7 +1203,7 @@ tags_all: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/dataexchange_revision#tags_all DataexchangeRevision#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/dataexchange_revision#tags_all DataexchangeRevision#tags_all}.
 
 ---
 

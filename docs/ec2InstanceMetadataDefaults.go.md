@@ -4,12 +4,12 @@
 
 ### Ec2InstanceMetadataDefaults <a name="Ec2InstanceMetadataDefaults" id="@cdktf/provider-aws.ec2InstanceMetadataDefaults.Ec2InstanceMetadataDefaults"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ec2_instance_metadata_defaults aws_ec2_instance_metadata_defaults}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ec2_instance_metadata_defaults aws_ec2_instance_metadata_defaults}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ec2InstanceMetadataDefaults.Ec2InstanceMetadataDefaults.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/ec2instancemetadatadefaults"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/ec2instancemetadatadefaults"
 
 ec2instancemetadatadefaults.NewEc2InstanceMetadataDefaults(scope Construct, id *string, config Ec2InstanceMetadataDefaultsConfig) Ec2InstanceMetadataDefaults
 ```
@@ -77,6 +77,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.ec2InstanceMetadataDefaults.Ec2InstanceMetadataDefaults.resetHttpPutResponseHopLimit">ResetHttpPutResponseHopLimit</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2InstanceMetadataDefaults.Ec2InstanceMetadataDefaults.resetHttpTokens">ResetHttpTokens</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2InstanceMetadataDefaults.Ec2InstanceMetadataDefaults.resetInstanceMetadataTags">ResetInstanceMetadataTags</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ec2InstanceMetadataDefaults.Ec2InstanceMetadataDefaults.resetRegion">ResetRegion</a></code> | *No description.* |
 
 ---
 
@@ -392,6 +393,12 @@ func ResetHttpTokens()
 func ResetInstanceMetadataTags()
 ```
 
+##### `ResetRegion` <a name="ResetRegion" id="@cdktf/provider-aws.ec2InstanceMetadataDefaults.Ec2InstanceMetadataDefaults.resetRegion"></a>
+
+```go
+func ResetRegion()
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -406,7 +413,7 @@ func ResetInstanceMetadataTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.ec2InstanceMetadataDefaults.Ec2InstanceMetadataDefaults.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/ec2instancemetadatadefaults"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/ec2instancemetadatadefaults"
 
 ec2instancemetadatadefaults.Ec2InstanceMetadataDefaults_IsConstruct(x interface{}) *bool
 ```
@@ -438,7 +445,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.ec2InstanceMetadataDefaults.Ec2InstanceMetadataDefaults.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/ec2instancemetadatadefaults"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/ec2instancemetadatadefaults"
 
 ec2instancemetadatadefaults.Ec2InstanceMetadataDefaults_IsTerraformElement(x interface{}) *bool
 ```
@@ -452,7 +459,7 @@ ec2instancemetadatadefaults.Ec2InstanceMetadataDefaults_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.ec2InstanceMetadataDefaults.Ec2InstanceMetadataDefaults.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/ec2instancemetadatadefaults"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/ec2instancemetadatadefaults"
 
 ec2instancemetadatadefaults.Ec2InstanceMetadataDefaults_IsTerraformResource(x interface{}) *bool
 ```
@@ -466,7 +473,7 @@ ec2instancemetadatadefaults.Ec2InstanceMetadataDefaults_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.ec2InstanceMetadataDefaults.Ec2InstanceMetadataDefaults.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/ec2instancemetadatadefaults"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/ec2instancemetadatadefaults"
 
 ec2instancemetadatadefaults.Ec2InstanceMetadataDefaults_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -495,7 +502,7 @@ The construct id used in the generated config for the Ec2InstanceMetadataDefault
 
 The id of the existing Ec2InstanceMetadataDefaults that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ec2_instance_metadata_defaults#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ec2_instance_metadata_defaults#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -530,10 +537,12 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.ec2InstanceMetadataDefaults.Ec2InstanceMetadataDefaults.property.httpPutResponseHopLimitInput">HttpPutResponseHopLimitInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2InstanceMetadataDefaults.Ec2InstanceMetadataDefaults.property.httpTokensInput">HttpTokensInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2InstanceMetadataDefaults.Ec2InstanceMetadataDefaults.property.instanceMetadataTagsInput">InstanceMetadataTagsInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ec2InstanceMetadataDefaults.Ec2InstanceMetadataDefaults.property.regionInput">RegionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2InstanceMetadataDefaults.Ec2InstanceMetadataDefaults.property.httpEndpoint">HttpEndpoint</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2InstanceMetadataDefaults.Ec2InstanceMetadataDefaults.property.httpPutResponseHopLimit">HttpPutResponseHopLimit</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2InstanceMetadataDefaults.Ec2InstanceMetadataDefaults.property.httpTokens">HttpTokens</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2InstanceMetadataDefaults.Ec2InstanceMetadataDefaults.property.instanceMetadataTags">InstanceMetadataTags</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ec2InstanceMetadataDefaults.Ec2InstanceMetadataDefaults.property.region">Region</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
@@ -729,6 +738,16 @@ func InstanceMetadataTagsInput() *string
 
 ---
 
+##### `RegionInput`<sup>Optional</sup> <a name="RegionInput" id="@cdktf/provider-aws.ec2InstanceMetadataDefaults.Ec2InstanceMetadataDefaults.property.regionInput"></a>
+
+```go
+func RegionInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `HttpEndpoint`<sup>Required</sup> <a name="HttpEndpoint" id="@cdktf/provider-aws.ec2InstanceMetadataDefaults.Ec2InstanceMetadataDefaults.property.httpEndpoint"></a>
 
 ```go
@@ -769,6 +788,16 @@ func InstanceMetadataTags() *string
 
 ---
 
+##### `Region`<sup>Required</sup> <a name="Region" id="@cdktf/provider-aws.ec2InstanceMetadataDefaults.Ec2InstanceMetadataDefaults.property.region"></a>
+
+```go
+func Region() *string
+```
+
+- *Type:* *string
+
+---
+
 #### Constants <a name="Constants" id="Constants"></a>
 
 | **Name** | **Type** | **Description** |
@@ -794,7 +823,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ec2InstanceMetadataDefaults.Ec2InstanceMetadataDefaultsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/ec2instancemetadatadefaults"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/ec2instancemetadatadefaults"
 
 &ec2instancemetadatadefaults.Ec2InstanceMetadataDefaultsConfig {
 	Connection: interface{},
@@ -808,6 +837,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/ec2instancemetadatadefaul
 	HttpPutResponseHopLimit: *f64,
 	HttpTokens: *string,
 	InstanceMetadataTags: *string,
+	Region: *string,
 }
 ```
 
@@ -822,10 +852,11 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/ec2instancemetadatadefaul
 | <code><a href="#@cdktf/provider-aws.ec2InstanceMetadataDefaults.Ec2InstanceMetadataDefaultsConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2InstanceMetadataDefaults.Ec2InstanceMetadataDefaultsConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2InstanceMetadataDefaults.Ec2InstanceMetadataDefaultsConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ec2InstanceMetadataDefaults.Ec2InstanceMetadataDefaultsConfig.property.httpEndpoint">HttpEndpoint</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ec2_instance_metadata_defaults#http_endpoint Ec2InstanceMetadataDefaults#http_endpoint}. |
-| <code><a href="#@cdktf/provider-aws.ec2InstanceMetadataDefaults.Ec2InstanceMetadataDefaultsConfig.property.httpPutResponseHopLimit">HttpPutResponseHopLimit</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ec2_instance_metadata_defaults#http_put_response_hop_limit Ec2InstanceMetadataDefaults#http_put_response_hop_limit}. |
-| <code><a href="#@cdktf/provider-aws.ec2InstanceMetadataDefaults.Ec2InstanceMetadataDefaultsConfig.property.httpTokens">HttpTokens</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ec2_instance_metadata_defaults#http_tokens Ec2InstanceMetadataDefaults#http_tokens}. |
-| <code><a href="#@cdktf/provider-aws.ec2InstanceMetadataDefaults.Ec2InstanceMetadataDefaultsConfig.property.instanceMetadataTags">InstanceMetadataTags</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ec2_instance_metadata_defaults#instance_metadata_tags Ec2InstanceMetadataDefaults#instance_metadata_tags}. |
+| <code><a href="#@cdktf/provider-aws.ec2InstanceMetadataDefaults.Ec2InstanceMetadataDefaultsConfig.property.httpEndpoint">HttpEndpoint</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ec2_instance_metadata_defaults#http_endpoint Ec2InstanceMetadataDefaults#http_endpoint}. |
+| <code><a href="#@cdktf/provider-aws.ec2InstanceMetadataDefaults.Ec2InstanceMetadataDefaultsConfig.property.httpPutResponseHopLimit">HttpPutResponseHopLimit</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ec2_instance_metadata_defaults#http_put_response_hop_limit Ec2InstanceMetadataDefaults#http_put_response_hop_limit}. |
+| <code><a href="#@cdktf/provider-aws.ec2InstanceMetadataDefaults.Ec2InstanceMetadataDefaultsConfig.property.httpTokens">HttpTokens</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ec2_instance_metadata_defaults#http_tokens Ec2InstanceMetadataDefaults#http_tokens}. |
+| <code><a href="#@cdktf/provider-aws.ec2InstanceMetadataDefaults.Ec2InstanceMetadataDefaultsConfig.property.instanceMetadataTags">InstanceMetadataTags</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ec2_instance_metadata_defaults#instance_metadata_tags Ec2InstanceMetadataDefaults#instance_metadata_tags}. |
+| <code><a href="#@cdktf/provider-aws.ec2InstanceMetadataDefaults.Ec2InstanceMetadataDefaultsConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
 
@@ -907,7 +938,7 @@ HttpEndpoint *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ec2_instance_metadata_defaults#http_endpoint Ec2InstanceMetadataDefaults#http_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ec2_instance_metadata_defaults#http_endpoint Ec2InstanceMetadataDefaults#http_endpoint}.
 
 ---
 
@@ -919,7 +950,7 @@ HttpPutResponseHopLimit *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ec2_instance_metadata_defaults#http_put_response_hop_limit Ec2InstanceMetadataDefaults#http_put_response_hop_limit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ec2_instance_metadata_defaults#http_put_response_hop_limit Ec2InstanceMetadataDefaults#http_put_response_hop_limit}.
 
 ---
 
@@ -931,7 +962,7 @@ HttpTokens *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ec2_instance_metadata_defaults#http_tokens Ec2InstanceMetadataDefaults#http_tokens}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ec2_instance_metadata_defaults#http_tokens Ec2InstanceMetadataDefaults#http_tokens}.
 
 ---
 
@@ -943,7 +974,21 @@ InstanceMetadataTags *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ec2_instance_metadata_defaults#instance_metadata_tags Ec2InstanceMetadataDefaults#instance_metadata_tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ec2_instance_metadata_defaults#instance_metadata_tags Ec2InstanceMetadataDefaults#instance_metadata_tags}.
+
+---
+
+##### `Region`<sup>Optional</sup> <a name="Region" id="@cdktf/provider-aws.ec2InstanceMetadataDefaults.Ec2InstanceMetadataDefaultsConfig.property.region"></a>
+
+```go
+Region *string
+```
+
+- *Type:* *string
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ec2_instance_metadata_defaults#region Ec2InstanceMetadataDefaults#region}
 
 ---
 

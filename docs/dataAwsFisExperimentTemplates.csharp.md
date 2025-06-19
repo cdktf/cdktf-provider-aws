@@ -4,7 +4,7 @@
 
 ### DataAwsFisExperimentTemplates <a name="DataAwsFisExperimentTemplates" id="@cdktf/provider-aws.dataAwsFisExperimentTemplates.DataAwsFisExperimentTemplates"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/fis_experiment_templates aws_fis_experiment_templates}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/fis_experiment_templates aws_fis_experiment_templates}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsFisExperimentTemplates.DataAwsFisExperimentTemplates.Initializer"></a>
 
@@ -67,6 +67,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.dataAwsFisExperimentTemplates.DataAwsFisExperimentTemplates.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsFisExperimentTemplates.DataAwsFisExperimentTemplates.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsFisExperimentTemplates.DataAwsFisExperimentTemplates.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsFisExperimentTemplates.DataAwsFisExperimentTemplates.resetRegion">ResetRegion</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsFisExperimentTemplates.DataAwsFisExperimentTemplates.resetTags">ResetTags</a></code> | *No description.* |
 
 ---
@@ -263,6 +264,12 @@ private IResolvable InterpolationForAttribute(string TerraformAttribute)
 
 ---
 
+##### `ResetRegion` <a name="ResetRegion" id="@cdktf/provider-aws.dataAwsFisExperimentTemplates.DataAwsFisExperimentTemplates.resetRegion"></a>
+
+```csharp
+private void ResetRegion()
+```
+
 ##### `ResetTags` <a name="ResetTags" id="@cdktf/provider-aws.dataAwsFisExperimentTemplates.DataAwsFisExperimentTemplates.resetTags"></a>
 
 ```csharp
@@ -372,7 +379,7 @@ The construct id used in the generated config for the DataAwsFisExperimentTempla
 
 The id of the existing DataAwsFisExperimentTemplates that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/fis_experiment_templates#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/fis_experiment_templates#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -401,7 +408,9 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.dataAwsFisExperimentTemplates.DataAwsFisExperimentTemplates.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsFisExperimentTemplates.DataAwsFisExperimentTemplates.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsFisExperimentTemplates.DataAwsFisExperimentTemplates.property.ids">Ids</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsFisExperimentTemplates.DataAwsFisExperimentTemplates.property.regionInput">RegionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsFisExperimentTemplates.DataAwsFisExperimentTemplates.property.tagsInput">TagsInput</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsFisExperimentTemplates.DataAwsFisExperimentTemplates.property.region">Region</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsFisExperimentTemplates.DataAwsFisExperimentTemplates.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
 
 ---
@@ -538,6 +547,16 @@ public string[] Ids { get; }
 
 ---
 
+##### `RegionInput`<sup>Optional</sup> <a name="RegionInput" id="@cdktf/provider-aws.dataAwsFisExperimentTemplates.DataAwsFisExperimentTemplates.property.regionInput"></a>
+
+```csharp
+public string RegionInput { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `TagsInput`<sup>Optional</sup> <a name="TagsInput" id="@cdktf/provider-aws.dataAwsFisExperimentTemplates.DataAwsFisExperimentTemplates.property.tagsInput"></a>
 
 ```csharp
@@ -545,6 +564,16 @@ public System.Collections.Generic.IDictionary<string, string> TagsInput { get; }
 ```
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
+
+---
+
+##### `Region`<sup>Required</sup> <a name="Region" id="@cdktf/provider-aws.dataAwsFisExperimentTemplates.DataAwsFisExperimentTemplates.property.region"></a>
+
+```csharp
+public string Region { get; }
+```
+
+- *Type:* string
 
 ---
 
@@ -593,6 +622,7 @@ new DataAwsFisExperimentTemplatesConfig {
     TerraformResourceLifecycle Lifecycle = null,
     TerraformProvider Provider = null,
     object[] Provisioners = null,
+    string Region = null,
     System.Collections.Generic.IDictionary<string, string> Tags = null
 };
 ```
@@ -608,7 +638,8 @@ new DataAwsFisExperimentTemplatesConfig {
 | <code><a href="#@cdktf/provider-aws.dataAwsFisExperimentTemplates.DataAwsFisExperimentTemplatesConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsFisExperimentTemplates.DataAwsFisExperimentTemplatesConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsFisExperimentTemplates.DataAwsFisExperimentTemplatesConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsFisExperimentTemplates.DataAwsFisExperimentTemplatesConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/fis_experiment_templates#tags DataAwsFisExperimentTemplates#tags}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsFisExperimentTemplates.DataAwsFisExperimentTemplatesConfig.property.region">Region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
+| <code><a href="#@cdktf/provider-aws.dataAwsFisExperimentTemplates.DataAwsFisExperimentTemplatesConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/fis_experiment_templates#tags DataAwsFisExperimentTemplates#tags}. |
 
 ---
 
@@ -682,6 +713,20 @@ public object[] Provisioners { get; set; }
 
 ---
 
+##### `Region`<sup>Optional</sup> <a name="Region" id="@cdktf/provider-aws.dataAwsFisExperimentTemplates.DataAwsFisExperimentTemplatesConfig.property.region"></a>
+
+```csharp
+public string Region { get; set; }
+```
+
+- *Type:* string
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/fis_experiment_templates#region DataAwsFisExperimentTemplates#region}
+
+---
+
 ##### `Tags`<sup>Optional</sup> <a name="Tags" id="@cdktf/provider-aws.dataAwsFisExperimentTemplates.DataAwsFisExperimentTemplatesConfig.property.tags"></a>
 
 ```csharp
@@ -690,7 +735,7 @@ public System.Collections.Generic.IDictionary<string, string> Tags { get; set; }
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/fis_experiment_templates#tags DataAwsFisExperimentTemplates#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/fis_experiment_templates#tags DataAwsFisExperimentTemplates#tags}.
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### SchemasRegistry <a name="SchemasRegistry" id="@cdktf/provider-aws.schemasRegistry.SchemasRegistry"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/schemas_registry aws_schemas_registry}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/schemas_registry aws_schemas_registry}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.schemasRegistry.SchemasRegistry.Initializer"></a>
 
@@ -75,6 +75,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.schemasRegistry.SchemasRegistry.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-aws.schemasRegistry.SchemasRegistry.resetDescription">ResetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.schemasRegistry.SchemasRegistry.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.schemasRegistry.SchemasRegistry.resetRegion">ResetRegion</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.schemasRegistry.SchemasRegistry.resetTags">ResetTags</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.schemasRegistry.SchemasRegistry.resetTagsAll">ResetTagsAll</a></code> | *No description.* |
 
@@ -380,6 +381,12 @@ private void ResetDescription()
 private void ResetId()
 ```
 
+##### `ResetRegion` <a name="ResetRegion" id="@cdktf/provider-aws.schemasRegistry.SchemasRegistry.resetRegion"></a>
+
+```csharp
+private void ResetRegion()
+```
+
 ##### `ResetTags` <a name="ResetTags" id="@cdktf/provider-aws.schemasRegistry.SchemasRegistry.resetTags"></a>
 
 ```csharp
@@ -495,7 +502,7 @@ The construct id used in the generated config for the SchemasRegistry to import.
 
 The id of the existing SchemasRegistry that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/schemas_registry#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/schemas_registry#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -529,11 +536,13 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.schemasRegistry.SchemasRegistry.property.descriptionInput">DescriptionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.schemasRegistry.SchemasRegistry.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.schemasRegistry.SchemasRegistry.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.schemasRegistry.SchemasRegistry.property.regionInput">RegionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.schemasRegistry.SchemasRegistry.property.tagsAllInput">TagsAllInput</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.schemasRegistry.SchemasRegistry.property.tagsInput">TagsInput</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.schemasRegistry.SchemasRegistry.property.description">Description</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.schemasRegistry.SchemasRegistry.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.schemasRegistry.SchemasRegistry.property.name">Name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.schemasRegistry.SchemasRegistry.property.region">Region</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.schemasRegistry.SchemasRegistry.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.schemasRegistry.SchemasRegistry.property.tagsAll">TagsAll</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
 
@@ -721,6 +730,16 @@ public string NameInput { get; }
 
 ---
 
+##### `RegionInput`<sup>Optional</sup> <a name="RegionInput" id="@cdktf/provider-aws.schemasRegistry.SchemasRegistry.property.regionInput"></a>
+
+```csharp
+public string RegionInput { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `TagsAllInput`<sup>Optional</sup> <a name="TagsAllInput" id="@cdktf/provider-aws.schemasRegistry.SchemasRegistry.property.tagsAllInput"></a>
 
 ```csharp
@@ -765,6 +784,16 @@ public string Id { get; }
 
 ```csharp
 public string Name { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Region`<sup>Required</sup> <a name="Region" id="@cdktf/provider-aws.schemasRegistry.SchemasRegistry.property.region"></a>
+
+```csharp
+public string Region { get; }
 ```
 
 - *Type:* string
@@ -829,6 +858,7 @@ new SchemasRegistryConfig {
     string Name,
     string Description = null,
     string Id = null,
+    string Region = null,
     System.Collections.Generic.IDictionary<string, string> Tags = null,
     System.Collections.Generic.IDictionary<string, string> TagsAll = null
 };
@@ -845,11 +875,12 @@ new SchemasRegistryConfig {
 | <code><a href="#@cdktf/provider-aws.schemasRegistry.SchemasRegistryConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.schemasRegistry.SchemasRegistryConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.schemasRegistry.SchemasRegistryConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.schemasRegistry.SchemasRegistryConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/schemas_registry#name SchemasRegistry#name}. |
-| <code><a href="#@cdktf/provider-aws.schemasRegistry.SchemasRegistryConfig.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/schemas_registry#description SchemasRegistry#description}. |
-| <code><a href="#@cdktf/provider-aws.schemasRegistry.SchemasRegistryConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/schemas_registry#id SchemasRegistry#id}. |
-| <code><a href="#@cdktf/provider-aws.schemasRegistry.SchemasRegistryConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/schemas_registry#tags SchemasRegistry#tags}. |
-| <code><a href="#@cdktf/provider-aws.schemasRegistry.SchemasRegistryConfig.property.tagsAll">TagsAll</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/schemas_registry#tags_all SchemasRegistry#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.schemasRegistry.SchemasRegistryConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/schemas_registry#name SchemasRegistry#name}. |
+| <code><a href="#@cdktf/provider-aws.schemasRegistry.SchemasRegistryConfig.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/schemas_registry#description SchemasRegistry#description}. |
+| <code><a href="#@cdktf/provider-aws.schemasRegistry.SchemasRegistryConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/schemas_registry#id SchemasRegistry#id}. |
+| <code><a href="#@cdktf/provider-aws.schemasRegistry.SchemasRegistryConfig.property.region">Region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
+| <code><a href="#@cdktf/provider-aws.schemasRegistry.SchemasRegistryConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/schemas_registry#tags SchemasRegistry#tags}. |
+| <code><a href="#@cdktf/provider-aws.schemasRegistry.SchemasRegistryConfig.property.tagsAll">TagsAll</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/schemas_registry#tags_all SchemasRegistry#tags_all}. |
 
 ---
 
@@ -931,7 +962,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/schemas_registry#name SchemasRegistry#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/schemas_registry#name SchemasRegistry#name}.
 
 ---
 
@@ -943,7 +974,7 @@ public string Description { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/schemas_registry#description SchemasRegistry#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/schemas_registry#description SchemasRegistry#description}.
 
 ---
 
@@ -955,10 +986,24 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/schemas_registry#id SchemasRegistry#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/schemas_registry#id SchemasRegistry#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `Region`<sup>Optional</sup> <a name="Region" id="@cdktf/provider-aws.schemasRegistry.SchemasRegistryConfig.property.region"></a>
+
+```csharp
+public string Region { get; set; }
+```
+
+- *Type:* string
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/schemas_registry#region SchemasRegistry#region}
 
 ---
 
@@ -970,7 +1015,7 @@ public System.Collections.Generic.IDictionary<string, string> Tags { get; set; }
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/schemas_registry#tags SchemasRegistry#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/schemas_registry#tags SchemasRegistry#tags}.
 
 ---
 
@@ -982,7 +1027,7 @@ public System.Collections.Generic.IDictionary<string, string> TagsAll { get; set
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/schemas_registry#tags_all SchemasRegistry#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/schemas_registry#tags_all SchemasRegistry#tags_all}.
 
 ---
 

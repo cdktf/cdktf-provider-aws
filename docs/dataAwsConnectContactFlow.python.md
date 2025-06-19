@@ -4,7 +4,7 @@
 
 ### DataAwsConnectContactFlow <a name="DataAwsConnectContactFlow" id="@cdktf/provider-aws.dataAwsConnectContactFlow.DataAwsConnectContactFlow"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/connect_contact_flow aws_connect_contact_flow}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/connect_contact_flow aws_connect_contact_flow}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsConnectContactFlow.DataAwsConnectContactFlow.Initializer"></a>
 
@@ -25,6 +25,7 @@ dataAwsConnectContactFlow.DataAwsConnectContactFlow(
   contact_flow_id: str = None,
   id: str = None,
   name: str = None,
+  region: str = None,
   tags: typing.Mapping[str] = None,
   type: str = None
 )
@@ -41,12 +42,13 @@ dataAwsConnectContactFlow.DataAwsConnectContactFlow(
 | <code><a href="#@cdktf/provider-aws.dataAwsConnectContactFlow.DataAwsConnectContactFlow.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsConnectContactFlow.DataAwsConnectContactFlow.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsConnectContactFlow.DataAwsConnectContactFlow.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsConnectContactFlow.DataAwsConnectContactFlow.Initializer.parameter.instanceId">instance_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/connect_contact_flow#instance_id DataAwsConnectContactFlow#instance_id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsConnectContactFlow.DataAwsConnectContactFlow.Initializer.parameter.contactFlowId">contact_flow_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/connect_contact_flow#contact_flow_id DataAwsConnectContactFlow#contact_flow_id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsConnectContactFlow.DataAwsConnectContactFlow.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/connect_contact_flow#id DataAwsConnectContactFlow#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsConnectContactFlow.DataAwsConnectContactFlow.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/connect_contact_flow#name DataAwsConnectContactFlow#name}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsConnectContactFlow.DataAwsConnectContactFlow.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/connect_contact_flow#tags DataAwsConnectContactFlow#tags}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsConnectContactFlow.DataAwsConnectContactFlow.Initializer.parameter.type">type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/connect_contact_flow#type DataAwsConnectContactFlow#type}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsConnectContactFlow.DataAwsConnectContactFlow.Initializer.parameter.instanceId">instance_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/connect_contact_flow#instance_id DataAwsConnectContactFlow#instance_id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsConnectContactFlow.DataAwsConnectContactFlow.Initializer.parameter.contactFlowId">contact_flow_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/connect_contact_flow#contact_flow_id DataAwsConnectContactFlow#contact_flow_id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsConnectContactFlow.DataAwsConnectContactFlow.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/connect_contact_flow#id DataAwsConnectContactFlow#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsConnectContactFlow.DataAwsConnectContactFlow.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/connect_contact_flow#name DataAwsConnectContactFlow#name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsConnectContactFlow.DataAwsConnectContactFlow.Initializer.parameter.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
+| <code><a href="#@cdktf/provider-aws.dataAwsConnectContactFlow.DataAwsConnectContactFlow.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/connect_contact_flow#tags DataAwsConnectContactFlow#tags}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsConnectContactFlow.DataAwsConnectContactFlow.Initializer.parameter.type">type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/connect_contact_flow#type DataAwsConnectContactFlow#type}. |
 
 ---
 
@@ -114,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/connect_contact_flow#instance_id DataAwsConnectContactFlow#instance_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/connect_contact_flow#instance_id DataAwsConnectContactFlow#instance_id}.
 
 ---
 
@@ -122,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/connect_contact_flow#contact_flow_id DataAwsConnectContactFlow#contact_flow_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/connect_contact_flow#contact_flow_id DataAwsConnectContactFlow#contact_flow_id}.
 
 ---
 
@@ -130,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/connect_contact_flow#id DataAwsConnectContactFlow#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/connect_contact_flow#id DataAwsConnectContactFlow#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -141,7 +143,17 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/connect_contact_flow#name DataAwsConnectContactFlow#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/connect_contact_flow#name DataAwsConnectContactFlow#name}.
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdktf/provider-aws.dataAwsConnectContactFlow.DataAwsConnectContactFlow.Initializer.parameter.region"></a>
+
+- *Type:* str
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/connect_contact_flow#region DataAwsConnectContactFlow#region}
 
 ---
 
@@ -149,7 +161,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/connect_contact_flow#tags DataAwsConnectContactFlow#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/connect_contact_flow#tags DataAwsConnectContactFlow#tags}.
 
 ---
 
@@ -157,7 +169,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/connect_contact_flow#type DataAwsConnectContactFlow#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/connect_contact_flow#type DataAwsConnectContactFlow#type}.
 
 ---
 
@@ -185,6 +197,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktf/provider-aws.dataAwsConnectContactFlow.DataAwsConnectContactFlow.resetContactFlowId">reset_contact_flow_id</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsConnectContactFlow.DataAwsConnectContactFlow.resetId">reset_id</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsConnectContactFlow.DataAwsConnectContactFlow.resetName">reset_name</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsConnectContactFlow.DataAwsConnectContactFlow.resetRegion">reset_region</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsConnectContactFlow.DataAwsConnectContactFlow.resetTags">reset_tags</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsConnectContactFlow.DataAwsConnectContactFlow.resetType">reset_type</a></code> | *No description.* |
 
@@ -425,6 +438,12 @@ def reset_id() -> None
 def reset_name() -> None
 ```
 
+##### `reset_region` <a name="reset_region" id="@cdktf/provider-aws.dataAwsConnectContactFlow.DataAwsConnectContactFlow.resetRegion"></a>
+
+```python
+def reset_region() -> None
+```
+
 ##### `reset_tags` <a name="reset_tags" id="@cdktf/provider-aws.dataAwsConnectContactFlow.DataAwsConnectContactFlow.resetTags"></a>
 
 ```python
@@ -551,7 +570,7 @@ The construct id used in the generated config for the DataAwsConnectContactFlow 
 
 The id of the existing DataAwsConnectContactFlow that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/connect_contact_flow#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/connect_contact_flow#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -586,12 +605,14 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.dataAwsConnectContactFlow.DataAwsConnectContactFlow.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsConnectContactFlow.DataAwsConnectContactFlow.property.instanceIdInput">instance_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsConnectContactFlow.DataAwsConnectContactFlow.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsConnectContactFlow.DataAwsConnectContactFlow.property.regionInput">region_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsConnectContactFlow.DataAwsConnectContactFlow.property.tagsInput">tags_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsConnectContactFlow.DataAwsConnectContactFlow.property.typeInput">type_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsConnectContactFlow.DataAwsConnectContactFlow.property.contactFlowId">contact_flow_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsConnectContactFlow.DataAwsConnectContactFlow.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsConnectContactFlow.DataAwsConnectContactFlow.property.instanceId">instance_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsConnectContactFlow.DataAwsConnectContactFlow.property.name">name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsConnectContactFlow.DataAwsConnectContactFlow.property.region">region</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsConnectContactFlow.DataAwsConnectContactFlow.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsConnectContactFlow.DataAwsConnectContactFlow.property.type">type</a></code> | <code>str</code> | *No description.* |
 
@@ -789,6 +810,16 @@ name_input: str
 
 ---
 
+##### `region_input`<sup>Optional</sup> <a name="region_input" id="@cdktf/provider-aws.dataAwsConnectContactFlow.DataAwsConnectContactFlow.property.regionInput"></a>
+
+```python
+region_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `tags_input`<sup>Optional</sup> <a name="tags_input" id="@cdktf/provider-aws.dataAwsConnectContactFlow.DataAwsConnectContactFlow.property.tagsInput"></a>
 
 ```python
@@ -843,6 +874,16 @@ instance_id: str
 
 ```python
 name: str
+```
+
+- *Type:* str
+
+---
+
+##### `region`<sup>Required</sup> <a name="region" id="@cdktf/provider-aws.dataAwsConnectContactFlow.DataAwsConnectContactFlow.property.region"></a>
+
+```python
+region: str
 ```
 
 - *Type:* str
@@ -908,6 +949,7 @@ dataAwsConnectContactFlow.DataAwsConnectContactFlowConfig(
   contact_flow_id: str = None,
   id: str = None,
   name: str = None,
+  region: str = None,
   tags: typing.Mapping[str] = None,
   type: str = None
 )
@@ -924,12 +966,13 @@ dataAwsConnectContactFlow.DataAwsConnectContactFlowConfig(
 | <code><a href="#@cdktf/provider-aws.dataAwsConnectContactFlow.DataAwsConnectContactFlowConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsConnectContactFlow.DataAwsConnectContactFlowConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsConnectContactFlow.DataAwsConnectContactFlowConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsConnectContactFlow.DataAwsConnectContactFlowConfig.property.instanceId">instance_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/connect_contact_flow#instance_id DataAwsConnectContactFlow#instance_id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsConnectContactFlow.DataAwsConnectContactFlowConfig.property.contactFlowId">contact_flow_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/connect_contact_flow#contact_flow_id DataAwsConnectContactFlow#contact_flow_id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsConnectContactFlow.DataAwsConnectContactFlowConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/connect_contact_flow#id DataAwsConnectContactFlow#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsConnectContactFlow.DataAwsConnectContactFlowConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/connect_contact_flow#name DataAwsConnectContactFlow#name}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsConnectContactFlow.DataAwsConnectContactFlowConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/connect_contact_flow#tags DataAwsConnectContactFlow#tags}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsConnectContactFlow.DataAwsConnectContactFlowConfig.property.type">type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/connect_contact_flow#type DataAwsConnectContactFlow#type}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsConnectContactFlow.DataAwsConnectContactFlowConfig.property.instanceId">instance_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/connect_contact_flow#instance_id DataAwsConnectContactFlow#instance_id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsConnectContactFlow.DataAwsConnectContactFlowConfig.property.contactFlowId">contact_flow_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/connect_contact_flow#contact_flow_id DataAwsConnectContactFlow#contact_flow_id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsConnectContactFlow.DataAwsConnectContactFlowConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/connect_contact_flow#id DataAwsConnectContactFlow#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsConnectContactFlow.DataAwsConnectContactFlowConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/connect_contact_flow#name DataAwsConnectContactFlow#name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsConnectContactFlow.DataAwsConnectContactFlowConfig.property.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
+| <code><a href="#@cdktf/provider-aws.dataAwsConnectContactFlow.DataAwsConnectContactFlowConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/connect_contact_flow#tags DataAwsConnectContactFlow#tags}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsConnectContactFlow.DataAwsConnectContactFlowConfig.property.type">type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/connect_contact_flow#type DataAwsConnectContactFlow#type}. |
 
 ---
 
@@ -1011,7 +1054,7 @@ instance_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/connect_contact_flow#instance_id DataAwsConnectContactFlow#instance_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/connect_contact_flow#instance_id DataAwsConnectContactFlow#instance_id}.
 
 ---
 
@@ -1023,7 +1066,7 @@ contact_flow_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/connect_contact_flow#contact_flow_id DataAwsConnectContactFlow#contact_flow_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/connect_contact_flow#contact_flow_id DataAwsConnectContactFlow#contact_flow_id}.
 
 ---
 
@@ -1035,7 +1078,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/connect_contact_flow#id DataAwsConnectContactFlow#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/connect_contact_flow#id DataAwsConnectContactFlow#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1050,7 +1093,21 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/connect_contact_flow#name DataAwsConnectContactFlow#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/connect_contact_flow#name DataAwsConnectContactFlow#name}.
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdktf/provider-aws.dataAwsConnectContactFlow.DataAwsConnectContactFlowConfig.property.region"></a>
+
+```python
+region: str
+```
+
+- *Type:* str
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/connect_contact_flow#region DataAwsConnectContactFlow#region}
 
 ---
 
@@ -1062,7 +1119,7 @@ tags: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/connect_contact_flow#tags DataAwsConnectContactFlow#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/connect_contact_flow#tags DataAwsConnectContactFlow#tags}.
 
 ---
 
@@ -1074,7 +1131,7 @@ type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/connect_contact_flow#type DataAwsConnectContactFlow#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/connect_contact_flow#type DataAwsConnectContactFlow#type}.
 
 ---
 

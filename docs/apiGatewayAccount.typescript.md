@@ -4,7 +4,7 @@
 
 ### ApiGatewayAccount <a name="ApiGatewayAccount" id="@cdktf/provider-aws.apiGatewayAccount.ApiGatewayAccount"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/api_gateway_account aws_api_gateway_account}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/api_gateway_account aws_api_gateway_account}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.apiGatewayAccount.ApiGatewayAccount.Initializer"></a>
 
@@ -74,7 +74,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.apiGatewayAccount.ApiGatewayAccount.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-aws.apiGatewayAccount.ApiGatewayAccount.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-aws.apiGatewayAccount.ApiGatewayAccount.resetCloudwatchRoleArn">resetCloudwatchRoleArn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apiGatewayAccount.ApiGatewayAccount.resetResetOnDelete">resetResetOnDelete</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.apiGatewayAccount.ApiGatewayAccount.resetRegion">resetRegion</a></code> | *No description.* |
 
 ---
 
@@ -372,10 +372,10 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 public resetCloudwatchRoleArn(): void
 ```
 
-##### `resetResetOnDelete` <a name="resetResetOnDelete" id="@cdktf/provider-aws.apiGatewayAccount.ApiGatewayAccount.resetResetOnDelete"></a>
+##### `resetRegion` <a name="resetRegion" id="@cdktf/provider-aws.apiGatewayAccount.ApiGatewayAccount.resetRegion"></a>
 
 ```typescript
-public resetResetOnDelete(): void
+public resetRegion(): void
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -481,7 +481,7 @@ The construct id used in the generated config for the ApiGatewayAccount to impor
 
 The id of the existing ApiGatewayAccount that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/api_gateway_account#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/api_gateway_account#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -516,9 +516,9 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.apiGatewayAccount.ApiGatewayAccount.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.apiGatewayAccount.ApiGatewayAccount.property.throttleSettings">throttleSettings</a></code> | <code><a href="#@cdktf/provider-aws.apiGatewayAccount.ApiGatewayAccountThrottleSettingsList">ApiGatewayAccountThrottleSettingsList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.apiGatewayAccount.ApiGatewayAccount.property.cloudwatchRoleArnInput">cloudwatchRoleArnInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apiGatewayAccount.ApiGatewayAccount.property.resetOnDeleteInput">resetOnDeleteInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.apiGatewayAccount.ApiGatewayAccount.property.regionInput">regionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.apiGatewayAccount.ApiGatewayAccount.property.cloudwatchRoleArn">cloudwatchRoleArn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apiGatewayAccount.ApiGatewayAccount.property.resetOnDelete">resetOnDelete</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.apiGatewayAccount.ApiGatewayAccount.property.region">region</a></code> | <code>string</code> | *No description.* |
 
 ---
 
@@ -714,13 +714,13 @@ public readonly cloudwatchRoleArnInput: string;
 
 ---
 
-##### `resetOnDeleteInput`<sup>Optional</sup> <a name="resetOnDeleteInput" id="@cdktf/provider-aws.apiGatewayAccount.ApiGatewayAccount.property.resetOnDeleteInput"></a>
+##### `regionInput`<sup>Optional</sup> <a name="regionInput" id="@cdktf/provider-aws.apiGatewayAccount.ApiGatewayAccount.property.regionInput"></a>
 
 ```typescript
-public readonly resetOnDeleteInput: boolean | IResolvable;
+public readonly regionInput: string;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* string
 
 ---
 
@@ -734,13 +734,13 @@ public readonly cloudwatchRoleArn: string;
 
 ---
 
-##### `resetOnDelete`<sup>Required</sup> <a name="resetOnDelete" id="@cdktf/provider-aws.apiGatewayAccount.ApiGatewayAccount.property.resetOnDelete"></a>
+##### `region`<sup>Required</sup> <a name="region" id="@cdktf/provider-aws.apiGatewayAccount.ApiGatewayAccount.property.region"></a>
 
 ```typescript
-public readonly resetOnDelete: boolean | IResolvable;
+public readonly region: string;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* string
 
 ---
 
@@ -785,8 +785,8 @@ const apiGatewayAccountConfig: apiGatewayAccount.ApiGatewayAccountConfig = { ...
 | <code><a href="#@cdktf/provider-aws.apiGatewayAccount.ApiGatewayAccountConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.apiGatewayAccount.ApiGatewayAccountConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.apiGatewayAccount.ApiGatewayAccountConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apiGatewayAccount.ApiGatewayAccountConfig.property.cloudwatchRoleArn">cloudwatchRoleArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/api_gateway_account#cloudwatch_role_arn ApiGatewayAccount#cloudwatch_role_arn}. |
-| <code><a href="#@cdktf/provider-aws.apiGatewayAccount.ApiGatewayAccountConfig.property.resetOnDelete">resetOnDelete</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/api_gateway_account#reset_on_delete ApiGatewayAccount#reset_on_delete}. |
+| <code><a href="#@cdktf/provider-aws.apiGatewayAccount.ApiGatewayAccountConfig.property.cloudwatchRoleArn">cloudwatchRoleArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/api_gateway_account#cloudwatch_role_arn ApiGatewayAccount#cloudwatch_role_arn}. |
+| <code><a href="#@cdktf/provider-aws.apiGatewayAccount.ApiGatewayAccountConfig.property.region">region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
 
@@ -868,19 +868,21 @@ public readonly cloudwatchRoleArn: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/api_gateway_account#cloudwatch_role_arn ApiGatewayAccount#cloudwatch_role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/api_gateway_account#cloudwatch_role_arn ApiGatewayAccount#cloudwatch_role_arn}.
 
 ---
 
-##### `resetOnDelete`<sup>Optional</sup> <a name="resetOnDelete" id="@cdktf/provider-aws.apiGatewayAccount.ApiGatewayAccountConfig.property.resetOnDelete"></a>
+##### `region`<sup>Optional</sup> <a name="region" id="@cdktf/provider-aws.apiGatewayAccount.ApiGatewayAccountConfig.property.region"></a>
 
 ```typescript
-public readonly resetOnDelete: boolean | IResolvable;
+public readonly region: string;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/api_gateway_account#reset_on_delete ApiGatewayAccount#reset_on_delete}.
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/api_gateway_account#region ApiGatewayAccount#region}
 
 ---
 

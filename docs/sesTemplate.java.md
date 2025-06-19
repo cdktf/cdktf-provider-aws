@@ -4,7 +4,7 @@
 
 ### SesTemplate <a name="SesTemplate" id="@cdktf/provider-aws.sesTemplate.SesTemplate"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ses_template aws_ses_template}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ses_template aws_ses_template}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sesTemplate.SesTemplate.Initializer"></a>
 
@@ -26,6 +26,7 @@ SesTemplate.Builder.create(Construct scope, java.lang.String id)
     .name(java.lang.String)
 //  .html(java.lang.String)
 //  .id(java.lang.String)
+//  .region(java.lang.String)
 //  .subject(java.lang.String)
 //  .text(java.lang.String)
     .build();
@@ -42,11 +43,12 @@ SesTemplate.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-aws.sesTemplate.SesTemplate.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.sesTemplate.SesTemplate.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.sesTemplate.SesTemplate.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.sesTemplate.SesTemplate.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ses_template#name SesTemplate#name}. |
-| <code><a href="#@cdktf/provider-aws.sesTemplate.SesTemplate.Initializer.parameter.html">html</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ses_template#html SesTemplate#html}. |
-| <code><a href="#@cdktf/provider-aws.sesTemplate.SesTemplate.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ses_template#id SesTemplate#id}. |
-| <code><a href="#@cdktf/provider-aws.sesTemplate.SesTemplate.Initializer.parameter.subject">subject</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ses_template#subject SesTemplate#subject}. |
-| <code><a href="#@cdktf/provider-aws.sesTemplate.SesTemplate.Initializer.parameter.text">text</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ses_template#text SesTemplate#text}. |
+| <code><a href="#@cdktf/provider-aws.sesTemplate.SesTemplate.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ses_template#name SesTemplate#name}. |
+| <code><a href="#@cdktf/provider-aws.sesTemplate.SesTemplate.Initializer.parameter.html">html</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ses_template#html SesTemplate#html}. |
+| <code><a href="#@cdktf/provider-aws.sesTemplate.SesTemplate.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ses_template#id SesTemplate#id}. |
+| <code><a href="#@cdktf/provider-aws.sesTemplate.SesTemplate.Initializer.parameter.region">region</a></code> | <code>java.lang.String</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
+| <code><a href="#@cdktf/provider-aws.sesTemplate.SesTemplate.Initializer.parameter.subject">subject</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ses_template#subject SesTemplate#subject}. |
+| <code><a href="#@cdktf/provider-aws.sesTemplate.SesTemplate.Initializer.parameter.text">text</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ses_template#text SesTemplate#text}. |
 
 ---
 
@@ -114,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ses_template#name SesTemplate#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ses_template#name SesTemplate#name}.
 
 ---
 
@@ -122,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ses_template#html SesTemplate#html}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ses_template#html SesTemplate#html}.
 
 ---
 
@@ -130,10 +132,20 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ses_template#id SesTemplate#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ses_template#id SesTemplate#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdktf/provider-aws.sesTemplate.SesTemplate.Initializer.parameter.region"></a>
+
+- *Type:* java.lang.String
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ses_template#region SesTemplate#region}
 
 ---
 
@@ -141,7 +153,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ses_template#subject SesTemplate#subject}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ses_template#subject SesTemplate#subject}.
 
 ---
 
@@ -149,7 +161,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ses_template#text SesTemplate#text}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ses_template#text SesTemplate#text}.
 
 ---
 
@@ -182,6 +194,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktf/provider-aws.sesTemplate.SesTemplate.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-aws.sesTemplate.SesTemplate.resetHtml">resetHtml</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.sesTemplate.SesTemplate.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.sesTemplate.SesTemplate.resetRegion">resetRegion</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.sesTemplate.SesTemplate.resetSubject">resetSubject</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.sesTemplate.SesTemplate.resetText">resetText</a></code> | *No description.* |
 
@@ -489,6 +502,12 @@ public void resetHtml()
 public void resetId()
 ```
 
+##### `resetRegion` <a name="resetRegion" id="@cdktf/provider-aws.sesTemplate.SesTemplate.resetRegion"></a>
+
+```java
+public void resetRegion()
+```
+
 ##### `resetSubject` <a name="resetSubject" id="@cdktf/provider-aws.sesTemplate.SesTemplate.resetSubject"></a>
 
 ```java
@@ -604,7 +623,7 @@ The construct id used in the generated config for the SesTemplate to import.
 
 The id of the existing SesTemplate that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ses_template#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ses_template#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -638,11 +657,13 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.sesTemplate.SesTemplate.property.htmlInput">htmlInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.sesTemplate.SesTemplate.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.sesTemplate.SesTemplate.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.sesTemplate.SesTemplate.property.regionInput">regionInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.sesTemplate.SesTemplate.property.subjectInput">subjectInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.sesTemplate.SesTemplate.property.textInput">textInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.sesTemplate.SesTemplate.property.html">html</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.sesTemplate.SesTemplate.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.sesTemplate.SesTemplate.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.sesTemplate.SesTemplate.property.region">region</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.sesTemplate.SesTemplate.property.subject">subject</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.sesTemplate.SesTemplate.property.text">text</a></code> | <code>java.lang.String</code> | *No description.* |
 
@@ -830,6 +851,16 @@ public java.lang.String getNameInput();
 
 ---
 
+##### `regionInput`<sup>Optional</sup> <a name="regionInput" id="@cdktf/provider-aws.sesTemplate.SesTemplate.property.regionInput"></a>
+
+```java
+public java.lang.String getRegionInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `subjectInput`<sup>Optional</sup> <a name="subjectInput" id="@cdktf/provider-aws.sesTemplate.SesTemplate.property.subjectInput"></a>
 
 ```java
@@ -874,6 +905,16 @@ public java.lang.String getId();
 
 ```java
 public java.lang.String getName();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `region`<sup>Required</sup> <a name="region" id="@cdktf/provider-aws.sesTemplate.SesTemplate.property.region"></a>
+
+```java
+public java.lang.String getRegion();
 ```
 
 - *Type:* java.lang.String
@@ -942,6 +983,7 @@ SesTemplateConfig.builder()
     .name(java.lang.String)
 //  .html(java.lang.String)
 //  .id(java.lang.String)
+//  .region(java.lang.String)
 //  .subject(java.lang.String)
 //  .text(java.lang.String)
     .build();
@@ -958,11 +1000,12 @@ SesTemplateConfig.builder()
 | <code><a href="#@cdktf/provider-aws.sesTemplate.SesTemplateConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.sesTemplate.SesTemplateConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.sesTemplate.SesTemplateConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.sesTemplate.SesTemplateConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ses_template#name SesTemplate#name}. |
-| <code><a href="#@cdktf/provider-aws.sesTemplate.SesTemplateConfig.property.html">html</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ses_template#html SesTemplate#html}. |
-| <code><a href="#@cdktf/provider-aws.sesTemplate.SesTemplateConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ses_template#id SesTemplate#id}. |
-| <code><a href="#@cdktf/provider-aws.sesTemplate.SesTemplateConfig.property.subject">subject</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ses_template#subject SesTemplate#subject}. |
-| <code><a href="#@cdktf/provider-aws.sesTemplate.SesTemplateConfig.property.text">text</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ses_template#text SesTemplate#text}. |
+| <code><a href="#@cdktf/provider-aws.sesTemplate.SesTemplateConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ses_template#name SesTemplate#name}. |
+| <code><a href="#@cdktf/provider-aws.sesTemplate.SesTemplateConfig.property.html">html</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ses_template#html SesTemplate#html}. |
+| <code><a href="#@cdktf/provider-aws.sesTemplate.SesTemplateConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ses_template#id SesTemplate#id}. |
+| <code><a href="#@cdktf/provider-aws.sesTemplate.SesTemplateConfig.property.region">region</a></code> | <code>java.lang.String</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
+| <code><a href="#@cdktf/provider-aws.sesTemplate.SesTemplateConfig.property.subject">subject</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ses_template#subject SesTemplate#subject}. |
+| <code><a href="#@cdktf/provider-aws.sesTemplate.SesTemplateConfig.property.text">text</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ses_template#text SesTemplate#text}. |
 
 ---
 
@@ -1044,7 +1087,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ses_template#name SesTemplate#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ses_template#name SesTemplate#name}.
 
 ---
 
@@ -1056,7 +1099,7 @@ public java.lang.String getHtml();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ses_template#html SesTemplate#html}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ses_template#html SesTemplate#html}.
 
 ---
 
@@ -1068,10 +1111,24 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ses_template#id SesTemplate#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ses_template#id SesTemplate#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdktf/provider-aws.sesTemplate.SesTemplateConfig.property.region"></a>
+
+```java
+public java.lang.String getRegion();
+```
+
+- *Type:* java.lang.String
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ses_template#region SesTemplate#region}
 
 ---
 
@@ -1083,7 +1140,7 @@ public java.lang.String getSubject();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ses_template#subject SesTemplate#subject}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ses_template#subject SesTemplate#subject}.
 
 ---
 
@@ -1095,7 +1152,7 @@ public java.lang.String getText();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ses_template#text SesTemplate#text}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ses_template#text SesTemplate#text}.
 
 ---
 

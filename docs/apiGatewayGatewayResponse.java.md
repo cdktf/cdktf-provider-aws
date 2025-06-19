@@ -4,7 +4,7 @@
 
 ### ApiGatewayGatewayResponse <a name="ApiGatewayGatewayResponse" id="@cdktf/provider-aws.apiGatewayGatewayResponse.ApiGatewayGatewayResponse"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/api_gateway_gateway_response aws_api_gateway_gateway_response}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/api_gateway_gateway_response aws_api_gateway_gateway_response}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.apiGatewayGatewayResponse.ApiGatewayGatewayResponse.Initializer"></a>
 
@@ -26,6 +26,7 @@ ApiGatewayGatewayResponse.Builder.create(Construct scope, java.lang.String id)
     .responseType(java.lang.String)
     .restApiId(java.lang.String)
 //  .id(java.lang.String)
+//  .region(java.lang.String)
 //  .responseParameters(java.util.Map<java.lang.String, java.lang.String>)
 //  .responseTemplates(java.util.Map<java.lang.String, java.lang.String>)
 //  .statusCode(java.lang.String)
@@ -43,12 +44,13 @@ ApiGatewayGatewayResponse.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-aws.apiGatewayGatewayResponse.ApiGatewayGatewayResponse.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.apiGatewayGatewayResponse.ApiGatewayGatewayResponse.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.apiGatewayGatewayResponse.ApiGatewayGatewayResponse.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apiGatewayGatewayResponse.ApiGatewayGatewayResponse.Initializer.parameter.responseType">responseType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/api_gateway_gateway_response#response_type ApiGatewayGatewayResponse#response_type}. |
-| <code><a href="#@cdktf/provider-aws.apiGatewayGatewayResponse.ApiGatewayGatewayResponse.Initializer.parameter.restApiId">restApiId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/api_gateway_gateway_response#rest_api_id ApiGatewayGatewayResponse#rest_api_id}. |
-| <code><a href="#@cdktf/provider-aws.apiGatewayGatewayResponse.ApiGatewayGatewayResponse.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/api_gateway_gateway_response#id ApiGatewayGatewayResponse#id}. |
-| <code><a href="#@cdktf/provider-aws.apiGatewayGatewayResponse.ApiGatewayGatewayResponse.Initializer.parameter.responseParameters">responseParameters</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/api_gateway_gateway_response#response_parameters ApiGatewayGatewayResponse#response_parameters}. |
-| <code><a href="#@cdktf/provider-aws.apiGatewayGatewayResponse.ApiGatewayGatewayResponse.Initializer.parameter.responseTemplates">responseTemplates</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/api_gateway_gateway_response#response_templates ApiGatewayGatewayResponse#response_templates}. |
-| <code><a href="#@cdktf/provider-aws.apiGatewayGatewayResponse.ApiGatewayGatewayResponse.Initializer.parameter.statusCode">statusCode</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/api_gateway_gateway_response#status_code ApiGatewayGatewayResponse#status_code}. |
+| <code><a href="#@cdktf/provider-aws.apiGatewayGatewayResponse.ApiGatewayGatewayResponse.Initializer.parameter.responseType">responseType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/api_gateway_gateway_response#response_type ApiGatewayGatewayResponse#response_type}. |
+| <code><a href="#@cdktf/provider-aws.apiGatewayGatewayResponse.ApiGatewayGatewayResponse.Initializer.parameter.restApiId">restApiId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/api_gateway_gateway_response#rest_api_id ApiGatewayGatewayResponse#rest_api_id}. |
+| <code><a href="#@cdktf/provider-aws.apiGatewayGatewayResponse.ApiGatewayGatewayResponse.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/api_gateway_gateway_response#id ApiGatewayGatewayResponse#id}. |
+| <code><a href="#@cdktf/provider-aws.apiGatewayGatewayResponse.ApiGatewayGatewayResponse.Initializer.parameter.region">region</a></code> | <code>java.lang.String</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
+| <code><a href="#@cdktf/provider-aws.apiGatewayGatewayResponse.ApiGatewayGatewayResponse.Initializer.parameter.responseParameters">responseParameters</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/api_gateway_gateway_response#response_parameters ApiGatewayGatewayResponse#response_parameters}. |
+| <code><a href="#@cdktf/provider-aws.apiGatewayGatewayResponse.ApiGatewayGatewayResponse.Initializer.parameter.responseTemplates">responseTemplates</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/api_gateway_gateway_response#response_templates ApiGatewayGatewayResponse#response_templates}. |
+| <code><a href="#@cdktf/provider-aws.apiGatewayGatewayResponse.ApiGatewayGatewayResponse.Initializer.parameter.statusCode">statusCode</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/api_gateway_gateway_response#status_code ApiGatewayGatewayResponse#status_code}. |
 
 ---
 
@@ -116,7 +118,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/api_gateway_gateway_response#response_type ApiGatewayGatewayResponse#response_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/api_gateway_gateway_response#response_type ApiGatewayGatewayResponse#response_type}.
 
 ---
 
@@ -124,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/api_gateway_gateway_response#rest_api_id ApiGatewayGatewayResponse#rest_api_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/api_gateway_gateway_response#rest_api_id ApiGatewayGatewayResponse#rest_api_id}.
 
 ---
 
@@ -132,10 +134,20 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/api_gateway_gateway_response#id ApiGatewayGatewayResponse#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/api_gateway_gateway_response#id ApiGatewayGatewayResponse#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdktf/provider-aws.apiGatewayGatewayResponse.ApiGatewayGatewayResponse.Initializer.parameter.region"></a>
+
+- *Type:* java.lang.String
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/api_gateway_gateway_response#region ApiGatewayGatewayResponse#region}
 
 ---
 
@@ -143,7 +155,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/api_gateway_gateway_response#response_parameters ApiGatewayGatewayResponse#response_parameters}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/api_gateway_gateway_response#response_parameters ApiGatewayGatewayResponse#response_parameters}.
 
 ---
 
@@ -151,7 +163,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/api_gateway_gateway_response#response_templates ApiGatewayGatewayResponse#response_templates}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/api_gateway_gateway_response#response_templates ApiGatewayGatewayResponse#response_templates}.
 
 ---
 
@@ -159,7 +171,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/api_gateway_gateway_response#status_code ApiGatewayGatewayResponse#status_code}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/api_gateway_gateway_response#status_code ApiGatewayGatewayResponse#status_code}.
 
 ---
 
@@ -191,6 +203,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktf/provider-aws.apiGatewayGatewayResponse.ApiGatewayGatewayResponse.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-aws.apiGatewayGatewayResponse.ApiGatewayGatewayResponse.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-aws.apiGatewayGatewayResponse.ApiGatewayGatewayResponse.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.apiGatewayGatewayResponse.ApiGatewayGatewayResponse.resetRegion">resetRegion</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.apiGatewayGatewayResponse.ApiGatewayGatewayResponse.resetResponseParameters">resetResponseParameters</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.apiGatewayGatewayResponse.ApiGatewayGatewayResponse.resetResponseTemplates">resetResponseTemplates</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.apiGatewayGatewayResponse.ApiGatewayGatewayResponse.resetStatusCode">resetStatusCode</a></code> | *No description.* |
@@ -493,6 +506,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 public void resetId()
 ```
 
+##### `resetRegion` <a name="resetRegion" id="@cdktf/provider-aws.apiGatewayGatewayResponse.ApiGatewayGatewayResponse.resetRegion"></a>
+
+```java
+public void resetRegion()
+```
+
 ##### `resetResponseParameters` <a name="resetResponseParameters" id="@cdktf/provider-aws.apiGatewayGatewayResponse.ApiGatewayGatewayResponse.resetResponseParameters"></a>
 
 ```java
@@ -614,7 +633,7 @@ The construct id used in the generated config for the ApiGatewayGatewayResponse 
 
 The id of the existing ApiGatewayGatewayResponse that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/api_gateway_gateway_response#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/api_gateway_gateway_response#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -645,12 +664,14 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.apiGatewayGatewayResponse.ApiGatewayGatewayResponse.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.apiGatewayGatewayResponse.ApiGatewayGatewayResponse.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.apiGatewayGatewayResponse.ApiGatewayGatewayResponse.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.apiGatewayGatewayResponse.ApiGatewayGatewayResponse.property.regionInput">regionInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.apiGatewayGatewayResponse.ApiGatewayGatewayResponse.property.responseParametersInput">responseParametersInput</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.apiGatewayGatewayResponse.ApiGatewayGatewayResponse.property.responseTemplatesInput">responseTemplatesInput</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.apiGatewayGatewayResponse.ApiGatewayGatewayResponse.property.responseTypeInput">responseTypeInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.apiGatewayGatewayResponse.ApiGatewayGatewayResponse.property.restApiIdInput">restApiIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.apiGatewayGatewayResponse.ApiGatewayGatewayResponse.property.statusCodeInput">statusCodeInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.apiGatewayGatewayResponse.ApiGatewayGatewayResponse.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.apiGatewayGatewayResponse.ApiGatewayGatewayResponse.property.region">region</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.apiGatewayGatewayResponse.ApiGatewayGatewayResponse.property.responseParameters">responseParameters</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.apiGatewayGatewayResponse.ApiGatewayGatewayResponse.property.responseTemplates">responseTemplates</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.apiGatewayGatewayResponse.ApiGatewayGatewayResponse.property.responseType">responseType</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -811,6 +832,16 @@ public java.lang.String getIdInput();
 
 ---
 
+##### `regionInput`<sup>Optional</sup> <a name="regionInput" id="@cdktf/provider-aws.apiGatewayGatewayResponse.ApiGatewayGatewayResponse.property.regionInput"></a>
+
+```java
+public java.lang.String getRegionInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `responseParametersInput`<sup>Optional</sup> <a name="responseParametersInput" id="@cdktf/provider-aws.apiGatewayGatewayResponse.ApiGatewayGatewayResponse.property.responseParametersInput"></a>
 
 ```java
@@ -865,6 +896,16 @@ public java.lang.String getStatusCodeInput();
 
 ```java
 public java.lang.String getId();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `region`<sup>Required</sup> <a name="region" id="@cdktf/provider-aws.apiGatewayGatewayResponse.ApiGatewayGatewayResponse.property.region"></a>
+
+```java
+public java.lang.String getRegion();
 ```
 
 - *Type:* java.lang.String
@@ -963,6 +1004,7 @@ ApiGatewayGatewayResponseConfig.builder()
     .responseType(java.lang.String)
     .restApiId(java.lang.String)
 //  .id(java.lang.String)
+//  .region(java.lang.String)
 //  .responseParameters(java.util.Map<java.lang.String, java.lang.String>)
 //  .responseTemplates(java.util.Map<java.lang.String, java.lang.String>)
 //  .statusCode(java.lang.String)
@@ -980,12 +1022,13 @@ ApiGatewayGatewayResponseConfig.builder()
 | <code><a href="#@cdktf/provider-aws.apiGatewayGatewayResponse.ApiGatewayGatewayResponseConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.apiGatewayGatewayResponse.ApiGatewayGatewayResponseConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.apiGatewayGatewayResponse.ApiGatewayGatewayResponseConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apiGatewayGatewayResponse.ApiGatewayGatewayResponseConfig.property.responseType">responseType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/api_gateway_gateway_response#response_type ApiGatewayGatewayResponse#response_type}. |
-| <code><a href="#@cdktf/provider-aws.apiGatewayGatewayResponse.ApiGatewayGatewayResponseConfig.property.restApiId">restApiId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/api_gateway_gateway_response#rest_api_id ApiGatewayGatewayResponse#rest_api_id}. |
-| <code><a href="#@cdktf/provider-aws.apiGatewayGatewayResponse.ApiGatewayGatewayResponseConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/api_gateway_gateway_response#id ApiGatewayGatewayResponse#id}. |
-| <code><a href="#@cdktf/provider-aws.apiGatewayGatewayResponse.ApiGatewayGatewayResponseConfig.property.responseParameters">responseParameters</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/api_gateway_gateway_response#response_parameters ApiGatewayGatewayResponse#response_parameters}. |
-| <code><a href="#@cdktf/provider-aws.apiGatewayGatewayResponse.ApiGatewayGatewayResponseConfig.property.responseTemplates">responseTemplates</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/api_gateway_gateway_response#response_templates ApiGatewayGatewayResponse#response_templates}. |
-| <code><a href="#@cdktf/provider-aws.apiGatewayGatewayResponse.ApiGatewayGatewayResponseConfig.property.statusCode">statusCode</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/api_gateway_gateway_response#status_code ApiGatewayGatewayResponse#status_code}. |
+| <code><a href="#@cdktf/provider-aws.apiGatewayGatewayResponse.ApiGatewayGatewayResponseConfig.property.responseType">responseType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/api_gateway_gateway_response#response_type ApiGatewayGatewayResponse#response_type}. |
+| <code><a href="#@cdktf/provider-aws.apiGatewayGatewayResponse.ApiGatewayGatewayResponseConfig.property.restApiId">restApiId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/api_gateway_gateway_response#rest_api_id ApiGatewayGatewayResponse#rest_api_id}. |
+| <code><a href="#@cdktf/provider-aws.apiGatewayGatewayResponse.ApiGatewayGatewayResponseConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/api_gateway_gateway_response#id ApiGatewayGatewayResponse#id}. |
+| <code><a href="#@cdktf/provider-aws.apiGatewayGatewayResponse.ApiGatewayGatewayResponseConfig.property.region">region</a></code> | <code>java.lang.String</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
+| <code><a href="#@cdktf/provider-aws.apiGatewayGatewayResponse.ApiGatewayGatewayResponseConfig.property.responseParameters">responseParameters</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/api_gateway_gateway_response#response_parameters ApiGatewayGatewayResponse#response_parameters}. |
+| <code><a href="#@cdktf/provider-aws.apiGatewayGatewayResponse.ApiGatewayGatewayResponseConfig.property.responseTemplates">responseTemplates</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/api_gateway_gateway_response#response_templates ApiGatewayGatewayResponse#response_templates}. |
+| <code><a href="#@cdktf/provider-aws.apiGatewayGatewayResponse.ApiGatewayGatewayResponseConfig.property.statusCode">statusCode</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/api_gateway_gateway_response#status_code ApiGatewayGatewayResponse#status_code}. |
 
 ---
 
@@ -1067,7 +1110,7 @@ public java.lang.String getResponseType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/api_gateway_gateway_response#response_type ApiGatewayGatewayResponse#response_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/api_gateway_gateway_response#response_type ApiGatewayGatewayResponse#response_type}.
 
 ---
 
@@ -1079,7 +1122,7 @@ public java.lang.String getRestApiId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/api_gateway_gateway_response#rest_api_id ApiGatewayGatewayResponse#rest_api_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/api_gateway_gateway_response#rest_api_id ApiGatewayGatewayResponse#rest_api_id}.
 
 ---
 
@@ -1091,10 +1134,24 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/api_gateway_gateway_response#id ApiGatewayGatewayResponse#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/api_gateway_gateway_response#id ApiGatewayGatewayResponse#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdktf/provider-aws.apiGatewayGatewayResponse.ApiGatewayGatewayResponseConfig.property.region"></a>
+
+```java
+public java.lang.String getRegion();
+```
+
+- *Type:* java.lang.String
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/api_gateway_gateway_response#region ApiGatewayGatewayResponse#region}
 
 ---
 
@@ -1106,7 +1163,7 @@ public java.util.Map<java.lang.String, java.lang.String> getResponseParameters()
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/api_gateway_gateway_response#response_parameters ApiGatewayGatewayResponse#response_parameters}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/api_gateway_gateway_response#response_parameters ApiGatewayGatewayResponse#response_parameters}.
 
 ---
 
@@ -1118,7 +1175,7 @@ public java.util.Map<java.lang.String, java.lang.String> getResponseTemplates();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/api_gateway_gateway_response#response_templates ApiGatewayGatewayResponse#response_templates}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/api_gateway_gateway_response#response_templates ApiGatewayGatewayResponse#response_templates}.
 
 ---
 
@@ -1130,7 +1187,7 @@ public java.lang.String getStatusCode();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/api_gateway_gateway_response#status_code ApiGatewayGatewayResponse#status_code}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/api_gateway_gateway_response#status_code ApiGatewayGatewayResponse#status_code}.
 
 ---
 

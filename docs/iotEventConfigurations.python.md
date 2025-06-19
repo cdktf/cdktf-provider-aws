@@ -4,7 +4,7 @@
 
 ### IotEventConfigurations <a name="IotEventConfigurations" id="@cdktf/provider-aws.iotEventConfigurations.IotEventConfigurations"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/iot_event_configurations aws_iot_event_configurations}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/iot_event_configurations aws_iot_event_configurations}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iotEventConfigurations.IotEventConfigurations.Initializer"></a>
 
@@ -22,7 +22,8 @@ iotEventConfigurations.IotEventConfigurations(
   provider: TerraformProvider = None,
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
   event_configurations: typing.Mapping[typing.Union[bool, IResolvable]],
-  id: str = None
+  id: str = None,
+  region: str = None
 )
 ```
 
@@ -37,8 +38,9 @@ iotEventConfigurations.IotEventConfigurations(
 | <code><a href="#@cdktf/provider-aws.iotEventConfigurations.IotEventConfigurations.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotEventConfigurations.IotEventConfigurations.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotEventConfigurations.IotEventConfigurations.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotEventConfigurations.IotEventConfigurations.Initializer.parameter.eventConfigurations">event_configurations</a></code> | <code>typing.Mapping[typing.Union[bool, cdktf.IResolvable]]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/iot_event_configurations#event_configurations IotEventConfigurations#event_configurations}. |
-| <code><a href="#@cdktf/provider-aws.iotEventConfigurations.IotEventConfigurations.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/iot_event_configurations#id IotEventConfigurations#id}. |
+| <code><a href="#@cdktf/provider-aws.iotEventConfigurations.IotEventConfigurations.Initializer.parameter.eventConfigurations">event_configurations</a></code> | <code>typing.Mapping[typing.Union[bool, cdktf.IResolvable]]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/iot_event_configurations#event_configurations IotEventConfigurations#event_configurations}. |
+| <code><a href="#@cdktf/provider-aws.iotEventConfigurations.IotEventConfigurations.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/iot_event_configurations#id IotEventConfigurations#id}. |
+| <code><a href="#@cdktf/provider-aws.iotEventConfigurations.IotEventConfigurations.Initializer.parameter.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
 
@@ -106,7 +108,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* typing.Mapping[typing.Union[bool, cdktf.IResolvable]]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/iot_event_configurations#event_configurations IotEventConfigurations#event_configurations}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/iot_event_configurations#event_configurations IotEventConfigurations#event_configurations}.
 
 ---
 
@@ -114,10 +116,20 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/iot_event_configurations#id IotEventConfigurations#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/iot_event_configurations#id IotEventConfigurations#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdktf/provider-aws.iotEventConfigurations.IotEventConfigurations.Initializer.parameter.region"></a>
+
+- *Type:* str
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/iot_event_configurations#region IotEventConfigurations#region}
 
 ---
 
@@ -149,6 +161,7 @@ If you experience problems setting this value it might not be settable. Please t
 | <code><a href="#@cdktf/provider-aws.iotEventConfigurations.IotEventConfigurations.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-aws.iotEventConfigurations.IotEventConfigurations.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-aws.iotEventConfigurations.IotEventConfigurations.resetId">reset_id</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotEventConfigurations.IotEventConfigurations.resetRegion">reset_region</a></code> | *No description.* |
 
 ---
 
@@ -483,6 +496,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 def reset_id() -> None
 ```
 
+##### `reset_region` <a name="reset_region" id="@cdktf/provider-aws.iotEventConfigurations.IotEventConfigurations.resetRegion"></a>
+
+```python
+def reset_region() -> None
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -597,7 +616,7 @@ The construct id used in the generated config for the IotEventConfigurations to 
 
 The id of the existing IotEventConfigurations that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/iot_event_configurations#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/iot_event_configurations#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -629,8 +648,10 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.iotEventConfigurations.IotEventConfigurations.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotEventConfigurations.IotEventConfigurations.property.eventConfigurationsInput">event_configurations_input</a></code> | <code>typing.Mapping[typing.Union[bool, cdktf.IResolvable]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotEventConfigurations.IotEventConfigurations.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotEventConfigurations.IotEventConfigurations.property.regionInput">region_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotEventConfigurations.IotEventConfigurations.property.eventConfigurations">event_configurations</a></code> | <code>typing.Mapping[typing.Union[bool, cdktf.IResolvable]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotEventConfigurations.IotEventConfigurations.property.id">id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotEventConfigurations.IotEventConfigurations.property.region">region</a></code> | <code>str</code> | *No description.* |
 
 ---
 
@@ -796,6 +817,16 @@ id_input: str
 
 ---
 
+##### `region_input`<sup>Optional</sup> <a name="region_input" id="@cdktf/provider-aws.iotEventConfigurations.IotEventConfigurations.property.regionInput"></a>
+
+```python
+region_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `event_configurations`<sup>Required</sup> <a name="event_configurations" id="@cdktf/provider-aws.iotEventConfigurations.IotEventConfigurations.property.eventConfigurations"></a>
 
 ```python
@@ -810,6 +841,16 @@ event_configurations: typing.Mapping[typing.Union[bool, IResolvable]]
 
 ```python
 id: str
+```
+
+- *Type:* str
+
+---
+
+##### `region`<sup>Required</sup> <a name="region" id="@cdktf/provider-aws.iotEventConfigurations.IotEventConfigurations.property.region"></a>
+
+```python
+region: str
 ```
 
 - *Type:* str
@@ -852,7 +893,8 @@ iotEventConfigurations.IotEventConfigurationsConfig(
   provider: TerraformProvider = None,
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
   event_configurations: typing.Mapping[typing.Union[bool, IResolvable]],
-  id: str = None
+  id: str = None,
+  region: str = None
 )
 ```
 
@@ -867,8 +909,9 @@ iotEventConfigurations.IotEventConfigurationsConfig(
 | <code><a href="#@cdktf/provider-aws.iotEventConfigurations.IotEventConfigurationsConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotEventConfigurations.IotEventConfigurationsConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotEventConfigurations.IotEventConfigurationsConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotEventConfigurations.IotEventConfigurationsConfig.property.eventConfigurations">event_configurations</a></code> | <code>typing.Mapping[typing.Union[bool, cdktf.IResolvable]]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/iot_event_configurations#event_configurations IotEventConfigurations#event_configurations}. |
-| <code><a href="#@cdktf/provider-aws.iotEventConfigurations.IotEventConfigurationsConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/iot_event_configurations#id IotEventConfigurations#id}. |
+| <code><a href="#@cdktf/provider-aws.iotEventConfigurations.IotEventConfigurationsConfig.property.eventConfigurations">event_configurations</a></code> | <code>typing.Mapping[typing.Union[bool, cdktf.IResolvable]]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/iot_event_configurations#event_configurations IotEventConfigurations#event_configurations}. |
+| <code><a href="#@cdktf/provider-aws.iotEventConfigurations.IotEventConfigurationsConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/iot_event_configurations#id IotEventConfigurations#id}. |
+| <code><a href="#@cdktf/provider-aws.iotEventConfigurations.IotEventConfigurationsConfig.property.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
 
@@ -950,7 +993,7 @@ event_configurations: typing.Mapping[typing.Union[bool, IResolvable]]
 
 - *Type:* typing.Mapping[typing.Union[bool, cdktf.IResolvable]]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/iot_event_configurations#event_configurations IotEventConfigurations#event_configurations}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/iot_event_configurations#event_configurations IotEventConfigurations#event_configurations}.
 
 ---
 
@@ -962,10 +1005,24 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/iot_event_configurations#id IotEventConfigurations#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/iot_event_configurations#id IotEventConfigurations#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdktf/provider-aws.iotEventConfigurations.IotEventConfigurationsConfig.property.region"></a>
+
+```python
+region: str
+```
+
+- *Type:* str
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/iot_event_configurations#region IotEventConfigurations#region}
 
 ---
 

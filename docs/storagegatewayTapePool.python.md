@@ -4,7 +4,7 @@
 
 ### StoragegatewayTapePool <a name="StoragegatewayTapePool" id="@cdktf/provider-aws.storagegatewayTapePool.StoragegatewayTapePool"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/storagegateway_tape_pool aws_storagegateway_tape_pool}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/storagegateway_tape_pool aws_storagegateway_tape_pool}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.storagegatewayTapePool.StoragegatewayTapePool.Initializer"></a>
 
@@ -24,6 +24,7 @@ storagegatewayTapePool.StoragegatewayTapePool(
   pool_name: str,
   storage_class: str,
   id: str = None,
+  region: str = None,
   retention_lock_time_in_days: typing.Union[int, float] = None,
   retention_lock_type: str = None,
   tags: typing.Mapping[str] = None,
@@ -42,13 +43,14 @@ storagegatewayTapePool.StoragegatewayTapePool(
 | <code><a href="#@cdktf/provider-aws.storagegatewayTapePool.StoragegatewayTapePool.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.storagegatewayTapePool.StoragegatewayTapePool.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.storagegatewayTapePool.StoragegatewayTapePool.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.storagegatewayTapePool.StoragegatewayTapePool.Initializer.parameter.poolName">pool_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/storagegateway_tape_pool#pool_name StoragegatewayTapePool#pool_name}. |
-| <code><a href="#@cdktf/provider-aws.storagegatewayTapePool.StoragegatewayTapePool.Initializer.parameter.storageClass">storage_class</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/storagegateway_tape_pool#storage_class StoragegatewayTapePool#storage_class}. |
-| <code><a href="#@cdktf/provider-aws.storagegatewayTapePool.StoragegatewayTapePool.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/storagegateway_tape_pool#id StoragegatewayTapePool#id}. |
-| <code><a href="#@cdktf/provider-aws.storagegatewayTapePool.StoragegatewayTapePool.Initializer.parameter.retentionLockTimeInDays">retention_lock_time_in_days</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/storagegateway_tape_pool#retention_lock_time_in_days StoragegatewayTapePool#retention_lock_time_in_days}. |
-| <code><a href="#@cdktf/provider-aws.storagegatewayTapePool.StoragegatewayTapePool.Initializer.parameter.retentionLockType">retention_lock_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/storagegateway_tape_pool#retention_lock_type StoragegatewayTapePool#retention_lock_type}. |
-| <code><a href="#@cdktf/provider-aws.storagegatewayTapePool.StoragegatewayTapePool.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/storagegateway_tape_pool#tags StoragegatewayTapePool#tags}. |
-| <code><a href="#@cdktf/provider-aws.storagegatewayTapePool.StoragegatewayTapePool.Initializer.parameter.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/storagegateway_tape_pool#tags_all StoragegatewayTapePool#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.storagegatewayTapePool.StoragegatewayTapePool.Initializer.parameter.poolName">pool_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/storagegateway_tape_pool#pool_name StoragegatewayTapePool#pool_name}. |
+| <code><a href="#@cdktf/provider-aws.storagegatewayTapePool.StoragegatewayTapePool.Initializer.parameter.storageClass">storage_class</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/storagegateway_tape_pool#storage_class StoragegatewayTapePool#storage_class}. |
+| <code><a href="#@cdktf/provider-aws.storagegatewayTapePool.StoragegatewayTapePool.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/storagegateway_tape_pool#id StoragegatewayTapePool#id}. |
+| <code><a href="#@cdktf/provider-aws.storagegatewayTapePool.StoragegatewayTapePool.Initializer.parameter.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
+| <code><a href="#@cdktf/provider-aws.storagegatewayTapePool.StoragegatewayTapePool.Initializer.parameter.retentionLockTimeInDays">retention_lock_time_in_days</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/storagegateway_tape_pool#retention_lock_time_in_days StoragegatewayTapePool#retention_lock_time_in_days}. |
+| <code><a href="#@cdktf/provider-aws.storagegatewayTapePool.StoragegatewayTapePool.Initializer.parameter.retentionLockType">retention_lock_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/storagegateway_tape_pool#retention_lock_type StoragegatewayTapePool#retention_lock_type}. |
+| <code><a href="#@cdktf/provider-aws.storagegatewayTapePool.StoragegatewayTapePool.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/storagegateway_tape_pool#tags StoragegatewayTapePool#tags}. |
+| <code><a href="#@cdktf/provider-aws.storagegatewayTapePool.StoragegatewayTapePool.Initializer.parameter.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/storagegateway_tape_pool#tags_all StoragegatewayTapePool#tags_all}. |
 
 ---
 
@@ -116,7 +118,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/storagegateway_tape_pool#pool_name StoragegatewayTapePool#pool_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/storagegateway_tape_pool#pool_name StoragegatewayTapePool#pool_name}.
 
 ---
 
@@ -124,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/storagegateway_tape_pool#storage_class StoragegatewayTapePool#storage_class}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/storagegateway_tape_pool#storage_class StoragegatewayTapePool#storage_class}.
 
 ---
 
@@ -132,10 +134,20 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/storagegateway_tape_pool#id StoragegatewayTapePool#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/storagegateway_tape_pool#id StoragegatewayTapePool#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdktf/provider-aws.storagegatewayTapePool.StoragegatewayTapePool.Initializer.parameter.region"></a>
+
+- *Type:* str
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/storagegateway_tape_pool#region StoragegatewayTapePool#region}
 
 ---
 
@@ -143,7 +155,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/storagegateway_tape_pool#retention_lock_time_in_days StoragegatewayTapePool#retention_lock_time_in_days}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/storagegateway_tape_pool#retention_lock_time_in_days StoragegatewayTapePool#retention_lock_time_in_days}.
 
 ---
 
@@ -151,7 +163,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/storagegateway_tape_pool#retention_lock_type StoragegatewayTapePool#retention_lock_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/storagegateway_tape_pool#retention_lock_type StoragegatewayTapePool#retention_lock_type}.
 
 ---
 
@@ -159,7 +171,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/storagegateway_tape_pool#tags StoragegatewayTapePool#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/storagegateway_tape_pool#tags StoragegatewayTapePool#tags}.
 
 ---
 
@@ -167,7 +179,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/storagegateway_tape_pool#tags_all StoragegatewayTapePool#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/storagegateway_tape_pool#tags_all StoragegatewayTapePool#tags_all}.
 
 ---
 
@@ -199,6 +211,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktf/provider-aws.storagegatewayTapePool.StoragegatewayTapePool.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-aws.storagegatewayTapePool.StoragegatewayTapePool.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-aws.storagegatewayTapePool.StoragegatewayTapePool.resetId">reset_id</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.storagegatewayTapePool.StoragegatewayTapePool.resetRegion">reset_region</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.storagegatewayTapePool.StoragegatewayTapePool.resetRetentionLockTimeInDays">reset_retention_lock_time_in_days</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.storagegatewayTapePool.StoragegatewayTapePool.resetRetentionLockType">reset_retention_lock_type</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.storagegatewayTapePool.StoragegatewayTapePool.resetTags">reset_tags</a></code> | *No description.* |
@@ -537,6 +550,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 def reset_id() -> None
 ```
 
+##### `reset_region` <a name="reset_region" id="@cdktf/provider-aws.storagegatewayTapePool.StoragegatewayTapePool.resetRegion"></a>
+
+```python
+def reset_region() -> None
+```
+
 ##### `reset_retention_lock_time_in_days` <a name="reset_retention_lock_time_in_days" id="@cdktf/provider-aws.storagegatewayTapePool.StoragegatewayTapePool.resetRetentionLockTimeInDays"></a>
 
 ```python
@@ -675,7 +694,7 @@ The construct id used in the generated config for the StoragegatewayTapePool to 
 
 The id of the existing StoragegatewayTapePool that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/storagegateway_tape_pool#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/storagegateway_tape_pool#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -708,6 +727,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.storagegatewayTapePool.StoragegatewayTapePool.property.arn">arn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.storagegatewayTapePool.StoragegatewayTapePool.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.storagegatewayTapePool.StoragegatewayTapePool.property.poolNameInput">pool_name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.storagegatewayTapePool.StoragegatewayTapePool.property.regionInput">region_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.storagegatewayTapePool.StoragegatewayTapePool.property.retentionLockTimeInDaysInput">retention_lock_time_in_days_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.storagegatewayTapePool.StoragegatewayTapePool.property.retentionLockTypeInput">retention_lock_type_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.storagegatewayTapePool.StoragegatewayTapePool.property.storageClassInput">storage_class_input</a></code> | <code>str</code> | *No description.* |
@@ -715,6 +735,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.storagegatewayTapePool.StoragegatewayTapePool.property.tagsInput">tags_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.storagegatewayTapePool.StoragegatewayTapePool.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.storagegatewayTapePool.StoragegatewayTapePool.property.poolName">pool_name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.storagegatewayTapePool.StoragegatewayTapePool.property.region">region</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.storagegatewayTapePool.StoragegatewayTapePool.property.retentionLockTimeInDays">retention_lock_time_in_days</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.storagegatewayTapePool.StoragegatewayTapePool.property.retentionLockType">retention_lock_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.storagegatewayTapePool.StoragegatewayTapePool.property.storageClass">storage_class</a></code> | <code>str</code> | *No description.* |
@@ -895,6 +916,16 @@ pool_name_input: str
 
 ---
 
+##### `region_input`<sup>Optional</sup> <a name="region_input" id="@cdktf/provider-aws.storagegatewayTapePool.StoragegatewayTapePool.property.regionInput"></a>
+
+```python
+region_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `retention_lock_time_in_days_input`<sup>Optional</sup> <a name="retention_lock_time_in_days_input" id="@cdktf/provider-aws.storagegatewayTapePool.StoragegatewayTapePool.property.retentionLockTimeInDaysInput"></a>
 
 ```python
@@ -959,6 +990,16 @@ id: str
 
 ```python
 pool_name: str
+```
+
+- *Type:* str
+
+---
+
+##### `region`<sup>Required</sup> <a name="region" id="@cdktf/provider-aws.storagegatewayTapePool.StoragegatewayTapePool.property.region"></a>
+
+```python
+region: str
 ```
 
 - *Type:* str
@@ -1053,6 +1094,7 @@ storagegatewayTapePool.StoragegatewayTapePoolConfig(
   pool_name: str,
   storage_class: str,
   id: str = None,
+  region: str = None,
   retention_lock_time_in_days: typing.Union[int, float] = None,
   retention_lock_type: str = None,
   tags: typing.Mapping[str] = None,
@@ -1071,13 +1113,14 @@ storagegatewayTapePool.StoragegatewayTapePoolConfig(
 | <code><a href="#@cdktf/provider-aws.storagegatewayTapePool.StoragegatewayTapePoolConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.storagegatewayTapePool.StoragegatewayTapePoolConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.storagegatewayTapePool.StoragegatewayTapePoolConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.storagegatewayTapePool.StoragegatewayTapePoolConfig.property.poolName">pool_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/storagegateway_tape_pool#pool_name StoragegatewayTapePool#pool_name}. |
-| <code><a href="#@cdktf/provider-aws.storagegatewayTapePool.StoragegatewayTapePoolConfig.property.storageClass">storage_class</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/storagegateway_tape_pool#storage_class StoragegatewayTapePool#storage_class}. |
-| <code><a href="#@cdktf/provider-aws.storagegatewayTapePool.StoragegatewayTapePoolConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/storagegateway_tape_pool#id StoragegatewayTapePool#id}. |
-| <code><a href="#@cdktf/provider-aws.storagegatewayTapePool.StoragegatewayTapePoolConfig.property.retentionLockTimeInDays">retention_lock_time_in_days</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/storagegateway_tape_pool#retention_lock_time_in_days StoragegatewayTapePool#retention_lock_time_in_days}. |
-| <code><a href="#@cdktf/provider-aws.storagegatewayTapePool.StoragegatewayTapePoolConfig.property.retentionLockType">retention_lock_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/storagegateway_tape_pool#retention_lock_type StoragegatewayTapePool#retention_lock_type}. |
-| <code><a href="#@cdktf/provider-aws.storagegatewayTapePool.StoragegatewayTapePoolConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/storagegateway_tape_pool#tags StoragegatewayTapePool#tags}. |
-| <code><a href="#@cdktf/provider-aws.storagegatewayTapePool.StoragegatewayTapePoolConfig.property.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/storagegateway_tape_pool#tags_all StoragegatewayTapePool#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.storagegatewayTapePool.StoragegatewayTapePoolConfig.property.poolName">pool_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/storagegateway_tape_pool#pool_name StoragegatewayTapePool#pool_name}. |
+| <code><a href="#@cdktf/provider-aws.storagegatewayTapePool.StoragegatewayTapePoolConfig.property.storageClass">storage_class</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/storagegateway_tape_pool#storage_class StoragegatewayTapePool#storage_class}. |
+| <code><a href="#@cdktf/provider-aws.storagegatewayTapePool.StoragegatewayTapePoolConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/storagegateway_tape_pool#id StoragegatewayTapePool#id}. |
+| <code><a href="#@cdktf/provider-aws.storagegatewayTapePool.StoragegatewayTapePoolConfig.property.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
+| <code><a href="#@cdktf/provider-aws.storagegatewayTapePool.StoragegatewayTapePoolConfig.property.retentionLockTimeInDays">retention_lock_time_in_days</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/storagegateway_tape_pool#retention_lock_time_in_days StoragegatewayTapePool#retention_lock_time_in_days}. |
+| <code><a href="#@cdktf/provider-aws.storagegatewayTapePool.StoragegatewayTapePoolConfig.property.retentionLockType">retention_lock_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/storagegateway_tape_pool#retention_lock_type StoragegatewayTapePool#retention_lock_type}. |
+| <code><a href="#@cdktf/provider-aws.storagegatewayTapePool.StoragegatewayTapePoolConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/storagegateway_tape_pool#tags StoragegatewayTapePool#tags}. |
+| <code><a href="#@cdktf/provider-aws.storagegatewayTapePool.StoragegatewayTapePoolConfig.property.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/storagegateway_tape_pool#tags_all StoragegatewayTapePool#tags_all}. |
 
 ---
 
@@ -1159,7 +1202,7 @@ pool_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/storagegateway_tape_pool#pool_name StoragegatewayTapePool#pool_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/storagegateway_tape_pool#pool_name StoragegatewayTapePool#pool_name}.
 
 ---
 
@@ -1171,7 +1214,7 @@ storage_class: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/storagegateway_tape_pool#storage_class StoragegatewayTapePool#storage_class}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/storagegateway_tape_pool#storage_class StoragegatewayTapePool#storage_class}.
 
 ---
 
@@ -1183,10 +1226,24 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/storagegateway_tape_pool#id StoragegatewayTapePool#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/storagegateway_tape_pool#id StoragegatewayTapePool#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdktf/provider-aws.storagegatewayTapePool.StoragegatewayTapePoolConfig.property.region"></a>
+
+```python
+region: str
+```
+
+- *Type:* str
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/storagegateway_tape_pool#region StoragegatewayTapePool#region}
 
 ---
 
@@ -1198,7 +1255,7 @@ retention_lock_time_in_days: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/storagegateway_tape_pool#retention_lock_time_in_days StoragegatewayTapePool#retention_lock_time_in_days}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/storagegateway_tape_pool#retention_lock_time_in_days StoragegatewayTapePool#retention_lock_time_in_days}.
 
 ---
 
@@ -1210,7 +1267,7 @@ retention_lock_type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/storagegateway_tape_pool#retention_lock_type StoragegatewayTapePool#retention_lock_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/storagegateway_tape_pool#retention_lock_type StoragegatewayTapePool#retention_lock_type}.
 
 ---
 
@@ -1222,7 +1279,7 @@ tags: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/storagegateway_tape_pool#tags StoragegatewayTapePool#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/storagegateway_tape_pool#tags StoragegatewayTapePool#tags}.
 
 ---
 
@@ -1234,7 +1291,7 @@ tags_all: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/storagegateway_tape_pool#tags_all StoragegatewayTapePool#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/storagegateway_tape_pool#tags_all StoragegatewayTapePool#tags_all}.
 
 ---
 

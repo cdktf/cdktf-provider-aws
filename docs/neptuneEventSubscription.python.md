@@ -4,7 +4,7 @@
 
 ### NeptuneEventSubscription <a name="NeptuneEventSubscription" id="@cdktf/provider-aws.neptuneEventSubscription.NeptuneEventSubscription"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/neptune_event_subscription aws_neptune_event_subscription}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/neptune_event_subscription aws_neptune_event_subscription}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.neptuneEventSubscription.NeptuneEventSubscription.Initializer"></a>
 
@@ -27,6 +27,7 @@ neptuneEventSubscription.NeptuneEventSubscription(
   id: str = None,
   name: str = None,
   name_prefix: str = None,
+  region: str = None,
   source_ids: typing.List[str] = None,
   source_type: str = None,
   tags: typing.Mapping[str] = None,
@@ -46,16 +47,17 @@ neptuneEventSubscription.NeptuneEventSubscription(
 | <code><a href="#@cdktf/provider-aws.neptuneEventSubscription.NeptuneEventSubscription.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.neptuneEventSubscription.NeptuneEventSubscription.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.neptuneEventSubscription.NeptuneEventSubscription.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.neptuneEventSubscription.NeptuneEventSubscription.Initializer.parameter.snsTopicArn">sns_topic_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/neptune_event_subscription#sns_topic_arn NeptuneEventSubscription#sns_topic_arn}. |
-| <code><a href="#@cdktf/provider-aws.neptuneEventSubscription.NeptuneEventSubscription.Initializer.parameter.enabled">enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/neptune_event_subscription#enabled NeptuneEventSubscription#enabled}. |
-| <code><a href="#@cdktf/provider-aws.neptuneEventSubscription.NeptuneEventSubscription.Initializer.parameter.eventCategories">event_categories</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/neptune_event_subscription#event_categories NeptuneEventSubscription#event_categories}. |
-| <code><a href="#@cdktf/provider-aws.neptuneEventSubscription.NeptuneEventSubscription.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/neptune_event_subscription#id NeptuneEventSubscription#id}. |
-| <code><a href="#@cdktf/provider-aws.neptuneEventSubscription.NeptuneEventSubscription.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/neptune_event_subscription#name NeptuneEventSubscription#name}. |
-| <code><a href="#@cdktf/provider-aws.neptuneEventSubscription.NeptuneEventSubscription.Initializer.parameter.namePrefix">name_prefix</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/neptune_event_subscription#name_prefix NeptuneEventSubscription#name_prefix}. |
-| <code><a href="#@cdktf/provider-aws.neptuneEventSubscription.NeptuneEventSubscription.Initializer.parameter.sourceIds">source_ids</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/neptune_event_subscription#source_ids NeptuneEventSubscription#source_ids}. |
-| <code><a href="#@cdktf/provider-aws.neptuneEventSubscription.NeptuneEventSubscription.Initializer.parameter.sourceType">source_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/neptune_event_subscription#source_type NeptuneEventSubscription#source_type}. |
-| <code><a href="#@cdktf/provider-aws.neptuneEventSubscription.NeptuneEventSubscription.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/neptune_event_subscription#tags NeptuneEventSubscription#tags}. |
-| <code><a href="#@cdktf/provider-aws.neptuneEventSubscription.NeptuneEventSubscription.Initializer.parameter.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/neptune_event_subscription#tags_all NeptuneEventSubscription#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.neptuneEventSubscription.NeptuneEventSubscription.Initializer.parameter.snsTopicArn">sns_topic_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/neptune_event_subscription#sns_topic_arn NeptuneEventSubscription#sns_topic_arn}. |
+| <code><a href="#@cdktf/provider-aws.neptuneEventSubscription.NeptuneEventSubscription.Initializer.parameter.enabled">enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/neptune_event_subscription#enabled NeptuneEventSubscription#enabled}. |
+| <code><a href="#@cdktf/provider-aws.neptuneEventSubscription.NeptuneEventSubscription.Initializer.parameter.eventCategories">event_categories</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/neptune_event_subscription#event_categories NeptuneEventSubscription#event_categories}. |
+| <code><a href="#@cdktf/provider-aws.neptuneEventSubscription.NeptuneEventSubscription.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/neptune_event_subscription#id NeptuneEventSubscription#id}. |
+| <code><a href="#@cdktf/provider-aws.neptuneEventSubscription.NeptuneEventSubscription.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/neptune_event_subscription#name NeptuneEventSubscription#name}. |
+| <code><a href="#@cdktf/provider-aws.neptuneEventSubscription.NeptuneEventSubscription.Initializer.parameter.namePrefix">name_prefix</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/neptune_event_subscription#name_prefix NeptuneEventSubscription#name_prefix}. |
+| <code><a href="#@cdktf/provider-aws.neptuneEventSubscription.NeptuneEventSubscription.Initializer.parameter.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
+| <code><a href="#@cdktf/provider-aws.neptuneEventSubscription.NeptuneEventSubscription.Initializer.parameter.sourceIds">source_ids</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/neptune_event_subscription#source_ids NeptuneEventSubscription#source_ids}. |
+| <code><a href="#@cdktf/provider-aws.neptuneEventSubscription.NeptuneEventSubscription.Initializer.parameter.sourceType">source_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/neptune_event_subscription#source_type NeptuneEventSubscription#source_type}. |
+| <code><a href="#@cdktf/provider-aws.neptuneEventSubscription.NeptuneEventSubscription.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/neptune_event_subscription#tags NeptuneEventSubscription#tags}. |
+| <code><a href="#@cdktf/provider-aws.neptuneEventSubscription.NeptuneEventSubscription.Initializer.parameter.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/neptune_event_subscription#tags_all NeptuneEventSubscription#tags_all}. |
 | <code><a href="#@cdktf/provider-aws.neptuneEventSubscription.NeptuneEventSubscription.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-aws.neptuneEventSubscription.NeptuneEventSubscriptionTimeouts">NeptuneEventSubscriptionTimeouts</a></code> | timeouts block. |
 
 ---
@@ -124,7 +126,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/neptune_event_subscription#sns_topic_arn NeptuneEventSubscription#sns_topic_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/neptune_event_subscription#sns_topic_arn NeptuneEventSubscription#sns_topic_arn}.
 
 ---
 
@@ -132,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/neptune_event_subscription#enabled NeptuneEventSubscription#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/neptune_event_subscription#enabled NeptuneEventSubscription#enabled}.
 
 ---
 
@@ -140,7 +142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/neptune_event_subscription#event_categories NeptuneEventSubscription#event_categories}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/neptune_event_subscription#event_categories NeptuneEventSubscription#event_categories}.
 
 ---
 
@@ -148,7 +150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/neptune_event_subscription#id NeptuneEventSubscription#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/neptune_event_subscription#id NeptuneEventSubscription#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -159,7 +161,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/neptune_event_subscription#name NeptuneEventSubscription#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/neptune_event_subscription#name NeptuneEventSubscription#name}.
 
 ---
 
@@ -167,7 +169,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/neptune_event_subscription#name_prefix NeptuneEventSubscription#name_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/neptune_event_subscription#name_prefix NeptuneEventSubscription#name_prefix}.
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdktf/provider-aws.neptuneEventSubscription.NeptuneEventSubscription.Initializer.parameter.region"></a>
+
+- *Type:* str
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/neptune_event_subscription#region NeptuneEventSubscription#region}
 
 ---
 
@@ -175,7 +187,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/neptune_event_subscription#source_ids NeptuneEventSubscription#source_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/neptune_event_subscription#source_ids NeptuneEventSubscription#source_ids}.
 
 ---
 
@@ -183,7 +195,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/neptune_event_subscription#source_type NeptuneEventSubscription#source_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/neptune_event_subscription#source_type NeptuneEventSubscription#source_type}.
 
 ---
 
@@ -191,7 +203,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/neptune_event_subscription#tags NeptuneEventSubscription#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/neptune_event_subscription#tags NeptuneEventSubscription#tags}.
 
 ---
 
@@ -199,7 +211,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/neptune_event_subscription#tags_all NeptuneEventSubscription#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/neptune_event_subscription#tags_all NeptuneEventSubscription#tags_all}.
 
 ---
 
@@ -209,7 +221,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/neptune_event_subscription#timeouts NeptuneEventSubscription#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/neptune_event_subscription#timeouts NeptuneEventSubscription#timeouts}
 
 ---
 
@@ -246,6 +258,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktf/provider-aws.neptuneEventSubscription.NeptuneEventSubscription.resetId">reset_id</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.neptuneEventSubscription.NeptuneEventSubscription.resetName">reset_name</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.neptuneEventSubscription.NeptuneEventSubscription.resetNamePrefix">reset_name_prefix</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.neptuneEventSubscription.NeptuneEventSubscription.resetRegion">reset_region</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.neptuneEventSubscription.NeptuneEventSubscription.resetSourceIds">reset_source_ids</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.neptuneEventSubscription.NeptuneEventSubscription.resetSourceType">reset_source_type</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.neptuneEventSubscription.NeptuneEventSubscription.resetTags">reset_tags</a></code> | *No description.* |
@@ -593,7 +606,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/neptune_event_subscription#create NeptuneEventSubscription#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/neptune_event_subscription#create NeptuneEventSubscription#create}.
 
 ---
 
@@ -601,7 +614,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/neptune_event_subscription#delete NeptuneEventSubscription#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/neptune_event_subscription#delete NeptuneEventSubscription#delete}.
 
 ---
 
@@ -609,7 +622,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/neptune_event_subscription#update NeptuneEventSubscription#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/neptune_event_subscription#update NeptuneEventSubscription#update}.
 
 ---
 
@@ -641,6 +654,12 @@ def reset_name() -> None
 
 ```python
 def reset_name_prefix() -> None
+```
+
+##### `reset_region` <a name="reset_region" id="@cdktf/provider-aws.neptuneEventSubscription.NeptuneEventSubscription.resetRegion"></a>
+
+```python
+def reset_region() -> None
 ```
 
 ##### `reset_source_ids` <a name="reset_source_ids" id="@cdktf/provider-aws.neptuneEventSubscription.NeptuneEventSubscription.resetSourceIds"></a>
@@ -787,7 +806,7 @@ The construct id used in the generated config for the NeptuneEventSubscription t
 
 The id of the existing NeptuneEventSubscription that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/neptune_event_subscription#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/neptune_event_subscription#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -825,6 +844,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.neptuneEventSubscription.NeptuneEventSubscription.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.neptuneEventSubscription.NeptuneEventSubscription.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.neptuneEventSubscription.NeptuneEventSubscription.property.namePrefixInput">name_prefix_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.neptuneEventSubscription.NeptuneEventSubscription.property.regionInput">region_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.neptuneEventSubscription.NeptuneEventSubscription.property.snsTopicArnInput">sns_topic_arn_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.neptuneEventSubscription.NeptuneEventSubscription.property.sourceIdsInput">source_ids_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.neptuneEventSubscription.NeptuneEventSubscription.property.sourceTypeInput">source_type_input</a></code> | <code>str</code> | *No description.* |
@@ -836,6 +856,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.neptuneEventSubscription.NeptuneEventSubscription.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.neptuneEventSubscription.NeptuneEventSubscription.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.neptuneEventSubscription.NeptuneEventSubscription.property.namePrefix">name_prefix</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.neptuneEventSubscription.NeptuneEventSubscription.property.region">region</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.neptuneEventSubscription.NeptuneEventSubscription.property.snsTopicArn">sns_topic_arn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.neptuneEventSubscription.NeptuneEventSubscription.property.sourceIds">source_ids</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.neptuneEventSubscription.NeptuneEventSubscription.property.sourceType">source_type</a></code> | <code>str</code> | *No description.* |
@@ -1066,6 +1087,16 @@ name_prefix_input: str
 
 ---
 
+##### `region_input`<sup>Optional</sup> <a name="region_input" id="@cdktf/provider-aws.neptuneEventSubscription.NeptuneEventSubscription.property.regionInput"></a>
+
+```python
+region_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `sns_topic_arn_input`<sup>Optional</sup> <a name="sns_topic_arn_input" id="@cdktf/provider-aws.neptuneEventSubscription.NeptuneEventSubscription.property.snsTopicArnInput"></a>
 
 ```python
@@ -1176,6 +1207,16 @@ name_prefix: str
 
 ---
 
+##### `region`<sup>Required</sup> <a name="region" id="@cdktf/provider-aws.neptuneEventSubscription.NeptuneEventSubscription.property.region"></a>
+
+```python
+region: str
+```
+
+- *Type:* str
+
+---
+
 ##### `sns_topic_arn`<sup>Required</sup> <a name="sns_topic_arn" id="@cdktf/provider-aws.neptuneEventSubscription.NeptuneEventSubscription.property.snsTopicArn"></a>
 
 ```python
@@ -1267,6 +1308,7 @@ neptuneEventSubscription.NeptuneEventSubscriptionConfig(
   id: str = None,
   name: str = None,
   name_prefix: str = None,
+  region: str = None,
   source_ids: typing.List[str] = None,
   source_type: str = None,
   tags: typing.Mapping[str] = None,
@@ -1286,16 +1328,17 @@ neptuneEventSubscription.NeptuneEventSubscriptionConfig(
 | <code><a href="#@cdktf/provider-aws.neptuneEventSubscription.NeptuneEventSubscriptionConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.neptuneEventSubscription.NeptuneEventSubscriptionConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.neptuneEventSubscription.NeptuneEventSubscriptionConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.neptuneEventSubscription.NeptuneEventSubscriptionConfig.property.snsTopicArn">sns_topic_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/neptune_event_subscription#sns_topic_arn NeptuneEventSubscription#sns_topic_arn}. |
-| <code><a href="#@cdktf/provider-aws.neptuneEventSubscription.NeptuneEventSubscriptionConfig.property.enabled">enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/neptune_event_subscription#enabled NeptuneEventSubscription#enabled}. |
-| <code><a href="#@cdktf/provider-aws.neptuneEventSubscription.NeptuneEventSubscriptionConfig.property.eventCategories">event_categories</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/neptune_event_subscription#event_categories NeptuneEventSubscription#event_categories}. |
-| <code><a href="#@cdktf/provider-aws.neptuneEventSubscription.NeptuneEventSubscriptionConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/neptune_event_subscription#id NeptuneEventSubscription#id}. |
-| <code><a href="#@cdktf/provider-aws.neptuneEventSubscription.NeptuneEventSubscriptionConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/neptune_event_subscription#name NeptuneEventSubscription#name}. |
-| <code><a href="#@cdktf/provider-aws.neptuneEventSubscription.NeptuneEventSubscriptionConfig.property.namePrefix">name_prefix</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/neptune_event_subscription#name_prefix NeptuneEventSubscription#name_prefix}. |
-| <code><a href="#@cdktf/provider-aws.neptuneEventSubscription.NeptuneEventSubscriptionConfig.property.sourceIds">source_ids</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/neptune_event_subscription#source_ids NeptuneEventSubscription#source_ids}. |
-| <code><a href="#@cdktf/provider-aws.neptuneEventSubscription.NeptuneEventSubscriptionConfig.property.sourceType">source_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/neptune_event_subscription#source_type NeptuneEventSubscription#source_type}. |
-| <code><a href="#@cdktf/provider-aws.neptuneEventSubscription.NeptuneEventSubscriptionConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/neptune_event_subscription#tags NeptuneEventSubscription#tags}. |
-| <code><a href="#@cdktf/provider-aws.neptuneEventSubscription.NeptuneEventSubscriptionConfig.property.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/neptune_event_subscription#tags_all NeptuneEventSubscription#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.neptuneEventSubscription.NeptuneEventSubscriptionConfig.property.snsTopicArn">sns_topic_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/neptune_event_subscription#sns_topic_arn NeptuneEventSubscription#sns_topic_arn}. |
+| <code><a href="#@cdktf/provider-aws.neptuneEventSubscription.NeptuneEventSubscriptionConfig.property.enabled">enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/neptune_event_subscription#enabled NeptuneEventSubscription#enabled}. |
+| <code><a href="#@cdktf/provider-aws.neptuneEventSubscription.NeptuneEventSubscriptionConfig.property.eventCategories">event_categories</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/neptune_event_subscription#event_categories NeptuneEventSubscription#event_categories}. |
+| <code><a href="#@cdktf/provider-aws.neptuneEventSubscription.NeptuneEventSubscriptionConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/neptune_event_subscription#id NeptuneEventSubscription#id}. |
+| <code><a href="#@cdktf/provider-aws.neptuneEventSubscription.NeptuneEventSubscriptionConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/neptune_event_subscription#name NeptuneEventSubscription#name}. |
+| <code><a href="#@cdktf/provider-aws.neptuneEventSubscription.NeptuneEventSubscriptionConfig.property.namePrefix">name_prefix</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/neptune_event_subscription#name_prefix NeptuneEventSubscription#name_prefix}. |
+| <code><a href="#@cdktf/provider-aws.neptuneEventSubscription.NeptuneEventSubscriptionConfig.property.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
+| <code><a href="#@cdktf/provider-aws.neptuneEventSubscription.NeptuneEventSubscriptionConfig.property.sourceIds">source_ids</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/neptune_event_subscription#source_ids NeptuneEventSubscription#source_ids}. |
+| <code><a href="#@cdktf/provider-aws.neptuneEventSubscription.NeptuneEventSubscriptionConfig.property.sourceType">source_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/neptune_event_subscription#source_type NeptuneEventSubscription#source_type}. |
+| <code><a href="#@cdktf/provider-aws.neptuneEventSubscription.NeptuneEventSubscriptionConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/neptune_event_subscription#tags NeptuneEventSubscription#tags}. |
+| <code><a href="#@cdktf/provider-aws.neptuneEventSubscription.NeptuneEventSubscriptionConfig.property.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/neptune_event_subscription#tags_all NeptuneEventSubscription#tags_all}. |
 | <code><a href="#@cdktf/provider-aws.neptuneEventSubscription.NeptuneEventSubscriptionConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-aws.neptuneEventSubscription.NeptuneEventSubscriptionTimeouts">NeptuneEventSubscriptionTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1378,7 +1421,7 @@ sns_topic_arn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/neptune_event_subscription#sns_topic_arn NeptuneEventSubscription#sns_topic_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/neptune_event_subscription#sns_topic_arn NeptuneEventSubscription#sns_topic_arn}.
 
 ---
 
@@ -1390,7 +1433,7 @@ enabled: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/neptune_event_subscription#enabled NeptuneEventSubscription#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/neptune_event_subscription#enabled NeptuneEventSubscription#enabled}.
 
 ---
 
@@ -1402,7 +1445,7 @@ event_categories: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/neptune_event_subscription#event_categories NeptuneEventSubscription#event_categories}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/neptune_event_subscription#event_categories NeptuneEventSubscription#event_categories}.
 
 ---
 
@@ -1414,7 +1457,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/neptune_event_subscription#id NeptuneEventSubscription#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/neptune_event_subscription#id NeptuneEventSubscription#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1429,7 +1472,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/neptune_event_subscription#name NeptuneEventSubscription#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/neptune_event_subscription#name NeptuneEventSubscription#name}.
 
 ---
 
@@ -1441,7 +1484,21 @@ name_prefix: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/neptune_event_subscription#name_prefix NeptuneEventSubscription#name_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/neptune_event_subscription#name_prefix NeptuneEventSubscription#name_prefix}.
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdktf/provider-aws.neptuneEventSubscription.NeptuneEventSubscriptionConfig.property.region"></a>
+
+```python
+region: str
+```
+
+- *Type:* str
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/neptune_event_subscription#region NeptuneEventSubscription#region}
 
 ---
 
@@ -1453,7 +1510,7 @@ source_ids: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/neptune_event_subscription#source_ids NeptuneEventSubscription#source_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/neptune_event_subscription#source_ids NeptuneEventSubscription#source_ids}.
 
 ---
 
@@ -1465,7 +1522,7 @@ source_type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/neptune_event_subscription#source_type NeptuneEventSubscription#source_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/neptune_event_subscription#source_type NeptuneEventSubscription#source_type}.
 
 ---
 
@@ -1477,7 +1534,7 @@ tags: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/neptune_event_subscription#tags NeptuneEventSubscription#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/neptune_event_subscription#tags NeptuneEventSubscription#tags}.
 
 ---
 
@@ -1489,7 +1546,7 @@ tags_all: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/neptune_event_subscription#tags_all NeptuneEventSubscription#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/neptune_event_subscription#tags_all NeptuneEventSubscription#tags_all}.
 
 ---
 
@@ -1503,7 +1560,7 @@ timeouts: NeptuneEventSubscriptionTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/neptune_event_subscription#timeouts NeptuneEventSubscription#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/neptune_event_subscription#timeouts NeptuneEventSubscription#timeouts}
 
 ---
 
@@ -1525,9 +1582,9 @@ neptuneEventSubscription.NeptuneEventSubscriptionTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.neptuneEventSubscription.NeptuneEventSubscriptionTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/neptune_event_subscription#create NeptuneEventSubscription#create}. |
-| <code><a href="#@cdktf/provider-aws.neptuneEventSubscription.NeptuneEventSubscriptionTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/neptune_event_subscription#delete NeptuneEventSubscription#delete}. |
-| <code><a href="#@cdktf/provider-aws.neptuneEventSubscription.NeptuneEventSubscriptionTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/neptune_event_subscription#update NeptuneEventSubscription#update}. |
+| <code><a href="#@cdktf/provider-aws.neptuneEventSubscription.NeptuneEventSubscriptionTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/neptune_event_subscription#create NeptuneEventSubscription#create}. |
+| <code><a href="#@cdktf/provider-aws.neptuneEventSubscription.NeptuneEventSubscriptionTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/neptune_event_subscription#delete NeptuneEventSubscription#delete}. |
+| <code><a href="#@cdktf/provider-aws.neptuneEventSubscription.NeptuneEventSubscriptionTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/neptune_event_subscription#update NeptuneEventSubscription#update}. |
 
 ---
 
@@ -1539,7 +1596,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/neptune_event_subscription#create NeptuneEventSubscription#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/neptune_event_subscription#create NeptuneEventSubscription#create}.
 
 ---
 
@@ -1551,7 +1608,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/neptune_event_subscription#delete NeptuneEventSubscription#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/neptune_event_subscription#delete NeptuneEventSubscription#delete}.
 
 ---
 
@@ -1563,7 +1620,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/neptune_event_subscription#update NeptuneEventSubscription#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/neptune_event_subscription#update NeptuneEventSubscription#update}.
 
 ---
 

@@ -4,12 +4,12 @@
 
 ### LakeformationLfTag <a name="LakeformationLfTag" id="@cdktf/provider-aws.lakeformationLfTag.LakeformationLfTag"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/lakeformation_lf_tag aws_lakeformation_lf_tag}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/lakeformation_lf_tag aws_lakeformation_lf_tag}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lakeformationLfTag.LakeformationLfTag.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/lakeformationlftag"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/lakeformationlftag"
 
 lakeformationlftag.NewLakeformationLfTag(scope Construct, id *string, config LakeformationLfTagConfig) LakeformationLfTag
 ```
@@ -75,6 +75,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.lakeformationLfTag.LakeformationLfTag.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-aws.lakeformationLfTag.LakeformationLfTag.resetCatalogId">ResetCatalogId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lakeformationLfTag.LakeformationLfTag.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lakeformationLfTag.LakeformationLfTag.resetRegion">ResetRegion</a></code> | *No description.* |
 
 ---
 
@@ -378,6 +379,12 @@ func ResetCatalogId()
 func ResetId()
 ```
 
+##### `ResetRegion` <a name="ResetRegion" id="@cdktf/provider-aws.lakeformationLfTag.LakeformationLfTag.resetRegion"></a>
+
+```go
+func ResetRegion()
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -392,7 +399,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.lakeformationLfTag.LakeformationLfTag.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/lakeformationlftag"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/lakeformationlftag"
 
 lakeformationlftag.LakeformationLfTag_IsConstruct(x interface{}) *bool
 ```
@@ -424,7 +431,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.lakeformationLfTag.LakeformationLfTag.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/lakeformationlftag"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/lakeformationlftag"
 
 lakeformationlftag.LakeformationLfTag_IsTerraformElement(x interface{}) *bool
 ```
@@ -438,7 +445,7 @@ lakeformationlftag.LakeformationLfTag_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.lakeformationLfTag.LakeformationLfTag.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/lakeformationlftag"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/lakeformationlftag"
 
 lakeformationlftag.LakeformationLfTag_IsTerraformResource(x interface{}) *bool
 ```
@@ -452,7 +459,7 @@ lakeformationlftag.LakeformationLfTag_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.lakeformationLfTag.LakeformationLfTag.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/lakeformationlftag"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/lakeformationlftag"
 
 lakeformationlftag.LakeformationLfTag_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -481,7 +488,7 @@ The construct id used in the generated config for the LakeformationLfTag to impo
 
 The id of the existing LakeformationLfTag that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/lakeformation_lf_tag#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/lakeformation_lf_tag#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -514,10 +521,12 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.lakeformationLfTag.LakeformationLfTag.property.catalogIdInput">CatalogIdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lakeformationLfTag.LakeformationLfTag.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lakeformationLfTag.LakeformationLfTag.property.keyInput">KeyInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lakeformationLfTag.LakeformationLfTag.property.regionInput">RegionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lakeformationLfTag.LakeformationLfTag.property.valuesInput">ValuesInput</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lakeformationLfTag.LakeformationLfTag.property.catalogId">CatalogId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lakeformationLfTag.LakeformationLfTag.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lakeformationLfTag.LakeformationLfTag.property.key">Key</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lakeformationLfTag.LakeformationLfTag.property.region">Region</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lakeformationLfTag.LakeformationLfTag.property.values">Values</a></code> | <code>*[]*string</code> | *No description.* |
 
 ---
@@ -694,6 +703,16 @@ func KeyInput() *string
 
 ---
 
+##### `RegionInput`<sup>Optional</sup> <a name="RegionInput" id="@cdktf/provider-aws.lakeformationLfTag.LakeformationLfTag.property.regionInput"></a>
+
+```go
+func RegionInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `ValuesInput`<sup>Optional</sup> <a name="ValuesInput" id="@cdktf/provider-aws.lakeformationLfTag.LakeformationLfTag.property.valuesInput"></a>
 
 ```go
@@ -728,6 +747,16 @@ func Id() *string
 
 ```go
 func Key() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Region`<sup>Required</sup> <a name="Region" id="@cdktf/provider-aws.lakeformationLfTag.LakeformationLfTag.property.region"></a>
+
+```go
+func Region() *string
 ```
 
 - *Type:* *string
@@ -769,7 +798,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lakeformationLfTag.LakeformationLfTagConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/lakeformationlftag"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/lakeformationlftag"
 
 &lakeformationlftag.LakeformationLfTagConfig {
 	Connection: interface{},
@@ -783,6 +812,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/lakeformationlftag"
 	Values: *[]*string,
 	CatalogId: *string,
 	Id: *string,
+	Region: *string,
 }
 ```
 
@@ -797,10 +827,11 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/lakeformationlftag"
 | <code><a href="#@cdktf/provider-aws.lakeformationLfTag.LakeformationLfTagConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lakeformationLfTag.LakeformationLfTagConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lakeformationLfTag.LakeformationLfTagConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lakeformationLfTag.LakeformationLfTagConfig.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/lakeformation_lf_tag#key LakeformationLfTag#key}. |
-| <code><a href="#@cdktf/provider-aws.lakeformationLfTag.LakeformationLfTagConfig.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/lakeformation_lf_tag#values LakeformationLfTag#values}. |
-| <code><a href="#@cdktf/provider-aws.lakeformationLfTag.LakeformationLfTagConfig.property.catalogId">CatalogId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/lakeformation_lf_tag#catalog_id LakeformationLfTag#catalog_id}. |
-| <code><a href="#@cdktf/provider-aws.lakeformationLfTag.LakeformationLfTagConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/lakeformation_lf_tag#id LakeformationLfTag#id}. |
+| <code><a href="#@cdktf/provider-aws.lakeformationLfTag.LakeformationLfTagConfig.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/lakeformation_lf_tag#key LakeformationLfTag#key}. |
+| <code><a href="#@cdktf/provider-aws.lakeformationLfTag.LakeformationLfTagConfig.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/lakeformation_lf_tag#values LakeformationLfTag#values}. |
+| <code><a href="#@cdktf/provider-aws.lakeformationLfTag.LakeformationLfTagConfig.property.catalogId">CatalogId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/lakeformation_lf_tag#catalog_id LakeformationLfTag#catalog_id}. |
+| <code><a href="#@cdktf/provider-aws.lakeformationLfTag.LakeformationLfTagConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/lakeformation_lf_tag#id LakeformationLfTag#id}. |
+| <code><a href="#@cdktf/provider-aws.lakeformationLfTag.LakeformationLfTagConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
 
@@ -882,7 +913,7 @@ Key *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/lakeformation_lf_tag#key LakeformationLfTag#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/lakeformation_lf_tag#key LakeformationLfTag#key}.
 
 ---
 
@@ -894,7 +925,7 @@ Values *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/lakeformation_lf_tag#values LakeformationLfTag#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/lakeformation_lf_tag#values LakeformationLfTag#values}.
 
 ---
 
@@ -906,7 +937,7 @@ CatalogId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/lakeformation_lf_tag#catalog_id LakeformationLfTag#catalog_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/lakeformation_lf_tag#catalog_id LakeformationLfTag#catalog_id}.
 
 ---
 
@@ -918,10 +949,24 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/lakeformation_lf_tag#id LakeformationLfTag#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/lakeformation_lf_tag#id LakeformationLfTag#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `Region`<sup>Optional</sup> <a name="Region" id="@cdktf/provider-aws.lakeformationLfTag.LakeformationLfTagConfig.property.region"></a>
+
+```go
+Region *string
+```
+
+- *Type:* *string
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/lakeformation_lf_tag#region LakeformationLfTag#region}
 
 ---
 

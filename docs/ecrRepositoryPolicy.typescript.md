@@ -4,7 +4,7 @@
 
 ### EcrRepositoryPolicy <a name="EcrRepositoryPolicy" id="@cdktf/provider-aws.ecrRepositoryPolicy.EcrRepositoryPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ecr_repository_policy aws_ecr_repository_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ecr_repository_policy aws_ecr_repository_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ecrRepositoryPolicy.EcrRepositoryPolicy.Initializer"></a>
 
@@ -74,6 +74,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.ecrRepositoryPolicy.EcrRepositoryPolicy.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-aws.ecrRepositoryPolicy.EcrRepositoryPolicy.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-aws.ecrRepositoryPolicy.EcrRepositoryPolicy.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ecrRepositoryPolicy.EcrRepositoryPolicy.resetRegion">resetRegion</a></code> | *No description.* |
 
 ---
 
@@ -371,6 +372,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 public resetId(): void
 ```
 
+##### `resetRegion` <a name="resetRegion" id="@cdktf/provider-aws.ecrRepositoryPolicy.EcrRepositoryPolicy.resetRegion"></a>
+
+```typescript
+public resetRegion(): void
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -474,7 +481,7 @@ The construct id used in the generated config for the EcrRepositoryPolicy to imp
 
 The id of the existing EcrRepositoryPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ecr_repository_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ecr_repository_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -507,9 +514,11 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.ecrRepositoryPolicy.EcrRepositoryPolicy.property.registryId">registryId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecrRepositoryPolicy.EcrRepositoryPolicy.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecrRepositoryPolicy.EcrRepositoryPolicy.property.policyInput">policyInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ecrRepositoryPolicy.EcrRepositoryPolicy.property.regionInput">regionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecrRepositoryPolicy.EcrRepositoryPolicy.property.repositoryInput">repositoryInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecrRepositoryPolicy.EcrRepositoryPolicy.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecrRepositoryPolicy.EcrRepositoryPolicy.property.policy">policy</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ecrRepositoryPolicy.EcrRepositoryPolicy.property.region">region</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecrRepositoryPolicy.EcrRepositoryPolicy.property.repository">repository</a></code> | <code>string</code> | *No description.* |
 
 ---
@@ -686,6 +695,16 @@ public readonly policyInput: string;
 
 ---
 
+##### `regionInput`<sup>Optional</sup> <a name="regionInput" id="@cdktf/provider-aws.ecrRepositoryPolicy.EcrRepositoryPolicy.property.regionInput"></a>
+
+```typescript
+public readonly regionInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `repositoryInput`<sup>Optional</sup> <a name="repositoryInput" id="@cdktf/provider-aws.ecrRepositoryPolicy.EcrRepositoryPolicy.property.repositoryInput"></a>
 
 ```typescript
@@ -710,6 +729,16 @@ public readonly id: string;
 
 ```typescript
 public readonly policy: string;
+```
+
+- *Type:* string
+
+---
+
+##### `region`<sup>Required</sup> <a name="region" id="@cdktf/provider-aws.ecrRepositoryPolicy.EcrRepositoryPolicy.property.region"></a>
+
+```typescript
+public readonly region: string;
 ```
 
 - *Type:* string
@@ -767,9 +796,10 @@ const ecrRepositoryPolicyConfig: ecrRepositoryPolicy.EcrRepositoryPolicyConfig =
 | <code><a href="#@cdktf/provider-aws.ecrRepositoryPolicy.EcrRepositoryPolicyConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecrRepositoryPolicy.EcrRepositoryPolicyConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecrRepositoryPolicy.EcrRepositoryPolicyConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ecrRepositoryPolicy.EcrRepositoryPolicyConfig.property.policy">policy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ecr_repository_policy#policy EcrRepositoryPolicy#policy}. |
-| <code><a href="#@cdktf/provider-aws.ecrRepositoryPolicy.EcrRepositoryPolicyConfig.property.repository">repository</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ecr_repository_policy#repository EcrRepositoryPolicy#repository}. |
-| <code><a href="#@cdktf/provider-aws.ecrRepositoryPolicy.EcrRepositoryPolicyConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ecr_repository_policy#id EcrRepositoryPolicy#id}. |
+| <code><a href="#@cdktf/provider-aws.ecrRepositoryPolicy.EcrRepositoryPolicyConfig.property.policy">policy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ecr_repository_policy#policy EcrRepositoryPolicy#policy}. |
+| <code><a href="#@cdktf/provider-aws.ecrRepositoryPolicy.EcrRepositoryPolicyConfig.property.repository">repository</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ecr_repository_policy#repository EcrRepositoryPolicy#repository}. |
+| <code><a href="#@cdktf/provider-aws.ecrRepositoryPolicy.EcrRepositoryPolicyConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ecr_repository_policy#id EcrRepositoryPolicy#id}. |
+| <code><a href="#@cdktf/provider-aws.ecrRepositoryPolicy.EcrRepositoryPolicyConfig.property.region">region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
 
@@ -851,7 +881,7 @@ public readonly policy: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ecr_repository_policy#policy EcrRepositoryPolicy#policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ecr_repository_policy#policy EcrRepositoryPolicy#policy}.
 
 ---
 
@@ -863,7 +893,7 @@ public readonly repository: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ecr_repository_policy#repository EcrRepositoryPolicy#repository}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ecr_repository_policy#repository EcrRepositoryPolicy#repository}.
 
 ---
 
@@ -875,10 +905,24 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ecr_repository_policy#id EcrRepositoryPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ecr_repository_policy#id EcrRepositoryPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdktf/provider-aws.ecrRepositoryPolicy.EcrRepositoryPolicyConfig.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ecr_repository_policy#region EcrRepositoryPolicy#region}
 
 ---
 

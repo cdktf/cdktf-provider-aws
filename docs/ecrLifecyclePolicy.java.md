@@ -4,7 +4,7 @@
 
 ### EcrLifecyclePolicy <a name="EcrLifecyclePolicy" id="@cdktf/provider-aws.ecrLifecyclePolicy.EcrLifecyclePolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ecr_lifecycle_policy aws_ecr_lifecycle_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ecr_lifecycle_policy aws_ecr_lifecycle_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ecrLifecyclePolicy.EcrLifecyclePolicy.Initializer"></a>
 
@@ -26,6 +26,7 @@ EcrLifecyclePolicy.Builder.create(Construct scope, java.lang.String id)
     .policy(java.lang.String)
     .repository(java.lang.String)
 //  .id(java.lang.String)
+//  .region(java.lang.String)
     .build();
 ```
 
@@ -40,9 +41,10 @@ EcrLifecyclePolicy.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-aws.ecrLifecyclePolicy.EcrLifecyclePolicy.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecrLifecyclePolicy.EcrLifecyclePolicy.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecrLifecyclePolicy.EcrLifecyclePolicy.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ecrLifecyclePolicy.EcrLifecyclePolicy.Initializer.parameter.policy">policy</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ecr_lifecycle_policy#policy EcrLifecyclePolicy#policy}. |
-| <code><a href="#@cdktf/provider-aws.ecrLifecyclePolicy.EcrLifecyclePolicy.Initializer.parameter.repository">repository</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ecr_lifecycle_policy#repository EcrLifecyclePolicy#repository}. |
-| <code><a href="#@cdktf/provider-aws.ecrLifecyclePolicy.EcrLifecyclePolicy.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ecr_lifecycle_policy#id EcrLifecyclePolicy#id}. |
+| <code><a href="#@cdktf/provider-aws.ecrLifecyclePolicy.EcrLifecyclePolicy.Initializer.parameter.policy">policy</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ecr_lifecycle_policy#policy EcrLifecyclePolicy#policy}. |
+| <code><a href="#@cdktf/provider-aws.ecrLifecyclePolicy.EcrLifecyclePolicy.Initializer.parameter.repository">repository</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ecr_lifecycle_policy#repository EcrLifecyclePolicy#repository}. |
+| <code><a href="#@cdktf/provider-aws.ecrLifecyclePolicy.EcrLifecyclePolicy.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ecr_lifecycle_policy#id EcrLifecyclePolicy#id}. |
+| <code><a href="#@cdktf/provider-aws.ecrLifecyclePolicy.EcrLifecyclePolicy.Initializer.parameter.region">region</a></code> | <code>java.lang.String</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
 
@@ -110,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ecr_lifecycle_policy#policy EcrLifecyclePolicy#policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ecr_lifecycle_policy#policy EcrLifecyclePolicy#policy}.
 
 ---
 
@@ -118,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ecr_lifecycle_policy#repository EcrLifecyclePolicy#repository}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ecr_lifecycle_policy#repository EcrLifecyclePolicy#repository}.
 
 ---
 
@@ -126,10 +128,20 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ecr_lifecycle_policy#id EcrLifecyclePolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ecr_lifecycle_policy#id EcrLifecyclePolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdktf/provider-aws.ecrLifecyclePolicy.EcrLifecyclePolicy.Initializer.parameter.region"></a>
+
+- *Type:* java.lang.String
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ecr_lifecycle_policy#region EcrLifecyclePolicy#region}
 
 ---
 
@@ -161,6 +173,7 @@ If you experience problems setting this value it might not be settable. Please t
 | <code><a href="#@cdktf/provider-aws.ecrLifecyclePolicy.EcrLifecyclePolicy.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-aws.ecrLifecyclePolicy.EcrLifecyclePolicy.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-aws.ecrLifecyclePolicy.EcrLifecyclePolicy.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ecrLifecyclePolicy.EcrLifecyclePolicy.resetRegion">resetRegion</a></code> | *No description.* |
 
 ---
 
@@ -460,6 +473,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 public void resetId()
 ```
 
+##### `resetRegion` <a name="resetRegion" id="@cdktf/provider-aws.ecrLifecyclePolicy.EcrLifecyclePolicy.resetRegion"></a>
+
+```java
+public void resetRegion()
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -563,7 +582,7 @@ The construct id used in the generated config for the EcrLifecyclePolicy to impo
 
 The id of the existing EcrLifecyclePolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ecr_lifecycle_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ecr_lifecycle_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -596,9 +615,11 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.ecrLifecyclePolicy.EcrLifecyclePolicy.property.registryId">registryId</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecrLifecyclePolicy.EcrLifecyclePolicy.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecrLifecyclePolicy.EcrLifecyclePolicy.property.policyInput">policyInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ecrLifecyclePolicy.EcrLifecyclePolicy.property.regionInput">regionInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecrLifecyclePolicy.EcrLifecyclePolicy.property.repositoryInput">repositoryInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecrLifecyclePolicy.EcrLifecyclePolicy.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecrLifecyclePolicy.EcrLifecyclePolicy.property.policy">policy</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ecrLifecyclePolicy.EcrLifecyclePolicy.property.region">region</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecrLifecyclePolicy.EcrLifecyclePolicy.property.repository">repository</a></code> | <code>java.lang.String</code> | *No description.* |
 
 ---
@@ -775,6 +796,16 @@ public java.lang.String getPolicyInput();
 
 ---
 
+##### `regionInput`<sup>Optional</sup> <a name="regionInput" id="@cdktf/provider-aws.ecrLifecyclePolicy.EcrLifecyclePolicy.property.regionInput"></a>
+
+```java
+public java.lang.String getRegionInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `repositoryInput`<sup>Optional</sup> <a name="repositoryInput" id="@cdktf/provider-aws.ecrLifecyclePolicy.EcrLifecyclePolicy.property.repositoryInput"></a>
 
 ```java
@@ -799,6 +830,16 @@ public java.lang.String getId();
 
 ```java
 public java.lang.String getPolicy();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `region`<sup>Required</sup> <a name="region" id="@cdktf/provider-aws.ecrLifecyclePolicy.EcrLifecyclePolicy.property.region"></a>
+
+```java
+public java.lang.String getRegion();
 ```
 
 - *Type:* java.lang.String
@@ -857,6 +898,7 @@ EcrLifecyclePolicyConfig.builder()
     .policy(java.lang.String)
     .repository(java.lang.String)
 //  .id(java.lang.String)
+//  .region(java.lang.String)
     .build();
 ```
 
@@ -871,9 +913,10 @@ EcrLifecyclePolicyConfig.builder()
 | <code><a href="#@cdktf/provider-aws.ecrLifecyclePolicy.EcrLifecyclePolicyConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecrLifecyclePolicy.EcrLifecyclePolicyConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecrLifecyclePolicy.EcrLifecyclePolicyConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ecrLifecyclePolicy.EcrLifecyclePolicyConfig.property.policy">policy</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ecr_lifecycle_policy#policy EcrLifecyclePolicy#policy}. |
-| <code><a href="#@cdktf/provider-aws.ecrLifecyclePolicy.EcrLifecyclePolicyConfig.property.repository">repository</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ecr_lifecycle_policy#repository EcrLifecyclePolicy#repository}. |
-| <code><a href="#@cdktf/provider-aws.ecrLifecyclePolicy.EcrLifecyclePolicyConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ecr_lifecycle_policy#id EcrLifecyclePolicy#id}. |
+| <code><a href="#@cdktf/provider-aws.ecrLifecyclePolicy.EcrLifecyclePolicyConfig.property.policy">policy</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ecr_lifecycle_policy#policy EcrLifecyclePolicy#policy}. |
+| <code><a href="#@cdktf/provider-aws.ecrLifecyclePolicy.EcrLifecyclePolicyConfig.property.repository">repository</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ecr_lifecycle_policy#repository EcrLifecyclePolicy#repository}. |
+| <code><a href="#@cdktf/provider-aws.ecrLifecyclePolicy.EcrLifecyclePolicyConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ecr_lifecycle_policy#id EcrLifecyclePolicy#id}. |
+| <code><a href="#@cdktf/provider-aws.ecrLifecyclePolicy.EcrLifecyclePolicyConfig.property.region">region</a></code> | <code>java.lang.String</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
 
@@ -955,7 +998,7 @@ public java.lang.String getPolicy();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ecr_lifecycle_policy#policy EcrLifecyclePolicy#policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ecr_lifecycle_policy#policy EcrLifecyclePolicy#policy}.
 
 ---
 
@@ -967,7 +1010,7 @@ public java.lang.String getRepository();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ecr_lifecycle_policy#repository EcrLifecyclePolicy#repository}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ecr_lifecycle_policy#repository EcrLifecyclePolicy#repository}.
 
 ---
 
@@ -979,10 +1022,24 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ecr_lifecycle_policy#id EcrLifecyclePolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ecr_lifecycle_policy#id EcrLifecyclePolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdktf/provider-aws.ecrLifecyclePolicy.EcrLifecyclePolicyConfig.property.region"></a>
+
+```java
+public java.lang.String getRegion();
+```
+
+- *Type:* java.lang.String
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ecr_lifecycle_policy#region EcrLifecyclePolicy#region}
 
 ---
 

@@ -4,12 +4,12 @@
 
 ### AppsyncResolver <a name="AppsyncResolver" id="@cdktf/provider-aws.appsyncResolver.AppsyncResolver"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appsync_resolver aws_appsync_resolver}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appsync_resolver aws_appsync_resolver}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appsyncResolver.AppsyncResolver.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appsyncresolver"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appsyncresolver"
 
 appsyncresolver.NewAppsyncResolver(scope Construct, id *string, config AppsyncResolverConfig) AppsyncResolver
 ```
@@ -84,6 +84,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.appsyncResolver.AppsyncResolver.resetKind">ResetKind</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appsyncResolver.AppsyncResolver.resetMaxBatchSize">ResetMaxBatchSize</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appsyncResolver.AppsyncResolver.resetPipelineConfig">ResetPipelineConfig</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appsyncResolver.AppsyncResolver.resetRegion">ResetRegion</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appsyncResolver.AppsyncResolver.resetRequestTemplate">ResetRequestTemplate</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appsyncResolver.AppsyncResolver.resetResponseTemplate">ResetResponseTemplate</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appsyncResolver.AppsyncResolver.resetRuntime">ResetRuntime</a></code> | *No description.* |
@@ -469,6 +470,12 @@ func ResetMaxBatchSize()
 func ResetPipelineConfig()
 ```
 
+##### `ResetRegion` <a name="ResetRegion" id="@cdktf/provider-aws.appsyncResolver.AppsyncResolver.resetRegion"></a>
+
+```go
+func ResetRegion()
+```
+
 ##### `ResetRequestTemplate` <a name="ResetRequestTemplate" id="@cdktf/provider-aws.appsyncResolver.AppsyncResolver.resetRequestTemplate"></a>
 
 ```go
@@ -507,7 +514,7 @@ func ResetSyncConfig()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.appsyncResolver.AppsyncResolver.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appsyncresolver"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appsyncresolver"
 
 appsyncresolver.AppsyncResolver_IsConstruct(x interface{}) *bool
 ```
@@ -539,7 +546,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.appsyncResolver.AppsyncResolver.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appsyncresolver"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appsyncresolver"
 
 appsyncresolver.AppsyncResolver_IsTerraformElement(x interface{}) *bool
 ```
@@ -553,7 +560,7 @@ appsyncresolver.AppsyncResolver_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.appsyncResolver.AppsyncResolver.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appsyncresolver"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appsyncresolver"
 
 appsyncresolver.AppsyncResolver_IsTerraformResource(x interface{}) *bool
 ```
@@ -567,7 +574,7 @@ appsyncresolver.AppsyncResolver_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.appsyncResolver.AppsyncResolver.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appsyncresolver"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appsyncresolver"
 
 appsyncresolver.AppsyncResolver_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -596,7 +603,7 @@ The construct id used in the generated config for the AppsyncResolver to import.
 
 The id of the existing AppsyncResolver that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appsync_resolver#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appsync_resolver#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -640,6 +647,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.appsyncResolver.AppsyncResolver.property.kindInput">KindInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appsyncResolver.AppsyncResolver.property.maxBatchSizeInput">MaxBatchSizeInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appsyncResolver.AppsyncResolver.property.pipelineConfigInput">PipelineConfigInput</a></code> | <code><a href="#@cdktf/provider-aws.appsyncResolver.AppsyncResolverPipelineConfig">AppsyncResolverPipelineConfig</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appsyncResolver.AppsyncResolver.property.regionInput">RegionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appsyncResolver.AppsyncResolver.property.requestTemplateInput">RequestTemplateInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appsyncResolver.AppsyncResolver.property.responseTemplateInput">ResponseTemplateInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appsyncResolver.AppsyncResolver.property.runtimeInput">RuntimeInput</a></code> | <code><a href="#@cdktf/provider-aws.appsyncResolver.AppsyncResolverRuntime">AppsyncResolverRuntime</a></code> | *No description.* |
@@ -652,6 +660,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.appsyncResolver.AppsyncResolver.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appsyncResolver.AppsyncResolver.property.kind">Kind</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appsyncResolver.AppsyncResolver.property.maxBatchSize">MaxBatchSize</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appsyncResolver.AppsyncResolver.property.region">Region</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appsyncResolver.AppsyncResolver.property.requestTemplate">RequestTemplate</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appsyncResolver.AppsyncResolver.property.responseTemplate">ResponseTemplate</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appsyncResolver.AppsyncResolver.property.type">Type</a></code> | <code>*string</code> | *No description.* |
@@ -940,6 +949,16 @@ func PipelineConfigInput() AppsyncResolverPipelineConfig
 
 ---
 
+##### `RegionInput`<sup>Optional</sup> <a name="RegionInput" id="@cdktf/provider-aws.appsyncResolver.AppsyncResolver.property.regionInput"></a>
+
+```go
+func RegionInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `RequestTemplateInput`<sup>Optional</sup> <a name="RequestTemplateInput" id="@cdktf/provider-aws.appsyncResolver.AppsyncResolver.property.requestTemplateInput"></a>
 
 ```go
@@ -1060,6 +1079,16 @@ func MaxBatchSize() *f64
 
 ---
 
+##### `Region`<sup>Required</sup> <a name="Region" id="@cdktf/provider-aws.appsyncResolver.AppsyncResolver.property.region"></a>
+
+```go
+func Region() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `RequestTemplate`<sup>Required</sup> <a name="RequestTemplate" id="@cdktf/provider-aws.appsyncResolver.AppsyncResolver.property.requestTemplate"></a>
 
 ```go
@@ -1115,7 +1144,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appsyncResolver.AppsyncResolverCachingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appsyncresolver"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appsyncresolver"
 
 &appsyncresolver.AppsyncResolverCachingConfig {
 	CachingKeys: *[]*string,
@@ -1127,8 +1156,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appsyncresolver"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appsyncResolver.AppsyncResolverCachingConfig.property.cachingKeys">CachingKeys</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appsync_resolver#caching_keys AppsyncResolver#caching_keys}. |
-| <code><a href="#@cdktf/provider-aws.appsyncResolver.AppsyncResolverCachingConfig.property.ttl">Ttl</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appsync_resolver#ttl AppsyncResolver#ttl}. |
+| <code><a href="#@cdktf/provider-aws.appsyncResolver.AppsyncResolverCachingConfig.property.cachingKeys">CachingKeys</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appsync_resolver#caching_keys AppsyncResolver#caching_keys}. |
+| <code><a href="#@cdktf/provider-aws.appsyncResolver.AppsyncResolverCachingConfig.property.ttl">Ttl</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appsync_resolver#ttl AppsyncResolver#ttl}. |
 
 ---
 
@@ -1140,7 +1169,7 @@ CachingKeys *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appsync_resolver#caching_keys AppsyncResolver#caching_keys}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appsync_resolver#caching_keys AppsyncResolver#caching_keys}.
 
 ---
 
@@ -1152,7 +1181,7 @@ Ttl *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appsync_resolver#ttl AppsyncResolver#ttl}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appsync_resolver#ttl AppsyncResolver#ttl}.
 
 ---
 
@@ -1161,7 +1190,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appsyncResolver.AppsyncResolverConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appsyncresolver"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appsyncresolver"
 
 &appsyncresolver.AppsyncResolverConfig {
 	Connection: interface{},
@@ -1174,17 +1203,18 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appsyncresolver"
 	ApiId: *string,
 	Field: *string,
 	Type: *string,
-	CachingConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v20.appsyncResolver.AppsyncResolverCachingConfig,
+	CachingConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v21.appsyncResolver.AppsyncResolverCachingConfig,
 	Code: *string,
 	DataSource: *string,
 	Id: *string,
 	Kind: *string,
 	MaxBatchSize: *f64,
-	PipelineConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v20.appsyncResolver.AppsyncResolverPipelineConfig,
+	PipelineConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v21.appsyncResolver.AppsyncResolverPipelineConfig,
+	Region: *string,
 	RequestTemplate: *string,
 	ResponseTemplate: *string,
-	Runtime: github.com/cdktf/cdktf-provider-aws-go/aws/v20.appsyncResolver.AppsyncResolverRuntime,
-	SyncConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v20.appsyncResolver.AppsyncResolverSyncConfig,
+	Runtime: github.com/cdktf/cdktf-provider-aws-go/aws/v21.appsyncResolver.AppsyncResolverRuntime,
+	SyncConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v21.appsyncResolver.AppsyncResolverSyncConfig,
 }
 ```
 
@@ -1199,18 +1229,19 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appsyncresolver"
 | <code><a href="#@cdktf/provider-aws.appsyncResolver.AppsyncResolverConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appsyncResolver.AppsyncResolverConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appsyncResolver.AppsyncResolverConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appsyncResolver.AppsyncResolverConfig.property.apiId">ApiId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appsync_resolver#api_id AppsyncResolver#api_id}. |
-| <code><a href="#@cdktf/provider-aws.appsyncResolver.AppsyncResolverConfig.property.field">Field</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appsync_resolver#field AppsyncResolver#field}. |
-| <code><a href="#@cdktf/provider-aws.appsyncResolver.AppsyncResolverConfig.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appsync_resolver#type AppsyncResolver#type}. |
+| <code><a href="#@cdktf/provider-aws.appsyncResolver.AppsyncResolverConfig.property.apiId">ApiId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appsync_resolver#api_id AppsyncResolver#api_id}. |
+| <code><a href="#@cdktf/provider-aws.appsyncResolver.AppsyncResolverConfig.property.field">Field</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appsync_resolver#field AppsyncResolver#field}. |
+| <code><a href="#@cdktf/provider-aws.appsyncResolver.AppsyncResolverConfig.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appsync_resolver#type AppsyncResolver#type}. |
 | <code><a href="#@cdktf/provider-aws.appsyncResolver.AppsyncResolverConfig.property.cachingConfig">CachingConfig</a></code> | <code><a href="#@cdktf/provider-aws.appsyncResolver.AppsyncResolverCachingConfig">AppsyncResolverCachingConfig</a></code> | caching_config block. |
-| <code><a href="#@cdktf/provider-aws.appsyncResolver.AppsyncResolverConfig.property.code">Code</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appsync_resolver#code AppsyncResolver#code}. |
-| <code><a href="#@cdktf/provider-aws.appsyncResolver.AppsyncResolverConfig.property.dataSource">DataSource</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appsync_resolver#data_source AppsyncResolver#data_source}. |
-| <code><a href="#@cdktf/provider-aws.appsyncResolver.AppsyncResolverConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appsync_resolver#id AppsyncResolver#id}. |
-| <code><a href="#@cdktf/provider-aws.appsyncResolver.AppsyncResolverConfig.property.kind">Kind</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appsync_resolver#kind AppsyncResolver#kind}. |
-| <code><a href="#@cdktf/provider-aws.appsyncResolver.AppsyncResolverConfig.property.maxBatchSize">MaxBatchSize</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appsync_resolver#max_batch_size AppsyncResolver#max_batch_size}. |
+| <code><a href="#@cdktf/provider-aws.appsyncResolver.AppsyncResolverConfig.property.code">Code</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appsync_resolver#code AppsyncResolver#code}. |
+| <code><a href="#@cdktf/provider-aws.appsyncResolver.AppsyncResolverConfig.property.dataSource">DataSource</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appsync_resolver#data_source AppsyncResolver#data_source}. |
+| <code><a href="#@cdktf/provider-aws.appsyncResolver.AppsyncResolverConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appsync_resolver#id AppsyncResolver#id}. |
+| <code><a href="#@cdktf/provider-aws.appsyncResolver.AppsyncResolverConfig.property.kind">Kind</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appsync_resolver#kind AppsyncResolver#kind}. |
+| <code><a href="#@cdktf/provider-aws.appsyncResolver.AppsyncResolverConfig.property.maxBatchSize">MaxBatchSize</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appsync_resolver#max_batch_size AppsyncResolver#max_batch_size}. |
 | <code><a href="#@cdktf/provider-aws.appsyncResolver.AppsyncResolverConfig.property.pipelineConfig">PipelineConfig</a></code> | <code><a href="#@cdktf/provider-aws.appsyncResolver.AppsyncResolverPipelineConfig">AppsyncResolverPipelineConfig</a></code> | pipeline_config block. |
-| <code><a href="#@cdktf/provider-aws.appsyncResolver.AppsyncResolverConfig.property.requestTemplate">RequestTemplate</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appsync_resolver#request_template AppsyncResolver#request_template}. |
-| <code><a href="#@cdktf/provider-aws.appsyncResolver.AppsyncResolverConfig.property.responseTemplate">ResponseTemplate</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appsync_resolver#response_template AppsyncResolver#response_template}. |
+| <code><a href="#@cdktf/provider-aws.appsyncResolver.AppsyncResolverConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
+| <code><a href="#@cdktf/provider-aws.appsyncResolver.AppsyncResolverConfig.property.requestTemplate">RequestTemplate</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appsync_resolver#request_template AppsyncResolver#request_template}. |
+| <code><a href="#@cdktf/provider-aws.appsyncResolver.AppsyncResolverConfig.property.responseTemplate">ResponseTemplate</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appsync_resolver#response_template AppsyncResolver#response_template}. |
 | <code><a href="#@cdktf/provider-aws.appsyncResolver.AppsyncResolverConfig.property.runtime">Runtime</a></code> | <code><a href="#@cdktf/provider-aws.appsyncResolver.AppsyncResolverRuntime">AppsyncResolverRuntime</a></code> | runtime block. |
 | <code><a href="#@cdktf/provider-aws.appsyncResolver.AppsyncResolverConfig.property.syncConfig">SyncConfig</a></code> | <code><a href="#@cdktf/provider-aws.appsyncResolver.AppsyncResolverSyncConfig">AppsyncResolverSyncConfig</a></code> | sync_config block. |
 
@@ -1294,7 +1325,7 @@ ApiId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appsync_resolver#api_id AppsyncResolver#api_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appsync_resolver#api_id AppsyncResolver#api_id}.
 
 ---
 
@@ -1306,7 +1337,7 @@ Field *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appsync_resolver#field AppsyncResolver#field}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appsync_resolver#field AppsyncResolver#field}.
 
 ---
 
@@ -1318,7 +1349,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appsync_resolver#type AppsyncResolver#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appsync_resolver#type AppsyncResolver#type}.
 
 ---
 
@@ -1332,7 +1363,7 @@ CachingConfig AppsyncResolverCachingConfig
 
 caching_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appsync_resolver#caching_config AppsyncResolver#caching_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appsync_resolver#caching_config AppsyncResolver#caching_config}
 
 ---
 
@@ -1344,7 +1375,7 @@ Code *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appsync_resolver#code AppsyncResolver#code}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appsync_resolver#code AppsyncResolver#code}.
 
 ---
 
@@ -1356,7 +1387,7 @@ DataSource *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appsync_resolver#data_source AppsyncResolver#data_source}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appsync_resolver#data_source AppsyncResolver#data_source}.
 
 ---
 
@@ -1368,7 +1399,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appsync_resolver#id AppsyncResolver#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appsync_resolver#id AppsyncResolver#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1383,7 +1414,7 @@ Kind *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appsync_resolver#kind AppsyncResolver#kind}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appsync_resolver#kind AppsyncResolver#kind}.
 
 ---
 
@@ -1395,7 +1426,7 @@ MaxBatchSize *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appsync_resolver#max_batch_size AppsyncResolver#max_batch_size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appsync_resolver#max_batch_size AppsyncResolver#max_batch_size}.
 
 ---
 
@@ -1409,7 +1440,21 @@ PipelineConfig AppsyncResolverPipelineConfig
 
 pipeline_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appsync_resolver#pipeline_config AppsyncResolver#pipeline_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appsync_resolver#pipeline_config AppsyncResolver#pipeline_config}
+
+---
+
+##### `Region`<sup>Optional</sup> <a name="Region" id="@cdktf/provider-aws.appsyncResolver.AppsyncResolverConfig.property.region"></a>
+
+```go
+Region *string
+```
+
+- *Type:* *string
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appsync_resolver#region AppsyncResolver#region}
 
 ---
 
@@ -1421,7 +1466,7 @@ RequestTemplate *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appsync_resolver#request_template AppsyncResolver#request_template}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appsync_resolver#request_template AppsyncResolver#request_template}.
 
 ---
 
@@ -1433,7 +1478,7 @@ ResponseTemplate *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appsync_resolver#response_template AppsyncResolver#response_template}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appsync_resolver#response_template AppsyncResolver#response_template}.
 
 ---
 
@@ -1447,7 +1492,7 @@ Runtime AppsyncResolverRuntime
 
 runtime block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appsync_resolver#runtime AppsyncResolver#runtime}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appsync_resolver#runtime AppsyncResolver#runtime}
 
 ---
 
@@ -1461,7 +1506,7 @@ SyncConfig AppsyncResolverSyncConfig
 
 sync_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appsync_resolver#sync_config AppsyncResolver#sync_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appsync_resolver#sync_config AppsyncResolver#sync_config}
 
 ---
 
@@ -1470,7 +1515,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appsyncResolver.AppsyncResolverPipelineConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appsyncresolver"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appsyncresolver"
 
 &appsyncresolver.AppsyncResolverPipelineConfig {
 	Functions: *[]*string,
@@ -1481,7 +1526,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appsyncresolver"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appsyncResolver.AppsyncResolverPipelineConfig.property.functions">Functions</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appsync_resolver#functions AppsyncResolver#functions}. |
+| <code><a href="#@cdktf/provider-aws.appsyncResolver.AppsyncResolverPipelineConfig.property.functions">Functions</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appsync_resolver#functions AppsyncResolver#functions}. |
 
 ---
 
@@ -1493,7 +1538,7 @@ Functions *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appsync_resolver#functions AppsyncResolver#functions}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appsync_resolver#functions AppsyncResolver#functions}.
 
 ---
 
@@ -1502,7 +1547,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appsyncResolver.AppsyncResolverRuntime.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appsyncresolver"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appsyncresolver"
 
 &appsyncresolver.AppsyncResolverRuntime {
 	Name: *string,
@@ -1514,8 +1559,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appsyncresolver"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appsyncResolver.AppsyncResolverRuntime.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appsync_resolver#name AppsyncResolver#name}. |
-| <code><a href="#@cdktf/provider-aws.appsyncResolver.AppsyncResolverRuntime.property.runtimeVersion">RuntimeVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appsync_resolver#runtime_version AppsyncResolver#runtime_version}. |
+| <code><a href="#@cdktf/provider-aws.appsyncResolver.AppsyncResolverRuntime.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appsync_resolver#name AppsyncResolver#name}. |
+| <code><a href="#@cdktf/provider-aws.appsyncResolver.AppsyncResolverRuntime.property.runtimeVersion">RuntimeVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appsync_resolver#runtime_version AppsyncResolver#runtime_version}. |
 
 ---
 
@@ -1527,7 +1572,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appsync_resolver#name AppsyncResolver#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appsync_resolver#name AppsyncResolver#name}.
 
 ---
 
@@ -1539,7 +1584,7 @@ RuntimeVersion *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appsync_resolver#runtime_version AppsyncResolver#runtime_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appsync_resolver#runtime_version AppsyncResolver#runtime_version}.
 
 ---
 
@@ -1548,12 +1593,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appsyncResolver.AppsyncResolverSyncConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appsyncresolver"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appsyncresolver"
 
 &appsyncresolver.AppsyncResolverSyncConfig {
 	ConflictDetection: *string,
 	ConflictHandler: *string,
-	LambdaConflictHandlerConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v20.appsyncResolver.AppsyncResolverSyncConfigLambdaConflictHandlerConfig,
+	LambdaConflictHandlerConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v21.appsyncResolver.AppsyncResolverSyncConfigLambdaConflictHandlerConfig,
 }
 ```
 
@@ -1561,8 +1606,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appsyncresolver"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appsyncResolver.AppsyncResolverSyncConfig.property.conflictDetection">ConflictDetection</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appsync_resolver#conflict_detection AppsyncResolver#conflict_detection}. |
-| <code><a href="#@cdktf/provider-aws.appsyncResolver.AppsyncResolverSyncConfig.property.conflictHandler">ConflictHandler</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appsync_resolver#conflict_handler AppsyncResolver#conflict_handler}. |
+| <code><a href="#@cdktf/provider-aws.appsyncResolver.AppsyncResolverSyncConfig.property.conflictDetection">ConflictDetection</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appsync_resolver#conflict_detection AppsyncResolver#conflict_detection}. |
+| <code><a href="#@cdktf/provider-aws.appsyncResolver.AppsyncResolverSyncConfig.property.conflictHandler">ConflictHandler</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appsync_resolver#conflict_handler AppsyncResolver#conflict_handler}. |
 | <code><a href="#@cdktf/provider-aws.appsyncResolver.AppsyncResolverSyncConfig.property.lambdaConflictHandlerConfig">LambdaConflictHandlerConfig</a></code> | <code><a href="#@cdktf/provider-aws.appsyncResolver.AppsyncResolverSyncConfigLambdaConflictHandlerConfig">AppsyncResolverSyncConfigLambdaConflictHandlerConfig</a></code> | lambda_conflict_handler_config block. |
 
 ---
@@ -1575,7 +1620,7 @@ ConflictDetection *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appsync_resolver#conflict_detection AppsyncResolver#conflict_detection}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appsync_resolver#conflict_detection AppsyncResolver#conflict_detection}.
 
 ---
 
@@ -1587,7 +1632,7 @@ ConflictHandler *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appsync_resolver#conflict_handler AppsyncResolver#conflict_handler}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appsync_resolver#conflict_handler AppsyncResolver#conflict_handler}.
 
 ---
 
@@ -1601,7 +1646,7 @@ LambdaConflictHandlerConfig AppsyncResolverSyncConfigLambdaConflictHandlerConfig
 
 lambda_conflict_handler_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appsync_resolver#lambda_conflict_handler_config AppsyncResolver#lambda_conflict_handler_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appsync_resolver#lambda_conflict_handler_config AppsyncResolver#lambda_conflict_handler_config}
 
 ---
 
@@ -1610,7 +1655,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appsyncResolver.AppsyncResolverSyncConfigLambdaConflictHandlerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appsyncresolver"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appsyncresolver"
 
 &appsyncresolver.AppsyncResolverSyncConfigLambdaConflictHandlerConfig {
 	LambdaConflictHandlerArn: *string,
@@ -1621,7 +1666,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appsyncresolver"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appsyncResolver.AppsyncResolverSyncConfigLambdaConflictHandlerConfig.property.lambdaConflictHandlerArn">LambdaConflictHandlerArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appsync_resolver#lambda_conflict_handler_arn AppsyncResolver#lambda_conflict_handler_arn}. |
+| <code><a href="#@cdktf/provider-aws.appsyncResolver.AppsyncResolverSyncConfigLambdaConflictHandlerConfig.property.lambdaConflictHandlerArn">LambdaConflictHandlerArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appsync_resolver#lambda_conflict_handler_arn AppsyncResolver#lambda_conflict_handler_arn}. |
 
 ---
 
@@ -1633,7 +1678,7 @@ LambdaConflictHandlerArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appsync_resolver#lambda_conflict_handler_arn AppsyncResolver#lambda_conflict_handler_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appsync_resolver#lambda_conflict_handler_arn AppsyncResolver#lambda_conflict_handler_arn}.
 
 ---
 
@@ -1644,7 +1689,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appsyncResolver.AppsyncResolverCachingConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appsyncresolver"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appsyncresolver"
 
 appsyncresolver.NewAppsyncResolverCachingConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppsyncResolverCachingConfigOutputReference
 ```
@@ -1951,7 +1996,7 @@ func InternalValue() AppsyncResolverCachingConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appsyncResolver.AppsyncResolverPipelineConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appsyncresolver"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appsyncresolver"
 
 appsyncresolver.NewAppsyncResolverPipelineConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppsyncResolverPipelineConfigOutputReference
 ```
@@ -2229,7 +2274,7 @@ func InternalValue() AppsyncResolverPipelineConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appsyncResolver.AppsyncResolverRuntimeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appsyncresolver"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appsyncresolver"
 
 appsyncresolver.NewAppsyncResolverRuntimeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppsyncResolverRuntimeOutputReference
 ```
@@ -2522,7 +2567,7 @@ func InternalValue() AppsyncResolverRuntime
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appsyncResolver.AppsyncResolverSyncConfigLambdaConflictHandlerConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appsyncresolver"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appsyncresolver"
 
 appsyncresolver.NewAppsyncResolverSyncConfigLambdaConflictHandlerConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppsyncResolverSyncConfigLambdaConflictHandlerConfigOutputReference
 ```
@@ -2800,7 +2845,7 @@ func InternalValue() AppsyncResolverSyncConfigLambdaConflictHandlerConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appsyncResolver.AppsyncResolverSyncConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appsyncresolver"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appsyncresolver"
 
 appsyncresolver.NewAppsyncResolverSyncConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppsyncResolverSyncConfigOutputReference
 ```

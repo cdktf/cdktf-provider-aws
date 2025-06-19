@@ -4,12 +4,12 @@
 
 ### SsmParameter <a name="SsmParameter" id="@cdktf/provider-aws.ssmParameter.SsmParameter"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ssm_parameter aws_ssm_parameter}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ssm_parameter aws_ssm_parameter}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ssmParameter.SsmParameter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/ssmparameter"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/ssmparameter"
 
 ssmparameter.NewSsmParameter(scope Construct, id *string, config SsmParameterConfig) SsmParameter
 ```
@@ -81,6 +81,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.ssmParameter.SsmParameter.resetInsecureValue">ResetInsecureValue</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ssmParameter.SsmParameter.resetKeyId">ResetKeyId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ssmParameter.SsmParameter.resetOverwrite">ResetOverwrite</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ssmParameter.SsmParameter.resetRegion">ResetRegion</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ssmParameter.SsmParameter.resetTags">ResetTags</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ssmParameter.SsmParameter.resetTagsAll">ResetTagsAll</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ssmParameter.SsmParameter.resetTier">ResetTier</a></code> | *No description.* |
@@ -426,6 +427,12 @@ func ResetKeyId()
 func ResetOverwrite()
 ```
 
+##### `ResetRegion` <a name="ResetRegion" id="@cdktf/provider-aws.ssmParameter.SsmParameter.resetRegion"></a>
+
+```go
+func ResetRegion()
+```
+
 ##### `ResetTags` <a name="ResetTags" id="@cdktf/provider-aws.ssmParameter.SsmParameter.resetTags"></a>
 
 ```go
@@ -476,7 +483,7 @@ func ResetValueWoVersion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.ssmParameter.SsmParameter.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/ssmparameter"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/ssmparameter"
 
 ssmparameter.SsmParameter_IsConstruct(x interface{}) *bool
 ```
@@ -508,7 +515,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.ssmParameter.SsmParameter.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/ssmparameter"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/ssmparameter"
 
 ssmparameter.SsmParameter_IsTerraformElement(x interface{}) *bool
 ```
@@ -522,7 +529,7 @@ ssmparameter.SsmParameter_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.ssmParameter.SsmParameter.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/ssmparameter"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/ssmparameter"
 
 ssmparameter.SsmParameter_IsTerraformResource(x interface{}) *bool
 ```
@@ -536,7 +543,7 @@ ssmparameter.SsmParameter_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.ssmParameter.SsmParameter.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/ssmparameter"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/ssmparameter"
 
 ssmparameter.SsmParameter_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -565,7 +572,7 @@ The construct id used in the generated config for the SsmParameter to import.
 
 The id of the existing SsmParameter that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ssm_parameter#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ssm_parameter#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -606,6 +613,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.ssmParameter.SsmParameter.property.keyIdInput">KeyIdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ssmParameter.SsmParameter.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ssmParameter.SsmParameter.property.overwriteInput">OverwriteInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ssmParameter.SsmParameter.property.regionInput">RegionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ssmParameter.SsmParameter.property.tagsAllInput">TagsAllInput</a></code> | <code>*map[string]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ssmParameter.SsmParameter.property.tagsInput">TagsInput</a></code> | <code>*map[string]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ssmParameter.SsmParameter.property.tierInput">TierInput</a></code> | <code>*string</code> | *No description.* |
@@ -622,6 +630,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.ssmParameter.SsmParameter.property.keyId">KeyId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ssmParameter.SsmParameter.property.name">Name</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ssmParameter.SsmParameter.property.overwrite">Overwrite</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ssmParameter.SsmParameter.property.region">Region</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ssmParameter.SsmParameter.property.tags">Tags</a></code> | <code>*map[string]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ssmParameter.SsmParameter.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ssmParameter.SsmParameter.property.tier">Tier</a></code> | <code>*string</code> | *No description.* |
@@ -884,6 +893,16 @@ func OverwriteInput() interface{}
 
 ---
 
+##### `RegionInput`<sup>Optional</sup> <a name="RegionInput" id="@cdktf/provider-aws.ssmParameter.SsmParameter.property.regionInput"></a>
+
+```go
+func RegionInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `TagsAllInput`<sup>Optional</sup> <a name="TagsAllInput" id="@cdktf/provider-aws.ssmParameter.SsmParameter.property.tagsAllInput"></a>
 
 ```go
@@ -1044,6 +1063,16 @@ func Overwrite() interface{}
 
 ---
 
+##### `Region`<sup>Required</sup> <a name="Region" id="@cdktf/provider-aws.ssmParameter.SsmParameter.property.region"></a>
+
+```go
+func Region() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `Tags`<sup>Required</sup> <a name="Tags" id="@cdktf/provider-aws.ssmParameter.SsmParameter.property.tags"></a>
 
 ```go
@@ -1139,7 +1168,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ssmParameter.SsmParameterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/ssmparameter"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/ssmparameter"
 
 &ssmparameter.SsmParameterConfig {
 	Connection: interface{},
@@ -1159,6 +1188,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/ssmparameter"
 	InsecureValue: *string,
 	KeyId: *string,
 	Overwrite: interface{},
+	Region: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
 	Tier: *string,
@@ -1179,22 +1209,23 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/ssmparameter"
 | <code><a href="#@cdktf/provider-aws.ssmParameter.SsmParameterConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ssmParameter.SsmParameterConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ssmParameter.SsmParameterConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ssmParameter.SsmParameterConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ssm_parameter#name SsmParameter#name}. |
-| <code><a href="#@cdktf/provider-aws.ssmParameter.SsmParameterConfig.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ssm_parameter#type SsmParameter#type}. |
-| <code><a href="#@cdktf/provider-aws.ssmParameter.SsmParameterConfig.property.allowedPattern">AllowedPattern</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ssm_parameter#allowed_pattern SsmParameter#allowed_pattern}. |
-| <code><a href="#@cdktf/provider-aws.ssmParameter.SsmParameterConfig.property.arn">Arn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ssm_parameter#arn SsmParameter#arn}. |
-| <code><a href="#@cdktf/provider-aws.ssmParameter.SsmParameterConfig.property.dataType">DataType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ssm_parameter#data_type SsmParameter#data_type}. |
-| <code><a href="#@cdktf/provider-aws.ssmParameter.SsmParameterConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ssm_parameter#description SsmParameter#description}. |
-| <code><a href="#@cdktf/provider-aws.ssmParameter.SsmParameterConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ssm_parameter#id SsmParameter#id}. |
-| <code><a href="#@cdktf/provider-aws.ssmParameter.SsmParameterConfig.property.insecureValue">InsecureValue</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ssm_parameter#insecure_value SsmParameter#insecure_value}. |
-| <code><a href="#@cdktf/provider-aws.ssmParameter.SsmParameterConfig.property.keyId">KeyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ssm_parameter#key_id SsmParameter#key_id}. |
-| <code><a href="#@cdktf/provider-aws.ssmParameter.SsmParameterConfig.property.overwrite">Overwrite</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ssm_parameter#overwrite SsmParameter#overwrite}. |
-| <code><a href="#@cdktf/provider-aws.ssmParameter.SsmParameterConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ssm_parameter#tags SsmParameter#tags}. |
-| <code><a href="#@cdktf/provider-aws.ssmParameter.SsmParameterConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ssm_parameter#tags_all SsmParameter#tags_all}. |
-| <code><a href="#@cdktf/provider-aws.ssmParameter.SsmParameterConfig.property.tier">Tier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ssm_parameter#tier SsmParameter#tier}. |
-| <code><a href="#@cdktf/provider-aws.ssmParameter.SsmParameterConfig.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ssm_parameter#value SsmParameter#value}. |
-| <code><a href="#@cdktf/provider-aws.ssmParameter.SsmParameterConfig.property.valueWo">ValueWo</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ssm_parameter#value_wo SsmParameter#value_wo}. |
-| <code><a href="#@cdktf/provider-aws.ssmParameter.SsmParameterConfig.property.valueWoVersion">ValueWoVersion</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ssm_parameter#value_wo_version SsmParameter#value_wo_version}. |
+| <code><a href="#@cdktf/provider-aws.ssmParameter.SsmParameterConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ssm_parameter#name SsmParameter#name}. |
+| <code><a href="#@cdktf/provider-aws.ssmParameter.SsmParameterConfig.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ssm_parameter#type SsmParameter#type}. |
+| <code><a href="#@cdktf/provider-aws.ssmParameter.SsmParameterConfig.property.allowedPattern">AllowedPattern</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ssm_parameter#allowed_pattern SsmParameter#allowed_pattern}. |
+| <code><a href="#@cdktf/provider-aws.ssmParameter.SsmParameterConfig.property.arn">Arn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ssm_parameter#arn SsmParameter#arn}. |
+| <code><a href="#@cdktf/provider-aws.ssmParameter.SsmParameterConfig.property.dataType">DataType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ssm_parameter#data_type SsmParameter#data_type}. |
+| <code><a href="#@cdktf/provider-aws.ssmParameter.SsmParameterConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ssm_parameter#description SsmParameter#description}. |
+| <code><a href="#@cdktf/provider-aws.ssmParameter.SsmParameterConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ssm_parameter#id SsmParameter#id}. |
+| <code><a href="#@cdktf/provider-aws.ssmParameter.SsmParameterConfig.property.insecureValue">InsecureValue</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ssm_parameter#insecure_value SsmParameter#insecure_value}. |
+| <code><a href="#@cdktf/provider-aws.ssmParameter.SsmParameterConfig.property.keyId">KeyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ssm_parameter#key_id SsmParameter#key_id}. |
+| <code><a href="#@cdktf/provider-aws.ssmParameter.SsmParameterConfig.property.overwrite">Overwrite</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ssm_parameter#overwrite SsmParameter#overwrite}. |
+| <code><a href="#@cdktf/provider-aws.ssmParameter.SsmParameterConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
+| <code><a href="#@cdktf/provider-aws.ssmParameter.SsmParameterConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ssm_parameter#tags SsmParameter#tags}. |
+| <code><a href="#@cdktf/provider-aws.ssmParameter.SsmParameterConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ssm_parameter#tags_all SsmParameter#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.ssmParameter.SsmParameterConfig.property.tier">Tier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ssm_parameter#tier SsmParameter#tier}. |
+| <code><a href="#@cdktf/provider-aws.ssmParameter.SsmParameterConfig.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ssm_parameter#value SsmParameter#value}. |
+| <code><a href="#@cdktf/provider-aws.ssmParameter.SsmParameterConfig.property.valueWo">ValueWo</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ssm_parameter#value_wo SsmParameter#value_wo}. |
+| <code><a href="#@cdktf/provider-aws.ssmParameter.SsmParameterConfig.property.valueWoVersion">ValueWoVersion</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ssm_parameter#value_wo_version SsmParameter#value_wo_version}. |
 
 ---
 
@@ -1276,7 +1307,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ssm_parameter#name SsmParameter#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ssm_parameter#name SsmParameter#name}.
 
 ---
 
@@ -1288,7 +1319,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ssm_parameter#type SsmParameter#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ssm_parameter#type SsmParameter#type}.
 
 ---
 
@@ -1300,7 +1331,7 @@ AllowedPattern *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ssm_parameter#allowed_pattern SsmParameter#allowed_pattern}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ssm_parameter#allowed_pattern SsmParameter#allowed_pattern}.
 
 ---
 
@@ -1312,7 +1343,7 @@ Arn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ssm_parameter#arn SsmParameter#arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ssm_parameter#arn SsmParameter#arn}.
 
 ---
 
@@ -1324,7 +1355,7 @@ DataType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ssm_parameter#data_type SsmParameter#data_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ssm_parameter#data_type SsmParameter#data_type}.
 
 ---
 
@@ -1336,7 +1367,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ssm_parameter#description SsmParameter#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ssm_parameter#description SsmParameter#description}.
 
 ---
 
@@ -1348,7 +1379,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ssm_parameter#id SsmParameter#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ssm_parameter#id SsmParameter#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1363,7 +1394,7 @@ InsecureValue *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ssm_parameter#insecure_value SsmParameter#insecure_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ssm_parameter#insecure_value SsmParameter#insecure_value}.
 
 ---
 
@@ -1375,7 +1406,7 @@ KeyId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ssm_parameter#key_id SsmParameter#key_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ssm_parameter#key_id SsmParameter#key_id}.
 
 ---
 
@@ -1387,7 +1418,21 @@ Overwrite interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ssm_parameter#overwrite SsmParameter#overwrite}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ssm_parameter#overwrite SsmParameter#overwrite}.
+
+---
+
+##### `Region`<sup>Optional</sup> <a name="Region" id="@cdktf/provider-aws.ssmParameter.SsmParameterConfig.property.region"></a>
+
+```go
+Region *string
+```
+
+- *Type:* *string
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ssm_parameter#region SsmParameter#region}
 
 ---
 
@@ -1399,7 +1444,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ssm_parameter#tags SsmParameter#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ssm_parameter#tags SsmParameter#tags}.
 
 ---
 
@@ -1411,7 +1456,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ssm_parameter#tags_all SsmParameter#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ssm_parameter#tags_all SsmParameter#tags_all}.
 
 ---
 
@@ -1423,7 +1468,7 @@ Tier *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ssm_parameter#tier SsmParameter#tier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ssm_parameter#tier SsmParameter#tier}.
 
 ---
 
@@ -1435,7 +1480,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ssm_parameter#value SsmParameter#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ssm_parameter#value SsmParameter#value}.
 
 ---
 
@@ -1447,7 +1492,7 @@ ValueWo *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ssm_parameter#value_wo SsmParameter#value_wo}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ssm_parameter#value_wo SsmParameter#value_wo}.
 
 ---
 
@@ -1459,7 +1504,7 @@ ValueWoVersion *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ssm_parameter#value_wo_version SsmParameter#value_wo_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ssm_parameter#value_wo_version SsmParameter#value_wo_version}.
 
 ---
 

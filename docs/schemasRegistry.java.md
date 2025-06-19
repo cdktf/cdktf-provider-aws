@@ -4,7 +4,7 @@
 
 ### SchemasRegistry <a name="SchemasRegistry" id="@cdktf/provider-aws.schemasRegistry.SchemasRegistry"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/schemas_registry aws_schemas_registry}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/schemas_registry aws_schemas_registry}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.schemasRegistry.SchemasRegistry.Initializer"></a>
 
@@ -26,6 +26,7 @@ SchemasRegistry.Builder.create(Construct scope, java.lang.String id)
     .name(java.lang.String)
 //  .description(java.lang.String)
 //  .id(java.lang.String)
+//  .region(java.lang.String)
 //  .tags(java.util.Map<java.lang.String, java.lang.String>)
 //  .tagsAll(java.util.Map<java.lang.String, java.lang.String>)
     .build();
@@ -42,11 +43,12 @@ SchemasRegistry.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-aws.schemasRegistry.SchemasRegistry.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.schemasRegistry.SchemasRegistry.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.schemasRegistry.SchemasRegistry.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.schemasRegistry.SchemasRegistry.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/schemas_registry#name SchemasRegistry#name}. |
-| <code><a href="#@cdktf/provider-aws.schemasRegistry.SchemasRegistry.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/schemas_registry#description SchemasRegistry#description}. |
-| <code><a href="#@cdktf/provider-aws.schemasRegistry.SchemasRegistry.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/schemas_registry#id SchemasRegistry#id}. |
-| <code><a href="#@cdktf/provider-aws.schemasRegistry.SchemasRegistry.Initializer.parameter.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/schemas_registry#tags SchemasRegistry#tags}. |
-| <code><a href="#@cdktf/provider-aws.schemasRegistry.SchemasRegistry.Initializer.parameter.tagsAll">tagsAll</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/schemas_registry#tags_all SchemasRegistry#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.schemasRegistry.SchemasRegistry.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/schemas_registry#name SchemasRegistry#name}. |
+| <code><a href="#@cdktf/provider-aws.schemasRegistry.SchemasRegistry.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/schemas_registry#description SchemasRegistry#description}. |
+| <code><a href="#@cdktf/provider-aws.schemasRegistry.SchemasRegistry.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/schemas_registry#id SchemasRegistry#id}. |
+| <code><a href="#@cdktf/provider-aws.schemasRegistry.SchemasRegistry.Initializer.parameter.region">region</a></code> | <code>java.lang.String</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
+| <code><a href="#@cdktf/provider-aws.schemasRegistry.SchemasRegistry.Initializer.parameter.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/schemas_registry#tags SchemasRegistry#tags}. |
+| <code><a href="#@cdktf/provider-aws.schemasRegistry.SchemasRegistry.Initializer.parameter.tagsAll">tagsAll</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/schemas_registry#tags_all SchemasRegistry#tags_all}. |
 
 ---
 
@@ -114,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/schemas_registry#name SchemasRegistry#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/schemas_registry#name SchemasRegistry#name}.
 
 ---
 
@@ -122,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/schemas_registry#description SchemasRegistry#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/schemas_registry#description SchemasRegistry#description}.
 
 ---
 
@@ -130,10 +132,20 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/schemas_registry#id SchemasRegistry#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/schemas_registry#id SchemasRegistry#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdktf/provider-aws.schemasRegistry.SchemasRegistry.Initializer.parameter.region"></a>
+
+- *Type:* java.lang.String
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/schemas_registry#region SchemasRegistry#region}
 
 ---
 
@@ -141,7 +153,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/schemas_registry#tags SchemasRegistry#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/schemas_registry#tags SchemasRegistry#tags}.
 
 ---
 
@@ -149,7 +161,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/schemas_registry#tags_all SchemasRegistry#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/schemas_registry#tags_all SchemasRegistry#tags_all}.
 
 ---
 
@@ -182,6 +194,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktf/provider-aws.schemasRegistry.SchemasRegistry.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-aws.schemasRegistry.SchemasRegistry.resetDescription">resetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.schemasRegistry.SchemasRegistry.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.schemasRegistry.SchemasRegistry.resetRegion">resetRegion</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.schemasRegistry.SchemasRegistry.resetTags">resetTags</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.schemasRegistry.SchemasRegistry.resetTagsAll">resetTagsAll</a></code> | *No description.* |
 
@@ -489,6 +502,12 @@ public void resetDescription()
 public void resetId()
 ```
 
+##### `resetRegion` <a name="resetRegion" id="@cdktf/provider-aws.schemasRegistry.SchemasRegistry.resetRegion"></a>
+
+```java
+public void resetRegion()
+```
+
 ##### `resetTags` <a name="resetTags" id="@cdktf/provider-aws.schemasRegistry.SchemasRegistry.resetTags"></a>
 
 ```java
@@ -604,7 +623,7 @@ The construct id used in the generated config for the SchemasRegistry to import.
 
 The id of the existing SchemasRegistry that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/schemas_registry#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/schemas_registry#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -638,11 +657,13 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.schemasRegistry.SchemasRegistry.property.descriptionInput">descriptionInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.schemasRegistry.SchemasRegistry.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.schemasRegistry.SchemasRegistry.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.schemasRegistry.SchemasRegistry.property.regionInput">regionInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.schemasRegistry.SchemasRegistry.property.tagsAllInput">tagsAllInput</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.schemasRegistry.SchemasRegistry.property.tagsInput">tagsInput</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.schemasRegistry.SchemasRegistry.property.description">description</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.schemasRegistry.SchemasRegistry.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.schemasRegistry.SchemasRegistry.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.schemasRegistry.SchemasRegistry.property.region">region</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.schemasRegistry.SchemasRegistry.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.schemasRegistry.SchemasRegistry.property.tagsAll">tagsAll</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
 
@@ -830,6 +851,16 @@ public java.lang.String getNameInput();
 
 ---
 
+##### `regionInput`<sup>Optional</sup> <a name="regionInput" id="@cdktf/provider-aws.schemasRegistry.SchemasRegistry.property.regionInput"></a>
+
+```java
+public java.lang.String getRegionInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `tagsAllInput`<sup>Optional</sup> <a name="tagsAllInput" id="@cdktf/provider-aws.schemasRegistry.SchemasRegistry.property.tagsAllInput"></a>
 
 ```java
@@ -874,6 +905,16 @@ public java.lang.String getId();
 
 ```java
 public java.lang.String getName();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `region`<sup>Required</sup> <a name="region" id="@cdktf/provider-aws.schemasRegistry.SchemasRegistry.property.region"></a>
+
+```java
+public java.lang.String getRegion();
 ```
 
 - *Type:* java.lang.String
@@ -942,6 +983,7 @@ SchemasRegistryConfig.builder()
     .name(java.lang.String)
 //  .description(java.lang.String)
 //  .id(java.lang.String)
+//  .region(java.lang.String)
 //  .tags(java.util.Map<java.lang.String, java.lang.String>)
 //  .tagsAll(java.util.Map<java.lang.String, java.lang.String>)
     .build();
@@ -958,11 +1000,12 @@ SchemasRegistryConfig.builder()
 | <code><a href="#@cdktf/provider-aws.schemasRegistry.SchemasRegistryConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.schemasRegistry.SchemasRegistryConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.schemasRegistry.SchemasRegistryConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.schemasRegistry.SchemasRegistryConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/schemas_registry#name SchemasRegistry#name}. |
-| <code><a href="#@cdktf/provider-aws.schemasRegistry.SchemasRegistryConfig.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/schemas_registry#description SchemasRegistry#description}. |
-| <code><a href="#@cdktf/provider-aws.schemasRegistry.SchemasRegistryConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/schemas_registry#id SchemasRegistry#id}. |
-| <code><a href="#@cdktf/provider-aws.schemasRegistry.SchemasRegistryConfig.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/schemas_registry#tags SchemasRegistry#tags}. |
-| <code><a href="#@cdktf/provider-aws.schemasRegistry.SchemasRegistryConfig.property.tagsAll">tagsAll</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/schemas_registry#tags_all SchemasRegistry#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.schemasRegistry.SchemasRegistryConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/schemas_registry#name SchemasRegistry#name}. |
+| <code><a href="#@cdktf/provider-aws.schemasRegistry.SchemasRegistryConfig.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/schemas_registry#description SchemasRegistry#description}. |
+| <code><a href="#@cdktf/provider-aws.schemasRegistry.SchemasRegistryConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/schemas_registry#id SchemasRegistry#id}. |
+| <code><a href="#@cdktf/provider-aws.schemasRegistry.SchemasRegistryConfig.property.region">region</a></code> | <code>java.lang.String</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
+| <code><a href="#@cdktf/provider-aws.schemasRegistry.SchemasRegistryConfig.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/schemas_registry#tags SchemasRegistry#tags}. |
+| <code><a href="#@cdktf/provider-aws.schemasRegistry.SchemasRegistryConfig.property.tagsAll">tagsAll</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/schemas_registry#tags_all SchemasRegistry#tags_all}. |
 
 ---
 
@@ -1044,7 +1087,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/schemas_registry#name SchemasRegistry#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/schemas_registry#name SchemasRegistry#name}.
 
 ---
 
@@ -1056,7 +1099,7 @@ public java.lang.String getDescription();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/schemas_registry#description SchemasRegistry#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/schemas_registry#description SchemasRegistry#description}.
 
 ---
 
@@ -1068,10 +1111,24 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/schemas_registry#id SchemasRegistry#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/schemas_registry#id SchemasRegistry#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdktf/provider-aws.schemasRegistry.SchemasRegistryConfig.property.region"></a>
+
+```java
+public java.lang.String getRegion();
+```
+
+- *Type:* java.lang.String
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/schemas_registry#region SchemasRegistry#region}
 
 ---
 
@@ -1083,7 +1140,7 @@ public java.util.Map<java.lang.String, java.lang.String> getTags();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/schemas_registry#tags SchemasRegistry#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/schemas_registry#tags SchemasRegistry#tags}.
 
 ---
 
@@ -1095,7 +1152,7 @@ public java.util.Map<java.lang.String, java.lang.String> getTagsAll();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/schemas_registry#tags_all SchemasRegistry#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/schemas_registry#tags_all SchemasRegistry#tags_all}.
 
 ---
 

@@ -4,12 +4,12 @@
 
 ### DataAwsSyntheticsRuntimeVersions <a name="DataAwsSyntheticsRuntimeVersions" id="@cdktf/provider-aws.dataAwsSyntheticsRuntimeVersions.DataAwsSyntheticsRuntimeVersions"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/synthetics_runtime_versions aws_synthetics_runtime_versions}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/synthetics_runtime_versions aws_synthetics_runtime_versions}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsSyntheticsRuntimeVersions.DataAwsSyntheticsRuntimeVersions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawssyntheticsruntimeversions"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawssyntheticsruntimeversions"
 
 dataawssyntheticsruntimeversions.NewDataAwsSyntheticsRuntimeVersions(scope Construct, id *string, config DataAwsSyntheticsRuntimeVersionsConfig) DataAwsSyntheticsRuntimeVersions
 ```
@@ -67,8 +67,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.dataAwsSyntheticsRuntimeVersions.DataAwsSyntheticsRuntimeVersions.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsSyntheticsRuntimeVersions.DataAwsSyntheticsRuntimeVersions.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsSyntheticsRuntimeVersions.DataAwsSyntheticsRuntimeVersions.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsSyntheticsRuntimeVersions.DataAwsSyntheticsRuntimeVersions.putRuntimeVersions">PutRuntimeVersions</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsSyntheticsRuntimeVersions.DataAwsSyntheticsRuntimeVersions.resetRuntimeVersions">ResetRuntimeVersions</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsSyntheticsRuntimeVersions.DataAwsSyntheticsRuntimeVersions.resetRegion">ResetRegion</a></code> | *No description.* |
 
 ---
 
@@ -264,22 +263,10 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 
 ---
 
-##### `PutRuntimeVersions` <a name="PutRuntimeVersions" id="@cdktf/provider-aws.dataAwsSyntheticsRuntimeVersions.DataAwsSyntheticsRuntimeVersions.putRuntimeVersions"></a>
+##### `ResetRegion` <a name="ResetRegion" id="@cdktf/provider-aws.dataAwsSyntheticsRuntimeVersions.DataAwsSyntheticsRuntimeVersions.resetRegion"></a>
 
 ```go
-func PutRuntimeVersions(value interface{})
-```
-
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.dataAwsSyntheticsRuntimeVersions.DataAwsSyntheticsRuntimeVersions.putRuntimeVersions.parameter.value"></a>
-
-- *Type:* interface{}
-
----
-
-##### `ResetRuntimeVersions` <a name="ResetRuntimeVersions" id="@cdktf/provider-aws.dataAwsSyntheticsRuntimeVersions.DataAwsSyntheticsRuntimeVersions.resetRuntimeVersions"></a>
-
-```go
-func ResetRuntimeVersions()
+func ResetRegion()
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -296,7 +283,7 @@ func ResetRuntimeVersions()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsSyntheticsRuntimeVersions.DataAwsSyntheticsRuntimeVersions.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawssyntheticsruntimeversions"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawssyntheticsruntimeversions"
 
 dataawssyntheticsruntimeversions.DataAwsSyntheticsRuntimeVersions_IsConstruct(x interface{}) *bool
 ```
@@ -328,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsSyntheticsRuntimeVersions.DataAwsSyntheticsRuntimeVersions.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawssyntheticsruntimeversions"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawssyntheticsruntimeversions"
 
 dataawssyntheticsruntimeversions.DataAwsSyntheticsRuntimeVersions_IsTerraformElement(x interface{}) *bool
 ```
@@ -342,7 +329,7 @@ dataawssyntheticsruntimeversions.DataAwsSyntheticsRuntimeVersions_IsTerraformEle
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsSyntheticsRuntimeVersions.DataAwsSyntheticsRuntimeVersions.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawssyntheticsruntimeversions"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawssyntheticsruntimeversions"
 
 dataawssyntheticsruntimeversions.DataAwsSyntheticsRuntimeVersions_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -356,7 +343,7 @@ dataawssyntheticsruntimeversions.DataAwsSyntheticsRuntimeVersions_IsTerraformDat
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsSyntheticsRuntimeVersions.DataAwsSyntheticsRuntimeVersions.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawssyntheticsruntimeversions"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawssyntheticsruntimeversions"
 
 dataawssyntheticsruntimeversions.DataAwsSyntheticsRuntimeVersions_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -385,7 +372,7 @@ The construct id used in the generated config for the DataAwsSyntheticsRuntimeVe
 
 The id of the existing DataAwsSyntheticsRuntimeVersions that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/synthetics_runtime_versions#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/synthetics_runtime_versions#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -415,7 +402,8 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.dataAwsSyntheticsRuntimeVersions.DataAwsSyntheticsRuntimeVersions.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsSyntheticsRuntimeVersions.DataAwsSyntheticsRuntimeVersions.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsSyntheticsRuntimeVersions.DataAwsSyntheticsRuntimeVersions.property.runtimeVersions">RuntimeVersions</a></code> | <code><a href="#@cdktf/provider-aws.dataAwsSyntheticsRuntimeVersions.DataAwsSyntheticsRuntimeVersionsRuntimeVersionsList">DataAwsSyntheticsRuntimeVersionsRuntimeVersionsList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsSyntheticsRuntimeVersions.DataAwsSyntheticsRuntimeVersions.property.runtimeVersionsInput">RuntimeVersionsInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsSyntheticsRuntimeVersions.DataAwsSyntheticsRuntimeVersions.property.regionInput">RegionInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsSyntheticsRuntimeVersions.DataAwsSyntheticsRuntimeVersions.property.region">Region</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
@@ -561,13 +549,23 @@ func RuntimeVersions() DataAwsSyntheticsRuntimeVersionsRuntimeVersionsList
 
 ---
 
-##### `RuntimeVersionsInput`<sup>Optional</sup> <a name="RuntimeVersionsInput" id="@cdktf/provider-aws.dataAwsSyntheticsRuntimeVersions.DataAwsSyntheticsRuntimeVersions.property.runtimeVersionsInput"></a>
+##### `RegionInput`<sup>Optional</sup> <a name="RegionInput" id="@cdktf/provider-aws.dataAwsSyntheticsRuntimeVersions.DataAwsSyntheticsRuntimeVersions.property.regionInput"></a>
 
 ```go
-func RuntimeVersionsInput() interface{}
+func RegionInput() *string
 ```
 
-- *Type:* interface{}
+- *Type:* *string
+
+---
+
+##### `Region`<sup>Required</sup> <a name="Region" id="@cdktf/provider-aws.dataAwsSyntheticsRuntimeVersions.DataAwsSyntheticsRuntimeVersions.property.region"></a>
+
+```go
+func Region() *string
+```
+
+- *Type:* *string
 
 ---
 
@@ -596,7 +594,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsSyntheticsRuntimeVersions.DataAwsSyntheticsRuntimeVersionsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawssyntheticsruntimeversions"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawssyntheticsruntimeversions"
 
 &dataawssyntheticsruntimeversions.DataAwsSyntheticsRuntimeVersionsConfig {
 	Connection: interface{},
@@ -606,7 +604,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawssyntheticsruntimev
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	RuntimeVersions: interface{},
+	Region: *string,
 }
 ```
 
@@ -621,7 +619,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawssyntheticsruntimev
 | <code><a href="#@cdktf/provider-aws.dataAwsSyntheticsRuntimeVersions.DataAwsSyntheticsRuntimeVersionsConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsSyntheticsRuntimeVersions.DataAwsSyntheticsRuntimeVersionsConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsSyntheticsRuntimeVersions.DataAwsSyntheticsRuntimeVersionsConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsSyntheticsRuntimeVersions.DataAwsSyntheticsRuntimeVersionsConfig.property.runtimeVersions">RuntimeVersions</a></code> | <code>interface{}</code> | runtime_versions block. |
+| <code><a href="#@cdktf/provider-aws.dataAwsSyntheticsRuntimeVersions.DataAwsSyntheticsRuntimeVersionsConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
 
@@ -695,17 +693,17 @@ Provisioners *[]interface{}
 
 ---
 
-##### `RuntimeVersions`<sup>Optional</sup> <a name="RuntimeVersions" id="@cdktf/provider-aws.dataAwsSyntheticsRuntimeVersions.DataAwsSyntheticsRuntimeVersionsConfig.property.runtimeVersions"></a>
+##### `Region`<sup>Optional</sup> <a name="Region" id="@cdktf/provider-aws.dataAwsSyntheticsRuntimeVersions.DataAwsSyntheticsRuntimeVersionsConfig.property.region"></a>
 
 ```go
-RuntimeVersions interface{}
+Region *string
 ```
 
-- *Type:* interface{}
+- *Type:* *string
 
-runtime_versions block.
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/synthetics_runtime_versions#runtime_versions DataAwsSyntheticsRuntimeVersions#runtime_versions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/synthetics_runtime_versions#region DataAwsSyntheticsRuntimeVersions#region}
 
 ---
 
@@ -714,7 +712,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsSyntheticsRuntimeVersions.DataAwsSyntheticsRuntimeVersionsRuntimeVersions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawssyntheticsruntimeversions"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawssyntheticsruntimeversions"
 
 &dataawssyntheticsruntimeversions.DataAwsSyntheticsRuntimeVersionsRuntimeVersions {
 
@@ -729,7 +727,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawssyntheticsruntimev
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsSyntheticsRuntimeVersions.DataAwsSyntheticsRuntimeVersionsRuntimeVersionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawssyntheticsruntimeversions"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawssyntheticsruntimeversions"
 
 dataawssyntheticsruntimeversions.NewDataAwsSyntheticsRuntimeVersionsRuntimeVersionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsSyntheticsRuntimeVersionsRuntimeVersionsList
 ```
@@ -845,7 +843,6 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.dataAwsSyntheticsRuntimeVersions.DataAwsSyntheticsRuntimeVersionsRuntimeVersionsList.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.dataAwsSyntheticsRuntimeVersions.DataAwsSyntheticsRuntimeVersionsRuntimeVersionsList.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsSyntheticsRuntimeVersions.DataAwsSyntheticsRuntimeVersionsRuntimeVersionsList.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
 
 ---
 
@@ -873,23 +870,13 @@ func Fqn() *string
 
 ---
 
-##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.dataAwsSyntheticsRuntimeVersions.DataAwsSyntheticsRuntimeVersionsRuntimeVersionsList.property.internalValue"></a>
-
-```go
-func InternalValue() interface{}
-```
-
-- *Type:* interface{}
-
----
-
 
 ### DataAwsSyntheticsRuntimeVersionsRuntimeVersionsOutputReference <a name="DataAwsSyntheticsRuntimeVersionsRuntimeVersionsOutputReference" id="@cdktf/provider-aws.dataAwsSyntheticsRuntimeVersions.DataAwsSyntheticsRuntimeVersionsRuntimeVersionsOutputReference"></a>
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsSyntheticsRuntimeVersions.DataAwsSyntheticsRuntimeVersionsRuntimeVersionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawssyntheticsruntimeversions"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawssyntheticsruntimeversions"
 
 dataawssyntheticsruntimeversions.NewDataAwsSyntheticsRuntimeVersionsRuntimeVersionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsSyntheticsRuntimeVersionsRuntimeVersionsOutputReference
 ```
@@ -1116,7 +1103,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.dataAwsSyntheticsRuntimeVersions.DataAwsSyntheticsRuntimeVersionsRuntimeVersionsOutputReference.property.description">Description</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsSyntheticsRuntimeVersions.DataAwsSyntheticsRuntimeVersionsRuntimeVersionsOutputReference.property.releaseDate">ReleaseDate</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsSyntheticsRuntimeVersions.DataAwsSyntheticsRuntimeVersionsRuntimeVersionsOutputReference.property.versionName">VersionName</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsSyntheticsRuntimeVersions.DataAwsSyntheticsRuntimeVersionsRuntimeVersionsOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsSyntheticsRuntimeVersions.DataAwsSyntheticsRuntimeVersionsRuntimeVersionsOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-aws.dataAwsSyntheticsRuntimeVersions.DataAwsSyntheticsRuntimeVersionsRuntimeVersions">DataAwsSyntheticsRuntimeVersionsRuntimeVersions</a></code> | *No description.* |
 
 ---
 
@@ -1187,10 +1174,10 @@ func VersionName() *string
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.dataAwsSyntheticsRuntimeVersions.DataAwsSyntheticsRuntimeVersionsRuntimeVersionsOutputReference.property.internalValue"></a>
 
 ```go
-func InternalValue() interface{}
+func InternalValue() DataAwsSyntheticsRuntimeVersionsRuntimeVersions
 ```
 
-- *Type:* interface{}
+- *Type:* <a href="#@cdktf/provider-aws.dataAwsSyntheticsRuntimeVersions.DataAwsSyntheticsRuntimeVersionsRuntimeVersions">DataAwsSyntheticsRuntimeVersionsRuntimeVersions</a>
 
 ---
 

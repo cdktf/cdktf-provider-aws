@@ -4,7 +4,7 @@
 
 ### LocationTrackerAssociation <a name="LocationTrackerAssociation" id="@cdktf/provider-aws.locationTrackerAssociation.LocationTrackerAssociation"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/location_tracker_association aws_location_tracker_association}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/location_tracker_association aws_location_tracker_association}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.locationTrackerAssociation.LocationTrackerAssociation.Initializer"></a>
 
@@ -75,6 +75,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.locationTrackerAssociation.LocationTrackerAssociation.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-aws.locationTrackerAssociation.LocationTrackerAssociation.putTimeouts">putTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.locationTrackerAssociation.LocationTrackerAssociation.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.locationTrackerAssociation.LocationTrackerAssociation.resetRegion">resetRegion</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.locationTrackerAssociation.LocationTrackerAssociation.resetTimeouts">resetTimeouts</a></code> | *No description.* |
 
 ---
@@ -385,6 +386,12 @@ public putTimeouts(value: LocationTrackerAssociationTimeouts): void
 public resetId(): void
 ```
 
+##### `resetRegion` <a name="resetRegion" id="@cdktf/provider-aws.locationTrackerAssociation.LocationTrackerAssociation.resetRegion"></a>
+
+```typescript
+public resetRegion(): void
+```
+
 ##### `resetTimeouts` <a name="resetTimeouts" id="@cdktf/provider-aws.locationTrackerAssociation.LocationTrackerAssociation.resetTimeouts"></a>
 
 ```typescript
@@ -494,7 +501,7 @@ The construct id used in the generated config for the LocationTrackerAssociation
 
 The id of the existing LocationTrackerAssociation that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/location_tracker_association#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/location_tracker_association#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -527,10 +534,12 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.locationTrackerAssociation.LocationTrackerAssociation.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-aws.locationTrackerAssociation.LocationTrackerAssociationTimeoutsOutputReference">LocationTrackerAssociationTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.locationTrackerAssociation.LocationTrackerAssociation.property.consumerArnInput">consumerArnInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.locationTrackerAssociation.LocationTrackerAssociation.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.locationTrackerAssociation.LocationTrackerAssociation.property.regionInput">regionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.locationTrackerAssociation.LocationTrackerAssociation.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.locationTrackerAssociation.LocationTrackerAssociationTimeouts">LocationTrackerAssociationTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.locationTrackerAssociation.LocationTrackerAssociation.property.trackerNameInput">trackerNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.locationTrackerAssociation.LocationTrackerAssociation.property.consumerArn">consumerArn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.locationTrackerAssociation.LocationTrackerAssociation.property.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.locationTrackerAssociation.LocationTrackerAssociation.property.region">region</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.locationTrackerAssociation.LocationTrackerAssociation.property.trackerName">trackerName</a></code> | <code>string</code> | *No description.* |
 
 ---
@@ -707,6 +716,16 @@ public readonly idInput: string;
 
 ---
 
+##### `regionInput`<sup>Optional</sup> <a name="regionInput" id="@cdktf/provider-aws.locationTrackerAssociation.LocationTrackerAssociation.property.regionInput"></a>
+
+```typescript
+public readonly regionInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `timeoutsInput`<sup>Optional</sup> <a name="timeoutsInput" id="@cdktf/provider-aws.locationTrackerAssociation.LocationTrackerAssociation.property.timeoutsInput"></a>
 
 ```typescript
@@ -741,6 +760,16 @@ public readonly consumerArn: string;
 
 ```typescript
 public readonly id: string;
+```
+
+- *Type:* string
+
+---
+
+##### `region`<sup>Required</sup> <a name="region" id="@cdktf/provider-aws.locationTrackerAssociation.LocationTrackerAssociation.property.region"></a>
+
+```typescript
+public readonly region: string;
 ```
 
 - *Type:* string
@@ -798,9 +827,10 @@ const locationTrackerAssociationConfig: locationTrackerAssociation.LocationTrack
 | <code><a href="#@cdktf/provider-aws.locationTrackerAssociation.LocationTrackerAssociationConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.locationTrackerAssociation.LocationTrackerAssociationConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.locationTrackerAssociation.LocationTrackerAssociationConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.locationTrackerAssociation.LocationTrackerAssociationConfig.property.consumerArn">consumerArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/location_tracker_association#consumer_arn LocationTrackerAssociation#consumer_arn}. |
-| <code><a href="#@cdktf/provider-aws.locationTrackerAssociation.LocationTrackerAssociationConfig.property.trackerName">trackerName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/location_tracker_association#tracker_name LocationTrackerAssociation#tracker_name}. |
-| <code><a href="#@cdktf/provider-aws.locationTrackerAssociation.LocationTrackerAssociationConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/location_tracker_association#id LocationTrackerAssociation#id}. |
+| <code><a href="#@cdktf/provider-aws.locationTrackerAssociation.LocationTrackerAssociationConfig.property.consumerArn">consumerArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/location_tracker_association#consumer_arn LocationTrackerAssociation#consumer_arn}. |
+| <code><a href="#@cdktf/provider-aws.locationTrackerAssociation.LocationTrackerAssociationConfig.property.trackerName">trackerName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/location_tracker_association#tracker_name LocationTrackerAssociation#tracker_name}. |
+| <code><a href="#@cdktf/provider-aws.locationTrackerAssociation.LocationTrackerAssociationConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/location_tracker_association#id LocationTrackerAssociation#id}. |
+| <code><a href="#@cdktf/provider-aws.locationTrackerAssociation.LocationTrackerAssociationConfig.property.region">region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktf/provider-aws.locationTrackerAssociation.LocationTrackerAssociationConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-aws.locationTrackerAssociation.LocationTrackerAssociationTimeouts">LocationTrackerAssociationTimeouts</a></code> | timeouts block. |
 
 ---
@@ -883,7 +913,7 @@ public readonly consumerArn: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/location_tracker_association#consumer_arn LocationTrackerAssociation#consumer_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/location_tracker_association#consumer_arn LocationTrackerAssociation#consumer_arn}.
 
 ---
 
@@ -895,7 +925,7 @@ public readonly trackerName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/location_tracker_association#tracker_name LocationTrackerAssociation#tracker_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/location_tracker_association#tracker_name LocationTrackerAssociation#tracker_name}.
 
 ---
 
@@ -907,10 +937,24 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/location_tracker_association#id LocationTrackerAssociation#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/location_tracker_association#id LocationTrackerAssociation#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdktf/provider-aws.locationTrackerAssociation.LocationTrackerAssociationConfig.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/location_tracker_association#region LocationTrackerAssociation#region}
 
 ---
 
@@ -924,7 +968,7 @@ public readonly timeouts: LocationTrackerAssociationTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/location_tracker_association#timeouts LocationTrackerAssociation#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/location_tracker_association#timeouts LocationTrackerAssociation#timeouts}
 
 ---
 
@@ -942,8 +986,8 @@ const locationTrackerAssociationTimeouts: locationTrackerAssociation.LocationTra
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.locationTrackerAssociation.LocationTrackerAssociationTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/location_tracker_association#create LocationTrackerAssociation#create}. |
-| <code><a href="#@cdktf/provider-aws.locationTrackerAssociation.LocationTrackerAssociationTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/location_tracker_association#delete LocationTrackerAssociation#delete}. |
+| <code><a href="#@cdktf/provider-aws.locationTrackerAssociation.LocationTrackerAssociationTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/location_tracker_association#create LocationTrackerAssociation#create}. |
+| <code><a href="#@cdktf/provider-aws.locationTrackerAssociation.LocationTrackerAssociationTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/location_tracker_association#delete LocationTrackerAssociation#delete}. |
 
 ---
 
@@ -955,7 +999,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/location_tracker_association#create LocationTrackerAssociation#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/location_tracker_association#create LocationTrackerAssociation#create}.
 
 ---
 
@@ -967,7 +1011,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/location_tracker_association#delete LocationTrackerAssociation#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/location_tracker_association#delete LocationTrackerAssociation#delete}.
 
 ---
 

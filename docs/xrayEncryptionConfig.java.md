@@ -4,7 +4,7 @@
 
 ### XrayEncryptionConfig <a name="XrayEncryptionConfig" id="@cdktf/provider-aws.xrayEncryptionConfig.XrayEncryptionConfig"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/xray_encryption_config aws_xray_encryption_config}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/xray_encryption_config aws_xray_encryption_config}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.xrayEncryptionConfig.XrayEncryptionConfig.Initializer"></a>
 
@@ -26,6 +26,7 @@ XrayEncryptionConfig.Builder.create(Construct scope, java.lang.String id)
     .type(java.lang.String)
 //  .id(java.lang.String)
 //  .keyId(java.lang.String)
+//  .region(java.lang.String)
     .build();
 ```
 
@@ -40,9 +41,10 @@ XrayEncryptionConfig.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-aws.xrayEncryptionConfig.XrayEncryptionConfig.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.xrayEncryptionConfig.XrayEncryptionConfig.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.xrayEncryptionConfig.XrayEncryptionConfig.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.xrayEncryptionConfig.XrayEncryptionConfig.Initializer.parameter.type">type</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/xray_encryption_config#type XrayEncryptionConfig#type}. |
-| <code><a href="#@cdktf/provider-aws.xrayEncryptionConfig.XrayEncryptionConfig.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/xray_encryption_config#id XrayEncryptionConfig#id}. |
-| <code><a href="#@cdktf/provider-aws.xrayEncryptionConfig.XrayEncryptionConfig.Initializer.parameter.keyId">keyId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/xray_encryption_config#key_id XrayEncryptionConfig#key_id}. |
+| <code><a href="#@cdktf/provider-aws.xrayEncryptionConfig.XrayEncryptionConfig.Initializer.parameter.type">type</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/xray_encryption_config#type XrayEncryptionConfig#type}. |
+| <code><a href="#@cdktf/provider-aws.xrayEncryptionConfig.XrayEncryptionConfig.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/xray_encryption_config#id XrayEncryptionConfig#id}. |
+| <code><a href="#@cdktf/provider-aws.xrayEncryptionConfig.XrayEncryptionConfig.Initializer.parameter.keyId">keyId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/xray_encryption_config#key_id XrayEncryptionConfig#key_id}. |
+| <code><a href="#@cdktf/provider-aws.xrayEncryptionConfig.XrayEncryptionConfig.Initializer.parameter.region">region</a></code> | <code>java.lang.String</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
 
@@ -110,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/xray_encryption_config#type XrayEncryptionConfig#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/xray_encryption_config#type XrayEncryptionConfig#type}.
 
 ---
 
@@ -118,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/xray_encryption_config#id XrayEncryptionConfig#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/xray_encryption_config#id XrayEncryptionConfig#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -129,7 +131,17 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/xray_encryption_config#key_id XrayEncryptionConfig#key_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/xray_encryption_config#key_id XrayEncryptionConfig#key_id}.
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdktf/provider-aws.xrayEncryptionConfig.XrayEncryptionConfig.Initializer.parameter.region"></a>
+
+- *Type:* java.lang.String
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/xray_encryption_config#region XrayEncryptionConfig#region}
 
 ---
 
@@ -162,6 +174,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktf/provider-aws.xrayEncryptionConfig.XrayEncryptionConfig.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-aws.xrayEncryptionConfig.XrayEncryptionConfig.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.xrayEncryptionConfig.XrayEncryptionConfig.resetKeyId">resetKeyId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.xrayEncryptionConfig.XrayEncryptionConfig.resetRegion">resetRegion</a></code> | *No description.* |
 
 ---
 
@@ -467,6 +480,12 @@ public void resetId()
 public void resetKeyId()
 ```
 
+##### `resetRegion` <a name="resetRegion" id="@cdktf/provider-aws.xrayEncryptionConfig.XrayEncryptionConfig.resetRegion"></a>
+
+```java
+public void resetRegion()
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -570,7 +589,7 @@ The construct id used in the generated config for the XrayEncryptionConfig to im
 
 The id of the existing XrayEncryptionConfig that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/xray_encryption_config#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/xray_encryption_config#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -602,9 +621,11 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.xrayEncryptionConfig.XrayEncryptionConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.xrayEncryptionConfig.XrayEncryptionConfig.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.xrayEncryptionConfig.XrayEncryptionConfig.property.keyIdInput">keyIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.xrayEncryptionConfig.XrayEncryptionConfig.property.regionInput">regionInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.xrayEncryptionConfig.XrayEncryptionConfig.property.typeInput">typeInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.xrayEncryptionConfig.XrayEncryptionConfig.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.xrayEncryptionConfig.XrayEncryptionConfig.property.keyId">keyId</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.xrayEncryptionConfig.XrayEncryptionConfig.property.region">region</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.xrayEncryptionConfig.XrayEncryptionConfig.property.type">type</a></code> | <code>java.lang.String</code> | *No description.* |
 
 ---
@@ -771,6 +792,16 @@ public java.lang.String getKeyIdInput();
 
 ---
 
+##### `regionInput`<sup>Optional</sup> <a name="regionInput" id="@cdktf/provider-aws.xrayEncryptionConfig.XrayEncryptionConfig.property.regionInput"></a>
+
+```java
+public java.lang.String getRegionInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `typeInput`<sup>Optional</sup> <a name="typeInput" id="@cdktf/provider-aws.xrayEncryptionConfig.XrayEncryptionConfig.property.typeInput"></a>
 
 ```java
@@ -795,6 +826,16 @@ public java.lang.String getId();
 
 ```java
 public java.lang.String getKeyId();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `region`<sup>Required</sup> <a name="region" id="@cdktf/provider-aws.xrayEncryptionConfig.XrayEncryptionConfig.property.region"></a>
+
+```java
+public java.lang.String getRegion();
 ```
 
 - *Type:* java.lang.String
@@ -853,6 +894,7 @@ XrayEncryptionConfigConfig.builder()
     .type(java.lang.String)
 //  .id(java.lang.String)
 //  .keyId(java.lang.String)
+//  .region(java.lang.String)
     .build();
 ```
 
@@ -867,9 +909,10 @@ XrayEncryptionConfigConfig.builder()
 | <code><a href="#@cdktf/provider-aws.xrayEncryptionConfig.XrayEncryptionConfigConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.xrayEncryptionConfig.XrayEncryptionConfigConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.xrayEncryptionConfig.XrayEncryptionConfigConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.xrayEncryptionConfig.XrayEncryptionConfigConfig.property.type">type</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/xray_encryption_config#type XrayEncryptionConfig#type}. |
-| <code><a href="#@cdktf/provider-aws.xrayEncryptionConfig.XrayEncryptionConfigConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/xray_encryption_config#id XrayEncryptionConfig#id}. |
-| <code><a href="#@cdktf/provider-aws.xrayEncryptionConfig.XrayEncryptionConfigConfig.property.keyId">keyId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/xray_encryption_config#key_id XrayEncryptionConfig#key_id}. |
+| <code><a href="#@cdktf/provider-aws.xrayEncryptionConfig.XrayEncryptionConfigConfig.property.type">type</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/xray_encryption_config#type XrayEncryptionConfig#type}. |
+| <code><a href="#@cdktf/provider-aws.xrayEncryptionConfig.XrayEncryptionConfigConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/xray_encryption_config#id XrayEncryptionConfig#id}. |
+| <code><a href="#@cdktf/provider-aws.xrayEncryptionConfig.XrayEncryptionConfigConfig.property.keyId">keyId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/xray_encryption_config#key_id XrayEncryptionConfig#key_id}. |
+| <code><a href="#@cdktf/provider-aws.xrayEncryptionConfig.XrayEncryptionConfigConfig.property.region">region</a></code> | <code>java.lang.String</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
 
@@ -951,7 +994,7 @@ public java.lang.String getType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/xray_encryption_config#type XrayEncryptionConfig#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/xray_encryption_config#type XrayEncryptionConfig#type}.
 
 ---
 
@@ -963,7 +1006,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/xray_encryption_config#id XrayEncryptionConfig#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/xray_encryption_config#id XrayEncryptionConfig#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -978,7 +1021,21 @@ public java.lang.String getKeyId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/xray_encryption_config#key_id XrayEncryptionConfig#key_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/xray_encryption_config#key_id XrayEncryptionConfig#key_id}.
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdktf/provider-aws.xrayEncryptionConfig.XrayEncryptionConfigConfig.property.region"></a>
+
+```java
+public java.lang.String getRegion();
+```
+
+- *Type:* java.lang.String
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/xray_encryption_config#region XrayEncryptionConfig#region}
 
 ---
 

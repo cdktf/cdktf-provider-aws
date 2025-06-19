@@ -4,7 +4,7 @@
 
 ### DataAwsKendraFaq <a name="DataAwsKendraFaq" id="@cdktf/provider-aws.dataAwsKendraFaq.DataAwsKendraFaq"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/kendra_faq aws_kendra_faq}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/kendra_faq aws_kendra_faq}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsKendraFaq.DataAwsKendraFaq.Initializer"></a>
 
@@ -68,6 +68,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.dataAwsKendraFaq.DataAwsKendraFaq.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsKendraFaq.DataAwsKendraFaq.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsKendraFaq.DataAwsKendraFaq.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsKendraFaq.DataAwsKendraFaq.resetRegion">resetRegion</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsKendraFaq.DataAwsKendraFaq.resetTags">resetTags</a></code> | *No description.* |
 
 ---
@@ -270,6 +271,12 @@ public interpolationForAttribute(terraformAttribute: string): IResolvable
 public resetId(): void
 ```
 
+##### `resetRegion` <a name="resetRegion" id="@cdktf/provider-aws.dataAwsKendraFaq.DataAwsKendraFaq.resetRegion"></a>
+
+```typescript
+public resetRegion(): void
+```
+
 ##### `resetTags` <a name="resetTags" id="@cdktf/provider-aws.dataAwsKendraFaq.DataAwsKendraFaq.resetTags"></a>
 
 ```typescript
@@ -379,7 +386,7 @@ The construct id used in the generated config for the DataAwsKendraFaq to import
 
 The id of the existing DataAwsKendraFaq that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/kendra_faq#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/kendra_faq#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -421,10 +428,12 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.dataAwsKendraFaq.DataAwsKendraFaq.property.faqIdInput">faqIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsKendraFaq.DataAwsKendraFaq.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsKendraFaq.DataAwsKendraFaq.property.indexIdInput">indexIdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsKendraFaq.DataAwsKendraFaq.property.regionInput">regionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsKendraFaq.DataAwsKendraFaq.property.tagsInput">tagsInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsKendraFaq.DataAwsKendraFaq.property.faqId">faqId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsKendraFaq.DataAwsKendraFaq.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsKendraFaq.DataAwsKendraFaq.property.indexId">indexId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsKendraFaq.DataAwsKendraFaq.property.region">region</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsKendraFaq.DataAwsKendraFaq.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 
 ---
@@ -691,6 +700,16 @@ public readonly indexIdInput: string;
 
 ---
 
+##### `regionInput`<sup>Optional</sup> <a name="regionInput" id="@cdktf/provider-aws.dataAwsKendraFaq.DataAwsKendraFaq.property.regionInput"></a>
+
+```typescript
+public readonly regionInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `tagsInput`<sup>Optional</sup> <a name="tagsInput" id="@cdktf/provider-aws.dataAwsKendraFaq.DataAwsKendraFaq.property.tagsInput"></a>
 
 ```typescript
@@ -725,6 +744,16 @@ public readonly id: string;
 
 ```typescript
 public readonly indexId: string;
+```
+
+- *Type:* string
+
+---
+
+##### `region`<sup>Required</sup> <a name="region" id="@cdktf/provider-aws.dataAwsKendraFaq.DataAwsKendraFaq.property.region"></a>
+
+```typescript
+public readonly region: string;
 ```
 
 - *Type:* string
@@ -782,10 +811,11 @@ const dataAwsKendraFaqConfig: dataAwsKendraFaq.DataAwsKendraFaqConfig = { ... }
 | <code><a href="#@cdktf/provider-aws.dataAwsKendraFaq.DataAwsKendraFaqConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsKendraFaq.DataAwsKendraFaqConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsKendraFaq.DataAwsKendraFaqConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsKendraFaq.DataAwsKendraFaqConfig.property.faqId">faqId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/kendra_faq#faq_id DataAwsKendraFaq#faq_id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsKendraFaq.DataAwsKendraFaqConfig.property.indexId">indexId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/kendra_faq#index_id DataAwsKendraFaq#index_id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsKendraFaq.DataAwsKendraFaqConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/kendra_faq#id DataAwsKendraFaq#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsKendraFaq.DataAwsKendraFaqConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/kendra_faq#tags DataAwsKendraFaq#tags}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsKendraFaq.DataAwsKendraFaqConfig.property.faqId">faqId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/kendra_faq#faq_id DataAwsKendraFaq#faq_id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsKendraFaq.DataAwsKendraFaqConfig.property.indexId">indexId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/kendra_faq#index_id DataAwsKendraFaq#index_id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsKendraFaq.DataAwsKendraFaqConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/kendra_faq#id DataAwsKendraFaq#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsKendraFaq.DataAwsKendraFaqConfig.property.region">region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
+| <code><a href="#@cdktf/provider-aws.dataAwsKendraFaq.DataAwsKendraFaqConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/kendra_faq#tags DataAwsKendraFaq#tags}. |
 
 ---
 
@@ -867,7 +897,7 @@ public readonly faqId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/kendra_faq#faq_id DataAwsKendraFaq#faq_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/kendra_faq#faq_id DataAwsKendraFaq#faq_id}.
 
 ---
 
@@ -879,7 +909,7 @@ public readonly indexId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/kendra_faq#index_id DataAwsKendraFaq#index_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/kendra_faq#index_id DataAwsKendraFaq#index_id}.
 
 ---
 
@@ -891,10 +921,24 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/kendra_faq#id DataAwsKendraFaq#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/kendra_faq#id DataAwsKendraFaq#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdktf/provider-aws.dataAwsKendraFaq.DataAwsKendraFaqConfig.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/kendra_faq#region DataAwsKendraFaq#region}
 
 ---
 
@@ -906,7 +950,7 @@ public readonly tags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/kendra_faq#tags DataAwsKendraFaq#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/kendra_faq#tags DataAwsKendraFaq#tags}.
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### MskSingleScramSecretAssociation <a name="MskSingleScramSecretAssociation" id="@cdktf/provider-aws.mskSingleScramSecretAssociation.MskSingleScramSecretAssociation"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/msk_single_scram_secret_association aws_msk_single_scram_secret_association}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/msk_single_scram_secret_association aws_msk_single_scram_secret_association}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.mskSingleScramSecretAssociation.MskSingleScramSecretAssociation.Initializer"></a>
 
@@ -25,6 +25,7 @@ MskSingleScramSecretAssociation.Builder.create(Construct scope, java.lang.String
 //  .provisioners(RemoteExecProvisioner>)
     .clusterArn(java.lang.String)
     .secretArn(java.lang.String)
+//  .region(java.lang.String)
     .build();
 ```
 
@@ -39,8 +40,9 @@ MskSingleScramSecretAssociation.Builder.create(Construct scope, java.lang.String
 | <code><a href="#@cdktf/provider-aws.mskSingleScramSecretAssociation.MskSingleScramSecretAssociation.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.mskSingleScramSecretAssociation.MskSingleScramSecretAssociation.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.mskSingleScramSecretAssociation.MskSingleScramSecretAssociation.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.mskSingleScramSecretAssociation.MskSingleScramSecretAssociation.Initializer.parameter.clusterArn">clusterArn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/msk_single_scram_secret_association#cluster_arn MskSingleScramSecretAssociation#cluster_arn}. |
-| <code><a href="#@cdktf/provider-aws.mskSingleScramSecretAssociation.MskSingleScramSecretAssociation.Initializer.parameter.secretArn">secretArn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/msk_single_scram_secret_association#secret_arn MskSingleScramSecretAssociation#secret_arn}. |
+| <code><a href="#@cdktf/provider-aws.mskSingleScramSecretAssociation.MskSingleScramSecretAssociation.Initializer.parameter.clusterArn">clusterArn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/msk_single_scram_secret_association#cluster_arn MskSingleScramSecretAssociation#cluster_arn}. |
+| <code><a href="#@cdktf/provider-aws.mskSingleScramSecretAssociation.MskSingleScramSecretAssociation.Initializer.parameter.secretArn">secretArn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/msk_single_scram_secret_association#secret_arn MskSingleScramSecretAssociation#secret_arn}. |
+| <code><a href="#@cdktf/provider-aws.mskSingleScramSecretAssociation.MskSingleScramSecretAssociation.Initializer.parameter.region">region</a></code> | <code>java.lang.String</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
 
@@ -108,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/msk_single_scram_secret_association#cluster_arn MskSingleScramSecretAssociation#cluster_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/msk_single_scram_secret_association#cluster_arn MskSingleScramSecretAssociation#cluster_arn}.
 
 ---
 
@@ -116,7 +118,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/msk_single_scram_secret_association#secret_arn MskSingleScramSecretAssociation#secret_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/msk_single_scram_secret_association#secret_arn MskSingleScramSecretAssociation#secret_arn}.
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdktf/provider-aws.mskSingleScramSecretAssociation.MskSingleScramSecretAssociation.Initializer.parameter.region"></a>
+
+- *Type:* java.lang.String
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/msk_single_scram_secret_association#region MskSingleScramSecretAssociation#region}
 
 ---
 
@@ -147,6 +159,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktf/provider-aws.mskSingleScramSecretAssociation.MskSingleScramSecretAssociation.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktf/provider-aws.mskSingleScramSecretAssociation.MskSingleScramSecretAssociation.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-aws.mskSingleScramSecretAssociation.MskSingleScramSecretAssociation.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktf/provider-aws.mskSingleScramSecretAssociation.MskSingleScramSecretAssociation.resetRegion">resetRegion</a></code> | *No description.* |
 
 ---
 
@@ -440,6 +453,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `resetRegion` <a name="resetRegion" id="@cdktf/provider-aws.mskSingleScramSecretAssociation.MskSingleScramSecretAssociation.resetRegion"></a>
+
+```java
+public void resetRegion()
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -543,7 +562,7 @@ The construct id used in the generated config for the MskSingleScramSecretAssoci
 
 The id of the existing MskSingleScramSecretAssociation that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/msk_single_scram_secret_association#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/msk_single_scram_secret_association#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -575,8 +594,10 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.mskSingleScramSecretAssociation.MskSingleScramSecretAssociation.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.mskSingleScramSecretAssociation.MskSingleScramSecretAssociation.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.mskSingleScramSecretAssociation.MskSingleScramSecretAssociation.property.clusterArnInput">clusterArnInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.mskSingleScramSecretAssociation.MskSingleScramSecretAssociation.property.regionInput">regionInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.mskSingleScramSecretAssociation.MskSingleScramSecretAssociation.property.secretArnInput">secretArnInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.mskSingleScramSecretAssociation.MskSingleScramSecretAssociation.property.clusterArn">clusterArn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.mskSingleScramSecretAssociation.MskSingleScramSecretAssociation.property.region">region</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.mskSingleScramSecretAssociation.MskSingleScramSecretAssociation.property.secretArn">secretArn</a></code> | <code>java.lang.String</code> | *No description.* |
 
 ---
@@ -743,6 +764,16 @@ public java.lang.String getClusterArnInput();
 
 ---
 
+##### `regionInput`<sup>Optional</sup> <a name="regionInput" id="@cdktf/provider-aws.mskSingleScramSecretAssociation.MskSingleScramSecretAssociation.property.regionInput"></a>
+
+```java
+public java.lang.String getRegionInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `secretArnInput`<sup>Optional</sup> <a name="secretArnInput" id="@cdktf/provider-aws.mskSingleScramSecretAssociation.MskSingleScramSecretAssociation.property.secretArnInput"></a>
 
 ```java
@@ -757,6 +788,16 @@ public java.lang.String getSecretArnInput();
 
 ```java
 public java.lang.String getClusterArn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `region`<sup>Required</sup> <a name="region" id="@cdktf/provider-aws.mskSingleScramSecretAssociation.MskSingleScramSecretAssociation.property.region"></a>
+
+```java
+public java.lang.String getRegion();
 ```
 
 - *Type:* java.lang.String
@@ -814,6 +855,7 @@ MskSingleScramSecretAssociationConfig.builder()
 //  .provisioners(RemoteExecProvisioner>)
     .clusterArn(java.lang.String)
     .secretArn(java.lang.String)
+//  .region(java.lang.String)
     .build();
 ```
 
@@ -828,8 +870,9 @@ MskSingleScramSecretAssociationConfig.builder()
 | <code><a href="#@cdktf/provider-aws.mskSingleScramSecretAssociation.MskSingleScramSecretAssociationConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.mskSingleScramSecretAssociation.MskSingleScramSecretAssociationConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.mskSingleScramSecretAssociation.MskSingleScramSecretAssociationConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.mskSingleScramSecretAssociation.MskSingleScramSecretAssociationConfig.property.clusterArn">clusterArn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/msk_single_scram_secret_association#cluster_arn MskSingleScramSecretAssociation#cluster_arn}. |
-| <code><a href="#@cdktf/provider-aws.mskSingleScramSecretAssociation.MskSingleScramSecretAssociationConfig.property.secretArn">secretArn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/msk_single_scram_secret_association#secret_arn MskSingleScramSecretAssociation#secret_arn}. |
+| <code><a href="#@cdktf/provider-aws.mskSingleScramSecretAssociation.MskSingleScramSecretAssociationConfig.property.clusterArn">clusterArn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/msk_single_scram_secret_association#cluster_arn MskSingleScramSecretAssociation#cluster_arn}. |
+| <code><a href="#@cdktf/provider-aws.mskSingleScramSecretAssociation.MskSingleScramSecretAssociationConfig.property.secretArn">secretArn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/msk_single_scram_secret_association#secret_arn MskSingleScramSecretAssociation#secret_arn}. |
+| <code><a href="#@cdktf/provider-aws.mskSingleScramSecretAssociation.MskSingleScramSecretAssociationConfig.property.region">region</a></code> | <code>java.lang.String</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
 
@@ -911,7 +954,7 @@ public java.lang.String getClusterArn();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/msk_single_scram_secret_association#cluster_arn MskSingleScramSecretAssociation#cluster_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/msk_single_scram_secret_association#cluster_arn MskSingleScramSecretAssociation#cluster_arn}.
 
 ---
 
@@ -923,7 +966,21 @@ public java.lang.String getSecretArn();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/msk_single_scram_secret_association#secret_arn MskSingleScramSecretAssociation#secret_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/msk_single_scram_secret_association#secret_arn MskSingleScramSecretAssociation#secret_arn}.
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdktf/provider-aws.mskSingleScramSecretAssociation.MskSingleScramSecretAssociationConfig.property.region"></a>
+
+```java
+public java.lang.String getRegion();
+```
+
+- *Type:* java.lang.String
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/msk_single_scram_secret_association#region MskSingleScramSecretAssociation#region}
 
 ---
 

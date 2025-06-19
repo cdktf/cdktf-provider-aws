@@ -4,12 +4,12 @@
 
 ### DataAwsCloudwatchContributorManagedInsightRules <a name="DataAwsCloudwatchContributorManagedInsightRules" id="@cdktf/provider-aws.dataAwsCloudwatchContributorManagedInsightRules.DataAwsCloudwatchContributorManagedInsightRules"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/cloudwatch_contributor_managed_insight_rules aws_cloudwatch_contributor_managed_insight_rules}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/cloudwatch_contributor_managed_insight_rules aws_cloudwatch_contributor_managed_insight_rules}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsCloudwatchContributorManagedInsightRules.DataAwsCloudwatchContributorManagedInsightRules.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawscloudwatchcontributormanagedinsightrules"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawscloudwatchcontributormanagedinsightrules"
 
 dataawscloudwatchcontributormanagedinsightrules.NewDataAwsCloudwatchContributorManagedInsightRules(scope Construct, id *string, config DataAwsCloudwatchContributorManagedInsightRulesConfig) DataAwsCloudwatchContributorManagedInsightRules
 ```
@@ -67,6 +67,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.dataAwsCloudwatchContributorManagedInsightRules.DataAwsCloudwatchContributorManagedInsightRules.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsCloudwatchContributorManagedInsightRules.DataAwsCloudwatchContributorManagedInsightRules.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsCloudwatchContributorManagedInsightRules.DataAwsCloudwatchContributorManagedInsightRules.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsCloudwatchContributorManagedInsightRules.DataAwsCloudwatchContributorManagedInsightRules.resetRegion">ResetRegion</a></code> | *No description.* |
 
 ---
 
@@ -262,6 +263,12 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 
 ---
 
+##### `ResetRegion` <a name="ResetRegion" id="@cdktf/provider-aws.dataAwsCloudwatchContributorManagedInsightRules.DataAwsCloudwatchContributorManagedInsightRules.resetRegion"></a>
+
+```go
+func ResetRegion()
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -276,7 +283,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsCloudwatchContributorManagedInsightRules.DataAwsCloudwatchContributorManagedInsightRules.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawscloudwatchcontributormanagedinsightrules"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawscloudwatchcontributormanagedinsightrules"
 
 dataawscloudwatchcontributormanagedinsightrules.DataAwsCloudwatchContributorManagedInsightRules_IsConstruct(x interface{}) *bool
 ```
@@ -308,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsCloudwatchContributorManagedInsightRules.DataAwsCloudwatchContributorManagedInsightRules.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawscloudwatchcontributormanagedinsightrules"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawscloudwatchcontributormanagedinsightrules"
 
 dataawscloudwatchcontributormanagedinsightrules.DataAwsCloudwatchContributorManagedInsightRules_IsTerraformElement(x interface{}) *bool
 ```
@@ -322,7 +329,7 @@ dataawscloudwatchcontributormanagedinsightrules.DataAwsCloudwatchContributorMana
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsCloudwatchContributorManagedInsightRules.DataAwsCloudwatchContributorManagedInsightRules.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawscloudwatchcontributormanagedinsightrules"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawscloudwatchcontributormanagedinsightrules"
 
 dataawscloudwatchcontributormanagedinsightrules.DataAwsCloudwatchContributorManagedInsightRules_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -336,7 +343,7 @@ dataawscloudwatchcontributormanagedinsightrules.DataAwsCloudwatchContributorMana
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsCloudwatchContributorManagedInsightRules.DataAwsCloudwatchContributorManagedInsightRules.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawscloudwatchcontributormanagedinsightrules"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawscloudwatchcontributormanagedinsightrules"
 
 dataawscloudwatchcontributormanagedinsightrules.DataAwsCloudwatchContributorManagedInsightRules_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -365,7 +372,7 @@ The construct id used in the generated config for the DataAwsCloudwatchContribut
 
 The id of the existing DataAwsCloudwatchContributorManagedInsightRules that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/cloudwatch_contributor_managed_insight_rules#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/cloudwatch_contributor_managed_insight_rules#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -394,7 +401,9 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.dataAwsCloudwatchContributorManagedInsightRules.DataAwsCloudwatchContributorManagedInsightRules.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsCloudwatchContributorManagedInsightRules.DataAwsCloudwatchContributorManagedInsightRules.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsCloudwatchContributorManagedInsightRules.DataAwsCloudwatchContributorManagedInsightRules.property.managedRules">ManagedRules</a></code> | <code><a href="#@cdktf/provider-aws.dataAwsCloudwatchContributorManagedInsightRules.DataAwsCloudwatchContributorManagedInsightRulesManagedRulesList">DataAwsCloudwatchContributorManagedInsightRulesManagedRulesList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsCloudwatchContributorManagedInsightRules.DataAwsCloudwatchContributorManagedInsightRules.property.regionInput">RegionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsCloudwatchContributorManagedInsightRules.DataAwsCloudwatchContributorManagedInsightRules.property.resourceArnInput">ResourceArnInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsCloudwatchContributorManagedInsightRules.DataAwsCloudwatchContributorManagedInsightRules.property.region">Region</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsCloudwatchContributorManagedInsightRules.DataAwsCloudwatchContributorManagedInsightRules.property.resourceArn">ResourceArn</a></code> | <code>*string</code> | *No description.* |
 
 ---
@@ -531,10 +540,30 @@ func ManagedRules() DataAwsCloudwatchContributorManagedInsightRulesManagedRulesL
 
 ---
 
+##### `RegionInput`<sup>Optional</sup> <a name="RegionInput" id="@cdktf/provider-aws.dataAwsCloudwatchContributorManagedInsightRules.DataAwsCloudwatchContributorManagedInsightRules.property.regionInput"></a>
+
+```go
+func RegionInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `ResourceArnInput`<sup>Optional</sup> <a name="ResourceArnInput" id="@cdktf/provider-aws.dataAwsCloudwatchContributorManagedInsightRules.DataAwsCloudwatchContributorManagedInsightRules.property.resourceArnInput"></a>
 
 ```go
 func ResourceArnInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Region`<sup>Required</sup> <a name="Region" id="@cdktf/provider-aws.dataAwsCloudwatchContributorManagedInsightRules.DataAwsCloudwatchContributorManagedInsightRules.property.region"></a>
+
+```go
+func Region() *string
 ```
 
 - *Type:* *string
@@ -576,7 +605,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsCloudwatchContributorManagedInsightRules.DataAwsCloudwatchContributorManagedInsightRulesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawscloudwatchcontributormanagedinsightrules"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawscloudwatchcontributormanagedinsightrules"
 
 &dataawscloudwatchcontributormanagedinsightrules.DataAwsCloudwatchContributorManagedInsightRulesConfig {
 	Connection: interface{},
@@ -587,6 +616,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawscloudwatchcontribu
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	ResourceArn: *string,
+	Region: *string,
 }
 ```
 
@@ -601,7 +631,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawscloudwatchcontribu
 | <code><a href="#@cdktf/provider-aws.dataAwsCloudwatchContributorManagedInsightRules.DataAwsCloudwatchContributorManagedInsightRulesConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsCloudwatchContributorManagedInsightRules.DataAwsCloudwatchContributorManagedInsightRulesConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsCloudwatchContributorManagedInsightRules.DataAwsCloudwatchContributorManagedInsightRulesConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsCloudwatchContributorManagedInsightRules.DataAwsCloudwatchContributorManagedInsightRulesConfig.property.resourceArn">ResourceArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/cloudwatch_contributor_managed_insight_rules#resource_arn DataAwsCloudwatchContributorManagedInsightRules#resource_arn}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsCloudwatchContributorManagedInsightRules.DataAwsCloudwatchContributorManagedInsightRulesConfig.property.resourceArn">ResourceArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/cloudwatch_contributor_managed_insight_rules#resource_arn DataAwsCloudwatchContributorManagedInsightRules#resource_arn}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsCloudwatchContributorManagedInsightRules.DataAwsCloudwatchContributorManagedInsightRulesConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
 
@@ -683,7 +714,21 @@ ResourceArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/cloudwatch_contributor_managed_insight_rules#resource_arn DataAwsCloudwatchContributorManagedInsightRules#resource_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/cloudwatch_contributor_managed_insight_rules#resource_arn DataAwsCloudwatchContributorManagedInsightRules#resource_arn}.
+
+---
+
+##### `Region`<sup>Optional</sup> <a name="Region" id="@cdktf/provider-aws.dataAwsCloudwatchContributorManagedInsightRules.DataAwsCloudwatchContributorManagedInsightRulesConfig.property.region"></a>
+
+```go
+Region *string
+```
+
+- *Type:* *string
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/cloudwatch_contributor_managed_insight_rules#region DataAwsCloudwatchContributorManagedInsightRules#region}
 
 ---
 
@@ -692,7 +737,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsCloudwatchContributorManagedInsightRules.DataAwsCloudwatchContributorManagedInsightRulesManagedRules.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawscloudwatchcontributormanagedinsightrules"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawscloudwatchcontributormanagedinsightrules"
 
 &dataawscloudwatchcontributormanagedinsightrules.DataAwsCloudwatchContributorManagedInsightRulesManagedRules {
 
@@ -705,7 +750,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawscloudwatchcontribu
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsCloudwatchContributorManagedInsightRules.DataAwsCloudwatchContributorManagedInsightRulesManagedRulesRuleState.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawscloudwatchcontributormanagedinsightrules"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawscloudwatchcontributormanagedinsightrules"
 
 &dataawscloudwatchcontributormanagedinsightrules.DataAwsCloudwatchContributorManagedInsightRulesManagedRulesRuleState {
 
@@ -720,7 +765,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawscloudwatchcontribu
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsCloudwatchContributorManagedInsightRules.DataAwsCloudwatchContributorManagedInsightRulesManagedRulesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawscloudwatchcontributormanagedinsightrules"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawscloudwatchcontributormanagedinsightrules"
 
 dataawscloudwatchcontributormanagedinsightrules.NewDataAwsCloudwatchContributorManagedInsightRulesManagedRulesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsCloudwatchContributorManagedInsightRulesManagedRulesList
 ```
@@ -869,7 +914,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsCloudwatchContributorManagedInsightRules.DataAwsCloudwatchContributorManagedInsightRulesManagedRulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawscloudwatchcontributormanagedinsightrules"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawscloudwatchcontributormanagedinsightrules"
 
 dataawscloudwatchcontributormanagedinsightrules.NewDataAwsCloudwatchContributorManagedInsightRulesManagedRulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsCloudwatchContributorManagedInsightRulesManagedRulesOutputReference
 ```
@@ -1169,7 +1214,7 @@ func InternalValue() DataAwsCloudwatchContributorManagedInsightRulesManagedRules
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsCloudwatchContributorManagedInsightRules.DataAwsCloudwatchContributorManagedInsightRulesManagedRulesRuleStateList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawscloudwatchcontributormanagedinsightrules"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawscloudwatchcontributormanagedinsightrules"
 
 dataawscloudwatchcontributormanagedinsightrules.NewDataAwsCloudwatchContributorManagedInsightRulesManagedRulesRuleStateList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsCloudwatchContributorManagedInsightRulesManagedRulesRuleStateList
 ```
@@ -1318,7 +1363,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsCloudwatchContributorManagedInsightRules.DataAwsCloudwatchContributorManagedInsightRulesManagedRulesRuleStateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawscloudwatchcontributormanagedinsightrules"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawscloudwatchcontributormanagedinsightrules"
 
 dataawscloudwatchcontributormanagedinsightrules.NewDataAwsCloudwatchContributorManagedInsightRulesManagedRulesRuleStateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsCloudwatchContributorManagedInsightRulesManagedRulesRuleStateOutputReference
 ```

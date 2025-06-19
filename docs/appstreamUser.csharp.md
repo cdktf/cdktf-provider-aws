@@ -4,7 +4,7 @@
 
 ### AppstreamUser <a name="AppstreamUser" id="@cdktf/provider-aws.appstreamUser.AppstreamUser"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appstream_user aws_appstream_user}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appstream_user aws_appstream_user}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appstreamUser.AppstreamUser.Initializer"></a>
 
@@ -77,6 +77,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.appstreamUser.AppstreamUser.resetFirstName">ResetFirstName</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appstreamUser.AppstreamUser.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appstreamUser.AppstreamUser.resetLastName">ResetLastName</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appstreamUser.AppstreamUser.resetRegion">ResetRegion</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appstreamUser.AppstreamUser.resetSendEmailNotification">ResetSendEmailNotification</a></code> | *No description.* |
 
 ---
@@ -393,6 +394,12 @@ private void ResetId()
 private void ResetLastName()
 ```
 
+##### `ResetRegion` <a name="ResetRegion" id="@cdktf/provider-aws.appstreamUser.AppstreamUser.resetRegion"></a>
+
+```csharp
+private void ResetRegion()
+```
+
 ##### `ResetSendEmailNotification` <a name="ResetSendEmailNotification" id="@cdktf/provider-aws.appstreamUser.AppstreamUser.resetSendEmailNotification"></a>
 
 ```csharp
@@ -502,7 +509,7 @@ The construct id used in the generated config for the AppstreamUser to import.
 
 The id of the existing AppstreamUser that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appstream_user#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appstream_user#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -539,6 +546,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.appstreamUser.AppstreamUser.property.firstNameInput">FirstNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appstreamUser.AppstreamUser.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appstreamUser.AppstreamUser.property.lastNameInput">LastNameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appstreamUser.AppstreamUser.property.regionInput">RegionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appstreamUser.AppstreamUser.property.sendEmailNotificationInput">SendEmailNotificationInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appstreamUser.AppstreamUser.property.userNameInput">UserNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appstreamUser.AppstreamUser.property.authenticationType">AuthenticationType</a></code> | <code>string</code> | *No description.* |
@@ -546,6 +554,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.appstreamUser.AppstreamUser.property.firstName">FirstName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appstreamUser.AppstreamUser.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appstreamUser.AppstreamUser.property.lastName">LastName</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appstreamUser.AppstreamUser.property.region">Region</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appstreamUser.AppstreamUser.property.sendEmailNotification">SendEmailNotification</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appstreamUser.AppstreamUser.property.userName">UserName</a></code> | <code>string</code> | *No description.* |
 
@@ -763,6 +772,16 @@ public string LastNameInput { get; }
 
 ---
 
+##### `RegionInput`<sup>Optional</sup> <a name="RegionInput" id="@cdktf/provider-aws.appstreamUser.AppstreamUser.property.regionInput"></a>
+
+```csharp
+public string RegionInput { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `SendEmailNotificationInput`<sup>Optional</sup> <a name="SendEmailNotificationInput" id="@cdktf/provider-aws.appstreamUser.AppstreamUser.property.sendEmailNotificationInput"></a>
 
 ```csharp
@@ -833,6 +852,16 @@ public string LastName { get; }
 
 ---
 
+##### `Region`<sup>Required</sup> <a name="Region" id="@cdktf/provider-aws.appstreamUser.AppstreamUser.property.region"></a>
+
+```csharp
+public string Region { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `SendEmailNotification`<sup>Required</sup> <a name="SendEmailNotification" id="@cdktf/provider-aws.appstreamUser.AppstreamUser.property.sendEmailNotification"></a>
 
 ```csharp
@@ -894,6 +923,7 @@ new AppstreamUserConfig {
     string FirstName = null,
     string Id = null,
     string LastName = null,
+    string Region = null,
     object SendEmailNotification = null
 };
 ```
@@ -909,13 +939,14 @@ new AppstreamUserConfig {
 | <code><a href="#@cdktf/provider-aws.appstreamUser.AppstreamUserConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appstreamUser.AppstreamUserConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appstreamUser.AppstreamUserConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appstreamUser.AppstreamUserConfig.property.authenticationType">AuthenticationType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appstream_user#authentication_type AppstreamUser#authentication_type}. |
-| <code><a href="#@cdktf/provider-aws.appstreamUser.AppstreamUserConfig.property.userName">UserName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appstream_user#user_name AppstreamUser#user_name}. |
-| <code><a href="#@cdktf/provider-aws.appstreamUser.AppstreamUserConfig.property.enabled">Enabled</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appstream_user#enabled AppstreamUser#enabled}. |
-| <code><a href="#@cdktf/provider-aws.appstreamUser.AppstreamUserConfig.property.firstName">FirstName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appstream_user#first_name AppstreamUser#first_name}. |
-| <code><a href="#@cdktf/provider-aws.appstreamUser.AppstreamUserConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appstream_user#id AppstreamUser#id}. |
-| <code><a href="#@cdktf/provider-aws.appstreamUser.AppstreamUserConfig.property.lastName">LastName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appstream_user#last_name AppstreamUser#last_name}. |
-| <code><a href="#@cdktf/provider-aws.appstreamUser.AppstreamUserConfig.property.sendEmailNotification">SendEmailNotification</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appstream_user#send_email_notification AppstreamUser#send_email_notification}. |
+| <code><a href="#@cdktf/provider-aws.appstreamUser.AppstreamUserConfig.property.authenticationType">AuthenticationType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appstream_user#authentication_type AppstreamUser#authentication_type}. |
+| <code><a href="#@cdktf/provider-aws.appstreamUser.AppstreamUserConfig.property.userName">UserName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appstream_user#user_name AppstreamUser#user_name}. |
+| <code><a href="#@cdktf/provider-aws.appstreamUser.AppstreamUserConfig.property.enabled">Enabled</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appstream_user#enabled AppstreamUser#enabled}. |
+| <code><a href="#@cdktf/provider-aws.appstreamUser.AppstreamUserConfig.property.firstName">FirstName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appstream_user#first_name AppstreamUser#first_name}. |
+| <code><a href="#@cdktf/provider-aws.appstreamUser.AppstreamUserConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appstream_user#id AppstreamUser#id}. |
+| <code><a href="#@cdktf/provider-aws.appstreamUser.AppstreamUserConfig.property.lastName">LastName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appstream_user#last_name AppstreamUser#last_name}. |
+| <code><a href="#@cdktf/provider-aws.appstreamUser.AppstreamUserConfig.property.region">Region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
+| <code><a href="#@cdktf/provider-aws.appstreamUser.AppstreamUserConfig.property.sendEmailNotification">SendEmailNotification</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appstream_user#send_email_notification AppstreamUser#send_email_notification}. |
 
 ---
 
@@ -997,7 +1028,7 @@ public string AuthenticationType { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appstream_user#authentication_type AppstreamUser#authentication_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appstream_user#authentication_type AppstreamUser#authentication_type}.
 
 ---
 
@@ -1009,7 +1040,7 @@ public string UserName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appstream_user#user_name AppstreamUser#user_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appstream_user#user_name AppstreamUser#user_name}.
 
 ---
 
@@ -1021,7 +1052,7 @@ public object Enabled { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appstream_user#enabled AppstreamUser#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appstream_user#enabled AppstreamUser#enabled}.
 
 ---
 
@@ -1033,7 +1064,7 @@ public string FirstName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appstream_user#first_name AppstreamUser#first_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appstream_user#first_name AppstreamUser#first_name}.
 
 ---
 
@@ -1045,7 +1076,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appstream_user#id AppstreamUser#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appstream_user#id AppstreamUser#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1060,7 +1091,21 @@ public string LastName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appstream_user#last_name AppstreamUser#last_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appstream_user#last_name AppstreamUser#last_name}.
+
+---
+
+##### `Region`<sup>Optional</sup> <a name="Region" id="@cdktf/provider-aws.appstreamUser.AppstreamUserConfig.property.region"></a>
+
+```csharp
+public string Region { get; set; }
+```
+
+- *Type:* string
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appstream_user#region AppstreamUser#region}
 
 ---
 
@@ -1072,7 +1117,7 @@ public object SendEmailNotification { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appstream_user#send_email_notification AppstreamUser#send_email_notification}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appstream_user#send_email_notification AppstreamUser#send_email_notification}.
 
 ---
 

@@ -4,12 +4,12 @@
 
 ### RedshiftDataShareAuthorization <a name="RedshiftDataShareAuthorization" id="@cdktf/provider-aws.redshiftDataShareAuthorization.RedshiftDataShareAuthorization"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/redshift_data_share_authorization aws_redshift_data_share_authorization}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/redshift_data_share_authorization aws_redshift_data_share_authorization}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.redshiftDataShareAuthorization.RedshiftDataShareAuthorization.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/redshiftdatashareauthorization"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/redshiftdatashareauthorization"
 
 redshiftdatashareauthorization.NewRedshiftDataShareAuthorization(scope Construct, id *string, config RedshiftDataShareAuthorizationConfig) RedshiftDataShareAuthorization
 ```
@@ -74,6 +74,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.redshiftDataShareAuthorization.RedshiftDataShareAuthorization.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-aws.redshiftDataShareAuthorization.RedshiftDataShareAuthorization.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-aws.redshiftDataShareAuthorization.RedshiftDataShareAuthorization.resetAllowWrites">ResetAllowWrites</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.redshiftDataShareAuthorization.RedshiftDataShareAuthorization.resetRegion">ResetRegion</a></code> | *No description.* |
 
 ---
 
@@ -371,6 +372,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 func ResetAllowWrites()
 ```
 
+##### `ResetRegion` <a name="ResetRegion" id="@cdktf/provider-aws.redshiftDataShareAuthorization.RedshiftDataShareAuthorization.resetRegion"></a>
+
+```go
+func ResetRegion()
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -385,7 +392,7 @@ func ResetAllowWrites()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.redshiftDataShareAuthorization.RedshiftDataShareAuthorization.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/redshiftdatashareauthorization"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/redshiftdatashareauthorization"
 
 redshiftdatashareauthorization.RedshiftDataShareAuthorization_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +424,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.redshiftDataShareAuthorization.RedshiftDataShareAuthorization.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/redshiftdatashareauthorization"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/redshiftdatashareauthorization"
 
 redshiftdatashareauthorization.RedshiftDataShareAuthorization_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +438,7 @@ redshiftdatashareauthorization.RedshiftDataShareAuthorization_IsTerraformElement
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.redshiftDataShareAuthorization.RedshiftDataShareAuthorization.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/redshiftdatashareauthorization"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/redshiftdatashareauthorization"
 
 redshiftdatashareauthorization.RedshiftDataShareAuthorization_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +452,7 @@ redshiftdatashareauthorization.RedshiftDataShareAuthorization_IsTerraformResourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.redshiftDataShareAuthorization.RedshiftDataShareAuthorization.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/redshiftdatashareauthorization"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/redshiftdatashareauthorization"
 
 redshiftdatashareauthorization.RedshiftDataShareAuthorization_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -474,7 +481,7 @@ The construct id used in the generated config for the RedshiftDataShareAuthoriza
 
 The id of the existing RedshiftDataShareAuthorization that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/redshift_data_share_authorization#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/redshift_data_share_authorization#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -510,9 +517,11 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.redshiftDataShareAuthorization.RedshiftDataShareAuthorization.property.allowWritesInput">AllowWritesInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.redshiftDataShareAuthorization.RedshiftDataShareAuthorization.property.consumerIdentifierInput">ConsumerIdentifierInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.redshiftDataShareAuthorization.RedshiftDataShareAuthorization.property.dataShareArnInput">DataShareArnInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.redshiftDataShareAuthorization.RedshiftDataShareAuthorization.property.regionInput">RegionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.redshiftDataShareAuthorization.RedshiftDataShareAuthorization.property.allowWrites">AllowWrites</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.redshiftDataShareAuthorization.RedshiftDataShareAuthorization.property.consumerIdentifier">ConsumerIdentifier</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.redshiftDataShareAuthorization.RedshiftDataShareAuthorization.property.dataShareArn">DataShareArn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.redshiftDataShareAuthorization.RedshiftDataShareAuthorization.property.region">Region</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
@@ -718,6 +727,16 @@ func DataShareArnInput() *string
 
 ---
 
+##### `RegionInput`<sup>Optional</sup> <a name="RegionInput" id="@cdktf/provider-aws.redshiftDataShareAuthorization.RedshiftDataShareAuthorization.property.regionInput"></a>
+
+```go
+func RegionInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `AllowWrites`<sup>Required</sup> <a name="AllowWrites" id="@cdktf/provider-aws.redshiftDataShareAuthorization.RedshiftDataShareAuthorization.property.allowWrites"></a>
 
 ```go
@@ -742,6 +761,16 @@ func ConsumerIdentifier() *string
 
 ```go
 func DataShareArn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Region`<sup>Required</sup> <a name="Region" id="@cdktf/provider-aws.redshiftDataShareAuthorization.RedshiftDataShareAuthorization.property.region"></a>
+
+```go
+func Region() *string
 ```
 
 - *Type:* *string
@@ -773,7 +802,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.redshiftDataShareAuthorization.RedshiftDataShareAuthorizationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/redshiftdatashareauthorization"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/redshiftdatashareauthorization"
 
 &redshiftdatashareauthorization.RedshiftDataShareAuthorizationConfig {
 	Connection: interface{},
@@ -786,6 +815,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/redshiftdatashareauthoriz
 	ConsumerIdentifier: *string,
 	DataShareArn: *string,
 	AllowWrites: interface{},
+	Region: *string,
 }
 ```
 
@@ -800,9 +830,10 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/redshiftdatashareauthoriz
 | <code><a href="#@cdktf/provider-aws.redshiftDataShareAuthorization.RedshiftDataShareAuthorizationConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.redshiftDataShareAuthorization.RedshiftDataShareAuthorizationConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.redshiftDataShareAuthorization.RedshiftDataShareAuthorizationConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.redshiftDataShareAuthorization.RedshiftDataShareAuthorizationConfig.property.consumerIdentifier">ConsumerIdentifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/redshift_data_share_authorization#consumer_identifier RedshiftDataShareAuthorization#consumer_identifier}. |
-| <code><a href="#@cdktf/provider-aws.redshiftDataShareAuthorization.RedshiftDataShareAuthorizationConfig.property.dataShareArn">DataShareArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/redshift_data_share_authorization#data_share_arn RedshiftDataShareAuthorization#data_share_arn}. |
-| <code><a href="#@cdktf/provider-aws.redshiftDataShareAuthorization.RedshiftDataShareAuthorizationConfig.property.allowWrites">AllowWrites</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/redshift_data_share_authorization#allow_writes RedshiftDataShareAuthorization#allow_writes}. |
+| <code><a href="#@cdktf/provider-aws.redshiftDataShareAuthorization.RedshiftDataShareAuthorizationConfig.property.consumerIdentifier">ConsumerIdentifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/redshift_data_share_authorization#consumer_identifier RedshiftDataShareAuthorization#consumer_identifier}. |
+| <code><a href="#@cdktf/provider-aws.redshiftDataShareAuthorization.RedshiftDataShareAuthorizationConfig.property.dataShareArn">DataShareArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/redshift_data_share_authorization#data_share_arn RedshiftDataShareAuthorization#data_share_arn}. |
+| <code><a href="#@cdktf/provider-aws.redshiftDataShareAuthorization.RedshiftDataShareAuthorizationConfig.property.allowWrites">AllowWrites</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/redshift_data_share_authorization#allow_writes RedshiftDataShareAuthorization#allow_writes}. |
+| <code><a href="#@cdktf/provider-aws.redshiftDataShareAuthorization.RedshiftDataShareAuthorizationConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
 
@@ -884,7 +915,7 @@ ConsumerIdentifier *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/redshift_data_share_authorization#consumer_identifier RedshiftDataShareAuthorization#consumer_identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/redshift_data_share_authorization#consumer_identifier RedshiftDataShareAuthorization#consumer_identifier}.
 
 ---
 
@@ -896,7 +927,7 @@ DataShareArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/redshift_data_share_authorization#data_share_arn RedshiftDataShareAuthorization#data_share_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/redshift_data_share_authorization#data_share_arn RedshiftDataShareAuthorization#data_share_arn}.
 
 ---
 
@@ -908,7 +939,21 @@ AllowWrites interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/redshift_data_share_authorization#allow_writes RedshiftDataShareAuthorization#allow_writes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/redshift_data_share_authorization#allow_writes RedshiftDataShareAuthorization#allow_writes}.
+
+---
+
+##### `Region`<sup>Optional</sup> <a name="Region" id="@cdktf/provider-aws.redshiftDataShareAuthorization.RedshiftDataShareAuthorizationConfig.property.region"></a>
+
+```go
+Region *string
+```
+
+- *Type:* *string
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/redshift_data_share_authorization#region RedshiftDataShareAuthorization#region}
 
 ---
 

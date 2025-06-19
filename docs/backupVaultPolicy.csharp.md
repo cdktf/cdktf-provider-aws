@@ -4,7 +4,7 @@
 
 ### BackupVaultPolicy <a name="BackupVaultPolicy" id="@cdktf/provider-aws.backupVaultPolicy.BackupVaultPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/backup_vault_policy aws_backup_vault_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/backup_vault_policy aws_backup_vault_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.backupVaultPolicy.BackupVaultPolicy.Initializer"></a>
 
@@ -74,6 +74,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.backupVaultPolicy.BackupVaultPolicy.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-aws.backupVaultPolicy.BackupVaultPolicy.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-aws.backupVaultPolicy.BackupVaultPolicy.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.backupVaultPolicy.BackupVaultPolicy.resetRegion">ResetRegion</a></code> | *No description.* |
 
 ---
 
@@ -371,6 +372,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 private void ResetId()
 ```
 
+##### `ResetRegion` <a name="ResetRegion" id="@cdktf/provider-aws.backupVaultPolicy.BackupVaultPolicy.resetRegion"></a>
+
+```csharp
+private void ResetRegion()
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -474,7 +481,7 @@ The construct id used in the generated config for the BackupVaultPolicy to impor
 
 The id of the existing BackupVaultPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/backup_vault_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/backup_vault_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -508,9 +515,11 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.backupVaultPolicy.BackupVaultPolicy.property.backupVaultNameInput">BackupVaultNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.backupVaultPolicy.BackupVaultPolicy.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.backupVaultPolicy.BackupVaultPolicy.property.policyInput">PolicyInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.backupVaultPolicy.BackupVaultPolicy.property.regionInput">RegionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.backupVaultPolicy.BackupVaultPolicy.property.backupVaultName">BackupVaultName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.backupVaultPolicy.BackupVaultPolicy.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.backupVaultPolicy.BackupVaultPolicy.property.policy">Policy</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.backupVaultPolicy.BackupVaultPolicy.property.region">Region</a></code> | <code>string</code> | *No description.* |
 
 ---
 
@@ -696,6 +705,16 @@ public string PolicyInput { get; }
 
 ---
 
+##### `RegionInput`<sup>Optional</sup> <a name="RegionInput" id="@cdktf/provider-aws.backupVaultPolicy.BackupVaultPolicy.property.regionInput"></a>
+
+```csharp
+public string RegionInput { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `BackupVaultName`<sup>Required</sup> <a name="BackupVaultName" id="@cdktf/provider-aws.backupVaultPolicy.BackupVaultPolicy.property.backupVaultName"></a>
 
 ```csharp
@@ -720,6 +739,16 @@ public string Id { get; }
 
 ```csharp
 public string Policy { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Region`<sup>Required</sup> <a name="Region" id="@cdktf/provider-aws.backupVaultPolicy.BackupVaultPolicy.property.region"></a>
+
+```csharp
+public string Region { get; }
 ```
 
 - *Type:* string
@@ -763,7 +792,8 @@ new BackupVaultPolicyConfig {
     object[] Provisioners = null,
     string BackupVaultName,
     string Policy,
-    string Id = null
+    string Id = null,
+    string Region = null
 };
 ```
 
@@ -778,9 +808,10 @@ new BackupVaultPolicyConfig {
 | <code><a href="#@cdktf/provider-aws.backupVaultPolicy.BackupVaultPolicyConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.backupVaultPolicy.BackupVaultPolicyConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.backupVaultPolicy.BackupVaultPolicyConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupVaultPolicy.BackupVaultPolicyConfig.property.backupVaultName">BackupVaultName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/backup_vault_policy#backup_vault_name BackupVaultPolicy#backup_vault_name}. |
-| <code><a href="#@cdktf/provider-aws.backupVaultPolicy.BackupVaultPolicyConfig.property.policy">Policy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/backup_vault_policy#policy BackupVaultPolicy#policy}. |
-| <code><a href="#@cdktf/provider-aws.backupVaultPolicy.BackupVaultPolicyConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/backup_vault_policy#id BackupVaultPolicy#id}. |
+| <code><a href="#@cdktf/provider-aws.backupVaultPolicy.BackupVaultPolicyConfig.property.backupVaultName">BackupVaultName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/backup_vault_policy#backup_vault_name BackupVaultPolicy#backup_vault_name}. |
+| <code><a href="#@cdktf/provider-aws.backupVaultPolicy.BackupVaultPolicyConfig.property.policy">Policy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/backup_vault_policy#policy BackupVaultPolicy#policy}. |
+| <code><a href="#@cdktf/provider-aws.backupVaultPolicy.BackupVaultPolicyConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/backup_vault_policy#id BackupVaultPolicy#id}. |
+| <code><a href="#@cdktf/provider-aws.backupVaultPolicy.BackupVaultPolicyConfig.property.region">Region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
 
@@ -862,7 +893,7 @@ public string BackupVaultName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/backup_vault_policy#backup_vault_name BackupVaultPolicy#backup_vault_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/backup_vault_policy#backup_vault_name BackupVaultPolicy#backup_vault_name}.
 
 ---
 
@@ -874,7 +905,7 @@ public string Policy { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/backup_vault_policy#policy BackupVaultPolicy#policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/backup_vault_policy#policy BackupVaultPolicy#policy}.
 
 ---
 
@@ -886,10 +917,24 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/backup_vault_policy#id BackupVaultPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/backup_vault_policy#id BackupVaultPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `Region`<sup>Optional</sup> <a name="Region" id="@cdktf/provider-aws.backupVaultPolicy.BackupVaultPolicyConfig.property.region"></a>
+
+```csharp
+public string Region { get; set; }
+```
+
+- *Type:* string
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/backup_vault_policy#region BackupVaultPolicy#region}
 
 ---
 

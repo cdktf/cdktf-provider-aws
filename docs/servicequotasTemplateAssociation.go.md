@@ -4,12 +4,12 @@
 
 ### ServicequotasTemplateAssociation <a name="ServicequotasTemplateAssociation" id="@cdktf/provider-aws.servicequotasTemplateAssociation.ServicequotasTemplateAssociation"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/servicequotas_template_association aws_servicequotas_template_association}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/servicequotas_template_association aws_servicequotas_template_association}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.servicequotasTemplateAssociation.ServicequotasTemplateAssociation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/servicequotastemplateassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/servicequotastemplateassociation"
 
 servicequotastemplateassociation.NewServicequotasTemplateAssociation(scope Construct, id *string, config ServicequotasTemplateAssociationConfig) ServicequotasTemplateAssociation
 ```
@@ -73,6 +73,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.servicequotasTemplateAssociation.ServicequotasTemplateAssociation.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktf/provider-aws.servicequotasTemplateAssociation.ServicequotasTemplateAssociation.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-aws.servicequotasTemplateAssociation.ServicequotasTemplateAssociation.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktf/provider-aws.servicequotasTemplateAssociation.ServicequotasTemplateAssociation.resetRegion">ResetRegion</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.servicequotasTemplateAssociation.ServicequotasTemplateAssociation.resetSkipDestroy">ResetSkipDestroy</a></code> | *No description.* |
 
 ---
@@ -365,6 +366,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `ResetRegion` <a name="ResetRegion" id="@cdktf/provider-aws.servicequotasTemplateAssociation.ServicequotasTemplateAssociation.resetRegion"></a>
+
+```go
+func ResetRegion()
+```
+
 ##### `ResetSkipDestroy` <a name="ResetSkipDestroy" id="@cdktf/provider-aws.servicequotasTemplateAssociation.ServicequotasTemplateAssociation.resetSkipDestroy"></a>
 
 ```go
@@ -385,7 +392,7 @@ func ResetSkipDestroy()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.servicequotasTemplateAssociation.ServicequotasTemplateAssociation.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/servicequotastemplateassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/servicequotastemplateassociation"
 
 servicequotastemplateassociation.ServicequotasTemplateAssociation_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +424,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.servicequotasTemplateAssociation.ServicequotasTemplateAssociation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/servicequotastemplateassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/servicequotastemplateassociation"
 
 servicequotastemplateassociation.ServicequotasTemplateAssociation_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +438,7 @@ servicequotastemplateassociation.ServicequotasTemplateAssociation_IsTerraformEle
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.servicequotasTemplateAssociation.ServicequotasTemplateAssociation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/servicequotastemplateassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/servicequotastemplateassociation"
 
 servicequotastemplateassociation.ServicequotasTemplateAssociation_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +452,7 @@ servicequotastemplateassociation.ServicequotasTemplateAssociation_IsTerraformRes
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.servicequotasTemplateAssociation.ServicequotasTemplateAssociation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/servicequotastemplateassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/servicequotastemplateassociation"
 
 servicequotastemplateassociation.ServicequotasTemplateAssociation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -474,7 +481,7 @@ The construct id used in the generated config for the ServicequotasTemplateAssoc
 
 The id of the existing ServicequotasTemplateAssociation that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/servicequotas_template_association#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/servicequotas_template_association#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -506,7 +513,9 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.servicequotasTemplateAssociation.ServicequotasTemplateAssociation.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.servicequotasTemplateAssociation.ServicequotasTemplateAssociation.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.servicequotasTemplateAssociation.ServicequotasTemplateAssociation.property.status">Status</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.servicequotasTemplateAssociation.ServicequotasTemplateAssociation.property.regionInput">RegionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.servicequotasTemplateAssociation.ServicequotasTemplateAssociation.property.skipDestroyInput">SkipDestroyInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.servicequotasTemplateAssociation.ServicequotasTemplateAssociation.property.region">Region</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.servicequotasTemplateAssociation.ServicequotasTemplateAssociation.property.skipDestroy">SkipDestroy</a></code> | <code>interface{}</code> | *No description.* |
 
 ---
@@ -673,6 +682,16 @@ func Status() *string
 
 ---
 
+##### `RegionInput`<sup>Optional</sup> <a name="RegionInput" id="@cdktf/provider-aws.servicequotasTemplateAssociation.ServicequotasTemplateAssociation.property.regionInput"></a>
+
+```go
+func RegionInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `SkipDestroyInput`<sup>Optional</sup> <a name="SkipDestroyInput" id="@cdktf/provider-aws.servicequotasTemplateAssociation.ServicequotasTemplateAssociation.property.skipDestroyInput"></a>
 
 ```go
@@ -680,6 +699,16 @@ func SkipDestroyInput() interface{}
 ```
 
 - *Type:* interface{}
+
+---
+
+##### `Region`<sup>Required</sup> <a name="Region" id="@cdktf/provider-aws.servicequotasTemplateAssociation.ServicequotasTemplateAssociation.property.region"></a>
+
+```go
+func Region() *string
+```
+
+- *Type:* *string
 
 ---
 
@@ -718,7 +747,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.servicequotasTemplateAssociation.ServicequotasTemplateAssociationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/servicequotastemplateassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/servicequotastemplateassociation"
 
 &servicequotastemplateassociation.ServicequotasTemplateAssociationConfig {
 	Connection: interface{},
@@ -728,6 +757,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/servicequotastemplateasso
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
+	Region: *string,
 	SkipDestroy: interface{},
 }
 ```
@@ -743,7 +773,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/servicequotastemplateasso
 | <code><a href="#@cdktf/provider-aws.servicequotasTemplateAssociation.ServicequotasTemplateAssociationConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.servicequotasTemplateAssociation.ServicequotasTemplateAssociationConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.servicequotasTemplateAssociation.ServicequotasTemplateAssociationConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.servicequotasTemplateAssociation.ServicequotasTemplateAssociationConfig.property.skipDestroy">SkipDestroy</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/servicequotas_template_association#skip_destroy ServicequotasTemplateAssociation#skip_destroy}. |
+| <code><a href="#@cdktf/provider-aws.servicequotasTemplateAssociation.ServicequotasTemplateAssociationConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
+| <code><a href="#@cdktf/provider-aws.servicequotasTemplateAssociation.ServicequotasTemplateAssociationConfig.property.skipDestroy">SkipDestroy</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/servicequotas_template_association#skip_destroy ServicequotasTemplateAssociation#skip_destroy}. |
 
 ---
 
@@ -817,6 +848,20 @@ Provisioners *[]interface{}
 
 ---
 
+##### `Region`<sup>Optional</sup> <a name="Region" id="@cdktf/provider-aws.servicequotasTemplateAssociation.ServicequotasTemplateAssociationConfig.property.region"></a>
+
+```go
+Region *string
+```
+
+- *Type:* *string
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/servicequotas_template_association#region ServicequotasTemplateAssociation#region}
+
+---
+
 ##### `SkipDestroy`<sup>Optional</sup> <a name="SkipDestroy" id="@cdktf/provider-aws.servicequotasTemplateAssociation.ServicequotasTemplateAssociationConfig.property.skipDestroy"></a>
 
 ```go
@@ -825,7 +870,7 @@ SkipDestroy interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/servicequotas_template_association#skip_destroy ServicequotasTemplateAssociation#skip_destroy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/servicequotas_template_association#skip_destroy ServicequotasTemplateAssociation#skip_destroy}.
 
 ---
 

@@ -4,12 +4,12 @@
 
 ### DataAwsQuicksightGroup <a name="DataAwsQuicksightGroup" id="@cdktf/provider-aws.dataAwsQuicksightGroup.DataAwsQuicksightGroup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/quicksight_group aws_quicksight_group}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/quicksight_group aws_quicksight_group}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsQuicksightGroup.DataAwsQuicksightGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsquicksightgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsquicksightgroup"
 
 dataawsquicksightgroup.NewDataAwsQuicksightGroup(scope Construct, id *string, config DataAwsQuicksightGroupConfig) DataAwsQuicksightGroup
 ```
@@ -70,6 +70,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.dataAwsQuicksightGroup.DataAwsQuicksightGroup.resetAwsAccountId">ResetAwsAccountId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsQuicksightGroup.DataAwsQuicksightGroup.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsQuicksightGroup.DataAwsQuicksightGroup.resetNamespace">ResetNamespace</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsQuicksightGroup.DataAwsQuicksightGroup.resetRegion">ResetRegion</a></code> | *No description.* |
 
 ---
 
@@ -283,6 +284,12 @@ func ResetId()
 func ResetNamespace()
 ```
 
+##### `ResetRegion` <a name="ResetRegion" id="@cdktf/provider-aws.dataAwsQuicksightGroup.DataAwsQuicksightGroup.resetRegion"></a>
+
+```go
+func ResetRegion()
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -297,7 +304,7 @@ func ResetNamespace()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsQuicksightGroup.DataAwsQuicksightGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsquicksightgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsquicksightgroup"
 
 dataawsquicksightgroup.DataAwsQuicksightGroup_IsConstruct(x interface{}) *bool
 ```
@@ -329,7 +336,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsQuicksightGroup.DataAwsQuicksightGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsquicksightgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsquicksightgroup"
 
 dataawsquicksightgroup.DataAwsQuicksightGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -343,7 +350,7 @@ dataawsquicksightgroup.DataAwsQuicksightGroup_IsTerraformElement(x interface{}) 
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsQuicksightGroup.DataAwsQuicksightGroup.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsquicksightgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsquicksightgroup"
 
 dataawsquicksightgroup.DataAwsQuicksightGroup_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -357,7 +364,7 @@ dataawsquicksightgroup.DataAwsQuicksightGroup_IsTerraformDataSource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsQuicksightGroup.DataAwsQuicksightGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsquicksightgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsquicksightgroup"
 
 dataawsquicksightgroup.DataAwsQuicksightGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -386,7 +393,7 @@ The construct id used in the generated config for the DataAwsQuicksightGroup to 
 
 The id of the existing DataAwsQuicksightGroup that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/quicksight_group#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/quicksight_group#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -421,10 +428,12 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.dataAwsQuicksightGroup.DataAwsQuicksightGroup.property.groupNameInput">GroupNameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsQuicksightGroup.DataAwsQuicksightGroup.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsQuicksightGroup.DataAwsQuicksightGroup.property.namespaceInput">NamespaceInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsQuicksightGroup.DataAwsQuicksightGroup.property.regionInput">RegionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsQuicksightGroup.DataAwsQuicksightGroup.property.awsAccountId">AwsAccountId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsQuicksightGroup.DataAwsQuicksightGroup.property.groupName">GroupName</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsQuicksightGroup.DataAwsQuicksightGroup.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsQuicksightGroup.DataAwsQuicksightGroup.property.namespace">Namespace</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsQuicksightGroup.DataAwsQuicksightGroup.property.region">Region</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
@@ -620,6 +629,16 @@ func NamespaceInput() *string
 
 ---
 
+##### `RegionInput`<sup>Optional</sup> <a name="RegionInput" id="@cdktf/provider-aws.dataAwsQuicksightGroup.DataAwsQuicksightGroup.property.regionInput"></a>
+
+```go
+func RegionInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `AwsAccountId`<sup>Required</sup> <a name="AwsAccountId" id="@cdktf/provider-aws.dataAwsQuicksightGroup.DataAwsQuicksightGroup.property.awsAccountId"></a>
 
 ```go
@@ -660,6 +679,16 @@ func Namespace() *string
 
 ---
 
+##### `Region`<sup>Required</sup> <a name="Region" id="@cdktf/provider-aws.dataAwsQuicksightGroup.DataAwsQuicksightGroup.property.region"></a>
+
+```go
+func Region() *string
+```
+
+- *Type:* *string
+
+---
+
 #### Constants <a name="Constants" id="Constants"></a>
 
 | **Name** | **Type** | **Description** |
@@ -685,7 +714,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsQuicksightGroup.DataAwsQuicksightGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsquicksightgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsquicksightgroup"
 
 &dataawsquicksightgroup.DataAwsQuicksightGroupConfig {
 	Connection: interface{},
@@ -699,6 +728,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsquicksightgroup"
 	AwsAccountId: *string,
 	Id: *string,
 	Namespace: *string,
+	Region: *string,
 }
 ```
 
@@ -713,10 +743,11 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsquicksightgroup"
 | <code><a href="#@cdktf/provider-aws.dataAwsQuicksightGroup.DataAwsQuicksightGroupConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsQuicksightGroup.DataAwsQuicksightGroupConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsQuicksightGroup.DataAwsQuicksightGroupConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsQuicksightGroup.DataAwsQuicksightGroupConfig.property.groupName">GroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/quicksight_group#group_name DataAwsQuicksightGroup#group_name}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsQuicksightGroup.DataAwsQuicksightGroupConfig.property.awsAccountId">AwsAccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/quicksight_group#aws_account_id DataAwsQuicksightGroup#aws_account_id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsQuicksightGroup.DataAwsQuicksightGroupConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/quicksight_group#id DataAwsQuicksightGroup#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsQuicksightGroup.DataAwsQuicksightGroupConfig.property.namespace">Namespace</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/quicksight_group#namespace DataAwsQuicksightGroup#namespace}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsQuicksightGroup.DataAwsQuicksightGroupConfig.property.groupName">GroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/quicksight_group#group_name DataAwsQuicksightGroup#group_name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsQuicksightGroup.DataAwsQuicksightGroupConfig.property.awsAccountId">AwsAccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/quicksight_group#aws_account_id DataAwsQuicksightGroup#aws_account_id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsQuicksightGroup.DataAwsQuicksightGroupConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/quicksight_group#id DataAwsQuicksightGroup#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsQuicksightGroup.DataAwsQuicksightGroupConfig.property.namespace">Namespace</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/quicksight_group#namespace DataAwsQuicksightGroup#namespace}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsQuicksightGroup.DataAwsQuicksightGroupConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
 
@@ -798,7 +829,7 @@ GroupName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/quicksight_group#group_name DataAwsQuicksightGroup#group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/quicksight_group#group_name DataAwsQuicksightGroup#group_name}.
 
 ---
 
@@ -810,7 +841,7 @@ AwsAccountId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/quicksight_group#aws_account_id DataAwsQuicksightGroup#aws_account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/quicksight_group#aws_account_id DataAwsQuicksightGroup#aws_account_id}.
 
 ---
 
@@ -822,7 +853,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/quicksight_group#id DataAwsQuicksightGroup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/quicksight_group#id DataAwsQuicksightGroup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -837,7 +868,21 @@ Namespace *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/quicksight_group#namespace DataAwsQuicksightGroup#namespace}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/quicksight_group#namespace DataAwsQuicksightGroup#namespace}.
+
+---
+
+##### `Region`<sup>Optional</sup> <a name="Region" id="@cdktf/provider-aws.dataAwsQuicksightGroup.DataAwsQuicksightGroupConfig.property.region"></a>
+
+```go
+Region *string
+```
+
+- *Type:* *string
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/quicksight_group#region DataAwsQuicksightGroup#region}
 
 ---
 

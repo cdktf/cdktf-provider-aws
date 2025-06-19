@@ -4,7 +4,7 @@
 
 ### DataAwsAppmeshRoute <a name="DataAwsAppmeshRoute" id="@cdktf/provider-aws.dataAwsAppmeshRoute.DataAwsAppmeshRoute"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/appmesh_route aws_appmesh_route}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/appmesh_route aws_appmesh_route}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAppmeshRoute.DataAwsAppmeshRoute.Initializer"></a>
 
@@ -69,6 +69,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.dataAwsAppmeshRoute.DataAwsAppmeshRoute.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsAppmeshRoute.DataAwsAppmeshRoute.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsAppmeshRoute.DataAwsAppmeshRoute.resetMeshOwner">resetMeshOwner</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsAppmeshRoute.DataAwsAppmeshRoute.resetRegion">resetRegion</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsAppmeshRoute.DataAwsAppmeshRoute.resetTags">resetTags</a></code> | *No description.* |
 
 ---
@@ -277,6 +278,12 @@ public resetId(): void
 public resetMeshOwner(): void
 ```
 
+##### `resetRegion` <a name="resetRegion" id="@cdktf/provider-aws.dataAwsAppmeshRoute.DataAwsAppmeshRoute.resetRegion"></a>
+
+```typescript
+public resetRegion(): void
+```
+
 ##### `resetTags` <a name="resetTags" id="@cdktf/provider-aws.dataAwsAppmeshRoute.DataAwsAppmeshRoute.resetTags"></a>
 
 ```typescript
@@ -386,7 +393,7 @@ The construct id used in the generated config for the DataAwsAppmeshRoute to imp
 
 The id of the existing DataAwsAppmeshRoute that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/appmesh_route#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/appmesh_route#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -423,12 +430,14 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.dataAwsAppmeshRoute.DataAwsAppmeshRoute.property.meshNameInput">meshNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsAppmeshRoute.DataAwsAppmeshRoute.property.meshOwnerInput">meshOwnerInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsAppmeshRoute.DataAwsAppmeshRoute.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsAppmeshRoute.DataAwsAppmeshRoute.property.regionInput">regionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsAppmeshRoute.DataAwsAppmeshRoute.property.tagsInput">tagsInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsAppmeshRoute.DataAwsAppmeshRoute.property.virtualRouterNameInput">virtualRouterNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsAppmeshRoute.DataAwsAppmeshRoute.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsAppmeshRoute.DataAwsAppmeshRoute.property.meshName">meshName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsAppmeshRoute.DataAwsAppmeshRoute.property.meshOwner">meshOwner</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsAppmeshRoute.DataAwsAppmeshRoute.property.name">name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsAppmeshRoute.DataAwsAppmeshRoute.property.region">region</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsAppmeshRoute.DataAwsAppmeshRoute.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsAppmeshRoute.DataAwsAppmeshRoute.property.virtualRouterName">virtualRouterName</a></code> | <code>string</code> | *No description.* |
 
@@ -646,6 +655,16 @@ public readonly nameInput: string;
 
 ---
 
+##### `regionInput`<sup>Optional</sup> <a name="regionInput" id="@cdktf/provider-aws.dataAwsAppmeshRoute.DataAwsAppmeshRoute.property.regionInput"></a>
+
+```typescript
+public readonly regionInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `tagsInput`<sup>Optional</sup> <a name="tagsInput" id="@cdktf/provider-aws.dataAwsAppmeshRoute.DataAwsAppmeshRoute.property.tagsInput"></a>
 
 ```typescript
@@ -700,6 +719,16 @@ public readonly meshOwner: string;
 
 ```typescript
 public readonly name: string;
+```
+
+- *Type:* string
+
+---
+
+##### `region`<sup>Required</sup> <a name="region" id="@cdktf/provider-aws.dataAwsAppmeshRoute.DataAwsAppmeshRoute.property.region"></a>
+
+```typescript
+public readonly region: string;
 ```
 
 - *Type:* string
@@ -767,12 +796,13 @@ const dataAwsAppmeshRouteConfig: dataAwsAppmeshRoute.DataAwsAppmeshRouteConfig =
 | <code><a href="#@cdktf/provider-aws.dataAwsAppmeshRoute.DataAwsAppmeshRouteConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsAppmeshRoute.DataAwsAppmeshRouteConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsAppmeshRoute.DataAwsAppmeshRouteConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsAppmeshRoute.DataAwsAppmeshRouteConfig.property.meshName">meshName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/appmesh_route#mesh_name DataAwsAppmeshRoute#mesh_name}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsAppmeshRoute.DataAwsAppmeshRouteConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/appmesh_route#name DataAwsAppmeshRoute#name}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsAppmeshRoute.DataAwsAppmeshRouteConfig.property.virtualRouterName">virtualRouterName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/appmesh_route#virtual_router_name DataAwsAppmeshRoute#virtual_router_name}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsAppmeshRoute.DataAwsAppmeshRouteConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/appmesh_route#id DataAwsAppmeshRoute#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsAppmeshRoute.DataAwsAppmeshRouteConfig.property.meshOwner">meshOwner</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/appmesh_route#mesh_owner DataAwsAppmeshRoute#mesh_owner}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsAppmeshRoute.DataAwsAppmeshRouteConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/appmesh_route#tags DataAwsAppmeshRoute#tags}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsAppmeshRoute.DataAwsAppmeshRouteConfig.property.meshName">meshName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/appmesh_route#mesh_name DataAwsAppmeshRoute#mesh_name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsAppmeshRoute.DataAwsAppmeshRouteConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/appmesh_route#name DataAwsAppmeshRoute#name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsAppmeshRoute.DataAwsAppmeshRouteConfig.property.virtualRouterName">virtualRouterName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/appmesh_route#virtual_router_name DataAwsAppmeshRoute#virtual_router_name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsAppmeshRoute.DataAwsAppmeshRouteConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/appmesh_route#id DataAwsAppmeshRoute#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsAppmeshRoute.DataAwsAppmeshRouteConfig.property.meshOwner">meshOwner</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/appmesh_route#mesh_owner DataAwsAppmeshRoute#mesh_owner}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsAppmeshRoute.DataAwsAppmeshRouteConfig.property.region">region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
+| <code><a href="#@cdktf/provider-aws.dataAwsAppmeshRoute.DataAwsAppmeshRouteConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/appmesh_route#tags DataAwsAppmeshRoute#tags}. |
 
 ---
 
@@ -854,7 +884,7 @@ public readonly meshName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/appmesh_route#mesh_name DataAwsAppmeshRoute#mesh_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/appmesh_route#mesh_name DataAwsAppmeshRoute#mesh_name}.
 
 ---
 
@@ -866,7 +896,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/appmesh_route#name DataAwsAppmeshRoute#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/appmesh_route#name DataAwsAppmeshRoute#name}.
 
 ---
 
@@ -878,7 +908,7 @@ public readonly virtualRouterName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/appmesh_route#virtual_router_name DataAwsAppmeshRoute#virtual_router_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/appmesh_route#virtual_router_name DataAwsAppmeshRoute#virtual_router_name}.
 
 ---
 
@@ -890,7 +920,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/appmesh_route#id DataAwsAppmeshRoute#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/appmesh_route#id DataAwsAppmeshRoute#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -905,7 +935,21 @@ public readonly meshOwner: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/appmesh_route#mesh_owner DataAwsAppmeshRoute#mesh_owner}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/appmesh_route#mesh_owner DataAwsAppmeshRoute#mesh_owner}.
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdktf/provider-aws.dataAwsAppmeshRoute.DataAwsAppmeshRouteConfig.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/appmesh_route#region DataAwsAppmeshRoute#region}
 
 ---
 
@@ -917,7 +961,7 @@ public readonly tags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/appmesh_route#tags DataAwsAppmeshRoute#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/appmesh_route#tags DataAwsAppmeshRoute#tags}.
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### DetectiveMember <a name="DetectiveMember" id="@cdktf/provider-aws.detectiveMember.DetectiveMember"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/detective_member aws_detective_member}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/detective_member aws_detective_member}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.detectiveMember.DetectiveMember.Initializer"></a>
 
@@ -76,6 +76,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.detectiveMember.DetectiveMember.resetDisableEmailNotification">ResetDisableEmailNotification</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.detectiveMember.DetectiveMember.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.detectiveMember.DetectiveMember.resetMessage">ResetMessage</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.detectiveMember.DetectiveMember.resetRegion">ResetRegion</a></code> | *No description.* |
 
 ---
 
@@ -385,6 +386,12 @@ private void ResetId()
 private void ResetMessage()
 ```
 
+##### `ResetRegion` <a name="ResetRegion" id="@cdktf/provider-aws.detectiveMember.DetectiveMember.resetRegion"></a>
+
+```csharp
+private void ResetRegion()
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -488,7 +495,7 @@ The construct id used in the generated config for the DetectiveMember to import.
 
 The id of the existing DetectiveMember that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/detective_member#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/detective_member#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -530,12 +537,14 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.detectiveMember.DetectiveMember.property.graphArnInput">GraphArnInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.detectiveMember.DetectiveMember.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.detectiveMember.DetectiveMember.property.messageInput">MessageInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.detectiveMember.DetectiveMember.property.regionInput">RegionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.detectiveMember.DetectiveMember.property.accountId">AccountId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.detectiveMember.DetectiveMember.property.disableEmailNotification">DisableEmailNotification</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.detectiveMember.DetectiveMember.property.emailAddress">EmailAddress</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.detectiveMember.DetectiveMember.property.graphArn">GraphArn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.detectiveMember.DetectiveMember.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.detectiveMember.DetectiveMember.property.message">Message</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.detectiveMember.DetectiveMember.property.region">Region</a></code> | <code>string</code> | *No description.* |
 
 ---
 
@@ -801,6 +810,16 @@ public string MessageInput { get; }
 
 ---
 
+##### `RegionInput`<sup>Optional</sup> <a name="RegionInput" id="@cdktf/provider-aws.detectiveMember.DetectiveMember.property.regionInput"></a>
+
+```csharp
+public string RegionInput { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `AccountId`<sup>Required</sup> <a name="AccountId" id="@cdktf/provider-aws.detectiveMember.DetectiveMember.property.accountId"></a>
 
 ```csharp
@@ -861,6 +880,16 @@ public string Message { get; }
 
 ---
 
+##### `Region`<sup>Required</sup> <a name="Region" id="@cdktf/provider-aws.detectiveMember.DetectiveMember.property.region"></a>
+
+```csharp
+public string Region { get; }
+```
+
+- *Type:* string
+
+---
+
 #### Constants <a name="Constants" id="Constants"></a>
 
 | **Name** | **Type** | **Description** |
@@ -901,7 +930,8 @@ new DetectiveMemberConfig {
     string GraphArn,
     object DisableEmailNotification = null,
     string Id = null,
-    string Message = null
+    string Message = null,
+    string Region = null
 };
 ```
 
@@ -916,12 +946,13 @@ new DetectiveMemberConfig {
 | <code><a href="#@cdktf/provider-aws.detectiveMember.DetectiveMemberConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.detectiveMember.DetectiveMemberConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.detectiveMember.DetectiveMemberConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.detectiveMember.DetectiveMemberConfig.property.accountId">AccountId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/detective_member#account_id DetectiveMember#account_id}. |
-| <code><a href="#@cdktf/provider-aws.detectiveMember.DetectiveMemberConfig.property.emailAddress">EmailAddress</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/detective_member#email_address DetectiveMember#email_address}. |
-| <code><a href="#@cdktf/provider-aws.detectiveMember.DetectiveMemberConfig.property.graphArn">GraphArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/detective_member#graph_arn DetectiveMember#graph_arn}. |
-| <code><a href="#@cdktf/provider-aws.detectiveMember.DetectiveMemberConfig.property.disableEmailNotification">DisableEmailNotification</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/detective_member#disable_email_notification DetectiveMember#disable_email_notification}. |
-| <code><a href="#@cdktf/provider-aws.detectiveMember.DetectiveMemberConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/detective_member#id DetectiveMember#id}. |
-| <code><a href="#@cdktf/provider-aws.detectiveMember.DetectiveMemberConfig.property.message">Message</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/detective_member#message DetectiveMember#message}. |
+| <code><a href="#@cdktf/provider-aws.detectiveMember.DetectiveMemberConfig.property.accountId">AccountId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/detective_member#account_id DetectiveMember#account_id}. |
+| <code><a href="#@cdktf/provider-aws.detectiveMember.DetectiveMemberConfig.property.emailAddress">EmailAddress</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/detective_member#email_address DetectiveMember#email_address}. |
+| <code><a href="#@cdktf/provider-aws.detectiveMember.DetectiveMemberConfig.property.graphArn">GraphArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/detective_member#graph_arn DetectiveMember#graph_arn}. |
+| <code><a href="#@cdktf/provider-aws.detectiveMember.DetectiveMemberConfig.property.disableEmailNotification">DisableEmailNotification</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/detective_member#disable_email_notification DetectiveMember#disable_email_notification}. |
+| <code><a href="#@cdktf/provider-aws.detectiveMember.DetectiveMemberConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/detective_member#id DetectiveMember#id}. |
+| <code><a href="#@cdktf/provider-aws.detectiveMember.DetectiveMemberConfig.property.message">Message</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/detective_member#message DetectiveMember#message}. |
+| <code><a href="#@cdktf/provider-aws.detectiveMember.DetectiveMemberConfig.property.region">Region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
 
@@ -1003,7 +1034,7 @@ public string AccountId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/detective_member#account_id DetectiveMember#account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/detective_member#account_id DetectiveMember#account_id}.
 
 ---
 
@@ -1015,7 +1046,7 @@ public string EmailAddress { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/detective_member#email_address DetectiveMember#email_address}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/detective_member#email_address DetectiveMember#email_address}.
 
 ---
 
@@ -1027,7 +1058,7 @@ public string GraphArn { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/detective_member#graph_arn DetectiveMember#graph_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/detective_member#graph_arn DetectiveMember#graph_arn}.
 
 ---
 
@@ -1039,7 +1070,7 @@ public object DisableEmailNotification { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/detective_member#disable_email_notification DetectiveMember#disable_email_notification}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/detective_member#disable_email_notification DetectiveMember#disable_email_notification}.
 
 ---
 
@@ -1051,7 +1082,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/detective_member#id DetectiveMember#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/detective_member#id DetectiveMember#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1066,7 +1097,21 @@ public string Message { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/detective_member#message DetectiveMember#message}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/detective_member#message DetectiveMember#message}.
+
+---
+
+##### `Region`<sup>Optional</sup> <a name="Region" id="@cdktf/provider-aws.detectiveMember.DetectiveMemberConfig.property.region"></a>
+
+```csharp
+public string Region { get; set; }
+```
+
+- *Type:* string
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/detective_member#region DetectiveMember#region}
 
 ---
 

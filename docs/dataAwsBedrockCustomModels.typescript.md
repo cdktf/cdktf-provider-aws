@@ -4,7 +4,7 @@
 
 ### DataAwsBedrockCustomModels <a name="DataAwsBedrockCustomModels" id="@cdktf/provider-aws.dataAwsBedrockCustomModels.DataAwsBedrockCustomModels"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/bedrock_custom_models aws_bedrock_custom_models}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/bedrock_custom_models aws_bedrock_custom_models}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsBedrockCustomModels.DataAwsBedrockCustomModels.Initializer"></a>
 
@@ -67,6 +67,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.dataAwsBedrockCustomModels.DataAwsBedrockCustomModels.getStringAttribute">getStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsBedrockCustomModels.DataAwsBedrockCustomModels.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsBedrockCustomModels.DataAwsBedrockCustomModels.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsBedrockCustomModels.DataAwsBedrockCustomModels.resetRegion">resetRegion</a></code> | *No description.* |
 
 ---
 
@@ -262,6 +263,12 @@ public interpolationForAttribute(terraformAttribute: string): IResolvable
 
 ---
 
+##### `resetRegion` <a name="resetRegion" id="@cdktf/provider-aws.dataAwsBedrockCustomModels.DataAwsBedrockCustomModels.resetRegion"></a>
+
+```typescript
+public resetRegion(): void
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -365,7 +372,7 @@ The construct id used in the generated config for the DataAwsBedrockCustomModels
 
 The id of the existing DataAwsBedrockCustomModels that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/bedrock_custom_models#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/bedrock_custom_models#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -395,6 +402,8 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.dataAwsBedrockCustomModels.DataAwsBedrockCustomModels.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsBedrockCustomModels.DataAwsBedrockCustomModels.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsBedrockCustomModels.DataAwsBedrockCustomModels.property.modelSummaries">modelSummaries</a></code> | <code><a href="#@cdktf/provider-aws.dataAwsBedrockCustomModels.DataAwsBedrockCustomModelsModelSummariesList">DataAwsBedrockCustomModelsModelSummariesList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsBedrockCustomModels.DataAwsBedrockCustomModels.property.regionInput">regionInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsBedrockCustomModels.DataAwsBedrockCustomModels.property.region">region</a></code> | <code>string</code> | *No description.* |
 
 ---
 
@@ -540,6 +549,26 @@ public readonly modelSummaries: DataAwsBedrockCustomModelsModelSummariesList;
 
 ---
 
+##### `regionInput`<sup>Optional</sup> <a name="regionInput" id="@cdktf/provider-aws.dataAwsBedrockCustomModels.DataAwsBedrockCustomModels.property.regionInput"></a>
+
+```typescript
+public readonly regionInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `region`<sup>Required</sup> <a name="region" id="@cdktf/provider-aws.dataAwsBedrockCustomModels.DataAwsBedrockCustomModels.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+---
+
 #### Constants <a name="Constants" id="Constants"></a>
 
 | **Name** | **Type** | **Description** |
@@ -581,6 +610,7 @@ const dataAwsBedrockCustomModelsConfig: dataAwsBedrockCustomModels.DataAwsBedroc
 | <code><a href="#@cdktf/provider-aws.dataAwsBedrockCustomModels.DataAwsBedrockCustomModelsConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsBedrockCustomModels.DataAwsBedrockCustomModelsConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsBedrockCustomModels.DataAwsBedrockCustomModelsConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsBedrockCustomModels.DataAwsBedrockCustomModelsConfig.property.region">region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
 
@@ -651,6 +681,20 @@ public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExe
 ```
 
 - *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdktf/provider-aws.dataAwsBedrockCustomModels.DataAwsBedrockCustomModelsConfig.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/bedrock_custom_models#region DataAwsBedrockCustomModels#region}
 
 ---
 

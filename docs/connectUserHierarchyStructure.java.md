@@ -4,7 +4,7 @@
 
 ### ConnectUserHierarchyStructure <a name="ConnectUserHierarchyStructure" id="@cdktf/provider-aws.connectUserHierarchyStructure.ConnectUserHierarchyStructure"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/connect_user_hierarchy_structure aws_connect_user_hierarchy_structure}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/connect_user_hierarchy_structure aws_connect_user_hierarchy_structure}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.connectUserHierarchyStructure.ConnectUserHierarchyStructure.Initializer"></a>
 
@@ -26,6 +26,7 @@ ConnectUserHierarchyStructure.Builder.create(Construct scope, java.lang.String i
     .hierarchyStructure(ConnectUserHierarchyStructureHierarchyStructure)
     .instanceId(java.lang.String)
 //  .id(java.lang.String)
+//  .region(java.lang.String)
     .build();
 ```
 
@@ -41,8 +42,9 @@ ConnectUserHierarchyStructure.Builder.create(Construct scope, java.lang.String i
 | <code><a href="#@cdktf/provider-aws.connectUserHierarchyStructure.ConnectUserHierarchyStructure.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.connectUserHierarchyStructure.ConnectUserHierarchyStructure.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.connectUserHierarchyStructure.ConnectUserHierarchyStructure.Initializer.parameter.hierarchyStructure">hierarchyStructure</a></code> | <code><a href="#@cdktf/provider-aws.connectUserHierarchyStructure.ConnectUserHierarchyStructureHierarchyStructure">ConnectUserHierarchyStructureHierarchyStructure</a></code> | hierarchy_structure block. |
-| <code><a href="#@cdktf/provider-aws.connectUserHierarchyStructure.ConnectUserHierarchyStructure.Initializer.parameter.instanceId">instanceId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/connect_user_hierarchy_structure#instance_id ConnectUserHierarchyStructure#instance_id}. |
-| <code><a href="#@cdktf/provider-aws.connectUserHierarchyStructure.ConnectUserHierarchyStructure.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/connect_user_hierarchy_structure#id ConnectUserHierarchyStructure#id}. |
+| <code><a href="#@cdktf/provider-aws.connectUserHierarchyStructure.ConnectUserHierarchyStructure.Initializer.parameter.instanceId">instanceId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/connect_user_hierarchy_structure#instance_id ConnectUserHierarchyStructure#instance_id}. |
+| <code><a href="#@cdktf/provider-aws.connectUserHierarchyStructure.ConnectUserHierarchyStructure.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/connect_user_hierarchy_structure#id ConnectUserHierarchyStructure#id}. |
+| <code><a href="#@cdktf/provider-aws.connectUserHierarchyStructure.ConnectUserHierarchyStructure.Initializer.parameter.region">region</a></code> | <code>java.lang.String</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
 
@@ -112,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 hierarchy_structure block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/connect_user_hierarchy_structure#hierarchy_structure ConnectUserHierarchyStructure#hierarchy_structure}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/connect_user_hierarchy_structure#hierarchy_structure ConnectUserHierarchyStructure#hierarchy_structure}
 
 ---
 
@@ -120,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/connect_user_hierarchy_structure#instance_id ConnectUserHierarchyStructure#instance_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/connect_user_hierarchy_structure#instance_id ConnectUserHierarchyStructure#instance_id}.
 
 ---
 
@@ -128,10 +130,20 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/connect_user_hierarchy_structure#id ConnectUserHierarchyStructure#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/connect_user_hierarchy_structure#id ConnectUserHierarchyStructure#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdktf/provider-aws.connectUserHierarchyStructure.ConnectUserHierarchyStructure.Initializer.parameter.region"></a>
+
+- *Type:* java.lang.String
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/connect_user_hierarchy_structure#region ConnectUserHierarchyStructure#region}
 
 ---
 
@@ -164,6 +176,7 @@ If you experience problems setting this value it might not be settable. Please t
 | <code><a href="#@cdktf/provider-aws.connectUserHierarchyStructure.ConnectUserHierarchyStructure.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-aws.connectUserHierarchyStructure.ConnectUserHierarchyStructure.putHierarchyStructure">putHierarchyStructure</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.connectUserHierarchyStructure.ConnectUserHierarchyStructure.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.connectUserHierarchyStructure.ConnectUserHierarchyStructure.resetRegion">resetRegion</a></code> | *No description.* |
 
 ---
 
@@ -475,6 +488,12 @@ public void putHierarchyStructure(ConnectUserHierarchyStructureHierarchyStructur
 public void resetId()
 ```
 
+##### `resetRegion` <a name="resetRegion" id="@cdktf/provider-aws.connectUserHierarchyStructure.ConnectUserHierarchyStructure.resetRegion"></a>
+
+```java
+public void resetRegion()
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -578,7 +597,7 @@ The construct id used in the generated config for the ConnectUserHierarchyStruct
 
 The id of the existing ConnectUserHierarchyStructure that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/connect_user_hierarchy_structure#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/connect_user_hierarchy_structure#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -612,8 +631,10 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.connectUserHierarchyStructure.ConnectUserHierarchyStructure.property.hierarchyStructureInput">hierarchyStructureInput</a></code> | <code><a href="#@cdktf/provider-aws.connectUserHierarchyStructure.ConnectUserHierarchyStructureHierarchyStructure">ConnectUserHierarchyStructureHierarchyStructure</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.connectUserHierarchyStructure.ConnectUserHierarchyStructure.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.connectUserHierarchyStructure.ConnectUserHierarchyStructure.property.instanceIdInput">instanceIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.connectUserHierarchyStructure.ConnectUserHierarchyStructure.property.regionInput">regionInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.connectUserHierarchyStructure.ConnectUserHierarchyStructure.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.connectUserHierarchyStructure.ConnectUserHierarchyStructure.property.instanceId">instanceId</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.connectUserHierarchyStructure.ConnectUserHierarchyStructure.property.region">region</a></code> | <code>java.lang.String</code> | *No description.* |
 
 ---
 
@@ -799,6 +820,16 @@ public java.lang.String getInstanceIdInput();
 
 ---
 
+##### `regionInput`<sup>Optional</sup> <a name="regionInput" id="@cdktf/provider-aws.connectUserHierarchyStructure.ConnectUserHierarchyStructure.property.regionInput"></a>
+
+```java
+public java.lang.String getRegionInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.connectUserHierarchyStructure.ConnectUserHierarchyStructure.property.id"></a>
 
 ```java
@@ -813,6 +844,16 @@ public java.lang.String getId();
 
 ```java
 public java.lang.String getInstanceId();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `region`<sup>Required</sup> <a name="region" id="@cdktf/provider-aws.connectUserHierarchyStructure.ConnectUserHierarchyStructure.property.region"></a>
+
+```java
+public java.lang.String getRegion();
 ```
 
 - *Type:* java.lang.String
@@ -861,6 +902,7 @@ ConnectUserHierarchyStructureConfig.builder()
     .hierarchyStructure(ConnectUserHierarchyStructureHierarchyStructure)
     .instanceId(java.lang.String)
 //  .id(java.lang.String)
+//  .region(java.lang.String)
     .build();
 ```
 
@@ -876,8 +918,9 @@ ConnectUserHierarchyStructureConfig.builder()
 | <code><a href="#@cdktf/provider-aws.connectUserHierarchyStructure.ConnectUserHierarchyStructureConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.connectUserHierarchyStructure.ConnectUserHierarchyStructureConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.connectUserHierarchyStructure.ConnectUserHierarchyStructureConfig.property.hierarchyStructure">hierarchyStructure</a></code> | <code><a href="#@cdktf/provider-aws.connectUserHierarchyStructure.ConnectUserHierarchyStructureHierarchyStructure">ConnectUserHierarchyStructureHierarchyStructure</a></code> | hierarchy_structure block. |
-| <code><a href="#@cdktf/provider-aws.connectUserHierarchyStructure.ConnectUserHierarchyStructureConfig.property.instanceId">instanceId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/connect_user_hierarchy_structure#instance_id ConnectUserHierarchyStructure#instance_id}. |
-| <code><a href="#@cdktf/provider-aws.connectUserHierarchyStructure.ConnectUserHierarchyStructureConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/connect_user_hierarchy_structure#id ConnectUserHierarchyStructure#id}. |
+| <code><a href="#@cdktf/provider-aws.connectUserHierarchyStructure.ConnectUserHierarchyStructureConfig.property.instanceId">instanceId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/connect_user_hierarchy_structure#instance_id ConnectUserHierarchyStructure#instance_id}. |
+| <code><a href="#@cdktf/provider-aws.connectUserHierarchyStructure.ConnectUserHierarchyStructureConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/connect_user_hierarchy_structure#id ConnectUserHierarchyStructure#id}. |
+| <code><a href="#@cdktf/provider-aws.connectUserHierarchyStructure.ConnectUserHierarchyStructureConfig.property.region">region</a></code> | <code>java.lang.String</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
 
@@ -961,7 +1004,7 @@ public ConnectUserHierarchyStructureHierarchyStructure getHierarchyStructure();
 
 hierarchy_structure block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/connect_user_hierarchy_structure#hierarchy_structure ConnectUserHierarchyStructure#hierarchy_structure}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/connect_user_hierarchy_structure#hierarchy_structure ConnectUserHierarchyStructure#hierarchy_structure}
 
 ---
 
@@ -973,7 +1016,7 @@ public java.lang.String getInstanceId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/connect_user_hierarchy_structure#instance_id ConnectUserHierarchyStructure#instance_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/connect_user_hierarchy_structure#instance_id ConnectUserHierarchyStructure#instance_id}.
 
 ---
 
@@ -985,10 +1028,24 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/connect_user_hierarchy_structure#id ConnectUserHierarchyStructure#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/connect_user_hierarchy_structure#id ConnectUserHierarchyStructure#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdktf/provider-aws.connectUserHierarchyStructure.ConnectUserHierarchyStructureConfig.property.region"></a>
+
+```java
+public java.lang.String getRegion();
+```
+
+- *Type:* java.lang.String
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/connect_user_hierarchy_structure#region ConnectUserHierarchyStructure#region}
 
 ---
 
@@ -1030,7 +1087,7 @@ public ConnectUserHierarchyStructureHierarchyStructureLevelFive getLevelFive();
 
 level_five block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/connect_user_hierarchy_structure#level_five ConnectUserHierarchyStructure#level_five}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/connect_user_hierarchy_structure#level_five ConnectUserHierarchyStructure#level_five}
 
 ---
 
@@ -1044,7 +1101,7 @@ public ConnectUserHierarchyStructureHierarchyStructureLevelFour getLevelFour();
 
 level_four block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/connect_user_hierarchy_structure#level_four ConnectUserHierarchyStructure#level_four}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/connect_user_hierarchy_structure#level_four ConnectUserHierarchyStructure#level_four}
 
 ---
 
@@ -1058,7 +1115,7 @@ public ConnectUserHierarchyStructureHierarchyStructureLevelOne getLevelOne();
 
 level_one block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/connect_user_hierarchy_structure#level_one ConnectUserHierarchyStructure#level_one}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/connect_user_hierarchy_structure#level_one ConnectUserHierarchyStructure#level_one}
 
 ---
 
@@ -1072,7 +1129,7 @@ public ConnectUserHierarchyStructureHierarchyStructureLevelThree getLevelThree()
 
 level_three block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/connect_user_hierarchy_structure#level_three ConnectUserHierarchyStructure#level_three}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/connect_user_hierarchy_structure#level_three ConnectUserHierarchyStructure#level_three}
 
 ---
 
@@ -1086,7 +1143,7 @@ public ConnectUserHierarchyStructureHierarchyStructureLevelTwo getLevelTwo();
 
 level_two block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/connect_user_hierarchy_structure#level_two ConnectUserHierarchyStructure#level_two}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/connect_user_hierarchy_structure#level_two ConnectUserHierarchyStructure#level_two}
 
 ---
 
@@ -1106,7 +1163,7 @@ ConnectUserHierarchyStructureHierarchyStructureLevelFive.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.connectUserHierarchyStructure.ConnectUserHierarchyStructureHierarchyStructureLevelFive.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/connect_user_hierarchy_structure#name ConnectUserHierarchyStructure#name}. |
+| <code><a href="#@cdktf/provider-aws.connectUserHierarchyStructure.ConnectUserHierarchyStructureHierarchyStructureLevelFive.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/connect_user_hierarchy_structure#name ConnectUserHierarchyStructure#name}. |
 
 ---
 
@@ -1118,7 +1175,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/connect_user_hierarchy_structure#name ConnectUserHierarchyStructure#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/connect_user_hierarchy_structure#name ConnectUserHierarchyStructure#name}.
 
 ---
 
@@ -1138,7 +1195,7 @@ ConnectUserHierarchyStructureHierarchyStructureLevelFour.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.connectUserHierarchyStructure.ConnectUserHierarchyStructureHierarchyStructureLevelFour.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/connect_user_hierarchy_structure#name ConnectUserHierarchyStructure#name}. |
+| <code><a href="#@cdktf/provider-aws.connectUserHierarchyStructure.ConnectUserHierarchyStructureHierarchyStructureLevelFour.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/connect_user_hierarchy_structure#name ConnectUserHierarchyStructure#name}. |
 
 ---
 
@@ -1150,7 +1207,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/connect_user_hierarchy_structure#name ConnectUserHierarchyStructure#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/connect_user_hierarchy_structure#name ConnectUserHierarchyStructure#name}.
 
 ---
 
@@ -1170,7 +1227,7 @@ ConnectUserHierarchyStructureHierarchyStructureLevelOne.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.connectUserHierarchyStructure.ConnectUserHierarchyStructureHierarchyStructureLevelOne.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/connect_user_hierarchy_structure#name ConnectUserHierarchyStructure#name}. |
+| <code><a href="#@cdktf/provider-aws.connectUserHierarchyStructure.ConnectUserHierarchyStructureHierarchyStructureLevelOne.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/connect_user_hierarchy_structure#name ConnectUserHierarchyStructure#name}. |
 
 ---
 
@@ -1182,7 +1239,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/connect_user_hierarchy_structure#name ConnectUserHierarchyStructure#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/connect_user_hierarchy_structure#name ConnectUserHierarchyStructure#name}.
 
 ---
 
@@ -1202,7 +1259,7 @@ ConnectUserHierarchyStructureHierarchyStructureLevelThree.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.connectUserHierarchyStructure.ConnectUserHierarchyStructureHierarchyStructureLevelThree.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/connect_user_hierarchy_structure#name ConnectUserHierarchyStructure#name}. |
+| <code><a href="#@cdktf/provider-aws.connectUserHierarchyStructure.ConnectUserHierarchyStructureHierarchyStructureLevelThree.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/connect_user_hierarchy_structure#name ConnectUserHierarchyStructure#name}. |
 
 ---
 
@@ -1214,7 +1271,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/connect_user_hierarchy_structure#name ConnectUserHierarchyStructure#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/connect_user_hierarchy_structure#name ConnectUserHierarchyStructure#name}.
 
 ---
 
@@ -1234,7 +1291,7 @@ ConnectUserHierarchyStructureHierarchyStructureLevelTwo.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.connectUserHierarchyStructure.ConnectUserHierarchyStructureHierarchyStructureLevelTwo.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/connect_user_hierarchy_structure#name ConnectUserHierarchyStructure#name}. |
+| <code><a href="#@cdktf/provider-aws.connectUserHierarchyStructure.ConnectUserHierarchyStructureHierarchyStructureLevelTwo.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/connect_user_hierarchy_structure#name ConnectUserHierarchyStructure#name}. |
 
 ---
 
@@ -1246,7 +1303,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/connect_user_hierarchy_structure#name ConnectUserHierarchyStructure#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/connect_user_hierarchy_structure#name ConnectUserHierarchyStructure#name}.
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### DataAwsServicequotasService <a name="DataAwsServicequotasService" id="@cdktf/provider-aws.dataAwsServicequotasService.DataAwsServicequotasService"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/servicequotas_service aws_servicequotas_service}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/servicequotas_service aws_servicequotas_service}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsServicequotasService.DataAwsServicequotasService.Initializer"></a>
 
@@ -22,7 +22,8 @@ dataAwsServicequotasService.DataAwsServicequotasService(
   provider: TerraformProvider = None,
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
   service_name: str,
-  id: str = None
+  id: str = None,
+  region: str = None
 )
 ```
 
@@ -37,8 +38,9 @@ dataAwsServicequotasService.DataAwsServicequotasService(
 | <code><a href="#@cdktf/provider-aws.dataAwsServicequotasService.DataAwsServicequotasService.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsServicequotasService.DataAwsServicequotasService.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsServicequotasService.DataAwsServicequotasService.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsServicequotasService.DataAwsServicequotasService.Initializer.parameter.serviceName">service_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/servicequotas_service#service_name DataAwsServicequotasService#service_name}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsServicequotasService.DataAwsServicequotasService.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/servicequotas_service#id DataAwsServicequotasService#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsServicequotasService.DataAwsServicequotasService.Initializer.parameter.serviceName">service_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/servicequotas_service#service_name DataAwsServicequotasService#service_name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsServicequotasService.DataAwsServicequotasService.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/servicequotas_service#id DataAwsServicequotasService#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsServicequotasService.DataAwsServicequotasService.Initializer.parameter.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
 
@@ -106,7 +108,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/servicequotas_service#service_name DataAwsServicequotasService#service_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/servicequotas_service#service_name DataAwsServicequotasService#service_name}.
 
 ---
 
@@ -114,10 +116,20 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/servicequotas_service#id DataAwsServicequotasService#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/servicequotas_service#id DataAwsServicequotasService#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdktf/provider-aws.dataAwsServicequotasService.DataAwsServicequotasService.Initializer.parameter.region"></a>
+
+- *Type:* str
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/servicequotas_service#region DataAwsServicequotasService#region}
 
 ---
 
@@ -143,6 +155,7 @@ If you experience problems setting this value it might not be settable. Please t
 | <code><a href="#@cdktf/provider-aws.dataAwsServicequotasService.DataAwsServicequotasService.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsServicequotasService.DataAwsServicequotasService.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsServicequotasService.DataAwsServicequotasService.resetId">reset_id</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsServicequotasService.DataAwsServicequotasService.resetRegion">reset_region</a></code> | *No description.* |
 
 ---
 
@@ -369,6 +382,12 @@ def interpolation_for_attribute(
 def reset_id() -> None
 ```
 
+##### `reset_region` <a name="reset_region" id="@cdktf/provider-aws.dataAwsServicequotasService.DataAwsServicequotasService.resetRegion"></a>
+
+```python
+def reset_region() -> None
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -483,7 +502,7 @@ The construct id used in the generated config for the DataAwsServicequotasServic
 
 The id of the existing DataAwsServicequotasService that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/servicequotas_service#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/servicequotas_service#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -513,8 +532,10 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.dataAwsServicequotasService.DataAwsServicequotasService.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsServicequotasService.DataAwsServicequotasService.property.serviceCode">service_code</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsServicequotasService.DataAwsServicequotasService.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsServicequotasService.DataAwsServicequotasService.property.regionInput">region_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsServicequotasService.DataAwsServicequotasService.property.serviceNameInput">service_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsServicequotasService.DataAwsServicequotasService.property.id">id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsServicequotasService.DataAwsServicequotasService.property.region">region</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsServicequotasService.DataAwsServicequotasService.property.serviceName">service_name</a></code> | <code>str</code> | *No description.* |
 
 ---
@@ -661,6 +682,16 @@ id_input: str
 
 ---
 
+##### `region_input`<sup>Optional</sup> <a name="region_input" id="@cdktf/provider-aws.dataAwsServicequotasService.DataAwsServicequotasService.property.regionInput"></a>
+
+```python
+region_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `service_name_input`<sup>Optional</sup> <a name="service_name_input" id="@cdktf/provider-aws.dataAwsServicequotasService.DataAwsServicequotasService.property.serviceNameInput"></a>
 
 ```python
@@ -675,6 +706,16 @@ service_name_input: str
 
 ```python
 id: str
+```
+
+- *Type:* str
+
+---
+
+##### `region`<sup>Required</sup> <a name="region" id="@cdktf/provider-aws.dataAwsServicequotasService.DataAwsServicequotasService.property.region"></a>
+
+```python
+region: str
 ```
 
 - *Type:* str
@@ -727,7 +768,8 @@ dataAwsServicequotasService.DataAwsServicequotasServiceConfig(
   provider: TerraformProvider = None,
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
   service_name: str,
-  id: str = None
+  id: str = None,
+  region: str = None
 )
 ```
 
@@ -742,8 +784,9 @@ dataAwsServicequotasService.DataAwsServicequotasServiceConfig(
 | <code><a href="#@cdktf/provider-aws.dataAwsServicequotasService.DataAwsServicequotasServiceConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsServicequotasService.DataAwsServicequotasServiceConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsServicequotasService.DataAwsServicequotasServiceConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsServicequotasService.DataAwsServicequotasServiceConfig.property.serviceName">service_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/servicequotas_service#service_name DataAwsServicequotasService#service_name}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsServicequotasService.DataAwsServicequotasServiceConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/servicequotas_service#id DataAwsServicequotasService#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsServicequotasService.DataAwsServicequotasServiceConfig.property.serviceName">service_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/servicequotas_service#service_name DataAwsServicequotasService#service_name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsServicequotasService.DataAwsServicequotasServiceConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/servicequotas_service#id DataAwsServicequotasService#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsServicequotasService.DataAwsServicequotasServiceConfig.property.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
 
@@ -825,7 +868,7 @@ service_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/servicequotas_service#service_name DataAwsServicequotasService#service_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/servicequotas_service#service_name DataAwsServicequotasService#service_name}.
 
 ---
 
@@ -837,10 +880,24 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/servicequotas_service#id DataAwsServicequotasService#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/servicequotas_service#id DataAwsServicequotasService#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdktf/provider-aws.dataAwsServicequotasService.DataAwsServicequotasServiceConfig.property.region"></a>
+
+```python
+region: str
+```
+
+- *Type:* str
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/servicequotas_service#region DataAwsServicequotasService#region}
 
 ---
 

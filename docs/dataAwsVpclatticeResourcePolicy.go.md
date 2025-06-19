@@ -4,12 +4,12 @@
 
 ### DataAwsVpclatticeResourcePolicy <a name="DataAwsVpclatticeResourcePolicy" id="@cdktf/provider-aws.dataAwsVpclatticeResourcePolicy.DataAwsVpclatticeResourcePolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/vpclattice_resource_policy aws_vpclattice_resource_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/vpclattice_resource_policy aws_vpclattice_resource_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsVpclatticeResourcePolicy.DataAwsVpclatticeResourcePolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsvpclatticeresourcepolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsvpclatticeresourcepolicy"
 
 dataawsvpclatticeresourcepolicy.NewDataAwsVpclatticeResourcePolicy(scope Construct, id *string, config DataAwsVpclatticeResourcePolicyConfig) DataAwsVpclatticeResourcePolicy
 ```
@@ -68,6 +68,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.dataAwsVpclatticeResourcePolicy.DataAwsVpclatticeResourcePolicy.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsVpclatticeResourcePolicy.DataAwsVpclatticeResourcePolicy.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsVpclatticeResourcePolicy.DataAwsVpclatticeResourcePolicy.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsVpclatticeResourcePolicy.DataAwsVpclatticeResourcePolicy.resetRegion">ResetRegion</a></code> | *No description.* |
 
 ---
 
@@ -269,6 +270,12 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 func ResetId()
 ```
 
+##### `ResetRegion` <a name="ResetRegion" id="@cdktf/provider-aws.dataAwsVpclatticeResourcePolicy.DataAwsVpclatticeResourcePolicy.resetRegion"></a>
+
+```go
+func ResetRegion()
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -283,7 +290,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsVpclatticeResourcePolicy.DataAwsVpclatticeResourcePolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsvpclatticeresourcepolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsvpclatticeresourcepolicy"
 
 dataawsvpclatticeresourcepolicy.DataAwsVpclatticeResourcePolicy_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsVpclatticeResourcePolicy.DataAwsVpclatticeResourcePolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsvpclatticeresourcepolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsvpclatticeresourcepolicy"
 
 dataawsvpclatticeresourcepolicy.DataAwsVpclatticeResourcePolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +336,7 @@ dataawsvpclatticeresourcepolicy.DataAwsVpclatticeResourcePolicy_IsTerraformEleme
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsVpclatticeResourcePolicy.DataAwsVpclatticeResourcePolicy.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsvpclatticeresourcepolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsvpclatticeresourcepolicy"
 
 dataawsvpclatticeresourcepolicy.DataAwsVpclatticeResourcePolicy_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +350,7 @@ dataawsvpclatticeresourcepolicy.DataAwsVpclatticeResourcePolicy_IsTerraformDataS
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsVpclatticeResourcePolicy.DataAwsVpclatticeResourcePolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsvpclatticeresourcepolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsvpclatticeresourcepolicy"
 
 dataawsvpclatticeresourcepolicy.DataAwsVpclatticeResourcePolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -372,7 +379,7 @@ The construct id used in the generated config for the DataAwsVpclatticeResourceP
 
 The id of the existing DataAwsVpclatticeResourcePolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/vpclattice_resource_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/vpclattice_resource_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -402,8 +409,10 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.dataAwsVpclatticeResourcePolicy.DataAwsVpclatticeResourcePolicy.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsVpclatticeResourcePolicy.DataAwsVpclatticeResourcePolicy.property.policy">Policy</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsVpclatticeResourcePolicy.DataAwsVpclatticeResourcePolicy.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsVpclatticeResourcePolicy.DataAwsVpclatticeResourcePolicy.property.regionInput">RegionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsVpclatticeResourcePolicy.DataAwsVpclatticeResourcePolicy.property.resourceArnInput">ResourceArnInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsVpclatticeResourcePolicy.DataAwsVpclatticeResourcePolicy.property.id">Id</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsVpclatticeResourcePolicy.DataAwsVpclatticeResourcePolicy.property.region">Region</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsVpclatticeResourcePolicy.DataAwsVpclatticeResourcePolicy.property.resourceArn">ResourceArn</a></code> | <code>*string</code> | *No description.* |
 
 ---
@@ -550,6 +559,16 @@ func IdInput() *string
 
 ---
 
+##### `RegionInput`<sup>Optional</sup> <a name="RegionInput" id="@cdktf/provider-aws.dataAwsVpclatticeResourcePolicy.DataAwsVpclatticeResourcePolicy.property.regionInput"></a>
+
+```go
+func RegionInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `ResourceArnInput`<sup>Optional</sup> <a name="ResourceArnInput" id="@cdktf/provider-aws.dataAwsVpclatticeResourcePolicy.DataAwsVpclatticeResourcePolicy.property.resourceArnInput"></a>
 
 ```go
@@ -564,6 +583,16 @@ func ResourceArnInput() *string
 
 ```go
 func Id() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Region`<sup>Required</sup> <a name="Region" id="@cdktf/provider-aws.dataAwsVpclatticeResourcePolicy.DataAwsVpclatticeResourcePolicy.property.region"></a>
+
+```go
+func Region() *string
 ```
 
 - *Type:* *string
@@ -605,7 +634,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsVpclatticeResourcePolicy.DataAwsVpclatticeResourcePolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsvpclatticeresourcepolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsvpclatticeresourcepolicy"
 
 &dataawsvpclatticeresourcepolicy.DataAwsVpclatticeResourcePolicyConfig {
 	Connection: interface{},
@@ -617,6 +646,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsvpclatticeresource
 	Provisioners: *[]interface{},
 	ResourceArn: *string,
 	Id: *string,
+	Region: *string,
 }
 ```
 
@@ -631,8 +661,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsvpclatticeresource
 | <code><a href="#@cdktf/provider-aws.dataAwsVpclatticeResourcePolicy.DataAwsVpclatticeResourcePolicyConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsVpclatticeResourcePolicy.DataAwsVpclatticeResourcePolicyConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsVpclatticeResourcePolicy.DataAwsVpclatticeResourcePolicyConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsVpclatticeResourcePolicy.DataAwsVpclatticeResourcePolicyConfig.property.resourceArn">ResourceArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/vpclattice_resource_policy#resource_arn DataAwsVpclatticeResourcePolicy#resource_arn}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsVpclatticeResourcePolicy.DataAwsVpclatticeResourcePolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/vpclattice_resource_policy#id DataAwsVpclatticeResourcePolicy#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsVpclatticeResourcePolicy.DataAwsVpclatticeResourcePolicyConfig.property.resourceArn">ResourceArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/vpclattice_resource_policy#resource_arn DataAwsVpclatticeResourcePolicy#resource_arn}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsVpclatticeResourcePolicy.DataAwsVpclatticeResourcePolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/vpclattice_resource_policy#id DataAwsVpclatticeResourcePolicy#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsVpclatticeResourcePolicy.DataAwsVpclatticeResourcePolicyConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
 
@@ -714,7 +745,7 @@ ResourceArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/vpclattice_resource_policy#resource_arn DataAwsVpclatticeResourcePolicy#resource_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/vpclattice_resource_policy#resource_arn DataAwsVpclatticeResourcePolicy#resource_arn}.
 
 ---
 
@@ -726,10 +757,24 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/vpclattice_resource_policy#id DataAwsVpclatticeResourcePolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/vpclattice_resource_policy#id DataAwsVpclatticeResourcePolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `Region`<sup>Optional</sup> <a name="Region" id="@cdktf/provider-aws.dataAwsVpclatticeResourcePolicy.DataAwsVpclatticeResourcePolicyConfig.property.region"></a>
+
+```go
+Region *string
+```
+
+- *Type:* *string
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/vpclattice_resource_policy#region DataAwsVpclatticeResourcePolicy#region}
 
 ---
 

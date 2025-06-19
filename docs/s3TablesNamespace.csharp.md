@@ -4,7 +4,7 @@
 
 ### S3TablesNamespace <a name="S3TablesNamespace" id="@cdktf/provider-aws.s3TablesNamespace.S3TablesNamespace"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/s3tables_namespace aws_s3tables_namespace}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3tables_namespace aws_s3tables_namespace}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.s3TablesNamespace.S3TablesNamespace.Initializer"></a>
 
@@ -73,6 +73,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.s3TablesNamespace.S3TablesNamespace.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktf/provider-aws.s3TablesNamespace.S3TablesNamespace.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-aws.s3TablesNamespace.S3TablesNamespace.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktf/provider-aws.s3TablesNamespace.S3TablesNamespace.resetRegion">ResetRegion</a></code> | *No description.* |
 
 ---
 
@@ -364,6 +365,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `ResetRegion` <a name="ResetRegion" id="@cdktf/provider-aws.s3TablesNamespace.S3TablesNamespace.resetRegion"></a>
+
+```csharp
+private void ResetRegion()
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -467,7 +474,7 @@ The construct id used in the generated config for the S3TablesNamespace to impor
 
 The id of the existing S3TablesNamespace that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/s3tables_namespace#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3tables_namespace#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -501,8 +508,10 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.s3TablesNamespace.S3TablesNamespace.property.createdBy">CreatedBy</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.s3TablesNamespace.S3TablesNamespace.property.ownerAccountId">OwnerAccountId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.s3TablesNamespace.S3TablesNamespace.property.namespaceInput">NamespaceInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.s3TablesNamespace.S3TablesNamespace.property.regionInput">RegionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.s3TablesNamespace.S3TablesNamespace.property.tableBucketArnInput">TableBucketArnInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.s3TablesNamespace.S3TablesNamespace.property.namespace">Namespace</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.s3TablesNamespace.S3TablesNamespace.property.region">Region</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.s3TablesNamespace.S3TablesNamespace.property.tableBucketArn">TableBucketArn</a></code> | <code>string</code> | *No description.* |
 
 ---
@@ -689,6 +698,16 @@ public string NamespaceInput { get; }
 
 ---
 
+##### `RegionInput`<sup>Optional</sup> <a name="RegionInput" id="@cdktf/provider-aws.s3TablesNamespace.S3TablesNamespace.property.regionInput"></a>
+
+```csharp
+public string RegionInput { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `TableBucketArnInput`<sup>Optional</sup> <a name="TableBucketArnInput" id="@cdktf/provider-aws.s3TablesNamespace.S3TablesNamespace.property.tableBucketArnInput"></a>
 
 ```csharp
@@ -703,6 +722,16 @@ public string TableBucketArnInput { get; }
 
 ```csharp
 public string Namespace { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Region`<sup>Required</sup> <a name="Region" id="@cdktf/provider-aws.s3TablesNamespace.S3TablesNamespace.property.region"></a>
+
+```csharp
+public string Region { get; }
 ```
 
 - *Type:* string
@@ -755,7 +784,8 @@ new S3TablesNamespaceConfig {
     TerraformProvider Provider = null,
     object[] Provisioners = null,
     string Namespace,
-    string TableBucketArn
+    string TableBucketArn,
+    string Region = null
 };
 ```
 
@@ -770,8 +800,9 @@ new S3TablesNamespaceConfig {
 | <code><a href="#@cdktf/provider-aws.s3TablesNamespace.S3TablesNamespaceConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.s3TablesNamespace.S3TablesNamespaceConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.s3TablesNamespace.S3TablesNamespaceConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3TablesNamespace.S3TablesNamespaceConfig.property.namespace">Namespace</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/s3tables_namespace#namespace S3TablesNamespace#namespace}. |
-| <code><a href="#@cdktf/provider-aws.s3TablesNamespace.S3TablesNamespaceConfig.property.tableBucketArn">TableBucketArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/s3tables_namespace#table_bucket_arn S3TablesNamespace#table_bucket_arn}. |
+| <code><a href="#@cdktf/provider-aws.s3TablesNamespace.S3TablesNamespaceConfig.property.namespace">Namespace</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3tables_namespace#namespace S3TablesNamespace#namespace}. |
+| <code><a href="#@cdktf/provider-aws.s3TablesNamespace.S3TablesNamespaceConfig.property.tableBucketArn">TableBucketArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3tables_namespace#table_bucket_arn S3TablesNamespace#table_bucket_arn}. |
+| <code><a href="#@cdktf/provider-aws.s3TablesNamespace.S3TablesNamespaceConfig.property.region">Region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
 
@@ -853,7 +884,7 @@ public string Namespace { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/s3tables_namespace#namespace S3TablesNamespace#namespace}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3tables_namespace#namespace S3TablesNamespace#namespace}.
 
 ---
 
@@ -865,7 +896,21 @@ public string TableBucketArn { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/s3tables_namespace#table_bucket_arn S3TablesNamespace#table_bucket_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3tables_namespace#table_bucket_arn S3TablesNamespace#table_bucket_arn}.
+
+---
+
+##### `Region`<sup>Optional</sup> <a name="Region" id="@cdktf/provider-aws.s3TablesNamespace.S3TablesNamespaceConfig.property.region"></a>
+
+```csharp
+public string Region { get; set; }
+```
+
+- *Type:* string
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3tables_namespace#region S3TablesNamespace#region}
 
 ---
 

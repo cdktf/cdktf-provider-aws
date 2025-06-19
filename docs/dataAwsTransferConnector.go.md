@@ -4,12 +4,12 @@
 
 ### DataAwsTransferConnector <a name="DataAwsTransferConnector" id="@cdktf/provider-aws.dataAwsTransferConnector.DataAwsTransferConnector"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/transfer_connector aws_transfer_connector}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/transfer_connector aws_transfer_connector}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsTransferConnector.DataAwsTransferConnector.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawstransferconnector"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawstransferconnector"
 
 dataawstransferconnector.NewDataAwsTransferConnector(scope Construct, id *string, config DataAwsTransferConnectorConfig) DataAwsTransferConnector
 ```
@@ -67,6 +67,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.dataAwsTransferConnector.DataAwsTransferConnector.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsTransferConnector.DataAwsTransferConnector.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsTransferConnector.DataAwsTransferConnector.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsTransferConnector.DataAwsTransferConnector.resetRegion">ResetRegion</a></code> | *No description.* |
 
 ---
 
@@ -262,6 +263,12 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 
 ---
 
+##### `ResetRegion` <a name="ResetRegion" id="@cdktf/provider-aws.dataAwsTransferConnector.DataAwsTransferConnector.resetRegion"></a>
+
+```go
+func ResetRegion()
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -276,7 +283,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsTransferConnector.DataAwsTransferConnector.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawstransferconnector"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawstransferconnector"
 
 dataawstransferconnector.DataAwsTransferConnector_IsConstruct(x interface{}) *bool
 ```
@@ -308,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsTransferConnector.DataAwsTransferConnector.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawstransferconnector"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawstransferconnector"
 
 dataawstransferconnector.DataAwsTransferConnector_IsTerraformElement(x interface{}) *bool
 ```
@@ -322,7 +329,7 @@ dataawstransferconnector.DataAwsTransferConnector_IsTerraformElement(x interface
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsTransferConnector.DataAwsTransferConnector.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawstransferconnector"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawstransferconnector"
 
 dataawstransferconnector.DataAwsTransferConnector_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -336,7 +343,7 @@ dataawstransferconnector.DataAwsTransferConnector_IsTerraformDataSource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsTransferConnector.DataAwsTransferConnector.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawstransferconnector"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawstransferconnector"
 
 dataawstransferconnector.DataAwsTransferConnector_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -365,7 +372,7 @@ The construct id used in the generated config for the DataAwsTransferConnector t
 
 The id of the existing DataAwsTransferConnector that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/transfer_connector#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/transfer_connector#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -403,7 +410,9 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.dataAwsTransferConnector.DataAwsTransferConnector.property.tags">Tags</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.StringMap</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsTransferConnector.DataAwsTransferConnector.property.url">Url</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsTransferConnector.DataAwsTransferConnector.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsTransferConnector.DataAwsTransferConnector.property.regionInput">RegionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsTransferConnector.DataAwsTransferConnector.property.id">Id</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsTransferConnector.DataAwsTransferConnector.property.region">Region</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
@@ -629,10 +638,30 @@ func IdInput() *string
 
 ---
 
+##### `RegionInput`<sup>Optional</sup> <a name="RegionInput" id="@cdktf/provider-aws.dataAwsTransferConnector.DataAwsTransferConnector.property.regionInput"></a>
+
+```go
+func RegionInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-aws.dataAwsTransferConnector.DataAwsTransferConnector.property.id"></a>
 
 ```go
 func Id() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Region`<sup>Required</sup> <a name="Region" id="@cdktf/provider-aws.dataAwsTransferConnector.DataAwsTransferConnector.property.region"></a>
+
+```go
+func Region() *string
 ```
 
 - *Type:* *string
@@ -664,7 +693,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsTransferConnector.DataAwsTransferConnectorAs2Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawstransferconnector"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawstransferconnector"
 
 &dataawstransferconnector.DataAwsTransferConnectorAs2Config {
 
@@ -677,7 +706,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawstransferconnector"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsTransferConnector.DataAwsTransferConnectorConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawstransferconnector"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawstransferconnector"
 
 &dataawstransferconnector.DataAwsTransferConnectorConfig {
 	Connection: interface{},
@@ -688,6 +717,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawstransferconnector"
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	Id: *string,
+	Region: *string,
 }
 ```
 
@@ -702,7 +732,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawstransferconnector"
 | <code><a href="#@cdktf/provider-aws.dataAwsTransferConnector.DataAwsTransferConnectorConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsTransferConnector.DataAwsTransferConnectorConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsTransferConnector.DataAwsTransferConnectorConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsTransferConnector.DataAwsTransferConnectorConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/transfer_connector#id DataAwsTransferConnector#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsTransferConnector.DataAwsTransferConnectorConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/transfer_connector#id DataAwsTransferConnector#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsTransferConnector.DataAwsTransferConnectorConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
 
@@ -784,10 +815,24 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/transfer_connector#id DataAwsTransferConnector#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/transfer_connector#id DataAwsTransferConnector#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `Region`<sup>Optional</sup> <a name="Region" id="@cdktf/provider-aws.dataAwsTransferConnector.DataAwsTransferConnectorConfig.property.region"></a>
+
+```go
+Region *string
+```
+
+- *Type:* *string
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/transfer_connector#region DataAwsTransferConnector#region}
 
 ---
 
@@ -796,7 +841,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsTransferConnector.DataAwsTransferConnectorSftpConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawstransferconnector"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawstransferconnector"
 
 &dataawstransferconnector.DataAwsTransferConnectorSftpConfig {
 
@@ -811,7 +856,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawstransferconnector"
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsTransferConnector.DataAwsTransferConnectorAs2ConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawstransferconnector"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawstransferconnector"
 
 dataawstransferconnector.NewDataAwsTransferConnectorAs2ConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsTransferConnectorAs2ConfigList
 ```
@@ -960,7 +1005,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsTransferConnector.DataAwsTransferConnectorAs2ConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawstransferconnector"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawstransferconnector"
 
 dataawstransferconnector.NewDataAwsTransferConnectorAs2ConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsTransferConnectorAs2ConfigOutputReference
 ```
@@ -1326,7 +1371,7 @@ func InternalValue() DataAwsTransferConnectorAs2Config
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsTransferConnector.DataAwsTransferConnectorSftpConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawstransferconnector"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawstransferconnector"
 
 dataawstransferconnector.NewDataAwsTransferConnectorSftpConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsTransferConnectorSftpConfigList
 ```
@@ -1475,7 +1520,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsTransferConnector.DataAwsTransferConnectorSftpConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawstransferconnector"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawstransferconnector"
 
 dataawstransferconnector.NewDataAwsTransferConnectorSftpConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsTransferConnectorSftpConfigOutputReference
 ```

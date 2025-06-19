@@ -4,12 +4,12 @@
 
 ### DataAwsDirectoryServiceDirectory <a name="DataAwsDirectoryServiceDirectory" id="@cdktf/provider-aws.dataAwsDirectoryServiceDirectory.DataAwsDirectoryServiceDirectory"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/directory_service_directory aws_directory_service_directory}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/directory_service_directory aws_directory_service_directory}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsDirectoryServiceDirectory.DataAwsDirectoryServiceDirectory.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsdirectoryservicedirectory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsdirectoryservicedirectory"
 
 dataawsdirectoryservicedirectory.NewDataAwsDirectoryServiceDirectory(scope Construct, id *string, config DataAwsDirectoryServiceDirectoryConfig) DataAwsDirectoryServiceDirectory
 ```
@@ -68,6 +68,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.dataAwsDirectoryServiceDirectory.DataAwsDirectoryServiceDirectory.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsDirectoryServiceDirectory.DataAwsDirectoryServiceDirectory.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsDirectoryServiceDirectory.DataAwsDirectoryServiceDirectory.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsDirectoryServiceDirectory.DataAwsDirectoryServiceDirectory.resetRegion">ResetRegion</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsDirectoryServiceDirectory.DataAwsDirectoryServiceDirectory.resetTags">ResetTags</a></code> | *No description.* |
 
 ---
@@ -270,6 +271,12 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 func ResetId()
 ```
 
+##### `ResetRegion` <a name="ResetRegion" id="@cdktf/provider-aws.dataAwsDirectoryServiceDirectory.DataAwsDirectoryServiceDirectory.resetRegion"></a>
+
+```go
+func ResetRegion()
+```
+
 ##### `ResetTags` <a name="ResetTags" id="@cdktf/provider-aws.dataAwsDirectoryServiceDirectory.DataAwsDirectoryServiceDirectory.resetTags"></a>
 
 ```go
@@ -290,7 +297,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsDirectoryServiceDirectory.DataAwsDirectoryServiceDirectory.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsdirectoryservicedirectory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsdirectoryservicedirectory"
 
 dataawsdirectoryservicedirectory.DataAwsDirectoryServiceDirectory_IsConstruct(x interface{}) *bool
 ```
@@ -322,7 +329,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsDirectoryServiceDirectory.DataAwsDirectoryServiceDirectory.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsdirectoryservicedirectory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsdirectoryservicedirectory"
 
 dataawsdirectoryservicedirectory.DataAwsDirectoryServiceDirectory_IsTerraformElement(x interface{}) *bool
 ```
@@ -336,7 +343,7 @@ dataawsdirectoryservicedirectory.DataAwsDirectoryServiceDirectory_IsTerraformEle
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsDirectoryServiceDirectory.DataAwsDirectoryServiceDirectory.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsdirectoryservicedirectory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsdirectoryservicedirectory"
 
 dataawsdirectoryservicedirectory.DataAwsDirectoryServiceDirectory_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -350,7 +357,7 @@ dataawsdirectoryservicedirectory.DataAwsDirectoryServiceDirectory_IsTerraformDat
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsDirectoryServiceDirectory.DataAwsDirectoryServiceDirectory.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsdirectoryservicedirectory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsdirectoryservicedirectory"
 
 dataawsdirectoryservicedirectory.DataAwsDirectoryServiceDirectory_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -379,7 +386,7 @@ The construct id used in the generated config for the DataAwsDirectoryServiceDir
 
 The id of the existing DataAwsDirectoryServiceDirectory that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/directory_service_directory#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/directory_service_directory#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -423,9 +430,11 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.dataAwsDirectoryServiceDirectory.DataAwsDirectoryServiceDirectory.property.vpcSettings">VpcSettings</a></code> | <code><a href="#@cdktf/provider-aws.dataAwsDirectoryServiceDirectory.DataAwsDirectoryServiceDirectoryVpcSettingsList">DataAwsDirectoryServiceDirectoryVpcSettingsList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsDirectoryServiceDirectory.DataAwsDirectoryServiceDirectory.property.directoryIdInput">DirectoryIdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsDirectoryServiceDirectory.DataAwsDirectoryServiceDirectory.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsDirectoryServiceDirectory.DataAwsDirectoryServiceDirectory.property.regionInput">RegionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsDirectoryServiceDirectory.DataAwsDirectoryServiceDirectory.property.tagsInput">TagsInput</a></code> | <code>*map[string]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsDirectoryServiceDirectory.DataAwsDirectoryServiceDirectory.property.directoryId">DirectoryId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsDirectoryServiceDirectory.DataAwsDirectoryServiceDirectory.property.id">Id</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsDirectoryServiceDirectory.DataAwsDirectoryServiceDirectory.property.region">Region</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsDirectoryServiceDirectory.DataAwsDirectoryServiceDirectory.property.tags">Tags</a></code> | <code>*map[string]*string</code> | *No description.* |
 
 ---
@@ -712,6 +721,16 @@ func IdInput() *string
 
 ---
 
+##### `RegionInput`<sup>Optional</sup> <a name="RegionInput" id="@cdktf/provider-aws.dataAwsDirectoryServiceDirectory.DataAwsDirectoryServiceDirectory.property.regionInput"></a>
+
+```go
+func RegionInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `TagsInput`<sup>Optional</sup> <a name="TagsInput" id="@cdktf/provider-aws.dataAwsDirectoryServiceDirectory.DataAwsDirectoryServiceDirectory.property.tagsInput"></a>
 
 ```go
@@ -736,6 +755,16 @@ func DirectoryId() *string
 
 ```go
 func Id() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Region`<sup>Required</sup> <a name="Region" id="@cdktf/provider-aws.dataAwsDirectoryServiceDirectory.DataAwsDirectoryServiceDirectory.property.region"></a>
+
+```go
+func Region() *string
 ```
 
 - *Type:* *string
@@ -777,7 +806,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsDirectoryServiceDirectory.DataAwsDirectoryServiceDirectoryConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsdirectoryservicedirectory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsdirectoryservicedirectory"
 
 &dataawsdirectoryservicedirectory.DataAwsDirectoryServiceDirectoryConfig {
 	Connection: interface{},
@@ -789,6 +818,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsdirectoryservicedi
 	Provisioners: *[]interface{},
 	DirectoryId: *string,
 	Id: *string,
+	Region: *string,
 	Tags: *map[string]*string,
 }
 ```
@@ -804,9 +834,10 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsdirectoryservicedi
 | <code><a href="#@cdktf/provider-aws.dataAwsDirectoryServiceDirectory.DataAwsDirectoryServiceDirectoryConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsDirectoryServiceDirectory.DataAwsDirectoryServiceDirectoryConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsDirectoryServiceDirectory.DataAwsDirectoryServiceDirectoryConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsDirectoryServiceDirectory.DataAwsDirectoryServiceDirectoryConfig.property.directoryId">DirectoryId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/directory_service_directory#directory_id DataAwsDirectoryServiceDirectory#directory_id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsDirectoryServiceDirectory.DataAwsDirectoryServiceDirectoryConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/directory_service_directory#id DataAwsDirectoryServiceDirectory#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsDirectoryServiceDirectory.DataAwsDirectoryServiceDirectoryConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/directory_service_directory#tags DataAwsDirectoryServiceDirectory#tags}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsDirectoryServiceDirectory.DataAwsDirectoryServiceDirectoryConfig.property.directoryId">DirectoryId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/directory_service_directory#directory_id DataAwsDirectoryServiceDirectory#directory_id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsDirectoryServiceDirectory.DataAwsDirectoryServiceDirectoryConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/directory_service_directory#id DataAwsDirectoryServiceDirectory#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsDirectoryServiceDirectory.DataAwsDirectoryServiceDirectoryConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
+| <code><a href="#@cdktf/provider-aws.dataAwsDirectoryServiceDirectory.DataAwsDirectoryServiceDirectoryConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/directory_service_directory#tags DataAwsDirectoryServiceDirectory#tags}. |
 
 ---
 
@@ -888,7 +919,7 @@ DirectoryId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/directory_service_directory#directory_id DataAwsDirectoryServiceDirectory#directory_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/directory_service_directory#directory_id DataAwsDirectoryServiceDirectory#directory_id}.
 
 ---
 
@@ -900,10 +931,24 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/directory_service_directory#id DataAwsDirectoryServiceDirectory#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/directory_service_directory#id DataAwsDirectoryServiceDirectory#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `Region`<sup>Optional</sup> <a name="Region" id="@cdktf/provider-aws.dataAwsDirectoryServiceDirectory.DataAwsDirectoryServiceDirectoryConfig.property.region"></a>
+
+```go
+Region *string
+```
+
+- *Type:* *string
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/directory_service_directory#region DataAwsDirectoryServiceDirectory#region}
 
 ---
 
@@ -915,7 +960,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/directory_service_directory#tags DataAwsDirectoryServiceDirectory#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/directory_service_directory#tags DataAwsDirectoryServiceDirectory#tags}.
 
 ---
 
@@ -924,7 +969,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsDirectoryServiceDirectory.DataAwsDirectoryServiceDirectoryConnectSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsdirectoryservicedirectory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsdirectoryservicedirectory"
 
 &dataawsdirectoryservicedirectory.DataAwsDirectoryServiceDirectoryConnectSettings {
 
@@ -937,7 +982,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsdirectoryservicedi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsDirectoryServiceDirectory.DataAwsDirectoryServiceDirectoryRadiusSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsdirectoryservicedirectory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsdirectoryservicedirectory"
 
 &dataawsdirectoryservicedirectory.DataAwsDirectoryServiceDirectoryRadiusSettings {
 
@@ -950,7 +995,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsdirectoryservicedi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsDirectoryServiceDirectory.DataAwsDirectoryServiceDirectoryVpcSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsdirectoryservicedirectory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsdirectoryservicedirectory"
 
 &dataawsdirectoryservicedirectory.DataAwsDirectoryServiceDirectoryVpcSettings {
 
@@ -965,7 +1010,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsdirectoryservicedi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsDirectoryServiceDirectory.DataAwsDirectoryServiceDirectoryConnectSettingsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsdirectoryservicedirectory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsdirectoryservicedirectory"
 
 dataawsdirectoryservicedirectory.NewDataAwsDirectoryServiceDirectoryConnectSettingsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsDirectoryServiceDirectoryConnectSettingsList
 ```
@@ -1114,7 +1159,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsDirectoryServiceDirectory.DataAwsDirectoryServiceDirectoryConnectSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsdirectoryservicedirectory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsdirectoryservicedirectory"
 
 dataawsdirectoryservicedirectory.NewDataAwsDirectoryServiceDirectoryConnectSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsDirectoryServiceDirectoryConnectSettingsOutputReference
 ```
@@ -1447,7 +1492,7 @@ func InternalValue() DataAwsDirectoryServiceDirectoryConnectSettings
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsDirectoryServiceDirectory.DataAwsDirectoryServiceDirectoryRadiusSettingsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsdirectoryservicedirectory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsdirectoryservicedirectory"
 
 dataawsdirectoryservicedirectory.NewDataAwsDirectoryServiceDirectoryRadiusSettingsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsDirectoryServiceDirectoryRadiusSettingsList
 ```
@@ -1596,7 +1641,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsDirectoryServiceDirectory.DataAwsDirectoryServiceDirectoryRadiusSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsdirectoryservicedirectory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsdirectoryservicedirectory"
 
 dataawsdirectoryservicedirectory.NewDataAwsDirectoryServiceDirectoryRadiusSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsDirectoryServiceDirectoryRadiusSettingsOutputReference
 ```
@@ -1940,7 +1985,7 @@ func InternalValue() DataAwsDirectoryServiceDirectoryRadiusSettings
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsDirectoryServiceDirectory.DataAwsDirectoryServiceDirectoryVpcSettingsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsdirectoryservicedirectory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsdirectoryservicedirectory"
 
 dataawsdirectoryservicedirectory.NewDataAwsDirectoryServiceDirectoryVpcSettingsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsDirectoryServiceDirectoryVpcSettingsList
 ```
@@ -2089,7 +2134,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsDirectoryServiceDirectory.DataAwsDirectoryServiceDirectoryVpcSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsdirectoryservicedirectory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsdirectoryservicedirectory"
 
 dataawsdirectoryservicedirectory.NewDataAwsDirectoryServiceDirectoryVpcSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsDirectoryServiceDirectoryVpcSettingsOutputReference
 ```

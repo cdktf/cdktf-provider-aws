@@ -4,12 +4,12 @@
 
 ### ConfigRetentionConfiguration <a name="ConfigRetentionConfiguration" id="@cdktf/provider-aws.configRetentionConfiguration.ConfigRetentionConfiguration"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/config_retention_configuration aws_config_retention_configuration}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/config_retention_configuration aws_config_retention_configuration}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.configRetentionConfiguration.ConfigRetentionConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/configretentionconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/configretentionconfiguration"
 
 configretentionconfiguration.NewConfigRetentionConfiguration(scope Construct, id *string, config ConfigRetentionConfigurationConfig) ConfigRetentionConfiguration
 ```
@@ -73,6 +73,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.configRetentionConfiguration.ConfigRetentionConfiguration.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktf/provider-aws.configRetentionConfiguration.ConfigRetentionConfiguration.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-aws.configRetentionConfiguration.ConfigRetentionConfiguration.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktf/provider-aws.configRetentionConfiguration.ConfigRetentionConfiguration.resetRegion">ResetRegion</a></code> | *No description.* |
 
 ---
 
@@ -364,6 +365,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `ResetRegion` <a name="ResetRegion" id="@cdktf/provider-aws.configRetentionConfiguration.ConfigRetentionConfiguration.resetRegion"></a>
+
+```go
+func ResetRegion()
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -378,7 +385,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.configRetentionConfiguration.ConfigRetentionConfiguration.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/configretentionconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/configretentionconfiguration"
 
 configretentionconfiguration.ConfigRetentionConfiguration_IsConstruct(x interface{}) *bool
 ```
@@ -410,7 +417,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.configRetentionConfiguration.ConfigRetentionConfiguration.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/configretentionconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/configretentionconfiguration"
 
 configretentionconfiguration.ConfigRetentionConfiguration_IsTerraformElement(x interface{}) *bool
 ```
@@ -424,7 +431,7 @@ configretentionconfiguration.ConfigRetentionConfiguration_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.configRetentionConfiguration.ConfigRetentionConfiguration.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/configretentionconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/configretentionconfiguration"
 
 configretentionconfiguration.ConfigRetentionConfiguration_IsTerraformResource(x interface{}) *bool
 ```
@@ -438,7 +445,7 @@ configretentionconfiguration.ConfigRetentionConfiguration_IsTerraformResource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.configRetentionConfiguration.ConfigRetentionConfiguration.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/configretentionconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/configretentionconfiguration"
 
 configretentionconfiguration.ConfigRetentionConfiguration_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -467,7 +474,7 @@ The construct id used in the generated config for the ConfigRetentionConfigurati
 
 The id of the existing ConfigRetentionConfiguration that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/config_retention_configuration#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/config_retention_configuration#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -499,7 +506,9 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.configRetentionConfiguration.ConfigRetentionConfiguration.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.configRetentionConfiguration.ConfigRetentionConfiguration.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.configRetentionConfiguration.ConfigRetentionConfiguration.property.name">Name</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.configRetentionConfiguration.ConfigRetentionConfiguration.property.regionInput">RegionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.configRetentionConfiguration.ConfigRetentionConfiguration.property.retentionPeriodInDaysInput">RetentionPeriodInDaysInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.configRetentionConfiguration.ConfigRetentionConfiguration.property.region">Region</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.configRetentionConfiguration.ConfigRetentionConfiguration.property.retentionPeriodInDays">RetentionPeriodInDays</a></code> | <code>*f64</code> | *No description.* |
 
 ---
@@ -666,6 +675,16 @@ func Name() *string
 
 ---
 
+##### `RegionInput`<sup>Optional</sup> <a name="RegionInput" id="@cdktf/provider-aws.configRetentionConfiguration.ConfigRetentionConfiguration.property.regionInput"></a>
+
+```go
+func RegionInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `RetentionPeriodInDaysInput`<sup>Optional</sup> <a name="RetentionPeriodInDaysInput" id="@cdktf/provider-aws.configRetentionConfiguration.ConfigRetentionConfiguration.property.retentionPeriodInDaysInput"></a>
 
 ```go
@@ -673,6 +692,16 @@ func RetentionPeriodInDaysInput() *f64
 ```
 
 - *Type:* *f64
+
+---
+
+##### `Region`<sup>Required</sup> <a name="Region" id="@cdktf/provider-aws.configRetentionConfiguration.ConfigRetentionConfiguration.property.region"></a>
+
+```go
+func Region() *string
+```
+
+- *Type:* *string
 
 ---
 
@@ -711,7 +740,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.configRetentionConfiguration.ConfigRetentionConfigurationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/configretentionconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/configretentionconfiguration"
 
 &configretentionconfiguration.ConfigRetentionConfigurationConfig {
 	Connection: interface{},
@@ -722,6 +751,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/configretentionconfigurat
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	RetentionPeriodInDays: *f64,
+	Region: *string,
 }
 ```
 
@@ -736,7 +766,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/configretentionconfigurat
 | <code><a href="#@cdktf/provider-aws.configRetentionConfiguration.ConfigRetentionConfigurationConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.configRetentionConfiguration.ConfigRetentionConfigurationConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.configRetentionConfiguration.ConfigRetentionConfigurationConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configRetentionConfiguration.ConfigRetentionConfigurationConfig.property.retentionPeriodInDays">RetentionPeriodInDays</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/config_retention_configuration#retention_period_in_days ConfigRetentionConfiguration#retention_period_in_days}. |
+| <code><a href="#@cdktf/provider-aws.configRetentionConfiguration.ConfigRetentionConfigurationConfig.property.retentionPeriodInDays">RetentionPeriodInDays</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/config_retention_configuration#retention_period_in_days ConfigRetentionConfiguration#retention_period_in_days}. |
+| <code><a href="#@cdktf/provider-aws.configRetentionConfiguration.ConfigRetentionConfigurationConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
 
@@ -818,7 +849,21 @@ RetentionPeriodInDays *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/config_retention_configuration#retention_period_in_days ConfigRetentionConfiguration#retention_period_in_days}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/config_retention_configuration#retention_period_in_days ConfigRetentionConfiguration#retention_period_in_days}.
+
+---
+
+##### `Region`<sup>Optional</sup> <a name="Region" id="@cdktf/provider-aws.configRetentionConfiguration.ConfigRetentionConfigurationConfig.property.region"></a>
+
+```go
+Region *string
+```
+
+- *Type:* *string
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/config_retention_configuration#region ConfigRetentionConfiguration#region}
 
 ---
 

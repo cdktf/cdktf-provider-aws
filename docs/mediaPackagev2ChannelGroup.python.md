@@ -4,7 +4,7 @@
 
 ### MediaPackagev2ChannelGroup <a name="MediaPackagev2ChannelGroup" id="@cdktf/provider-aws.mediaPackagev2ChannelGroup.MediaPackagev2ChannelGroup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/media_packagev2_channel_group aws_media_packagev2_channel_group}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/media_packagev2_channel_group aws_media_packagev2_channel_group}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.mediaPackagev2ChannelGroup.MediaPackagev2ChannelGroup.Initializer"></a>
 
@@ -23,6 +23,7 @@ mediaPackagev2ChannelGroup.MediaPackagev2ChannelGroup(
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
   name: str,
   description: str = None,
+  region: str = None,
   tags: typing.Mapping[str] = None
 )
 ```
@@ -38,9 +39,10 @@ mediaPackagev2ChannelGroup.MediaPackagev2ChannelGroup(
 | <code><a href="#@cdktf/provider-aws.mediaPackagev2ChannelGroup.MediaPackagev2ChannelGroup.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.mediaPackagev2ChannelGroup.MediaPackagev2ChannelGroup.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.mediaPackagev2ChannelGroup.MediaPackagev2ChannelGroup.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.mediaPackagev2ChannelGroup.MediaPackagev2ChannelGroup.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/media_packagev2_channel_group#name MediaPackagev2ChannelGroup#name}. |
-| <code><a href="#@cdktf/provider-aws.mediaPackagev2ChannelGroup.MediaPackagev2ChannelGroup.Initializer.parameter.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/media_packagev2_channel_group#description MediaPackagev2ChannelGroup#description}. |
-| <code><a href="#@cdktf/provider-aws.mediaPackagev2ChannelGroup.MediaPackagev2ChannelGroup.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/media_packagev2_channel_group#tags MediaPackagev2ChannelGroup#tags}. |
+| <code><a href="#@cdktf/provider-aws.mediaPackagev2ChannelGroup.MediaPackagev2ChannelGroup.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/media_packagev2_channel_group#name MediaPackagev2ChannelGroup#name}. |
+| <code><a href="#@cdktf/provider-aws.mediaPackagev2ChannelGroup.MediaPackagev2ChannelGroup.Initializer.parameter.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/media_packagev2_channel_group#description MediaPackagev2ChannelGroup#description}. |
+| <code><a href="#@cdktf/provider-aws.mediaPackagev2ChannelGroup.MediaPackagev2ChannelGroup.Initializer.parameter.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
+| <code><a href="#@cdktf/provider-aws.mediaPackagev2ChannelGroup.MediaPackagev2ChannelGroup.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/media_packagev2_channel_group#tags MediaPackagev2ChannelGroup#tags}. |
 
 ---
 
@@ -108,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/media_packagev2_channel_group#name MediaPackagev2ChannelGroup#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/media_packagev2_channel_group#name MediaPackagev2ChannelGroup#name}.
 
 ---
 
@@ -116,7 +118,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/media_packagev2_channel_group#description MediaPackagev2ChannelGroup#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/media_packagev2_channel_group#description MediaPackagev2ChannelGroup#description}.
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdktf/provider-aws.mediaPackagev2ChannelGroup.MediaPackagev2ChannelGroup.Initializer.parameter.region"></a>
+
+- *Type:* str
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/media_packagev2_channel_group#region MediaPackagev2ChannelGroup#region}
 
 ---
 
@@ -124,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/media_packagev2_channel_group#tags MediaPackagev2ChannelGroup#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/media_packagev2_channel_group#tags MediaPackagev2ChannelGroup#tags}.
 
 ---
 
@@ -156,6 +168,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktf/provider-aws.mediaPackagev2ChannelGroup.MediaPackagev2ChannelGroup.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-aws.mediaPackagev2ChannelGroup.MediaPackagev2ChannelGroup.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-aws.mediaPackagev2ChannelGroup.MediaPackagev2ChannelGroup.resetDescription">reset_description</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.mediaPackagev2ChannelGroup.MediaPackagev2ChannelGroup.resetRegion">reset_region</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.mediaPackagev2ChannelGroup.MediaPackagev2ChannelGroup.resetTags">reset_tags</a></code> | *No description.* |
 
 ---
@@ -491,6 +504,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 def reset_description() -> None
 ```
 
+##### `reset_region` <a name="reset_region" id="@cdktf/provider-aws.mediaPackagev2ChannelGroup.MediaPackagev2ChannelGroup.resetRegion"></a>
+
+```python
+def reset_region() -> None
+```
+
 ##### `reset_tags` <a name="reset_tags" id="@cdktf/provider-aws.mediaPackagev2ChannelGroup.MediaPackagev2ChannelGroup.resetTags"></a>
 
 ```python
@@ -611,7 +630,7 @@ The construct id used in the generated config for the MediaPackagev2ChannelGroup
 
 The id of the existing MediaPackagev2ChannelGroup that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/media_packagev2_channel_group#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/media_packagev2_channel_group#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -646,9 +665,11 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.mediaPackagev2ChannelGroup.MediaPackagev2ChannelGroup.property.tagsAll">tags_all</a></code> | <code>cdktf.StringMap</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.mediaPackagev2ChannelGroup.MediaPackagev2ChannelGroup.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.mediaPackagev2ChannelGroup.MediaPackagev2ChannelGroup.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.mediaPackagev2ChannelGroup.MediaPackagev2ChannelGroup.property.regionInput">region_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.mediaPackagev2ChannelGroup.MediaPackagev2ChannelGroup.property.tagsInput">tags_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.mediaPackagev2ChannelGroup.MediaPackagev2ChannelGroup.property.description">description</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.mediaPackagev2ChannelGroup.MediaPackagev2ChannelGroup.property.name">name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.mediaPackagev2ChannelGroup.MediaPackagev2ChannelGroup.property.region">region</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.mediaPackagev2ChannelGroup.MediaPackagev2ChannelGroup.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 
 ---
@@ -845,6 +866,16 @@ name_input: str
 
 ---
 
+##### `region_input`<sup>Optional</sup> <a name="region_input" id="@cdktf/provider-aws.mediaPackagev2ChannelGroup.MediaPackagev2ChannelGroup.property.regionInput"></a>
+
+```python
+region_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `tags_input`<sup>Optional</sup> <a name="tags_input" id="@cdktf/provider-aws.mediaPackagev2ChannelGroup.MediaPackagev2ChannelGroup.property.tagsInput"></a>
 
 ```python
@@ -869,6 +900,16 @@ description: str
 
 ```python
 name: str
+```
+
+- *Type:* str
+
+---
+
+##### `region`<sup>Required</sup> <a name="region" id="@cdktf/provider-aws.mediaPackagev2ChannelGroup.MediaPackagev2ChannelGroup.property.region"></a>
+
+```python
+region: str
 ```
 
 - *Type:* str
@@ -922,6 +963,7 @@ mediaPackagev2ChannelGroup.MediaPackagev2ChannelGroupConfig(
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
   name: str,
   description: str = None,
+  region: str = None,
   tags: typing.Mapping[str] = None
 )
 ```
@@ -937,9 +979,10 @@ mediaPackagev2ChannelGroup.MediaPackagev2ChannelGroupConfig(
 | <code><a href="#@cdktf/provider-aws.mediaPackagev2ChannelGroup.MediaPackagev2ChannelGroupConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.mediaPackagev2ChannelGroup.MediaPackagev2ChannelGroupConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.mediaPackagev2ChannelGroup.MediaPackagev2ChannelGroupConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.mediaPackagev2ChannelGroup.MediaPackagev2ChannelGroupConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/media_packagev2_channel_group#name MediaPackagev2ChannelGroup#name}. |
-| <code><a href="#@cdktf/provider-aws.mediaPackagev2ChannelGroup.MediaPackagev2ChannelGroupConfig.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/media_packagev2_channel_group#description MediaPackagev2ChannelGroup#description}. |
-| <code><a href="#@cdktf/provider-aws.mediaPackagev2ChannelGroup.MediaPackagev2ChannelGroupConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/media_packagev2_channel_group#tags MediaPackagev2ChannelGroup#tags}. |
+| <code><a href="#@cdktf/provider-aws.mediaPackagev2ChannelGroup.MediaPackagev2ChannelGroupConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/media_packagev2_channel_group#name MediaPackagev2ChannelGroup#name}. |
+| <code><a href="#@cdktf/provider-aws.mediaPackagev2ChannelGroup.MediaPackagev2ChannelGroupConfig.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/media_packagev2_channel_group#description MediaPackagev2ChannelGroup#description}. |
+| <code><a href="#@cdktf/provider-aws.mediaPackagev2ChannelGroup.MediaPackagev2ChannelGroupConfig.property.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
+| <code><a href="#@cdktf/provider-aws.mediaPackagev2ChannelGroup.MediaPackagev2ChannelGroupConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/media_packagev2_channel_group#tags MediaPackagev2ChannelGroup#tags}. |
 
 ---
 
@@ -1021,7 +1064,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/media_packagev2_channel_group#name MediaPackagev2ChannelGroup#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/media_packagev2_channel_group#name MediaPackagev2ChannelGroup#name}.
 
 ---
 
@@ -1033,7 +1076,21 @@ description: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/media_packagev2_channel_group#description MediaPackagev2ChannelGroup#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/media_packagev2_channel_group#description MediaPackagev2ChannelGroup#description}.
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdktf/provider-aws.mediaPackagev2ChannelGroup.MediaPackagev2ChannelGroupConfig.property.region"></a>
+
+```python
+region: str
+```
+
+- *Type:* str
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/media_packagev2_channel_group#region MediaPackagev2ChannelGroup#region}
 
 ---
 
@@ -1045,7 +1102,7 @@ tags: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/media_packagev2_channel_group#tags MediaPackagev2ChannelGroup#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/media_packagev2_channel_group#tags MediaPackagev2ChannelGroup#tags}.
 
 ---
 

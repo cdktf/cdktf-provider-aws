@@ -4,12 +4,12 @@
 
 ### DataAwsServiceDiscoveryService <a name="DataAwsServiceDiscoveryService" id="@cdktf/provider-aws.dataAwsServiceDiscoveryService.DataAwsServiceDiscoveryService"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/service_discovery_service aws_service_discovery_service}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/service_discovery_service aws_service_discovery_service}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsServiceDiscoveryService.DataAwsServiceDiscoveryService.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsservicediscoveryservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsservicediscoveryservice"
 
 dataawsservicediscoveryservice.NewDataAwsServiceDiscoveryService(scope Construct, id *string, config DataAwsServiceDiscoveryServiceConfig) DataAwsServiceDiscoveryService
 ```
@@ -68,8 +68,8 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.dataAwsServiceDiscoveryService.DataAwsServiceDiscoveryService.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsServiceDiscoveryService.DataAwsServiceDiscoveryService.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsServiceDiscoveryService.DataAwsServiceDiscoveryService.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsServiceDiscoveryService.DataAwsServiceDiscoveryService.resetRegion">ResetRegion</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsServiceDiscoveryService.DataAwsServiceDiscoveryService.resetTags">ResetTags</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsServiceDiscoveryService.DataAwsServiceDiscoveryService.resetTagsAll">ResetTagsAll</a></code> | *No description.* |
 
 ---
 
@@ -271,16 +271,16 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 func ResetId()
 ```
 
+##### `ResetRegion` <a name="ResetRegion" id="@cdktf/provider-aws.dataAwsServiceDiscoveryService.DataAwsServiceDiscoveryService.resetRegion"></a>
+
+```go
+func ResetRegion()
+```
+
 ##### `ResetTags` <a name="ResetTags" id="@cdktf/provider-aws.dataAwsServiceDiscoveryService.DataAwsServiceDiscoveryService.resetTags"></a>
 
 ```go
 func ResetTags()
-```
-
-##### `ResetTagsAll` <a name="ResetTagsAll" id="@cdktf/provider-aws.dataAwsServiceDiscoveryService.DataAwsServiceDiscoveryService.resetTagsAll"></a>
-
-```go
-func ResetTagsAll()
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -297,7 +297,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsServiceDiscoveryService.DataAwsServiceDiscoveryService.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsservicediscoveryservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsservicediscoveryservice"
 
 dataawsservicediscoveryservice.DataAwsServiceDiscoveryService_IsConstruct(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsServiceDiscoveryService.DataAwsServiceDiscoveryService.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsservicediscoveryservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsservicediscoveryservice"
 
 dataawsservicediscoveryservice.DataAwsServiceDiscoveryService_IsTerraformElement(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ dataawsservicediscoveryservice.DataAwsServiceDiscoveryService_IsTerraformElement
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsServiceDiscoveryService.DataAwsServiceDiscoveryService.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsservicediscoveryservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsservicediscoveryservice"
 
 dataawsservicediscoveryservice.DataAwsServiceDiscoveryService_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ dataawsservicediscoveryservice.DataAwsServiceDiscoveryService_IsTerraformDataSou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsServiceDiscoveryService.DataAwsServiceDiscoveryService.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsservicediscoveryservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsservicediscoveryservice"
 
 dataawsservicediscoveryservice.DataAwsServiceDiscoveryService_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -386,7 +386,7 @@ The construct id used in the generated config for the DataAwsServiceDiscoverySer
 
 The id of the existing DataAwsServiceDiscoveryService that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/service_discovery_service#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/service_discovery_service#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -422,13 +422,13 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.dataAwsServiceDiscoveryService.DataAwsServiceDiscoveryService.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsServiceDiscoveryService.DataAwsServiceDiscoveryService.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsServiceDiscoveryService.DataAwsServiceDiscoveryService.property.namespaceIdInput">NamespaceIdInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsServiceDiscoveryService.DataAwsServiceDiscoveryService.property.tagsAllInput">TagsAllInput</a></code> | <code>*map[string]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsServiceDiscoveryService.DataAwsServiceDiscoveryService.property.regionInput">RegionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsServiceDiscoveryService.DataAwsServiceDiscoveryService.property.tagsInput">TagsInput</a></code> | <code>*map[string]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsServiceDiscoveryService.DataAwsServiceDiscoveryService.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsServiceDiscoveryService.DataAwsServiceDiscoveryService.property.name">Name</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsServiceDiscoveryService.DataAwsServiceDiscoveryService.property.namespaceId">NamespaceId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsServiceDiscoveryService.DataAwsServiceDiscoveryService.property.region">Region</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsServiceDiscoveryService.DataAwsServiceDiscoveryService.property.tags">Tags</a></code> | <code>*map[string]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsServiceDiscoveryService.DataAwsServiceDiscoveryService.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | *No description.* |
 
 ---
 
@@ -634,13 +634,13 @@ func NamespaceIdInput() *string
 
 ---
 
-##### `TagsAllInput`<sup>Optional</sup> <a name="TagsAllInput" id="@cdktf/provider-aws.dataAwsServiceDiscoveryService.DataAwsServiceDiscoveryService.property.tagsAllInput"></a>
+##### `RegionInput`<sup>Optional</sup> <a name="RegionInput" id="@cdktf/provider-aws.dataAwsServiceDiscoveryService.DataAwsServiceDiscoveryService.property.regionInput"></a>
 
 ```go
-func TagsAllInput() *map[string]*string
+func RegionInput() *string
 ```
 
-- *Type:* *map[string]*string
+- *Type:* *string
 
 ---
 
@@ -684,20 +684,20 @@ func NamespaceId() *string
 
 ---
 
+##### `Region`<sup>Required</sup> <a name="Region" id="@cdktf/provider-aws.dataAwsServiceDiscoveryService.DataAwsServiceDiscoveryService.property.region"></a>
+
+```go
+func Region() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `Tags`<sup>Required</sup> <a name="Tags" id="@cdktf/provider-aws.dataAwsServiceDiscoveryService.DataAwsServiceDiscoveryService.property.tags"></a>
 
 ```go
 func Tags() *map[string]*string
-```
-
-- *Type:* *map[string]*string
-
----
-
-##### `TagsAll`<sup>Required</sup> <a name="TagsAll" id="@cdktf/provider-aws.dataAwsServiceDiscoveryService.DataAwsServiceDiscoveryService.property.tagsAll"></a>
-
-```go
-func TagsAll() *map[string]*string
 ```
 
 - *Type:* *map[string]*string
@@ -729,7 +729,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsServiceDiscoveryService.DataAwsServiceDiscoveryServiceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsservicediscoveryservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsservicediscoveryservice"
 
 &dataawsservicediscoveryservice.DataAwsServiceDiscoveryServiceConfig {
 	Connection: interface{},
@@ -742,8 +742,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsservicediscoveryse
 	Name: *string,
 	NamespaceId: *string,
 	Id: *string,
+	Region: *string,
 	Tags: *map[string]*string,
-	TagsAll: *map[string]*string,
 }
 ```
 
@@ -758,11 +758,11 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsservicediscoveryse
 | <code><a href="#@cdktf/provider-aws.dataAwsServiceDiscoveryService.DataAwsServiceDiscoveryServiceConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsServiceDiscoveryService.DataAwsServiceDiscoveryServiceConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsServiceDiscoveryService.DataAwsServiceDiscoveryServiceConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsServiceDiscoveryService.DataAwsServiceDiscoveryServiceConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/service_discovery_service#name DataAwsServiceDiscoveryService#name}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsServiceDiscoveryService.DataAwsServiceDiscoveryServiceConfig.property.namespaceId">NamespaceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/service_discovery_service#namespace_id DataAwsServiceDiscoveryService#namespace_id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsServiceDiscoveryService.DataAwsServiceDiscoveryServiceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/service_discovery_service#id DataAwsServiceDiscoveryService#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsServiceDiscoveryService.DataAwsServiceDiscoveryServiceConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/service_discovery_service#tags DataAwsServiceDiscoveryService#tags}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsServiceDiscoveryService.DataAwsServiceDiscoveryServiceConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/service_discovery_service#tags_all DataAwsServiceDiscoveryService#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsServiceDiscoveryService.DataAwsServiceDiscoveryServiceConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/service_discovery_service#name DataAwsServiceDiscoveryService#name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsServiceDiscoveryService.DataAwsServiceDiscoveryServiceConfig.property.namespaceId">NamespaceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/service_discovery_service#namespace_id DataAwsServiceDiscoveryService#namespace_id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsServiceDiscoveryService.DataAwsServiceDiscoveryServiceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/service_discovery_service#id DataAwsServiceDiscoveryService#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsServiceDiscoveryService.DataAwsServiceDiscoveryServiceConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
+| <code><a href="#@cdktf/provider-aws.dataAwsServiceDiscoveryService.DataAwsServiceDiscoveryServiceConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/service_discovery_service#tags DataAwsServiceDiscoveryService#tags}. |
 
 ---
 
@@ -844,7 +844,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/service_discovery_service#name DataAwsServiceDiscoveryService#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/service_discovery_service#name DataAwsServiceDiscoveryService#name}.
 
 ---
 
@@ -856,7 +856,7 @@ NamespaceId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/service_discovery_service#namespace_id DataAwsServiceDiscoveryService#namespace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/service_discovery_service#namespace_id DataAwsServiceDiscoveryService#namespace_id}.
 
 ---
 
@@ -868,10 +868,24 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/service_discovery_service#id DataAwsServiceDiscoveryService#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/service_discovery_service#id DataAwsServiceDiscoveryService#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `Region`<sup>Optional</sup> <a name="Region" id="@cdktf/provider-aws.dataAwsServiceDiscoveryService.DataAwsServiceDiscoveryServiceConfig.property.region"></a>
+
+```go
+Region *string
+```
+
+- *Type:* *string
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/service_discovery_service#region DataAwsServiceDiscoveryService#region}
 
 ---
 
@@ -883,19 +897,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/service_discovery_service#tags DataAwsServiceDiscoveryService#tags}.
-
----
-
-##### `TagsAll`<sup>Optional</sup> <a name="TagsAll" id="@cdktf/provider-aws.dataAwsServiceDiscoveryService.DataAwsServiceDiscoveryServiceConfig.property.tagsAll"></a>
-
-```go
-TagsAll *map[string]*string
-```
-
-- *Type:* *map[string]*string
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/service_discovery_service#tags_all DataAwsServiceDiscoveryService#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/service_discovery_service#tags DataAwsServiceDiscoveryService#tags}.
 
 ---
 
@@ -904,7 +906,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsServiceDiscoveryService.DataAwsServiceDiscoveryServiceDnsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsservicediscoveryservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsservicediscoveryservice"
 
 &dataawsservicediscoveryservice.DataAwsServiceDiscoveryServiceDnsConfig {
 
@@ -917,7 +919,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsservicediscoveryse
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsServiceDiscoveryService.DataAwsServiceDiscoveryServiceDnsConfigDnsRecords.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsservicediscoveryservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsservicediscoveryservice"
 
 &dataawsservicediscoveryservice.DataAwsServiceDiscoveryServiceDnsConfigDnsRecords {
 
@@ -930,7 +932,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsservicediscoveryse
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsServiceDiscoveryService.DataAwsServiceDiscoveryServiceHealthCheckConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsservicediscoveryservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsservicediscoveryservice"
 
 &dataawsservicediscoveryservice.DataAwsServiceDiscoveryServiceHealthCheckConfig {
 
@@ -943,7 +945,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsservicediscoveryse
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsServiceDiscoveryService.DataAwsServiceDiscoveryServiceHealthCheckCustomConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsservicediscoveryservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsservicediscoveryservice"
 
 &dataawsservicediscoveryservice.DataAwsServiceDiscoveryServiceHealthCheckCustomConfig {
 
@@ -958,7 +960,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsservicediscoveryse
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsServiceDiscoveryService.DataAwsServiceDiscoveryServiceDnsConfigDnsRecordsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsservicediscoveryservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsservicediscoveryservice"
 
 dataawsservicediscoveryservice.NewDataAwsServiceDiscoveryServiceDnsConfigDnsRecordsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsServiceDiscoveryServiceDnsConfigDnsRecordsList
 ```
@@ -1107,7 +1109,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsServiceDiscoveryService.DataAwsServiceDiscoveryServiceDnsConfigDnsRecordsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsservicediscoveryservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsservicediscoveryservice"
 
 dataawsservicediscoveryservice.NewDataAwsServiceDiscoveryServiceDnsConfigDnsRecordsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsServiceDiscoveryServiceDnsConfigDnsRecordsOutputReference
 ```
@@ -1396,7 +1398,7 @@ func InternalValue() DataAwsServiceDiscoveryServiceDnsConfigDnsRecords
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsServiceDiscoveryService.DataAwsServiceDiscoveryServiceDnsConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsservicediscoveryservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsservicediscoveryservice"
 
 dataawsservicediscoveryservice.NewDataAwsServiceDiscoveryServiceDnsConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsServiceDiscoveryServiceDnsConfigList
 ```
@@ -1545,7 +1547,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsServiceDiscoveryService.DataAwsServiceDiscoveryServiceDnsConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsservicediscoveryservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsservicediscoveryservice"
 
 dataawsservicediscoveryservice.NewDataAwsServiceDiscoveryServiceDnsConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsServiceDiscoveryServiceDnsConfigOutputReference
 ```
@@ -1845,7 +1847,7 @@ func InternalValue() DataAwsServiceDiscoveryServiceDnsConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsServiceDiscoveryService.DataAwsServiceDiscoveryServiceHealthCheckConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsservicediscoveryservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsservicediscoveryservice"
 
 dataawsservicediscoveryservice.NewDataAwsServiceDiscoveryServiceHealthCheckConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsServiceDiscoveryServiceHealthCheckConfigList
 ```
@@ -1994,7 +1996,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsServiceDiscoveryService.DataAwsServiceDiscoveryServiceHealthCheckConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsservicediscoveryservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsservicediscoveryservice"
 
 dataawsservicediscoveryservice.NewDataAwsServiceDiscoveryServiceHealthCheckConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsServiceDiscoveryServiceHealthCheckConfigOutputReference
 ```
@@ -2294,7 +2296,7 @@ func InternalValue() DataAwsServiceDiscoveryServiceHealthCheckConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsServiceDiscoveryService.DataAwsServiceDiscoveryServiceHealthCheckCustomConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsservicediscoveryservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsservicediscoveryservice"
 
 dataawsservicediscoveryservice.NewDataAwsServiceDiscoveryServiceHealthCheckCustomConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsServiceDiscoveryServiceHealthCheckCustomConfigList
 ```
@@ -2443,7 +2445,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsServiceDiscoveryService.DataAwsServiceDiscoveryServiceHealthCheckCustomConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsservicediscoveryservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsservicediscoveryservice"
 
 dataawsservicediscoveryservice.NewDataAwsServiceDiscoveryServiceHealthCheckCustomConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsServiceDiscoveryServiceHealthCheckCustomConfigOutputReference
 ```

@@ -4,7 +4,7 @@
 
 ### IotCertificate <a name="IotCertificate" id="@cdktf/provider-aws.iotCertificate.IotCertificate"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/iot_certificate aws_iot_certificate}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/iot_certificate aws_iot_certificate}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iotCertificate.IotCertificate.Initializer"></a>
 
@@ -29,6 +29,7 @@ IotCertificate.Builder.create(Construct scope, java.lang.String id)
 //  .certificatePem(java.lang.String)
 //  .csr(java.lang.String)
 //  .id(java.lang.String)
+//  .region(java.lang.String)
     .build();
 ```
 
@@ -43,11 +44,12 @@ IotCertificate.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-aws.iotCertificate.IotCertificate.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotCertificate.IotCertificate.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotCertificate.IotCertificate.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotCertificate.IotCertificate.Initializer.parameter.active">active</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/iot_certificate#active IotCertificate#active}. |
-| <code><a href="#@cdktf/provider-aws.iotCertificate.IotCertificate.Initializer.parameter.caPem">caPem</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/iot_certificate#ca_pem IotCertificate#ca_pem}. |
-| <code><a href="#@cdktf/provider-aws.iotCertificate.IotCertificate.Initializer.parameter.certificatePem">certificatePem</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/iot_certificate#certificate_pem IotCertificate#certificate_pem}. |
-| <code><a href="#@cdktf/provider-aws.iotCertificate.IotCertificate.Initializer.parameter.csr">csr</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/iot_certificate#csr IotCertificate#csr}. |
-| <code><a href="#@cdktf/provider-aws.iotCertificate.IotCertificate.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/iot_certificate#id IotCertificate#id}. |
+| <code><a href="#@cdktf/provider-aws.iotCertificate.IotCertificate.Initializer.parameter.active">active</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/iot_certificate#active IotCertificate#active}. |
+| <code><a href="#@cdktf/provider-aws.iotCertificate.IotCertificate.Initializer.parameter.caPem">caPem</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/iot_certificate#ca_pem IotCertificate#ca_pem}. |
+| <code><a href="#@cdktf/provider-aws.iotCertificate.IotCertificate.Initializer.parameter.certificatePem">certificatePem</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/iot_certificate#certificate_pem IotCertificate#certificate_pem}. |
+| <code><a href="#@cdktf/provider-aws.iotCertificate.IotCertificate.Initializer.parameter.csr">csr</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/iot_certificate#csr IotCertificate#csr}. |
+| <code><a href="#@cdktf/provider-aws.iotCertificate.IotCertificate.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/iot_certificate#id IotCertificate#id}. |
+| <code><a href="#@cdktf/provider-aws.iotCertificate.IotCertificate.Initializer.parameter.region">region</a></code> | <code>java.lang.String</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
 
@@ -115,7 +117,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/iot_certificate#active IotCertificate#active}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/iot_certificate#active IotCertificate#active}.
 
 ---
 
@@ -123,7 +125,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/iot_certificate#ca_pem IotCertificate#ca_pem}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/iot_certificate#ca_pem IotCertificate#ca_pem}.
 
 ---
 
@@ -131,7 +133,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/iot_certificate#certificate_pem IotCertificate#certificate_pem}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/iot_certificate#certificate_pem IotCertificate#certificate_pem}.
 
 ---
 
@@ -139,7 +141,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/iot_certificate#csr IotCertificate#csr}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/iot_certificate#csr IotCertificate#csr}.
 
 ---
 
@@ -147,10 +149,20 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/iot_certificate#id IotCertificate#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/iot_certificate#id IotCertificate#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdktf/provider-aws.iotCertificate.IotCertificate.Initializer.parameter.region"></a>
+
+- *Type:* java.lang.String
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/iot_certificate#region IotCertificate#region}
 
 ---
 
@@ -185,6 +197,7 @@ If you experience problems setting this value it might not be settable. Please t
 | <code><a href="#@cdktf/provider-aws.iotCertificate.IotCertificate.resetCertificatePem">resetCertificatePem</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotCertificate.IotCertificate.resetCsr">resetCsr</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotCertificate.IotCertificate.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotCertificate.IotCertificate.resetRegion">resetRegion</a></code> | *No description.* |
 
 ---
 
@@ -502,6 +515,12 @@ public void resetCsr()
 public void resetId()
 ```
 
+##### `resetRegion` <a name="resetRegion" id="@cdktf/provider-aws.iotCertificate.IotCertificate.resetRegion"></a>
+
+```java
+public void resetRegion()
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -605,7 +624,7 @@ The construct id used in the generated config for the IotCertificate to import.
 
 The id of the existing IotCertificate that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/iot_certificate#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/iot_certificate#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -644,11 +663,13 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.iotCertificate.IotCertificate.property.certificatePemInput">certificatePemInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotCertificate.IotCertificate.property.csrInput">csrInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotCertificate.IotCertificate.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotCertificate.IotCertificate.property.regionInput">regionInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotCertificate.IotCertificate.property.active">active</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotCertificate.IotCertificate.property.caPem">caPem</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotCertificate.IotCertificate.property.certificatePem">certificatePem</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotCertificate.IotCertificate.property.csr">csr</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotCertificate.IotCertificate.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotCertificate.IotCertificate.property.region">region</a></code> | <code>java.lang.String</code> | *No description.* |
 
 ---
 
@@ -884,6 +905,16 @@ public java.lang.String getIdInput();
 
 ---
 
+##### `regionInput`<sup>Optional</sup> <a name="regionInput" id="@cdktf/provider-aws.iotCertificate.IotCertificate.property.regionInput"></a>
+
+```java
+public java.lang.String getRegionInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `active`<sup>Required</sup> <a name="active" id="@cdktf/provider-aws.iotCertificate.IotCertificate.property.active"></a>
 
 ```java
@@ -928,6 +959,16 @@ public java.lang.String getCsr();
 
 ```java
 public java.lang.String getId();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `region`<sup>Required</sup> <a name="region" id="@cdktf/provider-aws.iotCertificate.IotCertificate.property.region"></a>
+
+```java
+public java.lang.String getRegion();
 ```
 
 - *Type:* java.lang.String
@@ -979,6 +1020,7 @@ IotCertificateConfig.builder()
 //  .certificatePem(java.lang.String)
 //  .csr(java.lang.String)
 //  .id(java.lang.String)
+//  .region(java.lang.String)
     .build();
 ```
 
@@ -993,11 +1035,12 @@ IotCertificateConfig.builder()
 | <code><a href="#@cdktf/provider-aws.iotCertificate.IotCertificateConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotCertificate.IotCertificateConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotCertificate.IotCertificateConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotCertificate.IotCertificateConfig.property.active">active</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/iot_certificate#active IotCertificate#active}. |
-| <code><a href="#@cdktf/provider-aws.iotCertificate.IotCertificateConfig.property.caPem">caPem</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/iot_certificate#ca_pem IotCertificate#ca_pem}. |
-| <code><a href="#@cdktf/provider-aws.iotCertificate.IotCertificateConfig.property.certificatePem">certificatePem</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/iot_certificate#certificate_pem IotCertificate#certificate_pem}. |
-| <code><a href="#@cdktf/provider-aws.iotCertificate.IotCertificateConfig.property.csr">csr</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/iot_certificate#csr IotCertificate#csr}. |
-| <code><a href="#@cdktf/provider-aws.iotCertificate.IotCertificateConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/iot_certificate#id IotCertificate#id}. |
+| <code><a href="#@cdktf/provider-aws.iotCertificate.IotCertificateConfig.property.active">active</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/iot_certificate#active IotCertificate#active}. |
+| <code><a href="#@cdktf/provider-aws.iotCertificate.IotCertificateConfig.property.caPem">caPem</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/iot_certificate#ca_pem IotCertificate#ca_pem}. |
+| <code><a href="#@cdktf/provider-aws.iotCertificate.IotCertificateConfig.property.certificatePem">certificatePem</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/iot_certificate#certificate_pem IotCertificate#certificate_pem}. |
+| <code><a href="#@cdktf/provider-aws.iotCertificate.IotCertificateConfig.property.csr">csr</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/iot_certificate#csr IotCertificate#csr}. |
+| <code><a href="#@cdktf/provider-aws.iotCertificate.IotCertificateConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/iot_certificate#id IotCertificate#id}. |
+| <code><a href="#@cdktf/provider-aws.iotCertificate.IotCertificateConfig.property.region">region</a></code> | <code>java.lang.String</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
 
@@ -1079,7 +1122,7 @@ public java.lang.Object getActive();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/iot_certificate#active IotCertificate#active}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/iot_certificate#active IotCertificate#active}.
 
 ---
 
@@ -1091,7 +1134,7 @@ public java.lang.String getCaPem();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/iot_certificate#ca_pem IotCertificate#ca_pem}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/iot_certificate#ca_pem IotCertificate#ca_pem}.
 
 ---
 
@@ -1103,7 +1146,7 @@ public java.lang.String getCertificatePem();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/iot_certificate#certificate_pem IotCertificate#certificate_pem}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/iot_certificate#certificate_pem IotCertificate#certificate_pem}.
 
 ---
 
@@ -1115,7 +1158,7 @@ public java.lang.String getCsr();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/iot_certificate#csr IotCertificate#csr}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/iot_certificate#csr IotCertificate#csr}.
 
 ---
 
@@ -1127,10 +1170,24 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/iot_certificate#id IotCertificate#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/iot_certificate#id IotCertificate#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdktf/provider-aws.iotCertificate.IotCertificateConfig.property.region"></a>
+
+```java
+public java.lang.String getRegion();
+```
+
+- *Type:* java.lang.String
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/iot_certificate#region IotCertificate#region}
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### CodecatalystSourceRepository <a name="CodecatalystSourceRepository" id="@cdktf/provider-aws.codecatalystSourceRepository.CodecatalystSourceRepository"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/codecatalyst_source_repository aws_codecatalyst_source_repository}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/codecatalyst_source_repository aws_codecatalyst_source_repository}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.codecatalystSourceRepository.CodecatalystSourceRepository.Initializer"></a>
 
@@ -26,6 +26,7 @@ codecatalystSourceRepository.CodecatalystSourceRepository(
   space_name: str,
   description: str = None,
   id: str = None,
+  region: str = None,
   timeouts: CodecatalystSourceRepositoryTimeouts = None
 )
 ```
@@ -41,11 +42,12 @@ codecatalystSourceRepository.CodecatalystSourceRepository(
 | <code><a href="#@cdktf/provider-aws.codecatalystSourceRepository.CodecatalystSourceRepository.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.codecatalystSourceRepository.CodecatalystSourceRepository.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.codecatalystSourceRepository.CodecatalystSourceRepository.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.codecatalystSourceRepository.CodecatalystSourceRepository.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/codecatalyst_source_repository#name CodecatalystSourceRepository#name}. |
-| <code><a href="#@cdktf/provider-aws.codecatalystSourceRepository.CodecatalystSourceRepository.Initializer.parameter.projectName">project_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/codecatalyst_source_repository#project_name CodecatalystSourceRepository#project_name}. |
-| <code><a href="#@cdktf/provider-aws.codecatalystSourceRepository.CodecatalystSourceRepository.Initializer.parameter.spaceName">space_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/codecatalyst_source_repository#space_name CodecatalystSourceRepository#space_name}. |
-| <code><a href="#@cdktf/provider-aws.codecatalystSourceRepository.CodecatalystSourceRepository.Initializer.parameter.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/codecatalyst_source_repository#description CodecatalystSourceRepository#description}. |
-| <code><a href="#@cdktf/provider-aws.codecatalystSourceRepository.CodecatalystSourceRepository.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/codecatalyst_source_repository#id CodecatalystSourceRepository#id}. |
+| <code><a href="#@cdktf/provider-aws.codecatalystSourceRepository.CodecatalystSourceRepository.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/codecatalyst_source_repository#name CodecatalystSourceRepository#name}. |
+| <code><a href="#@cdktf/provider-aws.codecatalystSourceRepository.CodecatalystSourceRepository.Initializer.parameter.projectName">project_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/codecatalyst_source_repository#project_name CodecatalystSourceRepository#project_name}. |
+| <code><a href="#@cdktf/provider-aws.codecatalystSourceRepository.CodecatalystSourceRepository.Initializer.parameter.spaceName">space_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/codecatalyst_source_repository#space_name CodecatalystSourceRepository#space_name}. |
+| <code><a href="#@cdktf/provider-aws.codecatalystSourceRepository.CodecatalystSourceRepository.Initializer.parameter.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/codecatalyst_source_repository#description CodecatalystSourceRepository#description}. |
+| <code><a href="#@cdktf/provider-aws.codecatalystSourceRepository.CodecatalystSourceRepository.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/codecatalyst_source_repository#id CodecatalystSourceRepository#id}. |
+| <code><a href="#@cdktf/provider-aws.codecatalystSourceRepository.CodecatalystSourceRepository.Initializer.parameter.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktf/provider-aws.codecatalystSourceRepository.CodecatalystSourceRepository.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-aws.codecatalystSourceRepository.CodecatalystSourceRepositoryTimeouts">CodecatalystSourceRepositoryTimeouts</a></code> | timeouts block. |
 
 ---
@@ -114,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/codecatalyst_source_repository#name CodecatalystSourceRepository#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/codecatalyst_source_repository#name CodecatalystSourceRepository#name}.
 
 ---
 
@@ -122,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/codecatalyst_source_repository#project_name CodecatalystSourceRepository#project_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/codecatalyst_source_repository#project_name CodecatalystSourceRepository#project_name}.
 
 ---
 
@@ -130,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/codecatalyst_source_repository#space_name CodecatalystSourceRepository#space_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/codecatalyst_source_repository#space_name CodecatalystSourceRepository#space_name}.
 
 ---
 
@@ -138,7 +140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/codecatalyst_source_repository#description CodecatalystSourceRepository#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/codecatalyst_source_repository#description CodecatalystSourceRepository#description}.
 
 ---
 
@@ -146,10 +148,20 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/codecatalyst_source_repository#id CodecatalystSourceRepository#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/codecatalyst_source_repository#id CodecatalystSourceRepository#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdktf/provider-aws.codecatalystSourceRepository.CodecatalystSourceRepository.Initializer.parameter.region"></a>
+
+- *Type:* str
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/codecatalyst_source_repository#region CodecatalystSourceRepository#region}
 
 ---
 
@@ -159,7 +171,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/codecatalyst_source_repository#timeouts CodecatalystSourceRepository#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/codecatalyst_source_repository#timeouts CodecatalystSourceRepository#timeouts}
 
 ---
 
@@ -193,6 +205,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktf/provider-aws.codecatalystSourceRepository.CodecatalystSourceRepository.putTimeouts">put_timeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.codecatalystSourceRepository.CodecatalystSourceRepository.resetDescription">reset_description</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.codecatalystSourceRepository.CodecatalystSourceRepository.resetId">reset_id</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.codecatalystSourceRepository.CodecatalystSourceRepository.resetRegion">reset_region</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.codecatalystSourceRepository.CodecatalystSourceRepository.resetTimeouts">reset_timeouts</a></code> | *No description.* |
 
 ---
@@ -536,7 +549,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/codecatalyst_source_repository#create CodecatalystSourceRepository#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/codecatalyst_source_repository#create CodecatalystSourceRepository#create}.
 
 ---
 
@@ -544,7 +557,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/codecatalyst_source_repository#delete CodecatalystSourceRepository#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/codecatalyst_source_repository#delete CodecatalystSourceRepository#delete}.
 
 ---
 
@@ -552,7 +565,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/codecatalyst_source_repository#update CodecatalystSourceRepository#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/codecatalyst_source_repository#update CodecatalystSourceRepository#update}.
 
 ---
 
@@ -566,6 +579,12 @@ def reset_description() -> None
 
 ```python
 def reset_id() -> None
+```
+
+##### `reset_region` <a name="reset_region" id="@cdktf/provider-aws.codecatalystSourceRepository.CodecatalystSourceRepository.resetRegion"></a>
+
+```python
+def reset_region() -> None
 ```
 
 ##### `reset_timeouts` <a name="reset_timeouts" id="@cdktf/provider-aws.codecatalystSourceRepository.CodecatalystSourceRepository.resetTimeouts"></a>
@@ -688,7 +707,7 @@ The construct id used in the generated config for the CodecatalystSourceReposito
 
 The id of the existing CodecatalystSourceRepository that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/codecatalyst_source_repository#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/codecatalyst_source_repository#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -723,12 +742,14 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.codecatalystSourceRepository.CodecatalystSourceRepository.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.codecatalystSourceRepository.CodecatalystSourceRepository.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.codecatalystSourceRepository.CodecatalystSourceRepository.property.projectNameInput">project_name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.codecatalystSourceRepository.CodecatalystSourceRepository.property.regionInput">region_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.codecatalystSourceRepository.CodecatalystSourceRepository.property.spaceNameInput">space_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.codecatalystSourceRepository.CodecatalystSourceRepository.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.codecatalystSourceRepository.CodecatalystSourceRepositoryTimeouts">CodecatalystSourceRepositoryTimeouts</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.codecatalystSourceRepository.CodecatalystSourceRepository.property.description">description</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.codecatalystSourceRepository.CodecatalystSourceRepository.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.codecatalystSourceRepository.CodecatalystSourceRepository.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.codecatalystSourceRepository.CodecatalystSourceRepository.property.projectName">project_name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.codecatalystSourceRepository.CodecatalystSourceRepository.property.region">region</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.codecatalystSourceRepository.CodecatalystSourceRepository.property.spaceName">space_name</a></code> | <code>str</code> | *No description.* |
 
 ---
@@ -925,6 +946,16 @@ project_name_input: str
 
 ---
 
+##### `region_input`<sup>Optional</sup> <a name="region_input" id="@cdktf/provider-aws.codecatalystSourceRepository.CodecatalystSourceRepository.property.regionInput"></a>
+
+```python
+region_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `space_name_input`<sup>Optional</sup> <a name="space_name_input" id="@cdktf/provider-aws.codecatalystSourceRepository.CodecatalystSourceRepository.property.spaceNameInput"></a>
 
 ```python
@@ -985,6 +1016,16 @@ project_name: str
 
 ---
 
+##### `region`<sup>Required</sup> <a name="region" id="@cdktf/provider-aws.codecatalystSourceRepository.CodecatalystSourceRepository.property.region"></a>
+
+```python
+region: str
+```
+
+- *Type:* str
+
+---
+
 ##### `space_name`<sup>Required</sup> <a name="space_name" id="@cdktf/provider-aws.codecatalystSourceRepository.CodecatalystSourceRepository.property.spaceName"></a>
 
 ```python
@@ -1035,6 +1076,7 @@ codecatalystSourceRepository.CodecatalystSourceRepositoryConfig(
   space_name: str,
   description: str = None,
   id: str = None,
+  region: str = None,
   timeouts: CodecatalystSourceRepositoryTimeouts = None
 )
 ```
@@ -1050,11 +1092,12 @@ codecatalystSourceRepository.CodecatalystSourceRepositoryConfig(
 | <code><a href="#@cdktf/provider-aws.codecatalystSourceRepository.CodecatalystSourceRepositoryConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.codecatalystSourceRepository.CodecatalystSourceRepositoryConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.codecatalystSourceRepository.CodecatalystSourceRepositoryConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.codecatalystSourceRepository.CodecatalystSourceRepositoryConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/codecatalyst_source_repository#name CodecatalystSourceRepository#name}. |
-| <code><a href="#@cdktf/provider-aws.codecatalystSourceRepository.CodecatalystSourceRepositoryConfig.property.projectName">project_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/codecatalyst_source_repository#project_name CodecatalystSourceRepository#project_name}. |
-| <code><a href="#@cdktf/provider-aws.codecatalystSourceRepository.CodecatalystSourceRepositoryConfig.property.spaceName">space_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/codecatalyst_source_repository#space_name CodecatalystSourceRepository#space_name}. |
-| <code><a href="#@cdktf/provider-aws.codecatalystSourceRepository.CodecatalystSourceRepositoryConfig.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/codecatalyst_source_repository#description CodecatalystSourceRepository#description}. |
-| <code><a href="#@cdktf/provider-aws.codecatalystSourceRepository.CodecatalystSourceRepositoryConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/codecatalyst_source_repository#id CodecatalystSourceRepository#id}. |
+| <code><a href="#@cdktf/provider-aws.codecatalystSourceRepository.CodecatalystSourceRepositoryConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/codecatalyst_source_repository#name CodecatalystSourceRepository#name}. |
+| <code><a href="#@cdktf/provider-aws.codecatalystSourceRepository.CodecatalystSourceRepositoryConfig.property.projectName">project_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/codecatalyst_source_repository#project_name CodecatalystSourceRepository#project_name}. |
+| <code><a href="#@cdktf/provider-aws.codecatalystSourceRepository.CodecatalystSourceRepositoryConfig.property.spaceName">space_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/codecatalyst_source_repository#space_name CodecatalystSourceRepository#space_name}. |
+| <code><a href="#@cdktf/provider-aws.codecatalystSourceRepository.CodecatalystSourceRepositoryConfig.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/codecatalyst_source_repository#description CodecatalystSourceRepository#description}. |
+| <code><a href="#@cdktf/provider-aws.codecatalystSourceRepository.CodecatalystSourceRepositoryConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/codecatalyst_source_repository#id CodecatalystSourceRepository#id}. |
+| <code><a href="#@cdktf/provider-aws.codecatalystSourceRepository.CodecatalystSourceRepositoryConfig.property.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktf/provider-aws.codecatalystSourceRepository.CodecatalystSourceRepositoryConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-aws.codecatalystSourceRepository.CodecatalystSourceRepositoryTimeouts">CodecatalystSourceRepositoryTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1137,7 +1180,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/codecatalyst_source_repository#name CodecatalystSourceRepository#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/codecatalyst_source_repository#name CodecatalystSourceRepository#name}.
 
 ---
 
@@ -1149,7 +1192,7 @@ project_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/codecatalyst_source_repository#project_name CodecatalystSourceRepository#project_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/codecatalyst_source_repository#project_name CodecatalystSourceRepository#project_name}.
 
 ---
 
@@ -1161,7 +1204,7 @@ space_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/codecatalyst_source_repository#space_name CodecatalystSourceRepository#space_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/codecatalyst_source_repository#space_name CodecatalystSourceRepository#space_name}.
 
 ---
 
@@ -1173,7 +1216,7 @@ description: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/codecatalyst_source_repository#description CodecatalystSourceRepository#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/codecatalyst_source_repository#description CodecatalystSourceRepository#description}.
 
 ---
 
@@ -1185,10 +1228,24 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/codecatalyst_source_repository#id CodecatalystSourceRepository#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/codecatalyst_source_repository#id CodecatalystSourceRepository#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdktf/provider-aws.codecatalystSourceRepository.CodecatalystSourceRepositoryConfig.property.region"></a>
+
+```python
+region: str
+```
+
+- *Type:* str
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/codecatalyst_source_repository#region CodecatalystSourceRepository#region}
 
 ---
 
@@ -1202,7 +1259,7 @@ timeouts: CodecatalystSourceRepositoryTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/codecatalyst_source_repository#timeouts CodecatalystSourceRepository#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/codecatalyst_source_repository#timeouts CodecatalystSourceRepository#timeouts}
 
 ---
 
@@ -1224,9 +1281,9 @@ codecatalystSourceRepository.CodecatalystSourceRepositoryTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.codecatalystSourceRepository.CodecatalystSourceRepositoryTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/codecatalyst_source_repository#create CodecatalystSourceRepository#create}. |
-| <code><a href="#@cdktf/provider-aws.codecatalystSourceRepository.CodecatalystSourceRepositoryTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/codecatalyst_source_repository#delete CodecatalystSourceRepository#delete}. |
-| <code><a href="#@cdktf/provider-aws.codecatalystSourceRepository.CodecatalystSourceRepositoryTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/codecatalyst_source_repository#update CodecatalystSourceRepository#update}. |
+| <code><a href="#@cdktf/provider-aws.codecatalystSourceRepository.CodecatalystSourceRepositoryTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/codecatalyst_source_repository#create CodecatalystSourceRepository#create}. |
+| <code><a href="#@cdktf/provider-aws.codecatalystSourceRepository.CodecatalystSourceRepositoryTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/codecatalyst_source_repository#delete CodecatalystSourceRepository#delete}. |
+| <code><a href="#@cdktf/provider-aws.codecatalystSourceRepository.CodecatalystSourceRepositoryTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/codecatalyst_source_repository#update CodecatalystSourceRepository#update}. |
 
 ---
 
@@ -1238,7 +1295,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/codecatalyst_source_repository#create CodecatalystSourceRepository#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/codecatalyst_source_repository#create CodecatalystSourceRepository#create}.
 
 ---
 
@@ -1250,7 +1307,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/codecatalyst_source_repository#delete CodecatalystSourceRepository#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/codecatalyst_source_repository#delete CodecatalystSourceRepository#delete}.
 
 ---
 
@@ -1262,7 +1319,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/codecatalyst_source_repository#update CodecatalystSourceRepository#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/codecatalyst_source_repository#update CodecatalystSourceRepository#update}.
 
 ---
 

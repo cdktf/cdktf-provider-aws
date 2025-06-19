@@ -4,12 +4,12 @@
 
 ### DataAwsMskVpcConnection <a name="DataAwsMskVpcConnection" id="@cdktf/provider-aws.dataAwsMskVpcConnection.DataAwsMskVpcConnection"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/msk_vpc_connection aws_msk_vpc_connection}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/msk_vpc_connection aws_msk_vpc_connection}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsMskVpcConnection.DataAwsMskVpcConnection.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsmskvpcconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsmskvpcconnection"
 
 dataawsmskvpcconnection.NewDataAwsMskVpcConnection(scope Construct, id *string, config DataAwsMskVpcConnectionConfig) DataAwsMskVpcConnection
 ```
@@ -68,6 +68,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.dataAwsMskVpcConnection.DataAwsMskVpcConnection.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsMskVpcConnection.DataAwsMskVpcConnection.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsMskVpcConnection.DataAwsMskVpcConnection.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsMskVpcConnection.DataAwsMskVpcConnection.resetRegion">ResetRegion</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsMskVpcConnection.DataAwsMskVpcConnection.resetTags">ResetTags</a></code> | *No description.* |
 
 ---
@@ -270,6 +271,12 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 func ResetId()
 ```
 
+##### `ResetRegion` <a name="ResetRegion" id="@cdktf/provider-aws.dataAwsMskVpcConnection.DataAwsMskVpcConnection.resetRegion"></a>
+
+```go
+func ResetRegion()
+```
+
 ##### `ResetTags` <a name="ResetTags" id="@cdktf/provider-aws.dataAwsMskVpcConnection.DataAwsMskVpcConnection.resetTags"></a>
 
 ```go
@@ -290,7 +297,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsMskVpcConnection.DataAwsMskVpcConnection.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsmskvpcconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsmskvpcconnection"
 
 dataawsmskvpcconnection.DataAwsMskVpcConnection_IsConstruct(x interface{}) *bool
 ```
@@ -322,7 +329,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsMskVpcConnection.DataAwsMskVpcConnection.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsmskvpcconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsmskvpcconnection"
 
 dataawsmskvpcconnection.DataAwsMskVpcConnection_IsTerraformElement(x interface{}) *bool
 ```
@@ -336,7 +343,7 @@ dataawsmskvpcconnection.DataAwsMskVpcConnection_IsTerraformElement(x interface{}
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsMskVpcConnection.DataAwsMskVpcConnection.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsmskvpcconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsmskvpcconnection"
 
 dataawsmskvpcconnection.DataAwsMskVpcConnection_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -350,7 +357,7 @@ dataawsmskvpcconnection.DataAwsMskVpcConnection_IsTerraformDataSource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsMskVpcConnection.DataAwsMskVpcConnection.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsmskvpcconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsmskvpcconnection"
 
 dataawsmskvpcconnection.DataAwsMskVpcConnection_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -379,7 +386,7 @@ The construct id used in the generated config for the DataAwsMskVpcConnection to
 
 The id of the existing DataAwsMskVpcConnection that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/msk_vpc_connection#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/msk_vpc_connection#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -414,9 +421,11 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.dataAwsMskVpcConnection.DataAwsMskVpcConnection.property.vpcId">VpcId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsMskVpcConnection.DataAwsMskVpcConnection.property.arnInput">ArnInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsMskVpcConnection.DataAwsMskVpcConnection.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsMskVpcConnection.DataAwsMskVpcConnection.property.regionInput">RegionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsMskVpcConnection.DataAwsMskVpcConnection.property.tagsInput">TagsInput</a></code> | <code>*map[string]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsMskVpcConnection.DataAwsMskVpcConnection.property.arn">Arn</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsMskVpcConnection.DataAwsMskVpcConnection.property.id">Id</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsMskVpcConnection.DataAwsMskVpcConnection.property.region">Region</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsMskVpcConnection.DataAwsMskVpcConnection.property.tags">Tags</a></code> | <code>*map[string]*string</code> | *No description.* |
 
 ---
@@ -613,6 +622,16 @@ func IdInput() *string
 
 ---
 
+##### `RegionInput`<sup>Optional</sup> <a name="RegionInput" id="@cdktf/provider-aws.dataAwsMskVpcConnection.DataAwsMskVpcConnection.property.regionInput"></a>
+
+```go
+func RegionInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `TagsInput`<sup>Optional</sup> <a name="TagsInput" id="@cdktf/provider-aws.dataAwsMskVpcConnection.DataAwsMskVpcConnection.property.tagsInput"></a>
 
 ```go
@@ -637,6 +656,16 @@ func Arn() *string
 
 ```go
 func Id() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Region`<sup>Required</sup> <a name="Region" id="@cdktf/provider-aws.dataAwsMskVpcConnection.DataAwsMskVpcConnection.property.region"></a>
+
+```go
+func Region() *string
 ```
 
 - *Type:* *string
@@ -678,7 +707,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsMskVpcConnection.DataAwsMskVpcConnectionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsmskvpcconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsmskvpcconnection"
 
 &dataawsmskvpcconnection.DataAwsMskVpcConnectionConfig {
 	Connection: interface{},
@@ -690,6 +719,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsmskvpcconnection"
 	Provisioners: *[]interface{},
 	Arn: *string,
 	Id: *string,
+	Region: *string,
 	Tags: *map[string]*string,
 }
 ```
@@ -705,9 +735,10 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsmskvpcconnection"
 | <code><a href="#@cdktf/provider-aws.dataAwsMskVpcConnection.DataAwsMskVpcConnectionConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsMskVpcConnection.DataAwsMskVpcConnectionConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsMskVpcConnection.DataAwsMskVpcConnectionConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsMskVpcConnection.DataAwsMskVpcConnectionConfig.property.arn">Arn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/msk_vpc_connection#arn DataAwsMskVpcConnection#arn}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsMskVpcConnection.DataAwsMskVpcConnectionConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/msk_vpc_connection#id DataAwsMskVpcConnection#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsMskVpcConnection.DataAwsMskVpcConnectionConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/msk_vpc_connection#tags DataAwsMskVpcConnection#tags}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsMskVpcConnection.DataAwsMskVpcConnectionConfig.property.arn">Arn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/msk_vpc_connection#arn DataAwsMskVpcConnection#arn}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsMskVpcConnection.DataAwsMskVpcConnectionConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/msk_vpc_connection#id DataAwsMskVpcConnection#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsMskVpcConnection.DataAwsMskVpcConnectionConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
+| <code><a href="#@cdktf/provider-aws.dataAwsMskVpcConnection.DataAwsMskVpcConnectionConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/msk_vpc_connection#tags DataAwsMskVpcConnection#tags}. |
 
 ---
 
@@ -789,7 +820,7 @@ Arn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/msk_vpc_connection#arn DataAwsMskVpcConnection#arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/msk_vpc_connection#arn DataAwsMskVpcConnection#arn}.
 
 ---
 
@@ -801,10 +832,24 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/msk_vpc_connection#id DataAwsMskVpcConnection#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/msk_vpc_connection#id DataAwsMskVpcConnection#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `Region`<sup>Optional</sup> <a name="Region" id="@cdktf/provider-aws.dataAwsMskVpcConnection.DataAwsMskVpcConnectionConfig.property.region"></a>
+
+```go
+Region *string
+```
+
+- *Type:* *string
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/msk_vpc_connection#region DataAwsMskVpcConnection#region}
 
 ---
 
@@ -816,7 +861,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/msk_vpc_connection#tags DataAwsMskVpcConnection#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/msk_vpc_connection#tags DataAwsMskVpcConnection#tags}.
 
 ---
 

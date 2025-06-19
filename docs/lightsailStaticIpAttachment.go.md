@@ -4,12 +4,12 @@
 
 ### LightsailStaticIpAttachment <a name="LightsailStaticIpAttachment" id="@cdktf/provider-aws.lightsailStaticIpAttachment.LightsailStaticIpAttachment"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/lightsail_static_ip_attachment aws_lightsail_static_ip_attachment}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/lightsail_static_ip_attachment aws_lightsail_static_ip_attachment}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lightsailStaticIpAttachment.LightsailStaticIpAttachment.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/lightsailstaticipattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/lightsailstaticipattachment"
 
 lightsailstaticipattachment.NewLightsailStaticIpAttachment(scope Construct, id *string, config LightsailStaticIpAttachmentConfig) LightsailStaticIpAttachment
 ```
@@ -74,6 +74,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.lightsailStaticIpAttachment.LightsailStaticIpAttachment.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-aws.lightsailStaticIpAttachment.LightsailStaticIpAttachment.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-aws.lightsailStaticIpAttachment.LightsailStaticIpAttachment.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lightsailStaticIpAttachment.LightsailStaticIpAttachment.resetRegion">ResetRegion</a></code> | *No description.* |
 
 ---
 
@@ -371,6 +372,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 func ResetId()
 ```
 
+##### `ResetRegion` <a name="ResetRegion" id="@cdktf/provider-aws.lightsailStaticIpAttachment.LightsailStaticIpAttachment.resetRegion"></a>
+
+```go
+func ResetRegion()
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -385,7 +392,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.lightsailStaticIpAttachment.LightsailStaticIpAttachment.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/lightsailstaticipattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/lightsailstaticipattachment"
 
 lightsailstaticipattachment.LightsailStaticIpAttachment_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +424,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.lightsailStaticIpAttachment.LightsailStaticIpAttachment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/lightsailstaticipattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/lightsailstaticipattachment"
 
 lightsailstaticipattachment.LightsailStaticIpAttachment_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +438,7 @@ lightsailstaticipattachment.LightsailStaticIpAttachment_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.lightsailStaticIpAttachment.LightsailStaticIpAttachment.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/lightsailstaticipattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/lightsailstaticipattachment"
 
 lightsailstaticipattachment.LightsailStaticIpAttachment_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +452,7 @@ lightsailstaticipattachment.LightsailStaticIpAttachment_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.lightsailStaticIpAttachment.LightsailStaticIpAttachment.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/lightsailstaticipattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/lightsailstaticipattachment"
 
 lightsailstaticipattachment.LightsailStaticIpAttachment_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -474,7 +481,7 @@ The construct id used in the generated config for the LightsailStaticIpAttachmen
 
 The id of the existing LightsailStaticIpAttachment that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/lightsail_static_ip_attachment#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/lightsail_static_ip_attachment#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -507,9 +514,11 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.lightsailStaticIpAttachment.LightsailStaticIpAttachment.property.ipAddress">IpAddress</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lightsailStaticIpAttachment.LightsailStaticIpAttachment.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lightsailStaticIpAttachment.LightsailStaticIpAttachment.property.instanceNameInput">InstanceNameInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lightsailStaticIpAttachment.LightsailStaticIpAttachment.property.regionInput">RegionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lightsailStaticIpAttachment.LightsailStaticIpAttachment.property.staticIpNameInput">StaticIpNameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lightsailStaticIpAttachment.LightsailStaticIpAttachment.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lightsailStaticIpAttachment.LightsailStaticIpAttachment.property.instanceName">InstanceName</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lightsailStaticIpAttachment.LightsailStaticIpAttachment.property.region">Region</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lightsailStaticIpAttachment.LightsailStaticIpAttachment.property.staticIpName">StaticIpName</a></code> | <code>*string</code> | *No description.* |
 
 ---
@@ -686,6 +695,16 @@ func InstanceNameInput() *string
 
 ---
 
+##### `RegionInput`<sup>Optional</sup> <a name="RegionInput" id="@cdktf/provider-aws.lightsailStaticIpAttachment.LightsailStaticIpAttachment.property.regionInput"></a>
+
+```go
+func RegionInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `StaticIpNameInput`<sup>Optional</sup> <a name="StaticIpNameInput" id="@cdktf/provider-aws.lightsailStaticIpAttachment.LightsailStaticIpAttachment.property.staticIpNameInput"></a>
 
 ```go
@@ -710,6 +729,16 @@ func Id() *string
 
 ```go
 func InstanceName() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Region`<sup>Required</sup> <a name="Region" id="@cdktf/provider-aws.lightsailStaticIpAttachment.LightsailStaticIpAttachment.property.region"></a>
+
+```go
+func Region() *string
 ```
 
 - *Type:* *string
@@ -751,7 +780,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lightsailStaticIpAttachment.LightsailStaticIpAttachmentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/lightsailstaticipattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/lightsailstaticipattachment"
 
 &lightsailstaticipattachment.LightsailStaticIpAttachmentConfig {
 	Connection: interface{},
@@ -764,6 +793,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/lightsailstaticipattachme
 	InstanceName: *string,
 	StaticIpName: *string,
 	Id: *string,
+	Region: *string,
 }
 ```
 
@@ -778,9 +808,10 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/lightsailstaticipattachme
 | <code><a href="#@cdktf/provider-aws.lightsailStaticIpAttachment.LightsailStaticIpAttachmentConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lightsailStaticIpAttachment.LightsailStaticIpAttachmentConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lightsailStaticIpAttachment.LightsailStaticIpAttachmentConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lightsailStaticIpAttachment.LightsailStaticIpAttachmentConfig.property.instanceName">InstanceName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/lightsail_static_ip_attachment#instance_name LightsailStaticIpAttachment#instance_name}. |
-| <code><a href="#@cdktf/provider-aws.lightsailStaticIpAttachment.LightsailStaticIpAttachmentConfig.property.staticIpName">StaticIpName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/lightsail_static_ip_attachment#static_ip_name LightsailStaticIpAttachment#static_ip_name}. |
-| <code><a href="#@cdktf/provider-aws.lightsailStaticIpAttachment.LightsailStaticIpAttachmentConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/lightsail_static_ip_attachment#id LightsailStaticIpAttachment#id}. |
+| <code><a href="#@cdktf/provider-aws.lightsailStaticIpAttachment.LightsailStaticIpAttachmentConfig.property.instanceName">InstanceName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/lightsail_static_ip_attachment#instance_name LightsailStaticIpAttachment#instance_name}. |
+| <code><a href="#@cdktf/provider-aws.lightsailStaticIpAttachment.LightsailStaticIpAttachmentConfig.property.staticIpName">StaticIpName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/lightsail_static_ip_attachment#static_ip_name LightsailStaticIpAttachment#static_ip_name}. |
+| <code><a href="#@cdktf/provider-aws.lightsailStaticIpAttachment.LightsailStaticIpAttachmentConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/lightsail_static_ip_attachment#id LightsailStaticIpAttachment#id}. |
+| <code><a href="#@cdktf/provider-aws.lightsailStaticIpAttachment.LightsailStaticIpAttachmentConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
 
@@ -862,7 +893,7 @@ InstanceName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/lightsail_static_ip_attachment#instance_name LightsailStaticIpAttachment#instance_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/lightsail_static_ip_attachment#instance_name LightsailStaticIpAttachment#instance_name}.
 
 ---
 
@@ -874,7 +905,7 @@ StaticIpName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/lightsail_static_ip_attachment#static_ip_name LightsailStaticIpAttachment#static_ip_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/lightsail_static_ip_attachment#static_ip_name LightsailStaticIpAttachment#static_ip_name}.
 
 ---
 
@@ -886,10 +917,24 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/lightsail_static_ip_attachment#id LightsailStaticIpAttachment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/lightsail_static_ip_attachment#id LightsailStaticIpAttachment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `Region`<sup>Optional</sup> <a name="Region" id="@cdktf/provider-aws.lightsailStaticIpAttachment.LightsailStaticIpAttachmentConfig.property.region"></a>
+
+```go
+Region *string
+```
+
+- *Type:* *string
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/lightsail_static_ip_attachment#region LightsailStaticIpAttachment#region}
 
 ---
 

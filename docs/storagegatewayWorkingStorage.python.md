@@ -4,7 +4,7 @@
 
 ### StoragegatewayWorkingStorage <a name="StoragegatewayWorkingStorage" id="@cdktf/provider-aws.storagegatewayWorkingStorage.StoragegatewayWorkingStorage"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/storagegateway_working_storage aws_storagegateway_working_storage}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/storagegateway_working_storage aws_storagegateway_working_storage}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.storagegatewayWorkingStorage.StoragegatewayWorkingStorage.Initializer"></a>
 
@@ -23,7 +23,8 @@ storagegatewayWorkingStorage.StoragegatewayWorkingStorage(
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
   disk_id: str,
   gateway_arn: str,
-  id: str = None
+  id: str = None,
+  region: str = None
 )
 ```
 
@@ -38,9 +39,10 @@ storagegatewayWorkingStorage.StoragegatewayWorkingStorage(
 | <code><a href="#@cdktf/provider-aws.storagegatewayWorkingStorage.StoragegatewayWorkingStorage.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.storagegatewayWorkingStorage.StoragegatewayWorkingStorage.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.storagegatewayWorkingStorage.StoragegatewayWorkingStorage.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.storagegatewayWorkingStorage.StoragegatewayWorkingStorage.Initializer.parameter.diskId">disk_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/storagegateway_working_storage#disk_id StoragegatewayWorkingStorage#disk_id}. |
-| <code><a href="#@cdktf/provider-aws.storagegatewayWorkingStorage.StoragegatewayWorkingStorage.Initializer.parameter.gatewayArn">gateway_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/storagegateway_working_storage#gateway_arn StoragegatewayWorkingStorage#gateway_arn}. |
-| <code><a href="#@cdktf/provider-aws.storagegatewayWorkingStorage.StoragegatewayWorkingStorage.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/storagegateway_working_storage#id StoragegatewayWorkingStorage#id}. |
+| <code><a href="#@cdktf/provider-aws.storagegatewayWorkingStorage.StoragegatewayWorkingStorage.Initializer.parameter.diskId">disk_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/storagegateway_working_storage#disk_id StoragegatewayWorkingStorage#disk_id}. |
+| <code><a href="#@cdktf/provider-aws.storagegatewayWorkingStorage.StoragegatewayWorkingStorage.Initializer.parameter.gatewayArn">gateway_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/storagegateway_working_storage#gateway_arn StoragegatewayWorkingStorage#gateway_arn}. |
+| <code><a href="#@cdktf/provider-aws.storagegatewayWorkingStorage.StoragegatewayWorkingStorage.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/storagegateway_working_storage#id StoragegatewayWorkingStorage#id}. |
+| <code><a href="#@cdktf/provider-aws.storagegatewayWorkingStorage.StoragegatewayWorkingStorage.Initializer.parameter.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
 
@@ -108,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/storagegateway_working_storage#disk_id StoragegatewayWorkingStorage#disk_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/storagegateway_working_storage#disk_id StoragegatewayWorkingStorage#disk_id}.
 
 ---
 
@@ -116,7 +118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/storagegateway_working_storage#gateway_arn StoragegatewayWorkingStorage#gateway_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/storagegateway_working_storage#gateway_arn StoragegatewayWorkingStorage#gateway_arn}.
 
 ---
 
@@ -124,10 +126,20 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/storagegateway_working_storage#id StoragegatewayWorkingStorage#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/storagegateway_working_storage#id StoragegatewayWorkingStorage#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdktf/provider-aws.storagegatewayWorkingStorage.StoragegatewayWorkingStorage.Initializer.parameter.region"></a>
+
+- *Type:* str
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/storagegateway_working_storage#region StoragegatewayWorkingStorage#region}
 
 ---
 
@@ -159,6 +171,7 @@ If you experience problems setting this value it might not be settable. Please t
 | <code><a href="#@cdktf/provider-aws.storagegatewayWorkingStorage.StoragegatewayWorkingStorage.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-aws.storagegatewayWorkingStorage.StoragegatewayWorkingStorage.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-aws.storagegatewayWorkingStorage.StoragegatewayWorkingStorage.resetId">reset_id</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.storagegatewayWorkingStorage.StoragegatewayWorkingStorage.resetRegion">reset_region</a></code> | *No description.* |
 
 ---
 
@@ -493,6 +506,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 def reset_id() -> None
 ```
 
+##### `reset_region` <a name="reset_region" id="@cdktf/provider-aws.storagegatewayWorkingStorage.StoragegatewayWorkingStorage.resetRegion"></a>
+
+```python
+def reset_region() -> None
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -607,7 +626,7 @@ The construct id used in the generated config for the StoragegatewayWorkingStora
 
 The id of the existing StoragegatewayWorkingStorage that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/storagegateway_working_storage#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/storagegateway_working_storage#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -640,9 +659,11 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.storagegatewayWorkingStorage.StoragegatewayWorkingStorage.property.diskIdInput">disk_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.storagegatewayWorkingStorage.StoragegatewayWorkingStorage.property.gatewayArnInput">gateway_arn_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.storagegatewayWorkingStorage.StoragegatewayWorkingStorage.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.storagegatewayWorkingStorage.StoragegatewayWorkingStorage.property.regionInput">region_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.storagegatewayWorkingStorage.StoragegatewayWorkingStorage.property.diskId">disk_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.storagegatewayWorkingStorage.StoragegatewayWorkingStorage.property.gatewayArn">gateway_arn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.storagegatewayWorkingStorage.StoragegatewayWorkingStorage.property.id">id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.storagegatewayWorkingStorage.StoragegatewayWorkingStorage.property.region">region</a></code> | <code>str</code> | *No description.* |
 
 ---
 
@@ -818,6 +839,16 @@ id_input: str
 
 ---
 
+##### `region_input`<sup>Optional</sup> <a name="region_input" id="@cdktf/provider-aws.storagegatewayWorkingStorage.StoragegatewayWorkingStorage.property.regionInput"></a>
+
+```python
+region_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `disk_id`<sup>Required</sup> <a name="disk_id" id="@cdktf/provider-aws.storagegatewayWorkingStorage.StoragegatewayWorkingStorage.property.diskId"></a>
 
 ```python
@@ -842,6 +873,16 @@ gateway_arn: str
 
 ```python
 id: str
+```
+
+- *Type:* str
+
+---
+
+##### `region`<sup>Required</sup> <a name="region" id="@cdktf/provider-aws.storagegatewayWorkingStorage.StoragegatewayWorkingStorage.property.region"></a>
+
+```python
+region: str
 ```
 
 - *Type:* str
@@ -885,7 +926,8 @@ storagegatewayWorkingStorage.StoragegatewayWorkingStorageConfig(
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
   disk_id: str,
   gateway_arn: str,
-  id: str = None
+  id: str = None,
+  region: str = None
 )
 ```
 
@@ -900,9 +942,10 @@ storagegatewayWorkingStorage.StoragegatewayWorkingStorageConfig(
 | <code><a href="#@cdktf/provider-aws.storagegatewayWorkingStorage.StoragegatewayWorkingStorageConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.storagegatewayWorkingStorage.StoragegatewayWorkingStorageConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.storagegatewayWorkingStorage.StoragegatewayWorkingStorageConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.storagegatewayWorkingStorage.StoragegatewayWorkingStorageConfig.property.diskId">disk_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/storagegateway_working_storage#disk_id StoragegatewayWorkingStorage#disk_id}. |
-| <code><a href="#@cdktf/provider-aws.storagegatewayWorkingStorage.StoragegatewayWorkingStorageConfig.property.gatewayArn">gateway_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/storagegateway_working_storage#gateway_arn StoragegatewayWorkingStorage#gateway_arn}. |
-| <code><a href="#@cdktf/provider-aws.storagegatewayWorkingStorage.StoragegatewayWorkingStorageConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/storagegateway_working_storage#id StoragegatewayWorkingStorage#id}. |
+| <code><a href="#@cdktf/provider-aws.storagegatewayWorkingStorage.StoragegatewayWorkingStorageConfig.property.diskId">disk_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/storagegateway_working_storage#disk_id StoragegatewayWorkingStorage#disk_id}. |
+| <code><a href="#@cdktf/provider-aws.storagegatewayWorkingStorage.StoragegatewayWorkingStorageConfig.property.gatewayArn">gateway_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/storagegateway_working_storage#gateway_arn StoragegatewayWorkingStorage#gateway_arn}. |
+| <code><a href="#@cdktf/provider-aws.storagegatewayWorkingStorage.StoragegatewayWorkingStorageConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/storagegateway_working_storage#id StoragegatewayWorkingStorage#id}. |
+| <code><a href="#@cdktf/provider-aws.storagegatewayWorkingStorage.StoragegatewayWorkingStorageConfig.property.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
 
@@ -984,7 +1027,7 @@ disk_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/storagegateway_working_storage#disk_id StoragegatewayWorkingStorage#disk_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/storagegateway_working_storage#disk_id StoragegatewayWorkingStorage#disk_id}.
 
 ---
 
@@ -996,7 +1039,7 @@ gateway_arn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/storagegateway_working_storage#gateway_arn StoragegatewayWorkingStorage#gateway_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/storagegateway_working_storage#gateway_arn StoragegatewayWorkingStorage#gateway_arn}.
 
 ---
 
@@ -1008,10 +1051,24 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/storagegateway_working_storage#id StoragegatewayWorkingStorage#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/storagegateway_working_storage#id StoragegatewayWorkingStorage#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdktf/provider-aws.storagegatewayWorkingStorage.StoragegatewayWorkingStorageConfig.property.region"></a>
+
+```python
+region: str
+```
+
+- *Type:* str
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/storagegateway_working_storage#region StoragegatewayWorkingStorage#region}
 
 ---
 

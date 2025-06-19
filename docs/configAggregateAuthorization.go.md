@@ -4,12 +4,12 @@
 
 ### ConfigAggregateAuthorization <a name="ConfigAggregateAuthorization" id="@cdktf/provider-aws.configAggregateAuthorization.ConfigAggregateAuthorization"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/config_aggregate_authorization aws_config_aggregate_authorization}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/config_aggregate_authorization aws_config_aggregate_authorization}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.configAggregateAuthorization.ConfigAggregateAuthorization.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/configaggregateauthorization"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/configaggregateauthorization"
 
 configaggregateauthorization.NewConfigAggregateAuthorization(scope Construct, id *string, config ConfigAggregateAuthorizationConfig) ConfigAggregateAuthorization
 ```
@@ -73,7 +73,9 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.configAggregateAuthorization.ConfigAggregateAuthorization.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktf/provider-aws.configAggregateAuthorization.ConfigAggregateAuthorization.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-aws.configAggregateAuthorization.ConfigAggregateAuthorization.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktf/provider-aws.configAggregateAuthorization.ConfigAggregateAuthorization.resetAuthorizedAwsRegion">ResetAuthorizedAwsRegion</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.configAggregateAuthorization.ConfigAggregateAuthorization.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.configAggregateAuthorization.ConfigAggregateAuthorization.resetRegion">ResetRegion</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.configAggregateAuthorization.ConfigAggregateAuthorization.resetTags">ResetTags</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.configAggregateAuthorization.ConfigAggregateAuthorization.resetTagsAll">ResetTagsAll</a></code> | *No description.* |
 
@@ -367,10 +369,22 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `ResetAuthorizedAwsRegion` <a name="ResetAuthorizedAwsRegion" id="@cdktf/provider-aws.configAggregateAuthorization.ConfigAggregateAuthorization.resetAuthorizedAwsRegion"></a>
+
+```go
+func ResetAuthorizedAwsRegion()
+```
+
 ##### `ResetId` <a name="ResetId" id="@cdktf/provider-aws.configAggregateAuthorization.ConfigAggregateAuthorization.resetId"></a>
 
 ```go
 func ResetId()
+```
+
+##### `ResetRegion` <a name="ResetRegion" id="@cdktf/provider-aws.configAggregateAuthorization.ConfigAggregateAuthorization.resetRegion"></a>
+
+```go
+func ResetRegion()
 ```
 
 ##### `ResetTags` <a name="ResetTags" id="@cdktf/provider-aws.configAggregateAuthorization.ConfigAggregateAuthorization.resetTags"></a>
@@ -399,7 +413,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.configAggregateAuthorization.ConfigAggregateAuthorization.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/configaggregateauthorization"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/configaggregateauthorization"
 
 configaggregateauthorization.ConfigAggregateAuthorization_IsConstruct(x interface{}) *bool
 ```
@@ -431,7 +445,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.configAggregateAuthorization.ConfigAggregateAuthorization.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/configaggregateauthorization"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/configaggregateauthorization"
 
 configaggregateauthorization.ConfigAggregateAuthorization_IsTerraformElement(x interface{}) *bool
 ```
@@ -445,7 +459,7 @@ configaggregateauthorization.ConfigAggregateAuthorization_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.configAggregateAuthorization.ConfigAggregateAuthorization.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/configaggregateauthorization"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/configaggregateauthorization"
 
 configaggregateauthorization.ConfigAggregateAuthorization_IsTerraformResource(x interface{}) *bool
 ```
@@ -459,7 +473,7 @@ configaggregateauthorization.ConfigAggregateAuthorization_IsTerraformResource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.configAggregateAuthorization.ConfigAggregateAuthorization.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/configaggregateauthorization"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/configaggregateauthorization"
 
 configaggregateauthorization.ConfigAggregateAuthorization_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -488,7 +502,7 @@ The construct id used in the generated config for the ConfigAggregateAuthorizati
 
 The id of the existing ConfigAggregateAuthorization that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/config_aggregate_authorization#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/config_aggregate_authorization#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -520,11 +534,13 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.configAggregateAuthorization.ConfigAggregateAuthorization.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.configAggregateAuthorization.ConfigAggregateAuthorization.property.arn">Arn</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.configAggregateAuthorization.ConfigAggregateAuthorization.property.accountIdInput">AccountIdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.configAggregateAuthorization.ConfigAggregateAuthorization.property.authorizedAwsRegionInput">AuthorizedAwsRegionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.configAggregateAuthorization.ConfigAggregateAuthorization.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.configAggregateAuthorization.ConfigAggregateAuthorization.property.regionInput">RegionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.configAggregateAuthorization.ConfigAggregateAuthorization.property.tagsAllInput">TagsAllInput</a></code> | <code>*map[string]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.configAggregateAuthorization.ConfigAggregateAuthorization.property.tagsInput">TagsInput</a></code> | <code>*map[string]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.configAggregateAuthorization.ConfigAggregateAuthorization.property.accountId">AccountId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.configAggregateAuthorization.ConfigAggregateAuthorization.property.authorizedAwsRegion">AuthorizedAwsRegion</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.configAggregateAuthorization.ConfigAggregateAuthorization.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.configAggregateAuthorization.ConfigAggregateAuthorization.property.region">Region</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.configAggregateAuthorization.ConfigAggregateAuthorization.property.tags">Tags</a></code> | <code>*map[string]*string</code> | *No description.* |
@@ -694,6 +710,16 @@ func AccountIdInput() *string
 
 ---
 
+##### `AuthorizedAwsRegionInput`<sup>Optional</sup> <a name="AuthorizedAwsRegionInput" id="@cdktf/provider-aws.configAggregateAuthorization.ConfigAggregateAuthorization.property.authorizedAwsRegionInput"></a>
+
+```go
+func AuthorizedAwsRegionInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktf/provider-aws.configAggregateAuthorization.ConfigAggregateAuthorization.property.idInput"></a>
 
 ```go
@@ -738,6 +764,16 @@ func TagsInput() *map[string]*string
 
 ```go
 func AccountId() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `AuthorizedAwsRegion`<sup>Required</sup> <a name="AuthorizedAwsRegion" id="@cdktf/provider-aws.configAggregateAuthorization.ConfigAggregateAuthorization.property.authorizedAwsRegion"></a>
+
+```go
+func AuthorizedAwsRegion() *string
 ```
 
 - *Type:* *string
@@ -809,7 +845,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.configAggregateAuthorization.ConfigAggregateAuthorizationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/configaggregateauthorization"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/configaggregateauthorization"
 
 &configaggregateauthorization.ConfigAggregateAuthorizationConfig {
 	Connection: interface{},
@@ -820,8 +856,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/configaggregateauthorizat
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	AccountId: *string,
-	Region: *string,
+	AuthorizedAwsRegion: *string,
 	Id: *string,
+	Region: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
 }
@@ -838,11 +875,12 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/configaggregateauthorizat
 | <code><a href="#@cdktf/provider-aws.configAggregateAuthorization.ConfigAggregateAuthorizationConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.configAggregateAuthorization.ConfigAggregateAuthorizationConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.configAggregateAuthorization.ConfigAggregateAuthorizationConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configAggregateAuthorization.ConfigAggregateAuthorizationConfig.property.accountId">AccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/config_aggregate_authorization#account_id ConfigAggregateAuthorization#account_id}. |
-| <code><a href="#@cdktf/provider-aws.configAggregateAuthorization.ConfigAggregateAuthorizationConfig.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/config_aggregate_authorization#region ConfigAggregateAuthorization#region}. |
-| <code><a href="#@cdktf/provider-aws.configAggregateAuthorization.ConfigAggregateAuthorizationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/config_aggregate_authorization#id ConfigAggregateAuthorization#id}. |
-| <code><a href="#@cdktf/provider-aws.configAggregateAuthorization.ConfigAggregateAuthorizationConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/config_aggregate_authorization#tags ConfigAggregateAuthorization#tags}. |
-| <code><a href="#@cdktf/provider-aws.configAggregateAuthorization.ConfigAggregateAuthorizationConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/config_aggregate_authorization#tags_all ConfigAggregateAuthorization#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.configAggregateAuthorization.ConfigAggregateAuthorizationConfig.property.accountId">AccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/config_aggregate_authorization#account_id ConfigAggregateAuthorization#account_id}. |
+| <code><a href="#@cdktf/provider-aws.configAggregateAuthorization.ConfigAggregateAuthorizationConfig.property.authorizedAwsRegion">AuthorizedAwsRegion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/config_aggregate_authorization#authorized_aws_region ConfigAggregateAuthorization#authorized_aws_region}. |
+| <code><a href="#@cdktf/provider-aws.configAggregateAuthorization.ConfigAggregateAuthorizationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/config_aggregate_authorization#id ConfigAggregateAuthorization#id}. |
+| <code><a href="#@cdktf/provider-aws.configAggregateAuthorization.ConfigAggregateAuthorizationConfig.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/config_aggregate_authorization#region ConfigAggregateAuthorization#region}. |
+| <code><a href="#@cdktf/provider-aws.configAggregateAuthorization.ConfigAggregateAuthorizationConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/config_aggregate_authorization#tags ConfigAggregateAuthorization#tags}. |
+| <code><a href="#@cdktf/provider-aws.configAggregateAuthorization.ConfigAggregateAuthorizationConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/config_aggregate_authorization#tags_all ConfigAggregateAuthorization#tags_all}. |
 
 ---
 
@@ -924,19 +962,19 @@ AccountId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/config_aggregate_authorization#account_id ConfigAggregateAuthorization#account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/config_aggregate_authorization#account_id ConfigAggregateAuthorization#account_id}.
 
 ---
 
-##### `Region`<sup>Required</sup> <a name="Region" id="@cdktf/provider-aws.configAggregateAuthorization.ConfigAggregateAuthorizationConfig.property.region"></a>
+##### `AuthorizedAwsRegion`<sup>Optional</sup> <a name="AuthorizedAwsRegion" id="@cdktf/provider-aws.configAggregateAuthorization.ConfigAggregateAuthorizationConfig.property.authorizedAwsRegion"></a>
 
 ```go
-Region *string
+AuthorizedAwsRegion *string
 ```
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/config_aggregate_authorization#region ConfigAggregateAuthorization#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/config_aggregate_authorization#authorized_aws_region ConfigAggregateAuthorization#authorized_aws_region}.
 
 ---
 
@@ -948,10 +986,22 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/config_aggregate_authorization#id ConfigAggregateAuthorization#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/config_aggregate_authorization#id ConfigAggregateAuthorization#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `Region`<sup>Optional</sup> <a name="Region" id="@cdktf/provider-aws.configAggregateAuthorization.ConfigAggregateAuthorizationConfig.property.region"></a>
+
+```go
+Region *string
+```
+
+- *Type:* *string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/config_aggregate_authorization#region ConfigAggregateAuthorization#region}.
 
 ---
 
@@ -963,7 +1013,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/config_aggregate_authorization#tags ConfigAggregateAuthorization#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/config_aggregate_authorization#tags ConfigAggregateAuthorization#tags}.
 
 ---
 
@@ -975,7 +1025,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/config_aggregate_authorization#tags_all ConfigAggregateAuthorization#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/config_aggregate_authorization#tags_all ConfigAggregateAuthorization#tags_all}.
 
 ---
 

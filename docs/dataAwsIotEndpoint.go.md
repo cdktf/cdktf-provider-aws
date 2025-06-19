@@ -4,12 +4,12 @@
 
 ### DataAwsIotEndpoint <a name="DataAwsIotEndpoint" id="@cdktf/provider-aws.dataAwsIotEndpoint.DataAwsIotEndpoint"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/iot_endpoint aws_iot_endpoint}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/iot_endpoint aws_iot_endpoint}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsIotEndpoint.DataAwsIotEndpoint.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsiotendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsiotendpoint"
 
 dataawsiotendpoint.NewDataAwsIotEndpoint(scope Construct, id *string, config DataAwsIotEndpointConfig) DataAwsIotEndpoint
 ```
@@ -69,6 +69,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.dataAwsIotEndpoint.DataAwsIotEndpoint.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsIotEndpoint.DataAwsIotEndpoint.resetEndpointType">ResetEndpointType</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsIotEndpoint.DataAwsIotEndpoint.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsIotEndpoint.DataAwsIotEndpoint.resetRegion">ResetRegion</a></code> | *No description.* |
 
 ---
 
@@ -276,6 +277,12 @@ func ResetEndpointType()
 func ResetId()
 ```
 
+##### `ResetRegion` <a name="ResetRegion" id="@cdktf/provider-aws.dataAwsIotEndpoint.DataAwsIotEndpoint.resetRegion"></a>
+
+```go
+func ResetRegion()
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -290,7 +297,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsIotEndpoint.DataAwsIotEndpoint.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsiotendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsiotendpoint"
 
 dataawsiotendpoint.DataAwsIotEndpoint_IsConstruct(x interface{}) *bool
 ```
@@ -322,7 +329,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsIotEndpoint.DataAwsIotEndpoint.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsiotendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsiotendpoint"
 
 dataawsiotendpoint.DataAwsIotEndpoint_IsTerraformElement(x interface{}) *bool
 ```
@@ -336,7 +343,7 @@ dataawsiotendpoint.DataAwsIotEndpoint_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsIotEndpoint.DataAwsIotEndpoint.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsiotendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsiotendpoint"
 
 dataawsiotendpoint.DataAwsIotEndpoint_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -350,7 +357,7 @@ dataawsiotendpoint.DataAwsIotEndpoint_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsIotEndpoint.DataAwsIotEndpoint.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsiotendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsiotendpoint"
 
 dataawsiotendpoint.DataAwsIotEndpoint_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -379,7 +386,7 @@ The construct id used in the generated config for the DataAwsIotEndpoint to impo
 
 The id of the existing DataAwsIotEndpoint that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/iot_endpoint#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/iot_endpoint#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -410,8 +417,10 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.dataAwsIotEndpoint.DataAwsIotEndpoint.property.endpointAddress">EndpointAddress</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsIotEndpoint.DataAwsIotEndpoint.property.endpointTypeInput">EndpointTypeInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsIotEndpoint.DataAwsIotEndpoint.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsIotEndpoint.DataAwsIotEndpoint.property.regionInput">RegionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsIotEndpoint.DataAwsIotEndpoint.property.endpointType">EndpointType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsIotEndpoint.DataAwsIotEndpoint.property.id">Id</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsIotEndpoint.DataAwsIotEndpoint.property.region">Region</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
@@ -567,6 +576,16 @@ func IdInput() *string
 
 ---
 
+##### `RegionInput`<sup>Optional</sup> <a name="RegionInput" id="@cdktf/provider-aws.dataAwsIotEndpoint.DataAwsIotEndpoint.property.regionInput"></a>
+
+```go
+func RegionInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `EndpointType`<sup>Required</sup> <a name="EndpointType" id="@cdktf/provider-aws.dataAwsIotEndpoint.DataAwsIotEndpoint.property.endpointType"></a>
 
 ```go
@@ -581,6 +600,16 @@ func EndpointType() *string
 
 ```go
 func Id() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Region`<sup>Required</sup> <a name="Region" id="@cdktf/provider-aws.dataAwsIotEndpoint.DataAwsIotEndpoint.property.region"></a>
+
+```go
+func Region() *string
 ```
 
 - *Type:* *string
@@ -612,7 +641,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsIotEndpoint.DataAwsIotEndpointConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsiotendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsiotendpoint"
 
 &dataawsiotendpoint.DataAwsIotEndpointConfig {
 	Connection: interface{},
@@ -624,6 +653,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsiotendpoint"
 	Provisioners: *[]interface{},
 	EndpointType: *string,
 	Id: *string,
+	Region: *string,
 }
 ```
 
@@ -638,8 +668,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsiotendpoint"
 | <code><a href="#@cdktf/provider-aws.dataAwsIotEndpoint.DataAwsIotEndpointConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsIotEndpoint.DataAwsIotEndpointConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsIotEndpoint.DataAwsIotEndpointConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsIotEndpoint.DataAwsIotEndpointConfig.property.endpointType">EndpointType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/iot_endpoint#endpoint_type DataAwsIotEndpoint#endpoint_type}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsIotEndpoint.DataAwsIotEndpointConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/iot_endpoint#id DataAwsIotEndpoint#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsIotEndpoint.DataAwsIotEndpointConfig.property.endpointType">EndpointType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/iot_endpoint#endpoint_type DataAwsIotEndpoint#endpoint_type}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsIotEndpoint.DataAwsIotEndpointConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/iot_endpoint#id DataAwsIotEndpoint#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsIotEndpoint.DataAwsIotEndpointConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
 
@@ -721,7 +752,7 @@ EndpointType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/iot_endpoint#endpoint_type DataAwsIotEndpoint#endpoint_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/iot_endpoint#endpoint_type DataAwsIotEndpoint#endpoint_type}.
 
 ---
 
@@ -733,10 +764,24 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/iot_endpoint#id DataAwsIotEndpoint#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/iot_endpoint#id DataAwsIotEndpoint#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `Region`<sup>Optional</sup> <a name="Region" id="@cdktf/provider-aws.dataAwsIotEndpoint.DataAwsIotEndpointConfig.property.region"></a>
+
+```go
+Region *string
+```
+
+- *Type:* *string
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/iot_endpoint#region DataAwsIotEndpoint#region}
 
 ---
 

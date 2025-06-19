@@ -4,12 +4,12 @@
 
 ### AmiCopy <a name="AmiCopy" id="@cdktf/provider-aws.amiCopy.AmiCopy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ami_copy aws_ami_copy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ami_copy aws_ami_copy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.amiCopy.AmiCopy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/amicopy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/amicopy"
 
 amicopy.NewAmiCopy(scope Construct, id *string, config AmiCopyConfig) AmiCopy
 ```
@@ -84,6 +84,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.amiCopy.AmiCopy.resetEphemeralBlockDevice">ResetEphemeralBlockDevice</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.amiCopy.AmiCopy.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.amiCopy.AmiCopy.resetKmsKeyId">ResetKmsKeyId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.amiCopy.AmiCopy.resetRegion">ResetRegion</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.amiCopy.AmiCopy.resetTags">ResetTags</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.amiCopy.AmiCopy.resetTagsAll">ResetTagsAll</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.amiCopy.AmiCopy.resetTimeouts">ResetTimeouts</a></code> | *No description.* |
@@ -462,6 +463,12 @@ func ResetId()
 func ResetKmsKeyId()
 ```
 
+##### `ResetRegion` <a name="ResetRegion" id="@cdktf/provider-aws.amiCopy.AmiCopy.resetRegion"></a>
+
+```go
+func ResetRegion()
+```
+
 ##### `ResetTags` <a name="ResetTags" id="@cdktf/provider-aws.amiCopy.AmiCopy.resetTags"></a>
 
 ```go
@@ -494,7 +501,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.amiCopy.AmiCopy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/amicopy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/amicopy"
 
 amicopy.AmiCopy_IsConstruct(x interface{}) *bool
 ```
@@ -526,7 +533,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.amiCopy.AmiCopy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/amicopy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/amicopy"
 
 amicopy.AmiCopy_IsTerraformElement(x interface{}) *bool
 ```
@@ -540,7 +547,7 @@ amicopy.AmiCopy_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.amiCopy.AmiCopy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/amicopy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/amicopy"
 
 amicopy.AmiCopy_IsTerraformResource(x interface{}) *bool
 ```
@@ -554,7 +561,7 @@ amicopy.AmiCopy_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.amiCopy.AmiCopy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/amicopy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/amicopy"
 
 amicopy.AmiCopy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -583,7 +590,7 @@ The construct id used in the generated config for the AmiCopy to import.
 
 The id of the existing AmiCopy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ami_copy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ami_copy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -649,6 +656,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.amiCopy.AmiCopy.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.amiCopy.AmiCopy.property.kmsKeyIdInput">KmsKeyIdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.amiCopy.AmiCopy.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.amiCopy.AmiCopy.property.regionInput">RegionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.amiCopy.AmiCopy.property.sourceAmiIdInput">SourceAmiIdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.amiCopy.AmiCopy.property.sourceAmiRegionInput">SourceAmiRegionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.amiCopy.AmiCopy.property.tagsAllInput">TagsAllInput</a></code> | <code>*map[string]*string</code> | *No description.* |
@@ -661,6 +669,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.amiCopy.AmiCopy.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.amiCopy.AmiCopy.property.kmsKeyId">KmsKeyId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.amiCopy.AmiCopy.property.name">Name</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.amiCopy.AmiCopy.property.region">Region</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.amiCopy.AmiCopy.property.sourceAmiId">SourceAmiId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.amiCopy.AmiCopy.property.sourceAmiRegion">SourceAmiRegion</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.amiCopy.AmiCopy.property.tags">Tags</a></code> | <code>*map[string]*string</code> | *No description.* |
@@ -1170,6 +1179,16 @@ func NameInput() *string
 
 ---
 
+##### `RegionInput`<sup>Optional</sup> <a name="RegionInput" id="@cdktf/provider-aws.amiCopy.AmiCopy.property.regionInput"></a>
+
+```go
+func RegionInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `SourceAmiIdInput`<sup>Optional</sup> <a name="SourceAmiIdInput" id="@cdktf/provider-aws.amiCopy.AmiCopy.property.sourceAmiIdInput"></a>
 
 ```go
@@ -1290,6 +1309,16 @@ func Name() *string
 
 ---
 
+##### `Region`<sup>Required</sup> <a name="Region" id="@cdktf/provider-aws.amiCopy.AmiCopy.property.region"></a>
+
+```go
+func Region() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `SourceAmiId`<sup>Required</sup> <a name="SourceAmiId" id="@cdktf/provider-aws.amiCopy.AmiCopy.property.sourceAmiId"></a>
 
 ```go
@@ -1355,7 +1384,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.amiCopy.AmiCopyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/amicopy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/amicopy"
 
 &amicopy.AmiCopyConfig {
 	Connection: interface{},
@@ -1376,9 +1405,10 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/amicopy"
 	EphemeralBlockDevice: interface{},
 	Id: *string,
 	KmsKeyId: *string,
+	Region: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v20.amiCopy.AmiCopyTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v21.amiCopy.AmiCopyTimeouts,
 }
 ```
 
@@ -1393,19 +1423,20 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/amicopy"
 | <code><a href="#@cdktf/provider-aws.amiCopy.AmiCopyConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.amiCopy.AmiCopyConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.amiCopy.AmiCopyConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amiCopy.AmiCopyConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ami_copy#name AmiCopy#name}. |
-| <code><a href="#@cdktf/provider-aws.amiCopy.AmiCopyConfig.property.sourceAmiId">SourceAmiId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ami_copy#source_ami_id AmiCopy#source_ami_id}. |
-| <code><a href="#@cdktf/provider-aws.amiCopy.AmiCopyConfig.property.sourceAmiRegion">SourceAmiRegion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ami_copy#source_ami_region AmiCopy#source_ami_region}. |
-| <code><a href="#@cdktf/provider-aws.amiCopy.AmiCopyConfig.property.deprecationTime">DeprecationTime</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ami_copy#deprecation_time AmiCopy#deprecation_time}. |
-| <code><a href="#@cdktf/provider-aws.amiCopy.AmiCopyConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ami_copy#description AmiCopy#description}. |
-| <code><a href="#@cdktf/provider-aws.amiCopy.AmiCopyConfig.property.destinationOutpostArn">DestinationOutpostArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ami_copy#destination_outpost_arn AmiCopy#destination_outpost_arn}. |
+| <code><a href="#@cdktf/provider-aws.amiCopy.AmiCopyConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ami_copy#name AmiCopy#name}. |
+| <code><a href="#@cdktf/provider-aws.amiCopy.AmiCopyConfig.property.sourceAmiId">SourceAmiId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ami_copy#source_ami_id AmiCopy#source_ami_id}. |
+| <code><a href="#@cdktf/provider-aws.amiCopy.AmiCopyConfig.property.sourceAmiRegion">SourceAmiRegion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ami_copy#source_ami_region AmiCopy#source_ami_region}. |
+| <code><a href="#@cdktf/provider-aws.amiCopy.AmiCopyConfig.property.deprecationTime">DeprecationTime</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ami_copy#deprecation_time AmiCopy#deprecation_time}. |
+| <code><a href="#@cdktf/provider-aws.amiCopy.AmiCopyConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ami_copy#description AmiCopy#description}. |
+| <code><a href="#@cdktf/provider-aws.amiCopy.AmiCopyConfig.property.destinationOutpostArn">DestinationOutpostArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ami_copy#destination_outpost_arn AmiCopy#destination_outpost_arn}. |
 | <code><a href="#@cdktf/provider-aws.amiCopy.AmiCopyConfig.property.ebsBlockDevice">EbsBlockDevice</a></code> | <code>interface{}</code> | ebs_block_device block. |
-| <code><a href="#@cdktf/provider-aws.amiCopy.AmiCopyConfig.property.encrypted">Encrypted</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ami_copy#encrypted AmiCopy#encrypted}. |
+| <code><a href="#@cdktf/provider-aws.amiCopy.AmiCopyConfig.property.encrypted">Encrypted</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ami_copy#encrypted AmiCopy#encrypted}. |
 | <code><a href="#@cdktf/provider-aws.amiCopy.AmiCopyConfig.property.ephemeralBlockDevice">EphemeralBlockDevice</a></code> | <code>interface{}</code> | ephemeral_block_device block. |
-| <code><a href="#@cdktf/provider-aws.amiCopy.AmiCopyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ami_copy#id AmiCopy#id}. |
-| <code><a href="#@cdktf/provider-aws.amiCopy.AmiCopyConfig.property.kmsKeyId">KmsKeyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ami_copy#kms_key_id AmiCopy#kms_key_id}. |
-| <code><a href="#@cdktf/provider-aws.amiCopy.AmiCopyConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ami_copy#tags AmiCopy#tags}. |
-| <code><a href="#@cdktf/provider-aws.amiCopy.AmiCopyConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ami_copy#tags_all AmiCopy#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.amiCopy.AmiCopyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ami_copy#id AmiCopy#id}. |
+| <code><a href="#@cdktf/provider-aws.amiCopy.AmiCopyConfig.property.kmsKeyId">KmsKeyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ami_copy#kms_key_id AmiCopy#kms_key_id}. |
+| <code><a href="#@cdktf/provider-aws.amiCopy.AmiCopyConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
+| <code><a href="#@cdktf/provider-aws.amiCopy.AmiCopyConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ami_copy#tags AmiCopy#tags}. |
+| <code><a href="#@cdktf/provider-aws.amiCopy.AmiCopyConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ami_copy#tags_all AmiCopy#tags_all}. |
 | <code><a href="#@cdktf/provider-aws.amiCopy.AmiCopyConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-aws.amiCopy.AmiCopyTimeouts">AmiCopyTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1488,7 +1519,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ami_copy#name AmiCopy#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ami_copy#name AmiCopy#name}.
 
 ---
 
@@ -1500,7 +1531,7 @@ SourceAmiId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ami_copy#source_ami_id AmiCopy#source_ami_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ami_copy#source_ami_id AmiCopy#source_ami_id}.
 
 ---
 
@@ -1512,7 +1543,7 @@ SourceAmiRegion *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ami_copy#source_ami_region AmiCopy#source_ami_region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ami_copy#source_ami_region AmiCopy#source_ami_region}.
 
 ---
 
@@ -1524,7 +1555,7 @@ DeprecationTime *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ami_copy#deprecation_time AmiCopy#deprecation_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ami_copy#deprecation_time AmiCopy#deprecation_time}.
 
 ---
 
@@ -1536,7 +1567,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ami_copy#description AmiCopy#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ami_copy#description AmiCopy#description}.
 
 ---
 
@@ -1548,7 +1579,7 @@ DestinationOutpostArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ami_copy#destination_outpost_arn AmiCopy#destination_outpost_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ami_copy#destination_outpost_arn AmiCopy#destination_outpost_arn}.
 
 ---
 
@@ -1562,7 +1593,7 @@ EbsBlockDevice interface{}
 
 ebs_block_device block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ami_copy#ebs_block_device AmiCopy#ebs_block_device}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ami_copy#ebs_block_device AmiCopy#ebs_block_device}
 
 ---
 
@@ -1574,7 +1605,7 @@ Encrypted interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ami_copy#encrypted AmiCopy#encrypted}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ami_copy#encrypted AmiCopy#encrypted}.
 
 ---
 
@@ -1588,7 +1619,7 @@ EphemeralBlockDevice interface{}
 
 ephemeral_block_device block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ami_copy#ephemeral_block_device AmiCopy#ephemeral_block_device}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ami_copy#ephemeral_block_device AmiCopy#ephemeral_block_device}
 
 ---
 
@@ -1600,7 +1631,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ami_copy#id AmiCopy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ami_copy#id AmiCopy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1615,7 +1646,21 @@ KmsKeyId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ami_copy#kms_key_id AmiCopy#kms_key_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ami_copy#kms_key_id AmiCopy#kms_key_id}.
+
+---
+
+##### `Region`<sup>Optional</sup> <a name="Region" id="@cdktf/provider-aws.amiCopy.AmiCopyConfig.property.region"></a>
+
+```go
+Region *string
+```
+
+- *Type:* *string
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ami_copy#region AmiCopy#region}
 
 ---
 
@@ -1627,7 +1672,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ami_copy#tags AmiCopy#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ami_copy#tags AmiCopy#tags}.
 
 ---
 
@@ -1639,7 +1684,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ami_copy#tags_all AmiCopy#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ami_copy#tags_all AmiCopy#tags_all}.
 
 ---
 
@@ -1653,7 +1698,7 @@ Timeouts AmiCopyTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ami_copy#timeouts AmiCopy#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ami_copy#timeouts AmiCopy#timeouts}
 
 ---
 
@@ -1662,7 +1707,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.amiCopy.AmiCopyEbsBlockDevice.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/amicopy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/amicopy"
 
 &amicopy.AmiCopyEbsBlockDevice {
 
@@ -1675,7 +1720,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/amicopy"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.amiCopy.AmiCopyEphemeralBlockDevice.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/amicopy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/amicopy"
 
 &amicopy.AmiCopyEphemeralBlockDevice {
 
@@ -1688,7 +1733,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/amicopy"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.amiCopy.AmiCopyTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/amicopy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/amicopy"
 
 &amicopy.AmiCopyTimeouts {
 	Create: *string,
@@ -1701,9 +1746,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/amicopy"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.amiCopy.AmiCopyTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ami_copy#create AmiCopy#create}. |
-| <code><a href="#@cdktf/provider-aws.amiCopy.AmiCopyTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ami_copy#delete AmiCopy#delete}. |
-| <code><a href="#@cdktf/provider-aws.amiCopy.AmiCopyTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ami_copy#update AmiCopy#update}. |
+| <code><a href="#@cdktf/provider-aws.amiCopy.AmiCopyTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ami_copy#create AmiCopy#create}. |
+| <code><a href="#@cdktf/provider-aws.amiCopy.AmiCopyTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ami_copy#delete AmiCopy#delete}. |
+| <code><a href="#@cdktf/provider-aws.amiCopy.AmiCopyTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ami_copy#update AmiCopy#update}. |
 
 ---
 
@@ -1715,7 +1760,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ami_copy#create AmiCopy#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ami_copy#create AmiCopy#create}.
 
 ---
 
@@ -1727,7 +1772,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ami_copy#delete AmiCopy#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ami_copy#delete AmiCopy#delete}.
 
 ---
 
@@ -1739,7 +1784,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ami_copy#update AmiCopy#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ami_copy#update AmiCopy#update}.
 
 ---
 
@@ -1750,7 +1795,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.amiCopy.AmiCopyEbsBlockDeviceList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/amicopy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/amicopy"
 
 amicopy.NewAmiCopyEbsBlockDeviceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AmiCopyEbsBlockDeviceList
 ```
@@ -1910,7 +1955,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.amiCopy.AmiCopyEbsBlockDeviceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/amicopy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/amicopy"
 
 amicopy.NewAmiCopyEbsBlockDeviceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AmiCopyEbsBlockDeviceOutputReference
 ```
@@ -2276,7 +2321,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.amiCopy.AmiCopyEphemeralBlockDeviceList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/amicopy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/amicopy"
 
 amicopy.NewAmiCopyEphemeralBlockDeviceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AmiCopyEphemeralBlockDeviceList
 ```
@@ -2436,7 +2481,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.amiCopy.AmiCopyEphemeralBlockDeviceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/amicopy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/amicopy"
 
 amicopy.NewAmiCopyEphemeralBlockDeviceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AmiCopyEphemeralBlockDeviceOutputReference
 ```
@@ -2725,7 +2770,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.amiCopy.AmiCopyTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/amicopy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/amicopy"
 
 amicopy.NewAmiCopyTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AmiCopyTimeoutsOutputReference
 ```

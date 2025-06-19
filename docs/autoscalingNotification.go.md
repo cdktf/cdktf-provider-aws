@@ -4,12 +4,12 @@
 
 ### AutoscalingNotification <a name="AutoscalingNotification" id="@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/autoscaling_notification aws_autoscaling_notification}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/autoscaling_notification aws_autoscaling_notification}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/autoscalingnotification"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/autoscalingnotification"
 
 autoscalingnotification.NewAutoscalingNotification(scope Construct, id *string, config AutoscalingNotificationConfig) AutoscalingNotification
 ```
@@ -74,6 +74,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.resetRegion">ResetRegion</a></code> | *No description.* |
 
 ---
 
@@ -371,6 +372,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 func ResetId()
 ```
 
+##### `ResetRegion` <a name="ResetRegion" id="@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.resetRegion"></a>
+
+```go
+func ResetRegion()
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -385,7 +392,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/autoscalingnotification"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/autoscalingnotification"
 
 autoscalingnotification.AutoscalingNotification_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +424,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/autoscalingnotification"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/autoscalingnotification"
 
 autoscalingnotification.AutoscalingNotification_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +438,7 @@ autoscalingnotification.AutoscalingNotification_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/autoscalingnotification"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/autoscalingnotification"
 
 autoscalingnotification.AutoscalingNotification_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +452,7 @@ autoscalingnotification.AutoscalingNotification_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/autoscalingnotification"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/autoscalingnotification"
 
 autoscalingnotification.AutoscalingNotification_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -474,7 +481,7 @@ The construct id used in the generated config for the AutoscalingNotification to
 
 The id of the existing AutoscalingNotification that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/autoscaling_notification#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/autoscaling_notification#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -507,10 +514,12 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.property.groupNamesInput">GroupNamesInput</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.property.notificationsInput">NotificationsInput</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.property.regionInput">RegionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.property.topicArnInput">TopicArnInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.property.groupNames">GroupNames</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.property.notifications">Notifications</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.property.region">Region</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.property.topicArn">TopicArn</a></code> | <code>*string</code> | *No description.* |
 
 ---
@@ -687,6 +696,16 @@ func NotificationsInput() *[]*string
 
 ---
 
+##### `RegionInput`<sup>Optional</sup> <a name="RegionInput" id="@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.property.regionInput"></a>
+
+```go
+func RegionInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `TopicArnInput`<sup>Optional</sup> <a name="TopicArnInput" id="@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.property.topicArnInput"></a>
 
 ```go
@@ -727,6 +746,16 @@ func Notifications() *[]*string
 
 ---
 
+##### `Region`<sup>Required</sup> <a name="Region" id="@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.property.region"></a>
+
+```go
+func Region() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `TopicArn`<sup>Required</sup> <a name="TopicArn" id="@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.property.topicArn"></a>
 
 ```go
@@ -762,7 +791,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.autoscalingNotification.AutoscalingNotificationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/autoscalingnotification"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/autoscalingnotification"
 
 &autoscalingnotification.AutoscalingNotificationConfig {
 	Connection: interface{},
@@ -776,6 +805,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/autoscalingnotification"
 	Notifications: *[]*string,
 	TopicArn: *string,
 	Id: *string,
+	Region: *string,
 }
 ```
 
@@ -790,10 +820,11 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/autoscalingnotification"
 | <code><a href="#@cdktf/provider-aws.autoscalingNotification.AutoscalingNotificationConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.autoscalingNotification.AutoscalingNotificationConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.autoscalingNotification.AutoscalingNotificationConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.autoscalingNotification.AutoscalingNotificationConfig.property.groupNames">GroupNames</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/autoscaling_notification#group_names AutoscalingNotification#group_names}. |
-| <code><a href="#@cdktf/provider-aws.autoscalingNotification.AutoscalingNotificationConfig.property.notifications">Notifications</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/autoscaling_notification#notifications AutoscalingNotification#notifications}. |
-| <code><a href="#@cdktf/provider-aws.autoscalingNotification.AutoscalingNotificationConfig.property.topicArn">TopicArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/autoscaling_notification#topic_arn AutoscalingNotification#topic_arn}. |
-| <code><a href="#@cdktf/provider-aws.autoscalingNotification.AutoscalingNotificationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/autoscaling_notification#id AutoscalingNotification#id}. |
+| <code><a href="#@cdktf/provider-aws.autoscalingNotification.AutoscalingNotificationConfig.property.groupNames">GroupNames</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/autoscaling_notification#group_names AutoscalingNotification#group_names}. |
+| <code><a href="#@cdktf/provider-aws.autoscalingNotification.AutoscalingNotificationConfig.property.notifications">Notifications</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/autoscaling_notification#notifications AutoscalingNotification#notifications}. |
+| <code><a href="#@cdktf/provider-aws.autoscalingNotification.AutoscalingNotificationConfig.property.topicArn">TopicArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/autoscaling_notification#topic_arn AutoscalingNotification#topic_arn}. |
+| <code><a href="#@cdktf/provider-aws.autoscalingNotification.AutoscalingNotificationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/autoscaling_notification#id AutoscalingNotification#id}. |
+| <code><a href="#@cdktf/provider-aws.autoscalingNotification.AutoscalingNotificationConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
 
@@ -875,7 +906,7 @@ GroupNames *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/autoscaling_notification#group_names AutoscalingNotification#group_names}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/autoscaling_notification#group_names AutoscalingNotification#group_names}.
 
 ---
 
@@ -887,7 +918,7 @@ Notifications *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/autoscaling_notification#notifications AutoscalingNotification#notifications}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/autoscaling_notification#notifications AutoscalingNotification#notifications}.
 
 ---
 
@@ -899,7 +930,7 @@ TopicArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/autoscaling_notification#topic_arn AutoscalingNotification#topic_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/autoscaling_notification#topic_arn AutoscalingNotification#topic_arn}.
 
 ---
 
@@ -911,10 +942,24 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/autoscaling_notification#id AutoscalingNotification#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/autoscaling_notification#id AutoscalingNotification#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `Region`<sup>Optional</sup> <a name="Region" id="@cdktf/provider-aws.autoscalingNotification.AutoscalingNotificationConfig.property.region"></a>
+
+```go
+Region *string
+```
+
+- *Type:* *string
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/autoscaling_notification#region AutoscalingNotification#region}
 
 ---
 

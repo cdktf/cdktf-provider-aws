@@ -4,7 +4,7 @@
 
 ### KmsGrant <a name="KmsGrant" id="@cdktf/provider-aws.kmsGrant.KmsGrant"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/kms_grant aws_kms_grant}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/kms_grant aws_kms_grant}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kmsGrant.KmsGrant.Initializer"></a>
 
@@ -78,6 +78,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.kmsGrant.KmsGrant.resetGrantCreationTokens">ResetGrantCreationTokens</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.kmsGrant.KmsGrant.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.kmsGrant.KmsGrant.resetName">ResetName</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.kmsGrant.KmsGrant.resetRegion">ResetRegion</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.kmsGrant.KmsGrant.resetRetireOnDelete">ResetRetireOnDelete</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.kmsGrant.KmsGrant.resetRetiringPrincipal">ResetRetiringPrincipal</a></code> | *No description.* |
 
@@ -407,6 +408,12 @@ private void ResetId()
 private void ResetName()
 ```
 
+##### `ResetRegion` <a name="ResetRegion" id="@cdktf/provider-aws.kmsGrant.KmsGrant.resetRegion"></a>
+
+```csharp
+private void ResetRegion()
+```
+
 ##### `ResetRetireOnDelete` <a name="ResetRetireOnDelete" id="@cdktf/provider-aws.kmsGrant.KmsGrant.resetRetireOnDelete"></a>
 
 ```csharp
@@ -522,7 +529,7 @@ The construct id used in the generated config for the KmsGrant to import.
 
 The id of the existing KmsGrant that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/kms_grant#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/kms_grant#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -562,6 +569,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.kmsGrant.KmsGrant.property.keyIdInput">KeyIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.kmsGrant.KmsGrant.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.kmsGrant.KmsGrant.property.operationsInput">OperationsInput</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.kmsGrant.KmsGrant.property.regionInput">RegionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.kmsGrant.KmsGrant.property.retireOnDeleteInput">RetireOnDeleteInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.kmsGrant.KmsGrant.property.retiringPrincipalInput">RetiringPrincipalInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.kmsGrant.KmsGrant.property.grantCreationTokens">GrantCreationTokens</a></code> | <code>string[]</code> | *No description.* |
@@ -570,6 +578,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.kmsGrant.KmsGrant.property.keyId">KeyId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.kmsGrant.KmsGrant.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.kmsGrant.KmsGrant.property.operations">Operations</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.kmsGrant.KmsGrant.property.region">Region</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.kmsGrant.KmsGrant.property.retireOnDelete">RetireOnDelete</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.kmsGrant.KmsGrant.property.retiringPrincipal">RetiringPrincipal</a></code> | <code>string</code> | *No description.* |
 
@@ -817,6 +826,16 @@ public string[] OperationsInput { get; }
 
 ---
 
+##### `RegionInput`<sup>Optional</sup> <a name="RegionInput" id="@cdktf/provider-aws.kmsGrant.KmsGrant.property.regionInput"></a>
+
+```csharp
+public string RegionInput { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `RetireOnDeleteInput`<sup>Optional</sup> <a name="RetireOnDeleteInput" id="@cdktf/provider-aws.kmsGrant.KmsGrant.property.retireOnDeleteInput"></a>
 
 ```csharp
@@ -897,6 +916,16 @@ public string[] Operations { get; }
 
 ---
 
+##### `Region`<sup>Required</sup> <a name="Region" id="@cdktf/provider-aws.kmsGrant.KmsGrant.property.region"></a>
+
+```csharp
+public string Region { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `RetireOnDelete`<sup>Required</sup> <a name="RetireOnDelete" id="@cdktf/provider-aws.kmsGrant.KmsGrant.property.retireOnDelete"></a>
 
 ```csharp
@@ -959,6 +988,7 @@ new KmsGrantConfig {
     string[] GrantCreationTokens = null,
     string Id = null,
     string Name = null,
+    string Region = null,
     object RetireOnDelete = null,
     string RetiringPrincipal = null
 };
@@ -975,15 +1005,16 @@ new KmsGrantConfig {
 | <code><a href="#@cdktf/provider-aws.kmsGrant.KmsGrantConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.kmsGrant.KmsGrantConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.kmsGrant.KmsGrantConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.kmsGrant.KmsGrantConfig.property.granteePrincipal">GranteePrincipal</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/kms_grant#grantee_principal KmsGrant#grantee_principal}. |
-| <code><a href="#@cdktf/provider-aws.kmsGrant.KmsGrantConfig.property.keyId">KeyId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/kms_grant#key_id KmsGrant#key_id}. |
-| <code><a href="#@cdktf/provider-aws.kmsGrant.KmsGrantConfig.property.operations">Operations</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/kms_grant#operations KmsGrant#operations}. |
+| <code><a href="#@cdktf/provider-aws.kmsGrant.KmsGrantConfig.property.granteePrincipal">GranteePrincipal</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/kms_grant#grantee_principal KmsGrant#grantee_principal}. |
+| <code><a href="#@cdktf/provider-aws.kmsGrant.KmsGrantConfig.property.keyId">KeyId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/kms_grant#key_id KmsGrant#key_id}. |
+| <code><a href="#@cdktf/provider-aws.kmsGrant.KmsGrantConfig.property.operations">Operations</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/kms_grant#operations KmsGrant#operations}. |
 | <code><a href="#@cdktf/provider-aws.kmsGrant.KmsGrantConfig.property.constraints">Constraints</a></code> | <code>object</code> | constraints block. |
-| <code><a href="#@cdktf/provider-aws.kmsGrant.KmsGrantConfig.property.grantCreationTokens">GrantCreationTokens</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/kms_grant#grant_creation_tokens KmsGrant#grant_creation_tokens}. |
-| <code><a href="#@cdktf/provider-aws.kmsGrant.KmsGrantConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/kms_grant#id KmsGrant#id}. |
-| <code><a href="#@cdktf/provider-aws.kmsGrant.KmsGrantConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/kms_grant#name KmsGrant#name}. |
-| <code><a href="#@cdktf/provider-aws.kmsGrant.KmsGrantConfig.property.retireOnDelete">RetireOnDelete</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/kms_grant#retire_on_delete KmsGrant#retire_on_delete}. |
-| <code><a href="#@cdktf/provider-aws.kmsGrant.KmsGrantConfig.property.retiringPrincipal">RetiringPrincipal</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/kms_grant#retiring_principal KmsGrant#retiring_principal}. |
+| <code><a href="#@cdktf/provider-aws.kmsGrant.KmsGrantConfig.property.grantCreationTokens">GrantCreationTokens</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/kms_grant#grant_creation_tokens KmsGrant#grant_creation_tokens}. |
+| <code><a href="#@cdktf/provider-aws.kmsGrant.KmsGrantConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/kms_grant#id KmsGrant#id}. |
+| <code><a href="#@cdktf/provider-aws.kmsGrant.KmsGrantConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/kms_grant#name KmsGrant#name}. |
+| <code><a href="#@cdktf/provider-aws.kmsGrant.KmsGrantConfig.property.region">Region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
+| <code><a href="#@cdktf/provider-aws.kmsGrant.KmsGrantConfig.property.retireOnDelete">RetireOnDelete</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/kms_grant#retire_on_delete KmsGrant#retire_on_delete}. |
+| <code><a href="#@cdktf/provider-aws.kmsGrant.KmsGrantConfig.property.retiringPrincipal">RetiringPrincipal</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/kms_grant#retiring_principal KmsGrant#retiring_principal}. |
 
 ---
 
@@ -1065,7 +1096,7 @@ public string GranteePrincipal { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/kms_grant#grantee_principal KmsGrant#grantee_principal}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/kms_grant#grantee_principal KmsGrant#grantee_principal}.
 
 ---
 
@@ -1077,7 +1108,7 @@ public string KeyId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/kms_grant#key_id KmsGrant#key_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/kms_grant#key_id KmsGrant#key_id}.
 
 ---
 
@@ -1089,7 +1120,7 @@ public string[] Operations { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/kms_grant#operations KmsGrant#operations}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/kms_grant#operations KmsGrant#operations}.
 
 ---
 
@@ -1103,7 +1134,7 @@ public object Constraints { get; set; }
 
 constraints block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/kms_grant#constraints KmsGrant#constraints}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/kms_grant#constraints KmsGrant#constraints}
 
 ---
 
@@ -1115,7 +1146,7 @@ public string[] GrantCreationTokens { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/kms_grant#grant_creation_tokens KmsGrant#grant_creation_tokens}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/kms_grant#grant_creation_tokens KmsGrant#grant_creation_tokens}.
 
 ---
 
@@ -1127,7 +1158,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/kms_grant#id KmsGrant#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/kms_grant#id KmsGrant#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1142,7 +1173,21 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/kms_grant#name KmsGrant#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/kms_grant#name KmsGrant#name}.
+
+---
+
+##### `Region`<sup>Optional</sup> <a name="Region" id="@cdktf/provider-aws.kmsGrant.KmsGrantConfig.property.region"></a>
+
+```csharp
+public string Region { get; set; }
+```
+
+- *Type:* string
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/kms_grant#region KmsGrant#region}
 
 ---
 
@@ -1154,7 +1199,7 @@ public object RetireOnDelete { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/kms_grant#retire_on_delete KmsGrant#retire_on_delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/kms_grant#retire_on_delete KmsGrant#retire_on_delete}.
 
 ---
 
@@ -1166,7 +1211,7 @@ public string RetiringPrincipal { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/kms_grant#retiring_principal KmsGrant#retiring_principal}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/kms_grant#retiring_principal KmsGrant#retiring_principal}.
 
 ---
 
@@ -1187,8 +1232,8 @@ new KmsGrantConstraints {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.kmsGrant.KmsGrantConstraints.property.encryptionContextEquals">EncryptionContextEquals</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/kms_grant#encryption_context_equals KmsGrant#encryption_context_equals}. |
-| <code><a href="#@cdktf/provider-aws.kmsGrant.KmsGrantConstraints.property.encryptionContextSubset">EncryptionContextSubset</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/kms_grant#encryption_context_subset KmsGrant#encryption_context_subset}. |
+| <code><a href="#@cdktf/provider-aws.kmsGrant.KmsGrantConstraints.property.encryptionContextEquals">EncryptionContextEquals</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/kms_grant#encryption_context_equals KmsGrant#encryption_context_equals}. |
+| <code><a href="#@cdktf/provider-aws.kmsGrant.KmsGrantConstraints.property.encryptionContextSubset">EncryptionContextSubset</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/kms_grant#encryption_context_subset KmsGrant#encryption_context_subset}. |
 
 ---
 
@@ -1200,7 +1245,7 @@ public System.Collections.Generic.IDictionary<string, string> EncryptionContextE
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/kms_grant#encryption_context_equals KmsGrant#encryption_context_equals}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/kms_grant#encryption_context_equals KmsGrant#encryption_context_equals}.
 
 ---
 
@@ -1212,7 +1257,7 @@ public System.Collections.Generic.IDictionary<string, string> EncryptionContextS
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/kms_grant#encryption_context_subset KmsGrant#encryption_context_subset}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/kms_grant#encryption_context_subset KmsGrant#encryption_context_subset}.
 
 ---
 

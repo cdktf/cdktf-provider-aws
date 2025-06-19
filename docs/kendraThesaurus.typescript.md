@@ -4,7 +4,7 @@
 
 ### KendraThesaurus <a name="KendraThesaurus" id="@cdktf/provider-aws.kendraThesaurus.KendraThesaurus"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/kendra_thesaurus aws_kendra_thesaurus}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/kendra_thesaurus aws_kendra_thesaurus}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kendraThesaurus.KendraThesaurus.Initializer"></a>
 
@@ -77,6 +77,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.kendraThesaurus.KendraThesaurus.putTimeouts">putTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.kendraThesaurus.KendraThesaurus.resetDescription">resetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.kendraThesaurus.KendraThesaurus.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.kendraThesaurus.KendraThesaurus.resetRegion">resetRegion</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.kendraThesaurus.KendraThesaurus.resetTags">resetTags</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.kendraThesaurus.KendraThesaurus.resetTagsAll">resetTagsAll</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.kendraThesaurus.KendraThesaurus.resetTimeouts">resetTimeouts</a></code> | *No description.* |
@@ -407,6 +408,12 @@ public resetDescription(): void
 public resetId(): void
 ```
 
+##### `resetRegion` <a name="resetRegion" id="@cdktf/provider-aws.kendraThesaurus.KendraThesaurus.resetRegion"></a>
+
+```typescript
+public resetRegion(): void
+```
+
 ##### `resetTags` <a name="resetTags" id="@cdktf/provider-aws.kendraThesaurus.KendraThesaurus.resetTags"></a>
 
 ```typescript
@@ -528,7 +535,7 @@ The construct id used in the generated config for the KendraThesaurus to import.
 
 The id of the existing KendraThesaurus that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/kendra_thesaurus#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/kendra_thesaurus#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -567,6 +574,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.kendraThesaurus.KendraThesaurus.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.kendraThesaurus.KendraThesaurus.property.indexIdInput">indexIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.kendraThesaurus.KendraThesaurus.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.kendraThesaurus.KendraThesaurus.property.regionInput">regionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.kendraThesaurus.KendraThesaurus.property.roleArnInput">roleArnInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.kendraThesaurus.KendraThesaurus.property.sourceS3PathInput">sourceS3PathInput</a></code> | <code><a href="#@cdktf/provider-aws.kendraThesaurus.KendraThesaurusSourceS3Path">KendraThesaurusSourceS3Path</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.kendraThesaurus.KendraThesaurus.property.tagsAllInput">tagsAllInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
@@ -576,6 +584,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.kendraThesaurus.KendraThesaurus.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.kendraThesaurus.KendraThesaurus.property.indexId">indexId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.kendraThesaurus.KendraThesaurus.property.name">name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.kendraThesaurus.KendraThesaurus.property.region">region</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.kendraThesaurus.KendraThesaurus.property.roleArn">roleArn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.kendraThesaurus.KendraThesaurus.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.kendraThesaurus.KendraThesaurus.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
@@ -814,6 +823,16 @@ public readonly nameInput: string;
 
 ---
 
+##### `regionInput`<sup>Optional</sup> <a name="regionInput" id="@cdktf/provider-aws.kendraThesaurus.KendraThesaurus.property.regionInput"></a>
+
+```typescript
+public readonly regionInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `roleArnInput`<sup>Optional</sup> <a name="roleArnInput" id="@cdktf/provider-aws.kendraThesaurus.KendraThesaurus.property.roleArnInput"></a>
 
 ```typescript
@@ -904,6 +923,16 @@ public readonly name: string;
 
 ---
 
+##### `region`<sup>Required</sup> <a name="region" id="@cdktf/provider-aws.kendraThesaurus.KendraThesaurus.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `roleArn`<sup>Required</sup> <a name="roleArn" id="@cdktf/provider-aws.kendraThesaurus.KendraThesaurus.property.roleArn"></a>
 
 ```typescript
@@ -975,14 +1004,15 @@ const kendraThesaurusConfig: kendraThesaurus.KendraThesaurusConfig = { ... }
 | <code><a href="#@cdktf/provider-aws.kendraThesaurus.KendraThesaurusConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.kendraThesaurus.KendraThesaurusConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.kendraThesaurus.KendraThesaurusConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.kendraThesaurus.KendraThesaurusConfig.property.indexId">indexId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/kendra_thesaurus#index_id KendraThesaurus#index_id}. |
-| <code><a href="#@cdktf/provider-aws.kendraThesaurus.KendraThesaurusConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/kendra_thesaurus#name KendraThesaurus#name}. |
-| <code><a href="#@cdktf/provider-aws.kendraThesaurus.KendraThesaurusConfig.property.roleArn">roleArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/kendra_thesaurus#role_arn KendraThesaurus#role_arn}. |
+| <code><a href="#@cdktf/provider-aws.kendraThesaurus.KendraThesaurusConfig.property.indexId">indexId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/kendra_thesaurus#index_id KendraThesaurus#index_id}. |
+| <code><a href="#@cdktf/provider-aws.kendraThesaurus.KendraThesaurusConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/kendra_thesaurus#name KendraThesaurus#name}. |
+| <code><a href="#@cdktf/provider-aws.kendraThesaurus.KendraThesaurusConfig.property.roleArn">roleArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/kendra_thesaurus#role_arn KendraThesaurus#role_arn}. |
 | <code><a href="#@cdktf/provider-aws.kendraThesaurus.KendraThesaurusConfig.property.sourceS3Path">sourceS3Path</a></code> | <code><a href="#@cdktf/provider-aws.kendraThesaurus.KendraThesaurusSourceS3Path">KendraThesaurusSourceS3Path</a></code> | source_s3_path block. |
-| <code><a href="#@cdktf/provider-aws.kendraThesaurus.KendraThesaurusConfig.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/kendra_thesaurus#description KendraThesaurus#description}. |
-| <code><a href="#@cdktf/provider-aws.kendraThesaurus.KendraThesaurusConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/kendra_thesaurus#id KendraThesaurus#id}. |
-| <code><a href="#@cdktf/provider-aws.kendraThesaurus.KendraThesaurusConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/kendra_thesaurus#tags KendraThesaurus#tags}. |
-| <code><a href="#@cdktf/provider-aws.kendraThesaurus.KendraThesaurusConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/kendra_thesaurus#tags_all KendraThesaurus#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.kendraThesaurus.KendraThesaurusConfig.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/kendra_thesaurus#description KendraThesaurus#description}. |
+| <code><a href="#@cdktf/provider-aws.kendraThesaurus.KendraThesaurusConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/kendra_thesaurus#id KendraThesaurus#id}. |
+| <code><a href="#@cdktf/provider-aws.kendraThesaurus.KendraThesaurusConfig.property.region">region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
+| <code><a href="#@cdktf/provider-aws.kendraThesaurus.KendraThesaurusConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/kendra_thesaurus#tags KendraThesaurus#tags}. |
+| <code><a href="#@cdktf/provider-aws.kendraThesaurus.KendraThesaurusConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/kendra_thesaurus#tags_all KendraThesaurus#tags_all}. |
 | <code><a href="#@cdktf/provider-aws.kendraThesaurus.KendraThesaurusConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-aws.kendraThesaurus.KendraThesaurusTimeouts">KendraThesaurusTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1065,7 +1095,7 @@ public readonly indexId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/kendra_thesaurus#index_id KendraThesaurus#index_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/kendra_thesaurus#index_id KendraThesaurus#index_id}.
 
 ---
 
@@ -1077,7 +1107,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/kendra_thesaurus#name KendraThesaurus#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/kendra_thesaurus#name KendraThesaurus#name}.
 
 ---
 
@@ -1089,7 +1119,7 @@ public readonly roleArn: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/kendra_thesaurus#role_arn KendraThesaurus#role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/kendra_thesaurus#role_arn KendraThesaurus#role_arn}.
 
 ---
 
@@ -1103,7 +1133,7 @@ public readonly sourceS3Path: KendraThesaurusSourceS3Path;
 
 source_s3_path block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/kendra_thesaurus#source_s3_path KendraThesaurus#source_s3_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/kendra_thesaurus#source_s3_path KendraThesaurus#source_s3_path}
 
 ---
 
@@ -1115,7 +1145,7 @@ public readonly description: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/kendra_thesaurus#description KendraThesaurus#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/kendra_thesaurus#description KendraThesaurus#description}.
 
 ---
 
@@ -1127,10 +1157,24 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/kendra_thesaurus#id KendraThesaurus#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/kendra_thesaurus#id KendraThesaurus#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdktf/provider-aws.kendraThesaurus.KendraThesaurusConfig.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/kendra_thesaurus#region KendraThesaurus#region}
 
 ---
 
@@ -1142,7 +1186,7 @@ public readonly tags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/kendra_thesaurus#tags KendraThesaurus#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/kendra_thesaurus#tags KendraThesaurus#tags}.
 
 ---
 
@@ -1154,7 +1198,7 @@ public readonly tagsAll: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/kendra_thesaurus#tags_all KendraThesaurus#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/kendra_thesaurus#tags_all KendraThesaurus#tags_all}.
 
 ---
 
@@ -1168,7 +1212,7 @@ public readonly timeouts: KendraThesaurusTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/kendra_thesaurus#timeouts KendraThesaurus#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/kendra_thesaurus#timeouts KendraThesaurus#timeouts}
 
 ---
 
@@ -1186,8 +1230,8 @@ const kendraThesaurusSourceS3Path: kendraThesaurus.KendraThesaurusSourceS3Path =
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.kendraThesaurus.KendraThesaurusSourceS3Path.property.bucket">bucket</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/kendra_thesaurus#bucket KendraThesaurus#bucket}. |
-| <code><a href="#@cdktf/provider-aws.kendraThesaurus.KendraThesaurusSourceS3Path.property.key">key</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/kendra_thesaurus#key KendraThesaurus#key}. |
+| <code><a href="#@cdktf/provider-aws.kendraThesaurus.KendraThesaurusSourceS3Path.property.bucket">bucket</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/kendra_thesaurus#bucket KendraThesaurus#bucket}. |
+| <code><a href="#@cdktf/provider-aws.kendraThesaurus.KendraThesaurusSourceS3Path.property.key">key</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/kendra_thesaurus#key KendraThesaurus#key}. |
 
 ---
 
@@ -1199,7 +1243,7 @@ public readonly bucket: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/kendra_thesaurus#bucket KendraThesaurus#bucket}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/kendra_thesaurus#bucket KendraThesaurus#bucket}.
 
 ---
 
@@ -1211,7 +1255,7 @@ public readonly key: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/kendra_thesaurus#key KendraThesaurus#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/kendra_thesaurus#key KendraThesaurus#key}.
 
 ---
 
@@ -1229,9 +1273,9 @@ const kendraThesaurusTimeouts: kendraThesaurus.KendraThesaurusTimeouts = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.kendraThesaurus.KendraThesaurusTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/kendra_thesaurus#create KendraThesaurus#create}. |
-| <code><a href="#@cdktf/provider-aws.kendraThesaurus.KendraThesaurusTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/kendra_thesaurus#delete KendraThesaurus#delete}. |
-| <code><a href="#@cdktf/provider-aws.kendraThesaurus.KendraThesaurusTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/kendra_thesaurus#update KendraThesaurus#update}. |
+| <code><a href="#@cdktf/provider-aws.kendraThesaurus.KendraThesaurusTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/kendra_thesaurus#create KendraThesaurus#create}. |
+| <code><a href="#@cdktf/provider-aws.kendraThesaurus.KendraThesaurusTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/kendra_thesaurus#delete KendraThesaurus#delete}. |
+| <code><a href="#@cdktf/provider-aws.kendraThesaurus.KendraThesaurusTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/kendra_thesaurus#update KendraThesaurus#update}. |
 
 ---
 
@@ -1243,7 +1287,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/kendra_thesaurus#create KendraThesaurus#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/kendra_thesaurus#create KendraThesaurus#create}.
 
 ---
 
@@ -1255,7 +1299,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/kendra_thesaurus#delete KendraThesaurus#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/kendra_thesaurus#delete KendraThesaurus#delete}.
 
 ---
 
@@ -1267,7 +1311,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/kendra_thesaurus#update KendraThesaurus#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/kendra_thesaurus#update KendraThesaurus#update}.
 
 ---
 

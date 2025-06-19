@@ -4,12 +4,12 @@
 
 ### CloudwatchLogStream <a name="CloudwatchLogStream" id="@cdktf/provider-aws.cloudwatchLogStream.CloudwatchLogStream"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/cloudwatch_log_stream aws_cloudwatch_log_stream}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/cloudwatch_log_stream aws_cloudwatch_log_stream}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudwatchLogStream.CloudwatchLogStream.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/cloudwatchlogstream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/cloudwatchlogstream"
 
 cloudwatchlogstream.NewCloudwatchLogStream(scope Construct, id *string, config CloudwatchLogStreamConfig) CloudwatchLogStream
 ```
@@ -74,6 +74,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.cloudwatchLogStream.CloudwatchLogStream.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-aws.cloudwatchLogStream.CloudwatchLogStream.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-aws.cloudwatchLogStream.CloudwatchLogStream.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.cloudwatchLogStream.CloudwatchLogStream.resetRegion">ResetRegion</a></code> | *No description.* |
 
 ---
 
@@ -371,6 +372,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 func ResetId()
 ```
 
+##### `ResetRegion` <a name="ResetRegion" id="@cdktf/provider-aws.cloudwatchLogStream.CloudwatchLogStream.resetRegion"></a>
+
+```go
+func ResetRegion()
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -385,7 +392,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.cloudwatchLogStream.CloudwatchLogStream.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/cloudwatchlogstream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/cloudwatchlogstream"
 
 cloudwatchlogstream.CloudwatchLogStream_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +424,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.cloudwatchLogStream.CloudwatchLogStream.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/cloudwatchlogstream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/cloudwatchlogstream"
 
 cloudwatchlogstream.CloudwatchLogStream_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +438,7 @@ cloudwatchlogstream.CloudwatchLogStream_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.cloudwatchLogStream.CloudwatchLogStream.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/cloudwatchlogstream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/cloudwatchlogstream"
 
 cloudwatchlogstream.CloudwatchLogStream_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +452,7 @@ cloudwatchlogstream.CloudwatchLogStream_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.cloudwatchLogStream.CloudwatchLogStream.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/cloudwatchlogstream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/cloudwatchlogstream"
 
 cloudwatchlogstream.CloudwatchLogStream_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -474,7 +481,7 @@ The construct id used in the generated config for the CloudwatchLogStream to imp
 
 The id of the existing CloudwatchLogStream that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/cloudwatch_log_stream#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/cloudwatch_log_stream#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -508,9 +515,11 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.cloudwatchLogStream.CloudwatchLogStream.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudwatchLogStream.CloudwatchLogStream.property.logGroupNameInput">LogGroupNameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudwatchLogStream.CloudwatchLogStream.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.cloudwatchLogStream.CloudwatchLogStream.property.regionInput">RegionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudwatchLogStream.CloudwatchLogStream.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudwatchLogStream.CloudwatchLogStream.property.logGroupName">LogGroupName</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudwatchLogStream.CloudwatchLogStream.property.name">Name</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.cloudwatchLogStream.CloudwatchLogStream.property.region">Region</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
@@ -696,6 +705,16 @@ func NameInput() *string
 
 ---
 
+##### `RegionInput`<sup>Optional</sup> <a name="RegionInput" id="@cdktf/provider-aws.cloudwatchLogStream.CloudwatchLogStream.property.regionInput"></a>
+
+```go
+func RegionInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-aws.cloudwatchLogStream.CloudwatchLogStream.property.id"></a>
 
 ```go
@@ -720,6 +739,16 @@ func LogGroupName() *string
 
 ```go
 func Name() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Region`<sup>Required</sup> <a name="Region" id="@cdktf/provider-aws.cloudwatchLogStream.CloudwatchLogStream.property.region"></a>
+
+```go
+func Region() *string
 ```
 
 - *Type:* *string
@@ -751,7 +780,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudwatchLogStream.CloudwatchLogStreamConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/cloudwatchlogstream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/cloudwatchlogstream"
 
 &cloudwatchlogstream.CloudwatchLogStreamConfig {
 	Connection: interface{},
@@ -764,6 +793,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/cloudwatchlogstream"
 	LogGroupName: *string,
 	Name: *string,
 	Id: *string,
+	Region: *string,
 }
 ```
 
@@ -778,9 +808,10 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/cloudwatchlogstream"
 | <code><a href="#@cdktf/provider-aws.cloudwatchLogStream.CloudwatchLogStreamConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudwatchLogStream.CloudwatchLogStreamConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudwatchLogStream.CloudwatchLogStreamConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.cloudwatchLogStream.CloudwatchLogStreamConfig.property.logGroupName">LogGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/cloudwatch_log_stream#log_group_name CloudwatchLogStream#log_group_name}. |
-| <code><a href="#@cdktf/provider-aws.cloudwatchLogStream.CloudwatchLogStreamConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/cloudwatch_log_stream#name CloudwatchLogStream#name}. |
-| <code><a href="#@cdktf/provider-aws.cloudwatchLogStream.CloudwatchLogStreamConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/cloudwatch_log_stream#id CloudwatchLogStream#id}. |
+| <code><a href="#@cdktf/provider-aws.cloudwatchLogStream.CloudwatchLogStreamConfig.property.logGroupName">LogGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/cloudwatch_log_stream#log_group_name CloudwatchLogStream#log_group_name}. |
+| <code><a href="#@cdktf/provider-aws.cloudwatchLogStream.CloudwatchLogStreamConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/cloudwatch_log_stream#name CloudwatchLogStream#name}. |
+| <code><a href="#@cdktf/provider-aws.cloudwatchLogStream.CloudwatchLogStreamConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/cloudwatch_log_stream#id CloudwatchLogStream#id}. |
+| <code><a href="#@cdktf/provider-aws.cloudwatchLogStream.CloudwatchLogStreamConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
 
@@ -862,7 +893,7 @@ LogGroupName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/cloudwatch_log_stream#log_group_name CloudwatchLogStream#log_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/cloudwatch_log_stream#log_group_name CloudwatchLogStream#log_group_name}.
 
 ---
 
@@ -874,7 +905,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/cloudwatch_log_stream#name CloudwatchLogStream#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/cloudwatch_log_stream#name CloudwatchLogStream#name}.
 
 ---
 
@@ -886,10 +917,24 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/cloudwatch_log_stream#id CloudwatchLogStream#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/cloudwatch_log_stream#id CloudwatchLogStream#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `Region`<sup>Optional</sup> <a name="Region" id="@cdktf/provider-aws.cloudwatchLogStream.CloudwatchLogStreamConfig.property.region"></a>
+
+```go
+Region *string
+```
+
+- *Type:* *string
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/cloudwatch_log_stream#region CloudwatchLogStream#region}
 
 ---
 

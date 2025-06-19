@@ -4,7 +4,7 @@
 
 ### MediaStoreContainer <a name="MediaStoreContainer" id="@cdktf/provider-aws.mediaStoreContainer.MediaStoreContainer"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/media_store_container aws_media_store_container}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/media_store_container aws_media_store_container}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.mediaStoreContainer.MediaStoreContainer.Initializer"></a>
 
@@ -74,6 +74,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.mediaStoreContainer.MediaStoreContainer.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-aws.mediaStoreContainer.MediaStoreContainer.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-aws.mediaStoreContainer.MediaStoreContainer.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.mediaStoreContainer.MediaStoreContainer.resetRegion">resetRegion</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.mediaStoreContainer.MediaStoreContainer.resetTags">resetTags</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.mediaStoreContainer.MediaStoreContainer.resetTagsAll">resetTagsAll</a></code> | *No description.* |
 
@@ -373,6 +374,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 public resetId(): void
 ```
 
+##### `resetRegion` <a name="resetRegion" id="@cdktf/provider-aws.mediaStoreContainer.MediaStoreContainer.resetRegion"></a>
+
+```typescript
+public resetRegion(): void
+```
+
 ##### `resetTags` <a name="resetTags" id="@cdktf/provider-aws.mediaStoreContainer.MediaStoreContainer.resetTags"></a>
 
 ```typescript
@@ -488,7 +495,7 @@ The construct id used in the generated config for the MediaStoreContainer to imp
 
 The id of the existing MediaStoreContainer that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/media_store_container#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/media_store_container#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -522,10 +529,12 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.mediaStoreContainer.MediaStoreContainer.property.endpoint">endpoint</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.mediaStoreContainer.MediaStoreContainer.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.mediaStoreContainer.MediaStoreContainer.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.mediaStoreContainer.MediaStoreContainer.property.regionInput">regionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.mediaStoreContainer.MediaStoreContainer.property.tagsAllInput">tagsAllInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.mediaStoreContainer.MediaStoreContainer.property.tagsInput">tagsInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.mediaStoreContainer.MediaStoreContainer.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.mediaStoreContainer.MediaStoreContainer.property.name">name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.mediaStoreContainer.MediaStoreContainer.property.region">region</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.mediaStoreContainer.MediaStoreContainer.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.mediaStoreContainer.MediaStoreContainer.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 
@@ -713,6 +722,16 @@ public readonly nameInput: string;
 
 ---
 
+##### `regionInput`<sup>Optional</sup> <a name="regionInput" id="@cdktf/provider-aws.mediaStoreContainer.MediaStoreContainer.property.regionInput"></a>
+
+```typescript
+public readonly regionInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `tagsAllInput`<sup>Optional</sup> <a name="tagsAllInput" id="@cdktf/provider-aws.mediaStoreContainer.MediaStoreContainer.property.tagsAllInput"></a>
 
 ```typescript
@@ -747,6 +766,16 @@ public readonly id: string;
 
 ```typescript
 public readonly name: string;
+```
+
+- *Type:* string
+
+---
+
+##### `region`<sup>Required</sup> <a name="region" id="@cdktf/provider-aws.mediaStoreContainer.MediaStoreContainer.property.region"></a>
+
+```typescript
+public readonly region: string;
 ```
 
 - *Type:* string
@@ -814,10 +843,11 @@ const mediaStoreContainerConfig: mediaStoreContainer.MediaStoreContainerConfig =
 | <code><a href="#@cdktf/provider-aws.mediaStoreContainer.MediaStoreContainerConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.mediaStoreContainer.MediaStoreContainerConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.mediaStoreContainer.MediaStoreContainerConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.mediaStoreContainer.MediaStoreContainerConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/media_store_container#name MediaStoreContainer#name}. |
-| <code><a href="#@cdktf/provider-aws.mediaStoreContainer.MediaStoreContainerConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/media_store_container#id MediaStoreContainer#id}. |
-| <code><a href="#@cdktf/provider-aws.mediaStoreContainer.MediaStoreContainerConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/media_store_container#tags MediaStoreContainer#tags}. |
-| <code><a href="#@cdktf/provider-aws.mediaStoreContainer.MediaStoreContainerConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/media_store_container#tags_all MediaStoreContainer#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.mediaStoreContainer.MediaStoreContainerConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/media_store_container#name MediaStoreContainer#name}. |
+| <code><a href="#@cdktf/provider-aws.mediaStoreContainer.MediaStoreContainerConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/media_store_container#id MediaStoreContainer#id}. |
+| <code><a href="#@cdktf/provider-aws.mediaStoreContainer.MediaStoreContainerConfig.property.region">region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
+| <code><a href="#@cdktf/provider-aws.mediaStoreContainer.MediaStoreContainerConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/media_store_container#tags MediaStoreContainer#tags}. |
+| <code><a href="#@cdktf/provider-aws.mediaStoreContainer.MediaStoreContainerConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/media_store_container#tags_all MediaStoreContainer#tags_all}. |
 
 ---
 
@@ -899,7 +929,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/media_store_container#name MediaStoreContainer#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/media_store_container#name MediaStoreContainer#name}.
 
 ---
 
@@ -911,10 +941,24 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/media_store_container#id MediaStoreContainer#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/media_store_container#id MediaStoreContainer#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdktf/provider-aws.mediaStoreContainer.MediaStoreContainerConfig.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/media_store_container#region MediaStoreContainer#region}
 
 ---
 
@@ -926,7 +970,7 @@ public readonly tags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/media_store_container#tags MediaStoreContainer#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/media_store_container#tags MediaStoreContainer#tags}.
 
 ---
 
@@ -938,7 +982,7 @@ public readonly tagsAll: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/media_store_container#tags_all MediaStoreContainer#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/media_store_container#tags_all MediaStoreContainer#tags_all}.
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### DataAwsLambdaAlias <a name="DataAwsLambdaAlias" id="@cdktf/provider-aws.dataAwsLambdaAlias.DataAwsLambdaAlias"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/lambda_alias aws_lambda_alias}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/lambda_alias aws_lambda_alias}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsLambdaAlias.DataAwsLambdaAlias.Initializer"></a>
 
@@ -68,6 +68,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.dataAwsLambdaAlias.DataAwsLambdaAlias.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsLambdaAlias.DataAwsLambdaAlias.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsLambdaAlias.DataAwsLambdaAlias.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsLambdaAlias.DataAwsLambdaAlias.resetRegion">ResetRegion</a></code> | *No description.* |
 
 ---
 
@@ -269,6 +270,12 @@ private IResolvable InterpolationForAttribute(string TerraformAttribute)
 private void ResetId()
 ```
 
+##### `ResetRegion` <a name="ResetRegion" id="@cdktf/provider-aws.dataAwsLambdaAlias.DataAwsLambdaAlias.resetRegion"></a>
+
+```csharp
+private void ResetRegion()
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -372,7 +379,7 @@ The construct id used in the generated config for the DataAwsLambdaAlias to impo
 
 The id of the existing DataAwsLambdaAlias that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/lambda_alias#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/lambda_alias#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -407,9 +414,11 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.dataAwsLambdaAlias.DataAwsLambdaAlias.property.functionNameInput">FunctionNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsLambdaAlias.DataAwsLambdaAlias.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsLambdaAlias.DataAwsLambdaAlias.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsLambdaAlias.DataAwsLambdaAlias.property.regionInput">RegionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsLambdaAlias.DataAwsLambdaAlias.property.functionName">FunctionName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsLambdaAlias.DataAwsLambdaAlias.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsLambdaAlias.DataAwsLambdaAlias.property.name">Name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsLambdaAlias.DataAwsLambdaAlias.property.region">Region</a></code> | <code>string</code> | *No description.* |
 
 ---
 
@@ -605,6 +614,16 @@ public string NameInput { get; }
 
 ---
 
+##### `RegionInput`<sup>Optional</sup> <a name="RegionInput" id="@cdktf/provider-aws.dataAwsLambdaAlias.DataAwsLambdaAlias.property.regionInput"></a>
+
+```csharp
+public string RegionInput { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `FunctionName`<sup>Required</sup> <a name="FunctionName" id="@cdktf/provider-aws.dataAwsLambdaAlias.DataAwsLambdaAlias.property.functionName"></a>
 
 ```csharp
@@ -629,6 +648,16 @@ public string Id { get; }
 
 ```csharp
 public string Name { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Region`<sup>Required</sup> <a name="Region" id="@cdktf/provider-aws.dataAwsLambdaAlias.DataAwsLambdaAlias.property.region"></a>
+
+```csharp
+public string Region { get; }
 ```
 
 - *Type:* string
@@ -672,7 +701,8 @@ new DataAwsLambdaAliasConfig {
     object[] Provisioners = null,
     string FunctionName,
     string Name,
-    string Id = null
+    string Id = null,
+    string Region = null
 };
 ```
 
@@ -687,9 +717,10 @@ new DataAwsLambdaAliasConfig {
 | <code><a href="#@cdktf/provider-aws.dataAwsLambdaAlias.DataAwsLambdaAliasConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsLambdaAlias.DataAwsLambdaAliasConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsLambdaAlias.DataAwsLambdaAliasConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsLambdaAlias.DataAwsLambdaAliasConfig.property.functionName">FunctionName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/lambda_alias#function_name DataAwsLambdaAlias#function_name}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsLambdaAlias.DataAwsLambdaAliasConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/lambda_alias#name DataAwsLambdaAlias#name}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsLambdaAlias.DataAwsLambdaAliasConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/lambda_alias#id DataAwsLambdaAlias#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsLambdaAlias.DataAwsLambdaAliasConfig.property.functionName">FunctionName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/lambda_alias#function_name DataAwsLambdaAlias#function_name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsLambdaAlias.DataAwsLambdaAliasConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/lambda_alias#name DataAwsLambdaAlias#name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsLambdaAlias.DataAwsLambdaAliasConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/lambda_alias#id DataAwsLambdaAlias#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsLambdaAlias.DataAwsLambdaAliasConfig.property.region">Region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
 
@@ -771,7 +802,7 @@ public string FunctionName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/lambda_alias#function_name DataAwsLambdaAlias#function_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/lambda_alias#function_name DataAwsLambdaAlias#function_name}.
 
 ---
 
@@ -783,7 +814,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/lambda_alias#name DataAwsLambdaAlias#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/lambda_alias#name DataAwsLambdaAlias#name}.
 
 ---
 
@@ -795,10 +826,24 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/lambda_alias#id DataAwsLambdaAlias#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/lambda_alias#id DataAwsLambdaAlias#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `Region`<sup>Optional</sup> <a name="Region" id="@cdktf/provider-aws.dataAwsLambdaAlias.DataAwsLambdaAliasConfig.property.region"></a>
+
+```csharp
+public string Region { get; set; }
+```
+
+- *Type:* string
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/lambda_alias#region DataAwsLambdaAlias#region}
 
 ---
 

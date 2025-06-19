@@ -4,12 +4,12 @@
 
 ### NetworkAcl <a name="NetworkAcl" id="@cdktf/provider-aws.networkAcl.NetworkAcl"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/network_acl aws_network_acl}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/network_acl aws_network_acl}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.networkAcl.NetworkAcl.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/networkacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/networkacl"
 
 networkacl.NewNetworkAcl(scope Construct, id *string, config NetworkAclConfig) NetworkAcl
 ```
@@ -78,6 +78,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.networkAcl.NetworkAcl.resetEgress">ResetEgress</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.networkAcl.NetworkAcl.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.networkAcl.NetworkAcl.resetIngress">ResetIngress</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.networkAcl.NetworkAcl.resetRegion">ResetRegion</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.networkAcl.NetworkAcl.resetSubnetIds">ResetSubnetIds</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.networkAcl.NetworkAcl.resetTags">ResetTags</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.networkAcl.NetworkAcl.resetTagsAll">ResetTagsAll</a></code> | *No description.* |
@@ -414,6 +415,12 @@ func ResetId()
 func ResetIngress()
 ```
 
+##### `ResetRegion` <a name="ResetRegion" id="@cdktf/provider-aws.networkAcl.NetworkAcl.resetRegion"></a>
+
+```go
+func ResetRegion()
+```
+
 ##### `ResetSubnetIds` <a name="ResetSubnetIds" id="@cdktf/provider-aws.networkAcl.NetworkAcl.resetSubnetIds"></a>
 
 ```go
@@ -446,7 +453,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.networkAcl.NetworkAcl.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/networkacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/networkacl"
 
 networkacl.NetworkAcl_IsConstruct(x interface{}) *bool
 ```
@@ -478,7 +485,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.networkAcl.NetworkAcl.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/networkacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/networkacl"
 
 networkacl.NetworkAcl_IsTerraformElement(x interface{}) *bool
 ```
@@ -492,7 +499,7 @@ networkacl.NetworkAcl_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.networkAcl.NetworkAcl.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/networkacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/networkacl"
 
 networkacl.NetworkAcl_IsTerraformResource(x interface{}) *bool
 ```
@@ -506,7 +513,7 @@ networkacl.NetworkAcl_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.networkAcl.NetworkAcl.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/networkacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/networkacl"
 
 networkacl.NetworkAcl_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -535,7 +542,7 @@ The construct id used in the generated config for the NetworkAcl to import.
 
 The id of the existing NetworkAcl that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/network_acl#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/network_acl#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -572,11 +579,13 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.networkAcl.NetworkAcl.property.egressInput">EgressInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.networkAcl.NetworkAcl.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.networkAcl.NetworkAcl.property.ingressInput">IngressInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.networkAcl.NetworkAcl.property.regionInput">RegionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.networkAcl.NetworkAcl.property.subnetIdsInput">SubnetIdsInput</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.networkAcl.NetworkAcl.property.tagsAllInput">TagsAllInput</a></code> | <code>*map[string]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.networkAcl.NetworkAcl.property.tagsInput">TagsInput</a></code> | <code>*map[string]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.networkAcl.NetworkAcl.property.vpcIdInput">VpcIdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.networkAcl.NetworkAcl.property.id">Id</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.networkAcl.NetworkAcl.property.region">Region</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.networkAcl.NetworkAcl.property.subnetIds">SubnetIds</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.networkAcl.NetworkAcl.property.tags">Tags</a></code> | <code>*map[string]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.networkAcl.NetworkAcl.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | *No description.* |
@@ -796,6 +805,16 @@ func IngressInput() interface{}
 
 ---
 
+##### `RegionInput`<sup>Optional</sup> <a name="RegionInput" id="@cdktf/provider-aws.networkAcl.NetworkAcl.property.regionInput"></a>
+
+```go
+func RegionInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `SubnetIdsInput`<sup>Optional</sup> <a name="SubnetIdsInput" id="@cdktf/provider-aws.networkAcl.NetworkAcl.property.subnetIdsInput"></a>
 
 ```go
@@ -840,6 +859,16 @@ func VpcIdInput() *string
 
 ```go
 func Id() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Region`<sup>Required</sup> <a name="Region" id="@cdktf/provider-aws.networkAcl.NetworkAcl.property.region"></a>
+
+```go
+func Region() *string
 ```
 
 - *Type:* *string
@@ -911,7 +940,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.networkAcl.NetworkAclConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/networkacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/networkacl"
 
 &networkacl.NetworkAclConfig {
 	Connection: interface{},
@@ -925,6 +954,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/networkacl"
 	Egress: interface{},
 	Id: *string,
 	Ingress: interface{},
+	Region: *string,
 	SubnetIds: *[]*string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
@@ -942,13 +972,14 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/networkacl"
 | <code><a href="#@cdktf/provider-aws.networkAcl.NetworkAclConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.networkAcl.NetworkAclConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.networkAcl.NetworkAclConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.networkAcl.NetworkAclConfig.property.vpcId">VpcId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/network_acl#vpc_id NetworkAcl#vpc_id}. |
-| <code><a href="#@cdktf/provider-aws.networkAcl.NetworkAclConfig.property.egress">Egress</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/network_acl#egress NetworkAcl#egress}. |
-| <code><a href="#@cdktf/provider-aws.networkAcl.NetworkAclConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/network_acl#id NetworkAcl#id}. |
-| <code><a href="#@cdktf/provider-aws.networkAcl.NetworkAclConfig.property.ingress">Ingress</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/network_acl#ingress NetworkAcl#ingress}. |
-| <code><a href="#@cdktf/provider-aws.networkAcl.NetworkAclConfig.property.subnetIds">SubnetIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/network_acl#subnet_ids NetworkAcl#subnet_ids}. |
-| <code><a href="#@cdktf/provider-aws.networkAcl.NetworkAclConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/network_acl#tags NetworkAcl#tags}. |
-| <code><a href="#@cdktf/provider-aws.networkAcl.NetworkAclConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/network_acl#tags_all NetworkAcl#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.networkAcl.NetworkAclConfig.property.vpcId">VpcId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/network_acl#vpc_id NetworkAcl#vpc_id}. |
+| <code><a href="#@cdktf/provider-aws.networkAcl.NetworkAclConfig.property.egress">Egress</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/network_acl#egress NetworkAcl#egress}. |
+| <code><a href="#@cdktf/provider-aws.networkAcl.NetworkAclConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/network_acl#id NetworkAcl#id}. |
+| <code><a href="#@cdktf/provider-aws.networkAcl.NetworkAclConfig.property.ingress">Ingress</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/network_acl#ingress NetworkAcl#ingress}. |
+| <code><a href="#@cdktf/provider-aws.networkAcl.NetworkAclConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
+| <code><a href="#@cdktf/provider-aws.networkAcl.NetworkAclConfig.property.subnetIds">SubnetIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/network_acl#subnet_ids NetworkAcl#subnet_ids}. |
+| <code><a href="#@cdktf/provider-aws.networkAcl.NetworkAclConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/network_acl#tags NetworkAcl#tags}. |
+| <code><a href="#@cdktf/provider-aws.networkAcl.NetworkAclConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/network_acl#tags_all NetworkAcl#tags_all}. |
 
 ---
 
@@ -1030,7 +1061,7 @@ VpcId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/network_acl#vpc_id NetworkAcl#vpc_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/network_acl#vpc_id NetworkAcl#vpc_id}.
 
 ---
 
@@ -1042,7 +1073,7 @@ Egress interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/network_acl#egress NetworkAcl#egress}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/network_acl#egress NetworkAcl#egress}.
 
 ---
 
@@ -1054,7 +1085,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/network_acl#id NetworkAcl#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/network_acl#id NetworkAcl#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1069,7 +1100,21 @@ Ingress interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/network_acl#ingress NetworkAcl#ingress}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/network_acl#ingress NetworkAcl#ingress}.
+
+---
+
+##### `Region`<sup>Optional</sup> <a name="Region" id="@cdktf/provider-aws.networkAcl.NetworkAclConfig.property.region"></a>
+
+```go
+Region *string
+```
+
+- *Type:* *string
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/network_acl#region NetworkAcl#region}
 
 ---
 
@@ -1081,7 +1126,7 @@ SubnetIds *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/network_acl#subnet_ids NetworkAcl#subnet_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/network_acl#subnet_ids NetworkAcl#subnet_ids}.
 
 ---
 
@@ -1093,7 +1138,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/network_acl#tags NetworkAcl#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/network_acl#tags NetworkAcl#tags}.
 
 ---
 
@@ -1105,7 +1150,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/network_acl#tags_all NetworkAcl#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/network_acl#tags_all NetworkAcl#tags_all}.
 
 ---
 
@@ -1114,7 +1159,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.networkAcl.NetworkAclEgress.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/networkacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/networkacl"
 
 &networkacl.NetworkAclEgress {
 	Action: *string,
@@ -1133,15 +1178,15 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/networkacl"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.networkAcl.NetworkAclEgress.property.action">Action</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/network_acl#action NetworkAcl#action}. |
-| <code><a href="#@cdktf/provider-aws.networkAcl.NetworkAclEgress.property.cidrBlock">CidrBlock</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/network_acl#cidr_block NetworkAcl#cidr_block}. |
-| <code><a href="#@cdktf/provider-aws.networkAcl.NetworkAclEgress.property.fromPort">FromPort</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/network_acl#from_port NetworkAcl#from_port}. |
-| <code><a href="#@cdktf/provider-aws.networkAcl.NetworkAclEgress.property.icmpCode">IcmpCode</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/network_acl#icmp_code NetworkAcl#icmp_code}. |
-| <code><a href="#@cdktf/provider-aws.networkAcl.NetworkAclEgress.property.icmpType">IcmpType</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/network_acl#icmp_type NetworkAcl#icmp_type}. |
-| <code><a href="#@cdktf/provider-aws.networkAcl.NetworkAclEgress.property.ipv6CidrBlock">Ipv6CidrBlock</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/network_acl#ipv6_cidr_block NetworkAcl#ipv6_cidr_block}. |
-| <code><a href="#@cdktf/provider-aws.networkAcl.NetworkAclEgress.property.protocol">Protocol</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/network_acl#protocol NetworkAcl#protocol}. |
-| <code><a href="#@cdktf/provider-aws.networkAcl.NetworkAclEgress.property.ruleNo">RuleNo</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/network_acl#rule_no NetworkAcl#rule_no}. |
-| <code><a href="#@cdktf/provider-aws.networkAcl.NetworkAclEgress.property.toPort">ToPort</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/network_acl#to_port NetworkAcl#to_port}. |
+| <code><a href="#@cdktf/provider-aws.networkAcl.NetworkAclEgress.property.action">Action</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/network_acl#action NetworkAcl#action}. |
+| <code><a href="#@cdktf/provider-aws.networkAcl.NetworkAclEgress.property.cidrBlock">CidrBlock</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/network_acl#cidr_block NetworkAcl#cidr_block}. |
+| <code><a href="#@cdktf/provider-aws.networkAcl.NetworkAclEgress.property.fromPort">FromPort</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/network_acl#from_port NetworkAcl#from_port}. |
+| <code><a href="#@cdktf/provider-aws.networkAcl.NetworkAclEgress.property.icmpCode">IcmpCode</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/network_acl#icmp_code NetworkAcl#icmp_code}. |
+| <code><a href="#@cdktf/provider-aws.networkAcl.NetworkAclEgress.property.icmpType">IcmpType</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/network_acl#icmp_type NetworkAcl#icmp_type}. |
+| <code><a href="#@cdktf/provider-aws.networkAcl.NetworkAclEgress.property.ipv6CidrBlock">Ipv6CidrBlock</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/network_acl#ipv6_cidr_block NetworkAcl#ipv6_cidr_block}. |
+| <code><a href="#@cdktf/provider-aws.networkAcl.NetworkAclEgress.property.protocol">Protocol</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/network_acl#protocol NetworkAcl#protocol}. |
+| <code><a href="#@cdktf/provider-aws.networkAcl.NetworkAclEgress.property.ruleNo">RuleNo</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/network_acl#rule_no NetworkAcl#rule_no}. |
+| <code><a href="#@cdktf/provider-aws.networkAcl.NetworkAclEgress.property.toPort">ToPort</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/network_acl#to_port NetworkAcl#to_port}. |
 
 ---
 
@@ -1153,7 +1198,7 @@ Action *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/network_acl#action NetworkAcl#action}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/network_acl#action NetworkAcl#action}.
 
 ---
 
@@ -1165,7 +1210,7 @@ CidrBlock *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/network_acl#cidr_block NetworkAcl#cidr_block}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/network_acl#cidr_block NetworkAcl#cidr_block}.
 
 ---
 
@@ -1177,7 +1222,7 @@ FromPort *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/network_acl#from_port NetworkAcl#from_port}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/network_acl#from_port NetworkAcl#from_port}.
 
 ---
 
@@ -1189,7 +1234,7 @@ IcmpCode *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/network_acl#icmp_code NetworkAcl#icmp_code}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/network_acl#icmp_code NetworkAcl#icmp_code}.
 
 ---
 
@@ -1201,7 +1246,7 @@ IcmpType *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/network_acl#icmp_type NetworkAcl#icmp_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/network_acl#icmp_type NetworkAcl#icmp_type}.
 
 ---
 
@@ -1213,7 +1258,7 @@ Ipv6CidrBlock *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/network_acl#ipv6_cidr_block NetworkAcl#ipv6_cidr_block}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/network_acl#ipv6_cidr_block NetworkAcl#ipv6_cidr_block}.
 
 ---
 
@@ -1225,7 +1270,7 @@ Protocol *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/network_acl#protocol NetworkAcl#protocol}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/network_acl#protocol NetworkAcl#protocol}.
 
 ---
 
@@ -1237,7 +1282,7 @@ RuleNo *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/network_acl#rule_no NetworkAcl#rule_no}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/network_acl#rule_no NetworkAcl#rule_no}.
 
 ---
 
@@ -1249,7 +1294,7 @@ ToPort *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/network_acl#to_port NetworkAcl#to_port}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/network_acl#to_port NetworkAcl#to_port}.
 
 ---
 
@@ -1258,7 +1303,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.networkAcl.NetworkAclIngress.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/networkacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/networkacl"
 
 &networkacl.NetworkAclIngress {
 	Action: *string,
@@ -1277,15 +1322,15 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/networkacl"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.networkAcl.NetworkAclIngress.property.action">Action</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/network_acl#action NetworkAcl#action}. |
-| <code><a href="#@cdktf/provider-aws.networkAcl.NetworkAclIngress.property.cidrBlock">CidrBlock</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/network_acl#cidr_block NetworkAcl#cidr_block}. |
-| <code><a href="#@cdktf/provider-aws.networkAcl.NetworkAclIngress.property.fromPort">FromPort</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/network_acl#from_port NetworkAcl#from_port}. |
-| <code><a href="#@cdktf/provider-aws.networkAcl.NetworkAclIngress.property.icmpCode">IcmpCode</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/network_acl#icmp_code NetworkAcl#icmp_code}. |
-| <code><a href="#@cdktf/provider-aws.networkAcl.NetworkAclIngress.property.icmpType">IcmpType</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/network_acl#icmp_type NetworkAcl#icmp_type}. |
-| <code><a href="#@cdktf/provider-aws.networkAcl.NetworkAclIngress.property.ipv6CidrBlock">Ipv6CidrBlock</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/network_acl#ipv6_cidr_block NetworkAcl#ipv6_cidr_block}. |
-| <code><a href="#@cdktf/provider-aws.networkAcl.NetworkAclIngress.property.protocol">Protocol</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/network_acl#protocol NetworkAcl#protocol}. |
-| <code><a href="#@cdktf/provider-aws.networkAcl.NetworkAclIngress.property.ruleNo">RuleNo</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/network_acl#rule_no NetworkAcl#rule_no}. |
-| <code><a href="#@cdktf/provider-aws.networkAcl.NetworkAclIngress.property.toPort">ToPort</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/network_acl#to_port NetworkAcl#to_port}. |
+| <code><a href="#@cdktf/provider-aws.networkAcl.NetworkAclIngress.property.action">Action</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/network_acl#action NetworkAcl#action}. |
+| <code><a href="#@cdktf/provider-aws.networkAcl.NetworkAclIngress.property.cidrBlock">CidrBlock</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/network_acl#cidr_block NetworkAcl#cidr_block}. |
+| <code><a href="#@cdktf/provider-aws.networkAcl.NetworkAclIngress.property.fromPort">FromPort</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/network_acl#from_port NetworkAcl#from_port}. |
+| <code><a href="#@cdktf/provider-aws.networkAcl.NetworkAclIngress.property.icmpCode">IcmpCode</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/network_acl#icmp_code NetworkAcl#icmp_code}. |
+| <code><a href="#@cdktf/provider-aws.networkAcl.NetworkAclIngress.property.icmpType">IcmpType</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/network_acl#icmp_type NetworkAcl#icmp_type}. |
+| <code><a href="#@cdktf/provider-aws.networkAcl.NetworkAclIngress.property.ipv6CidrBlock">Ipv6CidrBlock</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/network_acl#ipv6_cidr_block NetworkAcl#ipv6_cidr_block}. |
+| <code><a href="#@cdktf/provider-aws.networkAcl.NetworkAclIngress.property.protocol">Protocol</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/network_acl#protocol NetworkAcl#protocol}. |
+| <code><a href="#@cdktf/provider-aws.networkAcl.NetworkAclIngress.property.ruleNo">RuleNo</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/network_acl#rule_no NetworkAcl#rule_no}. |
+| <code><a href="#@cdktf/provider-aws.networkAcl.NetworkAclIngress.property.toPort">ToPort</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/network_acl#to_port NetworkAcl#to_port}. |
 
 ---
 
@@ -1297,7 +1342,7 @@ Action *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/network_acl#action NetworkAcl#action}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/network_acl#action NetworkAcl#action}.
 
 ---
 
@@ -1309,7 +1354,7 @@ CidrBlock *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/network_acl#cidr_block NetworkAcl#cidr_block}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/network_acl#cidr_block NetworkAcl#cidr_block}.
 
 ---
 
@@ -1321,7 +1366,7 @@ FromPort *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/network_acl#from_port NetworkAcl#from_port}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/network_acl#from_port NetworkAcl#from_port}.
 
 ---
 
@@ -1333,7 +1378,7 @@ IcmpCode *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/network_acl#icmp_code NetworkAcl#icmp_code}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/network_acl#icmp_code NetworkAcl#icmp_code}.
 
 ---
 
@@ -1345,7 +1390,7 @@ IcmpType *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/network_acl#icmp_type NetworkAcl#icmp_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/network_acl#icmp_type NetworkAcl#icmp_type}.
 
 ---
 
@@ -1357,7 +1402,7 @@ Ipv6CidrBlock *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/network_acl#ipv6_cidr_block NetworkAcl#ipv6_cidr_block}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/network_acl#ipv6_cidr_block NetworkAcl#ipv6_cidr_block}.
 
 ---
 
@@ -1369,7 +1414,7 @@ Protocol *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/network_acl#protocol NetworkAcl#protocol}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/network_acl#protocol NetworkAcl#protocol}.
 
 ---
 
@@ -1381,7 +1426,7 @@ RuleNo *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/network_acl#rule_no NetworkAcl#rule_no}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/network_acl#rule_no NetworkAcl#rule_no}.
 
 ---
 
@@ -1393,7 +1438,7 @@ ToPort *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/network_acl#to_port NetworkAcl#to_port}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/network_acl#to_port NetworkAcl#to_port}.
 
 ---
 
@@ -1404,7 +1449,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.networkAcl.NetworkAclEgressList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/networkacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/networkacl"
 
 networkacl.NewNetworkAclEgressList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) NetworkAclEgressList
 ```
@@ -1564,7 +1609,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.networkAcl.NetworkAclEgressOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/networkacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/networkacl"
 
 networkacl.NewNetworkAclEgressOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) NetworkAclEgressOutputReference
 ```
@@ -2092,7 +2137,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.networkAcl.NetworkAclIngressList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/networkacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/networkacl"
 
 networkacl.NewNetworkAclIngressList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) NetworkAclIngressList
 ```
@@ -2252,7 +2297,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.networkAcl.NetworkAclIngressOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/networkacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/networkacl"
 
 networkacl.NewNetworkAclIngressOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) NetworkAclIngressOutputReference
 ```

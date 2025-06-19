@@ -4,7 +4,7 @@
 
 ### AppconfigExtensionAssociation <a name="AppconfigExtensionAssociation" id="@cdktf/provider-aws.appconfigExtensionAssociation.AppconfigExtensionAssociation"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appconfig_extension_association aws_appconfig_extension_association}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appconfig_extension_association aws_appconfig_extension_association}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appconfigExtensionAssociation.AppconfigExtensionAssociation.Initializer"></a>
 
@@ -24,7 +24,8 @@ appconfigExtensionAssociation.AppconfigExtensionAssociation(
   extension_arn: str,
   resource_arn: str,
   id: str = None,
-  parameters: typing.Mapping[str] = None
+  parameters: typing.Mapping[str] = None,
+  region: str = None
 )
 ```
 
@@ -39,10 +40,11 @@ appconfigExtensionAssociation.AppconfigExtensionAssociation(
 | <code><a href="#@cdktf/provider-aws.appconfigExtensionAssociation.AppconfigExtensionAssociation.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appconfigExtensionAssociation.AppconfigExtensionAssociation.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appconfigExtensionAssociation.AppconfigExtensionAssociation.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appconfigExtensionAssociation.AppconfigExtensionAssociation.Initializer.parameter.extensionArn">extension_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appconfig_extension_association#extension_arn AppconfigExtensionAssociation#extension_arn}. |
-| <code><a href="#@cdktf/provider-aws.appconfigExtensionAssociation.AppconfigExtensionAssociation.Initializer.parameter.resourceArn">resource_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appconfig_extension_association#resource_arn AppconfigExtensionAssociation#resource_arn}. |
-| <code><a href="#@cdktf/provider-aws.appconfigExtensionAssociation.AppconfigExtensionAssociation.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appconfig_extension_association#id AppconfigExtensionAssociation#id}. |
-| <code><a href="#@cdktf/provider-aws.appconfigExtensionAssociation.AppconfigExtensionAssociation.Initializer.parameter.parameters">parameters</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appconfig_extension_association#parameters AppconfigExtensionAssociation#parameters}. |
+| <code><a href="#@cdktf/provider-aws.appconfigExtensionAssociation.AppconfigExtensionAssociation.Initializer.parameter.extensionArn">extension_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appconfig_extension_association#extension_arn AppconfigExtensionAssociation#extension_arn}. |
+| <code><a href="#@cdktf/provider-aws.appconfigExtensionAssociation.AppconfigExtensionAssociation.Initializer.parameter.resourceArn">resource_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appconfig_extension_association#resource_arn AppconfigExtensionAssociation#resource_arn}. |
+| <code><a href="#@cdktf/provider-aws.appconfigExtensionAssociation.AppconfigExtensionAssociation.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appconfig_extension_association#id AppconfigExtensionAssociation#id}. |
+| <code><a href="#@cdktf/provider-aws.appconfigExtensionAssociation.AppconfigExtensionAssociation.Initializer.parameter.parameters">parameters</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appconfig_extension_association#parameters AppconfigExtensionAssociation#parameters}. |
+| <code><a href="#@cdktf/provider-aws.appconfigExtensionAssociation.AppconfigExtensionAssociation.Initializer.parameter.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
 
@@ -110,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appconfig_extension_association#extension_arn AppconfigExtensionAssociation#extension_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appconfig_extension_association#extension_arn AppconfigExtensionAssociation#extension_arn}.
 
 ---
 
@@ -118,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appconfig_extension_association#resource_arn AppconfigExtensionAssociation#resource_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appconfig_extension_association#resource_arn AppconfigExtensionAssociation#resource_arn}.
 
 ---
 
@@ -126,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appconfig_extension_association#id AppconfigExtensionAssociation#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appconfig_extension_association#id AppconfigExtensionAssociation#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -137,7 +139,17 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appconfig_extension_association#parameters AppconfigExtensionAssociation#parameters}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appconfig_extension_association#parameters AppconfigExtensionAssociation#parameters}.
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdktf/provider-aws.appconfigExtensionAssociation.AppconfigExtensionAssociation.Initializer.parameter.region"></a>
+
+- *Type:* str
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appconfig_extension_association#region AppconfigExtensionAssociation#region}
 
 ---
 
@@ -170,6 +182,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktf/provider-aws.appconfigExtensionAssociation.AppconfigExtensionAssociation.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-aws.appconfigExtensionAssociation.AppconfigExtensionAssociation.resetId">reset_id</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appconfigExtensionAssociation.AppconfigExtensionAssociation.resetParameters">reset_parameters</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appconfigExtensionAssociation.AppconfigExtensionAssociation.resetRegion">reset_region</a></code> | *No description.* |
 
 ---
 
@@ -510,6 +523,12 @@ def reset_id() -> None
 def reset_parameters() -> None
 ```
 
+##### `reset_region` <a name="reset_region" id="@cdktf/provider-aws.appconfigExtensionAssociation.AppconfigExtensionAssociation.resetRegion"></a>
+
+```python
+def reset_region() -> None
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -624,7 +643,7 @@ The construct id used in the generated config for the AppconfigExtensionAssociat
 
 The id of the existing AppconfigExtensionAssociation that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appconfig_extension_association#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appconfig_extension_association#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -659,10 +678,12 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.appconfigExtensionAssociation.AppconfigExtensionAssociation.property.extensionArnInput">extension_arn_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appconfigExtensionAssociation.AppconfigExtensionAssociation.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appconfigExtensionAssociation.AppconfigExtensionAssociation.property.parametersInput">parameters_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appconfigExtensionAssociation.AppconfigExtensionAssociation.property.regionInput">region_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appconfigExtensionAssociation.AppconfigExtensionAssociation.property.resourceArnInput">resource_arn_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appconfigExtensionAssociation.AppconfigExtensionAssociation.property.extensionArn">extension_arn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appconfigExtensionAssociation.AppconfigExtensionAssociation.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appconfigExtensionAssociation.AppconfigExtensionAssociation.property.parameters">parameters</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appconfigExtensionAssociation.AppconfigExtensionAssociation.property.region">region</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appconfigExtensionAssociation.AppconfigExtensionAssociation.property.resourceArn">resource_arn</a></code> | <code>str</code> | *No description.* |
 
 ---
@@ -859,6 +880,16 @@ parameters_input: typing.Mapping[str]
 
 ---
 
+##### `region_input`<sup>Optional</sup> <a name="region_input" id="@cdktf/provider-aws.appconfigExtensionAssociation.AppconfigExtensionAssociation.property.regionInput"></a>
+
+```python
+region_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `resource_arn_input`<sup>Optional</sup> <a name="resource_arn_input" id="@cdktf/provider-aws.appconfigExtensionAssociation.AppconfigExtensionAssociation.property.resourceArnInput"></a>
 
 ```python
@@ -896,6 +927,16 @@ parameters: typing.Mapping[str]
 ```
 
 - *Type:* typing.Mapping[str]
+
+---
+
+##### `region`<sup>Required</sup> <a name="region" id="@cdktf/provider-aws.appconfigExtensionAssociation.AppconfigExtensionAssociation.property.region"></a>
+
+```python
+region: str
+```
+
+- *Type:* str
 
 ---
 
@@ -947,7 +988,8 @@ appconfigExtensionAssociation.AppconfigExtensionAssociationConfig(
   extension_arn: str,
   resource_arn: str,
   id: str = None,
-  parameters: typing.Mapping[str] = None
+  parameters: typing.Mapping[str] = None,
+  region: str = None
 )
 ```
 
@@ -962,10 +1004,11 @@ appconfigExtensionAssociation.AppconfigExtensionAssociationConfig(
 | <code><a href="#@cdktf/provider-aws.appconfigExtensionAssociation.AppconfigExtensionAssociationConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appconfigExtensionAssociation.AppconfigExtensionAssociationConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appconfigExtensionAssociation.AppconfigExtensionAssociationConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appconfigExtensionAssociation.AppconfigExtensionAssociationConfig.property.extensionArn">extension_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appconfig_extension_association#extension_arn AppconfigExtensionAssociation#extension_arn}. |
-| <code><a href="#@cdktf/provider-aws.appconfigExtensionAssociation.AppconfigExtensionAssociationConfig.property.resourceArn">resource_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appconfig_extension_association#resource_arn AppconfigExtensionAssociation#resource_arn}. |
-| <code><a href="#@cdktf/provider-aws.appconfigExtensionAssociation.AppconfigExtensionAssociationConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appconfig_extension_association#id AppconfigExtensionAssociation#id}. |
-| <code><a href="#@cdktf/provider-aws.appconfigExtensionAssociation.AppconfigExtensionAssociationConfig.property.parameters">parameters</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appconfig_extension_association#parameters AppconfigExtensionAssociation#parameters}. |
+| <code><a href="#@cdktf/provider-aws.appconfigExtensionAssociation.AppconfigExtensionAssociationConfig.property.extensionArn">extension_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appconfig_extension_association#extension_arn AppconfigExtensionAssociation#extension_arn}. |
+| <code><a href="#@cdktf/provider-aws.appconfigExtensionAssociation.AppconfigExtensionAssociationConfig.property.resourceArn">resource_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appconfig_extension_association#resource_arn AppconfigExtensionAssociation#resource_arn}. |
+| <code><a href="#@cdktf/provider-aws.appconfigExtensionAssociation.AppconfigExtensionAssociationConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appconfig_extension_association#id AppconfigExtensionAssociation#id}. |
+| <code><a href="#@cdktf/provider-aws.appconfigExtensionAssociation.AppconfigExtensionAssociationConfig.property.parameters">parameters</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appconfig_extension_association#parameters AppconfigExtensionAssociation#parameters}. |
+| <code><a href="#@cdktf/provider-aws.appconfigExtensionAssociation.AppconfigExtensionAssociationConfig.property.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
 
@@ -1047,7 +1090,7 @@ extension_arn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appconfig_extension_association#extension_arn AppconfigExtensionAssociation#extension_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appconfig_extension_association#extension_arn AppconfigExtensionAssociation#extension_arn}.
 
 ---
 
@@ -1059,7 +1102,7 @@ resource_arn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appconfig_extension_association#resource_arn AppconfigExtensionAssociation#resource_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appconfig_extension_association#resource_arn AppconfigExtensionAssociation#resource_arn}.
 
 ---
 
@@ -1071,7 +1114,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appconfig_extension_association#id AppconfigExtensionAssociation#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appconfig_extension_association#id AppconfigExtensionAssociation#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1086,7 +1129,21 @@ parameters: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appconfig_extension_association#parameters AppconfigExtensionAssociation#parameters}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appconfig_extension_association#parameters AppconfigExtensionAssociation#parameters}.
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdktf/provider-aws.appconfigExtensionAssociation.AppconfigExtensionAssociationConfig.property.region"></a>
+
+```python
+region: str
+```
+
+- *Type:* str
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appconfig_extension_association#region AppconfigExtensionAssociation#region}
 
 ---
 

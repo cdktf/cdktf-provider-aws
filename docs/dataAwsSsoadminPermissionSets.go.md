@@ -4,12 +4,12 @@
 
 ### DataAwsSsoadminPermissionSets <a name="DataAwsSsoadminPermissionSets" id="@cdktf/provider-aws.dataAwsSsoadminPermissionSets.DataAwsSsoadminPermissionSets"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ssoadmin_permission_sets aws_ssoadmin_permission_sets}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ssoadmin_permission_sets aws_ssoadmin_permission_sets}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsSsoadminPermissionSets.DataAwsSsoadminPermissionSets.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsssoadminpermissionsets"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsssoadminpermissionsets"
 
 dataawsssoadminpermissionsets.NewDataAwsSsoadminPermissionSets(scope Construct, id *string, config DataAwsSsoadminPermissionSetsConfig) DataAwsSsoadminPermissionSets
 ```
@@ -67,6 +67,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.dataAwsSsoadminPermissionSets.DataAwsSsoadminPermissionSets.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsSsoadminPermissionSets.DataAwsSsoadminPermissionSets.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsSsoadminPermissionSets.DataAwsSsoadminPermissionSets.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsSsoadminPermissionSets.DataAwsSsoadminPermissionSets.resetRegion">ResetRegion</a></code> | *No description.* |
 
 ---
 
@@ -262,6 +263,12 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 
 ---
 
+##### `ResetRegion` <a name="ResetRegion" id="@cdktf/provider-aws.dataAwsSsoadminPermissionSets.DataAwsSsoadminPermissionSets.resetRegion"></a>
+
+```go
+func ResetRegion()
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -276,7 +283,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsSsoadminPermissionSets.DataAwsSsoadminPermissionSets.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsssoadminpermissionsets"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsssoadminpermissionsets"
 
 dataawsssoadminpermissionsets.DataAwsSsoadminPermissionSets_IsConstruct(x interface{}) *bool
 ```
@@ -308,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsSsoadminPermissionSets.DataAwsSsoadminPermissionSets.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsssoadminpermissionsets"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsssoadminpermissionsets"
 
 dataawsssoadminpermissionsets.DataAwsSsoadminPermissionSets_IsTerraformElement(x interface{}) *bool
 ```
@@ -322,7 +329,7 @@ dataawsssoadminpermissionsets.DataAwsSsoadminPermissionSets_IsTerraformElement(x
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsSsoadminPermissionSets.DataAwsSsoadminPermissionSets.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsssoadminpermissionsets"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsssoadminpermissionsets"
 
 dataawsssoadminpermissionsets.DataAwsSsoadminPermissionSets_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -336,7 +343,7 @@ dataawsssoadminpermissionsets.DataAwsSsoadminPermissionSets_IsTerraformDataSourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsSsoadminPermissionSets.DataAwsSsoadminPermissionSets.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsssoadminpermissionsets"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsssoadminpermissionsets"
 
 dataawsssoadminpermissionsets.DataAwsSsoadminPermissionSets_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -365,7 +372,7 @@ The construct id used in the generated config for the DataAwsSsoadminPermissionS
 
 The id of the existing DataAwsSsoadminPermissionSets that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ssoadmin_permission_sets#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ssoadmin_permission_sets#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -396,7 +403,9 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.dataAwsSsoadminPermissionSets.DataAwsSsoadminPermissionSets.property.arns">Arns</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsSsoadminPermissionSets.DataAwsSsoadminPermissionSets.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsSsoadminPermissionSets.DataAwsSsoadminPermissionSets.property.instanceArnInput">InstanceArnInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsSsoadminPermissionSets.DataAwsSsoadminPermissionSets.property.regionInput">RegionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsSsoadminPermissionSets.DataAwsSsoadminPermissionSets.property.instanceArn">InstanceArn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsSsoadminPermissionSets.DataAwsSsoadminPermissionSets.property.region">Region</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
@@ -552,10 +561,30 @@ func InstanceArnInput() *string
 
 ---
 
+##### `RegionInput`<sup>Optional</sup> <a name="RegionInput" id="@cdktf/provider-aws.dataAwsSsoadminPermissionSets.DataAwsSsoadminPermissionSets.property.regionInput"></a>
+
+```go
+func RegionInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `InstanceArn`<sup>Required</sup> <a name="InstanceArn" id="@cdktf/provider-aws.dataAwsSsoadminPermissionSets.DataAwsSsoadminPermissionSets.property.instanceArn"></a>
 
 ```go
 func InstanceArn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Region`<sup>Required</sup> <a name="Region" id="@cdktf/provider-aws.dataAwsSsoadminPermissionSets.DataAwsSsoadminPermissionSets.property.region"></a>
+
+```go
+func Region() *string
 ```
 
 - *Type:* *string
@@ -587,7 +616,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsSsoadminPermissionSets.DataAwsSsoadminPermissionSetsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsssoadminpermissionsets"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsssoadminpermissionsets"
 
 &dataawsssoadminpermissionsets.DataAwsSsoadminPermissionSetsConfig {
 	Connection: interface{},
@@ -598,6 +627,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsssoadminpermission
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	InstanceArn: *string,
+	Region: *string,
 }
 ```
 
@@ -612,7 +642,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsssoadminpermission
 | <code><a href="#@cdktf/provider-aws.dataAwsSsoadminPermissionSets.DataAwsSsoadminPermissionSetsConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsSsoadminPermissionSets.DataAwsSsoadminPermissionSetsConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsSsoadminPermissionSets.DataAwsSsoadminPermissionSetsConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsSsoadminPermissionSets.DataAwsSsoadminPermissionSetsConfig.property.instanceArn">InstanceArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ssoadmin_permission_sets#instance_arn DataAwsSsoadminPermissionSets#instance_arn}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsSsoadminPermissionSets.DataAwsSsoadminPermissionSetsConfig.property.instanceArn">InstanceArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ssoadmin_permission_sets#instance_arn DataAwsSsoadminPermissionSets#instance_arn}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsSsoadminPermissionSets.DataAwsSsoadminPermissionSetsConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
 
@@ -694,7 +725,21 @@ InstanceArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ssoadmin_permission_sets#instance_arn DataAwsSsoadminPermissionSets#instance_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ssoadmin_permission_sets#instance_arn DataAwsSsoadminPermissionSets#instance_arn}.
+
+---
+
+##### `Region`<sup>Optional</sup> <a name="Region" id="@cdktf/provider-aws.dataAwsSsoadminPermissionSets.DataAwsSsoadminPermissionSetsConfig.property.region"></a>
+
+```go
+Region *string
+```
+
+- *Type:* *string
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ssoadmin_permission_sets#region DataAwsSsoadminPermissionSets#region}
 
 ---
 

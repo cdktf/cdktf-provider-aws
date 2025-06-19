@@ -4,12 +4,12 @@
 
 ### DaxParameterGroup <a name="DaxParameterGroup" id="@cdktf/provider-aws.daxParameterGroup.DaxParameterGroup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/dax_parameter_group aws_dax_parameter_group}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/dax_parameter_group aws_dax_parameter_group}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.daxParameterGroup.DaxParameterGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/daxparametergroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/daxparametergroup"
 
 daxparametergroup.NewDaxParameterGroup(scope Construct, id *string, config DaxParameterGroupConfig) DaxParameterGroup
 ```
@@ -77,6 +77,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.daxParameterGroup.DaxParameterGroup.resetDescription">ResetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.daxParameterGroup.DaxParameterGroup.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.daxParameterGroup.DaxParameterGroup.resetParameters">ResetParameters</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.daxParameterGroup.DaxParameterGroup.resetRegion">ResetRegion</a></code> | *No description.* |
 
 ---
 
@@ -398,6 +399,12 @@ func ResetId()
 func ResetParameters()
 ```
 
+##### `ResetRegion` <a name="ResetRegion" id="@cdktf/provider-aws.daxParameterGroup.DaxParameterGroup.resetRegion"></a>
+
+```go
+func ResetRegion()
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -412,7 +419,7 @@ func ResetParameters()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.daxParameterGroup.DaxParameterGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/daxparametergroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/daxparametergroup"
 
 daxparametergroup.DaxParameterGroup_IsConstruct(x interface{}) *bool
 ```
@@ -444,7 +451,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.daxParameterGroup.DaxParameterGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/daxparametergroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/daxparametergroup"
 
 daxparametergroup.DaxParameterGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -458,7 +465,7 @@ daxparametergroup.DaxParameterGroup_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.daxParameterGroup.DaxParameterGroup.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/daxparametergroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/daxparametergroup"
 
 daxparametergroup.DaxParameterGroup_IsTerraformResource(x interface{}) *bool
 ```
@@ -472,7 +479,7 @@ daxparametergroup.DaxParameterGroup_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.daxParameterGroup.DaxParameterGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/daxparametergroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/daxparametergroup"
 
 daxparametergroup.DaxParameterGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -501,7 +508,7 @@ The construct id used in the generated config for the DaxParameterGroup to impor
 
 The id of the existing DaxParameterGroup that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/dax_parameter_group#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/dax_parameter_group#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -536,9 +543,11 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.daxParameterGroup.DaxParameterGroup.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.daxParameterGroup.DaxParameterGroup.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.daxParameterGroup.DaxParameterGroup.property.parametersInput">ParametersInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.daxParameterGroup.DaxParameterGroup.property.regionInput">RegionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.daxParameterGroup.DaxParameterGroup.property.description">Description</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.daxParameterGroup.DaxParameterGroup.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.daxParameterGroup.DaxParameterGroup.property.name">Name</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.daxParameterGroup.DaxParameterGroup.property.region">Region</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
@@ -734,6 +743,16 @@ func ParametersInput() interface{}
 
 ---
 
+##### `RegionInput`<sup>Optional</sup> <a name="RegionInput" id="@cdktf/provider-aws.daxParameterGroup.DaxParameterGroup.property.regionInput"></a>
+
+```go
+func RegionInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `Description`<sup>Required</sup> <a name="Description" id="@cdktf/provider-aws.daxParameterGroup.DaxParameterGroup.property.description"></a>
 
 ```go
@@ -758,6 +777,16 @@ func Id() *string
 
 ```go
 func Name() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Region`<sup>Required</sup> <a name="Region" id="@cdktf/provider-aws.daxParameterGroup.DaxParameterGroup.property.region"></a>
+
+```go
+func Region() *string
 ```
 
 - *Type:* *string
@@ -789,7 +818,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.daxParameterGroup.DaxParameterGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/daxparametergroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/daxparametergroup"
 
 &daxparametergroup.DaxParameterGroupConfig {
 	Connection: interface{},
@@ -803,6 +832,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/daxparametergroup"
 	Description: *string,
 	Id: *string,
 	Parameters: interface{},
+	Region: *string,
 }
 ```
 
@@ -817,10 +847,11 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/daxparametergroup"
 | <code><a href="#@cdktf/provider-aws.daxParameterGroup.DaxParameterGroupConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.daxParameterGroup.DaxParameterGroupConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.daxParameterGroup.DaxParameterGroupConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.daxParameterGroup.DaxParameterGroupConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/dax_parameter_group#name DaxParameterGroup#name}. |
-| <code><a href="#@cdktf/provider-aws.daxParameterGroup.DaxParameterGroupConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/dax_parameter_group#description DaxParameterGroup#description}. |
-| <code><a href="#@cdktf/provider-aws.daxParameterGroup.DaxParameterGroupConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/dax_parameter_group#id DaxParameterGroup#id}. |
+| <code><a href="#@cdktf/provider-aws.daxParameterGroup.DaxParameterGroupConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/dax_parameter_group#name DaxParameterGroup#name}. |
+| <code><a href="#@cdktf/provider-aws.daxParameterGroup.DaxParameterGroupConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/dax_parameter_group#description DaxParameterGroup#description}. |
+| <code><a href="#@cdktf/provider-aws.daxParameterGroup.DaxParameterGroupConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/dax_parameter_group#id DaxParameterGroup#id}. |
 | <code><a href="#@cdktf/provider-aws.daxParameterGroup.DaxParameterGroupConfig.property.parameters">Parameters</a></code> | <code>interface{}</code> | parameters block. |
+| <code><a href="#@cdktf/provider-aws.daxParameterGroup.DaxParameterGroupConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
 
@@ -902,7 +933,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/dax_parameter_group#name DaxParameterGroup#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/dax_parameter_group#name DaxParameterGroup#name}.
 
 ---
 
@@ -914,7 +945,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/dax_parameter_group#description DaxParameterGroup#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/dax_parameter_group#description DaxParameterGroup#description}.
 
 ---
 
@@ -926,7 +957,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/dax_parameter_group#id DaxParameterGroup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/dax_parameter_group#id DaxParameterGroup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -943,7 +974,21 @@ Parameters interface{}
 
 parameters block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/dax_parameter_group#parameters DaxParameterGroup#parameters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/dax_parameter_group#parameters DaxParameterGroup#parameters}
+
+---
+
+##### `Region`<sup>Optional</sup> <a name="Region" id="@cdktf/provider-aws.daxParameterGroup.DaxParameterGroupConfig.property.region"></a>
+
+```go
+Region *string
+```
+
+- *Type:* *string
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/dax_parameter_group#region DaxParameterGroup#region}
 
 ---
 
@@ -952,7 +997,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.daxParameterGroup.DaxParameterGroupParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/daxparametergroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/daxparametergroup"
 
 &daxparametergroup.DaxParameterGroupParameters {
 	Name: *string,
@@ -964,8 +1009,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/daxparametergroup"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.daxParameterGroup.DaxParameterGroupParameters.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/dax_parameter_group#name DaxParameterGroup#name}. |
-| <code><a href="#@cdktf/provider-aws.daxParameterGroup.DaxParameterGroupParameters.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/dax_parameter_group#value DaxParameterGroup#value}. |
+| <code><a href="#@cdktf/provider-aws.daxParameterGroup.DaxParameterGroupParameters.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/dax_parameter_group#name DaxParameterGroup#name}. |
+| <code><a href="#@cdktf/provider-aws.daxParameterGroup.DaxParameterGroupParameters.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/dax_parameter_group#value DaxParameterGroup#value}. |
 
 ---
 
@@ -977,7 +1022,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/dax_parameter_group#name DaxParameterGroup#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/dax_parameter_group#name DaxParameterGroup#name}.
 
 ---
 
@@ -989,7 +1034,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/dax_parameter_group#value DaxParameterGroup#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/dax_parameter_group#value DaxParameterGroup#value}.
 
 ---
 
@@ -1000,7 +1045,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.daxParameterGroup.DaxParameterGroupParametersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/daxparametergroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/daxparametergroup"
 
 daxparametergroup.NewDaxParameterGroupParametersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DaxParameterGroupParametersList
 ```
@@ -1160,7 +1205,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.daxParameterGroup.DaxParameterGroupParametersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/daxparametergroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/daxparametergroup"
 
 daxparametergroup.NewDaxParameterGroupParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DaxParameterGroupParametersOutputReference
 ```

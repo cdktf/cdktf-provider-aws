@@ -4,7 +4,7 @@
 
 ### EbsDefaultKmsKey <a name="EbsDefaultKmsKey" id="@cdktf/provider-aws.ebsDefaultKmsKey.EbsDefaultKmsKey"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ebs_default_kms_key aws_ebs_default_kms_key}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ebs_default_kms_key aws_ebs_default_kms_key}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ebsDefaultKmsKey.EbsDefaultKmsKey.Initializer"></a>
 
@@ -22,7 +22,8 @@ ebsDefaultKmsKey.EbsDefaultKmsKey(
   provider: TerraformProvider = None,
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
   key_arn: str,
-  id: str = None
+  id: str = None,
+  region: str = None
 )
 ```
 
@@ -37,8 +38,9 @@ ebsDefaultKmsKey.EbsDefaultKmsKey(
 | <code><a href="#@cdktf/provider-aws.ebsDefaultKmsKey.EbsDefaultKmsKey.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ebsDefaultKmsKey.EbsDefaultKmsKey.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ebsDefaultKmsKey.EbsDefaultKmsKey.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ebsDefaultKmsKey.EbsDefaultKmsKey.Initializer.parameter.keyArn">key_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ebs_default_kms_key#key_arn EbsDefaultKmsKey#key_arn}. |
-| <code><a href="#@cdktf/provider-aws.ebsDefaultKmsKey.EbsDefaultKmsKey.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ebs_default_kms_key#id EbsDefaultKmsKey#id}. |
+| <code><a href="#@cdktf/provider-aws.ebsDefaultKmsKey.EbsDefaultKmsKey.Initializer.parameter.keyArn">key_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ebs_default_kms_key#key_arn EbsDefaultKmsKey#key_arn}. |
+| <code><a href="#@cdktf/provider-aws.ebsDefaultKmsKey.EbsDefaultKmsKey.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ebs_default_kms_key#id EbsDefaultKmsKey#id}. |
+| <code><a href="#@cdktf/provider-aws.ebsDefaultKmsKey.EbsDefaultKmsKey.Initializer.parameter.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
 
@@ -106,7 +108,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ebs_default_kms_key#key_arn EbsDefaultKmsKey#key_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ebs_default_kms_key#key_arn EbsDefaultKmsKey#key_arn}.
 
 ---
 
@@ -114,10 +116,20 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ebs_default_kms_key#id EbsDefaultKmsKey#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ebs_default_kms_key#id EbsDefaultKmsKey#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdktf/provider-aws.ebsDefaultKmsKey.EbsDefaultKmsKey.Initializer.parameter.region"></a>
+
+- *Type:* str
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ebs_default_kms_key#region EbsDefaultKmsKey#region}
 
 ---
 
@@ -149,6 +161,7 @@ If you experience problems setting this value it might not be settable. Please t
 | <code><a href="#@cdktf/provider-aws.ebsDefaultKmsKey.EbsDefaultKmsKey.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-aws.ebsDefaultKmsKey.EbsDefaultKmsKey.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-aws.ebsDefaultKmsKey.EbsDefaultKmsKey.resetId">reset_id</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ebsDefaultKmsKey.EbsDefaultKmsKey.resetRegion">reset_region</a></code> | *No description.* |
 
 ---
 
@@ -483,6 +496,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 def reset_id() -> None
 ```
 
+##### `reset_region` <a name="reset_region" id="@cdktf/provider-aws.ebsDefaultKmsKey.EbsDefaultKmsKey.resetRegion"></a>
+
+```python
+def reset_region() -> None
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -597,7 +616,7 @@ The construct id used in the generated config for the EbsDefaultKmsKey to import
 
 The id of the existing EbsDefaultKmsKey that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ebs_default_kms_key#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ebs_default_kms_key#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -629,8 +648,10 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.ebsDefaultKmsKey.EbsDefaultKmsKey.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ebsDefaultKmsKey.EbsDefaultKmsKey.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ebsDefaultKmsKey.EbsDefaultKmsKey.property.keyArnInput">key_arn_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ebsDefaultKmsKey.EbsDefaultKmsKey.property.regionInput">region_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ebsDefaultKmsKey.EbsDefaultKmsKey.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ebsDefaultKmsKey.EbsDefaultKmsKey.property.keyArn">key_arn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ebsDefaultKmsKey.EbsDefaultKmsKey.property.region">region</a></code> | <code>str</code> | *No description.* |
 
 ---
 
@@ -796,6 +817,16 @@ key_arn_input: str
 
 ---
 
+##### `region_input`<sup>Optional</sup> <a name="region_input" id="@cdktf/provider-aws.ebsDefaultKmsKey.EbsDefaultKmsKey.property.regionInput"></a>
+
+```python
+region_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.ebsDefaultKmsKey.EbsDefaultKmsKey.property.id"></a>
 
 ```python
@@ -810,6 +841,16 @@ id: str
 
 ```python
 key_arn: str
+```
+
+- *Type:* str
+
+---
+
+##### `region`<sup>Required</sup> <a name="region" id="@cdktf/provider-aws.ebsDefaultKmsKey.EbsDefaultKmsKey.property.region"></a>
+
+```python
+region: str
 ```
 
 - *Type:* str
@@ -852,7 +893,8 @@ ebsDefaultKmsKey.EbsDefaultKmsKeyConfig(
   provider: TerraformProvider = None,
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
   key_arn: str,
-  id: str = None
+  id: str = None,
+  region: str = None
 )
 ```
 
@@ -867,8 +909,9 @@ ebsDefaultKmsKey.EbsDefaultKmsKeyConfig(
 | <code><a href="#@cdktf/provider-aws.ebsDefaultKmsKey.EbsDefaultKmsKeyConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ebsDefaultKmsKey.EbsDefaultKmsKeyConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ebsDefaultKmsKey.EbsDefaultKmsKeyConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ebsDefaultKmsKey.EbsDefaultKmsKeyConfig.property.keyArn">key_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ebs_default_kms_key#key_arn EbsDefaultKmsKey#key_arn}. |
-| <code><a href="#@cdktf/provider-aws.ebsDefaultKmsKey.EbsDefaultKmsKeyConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ebs_default_kms_key#id EbsDefaultKmsKey#id}. |
+| <code><a href="#@cdktf/provider-aws.ebsDefaultKmsKey.EbsDefaultKmsKeyConfig.property.keyArn">key_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ebs_default_kms_key#key_arn EbsDefaultKmsKey#key_arn}. |
+| <code><a href="#@cdktf/provider-aws.ebsDefaultKmsKey.EbsDefaultKmsKeyConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ebs_default_kms_key#id EbsDefaultKmsKey#id}. |
+| <code><a href="#@cdktf/provider-aws.ebsDefaultKmsKey.EbsDefaultKmsKeyConfig.property.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
 
@@ -950,7 +993,7 @@ key_arn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ebs_default_kms_key#key_arn EbsDefaultKmsKey#key_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ebs_default_kms_key#key_arn EbsDefaultKmsKey#key_arn}.
 
 ---
 
@@ -962,10 +1005,24 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ebs_default_kms_key#id EbsDefaultKmsKey#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ebs_default_kms_key#id EbsDefaultKmsKey#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdktf/provider-aws.ebsDefaultKmsKey.EbsDefaultKmsKeyConfig.property.region"></a>
+
+```python
+region: str
+```
+
+- *Type:* str
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ebs_default_kms_key#region EbsDefaultKmsKey#region}
 
 ---
 

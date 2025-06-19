@@ -4,12 +4,12 @@
 
 ### DataAwsEc2TransitGateway <a name="DataAwsEc2TransitGateway" id="@cdktf/provider-aws.dataAwsEc2TransitGateway.DataAwsEc2TransitGateway"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ec2_transit_gateway aws_ec2_transit_gateway}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ec2_transit_gateway aws_ec2_transit_gateway}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2TransitGateway.DataAwsEc2TransitGateway.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsec2transitgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsec2transitgateway"
 
 dataawsec2transitgateway.NewDataAwsEc2TransitGateway(scope Construct, id *string, config DataAwsEc2TransitGatewayConfig) DataAwsEc2TransitGateway
 ```
@@ -71,6 +71,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.dataAwsEc2TransitGateway.DataAwsEc2TransitGateway.putTimeouts">PutTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsEc2TransitGateway.DataAwsEc2TransitGateway.resetFilter">ResetFilter</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsEc2TransitGateway.DataAwsEc2TransitGateway.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsEc2TransitGateway.DataAwsEc2TransitGateway.resetRegion">ResetRegion</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsEc2TransitGateway.DataAwsEc2TransitGateway.resetTags">ResetTags</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsEc2TransitGateway.DataAwsEc2TransitGateway.resetTimeouts">ResetTimeouts</a></code> | *No description.* |
 
@@ -304,6 +305,12 @@ func ResetFilter()
 func ResetId()
 ```
 
+##### `ResetRegion` <a name="ResetRegion" id="@cdktf/provider-aws.dataAwsEc2TransitGateway.DataAwsEc2TransitGateway.resetRegion"></a>
+
+```go
+func ResetRegion()
+```
+
 ##### `ResetTags` <a name="ResetTags" id="@cdktf/provider-aws.dataAwsEc2TransitGateway.DataAwsEc2TransitGateway.resetTags"></a>
 
 ```go
@@ -330,7 +337,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsEc2TransitGateway.DataAwsEc2TransitGateway.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsec2transitgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsec2transitgateway"
 
 dataawsec2transitgateway.DataAwsEc2TransitGateway_IsConstruct(x interface{}) *bool
 ```
@@ -362,7 +369,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsEc2TransitGateway.DataAwsEc2TransitGateway.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsec2transitgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsec2transitgateway"
 
 dataawsec2transitgateway.DataAwsEc2TransitGateway_IsTerraformElement(x interface{}) *bool
 ```
@@ -376,7 +383,7 @@ dataawsec2transitgateway.DataAwsEc2TransitGateway_IsTerraformElement(x interface
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsEc2TransitGateway.DataAwsEc2TransitGateway.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsec2transitgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsec2transitgateway"
 
 dataawsec2transitgateway.DataAwsEc2TransitGateway_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -390,7 +397,7 @@ dataawsec2transitgateway.DataAwsEc2TransitGateway_IsTerraformDataSource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsEc2TransitGateway.DataAwsEc2TransitGateway.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsec2transitgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsec2transitgateway"
 
 dataawsec2transitgateway.DataAwsEc2TransitGateway_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -419,7 +426,7 @@ The construct id used in the generated config for the DataAwsEc2TransitGateway t
 
 The id of the existing DataAwsEc2TransitGateway that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ec2_transit_gateway#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ec2_transit_gateway#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -465,9 +472,11 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.dataAwsEc2TransitGateway.DataAwsEc2TransitGateway.property.vpnEcmpSupport">VpnEcmpSupport</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsEc2TransitGateway.DataAwsEc2TransitGateway.property.filterInput">FilterInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsEc2TransitGateway.DataAwsEc2TransitGateway.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsEc2TransitGateway.DataAwsEc2TransitGateway.property.regionInput">RegionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsEc2TransitGateway.DataAwsEc2TransitGateway.property.tagsInput">TagsInput</a></code> | <code>*map[string]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsEc2TransitGateway.DataAwsEc2TransitGateway.property.timeoutsInput">TimeoutsInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsEc2TransitGateway.DataAwsEc2TransitGateway.property.id">Id</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsEc2TransitGateway.DataAwsEc2TransitGateway.property.region">Region</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsEc2TransitGateway.DataAwsEc2TransitGateway.property.tags">Tags</a></code> | <code>*map[string]*string</code> | *No description.* |
 
 ---
@@ -774,6 +783,16 @@ func IdInput() *string
 
 ---
 
+##### `RegionInput`<sup>Optional</sup> <a name="RegionInput" id="@cdktf/provider-aws.dataAwsEc2TransitGateway.DataAwsEc2TransitGateway.property.regionInput"></a>
+
+```go
+func RegionInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `TagsInput`<sup>Optional</sup> <a name="TagsInput" id="@cdktf/provider-aws.dataAwsEc2TransitGateway.DataAwsEc2TransitGateway.property.tagsInput"></a>
 
 ```go
@@ -798,6 +817,16 @@ func TimeoutsInput() interface{}
 
 ```go
 func Id() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Region`<sup>Required</sup> <a name="Region" id="@cdktf/provider-aws.dataAwsEc2TransitGateway.DataAwsEc2TransitGateway.property.region"></a>
+
+```go
+func Region() *string
 ```
 
 - *Type:* *string
@@ -839,7 +868,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEc2TransitGateway.DataAwsEc2TransitGatewayConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsec2transitgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsec2transitgateway"
 
 &dataawsec2transitgateway.DataAwsEc2TransitGatewayConfig {
 	Connection: interface{},
@@ -851,8 +880,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsec2transitgateway"
 	Provisioners: *[]interface{},
 	Filter: interface{},
 	Id: *string,
+	Region: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v20.dataAwsEc2TransitGateway.DataAwsEc2TransitGatewayTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v21.dataAwsEc2TransitGateway.DataAwsEc2TransitGatewayTimeouts,
 }
 ```
 
@@ -868,8 +898,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsec2transitgateway"
 | <code><a href="#@cdktf/provider-aws.dataAwsEc2TransitGateway.DataAwsEc2TransitGatewayConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsEc2TransitGateway.DataAwsEc2TransitGatewayConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsEc2TransitGateway.DataAwsEc2TransitGatewayConfig.property.filter">Filter</a></code> | <code>interface{}</code> | filter block. |
-| <code><a href="#@cdktf/provider-aws.dataAwsEc2TransitGateway.DataAwsEc2TransitGatewayConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ec2_transit_gateway#id DataAwsEc2TransitGateway#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsEc2TransitGateway.DataAwsEc2TransitGatewayConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ec2_transit_gateway#tags DataAwsEc2TransitGateway#tags}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsEc2TransitGateway.DataAwsEc2TransitGatewayConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ec2_transit_gateway#id DataAwsEc2TransitGateway#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsEc2TransitGateway.DataAwsEc2TransitGatewayConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
+| <code><a href="#@cdktf/provider-aws.dataAwsEc2TransitGateway.DataAwsEc2TransitGatewayConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ec2_transit_gateway#tags DataAwsEc2TransitGateway#tags}. |
 | <code><a href="#@cdktf/provider-aws.dataAwsEc2TransitGateway.DataAwsEc2TransitGatewayConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-aws.dataAwsEc2TransitGateway.DataAwsEc2TransitGatewayTimeouts">DataAwsEc2TransitGatewayTimeouts</a></code> | timeouts block. |
 
 ---
@@ -954,7 +985,7 @@ Filter interface{}
 
 filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ec2_transit_gateway#filter DataAwsEc2TransitGateway#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ec2_transit_gateway#filter DataAwsEc2TransitGateway#filter}
 
 ---
 
@@ -966,10 +997,24 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ec2_transit_gateway#id DataAwsEc2TransitGateway#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ec2_transit_gateway#id DataAwsEc2TransitGateway#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `Region`<sup>Optional</sup> <a name="Region" id="@cdktf/provider-aws.dataAwsEc2TransitGateway.DataAwsEc2TransitGatewayConfig.property.region"></a>
+
+```go
+Region *string
+```
+
+- *Type:* *string
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ec2_transit_gateway#region DataAwsEc2TransitGateway#region}
 
 ---
 
@@ -981,7 +1026,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ec2_transit_gateway#tags DataAwsEc2TransitGateway#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ec2_transit_gateway#tags DataAwsEc2TransitGateway#tags}.
 
 ---
 
@@ -995,7 +1040,7 @@ Timeouts DataAwsEc2TransitGatewayTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ec2_transit_gateway#timeouts DataAwsEc2TransitGateway#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ec2_transit_gateway#timeouts DataAwsEc2TransitGateway#timeouts}
 
 ---
 
@@ -1004,7 +1049,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEc2TransitGateway.DataAwsEc2TransitGatewayFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsec2transitgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsec2transitgateway"
 
 &dataawsec2transitgateway.DataAwsEc2TransitGatewayFilter {
 	Name: *string,
@@ -1016,8 +1061,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsec2transitgateway"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dataAwsEc2TransitGateway.DataAwsEc2TransitGatewayFilter.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ec2_transit_gateway#name DataAwsEc2TransitGateway#name}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsEc2TransitGateway.DataAwsEc2TransitGatewayFilter.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ec2_transit_gateway#values DataAwsEc2TransitGateway#values}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsEc2TransitGateway.DataAwsEc2TransitGatewayFilter.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ec2_transit_gateway#name DataAwsEc2TransitGateway#name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsEc2TransitGateway.DataAwsEc2TransitGatewayFilter.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ec2_transit_gateway#values DataAwsEc2TransitGateway#values}. |
 
 ---
 
@@ -1029,7 +1074,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ec2_transit_gateway#name DataAwsEc2TransitGateway#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ec2_transit_gateway#name DataAwsEc2TransitGateway#name}.
 
 ---
 
@@ -1041,7 +1086,7 @@ Values *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ec2_transit_gateway#values DataAwsEc2TransitGateway#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ec2_transit_gateway#values DataAwsEc2TransitGateway#values}.
 
 ---
 
@@ -1050,7 +1095,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEc2TransitGateway.DataAwsEc2TransitGatewayTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsec2transitgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsec2transitgateway"
 
 &dataawsec2transitgateway.DataAwsEc2TransitGatewayTimeouts {
 	Read: *string,
@@ -1061,7 +1106,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsec2transitgateway"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dataAwsEc2TransitGateway.DataAwsEc2TransitGatewayTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ec2_transit_gateway#read DataAwsEc2TransitGateway#read}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsEc2TransitGateway.DataAwsEc2TransitGatewayTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ec2_transit_gateway#read DataAwsEc2TransitGateway#read}. |
 
 ---
 
@@ -1073,7 +1118,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ec2_transit_gateway#read DataAwsEc2TransitGateway#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ec2_transit_gateway#read DataAwsEc2TransitGateway#read}.
 
 ---
 
@@ -1084,7 +1129,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2TransitGateway.DataAwsEc2TransitGatewayFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsec2transitgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsec2transitgateway"
 
 dataawsec2transitgateway.NewDataAwsEc2TransitGatewayFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEc2TransitGatewayFilterList
 ```
@@ -1244,7 +1289,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2TransitGateway.DataAwsEc2TransitGatewayFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsec2transitgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsec2transitgateway"
 
 dataawsec2transitgateway.NewDataAwsEc2TransitGatewayFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEc2TransitGatewayFilterOutputReference
 ```
@@ -1555,7 +1600,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2TransitGateway.DataAwsEc2TransitGatewayTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsec2transitgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsec2transitgateway"
 
 dataawsec2transitgateway.NewDataAwsEc2TransitGatewayTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAwsEc2TransitGatewayTimeoutsOutputReference
 ```

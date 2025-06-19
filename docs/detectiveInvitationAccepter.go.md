@@ -4,12 +4,12 @@
 
 ### DetectiveInvitationAccepter <a name="DetectiveInvitationAccepter" id="@cdktf/provider-aws.detectiveInvitationAccepter.DetectiveInvitationAccepter"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/detective_invitation_accepter aws_detective_invitation_accepter}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/detective_invitation_accepter aws_detective_invitation_accepter}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.detectiveInvitationAccepter.DetectiveInvitationAccepter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/detectiveinvitationaccepter"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/detectiveinvitationaccepter"
 
 detectiveinvitationaccepter.NewDetectiveInvitationAccepter(scope Construct, id *string, config DetectiveInvitationAccepterConfig) DetectiveInvitationAccepter
 ```
@@ -74,6 +74,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.detectiveInvitationAccepter.DetectiveInvitationAccepter.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-aws.detectiveInvitationAccepter.DetectiveInvitationAccepter.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-aws.detectiveInvitationAccepter.DetectiveInvitationAccepter.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.detectiveInvitationAccepter.DetectiveInvitationAccepter.resetRegion">ResetRegion</a></code> | *No description.* |
 
 ---
 
@@ -371,6 +372,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 func ResetId()
 ```
 
+##### `ResetRegion` <a name="ResetRegion" id="@cdktf/provider-aws.detectiveInvitationAccepter.DetectiveInvitationAccepter.resetRegion"></a>
+
+```go
+func ResetRegion()
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -385,7 +392,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.detectiveInvitationAccepter.DetectiveInvitationAccepter.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/detectiveinvitationaccepter"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/detectiveinvitationaccepter"
 
 detectiveinvitationaccepter.DetectiveInvitationAccepter_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +424,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.detectiveInvitationAccepter.DetectiveInvitationAccepter.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/detectiveinvitationaccepter"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/detectiveinvitationaccepter"
 
 detectiveinvitationaccepter.DetectiveInvitationAccepter_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +438,7 @@ detectiveinvitationaccepter.DetectiveInvitationAccepter_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.detectiveInvitationAccepter.DetectiveInvitationAccepter.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/detectiveinvitationaccepter"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/detectiveinvitationaccepter"
 
 detectiveinvitationaccepter.DetectiveInvitationAccepter_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +452,7 @@ detectiveinvitationaccepter.DetectiveInvitationAccepter_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.detectiveInvitationAccepter.DetectiveInvitationAccepter.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/detectiveinvitationaccepter"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/detectiveinvitationaccepter"
 
 detectiveinvitationaccepter.DetectiveInvitationAccepter_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -474,7 +481,7 @@ The construct id used in the generated config for the DetectiveInvitationAccepte
 
 The id of the existing DetectiveInvitationAccepter that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/detective_invitation_accepter#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/detective_invitation_accepter#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -506,8 +513,10 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.detectiveInvitationAccepter.DetectiveInvitationAccepter.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.detectiveInvitationAccepter.DetectiveInvitationAccepter.property.graphArnInput">GraphArnInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.detectiveInvitationAccepter.DetectiveInvitationAccepter.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.detectiveInvitationAccepter.DetectiveInvitationAccepter.property.regionInput">RegionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.detectiveInvitationAccepter.DetectiveInvitationAccepter.property.graphArn">GraphArn</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.detectiveInvitationAccepter.DetectiveInvitationAccepter.property.id">Id</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.detectiveInvitationAccepter.DetectiveInvitationAccepter.property.region">Region</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
@@ -673,6 +682,16 @@ func IdInput() *string
 
 ---
 
+##### `RegionInput`<sup>Optional</sup> <a name="RegionInput" id="@cdktf/provider-aws.detectiveInvitationAccepter.DetectiveInvitationAccepter.property.regionInput"></a>
+
+```go
+func RegionInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `GraphArn`<sup>Required</sup> <a name="GraphArn" id="@cdktf/provider-aws.detectiveInvitationAccepter.DetectiveInvitationAccepter.property.graphArn"></a>
 
 ```go
@@ -687,6 +706,16 @@ func GraphArn() *string
 
 ```go
 func Id() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Region`<sup>Required</sup> <a name="Region" id="@cdktf/provider-aws.detectiveInvitationAccepter.DetectiveInvitationAccepter.property.region"></a>
+
+```go
+func Region() *string
 ```
 
 - *Type:* *string
@@ -718,7 +747,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.detectiveInvitationAccepter.DetectiveInvitationAccepterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/detectiveinvitationaccepter"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/detectiveinvitationaccepter"
 
 &detectiveinvitationaccepter.DetectiveInvitationAccepterConfig {
 	Connection: interface{},
@@ -730,6 +759,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/detectiveinvitationaccept
 	Provisioners: *[]interface{},
 	GraphArn: *string,
 	Id: *string,
+	Region: *string,
 }
 ```
 
@@ -744,8 +774,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/detectiveinvitationaccept
 | <code><a href="#@cdktf/provider-aws.detectiveInvitationAccepter.DetectiveInvitationAccepterConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.detectiveInvitationAccepter.DetectiveInvitationAccepterConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.detectiveInvitationAccepter.DetectiveInvitationAccepterConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.detectiveInvitationAccepter.DetectiveInvitationAccepterConfig.property.graphArn">GraphArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/detective_invitation_accepter#graph_arn DetectiveInvitationAccepter#graph_arn}. |
-| <code><a href="#@cdktf/provider-aws.detectiveInvitationAccepter.DetectiveInvitationAccepterConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/detective_invitation_accepter#id DetectiveInvitationAccepter#id}. |
+| <code><a href="#@cdktf/provider-aws.detectiveInvitationAccepter.DetectiveInvitationAccepterConfig.property.graphArn">GraphArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/detective_invitation_accepter#graph_arn DetectiveInvitationAccepter#graph_arn}. |
+| <code><a href="#@cdktf/provider-aws.detectiveInvitationAccepter.DetectiveInvitationAccepterConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/detective_invitation_accepter#id DetectiveInvitationAccepter#id}. |
+| <code><a href="#@cdktf/provider-aws.detectiveInvitationAccepter.DetectiveInvitationAccepterConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
 
@@ -827,7 +858,7 @@ GraphArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/detective_invitation_accepter#graph_arn DetectiveInvitationAccepter#graph_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/detective_invitation_accepter#graph_arn DetectiveInvitationAccepter#graph_arn}.
 
 ---
 
@@ -839,10 +870,24 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/detective_invitation_accepter#id DetectiveInvitationAccepter#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/detective_invitation_accepter#id DetectiveInvitationAccepter#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `Region`<sup>Optional</sup> <a name="Region" id="@cdktf/provider-aws.detectiveInvitationAccepter.DetectiveInvitationAccepterConfig.property.region"></a>
+
+```go
+Region *string
+```
+
+- *Type:* *string
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/detective_invitation_accepter#region DetectiveInvitationAccepter#region}
 
 ---
 

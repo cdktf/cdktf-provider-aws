@@ -4,12 +4,12 @@
 
 ### BedrockCustomModel <a name="BedrockCustomModel" id="@cdktf/provider-aws.bedrockCustomModel.BedrockCustomModel"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/bedrock_custom_model aws_bedrock_custom_model}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/bedrock_custom_model aws_bedrock_custom_model}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.bedrockCustomModel.BedrockCustomModel.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/bedrockcustommodel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/bedrockcustommodel"
 
 bedrockcustommodel.NewBedrockCustomModel(scope Construct, id *string, config BedrockCustomModelConfig) BedrockCustomModel
 ```
@@ -81,6 +81,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.bedrockCustomModel.BedrockCustomModel.resetCustomizationType">ResetCustomizationType</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockCustomModel.BedrockCustomModel.resetCustomModelKmsKeyId">ResetCustomModelKmsKeyId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockCustomModel.BedrockCustomModel.resetOutputDataConfig">ResetOutputDataConfig</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockCustomModel.BedrockCustomModel.resetRegion">ResetRegion</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockCustomModel.BedrockCustomModel.resetTags">ResetTags</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockCustomModel.BedrockCustomModel.resetTimeouts">ResetTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockCustomModel.BedrockCustomModel.resetTrainingDataConfig">ResetTrainingDataConfig</a></code> | *No description.* |
@@ -455,6 +456,12 @@ func ResetCustomModelKmsKeyId()
 func ResetOutputDataConfig()
 ```
 
+##### `ResetRegion` <a name="ResetRegion" id="@cdktf/provider-aws.bedrockCustomModel.BedrockCustomModel.resetRegion"></a>
+
+```go
+func ResetRegion()
+```
+
 ##### `ResetTags` <a name="ResetTags" id="@cdktf/provider-aws.bedrockCustomModel.BedrockCustomModel.resetTags"></a>
 
 ```go
@@ -499,7 +506,7 @@ func ResetVpcConfig()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.bedrockCustomModel.BedrockCustomModel.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/bedrockcustommodel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/bedrockcustommodel"
 
 bedrockcustommodel.BedrockCustomModel_IsConstruct(x interface{}) *bool
 ```
@@ -531,7 +538,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.bedrockCustomModel.BedrockCustomModel.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/bedrockcustommodel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/bedrockcustommodel"
 
 bedrockcustommodel.BedrockCustomModel_IsTerraformElement(x interface{}) *bool
 ```
@@ -545,7 +552,7 @@ bedrockcustommodel.BedrockCustomModel_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.bedrockCustomModel.BedrockCustomModel.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/bedrockcustommodel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/bedrockcustommodel"
 
 bedrockcustommodel.BedrockCustomModel_IsTerraformResource(x interface{}) *bool
 ```
@@ -559,7 +566,7 @@ bedrockcustommodel.BedrockCustomModel_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.bedrockCustomModel.BedrockCustomModel.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/bedrockcustommodel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/bedrockcustommodel"
 
 bedrockcustommodel.BedrockCustomModel_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -588,7 +595,7 @@ The construct id used in the generated config for the BedrockCustomModel to impo
 
 The id of the existing BedrockCustomModel that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/bedrock_custom_model#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/bedrock_custom_model#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -637,6 +644,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.bedrockCustomModel.BedrockCustomModel.property.hyperparametersInput">HyperparametersInput</a></code> | <code>*map[string]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockCustomModel.BedrockCustomModel.property.jobNameInput">JobNameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockCustomModel.BedrockCustomModel.property.outputDataConfigInput">OutputDataConfigInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockCustomModel.BedrockCustomModel.property.regionInput">RegionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockCustomModel.BedrockCustomModel.property.roleArnInput">RoleArnInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockCustomModel.BedrockCustomModel.property.tagsInput">TagsInput</a></code> | <code>*map[string]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockCustomModel.BedrockCustomModel.property.timeoutsInput">TimeoutsInput</a></code> | <code>interface{}</code> | *No description.* |
@@ -649,6 +657,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.bedrockCustomModel.BedrockCustomModel.property.customModelName">CustomModelName</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockCustomModel.BedrockCustomModel.property.hyperparameters">Hyperparameters</a></code> | <code>*map[string]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockCustomModel.BedrockCustomModel.property.jobName">JobName</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockCustomModel.BedrockCustomModel.property.region">Region</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockCustomModel.BedrockCustomModel.property.roleArn">RoleArn</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockCustomModel.BedrockCustomModel.property.tags">Tags</a></code> | <code>*map[string]*string</code> | *No description.* |
 
@@ -986,6 +995,16 @@ func OutputDataConfigInput() interface{}
 
 ---
 
+##### `RegionInput`<sup>Optional</sup> <a name="RegionInput" id="@cdktf/provider-aws.bedrockCustomModel.BedrockCustomModel.property.regionInput"></a>
+
+```go
+func RegionInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `RoleArnInput`<sup>Optional</sup> <a name="RoleArnInput" id="@cdktf/provider-aws.bedrockCustomModel.BedrockCustomModel.property.roleArnInput"></a>
 
 ```go
@@ -1106,6 +1125,16 @@ func JobName() *string
 
 ---
 
+##### `Region`<sup>Required</sup> <a name="Region" id="@cdktf/provider-aws.bedrockCustomModel.BedrockCustomModel.property.region"></a>
+
+```go
+func Region() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `RoleArn`<sup>Required</sup> <a name="RoleArn" id="@cdktf/provider-aws.bedrockCustomModel.BedrockCustomModel.property.roleArn"></a>
 
 ```go
@@ -1151,7 +1180,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.bedrockCustomModel.BedrockCustomModelConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/bedrockcustommodel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/bedrockcustommodel"
 
 &bedrockcustommodel.BedrockCustomModelConfig {
 	Connection: interface{},
@@ -1169,8 +1198,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/bedrockcustommodel"
 	CustomizationType: *string,
 	CustomModelKmsKeyId: *string,
 	OutputDataConfig: interface{},
+	Region: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v20.bedrockCustomModel.BedrockCustomModelTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v21.bedrockCustomModel.BedrockCustomModelTimeouts,
 	TrainingDataConfig: interface{},
 	ValidationDataConfig: interface{},
 	VpcConfig: interface{},
@@ -1188,15 +1218,16 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/bedrockcustommodel"
 | <code><a href="#@cdktf/provider-aws.bedrockCustomModel.BedrockCustomModelConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockCustomModel.BedrockCustomModelConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockCustomModel.BedrockCustomModelConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockCustomModel.BedrockCustomModelConfig.property.baseModelIdentifier">BaseModelIdentifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/bedrock_custom_model#base_model_identifier BedrockCustomModel#base_model_identifier}. |
-| <code><a href="#@cdktf/provider-aws.bedrockCustomModel.BedrockCustomModelConfig.property.customModelName">CustomModelName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/bedrock_custom_model#custom_model_name BedrockCustomModel#custom_model_name}. |
-| <code><a href="#@cdktf/provider-aws.bedrockCustomModel.BedrockCustomModelConfig.property.hyperparameters">Hyperparameters</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/bedrock_custom_model#hyperparameters BedrockCustomModel#hyperparameters}. |
-| <code><a href="#@cdktf/provider-aws.bedrockCustomModel.BedrockCustomModelConfig.property.jobName">JobName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/bedrock_custom_model#job_name BedrockCustomModel#job_name}. |
-| <code><a href="#@cdktf/provider-aws.bedrockCustomModel.BedrockCustomModelConfig.property.roleArn">RoleArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/bedrock_custom_model#role_arn BedrockCustomModel#role_arn}. |
-| <code><a href="#@cdktf/provider-aws.bedrockCustomModel.BedrockCustomModelConfig.property.customizationType">CustomizationType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/bedrock_custom_model#customization_type BedrockCustomModel#customization_type}. |
-| <code><a href="#@cdktf/provider-aws.bedrockCustomModel.BedrockCustomModelConfig.property.customModelKmsKeyId">CustomModelKmsKeyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/bedrock_custom_model#custom_model_kms_key_id BedrockCustomModel#custom_model_kms_key_id}. |
+| <code><a href="#@cdktf/provider-aws.bedrockCustomModel.BedrockCustomModelConfig.property.baseModelIdentifier">BaseModelIdentifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/bedrock_custom_model#base_model_identifier BedrockCustomModel#base_model_identifier}. |
+| <code><a href="#@cdktf/provider-aws.bedrockCustomModel.BedrockCustomModelConfig.property.customModelName">CustomModelName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/bedrock_custom_model#custom_model_name BedrockCustomModel#custom_model_name}. |
+| <code><a href="#@cdktf/provider-aws.bedrockCustomModel.BedrockCustomModelConfig.property.hyperparameters">Hyperparameters</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/bedrock_custom_model#hyperparameters BedrockCustomModel#hyperparameters}. |
+| <code><a href="#@cdktf/provider-aws.bedrockCustomModel.BedrockCustomModelConfig.property.jobName">JobName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/bedrock_custom_model#job_name BedrockCustomModel#job_name}. |
+| <code><a href="#@cdktf/provider-aws.bedrockCustomModel.BedrockCustomModelConfig.property.roleArn">RoleArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/bedrock_custom_model#role_arn BedrockCustomModel#role_arn}. |
+| <code><a href="#@cdktf/provider-aws.bedrockCustomModel.BedrockCustomModelConfig.property.customizationType">CustomizationType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/bedrock_custom_model#customization_type BedrockCustomModel#customization_type}. |
+| <code><a href="#@cdktf/provider-aws.bedrockCustomModel.BedrockCustomModelConfig.property.customModelKmsKeyId">CustomModelKmsKeyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/bedrock_custom_model#custom_model_kms_key_id BedrockCustomModel#custom_model_kms_key_id}. |
 | <code><a href="#@cdktf/provider-aws.bedrockCustomModel.BedrockCustomModelConfig.property.outputDataConfig">OutputDataConfig</a></code> | <code>interface{}</code> | output_data_config block. |
-| <code><a href="#@cdktf/provider-aws.bedrockCustomModel.BedrockCustomModelConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/bedrock_custom_model#tags BedrockCustomModel#tags}. |
+| <code><a href="#@cdktf/provider-aws.bedrockCustomModel.BedrockCustomModelConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
+| <code><a href="#@cdktf/provider-aws.bedrockCustomModel.BedrockCustomModelConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/bedrock_custom_model#tags BedrockCustomModel#tags}. |
 | <code><a href="#@cdktf/provider-aws.bedrockCustomModel.BedrockCustomModelConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-aws.bedrockCustomModel.BedrockCustomModelTimeouts">BedrockCustomModelTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktf/provider-aws.bedrockCustomModel.BedrockCustomModelConfig.property.trainingDataConfig">TrainingDataConfig</a></code> | <code>interface{}</code> | training_data_config block. |
 | <code><a href="#@cdktf/provider-aws.bedrockCustomModel.BedrockCustomModelConfig.property.validationDataConfig">ValidationDataConfig</a></code> | <code>interface{}</code> | validation_data_config block. |
@@ -1282,7 +1313,7 @@ BaseModelIdentifier *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/bedrock_custom_model#base_model_identifier BedrockCustomModel#base_model_identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/bedrock_custom_model#base_model_identifier BedrockCustomModel#base_model_identifier}.
 
 ---
 
@@ -1294,7 +1325,7 @@ CustomModelName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/bedrock_custom_model#custom_model_name BedrockCustomModel#custom_model_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/bedrock_custom_model#custom_model_name BedrockCustomModel#custom_model_name}.
 
 ---
 
@@ -1306,7 +1337,7 @@ Hyperparameters *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/bedrock_custom_model#hyperparameters BedrockCustomModel#hyperparameters}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/bedrock_custom_model#hyperparameters BedrockCustomModel#hyperparameters}.
 
 ---
 
@@ -1318,7 +1349,7 @@ JobName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/bedrock_custom_model#job_name BedrockCustomModel#job_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/bedrock_custom_model#job_name BedrockCustomModel#job_name}.
 
 ---
 
@@ -1330,7 +1361,7 @@ RoleArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/bedrock_custom_model#role_arn BedrockCustomModel#role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/bedrock_custom_model#role_arn BedrockCustomModel#role_arn}.
 
 ---
 
@@ -1342,7 +1373,7 @@ CustomizationType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/bedrock_custom_model#customization_type BedrockCustomModel#customization_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/bedrock_custom_model#customization_type BedrockCustomModel#customization_type}.
 
 ---
 
@@ -1354,7 +1385,7 @@ CustomModelKmsKeyId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/bedrock_custom_model#custom_model_kms_key_id BedrockCustomModel#custom_model_kms_key_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/bedrock_custom_model#custom_model_kms_key_id BedrockCustomModel#custom_model_kms_key_id}.
 
 ---
 
@@ -1368,7 +1399,21 @@ OutputDataConfig interface{}
 
 output_data_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/bedrock_custom_model#output_data_config BedrockCustomModel#output_data_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/bedrock_custom_model#output_data_config BedrockCustomModel#output_data_config}
+
+---
+
+##### `Region`<sup>Optional</sup> <a name="Region" id="@cdktf/provider-aws.bedrockCustomModel.BedrockCustomModelConfig.property.region"></a>
+
+```go
+Region *string
+```
+
+- *Type:* *string
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/bedrock_custom_model#region BedrockCustomModel#region}
 
 ---
 
@@ -1380,7 +1425,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/bedrock_custom_model#tags BedrockCustomModel#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/bedrock_custom_model#tags BedrockCustomModel#tags}.
 
 ---
 
@@ -1394,7 +1439,7 @@ Timeouts BedrockCustomModelTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/bedrock_custom_model#timeouts BedrockCustomModel#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/bedrock_custom_model#timeouts BedrockCustomModel#timeouts}
 
 ---
 
@@ -1408,7 +1453,7 @@ TrainingDataConfig interface{}
 
 training_data_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/bedrock_custom_model#training_data_config BedrockCustomModel#training_data_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/bedrock_custom_model#training_data_config BedrockCustomModel#training_data_config}
 
 ---
 
@@ -1422,7 +1467,7 @@ ValidationDataConfig interface{}
 
 validation_data_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/bedrock_custom_model#validation_data_config BedrockCustomModel#validation_data_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/bedrock_custom_model#validation_data_config BedrockCustomModel#validation_data_config}
 
 ---
 
@@ -1436,7 +1481,7 @@ VpcConfig interface{}
 
 vpc_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/bedrock_custom_model#vpc_config BedrockCustomModel#vpc_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/bedrock_custom_model#vpc_config BedrockCustomModel#vpc_config}
 
 ---
 
@@ -1445,7 +1490,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.bedrockCustomModel.BedrockCustomModelOutputDataConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/bedrockcustommodel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/bedrockcustommodel"
 
 &bedrockcustommodel.BedrockCustomModelOutputDataConfig {
 	S3Uri: *string,
@@ -1456,7 +1501,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/bedrockcustommodel"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.bedrockCustomModel.BedrockCustomModelOutputDataConfig.property.s3Uri">S3Uri</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/bedrock_custom_model#s3_uri BedrockCustomModel#s3_uri}. |
+| <code><a href="#@cdktf/provider-aws.bedrockCustomModel.BedrockCustomModelOutputDataConfig.property.s3Uri">S3Uri</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/bedrock_custom_model#s3_uri BedrockCustomModel#s3_uri}. |
 
 ---
 
@@ -1468,7 +1513,7 @@ S3Uri *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/bedrock_custom_model#s3_uri BedrockCustomModel#s3_uri}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/bedrock_custom_model#s3_uri BedrockCustomModel#s3_uri}.
 
 ---
 
@@ -1477,7 +1522,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.bedrockCustomModel.BedrockCustomModelTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/bedrockcustommodel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/bedrockcustommodel"
 
 &bedrockcustommodel.BedrockCustomModelTimeouts {
 	Create: *string,
@@ -1504,7 +1549,7 @@ Create *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/bedrock_custom_model#create BedrockCustomModel#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/bedrock_custom_model#create BedrockCustomModel#create}
 
 ---
 
@@ -1518,7 +1563,7 @@ Delete *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/bedrock_custom_model#delete BedrockCustomModel#delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/bedrock_custom_model#delete BedrockCustomModel#delete}
 
 ---
 
@@ -1527,7 +1572,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.bedrockCustomModel.BedrockCustomModelTrainingDataConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/bedrockcustommodel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/bedrockcustommodel"
 
 &bedrockcustommodel.BedrockCustomModelTrainingDataConfig {
 	S3Uri: *string,
@@ -1538,7 +1583,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/bedrockcustommodel"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.bedrockCustomModel.BedrockCustomModelTrainingDataConfig.property.s3Uri">S3Uri</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/bedrock_custom_model#s3_uri BedrockCustomModel#s3_uri}. |
+| <code><a href="#@cdktf/provider-aws.bedrockCustomModel.BedrockCustomModelTrainingDataConfig.property.s3Uri">S3Uri</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/bedrock_custom_model#s3_uri BedrockCustomModel#s3_uri}. |
 
 ---
 
@@ -1550,7 +1595,7 @@ S3Uri *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/bedrock_custom_model#s3_uri BedrockCustomModel#s3_uri}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/bedrock_custom_model#s3_uri BedrockCustomModel#s3_uri}.
 
 ---
 
@@ -1559,7 +1604,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.bedrockCustomModel.BedrockCustomModelTrainingMetrics.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/bedrockcustommodel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/bedrockcustommodel"
 
 &bedrockcustommodel.BedrockCustomModelTrainingMetrics {
 
@@ -1572,7 +1617,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/bedrockcustommodel"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.bedrockCustomModel.BedrockCustomModelValidationDataConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/bedrockcustommodel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/bedrockcustommodel"
 
 &bedrockcustommodel.BedrockCustomModelValidationDataConfig {
 	Validator: interface{},
@@ -1597,7 +1642,7 @@ Validator interface{}
 
 validator block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/bedrock_custom_model#validator BedrockCustomModel#validator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/bedrock_custom_model#validator BedrockCustomModel#validator}
 
 ---
 
@@ -1606,7 +1651,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.bedrockCustomModel.BedrockCustomModelValidationDataConfigValidator.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/bedrockcustommodel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/bedrockcustommodel"
 
 &bedrockcustommodel.BedrockCustomModelValidationDataConfigValidator {
 	S3Uri: *string,
@@ -1617,7 +1662,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/bedrockcustommodel"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.bedrockCustomModel.BedrockCustomModelValidationDataConfigValidator.property.s3Uri">S3Uri</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/bedrock_custom_model#s3_uri BedrockCustomModel#s3_uri}. |
+| <code><a href="#@cdktf/provider-aws.bedrockCustomModel.BedrockCustomModelValidationDataConfigValidator.property.s3Uri">S3Uri</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/bedrock_custom_model#s3_uri BedrockCustomModel#s3_uri}. |
 
 ---
 
@@ -1629,7 +1674,7 @@ S3Uri *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/bedrock_custom_model#s3_uri BedrockCustomModel#s3_uri}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/bedrock_custom_model#s3_uri BedrockCustomModel#s3_uri}.
 
 ---
 
@@ -1638,7 +1683,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.bedrockCustomModel.BedrockCustomModelValidationMetrics.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/bedrockcustommodel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/bedrockcustommodel"
 
 &bedrockcustommodel.BedrockCustomModelValidationMetrics {
 
@@ -1651,7 +1696,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/bedrockcustommodel"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.bedrockCustomModel.BedrockCustomModelVpcConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/bedrockcustommodel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/bedrockcustommodel"
 
 &bedrockcustommodel.BedrockCustomModelVpcConfig {
 	SecurityGroupIds: *[]*string,
@@ -1663,8 +1708,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/bedrockcustommodel"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.bedrockCustomModel.BedrockCustomModelVpcConfig.property.securityGroupIds">SecurityGroupIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/bedrock_custom_model#security_group_ids BedrockCustomModel#security_group_ids}. |
-| <code><a href="#@cdktf/provider-aws.bedrockCustomModel.BedrockCustomModelVpcConfig.property.subnetIds">SubnetIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/bedrock_custom_model#subnet_ids BedrockCustomModel#subnet_ids}. |
+| <code><a href="#@cdktf/provider-aws.bedrockCustomModel.BedrockCustomModelVpcConfig.property.securityGroupIds">SecurityGroupIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/bedrock_custom_model#security_group_ids BedrockCustomModel#security_group_ids}. |
+| <code><a href="#@cdktf/provider-aws.bedrockCustomModel.BedrockCustomModelVpcConfig.property.subnetIds">SubnetIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/bedrock_custom_model#subnet_ids BedrockCustomModel#subnet_ids}. |
 
 ---
 
@@ -1676,7 +1721,7 @@ SecurityGroupIds *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/bedrock_custom_model#security_group_ids BedrockCustomModel#security_group_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/bedrock_custom_model#security_group_ids BedrockCustomModel#security_group_ids}.
 
 ---
 
@@ -1688,7 +1733,7 @@ SubnetIds *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/bedrock_custom_model#subnet_ids BedrockCustomModel#subnet_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/bedrock_custom_model#subnet_ids BedrockCustomModel#subnet_ids}.
 
 ---
 
@@ -1699,7 +1744,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.bedrockCustomModel.BedrockCustomModelOutputDataConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/bedrockcustommodel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/bedrockcustommodel"
 
 bedrockcustommodel.NewBedrockCustomModelOutputDataConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockCustomModelOutputDataConfigList
 ```
@@ -1859,7 +1904,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.bedrockCustomModel.BedrockCustomModelOutputDataConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/bedrockcustommodel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/bedrockcustommodel"
 
 bedrockcustommodel.NewBedrockCustomModelOutputDataConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockCustomModelOutputDataConfigOutputReference
 ```
@@ -2148,7 +2193,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.bedrockCustomModel.BedrockCustomModelTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/bedrockcustommodel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/bedrockcustommodel"
 
 bedrockcustommodel.NewBedrockCustomModelTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BedrockCustomModelTimeoutsOutputReference
 ```
@@ -2455,7 +2500,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.bedrockCustomModel.BedrockCustomModelTrainingDataConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/bedrockcustommodel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/bedrockcustommodel"
 
 bedrockcustommodel.NewBedrockCustomModelTrainingDataConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockCustomModelTrainingDataConfigList
 ```
@@ -2615,7 +2660,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.bedrockCustomModel.BedrockCustomModelTrainingDataConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/bedrockcustommodel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/bedrockcustommodel"
 
 bedrockcustommodel.NewBedrockCustomModelTrainingDataConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockCustomModelTrainingDataConfigOutputReference
 ```
@@ -2904,7 +2949,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.bedrockCustomModel.BedrockCustomModelTrainingMetricsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/bedrockcustommodel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/bedrockcustommodel"
 
 bedrockcustommodel.NewBedrockCustomModelTrainingMetricsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockCustomModelTrainingMetricsList
 ```
@@ -3053,7 +3098,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.bedrockCustomModel.BedrockCustomModelTrainingMetricsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/bedrockcustommodel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/bedrockcustommodel"
 
 bedrockcustommodel.NewBedrockCustomModelTrainingMetricsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockCustomModelTrainingMetricsOutputReference
 ```
@@ -3331,7 +3376,7 @@ func InternalValue() BedrockCustomModelTrainingMetrics
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.bedrockCustomModel.BedrockCustomModelValidationDataConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/bedrockcustommodel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/bedrockcustommodel"
 
 bedrockcustommodel.NewBedrockCustomModelValidationDataConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockCustomModelValidationDataConfigList
 ```
@@ -3491,7 +3536,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.bedrockCustomModel.BedrockCustomModelValidationDataConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/bedrockcustommodel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/bedrockcustommodel"
 
 bedrockcustommodel.NewBedrockCustomModelValidationDataConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockCustomModelValidationDataConfigOutputReference
 ```
@@ -3800,7 +3845,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.bedrockCustomModel.BedrockCustomModelValidationDataConfigValidatorList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/bedrockcustommodel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/bedrockcustommodel"
 
 bedrockcustommodel.NewBedrockCustomModelValidationDataConfigValidatorList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockCustomModelValidationDataConfigValidatorList
 ```
@@ -3960,7 +4005,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.bedrockCustomModel.BedrockCustomModelValidationDataConfigValidatorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/bedrockcustommodel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/bedrockcustommodel"
 
 bedrockcustommodel.NewBedrockCustomModelValidationDataConfigValidatorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockCustomModelValidationDataConfigValidatorOutputReference
 ```
@@ -4249,7 +4294,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.bedrockCustomModel.BedrockCustomModelValidationMetricsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/bedrockcustommodel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/bedrockcustommodel"
 
 bedrockcustommodel.NewBedrockCustomModelValidationMetricsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockCustomModelValidationMetricsList
 ```
@@ -4398,7 +4443,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.bedrockCustomModel.BedrockCustomModelValidationMetricsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/bedrockcustommodel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/bedrockcustommodel"
 
 bedrockcustommodel.NewBedrockCustomModelValidationMetricsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockCustomModelValidationMetricsOutputReference
 ```
@@ -4676,7 +4721,7 @@ func InternalValue() BedrockCustomModelValidationMetrics
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.bedrockCustomModel.BedrockCustomModelVpcConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/bedrockcustommodel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/bedrockcustommodel"
 
 bedrockcustommodel.NewBedrockCustomModelVpcConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockCustomModelVpcConfigList
 ```
@@ -4836,7 +4881,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.bedrockCustomModel.BedrockCustomModelVpcConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/bedrockcustommodel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/bedrockcustommodel"
 
 bedrockcustommodel.NewBedrockCustomModelVpcConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockCustomModelVpcConfigOutputReference
 ```

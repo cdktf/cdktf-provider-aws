@@ -4,12 +4,12 @@
 
 ### SsmActivation <a name="SsmActivation" id="@cdktf/provider-aws.ssmActivation.SsmActivation"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ssm_activation aws_ssm_activation}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ssm_activation aws_ssm_activation}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ssmActivation.SsmActivation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/ssmactivation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/ssmactivation"
 
 ssmactivation.NewSsmActivation(scope Construct, id *string, config SsmActivationConfig) SsmActivation
 ```
@@ -77,6 +77,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.ssmActivation.SsmActivation.resetExpirationDate">ResetExpirationDate</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ssmActivation.SsmActivation.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ssmActivation.SsmActivation.resetName">ResetName</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ssmActivation.SsmActivation.resetRegion">ResetRegion</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ssmActivation.SsmActivation.resetRegistrationLimit">ResetRegistrationLimit</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ssmActivation.SsmActivation.resetTags">ResetTags</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ssmActivation.SsmActivation.resetTagsAll">ResetTagsAll</a></code> | *No description.* |
@@ -395,6 +396,12 @@ func ResetId()
 func ResetName()
 ```
 
+##### `ResetRegion` <a name="ResetRegion" id="@cdktf/provider-aws.ssmActivation.SsmActivation.resetRegion"></a>
+
+```go
+func ResetRegion()
+```
+
 ##### `ResetRegistrationLimit` <a name="ResetRegistrationLimit" id="@cdktf/provider-aws.ssmActivation.SsmActivation.resetRegistrationLimit"></a>
 
 ```go
@@ -427,7 +434,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.ssmActivation.SsmActivation.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/ssmactivation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/ssmactivation"
 
 ssmactivation.SsmActivation_IsConstruct(x interface{}) *bool
 ```
@@ -459,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.ssmActivation.SsmActivation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/ssmactivation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/ssmactivation"
 
 ssmactivation.SsmActivation_IsTerraformElement(x interface{}) *bool
 ```
@@ -473,7 +480,7 @@ ssmactivation.SsmActivation_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.ssmActivation.SsmActivation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/ssmactivation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/ssmactivation"
 
 ssmactivation.SsmActivation_IsTerraformResource(x interface{}) *bool
 ```
@@ -487,7 +494,7 @@ ssmactivation.SsmActivation_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.ssmActivation.SsmActivation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/ssmactivation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/ssmactivation"
 
 ssmactivation.SsmActivation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -516,7 +523,7 @@ The construct id used in the generated config for the SsmActivation to import.
 
 The id of the existing SsmActivation that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ssm_activation#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ssm_activation#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -554,6 +561,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.ssmActivation.SsmActivation.property.iamRoleInput">IamRoleInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ssmActivation.SsmActivation.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ssmActivation.SsmActivation.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ssmActivation.SsmActivation.property.regionInput">RegionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ssmActivation.SsmActivation.property.registrationLimitInput">RegistrationLimitInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ssmActivation.SsmActivation.property.tagsAllInput">TagsAllInput</a></code> | <code>*map[string]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ssmActivation.SsmActivation.property.tagsInput">TagsInput</a></code> | <code>*map[string]*string</code> | *No description.* |
@@ -562,6 +570,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.ssmActivation.SsmActivation.property.iamRole">IamRole</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ssmActivation.SsmActivation.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ssmActivation.SsmActivation.property.name">Name</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ssmActivation.SsmActivation.property.region">Region</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ssmActivation.SsmActivation.property.registrationLimit">RegistrationLimit</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ssmActivation.SsmActivation.property.tags">Tags</a></code> | <code>*map[string]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ssmActivation.SsmActivation.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | *No description.* |
@@ -790,6 +799,16 @@ func NameInput() *string
 
 ---
 
+##### `RegionInput`<sup>Optional</sup> <a name="RegionInput" id="@cdktf/provider-aws.ssmActivation.SsmActivation.property.regionInput"></a>
+
+```go
+func RegionInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `RegistrationLimitInput`<sup>Optional</sup> <a name="RegistrationLimitInput" id="@cdktf/provider-aws.ssmActivation.SsmActivation.property.registrationLimitInput"></a>
 
 ```go
@@ -870,6 +889,16 @@ func Name() *string
 
 ---
 
+##### `Region`<sup>Required</sup> <a name="Region" id="@cdktf/provider-aws.ssmActivation.SsmActivation.property.region"></a>
+
+```go
+func Region() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `RegistrationLimit`<sup>Required</sup> <a name="RegistrationLimit" id="@cdktf/provider-aws.ssmActivation.SsmActivation.property.registrationLimit"></a>
 
 ```go
@@ -925,7 +954,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ssmActivation.SsmActivationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/ssmactivation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/ssmactivation"
 
 &ssmactivation.SsmActivationConfig {
 	Connection: interface{},
@@ -940,6 +969,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/ssmactivation"
 	ExpirationDate: *string,
 	Id: *string,
 	Name: *string,
+	Region: *string,
 	RegistrationLimit: *f64,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
@@ -957,14 +987,15 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/ssmactivation"
 | <code><a href="#@cdktf/provider-aws.ssmActivation.SsmActivationConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ssmActivation.SsmActivationConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ssmActivation.SsmActivationConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ssmActivation.SsmActivationConfig.property.iamRole">IamRole</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ssm_activation#iam_role SsmActivation#iam_role}. |
-| <code><a href="#@cdktf/provider-aws.ssmActivation.SsmActivationConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ssm_activation#description SsmActivation#description}. |
-| <code><a href="#@cdktf/provider-aws.ssmActivation.SsmActivationConfig.property.expirationDate">ExpirationDate</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ssm_activation#expiration_date SsmActivation#expiration_date}. |
-| <code><a href="#@cdktf/provider-aws.ssmActivation.SsmActivationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ssm_activation#id SsmActivation#id}. |
-| <code><a href="#@cdktf/provider-aws.ssmActivation.SsmActivationConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ssm_activation#name SsmActivation#name}. |
-| <code><a href="#@cdktf/provider-aws.ssmActivation.SsmActivationConfig.property.registrationLimit">RegistrationLimit</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ssm_activation#registration_limit SsmActivation#registration_limit}. |
-| <code><a href="#@cdktf/provider-aws.ssmActivation.SsmActivationConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ssm_activation#tags SsmActivation#tags}. |
-| <code><a href="#@cdktf/provider-aws.ssmActivation.SsmActivationConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ssm_activation#tags_all SsmActivation#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.ssmActivation.SsmActivationConfig.property.iamRole">IamRole</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ssm_activation#iam_role SsmActivation#iam_role}. |
+| <code><a href="#@cdktf/provider-aws.ssmActivation.SsmActivationConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ssm_activation#description SsmActivation#description}. |
+| <code><a href="#@cdktf/provider-aws.ssmActivation.SsmActivationConfig.property.expirationDate">ExpirationDate</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ssm_activation#expiration_date SsmActivation#expiration_date}. |
+| <code><a href="#@cdktf/provider-aws.ssmActivation.SsmActivationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ssm_activation#id SsmActivation#id}. |
+| <code><a href="#@cdktf/provider-aws.ssmActivation.SsmActivationConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ssm_activation#name SsmActivation#name}. |
+| <code><a href="#@cdktf/provider-aws.ssmActivation.SsmActivationConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
+| <code><a href="#@cdktf/provider-aws.ssmActivation.SsmActivationConfig.property.registrationLimit">RegistrationLimit</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ssm_activation#registration_limit SsmActivation#registration_limit}. |
+| <code><a href="#@cdktf/provider-aws.ssmActivation.SsmActivationConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ssm_activation#tags SsmActivation#tags}. |
+| <code><a href="#@cdktf/provider-aws.ssmActivation.SsmActivationConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ssm_activation#tags_all SsmActivation#tags_all}. |
 
 ---
 
@@ -1046,7 +1077,7 @@ IamRole *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ssm_activation#iam_role SsmActivation#iam_role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ssm_activation#iam_role SsmActivation#iam_role}.
 
 ---
 
@@ -1058,7 +1089,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ssm_activation#description SsmActivation#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ssm_activation#description SsmActivation#description}.
 
 ---
 
@@ -1070,7 +1101,7 @@ ExpirationDate *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ssm_activation#expiration_date SsmActivation#expiration_date}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ssm_activation#expiration_date SsmActivation#expiration_date}.
 
 ---
 
@@ -1082,7 +1113,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ssm_activation#id SsmActivation#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ssm_activation#id SsmActivation#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1097,7 +1128,21 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ssm_activation#name SsmActivation#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ssm_activation#name SsmActivation#name}.
+
+---
+
+##### `Region`<sup>Optional</sup> <a name="Region" id="@cdktf/provider-aws.ssmActivation.SsmActivationConfig.property.region"></a>
+
+```go
+Region *string
+```
+
+- *Type:* *string
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ssm_activation#region SsmActivation#region}
 
 ---
 
@@ -1109,7 +1154,7 @@ RegistrationLimit *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ssm_activation#registration_limit SsmActivation#registration_limit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ssm_activation#registration_limit SsmActivation#registration_limit}.
 
 ---
 
@@ -1121,7 +1166,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ssm_activation#tags SsmActivation#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ssm_activation#tags SsmActivation#tags}.
 
 ---
 
@@ -1133,7 +1178,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ssm_activation#tags_all SsmActivation#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ssm_activation#tags_all SsmActivation#tags_all}.
 
 ---
 

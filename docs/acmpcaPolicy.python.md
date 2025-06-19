@@ -4,7 +4,7 @@
 
 ### AcmpcaPolicy <a name="AcmpcaPolicy" id="@cdktf/provider-aws.acmpcaPolicy.AcmpcaPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/acmpca_policy aws_acmpca_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/acmpca_policy aws_acmpca_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.acmpcaPolicy.AcmpcaPolicy.Initializer"></a>
 
@@ -23,7 +23,8 @@ acmpcaPolicy.AcmpcaPolicy(
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
   policy: str,
   resource_arn: str,
-  id: str = None
+  id: str = None,
+  region: str = None
 )
 ```
 
@@ -38,9 +39,10 @@ acmpcaPolicy.AcmpcaPolicy(
 | <code><a href="#@cdktf/provider-aws.acmpcaPolicy.AcmpcaPolicy.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.acmpcaPolicy.AcmpcaPolicy.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.acmpcaPolicy.AcmpcaPolicy.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.acmpcaPolicy.AcmpcaPolicy.Initializer.parameter.policy">policy</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/acmpca_policy#policy AcmpcaPolicy#policy}. |
-| <code><a href="#@cdktf/provider-aws.acmpcaPolicy.AcmpcaPolicy.Initializer.parameter.resourceArn">resource_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/acmpca_policy#resource_arn AcmpcaPolicy#resource_arn}. |
-| <code><a href="#@cdktf/provider-aws.acmpcaPolicy.AcmpcaPolicy.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/acmpca_policy#id AcmpcaPolicy#id}. |
+| <code><a href="#@cdktf/provider-aws.acmpcaPolicy.AcmpcaPolicy.Initializer.parameter.policy">policy</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/acmpca_policy#policy AcmpcaPolicy#policy}. |
+| <code><a href="#@cdktf/provider-aws.acmpcaPolicy.AcmpcaPolicy.Initializer.parameter.resourceArn">resource_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/acmpca_policy#resource_arn AcmpcaPolicy#resource_arn}. |
+| <code><a href="#@cdktf/provider-aws.acmpcaPolicy.AcmpcaPolicy.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/acmpca_policy#id AcmpcaPolicy#id}. |
+| <code><a href="#@cdktf/provider-aws.acmpcaPolicy.AcmpcaPolicy.Initializer.parameter.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
 
@@ -108,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/acmpca_policy#policy AcmpcaPolicy#policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/acmpca_policy#policy AcmpcaPolicy#policy}.
 
 ---
 
@@ -116,7 +118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/acmpca_policy#resource_arn AcmpcaPolicy#resource_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/acmpca_policy#resource_arn AcmpcaPolicy#resource_arn}.
 
 ---
 
@@ -124,10 +126,20 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/acmpca_policy#id AcmpcaPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/acmpca_policy#id AcmpcaPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdktf/provider-aws.acmpcaPolicy.AcmpcaPolicy.Initializer.parameter.region"></a>
+
+- *Type:* str
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/acmpca_policy#region AcmpcaPolicy#region}
 
 ---
 
@@ -159,6 +171,7 @@ If you experience problems setting this value it might not be settable. Please t
 | <code><a href="#@cdktf/provider-aws.acmpcaPolicy.AcmpcaPolicy.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-aws.acmpcaPolicy.AcmpcaPolicy.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-aws.acmpcaPolicy.AcmpcaPolicy.resetId">reset_id</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.acmpcaPolicy.AcmpcaPolicy.resetRegion">reset_region</a></code> | *No description.* |
 
 ---
 
@@ -493,6 +506,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 def reset_id() -> None
 ```
 
+##### `reset_region` <a name="reset_region" id="@cdktf/provider-aws.acmpcaPolicy.AcmpcaPolicy.resetRegion"></a>
+
+```python
+def reset_region() -> None
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -607,7 +626,7 @@ The construct id used in the generated config for the AcmpcaPolicy to import.
 
 The id of the existing AcmpcaPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/acmpca_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/acmpca_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -639,9 +658,11 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.acmpcaPolicy.AcmpcaPolicy.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.acmpcaPolicy.AcmpcaPolicy.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.acmpcaPolicy.AcmpcaPolicy.property.policyInput">policy_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.acmpcaPolicy.AcmpcaPolicy.property.regionInput">region_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.acmpcaPolicy.AcmpcaPolicy.property.resourceArnInput">resource_arn_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.acmpcaPolicy.AcmpcaPolicy.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.acmpcaPolicy.AcmpcaPolicy.property.policy">policy</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.acmpcaPolicy.AcmpcaPolicy.property.region">region</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.acmpcaPolicy.AcmpcaPolicy.property.resourceArn">resource_arn</a></code> | <code>str</code> | *No description.* |
 
 ---
@@ -808,6 +829,16 @@ policy_input: str
 
 ---
 
+##### `region_input`<sup>Optional</sup> <a name="region_input" id="@cdktf/provider-aws.acmpcaPolicy.AcmpcaPolicy.property.regionInput"></a>
+
+```python
+region_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `resource_arn_input`<sup>Optional</sup> <a name="resource_arn_input" id="@cdktf/provider-aws.acmpcaPolicy.AcmpcaPolicy.property.resourceArnInput"></a>
 
 ```python
@@ -832,6 +863,16 @@ id: str
 
 ```python
 policy: str
+```
+
+- *Type:* str
+
+---
+
+##### `region`<sup>Required</sup> <a name="region" id="@cdktf/provider-aws.acmpcaPolicy.AcmpcaPolicy.property.region"></a>
+
+```python
+region: str
 ```
 
 - *Type:* str
@@ -885,7 +926,8 @@ acmpcaPolicy.AcmpcaPolicyConfig(
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
   policy: str,
   resource_arn: str,
-  id: str = None
+  id: str = None,
+  region: str = None
 )
 ```
 
@@ -900,9 +942,10 @@ acmpcaPolicy.AcmpcaPolicyConfig(
 | <code><a href="#@cdktf/provider-aws.acmpcaPolicy.AcmpcaPolicyConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.acmpcaPolicy.AcmpcaPolicyConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.acmpcaPolicy.AcmpcaPolicyConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.acmpcaPolicy.AcmpcaPolicyConfig.property.policy">policy</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/acmpca_policy#policy AcmpcaPolicy#policy}. |
-| <code><a href="#@cdktf/provider-aws.acmpcaPolicy.AcmpcaPolicyConfig.property.resourceArn">resource_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/acmpca_policy#resource_arn AcmpcaPolicy#resource_arn}. |
-| <code><a href="#@cdktf/provider-aws.acmpcaPolicy.AcmpcaPolicyConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/acmpca_policy#id AcmpcaPolicy#id}. |
+| <code><a href="#@cdktf/provider-aws.acmpcaPolicy.AcmpcaPolicyConfig.property.policy">policy</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/acmpca_policy#policy AcmpcaPolicy#policy}. |
+| <code><a href="#@cdktf/provider-aws.acmpcaPolicy.AcmpcaPolicyConfig.property.resourceArn">resource_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/acmpca_policy#resource_arn AcmpcaPolicy#resource_arn}. |
+| <code><a href="#@cdktf/provider-aws.acmpcaPolicy.AcmpcaPolicyConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/acmpca_policy#id AcmpcaPolicy#id}. |
+| <code><a href="#@cdktf/provider-aws.acmpcaPolicy.AcmpcaPolicyConfig.property.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
 
@@ -984,7 +1027,7 @@ policy: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/acmpca_policy#policy AcmpcaPolicy#policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/acmpca_policy#policy AcmpcaPolicy#policy}.
 
 ---
 
@@ -996,7 +1039,7 @@ resource_arn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/acmpca_policy#resource_arn AcmpcaPolicy#resource_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/acmpca_policy#resource_arn AcmpcaPolicy#resource_arn}.
 
 ---
 
@@ -1008,10 +1051,24 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/acmpca_policy#id AcmpcaPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/acmpca_policy#id AcmpcaPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdktf/provider-aws.acmpcaPolicy.AcmpcaPolicyConfig.property.region"></a>
+
+```python
+region: str
+```
+
+- *Type:* str
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/acmpca_policy#region AcmpcaPolicy#region}
 
 ---
 

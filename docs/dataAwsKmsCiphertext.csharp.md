@@ -4,7 +4,7 @@
 
 ### DataAwsKmsCiphertext <a name="DataAwsKmsCiphertext" id="@cdktf/provider-aws.dataAwsKmsCiphertext.DataAwsKmsCiphertext"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/kms_ciphertext aws_kms_ciphertext}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/kms_ciphertext aws_kms_ciphertext}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsKmsCiphertext.DataAwsKmsCiphertext.Initializer"></a>
 
@@ -69,6 +69,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.dataAwsKmsCiphertext.DataAwsKmsCiphertext.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsKmsCiphertext.DataAwsKmsCiphertext.resetContext">ResetContext</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsKmsCiphertext.DataAwsKmsCiphertext.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsKmsCiphertext.DataAwsKmsCiphertext.resetRegion">ResetRegion</a></code> | *No description.* |
 
 ---
 
@@ -276,6 +277,12 @@ private void ResetContext()
 private void ResetId()
 ```
 
+##### `ResetRegion` <a name="ResetRegion" id="@cdktf/provider-aws.dataAwsKmsCiphertext.DataAwsKmsCiphertext.resetRegion"></a>
+
+```csharp
+private void ResetRegion()
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -379,7 +386,7 @@ The construct id used in the generated config for the DataAwsKmsCiphertext to im
 
 The id of the existing DataAwsKmsCiphertext that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/kms_ciphertext#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/kms_ciphertext#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -412,10 +419,12 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.dataAwsKmsCiphertext.DataAwsKmsCiphertext.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsKmsCiphertext.DataAwsKmsCiphertext.property.keyIdInput">KeyIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsKmsCiphertext.DataAwsKmsCiphertext.property.plaintextInput">PlaintextInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsKmsCiphertext.DataAwsKmsCiphertext.property.regionInput">RegionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsKmsCiphertext.DataAwsKmsCiphertext.property.context">Context</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsKmsCiphertext.DataAwsKmsCiphertext.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsKmsCiphertext.DataAwsKmsCiphertext.property.keyId">KeyId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsKmsCiphertext.DataAwsKmsCiphertext.property.plaintext">Plaintext</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsKmsCiphertext.DataAwsKmsCiphertext.property.region">Region</a></code> | <code>string</code> | *No description.* |
 
 ---
 
@@ -591,6 +600,16 @@ public string PlaintextInput { get; }
 
 ---
 
+##### `RegionInput`<sup>Optional</sup> <a name="RegionInput" id="@cdktf/provider-aws.dataAwsKmsCiphertext.DataAwsKmsCiphertext.property.regionInput"></a>
+
+```csharp
+public string RegionInput { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `Context`<sup>Required</sup> <a name="Context" id="@cdktf/provider-aws.dataAwsKmsCiphertext.DataAwsKmsCiphertext.property.context"></a>
 
 ```csharp
@@ -625,6 +644,16 @@ public string KeyId { get; }
 
 ```csharp
 public string Plaintext { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Region`<sup>Required</sup> <a name="Region" id="@cdktf/provider-aws.dataAwsKmsCiphertext.DataAwsKmsCiphertext.property.region"></a>
+
+```csharp
+public string Region { get; }
 ```
 
 - *Type:* string
@@ -669,7 +698,8 @@ new DataAwsKmsCiphertextConfig {
     string KeyId,
     string Plaintext,
     System.Collections.Generic.IDictionary<string, string> Context = null,
-    string Id = null
+    string Id = null,
+    string Region = null
 };
 ```
 
@@ -684,10 +714,11 @@ new DataAwsKmsCiphertextConfig {
 | <code><a href="#@cdktf/provider-aws.dataAwsKmsCiphertext.DataAwsKmsCiphertextConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsKmsCiphertext.DataAwsKmsCiphertextConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsKmsCiphertext.DataAwsKmsCiphertextConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsKmsCiphertext.DataAwsKmsCiphertextConfig.property.keyId">KeyId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/kms_ciphertext#key_id DataAwsKmsCiphertext#key_id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsKmsCiphertext.DataAwsKmsCiphertextConfig.property.plaintext">Plaintext</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/kms_ciphertext#plaintext DataAwsKmsCiphertext#plaintext}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsKmsCiphertext.DataAwsKmsCiphertextConfig.property.context">Context</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/kms_ciphertext#context DataAwsKmsCiphertext#context}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsKmsCiphertext.DataAwsKmsCiphertextConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/kms_ciphertext#id DataAwsKmsCiphertext#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsKmsCiphertext.DataAwsKmsCiphertextConfig.property.keyId">KeyId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/kms_ciphertext#key_id DataAwsKmsCiphertext#key_id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsKmsCiphertext.DataAwsKmsCiphertextConfig.property.plaintext">Plaintext</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/kms_ciphertext#plaintext DataAwsKmsCiphertext#plaintext}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsKmsCiphertext.DataAwsKmsCiphertextConfig.property.context">Context</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/kms_ciphertext#context DataAwsKmsCiphertext#context}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsKmsCiphertext.DataAwsKmsCiphertextConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/kms_ciphertext#id DataAwsKmsCiphertext#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsKmsCiphertext.DataAwsKmsCiphertextConfig.property.region">Region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
 
@@ -769,7 +800,7 @@ public string KeyId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/kms_ciphertext#key_id DataAwsKmsCiphertext#key_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/kms_ciphertext#key_id DataAwsKmsCiphertext#key_id}.
 
 ---
 
@@ -781,7 +812,7 @@ public string Plaintext { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/kms_ciphertext#plaintext DataAwsKmsCiphertext#plaintext}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/kms_ciphertext#plaintext DataAwsKmsCiphertext#plaintext}.
 
 ---
 
@@ -793,7 +824,7 @@ public System.Collections.Generic.IDictionary<string, string> Context { get; set
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/kms_ciphertext#context DataAwsKmsCiphertext#context}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/kms_ciphertext#context DataAwsKmsCiphertext#context}.
 
 ---
 
@@ -805,10 +836,24 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/kms_ciphertext#id DataAwsKmsCiphertext#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/kms_ciphertext#id DataAwsKmsCiphertext#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `Region`<sup>Optional</sup> <a name="Region" id="@cdktf/provider-aws.dataAwsKmsCiphertext.DataAwsKmsCiphertextConfig.property.region"></a>
+
+```csharp
+public string Region { get; set; }
+```
+
+- *Type:* string
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/kms_ciphertext#region DataAwsKmsCiphertext#region}
 
 ---
 

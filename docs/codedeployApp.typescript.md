@@ -4,7 +4,7 @@
 
 ### CodedeployApp <a name="CodedeployApp" id="@cdktf/provider-aws.codedeployApp.CodedeployApp"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/codedeploy_app aws_codedeploy_app}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/codedeploy_app aws_codedeploy_app}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.codedeployApp.CodedeployApp.Initializer"></a>
 
@@ -75,6 +75,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.codedeployApp.CodedeployApp.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-aws.codedeployApp.CodedeployApp.resetComputePlatform">resetComputePlatform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.codedeployApp.CodedeployApp.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.codedeployApp.CodedeployApp.resetRegion">resetRegion</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.codedeployApp.CodedeployApp.resetTags">resetTags</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.codedeployApp.CodedeployApp.resetTagsAll">resetTagsAll</a></code> | *No description.* |
 
@@ -380,6 +381,12 @@ public resetComputePlatform(): void
 public resetId(): void
 ```
 
+##### `resetRegion` <a name="resetRegion" id="@cdktf/provider-aws.codedeployApp.CodedeployApp.resetRegion"></a>
+
+```typescript
+public resetRegion(): void
+```
+
 ##### `resetTags` <a name="resetTags" id="@cdktf/provider-aws.codedeployApp.CodedeployApp.resetTags"></a>
 
 ```typescript
@@ -495,7 +502,7 @@ The construct id used in the generated config for the CodedeployApp to import.
 
 The id of the existing CodedeployApp that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/codedeploy_app#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/codedeploy_app#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -532,11 +539,13 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.codedeployApp.CodedeployApp.property.computePlatformInput">computePlatformInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.codedeployApp.CodedeployApp.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.codedeployApp.CodedeployApp.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.codedeployApp.CodedeployApp.property.regionInput">regionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.codedeployApp.CodedeployApp.property.tagsAllInput">tagsAllInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.codedeployApp.CodedeployApp.property.tagsInput">tagsInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.codedeployApp.CodedeployApp.property.computePlatform">computePlatform</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.codedeployApp.CodedeployApp.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.codedeployApp.CodedeployApp.property.name">name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.codedeployApp.CodedeployApp.property.region">region</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.codedeployApp.CodedeployApp.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.codedeployApp.CodedeployApp.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 
@@ -754,6 +763,16 @@ public readonly nameInput: string;
 
 ---
 
+##### `regionInput`<sup>Optional</sup> <a name="regionInput" id="@cdktf/provider-aws.codedeployApp.CodedeployApp.property.regionInput"></a>
+
+```typescript
+public readonly regionInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `tagsAllInput`<sup>Optional</sup> <a name="tagsAllInput" id="@cdktf/provider-aws.codedeployApp.CodedeployApp.property.tagsAllInput"></a>
 
 ```typescript
@@ -798,6 +817,16 @@ public readonly id: string;
 
 ```typescript
 public readonly name: string;
+```
+
+- *Type:* string
+
+---
+
+##### `region`<sup>Required</sup> <a name="region" id="@cdktf/provider-aws.codedeployApp.CodedeployApp.property.region"></a>
+
+```typescript
+public readonly region: string;
 ```
 
 - *Type:* string
@@ -865,11 +894,12 @@ const codedeployAppConfig: codedeployApp.CodedeployAppConfig = { ... }
 | <code><a href="#@cdktf/provider-aws.codedeployApp.CodedeployAppConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.codedeployApp.CodedeployAppConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.codedeployApp.CodedeployAppConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.codedeployApp.CodedeployAppConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/codedeploy_app#name CodedeployApp#name}. |
-| <code><a href="#@cdktf/provider-aws.codedeployApp.CodedeployAppConfig.property.computePlatform">computePlatform</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/codedeploy_app#compute_platform CodedeployApp#compute_platform}. |
-| <code><a href="#@cdktf/provider-aws.codedeployApp.CodedeployAppConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/codedeploy_app#id CodedeployApp#id}. |
-| <code><a href="#@cdktf/provider-aws.codedeployApp.CodedeployAppConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/codedeploy_app#tags CodedeployApp#tags}. |
-| <code><a href="#@cdktf/provider-aws.codedeployApp.CodedeployAppConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/codedeploy_app#tags_all CodedeployApp#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.codedeployApp.CodedeployAppConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/codedeploy_app#name CodedeployApp#name}. |
+| <code><a href="#@cdktf/provider-aws.codedeployApp.CodedeployAppConfig.property.computePlatform">computePlatform</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/codedeploy_app#compute_platform CodedeployApp#compute_platform}. |
+| <code><a href="#@cdktf/provider-aws.codedeployApp.CodedeployAppConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/codedeploy_app#id CodedeployApp#id}. |
+| <code><a href="#@cdktf/provider-aws.codedeployApp.CodedeployAppConfig.property.region">region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
+| <code><a href="#@cdktf/provider-aws.codedeployApp.CodedeployAppConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/codedeploy_app#tags CodedeployApp#tags}. |
+| <code><a href="#@cdktf/provider-aws.codedeployApp.CodedeployAppConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/codedeploy_app#tags_all CodedeployApp#tags_all}. |
 
 ---
 
@@ -951,7 +981,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/codedeploy_app#name CodedeployApp#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/codedeploy_app#name CodedeployApp#name}.
 
 ---
 
@@ -963,7 +993,7 @@ public readonly computePlatform: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/codedeploy_app#compute_platform CodedeployApp#compute_platform}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/codedeploy_app#compute_platform CodedeployApp#compute_platform}.
 
 ---
 
@@ -975,10 +1005,24 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/codedeploy_app#id CodedeployApp#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/codedeploy_app#id CodedeployApp#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdktf/provider-aws.codedeployApp.CodedeployAppConfig.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/codedeploy_app#region CodedeployApp#region}
 
 ---
 
@@ -990,7 +1034,7 @@ public readonly tags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/codedeploy_app#tags CodedeployApp#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/codedeploy_app#tags CodedeployApp#tags}.
 
 ---
 
@@ -1002,7 +1046,7 @@ public readonly tagsAll: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/codedeploy_app#tags_all CodedeployApp#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/codedeploy_app#tags_all CodedeployApp#tags_all}.
 
 ---
 

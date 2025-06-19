@@ -4,12 +4,12 @@
 
 ### GlueTrigger <a name="GlueTrigger" id="@cdktf/provider-aws.glueTrigger.GlueTrigger"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_trigger aws_glue_trigger}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_trigger aws_glue_trigger}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.glueTrigger.GlueTrigger.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/gluetrigger"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/gluetrigger"
 
 gluetrigger.NewGlueTrigger(scope Construct, id *string, config GlueTriggerConfig) GlueTrigger
 ```
@@ -82,6 +82,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.glueTrigger.GlueTrigger.resetEventBatchingCondition">ResetEventBatchingCondition</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.glueTrigger.GlueTrigger.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.glueTrigger.GlueTrigger.resetPredicate">ResetPredicate</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.glueTrigger.GlueTrigger.resetRegion">ResetRegion</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.glueTrigger.GlueTrigger.resetSchedule">ResetSchedule</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.glueTrigger.GlueTrigger.resetStartOnCreation">ResetStartOnCreation</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.glueTrigger.GlueTrigger.resetTags">ResetTags</a></code> | *No description.* |
@@ -457,6 +458,12 @@ func ResetId()
 func ResetPredicate()
 ```
 
+##### `ResetRegion` <a name="ResetRegion" id="@cdktf/provider-aws.glueTrigger.GlueTrigger.resetRegion"></a>
+
+```go
+func ResetRegion()
+```
+
 ##### `ResetSchedule` <a name="ResetSchedule" id="@cdktf/provider-aws.glueTrigger.GlueTrigger.resetSchedule"></a>
 
 ```go
@@ -507,7 +514,7 @@ func ResetWorkflowName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.glueTrigger.GlueTrigger.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/gluetrigger"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/gluetrigger"
 
 gluetrigger.GlueTrigger_IsConstruct(x interface{}) *bool
 ```
@@ -539,7 +546,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.glueTrigger.GlueTrigger.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/gluetrigger"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/gluetrigger"
 
 gluetrigger.GlueTrigger_IsTerraformElement(x interface{}) *bool
 ```
@@ -553,7 +560,7 @@ gluetrigger.GlueTrigger_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.glueTrigger.GlueTrigger.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/gluetrigger"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/gluetrigger"
 
 gluetrigger.GlueTrigger_IsTerraformResource(x interface{}) *bool
 ```
@@ -567,7 +574,7 @@ gluetrigger.GlueTrigger_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.glueTrigger.GlueTrigger.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/gluetrigger"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/gluetrigger"
 
 gluetrigger.GlueTrigger_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -596,7 +603,7 @@ The construct id used in the generated config for the GlueTrigger to import.
 
 The id of the existing GlueTrigger that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_trigger#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_trigger#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -639,6 +646,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.glueTrigger.GlueTrigger.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.glueTrigger.GlueTrigger.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.glueTrigger.GlueTrigger.property.predicateInput">PredicateInput</a></code> | <code><a href="#@cdktf/provider-aws.glueTrigger.GlueTriggerPredicate">GlueTriggerPredicate</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.glueTrigger.GlueTrigger.property.regionInput">RegionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.glueTrigger.GlueTrigger.property.scheduleInput">ScheduleInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.glueTrigger.GlueTrigger.property.startOnCreationInput">StartOnCreationInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.glueTrigger.GlueTrigger.property.tagsAllInput">TagsAllInput</a></code> | <code>*map[string]*string</code> | *No description.* |
@@ -650,6 +658,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.glueTrigger.GlueTrigger.property.enabled">Enabled</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.glueTrigger.GlueTrigger.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.glueTrigger.GlueTrigger.property.name">Name</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.glueTrigger.GlueTrigger.property.region">Region</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.glueTrigger.GlueTrigger.property.schedule">Schedule</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.glueTrigger.GlueTrigger.property.startOnCreation">StartOnCreation</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.glueTrigger.GlueTrigger.property.tags">Tags</a></code> | <code>*map[string]*string</code> | *No description.* |
@@ -931,6 +940,16 @@ func PredicateInput() GlueTriggerPredicate
 
 ---
 
+##### `RegionInput`<sup>Optional</sup> <a name="RegionInput" id="@cdktf/provider-aws.glueTrigger.GlueTrigger.property.regionInput"></a>
+
+```go
+func RegionInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `ScheduleInput`<sup>Optional</sup> <a name="ScheduleInput" id="@cdktf/provider-aws.glueTrigger.GlueTrigger.property.scheduleInput"></a>
 
 ```go
@@ -1041,6 +1060,16 @@ func Name() *string
 
 ---
 
+##### `Region`<sup>Required</sup> <a name="Region" id="@cdktf/provider-aws.glueTrigger.GlueTrigger.property.region"></a>
+
+```go
+func Region() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `Schedule`<sup>Required</sup> <a name="Schedule" id="@cdktf/provider-aws.glueTrigger.GlueTrigger.property.schedule"></a>
 
 ```go
@@ -1126,13 +1155,13 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.glueTrigger.GlueTriggerActions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/gluetrigger"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/gluetrigger"
 
 &gluetrigger.GlueTriggerActions {
 	Arguments: *map[string]*string,
 	CrawlerName: *string,
 	JobName: *string,
-	NotificationProperty: github.com/cdktf/cdktf-provider-aws-go/aws/v20.glueTrigger.GlueTriggerActionsNotificationProperty,
+	NotificationProperty: github.com/cdktf/cdktf-provider-aws-go/aws/v21.glueTrigger.GlueTriggerActionsNotificationProperty,
 	SecurityConfiguration: *string,
 	Timeout: *f64,
 }
@@ -1142,12 +1171,12 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/gluetrigger"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.glueTrigger.GlueTriggerActions.property.arguments">Arguments</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_trigger#arguments GlueTrigger#arguments}. |
-| <code><a href="#@cdktf/provider-aws.glueTrigger.GlueTriggerActions.property.crawlerName">CrawlerName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_trigger#crawler_name GlueTrigger#crawler_name}. |
-| <code><a href="#@cdktf/provider-aws.glueTrigger.GlueTriggerActions.property.jobName">JobName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_trigger#job_name GlueTrigger#job_name}. |
+| <code><a href="#@cdktf/provider-aws.glueTrigger.GlueTriggerActions.property.arguments">Arguments</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_trigger#arguments GlueTrigger#arguments}. |
+| <code><a href="#@cdktf/provider-aws.glueTrigger.GlueTriggerActions.property.crawlerName">CrawlerName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_trigger#crawler_name GlueTrigger#crawler_name}. |
+| <code><a href="#@cdktf/provider-aws.glueTrigger.GlueTriggerActions.property.jobName">JobName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_trigger#job_name GlueTrigger#job_name}. |
 | <code><a href="#@cdktf/provider-aws.glueTrigger.GlueTriggerActions.property.notificationProperty">NotificationProperty</a></code> | <code><a href="#@cdktf/provider-aws.glueTrigger.GlueTriggerActionsNotificationProperty">GlueTriggerActionsNotificationProperty</a></code> | notification_property block. |
-| <code><a href="#@cdktf/provider-aws.glueTrigger.GlueTriggerActions.property.securityConfiguration">SecurityConfiguration</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_trigger#security_configuration GlueTrigger#security_configuration}. |
-| <code><a href="#@cdktf/provider-aws.glueTrigger.GlueTriggerActions.property.timeout">Timeout</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_trigger#timeout GlueTrigger#timeout}. |
+| <code><a href="#@cdktf/provider-aws.glueTrigger.GlueTriggerActions.property.securityConfiguration">SecurityConfiguration</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_trigger#security_configuration GlueTrigger#security_configuration}. |
+| <code><a href="#@cdktf/provider-aws.glueTrigger.GlueTriggerActions.property.timeout">Timeout</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_trigger#timeout GlueTrigger#timeout}. |
 
 ---
 
@@ -1159,7 +1188,7 @@ Arguments *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_trigger#arguments GlueTrigger#arguments}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_trigger#arguments GlueTrigger#arguments}.
 
 ---
 
@@ -1171,7 +1200,7 @@ CrawlerName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_trigger#crawler_name GlueTrigger#crawler_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_trigger#crawler_name GlueTrigger#crawler_name}.
 
 ---
 
@@ -1183,7 +1212,7 @@ JobName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_trigger#job_name GlueTrigger#job_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_trigger#job_name GlueTrigger#job_name}.
 
 ---
 
@@ -1197,7 +1226,7 @@ NotificationProperty GlueTriggerActionsNotificationProperty
 
 notification_property block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_trigger#notification_property GlueTrigger#notification_property}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_trigger#notification_property GlueTrigger#notification_property}
 
 ---
 
@@ -1209,7 +1238,7 @@ SecurityConfiguration *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_trigger#security_configuration GlueTrigger#security_configuration}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_trigger#security_configuration GlueTrigger#security_configuration}.
 
 ---
 
@@ -1221,7 +1250,7 @@ Timeout *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_trigger#timeout GlueTrigger#timeout}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_trigger#timeout GlueTrigger#timeout}.
 
 ---
 
@@ -1230,7 +1259,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.glueTrigger.GlueTriggerActionsNotificationProperty.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/gluetrigger"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/gluetrigger"
 
 &gluetrigger.GlueTriggerActionsNotificationProperty {
 	NotifyDelayAfter: *f64,
@@ -1241,7 +1270,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/gluetrigger"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.glueTrigger.GlueTriggerActionsNotificationProperty.property.notifyDelayAfter">NotifyDelayAfter</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_trigger#notify_delay_after GlueTrigger#notify_delay_after}. |
+| <code><a href="#@cdktf/provider-aws.glueTrigger.GlueTriggerActionsNotificationProperty.property.notifyDelayAfter">NotifyDelayAfter</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_trigger#notify_delay_after GlueTrigger#notify_delay_after}. |
 
 ---
 
@@ -1253,7 +1282,7 @@ NotifyDelayAfter *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_trigger#notify_delay_after GlueTrigger#notify_delay_after}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_trigger#notify_delay_after GlueTrigger#notify_delay_after}.
 
 ---
 
@@ -1262,7 +1291,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.glueTrigger.GlueTriggerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/gluetrigger"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/gluetrigger"
 
 &gluetrigger.GlueTriggerConfig {
 	Connection: interface{},
@@ -1279,12 +1308,13 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/gluetrigger"
 	Enabled: interface{},
 	EventBatchingCondition: interface{},
 	Id: *string,
-	Predicate: github.com/cdktf/cdktf-provider-aws-go/aws/v20.glueTrigger.GlueTriggerPredicate,
+	Predicate: github.com/cdktf/cdktf-provider-aws-go/aws/v21.glueTrigger.GlueTriggerPredicate,
+	Region: *string,
 	Schedule: *string,
 	StartOnCreation: interface{},
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v20.glueTrigger.GlueTriggerTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v21.glueTrigger.GlueTriggerTimeouts,
 	WorkflowName: *string,
 }
 ```
@@ -1301,19 +1331,20 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/gluetrigger"
 | <code><a href="#@cdktf/provider-aws.glueTrigger.GlueTriggerConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.glueTrigger.GlueTriggerConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.glueTrigger.GlueTriggerConfig.property.actions">Actions</a></code> | <code>interface{}</code> | actions block. |
-| <code><a href="#@cdktf/provider-aws.glueTrigger.GlueTriggerConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_trigger#name GlueTrigger#name}. |
-| <code><a href="#@cdktf/provider-aws.glueTrigger.GlueTriggerConfig.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_trigger#type GlueTrigger#type}. |
-| <code><a href="#@cdktf/provider-aws.glueTrigger.GlueTriggerConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_trigger#description GlueTrigger#description}. |
-| <code><a href="#@cdktf/provider-aws.glueTrigger.GlueTriggerConfig.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_trigger#enabled GlueTrigger#enabled}. |
+| <code><a href="#@cdktf/provider-aws.glueTrigger.GlueTriggerConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_trigger#name GlueTrigger#name}. |
+| <code><a href="#@cdktf/provider-aws.glueTrigger.GlueTriggerConfig.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_trigger#type GlueTrigger#type}. |
+| <code><a href="#@cdktf/provider-aws.glueTrigger.GlueTriggerConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_trigger#description GlueTrigger#description}. |
+| <code><a href="#@cdktf/provider-aws.glueTrigger.GlueTriggerConfig.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_trigger#enabled GlueTrigger#enabled}. |
 | <code><a href="#@cdktf/provider-aws.glueTrigger.GlueTriggerConfig.property.eventBatchingCondition">EventBatchingCondition</a></code> | <code>interface{}</code> | event_batching_condition block. |
-| <code><a href="#@cdktf/provider-aws.glueTrigger.GlueTriggerConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_trigger#id GlueTrigger#id}. |
+| <code><a href="#@cdktf/provider-aws.glueTrigger.GlueTriggerConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_trigger#id GlueTrigger#id}. |
 | <code><a href="#@cdktf/provider-aws.glueTrigger.GlueTriggerConfig.property.predicate">Predicate</a></code> | <code><a href="#@cdktf/provider-aws.glueTrigger.GlueTriggerPredicate">GlueTriggerPredicate</a></code> | predicate block. |
-| <code><a href="#@cdktf/provider-aws.glueTrigger.GlueTriggerConfig.property.schedule">Schedule</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_trigger#schedule GlueTrigger#schedule}. |
-| <code><a href="#@cdktf/provider-aws.glueTrigger.GlueTriggerConfig.property.startOnCreation">StartOnCreation</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_trigger#start_on_creation GlueTrigger#start_on_creation}. |
-| <code><a href="#@cdktf/provider-aws.glueTrigger.GlueTriggerConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_trigger#tags GlueTrigger#tags}. |
-| <code><a href="#@cdktf/provider-aws.glueTrigger.GlueTriggerConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_trigger#tags_all GlueTrigger#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.glueTrigger.GlueTriggerConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
+| <code><a href="#@cdktf/provider-aws.glueTrigger.GlueTriggerConfig.property.schedule">Schedule</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_trigger#schedule GlueTrigger#schedule}. |
+| <code><a href="#@cdktf/provider-aws.glueTrigger.GlueTriggerConfig.property.startOnCreation">StartOnCreation</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_trigger#start_on_creation GlueTrigger#start_on_creation}. |
+| <code><a href="#@cdktf/provider-aws.glueTrigger.GlueTriggerConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_trigger#tags GlueTrigger#tags}. |
+| <code><a href="#@cdktf/provider-aws.glueTrigger.GlueTriggerConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_trigger#tags_all GlueTrigger#tags_all}. |
 | <code><a href="#@cdktf/provider-aws.glueTrigger.GlueTriggerConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-aws.glueTrigger.GlueTriggerTimeouts">GlueTriggerTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktf/provider-aws.glueTrigger.GlueTriggerConfig.property.workflowName">WorkflowName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_trigger#workflow_name GlueTrigger#workflow_name}. |
+| <code><a href="#@cdktf/provider-aws.glueTrigger.GlueTriggerConfig.property.workflowName">WorkflowName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_trigger#workflow_name GlueTrigger#workflow_name}. |
 
 ---
 
@@ -1397,7 +1428,7 @@ Actions interface{}
 
 actions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_trigger#actions GlueTrigger#actions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_trigger#actions GlueTrigger#actions}
 
 ---
 
@@ -1409,7 +1440,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_trigger#name GlueTrigger#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_trigger#name GlueTrigger#name}.
 
 ---
 
@@ -1421,7 +1452,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_trigger#type GlueTrigger#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_trigger#type GlueTrigger#type}.
 
 ---
 
@@ -1433,7 +1464,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_trigger#description GlueTrigger#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_trigger#description GlueTrigger#description}.
 
 ---
 
@@ -1445,7 +1476,7 @@ Enabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_trigger#enabled GlueTrigger#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_trigger#enabled GlueTrigger#enabled}.
 
 ---
 
@@ -1459,7 +1490,7 @@ EventBatchingCondition interface{}
 
 event_batching_condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_trigger#event_batching_condition GlueTrigger#event_batching_condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_trigger#event_batching_condition GlueTrigger#event_batching_condition}
 
 ---
 
@@ -1471,7 +1502,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_trigger#id GlueTrigger#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_trigger#id GlueTrigger#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1488,7 +1519,21 @@ Predicate GlueTriggerPredicate
 
 predicate block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_trigger#predicate GlueTrigger#predicate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_trigger#predicate GlueTrigger#predicate}
+
+---
+
+##### `Region`<sup>Optional</sup> <a name="Region" id="@cdktf/provider-aws.glueTrigger.GlueTriggerConfig.property.region"></a>
+
+```go
+Region *string
+```
+
+- *Type:* *string
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_trigger#region GlueTrigger#region}
 
 ---
 
@@ -1500,7 +1545,7 @@ Schedule *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_trigger#schedule GlueTrigger#schedule}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_trigger#schedule GlueTrigger#schedule}.
 
 ---
 
@@ -1512,7 +1557,7 @@ StartOnCreation interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_trigger#start_on_creation GlueTrigger#start_on_creation}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_trigger#start_on_creation GlueTrigger#start_on_creation}.
 
 ---
 
@@ -1524,7 +1569,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_trigger#tags GlueTrigger#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_trigger#tags GlueTrigger#tags}.
 
 ---
 
@@ -1536,7 +1581,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_trigger#tags_all GlueTrigger#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_trigger#tags_all GlueTrigger#tags_all}.
 
 ---
 
@@ -1550,7 +1595,7 @@ Timeouts GlueTriggerTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_trigger#timeouts GlueTrigger#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_trigger#timeouts GlueTrigger#timeouts}
 
 ---
 
@@ -1562,7 +1607,7 @@ WorkflowName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_trigger#workflow_name GlueTrigger#workflow_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_trigger#workflow_name GlueTrigger#workflow_name}.
 
 ---
 
@@ -1571,7 +1616,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.glueTrigger.GlueTriggerEventBatchingCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/gluetrigger"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/gluetrigger"
 
 &gluetrigger.GlueTriggerEventBatchingCondition {
 	BatchSize: *f64,
@@ -1583,8 +1628,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/gluetrigger"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.glueTrigger.GlueTriggerEventBatchingCondition.property.batchSize">BatchSize</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_trigger#batch_size GlueTrigger#batch_size}. |
-| <code><a href="#@cdktf/provider-aws.glueTrigger.GlueTriggerEventBatchingCondition.property.batchWindow">BatchWindow</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_trigger#batch_window GlueTrigger#batch_window}. |
+| <code><a href="#@cdktf/provider-aws.glueTrigger.GlueTriggerEventBatchingCondition.property.batchSize">BatchSize</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_trigger#batch_size GlueTrigger#batch_size}. |
+| <code><a href="#@cdktf/provider-aws.glueTrigger.GlueTriggerEventBatchingCondition.property.batchWindow">BatchWindow</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_trigger#batch_window GlueTrigger#batch_window}. |
 
 ---
 
@@ -1596,7 +1641,7 @@ BatchSize *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_trigger#batch_size GlueTrigger#batch_size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_trigger#batch_size GlueTrigger#batch_size}.
 
 ---
 
@@ -1608,7 +1653,7 @@ BatchWindow *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_trigger#batch_window GlueTrigger#batch_window}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_trigger#batch_window GlueTrigger#batch_window}.
 
 ---
 
@@ -1617,7 +1662,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.glueTrigger.GlueTriggerPredicate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/gluetrigger"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/gluetrigger"
 
 &gluetrigger.GlueTriggerPredicate {
 	Conditions: interface{},
@@ -1630,7 +1675,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/gluetrigger"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.glueTrigger.GlueTriggerPredicate.property.conditions">Conditions</a></code> | <code>interface{}</code> | conditions block. |
-| <code><a href="#@cdktf/provider-aws.glueTrigger.GlueTriggerPredicate.property.logical">Logical</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_trigger#logical GlueTrigger#logical}. |
+| <code><a href="#@cdktf/provider-aws.glueTrigger.GlueTriggerPredicate.property.logical">Logical</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_trigger#logical GlueTrigger#logical}. |
 
 ---
 
@@ -1644,7 +1689,7 @@ Conditions interface{}
 
 conditions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_trigger#conditions GlueTrigger#conditions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_trigger#conditions GlueTrigger#conditions}
 
 ---
 
@@ -1656,7 +1701,7 @@ Logical *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_trigger#logical GlueTrigger#logical}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_trigger#logical GlueTrigger#logical}.
 
 ---
 
@@ -1665,7 +1710,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.glueTrigger.GlueTriggerPredicateConditions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/gluetrigger"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/gluetrigger"
 
 &gluetrigger.GlueTriggerPredicateConditions {
 	CrawlerName: *string,
@@ -1680,11 +1725,11 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/gluetrigger"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.glueTrigger.GlueTriggerPredicateConditions.property.crawlerName">CrawlerName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_trigger#crawler_name GlueTrigger#crawler_name}. |
-| <code><a href="#@cdktf/provider-aws.glueTrigger.GlueTriggerPredicateConditions.property.crawlState">CrawlState</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_trigger#crawl_state GlueTrigger#crawl_state}. |
-| <code><a href="#@cdktf/provider-aws.glueTrigger.GlueTriggerPredicateConditions.property.jobName">JobName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_trigger#job_name GlueTrigger#job_name}. |
-| <code><a href="#@cdktf/provider-aws.glueTrigger.GlueTriggerPredicateConditions.property.logicalOperator">LogicalOperator</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_trigger#logical_operator GlueTrigger#logical_operator}. |
-| <code><a href="#@cdktf/provider-aws.glueTrigger.GlueTriggerPredicateConditions.property.state">State</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_trigger#state GlueTrigger#state}. |
+| <code><a href="#@cdktf/provider-aws.glueTrigger.GlueTriggerPredicateConditions.property.crawlerName">CrawlerName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_trigger#crawler_name GlueTrigger#crawler_name}. |
+| <code><a href="#@cdktf/provider-aws.glueTrigger.GlueTriggerPredicateConditions.property.crawlState">CrawlState</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_trigger#crawl_state GlueTrigger#crawl_state}. |
+| <code><a href="#@cdktf/provider-aws.glueTrigger.GlueTriggerPredicateConditions.property.jobName">JobName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_trigger#job_name GlueTrigger#job_name}. |
+| <code><a href="#@cdktf/provider-aws.glueTrigger.GlueTriggerPredicateConditions.property.logicalOperator">LogicalOperator</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_trigger#logical_operator GlueTrigger#logical_operator}. |
+| <code><a href="#@cdktf/provider-aws.glueTrigger.GlueTriggerPredicateConditions.property.state">State</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_trigger#state GlueTrigger#state}. |
 
 ---
 
@@ -1696,7 +1741,7 @@ CrawlerName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_trigger#crawler_name GlueTrigger#crawler_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_trigger#crawler_name GlueTrigger#crawler_name}.
 
 ---
 
@@ -1708,7 +1753,7 @@ CrawlState *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_trigger#crawl_state GlueTrigger#crawl_state}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_trigger#crawl_state GlueTrigger#crawl_state}.
 
 ---
 
@@ -1720,7 +1765,7 @@ JobName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_trigger#job_name GlueTrigger#job_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_trigger#job_name GlueTrigger#job_name}.
 
 ---
 
@@ -1732,7 +1777,7 @@ LogicalOperator *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_trigger#logical_operator GlueTrigger#logical_operator}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_trigger#logical_operator GlueTrigger#logical_operator}.
 
 ---
 
@@ -1744,7 +1789,7 @@ State *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_trigger#state GlueTrigger#state}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_trigger#state GlueTrigger#state}.
 
 ---
 
@@ -1753,7 +1798,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.glueTrigger.GlueTriggerTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/gluetrigger"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/gluetrigger"
 
 &gluetrigger.GlueTriggerTimeouts {
 	Create: *string,
@@ -1766,9 +1811,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/gluetrigger"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.glueTrigger.GlueTriggerTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_trigger#create GlueTrigger#create}. |
-| <code><a href="#@cdktf/provider-aws.glueTrigger.GlueTriggerTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_trigger#delete GlueTrigger#delete}. |
-| <code><a href="#@cdktf/provider-aws.glueTrigger.GlueTriggerTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_trigger#update GlueTrigger#update}. |
+| <code><a href="#@cdktf/provider-aws.glueTrigger.GlueTriggerTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_trigger#create GlueTrigger#create}. |
+| <code><a href="#@cdktf/provider-aws.glueTrigger.GlueTriggerTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_trigger#delete GlueTrigger#delete}. |
+| <code><a href="#@cdktf/provider-aws.glueTrigger.GlueTriggerTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_trigger#update GlueTrigger#update}. |
 
 ---
 
@@ -1780,7 +1825,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_trigger#create GlueTrigger#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_trigger#create GlueTrigger#create}.
 
 ---
 
@@ -1792,7 +1837,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_trigger#delete GlueTrigger#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_trigger#delete GlueTrigger#delete}.
 
 ---
 
@@ -1804,7 +1849,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_trigger#update GlueTrigger#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_trigger#update GlueTrigger#update}.
 
 ---
 
@@ -1815,7 +1860,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.glueTrigger.GlueTriggerActionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/gluetrigger"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/gluetrigger"
 
 gluetrigger.NewGlueTriggerActionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GlueTriggerActionsList
 ```
@@ -1975,7 +2020,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.glueTrigger.GlueTriggerActionsNotificationPropertyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/gluetrigger"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/gluetrigger"
 
 gluetrigger.NewGlueTriggerActionsNotificationPropertyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GlueTriggerActionsNotificationPropertyOutputReference
 ```
@@ -2253,7 +2298,7 @@ func InternalValue() GlueTriggerActionsNotificationProperty
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.glueTrigger.GlueTriggerActionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/gluetrigger"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/gluetrigger"
 
 gluetrigger.NewGlueTriggerActionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GlueTriggerActionsOutputReference
 ```
@@ -2707,7 +2752,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.glueTrigger.GlueTriggerEventBatchingConditionList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/gluetrigger"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/gluetrigger"
 
 gluetrigger.NewGlueTriggerEventBatchingConditionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GlueTriggerEventBatchingConditionList
 ```
@@ -2867,7 +2912,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.glueTrigger.GlueTriggerEventBatchingConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/gluetrigger"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/gluetrigger"
 
 gluetrigger.NewGlueTriggerEventBatchingConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GlueTriggerEventBatchingConditionOutputReference
 ```
@@ -3185,7 +3230,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.glueTrigger.GlueTriggerPredicateConditionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/gluetrigger"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/gluetrigger"
 
 gluetrigger.NewGlueTriggerPredicateConditionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GlueTriggerPredicateConditionsList
 ```
@@ -3345,7 +3390,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.glueTrigger.GlueTriggerPredicateConditionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/gluetrigger"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/gluetrigger"
 
 gluetrigger.NewGlueTriggerPredicateConditionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GlueTriggerPredicateConditionsOutputReference
 ```
@@ -3757,7 +3802,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.glueTrigger.GlueTriggerPredicateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/gluetrigger"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/gluetrigger"
 
 gluetrigger.NewGlueTriggerPredicateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GlueTriggerPredicateOutputReference
 ```
@@ -4070,7 +4115,7 @@ func InternalValue() GlueTriggerPredicate
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.glueTrigger.GlueTriggerTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/gluetrigger"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/gluetrigger"
 
 gluetrigger.NewGlueTriggerTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GlueTriggerTimeoutsOutputReference
 ```

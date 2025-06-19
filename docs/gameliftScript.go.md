@@ -4,12 +4,12 @@
 
 ### GameliftScript <a name="GameliftScript" id="@cdktf/provider-aws.gameliftScript.GameliftScript"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/gamelift_script aws_gamelift_script}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/gamelift_script aws_gamelift_script}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.gameliftScript.GameliftScript.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/gameliftscript"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/gameliftscript"
 
 gameliftscript.NewGameliftScript(scope Construct, id *string, config GameliftScriptConfig) GameliftScript
 ```
@@ -75,6 +75,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.gameliftScript.GameliftScript.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-aws.gameliftScript.GameliftScript.putStorageLocation">PutStorageLocation</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.gameliftScript.GameliftScript.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.gameliftScript.GameliftScript.resetRegion">ResetRegion</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.gameliftScript.GameliftScript.resetStorageLocation">ResetStorageLocation</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.gameliftScript.GameliftScript.resetTags">ResetTags</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.gameliftScript.GameliftScript.resetTagsAll">ResetTagsAll</a></code> | *No description.* |
@@ -389,6 +390,12 @@ func PutStorageLocation(value GameliftScriptStorageLocation)
 func ResetId()
 ```
 
+##### `ResetRegion` <a name="ResetRegion" id="@cdktf/provider-aws.gameliftScript.GameliftScript.resetRegion"></a>
+
+```go
+func ResetRegion()
+```
+
 ##### `ResetStorageLocation` <a name="ResetStorageLocation" id="@cdktf/provider-aws.gameliftScript.GameliftScript.resetStorageLocation"></a>
 
 ```go
@@ -433,7 +440,7 @@ func ResetZipFile()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.gameliftScript.GameliftScript.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/gameliftscript"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/gameliftscript"
 
 gameliftscript.GameliftScript_IsConstruct(x interface{}) *bool
 ```
@@ -465,7 +472,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.gameliftScript.GameliftScript.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/gameliftscript"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/gameliftscript"
 
 gameliftscript.GameliftScript_IsTerraformElement(x interface{}) *bool
 ```
@@ -479,7 +486,7 @@ gameliftscript.GameliftScript_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.gameliftScript.GameliftScript.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/gameliftscript"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/gameliftscript"
 
 gameliftscript.GameliftScript_IsTerraformResource(x interface{}) *bool
 ```
@@ -493,7 +500,7 @@ gameliftscript.GameliftScript_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.gameliftScript.GameliftScript.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/gameliftscript"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/gameliftscript"
 
 gameliftscript.GameliftScript_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -522,7 +529,7 @@ The construct id used in the generated config for the GameliftScript to import.
 
 The id of the existing GameliftScript that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/gamelift_script#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/gamelift_script#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -556,6 +563,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.gameliftScript.GameliftScript.property.storageLocation">StorageLocation</a></code> | <code><a href="#@cdktf/provider-aws.gameliftScript.GameliftScriptStorageLocationOutputReference">GameliftScriptStorageLocationOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.gameliftScript.GameliftScript.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.gameliftScript.GameliftScript.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.gameliftScript.GameliftScript.property.regionInput">RegionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.gameliftScript.GameliftScript.property.storageLocationInput">StorageLocationInput</a></code> | <code><a href="#@cdktf/provider-aws.gameliftScript.GameliftScriptStorageLocation">GameliftScriptStorageLocation</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.gameliftScript.GameliftScript.property.tagsAllInput">TagsAllInput</a></code> | <code>*map[string]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.gameliftScript.GameliftScript.property.tagsInput">TagsInput</a></code> | <code>*map[string]*string</code> | *No description.* |
@@ -563,6 +571,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.gameliftScript.GameliftScript.property.zipFileInput">ZipFileInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.gameliftScript.GameliftScript.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.gameliftScript.GameliftScript.property.name">Name</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.gameliftScript.GameliftScript.property.region">Region</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.gameliftScript.GameliftScript.property.tags">Tags</a></code> | <code>*map[string]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.gameliftScript.GameliftScript.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.gameliftScript.GameliftScript.property.version">Version</a></code> | <code>*string</code> | *No description.* |
@@ -752,6 +761,16 @@ func NameInput() *string
 
 ---
 
+##### `RegionInput`<sup>Optional</sup> <a name="RegionInput" id="@cdktf/provider-aws.gameliftScript.GameliftScript.property.regionInput"></a>
+
+```go
+func RegionInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `StorageLocationInput`<sup>Optional</sup> <a name="StorageLocationInput" id="@cdktf/provider-aws.gameliftScript.GameliftScript.property.storageLocationInput"></a>
 
 ```go
@@ -816,6 +835,16 @@ func Id() *string
 
 ```go
 func Name() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Region`<sup>Required</sup> <a name="Region" id="@cdktf/provider-aws.gameliftScript.GameliftScript.property.region"></a>
+
+```go
+func Region() *string
 ```
 
 - *Type:* *string
@@ -887,7 +916,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.gameliftScript.GameliftScriptConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/gameliftscript"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/gameliftscript"
 
 &gameliftscript.GameliftScriptConfig {
 	Connection: interface{},
@@ -899,7 +928,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/gameliftscript"
 	Provisioners: *[]interface{},
 	Name: *string,
 	Id: *string,
-	StorageLocation: github.com/cdktf/cdktf-provider-aws-go/aws/v20.gameliftScript.GameliftScriptStorageLocation,
+	Region: *string,
+	StorageLocation: github.com/cdktf/cdktf-provider-aws-go/aws/v21.gameliftScript.GameliftScriptStorageLocation,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
 	Version: *string,
@@ -918,13 +948,14 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/gameliftscript"
 | <code><a href="#@cdktf/provider-aws.gameliftScript.GameliftScriptConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.gameliftScript.GameliftScriptConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.gameliftScript.GameliftScriptConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.gameliftScript.GameliftScriptConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/gamelift_script#name GameliftScript#name}. |
-| <code><a href="#@cdktf/provider-aws.gameliftScript.GameliftScriptConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/gamelift_script#id GameliftScript#id}. |
+| <code><a href="#@cdktf/provider-aws.gameliftScript.GameliftScriptConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/gamelift_script#name GameliftScript#name}. |
+| <code><a href="#@cdktf/provider-aws.gameliftScript.GameliftScriptConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/gamelift_script#id GameliftScript#id}. |
+| <code><a href="#@cdktf/provider-aws.gameliftScript.GameliftScriptConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktf/provider-aws.gameliftScript.GameliftScriptConfig.property.storageLocation">StorageLocation</a></code> | <code><a href="#@cdktf/provider-aws.gameliftScript.GameliftScriptStorageLocation">GameliftScriptStorageLocation</a></code> | storage_location block. |
-| <code><a href="#@cdktf/provider-aws.gameliftScript.GameliftScriptConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/gamelift_script#tags GameliftScript#tags}. |
-| <code><a href="#@cdktf/provider-aws.gameliftScript.GameliftScriptConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/gamelift_script#tags_all GameliftScript#tags_all}. |
-| <code><a href="#@cdktf/provider-aws.gameliftScript.GameliftScriptConfig.property.version">Version</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/gamelift_script#version GameliftScript#version}. |
-| <code><a href="#@cdktf/provider-aws.gameliftScript.GameliftScriptConfig.property.zipFile">ZipFile</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/gamelift_script#zip_file GameliftScript#zip_file}. |
+| <code><a href="#@cdktf/provider-aws.gameliftScript.GameliftScriptConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/gamelift_script#tags GameliftScript#tags}. |
+| <code><a href="#@cdktf/provider-aws.gameliftScript.GameliftScriptConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/gamelift_script#tags_all GameliftScript#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.gameliftScript.GameliftScriptConfig.property.version">Version</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/gamelift_script#version GameliftScript#version}. |
+| <code><a href="#@cdktf/provider-aws.gameliftScript.GameliftScriptConfig.property.zipFile">ZipFile</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/gamelift_script#zip_file GameliftScript#zip_file}. |
 
 ---
 
@@ -1006,7 +1037,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/gamelift_script#name GameliftScript#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/gamelift_script#name GameliftScript#name}.
 
 ---
 
@@ -1018,10 +1049,24 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/gamelift_script#id GameliftScript#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/gamelift_script#id GameliftScript#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `Region`<sup>Optional</sup> <a name="Region" id="@cdktf/provider-aws.gameliftScript.GameliftScriptConfig.property.region"></a>
+
+```go
+Region *string
+```
+
+- *Type:* *string
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/gamelift_script#region GameliftScript#region}
 
 ---
 
@@ -1035,7 +1080,7 @@ StorageLocation GameliftScriptStorageLocation
 
 storage_location block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/gamelift_script#storage_location GameliftScript#storage_location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/gamelift_script#storage_location GameliftScript#storage_location}
 
 ---
 
@@ -1047,7 +1092,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/gamelift_script#tags GameliftScript#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/gamelift_script#tags GameliftScript#tags}.
 
 ---
 
@@ -1059,7 +1104,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/gamelift_script#tags_all GameliftScript#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/gamelift_script#tags_all GameliftScript#tags_all}.
 
 ---
 
@@ -1071,7 +1116,7 @@ Version *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/gamelift_script#version GameliftScript#version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/gamelift_script#version GameliftScript#version}.
 
 ---
 
@@ -1083,7 +1128,7 @@ ZipFile *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/gamelift_script#zip_file GameliftScript#zip_file}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/gamelift_script#zip_file GameliftScript#zip_file}.
 
 ---
 
@@ -1092,7 +1137,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.gameliftScript.GameliftScriptStorageLocation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/gameliftscript"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/gameliftscript"
 
 &gameliftscript.GameliftScriptStorageLocation {
 	Bucket: *string,
@@ -1106,10 +1151,10 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/gameliftscript"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.gameliftScript.GameliftScriptStorageLocation.property.bucket">Bucket</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/gamelift_script#bucket GameliftScript#bucket}. |
-| <code><a href="#@cdktf/provider-aws.gameliftScript.GameliftScriptStorageLocation.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/gamelift_script#key GameliftScript#key}. |
-| <code><a href="#@cdktf/provider-aws.gameliftScript.GameliftScriptStorageLocation.property.roleArn">RoleArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/gamelift_script#role_arn GameliftScript#role_arn}. |
-| <code><a href="#@cdktf/provider-aws.gameliftScript.GameliftScriptStorageLocation.property.objectVersion">ObjectVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/gamelift_script#object_version GameliftScript#object_version}. |
+| <code><a href="#@cdktf/provider-aws.gameliftScript.GameliftScriptStorageLocation.property.bucket">Bucket</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/gamelift_script#bucket GameliftScript#bucket}. |
+| <code><a href="#@cdktf/provider-aws.gameliftScript.GameliftScriptStorageLocation.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/gamelift_script#key GameliftScript#key}. |
+| <code><a href="#@cdktf/provider-aws.gameliftScript.GameliftScriptStorageLocation.property.roleArn">RoleArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/gamelift_script#role_arn GameliftScript#role_arn}. |
+| <code><a href="#@cdktf/provider-aws.gameliftScript.GameliftScriptStorageLocation.property.objectVersion">ObjectVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/gamelift_script#object_version GameliftScript#object_version}. |
 
 ---
 
@@ -1121,7 +1166,7 @@ Bucket *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/gamelift_script#bucket GameliftScript#bucket}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/gamelift_script#bucket GameliftScript#bucket}.
 
 ---
 
@@ -1133,7 +1178,7 @@ Key *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/gamelift_script#key GameliftScript#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/gamelift_script#key GameliftScript#key}.
 
 ---
 
@@ -1145,7 +1190,7 @@ RoleArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/gamelift_script#role_arn GameliftScript#role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/gamelift_script#role_arn GameliftScript#role_arn}.
 
 ---
 
@@ -1157,7 +1202,7 @@ ObjectVersion *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/gamelift_script#object_version GameliftScript#object_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/gamelift_script#object_version GameliftScript#object_version}.
 
 ---
 
@@ -1168,7 +1213,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.gameliftScript.GameliftScriptStorageLocationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/gameliftscript"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/gameliftscript"
 
 gameliftscript.NewGameliftScriptStorageLocationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GameliftScriptStorageLocationOutputReference
 ```

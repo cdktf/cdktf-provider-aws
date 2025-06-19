@@ -4,12 +4,12 @@
 
 ### AthenaDatabase <a name="AthenaDatabase" id="@cdktf/provider-aws.athenaDatabase.AthenaDatabase"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/athena_database aws_athena_database}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/athena_database aws_athena_database}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.athenaDatabase.AthenaDatabase.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/athenadatabase"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/athenadatabase"
 
 athenadatabase.NewAthenaDatabase(scope Construct, id *string, config AthenaDatabaseConfig) AthenaDatabase
 ```
@@ -83,6 +83,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.athenaDatabase.AthenaDatabase.resetForceDestroy">ResetForceDestroy</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.athenaDatabase.AthenaDatabase.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.athenaDatabase.AthenaDatabase.resetProperties">ResetProperties</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.athenaDatabase.AthenaDatabase.resetRegion">ResetRegion</a></code> | *No description.* |
 
 ---
 
@@ -446,6 +447,12 @@ func ResetId()
 func ResetProperties()
 ```
 
+##### `ResetRegion` <a name="ResetRegion" id="@cdktf/provider-aws.athenaDatabase.AthenaDatabase.resetRegion"></a>
+
+```go
+func ResetRegion()
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -460,7 +467,7 @@ func ResetProperties()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.athenaDatabase.AthenaDatabase.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/athenadatabase"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/athenadatabase"
 
 athenadatabase.AthenaDatabase_IsConstruct(x interface{}) *bool
 ```
@@ -492,7 +499,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.athenaDatabase.AthenaDatabase.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/athenadatabase"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/athenadatabase"
 
 athenadatabase.AthenaDatabase_IsTerraformElement(x interface{}) *bool
 ```
@@ -506,7 +513,7 @@ athenadatabase.AthenaDatabase_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.athenaDatabase.AthenaDatabase.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/athenadatabase"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/athenadatabase"
 
 athenadatabase.AthenaDatabase_IsTerraformResource(x interface{}) *bool
 ```
@@ -520,7 +527,7 @@ athenadatabase.AthenaDatabase_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.athenaDatabase.AthenaDatabase.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/athenadatabase"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/athenadatabase"
 
 athenadatabase.AthenaDatabase_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -549,7 +556,7 @@ The construct id used in the generated config for the AthenaDatabase to import.
 
 The id of the existing AthenaDatabase that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/athena_database#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/athena_database#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -590,6 +597,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.athenaDatabase.AthenaDatabase.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.athenaDatabase.AthenaDatabase.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.athenaDatabase.AthenaDatabase.property.propertiesInput">PropertiesInput</a></code> | <code>*map[string]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.athenaDatabase.AthenaDatabase.property.regionInput">RegionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.athenaDatabase.AthenaDatabase.property.bucket">Bucket</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.athenaDatabase.AthenaDatabase.property.comment">Comment</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.athenaDatabase.AthenaDatabase.property.expectedBucketOwner">ExpectedBucketOwner</a></code> | <code>*string</code> | *No description.* |
@@ -597,6 +605,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.athenaDatabase.AthenaDatabase.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.athenaDatabase.AthenaDatabase.property.name">Name</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.athenaDatabase.AthenaDatabase.property.properties">Properties</a></code> | <code>*map[string]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.athenaDatabase.AthenaDatabase.property.region">Region</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
@@ -852,6 +861,16 @@ func PropertiesInput() *map[string]*string
 
 ---
 
+##### `RegionInput`<sup>Optional</sup> <a name="RegionInput" id="@cdktf/provider-aws.athenaDatabase.AthenaDatabase.property.regionInput"></a>
+
+```go
+func RegionInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `Bucket`<sup>Required</sup> <a name="Bucket" id="@cdktf/provider-aws.athenaDatabase.AthenaDatabase.property.bucket"></a>
 
 ```go
@@ -922,6 +941,16 @@ func Properties() *map[string]*string
 
 ---
 
+##### `Region`<sup>Required</sup> <a name="Region" id="@cdktf/provider-aws.athenaDatabase.AthenaDatabase.property.region"></a>
+
+```go
+func Region() *string
+```
+
+- *Type:* *string
+
+---
+
 #### Constants <a name="Constants" id="Constants"></a>
 
 | **Name** | **Type** | **Description** |
@@ -947,7 +976,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.athenaDatabase.AthenaDatabaseAclConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/athenadatabase"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/athenadatabase"
 
 &athenadatabase.AthenaDatabaseAclConfiguration {
 	S3AclOption: *string,
@@ -958,7 +987,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/athenadatabase"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.athenaDatabase.AthenaDatabaseAclConfiguration.property.s3AclOption">S3AclOption</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/athena_database#s3_acl_option AthenaDatabase#s3_acl_option}. |
+| <code><a href="#@cdktf/provider-aws.athenaDatabase.AthenaDatabaseAclConfiguration.property.s3AclOption">S3AclOption</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/athena_database#s3_acl_option AthenaDatabase#s3_acl_option}. |
 
 ---
 
@@ -970,7 +999,7 @@ S3AclOption *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/athena_database#s3_acl_option AthenaDatabase#s3_acl_option}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/athena_database#s3_acl_option AthenaDatabase#s3_acl_option}.
 
 ---
 
@@ -979,7 +1008,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.athenaDatabase.AthenaDatabaseConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/athenadatabase"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/athenadatabase"
 
 &athenadatabase.AthenaDatabaseConfig {
 	Connection: interface{},
@@ -990,14 +1019,15 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/athenadatabase"
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	Name: *string,
-	AclConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v20.athenaDatabase.AthenaDatabaseAclConfiguration,
+	AclConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v21.athenaDatabase.AthenaDatabaseAclConfiguration,
 	Bucket: *string,
 	Comment: *string,
-	EncryptionConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v20.athenaDatabase.AthenaDatabaseEncryptionConfiguration,
+	EncryptionConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v21.athenaDatabase.AthenaDatabaseEncryptionConfiguration,
 	ExpectedBucketOwner: *string,
 	ForceDestroy: interface{},
 	Id: *string,
 	Properties: *map[string]*string,
+	Region: *string,
 }
 ```
 
@@ -1012,15 +1042,16 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/athenadatabase"
 | <code><a href="#@cdktf/provider-aws.athenaDatabase.AthenaDatabaseConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.athenaDatabase.AthenaDatabaseConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.athenaDatabase.AthenaDatabaseConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.athenaDatabase.AthenaDatabaseConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/athena_database#name AthenaDatabase#name}. |
+| <code><a href="#@cdktf/provider-aws.athenaDatabase.AthenaDatabaseConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/athena_database#name AthenaDatabase#name}. |
 | <code><a href="#@cdktf/provider-aws.athenaDatabase.AthenaDatabaseConfig.property.aclConfiguration">AclConfiguration</a></code> | <code><a href="#@cdktf/provider-aws.athenaDatabase.AthenaDatabaseAclConfiguration">AthenaDatabaseAclConfiguration</a></code> | acl_configuration block. |
-| <code><a href="#@cdktf/provider-aws.athenaDatabase.AthenaDatabaseConfig.property.bucket">Bucket</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/athena_database#bucket AthenaDatabase#bucket}. |
-| <code><a href="#@cdktf/provider-aws.athenaDatabase.AthenaDatabaseConfig.property.comment">Comment</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/athena_database#comment AthenaDatabase#comment}. |
+| <code><a href="#@cdktf/provider-aws.athenaDatabase.AthenaDatabaseConfig.property.bucket">Bucket</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/athena_database#bucket AthenaDatabase#bucket}. |
+| <code><a href="#@cdktf/provider-aws.athenaDatabase.AthenaDatabaseConfig.property.comment">Comment</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/athena_database#comment AthenaDatabase#comment}. |
 | <code><a href="#@cdktf/provider-aws.athenaDatabase.AthenaDatabaseConfig.property.encryptionConfiguration">EncryptionConfiguration</a></code> | <code><a href="#@cdktf/provider-aws.athenaDatabase.AthenaDatabaseEncryptionConfiguration">AthenaDatabaseEncryptionConfiguration</a></code> | encryption_configuration block. |
-| <code><a href="#@cdktf/provider-aws.athenaDatabase.AthenaDatabaseConfig.property.expectedBucketOwner">ExpectedBucketOwner</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/athena_database#expected_bucket_owner AthenaDatabase#expected_bucket_owner}. |
-| <code><a href="#@cdktf/provider-aws.athenaDatabase.AthenaDatabaseConfig.property.forceDestroy">ForceDestroy</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/athena_database#force_destroy AthenaDatabase#force_destroy}. |
-| <code><a href="#@cdktf/provider-aws.athenaDatabase.AthenaDatabaseConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/athena_database#id AthenaDatabase#id}. |
-| <code><a href="#@cdktf/provider-aws.athenaDatabase.AthenaDatabaseConfig.property.properties">Properties</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/athena_database#properties AthenaDatabase#properties}. |
+| <code><a href="#@cdktf/provider-aws.athenaDatabase.AthenaDatabaseConfig.property.expectedBucketOwner">ExpectedBucketOwner</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/athena_database#expected_bucket_owner AthenaDatabase#expected_bucket_owner}. |
+| <code><a href="#@cdktf/provider-aws.athenaDatabase.AthenaDatabaseConfig.property.forceDestroy">ForceDestroy</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/athena_database#force_destroy AthenaDatabase#force_destroy}. |
+| <code><a href="#@cdktf/provider-aws.athenaDatabase.AthenaDatabaseConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/athena_database#id AthenaDatabase#id}. |
+| <code><a href="#@cdktf/provider-aws.athenaDatabase.AthenaDatabaseConfig.property.properties">Properties</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/athena_database#properties AthenaDatabase#properties}. |
+| <code><a href="#@cdktf/provider-aws.athenaDatabase.AthenaDatabaseConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
 
@@ -1102,7 +1133,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/athena_database#name AthenaDatabase#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/athena_database#name AthenaDatabase#name}.
 
 ---
 
@@ -1116,7 +1147,7 @@ AclConfiguration AthenaDatabaseAclConfiguration
 
 acl_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/athena_database#acl_configuration AthenaDatabase#acl_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/athena_database#acl_configuration AthenaDatabase#acl_configuration}
 
 ---
 
@@ -1128,7 +1159,7 @@ Bucket *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/athena_database#bucket AthenaDatabase#bucket}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/athena_database#bucket AthenaDatabase#bucket}.
 
 ---
 
@@ -1140,7 +1171,7 @@ Comment *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/athena_database#comment AthenaDatabase#comment}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/athena_database#comment AthenaDatabase#comment}.
 
 ---
 
@@ -1154,7 +1185,7 @@ EncryptionConfiguration AthenaDatabaseEncryptionConfiguration
 
 encryption_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/athena_database#encryption_configuration AthenaDatabase#encryption_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/athena_database#encryption_configuration AthenaDatabase#encryption_configuration}
 
 ---
 
@@ -1166,7 +1197,7 @@ ExpectedBucketOwner *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/athena_database#expected_bucket_owner AthenaDatabase#expected_bucket_owner}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/athena_database#expected_bucket_owner AthenaDatabase#expected_bucket_owner}.
 
 ---
 
@@ -1178,7 +1209,7 @@ ForceDestroy interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/athena_database#force_destroy AthenaDatabase#force_destroy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/athena_database#force_destroy AthenaDatabase#force_destroy}.
 
 ---
 
@@ -1190,7 +1221,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/athena_database#id AthenaDatabase#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/athena_database#id AthenaDatabase#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1205,7 +1236,21 @@ Properties *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/athena_database#properties AthenaDatabase#properties}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/athena_database#properties AthenaDatabase#properties}.
+
+---
+
+##### `Region`<sup>Optional</sup> <a name="Region" id="@cdktf/provider-aws.athenaDatabase.AthenaDatabaseConfig.property.region"></a>
+
+```go
+Region *string
+```
+
+- *Type:* *string
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/athena_database#region AthenaDatabase#region}
 
 ---
 
@@ -1214,7 +1259,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.athenaDatabase.AthenaDatabaseEncryptionConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/athenadatabase"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/athenadatabase"
 
 &athenadatabase.AthenaDatabaseEncryptionConfiguration {
 	EncryptionOption: *string,
@@ -1226,8 +1271,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/athenadatabase"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.athenaDatabase.AthenaDatabaseEncryptionConfiguration.property.encryptionOption">EncryptionOption</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/athena_database#encryption_option AthenaDatabase#encryption_option}. |
-| <code><a href="#@cdktf/provider-aws.athenaDatabase.AthenaDatabaseEncryptionConfiguration.property.kmsKey">KmsKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/athena_database#kms_key AthenaDatabase#kms_key}. |
+| <code><a href="#@cdktf/provider-aws.athenaDatabase.AthenaDatabaseEncryptionConfiguration.property.encryptionOption">EncryptionOption</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/athena_database#encryption_option AthenaDatabase#encryption_option}. |
+| <code><a href="#@cdktf/provider-aws.athenaDatabase.AthenaDatabaseEncryptionConfiguration.property.kmsKey">KmsKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/athena_database#kms_key AthenaDatabase#kms_key}. |
 
 ---
 
@@ -1239,7 +1284,7 @@ EncryptionOption *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/athena_database#encryption_option AthenaDatabase#encryption_option}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/athena_database#encryption_option AthenaDatabase#encryption_option}.
 
 ---
 
@@ -1251,7 +1296,7 @@ KmsKey *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/athena_database#kms_key AthenaDatabase#kms_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/athena_database#kms_key AthenaDatabase#kms_key}.
 
 ---
 
@@ -1262,7 +1307,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.athenaDatabase.AthenaDatabaseAclConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/athenadatabase"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/athenadatabase"
 
 athenadatabase.NewAthenaDatabaseAclConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AthenaDatabaseAclConfigurationOutputReference
 ```
@@ -1533,7 +1578,7 @@ func InternalValue() AthenaDatabaseAclConfiguration
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.athenaDatabase.AthenaDatabaseEncryptionConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/athenadatabase"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/athenadatabase"
 
 athenadatabase.NewAthenaDatabaseEncryptionConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AthenaDatabaseEncryptionConfigurationOutputReference
 ```

@@ -4,12 +4,12 @@
 
 ### NeptunegraphGraph <a name="NeptunegraphGraph" id="@cdktf/provider-aws.neptunegraphGraph.NeptunegraphGraph"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/neptunegraph_graph aws_neptunegraph_graph}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/neptunegraph_graph aws_neptunegraph_graph}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.neptunegraphGraph.NeptunegraphGraph.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/neptunegraphgraph"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/neptunegraphgraph"
 
 neptunegraphgraph.NewNeptunegraphGraph(scope Construct, id *string, config NeptunegraphGraphConfig) NeptunegraphGraph
 ```
@@ -80,6 +80,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.neptunegraphGraph.NeptunegraphGraph.resetGraphNamePrefix">ResetGraphNamePrefix</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.neptunegraphGraph.NeptunegraphGraph.resetKmsKeyIdentifier">ResetKmsKeyIdentifier</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.neptunegraphGraph.NeptunegraphGraph.resetPublicConnectivity">ResetPublicConnectivity</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.neptunegraphGraph.NeptunegraphGraph.resetRegion">ResetRegion</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.neptunegraphGraph.NeptunegraphGraph.resetReplicaCount">ResetReplicaCount</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.neptunegraphGraph.NeptunegraphGraph.resetTags">ResetTags</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.neptunegraphGraph.NeptunegraphGraph.resetTimeouts">ResetTimeouts</a></code> | *No description.* |
@@ -429,6 +430,12 @@ func ResetKmsKeyIdentifier()
 func ResetPublicConnectivity()
 ```
 
+##### `ResetRegion` <a name="ResetRegion" id="@cdktf/provider-aws.neptunegraphGraph.NeptunegraphGraph.resetRegion"></a>
+
+```go
+func ResetRegion()
+```
+
 ##### `ResetReplicaCount` <a name="ResetReplicaCount" id="@cdktf/provider-aws.neptunegraphGraph.NeptunegraphGraph.resetReplicaCount"></a>
 
 ```go
@@ -467,7 +474,7 @@ func ResetVectorSearchConfiguration()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.neptunegraphGraph.NeptunegraphGraph.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/neptunegraphgraph"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/neptunegraphgraph"
 
 neptunegraphgraph.NeptunegraphGraph_IsConstruct(x interface{}) *bool
 ```
@@ -499,7 +506,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.neptunegraphGraph.NeptunegraphGraph.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/neptunegraphgraph"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/neptunegraphgraph"
 
 neptunegraphgraph.NeptunegraphGraph_IsTerraformElement(x interface{}) *bool
 ```
@@ -513,7 +520,7 @@ neptunegraphgraph.NeptunegraphGraph_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.neptunegraphGraph.NeptunegraphGraph.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/neptunegraphgraph"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/neptunegraphgraph"
 
 neptunegraphgraph.NeptunegraphGraph_IsTerraformResource(x interface{}) *bool
 ```
@@ -527,7 +534,7 @@ neptunegraphgraph.NeptunegraphGraph_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.neptunegraphGraph.NeptunegraphGraph.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/neptunegraphgraph"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/neptunegraphgraph"
 
 neptunegraphgraph.NeptunegraphGraph_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -556,7 +563,7 @@ The construct id used in the generated config for the NeptunegraphGraph to impor
 
 The id of the existing NeptunegraphGraph that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/neptunegraph_graph#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/neptunegraph_graph#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -598,6 +605,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.neptunegraphGraph.NeptunegraphGraph.property.kmsKeyIdentifierInput">KmsKeyIdentifierInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.neptunegraphGraph.NeptunegraphGraph.property.provisionedMemoryInput">ProvisionedMemoryInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.neptunegraphGraph.NeptunegraphGraph.property.publicConnectivityInput">PublicConnectivityInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.neptunegraphGraph.NeptunegraphGraph.property.regionInput">RegionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.neptunegraphGraph.NeptunegraphGraph.property.replicaCountInput">ReplicaCountInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.neptunegraphGraph.NeptunegraphGraph.property.tagsInput">TagsInput</a></code> | <code>*map[string]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.neptunegraphGraph.NeptunegraphGraph.property.timeoutsInput">TimeoutsInput</a></code> | <code>interface{}</code> | *No description.* |
@@ -608,6 +616,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.neptunegraphGraph.NeptunegraphGraph.property.kmsKeyIdentifier">KmsKeyIdentifier</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.neptunegraphGraph.NeptunegraphGraph.property.provisionedMemory">ProvisionedMemory</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.neptunegraphGraph.NeptunegraphGraph.property.publicConnectivity">PublicConnectivity</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.neptunegraphGraph.NeptunegraphGraph.property.region">Region</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.neptunegraphGraph.NeptunegraphGraph.property.replicaCount">ReplicaCount</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.neptunegraphGraph.NeptunegraphGraph.property.tags">Tags</a></code> | <code>*map[string]*string</code> | *No description.* |
 
@@ -875,6 +884,16 @@ func PublicConnectivityInput() interface{}
 
 ---
 
+##### `RegionInput`<sup>Optional</sup> <a name="RegionInput" id="@cdktf/provider-aws.neptunegraphGraph.NeptunegraphGraph.property.regionInput"></a>
+
+```go
+func RegionInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `ReplicaCountInput`<sup>Optional</sup> <a name="ReplicaCountInput" id="@cdktf/provider-aws.neptunegraphGraph.NeptunegraphGraph.property.replicaCountInput"></a>
 
 ```go
@@ -975,6 +994,16 @@ func PublicConnectivity() interface{}
 
 ---
 
+##### `Region`<sup>Required</sup> <a name="Region" id="@cdktf/provider-aws.neptunegraphGraph.NeptunegraphGraph.property.region"></a>
+
+```go
+func Region() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `ReplicaCount`<sup>Required</sup> <a name="ReplicaCount" id="@cdktf/provider-aws.neptunegraphGraph.NeptunegraphGraph.property.replicaCount"></a>
 
 ```go
@@ -1020,7 +1049,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.neptunegraphGraph.NeptunegraphGraphConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/neptunegraphgraph"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/neptunegraphgraph"
 
 &neptunegraphgraph.NeptunegraphGraphConfig {
 	Connection: interface{},
@@ -1036,9 +1065,10 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/neptunegraphgraph"
 	GraphNamePrefix: *string,
 	KmsKeyIdentifier: *string,
 	PublicConnectivity: interface{},
+	Region: *string,
 	ReplicaCount: *f64,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v20.neptunegraphGraph.NeptunegraphGraphTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v21.neptunegraphGraph.NeptunegraphGraphTimeouts,
 	VectorSearchConfiguration: interface{},
 }
 ```
@@ -1060,8 +1090,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/neptunegraphgraph"
 | <code><a href="#@cdktf/provider-aws.neptunegraphGraph.NeptunegraphGraphConfig.property.graphNamePrefix">GraphNamePrefix</a></code> | <code>*string</code> | Allows user to specify name prefix and have remainder of name automatically generated. |
 | <code><a href="#@cdktf/provider-aws.neptunegraphGraph.NeptunegraphGraphConfig.property.kmsKeyIdentifier">KmsKeyIdentifier</a></code> | <code>*string</code> | Specifies a KMS key to use to encrypt data in the new graph. |
 | <code><a href="#@cdktf/provider-aws.neptunegraphGraph.NeptunegraphGraphConfig.property.publicConnectivity">PublicConnectivity</a></code> | <code>interface{}</code> | Specifies whether or not the graph can be reachable over the internet. |
+| <code><a href="#@cdktf/provider-aws.neptunegraphGraph.NeptunegraphGraphConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktf/provider-aws.neptunegraphGraph.NeptunegraphGraphConfig.property.replicaCount">ReplicaCount</a></code> | <code>*f64</code> | The number of replicas in other AZs.  Value must be between 0 and 2. |
-| <code><a href="#@cdktf/provider-aws.neptunegraphGraph.NeptunegraphGraphConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/neptunegraph_graph#tags NeptunegraphGraph#tags}. |
+| <code><a href="#@cdktf/provider-aws.neptunegraphGraph.NeptunegraphGraphConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/neptunegraph_graph#tags NeptunegraphGraph#tags}. |
 | <code><a href="#@cdktf/provider-aws.neptunegraphGraph.NeptunegraphGraphConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-aws.neptunegraphGraph.NeptunegraphGraphTimeouts">NeptunegraphGraphTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktf/provider-aws.neptunegraphGraph.NeptunegraphGraphConfig.property.vectorSearchConfiguration">VectorSearchConfiguration</a></code> | <code>interface{}</code> | vector_search_configuration block. |
 
@@ -1147,7 +1178,7 @@ ProvisionedMemory *f64
 
 The provisioned memory-optimized Neptune Capacity Units (m-NCUs) to use for the graph.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/neptunegraph_graph#provisioned_memory NeptunegraphGraph#provisioned_memory}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/neptunegraph_graph#provisioned_memory NeptunegraphGraph#provisioned_memory}
 
 ---
 
@@ -1163,7 +1194,7 @@ A value that indicates whether the graph has deletion protection enabled.
 
 The graph can't be deleted when deletion protection is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/neptunegraph_graph#deletion_protection NeptunegraphGraph#deletion_protection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/neptunegraph_graph#deletion_protection NeptunegraphGraph#deletion_protection}
 
 ---
 
@@ -1183,7 +1214,7 @@ and its first character must be a letter. It cannot end with a hyphen or contain
 If you don't specify a graph name, a unique graph name is generated for you using the prefix graph-for,
 followed by a combination of Stack Name and a UUID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/neptunegraph_graph#graph_name NeptunegraphGraph#graph_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/neptunegraph_graph#graph_name NeptunegraphGraph#graph_name}
 
 ---
 
@@ -1197,7 +1228,7 @@ GraphNamePrefix *string
 
 Allows user to specify name prefix and have remainder of name automatically generated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/neptunegraph_graph#graph_name_prefix NeptunegraphGraph#graph_name_prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/neptunegraph_graph#graph_name_prefix NeptunegraphGraph#graph_name_prefix}
 
 ---
 
@@ -1213,7 +1244,7 @@ Specifies a KMS key to use to encrypt data in the new graph.
 
 Value must be ARN of KMS Key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/neptunegraph_graph#kms_key_identifier NeptunegraphGraph#kms_key_identifier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/neptunegraph_graph#kms_key_identifier NeptunegraphGraph#kms_key_identifier}
 
 ---
 
@@ -1233,7 +1264,21 @@ the public IP address from the internet. When the graph isn't publicly available
 to create a PrivateGraphEndpoint in a given VPC to ensure the DNS name resolves to a private
 IP address that is reachable from the VPC.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/neptunegraph_graph#public_connectivity NeptunegraphGraph#public_connectivity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/neptunegraph_graph#public_connectivity NeptunegraphGraph#public_connectivity}
+
+---
+
+##### `Region`<sup>Optional</sup> <a name="Region" id="@cdktf/provider-aws.neptunegraphGraph.NeptunegraphGraphConfig.property.region"></a>
+
+```go
+Region *string
+```
+
+- *Type:* *string
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/neptunegraph_graph#region NeptunegraphGraph#region}
 
 ---
 
@@ -1247,7 +1292,7 @@ ReplicaCount *f64
 
 The number of replicas in other AZs.  Value must be between 0 and 2.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/neptunegraph_graph#replica_count NeptunegraphGraph#replica_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/neptunegraph_graph#replica_count NeptunegraphGraph#replica_count}
 
 ---
 
@@ -1259,7 +1304,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/neptunegraph_graph#tags NeptunegraphGraph#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/neptunegraph_graph#tags NeptunegraphGraph#tags}.
 
 ---
 
@@ -1273,7 +1318,7 @@ Timeouts NeptunegraphGraphTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/neptunegraph_graph#timeouts NeptunegraphGraph#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/neptunegraph_graph#timeouts NeptunegraphGraph#timeouts}
 
 ---
 
@@ -1287,7 +1332,7 @@ VectorSearchConfiguration interface{}
 
 vector_search_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/neptunegraph_graph#vector_search_configuration NeptunegraphGraph#vector_search_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/neptunegraph_graph#vector_search_configuration NeptunegraphGraph#vector_search_configuration}
 
 ---
 
@@ -1296,7 +1341,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.neptunegraphGraph.NeptunegraphGraphTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/neptunegraphgraph"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/neptunegraphgraph"
 
 &neptunegraphgraph.NeptunegraphGraphTimeouts {
 	Create: *string,
@@ -1325,7 +1370,7 @@ Create *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/neptunegraph_graph#create NeptunegraphGraph#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/neptunegraph_graph#create NeptunegraphGraph#create}
 
 ---
 
@@ -1339,7 +1384,7 @@ Delete *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/neptunegraph_graph#delete NeptunegraphGraph#delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/neptunegraph_graph#delete NeptunegraphGraph#delete}
 
 ---
 
@@ -1353,7 +1398,7 @@ Update *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/neptunegraph_graph#update NeptunegraphGraph#update}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/neptunegraph_graph#update NeptunegraphGraph#update}
 
 ---
 
@@ -1362,7 +1407,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.neptunegraphGraph.NeptunegraphGraphVectorSearchConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/neptunegraphgraph"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/neptunegraphgraph"
 
 &neptunegraphgraph.NeptunegraphGraphVectorSearchConfiguration {
 	VectorSearchDimension: *f64,
@@ -1387,7 +1432,7 @@ VectorSearchDimension *f64
 
 Specifies the number of dimensions for vector embeddings.  Value must be between 1 and 65,535.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/neptunegraph_graph#vector_search_dimension NeptunegraphGraph#vector_search_dimension}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/neptunegraph_graph#vector_search_dimension NeptunegraphGraph#vector_search_dimension}
 
 ---
 
@@ -1398,7 +1443,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.neptunegraphGraph.NeptunegraphGraphTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/neptunegraphgraph"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/neptunegraphgraph"
 
 neptunegraphgraph.NewNeptunegraphGraphTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NeptunegraphGraphTimeoutsOutputReference
 ```
@@ -1734,7 +1779,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.neptunegraphGraph.NeptunegraphGraphVectorSearchConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/neptunegraphgraph"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/neptunegraphgraph"
 
 neptunegraphgraph.NewNeptunegraphGraphVectorSearchConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) NeptunegraphGraphVectorSearchConfigurationList
 ```
@@ -1894,7 +1939,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.neptunegraphGraph.NeptunegraphGraphVectorSearchConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/neptunegraphgraph"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/neptunegraphgraph"
 
 neptunegraphgraph.NewNeptunegraphGraphVectorSearchConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) NeptunegraphGraphVectorSearchConfigurationOutputReference
 ```

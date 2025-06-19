@@ -4,7 +4,7 @@
 
 ### CodestarconnectionsConnection <a name="CodestarconnectionsConnection" id="@cdktf/provider-aws.codestarconnectionsConnection.CodestarconnectionsConnection"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/codestarconnections_connection aws_codestarconnections_connection}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/codestarconnections_connection aws_codestarconnections_connection}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.codestarconnectionsConnection.CodestarconnectionsConnection.Initializer"></a>
 
@@ -27,6 +27,7 @@ CodestarconnectionsConnection.Builder.create(Construct scope, java.lang.String i
 //  .hostArn(java.lang.String)
 //  .id(java.lang.String)
 //  .providerType(java.lang.String)
+//  .region(java.lang.String)
 //  .tags(java.util.Map<java.lang.String, java.lang.String>)
 //  .tagsAll(java.util.Map<java.lang.String, java.lang.String>)
     .build();
@@ -43,12 +44,13 @@ CodestarconnectionsConnection.Builder.create(Construct scope, java.lang.String i
 | <code><a href="#@cdktf/provider-aws.codestarconnectionsConnection.CodestarconnectionsConnection.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.codestarconnectionsConnection.CodestarconnectionsConnection.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.codestarconnectionsConnection.CodestarconnectionsConnection.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.codestarconnectionsConnection.CodestarconnectionsConnection.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/codestarconnections_connection#name CodestarconnectionsConnection#name}. |
-| <code><a href="#@cdktf/provider-aws.codestarconnectionsConnection.CodestarconnectionsConnection.Initializer.parameter.hostArn">hostArn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/codestarconnections_connection#host_arn CodestarconnectionsConnection#host_arn}. |
-| <code><a href="#@cdktf/provider-aws.codestarconnectionsConnection.CodestarconnectionsConnection.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/codestarconnections_connection#id CodestarconnectionsConnection#id}. |
-| <code><a href="#@cdktf/provider-aws.codestarconnectionsConnection.CodestarconnectionsConnection.Initializer.parameter.providerType">providerType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/codestarconnections_connection#provider_type CodestarconnectionsConnection#provider_type}. |
-| <code><a href="#@cdktf/provider-aws.codestarconnectionsConnection.CodestarconnectionsConnection.Initializer.parameter.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/codestarconnections_connection#tags CodestarconnectionsConnection#tags}. |
-| <code><a href="#@cdktf/provider-aws.codestarconnectionsConnection.CodestarconnectionsConnection.Initializer.parameter.tagsAll">tagsAll</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/codestarconnections_connection#tags_all CodestarconnectionsConnection#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.codestarconnectionsConnection.CodestarconnectionsConnection.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/codestarconnections_connection#name CodestarconnectionsConnection#name}. |
+| <code><a href="#@cdktf/provider-aws.codestarconnectionsConnection.CodestarconnectionsConnection.Initializer.parameter.hostArn">hostArn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/codestarconnections_connection#host_arn CodestarconnectionsConnection#host_arn}. |
+| <code><a href="#@cdktf/provider-aws.codestarconnectionsConnection.CodestarconnectionsConnection.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/codestarconnections_connection#id CodestarconnectionsConnection#id}. |
+| <code><a href="#@cdktf/provider-aws.codestarconnectionsConnection.CodestarconnectionsConnection.Initializer.parameter.providerType">providerType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/codestarconnections_connection#provider_type CodestarconnectionsConnection#provider_type}. |
+| <code><a href="#@cdktf/provider-aws.codestarconnectionsConnection.CodestarconnectionsConnection.Initializer.parameter.region">region</a></code> | <code>java.lang.String</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
+| <code><a href="#@cdktf/provider-aws.codestarconnectionsConnection.CodestarconnectionsConnection.Initializer.parameter.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/codestarconnections_connection#tags CodestarconnectionsConnection#tags}. |
+| <code><a href="#@cdktf/provider-aws.codestarconnectionsConnection.CodestarconnectionsConnection.Initializer.parameter.tagsAll">tagsAll</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/codestarconnections_connection#tags_all CodestarconnectionsConnection#tags_all}. |
 
 ---
 
@@ -116,7 +118,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/codestarconnections_connection#name CodestarconnectionsConnection#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/codestarconnections_connection#name CodestarconnectionsConnection#name}.
 
 ---
 
@@ -124,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/codestarconnections_connection#host_arn CodestarconnectionsConnection#host_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/codestarconnections_connection#host_arn CodestarconnectionsConnection#host_arn}.
 
 ---
 
@@ -132,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/codestarconnections_connection#id CodestarconnectionsConnection#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/codestarconnections_connection#id CodestarconnectionsConnection#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -143,7 +145,17 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/codestarconnections_connection#provider_type CodestarconnectionsConnection#provider_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/codestarconnections_connection#provider_type CodestarconnectionsConnection#provider_type}.
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdktf/provider-aws.codestarconnectionsConnection.CodestarconnectionsConnection.Initializer.parameter.region"></a>
+
+- *Type:* java.lang.String
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/codestarconnections_connection#region CodestarconnectionsConnection#region}
 
 ---
 
@@ -151,7 +163,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/codestarconnections_connection#tags CodestarconnectionsConnection#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/codestarconnections_connection#tags CodestarconnectionsConnection#tags}.
 
 ---
 
@@ -159,7 +171,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/codestarconnections_connection#tags_all CodestarconnectionsConnection#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/codestarconnections_connection#tags_all CodestarconnectionsConnection#tags_all}.
 
 ---
 
@@ -193,6 +205,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktf/provider-aws.codestarconnectionsConnection.CodestarconnectionsConnection.resetHostArn">resetHostArn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.codestarconnectionsConnection.CodestarconnectionsConnection.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.codestarconnectionsConnection.CodestarconnectionsConnection.resetProviderType">resetProviderType</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.codestarconnectionsConnection.CodestarconnectionsConnection.resetRegion">resetRegion</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.codestarconnectionsConnection.CodestarconnectionsConnection.resetTags">resetTags</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.codestarconnectionsConnection.CodestarconnectionsConnection.resetTagsAll">resetTagsAll</a></code> | *No description.* |
 
@@ -506,6 +519,12 @@ public void resetId()
 public void resetProviderType()
 ```
 
+##### `resetRegion` <a name="resetRegion" id="@cdktf/provider-aws.codestarconnectionsConnection.CodestarconnectionsConnection.resetRegion"></a>
+
+```java
+public void resetRegion()
+```
+
 ##### `resetTags` <a name="resetTags" id="@cdktf/provider-aws.codestarconnectionsConnection.CodestarconnectionsConnection.resetTags"></a>
 
 ```java
@@ -621,7 +640,7 @@ The construct id used in the generated config for the CodestarconnectionsConnect
 
 The id of the existing CodestarconnectionsConnection that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/codestarconnections_connection#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/codestarconnections_connection#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -657,12 +676,14 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.codestarconnectionsConnection.CodestarconnectionsConnection.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.codestarconnectionsConnection.CodestarconnectionsConnection.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.codestarconnectionsConnection.CodestarconnectionsConnection.property.providerTypeInput">providerTypeInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.codestarconnectionsConnection.CodestarconnectionsConnection.property.regionInput">regionInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.codestarconnectionsConnection.CodestarconnectionsConnection.property.tagsAllInput">tagsAllInput</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.codestarconnectionsConnection.CodestarconnectionsConnection.property.tagsInput">tagsInput</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.codestarconnectionsConnection.CodestarconnectionsConnection.property.hostArn">hostArn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.codestarconnectionsConnection.CodestarconnectionsConnection.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.codestarconnectionsConnection.CodestarconnectionsConnection.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.codestarconnectionsConnection.CodestarconnectionsConnection.property.providerType">providerType</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.codestarconnectionsConnection.CodestarconnectionsConnection.property.region">region</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.codestarconnectionsConnection.CodestarconnectionsConnection.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.codestarconnectionsConnection.CodestarconnectionsConnection.property.tagsAll">tagsAll</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
 
@@ -870,6 +891,16 @@ public java.lang.String getProviderTypeInput();
 
 ---
 
+##### `regionInput`<sup>Optional</sup> <a name="regionInput" id="@cdktf/provider-aws.codestarconnectionsConnection.CodestarconnectionsConnection.property.regionInput"></a>
+
+```java
+public java.lang.String getRegionInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `tagsAllInput`<sup>Optional</sup> <a name="tagsAllInput" id="@cdktf/provider-aws.codestarconnectionsConnection.CodestarconnectionsConnection.property.tagsAllInput"></a>
 
 ```java
@@ -924,6 +955,16 @@ public java.lang.String getName();
 
 ```java
 public java.lang.String getProviderType();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `region`<sup>Required</sup> <a name="region" id="@cdktf/provider-aws.codestarconnectionsConnection.CodestarconnectionsConnection.property.region"></a>
+
+```java
+public java.lang.String getRegion();
 ```
 
 - *Type:* java.lang.String
@@ -993,6 +1034,7 @@ CodestarconnectionsConnectionConfig.builder()
 //  .hostArn(java.lang.String)
 //  .id(java.lang.String)
 //  .providerType(java.lang.String)
+//  .region(java.lang.String)
 //  .tags(java.util.Map<java.lang.String, java.lang.String>)
 //  .tagsAll(java.util.Map<java.lang.String, java.lang.String>)
     .build();
@@ -1009,12 +1051,13 @@ CodestarconnectionsConnectionConfig.builder()
 | <code><a href="#@cdktf/provider-aws.codestarconnectionsConnection.CodestarconnectionsConnectionConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.codestarconnectionsConnection.CodestarconnectionsConnectionConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.codestarconnectionsConnection.CodestarconnectionsConnectionConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.codestarconnectionsConnection.CodestarconnectionsConnectionConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/codestarconnections_connection#name CodestarconnectionsConnection#name}. |
-| <code><a href="#@cdktf/provider-aws.codestarconnectionsConnection.CodestarconnectionsConnectionConfig.property.hostArn">hostArn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/codestarconnections_connection#host_arn CodestarconnectionsConnection#host_arn}. |
-| <code><a href="#@cdktf/provider-aws.codestarconnectionsConnection.CodestarconnectionsConnectionConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/codestarconnections_connection#id CodestarconnectionsConnection#id}. |
-| <code><a href="#@cdktf/provider-aws.codestarconnectionsConnection.CodestarconnectionsConnectionConfig.property.providerType">providerType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/codestarconnections_connection#provider_type CodestarconnectionsConnection#provider_type}. |
-| <code><a href="#@cdktf/provider-aws.codestarconnectionsConnection.CodestarconnectionsConnectionConfig.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/codestarconnections_connection#tags CodestarconnectionsConnection#tags}. |
-| <code><a href="#@cdktf/provider-aws.codestarconnectionsConnection.CodestarconnectionsConnectionConfig.property.tagsAll">tagsAll</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/codestarconnections_connection#tags_all CodestarconnectionsConnection#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.codestarconnectionsConnection.CodestarconnectionsConnectionConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/codestarconnections_connection#name CodestarconnectionsConnection#name}. |
+| <code><a href="#@cdktf/provider-aws.codestarconnectionsConnection.CodestarconnectionsConnectionConfig.property.hostArn">hostArn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/codestarconnections_connection#host_arn CodestarconnectionsConnection#host_arn}. |
+| <code><a href="#@cdktf/provider-aws.codestarconnectionsConnection.CodestarconnectionsConnectionConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/codestarconnections_connection#id CodestarconnectionsConnection#id}. |
+| <code><a href="#@cdktf/provider-aws.codestarconnectionsConnection.CodestarconnectionsConnectionConfig.property.providerType">providerType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/codestarconnections_connection#provider_type CodestarconnectionsConnection#provider_type}. |
+| <code><a href="#@cdktf/provider-aws.codestarconnectionsConnection.CodestarconnectionsConnectionConfig.property.region">region</a></code> | <code>java.lang.String</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
+| <code><a href="#@cdktf/provider-aws.codestarconnectionsConnection.CodestarconnectionsConnectionConfig.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/codestarconnections_connection#tags CodestarconnectionsConnection#tags}. |
+| <code><a href="#@cdktf/provider-aws.codestarconnectionsConnection.CodestarconnectionsConnectionConfig.property.tagsAll">tagsAll</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/codestarconnections_connection#tags_all CodestarconnectionsConnection#tags_all}. |
 
 ---
 
@@ -1096,7 +1139,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/codestarconnections_connection#name CodestarconnectionsConnection#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/codestarconnections_connection#name CodestarconnectionsConnection#name}.
 
 ---
 
@@ -1108,7 +1151,7 @@ public java.lang.String getHostArn();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/codestarconnections_connection#host_arn CodestarconnectionsConnection#host_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/codestarconnections_connection#host_arn CodestarconnectionsConnection#host_arn}.
 
 ---
 
@@ -1120,7 +1163,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/codestarconnections_connection#id CodestarconnectionsConnection#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/codestarconnections_connection#id CodestarconnectionsConnection#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1135,7 +1178,21 @@ public java.lang.String getProviderType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/codestarconnections_connection#provider_type CodestarconnectionsConnection#provider_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/codestarconnections_connection#provider_type CodestarconnectionsConnection#provider_type}.
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdktf/provider-aws.codestarconnectionsConnection.CodestarconnectionsConnectionConfig.property.region"></a>
+
+```java
+public java.lang.String getRegion();
+```
+
+- *Type:* java.lang.String
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/codestarconnections_connection#region CodestarconnectionsConnection#region}
 
 ---
 
@@ -1147,7 +1204,7 @@ public java.util.Map<java.lang.String, java.lang.String> getTags();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/codestarconnections_connection#tags CodestarconnectionsConnection#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/codestarconnections_connection#tags CodestarconnectionsConnection#tags}.
 
 ---
 
@@ -1159,7 +1216,7 @@ public java.util.Map<java.lang.String, java.lang.String> getTagsAll();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/codestarconnections_connection#tags_all CodestarconnectionsConnection#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/codestarconnections_connection#tags_all CodestarconnectionsConnection#tags_all}.
 
 ---
 

@@ -4,12 +4,12 @@
 
 ### S3BucketInventory <a name="S3BucketInventory" id="@cdktf/provider-aws.s3BucketInventory.S3BucketInventory"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/s3_bucket_inventory aws_s3_bucket_inventory}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3_bucket_inventory aws_s3_bucket_inventory}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.s3BucketInventory.S3BucketInventory.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/s3bucketinventory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/s3bucketinventory"
 
 s3bucketinventory.NewS3BucketInventory(scope Construct, id *string, config S3BucketInventoryConfig) S3BucketInventory
 ```
@@ -80,6 +80,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.s3BucketInventory.S3BucketInventory.resetFilter">ResetFilter</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.s3BucketInventory.S3BucketInventory.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.s3BucketInventory.S3BucketInventory.resetOptionalFields">ResetOptionalFields</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.s3BucketInventory.S3BucketInventory.resetRegion">ResetRegion</a></code> | *No description.* |
 
 ---
 
@@ -431,6 +432,12 @@ func ResetId()
 func ResetOptionalFields()
 ```
 
+##### `ResetRegion` <a name="ResetRegion" id="@cdktf/provider-aws.s3BucketInventory.S3BucketInventory.resetRegion"></a>
+
+```go
+func ResetRegion()
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -445,7 +452,7 @@ func ResetOptionalFields()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.s3BucketInventory.S3BucketInventory.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/s3bucketinventory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/s3bucketinventory"
 
 s3bucketinventory.S3BucketInventory_IsConstruct(x interface{}) *bool
 ```
@@ -477,7 +484,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.s3BucketInventory.S3BucketInventory.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/s3bucketinventory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/s3bucketinventory"
 
 s3bucketinventory.S3BucketInventory_IsTerraformElement(x interface{}) *bool
 ```
@@ -491,7 +498,7 @@ s3bucketinventory.S3BucketInventory_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.s3BucketInventory.S3BucketInventory.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/s3bucketinventory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/s3bucketinventory"
 
 s3bucketinventory.S3BucketInventory_IsTerraformResource(x interface{}) *bool
 ```
@@ -505,7 +512,7 @@ s3bucketinventory.S3BucketInventory_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.s3BucketInventory.S3BucketInventory.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/s3bucketinventory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/s3bucketinventory"
 
 s3bucketinventory.S3BucketInventory_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -534,7 +541,7 @@ The construct id used in the generated config for the S3BucketInventory to impor
 
 The id of the existing S3BucketInventory that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/s3_bucket_inventory#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3_bucket_inventory#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -575,6 +582,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.s3BucketInventory.S3BucketInventory.property.includedObjectVersionsInput">IncludedObjectVersionsInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.s3BucketInventory.S3BucketInventory.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.s3BucketInventory.S3BucketInventory.property.optionalFieldsInput">OptionalFieldsInput</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.s3BucketInventory.S3BucketInventory.property.regionInput">RegionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.s3BucketInventory.S3BucketInventory.property.scheduleInput">ScheduleInput</a></code> | <code><a href="#@cdktf/provider-aws.s3BucketInventory.S3BucketInventorySchedule">S3BucketInventorySchedule</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.s3BucketInventory.S3BucketInventory.property.bucket">Bucket</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.s3BucketInventory.S3BucketInventory.property.enabled">Enabled</a></code> | <code>interface{}</code> | *No description.* |
@@ -582,6 +590,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.s3BucketInventory.S3BucketInventory.property.includedObjectVersions">IncludedObjectVersions</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.s3BucketInventory.S3BucketInventory.property.name">Name</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.s3BucketInventory.S3BucketInventory.property.optionalFields">OptionalFields</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.s3BucketInventory.S3BucketInventory.property.region">Region</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
@@ -837,6 +846,16 @@ func OptionalFieldsInput() *[]*string
 
 ---
 
+##### `RegionInput`<sup>Optional</sup> <a name="RegionInput" id="@cdktf/provider-aws.s3BucketInventory.S3BucketInventory.property.regionInput"></a>
+
+```go
+func RegionInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `ScheduleInput`<sup>Optional</sup> <a name="ScheduleInput" id="@cdktf/provider-aws.s3BucketInventory.S3BucketInventory.property.scheduleInput"></a>
 
 ```go
@@ -907,6 +926,16 @@ func OptionalFields() *[]*string
 
 ---
 
+##### `Region`<sup>Required</sup> <a name="Region" id="@cdktf/provider-aws.s3BucketInventory.S3BucketInventory.property.region"></a>
+
+```go
+func Region() *string
+```
+
+- *Type:* *string
+
+---
+
 #### Constants <a name="Constants" id="Constants"></a>
 
 | **Name** | **Type** | **Description** |
@@ -932,7 +961,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.s3BucketInventory.S3BucketInventoryConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/s3bucketinventory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/s3bucketinventory"
 
 &s3bucketinventory.S3BucketInventoryConfig {
 	Connection: interface{},
@@ -943,14 +972,15 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/s3bucketinventory"
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	Bucket: *string,
-	Destination: github.com/cdktf/cdktf-provider-aws-go/aws/v20.s3BucketInventory.S3BucketInventoryDestination,
+	Destination: github.com/cdktf/cdktf-provider-aws-go/aws/v21.s3BucketInventory.S3BucketInventoryDestination,
 	IncludedObjectVersions: *string,
 	Name: *string,
-	Schedule: github.com/cdktf/cdktf-provider-aws-go/aws/v20.s3BucketInventory.S3BucketInventorySchedule,
+	Schedule: github.com/cdktf/cdktf-provider-aws-go/aws/v21.s3BucketInventory.S3BucketInventorySchedule,
 	Enabled: interface{},
-	Filter: github.com/cdktf/cdktf-provider-aws-go/aws/v20.s3BucketInventory.S3BucketInventoryFilter,
+	Filter: github.com/cdktf/cdktf-provider-aws-go/aws/v21.s3BucketInventory.S3BucketInventoryFilter,
 	Id: *string,
 	OptionalFields: *[]*string,
+	Region: *string,
 }
 ```
 
@@ -965,15 +995,16 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/s3bucketinventory"
 | <code><a href="#@cdktf/provider-aws.s3BucketInventory.S3BucketInventoryConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.s3BucketInventory.S3BucketInventoryConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.s3BucketInventory.S3BucketInventoryConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3BucketInventory.S3BucketInventoryConfig.property.bucket">Bucket</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/s3_bucket_inventory#bucket S3BucketInventory#bucket}. |
+| <code><a href="#@cdktf/provider-aws.s3BucketInventory.S3BucketInventoryConfig.property.bucket">Bucket</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3_bucket_inventory#bucket S3BucketInventory#bucket}. |
 | <code><a href="#@cdktf/provider-aws.s3BucketInventory.S3BucketInventoryConfig.property.destination">Destination</a></code> | <code><a href="#@cdktf/provider-aws.s3BucketInventory.S3BucketInventoryDestination">S3BucketInventoryDestination</a></code> | destination block. |
-| <code><a href="#@cdktf/provider-aws.s3BucketInventory.S3BucketInventoryConfig.property.includedObjectVersions">IncludedObjectVersions</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/s3_bucket_inventory#included_object_versions S3BucketInventory#included_object_versions}. |
-| <code><a href="#@cdktf/provider-aws.s3BucketInventory.S3BucketInventoryConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/s3_bucket_inventory#name S3BucketInventory#name}. |
+| <code><a href="#@cdktf/provider-aws.s3BucketInventory.S3BucketInventoryConfig.property.includedObjectVersions">IncludedObjectVersions</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3_bucket_inventory#included_object_versions S3BucketInventory#included_object_versions}. |
+| <code><a href="#@cdktf/provider-aws.s3BucketInventory.S3BucketInventoryConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3_bucket_inventory#name S3BucketInventory#name}. |
 | <code><a href="#@cdktf/provider-aws.s3BucketInventory.S3BucketInventoryConfig.property.schedule">Schedule</a></code> | <code><a href="#@cdktf/provider-aws.s3BucketInventory.S3BucketInventorySchedule">S3BucketInventorySchedule</a></code> | schedule block. |
-| <code><a href="#@cdktf/provider-aws.s3BucketInventory.S3BucketInventoryConfig.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/s3_bucket_inventory#enabled S3BucketInventory#enabled}. |
+| <code><a href="#@cdktf/provider-aws.s3BucketInventory.S3BucketInventoryConfig.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3_bucket_inventory#enabled S3BucketInventory#enabled}. |
 | <code><a href="#@cdktf/provider-aws.s3BucketInventory.S3BucketInventoryConfig.property.filter">Filter</a></code> | <code><a href="#@cdktf/provider-aws.s3BucketInventory.S3BucketInventoryFilter">S3BucketInventoryFilter</a></code> | filter block. |
-| <code><a href="#@cdktf/provider-aws.s3BucketInventory.S3BucketInventoryConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/s3_bucket_inventory#id S3BucketInventory#id}. |
-| <code><a href="#@cdktf/provider-aws.s3BucketInventory.S3BucketInventoryConfig.property.optionalFields">OptionalFields</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/s3_bucket_inventory#optional_fields S3BucketInventory#optional_fields}. |
+| <code><a href="#@cdktf/provider-aws.s3BucketInventory.S3BucketInventoryConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3_bucket_inventory#id S3BucketInventory#id}. |
+| <code><a href="#@cdktf/provider-aws.s3BucketInventory.S3BucketInventoryConfig.property.optionalFields">OptionalFields</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3_bucket_inventory#optional_fields S3BucketInventory#optional_fields}. |
+| <code><a href="#@cdktf/provider-aws.s3BucketInventory.S3BucketInventoryConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
 
@@ -1055,7 +1086,7 @@ Bucket *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/s3_bucket_inventory#bucket S3BucketInventory#bucket}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3_bucket_inventory#bucket S3BucketInventory#bucket}.
 
 ---
 
@@ -1069,7 +1100,7 @@ Destination S3BucketInventoryDestination
 
 destination block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/s3_bucket_inventory#destination S3BucketInventory#destination}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3_bucket_inventory#destination S3BucketInventory#destination}
 
 ---
 
@@ -1081,7 +1112,7 @@ IncludedObjectVersions *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/s3_bucket_inventory#included_object_versions S3BucketInventory#included_object_versions}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3_bucket_inventory#included_object_versions S3BucketInventory#included_object_versions}.
 
 ---
 
@@ -1093,7 +1124,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/s3_bucket_inventory#name S3BucketInventory#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3_bucket_inventory#name S3BucketInventory#name}.
 
 ---
 
@@ -1107,7 +1138,7 @@ Schedule S3BucketInventorySchedule
 
 schedule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/s3_bucket_inventory#schedule S3BucketInventory#schedule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3_bucket_inventory#schedule S3BucketInventory#schedule}
 
 ---
 
@@ -1119,7 +1150,7 @@ Enabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/s3_bucket_inventory#enabled S3BucketInventory#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3_bucket_inventory#enabled S3BucketInventory#enabled}.
 
 ---
 
@@ -1133,7 +1164,7 @@ Filter S3BucketInventoryFilter
 
 filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/s3_bucket_inventory#filter S3BucketInventory#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3_bucket_inventory#filter S3BucketInventory#filter}
 
 ---
 
@@ -1145,7 +1176,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/s3_bucket_inventory#id S3BucketInventory#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3_bucket_inventory#id S3BucketInventory#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1160,7 +1191,21 @@ OptionalFields *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/s3_bucket_inventory#optional_fields S3BucketInventory#optional_fields}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3_bucket_inventory#optional_fields S3BucketInventory#optional_fields}.
+
+---
+
+##### `Region`<sup>Optional</sup> <a name="Region" id="@cdktf/provider-aws.s3BucketInventory.S3BucketInventoryConfig.property.region"></a>
+
+```go
+Region *string
+```
+
+- *Type:* *string
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3_bucket_inventory#region S3BucketInventory#region}
 
 ---
 
@@ -1169,10 +1214,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.s3BucketInventory.S3BucketInventoryDestination.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/s3bucketinventory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/s3bucketinventory"
 
 &s3bucketinventory.S3BucketInventoryDestination {
-	Bucket: github.com/cdktf/cdktf-provider-aws-go/aws/v20.s3BucketInventory.S3BucketInventoryDestinationBucket,
+	Bucket: github.com/cdktf/cdktf-provider-aws-go/aws/v21.s3BucketInventory.S3BucketInventoryDestinationBucket,
 }
 ```
 
@@ -1194,7 +1239,7 @@ Bucket S3BucketInventoryDestinationBucket
 
 bucket block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/s3_bucket_inventory#bucket S3BucketInventory#bucket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3_bucket_inventory#bucket S3BucketInventory#bucket}
 
 ---
 
@@ -1203,13 +1248,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.s3BucketInventory.S3BucketInventoryDestinationBucket.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/s3bucketinventory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/s3bucketinventory"
 
 &s3bucketinventory.S3BucketInventoryDestinationBucket {
 	BucketArn: *string,
 	Format: *string,
 	AccountId: *string,
-	Encryption: github.com/cdktf/cdktf-provider-aws-go/aws/v20.s3BucketInventory.S3BucketInventoryDestinationBucketEncryption,
+	Encryption: github.com/cdktf/cdktf-provider-aws-go/aws/v21.s3BucketInventory.S3BucketInventoryDestinationBucketEncryption,
 	Prefix: *string,
 }
 ```
@@ -1218,11 +1263,11 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/s3bucketinventory"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.s3BucketInventory.S3BucketInventoryDestinationBucket.property.bucketArn">BucketArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/s3_bucket_inventory#bucket_arn S3BucketInventory#bucket_arn}. |
-| <code><a href="#@cdktf/provider-aws.s3BucketInventory.S3BucketInventoryDestinationBucket.property.format">Format</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/s3_bucket_inventory#format S3BucketInventory#format}. |
-| <code><a href="#@cdktf/provider-aws.s3BucketInventory.S3BucketInventoryDestinationBucket.property.accountId">AccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/s3_bucket_inventory#account_id S3BucketInventory#account_id}. |
+| <code><a href="#@cdktf/provider-aws.s3BucketInventory.S3BucketInventoryDestinationBucket.property.bucketArn">BucketArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3_bucket_inventory#bucket_arn S3BucketInventory#bucket_arn}. |
+| <code><a href="#@cdktf/provider-aws.s3BucketInventory.S3BucketInventoryDestinationBucket.property.format">Format</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3_bucket_inventory#format S3BucketInventory#format}. |
+| <code><a href="#@cdktf/provider-aws.s3BucketInventory.S3BucketInventoryDestinationBucket.property.accountId">AccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3_bucket_inventory#account_id S3BucketInventory#account_id}. |
 | <code><a href="#@cdktf/provider-aws.s3BucketInventory.S3BucketInventoryDestinationBucket.property.encryption">Encryption</a></code> | <code><a href="#@cdktf/provider-aws.s3BucketInventory.S3BucketInventoryDestinationBucketEncryption">S3BucketInventoryDestinationBucketEncryption</a></code> | encryption block. |
-| <code><a href="#@cdktf/provider-aws.s3BucketInventory.S3BucketInventoryDestinationBucket.property.prefix">Prefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/s3_bucket_inventory#prefix S3BucketInventory#prefix}. |
+| <code><a href="#@cdktf/provider-aws.s3BucketInventory.S3BucketInventoryDestinationBucket.property.prefix">Prefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3_bucket_inventory#prefix S3BucketInventory#prefix}. |
 
 ---
 
@@ -1234,7 +1279,7 @@ BucketArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/s3_bucket_inventory#bucket_arn S3BucketInventory#bucket_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3_bucket_inventory#bucket_arn S3BucketInventory#bucket_arn}.
 
 ---
 
@@ -1246,7 +1291,7 @@ Format *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/s3_bucket_inventory#format S3BucketInventory#format}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3_bucket_inventory#format S3BucketInventory#format}.
 
 ---
 
@@ -1258,7 +1303,7 @@ AccountId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/s3_bucket_inventory#account_id S3BucketInventory#account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3_bucket_inventory#account_id S3BucketInventory#account_id}.
 
 ---
 
@@ -1272,7 +1317,7 @@ Encryption S3BucketInventoryDestinationBucketEncryption
 
 encryption block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/s3_bucket_inventory#encryption S3BucketInventory#encryption}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3_bucket_inventory#encryption S3BucketInventory#encryption}
 
 ---
 
@@ -1284,7 +1329,7 @@ Prefix *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/s3_bucket_inventory#prefix S3BucketInventory#prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3_bucket_inventory#prefix S3BucketInventory#prefix}.
 
 ---
 
@@ -1293,11 +1338,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.s3BucketInventory.S3BucketInventoryDestinationBucketEncryption.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/s3bucketinventory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/s3bucketinventory"
 
 &s3bucketinventory.S3BucketInventoryDestinationBucketEncryption {
-	SseKms: github.com/cdktf/cdktf-provider-aws-go/aws/v20.s3BucketInventory.S3BucketInventoryDestinationBucketEncryptionSseKms,
-	SseS3: github.com/cdktf/cdktf-provider-aws-go/aws/v20.s3BucketInventory.S3BucketInventoryDestinationBucketEncryptionSseS3,
+	SseKms: github.com/cdktf/cdktf-provider-aws-go/aws/v21.s3BucketInventory.S3BucketInventoryDestinationBucketEncryptionSseKms,
+	SseS3: github.com/cdktf/cdktf-provider-aws-go/aws/v21.s3BucketInventory.S3BucketInventoryDestinationBucketEncryptionSseS3,
 }
 ```
 
@@ -1320,7 +1365,7 @@ SseKms S3BucketInventoryDestinationBucketEncryptionSseKms
 
 sse_kms block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/s3_bucket_inventory#sse_kms S3BucketInventory#sse_kms}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3_bucket_inventory#sse_kms S3BucketInventory#sse_kms}
 
 ---
 
@@ -1334,7 +1379,7 @@ SseS3 S3BucketInventoryDestinationBucketEncryptionSseS3
 
 sse_s3 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/s3_bucket_inventory#sse_s3 S3BucketInventory#sse_s3}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3_bucket_inventory#sse_s3 S3BucketInventory#sse_s3}
 
 ---
 
@@ -1343,7 +1388,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.s3BucketInventory.S3BucketInventoryDestinationBucketEncryptionSseKms.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/s3bucketinventory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/s3bucketinventory"
 
 &s3bucketinventory.S3BucketInventoryDestinationBucketEncryptionSseKms {
 	KeyId: *string,
@@ -1354,7 +1399,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/s3bucketinventory"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.s3BucketInventory.S3BucketInventoryDestinationBucketEncryptionSseKms.property.keyId">KeyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/s3_bucket_inventory#key_id S3BucketInventory#key_id}. |
+| <code><a href="#@cdktf/provider-aws.s3BucketInventory.S3BucketInventoryDestinationBucketEncryptionSseKms.property.keyId">KeyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3_bucket_inventory#key_id S3BucketInventory#key_id}. |
 
 ---
 
@@ -1366,7 +1411,7 @@ KeyId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/s3_bucket_inventory#key_id S3BucketInventory#key_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3_bucket_inventory#key_id S3BucketInventory#key_id}.
 
 ---
 
@@ -1375,7 +1420,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.s3BucketInventory.S3BucketInventoryDestinationBucketEncryptionSseS3.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/s3bucketinventory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/s3bucketinventory"
 
 &s3bucketinventory.S3BucketInventoryDestinationBucketEncryptionSseS3 {
 
@@ -1388,7 +1433,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/s3bucketinventory"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.s3BucketInventory.S3BucketInventoryFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/s3bucketinventory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/s3bucketinventory"
 
 &s3bucketinventory.S3BucketInventoryFilter {
 	Prefix: *string,
@@ -1399,7 +1444,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/s3bucketinventory"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.s3BucketInventory.S3BucketInventoryFilter.property.prefix">Prefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/s3_bucket_inventory#prefix S3BucketInventory#prefix}. |
+| <code><a href="#@cdktf/provider-aws.s3BucketInventory.S3BucketInventoryFilter.property.prefix">Prefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3_bucket_inventory#prefix S3BucketInventory#prefix}. |
 
 ---
 
@@ -1411,7 +1456,7 @@ Prefix *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/s3_bucket_inventory#prefix S3BucketInventory#prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3_bucket_inventory#prefix S3BucketInventory#prefix}.
 
 ---
 
@@ -1420,7 +1465,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.s3BucketInventory.S3BucketInventorySchedule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/s3bucketinventory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/s3bucketinventory"
 
 &s3bucketinventory.S3BucketInventorySchedule {
 	Frequency: *string,
@@ -1431,7 +1476,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/s3bucketinventory"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.s3BucketInventory.S3BucketInventorySchedule.property.frequency">Frequency</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/s3_bucket_inventory#frequency S3BucketInventory#frequency}. |
+| <code><a href="#@cdktf/provider-aws.s3BucketInventory.S3BucketInventorySchedule.property.frequency">Frequency</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3_bucket_inventory#frequency S3BucketInventory#frequency}. |
 
 ---
 
@@ -1443,7 +1488,7 @@ Frequency *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/s3_bucket_inventory#frequency S3BucketInventory#frequency}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3_bucket_inventory#frequency S3BucketInventory#frequency}.
 
 ---
 
@@ -1454,7 +1499,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.s3BucketInventory.S3BucketInventoryDestinationBucketEncryptionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/s3bucketinventory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/s3bucketinventory"
 
 s3bucketinventory.NewS3BucketInventoryDestinationBucketEncryptionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3BucketInventoryDestinationBucketEncryptionOutputReference
 ```
@@ -1787,7 +1832,7 @@ func InternalValue() S3BucketInventoryDestinationBucketEncryption
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.s3BucketInventory.S3BucketInventoryDestinationBucketEncryptionSseKmsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/s3bucketinventory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/s3bucketinventory"
 
 s3bucketinventory.NewS3BucketInventoryDestinationBucketEncryptionSseKmsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3BucketInventoryDestinationBucketEncryptionSseKmsOutputReference
 ```
@@ -2058,7 +2103,7 @@ func InternalValue() S3BucketInventoryDestinationBucketEncryptionSseKms
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.s3BucketInventory.S3BucketInventoryDestinationBucketEncryptionSseS3OutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/s3bucketinventory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/s3bucketinventory"
 
 s3bucketinventory.NewS3BucketInventoryDestinationBucketEncryptionSseS3OutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3BucketInventoryDestinationBucketEncryptionSseS3OutputReference
 ```
@@ -2307,7 +2352,7 @@ func InternalValue() S3BucketInventoryDestinationBucketEncryptionSseS3
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.s3BucketInventory.S3BucketInventoryDestinationBucketOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/s3bucketinventory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/s3bucketinventory"
 
 s3bucketinventory.NewS3BucketInventoryDestinationBucketOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3BucketInventoryDestinationBucketOutputReference
 ```
@@ -2700,7 +2745,7 @@ func InternalValue() S3BucketInventoryDestinationBucket
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.s3BucketInventory.S3BucketInventoryDestinationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/s3bucketinventory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/s3bucketinventory"
 
 s3bucketinventory.NewS3BucketInventoryDestinationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3BucketInventoryDestinationOutputReference
 ```
@@ -2984,7 +3029,7 @@ func InternalValue() S3BucketInventoryDestination
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.s3BucketInventory.S3BucketInventoryFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/s3bucketinventory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/s3bucketinventory"
 
 s3bucketinventory.NewS3BucketInventoryFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3BucketInventoryFilterOutputReference
 ```
@@ -3262,7 +3307,7 @@ func InternalValue() S3BucketInventoryFilter
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.s3BucketInventory.S3BucketInventoryScheduleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/s3bucketinventory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/s3bucketinventory"
 
 s3bucketinventory.NewS3BucketInventoryScheduleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3BucketInventoryScheduleOutputReference
 ```

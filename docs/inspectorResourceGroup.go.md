@@ -4,12 +4,12 @@
 
 ### InspectorResourceGroup <a name="InspectorResourceGroup" id="@cdktf/provider-aws.inspectorResourceGroup.InspectorResourceGroup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/inspector_resource_group aws_inspector_resource_group}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/inspector_resource_group aws_inspector_resource_group}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.inspectorResourceGroup.InspectorResourceGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/inspectorresourcegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/inspectorresourcegroup"
 
 inspectorresourcegroup.NewInspectorResourceGroup(scope Construct, id *string, config InspectorResourceGroupConfig) InspectorResourceGroup
 ```
@@ -74,6 +74,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.inspectorResourceGroup.InspectorResourceGroup.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-aws.inspectorResourceGroup.InspectorResourceGroup.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-aws.inspectorResourceGroup.InspectorResourceGroup.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspectorResourceGroup.InspectorResourceGroup.resetRegion">ResetRegion</a></code> | *No description.* |
 
 ---
 
@@ -371,6 +372,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 func ResetId()
 ```
 
+##### `ResetRegion` <a name="ResetRegion" id="@cdktf/provider-aws.inspectorResourceGroup.InspectorResourceGroup.resetRegion"></a>
+
+```go
+func ResetRegion()
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -385,7 +392,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.inspectorResourceGroup.InspectorResourceGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/inspectorresourcegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/inspectorresourcegroup"
 
 inspectorresourcegroup.InspectorResourceGroup_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +424,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.inspectorResourceGroup.InspectorResourceGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/inspectorresourcegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/inspectorresourcegroup"
 
 inspectorresourcegroup.InspectorResourceGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +438,7 @@ inspectorresourcegroup.InspectorResourceGroup_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.inspectorResourceGroup.InspectorResourceGroup.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/inspectorresourcegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/inspectorresourcegroup"
 
 inspectorresourcegroup.InspectorResourceGroup_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +452,7 @@ inspectorresourcegroup.InspectorResourceGroup_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.inspectorResourceGroup.InspectorResourceGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/inspectorresourcegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/inspectorresourcegroup"
 
 inspectorresourcegroup.InspectorResourceGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -474,7 +481,7 @@ The construct id used in the generated config for the InspectorResourceGroup to 
 
 The id of the existing InspectorResourceGroup that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/inspector_resource_group#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/inspector_resource_group#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -506,8 +513,10 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.inspectorResourceGroup.InspectorResourceGroup.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspectorResourceGroup.InspectorResourceGroup.property.arn">Arn</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspectorResourceGroup.InspectorResourceGroup.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspectorResourceGroup.InspectorResourceGroup.property.regionInput">RegionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspectorResourceGroup.InspectorResourceGroup.property.tagsInput">TagsInput</a></code> | <code>*map[string]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspectorResourceGroup.InspectorResourceGroup.property.id">Id</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspectorResourceGroup.InspectorResourceGroup.property.region">Region</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspectorResourceGroup.InspectorResourceGroup.property.tags">Tags</a></code> | <code>*map[string]*string</code> | *No description.* |
 
 ---
@@ -674,6 +683,16 @@ func IdInput() *string
 
 ---
 
+##### `RegionInput`<sup>Optional</sup> <a name="RegionInput" id="@cdktf/provider-aws.inspectorResourceGroup.InspectorResourceGroup.property.regionInput"></a>
+
+```go
+func RegionInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `TagsInput`<sup>Optional</sup> <a name="TagsInput" id="@cdktf/provider-aws.inspectorResourceGroup.InspectorResourceGroup.property.tagsInput"></a>
 
 ```go
@@ -688,6 +707,16 @@ func TagsInput() *map[string]*string
 
 ```go
 func Id() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Region`<sup>Required</sup> <a name="Region" id="@cdktf/provider-aws.inspectorResourceGroup.InspectorResourceGroup.property.region"></a>
+
+```go
+func Region() *string
 ```
 
 - *Type:* *string
@@ -729,7 +758,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.inspectorResourceGroup.InspectorResourceGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/inspectorresourcegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/inspectorresourcegroup"
 
 &inspectorresourcegroup.InspectorResourceGroupConfig {
 	Connection: interface{},
@@ -741,6 +770,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/inspectorresourcegroup"
 	Provisioners: *[]interface{},
 	Tags: *map[string]*string,
 	Id: *string,
+	Region: *string,
 }
 ```
 
@@ -755,8 +785,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/inspectorresourcegroup"
 | <code><a href="#@cdktf/provider-aws.inspectorResourceGroup.InspectorResourceGroupConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspectorResourceGroup.InspectorResourceGroupConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspectorResourceGroup.InspectorResourceGroupConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspectorResourceGroup.InspectorResourceGroupConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/inspector_resource_group#tags InspectorResourceGroup#tags}. |
-| <code><a href="#@cdktf/provider-aws.inspectorResourceGroup.InspectorResourceGroupConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/inspector_resource_group#id InspectorResourceGroup#id}. |
+| <code><a href="#@cdktf/provider-aws.inspectorResourceGroup.InspectorResourceGroupConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/inspector_resource_group#tags InspectorResourceGroup#tags}. |
+| <code><a href="#@cdktf/provider-aws.inspectorResourceGroup.InspectorResourceGroupConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/inspector_resource_group#id InspectorResourceGroup#id}. |
+| <code><a href="#@cdktf/provider-aws.inspectorResourceGroup.InspectorResourceGroupConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
 
@@ -838,7 +869,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/inspector_resource_group#tags InspectorResourceGroup#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/inspector_resource_group#tags InspectorResourceGroup#tags}.
 
 ---
 
@@ -850,10 +881,24 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/inspector_resource_group#id InspectorResourceGroup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/inspector_resource_group#id InspectorResourceGroup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `Region`<sup>Optional</sup> <a name="Region" id="@cdktf/provider-aws.inspectorResourceGroup.InspectorResourceGroupConfig.property.region"></a>
+
+```go
+Region *string
+```
+
+- *Type:* *string
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/inspector_resource_group#region InspectorResourceGroup#region}
 
 ---
 

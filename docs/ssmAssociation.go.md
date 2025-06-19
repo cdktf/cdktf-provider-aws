@@ -4,12 +4,12 @@
 
 ### SsmAssociation <a name="SsmAssociation" id="@cdktf/provider-aws.ssmAssociation.SsmAssociation"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ssm_association aws_ssm_association}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ssm_association aws_ssm_association}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ssmAssociation.SsmAssociation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/ssmassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/ssmassociation"
 
 ssmassociation.NewSsmAssociation(scope Construct, id *string, config SsmAssociationConfig) SsmAssociation
 ```
@@ -81,11 +81,11 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.ssmAssociation.SsmAssociation.resetComplianceSeverity">ResetComplianceSeverity</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ssmAssociation.SsmAssociation.resetDocumentVersion">ResetDocumentVersion</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ssmAssociation.SsmAssociation.resetId">ResetId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ssmAssociation.SsmAssociation.resetInstanceId">ResetInstanceId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ssmAssociation.SsmAssociation.resetMaxConcurrency">ResetMaxConcurrency</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ssmAssociation.SsmAssociation.resetMaxErrors">ResetMaxErrors</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ssmAssociation.SsmAssociation.resetOutputLocation">ResetOutputLocation</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ssmAssociation.SsmAssociation.resetParameters">ResetParameters</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ssmAssociation.SsmAssociation.resetRegion">ResetRegion</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ssmAssociation.SsmAssociation.resetScheduleExpression">ResetScheduleExpression</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ssmAssociation.SsmAssociation.resetSyncCompliance">ResetSyncCompliance</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ssmAssociation.SsmAssociation.resetTags">ResetTags</a></code> | *No description.* |
@@ -443,12 +443,6 @@ func ResetDocumentVersion()
 func ResetId()
 ```
 
-##### `ResetInstanceId` <a name="ResetInstanceId" id="@cdktf/provider-aws.ssmAssociation.SsmAssociation.resetInstanceId"></a>
-
-```go
-func ResetInstanceId()
-```
-
 ##### `ResetMaxConcurrency` <a name="ResetMaxConcurrency" id="@cdktf/provider-aws.ssmAssociation.SsmAssociation.resetMaxConcurrency"></a>
 
 ```go
@@ -471,6 +465,12 @@ func ResetOutputLocation()
 
 ```go
 func ResetParameters()
+```
+
+##### `ResetRegion` <a name="ResetRegion" id="@cdktf/provider-aws.ssmAssociation.SsmAssociation.resetRegion"></a>
+
+```go
+func ResetRegion()
 ```
 
 ##### `ResetScheduleExpression` <a name="ResetScheduleExpression" id="@cdktf/provider-aws.ssmAssociation.SsmAssociation.resetScheduleExpression"></a>
@@ -523,7 +523,7 @@ func ResetWaitForSuccessTimeoutSeconds()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.ssmAssociation.SsmAssociation.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/ssmassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/ssmassociation"
 
 ssmassociation.SsmAssociation_IsConstruct(x interface{}) *bool
 ```
@@ -555,7 +555,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.ssmAssociation.SsmAssociation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/ssmassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/ssmassociation"
 
 ssmassociation.SsmAssociation_IsTerraformElement(x interface{}) *bool
 ```
@@ -569,7 +569,7 @@ ssmassociation.SsmAssociation_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.ssmAssociation.SsmAssociation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/ssmassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/ssmassociation"
 
 ssmassociation.SsmAssociation_IsTerraformResource(x interface{}) *bool
 ```
@@ -583,7 +583,7 @@ ssmassociation.SsmAssociation_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.ssmAssociation.SsmAssociation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/ssmassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/ssmassociation"
 
 ssmassociation.SsmAssociation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -612,7 +612,7 @@ The construct id used in the generated config for the SsmAssociation to import.
 
 The id of the existing SsmAssociation that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ssm_association#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ssm_association#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -652,12 +652,12 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.ssmAssociation.SsmAssociation.property.complianceSeverityInput">ComplianceSeverityInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ssmAssociation.SsmAssociation.property.documentVersionInput">DocumentVersionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ssmAssociation.SsmAssociation.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ssmAssociation.SsmAssociation.property.instanceIdInput">InstanceIdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ssmAssociation.SsmAssociation.property.maxConcurrencyInput">MaxConcurrencyInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ssmAssociation.SsmAssociation.property.maxErrorsInput">MaxErrorsInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ssmAssociation.SsmAssociation.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ssmAssociation.SsmAssociation.property.outputLocationInput">OutputLocationInput</a></code> | <code><a href="#@cdktf/provider-aws.ssmAssociation.SsmAssociationOutputLocation">SsmAssociationOutputLocation</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ssmAssociation.SsmAssociation.property.parametersInput">ParametersInput</a></code> | <code>*map[string]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ssmAssociation.SsmAssociation.property.regionInput">RegionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ssmAssociation.SsmAssociation.property.scheduleExpressionInput">ScheduleExpressionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ssmAssociation.SsmAssociation.property.syncComplianceInput">SyncComplianceInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ssmAssociation.SsmAssociation.property.tagsAllInput">TagsAllInput</a></code> | <code>*map[string]*string</code> | *No description.* |
@@ -670,11 +670,11 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.ssmAssociation.SsmAssociation.property.complianceSeverity">ComplianceSeverity</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ssmAssociation.SsmAssociation.property.documentVersion">DocumentVersion</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ssmAssociation.SsmAssociation.property.id">Id</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ssmAssociation.SsmAssociation.property.instanceId">InstanceId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ssmAssociation.SsmAssociation.property.maxConcurrency">MaxConcurrency</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ssmAssociation.SsmAssociation.property.maxErrors">MaxErrors</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ssmAssociation.SsmAssociation.property.name">Name</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ssmAssociation.SsmAssociation.property.parameters">Parameters</a></code> | <code>*map[string]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ssmAssociation.SsmAssociation.property.region">Region</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ssmAssociation.SsmAssociation.property.scheduleExpression">ScheduleExpression</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ssmAssociation.SsmAssociation.property.syncCompliance">SyncCompliance</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ssmAssociation.SsmAssociation.property.tags">Tags</a></code> | <code>*map[string]*string</code> | *No description.* |
@@ -925,16 +925,6 @@ func IdInput() *string
 
 ---
 
-##### `InstanceIdInput`<sup>Optional</sup> <a name="InstanceIdInput" id="@cdktf/provider-aws.ssmAssociation.SsmAssociation.property.instanceIdInput"></a>
-
-```go
-func InstanceIdInput() *string
-```
-
-- *Type:* *string
-
----
-
 ##### `MaxConcurrencyInput`<sup>Optional</sup> <a name="MaxConcurrencyInput" id="@cdktf/provider-aws.ssmAssociation.SsmAssociation.property.maxConcurrencyInput"></a>
 
 ```go
@@ -982,6 +972,16 @@ func ParametersInput() *map[string]*string
 ```
 
 - *Type:* *map[string]*string
+
+---
+
+##### `RegionInput`<sup>Optional</sup> <a name="RegionInput" id="@cdktf/provider-aws.ssmAssociation.SsmAssociation.property.regionInput"></a>
+
+```go
+func RegionInput() *string
+```
+
+- *Type:* *string
 
 ---
 
@@ -1105,16 +1105,6 @@ func Id() *string
 
 ---
 
-##### `InstanceId`<sup>Required</sup> <a name="InstanceId" id="@cdktf/provider-aws.ssmAssociation.SsmAssociation.property.instanceId"></a>
-
-```go
-func InstanceId() *string
-```
-
-- *Type:* *string
-
----
-
 ##### `MaxConcurrency`<sup>Required</sup> <a name="MaxConcurrency" id="@cdktf/provider-aws.ssmAssociation.SsmAssociation.property.maxConcurrency"></a>
 
 ```go
@@ -1152,6 +1142,16 @@ func Parameters() *map[string]*string
 ```
 
 - *Type:* *map[string]*string
+
+---
+
+##### `Region`<sup>Required</sup> <a name="Region" id="@cdktf/provider-aws.ssmAssociation.SsmAssociation.property.region"></a>
+
+```go
+func Region() *string
+```
+
+- *Type:* *string
 
 ---
 
@@ -1230,7 +1230,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ssmAssociation.SsmAssociationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/ssmassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/ssmassociation"
 
 &ssmassociation.SsmAssociationConfig {
 	Connection: interface{},
@@ -1247,11 +1247,11 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/ssmassociation"
 	ComplianceSeverity: *string,
 	DocumentVersion: *string,
 	Id: *string,
-	InstanceId: *string,
 	MaxConcurrency: *string,
 	MaxErrors: *string,
-	OutputLocation: github.com/cdktf/cdktf-provider-aws-go/aws/v20.ssmAssociation.SsmAssociationOutputLocation,
+	OutputLocation: github.com/cdktf/cdktf-provider-aws-go/aws/v21.ssmAssociation.SsmAssociationOutputLocation,
 	Parameters: *map[string]*string,
+	Region: *string,
 	ScheduleExpression: *string,
 	SyncCompliance: *string,
 	Tags: *map[string]*string,
@@ -1272,24 +1272,24 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/ssmassociation"
 | <code><a href="#@cdktf/provider-aws.ssmAssociation.SsmAssociationConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ssmAssociation.SsmAssociationConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ssmAssociation.SsmAssociationConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ssmAssociation.SsmAssociationConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ssm_association#name SsmAssociation#name}. |
-| <code><a href="#@cdktf/provider-aws.ssmAssociation.SsmAssociationConfig.property.applyOnlyAtCronInterval">ApplyOnlyAtCronInterval</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ssm_association#apply_only_at_cron_interval SsmAssociation#apply_only_at_cron_interval}. |
-| <code><a href="#@cdktf/provider-aws.ssmAssociation.SsmAssociationConfig.property.associationName">AssociationName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ssm_association#association_name SsmAssociation#association_name}. |
-| <code><a href="#@cdktf/provider-aws.ssmAssociation.SsmAssociationConfig.property.automationTargetParameterName">AutomationTargetParameterName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ssm_association#automation_target_parameter_name SsmAssociation#automation_target_parameter_name}. |
-| <code><a href="#@cdktf/provider-aws.ssmAssociation.SsmAssociationConfig.property.complianceSeverity">ComplianceSeverity</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ssm_association#compliance_severity SsmAssociation#compliance_severity}. |
-| <code><a href="#@cdktf/provider-aws.ssmAssociation.SsmAssociationConfig.property.documentVersion">DocumentVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ssm_association#document_version SsmAssociation#document_version}. |
-| <code><a href="#@cdktf/provider-aws.ssmAssociation.SsmAssociationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ssm_association#id SsmAssociation#id}. |
-| <code><a href="#@cdktf/provider-aws.ssmAssociation.SsmAssociationConfig.property.instanceId">InstanceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ssm_association#instance_id SsmAssociation#instance_id}. |
-| <code><a href="#@cdktf/provider-aws.ssmAssociation.SsmAssociationConfig.property.maxConcurrency">MaxConcurrency</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ssm_association#max_concurrency SsmAssociation#max_concurrency}. |
-| <code><a href="#@cdktf/provider-aws.ssmAssociation.SsmAssociationConfig.property.maxErrors">MaxErrors</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ssm_association#max_errors SsmAssociation#max_errors}. |
+| <code><a href="#@cdktf/provider-aws.ssmAssociation.SsmAssociationConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ssm_association#name SsmAssociation#name}. |
+| <code><a href="#@cdktf/provider-aws.ssmAssociation.SsmAssociationConfig.property.applyOnlyAtCronInterval">ApplyOnlyAtCronInterval</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ssm_association#apply_only_at_cron_interval SsmAssociation#apply_only_at_cron_interval}. |
+| <code><a href="#@cdktf/provider-aws.ssmAssociation.SsmAssociationConfig.property.associationName">AssociationName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ssm_association#association_name SsmAssociation#association_name}. |
+| <code><a href="#@cdktf/provider-aws.ssmAssociation.SsmAssociationConfig.property.automationTargetParameterName">AutomationTargetParameterName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ssm_association#automation_target_parameter_name SsmAssociation#automation_target_parameter_name}. |
+| <code><a href="#@cdktf/provider-aws.ssmAssociation.SsmAssociationConfig.property.complianceSeverity">ComplianceSeverity</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ssm_association#compliance_severity SsmAssociation#compliance_severity}. |
+| <code><a href="#@cdktf/provider-aws.ssmAssociation.SsmAssociationConfig.property.documentVersion">DocumentVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ssm_association#document_version SsmAssociation#document_version}. |
+| <code><a href="#@cdktf/provider-aws.ssmAssociation.SsmAssociationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ssm_association#id SsmAssociation#id}. |
+| <code><a href="#@cdktf/provider-aws.ssmAssociation.SsmAssociationConfig.property.maxConcurrency">MaxConcurrency</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ssm_association#max_concurrency SsmAssociation#max_concurrency}. |
+| <code><a href="#@cdktf/provider-aws.ssmAssociation.SsmAssociationConfig.property.maxErrors">MaxErrors</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ssm_association#max_errors SsmAssociation#max_errors}. |
 | <code><a href="#@cdktf/provider-aws.ssmAssociation.SsmAssociationConfig.property.outputLocation">OutputLocation</a></code> | <code><a href="#@cdktf/provider-aws.ssmAssociation.SsmAssociationOutputLocation">SsmAssociationOutputLocation</a></code> | output_location block. |
-| <code><a href="#@cdktf/provider-aws.ssmAssociation.SsmAssociationConfig.property.parameters">Parameters</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ssm_association#parameters SsmAssociation#parameters}. |
-| <code><a href="#@cdktf/provider-aws.ssmAssociation.SsmAssociationConfig.property.scheduleExpression">ScheduleExpression</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ssm_association#schedule_expression SsmAssociation#schedule_expression}. |
-| <code><a href="#@cdktf/provider-aws.ssmAssociation.SsmAssociationConfig.property.syncCompliance">SyncCompliance</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ssm_association#sync_compliance SsmAssociation#sync_compliance}. |
-| <code><a href="#@cdktf/provider-aws.ssmAssociation.SsmAssociationConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ssm_association#tags SsmAssociation#tags}. |
-| <code><a href="#@cdktf/provider-aws.ssmAssociation.SsmAssociationConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ssm_association#tags_all SsmAssociation#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.ssmAssociation.SsmAssociationConfig.property.parameters">Parameters</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ssm_association#parameters SsmAssociation#parameters}. |
+| <code><a href="#@cdktf/provider-aws.ssmAssociation.SsmAssociationConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
+| <code><a href="#@cdktf/provider-aws.ssmAssociation.SsmAssociationConfig.property.scheduleExpression">ScheduleExpression</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ssm_association#schedule_expression SsmAssociation#schedule_expression}. |
+| <code><a href="#@cdktf/provider-aws.ssmAssociation.SsmAssociationConfig.property.syncCompliance">SyncCompliance</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ssm_association#sync_compliance SsmAssociation#sync_compliance}. |
+| <code><a href="#@cdktf/provider-aws.ssmAssociation.SsmAssociationConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ssm_association#tags SsmAssociation#tags}. |
+| <code><a href="#@cdktf/provider-aws.ssmAssociation.SsmAssociationConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ssm_association#tags_all SsmAssociation#tags_all}. |
 | <code><a href="#@cdktf/provider-aws.ssmAssociation.SsmAssociationConfig.property.targets">Targets</a></code> | <code>interface{}</code> | targets block. |
-| <code><a href="#@cdktf/provider-aws.ssmAssociation.SsmAssociationConfig.property.waitForSuccessTimeoutSeconds">WaitForSuccessTimeoutSeconds</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ssm_association#wait_for_success_timeout_seconds SsmAssociation#wait_for_success_timeout_seconds}. |
+| <code><a href="#@cdktf/provider-aws.ssmAssociation.SsmAssociationConfig.property.waitForSuccessTimeoutSeconds">WaitForSuccessTimeoutSeconds</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ssm_association#wait_for_success_timeout_seconds SsmAssociation#wait_for_success_timeout_seconds}. |
 
 ---
 
@@ -1371,7 +1371,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ssm_association#name SsmAssociation#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ssm_association#name SsmAssociation#name}.
 
 ---
 
@@ -1383,7 +1383,7 @@ ApplyOnlyAtCronInterval interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ssm_association#apply_only_at_cron_interval SsmAssociation#apply_only_at_cron_interval}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ssm_association#apply_only_at_cron_interval SsmAssociation#apply_only_at_cron_interval}.
 
 ---
 
@@ -1395,7 +1395,7 @@ AssociationName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ssm_association#association_name SsmAssociation#association_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ssm_association#association_name SsmAssociation#association_name}.
 
 ---
 
@@ -1407,7 +1407,7 @@ AutomationTargetParameterName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ssm_association#automation_target_parameter_name SsmAssociation#automation_target_parameter_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ssm_association#automation_target_parameter_name SsmAssociation#automation_target_parameter_name}.
 
 ---
 
@@ -1419,7 +1419,7 @@ ComplianceSeverity *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ssm_association#compliance_severity SsmAssociation#compliance_severity}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ssm_association#compliance_severity SsmAssociation#compliance_severity}.
 
 ---
 
@@ -1431,7 +1431,7 @@ DocumentVersion *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ssm_association#document_version SsmAssociation#document_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ssm_association#document_version SsmAssociation#document_version}.
 
 ---
 
@@ -1443,22 +1443,10 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ssm_association#id SsmAssociation#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ssm_association#id SsmAssociation#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-
----
-
-##### `InstanceId`<sup>Optional</sup> <a name="InstanceId" id="@cdktf/provider-aws.ssmAssociation.SsmAssociationConfig.property.instanceId"></a>
-
-```go
-InstanceId *string
-```
-
-- *Type:* *string
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ssm_association#instance_id SsmAssociation#instance_id}.
 
 ---
 
@@ -1470,7 +1458,7 @@ MaxConcurrency *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ssm_association#max_concurrency SsmAssociation#max_concurrency}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ssm_association#max_concurrency SsmAssociation#max_concurrency}.
 
 ---
 
@@ -1482,7 +1470,7 @@ MaxErrors *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ssm_association#max_errors SsmAssociation#max_errors}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ssm_association#max_errors SsmAssociation#max_errors}.
 
 ---
 
@@ -1496,7 +1484,7 @@ OutputLocation SsmAssociationOutputLocation
 
 output_location block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ssm_association#output_location SsmAssociation#output_location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ssm_association#output_location SsmAssociation#output_location}
 
 ---
 
@@ -1508,7 +1496,21 @@ Parameters *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ssm_association#parameters SsmAssociation#parameters}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ssm_association#parameters SsmAssociation#parameters}.
+
+---
+
+##### `Region`<sup>Optional</sup> <a name="Region" id="@cdktf/provider-aws.ssmAssociation.SsmAssociationConfig.property.region"></a>
+
+```go
+Region *string
+```
+
+- *Type:* *string
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ssm_association#region SsmAssociation#region}
 
 ---
 
@@ -1520,7 +1522,7 @@ ScheduleExpression *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ssm_association#schedule_expression SsmAssociation#schedule_expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ssm_association#schedule_expression SsmAssociation#schedule_expression}.
 
 ---
 
@@ -1532,7 +1534,7 @@ SyncCompliance *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ssm_association#sync_compliance SsmAssociation#sync_compliance}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ssm_association#sync_compliance SsmAssociation#sync_compliance}.
 
 ---
 
@@ -1544,7 +1546,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ssm_association#tags SsmAssociation#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ssm_association#tags SsmAssociation#tags}.
 
 ---
 
@@ -1556,7 +1558,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ssm_association#tags_all SsmAssociation#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ssm_association#tags_all SsmAssociation#tags_all}.
 
 ---
 
@@ -1570,7 +1572,7 @@ Targets interface{}
 
 targets block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ssm_association#targets SsmAssociation#targets}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ssm_association#targets SsmAssociation#targets}
 
 ---
 
@@ -1582,7 +1584,7 @@ WaitForSuccessTimeoutSeconds *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ssm_association#wait_for_success_timeout_seconds SsmAssociation#wait_for_success_timeout_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ssm_association#wait_for_success_timeout_seconds SsmAssociation#wait_for_success_timeout_seconds}.
 
 ---
 
@@ -1591,7 +1593,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ssmAssociation.SsmAssociationOutputLocation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/ssmassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/ssmassociation"
 
 &ssmassociation.SsmAssociationOutputLocation {
 	S3BucketName: *string,
@@ -1604,9 +1606,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/ssmassociation"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.ssmAssociation.SsmAssociationOutputLocation.property.s3BucketName">S3BucketName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ssm_association#s3_bucket_name SsmAssociation#s3_bucket_name}. |
-| <code><a href="#@cdktf/provider-aws.ssmAssociation.SsmAssociationOutputLocation.property.s3KeyPrefix">S3KeyPrefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ssm_association#s3_key_prefix SsmAssociation#s3_key_prefix}. |
-| <code><a href="#@cdktf/provider-aws.ssmAssociation.SsmAssociationOutputLocation.property.s3Region">S3Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ssm_association#s3_region SsmAssociation#s3_region}. |
+| <code><a href="#@cdktf/provider-aws.ssmAssociation.SsmAssociationOutputLocation.property.s3BucketName">S3BucketName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ssm_association#s3_bucket_name SsmAssociation#s3_bucket_name}. |
+| <code><a href="#@cdktf/provider-aws.ssmAssociation.SsmAssociationOutputLocation.property.s3KeyPrefix">S3KeyPrefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ssm_association#s3_key_prefix SsmAssociation#s3_key_prefix}. |
+| <code><a href="#@cdktf/provider-aws.ssmAssociation.SsmAssociationOutputLocation.property.s3Region">S3Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ssm_association#s3_region SsmAssociation#s3_region}. |
 
 ---
 
@@ -1618,7 +1620,7 @@ S3BucketName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ssm_association#s3_bucket_name SsmAssociation#s3_bucket_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ssm_association#s3_bucket_name SsmAssociation#s3_bucket_name}.
 
 ---
 
@@ -1630,7 +1632,7 @@ S3KeyPrefix *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ssm_association#s3_key_prefix SsmAssociation#s3_key_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ssm_association#s3_key_prefix SsmAssociation#s3_key_prefix}.
 
 ---
 
@@ -1642,7 +1644,7 @@ S3Region *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ssm_association#s3_region SsmAssociation#s3_region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ssm_association#s3_region SsmAssociation#s3_region}.
 
 ---
 
@@ -1651,7 +1653,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ssmAssociation.SsmAssociationTargets.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/ssmassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/ssmassociation"
 
 &ssmassociation.SsmAssociationTargets {
 	Key: *string,
@@ -1663,8 +1665,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/ssmassociation"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.ssmAssociation.SsmAssociationTargets.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ssm_association#key SsmAssociation#key}. |
-| <code><a href="#@cdktf/provider-aws.ssmAssociation.SsmAssociationTargets.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ssm_association#values SsmAssociation#values}. |
+| <code><a href="#@cdktf/provider-aws.ssmAssociation.SsmAssociationTargets.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ssm_association#key SsmAssociation#key}. |
+| <code><a href="#@cdktf/provider-aws.ssmAssociation.SsmAssociationTargets.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ssm_association#values SsmAssociation#values}. |
 
 ---
 
@@ -1676,7 +1678,7 @@ Key *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ssm_association#key SsmAssociation#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ssm_association#key SsmAssociation#key}.
 
 ---
 
@@ -1688,7 +1690,7 @@ Values *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ssm_association#values SsmAssociation#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ssm_association#values SsmAssociation#values}.
 
 ---
 
@@ -1699,7 +1701,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ssmAssociation.SsmAssociationOutputLocationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/ssmassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/ssmassociation"
 
 ssmassociation.NewSsmAssociationOutputLocationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SsmAssociationOutputLocationOutputReference
 ```
@@ -2028,7 +2030,7 @@ func InternalValue() SsmAssociationOutputLocation
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ssmAssociation.SsmAssociationTargetsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/ssmassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/ssmassociation"
 
 ssmassociation.NewSsmAssociationTargetsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SsmAssociationTargetsList
 ```
@@ -2188,7 +2190,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ssmAssociation.SsmAssociationTargetsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/ssmassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/ssmassociation"
 
 ssmassociation.NewSsmAssociationTargetsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SsmAssociationTargetsOutputReference
 ```

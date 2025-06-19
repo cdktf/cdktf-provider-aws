@@ -4,12 +4,12 @@
 
 ### MediaPackagev2ChannelGroup <a name="MediaPackagev2ChannelGroup" id="@cdktf/provider-aws.mediaPackagev2ChannelGroup.MediaPackagev2ChannelGroup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/media_packagev2_channel_group aws_media_packagev2_channel_group}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/media_packagev2_channel_group aws_media_packagev2_channel_group}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.mediaPackagev2ChannelGroup.MediaPackagev2ChannelGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/mediapackagev2channelgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/mediapackagev2channelgroup"
 
 mediapackagev2channelgroup.NewMediaPackagev2ChannelGroup(scope Construct, id *string, config MediaPackagev2ChannelGroupConfig) MediaPackagev2ChannelGroup
 ```
@@ -74,6 +74,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.mediaPackagev2ChannelGroup.MediaPackagev2ChannelGroup.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-aws.mediaPackagev2ChannelGroup.MediaPackagev2ChannelGroup.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-aws.mediaPackagev2ChannelGroup.MediaPackagev2ChannelGroup.resetDescription">ResetDescription</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.mediaPackagev2ChannelGroup.MediaPackagev2ChannelGroup.resetRegion">ResetRegion</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.mediaPackagev2ChannelGroup.MediaPackagev2ChannelGroup.resetTags">ResetTags</a></code> | *No description.* |
 
 ---
@@ -372,6 +373,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 func ResetDescription()
 ```
 
+##### `ResetRegion` <a name="ResetRegion" id="@cdktf/provider-aws.mediaPackagev2ChannelGroup.MediaPackagev2ChannelGroup.resetRegion"></a>
+
+```go
+func ResetRegion()
+```
+
 ##### `ResetTags` <a name="ResetTags" id="@cdktf/provider-aws.mediaPackagev2ChannelGroup.MediaPackagev2ChannelGroup.resetTags"></a>
 
 ```go
@@ -392,7 +399,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.mediaPackagev2ChannelGroup.MediaPackagev2ChannelGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/mediapackagev2channelgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/mediapackagev2channelgroup"
 
 mediapackagev2channelgroup.MediaPackagev2ChannelGroup_IsConstruct(x interface{}) *bool
 ```
@@ -424,7 +431,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.mediaPackagev2ChannelGroup.MediaPackagev2ChannelGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/mediapackagev2channelgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/mediapackagev2channelgroup"
 
 mediapackagev2channelgroup.MediaPackagev2ChannelGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -438,7 +445,7 @@ mediapackagev2channelgroup.MediaPackagev2ChannelGroup_IsTerraformElement(x inter
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.mediaPackagev2ChannelGroup.MediaPackagev2ChannelGroup.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/mediapackagev2channelgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/mediapackagev2channelgroup"
 
 mediapackagev2channelgroup.MediaPackagev2ChannelGroup_IsTerraformResource(x interface{}) *bool
 ```
@@ -452,7 +459,7 @@ mediapackagev2channelgroup.MediaPackagev2ChannelGroup_IsTerraformResource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.mediaPackagev2ChannelGroup.MediaPackagev2ChannelGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/mediapackagev2channelgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/mediapackagev2channelgroup"
 
 mediapackagev2channelgroup.MediaPackagev2ChannelGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -481,7 +488,7 @@ The construct id used in the generated config for the MediaPackagev2ChannelGroup
 
 The id of the existing MediaPackagev2ChannelGroup that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/media_packagev2_channel_group#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/media_packagev2_channel_group#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -516,9 +523,11 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.mediaPackagev2ChannelGroup.MediaPackagev2ChannelGroup.property.tagsAll">TagsAll</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.StringMap</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.mediaPackagev2ChannelGroup.MediaPackagev2ChannelGroup.property.descriptionInput">DescriptionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.mediaPackagev2ChannelGroup.MediaPackagev2ChannelGroup.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.mediaPackagev2ChannelGroup.MediaPackagev2ChannelGroup.property.regionInput">RegionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.mediaPackagev2ChannelGroup.MediaPackagev2ChannelGroup.property.tagsInput">TagsInput</a></code> | <code>*map[string]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.mediaPackagev2ChannelGroup.MediaPackagev2ChannelGroup.property.description">Description</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.mediaPackagev2ChannelGroup.MediaPackagev2ChannelGroup.property.name">Name</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.mediaPackagev2ChannelGroup.MediaPackagev2ChannelGroup.property.region">Region</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.mediaPackagev2ChannelGroup.MediaPackagev2ChannelGroup.property.tags">Tags</a></code> | <code>*map[string]*string</code> | *No description.* |
 
 ---
@@ -715,6 +724,16 @@ func NameInput() *string
 
 ---
 
+##### `RegionInput`<sup>Optional</sup> <a name="RegionInput" id="@cdktf/provider-aws.mediaPackagev2ChannelGroup.MediaPackagev2ChannelGroup.property.regionInput"></a>
+
+```go
+func RegionInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `TagsInput`<sup>Optional</sup> <a name="TagsInput" id="@cdktf/provider-aws.mediaPackagev2ChannelGroup.MediaPackagev2ChannelGroup.property.tagsInput"></a>
 
 ```go
@@ -739,6 +758,16 @@ func Description() *string
 
 ```go
 func Name() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Region`<sup>Required</sup> <a name="Region" id="@cdktf/provider-aws.mediaPackagev2ChannelGroup.MediaPackagev2ChannelGroup.property.region"></a>
+
+```go
+func Region() *string
 ```
 
 - *Type:* *string
@@ -780,7 +809,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.mediaPackagev2ChannelGroup.MediaPackagev2ChannelGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/mediapackagev2channelgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/mediapackagev2channelgroup"
 
 &mediapackagev2channelgroup.MediaPackagev2ChannelGroupConfig {
 	Connection: interface{},
@@ -792,6 +821,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/mediapackagev2channelgrou
 	Provisioners: *[]interface{},
 	Name: *string,
 	Description: *string,
+	Region: *string,
 	Tags: *map[string]*string,
 }
 ```
@@ -807,9 +837,10 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/mediapackagev2channelgrou
 | <code><a href="#@cdktf/provider-aws.mediaPackagev2ChannelGroup.MediaPackagev2ChannelGroupConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.mediaPackagev2ChannelGroup.MediaPackagev2ChannelGroupConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.mediaPackagev2ChannelGroup.MediaPackagev2ChannelGroupConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.mediaPackagev2ChannelGroup.MediaPackagev2ChannelGroupConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/media_packagev2_channel_group#name MediaPackagev2ChannelGroup#name}. |
-| <code><a href="#@cdktf/provider-aws.mediaPackagev2ChannelGroup.MediaPackagev2ChannelGroupConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/media_packagev2_channel_group#description MediaPackagev2ChannelGroup#description}. |
-| <code><a href="#@cdktf/provider-aws.mediaPackagev2ChannelGroup.MediaPackagev2ChannelGroupConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/media_packagev2_channel_group#tags MediaPackagev2ChannelGroup#tags}. |
+| <code><a href="#@cdktf/provider-aws.mediaPackagev2ChannelGroup.MediaPackagev2ChannelGroupConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/media_packagev2_channel_group#name MediaPackagev2ChannelGroup#name}. |
+| <code><a href="#@cdktf/provider-aws.mediaPackagev2ChannelGroup.MediaPackagev2ChannelGroupConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/media_packagev2_channel_group#description MediaPackagev2ChannelGroup#description}. |
+| <code><a href="#@cdktf/provider-aws.mediaPackagev2ChannelGroup.MediaPackagev2ChannelGroupConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
+| <code><a href="#@cdktf/provider-aws.mediaPackagev2ChannelGroup.MediaPackagev2ChannelGroupConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/media_packagev2_channel_group#tags MediaPackagev2ChannelGroup#tags}. |
 
 ---
 
@@ -891,7 +922,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/media_packagev2_channel_group#name MediaPackagev2ChannelGroup#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/media_packagev2_channel_group#name MediaPackagev2ChannelGroup#name}.
 
 ---
 
@@ -903,7 +934,21 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/media_packagev2_channel_group#description MediaPackagev2ChannelGroup#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/media_packagev2_channel_group#description MediaPackagev2ChannelGroup#description}.
+
+---
+
+##### `Region`<sup>Optional</sup> <a name="Region" id="@cdktf/provider-aws.mediaPackagev2ChannelGroup.MediaPackagev2ChannelGroupConfig.property.region"></a>
+
+```go
+Region *string
+```
+
+- *Type:* *string
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/media_packagev2_channel_group#region MediaPackagev2ChannelGroup#region}
 
 ---
 
@@ -915,7 +960,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/media_packagev2_channel_group#tags MediaPackagev2ChannelGroup#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/media_packagev2_channel_group#tags MediaPackagev2ChannelGroup#tags}.
 
 ---
 

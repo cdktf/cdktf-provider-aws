@@ -4,7 +4,7 @@
 
 ### DataAwsDatapipelinePipeline <a name="DataAwsDatapipelinePipeline" id="@cdktf/provider-aws.dataAwsDatapipelinePipeline.DataAwsDatapipelinePipeline"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/datapipeline_pipeline aws_datapipeline_pipeline}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/datapipeline_pipeline aws_datapipeline_pipeline}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsDatapipelinePipeline.DataAwsDatapipelinePipeline.Initializer"></a>
 
@@ -68,6 +68,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.dataAwsDatapipelinePipeline.DataAwsDatapipelinePipeline.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsDatapipelinePipeline.DataAwsDatapipelinePipeline.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsDatapipelinePipeline.DataAwsDatapipelinePipeline.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsDatapipelinePipeline.DataAwsDatapipelinePipeline.resetRegion">ResetRegion</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsDatapipelinePipeline.DataAwsDatapipelinePipeline.resetTags">ResetTags</a></code> | *No description.* |
 
 ---
@@ -270,6 +271,12 @@ private IResolvable InterpolationForAttribute(string TerraformAttribute)
 private void ResetId()
 ```
 
+##### `ResetRegion` <a name="ResetRegion" id="@cdktf/provider-aws.dataAwsDatapipelinePipeline.DataAwsDatapipelinePipeline.resetRegion"></a>
+
+```csharp
+private void ResetRegion()
+```
+
 ##### `ResetTags` <a name="ResetTags" id="@cdktf/provider-aws.dataAwsDatapipelinePipeline.DataAwsDatapipelinePipeline.resetTags"></a>
 
 ```csharp
@@ -379,7 +386,7 @@ The construct id used in the generated config for the DataAwsDatapipelinePipelin
 
 The id of the existing DataAwsDatapipelinePipeline that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/datapipeline_pipeline#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/datapipeline_pipeline#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -411,9 +418,11 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.dataAwsDatapipelinePipeline.DataAwsDatapipelinePipeline.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsDatapipelinePipeline.DataAwsDatapipelinePipeline.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsDatapipelinePipeline.DataAwsDatapipelinePipeline.property.pipelineIdInput">PipelineIdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsDatapipelinePipeline.DataAwsDatapipelinePipeline.property.regionInput">RegionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsDatapipelinePipeline.DataAwsDatapipelinePipeline.property.tagsInput">TagsInput</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsDatapipelinePipeline.DataAwsDatapipelinePipeline.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsDatapipelinePipeline.DataAwsDatapipelinePipeline.property.pipelineId">PipelineId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsDatapipelinePipeline.DataAwsDatapipelinePipeline.property.region">Region</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsDatapipelinePipeline.DataAwsDatapipelinePipeline.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
 
 ---
@@ -580,6 +589,16 @@ public string PipelineIdInput { get; }
 
 ---
 
+##### `RegionInput`<sup>Optional</sup> <a name="RegionInput" id="@cdktf/provider-aws.dataAwsDatapipelinePipeline.DataAwsDatapipelinePipeline.property.regionInput"></a>
+
+```csharp
+public string RegionInput { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `TagsInput`<sup>Optional</sup> <a name="TagsInput" id="@cdktf/provider-aws.dataAwsDatapipelinePipeline.DataAwsDatapipelinePipeline.property.tagsInput"></a>
 
 ```csharp
@@ -604,6 +623,16 @@ public string Id { get; }
 
 ```csharp
 public string PipelineId { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Region`<sup>Required</sup> <a name="Region" id="@cdktf/provider-aws.dataAwsDatapipelinePipeline.DataAwsDatapipelinePipeline.property.region"></a>
+
+```csharp
+public string Region { get; }
 ```
 
 - *Type:* string
@@ -657,6 +686,7 @@ new DataAwsDatapipelinePipelineConfig {
     object[] Provisioners = null,
     string PipelineId,
     string Id = null,
+    string Region = null,
     System.Collections.Generic.IDictionary<string, string> Tags = null
 };
 ```
@@ -672,9 +702,10 @@ new DataAwsDatapipelinePipelineConfig {
 | <code><a href="#@cdktf/provider-aws.dataAwsDatapipelinePipeline.DataAwsDatapipelinePipelineConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsDatapipelinePipeline.DataAwsDatapipelinePipelineConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsDatapipelinePipeline.DataAwsDatapipelinePipelineConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsDatapipelinePipeline.DataAwsDatapipelinePipelineConfig.property.pipelineId">PipelineId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/datapipeline_pipeline#pipeline_id DataAwsDatapipelinePipeline#pipeline_id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsDatapipelinePipeline.DataAwsDatapipelinePipelineConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/datapipeline_pipeline#id DataAwsDatapipelinePipeline#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsDatapipelinePipeline.DataAwsDatapipelinePipelineConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/datapipeline_pipeline#tags DataAwsDatapipelinePipeline#tags}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsDatapipelinePipeline.DataAwsDatapipelinePipelineConfig.property.pipelineId">PipelineId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/datapipeline_pipeline#pipeline_id DataAwsDatapipelinePipeline#pipeline_id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsDatapipelinePipeline.DataAwsDatapipelinePipelineConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/datapipeline_pipeline#id DataAwsDatapipelinePipeline#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsDatapipelinePipeline.DataAwsDatapipelinePipelineConfig.property.region">Region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
+| <code><a href="#@cdktf/provider-aws.dataAwsDatapipelinePipeline.DataAwsDatapipelinePipelineConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/datapipeline_pipeline#tags DataAwsDatapipelinePipeline#tags}. |
 
 ---
 
@@ -756,7 +787,7 @@ public string PipelineId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/datapipeline_pipeline#pipeline_id DataAwsDatapipelinePipeline#pipeline_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/datapipeline_pipeline#pipeline_id DataAwsDatapipelinePipeline#pipeline_id}.
 
 ---
 
@@ -768,10 +799,24 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/datapipeline_pipeline#id DataAwsDatapipelinePipeline#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/datapipeline_pipeline#id DataAwsDatapipelinePipeline#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `Region`<sup>Optional</sup> <a name="Region" id="@cdktf/provider-aws.dataAwsDatapipelinePipeline.DataAwsDatapipelinePipelineConfig.property.region"></a>
+
+```csharp
+public string Region { get; set; }
+```
+
+- *Type:* string
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/datapipeline_pipeline#region DataAwsDatapipelinePipeline#region}
 
 ---
 
@@ -783,7 +828,7 @@ public System.Collections.Generic.IDictionary<string, string> Tags { get; set; }
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/datapipeline_pipeline#tags DataAwsDatapipelinePipeline#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/datapipeline_pipeline#tags DataAwsDatapipelinePipeline#tags}.
 
 ---
 

@@ -4,12 +4,12 @@
 
 ### DataAwsDynamodbTables <a name="DataAwsDynamodbTables" id="@cdktf/provider-aws.dataAwsDynamodbTables.DataAwsDynamodbTables"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/dynamodb_tables aws_dynamodb_tables}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/dynamodb_tables aws_dynamodb_tables}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsDynamodbTables.DataAwsDynamodbTables.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsdynamodbtables"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsdynamodbtables"
 
 dataawsdynamodbtables.NewDataAwsDynamodbTables(scope Construct, id *string, config DataAwsDynamodbTablesConfig) DataAwsDynamodbTables
 ```
@@ -67,6 +67,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.dataAwsDynamodbTables.DataAwsDynamodbTables.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsDynamodbTables.DataAwsDynamodbTables.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsDynamodbTables.DataAwsDynamodbTables.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsDynamodbTables.DataAwsDynamodbTables.resetRegion">ResetRegion</a></code> | *No description.* |
 
 ---
 
@@ -262,6 +263,12 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 
 ---
 
+##### `ResetRegion` <a name="ResetRegion" id="@cdktf/provider-aws.dataAwsDynamodbTables.DataAwsDynamodbTables.resetRegion"></a>
+
+```go
+func ResetRegion()
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -276,7 +283,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsDynamodbTables.DataAwsDynamodbTables.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsdynamodbtables"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsdynamodbtables"
 
 dataawsdynamodbtables.DataAwsDynamodbTables_IsConstruct(x interface{}) *bool
 ```
@@ -308,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsDynamodbTables.DataAwsDynamodbTables.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsdynamodbtables"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsdynamodbtables"
 
 dataawsdynamodbtables.DataAwsDynamodbTables_IsTerraformElement(x interface{}) *bool
 ```
@@ -322,7 +329,7 @@ dataawsdynamodbtables.DataAwsDynamodbTables_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsDynamodbTables.DataAwsDynamodbTables.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsdynamodbtables"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsdynamodbtables"
 
 dataawsdynamodbtables.DataAwsDynamodbTables_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -336,7 +343,7 @@ dataawsdynamodbtables.DataAwsDynamodbTables_IsTerraformDataSource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsDynamodbTables.DataAwsDynamodbTables.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsdynamodbtables"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsdynamodbtables"
 
 dataawsdynamodbtables.DataAwsDynamodbTables_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -365,7 +372,7 @@ The construct id used in the generated config for the DataAwsDynamodbTables to i
 
 The id of the existing DataAwsDynamodbTables that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/dynamodb_tables#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/dynamodb_tables#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -394,6 +401,8 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.dataAwsDynamodbTables.DataAwsDynamodbTables.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsDynamodbTables.DataAwsDynamodbTables.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsDynamodbTables.DataAwsDynamodbTables.property.names">Names</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsDynamodbTables.DataAwsDynamodbTables.property.regionInput">RegionInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsDynamodbTables.DataAwsDynamodbTables.property.region">Region</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
@@ -529,6 +538,26 @@ func Names() *[]*string
 
 ---
 
+##### `RegionInput`<sup>Optional</sup> <a name="RegionInput" id="@cdktf/provider-aws.dataAwsDynamodbTables.DataAwsDynamodbTables.property.regionInput"></a>
+
+```go
+func RegionInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Region`<sup>Required</sup> <a name="Region" id="@cdktf/provider-aws.dataAwsDynamodbTables.DataAwsDynamodbTables.property.region"></a>
+
+```go
+func Region() *string
+```
+
+- *Type:* *string
+
+---
+
 #### Constants <a name="Constants" id="Constants"></a>
 
 | **Name** | **Type** | **Description** |
@@ -554,7 +583,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsDynamodbTables.DataAwsDynamodbTablesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsdynamodbtables"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsdynamodbtables"
 
 &dataawsdynamodbtables.DataAwsDynamodbTablesConfig {
 	Connection: interface{},
@@ -564,6 +593,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsdynamodbtables"
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
+	Region: *string,
 }
 ```
 
@@ -578,6 +608,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsdynamodbtables"
 | <code><a href="#@cdktf/provider-aws.dataAwsDynamodbTables.DataAwsDynamodbTablesConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsDynamodbTables.DataAwsDynamodbTablesConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsDynamodbTables.DataAwsDynamodbTablesConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsDynamodbTables.DataAwsDynamodbTablesConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
 
@@ -648,6 +679,20 @@ Provisioners *[]interface{}
 ```
 
 - *Type:* *[]interface{}
+
+---
+
+##### `Region`<sup>Optional</sup> <a name="Region" id="@cdktf/provider-aws.dataAwsDynamodbTables.DataAwsDynamodbTablesConfig.property.region"></a>
+
+```go
+Region *string
+```
+
+- *Type:* *string
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/dynamodb_tables#region DataAwsDynamodbTables#region}
 
 ---
 

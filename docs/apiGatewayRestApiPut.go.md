@@ -4,12 +4,12 @@
 
 ### ApiGatewayRestApiPut <a name="ApiGatewayRestApiPut" id="@cdktf/provider-aws.apiGatewayRestApiPut.ApiGatewayRestApiPut"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/api_gateway_rest_api_put aws_api_gateway_rest_api_put}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/api_gateway_rest_api_put aws_api_gateway_rest_api_put}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.apiGatewayRestApiPut.ApiGatewayRestApiPut.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/apigatewayrestapiput"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/apigatewayrestapiput"
 
 apigatewayrestapiput.NewApiGatewayRestApiPut(scope Construct, id *string, config ApiGatewayRestApiPutConfig) ApiGatewayRestApiPut
 ```
@@ -76,6 +76,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.apiGatewayRestApiPut.ApiGatewayRestApiPut.putTimeouts">PutTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.apiGatewayRestApiPut.ApiGatewayRestApiPut.resetFailOnWarnings">ResetFailOnWarnings</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.apiGatewayRestApiPut.ApiGatewayRestApiPut.resetParameters">ResetParameters</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.apiGatewayRestApiPut.ApiGatewayRestApiPut.resetRegion">ResetRegion</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.apiGatewayRestApiPut.ApiGatewayRestApiPut.resetTimeouts">ResetTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.apiGatewayRestApiPut.ApiGatewayRestApiPut.resetTriggers">ResetTriggers</a></code> | *No description.* |
 
@@ -393,6 +394,12 @@ func ResetFailOnWarnings()
 func ResetParameters()
 ```
 
+##### `ResetRegion` <a name="ResetRegion" id="@cdktf/provider-aws.apiGatewayRestApiPut.ApiGatewayRestApiPut.resetRegion"></a>
+
+```go
+func ResetRegion()
+```
+
 ##### `ResetTimeouts` <a name="ResetTimeouts" id="@cdktf/provider-aws.apiGatewayRestApiPut.ApiGatewayRestApiPut.resetTimeouts"></a>
 
 ```go
@@ -419,7 +426,7 @@ func ResetTriggers()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.apiGatewayRestApiPut.ApiGatewayRestApiPut.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/apigatewayrestapiput"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/apigatewayrestapiput"
 
 apigatewayrestapiput.ApiGatewayRestApiPut_IsConstruct(x interface{}) *bool
 ```
@@ -451,7 +458,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.apiGatewayRestApiPut.ApiGatewayRestApiPut.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/apigatewayrestapiput"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/apigatewayrestapiput"
 
 apigatewayrestapiput.ApiGatewayRestApiPut_IsTerraformElement(x interface{}) *bool
 ```
@@ -465,7 +472,7 @@ apigatewayrestapiput.ApiGatewayRestApiPut_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.apiGatewayRestApiPut.ApiGatewayRestApiPut.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/apigatewayrestapiput"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/apigatewayrestapiput"
 
 apigatewayrestapiput.ApiGatewayRestApiPut_IsTerraformResource(x interface{}) *bool
 ```
@@ -479,7 +486,7 @@ apigatewayrestapiput.ApiGatewayRestApiPut_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.apiGatewayRestApiPut.ApiGatewayRestApiPut.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/apigatewayrestapiput"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/apigatewayrestapiput"
 
 apigatewayrestapiput.ApiGatewayRestApiPut_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -508,7 +515,7 @@ The construct id used in the generated config for the ApiGatewayRestApiPut to im
 
 The id of the existing ApiGatewayRestApiPut that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/api_gateway_rest_api_put#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/api_gateway_rest_api_put#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -542,12 +549,14 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.apiGatewayRestApiPut.ApiGatewayRestApiPut.property.bodyInput">BodyInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.apiGatewayRestApiPut.ApiGatewayRestApiPut.property.failOnWarningsInput">FailOnWarningsInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.apiGatewayRestApiPut.ApiGatewayRestApiPut.property.parametersInput">ParametersInput</a></code> | <code>*map[string]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.apiGatewayRestApiPut.ApiGatewayRestApiPut.property.regionInput">RegionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.apiGatewayRestApiPut.ApiGatewayRestApiPut.property.restApiIdInput">RestApiIdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.apiGatewayRestApiPut.ApiGatewayRestApiPut.property.timeoutsInput">TimeoutsInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.apiGatewayRestApiPut.ApiGatewayRestApiPut.property.triggersInput">TriggersInput</a></code> | <code>*map[string]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.apiGatewayRestApiPut.ApiGatewayRestApiPut.property.body">Body</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.apiGatewayRestApiPut.ApiGatewayRestApiPut.property.failOnWarnings">FailOnWarnings</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.apiGatewayRestApiPut.ApiGatewayRestApiPut.property.parameters">Parameters</a></code> | <code>*map[string]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.apiGatewayRestApiPut.ApiGatewayRestApiPut.property.region">Region</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.apiGatewayRestApiPut.ApiGatewayRestApiPut.property.restApiId">RestApiId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.apiGatewayRestApiPut.ApiGatewayRestApiPut.property.triggers">Triggers</a></code> | <code>*map[string]*string</code> | *No description.* |
 
@@ -735,6 +744,16 @@ func ParametersInput() *map[string]*string
 
 ---
 
+##### `RegionInput`<sup>Optional</sup> <a name="RegionInput" id="@cdktf/provider-aws.apiGatewayRestApiPut.ApiGatewayRestApiPut.property.regionInput"></a>
+
+```go
+func RegionInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `RestApiIdInput`<sup>Optional</sup> <a name="RestApiIdInput" id="@cdktf/provider-aws.apiGatewayRestApiPut.ApiGatewayRestApiPut.property.restApiIdInput"></a>
 
 ```go
@@ -795,6 +814,16 @@ func Parameters() *map[string]*string
 
 ---
 
+##### `Region`<sup>Required</sup> <a name="Region" id="@cdktf/provider-aws.apiGatewayRestApiPut.ApiGatewayRestApiPut.property.region"></a>
+
+```go
+func Region() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `RestApiId`<sup>Required</sup> <a name="RestApiId" id="@cdktf/provider-aws.apiGatewayRestApiPut.ApiGatewayRestApiPut.property.restApiId"></a>
 
 ```go
@@ -840,7 +869,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.apiGatewayRestApiPut.ApiGatewayRestApiPutConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/apigatewayrestapiput"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/apigatewayrestapiput"
 
 &apigatewayrestapiput.ApiGatewayRestApiPutConfig {
 	Connection: interface{},
@@ -854,7 +883,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/apigatewayrestapiput"
 	RestApiId: *string,
 	FailOnWarnings: interface{},
 	Parameters: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v20.apiGatewayRestApiPut.ApiGatewayRestApiPutTimeouts,
+	Region: *string,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v21.apiGatewayRestApiPut.ApiGatewayRestApiPutTimeouts,
 	Triggers: *map[string]*string,
 }
 ```
@@ -870,12 +900,13 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/apigatewayrestapiput"
 | <code><a href="#@cdktf/provider-aws.apiGatewayRestApiPut.ApiGatewayRestApiPutConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.apiGatewayRestApiPut.ApiGatewayRestApiPutConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.apiGatewayRestApiPut.ApiGatewayRestApiPutConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apiGatewayRestApiPut.ApiGatewayRestApiPutConfig.property.body">Body</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/api_gateway_rest_api_put#body ApiGatewayRestApiPut#body}. |
-| <code><a href="#@cdktf/provider-aws.apiGatewayRestApiPut.ApiGatewayRestApiPutConfig.property.restApiId">RestApiId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/api_gateway_rest_api_put#rest_api_id ApiGatewayRestApiPut#rest_api_id}. |
-| <code><a href="#@cdktf/provider-aws.apiGatewayRestApiPut.ApiGatewayRestApiPutConfig.property.failOnWarnings">FailOnWarnings</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/api_gateway_rest_api_put#fail_on_warnings ApiGatewayRestApiPut#fail_on_warnings}. |
-| <code><a href="#@cdktf/provider-aws.apiGatewayRestApiPut.ApiGatewayRestApiPutConfig.property.parameters">Parameters</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/api_gateway_rest_api_put#parameters ApiGatewayRestApiPut#parameters}. |
+| <code><a href="#@cdktf/provider-aws.apiGatewayRestApiPut.ApiGatewayRestApiPutConfig.property.body">Body</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/api_gateway_rest_api_put#body ApiGatewayRestApiPut#body}. |
+| <code><a href="#@cdktf/provider-aws.apiGatewayRestApiPut.ApiGatewayRestApiPutConfig.property.restApiId">RestApiId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/api_gateway_rest_api_put#rest_api_id ApiGatewayRestApiPut#rest_api_id}. |
+| <code><a href="#@cdktf/provider-aws.apiGatewayRestApiPut.ApiGatewayRestApiPutConfig.property.failOnWarnings">FailOnWarnings</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/api_gateway_rest_api_put#fail_on_warnings ApiGatewayRestApiPut#fail_on_warnings}. |
+| <code><a href="#@cdktf/provider-aws.apiGatewayRestApiPut.ApiGatewayRestApiPutConfig.property.parameters">Parameters</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/api_gateway_rest_api_put#parameters ApiGatewayRestApiPut#parameters}. |
+| <code><a href="#@cdktf/provider-aws.apiGatewayRestApiPut.ApiGatewayRestApiPutConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktf/provider-aws.apiGatewayRestApiPut.ApiGatewayRestApiPutConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-aws.apiGatewayRestApiPut.ApiGatewayRestApiPutTimeouts">ApiGatewayRestApiPutTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktf/provider-aws.apiGatewayRestApiPut.ApiGatewayRestApiPutConfig.property.triggers">Triggers</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/api_gateway_rest_api_put#triggers ApiGatewayRestApiPut#triggers}. |
+| <code><a href="#@cdktf/provider-aws.apiGatewayRestApiPut.ApiGatewayRestApiPutConfig.property.triggers">Triggers</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/api_gateway_rest_api_put#triggers ApiGatewayRestApiPut#triggers}. |
 
 ---
 
@@ -957,7 +988,7 @@ Body *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/api_gateway_rest_api_put#body ApiGatewayRestApiPut#body}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/api_gateway_rest_api_put#body ApiGatewayRestApiPut#body}.
 
 ---
 
@@ -969,7 +1000,7 @@ RestApiId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/api_gateway_rest_api_put#rest_api_id ApiGatewayRestApiPut#rest_api_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/api_gateway_rest_api_put#rest_api_id ApiGatewayRestApiPut#rest_api_id}.
 
 ---
 
@@ -981,7 +1012,7 @@ FailOnWarnings interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/api_gateway_rest_api_put#fail_on_warnings ApiGatewayRestApiPut#fail_on_warnings}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/api_gateway_rest_api_put#fail_on_warnings ApiGatewayRestApiPut#fail_on_warnings}.
 
 ---
 
@@ -993,7 +1024,21 @@ Parameters *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/api_gateway_rest_api_put#parameters ApiGatewayRestApiPut#parameters}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/api_gateway_rest_api_put#parameters ApiGatewayRestApiPut#parameters}.
+
+---
+
+##### `Region`<sup>Optional</sup> <a name="Region" id="@cdktf/provider-aws.apiGatewayRestApiPut.ApiGatewayRestApiPutConfig.property.region"></a>
+
+```go
+Region *string
+```
+
+- *Type:* *string
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/api_gateway_rest_api_put#region ApiGatewayRestApiPut#region}
 
 ---
 
@@ -1007,7 +1052,7 @@ Timeouts ApiGatewayRestApiPutTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/api_gateway_rest_api_put#timeouts ApiGatewayRestApiPut#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/api_gateway_rest_api_put#timeouts ApiGatewayRestApiPut#timeouts}
 
 ---
 
@@ -1019,7 +1064,7 @@ Triggers *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/api_gateway_rest_api_put#triggers ApiGatewayRestApiPut#triggers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/api_gateway_rest_api_put#triggers ApiGatewayRestApiPut#triggers}.
 
 ---
 
@@ -1028,7 +1073,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.apiGatewayRestApiPut.ApiGatewayRestApiPutTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/apigatewayrestapiput"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/apigatewayrestapiput"
 
 &apigatewayrestapiput.ApiGatewayRestApiPutTimeouts {
 	Create: *string,
@@ -1053,7 +1098,7 @@ Create *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/api_gateway_rest_api_put#create ApiGatewayRestApiPut#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/api_gateway_rest_api_put#create ApiGatewayRestApiPut#create}
 
 ---
 
@@ -1064,7 +1109,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.apiGatewayRestApiPut.ApiGatewayRestApiPutTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/apigatewayrestapiput"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/apigatewayrestapiput"
 
 apigatewayrestapiput.NewApiGatewayRestApiPutTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApiGatewayRestApiPutTimeoutsOutputReference
 ```

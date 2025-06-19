@@ -4,12 +4,12 @@
 
 ### MskConfiguration <a name="MskConfiguration" id="@cdktf/provider-aws.mskConfiguration.MskConfiguration"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/msk_configuration aws_msk_configuration}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/msk_configuration aws_msk_configuration}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.mskConfiguration.MskConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/mskconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/mskconfiguration"
 
 mskconfiguration.NewMskConfiguration(scope Construct, id *string, config MskConfigurationConfig) MskConfiguration
 ```
@@ -76,6 +76,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.mskConfiguration.MskConfiguration.resetDescription">ResetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.mskConfiguration.MskConfiguration.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.mskConfiguration.MskConfiguration.resetKafkaVersions">ResetKafkaVersions</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.mskConfiguration.MskConfiguration.resetRegion">ResetRegion</a></code> | *No description.* |
 
 ---
 
@@ -385,6 +386,12 @@ func ResetId()
 func ResetKafkaVersions()
 ```
 
+##### `ResetRegion` <a name="ResetRegion" id="@cdktf/provider-aws.mskConfiguration.MskConfiguration.resetRegion"></a>
+
+```go
+func ResetRegion()
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -399,7 +406,7 @@ func ResetKafkaVersions()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.mskConfiguration.MskConfiguration.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/mskconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/mskconfiguration"
 
 mskconfiguration.MskConfiguration_IsConstruct(x interface{}) *bool
 ```
@@ -431,7 +438,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.mskConfiguration.MskConfiguration.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/mskconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/mskconfiguration"
 
 mskconfiguration.MskConfiguration_IsTerraformElement(x interface{}) *bool
 ```
@@ -445,7 +452,7 @@ mskconfiguration.MskConfiguration_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.mskConfiguration.MskConfiguration.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/mskconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/mskconfiguration"
 
 mskconfiguration.MskConfiguration_IsTerraformResource(x interface{}) *bool
 ```
@@ -459,7 +466,7 @@ mskconfiguration.MskConfiguration_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.mskConfiguration.MskConfiguration.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/mskconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/mskconfiguration"
 
 mskconfiguration.MskConfiguration_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -488,7 +495,7 @@ The construct id used in the generated config for the MskConfiguration to import
 
 The id of the existing MskConfiguration that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/msk_configuration#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/msk_configuration#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -524,11 +531,13 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.mskConfiguration.MskConfiguration.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.mskConfiguration.MskConfiguration.property.kafkaVersionsInput">KafkaVersionsInput</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.mskConfiguration.MskConfiguration.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.mskConfiguration.MskConfiguration.property.regionInput">RegionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.mskConfiguration.MskConfiguration.property.serverPropertiesInput">ServerPropertiesInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.mskConfiguration.MskConfiguration.property.description">Description</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.mskConfiguration.MskConfiguration.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.mskConfiguration.MskConfiguration.property.kafkaVersions">KafkaVersions</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.mskConfiguration.MskConfiguration.property.name">Name</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.mskConfiguration.MskConfiguration.property.region">Region</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.mskConfiguration.MskConfiguration.property.serverProperties">ServerProperties</a></code> | <code>*string</code> | *No description.* |
 
 ---
@@ -735,6 +744,16 @@ func NameInput() *string
 
 ---
 
+##### `RegionInput`<sup>Optional</sup> <a name="RegionInput" id="@cdktf/provider-aws.mskConfiguration.MskConfiguration.property.regionInput"></a>
+
+```go
+func RegionInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `ServerPropertiesInput`<sup>Optional</sup> <a name="ServerPropertiesInput" id="@cdktf/provider-aws.mskConfiguration.MskConfiguration.property.serverPropertiesInput"></a>
 
 ```go
@@ -785,6 +804,16 @@ func Name() *string
 
 ---
 
+##### `Region`<sup>Required</sup> <a name="Region" id="@cdktf/provider-aws.mskConfiguration.MskConfiguration.property.region"></a>
+
+```go
+func Region() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `ServerProperties`<sup>Required</sup> <a name="ServerProperties" id="@cdktf/provider-aws.mskConfiguration.MskConfiguration.property.serverProperties"></a>
 
 ```go
@@ -820,7 +849,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.mskConfiguration.MskConfigurationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/mskconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/mskconfiguration"
 
 &mskconfiguration.MskConfigurationConfig {
 	Connection: interface{},
@@ -835,6 +864,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/mskconfiguration"
 	Description: *string,
 	Id: *string,
 	KafkaVersions: *[]*string,
+	Region: *string,
 }
 ```
 
@@ -849,11 +879,12 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/mskconfiguration"
 | <code><a href="#@cdktf/provider-aws.mskConfiguration.MskConfigurationConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.mskConfiguration.MskConfigurationConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.mskConfiguration.MskConfigurationConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.mskConfiguration.MskConfigurationConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/msk_configuration#name MskConfiguration#name}. |
-| <code><a href="#@cdktf/provider-aws.mskConfiguration.MskConfigurationConfig.property.serverProperties">ServerProperties</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/msk_configuration#server_properties MskConfiguration#server_properties}. |
-| <code><a href="#@cdktf/provider-aws.mskConfiguration.MskConfigurationConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/msk_configuration#description MskConfiguration#description}. |
-| <code><a href="#@cdktf/provider-aws.mskConfiguration.MskConfigurationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/msk_configuration#id MskConfiguration#id}. |
-| <code><a href="#@cdktf/provider-aws.mskConfiguration.MskConfigurationConfig.property.kafkaVersions">KafkaVersions</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/msk_configuration#kafka_versions MskConfiguration#kafka_versions}. |
+| <code><a href="#@cdktf/provider-aws.mskConfiguration.MskConfigurationConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/msk_configuration#name MskConfiguration#name}. |
+| <code><a href="#@cdktf/provider-aws.mskConfiguration.MskConfigurationConfig.property.serverProperties">ServerProperties</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/msk_configuration#server_properties MskConfiguration#server_properties}. |
+| <code><a href="#@cdktf/provider-aws.mskConfiguration.MskConfigurationConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/msk_configuration#description MskConfiguration#description}. |
+| <code><a href="#@cdktf/provider-aws.mskConfiguration.MskConfigurationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/msk_configuration#id MskConfiguration#id}. |
+| <code><a href="#@cdktf/provider-aws.mskConfiguration.MskConfigurationConfig.property.kafkaVersions">KafkaVersions</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/msk_configuration#kafka_versions MskConfiguration#kafka_versions}. |
+| <code><a href="#@cdktf/provider-aws.mskConfiguration.MskConfigurationConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
 
@@ -935,7 +966,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/msk_configuration#name MskConfiguration#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/msk_configuration#name MskConfiguration#name}.
 
 ---
 
@@ -947,7 +978,7 @@ ServerProperties *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/msk_configuration#server_properties MskConfiguration#server_properties}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/msk_configuration#server_properties MskConfiguration#server_properties}.
 
 ---
 
@@ -959,7 +990,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/msk_configuration#description MskConfiguration#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/msk_configuration#description MskConfiguration#description}.
 
 ---
 
@@ -971,7 +1002,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/msk_configuration#id MskConfiguration#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/msk_configuration#id MskConfiguration#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -986,7 +1017,21 @@ KafkaVersions *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/msk_configuration#kafka_versions MskConfiguration#kafka_versions}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/msk_configuration#kafka_versions MskConfiguration#kafka_versions}.
+
+---
+
+##### `Region`<sup>Optional</sup> <a name="Region" id="@cdktf/provider-aws.mskConfiguration.MskConfigurationConfig.property.region"></a>
+
+```go
+Region *string
+```
+
+- *Type:* *string
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/msk_configuration#region MskConfiguration#region}
 
 ---
 

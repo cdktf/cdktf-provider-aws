@@ -4,12 +4,12 @@
 
 ### Macie2Account <a name="Macie2Account" id="@cdktf/provider-aws.macie2Account.Macie2Account"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/macie2_account aws_macie2_account}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/macie2_account aws_macie2_account}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.macie2Account.Macie2Account.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/macie2account"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/macie2account"
 
 macie2account.NewMacie2Account(scope Construct, id *string, config Macie2AccountConfig) Macie2Account
 ```
@@ -75,6 +75,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.macie2Account.Macie2Account.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-aws.macie2Account.Macie2Account.resetFindingPublishingFrequency">ResetFindingPublishingFrequency</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.macie2Account.Macie2Account.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.macie2Account.Macie2Account.resetRegion">ResetRegion</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.macie2Account.Macie2Account.resetStatus">ResetStatus</a></code> | *No description.* |
 
 ---
@@ -379,6 +380,12 @@ func ResetFindingPublishingFrequency()
 func ResetId()
 ```
 
+##### `ResetRegion` <a name="ResetRegion" id="@cdktf/provider-aws.macie2Account.Macie2Account.resetRegion"></a>
+
+```go
+func ResetRegion()
+```
+
 ##### `ResetStatus` <a name="ResetStatus" id="@cdktf/provider-aws.macie2Account.Macie2Account.resetStatus"></a>
 
 ```go
@@ -399,7 +406,7 @@ func ResetStatus()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.macie2Account.Macie2Account.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/macie2account"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/macie2account"
 
 macie2account.Macie2Account_IsConstruct(x interface{}) *bool
 ```
@@ -431,7 +438,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.macie2Account.Macie2Account.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/macie2account"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/macie2account"
 
 macie2account.Macie2Account_IsTerraformElement(x interface{}) *bool
 ```
@@ -445,7 +452,7 @@ macie2account.Macie2Account_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.macie2Account.Macie2Account.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/macie2account"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/macie2account"
 
 macie2account.Macie2Account_IsTerraformResource(x interface{}) *bool
 ```
@@ -459,7 +466,7 @@ macie2account.Macie2Account_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.macie2Account.Macie2Account.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/macie2account"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/macie2account"
 
 macie2account.Macie2Account_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -488,7 +495,7 @@ The construct id used in the generated config for the Macie2Account to import.
 
 The id of the existing Macie2Account that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/macie2_account#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/macie2_account#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -523,9 +530,11 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.macie2Account.Macie2Account.property.updatedAt">UpdatedAt</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.macie2Account.Macie2Account.property.findingPublishingFrequencyInput">FindingPublishingFrequencyInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.macie2Account.Macie2Account.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.macie2Account.Macie2Account.property.regionInput">RegionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.macie2Account.Macie2Account.property.statusInput">StatusInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.macie2Account.Macie2Account.property.findingPublishingFrequency">FindingPublishingFrequency</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.macie2Account.Macie2Account.property.id">Id</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.macie2Account.Macie2Account.property.region">Region</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.macie2Account.Macie2Account.property.status">Status</a></code> | <code>*string</code> | *No description.* |
 
 ---
@@ -722,6 +731,16 @@ func IdInput() *string
 
 ---
 
+##### `RegionInput`<sup>Optional</sup> <a name="RegionInput" id="@cdktf/provider-aws.macie2Account.Macie2Account.property.regionInput"></a>
+
+```go
+func RegionInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `StatusInput`<sup>Optional</sup> <a name="StatusInput" id="@cdktf/provider-aws.macie2Account.Macie2Account.property.statusInput"></a>
 
 ```go
@@ -746,6 +765,16 @@ func FindingPublishingFrequency() *string
 
 ```go
 func Id() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Region`<sup>Required</sup> <a name="Region" id="@cdktf/provider-aws.macie2Account.Macie2Account.property.region"></a>
+
+```go
+func Region() *string
 ```
 
 - *Type:* *string
@@ -787,7 +816,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.macie2Account.Macie2AccountConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/macie2account"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/macie2account"
 
 &macie2account.Macie2AccountConfig {
 	Connection: interface{},
@@ -799,6 +828,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/macie2account"
 	Provisioners: *[]interface{},
 	FindingPublishingFrequency: *string,
 	Id: *string,
+	Region: *string,
 	Status: *string,
 }
 ```
@@ -814,9 +844,10 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/macie2account"
 | <code><a href="#@cdktf/provider-aws.macie2Account.Macie2AccountConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.macie2Account.Macie2AccountConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.macie2Account.Macie2AccountConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.macie2Account.Macie2AccountConfig.property.findingPublishingFrequency">FindingPublishingFrequency</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/macie2_account#finding_publishing_frequency Macie2Account#finding_publishing_frequency}. |
-| <code><a href="#@cdktf/provider-aws.macie2Account.Macie2AccountConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/macie2_account#id Macie2Account#id}. |
-| <code><a href="#@cdktf/provider-aws.macie2Account.Macie2AccountConfig.property.status">Status</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/macie2_account#status Macie2Account#status}. |
+| <code><a href="#@cdktf/provider-aws.macie2Account.Macie2AccountConfig.property.findingPublishingFrequency">FindingPublishingFrequency</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/macie2_account#finding_publishing_frequency Macie2Account#finding_publishing_frequency}. |
+| <code><a href="#@cdktf/provider-aws.macie2Account.Macie2AccountConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/macie2_account#id Macie2Account#id}. |
+| <code><a href="#@cdktf/provider-aws.macie2Account.Macie2AccountConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
+| <code><a href="#@cdktf/provider-aws.macie2Account.Macie2AccountConfig.property.status">Status</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/macie2_account#status Macie2Account#status}. |
 
 ---
 
@@ -898,7 +929,7 @@ FindingPublishingFrequency *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/macie2_account#finding_publishing_frequency Macie2Account#finding_publishing_frequency}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/macie2_account#finding_publishing_frequency Macie2Account#finding_publishing_frequency}.
 
 ---
 
@@ -910,10 +941,24 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/macie2_account#id Macie2Account#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/macie2_account#id Macie2Account#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `Region`<sup>Optional</sup> <a name="Region" id="@cdktf/provider-aws.macie2Account.Macie2AccountConfig.property.region"></a>
+
+```go
+Region *string
+```
+
+- *Type:* *string
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/macie2_account#region Macie2Account#region}
 
 ---
 
@@ -925,7 +970,7 @@ Status *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/macie2_account#status Macie2Account#status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/macie2_account#status Macie2Account#status}.
 
 ---
 

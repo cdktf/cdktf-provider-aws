@@ -4,7 +4,7 @@
 
 ### DataAwsSsmcontactsContact <a name="DataAwsSsmcontactsContact" id="@cdktf/provider-aws.dataAwsSsmcontactsContact.DataAwsSsmcontactsContact"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ssmcontacts_contact aws_ssmcontacts_contact}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ssmcontacts_contact aws_ssmcontacts_contact}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsSsmcontactsContact.DataAwsSsmcontactsContact.Initializer"></a>
 
@@ -23,6 +23,7 @@ dataAwsSsmcontactsContact.DataAwsSsmcontactsContact(
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
   arn: str,
   id: str = None,
+  region: str = None,
   tags: typing.Mapping[str] = None
 )
 ```
@@ -38,9 +39,10 @@ dataAwsSsmcontactsContact.DataAwsSsmcontactsContact(
 | <code><a href="#@cdktf/provider-aws.dataAwsSsmcontactsContact.DataAwsSsmcontactsContact.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsSsmcontactsContact.DataAwsSsmcontactsContact.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsSsmcontactsContact.DataAwsSsmcontactsContact.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsSsmcontactsContact.DataAwsSsmcontactsContact.Initializer.parameter.arn">arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ssmcontacts_contact#arn DataAwsSsmcontactsContact#arn}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsSsmcontactsContact.DataAwsSsmcontactsContact.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ssmcontacts_contact#id DataAwsSsmcontactsContact#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsSsmcontactsContact.DataAwsSsmcontactsContact.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ssmcontacts_contact#tags DataAwsSsmcontactsContact#tags}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsSsmcontactsContact.DataAwsSsmcontactsContact.Initializer.parameter.arn">arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ssmcontacts_contact#arn DataAwsSsmcontactsContact#arn}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsSsmcontactsContact.DataAwsSsmcontactsContact.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ssmcontacts_contact#id DataAwsSsmcontactsContact#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsSsmcontactsContact.DataAwsSsmcontactsContact.Initializer.parameter.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
+| <code><a href="#@cdktf/provider-aws.dataAwsSsmcontactsContact.DataAwsSsmcontactsContact.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ssmcontacts_contact#tags DataAwsSsmcontactsContact#tags}. |
 
 ---
 
@@ -108,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ssmcontacts_contact#arn DataAwsSsmcontactsContact#arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ssmcontacts_contact#arn DataAwsSsmcontactsContact#arn}.
 
 ---
 
@@ -116,10 +118,20 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ssmcontacts_contact#id DataAwsSsmcontactsContact#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ssmcontacts_contact#id DataAwsSsmcontactsContact#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdktf/provider-aws.dataAwsSsmcontactsContact.DataAwsSsmcontactsContact.Initializer.parameter.region"></a>
+
+- *Type:* str
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ssmcontacts_contact#region DataAwsSsmcontactsContact#region}
 
 ---
 
@@ -127,7 +139,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ssmcontacts_contact#tags DataAwsSsmcontactsContact#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ssmcontacts_contact#tags DataAwsSsmcontactsContact#tags}.
 
 ---
 
@@ -153,6 +165,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktf/provider-aws.dataAwsSsmcontactsContact.DataAwsSsmcontactsContact.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsSsmcontactsContact.DataAwsSsmcontactsContact.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsSsmcontactsContact.DataAwsSsmcontactsContact.resetId">reset_id</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsSsmcontactsContact.DataAwsSsmcontactsContact.resetRegion">reset_region</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsSsmcontactsContact.DataAwsSsmcontactsContact.resetTags">reset_tags</a></code> | *No description.* |
 
 ---
@@ -380,6 +393,12 @@ def interpolation_for_attribute(
 def reset_id() -> None
 ```
 
+##### `reset_region` <a name="reset_region" id="@cdktf/provider-aws.dataAwsSsmcontactsContact.DataAwsSsmcontactsContact.resetRegion"></a>
+
+```python
+def reset_region() -> None
+```
+
 ##### `reset_tags` <a name="reset_tags" id="@cdktf/provider-aws.dataAwsSsmcontactsContact.DataAwsSsmcontactsContact.resetTags"></a>
 
 ```python
@@ -500,7 +519,7 @@ The construct id used in the generated config for the DataAwsSsmcontactsContact 
 
 The id of the existing DataAwsSsmcontactsContact that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ssmcontacts_contact#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ssmcontacts_contact#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -533,9 +552,11 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.dataAwsSsmcontactsContact.DataAwsSsmcontactsContact.property.type">type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsSsmcontactsContact.DataAwsSsmcontactsContact.property.arnInput">arn_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsSsmcontactsContact.DataAwsSsmcontactsContact.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsSsmcontactsContact.DataAwsSsmcontactsContact.property.regionInput">region_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsSsmcontactsContact.DataAwsSsmcontactsContact.property.tagsInput">tags_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsSsmcontactsContact.DataAwsSsmcontactsContact.property.arn">arn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsSsmcontactsContact.DataAwsSsmcontactsContact.property.id">id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsSsmcontactsContact.DataAwsSsmcontactsContact.property.region">region</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsSsmcontactsContact.DataAwsSsmcontactsContact.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 
 ---
@@ -712,6 +733,16 @@ id_input: str
 
 ---
 
+##### `region_input`<sup>Optional</sup> <a name="region_input" id="@cdktf/provider-aws.dataAwsSsmcontactsContact.DataAwsSsmcontactsContact.property.regionInput"></a>
+
+```python
+region_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `tags_input`<sup>Optional</sup> <a name="tags_input" id="@cdktf/provider-aws.dataAwsSsmcontactsContact.DataAwsSsmcontactsContact.property.tagsInput"></a>
 
 ```python
@@ -736,6 +767,16 @@ arn: str
 
 ```python
 id: str
+```
+
+- *Type:* str
+
+---
+
+##### `region`<sup>Required</sup> <a name="region" id="@cdktf/provider-aws.dataAwsSsmcontactsContact.DataAwsSsmcontactsContact.property.region"></a>
+
+```python
+region: str
 ```
 
 - *Type:* str
@@ -789,6 +830,7 @@ dataAwsSsmcontactsContact.DataAwsSsmcontactsContactConfig(
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
   arn: str,
   id: str = None,
+  region: str = None,
   tags: typing.Mapping[str] = None
 )
 ```
@@ -804,9 +846,10 @@ dataAwsSsmcontactsContact.DataAwsSsmcontactsContactConfig(
 | <code><a href="#@cdktf/provider-aws.dataAwsSsmcontactsContact.DataAwsSsmcontactsContactConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsSsmcontactsContact.DataAwsSsmcontactsContactConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsSsmcontactsContact.DataAwsSsmcontactsContactConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsSsmcontactsContact.DataAwsSsmcontactsContactConfig.property.arn">arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ssmcontacts_contact#arn DataAwsSsmcontactsContact#arn}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsSsmcontactsContact.DataAwsSsmcontactsContactConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ssmcontacts_contact#id DataAwsSsmcontactsContact#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsSsmcontactsContact.DataAwsSsmcontactsContactConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ssmcontacts_contact#tags DataAwsSsmcontactsContact#tags}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsSsmcontactsContact.DataAwsSsmcontactsContactConfig.property.arn">arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ssmcontacts_contact#arn DataAwsSsmcontactsContact#arn}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsSsmcontactsContact.DataAwsSsmcontactsContactConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ssmcontacts_contact#id DataAwsSsmcontactsContact#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsSsmcontactsContact.DataAwsSsmcontactsContactConfig.property.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
+| <code><a href="#@cdktf/provider-aws.dataAwsSsmcontactsContact.DataAwsSsmcontactsContactConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ssmcontacts_contact#tags DataAwsSsmcontactsContact#tags}. |
 
 ---
 
@@ -888,7 +931,7 @@ arn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ssmcontacts_contact#arn DataAwsSsmcontactsContact#arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ssmcontacts_contact#arn DataAwsSsmcontactsContact#arn}.
 
 ---
 
@@ -900,10 +943,24 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ssmcontacts_contact#id DataAwsSsmcontactsContact#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ssmcontacts_contact#id DataAwsSsmcontactsContact#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdktf/provider-aws.dataAwsSsmcontactsContact.DataAwsSsmcontactsContactConfig.property.region"></a>
+
+```python
+region: str
+```
+
+- *Type:* str
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ssmcontacts_contact#region DataAwsSsmcontactsContact#region}
 
 ---
 
@@ -915,7 +972,7 @@ tags: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ssmcontacts_contact#tags DataAwsSsmcontactsContact#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ssmcontacts_contact#tags DataAwsSsmcontactsContact#tags}.
 
 ---
 

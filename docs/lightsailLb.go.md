@@ -4,12 +4,12 @@
 
 ### LightsailLb <a name="LightsailLb" id="@cdktf/provider-aws.lightsailLb.LightsailLb"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/lightsail_lb aws_lightsail_lb}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/lightsail_lb aws_lightsail_lb}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lightsailLb.LightsailLb.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/lightsaillb"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/lightsaillb"
 
 lightsaillb.NewLightsailLb(scope Construct, id *string, config LightsailLbConfig) LightsailLb
 ```
@@ -76,6 +76,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.lightsailLb.LightsailLb.resetHealthCheckPath">ResetHealthCheckPath</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lightsailLb.LightsailLb.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lightsailLb.LightsailLb.resetIpAddressType">ResetIpAddressType</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lightsailLb.LightsailLb.resetRegion">ResetRegion</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lightsailLb.LightsailLb.resetTags">ResetTags</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lightsailLb.LightsailLb.resetTagsAll">ResetTagsAll</a></code> | *No description.* |
 
@@ -387,6 +388,12 @@ func ResetId()
 func ResetIpAddressType()
 ```
 
+##### `ResetRegion` <a name="ResetRegion" id="@cdktf/provider-aws.lightsailLb.LightsailLb.resetRegion"></a>
+
+```go
+func ResetRegion()
+```
+
 ##### `ResetTags` <a name="ResetTags" id="@cdktf/provider-aws.lightsailLb.LightsailLb.resetTags"></a>
 
 ```go
@@ -413,7 +420,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.lightsailLb.LightsailLb.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/lightsaillb"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/lightsaillb"
 
 lightsaillb.LightsailLb_IsConstruct(x interface{}) *bool
 ```
@@ -445,7 +452,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.lightsailLb.LightsailLb.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/lightsaillb"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/lightsaillb"
 
 lightsaillb.LightsailLb_IsTerraformElement(x interface{}) *bool
 ```
@@ -459,7 +466,7 @@ lightsaillb.LightsailLb_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.lightsailLb.LightsailLb.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/lightsaillb"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/lightsaillb"
 
 lightsaillb.LightsailLb_IsTerraformResource(x interface{}) *bool
 ```
@@ -473,7 +480,7 @@ lightsaillb.LightsailLb_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.lightsailLb.LightsailLb.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/lightsaillb"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/lightsaillb"
 
 lightsaillb.LightsailLb_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -502,7 +509,7 @@ The construct id used in the generated config for the LightsailLb to import.
 
 The id of the existing LightsailLb that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/lightsail_lb#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/lightsail_lb#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -543,6 +550,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.lightsailLb.LightsailLb.property.instancePortInput">InstancePortInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lightsailLb.LightsailLb.property.ipAddressTypeInput">IpAddressTypeInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lightsailLb.LightsailLb.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lightsailLb.LightsailLb.property.regionInput">RegionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lightsailLb.LightsailLb.property.tagsAllInput">TagsAllInput</a></code> | <code>*map[string]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lightsailLb.LightsailLb.property.tagsInput">TagsInput</a></code> | <code>*map[string]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lightsailLb.LightsailLb.property.healthCheckPath">HealthCheckPath</a></code> | <code>*string</code> | *No description.* |
@@ -550,6 +558,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.lightsailLb.LightsailLb.property.instancePort">InstancePort</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lightsailLb.LightsailLb.property.ipAddressType">IpAddressType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lightsailLb.LightsailLb.property.name">Name</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lightsailLb.LightsailLb.property.region">Region</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lightsailLb.LightsailLb.property.tags">Tags</a></code> | <code>*map[string]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lightsailLb.LightsailLb.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | *No description.* |
 
@@ -807,6 +816,16 @@ func NameInput() *string
 
 ---
 
+##### `RegionInput`<sup>Optional</sup> <a name="RegionInput" id="@cdktf/provider-aws.lightsailLb.LightsailLb.property.regionInput"></a>
+
+```go
+func RegionInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `TagsAllInput`<sup>Optional</sup> <a name="TagsAllInput" id="@cdktf/provider-aws.lightsailLb.LightsailLb.property.tagsAllInput"></a>
 
 ```go
@@ -877,6 +896,16 @@ func Name() *string
 
 ---
 
+##### `Region`<sup>Required</sup> <a name="Region" id="@cdktf/provider-aws.lightsailLb.LightsailLb.property.region"></a>
+
+```go
+func Region() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `Tags`<sup>Required</sup> <a name="Tags" id="@cdktf/provider-aws.lightsailLb.LightsailLb.property.tags"></a>
 
 ```go
@@ -922,7 +951,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lightsailLb.LightsailLbConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/lightsaillb"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/lightsaillb"
 
 &lightsaillb.LightsailLbConfig {
 	Connection: interface{},
@@ -937,6 +966,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/lightsaillb"
 	HealthCheckPath: *string,
 	Id: *string,
 	IpAddressType: *string,
+	Region: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
 }
@@ -953,13 +983,14 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/lightsaillb"
 | <code><a href="#@cdktf/provider-aws.lightsailLb.LightsailLbConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lightsailLb.LightsailLbConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lightsailLb.LightsailLbConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lightsailLb.LightsailLbConfig.property.instancePort">InstancePort</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/lightsail_lb#instance_port LightsailLb#instance_port}. |
-| <code><a href="#@cdktf/provider-aws.lightsailLb.LightsailLbConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/lightsail_lb#name LightsailLb#name}. |
-| <code><a href="#@cdktf/provider-aws.lightsailLb.LightsailLbConfig.property.healthCheckPath">HealthCheckPath</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/lightsail_lb#health_check_path LightsailLb#health_check_path}. |
-| <code><a href="#@cdktf/provider-aws.lightsailLb.LightsailLbConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/lightsail_lb#id LightsailLb#id}. |
-| <code><a href="#@cdktf/provider-aws.lightsailLb.LightsailLbConfig.property.ipAddressType">IpAddressType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/lightsail_lb#ip_address_type LightsailLb#ip_address_type}. |
-| <code><a href="#@cdktf/provider-aws.lightsailLb.LightsailLbConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/lightsail_lb#tags LightsailLb#tags}. |
-| <code><a href="#@cdktf/provider-aws.lightsailLb.LightsailLbConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/lightsail_lb#tags_all LightsailLb#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.lightsailLb.LightsailLbConfig.property.instancePort">InstancePort</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/lightsail_lb#instance_port LightsailLb#instance_port}. |
+| <code><a href="#@cdktf/provider-aws.lightsailLb.LightsailLbConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/lightsail_lb#name LightsailLb#name}. |
+| <code><a href="#@cdktf/provider-aws.lightsailLb.LightsailLbConfig.property.healthCheckPath">HealthCheckPath</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/lightsail_lb#health_check_path LightsailLb#health_check_path}. |
+| <code><a href="#@cdktf/provider-aws.lightsailLb.LightsailLbConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/lightsail_lb#id LightsailLb#id}. |
+| <code><a href="#@cdktf/provider-aws.lightsailLb.LightsailLbConfig.property.ipAddressType">IpAddressType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/lightsail_lb#ip_address_type LightsailLb#ip_address_type}. |
+| <code><a href="#@cdktf/provider-aws.lightsailLb.LightsailLbConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
+| <code><a href="#@cdktf/provider-aws.lightsailLb.LightsailLbConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/lightsail_lb#tags LightsailLb#tags}. |
+| <code><a href="#@cdktf/provider-aws.lightsailLb.LightsailLbConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/lightsail_lb#tags_all LightsailLb#tags_all}. |
 
 ---
 
@@ -1041,7 +1072,7 @@ InstancePort *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/lightsail_lb#instance_port LightsailLb#instance_port}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/lightsail_lb#instance_port LightsailLb#instance_port}.
 
 ---
 
@@ -1053,7 +1084,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/lightsail_lb#name LightsailLb#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/lightsail_lb#name LightsailLb#name}.
 
 ---
 
@@ -1065,7 +1096,7 @@ HealthCheckPath *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/lightsail_lb#health_check_path LightsailLb#health_check_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/lightsail_lb#health_check_path LightsailLb#health_check_path}.
 
 ---
 
@@ -1077,7 +1108,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/lightsail_lb#id LightsailLb#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/lightsail_lb#id LightsailLb#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1092,7 +1123,21 @@ IpAddressType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/lightsail_lb#ip_address_type LightsailLb#ip_address_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/lightsail_lb#ip_address_type LightsailLb#ip_address_type}.
+
+---
+
+##### `Region`<sup>Optional</sup> <a name="Region" id="@cdktf/provider-aws.lightsailLb.LightsailLbConfig.property.region"></a>
+
+```go
+Region *string
+```
+
+- *Type:* *string
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/lightsail_lb#region LightsailLb#region}
 
 ---
 
@@ -1104,7 +1149,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/lightsail_lb#tags LightsailLb#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/lightsail_lb#tags LightsailLb#tags}.
 
 ---
 
@@ -1116,7 +1161,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/lightsail_lb#tags_all LightsailLb#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/lightsail_lb#tags_all LightsailLb#tags_all}.
 
 ---
 

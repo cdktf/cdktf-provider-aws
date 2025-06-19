@@ -4,12 +4,12 @@
 
 ### RekognitionCollection <a name="RekognitionCollection" id="@cdktf/provider-aws.rekognitionCollection.RekognitionCollection"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/rekognition_collection aws_rekognition_collection}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rekognition_collection aws_rekognition_collection}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.rekognitionCollection.RekognitionCollection.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/rekognitioncollection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/rekognitioncollection"
 
 rekognitioncollection.NewRekognitionCollection(scope Construct, id *string, config RekognitionCollectionConfig) RekognitionCollection
 ```
@@ -74,6 +74,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.rekognitionCollection.RekognitionCollection.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-aws.rekognitionCollection.RekognitionCollection.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-aws.rekognitionCollection.RekognitionCollection.putTimeouts">PutTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.rekognitionCollection.RekognitionCollection.resetRegion">ResetRegion</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.rekognitionCollection.RekognitionCollection.resetTags">ResetTags</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.rekognitionCollection.RekognitionCollection.resetTimeouts">ResetTimeouts</a></code> | *No description.* |
 
@@ -379,6 +380,12 @@ func PutTimeouts(value RekognitionCollectionTimeouts)
 
 ---
 
+##### `ResetRegion` <a name="ResetRegion" id="@cdktf/provider-aws.rekognitionCollection.RekognitionCollection.resetRegion"></a>
+
+```go
+func ResetRegion()
+```
+
 ##### `ResetTags` <a name="ResetTags" id="@cdktf/provider-aws.rekognitionCollection.RekognitionCollection.resetTags"></a>
 
 ```go
@@ -405,7 +412,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.rekognitionCollection.RekognitionCollection.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/rekognitioncollection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/rekognitioncollection"
 
 rekognitioncollection.RekognitionCollection_IsConstruct(x interface{}) *bool
 ```
@@ -437,7 +444,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.rekognitionCollection.RekognitionCollection.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/rekognitioncollection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/rekognitioncollection"
 
 rekognitioncollection.RekognitionCollection_IsTerraformElement(x interface{}) *bool
 ```
@@ -451,7 +458,7 @@ rekognitioncollection.RekognitionCollection_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.rekognitionCollection.RekognitionCollection.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/rekognitioncollection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/rekognitioncollection"
 
 rekognitioncollection.RekognitionCollection_IsTerraformResource(x interface{}) *bool
 ```
@@ -465,7 +472,7 @@ rekognitioncollection.RekognitionCollection_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.rekognitionCollection.RekognitionCollection.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/rekognitioncollection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/rekognitioncollection"
 
 rekognitioncollection.RekognitionCollection_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -494,7 +501,7 @@ The construct id used in the generated config for the RekognitionCollection to i
 
 The id of the existing RekognitionCollection that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/rekognition_collection#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rekognition_collection#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -530,9 +537,11 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.rekognitionCollection.RekognitionCollection.property.tagsAll">TagsAll</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.StringMap</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.rekognitionCollection.RekognitionCollection.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-aws.rekognitionCollection.RekognitionCollectionTimeoutsOutputReference">RekognitionCollectionTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.rekognitionCollection.RekognitionCollection.property.collectionIdInput">CollectionIdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.rekognitionCollection.RekognitionCollection.property.regionInput">RegionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.rekognitionCollection.RekognitionCollection.property.tagsInput">TagsInput</a></code> | <code>*map[string]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.rekognitionCollection.RekognitionCollection.property.timeoutsInput">TimeoutsInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.rekognitionCollection.RekognitionCollection.property.collectionId">CollectionId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.rekognitionCollection.RekognitionCollection.property.region">Region</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.rekognitionCollection.RekognitionCollection.property.tags">Tags</a></code> | <code>*map[string]*string</code> | *No description.* |
 
 ---
@@ -739,6 +748,16 @@ func CollectionIdInput() *string
 
 ---
 
+##### `RegionInput`<sup>Optional</sup> <a name="RegionInput" id="@cdktf/provider-aws.rekognitionCollection.RekognitionCollection.property.regionInput"></a>
+
+```go
+func RegionInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `TagsInput`<sup>Optional</sup> <a name="TagsInput" id="@cdktf/provider-aws.rekognitionCollection.RekognitionCollection.property.tagsInput"></a>
 
 ```go
@@ -763,6 +782,16 @@ func TimeoutsInput() interface{}
 
 ```go
 func CollectionId() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Region`<sup>Required</sup> <a name="Region" id="@cdktf/provider-aws.rekognitionCollection.RekognitionCollection.property.region"></a>
+
+```go
+func Region() *string
 ```
 
 - *Type:* *string
@@ -804,7 +833,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.rekognitionCollection.RekognitionCollectionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/rekognitioncollection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/rekognitioncollection"
 
 &rekognitioncollection.RekognitionCollectionConfig {
 	Connection: interface{},
@@ -815,8 +844,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/rekognitioncollection"
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	CollectionId: *string,
+	Region: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v20.rekognitionCollection.RekognitionCollectionTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v21.rekognitionCollection.RekognitionCollectionTimeouts,
 }
 ```
 
@@ -832,7 +862,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/rekognitioncollection"
 | <code><a href="#@cdktf/provider-aws.rekognitionCollection.RekognitionCollectionConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.rekognitionCollection.RekognitionCollectionConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.rekognitionCollection.RekognitionCollectionConfig.property.collectionId">CollectionId</a></code> | <code>*string</code> | The name of the Rekognition collection. |
-| <code><a href="#@cdktf/provider-aws.rekognitionCollection.RekognitionCollectionConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/rekognition_collection#tags RekognitionCollection#tags}. |
+| <code><a href="#@cdktf/provider-aws.rekognitionCollection.RekognitionCollectionConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
+| <code><a href="#@cdktf/provider-aws.rekognitionCollection.RekognitionCollectionConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rekognition_collection#tags RekognitionCollection#tags}. |
 | <code><a href="#@cdktf/provider-aws.rekognitionCollection.RekognitionCollectionConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-aws.rekognitionCollection.RekognitionCollectionTimeouts">RekognitionCollectionTimeouts</a></code> | timeouts block. |
 
 ---
@@ -917,7 +948,21 @@ CollectionId *string
 
 The name of the Rekognition collection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/rekognition_collection#collection_id RekognitionCollection#collection_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rekognition_collection#collection_id RekognitionCollection#collection_id}
+
+---
+
+##### `Region`<sup>Optional</sup> <a name="Region" id="@cdktf/provider-aws.rekognitionCollection.RekognitionCollectionConfig.property.region"></a>
+
+```go
+Region *string
+```
+
+- *Type:* *string
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rekognition_collection#region RekognitionCollection#region}
 
 ---
 
@@ -929,7 +974,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/rekognition_collection#tags RekognitionCollection#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rekognition_collection#tags RekognitionCollection#tags}.
 
 ---
 
@@ -943,7 +988,7 @@ Timeouts RekognitionCollectionTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/rekognition_collection#timeouts RekognitionCollection#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rekognition_collection#timeouts RekognitionCollection#timeouts}
 
 ---
 
@@ -952,7 +997,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.rekognitionCollection.RekognitionCollectionTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/rekognitioncollection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/rekognitioncollection"
 
 &rekognitioncollection.RekognitionCollectionTimeouts {
 	Create: *string,
@@ -977,7 +1022,7 @@ Create *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/rekognition_collection#create RekognitionCollection#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rekognition_collection#create RekognitionCollection#create}
 
 ---
 
@@ -988,7 +1033,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.rekognitionCollection.RekognitionCollectionTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/rekognitioncollection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/rekognitioncollection"
 
 rekognitioncollection.NewRekognitionCollectionTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RekognitionCollectionTimeoutsOutputReference
 ```

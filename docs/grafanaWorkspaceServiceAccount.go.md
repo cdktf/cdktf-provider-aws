@@ -4,12 +4,12 @@
 
 ### GrafanaWorkspaceServiceAccount <a name="GrafanaWorkspaceServiceAccount" id="@cdktf/provider-aws.grafanaWorkspaceServiceAccount.GrafanaWorkspaceServiceAccount"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/grafana_workspace_service_account aws_grafana_workspace_service_account}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/grafana_workspace_service_account aws_grafana_workspace_service_account}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.grafanaWorkspaceServiceAccount.GrafanaWorkspaceServiceAccount.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/grafanaworkspaceserviceaccount"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/grafanaworkspaceserviceaccount"
 
 grafanaworkspaceserviceaccount.NewGrafanaWorkspaceServiceAccount(scope Construct, id *string, config GrafanaWorkspaceServiceAccountConfig) GrafanaWorkspaceServiceAccount
 ```
@@ -73,6 +73,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.grafanaWorkspaceServiceAccount.GrafanaWorkspaceServiceAccount.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktf/provider-aws.grafanaWorkspaceServiceAccount.GrafanaWorkspaceServiceAccount.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-aws.grafanaWorkspaceServiceAccount.GrafanaWorkspaceServiceAccount.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktf/provider-aws.grafanaWorkspaceServiceAccount.GrafanaWorkspaceServiceAccount.resetRegion">ResetRegion</a></code> | *No description.* |
 
 ---
 
@@ -364,6 +365,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `ResetRegion` <a name="ResetRegion" id="@cdktf/provider-aws.grafanaWorkspaceServiceAccount.GrafanaWorkspaceServiceAccount.resetRegion"></a>
+
+```go
+func ResetRegion()
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -378,7 +385,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.grafanaWorkspaceServiceAccount.GrafanaWorkspaceServiceAccount.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/grafanaworkspaceserviceaccount"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/grafanaworkspaceserviceaccount"
 
 grafanaworkspaceserviceaccount.GrafanaWorkspaceServiceAccount_IsConstruct(x interface{}) *bool
 ```
@@ -410,7 +417,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.grafanaWorkspaceServiceAccount.GrafanaWorkspaceServiceAccount.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/grafanaworkspaceserviceaccount"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/grafanaworkspaceserviceaccount"
 
 grafanaworkspaceserviceaccount.GrafanaWorkspaceServiceAccount_IsTerraformElement(x interface{}) *bool
 ```
@@ -424,7 +431,7 @@ grafanaworkspaceserviceaccount.GrafanaWorkspaceServiceAccount_IsTerraformElement
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.grafanaWorkspaceServiceAccount.GrafanaWorkspaceServiceAccount.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/grafanaworkspaceserviceaccount"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/grafanaworkspaceserviceaccount"
 
 grafanaworkspaceserviceaccount.GrafanaWorkspaceServiceAccount_IsTerraformResource(x interface{}) *bool
 ```
@@ -438,7 +445,7 @@ grafanaworkspaceserviceaccount.GrafanaWorkspaceServiceAccount_IsTerraformResourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.grafanaWorkspaceServiceAccount.GrafanaWorkspaceServiceAccount.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/grafanaworkspaceserviceaccount"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/grafanaworkspaceserviceaccount"
 
 grafanaworkspaceserviceaccount.GrafanaWorkspaceServiceAccount_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -467,7 +474,7 @@ The construct id used in the generated config for the GrafanaWorkspaceServiceAcc
 
 The id of the existing GrafanaWorkspaceServiceAccount that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/grafana_workspace_service_account#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/grafana_workspace_service_account#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -501,9 +508,11 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.grafanaWorkspaceServiceAccount.GrafanaWorkspaceServiceAccount.property.serviceAccountId">ServiceAccountId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.grafanaWorkspaceServiceAccount.GrafanaWorkspaceServiceAccount.property.grafanaRoleInput">GrafanaRoleInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.grafanaWorkspaceServiceAccount.GrafanaWorkspaceServiceAccount.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.grafanaWorkspaceServiceAccount.GrafanaWorkspaceServiceAccount.property.regionInput">RegionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.grafanaWorkspaceServiceAccount.GrafanaWorkspaceServiceAccount.property.workspaceIdInput">WorkspaceIdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.grafanaWorkspaceServiceAccount.GrafanaWorkspaceServiceAccount.property.grafanaRole">GrafanaRole</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.grafanaWorkspaceServiceAccount.GrafanaWorkspaceServiceAccount.property.name">Name</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.grafanaWorkspaceServiceAccount.GrafanaWorkspaceServiceAccount.property.region">Region</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.grafanaWorkspaceServiceAccount.GrafanaWorkspaceServiceAccount.property.workspaceId">WorkspaceId</a></code> | <code>*string</code> | *No description.* |
 
 ---
@@ -690,6 +699,16 @@ func NameInput() *string
 
 ---
 
+##### `RegionInput`<sup>Optional</sup> <a name="RegionInput" id="@cdktf/provider-aws.grafanaWorkspaceServiceAccount.GrafanaWorkspaceServiceAccount.property.regionInput"></a>
+
+```go
+func RegionInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `WorkspaceIdInput`<sup>Optional</sup> <a name="WorkspaceIdInput" id="@cdktf/provider-aws.grafanaWorkspaceServiceAccount.GrafanaWorkspaceServiceAccount.property.workspaceIdInput"></a>
 
 ```go
@@ -714,6 +733,16 @@ func GrafanaRole() *string
 
 ```go
 func Name() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Region`<sup>Required</sup> <a name="Region" id="@cdktf/provider-aws.grafanaWorkspaceServiceAccount.GrafanaWorkspaceServiceAccount.property.region"></a>
+
+```go
+func Region() *string
 ```
 
 - *Type:* *string
@@ -755,7 +784,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.grafanaWorkspaceServiceAccount.GrafanaWorkspaceServiceAccountConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/grafanaworkspaceserviceaccount"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/grafanaworkspaceserviceaccount"
 
 &grafanaworkspaceserviceaccount.GrafanaWorkspaceServiceAccountConfig {
 	Connection: interface{},
@@ -768,6 +797,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/grafanaworkspaceserviceac
 	GrafanaRole: *string,
 	Name: *string,
 	WorkspaceId: *string,
+	Region: *string,
 }
 ```
 
@@ -782,9 +812,10 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/grafanaworkspaceserviceac
 | <code><a href="#@cdktf/provider-aws.grafanaWorkspaceServiceAccount.GrafanaWorkspaceServiceAccountConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.grafanaWorkspaceServiceAccount.GrafanaWorkspaceServiceAccountConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.grafanaWorkspaceServiceAccount.GrafanaWorkspaceServiceAccountConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.grafanaWorkspaceServiceAccount.GrafanaWorkspaceServiceAccountConfig.property.grafanaRole">GrafanaRole</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/grafana_workspace_service_account#grafana_role GrafanaWorkspaceServiceAccount#grafana_role}. |
-| <code><a href="#@cdktf/provider-aws.grafanaWorkspaceServiceAccount.GrafanaWorkspaceServiceAccountConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/grafana_workspace_service_account#name GrafanaWorkspaceServiceAccount#name}. |
-| <code><a href="#@cdktf/provider-aws.grafanaWorkspaceServiceAccount.GrafanaWorkspaceServiceAccountConfig.property.workspaceId">WorkspaceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/grafana_workspace_service_account#workspace_id GrafanaWorkspaceServiceAccount#workspace_id}. |
+| <code><a href="#@cdktf/provider-aws.grafanaWorkspaceServiceAccount.GrafanaWorkspaceServiceAccountConfig.property.grafanaRole">GrafanaRole</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/grafana_workspace_service_account#grafana_role GrafanaWorkspaceServiceAccount#grafana_role}. |
+| <code><a href="#@cdktf/provider-aws.grafanaWorkspaceServiceAccount.GrafanaWorkspaceServiceAccountConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/grafana_workspace_service_account#name GrafanaWorkspaceServiceAccount#name}. |
+| <code><a href="#@cdktf/provider-aws.grafanaWorkspaceServiceAccount.GrafanaWorkspaceServiceAccountConfig.property.workspaceId">WorkspaceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/grafana_workspace_service_account#workspace_id GrafanaWorkspaceServiceAccount#workspace_id}. |
+| <code><a href="#@cdktf/provider-aws.grafanaWorkspaceServiceAccount.GrafanaWorkspaceServiceAccountConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
 
@@ -866,7 +897,7 @@ GrafanaRole *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/grafana_workspace_service_account#grafana_role GrafanaWorkspaceServiceAccount#grafana_role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/grafana_workspace_service_account#grafana_role GrafanaWorkspaceServiceAccount#grafana_role}.
 
 ---
 
@@ -878,7 +909,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/grafana_workspace_service_account#name GrafanaWorkspaceServiceAccount#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/grafana_workspace_service_account#name GrafanaWorkspaceServiceAccount#name}.
 
 ---
 
@@ -890,7 +921,21 @@ WorkspaceId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/grafana_workspace_service_account#workspace_id GrafanaWorkspaceServiceAccount#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/grafana_workspace_service_account#workspace_id GrafanaWorkspaceServiceAccount#workspace_id}.
+
+---
+
+##### `Region`<sup>Optional</sup> <a name="Region" id="@cdktf/provider-aws.grafanaWorkspaceServiceAccount.GrafanaWorkspaceServiceAccountConfig.property.region"></a>
+
+```go
+Region *string
+```
+
+- *Type:* *string
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/grafana_workspace_service_account#region GrafanaWorkspaceServiceAccount#region}
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### DataAwsInspectorRulesPackages <a name="DataAwsInspectorRulesPackages" id="@cdktf/provider-aws.dataAwsInspectorRulesPackages.DataAwsInspectorRulesPackages"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/inspector_rules_packages aws_inspector_rules_packages}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/inspector_rules_packages aws_inspector_rules_packages}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsInspectorRulesPackages.DataAwsInspectorRulesPackages.Initializer"></a>
 
@@ -68,6 +68,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.dataAwsInspectorRulesPackages.DataAwsInspectorRulesPackages.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsInspectorRulesPackages.DataAwsInspectorRulesPackages.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsInspectorRulesPackages.DataAwsInspectorRulesPackages.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsInspectorRulesPackages.DataAwsInspectorRulesPackages.resetRegion">ResetRegion</a></code> | *No description.* |
 
 ---
 
@@ -269,6 +270,12 @@ private IResolvable InterpolationForAttribute(string TerraformAttribute)
 private void ResetId()
 ```
 
+##### `ResetRegion` <a name="ResetRegion" id="@cdktf/provider-aws.dataAwsInspectorRulesPackages.DataAwsInspectorRulesPackages.resetRegion"></a>
+
+```csharp
+private void ResetRegion()
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -372,7 +379,7 @@ The construct id used in the generated config for the DataAwsInspectorRulesPacka
 
 The id of the existing DataAwsInspectorRulesPackages that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/inspector_rules_packages#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/inspector_rules_packages#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -402,7 +409,9 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.dataAwsInspectorRulesPackages.DataAwsInspectorRulesPackages.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsInspectorRulesPackages.DataAwsInspectorRulesPackages.property.arns">Arns</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsInspectorRulesPackages.DataAwsInspectorRulesPackages.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsInspectorRulesPackages.DataAwsInspectorRulesPackages.property.regionInput">RegionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsInspectorRulesPackages.DataAwsInspectorRulesPackages.property.id">Id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsInspectorRulesPackages.DataAwsInspectorRulesPackages.property.region">Region</a></code> | <code>string</code> | *No description.* |
 
 ---
 
@@ -548,10 +557,30 @@ public string IdInput { get; }
 
 ---
 
+##### `RegionInput`<sup>Optional</sup> <a name="RegionInput" id="@cdktf/provider-aws.dataAwsInspectorRulesPackages.DataAwsInspectorRulesPackages.property.regionInput"></a>
+
+```csharp
+public string RegionInput { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-aws.dataAwsInspectorRulesPackages.DataAwsInspectorRulesPackages.property.id"></a>
 
 ```csharp
 public string Id { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Region`<sup>Required</sup> <a name="Region" id="@cdktf/provider-aws.dataAwsInspectorRulesPackages.DataAwsInspectorRulesPackages.property.region"></a>
+
+```csharp
+public string Region { get; }
 ```
 
 - *Type:* string
@@ -593,7 +622,8 @@ new DataAwsInspectorRulesPackagesConfig {
     TerraformResourceLifecycle Lifecycle = null,
     TerraformProvider Provider = null,
     object[] Provisioners = null,
-    string Id = null
+    string Id = null,
+    string Region = null
 };
 ```
 
@@ -608,7 +638,8 @@ new DataAwsInspectorRulesPackagesConfig {
 | <code><a href="#@cdktf/provider-aws.dataAwsInspectorRulesPackages.DataAwsInspectorRulesPackagesConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsInspectorRulesPackages.DataAwsInspectorRulesPackagesConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsInspectorRulesPackages.DataAwsInspectorRulesPackagesConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsInspectorRulesPackages.DataAwsInspectorRulesPackagesConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/inspector_rules_packages#id DataAwsInspectorRulesPackages#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsInspectorRulesPackages.DataAwsInspectorRulesPackagesConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/inspector_rules_packages#id DataAwsInspectorRulesPackages#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsInspectorRulesPackages.DataAwsInspectorRulesPackagesConfig.property.region">Region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
 
@@ -690,10 +721,24 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/inspector_rules_packages#id DataAwsInspectorRulesPackages#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/inspector_rules_packages#id DataAwsInspectorRulesPackages#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `Region`<sup>Optional</sup> <a name="Region" id="@cdktf/provider-aws.dataAwsInspectorRulesPackages.DataAwsInspectorRulesPackagesConfig.property.region"></a>
+
+```csharp
+public string Region { get; set; }
+```
+
+- *Type:* string
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/inspector_rules_packages#region DataAwsInspectorRulesPackages#region}
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### ServicequotasTemplate <a name="ServicequotasTemplate" id="@cdktf/provider-aws.servicequotasTemplate.ServicequotasTemplate"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/servicequotas_template aws_servicequotas_template}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/servicequotas_template aws_servicequotas_template}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.servicequotasTemplate.ServicequotasTemplate.Initializer"></a>
 
@@ -73,6 +73,8 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.servicequotasTemplate.ServicequotasTemplate.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktf/provider-aws.servicequotasTemplate.ServicequotasTemplate.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-aws.servicequotasTemplate.ServicequotasTemplate.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktf/provider-aws.servicequotasTemplate.ServicequotasTemplate.resetAwsRegion">ResetAwsRegion</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.servicequotasTemplate.ServicequotasTemplate.resetRegion">ResetRegion</a></code> | *No description.* |
 
 ---
 
@@ -364,6 +366,18 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `ResetAwsRegion` <a name="ResetAwsRegion" id="@cdktf/provider-aws.servicequotasTemplate.ServicequotasTemplate.resetAwsRegion"></a>
+
+```csharp
+private void ResetAwsRegion()
+```
+
+##### `ResetRegion` <a name="ResetRegion" id="@cdktf/provider-aws.servicequotasTemplate.ServicequotasTemplate.resetRegion"></a>
+
+```csharp
+private void ResetRegion()
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -467,7 +481,7 @@ The construct id used in the generated config for the ServicequotasTemplate to i
 
 The id of the existing ServicequotasTemplate that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/servicequotas_template#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/servicequotas_template#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -502,10 +516,12 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.servicequotasTemplate.ServicequotasTemplate.property.quotaName">QuotaName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.servicequotasTemplate.ServicequotasTemplate.property.serviceName">ServiceName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.servicequotasTemplate.ServicequotasTemplate.property.unit">Unit</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.servicequotasTemplate.ServicequotasTemplate.property.awsRegionInput">AwsRegionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.servicequotasTemplate.ServicequotasTemplate.property.quotaCodeInput">QuotaCodeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.servicequotasTemplate.ServicequotasTemplate.property.regionInput">RegionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.servicequotasTemplate.ServicequotasTemplate.property.serviceCodeInput">ServiceCodeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.servicequotasTemplate.ServicequotasTemplate.property.valueInput">ValueInput</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.servicequotasTemplate.ServicequotasTemplate.property.awsRegion">AwsRegion</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.servicequotasTemplate.ServicequotasTemplate.property.quotaCode">QuotaCode</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.servicequotasTemplate.ServicequotasTemplate.property.region">Region</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.servicequotasTemplate.ServicequotasTemplate.property.serviceCode">ServiceCode</a></code> | <code>string</code> | *No description.* |
@@ -705,6 +721,16 @@ public string Unit { get; }
 
 ---
 
+##### `AwsRegionInput`<sup>Optional</sup> <a name="AwsRegionInput" id="@cdktf/provider-aws.servicequotasTemplate.ServicequotasTemplate.property.awsRegionInput"></a>
+
+```csharp
+public string AwsRegionInput { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `QuotaCodeInput`<sup>Optional</sup> <a name="QuotaCodeInput" id="@cdktf/provider-aws.servicequotasTemplate.ServicequotasTemplate.property.quotaCodeInput"></a>
 
 ```csharp
@@ -742,6 +768,16 @@ public double ValueInput { get; }
 ```
 
 - *Type:* double
+
+---
+
+##### `AwsRegion`<sup>Required</sup> <a name="AwsRegion" id="@cdktf/provider-aws.servicequotasTemplate.ServicequotasTemplate.property.awsRegion"></a>
+
+```csharp
+public string AwsRegion { get; }
+```
+
+- *Type:* string
 
 ---
 
@@ -821,9 +857,10 @@ new ServicequotasTemplateConfig {
     TerraformProvider Provider = null,
     object[] Provisioners = null,
     string QuotaCode,
-    string Region,
     string ServiceCode,
-    double Value
+    double Value,
+    string AwsRegion = null,
+    string Region = null
 };
 ```
 
@@ -838,10 +875,11 @@ new ServicequotasTemplateConfig {
 | <code><a href="#@cdktf/provider-aws.servicequotasTemplate.ServicequotasTemplateConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.servicequotasTemplate.ServicequotasTemplateConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.servicequotasTemplate.ServicequotasTemplateConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.servicequotasTemplate.ServicequotasTemplateConfig.property.quotaCode">QuotaCode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/servicequotas_template#quota_code ServicequotasTemplate#quota_code}. |
-| <code><a href="#@cdktf/provider-aws.servicequotasTemplate.ServicequotasTemplateConfig.property.region">Region</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/servicequotas_template#region ServicequotasTemplate#region}. |
-| <code><a href="#@cdktf/provider-aws.servicequotasTemplate.ServicequotasTemplateConfig.property.serviceCode">ServiceCode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/servicequotas_template#service_code ServicequotasTemplate#service_code}. |
-| <code><a href="#@cdktf/provider-aws.servicequotasTemplate.ServicequotasTemplateConfig.property.value">Value</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/servicequotas_template#value ServicequotasTemplate#value}. |
+| <code><a href="#@cdktf/provider-aws.servicequotasTemplate.ServicequotasTemplateConfig.property.quotaCode">QuotaCode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/servicequotas_template#quota_code ServicequotasTemplate#quota_code}. |
+| <code><a href="#@cdktf/provider-aws.servicequotasTemplate.ServicequotasTemplateConfig.property.serviceCode">ServiceCode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/servicequotas_template#service_code ServicequotasTemplate#service_code}. |
+| <code><a href="#@cdktf/provider-aws.servicequotasTemplate.ServicequotasTemplateConfig.property.value">Value</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/servicequotas_template#value ServicequotasTemplate#value}. |
+| <code><a href="#@cdktf/provider-aws.servicequotasTemplate.ServicequotasTemplateConfig.property.awsRegion">AwsRegion</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/servicequotas_template#aws_region ServicequotasTemplate#aws_region}. |
+| <code><a href="#@cdktf/provider-aws.servicequotasTemplate.ServicequotasTemplateConfig.property.region">Region</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/servicequotas_template#region ServicequotasTemplate#region}. |
 
 ---
 
@@ -923,19 +961,7 @@ public string QuotaCode { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/servicequotas_template#quota_code ServicequotasTemplate#quota_code}.
-
----
-
-##### `Region`<sup>Required</sup> <a name="Region" id="@cdktf/provider-aws.servicequotasTemplate.ServicequotasTemplateConfig.property.region"></a>
-
-```csharp
-public string Region { get; set; }
-```
-
-- *Type:* string
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/servicequotas_template#region ServicequotasTemplate#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/servicequotas_template#quota_code ServicequotasTemplate#quota_code}.
 
 ---
 
@@ -947,7 +973,7 @@ public string ServiceCode { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/servicequotas_template#service_code ServicequotasTemplate#service_code}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/servicequotas_template#service_code ServicequotasTemplate#service_code}.
 
 ---
 
@@ -959,7 +985,31 @@ public double Value { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/servicequotas_template#value ServicequotasTemplate#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/servicequotas_template#value ServicequotasTemplate#value}.
+
+---
+
+##### `AwsRegion`<sup>Optional</sup> <a name="AwsRegion" id="@cdktf/provider-aws.servicequotasTemplate.ServicequotasTemplateConfig.property.awsRegion"></a>
+
+```csharp
+public string AwsRegion { get; set; }
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/servicequotas_template#aws_region ServicequotasTemplate#aws_region}.
+
+---
+
+##### `Region`<sup>Optional</sup> <a name="Region" id="@cdktf/provider-aws.servicequotasTemplate.ServicequotasTemplateConfig.property.region"></a>
+
+```csharp
+public string Region { get; set; }
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/servicequotas_template#region ServicequotasTemplate#region}.
 
 ---
 

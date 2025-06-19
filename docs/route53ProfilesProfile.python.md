@@ -4,7 +4,7 @@
 
 ### Route53ProfilesProfile <a name="Route53ProfilesProfile" id="@cdktf/provider-aws.route53ProfilesProfile.Route53ProfilesProfile"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/route53profiles_profile aws_route53profiles_profile}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/route53profiles_profile aws_route53profiles_profile}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.route53ProfilesProfile.Route53ProfilesProfile.Initializer"></a>
 
@@ -22,6 +22,7 @@ route53ProfilesProfile.Route53ProfilesProfile(
   provider: TerraformProvider = None,
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
   name: str,
+  region: str = None,
   tags: typing.Mapping[str] = None,
   timeouts: Route53ProfilesProfileTimeouts = None
 )
@@ -38,8 +39,9 @@ route53ProfilesProfile.Route53ProfilesProfile(
 | <code><a href="#@cdktf/provider-aws.route53ProfilesProfile.Route53ProfilesProfile.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.route53ProfilesProfile.Route53ProfilesProfile.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.route53ProfilesProfile.Route53ProfilesProfile.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.route53ProfilesProfile.Route53ProfilesProfile.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/route53profiles_profile#name Route53ProfilesProfile#name}. |
-| <code><a href="#@cdktf/provider-aws.route53ProfilesProfile.Route53ProfilesProfile.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/route53profiles_profile#tags Route53ProfilesProfile#tags}. |
+| <code><a href="#@cdktf/provider-aws.route53ProfilesProfile.Route53ProfilesProfile.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/route53profiles_profile#name Route53ProfilesProfile#name}. |
+| <code><a href="#@cdktf/provider-aws.route53ProfilesProfile.Route53ProfilesProfile.Initializer.parameter.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
+| <code><a href="#@cdktf/provider-aws.route53ProfilesProfile.Route53ProfilesProfile.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/route53profiles_profile#tags Route53ProfilesProfile#tags}. |
 | <code><a href="#@cdktf/provider-aws.route53ProfilesProfile.Route53ProfilesProfile.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-aws.route53ProfilesProfile.Route53ProfilesProfileTimeouts">Route53ProfilesProfileTimeouts</a></code> | timeouts block. |
 
 ---
@@ -108,7 +110,17 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/route53profiles_profile#name Route53ProfilesProfile#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/route53profiles_profile#name Route53ProfilesProfile#name}.
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdktf/provider-aws.route53ProfilesProfile.Route53ProfilesProfile.Initializer.parameter.region"></a>
+
+- *Type:* str
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/route53profiles_profile#region Route53ProfilesProfile#region}
 
 ---
 
@@ -116,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/route53profiles_profile#tags Route53ProfilesProfile#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/route53profiles_profile#tags Route53ProfilesProfile#tags}.
 
 ---
 
@@ -126,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/route53profiles_profile#timeouts Route53ProfilesProfile#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/route53profiles_profile#timeouts Route53ProfilesProfile#timeouts}
 
 ---
 
@@ -158,6 +170,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktf/provider-aws.route53ProfilesProfile.Route53ProfilesProfile.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-aws.route53ProfilesProfile.Route53ProfilesProfile.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-aws.route53ProfilesProfile.Route53ProfilesProfile.putTimeouts">put_timeouts</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.route53ProfilesProfile.Route53ProfilesProfile.resetRegion">reset_region</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.route53ProfilesProfile.Route53ProfilesProfile.resetTags">reset_tags</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.route53ProfilesProfile.Route53ProfilesProfile.resetTimeouts">reset_timeouts</a></code> | *No description.* |
 
@@ -504,7 +517,7 @@ def put_timeouts(
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/route53profiles_profile#create Route53ProfilesProfile#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/route53profiles_profile#create Route53ProfilesProfile#create}
 
 ---
 
@@ -514,7 +527,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/route53profiles_profile#delete Route53ProfilesProfile#delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/route53profiles_profile#delete Route53ProfilesProfile#delete}
 
 ---
 
@@ -524,9 +537,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Read operations occur during any refresh or planning operation when refresh is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/route53profiles_profile#read Route53ProfilesProfile#read}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/route53profiles_profile#read Route53ProfilesProfile#read}
 
 ---
+
+##### `reset_region` <a name="reset_region" id="@cdktf/provider-aws.route53ProfilesProfile.Route53ProfilesProfile.resetRegion"></a>
+
+```python
+def reset_region() -> None
+```
 
 ##### `reset_tags` <a name="reset_tags" id="@cdktf/provider-aws.route53ProfilesProfile.Route53ProfilesProfile.resetTags"></a>
 
@@ -654,7 +673,7 @@ The construct id used in the generated config for the Route53ProfilesProfile to 
 
 The id of the existing Route53ProfilesProfile that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/route53profiles_profile#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/route53profiles_profile#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -693,9 +712,11 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.route53ProfilesProfile.Route53ProfilesProfile.property.tagsAll">tags_all</a></code> | <code>cdktf.StringMap</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.route53ProfilesProfile.Route53ProfilesProfile.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-aws.route53ProfilesProfile.Route53ProfilesProfileTimeoutsOutputReference">Route53ProfilesProfileTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.route53ProfilesProfile.Route53ProfilesProfile.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.route53ProfilesProfile.Route53ProfilesProfile.property.regionInput">region_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.route53ProfilesProfile.Route53ProfilesProfile.property.tagsInput">tags_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.route53ProfilesProfile.Route53ProfilesProfile.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.route53ProfilesProfile.Route53ProfilesProfileTimeouts">Route53ProfilesProfileTimeouts</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.route53ProfilesProfile.Route53ProfilesProfile.property.name">name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.route53ProfilesProfile.Route53ProfilesProfile.property.region">region</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.route53ProfilesProfile.Route53ProfilesProfile.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 
 ---
@@ -932,6 +953,16 @@ name_input: str
 
 ---
 
+##### `region_input`<sup>Optional</sup> <a name="region_input" id="@cdktf/provider-aws.route53ProfilesProfile.Route53ProfilesProfile.property.regionInput"></a>
+
+```python
+region_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `tags_input`<sup>Optional</sup> <a name="tags_input" id="@cdktf/provider-aws.route53ProfilesProfile.Route53ProfilesProfile.property.tagsInput"></a>
 
 ```python
@@ -956,6 +987,16 @@ timeouts_input: typing.Union[IResolvable, Route53ProfilesProfileTimeouts]
 
 ```python
 name: str
+```
+
+- *Type:* str
+
+---
+
+##### `region`<sup>Required</sup> <a name="region" id="@cdktf/provider-aws.route53ProfilesProfile.Route53ProfilesProfile.property.region"></a>
+
+```python
+region: str
 ```
 
 - *Type:* str
@@ -1008,6 +1049,7 @@ route53ProfilesProfile.Route53ProfilesProfileConfig(
   provider: TerraformProvider = None,
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
   name: str,
+  region: str = None,
   tags: typing.Mapping[str] = None,
   timeouts: Route53ProfilesProfileTimeouts = None
 )
@@ -1024,8 +1066,9 @@ route53ProfilesProfile.Route53ProfilesProfileConfig(
 | <code><a href="#@cdktf/provider-aws.route53ProfilesProfile.Route53ProfilesProfileConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.route53ProfilesProfile.Route53ProfilesProfileConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.route53ProfilesProfile.Route53ProfilesProfileConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.route53ProfilesProfile.Route53ProfilesProfileConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/route53profiles_profile#name Route53ProfilesProfile#name}. |
-| <code><a href="#@cdktf/provider-aws.route53ProfilesProfile.Route53ProfilesProfileConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/route53profiles_profile#tags Route53ProfilesProfile#tags}. |
+| <code><a href="#@cdktf/provider-aws.route53ProfilesProfile.Route53ProfilesProfileConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/route53profiles_profile#name Route53ProfilesProfile#name}. |
+| <code><a href="#@cdktf/provider-aws.route53ProfilesProfile.Route53ProfilesProfileConfig.property.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
+| <code><a href="#@cdktf/provider-aws.route53ProfilesProfile.Route53ProfilesProfileConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/route53profiles_profile#tags Route53ProfilesProfile#tags}. |
 | <code><a href="#@cdktf/provider-aws.route53ProfilesProfile.Route53ProfilesProfileConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-aws.route53ProfilesProfile.Route53ProfilesProfileTimeouts">Route53ProfilesProfileTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1108,7 +1151,21 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/route53profiles_profile#name Route53ProfilesProfile#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/route53profiles_profile#name Route53ProfilesProfile#name}.
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdktf/provider-aws.route53ProfilesProfile.Route53ProfilesProfileConfig.property.region"></a>
+
+```python
+region: str
+```
+
+- *Type:* str
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/route53profiles_profile#region Route53ProfilesProfile#region}
 
 ---
 
@@ -1120,7 +1177,7 @@ tags: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/route53profiles_profile#tags Route53ProfilesProfile#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/route53profiles_profile#tags Route53ProfilesProfile#tags}.
 
 ---
 
@@ -1134,7 +1191,7 @@ timeouts: Route53ProfilesProfileTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/route53profiles_profile#timeouts Route53ProfilesProfile#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/route53profiles_profile#timeouts Route53ProfilesProfile#timeouts}
 
 ---
 
@@ -1172,7 +1229,7 @@ create: str
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/route53profiles_profile#create Route53ProfilesProfile#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/route53profiles_profile#create Route53ProfilesProfile#create}
 
 ---
 
@@ -1186,7 +1243,7 @@ delete: str
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/route53profiles_profile#delete Route53ProfilesProfile#delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/route53profiles_profile#delete Route53ProfilesProfile#delete}
 
 ---
 
@@ -1200,7 +1257,7 @@ read: str
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Read operations occur during any refresh or planning operation when refresh is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/route53profiles_profile#read Route53ProfilesProfile#read}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/route53profiles_profile#read Route53ProfilesProfile#read}
 
 ---
 

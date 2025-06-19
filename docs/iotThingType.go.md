@@ -4,12 +4,12 @@
 
 ### IotThingType <a name="IotThingType" id="@cdktf/provider-aws.iotThingType.IotThingType"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/iot_thing_type aws_iot_thing_type}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/iot_thing_type aws_iot_thing_type}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iotThingType.IotThingType.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/iotthingtype"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/iotthingtype"
 
 iotthingtype.NewIotThingType(scope Construct, id *string, config IotThingTypeConfig) IotThingType
 ```
@@ -77,6 +77,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.iotThingType.IotThingType.resetDeprecated">ResetDeprecated</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotThingType.IotThingType.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotThingType.IotThingType.resetProperties">ResetProperties</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotThingType.IotThingType.resetRegion">ResetRegion</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotThingType.IotThingType.resetTags">ResetTags</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotThingType.IotThingType.resetTagsAll">ResetTagsAll</a></code> | *No description.* |
 
@@ -400,6 +401,12 @@ func ResetId()
 func ResetProperties()
 ```
 
+##### `ResetRegion` <a name="ResetRegion" id="@cdktf/provider-aws.iotThingType.IotThingType.resetRegion"></a>
+
+```go
+func ResetRegion()
+```
+
 ##### `ResetTags` <a name="ResetTags" id="@cdktf/provider-aws.iotThingType.IotThingType.resetTags"></a>
 
 ```go
@@ -426,7 +433,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.iotThingType.IotThingType.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/iotthingtype"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/iotthingtype"
 
 iotthingtype.IotThingType_IsConstruct(x interface{}) *bool
 ```
@@ -458,7 +465,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.iotThingType.IotThingType.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/iotthingtype"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/iotthingtype"
 
 iotthingtype.IotThingType_IsTerraformElement(x interface{}) *bool
 ```
@@ -472,7 +479,7 @@ iotthingtype.IotThingType_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.iotThingType.IotThingType.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/iotthingtype"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/iotthingtype"
 
 iotthingtype.IotThingType_IsTerraformResource(x interface{}) *bool
 ```
@@ -486,7 +493,7 @@ iotthingtype.IotThingType_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.iotThingType.IotThingType.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/iotthingtype"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/iotthingtype"
 
 iotthingtype.IotThingType_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -515,7 +522,7 @@ The construct id used in the generated config for the IotThingType to import.
 
 The id of the existing IotThingType that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/iot_thing_type#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/iot_thing_type#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -551,11 +558,13 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.iotThingType.IotThingType.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotThingType.IotThingType.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotThingType.IotThingType.property.propertiesInput">PropertiesInput</a></code> | <code><a href="#@cdktf/provider-aws.iotThingType.IotThingTypeProperties">IotThingTypeProperties</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotThingType.IotThingType.property.regionInput">RegionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotThingType.IotThingType.property.tagsAllInput">TagsAllInput</a></code> | <code>*map[string]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotThingType.IotThingType.property.tagsInput">TagsInput</a></code> | <code>*map[string]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotThingType.IotThingType.property.deprecated">Deprecated</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotThingType.IotThingType.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotThingType.IotThingType.property.name">Name</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotThingType.IotThingType.property.region">Region</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotThingType.IotThingType.property.tags">Tags</a></code> | <code>*map[string]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotThingType.IotThingType.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | *No description.* |
 
@@ -763,6 +772,16 @@ func PropertiesInput() IotThingTypeProperties
 
 ---
 
+##### `RegionInput`<sup>Optional</sup> <a name="RegionInput" id="@cdktf/provider-aws.iotThingType.IotThingType.property.regionInput"></a>
+
+```go
+func RegionInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `TagsAllInput`<sup>Optional</sup> <a name="TagsAllInput" id="@cdktf/provider-aws.iotThingType.IotThingType.property.tagsAllInput"></a>
 
 ```go
@@ -807,6 +826,16 @@ func Id() *string
 
 ```go
 func Name() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Region`<sup>Required</sup> <a name="Region" id="@cdktf/provider-aws.iotThingType.IotThingType.property.region"></a>
+
+```go
+func Region() *string
 ```
 
 - *Type:* *string
@@ -858,7 +887,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.iotThingType.IotThingTypeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/iotthingtype"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/iotthingtype"
 
 &iotthingtype.IotThingTypeConfig {
 	Connection: interface{},
@@ -871,7 +900,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/iotthingtype"
 	Name: *string,
 	Deprecated: interface{},
 	Id: *string,
-	Properties: github.com/cdktf/cdktf-provider-aws-go/aws/v20.iotThingType.IotThingTypeProperties,
+	Properties: github.com/cdktf/cdktf-provider-aws-go/aws/v21.iotThingType.IotThingTypeProperties,
+	Region: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
 }
@@ -888,12 +918,13 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/iotthingtype"
 | <code><a href="#@cdktf/provider-aws.iotThingType.IotThingTypeConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotThingType.IotThingTypeConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotThingType.IotThingTypeConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotThingType.IotThingTypeConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/iot_thing_type#name IotThingType#name}. |
-| <code><a href="#@cdktf/provider-aws.iotThingType.IotThingTypeConfig.property.deprecated">Deprecated</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/iot_thing_type#deprecated IotThingType#deprecated}. |
-| <code><a href="#@cdktf/provider-aws.iotThingType.IotThingTypeConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/iot_thing_type#id IotThingType#id}. |
+| <code><a href="#@cdktf/provider-aws.iotThingType.IotThingTypeConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/iot_thing_type#name IotThingType#name}. |
+| <code><a href="#@cdktf/provider-aws.iotThingType.IotThingTypeConfig.property.deprecated">Deprecated</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/iot_thing_type#deprecated IotThingType#deprecated}. |
+| <code><a href="#@cdktf/provider-aws.iotThingType.IotThingTypeConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/iot_thing_type#id IotThingType#id}. |
 | <code><a href="#@cdktf/provider-aws.iotThingType.IotThingTypeConfig.property.properties">Properties</a></code> | <code><a href="#@cdktf/provider-aws.iotThingType.IotThingTypeProperties">IotThingTypeProperties</a></code> | properties block. |
-| <code><a href="#@cdktf/provider-aws.iotThingType.IotThingTypeConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/iot_thing_type#tags IotThingType#tags}. |
-| <code><a href="#@cdktf/provider-aws.iotThingType.IotThingTypeConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/iot_thing_type#tags_all IotThingType#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.iotThingType.IotThingTypeConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
+| <code><a href="#@cdktf/provider-aws.iotThingType.IotThingTypeConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/iot_thing_type#tags IotThingType#tags}. |
+| <code><a href="#@cdktf/provider-aws.iotThingType.IotThingTypeConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/iot_thing_type#tags_all IotThingType#tags_all}. |
 
 ---
 
@@ -975,7 +1006,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/iot_thing_type#name IotThingType#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/iot_thing_type#name IotThingType#name}.
 
 ---
 
@@ -987,7 +1018,7 @@ Deprecated interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/iot_thing_type#deprecated IotThingType#deprecated}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/iot_thing_type#deprecated IotThingType#deprecated}.
 
 ---
 
@@ -999,7 +1030,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/iot_thing_type#id IotThingType#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/iot_thing_type#id IotThingType#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1016,7 +1047,21 @@ Properties IotThingTypeProperties
 
 properties block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/iot_thing_type#properties IotThingType#properties}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/iot_thing_type#properties IotThingType#properties}
+
+---
+
+##### `Region`<sup>Optional</sup> <a name="Region" id="@cdktf/provider-aws.iotThingType.IotThingTypeConfig.property.region"></a>
+
+```go
+Region *string
+```
+
+- *Type:* *string
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/iot_thing_type#region IotThingType#region}
 
 ---
 
@@ -1028,7 +1073,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/iot_thing_type#tags IotThingType#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/iot_thing_type#tags IotThingType#tags}.
 
 ---
 
@@ -1040,7 +1085,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/iot_thing_type#tags_all IotThingType#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/iot_thing_type#tags_all IotThingType#tags_all}.
 
 ---
 
@@ -1049,7 +1094,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.iotThingType.IotThingTypeProperties.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/iotthingtype"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/iotthingtype"
 
 &iotthingtype.IotThingTypeProperties {
 	Description: *string,
@@ -1061,8 +1106,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/iotthingtype"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.iotThingType.IotThingTypeProperties.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/iot_thing_type#description IotThingType#description}. |
-| <code><a href="#@cdktf/provider-aws.iotThingType.IotThingTypeProperties.property.searchableAttributes">SearchableAttributes</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/iot_thing_type#searchable_attributes IotThingType#searchable_attributes}. |
+| <code><a href="#@cdktf/provider-aws.iotThingType.IotThingTypeProperties.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/iot_thing_type#description IotThingType#description}. |
+| <code><a href="#@cdktf/provider-aws.iotThingType.IotThingTypeProperties.property.searchableAttributes">SearchableAttributes</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/iot_thing_type#searchable_attributes IotThingType#searchable_attributes}. |
 
 ---
 
@@ -1074,7 +1119,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/iot_thing_type#description IotThingType#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/iot_thing_type#description IotThingType#description}.
 
 ---
 
@@ -1086,7 +1131,7 @@ SearchableAttributes *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/iot_thing_type#searchable_attributes IotThingType#searchable_attributes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/iot_thing_type#searchable_attributes IotThingType#searchable_attributes}.
 
 ---
 
@@ -1097,7 +1142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iotThingType.IotThingTypePropertiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/iotthingtype"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/iotthingtype"
 
 iotthingtype.NewIotThingTypePropertiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IotThingTypePropertiesOutputReference
 ```

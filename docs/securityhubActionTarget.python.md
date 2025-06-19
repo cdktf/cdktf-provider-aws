@@ -4,7 +4,7 @@
 
 ### SecurityhubActionTarget <a name="SecurityhubActionTarget" id="@cdktf/provider-aws.securityhubActionTarget.SecurityhubActionTarget"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_action_target aws_securityhub_action_target}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_action_target aws_securityhub_action_target}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubActionTarget.SecurityhubActionTarget.Initializer"></a>
 
@@ -24,7 +24,8 @@ securityhubActionTarget.SecurityhubActionTarget(
   description: str,
   identifier: str,
   name: str,
-  id: str = None
+  id: str = None,
+  region: str = None
 )
 ```
 
@@ -39,10 +40,11 @@ securityhubActionTarget.SecurityhubActionTarget(
 | <code><a href="#@cdktf/provider-aws.securityhubActionTarget.SecurityhubActionTarget.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubActionTarget.SecurityhubActionTarget.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubActionTarget.SecurityhubActionTarget.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubActionTarget.SecurityhubActionTarget.Initializer.parameter.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_action_target#description SecurityhubActionTarget#description}. |
-| <code><a href="#@cdktf/provider-aws.securityhubActionTarget.SecurityhubActionTarget.Initializer.parameter.identifier">identifier</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_action_target#identifier SecurityhubActionTarget#identifier}. |
-| <code><a href="#@cdktf/provider-aws.securityhubActionTarget.SecurityhubActionTarget.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_action_target#name SecurityhubActionTarget#name}. |
-| <code><a href="#@cdktf/provider-aws.securityhubActionTarget.SecurityhubActionTarget.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_action_target#id SecurityhubActionTarget#id}. |
+| <code><a href="#@cdktf/provider-aws.securityhubActionTarget.SecurityhubActionTarget.Initializer.parameter.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_action_target#description SecurityhubActionTarget#description}. |
+| <code><a href="#@cdktf/provider-aws.securityhubActionTarget.SecurityhubActionTarget.Initializer.parameter.identifier">identifier</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_action_target#identifier SecurityhubActionTarget#identifier}. |
+| <code><a href="#@cdktf/provider-aws.securityhubActionTarget.SecurityhubActionTarget.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_action_target#name SecurityhubActionTarget#name}. |
+| <code><a href="#@cdktf/provider-aws.securityhubActionTarget.SecurityhubActionTarget.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_action_target#id SecurityhubActionTarget#id}. |
+| <code><a href="#@cdktf/provider-aws.securityhubActionTarget.SecurityhubActionTarget.Initializer.parameter.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
 
@@ -110,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_action_target#description SecurityhubActionTarget#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_action_target#description SecurityhubActionTarget#description}.
 
 ---
 
@@ -118,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_action_target#identifier SecurityhubActionTarget#identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_action_target#identifier SecurityhubActionTarget#identifier}.
 
 ---
 
@@ -126,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_action_target#name SecurityhubActionTarget#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_action_target#name SecurityhubActionTarget#name}.
 
 ---
 
@@ -134,10 +136,20 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_action_target#id SecurityhubActionTarget#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_action_target#id SecurityhubActionTarget#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdktf/provider-aws.securityhubActionTarget.SecurityhubActionTarget.Initializer.parameter.region"></a>
+
+- *Type:* str
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_action_target#region SecurityhubActionTarget#region}
 
 ---
 
@@ -169,6 +181,7 @@ If you experience problems setting this value it might not be settable. Please t
 | <code><a href="#@cdktf/provider-aws.securityhubActionTarget.SecurityhubActionTarget.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-aws.securityhubActionTarget.SecurityhubActionTarget.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-aws.securityhubActionTarget.SecurityhubActionTarget.resetId">reset_id</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubActionTarget.SecurityhubActionTarget.resetRegion">reset_region</a></code> | *No description.* |
 
 ---
 
@@ -503,6 +516,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 def reset_id() -> None
 ```
 
+##### `reset_region` <a name="reset_region" id="@cdktf/provider-aws.securityhubActionTarget.SecurityhubActionTarget.resetRegion"></a>
+
+```python
+def reset_region() -> None
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -617,7 +636,7 @@ The construct id used in the generated config for the SecurityhubActionTarget to
 
 The id of the existing SecurityhubActionTarget that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_action_target#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_action_target#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -652,10 +671,12 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.securityhubActionTarget.SecurityhubActionTarget.property.identifierInput">identifier_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubActionTarget.SecurityhubActionTarget.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubActionTarget.SecurityhubActionTarget.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubActionTarget.SecurityhubActionTarget.property.regionInput">region_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubActionTarget.SecurityhubActionTarget.property.description">description</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubActionTarget.SecurityhubActionTarget.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubActionTarget.SecurityhubActionTarget.property.identifier">identifier</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubActionTarget.SecurityhubActionTarget.property.name">name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubActionTarget.SecurityhubActionTarget.property.region">region</a></code> | <code>str</code> | *No description.* |
 
 ---
 
@@ -851,6 +872,16 @@ name_input: str
 
 ---
 
+##### `region_input`<sup>Optional</sup> <a name="region_input" id="@cdktf/provider-aws.securityhubActionTarget.SecurityhubActionTarget.property.regionInput"></a>
+
+```python
+region_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `description`<sup>Required</sup> <a name="description" id="@cdktf/provider-aws.securityhubActionTarget.SecurityhubActionTarget.property.description"></a>
 
 ```python
@@ -885,6 +916,16 @@ identifier: str
 
 ```python
 name: str
+```
+
+- *Type:* str
+
+---
+
+##### `region`<sup>Required</sup> <a name="region" id="@cdktf/provider-aws.securityhubActionTarget.SecurityhubActionTarget.property.region"></a>
+
+```python
+region: str
 ```
 
 - *Type:* str
@@ -929,7 +970,8 @@ securityhubActionTarget.SecurityhubActionTargetConfig(
   description: str,
   identifier: str,
   name: str,
-  id: str = None
+  id: str = None,
+  region: str = None
 )
 ```
 
@@ -944,10 +986,11 @@ securityhubActionTarget.SecurityhubActionTargetConfig(
 | <code><a href="#@cdktf/provider-aws.securityhubActionTarget.SecurityhubActionTargetConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubActionTarget.SecurityhubActionTargetConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubActionTarget.SecurityhubActionTargetConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubActionTarget.SecurityhubActionTargetConfig.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_action_target#description SecurityhubActionTarget#description}. |
-| <code><a href="#@cdktf/provider-aws.securityhubActionTarget.SecurityhubActionTargetConfig.property.identifier">identifier</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_action_target#identifier SecurityhubActionTarget#identifier}. |
-| <code><a href="#@cdktf/provider-aws.securityhubActionTarget.SecurityhubActionTargetConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_action_target#name SecurityhubActionTarget#name}. |
-| <code><a href="#@cdktf/provider-aws.securityhubActionTarget.SecurityhubActionTargetConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_action_target#id SecurityhubActionTarget#id}. |
+| <code><a href="#@cdktf/provider-aws.securityhubActionTarget.SecurityhubActionTargetConfig.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_action_target#description SecurityhubActionTarget#description}. |
+| <code><a href="#@cdktf/provider-aws.securityhubActionTarget.SecurityhubActionTargetConfig.property.identifier">identifier</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_action_target#identifier SecurityhubActionTarget#identifier}. |
+| <code><a href="#@cdktf/provider-aws.securityhubActionTarget.SecurityhubActionTargetConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_action_target#name SecurityhubActionTarget#name}. |
+| <code><a href="#@cdktf/provider-aws.securityhubActionTarget.SecurityhubActionTargetConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_action_target#id SecurityhubActionTarget#id}. |
+| <code><a href="#@cdktf/provider-aws.securityhubActionTarget.SecurityhubActionTargetConfig.property.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
 
@@ -1029,7 +1072,7 @@ description: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_action_target#description SecurityhubActionTarget#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_action_target#description SecurityhubActionTarget#description}.
 
 ---
 
@@ -1041,7 +1084,7 @@ identifier: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_action_target#identifier SecurityhubActionTarget#identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_action_target#identifier SecurityhubActionTarget#identifier}.
 
 ---
 
@@ -1053,7 +1096,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_action_target#name SecurityhubActionTarget#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_action_target#name SecurityhubActionTarget#name}.
 
 ---
 
@@ -1065,10 +1108,24 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_action_target#id SecurityhubActionTarget#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_action_target#id SecurityhubActionTarget#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdktf/provider-aws.securityhubActionTarget.SecurityhubActionTargetConfig.property.region"></a>
+
+```python
+region: str
+```
+
+- *Type:* str
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_action_target#region SecurityhubActionTarget#region}
 
 ---
 

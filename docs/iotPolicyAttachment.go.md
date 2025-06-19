@@ -4,12 +4,12 @@
 
 ### IotPolicyAttachment <a name="IotPolicyAttachment" id="@cdktf/provider-aws.iotPolicyAttachment.IotPolicyAttachment"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/iot_policy_attachment aws_iot_policy_attachment}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/iot_policy_attachment aws_iot_policy_attachment}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iotPolicyAttachment.IotPolicyAttachment.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/iotpolicyattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/iotpolicyattachment"
 
 iotpolicyattachment.NewIotPolicyAttachment(scope Construct, id *string, config IotPolicyAttachmentConfig) IotPolicyAttachment
 ```
@@ -74,6 +74,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.iotPolicyAttachment.IotPolicyAttachment.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-aws.iotPolicyAttachment.IotPolicyAttachment.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-aws.iotPolicyAttachment.IotPolicyAttachment.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotPolicyAttachment.IotPolicyAttachment.resetRegion">ResetRegion</a></code> | *No description.* |
 
 ---
 
@@ -371,6 +372,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 func ResetId()
 ```
 
+##### `ResetRegion` <a name="ResetRegion" id="@cdktf/provider-aws.iotPolicyAttachment.IotPolicyAttachment.resetRegion"></a>
+
+```go
+func ResetRegion()
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -385,7 +392,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.iotPolicyAttachment.IotPolicyAttachment.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/iotpolicyattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/iotpolicyattachment"
 
 iotpolicyattachment.IotPolicyAttachment_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +424,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.iotPolicyAttachment.IotPolicyAttachment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/iotpolicyattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/iotpolicyattachment"
 
 iotpolicyattachment.IotPolicyAttachment_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +438,7 @@ iotpolicyattachment.IotPolicyAttachment_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.iotPolicyAttachment.IotPolicyAttachment.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/iotpolicyattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/iotpolicyattachment"
 
 iotpolicyattachment.IotPolicyAttachment_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +452,7 @@ iotpolicyattachment.IotPolicyAttachment_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.iotPolicyAttachment.IotPolicyAttachment.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/iotpolicyattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/iotpolicyattachment"
 
 iotpolicyattachment.IotPolicyAttachment_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -474,7 +481,7 @@ The construct id used in the generated config for the IotPolicyAttachment to imp
 
 The id of the existing IotPolicyAttachment that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/iot_policy_attachment#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/iot_policy_attachment#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -506,9 +513,11 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.iotPolicyAttachment.IotPolicyAttachment.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotPolicyAttachment.IotPolicyAttachment.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotPolicyAttachment.IotPolicyAttachment.property.policyInput">PolicyInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotPolicyAttachment.IotPolicyAttachment.property.regionInput">RegionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotPolicyAttachment.IotPolicyAttachment.property.targetInput">TargetInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotPolicyAttachment.IotPolicyAttachment.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotPolicyAttachment.IotPolicyAttachment.property.policy">Policy</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotPolicyAttachment.IotPolicyAttachment.property.region">Region</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotPolicyAttachment.IotPolicyAttachment.property.target">Target</a></code> | <code>*string</code> | *No description.* |
 
 ---
@@ -675,6 +684,16 @@ func PolicyInput() *string
 
 ---
 
+##### `RegionInput`<sup>Optional</sup> <a name="RegionInput" id="@cdktf/provider-aws.iotPolicyAttachment.IotPolicyAttachment.property.regionInput"></a>
+
+```go
+func RegionInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `TargetInput`<sup>Optional</sup> <a name="TargetInput" id="@cdktf/provider-aws.iotPolicyAttachment.IotPolicyAttachment.property.targetInput"></a>
 
 ```go
@@ -699,6 +718,16 @@ func Id() *string
 
 ```go
 func Policy() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Region`<sup>Required</sup> <a name="Region" id="@cdktf/provider-aws.iotPolicyAttachment.IotPolicyAttachment.property.region"></a>
+
+```go
+func Region() *string
 ```
 
 - *Type:* *string
@@ -740,7 +769,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.iotPolicyAttachment.IotPolicyAttachmentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/iotpolicyattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/iotpolicyattachment"
 
 &iotpolicyattachment.IotPolicyAttachmentConfig {
 	Connection: interface{},
@@ -753,6 +782,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/iotpolicyattachment"
 	Policy: *string,
 	Target: *string,
 	Id: *string,
+	Region: *string,
 }
 ```
 
@@ -767,9 +797,10 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/iotpolicyattachment"
 | <code><a href="#@cdktf/provider-aws.iotPolicyAttachment.IotPolicyAttachmentConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotPolicyAttachment.IotPolicyAttachmentConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotPolicyAttachment.IotPolicyAttachmentConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotPolicyAttachment.IotPolicyAttachmentConfig.property.policy">Policy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/iot_policy_attachment#policy IotPolicyAttachment#policy}. |
-| <code><a href="#@cdktf/provider-aws.iotPolicyAttachment.IotPolicyAttachmentConfig.property.target">Target</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/iot_policy_attachment#target IotPolicyAttachment#target}. |
-| <code><a href="#@cdktf/provider-aws.iotPolicyAttachment.IotPolicyAttachmentConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/iot_policy_attachment#id IotPolicyAttachment#id}. |
+| <code><a href="#@cdktf/provider-aws.iotPolicyAttachment.IotPolicyAttachmentConfig.property.policy">Policy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/iot_policy_attachment#policy IotPolicyAttachment#policy}. |
+| <code><a href="#@cdktf/provider-aws.iotPolicyAttachment.IotPolicyAttachmentConfig.property.target">Target</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/iot_policy_attachment#target IotPolicyAttachment#target}. |
+| <code><a href="#@cdktf/provider-aws.iotPolicyAttachment.IotPolicyAttachmentConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/iot_policy_attachment#id IotPolicyAttachment#id}. |
+| <code><a href="#@cdktf/provider-aws.iotPolicyAttachment.IotPolicyAttachmentConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
 
@@ -851,7 +882,7 @@ Policy *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/iot_policy_attachment#policy IotPolicyAttachment#policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/iot_policy_attachment#policy IotPolicyAttachment#policy}.
 
 ---
 
@@ -863,7 +894,7 @@ Target *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/iot_policy_attachment#target IotPolicyAttachment#target}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/iot_policy_attachment#target IotPolicyAttachment#target}.
 
 ---
 
@@ -875,10 +906,24 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/iot_policy_attachment#id IotPolicyAttachment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/iot_policy_attachment#id IotPolicyAttachment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `Region`<sup>Optional</sup> <a name="Region" id="@cdktf/provider-aws.iotPolicyAttachment.IotPolicyAttachmentConfig.property.region"></a>
+
+```go
+Region *string
+```
+
+- *Type:* *string
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/iot_policy_attachment#region IotPolicyAttachment#region}
 
 ---
 
