@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ssoadmin_application
+// https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ssoadmin_application
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,20 +13,20 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsSsoadminApplicationConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ssoadmin_application#application_arn DataAwsSsoadminApplication#application_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ssoadmin_application#application_arn DataAwsSsoadminApplication#application_arn}
   */
   readonly applicationArn: string;
   /**
-  * portal_options block
+  * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ssoadmin_application#portal_options DataAwsSsoadminApplication#portal_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ssoadmin_application#region DataAwsSsoadminApplication#region}
   */
-  readonly portalOptions?: DataAwsSsoadminApplicationPortalOptions[] | cdktf.IResolvable;
+  readonly region?: string;
 }
 export interface DataAwsSsoadminApplicationPortalOptionsSignInOptions {
 }
 
-export function dataAwsSsoadminApplicationPortalOptionsSignInOptionsToTerraform(struct?: DataAwsSsoadminApplicationPortalOptionsSignInOptions | cdktf.IResolvable): any {
+export function dataAwsSsoadminApplicationPortalOptionsSignInOptionsToTerraform(struct?: DataAwsSsoadminApplicationPortalOptionsSignInOptions): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -36,7 +36,7 @@ export function dataAwsSsoadminApplicationPortalOptionsSignInOptionsToTerraform(
 }
 
 
-export function dataAwsSsoadminApplicationPortalOptionsSignInOptionsToHclTerraform(struct?: DataAwsSsoadminApplicationPortalOptionsSignInOptions | cdktf.IResolvable): any {
+export function dataAwsSsoadminApplicationPortalOptionsSignInOptionsToHclTerraform(struct?: DataAwsSsoadminApplicationPortalOptionsSignInOptions): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -48,7 +48,6 @@ export function dataAwsSsoadminApplicationPortalOptionsSignInOptionsToHclTerrafo
 
 export class DataAwsSsoadminApplicationPortalOptionsSignInOptionsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -60,27 +59,18 @@ export class DataAwsSsoadminApplicationPortalOptionsSignInOptionsOutputReference
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataAwsSsoadminApplicationPortalOptionsSignInOptions | cdktf.IResolvable | undefined {
-    if (this.resolvableValue) {
-      return this.resolvableValue;
-    }
+  public get internalValue(): DataAwsSsoadminApplicationPortalOptionsSignInOptions | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAwsSsoadminApplicationPortalOptionsSignInOptions | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataAwsSsoadminApplicationPortalOptionsSignInOptions | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-      this.resolvableValue = undefined;
-    }
-    else if (cdktf.Tokenization.isResolvable(value)) {
-      this.isEmptyObject = false;
-      this.resolvableValue = value;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
-      this.resolvableValue = undefined;
     }
   }
 
@@ -96,7 +86,6 @@ export class DataAwsSsoadminApplicationPortalOptionsSignInOptionsOutputReference
 }
 
 export class DataAwsSsoadminApplicationPortalOptionsSignInOptionsList extends cdktf.ComplexList {
-  public internalValue? : DataAwsSsoadminApplicationPortalOptionsSignInOptions[] | cdktf.IResolvable
 
   /**
   * @param terraformResource The parent resource
@@ -115,46 +104,30 @@ export class DataAwsSsoadminApplicationPortalOptionsSignInOptionsList extends cd
   }
 }
 export interface DataAwsSsoadminApplicationPortalOptions {
-  /**
-  * sign_in_options block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ssoadmin_application#sign_in_options DataAwsSsoadminApplication#sign_in_options}
-  */
-  readonly signInOptions?: DataAwsSsoadminApplicationPortalOptionsSignInOptions[] | cdktf.IResolvable;
 }
 
-export function dataAwsSsoadminApplicationPortalOptionsToTerraform(struct?: DataAwsSsoadminApplicationPortalOptions | cdktf.IResolvable): any {
+export function dataAwsSsoadminApplicationPortalOptionsToTerraform(struct?: DataAwsSsoadminApplicationPortalOptions): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    sign_in_options: cdktf.listMapper(dataAwsSsoadminApplicationPortalOptionsSignInOptionsToTerraform, true)(struct!.signInOptions),
   }
 }
 
 
-export function dataAwsSsoadminApplicationPortalOptionsToHclTerraform(struct?: DataAwsSsoadminApplicationPortalOptions | cdktf.IResolvable): any {
+export function dataAwsSsoadminApplicationPortalOptionsToHclTerraform(struct?: DataAwsSsoadminApplicationPortalOptions): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
-    sign_in_options: {
-      value: cdktf.listMapperHcl(dataAwsSsoadminApplicationPortalOptionsSignInOptionsToHclTerraform, true)(struct!.signInOptions),
-      isBlock: true,
-      type: "list",
-      storageClassType: "DataAwsSsoadminApplicationPortalOptionsSignInOptionsList",
-    },
   };
-
-  // remove undefined attributes
-  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+  return attrs;
 }
 
 export class DataAwsSsoadminApplicationPortalOptionsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -166,60 +139,34 @@ export class DataAwsSsoadminApplicationPortalOptionsOutputReference extends cdkt
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataAwsSsoadminApplicationPortalOptions | cdktf.IResolvable | undefined {
-    if (this.resolvableValue) {
-      return this.resolvableValue;
-    }
+  public get internalValue(): DataAwsSsoadminApplicationPortalOptions | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._signInOptions?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.signInOptions = this._signInOptions?.internalValue;
-    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAwsSsoadminApplicationPortalOptions | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataAwsSsoadminApplicationPortalOptions | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-      this.resolvableValue = undefined;
-      this._signInOptions.internalValue = undefined;
-    }
-    else if (cdktf.Tokenization.isResolvable(value)) {
-      this.isEmptyObject = false;
-      this.resolvableValue = value;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
-      this.resolvableValue = undefined;
-      this._signInOptions.internalValue = value.signInOptions;
     }
+  }
+
+  // sign_in_options - computed: true, optional: false, required: false
+  private _signInOptions = new DataAwsSsoadminApplicationPortalOptionsSignInOptionsList(this, "sign_in_options", false);
+  public get signInOptions() {
+    return this._signInOptions;
   }
 
   // visibility - computed: true, optional: false, required: false
   public get visibility() {
     return this.getStringAttribute('visibility');
   }
-
-  // sign_in_options - computed: false, optional: true, required: false
-  private _signInOptions = new DataAwsSsoadminApplicationPortalOptionsSignInOptionsList(this, "sign_in_options", false);
-  public get signInOptions() {
-    return this._signInOptions;
-  }
-  public putSignInOptions(value: DataAwsSsoadminApplicationPortalOptionsSignInOptions[] | cdktf.IResolvable) {
-    this._signInOptions.internalValue = value;
-  }
-  public resetSignInOptions() {
-    this._signInOptions.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get signInOptionsInput() {
-    return this._signInOptions.internalValue;
-  }
 }
 
 export class DataAwsSsoadminApplicationPortalOptionsList extends cdktf.ComplexList {
-  public internalValue? : DataAwsSsoadminApplicationPortalOptions[] | cdktf.IResolvable
 
   /**
   * @param terraformResource The parent resource
@@ -239,7 +186,7 @@ export class DataAwsSsoadminApplicationPortalOptionsList extends cdktf.ComplexLi
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ssoadmin_application aws_ssoadmin_application}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ssoadmin_application aws_ssoadmin_application}
 */
 export class DataAwsSsoadminApplication extends cdktf.TerraformDataSource {
 
@@ -255,7 +202,7 @@ export class DataAwsSsoadminApplication extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataAwsSsoadminApplication resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsSsoadminApplication to import
-  * @param importFromId The id of the existing DataAwsSsoadminApplication that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ssoadmin_application#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsSsoadminApplication that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ssoadmin_application#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsSsoadminApplication to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -267,7 +214,7 @@ export class DataAwsSsoadminApplication extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ssoadmin_application aws_ssoadmin_application} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ssoadmin_application aws_ssoadmin_application} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -278,8 +225,8 @@ export class DataAwsSsoadminApplication extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_ssoadmin_application',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.100.0',
-        providerVersionConstraint: '~> 5.0'
+        providerVersion: '6.0.0',
+        providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -290,7 +237,7 @@ export class DataAwsSsoadminApplication extends cdktf.TerraformDataSource {
       forEach: config.forEach
     });
     this._applicationArn = config.applicationArn;
-    this._portalOptions.internalValue = config.portalOptions;
+    this._region = config.region;
   }
 
   // ==========
@@ -340,25 +287,31 @@ export class DataAwsSsoadminApplication extends cdktf.TerraformDataSource {
     return this.getStringAttribute('name');
   }
 
-  // status - computed: true, optional: false, required: false
-  public get status() {
-    return this.getStringAttribute('status');
-  }
-
-  // portal_options - computed: false, optional: true, required: false
+  // portal_options - computed: true, optional: false, required: false
   private _portalOptions = new DataAwsSsoadminApplicationPortalOptionsList(this, "portal_options", false);
   public get portalOptions() {
     return this._portalOptions;
   }
-  public putPortalOptions(value: DataAwsSsoadminApplicationPortalOptions[] | cdktf.IResolvable) {
-    this._portalOptions.internalValue = value;
+
+  // region - computed: true, optional: true, required: false
+  private _region?: string; 
+  public get region() {
+    return this.getStringAttribute('region');
   }
-  public resetPortalOptions() {
-    this._portalOptions.internalValue = undefined;
+  public set region(value: string) {
+    this._region = value;
+  }
+  public resetRegion() {
+    this._region = undefined;
   }
   // Temporarily expose input value. Use with caution.
-  public get portalOptionsInput() {
-    return this._portalOptions.internalValue;
+  public get regionInput() {
+    return this._region;
+  }
+
+  // status - computed: true, optional: false, required: false
+  public get status() {
+    return this.getStringAttribute('status');
   }
 
   // =========
@@ -368,7 +321,7 @@ export class DataAwsSsoadminApplication extends cdktf.TerraformDataSource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       application_arn: cdktf.stringToTerraform(this._applicationArn),
-      portal_options: cdktf.listMapper(dataAwsSsoadminApplicationPortalOptionsToTerraform, true)(this._portalOptions.internalValue),
+      region: cdktf.stringToTerraform(this._region),
     };
   }
 
@@ -380,11 +333,11 @@ export class DataAwsSsoadminApplication extends cdktf.TerraformDataSource {
         type: "simple",
         storageClassType: "string",
       },
-      portal_options: {
-        value: cdktf.listMapperHcl(dataAwsSsoadminApplicationPortalOptionsToHclTerraform, true)(this._portalOptions.internalValue),
-        isBlock: true,
-        type: "list",
-        storageClassType: "DataAwsSsoadminApplicationPortalOptionsList",
+      region: {
+        value: cdktf.stringToHclTerraform(this._region),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
       },
     };
 

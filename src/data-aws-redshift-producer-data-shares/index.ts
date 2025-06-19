@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/redshift_producer_data_shares
+// https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/redshift_producer_data_shares
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,24 +13,24 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsRedshiftProducerDataSharesConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/redshift_producer_data_shares#producer_arn DataAwsRedshiftProducerDataShares#producer_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/redshift_producer_data_shares#producer_arn DataAwsRedshiftProducerDataShares#producer_arn}
   */
   readonly producerArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/redshift_producer_data_shares#status DataAwsRedshiftProducerDataShares#status}
+  * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/redshift_producer_data_shares#region DataAwsRedshiftProducerDataShares#region}
+  */
+  readonly region?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/redshift_producer_data_shares#status DataAwsRedshiftProducerDataShares#status}
   */
   readonly status?: string;
-  /**
-  * data_shares block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/redshift_producer_data_shares#data_shares DataAwsRedshiftProducerDataShares#data_shares}
-  */
-  readonly dataShares?: DataAwsRedshiftProducerDataSharesDataShares[] | cdktf.IResolvable;
 }
 export interface DataAwsRedshiftProducerDataSharesDataShares {
 }
 
-export function dataAwsRedshiftProducerDataSharesDataSharesToTerraform(struct?: DataAwsRedshiftProducerDataSharesDataShares | cdktf.IResolvable): any {
+export function dataAwsRedshiftProducerDataSharesDataSharesToTerraform(struct?: DataAwsRedshiftProducerDataSharesDataShares): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -40,7 +40,7 @@ export function dataAwsRedshiftProducerDataSharesDataSharesToTerraform(struct?: 
 }
 
 
-export function dataAwsRedshiftProducerDataSharesDataSharesToHclTerraform(struct?: DataAwsRedshiftProducerDataSharesDataShares | cdktf.IResolvable): any {
+export function dataAwsRedshiftProducerDataSharesDataSharesToHclTerraform(struct?: DataAwsRedshiftProducerDataSharesDataShares): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -52,7 +52,6 @@ export function dataAwsRedshiftProducerDataSharesDataSharesToHclTerraform(struct
 
 export class DataAwsRedshiftProducerDataSharesDataSharesOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -64,27 +63,18 @@ export class DataAwsRedshiftProducerDataSharesDataSharesOutputReference extends 
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataAwsRedshiftProducerDataSharesDataShares | cdktf.IResolvable | undefined {
-    if (this.resolvableValue) {
-      return this.resolvableValue;
-    }
+  public get internalValue(): DataAwsRedshiftProducerDataSharesDataShares | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAwsRedshiftProducerDataSharesDataShares | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataAwsRedshiftProducerDataSharesDataShares | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-      this.resolvableValue = undefined;
-    }
-    else if (cdktf.Tokenization.isResolvable(value)) {
-      this.isEmptyObject = false;
-      this.resolvableValue = value;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
-      this.resolvableValue = undefined;
     }
   }
 
@@ -105,7 +95,6 @@ export class DataAwsRedshiftProducerDataSharesDataSharesOutputReference extends 
 }
 
 export class DataAwsRedshiftProducerDataSharesDataSharesList extends cdktf.ComplexList {
-  public internalValue? : DataAwsRedshiftProducerDataSharesDataShares[] | cdktf.IResolvable
 
   /**
   * @param terraformResource The parent resource
@@ -125,7 +114,7 @@ export class DataAwsRedshiftProducerDataSharesDataSharesList extends cdktf.Compl
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/redshift_producer_data_shares aws_redshift_producer_data_shares}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/redshift_producer_data_shares aws_redshift_producer_data_shares}
 */
 export class DataAwsRedshiftProducerDataShares extends cdktf.TerraformDataSource {
 
@@ -141,7 +130,7 @@ export class DataAwsRedshiftProducerDataShares extends cdktf.TerraformDataSource
   * Generates CDKTF code for importing a DataAwsRedshiftProducerDataShares resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsRedshiftProducerDataShares to import
-  * @param importFromId The id of the existing DataAwsRedshiftProducerDataShares that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/redshift_producer_data_shares#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsRedshiftProducerDataShares that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/redshift_producer_data_shares#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsRedshiftProducerDataShares to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -153,7 +142,7 @@ export class DataAwsRedshiftProducerDataShares extends cdktf.TerraformDataSource
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/redshift_producer_data_shares aws_redshift_producer_data_shares} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/redshift_producer_data_shares aws_redshift_producer_data_shares} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -164,8 +153,8 @@ export class DataAwsRedshiftProducerDataShares extends cdktf.TerraformDataSource
       terraformResourceType: 'aws_redshift_producer_data_shares',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.100.0',
-        providerVersionConstraint: '~> 5.0'
+        providerVersion: '6.0.0',
+        providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -176,13 +165,19 @@ export class DataAwsRedshiftProducerDataShares extends cdktf.TerraformDataSource
       forEach: config.forEach
     });
     this._producerArn = config.producerArn;
+    this._region = config.region;
     this._status = config.status;
-    this._dataShares.internalValue = config.dataShares;
   }
 
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // data_shares - computed: true, optional: false, required: false
+  private _dataShares = new DataAwsRedshiftProducerDataSharesDataSharesList(this, "data_shares", false);
+  public get dataShares() {
+    return this._dataShares;
+  }
 
   // id - computed: true, optional: false, required: false
   public get id() {
@@ -202,6 +197,22 @@ export class DataAwsRedshiftProducerDataShares extends cdktf.TerraformDataSource
     return this._producerArn;
   }
 
+  // region - computed: true, optional: true, required: false
+  private _region?: string; 
+  public get region() {
+    return this.getStringAttribute('region');
+  }
+  public set region(value: string) {
+    this._region = value;
+  }
+  public resetRegion() {
+    this._region = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get regionInput() {
+    return this._region;
+  }
+
   // status - computed: false, optional: true, required: false
   private _status?: string; 
   public get status() {
@@ -218,22 +229,6 @@ export class DataAwsRedshiftProducerDataShares extends cdktf.TerraformDataSource
     return this._status;
   }
 
-  // data_shares - computed: false, optional: true, required: false
-  private _dataShares = new DataAwsRedshiftProducerDataSharesDataSharesList(this, "data_shares", false);
-  public get dataShares() {
-    return this._dataShares;
-  }
-  public putDataShares(value: DataAwsRedshiftProducerDataSharesDataShares[] | cdktf.IResolvable) {
-    this._dataShares.internalValue = value;
-  }
-  public resetDataShares() {
-    this._dataShares.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get dataSharesInput() {
-    return this._dataShares.internalValue;
-  }
-
   // =========
   // SYNTHESIS
   // =========
@@ -241,8 +236,8 @@ export class DataAwsRedshiftProducerDataShares extends cdktf.TerraformDataSource
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       producer_arn: cdktf.stringToTerraform(this._producerArn),
+      region: cdktf.stringToTerraform(this._region),
       status: cdktf.stringToTerraform(this._status),
-      data_shares: cdktf.listMapper(dataAwsRedshiftProducerDataSharesDataSharesToTerraform, true)(this._dataShares.internalValue),
     };
   }
 
@@ -254,17 +249,17 @@ export class DataAwsRedshiftProducerDataShares extends cdktf.TerraformDataSource
         type: "simple",
         storageClassType: "string",
       },
+      region: {
+        value: cdktf.stringToHclTerraform(this._region),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
       status: {
         value: cdktf.stringToHclTerraform(this._status),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
-      },
-      data_shares: {
-        value: cdktf.listMapperHcl(dataAwsRedshiftProducerDataSharesDataSharesToHclTerraform, true)(this._dataShares.internalValue),
-        isBlock: true,
-        type: "list",
-        storageClassType: "DataAwsRedshiftProducerDataSharesDataSharesList",
       },
     };
 

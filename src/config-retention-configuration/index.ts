@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/config_retention_configuration
+// https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/config_retention_configuration
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,13 +13,19 @@ import * as cdktf from 'cdktf';
 
 export interface ConfigRetentionConfigurationConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/config_retention_configuration#retention_period_in_days ConfigRetentionConfiguration#retention_period_in_days}
+  * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/config_retention_configuration#region ConfigRetentionConfiguration#region}
+  */
+  readonly region?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/config_retention_configuration#retention_period_in_days ConfigRetentionConfiguration#retention_period_in_days}
   */
   readonly retentionPeriodInDays: number;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/config_retention_configuration aws_config_retention_configuration}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/config_retention_configuration aws_config_retention_configuration}
 */
 export class ConfigRetentionConfiguration extends cdktf.TerraformResource {
 
@@ -35,7 +41,7 @@ export class ConfigRetentionConfiguration extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ConfigRetentionConfiguration resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ConfigRetentionConfiguration to import
-  * @param importFromId The id of the existing ConfigRetentionConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/config_retention_configuration#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ConfigRetentionConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/config_retention_configuration#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ConfigRetentionConfiguration to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -47,7 +53,7 @@ export class ConfigRetentionConfiguration extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/config_retention_configuration aws_config_retention_configuration} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/config_retention_configuration aws_config_retention_configuration} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -58,8 +64,8 @@ export class ConfigRetentionConfiguration extends cdktf.TerraformResource {
       terraformResourceType: 'aws_config_retention_configuration',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.100.0',
-        providerVersionConstraint: '~> 5.0'
+        providerVersion: '6.0.0',
+        providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -69,6 +75,7 @@ export class ConfigRetentionConfiguration extends cdktf.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
+    this._region = config.region;
     this._retentionPeriodInDays = config.retentionPeriodInDays;
   }
 
@@ -84,6 +91,22 @@ export class ConfigRetentionConfiguration extends cdktf.TerraformResource {
   // name - computed: true, optional: false, required: false
   public get name() {
     return this.getStringAttribute('name');
+  }
+
+  // region - computed: true, optional: true, required: false
+  private _region?: string; 
+  public get region() {
+    return this.getStringAttribute('region');
+  }
+  public set region(value: string) {
+    this._region = value;
+  }
+  public resetRegion() {
+    this._region = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get regionInput() {
+    return this._region;
   }
 
   // retention_period_in_days - computed: false, optional: false, required: true
@@ -105,12 +128,19 @@ export class ConfigRetentionConfiguration extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      region: cdktf.stringToTerraform(this._region),
       retention_period_in_days: cdktf.numberToTerraform(this._retentionPeriodInDays),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
+      region: {
+        value: cdktf.stringToHclTerraform(this._region),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
       retention_period_in_days: {
         value: cdktf.numberToHclTerraform(this._retentionPeriodInDays),
         isBlock: false,

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/redshift_partner
+// https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/redshift_partner
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,32 +13,38 @@ import * as cdktf from 'cdktf';
 
 export interface RedshiftPartnerConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/redshift_partner#account_id RedshiftPartner#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/redshift_partner#account_id RedshiftPartner#account_id}
   */
   readonly accountId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/redshift_partner#cluster_identifier RedshiftPartner#cluster_identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/redshift_partner#cluster_identifier RedshiftPartner#cluster_identifier}
   */
   readonly clusterIdentifier: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/redshift_partner#database_name RedshiftPartner#database_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/redshift_partner#database_name RedshiftPartner#database_name}
   */
   readonly databaseName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/redshift_partner#id RedshiftPartner#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/redshift_partner#id RedshiftPartner#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/redshift_partner#partner_name RedshiftPartner#partner_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/redshift_partner#partner_name RedshiftPartner#partner_name}
   */
   readonly partnerName: string;
+  /**
+  * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/redshift_partner#region RedshiftPartner#region}
+  */
+  readonly region?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/redshift_partner aws_redshift_partner}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/redshift_partner aws_redshift_partner}
 */
 export class RedshiftPartner extends cdktf.TerraformResource {
 
@@ -54,7 +60,7 @@ export class RedshiftPartner extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a RedshiftPartner resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the RedshiftPartner to import
-  * @param importFromId The id of the existing RedshiftPartner that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/redshift_partner#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing RedshiftPartner that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/redshift_partner#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the RedshiftPartner to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -66,7 +72,7 @@ export class RedshiftPartner extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/redshift_partner aws_redshift_partner} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/redshift_partner aws_redshift_partner} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -77,8 +83,8 @@ export class RedshiftPartner extends cdktf.TerraformResource {
       terraformResourceType: 'aws_redshift_partner',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.100.0',
-        providerVersionConstraint: '~> 5.0'
+        providerVersion: '6.0.0',
+        providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -93,6 +99,7 @@ export class RedshiftPartner extends cdktf.TerraformResource {
     this._databaseName = config.databaseName;
     this._id = config.id;
     this._partnerName = config.partnerName;
+    this._region = config.region;
   }
 
   // ==========
@@ -167,6 +174,22 @@ export class RedshiftPartner extends cdktf.TerraformResource {
     return this._partnerName;
   }
 
+  // region - computed: true, optional: true, required: false
+  private _region?: string; 
+  public get region() {
+    return this.getStringAttribute('region');
+  }
+  public set region(value: string) {
+    this._region = value;
+  }
+  public resetRegion() {
+    this._region = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get regionInput() {
+    return this._region;
+  }
+
   // status - computed: true, optional: false, required: false
   public get status() {
     return this.getStringAttribute('status');
@@ -188,6 +211,7 @@ export class RedshiftPartner extends cdktf.TerraformResource {
       database_name: cdktf.stringToTerraform(this._databaseName),
       id: cdktf.stringToTerraform(this._id),
       partner_name: cdktf.stringToTerraform(this._partnerName),
+      region: cdktf.stringToTerraform(this._region),
     };
   }
 
@@ -219,6 +243,12 @@ export class RedshiftPartner extends cdktf.TerraformResource {
       },
       partner_name: {
         value: cdktf.stringToHclTerraform(this._partnerName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      region: {
+        value: cdktf.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

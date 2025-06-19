@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/rds_export_task
+// https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rds_export_task
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,37 +13,43 @@ import * as cdktf from 'cdktf';
 
 export interface RdsExportTaskConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/rds_export_task#export_only RdsExportTask#export_only}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rds_export_task#export_only RdsExportTask#export_only}
   */
   readonly exportOnly?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/rds_export_task#export_task_identifier RdsExportTask#export_task_identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rds_export_task#export_task_identifier RdsExportTask#export_task_identifier}
   */
   readonly exportTaskIdentifier: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/rds_export_task#iam_role_arn RdsExportTask#iam_role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rds_export_task#iam_role_arn RdsExportTask#iam_role_arn}
   */
   readonly iamRoleArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/rds_export_task#kms_key_id RdsExportTask#kms_key_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rds_export_task#kms_key_id RdsExportTask#kms_key_id}
   */
   readonly kmsKeyId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/rds_export_task#s3_bucket_name RdsExportTask#s3_bucket_name}
+  * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rds_export_task#region RdsExportTask#region}
+  */
+  readonly region?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rds_export_task#s3_bucket_name RdsExportTask#s3_bucket_name}
   */
   readonly s3BucketName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/rds_export_task#s3_prefix RdsExportTask#s3_prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rds_export_task#s3_prefix RdsExportTask#s3_prefix}
   */
   readonly s3Prefix?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/rds_export_task#source_arn RdsExportTask#source_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rds_export_task#source_arn RdsExportTask#source_arn}
   */
   readonly sourceArn: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/rds_export_task#timeouts RdsExportTask#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rds_export_task#timeouts RdsExportTask#timeouts}
   */
   readonly timeouts?: RdsExportTaskTimeouts;
 }
@@ -51,13 +57,13 @@ export interface RdsExportTaskTimeouts {
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/rds_export_task#create RdsExportTask#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rds_export_task#create RdsExportTask#create}
   */
   readonly create?: string;
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/rds_export_task#delete RdsExportTask#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rds_export_task#delete RdsExportTask#delete}
   */
   readonly delete?: string;
 }
@@ -180,7 +186,7 @@ export class RdsExportTaskTimeoutsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/rds_export_task aws_rds_export_task}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rds_export_task aws_rds_export_task}
 */
 export class RdsExportTask extends cdktf.TerraformResource {
 
@@ -196,7 +202,7 @@ export class RdsExportTask extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a RdsExportTask resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the RdsExportTask to import
-  * @param importFromId The id of the existing RdsExportTask that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/rds_export_task#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing RdsExportTask that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rds_export_task#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the RdsExportTask to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -208,7 +214,7 @@ export class RdsExportTask extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/rds_export_task aws_rds_export_task} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rds_export_task aws_rds_export_task} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -219,8 +225,8 @@ export class RdsExportTask extends cdktf.TerraformResource {
       terraformResourceType: 'aws_rds_export_task',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.100.0',
-        providerVersionConstraint: '~> 5.0'
+        providerVersion: '6.0.0',
+        providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -234,6 +240,7 @@ export class RdsExportTask extends cdktf.TerraformResource {
     this._exportTaskIdentifier = config.exportTaskIdentifier;
     this._iamRoleArn = config.iamRoleArn;
     this._kmsKeyId = config.kmsKeyId;
+    this._region = config.region;
     this._s3BucketName = config.s3BucketName;
     this._s3Prefix = config.s3Prefix;
     this._sourceArn = config.sourceArn;
@@ -312,6 +319,22 @@ export class RdsExportTask extends cdktf.TerraformResource {
   // percent_progress - computed: true, optional: false, required: false
   public get percentProgress() {
     return this.getNumberAttribute('percent_progress');
+  }
+
+  // region - computed: true, optional: true, required: false
+  private _region?: string; 
+  public get region() {
+    return this.getStringAttribute('region');
+  }
+  public set region(value: string) {
+    this._region = value;
+  }
+  public resetRegion() {
+    this._region = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get regionInput() {
+    return this._region;
   }
 
   // s3_bucket_name - computed: false, optional: false, required: true
@@ -412,6 +435,7 @@ export class RdsExportTask extends cdktf.TerraformResource {
       export_task_identifier: cdktf.stringToTerraform(this._exportTaskIdentifier),
       iam_role_arn: cdktf.stringToTerraform(this._iamRoleArn),
       kms_key_id: cdktf.stringToTerraform(this._kmsKeyId),
+      region: cdktf.stringToTerraform(this._region),
       s3_bucket_name: cdktf.stringToTerraform(this._s3BucketName),
       s3_prefix: cdktf.stringToTerraform(this._s3Prefix),
       source_arn: cdktf.stringToTerraform(this._sourceArn),
@@ -441,6 +465,12 @@ export class RdsExportTask extends cdktf.TerraformResource {
       },
       kms_key_id: {
         value: cdktf.stringToHclTerraform(this._kmsKeyId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      region: {
+        value: cdktf.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

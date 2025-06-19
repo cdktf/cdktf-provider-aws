@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/devopsguru_resource_collection
+// https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/devopsguru_resource_collection
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,26 +13,20 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsDevopsguruResourceCollectionConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/devopsguru_resource_collection#type DataAwsDevopsguruResourceCollection#type}
+  * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/devopsguru_resource_collection#region DataAwsDevopsguruResourceCollection#region}
+  */
+  readonly region?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/devopsguru_resource_collection#type DataAwsDevopsguruResourceCollection#type}
   */
   readonly type: string;
-  /**
-  * cloudformation block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/devopsguru_resource_collection#cloudformation DataAwsDevopsguruResourceCollection#cloudformation}
-  */
-  readonly cloudformation?: DataAwsDevopsguruResourceCollectionCloudformation[] | cdktf.IResolvable;
-  /**
-  * tags block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/devopsguru_resource_collection#tags DataAwsDevopsguruResourceCollection#tags}
-  */
-  readonly tags?: DataAwsDevopsguruResourceCollectionTags[] | cdktf.IResolvable;
 }
 export interface DataAwsDevopsguruResourceCollectionCloudformation {
 }
 
-export function dataAwsDevopsguruResourceCollectionCloudformationToTerraform(struct?: DataAwsDevopsguruResourceCollectionCloudformation | cdktf.IResolvable): any {
+export function dataAwsDevopsguruResourceCollectionCloudformationToTerraform(struct?: DataAwsDevopsguruResourceCollectionCloudformation): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -42,7 +36,7 @@ export function dataAwsDevopsguruResourceCollectionCloudformationToTerraform(str
 }
 
 
-export function dataAwsDevopsguruResourceCollectionCloudformationToHclTerraform(struct?: DataAwsDevopsguruResourceCollectionCloudformation | cdktf.IResolvable): any {
+export function dataAwsDevopsguruResourceCollectionCloudformationToHclTerraform(struct?: DataAwsDevopsguruResourceCollectionCloudformation): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -54,7 +48,6 @@ export function dataAwsDevopsguruResourceCollectionCloudformationToHclTerraform(
 
 export class DataAwsDevopsguruResourceCollectionCloudformationOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -66,27 +59,18 @@ export class DataAwsDevopsguruResourceCollectionCloudformationOutputReference ex
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataAwsDevopsguruResourceCollectionCloudformation | cdktf.IResolvable | undefined {
-    if (this.resolvableValue) {
-      return this.resolvableValue;
-    }
+  public get internalValue(): DataAwsDevopsguruResourceCollectionCloudformation | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAwsDevopsguruResourceCollectionCloudformation | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataAwsDevopsguruResourceCollectionCloudformation | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-      this.resolvableValue = undefined;
-    }
-    else if (cdktf.Tokenization.isResolvable(value)) {
-      this.isEmptyObject = false;
-      this.resolvableValue = value;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
-      this.resolvableValue = undefined;
     }
   }
 
@@ -97,7 +81,6 @@ export class DataAwsDevopsguruResourceCollectionCloudformationOutputReference ex
 }
 
 export class DataAwsDevopsguruResourceCollectionCloudformationList extends cdktf.ComplexList {
-  public internalValue? : DataAwsDevopsguruResourceCollectionCloudformation[] | cdktf.IResolvable
 
   /**
   * @param terraformResource The parent resource
@@ -118,7 +101,7 @@ export class DataAwsDevopsguruResourceCollectionCloudformationList extends cdktf
 export interface DataAwsDevopsguruResourceCollectionTags {
 }
 
-export function dataAwsDevopsguruResourceCollectionTagsToTerraform(struct?: DataAwsDevopsguruResourceCollectionTags | cdktf.IResolvable): any {
+export function dataAwsDevopsguruResourceCollectionTagsToTerraform(struct?: DataAwsDevopsguruResourceCollectionTags): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -128,7 +111,7 @@ export function dataAwsDevopsguruResourceCollectionTagsToTerraform(struct?: Data
 }
 
 
-export function dataAwsDevopsguruResourceCollectionTagsToHclTerraform(struct?: DataAwsDevopsguruResourceCollectionTags | cdktf.IResolvable): any {
+export function dataAwsDevopsguruResourceCollectionTagsToHclTerraform(struct?: DataAwsDevopsguruResourceCollectionTags): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -140,7 +123,6 @@ export function dataAwsDevopsguruResourceCollectionTagsToHclTerraform(struct?: D
 
 export class DataAwsDevopsguruResourceCollectionTagsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -152,27 +134,18 @@ export class DataAwsDevopsguruResourceCollectionTagsOutputReference extends cdkt
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataAwsDevopsguruResourceCollectionTags | cdktf.IResolvable | undefined {
-    if (this.resolvableValue) {
-      return this.resolvableValue;
-    }
+  public get internalValue(): DataAwsDevopsguruResourceCollectionTags | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAwsDevopsguruResourceCollectionTags | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataAwsDevopsguruResourceCollectionTags | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-      this.resolvableValue = undefined;
-    }
-    else if (cdktf.Tokenization.isResolvable(value)) {
-      this.isEmptyObject = false;
-      this.resolvableValue = value;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
-      this.resolvableValue = undefined;
     }
   }
 
@@ -188,7 +161,6 @@ export class DataAwsDevopsguruResourceCollectionTagsOutputReference extends cdkt
 }
 
 export class DataAwsDevopsguruResourceCollectionTagsList extends cdktf.ComplexList {
-  public internalValue? : DataAwsDevopsguruResourceCollectionTags[] | cdktf.IResolvable
 
   /**
   * @param terraformResource The parent resource
@@ -208,7 +180,7 @@ export class DataAwsDevopsguruResourceCollectionTagsList extends cdktf.ComplexLi
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/devopsguru_resource_collection aws_devopsguru_resource_collection}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/devopsguru_resource_collection aws_devopsguru_resource_collection}
 */
 export class DataAwsDevopsguruResourceCollection extends cdktf.TerraformDataSource {
 
@@ -224,7 +196,7 @@ export class DataAwsDevopsguruResourceCollection extends cdktf.TerraformDataSour
   * Generates CDKTF code for importing a DataAwsDevopsguruResourceCollection resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsDevopsguruResourceCollection to import
-  * @param importFromId The id of the existing DataAwsDevopsguruResourceCollection that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/devopsguru_resource_collection#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsDevopsguruResourceCollection that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/devopsguru_resource_collection#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsDevopsguruResourceCollection to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -236,7 +208,7 @@ export class DataAwsDevopsguruResourceCollection extends cdktf.TerraformDataSour
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/devopsguru_resource_collection aws_devopsguru_resource_collection} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/devopsguru_resource_collection aws_devopsguru_resource_collection} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -247,8 +219,8 @@ export class DataAwsDevopsguruResourceCollection extends cdktf.TerraformDataSour
       terraformResourceType: 'aws_devopsguru_resource_collection',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.100.0',
-        providerVersionConstraint: '~> 5.0'
+        providerVersion: '6.0.0',
+        providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -258,18 +230,45 @@ export class DataAwsDevopsguruResourceCollection extends cdktf.TerraformDataSour
       connection: config.connection,
       forEach: config.forEach
     });
+    this._region = config.region;
     this._type = config.type;
-    this._cloudformation.internalValue = config.cloudformation;
-    this._tags.internalValue = config.tags;
   }
 
   // ==========
   // ATTRIBUTES
   // ==========
 
+  // cloudformation - computed: true, optional: false, required: false
+  private _cloudformation = new DataAwsDevopsguruResourceCollectionCloudformationList(this, "cloudformation", false);
+  public get cloudformation() {
+    return this._cloudformation;
+  }
+
   // id - computed: true, optional: false, required: false
   public get id() {
     return this.getStringAttribute('id');
+  }
+
+  // region - computed: true, optional: true, required: false
+  private _region?: string; 
+  public get region() {
+    return this.getStringAttribute('region');
+  }
+  public set region(value: string) {
+    this._region = value;
+  }
+  public resetRegion() {
+    this._region = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get regionInput() {
+    return this._region;
+  }
+
+  // tags - computed: true, optional: false, required: false
+  private _tags = new DataAwsDevopsguruResourceCollectionTagsList(this, "tags", false);
+  public get tags() {
+    return this._tags;
   }
 
   // type - computed: false, optional: false, required: true
@@ -285,69 +284,30 @@ export class DataAwsDevopsguruResourceCollection extends cdktf.TerraformDataSour
     return this._type;
   }
 
-  // cloudformation - computed: false, optional: true, required: false
-  private _cloudformation = new DataAwsDevopsguruResourceCollectionCloudformationList(this, "cloudformation", false);
-  public get cloudformation() {
-    return this._cloudformation;
-  }
-  public putCloudformation(value: DataAwsDevopsguruResourceCollectionCloudformation[] | cdktf.IResolvable) {
-    this._cloudformation.internalValue = value;
-  }
-  public resetCloudformation() {
-    this._cloudformation.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get cloudformationInput() {
-    return this._cloudformation.internalValue;
-  }
-
-  // tags - computed: false, optional: true, required: false
-  private _tags = new DataAwsDevopsguruResourceCollectionTagsList(this, "tags", false);
-  public get tags() {
-    return this._tags;
-  }
-  public putTags(value: DataAwsDevopsguruResourceCollectionTags[] | cdktf.IResolvable) {
-    this._tags.internalValue = value;
-  }
-  public resetTags() {
-    this._tags.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get tagsInput() {
-    return this._tags.internalValue;
-  }
-
   // =========
   // SYNTHESIS
   // =========
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      region: cdktf.stringToTerraform(this._region),
       type: cdktf.stringToTerraform(this._type),
-      cloudformation: cdktf.listMapper(dataAwsDevopsguruResourceCollectionCloudformationToTerraform, true)(this._cloudformation.internalValue),
-      tags: cdktf.listMapper(dataAwsDevopsguruResourceCollectionTagsToTerraform, true)(this._tags.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
+      region: {
+        value: cdktf.stringToHclTerraform(this._region),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
       type: {
         value: cdktf.stringToHclTerraform(this._type),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
-      },
-      cloudformation: {
-        value: cdktf.listMapperHcl(dataAwsDevopsguruResourceCollectionCloudformationToHclTerraform, true)(this._cloudformation.internalValue),
-        isBlock: true,
-        type: "list",
-        storageClassType: "DataAwsDevopsguruResourceCollectionCloudformationList",
-      },
-      tags: {
-        value: cdktf.listMapperHcl(dataAwsDevopsguruResourceCollectionTagsToHclTerraform, true)(this._tags.internalValue),
-        isBlock: true,
-        type: "list",
-        storageClassType: "DataAwsDevopsguruResourceCollectionTagsList",
       },
     };
 

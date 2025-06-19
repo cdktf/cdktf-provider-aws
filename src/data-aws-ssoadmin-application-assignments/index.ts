@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ssoadmin_application_assignments
+// https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ssoadmin_application_assignments
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,20 +13,20 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsSsoadminApplicationAssignmentsConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ssoadmin_application_assignments#application_arn DataAwsSsoadminApplicationAssignments#application_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ssoadmin_application_assignments#application_arn DataAwsSsoadminApplicationAssignments#application_arn}
   */
   readonly applicationArn: string;
   /**
-  * application_assignments block
+  * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ssoadmin_application_assignments#application_assignments DataAwsSsoadminApplicationAssignments#application_assignments}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ssoadmin_application_assignments#region DataAwsSsoadminApplicationAssignments#region}
   */
-  readonly applicationAssignments?: DataAwsSsoadminApplicationAssignmentsApplicationAssignments[] | cdktf.IResolvable;
+  readonly region?: string;
 }
 export interface DataAwsSsoadminApplicationAssignmentsApplicationAssignments {
 }
 
-export function dataAwsSsoadminApplicationAssignmentsApplicationAssignmentsToTerraform(struct?: DataAwsSsoadminApplicationAssignmentsApplicationAssignments | cdktf.IResolvable): any {
+export function dataAwsSsoadminApplicationAssignmentsApplicationAssignmentsToTerraform(struct?: DataAwsSsoadminApplicationAssignmentsApplicationAssignments): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -36,7 +36,7 @@ export function dataAwsSsoadminApplicationAssignmentsApplicationAssignmentsToTer
 }
 
 
-export function dataAwsSsoadminApplicationAssignmentsApplicationAssignmentsToHclTerraform(struct?: DataAwsSsoadminApplicationAssignmentsApplicationAssignments | cdktf.IResolvable): any {
+export function dataAwsSsoadminApplicationAssignmentsApplicationAssignmentsToHclTerraform(struct?: DataAwsSsoadminApplicationAssignmentsApplicationAssignments): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -48,7 +48,6 @@ export function dataAwsSsoadminApplicationAssignmentsApplicationAssignmentsToHcl
 
 export class DataAwsSsoadminApplicationAssignmentsApplicationAssignmentsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -60,27 +59,18 @@ export class DataAwsSsoadminApplicationAssignmentsApplicationAssignmentsOutputRe
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataAwsSsoadminApplicationAssignmentsApplicationAssignments | cdktf.IResolvable | undefined {
-    if (this.resolvableValue) {
-      return this.resolvableValue;
-    }
+  public get internalValue(): DataAwsSsoadminApplicationAssignmentsApplicationAssignments | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAwsSsoadminApplicationAssignmentsApplicationAssignments | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataAwsSsoadminApplicationAssignmentsApplicationAssignments | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-      this.resolvableValue = undefined;
-    }
-    else if (cdktf.Tokenization.isResolvable(value)) {
-      this.isEmptyObject = false;
-      this.resolvableValue = value;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
-      this.resolvableValue = undefined;
     }
   }
 
@@ -101,7 +91,6 @@ export class DataAwsSsoadminApplicationAssignmentsApplicationAssignmentsOutputRe
 }
 
 export class DataAwsSsoadminApplicationAssignmentsApplicationAssignmentsList extends cdktf.ComplexList {
-  public internalValue? : DataAwsSsoadminApplicationAssignmentsApplicationAssignments[] | cdktf.IResolvable
 
   /**
   * @param terraformResource The parent resource
@@ -121,7 +110,7 @@ export class DataAwsSsoadminApplicationAssignmentsApplicationAssignmentsList ext
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ssoadmin_application_assignments aws_ssoadmin_application_assignments}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ssoadmin_application_assignments aws_ssoadmin_application_assignments}
 */
 export class DataAwsSsoadminApplicationAssignments extends cdktf.TerraformDataSource {
 
@@ -137,7 +126,7 @@ export class DataAwsSsoadminApplicationAssignments extends cdktf.TerraformDataSo
   * Generates CDKTF code for importing a DataAwsSsoadminApplicationAssignments resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsSsoadminApplicationAssignments to import
-  * @param importFromId The id of the existing DataAwsSsoadminApplicationAssignments that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ssoadmin_application_assignments#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsSsoadminApplicationAssignments that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ssoadmin_application_assignments#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsSsoadminApplicationAssignments to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -149,7 +138,7 @@ export class DataAwsSsoadminApplicationAssignments extends cdktf.TerraformDataSo
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ssoadmin_application_assignments aws_ssoadmin_application_assignments} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ssoadmin_application_assignments aws_ssoadmin_application_assignments} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -160,8 +149,8 @@ export class DataAwsSsoadminApplicationAssignments extends cdktf.TerraformDataSo
       terraformResourceType: 'aws_ssoadmin_application_assignments',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.100.0',
-        providerVersionConstraint: '~> 5.0'
+        providerVersion: '6.0.0',
+        providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -172,7 +161,7 @@ export class DataAwsSsoadminApplicationAssignments extends cdktf.TerraformDataSo
       forEach: config.forEach
     });
     this._applicationArn = config.applicationArn;
-    this._applicationAssignments.internalValue = config.applicationAssignments;
+    this._region = config.region;
   }
 
   // ==========
@@ -192,25 +181,31 @@ export class DataAwsSsoadminApplicationAssignments extends cdktf.TerraformDataSo
     return this._applicationArn;
   }
 
+  // application_assignments - computed: true, optional: false, required: false
+  private _applicationAssignments = new DataAwsSsoadminApplicationAssignmentsApplicationAssignmentsList(this, "application_assignments", false);
+  public get applicationAssignments() {
+    return this._applicationAssignments;
+  }
+
   // id - computed: true, optional: false, required: false
   public get id() {
     return this.getStringAttribute('id');
   }
 
-  // application_assignments - computed: false, optional: true, required: false
-  private _applicationAssignments = new DataAwsSsoadminApplicationAssignmentsApplicationAssignmentsList(this, "application_assignments", false);
-  public get applicationAssignments() {
-    return this._applicationAssignments;
+  // region - computed: true, optional: true, required: false
+  private _region?: string; 
+  public get region() {
+    return this.getStringAttribute('region');
   }
-  public putApplicationAssignments(value: DataAwsSsoadminApplicationAssignmentsApplicationAssignments[] | cdktf.IResolvable) {
-    this._applicationAssignments.internalValue = value;
+  public set region(value: string) {
+    this._region = value;
   }
-  public resetApplicationAssignments() {
-    this._applicationAssignments.internalValue = undefined;
+  public resetRegion() {
+    this._region = undefined;
   }
   // Temporarily expose input value. Use with caution.
-  public get applicationAssignmentsInput() {
-    return this._applicationAssignments.internalValue;
+  public get regionInput() {
+    return this._region;
   }
 
   // =========
@@ -220,7 +215,7 @@ export class DataAwsSsoadminApplicationAssignments extends cdktf.TerraformDataSo
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       application_arn: cdktf.stringToTerraform(this._applicationArn),
-      application_assignments: cdktf.listMapper(dataAwsSsoadminApplicationAssignmentsApplicationAssignmentsToTerraform, true)(this._applicationAssignments.internalValue),
+      region: cdktf.stringToTerraform(this._region),
     };
   }
 
@@ -232,11 +227,11 @@ export class DataAwsSsoadminApplicationAssignments extends cdktf.TerraformDataSo
         type: "simple",
         storageClassType: "string",
       },
-      application_assignments: {
-        value: cdktf.listMapperHcl(dataAwsSsoadminApplicationAssignmentsApplicationAssignmentsToHclTerraform, true)(this._applicationAssignments.internalValue),
-        isBlock: true,
-        type: "list",
-        storageClassType: "DataAwsSsoadminApplicationAssignmentsApplicationAssignmentsList",
+      region: {
+        value: cdktf.stringToHclTerraform(this._region),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
       },
     };
 

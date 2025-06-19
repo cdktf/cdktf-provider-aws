@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/signer_signing_job
+// https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/signer_signing_job
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,16 +13,22 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsSignerSigningJobConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/signer_signing_job#id DataAwsSignerSigningJob#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/signer_signing_job#id DataAwsSignerSigningJob#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/signer_signing_job#job_id DataAwsSignerSigningJob#job_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/signer_signing_job#job_id DataAwsSignerSigningJob#job_id}
   */
   readonly jobId: string;
+  /**
+  * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/signer_signing_job#region DataAwsSignerSigningJob#region}
+  */
+  readonly region?: string;
 }
 export interface DataAwsSignerSigningJobRevocationRecord {
 }
@@ -428,7 +434,7 @@ export class DataAwsSignerSigningJobSourceList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/signer_signing_job aws_signer_signing_job}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/signer_signing_job aws_signer_signing_job}
 */
 export class DataAwsSignerSigningJob extends cdktf.TerraformDataSource {
 
@@ -444,7 +450,7 @@ export class DataAwsSignerSigningJob extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataAwsSignerSigningJob resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsSignerSigningJob to import
-  * @param importFromId The id of the existing DataAwsSignerSigningJob that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/signer_signing_job#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsSignerSigningJob that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/signer_signing_job#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsSignerSigningJob to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -456,7 +462,7 @@ export class DataAwsSignerSigningJob extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/signer_signing_job aws_signer_signing_job} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/signer_signing_job aws_signer_signing_job} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -467,8 +473,8 @@ export class DataAwsSignerSigningJob extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_signer_signing_job',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.100.0',
-        providerVersionConstraint: '~> 5.0'
+        providerVersion: '6.0.0',
+        providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -480,6 +486,7 @@ export class DataAwsSignerSigningJob extends cdktf.TerraformDataSource {
     });
     this._id = config.id;
     this._jobId = config.jobId;
+    this._region = config.region;
   }
 
   // ==========
@@ -555,6 +562,22 @@ export class DataAwsSignerSigningJob extends cdktf.TerraformDataSource {
     return this.getStringAttribute('profile_version');
   }
 
+  // region - computed: true, optional: true, required: false
+  private _region?: string; 
+  public get region() {
+    return this.getStringAttribute('region');
+  }
+  public set region(value: string) {
+    this._region = value;
+  }
+  public resetRegion() {
+    this._region = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get regionInput() {
+    return this._region;
+  }
+
   // requested_by - computed: true, optional: false, required: false
   public get requestedBy() {
     return this.getStringAttribute('requested_by');
@@ -601,6 +624,7 @@ export class DataAwsSignerSigningJob extends cdktf.TerraformDataSource {
     return {
       id: cdktf.stringToTerraform(this._id),
       job_id: cdktf.stringToTerraform(this._jobId),
+      region: cdktf.stringToTerraform(this._region),
     };
   }
 
@@ -614,6 +638,12 @@ export class DataAwsSignerSigningJob extends cdktf.TerraformDataSource {
       },
       job_id: {
         value: cdktf.stringToHclTerraform(this._jobId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      region: {
+        value: cdktf.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

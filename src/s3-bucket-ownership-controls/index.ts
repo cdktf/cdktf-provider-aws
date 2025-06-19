@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/s3_bucket_ownership_controls
+// https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3_bucket_ownership_controls
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,26 +13,32 @@ import * as cdktf from 'cdktf';
 
 export interface S3BucketOwnershipControlsConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/s3_bucket_ownership_controls#bucket S3BucketOwnershipControls#bucket}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3_bucket_ownership_controls#bucket S3BucketOwnershipControls#bucket}
   */
   readonly bucket: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/s3_bucket_ownership_controls#id S3BucketOwnershipControls#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3_bucket_ownership_controls#id S3BucketOwnershipControls#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
+  * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3_bucket_ownership_controls#region S3BucketOwnershipControls#region}
+  */
+  readonly region?: string;
+  /**
   * rule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/s3_bucket_ownership_controls#rule S3BucketOwnershipControls#rule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3_bucket_ownership_controls#rule S3BucketOwnershipControls#rule}
   */
   readonly rule: S3BucketOwnershipControlsRule;
 }
 export interface S3BucketOwnershipControlsRule {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/s3_bucket_ownership_controls#object_ownership S3BucketOwnershipControls#object_ownership}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3_bucket_ownership_controls#object_ownership S3BucketOwnershipControls#object_ownership}
   */
   readonly objectOwnership: string;
 }
@@ -113,7 +119,7 @@ export class S3BucketOwnershipControlsRuleOutputReference extends cdktf.ComplexO
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/s3_bucket_ownership_controls aws_s3_bucket_ownership_controls}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3_bucket_ownership_controls aws_s3_bucket_ownership_controls}
 */
 export class S3BucketOwnershipControls extends cdktf.TerraformResource {
 
@@ -129,7 +135,7 @@ export class S3BucketOwnershipControls extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a S3BucketOwnershipControls resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the S3BucketOwnershipControls to import
-  * @param importFromId The id of the existing S3BucketOwnershipControls that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/s3_bucket_ownership_controls#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing S3BucketOwnershipControls that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3_bucket_ownership_controls#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the S3BucketOwnershipControls to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -141,7 +147,7 @@ export class S3BucketOwnershipControls extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/s3_bucket_ownership_controls aws_s3_bucket_ownership_controls} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3_bucket_ownership_controls aws_s3_bucket_ownership_controls} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -152,8 +158,8 @@ export class S3BucketOwnershipControls extends cdktf.TerraformResource {
       terraformResourceType: 'aws_s3_bucket_ownership_controls',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.100.0',
-        providerVersionConstraint: '~> 5.0'
+        providerVersion: '6.0.0',
+        providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -165,6 +171,7 @@ export class S3BucketOwnershipControls extends cdktf.TerraformResource {
     });
     this._bucket = config.bucket;
     this._id = config.id;
+    this._region = config.region;
     this._rule.internalValue = config.rule;
   }
 
@@ -201,6 +208,22 @@ export class S3BucketOwnershipControls extends cdktf.TerraformResource {
     return this._id;
   }
 
+  // region - computed: true, optional: true, required: false
+  private _region?: string; 
+  public get region() {
+    return this.getStringAttribute('region');
+  }
+  public set region(value: string) {
+    this._region = value;
+  }
+  public resetRegion() {
+    this._region = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get regionInput() {
+    return this._region;
+  }
+
   // rule - computed: false, optional: false, required: true
   private _rule = new S3BucketOwnershipControlsRuleOutputReference(this, "rule");
   public get rule() {
@@ -222,6 +245,7 @@ export class S3BucketOwnershipControls extends cdktf.TerraformResource {
     return {
       bucket: cdktf.stringToTerraform(this._bucket),
       id: cdktf.stringToTerraform(this._id),
+      region: cdktf.stringToTerraform(this._region),
       rule: s3BucketOwnershipControlsRuleToTerraform(this._rule.internalValue),
     };
   }
@@ -236,6 +260,12 @@ export class S3BucketOwnershipControls extends cdktf.TerraformResource {
       },
       id: {
         value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      region: {
+        value: cdktf.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

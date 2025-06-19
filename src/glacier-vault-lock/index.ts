@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glacier_vault_lock
+// https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glacier_vault_lock
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,32 +13,38 @@ import * as cdktf from 'cdktf';
 
 export interface GlacierVaultLockConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glacier_vault_lock#complete_lock GlacierVaultLock#complete_lock}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glacier_vault_lock#complete_lock GlacierVaultLock#complete_lock}
   */
   readonly completeLock: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glacier_vault_lock#id GlacierVaultLock#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glacier_vault_lock#id GlacierVaultLock#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glacier_vault_lock#ignore_deletion_error GlacierVaultLock#ignore_deletion_error}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glacier_vault_lock#ignore_deletion_error GlacierVaultLock#ignore_deletion_error}
   */
   readonly ignoreDeletionError?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glacier_vault_lock#policy GlacierVaultLock#policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glacier_vault_lock#policy GlacierVaultLock#policy}
   */
   readonly policy: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glacier_vault_lock#vault_name GlacierVaultLock#vault_name}
+  * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glacier_vault_lock#region GlacierVaultLock#region}
+  */
+  readonly region?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glacier_vault_lock#vault_name GlacierVaultLock#vault_name}
   */
   readonly vaultName: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glacier_vault_lock aws_glacier_vault_lock}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glacier_vault_lock aws_glacier_vault_lock}
 */
 export class GlacierVaultLock extends cdktf.TerraformResource {
 
@@ -54,7 +60,7 @@ export class GlacierVaultLock extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GlacierVaultLock resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GlacierVaultLock to import
-  * @param importFromId The id of the existing GlacierVaultLock that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glacier_vault_lock#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GlacierVaultLock that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glacier_vault_lock#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GlacierVaultLock to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -66,7 +72,7 @@ export class GlacierVaultLock extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glacier_vault_lock aws_glacier_vault_lock} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glacier_vault_lock aws_glacier_vault_lock} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -77,8 +83,8 @@ export class GlacierVaultLock extends cdktf.TerraformResource {
       terraformResourceType: 'aws_glacier_vault_lock',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.100.0',
-        providerVersionConstraint: '~> 5.0'
+        providerVersion: '6.0.0',
+        providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -92,6 +98,7 @@ export class GlacierVaultLock extends cdktf.TerraformResource {
     this._id = config.id;
     this._ignoreDeletionError = config.ignoreDeletionError;
     this._policy = config.policy;
+    this._region = config.region;
     this._vaultName = config.vaultName;
   }
 
@@ -157,6 +164,22 @@ export class GlacierVaultLock extends cdktf.TerraformResource {
     return this._policy;
   }
 
+  // region - computed: true, optional: true, required: false
+  private _region?: string; 
+  public get region() {
+    return this.getStringAttribute('region');
+  }
+  public set region(value: string) {
+    this._region = value;
+  }
+  public resetRegion() {
+    this._region = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get regionInput() {
+    return this._region;
+  }
+
   // vault_name - computed: false, optional: false, required: true
   private _vaultName?: string; 
   public get vaultName() {
@@ -180,6 +203,7 @@ export class GlacierVaultLock extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       ignore_deletion_error: cdktf.booleanToTerraform(this._ignoreDeletionError),
       policy: cdktf.stringToTerraform(this._policy),
+      region: cdktf.stringToTerraform(this._region),
       vault_name: cdktf.stringToTerraform(this._vaultName),
     };
   }
@@ -206,6 +230,12 @@ export class GlacierVaultLock extends cdktf.TerraformResource {
       },
       policy: {
         value: cdktf.stringToHclTerraform(this._policy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      region: {
+        value: cdktf.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

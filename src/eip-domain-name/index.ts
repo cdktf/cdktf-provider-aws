@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/eip_domain_name
+// https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/eip_domain_name
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,17 +13,23 @@ import * as cdktf from 'cdktf';
 
 export interface EipDomainNameConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/eip_domain_name#allocation_id EipDomainName#allocation_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/eip_domain_name#allocation_id EipDomainName#allocation_id}
   */
   readonly allocationId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/eip_domain_name#domain_name EipDomainName#domain_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/eip_domain_name#domain_name EipDomainName#domain_name}
   */
   readonly domainName: string;
   /**
+  * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/eip_domain_name#region EipDomainName#region}
+  */
+  readonly region?: string;
+  /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/eip_domain_name#timeouts EipDomainName#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/eip_domain_name#timeouts EipDomainName#timeouts}
   */
   readonly timeouts?: EipDomainNameTimeouts;
 }
@@ -31,19 +37,19 @@ export interface EipDomainNameTimeouts {
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/eip_domain_name#create EipDomainName#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/eip_domain_name#create EipDomainName#create}
   */
   readonly create?: string;
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/eip_domain_name#delete EipDomainName#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/eip_domain_name#delete EipDomainName#delete}
   */
   readonly delete?: string;
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/eip_domain_name#update EipDomainName#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/eip_domain_name#update EipDomainName#update}
   */
   readonly update?: string;
 }
@@ -195,7 +201,7 @@ export class EipDomainNameTimeoutsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/eip_domain_name aws_eip_domain_name}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/eip_domain_name aws_eip_domain_name}
 */
 export class EipDomainName extends cdktf.TerraformResource {
 
@@ -211,7 +217,7 @@ export class EipDomainName extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a EipDomainName resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the EipDomainName to import
-  * @param importFromId The id of the existing EipDomainName that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/eip_domain_name#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing EipDomainName that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/eip_domain_name#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the EipDomainName to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -223,7 +229,7 @@ export class EipDomainName extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/eip_domain_name aws_eip_domain_name} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/eip_domain_name aws_eip_domain_name} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -234,8 +240,8 @@ export class EipDomainName extends cdktf.TerraformResource {
       terraformResourceType: 'aws_eip_domain_name',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.100.0',
-        providerVersionConstraint: '~> 5.0'
+        providerVersion: '6.0.0',
+        providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -247,6 +253,7 @@ export class EipDomainName extends cdktf.TerraformResource {
     });
     this._allocationId = config.allocationId;
     this._domainName = config.domainName;
+    this._region = config.region;
     this._timeouts.internalValue = config.timeouts;
   }
 
@@ -290,6 +297,22 @@ export class EipDomainName extends cdktf.TerraformResource {
     return this.getStringAttribute('ptr_record');
   }
 
+  // region - computed: true, optional: true, required: false
+  private _region?: string; 
+  public get region() {
+    return this.getStringAttribute('region');
+  }
+  public set region(value: string) {
+    this._region = value;
+  }
+  public resetRegion() {
+    this._region = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get regionInput() {
+    return this._region;
+  }
+
   // timeouts - computed: false, optional: true, required: false
   private _timeouts = new EipDomainNameTimeoutsOutputReference(this, "timeouts");
   public get timeouts() {
@@ -314,6 +337,7 @@ export class EipDomainName extends cdktf.TerraformResource {
     return {
       allocation_id: cdktf.stringToTerraform(this._allocationId),
       domain_name: cdktf.stringToTerraform(this._domainName),
+      region: cdktf.stringToTerraform(this._region),
       timeouts: eipDomainNameTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -328,6 +352,12 @@ export class EipDomainName extends cdktf.TerraformResource {
       },
       domain_name: {
         value: cdktf.stringToHclTerraform(this._domainName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      region: {
+        value: cdktf.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

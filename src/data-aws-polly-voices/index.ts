@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/polly_voices
+// https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/polly_voices
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,21 +13,27 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsPollyVoicesConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/polly_voices#engine DataAwsPollyVoices#engine}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/polly_voices#engine DataAwsPollyVoices#engine}
   */
   readonly engine?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/polly_voices#include_additional_language_codes DataAwsPollyVoices#include_additional_language_codes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/polly_voices#include_additional_language_codes DataAwsPollyVoices#include_additional_language_codes}
   */
   readonly includeAdditionalLanguageCodes?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/polly_voices#language_code DataAwsPollyVoices#language_code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/polly_voices#language_code DataAwsPollyVoices#language_code}
   */
   readonly languageCode?: string;
   /**
+  * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/polly_voices#region DataAwsPollyVoices#region}
+  */
+  readonly region?: string;
+  /**
   * voices block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/polly_voices#voices DataAwsPollyVoices#voices}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/polly_voices#voices DataAwsPollyVoices#voices}
   */
   readonly voices?: DataAwsPollyVoicesVoices[] | cdktf.IResolvable;
 }
@@ -149,7 +155,7 @@ export class DataAwsPollyVoicesVoicesList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/polly_voices aws_polly_voices}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/polly_voices aws_polly_voices}
 */
 export class DataAwsPollyVoices extends cdktf.TerraformDataSource {
 
@@ -165,7 +171,7 @@ export class DataAwsPollyVoices extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataAwsPollyVoices resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsPollyVoices to import
-  * @param importFromId The id of the existing DataAwsPollyVoices that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/polly_voices#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsPollyVoices that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/polly_voices#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsPollyVoices to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -177,7 +183,7 @@ export class DataAwsPollyVoices extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/polly_voices aws_polly_voices} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/polly_voices aws_polly_voices} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -188,8 +194,8 @@ export class DataAwsPollyVoices extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_polly_voices',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.100.0',
-        providerVersionConstraint: '~> 5.0'
+        providerVersion: '6.0.0',
+        providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -202,6 +208,7 @@ export class DataAwsPollyVoices extends cdktf.TerraformDataSource {
     this._engine = config.engine;
     this._includeAdditionalLanguageCodes = config.includeAdditionalLanguageCodes;
     this._languageCode = config.languageCode;
+    this._region = config.region;
     this._voices.internalValue = config.voices;
   }
 
@@ -262,6 +269,22 @@ export class DataAwsPollyVoices extends cdktf.TerraformDataSource {
     return this._languageCode;
   }
 
+  // region - computed: true, optional: true, required: false
+  private _region?: string; 
+  public get region() {
+    return this.getStringAttribute('region');
+  }
+  public set region(value: string) {
+    this._region = value;
+  }
+  public resetRegion() {
+    this._region = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get regionInput() {
+    return this._region;
+  }
+
   // voices - computed: false, optional: true, required: false
   private _voices = new DataAwsPollyVoicesVoicesList(this, "voices", false);
   public get voices() {
@@ -287,6 +310,7 @@ export class DataAwsPollyVoices extends cdktf.TerraformDataSource {
       engine: cdktf.stringToTerraform(this._engine),
       include_additional_language_codes: cdktf.booleanToTerraform(this._includeAdditionalLanguageCodes),
       language_code: cdktf.stringToTerraform(this._languageCode),
+      region: cdktf.stringToTerraform(this._region),
       voices: cdktf.listMapper(dataAwsPollyVoicesVoicesToTerraform, true)(this._voices.internalValue),
     };
   }
@@ -307,6 +331,12 @@ export class DataAwsPollyVoices extends cdktf.TerraformDataSource {
       },
       language_code: {
         value: cdktf.stringToHclTerraform(this._languageCode),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      region: {
+        value: cdktf.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

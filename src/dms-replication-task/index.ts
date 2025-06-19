@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/dms_replication_task
+// https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/dms_replication_task
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,68 +13,74 @@ import * as cdktf from 'cdktf';
 
 export interface DmsReplicationTaskConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/dms_replication_task#cdc_start_position DmsReplicationTask#cdc_start_position}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/dms_replication_task#cdc_start_position DmsReplicationTask#cdc_start_position}
   */
   readonly cdcStartPosition?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/dms_replication_task#cdc_start_time DmsReplicationTask#cdc_start_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/dms_replication_task#cdc_start_time DmsReplicationTask#cdc_start_time}
   */
   readonly cdcStartTime?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/dms_replication_task#id DmsReplicationTask#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/dms_replication_task#id DmsReplicationTask#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/dms_replication_task#migration_type DmsReplicationTask#migration_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/dms_replication_task#migration_type DmsReplicationTask#migration_type}
   */
   readonly migrationType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/dms_replication_task#replication_instance_arn DmsReplicationTask#replication_instance_arn}
+  * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/dms_replication_task#region DmsReplicationTask#region}
+  */
+  readonly region?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/dms_replication_task#replication_instance_arn DmsReplicationTask#replication_instance_arn}
   */
   readonly replicationInstanceArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/dms_replication_task#replication_task_id DmsReplicationTask#replication_task_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/dms_replication_task#replication_task_id DmsReplicationTask#replication_task_id}
   */
   readonly replicationTaskId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/dms_replication_task#replication_task_settings DmsReplicationTask#replication_task_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/dms_replication_task#replication_task_settings DmsReplicationTask#replication_task_settings}
   */
   readonly replicationTaskSettings?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/dms_replication_task#resource_identifier DmsReplicationTask#resource_identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/dms_replication_task#resource_identifier DmsReplicationTask#resource_identifier}
   */
   readonly resourceIdentifier?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/dms_replication_task#source_endpoint_arn DmsReplicationTask#source_endpoint_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/dms_replication_task#source_endpoint_arn DmsReplicationTask#source_endpoint_arn}
   */
   readonly sourceEndpointArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/dms_replication_task#start_replication_task DmsReplicationTask#start_replication_task}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/dms_replication_task#start_replication_task DmsReplicationTask#start_replication_task}
   */
   readonly startReplicationTask?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/dms_replication_task#table_mappings DmsReplicationTask#table_mappings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/dms_replication_task#table_mappings DmsReplicationTask#table_mappings}
   */
   readonly tableMappings: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/dms_replication_task#tags DmsReplicationTask#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/dms_replication_task#tags DmsReplicationTask#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/dms_replication_task#tags_all DmsReplicationTask#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/dms_replication_task#tags_all DmsReplicationTask#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/dms_replication_task#target_endpoint_arn DmsReplicationTask#target_endpoint_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/dms_replication_task#target_endpoint_arn DmsReplicationTask#target_endpoint_arn}
   */
   readonly targetEndpointArn: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/dms_replication_task aws_dms_replication_task}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/dms_replication_task aws_dms_replication_task}
 */
 export class DmsReplicationTask extends cdktf.TerraformResource {
 
@@ -90,7 +96,7 @@ export class DmsReplicationTask extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a DmsReplicationTask resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DmsReplicationTask to import
-  * @param importFromId The id of the existing DmsReplicationTask that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/dms_replication_task#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DmsReplicationTask that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/dms_replication_task#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DmsReplicationTask to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -102,7 +108,7 @@ export class DmsReplicationTask extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/dms_replication_task aws_dms_replication_task} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/dms_replication_task aws_dms_replication_task} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -113,8 +119,8 @@ export class DmsReplicationTask extends cdktf.TerraformResource {
       terraformResourceType: 'aws_dms_replication_task',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.100.0',
-        providerVersionConstraint: '~> 5.0'
+        providerVersion: '6.0.0',
+        providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -128,6 +134,7 @@ export class DmsReplicationTask extends cdktf.TerraformResource {
     this._cdcStartTime = config.cdcStartTime;
     this._id = config.id;
     this._migrationType = config.migrationType;
+    this._region = config.region;
     this._replicationInstanceArn = config.replicationInstanceArn;
     this._replicationTaskId = config.replicationTaskId;
     this._replicationTaskSettings = config.replicationTaskSettings;
@@ -203,6 +210,22 @@ export class DmsReplicationTask extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get migrationTypeInput() {
     return this._migrationType;
+  }
+
+  // region - computed: true, optional: true, required: false
+  private _region?: string; 
+  public get region() {
+    return this.getStringAttribute('region');
+  }
+  public set region(value: string) {
+    this._region = value;
+  }
+  public resetRegion() {
+    this._region = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get regionInput() {
+    return this._region;
   }
 
   // replication_instance_arn - computed: false, optional: false, required: true
@@ -370,6 +393,7 @@ export class DmsReplicationTask extends cdktf.TerraformResource {
       cdc_start_time: cdktf.stringToTerraform(this._cdcStartTime),
       id: cdktf.stringToTerraform(this._id),
       migration_type: cdktf.stringToTerraform(this._migrationType),
+      region: cdktf.stringToTerraform(this._region),
       replication_instance_arn: cdktf.stringToTerraform(this._replicationInstanceArn),
       replication_task_id: cdktf.stringToTerraform(this._replicationTaskId),
       replication_task_settings: cdktf.stringToTerraform(this._replicationTaskSettings),
@@ -405,6 +429,12 @@ export class DmsReplicationTask extends cdktf.TerraformResource {
       },
       migration_type: {
         value: cdktf.stringToHclTerraform(this._migrationType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      region: {
+        value: cdktf.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

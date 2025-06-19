@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/devopsguru_service_integration
+// https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/devopsguru_service_integration
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,35 +13,41 @@ import * as cdktf from 'cdktf';
 
 export interface DevopsguruServiceIntegrationConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/devopsguru_service_integration#region DevopsguruServiceIntegration#region}
+  */
+  readonly region?: string;
+  /**
   * kms_server_side_encryption block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/devopsguru_service_integration#kms_server_side_encryption DevopsguruServiceIntegration#kms_server_side_encryption}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/devopsguru_service_integration#kms_server_side_encryption DevopsguruServiceIntegration#kms_server_side_encryption}
   */
   readonly kmsServerSideEncryption?: DevopsguruServiceIntegrationKmsServerSideEncryption[] | cdktf.IResolvable;
   /**
   * logs_anomaly_detection block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/devopsguru_service_integration#logs_anomaly_detection DevopsguruServiceIntegration#logs_anomaly_detection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/devopsguru_service_integration#logs_anomaly_detection DevopsguruServiceIntegration#logs_anomaly_detection}
   */
   readonly logsAnomalyDetection?: DevopsguruServiceIntegrationLogsAnomalyDetection[] | cdktf.IResolvable;
   /**
   * ops_center block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/devopsguru_service_integration#ops_center DevopsguruServiceIntegration#ops_center}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/devopsguru_service_integration#ops_center DevopsguruServiceIntegration#ops_center}
   */
   readonly opsCenter?: DevopsguruServiceIntegrationOpsCenter[] | cdktf.IResolvable;
 }
 export interface DevopsguruServiceIntegrationKmsServerSideEncryption {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/devopsguru_service_integration#kms_key_id DevopsguruServiceIntegration#kms_key_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/devopsguru_service_integration#kms_key_id DevopsguruServiceIntegration#kms_key_id}
   */
   readonly kmsKeyId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/devopsguru_service_integration#opt_in_status DevopsguruServiceIntegration#opt_in_status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/devopsguru_service_integration#opt_in_status DevopsguruServiceIntegration#opt_in_status}
   */
   readonly optInStatus?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/devopsguru_service_integration#type DevopsguruServiceIntegration#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/devopsguru_service_integration#type DevopsguruServiceIntegration#type}
   */
   readonly type?: string;
 }
@@ -215,7 +221,7 @@ export class DevopsguruServiceIntegrationKmsServerSideEncryptionList extends cdk
 }
 export interface DevopsguruServiceIntegrationLogsAnomalyDetection {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/devopsguru_service_integration#opt_in_status DevopsguruServiceIntegration#opt_in_status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/devopsguru_service_integration#opt_in_status DevopsguruServiceIntegration#opt_in_status}
   */
   readonly optInStatus?: string;
 }
@@ -331,7 +337,7 @@ export class DevopsguruServiceIntegrationLogsAnomalyDetectionList extends cdktf.
 }
 export interface DevopsguruServiceIntegrationOpsCenter {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/devopsguru_service_integration#opt_in_status DevopsguruServiceIntegration#opt_in_status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/devopsguru_service_integration#opt_in_status DevopsguruServiceIntegration#opt_in_status}
   */
   readonly optInStatus?: string;
 }
@@ -447,7 +453,7 @@ export class DevopsguruServiceIntegrationOpsCenterList extends cdktf.ComplexList
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/devopsguru_service_integration aws_devopsguru_service_integration}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/devopsguru_service_integration aws_devopsguru_service_integration}
 */
 export class DevopsguruServiceIntegration extends cdktf.TerraformResource {
 
@@ -463,7 +469,7 @@ export class DevopsguruServiceIntegration extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a DevopsguruServiceIntegration resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DevopsguruServiceIntegration to import
-  * @param importFromId The id of the existing DevopsguruServiceIntegration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/devopsguru_service_integration#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DevopsguruServiceIntegration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/devopsguru_service_integration#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DevopsguruServiceIntegration to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -475,7 +481,7 @@ export class DevopsguruServiceIntegration extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/devopsguru_service_integration aws_devopsguru_service_integration} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/devopsguru_service_integration aws_devopsguru_service_integration} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -486,8 +492,8 @@ export class DevopsguruServiceIntegration extends cdktf.TerraformResource {
       terraformResourceType: 'aws_devopsguru_service_integration',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.100.0',
-        providerVersionConstraint: '~> 5.0'
+        providerVersion: '6.0.0',
+        providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -497,6 +503,7 @@ export class DevopsguruServiceIntegration extends cdktf.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
+    this._region = config.region;
     this._kmsServerSideEncryption.internalValue = config.kmsServerSideEncryption;
     this._logsAnomalyDetection.internalValue = config.logsAnomalyDetection;
     this._opsCenter.internalValue = config.opsCenter;
@@ -509,6 +516,22 @@ export class DevopsguruServiceIntegration extends cdktf.TerraformResource {
   // id - computed: true, optional: false, required: false
   public get id() {
     return this.getStringAttribute('id');
+  }
+
+  // region - computed: true, optional: true, required: false
+  private _region?: string; 
+  public get region() {
+    return this.getStringAttribute('region');
+  }
+  public set region(value: string) {
+    this._region = value;
+  }
+  public resetRegion() {
+    this._region = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get regionInput() {
+    return this._region;
   }
 
   // kms_server_side_encryption - computed: false, optional: true, required: false
@@ -565,6 +588,7 @@ export class DevopsguruServiceIntegration extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      region: cdktf.stringToTerraform(this._region),
       kms_server_side_encryption: cdktf.listMapper(devopsguruServiceIntegrationKmsServerSideEncryptionToTerraform, true)(this._kmsServerSideEncryption.internalValue),
       logs_anomaly_detection: cdktf.listMapper(devopsguruServiceIntegrationLogsAnomalyDetectionToTerraform, true)(this._logsAnomalyDetection.internalValue),
       ops_center: cdktf.listMapper(devopsguruServiceIntegrationOpsCenterToTerraform, true)(this._opsCenter.internalValue),
@@ -573,6 +597,12 @@ export class DevopsguruServiceIntegration extends cdktf.TerraformResource {
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
+      region: {
+        value: cdktf.stringToHclTerraform(this._region),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
       kms_server_side_encryption: {
         value: cdktf.listMapperHcl(devopsguruServiceIntegrationKmsServerSideEncryptionToHclTerraform, true)(this._kmsServerSideEncryption.internalValue),
         isBlock: true,

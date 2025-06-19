@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/api_gateway_account
+// https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/api_gateway_account
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,13 +13,15 @@ import * as cdktf from 'cdktf';
 
 export interface ApiGatewayAccountConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/api_gateway_account#cloudwatch_role_arn ApiGatewayAccount#cloudwatch_role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/api_gateway_account#cloudwatch_role_arn ApiGatewayAccount#cloudwatch_role_arn}
   */
   readonly cloudwatchRoleArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/api_gateway_account#reset_on_delete ApiGatewayAccount#reset_on_delete}
+  * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/api_gateway_account#region ApiGatewayAccount#region}
   */
-  readonly resetOnDelete?: boolean | cdktf.IResolvable;
+  readonly region?: string;
 }
 export interface ApiGatewayAccountThrottleSettings {
 }
@@ -103,7 +105,7 @@ export class ApiGatewayAccountThrottleSettingsList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/api_gateway_account aws_api_gateway_account}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/api_gateway_account aws_api_gateway_account}
 */
 export class ApiGatewayAccount extends cdktf.TerraformResource {
 
@@ -119,7 +121,7 @@ export class ApiGatewayAccount extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ApiGatewayAccount resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ApiGatewayAccount to import
-  * @param importFromId The id of the existing ApiGatewayAccount that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/api_gateway_account#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ApiGatewayAccount that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/api_gateway_account#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ApiGatewayAccount to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -131,7 +133,7 @@ export class ApiGatewayAccount extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/api_gateway_account aws_api_gateway_account} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/api_gateway_account aws_api_gateway_account} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -142,8 +144,8 @@ export class ApiGatewayAccount extends cdktf.TerraformResource {
       terraformResourceType: 'aws_api_gateway_account',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.100.0',
-        providerVersionConstraint: '~> 5.0'
+        providerVersion: '6.0.0',
+        providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -154,7 +156,7 @@ export class ApiGatewayAccount extends cdktf.TerraformResource {
       forEach: config.forEach
     });
     this._cloudwatchRoleArn = config.cloudwatchRoleArn;
-    this._resetOnDelete = config.resetOnDelete;
+    this._region = config.region;
   }
 
   // ==========
@@ -192,20 +194,20 @@ export class ApiGatewayAccount extends cdktf.TerraformResource {
     return this.getStringAttribute('id');
   }
 
-  // reset_on_delete - computed: false, optional: true, required: false
-  private _resetOnDelete?: boolean | cdktf.IResolvable; 
-  public get resetOnDelete() {
-    return this.getBooleanAttribute('reset_on_delete');
+  // region - computed: true, optional: true, required: false
+  private _region?: string; 
+  public get region() {
+    return this.getStringAttribute('region');
   }
-  public set resetOnDelete(value: boolean | cdktf.IResolvable) {
-    this._resetOnDelete = value;
+  public set region(value: string) {
+    this._region = value;
   }
-  public resetResetOnDelete() {
-    this._resetOnDelete = undefined;
+  public resetRegion() {
+    this._region = undefined;
   }
   // Temporarily expose input value. Use with caution.
-  public get resetOnDeleteInput() {
-    return this._resetOnDelete;
+  public get regionInput() {
+    return this._region;
   }
 
   // throttle_settings - computed: true, optional: false, required: false
@@ -221,7 +223,7 @@ export class ApiGatewayAccount extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       cloudwatch_role_arn: cdktf.stringToTerraform(this._cloudwatchRoleArn),
-      reset_on_delete: cdktf.booleanToTerraform(this._resetOnDelete),
+      region: cdktf.stringToTerraform(this._region),
     };
   }
 
@@ -233,11 +235,11 @@ export class ApiGatewayAccount extends cdktf.TerraformResource {
         type: "simple",
         storageClassType: "string",
       },
-      reset_on_delete: {
-        value: cdktf.booleanToHclTerraform(this._resetOnDelete),
+      region: {
+        value: cdktf.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
-        storageClassType: "boolean",
+        storageClassType: "string",
       },
     };
 

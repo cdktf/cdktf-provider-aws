@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/servicequotas_templates
+// https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/servicequotas_templates
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,20 +13,18 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsServicequotasTemplatesConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/servicequotas_templates#region DataAwsServicequotasTemplates#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/servicequotas_templates#aws_region DataAwsServicequotasTemplates#aws_region}
   */
-  readonly region: string;
+  readonly awsRegion?: string;
   /**
-  * templates block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/servicequotas_templates#templates DataAwsServicequotasTemplates#templates}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/servicequotas_templates#region DataAwsServicequotasTemplates#region}
   */
-  readonly templates?: DataAwsServicequotasTemplatesTemplates[] | cdktf.IResolvable;
+  readonly region?: string;
 }
 export interface DataAwsServicequotasTemplatesTemplates {
 }
 
-export function dataAwsServicequotasTemplatesTemplatesToTerraform(struct?: DataAwsServicequotasTemplatesTemplates | cdktf.IResolvable): any {
+export function dataAwsServicequotasTemplatesTemplatesToTerraform(struct?: DataAwsServicequotasTemplatesTemplates): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -36,7 +34,7 @@ export function dataAwsServicequotasTemplatesTemplatesToTerraform(struct?: DataA
 }
 
 
-export function dataAwsServicequotasTemplatesTemplatesToHclTerraform(struct?: DataAwsServicequotasTemplatesTemplates | cdktf.IResolvable): any {
+export function dataAwsServicequotasTemplatesTemplatesToHclTerraform(struct?: DataAwsServicequotasTemplatesTemplates): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -48,7 +46,6 @@ export function dataAwsServicequotasTemplatesTemplatesToHclTerraform(struct?: Da
 
 export class DataAwsServicequotasTemplatesTemplatesOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -60,27 +57,18 @@ export class DataAwsServicequotasTemplatesTemplatesOutputReference extends cdktf
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataAwsServicequotasTemplatesTemplates | cdktf.IResolvable | undefined {
-    if (this.resolvableValue) {
-      return this.resolvableValue;
-    }
+  public get internalValue(): DataAwsServicequotasTemplatesTemplates | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAwsServicequotasTemplatesTemplates | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataAwsServicequotasTemplatesTemplates | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-      this.resolvableValue = undefined;
-    }
-    else if (cdktf.Tokenization.isResolvable(value)) {
-      this.isEmptyObject = false;
-      this.resolvableValue = value;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
-      this.resolvableValue = undefined;
     }
   }
 
@@ -126,7 +114,6 @@ export class DataAwsServicequotasTemplatesTemplatesOutputReference extends cdktf
 }
 
 export class DataAwsServicequotasTemplatesTemplatesList extends cdktf.ComplexList {
-  public internalValue? : DataAwsServicequotasTemplatesTemplates[] | cdktf.IResolvable
 
   /**
   * @param terraformResource The parent resource
@@ -146,7 +133,7 @@ export class DataAwsServicequotasTemplatesTemplatesList extends cdktf.ComplexLis
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/servicequotas_templates aws_servicequotas_templates}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/servicequotas_templates aws_servicequotas_templates}
 */
 export class DataAwsServicequotasTemplates extends cdktf.TerraformDataSource {
 
@@ -162,7 +149,7 @@ export class DataAwsServicequotasTemplates extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataAwsServicequotasTemplates resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsServicequotasTemplates to import
-  * @param importFromId The id of the existing DataAwsServicequotasTemplates that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/servicequotas_templates#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsServicequotasTemplates that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/servicequotas_templates#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsServicequotasTemplates to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -174,19 +161,19 @@ export class DataAwsServicequotasTemplates extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/servicequotas_templates aws_servicequotas_templates} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/servicequotas_templates aws_servicequotas_templates} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
-  * @param options DataAwsServicequotasTemplatesConfig
+  * @param options DataAwsServicequotasTemplatesConfig = {}
   */
-  public constructor(scope: Construct, id: string, config: DataAwsServicequotasTemplatesConfig) {
+  public constructor(scope: Construct, id: string, config: DataAwsServicequotasTemplatesConfig = {}) {
     super(scope, id, {
       terraformResourceType: 'aws_servicequotas_templates',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.100.0',
-        providerVersionConstraint: '~> 5.0'
+        providerVersion: '6.0.0',
+        providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -196,20 +183,36 @@ export class DataAwsServicequotasTemplates extends cdktf.TerraformDataSource {
       connection: config.connection,
       forEach: config.forEach
     });
+    this._awsRegion = config.awsRegion;
     this._region = config.region;
-    this._templates.internalValue = config.templates;
   }
 
   // ==========
   // ATTRIBUTES
   // ==========
 
+  // aws_region - computed: false, optional: true, required: false
+  private _awsRegion?: string; 
+  public get awsRegion() {
+    return this.getStringAttribute('aws_region');
+  }
+  public set awsRegion(value: string) {
+    this._awsRegion = value;
+  }
+  public resetAwsRegion() {
+    this._awsRegion = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get awsRegionInput() {
+    return this._awsRegion;
+  }
+
   // id - computed: true, optional: false, required: false
   public get id() {
     return this.getStringAttribute('id');
   }
 
-  // region - computed: false, optional: false, required: true
+  // region - computed: false, optional: true, required: false
   private _region?: string; 
   public get region() {
     return this.getStringAttribute('region');
@@ -217,25 +220,18 @@ export class DataAwsServicequotasTemplates extends cdktf.TerraformDataSource {
   public set region(value: string) {
     this._region = value;
   }
+  public resetRegion() {
+    this._region = undefined;
+  }
   // Temporarily expose input value. Use with caution.
   public get regionInput() {
     return this._region;
   }
 
-  // templates - computed: false, optional: true, required: false
+  // templates - computed: true, optional: false, required: false
   private _templates = new DataAwsServicequotasTemplatesTemplatesList(this, "templates", false);
   public get templates() {
     return this._templates;
-  }
-  public putTemplates(value: DataAwsServicequotasTemplatesTemplates[] | cdktf.IResolvable) {
-    this._templates.internalValue = value;
-  }
-  public resetTemplates() {
-    this._templates.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get templatesInput() {
-    return this._templates.internalValue;
   }
 
   // =========
@@ -244,24 +240,24 @@ export class DataAwsServicequotasTemplates extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      aws_region: cdktf.stringToTerraform(this._awsRegion),
       region: cdktf.stringToTerraform(this._region),
-      templates: cdktf.listMapper(dataAwsServicequotasTemplatesTemplatesToTerraform, true)(this._templates.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
+      aws_region: {
+        value: cdktf.stringToHclTerraform(this._awsRegion),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
       region: {
         value: cdktf.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
-      },
-      templates: {
-        value: cdktf.listMapperHcl(dataAwsServicequotasTemplatesTemplatesToHclTerraform, true)(this._templates.internalValue),
-        isBlock: true,
-        type: "list",
-        storageClassType: "DataAwsServicequotasTemplatesTemplatesList",
       },
     };
 

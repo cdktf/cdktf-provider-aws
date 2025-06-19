@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/kendra_faq
+// https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/kendra_faq
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,22 +13,28 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsKendraFaqConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/kendra_faq#faq_id DataAwsKendraFaq#faq_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/kendra_faq#faq_id DataAwsKendraFaq#faq_id}
   */
   readonly faqId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/kendra_faq#id DataAwsKendraFaq#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/kendra_faq#id DataAwsKendraFaq#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/kendra_faq#index_id DataAwsKendraFaq#index_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/kendra_faq#index_id DataAwsKendraFaq#index_id}
   */
   readonly indexId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/kendra_faq#tags DataAwsKendraFaq#tags}
+  * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/kendra_faq#region DataAwsKendraFaq#region}
+  */
+  readonly region?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/kendra_faq#tags DataAwsKendraFaq#tags}
   */
   readonly tags?: { [key: string]: string };
 }
@@ -114,7 +120,7 @@ export class DataAwsKendraFaqS3PathList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/kendra_faq aws_kendra_faq}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/kendra_faq aws_kendra_faq}
 */
 export class DataAwsKendraFaq extends cdktf.TerraformDataSource {
 
@@ -130,7 +136,7 @@ export class DataAwsKendraFaq extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataAwsKendraFaq resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsKendraFaq to import
-  * @param importFromId The id of the existing DataAwsKendraFaq that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/kendra_faq#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsKendraFaq that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/kendra_faq#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsKendraFaq to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -142,7 +148,7 @@ export class DataAwsKendraFaq extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/kendra_faq aws_kendra_faq} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/kendra_faq aws_kendra_faq} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -153,8 +159,8 @@ export class DataAwsKendraFaq extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_kendra_faq',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.100.0',
-        providerVersionConstraint: '~> 5.0'
+        providerVersion: '6.0.0',
+        providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -167,6 +173,7 @@ export class DataAwsKendraFaq extends cdktf.TerraformDataSource {
     this._faqId = config.faqId;
     this._id = config.id;
     this._indexId = config.indexId;
+    this._region = config.region;
     this._tags = config.tags;
   }
 
@@ -251,6 +258,22 @@ export class DataAwsKendraFaq extends cdktf.TerraformDataSource {
     return this.getStringAttribute('name');
   }
 
+  // region - computed: true, optional: true, required: false
+  private _region?: string; 
+  public get region() {
+    return this.getStringAttribute('region');
+  }
+  public set region(value: string) {
+    this._region = value;
+  }
+  public resetRegion() {
+    this._region = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get regionInput() {
+    return this._region;
+  }
+
   // role_arn - computed: true, optional: false, required: false
   public get roleArn() {
     return this.getStringAttribute('role_arn');
@@ -297,6 +320,7 @@ export class DataAwsKendraFaq extends cdktf.TerraformDataSource {
       faq_id: cdktf.stringToTerraform(this._faqId),
       id: cdktf.stringToTerraform(this._id),
       index_id: cdktf.stringToTerraform(this._indexId),
+      region: cdktf.stringToTerraform(this._region),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
     };
   }
@@ -317,6 +341,12 @@ export class DataAwsKendraFaq extends cdktf.TerraformDataSource {
       },
       index_id: {
         value: cdktf.stringToHclTerraform(this._indexId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      region: {
+        value: cdktf.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

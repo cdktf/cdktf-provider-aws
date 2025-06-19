@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/servicequotas_template
+// https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/servicequotas_template
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,25 +13,29 @@ import * as cdktf from 'cdktf';
 
 export interface ServicequotasTemplateConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/servicequotas_template#quota_code ServicequotasTemplate#quota_code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/servicequotas_template#aws_region ServicequotasTemplate#aws_region}
+  */
+  readonly awsRegion?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/servicequotas_template#quota_code ServicequotasTemplate#quota_code}
   */
   readonly quotaCode: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/servicequotas_template#region ServicequotasTemplate#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/servicequotas_template#region ServicequotasTemplate#region}
   */
-  readonly region: string;
+  readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/servicequotas_template#service_code ServicequotasTemplate#service_code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/servicequotas_template#service_code ServicequotasTemplate#service_code}
   */
   readonly serviceCode: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/servicequotas_template#value ServicequotasTemplate#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/servicequotas_template#value ServicequotasTemplate#value}
   */
   readonly value: number;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/servicequotas_template aws_servicequotas_template}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/servicequotas_template aws_servicequotas_template}
 */
 export class ServicequotasTemplate extends cdktf.TerraformResource {
 
@@ -47,7 +51,7 @@ export class ServicequotasTemplate extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ServicequotasTemplate resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ServicequotasTemplate to import
-  * @param importFromId The id of the existing ServicequotasTemplate that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/servicequotas_template#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ServicequotasTemplate that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/servicequotas_template#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ServicequotasTemplate to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -59,7 +63,7 @@ export class ServicequotasTemplate extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/servicequotas_template aws_servicequotas_template} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/servicequotas_template aws_servicequotas_template} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -70,8 +74,8 @@ export class ServicequotasTemplate extends cdktf.TerraformResource {
       terraformResourceType: 'aws_servicequotas_template',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.100.0',
-        providerVersionConstraint: '~> 5.0'
+        providerVersion: '6.0.0',
+        providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -81,6 +85,7 @@ export class ServicequotasTemplate extends cdktf.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
+    this._awsRegion = config.awsRegion;
     this._quotaCode = config.quotaCode;
     this._region = config.region;
     this._serviceCode = config.serviceCode;
@@ -90,6 +95,22 @@ export class ServicequotasTemplate extends cdktf.TerraformResource {
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // aws_region - computed: true, optional: true, required: false
+  private _awsRegion?: string; 
+  public get awsRegion() {
+    return this.getStringAttribute('aws_region');
+  }
+  public set awsRegion(value: string) {
+    this._awsRegion = value;
+  }
+  public resetAwsRegion() {
+    this._awsRegion = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get awsRegionInput() {
+    return this._awsRegion;
+  }
 
   // global_quota - computed: true, optional: false, required: false
   public get globalQuota() {
@@ -119,13 +140,16 @@ export class ServicequotasTemplate extends cdktf.TerraformResource {
     return this.getStringAttribute('quota_name');
   }
 
-  // region - computed: false, optional: false, required: true
+  // region - computed: true, optional: true, required: false
   private _region?: string; 
   public get region() {
     return this.getStringAttribute('region');
   }
   public set region(value: string) {
     this._region = value;
+  }
+  public resetRegion() {
+    this._region = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get regionInput() {
@@ -174,6 +198,7 @@ export class ServicequotasTemplate extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      aws_region: cdktf.stringToTerraform(this._awsRegion),
       quota_code: cdktf.stringToTerraform(this._quotaCode),
       region: cdktf.stringToTerraform(this._region),
       service_code: cdktf.stringToTerraform(this._serviceCode),
@@ -183,6 +208,12 @@ export class ServicequotasTemplate extends cdktf.TerraformResource {
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
+      aws_region: {
+        value: cdktf.stringToHclTerraform(this._awsRegion),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
       quota_code: {
         value: cdktf.stringToHclTerraform(this._quotaCode),
         isBlock: false,

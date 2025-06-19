@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/quicksight_theme
+// https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/quicksight_theme
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,70 +13,76 @@ import * as cdktf from 'cdktf';
 
 export interface QuicksightThemeConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/quicksight_theme#aws_account_id QuicksightTheme#aws_account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/quicksight_theme#aws_account_id QuicksightTheme#aws_account_id}
   */
   readonly awsAccountId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/quicksight_theme#base_theme_id QuicksightTheme#base_theme_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/quicksight_theme#base_theme_id QuicksightTheme#base_theme_id}
   */
   readonly baseThemeId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/quicksight_theme#id QuicksightTheme#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/quicksight_theme#id QuicksightTheme#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/quicksight_theme#name QuicksightTheme#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/quicksight_theme#name QuicksightTheme#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/quicksight_theme#tags QuicksightTheme#tags}
+  * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/quicksight_theme#region QuicksightTheme#region}
+  */
+  readonly region?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/quicksight_theme#tags QuicksightTheme#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/quicksight_theme#tags_all QuicksightTheme#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/quicksight_theme#tags_all QuicksightTheme#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/quicksight_theme#theme_id QuicksightTheme#theme_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/quicksight_theme#theme_id QuicksightTheme#theme_id}
   */
   readonly themeId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/quicksight_theme#version_description QuicksightTheme#version_description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/quicksight_theme#version_description QuicksightTheme#version_description}
   */
   readonly versionDescription?: string;
   /**
   * configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/quicksight_theme#configuration QuicksightTheme#configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/quicksight_theme#configuration QuicksightTheme#configuration}
   */
   readonly configuration?: QuicksightThemeConfiguration;
   /**
   * permissions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/quicksight_theme#permissions QuicksightTheme#permissions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/quicksight_theme#permissions QuicksightTheme#permissions}
   */
   readonly permissions?: QuicksightThemePermissions[] | cdktf.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/quicksight_theme#timeouts QuicksightTheme#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/quicksight_theme#timeouts QuicksightTheme#timeouts}
   */
   readonly timeouts?: QuicksightThemeTimeouts;
 }
 export interface QuicksightThemeConfigurationDataColorPalette {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/quicksight_theme#colors QuicksightTheme#colors}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/quicksight_theme#colors QuicksightTheme#colors}
   */
   readonly colors?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/quicksight_theme#empty_fill_color QuicksightTheme#empty_fill_color}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/quicksight_theme#empty_fill_color QuicksightTheme#empty_fill_color}
   */
   readonly emptyFillColor?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/quicksight_theme#min_max_gradient QuicksightTheme#min_max_gradient}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/quicksight_theme#min_max_gradient QuicksightTheme#min_max_gradient}
   */
   readonly minMaxGradient?: string[];
 }
@@ -218,7 +224,7 @@ export class QuicksightThemeConfigurationDataColorPaletteOutputReference extends
 }
 export interface QuicksightThemeConfigurationSheetTileBorder {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/quicksight_theme#show QuicksightTheme#show}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/quicksight_theme#show QuicksightTheme#show}
   */
   readonly show?: boolean | cdktf.IResolvable;
 }
@@ -304,7 +310,7 @@ export interface QuicksightThemeConfigurationSheetTile {
   /**
   * border block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/quicksight_theme#border QuicksightTheme#border}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/quicksight_theme#border QuicksightTheme#border}
   */
   readonly border?: QuicksightThemeConfigurationSheetTileBorder;
 }
@@ -388,7 +394,7 @@ export class QuicksightThemeConfigurationSheetTileOutputReference extends cdktf.
 }
 export interface QuicksightThemeConfigurationSheetTileLayoutGutter {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/quicksight_theme#show QuicksightTheme#show}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/quicksight_theme#show QuicksightTheme#show}
   */
   readonly show?: boolean | cdktf.IResolvable;
 }
@@ -472,7 +478,7 @@ export class QuicksightThemeConfigurationSheetTileLayoutGutterOutputReference ex
 }
 export interface QuicksightThemeConfigurationSheetTileLayoutMargin {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/quicksight_theme#show QuicksightTheme#show}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/quicksight_theme#show QuicksightTheme#show}
   */
   readonly show?: boolean | cdktf.IResolvable;
 }
@@ -558,13 +564,13 @@ export interface QuicksightThemeConfigurationSheetTileLayout {
   /**
   * gutter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/quicksight_theme#gutter QuicksightTheme#gutter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/quicksight_theme#gutter QuicksightTheme#gutter}
   */
   readonly gutter?: QuicksightThemeConfigurationSheetTileLayoutGutter;
   /**
   * margin block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/quicksight_theme#margin QuicksightTheme#margin}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/quicksight_theme#margin QuicksightTheme#margin}
   */
   readonly margin?: QuicksightThemeConfigurationSheetTileLayoutMargin;
 }
@@ -679,13 +685,13 @@ export interface QuicksightThemeConfigurationSheet {
   /**
   * tile block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/quicksight_theme#tile QuicksightTheme#tile}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/quicksight_theme#tile QuicksightTheme#tile}
   */
   readonly tile?: QuicksightThemeConfigurationSheetTile;
   /**
   * tile_layout block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/quicksight_theme#tile_layout QuicksightTheme#tile_layout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/quicksight_theme#tile_layout QuicksightTheme#tile_layout}
   */
   readonly tileLayout?: QuicksightThemeConfigurationSheetTileLayout;
 }
@@ -798,7 +804,7 @@ export class QuicksightThemeConfigurationSheetOutputReference extends cdktf.Comp
 }
 export interface QuicksightThemeConfigurationTypographyFontFamilies {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/quicksight_theme#font_family QuicksightTheme#font_family}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/quicksight_theme#font_family QuicksightTheme#font_family}
   */
   readonly fontFamily?: string;
 }
@@ -916,7 +922,7 @@ export interface QuicksightThemeConfigurationTypography {
   /**
   * font_families block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/quicksight_theme#font_families QuicksightTheme#font_families}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/quicksight_theme#font_families QuicksightTheme#font_families}
   */
   readonly fontFamilies?: QuicksightThemeConfigurationTypographyFontFamilies[] | cdktf.IResolvable;
 }
@@ -1000,67 +1006,67 @@ export class QuicksightThemeConfigurationTypographyOutputReference extends cdktf
 }
 export interface QuicksightThemeConfigurationUiColorPalette {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/quicksight_theme#accent QuicksightTheme#accent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/quicksight_theme#accent QuicksightTheme#accent}
   */
   readonly accent?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/quicksight_theme#accent_foreground QuicksightTheme#accent_foreground}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/quicksight_theme#accent_foreground QuicksightTheme#accent_foreground}
   */
   readonly accentForeground?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/quicksight_theme#danger QuicksightTheme#danger}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/quicksight_theme#danger QuicksightTheme#danger}
   */
   readonly danger?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/quicksight_theme#danger_foreground QuicksightTheme#danger_foreground}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/quicksight_theme#danger_foreground QuicksightTheme#danger_foreground}
   */
   readonly dangerForeground?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/quicksight_theme#dimension QuicksightTheme#dimension}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/quicksight_theme#dimension QuicksightTheme#dimension}
   */
   readonly dimension?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/quicksight_theme#dimension_foreground QuicksightTheme#dimension_foreground}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/quicksight_theme#dimension_foreground QuicksightTheme#dimension_foreground}
   */
   readonly dimensionForeground?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/quicksight_theme#measure QuicksightTheme#measure}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/quicksight_theme#measure QuicksightTheme#measure}
   */
   readonly measure?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/quicksight_theme#measure_foreground QuicksightTheme#measure_foreground}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/quicksight_theme#measure_foreground QuicksightTheme#measure_foreground}
   */
   readonly measureForeground?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/quicksight_theme#primary_background QuicksightTheme#primary_background}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/quicksight_theme#primary_background QuicksightTheme#primary_background}
   */
   readonly primaryBackground?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/quicksight_theme#primary_foreground QuicksightTheme#primary_foreground}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/quicksight_theme#primary_foreground QuicksightTheme#primary_foreground}
   */
   readonly primaryForeground?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/quicksight_theme#secondary_background QuicksightTheme#secondary_background}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/quicksight_theme#secondary_background QuicksightTheme#secondary_background}
   */
   readonly secondaryBackground?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/quicksight_theme#secondary_foreground QuicksightTheme#secondary_foreground}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/quicksight_theme#secondary_foreground QuicksightTheme#secondary_foreground}
   */
   readonly secondaryForeground?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/quicksight_theme#success QuicksightTheme#success}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/quicksight_theme#success QuicksightTheme#success}
   */
   readonly success?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/quicksight_theme#success_foreground QuicksightTheme#success_foreground}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/quicksight_theme#success_foreground QuicksightTheme#success_foreground}
   */
   readonly successForeground?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/quicksight_theme#warning QuicksightTheme#warning}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/quicksight_theme#warning QuicksightTheme#warning}
   */
   readonly warning?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/quicksight_theme#warning_foreground QuicksightTheme#warning_foreground}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/quicksight_theme#warning_foreground QuicksightTheme#warning_foreground}
   */
   readonly warningForeground?: string;
 }
@@ -1581,25 +1587,25 @@ export interface QuicksightThemeConfiguration {
   /**
   * data_color_palette block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/quicksight_theme#data_color_palette QuicksightTheme#data_color_palette}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/quicksight_theme#data_color_palette QuicksightTheme#data_color_palette}
   */
   readonly dataColorPalette?: QuicksightThemeConfigurationDataColorPalette;
   /**
   * sheet block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/quicksight_theme#sheet QuicksightTheme#sheet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/quicksight_theme#sheet QuicksightTheme#sheet}
   */
   readonly sheet?: QuicksightThemeConfigurationSheet;
   /**
   * typography block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/quicksight_theme#typography QuicksightTheme#typography}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/quicksight_theme#typography QuicksightTheme#typography}
   */
   readonly typography?: QuicksightThemeConfigurationTypography;
   /**
   * ui_color_palette block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/quicksight_theme#ui_color_palette QuicksightTheme#ui_color_palette}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/quicksight_theme#ui_color_palette QuicksightTheme#ui_color_palette}
   */
   readonly uiColorPalette?: QuicksightThemeConfigurationUiColorPalette;
 }
@@ -1770,11 +1776,11 @@ export class QuicksightThemeConfigurationOutputReference extends cdktf.ComplexOb
 }
 export interface QuicksightThemePermissions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/quicksight_theme#actions QuicksightTheme#actions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/quicksight_theme#actions QuicksightTheme#actions}
   */
   readonly actions: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/quicksight_theme#principal QuicksightTheme#principal}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/quicksight_theme#principal QuicksightTheme#principal}
   */
   readonly principal: string;
 }
@@ -1913,15 +1919,15 @@ export class QuicksightThemePermissionsList extends cdktf.ComplexList {
 }
 export interface QuicksightThemeTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/quicksight_theme#create QuicksightTheme#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/quicksight_theme#create QuicksightTheme#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/quicksight_theme#delete QuicksightTheme#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/quicksight_theme#delete QuicksightTheme#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/quicksight_theme#update QuicksightTheme#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/quicksight_theme#update QuicksightTheme#update}
   */
   readonly update?: string;
 }
@@ -2073,7 +2079,7 @@ export class QuicksightThemeTimeoutsOutputReference extends cdktf.ComplexObject 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/quicksight_theme aws_quicksight_theme}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/quicksight_theme aws_quicksight_theme}
 */
 export class QuicksightTheme extends cdktf.TerraformResource {
 
@@ -2089,7 +2095,7 @@ export class QuicksightTheme extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a QuicksightTheme resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the QuicksightTheme to import
-  * @param importFromId The id of the existing QuicksightTheme that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/quicksight_theme#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing QuicksightTheme that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/quicksight_theme#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the QuicksightTheme to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -2101,7 +2107,7 @@ export class QuicksightTheme extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/quicksight_theme aws_quicksight_theme} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/quicksight_theme aws_quicksight_theme} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -2112,8 +2118,8 @@ export class QuicksightTheme extends cdktf.TerraformResource {
       terraformResourceType: 'aws_quicksight_theme',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.100.0',
-        providerVersionConstraint: '~> 5.0'
+        providerVersion: '6.0.0',
+        providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -2127,6 +2133,7 @@ export class QuicksightTheme extends cdktf.TerraformResource {
     this._baseThemeId = config.baseThemeId;
     this._id = config.id;
     this._name = config.name;
+    this._region = config.region;
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
     this._themeId = config.themeId;
@@ -2211,6 +2218,22 @@ export class QuicksightTheme extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
     return this._name;
+  }
+
+  // region - computed: true, optional: true, required: false
+  private _region?: string; 
+  public get region() {
+    return this.getStringAttribute('region');
+  }
+  public set region(value: string) {
+    this._region = value;
+  }
+  public resetRegion() {
+    this._region = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get regionInput() {
+    return this._region;
   }
 
   // status - computed: true, optional: false, required: false
@@ -2342,6 +2365,7 @@ export class QuicksightTheme extends cdktf.TerraformResource {
       base_theme_id: cdktf.stringToTerraform(this._baseThemeId),
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
+      region: cdktf.stringToTerraform(this._region),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       theme_id: cdktf.stringToTerraform(this._themeId),
@@ -2374,6 +2398,12 @@ export class QuicksightTheme extends cdktf.TerraformResource {
       },
       name: {
         value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      region: {
+        value: cdktf.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

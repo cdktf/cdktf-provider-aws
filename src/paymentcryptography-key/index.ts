@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/paymentcryptography_key
+// https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/paymentcryptography_key
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,73 +13,79 @@ import * as cdktf from 'cdktf';
 
 export interface PaymentcryptographyKeyConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/paymentcryptography_key#deletion_window_in_days PaymentcryptographyKey#deletion_window_in_days}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/paymentcryptography_key#deletion_window_in_days PaymentcryptographyKey#deletion_window_in_days}
   */
   readonly deletionWindowInDays?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/paymentcryptography_key#enabled PaymentcryptographyKey#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/paymentcryptography_key#enabled PaymentcryptographyKey#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/paymentcryptography_key#exportable PaymentcryptographyKey#exportable}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/paymentcryptography_key#exportable PaymentcryptographyKey#exportable}
   */
   readonly exportable: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/paymentcryptography_key#key_check_value_algorithm PaymentcryptographyKey#key_check_value_algorithm}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/paymentcryptography_key#key_check_value_algorithm PaymentcryptographyKey#key_check_value_algorithm}
   */
   readonly keyCheckValueAlgorithm?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/paymentcryptography_key#tags PaymentcryptographyKey#tags}
+  * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/paymentcryptography_key#region PaymentcryptographyKey#region}
+  */
+  readonly region?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/paymentcryptography_key#tags PaymentcryptographyKey#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
   * key_attributes block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/paymentcryptography_key#key_attributes PaymentcryptographyKey#key_attributes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/paymentcryptography_key#key_attributes PaymentcryptographyKey#key_attributes}
   */
-  readonly keyAttributes?: PaymentcryptographyKeyKeyAttributes;
+  readonly keyAttributes?: PaymentcryptographyKeyKeyAttributes[] | cdktf.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/paymentcryptography_key#timeouts PaymentcryptographyKey#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/paymentcryptography_key#timeouts PaymentcryptographyKey#timeouts}
   */
   readonly timeouts?: PaymentcryptographyKeyTimeouts;
 }
 export interface PaymentcryptographyKeyKeyAttributesKeyModesOfUse {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/paymentcryptography_key#decrypt PaymentcryptographyKey#decrypt}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/paymentcryptography_key#decrypt PaymentcryptographyKey#decrypt}
   */
   readonly decrypt?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/paymentcryptography_key#derive_key PaymentcryptographyKey#derive_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/paymentcryptography_key#derive_key PaymentcryptographyKey#derive_key}
   */
   readonly deriveKey?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/paymentcryptography_key#encrypt PaymentcryptographyKey#encrypt}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/paymentcryptography_key#encrypt PaymentcryptographyKey#encrypt}
   */
   readonly encrypt?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/paymentcryptography_key#generate PaymentcryptographyKey#generate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/paymentcryptography_key#generate PaymentcryptographyKey#generate}
   */
   readonly generate?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/paymentcryptography_key#no_restrictions PaymentcryptographyKey#no_restrictions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/paymentcryptography_key#no_restrictions PaymentcryptographyKey#no_restrictions}
   */
   readonly noRestrictions?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/paymentcryptography_key#sign PaymentcryptographyKey#sign}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/paymentcryptography_key#sign PaymentcryptographyKey#sign}
   */
   readonly sign?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/paymentcryptography_key#unwrap PaymentcryptographyKey#unwrap}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/paymentcryptography_key#unwrap PaymentcryptographyKey#unwrap}
   */
   readonly unwrap?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/paymentcryptography_key#verify PaymentcryptographyKey#verify}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/paymentcryptography_key#verify PaymentcryptographyKey#verify}
   */
   readonly verify?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/paymentcryptography_key#wrap PaymentcryptographyKey#wrap}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/paymentcryptography_key#wrap PaymentcryptographyKey#wrap}
   */
   readonly wrap?: boolean | cdktf.IResolvable;
 }
@@ -176,9 +182,11 @@ export class PaymentcryptographyKeyKeyAttributesKeyModesOfUseOutputReference ext
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
   public get internalValue(): PaymentcryptographyKeyKeyAttributesKeyModesOfUse | cdktf.IResolvable | undefined {
@@ -403,25 +411,45 @@ export class PaymentcryptographyKeyKeyAttributesKeyModesOfUseOutputReference ext
     return this._wrap;
   }
 }
+
+export class PaymentcryptographyKeyKeyAttributesKeyModesOfUseList extends cdktf.ComplexList {
+  public internalValue? : PaymentcryptographyKeyKeyAttributesKeyModesOfUse[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): PaymentcryptographyKeyKeyAttributesKeyModesOfUseOutputReference {
+    return new PaymentcryptographyKeyKeyAttributesKeyModesOfUseOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface PaymentcryptographyKeyKeyAttributes {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/paymentcryptography_key#key_algorithm PaymentcryptographyKey#key_algorithm}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/paymentcryptography_key#key_algorithm PaymentcryptographyKey#key_algorithm}
   */
   readonly keyAlgorithm: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/paymentcryptography_key#key_class PaymentcryptographyKey#key_class}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/paymentcryptography_key#key_class PaymentcryptographyKey#key_class}
   */
   readonly keyClass: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/paymentcryptography_key#key_usage PaymentcryptographyKey#key_usage}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/paymentcryptography_key#key_usage PaymentcryptographyKey#key_usage}
   */
   readonly keyUsage: string;
   /**
   * key_modes_of_use block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/paymentcryptography_key#key_modes_of_use PaymentcryptographyKey#key_modes_of_use}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/paymentcryptography_key#key_modes_of_use PaymentcryptographyKey#key_modes_of_use}
   */
-  readonly keyModesOfUse?: PaymentcryptographyKeyKeyAttributesKeyModesOfUse;
+  readonly keyModesOfUse?: PaymentcryptographyKeyKeyAttributesKeyModesOfUse[] | cdktf.IResolvable;
 }
 
 export function paymentcryptographyKeyKeyAttributesToTerraform(struct?: PaymentcryptographyKeyKeyAttributes | cdktf.IResolvable): any {
@@ -433,7 +461,7 @@ export function paymentcryptographyKeyKeyAttributesToTerraform(struct?: Paymentc
     key_algorithm: cdktf.stringToTerraform(struct!.keyAlgorithm),
     key_class: cdktf.stringToTerraform(struct!.keyClass),
     key_usage: cdktf.stringToTerraform(struct!.keyUsage),
-    key_modes_of_use: paymentcryptographyKeyKeyAttributesKeyModesOfUseToTerraform(struct!.keyModesOfUse),
+    key_modes_of_use: cdktf.listMapper(paymentcryptographyKeyKeyAttributesKeyModesOfUseToTerraform, true)(struct!.keyModesOfUse),
   }
 }
 
@@ -463,10 +491,10 @@ export function paymentcryptographyKeyKeyAttributesToHclTerraform(struct?: Payme
       storageClassType: "string",
     },
     key_modes_of_use: {
-      value: paymentcryptographyKeyKeyAttributesKeyModesOfUseToHclTerraform(struct!.keyModesOfUse),
+      value: cdktf.listMapperHcl(paymentcryptographyKeyKeyAttributesKeyModesOfUseToHclTerraform, true)(struct!.keyModesOfUse),
       isBlock: true,
-      type: "struct",
-      storageClassType: "PaymentcryptographyKeyKeyAttributesKeyModesOfUse",
+      type: "list",
+      storageClassType: "PaymentcryptographyKeyKeyAttributesKeyModesOfUseList",
     },
   };
 
@@ -481,9 +509,11 @@ export class PaymentcryptographyKeyKeyAttributesOutputReference extends cdktf.Co
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
   public get internalValue(): PaymentcryptographyKeyKeyAttributes | cdktf.IResolvable | undefined {
@@ -574,11 +604,11 @@ export class PaymentcryptographyKeyKeyAttributesOutputReference extends cdktf.Co
   }
 
   // key_modes_of_use - computed: false, optional: true, required: false
-  private _keyModesOfUse = new PaymentcryptographyKeyKeyAttributesKeyModesOfUseOutputReference(this, "key_modes_of_use");
+  private _keyModesOfUse = new PaymentcryptographyKeyKeyAttributesKeyModesOfUseList(this, "key_modes_of_use", false);
   public get keyModesOfUse() {
     return this._keyModesOfUse;
   }
-  public putKeyModesOfUse(value: PaymentcryptographyKeyKeyAttributesKeyModesOfUse) {
+  public putKeyModesOfUse(value: PaymentcryptographyKeyKeyAttributesKeyModesOfUse[] | cdktf.IResolvable) {
     this._keyModesOfUse.internalValue = value;
   }
   public resetKeyModesOfUse() {
@@ -589,23 +619,43 @@ export class PaymentcryptographyKeyKeyAttributesOutputReference extends cdktf.Co
     return this._keyModesOfUse.internalValue;
   }
 }
+
+export class PaymentcryptographyKeyKeyAttributesList extends cdktf.ComplexList {
+  public internalValue? : PaymentcryptographyKeyKeyAttributes[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): PaymentcryptographyKeyKeyAttributesOutputReference {
+    return new PaymentcryptographyKeyKeyAttributesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface PaymentcryptographyKeyTimeouts {
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/paymentcryptography_key#create PaymentcryptographyKey#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/paymentcryptography_key#create PaymentcryptographyKey#create}
   */
   readonly create?: string;
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/paymentcryptography_key#delete PaymentcryptographyKey#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/paymentcryptography_key#delete PaymentcryptographyKey#delete}
   */
   readonly delete?: string;
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/paymentcryptography_key#update PaymentcryptographyKey#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/paymentcryptography_key#update PaymentcryptographyKey#update}
   */
   readonly update?: string;
 }
@@ -757,7 +807,7 @@ export class PaymentcryptographyKeyTimeoutsOutputReference extends cdktf.Complex
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/paymentcryptography_key aws_paymentcryptography_key}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/paymentcryptography_key aws_paymentcryptography_key}
 */
 export class PaymentcryptographyKey extends cdktf.TerraformResource {
 
@@ -773,7 +823,7 @@ export class PaymentcryptographyKey extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a PaymentcryptographyKey resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the PaymentcryptographyKey to import
-  * @param importFromId The id of the existing PaymentcryptographyKey that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/paymentcryptography_key#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing PaymentcryptographyKey that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/paymentcryptography_key#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the PaymentcryptographyKey to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -785,7 +835,7 @@ export class PaymentcryptographyKey extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/paymentcryptography_key aws_paymentcryptography_key} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/paymentcryptography_key aws_paymentcryptography_key} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -796,8 +846,8 @@ export class PaymentcryptographyKey extends cdktf.TerraformResource {
       terraformResourceType: 'aws_paymentcryptography_key',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.100.0',
-        providerVersionConstraint: '~> 5.0'
+        providerVersion: '6.0.0',
+        providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -811,6 +861,7 @@ export class PaymentcryptographyKey extends cdktf.TerraformResource {
     this._enabled = config.enabled;
     this._exportable = config.exportable;
     this._keyCheckValueAlgorithm = config.keyCheckValueAlgorithm;
+    this._region = config.region;
     this._tags = config.tags;
     this._keyAttributes.internalValue = config.keyAttributes;
     this._timeouts.internalValue = config.timeouts;
@@ -906,6 +957,22 @@ export class PaymentcryptographyKey extends cdktf.TerraformResource {
     return this.getStringAttribute('key_state');
   }
 
+  // region - computed: true, optional: true, required: false
+  private _region?: string; 
+  public get region() {
+    return this.getStringAttribute('region');
+  }
+  public set region(value: string) {
+    this._region = value;
+  }
+  public resetRegion() {
+    this._region = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get regionInput() {
+    return this._region;
+  }
+
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string }; 
   public get tags() {
@@ -929,11 +996,11 @@ export class PaymentcryptographyKey extends cdktf.TerraformResource {
   }
 
   // key_attributes - computed: false, optional: true, required: false
-  private _keyAttributes = new PaymentcryptographyKeyKeyAttributesOutputReference(this, "key_attributes");
+  private _keyAttributes = new PaymentcryptographyKeyKeyAttributesList(this, "key_attributes", false);
   public get keyAttributes() {
     return this._keyAttributes;
   }
-  public putKeyAttributes(value: PaymentcryptographyKeyKeyAttributes) {
+  public putKeyAttributes(value: PaymentcryptographyKeyKeyAttributes[] | cdktf.IResolvable) {
     this._keyAttributes.internalValue = value;
   }
   public resetKeyAttributes() {
@@ -970,8 +1037,9 @@ export class PaymentcryptographyKey extends cdktf.TerraformResource {
       enabled: cdktf.booleanToTerraform(this._enabled),
       exportable: cdktf.booleanToTerraform(this._exportable),
       key_check_value_algorithm: cdktf.stringToTerraform(this._keyCheckValueAlgorithm),
+      region: cdktf.stringToTerraform(this._region),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      key_attributes: paymentcryptographyKeyKeyAttributesToTerraform(this._keyAttributes.internalValue),
+      key_attributes: cdktf.listMapper(paymentcryptographyKeyKeyAttributesToTerraform, true)(this._keyAttributes.internalValue),
       timeouts: paymentcryptographyKeyTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -1002,6 +1070,12 @@ export class PaymentcryptographyKey extends cdktf.TerraformResource {
         type: "simple",
         storageClassType: "string",
       },
+      region: {
+        value: cdktf.stringToHclTerraform(this._region),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
       tags: {
         value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
         isBlock: false,
@@ -1009,10 +1083,10 @@ export class PaymentcryptographyKey extends cdktf.TerraformResource {
         storageClassType: "stringMap",
       },
       key_attributes: {
-        value: paymentcryptographyKeyKeyAttributesToHclTerraform(this._keyAttributes.internalValue),
+        value: cdktf.listMapperHcl(paymentcryptographyKeyKeyAttributesToHclTerraform, true)(this._keyAttributes.internalValue),
         isBlock: true,
-        type: "struct",
-        storageClassType: "PaymentcryptographyKeyKeyAttributes",
+        type: "list",
+        storageClassType: "PaymentcryptographyKeyKeyAttributesList",
       },
       timeouts: {
         value: paymentcryptographyKeyTimeoutsToHclTerraform(this._timeouts.internalValue),

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/eks_addon_version
+// https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/eks_addon_version
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,28 +13,34 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsEksAddonVersionConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/eks_addon_version#addon_name DataAwsEksAddonVersion#addon_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/eks_addon_version#addon_name DataAwsEksAddonVersion#addon_name}
   */
   readonly addonName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/eks_addon_version#id DataAwsEksAddonVersion#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/eks_addon_version#id DataAwsEksAddonVersion#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/eks_addon_version#kubernetes_version DataAwsEksAddonVersion#kubernetes_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/eks_addon_version#kubernetes_version DataAwsEksAddonVersion#kubernetes_version}
   */
   readonly kubernetesVersion: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/eks_addon_version#most_recent DataAwsEksAddonVersion#most_recent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/eks_addon_version#most_recent DataAwsEksAddonVersion#most_recent}
   */
   readonly mostRecent?: boolean | cdktf.IResolvable;
+  /**
+  * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/eks_addon_version#region DataAwsEksAddonVersion#region}
+  */
+  readonly region?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/eks_addon_version aws_eks_addon_version}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/eks_addon_version aws_eks_addon_version}
 */
 export class DataAwsEksAddonVersion extends cdktf.TerraformDataSource {
 
@@ -50,7 +56,7 @@ export class DataAwsEksAddonVersion extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataAwsEksAddonVersion resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsEksAddonVersion to import
-  * @param importFromId The id of the existing DataAwsEksAddonVersion that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/eks_addon_version#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsEksAddonVersion that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/eks_addon_version#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsEksAddonVersion to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -62,7 +68,7 @@ export class DataAwsEksAddonVersion extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/eks_addon_version aws_eks_addon_version} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/eks_addon_version aws_eks_addon_version} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -73,8 +79,8 @@ export class DataAwsEksAddonVersion extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_eks_addon_version',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.100.0',
-        providerVersionConstraint: '~> 5.0'
+        providerVersion: '6.0.0',
+        providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -88,6 +94,7 @@ export class DataAwsEksAddonVersion extends cdktf.TerraformDataSource {
     this._id = config.id;
     this._kubernetesVersion = config.kubernetesVersion;
     this._mostRecent = config.mostRecent;
+    this._region = config.region;
   }
 
   // ==========
@@ -152,6 +159,22 @@ export class DataAwsEksAddonVersion extends cdktf.TerraformDataSource {
     return this._mostRecent;
   }
 
+  // region - computed: true, optional: true, required: false
+  private _region?: string; 
+  public get region() {
+    return this.getStringAttribute('region');
+  }
+  public set region(value: string) {
+    this._region = value;
+  }
+  public resetRegion() {
+    this._region = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get regionInput() {
+    return this._region;
+  }
+
   // version - computed: true, optional: false, required: false
   public get version() {
     return this.getStringAttribute('version');
@@ -167,6 +190,7 @@ export class DataAwsEksAddonVersion extends cdktf.TerraformDataSource {
       id: cdktf.stringToTerraform(this._id),
       kubernetes_version: cdktf.stringToTerraform(this._kubernetesVersion),
       most_recent: cdktf.booleanToTerraform(this._mostRecent),
+      region: cdktf.stringToTerraform(this._region),
     };
   }
 
@@ -195,6 +219,12 @@ export class DataAwsEksAddonVersion extends cdktf.TerraformDataSource {
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
+      },
+      region: {
+        value: cdktf.stringToHclTerraform(this._region),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
       },
     };
 

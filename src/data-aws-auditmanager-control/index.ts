@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/auditmanager_control
+// https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/auditmanager_control
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,24 +13,24 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsAuditmanagerControlConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/auditmanager_control#name DataAwsAuditmanagerControl#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/auditmanager_control#name DataAwsAuditmanagerControl#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/auditmanager_control#type DataAwsAuditmanagerControl#type}
+  * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/auditmanager_control#region DataAwsAuditmanagerControl#region}
+  */
+  readonly region?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/auditmanager_control#type DataAwsAuditmanagerControl#type}
   */
   readonly type: string;
-  /**
-  * control_mapping_sources block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/auditmanager_control#control_mapping_sources DataAwsAuditmanagerControl#control_mapping_sources}
-  */
-  readonly controlMappingSources?: DataAwsAuditmanagerControlControlMappingSources[] | cdktf.IResolvable;
 }
 export interface DataAwsAuditmanagerControlControlMappingSourcesSourceKeyword {
 }
 
-export function dataAwsAuditmanagerControlControlMappingSourcesSourceKeywordToTerraform(struct?: DataAwsAuditmanagerControlControlMappingSourcesSourceKeyword | cdktf.IResolvable): any {
+export function dataAwsAuditmanagerControlControlMappingSourcesSourceKeywordToTerraform(struct?: DataAwsAuditmanagerControlControlMappingSourcesSourceKeyword): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -40,7 +40,7 @@ export function dataAwsAuditmanagerControlControlMappingSourcesSourceKeywordToTe
 }
 
 
-export function dataAwsAuditmanagerControlControlMappingSourcesSourceKeywordToHclTerraform(struct?: DataAwsAuditmanagerControlControlMappingSourcesSourceKeyword | cdktf.IResolvable): any {
+export function dataAwsAuditmanagerControlControlMappingSourcesSourceKeywordToHclTerraform(struct?: DataAwsAuditmanagerControlControlMappingSourcesSourceKeyword): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -52,7 +52,6 @@ export function dataAwsAuditmanagerControlControlMappingSourcesSourceKeywordToHc
 
 export class DataAwsAuditmanagerControlControlMappingSourcesSourceKeywordOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -64,27 +63,18 @@ export class DataAwsAuditmanagerControlControlMappingSourcesSourceKeywordOutputR
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataAwsAuditmanagerControlControlMappingSourcesSourceKeyword | cdktf.IResolvable | undefined {
-    if (this.resolvableValue) {
-      return this.resolvableValue;
-    }
+  public get internalValue(): DataAwsAuditmanagerControlControlMappingSourcesSourceKeyword | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAwsAuditmanagerControlControlMappingSourcesSourceKeyword | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataAwsAuditmanagerControlControlMappingSourcesSourceKeyword | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-      this.resolvableValue = undefined;
-    }
-    else if (cdktf.Tokenization.isResolvable(value)) {
-      this.isEmptyObject = false;
-      this.resolvableValue = value;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
-      this.resolvableValue = undefined;
     }
   }
 
@@ -100,7 +90,6 @@ export class DataAwsAuditmanagerControlControlMappingSourcesSourceKeywordOutputR
 }
 
 export class DataAwsAuditmanagerControlControlMappingSourcesSourceKeywordList extends cdktf.ComplexList {
-  public internalValue? : DataAwsAuditmanagerControlControlMappingSourcesSourceKeyword[] | cdktf.IResolvable
 
   /**
   * @param terraformResource The parent resource
@@ -119,46 +108,30 @@ export class DataAwsAuditmanagerControlControlMappingSourcesSourceKeywordList ex
   }
 }
 export interface DataAwsAuditmanagerControlControlMappingSources {
-  /**
-  * source_keyword block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/auditmanager_control#source_keyword DataAwsAuditmanagerControl#source_keyword}
-  */
-  readonly sourceKeyword?: DataAwsAuditmanagerControlControlMappingSourcesSourceKeyword[] | cdktf.IResolvable;
 }
 
-export function dataAwsAuditmanagerControlControlMappingSourcesToTerraform(struct?: DataAwsAuditmanagerControlControlMappingSources | cdktf.IResolvable): any {
+export function dataAwsAuditmanagerControlControlMappingSourcesToTerraform(struct?: DataAwsAuditmanagerControlControlMappingSources): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    source_keyword: cdktf.listMapper(dataAwsAuditmanagerControlControlMappingSourcesSourceKeywordToTerraform, true)(struct!.sourceKeyword),
   }
 }
 
 
-export function dataAwsAuditmanagerControlControlMappingSourcesToHclTerraform(struct?: DataAwsAuditmanagerControlControlMappingSources | cdktf.IResolvable): any {
+export function dataAwsAuditmanagerControlControlMappingSourcesToHclTerraform(struct?: DataAwsAuditmanagerControlControlMappingSources): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
-    source_keyword: {
-      value: cdktf.listMapperHcl(dataAwsAuditmanagerControlControlMappingSourcesSourceKeywordToHclTerraform, true)(struct!.sourceKeyword),
-      isBlock: true,
-      type: "list",
-      storageClassType: "DataAwsAuditmanagerControlControlMappingSourcesSourceKeywordList",
-    },
   };
-
-  // remove undefined attributes
-  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+  return attrs;
 }
 
 export class DataAwsAuditmanagerControlControlMappingSourcesOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -170,33 +143,18 @@ export class DataAwsAuditmanagerControlControlMappingSourcesOutputReference exte
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataAwsAuditmanagerControlControlMappingSources | cdktf.IResolvable | undefined {
-    if (this.resolvableValue) {
-      return this.resolvableValue;
-    }
+  public get internalValue(): DataAwsAuditmanagerControlControlMappingSources | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._sourceKeyword?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.sourceKeyword = this._sourceKeyword?.internalValue;
-    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAwsAuditmanagerControlControlMappingSources | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataAwsAuditmanagerControlControlMappingSources | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-      this.resolvableValue = undefined;
-      this._sourceKeyword.internalValue = undefined;
-    }
-    else if (cdktf.Tokenization.isResolvable(value)) {
-      this.isEmptyObject = false;
-      this.resolvableValue = value;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
-      this.resolvableValue = undefined;
-      this._sourceKeyword.internalValue = value.sourceKeyword;
     }
   }
 
@@ -213,6 +171,12 @@ export class DataAwsAuditmanagerControlControlMappingSourcesOutputReference exte
   // source_id - computed: true, optional: false, required: false
   public get sourceId() {
     return this.getStringAttribute('source_id');
+  }
+
+  // source_keyword - computed: true, optional: false, required: false
+  private _sourceKeyword = new DataAwsAuditmanagerControlControlMappingSourcesSourceKeywordList(this, "source_keyword", false);
+  public get sourceKeyword() {
+    return this._sourceKeyword;
   }
 
   // source_name - computed: true, optional: false, required: false
@@ -234,26 +198,9 @@ export class DataAwsAuditmanagerControlControlMappingSourcesOutputReference exte
   public get troubleshootingText() {
     return this.getStringAttribute('troubleshooting_text');
   }
-
-  // source_keyword - computed: false, optional: true, required: false
-  private _sourceKeyword = new DataAwsAuditmanagerControlControlMappingSourcesSourceKeywordList(this, "source_keyword", false);
-  public get sourceKeyword() {
-    return this._sourceKeyword;
-  }
-  public putSourceKeyword(value: DataAwsAuditmanagerControlControlMappingSourcesSourceKeyword[] | cdktf.IResolvable) {
-    this._sourceKeyword.internalValue = value;
-  }
-  public resetSourceKeyword() {
-    this._sourceKeyword.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get sourceKeywordInput() {
-    return this._sourceKeyword.internalValue;
-  }
 }
 
 export class DataAwsAuditmanagerControlControlMappingSourcesList extends cdktf.ComplexList {
-  public internalValue? : DataAwsAuditmanagerControlControlMappingSources[] | cdktf.IResolvable
 
   /**
   * @param terraformResource The parent resource
@@ -273,7 +220,7 @@ export class DataAwsAuditmanagerControlControlMappingSourcesList extends cdktf.C
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/auditmanager_control aws_auditmanager_control}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/auditmanager_control aws_auditmanager_control}
 */
 export class DataAwsAuditmanagerControl extends cdktf.TerraformDataSource {
 
@@ -289,7 +236,7 @@ export class DataAwsAuditmanagerControl extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataAwsAuditmanagerControl resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsAuditmanagerControl to import
-  * @param importFromId The id of the existing DataAwsAuditmanagerControl that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/auditmanager_control#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsAuditmanagerControl that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/auditmanager_control#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsAuditmanagerControl to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -301,7 +248,7 @@ export class DataAwsAuditmanagerControl extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/auditmanager_control aws_auditmanager_control} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/auditmanager_control aws_auditmanager_control} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -312,8 +259,8 @@ export class DataAwsAuditmanagerControl extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_auditmanager_control',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.100.0',
-        providerVersionConstraint: '~> 5.0'
+        providerVersion: '6.0.0',
+        providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -324,8 +271,8 @@ export class DataAwsAuditmanagerControl extends cdktf.TerraformDataSource {
       forEach: config.forEach
     });
     this._name = config.name;
+    this._region = config.region;
     this._type = config.type;
-    this._controlMappingSources.internalValue = config.controlMappingSources;
   }
 
   // ==========
@@ -345,6 +292,12 @@ export class DataAwsAuditmanagerControl extends cdktf.TerraformDataSource {
   // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
+  }
+
+  // control_mapping_sources - computed: true, optional: false, required: false
+  private _controlMappingSources = new DataAwsAuditmanagerControlControlMappingSourcesList(this, "control_mapping_sources", false);
+  public get controlMappingSources() {
+    return this._controlMappingSources;
   }
 
   // description - computed: true, optional: false, required: false
@@ -368,6 +321,22 @@ export class DataAwsAuditmanagerControl extends cdktf.TerraformDataSource {
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
     return this._name;
+  }
+
+  // region - computed: true, optional: true, required: false
+  private _region?: string; 
+  public get region() {
+    return this.getStringAttribute('region');
+  }
+  public set region(value: string) {
+    this._region = value;
+  }
+  public resetRegion() {
+    this._region = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get regionInput() {
+    return this._region;
   }
 
   // tags - computed: true, optional: false, required: false
@@ -394,22 +363,6 @@ export class DataAwsAuditmanagerControl extends cdktf.TerraformDataSource {
     return this._type;
   }
 
-  // control_mapping_sources - computed: false, optional: true, required: false
-  private _controlMappingSources = new DataAwsAuditmanagerControlControlMappingSourcesList(this, "control_mapping_sources", true);
-  public get controlMappingSources() {
-    return this._controlMappingSources;
-  }
-  public putControlMappingSources(value: DataAwsAuditmanagerControlControlMappingSources[] | cdktf.IResolvable) {
-    this._controlMappingSources.internalValue = value;
-  }
-  public resetControlMappingSources() {
-    this._controlMappingSources.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get controlMappingSourcesInput() {
-    return this._controlMappingSources.internalValue;
-  }
-
   // =========
   // SYNTHESIS
   // =========
@@ -417,8 +370,8 @@ export class DataAwsAuditmanagerControl extends cdktf.TerraformDataSource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       name: cdktf.stringToTerraform(this._name),
+      region: cdktf.stringToTerraform(this._region),
       type: cdktf.stringToTerraform(this._type),
-      control_mapping_sources: cdktf.listMapper(dataAwsAuditmanagerControlControlMappingSourcesToTerraform, true)(this._controlMappingSources.internalValue),
     };
   }
 
@@ -430,17 +383,17 @@ export class DataAwsAuditmanagerControl extends cdktf.TerraformDataSource {
         type: "simple",
         storageClassType: "string",
       },
+      region: {
+        value: cdktf.stringToHclTerraform(this._region),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
       type: {
         value: cdktf.stringToHclTerraform(this._type),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
-      },
-      control_mapping_sources: {
-        value: cdktf.listMapperHcl(dataAwsAuditmanagerControlControlMappingSourcesToHclTerraform, true)(this._controlMappingSources.internalValue),
-        isBlock: true,
-        type: "set",
-        storageClassType: "DataAwsAuditmanagerControlControlMappingSourcesList",
       },
     };
 

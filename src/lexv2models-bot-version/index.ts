@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/lexv2models_bot_version
+// https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/lexv2models_bot_version
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,31 +13,37 @@ import * as cdktf from 'cdktf';
 
 export interface Lexv2ModelsBotVersionConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/lexv2models_bot_version#bot_id Lexv2ModelsBotVersion#bot_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/lexv2models_bot_version#bot_id Lexv2ModelsBotVersion#bot_id}
   */
   readonly botId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/lexv2models_bot_version#bot_version Lexv2ModelsBotVersion#bot_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/lexv2models_bot_version#bot_version Lexv2ModelsBotVersion#bot_version}
   */
   readonly botVersion?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/lexv2models_bot_version#description Lexv2ModelsBotVersion#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/lexv2models_bot_version#description Lexv2ModelsBotVersion#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/lexv2models_bot_version#locale_specification Lexv2ModelsBotVersion#locale_specification}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/lexv2models_bot_version#locale_specification Lexv2ModelsBotVersion#locale_specification}
   */
   readonly localeSpecification: { [key: string]: Lexv2ModelsBotVersionLocaleSpecification } | cdktf.IResolvable;
   /**
+  * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/lexv2models_bot_version#region Lexv2ModelsBotVersion#region}
+  */
+  readonly region?: string;
+  /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/lexv2models_bot_version#timeouts Lexv2ModelsBotVersion#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/lexv2models_bot_version#timeouts Lexv2ModelsBotVersion#timeouts}
   */
   readonly timeouts?: Lexv2ModelsBotVersionTimeouts;
 }
 export interface Lexv2ModelsBotVersionLocaleSpecification {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/lexv2models_bot_version#source_bot_version Lexv2ModelsBotVersion#source_bot_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/lexv2models_bot_version#source_bot_version Lexv2ModelsBotVersion#source_bot_version}
   */
   readonly sourceBotVersion: string;
 }
@@ -150,13 +156,13 @@ export interface Lexv2ModelsBotVersionTimeouts {
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/lexv2models_bot_version#create Lexv2ModelsBotVersion#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/lexv2models_bot_version#create Lexv2ModelsBotVersion#create}
   */
   readonly create?: string;
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/lexv2models_bot_version#delete Lexv2ModelsBotVersion#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/lexv2models_bot_version#delete Lexv2ModelsBotVersion#delete}
   */
   readonly delete?: string;
 }
@@ -279,7 +285,7 @@ export class Lexv2ModelsBotVersionTimeoutsOutputReference extends cdktf.ComplexO
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/lexv2models_bot_version aws_lexv2models_bot_version}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/lexv2models_bot_version aws_lexv2models_bot_version}
 */
 export class Lexv2ModelsBotVersion extends cdktf.TerraformResource {
 
@@ -295,7 +301,7 @@ export class Lexv2ModelsBotVersion extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a Lexv2ModelsBotVersion resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Lexv2ModelsBotVersion to import
-  * @param importFromId The id of the existing Lexv2ModelsBotVersion that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/lexv2models_bot_version#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Lexv2ModelsBotVersion that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/lexv2models_bot_version#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Lexv2ModelsBotVersion to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -307,7 +313,7 @@ export class Lexv2ModelsBotVersion extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/lexv2models_bot_version aws_lexv2models_bot_version} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/lexv2models_bot_version aws_lexv2models_bot_version} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -318,8 +324,8 @@ export class Lexv2ModelsBotVersion extends cdktf.TerraformResource {
       terraformResourceType: 'aws_lexv2models_bot_version',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.100.0',
-        providerVersionConstraint: '~> 5.0'
+        providerVersion: '6.0.0',
+        providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -333,6 +339,7 @@ export class Lexv2ModelsBotVersion extends cdktf.TerraformResource {
     this._botVersion = config.botVersion;
     this._description = config.description;
     this._localeSpecification.internalValue = config.localeSpecification;
+    this._region = config.region;
     this._timeouts.internalValue = config.timeouts;
   }
 
@@ -403,6 +410,22 @@ export class Lexv2ModelsBotVersion extends cdktf.TerraformResource {
     return this._localeSpecification.internalValue;
   }
 
+  // region - computed: true, optional: true, required: false
+  private _region?: string; 
+  public get region() {
+    return this.getStringAttribute('region');
+  }
+  public set region(value: string) {
+    this._region = value;
+  }
+  public resetRegion() {
+    this._region = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get regionInput() {
+    return this._region;
+  }
+
   // timeouts - computed: false, optional: true, required: false
   private _timeouts = new Lexv2ModelsBotVersionTimeoutsOutputReference(this, "timeouts");
   public get timeouts() {
@@ -429,6 +452,7 @@ export class Lexv2ModelsBotVersion extends cdktf.TerraformResource {
       bot_version: cdktf.stringToTerraform(this._botVersion),
       description: cdktf.stringToTerraform(this._description),
       locale_specification: cdktf.hashMapper(lexv2ModelsBotVersionLocaleSpecificationToTerraform)(this._localeSpecification.internalValue),
+      region: cdktf.stringToTerraform(this._region),
       timeouts: lexv2ModelsBotVersionTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -458,6 +482,12 @@ export class Lexv2ModelsBotVersion extends cdktf.TerraformResource {
         isBlock: true,
         type: "map",
         storageClassType: "Lexv2ModelsBotVersionLocaleSpecificationMap",
+      },
+      region: {
+        value: cdktf.stringToHclTerraform(this._region),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
       },
       timeouts: {
         value: lexv2ModelsBotVersionTimeoutsToHclTerraform(this._timeouts.internalValue),
