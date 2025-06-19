@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/computeoptimizer_enrollment_status
+// https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/computeoptimizer_enrollment_status
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,17 +13,23 @@ import * as cdktf from 'cdktf';
 
 export interface ComputeoptimizerEnrollmentStatusConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/computeoptimizer_enrollment_status#include_member_accounts ComputeoptimizerEnrollmentStatus#include_member_accounts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/computeoptimizer_enrollment_status#include_member_accounts ComputeoptimizerEnrollmentStatus#include_member_accounts}
   */
   readonly includeMemberAccounts?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/computeoptimizer_enrollment_status#status ComputeoptimizerEnrollmentStatus#status}
+  * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/computeoptimizer_enrollment_status#region ComputeoptimizerEnrollmentStatus#region}
+  */
+  readonly region?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/computeoptimizer_enrollment_status#status ComputeoptimizerEnrollmentStatus#status}
   */
   readonly status: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/computeoptimizer_enrollment_status#timeouts ComputeoptimizerEnrollmentStatus#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/computeoptimizer_enrollment_status#timeouts ComputeoptimizerEnrollmentStatus#timeouts}
   */
   readonly timeouts?: ComputeoptimizerEnrollmentStatusTimeouts;
 }
@@ -31,13 +37,13 @@ export interface ComputeoptimizerEnrollmentStatusTimeouts {
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/computeoptimizer_enrollment_status#create ComputeoptimizerEnrollmentStatus#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/computeoptimizer_enrollment_status#create ComputeoptimizerEnrollmentStatus#create}
   */
   readonly create?: string;
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/computeoptimizer_enrollment_status#update ComputeoptimizerEnrollmentStatus#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/computeoptimizer_enrollment_status#update ComputeoptimizerEnrollmentStatus#update}
   */
   readonly update?: string;
 }
@@ -160,7 +166,7 @@ export class ComputeoptimizerEnrollmentStatusTimeoutsOutputReference extends cdk
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/computeoptimizer_enrollment_status aws_computeoptimizer_enrollment_status}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/computeoptimizer_enrollment_status aws_computeoptimizer_enrollment_status}
 */
 export class ComputeoptimizerEnrollmentStatus extends cdktf.TerraformResource {
 
@@ -176,7 +182,7 @@ export class ComputeoptimizerEnrollmentStatus extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ComputeoptimizerEnrollmentStatus resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ComputeoptimizerEnrollmentStatus to import
-  * @param importFromId The id of the existing ComputeoptimizerEnrollmentStatus that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/computeoptimizer_enrollment_status#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ComputeoptimizerEnrollmentStatus that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/computeoptimizer_enrollment_status#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ComputeoptimizerEnrollmentStatus to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -188,7 +194,7 @@ export class ComputeoptimizerEnrollmentStatus extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/computeoptimizer_enrollment_status aws_computeoptimizer_enrollment_status} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/computeoptimizer_enrollment_status aws_computeoptimizer_enrollment_status} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -199,8 +205,8 @@ export class ComputeoptimizerEnrollmentStatus extends cdktf.TerraformResource {
       terraformResourceType: 'aws_computeoptimizer_enrollment_status',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.100.0',
-        providerVersionConstraint: '~> 5.0'
+        providerVersion: '6.0.0',
+        providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -211,6 +217,7 @@ export class ComputeoptimizerEnrollmentStatus extends cdktf.TerraformResource {
       forEach: config.forEach
     });
     this._includeMemberAccounts = config.includeMemberAccounts;
+    this._region = config.region;
     this._status = config.status;
     this._timeouts.internalValue = config.timeouts;
   }
@@ -243,6 +250,22 @@ export class ComputeoptimizerEnrollmentStatus extends cdktf.TerraformResource {
   // number_of_member_accounts_opted_in - computed: true, optional: false, required: false
   public get numberOfMemberAccountsOptedIn() {
     return this.getNumberAttribute('number_of_member_accounts_opted_in');
+  }
+
+  // region - computed: true, optional: true, required: false
+  private _region?: string; 
+  public get region() {
+    return this.getStringAttribute('region');
+  }
+  public set region(value: string) {
+    this._region = value;
+  }
+  public resetRegion() {
+    this._region = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get regionInput() {
+    return this._region;
   }
 
   // status - computed: false, optional: false, required: true
@@ -281,6 +304,7 @@ export class ComputeoptimizerEnrollmentStatus extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       include_member_accounts: cdktf.booleanToTerraform(this._includeMemberAccounts),
+      region: cdktf.stringToTerraform(this._region),
       status: cdktf.stringToTerraform(this._status),
       timeouts: computeoptimizerEnrollmentStatusTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -293,6 +317,12 @@ export class ComputeoptimizerEnrollmentStatus extends cdktf.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
+      },
+      region: {
+        value: cdktf.stringToHclTerraform(this._region),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
       },
       status: {
         value: cdktf.stringToHclTerraform(this._status),

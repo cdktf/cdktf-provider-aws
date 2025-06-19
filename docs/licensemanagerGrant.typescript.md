@@ -4,7 +4,7 @@
 
 ### LicensemanagerGrant <a name="LicensemanagerGrant" id="@cdktf/provider-aws.licensemanagerGrant.LicensemanagerGrant"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/licensemanager_grant aws_licensemanager_grant}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/licensemanager_grant aws_licensemanager_grant}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.licensemanagerGrant.LicensemanagerGrant.Initializer"></a>
 
@@ -74,6 +74,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.licensemanagerGrant.LicensemanagerGrant.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-aws.licensemanagerGrant.LicensemanagerGrant.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-aws.licensemanagerGrant.LicensemanagerGrant.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.licensemanagerGrant.LicensemanagerGrant.resetRegion">resetRegion</a></code> | *No description.* |
 
 ---
 
@@ -371,6 +372,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 public resetId(): void
 ```
 
+##### `resetRegion` <a name="resetRegion" id="@cdktf/provider-aws.licensemanagerGrant.LicensemanagerGrant.resetRegion"></a>
+
+```typescript
+public resetRegion(): void
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -474,7 +481,7 @@ The construct id used in the generated config for the LicensemanagerGrant to imp
 
 The id of the existing LicensemanagerGrant that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/licensemanager_grant#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/licensemanager_grant#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -514,11 +521,13 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.licensemanagerGrant.LicensemanagerGrant.property.licenseArnInput">licenseArnInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.licensemanagerGrant.LicensemanagerGrant.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.licensemanagerGrant.LicensemanagerGrant.property.principalInput">principalInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.licensemanagerGrant.LicensemanagerGrant.property.regionInput">regionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.licensemanagerGrant.LicensemanagerGrant.property.allowedOperations">allowedOperations</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.licensemanagerGrant.LicensemanagerGrant.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.licensemanagerGrant.LicensemanagerGrant.property.licenseArn">licenseArn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.licensemanagerGrant.LicensemanagerGrant.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.licensemanagerGrant.LicensemanagerGrant.property.principal">principal</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.licensemanagerGrant.LicensemanagerGrant.property.region">region</a></code> | <code>string</code> | *No description.* |
 
 ---
 
@@ -764,6 +773,16 @@ public readonly principalInput: string;
 
 ---
 
+##### `regionInput`<sup>Optional</sup> <a name="regionInput" id="@cdktf/provider-aws.licensemanagerGrant.LicensemanagerGrant.property.regionInput"></a>
+
+```typescript
+public readonly regionInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `allowedOperations`<sup>Required</sup> <a name="allowedOperations" id="@cdktf/provider-aws.licensemanagerGrant.LicensemanagerGrant.property.allowedOperations"></a>
 
 ```typescript
@@ -808,6 +827,16 @@ public readonly name: string;
 
 ```typescript
 public readonly principal: string;
+```
+
+- *Type:* string
+
+---
+
+##### `region`<sup>Required</sup> <a name="region" id="@cdktf/provider-aws.licensemanagerGrant.LicensemanagerGrant.property.region"></a>
+
+```typescript
+public readonly region: string;
 ```
 
 - *Type:* string
@@ -859,7 +888,8 @@ const licensemanagerGrantConfig: licensemanagerGrant.LicensemanagerGrantConfig =
 | <code><a href="#@cdktf/provider-aws.licensemanagerGrant.LicensemanagerGrantConfig.property.licenseArn">licenseArn</a></code> | <code>string</code> | License ARN. |
 | <code><a href="#@cdktf/provider-aws.licensemanagerGrant.LicensemanagerGrantConfig.property.name">name</a></code> | <code>string</code> | Name of the grant. |
 | <code><a href="#@cdktf/provider-aws.licensemanagerGrant.LicensemanagerGrantConfig.property.principal">principal</a></code> | <code>string</code> | The grantee principal ARN. |
-| <code><a href="#@cdktf/provider-aws.licensemanagerGrant.LicensemanagerGrantConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/licensemanager_grant#id LicensemanagerGrant#id}. |
+| <code><a href="#@cdktf/provider-aws.licensemanagerGrant.LicensemanagerGrantConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/licensemanager_grant#id LicensemanagerGrant#id}. |
+| <code><a href="#@cdktf/provider-aws.licensemanagerGrant.LicensemanagerGrantConfig.property.region">region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
 
@@ -943,7 +973,7 @@ public readonly allowedOperations: string[];
 
 Allowed operations for the grant. This is a subset of the allowed operations on the license.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/licensemanager_grant#allowed_operations LicensemanagerGrant#allowed_operations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/licensemanager_grant#allowed_operations LicensemanagerGrant#allowed_operations}
 
 ---
 
@@ -957,7 +987,7 @@ public readonly licenseArn: string;
 
 License ARN.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/licensemanager_grant#license_arn LicensemanagerGrant#license_arn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/licensemanager_grant#license_arn LicensemanagerGrant#license_arn}
 
 ---
 
@@ -971,7 +1001,7 @@ public readonly name: string;
 
 Name of the grant.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/licensemanager_grant#name LicensemanagerGrant#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/licensemanager_grant#name LicensemanagerGrant#name}
 
 ---
 
@@ -987,7 +1017,7 @@ The grantee principal ARN.
 
 The target account for the grant in the form of the ARN for an account principal of the root user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/licensemanager_grant#principal LicensemanagerGrant#principal}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/licensemanager_grant#principal LicensemanagerGrant#principal}
 
 ---
 
@@ -999,10 +1029,24 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/licensemanager_grant#id LicensemanagerGrant#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/licensemanager_grant#id LicensemanagerGrant#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdktf/provider-aws.licensemanagerGrant.LicensemanagerGrantConfig.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/licensemanager_grant#region LicensemanagerGrant#region}
 
 ---
 

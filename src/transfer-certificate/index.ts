@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/transfer_certificate
+// https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/transfer_certificate
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,44 +13,50 @@ import * as cdktf from 'cdktf';
 
 export interface TransferCertificateConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/transfer_certificate#certificate TransferCertificate#certificate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/transfer_certificate#certificate TransferCertificate#certificate}
   */
   readonly certificate: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/transfer_certificate#certificate_chain TransferCertificate#certificate_chain}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/transfer_certificate#certificate_chain TransferCertificate#certificate_chain}
   */
   readonly certificateChain?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/transfer_certificate#description TransferCertificate#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/transfer_certificate#description TransferCertificate#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/transfer_certificate#id TransferCertificate#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/transfer_certificate#id TransferCertificate#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/transfer_certificate#private_key TransferCertificate#private_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/transfer_certificate#private_key TransferCertificate#private_key}
   */
   readonly privateKey?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/transfer_certificate#tags TransferCertificate#tags}
+  * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/transfer_certificate#region TransferCertificate#region}
+  */
+  readonly region?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/transfer_certificate#tags TransferCertificate#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/transfer_certificate#tags_all TransferCertificate#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/transfer_certificate#tags_all TransferCertificate#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/transfer_certificate#usage TransferCertificate#usage}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/transfer_certificate#usage TransferCertificate#usage}
   */
   readonly usage: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/transfer_certificate aws_transfer_certificate}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/transfer_certificate aws_transfer_certificate}
 */
 export class TransferCertificate extends cdktf.TerraformResource {
 
@@ -66,7 +72,7 @@ export class TransferCertificate extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a TransferCertificate resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the TransferCertificate to import
-  * @param importFromId The id of the existing TransferCertificate that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/transfer_certificate#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing TransferCertificate that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/transfer_certificate#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the TransferCertificate to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -78,7 +84,7 @@ export class TransferCertificate extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/transfer_certificate aws_transfer_certificate} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/transfer_certificate aws_transfer_certificate} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -89,8 +95,8 @@ export class TransferCertificate extends cdktf.TerraformResource {
       terraformResourceType: 'aws_transfer_certificate',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.100.0',
-        providerVersionConstraint: '~> 5.0'
+        providerVersion: '6.0.0',
+        providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -105,6 +111,7 @@ export class TransferCertificate extends cdktf.TerraformResource {
     this._description = config.description;
     this._id = config.id;
     this._privateKey = config.privateKey;
+    this._region = config.region;
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
     this._usage = config.usage;
@@ -211,6 +218,22 @@ export class TransferCertificate extends cdktf.TerraformResource {
     return this._privateKey;
   }
 
+  // region - computed: true, optional: true, required: false
+  private _region?: string; 
+  public get region() {
+    return this.getStringAttribute('region');
+  }
+  public set region(value: string) {
+    this._region = value;
+  }
+  public resetRegion() {
+    this._region = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get regionInput() {
+    return this._region;
+  }
+
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string }; 
   public get tags() {
@@ -267,6 +290,7 @@ export class TransferCertificate extends cdktf.TerraformResource {
       description: cdktf.stringToTerraform(this._description),
       id: cdktf.stringToTerraform(this._id),
       private_key: cdktf.stringToTerraform(this._privateKey),
+      region: cdktf.stringToTerraform(this._region),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       usage: cdktf.stringToTerraform(this._usage),
@@ -301,6 +325,12 @@ export class TransferCertificate extends cdktf.TerraformResource {
       },
       private_key: {
         value: cdktf.stringToHclTerraform(this._privateKey),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      region: {
+        value: cdktf.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

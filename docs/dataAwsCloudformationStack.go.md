@@ -4,12 +4,12 @@
 
 ### DataAwsCloudformationStack <a name="DataAwsCloudformationStack" id="@cdktf/provider-aws.dataAwsCloudformationStack.DataAwsCloudformationStack"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/cloudformation_stack aws_cloudformation_stack}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/cloudformation_stack aws_cloudformation_stack}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsCloudformationStack.DataAwsCloudformationStack.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawscloudformationstack"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawscloudformationstack"
 
 dataawscloudformationstack.NewDataAwsCloudformationStack(scope Construct, id *string, config DataAwsCloudformationStackConfig) DataAwsCloudformationStack
 ```
@@ -68,6 +68,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.dataAwsCloudformationStack.DataAwsCloudformationStack.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsCloudformationStack.DataAwsCloudformationStack.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsCloudformationStack.DataAwsCloudformationStack.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsCloudformationStack.DataAwsCloudformationStack.resetRegion">ResetRegion</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsCloudformationStack.DataAwsCloudformationStack.resetTags">ResetTags</a></code> | *No description.* |
 
 ---
@@ -270,6 +271,12 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 func ResetId()
 ```
 
+##### `ResetRegion` <a name="ResetRegion" id="@cdktf/provider-aws.dataAwsCloudformationStack.DataAwsCloudformationStack.resetRegion"></a>
+
+```go
+func ResetRegion()
+```
+
 ##### `ResetTags` <a name="ResetTags" id="@cdktf/provider-aws.dataAwsCloudformationStack.DataAwsCloudformationStack.resetTags"></a>
 
 ```go
@@ -290,7 +297,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsCloudformationStack.DataAwsCloudformationStack.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawscloudformationstack"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawscloudformationstack"
 
 dataawscloudformationstack.DataAwsCloudformationStack_IsConstruct(x interface{}) *bool
 ```
@@ -322,7 +329,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsCloudformationStack.DataAwsCloudformationStack.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawscloudformationstack"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawscloudformationstack"
 
 dataawscloudformationstack.DataAwsCloudformationStack_IsTerraformElement(x interface{}) *bool
 ```
@@ -336,7 +343,7 @@ dataawscloudformationstack.DataAwsCloudformationStack_IsTerraformElement(x inter
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsCloudformationStack.DataAwsCloudformationStack.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawscloudformationstack"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawscloudformationstack"
 
 dataawscloudformationstack.DataAwsCloudformationStack_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -350,7 +357,7 @@ dataawscloudformationstack.DataAwsCloudformationStack_IsTerraformDataSource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsCloudformationStack.DataAwsCloudformationStack.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawscloudformationstack"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawscloudformationstack"
 
 dataawscloudformationstack.DataAwsCloudformationStack_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -379,7 +386,7 @@ The construct id used in the generated config for the DataAwsCloudformationStack
 
 The id of the existing DataAwsCloudformationStack that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/cloudformation_stack#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/cloudformation_stack#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -418,9 +425,11 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.dataAwsCloudformationStack.DataAwsCloudformationStack.property.timeoutInMinutes">TimeoutInMinutes</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsCloudformationStack.DataAwsCloudformationStack.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsCloudformationStack.DataAwsCloudformationStack.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsCloudformationStack.DataAwsCloudformationStack.property.regionInput">RegionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsCloudformationStack.DataAwsCloudformationStack.property.tagsInput">TagsInput</a></code> | <code>*map[string]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsCloudformationStack.DataAwsCloudformationStack.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsCloudformationStack.DataAwsCloudformationStack.property.name">Name</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsCloudformationStack.DataAwsCloudformationStack.property.region">Region</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsCloudformationStack.DataAwsCloudformationStack.property.tags">Tags</a></code> | <code>*map[string]*string</code> | *No description.* |
 
 ---
@@ -657,6 +666,16 @@ func NameInput() *string
 
 ---
 
+##### `RegionInput`<sup>Optional</sup> <a name="RegionInput" id="@cdktf/provider-aws.dataAwsCloudformationStack.DataAwsCloudformationStack.property.regionInput"></a>
+
+```go
+func RegionInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `TagsInput`<sup>Optional</sup> <a name="TagsInput" id="@cdktf/provider-aws.dataAwsCloudformationStack.DataAwsCloudformationStack.property.tagsInput"></a>
 
 ```go
@@ -681,6 +700,16 @@ func Id() *string
 
 ```go
 func Name() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Region`<sup>Required</sup> <a name="Region" id="@cdktf/provider-aws.dataAwsCloudformationStack.DataAwsCloudformationStack.property.region"></a>
+
+```go
+func Region() *string
 ```
 
 - *Type:* *string
@@ -722,7 +751,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsCloudformationStack.DataAwsCloudformationStackConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawscloudformationstack"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawscloudformationstack"
 
 &dataawscloudformationstack.DataAwsCloudformationStackConfig {
 	Connection: interface{},
@@ -734,6 +763,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawscloudformationstac
 	Provisioners: *[]interface{},
 	Name: *string,
 	Id: *string,
+	Region: *string,
 	Tags: *map[string]*string,
 }
 ```
@@ -749,9 +779,10 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawscloudformationstac
 | <code><a href="#@cdktf/provider-aws.dataAwsCloudformationStack.DataAwsCloudformationStackConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsCloudformationStack.DataAwsCloudformationStackConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsCloudformationStack.DataAwsCloudformationStackConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsCloudformationStack.DataAwsCloudformationStackConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/cloudformation_stack#name DataAwsCloudformationStack#name}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsCloudformationStack.DataAwsCloudformationStackConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/cloudformation_stack#id DataAwsCloudformationStack#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsCloudformationStack.DataAwsCloudformationStackConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/cloudformation_stack#tags DataAwsCloudformationStack#tags}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsCloudformationStack.DataAwsCloudformationStackConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/cloudformation_stack#name DataAwsCloudformationStack#name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsCloudformationStack.DataAwsCloudformationStackConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/cloudformation_stack#id DataAwsCloudformationStack#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsCloudformationStack.DataAwsCloudformationStackConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
+| <code><a href="#@cdktf/provider-aws.dataAwsCloudformationStack.DataAwsCloudformationStackConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/cloudformation_stack#tags DataAwsCloudformationStack#tags}. |
 
 ---
 
@@ -833,7 +864,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/cloudformation_stack#name DataAwsCloudformationStack#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/cloudformation_stack#name DataAwsCloudformationStack#name}.
 
 ---
 
@@ -845,10 +876,24 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/cloudformation_stack#id DataAwsCloudformationStack#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/cloudformation_stack#id DataAwsCloudformationStack#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `Region`<sup>Optional</sup> <a name="Region" id="@cdktf/provider-aws.dataAwsCloudformationStack.DataAwsCloudformationStackConfig.property.region"></a>
+
+```go
+Region *string
+```
+
+- *Type:* *string
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/cloudformation_stack#region DataAwsCloudformationStack#region}
 
 ---
 
@@ -860,7 +905,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/cloudformation_stack#tags DataAwsCloudformationStack#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/cloudformation_stack#tags DataAwsCloudformationStack#tags}.
 
 ---
 

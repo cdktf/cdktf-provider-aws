@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/pinpointsmsvoicev2_configuration_set
+// https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/pinpointsmsvoicev2_configuration_set
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,25 +13,31 @@ import * as cdktf from 'cdktf';
 
 export interface Pinpointsmsvoicev2ConfigurationSetConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/pinpointsmsvoicev2_configuration_set#default_message_type Pinpointsmsvoicev2ConfigurationSet#default_message_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/pinpointsmsvoicev2_configuration_set#default_message_type Pinpointsmsvoicev2ConfigurationSet#default_message_type}
   */
   readonly defaultMessageType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/pinpointsmsvoicev2_configuration_set#default_sender_id Pinpointsmsvoicev2ConfigurationSet#default_sender_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/pinpointsmsvoicev2_configuration_set#default_sender_id Pinpointsmsvoicev2ConfigurationSet#default_sender_id}
   */
   readonly defaultSenderId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/pinpointsmsvoicev2_configuration_set#name Pinpointsmsvoicev2ConfigurationSet#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/pinpointsmsvoicev2_configuration_set#name Pinpointsmsvoicev2ConfigurationSet#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/pinpointsmsvoicev2_configuration_set#tags Pinpointsmsvoicev2ConfigurationSet#tags}
+  * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/pinpointsmsvoicev2_configuration_set#region Pinpointsmsvoicev2ConfigurationSet#region}
+  */
+  readonly region?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/pinpointsmsvoicev2_configuration_set#tags Pinpointsmsvoicev2ConfigurationSet#tags}
   */
   readonly tags?: { [key: string]: string };
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/pinpointsmsvoicev2_configuration_set aws_pinpointsmsvoicev2_configuration_set}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/pinpointsmsvoicev2_configuration_set aws_pinpointsmsvoicev2_configuration_set}
 */
 export class Pinpointsmsvoicev2ConfigurationSet extends cdktf.TerraformResource {
 
@@ -47,7 +53,7 @@ export class Pinpointsmsvoicev2ConfigurationSet extends cdktf.TerraformResource 
   * Generates CDKTF code for importing a Pinpointsmsvoicev2ConfigurationSet resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Pinpointsmsvoicev2ConfigurationSet to import
-  * @param importFromId The id of the existing Pinpointsmsvoicev2ConfigurationSet that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/pinpointsmsvoicev2_configuration_set#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Pinpointsmsvoicev2ConfigurationSet that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/pinpointsmsvoicev2_configuration_set#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Pinpointsmsvoicev2ConfigurationSet to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -59,7 +65,7 @@ export class Pinpointsmsvoicev2ConfigurationSet extends cdktf.TerraformResource 
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/pinpointsmsvoicev2_configuration_set aws_pinpointsmsvoicev2_configuration_set} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/pinpointsmsvoicev2_configuration_set aws_pinpointsmsvoicev2_configuration_set} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -70,8 +76,8 @@ export class Pinpointsmsvoicev2ConfigurationSet extends cdktf.TerraformResource 
       terraformResourceType: 'aws_pinpointsmsvoicev2_configuration_set',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.100.0',
-        providerVersionConstraint: '~> 5.0'
+        providerVersion: '6.0.0',
+        providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -84,6 +90,7 @@ export class Pinpointsmsvoicev2ConfigurationSet extends cdktf.TerraformResource 
     this._defaultMessageType = config.defaultMessageType;
     this._defaultSenderId = config.defaultSenderId;
     this._name = config.name;
+    this._region = config.region;
     this._tags = config.tags;
   }
 
@@ -146,6 +153,22 @@ export class Pinpointsmsvoicev2ConfigurationSet extends cdktf.TerraformResource 
     return this._name;
   }
 
+  // region - computed: true, optional: true, required: false
+  private _region?: string; 
+  public get region() {
+    return this.getStringAttribute('region');
+  }
+  public set region(value: string) {
+    this._region = value;
+  }
+  public resetRegion() {
+    this._region = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get regionInput() {
+    return this._region;
+  }
+
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string }; 
   public get tags() {
@@ -177,6 +200,7 @@ export class Pinpointsmsvoicev2ConfigurationSet extends cdktf.TerraformResource 
       default_message_type: cdktf.stringToTerraform(this._defaultMessageType),
       default_sender_id: cdktf.stringToTerraform(this._defaultSenderId),
       name: cdktf.stringToTerraform(this._name),
+      region: cdktf.stringToTerraform(this._region),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
     };
   }
@@ -197,6 +221,12 @@ export class Pinpointsmsvoicev2ConfigurationSet extends cdktf.TerraformResource 
       },
       name: {
         value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      region: {
+        value: cdktf.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

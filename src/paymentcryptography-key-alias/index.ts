@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/paymentcryptography_key_alias
+// https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/paymentcryptography_key_alias
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,17 +13,23 @@ import * as cdktf from 'cdktf';
 
 export interface PaymentcryptographyKeyAliasConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/paymentcryptography_key_alias#alias_name PaymentcryptographyKeyAlias#alias_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/paymentcryptography_key_alias#alias_name PaymentcryptographyKeyAlias#alias_name}
   */
   readonly aliasName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/paymentcryptography_key_alias#key_arn PaymentcryptographyKeyAlias#key_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/paymentcryptography_key_alias#key_arn PaymentcryptographyKeyAlias#key_arn}
   */
   readonly keyArn?: string;
+  /**
+  * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/paymentcryptography_key_alias#region PaymentcryptographyKeyAlias#region}
+  */
+  readonly region?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/paymentcryptography_key_alias aws_paymentcryptography_key_alias}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/paymentcryptography_key_alias aws_paymentcryptography_key_alias}
 */
 export class PaymentcryptographyKeyAlias extends cdktf.TerraformResource {
 
@@ -39,7 +45,7 @@ export class PaymentcryptographyKeyAlias extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a PaymentcryptographyKeyAlias resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the PaymentcryptographyKeyAlias to import
-  * @param importFromId The id of the existing PaymentcryptographyKeyAlias that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/paymentcryptography_key_alias#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing PaymentcryptographyKeyAlias that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/paymentcryptography_key_alias#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the PaymentcryptographyKeyAlias to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -51,7 +57,7 @@ export class PaymentcryptographyKeyAlias extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/paymentcryptography_key_alias aws_paymentcryptography_key_alias} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/paymentcryptography_key_alias aws_paymentcryptography_key_alias} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -62,8 +68,8 @@ export class PaymentcryptographyKeyAlias extends cdktf.TerraformResource {
       terraformResourceType: 'aws_paymentcryptography_key_alias',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.100.0',
-        providerVersionConstraint: '~> 5.0'
+        providerVersion: '6.0.0',
+        providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -75,6 +81,7 @@ export class PaymentcryptographyKeyAlias extends cdktf.TerraformResource {
     });
     this._aliasName = config.aliasName;
     this._keyArn = config.keyArn;
+    this._region = config.region;
   }
 
   // ==========
@@ -115,6 +122,22 @@ export class PaymentcryptographyKeyAlias extends cdktf.TerraformResource {
     return this._keyArn;
   }
 
+  // region - computed: true, optional: true, required: false
+  private _region?: string; 
+  public get region() {
+    return this.getStringAttribute('region');
+  }
+  public set region(value: string) {
+    this._region = value;
+  }
+  public resetRegion() {
+    this._region = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get regionInput() {
+    return this._region;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -123,6 +146,7 @@ export class PaymentcryptographyKeyAlias extends cdktf.TerraformResource {
     return {
       alias_name: cdktf.stringToTerraform(this._aliasName),
       key_arn: cdktf.stringToTerraform(this._keyArn),
+      region: cdktf.stringToTerraform(this._region),
     };
   }
 
@@ -136,6 +160,12 @@ export class PaymentcryptographyKeyAlias extends cdktf.TerraformResource {
       },
       key_arn: {
         value: cdktf.stringToHclTerraform(this._keyArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      region: {
+        value: cdktf.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -4,7 +4,7 @@
 
 ### Wafv2ApiKey <a name="Wafv2ApiKey" id="@cdktf/provider-aws.wafv2ApiKey.Wafv2ApiKey"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/wafv2_api_key aws_wafv2_api_key}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/wafv2_api_key aws_wafv2_api_key}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafv2ApiKey.Wafv2ApiKey.Initializer"></a>
 
@@ -22,7 +22,8 @@ wafv2ApiKey.Wafv2ApiKey(
   provider: TerraformProvider = None,
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
   scope: str,
-  token_domains: typing.List[str]
+  token_domains: typing.List[str],
+  region: str = None
 )
 ```
 
@@ -39,6 +40,7 @@ wafv2ApiKey.Wafv2ApiKey(
 | <code><a href="#@cdktf/provider-aws.wafv2ApiKey.Wafv2ApiKey.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.wafv2ApiKey.Wafv2ApiKey.Initializer.parameter.scope">scope</a></code> | <code>str</code> | Specifies whether this is for an AWS CloudFront distribution or for a regional application. |
 | <code><a href="#@cdktf/provider-aws.wafv2ApiKey.Wafv2ApiKey.Initializer.parameter.tokenDomains">token_domains</a></code> | <code>typing.List[str]</code> | The domains that you want to be able to use the API key with, for example example.com. Maximum of 5 domains. |
+| <code><a href="#@cdktf/provider-aws.wafv2ApiKey.Wafv2ApiKey.Initializer.parameter.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
 
@@ -110,7 +112,7 @@ Specifies whether this is for an AWS CloudFront distribution or for a regional a
 
 Valid values are CLOUDFRONT or REGIONAL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/wafv2_api_key#scope Wafv2ApiKey#scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/wafv2_api_key#scope Wafv2ApiKey#scope}
 
 ---
 
@@ -120,7 +122,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The domains that you want to be able to use the API key with, for example example.com. Maximum of 5 domains.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/wafv2_api_key#token_domains Wafv2ApiKey#token_domains}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/wafv2_api_key#token_domains Wafv2ApiKey#token_domains}
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdktf/provider-aws.wafv2ApiKey.Wafv2ApiKey.Initializer.parameter.region"></a>
+
+- *Type:* str
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/wafv2_api_key#region Wafv2ApiKey#region}
 
 ---
 
@@ -151,6 +163,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktf/provider-aws.wafv2ApiKey.Wafv2ApiKey.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktf/provider-aws.wafv2ApiKey.Wafv2ApiKey.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-aws.wafv2ApiKey.Wafv2ApiKey.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktf/provider-aws.wafv2ApiKey.Wafv2ApiKey.resetRegion">reset_region</a></code> | *No description.* |
 
 ---
 
@@ -479,6 +492,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `reset_region` <a name="reset_region" id="@cdktf/provider-aws.wafv2ApiKey.Wafv2ApiKey.resetRegion"></a>
+
+```python
+def reset_region() -> None
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -593,7 +612,7 @@ The construct id used in the generated config for the Wafv2ApiKey to import.
 
 The id of the existing Wafv2ApiKey that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/wafv2_api_key#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/wafv2_api_key#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -624,8 +643,10 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.wafv2ApiKey.Wafv2ApiKey.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.wafv2ApiKey.Wafv2ApiKey.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.wafv2ApiKey.Wafv2ApiKey.property.apiKey">api_key</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.wafv2ApiKey.Wafv2ApiKey.property.regionInput">region_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.wafv2ApiKey.Wafv2ApiKey.property.scopeInput">scope_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.wafv2ApiKey.Wafv2ApiKey.property.tokenDomainsInput">token_domains_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.wafv2ApiKey.Wafv2ApiKey.property.region">region</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.wafv2ApiKey.Wafv2ApiKey.property.scope">scope</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.wafv2ApiKey.Wafv2ApiKey.property.tokenDomains">token_domains</a></code> | <code>typing.List[str]</code> | *No description.* |
 
@@ -783,6 +804,16 @@ api_key: str
 
 ---
 
+##### `region_input`<sup>Optional</sup> <a name="region_input" id="@cdktf/provider-aws.wafv2ApiKey.Wafv2ApiKey.property.regionInput"></a>
+
+```python
+region_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `scope_input`<sup>Optional</sup> <a name="scope_input" id="@cdktf/provider-aws.wafv2ApiKey.Wafv2ApiKey.property.scopeInput"></a>
 
 ```python
@@ -800,6 +831,16 @@ token_domains_input: typing.List[str]
 ```
 
 - *Type:* typing.List[str]
+
+---
+
+##### `region`<sup>Required</sup> <a name="region" id="@cdktf/provider-aws.wafv2ApiKey.Wafv2ApiKey.property.region"></a>
+
+```python
+region: str
+```
+
+- *Type:* str
 
 ---
 
@@ -859,7 +900,8 @@ wafv2ApiKey.Wafv2ApiKeyConfig(
   provider: TerraformProvider = None,
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
   scope: str,
-  token_domains: typing.List[str]
+  token_domains: typing.List[str],
+  region: str = None
 )
 ```
 
@@ -876,6 +918,7 @@ wafv2ApiKey.Wafv2ApiKeyConfig(
 | <code><a href="#@cdktf/provider-aws.wafv2ApiKey.Wafv2ApiKeyConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.wafv2ApiKey.Wafv2ApiKeyConfig.property.scope">scope</a></code> | <code>str</code> | Specifies whether this is for an AWS CloudFront distribution or for a regional application. |
 | <code><a href="#@cdktf/provider-aws.wafv2ApiKey.Wafv2ApiKeyConfig.property.tokenDomains">token_domains</a></code> | <code>typing.List[str]</code> | The domains that you want to be able to use the API key with, for example example.com. Maximum of 5 domains. |
+| <code><a href="#@cdktf/provider-aws.wafv2ApiKey.Wafv2ApiKeyConfig.property.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
 
@@ -961,7 +1004,7 @@ Specifies whether this is for an AWS CloudFront distribution or for a regional a
 
 Valid values are CLOUDFRONT or REGIONAL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/wafv2_api_key#scope Wafv2ApiKey#scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/wafv2_api_key#scope Wafv2ApiKey#scope}
 
 ---
 
@@ -975,7 +1018,21 @@ token_domains: typing.List[str]
 
 The domains that you want to be able to use the API key with, for example example.com. Maximum of 5 domains.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/wafv2_api_key#token_domains Wafv2ApiKey#token_domains}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/wafv2_api_key#token_domains Wafv2ApiKey#token_domains}
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdktf/provider-aws.wafv2ApiKey.Wafv2ApiKeyConfig.property.region"></a>
+
+```python
+region: str
+```
+
+- *Type:* str
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/wafv2_api_key#region Wafv2ApiKey#region}
 
 ---
 

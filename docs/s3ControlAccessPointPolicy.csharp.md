@@ -4,7 +4,7 @@
 
 ### S3ControlAccessPointPolicy <a name="S3ControlAccessPointPolicy" id="@cdktf/provider-aws.s3ControlAccessPointPolicy.S3ControlAccessPointPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/s3control_access_point_policy aws_s3control_access_point_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3control_access_point_policy aws_s3control_access_point_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.s3ControlAccessPointPolicy.S3ControlAccessPointPolicy.Initializer"></a>
 
@@ -74,6 +74,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.s3ControlAccessPointPolicy.S3ControlAccessPointPolicy.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-aws.s3ControlAccessPointPolicy.S3ControlAccessPointPolicy.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-aws.s3ControlAccessPointPolicy.S3ControlAccessPointPolicy.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.s3ControlAccessPointPolicy.S3ControlAccessPointPolicy.resetRegion">ResetRegion</a></code> | *No description.* |
 
 ---
 
@@ -371,6 +372,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 private void ResetId()
 ```
 
+##### `ResetRegion` <a name="ResetRegion" id="@cdktf/provider-aws.s3ControlAccessPointPolicy.S3ControlAccessPointPolicy.resetRegion"></a>
+
+```csharp
+private void ResetRegion()
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -474,7 +481,7 @@ The construct id used in the generated config for the S3ControlAccessPointPolicy
 
 The id of the existing S3ControlAccessPointPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/s3control_access_point_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3control_access_point_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -508,9 +515,11 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.s3ControlAccessPointPolicy.S3ControlAccessPointPolicy.property.accessPointArnInput">AccessPointArnInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.s3ControlAccessPointPolicy.S3ControlAccessPointPolicy.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.s3ControlAccessPointPolicy.S3ControlAccessPointPolicy.property.policyInput">PolicyInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.s3ControlAccessPointPolicy.S3ControlAccessPointPolicy.property.regionInput">RegionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.s3ControlAccessPointPolicy.S3ControlAccessPointPolicy.property.accessPointArn">AccessPointArn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.s3ControlAccessPointPolicy.S3ControlAccessPointPolicy.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.s3ControlAccessPointPolicy.S3ControlAccessPointPolicy.property.policy">Policy</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.s3ControlAccessPointPolicy.S3ControlAccessPointPolicy.property.region">Region</a></code> | <code>string</code> | *No description.* |
 
 ---
 
@@ -696,6 +705,16 @@ public string PolicyInput { get; }
 
 ---
 
+##### `RegionInput`<sup>Optional</sup> <a name="RegionInput" id="@cdktf/provider-aws.s3ControlAccessPointPolicy.S3ControlAccessPointPolicy.property.regionInput"></a>
+
+```csharp
+public string RegionInput { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `AccessPointArn`<sup>Required</sup> <a name="AccessPointArn" id="@cdktf/provider-aws.s3ControlAccessPointPolicy.S3ControlAccessPointPolicy.property.accessPointArn"></a>
 
 ```csharp
@@ -720,6 +739,16 @@ public string Id { get; }
 
 ```csharp
 public string Policy { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Region`<sup>Required</sup> <a name="Region" id="@cdktf/provider-aws.s3ControlAccessPointPolicy.S3ControlAccessPointPolicy.property.region"></a>
+
+```csharp
+public string Region { get; }
 ```
 
 - *Type:* string
@@ -763,7 +792,8 @@ new S3ControlAccessPointPolicyConfig {
     object[] Provisioners = null,
     string AccessPointArn,
     string Policy,
-    string Id = null
+    string Id = null,
+    string Region = null
 };
 ```
 
@@ -778,9 +808,10 @@ new S3ControlAccessPointPolicyConfig {
 | <code><a href="#@cdktf/provider-aws.s3ControlAccessPointPolicy.S3ControlAccessPointPolicyConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.s3ControlAccessPointPolicy.S3ControlAccessPointPolicyConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.s3ControlAccessPointPolicy.S3ControlAccessPointPolicyConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ControlAccessPointPolicy.S3ControlAccessPointPolicyConfig.property.accessPointArn">AccessPointArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/s3control_access_point_policy#access_point_arn S3ControlAccessPointPolicy#access_point_arn}. |
-| <code><a href="#@cdktf/provider-aws.s3ControlAccessPointPolicy.S3ControlAccessPointPolicyConfig.property.policy">Policy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/s3control_access_point_policy#policy S3ControlAccessPointPolicy#policy}. |
-| <code><a href="#@cdktf/provider-aws.s3ControlAccessPointPolicy.S3ControlAccessPointPolicyConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/s3control_access_point_policy#id S3ControlAccessPointPolicy#id}. |
+| <code><a href="#@cdktf/provider-aws.s3ControlAccessPointPolicy.S3ControlAccessPointPolicyConfig.property.accessPointArn">AccessPointArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3control_access_point_policy#access_point_arn S3ControlAccessPointPolicy#access_point_arn}. |
+| <code><a href="#@cdktf/provider-aws.s3ControlAccessPointPolicy.S3ControlAccessPointPolicyConfig.property.policy">Policy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3control_access_point_policy#policy S3ControlAccessPointPolicy#policy}. |
+| <code><a href="#@cdktf/provider-aws.s3ControlAccessPointPolicy.S3ControlAccessPointPolicyConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3control_access_point_policy#id S3ControlAccessPointPolicy#id}. |
+| <code><a href="#@cdktf/provider-aws.s3ControlAccessPointPolicy.S3ControlAccessPointPolicyConfig.property.region">Region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
 
@@ -862,7 +893,7 @@ public string AccessPointArn { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/s3control_access_point_policy#access_point_arn S3ControlAccessPointPolicy#access_point_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3control_access_point_policy#access_point_arn S3ControlAccessPointPolicy#access_point_arn}.
 
 ---
 
@@ -874,7 +905,7 @@ public string Policy { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/s3control_access_point_policy#policy S3ControlAccessPointPolicy#policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3control_access_point_policy#policy S3ControlAccessPointPolicy#policy}.
 
 ---
 
@@ -886,10 +917,24 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/s3control_access_point_policy#id S3ControlAccessPointPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3control_access_point_policy#id S3ControlAccessPointPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `Region`<sup>Optional</sup> <a name="Region" id="@cdktf/provider-aws.s3ControlAccessPointPolicy.S3ControlAccessPointPolicyConfig.property.region"></a>
+
+```csharp
+public string Region { get; set; }
+```
+
+- *Type:* string
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3control_access_point_policy#region S3ControlAccessPointPolicy#region}
 
 ---
 

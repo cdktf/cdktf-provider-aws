@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/athena_database
+// https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/athena_database
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,52 +13,58 @@ import * as cdktf from 'cdktf';
 
 export interface AthenaDatabaseConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/athena_database#bucket AthenaDatabase#bucket}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/athena_database#bucket AthenaDatabase#bucket}
   */
   readonly bucket?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/athena_database#comment AthenaDatabase#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/athena_database#comment AthenaDatabase#comment}
   */
   readonly comment?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/athena_database#expected_bucket_owner AthenaDatabase#expected_bucket_owner}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/athena_database#expected_bucket_owner AthenaDatabase#expected_bucket_owner}
   */
   readonly expectedBucketOwner?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/athena_database#force_destroy AthenaDatabase#force_destroy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/athena_database#force_destroy AthenaDatabase#force_destroy}
   */
   readonly forceDestroy?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/athena_database#id AthenaDatabase#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/athena_database#id AthenaDatabase#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/athena_database#name AthenaDatabase#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/athena_database#name AthenaDatabase#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/athena_database#properties AthenaDatabase#properties}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/athena_database#properties AthenaDatabase#properties}
   */
   readonly properties?: { [key: string]: string };
   /**
+  * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/athena_database#region AthenaDatabase#region}
+  */
+  readonly region?: string;
+  /**
   * acl_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/athena_database#acl_configuration AthenaDatabase#acl_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/athena_database#acl_configuration AthenaDatabase#acl_configuration}
   */
   readonly aclConfiguration?: AthenaDatabaseAclConfiguration;
   /**
   * encryption_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/athena_database#encryption_configuration AthenaDatabase#encryption_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/athena_database#encryption_configuration AthenaDatabase#encryption_configuration}
   */
   readonly encryptionConfiguration?: AthenaDatabaseEncryptionConfiguration;
 }
 export interface AthenaDatabaseAclConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/athena_database#s3_acl_option AthenaDatabase#s3_acl_option}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/athena_database#s3_acl_option AthenaDatabase#s3_acl_option}
   */
   readonly s3AclOption: string;
 }
@@ -139,11 +145,11 @@ export class AthenaDatabaseAclConfigurationOutputReference extends cdktf.Complex
 }
 export interface AthenaDatabaseEncryptionConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/athena_database#encryption_option AthenaDatabase#encryption_option}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/athena_database#encryption_option AthenaDatabase#encryption_option}
   */
   readonly encryptionOption: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/athena_database#kms_key AthenaDatabase#kms_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/athena_database#kms_key AthenaDatabase#kms_key}
   */
   readonly kmsKey?: string;
 }
@@ -253,7 +259,7 @@ export class AthenaDatabaseEncryptionConfigurationOutputReference extends cdktf.
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/athena_database aws_athena_database}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/athena_database aws_athena_database}
 */
 export class AthenaDatabase extends cdktf.TerraformResource {
 
@@ -269,7 +275,7 @@ export class AthenaDatabase extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a AthenaDatabase resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AthenaDatabase to import
-  * @param importFromId The id of the existing AthenaDatabase that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/athena_database#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing AthenaDatabase that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/athena_database#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AthenaDatabase to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -281,7 +287,7 @@ export class AthenaDatabase extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/athena_database aws_athena_database} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/athena_database aws_athena_database} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -292,8 +298,8 @@ export class AthenaDatabase extends cdktf.TerraformResource {
       terraformResourceType: 'aws_athena_database',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.100.0',
-        providerVersionConstraint: '~> 5.0'
+        providerVersion: '6.0.0',
+        providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -310,6 +316,7 @@ export class AthenaDatabase extends cdktf.TerraformResource {
     this._id = config.id;
     this._name = config.name;
     this._properties = config.properties;
+    this._region = config.region;
     this._aclConfiguration.internalValue = config.aclConfiguration;
     this._encryptionConfiguration.internalValue = config.encryptionConfiguration;
   }
@@ -427,6 +434,22 @@ export class AthenaDatabase extends cdktf.TerraformResource {
     return this._properties;
   }
 
+  // region - computed: true, optional: true, required: false
+  private _region?: string; 
+  public get region() {
+    return this.getStringAttribute('region');
+  }
+  public set region(value: string) {
+    this._region = value;
+  }
+  public resetRegion() {
+    this._region = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get regionInput() {
+    return this._region;
+  }
+
   // acl_configuration - computed: false, optional: true, required: false
   private _aclConfiguration = new AthenaDatabaseAclConfigurationOutputReference(this, "acl_configuration");
   public get aclConfiguration() {
@@ -472,6 +495,7 @@ export class AthenaDatabase extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       properties: cdktf.hashMapper(cdktf.stringToTerraform)(this._properties),
+      region: cdktf.stringToTerraform(this._region),
       acl_configuration: athenaDatabaseAclConfigurationToTerraform(this._aclConfiguration.internalValue),
       encryption_configuration: athenaDatabaseEncryptionConfigurationToTerraform(this._encryptionConfiguration.internalValue),
     };
@@ -520,6 +544,12 @@ export class AthenaDatabase extends cdktf.TerraformResource {
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
+      },
+      region: {
+        value: cdktf.stringToHclTerraform(this._region),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
       },
       acl_configuration: {
         value: athenaDatabaseAclConfigurationToHclTerraform(this._aclConfiguration.internalValue),

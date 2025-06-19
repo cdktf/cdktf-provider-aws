@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/network_interface_sg_attachment
+// https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/network_interface_sg_attachment
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,38 +13,44 @@ import * as cdktf from 'cdktf';
 
 export interface NetworkInterfaceSgAttachmentConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/network_interface_sg_attachment#id NetworkInterfaceSgAttachment#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/network_interface_sg_attachment#id NetworkInterfaceSgAttachment#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/network_interface_sg_attachment#network_interface_id NetworkInterfaceSgAttachment#network_interface_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/network_interface_sg_attachment#network_interface_id NetworkInterfaceSgAttachment#network_interface_id}
   */
   readonly networkInterfaceId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/network_interface_sg_attachment#security_group_id NetworkInterfaceSgAttachment#security_group_id}
+  * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/network_interface_sg_attachment#region NetworkInterfaceSgAttachment#region}
+  */
+  readonly region?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/network_interface_sg_attachment#security_group_id NetworkInterfaceSgAttachment#security_group_id}
   */
   readonly securityGroupId: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/network_interface_sg_attachment#timeouts NetworkInterfaceSgAttachment#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/network_interface_sg_attachment#timeouts NetworkInterfaceSgAttachment#timeouts}
   */
   readonly timeouts?: NetworkInterfaceSgAttachmentTimeouts;
 }
 export interface NetworkInterfaceSgAttachmentTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/network_interface_sg_attachment#create NetworkInterfaceSgAttachment#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/network_interface_sg_attachment#create NetworkInterfaceSgAttachment#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/network_interface_sg_attachment#delete NetworkInterfaceSgAttachment#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/network_interface_sg_attachment#delete NetworkInterfaceSgAttachment#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/network_interface_sg_attachment#read NetworkInterfaceSgAttachment#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/network_interface_sg_attachment#read NetworkInterfaceSgAttachment#read}
   */
   readonly read?: string;
 }
@@ -196,7 +202,7 @@ export class NetworkInterfaceSgAttachmentTimeoutsOutputReference extends cdktf.C
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/network_interface_sg_attachment aws_network_interface_sg_attachment}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/network_interface_sg_attachment aws_network_interface_sg_attachment}
 */
 export class NetworkInterfaceSgAttachment extends cdktf.TerraformResource {
 
@@ -212,7 +218,7 @@ export class NetworkInterfaceSgAttachment extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a NetworkInterfaceSgAttachment resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NetworkInterfaceSgAttachment to import
-  * @param importFromId The id of the existing NetworkInterfaceSgAttachment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/network_interface_sg_attachment#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing NetworkInterfaceSgAttachment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/network_interface_sg_attachment#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NetworkInterfaceSgAttachment to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -224,7 +230,7 @@ export class NetworkInterfaceSgAttachment extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/network_interface_sg_attachment aws_network_interface_sg_attachment} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/network_interface_sg_attachment aws_network_interface_sg_attachment} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -235,8 +241,8 @@ export class NetworkInterfaceSgAttachment extends cdktf.TerraformResource {
       terraformResourceType: 'aws_network_interface_sg_attachment',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.100.0',
-        providerVersionConstraint: '~> 5.0'
+        providerVersion: '6.0.0',
+        providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -248,6 +254,7 @@ export class NetworkInterfaceSgAttachment extends cdktf.TerraformResource {
     });
     this._id = config.id;
     this._networkInterfaceId = config.networkInterfaceId;
+    this._region = config.region;
     this._securityGroupId = config.securityGroupId;
     this._timeouts.internalValue = config.timeouts;
   }
@@ -283,6 +290,22 @@ export class NetworkInterfaceSgAttachment extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get networkInterfaceIdInput() {
     return this._networkInterfaceId;
+  }
+
+  // region - computed: true, optional: true, required: false
+  private _region?: string; 
+  public get region() {
+    return this.getStringAttribute('region');
+  }
+  public set region(value: string) {
+    this._region = value;
+  }
+  public resetRegion() {
+    this._region = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get regionInput() {
+    return this._region;
   }
 
   // security_group_id - computed: false, optional: false, required: true
@@ -322,6 +345,7 @@ export class NetworkInterfaceSgAttachment extends cdktf.TerraformResource {
     return {
       id: cdktf.stringToTerraform(this._id),
       network_interface_id: cdktf.stringToTerraform(this._networkInterfaceId),
+      region: cdktf.stringToTerraform(this._region),
       security_group_id: cdktf.stringToTerraform(this._securityGroupId),
       timeouts: networkInterfaceSgAttachmentTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -337,6 +361,12 @@ export class NetworkInterfaceSgAttachment extends cdktf.TerraformResource {
       },
       network_interface_id: {
         value: cdktf.stringToHclTerraform(this._networkInterfaceId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      region: {
+        value: cdktf.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

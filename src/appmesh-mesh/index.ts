@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appmesh_mesh
+// https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appmesh_mesh
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,34 +13,40 @@ import * as cdktf from 'cdktf';
 
 export interface AppmeshMeshConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appmesh_mesh#id AppmeshMesh#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appmesh_mesh#id AppmeshMesh#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appmesh_mesh#name AppmeshMesh#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appmesh_mesh#name AppmeshMesh#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appmesh_mesh#tags AppmeshMesh#tags}
+  * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appmesh_mesh#region AppmeshMesh#region}
+  */
+  readonly region?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appmesh_mesh#tags AppmeshMesh#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appmesh_mesh#tags_all AppmeshMesh#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appmesh_mesh#tags_all AppmeshMesh#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
   * spec block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appmesh_mesh#spec AppmeshMesh#spec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appmesh_mesh#spec AppmeshMesh#spec}
   */
   readonly spec?: AppmeshMeshSpec;
 }
 export interface AppmeshMeshSpecEgressFilter {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appmesh_mesh#type AppmeshMesh#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appmesh_mesh#type AppmeshMesh#type}
   */
   readonly type?: string;
 }
@@ -124,7 +130,7 @@ export class AppmeshMeshSpecEgressFilterOutputReference extends cdktf.ComplexObj
 }
 export interface AppmeshMeshSpecServiceDiscovery {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appmesh_mesh#ip_preference AppmeshMesh#ip_preference}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appmesh_mesh#ip_preference AppmeshMesh#ip_preference}
   */
   readonly ipPreference?: string;
 }
@@ -210,13 +216,13 @@ export interface AppmeshMeshSpec {
   /**
   * egress_filter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appmesh_mesh#egress_filter AppmeshMesh#egress_filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appmesh_mesh#egress_filter AppmeshMesh#egress_filter}
   */
   readonly egressFilter?: AppmeshMeshSpecEgressFilter;
   /**
   * service_discovery block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appmesh_mesh#service_discovery AppmeshMesh#service_discovery}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appmesh_mesh#service_discovery AppmeshMesh#service_discovery}
   */
   readonly serviceDiscovery?: AppmeshMeshSpecServiceDiscovery;
 }
@@ -329,7 +335,7 @@ export class AppmeshMeshSpecOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appmesh_mesh aws_appmesh_mesh}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appmesh_mesh aws_appmesh_mesh}
 */
 export class AppmeshMesh extends cdktf.TerraformResource {
 
@@ -345,7 +351,7 @@ export class AppmeshMesh extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a AppmeshMesh resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AppmeshMesh to import
-  * @param importFromId The id of the existing AppmeshMesh that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appmesh_mesh#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing AppmeshMesh that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appmesh_mesh#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AppmeshMesh to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -357,7 +363,7 @@ export class AppmeshMesh extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appmesh_mesh aws_appmesh_mesh} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appmesh_mesh aws_appmesh_mesh} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -368,8 +374,8 @@ export class AppmeshMesh extends cdktf.TerraformResource {
       terraformResourceType: 'aws_appmesh_mesh',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.100.0',
-        providerVersionConstraint: '~> 5.0'
+        providerVersion: '6.0.0',
+        providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -381,6 +387,7 @@ export class AppmeshMesh extends cdktf.TerraformResource {
     });
     this._id = config.id;
     this._name = config.name;
+    this._region = config.region;
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
     this._spec.internalValue = config.spec;
@@ -437,6 +444,22 @@ export class AppmeshMesh extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
     return this._name;
+  }
+
+  // region - computed: true, optional: true, required: false
+  private _region?: string; 
+  public get region() {
+    return this.getStringAttribute('region');
+  }
+  public set region(value: string) {
+    this._region = value;
+  }
+  public resetRegion() {
+    this._region = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get regionInput() {
+    return this._region;
   }
 
   // resource_owner - computed: true, optional: false, required: false
@@ -500,6 +523,7 @@ export class AppmeshMesh extends cdktf.TerraformResource {
     return {
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
+      region: cdktf.stringToTerraform(this._region),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       spec: appmeshMeshSpecToTerraform(this._spec.internalValue),
@@ -516,6 +540,12 @@ export class AppmeshMesh extends cdktf.TerraformResource {
       },
       name: {
         value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      region: {
+        value: cdktf.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

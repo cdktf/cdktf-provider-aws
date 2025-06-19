@@ -4,12 +4,12 @@
 
 ### CloudwatchLogDestination <a name="CloudwatchLogDestination" id="@cdktf/provider-aws.cloudwatchLogDestination.CloudwatchLogDestination"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/cloudwatch_log_destination aws_cloudwatch_log_destination}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/cloudwatch_log_destination aws_cloudwatch_log_destination}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudwatchLogDestination.CloudwatchLogDestination.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/cloudwatchlogdestination"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/cloudwatchlogdestination"
 
 cloudwatchlogdestination.NewCloudwatchLogDestination(scope Construct, id *string, config CloudwatchLogDestinationConfig) CloudwatchLogDestination
 ```
@@ -74,6 +74,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.cloudwatchLogDestination.CloudwatchLogDestination.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-aws.cloudwatchLogDestination.CloudwatchLogDestination.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-aws.cloudwatchLogDestination.CloudwatchLogDestination.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.cloudwatchLogDestination.CloudwatchLogDestination.resetRegion">ResetRegion</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudwatchLogDestination.CloudwatchLogDestination.resetTags">ResetTags</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudwatchLogDestination.CloudwatchLogDestination.resetTagsAll">ResetTagsAll</a></code> | *No description.* |
 
@@ -373,6 +374,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 func ResetId()
 ```
 
+##### `ResetRegion` <a name="ResetRegion" id="@cdktf/provider-aws.cloudwatchLogDestination.CloudwatchLogDestination.resetRegion"></a>
+
+```go
+func ResetRegion()
+```
+
 ##### `ResetTags` <a name="ResetTags" id="@cdktf/provider-aws.cloudwatchLogDestination.CloudwatchLogDestination.resetTags"></a>
 
 ```go
@@ -399,7 +406,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.cloudwatchLogDestination.CloudwatchLogDestination.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/cloudwatchlogdestination"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/cloudwatchlogdestination"
 
 cloudwatchlogdestination.CloudwatchLogDestination_IsConstruct(x interface{}) *bool
 ```
@@ -431,7 +438,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.cloudwatchLogDestination.CloudwatchLogDestination.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/cloudwatchlogdestination"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/cloudwatchlogdestination"
 
 cloudwatchlogdestination.CloudwatchLogDestination_IsTerraformElement(x interface{}) *bool
 ```
@@ -445,7 +452,7 @@ cloudwatchlogdestination.CloudwatchLogDestination_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.cloudwatchLogDestination.CloudwatchLogDestination.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/cloudwatchlogdestination"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/cloudwatchlogdestination"
 
 cloudwatchlogdestination.CloudwatchLogDestination_IsTerraformResource(x interface{}) *bool
 ```
@@ -459,7 +466,7 @@ cloudwatchlogdestination.CloudwatchLogDestination_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.cloudwatchLogDestination.CloudwatchLogDestination.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/cloudwatchlogdestination"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/cloudwatchlogdestination"
 
 cloudwatchlogdestination.CloudwatchLogDestination_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -488,7 +495,7 @@ The construct id used in the generated config for the CloudwatchLogDestination t
 
 The id of the existing CloudwatchLogDestination that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/cloudwatch_log_destination#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/cloudwatch_log_destination#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -521,12 +528,14 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.cloudwatchLogDestination.CloudwatchLogDestination.property.arn">Arn</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudwatchLogDestination.CloudwatchLogDestination.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudwatchLogDestination.CloudwatchLogDestination.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.cloudwatchLogDestination.CloudwatchLogDestination.property.regionInput">RegionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudwatchLogDestination.CloudwatchLogDestination.property.roleArnInput">RoleArnInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudwatchLogDestination.CloudwatchLogDestination.property.tagsAllInput">TagsAllInput</a></code> | <code>*map[string]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudwatchLogDestination.CloudwatchLogDestination.property.tagsInput">TagsInput</a></code> | <code>*map[string]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudwatchLogDestination.CloudwatchLogDestination.property.targetArnInput">TargetArnInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudwatchLogDestination.CloudwatchLogDestination.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudwatchLogDestination.CloudwatchLogDestination.property.name">Name</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.cloudwatchLogDestination.CloudwatchLogDestination.property.region">Region</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudwatchLogDestination.CloudwatchLogDestination.property.roleArn">RoleArn</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudwatchLogDestination.CloudwatchLogDestination.property.tags">Tags</a></code> | <code>*map[string]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudwatchLogDestination.CloudwatchLogDestination.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | *No description.* |
@@ -706,6 +715,16 @@ func NameInput() *string
 
 ---
 
+##### `RegionInput`<sup>Optional</sup> <a name="RegionInput" id="@cdktf/provider-aws.cloudwatchLogDestination.CloudwatchLogDestination.property.regionInput"></a>
+
+```go
+func RegionInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `RoleArnInput`<sup>Optional</sup> <a name="RoleArnInput" id="@cdktf/provider-aws.cloudwatchLogDestination.CloudwatchLogDestination.property.roleArnInput"></a>
 
 ```go
@@ -760,6 +779,16 @@ func Id() *string
 
 ```go
 func Name() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Region`<sup>Required</sup> <a name="Region" id="@cdktf/provider-aws.cloudwatchLogDestination.CloudwatchLogDestination.property.region"></a>
+
+```go
+func Region() *string
 ```
 
 - *Type:* *string
@@ -831,7 +860,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudwatchLogDestination.CloudwatchLogDestinationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/cloudwatchlogdestination"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/cloudwatchlogdestination"
 
 &cloudwatchlogdestination.CloudwatchLogDestinationConfig {
 	Connection: interface{},
@@ -845,6 +874,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/cloudwatchlogdestination"
 	RoleArn: *string,
 	TargetArn: *string,
 	Id: *string,
+	Region: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
 }
@@ -861,12 +891,13 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/cloudwatchlogdestination"
 | <code><a href="#@cdktf/provider-aws.cloudwatchLogDestination.CloudwatchLogDestinationConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudwatchLogDestination.CloudwatchLogDestinationConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudwatchLogDestination.CloudwatchLogDestinationConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.cloudwatchLogDestination.CloudwatchLogDestinationConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/cloudwatch_log_destination#name CloudwatchLogDestination#name}. |
-| <code><a href="#@cdktf/provider-aws.cloudwatchLogDestination.CloudwatchLogDestinationConfig.property.roleArn">RoleArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/cloudwatch_log_destination#role_arn CloudwatchLogDestination#role_arn}. |
-| <code><a href="#@cdktf/provider-aws.cloudwatchLogDestination.CloudwatchLogDestinationConfig.property.targetArn">TargetArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/cloudwatch_log_destination#target_arn CloudwatchLogDestination#target_arn}. |
-| <code><a href="#@cdktf/provider-aws.cloudwatchLogDestination.CloudwatchLogDestinationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/cloudwatch_log_destination#id CloudwatchLogDestination#id}. |
-| <code><a href="#@cdktf/provider-aws.cloudwatchLogDestination.CloudwatchLogDestinationConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/cloudwatch_log_destination#tags CloudwatchLogDestination#tags}. |
-| <code><a href="#@cdktf/provider-aws.cloudwatchLogDestination.CloudwatchLogDestinationConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/cloudwatch_log_destination#tags_all CloudwatchLogDestination#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.cloudwatchLogDestination.CloudwatchLogDestinationConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/cloudwatch_log_destination#name CloudwatchLogDestination#name}. |
+| <code><a href="#@cdktf/provider-aws.cloudwatchLogDestination.CloudwatchLogDestinationConfig.property.roleArn">RoleArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/cloudwatch_log_destination#role_arn CloudwatchLogDestination#role_arn}. |
+| <code><a href="#@cdktf/provider-aws.cloudwatchLogDestination.CloudwatchLogDestinationConfig.property.targetArn">TargetArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/cloudwatch_log_destination#target_arn CloudwatchLogDestination#target_arn}. |
+| <code><a href="#@cdktf/provider-aws.cloudwatchLogDestination.CloudwatchLogDestinationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/cloudwatch_log_destination#id CloudwatchLogDestination#id}. |
+| <code><a href="#@cdktf/provider-aws.cloudwatchLogDestination.CloudwatchLogDestinationConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
+| <code><a href="#@cdktf/provider-aws.cloudwatchLogDestination.CloudwatchLogDestinationConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/cloudwatch_log_destination#tags CloudwatchLogDestination#tags}. |
+| <code><a href="#@cdktf/provider-aws.cloudwatchLogDestination.CloudwatchLogDestinationConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/cloudwatch_log_destination#tags_all CloudwatchLogDestination#tags_all}. |
 
 ---
 
@@ -948,7 +979,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/cloudwatch_log_destination#name CloudwatchLogDestination#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/cloudwatch_log_destination#name CloudwatchLogDestination#name}.
 
 ---
 
@@ -960,7 +991,7 @@ RoleArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/cloudwatch_log_destination#role_arn CloudwatchLogDestination#role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/cloudwatch_log_destination#role_arn CloudwatchLogDestination#role_arn}.
 
 ---
 
@@ -972,7 +1003,7 @@ TargetArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/cloudwatch_log_destination#target_arn CloudwatchLogDestination#target_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/cloudwatch_log_destination#target_arn CloudwatchLogDestination#target_arn}.
 
 ---
 
@@ -984,10 +1015,24 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/cloudwatch_log_destination#id CloudwatchLogDestination#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/cloudwatch_log_destination#id CloudwatchLogDestination#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `Region`<sup>Optional</sup> <a name="Region" id="@cdktf/provider-aws.cloudwatchLogDestination.CloudwatchLogDestinationConfig.property.region"></a>
+
+```go
+Region *string
+```
+
+- *Type:* *string
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/cloudwatch_log_destination#region CloudwatchLogDestination#region}
 
 ---
 
@@ -999,7 +1044,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/cloudwatch_log_destination#tags CloudwatchLogDestination#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/cloudwatch_log_destination#tags CloudwatchLogDestination#tags}.
 
 ---
 
@@ -1011,7 +1056,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/cloudwatch_log_destination#tags_all CloudwatchLogDestination#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/cloudwatch_log_destination#tags_all CloudwatchLogDestination#tags_all}.
 
 ---
 

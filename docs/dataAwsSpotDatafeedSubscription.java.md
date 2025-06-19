@@ -4,7 +4,7 @@
 
 ### DataAwsSpotDatafeedSubscription <a name="DataAwsSpotDatafeedSubscription" id="@cdktf/provider-aws.dataAwsSpotDatafeedSubscription.DataAwsSpotDatafeedSubscription"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/spot_datafeed_subscription aws_spot_datafeed_subscription}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/spot_datafeed_subscription aws_spot_datafeed_subscription}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsSpotDatafeedSubscription.DataAwsSpotDatafeedSubscription.Initializer"></a>
 
@@ -23,6 +23,7 @@ DataAwsSpotDatafeedSubscription.Builder.create(Construct scope, java.lang.String
 //  .provisioners(java.util.List<FileProvisioner)
 //  .provisioners(LocalExecProvisioner)
 //  .provisioners(RemoteExecProvisioner>)
+//  .region(java.lang.String)
     .build();
 ```
 
@@ -37,6 +38,7 @@ DataAwsSpotDatafeedSubscription.Builder.create(Construct scope, java.lang.String
 | <code><a href="#@cdktf/provider-aws.dataAwsSpotDatafeedSubscription.DataAwsSpotDatafeedSubscription.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsSpotDatafeedSubscription.DataAwsSpotDatafeedSubscription.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsSpotDatafeedSubscription.DataAwsSpotDatafeedSubscription.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsSpotDatafeedSubscription.DataAwsSpotDatafeedSubscription.Initializer.parameter.region">region</a></code> | <code>java.lang.String</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
 
@@ -100,6 +102,16 @@ Must be unique amongst siblings in the same scope
 
 ---
 
+##### `region`<sup>Optional</sup> <a name="region" id="@cdktf/provider-aws.dataAwsSpotDatafeedSubscription.DataAwsSpotDatafeedSubscription.Initializer.parameter.region"></a>
+
+- *Type:* java.lang.String
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/spot_datafeed_subscription#region DataAwsSpotDatafeedSubscription#region}
+
+---
+
 #### Methods <a name="Methods" id="Methods"></a>
 
 | **Name** | **Description** |
@@ -121,6 +133,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.dataAwsSpotDatafeedSubscription.DataAwsSpotDatafeedSubscription.getStringAttribute">getStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsSpotDatafeedSubscription.DataAwsSpotDatafeedSubscription.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsSpotDatafeedSubscription.DataAwsSpotDatafeedSubscription.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsSpotDatafeedSubscription.DataAwsSpotDatafeedSubscription.resetRegion">resetRegion</a></code> | *No description.* |
 
 ---
 
@@ -316,6 +329,12 @@ public IResolvable interpolationForAttribute(java.lang.String terraformAttribute
 
 ---
 
+##### `resetRegion` <a name="resetRegion" id="@cdktf/provider-aws.dataAwsSpotDatafeedSubscription.DataAwsSpotDatafeedSubscription.resetRegion"></a>
+
+```java
+public void resetRegion()
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -419,7 +438,7 @@ The construct id used in the generated config for the DataAwsSpotDatafeedSubscri
 
 The id of the existing DataAwsSpotDatafeedSubscription that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/spot_datafeed_subscription#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/spot_datafeed_subscription#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -449,6 +468,8 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.dataAwsSpotDatafeedSubscription.DataAwsSpotDatafeedSubscription.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsSpotDatafeedSubscription.DataAwsSpotDatafeedSubscription.property.bucket">bucket</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsSpotDatafeedSubscription.DataAwsSpotDatafeedSubscription.property.prefix">prefix</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsSpotDatafeedSubscription.DataAwsSpotDatafeedSubscription.property.regionInput">regionInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsSpotDatafeedSubscription.DataAwsSpotDatafeedSubscription.property.region">region</a></code> | <code>java.lang.String</code> | *No description.* |
 
 ---
 
@@ -594,6 +615,26 @@ public java.lang.String getPrefix();
 
 ---
 
+##### `regionInput`<sup>Optional</sup> <a name="regionInput" id="@cdktf/provider-aws.dataAwsSpotDatafeedSubscription.DataAwsSpotDatafeedSubscription.property.regionInput"></a>
+
+```java
+public java.lang.String getRegionInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `region`<sup>Required</sup> <a name="region" id="@cdktf/provider-aws.dataAwsSpotDatafeedSubscription.DataAwsSpotDatafeedSubscription.property.region"></a>
+
+```java
+public java.lang.String getRegion();
+```
+
+- *Type:* java.lang.String
+
+---
+
 #### Constants <a name="Constants" id="Constants"></a>
 
 | **Name** | **Type** | **Description** |
@@ -633,6 +674,7 @@ DataAwsSpotDatafeedSubscriptionConfig.builder()
 //  .provisioners(java.util.List<FileProvisioner)
 //  .provisioners(LocalExecProvisioner)
 //  .provisioners(RemoteExecProvisioner>)
+//  .region(java.lang.String)
     .build();
 ```
 
@@ -647,6 +689,7 @@ DataAwsSpotDatafeedSubscriptionConfig.builder()
 | <code><a href="#@cdktf/provider-aws.dataAwsSpotDatafeedSubscription.DataAwsSpotDatafeedSubscriptionConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsSpotDatafeedSubscription.DataAwsSpotDatafeedSubscriptionConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsSpotDatafeedSubscription.DataAwsSpotDatafeedSubscriptionConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsSpotDatafeedSubscription.DataAwsSpotDatafeedSubscriptionConfig.property.region">region</a></code> | <code>java.lang.String</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
 
@@ -717,6 +760,20 @@ public java.lang.Object getProvisioners();
 ```
 
 - *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner>
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdktf/provider-aws.dataAwsSpotDatafeedSubscription.DataAwsSpotDatafeedSubscriptionConfig.property.region"></a>
+
+```java
+public java.lang.String getRegion();
+```
+
+- *Type:* java.lang.String
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/spot_datafeed_subscription#region DataAwsSpotDatafeedSubscription#region}
 
 ---
 

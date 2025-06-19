@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/opensearchserverless_security_policy
+// https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/opensearchserverless_security_policy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsOpensearchserverlessSecurityPolicyConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/opensearchserverless_security_policy#id DataAwsOpensearchserverlessSecurityPolicy#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/opensearchserverless_security_policy#id DataAwsOpensearchserverlessSecurityPolicy#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,19 +22,25 @@ export interface DataAwsOpensearchserverlessSecurityPolicyConfig extends cdktf.T
   /**
   * Name of the policy.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/opensearchserverless_security_policy#name DataAwsOpensearchserverlessSecurityPolicy#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/opensearchserverless_security_policy#name DataAwsOpensearchserverlessSecurityPolicy#name}
   */
   readonly name: string;
   /**
+  * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/opensearchserverless_security_policy#region DataAwsOpensearchserverlessSecurityPolicy#region}
+  */
+  readonly region?: string;
+  /**
   * Type of security policy. One of `encryption` or `network`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/opensearchserverless_security_policy#type DataAwsOpensearchserverlessSecurityPolicy#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/opensearchserverless_security_policy#type DataAwsOpensearchserverlessSecurityPolicy#type}
   */
   readonly type: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/opensearchserverless_security_policy aws_opensearchserverless_security_policy}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/opensearchserverless_security_policy aws_opensearchserverless_security_policy}
 */
 export class DataAwsOpensearchserverlessSecurityPolicy extends cdktf.TerraformDataSource {
 
@@ -50,7 +56,7 @@ export class DataAwsOpensearchserverlessSecurityPolicy extends cdktf.TerraformDa
   * Generates CDKTF code for importing a DataAwsOpensearchserverlessSecurityPolicy resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsOpensearchserverlessSecurityPolicy to import
-  * @param importFromId The id of the existing DataAwsOpensearchserverlessSecurityPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/opensearchserverless_security_policy#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsOpensearchserverlessSecurityPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/opensearchserverless_security_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsOpensearchserverlessSecurityPolicy to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -62,7 +68,7 @@ export class DataAwsOpensearchserverlessSecurityPolicy extends cdktf.TerraformDa
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/opensearchserverless_security_policy aws_opensearchserverless_security_policy} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/opensearchserverless_security_policy aws_opensearchserverless_security_policy} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -73,8 +79,8 @@ export class DataAwsOpensearchserverlessSecurityPolicy extends cdktf.TerraformDa
       terraformResourceType: 'aws_opensearchserverless_security_policy',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.100.0',
-        providerVersionConstraint: '~> 5.0'
+        providerVersion: '6.0.0',
+        providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -86,6 +92,7 @@ export class DataAwsOpensearchserverlessSecurityPolicy extends cdktf.TerraformDa
     });
     this._id = config.id;
     this._name = config.name;
+    this._region = config.region;
     this._type = config.type;
   }
 
@@ -147,6 +154,22 @@ export class DataAwsOpensearchserverlessSecurityPolicy extends cdktf.TerraformDa
     return this.getStringAttribute('policy_version');
   }
 
+  // region - computed: true, optional: true, required: false
+  private _region?: string; 
+  public get region() {
+    return this.getStringAttribute('region');
+  }
+  public set region(value: string) {
+    this._region = value;
+  }
+  public resetRegion() {
+    this._region = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get regionInput() {
+    return this._region;
+  }
+
   // type - computed: false, optional: false, required: true
   private _type?: string; 
   public get type() {
@@ -168,6 +191,7 @@ export class DataAwsOpensearchserverlessSecurityPolicy extends cdktf.TerraformDa
     return {
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
+      region: cdktf.stringToTerraform(this._region),
       type: cdktf.stringToTerraform(this._type),
     };
   }
@@ -182,6 +206,12 @@ export class DataAwsOpensearchserverlessSecurityPolicy extends cdktf.TerraformDa
       },
       name: {
         value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      region: {
+        value: cdktf.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

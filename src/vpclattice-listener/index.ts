@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/vpclattice_listener
+// https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/vpclattice_listener
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,56 +13,62 @@ import * as cdktf from 'cdktf';
 
 export interface VpclatticeListenerConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/vpclattice_listener#id VpclatticeListener#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/vpclattice_listener#id VpclatticeListener#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/vpclattice_listener#name VpclatticeListener#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/vpclattice_listener#name VpclatticeListener#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/vpclattice_listener#port VpclatticeListener#port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/vpclattice_listener#port VpclatticeListener#port}
   */
   readonly port?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/vpclattice_listener#protocol VpclatticeListener#protocol}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/vpclattice_listener#protocol VpclatticeListener#protocol}
   */
   readonly protocol: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/vpclattice_listener#service_arn VpclatticeListener#service_arn}
+  * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/vpclattice_listener#region VpclatticeListener#region}
+  */
+  readonly region?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/vpclattice_listener#service_arn VpclatticeListener#service_arn}
   */
   readonly serviceArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/vpclattice_listener#service_identifier VpclatticeListener#service_identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/vpclattice_listener#service_identifier VpclatticeListener#service_identifier}
   */
   readonly serviceIdentifier?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/vpclattice_listener#tags VpclatticeListener#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/vpclattice_listener#tags VpclatticeListener#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/vpclattice_listener#tags_all VpclatticeListener#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/vpclattice_listener#tags_all VpclatticeListener#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
   * default_action block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/vpclattice_listener#default_action VpclatticeListener#default_action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/vpclattice_listener#default_action VpclatticeListener#default_action}
   */
   readonly defaultAction: VpclatticeListenerDefaultAction;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/vpclattice_listener#timeouts VpclatticeListener#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/vpclattice_listener#timeouts VpclatticeListener#timeouts}
   */
   readonly timeouts?: VpclatticeListenerTimeouts;
 }
 export interface VpclatticeListenerDefaultActionFixedResponse {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/vpclattice_listener#status_code VpclatticeListener#status_code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/vpclattice_listener#status_code VpclatticeListener#status_code}
   */
   readonly statusCode: number;
 }
@@ -143,11 +149,11 @@ export class VpclatticeListenerDefaultActionFixedResponseOutputReference extends
 }
 export interface VpclatticeListenerDefaultActionForwardTargetGroups {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/vpclattice_listener#target_group_identifier VpclatticeListener#target_group_identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/vpclattice_listener#target_group_identifier VpclatticeListener#target_group_identifier}
   */
   readonly targetGroupIdentifier?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/vpclattice_listener#weight VpclatticeListener#weight}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/vpclattice_listener#weight VpclatticeListener#weight}
   */
   readonly weight?: number;
 }
@@ -294,7 +300,7 @@ export interface VpclatticeListenerDefaultActionForward {
   /**
   * target_groups block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/vpclattice_listener#target_groups VpclatticeListener#target_groups}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/vpclattice_listener#target_groups VpclatticeListener#target_groups}
   */
   readonly targetGroups?: VpclatticeListenerDefaultActionForwardTargetGroups[] | cdktf.IResolvable;
 }
@@ -412,13 +418,13 @@ export interface VpclatticeListenerDefaultAction {
   /**
   * fixed_response block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/vpclattice_listener#fixed_response VpclatticeListener#fixed_response}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/vpclattice_listener#fixed_response VpclatticeListener#fixed_response}
   */
   readonly fixedResponse?: VpclatticeListenerDefaultActionFixedResponse;
   /**
   * forward block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/vpclattice_listener#forward VpclatticeListener#forward}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/vpclattice_listener#forward VpclatticeListener#forward}
   */
   readonly forward?: VpclatticeListenerDefaultActionForward[] | cdktf.IResolvable;
 }
@@ -531,15 +537,15 @@ export class VpclatticeListenerDefaultActionOutputReference extends cdktf.Comple
 }
 export interface VpclatticeListenerTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/vpclattice_listener#create VpclatticeListener#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/vpclattice_listener#create VpclatticeListener#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/vpclattice_listener#delete VpclatticeListener#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/vpclattice_listener#delete VpclatticeListener#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/vpclattice_listener#update VpclatticeListener#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/vpclattice_listener#update VpclatticeListener#update}
   */
   readonly update?: string;
 }
@@ -691,7 +697,7 @@ export class VpclatticeListenerTimeoutsOutputReference extends cdktf.ComplexObje
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/vpclattice_listener aws_vpclattice_listener}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/vpclattice_listener aws_vpclattice_listener}
 */
 export class VpclatticeListener extends cdktf.TerraformResource {
 
@@ -707,7 +713,7 @@ export class VpclatticeListener extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a VpclatticeListener resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the VpclatticeListener to import
-  * @param importFromId The id of the existing VpclatticeListener that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/vpclattice_listener#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing VpclatticeListener that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/vpclattice_listener#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the VpclatticeListener to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -719,7 +725,7 @@ export class VpclatticeListener extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/vpclattice_listener aws_vpclattice_listener} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/vpclattice_listener aws_vpclattice_listener} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -730,8 +736,8 @@ export class VpclatticeListener extends cdktf.TerraformResource {
       terraformResourceType: 'aws_vpclattice_listener',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.100.0',
-        providerVersionConstraint: '~> 5.0'
+        providerVersion: '6.0.0',
+        providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -745,6 +751,7 @@ export class VpclatticeListener extends cdktf.TerraformResource {
     this._name = config.name;
     this._port = config.port;
     this._protocol = config.protocol;
+    this._region = config.region;
     this._serviceArn = config.serviceArn;
     this._serviceIdentifier = config.serviceIdentifier;
     this._tags = config.tags;
@@ -833,6 +840,22 @@ export class VpclatticeListener extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get protocolInput() {
     return this._protocol;
+  }
+
+  // region - computed: true, optional: true, required: false
+  private _region?: string; 
+  public get region() {
+    return this.getStringAttribute('region');
+  }
+  public set region(value: string) {
+    this._region = value;
+  }
+  public resetRegion() {
+    this._region = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get regionInput() {
+    return this._region;
   }
 
   // service_arn - computed: true, optional: true, required: false
@@ -938,6 +961,7 @@ export class VpclatticeListener extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       port: cdktf.numberToTerraform(this._port),
       protocol: cdktf.stringToTerraform(this._protocol),
+      region: cdktf.stringToTerraform(this._region),
       service_arn: cdktf.stringToTerraform(this._serviceArn),
       service_identifier: cdktf.stringToTerraform(this._serviceIdentifier),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
@@ -969,6 +993,12 @@ export class VpclatticeListener extends cdktf.TerraformResource {
       },
       protocol: {
         value: cdktf.stringToHclTerraform(this._protocol),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      region: {
+        value: cdktf.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

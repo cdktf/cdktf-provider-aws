@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/licensemanager_grant_accepter
+// https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/licensemanager_grant_accepter
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,20 +15,26 @@ export interface LicensemanagerGrantAccepterConfig extends cdktf.TerraformMetaAr
   /**
   * Amazon Resource Name (ARN) of the grant.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/licensemanager_grant_accepter#grant_arn LicensemanagerGrantAccepter#grant_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/licensemanager_grant_accepter#grant_arn LicensemanagerGrantAccepter#grant_arn}
   */
   readonly grantArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/licensemanager_grant_accepter#id LicensemanagerGrantAccepter#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/licensemanager_grant_accepter#id LicensemanagerGrantAccepter#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
+  /**
+  * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/licensemanager_grant_accepter#region LicensemanagerGrantAccepter#region}
+  */
+  readonly region?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/licensemanager_grant_accepter aws_licensemanager_grant_accepter}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/licensemanager_grant_accepter aws_licensemanager_grant_accepter}
 */
 export class LicensemanagerGrantAccepter extends cdktf.TerraformResource {
 
@@ -44,7 +50,7 @@ export class LicensemanagerGrantAccepter extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a LicensemanagerGrantAccepter resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the LicensemanagerGrantAccepter to import
-  * @param importFromId The id of the existing LicensemanagerGrantAccepter that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/licensemanager_grant_accepter#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing LicensemanagerGrantAccepter that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/licensemanager_grant_accepter#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the LicensemanagerGrantAccepter to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -56,7 +62,7 @@ export class LicensemanagerGrantAccepter extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/licensemanager_grant_accepter aws_licensemanager_grant_accepter} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/licensemanager_grant_accepter aws_licensemanager_grant_accepter} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -67,8 +73,8 @@ export class LicensemanagerGrantAccepter extends cdktf.TerraformResource {
       terraformResourceType: 'aws_licensemanager_grant_accepter',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.100.0',
-        providerVersionConstraint: '~> 5.0'
+        providerVersion: '6.0.0',
+        providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -80,6 +86,7 @@ export class LicensemanagerGrantAccepter extends cdktf.TerraformResource {
     });
     this._grantArn = config.grantArn;
     this._id = config.id;
+    this._region = config.region;
   }
 
   // ==========
@@ -145,6 +152,22 @@ export class LicensemanagerGrantAccepter extends cdktf.TerraformResource {
     return this.getStringAttribute('principal');
   }
 
+  // region - computed: true, optional: true, required: false
+  private _region?: string; 
+  public get region() {
+    return this.getStringAttribute('region');
+  }
+  public set region(value: string) {
+    this._region = value;
+  }
+  public resetRegion() {
+    this._region = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get regionInput() {
+    return this._region;
+  }
+
   // status - computed: true, optional: false, required: false
   public get status() {
     return this.getStringAttribute('status');
@@ -163,6 +186,7 @@ export class LicensemanagerGrantAccepter extends cdktf.TerraformResource {
     return {
       grant_arn: cdktf.stringToTerraform(this._grantArn),
       id: cdktf.stringToTerraform(this._id),
+      region: cdktf.stringToTerraform(this._region),
     };
   }
 
@@ -176,6 +200,12 @@ export class LicensemanagerGrantAccepter extends cdktf.TerraformResource {
       },
       id: {
         value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      region: {
+        value: cdktf.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

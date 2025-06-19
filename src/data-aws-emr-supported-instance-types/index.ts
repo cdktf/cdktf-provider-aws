@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/emr_supported_instance_types
+// https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/emr_supported_instance_types
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,20 +13,20 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsEmrSupportedInstanceTypesConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/emr_supported_instance_types#release_label DataAwsEmrSupportedInstanceTypes#release_label}
+  * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/emr_supported_instance_types#region DataAwsEmrSupportedInstanceTypes#region}
+  */
+  readonly region?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/emr_supported_instance_types#release_label DataAwsEmrSupportedInstanceTypes#release_label}
   */
   readonly releaseLabel: string;
-  /**
-  * supported_instance_types block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/emr_supported_instance_types#supported_instance_types DataAwsEmrSupportedInstanceTypes#supported_instance_types}
-  */
-  readonly supportedInstanceTypes?: DataAwsEmrSupportedInstanceTypesSupportedInstanceTypes[] | cdktf.IResolvable;
 }
 export interface DataAwsEmrSupportedInstanceTypesSupportedInstanceTypes {
 }
 
-export function dataAwsEmrSupportedInstanceTypesSupportedInstanceTypesToTerraform(struct?: DataAwsEmrSupportedInstanceTypesSupportedInstanceTypes | cdktf.IResolvable): any {
+export function dataAwsEmrSupportedInstanceTypesSupportedInstanceTypesToTerraform(struct?: DataAwsEmrSupportedInstanceTypesSupportedInstanceTypes): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -36,7 +36,7 @@ export function dataAwsEmrSupportedInstanceTypesSupportedInstanceTypesToTerrafor
 }
 
 
-export function dataAwsEmrSupportedInstanceTypesSupportedInstanceTypesToHclTerraform(struct?: DataAwsEmrSupportedInstanceTypesSupportedInstanceTypes | cdktf.IResolvable): any {
+export function dataAwsEmrSupportedInstanceTypesSupportedInstanceTypesToHclTerraform(struct?: DataAwsEmrSupportedInstanceTypesSupportedInstanceTypes): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -48,7 +48,6 @@ export function dataAwsEmrSupportedInstanceTypesSupportedInstanceTypesToHclTerra
 
 export class DataAwsEmrSupportedInstanceTypesSupportedInstanceTypesOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -60,27 +59,18 @@ export class DataAwsEmrSupportedInstanceTypesSupportedInstanceTypesOutputReferen
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataAwsEmrSupportedInstanceTypesSupportedInstanceTypes | cdktf.IResolvable | undefined {
-    if (this.resolvableValue) {
-      return this.resolvableValue;
-    }
+  public get internalValue(): DataAwsEmrSupportedInstanceTypesSupportedInstanceTypes | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAwsEmrSupportedInstanceTypesSupportedInstanceTypes | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataAwsEmrSupportedInstanceTypesSupportedInstanceTypes | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-      this.resolvableValue = undefined;
-    }
-    else if (cdktf.Tokenization.isResolvable(value)) {
-      this.isEmptyObject = false;
-      this.resolvableValue = value;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
-      this.resolvableValue = undefined;
     }
   }
 
@@ -141,7 +131,6 @@ export class DataAwsEmrSupportedInstanceTypesSupportedInstanceTypesOutputReferen
 }
 
 export class DataAwsEmrSupportedInstanceTypesSupportedInstanceTypesList extends cdktf.ComplexList {
-  public internalValue? : DataAwsEmrSupportedInstanceTypesSupportedInstanceTypes[] | cdktf.IResolvable
 
   /**
   * @param terraformResource The parent resource
@@ -161,7 +150,7 @@ export class DataAwsEmrSupportedInstanceTypesSupportedInstanceTypesList extends 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/emr_supported_instance_types aws_emr_supported_instance_types}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/emr_supported_instance_types aws_emr_supported_instance_types}
 */
 export class DataAwsEmrSupportedInstanceTypes extends cdktf.TerraformDataSource {
 
@@ -177,7 +166,7 @@ export class DataAwsEmrSupportedInstanceTypes extends cdktf.TerraformDataSource 
   * Generates CDKTF code for importing a DataAwsEmrSupportedInstanceTypes resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsEmrSupportedInstanceTypes to import
-  * @param importFromId The id of the existing DataAwsEmrSupportedInstanceTypes that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/emr_supported_instance_types#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsEmrSupportedInstanceTypes that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/emr_supported_instance_types#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsEmrSupportedInstanceTypes to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -189,7 +178,7 @@ export class DataAwsEmrSupportedInstanceTypes extends cdktf.TerraformDataSource 
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/emr_supported_instance_types aws_emr_supported_instance_types} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/emr_supported_instance_types aws_emr_supported_instance_types} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -200,8 +189,8 @@ export class DataAwsEmrSupportedInstanceTypes extends cdktf.TerraformDataSource 
       terraformResourceType: 'aws_emr_supported_instance_types',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.100.0',
-        providerVersionConstraint: '~> 5.0'
+        providerVersion: '6.0.0',
+        providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -211,8 +200,8 @@ export class DataAwsEmrSupportedInstanceTypes extends cdktf.TerraformDataSource 
       connection: config.connection,
       forEach: config.forEach
     });
+    this._region = config.region;
     this._releaseLabel = config.releaseLabel;
-    this._supportedInstanceTypes.internalValue = config.supportedInstanceTypes;
   }
 
   // ==========
@@ -222,6 +211,22 @@ export class DataAwsEmrSupportedInstanceTypes extends cdktf.TerraformDataSource 
   // id - computed: true, optional: false, required: false
   public get id() {
     return this.getStringAttribute('id');
+  }
+
+  // region - computed: true, optional: true, required: false
+  private _region?: string; 
+  public get region() {
+    return this.getStringAttribute('region');
+  }
+  public set region(value: string) {
+    this._region = value;
+  }
+  public resetRegion() {
+    this._region = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get regionInput() {
+    return this._region;
   }
 
   // release_label - computed: false, optional: false, required: true
@@ -237,20 +242,10 @@ export class DataAwsEmrSupportedInstanceTypes extends cdktf.TerraformDataSource 
     return this._releaseLabel;
   }
 
-  // supported_instance_types - computed: false, optional: true, required: false
+  // supported_instance_types - computed: true, optional: false, required: false
   private _supportedInstanceTypes = new DataAwsEmrSupportedInstanceTypesSupportedInstanceTypesList(this, "supported_instance_types", false);
   public get supportedInstanceTypes() {
     return this._supportedInstanceTypes;
-  }
-  public putSupportedInstanceTypes(value: DataAwsEmrSupportedInstanceTypesSupportedInstanceTypes[] | cdktf.IResolvable) {
-    this._supportedInstanceTypes.internalValue = value;
-  }
-  public resetSupportedInstanceTypes() {
-    this._supportedInstanceTypes.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get supportedInstanceTypesInput() {
-    return this._supportedInstanceTypes.internalValue;
   }
 
   // =========
@@ -259,24 +254,24 @@ export class DataAwsEmrSupportedInstanceTypes extends cdktf.TerraformDataSource 
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      region: cdktf.stringToTerraform(this._region),
       release_label: cdktf.stringToTerraform(this._releaseLabel),
-      supported_instance_types: cdktf.listMapper(dataAwsEmrSupportedInstanceTypesSupportedInstanceTypesToTerraform, true)(this._supportedInstanceTypes.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
+      region: {
+        value: cdktf.stringToHclTerraform(this._region),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
       release_label: {
         value: cdktf.stringToHclTerraform(this._releaseLabel),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
-      },
-      supported_instance_types: {
-        value: cdktf.listMapperHcl(dataAwsEmrSupportedInstanceTypesSupportedInstanceTypesToHclTerraform, true)(this._supportedInstanceTypes.internalValue),
-        isBlock: true,
-        type: "list",
-        storageClassType: "DataAwsEmrSupportedInstanceTypesSupportedInstanceTypesList",
       },
     };
 

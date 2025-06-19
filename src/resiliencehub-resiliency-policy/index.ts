@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/resiliencehub_resiliency_policy
+// https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/resiliencehub_resiliency_policy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,41 +15,47 @@ export interface ResiliencehubResiliencyPolicyConfig extends cdktf.TerraformMeta
   /**
   * Specifies a high-level geographical location constraint for where resilience policy data can be stored.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/resiliencehub_resiliency_policy#data_location_constraint ResiliencehubResiliencyPolicy#data_location_constraint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/resiliencehub_resiliency_policy#data_location_constraint ResiliencehubResiliencyPolicy#data_location_constraint}
   */
   readonly dataLocationConstraint?: string;
   /**
   * The description for the policy.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/resiliencehub_resiliency_policy#description ResiliencehubResiliencyPolicy#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/resiliencehub_resiliency_policy#description ResiliencehubResiliencyPolicy#description}
   */
   readonly description?: string;
   /**
   * The name of the policy.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/resiliencehub_resiliency_policy#name ResiliencehubResiliencyPolicy#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/resiliencehub_resiliency_policy#name ResiliencehubResiliencyPolicy#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/resiliencehub_resiliency_policy#tags ResiliencehubResiliencyPolicy#tags}
+  * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/resiliencehub_resiliency_policy#region ResiliencehubResiliencyPolicy#region}
+  */
+  readonly region?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/resiliencehub_resiliency_policy#tags ResiliencehubResiliencyPolicy#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
   * The tier for the resiliency policy, ranging from the highest severity (MissionCritical) to lowest (NonCritical).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/resiliencehub_resiliency_policy#tier ResiliencehubResiliencyPolicy#tier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/resiliencehub_resiliency_policy#tier ResiliencehubResiliencyPolicy#tier}
   */
   readonly tier: string;
   /**
   * policy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/resiliencehub_resiliency_policy#policy ResiliencehubResiliencyPolicy#policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/resiliencehub_resiliency_policy#policy ResiliencehubResiliencyPolicy#policy}
   */
-  readonly policy?: ResiliencehubResiliencyPolicyPolicy;
+  readonly policy?: ResiliencehubResiliencyPolicyPolicy[] | cdktf.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/resiliencehub_resiliency_policy#timeouts ResiliencehubResiliencyPolicy#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/resiliencehub_resiliency_policy#timeouts ResiliencehubResiliencyPolicy#timeouts}
   */
   readonly timeouts?: ResiliencehubResiliencyPolicyTimeouts;
 }
@@ -57,13 +63,13 @@ export interface ResiliencehubResiliencyPolicyPolicyAz {
   /**
   * Recovery Point Objective (RPO) as a Go duration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/resiliencehub_resiliency_policy#rpo ResiliencehubResiliencyPolicy#rpo}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/resiliencehub_resiliency_policy#rpo ResiliencehubResiliencyPolicy#rpo}
   */
   readonly rpo: string;
   /**
   * Recovery Time Objective (RTO) as a Go duration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/resiliencehub_resiliency_policy#rto ResiliencehubResiliencyPolicy#rto}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/resiliencehub_resiliency_policy#rto ResiliencehubResiliencyPolicy#rto}
   */
   readonly rto: string;
 }
@@ -111,9 +117,11 @@ export class ResiliencehubResiliencyPolicyPolicyAzOutputReference extends cdktf.
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
   public get internalValue(): ResiliencehubResiliencyPolicyPolicyAz | cdktf.IResolvable | undefined {
@@ -178,17 +186,37 @@ export class ResiliencehubResiliencyPolicyPolicyAzOutputReference extends cdktf.
     return this._rto;
   }
 }
+
+export class ResiliencehubResiliencyPolicyPolicyAzList extends cdktf.ComplexList {
+  public internalValue? : ResiliencehubResiliencyPolicyPolicyAz[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ResiliencehubResiliencyPolicyPolicyAzOutputReference {
+    return new ResiliencehubResiliencyPolicyPolicyAzOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface ResiliencehubResiliencyPolicyPolicyHardware {
   /**
   * Recovery Point Objective (RPO) as a Go duration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/resiliencehub_resiliency_policy#rpo ResiliencehubResiliencyPolicy#rpo}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/resiliencehub_resiliency_policy#rpo ResiliencehubResiliencyPolicy#rpo}
   */
   readonly rpo: string;
   /**
   * Recovery Time Objective (RTO) as a Go duration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/resiliencehub_resiliency_policy#rto ResiliencehubResiliencyPolicy#rto}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/resiliencehub_resiliency_policy#rto ResiliencehubResiliencyPolicy#rto}
   */
   readonly rto: string;
 }
@@ -236,9 +264,11 @@ export class ResiliencehubResiliencyPolicyPolicyHardwareOutputReference extends 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
   public get internalValue(): ResiliencehubResiliencyPolicyPolicyHardware | cdktf.IResolvable | undefined {
@@ -303,17 +333,37 @@ export class ResiliencehubResiliencyPolicyPolicyHardwareOutputReference extends 
     return this._rto;
   }
 }
+
+export class ResiliencehubResiliencyPolicyPolicyHardwareList extends cdktf.ComplexList {
+  public internalValue? : ResiliencehubResiliencyPolicyPolicyHardware[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ResiliencehubResiliencyPolicyPolicyHardwareOutputReference {
+    return new ResiliencehubResiliencyPolicyPolicyHardwareOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface ResiliencehubResiliencyPolicyPolicyRegion {
   /**
   * Recovery Point Objective (RPO) as a Go duration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/resiliencehub_resiliency_policy#rpo ResiliencehubResiliencyPolicy#rpo}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/resiliencehub_resiliency_policy#rpo ResiliencehubResiliencyPolicy#rpo}
   */
   readonly rpo?: string;
   /**
   * Recovery Time Objective (RTO) as a Go duration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/resiliencehub_resiliency_policy#rto ResiliencehubResiliencyPolicy#rto}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/resiliencehub_resiliency_policy#rto ResiliencehubResiliencyPolicy#rto}
   */
   readonly rto?: string;
 }
@@ -361,9 +411,11 @@ export class ResiliencehubResiliencyPolicyPolicyRegionOutputReference extends cd
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
   public get internalValue(): ResiliencehubResiliencyPolicyPolicyRegion | cdktf.IResolvable | undefined {
@@ -434,17 +486,37 @@ export class ResiliencehubResiliencyPolicyPolicyRegionOutputReference extends cd
     return this._rto;
   }
 }
+
+export class ResiliencehubResiliencyPolicyPolicyRegionList extends cdktf.ComplexList {
+  public internalValue? : ResiliencehubResiliencyPolicyPolicyRegion[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ResiliencehubResiliencyPolicyPolicyRegionOutputReference {
+    return new ResiliencehubResiliencyPolicyPolicyRegionOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface ResiliencehubResiliencyPolicyPolicySoftware {
   /**
   * Recovery Point Objective (RPO) as a Go duration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/resiliencehub_resiliency_policy#rpo ResiliencehubResiliencyPolicy#rpo}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/resiliencehub_resiliency_policy#rpo ResiliencehubResiliencyPolicy#rpo}
   */
   readonly rpo: string;
   /**
   * Recovery Time Objective (RTO) as a Go duration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/resiliencehub_resiliency_policy#rto ResiliencehubResiliencyPolicy#rto}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/resiliencehub_resiliency_policy#rto ResiliencehubResiliencyPolicy#rto}
   */
   readonly rto: string;
 }
@@ -492,9 +564,11 @@ export class ResiliencehubResiliencyPolicyPolicySoftwareOutputReference extends 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
   public get internalValue(): ResiliencehubResiliencyPolicyPolicySoftware | cdktf.IResolvable | undefined {
@@ -559,31 +633,51 @@ export class ResiliencehubResiliencyPolicyPolicySoftwareOutputReference extends 
     return this._rto;
   }
 }
+
+export class ResiliencehubResiliencyPolicyPolicySoftwareList extends cdktf.ComplexList {
+  public internalValue? : ResiliencehubResiliencyPolicyPolicySoftware[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ResiliencehubResiliencyPolicyPolicySoftwareOutputReference {
+    return new ResiliencehubResiliencyPolicyPolicySoftwareOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface ResiliencehubResiliencyPolicyPolicy {
   /**
   * az block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/resiliencehub_resiliency_policy#az ResiliencehubResiliencyPolicy#az}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/resiliencehub_resiliency_policy#az ResiliencehubResiliencyPolicy#az}
   */
-  readonly az: ResiliencehubResiliencyPolicyPolicyAz;
+  readonly az?: ResiliencehubResiliencyPolicyPolicyAz[] | cdktf.IResolvable;
   /**
   * hardware block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/resiliencehub_resiliency_policy#hardware ResiliencehubResiliencyPolicy#hardware}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/resiliencehub_resiliency_policy#hardware ResiliencehubResiliencyPolicy#hardware}
   */
-  readonly hardware: ResiliencehubResiliencyPolicyPolicyHardware;
+  readonly hardware?: ResiliencehubResiliencyPolicyPolicyHardware[] | cdktf.IResolvable;
   /**
   * region block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/resiliencehub_resiliency_policy#region ResiliencehubResiliencyPolicy#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/resiliencehub_resiliency_policy#region ResiliencehubResiliencyPolicy#region}
   */
-  readonly region?: ResiliencehubResiliencyPolicyPolicyRegion;
+  readonly region?: ResiliencehubResiliencyPolicyPolicyRegion[] | cdktf.IResolvable;
   /**
   * software block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/resiliencehub_resiliency_policy#software ResiliencehubResiliencyPolicy#software}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/resiliencehub_resiliency_policy#software ResiliencehubResiliencyPolicy#software}
   */
-  readonly softwareAttribute: ResiliencehubResiliencyPolicyPolicySoftware;
+  readonly softwareAttribute?: ResiliencehubResiliencyPolicyPolicySoftware[] | cdktf.IResolvable;
 }
 
 export function resiliencehubResiliencyPolicyPolicyToTerraform(struct?: ResiliencehubResiliencyPolicyPolicy | cdktf.IResolvable): any {
@@ -592,10 +686,10 @@ export function resiliencehubResiliencyPolicyPolicyToTerraform(struct?: Resilien
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    az: resiliencehubResiliencyPolicyPolicyAzToTerraform(struct!.az),
-    hardware: resiliencehubResiliencyPolicyPolicyHardwareToTerraform(struct!.hardware),
-    region: resiliencehubResiliencyPolicyPolicyRegionToTerraform(struct!.region),
-    software: resiliencehubResiliencyPolicyPolicySoftwareToTerraform(struct!.softwareAttribute),
+    az: cdktf.listMapper(resiliencehubResiliencyPolicyPolicyAzToTerraform, true)(struct!.az),
+    hardware: cdktf.listMapper(resiliencehubResiliencyPolicyPolicyHardwareToTerraform, true)(struct!.hardware),
+    region: cdktf.listMapper(resiliencehubResiliencyPolicyPolicyRegionToTerraform, true)(struct!.region),
+    software: cdktf.listMapper(resiliencehubResiliencyPolicyPolicySoftwareToTerraform, true)(struct!.softwareAttribute),
   }
 }
 
@@ -607,28 +701,28 @@ export function resiliencehubResiliencyPolicyPolicyToHclTerraform(struct?: Resil
   }
   const attrs = {
     az: {
-      value: resiliencehubResiliencyPolicyPolicyAzToHclTerraform(struct!.az),
+      value: cdktf.listMapperHcl(resiliencehubResiliencyPolicyPolicyAzToHclTerraform, true)(struct!.az),
       isBlock: true,
-      type: "struct",
-      storageClassType: "ResiliencehubResiliencyPolicyPolicyAz",
+      type: "list",
+      storageClassType: "ResiliencehubResiliencyPolicyPolicyAzList",
     },
     hardware: {
-      value: resiliencehubResiliencyPolicyPolicyHardwareToHclTerraform(struct!.hardware),
+      value: cdktf.listMapperHcl(resiliencehubResiliencyPolicyPolicyHardwareToHclTerraform, true)(struct!.hardware),
       isBlock: true,
-      type: "struct",
-      storageClassType: "ResiliencehubResiliencyPolicyPolicyHardware",
+      type: "list",
+      storageClassType: "ResiliencehubResiliencyPolicyPolicyHardwareList",
     },
     region: {
-      value: resiliencehubResiliencyPolicyPolicyRegionToHclTerraform(struct!.region),
+      value: cdktf.listMapperHcl(resiliencehubResiliencyPolicyPolicyRegionToHclTerraform, true)(struct!.region),
       isBlock: true,
-      type: "struct",
-      storageClassType: "ResiliencehubResiliencyPolicyPolicyRegion",
+      type: "list",
+      storageClassType: "ResiliencehubResiliencyPolicyPolicyRegionList",
     },
     software: {
-      value: resiliencehubResiliencyPolicyPolicySoftwareToHclTerraform(struct!.softwareAttribute),
+      value: cdktf.listMapperHcl(resiliencehubResiliencyPolicyPolicySoftwareToHclTerraform, true)(struct!.softwareAttribute),
       isBlock: true,
-      type: "struct",
-      storageClassType: "ResiliencehubResiliencyPolicyPolicySoftware",
+      type: "list",
+      storageClassType: "ResiliencehubResiliencyPolicyPolicySoftwareList",
     },
   };
 
@@ -643,9 +737,11 @@ export class ResiliencehubResiliencyPolicyPolicyOutputReference extends cdktf.Co
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
   public get internalValue(): ResiliencehubResiliencyPolicyPolicy | cdktf.IResolvable | undefined {
@@ -696,26 +792,32 @@ export class ResiliencehubResiliencyPolicyPolicyOutputReference extends cdktf.Co
     }
   }
 
-  // az - computed: false, optional: false, required: true
-  private _az = new ResiliencehubResiliencyPolicyPolicyAzOutputReference(this, "az");
+  // az - computed: false, optional: true, required: false
+  private _az = new ResiliencehubResiliencyPolicyPolicyAzList(this, "az", false);
   public get az() {
     return this._az;
   }
-  public putAz(value: ResiliencehubResiliencyPolicyPolicyAz) {
+  public putAz(value: ResiliencehubResiliencyPolicyPolicyAz[] | cdktf.IResolvable) {
     this._az.internalValue = value;
+  }
+  public resetAz() {
+    this._az.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get azInput() {
     return this._az.internalValue;
   }
 
-  // hardware - computed: false, optional: false, required: true
-  private _hardware = new ResiliencehubResiliencyPolicyPolicyHardwareOutputReference(this, "hardware");
+  // hardware - computed: false, optional: true, required: false
+  private _hardware = new ResiliencehubResiliencyPolicyPolicyHardwareList(this, "hardware", false);
   public get hardware() {
     return this._hardware;
   }
-  public putHardware(value: ResiliencehubResiliencyPolicyPolicyHardware) {
+  public putHardware(value: ResiliencehubResiliencyPolicyPolicyHardware[] | cdktf.IResolvable) {
     this._hardware.internalValue = value;
+  }
+  public resetHardware() {
+    this._hardware.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get hardwareInput() {
@@ -723,11 +825,11 @@ export class ResiliencehubResiliencyPolicyPolicyOutputReference extends cdktf.Co
   }
 
   // region - computed: false, optional: true, required: false
-  private _region = new ResiliencehubResiliencyPolicyPolicyRegionOutputReference(this, "region");
+  private _region = new ResiliencehubResiliencyPolicyPolicyRegionList(this, "region", false);
   public get region() {
     return this._region;
   }
-  public putRegion(value: ResiliencehubResiliencyPolicyPolicyRegion) {
+  public putRegion(value: ResiliencehubResiliencyPolicyPolicyRegion[] | cdktf.IResolvable) {
     this._region.internalValue = value;
   }
   public resetRegion() {
@@ -738,36 +840,59 @@ export class ResiliencehubResiliencyPolicyPolicyOutputReference extends cdktf.Co
     return this._region.internalValue;
   }
 
-  // software - computed: false, optional: false, required: true
-  private _software = new ResiliencehubResiliencyPolicyPolicySoftwareOutputReference(this, "software");
+  // software - computed: false, optional: true, required: false
+  private _software = new ResiliencehubResiliencyPolicyPolicySoftwareList(this, "software", false);
   public get softwareAttribute() {
     return this._software;
   }
-  public putSoftwareAttribute(value: ResiliencehubResiliencyPolicyPolicySoftware) {
+  public putSoftwareAttribute(value: ResiliencehubResiliencyPolicyPolicySoftware[] | cdktf.IResolvable) {
     this._software.internalValue = value;
+  }
+  public resetSoftwareAttribute() {
+    this._software.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get softwareAttributeInput() {
     return this._software.internalValue;
   }
 }
+
+export class ResiliencehubResiliencyPolicyPolicyList extends cdktf.ComplexList {
+  public internalValue? : ResiliencehubResiliencyPolicyPolicy[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ResiliencehubResiliencyPolicyPolicyOutputReference {
+    return new ResiliencehubResiliencyPolicyPolicyOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface ResiliencehubResiliencyPolicyTimeouts {
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/resiliencehub_resiliency_policy#create ResiliencehubResiliencyPolicy#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/resiliencehub_resiliency_policy#create ResiliencehubResiliencyPolicy#create}
   */
   readonly create?: string;
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/resiliencehub_resiliency_policy#delete ResiliencehubResiliencyPolicy#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/resiliencehub_resiliency_policy#delete ResiliencehubResiliencyPolicy#delete}
   */
   readonly delete?: string;
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/resiliencehub_resiliency_policy#update ResiliencehubResiliencyPolicy#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/resiliencehub_resiliency_policy#update ResiliencehubResiliencyPolicy#update}
   */
   readonly update?: string;
 }
@@ -919,7 +1044,7 @@ export class ResiliencehubResiliencyPolicyTimeoutsOutputReference extends cdktf.
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/resiliencehub_resiliency_policy aws_resiliencehub_resiliency_policy}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/resiliencehub_resiliency_policy aws_resiliencehub_resiliency_policy}
 */
 export class ResiliencehubResiliencyPolicy extends cdktf.TerraformResource {
 
@@ -935,7 +1060,7 @@ export class ResiliencehubResiliencyPolicy extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ResiliencehubResiliencyPolicy resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ResiliencehubResiliencyPolicy to import
-  * @param importFromId The id of the existing ResiliencehubResiliencyPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/resiliencehub_resiliency_policy#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ResiliencehubResiliencyPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/resiliencehub_resiliency_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ResiliencehubResiliencyPolicy to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -947,7 +1072,7 @@ export class ResiliencehubResiliencyPolicy extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/resiliencehub_resiliency_policy aws_resiliencehub_resiliency_policy} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/resiliencehub_resiliency_policy aws_resiliencehub_resiliency_policy} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -958,8 +1083,8 @@ export class ResiliencehubResiliencyPolicy extends cdktf.TerraformResource {
       terraformResourceType: 'aws_resiliencehub_resiliency_policy',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.100.0',
-        providerVersionConstraint: '~> 5.0'
+        providerVersion: '6.0.0',
+        providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -972,6 +1097,7 @@ export class ResiliencehubResiliencyPolicy extends cdktf.TerraformResource {
     this._dataLocationConstraint = config.dataLocationConstraint;
     this._description = config.description;
     this._name = config.name;
+    this._region = config.region;
     this._tags = config.tags;
     this._tier = config.tier;
     this._policy.internalValue = config.policy;
@@ -1037,6 +1163,22 @@ export class ResiliencehubResiliencyPolicy extends cdktf.TerraformResource {
     return this._name;
   }
 
+  // region - computed: true, optional: true, required: false
+  private _region?: string; 
+  public get region() {
+    return this.getStringAttribute('region');
+  }
+  public set region(value: string) {
+    this._region = value;
+  }
+  public resetRegion() {
+    this._region = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get regionInput() {
+    return this._region;
+  }
+
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string }; 
   public get tags() {
@@ -1073,11 +1215,11 @@ export class ResiliencehubResiliencyPolicy extends cdktf.TerraformResource {
   }
 
   // policy - computed: false, optional: true, required: false
-  private _policy = new ResiliencehubResiliencyPolicyPolicyOutputReference(this, "policy");
+  private _policy = new ResiliencehubResiliencyPolicyPolicyList(this, "policy", false);
   public get policy() {
     return this._policy;
   }
-  public putPolicy(value: ResiliencehubResiliencyPolicyPolicy) {
+  public putPolicy(value: ResiliencehubResiliencyPolicyPolicy[] | cdktf.IResolvable) {
     this._policy.internalValue = value;
   }
   public resetPolicy() {
@@ -1113,9 +1255,10 @@ export class ResiliencehubResiliencyPolicy extends cdktf.TerraformResource {
       data_location_constraint: cdktf.stringToTerraform(this._dataLocationConstraint),
       description: cdktf.stringToTerraform(this._description),
       name: cdktf.stringToTerraform(this._name),
+      region: cdktf.stringToTerraform(this._region),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tier: cdktf.stringToTerraform(this._tier),
-      policy: resiliencehubResiliencyPolicyPolicyToTerraform(this._policy.internalValue),
+      policy: cdktf.listMapper(resiliencehubResiliencyPolicyPolicyToTerraform, true)(this._policy.internalValue),
       timeouts: resiliencehubResiliencyPolicyTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -1140,6 +1283,12 @@ export class ResiliencehubResiliencyPolicy extends cdktf.TerraformResource {
         type: "simple",
         storageClassType: "string",
       },
+      region: {
+        value: cdktf.stringToHclTerraform(this._region),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
       tags: {
         value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
         isBlock: false,
@@ -1153,10 +1302,10 @@ export class ResiliencehubResiliencyPolicy extends cdktf.TerraformResource {
         storageClassType: "string",
       },
       policy: {
-        value: resiliencehubResiliencyPolicyPolicyToHclTerraform(this._policy.internalValue),
+        value: cdktf.listMapperHcl(resiliencehubResiliencyPolicyPolicyToHclTerraform, true)(this._policy.internalValue),
         isBlock: true,
-        type: "struct",
-        storageClassType: "ResiliencehubResiliencyPolicyPolicy",
+        type: "list",
+        storageClassType: "ResiliencehubResiliencyPolicyPolicyList",
       },
       timeouts: {
         value: resiliencehubResiliencyPolicyTimeoutsToHclTerraform(this._timeouts.internalValue),

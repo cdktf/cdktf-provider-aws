@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/db_snapshot
+// https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/db_snapshot
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,42 +13,48 @@ import * as cdktf from 'cdktf';
 
 export interface DbSnapshotConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/db_snapshot#db_instance_identifier DbSnapshot#db_instance_identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/db_snapshot#db_instance_identifier DbSnapshot#db_instance_identifier}
   */
   readonly dbInstanceIdentifier: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/db_snapshot#db_snapshot_identifier DbSnapshot#db_snapshot_identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/db_snapshot#db_snapshot_identifier DbSnapshot#db_snapshot_identifier}
   */
   readonly dbSnapshotIdentifier: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/db_snapshot#id DbSnapshot#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/db_snapshot#id DbSnapshot#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/db_snapshot#shared_accounts DbSnapshot#shared_accounts}
+  * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/db_snapshot#region DbSnapshot#region}
+  */
+  readonly region?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/db_snapshot#shared_accounts DbSnapshot#shared_accounts}
   */
   readonly sharedAccounts?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/db_snapshot#tags DbSnapshot#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/db_snapshot#tags DbSnapshot#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/db_snapshot#tags_all DbSnapshot#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/db_snapshot#tags_all DbSnapshot#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/db_snapshot#timeouts DbSnapshot#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/db_snapshot#timeouts DbSnapshot#timeouts}
   */
   readonly timeouts?: DbSnapshotTimeouts;
 }
 export interface DbSnapshotTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/db_snapshot#create DbSnapshot#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/db_snapshot#create DbSnapshot#create}
   */
   readonly create?: string;
 }
@@ -142,7 +148,7 @@ export class DbSnapshotTimeoutsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/db_snapshot aws_db_snapshot}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/db_snapshot aws_db_snapshot}
 */
 export class DbSnapshot extends cdktf.TerraformResource {
 
@@ -158,7 +164,7 @@ export class DbSnapshot extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a DbSnapshot resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DbSnapshot to import
-  * @param importFromId The id of the existing DbSnapshot that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/db_snapshot#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DbSnapshot that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/db_snapshot#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DbSnapshot to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -170,7 +176,7 @@ export class DbSnapshot extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/db_snapshot aws_db_snapshot} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/db_snapshot aws_db_snapshot} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -181,8 +187,8 @@ export class DbSnapshot extends cdktf.TerraformResource {
       terraformResourceType: 'aws_db_snapshot',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.100.0',
-        providerVersionConstraint: '~> 5.0'
+        providerVersion: '6.0.0',
+        providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -195,6 +201,7 @@ export class DbSnapshot extends cdktf.TerraformResource {
     this._dbInstanceIdentifier = config.dbInstanceIdentifier;
     this._dbSnapshotIdentifier = config.dbSnapshotIdentifier;
     this._id = config.id;
+    this._region = config.region;
     this._sharedAccounts = config.sharedAccounts;
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
@@ -302,6 +309,22 @@ export class DbSnapshot extends cdktf.TerraformResource {
     return this.getNumberAttribute('port');
   }
 
+  // region - computed: true, optional: true, required: false
+  private _region?: string; 
+  public get region() {
+    return this.getStringAttribute('region');
+  }
+  public set region(value: string) {
+    this._region = value;
+  }
+  public resetRegion() {
+    this._region = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get regionInput() {
+    return this._region;
+  }
+
   // shared_accounts - computed: false, optional: true, required: false
   private _sharedAccounts?: string[]; 
   public get sharedAccounts() {
@@ -405,6 +428,7 @@ export class DbSnapshot extends cdktf.TerraformResource {
       db_instance_identifier: cdktf.stringToTerraform(this._dbInstanceIdentifier),
       db_snapshot_identifier: cdktf.stringToTerraform(this._dbSnapshotIdentifier),
       id: cdktf.stringToTerraform(this._id),
+      region: cdktf.stringToTerraform(this._region),
       shared_accounts: cdktf.listMapper(cdktf.stringToTerraform, false)(this._sharedAccounts),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
@@ -428,6 +452,12 @@ export class DbSnapshot extends cdktf.TerraformResource {
       },
       id: {
         value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      region: {
+        value: cdktf.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

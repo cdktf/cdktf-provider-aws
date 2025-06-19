@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/auditmanager_framework
+// https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/auditmanager_framework
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,24 +13,24 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsAuditmanagerFrameworkConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/auditmanager_framework#framework_type DataAwsAuditmanagerFramework#framework_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/auditmanager_framework#framework_type DataAwsAuditmanagerFramework#framework_type}
   */
   readonly frameworkType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/auditmanager_framework#name DataAwsAuditmanagerFramework#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/auditmanager_framework#name DataAwsAuditmanagerFramework#name}
   */
   readonly name: string;
   /**
-  * control_sets block
+  * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/auditmanager_framework#control_sets DataAwsAuditmanagerFramework#control_sets}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/auditmanager_framework#region DataAwsAuditmanagerFramework#region}
   */
-  readonly controlSets?: DataAwsAuditmanagerFrameworkControlSets[] | cdktf.IResolvable;
+  readonly region?: string;
 }
 export interface DataAwsAuditmanagerFrameworkControlSetsControls {
 }
 
-export function dataAwsAuditmanagerFrameworkControlSetsControlsToTerraform(struct?: DataAwsAuditmanagerFrameworkControlSetsControls | cdktf.IResolvable): any {
+export function dataAwsAuditmanagerFrameworkControlSetsControlsToTerraform(struct?: DataAwsAuditmanagerFrameworkControlSetsControls): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -40,7 +40,7 @@ export function dataAwsAuditmanagerFrameworkControlSetsControlsToTerraform(struc
 }
 
 
-export function dataAwsAuditmanagerFrameworkControlSetsControlsToHclTerraform(struct?: DataAwsAuditmanagerFrameworkControlSetsControls | cdktf.IResolvable): any {
+export function dataAwsAuditmanagerFrameworkControlSetsControlsToHclTerraform(struct?: DataAwsAuditmanagerFrameworkControlSetsControls): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -52,7 +52,6 @@ export function dataAwsAuditmanagerFrameworkControlSetsControlsToHclTerraform(st
 
 export class DataAwsAuditmanagerFrameworkControlSetsControlsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -64,27 +63,18 @@ export class DataAwsAuditmanagerFrameworkControlSetsControlsOutputReference exte
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataAwsAuditmanagerFrameworkControlSetsControls | cdktf.IResolvable | undefined {
-    if (this.resolvableValue) {
-      return this.resolvableValue;
-    }
+  public get internalValue(): DataAwsAuditmanagerFrameworkControlSetsControls | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAwsAuditmanagerFrameworkControlSetsControls | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataAwsAuditmanagerFrameworkControlSetsControls | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-      this.resolvableValue = undefined;
-    }
-    else if (cdktf.Tokenization.isResolvable(value)) {
-      this.isEmptyObject = false;
-      this.resolvableValue = value;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
-      this.resolvableValue = undefined;
     }
   }
 
@@ -95,7 +85,6 @@ export class DataAwsAuditmanagerFrameworkControlSetsControlsOutputReference exte
 }
 
 export class DataAwsAuditmanagerFrameworkControlSetsControlsList extends cdktf.ComplexList {
-  public internalValue? : DataAwsAuditmanagerFrameworkControlSetsControls[] | cdktf.IResolvable
 
   /**
   * @param terraformResource The parent resource
@@ -114,46 +103,30 @@ export class DataAwsAuditmanagerFrameworkControlSetsControlsList extends cdktf.C
   }
 }
 export interface DataAwsAuditmanagerFrameworkControlSets {
-  /**
-  * controls block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/auditmanager_framework#controls DataAwsAuditmanagerFramework#controls}
-  */
-  readonly controls?: DataAwsAuditmanagerFrameworkControlSetsControls[] | cdktf.IResolvable;
 }
 
-export function dataAwsAuditmanagerFrameworkControlSetsToTerraform(struct?: DataAwsAuditmanagerFrameworkControlSets | cdktf.IResolvable): any {
+export function dataAwsAuditmanagerFrameworkControlSetsToTerraform(struct?: DataAwsAuditmanagerFrameworkControlSets): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    controls: cdktf.listMapper(dataAwsAuditmanagerFrameworkControlSetsControlsToTerraform, true)(struct!.controls),
   }
 }
 
 
-export function dataAwsAuditmanagerFrameworkControlSetsToHclTerraform(struct?: DataAwsAuditmanagerFrameworkControlSets | cdktf.IResolvable): any {
+export function dataAwsAuditmanagerFrameworkControlSetsToHclTerraform(struct?: DataAwsAuditmanagerFrameworkControlSets): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
-    controls: {
-      value: cdktf.listMapperHcl(dataAwsAuditmanagerFrameworkControlSetsControlsToHclTerraform, true)(struct!.controls),
-      isBlock: true,
-      type: "set",
-      storageClassType: "DataAwsAuditmanagerFrameworkControlSetsControlsList",
-    },
   };
-
-  // remove undefined attributes
-  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+  return attrs;
 }
 
 export class DataAwsAuditmanagerFrameworkControlSetsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -165,34 +138,25 @@ export class DataAwsAuditmanagerFrameworkControlSetsOutputReference extends cdkt
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataAwsAuditmanagerFrameworkControlSets | cdktf.IResolvable | undefined {
-    if (this.resolvableValue) {
-      return this.resolvableValue;
-    }
+  public get internalValue(): DataAwsAuditmanagerFrameworkControlSets | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._controls?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.controls = this._controls?.internalValue;
-    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAwsAuditmanagerFrameworkControlSets | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataAwsAuditmanagerFrameworkControlSets | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-      this.resolvableValue = undefined;
-      this._controls.internalValue = undefined;
-    }
-    else if (cdktf.Tokenization.isResolvable(value)) {
-      this.isEmptyObject = false;
-      this.resolvableValue = value;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
-      this.resolvableValue = undefined;
-      this._controls.internalValue = value.controls;
     }
+  }
+
+  // controls - computed: true, optional: false, required: false
+  private _controls = new DataAwsAuditmanagerFrameworkControlSetsControlsList(this, "controls", true);
+  public get controls() {
+    return this._controls;
   }
 
   // id - computed: true, optional: false, required: false
@@ -204,26 +168,9 @@ export class DataAwsAuditmanagerFrameworkControlSetsOutputReference extends cdkt
   public get name() {
     return this.getStringAttribute('name');
   }
-
-  // controls - computed: false, optional: true, required: false
-  private _controls = new DataAwsAuditmanagerFrameworkControlSetsControlsList(this, "controls", true);
-  public get controls() {
-    return this._controls;
-  }
-  public putControls(value: DataAwsAuditmanagerFrameworkControlSetsControls[] | cdktf.IResolvable) {
-    this._controls.internalValue = value;
-  }
-  public resetControls() {
-    this._controls.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get controlsInput() {
-    return this._controls.internalValue;
-  }
 }
 
 export class DataAwsAuditmanagerFrameworkControlSetsList extends cdktf.ComplexList {
-  public internalValue? : DataAwsAuditmanagerFrameworkControlSets[] | cdktf.IResolvable
 
   /**
   * @param terraformResource The parent resource
@@ -243,7 +190,7 @@ export class DataAwsAuditmanagerFrameworkControlSetsList extends cdktf.ComplexLi
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/auditmanager_framework aws_auditmanager_framework}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/auditmanager_framework aws_auditmanager_framework}
 */
 export class DataAwsAuditmanagerFramework extends cdktf.TerraformDataSource {
 
@@ -259,7 +206,7 @@ export class DataAwsAuditmanagerFramework extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataAwsAuditmanagerFramework resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsAuditmanagerFramework to import
-  * @param importFromId The id of the existing DataAwsAuditmanagerFramework that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/auditmanager_framework#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsAuditmanagerFramework that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/auditmanager_framework#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsAuditmanagerFramework to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -271,7 +218,7 @@ export class DataAwsAuditmanagerFramework extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/auditmanager_framework aws_auditmanager_framework} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/auditmanager_framework aws_auditmanager_framework} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -282,8 +229,8 @@ export class DataAwsAuditmanagerFramework extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_auditmanager_framework',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.100.0',
-        providerVersionConstraint: '~> 5.0'
+        providerVersion: '6.0.0',
+        providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -295,7 +242,7 @@ export class DataAwsAuditmanagerFramework extends cdktf.TerraformDataSource {
     });
     this._frameworkType = config.frameworkType;
     this._name = config.name;
-    this._controlSets.internalValue = config.controlSets;
+    this._region = config.region;
   }
 
   // ==========
@@ -310,6 +257,12 @@ export class DataAwsAuditmanagerFramework extends cdktf.TerraformDataSource {
   // compliance_type - computed: true, optional: false, required: false
   public get complianceType() {
     return this.getStringAttribute('compliance_type');
+  }
+
+  // control_sets - computed: true, optional: false, required: false
+  private _controlSets = new DataAwsAuditmanagerFrameworkControlSetsList(this, "control_sets", false);
+  public get controlSets() {
+    return this._controlSets;
   }
 
   // description - computed: true, optional: false, required: false
@@ -348,26 +301,26 @@ export class DataAwsAuditmanagerFramework extends cdktf.TerraformDataSource {
     return this._name;
   }
 
+  // region - computed: true, optional: true, required: false
+  private _region?: string; 
+  public get region() {
+    return this.getStringAttribute('region');
+  }
+  public set region(value: string) {
+    this._region = value;
+  }
+  public resetRegion() {
+    this._region = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get regionInput() {
+    return this._region;
+  }
+
   // tags - computed: true, optional: false, required: false
   private _tags = new cdktf.StringMap(this, "tags");
   public get tags() {
     return this._tags;
-  }
-
-  // control_sets - computed: false, optional: true, required: false
-  private _controlSets = new DataAwsAuditmanagerFrameworkControlSetsList(this, "control_sets", true);
-  public get controlSets() {
-    return this._controlSets;
-  }
-  public putControlSets(value: DataAwsAuditmanagerFrameworkControlSets[] | cdktf.IResolvable) {
-    this._controlSets.internalValue = value;
-  }
-  public resetControlSets() {
-    this._controlSets.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get controlSetsInput() {
-    return this._controlSets.internalValue;
   }
 
   // =========
@@ -378,7 +331,7 @@ export class DataAwsAuditmanagerFramework extends cdktf.TerraformDataSource {
     return {
       framework_type: cdktf.stringToTerraform(this._frameworkType),
       name: cdktf.stringToTerraform(this._name),
-      control_sets: cdktf.listMapper(dataAwsAuditmanagerFrameworkControlSetsToTerraform, true)(this._controlSets.internalValue),
+      region: cdktf.stringToTerraform(this._region),
     };
   }
 
@@ -396,11 +349,11 @@ export class DataAwsAuditmanagerFramework extends cdktf.TerraformDataSource {
         type: "simple",
         storageClassType: "string",
       },
-      control_sets: {
-        value: cdktf.listMapperHcl(dataAwsAuditmanagerFrameworkControlSetsToHclTerraform, true)(this._controlSets.internalValue),
-        isBlock: true,
-        type: "set",
-        storageClassType: "DataAwsAuditmanagerFrameworkControlSetsList",
+      region: {
+        value: cdktf.stringToHclTerraform(this._region),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
       },
     };
 

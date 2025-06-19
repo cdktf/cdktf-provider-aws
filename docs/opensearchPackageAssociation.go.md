@@ -4,12 +4,12 @@
 
 ### OpensearchPackageAssociation <a name="OpensearchPackageAssociation" id="@cdktf/provider-aws.opensearchPackageAssociation.OpensearchPackageAssociation"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/opensearch_package_association aws_opensearch_package_association}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/opensearch_package_association aws_opensearch_package_association}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opensearchPackageAssociation.OpensearchPackageAssociation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/opensearchpackageassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/opensearchpackageassociation"
 
 opensearchpackageassociation.NewOpensearchPackageAssociation(scope Construct, id *string, config OpensearchPackageAssociationConfig) OpensearchPackageAssociation
 ```
@@ -75,6 +75,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.opensearchPackageAssociation.OpensearchPackageAssociation.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-aws.opensearchPackageAssociation.OpensearchPackageAssociation.putTimeouts">PutTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.opensearchPackageAssociation.OpensearchPackageAssociation.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.opensearchPackageAssociation.OpensearchPackageAssociation.resetRegion">ResetRegion</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.opensearchPackageAssociation.OpensearchPackageAssociation.resetTimeouts">ResetTimeouts</a></code> | *No description.* |
 
 ---
@@ -385,6 +386,12 @@ func PutTimeouts(value OpensearchPackageAssociationTimeouts)
 func ResetId()
 ```
 
+##### `ResetRegion` <a name="ResetRegion" id="@cdktf/provider-aws.opensearchPackageAssociation.OpensearchPackageAssociation.resetRegion"></a>
+
+```go
+func ResetRegion()
+```
+
 ##### `ResetTimeouts` <a name="ResetTimeouts" id="@cdktf/provider-aws.opensearchPackageAssociation.OpensearchPackageAssociation.resetTimeouts"></a>
 
 ```go
@@ -405,7 +412,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.opensearchPackageAssociation.OpensearchPackageAssociation.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/opensearchpackageassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/opensearchpackageassociation"
 
 opensearchpackageassociation.OpensearchPackageAssociation_IsConstruct(x interface{}) *bool
 ```
@@ -437,7 +444,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.opensearchPackageAssociation.OpensearchPackageAssociation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/opensearchpackageassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/opensearchpackageassociation"
 
 opensearchpackageassociation.OpensearchPackageAssociation_IsTerraformElement(x interface{}) *bool
 ```
@@ -451,7 +458,7 @@ opensearchpackageassociation.OpensearchPackageAssociation_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.opensearchPackageAssociation.OpensearchPackageAssociation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/opensearchpackageassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/opensearchpackageassociation"
 
 opensearchpackageassociation.OpensearchPackageAssociation_IsTerraformResource(x interface{}) *bool
 ```
@@ -465,7 +472,7 @@ opensearchpackageassociation.OpensearchPackageAssociation_IsTerraformResource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.opensearchPackageAssociation.OpensearchPackageAssociation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/opensearchpackageassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/opensearchpackageassociation"
 
 opensearchpackageassociation.OpensearchPackageAssociation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -494,7 +501,7 @@ The construct id used in the generated config for the OpensearchPackageAssociati
 
 The id of the existing OpensearchPackageAssociation that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/opensearch_package_association#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/opensearch_package_association#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -529,10 +536,12 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.opensearchPackageAssociation.OpensearchPackageAssociation.property.domainNameInput">DomainNameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.opensearchPackageAssociation.OpensearchPackageAssociation.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.opensearchPackageAssociation.OpensearchPackageAssociation.property.packageIdInput">PackageIdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.opensearchPackageAssociation.OpensearchPackageAssociation.property.regionInput">RegionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.opensearchPackageAssociation.OpensearchPackageAssociation.property.timeoutsInput">TimeoutsInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.opensearchPackageAssociation.OpensearchPackageAssociation.property.domainName">DomainName</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.opensearchPackageAssociation.OpensearchPackageAssociation.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.opensearchPackageAssociation.OpensearchPackageAssociation.property.packageId">PackageId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.opensearchPackageAssociation.OpensearchPackageAssociation.property.region">Region</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
@@ -728,6 +737,16 @@ func PackageIdInput() *string
 
 ---
 
+##### `RegionInput`<sup>Optional</sup> <a name="RegionInput" id="@cdktf/provider-aws.opensearchPackageAssociation.OpensearchPackageAssociation.property.regionInput"></a>
+
+```go
+func RegionInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `TimeoutsInput`<sup>Optional</sup> <a name="TimeoutsInput" id="@cdktf/provider-aws.opensearchPackageAssociation.OpensearchPackageAssociation.property.timeoutsInput"></a>
 
 ```go
@@ -768,6 +787,16 @@ func PackageId() *string
 
 ---
 
+##### `Region`<sup>Required</sup> <a name="Region" id="@cdktf/provider-aws.opensearchPackageAssociation.OpensearchPackageAssociation.property.region"></a>
+
+```go
+func Region() *string
+```
+
+- *Type:* *string
+
+---
+
 #### Constants <a name="Constants" id="Constants"></a>
 
 | **Name** | **Type** | **Description** |
@@ -793,7 +822,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.opensearchPackageAssociation.OpensearchPackageAssociationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/opensearchpackageassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/opensearchpackageassociation"
 
 &opensearchpackageassociation.OpensearchPackageAssociationConfig {
 	Connection: interface{},
@@ -806,7 +835,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/opensearchpackageassociat
 	DomainName: *string,
 	PackageId: *string,
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v20.opensearchPackageAssociation.OpensearchPackageAssociationTimeouts,
+	Region: *string,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v21.opensearchPackageAssociation.OpensearchPackageAssociationTimeouts,
 }
 ```
 
@@ -821,9 +851,10 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/opensearchpackageassociat
 | <code><a href="#@cdktf/provider-aws.opensearchPackageAssociation.OpensearchPackageAssociationConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.opensearchPackageAssociation.OpensearchPackageAssociationConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.opensearchPackageAssociation.OpensearchPackageAssociationConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.opensearchPackageAssociation.OpensearchPackageAssociationConfig.property.domainName">DomainName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/opensearch_package_association#domain_name OpensearchPackageAssociation#domain_name}. |
-| <code><a href="#@cdktf/provider-aws.opensearchPackageAssociation.OpensearchPackageAssociationConfig.property.packageId">PackageId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/opensearch_package_association#package_id OpensearchPackageAssociation#package_id}. |
-| <code><a href="#@cdktf/provider-aws.opensearchPackageAssociation.OpensearchPackageAssociationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/opensearch_package_association#id OpensearchPackageAssociation#id}. |
+| <code><a href="#@cdktf/provider-aws.opensearchPackageAssociation.OpensearchPackageAssociationConfig.property.domainName">DomainName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/opensearch_package_association#domain_name OpensearchPackageAssociation#domain_name}. |
+| <code><a href="#@cdktf/provider-aws.opensearchPackageAssociation.OpensearchPackageAssociationConfig.property.packageId">PackageId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/opensearch_package_association#package_id OpensearchPackageAssociation#package_id}. |
+| <code><a href="#@cdktf/provider-aws.opensearchPackageAssociation.OpensearchPackageAssociationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/opensearch_package_association#id OpensearchPackageAssociation#id}. |
+| <code><a href="#@cdktf/provider-aws.opensearchPackageAssociation.OpensearchPackageAssociationConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktf/provider-aws.opensearchPackageAssociation.OpensearchPackageAssociationConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-aws.opensearchPackageAssociation.OpensearchPackageAssociationTimeouts">OpensearchPackageAssociationTimeouts</a></code> | timeouts block. |
 
 ---
@@ -906,7 +937,7 @@ DomainName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/opensearch_package_association#domain_name OpensearchPackageAssociation#domain_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/opensearch_package_association#domain_name OpensearchPackageAssociation#domain_name}.
 
 ---
 
@@ -918,7 +949,7 @@ PackageId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/opensearch_package_association#package_id OpensearchPackageAssociation#package_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/opensearch_package_association#package_id OpensearchPackageAssociation#package_id}.
 
 ---
 
@@ -930,10 +961,24 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/opensearch_package_association#id OpensearchPackageAssociation#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/opensearch_package_association#id OpensearchPackageAssociation#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `Region`<sup>Optional</sup> <a name="Region" id="@cdktf/provider-aws.opensearchPackageAssociation.OpensearchPackageAssociationConfig.property.region"></a>
+
+```go
+Region *string
+```
+
+- *Type:* *string
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/opensearch_package_association#region OpensearchPackageAssociation#region}
 
 ---
 
@@ -947,7 +992,7 @@ Timeouts OpensearchPackageAssociationTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/opensearch_package_association#timeouts OpensearchPackageAssociation#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/opensearch_package_association#timeouts OpensearchPackageAssociation#timeouts}
 
 ---
 
@@ -956,7 +1001,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.opensearchPackageAssociation.OpensearchPackageAssociationTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/opensearchpackageassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/opensearchpackageassociation"
 
 &opensearchpackageassociation.OpensearchPackageAssociationTimeouts {
 	Create: *string,
@@ -968,8 +1013,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/opensearchpackageassociat
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.opensearchPackageAssociation.OpensearchPackageAssociationTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/opensearch_package_association#create OpensearchPackageAssociation#create}. |
-| <code><a href="#@cdktf/provider-aws.opensearchPackageAssociation.OpensearchPackageAssociationTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/opensearch_package_association#delete OpensearchPackageAssociation#delete}. |
+| <code><a href="#@cdktf/provider-aws.opensearchPackageAssociation.OpensearchPackageAssociationTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/opensearch_package_association#create OpensearchPackageAssociation#create}. |
+| <code><a href="#@cdktf/provider-aws.opensearchPackageAssociation.OpensearchPackageAssociationTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/opensearch_package_association#delete OpensearchPackageAssociation#delete}. |
 
 ---
 
@@ -981,7 +1026,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/opensearch_package_association#create OpensearchPackageAssociation#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/opensearch_package_association#create OpensearchPackageAssociation#create}.
 
 ---
 
@@ -993,7 +1038,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/opensearch_package_association#delete OpensearchPackageAssociation#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/opensearch_package_association#delete OpensearchPackageAssociation#delete}.
 
 ---
 
@@ -1004,7 +1049,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opensearchPackageAssociation.OpensearchPackageAssociationTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/opensearchpackageassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/opensearchpackageassociation"
 
 opensearchpackageassociation.NewOpensearchPackageAssociationTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OpensearchPackageAssociationTimeoutsOutputReference
 ```

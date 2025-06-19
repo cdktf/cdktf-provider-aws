@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/network_interface
+// https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/network_interface
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,26 +13,32 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsNetworkInterfaceConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/network_interface#id DataAwsNetworkInterface#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/network_interface#id DataAwsNetworkInterface#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/network_interface#tags DataAwsNetworkInterface#tags}
+  * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/network_interface#region DataAwsNetworkInterface#region}
+  */
+  readonly region?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/network_interface#tags DataAwsNetworkInterface#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
   * filter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/network_interface#filter DataAwsNetworkInterface#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/network_interface#filter DataAwsNetworkInterface#filter}
   */
   readonly filter?: DataAwsNetworkInterfaceFilter[] | cdktf.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/network_interface#timeouts DataAwsNetworkInterface#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/network_interface#timeouts DataAwsNetworkInterface#timeouts}
   */
   readonly timeouts?: DataAwsNetworkInterfaceTimeouts;
 }
@@ -233,11 +239,11 @@ export class DataAwsNetworkInterfaceAttachmentList extends cdktf.ComplexList {
 }
 export interface DataAwsNetworkInterfaceFilter {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/network_interface#name DataAwsNetworkInterface#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/network_interface#name DataAwsNetworkInterface#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/network_interface#values DataAwsNetworkInterface#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/network_interface#values DataAwsNetworkInterface#values}
   */
   readonly values: string[];
 }
@@ -376,7 +382,7 @@ export class DataAwsNetworkInterfaceFilterList extends cdktf.ComplexList {
 }
 export interface DataAwsNetworkInterfaceTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/network_interface#read DataAwsNetworkInterface#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/network_interface#read DataAwsNetworkInterface#read}
   */
   readonly read?: string;
 }
@@ -470,7 +476,7 @@ export class DataAwsNetworkInterfaceTimeoutsOutputReference extends cdktf.Comple
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/network_interface aws_network_interface}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/network_interface aws_network_interface}
 */
 export class DataAwsNetworkInterface extends cdktf.TerraformDataSource {
 
@@ -486,7 +492,7 @@ export class DataAwsNetworkInterface extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataAwsNetworkInterface resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsNetworkInterface to import
-  * @param importFromId The id of the existing DataAwsNetworkInterface that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/network_interface#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsNetworkInterface that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/network_interface#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsNetworkInterface to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -498,7 +504,7 @@ export class DataAwsNetworkInterface extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/network_interface aws_network_interface} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/network_interface aws_network_interface} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -509,8 +515,8 @@ export class DataAwsNetworkInterface extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_network_interface',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.100.0',
-        providerVersionConstraint: '~> 5.0'
+        providerVersion: '6.0.0',
+        providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -521,6 +527,7 @@ export class DataAwsNetworkInterface extends cdktf.TerraformDataSource {
       forEach: config.forEach
     });
     this._id = config.id;
+    this._region = config.region;
     this._tags = config.tags;
     this._filter.internalValue = config.filter;
     this._timeouts.internalValue = config.timeouts;
@@ -613,6 +620,22 @@ export class DataAwsNetworkInterface extends cdktf.TerraformDataSource {
     return this.getListAttribute('private_ips');
   }
 
+  // region - computed: true, optional: true, required: false
+  private _region?: string; 
+  public get region() {
+    return this.getStringAttribute('region');
+  }
+  public set region(value: string) {
+    this._region = value;
+  }
+  public resetRegion() {
+    this._region = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get regionInput() {
+    return this._region;
+  }
+
   // requester_id - computed: true, optional: false, required: false
   public get requesterId() {
     return this.getStringAttribute('requester_id');
@@ -688,6 +711,7 @@ export class DataAwsNetworkInterface extends cdktf.TerraformDataSource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       id: cdktf.stringToTerraform(this._id),
+      region: cdktf.stringToTerraform(this._region),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       filter: cdktf.listMapper(dataAwsNetworkInterfaceFilterToTerraform, true)(this._filter.internalValue),
       timeouts: dataAwsNetworkInterfaceTimeoutsToTerraform(this._timeouts.internalValue),
@@ -698,6 +722,12 @@ export class DataAwsNetworkInterface extends cdktf.TerraformDataSource {
     const attrs = {
       id: {
         value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      region: {
+        value: cdktf.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -4,7 +4,7 @@
 
 ### DataexchangeDataSet <a name="DataexchangeDataSet" id="@cdktf/provider-aws.dataexchangeDataSet.DataexchangeDataSet"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/dataexchange_data_set aws_dataexchange_data_set}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/dataexchange_data_set aws_dataexchange_data_set}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataexchangeDataSet.DataexchangeDataSet.Initializer"></a>
 
@@ -74,6 +74,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.dataexchangeDataSet.DataexchangeDataSet.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-aws.dataexchangeDataSet.DataexchangeDataSet.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-aws.dataexchangeDataSet.DataexchangeDataSet.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataexchangeDataSet.DataexchangeDataSet.resetRegion">resetRegion</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataexchangeDataSet.DataexchangeDataSet.resetTags">resetTags</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataexchangeDataSet.DataexchangeDataSet.resetTagsAll">resetTagsAll</a></code> | *No description.* |
 
@@ -373,6 +374,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 public resetId(): void
 ```
 
+##### `resetRegion` <a name="resetRegion" id="@cdktf/provider-aws.dataexchangeDataSet.DataexchangeDataSet.resetRegion"></a>
+
+```typescript
+public resetRegion(): void
+```
+
 ##### `resetTags` <a name="resetTags" id="@cdktf/provider-aws.dataexchangeDataSet.DataexchangeDataSet.resetTags"></a>
 
 ```typescript
@@ -488,7 +495,7 @@ The construct id used in the generated config for the DataexchangeDataSet to imp
 
 The id of the existing DataexchangeDataSet that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/dataexchange_data_set#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/dataexchange_data_set#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -523,12 +530,14 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.dataexchangeDataSet.DataexchangeDataSet.property.descriptionInput">descriptionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataexchangeDataSet.DataexchangeDataSet.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataexchangeDataSet.DataexchangeDataSet.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataexchangeDataSet.DataexchangeDataSet.property.regionInput">regionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataexchangeDataSet.DataexchangeDataSet.property.tagsAllInput">tagsAllInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataexchangeDataSet.DataexchangeDataSet.property.tagsInput">tagsInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataexchangeDataSet.DataexchangeDataSet.property.assetType">assetType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataexchangeDataSet.DataexchangeDataSet.property.description">description</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataexchangeDataSet.DataexchangeDataSet.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataexchangeDataSet.DataexchangeDataSet.property.name">name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataexchangeDataSet.DataexchangeDataSet.property.region">region</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataexchangeDataSet.DataexchangeDataSet.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataexchangeDataSet.DataexchangeDataSet.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 
@@ -726,6 +735,16 @@ public readonly nameInput: string;
 
 ---
 
+##### `regionInput`<sup>Optional</sup> <a name="regionInput" id="@cdktf/provider-aws.dataexchangeDataSet.DataexchangeDataSet.property.regionInput"></a>
+
+```typescript
+public readonly regionInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `tagsAllInput`<sup>Optional</sup> <a name="tagsAllInput" id="@cdktf/provider-aws.dataexchangeDataSet.DataexchangeDataSet.property.tagsAllInput"></a>
 
 ```typescript
@@ -780,6 +799,16 @@ public readonly id: string;
 
 ```typescript
 public readonly name: string;
+```
+
+- *Type:* string
+
+---
+
+##### `region`<sup>Required</sup> <a name="region" id="@cdktf/provider-aws.dataexchangeDataSet.DataexchangeDataSet.property.region"></a>
+
+```typescript
+public readonly region: string;
 ```
 
 - *Type:* string
@@ -847,12 +876,13 @@ const dataexchangeDataSetConfig: dataexchangeDataSet.DataexchangeDataSetConfig =
 | <code><a href="#@cdktf/provider-aws.dataexchangeDataSet.DataexchangeDataSetConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataexchangeDataSet.DataexchangeDataSetConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataexchangeDataSet.DataexchangeDataSetConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataexchangeDataSet.DataexchangeDataSetConfig.property.assetType">assetType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/dataexchange_data_set#asset_type DataexchangeDataSet#asset_type}. |
-| <code><a href="#@cdktf/provider-aws.dataexchangeDataSet.DataexchangeDataSetConfig.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/dataexchange_data_set#description DataexchangeDataSet#description}. |
-| <code><a href="#@cdktf/provider-aws.dataexchangeDataSet.DataexchangeDataSetConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/dataexchange_data_set#name DataexchangeDataSet#name}. |
-| <code><a href="#@cdktf/provider-aws.dataexchangeDataSet.DataexchangeDataSetConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/dataexchange_data_set#id DataexchangeDataSet#id}. |
-| <code><a href="#@cdktf/provider-aws.dataexchangeDataSet.DataexchangeDataSetConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/dataexchange_data_set#tags DataexchangeDataSet#tags}. |
-| <code><a href="#@cdktf/provider-aws.dataexchangeDataSet.DataexchangeDataSetConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/dataexchange_data_set#tags_all DataexchangeDataSet#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.dataexchangeDataSet.DataexchangeDataSetConfig.property.assetType">assetType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/dataexchange_data_set#asset_type DataexchangeDataSet#asset_type}. |
+| <code><a href="#@cdktf/provider-aws.dataexchangeDataSet.DataexchangeDataSetConfig.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/dataexchange_data_set#description DataexchangeDataSet#description}. |
+| <code><a href="#@cdktf/provider-aws.dataexchangeDataSet.DataexchangeDataSetConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/dataexchange_data_set#name DataexchangeDataSet#name}. |
+| <code><a href="#@cdktf/provider-aws.dataexchangeDataSet.DataexchangeDataSetConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/dataexchange_data_set#id DataexchangeDataSet#id}. |
+| <code><a href="#@cdktf/provider-aws.dataexchangeDataSet.DataexchangeDataSetConfig.property.region">region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
+| <code><a href="#@cdktf/provider-aws.dataexchangeDataSet.DataexchangeDataSetConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/dataexchange_data_set#tags DataexchangeDataSet#tags}. |
+| <code><a href="#@cdktf/provider-aws.dataexchangeDataSet.DataexchangeDataSetConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/dataexchange_data_set#tags_all DataexchangeDataSet#tags_all}. |
 
 ---
 
@@ -934,7 +964,7 @@ public readonly assetType: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/dataexchange_data_set#asset_type DataexchangeDataSet#asset_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/dataexchange_data_set#asset_type DataexchangeDataSet#asset_type}.
 
 ---
 
@@ -946,7 +976,7 @@ public readonly description: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/dataexchange_data_set#description DataexchangeDataSet#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/dataexchange_data_set#description DataexchangeDataSet#description}.
 
 ---
 
@@ -958,7 +988,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/dataexchange_data_set#name DataexchangeDataSet#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/dataexchange_data_set#name DataexchangeDataSet#name}.
 
 ---
 
@@ -970,10 +1000,24 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/dataexchange_data_set#id DataexchangeDataSet#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/dataexchange_data_set#id DataexchangeDataSet#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdktf/provider-aws.dataexchangeDataSet.DataexchangeDataSetConfig.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/dataexchange_data_set#region DataexchangeDataSet#region}
 
 ---
 
@@ -985,7 +1029,7 @@ public readonly tags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/dataexchange_data_set#tags DataexchangeDataSet#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/dataexchange_data_set#tags DataexchangeDataSet#tags}.
 
 ---
 
@@ -997,7 +1041,7 @@ public readonly tagsAll: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/dataexchange_data_set#tags_all DataexchangeDataSet#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/dataexchange_data_set#tags_all DataexchangeDataSet#tags_all}.
 
 ---
 

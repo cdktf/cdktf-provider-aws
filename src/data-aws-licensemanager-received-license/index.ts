@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/licensemanager_received_license
+// https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/licensemanager_received_license
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,16 +13,22 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsLicensemanagerReceivedLicenseConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/licensemanager_received_license#id DataAwsLicensemanagerReceivedLicense#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/licensemanager_received_license#id DataAwsLicensemanagerReceivedLicense#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/licensemanager_received_license#license_arn DataAwsLicensemanagerReceivedLicense#license_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/licensemanager_received_license#license_arn DataAwsLicensemanagerReceivedLicense#license_arn}
   */
   readonly licenseArn: string;
+  /**
+  * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/licensemanager_received_license#region DataAwsLicensemanagerReceivedLicense#region}
+  */
+  readonly region?: string;
 }
 export interface DataAwsLicensemanagerReceivedLicenseConsumptionConfigurationBorrowConfiguration {
 }
@@ -698,7 +704,7 @@ export class DataAwsLicensemanagerReceivedLicenseValidityList extends cdktf.Comp
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/licensemanager_received_license aws_licensemanager_received_license}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/licensemanager_received_license aws_licensemanager_received_license}
 */
 export class DataAwsLicensemanagerReceivedLicense extends cdktf.TerraformDataSource {
 
@@ -714,7 +720,7 @@ export class DataAwsLicensemanagerReceivedLicense extends cdktf.TerraformDataSou
   * Generates CDKTF code for importing a DataAwsLicensemanagerReceivedLicense resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsLicensemanagerReceivedLicense to import
-  * @param importFromId The id of the existing DataAwsLicensemanagerReceivedLicense that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/licensemanager_received_license#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsLicensemanagerReceivedLicense that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/licensemanager_received_license#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsLicensemanagerReceivedLicense to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -726,7 +732,7 @@ export class DataAwsLicensemanagerReceivedLicense extends cdktf.TerraformDataSou
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/licensemanager_received_license aws_licensemanager_received_license} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/licensemanager_received_license aws_licensemanager_received_license} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -737,8 +743,8 @@ export class DataAwsLicensemanagerReceivedLicense extends cdktf.TerraformDataSou
       terraformResourceType: 'aws_licensemanager_received_license',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.100.0',
-        providerVersionConstraint: '~> 5.0'
+        providerVersion: '6.0.0',
+        providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -750,6 +756,7 @@ export class DataAwsLicensemanagerReceivedLicense extends cdktf.TerraformDataSou
     });
     this._id = config.id;
     this._licenseArn = config.licenseArn;
+    this._region = config.region;
   }
 
   // ==========
@@ -845,6 +852,22 @@ export class DataAwsLicensemanagerReceivedLicense extends cdktf.TerraformDataSou
     return this._receivedMetadata;
   }
 
+  // region - computed: true, optional: true, required: false
+  private _region?: string; 
+  public get region() {
+    return this.getStringAttribute('region');
+  }
+  public set region(value: string) {
+    this._region = value;
+  }
+  public resetRegion() {
+    this._region = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get regionInput() {
+    return this._region;
+  }
+
   // status - computed: true, optional: false, required: false
   public get status() {
     return this.getStringAttribute('status');
@@ -869,6 +892,7 @@ export class DataAwsLicensemanagerReceivedLicense extends cdktf.TerraformDataSou
     return {
       id: cdktf.stringToTerraform(this._id),
       license_arn: cdktf.stringToTerraform(this._licenseArn),
+      region: cdktf.stringToTerraform(this._region),
     };
   }
 
@@ -882,6 +906,12 @@ export class DataAwsLicensemanagerReceivedLicense extends cdktf.TerraformDataSou
       },
       license_arn: {
         value: cdktf.stringToHclTerraform(this._licenseArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      region: {
+        value: cdktf.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appsync_api_cache
+// https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appsync_api_cache
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,40 +13,46 @@ import * as cdktf from 'cdktf';
 
 export interface AppsyncApiCacheConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appsync_api_cache#api_caching_behavior AppsyncApiCache#api_caching_behavior}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appsync_api_cache#api_caching_behavior AppsyncApiCache#api_caching_behavior}
   */
   readonly apiCachingBehavior: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appsync_api_cache#api_id AppsyncApiCache#api_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appsync_api_cache#api_id AppsyncApiCache#api_id}
   */
   readonly apiId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appsync_api_cache#at_rest_encryption_enabled AppsyncApiCache#at_rest_encryption_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appsync_api_cache#at_rest_encryption_enabled AppsyncApiCache#at_rest_encryption_enabled}
   */
   readonly atRestEncryptionEnabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appsync_api_cache#id AppsyncApiCache#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appsync_api_cache#id AppsyncApiCache#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appsync_api_cache#transit_encryption_enabled AppsyncApiCache#transit_encryption_enabled}
+  * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appsync_api_cache#region AppsyncApiCache#region}
+  */
+  readonly region?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appsync_api_cache#transit_encryption_enabled AppsyncApiCache#transit_encryption_enabled}
   */
   readonly transitEncryptionEnabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appsync_api_cache#ttl AppsyncApiCache#ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appsync_api_cache#ttl AppsyncApiCache#ttl}
   */
   readonly ttl: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appsync_api_cache#type AppsyncApiCache#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appsync_api_cache#type AppsyncApiCache#type}
   */
   readonly type: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appsync_api_cache aws_appsync_api_cache}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appsync_api_cache aws_appsync_api_cache}
 */
 export class AppsyncApiCache extends cdktf.TerraformResource {
 
@@ -62,7 +68,7 @@ export class AppsyncApiCache extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a AppsyncApiCache resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AppsyncApiCache to import
-  * @param importFromId The id of the existing AppsyncApiCache that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appsync_api_cache#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing AppsyncApiCache that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appsync_api_cache#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AppsyncApiCache to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -74,7 +80,7 @@ export class AppsyncApiCache extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appsync_api_cache aws_appsync_api_cache} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appsync_api_cache aws_appsync_api_cache} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -85,8 +91,8 @@ export class AppsyncApiCache extends cdktf.TerraformResource {
       terraformResourceType: 'aws_appsync_api_cache',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.100.0',
-        providerVersionConstraint: '~> 5.0'
+        providerVersion: '6.0.0',
+        providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -100,6 +106,7 @@ export class AppsyncApiCache extends cdktf.TerraformResource {
     this._apiId = config.apiId;
     this._atRestEncryptionEnabled = config.atRestEncryptionEnabled;
     this._id = config.id;
+    this._region = config.region;
     this._transitEncryptionEnabled = config.transitEncryptionEnabled;
     this._ttl = config.ttl;
     this._type = config.type;
@@ -167,6 +174,22 @@ export class AppsyncApiCache extends cdktf.TerraformResource {
     return this._id;
   }
 
+  // region - computed: true, optional: true, required: false
+  private _region?: string; 
+  public get region() {
+    return this.getStringAttribute('region');
+  }
+  public set region(value: string) {
+    this._region = value;
+  }
+  public resetRegion() {
+    this._region = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get regionInput() {
+    return this._region;
+  }
+
   // transit_encryption_enabled - computed: false, optional: true, required: false
   private _transitEncryptionEnabled?: boolean | cdktf.IResolvable; 
   public get transitEncryptionEnabled() {
@@ -219,6 +242,7 @@ export class AppsyncApiCache extends cdktf.TerraformResource {
       api_id: cdktf.stringToTerraform(this._apiId),
       at_rest_encryption_enabled: cdktf.booleanToTerraform(this._atRestEncryptionEnabled),
       id: cdktf.stringToTerraform(this._id),
+      region: cdktf.stringToTerraform(this._region),
       transit_encryption_enabled: cdktf.booleanToTerraform(this._transitEncryptionEnabled),
       ttl: cdktf.numberToTerraform(this._ttl),
       type: cdktf.stringToTerraform(this._type),
@@ -247,6 +271,12 @@ export class AppsyncApiCache extends cdktf.TerraformResource {
       },
       id: {
         value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      region: {
+        value: cdktf.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

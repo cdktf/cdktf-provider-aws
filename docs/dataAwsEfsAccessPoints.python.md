@@ -4,7 +4,7 @@
 
 ### DataAwsEfsAccessPoints <a name="DataAwsEfsAccessPoints" id="@cdktf/provider-aws.dataAwsEfsAccessPoints.DataAwsEfsAccessPoints"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/efs_access_points aws_efs_access_points}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/efs_access_points aws_efs_access_points}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEfsAccessPoints.DataAwsEfsAccessPoints.Initializer"></a>
 
@@ -22,7 +22,8 @@ dataAwsEfsAccessPoints.DataAwsEfsAccessPoints(
   provider: TerraformProvider = None,
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
   file_system_id: str,
-  id: str = None
+  id: str = None,
+  region: str = None
 )
 ```
 
@@ -37,8 +38,9 @@ dataAwsEfsAccessPoints.DataAwsEfsAccessPoints(
 | <code><a href="#@cdktf/provider-aws.dataAwsEfsAccessPoints.DataAwsEfsAccessPoints.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsEfsAccessPoints.DataAwsEfsAccessPoints.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsEfsAccessPoints.DataAwsEfsAccessPoints.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsEfsAccessPoints.DataAwsEfsAccessPoints.Initializer.parameter.fileSystemId">file_system_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/efs_access_points#file_system_id DataAwsEfsAccessPoints#file_system_id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsEfsAccessPoints.DataAwsEfsAccessPoints.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/efs_access_points#id DataAwsEfsAccessPoints#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsEfsAccessPoints.DataAwsEfsAccessPoints.Initializer.parameter.fileSystemId">file_system_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/efs_access_points#file_system_id DataAwsEfsAccessPoints#file_system_id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsEfsAccessPoints.DataAwsEfsAccessPoints.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/efs_access_points#id DataAwsEfsAccessPoints#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsEfsAccessPoints.DataAwsEfsAccessPoints.Initializer.parameter.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
 
@@ -106,7 +108,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/efs_access_points#file_system_id DataAwsEfsAccessPoints#file_system_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/efs_access_points#file_system_id DataAwsEfsAccessPoints#file_system_id}.
 
 ---
 
@@ -114,10 +116,20 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/efs_access_points#id DataAwsEfsAccessPoints#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/efs_access_points#id DataAwsEfsAccessPoints#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdktf/provider-aws.dataAwsEfsAccessPoints.DataAwsEfsAccessPoints.Initializer.parameter.region"></a>
+
+- *Type:* str
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/efs_access_points#region DataAwsEfsAccessPoints#region}
 
 ---
 
@@ -143,6 +155,7 @@ If you experience problems setting this value it might not be settable. Please t
 | <code><a href="#@cdktf/provider-aws.dataAwsEfsAccessPoints.DataAwsEfsAccessPoints.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsEfsAccessPoints.DataAwsEfsAccessPoints.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsEfsAccessPoints.DataAwsEfsAccessPoints.resetId">reset_id</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsEfsAccessPoints.DataAwsEfsAccessPoints.resetRegion">reset_region</a></code> | *No description.* |
 
 ---
 
@@ -369,6 +382,12 @@ def interpolation_for_attribute(
 def reset_id() -> None
 ```
 
+##### `reset_region` <a name="reset_region" id="@cdktf/provider-aws.dataAwsEfsAccessPoints.DataAwsEfsAccessPoints.resetRegion"></a>
+
+```python
+def reset_region() -> None
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -483,7 +502,7 @@ The construct id used in the generated config for the DataAwsEfsAccessPoints to 
 
 The id of the existing DataAwsEfsAccessPoints that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/efs_access_points#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/efs_access_points#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -515,8 +534,10 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.dataAwsEfsAccessPoints.DataAwsEfsAccessPoints.property.ids">ids</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsEfsAccessPoints.DataAwsEfsAccessPoints.property.fileSystemIdInput">file_system_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsEfsAccessPoints.DataAwsEfsAccessPoints.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsEfsAccessPoints.DataAwsEfsAccessPoints.property.regionInput">region_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsEfsAccessPoints.DataAwsEfsAccessPoints.property.fileSystemId">file_system_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsEfsAccessPoints.DataAwsEfsAccessPoints.property.id">id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsEfsAccessPoints.DataAwsEfsAccessPoints.property.region">region</a></code> | <code>str</code> | *No description.* |
 
 ---
 
@@ -682,6 +703,16 @@ id_input: str
 
 ---
 
+##### `region_input`<sup>Optional</sup> <a name="region_input" id="@cdktf/provider-aws.dataAwsEfsAccessPoints.DataAwsEfsAccessPoints.property.regionInput"></a>
+
+```python
+region_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `file_system_id`<sup>Required</sup> <a name="file_system_id" id="@cdktf/provider-aws.dataAwsEfsAccessPoints.DataAwsEfsAccessPoints.property.fileSystemId"></a>
 
 ```python
@@ -696,6 +727,16 @@ file_system_id: str
 
 ```python
 id: str
+```
+
+- *Type:* str
+
+---
+
+##### `region`<sup>Required</sup> <a name="region" id="@cdktf/provider-aws.dataAwsEfsAccessPoints.DataAwsEfsAccessPoints.property.region"></a>
+
+```python
+region: str
 ```
 
 - *Type:* str
@@ -738,7 +779,8 @@ dataAwsEfsAccessPoints.DataAwsEfsAccessPointsConfig(
   provider: TerraformProvider = None,
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
   file_system_id: str,
-  id: str = None
+  id: str = None,
+  region: str = None
 )
 ```
 
@@ -753,8 +795,9 @@ dataAwsEfsAccessPoints.DataAwsEfsAccessPointsConfig(
 | <code><a href="#@cdktf/provider-aws.dataAwsEfsAccessPoints.DataAwsEfsAccessPointsConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsEfsAccessPoints.DataAwsEfsAccessPointsConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsEfsAccessPoints.DataAwsEfsAccessPointsConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsEfsAccessPoints.DataAwsEfsAccessPointsConfig.property.fileSystemId">file_system_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/efs_access_points#file_system_id DataAwsEfsAccessPoints#file_system_id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsEfsAccessPoints.DataAwsEfsAccessPointsConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/efs_access_points#id DataAwsEfsAccessPoints#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsEfsAccessPoints.DataAwsEfsAccessPointsConfig.property.fileSystemId">file_system_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/efs_access_points#file_system_id DataAwsEfsAccessPoints#file_system_id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsEfsAccessPoints.DataAwsEfsAccessPointsConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/efs_access_points#id DataAwsEfsAccessPoints#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsEfsAccessPoints.DataAwsEfsAccessPointsConfig.property.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
 
@@ -836,7 +879,7 @@ file_system_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/efs_access_points#file_system_id DataAwsEfsAccessPoints#file_system_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/efs_access_points#file_system_id DataAwsEfsAccessPoints#file_system_id}.
 
 ---
 
@@ -848,10 +891,24 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/efs_access_points#id DataAwsEfsAccessPoints#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/efs_access_points#id DataAwsEfsAccessPoints#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdktf/provider-aws.dataAwsEfsAccessPoints.DataAwsEfsAccessPointsConfig.property.region"></a>
+
+```python
+region: str
+```
+
+- *Type:* str
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/efs_access_points#region DataAwsEfsAccessPoints#region}
 
 ---
 

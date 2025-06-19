@@ -4,7 +4,7 @@
 
 ### FinspaceKxScalingGroup <a name="FinspaceKxScalingGroup" id="@cdktf/provider-aws.finspaceKxScalingGroup.FinspaceKxScalingGroup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/finspace_kx_scaling_group aws_finspace_kx_scaling_group}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/finspace_kx_scaling_group aws_finspace_kx_scaling_group}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.finspaceKxScalingGroup.FinspaceKxScalingGroup.Initializer"></a>
 
@@ -75,6 +75,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.finspaceKxScalingGroup.FinspaceKxScalingGroup.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-aws.finspaceKxScalingGroup.FinspaceKxScalingGroup.putTimeouts">PutTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.finspaceKxScalingGroup.FinspaceKxScalingGroup.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.finspaceKxScalingGroup.FinspaceKxScalingGroup.resetRegion">ResetRegion</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.finspaceKxScalingGroup.FinspaceKxScalingGroup.resetTags">ResetTags</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.finspaceKxScalingGroup.FinspaceKxScalingGroup.resetTagsAll">ResetTagsAll</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.finspaceKxScalingGroup.FinspaceKxScalingGroup.resetTimeouts">ResetTimeouts</a></code> | *No description.* |
@@ -387,6 +388,12 @@ private void PutTimeouts(FinspaceKxScalingGroupTimeouts Value)
 private void ResetId()
 ```
 
+##### `ResetRegion` <a name="ResetRegion" id="@cdktf/provider-aws.finspaceKxScalingGroup.FinspaceKxScalingGroup.resetRegion"></a>
+
+```csharp
+private void ResetRegion()
+```
+
 ##### `ResetTags` <a name="ResetTags" id="@cdktf/provider-aws.finspaceKxScalingGroup.FinspaceKxScalingGroup.resetTags"></a>
 
 ```csharp
@@ -508,7 +515,7 @@ The construct id used in the generated config for the FinspaceKxScalingGroup to 
 
 The id of the existing FinspaceKxScalingGroup that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/finspace_kx_scaling_group#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/finspace_kx_scaling_group#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -550,6 +557,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.finspaceKxScalingGroup.FinspaceKxScalingGroup.property.hostTypeInput">HostTypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.finspaceKxScalingGroup.FinspaceKxScalingGroup.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.finspaceKxScalingGroup.FinspaceKxScalingGroup.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.finspaceKxScalingGroup.FinspaceKxScalingGroup.property.regionInput">RegionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.finspaceKxScalingGroup.FinspaceKxScalingGroup.property.tagsAllInput">TagsAllInput</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.finspaceKxScalingGroup.FinspaceKxScalingGroup.property.tagsInput">TagsInput</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.finspaceKxScalingGroup.FinspaceKxScalingGroup.property.timeoutsInput">TimeoutsInput</a></code> | <code>object</code> | *No description.* |
@@ -558,6 +566,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.finspaceKxScalingGroup.FinspaceKxScalingGroup.property.hostType">HostType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.finspaceKxScalingGroup.FinspaceKxScalingGroup.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.finspaceKxScalingGroup.FinspaceKxScalingGroup.property.name">Name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.finspaceKxScalingGroup.FinspaceKxScalingGroup.property.region">Region</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.finspaceKxScalingGroup.FinspaceKxScalingGroup.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.finspaceKxScalingGroup.FinspaceKxScalingGroup.property.tagsAll">TagsAll</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
 
@@ -825,6 +834,16 @@ public string NameInput { get; }
 
 ---
 
+##### `RegionInput`<sup>Optional</sup> <a name="RegionInput" id="@cdktf/provider-aws.finspaceKxScalingGroup.FinspaceKxScalingGroup.property.regionInput"></a>
+
+```csharp
+public string RegionInput { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `TagsAllInput`<sup>Optional</sup> <a name="TagsAllInput" id="@cdktf/provider-aws.finspaceKxScalingGroup.FinspaceKxScalingGroup.property.tagsAllInput"></a>
 
 ```csharp
@@ -905,6 +924,16 @@ public string Name { get; }
 
 ---
 
+##### `Region`<sup>Required</sup> <a name="Region" id="@cdktf/provider-aws.finspaceKxScalingGroup.FinspaceKxScalingGroup.property.region"></a>
+
+```csharp
+public string Region { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `Tags`<sup>Required</sup> <a name="Tags" id="@cdktf/provider-aws.finspaceKxScalingGroup.FinspaceKxScalingGroup.property.tags"></a>
 
 ```csharp
@@ -965,6 +994,7 @@ new FinspaceKxScalingGroupConfig {
     string HostType,
     string Name,
     string Id = null,
+    string Region = null,
     System.Collections.Generic.IDictionary<string, string> Tags = null,
     System.Collections.Generic.IDictionary<string, string> TagsAll = null,
     FinspaceKxScalingGroupTimeouts Timeouts = null
@@ -982,13 +1012,14 @@ new FinspaceKxScalingGroupConfig {
 | <code><a href="#@cdktf/provider-aws.finspaceKxScalingGroup.FinspaceKxScalingGroupConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.finspaceKxScalingGroup.FinspaceKxScalingGroupConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.finspaceKxScalingGroup.FinspaceKxScalingGroupConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.finspaceKxScalingGroup.FinspaceKxScalingGroupConfig.property.availabilityZoneId">AvailabilityZoneId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/finspace_kx_scaling_group#availability_zone_id FinspaceKxScalingGroup#availability_zone_id}. |
-| <code><a href="#@cdktf/provider-aws.finspaceKxScalingGroup.FinspaceKxScalingGroupConfig.property.environmentId">EnvironmentId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/finspace_kx_scaling_group#environment_id FinspaceKxScalingGroup#environment_id}. |
-| <code><a href="#@cdktf/provider-aws.finspaceKxScalingGroup.FinspaceKxScalingGroupConfig.property.hostType">HostType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/finspace_kx_scaling_group#host_type FinspaceKxScalingGroup#host_type}. |
-| <code><a href="#@cdktf/provider-aws.finspaceKxScalingGroup.FinspaceKxScalingGroupConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/finspace_kx_scaling_group#name FinspaceKxScalingGroup#name}. |
-| <code><a href="#@cdktf/provider-aws.finspaceKxScalingGroup.FinspaceKxScalingGroupConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/finspace_kx_scaling_group#id FinspaceKxScalingGroup#id}. |
-| <code><a href="#@cdktf/provider-aws.finspaceKxScalingGroup.FinspaceKxScalingGroupConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/finspace_kx_scaling_group#tags FinspaceKxScalingGroup#tags}. |
-| <code><a href="#@cdktf/provider-aws.finspaceKxScalingGroup.FinspaceKxScalingGroupConfig.property.tagsAll">TagsAll</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/finspace_kx_scaling_group#tags_all FinspaceKxScalingGroup#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.finspaceKxScalingGroup.FinspaceKxScalingGroupConfig.property.availabilityZoneId">AvailabilityZoneId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/finspace_kx_scaling_group#availability_zone_id FinspaceKxScalingGroup#availability_zone_id}. |
+| <code><a href="#@cdktf/provider-aws.finspaceKxScalingGroup.FinspaceKxScalingGroupConfig.property.environmentId">EnvironmentId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/finspace_kx_scaling_group#environment_id FinspaceKxScalingGroup#environment_id}. |
+| <code><a href="#@cdktf/provider-aws.finspaceKxScalingGroup.FinspaceKxScalingGroupConfig.property.hostType">HostType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/finspace_kx_scaling_group#host_type FinspaceKxScalingGroup#host_type}. |
+| <code><a href="#@cdktf/provider-aws.finspaceKxScalingGroup.FinspaceKxScalingGroupConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/finspace_kx_scaling_group#name FinspaceKxScalingGroup#name}. |
+| <code><a href="#@cdktf/provider-aws.finspaceKxScalingGroup.FinspaceKxScalingGroupConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/finspace_kx_scaling_group#id FinspaceKxScalingGroup#id}. |
+| <code><a href="#@cdktf/provider-aws.finspaceKxScalingGroup.FinspaceKxScalingGroupConfig.property.region">Region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
+| <code><a href="#@cdktf/provider-aws.finspaceKxScalingGroup.FinspaceKxScalingGroupConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/finspace_kx_scaling_group#tags FinspaceKxScalingGroup#tags}. |
+| <code><a href="#@cdktf/provider-aws.finspaceKxScalingGroup.FinspaceKxScalingGroupConfig.property.tagsAll">TagsAll</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/finspace_kx_scaling_group#tags_all FinspaceKxScalingGroup#tags_all}. |
 | <code><a href="#@cdktf/provider-aws.finspaceKxScalingGroup.FinspaceKxScalingGroupConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-aws.finspaceKxScalingGroup.FinspaceKxScalingGroupTimeouts">FinspaceKxScalingGroupTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1071,7 +1102,7 @@ public string AvailabilityZoneId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/finspace_kx_scaling_group#availability_zone_id FinspaceKxScalingGroup#availability_zone_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/finspace_kx_scaling_group#availability_zone_id FinspaceKxScalingGroup#availability_zone_id}.
 
 ---
 
@@ -1083,7 +1114,7 @@ public string EnvironmentId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/finspace_kx_scaling_group#environment_id FinspaceKxScalingGroup#environment_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/finspace_kx_scaling_group#environment_id FinspaceKxScalingGroup#environment_id}.
 
 ---
 
@@ -1095,7 +1126,7 @@ public string HostType { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/finspace_kx_scaling_group#host_type FinspaceKxScalingGroup#host_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/finspace_kx_scaling_group#host_type FinspaceKxScalingGroup#host_type}.
 
 ---
 
@@ -1107,7 +1138,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/finspace_kx_scaling_group#name FinspaceKxScalingGroup#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/finspace_kx_scaling_group#name FinspaceKxScalingGroup#name}.
 
 ---
 
@@ -1119,10 +1150,24 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/finspace_kx_scaling_group#id FinspaceKxScalingGroup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/finspace_kx_scaling_group#id FinspaceKxScalingGroup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `Region`<sup>Optional</sup> <a name="Region" id="@cdktf/provider-aws.finspaceKxScalingGroup.FinspaceKxScalingGroupConfig.property.region"></a>
+
+```csharp
+public string Region { get; set; }
+```
+
+- *Type:* string
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/finspace_kx_scaling_group#region FinspaceKxScalingGroup#region}
 
 ---
 
@@ -1134,7 +1179,7 @@ public System.Collections.Generic.IDictionary<string, string> Tags { get; set; }
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/finspace_kx_scaling_group#tags FinspaceKxScalingGroup#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/finspace_kx_scaling_group#tags FinspaceKxScalingGroup#tags}.
 
 ---
 
@@ -1146,7 +1191,7 @@ public System.Collections.Generic.IDictionary<string, string> TagsAll { get; set
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/finspace_kx_scaling_group#tags_all FinspaceKxScalingGroup#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/finspace_kx_scaling_group#tags_all FinspaceKxScalingGroup#tags_all}.
 
 ---
 
@@ -1160,7 +1205,7 @@ public FinspaceKxScalingGroupTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/finspace_kx_scaling_group#timeouts FinspaceKxScalingGroup#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/finspace_kx_scaling_group#timeouts FinspaceKxScalingGroup#timeouts}
 
 ---
 
@@ -1182,9 +1227,9 @@ new FinspaceKxScalingGroupTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.finspaceKxScalingGroup.FinspaceKxScalingGroupTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/finspace_kx_scaling_group#create FinspaceKxScalingGroup#create}. |
-| <code><a href="#@cdktf/provider-aws.finspaceKxScalingGroup.FinspaceKxScalingGroupTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/finspace_kx_scaling_group#delete FinspaceKxScalingGroup#delete}. |
-| <code><a href="#@cdktf/provider-aws.finspaceKxScalingGroup.FinspaceKxScalingGroupTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/finspace_kx_scaling_group#update FinspaceKxScalingGroup#update}. |
+| <code><a href="#@cdktf/provider-aws.finspaceKxScalingGroup.FinspaceKxScalingGroupTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/finspace_kx_scaling_group#create FinspaceKxScalingGroup#create}. |
+| <code><a href="#@cdktf/provider-aws.finspaceKxScalingGroup.FinspaceKxScalingGroupTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/finspace_kx_scaling_group#delete FinspaceKxScalingGroup#delete}. |
+| <code><a href="#@cdktf/provider-aws.finspaceKxScalingGroup.FinspaceKxScalingGroupTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/finspace_kx_scaling_group#update FinspaceKxScalingGroup#update}. |
 
 ---
 
@@ -1196,7 +1241,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/finspace_kx_scaling_group#create FinspaceKxScalingGroup#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/finspace_kx_scaling_group#create FinspaceKxScalingGroup#create}.
 
 ---
 
@@ -1208,7 +1253,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/finspace_kx_scaling_group#delete FinspaceKxScalingGroup#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/finspace_kx_scaling_group#delete FinspaceKxScalingGroup#delete}.
 
 ---
 
@@ -1220,7 +1265,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/finspace_kx_scaling_group#update FinspaceKxScalingGroup#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/finspace_kx_scaling_group#update FinspaceKxScalingGroup#update}.
 
 ---
 

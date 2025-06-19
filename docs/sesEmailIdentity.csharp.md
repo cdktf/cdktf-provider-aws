@@ -4,7 +4,7 @@
 
 ### SesEmailIdentity <a name="SesEmailIdentity" id="@cdktf/provider-aws.sesEmailIdentity.SesEmailIdentity"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ses_email_identity aws_ses_email_identity}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ses_email_identity aws_ses_email_identity}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sesEmailIdentity.SesEmailIdentity.Initializer"></a>
 
@@ -74,6 +74,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.sesEmailIdentity.SesEmailIdentity.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-aws.sesEmailIdentity.SesEmailIdentity.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-aws.sesEmailIdentity.SesEmailIdentity.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.sesEmailIdentity.SesEmailIdentity.resetRegion">ResetRegion</a></code> | *No description.* |
 
 ---
 
@@ -371,6 +372,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 private void ResetId()
 ```
 
+##### `ResetRegion` <a name="ResetRegion" id="@cdktf/provider-aws.sesEmailIdentity.SesEmailIdentity.resetRegion"></a>
+
+```csharp
+private void ResetRegion()
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -474,7 +481,7 @@ The construct id used in the generated config for the SesEmailIdentity to import
 
 The id of the existing SesEmailIdentity that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ses_email_identity#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ses_email_identity#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -507,8 +514,10 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.sesEmailIdentity.SesEmailIdentity.property.arn">Arn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.sesEmailIdentity.SesEmailIdentity.property.emailInput">EmailInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.sesEmailIdentity.SesEmailIdentity.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.sesEmailIdentity.SesEmailIdentity.property.regionInput">RegionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.sesEmailIdentity.SesEmailIdentity.property.email">Email</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.sesEmailIdentity.SesEmailIdentity.property.id">Id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.sesEmailIdentity.SesEmailIdentity.property.region">Region</a></code> | <code>string</code> | *No description.* |
 
 ---
 
@@ -684,6 +693,16 @@ public string IdInput { get; }
 
 ---
 
+##### `RegionInput`<sup>Optional</sup> <a name="RegionInput" id="@cdktf/provider-aws.sesEmailIdentity.SesEmailIdentity.property.regionInput"></a>
+
+```csharp
+public string RegionInput { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `Email`<sup>Required</sup> <a name="Email" id="@cdktf/provider-aws.sesEmailIdentity.SesEmailIdentity.property.email"></a>
 
 ```csharp
@@ -698,6 +717,16 @@ public string Email { get; }
 
 ```csharp
 public string Id { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Region`<sup>Required</sup> <a name="Region" id="@cdktf/provider-aws.sesEmailIdentity.SesEmailIdentity.property.region"></a>
+
+```csharp
+public string Region { get; }
 ```
 
 - *Type:* string
@@ -740,7 +769,8 @@ new SesEmailIdentityConfig {
     TerraformProvider Provider = null,
     object[] Provisioners = null,
     string Email,
-    string Id = null
+    string Id = null,
+    string Region = null
 };
 ```
 
@@ -755,8 +785,9 @@ new SesEmailIdentityConfig {
 | <code><a href="#@cdktf/provider-aws.sesEmailIdentity.SesEmailIdentityConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.sesEmailIdentity.SesEmailIdentityConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.sesEmailIdentity.SesEmailIdentityConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.sesEmailIdentity.SesEmailIdentityConfig.property.email">Email</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ses_email_identity#email SesEmailIdentity#email}. |
-| <code><a href="#@cdktf/provider-aws.sesEmailIdentity.SesEmailIdentityConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ses_email_identity#id SesEmailIdentity#id}. |
+| <code><a href="#@cdktf/provider-aws.sesEmailIdentity.SesEmailIdentityConfig.property.email">Email</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ses_email_identity#email SesEmailIdentity#email}. |
+| <code><a href="#@cdktf/provider-aws.sesEmailIdentity.SesEmailIdentityConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ses_email_identity#id SesEmailIdentity#id}. |
+| <code><a href="#@cdktf/provider-aws.sesEmailIdentity.SesEmailIdentityConfig.property.region">Region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
 
@@ -838,7 +869,7 @@ public string Email { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ses_email_identity#email SesEmailIdentity#email}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ses_email_identity#email SesEmailIdentity#email}.
 
 ---
 
@@ -850,10 +881,24 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ses_email_identity#id SesEmailIdentity#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ses_email_identity#id SesEmailIdentity#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `Region`<sup>Optional</sup> <a name="Region" id="@cdktf/provider-aws.sesEmailIdentity.SesEmailIdentityConfig.property.region"></a>
+
+```csharp
+public string Region { get; set; }
+```
+
+- *Type:* string
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ses_email_identity#region SesEmailIdentity#region}
 
 ---
 

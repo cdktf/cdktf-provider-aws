@@ -4,12 +4,12 @@
 
 ### EvidentlySegment <a name="EvidentlySegment" id="@cdktf/provider-aws.evidentlySegment.EvidentlySegment"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/evidently_segment aws_evidently_segment}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/evidently_segment aws_evidently_segment}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.evidentlySegment.EvidentlySegment.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/evidentlysegment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/evidentlysegment"
 
 evidentlysegment.NewEvidentlySegment(scope Construct, id *string, config EvidentlySegmentConfig) EvidentlySegment
 ```
@@ -75,6 +75,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.evidentlySegment.EvidentlySegment.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-aws.evidentlySegment.EvidentlySegment.resetDescription">ResetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.evidentlySegment.EvidentlySegment.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.evidentlySegment.EvidentlySegment.resetRegion">ResetRegion</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.evidentlySegment.EvidentlySegment.resetTags">ResetTags</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.evidentlySegment.EvidentlySegment.resetTagsAll">ResetTagsAll</a></code> | *No description.* |
 
@@ -380,6 +381,12 @@ func ResetDescription()
 func ResetId()
 ```
 
+##### `ResetRegion` <a name="ResetRegion" id="@cdktf/provider-aws.evidentlySegment.EvidentlySegment.resetRegion"></a>
+
+```go
+func ResetRegion()
+```
+
 ##### `ResetTags` <a name="ResetTags" id="@cdktf/provider-aws.evidentlySegment.EvidentlySegment.resetTags"></a>
 
 ```go
@@ -406,7 +413,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.evidentlySegment.EvidentlySegment.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/evidentlysegment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/evidentlysegment"
 
 evidentlysegment.EvidentlySegment_IsConstruct(x interface{}) *bool
 ```
@@ -438,7 +445,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.evidentlySegment.EvidentlySegment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/evidentlysegment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/evidentlysegment"
 
 evidentlysegment.EvidentlySegment_IsTerraformElement(x interface{}) *bool
 ```
@@ -452,7 +459,7 @@ evidentlysegment.EvidentlySegment_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.evidentlySegment.EvidentlySegment.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/evidentlysegment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/evidentlysegment"
 
 evidentlysegment.EvidentlySegment_IsTerraformResource(x interface{}) *bool
 ```
@@ -466,7 +473,7 @@ evidentlysegment.EvidentlySegment_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.evidentlySegment.EvidentlySegment.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/evidentlysegment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/evidentlysegment"
 
 evidentlysegment.EvidentlySegment_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -495,7 +502,7 @@ The construct id used in the generated config for the EvidentlySegment to import
 
 The id of the existing EvidentlySegment that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/evidently_segment#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/evidently_segment#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -534,12 +541,14 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.evidentlySegment.EvidentlySegment.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.evidentlySegment.EvidentlySegment.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.evidentlySegment.EvidentlySegment.property.patternInput">PatternInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.evidentlySegment.EvidentlySegment.property.regionInput">RegionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.evidentlySegment.EvidentlySegment.property.tagsAllInput">TagsAllInput</a></code> | <code>*map[string]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.evidentlySegment.EvidentlySegment.property.tagsInput">TagsInput</a></code> | <code>*map[string]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.evidentlySegment.EvidentlySegment.property.description">Description</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.evidentlySegment.EvidentlySegment.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.evidentlySegment.EvidentlySegment.property.name">Name</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.evidentlySegment.EvidentlySegment.property.pattern">Pattern</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.evidentlySegment.EvidentlySegment.property.region">Region</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.evidentlySegment.EvidentlySegment.property.tags">Tags</a></code> | <code>*map[string]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.evidentlySegment.EvidentlySegment.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | *No description.* |
 
@@ -777,6 +786,16 @@ func PatternInput() *string
 
 ---
 
+##### `RegionInput`<sup>Optional</sup> <a name="RegionInput" id="@cdktf/provider-aws.evidentlySegment.EvidentlySegment.property.regionInput"></a>
+
+```go
+func RegionInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `TagsAllInput`<sup>Optional</sup> <a name="TagsAllInput" id="@cdktf/provider-aws.evidentlySegment.EvidentlySegment.property.tagsAllInput"></a>
 
 ```go
@@ -837,6 +856,16 @@ func Pattern() *string
 
 ---
 
+##### `Region`<sup>Required</sup> <a name="Region" id="@cdktf/provider-aws.evidentlySegment.EvidentlySegment.property.region"></a>
+
+```go
+func Region() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `Tags`<sup>Required</sup> <a name="Tags" id="@cdktf/provider-aws.evidentlySegment.EvidentlySegment.property.tags"></a>
 
 ```go
@@ -882,7 +911,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.evidentlySegment.EvidentlySegmentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/evidentlysegment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/evidentlysegment"
 
 &evidentlysegment.EvidentlySegmentConfig {
 	Connection: interface{},
@@ -896,6 +925,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/evidentlysegment"
 	Pattern: *string,
 	Description: *string,
 	Id: *string,
+	Region: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
 }
@@ -912,12 +942,13 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/evidentlysegment"
 | <code><a href="#@cdktf/provider-aws.evidentlySegment.EvidentlySegmentConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.evidentlySegment.EvidentlySegmentConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.evidentlySegment.EvidentlySegmentConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.evidentlySegment.EvidentlySegmentConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/evidently_segment#name EvidentlySegment#name}. |
-| <code><a href="#@cdktf/provider-aws.evidentlySegment.EvidentlySegmentConfig.property.pattern">Pattern</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/evidently_segment#pattern EvidentlySegment#pattern}. |
-| <code><a href="#@cdktf/provider-aws.evidentlySegment.EvidentlySegmentConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/evidently_segment#description EvidentlySegment#description}. |
-| <code><a href="#@cdktf/provider-aws.evidentlySegment.EvidentlySegmentConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/evidently_segment#id EvidentlySegment#id}. |
-| <code><a href="#@cdktf/provider-aws.evidentlySegment.EvidentlySegmentConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/evidently_segment#tags EvidentlySegment#tags}. |
-| <code><a href="#@cdktf/provider-aws.evidentlySegment.EvidentlySegmentConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/evidently_segment#tags_all EvidentlySegment#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.evidentlySegment.EvidentlySegmentConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/evidently_segment#name EvidentlySegment#name}. |
+| <code><a href="#@cdktf/provider-aws.evidentlySegment.EvidentlySegmentConfig.property.pattern">Pattern</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/evidently_segment#pattern EvidentlySegment#pattern}. |
+| <code><a href="#@cdktf/provider-aws.evidentlySegment.EvidentlySegmentConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/evidently_segment#description EvidentlySegment#description}. |
+| <code><a href="#@cdktf/provider-aws.evidentlySegment.EvidentlySegmentConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/evidently_segment#id EvidentlySegment#id}. |
+| <code><a href="#@cdktf/provider-aws.evidentlySegment.EvidentlySegmentConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
+| <code><a href="#@cdktf/provider-aws.evidentlySegment.EvidentlySegmentConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/evidently_segment#tags EvidentlySegment#tags}. |
+| <code><a href="#@cdktf/provider-aws.evidentlySegment.EvidentlySegmentConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/evidently_segment#tags_all EvidentlySegment#tags_all}. |
 
 ---
 
@@ -999,7 +1030,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/evidently_segment#name EvidentlySegment#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/evidently_segment#name EvidentlySegment#name}.
 
 ---
 
@@ -1011,7 +1042,7 @@ Pattern *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/evidently_segment#pattern EvidentlySegment#pattern}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/evidently_segment#pattern EvidentlySegment#pattern}.
 
 ---
 
@@ -1023,7 +1054,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/evidently_segment#description EvidentlySegment#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/evidently_segment#description EvidentlySegment#description}.
 
 ---
 
@@ -1035,10 +1066,24 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/evidently_segment#id EvidentlySegment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/evidently_segment#id EvidentlySegment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `Region`<sup>Optional</sup> <a name="Region" id="@cdktf/provider-aws.evidentlySegment.EvidentlySegmentConfig.property.region"></a>
+
+```go
+Region *string
+```
+
+- *Type:* *string
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/evidently_segment#region EvidentlySegment#region}
 
 ---
 
@@ -1050,7 +1095,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/evidently_segment#tags EvidentlySegment#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/evidently_segment#tags EvidentlySegment#tags}.
 
 ---
 
@@ -1062,7 +1107,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/evidently_segment#tags_all EvidentlySegment#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/evidently_segment#tags_all EvidentlySegment#tags_all}.
 
 ---
 

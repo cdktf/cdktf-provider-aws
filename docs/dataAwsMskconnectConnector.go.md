@@ -4,12 +4,12 @@
 
 ### DataAwsMskconnectConnector <a name="DataAwsMskconnectConnector" id="@cdktf/provider-aws.dataAwsMskconnectConnector.DataAwsMskconnectConnector"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/mskconnect_connector aws_mskconnect_connector}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/mskconnect_connector aws_mskconnect_connector}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsMskconnectConnector.DataAwsMskconnectConnector.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsmskconnectconnector"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsmskconnectconnector"
 
 dataawsmskconnectconnector.NewDataAwsMskconnectConnector(scope Construct, id *string, config DataAwsMskconnectConnectorConfig) DataAwsMskconnectConnector
 ```
@@ -68,6 +68,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.dataAwsMskconnectConnector.DataAwsMskconnectConnector.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsMskconnectConnector.DataAwsMskconnectConnector.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsMskconnectConnector.DataAwsMskconnectConnector.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsMskconnectConnector.DataAwsMskconnectConnector.resetRegion">ResetRegion</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsMskconnectConnector.DataAwsMskconnectConnector.resetTags">ResetTags</a></code> | *No description.* |
 
 ---
@@ -270,6 +271,12 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 func ResetId()
 ```
 
+##### `ResetRegion` <a name="ResetRegion" id="@cdktf/provider-aws.dataAwsMskconnectConnector.DataAwsMskconnectConnector.resetRegion"></a>
+
+```go
+func ResetRegion()
+```
+
 ##### `ResetTags` <a name="ResetTags" id="@cdktf/provider-aws.dataAwsMskconnectConnector.DataAwsMskconnectConnector.resetTags"></a>
 
 ```go
@@ -290,7 +297,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsMskconnectConnector.DataAwsMskconnectConnector.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsmskconnectconnector"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsmskconnectconnector"
 
 dataawsmskconnectconnector.DataAwsMskconnectConnector_IsConstruct(x interface{}) *bool
 ```
@@ -322,7 +329,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsMskconnectConnector.DataAwsMskconnectConnector.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsmskconnectconnector"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsmskconnectconnector"
 
 dataawsmskconnectconnector.DataAwsMskconnectConnector_IsTerraformElement(x interface{}) *bool
 ```
@@ -336,7 +343,7 @@ dataawsmskconnectconnector.DataAwsMskconnectConnector_IsTerraformElement(x inter
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsMskconnectConnector.DataAwsMskconnectConnector.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsmskconnectconnector"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsmskconnectconnector"
 
 dataawsmskconnectconnector.DataAwsMskconnectConnector_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -350,7 +357,7 @@ dataawsmskconnectconnector.DataAwsMskconnectConnector_IsTerraformDataSource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsMskconnectConnector.DataAwsMskconnectConnector.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsmskconnectconnector"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsmskconnectconnector"
 
 dataawsmskconnectconnector.DataAwsMskconnectConnector_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -379,7 +386,7 @@ The construct id used in the generated config for the DataAwsMskconnectConnector
 
 The id of the existing DataAwsMskconnectConnector that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/mskconnect_connector#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/mskconnect_connector#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -412,9 +419,11 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.dataAwsMskconnectConnector.DataAwsMskconnectConnector.property.version">Version</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsMskconnectConnector.DataAwsMskconnectConnector.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsMskconnectConnector.DataAwsMskconnectConnector.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsMskconnectConnector.DataAwsMskconnectConnector.property.regionInput">RegionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsMskconnectConnector.DataAwsMskconnectConnector.property.tagsInput">TagsInput</a></code> | <code>*map[string]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsMskconnectConnector.DataAwsMskconnectConnector.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsMskconnectConnector.DataAwsMskconnectConnector.property.name">Name</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsMskconnectConnector.DataAwsMskconnectConnector.property.region">Region</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsMskconnectConnector.DataAwsMskconnectConnector.property.tags">Tags</a></code> | <code>*map[string]*string</code> | *No description.* |
 
 ---
@@ -591,6 +600,16 @@ func NameInput() *string
 
 ---
 
+##### `RegionInput`<sup>Optional</sup> <a name="RegionInput" id="@cdktf/provider-aws.dataAwsMskconnectConnector.DataAwsMskconnectConnector.property.regionInput"></a>
+
+```go
+func RegionInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `TagsInput`<sup>Optional</sup> <a name="TagsInput" id="@cdktf/provider-aws.dataAwsMskconnectConnector.DataAwsMskconnectConnector.property.tagsInput"></a>
 
 ```go
@@ -615,6 +634,16 @@ func Id() *string
 
 ```go
 func Name() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Region`<sup>Required</sup> <a name="Region" id="@cdktf/provider-aws.dataAwsMskconnectConnector.DataAwsMskconnectConnector.property.region"></a>
+
+```go
+func Region() *string
 ```
 
 - *Type:* *string
@@ -656,7 +685,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsMskconnectConnector.DataAwsMskconnectConnectorConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsmskconnectconnector"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsmskconnectconnector"
 
 &dataawsmskconnectconnector.DataAwsMskconnectConnectorConfig {
 	Connection: interface{},
@@ -668,6 +697,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsmskconnectconnecto
 	Provisioners: *[]interface{},
 	Name: *string,
 	Id: *string,
+	Region: *string,
 	Tags: *map[string]*string,
 }
 ```
@@ -683,9 +713,10 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsmskconnectconnecto
 | <code><a href="#@cdktf/provider-aws.dataAwsMskconnectConnector.DataAwsMskconnectConnectorConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsMskconnectConnector.DataAwsMskconnectConnectorConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsMskconnectConnector.DataAwsMskconnectConnectorConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsMskconnectConnector.DataAwsMskconnectConnectorConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/mskconnect_connector#name DataAwsMskconnectConnector#name}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsMskconnectConnector.DataAwsMskconnectConnectorConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/mskconnect_connector#id DataAwsMskconnectConnector#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsMskconnectConnector.DataAwsMskconnectConnectorConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/mskconnect_connector#tags DataAwsMskconnectConnector#tags}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsMskconnectConnector.DataAwsMskconnectConnectorConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/mskconnect_connector#name DataAwsMskconnectConnector#name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsMskconnectConnector.DataAwsMskconnectConnectorConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/mskconnect_connector#id DataAwsMskconnectConnector#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsMskconnectConnector.DataAwsMskconnectConnectorConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
+| <code><a href="#@cdktf/provider-aws.dataAwsMskconnectConnector.DataAwsMskconnectConnectorConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/mskconnect_connector#tags DataAwsMskconnectConnector#tags}. |
 
 ---
 
@@ -767,7 +798,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/mskconnect_connector#name DataAwsMskconnectConnector#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/mskconnect_connector#name DataAwsMskconnectConnector#name}.
 
 ---
 
@@ -779,10 +810,24 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/mskconnect_connector#id DataAwsMskconnectConnector#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/mskconnect_connector#id DataAwsMskconnectConnector#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `Region`<sup>Optional</sup> <a name="Region" id="@cdktf/provider-aws.dataAwsMskconnectConnector.DataAwsMskconnectConnectorConfig.property.region"></a>
+
+```go
+Region *string
+```
+
+- *Type:* *string
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/mskconnect_connector#region DataAwsMskconnectConnector#region}
 
 ---
 
@@ -794,7 +839,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/mskconnect_connector#tags DataAwsMskconnectConnector#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/mskconnect_connector#tags DataAwsMskconnectConnector#tags}.
 
 ---
 

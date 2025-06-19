@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/verifiedpermissions_schema
+// https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/verifiedpermissions_schema
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,19 +13,25 @@ import * as cdktf from 'cdktf';
 
 export interface VerifiedpermissionsSchemaConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/verifiedpermissions_schema#policy_store_id VerifiedpermissionsSchema#policy_store_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/verifiedpermissions_schema#policy_store_id VerifiedpermissionsSchema#policy_store_id}
   */
   readonly policyStoreId: string;
   /**
+  * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/verifiedpermissions_schema#region VerifiedpermissionsSchema#region}
+  */
+  readonly region?: string;
+  /**
   * definition block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/verifiedpermissions_schema#definition VerifiedpermissionsSchema#definition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/verifiedpermissions_schema#definition VerifiedpermissionsSchema#definition}
   */
-  readonly definition: VerifiedpermissionsSchemaDefinition;
+  readonly definition?: VerifiedpermissionsSchemaDefinition[] | cdktf.IResolvable;
 }
 export interface VerifiedpermissionsSchemaDefinition {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/verifiedpermissions_schema#value VerifiedpermissionsSchema#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/verifiedpermissions_schema#value VerifiedpermissionsSchema#value}
   */
   readonly value: string;
 }
@@ -66,9 +72,11 @@ export class VerifiedpermissionsSchemaDefinitionOutputReference extends cdktf.Co
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
   public get internalValue(): VerifiedpermissionsSchemaDefinition | cdktf.IResolvable | undefined {
@@ -115,8 +123,28 @@ export class VerifiedpermissionsSchemaDefinitionOutputReference extends cdktf.Co
   }
 }
 
+export class VerifiedpermissionsSchemaDefinitionList extends cdktf.ComplexList {
+  public internalValue? : VerifiedpermissionsSchemaDefinition[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): VerifiedpermissionsSchemaDefinitionOutputReference {
+    return new VerifiedpermissionsSchemaDefinitionOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/verifiedpermissions_schema aws_verifiedpermissions_schema}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/verifiedpermissions_schema aws_verifiedpermissions_schema}
 */
 export class VerifiedpermissionsSchema extends cdktf.TerraformResource {
 
@@ -132,7 +160,7 @@ export class VerifiedpermissionsSchema extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a VerifiedpermissionsSchema resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the VerifiedpermissionsSchema to import
-  * @param importFromId The id of the existing VerifiedpermissionsSchema that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/verifiedpermissions_schema#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing VerifiedpermissionsSchema that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/verifiedpermissions_schema#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the VerifiedpermissionsSchema to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -144,7 +172,7 @@ export class VerifiedpermissionsSchema extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/verifiedpermissions_schema aws_verifiedpermissions_schema} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/verifiedpermissions_schema aws_verifiedpermissions_schema} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -155,8 +183,8 @@ export class VerifiedpermissionsSchema extends cdktf.TerraformResource {
       terraformResourceType: 'aws_verifiedpermissions_schema',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.100.0',
-        providerVersionConstraint: '~> 5.0'
+        providerVersion: '6.0.0',
+        providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -167,6 +195,7 @@ export class VerifiedpermissionsSchema extends cdktf.TerraformResource {
       forEach: config.forEach
     });
     this._policyStoreId = config.policyStoreId;
+    this._region = config.region;
     this._definition.internalValue = config.definition;
   }
 
@@ -197,13 +226,32 @@ export class VerifiedpermissionsSchema extends cdktf.TerraformResource {
     return this._policyStoreId;
   }
 
-  // definition - computed: false, optional: false, required: true
-  private _definition = new VerifiedpermissionsSchemaDefinitionOutputReference(this, "definition");
+  // region - computed: true, optional: true, required: false
+  private _region?: string; 
+  public get region() {
+    return this.getStringAttribute('region');
+  }
+  public set region(value: string) {
+    this._region = value;
+  }
+  public resetRegion() {
+    this._region = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get regionInput() {
+    return this._region;
+  }
+
+  // definition - computed: false, optional: true, required: false
+  private _definition = new VerifiedpermissionsSchemaDefinitionList(this, "definition", false);
   public get definition() {
     return this._definition;
   }
-  public putDefinition(value: VerifiedpermissionsSchemaDefinition) {
+  public putDefinition(value: VerifiedpermissionsSchemaDefinition[] | cdktf.IResolvable) {
     this._definition.internalValue = value;
+  }
+  public resetDefinition() {
+    this._definition.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get definitionInput() {
@@ -217,7 +265,8 @@ export class VerifiedpermissionsSchema extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       policy_store_id: cdktf.stringToTerraform(this._policyStoreId),
-      definition: verifiedpermissionsSchemaDefinitionToTerraform(this._definition.internalValue),
+      region: cdktf.stringToTerraform(this._region),
+      definition: cdktf.listMapper(verifiedpermissionsSchemaDefinitionToTerraform, true)(this._definition.internalValue),
     };
   }
 
@@ -229,11 +278,17 @@ export class VerifiedpermissionsSchema extends cdktf.TerraformResource {
         type: "simple",
         storageClassType: "string",
       },
+      region: {
+        value: cdktf.stringToHclTerraform(this._region),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
       definition: {
-        value: verifiedpermissionsSchemaDefinitionToHclTerraform(this._definition.internalValue),
+        value: cdktf.listMapperHcl(verifiedpermissionsSchemaDefinitionToHclTerraform, true)(this._definition.internalValue),
         isBlock: true,
-        type: "struct",
-        storageClassType: "VerifiedpermissionsSchemaDefinition",
+        type: "list",
+        storageClassType: "VerifiedpermissionsSchemaDefinitionList",
       },
     };
 

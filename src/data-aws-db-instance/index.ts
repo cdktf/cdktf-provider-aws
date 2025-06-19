@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/db_instance
+// https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/db_instance
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,18 +13,24 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsDbInstanceConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/db_instance#db_instance_identifier DataAwsDbInstance#db_instance_identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/db_instance#db_instance_identifier DataAwsDbInstance#db_instance_identifier}
   */
   readonly dbInstanceIdentifier?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/db_instance#id DataAwsDbInstance#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/db_instance#id DataAwsDbInstance#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/db_instance#tags DataAwsDbInstance#tags}
+  * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/db_instance#region DataAwsDbInstance#region}
+  */
+  readonly region?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/db_instance#tags DataAwsDbInstance#tags}
   */
   readonly tags?: { [key: string]: string };
 }
@@ -115,7 +121,7 @@ export class DataAwsDbInstanceMasterUserSecretList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/db_instance aws_db_instance}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/db_instance aws_db_instance}
 */
 export class DataAwsDbInstance extends cdktf.TerraformDataSource {
 
@@ -131,7 +137,7 @@ export class DataAwsDbInstance extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataAwsDbInstance resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsDbInstance to import
-  * @param importFromId The id of the existing DataAwsDbInstance that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/db_instance#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsDbInstance that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/db_instance#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsDbInstance to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -143,7 +149,7 @@ export class DataAwsDbInstance extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/db_instance aws_db_instance} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/db_instance aws_db_instance} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -154,8 +160,8 @@ export class DataAwsDbInstance extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_db_instance',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.100.0',
-        providerVersionConstraint: '~> 5.0'
+        providerVersion: '6.0.0',
+        providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -167,6 +173,7 @@ export class DataAwsDbInstance extends cdktf.TerraformDataSource {
     });
     this._dbInstanceIdentifier = config.dbInstanceIdentifier;
     this._id = config.id;
+    this._region = config.region;
     this._tags = config.tags;
   }
 
@@ -377,6 +384,22 @@ export class DataAwsDbInstance extends cdktf.TerraformDataSource {
     return this.getBooleanAttribute('publicly_accessible');
   }
 
+  // region - computed: true, optional: true, required: false
+  private _region?: string; 
+  public get region() {
+    return this.getStringAttribute('region');
+  }
+  public set region(value: string) {
+    this._region = value;
+  }
+  public resetRegion() {
+    this._region = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get regionInput() {
+    return this._region;
+  }
+
   // replicate_source_db - computed: true, optional: false, required: false
   public get replicateSourceDb() {
     return this.getStringAttribute('replicate_source_db');
@@ -436,6 +459,7 @@ export class DataAwsDbInstance extends cdktf.TerraformDataSource {
     return {
       db_instance_identifier: cdktf.stringToTerraform(this._dbInstanceIdentifier),
       id: cdktf.stringToTerraform(this._id),
+      region: cdktf.stringToTerraform(this._region),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
     };
   }
@@ -450,6 +474,12 @@ export class DataAwsDbInstance extends cdktf.TerraformDataSource {
       },
       id: {
         value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      region: {
+        value: cdktf.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

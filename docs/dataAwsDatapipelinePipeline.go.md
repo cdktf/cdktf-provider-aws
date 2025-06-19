@@ -4,12 +4,12 @@
 
 ### DataAwsDatapipelinePipeline <a name="DataAwsDatapipelinePipeline" id="@cdktf/provider-aws.dataAwsDatapipelinePipeline.DataAwsDatapipelinePipeline"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/datapipeline_pipeline aws_datapipeline_pipeline}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/datapipeline_pipeline aws_datapipeline_pipeline}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsDatapipelinePipeline.DataAwsDatapipelinePipeline.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsdatapipelinepipeline"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsdatapipelinepipeline"
 
 dataawsdatapipelinepipeline.NewDataAwsDatapipelinePipeline(scope Construct, id *string, config DataAwsDatapipelinePipelineConfig) DataAwsDatapipelinePipeline
 ```
@@ -68,6 +68,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.dataAwsDatapipelinePipeline.DataAwsDatapipelinePipeline.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsDatapipelinePipeline.DataAwsDatapipelinePipeline.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsDatapipelinePipeline.DataAwsDatapipelinePipeline.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsDatapipelinePipeline.DataAwsDatapipelinePipeline.resetRegion">ResetRegion</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsDatapipelinePipeline.DataAwsDatapipelinePipeline.resetTags">ResetTags</a></code> | *No description.* |
 
 ---
@@ -270,6 +271,12 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 func ResetId()
 ```
 
+##### `ResetRegion` <a name="ResetRegion" id="@cdktf/provider-aws.dataAwsDatapipelinePipeline.DataAwsDatapipelinePipeline.resetRegion"></a>
+
+```go
+func ResetRegion()
+```
+
 ##### `ResetTags` <a name="ResetTags" id="@cdktf/provider-aws.dataAwsDatapipelinePipeline.DataAwsDatapipelinePipeline.resetTags"></a>
 
 ```go
@@ -290,7 +297,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsDatapipelinePipeline.DataAwsDatapipelinePipeline.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsdatapipelinepipeline"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsdatapipelinepipeline"
 
 dataawsdatapipelinepipeline.DataAwsDatapipelinePipeline_IsConstruct(x interface{}) *bool
 ```
@@ -322,7 +329,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsDatapipelinePipeline.DataAwsDatapipelinePipeline.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsdatapipelinepipeline"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsdatapipelinepipeline"
 
 dataawsdatapipelinepipeline.DataAwsDatapipelinePipeline_IsTerraformElement(x interface{}) *bool
 ```
@@ -336,7 +343,7 @@ dataawsdatapipelinepipeline.DataAwsDatapipelinePipeline_IsTerraformElement(x int
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsDatapipelinePipeline.DataAwsDatapipelinePipeline.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsdatapipelinepipeline"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsdatapipelinepipeline"
 
 dataawsdatapipelinepipeline.DataAwsDatapipelinePipeline_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -350,7 +357,7 @@ dataawsdatapipelinepipeline.DataAwsDatapipelinePipeline_IsTerraformDataSource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsDatapipelinePipeline.DataAwsDatapipelinePipeline.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsdatapipelinepipeline"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsdatapipelinepipeline"
 
 dataawsdatapipelinepipeline.DataAwsDatapipelinePipeline_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -379,7 +386,7 @@ The construct id used in the generated config for the DataAwsDatapipelinePipelin
 
 The id of the existing DataAwsDatapipelinePipeline that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/datapipeline_pipeline#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/datapipeline_pipeline#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -411,9 +418,11 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.dataAwsDatapipelinePipeline.DataAwsDatapipelinePipeline.property.name">Name</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsDatapipelinePipeline.DataAwsDatapipelinePipeline.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsDatapipelinePipeline.DataAwsDatapipelinePipeline.property.pipelineIdInput">PipelineIdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsDatapipelinePipeline.DataAwsDatapipelinePipeline.property.regionInput">RegionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsDatapipelinePipeline.DataAwsDatapipelinePipeline.property.tagsInput">TagsInput</a></code> | <code>*map[string]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsDatapipelinePipeline.DataAwsDatapipelinePipeline.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsDatapipelinePipeline.DataAwsDatapipelinePipeline.property.pipelineId">PipelineId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsDatapipelinePipeline.DataAwsDatapipelinePipeline.property.region">Region</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsDatapipelinePipeline.DataAwsDatapipelinePipeline.property.tags">Tags</a></code> | <code>*map[string]*string</code> | *No description.* |
 
 ---
@@ -580,6 +589,16 @@ func PipelineIdInput() *string
 
 ---
 
+##### `RegionInput`<sup>Optional</sup> <a name="RegionInput" id="@cdktf/provider-aws.dataAwsDatapipelinePipeline.DataAwsDatapipelinePipeline.property.regionInput"></a>
+
+```go
+func RegionInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `TagsInput`<sup>Optional</sup> <a name="TagsInput" id="@cdktf/provider-aws.dataAwsDatapipelinePipeline.DataAwsDatapipelinePipeline.property.tagsInput"></a>
 
 ```go
@@ -604,6 +623,16 @@ func Id() *string
 
 ```go
 func PipelineId() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Region`<sup>Required</sup> <a name="Region" id="@cdktf/provider-aws.dataAwsDatapipelinePipeline.DataAwsDatapipelinePipeline.property.region"></a>
+
+```go
+func Region() *string
 ```
 
 - *Type:* *string
@@ -645,7 +674,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsDatapipelinePipeline.DataAwsDatapipelinePipelineConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsdatapipelinepipeline"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsdatapipelinepipeline"
 
 &dataawsdatapipelinepipeline.DataAwsDatapipelinePipelineConfig {
 	Connection: interface{},
@@ -657,6 +686,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsdatapipelinepipeli
 	Provisioners: *[]interface{},
 	PipelineId: *string,
 	Id: *string,
+	Region: *string,
 	Tags: *map[string]*string,
 }
 ```
@@ -672,9 +702,10 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsdatapipelinepipeli
 | <code><a href="#@cdktf/provider-aws.dataAwsDatapipelinePipeline.DataAwsDatapipelinePipelineConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsDatapipelinePipeline.DataAwsDatapipelinePipelineConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsDatapipelinePipeline.DataAwsDatapipelinePipelineConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsDatapipelinePipeline.DataAwsDatapipelinePipelineConfig.property.pipelineId">PipelineId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/datapipeline_pipeline#pipeline_id DataAwsDatapipelinePipeline#pipeline_id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsDatapipelinePipeline.DataAwsDatapipelinePipelineConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/datapipeline_pipeline#id DataAwsDatapipelinePipeline#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsDatapipelinePipeline.DataAwsDatapipelinePipelineConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/datapipeline_pipeline#tags DataAwsDatapipelinePipeline#tags}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsDatapipelinePipeline.DataAwsDatapipelinePipelineConfig.property.pipelineId">PipelineId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/datapipeline_pipeline#pipeline_id DataAwsDatapipelinePipeline#pipeline_id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsDatapipelinePipeline.DataAwsDatapipelinePipelineConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/datapipeline_pipeline#id DataAwsDatapipelinePipeline#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsDatapipelinePipeline.DataAwsDatapipelinePipelineConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
+| <code><a href="#@cdktf/provider-aws.dataAwsDatapipelinePipeline.DataAwsDatapipelinePipelineConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/datapipeline_pipeline#tags DataAwsDatapipelinePipeline#tags}. |
 
 ---
 
@@ -756,7 +787,7 @@ PipelineId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/datapipeline_pipeline#pipeline_id DataAwsDatapipelinePipeline#pipeline_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/datapipeline_pipeline#pipeline_id DataAwsDatapipelinePipeline#pipeline_id}.
 
 ---
 
@@ -768,10 +799,24 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/datapipeline_pipeline#id DataAwsDatapipelinePipeline#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/datapipeline_pipeline#id DataAwsDatapipelinePipeline#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `Region`<sup>Optional</sup> <a name="Region" id="@cdktf/provider-aws.dataAwsDatapipelinePipeline.DataAwsDatapipelinePipelineConfig.property.region"></a>
+
+```go
+Region *string
+```
+
+- *Type:* *string
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/datapipeline_pipeline#region DataAwsDatapipelinePipeline#region}
 
 ---
 
@@ -783,7 +828,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/datapipeline_pipeline#tags DataAwsDatapipelinePipeline#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/datapipeline_pipeline#tags DataAwsDatapipelinePipeline#tags}.
 
 ---
 

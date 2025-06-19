@@ -4,12 +4,12 @@
 
 ### DataAwsEmrcontainersVirtualCluster <a name="DataAwsEmrcontainersVirtualCluster" id="@cdktf/provider-aws.dataAwsEmrcontainersVirtualCluster.DataAwsEmrcontainersVirtualCluster"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/emrcontainers_virtual_cluster aws_emrcontainers_virtual_cluster}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/emrcontainers_virtual_cluster aws_emrcontainers_virtual_cluster}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEmrcontainersVirtualCluster.DataAwsEmrcontainersVirtualCluster.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsemrcontainersvirtualcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsemrcontainersvirtualcluster"
 
 dataawsemrcontainersvirtualcluster.NewDataAwsEmrcontainersVirtualCluster(scope Construct, id *string, config DataAwsEmrcontainersVirtualClusterConfig) DataAwsEmrcontainersVirtualCluster
 ```
@@ -68,6 +68,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.dataAwsEmrcontainersVirtualCluster.DataAwsEmrcontainersVirtualCluster.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsEmrcontainersVirtualCluster.DataAwsEmrcontainersVirtualCluster.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsEmrcontainersVirtualCluster.DataAwsEmrcontainersVirtualCluster.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsEmrcontainersVirtualCluster.DataAwsEmrcontainersVirtualCluster.resetRegion">ResetRegion</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsEmrcontainersVirtualCluster.DataAwsEmrcontainersVirtualCluster.resetTags">ResetTags</a></code> | *No description.* |
 
 ---
@@ -270,6 +271,12 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 func ResetId()
 ```
 
+##### `ResetRegion` <a name="ResetRegion" id="@cdktf/provider-aws.dataAwsEmrcontainersVirtualCluster.DataAwsEmrcontainersVirtualCluster.resetRegion"></a>
+
+```go
+func ResetRegion()
+```
+
 ##### `ResetTags` <a name="ResetTags" id="@cdktf/provider-aws.dataAwsEmrcontainersVirtualCluster.DataAwsEmrcontainersVirtualCluster.resetTags"></a>
 
 ```go
@@ -290,7 +297,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsEmrcontainersVirtualCluster.DataAwsEmrcontainersVirtualCluster.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsemrcontainersvirtualcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsemrcontainersvirtualcluster"
 
 dataawsemrcontainersvirtualcluster.DataAwsEmrcontainersVirtualCluster_IsConstruct(x interface{}) *bool
 ```
@@ -322,7 +329,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsEmrcontainersVirtualCluster.DataAwsEmrcontainersVirtualCluster.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsemrcontainersvirtualcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsemrcontainersvirtualcluster"
 
 dataawsemrcontainersvirtualcluster.DataAwsEmrcontainersVirtualCluster_IsTerraformElement(x interface{}) *bool
 ```
@@ -336,7 +343,7 @@ dataawsemrcontainersvirtualcluster.DataAwsEmrcontainersVirtualCluster_IsTerrafor
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsEmrcontainersVirtualCluster.DataAwsEmrcontainersVirtualCluster.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsemrcontainersvirtualcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsemrcontainersvirtualcluster"
 
 dataawsemrcontainersvirtualcluster.DataAwsEmrcontainersVirtualCluster_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -350,7 +357,7 @@ dataawsemrcontainersvirtualcluster.DataAwsEmrcontainersVirtualCluster_IsTerrafor
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsEmrcontainersVirtualCluster.DataAwsEmrcontainersVirtualCluster.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsemrcontainersvirtualcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsemrcontainersvirtualcluster"
 
 dataawsemrcontainersvirtualcluster.DataAwsEmrcontainersVirtualCluster_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -379,7 +386,7 @@ The construct id used in the generated config for the DataAwsEmrcontainersVirtua
 
 The id of the existing DataAwsEmrcontainersVirtualCluster that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/emrcontainers_virtual_cluster#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/emrcontainers_virtual_cluster#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -413,9 +420,11 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.dataAwsEmrcontainersVirtualCluster.DataAwsEmrcontainersVirtualCluster.property.name">Name</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsEmrcontainersVirtualCluster.DataAwsEmrcontainersVirtualCluster.property.state">State</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsEmrcontainersVirtualCluster.DataAwsEmrcontainersVirtualCluster.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsEmrcontainersVirtualCluster.DataAwsEmrcontainersVirtualCluster.property.regionInput">RegionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsEmrcontainersVirtualCluster.DataAwsEmrcontainersVirtualCluster.property.tagsInput">TagsInput</a></code> | <code>*map[string]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsEmrcontainersVirtualCluster.DataAwsEmrcontainersVirtualCluster.property.virtualClusterIdInput">VirtualClusterIdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsEmrcontainersVirtualCluster.DataAwsEmrcontainersVirtualCluster.property.id">Id</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsEmrcontainersVirtualCluster.DataAwsEmrcontainersVirtualCluster.property.region">Region</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsEmrcontainersVirtualCluster.DataAwsEmrcontainersVirtualCluster.property.tags">Tags</a></code> | <code>*map[string]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsEmrcontainersVirtualCluster.DataAwsEmrcontainersVirtualCluster.property.virtualClusterId">VirtualClusterId</a></code> | <code>*string</code> | *No description.* |
 
@@ -603,6 +612,16 @@ func IdInput() *string
 
 ---
 
+##### `RegionInput`<sup>Optional</sup> <a name="RegionInput" id="@cdktf/provider-aws.dataAwsEmrcontainersVirtualCluster.DataAwsEmrcontainersVirtualCluster.property.regionInput"></a>
+
+```go
+func RegionInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `TagsInput`<sup>Optional</sup> <a name="TagsInput" id="@cdktf/provider-aws.dataAwsEmrcontainersVirtualCluster.DataAwsEmrcontainersVirtualCluster.property.tagsInput"></a>
 
 ```go
@@ -627,6 +646,16 @@ func VirtualClusterIdInput() *string
 
 ```go
 func Id() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Region`<sup>Required</sup> <a name="Region" id="@cdktf/provider-aws.dataAwsEmrcontainersVirtualCluster.DataAwsEmrcontainersVirtualCluster.property.region"></a>
+
+```go
+func Region() *string
 ```
 
 - *Type:* *string
@@ -678,7 +707,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEmrcontainersVirtualCluster.DataAwsEmrcontainersVirtualClusterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsemrcontainersvirtualcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsemrcontainersvirtualcluster"
 
 &dataawsemrcontainersvirtualcluster.DataAwsEmrcontainersVirtualClusterConfig {
 	Connection: interface{},
@@ -690,6 +719,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsemrcontainersvirtu
 	Provisioners: *[]interface{},
 	VirtualClusterId: *string,
 	Id: *string,
+	Region: *string,
 	Tags: *map[string]*string,
 }
 ```
@@ -705,9 +735,10 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsemrcontainersvirtu
 | <code><a href="#@cdktf/provider-aws.dataAwsEmrcontainersVirtualCluster.DataAwsEmrcontainersVirtualClusterConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsEmrcontainersVirtualCluster.DataAwsEmrcontainersVirtualClusterConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsEmrcontainersVirtualCluster.DataAwsEmrcontainersVirtualClusterConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsEmrcontainersVirtualCluster.DataAwsEmrcontainersVirtualClusterConfig.property.virtualClusterId">VirtualClusterId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/emrcontainers_virtual_cluster#virtual_cluster_id DataAwsEmrcontainersVirtualCluster#virtual_cluster_id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsEmrcontainersVirtualCluster.DataAwsEmrcontainersVirtualClusterConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/emrcontainers_virtual_cluster#id DataAwsEmrcontainersVirtualCluster#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsEmrcontainersVirtualCluster.DataAwsEmrcontainersVirtualClusterConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/emrcontainers_virtual_cluster#tags DataAwsEmrcontainersVirtualCluster#tags}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsEmrcontainersVirtualCluster.DataAwsEmrcontainersVirtualClusterConfig.property.virtualClusterId">VirtualClusterId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/emrcontainers_virtual_cluster#virtual_cluster_id DataAwsEmrcontainersVirtualCluster#virtual_cluster_id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsEmrcontainersVirtualCluster.DataAwsEmrcontainersVirtualClusterConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/emrcontainers_virtual_cluster#id DataAwsEmrcontainersVirtualCluster#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsEmrcontainersVirtualCluster.DataAwsEmrcontainersVirtualClusterConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
+| <code><a href="#@cdktf/provider-aws.dataAwsEmrcontainersVirtualCluster.DataAwsEmrcontainersVirtualClusterConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/emrcontainers_virtual_cluster#tags DataAwsEmrcontainersVirtualCluster#tags}. |
 
 ---
 
@@ -789,7 +820,7 @@ VirtualClusterId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/emrcontainers_virtual_cluster#virtual_cluster_id DataAwsEmrcontainersVirtualCluster#virtual_cluster_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/emrcontainers_virtual_cluster#virtual_cluster_id DataAwsEmrcontainersVirtualCluster#virtual_cluster_id}.
 
 ---
 
@@ -801,10 +832,24 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/emrcontainers_virtual_cluster#id DataAwsEmrcontainersVirtualCluster#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/emrcontainers_virtual_cluster#id DataAwsEmrcontainersVirtualCluster#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `Region`<sup>Optional</sup> <a name="Region" id="@cdktf/provider-aws.dataAwsEmrcontainersVirtualCluster.DataAwsEmrcontainersVirtualClusterConfig.property.region"></a>
+
+```go
+Region *string
+```
+
+- *Type:* *string
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/emrcontainers_virtual_cluster#region DataAwsEmrcontainersVirtualCluster#region}
 
 ---
 
@@ -816,7 +861,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/emrcontainers_virtual_cluster#tags DataAwsEmrcontainersVirtualCluster#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/emrcontainers_virtual_cluster#tags DataAwsEmrcontainersVirtualCluster#tags}.
 
 ---
 
@@ -825,7 +870,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEmrcontainersVirtualCluster.DataAwsEmrcontainersVirtualClusterContainerProvider.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsemrcontainersvirtualcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsemrcontainersvirtualcluster"
 
 &dataawsemrcontainersvirtualcluster.DataAwsEmrcontainersVirtualClusterContainerProvider {
 
@@ -838,7 +883,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsemrcontainersvirtu
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEmrcontainersVirtualCluster.DataAwsEmrcontainersVirtualClusterContainerProviderInfo.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsemrcontainersvirtualcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsemrcontainersvirtualcluster"
 
 &dataawsemrcontainersvirtualcluster.DataAwsEmrcontainersVirtualClusterContainerProviderInfo {
 
@@ -851,7 +896,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsemrcontainersvirtu
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEmrcontainersVirtualCluster.DataAwsEmrcontainersVirtualClusterContainerProviderInfoEksInfo.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsemrcontainersvirtualcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsemrcontainersvirtualcluster"
 
 &dataawsemrcontainersvirtualcluster.DataAwsEmrcontainersVirtualClusterContainerProviderInfoEksInfo {
 
@@ -866,7 +911,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsemrcontainersvirtu
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEmrcontainersVirtualCluster.DataAwsEmrcontainersVirtualClusterContainerProviderInfoEksInfoList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsemrcontainersvirtualcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsemrcontainersvirtualcluster"
 
 dataawsemrcontainersvirtualcluster.NewDataAwsEmrcontainersVirtualClusterContainerProviderInfoEksInfoList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEmrcontainersVirtualClusterContainerProviderInfoEksInfoList
 ```
@@ -1015,7 +1060,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEmrcontainersVirtualCluster.DataAwsEmrcontainersVirtualClusterContainerProviderInfoEksInfoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsemrcontainersvirtualcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsemrcontainersvirtualcluster"
 
 dataawsemrcontainersvirtualcluster.NewDataAwsEmrcontainersVirtualClusterContainerProviderInfoEksInfoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEmrcontainersVirtualClusterContainerProviderInfoEksInfoOutputReference
 ```
@@ -1293,7 +1338,7 @@ func InternalValue() DataAwsEmrcontainersVirtualClusterContainerProviderInfoEksI
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEmrcontainersVirtualCluster.DataAwsEmrcontainersVirtualClusterContainerProviderInfoList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsemrcontainersvirtualcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsemrcontainersvirtualcluster"
 
 dataawsemrcontainersvirtualcluster.NewDataAwsEmrcontainersVirtualClusterContainerProviderInfoList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEmrcontainersVirtualClusterContainerProviderInfoList
 ```
@@ -1442,7 +1487,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEmrcontainersVirtualCluster.DataAwsEmrcontainersVirtualClusterContainerProviderInfoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsemrcontainersvirtualcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsemrcontainersvirtualcluster"
 
 dataawsemrcontainersvirtualcluster.NewDataAwsEmrcontainersVirtualClusterContainerProviderInfoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEmrcontainersVirtualClusterContainerProviderInfoOutputReference
 ```
@@ -1720,7 +1765,7 @@ func InternalValue() DataAwsEmrcontainersVirtualClusterContainerProviderInfo
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEmrcontainersVirtualCluster.DataAwsEmrcontainersVirtualClusterContainerProviderList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsemrcontainersvirtualcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsemrcontainersvirtualcluster"
 
 dataawsemrcontainersvirtualcluster.NewDataAwsEmrcontainersVirtualClusterContainerProviderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEmrcontainersVirtualClusterContainerProviderList
 ```
@@ -1869,7 +1914,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEmrcontainersVirtualCluster.DataAwsEmrcontainersVirtualClusterContainerProviderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsemrcontainersvirtualcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsemrcontainersvirtualcluster"
 
 dataawsemrcontainersvirtualcluster.NewDataAwsEmrcontainersVirtualClusterContainerProviderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEmrcontainersVirtualClusterContainerProviderOutputReference
 ```

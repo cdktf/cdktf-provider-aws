@@ -4,7 +4,7 @@
 
 ### DataAwsSsmDocument <a name="DataAwsSsmDocument" id="@cdktf/provider-aws.dataAwsSsmDocument.DataAwsSsmDocument"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ssm_document aws_ssm_document}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ssm_document aws_ssm_document}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsSsmDocument.DataAwsSsmDocument.Initializer"></a>
 
@@ -24,7 +24,8 @@ dataAwsSsmDocument.DataAwsSsmDocument(
   name: str,
   document_format: str = None,
   document_version: str = None,
-  id: str = None
+  id: str = None,
+  region: str = None
 )
 ```
 
@@ -39,10 +40,11 @@ dataAwsSsmDocument.DataAwsSsmDocument(
 | <code><a href="#@cdktf/provider-aws.dataAwsSsmDocument.DataAwsSsmDocument.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsSsmDocument.DataAwsSsmDocument.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsSsmDocument.DataAwsSsmDocument.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsSsmDocument.DataAwsSsmDocument.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ssm_document#name DataAwsSsmDocument#name}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsSsmDocument.DataAwsSsmDocument.Initializer.parameter.documentFormat">document_format</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ssm_document#document_format DataAwsSsmDocument#document_format}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsSsmDocument.DataAwsSsmDocument.Initializer.parameter.documentVersion">document_version</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ssm_document#document_version DataAwsSsmDocument#document_version}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsSsmDocument.DataAwsSsmDocument.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ssm_document#id DataAwsSsmDocument#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsSsmDocument.DataAwsSsmDocument.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ssm_document#name DataAwsSsmDocument#name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsSsmDocument.DataAwsSsmDocument.Initializer.parameter.documentFormat">document_format</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ssm_document#document_format DataAwsSsmDocument#document_format}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsSsmDocument.DataAwsSsmDocument.Initializer.parameter.documentVersion">document_version</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ssm_document#document_version DataAwsSsmDocument#document_version}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsSsmDocument.DataAwsSsmDocument.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ssm_document#id DataAwsSsmDocument#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsSsmDocument.DataAwsSsmDocument.Initializer.parameter.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
 
@@ -110,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ssm_document#name DataAwsSsmDocument#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ssm_document#name DataAwsSsmDocument#name}.
 
 ---
 
@@ -118,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ssm_document#document_format DataAwsSsmDocument#document_format}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ssm_document#document_format DataAwsSsmDocument#document_format}.
 
 ---
 
@@ -126,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ssm_document#document_version DataAwsSsmDocument#document_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ssm_document#document_version DataAwsSsmDocument#document_version}.
 
 ---
 
@@ -134,10 +136,20 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ssm_document#id DataAwsSsmDocument#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ssm_document#id DataAwsSsmDocument#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdktf/provider-aws.dataAwsSsmDocument.DataAwsSsmDocument.Initializer.parameter.region"></a>
+
+- *Type:* str
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ssm_document#region DataAwsSsmDocument#region}
 
 ---
 
@@ -165,6 +177,7 @@ If you experience problems setting this value it might not be settable. Please t
 | <code><a href="#@cdktf/provider-aws.dataAwsSsmDocument.DataAwsSsmDocument.resetDocumentFormat">reset_document_format</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsSsmDocument.DataAwsSsmDocument.resetDocumentVersion">reset_document_version</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsSsmDocument.DataAwsSsmDocument.resetId">reset_id</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsSsmDocument.DataAwsSsmDocument.resetRegion">reset_region</a></code> | *No description.* |
 
 ---
 
@@ -403,6 +416,12 @@ def reset_document_version() -> None
 def reset_id() -> None
 ```
 
+##### `reset_region` <a name="reset_region" id="@cdktf/provider-aws.dataAwsSsmDocument.DataAwsSsmDocument.resetRegion"></a>
+
+```python
+def reset_region() -> None
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -517,7 +536,7 @@ The construct id used in the generated config for the DataAwsSsmDocument to impo
 
 The id of the existing DataAwsSsmDocument that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ssm_document#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ssm_document#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -552,10 +571,12 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.dataAwsSsmDocument.DataAwsSsmDocument.property.documentVersionInput">document_version_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsSsmDocument.DataAwsSsmDocument.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsSsmDocument.DataAwsSsmDocument.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsSsmDocument.DataAwsSsmDocument.property.regionInput">region_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsSsmDocument.DataAwsSsmDocument.property.documentFormat">document_format</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsSsmDocument.DataAwsSsmDocument.property.documentVersion">document_version</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsSsmDocument.DataAwsSsmDocument.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsSsmDocument.DataAwsSsmDocument.property.name">name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsSsmDocument.DataAwsSsmDocument.property.region">region</a></code> | <code>str</code> | *No description.* |
 
 ---
 
@@ -751,6 +772,16 @@ name_input: str
 
 ---
 
+##### `region_input`<sup>Optional</sup> <a name="region_input" id="@cdktf/provider-aws.dataAwsSsmDocument.DataAwsSsmDocument.property.regionInput"></a>
+
+```python
+region_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `document_format`<sup>Required</sup> <a name="document_format" id="@cdktf/provider-aws.dataAwsSsmDocument.DataAwsSsmDocument.property.documentFormat"></a>
 
 ```python
@@ -785,6 +816,16 @@ id: str
 
 ```python
 name: str
+```
+
+- *Type:* str
+
+---
+
+##### `region`<sup>Required</sup> <a name="region" id="@cdktf/provider-aws.dataAwsSsmDocument.DataAwsSsmDocument.property.region"></a>
+
+```python
+region: str
 ```
 
 - *Type:* str
@@ -829,7 +870,8 @@ dataAwsSsmDocument.DataAwsSsmDocumentConfig(
   name: str,
   document_format: str = None,
   document_version: str = None,
-  id: str = None
+  id: str = None,
+  region: str = None
 )
 ```
 
@@ -844,10 +886,11 @@ dataAwsSsmDocument.DataAwsSsmDocumentConfig(
 | <code><a href="#@cdktf/provider-aws.dataAwsSsmDocument.DataAwsSsmDocumentConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsSsmDocument.DataAwsSsmDocumentConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsSsmDocument.DataAwsSsmDocumentConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsSsmDocument.DataAwsSsmDocumentConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ssm_document#name DataAwsSsmDocument#name}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsSsmDocument.DataAwsSsmDocumentConfig.property.documentFormat">document_format</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ssm_document#document_format DataAwsSsmDocument#document_format}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsSsmDocument.DataAwsSsmDocumentConfig.property.documentVersion">document_version</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ssm_document#document_version DataAwsSsmDocument#document_version}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsSsmDocument.DataAwsSsmDocumentConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ssm_document#id DataAwsSsmDocument#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsSsmDocument.DataAwsSsmDocumentConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ssm_document#name DataAwsSsmDocument#name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsSsmDocument.DataAwsSsmDocumentConfig.property.documentFormat">document_format</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ssm_document#document_format DataAwsSsmDocument#document_format}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsSsmDocument.DataAwsSsmDocumentConfig.property.documentVersion">document_version</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ssm_document#document_version DataAwsSsmDocument#document_version}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsSsmDocument.DataAwsSsmDocumentConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ssm_document#id DataAwsSsmDocument#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsSsmDocument.DataAwsSsmDocumentConfig.property.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
 
@@ -929,7 +972,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ssm_document#name DataAwsSsmDocument#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ssm_document#name DataAwsSsmDocument#name}.
 
 ---
 
@@ -941,7 +984,7 @@ document_format: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ssm_document#document_format DataAwsSsmDocument#document_format}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ssm_document#document_format DataAwsSsmDocument#document_format}.
 
 ---
 
@@ -953,7 +996,7 @@ document_version: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ssm_document#document_version DataAwsSsmDocument#document_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ssm_document#document_version DataAwsSsmDocument#document_version}.
 
 ---
 
@@ -965,10 +1008,24 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ssm_document#id DataAwsSsmDocument#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ssm_document#id DataAwsSsmDocument#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdktf/provider-aws.dataAwsSsmDocument.DataAwsSsmDocumentConfig.property.region"></a>
+
+```python
+region: str
+```
+
+- *Type:* str
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ssm_document#region DataAwsSsmDocument#region}
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### ConnectSecurityProfile <a name="ConnectSecurityProfile" id="@cdktf/provider-aws.connectSecurityProfile.ConnectSecurityProfile"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/connect_security_profile aws_connect_security_profile}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/connect_security_profile aws_connect_security_profile}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.connectSecurityProfile.ConnectSecurityProfile.Initializer"></a>
 
@@ -76,6 +76,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.connectSecurityProfile.ConnectSecurityProfile.resetDescription">resetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.connectSecurityProfile.ConnectSecurityProfile.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.connectSecurityProfile.ConnectSecurityProfile.resetPermissions">resetPermissions</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.connectSecurityProfile.ConnectSecurityProfile.resetRegion">resetRegion</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.connectSecurityProfile.ConnectSecurityProfile.resetTags">resetTags</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.connectSecurityProfile.ConnectSecurityProfile.resetTagsAll">resetTagsAll</a></code> | *No description.* |
 
@@ -387,6 +388,12 @@ public resetId(): void
 public resetPermissions(): void
 ```
 
+##### `resetRegion` <a name="resetRegion" id="@cdktf/provider-aws.connectSecurityProfile.ConnectSecurityProfile.resetRegion"></a>
+
+```typescript
+public resetRegion(): void
+```
+
 ##### `resetTags` <a name="resetTags" id="@cdktf/provider-aws.connectSecurityProfile.ConnectSecurityProfile.resetTags"></a>
 
 ```typescript
@@ -502,7 +509,7 @@ The construct id used in the generated config for the ConnectSecurityProfile to 
 
 The id of the existing ConnectSecurityProfile that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/connect_security_profile#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/connect_security_profile#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -540,6 +547,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.connectSecurityProfile.ConnectSecurityProfile.property.instanceIdInput">instanceIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.connectSecurityProfile.ConnectSecurityProfile.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.connectSecurityProfile.ConnectSecurityProfile.property.permissionsInput">permissionsInput</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.connectSecurityProfile.ConnectSecurityProfile.property.regionInput">regionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.connectSecurityProfile.ConnectSecurityProfile.property.tagsAllInput">tagsAllInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.connectSecurityProfile.ConnectSecurityProfile.property.tagsInput">tagsInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.connectSecurityProfile.ConnectSecurityProfile.property.description">description</a></code> | <code>string</code> | *No description.* |
@@ -547,6 +555,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.connectSecurityProfile.ConnectSecurityProfile.property.instanceId">instanceId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.connectSecurityProfile.ConnectSecurityProfile.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.connectSecurityProfile.ConnectSecurityProfile.property.permissions">permissions</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.connectSecurityProfile.ConnectSecurityProfile.property.region">region</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.connectSecurityProfile.ConnectSecurityProfile.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.connectSecurityProfile.ConnectSecurityProfile.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 
@@ -774,6 +783,16 @@ public readonly permissionsInput: string[];
 
 ---
 
+##### `regionInput`<sup>Optional</sup> <a name="regionInput" id="@cdktf/provider-aws.connectSecurityProfile.ConnectSecurityProfile.property.regionInput"></a>
+
+```typescript
+public readonly regionInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `tagsAllInput`<sup>Optional</sup> <a name="tagsAllInput" id="@cdktf/provider-aws.connectSecurityProfile.ConnectSecurityProfile.property.tagsAllInput"></a>
 
 ```typescript
@@ -844,6 +863,16 @@ public readonly permissions: string[];
 
 ---
 
+##### `region`<sup>Required</sup> <a name="region" id="@cdktf/provider-aws.connectSecurityProfile.ConnectSecurityProfile.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `tags`<sup>Required</sup> <a name="tags" id="@cdktf/provider-aws.connectSecurityProfile.ConnectSecurityProfile.property.tags"></a>
 
 ```typescript
@@ -905,13 +934,14 @@ const connectSecurityProfileConfig: connectSecurityProfile.ConnectSecurityProfil
 | <code><a href="#@cdktf/provider-aws.connectSecurityProfile.ConnectSecurityProfileConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.connectSecurityProfile.ConnectSecurityProfileConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.connectSecurityProfile.ConnectSecurityProfileConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.connectSecurityProfile.ConnectSecurityProfileConfig.property.instanceId">instanceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/connect_security_profile#instance_id ConnectSecurityProfile#instance_id}. |
-| <code><a href="#@cdktf/provider-aws.connectSecurityProfile.ConnectSecurityProfileConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/connect_security_profile#name ConnectSecurityProfile#name}. |
-| <code><a href="#@cdktf/provider-aws.connectSecurityProfile.ConnectSecurityProfileConfig.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/connect_security_profile#description ConnectSecurityProfile#description}. |
-| <code><a href="#@cdktf/provider-aws.connectSecurityProfile.ConnectSecurityProfileConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/connect_security_profile#id ConnectSecurityProfile#id}. |
-| <code><a href="#@cdktf/provider-aws.connectSecurityProfile.ConnectSecurityProfileConfig.property.permissions">permissions</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/connect_security_profile#permissions ConnectSecurityProfile#permissions}. |
-| <code><a href="#@cdktf/provider-aws.connectSecurityProfile.ConnectSecurityProfileConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/connect_security_profile#tags ConnectSecurityProfile#tags}. |
-| <code><a href="#@cdktf/provider-aws.connectSecurityProfile.ConnectSecurityProfileConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/connect_security_profile#tags_all ConnectSecurityProfile#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.connectSecurityProfile.ConnectSecurityProfileConfig.property.instanceId">instanceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/connect_security_profile#instance_id ConnectSecurityProfile#instance_id}. |
+| <code><a href="#@cdktf/provider-aws.connectSecurityProfile.ConnectSecurityProfileConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/connect_security_profile#name ConnectSecurityProfile#name}. |
+| <code><a href="#@cdktf/provider-aws.connectSecurityProfile.ConnectSecurityProfileConfig.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/connect_security_profile#description ConnectSecurityProfile#description}. |
+| <code><a href="#@cdktf/provider-aws.connectSecurityProfile.ConnectSecurityProfileConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/connect_security_profile#id ConnectSecurityProfile#id}. |
+| <code><a href="#@cdktf/provider-aws.connectSecurityProfile.ConnectSecurityProfileConfig.property.permissions">permissions</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/connect_security_profile#permissions ConnectSecurityProfile#permissions}. |
+| <code><a href="#@cdktf/provider-aws.connectSecurityProfile.ConnectSecurityProfileConfig.property.region">region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
+| <code><a href="#@cdktf/provider-aws.connectSecurityProfile.ConnectSecurityProfileConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/connect_security_profile#tags ConnectSecurityProfile#tags}. |
+| <code><a href="#@cdktf/provider-aws.connectSecurityProfile.ConnectSecurityProfileConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/connect_security_profile#tags_all ConnectSecurityProfile#tags_all}. |
 
 ---
 
@@ -993,7 +1023,7 @@ public readonly instanceId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/connect_security_profile#instance_id ConnectSecurityProfile#instance_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/connect_security_profile#instance_id ConnectSecurityProfile#instance_id}.
 
 ---
 
@@ -1005,7 +1035,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/connect_security_profile#name ConnectSecurityProfile#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/connect_security_profile#name ConnectSecurityProfile#name}.
 
 ---
 
@@ -1017,7 +1047,7 @@ public readonly description: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/connect_security_profile#description ConnectSecurityProfile#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/connect_security_profile#description ConnectSecurityProfile#description}.
 
 ---
 
@@ -1029,7 +1059,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/connect_security_profile#id ConnectSecurityProfile#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/connect_security_profile#id ConnectSecurityProfile#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1044,7 +1074,21 @@ public readonly permissions: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/connect_security_profile#permissions ConnectSecurityProfile#permissions}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/connect_security_profile#permissions ConnectSecurityProfile#permissions}.
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdktf/provider-aws.connectSecurityProfile.ConnectSecurityProfileConfig.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/connect_security_profile#region ConnectSecurityProfile#region}
 
 ---
 
@@ -1056,7 +1100,7 @@ public readonly tags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/connect_security_profile#tags ConnectSecurityProfile#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/connect_security_profile#tags ConnectSecurityProfile#tags}.
 
 ---
 
@@ -1068,7 +1112,7 @@ public readonly tagsAll: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/connect_security_profile#tags_all ConnectSecurityProfile#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/connect_security_profile#tags_all ConnectSecurityProfile#tags_all}.
 
 ---
 

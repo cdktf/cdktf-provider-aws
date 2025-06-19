@@ -4,12 +4,12 @@
 
 ### EcrAccountSetting <a name="EcrAccountSetting" id="@cdktf/provider-aws.ecrAccountSetting.EcrAccountSetting"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ecr_account_setting aws_ecr_account_setting}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ecr_account_setting aws_ecr_account_setting}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ecrAccountSetting.EcrAccountSetting.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/ecraccountsetting"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/ecraccountsetting"
 
 ecraccountsetting.NewEcrAccountSetting(scope Construct, id *string, config EcrAccountSettingConfig) EcrAccountSetting
 ```
@@ -73,6 +73,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.ecrAccountSetting.EcrAccountSetting.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktf/provider-aws.ecrAccountSetting.EcrAccountSetting.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-aws.ecrAccountSetting.EcrAccountSetting.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktf/provider-aws.ecrAccountSetting.EcrAccountSetting.resetRegion">ResetRegion</a></code> | *No description.* |
 
 ---
 
@@ -364,6 +365,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `ResetRegion` <a name="ResetRegion" id="@cdktf/provider-aws.ecrAccountSetting.EcrAccountSetting.resetRegion"></a>
+
+```go
+func ResetRegion()
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -378,7 +385,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.ecrAccountSetting.EcrAccountSetting.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/ecraccountsetting"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/ecraccountsetting"
 
 ecraccountsetting.EcrAccountSetting_IsConstruct(x interface{}) *bool
 ```
@@ -410,7 +417,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.ecrAccountSetting.EcrAccountSetting.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/ecraccountsetting"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/ecraccountsetting"
 
 ecraccountsetting.EcrAccountSetting_IsTerraformElement(x interface{}) *bool
 ```
@@ -424,7 +431,7 @@ ecraccountsetting.EcrAccountSetting_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.ecrAccountSetting.EcrAccountSetting.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/ecraccountsetting"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/ecraccountsetting"
 
 ecraccountsetting.EcrAccountSetting_IsTerraformResource(x interface{}) *bool
 ```
@@ -438,7 +445,7 @@ ecraccountsetting.EcrAccountSetting_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.ecrAccountSetting.EcrAccountSetting.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/ecraccountsetting"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/ecraccountsetting"
 
 ecraccountsetting.EcrAccountSetting_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -467,7 +474,7 @@ The construct id used in the generated config for the EcrAccountSetting to impor
 
 The id of the existing EcrAccountSetting that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ecr_account_setting#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ecr_account_setting#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -498,8 +505,10 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.ecrAccountSetting.EcrAccountSetting.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecrAccountSetting.EcrAccountSetting.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecrAccountSetting.EcrAccountSetting.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ecrAccountSetting.EcrAccountSetting.property.regionInput">RegionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecrAccountSetting.EcrAccountSetting.property.valueInput">ValueInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecrAccountSetting.EcrAccountSetting.property.name">Name</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ecrAccountSetting.EcrAccountSetting.property.region">Region</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecrAccountSetting.EcrAccountSetting.property.value">Value</a></code> | <code>*string</code> | *No description.* |
 
 ---
@@ -656,6 +665,16 @@ func NameInput() *string
 
 ---
 
+##### `RegionInput`<sup>Optional</sup> <a name="RegionInput" id="@cdktf/provider-aws.ecrAccountSetting.EcrAccountSetting.property.regionInput"></a>
+
+```go
+func RegionInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `ValueInput`<sup>Optional</sup> <a name="ValueInput" id="@cdktf/provider-aws.ecrAccountSetting.EcrAccountSetting.property.valueInput"></a>
 
 ```go
@@ -670,6 +689,16 @@ func ValueInput() *string
 
 ```go
 func Name() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Region`<sup>Required</sup> <a name="Region" id="@cdktf/provider-aws.ecrAccountSetting.EcrAccountSetting.property.region"></a>
+
+```go
+func Region() *string
 ```
 
 - *Type:* *string
@@ -711,7 +740,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ecrAccountSetting.EcrAccountSettingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/ecraccountsetting"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/ecraccountsetting"
 
 &ecraccountsetting.EcrAccountSettingConfig {
 	Connection: interface{},
@@ -723,6 +752,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/ecraccountsetting"
 	Provisioners: *[]interface{},
 	Name: *string,
 	Value: *string,
+	Region: *string,
 }
 ```
 
@@ -737,8 +767,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/ecraccountsetting"
 | <code><a href="#@cdktf/provider-aws.ecrAccountSetting.EcrAccountSettingConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecrAccountSetting.EcrAccountSettingConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecrAccountSetting.EcrAccountSettingConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ecrAccountSetting.EcrAccountSettingConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ecr_account_setting#name EcrAccountSetting#name}. |
-| <code><a href="#@cdktf/provider-aws.ecrAccountSetting.EcrAccountSettingConfig.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ecr_account_setting#value EcrAccountSetting#value}. |
+| <code><a href="#@cdktf/provider-aws.ecrAccountSetting.EcrAccountSettingConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ecr_account_setting#name EcrAccountSetting#name}. |
+| <code><a href="#@cdktf/provider-aws.ecrAccountSetting.EcrAccountSettingConfig.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ecr_account_setting#value EcrAccountSetting#value}. |
+| <code><a href="#@cdktf/provider-aws.ecrAccountSetting.EcrAccountSettingConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
 
@@ -820,7 +851,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ecr_account_setting#name EcrAccountSetting#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ecr_account_setting#name EcrAccountSetting#name}.
 
 ---
 
@@ -832,7 +863,21 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ecr_account_setting#value EcrAccountSetting#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ecr_account_setting#value EcrAccountSetting#value}.
+
+---
+
+##### `Region`<sup>Optional</sup> <a name="Region" id="@cdktf/provider-aws.ecrAccountSetting.EcrAccountSettingConfig.property.region"></a>
+
+```go
+Region *string
+```
+
+- *Type:* *string
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ecr_account_setting#region EcrAccountSetting#region}
 
 ---
 

@@ -4,12 +4,12 @@
 
 ### RekognitionStreamProcessor <a name="RekognitionStreamProcessor" id="@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessor"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/rekognition_stream_processor aws_rekognition_stream_processor}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rekognition_stream_processor aws_rekognition_stream_processor}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessor.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/rekognitionstreamprocessor"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/rekognitionstreamprocessor"
 
 rekognitionstreamprocessor.NewRekognitionStreamProcessor(scope Construct, id *string, config RekognitionStreamProcessorConfig) RekognitionStreamProcessor
 ```
@@ -85,6 +85,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessor.resetKmsKeyId">ResetKmsKeyId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessor.resetNotificationChannel">ResetNotificationChannel</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessor.resetOutput">ResetOutput</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessor.resetRegion">ResetRegion</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessor.resetRegionsOfInterest">ResetRegionsOfInterest</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessor.resetSettings">ResetSettings</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessor.resetTags">ResetTags</a></code> | *No description.* |
@@ -494,6 +495,12 @@ func ResetNotificationChannel()
 func ResetOutput()
 ```
 
+##### `ResetRegion` <a name="ResetRegion" id="@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessor.resetRegion"></a>
+
+```go
+func ResetRegion()
+```
+
 ##### `ResetRegionsOfInterest` <a name="ResetRegionsOfInterest" id="@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessor.resetRegionsOfInterest"></a>
 
 ```go
@@ -532,7 +539,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessor.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/rekognitionstreamprocessor"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/rekognitionstreamprocessor"
 
 rekognitionstreamprocessor.RekognitionStreamProcessor_IsConstruct(x interface{}) *bool
 ```
@@ -564,7 +571,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessor.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/rekognitionstreamprocessor"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/rekognitionstreamprocessor"
 
 rekognitionstreamprocessor.RekognitionStreamProcessor_IsTerraformElement(x interface{}) *bool
 ```
@@ -578,7 +585,7 @@ rekognitionstreamprocessor.RekognitionStreamProcessor_IsTerraformElement(x inter
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessor.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/rekognitionstreamprocessor"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/rekognitionstreamprocessor"
 
 rekognitionstreamprocessor.RekognitionStreamProcessor_IsTerraformResource(x interface{}) *bool
 ```
@@ -592,7 +599,7 @@ rekognitionstreamprocessor.RekognitionStreamProcessor_IsTerraformResource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessor.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/rekognitionstreamprocessor"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/rekognitionstreamprocessor"
 
 rekognitionstreamprocessor.RekognitionStreamProcessor_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -621,7 +628,7 @@ The construct id used in the generated config for the RekognitionStreamProcessor
 
 The id of the existing RekognitionStreamProcessor that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/rekognition_stream_processor#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rekognition_stream_processor#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -667,6 +674,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessor.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessor.property.notificationChannelInput">NotificationChannelInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessor.property.outputInput">OutputInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessor.property.regionInput">RegionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessor.property.regionsOfInterestInput">RegionsOfInterestInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessor.property.roleArnInput">RoleArnInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessor.property.settingsInput">SettingsInput</a></code> | <code>interface{}</code> | *No description.* |
@@ -674,6 +682,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessor.property.timeoutsInput">TimeoutsInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessor.property.kmsKeyId">KmsKeyId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessor.property.name">Name</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessor.property.region">Region</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessor.property.roleArn">RoleArn</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessor.property.tags">Tags</a></code> | <code>*map[string]*string</code> | *No description.* |
 
@@ -981,6 +990,16 @@ func OutputInput() interface{}
 
 ---
 
+##### `RegionInput`<sup>Optional</sup> <a name="RegionInput" id="@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessor.property.regionInput"></a>
+
+```go
+func RegionInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `RegionsOfInterestInput`<sup>Optional</sup> <a name="RegionsOfInterestInput" id="@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessor.property.regionsOfInterestInput"></a>
 
 ```go
@@ -1051,6 +1070,16 @@ func Name() *string
 
 ---
 
+##### `Region`<sup>Required</sup> <a name="Region" id="@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessor.property.region"></a>
+
+```go
+func Region() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `RoleArn`<sup>Required</sup> <a name="RoleArn" id="@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessor.property.roleArn"></a>
 
 ```go
@@ -1096,7 +1125,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/rekognitionstreamprocessor"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/rekognitionstreamprocessor"
 
 &rekognitionstreamprocessor.RekognitionStreamProcessorConfig {
 	Connection: interface{},
@@ -1113,10 +1142,11 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/rekognitionstreamprocesso
 	KmsKeyId: *string,
 	NotificationChannel: interface{},
 	Output: interface{},
+	Region: *string,
 	RegionsOfInterest: interface{},
 	Settings: interface{},
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v20.rekognitionStreamProcessor.RekognitionStreamProcessorTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v21.rekognitionStreamProcessor.RekognitionStreamProcessorTimeouts,
 }
 ```
 
@@ -1138,9 +1168,10 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/rekognitionstreamprocesso
 | <code><a href="#@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorConfig.property.kmsKeyId">KmsKeyId</a></code> | <code>*string</code> | The identifier for your AWS Key Management Service key (AWS KMS key). |
 | <code><a href="#@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorConfig.property.notificationChannel">NotificationChannel</a></code> | <code>interface{}</code> | notification_channel block. |
 | <code><a href="#@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorConfig.property.output">Output</a></code> | <code>interface{}</code> | output block. |
+| <code><a href="#@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorConfig.property.regionsOfInterest">RegionsOfInterest</a></code> | <code>interface{}</code> | regions_of_interest block. |
 | <code><a href="#@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorConfig.property.settings">Settings</a></code> | <code>interface{}</code> | settings block. |
-| <code><a href="#@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/rekognition_stream_processor#tags RekognitionStreamProcessor#tags}. |
+| <code><a href="#@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rekognition_stream_processor#tags RekognitionStreamProcessor#tags}. |
 | <code><a href="#@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorTimeouts">RekognitionStreamProcessorTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1225,7 +1256,7 @@ Name *string
 
 An identifier you assign to the stream processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/rekognition_stream_processor#name RekognitionStreamProcessor#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rekognition_stream_processor#name RekognitionStreamProcessor#name}
 
 ---
 
@@ -1239,7 +1270,7 @@ RoleArn *string
 
 The Amazon Resource Number (ARN) of the IAM role that allows access to the stream processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/rekognition_stream_processor#role_arn RekognitionStreamProcessor#role_arn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rekognition_stream_processor#role_arn RekognitionStreamProcessor#role_arn}
 
 ---
 
@@ -1253,7 +1284,7 @@ DataSharingPreference interface{}
 
 data_sharing_preference block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/rekognition_stream_processor#data_sharing_preference RekognitionStreamProcessor#data_sharing_preference}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rekognition_stream_processor#data_sharing_preference RekognitionStreamProcessor#data_sharing_preference}
 
 ---
 
@@ -1267,7 +1298,7 @@ Input interface{}
 
 input block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/rekognition_stream_processor#input RekognitionStreamProcessor#input}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rekognition_stream_processor#input RekognitionStreamProcessor#input}
 
 ---
 
@@ -1283,7 +1314,7 @@ The identifier for your AWS Key Management Service key (AWS KMS key).
 
 You can supply the Amazon Resource Name (ARN) of your KMS key, the ID of your KMS key, an alias for your KMS key, or an alias ARN.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/rekognition_stream_processor#kms_key_id RekognitionStreamProcessor#kms_key_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rekognition_stream_processor#kms_key_id RekognitionStreamProcessor#kms_key_id}
 
 ---
 
@@ -1297,7 +1328,7 @@ NotificationChannel interface{}
 
 notification_channel block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/rekognition_stream_processor#notification_channel RekognitionStreamProcessor#notification_channel}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rekognition_stream_processor#notification_channel RekognitionStreamProcessor#notification_channel}
 
 ---
 
@@ -1311,7 +1342,21 @@ Output interface{}
 
 output block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/rekognition_stream_processor#output RekognitionStreamProcessor#output}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rekognition_stream_processor#output RekognitionStreamProcessor#output}
+
+---
+
+##### `Region`<sup>Optional</sup> <a name="Region" id="@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorConfig.property.region"></a>
+
+```go
+Region *string
+```
+
+- *Type:* *string
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rekognition_stream_processor#region RekognitionStreamProcessor#region}
 
 ---
 
@@ -1325,7 +1370,7 @@ RegionsOfInterest interface{}
 
 regions_of_interest block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/rekognition_stream_processor#regions_of_interest RekognitionStreamProcessor#regions_of_interest}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rekognition_stream_processor#regions_of_interest RekognitionStreamProcessor#regions_of_interest}
 
 ---
 
@@ -1339,7 +1384,7 @@ Settings interface{}
 
 settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/rekognition_stream_processor#settings RekognitionStreamProcessor#settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rekognition_stream_processor#settings RekognitionStreamProcessor#settings}
 
 ---
 
@@ -1351,7 +1396,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/rekognition_stream_processor#tags RekognitionStreamProcessor#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rekognition_stream_processor#tags RekognitionStreamProcessor#tags}.
 
 ---
 
@@ -1365,7 +1410,7 @@ Timeouts RekognitionStreamProcessorTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/rekognition_stream_processor#timeouts RekognitionStreamProcessor#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rekognition_stream_processor#timeouts RekognitionStreamProcessor#timeouts}
 
 ---
 
@@ -1374,7 +1419,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorDataSharingPreference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/rekognitionstreamprocessor"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/rekognitionstreamprocessor"
 
 &rekognitionstreamprocessor.RekognitionStreamProcessorDataSharingPreference {
 	OptIn: interface{},
@@ -1399,7 +1444,7 @@ OptIn interface{}
 
 Do you want to share data with Rekognition to improve model performance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/rekognition_stream_processor#opt_in RekognitionStreamProcessor#opt_in}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rekognition_stream_processor#opt_in RekognitionStreamProcessor#opt_in}
 
 ---
 
@@ -1408,7 +1453,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorInput.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/rekognitionstreamprocessor"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/rekognitionstreamprocessor"
 
 &rekognitionstreamprocessor.RekognitionStreamProcessorInput {
 	KinesisVideoStream: interface{},
@@ -1433,7 +1478,7 @@ KinesisVideoStream interface{}
 
 kinesis_video_stream block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/rekognition_stream_processor#kinesis_video_stream RekognitionStreamProcessor#kinesis_video_stream}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rekognition_stream_processor#kinesis_video_stream RekognitionStreamProcessor#kinesis_video_stream}
 
 ---
 
@@ -1442,7 +1487,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorInputKinesisVideoStream.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/rekognitionstreamprocessor"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/rekognitionstreamprocessor"
 
 &rekognitionstreamprocessor.RekognitionStreamProcessorInputKinesisVideoStream {
 	Arn: *string,
@@ -1467,7 +1512,7 @@ Arn *string
 
 ARN of the Kinesis video stream stream that streams the source video.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/rekognition_stream_processor#arn RekognitionStreamProcessor#arn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rekognition_stream_processor#arn RekognitionStreamProcessor#arn}
 
 ---
 
@@ -1476,7 +1521,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorNotificationChannel.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/rekognitionstreamprocessor"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/rekognitionstreamprocessor"
 
 &rekognitionstreamprocessor.RekognitionStreamProcessorNotificationChannel {
 	SnsTopicArn: *string,
@@ -1501,7 +1546,7 @@ SnsTopicArn *string
 
 The Amazon Resource Number (ARN) of the Amazon Amazon Simple Notification Service topic to which Amazon Rekognition posts the completion status.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/rekognition_stream_processor#sns_topic_arn RekognitionStreamProcessor#sns_topic_arn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rekognition_stream_processor#sns_topic_arn RekognitionStreamProcessor#sns_topic_arn}
 
 ---
 
@@ -1510,7 +1555,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/rekognitionstreamprocessor"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/rekognitionstreamprocessor"
 
 &rekognitionstreamprocessor.RekognitionStreamProcessorOutput {
 	KinesisDataStream: interface{},
@@ -1537,7 +1582,7 @@ KinesisDataStream interface{}
 
 kinesis_data_stream block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/rekognition_stream_processor#kinesis_data_stream RekognitionStreamProcessor#kinesis_data_stream}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rekognition_stream_processor#kinesis_data_stream RekognitionStreamProcessor#kinesis_data_stream}
 
 ---
 
@@ -1551,7 +1596,7 @@ S3Destination interface{}
 
 s3_destination block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/rekognition_stream_processor#s3_destination RekognitionStreamProcessor#s3_destination}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rekognition_stream_processor#s3_destination RekognitionStreamProcessor#s3_destination}
 
 ---
 
@@ -1560,7 +1605,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorOutputKinesisDataStream.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/rekognitionstreamprocessor"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/rekognitionstreamprocessor"
 
 &rekognitionstreamprocessor.RekognitionStreamProcessorOutputKinesisDataStream {
 	Arn: *string,
@@ -1585,7 +1630,7 @@ Arn *string
 
 ARN of the output Amazon Kinesis Data Streams stream.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/rekognition_stream_processor#arn RekognitionStreamProcessor#arn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rekognition_stream_processor#arn RekognitionStreamProcessor#arn}
 
 ---
 
@@ -1594,7 +1639,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorOutputS3Destination.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/rekognitionstreamprocessor"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/rekognitionstreamprocessor"
 
 &rekognitionstreamprocessor.RekognitionStreamProcessorOutputS3Destination {
 	Bucket: *string,
@@ -1621,7 +1666,7 @@ Bucket *string
 
 The name of the Amazon S3 bucket you want to associate with the streaming video project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/rekognition_stream_processor#bucket RekognitionStreamProcessor#bucket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rekognition_stream_processor#bucket RekognitionStreamProcessor#bucket}
 
 ---
 
@@ -1635,7 +1680,7 @@ KeyPrefix *string
 
 The prefix value of the location within the bucket that you want the information to be published to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/rekognition_stream_processor#key_prefix RekognitionStreamProcessor#key_prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rekognition_stream_processor#key_prefix RekognitionStreamProcessor#key_prefix}
 
 ---
 
@@ -1644,10 +1689,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorRegionsOfInterest.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/rekognitionstreamprocessor"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/rekognitionstreamprocessor"
 
 &rekognitionstreamprocessor.RekognitionStreamProcessorRegionsOfInterest {
-	BoundingBox: github.com/cdktf/cdktf-provider-aws-go/aws/v20.rekognitionStreamProcessor.RekognitionStreamProcessorRegionsOfInterestBoundingBox,
+	BoundingBox: interface{},
 	Polygon: interface{},
 }
 ```
@@ -1656,7 +1701,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/rekognitionstreamprocesso
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorRegionsOfInterest.property.boundingBox">BoundingBox</a></code> | <code><a href="#@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorRegionsOfInterestBoundingBox">RekognitionStreamProcessorRegionsOfInterestBoundingBox</a></code> | bounding_box block. |
+| <code><a href="#@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorRegionsOfInterest.property.boundingBox">BoundingBox</a></code> | <code>interface{}</code> | bounding_box block. |
 | <code><a href="#@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorRegionsOfInterest.property.polygon">Polygon</a></code> | <code>interface{}</code> | polygon block. |
 
 ---
@@ -1664,14 +1709,14 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/rekognitionstreamprocesso
 ##### `BoundingBox`<sup>Optional</sup> <a name="BoundingBox" id="@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorRegionsOfInterest.property.boundingBox"></a>
 
 ```go
-BoundingBox RekognitionStreamProcessorRegionsOfInterestBoundingBox
+BoundingBox interface{}
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorRegionsOfInterestBoundingBox">RekognitionStreamProcessorRegionsOfInterestBoundingBox</a>
+- *Type:* interface{}
 
 bounding_box block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/rekognition_stream_processor#bounding_box RekognitionStreamProcessor#bounding_box}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rekognition_stream_processor#bounding_box RekognitionStreamProcessor#bounding_box}
 
 ---
 
@@ -1685,7 +1730,7 @@ Polygon interface{}
 
 polygon block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/rekognition_stream_processor#polygon RekognitionStreamProcessor#polygon}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rekognition_stream_processor#polygon RekognitionStreamProcessor#polygon}
 
 ---
 
@@ -1694,7 +1739,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorRegionsOfInterestBoundingBox.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/rekognitionstreamprocessor"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/rekognitionstreamprocessor"
 
 &rekognitionstreamprocessor.RekognitionStreamProcessorRegionsOfInterestBoundingBox {
 	Height: *f64,
@@ -1725,7 +1770,7 @@ Height *f64
 
 Height of the bounding box as a ratio of the overall image height.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/rekognition_stream_processor#height RekognitionStreamProcessor#height}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rekognition_stream_processor#height RekognitionStreamProcessor#height}
 
 ---
 
@@ -1739,7 +1784,7 @@ Left *f64
 
 Left coordinate of the bounding box as a ratio of overall image width.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/rekognition_stream_processor#left RekognitionStreamProcessor#left}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rekognition_stream_processor#left RekognitionStreamProcessor#left}
 
 ---
 
@@ -1753,7 +1798,7 @@ Top *f64
 
 Top coordinate of the bounding box as a ratio of overall image height.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/rekognition_stream_processor#top RekognitionStreamProcessor#top}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rekognition_stream_processor#top RekognitionStreamProcessor#top}
 
 ---
 
@@ -1767,7 +1812,7 @@ Width *f64
 
 Width of the bounding box as a ratio of the overall image width.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/rekognition_stream_processor#width RekognitionStreamProcessor#width}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rekognition_stream_processor#width RekognitionStreamProcessor#width}
 
 ---
 
@@ -1776,7 +1821,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorRegionsOfInterestPolygon.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/rekognitionstreamprocessor"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/rekognitionstreamprocessor"
 
 &rekognitionstreamprocessor.RekognitionStreamProcessorRegionsOfInterestPolygon {
 	X: *f64,
@@ -1803,7 +1848,7 @@ X *f64
 
 The value of the X coordinate for a point on a Polygon.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/rekognition_stream_processor#x RekognitionStreamProcessor#x}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rekognition_stream_processor#x RekognitionStreamProcessor#x}
 
 ---
 
@@ -1817,7 +1862,7 @@ Y *f64
 
 The value of the Y coordinate for a point on a Polygon.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/rekognition_stream_processor#y RekognitionStreamProcessor#y}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rekognition_stream_processor#y RekognitionStreamProcessor#y}
 
 ---
 
@@ -1826,7 +1871,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/rekognitionstreamprocessor"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/rekognitionstreamprocessor"
 
 &rekognitionstreamprocessor.RekognitionStreamProcessorSettings {
 	ConnectedHome: interface{},
@@ -1853,7 +1898,7 @@ ConnectedHome interface{}
 
 connected_home block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/rekognition_stream_processor#connected_home RekognitionStreamProcessor#connected_home}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rekognition_stream_processor#connected_home RekognitionStreamProcessor#connected_home}
 
 ---
 
@@ -1867,7 +1912,7 @@ FaceSearch interface{}
 
 face_search block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/rekognition_stream_processor#face_search RekognitionStreamProcessor#face_search}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rekognition_stream_processor#face_search RekognitionStreamProcessor#face_search}
 
 ---
 
@@ -1876,7 +1921,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorSettingsConnectedHome.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/rekognitionstreamprocessor"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/rekognitionstreamprocessor"
 
 &rekognitionstreamprocessor.RekognitionStreamProcessorSettingsConnectedHome {
 	Labels: *[]*string,
@@ -1903,7 +1948,7 @@ Labels *[]*string
 
 Specifies what you want to detect in the video, such as people, packages, or pets.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/rekognition_stream_processor#labels RekognitionStreamProcessor#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rekognition_stream_processor#labels RekognitionStreamProcessor#labels}
 
 ---
 
@@ -1917,7 +1962,7 @@ MinConfidence *f64
 
 The minimum confidence required to label an object in the video.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/rekognition_stream_processor#min_confidence RekognitionStreamProcessor#min_confidence}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rekognition_stream_processor#min_confidence RekognitionStreamProcessor#min_confidence}
 
 ---
 
@@ -1926,7 +1971,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorSettingsFaceSearch.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/rekognitionstreamprocessor"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/rekognitionstreamprocessor"
 
 &rekognitionstreamprocessor.RekognitionStreamProcessorSettingsFaceSearch {
 	CollectionId: *string,
@@ -1953,7 +1998,7 @@ CollectionId *string
 
 The ID of a collection that contains faces that you want to search for.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/rekognition_stream_processor#collection_id RekognitionStreamProcessor#collection_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rekognition_stream_processor#collection_id RekognitionStreamProcessor#collection_id}
 
 ---
 
@@ -1967,7 +2012,7 @@ FaceMatchThreshold *f64
 
 Minimum face match confidence score that must be met to return a result for a recognized face.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/rekognition_stream_processor#face_match_threshold RekognitionStreamProcessor#face_match_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rekognition_stream_processor#face_match_threshold RekognitionStreamProcessor#face_match_threshold}
 
 ---
 
@@ -1976,7 +2021,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/rekognitionstreamprocessor"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/rekognitionstreamprocessor"
 
 &rekognitionstreamprocessor.RekognitionStreamProcessorTimeouts {
 	Create: *string,
@@ -2005,7 +2050,7 @@ Create *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/rekognition_stream_processor#create RekognitionStreamProcessor#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rekognition_stream_processor#create RekognitionStreamProcessor#create}
 
 ---
 
@@ -2019,7 +2064,7 @@ Delete *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/rekognition_stream_processor#delete RekognitionStreamProcessor#delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rekognition_stream_processor#delete RekognitionStreamProcessor#delete}
 
 ---
 
@@ -2033,7 +2078,7 @@ Update *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/rekognition_stream_processor#update RekognitionStreamProcessor#update}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rekognition_stream_processor#update RekognitionStreamProcessor#update}
 
 ---
 
@@ -2044,7 +2089,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorDataSharingPreferenceList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/rekognitionstreamprocessor"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/rekognitionstreamprocessor"
 
 rekognitionstreamprocessor.NewRekognitionStreamProcessorDataSharingPreferenceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) RekognitionStreamProcessorDataSharingPreferenceList
 ```
@@ -2204,7 +2249,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorDataSharingPreferenceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/rekognitionstreamprocessor"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/rekognitionstreamprocessor"
 
 rekognitionstreamprocessor.NewRekognitionStreamProcessorDataSharingPreferenceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) RekognitionStreamProcessorDataSharingPreferenceOutputReference
 ```
@@ -2493,7 +2538,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorInputKinesisVideoStreamList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/rekognitionstreamprocessor"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/rekognitionstreamprocessor"
 
 rekognitionstreamprocessor.NewRekognitionStreamProcessorInputKinesisVideoStreamList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) RekognitionStreamProcessorInputKinesisVideoStreamList
 ```
@@ -2653,7 +2698,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorInputKinesisVideoStreamOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/rekognitionstreamprocessor"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/rekognitionstreamprocessor"
 
 rekognitionstreamprocessor.NewRekognitionStreamProcessorInputKinesisVideoStreamOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) RekognitionStreamProcessorInputKinesisVideoStreamOutputReference
 ```
@@ -2942,7 +2987,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorInputList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/rekognitionstreamprocessor"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/rekognitionstreamprocessor"
 
 rekognitionstreamprocessor.NewRekognitionStreamProcessorInputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) RekognitionStreamProcessorInputList
 ```
@@ -3102,7 +3147,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorInputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/rekognitionstreamprocessor"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/rekognitionstreamprocessor"
 
 rekognitionstreamprocessor.NewRekognitionStreamProcessorInputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) RekognitionStreamProcessorInputOutputReference
 ```
@@ -3411,7 +3456,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorNotificationChannelList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/rekognitionstreamprocessor"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/rekognitionstreamprocessor"
 
 rekognitionstreamprocessor.NewRekognitionStreamProcessorNotificationChannelList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) RekognitionStreamProcessorNotificationChannelList
 ```
@@ -3571,7 +3616,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorNotificationChannelOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/rekognitionstreamprocessor"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/rekognitionstreamprocessor"
 
 rekognitionstreamprocessor.NewRekognitionStreamProcessorNotificationChannelOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) RekognitionStreamProcessorNotificationChannelOutputReference
 ```
@@ -3867,7 +3912,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorOutputKinesisDataStreamList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/rekognitionstreamprocessor"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/rekognitionstreamprocessor"
 
 rekognitionstreamprocessor.NewRekognitionStreamProcessorOutputKinesisDataStreamList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) RekognitionStreamProcessorOutputKinesisDataStreamList
 ```
@@ -4027,7 +4072,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorOutputKinesisDataStreamOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/rekognitionstreamprocessor"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/rekognitionstreamprocessor"
 
 rekognitionstreamprocessor.NewRekognitionStreamProcessorOutputKinesisDataStreamOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) RekognitionStreamProcessorOutputKinesisDataStreamOutputReference
 ```
@@ -4323,7 +4368,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/rekognitionstreamprocessor"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/rekognitionstreamprocessor"
 
 rekognitionstreamprocessor.NewRekognitionStreamProcessorOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) RekognitionStreamProcessorOutputList
 ```
@@ -4483,7 +4528,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/rekognitionstreamprocessor"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/rekognitionstreamprocessor"
 
 rekognitionstreamprocessor.NewRekognitionStreamProcessorOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) RekognitionStreamProcessorOutputOutputReference
 ```
@@ -4834,7 +4879,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorOutputS3DestinationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/rekognitionstreamprocessor"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/rekognitionstreamprocessor"
 
 rekognitionstreamprocessor.NewRekognitionStreamProcessorOutputS3DestinationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) RekognitionStreamProcessorOutputS3DestinationList
 ```
@@ -4994,7 +5039,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorOutputS3DestinationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/rekognitionstreamprocessor"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/rekognitionstreamprocessor"
 
 rekognitionstreamprocessor.NewRekognitionStreamProcessorOutputS3DestinationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) RekognitionStreamProcessorOutputS3DestinationOutputReference
 ```
@@ -5314,20 +5359,182 @@ func InternalValue() interface{}
 ---
 
 
+### RekognitionStreamProcessorRegionsOfInterestBoundingBoxList <a name="RekognitionStreamProcessorRegionsOfInterestBoundingBoxList" id="@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorRegionsOfInterestBoundingBoxList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorRegionsOfInterestBoundingBoxList.Initializer"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/rekognitionstreamprocessor"
+
+rekognitionstreamprocessor.NewRekognitionStreamProcessorRegionsOfInterestBoundingBoxList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) RekognitionStreamProcessorRegionsOfInterestBoundingBoxList
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorRegionsOfInterestBoundingBoxList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorRegionsOfInterestBoundingBoxList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorRegionsOfInterestBoundingBoxList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorRegionsOfInterestBoundingBoxList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorRegionsOfInterestBoundingBoxList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorRegionsOfInterestBoundingBoxList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorRegionsOfInterestBoundingBoxList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorRegionsOfInterestBoundingBoxList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorRegionsOfInterestBoundingBoxList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorRegionsOfInterestBoundingBoxList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorRegionsOfInterestBoundingBoxList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorRegionsOfInterestBoundingBoxList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorRegionsOfInterestBoundingBoxList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorRegionsOfInterestBoundingBoxList.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorRegionsOfInterestBoundingBoxList.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorRegionsOfInterestBoundingBoxList.resolve.parameter._context"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorRegionsOfInterestBoundingBoxList.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `Get` <a name="Get" id="@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorRegionsOfInterestBoundingBoxList.get"></a>
+
+```go
+func Get(index *f64) RekognitionStreamProcessorRegionsOfInterestBoundingBoxOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorRegionsOfInterestBoundingBoxList.get.parameter.index"></a>
+
+- *Type:* *f64
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorRegionsOfInterestBoundingBoxList.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorRegionsOfInterestBoundingBoxList.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorRegionsOfInterestBoundingBoxList.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorRegionsOfInterestBoundingBoxList.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorRegionsOfInterestBoundingBoxList.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorRegionsOfInterestBoundingBoxList.property.internalValue"></a>
+
+```go
+func InternalValue() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+
 ### RekognitionStreamProcessorRegionsOfInterestBoundingBoxOutputReference <a name="RekognitionStreamProcessorRegionsOfInterestBoundingBoxOutputReference" id="@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorRegionsOfInterestBoundingBoxOutputReference"></a>
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorRegionsOfInterestBoundingBoxOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/rekognitionstreamprocessor"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/rekognitionstreamprocessor"
 
-rekognitionstreamprocessor.NewRekognitionStreamProcessorRegionsOfInterestBoundingBoxOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RekognitionStreamProcessorRegionsOfInterestBoundingBoxOutputReference
+rekognitionstreamprocessor.NewRekognitionStreamProcessorRegionsOfInterestBoundingBoxOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) RekognitionStreamProcessorRegionsOfInterestBoundingBoxOutputReference
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorRegionsOfInterestBoundingBoxOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorRegionsOfInterestBoundingBoxOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorRegionsOfInterestBoundingBoxOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>*f64</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorRegionsOfInterestBoundingBoxOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
@@ -5344,6 +5551,22 @@ The parent resource.
 - *Type:* *string
 
 The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorRegionsOfInterestBoundingBoxOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* *f64
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorRegionsOfInterestBoundingBoxOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 ---
 
@@ -5684,7 +5907,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorRegionsOfInterestList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/rekognitionstreamprocessor"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/rekognitionstreamprocessor"
 
 rekognitionstreamprocessor.NewRekognitionStreamProcessorRegionsOfInterestList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) RekognitionStreamProcessorRegionsOfInterestList
 ```
@@ -5844,7 +6067,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorRegionsOfInterestOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/rekognitionstreamprocessor"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/rekognitionstreamprocessor"
 
 rekognitionstreamprocessor.NewRekognitionStreamProcessorRegionsOfInterestOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) RekognitionStreamProcessorRegionsOfInterestOutputReference
 ```
@@ -6067,12 +6290,12 @@ Returns a reversible string representation.
 ##### `PutBoundingBox` <a name="PutBoundingBox" id="@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorRegionsOfInterestOutputReference.putBoundingBox"></a>
 
 ```go
-func PutBoundingBox(value RekognitionStreamProcessorRegionsOfInterestBoundingBox)
+func PutBoundingBox(value interface{})
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorRegionsOfInterestOutputReference.putBoundingBox.parameter.value"></a>
 
-- *Type:* <a href="#@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorRegionsOfInterestBoundingBox">RekognitionStreamProcessorRegionsOfInterestBoundingBox</a>
+- *Type:* interface{}
 
 ---
 
@@ -6107,7 +6330,7 @@ func ResetPolygon()
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorRegionsOfInterestOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorRegionsOfInterestOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorRegionsOfInterestOutputReference.property.boundingBox">BoundingBox</a></code> | <code><a href="#@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorRegionsOfInterestBoundingBoxOutputReference">RekognitionStreamProcessorRegionsOfInterestBoundingBoxOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorRegionsOfInterestOutputReference.property.boundingBox">BoundingBox</a></code> | <code><a href="#@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorRegionsOfInterestBoundingBoxList">RekognitionStreamProcessorRegionsOfInterestBoundingBoxList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorRegionsOfInterestOutputReference.property.polygon">Polygon</a></code> | <code><a href="#@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorRegionsOfInterestPolygonList">RekognitionStreamProcessorRegionsOfInterestPolygonList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorRegionsOfInterestOutputReference.property.boundingBoxInput">BoundingBoxInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorRegionsOfInterestOutputReference.property.polygonInput">PolygonInput</a></code> | <code>interface{}</code> | *No description.* |
@@ -6142,10 +6365,10 @@ func Fqn() *string
 ##### `BoundingBox`<sup>Required</sup> <a name="BoundingBox" id="@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorRegionsOfInterestOutputReference.property.boundingBox"></a>
 
 ```go
-func BoundingBox() RekognitionStreamProcessorRegionsOfInterestBoundingBoxOutputReference
+func BoundingBox() RekognitionStreamProcessorRegionsOfInterestBoundingBoxList
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorRegionsOfInterestBoundingBoxOutputReference">RekognitionStreamProcessorRegionsOfInterestBoundingBoxOutputReference</a>
+- *Type:* <a href="#@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorRegionsOfInterestBoundingBoxList">RekognitionStreamProcessorRegionsOfInterestBoundingBoxList</a>
 
 ---
 
@@ -6195,7 +6418,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorRegionsOfInterestPolygonList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/rekognitionstreamprocessor"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/rekognitionstreamprocessor"
 
 rekognitionstreamprocessor.NewRekognitionStreamProcessorRegionsOfInterestPolygonList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) RekognitionStreamProcessorRegionsOfInterestPolygonList
 ```
@@ -6355,7 +6578,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorRegionsOfInterestPolygonOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/rekognitionstreamprocessor"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/rekognitionstreamprocessor"
 
 rekognitionstreamprocessor.NewRekognitionStreamProcessorRegionsOfInterestPolygonOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) RekognitionStreamProcessorRegionsOfInterestPolygonOutputReference
 ```
@@ -6680,7 +6903,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorSettingsConnectedHomeList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/rekognitionstreamprocessor"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/rekognitionstreamprocessor"
 
 rekognitionstreamprocessor.NewRekognitionStreamProcessorSettingsConnectedHomeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) RekognitionStreamProcessorSettingsConnectedHomeList
 ```
@@ -6840,7 +7063,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorSettingsConnectedHomeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/rekognitionstreamprocessor"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/rekognitionstreamprocessor"
 
 rekognitionstreamprocessor.NewRekognitionStreamProcessorSettingsConnectedHomeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) RekognitionStreamProcessorSettingsConnectedHomeOutputReference
 ```
@@ -7165,7 +7388,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorSettingsFaceSearchList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/rekognitionstreamprocessor"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/rekognitionstreamprocessor"
 
 rekognitionstreamprocessor.NewRekognitionStreamProcessorSettingsFaceSearchList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) RekognitionStreamProcessorSettingsFaceSearchList
 ```
@@ -7325,7 +7548,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorSettingsFaceSearchOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/rekognitionstreamprocessor"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/rekognitionstreamprocessor"
 
 rekognitionstreamprocessor.NewRekognitionStreamProcessorSettingsFaceSearchOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) RekognitionStreamProcessorSettingsFaceSearchOutputReference
 ```
@@ -7643,7 +7866,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorSettingsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/rekognitionstreamprocessor"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/rekognitionstreamprocessor"
 
 rekognitionstreamprocessor.NewRekognitionStreamProcessorSettingsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) RekognitionStreamProcessorSettingsList
 ```
@@ -7803,7 +8026,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/rekognitionstreamprocessor"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/rekognitionstreamprocessor"
 
 rekognitionstreamprocessor.NewRekognitionStreamProcessorSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) RekognitionStreamProcessorSettingsOutputReference
 ```
@@ -8154,7 +8377,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/rekognitionstreamprocessor"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/rekognitionstreamprocessor"
 
 rekognitionstreamprocessor.NewRekognitionStreamProcessorTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RekognitionStreamProcessorTimeoutsOutputReference
 ```

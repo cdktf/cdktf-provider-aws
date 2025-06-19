@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/rum_metrics_destination
+// https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rum_metrics_destination
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,32 +13,38 @@ import * as cdktf from 'cdktf';
 
 export interface RumMetricsDestinationConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/rum_metrics_destination#app_monitor_name RumMetricsDestination#app_monitor_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rum_metrics_destination#app_monitor_name RumMetricsDestination#app_monitor_name}
   */
   readonly appMonitorName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/rum_metrics_destination#destination RumMetricsDestination#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rum_metrics_destination#destination RumMetricsDestination#destination}
   */
   readonly destination: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/rum_metrics_destination#destination_arn RumMetricsDestination#destination_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rum_metrics_destination#destination_arn RumMetricsDestination#destination_arn}
   */
   readonly destinationArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/rum_metrics_destination#iam_role_arn RumMetricsDestination#iam_role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rum_metrics_destination#iam_role_arn RumMetricsDestination#iam_role_arn}
   */
   readonly iamRoleArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/rum_metrics_destination#id RumMetricsDestination#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rum_metrics_destination#id RumMetricsDestination#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
+  /**
+  * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rum_metrics_destination#region RumMetricsDestination#region}
+  */
+  readonly region?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/rum_metrics_destination aws_rum_metrics_destination}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rum_metrics_destination aws_rum_metrics_destination}
 */
 export class RumMetricsDestination extends cdktf.TerraformResource {
 
@@ -54,7 +60,7 @@ export class RumMetricsDestination extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a RumMetricsDestination resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the RumMetricsDestination to import
-  * @param importFromId The id of the existing RumMetricsDestination that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/rum_metrics_destination#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing RumMetricsDestination that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rum_metrics_destination#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the RumMetricsDestination to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -66,7 +72,7 @@ export class RumMetricsDestination extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/rum_metrics_destination aws_rum_metrics_destination} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rum_metrics_destination aws_rum_metrics_destination} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -77,8 +83,8 @@ export class RumMetricsDestination extends cdktf.TerraformResource {
       terraformResourceType: 'aws_rum_metrics_destination',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.100.0',
-        providerVersionConstraint: '~> 5.0'
+        providerVersion: '6.0.0',
+        providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -93,6 +99,7 @@ export class RumMetricsDestination extends cdktf.TerraformResource {
     this._destinationArn = config.destinationArn;
     this._iamRoleArn = config.iamRoleArn;
     this._id = config.id;
+    this._region = config.region;
   }
 
   // ==========
@@ -173,6 +180,22 @@ export class RumMetricsDestination extends cdktf.TerraformResource {
     return this._id;
   }
 
+  // region - computed: true, optional: true, required: false
+  private _region?: string; 
+  public get region() {
+    return this.getStringAttribute('region');
+  }
+  public set region(value: string) {
+    this._region = value;
+  }
+  public resetRegion() {
+    this._region = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get regionInput() {
+    return this._region;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -184,6 +207,7 @@ export class RumMetricsDestination extends cdktf.TerraformResource {
       destination_arn: cdktf.stringToTerraform(this._destinationArn),
       iam_role_arn: cdktf.stringToTerraform(this._iamRoleArn),
       id: cdktf.stringToTerraform(this._id),
+      region: cdktf.stringToTerraform(this._region),
     };
   }
 
@@ -215,6 +239,12 @@ export class RumMetricsDestination extends cdktf.TerraformResource {
       },
       id: {
         value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      region: {
+        value: cdktf.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

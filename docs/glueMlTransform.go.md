@@ -4,12 +4,12 @@
 
 ### GlueMlTransform <a name="GlueMlTransform" id="@cdktf/provider-aws.glueMlTransform.GlueMlTransform"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_ml_transform aws_glue_ml_transform}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_ml_transform aws_glue_ml_transform}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.glueMlTransform.GlueMlTransform.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/gluemltransform"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/gluemltransform"
 
 gluemltransform.NewGlueMlTransform(scope Construct, id *string, config GlueMlTransformConfig) GlueMlTransform
 ```
@@ -81,6 +81,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.glueMlTransform.GlueMlTransform.resetMaxCapacity">ResetMaxCapacity</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.glueMlTransform.GlueMlTransform.resetMaxRetries">ResetMaxRetries</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.glueMlTransform.GlueMlTransform.resetNumberOfWorkers">ResetNumberOfWorkers</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.glueMlTransform.GlueMlTransform.resetRegion">ResetRegion</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.glueMlTransform.GlueMlTransform.resetTags">ResetTags</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.glueMlTransform.GlueMlTransform.resetTagsAll">ResetTagsAll</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.glueMlTransform.GlueMlTransform.resetTimeout">ResetTimeout</a></code> | *No description.* |
@@ -436,6 +437,12 @@ func ResetMaxRetries()
 func ResetNumberOfWorkers()
 ```
 
+##### `ResetRegion` <a name="ResetRegion" id="@cdktf/provider-aws.glueMlTransform.GlueMlTransform.resetRegion"></a>
+
+```go
+func ResetRegion()
+```
+
 ##### `ResetTags` <a name="ResetTags" id="@cdktf/provider-aws.glueMlTransform.GlueMlTransform.resetTags"></a>
 
 ```go
@@ -474,7 +481,7 @@ func ResetWorkerType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.glueMlTransform.GlueMlTransform.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/gluemltransform"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/gluemltransform"
 
 gluemltransform.GlueMlTransform_IsConstruct(x interface{}) *bool
 ```
@@ -506,7 +513,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.glueMlTransform.GlueMlTransform.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/gluemltransform"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/gluemltransform"
 
 gluemltransform.GlueMlTransform_IsTerraformElement(x interface{}) *bool
 ```
@@ -520,7 +527,7 @@ gluemltransform.GlueMlTransform_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.glueMlTransform.GlueMlTransform.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/gluemltransform"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/gluemltransform"
 
 gluemltransform.GlueMlTransform_IsTerraformResource(x interface{}) *bool
 ```
@@ -534,7 +541,7 @@ gluemltransform.GlueMlTransform_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.glueMlTransform.GlueMlTransform.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/gluemltransform"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/gluemltransform"
 
 gluemltransform.GlueMlTransform_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -563,7 +570,7 @@ The construct id used in the generated config for the GlueMlTransform to import.
 
 The id of the existing GlueMlTransform that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_ml_transform#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_ml_transform#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -607,6 +614,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.glueMlTransform.GlueMlTransform.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.glueMlTransform.GlueMlTransform.property.numberOfWorkersInput">NumberOfWorkersInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.glueMlTransform.GlueMlTransform.property.parametersInput">ParametersInput</a></code> | <code><a href="#@cdktf/provider-aws.glueMlTransform.GlueMlTransformParameters">GlueMlTransformParameters</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.glueMlTransform.GlueMlTransform.property.regionInput">RegionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.glueMlTransform.GlueMlTransform.property.roleArnInput">RoleArnInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.glueMlTransform.GlueMlTransform.property.tagsAllInput">TagsAllInput</a></code> | <code>*map[string]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.glueMlTransform.GlueMlTransform.property.tagsInput">TagsInput</a></code> | <code>*map[string]*string</code> | *No description.* |
@@ -619,6 +627,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.glueMlTransform.GlueMlTransform.property.maxRetries">MaxRetries</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.glueMlTransform.GlueMlTransform.property.name">Name</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.glueMlTransform.GlueMlTransform.property.numberOfWorkers">NumberOfWorkers</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.glueMlTransform.GlueMlTransform.property.region">Region</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.glueMlTransform.GlueMlTransform.property.roleArn">RoleArn</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.glueMlTransform.GlueMlTransform.property.tags">Tags</a></code> | <code>*map[string]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.glueMlTransform.GlueMlTransform.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | *No description.* |
@@ -909,6 +918,16 @@ func ParametersInput() GlueMlTransformParameters
 
 ---
 
+##### `RegionInput`<sup>Optional</sup> <a name="RegionInput" id="@cdktf/provider-aws.glueMlTransform.GlueMlTransform.property.regionInput"></a>
+
+```go
+func RegionInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `RoleArnInput`<sup>Optional</sup> <a name="RoleArnInput" id="@cdktf/provider-aws.glueMlTransform.GlueMlTransform.property.roleArnInput"></a>
 
 ```go
@@ -1029,6 +1048,16 @@ func NumberOfWorkers() *f64
 
 ---
 
+##### `Region`<sup>Required</sup> <a name="Region" id="@cdktf/provider-aws.glueMlTransform.GlueMlTransform.property.region"></a>
+
+```go
+func Region() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `RoleArn`<sup>Required</sup> <a name="RoleArn" id="@cdktf/provider-aws.glueMlTransform.GlueMlTransform.property.roleArn"></a>
 
 ```go
@@ -1104,7 +1133,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.glueMlTransform.GlueMlTransformConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/gluemltransform"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/gluemltransform"
 
 &gluemltransform.GlueMlTransformConfig {
 	Connection: interface{},
@@ -1116,7 +1145,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/gluemltransform"
 	Provisioners: *[]interface{},
 	InputRecordTables: interface{},
 	Name: *string,
-	Parameters: github.com/cdktf/cdktf-provider-aws-go/aws/v20.glueMlTransform.GlueMlTransformParameters,
+	Parameters: github.com/cdktf/cdktf-provider-aws-go/aws/v21.glueMlTransform.GlueMlTransformParameters,
 	RoleArn: *string,
 	Description: *string,
 	GlueVersion: *string,
@@ -1124,6 +1153,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/gluemltransform"
 	MaxCapacity: *f64,
 	MaxRetries: *f64,
 	NumberOfWorkers: *f64,
+	Region: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
 	Timeout: *f64,
@@ -1143,19 +1173,20 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/gluemltransform"
 | <code><a href="#@cdktf/provider-aws.glueMlTransform.GlueMlTransformConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.glueMlTransform.GlueMlTransformConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.glueMlTransform.GlueMlTransformConfig.property.inputRecordTables">InputRecordTables</a></code> | <code>interface{}</code> | input_record_tables block. |
-| <code><a href="#@cdktf/provider-aws.glueMlTransform.GlueMlTransformConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_ml_transform#name GlueMlTransform#name}. |
+| <code><a href="#@cdktf/provider-aws.glueMlTransform.GlueMlTransformConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_ml_transform#name GlueMlTransform#name}. |
 | <code><a href="#@cdktf/provider-aws.glueMlTransform.GlueMlTransformConfig.property.parameters">Parameters</a></code> | <code><a href="#@cdktf/provider-aws.glueMlTransform.GlueMlTransformParameters">GlueMlTransformParameters</a></code> | parameters block. |
-| <code><a href="#@cdktf/provider-aws.glueMlTransform.GlueMlTransformConfig.property.roleArn">RoleArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_ml_transform#role_arn GlueMlTransform#role_arn}. |
-| <code><a href="#@cdktf/provider-aws.glueMlTransform.GlueMlTransformConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_ml_transform#description GlueMlTransform#description}. |
-| <code><a href="#@cdktf/provider-aws.glueMlTransform.GlueMlTransformConfig.property.glueVersion">GlueVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_ml_transform#glue_version GlueMlTransform#glue_version}. |
-| <code><a href="#@cdktf/provider-aws.glueMlTransform.GlueMlTransformConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_ml_transform#id GlueMlTransform#id}. |
-| <code><a href="#@cdktf/provider-aws.glueMlTransform.GlueMlTransformConfig.property.maxCapacity">MaxCapacity</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_ml_transform#max_capacity GlueMlTransform#max_capacity}. |
-| <code><a href="#@cdktf/provider-aws.glueMlTransform.GlueMlTransformConfig.property.maxRetries">MaxRetries</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_ml_transform#max_retries GlueMlTransform#max_retries}. |
-| <code><a href="#@cdktf/provider-aws.glueMlTransform.GlueMlTransformConfig.property.numberOfWorkers">NumberOfWorkers</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_ml_transform#number_of_workers GlueMlTransform#number_of_workers}. |
-| <code><a href="#@cdktf/provider-aws.glueMlTransform.GlueMlTransformConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_ml_transform#tags GlueMlTransform#tags}. |
-| <code><a href="#@cdktf/provider-aws.glueMlTransform.GlueMlTransformConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_ml_transform#tags_all GlueMlTransform#tags_all}. |
-| <code><a href="#@cdktf/provider-aws.glueMlTransform.GlueMlTransformConfig.property.timeout">Timeout</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_ml_transform#timeout GlueMlTransform#timeout}. |
-| <code><a href="#@cdktf/provider-aws.glueMlTransform.GlueMlTransformConfig.property.workerType">WorkerType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_ml_transform#worker_type GlueMlTransform#worker_type}. |
+| <code><a href="#@cdktf/provider-aws.glueMlTransform.GlueMlTransformConfig.property.roleArn">RoleArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_ml_transform#role_arn GlueMlTransform#role_arn}. |
+| <code><a href="#@cdktf/provider-aws.glueMlTransform.GlueMlTransformConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_ml_transform#description GlueMlTransform#description}. |
+| <code><a href="#@cdktf/provider-aws.glueMlTransform.GlueMlTransformConfig.property.glueVersion">GlueVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_ml_transform#glue_version GlueMlTransform#glue_version}. |
+| <code><a href="#@cdktf/provider-aws.glueMlTransform.GlueMlTransformConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_ml_transform#id GlueMlTransform#id}. |
+| <code><a href="#@cdktf/provider-aws.glueMlTransform.GlueMlTransformConfig.property.maxCapacity">MaxCapacity</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_ml_transform#max_capacity GlueMlTransform#max_capacity}. |
+| <code><a href="#@cdktf/provider-aws.glueMlTransform.GlueMlTransformConfig.property.maxRetries">MaxRetries</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_ml_transform#max_retries GlueMlTransform#max_retries}. |
+| <code><a href="#@cdktf/provider-aws.glueMlTransform.GlueMlTransformConfig.property.numberOfWorkers">NumberOfWorkers</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_ml_transform#number_of_workers GlueMlTransform#number_of_workers}. |
+| <code><a href="#@cdktf/provider-aws.glueMlTransform.GlueMlTransformConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
+| <code><a href="#@cdktf/provider-aws.glueMlTransform.GlueMlTransformConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_ml_transform#tags GlueMlTransform#tags}. |
+| <code><a href="#@cdktf/provider-aws.glueMlTransform.GlueMlTransformConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_ml_transform#tags_all GlueMlTransform#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.glueMlTransform.GlueMlTransformConfig.property.timeout">Timeout</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_ml_transform#timeout GlueMlTransform#timeout}. |
+| <code><a href="#@cdktf/provider-aws.glueMlTransform.GlueMlTransformConfig.property.workerType">WorkerType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_ml_transform#worker_type GlueMlTransform#worker_type}. |
 
 ---
 
@@ -1239,7 +1270,7 @@ InputRecordTables interface{}
 
 input_record_tables block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_ml_transform#input_record_tables GlueMlTransform#input_record_tables}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_ml_transform#input_record_tables GlueMlTransform#input_record_tables}
 
 ---
 
@@ -1251,7 +1282,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_ml_transform#name GlueMlTransform#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_ml_transform#name GlueMlTransform#name}.
 
 ---
 
@@ -1265,7 +1296,7 @@ Parameters GlueMlTransformParameters
 
 parameters block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_ml_transform#parameters GlueMlTransform#parameters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_ml_transform#parameters GlueMlTransform#parameters}
 
 ---
 
@@ -1277,7 +1308,7 @@ RoleArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_ml_transform#role_arn GlueMlTransform#role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_ml_transform#role_arn GlueMlTransform#role_arn}.
 
 ---
 
@@ -1289,7 +1320,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_ml_transform#description GlueMlTransform#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_ml_transform#description GlueMlTransform#description}.
 
 ---
 
@@ -1301,7 +1332,7 @@ GlueVersion *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_ml_transform#glue_version GlueMlTransform#glue_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_ml_transform#glue_version GlueMlTransform#glue_version}.
 
 ---
 
@@ -1313,7 +1344,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_ml_transform#id GlueMlTransform#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_ml_transform#id GlueMlTransform#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1328,7 +1359,7 @@ MaxCapacity *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_ml_transform#max_capacity GlueMlTransform#max_capacity}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_ml_transform#max_capacity GlueMlTransform#max_capacity}.
 
 ---
 
@@ -1340,7 +1371,7 @@ MaxRetries *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_ml_transform#max_retries GlueMlTransform#max_retries}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_ml_transform#max_retries GlueMlTransform#max_retries}.
 
 ---
 
@@ -1352,7 +1383,21 @@ NumberOfWorkers *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_ml_transform#number_of_workers GlueMlTransform#number_of_workers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_ml_transform#number_of_workers GlueMlTransform#number_of_workers}.
+
+---
+
+##### `Region`<sup>Optional</sup> <a name="Region" id="@cdktf/provider-aws.glueMlTransform.GlueMlTransformConfig.property.region"></a>
+
+```go
+Region *string
+```
+
+- *Type:* *string
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_ml_transform#region GlueMlTransform#region}
 
 ---
 
@@ -1364,7 +1409,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_ml_transform#tags GlueMlTransform#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_ml_transform#tags GlueMlTransform#tags}.
 
 ---
 
@@ -1376,7 +1421,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_ml_transform#tags_all GlueMlTransform#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_ml_transform#tags_all GlueMlTransform#tags_all}.
 
 ---
 
@@ -1388,7 +1433,7 @@ Timeout *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_ml_transform#timeout GlueMlTransform#timeout}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_ml_transform#timeout GlueMlTransform#timeout}.
 
 ---
 
@@ -1400,7 +1445,7 @@ WorkerType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_ml_transform#worker_type GlueMlTransform#worker_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_ml_transform#worker_type GlueMlTransform#worker_type}.
 
 ---
 
@@ -1409,7 +1454,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.glueMlTransform.GlueMlTransformInputRecordTables.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/gluemltransform"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/gluemltransform"
 
 &gluemltransform.GlueMlTransformInputRecordTables {
 	DatabaseName: *string,
@@ -1423,10 +1468,10 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/gluemltransform"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.glueMlTransform.GlueMlTransformInputRecordTables.property.databaseName">DatabaseName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_ml_transform#database_name GlueMlTransform#database_name}. |
-| <code><a href="#@cdktf/provider-aws.glueMlTransform.GlueMlTransformInputRecordTables.property.tableName">TableName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_ml_transform#table_name GlueMlTransform#table_name}. |
-| <code><a href="#@cdktf/provider-aws.glueMlTransform.GlueMlTransformInputRecordTables.property.catalogId">CatalogId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_ml_transform#catalog_id GlueMlTransform#catalog_id}. |
-| <code><a href="#@cdktf/provider-aws.glueMlTransform.GlueMlTransformInputRecordTables.property.connectionName">ConnectionName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_ml_transform#connection_name GlueMlTransform#connection_name}. |
+| <code><a href="#@cdktf/provider-aws.glueMlTransform.GlueMlTransformInputRecordTables.property.databaseName">DatabaseName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_ml_transform#database_name GlueMlTransform#database_name}. |
+| <code><a href="#@cdktf/provider-aws.glueMlTransform.GlueMlTransformInputRecordTables.property.tableName">TableName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_ml_transform#table_name GlueMlTransform#table_name}. |
+| <code><a href="#@cdktf/provider-aws.glueMlTransform.GlueMlTransformInputRecordTables.property.catalogId">CatalogId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_ml_transform#catalog_id GlueMlTransform#catalog_id}. |
+| <code><a href="#@cdktf/provider-aws.glueMlTransform.GlueMlTransformInputRecordTables.property.connectionName">ConnectionName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_ml_transform#connection_name GlueMlTransform#connection_name}. |
 
 ---
 
@@ -1438,7 +1483,7 @@ DatabaseName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_ml_transform#database_name GlueMlTransform#database_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_ml_transform#database_name GlueMlTransform#database_name}.
 
 ---
 
@@ -1450,7 +1495,7 @@ TableName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_ml_transform#table_name GlueMlTransform#table_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_ml_transform#table_name GlueMlTransform#table_name}.
 
 ---
 
@@ -1462,7 +1507,7 @@ CatalogId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_ml_transform#catalog_id GlueMlTransform#catalog_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_ml_transform#catalog_id GlueMlTransform#catalog_id}.
 
 ---
 
@@ -1474,7 +1519,7 @@ ConnectionName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_ml_transform#connection_name GlueMlTransform#connection_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_ml_transform#connection_name GlueMlTransform#connection_name}.
 
 ---
 
@@ -1483,10 +1528,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.glueMlTransform.GlueMlTransformParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/gluemltransform"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/gluemltransform"
 
 &gluemltransform.GlueMlTransformParameters {
-	FindMatchesParameters: github.com/cdktf/cdktf-provider-aws-go/aws/v20.glueMlTransform.GlueMlTransformParametersFindMatchesParameters,
+	FindMatchesParameters: github.com/cdktf/cdktf-provider-aws-go/aws/v21.glueMlTransform.GlueMlTransformParametersFindMatchesParameters,
 	TransformType: *string,
 }
 ```
@@ -1496,7 +1541,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/gluemltransform"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.glueMlTransform.GlueMlTransformParameters.property.findMatchesParameters">FindMatchesParameters</a></code> | <code><a href="#@cdktf/provider-aws.glueMlTransform.GlueMlTransformParametersFindMatchesParameters">GlueMlTransformParametersFindMatchesParameters</a></code> | find_matches_parameters block. |
-| <code><a href="#@cdktf/provider-aws.glueMlTransform.GlueMlTransformParameters.property.transformType">TransformType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_ml_transform#transform_type GlueMlTransform#transform_type}. |
+| <code><a href="#@cdktf/provider-aws.glueMlTransform.GlueMlTransformParameters.property.transformType">TransformType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_ml_transform#transform_type GlueMlTransform#transform_type}. |
 
 ---
 
@@ -1510,7 +1555,7 @@ FindMatchesParameters GlueMlTransformParametersFindMatchesParameters
 
 find_matches_parameters block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_ml_transform#find_matches_parameters GlueMlTransform#find_matches_parameters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_ml_transform#find_matches_parameters GlueMlTransform#find_matches_parameters}
 
 ---
 
@@ -1522,7 +1567,7 @@ TransformType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_ml_transform#transform_type GlueMlTransform#transform_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_ml_transform#transform_type GlueMlTransform#transform_type}.
 
 ---
 
@@ -1531,7 +1576,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.glueMlTransform.GlueMlTransformParametersFindMatchesParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/gluemltransform"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/gluemltransform"
 
 &gluemltransform.GlueMlTransformParametersFindMatchesParameters {
 	AccuracyCostTradeOff: *f64,
@@ -1545,10 +1590,10 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/gluemltransform"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.glueMlTransform.GlueMlTransformParametersFindMatchesParameters.property.accuracyCostTradeOff">AccuracyCostTradeOff</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_ml_transform#accuracy_cost_trade_off GlueMlTransform#accuracy_cost_trade_off}. |
-| <code><a href="#@cdktf/provider-aws.glueMlTransform.GlueMlTransformParametersFindMatchesParameters.property.enforceProvidedLabels">EnforceProvidedLabels</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_ml_transform#enforce_provided_labels GlueMlTransform#enforce_provided_labels}. |
-| <code><a href="#@cdktf/provider-aws.glueMlTransform.GlueMlTransformParametersFindMatchesParameters.property.precisionRecallTradeOff">PrecisionRecallTradeOff</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_ml_transform#precision_recall_trade_off GlueMlTransform#precision_recall_trade_off}. |
-| <code><a href="#@cdktf/provider-aws.glueMlTransform.GlueMlTransformParametersFindMatchesParameters.property.primaryKeyColumnName">PrimaryKeyColumnName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_ml_transform#primary_key_column_name GlueMlTransform#primary_key_column_name}. |
+| <code><a href="#@cdktf/provider-aws.glueMlTransform.GlueMlTransformParametersFindMatchesParameters.property.accuracyCostTradeOff">AccuracyCostTradeOff</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_ml_transform#accuracy_cost_trade_off GlueMlTransform#accuracy_cost_trade_off}. |
+| <code><a href="#@cdktf/provider-aws.glueMlTransform.GlueMlTransformParametersFindMatchesParameters.property.enforceProvidedLabels">EnforceProvidedLabels</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_ml_transform#enforce_provided_labels GlueMlTransform#enforce_provided_labels}. |
+| <code><a href="#@cdktf/provider-aws.glueMlTransform.GlueMlTransformParametersFindMatchesParameters.property.precisionRecallTradeOff">PrecisionRecallTradeOff</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_ml_transform#precision_recall_trade_off GlueMlTransform#precision_recall_trade_off}. |
+| <code><a href="#@cdktf/provider-aws.glueMlTransform.GlueMlTransformParametersFindMatchesParameters.property.primaryKeyColumnName">PrimaryKeyColumnName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_ml_transform#primary_key_column_name GlueMlTransform#primary_key_column_name}. |
 
 ---
 
@@ -1560,7 +1605,7 @@ AccuracyCostTradeOff *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_ml_transform#accuracy_cost_trade_off GlueMlTransform#accuracy_cost_trade_off}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_ml_transform#accuracy_cost_trade_off GlueMlTransform#accuracy_cost_trade_off}.
 
 ---
 
@@ -1572,7 +1617,7 @@ EnforceProvidedLabels interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_ml_transform#enforce_provided_labels GlueMlTransform#enforce_provided_labels}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_ml_transform#enforce_provided_labels GlueMlTransform#enforce_provided_labels}.
 
 ---
 
@@ -1584,7 +1629,7 @@ PrecisionRecallTradeOff *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_ml_transform#precision_recall_trade_off GlueMlTransform#precision_recall_trade_off}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_ml_transform#precision_recall_trade_off GlueMlTransform#precision_recall_trade_off}.
 
 ---
 
@@ -1596,7 +1641,7 @@ PrimaryKeyColumnName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_ml_transform#primary_key_column_name GlueMlTransform#primary_key_column_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_ml_transform#primary_key_column_name GlueMlTransform#primary_key_column_name}.
 
 ---
 
@@ -1605,7 +1650,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.glueMlTransform.GlueMlTransformSchema.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/gluemltransform"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/gluemltransform"
 
 &gluemltransform.GlueMlTransformSchema {
 
@@ -1620,7 +1665,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/gluemltransform"
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.glueMlTransform.GlueMlTransformInputRecordTablesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/gluemltransform"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/gluemltransform"
 
 gluemltransform.NewGlueMlTransformInputRecordTablesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GlueMlTransformInputRecordTablesList
 ```
@@ -1780,7 +1825,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.glueMlTransform.GlueMlTransformInputRecordTablesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/gluemltransform"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/gluemltransform"
 
 gluemltransform.NewGlueMlTransformInputRecordTablesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GlueMlTransformInputRecordTablesOutputReference
 ```
@@ -2149,7 +2194,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.glueMlTransform.GlueMlTransformParametersFindMatchesParametersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/gluemltransform"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/gluemltransform"
 
 gluemltransform.NewGlueMlTransformParametersFindMatchesParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GlueMlTransformParametersFindMatchesParametersOutputReference
 ```
@@ -2514,7 +2559,7 @@ func InternalValue() GlueMlTransformParametersFindMatchesParameters
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.glueMlTransform.GlueMlTransformParametersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/gluemltransform"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/gluemltransform"
 
 gluemltransform.NewGlueMlTransformParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GlueMlTransformParametersOutputReference
 ```
@@ -2820,7 +2865,7 @@ func InternalValue() GlueMlTransformParameters
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.glueMlTransform.GlueMlTransformSchemaList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/gluemltransform"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/gluemltransform"
 
 gluemltransform.NewGlueMlTransformSchemaList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GlueMlTransformSchemaList
 ```
@@ -2969,7 +3014,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.glueMlTransform.GlueMlTransformSchemaOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/gluemltransform"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/gluemltransform"
 
 gluemltransform.NewGlueMlTransformSchemaOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GlueMlTransformSchemaOutputReference
 ```

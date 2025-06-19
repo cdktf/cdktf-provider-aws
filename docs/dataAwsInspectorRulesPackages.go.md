@@ -4,12 +4,12 @@
 
 ### DataAwsInspectorRulesPackages <a name="DataAwsInspectorRulesPackages" id="@cdktf/provider-aws.dataAwsInspectorRulesPackages.DataAwsInspectorRulesPackages"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/inspector_rules_packages aws_inspector_rules_packages}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/inspector_rules_packages aws_inspector_rules_packages}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsInspectorRulesPackages.DataAwsInspectorRulesPackages.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsinspectorrulespackages"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsinspectorrulespackages"
 
 dataawsinspectorrulespackages.NewDataAwsInspectorRulesPackages(scope Construct, id *string, config DataAwsInspectorRulesPackagesConfig) DataAwsInspectorRulesPackages
 ```
@@ -68,6 +68,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.dataAwsInspectorRulesPackages.DataAwsInspectorRulesPackages.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsInspectorRulesPackages.DataAwsInspectorRulesPackages.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsInspectorRulesPackages.DataAwsInspectorRulesPackages.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsInspectorRulesPackages.DataAwsInspectorRulesPackages.resetRegion">ResetRegion</a></code> | *No description.* |
 
 ---
 
@@ -269,6 +270,12 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 func ResetId()
 ```
 
+##### `ResetRegion` <a name="ResetRegion" id="@cdktf/provider-aws.dataAwsInspectorRulesPackages.DataAwsInspectorRulesPackages.resetRegion"></a>
+
+```go
+func ResetRegion()
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -283,7 +290,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsInspectorRulesPackages.DataAwsInspectorRulesPackages.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsinspectorrulespackages"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsinspectorrulespackages"
 
 dataawsinspectorrulespackages.DataAwsInspectorRulesPackages_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsInspectorRulesPackages.DataAwsInspectorRulesPackages.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsinspectorrulespackages"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsinspectorrulespackages"
 
 dataawsinspectorrulespackages.DataAwsInspectorRulesPackages_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +336,7 @@ dataawsinspectorrulespackages.DataAwsInspectorRulesPackages_IsTerraformElement(x
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsInspectorRulesPackages.DataAwsInspectorRulesPackages.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsinspectorrulespackages"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsinspectorrulespackages"
 
 dataawsinspectorrulespackages.DataAwsInspectorRulesPackages_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +350,7 @@ dataawsinspectorrulespackages.DataAwsInspectorRulesPackages_IsTerraformDataSourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsInspectorRulesPackages.DataAwsInspectorRulesPackages.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsinspectorrulespackages"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsinspectorrulespackages"
 
 dataawsinspectorrulespackages.DataAwsInspectorRulesPackages_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -372,7 +379,7 @@ The construct id used in the generated config for the DataAwsInspectorRulesPacka
 
 The id of the existing DataAwsInspectorRulesPackages that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/inspector_rules_packages#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/inspector_rules_packages#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -402,7 +409,9 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.dataAwsInspectorRulesPackages.DataAwsInspectorRulesPackages.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsInspectorRulesPackages.DataAwsInspectorRulesPackages.property.arns">Arns</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsInspectorRulesPackages.DataAwsInspectorRulesPackages.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsInspectorRulesPackages.DataAwsInspectorRulesPackages.property.regionInput">RegionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsInspectorRulesPackages.DataAwsInspectorRulesPackages.property.id">Id</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsInspectorRulesPackages.DataAwsInspectorRulesPackages.property.region">Region</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
@@ -548,10 +557,30 @@ func IdInput() *string
 
 ---
 
+##### `RegionInput`<sup>Optional</sup> <a name="RegionInput" id="@cdktf/provider-aws.dataAwsInspectorRulesPackages.DataAwsInspectorRulesPackages.property.regionInput"></a>
+
+```go
+func RegionInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-aws.dataAwsInspectorRulesPackages.DataAwsInspectorRulesPackages.property.id"></a>
 
 ```go
 func Id() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Region`<sup>Required</sup> <a name="Region" id="@cdktf/provider-aws.dataAwsInspectorRulesPackages.DataAwsInspectorRulesPackages.property.region"></a>
+
+```go
+func Region() *string
 ```
 
 - *Type:* *string
@@ -583,7 +612,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsInspectorRulesPackages.DataAwsInspectorRulesPackagesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsinspectorrulespackages"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsinspectorrulespackages"
 
 &dataawsinspectorrulespackages.DataAwsInspectorRulesPackagesConfig {
 	Connection: interface{},
@@ -594,6 +623,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsinspectorrulespack
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	Id: *string,
+	Region: *string,
 }
 ```
 
@@ -608,7 +638,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsinspectorrulespack
 | <code><a href="#@cdktf/provider-aws.dataAwsInspectorRulesPackages.DataAwsInspectorRulesPackagesConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsInspectorRulesPackages.DataAwsInspectorRulesPackagesConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsInspectorRulesPackages.DataAwsInspectorRulesPackagesConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsInspectorRulesPackages.DataAwsInspectorRulesPackagesConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/inspector_rules_packages#id DataAwsInspectorRulesPackages#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsInspectorRulesPackages.DataAwsInspectorRulesPackagesConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/inspector_rules_packages#id DataAwsInspectorRulesPackages#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsInspectorRulesPackages.DataAwsInspectorRulesPackagesConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
 
@@ -690,10 +721,24 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/inspector_rules_packages#id DataAwsInspectorRulesPackages#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/inspector_rules_packages#id DataAwsInspectorRulesPackages#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `Region`<sup>Optional</sup> <a name="Region" id="@cdktf/provider-aws.dataAwsInspectorRulesPackages.DataAwsInspectorRulesPackagesConfig.property.region"></a>
+
+```go
+Region *string
+```
+
+- *Type:* *string
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/inspector_rules_packages#region DataAwsInspectorRulesPackages#region}
 
 ---
 

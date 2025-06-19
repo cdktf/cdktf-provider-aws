@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/directory_service_trust
+// https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/directory_service_trust
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,41 +13,47 @@ import * as cdktf from 'cdktf';
 
 export interface DirectoryServiceTrustConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/directory_service_trust#conditional_forwarder_ip_addrs DirectoryServiceTrust#conditional_forwarder_ip_addrs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/directory_service_trust#conditional_forwarder_ip_addrs DirectoryServiceTrust#conditional_forwarder_ip_addrs}
   */
   readonly conditionalForwarderIpAddrs?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/directory_service_trust#delete_associated_conditional_forwarder DirectoryServiceTrust#delete_associated_conditional_forwarder}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/directory_service_trust#delete_associated_conditional_forwarder DirectoryServiceTrust#delete_associated_conditional_forwarder}
   */
   readonly deleteAssociatedConditionalForwarder?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/directory_service_trust#directory_id DirectoryServiceTrust#directory_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/directory_service_trust#directory_id DirectoryServiceTrust#directory_id}
   */
   readonly directoryId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/directory_service_trust#remote_domain_name DirectoryServiceTrust#remote_domain_name}
+  * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/directory_service_trust#region DirectoryServiceTrust#region}
+  */
+  readonly region?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/directory_service_trust#remote_domain_name DirectoryServiceTrust#remote_domain_name}
   */
   readonly remoteDomainName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/directory_service_trust#selective_auth DirectoryServiceTrust#selective_auth}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/directory_service_trust#selective_auth DirectoryServiceTrust#selective_auth}
   */
   readonly selectiveAuth?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/directory_service_trust#trust_direction DirectoryServiceTrust#trust_direction}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/directory_service_trust#trust_direction DirectoryServiceTrust#trust_direction}
   */
   readonly trustDirection: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/directory_service_trust#trust_password DirectoryServiceTrust#trust_password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/directory_service_trust#trust_password DirectoryServiceTrust#trust_password}
   */
   readonly trustPassword: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/directory_service_trust#trust_type DirectoryServiceTrust#trust_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/directory_service_trust#trust_type DirectoryServiceTrust#trust_type}
   */
   readonly trustType?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/directory_service_trust aws_directory_service_trust}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/directory_service_trust aws_directory_service_trust}
 */
 export class DirectoryServiceTrust extends cdktf.TerraformResource {
 
@@ -63,7 +69,7 @@ export class DirectoryServiceTrust extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a DirectoryServiceTrust resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DirectoryServiceTrust to import
-  * @param importFromId The id of the existing DirectoryServiceTrust that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/directory_service_trust#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DirectoryServiceTrust that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/directory_service_trust#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DirectoryServiceTrust to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -75,7 +81,7 @@ export class DirectoryServiceTrust extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/directory_service_trust aws_directory_service_trust} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/directory_service_trust aws_directory_service_trust} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -86,8 +92,8 @@ export class DirectoryServiceTrust extends cdktf.TerraformResource {
       terraformResourceType: 'aws_directory_service_trust',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.100.0',
-        providerVersionConstraint: '~> 5.0'
+        providerVersion: '6.0.0',
+        providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -100,6 +106,7 @@ export class DirectoryServiceTrust extends cdktf.TerraformResource {
     this._conditionalForwarderIpAddrs = config.conditionalForwarderIpAddrs;
     this._deleteAssociatedConditionalForwarder = config.deleteAssociatedConditionalForwarder;
     this._directoryId = config.directoryId;
+    this._region = config.region;
     this._remoteDomainName = config.remoteDomainName;
     this._selectiveAuth = config.selectiveAuth;
     this._trustDirection = config.trustDirection;
@@ -169,6 +176,22 @@ export class DirectoryServiceTrust extends cdktf.TerraformResource {
   // last_updated_date_time - computed: true, optional: false, required: false
   public get lastUpdatedDateTime() {
     return this.getStringAttribute('last_updated_date_time');
+  }
+
+  // region - computed: true, optional: true, required: false
+  private _region?: string; 
+  public get region() {
+    return this.getStringAttribute('region');
+  }
+  public set region(value: string) {
+    this._region = value;
+  }
+  public resetRegion() {
+    this._region = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get regionInput() {
+    return this._region;
   }
 
   // remote_domain_name - computed: false, optional: false, required: true
@@ -266,6 +289,7 @@ export class DirectoryServiceTrust extends cdktf.TerraformResource {
       conditional_forwarder_ip_addrs: cdktf.listMapper(cdktf.stringToTerraform, false)(this._conditionalForwarderIpAddrs),
       delete_associated_conditional_forwarder: cdktf.booleanToTerraform(this._deleteAssociatedConditionalForwarder),
       directory_id: cdktf.stringToTerraform(this._directoryId),
+      region: cdktf.stringToTerraform(this._region),
       remote_domain_name: cdktf.stringToTerraform(this._remoteDomainName),
       selective_auth: cdktf.stringToTerraform(this._selectiveAuth),
       trust_direction: cdktf.stringToTerraform(this._trustDirection),
@@ -290,6 +314,12 @@ export class DirectoryServiceTrust extends cdktf.TerraformResource {
       },
       directory_id: {
         value: cdktf.stringToHclTerraform(this._directoryId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      region: {
+        value: cdktf.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

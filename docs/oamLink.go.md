@@ -4,12 +4,12 @@
 
 ### OamLink <a name="OamLink" id="@cdktf/provider-aws.oamLink.OamLink"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/oam_link aws_oam_link}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/oam_link aws_oam_link}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.oamLink.OamLink.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/oamlink"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/oamlink"
 
 oamlink.NewOamLink(scope Construct, id *string, config OamLinkConfig) OamLink
 ```
@@ -77,6 +77,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.oamLink.OamLink.putTimeouts">PutTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.oamLink.OamLink.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.oamLink.OamLink.resetLinkConfiguration">ResetLinkConfiguration</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.oamLink.OamLink.resetRegion">ResetRegion</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.oamLink.OamLink.resetTags">ResetTags</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.oamLink.OamLink.resetTagsAll">ResetTagsAll</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.oamLink.OamLink.resetTimeouts">ResetTimeouts</a></code> | *No description.* |
@@ -407,6 +408,12 @@ func ResetId()
 func ResetLinkConfiguration()
 ```
 
+##### `ResetRegion` <a name="ResetRegion" id="@cdktf/provider-aws.oamLink.OamLink.resetRegion"></a>
+
+```go
+func ResetRegion()
+```
+
 ##### `ResetTags` <a name="ResetTags" id="@cdktf/provider-aws.oamLink.OamLink.resetTags"></a>
 
 ```go
@@ -439,7 +446,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.oamLink.OamLink.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/oamlink"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/oamlink"
 
 oamlink.OamLink_IsConstruct(x interface{}) *bool
 ```
@@ -471,7 +478,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.oamLink.OamLink.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/oamlink"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/oamlink"
 
 oamlink.OamLink_IsTerraformElement(x interface{}) *bool
 ```
@@ -485,7 +492,7 @@ oamlink.OamLink_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.oamLink.OamLink.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/oamlink"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/oamlink"
 
 oamlink.OamLink_IsTerraformResource(x interface{}) *bool
 ```
@@ -499,7 +506,7 @@ oamlink.OamLink_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.oamLink.OamLink.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/oamlink"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/oamlink"
 
 oamlink.OamLink_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -528,7 +535,7 @@ The construct id used in the generated config for the OamLink to import.
 
 The id of the existing OamLink that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/oam_link#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/oam_link#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -567,6 +574,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.oamLink.OamLink.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.oamLink.OamLink.property.labelTemplateInput">LabelTemplateInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.oamLink.OamLink.property.linkConfigurationInput">LinkConfigurationInput</a></code> | <code><a href="#@cdktf/provider-aws.oamLink.OamLinkLinkConfiguration">OamLinkLinkConfiguration</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.oamLink.OamLink.property.regionInput">RegionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.oamLink.OamLink.property.resourceTypesInput">ResourceTypesInput</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.oamLink.OamLink.property.sinkIdentifierInput">SinkIdentifierInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.oamLink.OamLink.property.tagsAllInput">TagsAllInput</a></code> | <code>*map[string]*string</code> | *No description.* |
@@ -574,6 +582,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.oamLink.OamLink.property.timeoutsInput">TimeoutsInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.oamLink.OamLink.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.oamLink.OamLink.property.labelTemplate">LabelTemplate</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.oamLink.OamLink.property.region">Region</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.oamLink.OamLink.property.resourceTypes">ResourceTypes</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.oamLink.OamLink.property.sinkIdentifier">SinkIdentifier</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.oamLink.OamLink.property.tags">Tags</a></code> | <code>*map[string]*string</code> | *No description.* |
@@ -813,6 +822,16 @@ func LinkConfigurationInput() OamLinkLinkConfiguration
 
 ---
 
+##### `RegionInput`<sup>Optional</sup> <a name="RegionInput" id="@cdktf/provider-aws.oamLink.OamLink.property.regionInput"></a>
+
+```go
+func RegionInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `ResourceTypesInput`<sup>Optional</sup> <a name="ResourceTypesInput" id="@cdktf/provider-aws.oamLink.OamLink.property.resourceTypesInput"></a>
 
 ```go
@@ -877,6 +896,16 @@ func Id() *string
 
 ```go
 func LabelTemplate() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Region`<sup>Required</sup> <a name="Region" id="@cdktf/provider-aws.oamLink.OamLink.property.region"></a>
+
+```go
+func Region() *string
 ```
 
 - *Type:* *string
@@ -948,7 +977,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.oamLink.OamLinkConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/oamlink"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/oamlink"
 
 &oamlink.OamLinkConfig {
 	Connection: interface{},
@@ -962,10 +991,11 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/oamlink"
 	ResourceTypes: *[]*string,
 	SinkIdentifier: *string,
 	Id: *string,
-	LinkConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v20.oamLink.OamLinkLinkConfiguration,
+	LinkConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v21.oamLink.OamLinkLinkConfiguration,
+	Region: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v20.oamLink.OamLinkTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v21.oamLink.OamLinkTimeouts,
 }
 ```
 
@@ -980,13 +1010,14 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/oamlink"
 | <code><a href="#@cdktf/provider-aws.oamLink.OamLinkConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.oamLink.OamLinkConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.oamLink.OamLinkConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.oamLink.OamLinkConfig.property.labelTemplate">LabelTemplate</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/oam_link#label_template OamLink#label_template}. |
-| <code><a href="#@cdktf/provider-aws.oamLink.OamLinkConfig.property.resourceTypes">ResourceTypes</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/oam_link#resource_types OamLink#resource_types}. |
-| <code><a href="#@cdktf/provider-aws.oamLink.OamLinkConfig.property.sinkIdentifier">SinkIdentifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/oam_link#sink_identifier OamLink#sink_identifier}. |
-| <code><a href="#@cdktf/provider-aws.oamLink.OamLinkConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/oam_link#id OamLink#id}. |
+| <code><a href="#@cdktf/provider-aws.oamLink.OamLinkConfig.property.labelTemplate">LabelTemplate</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/oam_link#label_template OamLink#label_template}. |
+| <code><a href="#@cdktf/provider-aws.oamLink.OamLinkConfig.property.resourceTypes">ResourceTypes</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/oam_link#resource_types OamLink#resource_types}. |
+| <code><a href="#@cdktf/provider-aws.oamLink.OamLinkConfig.property.sinkIdentifier">SinkIdentifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/oam_link#sink_identifier OamLink#sink_identifier}. |
+| <code><a href="#@cdktf/provider-aws.oamLink.OamLinkConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/oam_link#id OamLink#id}. |
 | <code><a href="#@cdktf/provider-aws.oamLink.OamLinkConfig.property.linkConfiguration">LinkConfiguration</a></code> | <code><a href="#@cdktf/provider-aws.oamLink.OamLinkLinkConfiguration">OamLinkLinkConfiguration</a></code> | link_configuration block. |
-| <code><a href="#@cdktf/provider-aws.oamLink.OamLinkConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/oam_link#tags OamLink#tags}. |
-| <code><a href="#@cdktf/provider-aws.oamLink.OamLinkConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/oam_link#tags_all OamLink#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.oamLink.OamLinkConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
+| <code><a href="#@cdktf/provider-aws.oamLink.OamLinkConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/oam_link#tags OamLink#tags}. |
+| <code><a href="#@cdktf/provider-aws.oamLink.OamLinkConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/oam_link#tags_all OamLink#tags_all}. |
 | <code><a href="#@cdktf/provider-aws.oamLink.OamLinkConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-aws.oamLink.OamLinkTimeouts">OamLinkTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1069,7 +1100,7 @@ LabelTemplate *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/oam_link#label_template OamLink#label_template}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/oam_link#label_template OamLink#label_template}.
 
 ---
 
@@ -1081,7 +1112,7 @@ ResourceTypes *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/oam_link#resource_types OamLink#resource_types}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/oam_link#resource_types OamLink#resource_types}.
 
 ---
 
@@ -1093,7 +1124,7 @@ SinkIdentifier *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/oam_link#sink_identifier OamLink#sink_identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/oam_link#sink_identifier OamLink#sink_identifier}.
 
 ---
 
@@ -1105,7 +1136,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/oam_link#id OamLink#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/oam_link#id OamLink#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1122,7 +1153,21 @@ LinkConfiguration OamLinkLinkConfiguration
 
 link_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/oam_link#link_configuration OamLink#link_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/oam_link#link_configuration OamLink#link_configuration}
+
+---
+
+##### `Region`<sup>Optional</sup> <a name="Region" id="@cdktf/provider-aws.oamLink.OamLinkConfig.property.region"></a>
+
+```go
+Region *string
+```
+
+- *Type:* *string
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/oam_link#region OamLink#region}
 
 ---
 
@@ -1134,7 +1179,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/oam_link#tags OamLink#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/oam_link#tags OamLink#tags}.
 
 ---
 
@@ -1146,7 +1191,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/oam_link#tags_all OamLink#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/oam_link#tags_all OamLink#tags_all}.
 
 ---
 
@@ -1160,7 +1205,7 @@ Timeouts OamLinkTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/oam_link#timeouts OamLink#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/oam_link#timeouts OamLink#timeouts}
 
 ---
 
@@ -1169,11 +1214,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.oamLink.OamLinkLinkConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/oamlink"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/oamlink"
 
 &oamlink.OamLinkLinkConfiguration {
-	LogGroupConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v20.oamLink.OamLinkLinkConfigurationLogGroupConfiguration,
-	MetricConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v20.oamLink.OamLinkLinkConfigurationMetricConfiguration,
+	LogGroupConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v21.oamLink.OamLinkLinkConfigurationLogGroupConfiguration,
+	MetricConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v21.oamLink.OamLinkLinkConfigurationMetricConfiguration,
 }
 ```
 
@@ -1196,7 +1241,7 @@ LogGroupConfiguration OamLinkLinkConfigurationLogGroupConfiguration
 
 log_group_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/oam_link#log_group_configuration OamLink#log_group_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/oam_link#log_group_configuration OamLink#log_group_configuration}
 
 ---
 
@@ -1210,7 +1255,7 @@ MetricConfiguration OamLinkLinkConfigurationMetricConfiguration
 
 metric_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/oam_link#metric_configuration OamLink#metric_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/oam_link#metric_configuration OamLink#metric_configuration}
 
 ---
 
@@ -1219,7 +1264,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.oamLink.OamLinkLinkConfigurationLogGroupConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/oamlink"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/oamlink"
 
 &oamlink.OamLinkLinkConfigurationLogGroupConfiguration {
 	Filter: *string,
@@ -1230,7 +1275,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/oamlink"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.oamLink.OamLinkLinkConfigurationLogGroupConfiguration.property.filter">Filter</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/oam_link#filter OamLink#filter}. |
+| <code><a href="#@cdktf/provider-aws.oamLink.OamLinkLinkConfigurationLogGroupConfiguration.property.filter">Filter</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/oam_link#filter OamLink#filter}. |
 
 ---
 
@@ -1242,7 +1287,7 @@ Filter *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/oam_link#filter OamLink#filter}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/oam_link#filter OamLink#filter}.
 
 ---
 
@@ -1251,7 +1296,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.oamLink.OamLinkLinkConfigurationMetricConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/oamlink"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/oamlink"
 
 &oamlink.OamLinkLinkConfigurationMetricConfiguration {
 	Filter: *string,
@@ -1262,7 +1307,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/oamlink"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.oamLink.OamLinkLinkConfigurationMetricConfiguration.property.filter">Filter</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/oam_link#filter OamLink#filter}. |
+| <code><a href="#@cdktf/provider-aws.oamLink.OamLinkLinkConfigurationMetricConfiguration.property.filter">Filter</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/oam_link#filter OamLink#filter}. |
 
 ---
 
@@ -1274,7 +1319,7 @@ Filter *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/oam_link#filter OamLink#filter}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/oam_link#filter OamLink#filter}.
 
 ---
 
@@ -1283,7 +1328,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.oamLink.OamLinkTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/oamlink"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/oamlink"
 
 &oamlink.OamLinkTimeouts {
 	Create: *string,
@@ -1296,9 +1341,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/oamlink"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.oamLink.OamLinkTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/oam_link#create OamLink#create}. |
-| <code><a href="#@cdktf/provider-aws.oamLink.OamLinkTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/oam_link#delete OamLink#delete}. |
-| <code><a href="#@cdktf/provider-aws.oamLink.OamLinkTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/oam_link#update OamLink#update}. |
+| <code><a href="#@cdktf/provider-aws.oamLink.OamLinkTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/oam_link#create OamLink#create}. |
+| <code><a href="#@cdktf/provider-aws.oamLink.OamLinkTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/oam_link#delete OamLink#delete}. |
+| <code><a href="#@cdktf/provider-aws.oamLink.OamLinkTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/oam_link#update OamLink#update}. |
 
 ---
 
@@ -1310,7 +1355,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/oam_link#create OamLink#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/oam_link#create OamLink#create}.
 
 ---
 
@@ -1322,7 +1367,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/oam_link#delete OamLink#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/oam_link#delete OamLink#delete}.
 
 ---
 
@@ -1334,7 +1379,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/oam_link#update OamLink#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/oam_link#update OamLink#update}.
 
 ---
 
@@ -1345,7 +1390,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.oamLink.OamLinkLinkConfigurationLogGroupConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/oamlink"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/oamlink"
 
 oamlink.NewOamLinkLinkConfigurationLogGroupConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OamLinkLinkConfigurationLogGroupConfigurationOutputReference
 ```
@@ -1616,7 +1661,7 @@ func InternalValue() OamLinkLinkConfigurationLogGroupConfiguration
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.oamLink.OamLinkLinkConfigurationMetricConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/oamlink"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/oamlink"
 
 oamlink.NewOamLinkLinkConfigurationMetricConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OamLinkLinkConfigurationMetricConfigurationOutputReference
 ```
@@ -1887,7 +1932,7 @@ func InternalValue() OamLinkLinkConfigurationMetricConfiguration
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.oamLink.OamLinkLinkConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/oamlink"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/oamlink"
 
 oamlink.NewOamLinkLinkConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OamLinkLinkConfigurationOutputReference
 ```
@@ -2220,7 +2265,7 @@ func InternalValue() OamLinkLinkConfiguration
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.oamLink.OamLinkTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/oamlink"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/oamlink"
 
 oamlink.NewOamLinkTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OamLinkTimeoutsOutputReference
 ```

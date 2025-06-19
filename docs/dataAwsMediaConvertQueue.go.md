@@ -4,12 +4,12 @@
 
 ### DataAwsMediaConvertQueue <a name="DataAwsMediaConvertQueue" id="@cdktf/provider-aws.dataAwsMediaConvertQueue.DataAwsMediaConvertQueue"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/media_convert_queue aws_media_convert_queue}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/media_convert_queue aws_media_convert_queue}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsMediaConvertQueue.DataAwsMediaConvertQueue.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsmediaconvertqueue"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsmediaconvertqueue"
 
 dataawsmediaconvertqueue.NewDataAwsMediaConvertQueue(scope Construct, id *string, config DataAwsMediaConvertQueueConfig) DataAwsMediaConvertQueue
 ```
@@ -67,6 +67,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.dataAwsMediaConvertQueue.DataAwsMediaConvertQueue.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsMediaConvertQueue.DataAwsMediaConvertQueue.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsMediaConvertQueue.DataAwsMediaConvertQueue.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsMediaConvertQueue.DataAwsMediaConvertQueue.resetRegion">ResetRegion</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsMediaConvertQueue.DataAwsMediaConvertQueue.resetTags">ResetTags</a></code> | *No description.* |
 
 ---
@@ -263,6 +264,12 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 
 ---
 
+##### `ResetRegion` <a name="ResetRegion" id="@cdktf/provider-aws.dataAwsMediaConvertQueue.DataAwsMediaConvertQueue.resetRegion"></a>
+
+```go
+func ResetRegion()
+```
+
 ##### `ResetTags` <a name="ResetTags" id="@cdktf/provider-aws.dataAwsMediaConvertQueue.DataAwsMediaConvertQueue.resetTags"></a>
 
 ```go
@@ -283,7 +290,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsMediaConvertQueue.DataAwsMediaConvertQueue.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsmediaconvertqueue"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsmediaconvertqueue"
 
 dataawsmediaconvertqueue.DataAwsMediaConvertQueue_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsMediaConvertQueue.DataAwsMediaConvertQueue.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsmediaconvertqueue"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsmediaconvertqueue"
 
 dataawsmediaconvertqueue.DataAwsMediaConvertQueue_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +336,7 @@ dataawsmediaconvertqueue.DataAwsMediaConvertQueue_IsTerraformElement(x interface
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsMediaConvertQueue.DataAwsMediaConvertQueue.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsmediaconvertqueue"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsmediaconvertqueue"
 
 dataawsmediaconvertqueue.DataAwsMediaConvertQueue_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +350,7 @@ dataawsmediaconvertqueue.DataAwsMediaConvertQueue_IsTerraformDataSource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsMediaConvertQueue.DataAwsMediaConvertQueue.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsmediaconvertqueue"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsmediaconvertqueue"
 
 dataawsmediaconvertqueue.DataAwsMediaConvertQueue_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -372,7 +379,7 @@ The construct id used in the generated config for the DataAwsMediaConvertQueue t
 
 The id of the existing DataAwsMediaConvertQueue that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/media_convert_queue#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/media_convert_queue#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -404,8 +411,10 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.dataAwsMediaConvertQueue.DataAwsMediaConvertQueue.property.name">Name</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsMediaConvertQueue.DataAwsMediaConvertQueue.property.status">Status</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsMediaConvertQueue.DataAwsMediaConvertQueue.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsMediaConvertQueue.DataAwsMediaConvertQueue.property.regionInput">RegionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsMediaConvertQueue.DataAwsMediaConvertQueue.property.tagsInput">TagsInput</a></code> | <code>*map[string]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsMediaConvertQueue.DataAwsMediaConvertQueue.property.id">Id</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsMediaConvertQueue.DataAwsMediaConvertQueue.property.region">Region</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsMediaConvertQueue.DataAwsMediaConvertQueue.property.tags">Tags</a></code> | <code>*map[string]*string</code> | *No description.* |
 
 ---
@@ -572,6 +581,16 @@ func IdInput() *string
 
 ---
 
+##### `RegionInput`<sup>Optional</sup> <a name="RegionInput" id="@cdktf/provider-aws.dataAwsMediaConvertQueue.DataAwsMediaConvertQueue.property.regionInput"></a>
+
+```go
+func RegionInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `TagsInput`<sup>Optional</sup> <a name="TagsInput" id="@cdktf/provider-aws.dataAwsMediaConvertQueue.DataAwsMediaConvertQueue.property.tagsInput"></a>
 
 ```go
@@ -586,6 +605,16 @@ func TagsInput() *map[string]*string
 
 ```go
 func Id() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Region`<sup>Required</sup> <a name="Region" id="@cdktf/provider-aws.dataAwsMediaConvertQueue.DataAwsMediaConvertQueue.property.region"></a>
+
+```go
+func Region() *string
 ```
 
 - *Type:* *string
@@ -627,7 +656,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsMediaConvertQueue.DataAwsMediaConvertQueueConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsmediaconvertqueue"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsmediaconvertqueue"
 
 &dataawsmediaconvertqueue.DataAwsMediaConvertQueueConfig {
 	Connection: interface{},
@@ -638,6 +667,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsmediaconvertqueue"
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	Id: *string,
+	Region: *string,
 	Tags: *map[string]*string,
 }
 ```
@@ -653,8 +683,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsmediaconvertqueue"
 | <code><a href="#@cdktf/provider-aws.dataAwsMediaConvertQueue.DataAwsMediaConvertQueueConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsMediaConvertQueue.DataAwsMediaConvertQueueConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsMediaConvertQueue.DataAwsMediaConvertQueueConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsMediaConvertQueue.DataAwsMediaConvertQueueConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/media_convert_queue#id DataAwsMediaConvertQueue#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsMediaConvertQueue.DataAwsMediaConvertQueueConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/media_convert_queue#tags DataAwsMediaConvertQueue#tags}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsMediaConvertQueue.DataAwsMediaConvertQueueConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/media_convert_queue#id DataAwsMediaConvertQueue#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsMediaConvertQueue.DataAwsMediaConvertQueueConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
+| <code><a href="#@cdktf/provider-aws.dataAwsMediaConvertQueue.DataAwsMediaConvertQueueConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/media_convert_queue#tags DataAwsMediaConvertQueue#tags}. |
 
 ---
 
@@ -736,10 +767,24 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/media_convert_queue#id DataAwsMediaConvertQueue#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/media_convert_queue#id DataAwsMediaConvertQueue#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `Region`<sup>Optional</sup> <a name="Region" id="@cdktf/provider-aws.dataAwsMediaConvertQueue.DataAwsMediaConvertQueueConfig.property.region"></a>
+
+```go
+Region *string
+```
+
+- *Type:* *string
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/media_convert_queue#region DataAwsMediaConvertQueue#region}
 
 ---
 
@@ -751,7 +796,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/media_convert_queue#tags DataAwsMediaConvertQueue#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/media_convert_queue#tags DataAwsMediaConvertQueue#tags}.
 
 ---
 

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/availability_zones
+// https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/availability_zones
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,48 +13,54 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsAvailabilityZonesConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/availability_zones#all_availability_zones DataAwsAvailabilityZones#all_availability_zones}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/availability_zones#all_availability_zones DataAwsAvailabilityZones#all_availability_zones}
   */
   readonly allAvailabilityZones?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/availability_zones#exclude_names DataAwsAvailabilityZones#exclude_names}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/availability_zones#exclude_names DataAwsAvailabilityZones#exclude_names}
   */
   readonly excludeNames?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/availability_zones#exclude_zone_ids DataAwsAvailabilityZones#exclude_zone_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/availability_zones#exclude_zone_ids DataAwsAvailabilityZones#exclude_zone_ids}
   */
   readonly excludeZoneIds?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/availability_zones#id DataAwsAvailabilityZones#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/availability_zones#id DataAwsAvailabilityZones#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/availability_zones#state DataAwsAvailabilityZones#state}
+  * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/availability_zones#region DataAwsAvailabilityZones#region}
+  */
+  readonly region?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/availability_zones#state DataAwsAvailabilityZones#state}
   */
   readonly state?: string;
   /**
   * filter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/availability_zones#filter DataAwsAvailabilityZones#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/availability_zones#filter DataAwsAvailabilityZones#filter}
   */
   readonly filter?: DataAwsAvailabilityZonesFilter[] | cdktf.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/availability_zones#timeouts DataAwsAvailabilityZones#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/availability_zones#timeouts DataAwsAvailabilityZones#timeouts}
   */
   readonly timeouts?: DataAwsAvailabilityZonesTimeouts;
 }
 export interface DataAwsAvailabilityZonesFilter {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/availability_zones#name DataAwsAvailabilityZones#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/availability_zones#name DataAwsAvailabilityZones#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/availability_zones#values DataAwsAvailabilityZones#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/availability_zones#values DataAwsAvailabilityZones#values}
   */
   readonly values: string[];
 }
@@ -193,7 +199,7 @@ export class DataAwsAvailabilityZonesFilterList extends cdktf.ComplexList {
 }
 export interface DataAwsAvailabilityZonesTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/availability_zones#read DataAwsAvailabilityZones#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/availability_zones#read DataAwsAvailabilityZones#read}
   */
   readonly read?: string;
 }
@@ -287,7 +293,7 @@ export class DataAwsAvailabilityZonesTimeoutsOutputReference extends cdktf.Compl
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/availability_zones aws_availability_zones}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/availability_zones aws_availability_zones}
 */
 export class DataAwsAvailabilityZones extends cdktf.TerraformDataSource {
 
@@ -303,7 +309,7 @@ export class DataAwsAvailabilityZones extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataAwsAvailabilityZones resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsAvailabilityZones to import
-  * @param importFromId The id of the existing DataAwsAvailabilityZones that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/availability_zones#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsAvailabilityZones that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/availability_zones#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsAvailabilityZones to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -315,7 +321,7 @@ export class DataAwsAvailabilityZones extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/availability_zones aws_availability_zones} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/availability_zones aws_availability_zones} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -326,8 +332,8 @@ export class DataAwsAvailabilityZones extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_availability_zones',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.100.0',
-        providerVersionConstraint: '~> 5.0'
+        providerVersion: '6.0.0',
+        providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -341,6 +347,7 @@ export class DataAwsAvailabilityZones extends cdktf.TerraformDataSource {
     this._excludeNames = config.excludeNames;
     this._excludeZoneIds = config.excludeZoneIds;
     this._id = config.id;
+    this._region = config.region;
     this._state = config.state;
     this._filter.internalValue = config.filter;
     this._timeouts.internalValue = config.timeouts;
@@ -424,6 +431,22 @@ export class DataAwsAvailabilityZones extends cdktf.TerraformDataSource {
     return this.getListAttribute('names');
   }
 
+  // region - computed: true, optional: true, required: false
+  private _region?: string; 
+  public get region() {
+    return this.getStringAttribute('region');
+  }
+  public set region(value: string) {
+    this._region = value;
+  }
+  public resetRegion() {
+    this._region = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get regionInput() {
+    return this._region;
+  }
+
   // state - computed: false, optional: true, required: false
   private _state?: string; 
   public get state() {
@@ -487,6 +510,7 @@ export class DataAwsAvailabilityZones extends cdktf.TerraformDataSource {
       exclude_names: cdktf.listMapper(cdktf.stringToTerraform, false)(this._excludeNames),
       exclude_zone_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._excludeZoneIds),
       id: cdktf.stringToTerraform(this._id),
+      region: cdktf.stringToTerraform(this._region),
       state: cdktf.stringToTerraform(this._state),
       filter: cdktf.listMapper(dataAwsAvailabilityZonesFilterToTerraform, true)(this._filter.internalValue),
       timeouts: dataAwsAvailabilityZonesTimeoutsToTerraform(this._timeouts.internalValue),
@@ -515,6 +539,12 @@ export class DataAwsAvailabilityZones extends cdktf.TerraformDataSource {
       },
       id: {
         value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      region: {
+        value: cdktf.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

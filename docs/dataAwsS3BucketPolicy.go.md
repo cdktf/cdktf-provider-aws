@@ -4,12 +4,12 @@
 
 ### DataAwsS3BucketPolicy <a name="DataAwsS3BucketPolicy" id="@cdktf/provider-aws.dataAwsS3BucketPolicy.DataAwsS3BucketPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/s3_bucket_policy aws_s3_bucket_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/s3_bucket_policy aws_s3_bucket_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsS3BucketPolicy.DataAwsS3BucketPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawss3bucketpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawss3bucketpolicy"
 
 dataawss3bucketpolicy.NewDataAwsS3BucketPolicy(scope Construct, id *string, config DataAwsS3BucketPolicyConfig) DataAwsS3BucketPolicy
 ```
@@ -68,6 +68,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.dataAwsS3BucketPolicy.DataAwsS3BucketPolicy.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsS3BucketPolicy.DataAwsS3BucketPolicy.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsS3BucketPolicy.DataAwsS3BucketPolicy.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsS3BucketPolicy.DataAwsS3BucketPolicy.resetRegion">ResetRegion</a></code> | *No description.* |
 
 ---
 
@@ -269,6 +270,12 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 func ResetId()
 ```
 
+##### `ResetRegion` <a name="ResetRegion" id="@cdktf/provider-aws.dataAwsS3BucketPolicy.DataAwsS3BucketPolicy.resetRegion"></a>
+
+```go
+func ResetRegion()
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -283,7 +290,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsS3BucketPolicy.DataAwsS3BucketPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawss3bucketpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawss3bucketpolicy"
 
 dataawss3bucketpolicy.DataAwsS3BucketPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsS3BucketPolicy.DataAwsS3BucketPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawss3bucketpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawss3bucketpolicy"
 
 dataawss3bucketpolicy.DataAwsS3BucketPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +336,7 @@ dataawss3bucketpolicy.DataAwsS3BucketPolicy_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsS3BucketPolicy.DataAwsS3BucketPolicy.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawss3bucketpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawss3bucketpolicy"
 
 dataawss3bucketpolicy.DataAwsS3BucketPolicy_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +350,7 @@ dataawss3bucketpolicy.DataAwsS3BucketPolicy_IsTerraformDataSource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsS3BucketPolicy.DataAwsS3BucketPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawss3bucketpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawss3bucketpolicy"
 
 dataawss3bucketpolicy.DataAwsS3BucketPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -372,7 +379,7 @@ The construct id used in the generated config for the DataAwsS3BucketPolicy to i
 
 The id of the existing DataAwsS3BucketPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/s3_bucket_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/s3_bucket_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -403,8 +410,10 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.dataAwsS3BucketPolicy.DataAwsS3BucketPolicy.property.policy">Policy</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsS3BucketPolicy.DataAwsS3BucketPolicy.property.bucketInput">BucketInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsS3BucketPolicy.DataAwsS3BucketPolicy.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsS3BucketPolicy.DataAwsS3BucketPolicy.property.regionInput">RegionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsS3BucketPolicy.DataAwsS3BucketPolicy.property.bucket">Bucket</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsS3BucketPolicy.DataAwsS3BucketPolicy.property.id">Id</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsS3BucketPolicy.DataAwsS3BucketPolicy.property.region">Region</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
@@ -560,6 +569,16 @@ func IdInput() *string
 
 ---
 
+##### `RegionInput`<sup>Optional</sup> <a name="RegionInput" id="@cdktf/provider-aws.dataAwsS3BucketPolicy.DataAwsS3BucketPolicy.property.regionInput"></a>
+
+```go
+func RegionInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `Bucket`<sup>Required</sup> <a name="Bucket" id="@cdktf/provider-aws.dataAwsS3BucketPolicy.DataAwsS3BucketPolicy.property.bucket"></a>
 
 ```go
@@ -574,6 +593,16 @@ func Bucket() *string
 
 ```go
 func Id() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Region`<sup>Required</sup> <a name="Region" id="@cdktf/provider-aws.dataAwsS3BucketPolicy.DataAwsS3BucketPolicy.property.region"></a>
+
+```go
+func Region() *string
 ```
 
 - *Type:* *string
@@ -605,7 +634,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsS3BucketPolicy.DataAwsS3BucketPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawss3bucketpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawss3bucketpolicy"
 
 &dataawss3bucketpolicy.DataAwsS3BucketPolicyConfig {
 	Connection: interface{},
@@ -617,6 +646,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawss3bucketpolicy"
 	Provisioners: *[]interface{},
 	Bucket: *string,
 	Id: *string,
+	Region: *string,
 }
 ```
 
@@ -631,8 +661,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawss3bucketpolicy"
 | <code><a href="#@cdktf/provider-aws.dataAwsS3BucketPolicy.DataAwsS3BucketPolicyConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsS3BucketPolicy.DataAwsS3BucketPolicyConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsS3BucketPolicy.DataAwsS3BucketPolicyConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsS3BucketPolicy.DataAwsS3BucketPolicyConfig.property.bucket">Bucket</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/s3_bucket_policy#bucket DataAwsS3BucketPolicy#bucket}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsS3BucketPolicy.DataAwsS3BucketPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/s3_bucket_policy#id DataAwsS3BucketPolicy#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsS3BucketPolicy.DataAwsS3BucketPolicyConfig.property.bucket">Bucket</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/s3_bucket_policy#bucket DataAwsS3BucketPolicy#bucket}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsS3BucketPolicy.DataAwsS3BucketPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/s3_bucket_policy#id DataAwsS3BucketPolicy#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsS3BucketPolicy.DataAwsS3BucketPolicyConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
 
@@ -714,7 +745,7 @@ Bucket *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/s3_bucket_policy#bucket DataAwsS3BucketPolicy#bucket}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/s3_bucket_policy#bucket DataAwsS3BucketPolicy#bucket}.
 
 ---
 
@@ -726,10 +757,24 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/s3_bucket_policy#id DataAwsS3BucketPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/s3_bucket_policy#id DataAwsS3BucketPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `Region`<sup>Optional</sup> <a name="Region" id="@cdktf/provider-aws.dataAwsS3BucketPolicy.DataAwsS3BucketPolicyConfig.property.region"></a>
+
+```go
+Region *string
+```
+
+- *Type:* *string
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/s3_bucket_policy#region DataAwsS3BucketPolicy#region}
 
 ---
 

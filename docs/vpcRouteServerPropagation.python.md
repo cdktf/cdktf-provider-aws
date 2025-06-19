@@ -4,7 +4,7 @@
 
 ### VpcRouteServerPropagation <a name="VpcRouteServerPropagation" id="@cdktf/provider-aws.vpcRouteServerPropagation.VpcRouteServerPropagation"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/vpc_route_server_propagation aws_vpc_route_server_propagation}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/vpc_route_server_propagation aws_vpc_route_server_propagation}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.vpcRouteServerPropagation.VpcRouteServerPropagation.Initializer"></a>
 
@@ -23,6 +23,7 @@ vpcRouteServerPropagation.VpcRouteServerPropagation(
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
   route_server_id: str,
   route_table_id: str,
+  region: str = None,
   timeouts: VpcRouteServerPropagationTimeouts = None
 )
 ```
@@ -38,8 +39,9 @@ vpcRouteServerPropagation.VpcRouteServerPropagation(
 | <code><a href="#@cdktf/provider-aws.vpcRouteServerPropagation.VpcRouteServerPropagation.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.vpcRouteServerPropagation.VpcRouteServerPropagation.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.vpcRouteServerPropagation.VpcRouteServerPropagation.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpcRouteServerPropagation.VpcRouteServerPropagation.Initializer.parameter.routeServerId">route_server_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/vpc_route_server_propagation#route_server_id VpcRouteServerPropagation#route_server_id}. |
-| <code><a href="#@cdktf/provider-aws.vpcRouteServerPropagation.VpcRouteServerPropagation.Initializer.parameter.routeTableId">route_table_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/vpc_route_server_propagation#route_table_id VpcRouteServerPropagation#route_table_id}. |
+| <code><a href="#@cdktf/provider-aws.vpcRouteServerPropagation.VpcRouteServerPropagation.Initializer.parameter.routeServerId">route_server_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/vpc_route_server_propagation#route_server_id VpcRouteServerPropagation#route_server_id}. |
+| <code><a href="#@cdktf/provider-aws.vpcRouteServerPropagation.VpcRouteServerPropagation.Initializer.parameter.routeTableId">route_table_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/vpc_route_server_propagation#route_table_id VpcRouteServerPropagation#route_table_id}. |
+| <code><a href="#@cdktf/provider-aws.vpcRouteServerPropagation.VpcRouteServerPropagation.Initializer.parameter.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktf/provider-aws.vpcRouteServerPropagation.VpcRouteServerPropagation.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-aws.vpcRouteServerPropagation.VpcRouteServerPropagationTimeouts">VpcRouteServerPropagationTimeouts</a></code> | timeouts block. |
 
 ---
@@ -108,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/vpc_route_server_propagation#route_server_id VpcRouteServerPropagation#route_server_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/vpc_route_server_propagation#route_server_id VpcRouteServerPropagation#route_server_id}.
 
 ---
 
@@ -116,7 +118,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/vpc_route_server_propagation#route_table_id VpcRouteServerPropagation#route_table_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/vpc_route_server_propagation#route_table_id VpcRouteServerPropagation#route_table_id}.
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdktf/provider-aws.vpcRouteServerPropagation.VpcRouteServerPropagation.Initializer.parameter.region"></a>
+
+- *Type:* str
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/vpc_route_server_propagation#region VpcRouteServerPropagation#region}
 
 ---
 
@@ -126,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/vpc_route_server_propagation#timeouts VpcRouteServerPropagation#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/vpc_route_server_propagation#timeouts VpcRouteServerPropagation#timeouts}
 
 ---
 
@@ -158,6 +170,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktf/provider-aws.vpcRouteServerPropagation.VpcRouteServerPropagation.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-aws.vpcRouteServerPropagation.VpcRouteServerPropagation.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-aws.vpcRouteServerPropagation.VpcRouteServerPropagation.putTimeouts">put_timeouts</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.vpcRouteServerPropagation.VpcRouteServerPropagation.resetRegion">reset_region</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.vpcRouteServerPropagation.VpcRouteServerPropagation.resetTimeouts">reset_timeouts</a></code> | *No description.* |
 
 ---
@@ -502,7 +515,7 @@ def put_timeouts(
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/vpc_route_server_propagation#create VpcRouteServerPropagation#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/vpc_route_server_propagation#create VpcRouteServerPropagation#create}
 
 ---
 
@@ -512,9 +525,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/vpc_route_server_propagation#delete VpcRouteServerPropagation#delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/vpc_route_server_propagation#delete VpcRouteServerPropagation#delete}
 
 ---
+
+##### `reset_region` <a name="reset_region" id="@cdktf/provider-aws.vpcRouteServerPropagation.VpcRouteServerPropagation.resetRegion"></a>
+
+```python
+def reset_region() -> None
+```
 
 ##### `reset_timeouts` <a name="reset_timeouts" id="@cdktf/provider-aws.vpcRouteServerPropagation.VpcRouteServerPropagation.resetTimeouts"></a>
 
@@ -636,7 +655,7 @@ The construct id used in the generated config for the VpcRouteServerPropagation 
 
 The id of the existing VpcRouteServerPropagation that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/vpc_route_server_propagation#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/vpc_route_server_propagation#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -667,9 +686,11 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.vpcRouteServerPropagation.VpcRouteServerPropagation.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.vpcRouteServerPropagation.VpcRouteServerPropagation.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.vpcRouteServerPropagation.VpcRouteServerPropagation.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-aws.vpcRouteServerPropagation.VpcRouteServerPropagationTimeoutsOutputReference">VpcRouteServerPropagationTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.vpcRouteServerPropagation.VpcRouteServerPropagation.property.regionInput">region_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.vpcRouteServerPropagation.VpcRouteServerPropagation.property.routeServerIdInput">route_server_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.vpcRouteServerPropagation.VpcRouteServerPropagation.property.routeTableIdInput">route_table_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.vpcRouteServerPropagation.VpcRouteServerPropagation.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.vpcRouteServerPropagation.VpcRouteServerPropagationTimeouts">VpcRouteServerPropagationTimeouts</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.vpcRouteServerPropagation.VpcRouteServerPropagation.property.region">region</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.vpcRouteServerPropagation.VpcRouteServerPropagation.property.routeServerId">route_server_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.vpcRouteServerPropagation.VpcRouteServerPropagation.property.routeTableId">route_table_id</a></code> | <code>str</code> | *No description.* |
 
@@ -827,6 +848,16 @@ timeouts: VpcRouteServerPropagationTimeoutsOutputReference
 
 ---
 
+##### `region_input`<sup>Optional</sup> <a name="region_input" id="@cdktf/provider-aws.vpcRouteServerPropagation.VpcRouteServerPropagation.property.regionInput"></a>
+
+```python
+region_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `route_server_id_input`<sup>Optional</sup> <a name="route_server_id_input" id="@cdktf/provider-aws.vpcRouteServerPropagation.VpcRouteServerPropagation.property.routeServerIdInput"></a>
 
 ```python
@@ -854,6 +885,16 @@ timeouts_input: typing.Union[IResolvable, VpcRouteServerPropagationTimeouts]
 ```
 
 - *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.vpcRouteServerPropagation.VpcRouteServerPropagationTimeouts">VpcRouteServerPropagationTimeouts</a>]
+
+---
+
+##### `region`<sup>Required</sup> <a name="region" id="@cdktf/provider-aws.vpcRouteServerPropagation.VpcRouteServerPropagation.property.region"></a>
+
+```python
+region: str
+```
+
+- *Type:* str
 
 ---
 
@@ -914,6 +955,7 @@ vpcRouteServerPropagation.VpcRouteServerPropagationConfig(
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
   route_server_id: str,
   route_table_id: str,
+  region: str = None,
   timeouts: VpcRouteServerPropagationTimeouts = None
 )
 ```
@@ -929,8 +971,9 @@ vpcRouteServerPropagation.VpcRouteServerPropagationConfig(
 | <code><a href="#@cdktf/provider-aws.vpcRouteServerPropagation.VpcRouteServerPropagationConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.vpcRouteServerPropagation.VpcRouteServerPropagationConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.vpcRouteServerPropagation.VpcRouteServerPropagationConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpcRouteServerPropagation.VpcRouteServerPropagationConfig.property.routeServerId">route_server_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/vpc_route_server_propagation#route_server_id VpcRouteServerPropagation#route_server_id}. |
-| <code><a href="#@cdktf/provider-aws.vpcRouteServerPropagation.VpcRouteServerPropagationConfig.property.routeTableId">route_table_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/vpc_route_server_propagation#route_table_id VpcRouteServerPropagation#route_table_id}. |
+| <code><a href="#@cdktf/provider-aws.vpcRouteServerPropagation.VpcRouteServerPropagationConfig.property.routeServerId">route_server_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/vpc_route_server_propagation#route_server_id VpcRouteServerPropagation#route_server_id}. |
+| <code><a href="#@cdktf/provider-aws.vpcRouteServerPropagation.VpcRouteServerPropagationConfig.property.routeTableId">route_table_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/vpc_route_server_propagation#route_table_id VpcRouteServerPropagation#route_table_id}. |
+| <code><a href="#@cdktf/provider-aws.vpcRouteServerPropagation.VpcRouteServerPropagationConfig.property.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktf/provider-aws.vpcRouteServerPropagation.VpcRouteServerPropagationConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-aws.vpcRouteServerPropagation.VpcRouteServerPropagationTimeouts">VpcRouteServerPropagationTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1013,7 +1056,7 @@ route_server_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/vpc_route_server_propagation#route_server_id VpcRouteServerPropagation#route_server_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/vpc_route_server_propagation#route_server_id VpcRouteServerPropagation#route_server_id}.
 
 ---
 
@@ -1025,7 +1068,21 @@ route_table_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/vpc_route_server_propagation#route_table_id VpcRouteServerPropagation#route_table_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/vpc_route_server_propagation#route_table_id VpcRouteServerPropagation#route_table_id}.
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdktf/provider-aws.vpcRouteServerPropagation.VpcRouteServerPropagationConfig.property.region"></a>
+
+```python
+region: str
+```
+
+- *Type:* str
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/vpc_route_server_propagation#region VpcRouteServerPropagation#region}
 
 ---
 
@@ -1039,7 +1096,7 @@ timeouts: VpcRouteServerPropagationTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/vpc_route_server_propagation#timeouts VpcRouteServerPropagation#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/vpc_route_server_propagation#timeouts VpcRouteServerPropagation#timeouts}
 
 ---
 
@@ -1075,7 +1132,7 @@ create: str
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/vpc_route_server_propagation#create VpcRouteServerPropagation#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/vpc_route_server_propagation#create VpcRouteServerPropagation#create}
 
 ---
 
@@ -1089,7 +1146,7 @@ delete: str
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/vpc_route_server_propagation#delete VpcRouteServerPropagation#delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/vpc_route_server_propagation#delete VpcRouteServerPropagation#delete}
 
 ---
 

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/wafregional_web_acl_association
+// https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/wafregional_web_acl_association
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,30 +13,36 @@ import * as cdktf from 'cdktf';
 
 export interface WafregionalWebAclAssociationConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/wafregional_web_acl_association#id WafregionalWebAclAssociation#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/wafregional_web_acl_association#id WafregionalWebAclAssociation#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/wafregional_web_acl_association#resource_arn WafregionalWebAclAssociation#resource_arn}
+  * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/wafregional_web_acl_association#region WafregionalWebAclAssociation#region}
+  */
+  readonly region?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/wafregional_web_acl_association#resource_arn WafregionalWebAclAssociation#resource_arn}
   */
   readonly resourceArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/wafregional_web_acl_association#web_acl_id WafregionalWebAclAssociation#web_acl_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/wafregional_web_acl_association#web_acl_id WafregionalWebAclAssociation#web_acl_id}
   */
   readonly webAclId: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/wafregional_web_acl_association#timeouts WafregionalWebAclAssociation#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/wafregional_web_acl_association#timeouts WafregionalWebAclAssociation#timeouts}
   */
   readonly timeouts?: WafregionalWebAclAssociationTimeouts;
 }
 export interface WafregionalWebAclAssociationTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/wafregional_web_acl_association#create WafregionalWebAclAssociation#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/wafregional_web_acl_association#create WafregionalWebAclAssociation#create}
   */
   readonly create?: string;
 }
@@ -130,7 +136,7 @@ export class WafregionalWebAclAssociationTimeoutsOutputReference extends cdktf.C
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/wafregional_web_acl_association aws_wafregional_web_acl_association}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/wafregional_web_acl_association aws_wafregional_web_acl_association}
 */
 export class WafregionalWebAclAssociation extends cdktf.TerraformResource {
 
@@ -146,7 +152,7 @@ export class WafregionalWebAclAssociation extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a WafregionalWebAclAssociation resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the WafregionalWebAclAssociation to import
-  * @param importFromId The id of the existing WafregionalWebAclAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/wafregional_web_acl_association#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing WafregionalWebAclAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/wafregional_web_acl_association#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the WafregionalWebAclAssociation to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -158,7 +164,7 @@ export class WafregionalWebAclAssociation extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/wafregional_web_acl_association aws_wafregional_web_acl_association} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/wafregional_web_acl_association aws_wafregional_web_acl_association} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -169,8 +175,8 @@ export class WafregionalWebAclAssociation extends cdktf.TerraformResource {
       terraformResourceType: 'aws_wafregional_web_acl_association',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.100.0',
-        providerVersionConstraint: '~> 5.0'
+        providerVersion: '6.0.0',
+        providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -181,6 +187,7 @@ export class WafregionalWebAclAssociation extends cdktf.TerraformResource {
       forEach: config.forEach
     });
     this._id = config.id;
+    this._region = config.region;
     this._resourceArn = config.resourceArn;
     this._webAclId = config.webAclId;
     this._timeouts.internalValue = config.timeouts;
@@ -204,6 +211,22 @@ export class WafregionalWebAclAssociation extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get idInput() {
     return this._id;
+  }
+
+  // region - computed: true, optional: true, required: false
+  private _region?: string; 
+  public get region() {
+    return this.getStringAttribute('region');
+  }
+  public set region(value: string) {
+    this._region = value;
+  }
+  public resetRegion() {
+    this._region = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get regionInput() {
+    return this._region;
   }
 
   // resource_arn - computed: false, optional: false, required: true
@@ -255,6 +278,7 @@ export class WafregionalWebAclAssociation extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       id: cdktf.stringToTerraform(this._id),
+      region: cdktf.stringToTerraform(this._region),
       resource_arn: cdktf.stringToTerraform(this._resourceArn),
       web_acl_id: cdktf.stringToTerraform(this._webAclId),
       timeouts: wafregionalWebAclAssociationTimeoutsToTerraform(this._timeouts.internalValue),
@@ -265,6 +289,12 @@ export class WafregionalWebAclAssociation extends cdktf.TerraformResource {
     const attrs = {
       id: {
         value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      region: {
+        value: cdktf.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

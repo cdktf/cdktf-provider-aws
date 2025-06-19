@@ -4,7 +4,7 @@
 
 ### GlueResourcePolicy <a name="GlueResourcePolicy" id="@cdktf/provider-aws.glueResourcePolicy.GlueResourcePolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_resource_policy aws_glue_resource_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_resource_policy aws_glue_resource_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.glueResourcePolicy.GlueResourcePolicy.Initializer"></a>
 
@@ -75,6 +75,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.glueResourcePolicy.GlueResourcePolicy.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-aws.glueResourcePolicy.GlueResourcePolicy.resetEnableHybrid">ResetEnableHybrid</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.glueResourcePolicy.GlueResourcePolicy.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.glueResourcePolicy.GlueResourcePolicy.resetRegion">ResetRegion</a></code> | *No description.* |
 
 ---
 
@@ -378,6 +379,12 @@ private void ResetEnableHybrid()
 private void ResetId()
 ```
 
+##### `ResetRegion` <a name="ResetRegion" id="@cdktf/provider-aws.glueResourcePolicy.GlueResourcePolicy.resetRegion"></a>
+
+```csharp
+private void ResetRegion()
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -481,7 +488,7 @@ The construct id used in the generated config for the GlueResourcePolicy to impo
 
 The id of the existing GlueResourcePolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_resource_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_resource_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -514,9 +521,11 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.glueResourcePolicy.GlueResourcePolicy.property.enableHybridInput">EnableHybridInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.glueResourcePolicy.GlueResourcePolicy.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.glueResourcePolicy.GlueResourcePolicy.property.policyInput">PolicyInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.glueResourcePolicy.GlueResourcePolicy.property.regionInput">RegionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.glueResourcePolicy.GlueResourcePolicy.property.enableHybrid">EnableHybrid</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.glueResourcePolicy.GlueResourcePolicy.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.glueResourcePolicy.GlueResourcePolicy.property.policy">Policy</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.glueResourcePolicy.GlueResourcePolicy.property.region">Region</a></code> | <code>string</code> | *No description.* |
 
 ---
 
@@ -692,6 +701,16 @@ public string PolicyInput { get; }
 
 ---
 
+##### `RegionInput`<sup>Optional</sup> <a name="RegionInput" id="@cdktf/provider-aws.glueResourcePolicy.GlueResourcePolicy.property.regionInput"></a>
+
+```csharp
+public string RegionInput { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `EnableHybrid`<sup>Required</sup> <a name="EnableHybrid" id="@cdktf/provider-aws.glueResourcePolicy.GlueResourcePolicy.property.enableHybrid"></a>
 
 ```csharp
@@ -716,6 +735,16 @@ public string Id { get; }
 
 ```csharp
 public string Policy { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Region`<sup>Required</sup> <a name="Region" id="@cdktf/provider-aws.glueResourcePolicy.GlueResourcePolicy.property.region"></a>
+
+```csharp
+public string Region { get; }
 ```
 
 - *Type:* string
@@ -759,7 +788,8 @@ new GlueResourcePolicyConfig {
     object[] Provisioners = null,
     string Policy,
     string EnableHybrid = null,
-    string Id = null
+    string Id = null,
+    string Region = null
 };
 ```
 
@@ -774,9 +804,10 @@ new GlueResourcePolicyConfig {
 | <code><a href="#@cdktf/provider-aws.glueResourcePolicy.GlueResourcePolicyConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.glueResourcePolicy.GlueResourcePolicyConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.glueResourcePolicy.GlueResourcePolicyConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueResourcePolicy.GlueResourcePolicyConfig.property.policy">Policy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_resource_policy#policy GlueResourcePolicy#policy}. |
-| <code><a href="#@cdktf/provider-aws.glueResourcePolicy.GlueResourcePolicyConfig.property.enableHybrid">EnableHybrid</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_resource_policy#enable_hybrid GlueResourcePolicy#enable_hybrid}. |
-| <code><a href="#@cdktf/provider-aws.glueResourcePolicy.GlueResourcePolicyConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_resource_policy#id GlueResourcePolicy#id}. |
+| <code><a href="#@cdktf/provider-aws.glueResourcePolicy.GlueResourcePolicyConfig.property.policy">Policy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_resource_policy#policy GlueResourcePolicy#policy}. |
+| <code><a href="#@cdktf/provider-aws.glueResourcePolicy.GlueResourcePolicyConfig.property.enableHybrid">EnableHybrid</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_resource_policy#enable_hybrid GlueResourcePolicy#enable_hybrid}. |
+| <code><a href="#@cdktf/provider-aws.glueResourcePolicy.GlueResourcePolicyConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_resource_policy#id GlueResourcePolicy#id}. |
+| <code><a href="#@cdktf/provider-aws.glueResourcePolicy.GlueResourcePolicyConfig.property.region">Region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
 
@@ -858,7 +889,7 @@ public string Policy { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_resource_policy#policy GlueResourcePolicy#policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_resource_policy#policy GlueResourcePolicy#policy}.
 
 ---
 
@@ -870,7 +901,7 @@ public string EnableHybrid { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_resource_policy#enable_hybrid GlueResourcePolicy#enable_hybrid}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_resource_policy#enable_hybrid GlueResourcePolicy#enable_hybrid}.
 
 ---
 
@@ -882,10 +913,24 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_resource_policy#id GlueResourcePolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_resource_policy#id GlueResourcePolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `Region`<sup>Optional</sup> <a name="Region" id="@cdktf/provider-aws.glueResourcePolicy.GlueResourcePolicyConfig.property.region"></a>
+
+```csharp
+public string Region { get; set; }
+```
+
+- *Type:* string
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_resource_policy#region GlueResourcePolicy#region}
 
 ---
 

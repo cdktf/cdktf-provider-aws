@@ -4,12 +4,12 @@
 
 ### NetworkInterfaceAttachmentA <a name="NetworkInterfaceAttachmentA" id="@cdktf/provider-aws.networkInterfaceAttachment.NetworkInterfaceAttachmentA"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/network_interface_attachment aws_network_interface_attachment}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/network_interface_attachment aws_network_interface_attachment}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.networkInterfaceAttachment.NetworkInterfaceAttachmentA.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/networkinterfaceattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/networkinterfaceattachment"
 
 networkinterfaceattachment.NewNetworkInterfaceAttachmentA(scope Construct, id *string, config NetworkInterfaceAttachmentAConfig) NetworkInterfaceAttachmentA
 ```
@@ -74,6 +74,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.networkInterfaceAttachment.NetworkInterfaceAttachmentA.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-aws.networkInterfaceAttachment.NetworkInterfaceAttachmentA.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-aws.networkInterfaceAttachment.NetworkInterfaceAttachmentA.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.networkInterfaceAttachment.NetworkInterfaceAttachmentA.resetRegion">ResetRegion</a></code> | *No description.* |
 
 ---
 
@@ -371,6 +372,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 func ResetId()
 ```
 
+##### `ResetRegion` <a name="ResetRegion" id="@cdktf/provider-aws.networkInterfaceAttachment.NetworkInterfaceAttachmentA.resetRegion"></a>
+
+```go
+func ResetRegion()
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -385,7 +392,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.networkInterfaceAttachment.NetworkInterfaceAttachmentA.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/networkinterfaceattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/networkinterfaceattachment"
 
 networkinterfaceattachment.NetworkInterfaceAttachmentA_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +424,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.networkInterfaceAttachment.NetworkInterfaceAttachmentA.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/networkinterfaceattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/networkinterfaceattachment"
 
 networkinterfaceattachment.NetworkInterfaceAttachmentA_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +438,7 @@ networkinterfaceattachment.NetworkInterfaceAttachmentA_IsTerraformElement(x inte
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.networkInterfaceAttachment.NetworkInterfaceAttachmentA.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/networkinterfaceattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/networkinterfaceattachment"
 
 networkinterfaceattachment.NetworkInterfaceAttachmentA_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +452,7 @@ networkinterfaceattachment.NetworkInterfaceAttachmentA_IsTerraformResource(x int
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.networkInterfaceAttachment.NetworkInterfaceAttachmentA.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/networkinterfaceattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/networkinterfaceattachment"
 
 networkinterfaceattachment.NetworkInterfaceAttachmentA_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -474,7 +481,7 @@ The construct id used in the generated config for the NetworkInterfaceAttachment
 
 The id of the existing NetworkInterfaceAttachmentA that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/network_interface_attachment#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/network_interface_attachment#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -510,10 +517,12 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.networkInterfaceAttachment.NetworkInterfaceAttachmentA.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.networkInterfaceAttachment.NetworkInterfaceAttachmentA.property.instanceIdInput">InstanceIdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.networkInterfaceAttachment.NetworkInterfaceAttachmentA.property.networkInterfaceIdInput">NetworkInterfaceIdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.networkInterfaceAttachment.NetworkInterfaceAttachmentA.property.regionInput">RegionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.networkInterfaceAttachment.NetworkInterfaceAttachmentA.property.deviceIndex">DeviceIndex</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.networkInterfaceAttachment.NetworkInterfaceAttachmentA.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.networkInterfaceAttachment.NetworkInterfaceAttachmentA.property.instanceId">InstanceId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.networkInterfaceAttachment.NetworkInterfaceAttachmentA.property.networkInterfaceId">NetworkInterfaceId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.networkInterfaceAttachment.NetworkInterfaceAttachmentA.property.region">Region</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
@@ -719,6 +728,16 @@ func NetworkInterfaceIdInput() *string
 
 ---
 
+##### `RegionInput`<sup>Optional</sup> <a name="RegionInput" id="@cdktf/provider-aws.networkInterfaceAttachment.NetworkInterfaceAttachmentA.property.regionInput"></a>
+
+```go
+func RegionInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `DeviceIndex`<sup>Required</sup> <a name="DeviceIndex" id="@cdktf/provider-aws.networkInterfaceAttachment.NetworkInterfaceAttachmentA.property.deviceIndex"></a>
 
 ```go
@@ -759,6 +778,16 @@ func NetworkInterfaceId() *string
 
 ---
 
+##### `Region`<sup>Required</sup> <a name="Region" id="@cdktf/provider-aws.networkInterfaceAttachment.NetworkInterfaceAttachmentA.property.region"></a>
+
+```go
+func Region() *string
+```
+
+- *Type:* *string
+
+---
+
 #### Constants <a name="Constants" id="Constants"></a>
 
 | **Name** | **Type** | **Description** |
@@ -784,7 +813,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.networkInterfaceAttachment.NetworkInterfaceAttachmentAConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/networkinterfaceattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/networkinterfaceattachment"
 
 &networkinterfaceattachment.NetworkInterfaceAttachmentAConfig {
 	Connection: interface{},
@@ -798,6 +827,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/networkinterfaceattachmen
 	InstanceId: *string,
 	NetworkInterfaceId: *string,
 	Id: *string,
+	Region: *string,
 }
 ```
 
@@ -812,10 +842,11 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/networkinterfaceattachmen
 | <code><a href="#@cdktf/provider-aws.networkInterfaceAttachment.NetworkInterfaceAttachmentAConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.networkInterfaceAttachment.NetworkInterfaceAttachmentAConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.networkInterfaceAttachment.NetworkInterfaceAttachmentAConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.networkInterfaceAttachment.NetworkInterfaceAttachmentAConfig.property.deviceIndex">DeviceIndex</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/network_interface_attachment#device_index NetworkInterfaceAttachmentA#device_index}. |
-| <code><a href="#@cdktf/provider-aws.networkInterfaceAttachment.NetworkInterfaceAttachmentAConfig.property.instanceId">InstanceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/network_interface_attachment#instance_id NetworkInterfaceAttachmentA#instance_id}. |
-| <code><a href="#@cdktf/provider-aws.networkInterfaceAttachment.NetworkInterfaceAttachmentAConfig.property.networkInterfaceId">NetworkInterfaceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/network_interface_attachment#network_interface_id NetworkInterfaceAttachmentA#network_interface_id}. |
-| <code><a href="#@cdktf/provider-aws.networkInterfaceAttachment.NetworkInterfaceAttachmentAConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/network_interface_attachment#id NetworkInterfaceAttachmentA#id}. |
+| <code><a href="#@cdktf/provider-aws.networkInterfaceAttachment.NetworkInterfaceAttachmentAConfig.property.deviceIndex">DeviceIndex</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/network_interface_attachment#device_index NetworkInterfaceAttachmentA#device_index}. |
+| <code><a href="#@cdktf/provider-aws.networkInterfaceAttachment.NetworkInterfaceAttachmentAConfig.property.instanceId">InstanceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/network_interface_attachment#instance_id NetworkInterfaceAttachmentA#instance_id}. |
+| <code><a href="#@cdktf/provider-aws.networkInterfaceAttachment.NetworkInterfaceAttachmentAConfig.property.networkInterfaceId">NetworkInterfaceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/network_interface_attachment#network_interface_id NetworkInterfaceAttachmentA#network_interface_id}. |
+| <code><a href="#@cdktf/provider-aws.networkInterfaceAttachment.NetworkInterfaceAttachmentAConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/network_interface_attachment#id NetworkInterfaceAttachmentA#id}. |
+| <code><a href="#@cdktf/provider-aws.networkInterfaceAttachment.NetworkInterfaceAttachmentAConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
 
@@ -897,7 +928,7 @@ DeviceIndex *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/network_interface_attachment#device_index NetworkInterfaceAttachmentA#device_index}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/network_interface_attachment#device_index NetworkInterfaceAttachmentA#device_index}.
 
 ---
 
@@ -909,7 +940,7 @@ InstanceId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/network_interface_attachment#instance_id NetworkInterfaceAttachmentA#instance_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/network_interface_attachment#instance_id NetworkInterfaceAttachmentA#instance_id}.
 
 ---
 
@@ -921,7 +952,7 @@ NetworkInterfaceId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/network_interface_attachment#network_interface_id NetworkInterfaceAttachmentA#network_interface_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/network_interface_attachment#network_interface_id NetworkInterfaceAttachmentA#network_interface_id}.
 
 ---
 
@@ -933,10 +964,24 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/network_interface_attachment#id NetworkInterfaceAttachmentA#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/network_interface_attachment#id NetworkInterfaceAttachmentA#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `Region`<sup>Optional</sup> <a name="Region" id="@cdktf/provider-aws.networkInterfaceAttachment.NetworkInterfaceAttachmentAConfig.property.region"></a>
+
+```go
+Region *string
+```
+
+- *Type:* *string
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/network_interface_attachment#region NetworkInterfaceAttachmentA#region}
 
 ---
 

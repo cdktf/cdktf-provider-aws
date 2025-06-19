@@ -4,12 +4,12 @@
 
 ### DataAwsConnectPrompt <a name="DataAwsConnectPrompt" id="@cdktf/provider-aws.dataAwsConnectPrompt.DataAwsConnectPrompt"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/connect_prompt aws_connect_prompt}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/connect_prompt aws_connect_prompt}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsConnectPrompt.DataAwsConnectPrompt.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsconnectprompt"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsconnectprompt"
 
 dataawsconnectprompt.NewDataAwsConnectPrompt(scope Construct, id *string, config DataAwsConnectPromptConfig) DataAwsConnectPrompt
 ```
@@ -68,6 +68,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.dataAwsConnectPrompt.DataAwsConnectPrompt.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsConnectPrompt.DataAwsConnectPrompt.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsConnectPrompt.DataAwsConnectPrompt.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsConnectPrompt.DataAwsConnectPrompt.resetRegion">ResetRegion</a></code> | *No description.* |
 
 ---
 
@@ -269,6 +270,12 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 func ResetId()
 ```
 
+##### `ResetRegion` <a name="ResetRegion" id="@cdktf/provider-aws.dataAwsConnectPrompt.DataAwsConnectPrompt.resetRegion"></a>
+
+```go
+func ResetRegion()
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -283,7 +290,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsConnectPrompt.DataAwsConnectPrompt.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsconnectprompt"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsconnectprompt"
 
 dataawsconnectprompt.DataAwsConnectPrompt_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsConnectPrompt.DataAwsConnectPrompt.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsconnectprompt"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsconnectprompt"
 
 dataawsconnectprompt.DataAwsConnectPrompt_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +336,7 @@ dataawsconnectprompt.DataAwsConnectPrompt_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsConnectPrompt.DataAwsConnectPrompt.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsconnectprompt"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsconnectprompt"
 
 dataawsconnectprompt.DataAwsConnectPrompt_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +350,7 @@ dataawsconnectprompt.DataAwsConnectPrompt_IsTerraformDataSource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsConnectPrompt.DataAwsConnectPrompt.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsconnectprompt"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsconnectprompt"
 
 dataawsconnectprompt.DataAwsConnectPrompt_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -372,7 +379,7 @@ The construct id used in the generated config for the DataAwsConnectPrompt to im
 
 The id of the existing DataAwsConnectPrompt that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/connect_prompt#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/connect_prompt#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -405,9 +412,11 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.dataAwsConnectPrompt.DataAwsConnectPrompt.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsConnectPrompt.DataAwsConnectPrompt.property.instanceIdInput">InstanceIdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsConnectPrompt.DataAwsConnectPrompt.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsConnectPrompt.DataAwsConnectPrompt.property.regionInput">RegionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsConnectPrompt.DataAwsConnectPrompt.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsConnectPrompt.DataAwsConnectPrompt.property.instanceId">InstanceId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsConnectPrompt.DataAwsConnectPrompt.property.name">Name</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsConnectPrompt.DataAwsConnectPrompt.property.region">Region</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
@@ -583,6 +592,16 @@ func NameInput() *string
 
 ---
 
+##### `RegionInput`<sup>Optional</sup> <a name="RegionInput" id="@cdktf/provider-aws.dataAwsConnectPrompt.DataAwsConnectPrompt.property.regionInput"></a>
+
+```go
+func RegionInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-aws.dataAwsConnectPrompt.DataAwsConnectPrompt.property.id"></a>
 
 ```go
@@ -607,6 +626,16 @@ func InstanceId() *string
 
 ```go
 func Name() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Region`<sup>Required</sup> <a name="Region" id="@cdktf/provider-aws.dataAwsConnectPrompt.DataAwsConnectPrompt.property.region"></a>
+
+```go
+func Region() *string
 ```
 
 - *Type:* *string
@@ -638,7 +667,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsConnectPrompt.DataAwsConnectPromptConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsconnectprompt"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsconnectprompt"
 
 &dataawsconnectprompt.DataAwsConnectPromptConfig {
 	Connection: interface{},
@@ -651,6 +680,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsconnectprompt"
 	InstanceId: *string,
 	Name: *string,
 	Id: *string,
+	Region: *string,
 }
 ```
 
@@ -665,9 +695,10 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsconnectprompt"
 | <code><a href="#@cdktf/provider-aws.dataAwsConnectPrompt.DataAwsConnectPromptConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsConnectPrompt.DataAwsConnectPromptConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsConnectPrompt.DataAwsConnectPromptConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsConnectPrompt.DataAwsConnectPromptConfig.property.instanceId">InstanceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/connect_prompt#instance_id DataAwsConnectPrompt#instance_id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsConnectPrompt.DataAwsConnectPromptConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/connect_prompt#name DataAwsConnectPrompt#name}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsConnectPrompt.DataAwsConnectPromptConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/connect_prompt#id DataAwsConnectPrompt#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsConnectPrompt.DataAwsConnectPromptConfig.property.instanceId">InstanceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/connect_prompt#instance_id DataAwsConnectPrompt#instance_id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsConnectPrompt.DataAwsConnectPromptConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/connect_prompt#name DataAwsConnectPrompt#name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsConnectPrompt.DataAwsConnectPromptConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/connect_prompt#id DataAwsConnectPrompt#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsConnectPrompt.DataAwsConnectPromptConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
 
@@ -749,7 +780,7 @@ InstanceId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/connect_prompt#instance_id DataAwsConnectPrompt#instance_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/connect_prompt#instance_id DataAwsConnectPrompt#instance_id}.
 
 ---
 
@@ -761,7 +792,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/connect_prompt#name DataAwsConnectPrompt#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/connect_prompt#name DataAwsConnectPrompt#name}.
 
 ---
 
@@ -773,10 +804,24 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/connect_prompt#id DataAwsConnectPrompt#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/connect_prompt#id DataAwsConnectPrompt#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `Region`<sup>Optional</sup> <a name="Region" id="@cdktf/provider-aws.dataAwsConnectPrompt.DataAwsConnectPromptConfig.property.region"></a>
+
+```go
+Region *string
+```
+
+- *Type:* *string
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/connect_prompt#region DataAwsConnectPrompt#region}
 
 ---
 

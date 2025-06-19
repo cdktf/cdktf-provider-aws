@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/cognito_user_pool_ui_customization
+// https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/cognito_user_pool_ui_customization
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,32 +13,38 @@ import * as cdktf from 'cdktf';
 
 export interface CognitoUserPoolUiCustomizationConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/cognito_user_pool_ui_customization#client_id CognitoUserPoolUiCustomization#client_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/cognito_user_pool_ui_customization#client_id CognitoUserPoolUiCustomization#client_id}
   */
   readonly clientId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/cognito_user_pool_ui_customization#css CognitoUserPoolUiCustomization#css}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/cognito_user_pool_ui_customization#css CognitoUserPoolUiCustomization#css}
   */
   readonly css?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/cognito_user_pool_ui_customization#id CognitoUserPoolUiCustomization#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/cognito_user_pool_ui_customization#id CognitoUserPoolUiCustomization#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/cognito_user_pool_ui_customization#image_file CognitoUserPoolUiCustomization#image_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/cognito_user_pool_ui_customization#image_file CognitoUserPoolUiCustomization#image_file}
   */
   readonly imageFile?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/cognito_user_pool_ui_customization#user_pool_id CognitoUserPoolUiCustomization#user_pool_id}
+  * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/cognito_user_pool_ui_customization#region CognitoUserPoolUiCustomization#region}
+  */
+  readonly region?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/cognito_user_pool_ui_customization#user_pool_id CognitoUserPoolUiCustomization#user_pool_id}
   */
   readonly userPoolId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/cognito_user_pool_ui_customization aws_cognito_user_pool_ui_customization}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/cognito_user_pool_ui_customization aws_cognito_user_pool_ui_customization}
 */
 export class CognitoUserPoolUiCustomization extends cdktf.TerraformResource {
 
@@ -54,7 +60,7 @@ export class CognitoUserPoolUiCustomization extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a CognitoUserPoolUiCustomization resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CognitoUserPoolUiCustomization to import
-  * @param importFromId The id of the existing CognitoUserPoolUiCustomization that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/cognito_user_pool_ui_customization#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing CognitoUserPoolUiCustomization that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/cognito_user_pool_ui_customization#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CognitoUserPoolUiCustomization to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -66,7 +72,7 @@ export class CognitoUserPoolUiCustomization extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/cognito_user_pool_ui_customization aws_cognito_user_pool_ui_customization} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/cognito_user_pool_ui_customization aws_cognito_user_pool_ui_customization} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -77,8 +83,8 @@ export class CognitoUserPoolUiCustomization extends cdktf.TerraformResource {
       terraformResourceType: 'aws_cognito_user_pool_ui_customization',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.100.0',
-        providerVersionConstraint: '~> 5.0'
+        providerVersion: '6.0.0',
+        providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -92,6 +98,7 @@ export class CognitoUserPoolUiCustomization extends cdktf.TerraformResource {
     this._css = config.css;
     this._id = config.id;
     this._imageFile = config.imageFile;
+    this._region = config.region;
     this._userPoolId = config.userPoolId;
   }
 
@@ -183,6 +190,22 @@ export class CognitoUserPoolUiCustomization extends cdktf.TerraformResource {
     return this.getStringAttribute('last_modified_date');
   }
 
+  // region - computed: true, optional: true, required: false
+  private _region?: string; 
+  public get region() {
+    return this.getStringAttribute('region');
+  }
+  public set region(value: string) {
+    this._region = value;
+  }
+  public resetRegion() {
+    this._region = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get regionInput() {
+    return this._region;
+  }
+
   // user_pool_id - computed: false, optional: false, required: true
   private _userPoolId?: string; 
   public get userPoolId() {
@@ -206,6 +229,7 @@ export class CognitoUserPoolUiCustomization extends cdktf.TerraformResource {
       css: cdktf.stringToTerraform(this._css),
       id: cdktf.stringToTerraform(this._id),
       image_file: cdktf.stringToTerraform(this._imageFile),
+      region: cdktf.stringToTerraform(this._region),
       user_pool_id: cdktf.stringToTerraform(this._userPoolId),
     };
   }
@@ -232,6 +256,12 @@ export class CognitoUserPoolUiCustomization extends cdktf.TerraformResource {
       },
       image_file: {
         value: cdktf.stringToHclTerraform(this._imageFile),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      region: {
+        value: cdktf.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

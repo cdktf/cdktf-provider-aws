@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/appstream_image
+// https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/appstream_image
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,23 +13,29 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsAppstreamImageConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/appstream_image#arn DataAwsAppstreamImage#arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/appstream_image#arn DataAwsAppstreamImage#arn}
   */
   readonly arn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/appstream_image#most_recent DataAwsAppstreamImage#most_recent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/appstream_image#most_recent DataAwsAppstreamImage#most_recent}
   */
   readonly mostRecent?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/appstream_image#name DataAwsAppstreamImage#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/appstream_image#name DataAwsAppstreamImage#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/appstream_image#name_regex DataAwsAppstreamImage#name_regex}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/appstream_image#name_regex DataAwsAppstreamImage#name_regex}
   */
   readonly nameRegex?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/appstream_image#type DataAwsAppstreamImage#type}
+  * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/appstream_image#region DataAwsAppstreamImage#region}
+  */
+  readonly region?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/appstream_image#type DataAwsAppstreamImage#type}
   */
   readonly type?: string;
 }
@@ -422,7 +428,7 @@ export class DataAwsAppstreamImageStateChangeReasonList extends cdktf.ComplexLis
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/appstream_image aws_appstream_image}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/appstream_image aws_appstream_image}
 */
 export class DataAwsAppstreamImage extends cdktf.TerraformDataSource {
 
@@ -438,7 +444,7 @@ export class DataAwsAppstreamImage extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataAwsAppstreamImage resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsAppstreamImage to import
-  * @param importFromId The id of the existing DataAwsAppstreamImage that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/appstream_image#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsAppstreamImage that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/appstream_image#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsAppstreamImage to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -450,7 +456,7 @@ export class DataAwsAppstreamImage extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/appstream_image aws_appstream_image} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/appstream_image aws_appstream_image} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -461,8 +467,8 @@ export class DataAwsAppstreamImage extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_appstream_image',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.100.0',
-        providerVersionConstraint: '~> 5.0'
+        providerVersion: '6.0.0',
+        providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -476,6 +482,7 @@ export class DataAwsAppstreamImage extends cdktf.TerraformDataSource {
     this._mostRecent = config.mostRecent;
     this._name = config.name;
     this._nameRegex = config.nameRegex;
+    this._region = config.region;
     this._type = config.type;
   }
 
@@ -604,6 +611,22 @@ export class DataAwsAppstreamImage extends cdktf.TerraformDataSource {
     return this.getStringAttribute('public_base_image_released_date');
   }
 
+  // region - computed: true, optional: true, required: false
+  private _region?: string; 
+  public get region() {
+    return this.getStringAttribute('region');
+  }
+  public set region(value: string) {
+    this._region = value;
+  }
+  public resetRegion() {
+    this._region = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get regionInput() {
+    return this._region;
+  }
+
   // state - computed: true, optional: false, required: false
   public get state() {
     return this.getStringAttribute('state');
@@ -641,6 +664,7 @@ export class DataAwsAppstreamImage extends cdktf.TerraformDataSource {
       most_recent: cdktf.booleanToTerraform(this._mostRecent),
       name: cdktf.stringToTerraform(this._name),
       name_regex: cdktf.stringToTerraform(this._nameRegex),
+      region: cdktf.stringToTerraform(this._region),
       type: cdktf.stringToTerraform(this._type),
     };
   }
@@ -667,6 +691,12 @@ export class DataAwsAppstreamImage extends cdktf.TerraformDataSource {
       },
       name_regex: {
         value: cdktf.stringToHclTerraform(this._nameRegex),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      region: {
+        value: cdktf.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

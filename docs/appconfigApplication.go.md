@@ -4,12 +4,12 @@
 
 ### AppconfigApplication <a name="AppconfigApplication" id="@cdktf/provider-aws.appconfigApplication.AppconfigApplication"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appconfig_application aws_appconfig_application}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appconfig_application aws_appconfig_application}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appconfigApplication.AppconfigApplication.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appconfigapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appconfigapplication"
 
 appconfigapplication.NewAppconfigApplication(scope Construct, id *string, config AppconfigApplicationConfig) AppconfigApplication
 ```
@@ -75,6 +75,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.appconfigApplication.AppconfigApplication.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-aws.appconfigApplication.AppconfigApplication.resetDescription">ResetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appconfigApplication.AppconfigApplication.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appconfigApplication.AppconfigApplication.resetRegion">ResetRegion</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appconfigApplication.AppconfigApplication.resetTags">ResetTags</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appconfigApplication.AppconfigApplication.resetTagsAll">ResetTagsAll</a></code> | *No description.* |
 
@@ -380,6 +381,12 @@ func ResetDescription()
 func ResetId()
 ```
 
+##### `ResetRegion` <a name="ResetRegion" id="@cdktf/provider-aws.appconfigApplication.AppconfigApplication.resetRegion"></a>
+
+```go
+func ResetRegion()
+```
+
 ##### `ResetTags` <a name="ResetTags" id="@cdktf/provider-aws.appconfigApplication.AppconfigApplication.resetTags"></a>
 
 ```go
@@ -406,7 +413,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.appconfigApplication.AppconfigApplication.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appconfigapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appconfigapplication"
 
 appconfigapplication.AppconfigApplication_IsConstruct(x interface{}) *bool
 ```
@@ -438,7 +445,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.appconfigApplication.AppconfigApplication.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appconfigapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appconfigapplication"
 
 appconfigapplication.AppconfigApplication_IsTerraformElement(x interface{}) *bool
 ```
@@ -452,7 +459,7 @@ appconfigapplication.AppconfigApplication_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.appconfigApplication.AppconfigApplication.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appconfigapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appconfigapplication"
 
 appconfigapplication.AppconfigApplication_IsTerraformResource(x interface{}) *bool
 ```
@@ -466,7 +473,7 @@ appconfigapplication.AppconfigApplication_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.appconfigApplication.AppconfigApplication.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appconfigapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appconfigapplication"
 
 appconfigapplication.AppconfigApplication_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -495,7 +502,7 @@ The construct id used in the generated config for the AppconfigApplication to im
 
 The id of the existing AppconfigApplication that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appconfig_application#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appconfig_application#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -529,11 +536,13 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.appconfigApplication.AppconfigApplication.property.descriptionInput">DescriptionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appconfigApplication.AppconfigApplication.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appconfigApplication.AppconfigApplication.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appconfigApplication.AppconfigApplication.property.regionInput">RegionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appconfigApplication.AppconfigApplication.property.tagsAllInput">TagsAllInput</a></code> | <code>*map[string]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appconfigApplication.AppconfigApplication.property.tagsInput">TagsInput</a></code> | <code>*map[string]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appconfigApplication.AppconfigApplication.property.description">Description</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appconfigApplication.AppconfigApplication.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appconfigApplication.AppconfigApplication.property.name">Name</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appconfigApplication.AppconfigApplication.property.region">Region</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appconfigApplication.AppconfigApplication.property.tags">Tags</a></code> | <code>*map[string]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appconfigApplication.AppconfigApplication.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | *No description.* |
 
@@ -721,6 +730,16 @@ func NameInput() *string
 
 ---
 
+##### `RegionInput`<sup>Optional</sup> <a name="RegionInput" id="@cdktf/provider-aws.appconfigApplication.AppconfigApplication.property.regionInput"></a>
+
+```go
+func RegionInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `TagsAllInput`<sup>Optional</sup> <a name="TagsAllInput" id="@cdktf/provider-aws.appconfigApplication.AppconfigApplication.property.tagsAllInput"></a>
 
 ```go
@@ -765,6 +784,16 @@ func Id() *string
 
 ```go
 func Name() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Region`<sup>Required</sup> <a name="Region" id="@cdktf/provider-aws.appconfigApplication.AppconfigApplication.property.region"></a>
+
+```go
+func Region() *string
 ```
 
 - *Type:* *string
@@ -816,7 +845,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appconfigApplication.AppconfigApplicationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appconfigapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appconfigapplication"
 
 &appconfigapplication.AppconfigApplicationConfig {
 	Connection: interface{},
@@ -829,6 +858,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appconfigapplication"
 	Name: *string,
 	Description: *string,
 	Id: *string,
+	Region: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
 }
@@ -845,11 +875,12 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appconfigapplication"
 | <code><a href="#@cdktf/provider-aws.appconfigApplication.AppconfigApplicationConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appconfigApplication.AppconfigApplicationConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appconfigApplication.AppconfigApplicationConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appconfigApplication.AppconfigApplicationConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appconfig_application#name AppconfigApplication#name}. |
-| <code><a href="#@cdktf/provider-aws.appconfigApplication.AppconfigApplicationConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appconfig_application#description AppconfigApplication#description}. |
-| <code><a href="#@cdktf/provider-aws.appconfigApplication.AppconfigApplicationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appconfig_application#id AppconfigApplication#id}. |
-| <code><a href="#@cdktf/provider-aws.appconfigApplication.AppconfigApplicationConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appconfig_application#tags AppconfigApplication#tags}. |
-| <code><a href="#@cdktf/provider-aws.appconfigApplication.AppconfigApplicationConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appconfig_application#tags_all AppconfigApplication#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.appconfigApplication.AppconfigApplicationConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appconfig_application#name AppconfigApplication#name}. |
+| <code><a href="#@cdktf/provider-aws.appconfigApplication.AppconfigApplicationConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appconfig_application#description AppconfigApplication#description}. |
+| <code><a href="#@cdktf/provider-aws.appconfigApplication.AppconfigApplicationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appconfig_application#id AppconfigApplication#id}. |
+| <code><a href="#@cdktf/provider-aws.appconfigApplication.AppconfigApplicationConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
+| <code><a href="#@cdktf/provider-aws.appconfigApplication.AppconfigApplicationConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appconfig_application#tags AppconfigApplication#tags}. |
+| <code><a href="#@cdktf/provider-aws.appconfigApplication.AppconfigApplicationConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appconfig_application#tags_all AppconfigApplication#tags_all}. |
 
 ---
 
@@ -931,7 +962,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appconfig_application#name AppconfigApplication#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appconfig_application#name AppconfigApplication#name}.
 
 ---
 
@@ -943,7 +974,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appconfig_application#description AppconfigApplication#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appconfig_application#description AppconfigApplication#description}.
 
 ---
 
@@ -955,10 +986,24 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appconfig_application#id AppconfigApplication#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appconfig_application#id AppconfigApplication#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `Region`<sup>Optional</sup> <a name="Region" id="@cdktf/provider-aws.appconfigApplication.AppconfigApplicationConfig.property.region"></a>
+
+```go
+Region *string
+```
+
+- *Type:* *string
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appconfig_application#region AppconfigApplication#region}
 
 ---
 
@@ -970,7 +1015,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appconfig_application#tags AppconfigApplication#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appconfig_application#tags AppconfigApplication#tags}.
 
 ---
 
@@ -982,7 +1027,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appconfig_application#tags_all AppconfigApplication#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appconfig_application#tags_all AppconfigApplication#tags_all}.
 
 ---
 

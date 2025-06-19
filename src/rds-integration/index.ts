@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/rds_integration
+// https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rds_integration
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,37 +13,43 @@ import * as cdktf from 'cdktf';
 
 export interface RdsIntegrationConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/rds_integration#additional_encryption_context RdsIntegration#additional_encryption_context}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rds_integration#additional_encryption_context RdsIntegration#additional_encryption_context}
   */
   readonly additionalEncryptionContext?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/rds_integration#data_filter RdsIntegration#data_filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rds_integration#data_filter RdsIntegration#data_filter}
   */
   readonly dataFilter?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/rds_integration#integration_name RdsIntegration#integration_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rds_integration#integration_name RdsIntegration#integration_name}
   */
   readonly integrationName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/rds_integration#kms_key_id RdsIntegration#kms_key_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rds_integration#kms_key_id RdsIntegration#kms_key_id}
   */
   readonly kmsKeyId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/rds_integration#source_arn RdsIntegration#source_arn}
+  * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rds_integration#region RdsIntegration#region}
+  */
+  readonly region?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rds_integration#source_arn RdsIntegration#source_arn}
   */
   readonly sourceArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/rds_integration#tags RdsIntegration#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rds_integration#tags RdsIntegration#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/rds_integration#target_arn RdsIntegration#target_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rds_integration#target_arn RdsIntegration#target_arn}
   */
   readonly targetArn: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/rds_integration#timeouts RdsIntegration#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rds_integration#timeouts RdsIntegration#timeouts}
   */
   readonly timeouts?: RdsIntegrationTimeouts;
 }
@@ -51,13 +57,13 @@ export interface RdsIntegrationTimeouts {
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/rds_integration#create RdsIntegration#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rds_integration#create RdsIntegration#create}
   */
   readonly create?: string;
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/rds_integration#delete RdsIntegration#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rds_integration#delete RdsIntegration#delete}
   */
   readonly delete?: string;
 }
@@ -180,7 +186,7 @@ export class RdsIntegrationTimeoutsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/rds_integration aws_rds_integration}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rds_integration aws_rds_integration}
 */
 export class RdsIntegration extends cdktf.TerraformResource {
 
@@ -196,7 +202,7 @@ export class RdsIntegration extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a RdsIntegration resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the RdsIntegration to import
-  * @param importFromId The id of the existing RdsIntegration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/rds_integration#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing RdsIntegration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rds_integration#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the RdsIntegration to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -208,7 +214,7 @@ export class RdsIntegration extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/rds_integration aws_rds_integration} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rds_integration aws_rds_integration} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -219,8 +225,8 @@ export class RdsIntegration extends cdktf.TerraformResource {
       terraformResourceType: 'aws_rds_integration',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.100.0',
-        providerVersionConstraint: '~> 5.0'
+        providerVersion: '6.0.0',
+        providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -234,6 +240,7 @@ export class RdsIntegration extends cdktf.TerraformResource {
     this._dataFilter = config.dataFilter;
     this._integrationName = config.integrationName;
     this._kmsKeyId = config.kmsKeyId;
+    this._region = config.region;
     this._sourceArn = config.sourceArn;
     this._tags = config.tags;
     this._targetArn = config.targetArn;
@@ -315,6 +322,22 @@ export class RdsIntegration extends cdktf.TerraformResource {
     return this._kmsKeyId;
   }
 
+  // region - computed: true, optional: true, required: false
+  private _region?: string; 
+  public get region() {
+    return this.getStringAttribute('region');
+  }
+  public set region(value: string) {
+    this._region = value;
+  }
+  public resetRegion() {
+    this._region = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get regionInput() {
+    return this._region;
+  }
+
   // source_arn - computed: false, optional: false, required: true
   private _sourceArn?: string; 
   public get sourceArn() {
@@ -389,6 +412,7 @@ export class RdsIntegration extends cdktf.TerraformResource {
       data_filter: cdktf.stringToTerraform(this._dataFilter),
       integration_name: cdktf.stringToTerraform(this._integrationName),
       kms_key_id: cdktf.stringToTerraform(this._kmsKeyId),
+      region: cdktf.stringToTerraform(this._region),
       source_arn: cdktf.stringToTerraform(this._sourceArn),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       target_arn: cdktf.stringToTerraform(this._targetArn),
@@ -418,6 +442,12 @@ export class RdsIntegration extends cdktf.TerraformResource {
       },
       kms_key_id: {
         value: cdktf.stringToHclTerraform(this._kmsKeyId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      region: {
+        value: cdktf.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

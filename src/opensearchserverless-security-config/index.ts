@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/opensearchserverless_security_config
+// https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/opensearchserverless_security_config
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,51 +15,57 @@ export interface OpensearchserverlessSecurityConfigConfig extends cdktf.Terrafor
   /**
   * Description of the security configuration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/opensearchserverless_security_config#description OpensearchserverlessSecurityConfig#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/opensearchserverless_security_config#description OpensearchserverlessSecurityConfig#description}
   */
   readonly description?: string;
   /**
   * Name of the policy.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/opensearchserverless_security_config#name OpensearchserverlessSecurityConfig#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/opensearchserverless_security_config#name OpensearchserverlessSecurityConfig#name}
   */
   readonly name: string;
   /**
+  * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/opensearchserverless_security_config#region OpensearchserverlessSecurityConfig#region}
+  */
+  readonly region?: string;
+  /**
   * Type of configuration. Must be `saml`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/opensearchserverless_security_config#type OpensearchserverlessSecurityConfig#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/opensearchserverless_security_config#type OpensearchserverlessSecurityConfig#type}
   */
   readonly type: string;
   /**
   * saml_options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/opensearchserverless_security_config#saml_options OpensearchserverlessSecurityConfig#saml_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/opensearchserverless_security_config#saml_options OpensearchserverlessSecurityConfig#saml_options}
   */
-  readonly samlOptions?: OpensearchserverlessSecurityConfigSamlOptions;
+  readonly samlOptions?: OpensearchserverlessSecurityConfigSamlOptions[] | cdktf.IResolvable;
 }
 export interface OpensearchserverlessSecurityConfigSamlOptions {
   /**
   * Group attribute for this SAML integration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/opensearchserverless_security_config#group_attribute OpensearchserverlessSecurityConfig#group_attribute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/opensearchserverless_security_config#group_attribute OpensearchserverlessSecurityConfig#group_attribute}
   */
   readonly groupAttribute?: string;
   /**
   * The XML IdP metadata file generated from your identity provider.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/opensearchserverless_security_config#metadata OpensearchserverlessSecurityConfig#metadata}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/opensearchserverless_security_config#metadata OpensearchserverlessSecurityConfig#metadata}
   */
   readonly metadata: string;
   /**
   * Session timeout, in minutes. Minimum is 5 minutes and maximum is 720 minutes (12 hours). Default is 60 minutes.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/opensearchserverless_security_config#session_timeout OpensearchserverlessSecurityConfig#session_timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/opensearchserverless_security_config#session_timeout OpensearchserverlessSecurityConfig#session_timeout}
   */
   readonly sessionTimeout?: number;
   /**
   * User attribute for this SAML integration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/opensearchserverless_security_config#user_attribute OpensearchserverlessSecurityConfig#user_attribute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/opensearchserverless_security_config#user_attribute OpensearchserverlessSecurityConfig#user_attribute}
   */
   readonly userAttribute?: string;
 }
@@ -121,9 +127,11 @@ export class OpensearchserverlessSecurityConfigSamlOptionsOutputReference extend
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
   public get internalValue(): OpensearchserverlessSecurityConfigSamlOptions | cdktf.IResolvable | undefined {
@@ -236,8 +244,28 @@ export class OpensearchserverlessSecurityConfigSamlOptionsOutputReference extend
   }
 }
 
+export class OpensearchserverlessSecurityConfigSamlOptionsList extends cdktf.ComplexList {
+  public internalValue? : OpensearchserverlessSecurityConfigSamlOptions[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): OpensearchserverlessSecurityConfigSamlOptionsOutputReference {
+    return new OpensearchserverlessSecurityConfigSamlOptionsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/opensearchserverless_security_config aws_opensearchserverless_security_config}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/opensearchserverless_security_config aws_opensearchserverless_security_config}
 */
 export class OpensearchserverlessSecurityConfig extends cdktf.TerraformResource {
 
@@ -253,7 +281,7 @@ export class OpensearchserverlessSecurityConfig extends cdktf.TerraformResource 
   * Generates CDKTF code for importing a OpensearchserverlessSecurityConfig resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the OpensearchserverlessSecurityConfig to import
-  * @param importFromId The id of the existing OpensearchserverlessSecurityConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/opensearchserverless_security_config#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing OpensearchserverlessSecurityConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/opensearchserverless_security_config#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the OpensearchserverlessSecurityConfig to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -265,7 +293,7 @@ export class OpensearchserverlessSecurityConfig extends cdktf.TerraformResource 
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/opensearchserverless_security_config aws_opensearchserverless_security_config} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/opensearchserverless_security_config aws_opensearchserverless_security_config} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -276,8 +304,8 @@ export class OpensearchserverlessSecurityConfig extends cdktf.TerraformResource 
       terraformResourceType: 'aws_opensearchserverless_security_config',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.100.0',
-        providerVersionConstraint: '~> 5.0'
+        providerVersion: '6.0.0',
+        providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -289,6 +317,7 @@ export class OpensearchserverlessSecurityConfig extends cdktf.TerraformResource 
     });
     this._description = config.description;
     this._name = config.name;
+    this._region = config.region;
     this._type = config.type;
     this._samlOptions.internalValue = config.samlOptions;
   }
@@ -336,6 +365,22 @@ export class OpensearchserverlessSecurityConfig extends cdktf.TerraformResource 
     return this._name;
   }
 
+  // region - computed: true, optional: true, required: false
+  private _region?: string; 
+  public get region() {
+    return this.getStringAttribute('region');
+  }
+  public set region(value: string) {
+    this._region = value;
+  }
+  public resetRegion() {
+    this._region = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get regionInput() {
+    return this._region;
+  }
+
   // type - computed: false, optional: false, required: true
   private _type?: string; 
   public get type() {
@@ -350,11 +395,11 @@ export class OpensearchserverlessSecurityConfig extends cdktf.TerraformResource 
   }
 
   // saml_options - computed: false, optional: true, required: false
-  private _samlOptions = new OpensearchserverlessSecurityConfigSamlOptionsOutputReference(this, "saml_options");
+  private _samlOptions = new OpensearchserverlessSecurityConfigSamlOptionsList(this, "saml_options", false);
   public get samlOptions() {
     return this._samlOptions;
   }
-  public putSamlOptions(value: OpensearchserverlessSecurityConfigSamlOptions) {
+  public putSamlOptions(value: OpensearchserverlessSecurityConfigSamlOptions[] | cdktf.IResolvable) {
     this._samlOptions.internalValue = value;
   }
   public resetSamlOptions() {
@@ -373,8 +418,9 @@ export class OpensearchserverlessSecurityConfig extends cdktf.TerraformResource 
     return {
       description: cdktf.stringToTerraform(this._description),
       name: cdktf.stringToTerraform(this._name),
+      region: cdktf.stringToTerraform(this._region),
       type: cdktf.stringToTerraform(this._type),
-      saml_options: opensearchserverlessSecurityConfigSamlOptionsToTerraform(this._samlOptions.internalValue),
+      saml_options: cdktf.listMapper(opensearchserverlessSecurityConfigSamlOptionsToTerraform, true)(this._samlOptions.internalValue),
     };
   }
 
@@ -392,6 +438,12 @@ export class OpensearchserverlessSecurityConfig extends cdktf.TerraformResource 
         type: "simple",
         storageClassType: "string",
       },
+      region: {
+        value: cdktf.stringToHclTerraform(this._region),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
       type: {
         value: cdktf.stringToHclTerraform(this._type),
         isBlock: false,
@@ -399,10 +451,10 @@ export class OpensearchserverlessSecurityConfig extends cdktf.TerraformResource 
         storageClassType: "string",
       },
       saml_options: {
-        value: opensearchserverlessSecurityConfigSamlOptionsToHclTerraform(this._samlOptions.internalValue),
+        value: cdktf.listMapperHcl(opensearchserverlessSecurityConfigSamlOptionsToHclTerraform, true)(this._samlOptions.internalValue),
         isBlock: true,
-        type: "struct",
-        storageClassType: "OpensearchserverlessSecurityConfigSamlOptions",
+        type: "list",
+        storageClassType: "OpensearchserverlessSecurityConfigSamlOptionsList",
       },
     };
 

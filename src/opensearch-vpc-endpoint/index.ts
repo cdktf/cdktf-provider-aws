@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/opensearch_vpc_endpoint
+// https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/opensearch_vpc_endpoint
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,40 +13,46 @@ import * as cdktf from 'cdktf';
 
 export interface OpensearchVpcEndpointConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/opensearch_vpc_endpoint#domain_arn OpensearchVpcEndpoint#domain_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/opensearch_vpc_endpoint#domain_arn OpensearchVpcEndpoint#domain_arn}
   */
   readonly domainArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/opensearch_vpc_endpoint#id OpensearchVpcEndpoint#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/opensearch_vpc_endpoint#id OpensearchVpcEndpoint#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
+  * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/opensearch_vpc_endpoint#region OpensearchVpcEndpoint#region}
+  */
+  readonly region?: string;
+  /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/opensearch_vpc_endpoint#timeouts OpensearchVpcEndpoint#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/opensearch_vpc_endpoint#timeouts OpensearchVpcEndpoint#timeouts}
   */
   readonly timeouts?: OpensearchVpcEndpointTimeouts;
   /**
   * vpc_options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/opensearch_vpc_endpoint#vpc_options OpensearchVpcEndpoint#vpc_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/opensearch_vpc_endpoint#vpc_options OpensearchVpcEndpoint#vpc_options}
   */
   readonly vpcOptions: OpensearchVpcEndpointVpcOptions;
 }
 export interface OpensearchVpcEndpointTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/opensearch_vpc_endpoint#create OpensearchVpcEndpoint#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/opensearch_vpc_endpoint#create OpensearchVpcEndpoint#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/opensearch_vpc_endpoint#delete OpensearchVpcEndpoint#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/opensearch_vpc_endpoint#delete OpensearchVpcEndpoint#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/opensearch_vpc_endpoint#update OpensearchVpcEndpoint#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/opensearch_vpc_endpoint#update OpensearchVpcEndpoint#update}
   */
   readonly update?: string;
 }
@@ -198,11 +204,11 @@ export class OpensearchVpcEndpointTimeoutsOutputReference extends cdktf.ComplexO
 }
 export interface OpensearchVpcEndpointVpcOptions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/opensearch_vpc_endpoint#security_group_ids OpensearchVpcEndpoint#security_group_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/opensearch_vpc_endpoint#security_group_ids OpensearchVpcEndpoint#security_group_ids}
   */
   readonly securityGroupIds?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/opensearch_vpc_endpoint#subnet_ids OpensearchVpcEndpoint#subnet_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/opensearch_vpc_endpoint#subnet_ids OpensearchVpcEndpoint#subnet_ids}
   */
   readonly subnetIds: string[];
 }
@@ -322,7 +328,7 @@ export class OpensearchVpcEndpointVpcOptionsOutputReference extends cdktf.Comple
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/opensearch_vpc_endpoint aws_opensearch_vpc_endpoint}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/opensearch_vpc_endpoint aws_opensearch_vpc_endpoint}
 */
 export class OpensearchVpcEndpoint extends cdktf.TerraformResource {
 
@@ -338,7 +344,7 @@ export class OpensearchVpcEndpoint extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a OpensearchVpcEndpoint resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the OpensearchVpcEndpoint to import
-  * @param importFromId The id of the existing OpensearchVpcEndpoint that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/opensearch_vpc_endpoint#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing OpensearchVpcEndpoint that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/opensearch_vpc_endpoint#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the OpensearchVpcEndpoint to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -350,7 +356,7 @@ export class OpensearchVpcEndpoint extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/opensearch_vpc_endpoint aws_opensearch_vpc_endpoint} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/opensearch_vpc_endpoint aws_opensearch_vpc_endpoint} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -361,8 +367,8 @@ export class OpensearchVpcEndpoint extends cdktf.TerraformResource {
       terraformResourceType: 'aws_opensearch_vpc_endpoint',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.100.0',
-        providerVersionConstraint: '~> 5.0'
+        providerVersion: '6.0.0',
+        providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -374,6 +380,7 @@ export class OpensearchVpcEndpoint extends cdktf.TerraformResource {
     });
     this._domainArn = config.domainArn;
     this._id = config.id;
+    this._region = config.region;
     this._timeouts.internalValue = config.timeouts;
     this._vpcOptions.internalValue = config.vpcOptions;
   }
@@ -416,6 +423,22 @@ export class OpensearchVpcEndpoint extends cdktf.TerraformResource {
     return this._id;
   }
 
+  // region - computed: true, optional: true, required: false
+  private _region?: string; 
+  public get region() {
+    return this.getStringAttribute('region');
+  }
+  public set region(value: string) {
+    this._region = value;
+  }
+  public resetRegion() {
+    this._region = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get regionInput() {
+    return this._region;
+  }
+
   // timeouts - computed: false, optional: true, required: false
   private _timeouts = new OpensearchVpcEndpointTimeoutsOutputReference(this, "timeouts");
   public get timeouts() {
@@ -453,6 +476,7 @@ export class OpensearchVpcEndpoint extends cdktf.TerraformResource {
     return {
       domain_arn: cdktf.stringToTerraform(this._domainArn),
       id: cdktf.stringToTerraform(this._id),
+      region: cdktf.stringToTerraform(this._region),
       timeouts: opensearchVpcEndpointTimeoutsToTerraform(this._timeouts.internalValue),
       vpc_options: opensearchVpcEndpointVpcOptionsToTerraform(this._vpcOptions.internalValue),
     };
@@ -468,6 +492,12 @@ export class OpensearchVpcEndpoint extends cdktf.TerraformResource {
       },
       id: {
         value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      region: {
+        value: cdktf.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

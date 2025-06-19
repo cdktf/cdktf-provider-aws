@@ -4,12 +4,12 @@
 
 ### DxConnectionAssociation <a name="DxConnectionAssociation" id="@cdktf/provider-aws.dxConnectionAssociation.DxConnectionAssociation"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/dx_connection_association aws_dx_connection_association}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/dx_connection_association aws_dx_connection_association}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dxConnectionAssociation.DxConnectionAssociation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dxconnectionassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dxconnectionassociation"
 
 dxconnectionassociation.NewDxConnectionAssociation(scope Construct, id *string, config DxConnectionAssociationConfig) DxConnectionAssociation
 ```
@@ -74,6 +74,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.dxConnectionAssociation.DxConnectionAssociation.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-aws.dxConnectionAssociation.DxConnectionAssociation.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-aws.dxConnectionAssociation.DxConnectionAssociation.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dxConnectionAssociation.DxConnectionAssociation.resetRegion">ResetRegion</a></code> | *No description.* |
 
 ---
 
@@ -371,6 +372,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 func ResetId()
 ```
 
+##### `ResetRegion` <a name="ResetRegion" id="@cdktf/provider-aws.dxConnectionAssociation.DxConnectionAssociation.resetRegion"></a>
+
+```go
+func ResetRegion()
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -385,7 +392,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dxConnectionAssociation.DxConnectionAssociation.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dxconnectionassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dxconnectionassociation"
 
 dxconnectionassociation.DxConnectionAssociation_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +424,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dxConnectionAssociation.DxConnectionAssociation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dxconnectionassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dxconnectionassociation"
 
 dxconnectionassociation.DxConnectionAssociation_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +438,7 @@ dxconnectionassociation.DxConnectionAssociation_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.dxConnectionAssociation.DxConnectionAssociation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dxconnectionassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dxconnectionassociation"
 
 dxconnectionassociation.DxConnectionAssociation_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +452,7 @@ dxconnectionassociation.DxConnectionAssociation_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dxConnectionAssociation.DxConnectionAssociation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dxconnectionassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dxconnectionassociation"
 
 dxconnectionassociation.DxConnectionAssociation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -474,7 +481,7 @@ The construct id used in the generated config for the DxConnectionAssociation to
 
 The id of the existing DxConnectionAssociation that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/dx_connection_association#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/dx_connection_association#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -507,9 +514,11 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.dxConnectionAssociation.DxConnectionAssociation.property.connectionIdInput">ConnectionIdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dxConnectionAssociation.DxConnectionAssociation.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dxConnectionAssociation.DxConnectionAssociation.property.lagIdInput">LagIdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dxConnectionAssociation.DxConnectionAssociation.property.regionInput">RegionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dxConnectionAssociation.DxConnectionAssociation.property.connectionId">ConnectionId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dxConnectionAssociation.DxConnectionAssociation.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dxConnectionAssociation.DxConnectionAssociation.property.lagId">LagId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dxConnectionAssociation.DxConnectionAssociation.property.region">Region</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
@@ -685,6 +694,16 @@ func LagIdInput() *string
 
 ---
 
+##### `RegionInput`<sup>Optional</sup> <a name="RegionInput" id="@cdktf/provider-aws.dxConnectionAssociation.DxConnectionAssociation.property.regionInput"></a>
+
+```go
+func RegionInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `ConnectionId`<sup>Required</sup> <a name="ConnectionId" id="@cdktf/provider-aws.dxConnectionAssociation.DxConnectionAssociation.property.connectionId"></a>
 
 ```go
@@ -709,6 +728,16 @@ func Id() *string
 
 ```go
 func LagId() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Region`<sup>Required</sup> <a name="Region" id="@cdktf/provider-aws.dxConnectionAssociation.DxConnectionAssociation.property.region"></a>
+
+```go
+func Region() *string
 ```
 
 - *Type:* *string
@@ -740,7 +769,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dxConnectionAssociation.DxConnectionAssociationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dxconnectionassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dxconnectionassociation"
 
 &dxconnectionassociation.DxConnectionAssociationConfig {
 	Connection: interface{},
@@ -753,6 +782,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dxconnectionassociation"
 	ConnectionId: *string,
 	LagId: *string,
 	Id: *string,
+	Region: *string,
 }
 ```
 
@@ -767,9 +797,10 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dxconnectionassociation"
 | <code><a href="#@cdktf/provider-aws.dxConnectionAssociation.DxConnectionAssociationConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dxConnectionAssociation.DxConnectionAssociationConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dxConnectionAssociation.DxConnectionAssociationConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dxConnectionAssociation.DxConnectionAssociationConfig.property.connectionId">ConnectionId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/dx_connection_association#connection_id DxConnectionAssociation#connection_id}. |
-| <code><a href="#@cdktf/provider-aws.dxConnectionAssociation.DxConnectionAssociationConfig.property.lagId">LagId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/dx_connection_association#lag_id DxConnectionAssociation#lag_id}. |
-| <code><a href="#@cdktf/provider-aws.dxConnectionAssociation.DxConnectionAssociationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/dx_connection_association#id DxConnectionAssociation#id}. |
+| <code><a href="#@cdktf/provider-aws.dxConnectionAssociation.DxConnectionAssociationConfig.property.connectionId">ConnectionId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/dx_connection_association#connection_id DxConnectionAssociation#connection_id}. |
+| <code><a href="#@cdktf/provider-aws.dxConnectionAssociation.DxConnectionAssociationConfig.property.lagId">LagId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/dx_connection_association#lag_id DxConnectionAssociation#lag_id}. |
+| <code><a href="#@cdktf/provider-aws.dxConnectionAssociation.DxConnectionAssociationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/dx_connection_association#id DxConnectionAssociation#id}. |
+| <code><a href="#@cdktf/provider-aws.dxConnectionAssociation.DxConnectionAssociationConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
 
@@ -851,7 +882,7 @@ ConnectionId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/dx_connection_association#connection_id DxConnectionAssociation#connection_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/dx_connection_association#connection_id DxConnectionAssociation#connection_id}.
 
 ---
 
@@ -863,7 +894,7 @@ LagId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/dx_connection_association#lag_id DxConnectionAssociation#lag_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/dx_connection_association#lag_id DxConnectionAssociation#lag_id}.
 
 ---
 
@@ -875,10 +906,24 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/dx_connection_association#id DxConnectionAssociation#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/dx_connection_association#id DxConnectionAssociation#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `Region`<sup>Optional</sup> <a name="Region" id="@cdktf/provider-aws.dxConnectionAssociation.DxConnectionAssociationConfig.property.region"></a>
+
+```go
+Region *string
+```
+
+- *Type:* *string
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/dx_connection_association#region DxConnectionAssociation#region}
 
 ---
 

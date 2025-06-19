@@ -4,12 +4,12 @@
 
 ### LightsailDomain <a name="LightsailDomain" id="@cdktf/provider-aws.lightsailDomain.LightsailDomain"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/lightsail_domain aws_lightsail_domain}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/lightsail_domain aws_lightsail_domain}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lightsailDomain.LightsailDomain.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/lightsaildomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/lightsaildomain"
 
 lightsaildomain.NewLightsailDomain(scope Construct, id *string, config LightsailDomainConfig) LightsailDomain
 ```
@@ -74,6 +74,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.lightsailDomain.LightsailDomain.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-aws.lightsailDomain.LightsailDomain.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-aws.lightsailDomain.LightsailDomain.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lightsailDomain.LightsailDomain.resetRegion">ResetRegion</a></code> | *No description.* |
 
 ---
 
@@ -371,6 +372,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 func ResetId()
 ```
 
+##### `ResetRegion` <a name="ResetRegion" id="@cdktf/provider-aws.lightsailDomain.LightsailDomain.resetRegion"></a>
+
+```go
+func ResetRegion()
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -385,7 +392,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.lightsailDomain.LightsailDomain.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/lightsaildomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/lightsaildomain"
 
 lightsaildomain.LightsailDomain_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +424,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.lightsailDomain.LightsailDomain.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/lightsaildomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/lightsaildomain"
 
 lightsaildomain.LightsailDomain_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +438,7 @@ lightsaildomain.LightsailDomain_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.lightsailDomain.LightsailDomain.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/lightsaildomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/lightsaildomain"
 
 lightsaildomain.LightsailDomain_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +452,7 @@ lightsaildomain.LightsailDomain_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.lightsailDomain.LightsailDomain.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/lightsaildomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/lightsaildomain"
 
 lightsaildomain.LightsailDomain_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -474,7 +481,7 @@ The construct id used in the generated config for the LightsailDomain to import.
 
 The id of the existing LightsailDomain that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/lightsail_domain#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/lightsail_domain#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -507,8 +514,10 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.lightsailDomain.LightsailDomain.property.arn">Arn</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lightsailDomain.LightsailDomain.property.domainNameInput">DomainNameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lightsailDomain.LightsailDomain.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lightsailDomain.LightsailDomain.property.regionInput">RegionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lightsailDomain.LightsailDomain.property.domainName">DomainName</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lightsailDomain.LightsailDomain.property.id">Id</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lightsailDomain.LightsailDomain.property.region">Region</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
@@ -684,6 +693,16 @@ func IdInput() *string
 
 ---
 
+##### `RegionInput`<sup>Optional</sup> <a name="RegionInput" id="@cdktf/provider-aws.lightsailDomain.LightsailDomain.property.regionInput"></a>
+
+```go
+func RegionInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `DomainName`<sup>Required</sup> <a name="DomainName" id="@cdktf/provider-aws.lightsailDomain.LightsailDomain.property.domainName"></a>
 
 ```go
@@ -698,6 +717,16 @@ func DomainName() *string
 
 ```go
 func Id() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Region`<sup>Required</sup> <a name="Region" id="@cdktf/provider-aws.lightsailDomain.LightsailDomain.property.region"></a>
+
+```go
+func Region() *string
 ```
 
 - *Type:* *string
@@ -729,7 +758,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lightsailDomain.LightsailDomainConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/lightsaildomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/lightsaildomain"
 
 &lightsaildomain.LightsailDomainConfig {
 	Connection: interface{},
@@ -741,6 +770,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/lightsaildomain"
 	Provisioners: *[]interface{},
 	DomainName: *string,
 	Id: *string,
+	Region: *string,
 }
 ```
 
@@ -755,8 +785,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/lightsaildomain"
 | <code><a href="#@cdktf/provider-aws.lightsailDomain.LightsailDomainConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lightsailDomain.LightsailDomainConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lightsailDomain.LightsailDomainConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lightsailDomain.LightsailDomainConfig.property.domainName">DomainName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/lightsail_domain#domain_name LightsailDomain#domain_name}. |
-| <code><a href="#@cdktf/provider-aws.lightsailDomain.LightsailDomainConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/lightsail_domain#id LightsailDomain#id}. |
+| <code><a href="#@cdktf/provider-aws.lightsailDomain.LightsailDomainConfig.property.domainName">DomainName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/lightsail_domain#domain_name LightsailDomain#domain_name}. |
+| <code><a href="#@cdktf/provider-aws.lightsailDomain.LightsailDomainConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/lightsail_domain#id LightsailDomain#id}. |
+| <code><a href="#@cdktf/provider-aws.lightsailDomain.LightsailDomainConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
 
@@ -838,7 +869,7 @@ DomainName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/lightsail_domain#domain_name LightsailDomain#domain_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/lightsail_domain#domain_name LightsailDomain#domain_name}.
 
 ---
 
@@ -850,10 +881,24 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/lightsail_domain#id LightsailDomain#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/lightsail_domain#id LightsailDomain#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `Region`<sup>Optional</sup> <a name="Region" id="@cdktf/provider-aws.lightsailDomain.LightsailDomainConfig.property.region"></a>
+
+```go
+Region *string
+```
+
+- *Type:* *string
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/lightsail_domain#region LightsailDomain#region}
 
 ---
 

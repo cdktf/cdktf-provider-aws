@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/athena_prepared_statement
+// https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/athena_prepared_statement
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,46 +13,52 @@ import * as cdktf from 'cdktf';
 
 export interface AthenaPreparedStatementConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/athena_prepared_statement#description AthenaPreparedStatement#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/athena_prepared_statement#description AthenaPreparedStatement#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/athena_prepared_statement#id AthenaPreparedStatement#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/athena_prepared_statement#id AthenaPreparedStatement#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/athena_prepared_statement#name AthenaPreparedStatement#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/athena_prepared_statement#name AthenaPreparedStatement#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/athena_prepared_statement#query_statement AthenaPreparedStatement#query_statement}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/athena_prepared_statement#query_statement AthenaPreparedStatement#query_statement}
   */
   readonly queryStatement: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/athena_prepared_statement#workgroup AthenaPreparedStatement#workgroup}
+  * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/athena_prepared_statement#region AthenaPreparedStatement#region}
+  */
+  readonly region?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/athena_prepared_statement#workgroup AthenaPreparedStatement#workgroup}
   */
   readonly workgroup: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/athena_prepared_statement#timeouts AthenaPreparedStatement#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/athena_prepared_statement#timeouts AthenaPreparedStatement#timeouts}
   */
   readonly timeouts?: AthenaPreparedStatementTimeouts;
 }
 export interface AthenaPreparedStatementTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/athena_prepared_statement#create AthenaPreparedStatement#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/athena_prepared_statement#create AthenaPreparedStatement#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/athena_prepared_statement#delete AthenaPreparedStatement#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/athena_prepared_statement#delete AthenaPreparedStatement#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/athena_prepared_statement#update AthenaPreparedStatement#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/athena_prepared_statement#update AthenaPreparedStatement#update}
   */
   readonly update?: string;
 }
@@ -204,7 +210,7 @@ export class AthenaPreparedStatementTimeoutsOutputReference extends cdktf.Comple
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/athena_prepared_statement aws_athena_prepared_statement}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/athena_prepared_statement aws_athena_prepared_statement}
 */
 export class AthenaPreparedStatement extends cdktf.TerraformResource {
 
@@ -220,7 +226,7 @@ export class AthenaPreparedStatement extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a AthenaPreparedStatement resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AthenaPreparedStatement to import
-  * @param importFromId The id of the existing AthenaPreparedStatement that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/athena_prepared_statement#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing AthenaPreparedStatement that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/athena_prepared_statement#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AthenaPreparedStatement to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -232,7 +238,7 @@ export class AthenaPreparedStatement extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/athena_prepared_statement aws_athena_prepared_statement} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/athena_prepared_statement aws_athena_prepared_statement} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -243,8 +249,8 @@ export class AthenaPreparedStatement extends cdktf.TerraformResource {
       terraformResourceType: 'aws_athena_prepared_statement',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.100.0',
-        providerVersionConstraint: '~> 5.0'
+        providerVersion: '6.0.0',
+        providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -258,6 +264,7 @@ export class AthenaPreparedStatement extends cdktf.TerraformResource {
     this._id = config.id;
     this._name = config.name;
     this._queryStatement = config.queryStatement;
+    this._region = config.region;
     this._workgroup = config.workgroup;
     this._timeouts.internalValue = config.timeouts;
   }
@@ -324,6 +331,22 @@ export class AthenaPreparedStatement extends cdktf.TerraformResource {
     return this._queryStatement;
   }
 
+  // region - computed: true, optional: true, required: false
+  private _region?: string; 
+  public get region() {
+    return this.getStringAttribute('region');
+  }
+  public set region(value: string) {
+    this._region = value;
+  }
+  public resetRegion() {
+    this._region = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get regionInput() {
+    return this._region;
+  }
+
   // workgroup - computed: false, optional: false, required: true
   private _workgroup?: string; 
   public get workgroup() {
@@ -363,6 +386,7 @@ export class AthenaPreparedStatement extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       query_statement: cdktf.stringToTerraform(this._queryStatement),
+      region: cdktf.stringToTerraform(this._region),
       workgroup: cdktf.stringToTerraform(this._workgroup),
       timeouts: athenaPreparedStatementTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -390,6 +414,12 @@ export class AthenaPreparedStatement extends cdktf.TerraformResource {
       },
       query_statement: {
         value: cdktf.stringToHclTerraform(this._queryStatement),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      region: {
+        value: cdktf.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

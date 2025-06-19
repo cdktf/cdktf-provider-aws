@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/identitystore_groups
+// https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/identitystore_groups
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,9 +13,15 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsIdentitystoreGroupsConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/identitystore_groups#identity_store_id DataAwsIdentitystoreGroups#identity_store_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/identitystore_groups#identity_store_id DataAwsIdentitystoreGroups#identity_store_id}
   */
   readonly identityStoreId: string;
+  /**
+  * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/identitystore_groups#region DataAwsIdentitystoreGroups#region}
+  */
+  readonly region?: string;
 }
 export interface DataAwsIdentitystoreGroupsGroupsExternalIds {
 }
@@ -195,7 +201,7 @@ export class DataAwsIdentitystoreGroupsGroupsList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/identitystore_groups aws_identitystore_groups}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/identitystore_groups aws_identitystore_groups}
 */
 export class DataAwsIdentitystoreGroups extends cdktf.TerraformDataSource {
 
@@ -211,7 +217,7 @@ export class DataAwsIdentitystoreGroups extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataAwsIdentitystoreGroups resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsIdentitystoreGroups to import
-  * @param importFromId The id of the existing DataAwsIdentitystoreGroups that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/identitystore_groups#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsIdentitystoreGroups that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/identitystore_groups#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsIdentitystoreGroups to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -223,7 +229,7 @@ export class DataAwsIdentitystoreGroups extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/identitystore_groups aws_identitystore_groups} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/identitystore_groups aws_identitystore_groups} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -234,8 +240,8 @@ export class DataAwsIdentitystoreGroups extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_identitystore_groups',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.100.0',
-        providerVersionConstraint: '~> 5.0'
+        providerVersion: '6.0.0',
+        providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -246,6 +252,7 @@ export class DataAwsIdentitystoreGroups extends cdktf.TerraformDataSource {
       forEach: config.forEach
     });
     this._identityStoreId = config.identityStoreId;
+    this._region = config.region;
   }
 
   // ==========
@@ -271,6 +278,22 @@ export class DataAwsIdentitystoreGroups extends cdktf.TerraformDataSource {
     return this._identityStoreId;
   }
 
+  // region - computed: true, optional: true, required: false
+  private _region?: string; 
+  public get region() {
+    return this.getStringAttribute('region');
+  }
+  public set region(value: string) {
+    this._region = value;
+  }
+  public resetRegion() {
+    this._region = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get regionInput() {
+    return this._region;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -278,6 +301,7 @@ export class DataAwsIdentitystoreGroups extends cdktf.TerraformDataSource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       identity_store_id: cdktf.stringToTerraform(this._identityStoreId),
+      region: cdktf.stringToTerraform(this._region),
     };
   }
 
@@ -285,6 +309,12 @@ export class DataAwsIdentitystoreGroups extends cdktf.TerraformDataSource {
     const attrs = {
       identity_store_id: {
         value: cdktf.stringToHclTerraform(this._identityStoreId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      region: {
+        value: cdktf.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

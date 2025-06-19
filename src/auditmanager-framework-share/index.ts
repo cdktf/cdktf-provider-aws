@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/auditmanager_framework_share
+// https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/auditmanager_framework_share
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,25 +13,31 @@ import * as cdktf from 'cdktf';
 
 export interface AuditmanagerFrameworkShareConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/auditmanager_framework_share#comment AuditmanagerFrameworkShare#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/auditmanager_framework_share#comment AuditmanagerFrameworkShare#comment}
   */
   readonly comment?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/auditmanager_framework_share#destination_account AuditmanagerFrameworkShare#destination_account}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/auditmanager_framework_share#destination_account AuditmanagerFrameworkShare#destination_account}
   */
   readonly destinationAccount: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/auditmanager_framework_share#destination_region AuditmanagerFrameworkShare#destination_region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/auditmanager_framework_share#destination_region AuditmanagerFrameworkShare#destination_region}
   */
   readonly destinationRegion: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/auditmanager_framework_share#framework_id AuditmanagerFrameworkShare#framework_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/auditmanager_framework_share#framework_id AuditmanagerFrameworkShare#framework_id}
   */
   readonly frameworkId: string;
+  /**
+  * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/auditmanager_framework_share#region AuditmanagerFrameworkShare#region}
+  */
+  readonly region?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/auditmanager_framework_share aws_auditmanager_framework_share}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/auditmanager_framework_share aws_auditmanager_framework_share}
 */
 export class AuditmanagerFrameworkShare extends cdktf.TerraformResource {
 
@@ -47,7 +53,7 @@ export class AuditmanagerFrameworkShare extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a AuditmanagerFrameworkShare resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AuditmanagerFrameworkShare to import
-  * @param importFromId The id of the existing AuditmanagerFrameworkShare that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/auditmanager_framework_share#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing AuditmanagerFrameworkShare that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/auditmanager_framework_share#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AuditmanagerFrameworkShare to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -59,7 +65,7 @@ export class AuditmanagerFrameworkShare extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/auditmanager_framework_share aws_auditmanager_framework_share} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/auditmanager_framework_share aws_auditmanager_framework_share} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -70,8 +76,8 @@ export class AuditmanagerFrameworkShare extends cdktf.TerraformResource {
       terraformResourceType: 'aws_auditmanager_framework_share',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.100.0',
-        providerVersionConstraint: '~> 5.0'
+        providerVersion: '6.0.0',
+        providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -85,6 +91,7 @@ export class AuditmanagerFrameworkShare extends cdktf.TerraformResource {
     this._destinationAccount = config.destinationAccount;
     this._destinationRegion = config.destinationRegion;
     this._frameworkId = config.frameworkId;
+    this._region = config.region;
   }
 
   // ==========
@@ -151,6 +158,22 @@ export class AuditmanagerFrameworkShare extends cdktf.TerraformResource {
     return this.getStringAttribute('id');
   }
 
+  // region - computed: true, optional: true, required: false
+  private _region?: string; 
+  public get region() {
+    return this.getStringAttribute('region');
+  }
+  public set region(value: string) {
+    this._region = value;
+  }
+  public resetRegion() {
+    this._region = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get regionInput() {
+    return this._region;
+  }
+
   // status - computed: true, optional: false, required: false
   public get status() {
     return this.getStringAttribute('status');
@@ -166,6 +189,7 @@ export class AuditmanagerFrameworkShare extends cdktf.TerraformResource {
       destination_account: cdktf.stringToTerraform(this._destinationAccount),
       destination_region: cdktf.stringToTerraform(this._destinationRegion),
       framework_id: cdktf.stringToTerraform(this._frameworkId),
+      region: cdktf.stringToTerraform(this._region),
     };
   }
 
@@ -191,6 +215,12 @@ export class AuditmanagerFrameworkShare extends cdktf.TerraformResource {
       },
       framework_id: {
         value: cdktf.stringToHclTerraform(this._frameworkId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      region: {
+        value: cdktf.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

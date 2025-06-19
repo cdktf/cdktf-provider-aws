@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/accessanalyzer_archive_rule
+// https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/accessanalyzer_archive_rule
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,46 +13,52 @@ import * as cdktf from 'cdktf';
 
 export interface AccessanalyzerArchiveRuleConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/accessanalyzer_archive_rule#analyzer_name AccessanalyzerArchiveRule#analyzer_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/accessanalyzer_archive_rule#analyzer_name AccessanalyzerArchiveRule#analyzer_name}
   */
   readonly analyzerName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/accessanalyzer_archive_rule#id AccessanalyzerArchiveRule#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/accessanalyzer_archive_rule#id AccessanalyzerArchiveRule#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/accessanalyzer_archive_rule#rule_name AccessanalyzerArchiveRule#rule_name}
+  * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/accessanalyzer_archive_rule#region AccessanalyzerArchiveRule#region}
+  */
+  readonly region?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/accessanalyzer_archive_rule#rule_name AccessanalyzerArchiveRule#rule_name}
   */
   readonly ruleName: string;
   /**
   * filter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/accessanalyzer_archive_rule#filter AccessanalyzerArchiveRule#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/accessanalyzer_archive_rule#filter AccessanalyzerArchiveRule#filter}
   */
   readonly filter: AccessanalyzerArchiveRuleFilter[] | cdktf.IResolvable;
 }
 export interface AccessanalyzerArchiveRuleFilter {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/accessanalyzer_archive_rule#contains AccessanalyzerArchiveRule#contains}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/accessanalyzer_archive_rule#contains AccessanalyzerArchiveRule#contains}
   */
   readonly contains?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/accessanalyzer_archive_rule#criteria AccessanalyzerArchiveRule#criteria}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/accessanalyzer_archive_rule#criteria AccessanalyzerArchiveRule#criteria}
   */
   readonly criteria: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/accessanalyzer_archive_rule#eq AccessanalyzerArchiveRule#eq}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/accessanalyzer_archive_rule#eq AccessanalyzerArchiveRule#eq}
   */
   readonly eq?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/accessanalyzer_archive_rule#exists AccessanalyzerArchiveRule#exists}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/accessanalyzer_archive_rule#exists AccessanalyzerArchiveRule#exists}
   */
   readonly exists?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/accessanalyzer_archive_rule#neq AccessanalyzerArchiveRule#neq}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/accessanalyzer_archive_rule#neq AccessanalyzerArchiveRule#neq}
   */
   readonly neq?: string[];
 }
@@ -281,7 +287,7 @@ export class AccessanalyzerArchiveRuleFilterList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/accessanalyzer_archive_rule aws_accessanalyzer_archive_rule}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/accessanalyzer_archive_rule aws_accessanalyzer_archive_rule}
 */
 export class AccessanalyzerArchiveRule extends cdktf.TerraformResource {
 
@@ -297,7 +303,7 @@ export class AccessanalyzerArchiveRule extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a AccessanalyzerArchiveRule resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AccessanalyzerArchiveRule to import
-  * @param importFromId The id of the existing AccessanalyzerArchiveRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/accessanalyzer_archive_rule#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing AccessanalyzerArchiveRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/accessanalyzer_archive_rule#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AccessanalyzerArchiveRule to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -309,7 +315,7 @@ export class AccessanalyzerArchiveRule extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/accessanalyzer_archive_rule aws_accessanalyzer_archive_rule} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/accessanalyzer_archive_rule aws_accessanalyzer_archive_rule} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -320,8 +326,8 @@ export class AccessanalyzerArchiveRule extends cdktf.TerraformResource {
       terraformResourceType: 'aws_accessanalyzer_archive_rule',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.100.0',
-        providerVersionConstraint: '~> 5.0'
+        providerVersion: '6.0.0',
+        providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -333,6 +339,7 @@ export class AccessanalyzerArchiveRule extends cdktf.TerraformResource {
     });
     this._analyzerName = config.analyzerName;
     this._id = config.id;
+    this._region = config.region;
     this._ruleName = config.ruleName;
     this._filter.internalValue = config.filter;
   }
@@ -370,6 +377,22 @@ export class AccessanalyzerArchiveRule extends cdktf.TerraformResource {
     return this._id;
   }
 
+  // region - computed: true, optional: true, required: false
+  private _region?: string; 
+  public get region() {
+    return this.getStringAttribute('region');
+  }
+  public set region(value: string) {
+    this._region = value;
+  }
+  public resetRegion() {
+    this._region = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get regionInput() {
+    return this._region;
+  }
+
   // rule_name - computed: false, optional: false, required: true
   private _ruleName?: string; 
   public get ruleName() {
@@ -404,6 +427,7 @@ export class AccessanalyzerArchiveRule extends cdktf.TerraformResource {
     return {
       analyzer_name: cdktf.stringToTerraform(this._analyzerName),
       id: cdktf.stringToTerraform(this._id),
+      region: cdktf.stringToTerraform(this._region),
       rule_name: cdktf.stringToTerraform(this._ruleName),
       filter: cdktf.listMapper(accessanalyzerArchiveRuleFilterToTerraform, true)(this._filter.internalValue),
     };
@@ -419,6 +443,12 @@ export class AccessanalyzerArchiveRule extends cdktf.TerraformResource {
       },
       id: {
         value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      region: {
+        value: cdktf.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

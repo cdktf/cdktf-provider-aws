@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/networkmonitor_probe
+// https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/networkmonitor_probe
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,37 +13,43 @@ import * as cdktf from 'cdktf';
 
 export interface NetworkmonitorProbeConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/networkmonitor_probe#destination NetworkmonitorProbe#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/networkmonitor_probe#destination NetworkmonitorProbe#destination}
   */
   readonly destination: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/networkmonitor_probe#destination_port NetworkmonitorProbe#destination_port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/networkmonitor_probe#destination_port NetworkmonitorProbe#destination_port}
   */
   readonly destinationPort?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/networkmonitor_probe#monitor_name NetworkmonitorProbe#monitor_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/networkmonitor_probe#monitor_name NetworkmonitorProbe#monitor_name}
   */
   readonly monitorName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/networkmonitor_probe#packet_size NetworkmonitorProbe#packet_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/networkmonitor_probe#packet_size NetworkmonitorProbe#packet_size}
   */
   readonly packetSize?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/networkmonitor_probe#protocol NetworkmonitorProbe#protocol}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/networkmonitor_probe#protocol NetworkmonitorProbe#protocol}
   */
   readonly protocol: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/networkmonitor_probe#source_arn NetworkmonitorProbe#source_arn}
+  * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/networkmonitor_probe#region NetworkmonitorProbe#region}
+  */
+  readonly region?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/networkmonitor_probe#source_arn NetworkmonitorProbe#source_arn}
   */
   readonly sourceArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/networkmonitor_probe#tags NetworkmonitorProbe#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/networkmonitor_probe#tags NetworkmonitorProbe#tags}
   */
   readonly tags?: { [key: string]: string };
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/networkmonitor_probe aws_networkmonitor_probe}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/networkmonitor_probe aws_networkmonitor_probe}
 */
 export class NetworkmonitorProbe extends cdktf.TerraformResource {
 
@@ -59,7 +65,7 @@ export class NetworkmonitorProbe extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a NetworkmonitorProbe resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NetworkmonitorProbe to import
-  * @param importFromId The id of the existing NetworkmonitorProbe that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/networkmonitor_probe#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing NetworkmonitorProbe that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/networkmonitor_probe#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NetworkmonitorProbe to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -71,7 +77,7 @@ export class NetworkmonitorProbe extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/networkmonitor_probe aws_networkmonitor_probe} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/networkmonitor_probe aws_networkmonitor_probe} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -82,8 +88,8 @@ export class NetworkmonitorProbe extends cdktf.TerraformResource {
       terraformResourceType: 'aws_networkmonitor_probe',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.100.0',
-        providerVersionConstraint: '~> 5.0'
+        providerVersion: '6.0.0',
+        providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -98,6 +104,7 @@ export class NetworkmonitorProbe extends cdktf.TerraformResource {
     this._monitorName = config.monitorName;
     this._packetSize = config.packetSize;
     this._protocol = config.protocol;
+    this._region = config.region;
     this._sourceArn = config.sourceArn;
     this._tags = config.tags;
   }
@@ -197,6 +204,22 @@ export class NetworkmonitorProbe extends cdktf.TerraformResource {
     return this._protocol;
   }
 
+  // region - computed: true, optional: true, required: false
+  private _region?: string; 
+  public get region() {
+    return this.getStringAttribute('region');
+  }
+  public set region(value: string) {
+    this._region = value;
+  }
+  public resetRegion() {
+    this._region = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get regionInput() {
+    return this._region;
+  }
+
   // source_arn - computed: false, optional: false, required: true
   private _sourceArn?: string; 
   public get sourceArn() {
@@ -248,6 +271,7 @@ export class NetworkmonitorProbe extends cdktf.TerraformResource {
       monitor_name: cdktf.stringToTerraform(this._monitorName),
       packet_size: cdktf.numberToTerraform(this._packetSize),
       protocol: cdktf.stringToTerraform(this._protocol),
+      region: cdktf.stringToTerraform(this._region),
       source_arn: cdktf.stringToTerraform(this._sourceArn),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
     };
@@ -281,6 +305,12 @@ export class NetworkmonitorProbe extends cdktf.TerraformResource {
       },
       protocol: {
         value: cdktf.stringToHclTerraform(this._protocol),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      region: {
+        value: cdktf.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

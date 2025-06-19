@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/media_convert_queue
+// https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/media_convert_queue
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,58 +13,64 @@ import * as cdktf from 'cdktf';
 
 export interface MediaConvertQueueConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/media_convert_queue#concurrent_jobs MediaConvertQueue#concurrent_jobs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/media_convert_queue#concurrent_jobs MediaConvertQueue#concurrent_jobs}
   */
   readonly concurrentJobs?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/media_convert_queue#description MediaConvertQueue#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/media_convert_queue#description MediaConvertQueue#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/media_convert_queue#id MediaConvertQueue#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/media_convert_queue#id MediaConvertQueue#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/media_convert_queue#name MediaConvertQueue#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/media_convert_queue#name MediaConvertQueue#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/media_convert_queue#pricing_plan MediaConvertQueue#pricing_plan}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/media_convert_queue#pricing_plan MediaConvertQueue#pricing_plan}
   */
   readonly pricingPlan?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/media_convert_queue#status MediaConvertQueue#status}
+  * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/media_convert_queue#region MediaConvertQueue#region}
+  */
+  readonly region?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/media_convert_queue#status MediaConvertQueue#status}
   */
   readonly status?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/media_convert_queue#tags MediaConvertQueue#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/media_convert_queue#tags MediaConvertQueue#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/media_convert_queue#tags_all MediaConvertQueue#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/media_convert_queue#tags_all MediaConvertQueue#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
   * reservation_plan_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/media_convert_queue#reservation_plan_settings MediaConvertQueue#reservation_plan_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/media_convert_queue#reservation_plan_settings MediaConvertQueue#reservation_plan_settings}
   */
   readonly reservationPlanSettings?: MediaConvertQueueReservationPlanSettings;
 }
 export interface MediaConvertQueueReservationPlanSettings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/media_convert_queue#commitment MediaConvertQueue#commitment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/media_convert_queue#commitment MediaConvertQueue#commitment}
   */
   readonly commitment: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/media_convert_queue#renewal_type MediaConvertQueue#renewal_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/media_convert_queue#renewal_type MediaConvertQueue#renewal_type}
   */
   readonly renewalType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/media_convert_queue#reserved_slots MediaConvertQueue#reserved_slots}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/media_convert_queue#reserved_slots MediaConvertQueue#reserved_slots}
   */
   readonly reservedSlots: number;
 }
@@ -197,7 +203,7 @@ export class MediaConvertQueueReservationPlanSettingsOutputReference extends cdk
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/media_convert_queue aws_media_convert_queue}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/media_convert_queue aws_media_convert_queue}
 */
 export class MediaConvertQueue extends cdktf.TerraformResource {
 
@@ -213,7 +219,7 @@ export class MediaConvertQueue extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a MediaConvertQueue resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the MediaConvertQueue to import
-  * @param importFromId The id of the existing MediaConvertQueue that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/media_convert_queue#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing MediaConvertQueue that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/media_convert_queue#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the MediaConvertQueue to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -225,7 +231,7 @@ export class MediaConvertQueue extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/media_convert_queue aws_media_convert_queue} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/media_convert_queue aws_media_convert_queue} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -236,8 +242,8 @@ export class MediaConvertQueue extends cdktf.TerraformResource {
       terraformResourceType: 'aws_media_convert_queue',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.100.0',
-        providerVersionConstraint: '~> 5.0'
+        providerVersion: '6.0.0',
+        providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -252,6 +258,7 @@ export class MediaConvertQueue extends cdktf.TerraformResource {
     this._id = config.id;
     this._name = config.name;
     this._pricingPlan = config.pricingPlan;
+    this._region = config.region;
     this._status = config.status;
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
@@ -344,6 +351,22 @@ export class MediaConvertQueue extends cdktf.TerraformResource {
     return this._pricingPlan;
   }
 
+  // region - computed: true, optional: true, required: false
+  private _region?: string; 
+  public get region() {
+    return this.getStringAttribute('region');
+  }
+  public set region(value: string) {
+    this._region = value;
+  }
+  public resetRegion() {
+    this._region = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get regionInput() {
+    return this._region;
+  }
+
   // status - computed: false, optional: true, required: false
   private _status?: string; 
   public get status() {
@@ -419,6 +442,7 @@ export class MediaConvertQueue extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       pricing_plan: cdktf.stringToTerraform(this._pricingPlan),
+      region: cdktf.stringToTerraform(this._region),
       status: cdktf.stringToTerraform(this._status),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
@@ -454,6 +478,12 @@ export class MediaConvertQueue extends cdktf.TerraformResource {
       },
       pricing_plan: {
         value: cdktf.stringToHclTerraform(this._pricingPlan),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      region: {
+        value: cdktf.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

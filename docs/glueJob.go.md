@@ -4,12 +4,12 @@
 
 ### GlueJob <a name="GlueJob" id="@cdktf/provider-aws.glueJob.GlueJob"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_job aws_glue_job}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_job aws_glue_job}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.glueJob.GlueJob.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/gluejob"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/gluejob"
 
 gluejob.NewGlueJob(scope Construct, id *string, config GlueJobConfig) GlueJob
 ```
@@ -91,6 +91,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.glueJob.GlueJob.resetNonOverridableArguments">ResetNonOverridableArguments</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.glueJob.GlueJob.resetNotificationProperty">ResetNotificationProperty</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.glueJob.GlueJob.resetNumberOfWorkers">ResetNumberOfWorkers</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.glueJob.GlueJob.resetRegion">ResetRegion</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.glueJob.GlueJob.resetSecurityConfiguration">ResetSecurityConfiguration</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.glueJob.GlueJob.resetSourceControlDetails">ResetSourceControlDetails</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.glueJob.GlueJob.resetTags">ResetTags</a></code> | *No description.* |
@@ -520,6 +521,12 @@ func ResetNotificationProperty()
 func ResetNumberOfWorkers()
 ```
 
+##### `ResetRegion` <a name="ResetRegion" id="@cdktf/provider-aws.glueJob.GlueJob.resetRegion"></a>
+
+```go
+func ResetRegion()
+```
+
 ##### `ResetSecurityConfiguration` <a name="ResetSecurityConfiguration" id="@cdktf/provider-aws.glueJob.GlueJob.resetSecurityConfiguration"></a>
 
 ```go
@@ -570,7 +577,7 @@ func ResetWorkerType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.glueJob.GlueJob.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/gluejob"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/gluejob"
 
 gluejob.GlueJob_IsConstruct(x interface{}) *bool
 ```
@@ -602,7 +609,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.glueJob.GlueJob.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/gluejob"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/gluejob"
 
 gluejob.GlueJob_IsTerraformElement(x interface{}) *bool
 ```
@@ -616,7 +623,7 @@ gluejob.GlueJob_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.glueJob.GlueJob.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/gluejob"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/gluejob"
 
 gluejob.GlueJob_IsTerraformResource(x interface{}) *bool
 ```
@@ -630,7 +637,7 @@ gluejob.GlueJob_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.glueJob.GlueJob.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/gluejob"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/gluejob"
 
 gluejob.GlueJob_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -659,7 +666,7 @@ The construct id used in the generated config for the GlueJob to import.
 
 The id of the existing GlueJob that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_job#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_job#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -710,6 +717,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.glueJob.GlueJob.property.nonOverridableArgumentsInput">NonOverridableArgumentsInput</a></code> | <code>*map[string]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.glueJob.GlueJob.property.notificationPropertyInput">NotificationPropertyInput</a></code> | <code><a href="#@cdktf/provider-aws.glueJob.GlueJobNotificationProperty">GlueJobNotificationProperty</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.glueJob.GlueJob.property.numberOfWorkersInput">NumberOfWorkersInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.glueJob.GlueJob.property.regionInput">RegionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.glueJob.GlueJob.property.roleArnInput">RoleArnInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.glueJob.GlueJob.property.securityConfigurationInput">SecurityConfigurationInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.glueJob.GlueJob.property.sourceControlDetailsInput">SourceControlDetailsInput</a></code> | <code><a href="#@cdktf/provider-aws.glueJob.GlueJobSourceControlDetails">GlueJobSourceControlDetails</a></code> | *No description.* |
@@ -730,6 +738,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.glueJob.GlueJob.property.name">Name</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.glueJob.GlueJob.property.nonOverridableArguments">NonOverridableArguments</a></code> | <code>*map[string]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.glueJob.GlueJob.property.numberOfWorkers">NumberOfWorkers</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.glueJob.GlueJob.property.region">Region</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.glueJob.GlueJob.property.roleArn">RoleArn</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.glueJob.GlueJob.property.securityConfiguration">SecurityConfiguration</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.glueJob.GlueJob.property.tags">Tags</a></code> | <code>*map[string]*string</code> | *No description.* |
@@ -1091,6 +1100,16 @@ func NumberOfWorkersInput() *f64
 
 ---
 
+##### `RegionInput`<sup>Optional</sup> <a name="RegionInput" id="@cdktf/provider-aws.glueJob.GlueJob.property.regionInput"></a>
+
+```go
+func RegionInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `RoleArnInput`<sup>Optional</sup> <a name="RoleArnInput" id="@cdktf/provider-aws.glueJob.GlueJob.property.roleArnInput"></a>
 
 ```go
@@ -1291,6 +1310,16 @@ func NumberOfWorkers() *f64
 
 ---
 
+##### `Region`<sup>Required</sup> <a name="Region" id="@cdktf/provider-aws.glueJob.GlueJob.property.region"></a>
+
+```go
+func Region() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `RoleArn`<sup>Required</sup> <a name="RoleArn" id="@cdktf/provider-aws.glueJob.GlueJob.property.roleArn"></a>
 
 ```go
@@ -1376,7 +1405,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.glueJob.GlueJobCommand.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/gluejob"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/gluejob"
 
 &gluejob.GlueJobCommand {
 	ScriptLocation: *string,
@@ -1390,10 +1419,10 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/gluejob"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.glueJob.GlueJobCommand.property.scriptLocation">ScriptLocation</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_job#script_location GlueJob#script_location}. |
-| <code><a href="#@cdktf/provider-aws.glueJob.GlueJobCommand.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_job#name GlueJob#name}. |
-| <code><a href="#@cdktf/provider-aws.glueJob.GlueJobCommand.property.pythonVersion">PythonVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_job#python_version GlueJob#python_version}. |
-| <code><a href="#@cdktf/provider-aws.glueJob.GlueJobCommand.property.runtime">Runtime</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_job#runtime GlueJob#runtime}. |
+| <code><a href="#@cdktf/provider-aws.glueJob.GlueJobCommand.property.scriptLocation">ScriptLocation</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_job#script_location GlueJob#script_location}. |
+| <code><a href="#@cdktf/provider-aws.glueJob.GlueJobCommand.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_job#name GlueJob#name}. |
+| <code><a href="#@cdktf/provider-aws.glueJob.GlueJobCommand.property.pythonVersion">PythonVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_job#python_version GlueJob#python_version}. |
+| <code><a href="#@cdktf/provider-aws.glueJob.GlueJobCommand.property.runtime">Runtime</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_job#runtime GlueJob#runtime}. |
 
 ---
 
@@ -1405,7 +1434,7 @@ ScriptLocation *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_job#script_location GlueJob#script_location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_job#script_location GlueJob#script_location}.
 
 ---
 
@@ -1417,7 +1446,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_job#name GlueJob#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_job#name GlueJob#name}.
 
 ---
 
@@ -1429,7 +1458,7 @@ PythonVersion *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_job#python_version GlueJob#python_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_job#python_version GlueJob#python_version}.
 
 ---
 
@@ -1441,7 +1470,7 @@ Runtime *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_job#runtime GlueJob#runtime}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_job#runtime GlueJob#runtime}.
 
 ---
 
@@ -1450,7 +1479,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.glueJob.GlueJobConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/gluejob"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/gluejob"
 
 &gluejob.GlueJobConfig {
 	Connection: interface{},
@@ -1460,14 +1489,14 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/gluejob"
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	Command: github.com/cdktf/cdktf-provider-aws-go/aws/v20.glueJob.GlueJobCommand,
+	Command: github.com/cdktf/cdktf-provider-aws-go/aws/v21.glueJob.GlueJobCommand,
 	Name: *string,
 	RoleArn: *string,
 	Connections: *[]*string,
 	DefaultArguments: *map[string]*string,
 	Description: *string,
 	ExecutionClass: *string,
-	ExecutionProperty: github.com/cdktf/cdktf-provider-aws-go/aws/v20.glueJob.GlueJobExecutionProperty,
+	ExecutionProperty: github.com/cdktf/cdktf-provider-aws-go/aws/v21.glueJob.GlueJobExecutionProperty,
 	GlueVersion: *string,
 	Id: *string,
 	JobRunQueuingEnabled: interface{},
@@ -1475,10 +1504,11 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/gluejob"
 	MaxCapacity: *f64,
 	MaxRetries: *f64,
 	NonOverridableArguments: *map[string]*string,
-	NotificationProperty: github.com/cdktf/cdktf-provider-aws-go/aws/v20.glueJob.GlueJobNotificationProperty,
+	NotificationProperty: github.com/cdktf/cdktf-provider-aws-go/aws/v21.glueJob.GlueJobNotificationProperty,
 	NumberOfWorkers: *f64,
+	Region: *string,
 	SecurityConfiguration: *string,
-	SourceControlDetails: github.com/cdktf/cdktf-provider-aws-go/aws/v20.glueJob.GlueJobSourceControlDetails,
+	SourceControlDetails: github.com/cdktf/cdktf-provider-aws-go/aws/v21.glueJob.GlueJobSourceControlDetails,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
 	Timeout: *f64,
@@ -1498,28 +1528,29 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/gluejob"
 | <code><a href="#@cdktf/provider-aws.glueJob.GlueJobConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.glueJob.GlueJobConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.glueJob.GlueJobConfig.property.command">Command</a></code> | <code><a href="#@cdktf/provider-aws.glueJob.GlueJobCommand">GlueJobCommand</a></code> | command block. |
-| <code><a href="#@cdktf/provider-aws.glueJob.GlueJobConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_job#name GlueJob#name}. |
-| <code><a href="#@cdktf/provider-aws.glueJob.GlueJobConfig.property.roleArn">RoleArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_job#role_arn GlueJob#role_arn}. |
-| <code><a href="#@cdktf/provider-aws.glueJob.GlueJobConfig.property.connections">Connections</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_job#connections GlueJob#connections}. |
-| <code><a href="#@cdktf/provider-aws.glueJob.GlueJobConfig.property.defaultArguments">DefaultArguments</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_job#default_arguments GlueJob#default_arguments}. |
-| <code><a href="#@cdktf/provider-aws.glueJob.GlueJobConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_job#description GlueJob#description}. |
-| <code><a href="#@cdktf/provider-aws.glueJob.GlueJobConfig.property.executionClass">ExecutionClass</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_job#execution_class GlueJob#execution_class}. |
+| <code><a href="#@cdktf/provider-aws.glueJob.GlueJobConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_job#name GlueJob#name}. |
+| <code><a href="#@cdktf/provider-aws.glueJob.GlueJobConfig.property.roleArn">RoleArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_job#role_arn GlueJob#role_arn}. |
+| <code><a href="#@cdktf/provider-aws.glueJob.GlueJobConfig.property.connections">Connections</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_job#connections GlueJob#connections}. |
+| <code><a href="#@cdktf/provider-aws.glueJob.GlueJobConfig.property.defaultArguments">DefaultArguments</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_job#default_arguments GlueJob#default_arguments}. |
+| <code><a href="#@cdktf/provider-aws.glueJob.GlueJobConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_job#description GlueJob#description}. |
+| <code><a href="#@cdktf/provider-aws.glueJob.GlueJobConfig.property.executionClass">ExecutionClass</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_job#execution_class GlueJob#execution_class}. |
 | <code><a href="#@cdktf/provider-aws.glueJob.GlueJobConfig.property.executionProperty">ExecutionProperty</a></code> | <code><a href="#@cdktf/provider-aws.glueJob.GlueJobExecutionProperty">GlueJobExecutionProperty</a></code> | execution_property block. |
-| <code><a href="#@cdktf/provider-aws.glueJob.GlueJobConfig.property.glueVersion">GlueVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_job#glue_version GlueJob#glue_version}. |
-| <code><a href="#@cdktf/provider-aws.glueJob.GlueJobConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_job#id GlueJob#id}. |
-| <code><a href="#@cdktf/provider-aws.glueJob.GlueJobConfig.property.jobRunQueuingEnabled">JobRunQueuingEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_job#job_run_queuing_enabled GlueJob#job_run_queuing_enabled}. |
-| <code><a href="#@cdktf/provider-aws.glueJob.GlueJobConfig.property.maintenanceWindow">MaintenanceWindow</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_job#maintenance_window GlueJob#maintenance_window}. |
-| <code><a href="#@cdktf/provider-aws.glueJob.GlueJobConfig.property.maxCapacity">MaxCapacity</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_job#max_capacity GlueJob#max_capacity}. |
-| <code><a href="#@cdktf/provider-aws.glueJob.GlueJobConfig.property.maxRetries">MaxRetries</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_job#max_retries GlueJob#max_retries}. |
-| <code><a href="#@cdktf/provider-aws.glueJob.GlueJobConfig.property.nonOverridableArguments">NonOverridableArguments</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_job#non_overridable_arguments GlueJob#non_overridable_arguments}. |
+| <code><a href="#@cdktf/provider-aws.glueJob.GlueJobConfig.property.glueVersion">GlueVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_job#glue_version GlueJob#glue_version}. |
+| <code><a href="#@cdktf/provider-aws.glueJob.GlueJobConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_job#id GlueJob#id}. |
+| <code><a href="#@cdktf/provider-aws.glueJob.GlueJobConfig.property.jobRunQueuingEnabled">JobRunQueuingEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_job#job_run_queuing_enabled GlueJob#job_run_queuing_enabled}. |
+| <code><a href="#@cdktf/provider-aws.glueJob.GlueJobConfig.property.maintenanceWindow">MaintenanceWindow</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_job#maintenance_window GlueJob#maintenance_window}. |
+| <code><a href="#@cdktf/provider-aws.glueJob.GlueJobConfig.property.maxCapacity">MaxCapacity</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_job#max_capacity GlueJob#max_capacity}. |
+| <code><a href="#@cdktf/provider-aws.glueJob.GlueJobConfig.property.maxRetries">MaxRetries</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_job#max_retries GlueJob#max_retries}. |
+| <code><a href="#@cdktf/provider-aws.glueJob.GlueJobConfig.property.nonOverridableArguments">NonOverridableArguments</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_job#non_overridable_arguments GlueJob#non_overridable_arguments}. |
 | <code><a href="#@cdktf/provider-aws.glueJob.GlueJobConfig.property.notificationProperty">NotificationProperty</a></code> | <code><a href="#@cdktf/provider-aws.glueJob.GlueJobNotificationProperty">GlueJobNotificationProperty</a></code> | notification_property block. |
-| <code><a href="#@cdktf/provider-aws.glueJob.GlueJobConfig.property.numberOfWorkers">NumberOfWorkers</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_job#number_of_workers GlueJob#number_of_workers}. |
-| <code><a href="#@cdktf/provider-aws.glueJob.GlueJobConfig.property.securityConfiguration">SecurityConfiguration</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_job#security_configuration GlueJob#security_configuration}. |
+| <code><a href="#@cdktf/provider-aws.glueJob.GlueJobConfig.property.numberOfWorkers">NumberOfWorkers</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_job#number_of_workers GlueJob#number_of_workers}. |
+| <code><a href="#@cdktf/provider-aws.glueJob.GlueJobConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
+| <code><a href="#@cdktf/provider-aws.glueJob.GlueJobConfig.property.securityConfiguration">SecurityConfiguration</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_job#security_configuration GlueJob#security_configuration}. |
 | <code><a href="#@cdktf/provider-aws.glueJob.GlueJobConfig.property.sourceControlDetails">SourceControlDetails</a></code> | <code><a href="#@cdktf/provider-aws.glueJob.GlueJobSourceControlDetails">GlueJobSourceControlDetails</a></code> | source_control_details block. |
-| <code><a href="#@cdktf/provider-aws.glueJob.GlueJobConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_job#tags GlueJob#tags}. |
-| <code><a href="#@cdktf/provider-aws.glueJob.GlueJobConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_job#tags_all GlueJob#tags_all}. |
-| <code><a href="#@cdktf/provider-aws.glueJob.GlueJobConfig.property.timeout">Timeout</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_job#timeout GlueJob#timeout}. |
-| <code><a href="#@cdktf/provider-aws.glueJob.GlueJobConfig.property.workerType">WorkerType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_job#worker_type GlueJob#worker_type}. |
+| <code><a href="#@cdktf/provider-aws.glueJob.GlueJobConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_job#tags GlueJob#tags}. |
+| <code><a href="#@cdktf/provider-aws.glueJob.GlueJobConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_job#tags_all GlueJob#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.glueJob.GlueJobConfig.property.timeout">Timeout</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_job#timeout GlueJob#timeout}. |
+| <code><a href="#@cdktf/provider-aws.glueJob.GlueJobConfig.property.workerType">WorkerType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_job#worker_type GlueJob#worker_type}. |
 
 ---
 
@@ -1603,7 +1634,7 @@ Command GlueJobCommand
 
 command block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_job#command GlueJob#command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_job#command GlueJob#command}
 
 ---
 
@@ -1615,7 +1646,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_job#name GlueJob#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_job#name GlueJob#name}.
 
 ---
 
@@ -1627,7 +1658,7 @@ RoleArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_job#role_arn GlueJob#role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_job#role_arn GlueJob#role_arn}.
 
 ---
 
@@ -1639,7 +1670,7 @@ Connections *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_job#connections GlueJob#connections}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_job#connections GlueJob#connections}.
 
 ---
 
@@ -1651,7 +1682,7 @@ DefaultArguments *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_job#default_arguments GlueJob#default_arguments}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_job#default_arguments GlueJob#default_arguments}.
 
 ---
 
@@ -1663,7 +1694,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_job#description GlueJob#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_job#description GlueJob#description}.
 
 ---
 
@@ -1675,7 +1706,7 @@ ExecutionClass *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_job#execution_class GlueJob#execution_class}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_job#execution_class GlueJob#execution_class}.
 
 ---
 
@@ -1689,7 +1720,7 @@ ExecutionProperty GlueJobExecutionProperty
 
 execution_property block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_job#execution_property GlueJob#execution_property}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_job#execution_property GlueJob#execution_property}
 
 ---
 
@@ -1701,7 +1732,7 @@ GlueVersion *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_job#glue_version GlueJob#glue_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_job#glue_version GlueJob#glue_version}.
 
 ---
 
@@ -1713,7 +1744,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_job#id GlueJob#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_job#id GlueJob#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1728,7 +1759,7 @@ JobRunQueuingEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_job#job_run_queuing_enabled GlueJob#job_run_queuing_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_job#job_run_queuing_enabled GlueJob#job_run_queuing_enabled}.
 
 ---
 
@@ -1740,7 +1771,7 @@ MaintenanceWindow *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_job#maintenance_window GlueJob#maintenance_window}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_job#maintenance_window GlueJob#maintenance_window}.
 
 ---
 
@@ -1752,7 +1783,7 @@ MaxCapacity *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_job#max_capacity GlueJob#max_capacity}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_job#max_capacity GlueJob#max_capacity}.
 
 ---
 
@@ -1764,7 +1795,7 @@ MaxRetries *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_job#max_retries GlueJob#max_retries}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_job#max_retries GlueJob#max_retries}.
 
 ---
 
@@ -1776,7 +1807,7 @@ NonOverridableArguments *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_job#non_overridable_arguments GlueJob#non_overridable_arguments}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_job#non_overridable_arguments GlueJob#non_overridable_arguments}.
 
 ---
 
@@ -1790,7 +1821,7 @@ NotificationProperty GlueJobNotificationProperty
 
 notification_property block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_job#notification_property GlueJob#notification_property}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_job#notification_property GlueJob#notification_property}
 
 ---
 
@@ -1802,7 +1833,21 @@ NumberOfWorkers *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_job#number_of_workers GlueJob#number_of_workers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_job#number_of_workers GlueJob#number_of_workers}.
+
+---
+
+##### `Region`<sup>Optional</sup> <a name="Region" id="@cdktf/provider-aws.glueJob.GlueJobConfig.property.region"></a>
+
+```go
+Region *string
+```
+
+- *Type:* *string
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_job#region GlueJob#region}
 
 ---
 
@@ -1814,7 +1859,7 @@ SecurityConfiguration *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_job#security_configuration GlueJob#security_configuration}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_job#security_configuration GlueJob#security_configuration}.
 
 ---
 
@@ -1828,7 +1873,7 @@ SourceControlDetails GlueJobSourceControlDetails
 
 source_control_details block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_job#source_control_details GlueJob#source_control_details}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_job#source_control_details GlueJob#source_control_details}
 
 ---
 
@@ -1840,7 +1885,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_job#tags GlueJob#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_job#tags GlueJob#tags}.
 
 ---
 
@@ -1852,7 +1897,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_job#tags_all GlueJob#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_job#tags_all GlueJob#tags_all}.
 
 ---
 
@@ -1864,7 +1909,7 @@ Timeout *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_job#timeout GlueJob#timeout}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_job#timeout GlueJob#timeout}.
 
 ---
 
@@ -1876,7 +1921,7 @@ WorkerType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_job#worker_type GlueJob#worker_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_job#worker_type GlueJob#worker_type}.
 
 ---
 
@@ -1885,7 +1930,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.glueJob.GlueJobExecutionProperty.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/gluejob"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/gluejob"
 
 &gluejob.GlueJobExecutionProperty {
 	MaxConcurrentRuns: *f64,
@@ -1896,7 +1941,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/gluejob"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.glueJob.GlueJobExecutionProperty.property.maxConcurrentRuns">MaxConcurrentRuns</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_job#max_concurrent_runs GlueJob#max_concurrent_runs}. |
+| <code><a href="#@cdktf/provider-aws.glueJob.GlueJobExecutionProperty.property.maxConcurrentRuns">MaxConcurrentRuns</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_job#max_concurrent_runs GlueJob#max_concurrent_runs}. |
 
 ---
 
@@ -1908,7 +1953,7 @@ MaxConcurrentRuns *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_job#max_concurrent_runs GlueJob#max_concurrent_runs}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_job#max_concurrent_runs GlueJob#max_concurrent_runs}.
 
 ---
 
@@ -1917,7 +1962,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.glueJob.GlueJobNotificationProperty.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/gluejob"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/gluejob"
 
 &gluejob.GlueJobNotificationProperty {
 	NotifyDelayAfter: *f64,
@@ -1928,7 +1973,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/gluejob"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.glueJob.GlueJobNotificationProperty.property.notifyDelayAfter">NotifyDelayAfter</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_job#notify_delay_after GlueJob#notify_delay_after}. |
+| <code><a href="#@cdktf/provider-aws.glueJob.GlueJobNotificationProperty.property.notifyDelayAfter">NotifyDelayAfter</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_job#notify_delay_after GlueJob#notify_delay_after}. |
 
 ---
 
@@ -1940,7 +1985,7 @@ NotifyDelayAfter *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_job#notify_delay_after GlueJob#notify_delay_after}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_job#notify_delay_after GlueJob#notify_delay_after}.
 
 ---
 
@@ -1949,7 +1994,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.glueJob.GlueJobSourceControlDetails.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/gluejob"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/gluejob"
 
 &gluejob.GlueJobSourceControlDetails {
 	AuthStrategy: *string,
@@ -1967,14 +2012,14 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/gluejob"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.glueJob.GlueJobSourceControlDetails.property.authStrategy">AuthStrategy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_job#auth_strategy GlueJob#auth_strategy}. |
-| <code><a href="#@cdktf/provider-aws.glueJob.GlueJobSourceControlDetails.property.authToken">AuthToken</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_job#auth_token GlueJob#auth_token}. |
-| <code><a href="#@cdktf/provider-aws.glueJob.GlueJobSourceControlDetails.property.branch">Branch</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_job#branch GlueJob#branch}. |
-| <code><a href="#@cdktf/provider-aws.glueJob.GlueJobSourceControlDetails.property.folder">Folder</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_job#folder GlueJob#folder}. |
-| <code><a href="#@cdktf/provider-aws.glueJob.GlueJobSourceControlDetails.property.lastCommitId">LastCommitId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_job#last_commit_id GlueJob#last_commit_id}. |
-| <code><a href="#@cdktf/provider-aws.glueJob.GlueJobSourceControlDetails.property.owner">Owner</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_job#owner GlueJob#owner}. |
-| <code><a href="#@cdktf/provider-aws.glueJob.GlueJobSourceControlDetails.property.provider">Provider</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_job#provider GlueJob#provider}. |
-| <code><a href="#@cdktf/provider-aws.glueJob.GlueJobSourceControlDetails.property.repository">Repository</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_job#repository GlueJob#repository}. |
+| <code><a href="#@cdktf/provider-aws.glueJob.GlueJobSourceControlDetails.property.authStrategy">AuthStrategy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_job#auth_strategy GlueJob#auth_strategy}. |
+| <code><a href="#@cdktf/provider-aws.glueJob.GlueJobSourceControlDetails.property.authToken">AuthToken</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_job#auth_token GlueJob#auth_token}. |
+| <code><a href="#@cdktf/provider-aws.glueJob.GlueJobSourceControlDetails.property.branch">Branch</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_job#branch GlueJob#branch}. |
+| <code><a href="#@cdktf/provider-aws.glueJob.GlueJobSourceControlDetails.property.folder">Folder</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_job#folder GlueJob#folder}. |
+| <code><a href="#@cdktf/provider-aws.glueJob.GlueJobSourceControlDetails.property.lastCommitId">LastCommitId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_job#last_commit_id GlueJob#last_commit_id}. |
+| <code><a href="#@cdktf/provider-aws.glueJob.GlueJobSourceControlDetails.property.owner">Owner</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_job#owner GlueJob#owner}. |
+| <code><a href="#@cdktf/provider-aws.glueJob.GlueJobSourceControlDetails.property.provider">Provider</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_job#provider GlueJob#provider}. |
+| <code><a href="#@cdktf/provider-aws.glueJob.GlueJobSourceControlDetails.property.repository">Repository</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_job#repository GlueJob#repository}. |
 
 ---
 
@@ -1986,7 +2031,7 @@ AuthStrategy *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_job#auth_strategy GlueJob#auth_strategy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_job#auth_strategy GlueJob#auth_strategy}.
 
 ---
 
@@ -1998,7 +2043,7 @@ AuthToken *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_job#auth_token GlueJob#auth_token}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_job#auth_token GlueJob#auth_token}.
 
 ---
 
@@ -2010,7 +2055,7 @@ Branch *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_job#branch GlueJob#branch}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_job#branch GlueJob#branch}.
 
 ---
 
@@ -2022,7 +2067,7 @@ Folder *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_job#folder GlueJob#folder}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_job#folder GlueJob#folder}.
 
 ---
 
@@ -2034,7 +2079,7 @@ LastCommitId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_job#last_commit_id GlueJob#last_commit_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_job#last_commit_id GlueJob#last_commit_id}.
 
 ---
 
@@ -2046,7 +2091,7 @@ Owner *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_job#owner GlueJob#owner}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_job#owner GlueJob#owner}.
 
 ---
 
@@ -2058,7 +2103,7 @@ Provider *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_job#provider GlueJob#provider}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_job#provider GlueJob#provider}.
 
 ---
 
@@ -2070,7 +2115,7 @@ Repository *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_job#repository GlueJob#repository}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_job#repository GlueJob#repository}.
 
 ---
 
@@ -2081,7 +2126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.glueJob.GlueJobCommandOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/gluejob"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/gluejob"
 
 gluejob.NewGlueJobCommandOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GlueJobCommandOutputReference
 ```
@@ -2439,7 +2484,7 @@ func InternalValue() GlueJobCommand
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.glueJob.GlueJobExecutionPropertyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/gluejob"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/gluejob"
 
 gluejob.NewGlueJobExecutionPropertyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GlueJobExecutionPropertyOutputReference
 ```
@@ -2717,7 +2762,7 @@ func InternalValue() GlueJobExecutionProperty
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.glueJob.GlueJobNotificationPropertyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/gluejob"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/gluejob"
 
 gluejob.NewGlueJobNotificationPropertyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GlueJobNotificationPropertyOutputReference
 ```
@@ -2995,7 +3040,7 @@ func InternalValue() GlueJobNotificationProperty
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.glueJob.GlueJobSourceControlDetailsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/gluejob"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/gluejob"
 
 gluejob.NewGlueJobSourceControlDetailsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GlueJobSourceControlDetailsOutputReference
 ```

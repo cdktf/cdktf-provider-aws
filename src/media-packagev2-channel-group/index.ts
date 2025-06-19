@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/media_packagev2_channel_group
+// https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/media_packagev2_channel_group
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,21 +13,27 @@ import * as cdktf from 'cdktf';
 
 export interface MediaPackagev2ChannelGroupConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/media_packagev2_channel_group#description MediaPackagev2ChannelGroup#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/media_packagev2_channel_group#description MediaPackagev2ChannelGroup#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/media_packagev2_channel_group#name MediaPackagev2ChannelGroup#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/media_packagev2_channel_group#name MediaPackagev2ChannelGroup#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/media_packagev2_channel_group#tags MediaPackagev2ChannelGroup#tags}
+  * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/media_packagev2_channel_group#region MediaPackagev2ChannelGroup#region}
+  */
+  readonly region?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/media_packagev2_channel_group#tags MediaPackagev2ChannelGroup#tags}
   */
   readonly tags?: { [key: string]: string };
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/media_packagev2_channel_group aws_media_packagev2_channel_group}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/media_packagev2_channel_group aws_media_packagev2_channel_group}
 */
 export class MediaPackagev2ChannelGroup extends cdktf.TerraformResource {
 
@@ -43,7 +49,7 @@ export class MediaPackagev2ChannelGroup extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a MediaPackagev2ChannelGroup resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the MediaPackagev2ChannelGroup to import
-  * @param importFromId The id of the existing MediaPackagev2ChannelGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/media_packagev2_channel_group#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing MediaPackagev2ChannelGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/media_packagev2_channel_group#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the MediaPackagev2ChannelGroup to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -55,7 +61,7 @@ export class MediaPackagev2ChannelGroup extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/media_packagev2_channel_group aws_media_packagev2_channel_group} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/media_packagev2_channel_group aws_media_packagev2_channel_group} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -66,8 +72,8 @@ export class MediaPackagev2ChannelGroup extends cdktf.TerraformResource {
       terraformResourceType: 'aws_media_packagev2_channel_group',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.100.0',
-        providerVersionConstraint: '~> 5.0'
+        providerVersion: '6.0.0',
+        providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -79,6 +85,7 @@ export class MediaPackagev2ChannelGroup extends cdktf.TerraformResource {
     });
     this._description = config.description;
     this._name = config.name;
+    this._region = config.region;
     this._tags = config.tags;
   }
 
@@ -125,6 +132,22 @@ export class MediaPackagev2ChannelGroup extends cdktf.TerraformResource {
     return this._name;
   }
 
+  // region - computed: true, optional: true, required: false
+  private _region?: string; 
+  public get region() {
+    return this.getStringAttribute('region');
+  }
+  public set region(value: string) {
+    this._region = value;
+  }
+  public resetRegion() {
+    this._region = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get regionInput() {
+    return this._region;
+  }
+
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string }; 
   public get tags() {
@@ -155,6 +178,7 @@ export class MediaPackagev2ChannelGroup extends cdktf.TerraformResource {
     return {
       description: cdktf.stringToTerraform(this._description),
       name: cdktf.stringToTerraform(this._name),
+      region: cdktf.stringToTerraform(this._region),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
     };
   }
@@ -169,6 +193,12 @@ export class MediaPackagev2ChannelGroup extends cdktf.TerraformResource {
       },
       name: {
         value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      region: {
+        value: cdktf.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -4,7 +4,7 @@
 
 ### DataAwsEksAccessEntry <a name="DataAwsEksAccessEntry" id="@cdktf/provider-aws.dataAwsEksAccessEntry.DataAwsEksAccessEntry"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/eks_access_entry aws_eks_access_entry}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/eks_access_entry aws_eks_access_entry}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEksAccessEntry.DataAwsEksAccessEntry.Initializer"></a>
 
@@ -68,6 +68,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.dataAwsEksAccessEntry.DataAwsEksAccessEntry.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsEksAccessEntry.DataAwsEksAccessEntry.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsEksAccessEntry.DataAwsEksAccessEntry.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsEksAccessEntry.DataAwsEksAccessEntry.resetRegion">resetRegion</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsEksAccessEntry.DataAwsEksAccessEntry.resetTags">resetTags</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsEksAccessEntry.DataAwsEksAccessEntry.resetTagsAll">resetTagsAll</a></code> | *No description.* |
 
@@ -271,6 +272,12 @@ public interpolationForAttribute(terraformAttribute: string): IResolvable
 public resetId(): void
 ```
 
+##### `resetRegion` <a name="resetRegion" id="@cdktf/provider-aws.dataAwsEksAccessEntry.DataAwsEksAccessEntry.resetRegion"></a>
+
+```typescript
+public resetRegion(): void
+```
+
 ##### `resetTags` <a name="resetTags" id="@cdktf/provider-aws.dataAwsEksAccessEntry.DataAwsEksAccessEntry.resetTags"></a>
 
 ```typescript
@@ -386,7 +393,7 @@ The construct id used in the generated config for the DataAwsEksAccessEntry to i
 
 The id of the existing DataAwsEksAccessEntry that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/eks_access_entry#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/eks_access_entry#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -423,11 +430,13 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.dataAwsEksAccessEntry.DataAwsEksAccessEntry.property.clusterNameInput">clusterNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsEksAccessEntry.DataAwsEksAccessEntry.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsEksAccessEntry.DataAwsEksAccessEntry.property.principalArnInput">principalArnInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsEksAccessEntry.DataAwsEksAccessEntry.property.regionInput">regionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsEksAccessEntry.DataAwsEksAccessEntry.property.tagsAllInput">tagsAllInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsEksAccessEntry.DataAwsEksAccessEntry.property.tagsInput">tagsInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsEksAccessEntry.DataAwsEksAccessEntry.property.clusterName">clusterName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsEksAccessEntry.DataAwsEksAccessEntry.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsEksAccessEntry.DataAwsEksAccessEntry.property.principalArn">principalArn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsEksAccessEntry.DataAwsEksAccessEntry.property.region">region</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsEksAccessEntry.DataAwsEksAccessEntry.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsEksAccessEntry.DataAwsEksAccessEntry.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 
@@ -645,6 +654,16 @@ public readonly principalArnInput: string;
 
 ---
 
+##### `regionInput`<sup>Optional</sup> <a name="regionInput" id="@cdktf/provider-aws.dataAwsEksAccessEntry.DataAwsEksAccessEntry.property.regionInput"></a>
+
+```typescript
+public readonly regionInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `tagsAllInput`<sup>Optional</sup> <a name="tagsAllInput" id="@cdktf/provider-aws.dataAwsEksAccessEntry.DataAwsEksAccessEntry.property.tagsAllInput"></a>
 
 ```typescript
@@ -689,6 +708,16 @@ public readonly id: string;
 
 ```typescript
 public readonly principalArn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `region`<sup>Required</sup> <a name="region" id="@cdktf/provider-aws.dataAwsEksAccessEntry.DataAwsEksAccessEntry.property.region"></a>
+
+```typescript
+public readonly region: string;
 ```
 
 - *Type:* string
@@ -756,11 +785,12 @@ const dataAwsEksAccessEntryConfig: dataAwsEksAccessEntry.DataAwsEksAccessEntryCo
 | <code><a href="#@cdktf/provider-aws.dataAwsEksAccessEntry.DataAwsEksAccessEntryConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsEksAccessEntry.DataAwsEksAccessEntryConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsEksAccessEntry.DataAwsEksAccessEntryConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsEksAccessEntry.DataAwsEksAccessEntryConfig.property.clusterName">clusterName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/eks_access_entry#cluster_name DataAwsEksAccessEntry#cluster_name}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsEksAccessEntry.DataAwsEksAccessEntryConfig.property.principalArn">principalArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/eks_access_entry#principal_arn DataAwsEksAccessEntry#principal_arn}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsEksAccessEntry.DataAwsEksAccessEntryConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/eks_access_entry#id DataAwsEksAccessEntry#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsEksAccessEntry.DataAwsEksAccessEntryConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/eks_access_entry#tags DataAwsEksAccessEntry#tags}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsEksAccessEntry.DataAwsEksAccessEntryConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/eks_access_entry#tags_all DataAwsEksAccessEntry#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsEksAccessEntry.DataAwsEksAccessEntryConfig.property.clusterName">clusterName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/eks_access_entry#cluster_name DataAwsEksAccessEntry#cluster_name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsEksAccessEntry.DataAwsEksAccessEntryConfig.property.principalArn">principalArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/eks_access_entry#principal_arn DataAwsEksAccessEntry#principal_arn}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsEksAccessEntry.DataAwsEksAccessEntryConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/eks_access_entry#id DataAwsEksAccessEntry#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsEksAccessEntry.DataAwsEksAccessEntryConfig.property.region">region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
+| <code><a href="#@cdktf/provider-aws.dataAwsEksAccessEntry.DataAwsEksAccessEntryConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/eks_access_entry#tags DataAwsEksAccessEntry#tags}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsEksAccessEntry.DataAwsEksAccessEntryConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/eks_access_entry#tags_all DataAwsEksAccessEntry#tags_all}. |
 
 ---
 
@@ -842,7 +872,7 @@ public readonly clusterName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/eks_access_entry#cluster_name DataAwsEksAccessEntry#cluster_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/eks_access_entry#cluster_name DataAwsEksAccessEntry#cluster_name}.
 
 ---
 
@@ -854,7 +884,7 @@ public readonly principalArn: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/eks_access_entry#principal_arn DataAwsEksAccessEntry#principal_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/eks_access_entry#principal_arn DataAwsEksAccessEntry#principal_arn}.
 
 ---
 
@@ -866,10 +896,24 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/eks_access_entry#id DataAwsEksAccessEntry#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/eks_access_entry#id DataAwsEksAccessEntry#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdktf/provider-aws.dataAwsEksAccessEntry.DataAwsEksAccessEntryConfig.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/eks_access_entry#region DataAwsEksAccessEntry#region}
 
 ---
 
@@ -881,7 +925,7 @@ public readonly tags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/eks_access_entry#tags DataAwsEksAccessEntry#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/eks_access_entry#tags DataAwsEksAccessEntry#tags}.
 
 ---
 
@@ -893,7 +937,7 @@ public readonly tagsAll: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/eks_access_entry#tags_all DataAwsEksAccessEntry#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/eks_access_entry#tags_all DataAwsEksAccessEntry#tags_all}.
 
 ---
 

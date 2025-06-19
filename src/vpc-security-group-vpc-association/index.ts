@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/vpc_security_group_vpc_association
+// https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/vpc_security_group_vpc_association
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,17 +13,23 @@ import * as cdktf from 'cdktf';
 
 export interface VpcSecurityGroupVpcAssociationConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/vpc_security_group_vpc_association#security_group_id VpcSecurityGroupVpcAssociation#security_group_id}
+  * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/vpc_security_group_vpc_association#region VpcSecurityGroupVpcAssociation#region}
+  */
+  readonly region?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/vpc_security_group_vpc_association#security_group_id VpcSecurityGroupVpcAssociation#security_group_id}
   */
   readonly securityGroupId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/vpc_security_group_vpc_association#vpc_id VpcSecurityGroupVpcAssociation#vpc_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/vpc_security_group_vpc_association#vpc_id VpcSecurityGroupVpcAssociation#vpc_id}
   */
   readonly vpcId: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/vpc_security_group_vpc_association#timeouts VpcSecurityGroupVpcAssociation#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/vpc_security_group_vpc_association#timeouts VpcSecurityGroupVpcAssociation#timeouts}
   */
   readonly timeouts?: VpcSecurityGroupVpcAssociationTimeouts;
 }
@@ -31,13 +37,13 @@ export interface VpcSecurityGroupVpcAssociationTimeouts {
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/vpc_security_group_vpc_association#create VpcSecurityGroupVpcAssociation#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/vpc_security_group_vpc_association#create VpcSecurityGroupVpcAssociation#create}
   */
   readonly create?: string;
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/vpc_security_group_vpc_association#delete VpcSecurityGroupVpcAssociation#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/vpc_security_group_vpc_association#delete VpcSecurityGroupVpcAssociation#delete}
   */
   readonly delete?: string;
 }
@@ -160,7 +166,7 @@ export class VpcSecurityGroupVpcAssociationTimeoutsOutputReference extends cdktf
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/vpc_security_group_vpc_association aws_vpc_security_group_vpc_association}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/vpc_security_group_vpc_association aws_vpc_security_group_vpc_association}
 */
 export class VpcSecurityGroupVpcAssociation extends cdktf.TerraformResource {
 
@@ -176,7 +182,7 @@ export class VpcSecurityGroupVpcAssociation extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a VpcSecurityGroupVpcAssociation resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the VpcSecurityGroupVpcAssociation to import
-  * @param importFromId The id of the existing VpcSecurityGroupVpcAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/vpc_security_group_vpc_association#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing VpcSecurityGroupVpcAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/vpc_security_group_vpc_association#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the VpcSecurityGroupVpcAssociation to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -188,7 +194,7 @@ export class VpcSecurityGroupVpcAssociation extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/vpc_security_group_vpc_association aws_vpc_security_group_vpc_association} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/vpc_security_group_vpc_association aws_vpc_security_group_vpc_association} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -199,8 +205,8 @@ export class VpcSecurityGroupVpcAssociation extends cdktf.TerraformResource {
       terraformResourceType: 'aws_vpc_security_group_vpc_association',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.100.0',
-        providerVersionConstraint: '~> 5.0'
+        providerVersion: '6.0.0',
+        providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -210,6 +216,7 @@ export class VpcSecurityGroupVpcAssociation extends cdktf.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
+    this._region = config.region;
     this._securityGroupId = config.securityGroupId;
     this._vpcId = config.vpcId;
     this._timeouts.internalValue = config.timeouts;
@@ -218,6 +225,22 @@ export class VpcSecurityGroupVpcAssociation extends cdktf.TerraformResource {
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // region - computed: true, optional: true, required: false
+  private _region?: string; 
+  public get region() {
+    return this.getStringAttribute('region');
+  }
+  public set region(value: string) {
+    this._region = value;
+  }
+  public resetRegion() {
+    this._region = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get regionInput() {
+    return this._region;
+  }
 
   // security_group_id - computed: false, optional: false, required: true
   private _securityGroupId?: string; 
@@ -272,6 +295,7 @@ export class VpcSecurityGroupVpcAssociation extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      region: cdktf.stringToTerraform(this._region),
       security_group_id: cdktf.stringToTerraform(this._securityGroupId),
       vpc_id: cdktf.stringToTerraform(this._vpcId),
       timeouts: vpcSecurityGroupVpcAssociationTimeoutsToTerraform(this._timeouts.internalValue),
@@ -280,6 +304,12 @@ export class VpcSecurityGroupVpcAssociation extends cdktf.TerraformResource {
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
+      region: {
+        value: cdktf.stringToHclTerraform(this._region),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
       security_group_id: {
         value: cdktf.stringToHclTerraform(this._securityGroupId),
         isBlock: false,

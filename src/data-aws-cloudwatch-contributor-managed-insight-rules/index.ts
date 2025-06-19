@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/cloudwatch_contributor_managed_insight_rules
+// https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/cloudwatch_contributor_managed_insight_rules
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,13 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsCloudwatchContributorManagedInsightRulesConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/cloudwatch_contributor_managed_insight_rules#resource_arn DataAwsCloudwatchContributorManagedInsightRules#resource_arn}
+  * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/cloudwatch_contributor_managed_insight_rules#region DataAwsCloudwatchContributorManagedInsightRules#region}
+  */
+  readonly region?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/cloudwatch_contributor_managed_insight_rules#resource_arn DataAwsCloudwatchContributorManagedInsightRules#resource_arn}
   */
   readonly resourceArn: string;
 }
@@ -185,7 +191,7 @@ export class DataAwsCloudwatchContributorManagedInsightRulesManagedRulesList ext
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/cloudwatch_contributor_managed_insight_rules aws_cloudwatch_contributor_managed_insight_rules}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/cloudwatch_contributor_managed_insight_rules aws_cloudwatch_contributor_managed_insight_rules}
 */
 export class DataAwsCloudwatchContributorManagedInsightRules extends cdktf.TerraformDataSource {
 
@@ -201,7 +207,7 @@ export class DataAwsCloudwatchContributorManagedInsightRules extends cdktf.Terra
   * Generates CDKTF code for importing a DataAwsCloudwatchContributorManagedInsightRules resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsCloudwatchContributorManagedInsightRules to import
-  * @param importFromId The id of the existing DataAwsCloudwatchContributorManagedInsightRules that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/cloudwatch_contributor_managed_insight_rules#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsCloudwatchContributorManagedInsightRules that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/cloudwatch_contributor_managed_insight_rules#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsCloudwatchContributorManagedInsightRules to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -213,7 +219,7 @@ export class DataAwsCloudwatchContributorManagedInsightRules extends cdktf.Terra
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/cloudwatch_contributor_managed_insight_rules aws_cloudwatch_contributor_managed_insight_rules} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/cloudwatch_contributor_managed_insight_rules aws_cloudwatch_contributor_managed_insight_rules} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -224,8 +230,8 @@ export class DataAwsCloudwatchContributorManagedInsightRules extends cdktf.Terra
       terraformResourceType: 'aws_cloudwatch_contributor_managed_insight_rules',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.100.0',
-        providerVersionConstraint: '~> 5.0'
+        providerVersion: '6.0.0',
+        providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -235,6 +241,7 @@ export class DataAwsCloudwatchContributorManagedInsightRules extends cdktf.Terra
       connection: config.connection,
       forEach: config.forEach
     });
+    this._region = config.region;
     this._resourceArn = config.resourceArn;
   }
 
@@ -246,6 +253,22 @@ export class DataAwsCloudwatchContributorManagedInsightRules extends cdktf.Terra
   private _managedRules = new DataAwsCloudwatchContributorManagedInsightRulesManagedRulesList(this, "managed_rules", false);
   public get managedRules() {
     return this._managedRules;
+  }
+
+  // region - computed: true, optional: true, required: false
+  private _region?: string; 
+  public get region() {
+    return this.getStringAttribute('region');
+  }
+  public set region(value: string) {
+    this._region = value;
+  }
+  public resetRegion() {
+    this._region = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get regionInput() {
+    return this._region;
   }
 
   // resource_arn - computed: false, optional: false, required: true
@@ -267,12 +290,19 @@ export class DataAwsCloudwatchContributorManagedInsightRules extends cdktf.Terra
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      region: cdktf.stringToTerraform(this._region),
       resource_arn: cdktf.stringToTerraform(this._resourceArn),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
+      region: {
+        value: cdktf.stringToHclTerraform(this._region),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
       resource_arn: {
         value: cdktf.stringToHclTerraform(this._resourceArn),
         isBlock: false,

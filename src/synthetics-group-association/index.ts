@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/synthetics_group_association
+// https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/synthetics_group_association
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,24 +13,30 @@ import * as cdktf from 'cdktf';
 
 export interface SyntheticsGroupAssociationConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/synthetics_group_association#canary_arn SyntheticsGroupAssociation#canary_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/synthetics_group_association#canary_arn SyntheticsGroupAssociation#canary_arn}
   */
   readonly canaryArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/synthetics_group_association#group_name SyntheticsGroupAssociation#group_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/synthetics_group_association#group_name SyntheticsGroupAssociation#group_name}
   */
   readonly groupName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/synthetics_group_association#id SyntheticsGroupAssociation#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/synthetics_group_association#id SyntheticsGroupAssociation#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
+  /**
+  * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/synthetics_group_association#region SyntheticsGroupAssociation#region}
+  */
+  readonly region?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/synthetics_group_association aws_synthetics_group_association}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/synthetics_group_association aws_synthetics_group_association}
 */
 export class SyntheticsGroupAssociation extends cdktf.TerraformResource {
 
@@ -46,7 +52,7 @@ export class SyntheticsGroupAssociation extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a SyntheticsGroupAssociation resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SyntheticsGroupAssociation to import
-  * @param importFromId The id of the existing SyntheticsGroupAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/synthetics_group_association#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing SyntheticsGroupAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/synthetics_group_association#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SyntheticsGroupAssociation to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -58,7 +64,7 @@ export class SyntheticsGroupAssociation extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/synthetics_group_association aws_synthetics_group_association} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/synthetics_group_association aws_synthetics_group_association} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -69,8 +75,8 @@ export class SyntheticsGroupAssociation extends cdktf.TerraformResource {
       terraformResourceType: 'aws_synthetics_group_association',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.100.0',
-        providerVersionConstraint: '~> 5.0'
+        providerVersion: '6.0.0',
+        providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -83,6 +89,7 @@ export class SyntheticsGroupAssociation extends cdktf.TerraformResource {
     this._canaryArn = config.canaryArn;
     this._groupName = config.groupName;
     this._id = config.id;
+    this._region = config.region;
   }
 
   // ==========
@@ -141,6 +148,22 @@ export class SyntheticsGroupAssociation extends cdktf.TerraformResource {
     return this._id;
   }
 
+  // region - computed: true, optional: true, required: false
+  private _region?: string; 
+  public get region() {
+    return this.getStringAttribute('region');
+  }
+  public set region(value: string) {
+    this._region = value;
+  }
+  public resetRegion() {
+    this._region = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get regionInput() {
+    return this._region;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -150,6 +173,7 @@ export class SyntheticsGroupAssociation extends cdktf.TerraformResource {
       canary_arn: cdktf.stringToTerraform(this._canaryArn),
       group_name: cdktf.stringToTerraform(this._groupName),
       id: cdktf.stringToTerraform(this._id),
+      region: cdktf.stringToTerraform(this._region),
     };
   }
 
@@ -169,6 +193,12 @@ export class SyntheticsGroupAssociation extends cdktf.TerraformResource {
       },
       id: {
         value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      region: {
+        value: cdktf.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

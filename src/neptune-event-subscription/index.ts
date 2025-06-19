@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/neptune_event_subscription
+// https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/neptune_event_subscription
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,66 +13,72 @@ import * as cdktf from 'cdktf';
 
 export interface NeptuneEventSubscriptionConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/neptune_event_subscription#enabled NeptuneEventSubscription#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/neptune_event_subscription#enabled NeptuneEventSubscription#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/neptune_event_subscription#event_categories NeptuneEventSubscription#event_categories}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/neptune_event_subscription#event_categories NeptuneEventSubscription#event_categories}
   */
   readonly eventCategories?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/neptune_event_subscription#id NeptuneEventSubscription#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/neptune_event_subscription#id NeptuneEventSubscription#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/neptune_event_subscription#name NeptuneEventSubscription#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/neptune_event_subscription#name NeptuneEventSubscription#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/neptune_event_subscription#name_prefix NeptuneEventSubscription#name_prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/neptune_event_subscription#name_prefix NeptuneEventSubscription#name_prefix}
   */
   readonly namePrefix?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/neptune_event_subscription#sns_topic_arn NeptuneEventSubscription#sns_topic_arn}
+  * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/neptune_event_subscription#region NeptuneEventSubscription#region}
+  */
+  readonly region?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/neptune_event_subscription#sns_topic_arn NeptuneEventSubscription#sns_topic_arn}
   */
   readonly snsTopicArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/neptune_event_subscription#source_ids NeptuneEventSubscription#source_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/neptune_event_subscription#source_ids NeptuneEventSubscription#source_ids}
   */
   readonly sourceIds?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/neptune_event_subscription#source_type NeptuneEventSubscription#source_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/neptune_event_subscription#source_type NeptuneEventSubscription#source_type}
   */
   readonly sourceType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/neptune_event_subscription#tags NeptuneEventSubscription#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/neptune_event_subscription#tags NeptuneEventSubscription#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/neptune_event_subscription#tags_all NeptuneEventSubscription#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/neptune_event_subscription#tags_all NeptuneEventSubscription#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/neptune_event_subscription#timeouts NeptuneEventSubscription#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/neptune_event_subscription#timeouts NeptuneEventSubscription#timeouts}
   */
   readonly timeouts?: NeptuneEventSubscriptionTimeouts;
 }
 export interface NeptuneEventSubscriptionTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/neptune_event_subscription#create NeptuneEventSubscription#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/neptune_event_subscription#create NeptuneEventSubscription#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/neptune_event_subscription#delete NeptuneEventSubscription#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/neptune_event_subscription#delete NeptuneEventSubscription#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/neptune_event_subscription#update NeptuneEventSubscription#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/neptune_event_subscription#update NeptuneEventSubscription#update}
   */
   readonly update?: string;
 }
@@ -224,7 +230,7 @@ export class NeptuneEventSubscriptionTimeoutsOutputReference extends cdktf.Compl
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/neptune_event_subscription aws_neptune_event_subscription}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/neptune_event_subscription aws_neptune_event_subscription}
 */
 export class NeptuneEventSubscription extends cdktf.TerraformResource {
 
@@ -240,7 +246,7 @@ export class NeptuneEventSubscription extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a NeptuneEventSubscription resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NeptuneEventSubscription to import
-  * @param importFromId The id of the existing NeptuneEventSubscription that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/neptune_event_subscription#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing NeptuneEventSubscription that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/neptune_event_subscription#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NeptuneEventSubscription to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -252,7 +258,7 @@ export class NeptuneEventSubscription extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/neptune_event_subscription aws_neptune_event_subscription} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/neptune_event_subscription aws_neptune_event_subscription} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -263,8 +269,8 @@ export class NeptuneEventSubscription extends cdktf.TerraformResource {
       terraformResourceType: 'aws_neptune_event_subscription',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.100.0',
-        providerVersionConstraint: '~> 5.0'
+        providerVersion: '6.0.0',
+        providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -279,6 +285,7 @@ export class NeptuneEventSubscription extends cdktf.TerraformResource {
     this._id = config.id;
     this._name = config.name;
     this._namePrefix = config.namePrefix;
+    this._region = config.region;
     this._snsTopicArn = config.snsTopicArn;
     this._sourceIds = config.sourceIds;
     this._sourceType = config.sourceType;
@@ -379,6 +386,22 @@ export class NeptuneEventSubscription extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get namePrefixInput() {
     return this._namePrefix;
+  }
+
+  // region - computed: true, optional: true, required: false
+  private _region?: string; 
+  public get region() {
+    return this.getStringAttribute('region');
+  }
+  public set region(value: string) {
+    this._region = value;
+  }
+  public resetRegion() {
+    this._region = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get regionInput() {
+    return this._region;
   }
 
   // sns_topic_arn - computed: false, optional: false, required: true
@@ -485,6 +508,7 @@ export class NeptuneEventSubscription extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       name_prefix: cdktf.stringToTerraform(this._namePrefix),
+      region: cdktf.stringToTerraform(this._region),
       sns_topic_arn: cdktf.stringToTerraform(this._snsTopicArn),
       source_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._sourceIds),
       source_type: cdktf.stringToTerraform(this._sourceType),
@@ -522,6 +546,12 @@ export class NeptuneEventSubscription extends cdktf.TerraformResource {
       },
       name_prefix: {
         value: cdktf.stringToHclTerraform(this._namePrefix),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      region: {
+        value: cdktf.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

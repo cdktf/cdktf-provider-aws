@@ -4,7 +4,7 @@
 
 ### SesActiveReceiptRuleSet <a name="SesActiveReceiptRuleSet" id="@cdktf/provider-aws.sesActiveReceiptRuleSet.SesActiveReceiptRuleSet"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ses_active_receipt_rule_set aws_ses_active_receipt_rule_set}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ses_active_receipt_rule_set aws_ses_active_receipt_rule_set}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sesActiveReceiptRuleSet.SesActiveReceiptRuleSet.Initializer"></a>
 
@@ -74,6 +74,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.sesActiveReceiptRuleSet.SesActiveReceiptRuleSet.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-aws.sesActiveReceiptRuleSet.SesActiveReceiptRuleSet.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-aws.sesActiveReceiptRuleSet.SesActiveReceiptRuleSet.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.sesActiveReceiptRuleSet.SesActiveReceiptRuleSet.resetRegion">ResetRegion</a></code> | *No description.* |
 
 ---
 
@@ -371,6 +372,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 private void ResetId()
 ```
 
+##### `ResetRegion` <a name="ResetRegion" id="@cdktf/provider-aws.sesActiveReceiptRuleSet.SesActiveReceiptRuleSet.resetRegion"></a>
+
+```csharp
+private void ResetRegion()
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -474,7 +481,7 @@ The construct id used in the generated config for the SesActiveReceiptRuleSet to
 
 The id of the existing SesActiveReceiptRuleSet that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ses_active_receipt_rule_set#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ses_active_receipt_rule_set#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -506,8 +513,10 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.sesActiveReceiptRuleSet.SesActiveReceiptRuleSet.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.sesActiveReceiptRuleSet.SesActiveReceiptRuleSet.property.arn">Arn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.sesActiveReceiptRuleSet.SesActiveReceiptRuleSet.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.sesActiveReceiptRuleSet.SesActiveReceiptRuleSet.property.regionInput">RegionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.sesActiveReceiptRuleSet.SesActiveReceiptRuleSet.property.ruleSetNameInput">RuleSetNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.sesActiveReceiptRuleSet.SesActiveReceiptRuleSet.property.id">Id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.sesActiveReceiptRuleSet.SesActiveReceiptRuleSet.property.region">Region</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.sesActiveReceiptRuleSet.SesActiveReceiptRuleSet.property.ruleSetName">RuleSetName</a></code> | <code>string</code> | *No description.* |
 
 ---
@@ -674,6 +683,16 @@ public string IdInput { get; }
 
 ---
 
+##### `RegionInput`<sup>Optional</sup> <a name="RegionInput" id="@cdktf/provider-aws.sesActiveReceiptRuleSet.SesActiveReceiptRuleSet.property.regionInput"></a>
+
+```csharp
+public string RegionInput { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `RuleSetNameInput`<sup>Optional</sup> <a name="RuleSetNameInput" id="@cdktf/provider-aws.sesActiveReceiptRuleSet.SesActiveReceiptRuleSet.property.ruleSetNameInput"></a>
 
 ```csharp
@@ -688,6 +707,16 @@ public string RuleSetNameInput { get; }
 
 ```csharp
 public string Id { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Region`<sup>Required</sup> <a name="Region" id="@cdktf/provider-aws.sesActiveReceiptRuleSet.SesActiveReceiptRuleSet.property.region"></a>
+
+```csharp
+public string Region { get; }
 ```
 
 - *Type:* string
@@ -740,7 +769,8 @@ new SesActiveReceiptRuleSetConfig {
     TerraformProvider Provider = null,
     object[] Provisioners = null,
     string RuleSetName,
-    string Id = null
+    string Id = null,
+    string Region = null
 };
 ```
 
@@ -755,8 +785,9 @@ new SesActiveReceiptRuleSetConfig {
 | <code><a href="#@cdktf/provider-aws.sesActiveReceiptRuleSet.SesActiveReceiptRuleSetConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.sesActiveReceiptRuleSet.SesActiveReceiptRuleSetConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.sesActiveReceiptRuleSet.SesActiveReceiptRuleSetConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.sesActiveReceiptRuleSet.SesActiveReceiptRuleSetConfig.property.ruleSetName">RuleSetName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ses_active_receipt_rule_set#rule_set_name SesActiveReceiptRuleSet#rule_set_name}. |
-| <code><a href="#@cdktf/provider-aws.sesActiveReceiptRuleSet.SesActiveReceiptRuleSetConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ses_active_receipt_rule_set#id SesActiveReceiptRuleSet#id}. |
+| <code><a href="#@cdktf/provider-aws.sesActiveReceiptRuleSet.SesActiveReceiptRuleSetConfig.property.ruleSetName">RuleSetName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ses_active_receipt_rule_set#rule_set_name SesActiveReceiptRuleSet#rule_set_name}. |
+| <code><a href="#@cdktf/provider-aws.sesActiveReceiptRuleSet.SesActiveReceiptRuleSetConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ses_active_receipt_rule_set#id SesActiveReceiptRuleSet#id}. |
+| <code><a href="#@cdktf/provider-aws.sesActiveReceiptRuleSet.SesActiveReceiptRuleSetConfig.property.region">Region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
 
@@ -838,7 +869,7 @@ public string RuleSetName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ses_active_receipt_rule_set#rule_set_name SesActiveReceiptRuleSet#rule_set_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ses_active_receipt_rule_set#rule_set_name SesActiveReceiptRuleSet#rule_set_name}.
 
 ---
 
@@ -850,10 +881,24 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ses_active_receipt_rule_set#id SesActiveReceiptRuleSet#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ses_active_receipt_rule_set#id SesActiveReceiptRuleSet#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `Region`<sup>Optional</sup> <a name="Region" id="@cdktf/provider-aws.sesActiveReceiptRuleSet.SesActiveReceiptRuleSetConfig.property.region"></a>
+
+```csharp
+public string Region { get; set; }
+```
+
+- *Type:* string
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ses_active_receipt_rule_set#region SesActiveReceiptRuleSet#region}
 
 ---
 

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ssm_parameters_by_path
+// https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ssm_parameters_by_path
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,28 +13,34 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsSsmParametersByPathConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ssm_parameters_by_path#id DataAwsSsmParametersByPath#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ssm_parameters_by_path#id DataAwsSsmParametersByPath#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ssm_parameters_by_path#path DataAwsSsmParametersByPath#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ssm_parameters_by_path#path DataAwsSsmParametersByPath#path}
   */
   readonly path: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ssm_parameters_by_path#recursive DataAwsSsmParametersByPath#recursive}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ssm_parameters_by_path#recursive DataAwsSsmParametersByPath#recursive}
   */
   readonly recursive?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ssm_parameters_by_path#with_decryption DataAwsSsmParametersByPath#with_decryption}
+  * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ssm_parameters_by_path#region DataAwsSsmParametersByPath#region}
+  */
+  readonly region?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ssm_parameters_by_path#with_decryption DataAwsSsmParametersByPath#with_decryption}
   */
   readonly withDecryption?: boolean | cdktf.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ssm_parameters_by_path aws_ssm_parameters_by_path}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ssm_parameters_by_path aws_ssm_parameters_by_path}
 */
 export class DataAwsSsmParametersByPath extends cdktf.TerraformDataSource {
 
@@ -50,7 +56,7 @@ export class DataAwsSsmParametersByPath extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataAwsSsmParametersByPath resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsSsmParametersByPath to import
-  * @param importFromId The id of the existing DataAwsSsmParametersByPath that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ssm_parameters_by_path#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsSsmParametersByPath that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ssm_parameters_by_path#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsSsmParametersByPath to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -62,7 +68,7 @@ export class DataAwsSsmParametersByPath extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ssm_parameters_by_path aws_ssm_parameters_by_path} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ssm_parameters_by_path aws_ssm_parameters_by_path} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -73,8 +79,8 @@ export class DataAwsSsmParametersByPath extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_ssm_parameters_by_path',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.100.0',
-        providerVersionConstraint: '~> 5.0'
+        providerVersion: '6.0.0',
+        providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -87,6 +93,7 @@ export class DataAwsSsmParametersByPath extends cdktf.TerraformDataSource {
     this._id = config.id;
     this._path = config.path;
     this._recursive = config.recursive;
+    this._region = config.region;
     this._withDecryption = config.withDecryption;
   }
 
@@ -149,6 +156,22 @@ export class DataAwsSsmParametersByPath extends cdktf.TerraformDataSource {
     return this._recursive;
   }
 
+  // region - computed: true, optional: true, required: false
+  private _region?: string; 
+  public get region() {
+    return this.getStringAttribute('region');
+  }
+  public set region(value: string) {
+    this._region = value;
+  }
+  public resetRegion() {
+    this._region = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get regionInput() {
+    return this._region;
+  }
+
   // types - computed: true, optional: false, required: false
   public get types() {
     return this.getListAttribute('types');
@@ -184,6 +207,7 @@ export class DataAwsSsmParametersByPath extends cdktf.TerraformDataSource {
       id: cdktf.stringToTerraform(this._id),
       path: cdktf.stringToTerraform(this._path),
       recursive: cdktf.booleanToTerraform(this._recursive),
+      region: cdktf.stringToTerraform(this._region),
       with_decryption: cdktf.booleanToTerraform(this._withDecryption),
     };
   }
@@ -207,6 +231,12 @@ export class DataAwsSsmParametersByPath extends cdktf.TerraformDataSource {
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
+      },
+      region: {
+        value: cdktf.stringToHclTerraform(this._region),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
       },
       with_decryption: {
         value: cdktf.booleanToHclTerraform(this._withDecryption),

@@ -4,12 +4,12 @@
 
 ### MediaStoreContainer <a name="MediaStoreContainer" id="@cdktf/provider-aws.mediaStoreContainer.MediaStoreContainer"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/media_store_container aws_media_store_container}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/media_store_container aws_media_store_container}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.mediaStoreContainer.MediaStoreContainer.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/mediastorecontainer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/mediastorecontainer"
 
 mediastorecontainer.NewMediaStoreContainer(scope Construct, id *string, config MediaStoreContainerConfig) MediaStoreContainer
 ```
@@ -74,6 +74,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.mediaStoreContainer.MediaStoreContainer.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-aws.mediaStoreContainer.MediaStoreContainer.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-aws.mediaStoreContainer.MediaStoreContainer.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.mediaStoreContainer.MediaStoreContainer.resetRegion">ResetRegion</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.mediaStoreContainer.MediaStoreContainer.resetTags">ResetTags</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.mediaStoreContainer.MediaStoreContainer.resetTagsAll">ResetTagsAll</a></code> | *No description.* |
 
@@ -373,6 +374,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 func ResetId()
 ```
 
+##### `ResetRegion` <a name="ResetRegion" id="@cdktf/provider-aws.mediaStoreContainer.MediaStoreContainer.resetRegion"></a>
+
+```go
+func ResetRegion()
+```
+
 ##### `ResetTags` <a name="ResetTags" id="@cdktf/provider-aws.mediaStoreContainer.MediaStoreContainer.resetTags"></a>
 
 ```go
@@ -399,7 +406,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.mediaStoreContainer.MediaStoreContainer.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/mediastorecontainer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/mediastorecontainer"
 
 mediastorecontainer.MediaStoreContainer_IsConstruct(x interface{}) *bool
 ```
@@ -431,7 +438,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.mediaStoreContainer.MediaStoreContainer.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/mediastorecontainer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/mediastorecontainer"
 
 mediastorecontainer.MediaStoreContainer_IsTerraformElement(x interface{}) *bool
 ```
@@ -445,7 +452,7 @@ mediastorecontainer.MediaStoreContainer_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.mediaStoreContainer.MediaStoreContainer.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/mediastorecontainer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/mediastorecontainer"
 
 mediastorecontainer.MediaStoreContainer_IsTerraformResource(x interface{}) *bool
 ```
@@ -459,7 +466,7 @@ mediastorecontainer.MediaStoreContainer_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.mediaStoreContainer.MediaStoreContainer.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/mediastorecontainer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/mediastorecontainer"
 
 mediastorecontainer.MediaStoreContainer_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -488,7 +495,7 @@ The construct id used in the generated config for the MediaStoreContainer to imp
 
 The id of the existing MediaStoreContainer that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/media_store_container#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/media_store_container#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -522,10 +529,12 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.mediaStoreContainer.MediaStoreContainer.property.endpoint">Endpoint</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.mediaStoreContainer.MediaStoreContainer.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.mediaStoreContainer.MediaStoreContainer.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.mediaStoreContainer.MediaStoreContainer.property.regionInput">RegionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.mediaStoreContainer.MediaStoreContainer.property.tagsAllInput">TagsAllInput</a></code> | <code>*map[string]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.mediaStoreContainer.MediaStoreContainer.property.tagsInput">TagsInput</a></code> | <code>*map[string]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.mediaStoreContainer.MediaStoreContainer.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.mediaStoreContainer.MediaStoreContainer.property.name">Name</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.mediaStoreContainer.MediaStoreContainer.property.region">Region</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.mediaStoreContainer.MediaStoreContainer.property.tags">Tags</a></code> | <code>*map[string]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.mediaStoreContainer.MediaStoreContainer.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | *No description.* |
 
@@ -713,6 +722,16 @@ func NameInput() *string
 
 ---
 
+##### `RegionInput`<sup>Optional</sup> <a name="RegionInput" id="@cdktf/provider-aws.mediaStoreContainer.MediaStoreContainer.property.regionInput"></a>
+
+```go
+func RegionInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `TagsAllInput`<sup>Optional</sup> <a name="TagsAllInput" id="@cdktf/provider-aws.mediaStoreContainer.MediaStoreContainer.property.tagsAllInput"></a>
 
 ```go
@@ -747,6 +766,16 @@ func Id() *string
 
 ```go
 func Name() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Region`<sup>Required</sup> <a name="Region" id="@cdktf/provider-aws.mediaStoreContainer.MediaStoreContainer.property.region"></a>
+
+```go
+func Region() *string
 ```
 
 - *Type:* *string
@@ -798,7 +827,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.mediaStoreContainer.MediaStoreContainerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/mediastorecontainer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/mediastorecontainer"
 
 &mediastorecontainer.MediaStoreContainerConfig {
 	Connection: interface{},
@@ -810,6 +839,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/mediastorecontainer"
 	Provisioners: *[]interface{},
 	Name: *string,
 	Id: *string,
+	Region: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
 }
@@ -826,10 +856,11 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/mediastorecontainer"
 | <code><a href="#@cdktf/provider-aws.mediaStoreContainer.MediaStoreContainerConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.mediaStoreContainer.MediaStoreContainerConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.mediaStoreContainer.MediaStoreContainerConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.mediaStoreContainer.MediaStoreContainerConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/media_store_container#name MediaStoreContainer#name}. |
-| <code><a href="#@cdktf/provider-aws.mediaStoreContainer.MediaStoreContainerConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/media_store_container#id MediaStoreContainer#id}. |
-| <code><a href="#@cdktf/provider-aws.mediaStoreContainer.MediaStoreContainerConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/media_store_container#tags MediaStoreContainer#tags}. |
-| <code><a href="#@cdktf/provider-aws.mediaStoreContainer.MediaStoreContainerConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/media_store_container#tags_all MediaStoreContainer#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.mediaStoreContainer.MediaStoreContainerConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/media_store_container#name MediaStoreContainer#name}. |
+| <code><a href="#@cdktf/provider-aws.mediaStoreContainer.MediaStoreContainerConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/media_store_container#id MediaStoreContainer#id}. |
+| <code><a href="#@cdktf/provider-aws.mediaStoreContainer.MediaStoreContainerConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
+| <code><a href="#@cdktf/provider-aws.mediaStoreContainer.MediaStoreContainerConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/media_store_container#tags MediaStoreContainer#tags}. |
+| <code><a href="#@cdktf/provider-aws.mediaStoreContainer.MediaStoreContainerConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/media_store_container#tags_all MediaStoreContainer#tags_all}. |
 
 ---
 
@@ -911,7 +942,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/media_store_container#name MediaStoreContainer#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/media_store_container#name MediaStoreContainer#name}.
 
 ---
 
@@ -923,10 +954,24 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/media_store_container#id MediaStoreContainer#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/media_store_container#id MediaStoreContainer#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `Region`<sup>Optional</sup> <a name="Region" id="@cdktf/provider-aws.mediaStoreContainer.MediaStoreContainerConfig.property.region"></a>
+
+```go
+Region *string
+```
+
+- *Type:* *string
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/media_store_container#region MediaStoreContainer#region}
 
 ---
 
@@ -938,7 +983,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/media_store_container#tags MediaStoreContainer#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/media_store_container#tags MediaStoreContainer#tags}.
 
 ---
 
@@ -950,7 +995,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/media_store_container#tags_all MediaStoreContainer#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/media_store_container#tags_all MediaStoreContainer#tags_all}.
 
 ---
 

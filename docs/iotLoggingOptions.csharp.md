@@ -4,7 +4,7 @@
 
 ### IotLoggingOptions <a name="IotLoggingOptions" id="@cdktf/provider-aws.iotLoggingOptions.IotLoggingOptions"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/iot_logging_options aws_iot_logging_options}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/iot_logging_options aws_iot_logging_options}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iotLoggingOptions.IotLoggingOptions.Initializer"></a>
 
@@ -75,6 +75,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.iotLoggingOptions.IotLoggingOptions.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-aws.iotLoggingOptions.IotLoggingOptions.resetDisableAllLogs">ResetDisableAllLogs</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotLoggingOptions.IotLoggingOptions.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotLoggingOptions.IotLoggingOptions.resetRegion">ResetRegion</a></code> | *No description.* |
 
 ---
 
@@ -378,6 +379,12 @@ private void ResetDisableAllLogs()
 private void ResetId()
 ```
 
+##### `ResetRegion` <a name="ResetRegion" id="@cdktf/provider-aws.iotLoggingOptions.IotLoggingOptions.resetRegion"></a>
+
+```csharp
+private void ResetRegion()
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -481,7 +488,7 @@ The construct id used in the generated config for the IotLoggingOptions to impor
 
 The id of the existing IotLoggingOptions that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/iot_logging_options#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/iot_logging_options#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -514,10 +521,12 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.iotLoggingOptions.IotLoggingOptions.property.defaultLogLevelInput">DefaultLogLevelInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotLoggingOptions.IotLoggingOptions.property.disableAllLogsInput">DisableAllLogsInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotLoggingOptions.IotLoggingOptions.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotLoggingOptions.IotLoggingOptions.property.regionInput">RegionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotLoggingOptions.IotLoggingOptions.property.roleArnInput">RoleArnInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotLoggingOptions.IotLoggingOptions.property.defaultLogLevel">DefaultLogLevel</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotLoggingOptions.IotLoggingOptions.property.disableAllLogs">DisableAllLogs</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotLoggingOptions.IotLoggingOptions.property.id">Id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotLoggingOptions.IotLoggingOptions.property.region">Region</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotLoggingOptions.IotLoggingOptions.property.roleArn">RoleArn</a></code> | <code>string</code> | *No description.* |
 
 ---
@@ -694,6 +703,16 @@ public string IdInput { get; }
 
 ---
 
+##### `RegionInput`<sup>Optional</sup> <a name="RegionInput" id="@cdktf/provider-aws.iotLoggingOptions.IotLoggingOptions.property.regionInput"></a>
+
+```csharp
+public string RegionInput { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `RoleArnInput`<sup>Optional</sup> <a name="RoleArnInput" id="@cdktf/provider-aws.iotLoggingOptions.IotLoggingOptions.property.roleArnInput"></a>
 
 ```csharp
@@ -728,6 +747,16 @@ public object DisableAllLogs { get; }
 
 ```csharp
 public string Id { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Region`<sup>Required</sup> <a name="Region" id="@cdktf/provider-aws.iotLoggingOptions.IotLoggingOptions.property.region"></a>
+
+```csharp
+public string Region { get; }
 ```
 
 - *Type:* string
@@ -782,7 +811,8 @@ new IotLoggingOptionsConfig {
     string DefaultLogLevel,
     string RoleArn,
     object DisableAllLogs = null,
-    string Id = null
+    string Id = null,
+    string Region = null
 };
 ```
 
@@ -797,10 +827,11 @@ new IotLoggingOptionsConfig {
 | <code><a href="#@cdktf/provider-aws.iotLoggingOptions.IotLoggingOptionsConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotLoggingOptions.IotLoggingOptionsConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotLoggingOptions.IotLoggingOptionsConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotLoggingOptions.IotLoggingOptionsConfig.property.defaultLogLevel">DefaultLogLevel</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/iot_logging_options#default_log_level IotLoggingOptions#default_log_level}. |
-| <code><a href="#@cdktf/provider-aws.iotLoggingOptions.IotLoggingOptionsConfig.property.roleArn">RoleArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/iot_logging_options#role_arn IotLoggingOptions#role_arn}. |
-| <code><a href="#@cdktf/provider-aws.iotLoggingOptions.IotLoggingOptionsConfig.property.disableAllLogs">DisableAllLogs</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/iot_logging_options#disable_all_logs IotLoggingOptions#disable_all_logs}. |
-| <code><a href="#@cdktf/provider-aws.iotLoggingOptions.IotLoggingOptionsConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/iot_logging_options#id IotLoggingOptions#id}. |
+| <code><a href="#@cdktf/provider-aws.iotLoggingOptions.IotLoggingOptionsConfig.property.defaultLogLevel">DefaultLogLevel</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/iot_logging_options#default_log_level IotLoggingOptions#default_log_level}. |
+| <code><a href="#@cdktf/provider-aws.iotLoggingOptions.IotLoggingOptionsConfig.property.roleArn">RoleArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/iot_logging_options#role_arn IotLoggingOptions#role_arn}. |
+| <code><a href="#@cdktf/provider-aws.iotLoggingOptions.IotLoggingOptionsConfig.property.disableAllLogs">DisableAllLogs</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/iot_logging_options#disable_all_logs IotLoggingOptions#disable_all_logs}. |
+| <code><a href="#@cdktf/provider-aws.iotLoggingOptions.IotLoggingOptionsConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/iot_logging_options#id IotLoggingOptions#id}. |
+| <code><a href="#@cdktf/provider-aws.iotLoggingOptions.IotLoggingOptionsConfig.property.region">Region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
 
@@ -882,7 +913,7 @@ public string DefaultLogLevel { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/iot_logging_options#default_log_level IotLoggingOptions#default_log_level}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/iot_logging_options#default_log_level IotLoggingOptions#default_log_level}.
 
 ---
 
@@ -894,7 +925,7 @@ public string RoleArn { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/iot_logging_options#role_arn IotLoggingOptions#role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/iot_logging_options#role_arn IotLoggingOptions#role_arn}.
 
 ---
 
@@ -906,7 +937,7 @@ public object DisableAllLogs { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/iot_logging_options#disable_all_logs IotLoggingOptions#disable_all_logs}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/iot_logging_options#disable_all_logs IotLoggingOptions#disable_all_logs}.
 
 ---
 
@@ -918,10 +949,24 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/iot_logging_options#id IotLoggingOptions#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/iot_logging_options#id IotLoggingOptions#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `Region`<sup>Optional</sup> <a name="Region" id="@cdktf/provider-aws.iotLoggingOptions.IotLoggingOptionsConfig.property.region"></a>
+
+```csharp
+public string Region { get; set; }
+```
+
+- *Type:* string
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/iot_logging_options#region IotLoggingOptions#region}
 
 ---
 

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/neptune_global_cluster
+// https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/neptune_global_cluster
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,40 +13,46 @@ import * as cdktf from 'cdktf';
 
 export interface NeptuneGlobalClusterConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/neptune_global_cluster#deletion_protection NeptuneGlobalCluster#deletion_protection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/neptune_global_cluster#deletion_protection NeptuneGlobalCluster#deletion_protection}
   */
   readonly deletionProtection?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/neptune_global_cluster#engine NeptuneGlobalCluster#engine}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/neptune_global_cluster#engine NeptuneGlobalCluster#engine}
   */
   readonly engine?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/neptune_global_cluster#engine_version NeptuneGlobalCluster#engine_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/neptune_global_cluster#engine_version NeptuneGlobalCluster#engine_version}
   */
   readonly engineVersion?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/neptune_global_cluster#global_cluster_identifier NeptuneGlobalCluster#global_cluster_identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/neptune_global_cluster#global_cluster_identifier NeptuneGlobalCluster#global_cluster_identifier}
   */
   readonly globalClusterIdentifier: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/neptune_global_cluster#id NeptuneGlobalCluster#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/neptune_global_cluster#id NeptuneGlobalCluster#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/neptune_global_cluster#source_db_cluster_identifier NeptuneGlobalCluster#source_db_cluster_identifier}
+  * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/neptune_global_cluster#region NeptuneGlobalCluster#region}
+  */
+  readonly region?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/neptune_global_cluster#source_db_cluster_identifier NeptuneGlobalCluster#source_db_cluster_identifier}
   */
   readonly sourceDbClusterIdentifier?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/neptune_global_cluster#storage_encrypted NeptuneGlobalCluster#storage_encrypted}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/neptune_global_cluster#storage_encrypted NeptuneGlobalCluster#storage_encrypted}
   */
   readonly storageEncrypted?: boolean | cdktf.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/neptune_global_cluster#timeouts NeptuneGlobalCluster#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/neptune_global_cluster#timeouts NeptuneGlobalCluster#timeouts}
   */
   readonly timeouts?: NeptuneGlobalClusterTimeouts;
 }
@@ -132,15 +138,15 @@ export class NeptuneGlobalClusterGlobalClusterMembersList extends cdktf.ComplexL
 }
 export interface NeptuneGlobalClusterTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/neptune_global_cluster#create NeptuneGlobalCluster#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/neptune_global_cluster#create NeptuneGlobalCluster#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/neptune_global_cluster#delete NeptuneGlobalCluster#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/neptune_global_cluster#delete NeptuneGlobalCluster#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/neptune_global_cluster#update NeptuneGlobalCluster#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/neptune_global_cluster#update NeptuneGlobalCluster#update}
   */
   readonly update?: string;
 }
@@ -292,7 +298,7 @@ export class NeptuneGlobalClusterTimeoutsOutputReference extends cdktf.ComplexOb
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/neptune_global_cluster aws_neptune_global_cluster}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/neptune_global_cluster aws_neptune_global_cluster}
 */
 export class NeptuneGlobalCluster extends cdktf.TerraformResource {
 
@@ -308,7 +314,7 @@ export class NeptuneGlobalCluster extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a NeptuneGlobalCluster resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NeptuneGlobalCluster to import
-  * @param importFromId The id of the existing NeptuneGlobalCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/neptune_global_cluster#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing NeptuneGlobalCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/neptune_global_cluster#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NeptuneGlobalCluster to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -320,7 +326,7 @@ export class NeptuneGlobalCluster extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/neptune_global_cluster aws_neptune_global_cluster} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/neptune_global_cluster aws_neptune_global_cluster} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -331,8 +337,8 @@ export class NeptuneGlobalCluster extends cdktf.TerraformResource {
       terraformResourceType: 'aws_neptune_global_cluster',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.100.0',
-        providerVersionConstraint: '~> 5.0'
+        providerVersion: '6.0.0',
+        providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -347,6 +353,7 @@ export class NeptuneGlobalCluster extends cdktf.TerraformResource {
     this._engineVersion = config.engineVersion;
     this._globalClusterIdentifier = config.globalClusterIdentifier;
     this._id = config.id;
+    this._region = config.region;
     this._sourceDbClusterIdentifier = config.sourceDbClusterIdentifier;
     this._storageEncrypted = config.storageEncrypted;
     this._timeouts.internalValue = config.timeouts;
@@ -449,6 +456,22 @@ export class NeptuneGlobalCluster extends cdktf.TerraformResource {
     return this._id;
   }
 
+  // region - computed: true, optional: true, required: false
+  private _region?: string; 
+  public get region() {
+    return this.getStringAttribute('region');
+  }
+  public set region(value: string) {
+    this._region = value;
+  }
+  public resetRegion() {
+    this._region = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get regionInput() {
+    return this._region;
+  }
+
   // source_db_cluster_identifier - computed: true, optional: true, required: false
   private _sourceDbClusterIdentifier?: string; 
   public get sourceDbClusterIdentifier() {
@@ -513,6 +536,7 @@ export class NeptuneGlobalCluster extends cdktf.TerraformResource {
       engine_version: cdktf.stringToTerraform(this._engineVersion),
       global_cluster_identifier: cdktf.stringToTerraform(this._globalClusterIdentifier),
       id: cdktf.stringToTerraform(this._id),
+      region: cdktf.stringToTerraform(this._region),
       source_db_cluster_identifier: cdktf.stringToTerraform(this._sourceDbClusterIdentifier),
       storage_encrypted: cdktf.booleanToTerraform(this._storageEncrypted),
       timeouts: neptuneGlobalClusterTimeoutsToTerraform(this._timeouts.internalValue),
@@ -547,6 +571,12 @@ export class NeptuneGlobalCluster extends cdktf.TerraformResource {
       },
       id: {
         value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      region: {
+        value: cdktf.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

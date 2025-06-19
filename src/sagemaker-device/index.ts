@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/sagemaker_device
+// https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/sagemaker_device
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,34 +13,40 @@ import * as cdktf from 'cdktf';
 
 export interface SagemakerDeviceConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/sagemaker_device#device_fleet_name SagemakerDevice#device_fleet_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/sagemaker_device#device_fleet_name SagemakerDevice#device_fleet_name}
   */
   readonly deviceFleetName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/sagemaker_device#id SagemakerDevice#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/sagemaker_device#id SagemakerDevice#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
+  * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/sagemaker_device#region SagemakerDevice#region}
+  */
+  readonly region?: string;
+  /**
   * device block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/sagemaker_device#device SagemakerDevice#device}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/sagemaker_device#device SagemakerDevice#device}
   */
   readonly device: SagemakerDeviceDevice;
 }
 export interface SagemakerDeviceDevice {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/sagemaker_device#description SagemakerDevice#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/sagemaker_device#description SagemakerDevice#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/sagemaker_device#device_name SagemakerDevice#device_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/sagemaker_device#device_name SagemakerDevice#device_name}
   */
   readonly deviceName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/sagemaker_device#iot_thing_name SagemakerDevice#iot_thing_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/sagemaker_device#iot_thing_name SagemakerDevice#iot_thing_name}
   */
   readonly iotThingName?: string;
 }
@@ -179,7 +185,7 @@ export class SagemakerDeviceDeviceOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/sagemaker_device aws_sagemaker_device}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/sagemaker_device aws_sagemaker_device}
 */
 export class SagemakerDevice extends cdktf.TerraformResource {
 
@@ -195,7 +201,7 @@ export class SagemakerDevice extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a SagemakerDevice resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SagemakerDevice to import
-  * @param importFromId The id of the existing SagemakerDevice that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/sagemaker_device#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing SagemakerDevice that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/sagemaker_device#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SagemakerDevice to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -207,7 +213,7 @@ export class SagemakerDevice extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/sagemaker_device aws_sagemaker_device} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/sagemaker_device aws_sagemaker_device} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -218,8 +224,8 @@ export class SagemakerDevice extends cdktf.TerraformResource {
       terraformResourceType: 'aws_sagemaker_device',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.100.0',
-        providerVersionConstraint: '~> 5.0'
+        providerVersion: '6.0.0',
+        providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -231,6 +237,7 @@ export class SagemakerDevice extends cdktf.TerraformResource {
     });
     this._deviceFleetName = config.deviceFleetName;
     this._id = config.id;
+    this._region = config.region;
     this._device.internalValue = config.device;
   }
 
@@ -277,6 +284,22 @@ export class SagemakerDevice extends cdktf.TerraformResource {
     return this._id;
   }
 
+  // region - computed: true, optional: true, required: false
+  private _region?: string; 
+  public get region() {
+    return this.getStringAttribute('region');
+  }
+  public set region(value: string) {
+    this._region = value;
+  }
+  public resetRegion() {
+    this._region = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get regionInput() {
+    return this._region;
+  }
+
   // device - computed: false, optional: false, required: true
   private _device = new SagemakerDeviceDeviceOutputReference(this, "device");
   public get device() {
@@ -298,6 +321,7 @@ export class SagemakerDevice extends cdktf.TerraformResource {
     return {
       device_fleet_name: cdktf.stringToTerraform(this._deviceFleetName),
       id: cdktf.stringToTerraform(this._id),
+      region: cdktf.stringToTerraform(this._region),
       device: sagemakerDeviceDeviceToTerraform(this._device.internalValue),
     };
   }
@@ -312,6 +336,12 @@ export class SagemakerDevice extends cdktf.TerraformResource {
       },
       id: {
         value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      region: {
+        value: cdktf.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

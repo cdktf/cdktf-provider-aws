@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/redshift_data_shares
+// https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/redshift_data_shares
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,16 +13,16 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsRedshiftDataSharesConfig extends cdktf.TerraformMetaArguments {
   /**
-  * data_shares block
+  * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/redshift_data_shares#data_shares DataAwsRedshiftDataShares#data_shares}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/redshift_data_shares#region DataAwsRedshiftDataShares#region}
   */
-  readonly dataShares?: DataAwsRedshiftDataSharesDataShares[] | cdktf.IResolvable;
+  readonly region?: string;
 }
 export interface DataAwsRedshiftDataSharesDataShares {
 }
 
-export function dataAwsRedshiftDataSharesDataSharesToTerraform(struct?: DataAwsRedshiftDataSharesDataShares | cdktf.IResolvable): any {
+export function dataAwsRedshiftDataSharesDataSharesToTerraform(struct?: DataAwsRedshiftDataSharesDataShares): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -32,7 +32,7 @@ export function dataAwsRedshiftDataSharesDataSharesToTerraform(struct?: DataAwsR
 }
 
 
-export function dataAwsRedshiftDataSharesDataSharesToHclTerraform(struct?: DataAwsRedshiftDataSharesDataShares | cdktf.IResolvable): any {
+export function dataAwsRedshiftDataSharesDataSharesToHclTerraform(struct?: DataAwsRedshiftDataSharesDataShares): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -44,7 +44,6 @@ export function dataAwsRedshiftDataSharesDataSharesToHclTerraform(struct?: DataA
 
 export class DataAwsRedshiftDataSharesDataSharesOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -56,27 +55,18 @@ export class DataAwsRedshiftDataSharesDataSharesOutputReference extends cdktf.Co
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataAwsRedshiftDataSharesDataShares | cdktf.IResolvable | undefined {
-    if (this.resolvableValue) {
-      return this.resolvableValue;
-    }
+  public get internalValue(): DataAwsRedshiftDataSharesDataShares | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAwsRedshiftDataSharesDataShares | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataAwsRedshiftDataSharesDataShares | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-      this.resolvableValue = undefined;
-    }
-    else if (cdktf.Tokenization.isResolvable(value)) {
-      this.isEmptyObject = false;
-      this.resolvableValue = value;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
-      this.resolvableValue = undefined;
     }
   }
 
@@ -97,7 +87,6 @@ export class DataAwsRedshiftDataSharesDataSharesOutputReference extends cdktf.Co
 }
 
 export class DataAwsRedshiftDataSharesDataSharesList extends cdktf.ComplexList {
-  public internalValue? : DataAwsRedshiftDataSharesDataShares[] | cdktf.IResolvable
 
   /**
   * @param terraformResource The parent resource
@@ -117,7 +106,7 @@ export class DataAwsRedshiftDataSharesDataSharesList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/redshift_data_shares aws_redshift_data_shares}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/redshift_data_shares aws_redshift_data_shares}
 */
 export class DataAwsRedshiftDataShares extends cdktf.TerraformDataSource {
 
@@ -133,7 +122,7 @@ export class DataAwsRedshiftDataShares extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataAwsRedshiftDataShares resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsRedshiftDataShares to import
-  * @param importFromId The id of the existing DataAwsRedshiftDataShares that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/redshift_data_shares#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsRedshiftDataShares that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/redshift_data_shares#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsRedshiftDataShares to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -145,7 +134,7 @@ export class DataAwsRedshiftDataShares extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/redshift_data_shares aws_redshift_data_shares} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/redshift_data_shares aws_redshift_data_shares} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -156,8 +145,8 @@ export class DataAwsRedshiftDataShares extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_redshift_data_shares',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.100.0',
-        providerVersionConstraint: '~> 5.0'
+        providerVersion: '6.0.0',
+        providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -167,32 +156,38 @@ export class DataAwsRedshiftDataShares extends cdktf.TerraformDataSource {
       connection: config.connection,
       forEach: config.forEach
     });
-    this._dataShares.internalValue = config.dataShares;
+    this._region = config.region;
   }
 
   // ==========
   // ATTRIBUTES
   // ==========
 
+  // data_shares - computed: true, optional: false, required: false
+  private _dataShares = new DataAwsRedshiftDataSharesDataSharesList(this, "data_shares", false);
+  public get dataShares() {
+    return this._dataShares;
+  }
+
   // id - computed: true, optional: false, required: false
   public get id() {
     return this.getStringAttribute('id');
   }
 
-  // data_shares - computed: false, optional: true, required: false
-  private _dataShares = new DataAwsRedshiftDataSharesDataSharesList(this, "data_shares", false);
-  public get dataShares() {
-    return this._dataShares;
+  // region - computed: true, optional: true, required: false
+  private _region?: string; 
+  public get region() {
+    return this.getStringAttribute('region');
   }
-  public putDataShares(value: DataAwsRedshiftDataSharesDataShares[] | cdktf.IResolvable) {
-    this._dataShares.internalValue = value;
+  public set region(value: string) {
+    this._region = value;
   }
-  public resetDataShares() {
-    this._dataShares.internalValue = undefined;
+  public resetRegion() {
+    this._region = undefined;
   }
   // Temporarily expose input value. Use with caution.
-  public get dataSharesInput() {
-    return this._dataShares.internalValue;
+  public get regionInput() {
+    return this._region;
   }
 
   // =========
@@ -201,17 +196,17 @@ export class DataAwsRedshiftDataShares extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      data_shares: cdktf.listMapper(dataAwsRedshiftDataSharesDataSharesToTerraform, true)(this._dataShares.internalValue),
+      region: cdktf.stringToTerraform(this._region),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
-      data_shares: {
-        value: cdktf.listMapperHcl(dataAwsRedshiftDataSharesDataSharesToHclTerraform, true)(this._dataShares.internalValue),
-        isBlock: true,
-        type: "list",
-        storageClassType: "DataAwsRedshiftDataSharesDataSharesList",
+      region: {
+        value: cdktf.stringToHclTerraform(this._region),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
       },
     };
 

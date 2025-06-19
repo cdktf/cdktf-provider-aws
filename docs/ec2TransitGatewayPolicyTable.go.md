@@ -4,12 +4,12 @@
 
 ### Ec2TransitGatewayPolicyTable <a name="Ec2TransitGatewayPolicyTable" id="@cdktf/provider-aws.ec2TransitGatewayPolicyTable.Ec2TransitGatewayPolicyTable"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ec2_transit_gateway_policy_table aws_ec2_transit_gateway_policy_table}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ec2_transit_gateway_policy_table aws_ec2_transit_gateway_policy_table}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ec2TransitGatewayPolicyTable.Ec2TransitGatewayPolicyTable.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/ec2transitgatewaypolicytable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/ec2transitgatewaypolicytable"
 
 ec2transitgatewaypolicytable.NewEc2TransitGatewayPolicyTable(scope Construct, id *string, config Ec2TransitGatewayPolicyTableConfig) Ec2TransitGatewayPolicyTable
 ```
@@ -74,6 +74,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.ec2TransitGatewayPolicyTable.Ec2TransitGatewayPolicyTable.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-aws.ec2TransitGatewayPolicyTable.Ec2TransitGatewayPolicyTable.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-aws.ec2TransitGatewayPolicyTable.Ec2TransitGatewayPolicyTable.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ec2TransitGatewayPolicyTable.Ec2TransitGatewayPolicyTable.resetRegion">ResetRegion</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2TransitGatewayPolicyTable.Ec2TransitGatewayPolicyTable.resetTags">ResetTags</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2TransitGatewayPolicyTable.Ec2TransitGatewayPolicyTable.resetTagsAll">ResetTagsAll</a></code> | *No description.* |
 
@@ -373,6 +374,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 func ResetId()
 ```
 
+##### `ResetRegion` <a name="ResetRegion" id="@cdktf/provider-aws.ec2TransitGatewayPolicyTable.Ec2TransitGatewayPolicyTable.resetRegion"></a>
+
+```go
+func ResetRegion()
+```
+
 ##### `ResetTags` <a name="ResetTags" id="@cdktf/provider-aws.ec2TransitGatewayPolicyTable.Ec2TransitGatewayPolicyTable.resetTags"></a>
 
 ```go
@@ -399,7 +406,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.ec2TransitGatewayPolicyTable.Ec2TransitGatewayPolicyTable.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/ec2transitgatewaypolicytable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/ec2transitgatewaypolicytable"
 
 ec2transitgatewaypolicytable.Ec2TransitGatewayPolicyTable_IsConstruct(x interface{}) *bool
 ```
@@ -431,7 +438,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.ec2TransitGatewayPolicyTable.Ec2TransitGatewayPolicyTable.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/ec2transitgatewaypolicytable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/ec2transitgatewaypolicytable"
 
 ec2transitgatewaypolicytable.Ec2TransitGatewayPolicyTable_IsTerraformElement(x interface{}) *bool
 ```
@@ -445,7 +452,7 @@ ec2transitgatewaypolicytable.Ec2TransitGatewayPolicyTable_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.ec2TransitGatewayPolicyTable.Ec2TransitGatewayPolicyTable.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/ec2transitgatewaypolicytable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/ec2transitgatewaypolicytable"
 
 ec2transitgatewaypolicytable.Ec2TransitGatewayPolicyTable_IsTerraformResource(x interface{}) *bool
 ```
@@ -459,7 +466,7 @@ ec2transitgatewaypolicytable.Ec2TransitGatewayPolicyTable_IsTerraformResource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.ec2TransitGatewayPolicyTable.Ec2TransitGatewayPolicyTable.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/ec2transitgatewaypolicytable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/ec2transitgatewaypolicytable"
 
 ec2transitgatewaypolicytable.Ec2TransitGatewayPolicyTable_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -488,7 +495,7 @@ The construct id used in the generated config for the Ec2TransitGatewayPolicyTab
 
 The id of the existing Ec2TransitGatewayPolicyTable that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ec2_transit_gateway_policy_table#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ec2_transit_gateway_policy_table#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -521,10 +528,12 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.ec2TransitGatewayPolicyTable.Ec2TransitGatewayPolicyTable.property.arn">Arn</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2TransitGatewayPolicyTable.Ec2TransitGatewayPolicyTable.property.state">State</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2TransitGatewayPolicyTable.Ec2TransitGatewayPolicyTable.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ec2TransitGatewayPolicyTable.Ec2TransitGatewayPolicyTable.property.regionInput">RegionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2TransitGatewayPolicyTable.Ec2TransitGatewayPolicyTable.property.tagsAllInput">TagsAllInput</a></code> | <code>*map[string]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2TransitGatewayPolicyTable.Ec2TransitGatewayPolicyTable.property.tagsInput">TagsInput</a></code> | <code>*map[string]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2TransitGatewayPolicyTable.Ec2TransitGatewayPolicyTable.property.transitGatewayIdInput">TransitGatewayIdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2TransitGatewayPolicyTable.Ec2TransitGatewayPolicyTable.property.id">Id</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ec2TransitGatewayPolicyTable.Ec2TransitGatewayPolicyTable.property.region">Region</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2TransitGatewayPolicyTable.Ec2TransitGatewayPolicyTable.property.tags">Tags</a></code> | <code>*map[string]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2TransitGatewayPolicyTable.Ec2TransitGatewayPolicyTable.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2TransitGatewayPolicyTable.Ec2TransitGatewayPolicyTable.property.transitGatewayId">TransitGatewayId</a></code> | <code>*string</code> | *No description.* |
@@ -703,6 +712,16 @@ func IdInput() *string
 
 ---
 
+##### `RegionInput`<sup>Optional</sup> <a name="RegionInput" id="@cdktf/provider-aws.ec2TransitGatewayPolicyTable.Ec2TransitGatewayPolicyTable.property.regionInput"></a>
+
+```go
+func RegionInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `TagsAllInput`<sup>Optional</sup> <a name="TagsAllInput" id="@cdktf/provider-aws.ec2TransitGatewayPolicyTable.Ec2TransitGatewayPolicyTable.property.tagsAllInput"></a>
 
 ```go
@@ -737,6 +756,16 @@ func TransitGatewayIdInput() *string
 
 ```go
 func Id() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Region`<sup>Required</sup> <a name="Region" id="@cdktf/provider-aws.ec2TransitGatewayPolicyTable.Ec2TransitGatewayPolicyTable.property.region"></a>
+
+```go
+func Region() *string
 ```
 
 - *Type:* *string
@@ -798,7 +827,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ec2TransitGatewayPolicyTable.Ec2TransitGatewayPolicyTableConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/ec2transitgatewaypolicytable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/ec2transitgatewaypolicytable"
 
 &ec2transitgatewaypolicytable.Ec2TransitGatewayPolicyTableConfig {
 	Connection: interface{},
@@ -810,6 +839,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/ec2transitgatewaypolicyta
 	Provisioners: *[]interface{},
 	TransitGatewayId: *string,
 	Id: *string,
+	Region: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
 }
@@ -826,10 +856,11 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/ec2transitgatewaypolicyta
 | <code><a href="#@cdktf/provider-aws.ec2TransitGatewayPolicyTable.Ec2TransitGatewayPolicyTableConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2TransitGatewayPolicyTable.Ec2TransitGatewayPolicyTableConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2TransitGatewayPolicyTable.Ec2TransitGatewayPolicyTableConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ec2TransitGatewayPolicyTable.Ec2TransitGatewayPolicyTableConfig.property.transitGatewayId">TransitGatewayId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ec2_transit_gateway_policy_table#transit_gateway_id Ec2TransitGatewayPolicyTable#transit_gateway_id}. |
-| <code><a href="#@cdktf/provider-aws.ec2TransitGatewayPolicyTable.Ec2TransitGatewayPolicyTableConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ec2_transit_gateway_policy_table#id Ec2TransitGatewayPolicyTable#id}. |
-| <code><a href="#@cdktf/provider-aws.ec2TransitGatewayPolicyTable.Ec2TransitGatewayPolicyTableConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ec2_transit_gateway_policy_table#tags Ec2TransitGatewayPolicyTable#tags}. |
-| <code><a href="#@cdktf/provider-aws.ec2TransitGatewayPolicyTable.Ec2TransitGatewayPolicyTableConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ec2_transit_gateway_policy_table#tags_all Ec2TransitGatewayPolicyTable#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.ec2TransitGatewayPolicyTable.Ec2TransitGatewayPolicyTableConfig.property.transitGatewayId">TransitGatewayId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ec2_transit_gateway_policy_table#transit_gateway_id Ec2TransitGatewayPolicyTable#transit_gateway_id}. |
+| <code><a href="#@cdktf/provider-aws.ec2TransitGatewayPolicyTable.Ec2TransitGatewayPolicyTableConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ec2_transit_gateway_policy_table#id Ec2TransitGatewayPolicyTable#id}. |
+| <code><a href="#@cdktf/provider-aws.ec2TransitGatewayPolicyTable.Ec2TransitGatewayPolicyTableConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
+| <code><a href="#@cdktf/provider-aws.ec2TransitGatewayPolicyTable.Ec2TransitGatewayPolicyTableConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ec2_transit_gateway_policy_table#tags Ec2TransitGatewayPolicyTable#tags}. |
+| <code><a href="#@cdktf/provider-aws.ec2TransitGatewayPolicyTable.Ec2TransitGatewayPolicyTableConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ec2_transit_gateway_policy_table#tags_all Ec2TransitGatewayPolicyTable#tags_all}. |
 
 ---
 
@@ -911,7 +942,7 @@ TransitGatewayId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ec2_transit_gateway_policy_table#transit_gateway_id Ec2TransitGatewayPolicyTable#transit_gateway_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ec2_transit_gateway_policy_table#transit_gateway_id Ec2TransitGatewayPolicyTable#transit_gateway_id}.
 
 ---
 
@@ -923,10 +954,24 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ec2_transit_gateway_policy_table#id Ec2TransitGatewayPolicyTable#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ec2_transit_gateway_policy_table#id Ec2TransitGatewayPolicyTable#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `Region`<sup>Optional</sup> <a name="Region" id="@cdktf/provider-aws.ec2TransitGatewayPolicyTable.Ec2TransitGatewayPolicyTableConfig.property.region"></a>
+
+```go
+Region *string
+```
+
+- *Type:* *string
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ec2_transit_gateway_policy_table#region Ec2TransitGatewayPolicyTable#region}
 
 ---
 
@@ -938,7 +983,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ec2_transit_gateway_policy_table#tags Ec2TransitGatewayPolicyTable#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ec2_transit_gateway_policy_table#tags Ec2TransitGatewayPolicyTable#tags}.
 
 ---
 
@@ -950,7 +995,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ec2_transit_gateway_policy_table#tags_all Ec2TransitGatewayPolicyTable#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ec2_transit_gateway_policy_table#tags_all Ec2TransitGatewayPolicyTable#tags_all}.
 
 ---
 

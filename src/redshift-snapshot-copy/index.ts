@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/redshift_snapshot_copy
+// https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/redshift_snapshot_copy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,29 +13,35 @@ import * as cdktf from 'cdktf';
 
 export interface RedshiftSnapshotCopyConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/redshift_snapshot_copy#cluster_identifier RedshiftSnapshotCopy#cluster_identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/redshift_snapshot_copy#cluster_identifier RedshiftSnapshotCopy#cluster_identifier}
   */
   readonly clusterIdentifier: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/redshift_snapshot_copy#destination_region RedshiftSnapshotCopy#destination_region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/redshift_snapshot_copy#destination_region RedshiftSnapshotCopy#destination_region}
   */
   readonly destinationRegion: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/redshift_snapshot_copy#manual_snapshot_retention_period RedshiftSnapshotCopy#manual_snapshot_retention_period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/redshift_snapshot_copy#manual_snapshot_retention_period RedshiftSnapshotCopy#manual_snapshot_retention_period}
   */
   readonly manualSnapshotRetentionPeriod?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/redshift_snapshot_copy#retention_period RedshiftSnapshotCopy#retention_period}
+  * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/redshift_snapshot_copy#region RedshiftSnapshotCopy#region}
+  */
+  readonly region?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/redshift_snapshot_copy#retention_period RedshiftSnapshotCopy#retention_period}
   */
   readonly retentionPeriod?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/redshift_snapshot_copy#snapshot_copy_grant_name RedshiftSnapshotCopy#snapshot_copy_grant_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/redshift_snapshot_copy#snapshot_copy_grant_name RedshiftSnapshotCopy#snapshot_copy_grant_name}
   */
   readonly snapshotCopyGrantName?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/redshift_snapshot_copy aws_redshift_snapshot_copy}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/redshift_snapshot_copy aws_redshift_snapshot_copy}
 */
 export class RedshiftSnapshotCopy extends cdktf.TerraformResource {
 
@@ -51,7 +57,7 @@ export class RedshiftSnapshotCopy extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a RedshiftSnapshotCopy resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the RedshiftSnapshotCopy to import
-  * @param importFromId The id of the existing RedshiftSnapshotCopy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/redshift_snapshot_copy#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing RedshiftSnapshotCopy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/redshift_snapshot_copy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the RedshiftSnapshotCopy to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -63,7 +69,7 @@ export class RedshiftSnapshotCopy extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/redshift_snapshot_copy aws_redshift_snapshot_copy} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/redshift_snapshot_copy aws_redshift_snapshot_copy} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -74,8 +80,8 @@ export class RedshiftSnapshotCopy extends cdktf.TerraformResource {
       terraformResourceType: 'aws_redshift_snapshot_copy',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.100.0',
-        providerVersionConstraint: '~> 5.0'
+        providerVersion: '6.0.0',
+        providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -88,6 +94,7 @@ export class RedshiftSnapshotCopy extends cdktf.TerraformResource {
     this._clusterIdentifier = config.clusterIdentifier;
     this._destinationRegion = config.destinationRegion;
     this._manualSnapshotRetentionPeriod = config.manualSnapshotRetentionPeriod;
+    this._region = config.region;
     this._retentionPeriod = config.retentionPeriod;
     this._snapshotCopyGrantName = config.snapshotCopyGrantName;
   }
@@ -143,6 +150,22 @@ export class RedshiftSnapshotCopy extends cdktf.TerraformResource {
     return this._manualSnapshotRetentionPeriod;
   }
 
+  // region - computed: true, optional: true, required: false
+  private _region?: string; 
+  public get region() {
+    return this.getStringAttribute('region');
+  }
+  public set region(value: string) {
+    this._region = value;
+  }
+  public resetRegion() {
+    this._region = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get regionInput() {
+    return this._region;
+  }
+
   // retention_period - computed: true, optional: true, required: false
   private _retentionPeriod?: number; 
   public get retentionPeriod() {
@@ -184,6 +207,7 @@ export class RedshiftSnapshotCopy extends cdktf.TerraformResource {
       cluster_identifier: cdktf.stringToTerraform(this._clusterIdentifier),
       destination_region: cdktf.stringToTerraform(this._destinationRegion),
       manual_snapshot_retention_period: cdktf.numberToTerraform(this._manualSnapshotRetentionPeriod),
+      region: cdktf.stringToTerraform(this._region),
       retention_period: cdktf.numberToTerraform(this._retentionPeriod),
       snapshot_copy_grant_name: cdktf.stringToTerraform(this._snapshotCopyGrantName),
     };
@@ -208,6 +232,12 @@ export class RedshiftSnapshotCopy extends cdktf.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "number",
+      },
+      region: {
+        value: cdktf.stringToHclTerraform(this._region),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
       },
       retention_period: {
         value: cdktf.numberToHclTerraform(this._retentionPeriod),

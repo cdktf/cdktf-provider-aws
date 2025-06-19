@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/devopsguru_notification_channel
+// https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/devopsguru_notification_channel
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,25 +13,31 @@ import * as cdktf from 'cdktf';
 
 export interface DevopsguruNotificationChannelConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/devopsguru_notification_channel#region DevopsguruNotificationChannel#region}
+  */
+  readonly region?: string;
+  /**
   * filters block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/devopsguru_notification_channel#filters DevopsguruNotificationChannel#filters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/devopsguru_notification_channel#filters DevopsguruNotificationChannel#filters}
   */
   readonly filters?: DevopsguruNotificationChannelFilters[] | cdktf.IResolvable;
   /**
   * sns block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/devopsguru_notification_channel#sns DevopsguruNotificationChannel#sns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/devopsguru_notification_channel#sns DevopsguruNotificationChannel#sns}
   */
   readonly sns?: DevopsguruNotificationChannelSns[] | cdktf.IResolvable;
 }
 export interface DevopsguruNotificationChannelFilters {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/devopsguru_notification_channel#message_types DevopsguruNotificationChannel#message_types}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/devopsguru_notification_channel#message_types DevopsguruNotificationChannel#message_types}
   */
   readonly messageTypes?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/devopsguru_notification_channel#severities DevopsguruNotificationChannel#severities}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/devopsguru_notification_channel#severities DevopsguruNotificationChannel#severities}
   */
   readonly severities?: string[];
 }
@@ -176,7 +182,7 @@ export class DevopsguruNotificationChannelFiltersList extends cdktf.ComplexList 
 }
 export interface DevopsguruNotificationChannelSns {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/devopsguru_notification_channel#topic_arn DevopsguruNotificationChannel#topic_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/devopsguru_notification_channel#topic_arn DevopsguruNotificationChannel#topic_arn}
   */
   readonly topicArn: string;
 }
@@ -289,7 +295,7 @@ export class DevopsguruNotificationChannelSnsList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/devopsguru_notification_channel aws_devopsguru_notification_channel}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/devopsguru_notification_channel aws_devopsguru_notification_channel}
 */
 export class DevopsguruNotificationChannel extends cdktf.TerraformResource {
 
@@ -305,7 +311,7 @@ export class DevopsguruNotificationChannel extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a DevopsguruNotificationChannel resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DevopsguruNotificationChannel to import
-  * @param importFromId The id of the existing DevopsguruNotificationChannel that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/devopsguru_notification_channel#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DevopsguruNotificationChannel that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/devopsguru_notification_channel#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DevopsguruNotificationChannel to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -317,7 +323,7 @@ export class DevopsguruNotificationChannel extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/devopsguru_notification_channel aws_devopsguru_notification_channel} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/devopsguru_notification_channel aws_devopsguru_notification_channel} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -328,8 +334,8 @@ export class DevopsguruNotificationChannel extends cdktf.TerraformResource {
       terraformResourceType: 'aws_devopsguru_notification_channel',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.100.0',
-        providerVersionConstraint: '~> 5.0'
+        providerVersion: '6.0.0',
+        providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -339,6 +345,7 @@ export class DevopsguruNotificationChannel extends cdktf.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
+    this._region = config.region;
     this._filters.internalValue = config.filters;
     this._sns.internalValue = config.sns;
   }
@@ -350,6 +357,22 @@ export class DevopsguruNotificationChannel extends cdktf.TerraformResource {
   // id - computed: true, optional: false, required: false
   public get id() {
     return this.getStringAttribute('id');
+  }
+
+  // region - computed: true, optional: true, required: false
+  private _region?: string; 
+  public get region() {
+    return this.getStringAttribute('region');
+  }
+  public set region(value: string) {
+    this._region = value;
+  }
+  public resetRegion() {
+    this._region = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get regionInput() {
+    return this._region;
   }
 
   // filters - computed: false, optional: true, required: false
@@ -390,6 +413,7 @@ export class DevopsguruNotificationChannel extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      region: cdktf.stringToTerraform(this._region),
       filters: cdktf.listMapper(devopsguruNotificationChannelFiltersToTerraform, true)(this._filters.internalValue),
       sns: cdktf.listMapper(devopsguruNotificationChannelSnsToTerraform, true)(this._sns.internalValue),
     };
@@ -397,6 +421,12 @@ export class DevopsguruNotificationChannel extends cdktf.TerraformResource {
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
+      region: {
+        value: cdktf.stringToHclTerraform(this._region),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
       filters: {
         value: cdktf.listMapperHcl(devopsguruNotificationChannelFiltersToHclTerraform, true)(this._filters.internalValue),
         isBlock: true,

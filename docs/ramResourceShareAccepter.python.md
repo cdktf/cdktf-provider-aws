@@ -4,7 +4,7 @@
 
 ### RamResourceShareAccepter <a name="RamResourceShareAccepter" id="@cdktf/provider-aws.ramResourceShareAccepter.RamResourceShareAccepter"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ram_resource_share_accepter aws_ram_resource_share_accepter}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ram_resource_share_accepter aws_ram_resource_share_accepter}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ramResourceShareAccepter.RamResourceShareAccepter.Initializer"></a>
 
@@ -23,6 +23,7 @@ ramResourceShareAccepter.RamResourceShareAccepter(
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
   share_arn: str,
   id: str = None,
+  region: str = None,
   timeouts: RamResourceShareAccepterTimeouts = None
 )
 ```
@@ -38,8 +39,9 @@ ramResourceShareAccepter.RamResourceShareAccepter(
 | <code><a href="#@cdktf/provider-aws.ramResourceShareAccepter.RamResourceShareAccepter.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ramResourceShareAccepter.RamResourceShareAccepter.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ramResourceShareAccepter.RamResourceShareAccepter.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ramResourceShareAccepter.RamResourceShareAccepter.Initializer.parameter.shareArn">share_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ram_resource_share_accepter#share_arn RamResourceShareAccepter#share_arn}. |
-| <code><a href="#@cdktf/provider-aws.ramResourceShareAccepter.RamResourceShareAccepter.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ram_resource_share_accepter#id RamResourceShareAccepter#id}. |
+| <code><a href="#@cdktf/provider-aws.ramResourceShareAccepter.RamResourceShareAccepter.Initializer.parameter.shareArn">share_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ram_resource_share_accepter#share_arn RamResourceShareAccepter#share_arn}. |
+| <code><a href="#@cdktf/provider-aws.ramResourceShareAccepter.RamResourceShareAccepter.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ram_resource_share_accepter#id RamResourceShareAccepter#id}. |
+| <code><a href="#@cdktf/provider-aws.ramResourceShareAccepter.RamResourceShareAccepter.Initializer.parameter.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktf/provider-aws.ramResourceShareAccepter.RamResourceShareAccepter.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-aws.ramResourceShareAccepter.RamResourceShareAccepterTimeouts">RamResourceShareAccepterTimeouts</a></code> | timeouts block. |
 
 ---
@@ -108,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ram_resource_share_accepter#share_arn RamResourceShareAccepter#share_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ram_resource_share_accepter#share_arn RamResourceShareAccepter#share_arn}.
 
 ---
 
@@ -116,10 +118,20 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ram_resource_share_accepter#id RamResourceShareAccepter#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ram_resource_share_accepter#id RamResourceShareAccepter#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdktf/provider-aws.ramResourceShareAccepter.RamResourceShareAccepter.Initializer.parameter.region"></a>
+
+- *Type:* str
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ram_resource_share_accepter#region RamResourceShareAccepter#region}
 
 ---
 
@@ -129,7 +141,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ram_resource_share_accepter#timeouts RamResourceShareAccepter#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ram_resource_share_accepter#timeouts RamResourceShareAccepter#timeouts}
 
 ---
 
@@ -162,6 +174,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktf/provider-aws.ramResourceShareAccepter.RamResourceShareAccepter.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-aws.ramResourceShareAccepter.RamResourceShareAccepter.putTimeouts">put_timeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ramResourceShareAccepter.RamResourceShareAccepter.resetId">reset_id</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ramResourceShareAccepter.RamResourceShareAccepter.resetRegion">reset_region</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ramResourceShareAccepter.RamResourceShareAccepter.resetTimeouts">reset_timeouts</a></code> | *No description.* |
 
 ---
@@ -504,7 +517,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ram_resource_share_accepter#create RamResourceShareAccepter#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ram_resource_share_accepter#create RamResourceShareAccepter#create}.
 
 ---
 
@@ -512,7 +525,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ram_resource_share_accepter#delete RamResourceShareAccepter#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ram_resource_share_accepter#delete RamResourceShareAccepter#delete}.
 
 ---
 
@@ -520,6 +533,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ```python
 def reset_id() -> None
+```
+
+##### `reset_region` <a name="reset_region" id="@cdktf/provider-aws.ramResourceShareAccepter.RamResourceShareAccepter.resetRegion"></a>
+
+```python
+def reset_region() -> None
 ```
 
 ##### `reset_timeouts` <a name="reset_timeouts" id="@cdktf/provider-aws.ramResourceShareAccepter.RamResourceShareAccepter.resetTimeouts"></a>
@@ -642,7 +661,7 @@ The construct id used in the generated config for the RamResourceShareAccepter t
 
 The id of the existing RamResourceShareAccepter that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ram_resource_share_accepter#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ram_resource_share_accepter#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -681,9 +700,11 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.ramResourceShareAccepter.RamResourceShareAccepter.property.status">status</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ramResourceShareAccepter.RamResourceShareAccepter.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-aws.ramResourceShareAccepter.RamResourceShareAccepterTimeoutsOutputReference">RamResourceShareAccepterTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ramResourceShareAccepter.RamResourceShareAccepter.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ramResourceShareAccepter.RamResourceShareAccepter.property.regionInput">region_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ramResourceShareAccepter.RamResourceShareAccepter.property.shareArnInput">share_arn_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ramResourceShareAccepter.RamResourceShareAccepter.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.ramResourceShareAccepter.RamResourceShareAccepterTimeouts">RamResourceShareAccepterTimeouts</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ramResourceShareAccepter.RamResourceShareAccepter.property.id">id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ramResourceShareAccepter.RamResourceShareAccepter.property.region">region</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ramResourceShareAccepter.RamResourceShareAccepter.property.shareArn">share_arn</a></code> | <code>str</code> | *No description.* |
 
 ---
@@ -920,6 +941,16 @@ id_input: str
 
 ---
 
+##### `region_input`<sup>Optional</sup> <a name="region_input" id="@cdktf/provider-aws.ramResourceShareAccepter.RamResourceShareAccepter.property.regionInput"></a>
+
+```python
+region_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `share_arn_input`<sup>Optional</sup> <a name="share_arn_input" id="@cdktf/provider-aws.ramResourceShareAccepter.RamResourceShareAccepter.property.shareArnInput"></a>
 
 ```python
@@ -944,6 +975,16 @@ timeouts_input: typing.Union[IResolvable, RamResourceShareAccepterTimeouts]
 
 ```python
 id: str
+```
+
+- *Type:* str
+
+---
+
+##### `region`<sup>Required</sup> <a name="region" id="@cdktf/provider-aws.ramResourceShareAccepter.RamResourceShareAccepter.property.region"></a>
+
+```python
+region: str
 ```
 
 - *Type:* str
@@ -997,6 +1038,7 @@ ramResourceShareAccepter.RamResourceShareAccepterConfig(
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
   share_arn: str,
   id: str = None,
+  region: str = None,
   timeouts: RamResourceShareAccepterTimeouts = None
 )
 ```
@@ -1012,8 +1054,9 @@ ramResourceShareAccepter.RamResourceShareAccepterConfig(
 | <code><a href="#@cdktf/provider-aws.ramResourceShareAccepter.RamResourceShareAccepterConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ramResourceShareAccepter.RamResourceShareAccepterConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ramResourceShareAccepter.RamResourceShareAccepterConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ramResourceShareAccepter.RamResourceShareAccepterConfig.property.shareArn">share_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ram_resource_share_accepter#share_arn RamResourceShareAccepter#share_arn}. |
-| <code><a href="#@cdktf/provider-aws.ramResourceShareAccepter.RamResourceShareAccepterConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ram_resource_share_accepter#id RamResourceShareAccepter#id}. |
+| <code><a href="#@cdktf/provider-aws.ramResourceShareAccepter.RamResourceShareAccepterConfig.property.shareArn">share_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ram_resource_share_accepter#share_arn RamResourceShareAccepter#share_arn}. |
+| <code><a href="#@cdktf/provider-aws.ramResourceShareAccepter.RamResourceShareAccepterConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ram_resource_share_accepter#id RamResourceShareAccepter#id}. |
+| <code><a href="#@cdktf/provider-aws.ramResourceShareAccepter.RamResourceShareAccepterConfig.property.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktf/provider-aws.ramResourceShareAccepter.RamResourceShareAccepterConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-aws.ramResourceShareAccepter.RamResourceShareAccepterTimeouts">RamResourceShareAccepterTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1096,7 +1139,7 @@ share_arn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ram_resource_share_accepter#share_arn RamResourceShareAccepter#share_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ram_resource_share_accepter#share_arn RamResourceShareAccepter#share_arn}.
 
 ---
 
@@ -1108,10 +1151,24 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ram_resource_share_accepter#id RamResourceShareAccepter#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ram_resource_share_accepter#id RamResourceShareAccepter#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdktf/provider-aws.ramResourceShareAccepter.RamResourceShareAccepterConfig.property.region"></a>
+
+```python
+region: str
+```
+
+- *Type:* str
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ram_resource_share_accepter#region RamResourceShareAccepter#region}
 
 ---
 
@@ -1125,7 +1182,7 @@ timeouts: RamResourceShareAccepterTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ram_resource_share_accepter#timeouts RamResourceShareAccepter#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ram_resource_share_accepter#timeouts RamResourceShareAccepter#timeouts}
 
 ---
 
@@ -1146,8 +1203,8 @@ ramResourceShareAccepter.RamResourceShareAccepterTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.ramResourceShareAccepter.RamResourceShareAccepterTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ram_resource_share_accepter#create RamResourceShareAccepter#create}. |
-| <code><a href="#@cdktf/provider-aws.ramResourceShareAccepter.RamResourceShareAccepterTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ram_resource_share_accepter#delete RamResourceShareAccepter#delete}. |
+| <code><a href="#@cdktf/provider-aws.ramResourceShareAccepter.RamResourceShareAccepterTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ram_resource_share_accepter#create RamResourceShareAccepter#create}. |
+| <code><a href="#@cdktf/provider-aws.ramResourceShareAccepter.RamResourceShareAccepterTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ram_resource_share_accepter#delete RamResourceShareAccepter#delete}. |
 
 ---
 
@@ -1159,7 +1216,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ram_resource_share_accepter#create RamResourceShareAccepter#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ram_resource_share_accepter#create RamResourceShareAccepter#create}.
 
 ---
 
@@ -1171,7 +1228,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ram_resource_share_accepter#delete RamResourceShareAccepter#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ram_resource_share_accepter#delete RamResourceShareAccepter#delete}.
 
 ---
 

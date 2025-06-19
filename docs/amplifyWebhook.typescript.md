@@ -4,7 +4,7 @@
 
 ### AmplifyWebhook <a name="AmplifyWebhook" id="@cdktf/provider-aws.amplifyWebhook.AmplifyWebhook"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/amplify_webhook aws_amplify_webhook}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/amplify_webhook aws_amplify_webhook}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.amplifyWebhook.AmplifyWebhook.Initializer"></a>
 
@@ -75,6 +75,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.amplifyWebhook.AmplifyWebhook.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-aws.amplifyWebhook.AmplifyWebhook.resetDescription">resetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.amplifyWebhook.AmplifyWebhook.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.amplifyWebhook.AmplifyWebhook.resetRegion">resetRegion</a></code> | *No description.* |
 
 ---
 
@@ -378,6 +379,12 @@ public resetDescription(): void
 public resetId(): void
 ```
 
+##### `resetRegion` <a name="resetRegion" id="@cdktf/provider-aws.amplifyWebhook.AmplifyWebhook.resetRegion"></a>
+
+```typescript
+public resetRegion(): void
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -481,7 +488,7 @@ The construct id used in the generated config for the AmplifyWebhook to import.
 
 The id of the existing AmplifyWebhook that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/amplify_webhook#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/amplify_webhook#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -517,10 +524,12 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.amplifyWebhook.AmplifyWebhook.property.branchNameInput">branchNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.amplifyWebhook.AmplifyWebhook.property.descriptionInput">descriptionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.amplifyWebhook.AmplifyWebhook.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.amplifyWebhook.AmplifyWebhook.property.regionInput">regionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.amplifyWebhook.AmplifyWebhook.property.appId">appId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.amplifyWebhook.AmplifyWebhook.property.branchName">branchName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.amplifyWebhook.AmplifyWebhook.property.description">description</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.amplifyWebhook.AmplifyWebhook.property.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.amplifyWebhook.AmplifyWebhook.property.region">region</a></code> | <code>string</code> | *No description.* |
 
 ---
 
@@ -726,6 +735,16 @@ public readonly idInput: string;
 
 ---
 
+##### `regionInput`<sup>Optional</sup> <a name="regionInput" id="@cdktf/provider-aws.amplifyWebhook.AmplifyWebhook.property.regionInput"></a>
+
+```typescript
+public readonly regionInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `appId`<sup>Required</sup> <a name="appId" id="@cdktf/provider-aws.amplifyWebhook.AmplifyWebhook.property.appId"></a>
 
 ```typescript
@@ -760,6 +779,16 @@ public readonly description: string;
 
 ```typescript
 public readonly id: string;
+```
+
+- *Type:* string
+
+---
+
+##### `region`<sup>Required</sup> <a name="region" id="@cdktf/provider-aws.amplifyWebhook.AmplifyWebhook.property.region"></a>
+
+```typescript
+public readonly region: string;
 ```
 
 - *Type:* string
@@ -807,10 +836,11 @@ const amplifyWebhookConfig: amplifyWebhook.AmplifyWebhookConfig = { ... }
 | <code><a href="#@cdktf/provider-aws.amplifyWebhook.AmplifyWebhookConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.amplifyWebhook.AmplifyWebhookConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.amplifyWebhook.AmplifyWebhookConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyWebhook.AmplifyWebhookConfig.property.appId">appId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/amplify_webhook#app_id AmplifyWebhook#app_id}. |
-| <code><a href="#@cdktf/provider-aws.amplifyWebhook.AmplifyWebhookConfig.property.branchName">branchName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/amplify_webhook#branch_name AmplifyWebhook#branch_name}. |
-| <code><a href="#@cdktf/provider-aws.amplifyWebhook.AmplifyWebhookConfig.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/amplify_webhook#description AmplifyWebhook#description}. |
-| <code><a href="#@cdktf/provider-aws.amplifyWebhook.AmplifyWebhookConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/amplify_webhook#id AmplifyWebhook#id}. |
+| <code><a href="#@cdktf/provider-aws.amplifyWebhook.AmplifyWebhookConfig.property.appId">appId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/amplify_webhook#app_id AmplifyWebhook#app_id}. |
+| <code><a href="#@cdktf/provider-aws.amplifyWebhook.AmplifyWebhookConfig.property.branchName">branchName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/amplify_webhook#branch_name AmplifyWebhook#branch_name}. |
+| <code><a href="#@cdktf/provider-aws.amplifyWebhook.AmplifyWebhookConfig.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/amplify_webhook#description AmplifyWebhook#description}. |
+| <code><a href="#@cdktf/provider-aws.amplifyWebhook.AmplifyWebhookConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/amplify_webhook#id AmplifyWebhook#id}. |
+| <code><a href="#@cdktf/provider-aws.amplifyWebhook.AmplifyWebhookConfig.property.region">region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
 
@@ -892,7 +922,7 @@ public readonly appId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/amplify_webhook#app_id AmplifyWebhook#app_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/amplify_webhook#app_id AmplifyWebhook#app_id}.
 
 ---
 
@@ -904,7 +934,7 @@ public readonly branchName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/amplify_webhook#branch_name AmplifyWebhook#branch_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/amplify_webhook#branch_name AmplifyWebhook#branch_name}.
 
 ---
 
@@ -916,7 +946,7 @@ public readonly description: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/amplify_webhook#description AmplifyWebhook#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/amplify_webhook#description AmplifyWebhook#description}.
 
 ---
 
@@ -928,10 +958,24 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/amplify_webhook#id AmplifyWebhook#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/amplify_webhook#id AmplifyWebhook#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdktf/provider-aws.amplifyWebhook.AmplifyWebhookConfig.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/amplify_webhook#region AmplifyWebhook#region}
 
 ---
 

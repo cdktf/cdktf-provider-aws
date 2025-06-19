@@ -4,12 +4,12 @@
 
 ### BackupFramework <a name="BackupFramework" id="@cdktf/provider-aws.backupFramework.BackupFramework"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/backup_framework aws_backup_framework}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/backup_framework aws_backup_framework}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.backupFramework.BackupFramework.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/backupframework"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/backupframework"
 
 backupframework.NewBackupFramework(scope Construct, id *string, config BackupFrameworkConfig) BackupFramework
 ```
@@ -77,6 +77,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.backupFramework.BackupFramework.putTimeouts">PutTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.backupFramework.BackupFramework.resetDescription">ResetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.backupFramework.BackupFramework.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.backupFramework.BackupFramework.resetRegion">ResetRegion</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.backupFramework.BackupFramework.resetTags">ResetTags</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.backupFramework.BackupFramework.resetTagsAll">ResetTagsAll</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.backupFramework.BackupFramework.resetTimeouts">ResetTimeouts</a></code> | *No description.* |
@@ -407,6 +408,12 @@ func ResetDescription()
 func ResetId()
 ```
 
+##### `ResetRegion` <a name="ResetRegion" id="@cdktf/provider-aws.backupFramework.BackupFramework.resetRegion"></a>
+
+```go
+func ResetRegion()
+```
+
 ##### `ResetTags` <a name="ResetTags" id="@cdktf/provider-aws.backupFramework.BackupFramework.resetTags"></a>
 
 ```go
@@ -439,7 +446,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.backupFramework.BackupFramework.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/backupframework"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/backupframework"
 
 backupframework.BackupFramework_IsConstruct(x interface{}) *bool
 ```
@@ -471,7 +478,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.backupFramework.BackupFramework.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/backupframework"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/backupframework"
 
 backupframework.BackupFramework_IsTerraformElement(x interface{}) *bool
 ```
@@ -485,7 +492,7 @@ backupframework.BackupFramework_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.backupFramework.BackupFramework.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/backupframework"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/backupframework"
 
 backupframework.BackupFramework_IsTerraformResource(x interface{}) *bool
 ```
@@ -499,7 +506,7 @@ backupframework.BackupFramework_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.backupFramework.BackupFramework.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/backupframework"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/backupframework"
 
 backupframework.BackupFramework_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -528,7 +535,7 @@ The construct id used in the generated config for the BackupFramework to import.
 
 The id of the existing BackupFramework that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/backup_framework#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/backup_framework#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -568,12 +575,14 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.backupFramework.BackupFramework.property.descriptionInput">DescriptionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.backupFramework.BackupFramework.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.backupFramework.BackupFramework.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.backupFramework.BackupFramework.property.regionInput">RegionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.backupFramework.BackupFramework.property.tagsAllInput">TagsAllInput</a></code> | <code>*map[string]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.backupFramework.BackupFramework.property.tagsInput">TagsInput</a></code> | <code>*map[string]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.backupFramework.BackupFramework.property.timeoutsInput">TimeoutsInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.backupFramework.BackupFramework.property.description">Description</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.backupFramework.BackupFramework.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.backupFramework.BackupFramework.property.name">Name</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.backupFramework.BackupFramework.property.region">Region</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.backupFramework.BackupFramework.property.tags">Tags</a></code> | <code>*map[string]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.backupFramework.BackupFramework.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | *No description.* |
 
@@ -821,6 +830,16 @@ func NameInput() *string
 
 ---
 
+##### `RegionInput`<sup>Optional</sup> <a name="RegionInput" id="@cdktf/provider-aws.backupFramework.BackupFramework.property.regionInput"></a>
+
+```go
+func RegionInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `TagsAllInput`<sup>Optional</sup> <a name="TagsAllInput" id="@cdktf/provider-aws.backupFramework.BackupFramework.property.tagsAllInput"></a>
 
 ```go
@@ -881,6 +900,16 @@ func Name() *string
 
 ---
 
+##### `Region`<sup>Required</sup> <a name="Region" id="@cdktf/provider-aws.backupFramework.BackupFramework.property.region"></a>
+
+```go
+func Region() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `Tags`<sup>Required</sup> <a name="Tags" id="@cdktf/provider-aws.backupFramework.BackupFramework.property.tags"></a>
 
 ```go
@@ -926,7 +955,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.backupFramework.BackupFrameworkConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/backupframework"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/backupframework"
 
 &backupframework.BackupFrameworkConfig {
 	Connection: interface{},
@@ -940,9 +969,10 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/backupframework"
 	Name: *string,
 	Description: *string,
 	Id: *string,
+	Region: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v20.backupFramework.BackupFrameworkTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v21.backupFramework.BackupFrameworkTimeouts,
 }
 ```
 
@@ -958,11 +988,12 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/backupframework"
 | <code><a href="#@cdktf/provider-aws.backupFramework.BackupFrameworkConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.backupFramework.BackupFrameworkConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.backupFramework.BackupFrameworkConfig.property.control">Control</a></code> | <code>interface{}</code> | control block. |
-| <code><a href="#@cdktf/provider-aws.backupFramework.BackupFrameworkConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/backup_framework#name BackupFramework#name}. |
-| <code><a href="#@cdktf/provider-aws.backupFramework.BackupFrameworkConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/backup_framework#description BackupFramework#description}. |
-| <code><a href="#@cdktf/provider-aws.backupFramework.BackupFrameworkConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/backup_framework#id BackupFramework#id}. |
-| <code><a href="#@cdktf/provider-aws.backupFramework.BackupFrameworkConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/backup_framework#tags BackupFramework#tags}. |
-| <code><a href="#@cdktf/provider-aws.backupFramework.BackupFrameworkConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/backup_framework#tags_all BackupFramework#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.backupFramework.BackupFrameworkConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/backup_framework#name BackupFramework#name}. |
+| <code><a href="#@cdktf/provider-aws.backupFramework.BackupFrameworkConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/backup_framework#description BackupFramework#description}. |
+| <code><a href="#@cdktf/provider-aws.backupFramework.BackupFrameworkConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/backup_framework#id BackupFramework#id}. |
+| <code><a href="#@cdktf/provider-aws.backupFramework.BackupFrameworkConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
+| <code><a href="#@cdktf/provider-aws.backupFramework.BackupFrameworkConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/backup_framework#tags BackupFramework#tags}. |
+| <code><a href="#@cdktf/provider-aws.backupFramework.BackupFrameworkConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/backup_framework#tags_all BackupFramework#tags_all}. |
 | <code><a href="#@cdktf/provider-aws.backupFramework.BackupFrameworkConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-aws.backupFramework.BackupFrameworkTimeouts">BackupFrameworkTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1047,7 +1078,7 @@ Control interface{}
 
 control block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/backup_framework#control BackupFramework#control}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/backup_framework#control BackupFramework#control}
 
 ---
 
@@ -1059,7 +1090,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/backup_framework#name BackupFramework#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/backup_framework#name BackupFramework#name}.
 
 ---
 
@@ -1071,7 +1102,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/backup_framework#description BackupFramework#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/backup_framework#description BackupFramework#description}.
 
 ---
 
@@ -1083,10 +1114,24 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/backup_framework#id BackupFramework#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/backup_framework#id BackupFramework#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `Region`<sup>Optional</sup> <a name="Region" id="@cdktf/provider-aws.backupFramework.BackupFrameworkConfig.property.region"></a>
+
+```go
+Region *string
+```
+
+- *Type:* *string
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/backup_framework#region BackupFramework#region}
 
 ---
 
@@ -1098,7 +1143,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/backup_framework#tags BackupFramework#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/backup_framework#tags BackupFramework#tags}.
 
 ---
 
@@ -1110,7 +1155,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/backup_framework#tags_all BackupFramework#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/backup_framework#tags_all BackupFramework#tags_all}.
 
 ---
 
@@ -1124,7 +1169,7 @@ Timeouts BackupFrameworkTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/backup_framework#timeouts BackupFramework#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/backup_framework#timeouts BackupFramework#timeouts}
 
 ---
 
@@ -1133,12 +1178,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.backupFramework.BackupFrameworkControl.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/backupframework"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/backupframework"
 
 &backupframework.BackupFrameworkControl {
 	Name: *string,
 	InputParameter: interface{},
-	Scope: github.com/cdktf/cdktf-provider-aws-go/aws/v20.backupFramework.BackupFrameworkControlScope,
+	Scope: github.com/cdktf/cdktf-provider-aws-go/aws/v21.backupFramework.BackupFrameworkControlScope,
 }
 ```
 
@@ -1146,7 +1191,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/backupframework"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.backupFramework.BackupFrameworkControl.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/backup_framework#name BackupFramework#name}. |
+| <code><a href="#@cdktf/provider-aws.backupFramework.BackupFrameworkControl.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/backup_framework#name BackupFramework#name}. |
 | <code><a href="#@cdktf/provider-aws.backupFramework.BackupFrameworkControl.property.inputParameter">InputParameter</a></code> | <code>interface{}</code> | input_parameter block. |
 | <code><a href="#@cdktf/provider-aws.backupFramework.BackupFrameworkControl.property.scope">Scope</a></code> | <code><a href="#@cdktf/provider-aws.backupFramework.BackupFrameworkControlScope">BackupFrameworkControlScope</a></code> | scope block. |
 
@@ -1160,7 +1205,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/backup_framework#name BackupFramework#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/backup_framework#name BackupFramework#name}.
 
 ---
 
@@ -1174,7 +1219,7 @@ InputParameter interface{}
 
 input_parameter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/backup_framework#input_parameter BackupFramework#input_parameter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/backup_framework#input_parameter BackupFramework#input_parameter}
 
 ---
 
@@ -1188,7 +1233,7 @@ Scope BackupFrameworkControlScope
 
 scope block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/backup_framework#scope BackupFramework#scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/backup_framework#scope BackupFramework#scope}
 
 ---
 
@@ -1197,7 +1242,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.backupFramework.BackupFrameworkControlInputParameter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/backupframework"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/backupframework"
 
 &backupframework.BackupFrameworkControlInputParameter {
 	Name: *string,
@@ -1209,8 +1254,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/backupframework"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.backupFramework.BackupFrameworkControlInputParameter.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/backup_framework#name BackupFramework#name}. |
-| <code><a href="#@cdktf/provider-aws.backupFramework.BackupFrameworkControlInputParameter.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/backup_framework#value BackupFramework#value}. |
+| <code><a href="#@cdktf/provider-aws.backupFramework.BackupFrameworkControlInputParameter.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/backup_framework#name BackupFramework#name}. |
+| <code><a href="#@cdktf/provider-aws.backupFramework.BackupFrameworkControlInputParameter.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/backup_framework#value BackupFramework#value}. |
 
 ---
 
@@ -1222,7 +1267,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/backup_framework#name BackupFramework#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/backup_framework#name BackupFramework#name}.
 
 ---
 
@@ -1234,7 +1279,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/backup_framework#value BackupFramework#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/backup_framework#value BackupFramework#value}.
 
 ---
 
@@ -1243,7 +1288,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.backupFramework.BackupFrameworkControlScope.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/backupframework"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/backupframework"
 
 &backupframework.BackupFrameworkControlScope {
 	ComplianceResourceIds: *[]*string,
@@ -1256,9 +1301,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/backupframework"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.backupFramework.BackupFrameworkControlScope.property.complianceResourceIds">ComplianceResourceIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/backup_framework#compliance_resource_ids BackupFramework#compliance_resource_ids}. |
-| <code><a href="#@cdktf/provider-aws.backupFramework.BackupFrameworkControlScope.property.complianceResourceTypes">ComplianceResourceTypes</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/backup_framework#compliance_resource_types BackupFramework#compliance_resource_types}. |
-| <code><a href="#@cdktf/provider-aws.backupFramework.BackupFrameworkControlScope.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/backup_framework#tags BackupFramework#tags}. |
+| <code><a href="#@cdktf/provider-aws.backupFramework.BackupFrameworkControlScope.property.complianceResourceIds">ComplianceResourceIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/backup_framework#compliance_resource_ids BackupFramework#compliance_resource_ids}. |
+| <code><a href="#@cdktf/provider-aws.backupFramework.BackupFrameworkControlScope.property.complianceResourceTypes">ComplianceResourceTypes</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/backup_framework#compliance_resource_types BackupFramework#compliance_resource_types}. |
+| <code><a href="#@cdktf/provider-aws.backupFramework.BackupFrameworkControlScope.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/backup_framework#tags BackupFramework#tags}. |
 
 ---
 
@@ -1270,7 +1315,7 @@ ComplianceResourceIds *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/backup_framework#compliance_resource_ids BackupFramework#compliance_resource_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/backup_framework#compliance_resource_ids BackupFramework#compliance_resource_ids}.
 
 ---
 
@@ -1282,7 +1327,7 @@ ComplianceResourceTypes *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/backup_framework#compliance_resource_types BackupFramework#compliance_resource_types}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/backup_framework#compliance_resource_types BackupFramework#compliance_resource_types}.
 
 ---
 
@@ -1294,7 +1339,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/backup_framework#tags BackupFramework#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/backup_framework#tags BackupFramework#tags}.
 
 ---
 
@@ -1303,7 +1348,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.backupFramework.BackupFrameworkTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/backupframework"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/backupframework"
 
 &backupframework.BackupFrameworkTimeouts {
 	Create: *string,
@@ -1316,9 +1361,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/backupframework"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.backupFramework.BackupFrameworkTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/backup_framework#create BackupFramework#create}. |
-| <code><a href="#@cdktf/provider-aws.backupFramework.BackupFrameworkTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/backup_framework#delete BackupFramework#delete}. |
-| <code><a href="#@cdktf/provider-aws.backupFramework.BackupFrameworkTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/backup_framework#update BackupFramework#update}. |
+| <code><a href="#@cdktf/provider-aws.backupFramework.BackupFrameworkTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/backup_framework#create BackupFramework#create}. |
+| <code><a href="#@cdktf/provider-aws.backupFramework.BackupFrameworkTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/backup_framework#delete BackupFramework#delete}. |
+| <code><a href="#@cdktf/provider-aws.backupFramework.BackupFrameworkTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/backup_framework#update BackupFramework#update}. |
 
 ---
 
@@ -1330,7 +1375,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/backup_framework#create BackupFramework#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/backup_framework#create BackupFramework#create}.
 
 ---
 
@@ -1342,7 +1387,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/backup_framework#delete BackupFramework#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/backup_framework#delete BackupFramework#delete}.
 
 ---
 
@@ -1354,7 +1399,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/backup_framework#update BackupFramework#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/backup_framework#update BackupFramework#update}.
 
 ---
 
@@ -1365,7 +1410,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.backupFramework.BackupFrameworkControlInputParameterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/backupframework"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/backupframework"
 
 backupframework.NewBackupFrameworkControlInputParameterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BackupFrameworkControlInputParameterList
 ```
@@ -1525,7 +1570,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.backupFramework.BackupFrameworkControlInputParameterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/backupframework"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/backupframework"
 
 backupframework.NewBackupFrameworkControlInputParameterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BackupFrameworkControlInputParameterOutputReference
 ```
@@ -1850,7 +1895,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.backupFramework.BackupFrameworkControlList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/backupframework"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/backupframework"
 
 backupframework.NewBackupFrameworkControlList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BackupFrameworkControlList
 ```
@@ -2010,7 +2055,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.backupFramework.BackupFrameworkControlOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/backupframework"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/backupframework"
 
 backupframework.NewBackupFrameworkControlOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BackupFrameworkControlOutputReference
 ```
@@ -2383,7 +2428,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.backupFramework.BackupFrameworkControlScopeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/backupframework"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/backupframework"
 
 backupframework.NewBackupFrameworkControlScopeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BackupFrameworkControlScopeOutputReference
 ```
@@ -2719,7 +2764,7 @@ func InternalValue() BackupFrameworkControlScope
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.backupFramework.BackupFrameworkTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/backupframework"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/backupframework"
 
 backupframework.NewBackupFrameworkTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BackupFrameworkTimeoutsOutputReference
 ```

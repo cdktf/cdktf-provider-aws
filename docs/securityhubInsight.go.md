@@ -4,12 +4,12 @@
 
 ### SecurityhubInsight <a name="SecurityhubInsight" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsight"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight aws_securityhub_insight}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight aws_securityhub_insight}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsight(scope Construct, id *string, config SecurityhubInsightConfig) SecurityhubInsight
 ```
@@ -75,6 +75,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.putFilters">PutFilters</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.resetRegion">ResetRegion</a></code> | *No description.* |
 
 ---
 
@@ -384,6 +385,12 @@ func PutFilters(value SecurityhubInsightFilters)
 func ResetId()
 ```
 
+##### `ResetRegion` <a name="ResetRegion" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.resetRegion"></a>
+
+```go
+func ResetRegion()
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -398,7 +405,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.SecurityhubInsight_IsConstruct(x interface{}) *bool
 ```
@@ -430,7 +437,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.SecurityhubInsight_IsTerraformElement(x interface{}) *bool
 ```
@@ -444,7 +451,7 @@ securityhubinsight.SecurityhubInsight_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.SecurityhubInsight_IsTerraformResource(x interface{}) *bool
 ```
@@ -458,7 +465,7 @@ securityhubinsight.SecurityhubInsight_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.SecurityhubInsight_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -487,7 +494,7 @@ The construct id used in the generated config for the SecurityhubInsight to impo
 
 The id of the existing SecurityhubInsight that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -523,9 +530,11 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.property.groupByAttributeInput">GroupByAttributeInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.property.regionInput">RegionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.property.groupByAttribute">GroupByAttribute</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.property.name">Name</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.property.region">Region</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
@@ -731,6 +740,16 @@ func NameInput() *string
 
 ---
 
+##### `RegionInput`<sup>Optional</sup> <a name="RegionInput" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.property.regionInput"></a>
+
+```go
+func RegionInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `GroupByAttribute`<sup>Required</sup> <a name="GroupByAttribute" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.property.groupByAttribute"></a>
 
 ```go
@@ -755,6 +774,16 @@ func Id() *string
 
 ```go
 func Name() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Region`<sup>Required</sup> <a name="Region" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsight.property.region"></a>
+
+```go
+func Region() *string
 ```
 
 - *Type:* *string
@@ -786,7 +815,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightConfig {
 	Connection: interface{},
@@ -796,10 +825,11 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	Filters: github.com/cdktf/cdktf-provider-aws-go/aws/v20.securityhubInsight.SecurityhubInsightFilters,
+	Filters: github.com/cdktf/cdktf-provider-aws-go/aws/v21.securityhubInsight.SecurityhubInsightFilters,
 	GroupByAttribute: *string,
 	Name: *string,
 	Id: *string,
+	Region: *string,
 }
 ```
 
@@ -815,9 +845,10 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightConfig.property.filters">Filters</a></code> | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters">SecurityhubInsightFilters</a></code> | filters block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightConfig.property.groupByAttribute">GroupByAttribute</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#group_by_attribute SecurityhubInsight#group_by_attribute}. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#name SecurityhubInsight#name}. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#id SecurityhubInsight#id}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightConfig.property.groupByAttribute">GroupByAttribute</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#group_by_attribute SecurityhubInsight#group_by_attribute}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#name SecurityhubInsight#name}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#id SecurityhubInsight#id}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
 
@@ -901,7 +932,7 @@ Filters SecurityhubInsightFilters
 
 filters block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#filters SecurityhubInsight#filters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#filters SecurityhubInsight#filters}
 
 ---
 
@@ -913,7 +944,7 @@ GroupByAttribute *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#group_by_attribute SecurityhubInsight#group_by_attribute}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#group_by_attribute SecurityhubInsight#group_by_attribute}.
 
 ---
 
@@ -925,7 +956,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#name SecurityhubInsight#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#name SecurityhubInsight#name}.
 
 ---
 
@@ -937,10 +968,24 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#id SecurityhubInsight#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#id SecurityhubInsight#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `Region`<sup>Optional</sup> <a name="Region" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightConfig.property.region"></a>
+
+```go
+Region *string
+```
+
+- *Type:* *string
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#region SecurityhubInsight#region}
 
 ---
 
@@ -949,7 +994,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFilters.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFilters {
 	AwsAccountId: interface{},
@@ -1148,7 +1193,7 @@ AwsAccountId interface{}
 
 aws_account_id block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#aws_account_id SecurityhubInsight#aws_account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#aws_account_id SecurityhubInsight#aws_account_id}
 
 ---
 
@@ -1162,7 +1207,7 @@ CompanyName interface{}
 
 company_name block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#company_name SecurityhubInsight#company_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#company_name SecurityhubInsight#company_name}
 
 ---
 
@@ -1176,7 +1221,7 @@ ComplianceStatus interface{}
 
 compliance_status block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#compliance_status SecurityhubInsight#compliance_status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#compliance_status SecurityhubInsight#compliance_status}
 
 ---
 
@@ -1190,7 +1235,7 @@ Confidence interface{}
 
 confidence block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#confidence SecurityhubInsight#confidence}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#confidence SecurityhubInsight#confidence}
 
 ---
 
@@ -1204,7 +1249,7 @@ CreatedAt interface{}
 
 created_at block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#created_at SecurityhubInsight#created_at}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#created_at SecurityhubInsight#created_at}
 
 ---
 
@@ -1218,7 +1263,7 @@ Criticality interface{}
 
 criticality block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#criticality SecurityhubInsight#criticality}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#criticality SecurityhubInsight#criticality}
 
 ---
 
@@ -1232,7 +1277,7 @@ Description interface{}
 
 description block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#description SecurityhubInsight#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#description SecurityhubInsight#description}
 
 ---
 
@@ -1246,7 +1291,7 @@ FindingProviderFieldsConfidence interface{}
 
 finding_provider_fields_confidence block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#finding_provider_fields_confidence SecurityhubInsight#finding_provider_fields_confidence}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#finding_provider_fields_confidence SecurityhubInsight#finding_provider_fields_confidence}
 
 ---
 
@@ -1260,7 +1305,7 @@ FindingProviderFieldsCriticality interface{}
 
 finding_provider_fields_criticality block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#finding_provider_fields_criticality SecurityhubInsight#finding_provider_fields_criticality}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#finding_provider_fields_criticality SecurityhubInsight#finding_provider_fields_criticality}
 
 ---
 
@@ -1274,7 +1319,7 @@ FindingProviderFieldsRelatedFindingsId interface{}
 
 finding_provider_fields_related_findings_id block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#finding_provider_fields_related_findings_id SecurityhubInsight#finding_provider_fields_related_findings_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#finding_provider_fields_related_findings_id SecurityhubInsight#finding_provider_fields_related_findings_id}
 
 ---
 
@@ -1288,7 +1333,7 @@ FindingProviderFieldsRelatedFindingsProductArn interface{}
 
 finding_provider_fields_related_findings_product_arn block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#finding_provider_fields_related_findings_product_arn SecurityhubInsight#finding_provider_fields_related_findings_product_arn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#finding_provider_fields_related_findings_product_arn SecurityhubInsight#finding_provider_fields_related_findings_product_arn}
 
 ---
 
@@ -1302,7 +1347,7 @@ FindingProviderFieldsSeverityLabel interface{}
 
 finding_provider_fields_severity_label block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#finding_provider_fields_severity_label SecurityhubInsight#finding_provider_fields_severity_label}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#finding_provider_fields_severity_label SecurityhubInsight#finding_provider_fields_severity_label}
 
 ---
 
@@ -1316,7 +1361,7 @@ FindingProviderFieldsSeverityOriginal interface{}
 
 finding_provider_fields_severity_original block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#finding_provider_fields_severity_original SecurityhubInsight#finding_provider_fields_severity_original}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#finding_provider_fields_severity_original SecurityhubInsight#finding_provider_fields_severity_original}
 
 ---
 
@@ -1330,7 +1375,7 @@ FindingProviderFieldsTypes interface{}
 
 finding_provider_fields_types block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#finding_provider_fields_types SecurityhubInsight#finding_provider_fields_types}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#finding_provider_fields_types SecurityhubInsight#finding_provider_fields_types}
 
 ---
 
@@ -1344,7 +1389,7 @@ FirstObservedAt interface{}
 
 first_observed_at block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#first_observed_at SecurityhubInsight#first_observed_at}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#first_observed_at SecurityhubInsight#first_observed_at}
 
 ---
 
@@ -1358,7 +1403,7 @@ GeneratorId interface{}
 
 generator_id block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#generator_id SecurityhubInsight#generator_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#generator_id SecurityhubInsight#generator_id}
 
 ---
 
@@ -1372,7 +1417,7 @@ Id interface{}
 
 id block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#id SecurityhubInsight#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#id SecurityhubInsight#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1389,7 +1434,7 @@ Keyword interface{}
 
 keyword block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#keyword SecurityhubInsight#keyword}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#keyword SecurityhubInsight#keyword}
 
 ---
 
@@ -1403,7 +1448,7 @@ LastObservedAt interface{}
 
 last_observed_at block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#last_observed_at SecurityhubInsight#last_observed_at}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#last_observed_at SecurityhubInsight#last_observed_at}
 
 ---
 
@@ -1417,7 +1462,7 @@ MalwareName interface{}
 
 malware_name block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#malware_name SecurityhubInsight#malware_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#malware_name SecurityhubInsight#malware_name}
 
 ---
 
@@ -1431,7 +1476,7 @@ MalwarePath interface{}
 
 malware_path block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#malware_path SecurityhubInsight#malware_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#malware_path SecurityhubInsight#malware_path}
 
 ---
 
@@ -1445,7 +1490,7 @@ MalwareState interface{}
 
 malware_state block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#malware_state SecurityhubInsight#malware_state}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#malware_state SecurityhubInsight#malware_state}
 
 ---
 
@@ -1459,7 +1504,7 @@ MalwareType interface{}
 
 malware_type block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#malware_type SecurityhubInsight#malware_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#malware_type SecurityhubInsight#malware_type}
 
 ---
 
@@ -1473,7 +1518,7 @@ NetworkDestinationDomain interface{}
 
 network_destination_domain block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#network_destination_domain SecurityhubInsight#network_destination_domain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#network_destination_domain SecurityhubInsight#network_destination_domain}
 
 ---
 
@@ -1487,7 +1532,7 @@ NetworkDestinationIpv4 interface{}
 
 network_destination_ipv4 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#network_destination_ipv4 SecurityhubInsight#network_destination_ipv4}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#network_destination_ipv4 SecurityhubInsight#network_destination_ipv4}
 
 ---
 
@@ -1501,7 +1546,7 @@ NetworkDestinationIpv6 interface{}
 
 network_destination_ipv6 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#network_destination_ipv6 SecurityhubInsight#network_destination_ipv6}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#network_destination_ipv6 SecurityhubInsight#network_destination_ipv6}
 
 ---
 
@@ -1515,7 +1560,7 @@ NetworkDestinationPort interface{}
 
 network_destination_port block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#network_destination_port SecurityhubInsight#network_destination_port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#network_destination_port SecurityhubInsight#network_destination_port}
 
 ---
 
@@ -1529,7 +1574,7 @@ NetworkDirection interface{}
 
 network_direction block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#network_direction SecurityhubInsight#network_direction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#network_direction SecurityhubInsight#network_direction}
 
 ---
 
@@ -1543,7 +1588,7 @@ NetworkProtocol interface{}
 
 network_protocol block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#network_protocol SecurityhubInsight#network_protocol}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#network_protocol SecurityhubInsight#network_protocol}
 
 ---
 
@@ -1557,7 +1602,7 @@ NetworkSourceDomain interface{}
 
 network_source_domain block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#network_source_domain SecurityhubInsight#network_source_domain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#network_source_domain SecurityhubInsight#network_source_domain}
 
 ---
 
@@ -1571,7 +1616,7 @@ NetworkSourceIpv4 interface{}
 
 network_source_ipv4 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#network_source_ipv4 SecurityhubInsight#network_source_ipv4}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#network_source_ipv4 SecurityhubInsight#network_source_ipv4}
 
 ---
 
@@ -1585,7 +1630,7 @@ NetworkSourceIpv6 interface{}
 
 network_source_ipv6 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#network_source_ipv6 SecurityhubInsight#network_source_ipv6}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#network_source_ipv6 SecurityhubInsight#network_source_ipv6}
 
 ---
 
@@ -1599,7 +1644,7 @@ NetworkSourceMac interface{}
 
 network_source_mac block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#network_source_mac SecurityhubInsight#network_source_mac}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#network_source_mac SecurityhubInsight#network_source_mac}
 
 ---
 
@@ -1613,7 +1658,7 @@ NetworkSourcePort interface{}
 
 network_source_port block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#network_source_port SecurityhubInsight#network_source_port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#network_source_port SecurityhubInsight#network_source_port}
 
 ---
 
@@ -1627,7 +1672,7 @@ NoteText interface{}
 
 note_text block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#note_text SecurityhubInsight#note_text}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#note_text SecurityhubInsight#note_text}
 
 ---
 
@@ -1641,7 +1686,7 @@ NoteUpdatedAt interface{}
 
 note_updated_at block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#note_updated_at SecurityhubInsight#note_updated_at}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#note_updated_at SecurityhubInsight#note_updated_at}
 
 ---
 
@@ -1655,7 +1700,7 @@ NoteUpdatedBy interface{}
 
 note_updated_by block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#note_updated_by SecurityhubInsight#note_updated_by}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#note_updated_by SecurityhubInsight#note_updated_by}
 
 ---
 
@@ -1669,7 +1714,7 @@ ProcessLaunchedAt interface{}
 
 process_launched_at block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#process_launched_at SecurityhubInsight#process_launched_at}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#process_launched_at SecurityhubInsight#process_launched_at}
 
 ---
 
@@ -1683,7 +1728,7 @@ ProcessName interface{}
 
 process_name block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#process_name SecurityhubInsight#process_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#process_name SecurityhubInsight#process_name}
 
 ---
 
@@ -1697,7 +1742,7 @@ ProcessParentPid interface{}
 
 process_parent_pid block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#process_parent_pid SecurityhubInsight#process_parent_pid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#process_parent_pid SecurityhubInsight#process_parent_pid}
 
 ---
 
@@ -1711,7 +1756,7 @@ ProcessPath interface{}
 
 process_path block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#process_path SecurityhubInsight#process_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#process_path SecurityhubInsight#process_path}
 
 ---
 
@@ -1725,7 +1770,7 @@ ProcessPid interface{}
 
 process_pid block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#process_pid SecurityhubInsight#process_pid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#process_pid SecurityhubInsight#process_pid}
 
 ---
 
@@ -1739,7 +1784,7 @@ ProcessTerminatedAt interface{}
 
 process_terminated_at block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#process_terminated_at SecurityhubInsight#process_terminated_at}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#process_terminated_at SecurityhubInsight#process_terminated_at}
 
 ---
 
@@ -1753,7 +1798,7 @@ ProductArn interface{}
 
 product_arn block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#product_arn SecurityhubInsight#product_arn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#product_arn SecurityhubInsight#product_arn}
 
 ---
 
@@ -1767,7 +1812,7 @@ ProductFields interface{}
 
 product_fields block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#product_fields SecurityhubInsight#product_fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#product_fields SecurityhubInsight#product_fields}
 
 ---
 
@@ -1781,7 +1826,7 @@ ProductName interface{}
 
 product_name block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#product_name SecurityhubInsight#product_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#product_name SecurityhubInsight#product_name}
 
 ---
 
@@ -1795,7 +1840,7 @@ RecommendationText interface{}
 
 recommendation_text block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#recommendation_text SecurityhubInsight#recommendation_text}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#recommendation_text SecurityhubInsight#recommendation_text}
 
 ---
 
@@ -1809,7 +1854,7 @@ RecordState interface{}
 
 record_state block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#record_state SecurityhubInsight#record_state}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#record_state SecurityhubInsight#record_state}
 
 ---
 
@@ -1823,7 +1868,7 @@ RelatedFindingsId interface{}
 
 related_findings_id block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#related_findings_id SecurityhubInsight#related_findings_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#related_findings_id SecurityhubInsight#related_findings_id}
 
 ---
 
@@ -1837,7 +1882,7 @@ RelatedFindingsProductArn interface{}
 
 related_findings_product_arn block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#related_findings_product_arn SecurityhubInsight#related_findings_product_arn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#related_findings_product_arn SecurityhubInsight#related_findings_product_arn}
 
 ---
 
@@ -1851,7 +1896,7 @@ ResourceAwsEc2InstanceIamInstanceProfileArn interface{}
 
 resource_aws_ec2_instance_iam_instance_profile_arn block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#resource_aws_ec2_instance_iam_instance_profile_arn SecurityhubInsight#resource_aws_ec2_instance_iam_instance_profile_arn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#resource_aws_ec2_instance_iam_instance_profile_arn SecurityhubInsight#resource_aws_ec2_instance_iam_instance_profile_arn}
 
 ---
 
@@ -1865,7 +1910,7 @@ ResourceAwsEc2InstanceImageId interface{}
 
 resource_aws_ec2_instance_image_id block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#resource_aws_ec2_instance_image_id SecurityhubInsight#resource_aws_ec2_instance_image_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#resource_aws_ec2_instance_image_id SecurityhubInsight#resource_aws_ec2_instance_image_id}
 
 ---
 
@@ -1879,7 +1924,7 @@ ResourceAwsEc2InstanceIpv4Addresses interface{}
 
 resource_aws_ec2_instance_ipv4_addresses block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#resource_aws_ec2_instance_ipv4_addresses SecurityhubInsight#resource_aws_ec2_instance_ipv4_addresses}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#resource_aws_ec2_instance_ipv4_addresses SecurityhubInsight#resource_aws_ec2_instance_ipv4_addresses}
 
 ---
 
@@ -1893,7 +1938,7 @@ ResourceAwsEc2InstanceIpv6Addresses interface{}
 
 resource_aws_ec2_instance_ipv6_addresses block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#resource_aws_ec2_instance_ipv6_addresses SecurityhubInsight#resource_aws_ec2_instance_ipv6_addresses}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#resource_aws_ec2_instance_ipv6_addresses SecurityhubInsight#resource_aws_ec2_instance_ipv6_addresses}
 
 ---
 
@@ -1907,7 +1952,7 @@ ResourceAwsEc2InstanceKeyName interface{}
 
 resource_aws_ec2_instance_key_name block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#resource_aws_ec2_instance_key_name SecurityhubInsight#resource_aws_ec2_instance_key_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#resource_aws_ec2_instance_key_name SecurityhubInsight#resource_aws_ec2_instance_key_name}
 
 ---
 
@@ -1921,7 +1966,7 @@ ResourceAwsEc2InstanceLaunchedAt interface{}
 
 resource_aws_ec2_instance_launched_at block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#resource_aws_ec2_instance_launched_at SecurityhubInsight#resource_aws_ec2_instance_launched_at}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#resource_aws_ec2_instance_launched_at SecurityhubInsight#resource_aws_ec2_instance_launched_at}
 
 ---
 
@@ -1935,7 +1980,7 @@ ResourceAwsEc2InstanceSubnetId interface{}
 
 resource_aws_ec2_instance_subnet_id block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#resource_aws_ec2_instance_subnet_id SecurityhubInsight#resource_aws_ec2_instance_subnet_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#resource_aws_ec2_instance_subnet_id SecurityhubInsight#resource_aws_ec2_instance_subnet_id}
 
 ---
 
@@ -1949,7 +1994,7 @@ ResourceAwsEc2InstanceType interface{}
 
 resource_aws_ec2_instance_type block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#resource_aws_ec2_instance_type SecurityhubInsight#resource_aws_ec2_instance_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#resource_aws_ec2_instance_type SecurityhubInsight#resource_aws_ec2_instance_type}
 
 ---
 
@@ -1963,7 +2008,7 @@ ResourceAwsEc2InstanceVpcId interface{}
 
 resource_aws_ec2_instance_vpc_id block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#resource_aws_ec2_instance_vpc_id SecurityhubInsight#resource_aws_ec2_instance_vpc_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#resource_aws_ec2_instance_vpc_id SecurityhubInsight#resource_aws_ec2_instance_vpc_id}
 
 ---
 
@@ -1977,7 +2022,7 @@ ResourceAwsIamAccessKeyCreatedAt interface{}
 
 resource_aws_iam_access_key_created_at block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#resource_aws_iam_access_key_created_at SecurityhubInsight#resource_aws_iam_access_key_created_at}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#resource_aws_iam_access_key_created_at SecurityhubInsight#resource_aws_iam_access_key_created_at}
 
 ---
 
@@ -1991,7 +2036,7 @@ ResourceAwsIamAccessKeyStatus interface{}
 
 resource_aws_iam_access_key_status block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#resource_aws_iam_access_key_status SecurityhubInsight#resource_aws_iam_access_key_status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#resource_aws_iam_access_key_status SecurityhubInsight#resource_aws_iam_access_key_status}
 
 ---
 
@@ -2005,7 +2050,7 @@ ResourceAwsIamAccessKeyUserName interface{}
 
 resource_aws_iam_access_key_user_name block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#resource_aws_iam_access_key_user_name SecurityhubInsight#resource_aws_iam_access_key_user_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#resource_aws_iam_access_key_user_name SecurityhubInsight#resource_aws_iam_access_key_user_name}
 
 ---
 
@@ -2019,7 +2064,7 @@ ResourceAwsS3BucketOwnerId interface{}
 
 resource_aws_s3_bucket_owner_id block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#resource_aws_s3_bucket_owner_id SecurityhubInsight#resource_aws_s3_bucket_owner_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#resource_aws_s3_bucket_owner_id SecurityhubInsight#resource_aws_s3_bucket_owner_id}
 
 ---
 
@@ -2033,7 +2078,7 @@ ResourceAwsS3BucketOwnerName interface{}
 
 resource_aws_s3_bucket_owner_name block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#resource_aws_s3_bucket_owner_name SecurityhubInsight#resource_aws_s3_bucket_owner_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#resource_aws_s3_bucket_owner_name SecurityhubInsight#resource_aws_s3_bucket_owner_name}
 
 ---
 
@@ -2047,7 +2092,7 @@ ResourceContainerImageId interface{}
 
 resource_container_image_id block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#resource_container_image_id SecurityhubInsight#resource_container_image_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#resource_container_image_id SecurityhubInsight#resource_container_image_id}
 
 ---
 
@@ -2061,7 +2106,7 @@ ResourceContainerImageName interface{}
 
 resource_container_image_name block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#resource_container_image_name SecurityhubInsight#resource_container_image_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#resource_container_image_name SecurityhubInsight#resource_container_image_name}
 
 ---
 
@@ -2075,7 +2120,7 @@ ResourceContainerLaunchedAt interface{}
 
 resource_container_launched_at block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#resource_container_launched_at SecurityhubInsight#resource_container_launched_at}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#resource_container_launched_at SecurityhubInsight#resource_container_launched_at}
 
 ---
 
@@ -2089,7 +2134,7 @@ ResourceContainerName interface{}
 
 resource_container_name block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#resource_container_name SecurityhubInsight#resource_container_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#resource_container_name SecurityhubInsight#resource_container_name}
 
 ---
 
@@ -2103,7 +2148,7 @@ ResourceDetailsOther interface{}
 
 resource_details_other block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#resource_details_other SecurityhubInsight#resource_details_other}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#resource_details_other SecurityhubInsight#resource_details_other}
 
 ---
 
@@ -2117,7 +2162,7 @@ ResourceId interface{}
 
 resource_id block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#resource_id SecurityhubInsight#resource_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#resource_id SecurityhubInsight#resource_id}
 
 ---
 
@@ -2131,7 +2176,7 @@ ResourcePartition interface{}
 
 resource_partition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#resource_partition SecurityhubInsight#resource_partition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#resource_partition SecurityhubInsight#resource_partition}
 
 ---
 
@@ -2145,7 +2190,7 @@ ResourceRegion interface{}
 
 resource_region block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#resource_region SecurityhubInsight#resource_region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#resource_region SecurityhubInsight#resource_region}
 
 ---
 
@@ -2159,7 +2204,7 @@ ResourceTags interface{}
 
 resource_tags block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#resource_tags SecurityhubInsight#resource_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#resource_tags SecurityhubInsight#resource_tags}
 
 ---
 
@@ -2173,7 +2218,7 @@ ResourceType interface{}
 
 resource_type block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#resource_type SecurityhubInsight#resource_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#resource_type SecurityhubInsight#resource_type}
 
 ---
 
@@ -2187,7 +2232,7 @@ SeverityLabel interface{}
 
 severity_label block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#severity_label SecurityhubInsight#severity_label}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#severity_label SecurityhubInsight#severity_label}
 
 ---
 
@@ -2201,7 +2246,7 @@ SourceUrl interface{}
 
 source_url block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#source_url SecurityhubInsight#source_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#source_url SecurityhubInsight#source_url}
 
 ---
 
@@ -2215,7 +2260,7 @@ ThreatIntelIndicatorCategory interface{}
 
 threat_intel_indicator_category block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#threat_intel_indicator_category SecurityhubInsight#threat_intel_indicator_category}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#threat_intel_indicator_category SecurityhubInsight#threat_intel_indicator_category}
 
 ---
 
@@ -2229,7 +2274,7 @@ ThreatIntelIndicatorLastObservedAt interface{}
 
 threat_intel_indicator_last_observed_at block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#threat_intel_indicator_last_observed_at SecurityhubInsight#threat_intel_indicator_last_observed_at}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#threat_intel_indicator_last_observed_at SecurityhubInsight#threat_intel_indicator_last_observed_at}
 
 ---
 
@@ -2243,7 +2288,7 @@ ThreatIntelIndicatorSource interface{}
 
 threat_intel_indicator_source block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#threat_intel_indicator_source SecurityhubInsight#threat_intel_indicator_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#threat_intel_indicator_source SecurityhubInsight#threat_intel_indicator_source}
 
 ---
 
@@ -2257,7 +2302,7 @@ ThreatIntelIndicatorSourceUrl interface{}
 
 threat_intel_indicator_source_url block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#threat_intel_indicator_source_url SecurityhubInsight#threat_intel_indicator_source_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#threat_intel_indicator_source_url SecurityhubInsight#threat_intel_indicator_source_url}
 
 ---
 
@@ -2271,7 +2316,7 @@ ThreatIntelIndicatorType interface{}
 
 threat_intel_indicator_type block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#threat_intel_indicator_type SecurityhubInsight#threat_intel_indicator_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#threat_intel_indicator_type SecurityhubInsight#threat_intel_indicator_type}
 
 ---
 
@@ -2285,7 +2330,7 @@ ThreatIntelIndicatorValue interface{}
 
 threat_intel_indicator_value block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#threat_intel_indicator_value SecurityhubInsight#threat_intel_indicator_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#threat_intel_indicator_value SecurityhubInsight#threat_intel_indicator_value}
 
 ---
 
@@ -2299,7 +2344,7 @@ Title interface{}
 
 title block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#title SecurityhubInsight#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#title SecurityhubInsight#title}
 
 ---
 
@@ -2313,7 +2358,7 @@ Type interface{}
 
 type block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#type SecurityhubInsight#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#type SecurityhubInsight#type}
 
 ---
 
@@ -2327,7 +2372,7 @@ UpdatedAt interface{}
 
 updated_at block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#updated_at SecurityhubInsight#updated_at}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#updated_at SecurityhubInsight#updated_at}
 
 ---
 
@@ -2341,7 +2386,7 @@ UserDefinedValues interface{}
 
 user_defined_values block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#user_defined_values SecurityhubInsight#user_defined_values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#user_defined_values SecurityhubInsight#user_defined_values}
 
 ---
 
@@ -2355,7 +2400,7 @@ VerificationState interface{}
 
 verification_state block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#verification_state SecurityhubInsight#verification_state}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#verification_state SecurityhubInsight#verification_state}
 
 ---
 
@@ -2369,7 +2414,7 @@ WorkflowStatus interface{}
 
 workflow_status block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#workflow_status SecurityhubInsight#workflow_status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#workflow_status SecurityhubInsight#workflow_status}
 
 ---
 
@@ -2378,7 +2423,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersAwsAccountId.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersAwsAccountId {
 	Comparison: *string,
@@ -2390,8 +2435,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersAwsAccountId.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersAwsAccountId.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersAwsAccountId.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersAwsAccountId.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
 
 ---
 
@@ -2403,7 +2448,7 @@ Comparison *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
 
 ---
 
@@ -2415,7 +2460,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -2424,7 +2469,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCompanyName.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersCompanyName {
 	Comparison: *string,
@@ -2436,8 +2481,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCompanyName.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCompanyName.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCompanyName.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCompanyName.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
 
 ---
 
@@ -2449,7 +2494,7 @@ Comparison *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
 
 ---
 
@@ -2461,7 +2506,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -2470,7 +2515,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersComplianceStatus.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersComplianceStatus {
 	Comparison: *string,
@@ -2482,8 +2527,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersComplianceStatus.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersComplianceStatus.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersComplianceStatus.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersComplianceStatus.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
 
 ---
 
@@ -2495,7 +2540,7 @@ Comparison *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
 
 ---
 
@@ -2507,7 +2552,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -2516,7 +2561,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersConfidence.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersConfidence {
 	Eq: *string,
@@ -2529,9 +2574,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersConfidence.property.eq">Eq</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#eq SecurityhubInsight#eq}. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersConfidence.property.gte">Gte</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#gte SecurityhubInsight#gte}. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersConfidence.property.lte">Lte</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#lte SecurityhubInsight#lte}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersConfidence.property.eq">Eq</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#eq SecurityhubInsight#eq}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersConfidence.property.gte">Gte</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#gte SecurityhubInsight#gte}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersConfidence.property.lte">Lte</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#lte SecurityhubInsight#lte}. |
 
 ---
 
@@ -2543,7 +2588,7 @@ Eq *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#eq SecurityhubInsight#eq}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#eq SecurityhubInsight#eq}.
 
 ---
 
@@ -2555,7 +2600,7 @@ Gte *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#gte SecurityhubInsight#gte}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#gte SecurityhubInsight#gte}.
 
 ---
 
@@ -2567,7 +2612,7 @@ Lte *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#lte SecurityhubInsight#lte}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#lte SecurityhubInsight#lte}.
 
 ---
 
@@ -2576,10 +2621,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCreatedAt.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersCreatedAt {
-	DateRange: github.com/cdktf/cdktf-provider-aws-go/aws/v20.securityhubInsight.SecurityhubInsightFiltersCreatedAtDateRange,
+	DateRange: github.com/cdktf/cdktf-provider-aws-go/aws/v21.securityhubInsight.SecurityhubInsightFiltersCreatedAtDateRange,
 	End: *string,
 	Start: *string,
 }
@@ -2590,8 +2635,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCreatedAt.property.dateRange">DateRange</a></code> | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCreatedAtDateRange">SecurityhubInsightFiltersCreatedAtDateRange</a></code> | date_range block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCreatedAt.property.end">End</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCreatedAt.property.start">Start</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCreatedAt.property.end">End</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCreatedAt.property.start">Start</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}. |
 
 ---
 
@@ -2605,7 +2650,7 @@ DateRange SecurityhubInsightFiltersCreatedAtDateRange
 
 date_range block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#date_range SecurityhubInsight#date_range}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#date_range SecurityhubInsight#date_range}
 
 ---
 
@@ -2617,7 +2662,7 @@ End *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}.
 
 ---
 
@@ -2629,7 +2674,7 @@ Start *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}.
 
 ---
 
@@ -2638,7 +2683,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCreatedAtDateRange.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersCreatedAtDateRange {
 	Unit: *string,
@@ -2650,8 +2695,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCreatedAtDateRange.property.unit">Unit</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCreatedAtDateRange.property.value">Value</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCreatedAtDateRange.property.unit">Unit</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCreatedAtDateRange.property.value">Value</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
 
 ---
 
@@ -2663,7 +2708,7 @@ Unit *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}.
 
 ---
 
@@ -2675,7 +2720,7 @@ Value *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -2684,7 +2729,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCriticality.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersCriticality {
 	Eq: *string,
@@ -2697,9 +2742,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCriticality.property.eq">Eq</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#eq SecurityhubInsight#eq}. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCriticality.property.gte">Gte</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#gte SecurityhubInsight#gte}. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCriticality.property.lte">Lte</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#lte SecurityhubInsight#lte}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCriticality.property.eq">Eq</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#eq SecurityhubInsight#eq}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCriticality.property.gte">Gte</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#gte SecurityhubInsight#gte}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCriticality.property.lte">Lte</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#lte SecurityhubInsight#lte}. |
 
 ---
 
@@ -2711,7 +2756,7 @@ Eq *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#eq SecurityhubInsight#eq}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#eq SecurityhubInsight#eq}.
 
 ---
 
@@ -2723,7 +2768,7 @@ Gte *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#gte SecurityhubInsight#gte}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#gte SecurityhubInsight#gte}.
 
 ---
 
@@ -2735,7 +2780,7 @@ Lte *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#lte SecurityhubInsight#lte}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#lte SecurityhubInsight#lte}.
 
 ---
 
@@ -2744,7 +2789,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersDescription.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersDescription {
 	Comparison: *string,
@@ -2756,8 +2801,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersDescription.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersDescription.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersDescription.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersDescription.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
 
 ---
 
@@ -2769,7 +2814,7 @@ Comparison *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
 
 ---
 
@@ -2781,7 +2826,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -2790,7 +2835,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsConfidence.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersFindingProviderFieldsConfidence {
 	Eq: *string,
@@ -2803,9 +2848,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsConfidence.property.eq">Eq</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#eq SecurityhubInsight#eq}. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsConfidence.property.gte">Gte</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#gte SecurityhubInsight#gte}. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsConfidence.property.lte">Lte</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#lte SecurityhubInsight#lte}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsConfidence.property.eq">Eq</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#eq SecurityhubInsight#eq}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsConfidence.property.gte">Gte</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#gte SecurityhubInsight#gte}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsConfidence.property.lte">Lte</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#lte SecurityhubInsight#lte}. |
 
 ---
 
@@ -2817,7 +2862,7 @@ Eq *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#eq SecurityhubInsight#eq}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#eq SecurityhubInsight#eq}.
 
 ---
 
@@ -2829,7 +2874,7 @@ Gte *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#gte SecurityhubInsight#gte}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#gte SecurityhubInsight#gte}.
 
 ---
 
@@ -2841,7 +2886,7 @@ Lte *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#lte SecurityhubInsight#lte}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#lte SecurityhubInsight#lte}.
 
 ---
 
@@ -2850,7 +2895,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsCriticality.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersFindingProviderFieldsCriticality {
 	Eq: *string,
@@ -2863,9 +2908,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsCriticality.property.eq">Eq</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#eq SecurityhubInsight#eq}. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsCriticality.property.gte">Gte</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#gte SecurityhubInsight#gte}. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsCriticality.property.lte">Lte</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#lte SecurityhubInsight#lte}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsCriticality.property.eq">Eq</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#eq SecurityhubInsight#eq}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsCriticality.property.gte">Gte</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#gte SecurityhubInsight#gte}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsCriticality.property.lte">Lte</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#lte SecurityhubInsight#lte}. |
 
 ---
 
@@ -2877,7 +2922,7 @@ Eq *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#eq SecurityhubInsight#eq}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#eq SecurityhubInsight#eq}.
 
 ---
 
@@ -2889,7 +2934,7 @@ Gte *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#gte SecurityhubInsight#gte}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#gte SecurityhubInsight#gte}.
 
 ---
 
@@ -2901,7 +2946,7 @@ Lte *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#lte SecurityhubInsight#lte}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#lte SecurityhubInsight#lte}.
 
 ---
 
@@ -2910,7 +2955,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId {
 	Comparison: *string,
@@ -2922,8 +2967,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
 
 ---
 
@@ -2935,7 +2980,7 @@ Comparison *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
 
 ---
 
@@ -2947,7 +2992,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -2956,7 +3001,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn {
 	Comparison: *string,
@@ -2968,8 +3013,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
 
 ---
 
@@ -2981,7 +3026,7 @@ Comparison *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
 
 ---
 
@@ -2993,7 +3038,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -3002,7 +3047,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel {
 	Comparison: *string,
@@ -3014,8 +3059,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
 
 ---
 
@@ -3027,7 +3072,7 @@ Comparison *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
 
 ---
 
@@ -3039,7 +3084,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -3048,7 +3093,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal {
 	Comparison: *string,
@@ -3060,8 +3105,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
 
 ---
 
@@ -3073,7 +3118,7 @@ Comparison *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
 
 ---
 
@@ -3085,7 +3130,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -3094,7 +3139,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsTypes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersFindingProviderFieldsTypes {
 	Comparison: *string,
@@ -3106,8 +3151,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsTypes.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsTypes.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsTypes.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsTypes.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
 
 ---
 
@@ -3119,7 +3164,7 @@ Comparison *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
 
 ---
 
@@ -3131,7 +3176,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -3140,10 +3185,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFirstObservedAt.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersFirstObservedAt {
-	DateRange: github.com/cdktf/cdktf-provider-aws-go/aws/v20.securityhubInsight.SecurityhubInsightFiltersFirstObservedAtDateRange,
+	DateRange: github.com/cdktf/cdktf-provider-aws-go/aws/v21.securityhubInsight.SecurityhubInsightFiltersFirstObservedAtDateRange,
 	End: *string,
 	Start: *string,
 }
@@ -3154,8 +3199,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFirstObservedAt.property.dateRange">DateRange</a></code> | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFirstObservedAtDateRange">SecurityhubInsightFiltersFirstObservedAtDateRange</a></code> | date_range block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFirstObservedAt.property.end">End</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFirstObservedAt.property.start">Start</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFirstObservedAt.property.end">End</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFirstObservedAt.property.start">Start</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}. |
 
 ---
 
@@ -3169,7 +3214,7 @@ DateRange SecurityhubInsightFiltersFirstObservedAtDateRange
 
 date_range block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#date_range SecurityhubInsight#date_range}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#date_range SecurityhubInsight#date_range}
 
 ---
 
@@ -3181,7 +3226,7 @@ End *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}.
 
 ---
 
@@ -3193,7 +3238,7 @@ Start *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}.
 
 ---
 
@@ -3202,7 +3247,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFirstObservedAtDateRange.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersFirstObservedAtDateRange {
 	Unit: *string,
@@ -3214,8 +3259,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFirstObservedAtDateRange.property.unit">Unit</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFirstObservedAtDateRange.property.value">Value</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFirstObservedAtDateRange.property.unit">Unit</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFirstObservedAtDateRange.property.value">Value</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
 
 ---
 
@@ -3227,7 +3272,7 @@ Unit *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}.
 
 ---
 
@@ -3239,7 +3284,7 @@ Value *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -3248,7 +3293,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersGeneratorId.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersGeneratorId {
 	Comparison: *string,
@@ -3260,8 +3305,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersGeneratorId.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersGeneratorId.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersGeneratorId.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersGeneratorId.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
 
 ---
 
@@ -3273,7 +3318,7 @@ Comparison *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
 
 ---
 
@@ -3285,7 +3330,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -3294,7 +3339,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersId.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersId {
 	Comparison: *string,
@@ -3306,8 +3351,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersId.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersId.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersId.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersId.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
 
 ---
 
@@ -3319,7 +3364,7 @@ Comparison *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
 
 ---
 
@@ -3331,7 +3376,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -3340,7 +3385,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersKeyword.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersKeyword {
 	Value: *string,
@@ -3351,7 +3396,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersKeyword.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersKeyword.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
 
 ---
 
@@ -3363,7 +3408,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -3372,10 +3417,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersLastObservedAt.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersLastObservedAt {
-	DateRange: github.com/cdktf/cdktf-provider-aws-go/aws/v20.securityhubInsight.SecurityhubInsightFiltersLastObservedAtDateRange,
+	DateRange: github.com/cdktf/cdktf-provider-aws-go/aws/v21.securityhubInsight.SecurityhubInsightFiltersLastObservedAtDateRange,
 	End: *string,
 	Start: *string,
 }
@@ -3386,8 +3431,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersLastObservedAt.property.dateRange">DateRange</a></code> | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersLastObservedAtDateRange">SecurityhubInsightFiltersLastObservedAtDateRange</a></code> | date_range block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersLastObservedAt.property.end">End</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersLastObservedAt.property.start">Start</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersLastObservedAt.property.end">End</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersLastObservedAt.property.start">Start</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}. |
 
 ---
 
@@ -3401,7 +3446,7 @@ DateRange SecurityhubInsightFiltersLastObservedAtDateRange
 
 date_range block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#date_range SecurityhubInsight#date_range}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#date_range SecurityhubInsight#date_range}
 
 ---
 
@@ -3413,7 +3458,7 @@ End *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}.
 
 ---
 
@@ -3425,7 +3470,7 @@ Start *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}.
 
 ---
 
@@ -3434,7 +3479,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersLastObservedAtDateRange.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersLastObservedAtDateRange {
 	Unit: *string,
@@ -3446,8 +3491,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersLastObservedAtDateRange.property.unit">Unit</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersLastObservedAtDateRange.property.value">Value</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersLastObservedAtDateRange.property.unit">Unit</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersLastObservedAtDateRange.property.value">Value</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
 
 ---
 
@@ -3459,7 +3504,7 @@ Unit *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}.
 
 ---
 
@@ -3471,7 +3516,7 @@ Value *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -3480,7 +3525,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareName.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersMalwareName {
 	Comparison: *string,
@@ -3492,8 +3537,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareName.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareName.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareName.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareName.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
 
 ---
 
@@ -3505,7 +3550,7 @@ Comparison *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
 
 ---
 
@@ -3517,7 +3562,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -3526,7 +3571,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwarePath.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersMalwarePath {
 	Comparison: *string,
@@ -3538,8 +3583,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwarePath.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwarePath.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwarePath.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwarePath.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
 
 ---
 
@@ -3551,7 +3596,7 @@ Comparison *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
 
 ---
 
@@ -3563,7 +3608,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -3572,7 +3617,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareState.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersMalwareState {
 	Comparison: *string,
@@ -3584,8 +3629,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareState.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareState.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareState.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareState.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
 
 ---
 
@@ -3597,7 +3642,7 @@ Comparison *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
 
 ---
 
@@ -3609,7 +3654,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -3618,7 +3663,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareType.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersMalwareType {
 	Comparison: *string,
@@ -3630,8 +3675,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareType.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareType.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareType.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareType.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
 
 ---
 
@@ -3643,7 +3688,7 @@ Comparison *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
 
 ---
 
@@ -3655,7 +3700,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -3664,7 +3709,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationDomain.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersNetworkDestinationDomain {
 	Comparison: *string,
@@ -3676,8 +3721,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationDomain.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationDomain.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationDomain.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationDomain.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
 
 ---
 
@@ -3689,7 +3734,7 @@ Comparison *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
 
 ---
 
@@ -3701,7 +3746,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -3710,7 +3755,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv4.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersNetworkDestinationIpv4 {
 	Cidr: *string,
@@ -3721,7 +3766,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv4.property.cidr">Cidr</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#cidr SecurityhubInsight#cidr}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv4.property.cidr">Cidr</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#cidr SecurityhubInsight#cidr}. |
 
 ---
 
@@ -3733,7 +3778,7 @@ Cidr *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#cidr SecurityhubInsight#cidr}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#cidr SecurityhubInsight#cidr}.
 
 ---
 
@@ -3742,7 +3787,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv6.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersNetworkDestinationIpv6 {
 	Cidr: *string,
@@ -3753,7 +3798,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv6.property.cidr">Cidr</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#cidr SecurityhubInsight#cidr}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv6.property.cidr">Cidr</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#cidr SecurityhubInsight#cidr}. |
 
 ---
 
@@ -3765,7 +3810,7 @@ Cidr *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#cidr SecurityhubInsight#cidr}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#cidr SecurityhubInsight#cidr}.
 
 ---
 
@@ -3774,7 +3819,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationPort.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersNetworkDestinationPort {
 	Eq: *string,
@@ -3787,9 +3832,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationPort.property.eq">Eq</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#eq SecurityhubInsight#eq}. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationPort.property.gte">Gte</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#gte SecurityhubInsight#gte}. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationPort.property.lte">Lte</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#lte SecurityhubInsight#lte}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationPort.property.eq">Eq</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#eq SecurityhubInsight#eq}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationPort.property.gte">Gte</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#gte SecurityhubInsight#gte}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationPort.property.lte">Lte</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#lte SecurityhubInsight#lte}. |
 
 ---
 
@@ -3801,7 +3846,7 @@ Eq *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#eq SecurityhubInsight#eq}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#eq SecurityhubInsight#eq}.
 
 ---
 
@@ -3813,7 +3858,7 @@ Gte *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#gte SecurityhubInsight#gte}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#gte SecurityhubInsight#gte}.
 
 ---
 
@@ -3825,7 +3870,7 @@ Lte *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#lte SecurityhubInsight#lte}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#lte SecurityhubInsight#lte}.
 
 ---
 
@@ -3834,7 +3879,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDirection.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersNetworkDirection {
 	Comparison: *string,
@@ -3846,8 +3891,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDirection.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDirection.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDirection.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDirection.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
 
 ---
 
@@ -3859,7 +3904,7 @@ Comparison *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
 
 ---
 
@@ -3871,7 +3916,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -3880,7 +3925,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkProtocol.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersNetworkProtocol {
 	Comparison: *string,
@@ -3892,8 +3937,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkProtocol.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkProtocol.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkProtocol.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkProtocol.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
 
 ---
 
@@ -3905,7 +3950,7 @@ Comparison *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
 
 ---
 
@@ -3917,7 +3962,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -3926,7 +3971,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceDomain.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersNetworkSourceDomain {
 	Comparison: *string,
@@ -3938,8 +3983,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceDomain.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceDomain.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceDomain.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceDomain.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
 
 ---
 
@@ -3951,7 +3996,7 @@ Comparison *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
 
 ---
 
@@ -3963,7 +4008,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -3972,7 +4017,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv4.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersNetworkSourceIpv4 {
 	Cidr: *string,
@@ -3983,7 +4028,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv4.property.cidr">Cidr</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#cidr SecurityhubInsight#cidr}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv4.property.cidr">Cidr</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#cidr SecurityhubInsight#cidr}. |
 
 ---
 
@@ -3995,7 +4040,7 @@ Cidr *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#cidr SecurityhubInsight#cidr}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#cidr SecurityhubInsight#cidr}.
 
 ---
 
@@ -4004,7 +4049,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv6.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersNetworkSourceIpv6 {
 	Cidr: *string,
@@ -4015,7 +4060,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv6.property.cidr">Cidr</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#cidr SecurityhubInsight#cidr}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv6.property.cidr">Cidr</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#cidr SecurityhubInsight#cidr}. |
 
 ---
 
@@ -4027,7 +4072,7 @@ Cidr *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#cidr SecurityhubInsight#cidr}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#cidr SecurityhubInsight#cidr}.
 
 ---
 
@@ -4036,7 +4081,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceMac.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersNetworkSourceMac {
 	Comparison: *string,
@@ -4048,8 +4093,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceMac.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceMac.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceMac.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceMac.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
 
 ---
 
@@ -4061,7 +4106,7 @@ Comparison *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
 
 ---
 
@@ -4073,7 +4118,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -4082,7 +4127,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourcePort.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersNetworkSourcePort {
 	Eq: *string,
@@ -4095,9 +4140,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourcePort.property.eq">Eq</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#eq SecurityhubInsight#eq}. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourcePort.property.gte">Gte</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#gte SecurityhubInsight#gte}. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourcePort.property.lte">Lte</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#lte SecurityhubInsight#lte}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourcePort.property.eq">Eq</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#eq SecurityhubInsight#eq}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourcePort.property.gte">Gte</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#gte SecurityhubInsight#gte}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourcePort.property.lte">Lte</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#lte SecurityhubInsight#lte}. |
 
 ---
 
@@ -4109,7 +4154,7 @@ Eq *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#eq SecurityhubInsight#eq}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#eq SecurityhubInsight#eq}.
 
 ---
 
@@ -4121,7 +4166,7 @@ Gte *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#gte SecurityhubInsight#gte}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#gte SecurityhubInsight#gte}.
 
 ---
 
@@ -4133,7 +4178,7 @@ Lte *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#lte SecurityhubInsight#lte}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#lte SecurityhubInsight#lte}.
 
 ---
 
@@ -4142,7 +4187,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteText.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersNoteText {
 	Comparison: *string,
@@ -4154,8 +4199,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteText.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteText.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteText.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteText.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
 
 ---
 
@@ -4167,7 +4212,7 @@ Comparison *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
 
 ---
 
@@ -4179,7 +4224,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -4188,10 +4233,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedAt.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersNoteUpdatedAt {
-	DateRange: github.com/cdktf/cdktf-provider-aws-go/aws/v20.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedAtDateRange,
+	DateRange: github.com/cdktf/cdktf-provider-aws-go/aws/v21.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedAtDateRange,
 	End: *string,
 	Start: *string,
 }
@@ -4202,8 +4247,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedAt.property.dateRange">DateRange</a></code> | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedAtDateRange">SecurityhubInsightFiltersNoteUpdatedAtDateRange</a></code> | date_range block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedAt.property.end">End</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedAt.property.start">Start</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedAt.property.end">End</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedAt.property.start">Start</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}. |
 
 ---
 
@@ -4217,7 +4262,7 @@ DateRange SecurityhubInsightFiltersNoteUpdatedAtDateRange
 
 date_range block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#date_range SecurityhubInsight#date_range}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#date_range SecurityhubInsight#date_range}
 
 ---
 
@@ -4229,7 +4274,7 @@ End *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}.
 
 ---
 
@@ -4241,7 +4286,7 @@ Start *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}.
 
 ---
 
@@ -4250,7 +4295,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedAtDateRange.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersNoteUpdatedAtDateRange {
 	Unit: *string,
@@ -4262,8 +4307,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedAtDateRange.property.unit">Unit</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedAtDateRange.property.value">Value</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedAtDateRange.property.unit">Unit</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedAtDateRange.property.value">Value</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
 
 ---
 
@@ -4275,7 +4320,7 @@ Unit *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}.
 
 ---
 
@@ -4287,7 +4332,7 @@ Value *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -4296,7 +4341,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedBy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersNoteUpdatedBy {
 	Comparison: *string,
@@ -4308,8 +4353,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedBy.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedBy.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedBy.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedBy.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
 
 ---
 
@@ -4321,7 +4366,7 @@ Comparison *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
 
 ---
 
@@ -4333,7 +4378,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -4342,10 +4387,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessLaunchedAt.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersProcessLaunchedAt {
-	DateRange: github.com/cdktf/cdktf-provider-aws-go/aws/v20.securityhubInsight.SecurityhubInsightFiltersProcessLaunchedAtDateRange,
+	DateRange: github.com/cdktf/cdktf-provider-aws-go/aws/v21.securityhubInsight.SecurityhubInsightFiltersProcessLaunchedAtDateRange,
 	End: *string,
 	Start: *string,
 }
@@ -4356,8 +4401,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessLaunchedAt.property.dateRange">DateRange</a></code> | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessLaunchedAtDateRange">SecurityhubInsightFiltersProcessLaunchedAtDateRange</a></code> | date_range block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessLaunchedAt.property.end">End</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessLaunchedAt.property.start">Start</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessLaunchedAt.property.end">End</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessLaunchedAt.property.start">Start</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}. |
 
 ---
 
@@ -4371,7 +4416,7 @@ DateRange SecurityhubInsightFiltersProcessLaunchedAtDateRange
 
 date_range block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#date_range SecurityhubInsight#date_range}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#date_range SecurityhubInsight#date_range}
 
 ---
 
@@ -4383,7 +4428,7 @@ End *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}.
 
 ---
 
@@ -4395,7 +4440,7 @@ Start *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}.
 
 ---
 
@@ -4404,7 +4449,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessLaunchedAtDateRange.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersProcessLaunchedAtDateRange {
 	Unit: *string,
@@ -4416,8 +4461,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessLaunchedAtDateRange.property.unit">Unit</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessLaunchedAtDateRange.property.value">Value</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessLaunchedAtDateRange.property.unit">Unit</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessLaunchedAtDateRange.property.value">Value</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
 
 ---
 
@@ -4429,7 +4474,7 @@ Unit *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}.
 
 ---
 
@@ -4441,7 +4486,7 @@ Value *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -4450,7 +4495,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessName.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersProcessName {
 	Comparison: *string,
@@ -4462,8 +4507,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessName.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessName.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessName.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessName.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
 
 ---
 
@@ -4475,7 +4520,7 @@ Comparison *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
 
 ---
 
@@ -4487,7 +4532,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -4496,7 +4541,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessParentPid.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersProcessParentPid {
 	Eq: *string,
@@ -4509,9 +4554,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessParentPid.property.eq">Eq</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#eq SecurityhubInsight#eq}. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessParentPid.property.gte">Gte</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#gte SecurityhubInsight#gte}. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessParentPid.property.lte">Lte</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#lte SecurityhubInsight#lte}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessParentPid.property.eq">Eq</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#eq SecurityhubInsight#eq}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessParentPid.property.gte">Gte</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#gte SecurityhubInsight#gte}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessParentPid.property.lte">Lte</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#lte SecurityhubInsight#lte}. |
 
 ---
 
@@ -4523,7 +4568,7 @@ Eq *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#eq SecurityhubInsight#eq}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#eq SecurityhubInsight#eq}.
 
 ---
 
@@ -4535,7 +4580,7 @@ Gte *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#gte SecurityhubInsight#gte}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#gte SecurityhubInsight#gte}.
 
 ---
 
@@ -4547,7 +4592,7 @@ Lte *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#lte SecurityhubInsight#lte}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#lte SecurityhubInsight#lte}.
 
 ---
 
@@ -4556,7 +4601,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPath.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersProcessPath {
 	Comparison: *string,
@@ -4568,8 +4613,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPath.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPath.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPath.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPath.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
 
 ---
 
@@ -4581,7 +4626,7 @@ Comparison *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
 
 ---
 
@@ -4593,7 +4638,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -4602,7 +4647,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPid.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersProcessPid {
 	Eq: *string,
@@ -4615,9 +4660,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPid.property.eq">Eq</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#eq SecurityhubInsight#eq}. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPid.property.gte">Gte</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#gte SecurityhubInsight#gte}. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPid.property.lte">Lte</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#lte SecurityhubInsight#lte}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPid.property.eq">Eq</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#eq SecurityhubInsight#eq}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPid.property.gte">Gte</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#gte SecurityhubInsight#gte}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPid.property.lte">Lte</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#lte SecurityhubInsight#lte}. |
 
 ---
 
@@ -4629,7 +4674,7 @@ Eq *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#eq SecurityhubInsight#eq}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#eq SecurityhubInsight#eq}.
 
 ---
 
@@ -4641,7 +4686,7 @@ Gte *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#gte SecurityhubInsight#gte}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#gte SecurityhubInsight#gte}.
 
 ---
 
@@ -4653,7 +4698,7 @@ Lte *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#lte SecurityhubInsight#lte}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#lte SecurityhubInsight#lte}.
 
 ---
 
@@ -4662,10 +4707,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessTerminatedAt.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersProcessTerminatedAt {
-	DateRange: github.com/cdktf/cdktf-provider-aws-go/aws/v20.securityhubInsight.SecurityhubInsightFiltersProcessTerminatedAtDateRange,
+	DateRange: github.com/cdktf/cdktf-provider-aws-go/aws/v21.securityhubInsight.SecurityhubInsightFiltersProcessTerminatedAtDateRange,
 	End: *string,
 	Start: *string,
 }
@@ -4676,8 +4721,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessTerminatedAt.property.dateRange">DateRange</a></code> | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessTerminatedAtDateRange">SecurityhubInsightFiltersProcessTerminatedAtDateRange</a></code> | date_range block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessTerminatedAt.property.end">End</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessTerminatedAt.property.start">Start</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessTerminatedAt.property.end">End</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessTerminatedAt.property.start">Start</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}. |
 
 ---
 
@@ -4691,7 +4736,7 @@ DateRange SecurityhubInsightFiltersProcessTerminatedAtDateRange
 
 date_range block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#date_range SecurityhubInsight#date_range}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#date_range SecurityhubInsight#date_range}
 
 ---
 
@@ -4703,7 +4748,7 @@ End *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}.
 
 ---
 
@@ -4715,7 +4760,7 @@ Start *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}.
 
 ---
 
@@ -4724,7 +4769,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessTerminatedAtDateRange.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersProcessTerminatedAtDateRange {
 	Unit: *string,
@@ -4736,8 +4781,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessTerminatedAtDateRange.property.unit">Unit</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessTerminatedAtDateRange.property.value">Value</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessTerminatedAtDateRange.property.unit">Unit</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessTerminatedAtDateRange.property.value">Value</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
 
 ---
 
@@ -4749,7 +4794,7 @@ Unit *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}.
 
 ---
 
@@ -4761,7 +4806,7 @@ Value *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -4770,7 +4815,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductArn.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersProductArn {
 	Comparison: *string,
@@ -4782,8 +4827,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductArn.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductArn.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductArn.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductArn.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
 
 ---
 
@@ -4795,7 +4840,7 @@ Comparison *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
 
 ---
 
@@ -4807,7 +4852,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -4816,7 +4861,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductFields.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersProductFields {
 	Comparison: *string,
@@ -4829,9 +4874,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductFields.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductFields.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#key SecurityhubInsight#key}. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductFields.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductFields.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductFields.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#key SecurityhubInsight#key}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductFields.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
 
 ---
 
@@ -4843,7 +4888,7 @@ Comparison *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
 
 ---
 
@@ -4855,7 +4900,7 @@ Key *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#key SecurityhubInsight#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#key SecurityhubInsight#key}.
 
 ---
 
@@ -4867,7 +4912,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -4876,7 +4921,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductName.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersProductName {
 	Comparison: *string,
@@ -4888,8 +4933,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductName.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductName.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductName.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductName.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
 
 ---
 
@@ -4901,7 +4946,7 @@ Comparison *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
 
 ---
 
@@ -4913,7 +4958,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -4922,7 +4967,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecommendationText.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersRecommendationText {
 	Comparison: *string,
@@ -4934,8 +4979,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecommendationText.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecommendationText.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecommendationText.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecommendationText.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
 
 ---
 
@@ -4947,7 +4992,7 @@ Comparison *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
 
 ---
 
@@ -4959,7 +5004,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -4968,7 +5013,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecordState.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersRecordState {
 	Comparison: *string,
@@ -4980,8 +5025,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecordState.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecordState.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecordState.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecordState.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
 
 ---
 
@@ -4993,7 +5038,7 @@ Comparison *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
 
 ---
 
@@ -5005,7 +5050,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -5014,7 +5059,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsId.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersRelatedFindingsId {
 	Comparison: *string,
@@ -5026,8 +5071,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsId.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsId.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsId.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsId.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
 
 ---
 
@@ -5039,7 +5084,7 @@ Comparison *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
 
 ---
 
@@ -5051,7 +5096,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -5060,7 +5105,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsProductArn.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersRelatedFindingsProductArn {
 	Comparison: *string,
@@ -5072,8 +5117,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsProductArn.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsProductArn.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsProductArn.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsProductArn.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
 
 ---
 
@@ -5085,7 +5130,7 @@ Comparison *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
 
 ---
 
@@ -5097,7 +5142,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -5106,7 +5151,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn {
 	Comparison: *string,
@@ -5118,8 +5163,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
 
 ---
 
@@ -5131,7 +5176,7 @@ Comparison *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
 
 ---
 
@@ -5143,7 +5188,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -5152,7 +5197,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceImageId.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersResourceAwsEc2InstanceImageId {
 	Comparison: *string,
@@ -5164,8 +5209,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceImageId.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceImageId.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceImageId.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceImageId.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
 
 ---
 
@@ -5177,7 +5222,7 @@ Comparison *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
 
 ---
 
@@ -5189,7 +5234,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -5198,7 +5243,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses {
 	Cidr: *string,
@@ -5209,7 +5254,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses.property.cidr">Cidr</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#cidr SecurityhubInsight#cidr}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses.property.cidr">Cidr</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#cidr SecurityhubInsight#cidr}. |
 
 ---
 
@@ -5221,7 +5266,7 @@ Cidr *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#cidr SecurityhubInsight#cidr}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#cidr SecurityhubInsight#cidr}.
 
 ---
 
@@ -5230,7 +5275,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses {
 	Cidr: *string,
@@ -5241,7 +5286,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses.property.cidr">Cidr</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#cidr SecurityhubInsight#cidr}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses.property.cidr">Cidr</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#cidr SecurityhubInsight#cidr}. |
 
 ---
 
@@ -5253,7 +5298,7 @@ Cidr *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#cidr SecurityhubInsight#cidr}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#cidr SecurityhubInsight#cidr}.
 
 ---
 
@@ -5262,7 +5307,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName {
 	Comparison: *string,
@@ -5274,8 +5319,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
 
 ---
 
@@ -5287,7 +5332,7 @@ Comparison *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
 
 ---
 
@@ -5299,7 +5344,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -5308,10 +5353,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt {
-	DateRange: github.com/cdktf/cdktf-provider-aws-go/aws/v20.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtDateRange,
+	DateRange: github.com/cdktf/cdktf-provider-aws-go/aws/v21.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtDateRange,
 	End: *string,
 	Start: *string,
 }
@@ -5322,8 +5367,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt.property.dateRange">DateRange</a></code> | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtDateRange">SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtDateRange</a></code> | date_range block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt.property.end">End</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt.property.start">Start</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt.property.end">End</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt.property.start">Start</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}. |
 
 ---
 
@@ -5337,7 +5382,7 @@ DateRange SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtDateRange
 
 date_range block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#date_range SecurityhubInsight#date_range}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#date_range SecurityhubInsight#date_range}
 
 ---
 
@@ -5349,7 +5394,7 @@ End *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}.
 
 ---
 
@@ -5361,7 +5406,7 @@ Start *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}.
 
 ---
 
@@ -5370,7 +5415,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtDateRange.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtDateRange {
 	Unit: *string,
@@ -5382,8 +5427,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtDateRange.property.unit">Unit</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtDateRange.property.value">Value</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtDateRange.property.unit">Unit</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtDateRange.property.value">Value</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
 
 ---
 
@@ -5395,7 +5440,7 @@ Unit *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}.
 
 ---
 
@@ -5407,7 +5452,7 @@ Value *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -5416,7 +5461,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId {
 	Comparison: *string,
@@ -5428,8 +5473,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
 
 ---
 
@@ -5441,7 +5486,7 @@ Comparison *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
 
 ---
 
@@ -5453,7 +5498,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -5462,7 +5507,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceType.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersResourceAwsEc2InstanceType {
 	Comparison: *string,
@@ -5474,8 +5519,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceType.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceType.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceType.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceType.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
 
 ---
 
@@ -5487,7 +5532,7 @@ Comparison *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
 
 ---
 
@@ -5499,7 +5544,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -5508,7 +5553,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId {
 	Comparison: *string,
@@ -5520,8 +5565,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
 
 ---
 
@@ -5533,7 +5578,7 @@ Comparison *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
 
 ---
 
@@ -5545,7 +5590,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -5554,10 +5599,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt {
-	DateRange: github.com/cdktf/cdktf-provider-aws-go/aws/v20.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtDateRange,
+	DateRange: github.com/cdktf/cdktf-provider-aws-go/aws/v21.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtDateRange,
 	End: *string,
 	Start: *string,
 }
@@ -5568,8 +5613,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt.property.dateRange">DateRange</a></code> | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtDateRange">SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtDateRange</a></code> | date_range block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt.property.end">End</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt.property.start">Start</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt.property.end">End</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt.property.start">Start</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}. |
 
 ---
 
@@ -5583,7 +5628,7 @@ DateRange SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtDateRange
 
 date_range block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#date_range SecurityhubInsight#date_range}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#date_range SecurityhubInsight#date_range}
 
 ---
 
@@ -5595,7 +5640,7 @@ End *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}.
 
 ---
 
@@ -5607,7 +5652,7 @@ Start *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}.
 
 ---
 
@@ -5616,7 +5661,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtDateRange.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtDateRange {
 	Unit: *string,
@@ -5628,8 +5673,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtDateRange.property.unit">Unit</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtDateRange.property.value">Value</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtDateRange.property.unit">Unit</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtDateRange.property.value">Value</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
 
 ---
 
@@ -5641,7 +5686,7 @@ Unit *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}.
 
 ---
 
@@ -5653,7 +5698,7 @@ Value *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -5662,7 +5707,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus {
 	Comparison: *string,
@@ -5674,8 +5719,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
 
 ---
 
@@ -5687,7 +5732,7 @@ Comparison *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
 
 ---
 
@@ -5699,7 +5744,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -5708,7 +5753,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName {
 	Comparison: *string,
@@ -5720,8 +5765,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
 
 ---
 
@@ -5733,7 +5778,7 @@ Comparison *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
 
 ---
 
@@ -5745,7 +5790,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -5754,7 +5799,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerId.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerId {
 	Comparison: *string,
@@ -5766,8 +5811,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerId.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerId.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerId.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerId.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
 
 ---
 
@@ -5779,7 +5824,7 @@ Comparison *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
 
 ---
 
@@ -5791,7 +5836,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -5800,7 +5845,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerName.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerName {
 	Comparison: *string,
@@ -5812,8 +5857,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerName.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerName.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerName.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerName.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
 
 ---
 
@@ -5825,7 +5870,7 @@ Comparison *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
 
 ---
 
@@ -5837,7 +5882,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -5846,7 +5891,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageId.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersResourceContainerImageId {
 	Comparison: *string,
@@ -5858,8 +5903,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageId.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageId.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageId.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageId.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
 
 ---
 
@@ -5871,7 +5916,7 @@ Comparison *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
 
 ---
 
@@ -5883,7 +5928,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -5892,7 +5937,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageName.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersResourceContainerImageName {
 	Comparison: *string,
@@ -5904,8 +5949,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageName.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageName.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageName.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageName.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
 
 ---
 
@@ -5917,7 +5962,7 @@ Comparison *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
 
 ---
 
@@ -5929,7 +5974,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -5938,10 +5983,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerLaunchedAt.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersResourceContainerLaunchedAt {
-	DateRange: github.com/cdktf/cdktf-provider-aws-go/aws/v20.securityhubInsight.SecurityhubInsightFiltersResourceContainerLaunchedAtDateRange,
+	DateRange: github.com/cdktf/cdktf-provider-aws-go/aws/v21.securityhubInsight.SecurityhubInsightFiltersResourceContainerLaunchedAtDateRange,
 	End: *string,
 	Start: *string,
 }
@@ -5952,8 +5997,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerLaunchedAt.property.dateRange">DateRange</a></code> | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerLaunchedAtDateRange">SecurityhubInsightFiltersResourceContainerLaunchedAtDateRange</a></code> | date_range block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerLaunchedAt.property.end">End</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerLaunchedAt.property.start">Start</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerLaunchedAt.property.end">End</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerLaunchedAt.property.start">Start</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}. |
 
 ---
 
@@ -5967,7 +6012,7 @@ DateRange SecurityhubInsightFiltersResourceContainerLaunchedAtDateRange
 
 date_range block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#date_range SecurityhubInsight#date_range}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#date_range SecurityhubInsight#date_range}
 
 ---
 
@@ -5979,7 +6024,7 @@ End *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}.
 
 ---
 
@@ -5991,7 +6036,7 @@ Start *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}.
 
 ---
 
@@ -6000,7 +6045,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerLaunchedAtDateRange.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersResourceContainerLaunchedAtDateRange {
 	Unit: *string,
@@ -6012,8 +6057,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerLaunchedAtDateRange.property.unit">Unit</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerLaunchedAtDateRange.property.value">Value</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerLaunchedAtDateRange.property.unit">Unit</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerLaunchedAtDateRange.property.value">Value</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
 
 ---
 
@@ -6025,7 +6070,7 @@ Unit *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}.
 
 ---
 
@@ -6037,7 +6082,7 @@ Value *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -6046,7 +6091,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerName.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersResourceContainerName {
 	Comparison: *string,
@@ -6058,8 +6103,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerName.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerName.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerName.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerName.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
 
 ---
 
@@ -6071,7 +6116,7 @@ Comparison *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
 
 ---
 
@@ -6083,7 +6128,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -6092,7 +6137,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceDetailsOther.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersResourceDetailsOther {
 	Comparison: *string,
@@ -6105,9 +6150,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceDetailsOther.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceDetailsOther.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#key SecurityhubInsight#key}. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceDetailsOther.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceDetailsOther.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceDetailsOther.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#key SecurityhubInsight#key}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceDetailsOther.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
 
 ---
 
@@ -6119,7 +6164,7 @@ Comparison *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
 
 ---
 
@@ -6131,7 +6176,7 @@ Key *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#key SecurityhubInsight#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#key SecurityhubInsight#key}.
 
 ---
 
@@ -6143,7 +6188,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -6152,7 +6197,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceId.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersResourceId {
 	Comparison: *string,
@@ -6164,8 +6209,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceId.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceId.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceId.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceId.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
 
 ---
 
@@ -6177,7 +6222,7 @@ Comparison *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
 
 ---
 
@@ -6189,7 +6234,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -6198,7 +6243,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourcePartition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersResourcePartition {
 	Comparison: *string,
@@ -6210,8 +6255,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourcePartition.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourcePartition.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourcePartition.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourcePartition.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
 
 ---
 
@@ -6223,7 +6268,7 @@ Comparison *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
 
 ---
 
@@ -6235,7 +6280,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -6244,7 +6289,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceRegion.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersResourceRegion {
 	Comparison: *string,
@@ -6256,8 +6301,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceRegion.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceRegion.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceRegion.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceRegion.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
 
 ---
 
@@ -6269,7 +6314,7 @@ Comparison *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
 
 ---
 
@@ -6281,7 +6326,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -6290,7 +6335,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTags.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersResourceTags {
 	Comparison: *string,
@@ -6303,9 +6348,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTags.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTags.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#key SecurityhubInsight#key}. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTags.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTags.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTags.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#key SecurityhubInsight#key}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTags.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
 
 ---
 
@@ -6317,7 +6362,7 @@ Comparison *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
 
 ---
 
@@ -6329,7 +6374,7 @@ Key *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#key SecurityhubInsight#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#key SecurityhubInsight#key}.
 
 ---
 
@@ -6341,7 +6386,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -6350,7 +6395,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceType.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersResourceType {
 	Comparison: *string,
@@ -6362,8 +6407,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceType.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceType.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceType.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceType.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
 
 ---
 
@@ -6375,7 +6420,7 @@ Comparison *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
 
 ---
 
@@ -6387,7 +6432,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -6396,7 +6441,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSeverityLabel.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersSeverityLabel {
 	Comparison: *string,
@@ -6408,8 +6453,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSeverityLabel.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSeverityLabel.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSeverityLabel.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSeverityLabel.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
 
 ---
 
@@ -6421,7 +6466,7 @@ Comparison *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
 
 ---
 
@@ -6433,7 +6478,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -6442,7 +6487,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSourceUrl.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersSourceUrl {
 	Comparison: *string,
@@ -6454,8 +6499,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSourceUrl.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSourceUrl.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSourceUrl.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSourceUrl.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
 
 ---
 
@@ -6467,7 +6512,7 @@ Comparison *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
 
 ---
 
@@ -6479,7 +6524,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -6488,7 +6533,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorCategory.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersThreatIntelIndicatorCategory {
 	Comparison: *string,
@@ -6500,8 +6545,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorCategory.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorCategory.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorCategory.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorCategory.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
 
 ---
 
@@ -6513,7 +6558,7 @@ Comparison *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
 
 ---
 
@@ -6525,7 +6570,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -6534,10 +6579,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt {
-	DateRange: github.com/cdktf/cdktf-provider-aws-go/aws/v20.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtDateRange,
+	DateRange: github.com/cdktf/cdktf-provider-aws-go/aws/v21.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtDateRange,
 	End: *string,
 	Start: *string,
 }
@@ -6548,8 +6593,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt.property.dateRange">DateRange</a></code> | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtDateRange">SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtDateRange</a></code> | date_range block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt.property.end">End</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt.property.start">Start</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt.property.end">End</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt.property.start">Start</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}. |
 
 ---
 
@@ -6563,7 +6608,7 @@ DateRange SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtDateRange
 
 date_range block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#date_range SecurityhubInsight#date_range}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#date_range SecurityhubInsight#date_range}
 
 ---
 
@@ -6575,7 +6620,7 @@ End *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}.
 
 ---
 
@@ -6587,7 +6632,7 @@ Start *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}.
 
 ---
 
@@ -6596,7 +6641,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtDateRange.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtDateRange {
 	Unit: *string,
@@ -6608,8 +6653,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtDateRange.property.unit">Unit</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtDateRange.property.value">Value</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtDateRange.property.unit">Unit</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtDateRange.property.value">Value</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
 
 ---
 
@@ -6621,7 +6666,7 @@ Unit *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}.
 
 ---
 
@@ -6633,7 +6678,7 @@ Value *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -6642,7 +6687,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSource.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersThreatIntelIndicatorSource {
 	Comparison: *string,
@@ -6654,8 +6699,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSource.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSource.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSource.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSource.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
 
 ---
 
@@ -6667,7 +6712,7 @@ Comparison *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
 
 ---
 
@@ -6679,7 +6724,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -6688,7 +6733,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl {
 	Comparison: *string,
@@ -6700,8 +6745,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
 
 ---
 
@@ -6713,7 +6758,7 @@ Comparison *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
 
 ---
 
@@ -6725,7 +6770,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -6734,7 +6779,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorType.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersThreatIntelIndicatorType {
 	Comparison: *string,
@@ -6746,8 +6791,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorType.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorType.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorType.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorType.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
 
 ---
 
@@ -6759,7 +6804,7 @@ Comparison *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
 
 ---
 
@@ -6771,7 +6816,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -6780,7 +6825,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorValue.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersThreatIntelIndicatorValue {
 	Comparison: *string,
@@ -6792,8 +6837,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorValue.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorValue.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorValue.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorValue.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
 
 ---
 
@@ -6805,7 +6850,7 @@ Comparison *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
 
 ---
 
@@ -6817,7 +6862,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -6826,7 +6871,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTitle.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersTitle {
 	Comparison: *string,
@@ -6838,8 +6883,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTitle.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTitle.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTitle.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTitle.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
 
 ---
 
@@ -6851,7 +6896,7 @@ Comparison *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
 
 ---
 
@@ -6863,7 +6908,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -6872,7 +6917,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersType.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersType {
 	Comparison: *string,
@@ -6884,8 +6929,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersType.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersType.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersType.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersType.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
 
 ---
 
@@ -6897,7 +6942,7 @@ Comparison *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
 
 ---
 
@@ -6909,7 +6954,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -6918,10 +6963,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUpdatedAt.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersUpdatedAt {
-	DateRange: github.com/cdktf/cdktf-provider-aws-go/aws/v20.securityhubInsight.SecurityhubInsightFiltersUpdatedAtDateRange,
+	DateRange: github.com/cdktf/cdktf-provider-aws-go/aws/v21.securityhubInsight.SecurityhubInsightFiltersUpdatedAtDateRange,
 	End: *string,
 	Start: *string,
 }
@@ -6932,8 +6977,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUpdatedAt.property.dateRange">DateRange</a></code> | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUpdatedAtDateRange">SecurityhubInsightFiltersUpdatedAtDateRange</a></code> | date_range block. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUpdatedAt.property.end">End</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUpdatedAt.property.start">Start</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUpdatedAt.property.end">End</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUpdatedAt.property.start">Start</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}. |
 
 ---
 
@@ -6947,7 +6992,7 @@ DateRange SecurityhubInsightFiltersUpdatedAtDateRange
 
 date_range block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#date_range SecurityhubInsight#date_range}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#date_range SecurityhubInsight#date_range}
 
 ---
 
@@ -6959,7 +7004,7 @@ End *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}.
 
 ---
 
@@ -6971,7 +7016,7 @@ Start *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}.
 
 ---
 
@@ -6980,7 +7025,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUpdatedAtDateRange.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersUpdatedAtDateRange {
 	Unit: *string,
@@ -6992,8 +7037,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUpdatedAtDateRange.property.unit">Unit</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUpdatedAtDateRange.property.value">Value</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUpdatedAtDateRange.property.unit">Unit</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUpdatedAtDateRange.property.value">Value</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
 
 ---
 
@@ -7005,7 +7050,7 @@ Unit *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}.
 
 ---
 
@@ -7017,7 +7062,7 @@ Value *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -7026,7 +7071,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUserDefinedValues.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersUserDefinedValues {
 	Comparison: *string,
@@ -7039,9 +7084,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUserDefinedValues.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUserDefinedValues.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#key SecurityhubInsight#key}. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUserDefinedValues.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUserDefinedValues.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUserDefinedValues.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#key SecurityhubInsight#key}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUserDefinedValues.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
 
 ---
 
@@ -7053,7 +7098,7 @@ Comparison *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
 
 ---
 
@@ -7065,7 +7110,7 @@ Key *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#key SecurityhubInsight#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#key SecurityhubInsight#key}.
 
 ---
 
@@ -7077,7 +7122,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -7086,7 +7131,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersVerificationState.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersVerificationState {
 	Comparison: *string,
@@ -7098,8 +7143,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersVerificationState.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersVerificationState.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersVerificationState.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersVerificationState.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
 
 ---
 
@@ -7111,7 +7156,7 @@ Comparison *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
 
 ---
 
@@ -7123,7 +7168,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -7132,7 +7177,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersWorkflowStatus.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 &securityhubinsight.SecurityhubInsightFiltersWorkflowStatus {
 	Comparison: *string,
@@ -7144,8 +7189,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersWorkflowStatus.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersWorkflowStatus.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersWorkflowStatus.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersWorkflowStatus.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
 
 ---
 
@@ -7157,7 +7202,7 @@ Comparison *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
 
 ---
 
@@ -7169,7 +7214,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -7180,7 +7225,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersAwsAccountIdList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersAwsAccountIdList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersAwsAccountIdList
 ```
@@ -7340,7 +7385,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersAwsAccountIdOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersAwsAccountIdOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersAwsAccountIdOutputReference
 ```
@@ -7651,7 +7696,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCompanyNameList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersCompanyNameList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersCompanyNameList
 ```
@@ -7811,7 +7856,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCompanyNameOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersCompanyNameOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersCompanyNameOutputReference
 ```
@@ -8122,7 +8167,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersComplianceStatusList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersComplianceStatusList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersComplianceStatusList
 ```
@@ -8282,7 +8327,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersComplianceStatusOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersComplianceStatusOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersComplianceStatusOutputReference
 ```
@@ -8593,7 +8638,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersConfidenceList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersConfidenceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersConfidenceList
 ```
@@ -8753,7 +8798,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersConfidenceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersConfidenceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersConfidenceOutputReference
 ```
@@ -9107,7 +9152,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCreatedAtDateRangeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersCreatedAtDateRangeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SecurityhubInsightFiltersCreatedAtDateRangeOutputReference
 ```
@@ -9400,7 +9445,7 @@ func InternalValue() SecurityhubInsightFiltersCreatedAtDateRange
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCreatedAtList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersCreatedAtList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersCreatedAtList
 ```
@@ -9560,7 +9605,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCreatedAtOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersCreatedAtOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersCreatedAtOutputReference
 ```
@@ -9927,7 +9972,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCriticalityList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersCriticalityList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersCriticalityList
 ```
@@ -10087,7 +10132,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCriticalityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersCriticalityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersCriticalityOutputReference
 ```
@@ -10441,7 +10486,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersDescriptionList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersDescriptionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersDescriptionList
 ```
@@ -10601,7 +10646,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersDescriptionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersDescriptionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersDescriptionOutputReference
 ```
@@ -10912,7 +10957,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsConfidenceList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersFindingProviderFieldsConfidenceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersFindingProviderFieldsConfidenceList
 ```
@@ -11072,7 +11117,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsConfidenceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersFindingProviderFieldsConfidenceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersFindingProviderFieldsConfidenceOutputReference
 ```
@@ -11426,7 +11471,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsCriticalityList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersFindingProviderFieldsCriticalityList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersFindingProviderFieldsCriticalityList
 ```
@@ -11586,7 +11631,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsCriticalityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersFindingProviderFieldsCriticalityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersFindingProviderFieldsCriticalityOutputReference
 ```
@@ -11940,7 +11985,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsIdList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsIdList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsIdList
 ```
@@ -12100,7 +12145,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsIdOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsIdOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsIdOutputReference
 ```
@@ -12411,7 +12456,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArnList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArnList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArnList
 ```
@@ -12571,7 +12616,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArnOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArnOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArnOutputReference
 ```
@@ -12882,7 +12927,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityLabelList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersFindingProviderFieldsSeverityLabelList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersFindingProviderFieldsSeverityLabelList
 ```
@@ -13042,7 +13087,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityLabelOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersFindingProviderFieldsSeverityLabelOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersFindingProviderFieldsSeverityLabelOutputReference
 ```
@@ -13353,7 +13398,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginalList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersFindingProviderFieldsSeverityOriginalList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginalList
 ```
@@ -13513,7 +13558,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginalOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersFindingProviderFieldsSeverityOriginalOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginalOutputReference
 ```
@@ -13824,7 +13869,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsTypesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersFindingProviderFieldsTypesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersFindingProviderFieldsTypesList
 ```
@@ -13984,7 +14029,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsTypesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersFindingProviderFieldsTypesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersFindingProviderFieldsTypesOutputReference
 ```
@@ -14295,7 +14340,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFirstObservedAtDateRangeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersFirstObservedAtDateRangeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SecurityhubInsightFiltersFirstObservedAtDateRangeOutputReference
 ```
@@ -14588,7 +14633,7 @@ func InternalValue() SecurityhubInsightFiltersFirstObservedAtDateRange
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFirstObservedAtList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersFirstObservedAtList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersFirstObservedAtList
 ```
@@ -14748,7 +14793,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFirstObservedAtOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersFirstObservedAtOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersFirstObservedAtOutputReference
 ```
@@ -15115,7 +15160,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersGeneratorIdList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersGeneratorIdList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersGeneratorIdList
 ```
@@ -15275,7 +15320,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersGeneratorIdOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersGeneratorIdOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersGeneratorIdOutputReference
 ```
@@ -15586,7 +15631,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersIdList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersIdList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersIdList
 ```
@@ -15746,7 +15791,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersIdOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersIdOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersIdOutputReference
 ```
@@ -16057,7 +16102,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersKeywordList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersKeywordList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersKeywordList
 ```
@@ -16217,7 +16262,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersKeywordOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersKeywordOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersKeywordOutputReference
 ```
@@ -16506,7 +16551,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersLastObservedAtDateRangeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersLastObservedAtDateRangeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SecurityhubInsightFiltersLastObservedAtDateRangeOutputReference
 ```
@@ -16799,7 +16844,7 @@ func InternalValue() SecurityhubInsightFiltersLastObservedAtDateRange
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersLastObservedAtList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersLastObservedAtList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersLastObservedAtList
 ```
@@ -16959,7 +17004,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersLastObservedAtOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersLastObservedAtOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersLastObservedAtOutputReference
 ```
@@ -17326,7 +17371,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareNameList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersMalwareNameList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersMalwareNameList
 ```
@@ -17486,7 +17531,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareNameOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersMalwareNameOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersMalwareNameOutputReference
 ```
@@ -17797,7 +17842,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwarePathList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersMalwarePathList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersMalwarePathList
 ```
@@ -17957,7 +18002,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwarePathOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersMalwarePathOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersMalwarePathOutputReference
 ```
@@ -18268,7 +18313,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareStateList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersMalwareStateList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersMalwareStateList
 ```
@@ -18428,7 +18473,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareStateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersMalwareStateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersMalwareStateOutputReference
 ```
@@ -18739,7 +18784,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareTypeList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersMalwareTypeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersMalwareTypeList
 ```
@@ -18899,7 +18944,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareTypeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersMalwareTypeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersMalwareTypeOutputReference
 ```
@@ -19210,7 +19255,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationDomainList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersNetworkDestinationDomainList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersNetworkDestinationDomainList
 ```
@@ -19370,7 +19415,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationDomainOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersNetworkDestinationDomainOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersNetworkDestinationDomainOutputReference
 ```
@@ -19681,7 +19726,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv4List.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersNetworkDestinationIpv4List(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersNetworkDestinationIpv4List
 ```
@@ -19841,7 +19886,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv4OutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersNetworkDestinationIpv4OutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersNetworkDestinationIpv4OutputReference
 ```
@@ -20130,7 +20175,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv6List.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersNetworkDestinationIpv6List(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersNetworkDestinationIpv6List
 ```
@@ -20290,7 +20335,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv6OutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersNetworkDestinationIpv6OutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersNetworkDestinationIpv6OutputReference
 ```
@@ -20579,7 +20624,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationPortList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersNetworkDestinationPortList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersNetworkDestinationPortList
 ```
@@ -20739,7 +20784,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationPortOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersNetworkDestinationPortOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersNetworkDestinationPortOutputReference
 ```
@@ -21093,7 +21138,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDirectionList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersNetworkDirectionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersNetworkDirectionList
 ```
@@ -21253,7 +21298,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDirectionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersNetworkDirectionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersNetworkDirectionOutputReference
 ```
@@ -21564,7 +21609,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkProtocolList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersNetworkProtocolList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersNetworkProtocolList
 ```
@@ -21724,7 +21769,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkProtocolOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersNetworkProtocolOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersNetworkProtocolOutputReference
 ```
@@ -22035,7 +22080,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceDomainList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersNetworkSourceDomainList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersNetworkSourceDomainList
 ```
@@ -22195,7 +22240,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceDomainOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersNetworkSourceDomainOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersNetworkSourceDomainOutputReference
 ```
@@ -22506,7 +22551,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv4List.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersNetworkSourceIpv4List(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersNetworkSourceIpv4List
 ```
@@ -22666,7 +22711,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv4OutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersNetworkSourceIpv4OutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersNetworkSourceIpv4OutputReference
 ```
@@ -22955,7 +23000,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv6List.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersNetworkSourceIpv6List(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersNetworkSourceIpv6List
 ```
@@ -23115,7 +23160,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv6OutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersNetworkSourceIpv6OutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersNetworkSourceIpv6OutputReference
 ```
@@ -23404,7 +23449,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceMacList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersNetworkSourceMacList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersNetworkSourceMacList
 ```
@@ -23564,7 +23609,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceMacOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersNetworkSourceMacOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersNetworkSourceMacOutputReference
 ```
@@ -23875,7 +23920,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourcePortList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersNetworkSourcePortList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersNetworkSourcePortList
 ```
@@ -24035,7 +24080,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourcePortOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersNetworkSourcePortOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersNetworkSourcePortOutputReference
 ```
@@ -24389,7 +24434,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteTextList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersNoteTextList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersNoteTextList
 ```
@@ -24549,7 +24594,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteTextOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersNoteTextOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersNoteTextOutputReference
 ```
@@ -24860,7 +24905,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedAtDateRangeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersNoteUpdatedAtDateRangeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SecurityhubInsightFiltersNoteUpdatedAtDateRangeOutputReference
 ```
@@ -25153,7 +25198,7 @@ func InternalValue() SecurityhubInsightFiltersNoteUpdatedAtDateRange
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedAtList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersNoteUpdatedAtList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersNoteUpdatedAtList
 ```
@@ -25313,7 +25358,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedAtOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersNoteUpdatedAtOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersNoteUpdatedAtOutputReference
 ```
@@ -25680,7 +25725,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedByList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersNoteUpdatedByList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersNoteUpdatedByList
 ```
@@ -25840,7 +25885,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedByOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersNoteUpdatedByOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersNoteUpdatedByOutputReference
 ```
@@ -26151,7 +26196,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SecurityhubInsightFiltersOutputReference
 ```
@@ -30096,7 +30141,7 @@ func InternalValue() SecurityhubInsightFilters
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessLaunchedAtDateRangeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersProcessLaunchedAtDateRangeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SecurityhubInsightFiltersProcessLaunchedAtDateRangeOutputReference
 ```
@@ -30389,7 +30434,7 @@ func InternalValue() SecurityhubInsightFiltersProcessLaunchedAtDateRange
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessLaunchedAtList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersProcessLaunchedAtList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersProcessLaunchedAtList
 ```
@@ -30549,7 +30594,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessLaunchedAtOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersProcessLaunchedAtOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersProcessLaunchedAtOutputReference
 ```
@@ -30916,7 +30961,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessNameList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersProcessNameList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersProcessNameList
 ```
@@ -31076,7 +31121,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessNameOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersProcessNameOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersProcessNameOutputReference
 ```
@@ -31387,7 +31432,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessParentPidList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersProcessParentPidList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersProcessParentPidList
 ```
@@ -31547,7 +31592,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessParentPidOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersProcessParentPidOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersProcessParentPidOutputReference
 ```
@@ -31901,7 +31946,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPathList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersProcessPathList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersProcessPathList
 ```
@@ -32061,7 +32106,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPathOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersProcessPathOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersProcessPathOutputReference
 ```
@@ -32372,7 +32417,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPidList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersProcessPidList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersProcessPidList
 ```
@@ -32532,7 +32577,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPidOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersProcessPidOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersProcessPidOutputReference
 ```
@@ -32886,7 +32931,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessTerminatedAtDateRangeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersProcessTerminatedAtDateRangeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SecurityhubInsightFiltersProcessTerminatedAtDateRangeOutputReference
 ```
@@ -33179,7 +33224,7 @@ func InternalValue() SecurityhubInsightFiltersProcessTerminatedAtDateRange
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessTerminatedAtList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersProcessTerminatedAtList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersProcessTerminatedAtList
 ```
@@ -33339,7 +33384,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessTerminatedAtOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersProcessTerminatedAtOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersProcessTerminatedAtOutputReference
 ```
@@ -33706,7 +33751,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductArnList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersProductArnList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersProductArnList
 ```
@@ -33866,7 +33911,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductArnOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersProductArnOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersProductArnOutputReference
 ```
@@ -34177,7 +34222,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductFieldsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersProductFieldsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersProductFieldsList
 ```
@@ -34337,7 +34382,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductFieldsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersProductFieldsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersProductFieldsOutputReference
 ```
@@ -34670,7 +34715,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductNameList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersProductNameList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersProductNameList
 ```
@@ -34830,7 +34875,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductNameOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersProductNameOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersProductNameOutputReference
 ```
@@ -35141,7 +35186,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecommendationTextList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersRecommendationTextList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersRecommendationTextList
 ```
@@ -35301,7 +35346,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecommendationTextOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersRecommendationTextOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersRecommendationTextOutputReference
 ```
@@ -35612,7 +35657,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecordStateList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersRecordStateList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersRecordStateList
 ```
@@ -35772,7 +35817,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecordStateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersRecordStateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersRecordStateOutputReference
 ```
@@ -36083,7 +36128,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsIdList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersRelatedFindingsIdList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersRelatedFindingsIdList
 ```
@@ -36243,7 +36288,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsIdOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersRelatedFindingsIdOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersRelatedFindingsIdOutputReference
 ```
@@ -36554,7 +36599,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsProductArnList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersRelatedFindingsProductArnList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersRelatedFindingsProductArnList
 ```
@@ -36714,7 +36759,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsProductArnOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersRelatedFindingsProductArnOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersRelatedFindingsProductArnOutputReference
 ```
@@ -37025,7 +37070,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArnList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArnList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArnList
 ```
@@ -37185,7 +37230,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArnOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArnOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArnOutputReference
 ```
@@ -37496,7 +37541,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceImageIdList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersResourceAwsEc2InstanceImageIdList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersResourceAwsEc2InstanceImageIdList
 ```
@@ -37656,7 +37701,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceImageIdOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersResourceAwsEc2InstanceImageIdOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersResourceAwsEc2InstanceImageIdOutputReference
 ```
@@ -37967,7 +38012,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4AddressesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersResourceAwsEc2InstanceIpv4AddressesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4AddressesList
 ```
@@ -38127,7 +38172,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4AddressesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersResourceAwsEc2InstanceIpv4AddressesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4AddressesOutputReference
 ```
@@ -38416,7 +38461,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6AddressesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersResourceAwsEc2InstanceIpv6AddressesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6AddressesList
 ```
@@ -38576,7 +38621,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6AddressesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersResourceAwsEc2InstanceIpv6AddressesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6AddressesOutputReference
 ```
@@ -38865,7 +38910,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceKeyNameList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersResourceAwsEc2InstanceKeyNameList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersResourceAwsEc2InstanceKeyNameList
 ```
@@ -39025,7 +39070,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceKeyNameOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersResourceAwsEc2InstanceKeyNameOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersResourceAwsEc2InstanceKeyNameOutputReference
 ```
@@ -39336,7 +39381,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtDateRangeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtDateRangeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtDateRangeOutputReference
 ```
@@ -39629,7 +39674,7 @@ func InternalValue() SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtDa
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtList
 ```
@@ -39789,7 +39834,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtOutputReference
 ```
@@ -40156,7 +40201,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetIdList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersResourceAwsEc2InstanceSubnetIdList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetIdList
 ```
@@ -40316,7 +40361,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetIdOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersResourceAwsEc2InstanceSubnetIdOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetIdOutputReference
 ```
@@ -40627,7 +40672,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceTypeList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersResourceAwsEc2InstanceTypeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersResourceAwsEc2InstanceTypeList
 ```
@@ -40787,7 +40832,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceTypeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersResourceAwsEc2InstanceTypeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersResourceAwsEc2InstanceTypeOutputReference
 ```
@@ -41098,7 +41143,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceVpcIdList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersResourceAwsEc2InstanceVpcIdList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersResourceAwsEc2InstanceVpcIdList
 ```
@@ -41258,7 +41303,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceVpcIdOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersResourceAwsEc2InstanceVpcIdOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersResourceAwsEc2InstanceVpcIdOutputReference
 ```
@@ -41569,7 +41614,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtDateRangeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtDateRangeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtDateRangeOutputReference
 ```
@@ -41862,7 +41907,7 @@ func InternalValue() SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtDa
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtList
 ```
@@ -42022,7 +42067,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtOutputReference
 ```
@@ -42389,7 +42434,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyStatusList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersResourceAwsIamAccessKeyStatusList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersResourceAwsIamAccessKeyStatusList
 ```
@@ -42549,7 +42594,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyStatusOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersResourceAwsIamAccessKeyStatusOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersResourceAwsIamAccessKeyStatusOutputReference
 ```
@@ -42860,7 +42905,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyUserNameList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersResourceAwsIamAccessKeyUserNameList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersResourceAwsIamAccessKeyUserNameList
 ```
@@ -43020,7 +43065,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyUserNameOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersResourceAwsIamAccessKeyUserNameOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersResourceAwsIamAccessKeyUserNameOutputReference
 ```
@@ -43331,7 +43376,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerIdList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersResourceAwsS3BucketOwnerIdList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersResourceAwsS3BucketOwnerIdList
 ```
@@ -43491,7 +43536,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerIdOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersResourceAwsS3BucketOwnerIdOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersResourceAwsS3BucketOwnerIdOutputReference
 ```
@@ -43802,7 +43847,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerNameList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersResourceAwsS3BucketOwnerNameList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersResourceAwsS3BucketOwnerNameList
 ```
@@ -43962,7 +44007,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerNameOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersResourceAwsS3BucketOwnerNameOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersResourceAwsS3BucketOwnerNameOutputReference
 ```
@@ -44273,7 +44318,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageIdList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersResourceContainerImageIdList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersResourceContainerImageIdList
 ```
@@ -44433,7 +44478,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageIdOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersResourceContainerImageIdOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersResourceContainerImageIdOutputReference
 ```
@@ -44744,7 +44789,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageNameList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersResourceContainerImageNameList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersResourceContainerImageNameList
 ```
@@ -44904,7 +44949,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageNameOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersResourceContainerImageNameOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersResourceContainerImageNameOutputReference
 ```
@@ -45215,7 +45260,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerLaunchedAtDateRangeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersResourceContainerLaunchedAtDateRangeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SecurityhubInsightFiltersResourceContainerLaunchedAtDateRangeOutputReference
 ```
@@ -45508,7 +45553,7 @@ func InternalValue() SecurityhubInsightFiltersResourceContainerLaunchedAtDateRan
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerLaunchedAtList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersResourceContainerLaunchedAtList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersResourceContainerLaunchedAtList
 ```
@@ -45668,7 +45713,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerLaunchedAtOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersResourceContainerLaunchedAtOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersResourceContainerLaunchedAtOutputReference
 ```
@@ -46035,7 +46080,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerNameList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersResourceContainerNameList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersResourceContainerNameList
 ```
@@ -46195,7 +46240,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerNameOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersResourceContainerNameOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersResourceContainerNameOutputReference
 ```
@@ -46506,7 +46551,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceDetailsOtherList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersResourceDetailsOtherList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersResourceDetailsOtherList
 ```
@@ -46666,7 +46711,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceDetailsOtherOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersResourceDetailsOtherOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersResourceDetailsOtherOutputReference
 ```
@@ -46999,7 +47044,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceIdList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersResourceIdList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersResourceIdList
 ```
@@ -47159,7 +47204,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceIdOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersResourceIdOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersResourceIdOutputReference
 ```
@@ -47470,7 +47515,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourcePartitionList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersResourcePartitionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersResourcePartitionList
 ```
@@ -47630,7 +47675,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourcePartitionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersResourcePartitionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersResourcePartitionOutputReference
 ```
@@ -47941,7 +47986,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceRegionList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersResourceRegionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersResourceRegionList
 ```
@@ -48101,7 +48146,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceRegionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersResourceRegionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersResourceRegionOutputReference
 ```
@@ -48412,7 +48457,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTagsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersResourceTagsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersResourceTagsList
 ```
@@ -48572,7 +48617,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTagsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersResourceTagsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersResourceTagsOutputReference
 ```
@@ -48905,7 +48950,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTypeList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersResourceTypeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersResourceTypeList
 ```
@@ -49065,7 +49110,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTypeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersResourceTypeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersResourceTypeOutputReference
 ```
@@ -49376,7 +49421,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSeverityLabelList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersSeverityLabelList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersSeverityLabelList
 ```
@@ -49536,7 +49581,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSeverityLabelOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersSeverityLabelOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersSeverityLabelOutputReference
 ```
@@ -49847,7 +49892,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSourceUrlList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersSourceUrlList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersSourceUrlList
 ```
@@ -50007,7 +50052,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSourceUrlOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersSourceUrlOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersSourceUrlOutputReference
 ```
@@ -50318,7 +50363,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorCategoryList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersThreatIntelIndicatorCategoryList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersThreatIntelIndicatorCategoryList
 ```
@@ -50478,7 +50523,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorCategoryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersThreatIntelIndicatorCategoryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersThreatIntelIndicatorCategoryOutputReference
 ```
@@ -50789,7 +50834,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtDateRangeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtDateRangeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtDateRangeOutputReference
 ```
@@ -51082,7 +51127,7 @@ func InternalValue() SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtList
 ```
@@ -51242,7 +51287,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtOutputReference
 ```
@@ -51609,7 +51654,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersThreatIntelIndicatorSourceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersThreatIntelIndicatorSourceList
 ```
@@ -51769,7 +51814,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersThreatIntelIndicatorSourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersThreatIntelIndicatorSourceOutputReference
 ```
@@ -52080,7 +52125,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceUrlList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersThreatIntelIndicatorSourceUrlList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersThreatIntelIndicatorSourceUrlList
 ```
@@ -52240,7 +52285,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceUrlOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersThreatIntelIndicatorSourceUrlOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersThreatIntelIndicatorSourceUrlOutputReference
 ```
@@ -52551,7 +52596,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorTypeList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersThreatIntelIndicatorTypeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersThreatIntelIndicatorTypeList
 ```
@@ -52711,7 +52756,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorTypeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersThreatIntelIndicatorTypeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersThreatIntelIndicatorTypeOutputReference
 ```
@@ -53022,7 +53067,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorValueList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersThreatIntelIndicatorValueList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersThreatIntelIndicatorValueList
 ```
@@ -53182,7 +53227,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorValueOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersThreatIntelIndicatorValueOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersThreatIntelIndicatorValueOutputReference
 ```
@@ -53493,7 +53538,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTitleList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersTitleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersTitleList
 ```
@@ -53653,7 +53698,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTitleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersTitleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersTitleOutputReference
 ```
@@ -53964,7 +54009,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTypeList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersTypeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersTypeList
 ```
@@ -54124,7 +54169,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTypeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersTypeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersTypeOutputReference
 ```
@@ -54435,7 +54480,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUpdatedAtDateRangeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersUpdatedAtDateRangeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SecurityhubInsightFiltersUpdatedAtDateRangeOutputReference
 ```
@@ -54728,7 +54773,7 @@ func InternalValue() SecurityhubInsightFiltersUpdatedAtDateRange
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUpdatedAtList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersUpdatedAtList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersUpdatedAtList
 ```
@@ -54888,7 +54933,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUpdatedAtOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersUpdatedAtOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersUpdatedAtOutputReference
 ```
@@ -55255,7 +55300,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUserDefinedValuesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersUserDefinedValuesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersUserDefinedValuesList
 ```
@@ -55415,7 +55460,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUserDefinedValuesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersUserDefinedValuesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersUserDefinedValuesOutputReference
 ```
@@ -55748,7 +55793,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersVerificationStateList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersVerificationStateList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersVerificationStateList
 ```
@@ -55908,7 +55953,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersVerificationStateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersVerificationStateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersVerificationStateOutputReference
 ```
@@ -56219,7 +56264,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersWorkflowStatusList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersWorkflowStatusList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubInsightFiltersWorkflowStatusList
 ```
@@ -56379,7 +56424,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersWorkflowStatusOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubinsight"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubinsight"
 
 securityhubinsight.NewSecurityhubInsightFiltersWorkflowStatusOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersWorkflowStatusOutputReference
 ```

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ami
+// https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ami
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,50 +13,60 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsAmiConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ami#executable_users DataAwsAmi#executable_users}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ami#allow_unsafe_filter DataAwsAmi#allow_unsafe_filter}
+  */
+  readonly allowUnsafeFilter?: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ami#executable_users DataAwsAmi#executable_users}
   */
   readonly executableUsers?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ami#id DataAwsAmi#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ami#id DataAwsAmi#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ami#include_deprecated DataAwsAmi#include_deprecated}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ami#include_deprecated DataAwsAmi#include_deprecated}
   */
   readonly includeDeprecated?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ami#most_recent DataAwsAmi#most_recent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ami#most_recent DataAwsAmi#most_recent}
   */
   readonly mostRecent?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ami#name_regex DataAwsAmi#name_regex}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ami#name_regex DataAwsAmi#name_regex}
   */
   readonly nameRegex?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ami#owners DataAwsAmi#owners}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ami#owners DataAwsAmi#owners}
   */
   readonly owners?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ami#tags DataAwsAmi#tags}
+  * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ami#region DataAwsAmi#region}
+  */
+  readonly region?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ami#tags DataAwsAmi#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ami#uefi_data DataAwsAmi#uefi_data}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ami#uefi_data DataAwsAmi#uefi_data}
   */
   readonly uefiData?: string;
   /**
   * filter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ami#filter DataAwsAmi#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ami#filter DataAwsAmi#filter}
   */
   readonly filter?: DataAwsAmiFilter[] | cdktf.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ami#timeouts DataAwsAmi#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ami#timeouts DataAwsAmi#timeouts}
   */
   readonly timeouts?: DataAwsAmiTimeouts;
 }
@@ -233,11 +243,11 @@ export class DataAwsAmiProductCodesList extends cdktf.ComplexList {
 }
 export interface DataAwsAmiFilter {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ami#name DataAwsAmi#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ami#name DataAwsAmi#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ami#values DataAwsAmi#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ami#values DataAwsAmi#values}
   */
   readonly values: string[];
 }
@@ -376,7 +386,7 @@ export class DataAwsAmiFilterList extends cdktf.ComplexList {
 }
 export interface DataAwsAmiTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ami#read DataAwsAmi#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ami#read DataAwsAmi#read}
   */
   readonly read?: string;
 }
@@ -470,7 +480,7 @@ export class DataAwsAmiTimeoutsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ami aws_ami}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ami aws_ami}
 */
 export class DataAwsAmi extends cdktf.TerraformDataSource {
 
@@ -486,7 +496,7 @@ export class DataAwsAmi extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataAwsAmi resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsAmi to import
-  * @param importFromId The id of the existing DataAwsAmi that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ami#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsAmi that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ami#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsAmi to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -498,7 +508,7 @@ export class DataAwsAmi extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ami aws_ami} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ami aws_ami} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -509,8 +519,8 @@ export class DataAwsAmi extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_ami',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.100.0',
-        providerVersionConstraint: '~> 5.0'
+        providerVersion: '6.0.0',
+        providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -520,12 +530,14 @@ export class DataAwsAmi extends cdktf.TerraformDataSource {
       connection: config.connection,
       forEach: config.forEach
     });
+    this._allowUnsafeFilter = config.allowUnsafeFilter;
     this._executableUsers = config.executableUsers;
     this._id = config.id;
     this._includeDeprecated = config.includeDeprecated;
     this._mostRecent = config.mostRecent;
     this._nameRegex = config.nameRegex;
     this._owners = config.owners;
+    this._region = config.region;
     this._tags = config.tags;
     this._uefiData = config.uefiData;
     this._filter.internalValue = config.filter;
@@ -535,6 +547,22 @@ export class DataAwsAmi extends cdktf.TerraformDataSource {
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // allow_unsafe_filter - computed: false, optional: true, required: false
+  private _allowUnsafeFilter?: boolean | cdktf.IResolvable; 
+  public get allowUnsafeFilter() {
+    return this.getBooleanAttribute('allow_unsafe_filter');
+  }
+  public set allowUnsafeFilter(value: boolean | cdktf.IResolvable) {
+    this._allowUnsafeFilter = value;
+  }
+  public resetAllowUnsafeFilter() {
+    this._allowUnsafeFilter = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get allowUnsafeFilterInput() {
+    return this._allowUnsafeFilter;
+  }
 
   // architecture - computed: true, optional: false, required: false
   public get architecture() {
@@ -749,6 +777,22 @@ export class DataAwsAmi extends cdktf.TerraformDataSource {
     return this.getStringAttribute('ramdisk_id');
   }
 
+  // region - computed: true, optional: true, required: false
+  private _region?: string; 
+  public get region() {
+    return this.getStringAttribute('region');
+  }
+  public set region(value: string) {
+    this._region = value;
+  }
+  public resetRegion() {
+    this._region = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get regionInput() {
+    return this._region;
+  }
+
   // root_device_name - computed: true, optional: false, required: false
   public get rootDeviceName() {
     return this.getStringAttribute('root_device_name');
@@ -865,12 +909,14 @@ export class DataAwsAmi extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      allow_unsafe_filter: cdktf.booleanToTerraform(this._allowUnsafeFilter),
       executable_users: cdktf.listMapper(cdktf.stringToTerraform, false)(this._executableUsers),
       id: cdktf.stringToTerraform(this._id),
       include_deprecated: cdktf.booleanToTerraform(this._includeDeprecated),
       most_recent: cdktf.booleanToTerraform(this._mostRecent),
       name_regex: cdktf.stringToTerraform(this._nameRegex),
       owners: cdktf.listMapper(cdktf.stringToTerraform, false)(this._owners),
+      region: cdktf.stringToTerraform(this._region),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       uefi_data: cdktf.stringToTerraform(this._uefiData),
       filter: cdktf.listMapper(dataAwsAmiFilterToTerraform, true)(this._filter.internalValue),
@@ -880,6 +926,12 @@ export class DataAwsAmi extends cdktf.TerraformDataSource {
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
+      allow_unsafe_filter: {
+        value: cdktf.booleanToHclTerraform(this._allowUnsafeFilter),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
       executable_users: {
         value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._executableUsers),
         isBlock: false,
@@ -915,6 +967,12 @@ export class DataAwsAmi extends cdktf.TerraformDataSource {
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
+      },
+      region: {
+        value: cdktf.stringToHclTerraform(this._region),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
       },
       tags: {
         value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),

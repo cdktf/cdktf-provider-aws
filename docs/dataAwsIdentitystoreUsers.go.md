@@ -4,12 +4,12 @@
 
 ### DataAwsIdentitystoreUsers <a name="DataAwsIdentitystoreUsers" id="@cdktf/provider-aws.dataAwsIdentitystoreUsers.DataAwsIdentitystoreUsers"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/identitystore_users aws_identitystore_users}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/identitystore_users aws_identitystore_users}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsIdentitystoreUsers.DataAwsIdentitystoreUsers.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsidentitystoreusers"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsidentitystoreusers"
 
 dataawsidentitystoreusers.NewDataAwsIdentitystoreUsers(scope Construct, id *string, config DataAwsIdentitystoreUsersConfig) DataAwsIdentitystoreUsers
 ```
@@ -67,6 +67,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.dataAwsIdentitystoreUsers.DataAwsIdentitystoreUsers.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsIdentitystoreUsers.DataAwsIdentitystoreUsers.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsIdentitystoreUsers.DataAwsIdentitystoreUsers.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsIdentitystoreUsers.DataAwsIdentitystoreUsers.resetRegion">ResetRegion</a></code> | *No description.* |
 
 ---
 
@@ -262,6 +263,12 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 
 ---
 
+##### `ResetRegion` <a name="ResetRegion" id="@cdktf/provider-aws.dataAwsIdentitystoreUsers.DataAwsIdentitystoreUsers.resetRegion"></a>
+
+```go
+func ResetRegion()
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -276,7 +283,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsIdentitystoreUsers.DataAwsIdentitystoreUsers.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsidentitystoreusers"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsidentitystoreusers"
 
 dataawsidentitystoreusers.DataAwsIdentitystoreUsers_IsConstruct(x interface{}) *bool
 ```
@@ -308,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsIdentitystoreUsers.DataAwsIdentitystoreUsers.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsidentitystoreusers"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsidentitystoreusers"
 
 dataawsidentitystoreusers.DataAwsIdentitystoreUsers_IsTerraformElement(x interface{}) *bool
 ```
@@ -322,7 +329,7 @@ dataawsidentitystoreusers.DataAwsIdentitystoreUsers_IsTerraformElement(x interfa
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsIdentitystoreUsers.DataAwsIdentitystoreUsers.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsidentitystoreusers"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsidentitystoreusers"
 
 dataawsidentitystoreusers.DataAwsIdentitystoreUsers_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -336,7 +343,7 @@ dataawsidentitystoreusers.DataAwsIdentitystoreUsers_IsTerraformDataSource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsIdentitystoreUsers.DataAwsIdentitystoreUsers.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsidentitystoreusers"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsidentitystoreusers"
 
 dataawsidentitystoreusers.DataAwsIdentitystoreUsers_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -365,7 +372,7 @@ The construct id used in the generated config for the DataAwsIdentitystoreUsers 
 
 The id of the existing DataAwsIdentitystoreUsers that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/identitystore_users#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/identitystore_users#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -395,7 +402,9 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.dataAwsIdentitystoreUsers.DataAwsIdentitystoreUsers.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsIdentitystoreUsers.DataAwsIdentitystoreUsers.property.users">Users</a></code> | <code><a href="#@cdktf/provider-aws.dataAwsIdentitystoreUsers.DataAwsIdentitystoreUsersUsersList">DataAwsIdentitystoreUsersUsersList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsIdentitystoreUsers.DataAwsIdentitystoreUsers.property.identityStoreIdInput">IdentityStoreIdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsIdentitystoreUsers.DataAwsIdentitystoreUsers.property.regionInput">RegionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsIdentitystoreUsers.DataAwsIdentitystoreUsers.property.identityStoreId">IdentityStoreId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsIdentitystoreUsers.DataAwsIdentitystoreUsers.property.region">Region</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
@@ -541,10 +550,30 @@ func IdentityStoreIdInput() *string
 
 ---
 
+##### `RegionInput`<sup>Optional</sup> <a name="RegionInput" id="@cdktf/provider-aws.dataAwsIdentitystoreUsers.DataAwsIdentitystoreUsers.property.regionInput"></a>
+
+```go
+func RegionInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `IdentityStoreId`<sup>Required</sup> <a name="IdentityStoreId" id="@cdktf/provider-aws.dataAwsIdentitystoreUsers.DataAwsIdentitystoreUsers.property.identityStoreId"></a>
 
 ```go
 func IdentityStoreId() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Region`<sup>Required</sup> <a name="Region" id="@cdktf/provider-aws.dataAwsIdentitystoreUsers.DataAwsIdentitystoreUsers.property.region"></a>
+
+```go
+func Region() *string
 ```
 
 - *Type:* *string
@@ -576,7 +605,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsIdentitystoreUsers.DataAwsIdentitystoreUsersConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsidentitystoreusers"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsidentitystoreusers"
 
 &dataawsidentitystoreusers.DataAwsIdentitystoreUsersConfig {
 	Connection: interface{},
@@ -587,6 +616,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsidentitystoreusers
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	IdentityStoreId: *string,
+	Region: *string,
 }
 ```
 
@@ -601,7 +631,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsidentitystoreusers
 | <code><a href="#@cdktf/provider-aws.dataAwsIdentitystoreUsers.DataAwsIdentitystoreUsersConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsIdentitystoreUsers.DataAwsIdentitystoreUsersConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsIdentitystoreUsers.DataAwsIdentitystoreUsersConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsIdentitystoreUsers.DataAwsIdentitystoreUsersConfig.property.identityStoreId">IdentityStoreId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/identitystore_users#identity_store_id DataAwsIdentitystoreUsers#identity_store_id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsIdentitystoreUsers.DataAwsIdentitystoreUsersConfig.property.identityStoreId">IdentityStoreId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/identitystore_users#identity_store_id DataAwsIdentitystoreUsers#identity_store_id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsIdentitystoreUsers.DataAwsIdentitystoreUsersConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
 
@@ -683,7 +714,21 @@ IdentityStoreId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/identitystore_users#identity_store_id DataAwsIdentitystoreUsers#identity_store_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/identitystore_users#identity_store_id DataAwsIdentitystoreUsers#identity_store_id}.
+
+---
+
+##### `Region`<sup>Optional</sup> <a name="Region" id="@cdktf/provider-aws.dataAwsIdentitystoreUsers.DataAwsIdentitystoreUsersConfig.property.region"></a>
+
+```go
+Region *string
+```
+
+- *Type:* *string
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/identitystore_users#region DataAwsIdentitystoreUsers#region}
 
 ---
 
@@ -692,7 +737,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsIdentitystoreUsers.DataAwsIdentitystoreUsersUsers.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsidentitystoreusers"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsidentitystoreusers"
 
 &dataawsidentitystoreusers.DataAwsIdentitystoreUsersUsers {
 
@@ -705,7 +750,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsidentitystoreusers
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsIdentitystoreUsers.DataAwsIdentitystoreUsersUsersAddresses.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsidentitystoreusers"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsidentitystoreusers"
 
 &dataawsidentitystoreusers.DataAwsIdentitystoreUsersUsersAddresses {
 
@@ -718,7 +763,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsidentitystoreusers
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsIdentitystoreUsers.DataAwsIdentitystoreUsersUsersEmails.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsidentitystoreusers"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsidentitystoreusers"
 
 &dataawsidentitystoreusers.DataAwsIdentitystoreUsersUsersEmails {
 
@@ -731,7 +776,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsidentitystoreusers
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsIdentitystoreUsers.DataAwsIdentitystoreUsersUsersExternalIds.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsidentitystoreusers"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsidentitystoreusers"
 
 &dataawsidentitystoreusers.DataAwsIdentitystoreUsersUsersExternalIds {
 
@@ -744,7 +789,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsidentitystoreusers
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsIdentitystoreUsers.DataAwsIdentitystoreUsersUsersName.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsidentitystoreusers"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsidentitystoreusers"
 
 &dataawsidentitystoreusers.DataAwsIdentitystoreUsersUsersName {
 
@@ -757,7 +802,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsidentitystoreusers
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsIdentitystoreUsers.DataAwsIdentitystoreUsersUsersPhoneNumbers.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsidentitystoreusers"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsidentitystoreusers"
 
 &dataawsidentitystoreusers.DataAwsIdentitystoreUsersUsersPhoneNumbers {
 
@@ -772,7 +817,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsidentitystoreusers
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsIdentitystoreUsers.DataAwsIdentitystoreUsersUsersAddressesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsidentitystoreusers"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsidentitystoreusers"
 
 dataawsidentitystoreusers.NewDataAwsIdentitystoreUsersUsersAddressesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsIdentitystoreUsersUsersAddressesList
 ```
@@ -921,7 +966,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsIdentitystoreUsers.DataAwsIdentitystoreUsersUsersAddressesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsidentitystoreusers"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsidentitystoreusers"
 
 dataawsidentitystoreusers.NewDataAwsIdentitystoreUsersUsersAddressesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsIdentitystoreUsersUsersAddressesOutputReference
 ```
@@ -1276,7 +1321,7 @@ func InternalValue() DataAwsIdentitystoreUsersUsersAddresses
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsIdentitystoreUsers.DataAwsIdentitystoreUsersUsersEmailsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsidentitystoreusers"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsidentitystoreusers"
 
 dataawsidentitystoreusers.NewDataAwsIdentitystoreUsersUsersEmailsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsIdentitystoreUsersUsersEmailsList
 ```
@@ -1425,7 +1470,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsIdentitystoreUsers.DataAwsIdentitystoreUsersUsersEmailsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsidentitystoreusers"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsidentitystoreusers"
 
 dataawsidentitystoreusers.NewDataAwsIdentitystoreUsersUsersEmailsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsIdentitystoreUsersUsersEmailsOutputReference
 ```
@@ -1725,7 +1770,7 @@ func InternalValue() DataAwsIdentitystoreUsersUsersEmails
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsIdentitystoreUsers.DataAwsIdentitystoreUsersUsersExternalIdsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsidentitystoreusers"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsidentitystoreusers"
 
 dataawsidentitystoreusers.NewDataAwsIdentitystoreUsersUsersExternalIdsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsIdentitystoreUsersUsersExternalIdsList
 ```
@@ -1874,7 +1919,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsIdentitystoreUsers.DataAwsIdentitystoreUsersUsersExternalIdsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsidentitystoreusers"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsidentitystoreusers"
 
 dataawsidentitystoreusers.NewDataAwsIdentitystoreUsersUsersExternalIdsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsIdentitystoreUsersUsersExternalIdsOutputReference
 ```
@@ -2163,7 +2208,7 @@ func InternalValue() DataAwsIdentitystoreUsersUsersExternalIds
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsIdentitystoreUsers.DataAwsIdentitystoreUsersUsersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsidentitystoreusers"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsidentitystoreusers"
 
 dataawsidentitystoreusers.NewDataAwsIdentitystoreUsersUsersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsIdentitystoreUsersUsersList
 ```
@@ -2312,7 +2357,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsIdentitystoreUsers.DataAwsIdentitystoreUsersUsersNameList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsidentitystoreusers"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsidentitystoreusers"
 
 dataawsidentitystoreusers.NewDataAwsIdentitystoreUsersUsersNameList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsIdentitystoreUsersUsersNameList
 ```
@@ -2461,7 +2506,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsIdentitystoreUsers.DataAwsIdentitystoreUsersUsersNameOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsidentitystoreusers"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsidentitystoreusers"
 
 dataawsidentitystoreusers.NewDataAwsIdentitystoreUsersUsersNameOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsIdentitystoreUsersUsersNameOutputReference
 ```
@@ -2794,7 +2839,7 @@ func InternalValue() DataAwsIdentitystoreUsersUsersName
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsIdentitystoreUsers.DataAwsIdentitystoreUsersUsersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsidentitystoreusers"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsidentitystoreusers"
 
 dataawsidentitystoreusers.NewDataAwsIdentitystoreUsersUsersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsIdentitystoreUsersUsersOutputReference
 ```
@@ -3237,7 +3282,7 @@ func InternalValue() DataAwsIdentitystoreUsersUsers
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsIdentitystoreUsers.DataAwsIdentitystoreUsersUsersPhoneNumbersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsidentitystoreusers"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsidentitystoreusers"
 
 dataawsidentitystoreusers.NewDataAwsIdentitystoreUsersUsersPhoneNumbersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsIdentitystoreUsersUsersPhoneNumbersList
 ```
@@ -3386,7 +3431,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsIdentitystoreUsers.DataAwsIdentitystoreUsersUsersPhoneNumbersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsidentitystoreusers"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsidentitystoreusers"
 
 dataawsidentitystoreusers.NewDataAwsIdentitystoreUsersUsersPhoneNumbersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsIdentitystoreUsersUsersPhoneNumbersOutputReference
 ```

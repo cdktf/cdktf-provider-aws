@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/medialive_multiplex_program
+// https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/medialive_multiplex_program
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,33 +13,39 @@ import * as cdktf from 'cdktf';
 
 export interface MedialiveMultiplexProgramConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/medialive_multiplex_program#multiplex_id MedialiveMultiplexProgram#multiplex_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/medialive_multiplex_program#multiplex_id MedialiveMultiplexProgram#multiplex_id}
   */
   readonly multiplexId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/medialive_multiplex_program#program_name MedialiveMultiplexProgram#program_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/medialive_multiplex_program#program_name MedialiveMultiplexProgram#program_name}
   */
   readonly programName: string;
   /**
+  * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/medialive_multiplex_program#region MedialiveMultiplexProgram#region}
+  */
+  readonly region?: string;
+  /**
   * multiplex_program_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/medialive_multiplex_program#multiplex_program_settings MedialiveMultiplexProgram#multiplex_program_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/medialive_multiplex_program#multiplex_program_settings MedialiveMultiplexProgram#multiplex_program_settings}
   */
   readonly multiplexProgramSettings?: MedialiveMultiplexProgramMultiplexProgramSettings[] | cdktf.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/medialive_multiplex_program#timeouts MedialiveMultiplexProgram#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/medialive_multiplex_program#timeouts MedialiveMultiplexProgram#timeouts}
   */
   readonly timeouts?: MedialiveMultiplexProgramTimeouts;
 }
 export interface MedialiveMultiplexProgramMultiplexProgramSettingsServiceDescriptor {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/medialive_multiplex_program#provider_name MedialiveMultiplexProgram#provider_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/medialive_multiplex_program#provider_name MedialiveMultiplexProgram#provider_name}
   */
   readonly providerName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/medialive_multiplex_program#service_name MedialiveMultiplexProgram#service_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/medialive_multiplex_program#service_name MedialiveMultiplexProgram#service_name}
   */
   readonly serviceName: string;
 }
@@ -178,15 +184,15 @@ export class MedialiveMultiplexProgramMultiplexProgramSettingsServiceDescriptorL
 }
 export interface MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatmuxSettings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/medialive_multiplex_program#maximum_bitrate MedialiveMultiplexProgram#maximum_bitrate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/medialive_multiplex_program#maximum_bitrate MedialiveMultiplexProgram#maximum_bitrate}
   */
   readonly maximumBitrate?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/medialive_multiplex_program#minimum_bitrate MedialiveMultiplexProgram#minimum_bitrate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/medialive_multiplex_program#minimum_bitrate MedialiveMultiplexProgram#minimum_bitrate}
   */
   readonly minimumBitrate?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/medialive_multiplex_program#priority MedialiveMultiplexProgram#priority}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/medialive_multiplex_program#priority MedialiveMultiplexProgram#priority}
   */
   readonly priority?: number;
 }
@@ -360,13 +366,13 @@ export class MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatm
 }
 export interface MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/medialive_multiplex_program#constant_bitrate MedialiveMultiplexProgram#constant_bitrate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/medialive_multiplex_program#constant_bitrate MedialiveMultiplexProgram#constant_bitrate}
   */
   readonly constantBitrate?: number;
   /**
   * statmux_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/medialive_multiplex_program#statmux_settings MedialiveMultiplexProgram#statmux_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/medialive_multiplex_program#statmux_settings MedialiveMultiplexProgram#statmux_settings}
   */
   readonly statmuxSettings?: MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatmuxSettings[] | cdktf.IResolvable;
 }
@@ -511,23 +517,23 @@ export class MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsList 
 }
 export interface MedialiveMultiplexProgramMultiplexProgramSettings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/medialive_multiplex_program#preferred_channel_pipeline MedialiveMultiplexProgram#preferred_channel_pipeline}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/medialive_multiplex_program#preferred_channel_pipeline MedialiveMultiplexProgram#preferred_channel_pipeline}
   */
   readonly preferredChannelPipeline: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/medialive_multiplex_program#program_number MedialiveMultiplexProgram#program_number}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/medialive_multiplex_program#program_number MedialiveMultiplexProgram#program_number}
   */
   readonly programNumber: number;
   /**
   * service_descriptor block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/medialive_multiplex_program#service_descriptor MedialiveMultiplexProgram#service_descriptor}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/medialive_multiplex_program#service_descriptor MedialiveMultiplexProgram#service_descriptor}
   */
   readonly serviceDescriptor?: MedialiveMultiplexProgramMultiplexProgramSettingsServiceDescriptor[] | cdktf.IResolvable;
   /**
   * video_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/medialive_multiplex_program#video_settings MedialiveMultiplexProgram#video_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/medialive_multiplex_program#video_settings MedialiveMultiplexProgram#video_settings}
   */
   readonly videoSettings?: MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettings[] | cdktf.IResolvable;
 }
@@ -726,7 +732,7 @@ export interface MedialiveMultiplexProgramTimeouts {
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/medialive_multiplex_program#create MedialiveMultiplexProgram#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/medialive_multiplex_program#create MedialiveMultiplexProgram#create}
   */
   readonly create?: string;
 }
@@ -820,7 +826,7 @@ export class MedialiveMultiplexProgramTimeoutsOutputReference extends cdktf.Comp
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/medialive_multiplex_program aws_medialive_multiplex_program}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/medialive_multiplex_program aws_medialive_multiplex_program}
 */
 export class MedialiveMultiplexProgram extends cdktf.TerraformResource {
 
@@ -836,7 +842,7 @@ export class MedialiveMultiplexProgram extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a MedialiveMultiplexProgram resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the MedialiveMultiplexProgram to import
-  * @param importFromId The id of the existing MedialiveMultiplexProgram that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/medialive_multiplex_program#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing MedialiveMultiplexProgram that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/medialive_multiplex_program#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the MedialiveMultiplexProgram to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -848,7 +854,7 @@ export class MedialiveMultiplexProgram extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/medialive_multiplex_program aws_medialive_multiplex_program} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/medialive_multiplex_program aws_medialive_multiplex_program} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -859,8 +865,8 @@ export class MedialiveMultiplexProgram extends cdktf.TerraformResource {
       terraformResourceType: 'aws_medialive_multiplex_program',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.100.0',
-        providerVersionConstraint: '~> 5.0'
+        providerVersion: '6.0.0',
+        providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -872,6 +878,7 @@ export class MedialiveMultiplexProgram extends cdktf.TerraformResource {
     });
     this._multiplexId = config.multiplexId;
     this._programName = config.programName;
+    this._region = config.region;
     this._multiplexProgramSettings.internalValue = config.multiplexProgramSettings;
     this._timeouts.internalValue = config.timeouts;
   }
@@ -909,6 +916,22 @@ export class MedialiveMultiplexProgram extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get programNameInput() {
     return this._programName;
+  }
+
+  // region - computed: true, optional: true, required: false
+  private _region?: string; 
+  public get region() {
+    return this.getStringAttribute('region');
+  }
+  public set region(value: string) {
+    this._region = value;
+  }
+  public resetRegion() {
+    this._region = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get regionInput() {
+    return this._region;
   }
 
   // multiplex_program_settings - computed: false, optional: true, required: false
@@ -951,6 +974,7 @@ export class MedialiveMultiplexProgram extends cdktf.TerraformResource {
     return {
       multiplex_id: cdktf.stringToTerraform(this._multiplexId),
       program_name: cdktf.stringToTerraform(this._programName),
+      region: cdktf.stringToTerraform(this._region),
       multiplex_program_settings: cdktf.listMapper(medialiveMultiplexProgramMultiplexProgramSettingsToTerraform, true)(this._multiplexProgramSettings.internalValue),
       timeouts: medialiveMultiplexProgramTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -966,6 +990,12 @@ export class MedialiveMultiplexProgram extends cdktf.TerraformResource {
       },
       program_name: {
         value: cdktf.stringToHclTerraform(this._programName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      region: {
+        value: cdktf.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

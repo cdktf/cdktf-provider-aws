@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/codeguruprofiler_profiling_group
+// https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/codeguruprofiler_profiling_group
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,9 +13,15 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsCodeguruprofilerProfilingGroupConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/codeguruprofiler_profiling_group#name DataAwsCodeguruprofilerProfilingGroup#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/codeguruprofiler_profiling_group#name DataAwsCodeguruprofilerProfilingGroup#name}
   */
   readonly name: string;
+  /**
+  * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/codeguruprofiler_profiling_group#region DataAwsCodeguruprofilerProfilingGroup#region}
+  */
+  readonly region?: string;
 }
 export interface DataAwsCodeguruprofilerProfilingGroupAgentOrchestrationConfig {
 }
@@ -260,7 +266,7 @@ export class DataAwsCodeguruprofilerProfilingGroupProfilingStatusList extends cd
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/codeguruprofiler_profiling_group aws_codeguruprofiler_profiling_group}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/codeguruprofiler_profiling_group aws_codeguruprofiler_profiling_group}
 */
 export class DataAwsCodeguruprofilerProfilingGroup extends cdktf.TerraformDataSource {
 
@@ -276,7 +282,7 @@ export class DataAwsCodeguruprofilerProfilingGroup extends cdktf.TerraformDataSo
   * Generates CDKTF code for importing a DataAwsCodeguruprofilerProfilingGroup resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsCodeguruprofilerProfilingGroup to import
-  * @param importFromId The id of the existing DataAwsCodeguruprofilerProfilingGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/codeguruprofiler_profiling_group#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsCodeguruprofilerProfilingGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/codeguruprofiler_profiling_group#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsCodeguruprofilerProfilingGroup to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -288,7 +294,7 @@ export class DataAwsCodeguruprofilerProfilingGroup extends cdktf.TerraformDataSo
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/codeguruprofiler_profiling_group aws_codeguruprofiler_profiling_group} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/codeguruprofiler_profiling_group aws_codeguruprofiler_profiling_group} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -299,8 +305,8 @@ export class DataAwsCodeguruprofilerProfilingGroup extends cdktf.TerraformDataSo
       terraformResourceType: 'aws_codeguruprofiler_profiling_group',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.100.0',
-        providerVersionConstraint: '~> 5.0'
+        providerVersion: '6.0.0',
+        providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -311,6 +317,7 @@ export class DataAwsCodeguruprofilerProfilingGroup extends cdktf.TerraformDataSo
       forEach: config.forEach
     });
     this._name = config.name;
+    this._region = config.region;
   }
 
   // ==========
@@ -362,6 +369,22 @@ export class DataAwsCodeguruprofilerProfilingGroup extends cdktf.TerraformDataSo
     return this._profilingStatus;
   }
 
+  // region - computed: true, optional: true, required: false
+  private _region?: string; 
+  public get region() {
+    return this.getStringAttribute('region');
+  }
+  public set region(value: string) {
+    this._region = value;
+  }
+  public resetRegion() {
+    this._region = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get regionInput() {
+    return this._region;
+  }
+
   // tags - computed: true, optional: false, required: false
   private _tags = new cdktf.StringMap(this, "tags");
   public get tags() {
@@ -380,6 +403,7 @@ export class DataAwsCodeguruprofilerProfilingGroup extends cdktf.TerraformDataSo
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       name: cdktf.stringToTerraform(this._name),
+      region: cdktf.stringToTerraform(this._region),
     };
   }
 
@@ -387,6 +411,12 @@ export class DataAwsCodeguruprofilerProfilingGroup extends cdktf.TerraformDataSo
     const attrs = {
       name: {
         value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      region: {
+        value: cdktf.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

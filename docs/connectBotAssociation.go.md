@@ -4,12 +4,12 @@
 
 ### ConnectBotAssociation <a name="ConnectBotAssociation" id="@cdktf/provider-aws.connectBotAssociation.ConnectBotAssociation"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/connect_bot_association aws_connect_bot_association}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/connect_bot_association aws_connect_bot_association}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.connectBotAssociation.ConnectBotAssociation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/connectbotassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/connectbotassociation"
 
 connectbotassociation.NewConnectBotAssociation(scope Construct, id *string, config ConnectBotAssociationConfig) ConnectBotAssociation
 ```
@@ -75,6 +75,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.connectBotAssociation.ConnectBotAssociation.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-aws.connectBotAssociation.ConnectBotAssociation.putLexBot">PutLexBot</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.connectBotAssociation.ConnectBotAssociation.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.connectBotAssociation.ConnectBotAssociation.resetRegion">ResetRegion</a></code> | *No description.* |
 
 ---
 
@@ -384,6 +385,12 @@ func PutLexBot(value ConnectBotAssociationLexBot)
 func ResetId()
 ```
 
+##### `ResetRegion` <a name="ResetRegion" id="@cdktf/provider-aws.connectBotAssociation.ConnectBotAssociation.resetRegion"></a>
+
+```go
+func ResetRegion()
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -398,7 +405,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.connectBotAssociation.ConnectBotAssociation.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/connectbotassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/connectbotassociation"
 
 connectbotassociation.ConnectBotAssociation_IsConstruct(x interface{}) *bool
 ```
@@ -430,7 +437,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.connectBotAssociation.ConnectBotAssociation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/connectbotassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/connectbotassociation"
 
 connectbotassociation.ConnectBotAssociation_IsTerraformElement(x interface{}) *bool
 ```
@@ -444,7 +451,7 @@ connectbotassociation.ConnectBotAssociation_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.connectBotAssociation.ConnectBotAssociation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/connectbotassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/connectbotassociation"
 
 connectbotassociation.ConnectBotAssociation_IsTerraformResource(x interface{}) *bool
 ```
@@ -458,7 +465,7 @@ connectbotassociation.ConnectBotAssociation_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.connectBotAssociation.ConnectBotAssociation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/connectbotassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/connectbotassociation"
 
 connectbotassociation.ConnectBotAssociation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -487,7 +494,7 @@ The construct id used in the generated config for the ConnectBotAssociation to i
 
 The id of the existing ConnectBotAssociation that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/connect_bot_association#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/connect_bot_association#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -521,8 +528,10 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.connectBotAssociation.ConnectBotAssociation.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.connectBotAssociation.ConnectBotAssociation.property.instanceIdInput">InstanceIdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.connectBotAssociation.ConnectBotAssociation.property.lexBotInput">LexBotInput</a></code> | <code><a href="#@cdktf/provider-aws.connectBotAssociation.ConnectBotAssociationLexBot">ConnectBotAssociationLexBot</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.connectBotAssociation.ConnectBotAssociation.property.regionInput">RegionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.connectBotAssociation.ConnectBotAssociation.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.connectBotAssociation.ConnectBotAssociation.property.instanceId">InstanceId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.connectBotAssociation.ConnectBotAssociation.property.region">Region</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
@@ -708,6 +717,16 @@ func LexBotInput() ConnectBotAssociationLexBot
 
 ---
 
+##### `RegionInput`<sup>Optional</sup> <a name="RegionInput" id="@cdktf/provider-aws.connectBotAssociation.ConnectBotAssociation.property.regionInput"></a>
+
+```go
+func RegionInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-aws.connectBotAssociation.ConnectBotAssociation.property.id"></a>
 
 ```go
@@ -722,6 +741,16 @@ func Id() *string
 
 ```go
 func InstanceId() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Region`<sup>Required</sup> <a name="Region" id="@cdktf/provider-aws.connectBotAssociation.ConnectBotAssociation.property.region"></a>
+
+```go
+func Region() *string
 ```
 
 - *Type:* *string
@@ -753,7 +782,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.connectBotAssociation.ConnectBotAssociationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/connectbotassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/connectbotassociation"
 
 &connectbotassociation.ConnectBotAssociationConfig {
 	Connection: interface{},
@@ -764,8 +793,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/connectbotassociation"
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	InstanceId: *string,
-	LexBot: github.com/cdktf/cdktf-provider-aws-go/aws/v20.connectBotAssociation.ConnectBotAssociationLexBot,
+	LexBot: github.com/cdktf/cdktf-provider-aws-go/aws/v21.connectBotAssociation.ConnectBotAssociationLexBot,
 	Id: *string,
+	Region: *string,
 }
 ```
 
@@ -780,9 +810,10 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/connectbotassociation"
 | <code><a href="#@cdktf/provider-aws.connectBotAssociation.ConnectBotAssociationConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.connectBotAssociation.ConnectBotAssociationConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.connectBotAssociation.ConnectBotAssociationConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.connectBotAssociation.ConnectBotAssociationConfig.property.instanceId">InstanceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/connect_bot_association#instance_id ConnectBotAssociation#instance_id}. |
+| <code><a href="#@cdktf/provider-aws.connectBotAssociation.ConnectBotAssociationConfig.property.instanceId">InstanceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/connect_bot_association#instance_id ConnectBotAssociation#instance_id}. |
 | <code><a href="#@cdktf/provider-aws.connectBotAssociation.ConnectBotAssociationConfig.property.lexBot">LexBot</a></code> | <code><a href="#@cdktf/provider-aws.connectBotAssociation.ConnectBotAssociationLexBot">ConnectBotAssociationLexBot</a></code> | lex_bot block. |
-| <code><a href="#@cdktf/provider-aws.connectBotAssociation.ConnectBotAssociationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/connect_bot_association#id ConnectBotAssociation#id}. |
+| <code><a href="#@cdktf/provider-aws.connectBotAssociation.ConnectBotAssociationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/connect_bot_association#id ConnectBotAssociation#id}. |
+| <code><a href="#@cdktf/provider-aws.connectBotAssociation.ConnectBotAssociationConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
 
@@ -864,7 +895,7 @@ InstanceId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/connect_bot_association#instance_id ConnectBotAssociation#instance_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/connect_bot_association#instance_id ConnectBotAssociation#instance_id}.
 
 ---
 
@@ -878,7 +909,7 @@ LexBot ConnectBotAssociationLexBot
 
 lex_bot block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/connect_bot_association#lex_bot ConnectBotAssociation#lex_bot}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/connect_bot_association#lex_bot ConnectBotAssociation#lex_bot}
 
 ---
 
@@ -890,10 +921,24 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/connect_bot_association#id ConnectBotAssociation#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/connect_bot_association#id ConnectBotAssociation#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `Region`<sup>Optional</sup> <a name="Region" id="@cdktf/provider-aws.connectBotAssociation.ConnectBotAssociationConfig.property.region"></a>
+
+```go
+Region *string
+```
+
+- *Type:* *string
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/connect_bot_association#region ConnectBotAssociation#region}
 
 ---
 
@@ -902,7 +947,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.connectBotAssociation.ConnectBotAssociationLexBot.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/connectbotassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/connectbotassociation"
 
 &connectbotassociation.ConnectBotAssociationLexBot {
 	Name: *string,
@@ -914,8 +959,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/connectbotassociation"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.connectBotAssociation.ConnectBotAssociationLexBot.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/connect_bot_association#name ConnectBotAssociation#name}. |
-| <code><a href="#@cdktf/provider-aws.connectBotAssociation.ConnectBotAssociationLexBot.property.lexRegion">LexRegion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/connect_bot_association#lex_region ConnectBotAssociation#lex_region}. |
+| <code><a href="#@cdktf/provider-aws.connectBotAssociation.ConnectBotAssociationLexBot.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/connect_bot_association#name ConnectBotAssociation#name}. |
+| <code><a href="#@cdktf/provider-aws.connectBotAssociation.ConnectBotAssociationLexBot.property.lexRegion">LexRegion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/connect_bot_association#lex_region ConnectBotAssociation#lex_region}. |
 
 ---
 
@@ -927,7 +972,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/connect_bot_association#name ConnectBotAssociation#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/connect_bot_association#name ConnectBotAssociation#name}.
 
 ---
 
@@ -939,7 +984,7 @@ LexRegion *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/connect_bot_association#lex_region ConnectBotAssociation#lex_region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/connect_bot_association#lex_region ConnectBotAssociation#lex_region}.
 
 ---
 
@@ -950,7 +995,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.connectBotAssociation.ConnectBotAssociationLexBotOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/connectbotassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/connectbotassociation"
 
 connectbotassociation.NewConnectBotAssociationLexBotOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ConnectBotAssociationLexBotOutputReference
 ```

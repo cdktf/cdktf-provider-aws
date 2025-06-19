@@ -4,12 +4,12 @@
 
 ### AppflowConnectorProfile <a name="AppflowConnectorProfile" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfile"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile aws_appflow_connector_profile}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile aws_appflow_connector_profile}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfile.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appflowconnectorprofile"
 
 appflowconnectorprofile.NewAppflowConnectorProfile(scope Construct, id *string, config AppflowConnectorProfileConfig) AppflowConnectorProfile
 ```
@@ -77,6 +77,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfile.resetConnectorLabel">ResetConnectorLabel</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfile.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfile.resetKmsArn">ResetKmsArn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfile.resetRegion">ResetRegion</a></code> | *No description.* |
 
 ---
 
@@ -398,6 +399,12 @@ func ResetId()
 func ResetKmsArn()
 ```
 
+##### `ResetRegion` <a name="ResetRegion" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfile.resetRegion"></a>
+
+```go
+func ResetRegion()
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -412,7 +419,7 @@ func ResetKmsArn()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfile.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appflowconnectorprofile"
 
 appflowconnectorprofile.AppflowConnectorProfile_IsConstruct(x interface{}) *bool
 ```
@@ -444,7 +451,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfile.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appflowconnectorprofile"
 
 appflowconnectorprofile.AppflowConnectorProfile_IsTerraformElement(x interface{}) *bool
 ```
@@ -458,7 +465,7 @@ appflowconnectorprofile.AppflowConnectorProfile_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfile.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appflowconnectorprofile"
 
 appflowconnectorprofile.AppflowConnectorProfile_IsTerraformResource(x interface{}) *bool
 ```
@@ -472,7 +479,7 @@ appflowconnectorprofile.AppflowConnectorProfile_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfile.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appflowconnectorprofile"
 
 appflowconnectorprofile.AppflowConnectorProfile_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -501,7 +508,7 @@ The construct id used in the generated config for the AppflowConnectorProfile to
 
 The id of the existing AppflowConnectorProfile that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -541,12 +548,14 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfile.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfile.property.kmsArnInput">KmsArnInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfile.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfile.property.regionInput">RegionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfile.property.connectionMode">ConnectionMode</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfile.property.connectorLabel">ConnectorLabel</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfile.property.connectorType">ConnectorType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfile.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfile.property.kmsArn">KmsArn</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfile.property.name">Name</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfile.property.region">Region</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
@@ -792,6 +801,16 @@ func NameInput() *string
 
 ---
 
+##### `RegionInput`<sup>Optional</sup> <a name="RegionInput" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfile.property.regionInput"></a>
+
+```go
+func RegionInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `ConnectionMode`<sup>Required</sup> <a name="ConnectionMode" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfile.property.connectionMode"></a>
 
 ```go
@@ -852,6 +871,16 @@ func Name() *string
 
 ---
 
+##### `Region`<sup>Required</sup> <a name="Region" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfile.property.region"></a>
+
+```go
+func Region() *string
+```
+
+- *Type:* *string
+
+---
+
 #### Constants <a name="Constants" id="Constants"></a>
 
 | **Name** | **Type** | **Description** |
@@ -877,7 +906,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appflowconnectorprofile"
 
 &appflowconnectorprofile.AppflowConnectorProfileConfig {
 	Connection: interface{},
@@ -888,12 +917,13 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	ConnectionMode: *string,
-	ConnectorProfileConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v20.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfig,
+	ConnectorProfileConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v21.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfig,
 	ConnectorType: *string,
 	Name: *string,
 	ConnectorLabel: *string,
 	Id: *string,
 	KmsArn: *string,
+	Region: *string,
 }
 ```
 
@@ -908,13 +938,14 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
 | <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConfig.property.connectionMode">ConnectionMode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#connection_mode AppflowConnectorProfile#connection_mode}. |
+| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConfig.property.connectionMode">ConnectionMode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#connection_mode AppflowConnectorProfile#connection_mode}. |
 | <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConfig.property.connectorProfileConfig">ConnectorProfileConfig</a></code> | <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfig">AppflowConnectorProfileConnectorProfileConfig</a></code> | connector_profile_config block. |
-| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConfig.property.connectorType">ConnectorType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#connector_type AppflowConnectorProfile#connector_type}. |
-| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#name AppflowConnectorProfile#name}. |
-| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConfig.property.connectorLabel">ConnectorLabel</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#connector_label AppflowConnectorProfile#connector_label}. |
-| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#id AppflowConnectorProfile#id}. |
-| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConfig.property.kmsArn">KmsArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#kms_arn AppflowConnectorProfile#kms_arn}. |
+| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConfig.property.connectorType">ConnectorType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#connector_type AppflowConnectorProfile#connector_type}. |
+| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#name AppflowConnectorProfile#name}. |
+| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConfig.property.connectorLabel">ConnectorLabel</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#connector_label AppflowConnectorProfile#connector_label}. |
+| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#id AppflowConnectorProfile#id}. |
+| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConfig.property.kmsArn">KmsArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#kms_arn AppflowConnectorProfile#kms_arn}. |
+| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
 
@@ -996,7 +1027,7 @@ ConnectionMode *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#connection_mode AppflowConnectorProfile#connection_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#connection_mode AppflowConnectorProfile#connection_mode}.
 
 ---
 
@@ -1010,7 +1041,7 @@ ConnectorProfileConfig AppflowConnectorProfileConnectorProfileConfig
 
 connector_profile_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#connector_profile_config AppflowConnectorProfile#connector_profile_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#connector_profile_config AppflowConnectorProfile#connector_profile_config}
 
 ---
 
@@ -1022,7 +1053,7 @@ ConnectorType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#connector_type AppflowConnectorProfile#connector_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#connector_type AppflowConnectorProfile#connector_type}.
 
 ---
 
@@ -1034,7 +1065,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#name AppflowConnectorProfile#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#name AppflowConnectorProfile#name}.
 
 ---
 
@@ -1046,7 +1077,7 @@ ConnectorLabel *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#connector_label AppflowConnectorProfile#connector_label}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#connector_label AppflowConnectorProfile#connector_label}.
 
 ---
 
@@ -1058,7 +1089,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#id AppflowConnectorProfile#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#id AppflowConnectorProfile#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1073,7 +1104,21 @@ KmsArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#kms_arn AppflowConnectorProfile#kms_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#kms_arn AppflowConnectorProfile#kms_arn}.
+
+---
+
+##### `Region`<sup>Optional</sup> <a name="Region" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConfig.property.region"></a>
+
+```go
+Region *string
+```
+
+- *Type:* *string
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#region AppflowConnectorProfile#region}
 
 ---
 
@@ -1082,11 +1127,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appflowconnectorprofile"
 
 &appflowconnectorprofile.AppflowConnectorProfileConnectorProfileConfig {
-	ConnectorProfileCredentials: github.com/cdktf/cdktf-provider-aws-go/aws/v20.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentials,
-	ConnectorProfileProperties: github.com/cdktf/cdktf-provider-aws-go/aws/v20.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileProperties,
+	ConnectorProfileCredentials: github.com/cdktf/cdktf-provider-aws-go/aws/v21.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentials,
+	ConnectorProfileProperties: github.com/cdktf/cdktf-provider-aws-go/aws/v21.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileProperties,
 }
 ```
 
@@ -1109,7 +1154,7 @@ ConnectorProfileCredentials AppflowConnectorProfileConnectorProfileConfigConnect
 
 connector_profile_credentials block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#connector_profile_credentials AppflowConnectorProfile#connector_profile_credentials}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#connector_profile_credentials AppflowConnectorProfile#connector_profile_credentials}
 
 ---
 
@@ -1123,7 +1168,7 @@ ConnectorProfileProperties AppflowConnectorProfileConnectorProfileConfigConnecto
 
 connector_profile_properties block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#connector_profile_properties AppflowConnectorProfile#connector_profile_properties}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#connector_profile_properties AppflowConnectorProfile#connector_profile_properties}
 
 ---
 
@@ -1132,27 +1177,27 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentials.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appflowconnectorprofile"
 
 &appflowconnectorprofile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentials {
-	Amplitude: github.com/cdktf/cdktf-provider-aws-go/aws/v20.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsAmplitude,
-	CustomConnector: github.com/cdktf/cdktf-provider-aws-go/aws/v20.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnector,
-	Datadog: github.com/cdktf/cdktf-provider-aws-go/aws/v20.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsDatadog,
-	Dynatrace: github.com/cdktf/cdktf-provider-aws-go/aws/v20.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsDynatrace,
-	GoogleAnalytics: github.com/cdktf/cdktf-provider-aws-go/aws/v20.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsGoogleAnalytics,
-	Honeycode: github.com/cdktf/cdktf-provider-aws-go/aws/v20.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsHoneycode,
-	InforNexus: github.com/cdktf/cdktf-provider-aws-go/aws/v20.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsInforNexus,
-	Marketo: github.com/cdktf/cdktf-provider-aws-go/aws/v20.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsMarketo,
-	Redshift: github.com/cdktf/cdktf-provider-aws-go/aws/v20.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsRedshift,
-	Salesforce: github.com/cdktf/cdktf-provider-aws-go/aws/v20.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSalesforce,
-	SapoData: github.com/cdktf/cdktf-provider-aws-go/aws/v20.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoData,
-	ServiceNow: github.com/cdktf/cdktf-provider-aws-go/aws/v20.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsServiceNow,
-	Singular: github.com/cdktf/cdktf-provider-aws-go/aws/v20.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSingular,
-	Slack: github.com/cdktf/cdktf-provider-aws-go/aws/v20.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSlack,
-	Snowflake: github.com/cdktf/cdktf-provider-aws-go/aws/v20.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSnowflake,
-	Trendmicro: github.com/cdktf/cdktf-provider-aws-go/aws/v20.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsTrendmicro,
-	Veeva: github.com/cdktf/cdktf-provider-aws-go/aws/v20.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsVeeva,
-	Zendesk: github.com/cdktf/cdktf-provider-aws-go/aws/v20.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsZendesk,
+	Amplitude: github.com/cdktf/cdktf-provider-aws-go/aws/v21.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsAmplitude,
+	CustomConnector: github.com/cdktf/cdktf-provider-aws-go/aws/v21.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnector,
+	Datadog: github.com/cdktf/cdktf-provider-aws-go/aws/v21.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsDatadog,
+	Dynatrace: github.com/cdktf/cdktf-provider-aws-go/aws/v21.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsDynatrace,
+	GoogleAnalytics: github.com/cdktf/cdktf-provider-aws-go/aws/v21.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsGoogleAnalytics,
+	Honeycode: github.com/cdktf/cdktf-provider-aws-go/aws/v21.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsHoneycode,
+	InforNexus: github.com/cdktf/cdktf-provider-aws-go/aws/v21.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsInforNexus,
+	Marketo: github.com/cdktf/cdktf-provider-aws-go/aws/v21.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsMarketo,
+	Redshift: github.com/cdktf/cdktf-provider-aws-go/aws/v21.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsRedshift,
+	Salesforce: github.com/cdktf/cdktf-provider-aws-go/aws/v21.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSalesforce,
+	SapoData: github.com/cdktf/cdktf-provider-aws-go/aws/v21.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoData,
+	ServiceNow: github.com/cdktf/cdktf-provider-aws-go/aws/v21.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsServiceNow,
+	Singular: github.com/cdktf/cdktf-provider-aws-go/aws/v21.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSingular,
+	Slack: github.com/cdktf/cdktf-provider-aws-go/aws/v21.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSlack,
+	Snowflake: github.com/cdktf/cdktf-provider-aws-go/aws/v21.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSnowflake,
+	Trendmicro: github.com/cdktf/cdktf-provider-aws-go/aws/v21.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsTrendmicro,
+	Veeva: github.com/cdktf/cdktf-provider-aws-go/aws/v21.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsVeeva,
+	Zendesk: github.com/cdktf/cdktf-provider-aws-go/aws/v21.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsZendesk,
 }
 ```
 
@@ -1191,7 +1236,7 @@ Amplitude AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentia
 
 amplitude block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#amplitude AppflowConnectorProfile#amplitude}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#amplitude AppflowConnectorProfile#amplitude}
 
 ---
 
@@ -1205,7 +1250,7 @@ CustomConnector AppflowConnectorProfileConnectorProfileConfigConnectorProfileCre
 
 custom_connector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#custom_connector AppflowConnectorProfile#custom_connector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#custom_connector AppflowConnectorProfile#custom_connector}
 
 ---
 
@@ -1219,7 +1264,7 @@ Datadog AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentials
 
 datadog block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#datadog AppflowConnectorProfile#datadog}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#datadog AppflowConnectorProfile#datadog}
 
 ---
 
@@ -1233,7 +1278,7 @@ Dynatrace AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentia
 
 dynatrace block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#dynatrace AppflowConnectorProfile#dynatrace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#dynatrace AppflowConnectorProfile#dynatrace}
 
 ---
 
@@ -1247,7 +1292,7 @@ GoogleAnalytics AppflowConnectorProfileConnectorProfileConfigConnectorProfileCre
 
 google_analytics block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#google_analytics AppflowConnectorProfile#google_analytics}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#google_analytics AppflowConnectorProfile#google_analytics}
 
 ---
 
@@ -1261,7 +1306,7 @@ Honeycode AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentia
 
 honeycode block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#honeycode AppflowConnectorProfile#honeycode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#honeycode AppflowConnectorProfile#honeycode}
 
 ---
 
@@ -1275,7 +1320,7 @@ InforNexus AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredenti
 
 infor_nexus block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#infor_nexus AppflowConnectorProfile#infor_nexus}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#infor_nexus AppflowConnectorProfile#infor_nexus}
 
 ---
 
@@ -1289,7 +1334,7 @@ Marketo AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentials
 
 marketo block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#marketo AppflowConnectorProfile#marketo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#marketo AppflowConnectorProfile#marketo}
 
 ---
 
@@ -1303,7 +1348,7 @@ Redshift AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredential
 
 redshift block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#redshift AppflowConnectorProfile#redshift}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#redshift AppflowConnectorProfile#redshift}
 
 ---
 
@@ -1317,7 +1362,7 @@ Salesforce AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredenti
 
 salesforce block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#salesforce AppflowConnectorProfile#salesforce}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#salesforce AppflowConnectorProfile#salesforce}
 
 ---
 
@@ -1331,7 +1376,7 @@ SapoData AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredential
 
 sapo_data block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#sapo_data AppflowConnectorProfile#sapo_data}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#sapo_data AppflowConnectorProfile#sapo_data}
 
 ---
 
@@ -1345,7 +1390,7 @@ ServiceNow AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredenti
 
 service_now block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#service_now AppflowConnectorProfile#service_now}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#service_now AppflowConnectorProfile#service_now}
 
 ---
 
@@ -1359,7 +1404,7 @@ Singular AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredential
 
 singular block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#singular AppflowConnectorProfile#singular}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#singular AppflowConnectorProfile#singular}
 
 ---
 
@@ -1373,7 +1418,7 @@ Slack AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSl
 
 slack block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#slack AppflowConnectorProfile#slack}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#slack AppflowConnectorProfile#slack}
 
 ---
 
@@ -1387,7 +1432,7 @@ Snowflake AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentia
 
 snowflake block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#snowflake AppflowConnectorProfile#snowflake}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#snowflake AppflowConnectorProfile#snowflake}
 
 ---
 
@@ -1401,7 +1446,7 @@ Trendmicro AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredenti
 
 trendmicro block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#trendmicro AppflowConnectorProfile#trendmicro}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#trendmicro AppflowConnectorProfile#trendmicro}
 
 ---
 
@@ -1415,7 +1460,7 @@ Veeva AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsVe
 
 veeva block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#veeva AppflowConnectorProfile#veeva}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#veeva AppflowConnectorProfile#veeva}
 
 ---
 
@@ -1429,7 +1474,7 @@ Zendesk AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentials
 
 zendesk block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#zendesk AppflowConnectorProfile#zendesk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#zendesk AppflowConnectorProfile#zendesk}
 
 ---
 
@@ -1438,7 +1483,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsAmplitude.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appflowconnectorprofile"
 
 &appflowconnectorprofile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsAmplitude {
 	ApiKey: *string,
@@ -1450,8 +1495,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsAmplitude.property.apiKey">ApiKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#api_key AppflowConnectorProfile#api_key}. |
-| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsAmplitude.property.secretKey">SecretKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#secret_key AppflowConnectorProfile#secret_key}. |
+| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsAmplitude.property.apiKey">ApiKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#api_key AppflowConnectorProfile#api_key}. |
+| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsAmplitude.property.secretKey">SecretKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#secret_key AppflowConnectorProfile#secret_key}. |
 
 ---
 
@@ -1463,7 +1508,7 @@ ApiKey *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#api_key AppflowConnectorProfile#api_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#api_key AppflowConnectorProfile#api_key}.
 
 ---
 
@@ -1475,7 +1520,7 @@ SecretKey *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#secret_key AppflowConnectorProfile#secret_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#secret_key AppflowConnectorProfile#secret_key}.
 
 ---
 
@@ -1484,14 +1529,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnector.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appflowconnectorprofile"
 
 &appflowconnectorprofile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnector {
 	AuthenticationType: *string,
-	ApiKey: github.com/cdktf/cdktf-provider-aws-go/aws/v20.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorApiKey,
-	Basic: github.com/cdktf/cdktf-provider-aws-go/aws/v20.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorBasic,
-	Custom: github.com/cdktf/cdktf-provider-aws-go/aws/v20.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorCustom,
-	Oauth2: github.com/cdktf/cdktf-provider-aws-go/aws/v20.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorOauth2,
+	ApiKey: github.com/cdktf/cdktf-provider-aws-go/aws/v21.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorApiKey,
+	Basic: github.com/cdktf/cdktf-provider-aws-go/aws/v21.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorBasic,
+	Custom: github.com/cdktf/cdktf-provider-aws-go/aws/v21.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorCustom,
+	Oauth2: github.com/cdktf/cdktf-provider-aws-go/aws/v21.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorOauth2,
 }
 ```
 
@@ -1499,7 +1544,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnector.property.authenticationType">AuthenticationType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#authentication_type AppflowConnectorProfile#authentication_type}. |
+| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnector.property.authenticationType">AuthenticationType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#authentication_type AppflowConnectorProfile#authentication_type}. |
 | <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnector.property.apiKey">ApiKey</a></code> | <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorApiKey">AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorApiKey</a></code> | api_key block. |
 | <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnector.property.basic">Basic</a></code> | <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorBasic">AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorBasic</a></code> | basic block. |
 | <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnector.property.custom">Custom</a></code> | <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorCustom">AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorCustom</a></code> | custom block. |
@@ -1515,7 +1560,7 @@ AuthenticationType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#authentication_type AppflowConnectorProfile#authentication_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#authentication_type AppflowConnectorProfile#authentication_type}.
 
 ---
 
@@ -1529,7 +1574,7 @@ ApiKey AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsC
 
 api_key block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#api_key AppflowConnectorProfile#api_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#api_key AppflowConnectorProfile#api_key}
 
 ---
 
@@ -1543,7 +1588,7 @@ Basic AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCu
 
 basic block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#basic AppflowConnectorProfile#basic}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#basic AppflowConnectorProfile#basic}
 
 ---
 
@@ -1557,7 +1602,7 @@ Custom AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsC
 
 custom block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#custom AppflowConnectorProfile#custom}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#custom AppflowConnectorProfile#custom}
 
 ---
 
@@ -1571,7 +1616,7 @@ Oauth2 AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsC
 
 oauth2 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#oauth2 AppflowConnectorProfile#oauth2}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#oauth2 AppflowConnectorProfile#oauth2}
 
 ---
 
@@ -1580,7 +1625,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorApiKey.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appflowconnectorprofile"
 
 &appflowconnectorprofile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorApiKey {
 	ApiKey: *string,
@@ -1592,8 +1637,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorApiKey.property.apiKey">ApiKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#api_key AppflowConnectorProfile#api_key}. |
-| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorApiKey.property.apiSecretKey">ApiSecretKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#api_secret_key AppflowConnectorProfile#api_secret_key}. |
+| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorApiKey.property.apiKey">ApiKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#api_key AppflowConnectorProfile#api_key}. |
+| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorApiKey.property.apiSecretKey">ApiSecretKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#api_secret_key AppflowConnectorProfile#api_secret_key}. |
 
 ---
 
@@ -1605,7 +1650,7 @@ ApiKey *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#api_key AppflowConnectorProfile#api_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#api_key AppflowConnectorProfile#api_key}.
 
 ---
 
@@ -1617,7 +1662,7 @@ ApiSecretKey *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#api_secret_key AppflowConnectorProfile#api_secret_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#api_secret_key AppflowConnectorProfile#api_secret_key}.
 
 ---
 
@@ -1626,7 +1671,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorBasic.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appflowconnectorprofile"
 
 &appflowconnectorprofile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorBasic {
 	Password: *string,
@@ -1638,8 +1683,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorBasic.property.password">Password</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#password AppflowConnectorProfile#password}. |
-| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorBasic.property.username">Username</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#username AppflowConnectorProfile#username}. |
+| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorBasic.property.password">Password</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#password AppflowConnectorProfile#password}. |
+| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorBasic.property.username">Username</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#username AppflowConnectorProfile#username}. |
 
 ---
 
@@ -1651,7 +1696,7 @@ Password *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#password AppflowConnectorProfile#password}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#password AppflowConnectorProfile#password}.
 
 ---
 
@@ -1663,7 +1708,7 @@ Username *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#username AppflowConnectorProfile#username}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#username AppflowConnectorProfile#username}.
 
 ---
 
@@ -1672,7 +1717,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorCustom.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appflowconnectorprofile"
 
 &appflowconnectorprofile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorCustom {
 	CustomAuthenticationType: *string,
@@ -1684,8 +1729,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorCustom.property.customAuthenticationType">CustomAuthenticationType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#custom_authentication_type AppflowConnectorProfile#custom_authentication_type}. |
-| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorCustom.property.credentialsMap">CredentialsMap</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#credentials_map AppflowConnectorProfile#credentials_map}. |
+| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorCustom.property.customAuthenticationType">CustomAuthenticationType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#custom_authentication_type AppflowConnectorProfile#custom_authentication_type}. |
+| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorCustom.property.credentialsMap">CredentialsMap</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#credentials_map AppflowConnectorProfile#credentials_map}. |
 
 ---
 
@@ -1697,7 +1742,7 @@ CustomAuthenticationType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#custom_authentication_type AppflowConnectorProfile#custom_authentication_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#custom_authentication_type AppflowConnectorProfile#custom_authentication_type}.
 
 ---
 
@@ -1709,7 +1754,7 @@ CredentialsMap *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#credentials_map AppflowConnectorProfile#credentials_map}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#credentials_map AppflowConnectorProfile#credentials_map}.
 
 ---
 
@@ -1718,13 +1763,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorOauth2.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appflowconnectorprofile"
 
 &appflowconnectorprofile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorOauth2 {
 	AccessToken: *string,
 	ClientId: *string,
 	ClientSecret: *string,
-	OauthRequest: github.com/cdktf/cdktf-provider-aws-go/aws/v20.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorOauth2OauthRequest,
+	OauthRequest: github.com/cdktf/cdktf-provider-aws-go/aws/v21.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorOauth2OauthRequest,
 	RefreshToken: *string,
 }
 ```
@@ -1733,11 +1778,11 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorOauth2.property.accessToken">AccessToken</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#access_token AppflowConnectorProfile#access_token}. |
-| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorOauth2.property.clientId">ClientId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#client_id AppflowConnectorProfile#client_id}. |
-| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorOauth2.property.clientSecret">ClientSecret</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#client_secret AppflowConnectorProfile#client_secret}. |
+| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorOauth2.property.accessToken">AccessToken</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#access_token AppflowConnectorProfile#access_token}. |
+| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorOauth2.property.clientId">ClientId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#client_id AppflowConnectorProfile#client_id}. |
+| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorOauth2.property.clientSecret">ClientSecret</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#client_secret AppflowConnectorProfile#client_secret}. |
 | <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorOauth2.property.oauthRequest">OauthRequest</a></code> | <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorOauth2OauthRequest">AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorOauth2OauthRequest</a></code> | oauth_request block. |
-| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorOauth2.property.refreshToken">RefreshToken</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#refresh_token AppflowConnectorProfile#refresh_token}. |
+| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorOauth2.property.refreshToken">RefreshToken</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#refresh_token AppflowConnectorProfile#refresh_token}. |
 
 ---
 
@@ -1749,7 +1794,7 @@ AccessToken *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#access_token AppflowConnectorProfile#access_token}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#access_token AppflowConnectorProfile#access_token}.
 
 ---
 
@@ -1761,7 +1806,7 @@ ClientId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#client_id AppflowConnectorProfile#client_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#client_id AppflowConnectorProfile#client_id}.
 
 ---
 
@@ -1773,7 +1818,7 @@ ClientSecret *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#client_secret AppflowConnectorProfile#client_secret}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#client_secret AppflowConnectorProfile#client_secret}.
 
 ---
 
@@ -1787,7 +1832,7 @@ OauthRequest AppflowConnectorProfileConnectorProfileConfigConnectorProfileCreden
 
 oauth_request block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#oauth_request AppflowConnectorProfile#oauth_request}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#oauth_request AppflowConnectorProfile#oauth_request}
 
 ---
 
@@ -1799,7 +1844,7 @@ RefreshToken *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#refresh_token AppflowConnectorProfile#refresh_token}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#refresh_token AppflowConnectorProfile#refresh_token}.
 
 ---
 
@@ -1808,7 +1853,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorOauth2OauthRequest.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appflowconnectorprofile"
 
 &appflowconnectorprofile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorOauth2OauthRequest {
 	AuthCode: *string,
@@ -1820,8 +1865,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorOauth2OauthRequest.property.authCode">AuthCode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#auth_code AppflowConnectorProfile#auth_code}. |
-| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorOauth2OauthRequest.property.redirectUri">RedirectUri</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#redirect_uri AppflowConnectorProfile#redirect_uri}. |
+| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorOauth2OauthRequest.property.authCode">AuthCode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#auth_code AppflowConnectorProfile#auth_code}. |
+| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorOauth2OauthRequest.property.redirectUri">RedirectUri</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#redirect_uri AppflowConnectorProfile#redirect_uri}. |
 
 ---
 
@@ -1833,7 +1878,7 @@ AuthCode *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#auth_code AppflowConnectorProfile#auth_code}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#auth_code AppflowConnectorProfile#auth_code}.
 
 ---
 
@@ -1845,7 +1890,7 @@ RedirectUri *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#redirect_uri AppflowConnectorProfile#redirect_uri}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#redirect_uri AppflowConnectorProfile#redirect_uri}.
 
 ---
 
@@ -1854,7 +1899,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsDatadog.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appflowconnectorprofile"
 
 &appflowconnectorprofile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsDatadog {
 	ApiKey: *string,
@@ -1866,8 +1911,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsDatadog.property.apiKey">ApiKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#api_key AppflowConnectorProfile#api_key}. |
-| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsDatadog.property.applicationKey">ApplicationKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#application_key AppflowConnectorProfile#application_key}. |
+| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsDatadog.property.apiKey">ApiKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#api_key AppflowConnectorProfile#api_key}. |
+| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsDatadog.property.applicationKey">ApplicationKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#application_key AppflowConnectorProfile#application_key}. |
 
 ---
 
@@ -1879,7 +1924,7 @@ ApiKey *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#api_key AppflowConnectorProfile#api_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#api_key AppflowConnectorProfile#api_key}.
 
 ---
 
@@ -1891,7 +1936,7 @@ ApplicationKey *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#application_key AppflowConnectorProfile#application_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#application_key AppflowConnectorProfile#application_key}.
 
 ---
 
@@ -1900,7 +1945,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsDynatrace.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appflowconnectorprofile"
 
 &appflowconnectorprofile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsDynatrace {
 	ApiToken: *string,
@@ -1911,7 +1956,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsDynatrace.property.apiToken">ApiToken</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#api_token AppflowConnectorProfile#api_token}. |
+| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsDynatrace.property.apiToken">ApiToken</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#api_token AppflowConnectorProfile#api_token}. |
 
 ---
 
@@ -1923,7 +1968,7 @@ ApiToken *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#api_token AppflowConnectorProfile#api_token}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#api_token AppflowConnectorProfile#api_token}.
 
 ---
 
@@ -1932,13 +1977,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsGoogleAnalytics.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appflowconnectorprofile"
 
 &appflowconnectorprofile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsGoogleAnalytics {
 	ClientId: *string,
 	ClientSecret: *string,
 	AccessToken: *string,
-	OauthRequest: github.com/cdktf/cdktf-provider-aws-go/aws/v20.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsGoogleAnalyticsOauthRequest,
+	OauthRequest: github.com/cdktf/cdktf-provider-aws-go/aws/v21.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsGoogleAnalyticsOauthRequest,
 	RefreshToken: *string,
 }
 ```
@@ -1947,11 +1992,11 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsGoogleAnalytics.property.clientId">ClientId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#client_id AppflowConnectorProfile#client_id}. |
-| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsGoogleAnalytics.property.clientSecret">ClientSecret</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#client_secret AppflowConnectorProfile#client_secret}. |
-| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsGoogleAnalytics.property.accessToken">AccessToken</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#access_token AppflowConnectorProfile#access_token}. |
+| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsGoogleAnalytics.property.clientId">ClientId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#client_id AppflowConnectorProfile#client_id}. |
+| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsGoogleAnalytics.property.clientSecret">ClientSecret</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#client_secret AppflowConnectorProfile#client_secret}. |
+| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsGoogleAnalytics.property.accessToken">AccessToken</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#access_token AppflowConnectorProfile#access_token}. |
 | <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsGoogleAnalytics.property.oauthRequest">OauthRequest</a></code> | <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsGoogleAnalyticsOauthRequest">AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsGoogleAnalyticsOauthRequest</a></code> | oauth_request block. |
-| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsGoogleAnalytics.property.refreshToken">RefreshToken</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#refresh_token AppflowConnectorProfile#refresh_token}. |
+| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsGoogleAnalytics.property.refreshToken">RefreshToken</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#refresh_token AppflowConnectorProfile#refresh_token}. |
 
 ---
 
@@ -1963,7 +2008,7 @@ ClientId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#client_id AppflowConnectorProfile#client_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#client_id AppflowConnectorProfile#client_id}.
 
 ---
 
@@ -1975,7 +2020,7 @@ ClientSecret *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#client_secret AppflowConnectorProfile#client_secret}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#client_secret AppflowConnectorProfile#client_secret}.
 
 ---
 
@@ -1987,7 +2032,7 @@ AccessToken *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#access_token AppflowConnectorProfile#access_token}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#access_token AppflowConnectorProfile#access_token}.
 
 ---
 
@@ -2001,7 +2046,7 @@ OauthRequest AppflowConnectorProfileConnectorProfileConfigConnectorProfileCreden
 
 oauth_request block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#oauth_request AppflowConnectorProfile#oauth_request}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#oauth_request AppflowConnectorProfile#oauth_request}
 
 ---
 
@@ -2013,7 +2058,7 @@ RefreshToken *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#refresh_token AppflowConnectorProfile#refresh_token}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#refresh_token AppflowConnectorProfile#refresh_token}.
 
 ---
 
@@ -2022,7 +2067,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsGoogleAnalyticsOauthRequest.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appflowconnectorprofile"
 
 &appflowconnectorprofile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsGoogleAnalyticsOauthRequest {
 	AuthCode: *string,
@@ -2034,8 +2079,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsGoogleAnalyticsOauthRequest.property.authCode">AuthCode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#auth_code AppflowConnectorProfile#auth_code}. |
-| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsGoogleAnalyticsOauthRequest.property.redirectUri">RedirectUri</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#redirect_uri AppflowConnectorProfile#redirect_uri}. |
+| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsGoogleAnalyticsOauthRequest.property.authCode">AuthCode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#auth_code AppflowConnectorProfile#auth_code}. |
+| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsGoogleAnalyticsOauthRequest.property.redirectUri">RedirectUri</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#redirect_uri AppflowConnectorProfile#redirect_uri}. |
 
 ---
 
@@ -2047,7 +2092,7 @@ AuthCode *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#auth_code AppflowConnectorProfile#auth_code}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#auth_code AppflowConnectorProfile#auth_code}.
 
 ---
 
@@ -2059,7 +2104,7 @@ RedirectUri *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#redirect_uri AppflowConnectorProfile#redirect_uri}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#redirect_uri AppflowConnectorProfile#redirect_uri}.
 
 ---
 
@@ -2068,11 +2113,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsHoneycode.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appflowconnectorprofile"
 
 &appflowconnectorprofile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsHoneycode {
 	AccessToken: *string,
-	OauthRequest: github.com/cdktf/cdktf-provider-aws-go/aws/v20.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsHoneycodeOauthRequest,
+	OauthRequest: github.com/cdktf/cdktf-provider-aws-go/aws/v21.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsHoneycodeOauthRequest,
 	RefreshToken: *string,
 }
 ```
@@ -2081,9 +2126,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsHoneycode.property.accessToken">AccessToken</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#access_token AppflowConnectorProfile#access_token}. |
+| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsHoneycode.property.accessToken">AccessToken</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#access_token AppflowConnectorProfile#access_token}. |
 | <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsHoneycode.property.oauthRequest">OauthRequest</a></code> | <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsHoneycodeOauthRequest">AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsHoneycodeOauthRequest</a></code> | oauth_request block. |
-| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsHoneycode.property.refreshToken">RefreshToken</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#refresh_token AppflowConnectorProfile#refresh_token}. |
+| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsHoneycode.property.refreshToken">RefreshToken</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#refresh_token AppflowConnectorProfile#refresh_token}. |
 
 ---
 
@@ -2095,7 +2140,7 @@ AccessToken *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#access_token AppflowConnectorProfile#access_token}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#access_token AppflowConnectorProfile#access_token}.
 
 ---
 
@@ -2109,7 +2154,7 @@ OauthRequest AppflowConnectorProfileConnectorProfileConfigConnectorProfileCreden
 
 oauth_request block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#oauth_request AppflowConnectorProfile#oauth_request}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#oauth_request AppflowConnectorProfile#oauth_request}
 
 ---
 
@@ -2121,7 +2166,7 @@ RefreshToken *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#refresh_token AppflowConnectorProfile#refresh_token}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#refresh_token AppflowConnectorProfile#refresh_token}.
 
 ---
 
@@ -2130,7 +2175,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsHoneycodeOauthRequest.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appflowconnectorprofile"
 
 &appflowconnectorprofile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsHoneycodeOauthRequest {
 	AuthCode: *string,
@@ -2142,8 +2187,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsHoneycodeOauthRequest.property.authCode">AuthCode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#auth_code AppflowConnectorProfile#auth_code}. |
-| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsHoneycodeOauthRequest.property.redirectUri">RedirectUri</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#redirect_uri AppflowConnectorProfile#redirect_uri}. |
+| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsHoneycodeOauthRequest.property.authCode">AuthCode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#auth_code AppflowConnectorProfile#auth_code}. |
+| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsHoneycodeOauthRequest.property.redirectUri">RedirectUri</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#redirect_uri AppflowConnectorProfile#redirect_uri}. |
 
 ---
 
@@ -2155,7 +2200,7 @@ AuthCode *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#auth_code AppflowConnectorProfile#auth_code}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#auth_code AppflowConnectorProfile#auth_code}.
 
 ---
 
@@ -2167,7 +2212,7 @@ RedirectUri *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#redirect_uri AppflowConnectorProfile#redirect_uri}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#redirect_uri AppflowConnectorProfile#redirect_uri}.
 
 ---
 
@@ -2176,7 +2221,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsInforNexus.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appflowconnectorprofile"
 
 &appflowconnectorprofile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsInforNexus {
 	AccessKeyId: *string,
@@ -2190,10 +2235,10 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsInforNexus.property.accessKeyId">AccessKeyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#access_key_id AppflowConnectorProfile#access_key_id}. |
-| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsInforNexus.property.datakey">Datakey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#datakey AppflowConnectorProfile#datakey}. |
-| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsInforNexus.property.secretAccessKey">SecretAccessKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#secret_access_key AppflowConnectorProfile#secret_access_key}. |
-| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsInforNexus.property.userId">UserId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#user_id AppflowConnectorProfile#user_id}. |
+| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsInforNexus.property.accessKeyId">AccessKeyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#access_key_id AppflowConnectorProfile#access_key_id}. |
+| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsInforNexus.property.datakey">Datakey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#datakey AppflowConnectorProfile#datakey}. |
+| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsInforNexus.property.secretAccessKey">SecretAccessKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#secret_access_key AppflowConnectorProfile#secret_access_key}. |
+| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsInforNexus.property.userId">UserId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#user_id AppflowConnectorProfile#user_id}. |
 
 ---
 
@@ -2205,7 +2250,7 @@ AccessKeyId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#access_key_id AppflowConnectorProfile#access_key_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#access_key_id AppflowConnectorProfile#access_key_id}.
 
 ---
 
@@ -2217,7 +2262,7 @@ Datakey *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#datakey AppflowConnectorProfile#datakey}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#datakey AppflowConnectorProfile#datakey}.
 
 ---
 
@@ -2229,7 +2274,7 @@ SecretAccessKey *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#secret_access_key AppflowConnectorProfile#secret_access_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#secret_access_key AppflowConnectorProfile#secret_access_key}.
 
 ---
 
@@ -2241,7 +2286,7 @@ UserId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#user_id AppflowConnectorProfile#user_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#user_id AppflowConnectorProfile#user_id}.
 
 ---
 
@@ -2250,13 +2295,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsMarketo.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appflowconnectorprofile"
 
 &appflowconnectorprofile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsMarketo {
 	ClientId: *string,
 	ClientSecret: *string,
 	AccessToken: *string,
-	OauthRequest: github.com/cdktf/cdktf-provider-aws-go/aws/v20.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsMarketoOauthRequest,
+	OauthRequest: github.com/cdktf/cdktf-provider-aws-go/aws/v21.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsMarketoOauthRequest,
 }
 ```
 
@@ -2264,9 +2309,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsMarketo.property.clientId">ClientId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#client_id AppflowConnectorProfile#client_id}. |
-| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsMarketo.property.clientSecret">ClientSecret</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#client_secret AppflowConnectorProfile#client_secret}. |
-| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsMarketo.property.accessToken">AccessToken</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#access_token AppflowConnectorProfile#access_token}. |
+| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsMarketo.property.clientId">ClientId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#client_id AppflowConnectorProfile#client_id}. |
+| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsMarketo.property.clientSecret">ClientSecret</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#client_secret AppflowConnectorProfile#client_secret}. |
+| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsMarketo.property.accessToken">AccessToken</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#access_token AppflowConnectorProfile#access_token}. |
 | <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsMarketo.property.oauthRequest">OauthRequest</a></code> | <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsMarketoOauthRequest">AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsMarketoOauthRequest</a></code> | oauth_request block. |
 
 ---
@@ -2279,7 +2324,7 @@ ClientId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#client_id AppflowConnectorProfile#client_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#client_id AppflowConnectorProfile#client_id}.
 
 ---
 
@@ -2291,7 +2336,7 @@ ClientSecret *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#client_secret AppflowConnectorProfile#client_secret}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#client_secret AppflowConnectorProfile#client_secret}.
 
 ---
 
@@ -2303,7 +2348,7 @@ AccessToken *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#access_token AppflowConnectorProfile#access_token}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#access_token AppflowConnectorProfile#access_token}.
 
 ---
 
@@ -2317,7 +2362,7 @@ OauthRequest AppflowConnectorProfileConnectorProfileConfigConnectorProfileCreden
 
 oauth_request block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#oauth_request AppflowConnectorProfile#oauth_request}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#oauth_request AppflowConnectorProfile#oauth_request}
 
 ---
 
@@ -2326,7 +2371,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsMarketoOauthRequest.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appflowconnectorprofile"
 
 &appflowconnectorprofile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsMarketoOauthRequest {
 	AuthCode: *string,
@@ -2338,8 +2383,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsMarketoOauthRequest.property.authCode">AuthCode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#auth_code AppflowConnectorProfile#auth_code}. |
-| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsMarketoOauthRequest.property.redirectUri">RedirectUri</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#redirect_uri AppflowConnectorProfile#redirect_uri}. |
+| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsMarketoOauthRequest.property.authCode">AuthCode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#auth_code AppflowConnectorProfile#auth_code}. |
+| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsMarketoOauthRequest.property.redirectUri">RedirectUri</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#redirect_uri AppflowConnectorProfile#redirect_uri}. |
 
 ---
 
@@ -2351,7 +2396,7 @@ AuthCode *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#auth_code AppflowConnectorProfile#auth_code}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#auth_code AppflowConnectorProfile#auth_code}.
 
 ---
 
@@ -2363,7 +2408,7 @@ RedirectUri *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#redirect_uri AppflowConnectorProfile#redirect_uri}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#redirect_uri AppflowConnectorProfile#redirect_uri}.
 
 ---
 
@@ -2372,7 +2417,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsRedshift.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appflowconnectorprofile"
 
 &appflowconnectorprofile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsRedshift {
 	Password: *string,
@@ -2384,8 +2429,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsRedshift.property.password">Password</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#password AppflowConnectorProfile#password}. |
-| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsRedshift.property.username">Username</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#username AppflowConnectorProfile#username}. |
+| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsRedshift.property.password">Password</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#password AppflowConnectorProfile#password}. |
+| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsRedshift.property.username">Username</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#username AppflowConnectorProfile#username}. |
 
 ---
 
@@ -2397,7 +2442,7 @@ Password *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#password AppflowConnectorProfile#password}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#password AppflowConnectorProfile#password}.
 
 ---
 
@@ -2409,7 +2454,7 @@ Username *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#username AppflowConnectorProfile#username}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#username AppflowConnectorProfile#username}.
 
 ---
 
@@ -2418,14 +2463,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSalesforce.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appflowconnectorprofile"
 
 &appflowconnectorprofile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSalesforce {
 	AccessToken: *string,
 	ClientCredentialsArn: *string,
 	JwtToken: *string,
 	Oauth2GrantType: *string,
-	OauthRequest: github.com/cdktf/cdktf-provider-aws-go/aws/v20.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSalesforceOauthRequest,
+	OauthRequest: github.com/cdktf/cdktf-provider-aws-go/aws/v21.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSalesforceOauthRequest,
 	RefreshToken: *string,
 }
 ```
@@ -2434,12 +2479,12 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSalesforce.property.accessToken">AccessToken</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#access_token AppflowConnectorProfile#access_token}. |
-| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSalesforce.property.clientCredentialsArn">ClientCredentialsArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#client_credentials_arn AppflowConnectorProfile#client_credentials_arn}. |
-| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSalesforce.property.jwtToken">JwtToken</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#jwt_token AppflowConnectorProfile#jwt_token}. |
-| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSalesforce.property.oauth2GrantType">Oauth2GrantType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#oauth2_grant_type AppflowConnectorProfile#oauth2_grant_type}. |
+| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSalesforce.property.accessToken">AccessToken</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#access_token AppflowConnectorProfile#access_token}. |
+| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSalesforce.property.clientCredentialsArn">ClientCredentialsArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#client_credentials_arn AppflowConnectorProfile#client_credentials_arn}. |
+| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSalesforce.property.jwtToken">JwtToken</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#jwt_token AppflowConnectorProfile#jwt_token}. |
+| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSalesforce.property.oauth2GrantType">Oauth2GrantType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#oauth2_grant_type AppflowConnectorProfile#oauth2_grant_type}. |
 | <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSalesforce.property.oauthRequest">OauthRequest</a></code> | <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSalesforceOauthRequest">AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSalesforceOauthRequest</a></code> | oauth_request block. |
-| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSalesforce.property.refreshToken">RefreshToken</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#refresh_token AppflowConnectorProfile#refresh_token}. |
+| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSalesforce.property.refreshToken">RefreshToken</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#refresh_token AppflowConnectorProfile#refresh_token}. |
 
 ---
 
@@ -2451,7 +2496,7 @@ AccessToken *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#access_token AppflowConnectorProfile#access_token}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#access_token AppflowConnectorProfile#access_token}.
 
 ---
 
@@ -2463,7 +2508,7 @@ ClientCredentialsArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#client_credentials_arn AppflowConnectorProfile#client_credentials_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#client_credentials_arn AppflowConnectorProfile#client_credentials_arn}.
 
 ---
 
@@ -2475,7 +2520,7 @@ JwtToken *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#jwt_token AppflowConnectorProfile#jwt_token}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#jwt_token AppflowConnectorProfile#jwt_token}.
 
 ---
 
@@ -2487,7 +2532,7 @@ Oauth2GrantType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#oauth2_grant_type AppflowConnectorProfile#oauth2_grant_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#oauth2_grant_type AppflowConnectorProfile#oauth2_grant_type}.
 
 ---
 
@@ -2501,7 +2546,7 @@ OauthRequest AppflowConnectorProfileConnectorProfileConfigConnectorProfileCreden
 
 oauth_request block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#oauth_request AppflowConnectorProfile#oauth_request}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#oauth_request AppflowConnectorProfile#oauth_request}
 
 ---
 
@@ -2513,7 +2558,7 @@ RefreshToken *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#refresh_token AppflowConnectorProfile#refresh_token}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#refresh_token AppflowConnectorProfile#refresh_token}.
 
 ---
 
@@ -2522,7 +2567,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSalesforceOauthRequest.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appflowconnectorprofile"
 
 &appflowconnectorprofile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSalesforceOauthRequest {
 	AuthCode: *string,
@@ -2534,8 +2579,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSalesforceOauthRequest.property.authCode">AuthCode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#auth_code AppflowConnectorProfile#auth_code}. |
-| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSalesforceOauthRequest.property.redirectUri">RedirectUri</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#redirect_uri AppflowConnectorProfile#redirect_uri}. |
+| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSalesforceOauthRequest.property.authCode">AuthCode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#auth_code AppflowConnectorProfile#auth_code}. |
+| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSalesforceOauthRequest.property.redirectUri">RedirectUri</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#redirect_uri AppflowConnectorProfile#redirect_uri}. |
 
 ---
 
@@ -2547,7 +2592,7 @@ AuthCode *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#auth_code AppflowConnectorProfile#auth_code}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#auth_code AppflowConnectorProfile#auth_code}.
 
 ---
 
@@ -2559,7 +2604,7 @@ RedirectUri *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#redirect_uri AppflowConnectorProfile#redirect_uri}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#redirect_uri AppflowConnectorProfile#redirect_uri}.
 
 ---
 
@@ -2568,11 +2613,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoData.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appflowconnectorprofile"
 
 &appflowconnectorprofile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoData {
-	BasicAuthCredentials: github.com/cdktf/cdktf-provider-aws-go/aws/v20.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataBasicAuthCredentials,
-	OauthCredentials: github.com/cdktf/cdktf-provider-aws-go/aws/v20.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataOauthCredentials,
+	BasicAuthCredentials: github.com/cdktf/cdktf-provider-aws-go/aws/v21.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataBasicAuthCredentials,
+	OauthCredentials: github.com/cdktf/cdktf-provider-aws-go/aws/v21.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataOauthCredentials,
 }
 ```
 
@@ -2595,7 +2640,7 @@ BasicAuthCredentials AppflowConnectorProfileConnectorProfileConfigConnectorProfi
 
 basic_auth_credentials block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#basic_auth_credentials AppflowConnectorProfile#basic_auth_credentials}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#basic_auth_credentials AppflowConnectorProfile#basic_auth_credentials}
 
 ---
 
@@ -2609,7 +2654,7 @@ OauthCredentials AppflowConnectorProfileConnectorProfileConfigConnectorProfileCr
 
 oauth_credentials block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#oauth_credentials AppflowConnectorProfile#oauth_credentials}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#oauth_credentials AppflowConnectorProfile#oauth_credentials}
 
 ---
 
@@ -2618,7 +2663,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataBasicAuthCredentials.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appflowconnectorprofile"
 
 &appflowconnectorprofile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataBasicAuthCredentials {
 	Password: *string,
@@ -2630,8 +2675,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataBasicAuthCredentials.property.password">Password</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#password AppflowConnectorProfile#password}. |
-| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataBasicAuthCredentials.property.username">Username</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#username AppflowConnectorProfile#username}. |
+| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataBasicAuthCredentials.property.password">Password</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#password AppflowConnectorProfile#password}. |
+| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataBasicAuthCredentials.property.username">Username</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#username AppflowConnectorProfile#username}. |
 
 ---
 
@@ -2643,7 +2688,7 @@ Password *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#password AppflowConnectorProfile#password}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#password AppflowConnectorProfile#password}.
 
 ---
 
@@ -2655,7 +2700,7 @@ Username *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#username AppflowConnectorProfile#username}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#username AppflowConnectorProfile#username}.
 
 ---
 
@@ -2664,13 +2709,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataOauthCredentials.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appflowconnectorprofile"
 
 &appflowconnectorprofile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataOauthCredentials {
 	ClientId: *string,
 	ClientSecret: *string,
 	AccessToken: *string,
-	OauthRequest: github.com/cdktf/cdktf-provider-aws-go/aws/v20.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataOauthCredentialsOauthRequest,
+	OauthRequest: github.com/cdktf/cdktf-provider-aws-go/aws/v21.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataOauthCredentialsOauthRequest,
 	RefreshToken: *string,
 }
 ```
@@ -2679,11 +2724,11 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataOauthCredentials.property.clientId">ClientId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#client_id AppflowConnectorProfile#client_id}. |
-| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataOauthCredentials.property.clientSecret">ClientSecret</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#client_secret AppflowConnectorProfile#client_secret}. |
-| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataOauthCredentials.property.accessToken">AccessToken</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#access_token AppflowConnectorProfile#access_token}. |
+| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataOauthCredentials.property.clientId">ClientId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#client_id AppflowConnectorProfile#client_id}. |
+| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataOauthCredentials.property.clientSecret">ClientSecret</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#client_secret AppflowConnectorProfile#client_secret}. |
+| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataOauthCredentials.property.accessToken">AccessToken</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#access_token AppflowConnectorProfile#access_token}. |
 | <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataOauthCredentials.property.oauthRequest">OauthRequest</a></code> | <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataOauthCredentialsOauthRequest">AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataOauthCredentialsOauthRequest</a></code> | oauth_request block. |
-| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataOauthCredentials.property.refreshToken">RefreshToken</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#refresh_token AppflowConnectorProfile#refresh_token}. |
+| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataOauthCredentials.property.refreshToken">RefreshToken</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#refresh_token AppflowConnectorProfile#refresh_token}. |
 
 ---
 
@@ -2695,7 +2740,7 @@ ClientId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#client_id AppflowConnectorProfile#client_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#client_id AppflowConnectorProfile#client_id}.
 
 ---
 
@@ -2707,7 +2752,7 @@ ClientSecret *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#client_secret AppflowConnectorProfile#client_secret}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#client_secret AppflowConnectorProfile#client_secret}.
 
 ---
 
@@ -2719,7 +2764,7 @@ AccessToken *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#access_token AppflowConnectorProfile#access_token}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#access_token AppflowConnectorProfile#access_token}.
 
 ---
 
@@ -2733,7 +2778,7 @@ OauthRequest AppflowConnectorProfileConnectorProfileConfigConnectorProfileCreden
 
 oauth_request block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#oauth_request AppflowConnectorProfile#oauth_request}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#oauth_request AppflowConnectorProfile#oauth_request}
 
 ---
 
@@ -2745,7 +2790,7 @@ RefreshToken *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#refresh_token AppflowConnectorProfile#refresh_token}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#refresh_token AppflowConnectorProfile#refresh_token}.
 
 ---
 
@@ -2754,7 +2799,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataOauthCredentialsOauthRequest.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appflowconnectorprofile"
 
 &appflowconnectorprofile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataOauthCredentialsOauthRequest {
 	AuthCode: *string,
@@ -2766,8 +2811,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataOauthCredentialsOauthRequest.property.authCode">AuthCode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#auth_code AppflowConnectorProfile#auth_code}. |
-| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataOauthCredentialsOauthRequest.property.redirectUri">RedirectUri</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#redirect_uri AppflowConnectorProfile#redirect_uri}. |
+| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataOauthCredentialsOauthRequest.property.authCode">AuthCode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#auth_code AppflowConnectorProfile#auth_code}. |
+| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataOauthCredentialsOauthRequest.property.redirectUri">RedirectUri</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#redirect_uri AppflowConnectorProfile#redirect_uri}. |
 
 ---
 
@@ -2779,7 +2824,7 @@ AuthCode *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#auth_code AppflowConnectorProfile#auth_code}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#auth_code AppflowConnectorProfile#auth_code}.
 
 ---
 
@@ -2791,7 +2836,7 @@ RedirectUri *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#redirect_uri AppflowConnectorProfile#redirect_uri}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#redirect_uri AppflowConnectorProfile#redirect_uri}.
 
 ---
 
@@ -2800,7 +2845,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsServiceNow.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appflowconnectorprofile"
 
 &appflowconnectorprofile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsServiceNow {
 	Password: *string,
@@ -2812,8 +2857,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsServiceNow.property.password">Password</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#password AppflowConnectorProfile#password}. |
-| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsServiceNow.property.username">Username</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#username AppflowConnectorProfile#username}. |
+| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsServiceNow.property.password">Password</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#password AppflowConnectorProfile#password}. |
+| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsServiceNow.property.username">Username</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#username AppflowConnectorProfile#username}. |
 
 ---
 
@@ -2825,7 +2870,7 @@ Password *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#password AppflowConnectorProfile#password}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#password AppflowConnectorProfile#password}.
 
 ---
 
@@ -2837,7 +2882,7 @@ Username *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#username AppflowConnectorProfile#username}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#username AppflowConnectorProfile#username}.
 
 ---
 
@@ -2846,7 +2891,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSingular.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appflowconnectorprofile"
 
 &appflowconnectorprofile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSingular {
 	ApiKey: *string,
@@ -2857,7 +2902,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSingular.property.apiKey">ApiKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#api_key AppflowConnectorProfile#api_key}. |
+| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSingular.property.apiKey">ApiKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#api_key AppflowConnectorProfile#api_key}. |
 
 ---
 
@@ -2869,7 +2914,7 @@ ApiKey *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#api_key AppflowConnectorProfile#api_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#api_key AppflowConnectorProfile#api_key}.
 
 ---
 
@@ -2878,13 +2923,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSlack.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appflowconnectorprofile"
 
 &appflowconnectorprofile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSlack {
 	ClientId: *string,
 	ClientSecret: *string,
 	AccessToken: *string,
-	OauthRequest: github.com/cdktf/cdktf-provider-aws-go/aws/v20.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSlackOauthRequest,
+	OauthRequest: github.com/cdktf/cdktf-provider-aws-go/aws/v21.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSlackOauthRequest,
 }
 ```
 
@@ -2892,9 +2937,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSlack.property.clientId">ClientId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#client_id AppflowConnectorProfile#client_id}. |
-| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSlack.property.clientSecret">ClientSecret</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#client_secret AppflowConnectorProfile#client_secret}. |
-| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSlack.property.accessToken">AccessToken</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#access_token AppflowConnectorProfile#access_token}. |
+| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSlack.property.clientId">ClientId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#client_id AppflowConnectorProfile#client_id}. |
+| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSlack.property.clientSecret">ClientSecret</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#client_secret AppflowConnectorProfile#client_secret}. |
+| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSlack.property.accessToken">AccessToken</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#access_token AppflowConnectorProfile#access_token}. |
 | <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSlack.property.oauthRequest">OauthRequest</a></code> | <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSlackOauthRequest">AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSlackOauthRequest</a></code> | oauth_request block. |
 
 ---
@@ -2907,7 +2952,7 @@ ClientId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#client_id AppflowConnectorProfile#client_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#client_id AppflowConnectorProfile#client_id}.
 
 ---
 
@@ -2919,7 +2964,7 @@ ClientSecret *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#client_secret AppflowConnectorProfile#client_secret}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#client_secret AppflowConnectorProfile#client_secret}.
 
 ---
 
@@ -2931,7 +2976,7 @@ AccessToken *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#access_token AppflowConnectorProfile#access_token}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#access_token AppflowConnectorProfile#access_token}.
 
 ---
 
@@ -2945,7 +2990,7 @@ OauthRequest AppflowConnectorProfileConnectorProfileConfigConnectorProfileCreden
 
 oauth_request block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#oauth_request AppflowConnectorProfile#oauth_request}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#oauth_request AppflowConnectorProfile#oauth_request}
 
 ---
 
@@ -2954,7 +2999,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSlackOauthRequest.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appflowconnectorprofile"
 
 &appflowconnectorprofile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSlackOauthRequest {
 	AuthCode: *string,
@@ -2966,8 +3011,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSlackOauthRequest.property.authCode">AuthCode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#auth_code AppflowConnectorProfile#auth_code}. |
-| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSlackOauthRequest.property.redirectUri">RedirectUri</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#redirect_uri AppflowConnectorProfile#redirect_uri}. |
+| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSlackOauthRequest.property.authCode">AuthCode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#auth_code AppflowConnectorProfile#auth_code}. |
+| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSlackOauthRequest.property.redirectUri">RedirectUri</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#redirect_uri AppflowConnectorProfile#redirect_uri}. |
 
 ---
 
@@ -2979,7 +3024,7 @@ AuthCode *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#auth_code AppflowConnectorProfile#auth_code}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#auth_code AppflowConnectorProfile#auth_code}.
 
 ---
 
@@ -2991,7 +3036,7 @@ RedirectUri *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#redirect_uri AppflowConnectorProfile#redirect_uri}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#redirect_uri AppflowConnectorProfile#redirect_uri}.
 
 ---
 
@@ -3000,7 +3045,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSnowflake.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appflowconnectorprofile"
 
 &appflowconnectorprofile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSnowflake {
 	Password: *string,
@@ -3012,8 +3057,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSnowflake.property.password">Password</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#password AppflowConnectorProfile#password}. |
-| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSnowflake.property.username">Username</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#username AppflowConnectorProfile#username}. |
+| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSnowflake.property.password">Password</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#password AppflowConnectorProfile#password}. |
+| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSnowflake.property.username">Username</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#username AppflowConnectorProfile#username}. |
 
 ---
 
@@ -3025,7 +3070,7 @@ Password *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#password AppflowConnectorProfile#password}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#password AppflowConnectorProfile#password}.
 
 ---
 
@@ -3037,7 +3082,7 @@ Username *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#username AppflowConnectorProfile#username}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#username AppflowConnectorProfile#username}.
 
 ---
 
@@ -3046,7 +3091,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsTrendmicro.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appflowconnectorprofile"
 
 &appflowconnectorprofile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsTrendmicro {
 	ApiSecretKey: *string,
@@ -3057,7 +3102,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsTrendmicro.property.apiSecretKey">ApiSecretKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#api_secret_key AppflowConnectorProfile#api_secret_key}. |
+| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsTrendmicro.property.apiSecretKey">ApiSecretKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#api_secret_key AppflowConnectorProfile#api_secret_key}. |
 
 ---
 
@@ -3069,7 +3114,7 @@ ApiSecretKey *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#api_secret_key AppflowConnectorProfile#api_secret_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#api_secret_key AppflowConnectorProfile#api_secret_key}.
 
 ---
 
@@ -3078,7 +3123,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsVeeva.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appflowconnectorprofile"
 
 &appflowconnectorprofile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsVeeva {
 	Password: *string,
@@ -3090,8 +3135,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsVeeva.property.password">Password</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#password AppflowConnectorProfile#password}. |
-| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsVeeva.property.username">Username</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#username AppflowConnectorProfile#username}. |
+| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsVeeva.property.password">Password</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#password AppflowConnectorProfile#password}. |
+| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsVeeva.property.username">Username</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#username AppflowConnectorProfile#username}. |
 
 ---
 
@@ -3103,7 +3148,7 @@ Password *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#password AppflowConnectorProfile#password}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#password AppflowConnectorProfile#password}.
 
 ---
 
@@ -3115,7 +3160,7 @@ Username *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#username AppflowConnectorProfile#username}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#username AppflowConnectorProfile#username}.
 
 ---
 
@@ -3124,13 +3169,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsZendesk.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appflowconnectorprofile"
 
 &appflowconnectorprofile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsZendesk {
 	ClientId: *string,
 	ClientSecret: *string,
 	AccessToken: *string,
-	OauthRequest: github.com/cdktf/cdktf-provider-aws-go/aws/v20.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsZendeskOauthRequest,
+	OauthRequest: github.com/cdktf/cdktf-provider-aws-go/aws/v21.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsZendeskOauthRequest,
 }
 ```
 
@@ -3138,9 +3183,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsZendesk.property.clientId">ClientId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#client_id AppflowConnectorProfile#client_id}. |
-| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsZendesk.property.clientSecret">ClientSecret</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#client_secret AppflowConnectorProfile#client_secret}. |
-| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsZendesk.property.accessToken">AccessToken</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#access_token AppflowConnectorProfile#access_token}. |
+| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsZendesk.property.clientId">ClientId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#client_id AppflowConnectorProfile#client_id}. |
+| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsZendesk.property.clientSecret">ClientSecret</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#client_secret AppflowConnectorProfile#client_secret}. |
+| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsZendesk.property.accessToken">AccessToken</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#access_token AppflowConnectorProfile#access_token}. |
 | <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsZendesk.property.oauthRequest">OauthRequest</a></code> | <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsZendeskOauthRequest">AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsZendeskOauthRequest</a></code> | oauth_request block. |
 
 ---
@@ -3153,7 +3198,7 @@ ClientId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#client_id AppflowConnectorProfile#client_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#client_id AppflowConnectorProfile#client_id}.
 
 ---
 
@@ -3165,7 +3210,7 @@ ClientSecret *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#client_secret AppflowConnectorProfile#client_secret}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#client_secret AppflowConnectorProfile#client_secret}.
 
 ---
 
@@ -3177,7 +3222,7 @@ AccessToken *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#access_token AppflowConnectorProfile#access_token}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#access_token AppflowConnectorProfile#access_token}.
 
 ---
 
@@ -3191,7 +3236,7 @@ OauthRequest AppflowConnectorProfileConnectorProfileConfigConnectorProfileCreden
 
 oauth_request block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#oauth_request AppflowConnectorProfile#oauth_request}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#oauth_request AppflowConnectorProfile#oauth_request}
 
 ---
 
@@ -3200,7 +3245,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsZendeskOauthRequest.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appflowconnectorprofile"
 
 &appflowconnectorprofile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsZendeskOauthRequest {
 	AuthCode: *string,
@@ -3212,8 +3257,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsZendeskOauthRequest.property.authCode">AuthCode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#auth_code AppflowConnectorProfile#auth_code}. |
-| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsZendeskOauthRequest.property.redirectUri">RedirectUri</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#redirect_uri AppflowConnectorProfile#redirect_uri}. |
+| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsZendeskOauthRequest.property.authCode">AuthCode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#auth_code AppflowConnectorProfile#auth_code}. |
+| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsZendeskOauthRequest.property.redirectUri">RedirectUri</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#redirect_uri AppflowConnectorProfile#redirect_uri}. |
 
 ---
 
@@ -3225,7 +3270,7 @@ AuthCode *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#auth_code AppflowConnectorProfile#auth_code}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#auth_code AppflowConnectorProfile#auth_code}.
 
 ---
 
@@ -3237,7 +3282,7 @@ RedirectUri *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#redirect_uri AppflowConnectorProfile#redirect_uri}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#redirect_uri AppflowConnectorProfile#redirect_uri}.
 
 ---
 
@@ -3246,27 +3291,27 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileProperties.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appflowconnectorprofile"
 
 &appflowconnectorprofile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileProperties {
-	Amplitude: github.com/cdktf/cdktf-provider-aws-go/aws/v20.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesAmplitude,
-	CustomConnector: github.com/cdktf/cdktf-provider-aws-go/aws/v20.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesCustomConnector,
-	Datadog: github.com/cdktf/cdktf-provider-aws-go/aws/v20.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesDatadog,
-	Dynatrace: github.com/cdktf/cdktf-provider-aws-go/aws/v20.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesDynatrace,
-	GoogleAnalytics: github.com/cdktf/cdktf-provider-aws-go/aws/v20.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesGoogleAnalytics,
-	Honeycode: github.com/cdktf/cdktf-provider-aws-go/aws/v20.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesHoneycode,
-	InforNexus: github.com/cdktf/cdktf-provider-aws-go/aws/v20.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesInforNexus,
-	Marketo: github.com/cdktf/cdktf-provider-aws-go/aws/v20.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesMarketo,
-	Redshift: github.com/cdktf/cdktf-provider-aws-go/aws/v20.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesRedshift,
-	Salesforce: github.com/cdktf/cdktf-provider-aws-go/aws/v20.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSalesforce,
-	SapoData: github.com/cdktf/cdktf-provider-aws-go/aws/v20.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSapoData,
-	ServiceNow: github.com/cdktf/cdktf-provider-aws-go/aws/v20.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesServiceNow,
-	Singular: github.com/cdktf/cdktf-provider-aws-go/aws/v20.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSingular,
-	Slack: github.com/cdktf/cdktf-provider-aws-go/aws/v20.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSlack,
-	Snowflake: github.com/cdktf/cdktf-provider-aws-go/aws/v20.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSnowflake,
-	Trendmicro: github.com/cdktf/cdktf-provider-aws-go/aws/v20.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesTrendmicro,
-	Veeva: github.com/cdktf/cdktf-provider-aws-go/aws/v20.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesVeeva,
-	Zendesk: github.com/cdktf/cdktf-provider-aws-go/aws/v20.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesZendesk,
+	Amplitude: github.com/cdktf/cdktf-provider-aws-go/aws/v21.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesAmplitude,
+	CustomConnector: github.com/cdktf/cdktf-provider-aws-go/aws/v21.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesCustomConnector,
+	Datadog: github.com/cdktf/cdktf-provider-aws-go/aws/v21.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesDatadog,
+	Dynatrace: github.com/cdktf/cdktf-provider-aws-go/aws/v21.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesDynatrace,
+	GoogleAnalytics: github.com/cdktf/cdktf-provider-aws-go/aws/v21.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesGoogleAnalytics,
+	Honeycode: github.com/cdktf/cdktf-provider-aws-go/aws/v21.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesHoneycode,
+	InforNexus: github.com/cdktf/cdktf-provider-aws-go/aws/v21.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesInforNexus,
+	Marketo: github.com/cdktf/cdktf-provider-aws-go/aws/v21.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesMarketo,
+	Redshift: github.com/cdktf/cdktf-provider-aws-go/aws/v21.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesRedshift,
+	Salesforce: github.com/cdktf/cdktf-provider-aws-go/aws/v21.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSalesforce,
+	SapoData: github.com/cdktf/cdktf-provider-aws-go/aws/v21.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSapoData,
+	ServiceNow: github.com/cdktf/cdktf-provider-aws-go/aws/v21.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesServiceNow,
+	Singular: github.com/cdktf/cdktf-provider-aws-go/aws/v21.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSingular,
+	Slack: github.com/cdktf/cdktf-provider-aws-go/aws/v21.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSlack,
+	Snowflake: github.com/cdktf/cdktf-provider-aws-go/aws/v21.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSnowflake,
+	Trendmicro: github.com/cdktf/cdktf-provider-aws-go/aws/v21.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesTrendmicro,
+	Veeva: github.com/cdktf/cdktf-provider-aws-go/aws/v21.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesVeeva,
+	Zendesk: github.com/cdktf/cdktf-provider-aws-go/aws/v21.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesZendesk,
 }
 ```
 
@@ -3305,7 +3350,7 @@ Amplitude AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertie
 
 amplitude block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#amplitude AppflowConnectorProfile#amplitude}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#amplitude AppflowConnectorProfile#amplitude}
 
 ---
 
@@ -3319,7 +3364,7 @@ CustomConnector AppflowConnectorProfileConnectorProfileConfigConnectorProfilePro
 
 custom_connector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#custom_connector AppflowConnectorProfile#custom_connector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#custom_connector AppflowConnectorProfile#custom_connector}
 
 ---
 
@@ -3333,7 +3378,7 @@ Datadog AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesD
 
 datadog block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#datadog AppflowConnectorProfile#datadog}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#datadog AppflowConnectorProfile#datadog}
 
 ---
 
@@ -3347,7 +3392,7 @@ Dynatrace AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertie
 
 dynatrace block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#dynatrace AppflowConnectorProfile#dynatrace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#dynatrace AppflowConnectorProfile#dynatrace}
 
 ---
 
@@ -3361,7 +3406,7 @@ GoogleAnalytics AppflowConnectorProfileConnectorProfileConfigConnectorProfilePro
 
 google_analytics block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#google_analytics AppflowConnectorProfile#google_analytics}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#google_analytics AppflowConnectorProfile#google_analytics}
 
 ---
 
@@ -3375,7 +3420,7 @@ Honeycode AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertie
 
 honeycode block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#honeycode AppflowConnectorProfile#honeycode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#honeycode AppflowConnectorProfile#honeycode}
 
 ---
 
@@ -3389,7 +3434,7 @@ InforNexus AppflowConnectorProfileConnectorProfileConfigConnectorProfileProperti
 
 infor_nexus block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#infor_nexus AppflowConnectorProfile#infor_nexus}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#infor_nexus AppflowConnectorProfile#infor_nexus}
 
 ---
 
@@ -3403,7 +3448,7 @@ Marketo AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesM
 
 marketo block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#marketo AppflowConnectorProfile#marketo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#marketo AppflowConnectorProfile#marketo}
 
 ---
 
@@ -3417,7 +3462,7 @@ Redshift AppflowConnectorProfileConnectorProfileConfigConnectorProfileProperties
 
 redshift block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#redshift AppflowConnectorProfile#redshift}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#redshift AppflowConnectorProfile#redshift}
 
 ---
 
@@ -3431,7 +3476,7 @@ Salesforce AppflowConnectorProfileConnectorProfileConfigConnectorProfileProperti
 
 salesforce block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#salesforce AppflowConnectorProfile#salesforce}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#salesforce AppflowConnectorProfile#salesforce}
 
 ---
 
@@ -3445,7 +3490,7 @@ SapoData AppflowConnectorProfileConnectorProfileConfigConnectorProfileProperties
 
 sapo_data block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#sapo_data AppflowConnectorProfile#sapo_data}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#sapo_data AppflowConnectorProfile#sapo_data}
 
 ---
 
@@ -3459,7 +3504,7 @@ ServiceNow AppflowConnectorProfileConnectorProfileConfigConnectorProfileProperti
 
 service_now block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#service_now AppflowConnectorProfile#service_now}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#service_now AppflowConnectorProfile#service_now}
 
 ---
 
@@ -3473,7 +3518,7 @@ Singular AppflowConnectorProfileConnectorProfileConfigConnectorProfileProperties
 
 singular block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#singular AppflowConnectorProfile#singular}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#singular AppflowConnectorProfile#singular}
 
 ---
 
@@ -3487,7 +3532,7 @@ Slack AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSla
 
 slack block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#slack AppflowConnectorProfile#slack}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#slack AppflowConnectorProfile#slack}
 
 ---
 
@@ -3501,7 +3546,7 @@ Snowflake AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertie
 
 snowflake block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#snowflake AppflowConnectorProfile#snowflake}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#snowflake AppflowConnectorProfile#snowflake}
 
 ---
 
@@ -3515,7 +3560,7 @@ Trendmicro AppflowConnectorProfileConnectorProfileConfigConnectorProfileProperti
 
 trendmicro block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#trendmicro AppflowConnectorProfile#trendmicro}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#trendmicro AppflowConnectorProfile#trendmicro}
 
 ---
 
@@ -3529,7 +3574,7 @@ Veeva AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesVee
 
 veeva block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#veeva AppflowConnectorProfile#veeva}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#veeva AppflowConnectorProfile#veeva}
 
 ---
 
@@ -3543,7 +3588,7 @@ Zendesk AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesZ
 
 zendesk block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#zendesk AppflowConnectorProfile#zendesk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#zendesk AppflowConnectorProfile#zendesk}
 
 ---
 
@@ -3552,7 +3597,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesAmplitude.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appflowconnectorprofile"
 
 &appflowconnectorprofile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesAmplitude {
 
@@ -3565,10 +3610,10 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesCustomConnector.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appflowconnectorprofile"
 
 &appflowconnectorprofile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesCustomConnector {
-	Oauth2Properties: github.com/cdktf/cdktf-provider-aws-go/aws/v20.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesCustomConnectorOauth2Properties,
+	Oauth2Properties: github.com/cdktf/cdktf-provider-aws-go/aws/v21.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesCustomConnectorOauth2Properties,
 	ProfileProperties: *map[string]*string,
 }
 ```
@@ -3578,7 +3623,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesCustomConnector.property.oauth2Properties">Oauth2Properties</a></code> | <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesCustomConnectorOauth2Properties">AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesCustomConnectorOauth2Properties</a></code> | oauth2_properties block. |
-| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesCustomConnector.property.profileProperties">ProfileProperties</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#profile_properties AppflowConnectorProfile#profile_properties}. |
+| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesCustomConnector.property.profileProperties">ProfileProperties</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#profile_properties AppflowConnectorProfile#profile_properties}. |
 
 ---
 
@@ -3592,7 +3637,7 @@ Oauth2Properties AppflowConnectorProfileConnectorProfileConfigConnectorProfilePr
 
 oauth2_properties block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#oauth2_properties AppflowConnectorProfile#oauth2_properties}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#oauth2_properties AppflowConnectorProfile#oauth2_properties}
 
 ---
 
@@ -3604,7 +3649,7 @@ ProfileProperties *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#profile_properties AppflowConnectorProfile#profile_properties}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#profile_properties AppflowConnectorProfile#profile_properties}.
 
 ---
 
@@ -3613,7 +3658,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesCustomConnectorOauth2Properties.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appflowconnectorprofile"
 
 &appflowconnectorprofile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesCustomConnectorOauth2Properties {
 	Oauth2GrantType: *string,
@@ -3626,9 +3671,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesCustomConnectorOauth2Properties.property.oauth2GrantType">Oauth2GrantType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#oauth2_grant_type AppflowConnectorProfile#oauth2_grant_type}. |
-| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesCustomConnectorOauth2Properties.property.tokenUrl">TokenUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#token_url AppflowConnectorProfile#token_url}. |
-| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesCustomConnectorOauth2Properties.property.tokenUrlCustomProperties">TokenUrlCustomProperties</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#token_url_custom_properties AppflowConnectorProfile#token_url_custom_properties}. |
+| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesCustomConnectorOauth2Properties.property.oauth2GrantType">Oauth2GrantType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#oauth2_grant_type AppflowConnectorProfile#oauth2_grant_type}. |
+| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesCustomConnectorOauth2Properties.property.tokenUrl">TokenUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#token_url AppflowConnectorProfile#token_url}. |
+| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesCustomConnectorOauth2Properties.property.tokenUrlCustomProperties">TokenUrlCustomProperties</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#token_url_custom_properties AppflowConnectorProfile#token_url_custom_properties}. |
 
 ---
 
@@ -3640,7 +3685,7 @@ Oauth2GrantType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#oauth2_grant_type AppflowConnectorProfile#oauth2_grant_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#oauth2_grant_type AppflowConnectorProfile#oauth2_grant_type}.
 
 ---
 
@@ -3652,7 +3697,7 @@ TokenUrl *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#token_url AppflowConnectorProfile#token_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#token_url AppflowConnectorProfile#token_url}.
 
 ---
 
@@ -3664,7 +3709,7 @@ TokenUrlCustomProperties *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#token_url_custom_properties AppflowConnectorProfile#token_url_custom_properties}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#token_url_custom_properties AppflowConnectorProfile#token_url_custom_properties}.
 
 ---
 
@@ -3673,7 +3718,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesDatadog.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appflowconnectorprofile"
 
 &appflowconnectorprofile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesDatadog {
 	InstanceUrl: *string,
@@ -3684,7 +3729,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesDatadog.property.instanceUrl">InstanceUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#instance_url AppflowConnectorProfile#instance_url}. |
+| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesDatadog.property.instanceUrl">InstanceUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#instance_url AppflowConnectorProfile#instance_url}. |
 
 ---
 
@@ -3696,7 +3741,7 @@ InstanceUrl *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#instance_url AppflowConnectorProfile#instance_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#instance_url AppflowConnectorProfile#instance_url}.
 
 ---
 
@@ -3705,7 +3750,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesDynatrace.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appflowconnectorprofile"
 
 &appflowconnectorprofile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesDynatrace {
 	InstanceUrl: *string,
@@ -3716,7 +3761,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesDynatrace.property.instanceUrl">InstanceUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#instance_url AppflowConnectorProfile#instance_url}. |
+| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesDynatrace.property.instanceUrl">InstanceUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#instance_url AppflowConnectorProfile#instance_url}. |
 
 ---
 
@@ -3728,7 +3773,7 @@ InstanceUrl *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#instance_url AppflowConnectorProfile#instance_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#instance_url AppflowConnectorProfile#instance_url}.
 
 ---
 
@@ -3737,7 +3782,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesGoogleAnalytics.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appflowconnectorprofile"
 
 &appflowconnectorprofile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesGoogleAnalytics {
 
@@ -3750,7 +3795,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesHoneycode.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appflowconnectorprofile"
 
 &appflowconnectorprofile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesHoneycode {
 
@@ -3763,7 +3808,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesInforNexus.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appflowconnectorprofile"
 
 &appflowconnectorprofile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesInforNexus {
 	InstanceUrl: *string,
@@ -3774,7 +3819,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesInforNexus.property.instanceUrl">InstanceUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#instance_url AppflowConnectorProfile#instance_url}. |
+| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesInforNexus.property.instanceUrl">InstanceUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#instance_url AppflowConnectorProfile#instance_url}. |
 
 ---
 
@@ -3786,7 +3831,7 @@ InstanceUrl *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#instance_url AppflowConnectorProfile#instance_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#instance_url AppflowConnectorProfile#instance_url}.
 
 ---
 
@@ -3795,7 +3840,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesMarketo.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appflowconnectorprofile"
 
 &appflowconnectorprofile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesMarketo {
 	InstanceUrl: *string,
@@ -3806,7 +3851,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesMarketo.property.instanceUrl">InstanceUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#instance_url AppflowConnectorProfile#instance_url}. |
+| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesMarketo.property.instanceUrl">InstanceUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#instance_url AppflowConnectorProfile#instance_url}. |
 
 ---
 
@@ -3818,7 +3863,7 @@ InstanceUrl *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#instance_url AppflowConnectorProfile#instance_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#instance_url AppflowConnectorProfile#instance_url}.
 
 ---
 
@@ -3827,7 +3872,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesRedshift.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appflowconnectorprofile"
 
 &appflowconnectorprofile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesRedshift {
 	BucketName: *string,
@@ -3844,13 +3889,13 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesRedshift.property.bucketName">BucketName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#bucket_name AppflowConnectorProfile#bucket_name}. |
-| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesRedshift.property.roleArn">RoleArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#role_arn AppflowConnectorProfile#role_arn}. |
-| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesRedshift.property.bucketPrefix">BucketPrefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#bucket_prefix AppflowConnectorProfile#bucket_prefix}. |
-| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesRedshift.property.clusterIdentifier">ClusterIdentifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#cluster_identifier AppflowConnectorProfile#cluster_identifier}. |
-| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesRedshift.property.dataApiRoleArn">DataApiRoleArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#data_api_role_arn AppflowConnectorProfile#data_api_role_arn}. |
-| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesRedshift.property.databaseName">DatabaseName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#database_name AppflowConnectorProfile#database_name}. |
-| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesRedshift.property.databaseUrl">DatabaseUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#database_url AppflowConnectorProfile#database_url}. |
+| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesRedshift.property.bucketName">BucketName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#bucket_name AppflowConnectorProfile#bucket_name}. |
+| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesRedshift.property.roleArn">RoleArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#role_arn AppflowConnectorProfile#role_arn}. |
+| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesRedshift.property.bucketPrefix">BucketPrefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#bucket_prefix AppflowConnectorProfile#bucket_prefix}. |
+| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesRedshift.property.clusterIdentifier">ClusterIdentifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#cluster_identifier AppflowConnectorProfile#cluster_identifier}. |
+| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesRedshift.property.dataApiRoleArn">DataApiRoleArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#data_api_role_arn AppflowConnectorProfile#data_api_role_arn}. |
+| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesRedshift.property.databaseName">DatabaseName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#database_name AppflowConnectorProfile#database_name}. |
+| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesRedshift.property.databaseUrl">DatabaseUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#database_url AppflowConnectorProfile#database_url}. |
 
 ---
 
@@ -3862,7 +3907,7 @@ BucketName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#bucket_name AppflowConnectorProfile#bucket_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#bucket_name AppflowConnectorProfile#bucket_name}.
 
 ---
 
@@ -3874,7 +3919,7 @@ RoleArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#role_arn AppflowConnectorProfile#role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#role_arn AppflowConnectorProfile#role_arn}.
 
 ---
 
@@ -3886,7 +3931,7 @@ BucketPrefix *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#bucket_prefix AppflowConnectorProfile#bucket_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#bucket_prefix AppflowConnectorProfile#bucket_prefix}.
 
 ---
 
@@ -3898,7 +3943,7 @@ ClusterIdentifier *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#cluster_identifier AppflowConnectorProfile#cluster_identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#cluster_identifier AppflowConnectorProfile#cluster_identifier}.
 
 ---
 
@@ -3910,7 +3955,7 @@ DataApiRoleArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#data_api_role_arn AppflowConnectorProfile#data_api_role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#data_api_role_arn AppflowConnectorProfile#data_api_role_arn}.
 
 ---
 
@@ -3922,7 +3967,7 @@ DatabaseName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#database_name AppflowConnectorProfile#database_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#database_name AppflowConnectorProfile#database_name}.
 
 ---
 
@@ -3934,7 +3979,7 @@ DatabaseUrl *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#database_url AppflowConnectorProfile#database_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#database_url AppflowConnectorProfile#database_url}.
 
 ---
 
@@ -3943,7 +3988,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSalesforce.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appflowconnectorprofile"
 
 &appflowconnectorprofile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSalesforce {
 	InstanceUrl: *string,
@@ -3956,9 +4001,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSalesforce.property.instanceUrl">InstanceUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#instance_url AppflowConnectorProfile#instance_url}. |
-| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSalesforce.property.isSandboxEnvironment">IsSandboxEnvironment</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#is_sandbox_environment AppflowConnectorProfile#is_sandbox_environment}. |
-| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSalesforce.property.usePrivatelinkForMetadataAndAuthorization">UsePrivatelinkForMetadataAndAuthorization</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#use_privatelink_for_metadata_and_authorization AppflowConnectorProfile#use_privatelink_for_metadata_and_authorization}. |
+| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSalesforce.property.instanceUrl">InstanceUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#instance_url AppflowConnectorProfile#instance_url}. |
+| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSalesforce.property.isSandboxEnvironment">IsSandboxEnvironment</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#is_sandbox_environment AppflowConnectorProfile#is_sandbox_environment}. |
+| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSalesforce.property.usePrivatelinkForMetadataAndAuthorization">UsePrivatelinkForMetadataAndAuthorization</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#use_privatelink_for_metadata_and_authorization AppflowConnectorProfile#use_privatelink_for_metadata_and_authorization}. |
 
 ---
 
@@ -3970,7 +4015,7 @@ InstanceUrl *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#instance_url AppflowConnectorProfile#instance_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#instance_url AppflowConnectorProfile#instance_url}.
 
 ---
 
@@ -3982,7 +4027,7 @@ IsSandboxEnvironment interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#is_sandbox_environment AppflowConnectorProfile#is_sandbox_environment}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#is_sandbox_environment AppflowConnectorProfile#is_sandbox_environment}.
 
 ---
 
@@ -3994,7 +4039,7 @@ UsePrivatelinkForMetadataAndAuthorization interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#use_privatelink_for_metadata_and_authorization AppflowConnectorProfile#use_privatelink_for_metadata_and_authorization}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#use_privatelink_for_metadata_and_authorization AppflowConnectorProfile#use_privatelink_for_metadata_and_authorization}.
 
 ---
 
@@ -4003,7 +4048,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSapoData.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appflowconnectorprofile"
 
 &appflowconnectorprofile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSapoData {
 	ApplicationHostUrl: *string,
@@ -4011,7 +4056,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
 	ClientNumber: *string,
 	PortNumber: *f64,
 	LogonLanguage: *string,
-	OauthProperties: github.com/cdktf/cdktf-provider-aws-go/aws/v20.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSapoDataOauthProperties,
+	OauthProperties: github.com/cdktf/cdktf-provider-aws-go/aws/v21.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSapoDataOauthProperties,
 	PrivateLinkServiceName: *string,
 }
 ```
@@ -4020,13 +4065,13 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSapoData.property.applicationHostUrl">ApplicationHostUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#application_host_url AppflowConnectorProfile#application_host_url}. |
-| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSapoData.property.applicationServicePath">ApplicationServicePath</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#application_service_path AppflowConnectorProfile#application_service_path}. |
-| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSapoData.property.clientNumber">ClientNumber</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#client_number AppflowConnectorProfile#client_number}. |
-| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSapoData.property.portNumber">PortNumber</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#port_number AppflowConnectorProfile#port_number}. |
-| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSapoData.property.logonLanguage">LogonLanguage</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#logon_language AppflowConnectorProfile#logon_language}. |
+| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSapoData.property.applicationHostUrl">ApplicationHostUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#application_host_url AppflowConnectorProfile#application_host_url}. |
+| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSapoData.property.applicationServicePath">ApplicationServicePath</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#application_service_path AppflowConnectorProfile#application_service_path}. |
+| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSapoData.property.clientNumber">ClientNumber</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#client_number AppflowConnectorProfile#client_number}. |
+| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSapoData.property.portNumber">PortNumber</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#port_number AppflowConnectorProfile#port_number}. |
+| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSapoData.property.logonLanguage">LogonLanguage</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#logon_language AppflowConnectorProfile#logon_language}. |
 | <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSapoData.property.oauthProperties">OauthProperties</a></code> | <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSapoDataOauthProperties">AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSapoDataOauthProperties</a></code> | oauth_properties block. |
-| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSapoData.property.privateLinkServiceName">PrivateLinkServiceName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#private_link_service_name AppflowConnectorProfile#private_link_service_name}. |
+| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSapoData.property.privateLinkServiceName">PrivateLinkServiceName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#private_link_service_name AppflowConnectorProfile#private_link_service_name}. |
 
 ---
 
@@ -4038,7 +4083,7 @@ ApplicationHostUrl *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#application_host_url AppflowConnectorProfile#application_host_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#application_host_url AppflowConnectorProfile#application_host_url}.
 
 ---
 
@@ -4050,7 +4095,7 @@ ApplicationServicePath *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#application_service_path AppflowConnectorProfile#application_service_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#application_service_path AppflowConnectorProfile#application_service_path}.
 
 ---
 
@@ -4062,7 +4107,7 @@ ClientNumber *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#client_number AppflowConnectorProfile#client_number}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#client_number AppflowConnectorProfile#client_number}.
 
 ---
 
@@ -4074,7 +4119,7 @@ PortNumber *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#port_number AppflowConnectorProfile#port_number}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#port_number AppflowConnectorProfile#port_number}.
 
 ---
 
@@ -4086,7 +4131,7 @@ LogonLanguage *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#logon_language AppflowConnectorProfile#logon_language}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#logon_language AppflowConnectorProfile#logon_language}.
 
 ---
 
@@ -4100,7 +4145,7 @@ OauthProperties AppflowConnectorProfileConnectorProfileConfigConnectorProfilePro
 
 oauth_properties block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#oauth_properties AppflowConnectorProfile#oauth_properties}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#oauth_properties AppflowConnectorProfile#oauth_properties}
 
 ---
 
@@ -4112,7 +4157,7 @@ PrivateLinkServiceName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#private_link_service_name AppflowConnectorProfile#private_link_service_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#private_link_service_name AppflowConnectorProfile#private_link_service_name}.
 
 ---
 
@@ -4121,7 +4166,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSapoDataOauthProperties.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appflowconnectorprofile"
 
 &appflowconnectorprofile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSapoDataOauthProperties {
 	AuthCodeUrl: *string,
@@ -4134,9 +4179,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSapoDataOauthProperties.property.authCodeUrl">AuthCodeUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#auth_code_url AppflowConnectorProfile#auth_code_url}. |
-| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSapoDataOauthProperties.property.oauthScopes">OauthScopes</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#oauth_scopes AppflowConnectorProfile#oauth_scopes}. |
-| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSapoDataOauthProperties.property.tokenUrl">TokenUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#token_url AppflowConnectorProfile#token_url}. |
+| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSapoDataOauthProperties.property.authCodeUrl">AuthCodeUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#auth_code_url AppflowConnectorProfile#auth_code_url}. |
+| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSapoDataOauthProperties.property.oauthScopes">OauthScopes</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#oauth_scopes AppflowConnectorProfile#oauth_scopes}. |
+| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSapoDataOauthProperties.property.tokenUrl">TokenUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#token_url AppflowConnectorProfile#token_url}. |
 
 ---
 
@@ -4148,7 +4193,7 @@ AuthCodeUrl *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#auth_code_url AppflowConnectorProfile#auth_code_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#auth_code_url AppflowConnectorProfile#auth_code_url}.
 
 ---
 
@@ -4160,7 +4205,7 @@ OauthScopes *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#oauth_scopes AppflowConnectorProfile#oauth_scopes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#oauth_scopes AppflowConnectorProfile#oauth_scopes}.
 
 ---
 
@@ -4172,7 +4217,7 @@ TokenUrl *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#token_url AppflowConnectorProfile#token_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#token_url AppflowConnectorProfile#token_url}.
 
 ---
 
@@ -4181,7 +4226,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesServiceNow.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appflowconnectorprofile"
 
 &appflowconnectorprofile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesServiceNow {
 	InstanceUrl: *string,
@@ -4192,7 +4237,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesServiceNow.property.instanceUrl">InstanceUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#instance_url AppflowConnectorProfile#instance_url}. |
+| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesServiceNow.property.instanceUrl">InstanceUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#instance_url AppflowConnectorProfile#instance_url}. |
 
 ---
 
@@ -4204,7 +4249,7 @@ InstanceUrl *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#instance_url AppflowConnectorProfile#instance_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#instance_url AppflowConnectorProfile#instance_url}.
 
 ---
 
@@ -4213,7 +4258,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSingular.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appflowconnectorprofile"
 
 &appflowconnectorprofile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSingular {
 
@@ -4226,7 +4271,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSlack.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appflowconnectorprofile"
 
 &appflowconnectorprofile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSlack {
 	InstanceUrl: *string,
@@ -4237,7 +4282,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSlack.property.instanceUrl">InstanceUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#instance_url AppflowConnectorProfile#instance_url}. |
+| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSlack.property.instanceUrl">InstanceUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#instance_url AppflowConnectorProfile#instance_url}. |
 
 ---
 
@@ -4249,7 +4294,7 @@ InstanceUrl *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#instance_url AppflowConnectorProfile#instance_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#instance_url AppflowConnectorProfile#instance_url}.
 
 ---
 
@@ -4258,7 +4303,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSnowflake.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appflowconnectorprofile"
 
 &appflowconnectorprofile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSnowflake {
 	BucketName: *string,
@@ -4275,13 +4320,13 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSnowflake.property.bucketName">BucketName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#bucket_name AppflowConnectorProfile#bucket_name}. |
-| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSnowflake.property.stage">Stage</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#stage AppflowConnectorProfile#stage}. |
-| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSnowflake.property.warehouse">Warehouse</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#warehouse AppflowConnectorProfile#warehouse}. |
-| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSnowflake.property.accountName">AccountName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#account_name AppflowConnectorProfile#account_name}. |
-| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSnowflake.property.bucketPrefix">BucketPrefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#bucket_prefix AppflowConnectorProfile#bucket_prefix}. |
-| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSnowflake.property.privateLinkServiceName">PrivateLinkServiceName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#private_link_service_name AppflowConnectorProfile#private_link_service_name}. |
-| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSnowflake.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#region AppflowConnectorProfile#region}. |
+| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSnowflake.property.bucketName">BucketName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#bucket_name AppflowConnectorProfile#bucket_name}. |
+| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSnowflake.property.stage">Stage</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#stage AppflowConnectorProfile#stage}. |
+| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSnowflake.property.warehouse">Warehouse</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#warehouse AppflowConnectorProfile#warehouse}. |
+| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSnowflake.property.accountName">AccountName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#account_name AppflowConnectorProfile#account_name}. |
+| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSnowflake.property.bucketPrefix">BucketPrefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#bucket_prefix AppflowConnectorProfile#bucket_prefix}. |
+| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSnowflake.property.privateLinkServiceName">PrivateLinkServiceName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#private_link_service_name AppflowConnectorProfile#private_link_service_name}. |
+| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSnowflake.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#region AppflowConnectorProfile#region}. |
 
 ---
 
@@ -4293,7 +4338,7 @@ BucketName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#bucket_name AppflowConnectorProfile#bucket_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#bucket_name AppflowConnectorProfile#bucket_name}.
 
 ---
 
@@ -4305,7 +4350,7 @@ Stage *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#stage AppflowConnectorProfile#stage}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#stage AppflowConnectorProfile#stage}.
 
 ---
 
@@ -4317,7 +4362,7 @@ Warehouse *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#warehouse AppflowConnectorProfile#warehouse}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#warehouse AppflowConnectorProfile#warehouse}.
 
 ---
 
@@ -4329,7 +4374,7 @@ AccountName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#account_name AppflowConnectorProfile#account_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#account_name AppflowConnectorProfile#account_name}.
 
 ---
 
@@ -4341,7 +4386,7 @@ BucketPrefix *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#bucket_prefix AppflowConnectorProfile#bucket_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#bucket_prefix AppflowConnectorProfile#bucket_prefix}.
 
 ---
 
@@ -4353,7 +4398,7 @@ PrivateLinkServiceName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#private_link_service_name AppflowConnectorProfile#private_link_service_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#private_link_service_name AppflowConnectorProfile#private_link_service_name}.
 
 ---
 
@@ -4365,7 +4410,7 @@ Region *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#region AppflowConnectorProfile#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#region AppflowConnectorProfile#region}.
 
 ---
 
@@ -4374,7 +4419,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesTrendmicro.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appflowconnectorprofile"
 
 &appflowconnectorprofile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesTrendmicro {
 
@@ -4387,7 +4432,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesVeeva.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appflowconnectorprofile"
 
 &appflowconnectorprofile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesVeeva {
 	InstanceUrl: *string,
@@ -4398,7 +4443,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesVeeva.property.instanceUrl">InstanceUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#instance_url AppflowConnectorProfile#instance_url}. |
+| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesVeeva.property.instanceUrl">InstanceUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#instance_url AppflowConnectorProfile#instance_url}. |
 
 ---
 
@@ -4410,7 +4455,7 @@ InstanceUrl *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#instance_url AppflowConnectorProfile#instance_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#instance_url AppflowConnectorProfile#instance_url}.
 
 ---
 
@@ -4419,7 +4464,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesZendesk.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appflowconnectorprofile"
 
 &appflowconnectorprofile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesZendesk {
 	InstanceUrl: *string,
@@ -4430,7 +4475,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesZendesk.property.instanceUrl">InstanceUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#instance_url AppflowConnectorProfile#instance_url}. |
+| <code><a href="#@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesZendesk.property.instanceUrl">InstanceUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#instance_url AppflowConnectorProfile#instance_url}. |
 
 ---
 
@@ -4442,7 +4487,7 @@ InstanceUrl *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appflow_connector_profile#instance_url AppflowConnectorProfile#instance_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appflow_connector_profile#instance_url AppflowConnectorProfile#instance_url}.
 
 ---
 
@@ -4453,7 +4498,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsAmplitudeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appflowconnectorprofile"
 
 appflowconnectorprofile.NewAppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsAmplitudeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsAmplitudeOutputReference
 ```
@@ -4746,7 +4791,7 @@ func InternalValue() AppflowConnectorProfileConnectorProfileConfigConnectorProfi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorApiKeyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appflowconnectorprofile"
 
 appflowconnectorprofile.NewAppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorApiKeyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorApiKeyOutputReference
 ```
@@ -5046,7 +5091,7 @@ func InternalValue() AppflowConnectorProfileConnectorProfileConfigConnectorProfi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorBasicOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appflowconnectorprofile"
 
 appflowconnectorprofile.NewAppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorBasicOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorBasicOutputReference
 ```
@@ -5339,7 +5384,7 @@ func InternalValue() AppflowConnectorProfileConnectorProfileConfigConnectorProfi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorCustomOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appflowconnectorprofile"
 
 appflowconnectorprofile.NewAppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorCustomOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorCustomOutputReference
 ```
@@ -5639,7 +5684,7 @@ func InternalValue() AppflowConnectorProfileConnectorProfileConfigConnectorProfi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorOauth2OauthRequestOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appflowconnectorprofile"
 
 appflowconnectorprofile.NewAppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorOauth2OauthRequestOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorOauth2OauthRequestOutputReference
 ```
@@ -5946,7 +5991,7 @@ func InternalValue() AppflowConnectorProfileConnectorProfileConfigConnectorProfi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorOauth2OutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appflowconnectorprofile"
 
 appflowconnectorprofile.NewAppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorOauth2OutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorOauth2OutputReference
 ```
@@ -6353,7 +6398,7 @@ func InternalValue() AppflowConnectorProfileConnectorProfileConfigConnectorProfi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appflowconnectorprofile"
 
 appflowconnectorprofile.NewAppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorOutputReference
 ```
@@ -6792,7 +6837,7 @@ func InternalValue() AppflowConnectorProfileConnectorProfileConfigConnectorProfi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsDatadogOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appflowconnectorprofile"
 
 appflowconnectorprofile.NewAppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsDatadogOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsDatadogOutputReference
 ```
@@ -7085,7 +7130,7 @@ func InternalValue() AppflowConnectorProfileConnectorProfileConfigConnectorProfi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsDynatraceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appflowconnectorprofile"
 
 appflowconnectorprofile.NewAppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsDynatraceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsDynatraceOutputReference
 ```
@@ -7356,7 +7401,7 @@ func InternalValue() AppflowConnectorProfileConnectorProfileConfigConnectorProfi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsGoogleAnalyticsOauthRequestOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appflowconnectorprofile"
 
 appflowconnectorprofile.NewAppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsGoogleAnalyticsOauthRequestOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsGoogleAnalyticsOauthRequestOutputReference
 ```
@@ -7663,7 +7708,7 @@ func InternalValue() AppflowConnectorProfileConnectorProfileConfigConnectorProfi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsGoogleAnalyticsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appflowconnectorprofile"
 
 appflowconnectorprofile.NewAppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsGoogleAnalyticsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsGoogleAnalyticsOutputReference
 ```
@@ -8056,7 +8101,7 @@ func InternalValue() AppflowConnectorProfileConnectorProfileConfigConnectorProfi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsHoneycodeOauthRequestOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appflowconnectorprofile"
 
 appflowconnectorprofile.NewAppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsHoneycodeOauthRequestOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsHoneycodeOauthRequestOutputReference
 ```
@@ -8363,7 +8408,7 @@ func InternalValue() AppflowConnectorProfileConnectorProfileConfigConnectorProfi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsHoneycodeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appflowconnectorprofile"
 
 appflowconnectorprofile.NewAppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsHoneycodeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsHoneycodeOutputReference
 ```
@@ -8712,7 +8757,7 @@ func InternalValue() AppflowConnectorProfileConnectorProfileConfigConnectorProfi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsInforNexusOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appflowconnectorprofile"
 
 appflowconnectorprofile.NewAppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsInforNexusOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsInforNexusOutputReference
 ```
@@ -9049,7 +9094,7 @@ func InternalValue() AppflowConnectorProfileConnectorProfileConfigConnectorProfi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsMarketoOauthRequestOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appflowconnectorprofile"
 
 appflowconnectorprofile.NewAppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsMarketoOauthRequestOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsMarketoOauthRequestOutputReference
 ```
@@ -9356,7 +9401,7 @@ func InternalValue() AppflowConnectorProfileConnectorProfileConfigConnectorProfi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsMarketoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appflowconnectorprofile"
 
 appflowconnectorprofile.NewAppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsMarketoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsMarketoOutputReference
 ```
@@ -9720,7 +9765,7 @@ func InternalValue() AppflowConnectorProfileConnectorProfileConfigConnectorProfi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appflowconnectorprofile"
 
 appflowconnectorprofile.NewAppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsOutputReference
 ```
@@ -10725,7 +10770,7 @@ func InternalValue() AppflowConnectorProfileConnectorProfileConfigConnectorProfi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsRedshiftOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appflowconnectorprofile"
 
 appflowconnectorprofile.NewAppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsRedshiftOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsRedshiftOutputReference
 ```
@@ -11018,7 +11063,7 @@ func InternalValue() AppflowConnectorProfileConnectorProfileConfigConnectorProfi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSalesforceOauthRequestOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appflowconnectorprofile"
 
 appflowconnectorprofile.NewAppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSalesforceOauthRequestOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSalesforceOauthRequestOutputReference
 ```
@@ -11325,7 +11370,7 @@ func InternalValue() AppflowConnectorProfileConnectorProfileConfigConnectorProfi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSalesforceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appflowconnectorprofile"
 
 appflowconnectorprofile.NewAppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSalesforceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSalesforceOutputReference
 ```
@@ -11761,7 +11806,7 @@ func InternalValue() AppflowConnectorProfileConnectorProfileConfigConnectorProfi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataBasicAuthCredentialsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appflowconnectorprofile"
 
 appflowconnectorprofile.NewAppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataBasicAuthCredentialsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataBasicAuthCredentialsOutputReference
 ```
@@ -12054,7 +12099,7 @@ func InternalValue() AppflowConnectorProfileConnectorProfileConfigConnectorProfi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataOauthCredentialsOauthRequestOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appflowconnectorprofile"
 
 appflowconnectorprofile.NewAppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataOauthCredentialsOauthRequestOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataOauthCredentialsOauthRequestOutputReference
 ```
@@ -12361,7 +12406,7 @@ func InternalValue() AppflowConnectorProfileConnectorProfileConfigConnectorProfi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataOauthCredentialsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appflowconnectorprofile"
 
 appflowconnectorprofile.NewAppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataOauthCredentialsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataOauthCredentialsOutputReference
 ```
@@ -12754,7 +12799,7 @@ func InternalValue() AppflowConnectorProfileConnectorProfileConfigConnectorProfi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appflowconnectorprofile"
 
 appflowconnectorprofile.NewAppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataOutputReference
 ```
@@ -13087,7 +13132,7 @@ func InternalValue() AppflowConnectorProfileConnectorProfileConfigConnectorProfi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsServiceNowOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appflowconnectorprofile"
 
 appflowconnectorprofile.NewAppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsServiceNowOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsServiceNowOutputReference
 ```
@@ -13380,7 +13425,7 @@ func InternalValue() AppflowConnectorProfileConnectorProfileConfigConnectorProfi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSingularOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appflowconnectorprofile"
 
 appflowconnectorprofile.NewAppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSingularOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSingularOutputReference
 ```
@@ -13651,7 +13696,7 @@ func InternalValue() AppflowConnectorProfileConnectorProfileConfigConnectorProfi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSlackOauthRequestOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appflowconnectorprofile"
 
 appflowconnectorprofile.NewAppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSlackOauthRequestOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSlackOauthRequestOutputReference
 ```
@@ -13958,7 +14003,7 @@ func InternalValue() AppflowConnectorProfileConnectorProfileConfigConnectorProfi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSlackOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appflowconnectorprofile"
 
 appflowconnectorprofile.NewAppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSlackOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSlackOutputReference
 ```
@@ -14322,7 +14367,7 @@ func InternalValue() AppflowConnectorProfileConnectorProfileConfigConnectorProfi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSnowflakeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appflowconnectorprofile"
 
 appflowconnectorprofile.NewAppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSnowflakeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSnowflakeOutputReference
 ```
@@ -14615,7 +14660,7 @@ func InternalValue() AppflowConnectorProfileConnectorProfileConfigConnectorProfi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsTrendmicroOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appflowconnectorprofile"
 
 appflowconnectorprofile.NewAppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsTrendmicroOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsTrendmicroOutputReference
 ```
@@ -14886,7 +14931,7 @@ func InternalValue() AppflowConnectorProfileConnectorProfileConfigConnectorProfi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsVeevaOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appflowconnectorprofile"
 
 appflowconnectorprofile.NewAppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsVeevaOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsVeevaOutputReference
 ```
@@ -15179,7 +15224,7 @@ func InternalValue() AppflowConnectorProfileConnectorProfileConfigConnectorProfi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsZendeskOauthRequestOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appflowconnectorprofile"
 
 appflowconnectorprofile.NewAppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsZendeskOauthRequestOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsZendeskOauthRequestOutputReference
 ```
@@ -15486,7 +15531,7 @@ func InternalValue() AppflowConnectorProfileConnectorProfileConfigConnectorProfi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsZendeskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appflowconnectorprofile"
 
 appflowconnectorprofile.NewAppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsZendeskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsZendeskOutputReference
 ```
@@ -15850,7 +15895,7 @@ func InternalValue() AppflowConnectorProfileConnectorProfileConfigConnectorProfi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesAmplitudeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appflowconnectorprofile"
 
 appflowconnectorprofile.NewAppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesAmplitudeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesAmplitudeOutputReference
 ```
@@ -16099,7 +16144,7 @@ func InternalValue() AppflowConnectorProfileConnectorProfileConfigConnectorProfi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesCustomConnectorOauth2PropertiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appflowconnectorprofile"
 
 appflowconnectorprofile.NewAppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesCustomConnectorOauth2PropertiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesCustomConnectorOauth2PropertiesOutputReference
 ```
@@ -16421,7 +16466,7 @@ func InternalValue() AppflowConnectorProfileConnectorProfileConfigConnectorProfi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesCustomConnectorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appflowconnectorprofile"
 
 appflowconnectorprofile.NewAppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesCustomConnectorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesCustomConnectorOutputReference
 ```
@@ -16741,7 +16786,7 @@ func InternalValue() AppflowConnectorProfileConnectorProfileConfigConnectorProfi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesDatadogOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appflowconnectorprofile"
 
 appflowconnectorprofile.NewAppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesDatadogOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesDatadogOutputReference
 ```
@@ -17012,7 +17057,7 @@ func InternalValue() AppflowConnectorProfileConnectorProfileConfigConnectorProfi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesDynatraceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appflowconnectorprofile"
 
 appflowconnectorprofile.NewAppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesDynatraceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesDynatraceOutputReference
 ```
@@ -17283,7 +17328,7 @@ func InternalValue() AppflowConnectorProfileConnectorProfileConfigConnectorProfi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesGoogleAnalyticsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appflowconnectorprofile"
 
 appflowconnectorprofile.NewAppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesGoogleAnalyticsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesGoogleAnalyticsOutputReference
 ```
@@ -17532,7 +17577,7 @@ func InternalValue() AppflowConnectorProfileConnectorProfileConfigConnectorProfi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesHoneycodeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appflowconnectorprofile"
 
 appflowconnectorprofile.NewAppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesHoneycodeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesHoneycodeOutputReference
 ```
@@ -17781,7 +17826,7 @@ func InternalValue() AppflowConnectorProfileConnectorProfileConfigConnectorProfi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesInforNexusOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appflowconnectorprofile"
 
 appflowconnectorprofile.NewAppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesInforNexusOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesInforNexusOutputReference
 ```
@@ -18052,7 +18097,7 @@ func InternalValue() AppflowConnectorProfileConnectorProfileConfigConnectorProfi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesMarketoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appflowconnectorprofile"
 
 appflowconnectorprofile.NewAppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesMarketoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesMarketoOutputReference
 ```
@@ -18323,7 +18368,7 @@ func InternalValue() AppflowConnectorProfileConnectorProfileConfigConnectorProfi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appflowconnectorprofile"
 
 appflowconnectorprofile.NewAppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesOutputReference
 ```
@@ -19328,7 +19373,7 @@ func InternalValue() AppflowConnectorProfileConnectorProfileConfigConnectorProfi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesRedshiftOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appflowconnectorprofile"
 
 appflowconnectorprofile.NewAppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesRedshiftOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesRedshiftOutputReference
 ```
@@ -19766,7 +19811,7 @@ func InternalValue() AppflowConnectorProfileConnectorProfileConfigConnectorProfi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSalesforceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appflowconnectorprofile"
 
 appflowconnectorprofile.NewAppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSalesforceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSalesforceOutputReference
 ```
@@ -20102,7 +20147,7 @@ func InternalValue() AppflowConnectorProfileConnectorProfileConfigConnectorProfi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSapoDataOauthPropertiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appflowconnectorprofile"
 
 appflowconnectorprofile.NewAppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSapoDataOauthPropertiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSapoDataOauthPropertiesOutputReference
 ```
@@ -20417,7 +20462,7 @@ func InternalValue() AppflowConnectorProfileConnectorProfileConfigConnectorProfi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSapoDataOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appflowconnectorprofile"
 
 appflowconnectorprofile.NewAppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSapoDataOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSapoDataOutputReference
 ```
@@ -20854,7 +20899,7 @@ func InternalValue() AppflowConnectorProfileConnectorProfileConfigConnectorProfi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesServiceNowOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appflowconnectorprofile"
 
 appflowconnectorprofile.NewAppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesServiceNowOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesServiceNowOutputReference
 ```
@@ -21125,7 +21170,7 @@ func InternalValue() AppflowConnectorProfileConnectorProfileConfigConnectorProfi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSingularOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appflowconnectorprofile"
 
 appflowconnectorprofile.NewAppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSingularOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSingularOutputReference
 ```
@@ -21374,7 +21419,7 @@ func InternalValue() AppflowConnectorProfileConnectorProfileConfigConnectorProfi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSlackOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appflowconnectorprofile"
 
 appflowconnectorprofile.NewAppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSlackOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSlackOutputReference
 ```
@@ -21645,7 +21690,7 @@ func InternalValue() AppflowConnectorProfileConnectorProfileConfigConnectorProfi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSnowflakeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appflowconnectorprofile"
 
 appflowconnectorprofile.NewAppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSnowflakeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSnowflakeOutputReference
 ```
@@ -22076,7 +22121,7 @@ func InternalValue() AppflowConnectorProfileConnectorProfileConfigConnectorProfi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesTrendmicroOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appflowconnectorprofile"
 
 appflowconnectorprofile.NewAppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesTrendmicroOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesTrendmicroOutputReference
 ```
@@ -22325,7 +22370,7 @@ func InternalValue() AppflowConnectorProfileConnectorProfileConfigConnectorProfi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesVeevaOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appflowconnectorprofile"
 
 appflowconnectorprofile.NewAppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesVeevaOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesVeevaOutputReference
 ```
@@ -22596,7 +22641,7 @@ func InternalValue() AppflowConnectorProfileConnectorProfileConfigConnectorProfi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesZendeskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appflowconnectorprofile"
 
 appflowconnectorprofile.NewAppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesZendeskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesZendeskOutputReference
 ```
@@ -22867,7 +22912,7 @@ func InternalValue() AppflowConnectorProfileConnectorProfileConfigConnectorProfi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/appflowconnectorprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appflowconnectorprofile"
 
 appflowconnectorprofile.NewAppflowConnectorProfileConnectorProfileConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowConnectorProfileConnectorProfileConfigOutputReference
 ```

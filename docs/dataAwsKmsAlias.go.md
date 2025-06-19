@@ -4,12 +4,12 @@
 
 ### DataAwsKmsAlias <a name="DataAwsKmsAlias" id="@cdktf/provider-aws.dataAwsKmsAlias.DataAwsKmsAlias"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/kms_alias aws_kms_alias}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/kms_alias aws_kms_alias}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsKmsAlias.DataAwsKmsAlias.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawskmsalias"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawskmsalias"
 
 dataawskmsalias.NewDataAwsKmsAlias(scope Construct, id *string, config DataAwsKmsAliasConfig) DataAwsKmsAlias
 ```
@@ -68,6 +68,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.dataAwsKmsAlias.DataAwsKmsAlias.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsKmsAlias.DataAwsKmsAlias.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsKmsAlias.DataAwsKmsAlias.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsKmsAlias.DataAwsKmsAlias.resetRegion">ResetRegion</a></code> | *No description.* |
 
 ---
 
@@ -269,6 +270,12 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 func ResetId()
 ```
 
+##### `ResetRegion` <a name="ResetRegion" id="@cdktf/provider-aws.dataAwsKmsAlias.DataAwsKmsAlias.resetRegion"></a>
+
+```go
+func ResetRegion()
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -283,7 +290,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsKmsAlias.DataAwsKmsAlias.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawskmsalias"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawskmsalias"
 
 dataawskmsalias.DataAwsKmsAlias_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsKmsAlias.DataAwsKmsAlias.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawskmsalias"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawskmsalias"
 
 dataawskmsalias.DataAwsKmsAlias_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +336,7 @@ dataawskmsalias.DataAwsKmsAlias_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsKmsAlias.DataAwsKmsAlias.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawskmsalias"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawskmsalias"
 
 dataawskmsalias.DataAwsKmsAlias_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +350,7 @@ dataawskmsalias.DataAwsKmsAlias_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsKmsAlias.DataAwsKmsAlias.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawskmsalias"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawskmsalias"
 
 dataawskmsalias.DataAwsKmsAlias_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -372,7 +379,7 @@ The construct id used in the generated config for the DataAwsKmsAlias to import.
 
 The id of the existing DataAwsKmsAlias that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/kms_alias#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/kms_alias#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -405,8 +412,10 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.
 | <code><a href="#@cdktf/provider-aws.dataAwsKmsAlias.DataAwsKmsAlias.property.targetKeyId">TargetKeyId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsKmsAlias.DataAwsKmsAlias.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsKmsAlias.DataAwsKmsAlias.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsKmsAlias.DataAwsKmsAlias.property.regionInput">RegionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsKmsAlias.DataAwsKmsAlias.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsKmsAlias.DataAwsKmsAlias.property.name">Name</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsKmsAlias.DataAwsKmsAlias.property.region">Region</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
@@ -582,6 +591,16 @@ func NameInput() *string
 
 ---
 
+##### `RegionInput`<sup>Optional</sup> <a name="RegionInput" id="@cdktf/provider-aws.dataAwsKmsAlias.DataAwsKmsAlias.property.regionInput"></a>
+
+```go
+func RegionInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-aws.dataAwsKmsAlias.DataAwsKmsAlias.property.id"></a>
 
 ```go
@@ -596,6 +615,16 @@ func Id() *string
 
 ```go
 func Name() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Region`<sup>Required</sup> <a name="Region" id="@cdktf/provider-aws.dataAwsKmsAlias.DataAwsKmsAlias.property.region"></a>
+
+```go
+func Region() *string
 ```
 
 - *Type:* *string
@@ -627,7 +656,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsKmsAlias.DataAwsKmsAliasConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawskmsalias"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawskmsalias"
 
 &dataawskmsalias.DataAwsKmsAliasConfig {
 	Connection: interface{},
@@ -639,6 +668,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawskmsalias"
 	Provisioners: *[]interface{},
 	Name: *string,
 	Id: *string,
+	Region: *string,
 }
 ```
 
@@ -653,8 +683,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawskmsalias"
 | <code><a href="#@cdktf/provider-aws.dataAwsKmsAlias.DataAwsKmsAliasConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsKmsAlias.DataAwsKmsAliasConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsKmsAlias.DataAwsKmsAliasConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsKmsAlias.DataAwsKmsAliasConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/kms_alias#name DataAwsKmsAlias#name}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsKmsAlias.DataAwsKmsAliasConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/kms_alias#id DataAwsKmsAlias#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsKmsAlias.DataAwsKmsAliasConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/kms_alias#name DataAwsKmsAlias#name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsKmsAlias.DataAwsKmsAliasConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/kms_alias#id DataAwsKmsAlias#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsKmsAlias.DataAwsKmsAliasConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
 
@@ -736,7 +767,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/kms_alias#name DataAwsKmsAlias#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/kms_alias#name DataAwsKmsAlias#name}.
 
 ---
 
@@ -748,10 +779,24 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/kms_alias#id DataAwsKmsAlias#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/kms_alias#id DataAwsKmsAlias#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `Region`<sup>Optional</sup> <a name="Region" id="@cdktf/provider-aws.dataAwsKmsAlias.DataAwsKmsAliasConfig.property.region"></a>
+
+```go
+Region *string
+```
+
+- *Type:* *string
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/kms_alias#region DataAwsKmsAlias#region}
 
 ---
 
