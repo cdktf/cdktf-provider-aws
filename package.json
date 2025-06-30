@@ -61,7 +61,7 @@
     "jsii-docgen": "^10.2.3",
     "jsii-pacmak": "^1.112.0",
     "jsii-rosetta": "~5.7.0",
-    "projen": "^0.93.0",
+    "projen": "^0.94.0",
     "semver": "^7.5.3",
     "typescript": "~5.7.0"
   },
