@@ -48,6 +48,7 @@ jobs:
       - name: Check for new commits or cancel via faking a SHA if release was cancelled
         id: git_remote
         run: node ./scripts/should-release.js && (echo "latest_commit=$(git ls-remote origin -h ${{ github.ref }} | cut -f1)" >> $GITHUB_OUTPUT && cat $GITHUB_OUTPUT) || echo "latest_commit=release_cancelled" >> $GITHUB_OUTPUT
+        shell: bash
       - name: Backup artifact permissions
         if: ${{ steps.git_remote.outputs.latest_commit == github.sha }}
         run: cd dist && getfacl -R . > permissions-backup.acl
@@ -118,6 +119,7 @@ jobs:
         id: extract-version
         if: ${{ failure() }}
         run: echo "VERSION=$(cat dist/version.txt)" >> $GITHUB_OUTPUT
+        shell: bash
       - name: Create Issue
         if: ${{ failure() }}
         uses: imjohnbo/issue-bot@572eed14422c4d6ca37e870f97e7da209422f5bd
@@ -171,6 +173,7 @@ jobs:
         id: extract-version
         if: ${{ failure() }}
         run: echo "VERSION=$(cat dist/version.txt)" >> $GITHUB_OUTPUT
+        shell: bash
       - name: Create Issue
         if: ${{ failure() }}
         uses: imjohnbo/issue-bot@572eed14422c4d6ca37e870f97e7da209422f5bd
@@ -232,6 +235,7 @@ jobs:
         id: extract-version
         if: ${{ failure() }}
         run: echo "VERSION=$(cat dist/version.txt)" >> $GITHUB_OUTPUT
+        shell: bash
       - name: Create Issue
         if: ${{ failure() }}
         uses: imjohnbo/issue-bot@572eed14422c4d6ca37e870f97e7da209422f5bd
@@ -287,6 +291,7 @@ jobs:
         id: extract-version
         if: ${{ failure() }}
         run: echo "VERSION=$(cat dist/version.txt)" >> $GITHUB_OUTPUT
+        shell: bash
       - name: Create Issue
         if: ${{ failure() }}
         uses: imjohnbo/issue-bot@572eed14422c4d6ca37e870f97e7da209422f5bd
@@ -341,6 +346,7 @@ jobs:
         id: extract-version
         if: ${{ failure() }}
         run: echo "VERSION=$(cat dist/version.txt)" >> $GITHUB_OUTPUT
+        shell: bash
       - name: Create Issue
         if: ${{ failure() }}
         uses: imjohnbo/issue-bot@572eed14422c4d6ca37e870f97e7da209422f5bd
@@ -415,6 +421,7 @@ jobs:
         id: extract-version
         if: ${{ failure() }}
         run: echo "VERSION=$(cat dist/version.txt)" >> $GITHUB_OUTPUT
+        shell: bash
       - name: Create Issue
         if: ${{ failure() }}
         uses: imjohnbo/issue-bot@572eed14422c4d6ca37e870f97e7da209422f5bd
