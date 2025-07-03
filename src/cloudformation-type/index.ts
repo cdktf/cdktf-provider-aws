@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/cloudformation_type
+// https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/cloudformation_type
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,11 +13,11 @@ import * as cdktf from 'cdktf';
 
 export interface CloudformationTypeConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/cloudformation_type#execution_role_arn CloudformationType#execution_role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/cloudformation_type#execution_role_arn CloudformationType#execution_role_arn}
   */
   readonly executionRoleArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/cloudformation_type#id CloudformationType#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/cloudformation_type#id CloudformationType#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -26,35 +26,35 @@ export interface CloudformationTypeConfig extends cdktf.TerraformMetaArguments {
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/cloudformation_type#region CloudformationType#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/cloudformation_type#region CloudformationType#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/cloudformation_type#schema_handler_package CloudformationType#schema_handler_package}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/cloudformation_type#schema_handler_package CloudformationType#schema_handler_package}
   */
   readonly schemaHandlerPackage: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/cloudformation_type#type CloudformationType#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/cloudformation_type#type CloudformationType#type}
   */
   readonly type?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/cloudformation_type#type_name CloudformationType#type_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/cloudformation_type#type_name CloudformationType#type_name}
   */
   readonly typeName: string;
   /**
   * logging_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/cloudformation_type#logging_config CloudformationType#logging_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/cloudformation_type#logging_config CloudformationType#logging_config}
   */
   readonly loggingConfig?: CloudformationTypeLoggingConfig;
 }
 export interface CloudformationTypeLoggingConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/cloudformation_type#log_group_name CloudformationType#log_group_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/cloudformation_type#log_group_name CloudformationType#log_group_name}
   */
   readonly logGroupName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/cloudformation_type#log_role_arn CloudformationType#log_role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/cloudformation_type#log_role_arn CloudformationType#log_role_arn}
   */
   readonly logRoleArn: string;
 }
@@ -161,7 +161,7 @@ export class CloudformationTypeLoggingConfigOutputReference extends cdktf.Comple
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/cloudformation_type aws_cloudformation_type}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/cloudformation_type aws_cloudformation_type}
 */
 export class CloudformationType extends cdktf.TerraformResource {
 
@@ -177,7 +177,7 @@ export class CloudformationType extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a CloudformationType resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CloudformationType to import
-  * @param importFromId The id of the existing CloudformationType that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/cloudformation_type#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing CloudformationType that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/cloudformation_type#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CloudformationType to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -189,7 +189,7 @@ export class CloudformationType extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/cloudformation_type aws_cloudformation_type} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/cloudformation_type aws_cloudformation_type} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -200,7 +200,7 @@ export class CloudformationType extends cdktf.TerraformResource {
       terraformResourceType: 'aws_cloudformation_type',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.0.0',
+        providerVersion: '6.2.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/route53_records_exclusive
+// https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/route53_records_exclusive
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,33 +13,33 @@ import * as cdktf from 'cdktf';
 
 export interface Route53RecordsExclusiveConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/route53_records_exclusive#zone_id Route53RecordsExclusive#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/route53_records_exclusive#zone_id Route53RecordsExclusive#zone_id}
   */
   readonly zoneId: string;
   /**
   * resource_record_set block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/route53_records_exclusive#resource_record_set Route53RecordsExclusive#resource_record_set}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/route53_records_exclusive#resource_record_set Route53RecordsExclusive#resource_record_set}
   */
   readonly resourceRecordSet?: Route53RecordsExclusiveResourceRecordSet[] | cdktf.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/route53_records_exclusive#timeouts Route53RecordsExclusive#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/route53_records_exclusive#timeouts Route53RecordsExclusive#timeouts}
   */
   readonly timeouts?: Route53RecordsExclusiveTimeouts;
 }
 export interface Route53RecordsExclusiveResourceRecordSetAliasTarget {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/route53_records_exclusive#dns_name Route53RecordsExclusive#dns_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/route53_records_exclusive#dns_name Route53RecordsExclusive#dns_name}
   */
   readonly dnsName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/route53_records_exclusive#evaluate_target_health Route53RecordsExclusive#evaluate_target_health}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/route53_records_exclusive#evaluate_target_health Route53RecordsExclusive#evaluate_target_health}
   */
   readonly evaluateTargetHealth: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/route53_records_exclusive#hosted_zone_id Route53RecordsExclusive#hosted_zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/route53_records_exclusive#hosted_zone_id Route53RecordsExclusive#hosted_zone_id}
   */
   readonly hostedZoneId: string;
 }
@@ -204,11 +204,11 @@ export class Route53RecordsExclusiveResourceRecordSetAliasTargetList extends cdk
 }
 export interface Route53RecordsExclusiveResourceRecordSetCidrRoutingConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/route53_records_exclusive#collection_id Route53RecordsExclusive#collection_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/route53_records_exclusive#collection_id Route53RecordsExclusive#collection_id}
   */
   readonly collectionId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/route53_records_exclusive#location_name Route53RecordsExclusive#location_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/route53_records_exclusive#location_name Route53RecordsExclusive#location_name}
   */
   readonly locationName: string;
 }
@@ -347,15 +347,15 @@ export class Route53RecordsExclusiveResourceRecordSetCidrRoutingConfigList exten
 }
 export interface Route53RecordsExclusiveResourceRecordSetGeolocation {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/route53_records_exclusive#continent_code Route53RecordsExclusive#continent_code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/route53_records_exclusive#continent_code Route53RecordsExclusive#continent_code}
   */
   readonly continentCode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/route53_records_exclusive#country_code Route53RecordsExclusive#country_code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/route53_records_exclusive#country_code Route53RecordsExclusive#country_code}
   */
   readonly countryCode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/route53_records_exclusive#subdivision_code Route53RecordsExclusive#subdivision_code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/route53_records_exclusive#subdivision_code Route53RecordsExclusive#subdivision_code}
   */
   readonly subdivisionCode?: string;
 }
@@ -529,11 +529,11 @@ export class Route53RecordsExclusiveResourceRecordSetGeolocationList extends cdk
 }
 export interface Route53RecordsExclusiveResourceRecordSetGeoproximityLocationCoordinates {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/route53_records_exclusive#latitude Route53RecordsExclusive#latitude}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/route53_records_exclusive#latitude Route53RecordsExclusive#latitude}
   */
   readonly latitude: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/route53_records_exclusive#longitude Route53RecordsExclusive#longitude}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/route53_records_exclusive#longitude Route53RecordsExclusive#longitude}
   */
   readonly longitude: string;
 }
@@ -672,21 +672,21 @@ export class Route53RecordsExclusiveResourceRecordSetGeoproximityLocationCoordin
 }
 export interface Route53RecordsExclusiveResourceRecordSetGeoproximityLocation {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/route53_records_exclusive#aws_region Route53RecordsExclusive#aws_region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/route53_records_exclusive#aws_region Route53RecordsExclusive#aws_region}
   */
   readonly awsRegion?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/route53_records_exclusive#bias Route53RecordsExclusive#bias}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/route53_records_exclusive#bias Route53RecordsExclusive#bias}
   */
   readonly bias?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/route53_records_exclusive#local_zone_group Route53RecordsExclusive#local_zone_group}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/route53_records_exclusive#local_zone_group Route53RecordsExclusive#local_zone_group}
   */
   readonly localZoneGroup?: string;
   /**
   * coordinates block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/route53_records_exclusive#coordinates Route53RecordsExclusive#coordinates}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/route53_records_exclusive#coordinates Route53RecordsExclusive#coordinates}
   */
   readonly coordinates?: Route53RecordsExclusiveResourceRecordSetGeoproximityLocationCoordinates[] | cdktf.IResolvable;
 }
@@ -889,7 +889,7 @@ export class Route53RecordsExclusiveResourceRecordSetGeoproximityLocationList ex
 }
 export interface Route53RecordsExclusiveResourceRecordSetResourceRecords {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/route53_records_exclusive#value Route53RecordsExclusive#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/route53_records_exclusive#value Route53RecordsExclusive#value}
   */
   readonly value: string;
 }
@@ -1002,73 +1002,73 @@ export class Route53RecordsExclusiveResourceRecordSetResourceRecordsList extends
 }
 export interface Route53RecordsExclusiveResourceRecordSet {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/route53_records_exclusive#failover Route53RecordsExclusive#failover}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/route53_records_exclusive#failover Route53RecordsExclusive#failover}
   */
   readonly failover?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/route53_records_exclusive#health_check_id Route53RecordsExclusive#health_check_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/route53_records_exclusive#health_check_id Route53RecordsExclusive#health_check_id}
   */
   readonly healthCheckId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/route53_records_exclusive#multi_value_answer Route53RecordsExclusive#multi_value_answer}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/route53_records_exclusive#multi_value_answer Route53RecordsExclusive#multi_value_answer}
   */
   readonly multiValueAnswer?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/route53_records_exclusive#name Route53RecordsExclusive#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/route53_records_exclusive#name Route53RecordsExclusive#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/route53_records_exclusive#region Route53RecordsExclusive#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/route53_records_exclusive#region Route53RecordsExclusive#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/route53_records_exclusive#set_identifier Route53RecordsExclusive#set_identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/route53_records_exclusive#set_identifier Route53RecordsExclusive#set_identifier}
   */
   readonly setIdentifier?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/route53_records_exclusive#traffic_policy_instance_id Route53RecordsExclusive#traffic_policy_instance_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/route53_records_exclusive#traffic_policy_instance_id Route53RecordsExclusive#traffic_policy_instance_id}
   */
   readonly trafficPolicyInstanceId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/route53_records_exclusive#ttl Route53RecordsExclusive#ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/route53_records_exclusive#ttl Route53RecordsExclusive#ttl}
   */
   readonly ttl?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/route53_records_exclusive#type Route53RecordsExclusive#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/route53_records_exclusive#type Route53RecordsExclusive#type}
   */
   readonly type?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/route53_records_exclusive#weight Route53RecordsExclusive#weight}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/route53_records_exclusive#weight Route53RecordsExclusive#weight}
   */
   readonly weight?: number;
   /**
   * alias_target block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/route53_records_exclusive#alias_target Route53RecordsExclusive#alias_target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/route53_records_exclusive#alias_target Route53RecordsExclusive#alias_target}
   */
   readonly aliasTarget?: Route53RecordsExclusiveResourceRecordSetAliasTarget[] | cdktf.IResolvable;
   /**
   * cidr_routing_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/route53_records_exclusive#cidr_routing_config Route53RecordsExclusive#cidr_routing_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/route53_records_exclusive#cidr_routing_config Route53RecordsExclusive#cidr_routing_config}
   */
   readonly cidrRoutingConfig?: Route53RecordsExclusiveResourceRecordSetCidrRoutingConfig[] | cdktf.IResolvable;
   /**
   * geolocation block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/route53_records_exclusive#geolocation Route53RecordsExclusive#geolocation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/route53_records_exclusive#geolocation Route53RecordsExclusive#geolocation}
   */
   readonly geolocation?: Route53RecordsExclusiveResourceRecordSetGeolocation[] | cdktf.IResolvable;
   /**
   * geoproximity_location block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/route53_records_exclusive#geoproximity_location Route53RecordsExclusive#geoproximity_location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/route53_records_exclusive#geoproximity_location Route53RecordsExclusive#geoproximity_location}
   */
   readonly geoproximityLocation?: Route53RecordsExclusiveResourceRecordSetGeoproximityLocation[] | cdktf.IResolvable;
   /**
   * resource_records block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/route53_records_exclusive#resource_records Route53RecordsExclusive#resource_records}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/route53_records_exclusive#resource_records Route53RecordsExclusive#resource_records}
   */
   readonly resourceRecords?: Route53RecordsExclusiveResourceRecordSetResourceRecords[] | cdktf.IResolvable;
 }
@@ -1589,13 +1589,13 @@ export interface Route53RecordsExclusiveTimeouts {
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/route53_records_exclusive#create Route53RecordsExclusive#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/route53_records_exclusive#create Route53RecordsExclusive#create}
   */
   readonly create?: string;
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/route53_records_exclusive#update Route53RecordsExclusive#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/route53_records_exclusive#update Route53RecordsExclusive#update}
   */
   readonly update?: string;
 }
@@ -1718,7 +1718,7 @@ export class Route53RecordsExclusiveTimeoutsOutputReference extends cdktf.Comple
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/route53_records_exclusive aws_route53_records_exclusive}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/route53_records_exclusive aws_route53_records_exclusive}
 */
 export class Route53RecordsExclusive extends cdktf.TerraformResource {
 
@@ -1734,7 +1734,7 @@ export class Route53RecordsExclusive extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a Route53RecordsExclusive resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Route53RecordsExclusive to import
-  * @param importFromId The id of the existing Route53RecordsExclusive that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/route53_records_exclusive#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Route53RecordsExclusive that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/route53_records_exclusive#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Route53RecordsExclusive to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -1746,7 +1746,7 @@ export class Route53RecordsExclusive extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/route53_records_exclusive aws_route53_records_exclusive} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/route53_records_exclusive aws_route53_records_exclusive} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1757,7 +1757,7 @@ export class Route53RecordsExclusive extends cdktf.TerraformResource {
       terraformResourceType: 'aws_route53_records_exclusive',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.0.0',
+        providerVersion: '6.2.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

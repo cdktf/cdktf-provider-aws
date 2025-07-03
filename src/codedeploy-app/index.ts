@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/codedeploy_app
+// https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/codedeploy_app
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,38 +13,38 @@ import * as cdktf from 'cdktf';
 
 export interface CodedeployAppConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/codedeploy_app#compute_platform CodedeployApp#compute_platform}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/codedeploy_app#compute_platform CodedeployApp#compute_platform}
   */
   readonly computePlatform?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/codedeploy_app#id CodedeployApp#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/codedeploy_app#id CodedeployApp#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/codedeploy_app#name CodedeployApp#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/codedeploy_app#name CodedeployApp#name}
   */
   readonly name: string;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/codedeploy_app#region CodedeployApp#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/codedeploy_app#region CodedeployApp#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/codedeploy_app#tags CodedeployApp#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/codedeploy_app#tags CodedeployApp#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/codedeploy_app#tags_all CodedeployApp#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/codedeploy_app#tags_all CodedeployApp#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/codedeploy_app aws_codedeploy_app}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/codedeploy_app aws_codedeploy_app}
 */
 export class CodedeployApp extends cdktf.TerraformResource {
 
@@ -60,7 +60,7 @@ export class CodedeployApp extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a CodedeployApp resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CodedeployApp to import
-  * @param importFromId The id of the existing CodedeployApp that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/codedeploy_app#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing CodedeployApp that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/codedeploy_app#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CodedeployApp to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -72,7 +72,7 @@ export class CodedeployApp extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/codedeploy_app aws_codedeploy_app} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/codedeploy_app aws_codedeploy_app} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -83,7 +83,7 @@ export class CodedeployApp extends cdktf.TerraformResource {
       terraformResourceType: 'aws_codedeploy_app',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.0.0',
+        providerVersion: '6.2.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

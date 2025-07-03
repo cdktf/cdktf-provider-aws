@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/imagebuilder_infrastructure_configurations
+// https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/data-sources/imagebuilder_infrastructure_configurations
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsImagebuilderInfrastructureConfigurationsConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/imagebuilder_infrastructure_configurations#id DataAwsImagebuilderInfrastructureConfigurations#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/data-sources/imagebuilder_infrastructure_configurations#id DataAwsImagebuilderInfrastructureConfigurations#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,23 +22,23 @@ export interface DataAwsImagebuilderInfrastructureConfigurationsConfig extends c
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/imagebuilder_infrastructure_configurations#region DataAwsImagebuilderInfrastructureConfigurations#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/data-sources/imagebuilder_infrastructure_configurations#region DataAwsImagebuilderInfrastructureConfigurations#region}
   */
   readonly region?: string;
   /**
   * filter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/imagebuilder_infrastructure_configurations#filter DataAwsImagebuilderInfrastructureConfigurations#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/data-sources/imagebuilder_infrastructure_configurations#filter DataAwsImagebuilderInfrastructureConfigurations#filter}
   */
   readonly filter?: DataAwsImagebuilderInfrastructureConfigurationsFilter[] | cdktf.IResolvable;
 }
 export interface DataAwsImagebuilderInfrastructureConfigurationsFilter {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/imagebuilder_infrastructure_configurations#name DataAwsImagebuilderInfrastructureConfigurations#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/data-sources/imagebuilder_infrastructure_configurations#name DataAwsImagebuilderInfrastructureConfigurations#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/imagebuilder_infrastructure_configurations#values DataAwsImagebuilderInfrastructureConfigurations#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/data-sources/imagebuilder_infrastructure_configurations#values DataAwsImagebuilderInfrastructureConfigurations#values}
   */
   readonly values: string[];
 }
@@ -177,7 +177,7 @@ export class DataAwsImagebuilderInfrastructureConfigurationsFilterList extends c
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/imagebuilder_infrastructure_configurations aws_imagebuilder_infrastructure_configurations}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/data-sources/imagebuilder_infrastructure_configurations aws_imagebuilder_infrastructure_configurations}
 */
 export class DataAwsImagebuilderInfrastructureConfigurations extends cdktf.TerraformDataSource {
 
@@ -193,7 +193,7 @@ export class DataAwsImagebuilderInfrastructureConfigurations extends cdktf.Terra
   * Generates CDKTF code for importing a DataAwsImagebuilderInfrastructureConfigurations resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsImagebuilderInfrastructureConfigurations to import
-  * @param importFromId The id of the existing DataAwsImagebuilderInfrastructureConfigurations that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/imagebuilder_infrastructure_configurations#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsImagebuilderInfrastructureConfigurations that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/data-sources/imagebuilder_infrastructure_configurations#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsImagebuilderInfrastructureConfigurations to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -205,7 +205,7 @@ export class DataAwsImagebuilderInfrastructureConfigurations extends cdktf.Terra
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/imagebuilder_infrastructure_configurations aws_imagebuilder_infrastructure_configurations} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/data-sources/imagebuilder_infrastructure_configurations aws_imagebuilder_infrastructure_configurations} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -216,7 +216,7 @@ export class DataAwsImagebuilderInfrastructureConfigurations extends cdktf.Terra
       terraformResourceType: 'aws_imagebuilder_infrastructure_configurations',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.0.0',
+        providerVersion: '6.2.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

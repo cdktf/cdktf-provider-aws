@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3_directory_bucket
+// https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/s3_directory_bucket
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,41 +13,45 @@ import * as cdktf from 'cdktf';
 
 export interface S3DirectoryBucketConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3_directory_bucket#bucket S3DirectoryBucket#bucket}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/s3_directory_bucket#bucket S3DirectoryBucket#bucket}
   */
   readonly bucket: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3_directory_bucket#data_redundancy S3DirectoryBucket#data_redundancy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/s3_directory_bucket#data_redundancy S3DirectoryBucket#data_redundancy}
   */
   readonly dataRedundancy?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3_directory_bucket#force_destroy S3DirectoryBucket#force_destroy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/s3_directory_bucket#force_destroy S3DirectoryBucket#force_destroy}
   */
   readonly forceDestroy?: boolean | cdktf.IResolvable;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3_directory_bucket#region S3DirectoryBucket#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/s3_directory_bucket#region S3DirectoryBucket#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3_directory_bucket#type S3DirectoryBucket#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/s3_directory_bucket#tags S3DirectoryBucket#tags}
+  */
+  readonly tags?: { [key: string]: string };
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/s3_directory_bucket#type S3DirectoryBucket#type}
   */
   readonly type?: string;
   /**
   * location block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3_directory_bucket#location S3DirectoryBucket#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/s3_directory_bucket#location S3DirectoryBucket#location}
   */
   readonly location?: S3DirectoryBucketLocation[] | cdktf.IResolvable;
 }
 export interface S3DirectoryBucketLocation {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3_directory_bucket#name S3DirectoryBucket#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/s3_directory_bucket#name S3DirectoryBucket#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3_directory_bucket#type S3DirectoryBucket#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/s3_directory_bucket#type S3DirectoryBucket#type}
   */
   readonly type?: string;
 }
@@ -189,7 +193,7 @@ export class S3DirectoryBucketLocationList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3_directory_bucket aws_s3_directory_bucket}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/s3_directory_bucket aws_s3_directory_bucket}
 */
 export class S3DirectoryBucket extends cdktf.TerraformResource {
 
@@ -205,7 +209,7 @@ export class S3DirectoryBucket extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a S3DirectoryBucket resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the S3DirectoryBucket to import
-  * @param importFromId The id of the existing S3DirectoryBucket that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3_directory_bucket#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing S3DirectoryBucket that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/s3_directory_bucket#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the S3DirectoryBucket to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -217,7 +221,7 @@ export class S3DirectoryBucket extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3_directory_bucket aws_s3_directory_bucket} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/s3_directory_bucket aws_s3_directory_bucket} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -228,7 +232,7 @@ export class S3DirectoryBucket extends cdktf.TerraformResource {
       terraformResourceType: 'aws_s3_directory_bucket',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.0.0',
+        providerVersion: '6.2.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
@@ -243,6 +247,7 @@ export class S3DirectoryBucket extends cdktf.TerraformResource {
     this._dataRedundancy = config.dataRedundancy;
     this._forceDestroy = config.forceDestroy;
     this._region = config.region;
+    this._tags = config.tags;
     this._type = config.type;
     this._location.internalValue = config.location;
   }
@@ -322,6 +327,28 @@ export class S3DirectoryBucket extends cdktf.TerraformResource {
     return this._region;
   }
 
+  // tags - computed: false, optional: true, required: false
+  private _tags?: { [key: string]: string }; 
+  public get tags() {
+    return this.getStringMapAttribute('tags');
+  }
+  public set tags(value: { [key: string]: string }) {
+    this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags;
+  }
+
+  // tags_all - computed: true, optional: false, required: false
+  private _tagsAll = new cdktf.StringMap(this, "tags_all");
+  public get tagsAll() {
+    return this._tagsAll;
+  }
+
   // type - computed: true, optional: true, required: false
   private _type?: string; 
   public get type() {
@@ -364,6 +391,7 @@ export class S3DirectoryBucket extends cdktf.TerraformResource {
       data_redundancy: cdktf.stringToTerraform(this._dataRedundancy),
       force_destroy: cdktf.booleanToTerraform(this._forceDestroy),
       region: cdktf.stringToTerraform(this._region),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       type: cdktf.stringToTerraform(this._type),
       location: cdktf.listMapper(s3DirectoryBucketLocationToTerraform, true)(this._location.internalValue),
     };
@@ -394,6 +422,12 @@ export class S3DirectoryBucket extends cdktf.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
       },
       type: {
         value: cdktf.stringToHclTerraform(this._type),

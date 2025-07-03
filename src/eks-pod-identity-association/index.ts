@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/eks_pod_identity_association
+// https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/eks_pod_identity_association
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,35 +13,43 @@ import * as cdktf from 'cdktf';
 
 export interface EksPodIdentityAssociationConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/eks_pod_identity_association#cluster_name EksPodIdentityAssociation#cluster_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/eks_pod_identity_association#cluster_name EksPodIdentityAssociation#cluster_name}
   */
   readonly clusterName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/eks_pod_identity_association#namespace EksPodIdentityAssociation#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/eks_pod_identity_association#disable_session_tags EksPodIdentityAssociation#disable_session_tags}
+  */
+  readonly disableSessionTags?: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/eks_pod_identity_association#namespace EksPodIdentityAssociation#namespace}
   */
   readonly namespace: string;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/eks_pod_identity_association#region EksPodIdentityAssociation#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/eks_pod_identity_association#region EksPodIdentityAssociation#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/eks_pod_identity_association#role_arn EksPodIdentityAssociation#role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/eks_pod_identity_association#role_arn EksPodIdentityAssociation#role_arn}
   */
   readonly roleArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/eks_pod_identity_association#service_account EksPodIdentityAssociation#service_account}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/eks_pod_identity_association#service_account EksPodIdentityAssociation#service_account}
   */
   readonly serviceAccount: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/eks_pod_identity_association#tags EksPodIdentityAssociation#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/eks_pod_identity_association#tags EksPodIdentityAssociation#tags}
   */
   readonly tags?: { [key: string]: string };
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/eks_pod_identity_association#target_role_arn EksPodIdentityAssociation#target_role_arn}
+  */
+  readonly targetRoleArn?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/eks_pod_identity_association aws_eks_pod_identity_association}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/eks_pod_identity_association aws_eks_pod_identity_association}
 */
 export class EksPodIdentityAssociation extends cdktf.TerraformResource {
 
@@ -57,7 +65,7 @@ export class EksPodIdentityAssociation extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a EksPodIdentityAssociation resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the EksPodIdentityAssociation to import
-  * @param importFromId The id of the existing EksPodIdentityAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/eks_pod_identity_association#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing EksPodIdentityAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/eks_pod_identity_association#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the EksPodIdentityAssociation to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -69,7 +77,7 @@ export class EksPodIdentityAssociation extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/eks_pod_identity_association aws_eks_pod_identity_association} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/eks_pod_identity_association aws_eks_pod_identity_association} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -80,7 +88,7 @@ export class EksPodIdentityAssociation extends cdktf.TerraformResource {
       terraformResourceType: 'aws_eks_pod_identity_association',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.0.0',
+        providerVersion: '6.2.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
@@ -92,11 +100,13 @@ export class EksPodIdentityAssociation extends cdktf.TerraformResource {
       forEach: config.forEach
     });
     this._clusterName = config.clusterName;
+    this._disableSessionTags = config.disableSessionTags;
     this._namespace = config.namespace;
     this._region = config.region;
     this._roleArn = config.roleArn;
     this._serviceAccount = config.serviceAccount;
     this._tags = config.tags;
+    this._targetRoleArn = config.targetRoleArn;
   }
 
   // ==========
@@ -124,6 +134,27 @@ export class EksPodIdentityAssociation extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get clusterNameInput() {
     return this._clusterName;
+  }
+
+  // disable_session_tags - computed: true, optional: true, required: false
+  private _disableSessionTags?: boolean | cdktf.IResolvable; 
+  public get disableSessionTags() {
+    return this.getBooleanAttribute('disable_session_tags');
+  }
+  public set disableSessionTags(value: boolean | cdktf.IResolvable) {
+    this._disableSessionTags = value;
+  }
+  public resetDisableSessionTags() {
+    this._disableSessionTags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get disableSessionTagsInput() {
+    return this._disableSessionTags;
+  }
+
+  // external_id - computed: true, optional: false, required: false
+  public get externalId() {
+    return this.getStringAttribute('external_id');
   }
 
   // id - computed: true, optional: false, required: false
@@ -208,6 +239,22 @@ export class EksPodIdentityAssociation extends cdktf.TerraformResource {
     return this._tagsAll;
   }
 
+  // target_role_arn - computed: false, optional: true, required: false
+  private _targetRoleArn?: string; 
+  public get targetRoleArn() {
+    return this.getStringAttribute('target_role_arn');
+  }
+  public set targetRoleArn(value: string) {
+    this._targetRoleArn = value;
+  }
+  public resetTargetRoleArn() {
+    this._targetRoleArn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get targetRoleArnInput() {
+    return this._targetRoleArn;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -215,11 +262,13 @@ export class EksPodIdentityAssociation extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       cluster_name: cdktf.stringToTerraform(this._clusterName),
+      disable_session_tags: cdktf.booleanToTerraform(this._disableSessionTags),
       namespace: cdktf.stringToTerraform(this._namespace),
       region: cdktf.stringToTerraform(this._region),
       role_arn: cdktf.stringToTerraform(this._roleArn),
       service_account: cdktf.stringToTerraform(this._serviceAccount),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      target_role_arn: cdktf.stringToTerraform(this._targetRoleArn),
     };
   }
 
@@ -230,6 +279,12 @@ export class EksPodIdentityAssociation extends cdktf.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      disable_session_tags: {
+        value: cdktf.booleanToHclTerraform(this._disableSessionTags),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
       },
       namespace: {
         value: cdktf.stringToHclTerraform(this._namespace),
@@ -260,6 +315,12 @@ export class EksPodIdentityAssociation extends cdktf.TerraformResource {
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
+      },
+      target_role_arn: {
+        value: cdktf.stringToHclTerraform(this._targetRoleArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
       },
     };
 

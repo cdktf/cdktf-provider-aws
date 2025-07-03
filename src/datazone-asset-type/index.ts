@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/datazone_asset_type
+// https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/datazone_asset_type
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,55 +13,55 @@ import * as cdktf from 'cdktf';
 
 export interface DatazoneAssetTypeConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/datazone_asset_type#description DatazoneAssetType#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/datazone_asset_type#description DatazoneAssetType#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/datazone_asset_type#domain_identifier DatazoneAssetType#domain_identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/datazone_asset_type#domain_identifier DatazoneAssetType#domain_identifier}
   */
   readonly domainIdentifier: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/datazone_asset_type#name DatazoneAssetType#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/datazone_asset_type#name DatazoneAssetType#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/datazone_asset_type#owning_project_identifier DatazoneAssetType#owning_project_identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/datazone_asset_type#owning_project_identifier DatazoneAssetType#owning_project_identifier}
   */
   readonly owningProjectIdentifier: string;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/datazone_asset_type#region DatazoneAssetType#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/datazone_asset_type#region DatazoneAssetType#region}
   */
   readonly region?: string;
   /**
   * forms_input block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/datazone_asset_type#forms_input DatazoneAssetType#forms_input}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/datazone_asset_type#forms_input DatazoneAssetType#forms_input}
   */
   readonly formsInput?: DatazoneAssetTypeFormsInput[] | cdktf.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/datazone_asset_type#timeouts DatazoneAssetType#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/datazone_asset_type#timeouts DatazoneAssetType#timeouts}
   */
   readonly timeouts?: DatazoneAssetTypeTimeouts;
 }
 export interface DatazoneAssetTypeFormsInput {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/datazone_asset_type#map_block_key DatazoneAssetType#map_block_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/datazone_asset_type#map_block_key DatazoneAssetType#map_block_key}
   */
   readonly mapBlockKey: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/datazone_asset_type#required DatazoneAssetType#required}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/datazone_asset_type#required DatazoneAssetType#required}
   */
   readonly required?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/datazone_asset_type#type_identifier DatazoneAssetType#type_identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/datazone_asset_type#type_identifier DatazoneAssetType#type_identifier}
   */
   readonly typeIdentifier: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/datazone_asset_type#type_revision DatazoneAssetType#type_revision}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/datazone_asset_type#type_revision DatazoneAssetType#type_revision}
   */
   readonly typeRevision: string;
 }
@@ -257,7 +257,7 @@ export interface DatazoneAssetTypeTimeouts {
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/datazone_asset_type#create DatazoneAssetType#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/datazone_asset_type#create DatazoneAssetType#create}
   */
   readonly create?: string;
 }
@@ -351,7 +351,7 @@ export class DatazoneAssetTypeTimeoutsOutputReference extends cdktf.ComplexObjec
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/datazone_asset_type aws_datazone_asset_type}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/datazone_asset_type aws_datazone_asset_type}
 */
 export class DatazoneAssetType extends cdktf.TerraformResource {
 
@@ -367,7 +367,7 @@ export class DatazoneAssetType extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a DatazoneAssetType resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DatazoneAssetType to import
-  * @param importFromId The id of the existing DatazoneAssetType that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/datazone_asset_type#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DatazoneAssetType that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/datazone_asset_type#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DatazoneAssetType to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -379,7 +379,7 @@ export class DatazoneAssetType extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/datazone_asset_type aws_datazone_asset_type} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/datazone_asset_type aws_datazone_asset_type} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -390,7 +390,7 @@ export class DatazoneAssetType extends cdktf.TerraformResource {
       terraformResourceType: 'aws_datazone_asset_type',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.0.0',
+        providerVersion: '6.2.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

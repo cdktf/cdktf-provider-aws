@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/accessanalyzer_analyzer
+// https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/accessanalyzer_analyzer
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,11 +13,11 @@ import * as cdktf from 'cdktf';
 
 export interface AccessanalyzerAnalyzerConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/accessanalyzer_analyzer#analyzer_name AccessanalyzerAnalyzer#analyzer_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/accessanalyzer_analyzer#analyzer_name AccessanalyzerAnalyzer#analyzer_name}
   */
   readonly analyzerName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/accessanalyzer_analyzer#id AccessanalyzerAnalyzer#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/accessanalyzer_analyzer#id AccessanalyzerAnalyzer#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -26,35 +26,389 @@ export interface AccessanalyzerAnalyzerConfig extends cdktf.TerraformMetaArgumen
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/accessanalyzer_analyzer#region AccessanalyzerAnalyzer#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/accessanalyzer_analyzer#region AccessanalyzerAnalyzer#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/accessanalyzer_analyzer#tags AccessanalyzerAnalyzer#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/accessanalyzer_analyzer#tags AccessanalyzerAnalyzer#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/accessanalyzer_analyzer#tags_all AccessanalyzerAnalyzer#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/accessanalyzer_analyzer#tags_all AccessanalyzerAnalyzer#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/accessanalyzer_analyzer#type AccessanalyzerAnalyzer#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/accessanalyzer_analyzer#type AccessanalyzerAnalyzer#type}
   */
   readonly type?: string;
   /**
   * configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/accessanalyzer_analyzer#configuration AccessanalyzerAnalyzer#configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/accessanalyzer_analyzer#configuration AccessanalyzerAnalyzer#configuration}
   */
   readonly configuration?: AccessanalyzerAnalyzerConfiguration;
 }
-export interface AccessanalyzerAnalyzerConfigurationUnusedAccessAnalysisRuleExclusion {
+export interface AccessanalyzerAnalyzerConfigurationInternalAccessAnalysisRuleInclusion {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/accessanalyzer_analyzer#account_ids AccessanalyzerAnalyzer#account_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/accessanalyzer_analyzer#account_ids AccessanalyzerAnalyzer#account_ids}
   */
   readonly accountIds?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/accessanalyzer_analyzer#resource_tags AccessanalyzerAnalyzer#resource_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/accessanalyzer_analyzer#resource_arns AccessanalyzerAnalyzer#resource_arns}
+  */
+  readonly resourceArns?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/accessanalyzer_analyzer#resource_types AccessanalyzerAnalyzer#resource_types}
+  */
+  readonly resourceTypes?: string[];
+}
+
+export function accessanalyzerAnalyzerConfigurationInternalAccessAnalysisRuleInclusionToTerraform(struct?: AccessanalyzerAnalyzerConfigurationInternalAccessAnalysisRuleInclusion | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    account_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.accountIds),
+    resource_arns: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.resourceArns),
+    resource_types: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.resourceTypes),
+  }
+}
+
+
+export function accessanalyzerAnalyzerConfigurationInternalAccessAnalysisRuleInclusionToHclTerraform(struct?: AccessanalyzerAnalyzerConfigurationInternalAccessAnalysisRuleInclusion | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    account_ids: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.accountIds),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    resource_arns: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.resourceArns),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    resource_types: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.resourceTypes),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class AccessanalyzerAnalyzerConfigurationInternalAccessAnalysisRuleInclusionOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): AccessanalyzerAnalyzerConfigurationInternalAccessAnalysisRuleInclusion | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._accountIds !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.accountIds = this._accountIds;
+    }
+    if (this._resourceArns !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.resourceArns = this._resourceArns;
+    }
+    if (this._resourceTypes !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.resourceTypes = this._resourceTypes;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AccessanalyzerAnalyzerConfigurationInternalAccessAnalysisRuleInclusion | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._accountIds = undefined;
+      this._resourceArns = undefined;
+      this._resourceTypes = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._accountIds = value.accountIds;
+      this._resourceArns = value.resourceArns;
+      this._resourceTypes = value.resourceTypes;
+    }
+  }
+
+  // account_ids - computed: false, optional: true, required: false
+  private _accountIds?: string[]; 
+  public get accountIds() {
+    return this.getListAttribute('account_ids');
+  }
+  public set accountIds(value: string[]) {
+    this._accountIds = value;
+  }
+  public resetAccountIds() {
+    this._accountIds = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get accountIdsInput() {
+    return this._accountIds;
+  }
+
+  // resource_arns - computed: false, optional: true, required: false
+  private _resourceArns?: string[]; 
+  public get resourceArns() {
+    return this.getListAttribute('resource_arns');
+  }
+  public set resourceArns(value: string[]) {
+    this._resourceArns = value;
+  }
+  public resetResourceArns() {
+    this._resourceArns = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get resourceArnsInput() {
+    return this._resourceArns;
+  }
+
+  // resource_types - computed: false, optional: true, required: false
+  private _resourceTypes?: string[]; 
+  public get resourceTypes() {
+    return this.getListAttribute('resource_types');
+  }
+  public set resourceTypes(value: string[]) {
+    this._resourceTypes = value;
+  }
+  public resetResourceTypes() {
+    this._resourceTypes = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get resourceTypesInput() {
+    return this._resourceTypes;
+  }
+}
+
+export class AccessanalyzerAnalyzerConfigurationInternalAccessAnalysisRuleInclusionList extends cdktf.ComplexList {
+  public internalValue? : AccessanalyzerAnalyzerConfigurationInternalAccessAnalysisRuleInclusion[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): AccessanalyzerAnalyzerConfigurationInternalAccessAnalysisRuleInclusionOutputReference {
+    return new AccessanalyzerAnalyzerConfigurationInternalAccessAnalysisRuleInclusionOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface AccessanalyzerAnalyzerConfigurationInternalAccessAnalysisRule {
+  /**
+  * inclusion block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/accessanalyzer_analyzer#inclusion AccessanalyzerAnalyzer#inclusion}
+  */
+  readonly inclusion?: AccessanalyzerAnalyzerConfigurationInternalAccessAnalysisRuleInclusion[] | cdktf.IResolvable;
+}
+
+export function accessanalyzerAnalyzerConfigurationInternalAccessAnalysisRuleToTerraform(struct?: AccessanalyzerAnalyzerConfigurationInternalAccessAnalysisRuleOutputReference | AccessanalyzerAnalyzerConfigurationInternalAccessAnalysisRule): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    inclusion: cdktf.listMapper(accessanalyzerAnalyzerConfigurationInternalAccessAnalysisRuleInclusionToTerraform, true)(struct!.inclusion),
+  }
+}
+
+
+export function accessanalyzerAnalyzerConfigurationInternalAccessAnalysisRuleToHclTerraform(struct?: AccessanalyzerAnalyzerConfigurationInternalAccessAnalysisRuleOutputReference | AccessanalyzerAnalyzerConfigurationInternalAccessAnalysisRule): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    inclusion: {
+      value: cdktf.listMapperHcl(accessanalyzerAnalyzerConfigurationInternalAccessAnalysisRuleInclusionToHclTerraform, true)(struct!.inclusion),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AccessanalyzerAnalyzerConfigurationInternalAccessAnalysisRuleInclusionList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class AccessanalyzerAnalyzerConfigurationInternalAccessAnalysisRuleOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): AccessanalyzerAnalyzerConfigurationInternalAccessAnalysisRule | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._inclusion?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.inclusion = this._inclusion?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AccessanalyzerAnalyzerConfigurationInternalAccessAnalysisRule | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._inclusion.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._inclusion.internalValue = value.inclusion;
+    }
+  }
+
+  // inclusion - computed: false, optional: true, required: false
+  private _inclusion = new AccessanalyzerAnalyzerConfigurationInternalAccessAnalysisRuleInclusionList(this, "inclusion", false);
+  public get inclusion() {
+    return this._inclusion;
+  }
+  public putInclusion(value: AccessanalyzerAnalyzerConfigurationInternalAccessAnalysisRuleInclusion[] | cdktf.IResolvable) {
+    this._inclusion.internalValue = value;
+  }
+  public resetInclusion() {
+    this._inclusion.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get inclusionInput() {
+    return this._inclusion.internalValue;
+  }
+}
+export interface AccessanalyzerAnalyzerConfigurationInternalAccess {
+  /**
+  * analysis_rule block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/accessanalyzer_analyzer#analysis_rule AccessanalyzerAnalyzer#analysis_rule}
+  */
+  readonly analysisRule?: AccessanalyzerAnalyzerConfigurationInternalAccessAnalysisRule;
+}
+
+export function accessanalyzerAnalyzerConfigurationInternalAccessToTerraform(struct?: AccessanalyzerAnalyzerConfigurationInternalAccessOutputReference | AccessanalyzerAnalyzerConfigurationInternalAccess): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    analysis_rule: accessanalyzerAnalyzerConfigurationInternalAccessAnalysisRuleToTerraform(struct!.analysisRule),
+  }
+}
+
+
+export function accessanalyzerAnalyzerConfigurationInternalAccessToHclTerraform(struct?: AccessanalyzerAnalyzerConfigurationInternalAccessOutputReference | AccessanalyzerAnalyzerConfigurationInternalAccess): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    analysis_rule: {
+      value: accessanalyzerAnalyzerConfigurationInternalAccessAnalysisRuleToHclTerraform(struct!.analysisRule),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AccessanalyzerAnalyzerConfigurationInternalAccessAnalysisRuleList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class AccessanalyzerAnalyzerConfigurationInternalAccessOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): AccessanalyzerAnalyzerConfigurationInternalAccess | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._analysisRule?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.analysisRule = this._analysisRule?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AccessanalyzerAnalyzerConfigurationInternalAccess | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._analysisRule.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._analysisRule.internalValue = value.analysisRule;
+    }
+  }
+
+  // analysis_rule - computed: false, optional: true, required: false
+  private _analysisRule = new AccessanalyzerAnalyzerConfigurationInternalAccessAnalysisRuleOutputReference(this, "analysis_rule");
+  public get analysisRule() {
+    return this._analysisRule;
+  }
+  public putAnalysisRule(value: AccessanalyzerAnalyzerConfigurationInternalAccessAnalysisRule) {
+    this._analysisRule.internalValue = value;
+  }
+  public resetAnalysisRule() {
+    this._analysisRule.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get analysisRuleInput() {
+    return this._analysisRule.internalValue;
+  }
+}
+export interface AccessanalyzerAnalyzerConfigurationUnusedAccessAnalysisRuleExclusion {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/accessanalyzer_analyzer#account_ids AccessanalyzerAnalyzer#account_ids}
+  */
+  readonly accountIds?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/accessanalyzer_analyzer#resource_tags AccessanalyzerAnalyzer#resource_tags}
   */
   readonly resourceTags?: { [key: string]: string }[] | cdktf.IResolvable;
 }
@@ -201,7 +555,7 @@ export interface AccessanalyzerAnalyzerConfigurationUnusedAccessAnalysisRule {
   /**
   * exclusion block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/accessanalyzer_analyzer#exclusion AccessanalyzerAnalyzer#exclusion}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/accessanalyzer_analyzer#exclusion AccessanalyzerAnalyzer#exclusion}
   */
   readonly exclusion?: AccessanalyzerAnalyzerConfigurationUnusedAccessAnalysisRuleExclusion[] | cdktf.IResolvable;
 }
@@ -285,13 +639,13 @@ export class AccessanalyzerAnalyzerConfigurationUnusedAccessAnalysisRuleOutputRe
 }
 export interface AccessanalyzerAnalyzerConfigurationUnusedAccess {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/accessanalyzer_analyzer#unused_access_age AccessanalyzerAnalyzer#unused_access_age}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/accessanalyzer_analyzer#unused_access_age AccessanalyzerAnalyzer#unused_access_age}
   */
   readonly unusedAccessAge?: number;
   /**
   * analysis_rule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/accessanalyzer_analyzer#analysis_rule AccessanalyzerAnalyzer#analysis_rule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/accessanalyzer_analyzer#analysis_rule AccessanalyzerAnalyzer#analysis_rule}
   */
   readonly analysisRule?: AccessanalyzerAnalyzerConfigurationUnusedAccessAnalysisRule;
 }
@@ -404,9 +758,15 @@ export class AccessanalyzerAnalyzerConfigurationUnusedAccessOutputReference exte
 }
 export interface AccessanalyzerAnalyzerConfiguration {
   /**
+  * internal_access block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/accessanalyzer_analyzer#internal_access AccessanalyzerAnalyzer#internal_access}
+  */
+  readonly internalAccess?: AccessanalyzerAnalyzerConfigurationInternalAccess;
+  /**
   * unused_access block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/accessanalyzer_analyzer#unused_access AccessanalyzerAnalyzer#unused_access}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/accessanalyzer_analyzer#unused_access AccessanalyzerAnalyzer#unused_access}
   */
   readonly unusedAccess?: AccessanalyzerAnalyzerConfigurationUnusedAccess;
 }
@@ -417,6 +777,7 @@ export function accessanalyzerAnalyzerConfigurationToTerraform(struct?: Accessan
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
+    internal_access: accessanalyzerAnalyzerConfigurationInternalAccessToTerraform(struct!.internalAccess),
     unused_access: accessanalyzerAnalyzerConfigurationUnusedAccessToTerraform(struct!.unusedAccess),
   }
 }
@@ -428,6 +789,12 @@ export function accessanalyzerAnalyzerConfigurationToHclTerraform(struct?: Acces
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
+    internal_access: {
+      value: accessanalyzerAnalyzerConfigurationInternalAccessToHclTerraform(struct!.internalAccess),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AccessanalyzerAnalyzerConfigurationInternalAccessList",
+    },
     unused_access: {
       value: accessanalyzerAnalyzerConfigurationUnusedAccessToHclTerraform(struct!.unusedAccess),
       isBlock: true,
@@ -454,6 +821,10 @@ export class AccessanalyzerAnalyzerConfigurationOutputReference extends cdktf.Co
   public get internalValue(): AccessanalyzerAnalyzerConfiguration | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
+    if (this._internalAccess?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.internalAccess = this._internalAccess?.internalValue;
+    }
     if (this._unusedAccess?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.unusedAccess = this._unusedAccess?.internalValue;
@@ -464,12 +835,30 @@ export class AccessanalyzerAnalyzerConfigurationOutputReference extends cdktf.Co
   public set internalValue(value: AccessanalyzerAnalyzerConfiguration | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this._internalAccess.internalValue = undefined;
       this._unusedAccess.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this._internalAccess.internalValue = value.internalAccess;
       this._unusedAccess.internalValue = value.unusedAccess;
     }
+  }
+
+  // internal_access - computed: false, optional: true, required: false
+  private _internalAccess = new AccessanalyzerAnalyzerConfigurationInternalAccessOutputReference(this, "internal_access");
+  public get internalAccess() {
+    return this._internalAccess;
+  }
+  public putInternalAccess(value: AccessanalyzerAnalyzerConfigurationInternalAccess) {
+    this._internalAccess.internalValue = value;
+  }
+  public resetInternalAccess() {
+    this._internalAccess.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get internalAccessInput() {
+    return this._internalAccess.internalValue;
   }
 
   // unused_access - computed: false, optional: true, required: false
@@ -490,7 +879,7 @@ export class AccessanalyzerAnalyzerConfigurationOutputReference extends cdktf.Co
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/accessanalyzer_analyzer aws_accessanalyzer_analyzer}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/accessanalyzer_analyzer aws_accessanalyzer_analyzer}
 */
 export class AccessanalyzerAnalyzer extends cdktf.TerraformResource {
 
@@ -506,7 +895,7 @@ export class AccessanalyzerAnalyzer extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a AccessanalyzerAnalyzer resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AccessanalyzerAnalyzer to import
-  * @param importFromId The id of the existing AccessanalyzerAnalyzer that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/accessanalyzer_analyzer#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing AccessanalyzerAnalyzer that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/accessanalyzer_analyzer#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AccessanalyzerAnalyzer to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -518,7 +907,7 @@ export class AccessanalyzerAnalyzer extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/accessanalyzer_analyzer aws_accessanalyzer_analyzer} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/accessanalyzer_analyzer aws_accessanalyzer_analyzer} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -529,7 +918,7 @@ export class AccessanalyzerAnalyzer extends cdktf.TerraformResource {
       terraformResourceType: 'aws_accessanalyzer_analyzer',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.0.0',
+        providerVersion: '6.2.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
