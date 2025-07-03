@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3tables_table
+// https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/s3tables_table
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,43 +13,49 @@ import * as cdktf from 'cdktf';
 
 export interface S3TablesTableConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3tables_table#encryption_configuration S3TablesTable#encryption_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/s3tables_table#encryption_configuration S3TablesTable#encryption_configuration}
   */
   readonly encryptionConfiguration?: S3TablesTableEncryptionConfiguration;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3tables_table#format S3TablesTable#format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/s3tables_table#format S3TablesTable#format}
   */
   readonly format: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3tables_table#maintenance_configuration S3TablesTable#maintenance_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/s3tables_table#maintenance_configuration S3TablesTable#maintenance_configuration}
   */
   readonly maintenanceConfiguration?: S3TablesTableMaintenanceConfiguration;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3tables_table#name S3TablesTable#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/s3tables_table#name S3TablesTable#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3tables_table#namespace S3TablesTable#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/s3tables_table#namespace S3TablesTable#namespace}
   */
   readonly namespace: string;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3tables_table#region S3TablesTable#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/s3tables_table#region S3TablesTable#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3tables_table#table_bucket_arn S3TablesTable#table_bucket_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/s3tables_table#table_bucket_arn S3TablesTable#table_bucket_arn}
   */
   readonly tableBucketArn: string;
+  /**
+  * metadata block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/s3tables_table#metadata S3TablesTable#metadata}
+  */
+  readonly metadata?: S3TablesTableMetadata[] | cdktf.IResolvable;
 }
 export interface S3TablesTableEncryptionConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3tables_table#kms_key_arn S3TablesTable#kms_key_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/s3tables_table#kms_key_arn S3TablesTable#kms_key_arn}
   */
   readonly kmsKeyArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3tables_table#sse_algorithm S3TablesTable#sse_algorithm}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/s3tables_table#sse_algorithm S3TablesTable#sse_algorithm}
   */
   readonly sseAlgorithm?: string;
 }
@@ -172,7 +178,7 @@ export class S3TablesTableEncryptionConfigurationOutputReference extends cdktf.C
 }
 export interface S3TablesTableMaintenanceConfigurationIcebergCompactionSettings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3tables_table#target_file_size_mb S3TablesTable#target_file_size_mb}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/s3tables_table#target_file_size_mb S3TablesTable#target_file_size_mb}
   */
   readonly targetFileSizeMb?: number;
 }
@@ -266,11 +272,11 @@ export class S3TablesTableMaintenanceConfigurationIcebergCompactionSettingsOutpu
 }
 export interface S3TablesTableMaintenanceConfigurationIcebergCompaction {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3tables_table#settings S3TablesTable#settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/s3tables_table#settings S3TablesTable#settings}
   */
   readonly settings?: S3TablesTableMaintenanceConfigurationIcebergCompactionSettings;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3tables_table#status S3TablesTable#status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/s3tables_table#status S3TablesTable#status}
   */
   readonly status?: string;
 }
@@ -393,11 +399,11 @@ export class S3TablesTableMaintenanceConfigurationIcebergCompactionOutputReferen
 }
 export interface S3TablesTableMaintenanceConfigurationIcebergSnapshotManagementSettings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3tables_table#max_snapshot_age_hours S3TablesTable#max_snapshot_age_hours}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/s3tables_table#max_snapshot_age_hours S3TablesTable#max_snapshot_age_hours}
   */
   readonly maxSnapshotAgeHours?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3tables_table#min_snapshots_to_keep S3TablesTable#min_snapshots_to_keep}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/s3tables_table#min_snapshots_to_keep S3TablesTable#min_snapshots_to_keep}
   */
   readonly minSnapshotsToKeep?: number;
 }
@@ -520,11 +526,11 @@ export class S3TablesTableMaintenanceConfigurationIcebergSnapshotManagementSetti
 }
 export interface S3TablesTableMaintenanceConfigurationIcebergSnapshotManagement {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3tables_table#settings S3TablesTable#settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/s3tables_table#settings S3TablesTable#settings}
   */
   readonly settings?: S3TablesTableMaintenanceConfigurationIcebergSnapshotManagementSettings;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3tables_table#status S3TablesTable#status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/s3tables_table#status S3TablesTable#status}
   */
   readonly status?: string;
 }
@@ -647,11 +653,11 @@ export class S3TablesTableMaintenanceConfigurationIcebergSnapshotManagementOutpu
 }
 export interface S3TablesTableMaintenanceConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3tables_table#iceberg_compaction S3TablesTable#iceberg_compaction}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/s3tables_table#iceberg_compaction S3TablesTable#iceberg_compaction}
   */
   readonly icebergCompaction?: S3TablesTableMaintenanceConfigurationIcebergCompaction;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3tables_table#iceberg_snapshot_management S3TablesTable#iceberg_snapshot_management}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/s3tables_table#iceberg_snapshot_management S3TablesTable#iceberg_snapshot_management}
   */
   readonly icebergSnapshotManagement?: S3TablesTableMaintenanceConfigurationIcebergSnapshotManagement;
 }
@@ -772,9 +778,545 @@ export class S3TablesTableMaintenanceConfigurationOutputReference extends cdktf.
     return this._icebergSnapshotManagement.internalValue;
   }
 }
+export interface S3TablesTableMetadataIcebergSchemaField {
+  /**
+  * The name of the field.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/s3tables_table#name S3TablesTable#name}
+  */
+  readonly name: string;
+  /**
+  * A Boolean value that specifies whether values are required for each row in this field. Default: false.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/s3tables_table#required S3TablesTable#required}
+  */
+  readonly required?: boolean | cdktf.IResolvable;
+  /**
+  * The field type. S3 Tables supports all Apache Iceberg primitive types.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/s3tables_table#type S3TablesTable#type}
+  */
+  readonly type: string;
+}
+
+export function s3TablesTableMetadataIcebergSchemaFieldToTerraform(struct?: S3TablesTableMetadataIcebergSchemaField | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    name: cdktf.stringToTerraform(struct!.name),
+    required: cdktf.booleanToTerraform(struct!.required),
+    type: cdktf.stringToTerraform(struct!.type),
+  }
+}
+
+
+export function s3TablesTableMetadataIcebergSchemaFieldToHclTerraform(struct?: S3TablesTableMetadataIcebergSchemaField | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    required: {
+      value: cdktf.booleanToHclTerraform(struct!.required),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class S3TablesTableMetadataIcebergSchemaFieldOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): S3TablesTableMetadataIcebergSchemaField | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._required !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.required = this._required;
+    }
+    if (this._type !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.type = this._type;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: S3TablesTableMetadataIcebergSchemaField | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._name = undefined;
+      this._required = undefined;
+      this._type = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._name = value.name;
+      this._required = value.required;
+      this._type = value.type;
+    }
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // required - computed: true, optional: true, required: false
+  private _required?: boolean | cdktf.IResolvable; 
+  public get required() {
+    return this.getBooleanAttribute('required');
+  }
+  public set required(value: boolean | cdktf.IResolvable) {
+    this._required = value;
+  }
+  public resetRequired() {
+    this._required = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get requiredInput() {
+    return this._required;
+  }
+
+  // type - computed: false, optional: false, required: true
+  private _type?: string; 
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+  public set type(value: string) {
+    this._type = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get typeInput() {
+    return this._type;
+  }
+}
+
+export class S3TablesTableMetadataIcebergSchemaFieldList extends cdktf.ComplexList {
+  public internalValue? : S3TablesTableMetadataIcebergSchemaField[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): S3TablesTableMetadataIcebergSchemaFieldOutputReference {
+    return new S3TablesTableMetadataIcebergSchemaFieldOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface S3TablesTableMetadataIcebergSchema {
+  /**
+  * field block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/s3tables_table#field S3TablesTable#field}
+  */
+  readonly field?: S3TablesTableMetadataIcebergSchemaField[] | cdktf.IResolvable;
+}
+
+export function s3TablesTableMetadataIcebergSchemaToTerraform(struct?: S3TablesTableMetadataIcebergSchema | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    field: cdktf.listMapper(s3TablesTableMetadataIcebergSchemaFieldToTerraform, true)(struct!.field),
+  }
+}
+
+
+export function s3TablesTableMetadataIcebergSchemaToHclTerraform(struct?: S3TablesTableMetadataIcebergSchema | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    field: {
+      value: cdktf.listMapperHcl(s3TablesTableMetadataIcebergSchemaFieldToHclTerraform, true)(struct!.field),
+      isBlock: true,
+      type: "list",
+      storageClassType: "S3TablesTableMetadataIcebergSchemaFieldList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class S3TablesTableMetadataIcebergSchemaOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): S3TablesTableMetadataIcebergSchema | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._field?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.field = this._field?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: S3TablesTableMetadataIcebergSchema | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._field.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._field.internalValue = value.field;
+    }
+  }
+
+  // field - computed: false, optional: true, required: false
+  private _field = new S3TablesTableMetadataIcebergSchemaFieldList(this, "field", false);
+  public get field() {
+    return this._field;
+  }
+  public putField(value: S3TablesTableMetadataIcebergSchemaField[] | cdktf.IResolvable) {
+    this._field.internalValue = value;
+  }
+  public resetField() {
+    this._field.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get fieldInput() {
+    return this._field.internalValue;
+  }
+}
+
+export class S3TablesTableMetadataIcebergSchemaList extends cdktf.ComplexList {
+  public internalValue? : S3TablesTableMetadataIcebergSchema[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): S3TablesTableMetadataIcebergSchemaOutputReference {
+    return new S3TablesTableMetadataIcebergSchemaOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface S3TablesTableMetadataIceberg {
+  /**
+  * schema block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/s3tables_table#schema S3TablesTable#schema}
+  */
+  readonly schema?: S3TablesTableMetadataIcebergSchema[] | cdktf.IResolvable;
+}
+
+export function s3TablesTableMetadataIcebergToTerraform(struct?: S3TablesTableMetadataIceberg | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    schema: cdktf.listMapper(s3TablesTableMetadataIcebergSchemaToTerraform, true)(struct!.schema),
+  }
+}
+
+
+export function s3TablesTableMetadataIcebergToHclTerraform(struct?: S3TablesTableMetadataIceberg | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    schema: {
+      value: cdktf.listMapperHcl(s3TablesTableMetadataIcebergSchemaToHclTerraform, true)(struct!.schema),
+      isBlock: true,
+      type: "list",
+      storageClassType: "S3TablesTableMetadataIcebergSchemaList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class S3TablesTableMetadataIcebergOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): S3TablesTableMetadataIceberg | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._schema?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.schema = this._schema?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: S3TablesTableMetadataIceberg | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._schema.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._schema.internalValue = value.schema;
+    }
+  }
+
+  // schema - computed: false, optional: true, required: false
+  private _schema = new S3TablesTableMetadataIcebergSchemaList(this, "schema", false);
+  public get schema() {
+    return this._schema;
+  }
+  public putSchema(value: S3TablesTableMetadataIcebergSchema[] | cdktf.IResolvable) {
+    this._schema.internalValue = value;
+  }
+  public resetSchema() {
+    this._schema.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get schemaInput() {
+    return this._schema.internalValue;
+  }
+}
+
+export class S3TablesTableMetadataIcebergList extends cdktf.ComplexList {
+  public internalValue? : S3TablesTableMetadataIceberg[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): S3TablesTableMetadataIcebergOutputReference {
+    return new S3TablesTableMetadataIcebergOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface S3TablesTableMetadata {
+  /**
+  * iceberg block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/s3tables_table#iceberg S3TablesTable#iceberg}
+  */
+  readonly iceberg?: S3TablesTableMetadataIceberg[] | cdktf.IResolvable;
+}
+
+export function s3TablesTableMetadataToTerraform(struct?: S3TablesTableMetadata | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    iceberg: cdktf.listMapper(s3TablesTableMetadataIcebergToTerraform, true)(struct!.iceberg),
+  }
+}
+
+
+export function s3TablesTableMetadataToHclTerraform(struct?: S3TablesTableMetadata | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    iceberg: {
+      value: cdktf.listMapperHcl(s3TablesTableMetadataIcebergToHclTerraform, true)(struct!.iceberg),
+      isBlock: true,
+      type: "list",
+      storageClassType: "S3TablesTableMetadataIcebergList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class S3TablesTableMetadataOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): S3TablesTableMetadata | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._iceberg?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.iceberg = this._iceberg?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: S3TablesTableMetadata | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._iceberg.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._iceberg.internalValue = value.iceberg;
+    }
+  }
+
+  // iceberg - computed: false, optional: true, required: false
+  private _iceberg = new S3TablesTableMetadataIcebergList(this, "iceberg", false);
+  public get iceberg() {
+    return this._iceberg;
+  }
+  public putIceberg(value: S3TablesTableMetadataIceberg[] | cdktf.IResolvable) {
+    this._iceberg.internalValue = value;
+  }
+  public resetIceberg() {
+    this._iceberg.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get icebergInput() {
+    return this._iceberg.internalValue;
+  }
+}
+
+export class S3TablesTableMetadataList extends cdktf.ComplexList {
+  public internalValue? : S3TablesTableMetadata[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): S3TablesTableMetadataOutputReference {
+    return new S3TablesTableMetadataOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3tables_table aws_s3tables_table}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/s3tables_table aws_s3tables_table}
 */
 export class S3TablesTable extends cdktf.TerraformResource {
 
@@ -790,7 +1332,7 @@ export class S3TablesTable extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a S3TablesTable resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the S3TablesTable to import
-  * @param importFromId The id of the existing S3TablesTable that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3tables_table#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing S3TablesTable that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/s3tables_table#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the S3TablesTable to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -802,7 +1344,7 @@ export class S3TablesTable extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3tables_table aws_s3tables_table} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/s3tables_table aws_s3tables_table} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -813,7 +1355,7 @@ export class S3TablesTable extends cdktf.TerraformResource {
       terraformResourceType: 'aws_s3tables_table',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.0.0',
+        providerVersion: '6.2.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
@@ -831,6 +1373,7 @@ export class S3TablesTable extends cdktf.TerraformResource {
     this._namespace = config.namespace;
     this._region = config.region;
     this._tableBucketArn = config.tableBucketArn;
+    this._metadata.internalValue = config.metadata;
   }
 
   // ==========
@@ -987,6 +1530,22 @@ export class S3TablesTable extends cdktf.TerraformResource {
     return this.getStringAttribute('warehouse_location');
   }
 
+  // metadata - computed: false, optional: true, required: false
+  private _metadata = new S3TablesTableMetadataList(this, "metadata", false);
+  public get metadata() {
+    return this._metadata;
+  }
+  public putMetadata(value: S3TablesTableMetadata[] | cdktf.IResolvable) {
+    this._metadata.internalValue = value;
+  }
+  public resetMetadata() {
+    this._metadata.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get metadataInput() {
+    return this._metadata.internalValue;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -1000,6 +1559,7 @@ export class S3TablesTable extends cdktf.TerraformResource {
       namespace: cdktf.stringToTerraform(this._namespace),
       region: cdktf.stringToTerraform(this._region),
       table_bucket_arn: cdktf.stringToTerraform(this._tableBucketArn),
+      metadata: cdktf.listMapper(s3TablesTableMetadataToTerraform, true)(this._metadata.internalValue),
     };
   }
 
@@ -1046,6 +1606,12 @@ export class S3TablesTable extends cdktf.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      metadata: {
+        value: cdktf.listMapperHcl(s3TablesTableMetadataToHclTerraform, true)(this._metadata.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "S3TablesTableMetadataList",
       },
     };
 
