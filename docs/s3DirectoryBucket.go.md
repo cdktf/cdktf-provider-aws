@@ -4,7 +4,7 @@
 
 ### S3DirectoryBucket <a name="S3DirectoryBucket" id="@cdktf/provider-aws.s3DirectoryBucket.S3DirectoryBucket"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3_directory_bucket aws_s3_directory_bucket}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/s3_directory_bucket aws_s3_directory_bucket}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.s3DirectoryBucket.S3DirectoryBucket.Initializer"></a>
 
@@ -78,6 +78,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.s3DirectoryBucket.S3DirectoryBucket.resetForceDestroy">ResetForceDestroy</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.s3DirectoryBucket.S3DirectoryBucket.resetLocation">ResetLocation</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.s3DirectoryBucket.S3DirectoryBucket.resetRegion">ResetRegion</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.s3DirectoryBucket.S3DirectoryBucket.resetTags">ResetTags</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.s3DirectoryBucket.S3DirectoryBucket.resetType">ResetType</a></code> | *No description.* |
 
 ---
@@ -406,6 +407,12 @@ func ResetLocation()
 func ResetRegion()
 ```
 
+##### `ResetTags` <a name="ResetTags" id="@cdktf/provider-aws.s3DirectoryBucket.S3DirectoryBucket.resetTags"></a>
+
+```go
+func ResetTags()
+```
+
 ##### `ResetType` <a name="ResetType" id="@cdktf/provider-aws.s3DirectoryBucket.S3DirectoryBucket.resetType"></a>
 
 ```go
@@ -515,7 +522,7 @@ The construct id used in the generated config for the S3DirectoryBucket to impor
 
 The id of the existing S3DirectoryBucket that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3_directory_bucket#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/s3_directory_bucket#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -548,16 +555,19 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/
 | <code><a href="#@cdktf/provider-aws.s3DirectoryBucket.S3DirectoryBucket.property.arn">Arn</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.s3DirectoryBucket.S3DirectoryBucket.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.s3DirectoryBucket.S3DirectoryBucket.property.location">Location</a></code> | <code><a href="#@cdktf/provider-aws.s3DirectoryBucket.S3DirectoryBucketLocationList">S3DirectoryBucketLocationList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.s3DirectoryBucket.S3DirectoryBucket.property.tagsAll">TagsAll</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.StringMap</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.s3DirectoryBucket.S3DirectoryBucket.property.bucketInput">BucketInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.s3DirectoryBucket.S3DirectoryBucket.property.dataRedundancyInput">DataRedundancyInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.s3DirectoryBucket.S3DirectoryBucket.property.forceDestroyInput">ForceDestroyInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.s3DirectoryBucket.S3DirectoryBucket.property.locationInput">LocationInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.s3DirectoryBucket.S3DirectoryBucket.property.regionInput">RegionInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.s3DirectoryBucket.S3DirectoryBucket.property.tagsInput">TagsInput</a></code> | <code>*map[string]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.s3DirectoryBucket.S3DirectoryBucket.property.typeInput">TypeInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.s3DirectoryBucket.S3DirectoryBucket.property.bucket">Bucket</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.s3DirectoryBucket.S3DirectoryBucket.property.dataRedundancy">DataRedundancy</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.s3DirectoryBucket.S3DirectoryBucket.property.forceDestroy">ForceDestroy</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.s3DirectoryBucket.S3DirectoryBucket.property.region">Region</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.s3DirectoryBucket.S3DirectoryBucket.property.tags">Tags</a></code> | <code>*map[string]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.s3DirectoryBucket.S3DirectoryBucket.property.type">Type</a></code> | <code>*string</code> | *No description.* |
 
 ---
@@ -734,6 +744,16 @@ func Location() S3DirectoryBucketLocationList
 
 ---
 
+##### `TagsAll`<sup>Required</sup> <a name="TagsAll" id="@cdktf/provider-aws.s3DirectoryBucket.S3DirectoryBucket.property.tagsAll"></a>
+
+```go
+func TagsAll() StringMap
+```
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.StringMap
+
+---
+
 ##### `BucketInput`<sup>Optional</sup> <a name="BucketInput" id="@cdktf/provider-aws.s3DirectoryBucket.S3DirectoryBucket.property.bucketInput"></a>
 
 ```go
@@ -781,6 +801,16 @@ func RegionInput() *string
 ```
 
 - *Type:* *string
+
+---
+
+##### `TagsInput`<sup>Optional</sup> <a name="TagsInput" id="@cdktf/provider-aws.s3DirectoryBucket.S3DirectoryBucket.property.tagsInput"></a>
+
+```go
+func TagsInput() *map[string]*string
+```
+
+- *Type:* *map[string]*string
 
 ---
 
@@ -834,6 +864,16 @@ func Region() *string
 
 ---
 
+##### `Tags`<sup>Required</sup> <a name="Tags" id="@cdktf/provider-aws.s3DirectoryBucket.S3DirectoryBucket.property.tags"></a>
+
+```go
+func Tags() *map[string]*string
+```
+
+- *Type:* *map[string]*string
+
+---
+
 ##### `Type`<sup>Required</sup> <a name="Type" id="@cdktf/provider-aws.s3DirectoryBucket.S3DirectoryBucket.property.type"></a>
 
 ```go
@@ -884,6 +924,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/s3directorybucket"
 	ForceDestroy: interface{},
 	Location: interface{},
 	Region: *string,
+	Tags: *map[string]*string,
 	Type: *string,
 }
 ```
@@ -899,12 +940,13 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/s3directorybucket"
 | <code><a href="#@cdktf/provider-aws.s3DirectoryBucket.S3DirectoryBucketConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.s3DirectoryBucket.S3DirectoryBucketConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.s3DirectoryBucket.S3DirectoryBucketConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3DirectoryBucket.S3DirectoryBucketConfig.property.bucket">Bucket</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3_directory_bucket#bucket S3DirectoryBucket#bucket}. |
-| <code><a href="#@cdktf/provider-aws.s3DirectoryBucket.S3DirectoryBucketConfig.property.dataRedundancy">DataRedundancy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3_directory_bucket#data_redundancy S3DirectoryBucket#data_redundancy}. |
-| <code><a href="#@cdktf/provider-aws.s3DirectoryBucket.S3DirectoryBucketConfig.property.forceDestroy">ForceDestroy</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3_directory_bucket#force_destroy S3DirectoryBucket#force_destroy}. |
+| <code><a href="#@cdktf/provider-aws.s3DirectoryBucket.S3DirectoryBucketConfig.property.bucket">Bucket</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/s3_directory_bucket#bucket S3DirectoryBucket#bucket}. |
+| <code><a href="#@cdktf/provider-aws.s3DirectoryBucket.S3DirectoryBucketConfig.property.dataRedundancy">DataRedundancy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/s3_directory_bucket#data_redundancy S3DirectoryBucket#data_redundancy}. |
+| <code><a href="#@cdktf/provider-aws.s3DirectoryBucket.S3DirectoryBucketConfig.property.forceDestroy">ForceDestroy</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/s3_directory_bucket#force_destroy S3DirectoryBucket#force_destroy}. |
 | <code><a href="#@cdktf/provider-aws.s3DirectoryBucket.S3DirectoryBucketConfig.property.location">Location</a></code> | <code>interface{}</code> | location block. |
 | <code><a href="#@cdktf/provider-aws.s3DirectoryBucket.S3DirectoryBucketConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktf/provider-aws.s3DirectoryBucket.S3DirectoryBucketConfig.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3_directory_bucket#type S3DirectoryBucket#type}. |
+| <code><a href="#@cdktf/provider-aws.s3DirectoryBucket.S3DirectoryBucketConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/s3_directory_bucket#tags S3DirectoryBucket#tags}. |
+| <code><a href="#@cdktf/provider-aws.s3DirectoryBucket.S3DirectoryBucketConfig.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/s3_directory_bucket#type S3DirectoryBucket#type}. |
 
 ---
 
@@ -986,7 +1028,7 @@ Bucket *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3_directory_bucket#bucket S3DirectoryBucket#bucket}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/s3_directory_bucket#bucket S3DirectoryBucket#bucket}.
 
 ---
 
@@ -998,7 +1040,7 @@ DataRedundancy *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3_directory_bucket#data_redundancy S3DirectoryBucket#data_redundancy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/s3_directory_bucket#data_redundancy S3DirectoryBucket#data_redundancy}.
 
 ---
 
@@ -1010,7 +1052,7 @@ ForceDestroy interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3_directory_bucket#force_destroy S3DirectoryBucket#force_destroy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/s3_directory_bucket#force_destroy S3DirectoryBucket#force_destroy}.
 
 ---
 
@@ -1024,7 +1066,7 @@ Location interface{}
 
 location block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3_directory_bucket#location S3DirectoryBucket#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/s3_directory_bucket#location S3DirectoryBucket#location}
 
 ---
 
@@ -1038,7 +1080,19 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3_directory_bucket#region S3DirectoryBucket#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/s3_directory_bucket#region S3DirectoryBucket#region}
+
+---
+
+##### `Tags`<sup>Optional</sup> <a name="Tags" id="@cdktf/provider-aws.s3DirectoryBucket.S3DirectoryBucketConfig.property.tags"></a>
+
+```go
+Tags *map[string]*string
+```
+
+- *Type:* *map[string]*string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/s3_directory_bucket#tags S3DirectoryBucket#tags}.
 
 ---
 
@@ -1050,7 +1104,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3_directory_bucket#type S3DirectoryBucket#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/s3_directory_bucket#type S3DirectoryBucket#type}.
 
 ---
 
@@ -1071,8 +1125,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/s3directorybucket"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.s3DirectoryBucket.S3DirectoryBucketLocation.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3_directory_bucket#name S3DirectoryBucket#name}. |
-| <code><a href="#@cdktf/provider-aws.s3DirectoryBucket.S3DirectoryBucketLocation.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3_directory_bucket#type S3DirectoryBucket#type}. |
+| <code><a href="#@cdktf/provider-aws.s3DirectoryBucket.S3DirectoryBucketLocation.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/s3_directory_bucket#name S3DirectoryBucket#name}. |
+| <code><a href="#@cdktf/provider-aws.s3DirectoryBucket.S3DirectoryBucketLocation.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/s3_directory_bucket#type S3DirectoryBucket#type}. |
 
 ---
 
@@ -1084,7 +1138,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3_directory_bucket#name S3DirectoryBucket#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/s3_directory_bucket#name S3DirectoryBucket#name}.
 
 ---
 
@@ -1096,7 +1150,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3_directory_bucket#type S3DirectoryBucket#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/s3_directory_bucket#type S3DirectoryBucket#type}.
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### DataAwsEcrRepositories <a name="DataAwsEcrRepositories" id="@cdktf/provider-aws.dataAwsEcrRepositories.DataAwsEcrRepositories"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ecr_repositories aws_ecr_repositories}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/data-sources/ecr_repositories aws_ecr_repositories}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEcrRepositories.DataAwsEcrRepositories.Initializer"></a>
 
@@ -372,7 +372,7 @@ The construct id used in the generated config for the DataAwsEcrRepositories to 
 
 The id of the existing DataAwsEcrRepositories that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ecr_repositories#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/data-sources/ecr_repositories#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -703,7 +703,7 @@ public string Region { get; set; }
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ecr_repositories#region DataAwsEcrRepositories#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/data-sources/ecr_repositories#region DataAwsEcrRepositories#region}
 
 ---
 

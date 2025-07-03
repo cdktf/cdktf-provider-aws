@@ -4,7 +4,7 @@
 
 ### EmrCluster <a name="EmrCluster" id="@cdktf/provider-aws.emrCluster.EmrCluster"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster aws_emr_cluster}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster aws_emr_cluster}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.emrCluster.EmrCluster.Initializer"></a>
 
@@ -103,6 +103,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.emrCluster.EmrCluster.resetLogUri">ResetLogUri</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.emrCluster.EmrCluster.resetMasterInstanceFleet">ResetMasterInstanceFleet</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.emrCluster.EmrCluster.resetMasterInstanceGroup">ResetMasterInstanceGroup</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.emrCluster.EmrCluster.resetOsReleaseLabel">ResetOsReleaseLabel</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.emrCluster.EmrCluster.resetPlacementGroupConfig">ResetPlacementGroupConfig</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.emrCluster.EmrCluster.resetRegion">ResetRegion</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.emrCluster.EmrCluster.resetScaleDownBehavior">ResetScaleDownBehavior</a></code> | *No description.* |
@@ -645,6 +646,12 @@ private void ResetMasterInstanceFleet()
 private void ResetMasterInstanceGroup()
 ```
 
+##### `ResetOsReleaseLabel` <a name="ResetOsReleaseLabel" id="@cdktf/provider-aws.emrCluster.EmrCluster.resetOsReleaseLabel"></a>
+
+```csharp
+private void ResetOsReleaseLabel()
+```
+
 ##### `ResetPlacementGroupConfig` <a name="ResetPlacementGroupConfig" id="@cdktf/provider-aws.emrCluster.EmrCluster.resetPlacementGroupConfig"></a>
 
 ```csharp
@@ -814,7 +821,7 @@ The construct id used in the generated config for the EmrCluster to import.
 
 The id of the existing EmrCluster that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -878,6 +885,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/
 | <code><a href="#@cdktf/provider-aws.emrCluster.EmrCluster.property.masterInstanceFleetInput">MasterInstanceFleetInput</a></code> | <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceFleet">EmrClusterMasterInstanceFleet</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.emrCluster.EmrCluster.property.masterInstanceGroupInput">MasterInstanceGroupInput</a></code> | <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceGroup">EmrClusterMasterInstanceGroup</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.emrCluster.EmrCluster.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.emrCluster.EmrCluster.property.osReleaseLabelInput">OsReleaseLabelInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.emrCluster.EmrCluster.property.placementGroupConfigInput">PlacementGroupConfigInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.emrCluster.EmrCluster.property.regionInput">RegionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.emrCluster.EmrCluster.property.releaseLabelInput">ReleaseLabelInput</a></code> | <code>string</code> | *No description.* |
@@ -904,6 +912,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/
 | <code><a href="#@cdktf/provider-aws.emrCluster.EmrCluster.property.logEncryptionKmsKeyId">LogEncryptionKmsKeyId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.emrCluster.EmrCluster.property.logUri">LogUri</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.emrCluster.EmrCluster.property.name">Name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.emrCluster.EmrCluster.property.osReleaseLabel">OsReleaseLabel</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.emrCluster.EmrCluster.property.region">Region</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.emrCluster.EmrCluster.property.releaseLabel">ReleaseLabel</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.emrCluster.EmrCluster.property.scaleDownBehavior">ScaleDownBehavior</a></code> | <code>string</code> | *No description.* |
@@ -1400,6 +1409,16 @@ public string NameInput { get; }
 
 ---
 
+##### `OsReleaseLabelInput`<sup>Optional</sup> <a name="OsReleaseLabelInput" id="@cdktf/provider-aws.emrCluster.EmrCluster.property.osReleaseLabelInput"></a>
+
+```csharp
+public string OsReleaseLabelInput { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `PlacementGroupConfigInput`<sup>Optional</sup> <a name="PlacementGroupConfigInput" id="@cdktf/provider-aws.emrCluster.EmrCluster.property.placementGroupConfigInput"></a>
 
 ```csharp
@@ -1660,6 +1679,16 @@ public string Name { get; }
 
 ---
 
+##### `OsReleaseLabel`<sup>Required</sup> <a name="OsReleaseLabel" id="@cdktf/provider-aws.emrCluster.EmrCluster.property.osReleaseLabel"></a>
+
+```csharp
+public string OsReleaseLabel { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `Region`<sup>Required</sup> <a name="Region" id="@cdktf/provider-aws.emrCluster.EmrCluster.property.region"></a>
 
 ```csharp
@@ -1806,7 +1835,7 @@ new EmrClusterAutoTerminationPolicy {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterAutoTerminationPolicy.property.idleTimeout">IdleTimeout</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#idle_timeout EmrCluster#idle_timeout}. |
+| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterAutoTerminationPolicy.property.idleTimeout">IdleTimeout</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#idle_timeout EmrCluster#idle_timeout}. |
 
 ---
 
@@ -1818,7 +1847,7 @@ public double IdleTimeout { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#idle_timeout EmrCluster#idle_timeout}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#idle_timeout EmrCluster#idle_timeout}.
 
 ---
 
@@ -1840,9 +1869,9 @@ new EmrClusterBootstrapAction {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterBootstrapAction.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#name EmrCluster#name}. |
-| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterBootstrapAction.property.path">Path</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#path EmrCluster#path}. |
-| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterBootstrapAction.property.args">Args</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#args EmrCluster#args}. |
+| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterBootstrapAction.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#name EmrCluster#name}. |
+| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterBootstrapAction.property.path">Path</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#path EmrCluster#path}. |
+| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterBootstrapAction.property.args">Args</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#args EmrCluster#args}. |
 
 ---
 
@@ -1854,7 +1883,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#name EmrCluster#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#name EmrCluster#name}.
 
 ---
 
@@ -1866,7 +1895,7 @@ public string Path { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#path EmrCluster#path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#path EmrCluster#path}.
 
 ---
 
@@ -1878,7 +1907,7 @@ public string[] Args { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#args EmrCluster#args}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#args EmrCluster#args}.
 
 ---
 
@@ -1920,6 +1949,7 @@ new EmrClusterConfig {
     string LogUri = null,
     EmrClusterMasterInstanceFleet MasterInstanceFleet = null,
     EmrClusterMasterInstanceGroup MasterInstanceGroup = null,
+    string OsReleaseLabel = null,
     object PlacementGroupConfig = null,
     string Region = null,
     string ScaleDownBehavior = null,
@@ -1945,40 +1975,41 @@ new EmrClusterConfig {
 | <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#name EmrCluster#name}. |
-| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterConfig.property.releaseLabel">ReleaseLabel</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#release_label EmrCluster#release_label}. |
-| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterConfig.property.serviceRole">ServiceRole</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#service_role EmrCluster#service_role}. |
-| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterConfig.property.additionalInfo">AdditionalInfo</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#additional_info EmrCluster#additional_info}. |
-| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterConfig.property.applications">Applications</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#applications EmrCluster#applications}. |
-| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterConfig.property.autoscalingRole">AutoscalingRole</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#autoscaling_role EmrCluster#autoscaling_role}. |
+| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#name EmrCluster#name}. |
+| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterConfig.property.releaseLabel">ReleaseLabel</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#release_label EmrCluster#release_label}. |
+| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterConfig.property.serviceRole">ServiceRole</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#service_role EmrCluster#service_role}. |
+| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterConfig.property.additionalInfo">AdditionalInfo</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#additional_info EmrCluster#additional_info}. |
+| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterConfig.property.applications">Applications</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#applications EmrCluster#applications}. |
+| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterConfig.property.autoscalingRole">AutoscalingRole</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#autoscaling_role EmrCluster#autoscaling_role}. |
 | <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterConfig.property.autoTerminationPolicy">AutoTerminationPolicy</a></code> | <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterAutoTerminationPolicy">EmrClusterAutoTerminationPolicy</a></code> | auto_termination_policy block. |
 | <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterConfig.property.bootstrapAction">BootstrapAction</a></code> | <code>object</code> | bootstrap_action block. |
-| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterConfig.property.configurations">Configurations</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#configurations EmrCluster#configurations}. |
-| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterConfig.property.configurationsJson">ConfigurationsJson</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#configurations_json EmrCluster#configurations_json}. |
+| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterConfig.property.configurations">Configurations</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#configurations EmrCluster#configurations}. |
+| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterConfig.property.configurationsJson">ConfigurationsJson</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#configurations_json EmrCluster#configurations_json}. |
 | <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterConfig.property.coreInstanceFleet">CoreInstanceFleet</a></code> | <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceFleet">EmrClusterCoreInstanceFleet</a></code> | core_instance_fleet block. |
 | <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterConfig.property.coreInstanceGroup">CoreInstanceGroup</a></code> | <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceGroup">EmrClusterCoreInstanceGroup</a></code> | core_instance_group block. |
-| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterConfig.property.customAmiId">CustomAmiId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#custom_ami_id EmrCluster#custom_ami_id}. |
-| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterConfig.property.ebsRootVolumeSize">EbsRootVolumeSize</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#ebs_root_volume_size EmrCluster#ebs_root_volume_size}. |
+| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterConfig.property.customAmiId">CustomAmiId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#custom_ami_id EmrCluster#custom_ami_id}. |
+| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterConfig.property.ebsRootVolumeSize">EbsRootVolumeSize</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#ebs_root_volume_size EmrCluster#ebs_root_volume_size}. |
 | <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterConfig.property.ec2Attributes">Ec2Attributes</a></code> | <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterEc2Attributes">EmrClusterEc2Attributes</a></code> | ec2_attributes block. |
-| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#id EmrCluster#id}. |
-| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterConfig.property.keepJobFlowAliveWhenNoSteps">KeepJobFlowAliveWhenNoSteps</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#keep_job_flow_alive_when_no_steps EmrCluster#keep_job_flow_alive_when_no_steps}. |
+| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#id EmrCluster#id}. |
+| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterConfig.property.keepJobFlowAliveWhenNoSteps">KeepJobFlowAliveWhenNoSteps</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#keep_job_flow_alive_when_no_steps EmrCluster#keep_job_flow_alive_when_no_steps}. |
 | <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterConfig.property.kerberosAttributes">KerberosAttributes</a></code> | <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterKerberosAttributes">EmrClusterKerberosAttributes</a></code> | kerberos_attributes block. |
-| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterConfig.property.listStepsStates">ListStepsStates</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#list_steps_states EmrCluster#list_steps_states}. |
-| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterConfig.property.logEncryptionKmsKeyId">LogEncryptionKmsKeyId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#log_encryption_kms_key_id EmrCluster#log_encryption_kms_key_id}. |
-| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterConfig.property.logUri">LogUri</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#log_uri EmrCluster#log_uri}. |
+| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterConfig.property.listStepsStates">ListStepsStates</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#list_steps_states EmrCluster#list_steps_states}. |
+| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterConfig.property.logEncryptionKmsKeyId">LogEncryptionKmsKeyId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#log_encryption_kms_key_id EmrCluster#log_encryption_kms_key_id}. |
+| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterConfig.property.logUri">LogUri</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#log_uri EmrCluster#log_uri}. |
 | <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterConfig.property.masterInstanceFleet">MasterInstanceFleet</a></code> | <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceFleet">EmrClusterMasterInstanceFleet</a></code> | master_instance_fleet block. |
 | <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterConfig.property.masterInstanceGroup">MasterInstanceGroup</a></code> | <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceGroup">EmrClusterMasterInstanceGroup</a></code> | master_instance_group block. |
-| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterConfig.property.placementGroupConfig">PlacementGroupConfig</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#placement_group_config EmrCluster#placement_group_config}. |
+| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterConfig.property.osReleaseLabel">OsReleaseLabel</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#os_release_label EmrCluster#os_release_label}. |
+| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterConfig.property.placementGroupConfig">PlacementGroupConfig</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#placement_group_config EmrCluster#placement_group_config}. |
 | <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterConfig.property.region">Region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterConfig.property.scaleDownBehavior">ScaleDownBehavior</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#scale_down_behavior EmrCluster#scale_down_behavior}. |
-| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterConfig.property.securityConfiguration">SecurityConfiguration</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#security_configuration EmrCluster#security_configuration}. |
-| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterConfig.property.step">Step</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#step EmrCluster#step}. |
-| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterConfig.property.stepConcurrencyLevel">StepConcurrencyLevel</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#step_concurrency_level EmrCluster#step_concurrency_level}. |
-| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#tags EmrCluster#tags}. |
-| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterConfig.property.tagsAll">TagsAll</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#tags_all EmrCluster#tags_all}. |
-| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterConfig.property.terminationProtection">TerminationProtection</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#termination_protection EmrCluster#termination_protection}. |
-| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterConfig.property.unhealthyNodeReplacement">UnhealthyNodeReplacement</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#unhealthy_node_replacement EmrCluster#unhealthy_node_replacement}. |
-| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterConfig.property.visibleToAllUsers">VisibleToAllUsers</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#visible_to_all_users EmrCluster#visible_to_all_users}. |
+| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterConfig.property.scaleDownBehavior">ScaleDownBehavior</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#scale_down_behavior EmrCluster#scale_down_behavior}. |
+| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterConfig.property.securityConfiguration">SecurityConfiguration</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#security_configuration EmrCluster#security_configuration}. |
+| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterConfig.property.step">Step</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#step EmrCluster#step}. |
+| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterConfig.property.stepConcurrencyLevel">StepConcurrencyLevel</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#step_concurrency_level EmrCluster#step_concurrency_level}. |
+| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#tags EmrCluster#tags}. |
+| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterConfig.property.tagsAll">TagsAll</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#tags_all EmrCluster#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterConfig.property.terminationProtection">TerminationProtection</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#termination_protection EmrCluster#termination_protection}. |
+| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterConfig.property.unhealthyNodeReplacement">UnhealthyNodeReplacement</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#unhealthy_node_replacement EmrCluster#unhealthy_node_replacement}. |
+| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterConfig.property.visibleToAllUsers">VisibleToAllUsers</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#visible_to_all_users EmrCluster#visible_to_all_users}. |
 
 ---
 
@@ -2060,7 +2091,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#name EmrCluster#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#name EmrCluster#name}.
 
 ---
 
@@ -2072,7 +2103,7 @@ public string ReleaseLabel { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#release_label EmrCluster#release_label}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#release_label EmrCluster#release_label}.
 
 ---
 
@@ -2084,7 +2115,7 @@ public string ServiceRole { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#service_role EmrCluster#service_role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#service_role EmrCluster#service_role}.
 
 ---
 
@@ -2096,7 +2127,7 @@ public string AdditionalInfo { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#additional_info EmrCluster#additional_info}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#additional_info EmrCluster#additional_info}.
 
 ---
 
@@ -2108,7 +2139,7 @@ public string[] Applications { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#applications EmrCluster#applications}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#applications EmrCluster#applications}.
 
 ---
 
@@ -2120,7 +2151,7 @@ public string AutoscalingRole { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#autoscaling_role EmrCluster#autoscaling_role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#autoscaling_role EmrCluster#autoscaling_role}.
 
 ---
 
@@ -2134,7 +2165,7 @@ public EmrClusterAutoTerminationPolicy AutoTerminationPolicy { get; set; }
 
 auto_termination_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#auto_termination_policy EmrCluster#auto_termination_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#auto_termination_policy EmrCluster#auto_termination_policy}
 
 ---
 
@@ -2148,7 +2179,7 @@ public object BootstrapAction { get; set; }
 
 bootstrap_action block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#bootstrap_action EmrCluster#bootstrap_action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#bootstrap_action EmrCluster#bootstrap_action}
 
 ---
 
@@ -2160,7 +2191,7 @@ public string Configurations { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#configurations EmrCluster#configurations}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#configurations EmrCluster#configurations}.
 
 ---
 
@@ -2172,7 +2203,7 @@ public string ConfigurationsJson { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#configurations_json EmrCluster#configurations_json}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#configurations_json EmrCluster#configurations_json}.
 
 ---
 
@@ -2186,7 +2217,7 @@ public EmrClusterCoreInstanceFleet CoreInstanceFleet { get; set; }
 
 core_instance_fleet block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#core_instance_fleet EmrCluster#core_instance_fleet}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#core_instance_fleet EmrCluster#core_instance_fleet}
 
 ---
 
@@ -2200,7 +2231,7 @@ public EmrClusterCoreInstanceGroup CoreInstanceGroup { get; set; }
 
 core_instance_group block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#core_instance_group EmrCluster#core_instance_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#core_instance_group EmrCluster#core_instance_group}
 
 ---
 
@@ -2212,7 +2243,7 @@ public string CustomAmiId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#custom_ami_id EmrCluster#custom_ami_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#custom_ami_id EmrCluster#custom_ami_id}.
 
 ---
 
@@ -2224,7 +2255,7 @@ public double EbsRootVolumeSize { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#ebs_root_volume_size EmrCluster#ebs_root_volume_size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#ebs_root_volume_size EmrCluster#ebs_root_volume_size}.
 
 ---
 
@@ -2238,7 +2269,7 @@ public EmrClusterEc2Attributes Ec2Attributes { get; set; }
 
 ec2_attributes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#ec2_attributes EmrCluster#ec2_attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#ec2_attributes EmrCluster#ec2_attributes}
 
 ---
 
@@ -2250,7 +2281,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#id EmrCluster#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#id EmrCluster#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2265,7 +2296,7 @@ public object KeepJobFlowAliveWhenNoSteps { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#keep_job_flow_alive_when_no_steps EmrCluster#keep_job_flow_alive_when_no_steps}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#keep_job_flow_alive_when_no_steps EmrCluster#keep_job_flow_alive_when_no_steps}.
 
 ---
 
@@ -2279,7 +2310,7 @@ public EmrClusterKerberosAttributes KerberosAttributes { get; set; }
 
 kerberos_attributes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#kerberos_attributes EmrCluster#kerberos_attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#kerberos_attributes EmrCluster#kerberos_attributes}
 
 ---
 
@@ -2291,7 +2322,7 @@ public string[] ListStepsStates { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#list_steps_states EmrCluster#list_steps_states}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#list_steps_states EmrCluster#list_steps_states}.
 
 ---
 
@@ -2303,7 +2334,7 @@ public string LogEncryptionKmsKeyId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#log_encryption_kms_key_id EmrCluster#log_encryption_kms_key_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#log_encryption_kms_key_id EmrCluster#log_encryption_kms_key_id}.
 
 ---
 
@@ -2315,7 +2346,7 @@ public string LogUri { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#log_uri EmrCluster#log_uri}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#log_uri EmrCluster#log_uri}.
 
 ---
 
@@ -2329,7 +2360,7 @@ public EmrClusterMasterInstanceFleet MasterInstanceFleet { get; set; }
 
 master_instance_fleet block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#master_instance_fleet EmrCluster#master_instance_fleet}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#master_instance_fleet EmrCluster#master_instance_fleet}
 
 ---
 
@@ -2343,7 +2374,19 @@ public EmrClusterMasterInstanceGroup MasterInstanceGroup { get; set; }
 
 master_instance_group block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#master_instance_group EmrCluster#master_instance_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#master_instance_group EmrCluster#master_instance_group}
+
+---
+
+##### `OsReleaseLabel`<sup>Optional</sup> <a name="OsReleaseLabel" id="@cdktf/provider-aws.emrCluster.EmrClusterConfig.property.osReleaseLabel"></a>
+
+```csharp
+public string OsReleaseLabel { get; set; }
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#os_release_label EmrCluster#os_release_label}.
 
 ---
 
@@ -2355,7 +2398,7 @@ public object PlacementGroupConfig { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#placement_group_config EmrCluster#placement_group_config}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#placement_group_config EmrCluster#placement_group_config}.
 
 ---
 
@@ -2369,7 +2412,7 @@ public string Region { get; set; }
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#region EmrCluster#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#region EmrCluster#region}
 
 ---
 
@@ -2381,7 +2424,7 @@ public string ScaleDownBehavior { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#scale_down_behavior EmrCluster#scale_down_behavior}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#scale_down_behavior EmrCluster#scale_down_behavior}.
 
 ---
 
@@ -2393,7 +2436,7 @@ public string SecurityConfiguration { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#security_configuration EmrCluster#security_configuration}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#security_configuration EmrCluster#security_configuration}.
 
 ---
 
@@ -2405,7 +2448,7 @@ public object Step { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#step EmrCluster#step}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#step EmrCluster#step}.
 
 ---
 
@@ -2417,7 +2460,7 @@ public double StepConcurrencyLevel { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#step_concurrency_level EmrCluster#step_concurrency_level}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#step_concurrency_level EmrCluster#step_concurrency_level}.
 
 ---
 
@@ -2429,7 +2472,7 @@ public System.Collections.Generic.IDictionary<string, string> Tags { get; set; }
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#tags EmrCluster#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#tags EmrCluster#tags}.
 
 ---
 
@@ -2441,7 +2484,7 @@ public System.Collections.Generic.IDictionary<string, string> TagsAll { get; set
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#tags_all EmrCluster#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#tags_all EmrCluster#tags_all}.
 
 ---
 
@@ -2453,7 +2496,7 @@ public object TerminationProtection { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#termination_protection EmrCluster#termination_protection}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#termination_protection EmrCluster#termination_protection}.
 
 ---
 
@@ -2465,7 +2508,7 @@ public object UnhealthyNodeReplacement { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#unhealthy_node_replacement EmrCluster#unhealthy_node_replacement}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#unhealthy_node_replacement EmrCluster#unhealthy_node_replacement}.
 
 ---
 
@@ -2477,7 +2520,7 @@ public object VisibleToAllUsers { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#visible_to_all_users EmrCluster#visible_to_all_users}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#visible_to_all_users EmrCluster#visible_to_all_users}.
 
 ---
 
@@ -2503,9 +2546,9 @@ new EmrClusterCoreInstanceFleet {
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceFleet.property.instanceTypeConfigs">InstanceTypeConfigs</a></code> | <code>object</code> | instance_type_configs block. |
 | <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceFleet.property.launchSpecifications">LaunchSpecifications</a></code> | <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceFleetLaunchSpecifications">EmrClusterCoreInstanceFleetLaunchSpecifications</a></code> | launch_specifications block. |
-| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceFleet.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#name EmrCluster#name}. |
-| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceFleet.property.targetOnDemandCapacity">TargetOnDemandCapacity</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#target_on_demand_capacity EmrCluster#target_on_demand_capacity}. |
-| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceFleet.property.targetSpotCapacity">TargetSpotCapacity</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#target_spot_capacity EmrCluster#target_spot_capacity}. |
+| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceFleet.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#name EmrCluster#name}. |
+| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceFleet.property.targetOnDemandCapacity">TargetOnDemandCapacity</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#target_on_demand_capacity EmrCluster#target_on_demand_capacity}. |
+| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceFleet.property.targetSpotCapacity">TargetSpotCapacity</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#target_spot_capacity EmrCluster#target_spot_capacity}. |
 
 ---
 
@@ -2519,7 +2562,7 @@ public object InstanceTypeConfigs { get; set; }
 
 instance_type_configs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#instance_type_configs EmrCluster#instance_type_configs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#instance_type_configs EmrCluster#instance_type_configs}
 
 ---
 
@@ -2533,7 +2576,7 @@ public EmrClusterCoreInstanceFleetLaunchSpecifications LaunchSpecifications { ge
 
 launch_specifications block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#launch_specifications EmrCluster#launch_specifications}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#launch_specifications EmrCluster#launch_specifications}
 
 ---
 
@@ -2545,7 +2588,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#name EmrCluster#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#name EmrCluster#name}.
 
 ---
 
@@ -2557,7 +2600,7 @@ public double TargetOnDemandCapacity { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#target_on_demand_capacity EmrCluster#target_on_demand_capacity}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#target_on_demand_capacity EmrCluster#target_on_demand_capacity}.
 
 ---
 
@@ -2569,7 +2612,7 @@ public double TargetSpotCapacity { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#target_spot_capacity EmrCluster#target_spot_capacity}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#target_spot_capacity EmrCluster#target_spot_capacity}.
 
 ---
 
@@ -2594,12 +2637,12 @@ new EmrClusterCoreInstanceFleetInstanceTypeConfigs {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceFleetInstanceTypeConfigs.property.instanceType">InstanceType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#instance_type EmrCluster#instance_type}. |
-| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceFleetInstanceTypeConfigs.property.bidPrice">BidPrice</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#bid_price EmrCluster#bid_price}. |
-| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceFleetInstanceTypeConfigs.property.bidPriceAsPercentageOfOnDemandPrice">BidPriceAsPercentageOfOnDemandPrice</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#bid_price_as_percentage_of_on_demand_price EmrCluster#bid_price_as_percentage_of_on_demand_price}. |
+| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceFleetInstanceTypeConfigs.property.instanceType">InstanceType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#instance_type EmrCluster#instance_type}. |
+| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceFleetInstanceTypeConfigs.property.bidPrice">BidPrice</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#bid_price EmrCluster#bid_price}. |
+| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceFleetInstanceTypeConfigs.property.bidPriceAsPercentageOfOnDemandPrice">BidPriceAsPercentageOfOnDemandPrice</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#bid_price_as_percentage_of_on_demand_price EmrCluster#bid_price_as_percentage_of_on_demand_price}. |
 | <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceFleetInstanceTypeConfigs.property.configurations">Configurations</a></code> | <code>object</code> | configurations block. |
 | <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceFleetInstanceTypeConfigs.property.ebsConfig">EbsConfig</a></code> | <code>object</code> | ebs_config block. |
-| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceFleetInstanceTypeConfigs.property.weightedCapacity">WeightedCapacity</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#weighted_capacity EmrCluster#weighted_capacity}. |
+| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceFleetInstanceTypeConfigs.property.weightedCapacity">WeightedCapacity</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#weighted_capacity EmrCluster#weighted_capacity}. |
 
 ---
 
@@ -2611,7 +2654,7 @@ public string InstanceType { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#instance_type EmrCluster#instance_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#instance_type EmrCluster#instance_type}.
 
 ---
 
@@ -2623,7 +2666,7 @@ public string BidPrice { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#bid_price EmrCluster#bid_price}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#bid_price EmrCluster#bid_price}.
 
 ---
 
@@ -2635,7 +2678,7 @@ public double BidPriceAsPercentageOfOnDemandPrice { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#bid_price_as_percentage_of_on_demand_price EmrCluster#bid_price_as_percentage_of_on_demand_price}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#bid_price_as_percentage_of_on_demand_price EmrCluster#bid_price_as_percentage_of_on_demand_price}.
 
 ---
 
@@ -2649,7 +2692,7 @@ public object Configurations { get; set; }
 
 configurations block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#configurations EmrCluster#configurations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#configurations EmrCluster#configurations}
 
 ---
 
@@ -2663,7 +2706,7 @@ public object EbsConfig { get; set; }
 
 ebs_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#ebs_config EmrCluster#ebs_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#ebs_config EmrCluster#ebs_config}
 
 ---
 
@@ -2675,7 +2718,7 @@ public double WeightedCapacity { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#weighted_capacity EmrCluster#weighted_capacity}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#weighted_capacity EmrCluster#weighted_capacity}.
 
 ---
 
@@ -2696,8 +2739,8 @@ new EmrClusterCoreInstanceFleetInstanceTypeConfigsConfigurations {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceFleetInstanceTypeConfigsConfigurations.property.classification">Classification</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#classification EmrCluster#classification}. |
-| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceFleetInstanceTypeConfigsConfigurations.property.properties">Properties</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#properties EmrCluster#properties}. |
+| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceFleetInstanceTypeConfigsConfigurations.property.classification">Classification</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#classification EmrCluster#classification}. |
+| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceFleetInstanceTypeConfigsConfigurations.property.properties">Properties</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#properties EmrCluster#properties}. |
 
 ---
 
@@ -2709,7 +2752,7 @@ public string Classification { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#classification EmrCluster#classification}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#classification EmrCluster#classification}.
 
 ---
 
@@ -2721,7 +2764,7 @@ public System.Collections.Generic.IDictionary<string, string> Properties { get; 
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#properties EmrCluster#properties}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#properties EmrCluster#properties}.
 
 ---
 
@@ -2744,10 +2787,10 @@ new EmrClusterCoreInstanceFleetInstanceTypeConfigsEbsConfig {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceFleetInstanceTypeConfigsEbsConfig.property.size">Size</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#size EmrCluster#size}. |
-| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceFleetInstanceTypeConfigsEbsConfig.property.type">Type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#type EmrCluster#type}. |
-| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceFleetInstanceTypeConfigsEbsConfig.property.iops">Iops</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#iops EmrCluster#iops}. |
-| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceFleetInstanceTypeConfigsEbsConfig.property.volumesPerInstance">VolumesPerInstance</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#volumes_per_instance EmrCluster#volumes_per_instance}. |
+| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceFleetInstanceTypeConfigsEbsConfig.property.size">Size</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#size EmrCluster#size}. |
+| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceFleetInstanceTypeConfigsEbsConfig.property.type">Type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#type EmrCluster#type}. |
+| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceFleetInstanceTypeConfigsEbsConfig.property.iops">Iops</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#iops EmrCluster#iops}. |
+| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceFleetInstanceTypeConfigsEbsConfig.property.volumesPerInstance">VolumesPerInstance</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#volumes_per_instance EmrCluster#volumes_per_instance}. |
 
 ---
 
@@ -2759,7 +2802,7 @@ public double Size { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#size EmrCluster#size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#size EmrCluster#size}.
 
 ---
 
@@ -2771,7 +2814,7 @@ public string Type { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#type EmrCluster#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#type EmrCluster#type}.
 
 ---
 
@@ -2783,7 +2826,7 @@ public double Iops { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#iops EmrCluster#iops}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#iops EmrCluster#iops}.
 
 ---
 
@@ -2795,7 +2838,7 @@ public double VolumesPerInstance { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#volumes_per_instance EmrCluster#volumes_per_instance}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#volumes_per_instance EmrCluster#volumes_per_instance}.
 
 ---
 
@@ -2831,7 +2874,7 @@ public object OnDemandSpecification { get; set; }
 
 on_demand_specification block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#on_demand_specification EmrCluster#on_demand_specification}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#on_demand_specification EmrCluster#on_demand_specification}
 
 ---
 
@@ -2845,7 +2888,7 @@ public object SpotSpecification { get; set; }
 
 spot_specification block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#spot_specification EmrCluster#spot_specification}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#spot_specification EmrCluster#spot_specification}
 
 ---
 
@@ -2865,7 +2908,7 @@ new EmrClusterCoreInstanceFleetLaunchSpecificationsOnDemandSpecification {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceFleetLaunchSpecificationsOnDemandSpecification.property.allocationStrategy">AllocationStrategy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#allocation_strategy EmrCluster#allocation_strategy}. |
+| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceFleetLaunchSpecificationsOnDemandSpecification.property.allocationStrategy">AllocationStrategy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#allocation_strategy EmrCluster#allocation_strategy}. |
 
 ---
 
@@ -2877,7 +2920,7 @@ public string AllocationStrategy { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#allocation_strategy EmrCluster#allocation_strategy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#allocation_strategy EmrCluster#allocation_strategy}.
 
 ---
 
@@ -2900,10 +2943,10 @@ new EmrClusterCoreInstanceFleetLaunchSpecificationsSpotSpecification {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceFleetLaunchSpecificationsSpotSpecification.property.allocationStrategy">AllocationStrategy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#allocation_strategy EmrCluster#allocation_strategy}. |
-| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceFleetLaunchSpecificationsSpotSpecification.property.timeoutAction">TimeoutAction</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#timeout_action EmrCluster#timeout_action}. |
-| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceFleetLaunchSpecificationsSpotSpecification.property.timeoutDurationMinutes">TimeoutDurationMinutes</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#timeout_duration_minutes EmrCluster#timeout_duration_minutes}. |
-| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceFleetLaunchSpecificationsSpotSpecification.property.blockDurationMinutes">BlockDurationMinutes</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#block_duration_minutes EmrCluster#block_duration_minutes}. |
+| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceFleetLaunchSpecificationsSpotSpecification.property.allocationStrategy">AllocationStrategy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#allocation_strategy EmrCluster#allocation_strategy}. |
+| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceFleetLaunchSpecificationsSpotSpecification.property.timeoutAction">TimeoutAction</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#timeout_action EmrCluster#timeout_action}. |
+| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceFleetLaunchSpecificationsSpotSpecification.property.timeoutDurationMinutes">TimeoutDurationMinutes</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#timeout_duration_minutes EmrCluster#timeout_duration_minutes}. |
+| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceFleetLaunchSpecificationsSpotSpecification.property.blockDurationMinutes">BlockDurationMinutes</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#block_duration_minutes EmrCluster#block_duration_minutes}. |
 
 ---
 
@@ -2915,7 +2958,7 @@ public string AllocationStrategy { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#allocation_strategy EmrCluster#allocation_strategy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#allocation_strategy EmrCluster#allocation_strategy}.
 
 ---
 
@@ -2927,7 +2970,7 @@ public string TimeoutAction { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#timeout_action EmrCluster#timeout_action}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#timeout_action EmrCluster#timeout_action}.
 
 ---
 
@@ -2939,7 +2982,7 @@ public double TimeoutDurationMinutes { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#timeout_duration_minutes EmrCluster#timeout_duration_minutes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#timeout_duration_minutes EmrCluster#timeout_duration_minutes}.
 
 ---
 
@@ -2951,7 +2994,7 @@ public double BlockDurationMinutes { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#block_duration_minutes EmrCluster#block_duration_minutes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#block_duration_minutes EmrCluster#block_duration_minutes}.
 
 ---
 
@@ -2976,12 +3019,12 @@ new EmrClusterCoreInstanceGroup {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceGroup.property.instanceType">InstanceType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#instance_type EmrCluster#instance_type}. |
-| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceGroup.property.autoscalingPolicy">AutoscalingPolicy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#autoscaling_policy EmrCluster#autoscaling_policy}. |
-| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceGroup.property.bidPrice">BidPrice</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#bid_price EmrCluster#bid_price}. |
+| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceGroup.property.instanceType">InstanceType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#instance_type EmrCluster#instance_type}. |
+| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceGroup.property.autoscalingPolicy">AutoscalingPolicy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#autoscaling_policy EmrCluster#autoscaling_policy}. |
+| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceGroup.property.bidPrice">BidPrice</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#bid_price EmrCluster#bid_price}. |
 | <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceGroup.property.ebsConfig">EbsConfig</a></code> | <code>object</code> | ebs_config block. |
-| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceGroup.property.instanceCount">InstanceCount</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#instance_count EmrCluster#instance_count}. |
-| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceGroup.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#name EmrCluster#name}. |
+| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceGroup.property.instanceCount">InstanceCount</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#instance_count EmrCluster#instance_count}. |
+| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceGroup.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#name EmrCluster#name}. |
 
 ---
 
@@ -2993,7 +3036,7 @@ public string InstanceType { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#instance_type EmrCluster#instance_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#instance_type EmrCluster#instance_type}.
 
 ---
 
@@ -3005,7 +3048,7 @@ public string AutoscalingPolicy { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#autoscaling_policy EmrCluster#autoscaling_policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#autoscaling_policy EmrCluster#autoscaling_policy}.
 
 ---
 
@@ -3017,7 +3060,7 @@ public string BidPrice { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#bid_price EmrCluster#bid_price}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#bid_price EmrCluster#bid_price}.
 
 ---
 
@@ -3031,7 +3074,7 @@ public object EbsConfig { get; set; }
 
 ebs_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#ebs_config EmrCluster#ebs_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#ebs_config EmrCluster#ebs_config}
 
 ---
 
@@ -3043,7 +3086,7 @@ public double InstanceCount { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#instance_count EmrCluster#instance_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#instance_count EmrCluster#instance_count}.
 
 ---
 
@@ -3055,7 +3098,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#name EmrCluster#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#name EmrCluster#name}.
 
 ---
 
@@ -3079,11 +3122,11 @@ new EmrClusterCoreInstanceGroupEbsConfig {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceGroupEbsConfig.property.size">Size</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#size EmrCluster#size}. |
-| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceGroupEbsConfig.property.type">Type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#type EmrCluster#type}. |
-| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceGroupEbsConfig.property.iops">Iops</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#iops EmrCluster#iops}. |
-| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceGroupEbsConfig.property.throughput">Throughput</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#throughput EmrCluster#throughput}. |
-| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceGroupEbsConfig.property.volumesPerInstance">VolumesPerInstance</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#volumes_per_instance EmrCluster#volumes_per_instance}. |
+| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceGroupEbsConfig.property.size">Size</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#size EmrCluster#size}. |
+| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceGroupEbsConfig.property.type">Type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#type EmrCluster#type}. |
+| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceGroupEbsConfig.property.iops">Iops</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#iops EmrCluster#iops}. |
+| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceGroupEbsConfig.property.throughput">Throughput</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#throughput EmrCluster#throughput}. |
+| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceGroupEbsConfig.property.volumesPerInstance">VolumesPerInstance</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#volumes_per_instance EmrCluster#volumes_per_instance}. |
 
 ---
 
@@ -3095,7 +3138,7 @@ public double Size { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#size EmrCluster#size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#size EmrCluster#size}.
 
 ---
 
@@ -3107,7 +3150,7 @@ public string Type { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#type EmrCluster#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#type EmrCluster#type}.
 
 ---
 
@@ -3119,7 +3162,7 @@ public double Iops { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#iops EmrCluster#iops}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#iops EmrCluster#iops}.
 
 ---
 
@@ -3131,7 +3174,7 @@ public double Throughput { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#throughput EmrCluster#throughput}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#throughput EmrCluster#throughput}.
 
 ---
 
@@ -3143,7 +3186,7 @@ public double VolumesPerInstance { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#volumes_per_instance EmrCluster#volumes_per_instance}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#volumes_per_instance EmrCluster#volumes_per_instance}.
 
 ---
 
@@ -3171,15 +3214,15 @@ new EmrClusterEc2Attributes {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterEc2Attributes.property.instanceProfile">InstanceProfile</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#instance_profile EmrCluster#instance_profile}. |
-| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterEc2Attributes.property.additionalMasterSecurityGroups">AdditionalMasterSecurityGroups</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#additional_master_security_groups EmrCluster#additional_master_security_groups}. |
-| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterEc2Attributes.property.additionalSlaveSecurityGroups">AdditionalSlaveSecurityGroups</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#additional_slave_security_groups EmrCluster#additional_slave_security_groups}. |
-| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterEc2Attributes.property.emrManagedMasterSecurityGroup">EmrManagedMasterSecurityGroup</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#emr_managed_master_security_group EmrCluster#emr_managed_master_security_group}. |
-| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterEc2Attributes.property.emrManagedSlaveSecurityGroup">EmrManagedSlaveSecurityGroup</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#emr_managed_slave_security_group EmrCluster#emr_managed_slave_security_group}. |
-| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterEc2Attributes.property.keyName">KeyName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#key_name EmrCluster#key_name}. |
-| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterEc2Attributes.property.serviceAccessSecurityGroup">ServiceAccessSecurityGroup</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#service_access_security_group EmrCluster#service_access_security_group}. |
-| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterEc2Attributes.property.subnetId">SubnetId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#subnet_id EmrCluster#subnet_id}. |
-| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterEc2Attributes.property.subnetIds">SubnetIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#subnet_ids EmrCluster#subnet_ids}. |
+| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterEc2Attributes.property.instanceProfile">InstanceProfile</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#instance_profile EmrCluster#instance_profile}. |
+| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterEc2Attributes.property.additionalMasterSecurityGroups">AdditionalMasterSecurityGroups</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#additional_master_security_groups EmrCluster#additional_master_security_groups}. |
+| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterEc2Attributes.property.additionalSlaveSecurityGroups">AdditionalSlaveSecurityGroups</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#additional_slave_security_groups EmrCluster#additional_slave_security_groups}. |
+| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterEc2Attributes.property.emrManagedMasterSecurityGroup">EmrManagedMasterSecurityGroup</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#emr_managed_master_security_group EmrCluster#emr_managed_master_security_group}. |
+| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterEc2Attributes.property.emrManagedSlaveSecurityGroup">EmrManagedSlaveSecurityGroup</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#emr_managed_slave_security_group EmrCluster#emr_managed_slave_security_group}. |
+| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterEc2Attributes.property.keyName">KeyName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#key_name EmrCluster#key_name}. |
+| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterEc2Attributes.property.serviceAccessSecurityGroup">ServiceAccessSecurityGroup</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#service_access_security_group EmrCluster#service_access_security_group}. |
+| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterEc2Attributes.property.subnetId">SubnetId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#subnet_id EmrCluster#subnet_id}. |
+| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterEc2Attributes.property.subnetIds">SubnetIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#subnet_ids EmrCluster#subnet_ids}. |
 
 ---
 
@@ -3191,7 +3234,7 @@ public string InstanceProfile { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#instance_profile EmrCluster#instance_profile}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#instance_profile EmrCluster#instance_profile}.
 
 ---
 
@@ -3203,7 +3246,7 @@ public string AdditionalMasterSecurityGroups { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#additional_master_security_groups EmrCluster#additional_master_security_groups}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#additional_master_security_groups EmrCluster#additional_master_security_groups}.
 
 ---
 
@@ -3215,7 +3258,7 @@ public string AdditionalSlaveSecurityGroups { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#additional_slave_security_groups EmrCluster#additional_slave_security_groups}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#additional_slave_security_groups EmrCluster#additional_slave_security_groups}.
 
 ---
 
@@ -3227,7 +3270,7 @@ public string EmrManagedMasterSecurityGroup { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#emr_managed_master_security_group EmrCluster#emr_managed_master_security_group}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#emr_managed_master_security_group EmrCluster#emr_managed_master_security_group}.
 
 ---
 
@@ -3239,7 +3282,7 @@ public string EmrManagedSlaveSecurityGroup { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#emr_managed_slave_security_group EmrCluster#emr_managed_slave_security_group}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#emr_managed_slave_security_group EmrCluster#emr_managed_slave_security_group}.
 
 ---
 
@@ -3251,7 +3294,7 @@ public string KeyName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#key_name EmrCluster#key_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#key_name EmrCluster#key_name}.
 
 ---
 
@@ -3263,7 +3306,7 @@ public string ServiceAccessSecurityGroup { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#service_access_security_group EmrCluster#service_access_security_group}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#service_access_security_group EmrCluster#service_access_security_group}.
 
 ---
 
@@ -3275,7 +3318,7 @@ public string SubnetId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#subnet_id EmrCluster#subnet_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#subnet_id EmrCluster#subnet_id}.
 
 ---
 
@@ -3287,7 +3330,7 @@ public string[] SubnetIds { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#subnet_ids EmrCluster#subnet_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#subnet_ids EmrCluster#subnet_ids}.
 
 ---
 
@@ -3311,11 +3354,11 @@ new EmrClusterKerberosAttributes {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterKerberosAttributes.property.kdcAdminPassword">KdcAdminPassword</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#kdc_admin_password EmrCluster#kdc_admin_password}. |
-| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterKerberosAttributes.property.realm">Realm</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#realm EmrCluster#realm}. |
-| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterKerberosAttributes.property.adDomainJoinPassword">AdDomainJoinPassword</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#ad_domain_join_password EmrCluster#ad_domain_join_password}. |
-| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterKerberosAttributes.property.adDomainJoinUser">AdDomainJoinUser</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#ad_domain_join_user EmrCluster#ad_domain_join_user}. |
-| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterKerberosAttributes.property.crossRealmTrustPrincipalPassword">CrossRealmTrustPrincipalPassword</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#cross_realm_trust_principal_password EmrCluster#cross_realm_trust_principal_password}. |
+| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterKerberosAttributes.property.kdcAdminPassword">KdcAdminPassword</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#kdc_admin_password EmrCluster#kdc_admin_password}. |
+| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterKerberosAttributes.property.realm">Realm</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#realm EmrCluster#realm}. |
+| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterKerberosAttributes.property.adDomainJoinPassword">AdDomainJoinPassword</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#ad_domain_join_password EmrCluster#ad_domain_join_password}. |
+| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterKerberosAttributes.property.adDomainJoinUser">AdDomainJoinUser</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#ad_domain_join_user EmrCluster#ad_domain_join_user}. |
+| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterKerberosAttributes.property.crossRealmTrustPrincipalPassword">CrossRealmTrustPrincipalPassword</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#cross_realm_trust_principal_password EmrCluster#cross_realm_trust_principal_password}. |
 
 ---
 
@@ -3327,7 +3370,7 @@ public string KdcAdminPassword { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#kdc_admin_password EmrCluster#kdc_admin_password}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#kdc_admin_password EmrCluster#kdc_admin_password}.
 
 ---
 
@@ -3339,7 +3382,7 @@ public string Realm { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#realm EmrCluster#realm}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#realm EmrCluster#realm}.
 
 ---
 
@@ -3351,7 +3394,7 @@ public string AdDomainJoinPassword { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#ad_domain_join_password EmrCluster#ad_domain_join_password}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#ad_domain_join_password EmrCluster#ad_domain_join_password}.
 
 ---
 
@@ -3363,7 +3406,7 @@ public string AdDomainJoinUser { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#ad_domain_join_user EmrCluster#ad_domain_join_user}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#ad_domain_join_user EmrCluster#ad_domain_join_user}.
 
 ---
 
@@ -3375,7 +3418,7 @@ public string CrossRealmTrustPrincipalPassword { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#cross_realm_trust_principal_password EmrCluster#cross_realm_trust_principal_password}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#cross_realm_trust_principal_password EmrCluster#cross_realm_trust_principal_password}.
 
 ---
 
@@ -3401,9 +3444,9 @@ new EmrClusterMasterInstanceFleet {
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceFleet.property.instanceTypeConfigs">InstanceTypeConfigs</a></code> | <code>object</code> | instance_type_configs block. |
 | <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceFleet.property.launchSpecifications">LaunchSpecifications</a></code> | <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceFleetLaunchSpecifications">EmrClusterMasterInstanceFleetLaunchSpecifications</a></code> | launch_specifications block. |
-| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceFleet.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#name EmrCluster#name}. |
-| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceFleet.property.targetOnDemandCapacity">TargetOnDemandCapacity</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#target_on_demand_capacity EmrCluster#target_on_demand_capacity}. |
-| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceFleet.property.targetSpotCapacity">TargetSpotCapacity</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#target_spot_capacity EmrCluster#target_spot_capacity}. |
+| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceFleet.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#name EmrCluster#name}. |
+| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceFleet.property.targetOnDemandCapacity">TargetOnDemandCapacity</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#target_on_demand_capacity EmrCluster#target_on_demand_capacity}. |
+| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceFleet.property.targetSpotCapacity">TargetSpotCapacity</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#target_spot_capacity EmrCluster#target_spot_capacity}. |
 
 ---
 
@@ -3417,7 +3460,7 @@ public object InstanceTypeConfigs { get; set; }
 
 instance_type_configs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#instance_type_configs EmrCluster#instance_type_configs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#instance_type_configs EmrCluster#instance_type_configs}
 
 ---
 
@@ -3431,7 +3474,7 @@ public EmrClusterMasterInstanceFleetLaunchSpecifications LaunchSpecifications { 
 
 launch_specifications block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#launch_specifications EmrCluster#launch_specifications}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#launch_specifications EmrCluster#launch_specifications}
 
 ---
 
@@ -3443,7 +3486,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#name EmrCluster#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#name EmrCluster#name}.
 
 ---
 
@@ -3455,7 +3498,7 @@ public double TargetOnDemandCapacity { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#target_on_demand_capacity EmrCluster#target_on_demand_capacity}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#target_on_demand_capacity EmrCluster#target_on_demand_capacity}.
 
 ---
 
@@ -3467,7 +3510,7 @@ public double TargetSpotCapacity { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#target_spot_capacity EmrCluster#target_spot_capacity}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#target_spot_capacity EmrCluster#target_spot_capacity}.
 
 ---
 
@@ -3492,12 +3535,12 @@ new EmrClusterMasterInstanceFleetInstanceTypeConfigs {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceFleetInstanceTypeConfigs.property.instanceType">InstanceType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#instance_type EmrCluster#instance_type}. |
-| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceFleetInstanceTypeConfigs.property.bidPrice">BidPrice</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#bid_price EmrCluster#bid_price}. |
-| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceFleetInstanceTypeConfigs.property.bidPriceAsPercentageOfOnDemandPrice">BidPriceAsPercentageOfOnDemandPrice</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#bid_price_as_percentage_of_on_demand_price EmrCluster#bid_price_as_percentage_of_on_demand_price}. |
+| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceFleetInstanceTypeConfigs.property.instanceType">InstanceType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#instance_type EmrCluster#instance_type}. |
+| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceFleetInstanceTypeConfigs.property.bidPrice">BidPrice</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#bid_price EmrCluster#bid_price}. |
+| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceFleetInstanceTypeConfigs.property.bidPriceAsPercentageOfOnDemandPrice">BidPriceAsPercentageOfOnDemandPrice</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#bid_price_as_percentage_of_on_demand_price EmrCluster#bid_price_as_percentage_of_on_demand_price}. |
 | <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceFleetInstanceTypeConfigs.property.configurations">Configurations</a></code> | <code>object</code> | configurations block. |
 | <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceFleetInstanceTypeConfigs.property.ebsConfig">EbsConfig</a></code> | <code>object</code> | ebs_config block. |
-| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceFleetInstanceTypeConfigs.property.weightedCapacity">WeightedCapacity</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#weighted_capacity EmrCluster#weighted_capacity}. |
+| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceFleetInstanceTypeConfigs.property.weightedCapacity">WeightedCapacity</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#weighted_capacity EmrCluster#weighted_capacity}. |
 
 ---
 
@@ -3509,7 +3552,7 @@ public string InstanceType { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#instance_type EmrCluster#instance_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#instance_type EmrCluster#instance_type}.
 
 ---
 
@@ -3521,7 +3564,7 @@ public string BidPrice { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#bid_price EmrCluster#bid_price}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#bid_price EmrCluster#bid_price}.
 
 ---
 
@@ -3533,7 +3576,7 @@ public double BidPriceAsPercentageOfOnDemandPrice { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#bid_price_as_percentage_of_on_demand_price EmrCluster#bid_price_as_percentage_of_on_demand_price}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#bid_price_as_percentage_of_on_demand_price EmrCluster#bid_price_as_percentage_of_on_demand_price}.
 
 ---
 
@@ -3547,7 +3590,7 @@ public object Configurations { get; set; }
 
 configurations block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#configurations EmrCluster#configurations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#configurations EmrCluster#configurations}
 
 ---
 
@@ -3561,7 +3604,7 @@ public object EbsConfig { get; set; }
 
 ebs_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#ebs_config EmrCluster#ebs_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#ebs_config EmrCluster#ebs_config}
 
 ---
 
@@ -3573,7 +3616,7 @@ public double WeightedCapacity { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#weighted_capacity EmrCluster#weighted_capacity}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#weighted_capacity EmrCluster#weighted_capacity}.
 
 ---
 
@@ -3594,8 +3637,8 @@ new EmrClusterMasterInstanceFleetInstanceTypeConfigsConfigurations {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceFleetInstanceTypeConfigsConfigurations.property.classification">Classification</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#classification EmrCluster#classification}. |
-| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceFleetInstanceTypeConfigsConfigurations.property.properties">Properties</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#properties EmrCluster#properties}. |
+| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceFleetInstanceTypeConfigsConfigurations.property.classification">Classification</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#classification EmrCluster#classification}. |
+| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceFleetInstanceTypeConfigsConfigurations.property.properties">Properties</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#properties EmrCluster#properties}. |
 
 ---
 
@@ -3607,7 +3650,7 @@ public string Classification { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#classification EmrCluster#classification}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#classification EmrCluster#classification}.
 
 ---
 
@@ -3619,7 +3662,7 @@ public System.Collections.Generic.IDictionary<string, string> Properties { get; 
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#properties EmrCluster#properties}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#properties EmrCluster#properties}.
 
 ---
 
@@ -3642,10 +3685,10 @@ new EmrClusterMasterInstanceFleetInstanceTypeConfigsEbsConfig {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceFleetInstanceTypeConfigsEbsConfig.property.size">Size</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#size EmrCluster#size}. |
-| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceFleetInstanceTypeConfigsEbsConfig.property.type">Type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#type EmrCluster#type}. |
-| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceFleetInstanceTypeConfigsEbsConfig.property.iops">Iops</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#iops EmrCluster#iops}. |
-| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceFleetInstanceTypeConfigsEbsConfig.property.volumesPerInstance">VolumesPerInstance</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#volumes_per_instance EmrCluster#volumes_per_instance}. |
+| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceFleetInstanceTypeConfigsEbsConfig.property.size">Size</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#size EmrCluster#size}. |
+| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceFleetInstanceTypeConfigsEbsConfig.property.type">Type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#type EmrCluster#type}. |
+| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceFleetInstanceTypeConfigsEbsConfig.property.iops">Iops</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#iops EmrCluster#iops}. |
+| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceFleetInstanceTypeConfigsEbsConfig.property.volumesPerInstance">VolumesPerInstance</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#volumes_per_instance EmrCluster#volumes_per_instance}. |
 
 ---
 
@@ -3657,7 +3700,7 @@ public double Size { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#size EmrCluster#size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#size EmrCluster#size}.
 
 ---
 
@@ -3669,7 +3712,7 @@ public string Type { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#type EmrCluster#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#type EmrCluster#type}.
 
 ---
 
@@ -3681,7 +3724,7 @@ public double Iops { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#iops EmrCluster#iops}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#iops EmrCluster#iops}.
 
 ---
 
@@ -3693,7 +3736,7 @@ public double VolumesPerInstance { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#volumes_per_instance EmrCluster#volumes_per_instance}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#volumes_per_instance EmrCluster#volumes_per_instance}.
 
 ---
 
@@ -3729,7 +3772,7 @@ public object OnDemandSpecification { get; set; }
 
 on_demand_specification block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#on_demand_specification EmrCluster#on_demand_specification}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#on_demand_specification EmrCluster#on_demand_specification}
 
 ---
 
@@ -3743,7 +3786,7 @@ public object SpotSpecification { get; set; }
 
 spot_specification block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#spot_specification EmrCluster#spot_specification}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#spot_specification EmrCluster#spot_specification}
 
 ---
 
@@ -3763,7 +3806,7 @@ new EmrClusterMasterInstanceFleetLaunchSpecificationsOnDemandSpecification {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceFleetLaunchSpecificationsOnDemandSpecification.property.allocationStrategy">AllocationStrategy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#allocation_strategy EmrCluster#allocation_strategy}. |
+| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceFleetLaunchSpecificationsOnDemandSpecification.property.allocationStrategy">AllocationStrategy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#allocation_strategy EmrCluster#allocation_strategy}. |
 
 ---
 
@@ -3775,7 +3818,7 @@ public string AllocationStrategy { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#allocation_strategy EmrCluster#allocation_strategy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#allocation_strategy EmrCluster#allocation_strategy}.
 
 ---
 
@@ -3798,10 +3841,10 @@ new EmrClusterMasterInstanceFleetLaunchSpecificationsSpotSpecification {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceFleetLaunchSpecificationsSpotSpecification.property.allocationStrategy">AllocationStrategy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#allocation_strategy EmrCluster#allocation_strategy}. |
-| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceFleetLaunchSpecificationsSpotSpecification.property.timeoutAction">TimeoutAction</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#timeout_action EmrCluster#timeout_action}. |
-| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceFleetLaunchSpecificationsSpotSpecification.property.timeoutDurationMinutes">TimeoutDurationMinutes</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#timeout_duration_minutes EmrCluster#timeout_duration_minutes}. |
-| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceFleetLaunchSpecificationsSpotSpecification.property.blockDurationMinutes">BlockDurationMinutes</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#block_duration_minutes EmrCluster#block_duration_minutes}. |
+| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceFleetLaunchSpecificationsSpotSpecification.property.allocationStrategy">AllocationStrategy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#allocation_strategy EmrCluster#allocation_strategy}. |
+| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceFleetLaunchSpecificationsSpotSpecification.property.timeoutAction">TimeoutAction</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#timeout_action EmrCluster#timeout_action}. |
+| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceFleetLaunchSpecificationsSpotSpecification.property.timeoutDurationMinutes">TimeoutDurationMinutes</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#timeout_duration_minutes EmrCluster#timeout_duration_minutes}. |
+| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceFleetLaunchSpecificationsSpotSpecification.property.blockDurationMinutes">BlockDurationMinutes</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#block_duration_minutes EmrCluster#block_duration_minutes}. |
 
 ---
 
@@ -3813,7 +3856,7 @@ public string AllocationStrategy { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#allocation_strategy EmrCluster#allocation_strategy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#allocation_strategy EmrCluster#allocation_strategy}.
 
 ---
 
@@ -3825,7 +3868,7 @@ public string TimeoutAction { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#timeout_action EmrCluster#timeout_action}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#timeout_action EmrCluster#timeout_action}.
 
 ---
 
@@ -3837,7 +3880,7 @@ public double TimeoutDurationMinutes { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#timeout_duration_minutes EmrCluster#timeout_duration_minutes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#timeout_duration_minutes EmrCluster#timeout_duration_minutes}.
 
 ---
 
@@ -3849,7 +3892,7 @@ public double BlockDurationMinutes { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#block_duration_minutes EmrCluster#block_duration_minutes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#block_duration_minutes EmrCluster#block_duration_minutes}.
 
 ---
 
@@ -3873,11 +3916,11 @@ new EmrClusterMasterInstanceGroup {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceGroup.property.instanceType">InstanceType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#instance_type EmrCluster#instance_type}. |
-| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceGroup.property.bidPrice">BidPrice</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#bid_price EmrCluster#bid_price}. |
+| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceGroup.property.instanceType">InstanceType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#instance_type EmrCluster#instance_type}. |
+| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceGroup.property.bidPrice">BidPrice</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#bid_price EmrCluster#bid_price}. |
 | <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceGroup.property.ebsConfig">EbsConfig</a></code> | <code>object</code> | ebs_config block. |
-| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceGroup.property.instanceCount">InstanceCount</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#instance_count EmrCluster#instance_count}. |
-| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceGroup.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#name EmrCluster#name}. |
+| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceGroup.property.instanceCount">InstanceCount</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#instance_count EmrCluster#instance_count}. |
+| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceGroup.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#name EmrCluster#name}. |
 
 ---
 
@@ -3889,7 +3932,7 @@ public string InstanceType { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#instance_type EmrCluster#instance_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#instance_type EmrCluster#instance_type}.
 
 ---
 
@@ -3901,7 +3944,7 @@ public string BidPrice { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#bid_price EmrCluster#bid_price}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#bid_price EmrCluster#bid_price}.
 
 ---
 
@@ -3915,7 +3958,7 @@ public object EbsConfig { get; set; }
 
 ebs_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#ebs_config EmrCluster#ebs_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#ebs_config EmrCluster#ebs_config}
 
 ---
 
@@ -3927,7 +3970,7 @@ public double InstanceCount { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#instance_count EmrCluster#instance_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#instance_count EmrCluster#instance_count}.
 
 ---
 
@@ -3939,7 +3982,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#name EmrCluster#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#name EmrCluster#name}.
 
 ---
 
@@ -3963,11 +4006,11 @@ new EmrClusterMasterInstanceGroupEbsConfig {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceGroupEbsConfig.property.size">Size</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#size EmrCluster#size}. |
-| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceGroupEbsConfig.property.type">Type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#type EmrCluster#type}. |
-| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceGroupEbsConfig.property.iops">Iops</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#iops EmrCluster#iops}. |
-| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceGroupEbsConfig.property.throughput">Throughput</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#throughput EmrCluster#throughput}. |
-| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceGroupEbsConfig.property.volumesPerInstance">VolumesPerInstance</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#volumes_per_instance EmrCluster#volumes_per_instance}. |
+| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceGroupEbsConfig.property.size">Size</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#size EmrCluster#size}. |
+| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceGroupEbsConfig.property.type">Type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#type EmrCluster#type}. |
+| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceGroupEbsConfig.property.iops">Iops</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#iops EmrCluster#iops}. |
+| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceGroupEbsConfig.property.throughput">Throughput</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#throughput EmrCluster#throughput}. |
+| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceGroupEbsConfig.property.volumesPerInstance">VolumesPerInstance</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#volumes_per_instance EmrCluster#volumes_per_instance}. |
 
 ---
 
@@ -3979,7 +4022,7 @@ public double Size { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#size EmrCluster#size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#size EmrCluster#size}.
 
 ---
 
@@ -3991,7 +4034,7 @@ public string Type { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#type EmrCluster#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#type EmrCluster#type}.
 
 ---
 
@@ -4003,7 +4046,7 @@ public double Iops { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#iops EmrCluster#iops}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#iops EmrCluster#iops}.
 
 ---
 
@@ -4015,7 +4058,7 @@ public double Throughput { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#throughput EmrCluster#throughput}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#throughput EmrCluster#throughput}.
 
 ---
 
@@ -4027,7 +4070,7 @@ public double VolumesPerInstance { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#volumes_per_instance EmrCluster#volumes_per_instance}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#volumes_per_instance EmrCluster#volumes_per_instance}.
 
 ---
 
@@ -4048,8 +4091,8 @@ new EmrClusterPlacementGroupConfig {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterPlacementGroupConfig.property.instanceRole">InstanceRole</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#instance_role EmrCluster#instance_role}. |
-| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterPlacementGroupConfig.property.placementStrategy">PlacementStrategy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#placement_strategy EmrCluster#placement_strategy}. |
+| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterPlacementGroupConfig.property.instanceRole">InstanceRole</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#instance_role EmrCluster#instance_role}. |
+| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterPlacementGroupConfig.property.placementStrategy">PlacementStrategy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#placement_strategy EmrCluster#placement_strategy}. |
 
 ---
 
@@ -4061,7 +4104,7 @@ public string InstanceRole { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#instance_role EmrCluster#instance_role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#instance_role EmrCluster#instance_role}.
 
 ---
 
@@ -4073,7 +4116,7 @@ public string PlacementStrategy { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#placement_strategy EmrCluster#placement_strategy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#placement_strategy EmrCluster#placement_strategy}.
 
 ---
 
@@ -4095,9 +4138,9 @@ new EmrClusterStep {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterStep.property.actionOnFailure">ActionOnFailure</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#action_on_failure EmrCluster#action_on_failure}. |
-| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterStep.property.hadoopJarStep">HadoopJarStep</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#hadoop_jar_step EmrCluster#hadoop_jar_step}. |
-| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterStep.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#name EmrCluster#name}. |
+| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterStep.property.actionOnFailure">ActionOnFailure</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#action_on_failure EmrCluster#action_on_failure}. |
+| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterStep.property.hadoopJarStep">HadoopJarStep</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#hadoop_jar_step EmrCluster#hadoop_jar_step}. |
+| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterStep.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#name EmrCluster#name}. |
 
 ---
 
@@ -4109,7 +4152,7 @@ public string ActionOnFailure { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#action_on_failure EmrCluster#action_on_failure}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#action_on_failure EmrCluster#action_on_failure}.
 
 ---
 
@@ -4121,7 +4164,7 @@ public object HadoopJarStep { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#hadoop_jar_step EmrCluster#hadoop_jar_step}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#hadoop_jar_step EmrCluster#hadoop_jar_step}.
 
 ---
 
@@ -4133,7 +4176,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#name EmrCluster#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#name EmrCluster#name}.
 
 ---
 
@@ -4156,10 +4199,10 @@ new EmrClusterStepHadoopJarStep {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterStepHadoopJarStep.property.args">Args</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#args EmrCluster#args}. |
-| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterStepHadoopJarStep.property.jar">Jar</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#jar EmrCluster#jar}. |
-| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterStepHadoopJarStep.property.mainClass">MainClass</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#main_class EmrCluster#main_class}. |
-| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterStepHadoopJarStep.property.properties">Properties</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#properties EmrCluster#properties}. |
+| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterStepHadoopJarStep.property.args">Args</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#args EmrCluster#args}. |
+| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterStepHadoopJarStep.property.jar">Jar</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#jar EmrCluster#jar}. |
+| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterStepHadoopJarStep.property.mainClass">MainClass</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#main_class EmrCluster#main_class}. |
+| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterStepHadoopJarStep.property.properties">Properties</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#properties EmrCluster#properties}. |
 
 ---
 
@@ -4171,7 +4214,7 @@ public string[] Args { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#args EmrCluster#args}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#args EmrCluster#args}.
 
 ---
 
@@ -4183,7 +4226,7 @@ public string Jar { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#jar EmrCluster#jar}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#jar EmrCluster#jar}.
 
 ---
 
@@ -4195,7 +4238,7 @@ public string MainClass { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#main_class EmrCluster#main_class}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#main_class EmrCluster#main_class}.
 
 ---
 
@@ -4207,7 +4250,7 @@ public System.Collections.Generic.IDictionary<string, string> Properties { get; 
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster#properties EmrCluster#properties}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster#properties EmrCluster#properties}.
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### RbinRule <a name="RbinRule" id="@cdktf/provider-aws.rbinRule.RbinRule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rbin_rule aws_rbin_rule}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/rbin_rule aws_rbin_rule}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.rbinRule.RbinRule.Initializer"></a>
 
@@ -26,6 +26,8 @@ RbinRule.Builder.create(Construct scope, java.lang.String id)
     .resourceType(java.lang.String)
     .retentionPeriod(RbinRuleRetentionPeriod)
 //  .description(java.lang.String)
+//  .excludeResourceTags(IResolvable)
+//  .excludeResourceTags(java.util.List<RbinRuleExcludeResourceTags>)
 //  .lockConfiguration(RbinRuleLockConfiguration)
 //  .region(java.lang.String)
 //  .resourceTags(IResolvable)
@@ -47,14 +49,15 @@ RbinRule.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-aws.rbinRule.RbinRule.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.rbinRule.RbinRule.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.rbinRule.RbinRule.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.rbinRule.RbinRule.Initializer.parameter.resourceType">resourceType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rbin_rule#resource_type RbinRule#resource_type}. |
+| <code><a href="#@cdktf/provider-aws.rbinRule.RbinRule.Initializer.parameter.resourceType">resourceType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/rbin_rule#resource_type RbinRule#resource_type}. |
 | <code><a href="#@cdktf/provider-aws.rbinRule.RbinRule.Initializer.parameter.retentionPeriod">retentionPeriod</a></code> | <code><a href="#@cdktf/provider-aws.rbinRule.RbinRuleRetentionPeriod">RbinRuleRetentionPeriod</a></code> | retention_period block. |
-| <code><a href="#@cdktf/provider-aws.rbinRule.RbinRule.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rbin_rule#description RbinRule#description}. |
+| <code><a href="#@cdktf/provider-aws.rbinRule.RbinRule.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/rbin_rule#description RbinRule#description}. |
+| <code><a href="#@cdktf/provider-aws.rbinRule.RbinRule.Initializer.parameter.excludeResourceTags">excludeResourceTags</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.rbinRule.RbinRuleExcludeResourceTags">RbinRuleExcludeResourceTags</a>></code> | exclude_resource_tags block. |
 | <code><a href="#@cdktf/provider-aws.rbinRule.RbinRule.Initializer.parameter.lockConfiguration">lockConfiguration</a></code> | <code><a href="#@cdktf/provider-aws.rbinRule.RbinRuleLockConfiguration">RbinRuleLockConfiguration</a></code> | lock_configuration block. |
 | <code><a href="#@cdktf/provider-aws.rbinRule.RbinRule.Initializer.parameter.region">region</a></code> | <code>java.lang.String</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktf/provider-aws.rbinRule.RbinRule.Initializer.parameter.resourceTags">resourceTags</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.rbinRule.RbinRuleResourceTags">RbinRuleResourceTags</a>></code> | resource_tags block. |
-| <code><a href="#@cdktf/provider-aws.rbinRule.RbinRule.Initializer.parameter.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rbin_rule#tags RbinRule#tags}. |
-| <code><a href="#@cdktf/provider-aws.rbinRule.RbinRule.Initializer.parameter.tagsAll">tagsAll</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rbin_rule#tags_all RbinRule#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.rbinRule.RbinRule.Initializer.parameter.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/rbin_rule#tags RbinRule#tags}. |
+| <code><a href="#@cdktf/provider-aws.rbinRule.RbinRule.Initializer.parameter.tagsAll">tagsAll</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/rbin_rule#tags_all RbinRule#tags_all}. |
 | <code><a href="#@cdktf/provider-aws.rbinRule.RbinRule.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-aws.rbinRule.RbinRuleTimeouts">RbinRuleTimeouts</a></code> | timeouts block. |
 
 ---
@@ -123,7 +126,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rbin_rule#resource_type RbinRule#resource_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/rbin_rule#resource_type RbinRule#resource_type}.
 
 ---
 
@@ -133,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 retention_period block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rbin_rule#retention_period RbinRule#retention_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/rbin_rule#retention_period RbinRule#retention_period}
 
 ---
 
@@ -141,7 +144,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rbin_rule#description RbinRule#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/rbin_rule#description RbinRule#description}.
+
+---
+
+##### `excludeResourceTags`<sup>Optional</sup> <a name="excludeResourceTags" id="@cdktf/provider-aws.rbinRule.RbinRule.Initializer.parameter.excludeResourceTags"></a>
+
+- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.rbinRule.RbinRuleExcludeResourceTags">RbinRuleExcludeResourceTags</a>>
+
+exclude_resource_tags block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/rbin_rule#exclude_resource_tags RbinRule#exclude_resource_tags}
 
 ---
 
@@ -151,7 +164,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 lock_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rbin_rule#lock_configuration RbinRule#lock_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/rbin_rule#lock_configuration RbinRule#lock_configuration}
 
 ---
 
@@ -161,7 +174,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rbin_rule#region RbinRule#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/rbin_rule#region RbinRule#region}
 
 ---
 
@@ -171,7 +184,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 resource_tags block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rbin_rule#resource_tags RbinRule#resource_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/rbin_rule#resource_tags RbinRule#resource_tags}
 
 ---
 
@@ -179,7 +192,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rbin_rule#tags RbinRule#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/rbin_rule#tags RbinRule#tags}.
 
 ---
 
@@ -187,7 +200,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rbin_rule#tags_all RbinRule#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/rbin_rule#tags_all RbinRule#tags_all}.
 
 ---
 
@@ -197,7 +210,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rbin_rule#timeouts RbinRule#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/rbin_rule#timeouts RbinRule#timeouts}
 
 ---
 
@@ -228,11 +241,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktf/provider-aws.rbinRule.RbinRule.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktf/provider-aws.rbinRule.RbinRule.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-aws.rbinRule.RbinRule.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktf/provider-aws.rbinRule.RbinRule.putExcludeResourceTags">putExcludeResourceTags</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.rbinRule.RbinRule.putLockConfiguration">putLockConfiguration</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.rbinRule.RbinRule.putResourceTags">putResourceTags</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.rbinRule.RbinRule.putRetentionPeriod">putRetentionPeriod</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.rbinRule.RbinRule.putTimeouts">putTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.rbinRule.RbinRule.resetDescription">resetDescription</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.rbinRule.RbinRule.resetExcludeResourceTags">resetExcludeResourceTags</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.rbinRule.RbinRule.resetLockConfiguration">resetLockConfiguration</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.rbinRule.RbinRule.resetRegion">resetRegion</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.rbinRule.RbinRule.resetResourceTags">resetResourceTags</a></code> | *No description.* |
@@ -532,6 +547,18 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `putExcludeResourceTags` <a name="putExcludeResourceTags" id="@cdktf/provider-aws.rbinRule.RbinRule.putExcludeResourceTags"></a>
+
+```java
+public void putExcludeResourceTags(IResolvable OR java.util.List<RbinRuleExcludeResourceTags> value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.rbinRule.RbinRule.putExcludeResourceTags.parameter.value"></a>
+
+- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.rbinRule.RbinRuleExcludeResourceTags">RbinRuleExcludeResourceTags</a>>
+
+---
+
 ##### `putLockConfiguration` <a name="putLockConfiguration" id="@cdktf/provider-aws.rbinRule.RbinRule.putLockConfiguration"></a>
 
 ```java
@@ -584,6 +611,12 @@ public void putTimeouts(RbinRuleTimeouts value)
 
 ```java
 public void resetDescription()
+```
+
+##### `resetExcludeResourceTags` <a name="resetExcludeResourceTags" id="@cdktf/provider-aws.rbinRule.RbinRule.resetExcludeResourceTags"></a>
+
+```java
+public void resetExcludeResourceTags()
 ```
 
 ##### `resetLockConfiguration` <a name="resetLockConfiguration" id="@cdktf/provider-aws.rbinRule.RbinRule.resetLockConfiguration"></a>
@@ -725,7 +758,7 @@ The construct id used in the generated config for the RbinRule to import.
 
 The id of the existing RbinRule that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rbin_rule#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/rbin_rule#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -756,6 +789,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/
 | <code><a href="#@cdktf/provider-aws.rbinRule.RbinRule.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.rbinRule.RbinRule.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.rbinRule.RbinRule.property.arn">arn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.rbinRule.RbinRule.property.excludeResourceTags">excludeResourceTags</a></code> | <code><a href="#@cdktf/provider-aws.rbinRule.RbinRuleExcludeResourceTagsList">RbinRuleExcludeResourceTagsList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.rbinRule.RbinRule.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.rbinRule.RbinRule.property.lockConfiguration">lockConfiguration</a></code> | <code><a href="#@cdktf/provider-aws.rbinRule.RbinRuleLockConfigurationOutputReference">RbinRuleLockConfigurationOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.rbinRule.RbinRule.property.lockEndTime">lockEndTime</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -765,6 +799,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/
 | <code><a href="#@cdktf/provider-aws.rbinRule.RbinRule.property.status">status</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.rbinRule.RbinRule.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-aws.rbinRule.RbinRuleTimeoutsOutputReference">RbinRuleTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.rbinRule.RbinRule.property.descriptionInput">descriptionInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.rbinRule.RbinRule.property.excludeResourceTagsInput">excludeResourceTagsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.rbinRule.RbinRuleExcludeResourceTags">RbinRuleExcludeResourceTags</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.rbinRule.RbinRule.property.lockConfigurationInput">lockConfigurationInput</a></code> | <code><a href="#@cdktf/provider-aws.rbinRule.RbinRuleLockConfiguration">RbinRuleLockConfiguration</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.rbinRule.RbinRule.property.regionInput">regionInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.rbinRule.RbinRule.property.resourceTagsInput">resourceTagsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.rbinRule.RbinRuleResourceTags">RbinRuleResourceTags</a>></code> | *No description.* |
@@ -933,6 +968,16 @@ public java.lang.String getArn();
 
 ---
 
+##### `excludeResourceTags`<sup>Required</sup> <a name="excludeResourceTags" id="@cdktf/provider-aws.rbinRule.RbinRule.property.excludeResourceTags"></a>
+
+```java
+public RbinRuleExcludeResourceTagsList getExcludeResourceTags();
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.rbinRule.RbinRuleExcludeResourceTagsList">RbinRuleExcludeResourceTagsList</a>
+
+---
+
 ##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.rbinRule.RbinRule.property.id"></a>
 
 ```java
@@ -1020,6 +1065,16 @@ public java.lang.String getDescriptionInput();
 ```
 
 - *Type:* java.lang.String
+
+---
+
+##### `excludeResourceTagsInput`<sup>Optional</sup> <a name="excludeResourceTagsInput" id="@cdktf/provider-aws.rbinRule.RbinRule.property.excludeResourceTagsInput"></a>
+
+```java
+public java.lang.Object getExcludeResourceTagsInput();
+```
+
+- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.rbinRule.RbinRuleExcludeResourceTags">RbinRuleExcludeResourceTags</a>>
 
 ---
 
@@ -1195,6 +1250,8 @@ RbinRuleConfig.builder()
     .resourceType(java.lang.String)
     .retentionPeriod(RbinRuleRetentionPeriod)
 //  .description(java.lang.String)
+//  .excludeResourceTags(IResolvable)
+//  .excludeResourceTags(java.util.List<RbinRuleExcludeResourceTags>)
 //  .lockConfiguration(RbinRuleLockConfiguration)
 //  .region(java.lang.String)
 //  .resourceTags(IResolvable)
@@ -1216,14 +1273,15 @@ RbinRuleConfig.builder()
 | <code><a href="#@cdktf/provider-aws.rbinRule.RbinRuleConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.rbinRule.RbinRuleConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.rbinRule.RbinRuleConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.rbinRule.RbinRuleConfig.property.resourceType">resourceType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rbin_rule#resource_type RbinRule#resource_type}. |
+| <code><a href="#@cdktf/provider-aws.rbinRule.RbinRuleConfig.property.resourceType">resourceType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/rbin_rule#resource_type RbinRule#resource_type}. |
 | <code><a href="#@cdktf/provider-aws.rbinRule.RbinRuleConfig.property.retentionPeriod">retentionPeriod</a></code> | <code><a href="#@cdktf/provider-aws.rbinRule.RbinRuleRetentionPeriod">RbinRuleRetentionPeriod</a></code> | retention_period block. |
-| <code><a href="#@cdktf/provider-aws.rbinRule.RbinRuleConfig.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rbin_rule#description RbinRule#description}. |
+| <code><a href="#@cdktf/provider-aws.rbinRule.RbinRuleConfig.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/rbin_rule#description RbinRule#description}. |
+| <code><a href="#@cdktf/provider-aws.rbinRule.RbinRuleConfig.property.excludeResourceTags">excludeResourceTags</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.rbinRule.RbinRuleExcludeResourceTags">RbinRuleExcludeResourceTags</a>></code> | exclude_resource_tags block. |
 | <code><a href="#@cdktf/provider-aws.rbinRule.RbinRuleConfig.property.lockConfiguration">lockConfiguration</a></code> | <code><a href="#@cdktf/provider-aws.rbinRule.RbinRuleLockConfiguration">RbinRuleLockConfiguration</a></code> | lock_configuration block. |
 | <code><a href="#@cdktf/provider-aws.rbinRule.RbinRuleConfig.property.region">region</a></code> | <code>java.lang.String</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktf/provider-aws.rbinRule.RbinRuleConfig.property.resourceTags">resourceTags</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.rbinRule.RbinRuleResourceTags">RbinRuleResourceTags</a>></code> | resource_tags block. |
-| <code><a href="#@cdktf/provider-aws.rbinRule.RbinRuleConfig.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rbin_rule#tags RbinRule#tags}. |
-| <code><a href="#@cdktf/provider-aws.rbinRule.RbinRuleConfig.property.tagsAll">tagsAll</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rbin_rule#tags_all RbinRule#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.rbinRule.RbinRuleConfig.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/rbin_rule#tags RbinRule#tags}. |
+| <code><a href="#@cdktf/provider-aws.rbinRule.RbinRuleConfig.property.tagsAll">tagsAll</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/rbin_rule#tags_all RbinRule#tags_all}. |
 | <code><a href="#@cdktf/provider-aws.rbinRule.RbinRuleConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-aws.rbinRule.RbinRuleTimeouts">RbinRuleTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1306,7 +1364,7 @@ public java.lang.String getResourceType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rbin_rule#resource_type RbinRule#resource_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/rbin_rule#resource_type RbinRule#resource_type}.
 
 ---
 
@@ -1320,7 +1378,7 @@ public RbinRuleRetentionPeriod getRetentionPeriod();
 
 retention_period block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rbin_rule#retention_period RbinRule#retention_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/rbin_rule#retention_period RbinRule#retention_period}
 
 ---
 
@@ -1332,7 +1390,21 @@ public java.lang.String getDescription();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rbin_rule#description RbinRule#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/rbin_rule#description RbinRule#description}.
+
+---
+
+##### `excludeResourceTags`<sup>Optional</sup> <a name="excludeResourceTags" id="@cdktf/provider-aws.rbinRule.RbinRuleConfig.property.excludeResourceTags"></a>
+
+```java
+public java.lang.Object getExcludeResourceTags();
+```
+
+- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.rbinRule.RbinRuleExcludeResourceTags">RbinRuleExcludeResourceTags</a>>
+
+exclude_resource_tags block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/rbin_rule#exclude_resource_tags RbinRule#exclude_resource_tags}
 
 ---
 
@@ -1346,7 +1418,7 @@ public RbinRuleLockConfiguration getLockConfiguration();
 
 lock_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rbin_rule#lock_configuration RbinRule#lock_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/rbin_rule#lock_configuration RbinRule#lock_configuration}
 
 ---
 
@@ -1360,7 +1432,7 @@ public java.lang.String getRegion();
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rbin_rule#region RbinRule#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/rbin_rule#region RbinRule#region}
 
 ---
 
@@ -1374,7 +1446,7 @@ public java.lang.Object getResourceTags();
 
 resource_tags block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rbin_rule#resource_tags RbinRule#resource_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/rbin_rule#resource_tags RbinRule#resource_tags}
 
 ---
 
@@ -1386,7 +1458,7 @@ public java.util.Map<java.lang.String, java.lang.String> getTags();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rbin_rule#tags RbinRule#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/rbin_rule#tags RbinRule#tags}.
 
 ---
 
@@ -1398,7 +1470,7 @@ public java.util.Map<java.lang.String, java.lang.String> getTagsAll();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rbin_rule#tags_all RbinRule#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/rbin_rule#tags_all RbinRule#tags_all}.
 
 ---
 
@@ -1412,7 +1484,53 @@ public RbinRuleTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rbin_rule#timeouts RbinRule#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/rbin_rule#timeouts RbinRule#timeouts}
+
+---
+
+### RbinRuleExcludeResourceTags <a name="RbinRuleExcludeResourceTags" id="@cdktf/provider-aws.rbinRule.RbinRuleExcludeResourceTags"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-aws.rbinRule.RbinRuleExcludeResourceTags.Initializer"></a>
+
+```java
+import com.hashicorp.cdktf.providers.aws.rbin_rule.RbinRuleExcludeResourceTags;
+
+RbinRuleExcludeResourceTags.builder()
+    .resourceTagKey(java.lang.String)
+//  .resourceTagValue(java.lang.String)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.rbinRule.RbinRuleExcludeResourceTags.property.resourceTagKey">resourceTagKey</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/rbin_rule#resource_tag_key RbinRule#resource_tag_key}. |
+| <code><a href="#@cdktf/provider-aws.rbinRule.RbinRuleExcludeResourceTags.property.resourceTagValue">resourceTagValue</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/rbin_rule#resource_tag_value RbinRule#resource_tag_value}. |
+
+---
+
+##### `resourceTagKey`<sup>Required</sup> <a name="resourceTagKey" id="@cdktf/provider-aws.rbinRule.RbinRuleExcludeResourceTags.property.resourceTagKey"></a>
+
+```java
+public java.lang.String getResourceTagKey();
+```
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/rbin_rule#resource_tag_key RbinRule#resource_tag_key}.
+
+---
+
+##### `resourceTagValue`<sup>Optional</sup> <a name="resourceTagValue" id="@cdktf/provider-aws.rbinRule.RbinRuleExcludeResourceTags.property.resourceTagValue"></a>
+
+```java
+public java.lang.String getResourceTagValue();
+```
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/rbin_rule#resource_tag_value RbinRule#resource_tag_value}.
 
 ---
 
@@ -1446,7 +1564,7 @@ public RbinRuleLockConfigurationUnlockDelay getUnlockDelay();
 
 unlock_delay block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rbin_rule#unlock_delay RbinRule#unlock_delay}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/rbin_rule#unlock_delay RbinRule#unlock_delay}
 
 ---
 
@@ -1467,8 +1585,8 @@ RbinRuleLockConfigurationUnlockDelay.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.rbinRule.RbinRuleLockConfigurationUnlockDelay.property.unlockDelayUnit">unlockDelayUnit</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rbin_rule#unlock_delay_unit RbinRule#unlock_delay_unit}. |
-| <code><a href="#@cdktf/provider-aws.rbinRule.RbinRuleLockConfigurationUnlockDelay.property.unlockDelayValue">unlockDelayValue</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rbin_rule#unlock_delay_value RbinRule#unlock_delay_value}. |
+| <code><a href="#@cdktf/provider-aws.rbinRule.RbinRuleLockConfigurationUnlockDelay.property.unlockDelayUnit">unlockDelayUnit</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/rbin_rule#unlock_delay_unit RbinRule#unlock_delay_unit}. |
+| <code><a href="#@cdktf/provider-aws.rbinRule.RbinRuleLockConfigurationUnlockDelay.property.unlockDelayValue">unlockDelayValue</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/rbin_rule#unlock_delay_value RbinRule#unlock_delay_value}. |
 
 ---
 
@@ -1480,7 +1598,7 @@ public java.lang.String getUnlockDelayUnit();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rbin_rule#unlock_delay_unit RbinRule#unlock_delay_unit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/rbin_rule#unlock_delay_unit RbinRule#unlock_delay_unit}.
 
 ---
 
@@ -1492,7 +1610,7 @@ public java.lang.Number getUnlockDelayValue();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rbin_rule#unlock_delay_value RbinRule#unlock_delay_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/rbin_rule#unlock_delay_value RbinRule#unlock_delay_value}.
 
 ---
 
@@ -1513,8 +1631,8 @@ RbinRuleResourceTags.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.rbinRule.RbinRuleResourceTags.property.resourceTagKey">resourceTagKey</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rbin_rule#resource_tag_key RbinRule#resource_tag_key}. |
-| <code><a href="#@cdktf/provider-aws.rbinRule.RbinRuleResourceTags.property.resourceTagValue">resourceTagValue</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rbin_rule#resource_tag_value RbinRule#resource_tag_value}. |
+| <code><a href="#@cdktf/provider-aws.rbinRule.RbinRuleResourceTags.property.resourceTagKey">resourceTagKey</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/rbin_rule#resource_tag_key RbinRule#resource_tag_key}. |
+| <code><a href="#@cdktf/provider-aws.rbinRule.RbinRuleResourceTags.property.resourceTagValue">resourceTagValue</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/rbin_rule#resource_tag_value RbinRule#resource_tag_value}. |
 
 ---
 
@@ -1526,7 +1644,7 @@ public java.lang.String getResourceTagKey();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rbin_rule#resource_tag_key RbinRule#resource_tag_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/rbin_rule#resource_tag_key RbinRule#resource_tag_key}.
 
 ---
 
@@ -1538,7 +1656,7 @@ public java.lang.String getResourceTagValue();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rbin_rule#resource_tag_value RbinRule#resource_tag_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/rbin_rule#resource_tag_value RbinRule#resource_tag_value}.
 
 ---
 
@@ -1559,8 +1677,8 @@ RbinRuleRetentionPeriod.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.rbinRule.RbinRuleRetentionPeriod.property.retentionPeriodUnit">retentionPeriodUnit</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rbin_rule#retention_period_unit RbinRule#retention_period_unit}. |
-| <code><a href="#@cdktf/provider-aws.rbinRule.RbinRuleRetentionPeriod.property.retentionPeriodValue">retentionPeriodValue</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rbin_rule#retention_period_value RbinRule#retention_period_value}. |
+| <code><a href="#@cdktf/provider-aws.rbinRule.RbinRuleRetentionPeriod.property.retentionPeriodUnit">retentionPeriodUnit</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/rbin_rule#retention_period_unit RbinRule#retention_period_unit}. |
+| <code><a href="#@cdktf/provider-aws.rbinRule.RbinRuleRetentionPeriod.property.retentionPeriodValue">retentionPeriodValue</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/rbin_rule#retention_period_value RbinRule#retention_period_value}. |
 
 ---
 
@@ -1572,7 +1690,7 @@ public java.lang.String getRetentionPeriodUnit();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rbin_rule#retention_period_unit RbinRule#retention_period_unit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/rbin_rule#retention_period_unit RbinRule#retention_period_unit}.
 
 ---
 
@@ -1584,7 +1702,7 @@ public java.lang.Number getRetentionPeriodValue();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rbin_rule#retention_period_value RbinRule#retention_period_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/rbin_rule#retention_period_value RbinRule#retention_period_value}.
 
 ---
 
@@ -1606,9 +1724,9 @@ RbinRuleTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.rbinRule.RbinRuleTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rbin_rule#create RbinRule#create}. |
-| <code><a href="#@cdktf/provider-aws.rbinRule.RbinRuleTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rbin_rule#delete RbinRule#delete}. |
-| <code><a href="#@cdktf/provider-aws.rbinRule.RbinRuleTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rbin_rule#update RbinRule#update}. |
+| <code><a href="#@cdktf/provider-aws.rbinRule.RbinRuleTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/rbin_rule#create RbinRule#create}. |
+| <code><a href="#@cdktf/provider-aws.rbinRule.RbinRuleTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/rbin_rule#delete RbinRule#delete}. |
+| <code><a href="#@cdktf/provider-aws.rbinRule.RbinRuleTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/rbin_rule#update RbinRule#update}. |
 
 ---
 
@@ -1620,7 +1738,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rbin_rule#create RbinRule#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/rbin_rule#create RbinRule#create}.
 
 ---
 
@@ -1632,7 +1750,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rbin_rule#delete RbinRule#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/rbin_rule#delete RbinRule#delete}.
 
 ---
 
@@ -1644,11 +1762,489 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rbin_rule#update RbinRule#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/rbin_rule#update RbinRule#update}.
 
 ---
 
 ## Classes <a name="Classes" id="Classes"></a>
+
+### RbinRuleExcludeResourceTagsList <a name="RbinRuleExcludeResourceTagsList" id="@cdktf/provider-aws.rbinRule.RbinRuleExcludeResourceTagsList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-aws.rbinRule.RbinRuleExcludeResourceTagsList.Initializer"></a>
+
+```java
+import com.hashicorp.cdktf.providers.aws.rbin_rule.RbinRuleExcludeResourceTagsList;
+
+new RbinRuleExcludeResourceTagsList(IInterpolatingParent terraformResource, java.lang.String terraformAttribute, java.lang.Boolean wrapsSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.rbinRule.RbinRuleExcludeResourceTagsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>com.hashicorp.cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-aws.rbinRule.RbinRuleExcludeResourceTagsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-aws.rbinRule.RbinRuleExcludeResourceTagsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>java.lang.Boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-aws.rbinRule.RbinRuleExcludeResourceTagsList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* com.hashicorp.cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.rbinRule.RbinRuleExcludeResourceTagsList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktf/provider-aws.rbinRule.RbinRuleExcludeResourceTagsList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* java.lang.Boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-aws.rbinRule.RbinRuleExcludeResourceTagsList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktf/provider-aws.rbinRule.RbinRuleExcludeResourceTagsList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.rbinRule.RbinRuleExcludeResourceTagsList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-aws.rbinRule.RbinRuleExcludeResourceTagsList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-aws.rbinRule.RbinRuleExcludeResourceTagsList.get">get</a></code> | *No description.* |
+
+---
+
+##### `allWithMapKey` <a name="allWithMapKey" id="@cdktf/provider-aws.rbinRule.RbinRuleExcludeResourceTagsList.allWithMapKey"></a>
+
+```java
+public DynamicListTerraformIterator allWithMapKey(java.lang.String mapKeyAttributeName)
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-aws.rbinRule.RbinRuleExcludeResourceTagsList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-aws.rbinRule.RbinRuleExcludeResourceTagsList.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-aws.rbinRule.RbinRuleExcludeResourceTagsList.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.rbinRule.RbinRuleExcludeResourceTagsList.resolve.parameter._context"></a>
+
+- *Type:* com.hashicorp.cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-aws.rbinRule.RbinRuleExcludeResourceTagsList.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktf/provider-aws.rbinRule.RbinRuleExcludeResourceTagsList.get"></a>
+
+```java
+public RbinRuleExcludeResourceTagsOutputReference get(java.lang.Number index)
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-aws.rbinRule.RbinRuleExcludeResourceTagsList.get.parameter.index"></a>
+
+- *Type:* java.lang.Number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.rbinRule.RbinRuleExcludeResourceTagsList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-aws.rbinRule.RbinRuleExcludeResourceTagsList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.rbinRule.RbinRuleExcludeResourceTagsList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.rbinRule.RbinRuleExcludeResourceTags">RbinRuleExcludeResourceTags</a>></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-aws.rbinRule.RbinRuleExcludeResourceTagsList.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.rbinRule.RbinRuleExcludeResourceTagsList.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.rbinRule.RbinRuleExcludeResourceTagsList.property.internalValue"></a>
+
+```java
+public java.lang.Object getInternalValue();
+```
+
+- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.rbinRule.RbinRuleExcludeResourceTags">RbinRuleExcludeResourceTags</a>>
+
+---
+
+
+### RbinRuleExcludeResourceTagsOutputReference <a name="RbinRuleExcludeResourceTagsOutputReference" id="@cdktf/provider-aws.rbinRule.RbinRuleExcludeResourceTagsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-aws.rbinRule.RbinRuleExcludeResourceTagsOutputReference.Initializer"></a>
+
+```java
+import com.hashicorp.cdktf.providers.aws.rbin_rule.RbinRuleExcludeResourceTagsOutputReference;
+
+new RbinRuleExcludeResourceTagsOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute, java.lang.Number complexObjectIndex, java.lang.Boolean complexObjectIsFromSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.rbinRule.RbinRuleExcludeResourceTagsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>com.hashicorp.cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-aws.rbinRule.RbinRuleExcludeResourceTagsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-aws.rbinRule.RbinRuleExcludeResourceTagsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>java.lang.Number</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-aws.rbinRule.RbinRuleExcludeResourceTagsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>java.lang.Boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-aws.rbinRule.RbinRuleExcludeResourceTagsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* com.hashicorp.cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.rbinRule.RbinRuleExcludeResourceTagsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktf/provider-aws.rbinRule.RbinRuleExcludeResourceTagsOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* java.lang.Number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktf/provider-aws.rbinRule.RbinRuleExcludeResourceTagsOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* java.lang.Boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-aws.rbinRule.RbinRuleExcludeResourceTagsOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.rbinRule.RbinRuleExcludeResourceTagsOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.rbinRule.RbinRuleExcludeResourceTagsOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.rbinRule.RbinRuleExcludeResourceTagsOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.rbinRule.RbinRuleExcludeResourceTagsOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.rbinRule.RbinRuleExcludeResourceTagsOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.rbinRule.RbinRuleExcludeResourceTagsOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.rbinRule.RbinRuleExcludeResourceTagsOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.rbinRule.RbinRuleExcludeResourceTagsOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.rbinRule.RbinRuleExcludeResourceTagsOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.rbinRule.RbinRuleExcludeResourceTagsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.rbinRule.RbinRuleExcludeResourceTagsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-aws.rbinRule.RbinRuleExcludeResourceTagsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-aws.rbinRule.RbinRuleExcludeResourceTagsOutputReference.resetResourceTagValue">resetResourceTagValue</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-aws.rbinRule.RbinRuleExcludeResourceTagsOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-aws.rbinRule.RbinRuleExcludeResourceTagsOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.rbinRule.RbinRuleExcludeResourceTagsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-aws.rbinRule.RbinRuleExcludeResourceTagsOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.rbinRule.RbinRuleExcludeResourceTagsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-aws.rbinRule.RbinRuleExcludeResourceTagsOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.rbinRule.RbinRuleExcludeResourceTagsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-aws.rbinRule.RbinRuleExcludeResourceTagsOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.rbinRule.RbinRuleExcludeResourceTagsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-aws.rbinRule.RbinRuleExcludeResourceTagsOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.rbinRule.RbinRuleExcludeResourceTagsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-aws.rbinRule.RbinRuleExcludeResourceTagsOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.rbinRule.RbinRuleExcludeResourceTagsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-aws.rbinRule.RbinRuleExcludeResourceTagsOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.rbinRule.RbinRuleExcludeResourceTagsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-aws.rbinRule.RbinRuleExcludeResourceTagsOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.rbinRule.RbinRuleExcludeResourceTagsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-aws.rbinRule.RbinRuleExcludeResourceTagsOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.rbinRule.RbinRuleExcludeResourceTagsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-aws.rbinRule.RbinRuleExcludeResourceTagsOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-aws.rbinRule.RbinRuleExcludeResourceTagsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-aws.rbinRule.RbinRuleExcludeResourceTagsOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.rbinRule.RbinRuleExcludeResourceTagsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* com.hashicorp.cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-aws.rbinRule.RbinRuleExcludeResourceTagsOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetResourceTagValue` <a name="resetResourceTagValue" id="@cdktf/provider-aws.rbinRule.RbinRuleExcludeResourceTagsOutputReference.resetResourceTagValue"></a>
+
+```java
+public void resetResourceTagValue()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.rbinRule.RbinRuleExcludeResourceTagsOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-aws.rbinRule.RbinRuleExcludeResourceTagsOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.rbinRule.RbinRuleExcludeResourceTagsOutputReference.property.resourceTagKeyInput">resourceTagKeyInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.rbinRule.RbinRuleExcludeResourceTagsOutputReference.property.resourceTagValueInput">resourceTagValueInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.rbinRule.RbinRuleExcludeResourceTagsOutputReference.property.resourceTagKey">resourceTagKey</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.rbinRule.RbinRuleExcludeResourceTagsOutputReference.property.resourceTagValue">resourceTagValue</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.rbinRule.RbinRuleExcludeResourceTagsOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.rbinRule.RbinRuleExcludeResourceTags">RbinRuleExcludeResourceTags</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-aws.rbinRule.RbinRuleExcludeResourceTagsOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.rbinRule.RbinRuleExcludeResourceTagsOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `resourceTagKeyInput`<sup>Optional</sup> <a name="resourceTagKeyInput" id="@cdktf/provider-aws.rbinRule.RbinRuleExcludeResourceTagsOutputReference.property.resourceTagKeyInput"></a>
+
+```java
+public java.lang.String getResourceTagKeyInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `resourceTagValueInput`<sup>Optional</sup> <a name="resourceTagValueInput" id="@cdktf/provider-aws.rbinRule.RbinRuleExcludeResourceTagsOutputReference.property.resourceTagValueInput"></a>
+
+```java
+public java.lang.String getResourceTagValueInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `resourceTagKey`<sup>Required</sup> <a name="resourceTagKey" id="@cdktf/provider-aws.rbinRule.RbinRuleExcludeResourceTagsOutputReference.property.resourceTagKey"></a>
+
+```java
+public java.lang.String getResourceTagKey();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `resourceTagValue`<sup>Required</sup> <a name="resourceTagValue" id="@cdktf/provider-aws.rbinRule.RbinRuleExcludeResourceTagsOutputReference.property.resourceTagValue"></a>
+
+```java
+public java.lang.String getResourceTagValue();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.rbinRule.RbinRuleExcludeResourceTagsOutputReference.property.internalValue"></a>
+
+```java
+public java.lang.Object getInternalValue();
+```
+
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.rbinRule.RbinRuleExcludeResourceTags">RbinRuleExcludeResourceTags</a>
+
+---
+
 
 ### RbinRuleLockConfigurationOutputReference <a name="RbinRuleLockConfigurationOutputReference" id="@cdktf/provider-aws.rbinRule.RbinRuleLockConfigurationOutputReference"></a>
 

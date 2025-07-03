@@ -4,7 +4,7 @@
 
 ### CloudwatchLogIndexPolicy <a name="CloudwatchLogIndexPolicy" id="@cdktf/provider-aws.cloudwatchLogIndexPolicy.CloudwatchLogIndexPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/cloudwatch_log_index_policy aws_cloudwatch_log_index_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/cloudwatch_log_index_policy aws_cloudwatch_log_index_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudwatchLogIndexPolicy.CloudwatchLogIndexPolicy.Initializer"></a>
 
@@ -474,7 +474,7 @@ The construct id used in the generated config for the CloudwatchLogIndexPolicy t
 
 The id of the existing CloudwatchLogIndexPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/cloudwatch_log_index_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/cloudwatch_log_index_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -756,7 +756,7 @@ const cloudwatchLogIndexPolicyConfig: cloudwatchLogIndexPolicy.CloudwatchLogInde
 | <code><a href="#@cdktf/provider-aws.cloudwatchLogIndexPolicy.CloudwatchLogIndexPolicyConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudwatchLogIndexPolicy.CloudwatchLogIndexPolicyConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudwatchLogIndexPolicy.CloudwatchLogIndexPolicyConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.cloudwatchLogIndexPolicy.CloudwatchLogIndexPolicyConfig.property.logGroupName">logGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/cloudwatch_log_index_policy#log_group_name CloudwatchLogIndexPolicy#log_group_name}. |
+| <code><a href="#@cdktf/provider-aws.cloudwatchLogIndexPolicy.CloudwatchLogIndexPolicyConfig.property.logGroupName">logGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/cloudwatch_log_index_policy#log_group_name CloudwatchLogIndexPolicy#log_group_name}. |
 | <code><a href="#@cdktf/provider-aws.cloudwatchLogIndexPolicy.CloudwatchLogIndexPolicyConfig.property.policyDocument">policyDocument</a></code> | <code>string</code> | Field index filter policy, in JSON. |
 | <code><a href="#@cdktf/provider-aws.cloudwatchLogIndexPolicy.CloudwatchLogIndexPolicyConfig.property.region">region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
@@ -840,7 +840,7 @@ public readonly logGroupName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/cloudwatch_log_index_policy#log_group_name CloudwatchLogIndexPolicy#log_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/cloudwatch_log_index_policy#log_group_name CloudwatchLogIndexPolicy#log_group_name}.
 
 ---
 
@@ -854,7 +854,7 @@ public readonly policyDocument: string;
 
 Field index filter policy, in JSON.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/cloudwatch_log_index_policy#policy_document CloudwatchLogIndexPolicy#policy_document}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/cloudwatch_log_index_policy#policy_document CloudwatchLogIndexPolicy#policy_document}
 
 ---
 
@@ -868,7 +868,7 @@ public readonly region: string;
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/cloudwatch_log_index_policy#region CloudwatchLogIndexPolicy#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/cloudwatch_log_index_policy#region CloudwatchLogIndexPolicy#region}
 
 ---
 

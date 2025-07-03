@@ -4,7 +4,7 @@
 
 ### DataAwsAcmpcaCertificate <a name="DataAwsAcmpcaCertificate" id="@cdktf/provider-aws.dataAwsAcmpcaCertificate.DataAwsAcmpcaCertificate"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/acmpca_certificate aws_acmpca_certificate}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/data-sources/acmpca_certificate aws_acmpca_certificate}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAcmpcaCertificate.DataAwsAcmpcaCertificate.Initializer"></a>
 
@@ -379,7 +379,7 @@ The construct id used in the generated config for the DataAwsAcmpcaCertificate t
 
 The id of the existing DataAwsAcmpcaCertificate that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/acmpca_certificate#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/data-sources/acmpca_certificate#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -683,9 +683,9 @@ const dataAwsAcmpcaCertificateConfig: dataAwsAcmpcaCertificate.DataAwsAcmpcaCert
 | <code><a href="#@cdktf/provider-aws.dataAwsAcmpcaCertificate.DataAwsAcmpcaCertificateConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsAcmpcaCertificate.DataAwsAcmpcaCertificateConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsAcmpcaCertificate.DataAwsAcmpcaCertificateConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsAcmpcaCertificate.DataAwsAcmpcaCertificateConfig.property.arn">arn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/acmpca_certificate#arn DataAwsAcmpcaCertificate#arn}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsAcmpcaCertificate.DataAwsAcmpcaCertificateConfig.property.certificateAuthorityArn">certificateAuthorityArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/acmpca_certificate#certificate_authority_arn DataAwsAcmpcaCertificate#certificate_authority_arn}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsAcmpcaCertificate.DataAwsAcmpcaCertificateConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/acmpca_certificate#id DataAwsAcmpcaCertificate#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsAcmpcaCertificate.DataAwsAcmpcaCertificateConfig.property.arn">arn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/data-sources/acmpca_certificate#arn DataAwsAcmpcaCertificate#arn}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsAcmpcaCertificate.DataAwsAcmpcaCertificateConfig.property.certificateAuthorityArn">certificateAuthorityArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/data-sources/acmpca_certificate#certificate_authority_arn DataAwsAcmpcaCertificate#certificate_authority_arn}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsAcmpcaCertificate.DataAwsAcmpcaCertificateConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/data-sources/acmpca_certificate#id DataAwsAcmpcaCertificate#id}. |
 | <code><a href="#@cdktf/provider-aws.dataAwsAcmpcaCertificate.DataAwsAcmpcaCertificateConfig.property.region">region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -768,7 +768,7 @@ public readonly arn: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/acmpca_certificate#arn DataAwsAcmpcaCertificate#arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/data-sources/acmpca_certificate#arn DataAwsAcmpcaCertificate#arn}.
 
 ---
 
@@ -780,7 +780,7 @@ public readonly certificateAuthorityArn: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/acmpca_certificate#certificate_authority_arn DataAwsAcmpcaCertificate#certificate_authority_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/data-sources/acmpca_certificate#certificate_authority_arn DataAwsAcmpcaCertificate#certificate_authority_arn}.
 
 ---
 
@@ -792,7 +792,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/acmpca_certificate#id DataAwsAcmpcaCertificate#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/data-sources/acmpca_certificate#id DataAwsAcmpcaCertificate#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -809,7 +809,7 @@ public readonly region: string;
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/acmpca_certificate#region DataAwsAcmpcaCertificate#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/data-sources/acmpca_certificate#region DataAwsAcmpcaCertificate#region}
 
 ---
 
