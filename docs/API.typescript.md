@@ -1616,6 +1616,7 @@ The following submodules are available:
 - [pipesPipe](./pipesPipe.typescript.md)
 - [placementGroup](./placementGroup.typescript.md)
 - [prometheusAlertManagerDefinition](./prometheusAlertManagerDefinition.typescript.md)
+- [prometheusQueryLoggingConfiguration](./prometheusQueryLoggingConfiguration.typescript.md)
 - [prometheusRuleGroupNamespace](./prometheusRuleGroupNamespace.typescript.md)
 - [prometheusScraper](./prometheusScraper.typescript.md)
 - [prometheusWorkspace](./prometheusWorkspace.typescript.md)

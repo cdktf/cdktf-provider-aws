@@ -1616,6 +1616,7 @@ The following submodules are available:
 - [pipesPipe](./pipesPipe.java.md)
 - [placementGroup](./placementGroup.java.md)
 - [prometheusAlertManagerDefinition](./prometheusAlertManagerDefinition.java.md)
+- [prometheusQueryLoggingConfiguration](./prometheusQueryLoggingConfiguration.java.md)
 - [prometheusRuleGroupNamespace](./prometheusRuleGroupNamespace.java.md)
 - [prometheusScraper](./prometheusScraper.java.md)
 - [prometheusWorkspace](./prometheusWorkspace.java.md)

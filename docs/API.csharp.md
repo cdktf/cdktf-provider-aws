@@ -1616,6 +1616,7 @@ The following submodules are available:
 - [pipesPipe](./pipesPipe.csharp.md)
 - [placementGroup](./placementGroup.csharp.md)
 - [prometheusAlertManagerDefinition](./prometheusAlertManagerDefinition.csharp.md)
+- [prometheusQueryLoggingConfiguration](./prometheusQueryLoggingConfiguration.csharp.md)
 - [prometheusRuleGroupNamespace](./prometheusRuleGroupNamespace.csharp.md)
 - [prometheusScraper](./prometheusScraper.csharp.md)
 - [prometheusWorkspace](./prometheusWorkspace.csharp.md)
