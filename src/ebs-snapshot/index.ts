@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/ebs_snapshot
+// https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/ebs_snapshot
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,64 +13,64 @@ import * as cdktf from 'cdktf';
 
 export interface EbsSnapshotConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/ebs_snapshot#description EbsSnapshot#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/ebs_snapshot#description EbsSnapshot#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/ebs_snapshot#id EbsSnapshot#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/ebs_snapshot#id EbsSnapshot#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/ebs_snapshot#outpost_arn EbsSnapshot#outpost_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/ebs_snapshot#outpost_arn EbsSnapshot#outpost_arn}
   */
   readonly outpostArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/ebs_snapshot#permanent_restore EbsSnapshot#permanent_restore}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/ebs_snapshot#permanent_restore EbsSnapshot#permanent_restore}
   */
   readonly permanentRestore?: boolean | cdktf.IResolvable;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/ebs_snapshot#region EbsSnapshot#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/ebs_snapshot#region EbsSnapshot#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/ebs_snapshot#storage_tier EbsSnapshot#storage_tier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/ebs_snapshot#storage_tier EbsSnapshot#storage_tier}
   */
   readonly storageTier?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/ebs_snapshot#tags EbsSnapshot#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/ebs_snapshot#tags EbsSnapshot#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/ebs_snapshot#tags_all EbsSnapshot#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/ebs_snapshot#tags_all EbsSnapshot#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/ebs_snapshot#temporary_restore_days EbsSnapshot#temporary_restore_days}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/ebs_snapshot#temporary_restore_days EbsSnapshot#temporary_restore_days}
   */
   readonly temporaryRestoreDays?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/ebs_snapshot#volume_id EbsSnapshot#volume_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/ebs_snapshot#volume_id EbsSnapshot#volume_id}
   */
   readonly volumeId: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/ebs_snapshot#timeouts EbsSnapshot#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/ebs_snapshot#timeouts EbsSnapshot#timeouts}
   */
   readonly timeouts?: EbsSnapshotTimeouts;
 }
 export interface EbsSnapshotTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/ebs_snapshot#create EbsSnapshot#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/ebs_snapshot#create EbsSnapshot#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/ebs_snapshot#delete EbsSnapshot#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/ebs_snapshot#delete EbsSnapshot#delete}
   */
   readonly delete?: string;
 }
@@ -193,7 +193,7 @@ export class EbsSnapshotTimeoutsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/ebs_snapshot aws_ebs_snapshot}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/ebs_snapshot aws_ebs_snapshot}
 */
 export class EbsSnapshot extends cdktf.TerraformResource {
 
@@ -209,7 +209,7 @@ export class EbsSnapshot extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a EbsSnapshot resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the EbsSnapshot to import
-  * @param importFromId The id of the existing EbsSnapshot that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/ebs_snapshot#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing EbsSnapshot that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/ebs_snapshot#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the EbsSnapshot to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -221,7 +221,7 @@ export class EbsSnapshot extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/ebs_snapshot aws_ebs_snapshot} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/ebs_snapshot aws_ebs_snapshot} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -232,7 +232,7 @@ export class EbsSnapshot extends cdktf.TerraformResource {
       terraformResourceType: 'aws_ebs_snapshot',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.2.0',
+        providerVersion: '6.3.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

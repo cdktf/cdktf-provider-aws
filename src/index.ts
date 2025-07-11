@@ -1009,6 +1009,7 @@ export * as pinpointsmsvoicev2PhoneNumber from './pinpointsmsvoicev2-phone-numbe
 export * as pipesPipe from './pipes-pipe';
 export * as placementGroup from './placement-group';
 export * as prometheusAlertManagerDefinition from './prometheus-alert-manager-definition';
+export * as prometheusQueryLoggingConfiguration from './prometheus-query-logging-configuration';
 export * as prometheusRuleGroupNamespace from './prometheus-rule-group-namespace';
 export * as prometheusScraper from './prometheus-scraper';
 export * as prometheusWorkspace from './prometheus-workspace';

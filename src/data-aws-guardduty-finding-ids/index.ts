@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/data-sources/guardduty_finding_ids
+// https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/data-sources/guardduty_finding_ids
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,19 +13,19 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsGuarddutyFindingIdsConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/data-sources/guardduty_finding_ids#detector_id DataAwsGuarddutyFindingIds#detector_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/data-sources/guardduty_finding_ids#detector_id DataAwsGuarddutyFindingIds#detector_id}
   */
   readonly detectorId: string;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/data-sources/guardduty_finding_ids#region DataAwsGuarddutyFindingIds#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/data-sources/guardduty_finding_ids#region DataAwsGuarddutyFindingIds#region}
   */
   readonly region?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/data-sources/guardduty_finding_ids aws_guardduty_finding_ids}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/data-sources/guardduty_finding_ids aws_guardduty_finding_ids}
 */
 export class DataAwsGuarddutyFindingIds extends cdktf.TerraformDataSource {
 
@@ -41,7 +41,7 @@ export class DataAwsGuarddutyFindingIds extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataAwsGuarddutyFindingIds resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsGuarddutyFindingIds to import
-  * @param importFromId The id of the existing DataAwsGuarddutyFindingIds that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/data-sources/guardduty_finding_ids#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsGuarddutyFindingIds that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/data-sources/guardduty_finding_ids#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsGuarddutyFindingIds to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -53,7 +53,7 @@ export class DataAwsGuarddutyFindingIds extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/data-sources/guardduty_finding_ids aws_guardduty_finding_ids} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/data-sources/guardduty_finding_ids aws_guardduty_finding_ids} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -64,7 +64,7 @@ export class DataAwsGuarddutyFindingIds extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_guardduty_finding_ids',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.2.0',
+        providerVersion: '6.3.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

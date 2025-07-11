@@ -1,3 +1,3 @@
 # `aws_transfer_profile`
 
-Refer to the Terraform Registry for docs: [`aws_transfer_profile`](https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/transfer_profile).
+Refer to the Terraform Registry for docs: [`aws_transfer_profile`](https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/transfer_profile).
