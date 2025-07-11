@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/data-sources/cognito_user_groups
+// https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/data-sources/cognito_user_groups
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,11 @@ export interface DataAwsCognitoUserGroupsConfig extends cdktf.TerraformMetaArgum
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/data-sources/cognito_user_groups#region DataAwsCognitoUserGroups#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/data-sources/cognito_user_groups#region DataAwsCognitoUserGroups#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/data-sources/cognito_user_groups#user_pool_id DataAwsCognitoUserGroups#user_pool_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/data-sources/cognito_user_groups#user_pool_id DataAwsCognitoUserGroups#user_pool_id}
   */
   readonly userPoolId: string;
 }
@@ -115,7 +115,7 @@ export class DataAwsCognitoUserGroupsGroupsList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/data-sources/cognito_user_groups aws_cognito_user_groups}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/data-sources/cognito_user_groups aws_cognito_user_groups}
 */
 export class DataAwsCognitoUserGroups extends cdktf.TerraformDataSource {
 
@@ -131,7 +131,7 @@ export class DataAwsCognitoUserGroups extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataAwsCognitoUserGroups resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsCognitoUserGroups to import
-  * @param importFromId The id of the existing DataAwsCognitoUserGroups that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/data-sources/cognito_user_groups#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsCognitoUserGroups that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/data-sources/cognito_user_groups#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsCognitoUserGroups to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -143,7 +143,7 @@ export class DataAwsCognitoUserGroups extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/data-sources/cognito_user_groups aws_cognito_user_groups} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/data-sources/cognito_user_groups aws_cognito_user_groups} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -154,7 +154,7 @@ export class DataAwsCognitoUserGroups extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_cognito_user_groups',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.2.0',
+        providerVersion: '6.3.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

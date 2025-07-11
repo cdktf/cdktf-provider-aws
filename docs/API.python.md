@@ -1616,6 +1616,7 @@ The following submodules are available:
 - [pipesPipe](./pipesPipe.python.md)
 - [placementGroup](./placementGroup.python.md)
 - [prometheusAlertManagerDefinition](./prometheusAlertManagerDefinition.python.md)
+- [prometheusQueryLoggingConfiguration](./prometheusQueryLoggingConfiguration.python.md)
 - [prometheusRuleGroupNamespace](./prometheusRuleGroupNamespace.python.md)
 - [prometheusScraper](./prometheusScraper.python.md)
 - [prometheusWorkspace](./prometheusWorkspace.python.md)

@@ -1009,6 +1009,7 @@ Object.defineProperty(exports, 'pinpointsmsvoicev2PhoneNumber', { get: function 
 Object.defineProperty(exports, 'pipesPipe', { get: function () { return require('./pipes-pipe'); } });
 Object.defineProperty(exports, 'placementGroup', { get: function () { return require('./placement-group'); } });
 Object.defineProperty(exports, 'prometheusAlertManagerDefinition', { get: function () { return require('./prometheus-alert-manager-definition'); } });
+Object.defineProperty(exports, 'prometheusQueryLoggingConfiguration', { get: function () { return require('./prometheus-query-logging-configuration'); } });
 Object.defineProperty(exports, 'prometheusRuleGroupNamespace', { get: function () { return require('./prometheus-rule-group-namespace'); } });
 Object.defineProperty(exports, 'prometheusScraper', { get: function () { return require('./prometheus-scraper'); } });
 Object.defineProperty(exports, 'prometheusWorkspace', { get: function () { return require('./prometheus-workspace'); } });
