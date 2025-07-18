@@ -4,7 +4,7 @@
 
 ### DataAwsOamLinks <a name="DataAwsOamLinks" id="@cdktf/provider-aws.dataAwsOamLinks.DataAwsOamLinks"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/data-sources/oam_links aws_oam_links}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/data-sources/oam_links aws_oam_links}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsOamLinks.DataAwsOamLinks.Initializer"></a>
 
@@ -379,7 +379,7 @@ The construct id used in the generated config for the DataAwsOamLinks to import.
 
 The id of the existing DataAwsOamLinks that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/data-sources/oam_links#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/data-sources/oam_links#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -638,7 +638,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsoamlinks"
 | <code><a href="#@cdktf/provider-aws.dataAwsOamLinks.DataAwsOamLinksConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsOamLinks.DataAwsOamLinksConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsOamLinks.DataAwsOamLinksConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsOamLinks.DataAwsOamLinksConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/data-sources/oam_links#id DataAwsOamLinks#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsOamLinks.DataAwsOamLinksConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/data-sources/oam_links#id DataAwsOamLinks#id}. |
 | <code><a href="#@cdktf/provider-aws.dataAwsOamLinks.DataAwsOamLinksConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -721,7 +721,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/data-sources/oam_links#id DataAwsOamLinks#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/data-sources/oam_links#id DataAwsOamLinks#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -738,7 +738,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/data-sources/oam_links#region DataAwsOamLinks#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/data-sources/oam_links#region DataAwsOamLinks#region}
 
 ---
 

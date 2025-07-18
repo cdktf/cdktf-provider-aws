@@ -4,7 +4,7 @@
 
 ### DetectiveInvitationAccepter <a name="DetectiveInvitationAccepter" id="@cdktf/provider-aws.detectiveInvitationAccepter.DetectiveInvitationAccepter"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/detective_invitation_accepter aws_detective_invitation_accepter}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/detective_invitation_accepter aws_detective_invitation_accepter}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.detectiveInvitationAccepter.DetectiveInvitationAccepter.Initializer"></a>
 
@@ -481,7 +481,7 @@ The construct id used in the generated config for the DetectiveInvitationAccepte
 
 The id of the existing DetectiveInvitationAccepter that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/detective_invitation_accepter#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/detective_invitation_accepter#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -774,8 +774,8 @@ new DetectiveInvitationAccepterConfig {
 | <code><a href="#@cdktf/provider-aws.detectiveInvitationAccepter.DetectiveInvitationAccepterConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.detectiveInvitationAccepter.DetectiveInvitationAccepterConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.detectiveInvitationAccepter.DetectiveInvitationAccepterConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.detectiveInvitationAccepter.DetectiveInvitationAccepterConfig.property.graphArn">GraphArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/detective_invitation_accepter#graph_arn DetectiveInvitationAccepter#graph_arn}. |
-| <code><a href="#@cdktf/provider-aws.detectiveInvitationAccepter.DetectiveInvitationAccepterConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/detective_invitation_accepter#id DetectiveInvitationAccepter#id}. |
+| <code><a href="#@cdktf/provider-aws.detectiveInvitationAccepter.DetectiveInvitationAccepterConfig.property.graphArn">GraphArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/detective_invitation_accepter#graph_arn DetectiveInvitationAccepter#graph_arn}. |
+| <code><a href="#@cdktf/provider-aws.detectiveInvitationAccepter.DetectiveInvitationAccepterConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/detective_invitation_accepter#id DetectiveInvitationAccepter#id}. |
 | <code><a href="#@cdktf/provider-aws.detectiveInvitationAccepter.DetectiveInvitationAccepterConfig.property.region">Region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -858,7 +858,7 @@ public string GraphArn { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/detective_invitation_accepter#graph_arn DetectiveInvitationAccepter#graph_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/detective_invitation_accepter#graph_arn DetectiveInvitationAccepter#graph_arn}.
 
 ---
 
@@ -870,7 +870,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/detective_invitation_accepter#id DetectiveInvitationAccepter#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/detective_invitation_accepter#id DetectiveInvitationAccepter#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -887,7 +887,7 @@ public string Region { get; set; }
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/detective_invitation_accepter#region DetectiveInvitationAccepter#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/detective_invitation_accepter#region DetectiveInvitationAccepter#region}
 
 ---
 
