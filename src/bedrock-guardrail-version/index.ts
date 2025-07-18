@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/bedrock_guardrail_version
+// https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/bedrock_guardrail_version
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,27 +13,27 @@ import * as cdktf from 'cdktf';
 
 export interface BedrockGuardrailVersionConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/bedrock_guardrail_version#description BedrockGuardrailVersion#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/bedrock_guardrail_version#description BedrockGuardrailVersion#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/bedrock_guardrail_version#guardrail_arn BedrockGuardrailVersion#guardrail_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/bedrock_guardrail_version#guardrail_arn BedrockGuardrailVersion#guardrail_arn}
   */
   readonly guardrailArn: string;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/bedrock_guardrail_version#region BedrockGuardrailVersion#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/bedrock_guardrail_version#region BedrockGuardrailVersion#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/bedrock_guardrail_version#skip_destroy BedrockGuardrailVersion#skip_destroy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/bedrock_guardrail_version#skip_destroy BedrockGuardrailVersion#skip_destroy}
   */
   readonly skipDestroy?: boolean | cdktf.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/bedrock_guardrail_version#timeouts BedrockGuardrailVersion#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/bedrock_guardrail_version#timeouts BedrockGuardrailVersion#timeouts}
   */
   readonly timeouts?: BedrockGuardrailVersionTimeouts;
 }
@@ -41,13 +41,13 @@ export interface BedrockGuardrailVersionTimeouts {
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/bedrock_guardrail_version#create BedrockGuardrailVersion#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/bedrock_guardrail_version#create BedrockGuardrailVersion#create}
   */
   readonly create?: string;
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/bedrock_guardrail_version#delete BedrockGuardrailVersion#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/bedrock_guardrail_version#delete BedrockGuardrailVersion#delete}
   */
   readonly delete?: string;
 }
@@ -170,7 +170,7 @@ export class BedrockGuardrailVersionTimeoutsOutputReference extends cdktf.Comple
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/bedrock_guardrail_version aws_bedrock_guardrail_version}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/bedrock_guardrail_version aws_bedrock_guardrail_version}
 */
 export class BedrockGuardrailVersion extends cdktf.TerraformResource {
 
@@ -186,7 +186,7 @@ export class BedrockGuardrailVersion extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a BedrockGuardrailVersion resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the BedrockGuardrailVersion to import
-  * @param importFromId The id of the existing BedrockGuardrailVersion that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/bedrock_guardrail_version#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing BedrockGuardrailVersion that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/bedrock_guardrail_version#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the BedrockGuardrailVersion to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -198,7 +198,7 @@ export class BedrockGuardrailVersion extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/bedrock_guardrail_version aws_bedrock_guardrail_version} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/bedrock_guardrail_version aws_bedrock_guardrail_version} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -209,7 +209,7 @@ export class BedrockGuardrailVersion extends cdktf.TerraformResource {
       terraformResourceType: 'aws_bedrock_guardrail_version',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.3.0',
+        providerVersion: '6.4.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

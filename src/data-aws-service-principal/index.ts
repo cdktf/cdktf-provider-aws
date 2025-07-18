@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/data-sources/service_principal
+// https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/data-sources/service_principal
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +15,17 @@ export interface DataAwsServicePrincipalConfig extends cdktf.TerraformMetaArgume
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/data-sources/service_principal#region DataAwsServicePrincipal#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/data-sources/service_principal#region DataAwsServicePrincipal#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/data-sources/service_principal#service_name DataAwsServicePrincipal#service_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/data-sources/service_principal#service_name DataAwsServicePrincipal#service_name}
   */
   readonly serviceName: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/data-sources/service_principal aws_service_principal}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/data-sources/service_principal aws_service_principal}
 */
 export class DataAwsServicePrincipal extends cdktf.TerraformDataSource {
 
@@ -41,7 +41,7 @@ export class DataAwsServicePrincipal extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataAwsServicePrincipal resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsServicePrincipal to import
-  * @param importFromId The id of the existing DataAwsServicePrincipal that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/data-sources/service_principal#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsServicePrincipal that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/data-sources/service_principal#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsServicePrincipal to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -53,7 +53,7 @@ export class DataAwsServicePrincipal extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/data-sources/service_principal aws_service_principal} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/data-sources/service_principal aws_service_principal} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -64,7 +64,7 @@ export class DataAwsServicePrincipal extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_service_principal',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.3.0',
+        providerVersion: '6.4.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

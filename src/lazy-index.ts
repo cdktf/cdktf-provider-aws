@@ -177,6 +177,7 @@ Object.defineProperty(exports, 'bedrockagentAgentAlias', { get: function () { re
 Object.defineProperty(exports, 'bedrockagentAgentCollaborator', { get: function () { return require('./bedrockagent-agent-collaborator'); } });
 Object.defineProperty(exports, 'bedrockagentAgentKnowledgeBaseAssociation', { get: function () { return require('./bedrockagent-agent-knowledge-base-association'); } });
 Object.defineProperty(exports, 'bedrockagentDataSource', { get: function () { return require('./bedrockagent-data-source'); } });
+Object.defineProperty(exports, 'bedrockagentFlow', { get: function () { return require('./bedrockagent-flow'); } });
 Object.defineProperty(exports, 'bedrockagentKnowledgeBase', { get: function () { return require('./bedrockagent-knowledge-base'); } });
 Object.defineProperty(exports, 'bedrockagentPrompt', { get: function () { return require('./bedrockagent-prompt'); } });
 Object.defineProperty(exports, 'budgetsBudget', { get: function () { return require('./budgets-budget'); } });
@@ -626,6 +627,7 @@ Object.defineProperty(exports, 'fsxOntapVolume', { get: function () { return req
 Object.defineProperty(exports, 'fsxOpenzfsFileSystem', { get: function () { return require('./fsx-openzfs-file-system'); } });
 Object.defineProperty(exports, 'fsxOpenzfsSnapshot', { get: function () { return require('./fsx-openzfs-snapshot'); } });
 Object.defineProperty(exports, 'fsxOpenzfsVolume', { get: function () { return require('./fsx-openzfs-volume'); } });
+Object.defineProperty(exports, 'fsxS3AccessPointAttachment', { get: function () { return require('./fsx-s3-access-point-attachment'); } });
 Object.defineProperty(exports, 'fsxWindowsFileSystem', { get: function () { return require('./fsx-windows-file-system'); } });
 Object.defineProperty(exports, 'gameliftAlias', { get: function () { return require('./gamelift-alias'); } });
 Object.defineProperty(exports, 'gameliftBuild', { get: function () { return require('./gamelift-build'); } });
@@ -1993,6 +1995,7 @@ Object.defineProperty(exports, 'dataAwsRoute53Zones', { get: function () { retur
 Object.defineProperty(exports, 'dataAwsRoute53ProfilesProfiles', { get: function () { return require('./data-aws-route53profiles-profiles'); } });
 Object.defineProperty(exports, 'dataAwsRouteTable', { get: function () { return require('./data-aws-route-table'); } });
 Object.defineProperty(exports, 'dataAwsRouteTables', { get: function () { return require('./data-aws-route-tables'); } });
+Object.defineProperty(exports, 'dataAwsS3AccessPoint', { get: function () { return require('./data-aws-s3-access-point'); } });
 Object.defineProperty(exports, 'dataAwsS3AccountPublicAccessBlock', { get: function () { return require('./data-aws-s3-account-public-access-block'); } });
 Object.defineProperty(exports, 'dataAwsS3Bucket', { get: function () { return require('./data-aws-s3-bucket'); } });
 Object.defineProperty(exports, 'dataAwsS3BucketObject', { get: function () { return require('./data-aws-s3-bucket-object'); } });

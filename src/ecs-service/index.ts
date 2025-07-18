@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/ecs_service
+// https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/ecs_service
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,192 +13,198 @@ import * as cdktf from 'cdktf';
 
 export interface EcsServiceConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/ecs_service#availability_zone_rebalancing EcsService#availability_zone_rebalancing}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/ecs_service#availability_zone_rebalancing EcsService#availability_zone_rebalancing}
   */
   readonly availabilityZoneRebalancing?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/ecs_service#cluster EcsService#cluster}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/ecs_service#cluster EcsService#cluster}
   */
   readonly cluster?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/ecs_service#deployment_maximum_percent EcsService#deployment_maximum_percent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/ecs_service#deployment_maximum_percent EcsService#deployment_maximum_percent}
   */
   readonly deploymentMaximumPercent?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/ecs_service#deployment_minimum_healthy_percent EcsService#deployment_minimum_healthy_percent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/ecs_service#deployment_minimum_healthy_percent EcsService#deployment_minimum_healthy_percent}
   */
   readonly deploymentMinimumHealthyPercent?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/ecs_service#desired_count EcsService#desired_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/ecs_service#desired_count EcsService#desired_count}
   */
   readonly desiredCount?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/ecs_service#enable_ecs_managed_tags EcsService#enable_ecs_managed_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/ecs_service#enable_ecs_managed_tags EcsService#enable_ecs_managed_tags}
   */
   readonly enableEcsManagedTags?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/ecs_service#enable_execute_command EcsService#enable_execute_command}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/ecs_service#enable_execute_command EcsService#enable_execute_command}
   */
   readonly enableExecuteCommand?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/ecs_service#force_delete EcsService#force_delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/ecs_service#force_delete EcsService#force_delete}
   */
   readonly forceDelete?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/ecs_service#force_new_deployment EcsService#force_new_deployment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/ecs_service#force_new_deployment EcsService#force_new_deployment}
   */
   readonly forceNewDeployment?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/ecs_service#health_check_grace_period_seconds EcsService#health_check_grace_period_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/ecs_service#health_check_grace_period_seconds EcsService#health_check_grace_period_seconds}
   */
   readonly healthCheckGracePeriodSeconds?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/ecs_service#iam_role EcsService#iam_role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/ecs_service#iam_role EcsService#iam_role}
   */
   readonly iamRole?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/ecs_service#id EcsService#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/ecs_service#id EcsService#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/ecs_service#launch_type EcsService#launch_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/ecs_service#launch_type EcsService#launch_type}
   */
   readonly launchType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/ecs_service#name EcsService#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/ecs_service#name EcsService#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/ecs_service#platform_version EcsService#platform_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/ecs_service#platform_version EcsService#platform_version}
   */
   readonly platformVersion?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/ecs_service#propagate_tags EcsService#propagate_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/ecs_service#propagate_tags EcsService#propagate_tags}
   */
   readonly propagateTags?: string;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/ecs_service#region EcsService#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/ecs_service#region EcsService#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/ecs_service#scheduling_strategy EcsService#scheduling_strategy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/ecs_service#scheduling_strategy EcsService#scheduling_strategy}
   */
   readonly schedulingStrategy?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/ecs_service#tags EcsService#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/ecs_service#tags EcsService#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/ecs_service#tags_all EcsService#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/ecs_service#tags_all EcsService#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/ecs_service#task_definition EcsService#task_definition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/ecs_service#task_definition EcsService#task_definition}
   */
   readonly taskDefinition?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/ecs_service#triggers EcsService#triggers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/ecs_service#triggers EcsService#triggers}
   */
   readonly triggers?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/ecs_service#wait_for_steady_state EcsService#wait_for_steady_state}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/ecs_service#wait_for_steady_state EcsService#wait_for_steady_state}
   */
   readonly waitForSteadyState?: boolean | cdktf.IResolvable;
   /**
   * alarms block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/ecs_service#alarms EcsService#alarms}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/ecs_service#alarms EcsService#alarms}
   */
   readonly alarms?: EcsServiceAlarms;
   /**
   * capacity_provider_strategy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/ecs_service#capacity_provider_strategy EcsService#capacity_provider_strategy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/ecs_service#capacity_provider_strategy EcsService#capacity_provider_strategy}
   */
   readonly capacityProviderStrategy?: EcsServiceCapacityProviderStrategy[] | cdktf.IResolvable;
   /**
   * deployment_circuit_breaker block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/ecs_service#deployment_circuit_breaker EcsService#deployment_circuit_breaker}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/ecs_service#deployment_circuit_breaker EcsService#deployment_circuit_breaker}
   */
   readonly deploymentCircuitBreaker?: EcsServiceDeploymentCircuitBreaker;
   /**
+  * deployment_configuration block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/ecs_service#deployment_configuration EcsService#deployment_configuration}
+  */
+  readonly deploymentConfiguration?: EcsServiceDeploymentConfiguration;
+  /**
   * deployment_controller block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/ecs_service#deployment_controller EcsService#deployment_controller}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/ecs_service#deployment_controller EcsService#deployment_controller}
   */
   readonly deploymentController?: EcsServiceDeploymentController;
   /**
   * load_balancer block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/ecs_service#load_balancer EcsService#load_balancer}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/ecs_service#load_balancer EcsService#load_balancer}
   */
   readonly loadBalancer?: EcsServiceLoadBalancer[] | cdktf.IResolvable;
   /**
   * network_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/ecs_service#network_configuration EcsService#network_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/ecs_service#network_configuration EcsService#network_configuration}
   */
   readonly networkConfiguration?: EcsServiceNetworkConfiguration;
   /**
   * ordered_placement_strategy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/ecs_service#ordered_placement_strategy EcsService#ordered_placement_strategy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/ecs_service#ordered_placement_strategy EcsService#ordered_placement_strategy}
   */
   readonly orderedPlacementStrategy?: EcsServiceOrderedPlacementStrategy[] | cdktf.IResolvable;
   /**
   * placement_constraints block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/ecs_service#placement_constraints EcsService#placement_constraints}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/ecs_service#placement_constraints EcsService#placement_constraints}
   */
   readonly placementConstraints?: EcsServicePlacementConstraints[] | cdktf.IResolvable;
   /**
   * service_connect_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/ecs_service#service_connect_configuration EcsService#service_connect_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/ecs_service#service_connect_configuration EcsService#service_connect_configuration}
   */
   readonly serviceConnectConfiguration?: EcsServiceServiceConnectConfiguration;
   /**
   * service_registries block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/ecs_service#service_registries EcsService#service_registries}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/ecs_service#service_registries EcsService#service_registries}
   */
   readonly serviceRegistries?: EcsServiceServiceRegistries;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/ecs_service#timeouts EcsService#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/ecs_service#timeouts EcsService#timeouts}
   */
   readonly timeouts?: EcsServiceTimeouts;
   /**
   * volume_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/ecs_service#volume_configuration EcsService#volume_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/ecs_service#volume_configuration EcsService#volume_configuration}
   */
   readonly volumeConfiguration?: EcsServiceVolumeConfiguration;
   /**
   * vpc_lattice_configurations block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/ecs_service#vpc_lattice_configurations EcsService#vpc_lattice_configurations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/ecs_service#vpc_lattice_configurations EcsService#vpc_lattice_configurations}
   */
   readonly vpcLatticeConfigurations?: EcsServiceVpcLatticeConfigurations[] | cdktf.IResolvable;
 }
 export interface EcsServiceAlarms {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/ecs_service#alarm_names EcsService#alarm_names}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/ecs_service#alarm_names EcsService#alarm_names}
   */
   readonly alarmNames: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/ecs_service#enable EcsService#enable}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/ecs_service#enable EcsService#enable}
   */
   readonly enable: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/ecs_service#rollback EcsService#rollback}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/ecs_service#rollback EcsService#rollback}
   */
   readonly rollback: boolean | cdktf.IResolvable;
 }
@@ -331,15 +337,15 @@ export class EcsServiceAlarmsOutputReference extends cdktf.ComplexObject {
 }
 export interface EcsServiceCapacityProviderStrategy {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/ecs_service#base EcsService#base}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/ecs_service#base EcsService#base}
   */
   readonly base?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/ecs_service#capacity_provider EcsService#capacity_provider}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/ecs_service#capacity_provider EcsService#capacity_provider}
   */
   readonly capacityProvider: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/ecs_service#weight EcsService#weight}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/ecs_service#weight EcsService#weight}
   */
   readonly weight?: number;
 }
@@ -510,11 +516,11 @@ export class EcsServiceCapacityProviderStrategyList extends cdktf.ComplexList {
 }
 export interface EcsServiceDeploymentCircuitBreaker {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/ecs_service#enable EcsService#enable}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/ecs_service#enable EcsService#enable}
   */
   readonly enable: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/ecs_service#rollback EcsService#rollback}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/ecs_service#rollback EcsService#rollback}
   */
   readonly rollback: boolean | cdktf.IResolvable;
 }
@@ -619,9 +625,334 @@ export class EcsServiceDeploymentCircuitBreakerOutputReference extends cdktf.Com
     return this._rollback;
   }
 }
+export interface EcsServiceDeploymentConfigurationLifecycleHook {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/ecs_service#hook_target_arn EcsService#hook_target_arn}
+  */
+  readonly hookTargetArn: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/ecs_service#lifecycle_stages EcsService#lifecycle_stages}
+  */
+  readonly lifecycleStages: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/ecs_service#role_arn EcsService#role_arn}
+  */
+  readonly roleArn: string;
+}
+
+export function ecsServiceDeploymentConfigurationLifecycleHookToTerraform(struct?: EcsServiceDeploymentConfigurationLifecycleHook | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    hook_target_arn: cdktf.stringToTerraform(struct!.hookTargetArn),
+    lifecycle_stages: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.lifecycleStages),
+    role_arn: cdktf.stringToTerraform(struct!.roleArn),
+  }
+}
+
+
+export function ecsServiceDeploymentConfigurationLifecycleHookToHclTerraform(struct?: EcsServiceDeploymentConfigurationLifecycleHook | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    hook_target_arn: {
+      value: cdktf.stringToHclTerraform(struct!.hookTargetArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    lifecycle_stages: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.lifecycleStages),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    role_arn: {
+      value: cdktf.stringToHclTerraform(struct!.roleArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class EcsServiceDeploymentConfigurationLifecycleHookOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): EcsServiceDeploymentConfigurationLifecycleHook | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._hookTargetArn !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.hookTargetArn = this._hookTargetArn;
+    }
+    if (this._lifecycleStages !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.lifecycleStages = this._lifecycleStages;
+    }
+    if (this._roleArn !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.roleArn = this._roleArn;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: EcsServiceDeploymentConfigurationLifecycleHook | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._hookTargetArn = undefined;
+      this._lifecycleStages = undefined;
+      this._roleArn = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._hookTargetArn = value.hookTargetArn;
+      this._lifecycleStages = value.lifecycleStages;
+      this._roleArn = value.roleArn;
+    }
+  }
+
+  // hook_target_arn - computed: false, optional: false, required: true
+  private _hookTargetArn?: string; 
+  public get hookTargetArn() {
+    return this.getStringAttribute('hook_target_arn');
+  }
+  public set hookTargetArn(value: string) {
+    this._hookTargetArn = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get hookTargetArnInput() {
+    return this._hookTargetArn;
+  }
+
+  // lifecycle_stages - computed: false, optional: false, required: true
+  private _lifecycleStages?: string[]; 
+  public get lifecycleStages() {
+    return this.getListAttribute('lifecycle_stages');
+  }
+  public set lifecycleStages(value: string[]) {
+    this._lifecycleStages = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get lifecycleStagesInput() {
+    return this._lifecycleStages;
+  }
+
+  // role_arn - computed: false, optional: false, required: true
+  private _roleArn?: string; 
+  public get roleArn() {
+    return this.getStringAttribute('role_arn');
+  }
+  public set roleArn(value: string) {
+    this._roleArn = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get roleArnInput() {
+    return this._roleArn;
+  }
+}
+
+export class EcsServiceDeploymentConfigurationLifecycleHookList extends cdktf.ComplexList {
+  public internalValue? : EcsServiceDeploymentConfigurationLifecycleHook[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): EcsServiceDeploymentConfigurationLifecycleHookOutputReference {
+    return new EcsServiceDeploymentConfigurationLifecycleHookOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface EcsServiceDeploymentConfiguration {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/ecs_service#bake_time_in_minutes EcsService#bake_time_in_minutes}
+  */
+  readonly bakeTimeInMinutes?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/ecs_service#strategy EcsService#strategy}
+  */
+  readonly strategy?: string;
+  /**
+  * lifecycle_hook block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/ecs_service#lifecycle_hook EcsService#lifecycle_hook}
+  */
+  readonly lifecycleHook?: EcsServiceDeploymentConfigurationLifecycleHook[] | cdktf.IResolvable;
+}
+
+export function ecsServiceDeploymentConfigurationToTerraform(struct?: EcsServiceDeploymentConfigurationOutputReference | EcsServiceDeploymentConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    bake_time_in_minutes: cdktf.stringToTerraform(struct!.bakeTimeInMinutes),
+    strategy: cdktf.stringToTerraform(struct!.strategy),
+    lifecycle_hook: cdktf.listMapper(ecsServiceDeploymentConfigurationLifecycleHookToTerraform, true)(struct!.lifecycleHook),
+  }
+}
+
+
+export function ecsServiceDeploymentConfigurationToHclTerraform(struct?: EcsServiceDeploymentConfigurationOutputReference | EcsServiceDeploymentConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    bake_time_in_minutes: {
+      value: cdktf.stringToHclTerraform(struct!.bakeTimeInMinutes),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    strategy: {
+      value: cdktf.stringToHclTerraform(struct!.strategy),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    lifecycle_hook: {
+      value: cdktf.listMapperHcl(ecsServiceDeploymentConfigurationLifecycleHookToHclTerraform, true)(struct!.lifecycleHook),
+      isBlock: true,
+      type: "set",
+      storageClassType: "EcsServiceDeploymentConfigurationLifecycleHookList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class EcsServiceDeploymentConfigurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): EcsServiceDeploymentConfiguration | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._bakeTimeInMinutes !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.bakeTimeInMinutes = this._bakeTimeInMinutes;
+    }
+    if (this._strategy !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.strategy = this._strategy;
+    }
+    if (this._lifecycleHook?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.lifecycleHook = this._lifecycleHook?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: EcsServiceDeploymentConfiguration | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._bakeTimeInMinutes = undefined;
+      this._strategy = undefined;
+      this._lifecycleHook.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._bakeTimeInMinutes = value.bakeTimeInMinutes;
+      this._strategy = value.strategy;
+      this._lifecycleHook.internalValue = value.lifecycleHook;
+    }
+  }
+
+  // bake_time_in_minutes - computed: false, optional: true, required: false
+  private _bakeTimeInMinutes?: string; 
+  public get bakeTimeInMinutes() {
+    return this.getStringAttribute('bake_time_in_minutes');
+  }
+  public set bakeTimeInMinutes(value: string) {
+    this._bakeTimeInMinutes = value;
+  }
+  public resetBakeTimeInMinutes() {
+    this._bakeTimeInMinutes = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get bakeTimeInMinutesInput() {
+    return this._bakeTimeInMinutes;
+  }
+
+  // strategy - computed: false, optional: true, required: false
+  private _strategy?: string; 
+  public get strategy() {
+    return this.getStringAttribute('strategy');
+  }
+  public set strategy(value: string) {
+    this._strategy = value;
+  }
+  public resetStrategy() {
+    this._strategy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get strategyInput() {
+    return this._strategy;
+  }
+
+  // lifecycle_hook - computed: false, optional: true, required: false
+  private _lifecycleHook = new EcsServiceDeploymentConfigurationLifecycleHookList(this, "lifecycle_hook", true);
+  public get lifecycleHook() {
+    return this._lifecycleHook;
+  }
+  public putLifecycleHook(value: EcsServiceDeploymentConfigurationLifecycleHook[] | cdktf.IResolvable) {
+    this._lifecycleHook.internalValue = value;
+  }
+  public resetLifecycleHook() {
+    this._lifecycleHook.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get lifecycleHookInput() {
+    return this._lifecycleHook.internalValue;
+  }
+}
 export interface EcsServiceDeploymentController {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/ecs_service#type EcsService#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/ecs_service#type EcsService#type}
   */
   readonly type?: string;
 }
@@ -703,23 +1034,203 @@ export class EcsServiceDeploymentControllerOutputReference extends cdktf.Complex
     return this._type;
   }
 }
+export interface EcsServiceLoadBalancerAdvancedConfiguration {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/ecs_service#alternate_target_group_arn EcsService#alternate_target_group_arn}
+  */
+  readonly alternateTargetGroupArn: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/ecs_service#production_listener_rule EcsService#production_listener_rule}
+  */
+  readonly productionListenerRule: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/ecs_service#role_arn EcsService#role_arn}
+  */
+  readonly roleArn: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/ecs_service#test_listener_rule EcsService#test_listener_rule}
+  */
+  readonly testListenerRule?: string;
+}
+
+export function ecsServiceLoadBalancerAdvancedConfigurationToTerraform(struct?: EcsServiceLoadBalancerAdvancedConfigurationOutputReference | EcsServiceLoadBalancerAdvancedConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    alternate_target_group_arn: cdktf.stringToTerraform(struct!.alternateTargetGroupArn),
+    production_listener_rule: cdktf.stringToTerraform(struct!.productionListenerRule),
+    role_arn: cdktf.stringToTerraform(struct!.roleArn),
+    test_listener_rule: cdktf.stringToTerraform(struct!.testListenerRule),
+  }
+}
+
+
+export function ecsServiceLoadBalancerAdvancedConfigurationToHclTerraform(struct?: EcsServiceLoadBalancerAdvancedConfigurationOutputReference | EcsServiceLoadBalancerAdvancedConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    alternate_target_group_arn: {
+      value: cdktf.stringToHclTerraform(struct!.alternateTargetGroupArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    production_listener_rule: {
+      value: cdktf.stringToHclTerraform(struct!.productionListenerRule),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    role_arn: {
+      value: cdktf.stringToHclTerraform(struct!.roleArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    test_listener_rule: {
+      value: cdktf.stringToHclTerraform(struct!.testListenerRule),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class EcsServiceLoadBalancerAdvancedConfigurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): EcsServiceLoadBalancerAdvancedConfiguration | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._alternateTargetGroupArn !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.alternateTargetGroupArn = this._alternateTargetGroupArn;
+    }
+    if (this._productionListenerRule !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.productionListenerRule = this._productionListenerRule;
+    }
+    if (this._roleArn !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.roleArn = this._roleArn;
+    }
+    if (this._testListenerRule !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.testListenerRule = this._testListenerRule;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: EcsServiceLoadBalancerAdvancedConfiguration | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._alternateTargetGroupArn = undefined;
+      this._productionListenerRule = undefined;
+      this._roleArn = undefined;
+      this._testListenerRule = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._alternateTargetGroupArn = value.alternateTargetGroupArn;
+      this._productionListenerRule = value.productionListenerRule;
+      this._roleArn = value.roleArn;
+      this._testListenerRule = value.testListenerRule;
+    }
+  }
+
+  // alternate_target_group_arn - computed: false, optional: false, required: true
+  private _alternateTargetGroupArn?: string; 
+  public get alternateTargetGroupArn() {
+    return this.getStringAttribute('alternate_target_group_arn');
+  }
+  public set alternateTargetGroupArn(value: string) {
+    this._alternateTargetGroupArn = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get alternateTargetGroupArnInput() {
+    return this._alternateTargetGroupArn;
+  }
+
+  // production_listener_rule - computed: false, optional: false, required: true
+  private _productionListenerRule?: string; 
+  public get productionListenerRule() {
+    return this.getStringAttribute('production_listener_rule');
+  }
+  public set productionListenerRule(value: string) {
+    this._productionListenerRule = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get productionListenerRuleInput() {
+    return this._productionListenerRule;
+  }
+
+  // role_arn - computed: false, optional: false, required: true
+  private _roleArn?: string; 
+  public get roleArn() {
+    return this.getStringAttribute('role_arn');
+  }
+  public set roleArn(value: string) {
+    this._roleArn = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get roleArnInput() {
+    return this._roleArn;
+  }
+
+  // test_listener_rule - computed: false, optional: true, required: false
+  private _testListenerRule?: string; 
+  public get testListenerRule() {
+    return this.getStringAttribute('test_listener_rule');
+  }
+  public set testListenerRule(value: string) {
+    this._testListenerRule = value;
+  }
+  public resetTestListenerRule() {
+    this._testListenerRule = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get testListenerRuleInput() {
+    return this._testListenerRule;
+  }
+}
 export interface EcsServiceLoadBalancer {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/ecs_service#container_name EcsService#container_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/ecs_service#container_name EcsService#container_name}
   */
   readonly containerName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/ecs_service#container_port EcsService#container_port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/ecs_service#container_port EcsService#container_port}
   */
   readonly containerPort: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/ecs_service#elb_name EcsService#elb_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/ecs_service#elb_name EcsService#elb_name}
   */
   readonly elbName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/ecs_service#target_group_arn EcsService#target_group_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/ecs_service#target_group_arn EcsService#target_group_arn}
   */
   readonly targetGroupArn?: string;
+  /**
+  * advanced_configuration block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/ecs_service#advanced_configuration EcsService#advanced_configuration}
+  */
+  readonly advancedConfiguration?: EcsServiceLoadBalancerAdvancedConfiguration;
 }
 
 export function ecsServiceLoadBalancerToTerraform(struct?: EcsServiceLoadBalancer | cdktf.IResolvable): any {
@@ -732,6 +1243,7 @@ export function ecsServiceLoadBalancerToTerraform(struct?: EcsServiceLoadBalance
     container_port: cdktf.numberToTerraform(struct!.containerPort),
     elb_name: cdktf.stringToTerraform(struct!.elbName),
     target_group_arn: cdktf.stringToTerraform(struct!.targetGroupArn),
+    advanced_configuration: ecsServiceLoadBalancerAdvancedConfigurationToTerraform(struct!.advancedConfiguration),
   }
 }
 
@@ -765,6 +1277,12 @@ export function ecsServiceLoadBalancerToHclTerraform(struct?: EcsServiceLoadBala
       isBlock: false,
       type: "simple",
       storageClassType: "string",
+    },
+    advanced_configuration: {
+      value: ecsServiceLoadBalancerAdvancedConfigurationToHclTerraform(struct!.advancedConfiguration),
+      isBlock: true,
+      type: "list",
+      storageClassType: "EcsServiceLoadBalancerAdvancedConfigurationList",
     },
   };
 
@@ -808,6 +1326,10 @@ export class EcsServiceLoadBalancerOutputReference extends cdktf.ComplexObject {
       hasAnyValues = true;
       internalValueResult.targetGroupArn = this._targetGroupArn;
     }
+    if (this._advancedConfiguration?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.advancedConfiguration = this._advancedConfiguration?.internalValue;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -819,6 +1341,7 @@ export class EcsServiceLoadBalancerOutputReference extends cdktf.ComplexObject {
       this._containerPort = undefined;
       this._elbName = undefined;
       this._targetGroupArn = undefined;
+      this._advancedConfiguration.internalValue = undefined;
     }
     else if (cdktf.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
@@ -831,6 +1354,7 @@ export class EcsServiceLoadBalancerOutputReference extends cdktf.ComplexObject {
       this._containerPort = value.containerPort;
       this._elbName = value.elbName;
       this._targetGroupArn = value.targetGroupArn;
+      this._advancedConfiguration.internalValue = value.advancedConfiguration;
     }
   }
 
@@ -891,6 +1415,22 @@ export class EcsServiceLoadBalancerOutputReference extends cdktf.ComplexObject {
   public get targetGroupArnInput() {
     return this._targetGroupArn;
   }
+
+  // advanced_configuration - computed: false, optional: true, required: false
+  private _advancedConfiguration = new EcsServiceLoadBalancerAdvancedConfigurationOutputReference(this, "advanced_configuration");
+  public get advancedConfiguration() {
+    return this._advancedConfiguration;
+  }
+  public putAdvancedConfiguration(value: EcsServiceLoadBalancerAdvancedConfiguration) {
+    this._advancedConfiguration.internalValue = value;
+  }
+  public resetAdvancedConfiguration() {
+    this._advancedConfiguration.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get advancedConfigurationInput() {
+    return this._advancedConfiguration.internalValue;
+  }
 }
 
 export class EcsServiceLoadBalancerList extends cdktf.ComplexList {
@@ -914,15 +1454,15 @@ export class EcsServiceLoadBalancerList extends cdktf.ComplexList {
 }
 export interface EcsServiceNetworkConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/ecs_service#assign_public_ip EcsService#assign_public_ip}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/ecs_service#assign_public_ip EcsService#assign_public_ip}
   */
   readonly assignPublicIp?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/ecs_service#security_groups EcsService#security_groups}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/ecs_service#security_groups EcsService#security_groups}
   */
   readonly securityGroups?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/ecs_service#subnets EcsService#subnets}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/ecs_service#subnets EcsService#subnets}
   */
   readonly subnets: string[];
 }
@@ -1061,11 +1601,11 @@ export class EcsServiceNetworkConfigurationOutputReference extends cdktf.Complex
 }
 export interface EcsServiceOrderedPlacementStrategy {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/ecs_service#field EcsService#field}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/ecs_service#field EcsService#field}
   */
   readonly field?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/ecs_service#type EcsService#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/ecs_service#type EcsService#type}
   */
   readonly type: string;
 }
@@ -1207,11 +1747,11 @@ export class EcsServiceOrderedPlacementStrategyList extends cdktf.ComplexList {
 }
 export interface EcsServicePlacementConstraints {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/ecs_service#expression EcsService#expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/ecs_service#expression EcsService#expression}
   */
   readonly expression?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/ecs_service#type EcsService#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/ecs_service#type EcsService#type}
   */
   readonly type: string;
 }
@@ -1353,11 +1893,11 @@ export class EcsServicePlacementConstraintsList extends cdktf.ComplexList {
 }
 export interface EcsServiceServiceConnectConfigurationLogConfigurationSecretOption {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/ecs_service#name EcsService#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/ecs_service#name EcsService#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/ecs_service#value_from EcsService#value_from}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/ecs_service#value_from EcsService#value_from}
   */
   readonly valueFrom: string;
 }
@@ -1496,17 +2036,17 @@ export class EcsServiceServiceConnectConfigurationLogConfigurationSecretOptionLi
 }
 export interface EcsServiceServiceConnectConfigurationLogConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/ecs_service#log_driver EcsService#log_driver}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/ecs_service#log_driver EcsService#log_driver}
   */
   readonly logDriver: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/ecs_service#options EcsService#options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/ecs_service#options EcsService#options}
   */
   readonly options?: { [key: string]: string };
   /**
   * secret_option block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/ecs_service#secret_option EcsService#secret_option}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/ecs_service#secret_option EcsService#secret_option}
   */
   readonly secretOption?: EcsServiceServiceConnectConfigurationLogConfigurationSecretOption[] | cdktf.IResolvable;
 }
@@ -1643,15 +2183,333 @@ export class EcsServiceServiceConnectConfigurationLogConfigurationOutputReferenc
     return this._secretOption.internalValue;
   }
 }
+export interface EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRulesHeaderValue {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/ecs_service#exact EcsService#exact}
+  */
+  readonly exact: string;
+}
+
+export function ecsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRulesHeaderValueToTerraform(struct?: EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRulesHeaderValueOutputReference | EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRulesHeaderValue): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    exact: cdktf.stringToTerraform(struct!.exact),
+  }
+}
+
+
+export function ecsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRulesHeaderValueToHclTerraform(struct?: EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRulesHeaderValueOutputReference | EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRulesHeaderValue): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    exact: {
+      value: cdktf.stringToHclTerraform(struct!.exact),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRulesHeaderValueOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRulesHeaderValue | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._exact !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.exact = this._exact;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRulesHeaderValue | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._exact = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._exact = value.exact;
+    }
+  }
+
+  // exact - computed: false, optional: false, required: true
+  private _exact?: string; 
+  public get exact() {
+    return this.getStringAttribute('exact');
+  }
+  public set exact(value: string) {
+    this._exact = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get exactInput() {
+    return this._exact;
+  }
+}
+export interface EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRulesHeader {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/ecs_service#name EcsService#name}
+  */
+  readonly name: string;
+  /**
+  * value block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/ecs_service#value EcsService#value}
+  */
+  readonly value: EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRulesHeaderValue;
+}
+
+export function ecsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRulesHeaderToTerraform(struct?: EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRulesHeaderOutputReference | EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRulesHeader): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    name: cdktf.stringToTerraform(struct!.name),
+    value: ecsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRulesHeaderValueToTerraform(struct!.value),
+  }
+}
+
+
+export function ecsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRulesHeaderToHclTerraform(struct?: EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRulesHeaderOutputReference | EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRulesHeader): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: ecsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRulesHeaderValueToHclTerraform(struct!.value),
+      isBlock: true,
+      type: "list",
+      storageClassType: "EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRulesHeaderValueList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRulesHeaderOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRulesHeader | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._value?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.value = this._value?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRulesHeader | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._name = undefined;
+      this._value.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._name = value.name;
+      this._value.internalValue = value.value;
+    }
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // value - computed: false, optional: false, required: true
+  private _value = new EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRulesHeaderValueOutputReference(this, "value");
+  public get value() {
+    return this._value;
+  }
+  public putValue(value: EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRulesHeaderValue) {
+    this._value.internalValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valueInput() {
+    return this._value.internalValue;
+  }
+}
+export interface EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRules {
+  /**
+  * header block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/ecs_service#header EcsService#header}
+  */
+  readonly header?: EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRulesHeader;
+}
+
+export function ecsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRulesToTerraform(struct?: EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRules | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    header: ecsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRulesHeaderToTerraform(struct!.header),
+  }
+}
+
+
+export function ecsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRulesToHclTerraform(struct?: EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRules | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    header: {
+      value: ecsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRulesHeaderToHclTerraform(struct!.header),
+      isBlock: true,
+      type: "list",
+      storageClassType: "EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRulesHeaderList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRulesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRules | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._header?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.header = this._header?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRules | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._header.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._header.internalValue = value.header;
+    }
+  }
+
+  // header - computed: false, optional: true, required: false
+  private _header = new EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRulesHeaderOutputReference(this, "header");
+  public get header() {
+    return this._header;
+  }
+  public putHeader(value: EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRulesHeader) {
+    this._header.internalValue = value;
+  }
+  public resetHeader() {
+    this._header.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get headerInput() {
+    return this._header.internalValue;
+  }
+}
+
+export class EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRulesList extends cdktf.ComplexList {
+  public internalValue? : EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRules[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRulesOutputReference {
+    return new EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRulesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface EcsServiceServiceConnectConfigurationServiceClientAlias {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/ecs_service#dns_name EcsService#dns_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/ecs_service#dns_name EcsService#dns_name}
   */
   readonly dnsName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/ecs_service#port EcsService#port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/ecs_service#port EcsService#port}
   */
   readonly port: number;
+  /**
+  * test_traffic_rules block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/ecs_service#test_traffic_rules EcsService#test_traffic_rules}
+  */
+  readonly testTrafficRules?: EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRules[] | cdktf.IResolvable;
 }
 
 export function ecsServiceServiceConnectConfigurationServiceClientAliasToTerraform(struct?: EcsServiceServiceConnectConfigurationServiceClientAliasOutputReference | EcsServiceServiceConnectConfigurationServiceClientAlias): any {
@@ -1662,6 +2520,7 @@ export function ecsServiceServiceConnectConfigurationServiceClientAliasToTerrafo
   return {
     dns_name: cdktf.stringToTerraform(struct!.dnsName),
     port: cdktf.numberToTerraform(struct!.port),
+    test_traffic_rules: cdktf.listMapper(ecsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRulesToTerraform, true)(struct!.testTrafficRules),
   }
 }
 
@@ -1683,6 +2542,12 @@ export function ecsServiceServiceConnectConfigurationServiceClientAliasToHclTerr
       isBlock: false,
       type: "simple",
       storageClassType: "number",
+    },
+    test_traffic_rules: {
+      value: cdktf.listMapperHcl(ecsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRulesToHclTerraform, true)(struct!.testTrafficRules),
+      isBlock: true,
+      type: "list",
+      storageClassType: "EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRulesList",
     },
   };
 
@@ -1712,6 +2577,10 @@ export class EcsServiceServiceConnectConfigurationServiceClientAliasOutputRefere
       hasAnyValues = true;
       internalValueResult.port = this._port;
     }
+    if (this._testTrafficRules?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.testTrafficRules = this._testTrafficRules?.internalValue;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -1720,11 +2589,13 @@ export class EcsServiceServiceConnectConfigurationServiceClientAliasOutputRefere
       this.isEmptyObject = false;
       this._dnsName = undefined;
       this._port = undefined;
+      this._testTrafficRules.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._dnsName = value.dnsName;
       this._port = value.port;
+      this._testTrafficRules.internalValue = value.testTrafficRules;
     }
   }
 
@@ -1756,14 +2627,30 @@ export class EcsServiceServiceConnectConfigurationServiceClientAliasOutputRefere
   public get portInput() {
     return this._port;
   }
+
+  // test_traffic_rules - computed: false, optional: true, required: false
+  private _testTrafficRules = new EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRulesList(this, "test_traffic_rules", false);
+  public get testTrafficRules() {
+    return this._testTrafficRules;
+  }
+  public putTestTrafficRules(value: EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRules[] | cdktf.IResolvable) {
+    this._testTrafficRules.internalValue = value;
+  }
+  public resetTestTrafficRules() {
+    this._testTrafficRules.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get testTrafficRulesInput() {
+    return this._testTrafficRules.internalValue;
+  }
 }
 export interface EcsServiceServiceConnectConfigurationServiceTimeout {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/ecs_service#idle_timeout_seconds EcsService#idle_timeout_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/ecs_service#idle_timeout_seconds EcsService#idle_timeout_seconds}
   */
   readonly idleTimeoutSeconds?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/ecs_service#per_request_timeout_seconds EcsService#per_request_timeout_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/ecs_service#per_request_timeout_seconds EcsService#per_request_timeout_seconds}
   */
   readonly perRequestTimeoutSeconds?: number;
 }
@@ -1876,7 +2763,7 @@ export class EcsServiceServiceConnectConfigurationServiceTimeoutOutputReference 
 }
 export interface EcsServiceServiceConnectConfigurationServiceTlsIssuerCertAuthority {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/ecs_service#aws_pca_authority_arn EcsService#aws_pca_authority_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/ecs_service#aws_pca_authority_arn EcsService#aws_pca_authority_arn}
   */
   readonly awsPcaAuthorityArn: string;
 }
@@ -1957,17 +2844,17 @@ export class EcsServiceServiceConnectConfigurationServiceTlsIssuerCertAuthorityO
 }
 export interface EcsServiceServiceConnectConfigurationServiceTls {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/ecs_service#kms_key EcsService#kms_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/ecs_service#kms_key EcsService#kms_key}
   */
   readonly kmsKey?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/ecs_service#role_arn EcsService#role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/ecs_service#role_arn EcsService#role_arn}
   */
   readonly roleArn?: string;
   /**
   * issuer_cert_authority block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/ecs_service#issuer_cert_authority EcsService#issuer_cert_authority}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/ecs_service#issuer_cert_authority EcsService#issuer_cert_authority}
   */
   readonly issuerCertAuthority: EcsServiceServiceConnectConfigurationServiceTlsIssuerCertAuthority;
 }
@@ -2106,33 +2993,33 @@ export class EcsServiceServiceConnectConfigurationServiceTlsOutputReference exte
 }
 export interface EcsServiceServiceConnectConfigurationService {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/ecs_service#discovery_name EcsService#discovery_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/ecs_service#discovery_name EcsService#discovery_name}
   */
   readonly discoveryName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/ecs_service#ingress_port_override EcsService#ingress_port_override}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/ecs_service#ingress_port_override EcsService#ingress_port_override}
   */
   readonly ingressPortOverride?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/ecs_service#port_name EcsService#port_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/ecs_service#port_name EcsService#port_name}
   */
   readonly portName: string;
   /**
   * client_alias block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/ecs_service#client_alias EcsService#client_alias}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/ecs_service#client_alias EcsService#client_alias}
   */
   readonly clientAlias?: EcsServiceServiceConnectConfigurationServiceClientAlias;
   /**
   * timeout block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/ecs_service#timeout EcsService#timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/ecs_service#timeout EcsService#timeout}
   */
   readonly timeout?: EcsServiceServiceConnectConfigurationServiceTimeout;
   /**
   * tls block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/ecs_service#tls EcsService#tls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/ecs_service#tls EcsService#tls}
   */
   readonly tls?: EcsServiceServiceConnectConfigurationServiceTls;
 }
@@ -2390,23 +3277,23 @@ export class EcsServiceServiceConnectConfigurationServiceList extends cdktf.Comp
 }
 export interface EcsServiceServiceConnectConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/ecs_service#enabled EcsService#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/ecs_service#enabled EcsService#enabled}
   */
   readonly enabled: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/ecs_service#namespace EcsService#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/ecs_service#namespace EcsService#namespace}
   */
   readonly namespace?: string;
   /**
   * log_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/ecs_service#log_configuration EcsService#log_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/ecs_service#log_configuration EcsService#log_configuration}
   */
   readonly logConfiguration?: EcsServiceServiceConnectConfigurationLogConfiguration;
   /**
   * service block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/ecs_service#service EcsService#service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/ecs_service#service EcsService#service}
   */
   readonly service?: EcsServiceServiceConnectConfigurationService[] | cdktf.IResolvable;
 }
@@ -2574,19 +3461,19 @@ export class EcsServiceServiceConnectConfigurationOutputReference extends cdktf.
 }
 export interface EcsServiceServiceRegistries {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/ecs_service#container_name EcsService#container_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/ecs_service#container_name EcsService#container_name}
   */
   readonly containerName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/ecs_service#container_port EcsService#container_port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/ecs_service#container_port EcsService#container_port}
   */
   readonly containerPort?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/ecs_service#port EcsService#port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/ecs_service#port EcsService#port}
   */
   readonly port?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/ecs_service#registry_arn EcsService#registry_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/ecs_service#registry_arn EcsService#registry_arn}
   */
   readonly registryArn: string;
 }
@@ -2754,15 +3641,15 @@ export class EcsServiceServiceRegistriesOutputReference extends cdktf.ComplexObj
 }
 export interface EcsServiceTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/ecs_service#create EcsService#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/ecs_service#create EcsService#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/ecs_service#delete EcsService#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/ecs_service#delete EcsService#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/ecs_service#update EcsService#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/ecs_service#update EcsService#update}
   */
   readonly update?: string;
 }
@@ -2914,15 +3801,15 @@ export class EcsServiceTimeoutsOutputReference extends cdktf.ComplexObject {
 }
 export interface EcsServiceVolumeConfigurationManagedEbsVolumeTagSpecifications {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/ecs_service#propagate_tags EcsService#propagate_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/ecs_service#propagate_tags EcsService#propagate_tags}
   */
   readonly propagateTags?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/ecs_service#resource_type EcsService#resource_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/ecs_service#resource_type EcsService#resource_type}
   */
   readonly resourceType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/ecs_service#tags EcsService#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/ecs_service#tags EcsService#tags}
   */
   readonly tags?: { [key: string]: string };
 }
@@ -3093,49 +3980,49 @@ export class EcsServiceVolumeConfigurationManagedEbsVolumeTagSpecificationsList 
 }
 export interface EcsServiceVolumeConfigurationManagedEbsVolume {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/ecs_service#encrypted EcsService#encrypted}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/ecs_service#encrypted EcsService#encrypted}
   */
   readonly encrypted?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/ecs_service#file_system_type EcsService#file_system_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/ecs_service#file_system_type EcsService#file_system_type}
   */
   readonly fileSystemType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/ecs_service#iops EcsService#iops}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/ecs_service#iops EcsService#iops}
   */
   readonly iops?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/ecs_service#kms_key_id EcsService#kms_key_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/ecs_service#kms_key_id EcsService#kms_key_id}
   */
   readonly kmsKeyId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/ecs_service#role_arn EcsService#role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/ecs_service#role_arn EcsService#role_arn}
   */
   readonly roleArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/ecs_service#size_in_gb EcsService#size_in_gb}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/ecs_service#size_in_gb EcsService#size_in_gb}
   */
   readonly sizeInGb?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/ecs_service#snapshot_id EcsService#snapshot_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/ecs_service#snapshot_id EcsService#snapshot_id}
   */
   readonly snapshotId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/ecs_service#throughput EcsService#throughput}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/ecs_service#throughput EcsService#throughput}
   */
   readonly throughput?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/ecs_service#volume_initialization_rate EcsService#volume_initialization_rate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/ecs_service#volume_initialization_rate EcsService#volume_initialization_rate}
   */
   readonly volumeInitializationRate?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/ecs_service#volume_type EcsService#volume_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/ecs_service#volume_type EcsService#volume_type}
   */
   readonly volumeType?: string;
   /**
   * tag_specifications block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/ecs_service#tag_specifications EcsService#tag_specifications}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/ecs_service#tag_specifications EcsService#tag_specifications}
   */
   readonly tagSpecifications?: EcsServiceVolumeConfigurationManagedEbsVolumeTagSpecifications[] | cdktf.IResolvable;
 }
@@ -3506,13 +4393,13 @@ export class EcsServiceVolumeConfigurationManagedEbsVolumeOutputReference extend
 }
 export interface EcsServiceVolumeConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/ecs_service#name EcsService#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/ecs_service#name EcsService#name}
   */
   readonly name: string;
   /**
   * managed_ebs_volume block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/ecs_service#managed_ebs_volume EcsService#managed_ebs_volume}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/ecs_service#managed_ebs_volume EcsService#managed_ebs_volume}
   */
   readonly managedEbsVolume: EcsServiceVolumeConfigurationManagedEbsVolume;
 }
@@ -3619,15 +4506,15 @@ export class EcsServiceVolumeConfigurationOutputReference extends cdktf.ComplexO
 }
 export interface EcsServiceVpcLatticeConfigurations {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/ecs_service#port_name EcsService#port_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/ecs_service#port_name EcsService#port_name}
   */
   readonly portName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/ecs_service#role_arn EcsService#role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/ecs_service#role_arn EcsService#role_arn}
   */
   readonly roleArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/ecs_service#target_group_arn EcsService#target_group_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/ecs_service#target_group_arn EcsService#target_group_arn}
   */
   readonly targetGroupArn: string;
 }
@@ -3792,7 +4679,7 @@ export class EcsServiceVpcLatticeConfigurationsList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/ecs_service aws_ecs_service}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/ecs_service aws_ecs_service}
 */
 export class EcsService extends cdktf.TerraformResource {
 
@@ -3808,7 +4695,7 @@ export class EcsService extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a EcsService resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the EcsService to import
-  * @param importFromId The id of the existing EcsService that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/ecs_service#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing EcsService that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/ecs_service#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the EcsService to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -3820,7 +4707,7 @@ export class EcsService extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/ecs_service aws_ecs_service} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/ecs_service aws_ecs_service} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -3831,7 +4718,7 @@ export class EcsService extends cdktf.TerraformResource {
       terraformResourceType: 'aws_ecs_service',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.3.0',
+        providerVersion: '6.4.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
@@ -3868,6 +4755,7 @@ export class EcsService extends cdktf.TerraformResource {
     this._alarms.internalValue = config.alarms;
     this._capacityProviderStrategy.internalValue = config.capacityProviderStrategy;
     this._deploymentCircuitBreaker.internalValue = config.deploymentCircuitBreaker;
+    this._deploymentConfiguration.internalValue = config.deploymentConfiguration;
     this._deploymentController.internalValue = config.deploymentController;
     this._loadBalancer.internalValue = config.loadBalancer;
     this._networkConfiguration.internalValue = config.networkConfiguration;
@@ -4302,6 +5190,22 @@ export class EcsService extends cdktf.TerraformResource {
     return this._deploymentCircuitBreaker.internalValue;
   }
 
+  // deployment_configuration - computed: false, optional: true, required: false
+  private _deploymentConfiguration = new EcsServiceDeploymentConfigurationOutputReference(this, "deployment_configuration");
+  public get deploymentConfiguration() {
+    return this._deploymentConfiguration;
+  }
+  public putDeploymentConfiguration(value: EcsServiceDeploymentConfiguration) {
+    this._deploymentConfiguration.internalValue = value;
+  }
+  public resetDeploymentConfiguration() {
+    this._deploymentConfiguration.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deploymentConfigurationInput() {
+    return this._deploymentConfiguration.internalValue;
+  }
+
   // deployment_controller - computed: false, optional: true, required: false
   private _deploymentController = new EcsServiceDeploymentControllerOutputReference(this, "deployment_controller");
   public get deploymentController() {
@@ -4494,6 +5398,7 @@ export class EcsService extends cdktf.TerraformResource {
       alarms: ecsServiceAlarmsToTerraform(this._alarms.internalValue),
       capacity_provider_strategy: cdktf.listMapper(ecsServiceCapacityProviderStrategyToTerraform, true)(this._capacityProviderStrategy.internalValue),
       deployment_circuit_breaker: ecsServiceDeploymentCircuitBreakerToTerraform(this._deploymentCircuitBreaker.internalValue),
+      deployment_configuration: ecsServiceDeploymentConfigurationToTerraform(this._deploymentConfiguration.internalValue),
       deployment_controller: ecsServiceDeploymentControllerToTerraform(this._deploymentController.internalValue),
       load_balancer: cdktf.listMapper(ecsServiceLoadBalancerToTerraform, true)(this._loadBalancer.internalValue),
       network_configuration: ecsServiceNetworkConfigurationToTerraform(this._networkConfiguration.internalValue),
@@ -4664,6 +5569,12 @@ export class EcsService extends cdktf.TerraformResource {
         isBlock: true,
         type: "list",
         storageClassType: "EcsServiceDeploymentCircuitBreakerList",
+      },
+      deployment_configuration: {
+        value: ecsServiceDeploymentConfigurationToHclTerraform(this._deploymentConfiguration.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "EcsServiceDeploymentConfigurationList",
       },
       deployment_controller: {
         value: ecsServiceDeploymentControllerToHclTerraform(this._deploymentController.internalValue),

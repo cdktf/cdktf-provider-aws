@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/data-sources/redshift_data_shares
+// https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/data-sources/redshift_data_shares
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,7 +15,7 @@ export interface DataAwsRedshiftDataSharesConfig extends cdktf.TerraformMetaArgu
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/data-sources/redshift_data_shares#region DataAwsRedshiftDataShares#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/data-sources/redshift_data_shares#region DataAwsRedshiftDataShares#region}
   */
   readonly region?: string;
 }
@@ -106,7 +106,7 @@ export class DataAwsRedshiftDataSharesDataSharesList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/data-sources/redshift_data_shares aws_redshift_data_shares}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/data-sources/redshift_data_shares aws_redshift_data_shares}
 */
 export class DataAwsRedshiftDataShares extends cdktf.TerraformDataSource {
 
@@ -122,7 +122,7 @@ export class DataAwsRedshiftDataShares extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataAwsRedshiftDataShares resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsRedshiftDataShares to import
-  * @param importFromId The id of the existing DataAwsRedshiftDataShares that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/data-sources/redshift_data_shares#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsRedshiftDataShares that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/data-sources/redshift_data_shares#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsRedshiftDataShares to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -134,7 +134,7 @@ export class DataAwsRedshiftDataShares extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/data-sources/redshift_data_shares aws_redshift_data_shares} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/data-sources/redshift_data_shares aws_redshift_data_shares} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -145,7 +145,7 @@ export class DataAwsRedshiftDataShares extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_redshift_data_shares',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.3.0',
+        providerVersion: '6.4.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

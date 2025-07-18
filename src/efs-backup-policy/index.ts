@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/efs_backup_policy
+// https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/efs_backup_policy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,11 +13,11 @@ import * as cdktf from 'cdktf';
 
 export interface EfsBackupPolicyConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/efs_backup_policy#file_system_id EfsBackupPolicy#file_system_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/efs_backup_policy#file_system_id EfsBackupPolicy#file_system_id}
   */
   readonly fileSystemId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/efs_backup_policy#id EfsBackupPolicy#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/efs_backup_policy#id EfsBackupPolicy#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -26,19 +26,19 @@ export interface EfsBackupPolicyConfig extends cdktf.TerraformMetaArguments {
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/efs_backup_policy#region EfsBackupPolicy#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/efs_backup_policy#region EfsBackupPolicy#region}
   */
   readonly region?: string;
   /**
   * backup_policy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/efs_backup_policy#backup_policy EfsBackupPolicy#backup_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/efs_backup_policy#backup_policy EfsBackupPolicy#backup_policy}
   */
   readonly backupPolicy: EfsBackupPolicyBackupPolicy;
 }
 export interface EfsBackupPolicyBackupPolicy {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/efs_backup_policy#status EfsBackupPolicy#status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/efs_backup_policy#status EfsBackupPolicy#status}
   */
   readonly status: string;
 }
@@ -119,7 +119,7 @@ export class EfsBackupPolicyBackupPolicyOutputReference extends cdktf.ComplexObj
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/efs_backup_policy aws_efs_backup_policy}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/efs_backup_policy aws_efs_backup_policy}
 */
 export class EfsBackupPolicy extends cdktf.TerraformResource {
 
@@ -135,7 +135,7 @@ export class EfsBackupPolicy extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a EfsBackupPolicy resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the EfsBackupPolicy to import
-  * @param importFromId The id of the existing EfsBackupPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/efs_backup_policy#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing EfsBackupPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/efs_backup_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the EfsBackupPolicy to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -147,7 +147,7 @@ export class EfsBackupPolicy extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/efs_backup_policy aws_efs_backup_policy} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/efs_backup_policy aws_efs_backup_policy} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -158,7 +158,7 @@ export class EfsBackupPolicy extends cdktf.TerraformResource {
       terraformResourceType: 'aws_efs_backup_policy',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.3.0',
+        providerVersion: '6.4.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
