@@ -4,7 +4,7 @@
 
 ### DataAwsBillingServiceAccount <a name="DataAwsBillingServiceAccount" id="@cdktf/provider-aws.dataAwsBillingServiceAccount.DataAwsBillingServiceAccount"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/data-sources/billing_service_account aws_billing_service_account}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/data-sources/billing_service_account aws_billing_service_account}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsBillingServiceAccount.DataAwsBillingServiceAccount.Initializer"></a>
 
@@ -38,7 +38,7 @@ DataAwsBillingServiceAccount.Builder.create(Construct scope, java.lang.String id
 | <code><a href="#@cdktf/provider-aws.dataAwsBillingServiceAccount.DataAwsBillingServiceAccount.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsBillingServiceAccount.DataAwsBillingServiceAccount.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsBillingServiceAccount.DataAwsBillingServiceAccount.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsBillingServiceAccount.DataAwsBillingServiceAccount.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/data-sources/billing_service_account#id DataAwsBillingServiceAccount#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsBillingServiceAccount.DataAwsBillingServiceAccount.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/data-sources/billing_service_account#id DataAwsBillingServiceAccount#id}. |
 
 ---
 
@@ -106,7 +106,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/data-sources/billing_service_account#id DataAwsBillingServiceAccount#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/data-sources/billing_service_account#id DataAwsBillingServiceAccount#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -439,7 +439,7 @@ The construct id used in the generated config for the DataAwsBillingServiceAccou
 
 The id of the existing DataAwsBillingServiceAccount that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/data-sources/billing_service_account#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/data-sources/billing_service_account#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -679,7 +679,7 @@ DataAwsBillingServiceAccountConfig.builder()
 | <code><a href="#@cdktf/provider-aws.dataAwsBillingServiceAccount.DataAwsBillingServiceAccountConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsBillingServiceAccount.DataAwsBillingServiceAccountConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsBillingServiceAccount.DataAwsBillingServiceAccountConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsBillingServiceAccount.DataAwsBillingServiceAccountConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/data-sources/billing_service_account#id DataAwsBillingServiceAccount#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsBillingServiceAccount.DataAwsBillingServiceAccountConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/data-sources/billing_service_account#id DataAwsBillingServiceAccount#id}. |
 
 ---
 
@@ -761,7 +761,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/data-sources/billing_service_account#id DataAwsBillingServiceAccount#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/data-sources/billing_service_account#id DataAwsBillingServiceAccount#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

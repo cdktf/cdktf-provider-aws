@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/data-sources/bedrock_inference_profiles
+// https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/data-sources/bedrock_inference_profiles
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,9 +15,13 @@ export interface DataAwsBedrockInferenceProfilesConfig extends cdktf.TerraformMe
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/data-sources/bedrock_inference_profiles#region DataAwsBedrockInferenceProfiles#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/data-sources/bedrock_inference_profiles#region DataAwsBedrockInferenceProfiles#region}
   */
   readonly region?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/data-sources/bedrock_inference_profiles#type DataAwsBedrockInferenceProfiles#type}
+  */
+  readonly type?: string;
 }
 export interface DataAwsBedrockInferenceProfilesInferenceProfileSummariesModels {
 }
@@ -212,7 +216,7 @@ export class DataAwsBedrockInferenceProfilesInferenceProfileSummariesList extend
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/data-sources/bedrock_inference_profiles aws_bedrock_inference_profiles}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/data-sources/bedrock_inference_profiles aws_bedrock_inference_profiles}
 */
 export class DataAwsBedrockInferenceProfiles extends cdktf.TerraformDataSource {
 
@@ -228,7 +232,7 @@ export class DataAwsBedrockInferenceProfiles extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataAwsBedrockInferenceProfiles resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsBedrockInferenceProfiles to import
-  * @param importFromId The id of the existing DataAwsBedrockInferenceProfiles that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/data-sources/bedrock_inference_profiles#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsBedrockInferenceProfiles that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/data-sources/bedrock_inference_profiles#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsBedrockInferenceProfiles to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -240,7 +244,7 @@ export class DataAwsBedrockInferenceProfiles extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/data-sources/bedrock_inference_profiles aws_bedrock_inference_profiles} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/data-sources/bedrock_inference_profiles aws_bedrock_inference_profiles} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -251,7 +255,7 @@ export class DataAwsBedrockInferenceProfiles extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_bedrock_inference_profiles',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.3.0',
+        providerVersion: '6.4.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
@@ -263,6 +267,7 @@ export class DataAwsBedrockInferenceProfiles extends cdktf.TerraformDataSource {
       forEach: config.forEach
     });
     this._region = config.region;
+    this._type = config.type;
   }
 
   // ==========
@@ -291,6 +296,22 @@ export class DataAwsBedrockInferenceProfiles extends cdktf.TerraformDataSource {
     return this._region;
   }
 
+  // type - computed: false, optional: true, required: false
+  private _type?: string; 
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+  public set type(value: string) {
+    this._type = value;
+  }
+  public resetType() {
+    this._type = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get typeInput() {
+    return this._type;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -298,6 +319,7 @@ export class DataAwsBedrockInferenceProfiles extends cdktf.TerraformDataSource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       region: cdktf.stringToTerraform(this._region),
+      type: cdktf.stringToTerraform(this._type),
     };
   }
 
@@ -305,6 +327,12 @@ export class DataAwsBedrockInferenceProfiles extends cdktf.TerraformDataSource {
     const attrs = {
       region: {
         value: cdktf.stringToHclTerraform(this._region),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      type: {
+        value: cdktf.stringToHclTerraform(this._type),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

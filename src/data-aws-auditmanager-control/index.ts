@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/data-sources/auditmanager_control
+// https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/data-sources/auditmanager_control
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,17 +13,17 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsAuditmanagerControlConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/data-sources/auditmanager_control#name DataAwsAuditmanagerControl#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/data-sources/auditmanager_control#name DataAwsAuditmanagerControl#name}
   */
   readonly name: string;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/data-sources/auditmanager_control#region DataAwsAuditmanagerControl#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/data-sources/auditmanager_control#region DataAwsAuditmanagerControl#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/data-sources/auditmanager_control#type DataAwsAuditmanagerControl#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/data-sources/auditmanager_control#type DataAwsAuditmanagerControl#type}
   */
   readonly type: string;
 }
@@ -220,7 +220,7 @@ export class DataAwsAuditmanagerControlControlMappingSourcesList extends cdktf.C
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/data-sources/auditmanager_control aws_auditmanager_control}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/data-sources/auditmanager_control aws_auditmanager_control}
 */
 export class DataAwsAuditmanagerControl extends cdktf.TerraformDataSource {
 
@@ -236,7 +236,7 @@ export class DataAwsAuditmanagerControl extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataAwsAuditmanagerControl resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsAuditmanagerControl to import
-  * @param importFromId The id of the existing DataAwsAuditmanagerControl that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/data-sources/auditmanager_control#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsAuditmanagerControl that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/data-sources/auditmanager_control#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsAuditmanagerControl to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -248,7 +248,7 @@ export class DataAwsAuditmanagerControl extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/data-sources/auditmanager_control aws_auditmanager_control} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/data-sources/auditmanager_control aws_auditmanager_control} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -259,7 +259,7 @@ export class DataAwsAuditmanagerControl extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_auditmanager_control',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.3.0',
+        providerVersion: '6.4.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

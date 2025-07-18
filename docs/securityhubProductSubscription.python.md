@@ -4,7 +4,7 @@
 
 ### SecurityhubProductSubscription <a name="SecurityhubProductSubscription" id="@cdktf/provider-aws.securityhubProductSubscription.SecurityhubProductSubscription"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/securityhub_product_subscription aws_securityhub_product_subscription}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/securityhub_product_subscription aws_securityhub_product_subscription}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubProductSubscription.SecurityhubProductSubscription.Initializer"></a>
 
@@ -38,8 +38,8 @@ securityhubProductSubscription.SecurityhubProductSubscription(
 | <code><a href="#@cdktf/provider-aws.securityhubProductSubscription.SecurityhubProductSubscription.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubProductSubscription.SecurityhubProductSubscription.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubProductSubscription.SecurityhubProductSubscription.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubProductSubscription.SecurityhubProductSubscription.Initializer.parameter.productArn">product_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/securityhub_product_subscription#product_arn SecurityhubProductSubscription#product_arn}. |
-| <code><a href="#@cdktf/provider-aws.securityhubProductSubscription.SecurityhubProductSubscription.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/securityhub_product_subscription#id SecurityhubProductSubscription#id}. |
+| <code><a href="#@cdktf/provider-aws.securityhubProductSubscription.SecurityhubProductSubscription.Initializer.parameter.productArn">product_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/securityhub_product_subscription#product_arn SecurityhubProductSubscription#product_arn}. |
+| <code><a href="#@cdktf/provider-aws.securityhubProductSubscription.SecurityhubProductSubscription.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/securityhub_product_subscription#id SecurityhubProductSubscription#id}. |
 | <code><a href="#@cdktf/provider-aws.securityhubProductSubscription.SecurityhubProductSubscription.Initializer.parameter.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -108,7 +108,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/securityhub_product_subscription#product_arn SecurityhubProductSubscription#product_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/securityhub_product_subscription#product_arn SecurityhubProductSubscription#product_arn}.
 
 ---
 
@@ -116,7 +116,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/securityhub_product_subscription#id SecurityhubProductSubscription#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/securityhub_product_subscription#id SecurityhubProductSubscription#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -129,7 +129,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/securityhub_product_subscription#region SecurityhubProductSubscription#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/securityhub_product_subscription#region SecurityhubProductSubscription#region}
 
 ---
 
@@ -616,7 +616,7 @@ The construct id used in the generated config for the SecurityhubProductSubscrip
 
 The id of the existing SecurityhubProductSubscription that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/securityhub_product_subscription#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/securityhub_product_subscription#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -920,8 +920,8 @@ securityhubProductSubscription.SecurityhubProductSubscriptionConfig(
 | <code><a href="#@cdktf/provider-aws.securityhubProductSubscription.SecurityhubProductSubscriptionConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubProductSubscription.SecurityhubProductSubscriptionConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubProductSubscription.SecurityhubProductSubscriptionConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubProductSubscription.SecurityhubProductSubscriptionConfig.property.productArn">product_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/securityhub_product_subscription#product_arn SecurityhubProductSubscription#product_arn}. |
-| <code><a href="#@cdktf/provider-aws.securityhubProductSubscription.SecurityhubProductSubscriptionConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/securityhub_product_subscription#id SecurityhubProductSubscription#id}. |
+| <code><a href="#@cdktf/provider-aws.securityhubProductSubscription.SecurityhubProductSubscriptionConfig.property.productArn">product_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/securityhub_product_subscription#product_arn SecurityhubProductSubscription#product_arn}. |
+| <code><a href="#@cdktf/provider-aws.securityhubProductSubscription.SecurityhubProductSubscriptionConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/securityhub_product_subscription#id SecurityhubProductSubscription#id}. |
 | <code><a href="#@cdktf/provider-aws.securityhubProductSubscription.SecurityhubProductSubscriptionConfig.property.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -1004,7 +1004,7 @@ product_arn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/securityhub_product_subscription#product_arn SecurityhubProductSubscription#product_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/securityhub_product_subscription#product_arn SecurityhubProductSubscription#product_arn}.
 
 ---
 
@@ -1016,7 +1016,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/securityhub_product_subscription#id SecurityhubProductSubscription#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/securityhub_product_subscription#id SecurityhubProductSubscription#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1033,7 +1033,7 @@ region: str
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/securityhub_product_subscription#region SecurityhubProductSubscription#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/securityhub_product_subscription#region SecurityhubProductSubscription#region}
 
 ---
 
