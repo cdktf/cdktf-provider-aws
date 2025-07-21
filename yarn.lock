@@ -246,9 +246,9 @@
     glob "10.4.5"
 
 "@cdktf/provider-project@^0.7.0":
-  version "0.7.11"
-  resolved "https://registry.yarnpkg.com/@cdktf/provider-project/-/provider-project-0.7.11.tgz#0255d2059f021b95f754341f63647faa8761b2f7"
-  integrity sha512-6gDf4f7f/X50MlO+2gwVd3A7ThNf8LfavnAE0nSM8OEfA9am0QPvAFMAaexvybDdwr6t84CwP/EEP7yWitiYTA==
+  version "0.7.12"
+  resolved "https://registry.yarnpkg.com/@cdktf/provider-project/-/provider-project-0.7.12.tgz#cf16f2abe75d9f799647fd17dad6df694dd4894a"
+  integrity sha512-Xvi6CHwEBIEOyUfKBDkkmELX43IbI9Y7eKgB8N4akKrHaTqiTAynMyNsc27ju/7ibnF9bN6/U9G1go1pwdrhFg==
   dependencies:
     change-case "^4.1.2"
     fs-extra "^10.1.0"
@@ -625,9 +625,9 @@
     "@types/node" "*"
 
 "@types/node@*":
-  version "24.0.13"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-24.0.13.tgz#93ed8c05c7b188a59760be0ce2ee3fa7ad0f83f6"
-  integrity sha512-Qm9OYVOFHFYg3wJoTSrz80hoec5Lia/dPp84do3X7dZvLikQvM1YpmvTBEdIr/e+U8HTkFjLHLnl78K/qjf+jQ==
+  version "24.0.15"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-24.0.15.tgz#f34fbc973e7d64217106e0c59ed8761e6b51381e"
+  integrity sha512-oaeTSbCef7U/z7rDeJA138xpG3NuKc64/rZ2qmUFkFJmnMsAPaluIifqyWd8hSSMxyP9oie3dLAqYPblag9KgA==
   dependencies:
     undici-types "~7.8.0"
 
@@ -639,9 +639,9 @@
     undici-types "~5.26.4"
 
 "@types/node@^20", "@types/node@^20.10.7", "@types/node@^20.4.2":
-  version "20.19.7"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-20.19.7.tgz#1d3656e25ec91731c1cce21889e4754ebc988b4e"
-  integrity sha512-1GM9z6BJOv86qkPvzh2i6VW5+VVrXxCLknfmTkWEqz+6DqosiY28XUWCTmBcJ0ACzKqx/iwdIREfo1fwExIlkA==
+  version "20.19.9"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-20.19.9.tgz#ca9a58193fec361cc6e859d88b52261853f1f0d3"
+  integrity sha512-cuVNgarYWZqxRJDQHEB58GEONhOK79QVR/qYx4S7kcUObQvUwvFnYxJuuHUKm2aieN9X3yZB4LZsuYNU1Qphsw==
   dependencies:
     undici-types "~6.21.0"
 
@@ -1987,9 +1987,9 @@ foreground-child@^3.1.0:
     signal-exit "^4.0.1"
 
 form-data@^4.0.0:
-  version "4.0.3"
-  resolved "https://registry.yarnpkg.com/form-data/-/form-data-4.0.3.tgz#608b1b3f3e28be0fccf5901fc85fb3641e5cf0ae"
-  integrity sha512-qsITQPfmvMOSAdeyZ+12I1c+CKSstAFAwu+97zrnWAbIr5u8wfsExUzCesVLC8NgHuRUqNN4Zy6UPWUTRGslcA==
+  version "4.0.4"
+  resolved "https://registry.yarnpkg.com/form-data/-/form-data-4.0.4.tgz#784cdcce0669a9d68e94d11ac4eea98088edd2c4"
+  integrity sha512-KrGhL9Q4zjj0kiUt5OO4Mr/A/jlI2jDYs5eHBpYHPcBEVSiipAvn2Ko2HnPe20rmcuuvMHNdZFp+4IlGTMF0Ow==
   dependencies:
     asynckit "^0.4.0"
     combined-stream "^1.0.8"
@@ -2732,9 +2732,9 @@ jsii-diff@^1.112.0:
     yargs "^16.2.0"
 
 jsii-docgen@^10.2.3:
-  version "10.7.5"
-  resolved "https://registry.yarnpkg.com/jsii-docgen/-/jsii-docgen-10.7.5.tgz#3a6d850d665866d51d1895e73a8ca3dc69e0ca8d"
-  integrity sha512-XCYz7grFe7VzcMMfg2cCv4W0AmsdQUoKapmVuanZ1oLWjQk0j/2FuCLlaGL9NszfeGsg8R5pzMM8QTDhQRGgAw==
+  version "10.7.6"
+  resolved "https://registry.yarnpkg.com/jsii-docgen/-/jsii-docgen-10.7.6.tgz#1e106d16e470a5b02cfee1fd66ad1685c640f09a"
+  integrity sha512-kRN5567oSx5nzrCycvwW7lKoqX0BcZz76quh99F2Fq6hrFfe5f0P9VyE/iWlOJEcJPbdsVvJN88YJwkFI8ki8Q==
   dependencies:
     "@jsii/spec" "^1.112.0"
     case "^1.6.3"
