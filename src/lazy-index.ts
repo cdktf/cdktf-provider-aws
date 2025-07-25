@@ -301,6 +301,7 @@ Object.defineProperty(exports, 'cognitoIdentityPool', { get: function () { retur
 Object.defineProperty(exports, 'cognitoIdentityPoolProviderPrincipalTag', { get: function () { return require('./cognito-identity-pool-provider-principal-tag'); } });
 Object.defineProperty(exports, 'cognitoIdentityPoolRolesAttachment', { get: function () { return require('./cognito-identity-pool-roles-attachment'); } });
 Object.defineProperty(exports, 'cognitoIdentityProvider', { get: function () { return require('./cognito-identity-provider'); } });
+Object.defineProperty(exports, 'cognitoLogDeliveryConfiguration', { get: function () { return require('./cognito-log-delivery-configuration'); } });
 Object.defineProperty(exports, 'cognitoManagedUserPoolClient', { get: function () { return require('./cognito-managed-user-pool-client'); } });
 Object.defineProperty(exports, 'cognitoResourceServer', { get: function () { return require('./cognito-resource-server'); } });
 Object.defineProperty(exports, 'cognitoRiskConfiguration', { get: function () { return require('./cognito-risk-configuration'); } });
@@ -935,6 +936,7 @@ Object.defineProperty(exports, 'networkInterfacePermission', { get: function () 
 Object.defineProperty(exports, 'networkInterfaceSgAttachment', { get: function () { return require('./network-interface-sg-attachment'); } });
 Object.defineProperty(exports, 'networkfirewallFirewall', { get: function () { return require('./networkfirewall-firewall'); } });
 Object.defineProperty(exports, 'networkfirewallFirewallPolicy', { get: function () { return require('./networkfirewall-firewall-policy'); } });
+Object.defineProperty(exports, 'networkfirewallFirewallTransitGatewayAttachmentAccepter', { get: function () { return require('./networkfirewall-firewall-transit-gateway-attachment-accepter'); } });
 Object.defineProperty(exports, 'networkfirewallLoggingConfiguration', { get: function () { return require('./networkfirewall-logging-configuration'); } });
 Object.defineProperty(exports, 'networkfirewallResourcePolicy', { get: function () { return require('./networkfirewall-resource-policy'); } });
 Object.defineProperty(exports, 'networkfirewallRuleGroup', { get: function () { return require('./networkfirewall-rule-group'); } });
@@ -1158,6 +1160,7 @@ Object.defineProperty(exports, 's3BucketIntelligentTieringConfiguration', { get:
 Object.defineProperty(exports, 's3BucketInventory', { get: function () { return require('./s3-bucket-inventory'); } });
 Object.defineProperty(exports, 's3BucketLifecycleConfiguration', { get: function () { return require('./s3-bucket-lifecycle-configuration'); } });
 Object.defineProperty(exports, 's3BucketLogging', { get: function () { return require('./s3-bucket-logging'); } });
+Object.defineProperty(exports, 's3BucketMetadataConfiguration', { get: function () { return require('./s3-bucket-metadata-configuration'); } });
 Object.defineProperty(exports, 's3BucketMetric', { get: function () { return require('./s3-bucket-metric'); } });
 Object.defineProperty(exports, 's3BucketNotification', { get: function () { return require('./s3-bucket-notification'); } });
 Object.defineProperty(exports, 's3BucketObject', { get: function () { return require('./s3-bucket-object'); } });
@@ -1720,6 +1723,7 @@ Object.defineProperty(exports, 'dataAwsEc2TransitGatewayVpcAttachments', { get: 
 Object.defineProperty(exports, 'dataAwsEc2TransitGatewayVpnAttachment', { get: function () { return require('./data-aws-ec2-transit-gateway-vpn-attachment'); } });
 Object.defineProperty(exports, 'dataAwsEcrAuthorizationToken', { get: function () { return require('./data-aws-ecr-authorization-token'); } });
 Object.defineProperty(exports, 'dataAwsEcrImage', { get: function () { return require('./data-aws-ecr-image'); } });
+Object.defineProperty(exports, 'dataAwsEcrImages', { get: function () { return require('./data-aws-ecr-images'); } });
 Object.defineProperty(exports, 'dataAwsEcrLifecyclePolicyDocument', { get: function () { return require('./data-aws-ecr-lifecycle-policy-document'); } });
 Object.defineProperty(exports, 'dataAwsEcrPullThroughCacheRule', { get: function () { return require('./data-aws-ecr-pull-through-cache-rule'); } });
 Object.defineProperty(exports, 'dataAwsEcrRepositories', { get: function () { return require('./data-aws-ecr-repositories'); } });

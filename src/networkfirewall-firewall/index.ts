@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/networkfirewall_firewall
+// https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/networkfirewall_firewall
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,74 +13,88 @@ import * as cdktf from 'cdktf';
 
 export interface NetworkfirewallFirewallConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/networkfirewall_firewall#delete_protection NetworkfirewallFirewall#delete_protection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/networkfirewall_firewall#availability_zone_change_protection NetworkfirewallFirewall#availability_zone_change_protection}
+  */
+  readonly availabilityZoneChangeProtection?: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/networkfirewall_firewall#delete_protection NetworkfirewallFirewall#delete_protection}
   */
   readonly deleteProtection?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/networkfirewall_firewall#description NetworkfirewallFirewall#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/networkfirewall_firewall#description NetworkfirewallFirewall#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/networkfirewall_firewall#enabled_analysis_types NetworkfirewallFirewall#enabled_analysis_types}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/networkfirewall_firewall#enabled_analysis_types NetworkfirewallFirewall#enabled_analysis_types}
   */
   readonly enabledAnalysisTypes?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/networkfirewall_firewall#firewall_policy_arn NetworkfirewallFirewall#firewall_policy_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/networkfirewall_firewall#firewall_policy_arn NetworkfirewallFirewall#firewall_policy_arn}
   */
   readonly firewallPolicyArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/networkfirewall_firewall#firewall_policy_change_protection NetworkfirewallFirewall#firewall_policy_change_protection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/networkfirewall_firewall#firewall_policy_change_protection NetworkfirewallFirewall#firewall_policy_change_protection}
   */
   readonly firewallPolicyChangeProtection?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/networkfirewall_firewall#id NetworkfirewallFirewall#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/networkfirewall_firewall#id NetworkfirewallFirewall#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/networkfirewall_firewall#name NetworkfirewallFirewall#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/networkfirewall_firewall#name NetworkfirewallFirewall#name}
   */
   readonly name: string;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/networkfirewall_firewall#region NetworkfirewallFirewall#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/networkfirewall_firewall#region NetworkfirewallFirewall#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/networkfirewall_firewall#subnet_change_protection NetworkfirewallFirewall#subnet_change_protection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/networkfirewall_firewall#subnet_change_protection NetworkfirewallFirewall#subnet_change_protection}
   */
   readonly subnetChangeProtection?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/networkfirewall_firewall#tags NetworkfirewallFirewall#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/networkfirewall_firewall#tags NetworkfirewallFirewall#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/networkfirewall_firewall#tags_all NetworkfirewallFirewall#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/networkfirewall_firewall#tags_all NetworkfirewallFirewall#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/networkfirewall_firewall#vpc_id NetworkfirewallFirewall#vpc_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/networkfirewall_firewall#transit_gateway_id NetworkfirewallFirewall#transit_gateway_id}
   */
-  readonly vpcId: string;
+  readonly transitGatewayId?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/networkfirewall_firewall#vpc_id NetworkfirewallFirewall#vpc_id}
+  */
+  readonly vpcId?: string;
+  /**
+  * availability_zone_mapping block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/networkfirewall_firewall#availability_zone_mapping NetworkfirewallFirewall#availability_zone_mapping}
+  */
+  readonly availabilityZoneMapping?: NetworkfirewallFirewallAvailabilityZoneMapping[] | cdktf.IResolvable;
   /**
   * encryption_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/networkfirewall_firewall#encryption_configuration NetworkfirewallFirewall#encryption_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/networkfirewall_firewall#encryption_configuration NetworkfirewallFirewall#encryption_configuration}
   */
   readonly encryptionConfiguration?: NetworkfirewallFirewallEncryptionConfiguration;
   /**
   * subnet_mapping block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/networkfirewall_firewall#subnet_mapping NetworkfirewallFirewall#subnet_mapping}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/networkfirewall_firewall#subnet_mapping NetworkfirewallFirewall#subnet_mapping}
   */
-  readonly subnetMapping: NetworkfirewallFirewallSubnetMapping[] | cdktf.IResolvable;
+  readonly subnetMapping?: NetworkfirewallFirewallSubnetMapping[] | cdktf.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/networkfirewall_firewall#timeouts NetworkfirewallFirewall#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/networkfirewall_firewall#timeouts NetworkfirewallFirewall#timeouts}
   */
   readonly timeouts?: NetworkfirewallFirewallTimeouts;
 }
@@ -245,6 +259,81 @@ export class NetworkfirewallFirewallFirewallStatusSyncStatesList extends cdktf.C
     return new NetworkfirewallFirewallFirewallStatusSyncStatesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface NetworkfirewallFirewallFirewallStatusTransitGatewayAttachmentSyncStates {
+}
+
+export function networkfirewallFirewallFirewallStatusTransitGatewayAttachmentSyncStatesToTerraform(struct?: NetworkfirewallFirewallFirewallStatusTransitGatewayAttachmentSyncStates): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function networkfirewallFirewallFirewallStatusTransitGatewayAttachmentSyncStatesToHclTerraform(struct?: NetworkfirewallFirewallFirewallStatusTransitGatewayAttachmentSyncStates): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class NetworkfirewallFirewallFirewallStatusTransitGatewayAttachmentSyncStatesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): NetworkfirewallFirewallFirewallStatusTransitGatewayAttachmentSyncStates | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: NetworkfirewallFirewallFirewallStatusTransitGatewayAttachmentSyncStates | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // attachment_id - computed: true, optional: false, required: false
+  public get attachmentId() {
+    return this.getStringAttribute('attachment_id');
+  }
+}
+
+export class NetworkfirewallFirewallFirewallStatusTransitGatewayAttachmentSyncStatesList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): NetworkfirewallFirewallFirewallStatusTransitGatewayAttachmentSyncStatesOutputReference {
+    return new NetworkfirewallFirewallFirewallStatusTransitGatewayAttachmentSyncStatesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface NetworkfirewallFirewallFirewallStatus {
 }
 
@@ -301,6 +390,12 @@ export class NetworkfirewallFirewallFirewallStatusOutputReference extends cdktf.
   public get syncStates() {
     return this._syncStates;
   }
+
+  // transit_gateway_attachment_sync_states - computed: true, optional: false, required: false
+  private _transitGatewayAttachmentSyncStates = new NetworkfirewallFirewallFirewallStatusTransitGatewayAttachmentSyncStatesList(this, "transit_gateway_attachment_sync_states", false);
+  public get transitGatewayAttachmentSyncStates() {
+    return this._transitGatewayAttachmentSyncStates;
+  }
 }
 
 export class NetworkfirewallFirewallFirewallStatusList extends cdktf.ComplexList {
@@ -321,13 +416,126 @@ export class NetworkfirewallFirewallFirewallStatusList extends cdktf.ComplexList
     return new NetworkfirewallFirewallFirewallStatusOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface NetworkfirewallFirewallAvailabilityZoneMapping {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/networkfirewall_firewall#availability_zone_id NetworkfirewallFirewall#availability_zone_id}
+  */
+  readonly availabilityZoneId: string;
+}
+
+export function networkfirewallFirewallAvailabilityZoneMappingToTerraform(struct?: NetworkfirewallFirewallAvailabilityZoneMapping | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    availability_zone_id: cdktf.stringToTerraform(struct!.availabilityZoneId),
+  }
+}
+
+
+export function networkfirewallFirewallAvailabilityZoneMappingToHclTerraform(struct?: NetworkfirewallFirewallAvailabilityZoneMapping | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    availability_zone_id: {
+      value: cdktf.stringToHclTerraform(struct!.availabilityZoneId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class NetworkfirewallFirewallAvailabilityZoneMappingOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): NetworkfirewallFirewallAvailabilityZoneMapping | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._availabilityZoneId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.availabilityZoneId = this._availabilityZoneId;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: NetworkfirewallFirewallAvailabilityZoneMapping | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._availabilityZoneId = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._availabilityZoneId = value.availabilityZoneId;
+    }
+  }
+
+  // availability_zone_id - computed: false, optional: false, required: true
+  private _availabilityZoneId?: string; 
+  public get availabilityZoneId() {
+    return this.getStringAttribute('availability_zone_id');
+  }
+  public set availabilityZoneId(value: string) {
+    this._availabilityZoneId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get availabilityZoneIdInput() {
+    return this._availabilityZoneId;
+  }
+}
+
+export class NetworkfirewallFirewallAvailabilityZoneMappingList extends cdktf.ComplexList {
+  public internalValue? : NetworkfirewallFirewallAvailabilityZoneMapping[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): NetworkfirewallFirewallAvailabilityZoneMappingOutputReference {
+    return new NetworkfirewallFirewallAvailabilityZoneMappingOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface NetworkfirewallFirewallEncryptionConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/networkfirewall_firewall#key_id NetworkfirewallFirewall#key_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/networkfirewall_firewall#key_id NetworkfirewallFirewall#key_id}
   */
   readonly keyId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/networkfirewall_firewall#type NetworkfirewallFirewall#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/networkfirewall_firewall#type NetworkfirewallFirewall#type}
   */
   readonly type: string;
 }
@@ -437,11 +645,11 @@ export class NetworkfirewallFirewallEncryptionConfigurationOutputReference exten
 }
 export interface NetworkfirewallFirewallSubnetMapping {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/networkfirewall_firewall#ip_address_type NetworkfirewallFirewall#ip_address_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/networkfirewall_firewall#ip_address_type NetworkfirewallFirewall#ip_address_type}
   */
   readonly ipAddressType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/networkfirewall_firewall#subnet_id NetworkfirewallFirewall#subnet_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/networkfirewall_firewall#subnet_id NetworkfirewallFirewall#subnet_id}
   */
   readonly subnetId: string;
 }
@@ -583,15 +791,15 @@ export class NetworkfirewallFirewallSubnetMappingList extends cdktf.ComplexList 
 }
 export interface NetworkfirewallFirewallTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/networkfirewall_firewall#create NetworkfirewallFirewall#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/networkfirewall_firewall#create NetworkfirewallFirewall#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/networkfirewall_firewall#delete NetworkfirewallFirewall#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/networkfirewall_firewall#delete NetworkfirewallFirewall#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/networkfirewall_firewall#update NetworkfirewallFirewall#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/networkfirewall_firewall#update NetworkfirewallFirewall#update}
   */
   readonly update?: string;
 }
@@ -743,7 +951,7 @@ export class NetworkfirewallFirewallTimeoutsOutputReference extends cdktf.Comple
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/networkfirewall_firewall aws_networkfirewall_firewall}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/networkfirewall_firewall aws_networkfirewall_firewall}
 */
 export class NetworkfirewallFirewall extends cdktf.TerraformResource {
 
@@ -759,7 +967,7 @@ export class NetworkfirewallFirewall extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a NetworkfirewallFirewall resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NetworkfirewallFirewall to import
-  * @param importFromId The id of the existing NetworkfirewallFirewall that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/networkfirewall_firewall#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing NetworkfirewallFirewall that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/networkfirewall_firewall#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NetworkfirewallFirewall to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -771,7 +979,7 @@ export class NetworkfirewallFirewall extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/networkfirewall_firewall aws_networkfirewall_firewall} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/networkfirewall_firewall aws_networkfirewall_firewall} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -782,7 +990,7 @@ export class NetworkfirewallFirewall extends cdktf.TerraformResource {
       terraformResourceType: 'aws_networkfirewall_firewall',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.4.0',
+        providerVersion: '6.5.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
@@ -793,6 +1001,7 @@ export class NetworkfirewallFirewall extends cdktf.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
+    this._availabilityZoneChangeProtection = config.availabilityZoneChangeProtection;
     this._deleteProtection = config.deleteProtection;
     this._description = config.description;
     this._enabledAnalysisTypes = config.enabledAnalysisTypes;
@@ -804,7 +1013,9 @@ export class NetworkfirewallFirewall extends cdktf.TerraformResource {
     this._subnetChangeProtection = config.subnetChangeProtection;
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
+    this._transitGatewayId = config.transitGatewayId;
     this._vpcId = config.vpcId;
+    this._availabilityZoneMapping.internalValue = config.availabilityZoneMapping;
     this._encryptionConfiguration.internalValue = config.encryptionConfiguration;
     this._subnetMapping.internalValue = config.subnetMapping;
     this._timeouts.internalValue = config.timeouts;
@@ -817,6 +1028,22 @@ export class NetworkfirewallFirewall extends cdktf.TerraformResource {
   // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
+  }
+
+  // availability_zone_change_protection - computed: false, optional: true, required: false
+  private _availabilityZoneChangeProtection?: boolean | cdktf.IResolvable; 
+  public get availabilityZoneChangeProtection() {
+    return this.getBooleanAttribute('availability_zone_change_protection');
+  }
+  public set availabilityZoneChangeProtection(value: boolean | cdktf.IResolvable) {
+    this._availabilityZoneChangeProtection = value;
+  }
+  public resetAvailabilityZoneChangeProtection() {
+    this._availabilityZoneChangeProtection = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get availabilityZoneChangeProtectionInput() {
+    return this._availabilityZoneChangeProtection;
   }
 
   // delete_protection - computed: false, optional: true, required: false
@@ -995,12 +1222,33 @@ export class NetworkfirewallFirewall extends cdktf.TerraformResource {
     return this._tagsAll;
   }
 
+  // transit_gateway_id - computed: false, optional: true, required: false
+  private _transitGatewayId?: string; 
+  public get transitGatewayId() {
+    return this.getStringAttribute('transit_gateway_id');
+  }
+  public set transitGatewayId(value: string) {
+    this._transitGatewayId = value;
+  }
+  public resetTransitGatewayId() {
+    this._transitGatewayId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get transitGatewayIdInput() {
+    return this._transitGatewayId;
+  }
+
+  // transit_gateway_owner_account_id - computed: true, optional: false, required: false
+  public get transitGatewayOwnerAccountId() {
+    return this.getStringAttribute('transit_gateway_owner_account_id');
+  }
+
   // update_token - computed: true, optional: false, required: false
   public get updateToken() {
     return this.getStringAttribute('update_token');
   }
 
-  // vpc_id - computed: false, optional: false, required: true
+  // vpc_id - computed: false, optional: true, required: false
   private _vpcId?: string; 
   public get vpcId() {
     return this.getStringAttribute('vpc_id');
@@ -1008,9 +1256,28 @@ export class NetworkfirewallFirewall extends cdktf.TerraformResource {
   public set vpcId(value: string) {
     this._vpcId = value;
   }
+  public resetVpcId() {
+    this._vpcId = undefined;
+  }
   // Temporarily expose input value. Use with caution.
   public get vpcIdInput() {
     return this._vpcId;
+  }
+
+  // availability_zone_mapping - computed: false, optional: true, required: false
+  private _availabilityZoneMapping = new NetworkfirewallFirewallAvailabilityZoneMappingList(this, "availability_zone_mapping", true);
+  public get availabilityZoneMapping() {
+    return this._availabilityZoneMapping;
+  }
+  public putAvailabilityZoneMapping(value: NetworkfirewallFirewallAvailabilityZoneMapping[] | cdktf.IResolvable) {
+    this._availabilityZoneMapping.internalValue = value;
+  }
+  public resetAvailabilityZoneMapping() {
+    this._availabilityZoneMapping.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get availabilityZoneMappingInput() {
+    return this._availabilityZoneMapping.internalValue;
   }
 
   // encryption_configuration - computed: false, optional: true, required: false
@@ -1029,13 +1296,16 @@ export class NetworkfirewallFirewall extends cdktf.TerraformResource {
     return this._encryptionConfiguration.internalValue;
   }
 
-  // subnet_mapping - computed: false, optional: false, required: true
+  // subnet_mapping - computed: false, optional: true, required: false
   private _subnetMapping = new NetworkfirewallFirewallSubnetMappingList(this, "subnet_mapping", true);
   public get subnetMapping() {
     return this._subnetMapping;
   }
   public putSubnetMapping(value: NetworkfirewallFirewallSubnetMapping[] | cdktf.IResolvable) {
     this._subnetMapping.internalValue = value;
+  }
+  public resetSubnetMapping() {
+    this._subnetMapping.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get subnetMappingInput() {
@@ -1064,6 +1334,7 @@ export class NetworkfirewallFirewall extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      availability_zone_change_protection: cdktf.booleanToTerraform(this._availabilityZoneChangeProtection),
       delete_protection: cdktf.booleanToTerraform(this._deleteProtection),
       description: cdktf.stringToTerraform(this._description),
       enabled_analysis_types: cdktf.listMapper(cdktf.stringToTerraform, false)(this._enabledAnalysisTypes),
@@ -1075,7 +1346,9 @@ export class NetworkfirewallFirewall extends cdktf.TerraformResource {
       subnet_change_protection: cdktf.booleanToTerraform(this._subnetChangeProtection),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
+      transit_gateway_id: cdktf.stringToTerraform(this._transitGatewayId),
       vpc_id: cdktf.stringToTerraform(this._vpcId),
+      availability_zone_mapping: cdktf.listMapper(networkfirewallFirewallAvailabilityZoneMappingToTerraform, true)(this._availabilityZoneMapping.internalValue),
       encryption_configuration: networkfirewallFirewallEncryptionConfigurationToTerraform(this._encryptionConfiguration.internalValue),
       subnet_mapping: cdktf.listMapper(networkfirewallFirewallSubnetMappingToTerraform, true)(this._subnetMapping.internalValue),
       timeouts: networkfirewallFirewallTimeoutsToTerraform(this._timeouts.internalValue),
@@ -1084,6 +1357,12 @@ export class NetworkfirewallFirewall extends cdktf.TerraformResource {
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
+      availability_zone_change_protection: {
+        value: cdktf.booleanToHclTerraform(this._availabilityZoneChangeProtection),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
       delete_protection: {
         value: cdktf.booleanToHclTerraform(this._deleteProtection),
         isBlock: false,
@@ -1150,11 +1429,23 @@ export class NetworkfirewallFirewall extends cdktf.TerraformResource {
         type: "map",
         storageClassType: "stringMap",
       },
+      transit_gateway_id: {
+        value: cdktf.stringToHclTerraform(this._transitGatewayId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
       vpc_id: {
         value: cdktf.stringToHclTerraform(this._vpcId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      availability_zone_mapping: {
+        value: cdktf.listMapperHcl(networkfirewallFirewallAvailabilityZoneMappingToHclTerraform, true)(this._availabilityZoneMapping.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "NetworkfirewallFirewallAvailabilityZoneMappingList",
       },
       encryption_configuration: {
         value: networkfirewallFirewallEncryptionConfigurationToHclTerraform(this._encryptionConfiguration.internalValue),
