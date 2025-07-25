@@ -4,7 +4,7 @@
 
 ### DbParameterGroup <a name="DbParameterGroup" id="@cdktf/provider-aws.dbParameterGroup.DbParameterGroup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/db_parameter_group aws_db_parameter_group}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/db_parameter_group aws_db_parameter_group}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dbParameterGroup.DbParameterGroup.Initializer"></a>
 
@@ -543,7 +543,7 @@ The construct id used in the generated config for the DbParameterGroup to import
 
 The id of the existing DbParameterGroup that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/db_parameter_group#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/db_parameter_group#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -990,16 +990,16 @@ const dbParameterGroupConfig: dbParameterGroup.DbParameterGroupConfig = { ... }
 | <code><a href="#@cdktf/provider-aws.dbParameterGroup.DbParameterGroupConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dbParameterGroup.DbParameterGroupConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dbParameterGroup.DbParameterGroupConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbParameterGroup.DbParameterGroupConfig.property.family">family</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/db_parameter_group#family DbParameterGroup#family}. |
-| <code><a href="#@cdktf/provider-aws.dbParameterGroup.DbParameterGroupConfig.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/db_parameter_group#description DbParameterGroup#description}. |
-| <code><a href="#@cdktf/provider-aws.dbParameterGroup.DbParameterGroupConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/db_parameter_group#id DbParameterGroup#id}. |
-| <code><a href="#@cdktf/provider-aws.dbParameterGroup.DbParameterGroupConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/db_parameter_group#name DbParameterGroup#name}. |
-| <code><a href="#@cdktf/provider-aws.dbParameterGroup.DbParameterGroupConfig.property.namePrefix">namePrefix</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/db_parameter_group#name_prefix DbParameterGroup#name_prefix}. |
+| <code><a href="#@cdktf/provider-aws.dbParameterGroup.DbParameterGroupConfig.property.family">family</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/db_parameter_group#family DbParameterGroup#family}. |
+| <code><a href="#@cdktf/provider-aws.dbParameterGroup.DbParameterGroupConfig.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/db_parameter_group#description DbParameterGroup#description}. |
+| <code><a href="#@cdktf/provider-aws.dbParameterGroup.DbParameterGroupConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/db_parameter_group#id DbParameterGroup#id}. |
+| <code><a href="#@cdktf/provider-aws.dbParameterGroup.DbParameterGroupConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/db_parameter_group#name DbParameterGroup#name}. |
+| <code><a href="#@cdktf/provider-aws.dbParameterGroup.DbParameterGroupConfig.property.namePrefix">namePrefix</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/db_parameter_group#name_prefix DbParameterGroup#name_prefix}. |
 | <code><a href="#@cdktf/provider-aws.dbParameterGroup.DbParameterGroupConfig.property.parameter">parameter</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.dbParameterGroup.DbParameterGroupParameter">DbParameterGroupParameter</a>[]</code> | parameter block. |
 | <code><a href="#@cdktf/provider-aws.dbParameterGroup.DbParameterGroupConfig.property.region">region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktf/provider-aws.dbParameterGroup.DbParameterGroupConfig.property.skipDestroy">skipDestroy</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/db_parameter_group#skip_destroy DbParameterGroup#skip_destroy}. |
-| <code><a href="#@cdktf/provider-aws.dbParameterGroup.DbParameterGroupConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/db_parameter_group#tags DbParameterGroup#tags}. |
-| <code><a href="#@cdktf/provider-aws.dbParameterGroup.DbParameterGroupConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/db_parameter_group#tags_all DbParameterGroup#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.dbParameterGroup.DbParameterGroupConfig.property.skipDestroy">skipDestroy</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/db_parameter_group#skip_destroy DbParameterGroup#skip_destroy}. |
+| <code><a href="#@cdktf/provider-aws.dbParameterGroup.DbParameterGroupConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/db_parameter_group#tags DbParameterGroup#tags}. |
+| <code><a href="#@cdktf/provider-aws.dbParameterGroup.DbParameterGroupConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/db_parameter_group#tags_all DbParameterGroup#tags_all}. |
 
 ---
 
@@ -1081,7 +1081,7 @@ public readonly family: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/db_parameter_group#family DbParameterGroup#family}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/db_parameter_group#family DbParameterGroup#family}.
 
 ---
 
@@ -1093,7 +1093,7 @@ public readonly description: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/db_parameter_group#description DbParameterGroup#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/db_parameter_group#description DbParameterGroup#description}.
 
 ---
 
@@ -1105,7 +1105,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/db_parameter_group#id DbParameterGroup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/db_parameter_group#id DbParameterGroup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1120,7 +1120,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/db_parameter_group#name DbParameterGroup#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/db_parameter_group#name DbParameterGroup#name}.
 
 ---
 
@@ -1132,7 +1132,7 @@ public readonly namePrefix: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/db_parameter_group#name_prefix DbParameterGroup#name_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/db_parameter_group#name_prefix DbParameterGroup#name_prefix}.
 
 ---
 
@@ -1146,7 +1146,7 @@ public readonly parameter: IResolvable | DbParameterGroupParameter[];
 
 parameter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/db_parameter_group#parameter DbParameterGroup#parameter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/db_parameter_group#parameter DbParameterGroup#parameter}
 
 ---
 
@@ -1160,7 +1160,7 @@ public readonly region: string;
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/db_parameter_group#region DbParameterGroup#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/db_parameter_group#region DbParameterGroup#region}
 
 ---
 
@@ -1172,7 +1172,7 @@ public readonly skipDestroy: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/db_parameter_group#skip_destroy DbParameterGroup#skip_destroy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/db_parameter_group#skip_destroy DbParameterGroup#skip_destroy}.
 
 ---
 
@@ -1184,7 +1184,7 @@ public readonly tags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/db_parameter_group#tags DbParameterGroup#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/db_parameter_group#tags DbParameterGroup#tags}.
 
 ---
 
@@ -1196,7 +1196,7 @@ public readonly tagsAll: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/db_parameter_group#tags_all DbParameterGroup#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/db_parameter_group#tags_all DbParameterGroup#tags_all}.
 
 ---
 
@@ -1214,9 +1214,9 @@ const dbParameterGroupParameter: dbParameterGroup.DbParameterGroupParameter = { 
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dbParameterGroup.DbParameterGroupParameter.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/db_parameter_group#name DbParameterGroup#name}. |
-| <code><a href="#@cdktf/provider-aws.dbParameterGroup.DbParameterGroupParameter.property.value">value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/db_parameter_group#value DbParameterGroup#value}. |
-| <code><a href="#@cdktf/provider-aws.dbParameterGroup.DbParameterGroupParameter.property.applyMethod">applyMethod</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/db_parameter_group#apply_method DbParameterGroup#apply_method}. |
+| <code><a href="#@cdktf/provider-aws.dbParameterGroup.DbParameterGroupParameter.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/db_parameter_group#name DbParameterGroup#name}. |
+| <code><a href="#@cdktf/provider-aws.dbParameterGroup.DbParameterGroupParameter.property.value">value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/db_parameter_group#value DbParameterGroup#value}. |
+| <code><a href="#@cdktf/provider-aws.dbParameterGroup.DbParameterGroupParameter.property.applyMethod">applyMethod</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/db_parameter_group#apply_method DbParameterGroup#apply_method}. |
 
 ---
 
@@ -1228,7 +1228,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/db_parameter_group#name DbParameterGroup#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/db_parameter_group#name DbParameterGroup#name}.
 
 ---
 
@@ -1240,7 +1240,7 @@ public readonly value: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/db_parameter_group#value DbParameterGroup#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/db_parameter_group#value DbParameterGroup#value}.
 
 ---
 
@@ -1252,7 +1252,7 @@ public readonly applyMethod: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/db_parameter_group#apply_method DbParameterGroup#apply_method}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/db_parameter_group#apply_method DbParameterGroup#apply_method}.
 
 ---
 

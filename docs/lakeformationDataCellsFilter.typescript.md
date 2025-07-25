@@ -4,7 +4,7 @@
 
 ### LakeformationDataCellsFilter <a name="LakeformationDataCellsFilter" id="@cdktf/provider-aws.lakeformationDataCellsFilter.LakeformationDataCellsFilter"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/lakeformation_data_cells_filter aws_lakeformation_data_cells_filter}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/lakeformation_data_cells_filter aws_lakeformation_data_cells_filter}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lakeformationDataCellsFilter.LakeformationDataCellsFilter.Initializer"></a>
 
@@ -514,7 +514,7 @@ The construct id used in the generated config for the LakeformationDataCellsFilt
 
 The id of the existing LakeformationDataCellsFilter that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/lakeformation_data_cells_filter#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/lakeformation_data_cells_filter#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -893,7 +893,7 @@ public readonly region: string;
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/lakeformation_data_cells_filter#region LakeformationDataCellsFilter#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/lakeformation_data_cells_filter#region LakeformationDataCellsFilter#region}
 
 ---
 
@@ -907,7 +907,7 @@ public readonly tableData: IResolvable | LakeformationDataCellsFilterTableData[]
 
 table_data block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/lakeformation_data_cells_filter#table_data LakeformationDataCellsFilter#table_data}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/lakeformation_data_cells_filter#table_data LakeformationDataCellsFilter#table_data}
 
 ---
 
@@ -921,7 +921,7 @@ public readonly timeouts: LakeformationDataCellsFilterTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/lakeformation_data_cells_filter#timeouts LakeformationDataCellsFilter#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/lakeformation_data_cells_filter#timeouts LakeformationDataCellsFilter#timeouts}
 
 ---
 
@@ -939,14 +939,14 @@ const lakeformationDataCellsFilterTableData: lakeformationDataCellsFilter.Lakefo
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.lakeformationDataCellsFilter.LakeformationDataCellsFilterTableData.property.databaseName">databaseName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/lakeformation_data_cells_filter#database_name LakeformationDataCellsFilter#database_name}. |
-| <code><a href="#@cdktf/provider-aws.lakeformationDataCellsFilter.LakeformationDataCellsFilterTableData.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/lakeformation_data_cells_filter#name LakeformationDataCellsFilter#name}. |
-| <code><a href="#@cdktf/provider-aws.lakeformationDataCellsFilter.LakeformationDataCellsFilterTableData.property.tableCatalogId">tableCatalogId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/lakeformation_data_cells_filter#table_catalog_id LakeformationDataCellsFilter#table_catalog_id}. |
-| <code><a href="#@cdktf/provider-aws.lakeformationDataCellsFilter.LakeformationDataCellsFilterTableData.property.tableName">tableName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/lakeformation_data_cells_filter#table_name LakeformationDataCellsFilter#table_name}. |
-| <code><a href="#@cdktf/provider-aws.lakeformationDataCellsFilter.LakeformationDataCellsFilterTableData.property.columnNames">columnNames</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/lakeformation_data_cells_filter#column_names LakeformationDataCellsFilter#column_names}. |
+| <code><a href="#@cdktf/provider-aws.lakeformationDataCellsFilter.LakeformationDataCellsFilterTableData.property.databaseName">databaseName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/lakeformation_data_cells_filter#database_name LakeformationDataCellsFilter#database_name}. |
+| <code><a href="#@cdktf/provider-aws.lakeformationDataCellsFilter.LakeformationDataCellsFilterTableData.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/lakeformation_data_cells_filter#name LakeformationDataCellsFilter#name}. |
+| <code><a href="#@cdktf/provider-aws.lakeformationDataCellsFilter.LakeformationDataCellsFilterTableData.property.tableCatalogId">tableCatalogId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/lakeformation_data_cells_filter#table_catalog_id LakeformationDataCellsFilter#table_catalog_id}. |
+| <code><a href="#@cdktf/provider-aws.lakeformationDataCellsFilter.LakeformationDataCellsFilterTableData.property.tableName">tableName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/lakeformation_data_cells_filter#table_name LakeformationDataCellsFilter#table_name}. |
+| <code><a href="#@cdktf/provider-aws.lakeformationDataCellsFilter.LakeformationDataCellsFilterTableData.property.columnNames">columnNames</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/lakeformation_data_cells_filter#column_names LakeformationDataCellsFilter#column_names}. |
 | <code><a href="#@cdktf/provider-aws.lakeformationDataCellsFilter.LakeformationDataCellsFilterTableData.property.columnWildcard">columnWildcard</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.lakeformationDataCellsFilter.LakeformationDataCellsFilterTableDataColumnWildcard">LakeformationDataCellsFilterTableDataColumnWildcard</a>[]</code> | column_wildcard block. |
 | <code><a href="#@cdktf/provider-aws.lakeformationDataCellsFilter.LakeformationDataCellsFilterTableData.property.rowFilter">rowFilter</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.lakeformationDataCellsFilter.LakeformationDataCellsFilterTableDataRowFilter">LakeformationDataCellsFilterTableDataRowFilter</a>[]</code> | row_filter block. |
-| <code><a href="#@cdktf/provider-aws.lakeformationDataCellsFilter.LakeformationDataCellsFilterTableData.property.versionId">versionId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/lakeformation_data_cells_filter#version_id LakeformationDataCellsFilter#version_id}. |
+| <code><a href="#@cdktf/provider-aws.lakeformationDataCellsFilter.LakeformationDataCellsFilterTableData.property.versionId">versionId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/lakeformation_data_cells_filter#version_id LakeformationDataCellsFilter#version_id}. |
 
 ---
 
@@ -958,7 +958,7 @@ public readonly databaseName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/lakeformation_data_cells_filter#database_name LakeformationDataCellsFilter#database_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/lakeformation_data_cells_filter#database_name LakeformationDataCellsFilter#database_name}.
 
 ---
 
@@ -970,7 +970,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/lakeformation_data_cells_filter#name LakeformationDataCellsFilter#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/lakeformation_data_cells_filter#name LakeformationDataCellsFilter#name}.
 
 ---
 
@@ -982,7 +982,7 @@ public readonly tableCatalogId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/lakeformation_data_cells_filter#table_catalog_id LakeformationDataCellsFilter#table_catalog_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/lakeformation_data_cells_filter#table_catalog_id LakeformationDataCellsFilter#table_catalog_id}.
 
 ---
 
@@ -994,7 +994,7 @@ public readonly tableName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/lakeformation_data_cells_filter#table_name LakeformationDataCellsFilter#table_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/lakeformation_data_cells_filter#table_name LakeformationDataCellsFilter#table_name}.
 
 ---
 
@@ -1006,7 +1006,7 @@ public readonly columnNames: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/lakeformation_data_cells_filter#column_names LakeformationDataCellsFilter#column_names}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/lakeformation_data_cells_filter#column_names LakeformationDataCellsFilter#column_names}.
 
 ---
 
@@ -1020,7 +1020,7 @@ public readonly columnWildcard: IResolvable | LakeformationDataCellsFilterTableD
 
 column_wildcard block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/lakeformation_data_cells_filter#column_wildcard LakeformationDataCellsFilter#column_wildcard}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/lakeformation_data_cells_filter#column_wildcard LakeformationDataCellsFilter#column_wildcard}
 
 ---
 
@@ -1034,7 +1034,7 @@ public readonly rowFilter: IResolvable | LakeformationDataCellsFilterTableDataRo
 
 row_filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/lakeformation_data_cells_filter#row_filter LakeformationDataCellsFilter#row_filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/lakeformation_data_cells_filter#row_filter LakeformationDataCellsFilter#row_filter}
 
 ---
 
@@ -1046,7 +1046,7 @@ public readonly versionId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/lakeformation_data_cells_filter#version_id LakeformationDataCellsFilter#version_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/lakeformation_data_cells_filter#version_id LakeformationDataCellsFilter#version_id}.
 
 ---
 
@@ -1064,7 +1064,7 @@ const lakeformationDataCellsFilterTableDataColumnWildcard: lakeformationDataCell
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.lakeformationDataCellsFilter.LakeformationDataCellsFilterTableDataColumnWildcard.property.excludedColumnNames">excludedColumnNames</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/lakeformation_data_cells_filter#excluded_column_names LakeformationDataCellsFilter#excluded_column_names}. |
+| <code><a href="#@cdktf/provider-aws.lakeformationDataCellsFilter.LakeformationDataCellsFilterTableDataColumnWildcard.property.excludedColumnNames">excludedColumnNames</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/lakeformation_data_cells_filter#excluded_column_names LakeformationDataCellsFilter#excluded_column_names}. |
 
 ---
 
@@ -1076,7 +1076,7 @@ public readonly excludedColumnNames: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/lakeformation_data_cells_filter#excluded_column_names LakeformationDataCellsFilter#excluded_column_names}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/lakeformation_data_cells_filter#excluded_column_names LakeformationDataCellsFilter#excluded_column_names}.
 
 ---
 
@@ -1095,7 +1095,7 @@ const lakeformationDataCellsFilterTableDataRowFilter: lakeformationDataCellsFilt
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.lakeformationDataCellsFilter.LakeformationDataCellsFilterTableDataRowFilter.property.allRowsWildcard">allRowsWildcard</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.lakeformationDataCellsFilter.LakeformationDataCellsFilterTableDataRowFilterAllRowsWildcard">LakeformationDataCellsFilterTableDataRowFilterAllRowsWildcard</a>[]</code> | all_rows_wildcard block. |
-| <code><a href="#@cdktf/provider-aws.lakeformationDataCellsFilter.LakeformationDataCellsFilterTableDataRowFilter.property.filterExpression">filterExpression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/lakeformation_data_cells_filter#filter_expression LakeformationDataCellsFilter#filter_expression}. |
+| <code><a href="#@cdktf/provider-aws.lakeformationDataCellsFilter.LakeformationDataCellsFilterTableDataRowFilter.property.filterExpression">filterExpression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/lakeformation_data_cells_filter#filter_expression LakeformationDataCellsFilter#filter_expression}. |
 
 ---
 
@@ -1109,7 +1109,7 @@ public readonly allRowsWildcard: IResolvable | LakeformationDataCellsFilterTable
 
 all_rows_wildcard block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/lakeformation_data_cells_filter#all_rows_wildcard LakeformationDataCellsFilter#all_rows_wildcard}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/lakeformation_data_cells_filter#all_rows_wildcard LakeformationDataCellsFilter#all_rows_wildcard}
 
 ---
 
@@ -1121,7 +1121,7 @@ public readonly filterExpression: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/lakeformation_data_cells_filter#filter_expression LakeformationDataCellsFilter#filter_expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/lakeformation_data_cells_filter#filter_expression LakeformationDataCellsFilter#filter_expression}.
 
 ---
 
@@ -1164,7 +1164,7 @@ public readonly create: string;
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/lakeformation_data_cells_filter#create LakeformationDataCellsFilter#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/lakeformation_data_cells_filter#create LakeformationDataCellsFilter#create}
 
 ---
 

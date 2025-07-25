@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/data-sources/bedrockagent_agent_versions
+// https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/data-sources/bedrockagent_agent_versions
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,19 +13,19 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsBedrockagentAgentVersionsConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/data-sources/bedrockagent_agent_versions#agent_id DataAwsBedrockagentAgentVersions#agent_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/data-sources/bedrockagent_agent_versions#agent_id DataAwsBedrockagentAgentVersions#agent_id}
   */
   readonly agentId: string;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/data-sources/bedrockagent_agent_versions#region DataAwsBedrockagentAgentVersions#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/data-sources/bedrockagent_agent_versions#region DataAwsBedrockagentAgentVersions#region}
   */
   readonly region?: string;
   /**
   * agent_version_summaries block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/data-sources/bedrockagent_agent_versions#agent_version_summaries DataAwsBedrockagentAgentVersions#agent_version_summaries}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/data-sources/bedrockagent_agent_versions#agent_version_summaries DataAwsBedrockagentAgentVersions#agent_version_summaries}
   */
   readonly agentVersionSummaries?: DataAwsBedrockagentAgentVersionsAgentVersionSummaries[] | cdktf.IResolvable;
 }
@@ -124,7 +124,7 @@ export interface DataAwsBedrockagentAgentVersionsAgentVersionSummaries {
   /**
   * guardrail_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/data-sources/bedrockagent_agent_versions#guardrail_configuration DataAwsBedrockagentAgentVersions#guardrail_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/data-sources/bedrockagent_agent_versions#guardrail_configuration DataAwsBedrockagentAgentVersions#guardrail_configuration}
   */
   readonly guardrailConfiguration?: DataAwsBedrockagentAgentVersionsAgentVersionSummariesGuardrailConfiguration[] | cdktf.IResolvable;
 }
@@ -270,7 +270,7 @@ export class DataAwsBedrockagentAgentVersionsAgentVersionSummariesList extends c
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/data-sources/bedrockagent_agent_versions aws_bedrockagent_agent_versions}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/data-sources/bedrockagent_agent_versions aws_bedrockagent_agent_versions}
 */
 export class DataAwsBedrockagentAgentVersions extends cdktf.TerraformDataSource {
 
@@ -286,7 +286,7 @@ export class DataAwsBedrockagentAgentVersions extends cdktf.TerraformDataSource 
   * Generates CDKTF code for importing a DataAwsBedrockagentAgentVersions resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsBedrockagentAgentVersions to import
-  * @param importFromId The id of the existing DataAwsBedrockagentAgentVersions that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/data-sources/bedrockagent_agent_versions#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsBedrockagentAgentVersions that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/data-sources/bedrockagent_agent_versions#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsBedrockagentAgentVersions to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -298,7 +298,7 @@ export class DataAwsBedrockagentAgentVersions extends cdktf.TerraformDataSource 
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/data-sources/bedrockagent_agent_versions aws_bedrockagent_agent_versions} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/data-sources/bedrockagent_agent_versions aws_bedrockagent_agent_versions} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -309,7 +309,7 @@ export class DataAwsBedrockagentAgentVersions extends cdktf.TerraformDataSource 
       terraformResourceType: 'aws_bedrockagent_agent_versions',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.4.0',
+        providerVersion: '6.5.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

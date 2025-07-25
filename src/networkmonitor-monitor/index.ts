@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/networkmonitor_monitor
+// https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/networkmonitor_monitor
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,27 +13,27 @@ import * as cdktf from 'cdktf';
 
 export interface NetworkmonitorMonitorConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/networkmonitor_monitor#aggregation_period NetworkmonitorMonitor#aggregation_period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/networkmonitor_monitor#aggregation_period NetworkmonitorMonitor#aggregation_period}
   */
   readonly aggregationPeriod?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/networkmonitor_monitor#monitor_name NetworkmonitorMonitor#monitor_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/networkmonitor_monitor#monitor_name NetworkmonitorMonitor#monitor_name}
   */
   readonly monitorName: string;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/networkmonitor_monitor#region NetworkmonitorMonitor#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/networkmonitor_monitor#region NetworkmonitorMonitor#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/networkmonitor_monitor#tags NetworkmonitorMonitor#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/networkmonitor_monitor#tags NetworkmonitorMonitor#tags}
   */
   readonly tags?: { [key: string]: string };
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/networkmonitor_monitor aws_networkmonitor_monitor}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/networkmonitor_monitor aws_networkmonitor_monitor}
 */
 export class NetworkmonitorMonitor extends cdktf.TerraformResource {
 
@@ -49,7 +49,7 @@ export class NetworkmonitorMonitor extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a NetworkmonitorMonitor resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NetworkmonitorMonitor to import
-  * @param importFromId The id of the existing NetworkmonitorMonitor that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/networkmonitor_monitor#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing NetworkmonitorMonitor that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/networkmonitor_monitor#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NetworkmonitorMonitor to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -61,7 +61,7 @@ export class NetworkmonitorMonitor extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/networkmonitor_monitor aws_networkmonitor_monitor} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/networkmonitor_monitor aws_networkmonitor_monitor} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -72,7 +72,7 @@ export class NetworkmonitorMonitor extends cdktf.TerraformResource {
       terraformResourceType: 'aws_networkmonitor_monitor',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.4.0',
+        providerVersion: '6.5.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

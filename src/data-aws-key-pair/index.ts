@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/data-sources/key_pair
+// https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/data-sources/key_pair
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,54 +13,54 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsKeyPairConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/data-sources/key_pair#id DataAwsKeyPair#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/data-sources/key_pair#id DataAwsKeyPair#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/data-sources/key_pair#include_public_key DataAwsKeyPair#include_public_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/data-sources/key_pair#include_public_key DataAwsKeyPair#include_public_key}
   */
   readonly includePublicKey?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/data-sources/key_pair#key_name DataAwsKeyPair#key_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/data-sources/key_pair#key_name DataAwsKeyPair#key_name}
   */
   readonly keyName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/data-sources/key_pair#key_pair_id DataAwsKeyPair#key_pair_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/data-sources/key_pair#key_pair_id DataAwsKeyPair#key_pair_id}
   */
   readonly keyPairId?: string;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/data-sources/key_pair#region DataAwsKeyPair#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/data-sources/key_pair#region DataAwsKeyPair#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/data-sources/key_pair#tags DataAwsKeyPair#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/data-sources/key_pair#tags DataAwsKeyPair#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
   * filter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/data-sources/key_pair#filter DataAwsKeyPair#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/data-sources/key_pair#filter DataAwsKeyPair#filter}
   */
   readonly filter?: DataAwsKeyPairFilter[] | cdktf.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/data-sources/key_pair#timeouts DataAwsKeyPair#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/data-sources/key_pair#timeouts DataAwsKeyPair#timeouts}
   */
   readonly timeouts?: DataAwsKeyPairTimeouts;
 }
 export interface DataAwsKeyPairFilter {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/data-sources/key_pair#name DataAwsKeyPair#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/data-sources/key_pair#name DataAwsKeyPair#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/data-sources/key_pair#values DataAwsKeyPair#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/data-sources/key_pair#values DataAwsKeyPair#values}
   */
   readonly values: string[];
 }
@@ -199,7 +199,7 @@ export class DataAwsKeyPairFilterList extends cdktf.ComplexList {
 }
 export interface DataAwsKeyPairTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/data-sources/key_pair#read DataAwsKeyPair#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/data-sources/key_pair#read DataAwsKeyPair#read}
   */
   readonly read?: string;
 }
@@ -293,7 +293,7 @@ export class DataAwsKeyPairTimeoutsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/data-sources/key_pair aws_key_pair}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/data-sources/key_pair aws_key_pair}
 */
 export class DataAwsKeyPair extends cdktf.TerraformDataSource {
 
@@ -309,7 +309,7 @@ export class DataAwsKeyPair extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataAwsKeyPair resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsKeyPair to import
-  * @param importFromId The id of the existing DataAwsKeyPair that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/data-sources/key_pair#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsKeyPair that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/data-sources/key_pair#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsKeyPair to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -321,7 +321,7 @@ export class DataAwsKeyPair extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/data-sources/key_pair aws_key_pair} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/data-sources/key_pair aws_key_pair} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -332,7 +332,7 @@ export class DataAwsKeyPair extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_key_pair',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.4.0',
+        providerVersion: '6.5.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

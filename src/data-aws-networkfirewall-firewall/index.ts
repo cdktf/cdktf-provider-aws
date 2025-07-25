@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/data-sources/networkfirewall_firewall
+// https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/data-sources/networkfirewall_firewall
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,30 +13,105 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsNetworkfirewallFirewallConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/data-sources/networkfirewall_firewall#arn DataAwsNetworkfirewallFirewall#arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/data-sources/networkfirewall_firewall#arn DataAwsNetworkfirewallFirewall#arn}
   */
   readonly arn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/data-sources/networkfirewall_firewall#id DataAwsNetworkfirewallFirewall#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/data-sources/networkfirewall_firewall#id DataAwsNetworkfirewallFirewall#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/data-sources/networkfirewall_firewall#name DataAwsNetworkfirewallFirewall#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/data-sources/networkfirewall_firewall#name DataAwsNetworkfirewallFirewall#name}
   */
   readonly name?: string;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/data-sources/networkfirewall_firewall#region DataAwsNetworkfirewallFirewall#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/data-sources/networkfirewall_firewall#region DataAwsNetworkfirewallFirewall#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/data-sources/networkfirewall_firewall#tags DataAwsNetworkfirewallFirewall#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/data-sources/networkfirewall_firewall#tags DataAwsNetworkfirewallFirewall#tags}
   */
   readonly tags?: { [key: string]: string };
+}
+export interface DataAwsNetworkfirewallFirewallAvailabilityZoneMapping {
+}
+
+export function dataAwsNetworkfirewallFirewallAvailabilityZoneMappingToTerraform(struct?: DataAwsNetworkfirewallFirewallAvailabilityZoneMapping): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataAwsNetworkfirewallFirewallAvailabilityZoneMappingToHclTerraform(struct?: DataAwsNetworkfirewallFirewallAvailabilityZoneMapping): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataAwsNetworkfirewallFirewallAvailabilityZoneMappingOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsNetworkfirewallFirewallAvailabilityZoneMapping | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsNetworkfirewallFirewallAvailabilityZoneMapping | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // availability_zone_id - computed: true, optional: false, required: false
+  public get availabilityZoneId() {
+    return this.getStringAttribute('availability_zone_id');
+  }
+}
+
+export class DataAwsNetworkfirewallFirewallAvailabilityZoneMappingList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsNetworkfirewallFirewallAvailabilityZoneMappingOutputReference {
+    return new DataAwsNetworkfirewallFirewallAvailabilityZoneMappingOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
 }
 export interface DataAwsNetworkfirewallFirewallEncryptionConfiguration {
 }
@@ -416,6 +491,11 @@ export class DataAwsNetworkfirewallFirewallFirewallStatusSyncStatesAttachmentOut
     return this.getStringAttribute('status');
   }
 
+  // status_message - computed: true, optional: false, required: false
+  public get statusMessage() {
+    return this.getStringAttribute('status_message');
+  }
+
   // subnet_id - computed: true, optional: false, required: false
   public get subnetId() {
     return this.getStringAttribute('subnet_id');
@@ -521,6 +601,91 @@ export class DataAwsNetworkfirewallFirewallFirewallStatusSyncStatesList extends 
     return new DataAwsNetworkfirewallFirewallFirewallStatusSyncStatesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface DataAwsNetworkfirewallFirewallFirewallStatusTransitGatewayAttachmentSyncStates {
+}
+
+export function dataAwsNetworkfirewallFirewallFirewallStatusTransitGatewayAttachmentSyncStatesToTerraform(struct?: DataAwsNetworkfirewallFirewallFirewallStatusTransitGatewayAttachmentSyncStates): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataAwsNetworkfirewallFirewallFirewallStatusTransitGatewayAttachmentSyncStatesToHclTerraform(struct?: DataAwsNetworkfirewallFirewallFirewallStatusTransitGatewayAttachmentSyncStates): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataAwsNetworkfirewallFirewallFirewallStatusTransitGatewayAttachmentSyncStatesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsNetworkfirewallFirewallFirewallStatusTransitGatewayAttachmentSyncStates | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsNetworkfirewallFirewallFirewallStatusTransitGatewayAttachmentSyncStates | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // attachment_id - computed: true, optional: false, required: false
+  public get attachmentId() {
+    return this.getStringAttribute('attachment_id');
+  }
+
+  // status_message - computed: true, optional: false, required: false
+  public get statusMessage() {
+    return this.getStringAttribute('status_message');
+  }
+
+  // transit_gateway_attachment_status - computed: true, optional: false, required: false
+  public get transitGatewayAttachmentStatus() {
+    return this.getStringAttribute('transit_gateway_attachment_status');
+  }
+}
+
+export class DataAwsNetworkfirewallFirewallFirewallStatusTransitGatewayAttachmentSyncStatesList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsNetworkfirewallFirewallFirewallStatusTransitGatewayAttachmentSyncStatesOutputReference {
+    return new DataAwsNetworkfirewallFirewallFirewallStatusTransitGatewayAttachmentSyncStatesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface DataAwsNetworkfirewallFirewallFirewallStatus {
 }
 
@@ -592,6 +757,12 @@ export class DataAwsNetworkfirewallFirewallFirewallStatusOutputReference extends
   private _syncStates = new DataAwsNetworkfirewallFirewallFirewallStatusSyncStatesList(this, "sync_states", true);
   public get syncStates() {
     return this._syncStates;
+  }
+
+  // transit_gateway_attachment_sync_states - computed: true, optional: false, required: false
+  private _transitGatewayAttachmentSyncStates = new DataAwsNetworkfirewallFirewallFirewallStatusTransitGatewayAttachmentSyncStatesList(this, "transit_gateway_attachment_sync_states", false);
+  public get transitGatewayAttachmentSyncStates() {
+    return this._transitGatewayAttachmentSyncStates;
   }
 }
 
@@ -690,7 +861,7 @@ export class DataAwsNetworkfirewallFirewallSubnetMappingList extends cdktf.Compl
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/data-sources/networkfirewall_firewall aws_networkfirewall_firewall}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/data-sources/networkfirewall_firewall aws_networkfirewall_firewall}
 */
 export class DataAwsNetworkfirewallFirewall extends cdktf.TerraformDataSource {
 
@@ -706,7 +877,7 @@ export class DataAwsNetworkfirewallFirewall extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataAwsNetworkfirewallFirewall resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsNetworkfirewallFirewall to import
-  * @param importFromId The id of the existing DataAwsNetworkfirewallFirewall that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/data-sources/networkfirewall_firewall#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsNetworkfirewallFirewall that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/data-sources/networkfirewall_firewall#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsNetworkfirewallFirewall to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -718,7 +889,7 @@ export class DataAwsNetworkfirewallFirewall extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/data-sources/networkfirewall_firewall aws_networkfirewall_firewall} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/data-sources/networkfirewall_firewall aws_networkfirewall_firewall} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -729,7 +900,7 @@ export class DataAwsNetworkfirewallFirewall extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_networkfirewall_firewall',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.4.0',
+        providerVersion: '6.5.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
@@ -765,6 +936,17 @@ export class DataAwsNetworkfirewallFirewall extends cdktf.TerraformDataSource {
   // Temporarily expose input value. Use with caution.
   public get arnInput() {
     return this._arn;
+  }
+
+  // availability_zone_change_protection - computed: true, optional: false, required: false
+  public get availabilityZoneChangeProtection() {
+    return this.getBooleanAttribute('availability_zone_change_protection');
+  }
+
+  // availability_zone_mapping - computed: true, optional: false, required: false
+  private _availabilityZoneMapping = new DataAwsNetworkfirewallFirewallAvailabilityZoneMappingList(this, "availability_zone_mapping", true);
+  public get availabilityZoneMapping() {
+    return this._availabilityZoneMapping;
   }
 
   // delete_protection - computed: true, optional: false, required: false
@@ -877,6 +1059,16 @@ export class DataAwsNetworkfirewallFirewall extends cdktf.TerraformDataSource {
   // Temporarily expose input value. Use with caution.
   public get tagsInput() {
     return this._tags;
+  }
+
+  // transit_gateway_id - computed: true, optional: false, required: false
+  public get transitGatewayId() {
+    return this.getStringAttribute('transit_gateway_id');
+  }
+
+  // transit_gateway_owner_account_id - computed: true, optional: false, required: false
+  public get transitGatewayOwnerAccountId() {
+    return this.getStringAttribute('transit_gateway_owner_account_id');
   }
 
   // update_token - computed: true, optional: false, required: false

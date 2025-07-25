@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/data-sources/quicksight_theme
+// https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/data-sources/quicksight_theme
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,11 +13,11 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsQuicksightThemeConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/data-sources/quicksight_theme#aws_account_id DataAwsQuicksightTheme#aws_account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/data-sources/quicksight_theme#aws_account_id DataAwsQuicksightTheme#aws_account_id}
   */
   readonly awsAccountId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/data-sources/quicksight_theme#id DataAwsQuicksightTheme#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/data-sources/quicksight_theme#id DataAwsQuicksightTheme#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -26,15 +26,15 @@ export interface DataAwsQuicksightThemeConfig extends cdktf.TerraformMetaArgumen
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/data-sources/quicksight_theme#region DataAwsQuicksightTheme#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/data-sources/quicksight_theme#region DataAwsQuicksightTheme#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/data-sources/quicksight_theme#tags DataAwsQuicksightTheme#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/data-sources/quicksight_theme#tags DataAwsQuicksightTheme#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/data-sources/quicksight_theme#theme_id DataAwsQuicksightTheme#theme_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/data-sources/quicksight_theme#theme_id DataAwsQuicksightTheme#theme_id}
   */
   readonly themeId: string;
 }
@@ -1065,7 +1065,7 @@ export class DataAwsQuicksightThemePermissionsList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/data-sources/quicksight_theme aws_quicksight_theme}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/data-sources/quicksight_theme aws_quicksight_theme}
 */
 export class DataAwsQuicksightTheme extends cdktf.TerraformDataSource {
 
@@ -1081,7 +1081,7 @@ export class DataAwsQuicksightTheme extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataAwsQuicksightTheme resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsQuicksightTheme to import
-  * @param importFromId The id of the existing DataAwsQuicksightTheme that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/data-sources/quicksight_theme#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsQuicksightTheme that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/data-sources/quicksight_theme#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsQuicksightTheme to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -1093,7 +1093,7 @@ export class DataAwsQuicksightTheme extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/data-sources/quicksight_theme aws_quicksight_theme} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/data-sources/quicksight_theme aws_quicksight_theme} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1104,7 +1104,7 @@ export class DataAwsQuicksightTheme extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_quicksight_theme',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.4.0',
+        providerVersion: '6.5.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

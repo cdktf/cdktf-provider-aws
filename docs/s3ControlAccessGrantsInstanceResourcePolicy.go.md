@@ -4,7 +4,7 @@
 
 ### S3ControlAccessGrantsInstanceResourcePolicy <a name="S3ControlAccessGrantsInstanceResourcePolicy" id="@cdktf/provider-aws.s3ControlAccessGrantsInstanceResourcePolicy.S3ControlAccessGrantsInstanceResourcePolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/s3control_access_grants_instance_resource_policy aws_s3control_access_grants_instance_resource_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/s3control_access_grants_instance_resource_policy aws_s3control_access_grants_instance_resource_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.s3ControlAccessGrantsInstanceResourcePolicy.S3ControlAccessGrantsInstanceResourcePolicy.Initializer"></a>
 
@@ -481,7 +481,7 @@ The construct id used in the generated config for the S3ControlAccessGrantsInsta
 
 The id of the existing S3ControlAccessGrantsInstanceResourcePolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/s3control_access_grants_instance_resource_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/s3control_access_grants_instance_resource_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -785,8 +785,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/s3controlaccessgrantsinst
 | <code><a href="#@cdktf/provider-aws.s3ControlAccessGrantsInstanceResourcePolicy.S3ControlAccessGrantsInstanceResourcePolicyConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.s3ControlAccessGrantsInstanceResourcePolicy.S3ControlAccessGrantsInstanceResourcePolicyConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.s3ControlAccessGrantsInstanceResourcePolicy.S3ControlAccessGrantsInstanceResourcePolicyConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ControlAccessGrantsInstanceResourcePolicy.S3ControlAccessGrantsInstanceResourcePolicyConfig.property.policy">Policy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/s3control_access_grants_instance_resource_policy#policy S3ControlAccessGrantsInstanceResourcePolicy#policy}. |
-| <code><a href="#@cdktf/provider-aws.s3ControlAccessGrantsInstanceResourcePolicy.S3ControlAccessGrantsInstanceResourcePolicyConfig.property.accountId">AccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/s3control_access_grants_instance_resource_policy#account_id S3ControlAccessGrantsInstanceResourcePolicy#account_id}. |
+| <code><a href="#@cdktf/provider-aws.s3ControlAccessGrantsInstanceResourcePolicy.S3ControlAccessGrantsInstanceResourcePolicyConfig.property.policy">Policy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/s3control_access_grants_instance_resource_policy#policy S3ControlAccessGrantsInstanceResourcePolicy#policy}. |
+| <code><a href="#@cdktf/provider-aws.s3ControlAccessGrantsInstanceResourcePolicy.S3ControlAccessGrantsInstanceResourcePolicyConfig.property.accountId">AccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/s3control_access_grants_instance_resource_policy#account_id S3ControlAccessGrantsInstanceResourcePolicy#account_id}. |
 | <code><a href="#@cdktf/provider-aws.s3ControlAccessGrantsInstanceResourcePolicy.S3ControlAccessGrantsInstanceResourcePolicyConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -869,7 +869,7 @@ Policy *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/s3control_access_grants_instance_resource_policy#policy S3ControlAccessGrantsInstanceResourcePolicy#policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/s3control_access_grants_instance_resource_policy#policy S3ControlAccessGrantsInstanceResourcePolicy#policy}.
 
 ---
 
@@ -881,7 +881,7 @@ AccountId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/s3control_access_grants_instance_resource_policy#account_id S3ControlAccessGrantsInstanceResourcePolicy#account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/s3control_access_grants_instance_resource_policy#account_id S3ControlAccessGrantsInstanceResourcePolicy#account_id}.
 
 ---
 
@@ -895,7 +895,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/s3control_access_grants_instance_resource_policy#region S3ControlAccessGrantsInstanceResourcePolicy#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/s3control_access_grants_instance_resource_policy#region S3ControlAccessGrantsInstanceResourcePolicy#region}
 
 ---
 

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/inspector2_organization_configuration
+// https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/inspector2_organization_configuration
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktf from 'cdktf';
 
 export interface Inspector2OrganizationConfigurationConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/inspector2_organization_configuration#id Inspector2OrganizationConfiguration#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/inspector2_organization_configuration#id Inspector2OrganizationConfiguration#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,37 +22,41 @@ export interface Inspector2OrganizationConfigurationConfig extends cdktf.Terrafo
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/inspector2_organization_configuration#region Inspector2OrganizationConfiguration#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/inspector2_organization_configuration#region Inspector2OrganizationConfiguration#region}
   */
   readonly region?: string;
   /**
   * auto_enable block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/inspector2_organization_configuration#auto_enable Inspector2OrganizationConfiguration#auto_enable}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/inspector2_organization_configuration#auto_enable Inspector2OrganizationConfiguration#auto_enable}
   */
   readonly autoEnable: Inspector2OrganizationConfigurationAutoEnable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/inspector2_organization_configuration#timeouts Inspector2OrganizationConfiguration#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/inspector2_organization_configuration#timeouts Inspector2OrganizationConfiguration#timeouts}
   */
   readonly timeouts?: Inspector2OrganizationConfigurationTimeouts;
 }
 export interface Inspector2OrganizationConfigurationAutoEnable {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/inspector2_organization_configuration#ec2 Inspector2OrganizationConfiguration#ec2}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/inspector2_organization_configuration#code_repository Inspector2OrganizationConfiguration#code_repository}
+  */
+  readonly codeRepository?: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/inspector2_organization_configuration#ec2 Inspector2OrganizationConfiguration#ec2}
   */
   readonly ec2: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/inspector2_organization_configuration#ecr Inspector2OrganizationConfiguration#ecr}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/inspector2_organization_configuration#ecr Inspector2OrganizationConfiguration#ecr}
   */
   readonly ecr: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/inspector2_organization_configuration#lambda Inspector2OrganizationConfiguration#lambda}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/inspector2_organization_configuration#lambda Inspector2OrganizationConfiguration#lambda}
   */
   readonly lambda?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/inspector2_organization_configuration#lambda_code Inspector2OrganizationConfiguration#lambda_code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/inspector2_organization_configuration#lambda_code Inspector2OrganizationConfiguration#lambda_code}
   */
   readonly lambdaCode?: boolean | cdktf.IResolvable;
 }
@@ -63,6 +67,7 @@ export function inspector2OrganizationConfigurationAutoEnableToTerraform(struct?
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
+    code_repository: cdktf.booleanToTerraform(struct!.codeRepository),
     ec2: cdktf.booleanToTerraform(struct!.ec2),
     ecr: cdktf.booleanToTerraform(struct!.ecr),
     lambda: cdktf.booleanToTerraform(struct!.lambda),
@@ -77,6 +82,12 @@ export function inspector2OrganizationConfigurationAutoEnableToHclTerraform(stru
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
+    code_repository: {
+      value: cdktf.booleanToHclTerraform(struct!.codeRepository),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
     ec2: {
       value: cdktf.booleanToHclTerraform(struct!.ec2),
       isBlock: false,
@@ -121,6 +132,10 @@ export class Inspector2OrganizationConfigurationAutoEnableOutputReference extend
   public get internalValue(): Inspector2OrganizationConfigurationAutoEnable | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
+    if (this._codeRepository !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.codeRepository = this._codeRepository;
+    }
     if (this._ec2 !== undefined) {
       hasAnyValues = true;
       internalValueResult.ec2 = this._ec2;
@@ -143,6 +158,7 @@ export class Inspector2OrganizationConfigurationAutoEnableOutputReference extend
   public set internalValue(value: Inspector2OrganizationConfigurationAutoEnable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this._codeRepository = undefined;
       this._ec2 = undefined;
       this._ecr = undefined;
       this._lambda = undefined;
@@ -150,11 +166,28 @@ export class Inspector2OrganizationConfigurationAutoEnableOutputReference extend
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this._codeRepository = value.codeRepository;
       this._ec2 = value.ec2;
       this._ecr = value.ecr;
       this._lambda = value.lambda;
       this._lambdaCode = value.lambdaCode;
     }
+  }
+
+  // code_repository - computed: false, optional: true, required: false
+  private _codeRepository?: boolean | cdktf.IResolvable; 
+  public get codeRepository() {
+    return this.getBooleanAttribute('code_repository');
+  }
+  public set codeRepository(value: boolean | cdktf.IResolvable) {
+    this._codeRepository = value;
+  }
+  public resetCodeRepository() {
+    this._codeRepository = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get codeRepositoryInput() {
+    return this._codeRepository;
   }
 
   // ec2 - computed: false, optional: false, required: true
@@ -217,15 +250,15 @@ export class Inspector2OrganizationConfigurationAutoEnableOutputReference extend
 }
 export interface Inspector2OrganizationConfigurationTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/inspector2_organization_configuration#create Inspector2OrganizationConfiguration#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/inspector2_organization_configuration#create Inspector2OrganizationConfiguration#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/inspector2_organization_configuration#delete Inspector2OrganizationConfiguration#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/inspector2_organization_configuration#delete Inspector2OrganizationConfiguration#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/inspector2_organization_configuration#update Inspector2OrganizationConfiguration#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/inspector2_organization_configuration#update Inspector2OrganizationConfiguration#update}
   */
   readonly update?: string;
 }
@@ -377,7 +410,7 @@ export class Inspector2OrganizationConfigurationTimeoutsOutputReference extends 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/inspector2_organization_configuration aws_inspector2_organization_configuration}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/inspector2_organization_configuration aws_inspector2_organization_configuration}
 */
 export class Inspector2OrganizationConfiguration extends cdktf.TerraformResource {
 
@@ -393,7 +426,7 @@ export class Inspector2OrganizationConfiguration extends cdktf.TerraformResource
   * Generates CDKTF code for importing a Inspector2OrganizationConfiguration resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Inspector2OrganizationConfiguration to import
-  * @param importFromId The id of the existing Inspector2OrganizationConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/inspector2_organization_configuration#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Inspector2OrganizationConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/inspector2_organization_configuration#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Inspector2OrganizationConfiguration to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -405,7 +438,7 @@ export class Inspector2OrganizationConfiguration extends cdktf.TerraformResource
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/inspector2_organization_configuration aws_inspector2_organization_configuration} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/inspector2_organization_configuration aws_inspector2_organization_configuration} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -416,7 +449,7 @@ export class Inspector2OrganizationConfiguration extends cdktf.TerraformResource
       terraformResourceType: 'aws_inspector2_organization_configuration',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.4.0',
+        providerVersion: '6.5.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

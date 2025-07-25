@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/eks_pod_identity_association
+// https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/eks_pod_identity_association
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,43 +13,43 @@ import * as cdktf from 'cdktf';
 
 export interface EksPodIdentityAssociationConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/eks_pod_identity_association#cluster_name EksPodIdentityAssociation#cluster_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/eks_pod_identity_association#cluster_name EksPodIdentityAssociation#cluster_name}
   */
   readonly clusterName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/eks_pod_identity_association#disable_session_tags EksPodIdentityAssociation#disable_session_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/eks_pod_identity_association#disable_session_tags EksPodIdentityAssociation#disable_session_tags}
   */
   readonly disableSessionTags?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/eks_pod_identity_association#namespace EksPodIdentityAssociation#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/eks_pod_identity_association#namespace EksPodIdentityAssociation#namespace}
   */
   readonly namespace: string;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/eks_pod_identity_association#region EksPodIdentityAssociation#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/eks_pod_identity_association#region EksPodIdentityAssociation#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/eks_pod_identity_association#role_arn EksPodIdentityAssociation#role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/eks_pod_identity_association#role_arn EksPodIdentityAssociation#role_arn}
   */
   readonly roleArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/eks_pod_identity_association#service_account EksPodIdentityAssociation#service_account}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/eks_pod_identity_association#service_account EksPodIdentityAssociation#service_account}
   */
   readonly serviceAccount: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/eks_pod_identity_association#tags EksPodIdentityAssociation#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/eks_pod_identity_association#tags EksPodIdentityAssociation#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/eks_pod_identity_association#target_role_arn EksPodIdentityAssociation#target_role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/eks_pod_identity_association#target_role_arn EksPodIdentityAssociation#target_role_arn}
   */
   readonly targetRoleArn?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/eks_pod_identity_association aws_eks_pod_identity_association}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/eks_pod_identity_association aws_eks_pod_identity_association}
 */
 export class EksPodIdentityAssociation extends cdktf.TerraformResource {
 
@@ -65,7 +65,7 @@ export class EksPodIdentityAssociation extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a EksPodIdentityAssociation resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the EksPodIdentityAssociation to import
-  * @param importFromId The id of the existing EksPodIdentityAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/eks_pod_identity_association#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing EksPodIdentityAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/eks_pod_identity_association#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the EksPodIdentityAssociation to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -77,7 +77,7 @@ export class EksPodIdentityAssociation extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/eks_pod_identity_association aws_eks_pod_identity_association} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/eks_pod_identity_association aws_eks_pod_identity_association} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -88,7 +88,7 @@ export class EksPodIdentityAssociation extends cdktf.TerraformResource {
       terraformResourceType: 'aws_eks_pod_identity_association',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.4.0',
+        providerVersion: '6.5.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
