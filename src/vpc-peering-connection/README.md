@@ -1,3 +1,3 @@
 # `aws_vpc_peering_connection`
 
-Refer to the Terraform Registry for docs: [`aws_vpc_peering_connection`](https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/vpc_peering_connection).
+Refer to the Terraform Registry for docs: [`aws_vpc_peering_connection`](https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/vpc_peering_connection).

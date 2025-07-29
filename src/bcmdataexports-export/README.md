@@ -1,3 +1,3 @@
 # `aws_bcmdataexports_export`
 
-Refer to the Terraform Registry for docs: [`aws_bcmdataexports_export`](https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/bcmdataexports_export).
+Refer to the Terraform Registry for docs: [`aws_bcmdataexports_export`](https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bcmdataexports_export).

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/wafregional_ipset
+// https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/wafregional_ipset
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,36 +13,36 @@ import * as cdktf from 'cdktf';
 
 export interface WafregionalIpsetConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/wafregional_ipset#id WafregionalIpset#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/wafregional_ipset#id WafregionalIpset#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/wafregional_ipset#name WafregionalIpset#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/wafregional_ipset#name WafregionalIpset#name}
   */
   readonly name: string;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/wafregional_ipset#region WafregionalIpset#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/wafregional_ipset#region WafregionalIpset#region}
   */
   readonly region?: string;
   /**
   * ip_set_descriptor block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/wafregional_ipset#ip_set_descriptor WafregionalIpset#ip_set_descriptor}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/wafregional_ipset#ip_set_descriptor WafregionalIpset#ip_set_descriptor}
   */
   readonly ipSetDescriptor?: WafregionalIpsetIpSetDescriptor[] | cdktf.IResolvable;
 }
 export interface WafregionalIpsetIpSetDescriptor {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/wafregional_ipset#type WafregionalIpset#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/wafregional_ipset#type WafregionalIpset#type}
   */
   readonly type: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/wafregional_ipset#value WafregionalIpset#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/wafregional_ipset#value WafregionalIpset#value}
   */
   readonly value: string;
 }
@@ -181,7 +181,7 @@ export class WafregionalIpsetIpSetDescriptorList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/wafregional_ipset aws_wafregional_ipset}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/wafregional_ipset aws_wafregional_ipset}
 */
 export class WafregionalIpset extends cdktf.TerraformResource {
 
@@ -197,7 +197,7 @@ export class WafregionalIpset extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a WafregionalIpset resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the WafregionalIpset to import
-  * @param importFromId The id of the existing WafregionalIpset that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/wafregional_ipset#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing WafregionalIpset that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/wafregional_ipset#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the WafregionalIpset to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -209,7 +209,7 @@ export class WafregionalIpset extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/wafregional_ipset aws_wafregional_ipset} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/wafregional_ipset aws_wafregional_ipset} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -220,7 +220,7 @@ export class WafregionalIpset extends cdktf.TerraformResource {
       terraformResourceType: 'aws_wafregional_ipset',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.5.0',
+        providerVersion: '6.6.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

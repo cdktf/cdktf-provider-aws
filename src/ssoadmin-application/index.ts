@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/ssoadmin_application
+// https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/ssoadmin_application
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,53 +13,53 @@ import * as cdktf from 'cdktf';
 
 export interface SsoadminApplicationConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/ssoadmin_application#application_provider_arn SsoadminApplication#application_provider_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/ssoadmin_application#application_provider_arn SsoadminApplication#application_provider_arn}
   */
   readonly applicationProviderArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/ssoadmin_application#client_token SsoadminApplication#client_token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/ssoadmin_application#client_token SsoadminApplication#client_token}
   */
   readonly clientToken?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/ssoadmin_application#description SsoadminApplication#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/ssoadmin_application#description SsoadminApplication#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/ssoadmin_application#instance_arn SsoadminApplication#instance_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/ssoadmin_application#instance_arn SsoadminApplication#instance_arn}
   */
   readonly instanceArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/ssoadmin_application#name SsoadminApplication#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/ssoadmin_application#name SsoadminApplication#name}
   */
   readonly name: string;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/ssoadmin_application#region SsoadminApplication#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/ssoadmin_application#region SsoadminApplication#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/ssoadmin_application#status SsoadminApplication#status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/ssoadmin_application#status SsoadminApplication#status}
   */
   readonly status?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/ssoadmin_application#tags SsoadminApplication#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/ssoadmin_application#tags SsoadminApplication#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
   * portal_options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/ssoadmin_application#portal_options SsoadminApplication#portal_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/ssoadmin_application#portal_options SsoadminApplication#portal_options}
   */
   readonly portalOptions?: SsoadminApplicationPortalOptions[] | cdktf.IResolvable;
 }
 export interface SsoadminApplicationPortalOptionsSignInOptions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/ssoadmin_application#application_url SsoadminApplication#application_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/ssoadmin_application#application_url SsoadminApplication#application_url}
   */
   readonly applicationUrl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/ssoadmin_application#origin SsoadminApplication#origin}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/ssoadmin_application#origin SsoadminApplication#origin}
   */
   readonly origin: string;
 }
@@ -201,13 +201,13 @@ export class SsoadminApplicationPortalOptionsSignInOptionsList extends cdktf.Com
 }
 export interface SsoadminApplicationPortalOptions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/ssoadmin_application#visibility SsoadminApplication#visibility}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/ssoadmin_application#visibility SsoadminApplication#visibility}
   */
   readonly visibility?: string;
   /**
   * sign_in_options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/ssoadmin_application#sign_in_options SsoadminApplication#sign_in_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/ssoadmin_application#sign_in_options SsoadminApplication#sign_in_options}
   */
   readonly signInOptions?: SsoadminApplicationPortalOptionsSignInOptions[] | cdktf.IResolvable;
 }
@@ -352,7 +352,7 @@ export class SsoadminApplicationPortalOptionsList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/ssoadmin_application aws_ssoadmin_application}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/ssoadmin_application aws_ssoadmin_application}
 */
 export class SsoadminApplication extends cdktf.TerraformResource {
 
@@ -368,7 +368,7 @@ export class SsoadminApplication extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a SsoadminApplication resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SsoadminApplication to import
-  * @param importFromId The id of the existing SsoadminApplication that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/ssoadmin_application#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing SsoadminApplication that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/ssoadmin_application#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SsoadminApplication to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -380,7 +380,7 @@ export class SsoadminApplication extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/ssoadmin_application aws_ssoadmin_application} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/ssoadmin_application aws_ssoadmin_application} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -391,7 +391,7 @@ export class SsoadminApplication extends cdktf.TerraformResource {
       terraformResourceType: 'aws_ssoadmin_application',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.5.0',
+        providerVersion: '6.6.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

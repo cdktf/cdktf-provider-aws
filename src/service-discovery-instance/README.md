@@ -1,3 +1,3 @@
 # `aws_service_discovery_instance`
 
-Refer to the Terraform Registry for docs: [`aws_service_discovery_instance`](https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/service_discovery_instance).
+Refer to the Terraform Registry for docs: [`aws_service_discovery_instance`](https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/service_discovery_instance).

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/guardduty_detector
+// https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/guardduty_detector
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,15 +13,15 @@ import * as cdktf from 'cdktf';
 
 export interface GuarddutyDetectorConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/guardduty_detector#enable GuarddutyDetector#enable}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/guardduty_detector#enable GuarddutyDetector#enable}
   */
   readonly enable?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/guardduty_detector#finding_publishing_frequency GuarddutyDetector#finding_publishing_frequency}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/guardduty_detector#finding_publishing_frequency GuarddutyDetector#finding_publishing_frequency}
   */
   readonly findingPublishingFrequency?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/guardduty_detector#id GuarddutyDetector#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/guardduty_detector#id GuarddutyDetector#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -30,27 +30,27 @@ export interface GuarddutyDetectorConfig extends cdktf.TerraformMetaArguments {
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/guardduty_detector#region GuarddutyDetector#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/guardduty_detector#region GuarddutyDetector#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/guardduty_detector#tags GuarddutyDetector#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/guardduty_detector#tags GuarddutyDetector#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/guardduty_detector#tags_all GuarddutyDetector#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/guardduty_detector#tags_all GuarddutyDetector#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
   * datasources block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/guardduty_detector#datasources GuarddutyDetector#datasources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/guardduty_detector#datasources GuarddutyDetector#datasources}
   */
   readonly datasources?: GuarddutyDetectorDatasources;
 }
 export interface GuarddutyDetectorDatasourcesKubernetesAuditLogs {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/guardduty_detector#enable GuarddutyDetector#enable}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/guardduty_detector#enable GuarddutyDetector#enable}
   */
   readonly enable: boolean | cdktf.IResolvable;
 }
@@ -133,7 +133,7 @@ export interface GuarddutyDetectorDatasourcesKubernetes {
   /**
   * audit_logs block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/guardduty_detector#audit_logs GuarddutyDetector#audit_logs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/guardduty_detector#audit_logs GuarddutyDetector#audit_logs}
   */
   readonly auditLogs: GuarddutyDetectorDatasourcesKubernetesAuditLogs;
 }
@@ -214,7 +214,7 @@ export class GuarddutyDetectorDatasourcesKubernetesOutputReference extends cdktf
 }
 export interface GuarddutyDetectorDatasourcesMalwareProtectionScanEc2InstanceWithFindingsEbsVolumes {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/guardduty_detector#enable GuarddutyDetector#enable}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/guardduty_detector#enable GuarddutyDetector#enable}
   */
   readonly enable: boolean | cdktf.IResolvable;
 }
@@ -297,7 +297,7 @@ export interface GuarddutyDetectorDatasourcesMalwareProtectionScanEc2InstanceWit
   /**
   * ebs_volumes block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/guardduty_detector#ebs_volumes GuarddutyDetector#ebs_volumes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/guardduty_detector#ebs_volumes GuarddutyDetector#ebs_volumes}
   */
   readonly ebsVolumes: GuarddutyDetectorDatasourcesMalwareProtectionScanEc2InstanceWithFindingsEbsVolumes;
 }
@@ -380,7 +380,7 @@ export interface GuarddutyDetectorDatasourcesMalwareProtection {
   /**
   * scan_ec2_instance_with_findings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/guardduty_detector#scan_ec2_instance_with_findings GuarddutyDetector#scan_ec2_instance_with_findings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/guardduty_detector#scan_ec2_instance_with_findings GuarddutyDetector#scan_ec2_instance_with_findings}
   */
   readonly scanEc2InstanceWithFindings: GuarddutyDetectorDatasourcesMalwareProtectionScanEc2InstanceWithFindings;
 }
@@ -461,7 +461,7 @@ export class GuarddutyDetectorDatasourcesMalwareProtectionOutputReference extend
 }
 export interface GuarddutyDetectorDatasourcesS3Logs {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/guardduty_detector#enable GuarddutyDetector#enable}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/guardduty_detector#enable GuarddutyDetector#enable}
   */
   readonly enable: boolean | cdktf.IResolvable;
 }
@@ -544,19 +544,19 @@ export interface GuarddutyDetectorDatasources {
   /**
   * kubernetes block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/guardduty_detector#kubernetes GuarddutyDetector#kubernetes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/guardduty_detector#kubernetes GuarddutyDetector#kubernetes}
   */
   readonly kubernetes?: GuarddutyDetectorDatasourcesKubernetes;
   /**
   * malware_protection block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/guardduty_detector#malware_protection GuarddutyDetector#malware_protection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/guardduty_detector#malware_protection GuarddutyDetector#malware_protection}
   */
   readonly malwareProtection?: GuarddutyDetectorDatasourcesMalwareProtection;
   /**
   * s3_logs block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/guardduty_detector#s3_logs GuarddutyDetector#s3_logs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/guardduty_detector#s3_logs GuarddutyDetector#s3_logs}
   */
   readonly s3Logs?: GuarddutyDetectorDatasourcesS3Logs;
 }
@@ -698,7 +698,7 @@ export class GuarddutyDetectorDatasourcesOutputReference extends cdktf.ComplexOb
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/guardduty_detector aws_guardduty_detector}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/guardduty_detector aws_guardduty_detector}
 */
 export class GuarddutyDetector extends cdktf.TerraformResource {
 
@@ -714,7 +714,7 @@ export class GuarddutyDetector extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GuarddutyDetector resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GuarddutyDetector to import
-  * @param importFromId The id of the existing GuarddutyDetector that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/guardduty_detector#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GuarddutyDetector that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/guardduty_detector#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GuarddutyDetector to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -726,7 +726,7 @@ export class GuarddutyDetector extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/guardduty_detector aws_guardduty_detector} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/guardduty_detector aws_guardduty_detector} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -737,7 +737,7 @@ export class GuarddutyDetector extends cdktf.TerraformResource {
       terraformResourceType: 'aws_guardduty_detector',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.5.0',
+        providerVersion: '6.6.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
