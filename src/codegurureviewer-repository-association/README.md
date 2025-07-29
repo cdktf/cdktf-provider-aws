@@ -1,3 +1,3 @@
 # `aws_codegurureviewer_repository_association`
 
-Refer to the Terraform Registry for docs: [`aws_codegurureviewer_repository_association`](https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/codegurureviewer_repository_association).
+Refer to the Terraform Registry for docs: [`aws_codegurureviewer_repository_association`](https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/codegurureviewer_repository_association).

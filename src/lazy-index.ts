@@ -337,6 +337,7 @@ Object.defineProperty(exports, 'connectInstance', { get: function () { return re
 Object.defineProperty(exports, 'connectInstanceStorageConfig', { get: function () { return require('./connect-instance-storage-config'); } });
 Object.defineProperty(exports, 'connectLambdaFunctionAssociation', { get: function () { return require('./connect-lambda-function-association'); } });
 Object.defineProperty(exports, 'connectPhoneNumber', { get: function () { return require('./connect-phone-number'); } });
+Object.defineProperty(exports, 'connectPhoneNumberContactFlowAssociation', { get: function () { return require('./connect-phone-number-contact-flow-association'); } });
 Object.defineProperty(exports, 'connectQueue', { get: function () { return require('./connect-queue'); } });
 Object.defineProperty(exports, 'connectQuickConnect', { get: function () { return require('./connect-quick-connect'); } });
 Object.defineProperty(exports, 'connectRoutingProfile', { get: function () { return require('./connect-routing-profile'); } });
@@ -917,6 +918,7 @@ Object.defineProperty(exports, 'mskconnectCustomPlugin', { get: function () { re
 Object.defineProperty(exports, 'mskconnectWorkerConfiguration', { get: function () { return require('./mskconnect-worker-configuration'); } });
 Object.defineProperty(exports, 'mwaaEnvironment', { get: function () { return require('./mwaa-environment'); } });
 Object.defineProperty(exports, 'natGateway', { get: function () { return require('./nat-gateway'); } });
+Object.defineProperty(exports, 'natGatewayEipAssociation', { get: function () { return require('./nat-gateway-eip-association'); } });
 Object.defineProperty(exports, 'neptuneCluster', { get: function () { return require('./neptune-cluster'); } });
 Object.defineProperty(exports, 'neptuneClusterEndpoint', { get: function () { return require('./neptune-cluster-endpoint'); } });
 Object.defineProperty(exports, 'neptuneClusterInstance', { get: function () { return require('./neptune-cluster-instance'); } });

@@ -1,3 +1,3 @@
 # `aws_appmesh_route`
 
-Refer to the Terraform Registry for docs: [`aws_appmesh_route`](https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/appmesh_route).
+Refer to the Terraform Registry for docs: [`aws_appmesh_route`](https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/appmesh_route).
