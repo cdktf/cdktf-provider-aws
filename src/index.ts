@@ -1036,6 +1036,8 @@ export * as quicksightGroup from './quicksight-group';
 export * as quicksightGroupMembership from './quicksight-group-membership';
 export * as quicksightIamPolicyAssignment from './quicksight-iam-policy-assignment';
 export * as quicksightIngestion from './quicksight-ingestion';
+export * as quicksightIpRestriction from './quicksight-ip-restriction';
+export * as quicksightKeyRegistration from './quicksight-key-registration';
 export * as quicksightNamespace from './quicksight-namespace';
 export * as quicksightRefreshSchedule from './quicksight-refresh-schedule';
 export * as quicksightRoleMembership from './quicksight-role-membership';

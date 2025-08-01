@@ -1,3 +1,3 @@
 # `aws_db_instance_automated_backups_replication`
 
-Refer to the Terraform Registry for docs: [`aws_db_instance_automated_backups_replication`](https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/db_instance_automated_backups_replication).
+Refer to the Terraform Registry for docs: [`aws_db_instance_automated_backups_replication`](https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/db_instance_automated_backups_replication).

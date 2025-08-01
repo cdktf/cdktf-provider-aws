@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/ecrpublic_repository
+// https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/ecrpublic_repository
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,11 +13,11 @@ import * as cdktf from 'cdktf';
 
 export interface EcrpublicRepositoryConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/ecrpublic_repository#force_destroy EcrpublicRepository#force_destroy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/ecrpublic_repository#force_destroy EcrpublicRepository#force_destroy}
   */
   readonly forceDestroy?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/ecrpublic_repository#id EcrpublicRepository#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/ecrpublic_repository#id EcrpublicRepository#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -26,57 +26,57 @@ export interface EcrpublicRepositoryConfig extends cdktf.TerraformMetaArguments 
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/ecrpublic_repository#region EcrpublicRepository#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/ecrpublic_repository#region EcrpublicRepository#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/ecrpublic_repository#repository_name EcrpublicRepository#repository_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/ecrpublic_repository#repository_name EcrpublicRepository#repository_name}
   */
   readonly repositoryName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/ecrpublic_repository#tags EcrpublicRepository#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/ecrpublic_repository#tags EcrpublicRepository#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/ecrpublic_repository#tags_all EcrpublicRepository#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/ecrpublic_repository#tags_all EcrpublicRepository#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
   * catalog_data block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/ecrpublic_repository#catalog_data EcrpublicRepository#catalog_data}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/ecrpublic_repository#catalog_data EcrpublicRepository#catalog_data}
   */
   readonly catalogData?: EcrpublicRepositoryCatalogData;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/ecrpublic_repository#timeouts EcrpublicRepository#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/ecrpublic_repository#timeouts EcrpublicRepository#timeouts}
   */
   readonly timeouts?: EcrpublicRepositoryTimeouts;
 }
 export interface EcrpublicRepositoryCatalogData {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/ecrpublic_repository#about_text EcrpublicRepository#about_text}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/ecrpublic_repository#about_text EcrpublicRepository#about_text}
   */
   readonly aboutText?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/ecrpublic_repository#architectures EcrpublicRepository#architectures}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/ecrpublic_repository#architectures EcrpublicRepository#architectures}
   */
   readonly architectures?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/ecrpublic_repository#description EcrpublicRepository#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/ecrpublic_repository#description EcrpublicRepository#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/ecrpublic_repository#logo_image_blob EcrpublicRepository#logo_image_blob}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/ecrpublic_repository#logo_image_blob EcrpublicRepository#logo_image_blob}
   */
   readonly logoImageBlob?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/ecrpublic_repository#operating_systems EcrpublicRepository#operating_systems}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/ecrpublic_repository#operating_systems EcrpublicRepository#operating_systems}
   */
   readonly operatingSystems?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/ecrpublic_repository#usage_text EcrpublicRepository#usage_text}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/ecrpublic_repository#usage_text EcrpublicRepository#usage_text}
   */
   readonly usageText?: string;
 }
@@ -305,7 +305,7 @@ export class EcrpublicRepositoryCatalogDataOutputReference extends cdktf.Complex
 }
 export interface EcrpublicRepositoryTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/ecrpublic_repository#delete EcrpublicRepository#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/ecrpublic_repository#delete EcrpublicRepository#delete}
   */
   readonly delete?: string;
 }
@@ -399,7 +399,7 @@ export class EcrpublicRepositoryTimeoutsOutputReference extends cdktf.ComplexObj
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/ecrpublic_repository aws_ecrpublic_repository}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/ecrpublic_repository aws_ecrpublic_repository}
 */
 export class EcrpublicRepository extends cdktf.TerraformResource {
 
@@ -415,7 +415,7 @@ export class EcrpublicRepository extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a EcrpublicRepository resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the EcrpublicRepository to import
-  * @param importFromId The id of the existing EcrpublicRepository that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/ecrpublic_repository#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing EcrpublicRepository that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/ecrpublic_repository#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the EcrpublicRepository to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -427,7 +427,7 @@ export class EcrpublicRepository extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/ecrpublic_repository aws_ecrpublic_repository} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/ecrpublic_repository aws_ecrpublic_repository} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -438,7 +438,7 @@ export class EcrpublicRepository extends cdktf.TerraformResource {
       terraformResourceType: 'aws_ecrpublic_repository',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.6.0',
+        providerVersion: '6.7.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
