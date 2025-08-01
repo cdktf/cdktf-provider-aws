@@ -4,7 +4,7 @@
 
 ### Ec2DefaultCreditSpecification <a name="Ec2DefaultCreditSpecification" id="@cdktf/provider-aws.ec2DefaultCreditSpecification.Ec2DefaultCreditSpecification"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/ec2_default_credit_specification aws_ec2_default_credit_specification}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/ec2_default_credit_specification aws_ec2_default_credit_specification}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ec2DefaultCreditSpecification.Ec2DefaultCreditSpecification.Initializer"></a>
 
@@ -494,7 +494,7 @@ The construct id used in the generated config for the Ec2DefaultCreditSpecificat
 
 The id of the existing Ec2DefaultCreditSpecification that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/ec2_default_credit_specification#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/ec2_default_credit_specification#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -798,8 +798,8 @@ const ec2DefaultCreditSpecificationConfig: ec2DefaultCreditSpecification.Ec2Defa
 | <code><a href="#@cdktf/provider-aws.ec2DefaultCreditSpecification.Ec2DefaultCreditSpecificationConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2DefaultCreditSpecification.Ec2DefaultCreditSpecificationConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2DefaultCreditSpecification.Ec2DefaultCreditSpecificationConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ec2DefaultCreditSpecification.Ec2DefaultCreditSpecificationConfig.property.cpuCredits">cpuCredits</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/ec2_default_credit_specification#cpu_credits Ec2DefaultCreditSpecification#cpu_credits}. |
-| <code><a href="#@cdktf/provider-aws.ec2DefaultCreditSpecification.Ec2DefaultCreditSpecificationConfig.property.instanceFamily">instanceFamily</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/ec2_default_credit_specification#instance_family Ec2DefaultCreditSpecification#instance_family}. |
+| <code><a href="#@cdktf/provider-aws.ec2DefaultCreditSpecification.Ec2DefaultCreditSpecificationConfig.property.cpuCredits">cpuCredits</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/ec2_default_credit_specification#cpu_credits Ec2DefaultCreditSpecification#cpu_credits}. |
+| <code><a href="#@cdktf/provider-aws.ec2DefaultCreditSpecification.Ec2DefaultCreditSpecificationConfig.property.instanceFamily">instanceFamily</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/ec2_default_credit_specification#instance_family Ec2DefaultCreditSpecification#instance_family}. |
 | <code><a href="#@cdktf/provider-aws.ec2DefaultCreditSpecification.Ec2DefaultCreditSpecificationConfig.property.region">region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktf/provider-aws.ec2DefaultCreditSpecification.Ec2DefaultCreditSpecificationConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-aws.ec2DefaultCreditSpecification.Ec2DefaultCreditSpecificationTimeouts">Ec2DefaultCreditSpecificationTimeouts</a></code> | timeouts block. |
 
@@ -883,7 +883,7 @@ public readonly cpuCredits: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/ec2_default_credit_specification#cpu_credits Ec2DefaultCreditSpecification#cpu_credits}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/ec2_default_credit_specification#cpu_credits Ec2DefaultCreditSpecification#cpu_credits}.
 
 ---
 
@@ -895,7 +895,7 @@ public readonly instanceFamily: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/ec2_default_credit_specification#instance_family Ec2DefaultCreditSpecification#instance_family}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/ec2_default_credit_specification#instance_family Ec2DefaultCreditSpecification#instance_family}.
 
 ---
 
@@ -909,7 +909,7 @@ public readonly region: string;
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/ec2_default_credit_specification#region Ec2DefaultCreditSpecification#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/ec2_default_credit_specification#region Ec2DefaultCreditSpecification#region}
 
 ---
 
@@ -923,7 +923,7 @@ public readonly timeouts: Ec2DefaultCreditSpecificationTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/ec2_default_credit_specification#timeouts Ec2DefaultCreditSpecification#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/ec2_default_credit_specification#timeouts Ec2DefaultCreditSpecification#timeouts}
 
 ---
 
@@ -956,7 +956,7 @@ public readonly create: string;
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/ec2_default_credit_specification#create Ec2DefaultCreditSpecification#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/ec2_default_credit_specification#create Ec2DefaultCreditSpecification#create}
 
 ---
 
@@ -970,7 +970,7 @@ public readonly update: string;
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/ec2_default_credit_specification#update Ec2DefaultCreditSpecification#update}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/ec2_default_credit_specification#update Ec2DefaultCreditSpecification#update}
 
 ---
 

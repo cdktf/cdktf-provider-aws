@@ -4,7 +4,7 @@
 
 ### MskconnectCustomPlugin <a name="MskconnectCustomPlugin" id="@cdktf/provider-aws.mskconnectCustomPlugin.MskconnectCustomPlugin"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/mskconnect_custom_plugin aws_mskconnect_custom_plugin}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/mskconnect_custom_plugin aws_mskconnect_custom_plugin}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.mskconnectCustomPlugin.MskconnectCustomPlugin.Initializer"></a>
 
@@ -535,7 +535,7 @@ The construct id used in the generated config for the MskconnectCustomPlugin to 
 
 The id of the existing MskconnectCustomPlugin that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/mskconnect_custom_plugin#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/mskconnect_custom_plugin#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -999,14 +999,14 @@ new MskconnectCustomPluginConfig {
 | <code><a href="#@cdktf/provider-aws.mskconnectCustomPlugin.MskconnectCustomPluginConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.mskconnectCustomPlugin.MskconnectCustomPluginConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.mskconnectCustomPlugin.MskconnectCustomPluginConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.mskconnectCustomPlugin.MskconnectCustomPluginConfig.property.contentType">ContentType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/mskconnect_custom_plugin#content_type MskconnectCustomPlugin#content_type}. |
+| <code><a href="#@cdktf/provider-aws.mskconnectCustomPlugin.MskconnectCustomPluginConfig.property.contentType">ContentType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/mskconnect_custom_plugin#content_type MskconnectCustomPlugin#content_type}. |
 | <code><a href="#@cdktf/provider-aws.mskconnectCustomPlugin.MskconnectCustomPluginConfig.property.location">Location</a></code> | <code><a href="#@cdktf/provider-aws.mskconnectCustomPlugin.MskconnectCustomPluginLocation">MskconnectCustomPluginLocation</a></code> | location block. |
-| <code><a href="#@cdktf/provider-aws.mskconnectCustomPlugin.MskconnectCustomPluginConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/mskconnect_custom_plugin#name MskconnectCustomPlugin#name}. |
-| <code><a href="#@cdktf/provider-aws.mskconnectCustomPlugin.MskconnectCustomPluginConfig.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/mskconnect_custom_plugin#description MskconnectCustomPlugin#description}. |
-| <code><a href="#@cdktf/provider-aws.mskconnectCustomPlugin.MskconnectCustomPluginConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/mskconnect_custom_plugin#id MskconnectCustomPlugin#id}. |
+| <code><a href="#@cdktf/provider-aws.mskconnectCustomPlugin.MskconnectCustomPluginConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/mskconnect_custom_plugin#name MskconnectCustomPlugin#name}. |
+| <code><a href="#@cdktf/provider-aws.mskconnectCustomPlugin.MskconnectCustomPluginConfig.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/mskconnect_custom_plugin#description MskconnectCustomPlugin#description}. |
+| <code><a href="#@cdktf/provider-aws.mskconnectCustomPlugin.MskconnectCustomPluginConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/mskconnect_custom_plugin#id MskconnectCustomPlugin#id}. |
 | <code><a href="#@cdktf/provider-aws.mskconnectCustomPlugin.MskconnectCustomPluginConfig.property.region">Region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktf/provider-aws.mskconnectCustomPlugin.MskconnectCustomPluginConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/mskconnect_custom_plugin#tags MskconnectCustomPlugin#tags}. |
-| <code><a href="#@cdktf/provider-aws.mskconnectCustomPlugin.MskconnectCustomPluginConfig.property.tagsAll">TagsAll</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/mskconnect_custom_plugin#tags_all MskconnectCustomPlugin#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.mskconnectCustomPlugin.MskconnectCustomPluginConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/mskconnect_custom_plugin#tags MskconnectCustomPlugin#tags}. |
+| <code><a href="#@cdktf/provider-aws.mskconnectCustomPlugin.MskconnectCustomPluginConfig.property.tagsAll">TagsAll</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/mskconnect_custom_plugin#tags_all MskconnectCustomPlugin#tags_all}. |
 | <code><a href="#@cdktf/provider-aws.mskconnectCustomPlugin.MskconnectCustomPluginConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-aws.mskconnectCustomPlugin.MskconnectCustomPluginTimeouts">MskconnectCustomPluginTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1089,7 +1089,7 @@ public string ContentType { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/mskconnect_custom_plugin#content_type MskconnectCustomPlugin#content_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/mskconnect_custom_plugin#content_type MskconnectCustomPlugin#content_type}.
 
 ---
 
@@ -1103,7 +1103,7 @@ public MskconnectCustomPluginLocation Location { get; set; }
 
 location block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/mskconnect_custom_plugin#location MskconnectCustomPlugin#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/mskconnect_custom_plugin#location MskconnectCustomPlugin#location}
 
 ---
 
@@ -1115,7 +1115,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/mskconnect_custom_plugin#name MskconnectCustomPlugin#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/mskconnect_custom_plugin#name MskconnectCustomPlugin#name}.
 
 ---
 
@@ -1127,7 +1127,7 @@ public string Description { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/mskconnect_custom_plugin#description MskconnectCustomPlugin#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/mskconnect_custom_plugin#description MskconnectCustomPlugin#description}.
 
 ---
 
@@ -1139,7 +1139,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/mskconnect_custom_plugin#id MskconnectCustomPlugin#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/mskconnect_custom_plugin#id MskconnectCustomPlugin#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1156,7 +1156,7 @@ public string Region { get; set; }
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/mskconnect_custom_plugin#region MskconnectCustomPlugin#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/mskconnect_custom_plugin#region MskconnectCustomPlugin#region}
 
 ---
 
@@ -1168,7 +1168,7 @@ public System.Collections.Generic.IDictionary<string, string> Tags { get; set; }
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/mskconnect_custom_plugin#tags MskconnectCustomPlugin#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/mskconnect_custom_plugin#tags MskconnectCustomPlugin#tags}.
 
 ---
 
@@ -1180,7 +1180,7 @@ public System.Collections.Generic.IDictionary<string, string> TagsAll { get; set
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/mskconnect_custom_plugin#tags_all MskconnectCustomPlugin#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/mskconnect_custom_plugin#tags_all MskconnectCustomPlugin#tags_all}.
 
 ---
 
@@ -1194,7 +1194,7 @@ public MskconnectCustomPluginTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/mskconnect_custom_plugin#timeouts MskconnectCustomPlugin#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/mskconnect_custom_plugin#timeouts MskconnectCustomPlugin#timeouts}
 
 ---
 
@@ -1228,7 +1228,7 @@ public MskconnectCustomPluginLocationS3 S3 { get; set; }
 
 s3 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/mskconnect_custom_plugin#s3 MskconnectCustomPlugin#s3}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/mskconnect_custom_plugin#s3 MskconnectCustomPlugin#s3}
 
 ---
 
@@ -1250,9 +1250,9 @@ new MskconnectCustomPluginLocationS3 {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.mskconnectCustomPlugin.MskconnectCustomPluginLocationS3.property.bucketArn">BucketArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/mskconnect_custom_plugin#bucket_arn MskconnectCustomPlugin#bucket_arn}. |
-| <code><a href="#@cdktf/provider-aws.mskconnectCustomPlugin.MskconnectCustomPluginLocationS3.property.fileKey">FileKey</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/mskconnect_custom_plugin#file_key MskconnectCustomPlugin#file_key}. |
-| <code><a href="#@cdktf/provider-aws.mskconnectCustomPlugin.MskconnectCustomPluginLocationS3.property.objectVersion">ObjectVersion</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/mskconnect_custom_plugin#object_version MskconnectCustomPlugin#object_version}. |
+| <code><a href="#@cdktf/provider-aws.mskconnectCustomPlugin.MskconnectCustomPluginLocationS3.property.bucketArn">BucketArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/mskconnect_custom_plugin#bucket_arn MskconnectCustomPlugin#bucket_arn}. |
+| <code><a href="#@cdktf/provider-aws.mskconnectCustomPlugin.MskconnectCustomPluginLocationS3.property.fileKey">FileKey</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/mskconnect_custom_plugin#file_key MskconnectCustomPlugin#file_key}. |
+| <code><a href="#@cdktf/provider-aws.mskconnectCustomPlugin.MskconnectCustomPluginLocationS3.property.objectVersion">ObjectVersion</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/mskconnect_custom_plugin#object_version MskconnectCustomPlugin#object_version}. |
 
 ---
 
@@ -1264,7 +1264,7 @@ public string BucketArn { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/mskconnect_custom_plugin#bucket_arn MskconnectCustomPlugin#bucket_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/mskconnect_custom_plugin#bucket_arn MskconnectCustomPlugin#bucket_arn}.
 
 ---
 
@@ -1276,7 +1276,7 @@ public string FileKey { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/mskconnect_custom_plugin#file_key MskconnectCustomPlugin#file_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/mskconnect_custom_plugin#file_key MskconnectCustomPlugin#file_key}.
 
 ---
 
@@ -1288,7 +1288,7 @@ public string ObjectVersion { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/mskconnect_custom_plugin#object_version MskconnectCustomPlugin#object_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/mskconnect_custom_plugin#object_version MskconnectCustomPlugin#object_version}.
 
 ---
 
@@ -1309,8 +1309,8 @@ new MskconnectCustomPluginTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.mskconnectCustomPlugin.MskconnectCustomPluginTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/mskconnect_custom_plugin#create MskconnectCustomPlugin#create}. |
-| <code><a href="#@cdktf/provider-aws.mskconnectCustomPlugin.MskconnectCustomPluginTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/mskconnect_custom_plugin#delete MskconnectCustomPlugin#delete}. |
+| <code><a href="#@cdktf/provider-aws.mskconnectCustomPlugin.MskconnectCustomPluginTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/mskconnect_custom_plugin#create MskconnectCustomPlugin#create}. |
+| <code><a href="#@cdktf/provider-aws.mskconnectCustomPlugin.MskconnectCustomPluginTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/mskconnect_custom_plugin#delete MskconnectCustomPlugin#delete}. |
 
 ---
 
@@ -1322,7 +1322,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/mskconnect_custom_plugin#create MskconnectCustomPlugin#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/mskconnect_custom_plugin#create MskconnectCustomPlugin#create}.
 
 ---
 
@@ -1334,7 +1334,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/mskconnect_custom_plugin#delete MskconnectCustomPlugin#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/mskconnect_custom_plugin#delete MskconnectCustomPlugin#delete}.
 
 ---
 

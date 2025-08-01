@@ -4,7 +4,7 @@
 
 ### DataAwsTimestreamwriteDatabase <a name="DataAwsTimestreamwriteDatabase" id="@cdktf/provider-aws.dataAwsTimestreamwriteDatabase.DataAwsTimestreamwriteDatabase"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/data-sources/timestreamwrite_database aws_timestreamwrite_database}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/data-sources/timestreamwrite_database aws_timestreamwrite_database}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsTimestreamwriteDatabase.DataAwsTimestreamwriteDatabase.Initializer"></a>
 
@@ -372,7 +372,7 @@ The construct id used in the generated config for the DataAwsTimestreamwriteData
 
 The id of the existing DataAwsTimestreamwriteDatabase that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/data-sources/timestreamwrite_database#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/data-sources/timestreamwrite_database#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -675,7 +675,7 @@ new DataAwsTimestreamwriteDatabaseConfig {
 | <code><a href="#@cdktf/provider-aws.dataAwsTimestreamwriteDatabase.DataAwsTimestreamwriteDatabaseConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsTimestreamwriteDatabase.DataAwsTimestreamwriteDatabaseConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsTimestreamwriteDatabase.DataAwsTimestreamwriteDatabaseConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsTimestreamwriteDatabase.DataAwsTimestreamwriteDatabaseConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/data-sources/timestreamwrite_database#name DataAwsTimestreamwriteDatabase#name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsTimestreamwriteDatabase.DataAwsTimestreamwriteDatabaseConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/data-sources/timestreamwrite_database#name DataAwsTimestreamwriteDatabase#name}. |
 | <code><a href="#@cdktf/provider-aws.dataAwsTimestreamwriteDatabase.DataAwsTimestreamwriteDatabaseConfig.property.region">Region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -758,7 +758,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/data-sources/timestreamwrite_database#name DataAwsTimestreamwriteDatabase#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/data-sources/timestreamwrite_database#name DataAwsTimestreamwriteDatabase#name}.
 
 ---
 
@@ -772,7 +772,7 @@ public string Region { get; set; }
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/data-sources/timestreamwrite_database#region DataAwsTimestreamwriteDatabase#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/data-sources/timestreamwrite_database#region DataAwsTimestreamwriteDatabase#region}
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### VerifiedpermissionsSchema <a name="VerifiedpermissionsSchema" id="@cdktf/provider-aws.verifiedpermissionsSchema.VerifiedpermissionsSchema"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/verifiedpermissions_schema aws_verifiedpermissions_schema}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/verifiedpermissions_schema aws_verifiedpermissions_schema}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.verifiedpermissionsSchema.VerifiedpermissionsSchema.Initializer"></a>
 
@@ -494,7 +494,7 @@ The construct id used in the generated config for the VerifiedpermissionsSchema 
 
 The id of the existing VerifiedpermissionsSchema that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/verifiedpermissions_schema#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/verifiedpermissions_schema#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -798,7 +798,7 @@ const verifiedpermissionsSchemaConfig: verifiedpermissionsSchema.Verifiedpermiss
 | <code><a href="#@cdktf/provider-aws.verifiedpermissionsSchema.VerifiedpermissionsSchemaConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.verifiedpermissionsSchema.VerifiedpermissionsSchemaConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.verifiedpermissionsSchema.VerifiedpermissionsSchemaConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.verifiedpermissionsSchema.VerifiedpermissionsSchemaConfig.property.policyStoreId">policyStoreId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/verifiedpermissions_schema#policy_store_id VerifiedpermissionsSchema#policy_store_id}. |
+| <code><a href="#@cdktf/provider-aws.verifiedpermissionsSchema.VerifiedpermissionsSchemaConfig.property.policyStoreId">policyStoreId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/verifiedpermissions_schema#policy_store_id VerifiedpermissionsSchema#policy_store_id}. |
 | <code><a href="#@cdktf/provider-aws.verifiedpermissionsSchema.VerifiedpermissionsSchemaConfig.property.definition">definition</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.verifiedpermissionsSchema.VerifiedpermissionsSchemaDefinition">VerifiedpermissionsSchemaDefinition</a>[]</code> | definition block. |
 | <code><a href="#@cdktf/provider-aws.verifiedpermissionsSchema.VerifiedpermissionsSchemaConfig.property.region">region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
@@ -882,7 +882,7 @@ public readonly policyStoreId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/verifiedpermissions_schema#policy_store_id VerifiedpermissionsSchema#policy_store_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/verifiedpermissions_schema#policy_store_id VerifiedpermissionsSchema#policy_store_id}.
 
 ---
 
@@ -896,7 +896,7 @@ public readonly definition: IResolvable | VerifiedpermissionsSchemaDefinition[];
 
 definition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/verifiedpermissions_schema#definition VerifiedpermissionsSchema#definition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/verifiedpermissions_schema#definition VerifiedpermissionsSchema#definition}
 
 ---
 
@@ -910,7 +910,7 @@ public readonly region: string;
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/verifiedpermissions_schema#region VerifiedpermissionsSchema#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/verifiedpermissions_schema#region VerifiedpermissionsSchema#region}
 
 ---
 
@@ -928,7 +928,7 @@ const verifiedpermissionsSchemaDefinition: verifiedpermissionsSchema.Verifiedper
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.verifiedpermissionsSchema.VerifiedpermissionsSchemaDefinition.property.value">value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/verifiedpermissions_schema#value VerifiedpermissionsSchema#value}. |
+| <code><a href="#@cdktf/provider-aws.verifiedpermissionsSchema.VerifiedpermissionsSchemaDefinition.property.value">value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/verifiedpermissions_schema#value VerifiedpermissionsSchema#value}. |
 
 ---
 
@@ -940,7 +940,7 @@ public readonly value: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/verifiedpermissions_schema#value VerifiedpermissionsSchema#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/verifiedpermissions_schema#value VerifiedpermissionsSchema#value}.
 
 ---
 

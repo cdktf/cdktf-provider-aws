@@ -4,7 +4,7 @@
 
 ### EgressOnlyInternetGateway <a name="EgressOnlyInternetGateway" id="@cdktf/provider-aws.egressOnlyInternetGateway.EgressOnlyInternetGateway"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/egress_only_internet_gateway aws_egress_only_internet_gateway}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/egress_only_internet_gateway aws_egress_only_internet_gateway}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.egressOnlyInternetGateway.EgressOnlyInternetGateway.Initializer"></a>
 
@@ -42,11 +42,11 @@ EgressOnlyInternetGateway.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-aws.egressOnlyInternetGateway.EgressOnlyInternetGateway.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.egressOnlyInternetGateway.EgressOnlyInternetGateway.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.egressOnlyInternetGateway.EgressOnlyInternetGateway.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.egressOnlyInternetGateway.EgressOnlyInternetGateway.Initializer.parameter.vpcId">vpcId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/egress_only_internet_gateway#vpc_id EgressOnlyInternetGateway#vpc_id}. |
-| <code><a href="#@cdktf/provider-aws.egressOnlyInternetGateway.EgressOnlyInternetGateway.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/egress_only_internet_gateway#id EgressOnlyInternetGateway#id}. |
+| <code><a href="#@cdktf/provider-aws.egressOnlyInternetGateway.EgressOnlyInternetGateway.Initializer.parameter.vpcId">vpcId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/egress_only_internet_gateway#vpc_id EgressOnlyInternetGateway#vpc_id}. |
+| <code><a href="#@cdktf/provider-aws.egressOnlyInternetGateway.EgressOnlyInternetGateway.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/egress_only_internet_gateway#id EgressOnlyInternetGateway#id}. |
 | <code><a href="#@cdktf/provider-aws.egressOnlyInternetGateway.EgressOnlyInternetGateway.Initializer.parameter.region">region</a></code> | <code>java.lang.String</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktf/provider-aws.egressOnlyInternetGateway.EgressOnlyInternetGateway.Initializer.parameter.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/egress_only_internet_gateway#tags EgressOnlyInternetGateway#tags}. |
-| <code><a href="#@cdktf/provider-aws.egressOnlyInternetGateway.EgressOnlyInternetGateway.Initializer.parameter.tagsAll">tagsAll</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/egress_only_internet_gateway#tags_all EgressOnlyInternetGateway#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.egressOnlyInternetGateway.EgressOnlyInternetGateway.Initializer.parameter.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/egress_only_internet_gateway#tags EgressOnlyInternetGateway#tags}. |
+| <code><a href="#@cdktf/provider-aws.egressOnlyInternetGateway.EgressOnlyInternetGateway.Initializer.parameter.tagsAll">tagsAll</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/egress_only_internet_gateway#tags_all EgressOnlyInternetGateway#tags_all}. |
 
 ---
 
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/egress_only_internet_gateway#vpc_id EgressOnlyInternetGateway#vpc_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/egress_only_internet_gateway#vpc_id EgressOnlyInternetGateway#vpc_id}.
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/egress_only_internet_gateway#id EgressOnlyInternetGateway#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/egress_only_internet_gateway#id EgressOnlyInternetGateway#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -135,7 +135,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/egress_only_internet_gateway#region EgressOnlyInternetGateway#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/egress_only_internet_gateway#region EgressOnlyInternetGateway#region}
 
 ---
 
@@ -143,7 +143,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/egress_only_internet_gateway#tags EgressOnlyInternetGateway#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/egress_only_internet_gateway#tags EgressOnlyInternetGateway#tags}.
 
 ---
 
@@ -151,7 +151,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/egress_only_internet_gateway#tags_all EgressOnlyInternetGateway#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/egress_only_internet_gateway#tags_all EgressOnlyInternetGateway#tags_all}.
 
 ---
 
@@ -606,7 +606,7 @@ The construct id used in the generated config for the EgressOnlyInternetGateway 
 
 The id of the existing EgressOnlyInternetGateway that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/egress_only_internet_gateway#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/egress_only_internet_gateway#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -949,11 +949,11 @@ EgressOnlyInternetGatewayConfig.builder()
 | <code><a href="#@cdktf/provider-aws.egressOnlyInternetGateway.EgressOnlyInternetGatewayConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.egressOnlyInternetGateway.EgressOnlyInternetGatewayConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.egressOnlyInternetGateway.EgressOnlyInternetGatewayConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.egressOnlyInternetGateway.EgressOnlyInternetGatewayConfig.property.vpcId">vpcId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/egress_only_internet_gateway#vpc_id EgressOnlyInternetGateway#vpc_id}. |
-| <code><a href="#@cdktf/provider-aws.egressOnlyInternetGateway.EgressOnlyInternetGatewayConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/egress_only_internet_gateway#id EgressOnlyInternetGateway#id}. |
+| <code><a href="#@cdktf/provider-aws.egressOnlyInternetGateway.EgressOnlyInternetGatewayConfig.property.vpcId">vpcId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/egress_only_internet_gateway#vpc_id EgressOnlyInternetGateway#vpc_id}. |
+| <code><a href="#@cdktf/provider-aws.egressOnlyInternetGateway.EgressOnlyInternetGatewayConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/egress_only_internet_gateway#id EgressOnlyInternetGateway#id}. |
 | <code><a href="#@cdktf/provider-aws.egressOnlyInternetGateway.EgressOnlyInternetGatewayConfig.property.region">region</a></code> | <code>java.lang.String</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktf/provider-aws.egressOnlyInternetGateway.EgressOnlyInternetGatewayConfig.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/egress_only_internet_gateway#tags EgressOnlyInternetGateway#tags}. |
-| <code><a href="#@cdktf/provider-aws.egressOnlyInternetGateway.EgressOnlyInternetGatewayConfig.property.tagsAll">tagsAll</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/egress_only_internet_gateway#tags_all EgressOnlyInternetGateway#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.egressOnlyInternetGateway.EgressOnlyInternetGatewayConfig.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/egress_only_internet_gateway#tags EgressOnlyInternetGateway#tags}. |
+| <code><a href="#@cdktf/provider-aws.egressOnlyInternetGateway.EgressOnlyInternetGatewayConfig.property.tagsAll">tagsAll</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/egress_only_internet_gateway#tags_all EgressOnlyInternetGateway#tags_all}. |
 
 ---
 
@@ -1035,7 +1035,7 @@ public java.lang.String getVpcId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/egress_only_internet_gateway#vpc_id EgressOnlyInternetGateway#vpc_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/egress_only_internet_gateway#vpc_id EgressOnlyInternetGateway#vpc_id}.
 
 ---
 
@@ -1047,7 +1047,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/egress_only_internet_gateway#id EgressOnlyInternetGateway#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/egress_only_internet_gateway#id EgressOnlyInternetGateway#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1064,7 +1064,7 @@ public java.lang.String getRegion();
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/egress_only_internet_gateway#region EgressOnlyInternetGateway#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/egress_only_internet_gateway#region EgressOnlyInternetGateway#region}
 
 ---
 
@@ -1076,7 +1076,7 @@ public java.util.Map<java.lang.String, java.lang.String> getTags();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/egress_only_internet_gateway#tags EgressOnlyInternetGateway#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/egress_only_internet_gateway#tags EgressOnlyInternetGateway#tags}.
 
 ---
 
@@ -1088,7 +1088,7 @@ public java.util.Map<java.lang.String, java.lang.String> getTagsAll();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/egress_only_internet_gateway#tags_all EgressOnlyInternetGateway#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/egress_only_internet_gateway#tags_all EgressOnlyInternetGateway#tags_all}.
 
 ---
 

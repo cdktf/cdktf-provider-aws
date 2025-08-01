@@ -4,7 +4,7 @@
 
 ### BedrockagentFlow <a name="BedrockagentFlow" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlow"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow aws_bedrockagent_flow}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow aws_bedrockagent_flow}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlow.Initializer"></a>
 
@@ -43,13 +43,13 @@ bedrockagentFlow.BedrockagentFlow(
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlow.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlow.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlow.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlow.Initializer.parameter.executionRoleArn">execution_role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#execution_role_arn BedrockagentFlow#execution_role_arn}. |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlow.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#name BedrockagentFlow#name}. |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlow.Initializer.parameter.customerEncryptionKeyArn">customer_encryption_key_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#customer_encryption_key_arn BedrockagentFlow#customer_encryption_key_arn}. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlow.Initializer.parameter.executionRoleArn">execution_role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#execution_role_arn BedrockagentFlow#execution_role_arn}. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlow.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#name BedrockagentFlow#name}. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlow.Initializer.parameter.customerEncryptionKeyArn">customer_encryption_key_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#customer_encryption_key_arn BedrockagentFlow#customer_encryption_key_arn}. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlow.Initializer.parameter.definition">definition</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinition">BedrockagentFlowDefinition</a>]]</code> | definition block. |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlow.Initializer.parameter.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#description BedrockagentFlow#description}. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlow.Initializer.parameter.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#description BedrockagentFlow#description}. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlow.Initializer.parameter.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlow.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#tags BedrockagentFlow#tags}. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlow.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#tags BedrockagentFlow#tags}. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlow.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowTimeouts">BedrockagentFlowTimeouts</a></code> | timeouts block. |
 
 ---
@@ -118,7 +118,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#execution_role_arn BedrockagentFlow#execution_role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#execution_role_arn BedrockagentFlow#execution_role_arn}.
 
 ---
 
@@ -126,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#name BedrockagentFlow#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#name BedrockagentFlow#name}.
 
 ---
 
@@ -134,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#customer_encryption_key_arn BedrockagentFlow#customer_encryption_key_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#customer_encryption_key_arn BedrockagentFlow#customer_encryption_key_arn}.
 
 ---
 
@@ -144,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 definition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#definition BedrockagentFlow#definition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#definition BedrockagentFlow#definition}
 
 ---
 
@@ -152,7 +152,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#description BedrockagentFlow#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#description BedrockagentFlow#description}.
 
 ---
 
@@ -162,7 +162,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#region BedrockagentFlow#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#region BedrockagentFlow#region}
 
 ---
 
@@ -170,7 +170,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#tags BedrockagentFlow#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#tags BedrockagentFlow#tags}.
 
 ---
 
@@ -180,7 +180,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#timeouts BedrockagentFlow#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#timeouts BedrockagentFlow#timeouts}
 
 ---
 
@@ -577,7 +577,7 @@ def put_timeouts(
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#create BedrockagentFlow#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#create BedrockagentFlow#create}
 
 ---
 
@@ -587,7 +587,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#delete BedrockagentFlow#delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#delete BedrockagentFlow#delete}
 
 ---
 
@@ -597,7 +597,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#update BedrockagentFlow#update}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#update BedrockagentFlow#update}
 
 ---
 
@@ -751,7 +751,7 @@ The construct id used in the generated config for the BedrockagentFlow to import
 
 The id of the existing BedrockagentFlow that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1236,13 +1236,13 @@ bedrockagentFlow.BedrockagentFlowConfig(
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowConfig.property.executionRoleArn">execution_role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#execution_role_arn BedrockagentFlow#execution_role_arn}. |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#name BedrockagentFlow#name}. |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowConfig.property.customerEncryptionKeyArn">customer_encryption_key_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#customer_encryption_key_arn BedrockagentFlow#customer_encryption_key_arn}. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowConfig.property.executionRoleArn">execution_role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#execution_role_arn BedrockagentFlow#execution_role_arn}. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#name BedrockagentFlow#name}. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowConfig.property.customerEncryptionKeyArn">customer_encryption_key_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#customer_encryption_key_arn BedrockagentFlow#customer_encryption_key_arn}. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowConfig.property.definition">definition</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinition">BedrockagentFlowDefinition</a>]]</code> | definition block. |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowConfig.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#description BedrockagentFlow#description}. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowConfig.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#description BedrockagentFlow#description}. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowConfig.property.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#tags BedrockagentFlow#tags}. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#tags BedrockagentFlow#tags}. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowTimeouts">BedrockagentFlowTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1325,7 +1325,7 @@ execution_role_arn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#execution_role_arn BedrockagentFlow#execution_role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#execution_role_arn BedrockagentFlow#execution_role_arn}.
 
 ---
 
@@ -1337,7 +1337,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#name BedrockagentFlow#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#name BedrockagentFlow#name}.
 
 ---
 
@@ -1349,7 +1349,7 @@ customer_encryption_key_arn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#customer_encryption_key_arn BedrockagentFlow#customer_encryption_key_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#customer_encryption_key_arn BedrockagentFlow#customer_encryption_key_arn}.
 
 ---
 
@@ -1363,7 +1363,7 @@ definition: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinition]]
 
 definition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#definition BedrockagentFlow#definition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#definition BedrockagentFlow#definition}
 
 ---
 
@@ -1375,7 +1375,7 @@ description: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#description BedrockagentFlow#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#description BedrockagentFlow#description}.
 
 ---
 
@@ -1389,7 +1389,7 @@ region: str
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#region BedrockagentFlow#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#region BedrockagentFlow#region}
 
 ---
 
@@ -1401,7 +1401,7 @@ tags: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#tags BedrockagentFlow#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#tags BedrockagentFlow#tags}.
 
 ---
 
@@ -1415,7 +1415,7 @@ timeouts: BedrockagentFlowTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#timeouts BedrockagentFlow#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#timeouts BedrockagentFlow#timeouts}
 
 ---
 
@@ -1451,7 +1451,7 @@ connection: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionConn
 
 connection block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#connection BedrockagentFlow#connection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#connection BedrockagentFlow#connection}
 
 ---
 
@@ -1465,7 +1465,7 @@ node_attribute: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinition
 
 node block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#node BedrockagentFlow#node}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#node BedrockagentFlow#node}
 
 ---
 
@@ -1489,10 +1489,10 @@ bedrockagentFlow.BedrockagentFlowDefinitionConnection(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnection.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#name BedrockagentFlow#name}. |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnection.property.source">source</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#source BedrockagentFlow#source}. |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnection.property.target">target</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#target BedrockagentFlow#target}. |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnection.property.type">type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#type BedrockagentFlow#type}. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnection.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#name BedrockagentFlow#name}. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnection.property.source">source</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#source BedrockagentFlow#source}. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnection.property.target">target</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#target BedrockagentFlow#target}. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnection.property.type">type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#type BedrockagentFlow#type}. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnection.property.configuration">configuration</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfiguration">BedrockagentFlowDefinitionConnectionConfiguration</a>]]</code> | configuration block. |
 
 ---
@@ -1505,7 +1505,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#name BedrockagentFlow#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#name BedrockagentFlow#name}.
 
 ---
 
@@ -1517,7 +1517,7 @@ source: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#source BedrockagentFlow#source}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#source BedrockagentFlow#source}.
 
 ---
 
@@ -1529,7 +1529,7 @@ target: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#target BedrockagentFlow#target}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#target BedrockagentFlow#target}.
 
 ---
 
@@ -1541,7 +1541,7 @@ type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#type BedrockagentFlow#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#type BedrockagentFlow#type}.
 
 ---
 
@@ -1555,7 +1555,7 @@ configuration: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionC
 
 configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#configuration BedrockagentFlow#configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#configuration BedrockagentFlow#configuration}
 
 ---
 
@@ -1591,7 +1591,7 @@ conditional: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionCon
 
 conditional block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#conditional BedrockagentFlow#conditional}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#conditional BedrockagentFlow#conditional}
 
 ---
 
@@ -1605,7 +1605,7 @@ data: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionConnection
 
 data block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#data BedrockagentFlow#data}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#data BedrockagentFlow#data}
 
 ---
 
@@ -1625,7 +1625,7 @@ bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationConditional(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationConditional.property.condition">condition</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#condition BedrockagentFlow#condition}. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationConditional.property.condition">condition</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#condition BedrockagentFlow#condition}. |
 
 ---
 
@@ -1637,7 +1637,7 @@ condition: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#condition BedrockagentFlow#condition}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#condition BedrockagentFlow#condition}.
 
 ---
 
@@ -1658,8 +1658,8 @@ bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationData(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationData.property.sourceOutput">source_output</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#source_output BedrockagentFlow#source_output}. |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationData.property.targetInput">target_input</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#target_input BedrockagentFlow#target_input}. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationData.property.sourceOutput">source_output</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#source_output BedrockagentFlow#source_output}. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionConnectionConfigurationData.property.targetInput">target_input</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#target_input BedrockagentFlow#target_input}. |
 
 ---
 
@@ -1671,7 +1671,7 @@ source_output: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#source_output BedrockagentFlow#source_output}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#source_output BedrockagentFlow#source_output}.
 
 ---
 
@@ -1683,7 +1683,7 @@ target_input: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#target_input BedrockagentFlow#target_input}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#target_input BedrockagentFlow#target_input}.
 
 ---
 
@@ -1707,8 +1707,8 @@ bedrockagentFlow.BedrockagentFlowDefinitionNode(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNode.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#name BedrockagentFlow#name}. |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNode.property.type">type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#type BedrockagentFlow#type}. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNode.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#name BedrockagentFlow#name}. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNode.property.type">type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#type BedrockagentFlow#type}. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNode.property.configuration">configuration</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfiguration">BedrockagentFlowDefinitionNodeConfiguration</a>]]</code> | configuration block. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNode.property.input">input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeInput">BedrockagentFlowDefinitionNodeInput</a>]]</code> | input block. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNode.property.output">output</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeOutput">BedrockagentFlowDefinitionNodeOutput</a>]]</code> | output block. |
@@ -1723,7 +1723,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#name BedrockagentFlow#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#name BedrockagentFlow#name}.
 
 ---
 
@@ -1735,7 +1735,7 @@ type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#type BedrockagentFlow#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#type BedrockagentFlow#type}.
 
 ---
 
@@ -1749,7 +1749,7 @@ configuration: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionN
 
 configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#configuration BedrockagentFlow#configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#configuration BedrockagentFlow#configuration}
 
 ---
 
@@ -1763,7 +1763,7 @@ input: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeInput
 
 input block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#input BedrockagentFlow#input}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#input BedrockagentFlow#input}
 
 ---
 
@@ -1777,7 +1777,7 @@ output: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeOutp
 
 output block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#output BedrockagentFlow#output}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#output BedrockagentFlow#output}
 
 ---
 
@@ -1835,7 +1835,7 @@ agent: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfi
 
 agent block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#agent BedrockagentFlow#agent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#agent BedrockagentFlow#agent}
 
 ---
 
@@ -1849,7 +1849,7 @@ collector: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeC
 
 collector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#collector BedrockagentFlow#collector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#collector BedrockagentFlow#collector}
 
 ---
 
@@ -1863,7 +1863,7 @@ condition: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeC
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#condition BedrockagentFlow#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#condition BedrockagentFlow#condition}
 
 ---
 
@@ -1877,7 +1877,7 @@ inline_code: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNod
 
 inline_code block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#inline_code BedrockagentFlow#inline_code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#inline_code BedrockagentFlow#inline_code}
 
 ---
 
@@ -1891,7 +1891,7 @@ input: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfi
 
 input block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#input BedrockagentFlow#input}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#input BedrockagentFlow#input}
 
 ---
 
@@ -1905,7 +1905,7 @@ iterator: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeCo
 
 iterator block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#iterator BedrockagentFlow#iterator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#iterator BedrockagentFlow#iterator}
 
 ---
 
@@ -1919,7 +1919,7 @@ knowledge_base: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinition
 
 knowledge_base block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#knowledge_base BedrockagentFlow#knowledge_base}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#knowledge_base BedrockagentFlow#knowledge_base}
 
 ---
 
@@ -1933,7 +1933,7 @@ lambda_function: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitio
 
 lambda_function block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#lambda_function BedrockagentFlow#lambda_function}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#lambda_function BedrockagentFlow#lambda_function}
 
 ---
 
@@ -1947,7 +1947,7 @@ lex: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigu
 
 lex block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#lex BedrockagentFlow#lex}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#lex BedrockagentFlow#lex}
 
 ---
 
@@ -1961,7 +1961,7 @@ output: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConf
 
 output block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#output BedrockagentFlow#output}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#output BedrockagentFlow#output}
 
 ---
 
@@ -1975,7 +1975,7 @@ prompt: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConf
 
 prompt block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#prompt BedrockagentFlow#prompt}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#prompt BedrockagentFlow#prompt}
 
 ---
 
@@ -1989,7 +1989,7 @@ retrieval: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeC
 
 retrieval block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#retrieval BedrockagentFlow#retrieval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#retrieval BedrockagentFlow#retrieval}
 
 ---
 
@@ -2003,7 +2003,7 @@ storage: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeCon
 
 storage block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#storage BedrockagentFlow#storage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#storage BedrockagentFlow#storage}
 
 ---
 
@@ -2023,7 +2023,7 @@ bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationAgent(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationAgent.property.agentAliasArn">agent_alias_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#agent_alias_arn BedrockagentFlow#agent_alias_arn}. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationAgent.property.agentAliasArn">agent_alias_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#agent_alias_arn BedrockagentFlow#agent_alias_arn}. |
 
 ---
 
@@ -2035,7 +2035,7 @@ agent_alias_arn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#agent_alias_arn BedrockagentFlow#agent_alias_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#agent_alias_arn BedrockagentFlow#agent_alias_arn}.
 
 ---
 
@@ -2080,7 +2080,7 @@ condition: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeC
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#condition BedrockagentFlow#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#condition BedrockagentFlow#condition}
 
 ---
 
@@ -2101,8 +2101,8 @@ bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationConditionCondition(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationConditionCondition.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#name BedrockagentFlow#name}. |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationConditionCondition.property.expression">expression</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#expression BedrockagentFlow#expression}. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationConditionCondition.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#name BedrockagentFlow#name}. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationConditionCondition.property.expression">expression</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#expression BedrockagentFlow#expression}. |
 
 ---
 
@@ -2114,7 +2114,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#name BedrockagentFlow#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#name BedrockagentFlow#name}.
 
 ---
 
@@ -2126,7 +2126,7 @@ expression: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#expression BedrockagentFlow#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#expression BedrockagentFlow#expression}.
 
 ---
 
@@ -2147,8 +2147,8 @@ bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationInlineCode(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationInlineCode.property.code">code</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#code BedrockagentFlow#code}. |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationInlineCode.property.language">language</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#language BedrockagentFlow#language}. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationInlineCode.property.code">code</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#code BedrockagentFlow#code}. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationInlineCode.property.language">language</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#language BedrockagentFlow#language}. |
 
 ---
 
@@ -2160,7 +2160,7 @@ code: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#code BedrockagentFlow#code}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#code BedrockagentFlow#code}.
 
 ---
 
@@ -2172,7 +2172,7 @@ language: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#language BedrockagentFlow#language}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#language BedrockagentFlow#language}.
 
 ---
 
@@ -2218,11 +2218,11 @@ bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBase(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBase.property.knowledgeBaseId">knowledge_base_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#knowledge_base_id BedrockagentFlow#knowledge_base_id}. |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBase.property.modelId">model_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#model_id BedrockagentFlow#model_id}. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBase.property.knowledgeBaseId">knowledge_base_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#knowledge_base_id BedrockagentFlow#knowledge_base_id}. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBase.property.modelId">model_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#model_id BedrockagentFlow#model_id}. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBase.property.guardrailConfiguration">guardrail_configuration</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseGuardrailConfiguration">BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseGuardrailConfiguration</a>]]</code> | guardrail_configuration block. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBase.property.inferenceConfiguration">inference_configuration</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfiguration">BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfiguration</a>]]</code> | inference_configuration block. |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBase.property.numberOfResults">number_of_results</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#number_of_results BedrockagentFlow#number_of_results}. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBase.property.numberOfResults">number_of_results</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#number_of_results BedrockagentFlow#number_of_results}. |
 
 ---
 
@@ -2234,7 +2234,7 @@ knowledge_base_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#knowledge_base_id BedrockagentFlow#knowledge_base_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#knowledge_base_id BedrockagentFlow#knowledge_base_id}.
 
 ---
 
@@ -2246,7 +2246,7 @@ model_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#model_id BedrockagentFlow#model_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#model_id BedrockagentFlow#model_id}.
 
 ---
 
@@ -2260,7 +2260,7 @@ guardrail_configuration: typing.Union[IResolvable, typing.List[BedrockagentFlowD
 
 guardrail_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#guardrail_configuration BedrockagentFlow#guardrail_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#guardrail_configuration BedrockagentFlow#guardrail_configuration}
 
 ---
 
@@ -2274,7 +2274,7 @@ inference_configuration: typing.Union[IResolvable, typing.List[BedrockagentFlowD
 
 inference_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#inference_configuration BedrockagentFlow#inference_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#inference_configuration BedrockagentFlow#inference_configuration}
 
 ---
 
@@ -2286,7 +2286,7 @@ number_of_results: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#number_of_results BedrockagentFlow#number_of_results}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#number_of_results BedrockagentFlow#number_of_results}.
 
 ---
 
@@ -2307,8 +2307,8 @@ bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseGuardra
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseGuardrailConfiguration.property.guardrailIdentifier">guardrail_identifier</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#guardrail_identifier BedrockagentFlow#guardrail_identifier}. |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseGuardrailConfiguration.property.guardrailVersion">guardrail_version</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#guardrail_version BedrockagentFlow#guardrail_version}. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseGuardrailConfiguration.property.guardrailIdentifier">guardrail_identifier</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#guardrail_identifier BedrockagentFlow#guardrail_identifier}. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseGuardrailConfiguration.property.guardrailVersion">guardrail_version</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#guardrail_version BedrockagentFlow#guardrail_version}. |
 
 ---
 
@@ -2320,7 +2320,7 @@ guardrail_identifier: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#guardrail_identifier BedrockagentFlow#guardrail_identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#guardrail_identifier BedrockagentFlow#guardrail_identifier}.
 
 ---
 
@@ -2332,7 +2332,7 @@ guardrail_version: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#guardrail_version BedrockagentFlow#guardrail_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#guardrail_version BedrockagentFlow#guardrail_version}.
 
 ---
 
@@ -2366,7 +2366,7 @@ text: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfig
 
 text block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#text BedrockagentFlow#text}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#text BedrockagentFlow#text}
 
 ---
 
@@ -2389,10 +2389,10 @@ bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferen
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationText.property.maxTokens">max_tokens</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#max_tokens BedrockagentFlow#max_tokens}. |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationText.property.stopSequences">stop_sequences</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#stop_sequences BedrockagentFlow#stop_sequences}. |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationText.property.temperature">temperature</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#temperature BedrockagentFlow#temperature}. |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationText.property.topP">top_p</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#top_p BedrockagentFlow#top_p}. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationText.property.maxTokens">max_tokens</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#max_tokens BedrockagentFlow#max_tokens}. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationText.property.stopSequences">stop_sequences</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#stop_sequences BedrockagentFlow#stop_sequences}. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationText.property.temperature">temperature</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#temperature BedrockagentFlow#temperature}. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationText.property.topP">top_p</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#top_p BedrockagentFlow#top_p}. |
 
 ---
 
@@ -2404,7 +2404,7 @@ max_tokens: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#max_tokens BedrockagentFlow#max_tokens}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#max_tokens BedrockagentFlow#max_tokens}.
 
 ---
 
@@ -2416,7 +2416,7 @@ stop_sequences: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#stop_sequences BedrockagentFlow#stop_sequences}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#stop_sequences BedrockagentFlow#stop_sequences}.
 
 ---
 
@@ -2428,7 +2428,7 @@ temperature: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#temperature BedrockagentFlow#temperature}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#temperature BedrockagentFlow#temperature}.
 
 ---
 
@@ -2440,7 +2440,7 @@ top_p: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#top_p BedrockagentFlow#top_p}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#top_p BedrockagentFlow#top_p}.
 
 ---
 
@@ -2460,7 +2460,7 @@ bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationLambdaFunction(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationLambdaFunction.property.lambdaArn">lambda_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#lambda_arn BedrockagentFlow#lambda_arn}. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationLambdaFunction.property.lambdaArn">lambda_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#lambda_arn BedrockagentFlow#lambda_arn}. |
 
 ---
 
@@ -2472,7 +2472,7 @@ lambda_arn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#lambda_arn BedrockagentFlow#lambda_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#lambda_arn BedrockagentFlow#lambda_arn}.
 
 ---
 
@@ -2493,8 +2493,8 @@ bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationLex(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationLex.property.botAliasArn">bot_alias_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#bot_alias_arn BedrockagentFlow#bot_alias_arn}. |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationLex.property.localeId">locale_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#locale_id BedrockagentFlow#locale_id}. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationLex.property.botAliasArn">bot_alias_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#bot_alias_arn BedrockagentFlow#bot_alias_arn}. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationLex.property.localeId">locale_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#locale_id BedrockagentFlow#locale_id}. |
 
 ---
 
@@ -2506,7 +2506,7 @@ bot_alias_arn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#bot_alias_arn BedrockagentFlow#bot_alias_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#bot_alias_arn BedrockagentFlow#bot_alias_arn}.
 
 ---
 
@@ -2518,7 +2518,7 @@ locale_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#locale_id BedrockagentFlow#locale_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#locale_id BedrockagentFlow#locale_id}.
 
 ---
 
@@ -2565,7 +2565,7 @@ guardrail_configuration: typing.Union[IResolvable, typing.List[BedrockagentFlowD
 
 guardrail_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#guardrail_configuration BedrockagentFlow#guardrail_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#guardrail_configuration BedrockagentFlow#guardrail_configuration}
 
 ---
 
@@ -2579,7 +2579,7 @@ source_configuration: typing.Union[IResolvable, typing.List[BedrockagentFlowDefi
 
 source_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#source_configuration BedrockagentFlow#source_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#source_configuration BedrockagentFlow#source_configuration}
 
 ---
 
@@ -2600,8 +2600,8 @@ bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptGuardrailConfi
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptGuardrailConfiguration.property.guardrailIdentifier">guardrail_identifier</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#guardrail_identifier BedrockagentFlow#guardrail_identifier}. |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptGuardrailConfiguration.property.guardrailVersion">guardrail_version</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#guardrail_version BedrockagentFlow#guardrail_version}. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptGuardrailConfiguration.property.guardrailIdentifier">guardrail_identifier</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#guardrail_identifier BedrockagentFlow#guardrail_identifier}. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptGuardrailConfiguration.property.guardrailVersion">guardrail_version</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#guardrail_version BedrockagentFlow#guardrail_version}. |
 
 ---
 
@@ -2613,7 +2613,7 @@ guardrail_identifier: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#guardrail_identifier BedrockagentFlow#guardrail_identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#guardrail_identifier BedrockagentFlow#guardrail_identifier}.
 
 ---
 
@@ -2625,7 +2625,7 @@ guardrail_version: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#guardrail_version BedrockagentFlow#guardrail_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#guardrail_version BedrockagentFlow#guardrail_version}.
 
 ---
 
@@ -2661,7 +2661,7 @@ inline: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConf
 
 inline block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#inline BedrockagentFlow#inline}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#inline BedrockagentFlow#inline}
 
 ---
 
@@ -2675,7 +2675,7 @@ resource: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeCo
 
 resource block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#resource BedrockagentFlow#resource}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#resource BedrockagentFlow#resource}
 
 ---
 
@@ -2699,9 +2699,9 @@ bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigur
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInline.property.modelId">model_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#model_id BedrockagentFlow#model_id}. |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInline.property.templateType">template_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#template_type BedrockagentFlow#template_type}. |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInline.property.additionalModelRequestFields">additional_model_request_fields</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#additional_model_request_fields BedrockagentFlow#additional_model_request_fields}. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInline.property.modelId">model_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#model_id BedrockagentFlow#model_id}. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInline.property.templateType">template_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#template_type BedrockagentFlow#template_type}. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInline.property.additionalModelRequestFields">additional_model_request_fields</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#additional_model_request_fields BedrockagentFlow#additional_model_request_fields}. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInline.property.inferenceConfiguration">inference_configuration</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfiguration">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfiguration</a>]]</code> | inference_configuration block. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInline.property.templateConfiguration">template_configuration</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfiguration">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfiguration</a>]]</code> | template_configuration block. |
 
@@ -2715,7 +2715,7 @@ model_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#model_id BedrockagentFlow#model_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#model_id BedrockagentFlow#model_id}.
 
 ---
 
@@ -2727,7 +2727,7 @@ template_type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#template_type BedrockagentFlow#template_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#template_type BedrockagentFlow#template_type}.
 
 ---
 
@@ -2739,7 +2739,7 @@ additional_model_request_fields: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#additional_model_request_fields BedrockagentFlow#additional_model_request_fields}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#additional_model_request_fields BedrockagentFlow#additional_model_request_fields}.
 
 ---
 
@@ -2753,7 +2753,7 @@ inference_configuration: typing.Union[IResolvable, typing.List[BedrockagentFlowD
 
 inference_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#inference_configuration BedrockagentFlow#inference_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#inference_configuration BedrockagentFlow#inference_configuration}
 
 ---
 
@@ -2767,7 +2767,7 @@ template_configuration: typing.Union[IResolvable, typing.List[BedrockagentFlowDe
 
 template_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#template_configuration BedrockagentFlow#template_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#template_configuration BedrockagentFlow#template_configuration}
 
 ---
 
@@ -2801,7 +2801,7 @@ text: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfig
 
 text block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#text BedrockagentFlow#text}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#text BedrockagentFlow#text}
 
 ---
 
@@ -2824,10 +2824,10 @@ bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigur
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationText.property.maxTokens">max_tokens</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#max_tokens BedrockagentFlow#max_tokens}. |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationText.property.stopSequences">stop_sequences</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#stop_sequences BedrockagentFlow#stop_sequences}. |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationText.property.temperature">temperature</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#temperature BedrockagentFlow#temperature}. |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationText.property.topP">top_p</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#top_p BedrockagentFlow#top_p}. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationText.property.maxTokens">max_tokens</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#max_tokens BedrockagentFlow#max_tokens}. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationText.property.stopSequences">stop_sequences</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#stop_sequences BedrockagentFlow#stop_sequences}. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationText.property.temperature">temperature</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#temperature BedrockagentFlow#temperature}. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineInferenceConfigurationText.property.topP">top_p</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#top_p BedrockagentFlow#top_p}. |
 
 ---
 
@@ -2839,7 +2839,7 @@ max_tokens: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#max_tokens BedrockagentFlow#max_tokens}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#max_tokens BedrockagentFlow#max_tokens}.
 
 ---
 
@@ -2851,7 +2851,7 @@ stop_sequences: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#stop_sequences BedrockagentFlow#stop_sequences}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#stop_sequences BedrockagentFlow#stop_sequences}.
 
 ---
 
@@ -2863,7 +2863,7 @@ temperature: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#temperature BedrockagentFlow#temperature}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#temperature BedrockagentFlow#temperature}.
 
 ---
 
@@ -2875,7 +2875,7 @@ top_p: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#top_p BedrockagentFlow#top_p}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#top_p BedrockagentFlow#top_p}.
 
 ---
 
@@ -2911,7 +2911,7 @@ chat: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfig
 
 chat block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#chat BedrockagentFlow#chat}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#chat BedrockagentFlow#chat}
 
 ---
 
@@ -2925,7 +2925,7 @@ text: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfig
 
 text block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#text BedrockagentFlow#text}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#text BedrockagentFlow#text}
 
 ---
 
@@ -2965,7 +2965,7 @@ input_variable: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinition
 
 input_variable block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#input_variable BedrockagentFlow#input_variable}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#input_variable BedrockagentFlow#input_variable}
 
 ---
 
@@ -2979,7 +2979,7 @@ message: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeCon
 
 message block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#message BedrockagentFlow#message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#message BedrockagentFlow#message}
 
 ---
 
@@ -2993,7 +2993,7 @@ system_attribute: typing.Union[IResolvable, typing.List[BedrockagentFlowDefiniti
 
 system block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#system BedrockagentFlow#system}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#system BedrockagentFlow#system}
 
 ---
 
@@ -3007,7 +3007,7 @@ tool_configuration: typing.Union[IResolvable, typing.List[BedrockagentFlowDefini
 
 tool_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#tool_configuration BedrockagentFlow#tool_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#tool_configuration BedrockagentFlow#tool_configuration}
 
 ---
 
@@ -3027,7 +3027,7 @@ bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigur
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatInputVariable.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#name BedrockagentFlow#name}. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatInputVariable.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#name BedrockagentFlow#name}. |
 
 ---
 
@@ -3039,7 +3039,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#name BedrockagentFlow#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#name BedrockagentFlow#name}.
 
 ---
 
@@ -3060,7 +3060,7 @@ bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigur
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessage.property.role">role</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#role BedrockagentFlow#role}. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessage.property.role">role</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#role BedrockagentFlow#role}. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessage.property.content">content</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContent">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContent</a>]]</code> | content block. |
 
 ---
@@ -3073,7 +3073,7 @@ role: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#role BedrockagentFlow#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#role BedrockagentFlow#role}.
 
 ---
 
@@ -3087,7 +3087,7 @@ content: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeCon
 
 content block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#content BedrockagentFlow#content}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#content BedrockagentFlow#content}
 
 ---
 
@@ -3109,7 +3109,7 @@ bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigur
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContent.property.cachePoint">cache_point</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentCachePoint">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentCachePoint</a>]]</code> | cache_point block. |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContent.property.text">text</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#text BedrockagentFlow#text}. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContent.property.text">text</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#text BedrockagentFlow#text}. |
 
 ---
 
@@ -3123,7 +3123,7 @@ cache_point: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNod
 
 cache_point block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#cache_point BedrockagentFlow#cache_point}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#cache_point BedrockagentFlow#cache_point}
 
 ---
 
@@ -3135,7 +3135,7 @@ text: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#text BedrockagentFlow#text}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#text BedrockagentFlow#text}.
 
 ---
 
@@ -3155,7 +3155,7 @@ bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigur
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentCachePoint.property.type">type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#type BedrockagentFlow#type}. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContentCachePoint.property.type">type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#type BedrockagentFlow#type}. |
 
 ---
 
@@ -3167,7 +3167,7 @@ type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#type BedrockagentFlow#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#type BedrockagentFlow#type}.
 
 ---
 
@@ -3189,7 +3189,7 @@ bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigur
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystem.property.cachePoint">cache_point</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemCachePoint">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemCachePoint</a>]]</code> | cache_point block. |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystem.property.text">text</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#text BedrockagentFlow#text}. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystem.property.text">text</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#text BedrockagentFlow#text}. |
 
 ---
 
@@ -3203,7 +3203,7 @@ cache_point: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNod
 
 cache_point block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#cache_point BedrockagentFlow#cache_point}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#cache_point BedrockagentFlow#cache_point}
 
 ---
 
@@ -3215,7 +3215,7 @@ text: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#text BedrockagentFlow#text}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#text BedrockagentFlow#text}.
 
 ---
 
@@ -3235,7 +3235,7 @@ bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigur
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemCachePoint.property.type">type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#type BedrockagentFlow#type}. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatSystemCachePoint.property.type">type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#type BedrockagentFlow#type}. |
 
 ---
 
@@ -3247,7 +3247,7 @@ type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#type BedrockagentFlow#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#type BedrockagentFlow#type}.
 
 ---
 
@@ -3283,7 +3283,7 @@ tool: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfig
 
 tool block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#tool BedrockagentFlow#tool}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#tool BedrockagentFlow#tool}
 
 ---
 
@@ -3297,7 +3297,7 @@ tool_choice: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNod
 
 tool_choice block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#tool_choice BedrockagentFlow#tool_choice}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#tool_choice BedrockagentFlow#tool_choice}
 
 ---
 
@@ -3333,7 +3333,7 @@ cache_point: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNod
 
 cache_point block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#cache_point BedrockagentFlow#cache_point}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#cache_point BedrockagentFlow#cache_point}
 
 ---
 
@@ -3347,7 +3347,7 @@ tool_spec: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeC
 
 tool_spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#tool_spec BedrockagentFlow#tool_spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#tool_spec BedrockagentFlow#tool_spec}
 
 ---
 
@@ -3367,7 +3367,7 @@ bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigur
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolCachePoint.property.type">type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#type BedrockagentFlow#type}. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolCachePoint.property.type">type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#type BedrockagentFlow#type}. |
 
 ---
 
@@ -3379,7 +3379,7 @@ type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#type BedrockagentFlow#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#type BedrockagentFlow#type}.
 
 ---
 
@@ -3417,7 +3417,7 @@ any: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigu
 
 any block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#any BedrockagentFlow#any}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#any BedrockagentFlow#any}
 
 ---
 
@@ -3431,7 +3431,7 @@ auto: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfig
 
 auto block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#auto BedrockagentFlow#auto}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#auto BedrockagentFlow#auto}
 
 ---
 
@@ -3445,7 +3445,7 @@ tool: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfig
 
 tool block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#tool BedrockagentFlow#tool}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#tool BedrockagentFlow#tool}
 
 ---
 
@@ -3487,7 +3487,7 @@ bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigur
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceTool.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#name BedrockagentFlow#name}. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolChoiceTool.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#name BedrockagentFlow#name}. |
 
 ---
 
@@ -3499,7 +3499,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#name BedrockagentFlow#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#name BedrockagentFlow#name}.
 
 ---
 
@@ -3521,8 +3521,8 @@ bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigur
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpec.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#name BedrockagentFlow#name}. |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpec.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#description BedrockagentFlow#description}. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpec.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#name BedrockagentFlow#name}. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpec.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#description BedrockagentFlow#description}. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpec.property.inputSchema">input_schema</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecInputSchema">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecInputSchema</a>]]</code> | input_schema block. |
 
 ---
@@ -3535,7 +3535,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#name BedrockagentFlow#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#name BedrockagentFlow#name}.
 
 ---
 
@@ -3547,7 +3547,7 @@ description: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#description BedrockagentFlow#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#description BedrockagentFlow#description}.
 
 ---
 
@@ -3561,7 +3561,7 @@ input_schema: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNo
 
 input_schema block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#input_schema BedrockagentFlow#input_schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#input_schema BedrockagentFlow#input_schema}
 
 ---
 
@@ -3581,7 +3581,7 @@ bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigur
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecInputSchema.property.json">json</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#json BedrockagentFlow#json}. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecInputSchema.property.json">json</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#json BedrockagentFlow#json}. |
 
 ---
 
@@ -3593,7 +3593,7 @@ json: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#json BedrockagentFlow#json}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#json BedrockagentFlow#json}.
 
 ---
 
@@ -3615,7 +3615,7 @@ bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigur
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationText.property.text">text</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#text BedrockagentFlow#text}. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationText.property.text">text</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#text BedrockagentFlow#text}. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationText.property.cachePoint">cache_point</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextCachePoint">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextCachePoint</a>]]</code> | cache_point block. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationText.property.inputVariable">input_variable</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextInputVariable">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextInputVariable</a>]]</code> | input_variable block. |
 
@@ -3629,7 +3629,7 @@ text: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#text BedrockagentFlow#text}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#text BedrockagentFlow#text}.
 
 ---
 
@@ -3643,7 +3643,7 @@ cache_point: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNod
 
 cache_point block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#cache_point BedrockagentFlow#cache_point}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#cache_point BedrockagentFlow#cache_point}
 
 ---
 
@@ -3657,7 +3657,7 @@ input_variable: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinition
 
 input_variable block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#input_variable BedrockagentFlow#input_variable}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#input_variable BedrockagentFlow#input_variable}
 
 ---
 
@@ -3677,7 +3677,7 @@ bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigur
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextCachePoint.property.type">type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#type BedrockagentFlow#type}. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextCachePoint.property.type">type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#type BedrockagentFlow#type}. |
 
 ---
 
@@ -3689,7 +3689,7 @@ type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#type BedrockagentFlow#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#type BedrockagentFlow#type}.
 
 ---
 
@@ -3709,7 +3709,7 @@ bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigur
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextInputVariable.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#name BedrockagentFlow#name}. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextInputVariable.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#name BedrockagentFlow#name}. |
 
 ---
 
@@ -3721,7 +3721,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#name BedrockagentFlow#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#name BedrockagentFlow#name}.
 
 ---
 
@@ -3733,7 +3733,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 from cdktf_cdktf_provider_aws import bedrockagent_flow
 
 bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationResource(
-  resource_arn: str
+  prompt_arn: str
 )
 ```
 
@@ -3741,19 +3741,19 @@ bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigur
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationResource.property.resourceArn">resource_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#resource_arn BedrockagentFlow#resource_arn}. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationResource.property.promptArn">prompt_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#prompt_arn BedrockagentFlow#prompt_arn}. |
 
 ---
 
-##### `resource_arn`<sup>Required</sup> <a name="resource_arn" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationResource.property.resourceArn"></a>
+##### `prompt_arn`<sup>Required</sup> <a name="prompt_arn" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationResource.property.promptArn"></a>
 
 ```python
-resource_arn: str
+prompt_arn: str
 ```
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#resource_arn BedrockagentFlow#resource_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#prompt_arn BedrockagentFlow#prompt_arn}.
 
 ---
 
@@ -3787,7 +3787,7 @@ service_configuration: typing.Union[IResolvable, typing.List[BedrockagentFlowDef
 
 service_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#service_configuration BedrockagentFlow#service_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#service_configuration BedrockagentFlow#service_configuration}
 
 ---
 
@@ -3821,7 +3821,7 @@ s3: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigur
 
 s3 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#s3 BedrockagentFlow#s3}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#s3 BedrockagentFlow#s3}
 
 ---
 
@@ -3841,7 +3841,7 @@ bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConf
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationS3.property.bucketName">bucket_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#bucket_name BedrockagentFlow#bucket_name}. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationS3.property.bucketName">bucket_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#bucket_name BedrockagentFlow#bucket_name}. |
 
 ---
 
@@ -3853,7 +3853,7 @@ bucket_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#bucket_name BedrockagentFlow#bucket_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#bucket_name BedrockagentFlow#bucket_name}.
 
 ---
 
@@ -3887,7 +3887,7 @@ service_configuration: typing.Union[IResolvable, typing.List[BedrockagentFlowDef
 
 service_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#service_configuration BedrockagentFlow#service_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#service_configuration BedrockagentFlow#service_configuration}
 
 ---
 
@@ -3921,7 +3921,7 @@ s3: typing.Union[IResolvable, typing.List[BedrockagentFlowDefinitionNodeConfigur
 
 s3 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#s3 BedrockagentFlow#s3}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#s3 BedrockagentFlow#s3}
 
 ---
 
@@ -3941,7 +3941,7 @@ bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfig
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfigurationS3.property.bucketName">bucket_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#bucket_name BedrockagentFlow#bucket_name}. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfigurationS3.property.bucketName">bucket_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#bucket_name BedrockagentFlow#bucket_name}. |
 
 ---
 
@@ -3953,7 +3953,7 @@ bucket_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#bucket_name BedrockagentFlow#bucket_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#bucket_name BedrockagentFlow#bucket_name}.
 
 ---
 
@@ -3976,10 +3976,10 @@ bedrockagentFlow.BedrockagentFlowDefinitionNodeInput(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeInput.property.expression">expression</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#expression BedrockagentFlow#expression}. |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeInput.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#name BedrockagentFlow#name}. |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeInput.property.type">type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#type BedrockagentFlow#type}. |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeInput.property.category">category</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#category BedrockagentFlow#category}. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeInput.property.expression">expression</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#expression BedrockagentFlow#expression}. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeInput.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#name BedrockagentFlow#name}. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeInput.property.type">type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#type BedrockagentFlow#type}. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeInput.property.category">category</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#category BedrockagentFlow#category}. |
 
 ---
 
@@ -3991,7 +3991,7 @@ expression: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#expression BedrockagentFlow#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#expression BedrockagentFlow#expression}.
 
 ---
 
@@ -4003,7 +4003,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#name BedrockagentFlow#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#name BedrockagentFlow#name}.
 
 ---
 
@@ -4015,7 +4015,7 @@ type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#type BedrockagentFlow#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#type BedrockagentFlow#type}.
 
 ---
 
@@ -4027,7 +4027,7 @@ category: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#category BedrockagentFlow#category}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#category BedrockagentFlow#category}.
 
 ---
 
@@ -4048,8 +4048,8 @@ bedrockagentFlow.BedrockagentFlowDefinitionNodeOutput(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeOutput.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#name BedrockagentFlow#name}. |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeOutput.property.type">type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#type BedrockagentFlow#type}. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeOutput.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#name BedrockagentFlow#name}. |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeOutput.property.type">type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#type BedrockagentFlow#type}. |
 
 ---
 
@@ -4061,7 +4061,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#name BedrockagentFlow#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#name BedrockagentFlow#name}.
 
 ---
 
@@ -4073,7 +4073,7 @@ type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#type BedrockagentFlow#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#type BedrockagentFlow#type}.
 
 ---
 
@@ -4111,7 +4111,7 @@ create: str
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#create BedrockagentFlow#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#create BedrockagentFlow#create}
 
 ---
 
@@ -4125,7 +4125,7 @@ delete: str
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#delete BedrockagentFlow#delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#delete BedrockagentFlow#delete}
 
 ---
 
@@ -4139,7 +4139,7 @@ update: str
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_flow#update BedrockagentFlow#update}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_flow#update BedrockagentFlow#update}
 
 ---
 
@@ -28783,8 +28783,8 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationResourceOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationResourceOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationResourceOutputReference.property.resourceArnInput">resource_arn_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationResourceOutputReference.property.resourceArn">resource_arn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationResourceOutputReference.property.promptArnInput">prompt_arn_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationResourceOutputReference.property.promptArn">prompt_arn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationResourceOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationResource">BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationResource</a>]</code> | *No description.* |
 
 ---
@@ -28813,20 +28813,20 @@ fqn: str
 
 ---
 
-##### `resource_arn_input`<sup>Optional</sup> <a name="resource_arn_input" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationResourceOutputReference.property.resourceArnInput"></a>
+##### `prompt_arn_input`<sup>Optional</sup> <a name="prompt_arn_input" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationResourceOutputReference.property.promptArnInput"></a>
 
 ```python
-resource_arn_input: str
+prompt_arn_input: str
 ```
 
 - *Type:* str
 
 ---
 
-##### `resource_arn`<sup>Required</sup> <a name="resource_arn" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationResourceOutputReference.property.resourceArn"></a>
+##### `prompt_arn`<sup>Required</sup> <a name="prompt_arn" id="@cdktf/provider-aws.bedrockagentFlow.BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationResourceOutputReference.property.promptArn"></a>
 
 ```python
-resource_arn: str
+prompt_arn: str
 ```
 
 - *Type:* str

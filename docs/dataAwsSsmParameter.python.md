@@ -4,7 +4,7 @@
 
 ### DataAwsSsmParameter <a name="DataAwsSsmParameter" id="@cdktf/provider-aws.dataAwsSsmParameter.DataAwsSsmParameter"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/data-sources/ssm_parameter aws_ssm_parameter}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/data-sources/ssm_parameter aws_ssm_parameter}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsSsmParameter.DataAwsSsmParameter.Initializer"></a>
 
@@ -39,10 +39,10 @@ dataAwsSsmParameter.DataAwsSsmParameter(
 | <code><a href="#@cdktf/provider-aws.dataAwsSsmParameter.DataAwsSsmParameter.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsSsmParameter.DataAwsSsmParameter.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsSsmParameter.DataAwsSsmParameter.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsSsmParameter.DataAwsSsmParameter.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/data-sources/ssm_parameter#name DataAwsSsmParameter#name}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsSsmParameter.DataAwsSsmParameter.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/data-sources/ssm_parameter#id DataAwsSsmParameter#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsSsmParameter.DataAwsSsmParameter.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/data-sources/ssm_parameter#name DataAwsSsmParameter#name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsSsmParameter.DataAwsSsmParameter.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/data-sources/ssm_parameter#id DataAwsSsmParameter#id}. |
 | <code><a href="#@cdktf/provider-aws.dataAwsSsmParameter.DataAwsSsmParameter.Initializer.parameter.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktf/provider-aws.dataAwsSsmParameter.DataAwsSsmParameter.Initializer.parameter.withDecryption">with_decryption</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/data-sources/ssm_parameter#with_decryption DataAwsSsmParameter#with_decryption}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsSsmParameter.DataAwsSsmParameter.Initializer.parameter.withDecryption">with_decryption</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/data-sources/ssm_parameter#with_decryption DataAwsSsmParameter#with_decryption}. |
 
 ---
 
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/data-sources/ssm_parameter#name DataAwsSsmParameter#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/data-sources/ssm_parameter#name DataAwsSsmParameter#name}.
 
 ---
 
@@ -118,7 +118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/data-sources/ssm_parameter#id DataAwsSsmParameter#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/data-sources/ssm_parameter#id DataAwsSsmParameter#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -131,7 +131,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/data-sources/ssm_parameter#region DataAwsSsmParameter#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/data-sources/ssm_parameter#region DataAwsSsmParameter#region}
 
 ---
 
@@ -139,7 +139,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/data-sources/ssm_parameter#with_decryption DataAwsSsmParameter#with_decryption}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/data-sources/ssm_parameter#with_decryption DataAwsSsmParameter#with_decryption}.
 
 ---
 
@@ -519,7 +519,7 @@ The construct id used in the generated config for the DataAwsSsmParameter to imp
 
 The id of the existing DataAwsSsmParameter that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/data-sources/ssm_parameter#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/data-sources/ssm_parameter#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -868,10 +868,10 @@ dataAwsSsmParameter.DataAwsSsmParameterConfig(
 | <code><a href="#@cdktf/provider-aws.dataAwsSsmParameter.DataAwsSsmParameterConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsSsmParameter.DataAwsSsmParameterConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsSsmParameter.DataAwsSsmParameterConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsSsmParameter.DataAwsSsmParameterConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/data-sources/ssm_parameter#name DataAwsSsmParameter#name}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsSsmParameter.DataAwsSsmParameterConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/data-sources/ssm_parameter#id DataAwsSsmParameter#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsSsmParameter.DataAwsSsmParameterConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/data-sources/ssm_parameter#name DataAwsSsmParameter#name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsSsmParameter.DataAwsSsmParameterConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/data-sources/ssm_parameter#id DataAwsSsmParameter#id}. |
 | <code><a href="#@cdktf/provider-aws.dataAwsSsmParameter.DataAwsSsmParameterConfig.property.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktf/provider-aws.dataAwsSsmParameter.DataAwsSsmParameterConfig.property.withDecryption">with_decryption</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/data-sources/ssm_parameter#with_decryption DataAwsSsmParameter#with_decryption}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsSsmParameter.DataAwsSsmParameterConfig.property.withDecryption">with_decryption</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/data-sources/ssm_parameter#with_decryption DataAwsSsmParameter#with_decryption}. |
 
 ---
 
@@ -953,7 +953,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/data-sources/ssm_parameter#name DataAwsSsmParameter#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/data-sources/ssm_parameter#name DataAwsSsmParameter#name}.
 
 ---
 
@@ -965,7 +965,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/data-sources/ssm_parameter#id DataAwsSsmParameter#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/data-sources/ssm_parameter#id DataAwsSsmParameter#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -982,7 +982,7 @@ region: str
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/data-sources/ssm_parameter#region DataAwsSsmParameter#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/data-sources/ssm_parameter#region DataAwsSsmParameter#region}
 
 ---
 
@@ -994,7 +994,7 @@ with_decryption: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/data-sources/ssm_parameter#with_decryption DataAwsSsmParameter#with_decryption}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/data-sources/ssm_parameter#with_decryption DataAwsSsmParameter#with_decryption}.
 
 ---
 

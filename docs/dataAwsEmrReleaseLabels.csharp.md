@@ -4,7 +4,7 @@
 
 ### DataAwsEmrReleaseLabels <a name="DataAwsEmrReleaseLabels" id="@cdktf/provider-aws.dataAwsEmrReleaseLabels.DataAwsEmrReleaseLabels"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/data-sources/emr_release_labels aws_emr_release_labels}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/data-sources/emr_release_labels aws_emr_release_labels}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEmrReleaseLabels.DataAwsEmrReleaseLabels.Initializer"></a>
 
@@ -399,7 +399,7 @@ The construct id used in the generated config for the DataAwsEmrReleaseLabels to
 
 The id of the existing DataAwsEmrReleaseLabels that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/data-sources/emr_release_labels#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/data-sources/emr_release_labels#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -682,7 +682,7 @@ new DataAwsEmrReleaseLabelsConfig {
 | <code><a href="#@cdktf/provider-aws.dataAwsEmrReleaseLabels.DataAwsEmrReleaseLabelsConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsEmrReleaseLabels.DataAwsEmrReleaseLabelsConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsEmrReleaseLabels.DataAwsEmrReleaseLabelsConfig.property.filters">Filters</a></code> | <code><a href="#@cdktf/provider-aws.dataAwsEmrReleaseLabels.DataAwsEmrReleaseLabelsFilters">DataAwsEmrReleaseLabelsFilters</a></code> | filters block. |
-| <code><a href="#@cdktf/provider-aws.dataAwsEmrReleaseLabels.DataAwsEmrReleaseLabelsConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/data-sources/emr_release_labels#id DataAwsEmrReleaseLabels#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsEmrReleaseLabels.DataAwsEmrReleaseLabelsConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/data-sources/emr_release_labels#id DataAwsEmrReleaseLabels#id}. |
 | <code><a href="#@cdktf/provider-aws.dataAwsEmrReleaseLabels.DataAwsEmrReleaseLabelsConfig.property.region">Region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -767,7 +767,7 @@ public DataAwsEmrReleaseLabelsFilters Filters { get; set; }
 
 filters block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/data-sources/emr_release_labels#filters DataAwsEmrReleaseLabels#filters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/data-sources/emr_release_labels#filters DataAwsEmrReleaseLabels#filters}
 
 ---
 
@@ -779,7 +779,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/data-sources/emr_release_labels#id DataAwsEmrReleaseLabels#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/data-sources/emr_release_labels#id DataAwsEmrReleaseLabels#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -796,7 +796,7 @@ public string Region { get; set; }
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/data-sources/emr_release_labels#region DataAwsEmrReleaseLabels#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/data-sources/emr_release_labels#region DataAwsEmrReleaseLabels#region}
 
 ---
 
@@ -817,8 +817,8 @@ new DataAwsEmrReleaseLabelsFilters {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dataAwsEmrReleaseLabels.DataAwsEmrReleaseLabelsFilters.property.application">Application</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/data-sources/emr_release_labels#application DataAwsEmrReleaseLabels#application}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsEmrReleaseLabels.DataAwsEmrReleaseLabelsFilters.property.prefix">Prefix</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/data-sources/emr_release_labels#prefix DataAwsEmrReleaseLabels#prefix}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsEmrReleaseLabels.DataAwsEmrReleaseLabelsFilters.property.application">Application</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/data-sources/emr_release_labels#application DataAwsEmrReleaseLabels#application}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsEmrReleaseLabels.DataAwsEmrReleaseLabelsFilters.property.prefix">Prefix</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/data-sources/emr_release_labels#prefix DataAwsEmrReleaseLabels#prefix}. |
 
 ---
 
@@ -830,7 +830,7 @@ public string Application { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/data-sources/emr_release_labels#application DataAwsEmrReleaseLabels#application}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/data-sources/emr_release_labels#application DataAwsEmrReleaseLabels#application}.
 
 ---
 
@@ -842,7 +842,7 @@ public string Prefix { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/data-sources/emr_release_labels#prefix DataAwsEmrReleaseLabels#prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/data-sources/emr_release_labels#prefix DataAwsEmrReleaseLabels#prefix}.
 
 ---
 
