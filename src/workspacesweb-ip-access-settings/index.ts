@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/workspacesweb_ip_access_settings
+// https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/workspacesweb_ip_access_settings
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,45 +13,45 @@ import * as cdktf from 'cdktf';
 
 export interface WorkspaceswebIpAccessSettingsConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/workspacesweb_ip_access_settings#additional_encryption_context WorkspaceswebIpAccessSettings#additional_encryption_context}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/workspacesweb_ip_access_settings#additional_encryption_context WorkspaceswebIpAccessSettings#additional_encryption_context}
   */
   readonly additionalEncryptionContext?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/workspacesweb_ip_access_settings#customer_managed_key WorkspaceswebIpAccessSettings#customer_managed_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/workspacesweb_ip_access_settings#customer_managed_key WorkspaceswebIpAccessSettings#customer_managed_key}
   */
   readonly customerManagedKey?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/workspacesweb_ip_access_settings#description WorkspaceswebIpAccessSettings#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/workspacesweb_ip_access_settings#description WorkspaceswebIpAccessSettings#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/workspacesweb_ip_access_settings#display_name WorkspaceswebIpAccessSettings#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/workspacesweb_ip_access_settings#display_name WorkspaceswebIpAccessSettings#display_name}
   */
   readonly displayName: string;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/workspacesweb_ip_access_settings#region WorkspaceswebIpAccessSettings#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/workspacesweb_ip_access_settings#region WorkspaceswebIpAccessSettings#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/workspacesweb_ip_access_settings#tags WorkspaceswebIpAccessSettings#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/workspacesweb_ip_access_settings#tags WorkspaceswebIpAccessSettings#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
   * ip_rule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/workspacesweb_ip_access_settings#ip_rule WorkspaceswebIpAccessSettings#ip_rule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/workspacesweb_ip_access_settings#ip_rule WorkspaceswebIpAccessSettings#ip_rule}
   */
   readonly ipRule?: WorkspaceswebIpAccessSettingsIpRule[] | cdktf.IResolvable;
 }
 export interface WorkspaceswebIpAccessSettingsIpRule {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/workspacesweb_ip_access_settings#description WorkspaceswebIpAccessSettings#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/workspacesweb_ip_access_settings#description WorkspaceswebIpAccessSettings#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/workspacesweb_ip_access_settings#ip_range WorkspaceswebIpAccessSettings#ip_range}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/workspacesweb_ip_access_settings#ip_range WorkspaceswebIpAccessSettings#ip_range}
   */
   readonly ipRange: string;
 }
@@ -193,7 +193,7 @@ export class WorkspaceswebIpAccessSettingsIpRuleList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/workspacesweb_ip_access_settings aws_workspacesweb_ip_access_settings}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/workspacesweb_ip_access_settings aws_workspacesweb_ip_access_settings}
 */
 export class WorkspaceswebIpAccessSettings extends cdktf.TerraformResource {
 
@@ -209,7 +209,7 @@ export class WorkspaceswebIpAccessSettings extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a WorkspaceswebIpAccessSettings resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the WorkspaceswebIpAccessSettings to import
-  * @param importFromId The id of the existing WorkspaceswebIpAccessSettings that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/workspacesweb_ip_access_settings#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing WorkspaceswebIpAccessSettings that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/workspacesweb_ip_access_settings#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the WorkspaceswebIpAccessSettings to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -221,7 +221,7 @@ export class WorkspaceswebIpAccessSettings extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/workspacesweb_ip_access_settings aws_workspacesweb_ip_access_settings} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/workspacesweb_ip_access_settings aws_workspacesweb_ip_access_settings} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -232,7 +232,7 @@ export class WorkspaceswebIpAccessSettings extends cdktf.TerraformResource {
       terraformResourceType: 'aws_workspacesweb_ip_access_settings',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.6.0',
+        providerVersion: '6.7.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

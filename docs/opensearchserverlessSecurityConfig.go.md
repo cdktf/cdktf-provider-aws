@@ -4,7 +4,7 @@
 
 ### OpensearchserverlessSecurityConfig <a name="OpensearchserverlessSecurityConfig" id="@cdktf/provider-aws.opensearchserverlessSecurityConfig.OpensearchserverlessSecurityConfig"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/opensearchserverless_security_config aws_opensearchserverless_security_config}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/opensearchserverless_security_config aws_opensearchserverless_security_config}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opensearchserverlessSecurityConfig.OpensearchserverlessSecurityConfig.Initializer"></a>
 
@@ -501,7 +501,7 @@ The construct id used in the generated config for the OpensearchserverlessSecuri
 
 The id of the existing OpensearchserverlessSecurityConfig that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/opensearchserverless_security_config#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/opensearchserverless_security_config#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -950,7 +950,7 @@ Name *string
 
 Name of the policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/opensearchserverless_security_config#name OpensearchserverlessSecurityConfig#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/opensearchserverless_security_config#name OpensearchserverlessSecurityConfig#name}
 
 ---
 
@@ -964,7 +964,7 @@ Type *string
 
 Type of configuration. Must be `saml`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/opensearchserverless_security_config#type OpensearchserverlessSecurityConfig#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/opensearchserverless_security_config#type OpensearchserverlessSecurityConfig#type}
 
 ---
 
@@ -978,7 +978,7 @@ Description *string
 
 Description of the security configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/opensearchserverless_security_config#description OpensearchserverlessSecurityConfig#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/opensearchserverless_security_config#description OpensearchserverlessSecurityConfig#description}
 
 ---
 
@@ -992,7 +992,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/opensearchserverless_security_config#region OpensearchserverlessSecurityConfig#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/opensearchserverless_security_config#region OpensearchserverlessSecurityConfig#region}
 
 ---
 
@@ -1006,7 +1006,7 @@ SamlOptions interface{}
 
 saml_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/opensearchserverless_security_config#saml_options OpensearchserverlessSecurityConfig#saml_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/opensearchserverless_security_config#saml_options OpensearchserverlessSecurityConfig#saml_options}
 
 ---
 
@@ -1046,7 +1046,7 @@ Metadata *string
 
 The XML IdP metadata file generated from your identity provider.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/opensearchserverless_security_config#metadata OpensearchserverlessSecurityConfig#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/opensearchserverless_security_config#metadata OpensearchserverlessSecurityConfig#metadata}
 
 ---
 
@@ -1060,7 +1060,7 @@ GroupAttribute *string
 
 Group attribute for this SAML integration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/opensearchserverless_security_config#group_attribute OpensearchserverlessSecurityConfig#group_attribute}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/opensearchserverless_security_config#group_attribute OpensearchserverlessSecurityConfig#group_attribute}
 
 ---
 
@@ -1074,7 +1074,7 @@ SessionTimeout *f64
 
 Session timeout, in minutes. Minimum is 5 minutes and maximum is 720 minutes (12 hours). Default is 60 minutes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/opensearchserverless_security_config#session_timeout OpensearchserverlessSecurityConfig#session_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/opensearchserverless_security_config#session_timeout OpensearchserverlessSecurityConfig#session_timeout}
 
 ---
 
@@ -1088,7 +1088,7 @@ UserAttribute *string
 
 User attribute for this SAML integration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/opensearchserverless_security_config#user_attribute OpensearchserverlessSecurityConfig#user_attribute}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/opensearchserverless_security_config#user_attribute OpensearchserverlessSecurityConfig#user_attribute}
 
 ---
 

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/verifiedpermissions_policy_store
+// https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/verifiedpermissions_policy_store
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,29 +13,33 @@ import * as cdktf from 'cdktf';
 
 export interface VerifiedpermissionsPolicyStoreConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/verifiedpermissions_policy_store#description VerifiedpermissionsPolicyStore#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/verifiedpermissions_policy_store#deletion_protection VerifiedpermissionsPolicyStore#deletion_protection}
+  */
+  readonly deletionProtection?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/verifiedpermissions_policy_store#description VerifiedpermissionsPolicyStore#description}
   */
   readonly description?: string;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/verifiedpermissions_policy_store#region VerifiedpermissionsPolicyStore#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/verifiedpermissions_policy_store#region VerifiedpermissionsPolicyStore#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/verifiedpermissions_policy_store#tags VerifiedpermissionsPolicyStore#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/verifiedpermissions_policy_store#tags VerifiedpermissionsPolicyStore#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
   * validation_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/verifiedpermissions_policy_store#validation_settings VerifiedpermissionsPolicyStore#validation_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/verifiedpermissions_policy_store#validation_settings VerifiedpermissionsPolicyStore#validation_settings}
   */
   readonly validationSettings?: VerifiedpermissionsPolicyStoreValidationSettings[] | cdktf.IResolvable;
 }
 export interface VerifiedpermissionsPolicyStoreValidationSettings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/verifiedpermissions_policy_store#mode VerifiedpermissionsPolicyStore#mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/verifiedpermissions_policy_store#mode VerifiedpermissionsPolicyStore#mode}
   */
   readonly mode: string;
 }
@@ -148,7 +152,7 @@ export class VerifiedpermissionsPolicyStoreValidationSettingsList extends cdktf.
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/verifiedpermissions_policy_store aws_verifiedpermissions_policy_store}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/verifiedpermissions_policy_store aws_verifiedpermissions_policy_store}
 */
 export class VerifiedpermissionsPolicyStore extends cdktf.TerraformResource {
 
@@ -164,7 +168,7 @@ export class VerifiedpermissionsPolicyStore extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a VerifiedpermissionsPolicyStore resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the VerifiedpermissionsPolicyStore to import
-  * @param importFromId The id of the existing VerifiedpermissionsPolicyStore that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/verifiedpermissions_policy_store#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing VerifiedpermissionsPolicyStore that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/verifiedpermissions_policy_store#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the VerifiedpermissionsPolicyStore to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -176,7 +180,7 @@ export class VerifiedpermissionsPolicyStore extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/verifiedpermissions_policy_store aws_verifiedpermissions_policy_store} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/verifiedpermissions_policy_store aws_verifiedpermissions_policy_store} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -187,7 +191,7 @@ export class VerifiedpermissionsPolicyStore extends cdktf.TerraformResource {
       terraformResourceType: 'aws_verifiedpermissions_policy_store',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.6.0',
+        providerVersion: '6.7.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
@@ -198,6 +202,7 @@ export class VerifiedpermissionsPolicyStore extends cdktf.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
+    this._deletionProtection = config.deletionProtection;
     this._description = config.description;
     this._region = config.region;
     this._tags = config.tags;
@@ -211,6 +216,22 @@ export class VerifiedpermissionsPolicyStore extends cdktf.TerraformResource {
   // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
+  }
+
+  // deletion_protection - computed: true, optional: true, required: false
+  private _deletionProtection?: string; 
+  public get deletionProtection() {
+    return this.getStringAttribute('deletion_protection');
+  }
+  public set deletionProtection(value: string) {
+    this._deletionProtection = value;
+  }
+  public resetDeletionProtection() {
+    this._deletionProtection = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deletionProtectionInput() {
+    return this._deletionProtection;
   }
 
   // description - computed: false, optional: true, required: false
@@ -299,6 +320,7 @@ export class VerifiedpermissionsPolicyStore extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      deletion_protection: cdktf.stringToTerraform(this._deletionProtection),
       description: cdktf.stringToTerraform(this._description),
       region: cdktf.stringToTerraform(this._region),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
@@ -308,6 +330,12 @@ export class VerifiedpermissionsPolicyStore extends cdktf.TerraformResource {
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
+      deletion_protection: {
+        value: cdktf.stringToHclTerraform(this._deletionProtection),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
       description: {
         value: cdktf.stringToHclTerraform(this._description),
         isBlock: false,

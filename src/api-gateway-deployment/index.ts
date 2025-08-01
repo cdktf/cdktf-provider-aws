@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/api_gateway_deployment
+// https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/api_gateway_deployment
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,11 +13,11 @@ import * as cdktf from 'cdktf';
 
 export interface ApiGatewayDeploymentConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/api_gateway_deployment#description ApiGatewayDeployment#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/api_gateway_deployment#description ApiGatewayDeployment#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/api_gateway_deployment#id ApiGatewayDeployment#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/api_gateway_deployment#id ApiGatewayDeployment#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -26,25 +26,25 @@ export interface ApiGatewayDeploymentConfig extends cdktf.TerraformMetaArguments
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/api_gateway_deployment#region ApiGatewayDeployment#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/api_gateway_deployment#region ApiGatewayDeployment#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/api_gateway_deployment#rest_api_id ApiGatewayDeployment#rest_api_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/api_gateway_deployment#rest_api_id ApiGatewayDeployment#rest_api_id}
   */
   readonly restApiId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/api_gateway_deployment#triggers ApiGatewayDeployment#triggers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/api_gateway_deployment#triggers ApiGatewayDeployment#triggers}
   */
   readonly triggers?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/api_gateway_deployment#variables ApiGatewayDeployment#variables}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/api_gateway_deployment#variables ApiGatewayDeployment#variables}
   */
   readonly variables?: { [key: string]: string };
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/api_gateway_deployment aws_api_gateway_deployment}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/api_gateway_deployment aws_api_gateway_deployment}
 */
 export class ApiGatewayDeployment extends cdktf.TerraformResource {
 
@@ -60,7 +60,7 @@ export class ApiGatewayDeployment extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ApiGatewayDeployment resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ApiGatewayDeployment to import
-  * @param importFromId The id of the existing ApiGatewayDeployment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/api_gateway_deployment#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ApiGatewayDeployment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/api_gateway_deployment#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ApiGatewayDeployment to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -72,7 +72,7 @@ export class ApiGatewayDeployment extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/api_gateway_deployment aws_api_gateway_deployment} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/api_gateway_deployment aws_api_gateway_deployment} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -83,7 +83,7 @@ export class ApiGatewayDeployment extends cdktf.TerraformResource {
       terraformResourceType: 'aws_api_gateway_deployment',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.6.0',
+        providerVersion: '6.7.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

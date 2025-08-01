@@ -4,7 +4,7 @@
 
 ### S3AccessPoint <a name="S3AccessPoint" id="@cdktf/provider-aws.s3AccessPoint.S3AccessPoint"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/s3_access_point aws_s3_access_point}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/s3_access_point aws_s3_access_point}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.s3AccessPoint.S3AccessPoint.Initializer"></a>
 
@@ -31,6 +31,8 @@ S3AccessPoint.Builder.create(Construct scope, java.lang.String id)
 //  .policy(java.lang.String)
 //  .publicAccessBlockConfiguration(S3AccessPointPublicAccessBlockConfiguration)
 //  .region(java.lang.String)
+//  .tags(java.util.Map<java.lang.String, java.lang.String>)
+//  .tagsAll(java.util.Map<java.lang.String, java.lang.String>)
 //  .vpcConfiguration(S3AccessPointVpcConfiguration)
     .build();
 ```
@@ -46,14 +48,16 @@ S3AccessPoint.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-aws.s3AccessPoint.S3AccessPoint.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.s3AccessPoint.S3AccessPoint.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.s3AccessPoint.S3AccessPoint.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3AccessPoint.S3AccessPoint.Initializer.parameter.bucket">bucket</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/s3_access_point#bucket S3AccessPoint#bucket}. |
-| <code><a href="#@cdktf/provider-aws.s3AccessPoint.S3AccessPoint.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/s3_access_point#name S3AccessPoint#name}. |
-| <code><a href="#@cdktf/provider-aws.s3AccessPoint.S3AccessPoint.Initializer.parameter.accountId">accountId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/s3_access_point#account_id S3AccessPoint#account_id}. |
-| <code><a href="#@cdktf/provider-aws.s3AccessPoint.S3AccessPoint.Initializer.parameter.bucketAccountId">bucketAccountId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/s3_access_point#bucket_account_id S3AccessPoint#bucket_account_id}. |
-| <code><a href="#@cdktf/provider-aws.s3AccessPoint.S3AccessPoint.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/s3_access_point#id S3AccessPoint#id}. |
-| <code><a href="#@cdktf/provider-aws.s3AccessPoint.S3AccessPoint.Initializer.parameter.policy">policy</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/s3_access_point#policy S3AccessPoint#policy}. |
+| <code><a href="#@cdktf/provider-aws.s3AccessPoint.S3AccessPoint.Initializer.parameter.bucket">bucket</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/s3_access_point#bucket S3AccessPoint#bucket}. |
+| <code><a href="#@cdktf/provider-aws.s3AccessPoint.S3AccessPoint.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/s3_access_point#name S3AccessPoint#name}. |
+| <code><a href="#@cdktf/provider-aws.s3AccessPoint.S3AccessPoint.Initializer.parameter.accountId">accountId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/s3_access_point#account_id S3AccessPoint#account_id}. |
+| <code><a href="#@cdktf/provider-aws.s3AccessPoint.S3AccessPoint.Initializer.parameter.bucketAccountId">bucketAccountId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/s3_access_point#bucket_account_id S3AccessPoint#bucket_account_id}. |
+| <code><a href="#@cdktf/provider-aws.s3AccessPoint.S3AccessPoint.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/s3_access_point#id S3AccessPoint#id}. |
+| <code><a href="#@cdktf/provider-aws.s3AccessPoint.S3AccessPoint.Initializer.parameter.policy">policy</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/s3_access_point#policy S3AccessPoint#policy}. |
 | <code><a href="#@cdktf/provider-aws.s3AccessPoint.S3AccessPoint.Initializer.parameter.publicAccessBlockConfiguration">publicAccessBlockConfiguration</a></code> | <code><a href="#@cdktf/provider-aws.s3AccessPoint.S3AccessPointPublicAccessBlockConfiguration">S3AccessPointPublicAccessBlockConfiguration</a></code> | public_access_block_configuration block. |
 | <code><a href="#@cdktf/provider-aws.s3AccessPoint.S3AccessPoint.Initializer.parameter.region">region</a></code> | <code>java.lang.String</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
+| <code><a href="#@cdktf/provider-aws.s3AccessPoint.S3AccessPoint.Initializer.parameter.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/s3_access_point#tags S3AccessPoint#tags}. |
+| <code><a href="#@cdktf/provider-aws.s3AccessPoint.S3AccessPoint.Initializer.parameter.tagsAll">tagsAll</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/s3_access_point#tags_all S3AccessPoint#tags_all}. |
 | <code><a href="#@cdktf/provider-aws.s3AccessPoint.S3AccessPoint.Initializer.parameter.vpcConfiguration">vpcConfiguration</a></code> | <code><a href="#@cdktf/provider-aws.s3AccessPoint.S3AccessPointVpcConfiguration">S3AccessPointVpcConfiguration</a></code> | vpc_configuration block. |
 
 ---
@@ -122,7 +126,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/s3_access_point#bucket S3AccessPoint#bucket}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/s3_access_point#bucket S3AccessPoint#bucket}.
 
 ---
 
@@ -130,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/s3_access_point#name S3AccessPoint#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/s3_access_point#name S3AccessPoint#name}.
 
 ---
 
@@ -138,7 +142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/s3_access_point#account_id S3AccessPoint#account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/s3_access_point#account_id S3AccessPoint#account_id}.
 
 ---
 
@@ -146,7 +150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/s3_access_point#bucket_account_id S3AccessPoint#bucket_account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/s3_access_point#bucket_account_id S3AccessPoint#bucket_account_id}.
 
 ---
 
@@ -154,7 +158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/s3_access_point#id S3AccessPoint#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/s3_access_point#id S3AccessPoint#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -165,7 +169,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/s3_access_point#policy S3AccessPoint#policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/s3_access_point#policy S3AccessPoint#policy}.
 
 ---
 
@@ -175,7 +179,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 public_access_block_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/s3_access_point#public_access_block_configuration S3AccessPoint#public_access_block_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/s3_access_point#public_access_block_configuration S3AccessPoint#public_access_block_configuration}
 
 ---
 
@@ -185,7 +189,23 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/s3_access_point#region S3AccessPoint#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/s3_access_point#region S3AccessPoint#region}
+
+---
+
+##### `tags`<sup>Optional</sup> <a name="tags" id="@cdktf/provider-aws.s3AccessPoint.S3AccessPoint.Initializer.parameter.tags"></a>
+
+- *Type:* java.util.Map<java.lang.String, java.lang.String>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/s3_access_point#tags S3AccessPoint#tags}.
+
+---
+
+##### `tagsAll`<sup>Optional</sup> <a name="tagsAll" id="@cdktf/provider-aws.s3AccessPoint.S3AccessPoint.Initializer.parameter.tagsAll"></a>
+
+- *Type:* java.util.Map<java.lang.String, java.lang.String>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/s3_access_point#tags_all S3AccessPoint#tags_all}.
 
 ---
 
@@ -195,7 +215,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 vpc_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/s3_access_point#vpc_configuration S3AccessPoint#vpc_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/s3_access_point#vpc_configuration S3AccessPoint#vpc_configuration}
 
 ---
 
@@ -234,6 +254,8 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktf/provider-aws.s3AccessPoint.S3AccessPoint.resetPolicy">resetPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.s3AccessPoint.S3AccessPoint.resetPublicAccessBlockConfiguration">resetPublicAccessBlockConfiguration</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.s3AccessPoint.S3AccessPoint.resetRegion">resetRegion</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.s3AccessPoint.S3AccessPoint.resetTags">resetTags</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.s3AccessPoint.S3AccessPoint.resetTagsAll">resetTagsAll</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.s3AccessPoint.S3AccessPoint.resetVpcConfiguration">resetVpcConfiguration</a></code> | *No description.* |
 
 ---
@@ -588,6 +610,18 @@ public void resetPublicAccessBlockConfiguration()
 public void resetRegion()
 ```
 
+##### `resetTags` <a name="resetTags" id="@cdktf/provider-aws.s3AccessPoint.S3AccessPoint.resetTags"></a>
+
+```java
+public void resetTags()
+```
+
+##### `resetTagsAll` <a name="resetTagsAll" id="@cdktf/provider-aws.s3AccessPoint.S3AccessPoint.resetTagsAll"></a>
+
+```java
+public void resetTagsAll()
+```
+
 ##### `resetVpcConfiguration` <a name="resetVpcConfiguration" id="@cdktf/provider-aws.s3AccessPoint.S3AccessPoint.resetVpcConfiguration"></a>
 
 ```java
@@ -697,7 +731,7 @@ The construct id used in the generated config for the S3AccessPoint to import.
 
 The id of the existing S3AccessPoint that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/s3_access_point#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/s3_access_point#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -743,6 +777,8 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/
 | <code><a href="#@cdktf/provider-aws.s3AccessPoint.S3AccessPoint.property.policyInput">policyInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.s3AccessPoint.S3AccessPoint.property.publicAccessBlockConfigurationInput">publicAccessBlockConfigurationInput</a></code> | <code><a href="#@cdktf/provider-aws.s3AccessPoint.S3AccessPointPublicAccessBlockConfiguration">S3AccessPointPublicAccessBlockConfiguration</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.s3AccessPoint.S3AccessPoint.property.regionInput">regionInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.s3AccessPoint.S3AccessPoint.property.tagsAllInput">tagsAllInput</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.s3AccessPoint.S3AccessPoint.property.tagsInput">tagsInput</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.s3AccessPoint.S3AccessPoint.property.vpcConfigurationInput">vpcConfigurationInput</a></code> | <code><a href="#@cdktf/provider-aws.s3AccessPoint.S3AccessPointVpcConfiguration">S3AccessPointVpcConfiguration</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.s3AccessPoint.S3AccessPoint.property.accountId">accountId</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.s3AccessPoint.S3AccessPoint.property.bucket">bucket</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -751,6 +787,8 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/
 | <code><a href="#@cdktf/provider-aws.s3AccessPoint.S3AccessPoint.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.s3AccessPoint.S3AccessPoint.property.policy">policy</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.s3AccessPoint.S3AccessPoint.property.region">region</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.s3AccessPoint.S3AccessPoint.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.s3AccessPoint.S3AccessPoint.property.tagsAll">tagsAll</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
 
 ---
 
@@ -1056,6 +1094,26 @@ public java.lang.String getRegionInput();
 
 ---
 
+##### `tagsAllInput`<sup>Optional</sup> <a name="tagsAllInput" id="@cdktf/provider-aws.s3AccessPoint.S3AccessPoint.property.tagsAllInput"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getTagsAllInput();
+```
+
+- *Type:* java.util.Map<java.lang.String, java.lang.String>
+
+---
+
+##### `tagsInput`<sup>Optional</sup> <a name="tagsInput" id="@cdktf/provider-aws.s3AccessPoint.S3AccessPoint.property.tagsInput"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getTagsInput();
+```
+
+- *Type:* java.util.Map<java.lang.String, java.lang.String>
+
+---
+
 ##### `vpcConfigurationInput`<sup>Optional</sup> <a name="vpcConfigurationInput" id="@cdktf/provider-aws.s3AccessPoint.S3AccessPoint.property.vpcConfigurationInput"></a>
 
 ```java
@@ -1136,6 +1194,26 @@ public java.lang.String getRegion();
 
 ---
 
+##### `tags`<sup>Required</sup> <a name="tags" id="@cdktf/provider-aws.s3AccessPoint.S3AccessPoint.property.tags"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getTags();
+```
+
+- *Type:* java.util.Map<java.lang.String, java.lang.String>
+
+---
+
+##### `tagsAll`<sup>Required</sup> <a name="tagsAll" id="@cdktf/provider-aws.s3AccessPoint.S3AccessPoint.property.tagsAll"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getTagsAll();
+```
+
+- *Type:* java.util.Map<java.lang.String, java.lang.String>
+
+---
+
 #### Constants <a name="Constants" id="Constants"></a>
 
 | **Name** | **Type** | **Description** |
@@ -1183,6 +1261,8 @@ S3AccessPointConfig.builder()
 //  .policy(java.lang.String)
 //  .publicAccessBlockConfiguration(S3AccessPointPublicAccessBlockConfiguration)
 //  .region(java.lang.String)
+//  .tags(java.util.Map<java.lang.String, java.lang.String>)
+//  .tagsAll(java.util.Map<java.lang.String, java.lang.String>)
 //  .vpcConfiguration(S3AccessPointVpcConfiguration)
     .build();
 ```
@@ -1198,14 +1278,16 @@ S3AccessPointConfig.builder()
 | <code><a href="#@cdktf/provider-aws.s3AccessPoint.S3AccessPointConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.s3AccessPoint.S3AccessPointConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.s3AccessPoint.S3AccessPointConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3AccessPoint.S3AccessPointConfig.property.bucket">bucket</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/s3_access_point#bucket S3AccessPoint#bucket}. |
-| <code><a href="#@cdktf/provider-aws.s3AccessPoint.S3AccessPointConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/s3_access_point#name S3AccessPoint#name}. |
-| <code><a href="#@cdktf/provider-aws.s3AccessPoint.S3AccessPointConfig.property.accountId">accountId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/s3_access_point#account_id S3AccessPoint#account_id}. |
-| <code><a href="#@cdktf/provider-aws.s3AccessPoint.S3AccessPointConfig.property.bucketAccountId">bucketAccountId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/s3_access_point#bucket_account_id S3AccessPoint#bucket_account_id}. |
-| <code><a href="#@cdktf/provider-aws.s3AccessPoint.S3AccessPointConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/s3_access_point#id S3AccessPoint#id}. |
-| <code><a href="#@cdktf/provider-aws.s3AccessPoint.S3AccessPointConfig.property.policy">policy</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/s3_access_point#policy S3AccessPoint#policy}. |
+| <code><a href="#@cdktf/provider-aws.s3AccessPoint.S3AccessPointConfig.property.bucket">bucket</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/s3_access_point#bucket S3AccessPoint#bucket}. |
+| <code><a href="#@cdktf/provider-aws.s3AccessPoint.S3AccessPointConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/s3_access_point#name S3AccessPoint#name}. |
+| <code><a href="#@cdktf/provider-aws.s3AccessPoint.S3AccessPointConfig.property.accountId">accountId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/s3_access_point#account_id S3AccessPoint#account_id}. |
+| <code><a href="#@cdktf/provider-aws.s3AccessPoint.S3AccessPointConfig.property.bucketAccountId">bucketAccountId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/s3_access_point#bucket_account_id S3AccessPoint#bucket_account_id}. |
+| <code><a href="#@cdktf/provider-aws.s3AccessPoint.S3AccessPointConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/s3_access_point#id S3AccessPoint#id}. |
+| <code><a href="#@cdktf/provider-aws.s3AccessPoint.S3AccessPointConfig.property.policy">policy</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/s3_access_point#policy S3AccessPoint#policy}. |
 | <code><a href="#@cdktf/provider-aws.s3AccessPoint.S3AccessPointConfig.property.publicAccessBlockConfiguration">publicAccessBlockConfiguration</a></code> | <code><a href="#@cdktf/provider-aws.s3AccessPoint.S3AccessPointPublicAccessBlockConfiguration">S3AccessPointPublicAccessBlockConfiguration</a></code> | public_access_block_configuration block. |
 | <code><a href="#@cdktf/provider-aws.s3AccessPoint.S3AccessPointConfig.property.region">region</a></code> | <code>java.lang.String</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
+| <code><a href="#@cdktf/provider-aws.s3AccessPoint.S3AccessPointConfig.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/s3_access_point#tags S3AccessPoint#tags}. |
+| <code><a href="#@cdktf/provider-aws.s3AccessPoint.S3AccessPointConfig.property.tagsAll">tagsAll</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/s3_access_point#tags_all S3AccessPoint#tags_all}. |
 | <code><a href="#@cdktf/provider-aws.s3AccessPoint.S3AccessPointConfig.property.vpcConfiguration">vpcConfiguration</a></code> | <code><a href="#@cdktf/provider-aws.s3AccessPoint.S3AccessPointVpcConfiguration">S3AccessPointVpcConfiguration</a></code> | vpc_configuration block. |
 
 ---
@@ -1288,7 +1370,7 @@ public java.lang.String getBucket();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/s3_access_point#bucket S3AccessPoint#bucket}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/s3_access_point#bucket S3AccessPoint#bucket}.
 
 ---
 
@@ -1300,7 +1382,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/s3_access_point#name S3AccessPoint#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/s3_access_point#name S3AccessPoint#name}.
 
 ---
 
@@ -1312,7 +1394,7 @@ public java.lang.String getAccountId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/s3_access_point#account_id S3AccessPoint#account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/s3_access_point#account_id S3AccessPoint#account_id}.
 
 ---
 
@@ -1324,7 +1406,7 @@ public java.lang.String getBucketAccountId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/s3_access_point#bucket_account_id S3AccessPoint#bucket_account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/s3_access_point#bucket_account_id S3AccessPoint#bucket_account_id}.
 
 ---
 
@@ -1336,7 +1418,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/s3_access_point#id S3AccessPoint#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/s3_access_point#id S3AccessPoint#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1351,7 +1433,7 @@ public java.lang.String getPolicy();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/s3_access_point#policy S3AccessPoint#policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/s3_access_point#policy S3AccessPoint#policy}.
 
 ---
 
@@ -1365,7 +1447,7 @@ public S3AccessPointPublicAccessBlockConfiguration getPublicAccessBlockConfigura
 
 public_access_block_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/s3_access_point#public_access_block_configuration S3AccessPoint#public_access_block_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/s3_access_point#public_access_block_configuration S3AccessPoint#public_access_block_configuration}
 
 ---
 
@@ -1379,7 +1461,31 @@ public java.lang.String getRegion();
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/s3_access_point#region S3AccessPoint#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/s3_access_point#region S3AccessPoint#region}
+
+---
+
+##### `tags`<sup>Optional</sup> <a name="tags" id="@cdktf/provider-aws.s3AccessPoint.S3AccessPointConfig.property.tags"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getTags();
+```
+
+- *Type:* java.util.Map<java.lang.String, java.lang.String>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/s3_access_point#tags S3AccessPoint#tags}.
+
+---
+
+##### `tagsAll`<sup>Optional</sup> <a name="tagsAll" id="@cdktf/provider-aws.s3AccessPoint.S3AccessPointConfig.property.tagsAll"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getTagsAll();
+```
+
+- *Type:* java.util.Map<java.lang.String, java.lang.String>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/s3_access_point#tags_all S3AccessPoint#tags_all}.
 
 ---
 
@@ -1393,7 +1499,7 @@ public S3AccessPointVpcConfiguration getVpcConfiguration();
 
 vpc_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/s3_access_point#vpc_configuration S3AccessPoint#vpc_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/s3_access_point#vpc_configuration S3AccessPoint#vpc_configuration}
 
 ---
 
@@ -1420,10 +1526,10 @@ S3AccessPointPublicAccessBlockConfiguration.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.s3AccessPoint.S3AccessPointPublicAccessBlockConfiguration.property.blockPublicAcls">blockPublicAcls</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/s3_access_point#block_public_acls S3AccessPoint#block_public_acls}. |
-| <code><a href="#@cdktf/provider-aws.s3AccessPoint.S3AccessPointPublicAccessBlockConfiguration.property.blockPublicPolicy">blockPublicPolicy</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/s3_access_point#block_public_policy S3AccessPoint#block_public_policy}. |
-| <code><a href="#@cdktf/provider-aws.s3AccessPoint.S3AccessPointPublicAccessBlockConfiguration.property.ignorePublicAcls">ignorePublicAcls</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/s3_access_point#ignore_public_acls S3AccessPoint#ignore_public_acls}. |
-| <code><a href="#@cdktf/provider-aws.s3AccessPoint.S3AccessPointPublicAccessBlockConfiguration.property.restrictPublicBuckets">restrictPublicBuckets</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/s3_access_point#restrict_public_buckets S3AccessPoint#restrict_public_buckets}. |
+| <code><a href="#@cdktf/provider-aws.s3AccessPoint.S3AccessPointPublicAccessBlockConfiguration.property.blockPublicAcls">blockPublicAcls</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/s3_access_point#block_public_acls S3AccessPoint#block_public_acls}. |
+| <code><a href="#@cdktf/provider-aws.s3AccessPoint.S3AccessPointPublicAccessBlockConfiguration.property.blockPublicPolicy">blockPublicPolicy</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/s3_access_point#block_public_policy S3AccessPoint#block_public_policy}. |
+| <code><a href="#@cdktf/provider-aws.s3AccessPoint.S3AccessPointPublicAccessBlockConfiguration.property.ignorePublicAcls">ignorePublicAcls</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/s3_access_point#ignore_public_acls S3AccessPoint#ignore_public_acls}. |
+| <code><a href="#@cdktf/provider-aws.s3AccessPoint.S3AccessPointPublicAccessBlockConfiguration.property.restrictPublicBuckets">restrictPublicBuckets</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/s3_access_point#restrict_public_buckets S3AccessPoint#restrict_public_buckets}. |
 
 ---
 
@@ -1435,7 +1541,7 @@ public java.lang.Object getBlockPublicAcls();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/s3_access_point#block_public_acls S3AccessPoint#block_public_acls}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/s3_access_point#block_public_acls S3AccessPoint#block_public_acls}.
 
 ---
 
@@ -1447,7 +1553,7 @@ public java.lang.Object getBlockPublicPolicy();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/s3_access_point#block_public_policy S3AccessPoint#block_public_policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/s3_access_point#block_public_policy S3AccessPoint#block_public_policy}.
 
 ---
 
@@ -1459,7 +1565,7 @@ public java.lang.Object getIgnorePublicAcls();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/s3_access_point#ignore_public_acls S3AccessPoint#ignore_public_acls}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/s3_access_point#ignore_public_acls S3AccessPoint#ignore_public_acls}.
 
 ---
 
@@ -1471,7 +1577,7 @@ public java.lang.Object getRestrictPublicBuckets();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/s3_access_point#restrict_public_buckets S3AccessPoint#restrict_public_buckets}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/s3_access_point#restrict_public_buckets S3AccessPoint#restrict_public_buckets}.
 
 ---
 
@@ -1491,7 +1597,7 @@ S3AccessPointVpcConfiguration.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.s3AccessPoint.S3AccessPointVpcConfiguration.property.vpcId">vpcId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/s3_access_point#vpc_id S3AccessPoint#vpc_id}. |
+| <code><a href="#@cdktf/provider-aws.s3AccessPoint.S3AccessPointVpcConfiguration.property.vpcId">vpcId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/s3_access_point#vpc_id S3AccessPoint#vpc_id}. |
 
 ---
 
@@ -1503,7 +1609,7 @@ public java.lang.String getVpcId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/s3_access_point#vpc_id S3AccessPoint#vpc_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/s3_access_point#vpc_id S3AccessPoint#vpc_id}.
 
 ---
 

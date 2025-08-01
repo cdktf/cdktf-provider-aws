@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/ecr_registry_scanning_configuration
+// https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/ecr_registry_scanning_configuration
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktf from 'cdktf';
 
 export interface EcrRegistryScanningConfigurationConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/ecr_registry_scanning_configuration#id EcrRegistryScanningConfiguration#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/ecr_registry_scanning_configuration#id EcrRegistryScanningConfiguration#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,27 +22,27 @@ export interface EcrRegistryScanningConfigurationConfig extends cdktf.TerraformM
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/ecr_registry_scanning_configuration#region EcrRegistryScanningConfiguration#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/ecr_registry_scanning_configuration#region EcrRegistryScanningConfiguration#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/ecr_registry_scanning_configuration#scan_type EcrRegistryScanningConfiguration#scan_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/ecr_registry_scanning_configuration#scan_type EcrRegistryScanningConfiguration#scan_type}
   */
   readonly scanType: string;
   /**
   * rule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/ecr_registry_scanning_configuration#rule EcrRegistryScanningConfiguration#rule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/ecr_registry_scanning_configuration#rule EcrRegistryScanningConfiguration#rule}
   */
   readonly rule?: EcrRegistryScanningConfigurationRule[] | cdktf.IResolvable;
 }
 export interface EcrRegistryScanningConfigurationRuleRepositoryFilter {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/ecr_registry_scanning_configuration#filter EcrRegistryScanningConfiguration#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/ecr_registry_scanning_configuration#filter EcrRegistryScanningConfiguration#filter}
   */
   readonly filter: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/ecr_registry_scanning_configuration#filter_type EcrRegistryScanningConfiguration#filter_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/ecr_registry_scanning_configuration#filter_type EcrRegistryScanningConfiguration#filter_type}
   */
   readonly filterType: string;
 }
@@ -181,13 +181,13 @@ export class EcrRegistryScanningConfigurationRuleRepositoryFilterList extends cd
 }
 export interface EcrRegistryScanningConfigurationRule {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/ecr_registry_scanning_configuration#scan_frequency EcrRegistryScanningConfiguration#scan_frequency}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/ecr_registry_scanning_configuration#scan_frequency EcrRegistryScanningConfiguration#scan_frequency}
   */
   readonly scanFrequency: string;
   /**
   * repository_filter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/ecr_registry_scanning_configuration#repository_filter EcrRegistryScanningConfiguration#repository_filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/ecr_registry_scanning_configuration#repository_filter EcrRegistryScanningConfiguration#repository_filter}
   */
   readonly repositoryFilter: EcrRegistryScanningConfigurationRuleRepositoryFilter[] | cdktf.IResolvable;
 }
@@ -326,7 +326,7 @@ export class EcrRegistryScanningConfigurationRuleList extends cdktf.ComplexList 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/ecr_registry_scanning_configuration aws_ecr_registry_scanning_configuration}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/ecr_registry_scanning_configuration aws_ecr_registry_scanning_configuration}
 */
 export class EcrRegistryScanningConfiguration extends cdktf.TerraformResource {
 
@@ -342,7 +342,7 @@ export class EcrRegistryScanningConfiguration extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a EcrRegistryScanningConfiguration resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the EcrRegistryScanningConfiguration to import
-  * @param importFromId The id of the existing EcrRegistryScanningConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/ecr_registry_scanning_configuration#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing EcrRegistryScanningConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/ecr_registry_scanning_configuration#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the EcrRegistryScanningConfiguration to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -354,7 +354,7 @@ export class EcrRegistryScanningConfiguration extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/ecr_registry_scanning_configuration aws_ecr_registry_scanning_configuration} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/ecr_registry_scanning_configuration aws_ecr_registry_scanning_configuration} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -365,7 +365,7 @@ export class EcrRegistryScanningConfiguration extends cdktf.TerraformResource {
       terraformResourceType: 'aws_ecr_registry_scanning_configuration',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.6.0',
+        providerVersion: '6.7.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

@@ -4,7 +4,7 @@
 
 ### Inspector2Enabler <a name="Inspector2Enabler" id="@cdktf/provider-aws.inspector2Enabler.Inspector2Enabler"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/inspector2_enabler aws_inspector2_enabler}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/inspector2_enabler aws_inspector2_enabler}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.inspector2Enabler.Inspector2Enabler.Initializer"></a>
 
@@ -501,7 +501,7 @@ The construct id used in the generated config for the Inspector2Enabler to impor
 
 The id of the existing Inspector2Enabler that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/inspector2_enabler#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/inspector2_enabler#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -840,9 +840,9 @@ new Inspector2EnablerConfig {
 | <code><a href="#@cdktf/provider-aws.inspector2Enabler.Inspector2EnablerConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Enabler.Inspector2EnablerConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Enabler.Inspector2EnablerConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Enabler.Inspector2EnablerConfig.property.accountIds">AccountIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/inspector2_enabler#account_ids Inspector2Enabler#account_ids}. |
-| <code><a href="#@cdktf/provider-aws.inspector2Enabler.Inspector2EnablerConfig.property.resourceTypes">ResourceTypes</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/inspector2_enabler#resource_types Inspector2Enabler#resource_types}. |
-| <code><a href="#@cdktf/provider-aws.inspector2Enabler.Inspector2EnablerConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/inspector2_enabler#id Inspector2Enabler#id}. |
+| <code><a href="#@cdktf/provider-aws.inspector2Enabler.Inspector2EnablerConfig.property.accountIds">AccountIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/inspector2_enabler#account_ids Inspector2Enabler#account_ids}. |
+| <code><a href="#@cdktf/provider-aws.inspector2Enabler.Inspector2EnablerConfig.property.resourceTypes">ResourceTypes</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/inspector2_enabler#resource_types Inspector2Enabler#resource_types}. |
+| <code><a href="#@cdktf/provider-aws.inspector2Enabler.Inspector2EnablerConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/inspector2_enabler#id Inspector2Enabler#id}. |
 | <code><a href="#@cdktf/provider-aws.inspector2Enabler.Inspector2EnablerConfig.property.region">Region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktf/provider-aws.inspector2Enabler.Inspector2EnablerConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-aws.inspector2Enabler.Inspector2EnablerTimeouts">Inspector2EnablerTimeouts</a></code> | timeouts block. |
 
@@ -926,7 +926,7 @@ public string[] AccountIds { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/inspector2_enabler#account_ids Inspector2Enabler#account_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/inspector2_enabler#account_ids Inspector2Enabler#account_ids}.
 
 ---
 
@@ -938,7 +938,7 @@ public string[] ResourceTypes { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/inspector2_enabler#resource_types Inspector2Enabler#resource_types}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/inspector2_enabler#resource_types Inspector2Enabler#resource_types}.
 
 ---
 
@@ -950,7 +950,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/inspector2_enabler#id Inspector2Enabler#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/inspector2_enabler#id Inspector2Enabler#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -967,7 +967,7 @@ public string Region { get; set; }
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/inspector2_enabler#region Inspector2Enabler#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/inspector2_enabler#region Inspector2Enabler#region}
 
 ---
 
@@ -981,7 +981,7 @@ public Inspector2EnablerTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/inspector2_enabler#timeouts Inspector2Enabler#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/inspector2_enabler#timeouts Inspector2Enabler#timeouts}
 
 ---
 
@@ -1003,9 +1003,9 @@ new Inspector2EnablerTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.inspector2Enabler.Inspector2EnablerTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/inspector2_enabler#create Inspector2Enabler#create}. |
-| <code><a href="#@cdktf/provider-aws.inspector2Enabler.Inspector2EnablerTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/inspector2_enabler#delete Inspector2Enabler#delete}. |
-| <code><a href="#@cdktf/provider-aws.inspector2Enabler.Inspector2EnablerTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/inspector2_enabler#update Inspector2Enabler#update}. |
+| <code><a href="#@cdktf/provider-aws.inspector2Enabler.Inspector2EnablerTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/inspector2_enabler#create Inspector2Enabler#create}. |
+| <code><a href="#@cdktf/provider-aws.inspector2Enabler.Inspector2EnablerTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/inspector2_enabler#delete Inspector2Enabler#delete}. |
+| <code><a href="#@cdktf/provider-aws.inspector2Enabler.Inspector2EnablerTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/inspector2_enabler#update Inspector2Enabler#update}. |
 
 ---
 
@@ -1017,7 +1017,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/inspector2_enabler#create Inspector2Enabler#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/inspector2_enabler#create Inspector2Enabler#create}.
 
 ---
 
@@ -1029,7 +1029,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/inspector2_enabler#delete Inspector2Enabler#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/inspector2_enabler#delete Inspector2Enabler#delete}.
 
 ---
 
@@ -1041,7 +1041,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/inspector2_enabler#update Inspector2Enabler#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/inspector2_enabler#update Inspector2Enabler#update}.
 
 ---
 

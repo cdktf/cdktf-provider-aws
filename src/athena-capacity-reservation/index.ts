@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/athena_capacity_reservation
+// https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/athena_capacity_reservation
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,27 +13,27 @@ import * as cdktf from 'cdktf';
 
 export interface AthenaCapacityReservationConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/athena_capacity_reservation#name AthenaCapacityReservation#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/athena_capacity_reservation#name AthenaCapacityReservation#name}
   */
   readonly name: string;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/athena_capacity_reservation#region AthenaCapacityReservation#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/athena_capacity_reservation#region AthenaCapacityReservation#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/athena_capacity_reservation#tags AthenaCapacityReservation#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/athena_capacity_reservation#tags AthenaCapacityReservation#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/athena_capacity_reservation#target_dpus AthenaCapacityReservation#target_dpus}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/athena_capacity_reservation#target_dpus AthenaCapacityReservation#target_dpus}
   */
   readonly targetDpus: number;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/athena_capacity_reservation#timeouts AthenaCapacityReservation#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/athena_capacity_reservation#timeouts AthenaCapacityReservation#timeouts}
   */
   readonly timeouts?: AthenaCapacityReservationTimeouts;
 }
@@ -41,19 +41,19 @@ export interface AthenaCapacityReservationTimeouts {
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/athena_capacity_reservation#create AthenaCapacityReservation#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/athena_capacity_reservation#create AthenaCapacityReservation#create}
   */
   readonly create?: string;
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/athena_capacity_reservation#delete AthenaCapacityReservation#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/athena_capacity_reservation#delete AthenaCapacityReservation#delete}
   */
   readonly delete?: string;
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/athena_capacity_reservation#update AthenaCapacityReservation#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/athena_capacity_reservation#update AthenaCapacityReservation#update}
   */
   readonly update?: string;
 }
@@ -205,7 +205,7 @@ export class AthenaCapacityReservationTimeoutsOutputReference extends cdktf.Comp
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/athena_capacity_reservation aws_athena_capacity_reservation}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/athena_capacity_reservation aws_athena_capacity_reservation}
 */
 export class AthenaCapacityReservation extends cdktf.TerraformResource {
 
@@ -221,7 +221,7 @@ export class AthenaCapacityReservation extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a AthenaCapacityReservation resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AthenaCapacityReservation to import
-  * @param importFromId The id of the existing AthenaCapacityReservation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/athena_capacity_reservation#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing AthenaCapacityReservation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/athena_capacity_reservation#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AthenaCapacityReservation to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -233,7 +233,7 @@ export class AthenaCapacityReservation extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/athena_capacity_reservation aws_athena_capacity_reservation} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/athena_capacity_reservation aws_athena_capacity_reservation} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -244,7 +244,7 @@ export class AthenaCapacityReservation extends cdktf.TerraformResource {
       terraformResourceType: 'aws_athena_capacity_reservation',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.6.0',
+        providerVersion: '6.7.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

@@ -1646,6 +1646,8 @@ The following submodules are available:
 - [quicksightGroupMembership](./quicksightGroupMembership.java.md)
 - [quicksightIamPolicyAssignment](./quicksightIamPolicyAssignment.java.md)
 - [quicksightIngestion](./quicksightIngestion.java.md)
+- [quicksightIpRestriction](./quicksightIpRestriction.java.md)
+- [quicksightKeyRegistration](./quicksightKeyRegistration.java.md)
 - [quicksightNamespace](./quicksightNamespace.java.md)
 - [quicksightRefreshSchedule](./quicksightRefreshSchedule.java.md)
 - [quicksightRoleMembership](./quicksightRoleMembership.java.md)

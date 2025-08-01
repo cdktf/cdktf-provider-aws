@@ -1,3 +1,3 @@
 # `aws_sfn_activity`
 
-Refer to the Terraform Registry for docs: [`aws_sfn_activity`](https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/sfn_activity).
+Refer to the Terraform Registry for docs: [`aws_sfn_activity`](https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/sfn_activity).

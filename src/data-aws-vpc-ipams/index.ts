@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/data-sources/vpc_ipams
+// https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/data-sources/vpc_ipams
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,19 +13,19 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsVpcIpamsConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/data-sources/vpc_ipams#ipam_ids DataAwsVpcIpams#ipam_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/data-sources/vpc_ipams#ipam_ids DataAwsVpcIpams#ipam_ids}
   */
   readonly ipamIds?: string[];
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/data-sources/vpc_ipams#region DataAwsVpcIpams#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/data-sources/vpc_ipams#region DataAwsVpcIpams#region}
   */
   readonly region?: string;
   /**
   * filter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/data-sources/vpc_ipams#filter DataAwsVpcIpams#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/data-sources/vpc_ipams#filter DataAwsVpcIpams#filter}
   */
   readonly filter?: DataAwsVpcIpamsFilter[] | cdktf.IResolvable;
 }
@@ -257,11 +257,11 @@ export class DataAwsVpcIpamsIpamsList extends cdktf.ComplexList {
 }
 export interface DataAwsVpcIpamsFilter {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/data-sources/vpc_ipams#name DataAwsVpcIpams#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/data-sources/vpc_ipams#name DataAwsVpcIpams#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/data-sources/vpc_ipams#values DataAwsVpcIpams#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/data-sources/vpc_ipams#values DataAwsVpcIpams#values}
   */
   readonly values: string[];
 }
@@ -400,7 +400,7 @@ export class DataAwsVpcIpamsFilterList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/data-sources/vpc_ipams aws_vpc_ipams}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/data-sources/vpc_ipams aws_vpc_ipams}
 */
 export class DataAwsVpcIpams extends cdktf.TerraformDataSource {
 
@@ -416,7 +416,7 @@ export class DataAwsVpcIpams extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataAwsVpcIpams resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsVpcIpams to import
-  * @param importFromId The id of the existing DataAwsVpcIpams that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/data-sources/vpc_ipams#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsVpcIpams that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/data-sources/vpc_ipams#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsVpcIpams to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -428,7 +428,7 @@ export class DataAwsVpcIpams extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/data-sources/vpc_ipams aws_vpc_ipams} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/data-sources/vpc_ipams aws_vpc_ipams} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -439,7 +439,7 @@ export class DataAwsVpcIpams extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_vpc_ipams',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.6.0',
+        providerVersion: '6.7.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

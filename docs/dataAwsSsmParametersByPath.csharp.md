@@ -4,7 +4,7 @@
 
 ### DataAwsSsmParametersByPath <a name="DataAwsSsmParametersByPath" id="@cdktf/provider-aws.dataAwsSsmParametersByPath.DataAwsSsmParametersByPath"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/data-sources/ssm_parameters_by_path aws_ssm_parameters_by_path}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/data-sources/ssm_parameters_by_path aws_ssm_parameters_by_path}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsSsmParametersByPath.DataAwsSsmParametersByPath.Initializer"></a>
 
@@ -393,7 +393,7 @@ The construct id used in the generated config for the DataAwsSsmParametersByPath
 
 The id of the existing DataAwsSsmParametersByPath that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/data-sources/ssm_parameters_by_path#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/data-sources/ssm_parameters_by_path#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -754,11 +754,11 @@ new DataAwsSsmParametersByPathConfig {
 | <code><a href="#@cdktf/provider-aws.dataAwsSsmParametersByPath.DataAwsSsmParametersByPathConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsSsmParametersByPath.DataAwsSsmParametersByPathConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsSsmParametersByPath.DataAwsSsmParametersByPathConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsSsmParametersByPath.DataAwsSsmParametersByPathConfig.property.path">Path</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/data-sources/ssm_parameters_by_path#path DataAwsSsmParametersByPath#path}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsSsmParametersByPath.DataAwsSsmParametersByPathConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/data-sources/ssm_parameters_by_path#id DataAwsSsmParametersByPath#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsSsmParametersByPath.DataAwsSsmParametersByPathConfig.property.recursive">Recursive</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/data-sources/ssm_parameters_by_path#recursive DataAwsSsmParametersByPath#recursive}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsSsmParametersByPath.DataAwsSsmParametersByPathConfig.property.path">Path</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/data-sources/ssm_parameters_by_path#path DataAwsSsmParametersByPath#path}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsSsmParametersByPath.DataAwsSsmParametersByPathConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/data-sources/ssm_parameters_by_path#id DataAwsSsmParametersByPath#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsSsmParametersByPath.DataAwsSsmParametersByPathConfig.property.recursive">Recursive</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/data-sources/ssm_parameters_by_path#recursive DataAwsSsmParametersByPath#recursive}. |
 | <code><a href="#@cdktf/provider-aws.dataAwsSsmParametersByPath.DataAwsSsmParametersByPathConfig.property.region">Region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktf/provider-aws.dataAwsSsmParametersByPath.DataAwsSsmParametersByPathConfig.property.withDecryption">WithDecryption</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/data-sources/ssm_parameters_by_path#with_decryption DataAwsSsmParametersByPath#with_decryption}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsSsmParametersByPath.DataAwsSsmParametersByPathConfig.property.withDecryption">WithDecryption</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/data-sources/ssm_parameters_by_path#with_decryption DataAwsSsmParametersByPath#with_decryption}. |
 
 ---
 
@@ -840,7 +840,7 @@ public string Path { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/data-sources/ssm_parameters_by_path#path DataAwsSsmParametersByPath#path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/data-sources/ssm_parameters_by_path#path DataAwsSsmParametersByPath#path}.
 
 ---
 
@@ -852,7 +852,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/data-sources/ssm_parameters_by_path#id DataAwsSsmParametersByPath#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/data-sources/ssm_parameters_by_path#id DataAwsSsmParametersByPath#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -867,7 +867,7 @@ public object Recursive { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/data-sources/ssm_parameters_by_path#recursive DataAwsSsmParametersByPath#recursive}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/data-sources/ssm_parameters_by_path#recursive DataAwsSsmParametersByPath#recursive}.
 
 ---
 
@@ -881,7 +881,7 @@ public string Region { get; set; }
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/data-sources/ssm_parameters_by_path#region DataAwsSsmParametersByPath#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/data-sources/ssm_parameters_by_path#region DataAwsSsmParametersByPath#region}
 
 ---
 
@@ -893,7 +893,7 @@ public object WithDecryption { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/data-sources/ssm_parameters_by_path#with_decryption DataAwsSsmParametersByPath#with_decryption}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/data-sources/ssm_parameters_by_path#with_decryption DataAwsSsmParametersByPath#with_decryption}.
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### DevopsguruNotificationChannel <a name="DevopsguruNotificationChannel" id="@cdktf/provider-aws.devopsguruNotificationChannel.DevopsguruNotificationChannel"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/devopsguru_notification_channel aws_devopsguru_notification_channel}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/devopsguru_notification_channel aws_devopsguru_notification_channel}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.devopsguruNotificationChannel.DevopsguruNotificationChannel.Initializer"></a>
 
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 filters block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/devopsguru_notification_channel#filters DevopsguruNotificationChannel#filters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/devopsguru_notification_channel#filters DevopsguruNotificationChannel#filters}
 
 ---
 
@@ -124,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/devopsguru_notification_channel#region DevopsguruNotificationChannel#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/devopsguru_notification_channel#region DevopsguruNotificationChannel#region}
 
 ---
 
@@ -134,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 sns block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/devopsguru_notification_channel#sns DevopsguruNotificationChannel#sns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/devopsguru_notification_channel#sns DevopsguruNotificationChannel#sns}
 
 ---
 
@@ -608,7 +608,7 @@ The construct id used in the generated config for the DevopsguruNotificationChan
 
 The id of the existing DevopsguruNotificationChannel that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/devopsguru_notification_channel#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/devopsguru_notification_channel#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1004,7 +1004,7 @@ public java.lang.Object getFilters();
 
 filters block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/devopsguru_notification_channel#filters DevopsguruNotificationChannel#filters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/devopsguru_notification_channel#filters DevopsguruNotificationChannel#filters}
 
 ---
 
@@ -1018,7 +1018,7 @@ public java.lang.String getRegion();
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/devopsguru_notification_channel#region DevopsguruNotificationChannel#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/devopsguru_notification_channel#region DevopsguruNotificationChannel#region}
 
 ---
 
@@ -1032,7 +1032,7 @@ public java.lang.Object getSns();
 
 sns block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/devopsguru_notification_channel#sns DevopsguruNotificationChannel#sns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/devopsguru_notification_channel#sns DevopsguruNotificationChannel#sns}
 
 ---
 
@@ -1053,8 +1053,8 @@ DevopsguruNotificationChannelFilters.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.devopsguruNotificationChannel.DevopsguruNotificationChannelFilters.property.messageTypes">messageTypes</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/devopsguru_notification_channel#message_types DevopsguruNotificationChannel#message_types}. |
-| <code><a href="#@cdktf/provider-aws.devopsguruNotificationChannel.DevopsguruNotificationChannelFilters.property.severities">severities</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/devopsguru_notification_channel#severities DevopsguruNotificationChannel#severities}. |
+| <code><a href="#@cdktf/provider-aws.devopsguruNotificationChannel.DevopsguruNotificationChannelFilters.property.messageTypes">messageTypes</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/devopsguru_notification_channel#message_types DevopsguruNotificationChannel#message_types}. |
+| <code><a href="#@cdktf/provider-aws.devopsguruNotificationChannel.DevopsguruNotificationChannelFilters.property.severities">severities</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/devopsguru_notification_channel#severities DevopsguruNotificationChannel#severities}. |
 
 ---
 
@@ -1066,7 +1066,7 @@ public java.util.List<java.lang.String> getMessageTypes();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/devopsguru_notification_channel#message_types DevopsguruNotificationChannel#message_types}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/devopsguru_notification_channel#message_types DevopsguruNotificationChannel#message_types}.
 
 ---
 
@@ -1078,7 +1078,7 @@ public java.util.List<java.lang.String> getSeverities();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/devopsguru_notification_channel#severities DevopsguruNotificationChannel#severities}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/devopsguru_notification_channel#severities DevopsguruNotificationChannel#severities}.
 
 ---
 
@@ -1098,7 +1098,7 @@ DevopsguruNotificationChannelSns.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.devopsguruNotificationChannel.DevopsguruNotificationChannelSns.property.topicArn">topicArn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/devopsguru_notification_channel#topic_arn DevopsguruNotificationChannel#topic_arn}. |
+| <code><a href="#@cdktf/provider-aws.devopsguruNotificationChannel.DevopsguruNotificationChannelSns.property.topicArn">topicArn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/devopsguru_notification_channel#topic_arn DevopsguruNotificationChannel#topic_arn}. |
 
 ---
 
@@ -1110,7 +1110,7 @@ public java.lang.String getTopicArn();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/devopsguru_notification_channel#topic_arn DevopsguruNotificationChannel#topic_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/devopsguru_notification_channel#topic_arn DevopsguruNotificationChannel#topic_arn}.
 
 ---
 

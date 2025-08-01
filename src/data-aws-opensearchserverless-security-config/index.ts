@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/data-sources/opensearchserverless_security_config
+// https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/data-sources/opensearchserverless_security_config
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,7 +15,7 @@ export interface DataAwsOpensearchserverlessSecurityConfigConfig extends cdktf.T
   /**
   * The unique identifier of the security configuration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/data-sources/opensearchserverless_security_config#id DataAwsOpensearchserverlessSecurityConfig#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/data-sources/opensearchserverless_security_config#id DataAwsOpensearchserverlessSecurityConfig#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -24,13 +24,13 @@ export interface DataAwsOpensearchserverlessSecurityConfigConfig extends cdktf.T
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/data-sources/opensearchserverless_security_config#region DataAwsOpensearchserverlessSecurityConfig#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/data-sources/opensearchserverless_security_config#region DataAwsOpensearchserverlessSecurityConfig#region}
   */
   readonly region?: string;
   /**
   * saml_options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/data-sources/opensearchserverless_security_config#saml_options DataAwsOpensearchserverlessSecurityConfig#saml_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/data-sources/opensearchserverless_security_config#saml_options DataAwsOpensearchserverlessSecurityConfig#saml_options}
   */
   readonly samlOptions?: DataAwsOpensearchserverlessSecurityConfigSamlOptions[] | cdktf.IResolvable;
 }
@@ -137,7 +137,7 @@ export class DataAwsOpensearchserverlessSecurityConfigSamlOptionsList extends cd
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/data-sources/opensearchserverless_security_config aws_opensearchserverless_security_config}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/data-sources/opensearchserverless_security_config aws_opensearchserverless_security_config}
 */
 export class DataAwsOpensearchserverlessSecurityConfig extends cdktf.TerraformDataSource {
 
@@ -153,7 +153,7 @@ export class DataAwsOpensearchserverlessSecurityConfig extends cdktf.TerraformDa
   * Generates CDKTF code for importing a DataAwsOpensearchserverlessSecurityConfig resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsOpensearchserverlessSecurityConfig to import
-  * @param importFromId The id of the existing DataAwsOpensearchserverlessSecurityConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/data-sources/opensearchserverless_security_config#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsOpensearchserverlessSecurityConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/data-sources/opensearchserverless_security_config#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsOpensearchserverlessSecurityConfig to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -165,7 +165,7 @@ export class DataAwsOpensearchserverlessSecurityConfig extends cdktf.TerraformDa
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/data-sources/opensearchserverless_security_config aws_opensearchserverless_security_config} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/data-sources/opensearchserverless_security_config aws_opensearchserverless_security_config} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -176,7 +176,7 @@ export class DataAwsOpensearchserverlessSecurityConfig extends cdktf.TerraformDa
       terraformResourceType: 'aws_opensearchserverless_security_config',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.6.0',
+        providerVersion: '6.7.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

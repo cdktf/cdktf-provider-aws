@@ -4,7 +4,7 @@
 
 ### CodebuildFleet <a name="CodebuildFleet" id="@cdktf/provider-aws.codebuildFleet.CodebuildFleet"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/codebuild_fleet aws_codebuild_fleet}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/codebuild_fleet aws_codebuild_fleet}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.codebuildFleet.CodebuildFleet.Initializer"></a>
 
@@ -569,7 +569,7 @@ The construct id used in the generated config for the CodebuildFleet to import.
 
 The id of the existing CodebuildFleet that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/codebuild_fleet#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/codebuild_fleet#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1114,6 +1114,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/codebuildfleet"
 
 &codebuildfleet.CodebuildFleetComputeConfiguration {
 	Disk: *f64,
+	InstanceType: *string,
 	MachineType: *string,
 	Memory: *f64,
 	Vcpu: *f64,
@@ -1124,10 +1125,11 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/codebuildfleet"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.codebuildFleet.CodebuildFleetComputeConfiguration.property.disk">Disk</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/codebuild_fleet#disk CodebuildFleet#disk}. |
-| <code><a href="#@cdktf/provider-aws.codebuildFleet.CodebuildFleetComputeConfiguration.property.machineType">MachineType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/codebuild_fleet#machine_type CodebuildFleet#machine_type}. |
-| <code><a href="#@cdktf/provider-aws.codebuildFleet.CodebuildFleetComputeConfiguration.property.memory">Memory</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/codebuild_fleet#memory CodebuildFleet#memory}. |
-| <code><a href="#@cdktf/provider-aws.codebuildFleet.CodebuildFleetComputeConfiguration.property.vcpu">Vcpu</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/codebuild_fleet#vcpu CodebuildFleet#vcpu}. |
+| <code><a href="#@cdktf/provider-aws.codebuildFleet.CodebuildFleetComputeConfiguration.property.disk">Disk</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/codebuild_fleet#disk CodebuildFleet#disk}. |
+| <code><a href="#@cdktf/provider-aws.codebuildFleet.CodebuildFleetComputeConfiguration.property.instanceType">InstanceType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/codebuild_fleet#instance_type CodebuildFleet#instance_type}. |
+| <code><a href="#@cdktf/provider-aws.codebuildFleet.CodebuildFleetComputeConfiguration.property.machineType">MachineType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/codebuild_fleet#machine_type CodebuildFleet#machine_type}. |
+| <code><a href="#@cdktf/provider-aws.codebuildFleet.CodebuildFleetComputeConfiguration.property.memory">Memory</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/codebuild_fleet#memory CodebuildFleet#memory}. |
+| <code><a href="#@cdktf/provider-aws.codebuildFleet.CodebuildFleetComputeConfiguration.property.vcpu">Vcpu</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/codebuild_fleet#vcpu CodebuildFleet#vcpu}. |
 
 ---
 
@@ -1139,7 +1141,19 @@ Disk *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/codebuild_fleet#disk CodebuildFleet#disk}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/codebuild_fleet#disk CodebuildFleet#disk}.
+
+---
+
+##### `InstanceType`<sup>Optional</sup> <a name="InstanceType" id="@cdktf/provider-aws.codebuildFleet.CodebuildFleetComputeConfiguration.property.instanceType"></a>
+
+```go
+InstanceType *string
+```
+
+- *Type:* *string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/codebuild_fleet#instance_type CodebuildFleet#instance_type}.
 
 ---
 
@@ -1151,7 +1165,7 @@ MachineType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/codebuild_fleet#machine_type CodebuildFleet#machine_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/codebuild_fleet#machine_type CodebuildFleet#machine_type}.
 
 ---
 
@@ -1163,7 +1177,7 @@ Memory *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/codebuild_fleet#memory CodebuildFleet#memory}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/codebuild_fleet#memory CodebuildFleet#memory}.
 
 ---
 
@@ -1175,7 +1189,7 @@ Vcpu *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/codebuild_fleet#vcpu CodebuildFleet#vcpu}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/codebuild_fleet#vcpu CodebuildFleet#vcpu}.
 
 ---
 
@@ -1221,18 +1235,18 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/codebuildfleet"
 | <code><a href="#@cdktf/provider-aws.codebuildFleet.CodebuildFleetConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.codebuildFleet.CodebuildFleetConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.codebuildFleet.CodebuildFleetConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.codebuildFleet.CodebuildFleetConfig.property.baseCapacity">BaseCapacity</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/codebuild_fleet#base_capacity CodebuildFleet#base_capacity}. |
-| <code><a href="#@cdktf/provider-aws.codebuildFleet.CodebuildFleetConfig.property.computeType">ComputeType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/codebuild_fleet#compute_type CodebuildFleet#compute_type}. |
-| <code><a href="#@cdktf/provider-aws.codebuildFleet.CodebuildFleetConfig.property.environmentType">EnvironmentType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/codebuild_fleet#environment_type CodebuildFleet#environment_type}. |
-| <code><a href="#@cdktf/provider-aws.codebuildFleet.CodebuildFleetConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/codebuild_fleet#name CodebuildFleet#name}. |
+| <code><a href="#@cdktf/provider-aws.codebuildFleet.CodebuildFleetConfig.property.baseCapacity">BaseCapacity</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/codebuild_fleet#base_capacity CodebuildFleet#base_capacity}. |
+| <code><a href="#@cdktf/provider-aws.codebuildFleet.CodebuildFleetConfig.property.computeType">ComputeType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/codebuild_fleet#compute_type CodebuildFleet#compute_type}. |
+| <code><a href="#@cdktf/provider-aws.codebuildFleet.CodebuildFleetConfig.property.environmentType">EnvironmentType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/codebuild_fleet#environment_type CodebuildFleet#environment_type}. |
+| <code><a href="#@cdktf/provider-aws.codebuildFleet.CodebuildFleetConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/codebuild_fleet#name CodebuildFleet#name}. |
 | <code><a href="#@cdktf/provider-aws.codebuildFleet.CodebuildFleetConfig.property.computeConfiguration">ComputeConfiguration</a></code> | <code><a href="#@cdktf/provider-aws.codebuildFleet.CodebuildFleetComputeConfiguration">CodebuildFleetComputeConfiguration</a></code> | compute_configuration block. |
-| <code><a href="#@cdktf/provider-aws.codebuildFleet.CodebuildFleetConfig.property.fleetServiceRole">FleetServiceRole</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/codebuild_fleet#fleet_service_role CodebuildFleet#fleet_service_role}. |
-| <code><a href="#@cdktf/provider-aws.codebuildFleet.CodebuildFleetConfig.property.imageId">ImageId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/codebuild_fleet#image_id CodebuildFleet#image_id}. |
-| <code><a href="#@cdktf/provider-aws.codebuildFleet.CodebuildFleetConfig.property.overflowBehavior">OverflowBehavior</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/codebuild_fleet#overflow_behavior CodebuildFleet#overflow_behavior}. |
+| <code><a href="#@cdktf/provider-aws.codebuildFleet.CodebuildFleetConfig.property.fleetServiceRole">FleetServiceRole</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/codebuild_fleet#fleet_service_role CodebuildFleet#fleet_service_role}. |
+| <code><a href="#@cdktf/provider-aws.codebuildFleet.CodebuildFleetConfig.property.imageId">ImageId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/codebuild_fleet#image_id CodebuildFleet#image_id}. |
+| <code><a href="#@cdktf/provider-aws.codebuildFleet.CodebuildFleetConfig.property.overflowBehavior">OverflowBehavior</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/codebuild_fleet#overflow_behavior CodebuildFleet#overflow_behavior}. |
 | <code><a href="#@cdktf/provider-aws.codebuildFleet.CodebuildFleetConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktf/provider-aws.codebuildFleet.CodebuildFleetConfig.property.scalingConfiguration">ScalingConfiguration</a></code> | <code><a href="#@cdktf/provider-aws.codebuildFleet.CodebuildFleetScalingConfiguration">CodebuildFleetScalingConfiguration</a></code> | scaling_configuration block. |
-| <code><a href="#@cdktf/provider-aws.codebuildFleet.CodebuildFleetConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/codebuild_fleet#tags CodebuildFleet#tags}. |
-| <code><a href="#@cdktf/provider-aws.codebuildFleet.CodebuildFleetConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/codebuild_fleet#tags_all CodebuildFleet#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.codebuildFleet.CodebuildFleetConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/codebuild_fleet#tags CodebuildFleet#tags}. |
+| <code><a href="#@cdktf/provider-aws.codebuildFleet.CodebuildFleetConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/codebuild_fleet#tags_all CodebuildFleet#tags_all}. |
 | <code><a href="#@cdktf/provider-aws.codebuildFleet.CodebuildFleetConfig.property.vpcConfig">VpcConfig</a></code> | <code>interface{}</code> | vpc_config block. |
 
 ---
@@ -1315,7 +1329,7 @@ BaseCapacity *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/codebuild_fleet#base_capacity CodebuildFleet#base_capacity}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/codebuild_fleet#base_capacity CodebuildFleet#base_capacity}.
 
 ---
 
@@ -1327,7 +1341,7 @@ ComputeType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/codebuild_fleet#compute_type CodebuildFleet#compute_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/codebuild_fleet#compute_type CodebuildFleet#compute_type}.
 
 ---
 
@@ -1339,7 +1353,7 @@ EnvironmentType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/codebuild_fleet#environment_type CodebuildFleet#environment_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/codebuild_fleet#environment_type CodebuildFleet#environment_type}.
 
 ---
 
@@ -1351,7 +1365,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/codebuild_fleet#name CodebuildFleet#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/codebuild_fleet#name CodebuildFleet#name}.
 
 ---
 
@@ -1365,7 +1379,7 @@ ComputeConfiguration CodebuildFleetComputeConfiguration
 
 compute_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/codebuild_fleet#compute_configuration CodebuildFleet#compute_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/codebuild_fleet#compute_configuration CodebuildFleet#compute_configuration}
 
 ---
 
@@ -1377,7 +1391,7 @@ FleetServiceRole *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/codebuild_fleet#fleet_service_role CodebuildFleet#fleet_service_role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/codebuild_fleet#fleet_service_role CodebuildFleet#fleet_service_role}.
 
 ---
 
@@ -1389,7 +1403,7 @@ ImageId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/codebuild_fleet#image_id CodebuildFleet#image_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/codebuild_fleet#image_id CodebuildFleet#image_id}.
 
 ---
 
@@ -1401,7 +1415,7 @@ OverflowBehavior *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/codebuild_fleet#overflow_behavior CodebuildFleet#overflow_behavior}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/codebuild_fleet#overflow_behavior CodebuildFleet#overflow_behavior}.
 
 ---
 
@@ -1415,7 +1429,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/codebuild_fleet#region CodebuildFleet#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/codebuild_fleet#region CodebuildFleet#region}
 
 ---
 
@@ -1429,7 +1443,7 @@ ScalingConfiguration CodebuildFleetScalingConfiguration
 
 scaling_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/codebuild_fleet#scaling_configuration CodebuildFleet#scaling_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/codebuild_fleet#scaling_configuration CodebuildFleet#scaling_configuration}
 
 ---
 
@@ -1441,7 +1455,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/codebuild_fleet#tags CodebuildFleet#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/codebuild_fleet#tags CodebuildFleet#tags}.
 
 ---
 
@@ -1453,7 +1467,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/codebuild_fleet#tags_all CodebuildFleet#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/codebuild_fleet#tags_all CodebuildFleet#tags_all}.
 
 ---
 
@@ -1467,7 +1481,7 @@ VpcConfig interface{}
 
 vpc_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/codebuild_fleet#vpc_config CodebuildFleet#vpc_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/codebuild_fleet#vpc_config CodebuildFleet#vpc_config}
 
 ---
 
@@ -1489,8 +1503,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/codebuildfleet"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.codebuildFleet.CodebuildFleetScalingConfiguration.property.maxCapacity">MaxCapacity</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/codebuild_fleet#max_capacity CodebuildFleet#max_capacity}. |
-| <code><a href="#@cdktf/provider-aws.codebuildFleet.CodebuildFleetScalingConfiguration.property.scalingType">ScalingType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/codebuild_fleet#scaling_type CodebuildFleet#scaling_type}. |
+| <code><a href="#@cdktf/provider-aws.codebuildFleet.CodebuildFleetScalingConfiguration.property.maxCapacity">MaxCapacity</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/codebuild_fleet#max_capacity CodebuildFleet#max_capacity}. |
+| <code><a href="#@cdktf/provider-aws.codebuildFleet.CodebuildFleetScalingConfiguration.property.scalingType">ScalingType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/codebuild_fleet#scaling_type CodebuildFleet#scaling_type}. |
 | <code><a href="#@cdktf/provider-aws.codebuildFleet.CodebuildFleetScalingConfiguration.property.targetTrackingScalingConfigs">TargetTrackingScalingConfigs</a></code> | <code>interface{}</code> | target_tracking_scaling_configs block. |
 
 ---
@@ -1503,7 +1517,7 @@ MaxCapacity *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/codebuild_fleet#max_capacity CodebuildFleet#max_capacity}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/codebuild_fleet#max_capacity CodebuildFleet#max_capacity}.
 
 ---
 
@@ -1515,7 +1529,7 @@ ScalingType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/codebuild_fleet#scaling_type CodebuildFleet#scaling_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/codebuild_fleet#scaling_type CodebuildFleet#scaling_type}.
 
 ---
 
@@ -1529,7 +1543,7 @@ TargetTrackingScalingConfigs interface{}
 
 target_tracking_scaling_configs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/codebuild_fleet#target_tracking_scaling_configs CodebuildFleet#target_tracking_scaling_configs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/codebuild_fleet#target_tracking_scaling_configs CodebuildFleet#target_tracking_scaling_configs}
 
 ---
 
@@ -1550,8 +1564,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/codebuildfleet"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.codebuildFleet.CodebuildFleetScalingConfigurationTargetTrackingScalingConfigs.property.metricType">MetricType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/codebuild_fleet#metric_type CodebuildFleet#metric_type}. |
-| <code><a href="#@cdktf/provider-aws.codebuildFleet.CodebuildFleetScalingConfigurationTargetTrackingScalingConfigs.property.targetValue">TargetValue</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/codebuild_fleet#target_value CodebuildFleet#target_value}. |
+| <code><a href="#@cdktf/provider-aws.codebuildFleet.CodebuildFleetScalingConfigurationTargetTrackingScalingConfigs.property.metricType">MetricType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/codebuild_fleet#metric_type CodebuildFleet#metric_type}. |
+| <code><a href="#@cdktf/provider-aws.codebuildFleet.CodebuildFleetScalingConfigurationTargetTrackingScalingConfigs.property.targetValue">TargetValue</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/codebuild_fleet#target_value CodebuildFleet#target_value}. |
 
 ---
 
@@ -1563,7 +1577,7 @@ MetricType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/codebuild_fleet#metric_type CodebuildFleet#metric_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/codebuild_fleet#metric_type CodebuildFleet#metric_type}.
 
 ---
 
@@ -1575,7 +1589,7 @@ TargetValue *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/codebuild_fleet#target_value CodebuildFleet#target_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/codebuild_fleet#target_value CodebuildFleet#target_value}.
 
 ---
 
@@ -1610,9 +1624,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/codebuildfleet"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.codebuildFleet.CodebuildFleetVpcConfig.property.securityGroupIds">SecurityGroupIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/codebuild_fleet#security_group_ids CodebuildFleet#security_group_ids}. |
-| <code><a href="#@cdktf/provider-aws.codebuildFleet.CodebuildFleetVpcConfig.property.subnets">Subnets</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/codebuild_fleet#subnets CodebuildFleet#subnets}. |
-| <code><a href="#@cdktf/provider-aws.codebuildFleet.CodebuildFleetVpcConfig.property.vpcId">VpcId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/codebuild_fleet#vpc_id CodebuildFleet#vpc_id}. |
+| <code><a href="#@cdktf/provider-aws.codebuildFleet.CodebuildFleetVpcConfig.property.securityGroupIds">SecurityGroupIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/codebuild_fleet#security_group_ids CodebuildFleet#security_group_ids}. |
+| <code><a href="#@cdktf/provider-aws.codebuildFleet.CodebuildFleetVpcConfig.property.subnets">Subnets</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/codebuild_fleet#subnets CodebuildFleet#subnets}. |
+| <code><a href="#@cdktf/provider-aws.codebuildFleet.CodebuildFleetVpcConfig.property.vpcId">VpcId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/codebuild_fleet#vpc_id CodebuildFleet#vpc_id}. |
 
 ---
 
@@ -1624,7 +1638,7 @@ SecurityGroupIds *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/codebuild_fleet#security_group_ids CodebuildFleet#security_group_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/codebuild_fleet#security_group_ids CodebuildFleet#security_group_ids}.
 
 ---
 
@@ -1636,7 +1650,7 @@ Subnets *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/codebuild_fleet#subnets CodebuildFleet#subnets}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/codebuild_fleet#subnets CodebuildFleet#subnets}.
 
 ---
 
@@ -1648,7 +1662,7 @@ VpcId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/codebuild_fleet#vpc_id CodebuildFleet#vpc_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/codebuild_fleet#vpc_id CodebuildFleet#vpc_id}.
 
 ---
 
@@ -1705,6 +1719,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-aws.codebuildFleet.CodebuildFleetComputeConfigurationOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-aws.codebuildFleet.CodebuildFleetComputeConfigurationOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-aws.codebuildFleet.CodebuildFleetComputeConfigurationOutputReference.resetDisk">ResetDisk</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.codebuildFleet.CodebuildFleetComputeConfigurationOutputReference.resetInstanceType">ResetInstanceType</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.codebuildFleet.CodebuildFleetComputeConfigurationOutputReference.resetMachineType">ResetMachineType</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.codebuildFleet.CodebuildFleetComputeConfigurationOutputReference.resetMemory">ResetMemory</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.codebuildFleet.CodebuildFleetComputeConfigurationOutputReference.resetVcpu">ResetVcpu</a></code> | *No description.* |
@@ -1867,6 +1882,12 @@ Returns a reversible string representation.
 func ResetDisk()
 ```
 
+##### `ResetInstanceType` <a name="ResetInstanceType" id="@cdktf/provider-aws.codebuildFleet.CodebuildFleetComputeConfigurationOutputReference.resetInstanceType"></a>
+
+```go
+func ResetInstanceType()
+```
+
 ##### `ResetMachineType` <a name="ResetMachineType" id="@cdktf/provider-aws.codebuildFleet.CodebuildFleetComputeConfigurationOutputReference.resetMachineType"></a>
 
 ```go
@@ -1893,10 +1914,12 @@ func ResetVcpu()
 | <code><a href="#@cdktf/provider-aws.codebuildFleet.CodebuildFleetComputeConfigurationOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.codebuildFleet.CodebuildFleetComputeConfigurationOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.codebuildFleet.CodebuildFleetComputeConfigurationOutputReference.property.diskInput">DiskInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.codebuildFleet.CodebuildFleetComputeConfigurationOutputReference.property.instanceTypeInput">InstanceTypeInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.codebuildFleet.CodebuildFleetComputeConfigurationOutputReference.property.machineTypeInput">MachineTypeInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.codebuildFleet.CodebuildFleetComputeConfigurationOutputReference.property.memoryInput">MemoryInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.codebuildFleet.CodebuildFleetComputeConfigurationOutputReference.property.vcpuInput">VcpuInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.codebuildFleet.CodebuildFleetComputeConfigurationOutputReference.property.disk">Disk</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.codebuildFleet.CodebuildFleetComputeConfigurationOutputReference.property.instanceType">InstanceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.codebuildFleet.CodebuildFleetComputeConfigurationOutputReference.property.machineType">MachineType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.codebuildFleet.CodebuildFleetComputeConfigurationOutputReference.property.memory">Memory</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.codebuildFleet.CodebuildFleetComputeConfigurationOutputReference.property.vcpu">Vcpu</a></code> | <code>*f64</code> | *No description.* |
@@ -1938,6 +1961,16 @@ func DiskInput() *f64
 
 ---
 
+##### `InstanceTypeInput`<sup>Optional</sup> <a name="InstanceTypeInput" id="@cdktf/provider-aws.codebuildFleet.CodebuildFleetComputeConfigurationOutputReference.property.instanceTypeInput"></a>
+
+```go
+func InstanceTypeInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `MachineTypeInput`<sup>Optional</sup> <a name="MachineTypeInput" id="@cdktf/provider-aws.codebuildFleet.CodebuildFleetComputeConfigurationOutputReference.property.machineTypeInput"></a>
 
 ```go
@@ -1975,6 +2008,16 @@ func Disk() *f64
 ```
 
 - *Type:* *f64
+
+---
+
+##### `InstanceType`<sup>Required</sup> <a name="InstanceType" id="@cdktf/provider-aws.codebuildFleet.CodebuildFleetComputeConfigurationOutputReference.property.instanceType"></a>
+
+```go
+func InstanceType() *string
+```
+
+- *Type:* *string
 
 ---
 

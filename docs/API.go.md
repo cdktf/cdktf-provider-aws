@@ -1646,6 +1646,8 @@ The following submodules are available:
 - [quicksightGroupMembership](./quicksightGroupMembership.go.md)
 - [quicksightIamPolicyAssignment](./quicksightIamPolicyAssignment.go.md)
 - [quicksightIngestion](./quicksightIngestion.go.md)
+- [quicksightIpRestriction](./quicksightIpRestriction.go.md)
+- [quicksightKeyRegistration](./quicksightKeyRegistration.go.md)
 - [quicksightNamespace](./quicksightNamespace.go.md)
 - [quicksightRefreshSchedule](./quicksightRefreshSchedule.go.md)
 - [quicksightRoleMembership](./quicksightRoleMembership.go.md)

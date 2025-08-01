@@ -1036,6 +1036,8 @@ Object.defineProperty(exports, 'quicksightGroup', { get: function () { return re
 Object.defineProperty(exports, 'quicksightGroupMembership', { get: function () { return require('./quicksight-group-membership'); } });
 Object.defineProperty(exports, 'quicksightIamPolicyAssignment', { get: function () { return require('./quicksight-iam-policy-assignment'); } });
 Object.defineProperty(exports, 'quicksightIngestion', { get: function () { return require('./quicksight-ingestion'); } });
+Object.defineProperty(exports, 'quicksightIpRestriction', { get: function () { return require('./quicksight-ip-restriction'); } });
+Object.defineProperty(exports, 'quicksightKeyRegistration', { get: function () { return require('./quicksight-key-registration'); } });
 Object.defineProperty(exports, 'quicksightNamespace', { get: function () { return require('./quicksight-namespace'); } });
 Object.defineProperty(exports, 'quicksightRefreshSchedule', { get: function () { return require('./quicksight-refresh-schedule'); } });
 Object.defineProperty(exports, 'quicksightRoleMembership', { get: function () { return require('./quicksight-role-membership'); } });

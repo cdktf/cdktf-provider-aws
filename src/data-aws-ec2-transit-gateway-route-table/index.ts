@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/data-sources/ec2_transit_gateway_route_table
+// https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/data-sources/ec2_transit_gateway_route_table
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsEc2TransitGatewayRouteTableConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/data-sources/ec2_transit_gateway_route_table#id DataAwsEc2TransitGatewayRouteTable#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/data-sources/ec2_transit_gateway_route_table#id DataAwsEc2TransitGatewayRouteTable#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,33 +22,33 @@ export interface DataAwsEc2TransitGatewayRouteTableConfig extends cdktf.Terrafor
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/data-sources/ec2_transit_gateway_route_table#region DataAwsEc2TransitGatewayRouteTable#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/data-sources/ec2_transit_gateway_route_table#region DataAwsEc2TransitGatewayRouteTable#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/data-sources/ec2_transit_gateway_route_table#tags DataAwsEc2TransitGatewayRouteTable#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/data-sources/ec2_transit_gateway_route_table#tags DataAwsEc2TransitGatewayRouteTable#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
   * filter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/data-sources/ec2_transit_gateway_route_table#filter DataAwsEc2TransitGatewayRouteTable#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/data-sources/ec2_transit_gateway_route_table#filter DataAwsEc2TransitGatewayRouteTable#filter}
   */
   readonly filter?: DataAwsEc2TransitGatewayRouteTableFilter[] | cdktf.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/data-sources/ec2_transit_gateway_route_table#timeouts DataAwsEc2TransitGatewayRouteTable#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/data-sources/ec2_transit_gateway_route_table#timeouts DataAwsEc2TransitGatewayRouteTable#timeouts}
   */
   readonly timeouts?: DataAwsEc2TransitGatewayRouteTableTimeouts;
 }
 export interface DataAwsEc2TransitGatewayRouteTableFilter {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/data-sources/ec2_transit_gateway_route_table#name DataAwsEc2TransitGatewayRouteTable#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/data-sources/ec2_transit_gateway_route_table#name DataAwsEc2TransitGatewayRouteTable#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/data-sources/ec2_transit_gateway_route_table#values DataAwsEc2TransitGatewayRouteTable#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/data-sources/ec2_transit_gateway_route_table#values DataAwsEc2TransitGatewayRouteTable#values}
   */
   readonly values: string[];
 }
@@ -187,7 +187,7 @@ export class DataAwsEc2TransitGatewayRouteTableFilterList extends cdktf.ComplexL
 }
 export interface DataAwsEc2TransitGatewayRouteTableTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/data-sources/ec2_transit_gateway_route_table#read DataAwsEc2TransitGatewayRouteTable#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/data-sources/ec2_transit_gateway_route_table#read DataAwsEc2TransitGatewayRouteTable#read}
   */
   readonly read?: string;
 }
@@ -281,7 +281,7 @@ export class DataAwsEc2TransitGatewayRouteTableTimeoutsOutputReference extends c
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/data-sources/ec2_transit_gateway_route_table aws_ec2_transit_gateway_route_table}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/data-sources/ec2_transit_gateway_route_table aws_ec2_transit_gateway_route_table}
 */
 export class DataAwsEc2TransitGatewayRouteTable extends cdktf.TerraformDataSource {
 
@@ -297,7 +297,7 @@ export class DataAwsEc2TransitGatewayRouteTable extends cdktf.TerraformDataSourc
   * Generates CDKTF code for importing a DataAwsEc2TransitGatewayRouteTable resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsEc2TransitGatewayRouteTable to import
-  * @param importFromId The id of the existing DataAwsEc2TransitGatewayRouteTable that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/data-sources/ec2_transit_gateway_route_table#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsEc2TransitGatewayRouteTable that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/data-sources/ec2_transit_gateway_route_table#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsEc2TransitGatewayRouteTable to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -309,7 +309,7 @@ export class DataAwsEc2TransitGatewayRouteTable extends cdktf.TerraformDataSourc
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/data-sources/ec2_transit_gateway_route_table aws_ec2_transit_gateway_route_table} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/data-sources/ec2_transit_gateway_route_table aws_ec2_transit_gateway_route_table} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -320,7 +320,7 @@ export class DataAwsEc2TransitGatewayRouteTable extends cdktf.TerraformDataSourc
       terraformResourceType: 'aws_ec2_transit_gateway_route_table',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.6.0',
+        providerVersion: '6.7.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

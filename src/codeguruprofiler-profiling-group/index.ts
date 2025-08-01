@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/codeguruprofiler_profiling_group
+// https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/codeguruprofiler_profiling_group
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,33 +13,33 @@ import * as cdktf from 'cdktf';
 
 export interface CodeguruprofilerProfilingGroupConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/codeguruprofiler_profiling_group#compute_platform CodeguruprofilerProfilingGroup#compute_platform}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/codeguruprofiler_profiling_group#compute_platform CodeguruprofilerProfilingGroup#compute_platform}
   */
   readonly computePlatform?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/codeguruprofiler_profiling_group#name CodeguruprofilerProfilingGroup#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/codeguruprofiler_profiling_group#name CodeguruprofilerProfilingGroup#name}
   */
   readonly name: string;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/codeguruprofiler_profiling_group#region CodeguruprofilerProfilingGroup#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/codeguruprofiler_profiling_group#region CodeguruprofilerProfilingGroup#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/codeguruprofiler_profiling_group#tags CodeguruprofilerProfilingGroup#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/codeguruprofiler_profiling_group#tags CodeguruprofilerProfilingGroup#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
   * agent_orchestration_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/codeguruprofiler_profiling_group#agent_orchestration_config CodeguruprofilerProfilingGroup#agent_orchestration_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/codeguruprofiler_profiling_group#agent_orchestration_config CodeguruprofilerProfilingGroup#agent_orchestration_config}
   */
   readonly agentOrchestrationConfig?: CodeguruprofilerProfilingGroupAgentOrchestrationConfig[] | cdktf.IResolvable;
 }
 export interface CodeguruprofilerProfilingGroupAgentOrchestrationConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/codeguruprofiler_profiling_group#profiling_enabled CodeguruprofilerProfilingGroup#profiling_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/codeguruprofiler_profiling_group#profiling_enabled CodeguruprofilerProfilingGroup#profiling_enabled}
   */
   readonly profilingEnabled: boolean | cdktf.IResolvable;
 }
@@ -152,7 +152,7 @@ export class CodeguruprofilerProfilingGroupAgentOrchestrationConfigList extends 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/codeguruprofiler_profiling_group aws_codeguruprofiler_profiling_group}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/codeguruprofiler_profiling_group aws_codeguruprofiler_profiling_group}
 */
 export class CodeguruprofilerProfilingGroup extends cdktf.TerraformResource {
 
@@ -168,7 +168,7 @@ export class CodeguruprofilerProfilingGroup extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a CodeguruprofilerProfilingGroup resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CodeguruprofilerProfilingGroup to import
-  * @param importFromId The id of the existing CodeguruprofilerProfilingGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/codeguruprofiler_profiling_group#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing CodeguruprofilerProfilingGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/codeguruprofiler_profiling_group#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CodeguruprofilerProfilingGroup to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -180,7 +180,7 @@ export class CodeguruprofilerProfilingGroup extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/codeguruprofiler_profiling_group aws_codeguruprofiler_profiling_group} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/codeguruprofiler_profiling_group aws_codeguruprofiler_profiling_group} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -191,7 +191,7 @@ export class CodeguruprofilerProfilingGroup extends cdktf.TerraformResource {
       terraformResourceType: 'aws_codeguruprofiler_profiling_group',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.6.0',
+        providerVersion: '6.7.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/vpc_route_server_endpoint
+// https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/vpc_route_server_endpoint
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,25 +15,25 @@ export interface VpcRouteServerEndpointConfig extends cdktf.TerraformMetaArgumen
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/vpc_route_server_endpoint#region VpcRouteServerEndpoint#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/vpc_route_server_endpoint#region VpcRouteServerEndpoint#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/vpc_route_server_endpoint#route_server_id VpcRouteServerEndpoint#route_server_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/vpc_route_server_endpoint#route_server_id VpcRouteServerEndpoint#route_server_id}
   */
   readonly routeServerId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/vpc_route_server_endpoint#subnet_id VpcRouteServerEndpoint#subnet_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/vpc_route_server_endpoint#subnet_id VpcRouteServerEndpoint#subnet_id}
   */
   readonly subnetId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/vpc_route_server_endpoint#tags VpcRouteServerEndpoint#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/vpc_route_server_endpoint#tags VpcRouteServerEndpoint#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/vpc_route_server_endpoint#timeouts VpcRouteServerEndpoint#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/vpc_route_server_endpoint#timeouts VpcRouteServerEndpoint#timeouts}
   */
   readonly timeouts?: VpcRouteServerEndpointTimeouts;
 }
@@ -41,13 +41,13 @@ export interface VpcRouteServerEndpointTimeouts {
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/vpc_route_server_endpoint#create VpcRouteServerEndpoint#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/vpc_route_server_endpoint#create VpcRouteServerEndpoint#create}
   */
   readonly create?: string;
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/vpc_route_server_endpoint#delete VpcRouteServerEndpoint#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/vpc_route_server_endpoint#delete VpcRouteServerEndpoint#delete}
   */
   readonly delete?: string;
 }
@@ -170,7 +170,7 @@ export class VpcRouteServerEndpointTimeoutsOutputReference extends cdktf.Complex
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/vpc_route_server_endpoint aws_vpc_route_server_endpoint}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/vpc_route_server_endpoint aws_vpc_route_server_endpoint}
 */
 export class VpcRouteServerEndpoint extends cdktf.TerraformResource {
 
@@ -186,7 +186,7 @@ export class VpcRouteServerEndpoint extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a VpcRouteServerEndpoint resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the VpcRouteServerEndpoint to import
-  * @param importFromId The id of the existing VpcRouteServerEndpoint that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/vpc_route_server_endpoint#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing VpcRouteServerEndpoint that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/vpc_route_server_endpoint#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the VpcRouteServerEndpoint to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -198,7 +198,7 @@ export class VpcRouteServerEndpoint extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/vpc_route_server_endpoint aws_vpc_route_server_endpoint} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/vpc_route_server_endpoint aws_vpc_route_server_endpoint} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -209,7 +209,7 @@ export class VpcRouteServerEndpoint extends cdktf.TerraformResource {
       terraformResourceType: 'aws_vpc_route_server_endpoint',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.6.0',
+        providerVersion: '6.7.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

@@ -1646,6 +1646,8 @@ The following submodules are available:
 - [quicksightGroupMembership](./quicksightGroupMembership.csharp.md)
 - [quicksightIamPolicyAssignment](./quicksightIamPolicyAssignment.csharp.md)
 - [quicksightIngestion](./quicksightIngestion.csharp.md)
+- [quicksightIpRestriction](./quicksightIpRestriction.csharp.md)
+- [quicksightKeyRegistration](./quicksightKeyRegistration.csharp.md)
 - [quicksightNamespace](./quicksightNamespace.csharp.md)
 - [quicksightRefreshSchedule](./quicksightRefreshSchedule.csharp.md)
 - [quicksightRoleMembership](./quicksightRoleMembership.csharp.md)

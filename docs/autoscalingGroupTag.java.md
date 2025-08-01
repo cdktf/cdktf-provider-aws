@@ -4,7 +4,7 @@
 
 ### AutoscalingGroupTagA <a name="AutoscalingGroupTagA" id="@cdktf/provider-aws.autoscalingGroupTag.AutoscalingGroupTagA"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/autoscaling_group_tag aws_autoscaling_group_tag}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/autoscaling_group_tag aws_autoscaling_group_tag}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.autoscalingGroupTag.AutoscalingGroupTagA.Initializer"></a>
 
@@ -41,9 +41,9 @@ AutoscalingGroupTagA.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-aws.autoscalingGroupTag.AutoscalingGroupTagA.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.autoscalingGroupTag.AutoscalingGroupTagA.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.autoscalingGroupTag.AutoscalingGroupTagA.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.autoscalingGroupTag.AutoscalingGroupTagA.Initializer.parameter.autoscalingGroupName">autoscalingGroupName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/autoscaling_group_tag#autoscaling_group_name AutoscalingGroupTagA#autoscaling_group_name}. |
+| <code><a href="#@cdktf/provider-aws.autoscalingGroupTag.AutoscalingGroupTagA.Initializer.parameter.autoscalingGroupName">autoscalingGroupName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/autoscaling_group_tag#autoscaling_group_name AutoscalingGroupTagA#autoscaling_group_name}. |
 | <code><a href="#@cdktf/provider-aws.autoscalingGroupTag.AutoscalingGroupTagA.Initializer.parameter.tag">tag</a></code> | <code><a href="#@cdktf/provider-aws.autoscalingGroupTag.AutoscalingGroupTagTag">AutoscalingGroupTagTag</a></code> | tag block. |
-| <code><a href="#@cdktf/provider-aws.autoscalingGroupTag.AutoscalingGroupTagA.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/autoscaling_group_tag#id AutoscalingGroupTagA#id}. |
+| <code><a href="#@cdktf/provider-aws.autoscalingGroupTag.AutoscalingGroupTagA.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/autoscaling_group_tag#id AutoscalingGroupTagA#id}. |
 | <code><a href="#@cdktf/provider-aws.autoscalingGroupTag.AutoscalingGroupTagA.Initializer.parameter.region">region</a></code> | <code>java.lang.String</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/autoscaling_group_tag#autoscaling_group_name AutoscalingGroupTagA#autoscaling_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/autoscaling_group_tag#autoscaling_group_name AutoscalingGroupTagA#autoscaling_group_name}.
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 tag block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/autoscaling_group_tag#tag AutoscalingGroupTagA#tag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/autoscaling_group_tag#tag AutoscalingGroupTagA#tag}
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/autoscaling_group_tag#id AutoscalingGroupTagA#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/autoscaling_group_tag#id AutoscalingGroupTagA#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -143,7 +143,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/autoscaling_group_tag#region AutoscalingGroupTagA#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/autoscaling_group_tag#region AutoscalingGroupTagA#region}
 
 ---
 
@@ -597,7 +597,7 @@ The construct id used in the generated config for the AutoscalingGroupTagA to im
 
 The id of the existing AutoscalingGroupTagA that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/autoscaling_group_tag#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/autoscaling_group_tag#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -917,9 +917,9 @@ AutoscalingGroupTagAConfig.builder()
 | <code><a href="#@cdktf/provider-aws.autoscalingGroupTag.AutoscalingGroupTagAConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.autoscalingGroupTag.AutoscalingGroupTagAConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.autoscalingGroupTag.AutoscalingGroupTagAConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.autoscalingGroupTag.AutoscalingGroupTagAConfig.property.autoscalingGroupName">autoscalingGroupName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/autoscaling_group_tag#autoscaling_group_name AutoscalingGroupTagA#autoscaling_group_name}. |
+| <code><a href="#@cdktf/provider-aws.autoscalingGroupTag.AutoscalingGroupTagAConfig.property.autoscalingGroupName">autoscalingGroupName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/autoscaling_group_tag#autoscaling_group_name AutoscalingGroupTagA#autoscaling_group_name}. |
 | <code><a href="#@cdktf/provider-aws.autoscalingGroupTag.AutoscalingGroupTagAConfig.property.tag">tag</a></code> | <code><a href="#@cdktf/provider-aws.autoscalingGroupTag.AutoscalingGroupTagTag">AutoscalingGroupTagTag</a></code> | tag block. |
-| <code><a href="#@cdktf/provider-aws.autoscalingGroupTag.AutoscalingGroupTagAConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/autoscaling_group_tag#id AutoscalingGroupTagA#id}. |
+| <code><a href="#@cdktf/provider-aws.autoscalingGroupTag.AutoscalingGroupTagAConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/autoscaling_group_tag#id AutoscalingGroupTagA#id}. |
 | <code><a href="#@cdktf/provider-aws.autoscalingGroupTag.AutoscalingGroupTagAConfig.property.region">region</a></code> | <code>java.lang.String</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -1002,7 +1002,7 @@ public java.lang.String getAutoscalingGroupName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/autoscaling_group_tag#autoscaling_group_name AutoscalingGroupTagA#autoscaling_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/autoscaling_group_tag#autoscaling_group_name AutoscalingGroupTagA#autoscaling_group_name}.
 
 ---
 
@@ -1016,7 +1016,7 @@ public AutoscalingGroupTagTag getTag();
 
 tag block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/autoscaling_group_tag#tag AutoscalingGroupTagA#tag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/autoscaling_group_tag#tag AutoscalingGroupTagA#tag}
 
 ---
 
@@ -1028,7 +1028,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/autoscaling_group_tag#id AutoscalingGroupTagA#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/autoscaling_group_tag#id AutoscalingGroupTagA#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1045,7 +1045,7 @@ public java.lang.String getRegion();
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/autoscaling_group_tag#region AutoscalingGroupTagA#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/autoscaling_group_tag#region AutoscalingGroupTagA#region}
 
 ---
 
@@ -1068,9 +1068,9 @@ AutoscalingGroupTagTag.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.autoscalingGroupTag.AutoscalingGroupTagTag.property.key">key</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/autoscaling_group_tag#key AutoscalingGroupTagA#key}. |
-| <code><a href="#@cdktf/provider-aws.autoscalingGroupTag.AutoscalingGroupTagTag.property.propagateAtLaunch">propagateAtLaunch</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/autoscaling_group_tag#propagate_at_launch AutoscalingGroupTagA#propagate_at_launch}. |
-| <code><a href="#@cdktf/provider-aws.autoscalingGroupTag.AutoscalingGroupTagTag.property.value">value</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/autoscaling_group_tag#value AutoscalingGroupTagA#value}. |
+| <code><a href="#@cdktf/provider-aws.autoscalingGroupTag.AutoscalingGroupTagTag.property.key">key</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/autoscaling_group_tag#key AutoscalingGroupTagA#key}. |
+| <code><a href="#@cdktf/provider-aws.autoscalingGroupTag.AutoscalingGroupTagTag.property.propagateAtLaunch">propagateAtLaunch</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/autoscaling_group_tag#propagate_at_launch AutoscalingGroupTagA#propagate_at_launch}. |
+| <code><a href="#@cdktf/provider-aws.autoscalingGroupTag.AutoscalingGroupTagTag.property.value">value</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/autoscaling_group_tag#value AutoscalingGroupTagA#value}. |
 
 ---
 
@@ -1082,7 +1082,7 @@ public java.lang.String getKey();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/autoscaling_group_tag#key AutoscalingGroupTagA#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/autoscaling_group_tag#key AutoscalingGroupTagA#key}.
 
 ---
 
@@ -1094,7 +1094,7 @@ public java.lang.Object getPropagateAtLaunch();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/autoscaling_group_tag#propagate_at_launch AutoscalingGroupTagA#propagate_at_launch}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/autoscaling_group_tag#propagate_at_launch AutoscalingGroupTagA#propagate_at_launch}.
 
 ---
 
@@ -1106,7 +1106,7 @@ public java.lang.String getValue();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/autoscaling_group_tag#value AutoscalingGroupTagA#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/autoscaling_group_tag#value AutoscalingGroupTagA#value}.
 
 ---
 

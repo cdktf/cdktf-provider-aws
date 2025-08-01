@@ -1646,6 +1646,8 @@ The following submodules are available:
 - [quicksightGroupMembership](./quicksightGroupMembership.python.md)
 - [quicksightIamPolicyAssignment](./quicksightIamPolicyAssignment.python.md)
 - [quicksightIngestion](./quicksightIngestion.python.md)
+- [quicksightIpRestriction](./quicksightIpRestriction.python.md)
+- [quicksightKeyRegistration](./quicksightKeyRegistration.python.md)
 - [quicksightNamespace](./quicksightNamespace.python.md)
 - [quicksightRefreshSchedule](./quicksightRefreshSchedule.python.md)
 - [quicksightRoleMembership](./quicksightRoleMembership.python.md)

@@ -4,7 +4,7 @@
 
 ### VpnGateway <a name="VpnGateway" id="@cdktf/provider-aws.vpnGateway.VpnGateway"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/vpn_gateway aws_vpn_gateway}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/vpn_gateway aws_vpn_gateway}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.vpnGateway.VpnGateway.Initializer"></a>
 
@@ -42,13 +42,13 @@ vpnGateway.VpnGateway(
 | <code><a href="#@cdktf/provider-aws.vpnGateway.VpnGateway.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.vpnGateway.VpnGateway.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.vpnGateway.VpnGateway.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnGateway.VpnGateway.Initializer.parameter.amazonSideAsn">amazon_side_asn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/vpn_gateway#amazon_side_asn VpnGateway#amazon_side_asn}. |
-| <code><a href="#@cdktf/provider-aws.vpnGateway.VpnGateway.Initializer.parameter.availabilityZone">availability_zone</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/vpn_gateway#availability_zone VpnGateway#availability_zone}. |
-| <code><a href="#@cdktf/provider-aws.vpnGateway.VpnGateway.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/vpn_gateway#id VpnGateway#id}. |
+| <code><a href="#@cdktf/provider-aws.vpnGateway.VpnGateway.Initializer.parameter.amazonSideAsn">amazon_side_asn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/vpn_gateway#amazon_side_asn VpnGateway#amazon_side_asn}. |
+| <code><a href="#@cdktf/provider-aws.vpnGateway.VpnGateway.Initializer.parameter.availabilityZone">availability_zone</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/vpn_gateway#availability_zone VpnGateway#availability_zone}. |
+| <code><a href="#@cdktf/provider-aws.vpnGateway.VpnGateway.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/vpn_gateway#id VpnGateway#id}. |
 | <code><a href="#@cdktf/provider-aws.vpnGateway.VpnGateway.Initializer.parameter.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktf/provider-aws.vpnGateway.VpnGateway.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/vpn_gateway#tags VpnGateway#tags}. |
-| <code><a href="#@cdktf/provider-aws.vpnGateway.VpnGateway.Initializer.parameter.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/vpn_gateway#tags_all VpnGateway#tags_all}. |
-| <code><a href="#@cdktf/provider-aws.vpnGateway.VpnGateway.Initializer.parameter.vpcId">vpc_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/vpn_gateway#vpc_id VpnGateway#vpc_id}. |
+| <code><a href="#@cdktf/provider-aws.vpnGateway.VpnGateway.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/vpn_gateway#tags VpnGateway#tags}. |
+| <code><a href="#@cdktf/provider-aws.vpnGateway.VpnGateway.Initializer.parameter.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/vpn_gateway#tags_all VpnGateway#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.vpnGateway.VpnGateway.Initializer.parameter.vpcId">vpc_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/vpn_gateway#vpc_id VpnGateway#vpc_id}. |
 
 ---
 
@@ -116,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/vpn_gateway#amazon_side_asn VpnGateway#amazon_side_asn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/vpn_gateway#amazon_side_asn VpnGateway#amazon_side_asn}.
 
 ---
 
@@ -124,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/vpn_gateway#availability_zone VpnGateway#availability_zone}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/vpn_gateway#availability_zone VpnGateway#availability_zone}.
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/vpn_gateway#id VpnGateway#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/vpn_gateway#id VpnGateway#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -145,7 +145,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/vpn_gateway#region VpnGateway#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/vpn_gateway#region VpnGateway#region}
 
 ---
 
@@ -153,7 +153,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/vpn_gateway#tags VpnGateway#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/vpn_gateway#tags VpnGateway#tags}.
 
 ---
 
@@ -161,7 +161,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/vpn_gateway#tags_all VpnGateway#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/vpn_gateway#tags_all VpnGateway#tags_all}.
 
 ---
 
@@ -169,7 +169,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/vpn_gateway#vpc_id VpnGateway#vpc_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/vpn_gateway#vpc_id VpnGateway#vpc_id}.
 
 ---
 
@@ -691,7 +691,7 @@ The construct id used in the generated config for the VpnGateway to import.
 
 The id of the existing VpnGateway that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/vpn_gateway#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/vpn_gateway#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1087,13 +1087,13 @@ vpnGateway.VpnGatewayConfig(
 | <code><a href="#@cdktf/provider-aws.vpnGateway.VpnGatewayConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.vpnGateway.VpnGatewayConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.vpnGateway.VpnGatewayConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnGateway.VpnGatewayConfig.property.amazonSideAsn">amazon_side_asn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/vpn_gateway#amazon_side_asn VpnGateway#amazon_side_asn}. |
-| <code><a href="#@cdktf/provider-aws.vpnGateway.VpnGatewayConfig.property.availabilityZone">availability_zone</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/vpn_gateway#availability_zone VpnGateway#availability_zone}. |
-| <code><a href="#@cdktf/provider-aws.vpnGateway.VpnGatewayConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/vpn_gateway#id VpnGateway#id}. |
+| <code><a href="#@cdktf/provider-aws.vpnGateway.VpnGatewayConfig.property.amazonSideAsn">amazon_side_asn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/vpn_gateway#amazon_side_asn VpnGateway#amazon_side_asn}. |
+| <code><a href="#@cdktf/provider-aws.vpnGateway.VpnGatewayConfig.property.availabilityZone">availability_zone</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/vpn_gateway#availability_zone VpnGateway#availability_zone}. |
+| <code><a href="#@cdktf/provider-aws.vpnGateway.VpnGatewayConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/vpn_gateway#id VpnGateway#id}. |
 | <code><a href="#@cdktf/provider-aws.vpnGateway.VpnGatewayConfig.property.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktf/provider-aws.vpnGateway.VpnGatewayConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/vpn_gateway#tags VpnGateway#tags}. |
-| <code><a href="#@cdktf/provider-aws.vpnGateway.VpnGatewayConfig.property.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/vpn_gateway#tags_all VpnGateway#tags_all}. |
-| <code><a href="#@cdktf/provider-aws.vpnGateway.VpnGatewayConfig.property.vpcId">vpc_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/vpn_gateway#vpc_id VpnGateway#vpc_id}. |
+| <code><a href="#@cdktf/provider-aws.vpnGateway.VpnGatewayConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/vpn_gateway#tags VpnGateway#tags}. |
+| <code><a href="#@cdktf/provider-aws.vpnGateway.VpnGatewayConfig.property.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/vpn_gateway#tags_all VpnGateway#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.vpnGateway.VpnGatewayConfig.property.vpcId">vpc_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/vpn_gateway#vpc_id VpnGateway#vpc_id}. |
 
 ---
 
@@ -1175,7 +1175,7 @@ amazon_side_asn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/vpn_gateway#amazon_side_asn VpnGateway#amazon_side_asn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/vpn_gateway#amazon_side_asn VpnGateway#amazon_side_asn}.
 
 ---
 
@@ -1187,7 +1187,7 @@ availability_zone: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/vpn_gateway#availability_zone VpnGateway#availability_zone}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/vpn_gateway#availability_zone VpnGateway#availability_zone}.
 
 ---
 
@@ -1199,7 +1199,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/vpn_gateway#id VpnGateway#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/vpn_gateway#id VpnGateway#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1216,7 +1216,7 @@ region: str
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/vpn_gateway#region VpnGateway#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/vpn_gateway#region VpnGateway#region}
 
 ---
 
@@ -1228,7 +1228,7 @@ tags: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/vpn_gateway#tags VpnGateway#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/vpn_gateway#tags VpnGateway#tags}.
 
 ---
 
@@ -1240,7 +1240,7 @@ tags_all: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/vpn_gateway#tags_all VpnGateway#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/vpn_gateway#tags_all VpnGateway#tags_all}.
 
 ---
 
@@ -1252,7 +1252,7 @@ vpc_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/vpn_gateway#vpc_id VpnGateway#vpc_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/vpn_gateway#vpc_id VpnGateway#vpc_id}.
 
 ---
 

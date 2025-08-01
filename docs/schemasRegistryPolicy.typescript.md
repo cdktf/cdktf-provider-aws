@@ -4,7 +4,7 @@
 
 ### SchemasRegistryPolicy <a name="SchemasRegistryPolicy" id="@cdktf/provider-aws.schemasRegistryPolicy.SchemasRegistryPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/schemas_registry_policy aws_schemas_registry_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/schemas_registry_policy aws_schemas_registry_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.schemasRegistryPolicy.SchemasRegistryPolicy.Initializer"></a>
 
@@ -481,7 +481,7 @@ The construct id used in the generated config for the SchemasRegistryPolicy to i
 
 The id of the existing SchemasRegistryPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/schemas_registry_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/schemas_registry_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -785,9 +785,9 @@ const schemasRegistryPolicyConfig: schemasRegistryPolicy.SchemasRegistryPolicyCo
 | <code><a href="#@cdktf/provider-aws.schemasRegistryPolicy.SchemasRegistryPolicyConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.schemasRegistryPolicy.SchemasRegistryPolicyConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.schemasRegistryPolicy.SchemasRegistryPolicyConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.schemasRegistryPolicy.SchemasRegistryPolicyConfig.property.policy">policy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/schemas_registry_policy#policy SchemasRegistryPolicy#policy}. |
-| <code><a href="#@cdktf/provider-aws.schemasRegistryPolicy.SchemasRegistryPolicyConfig.property.registryName">registryName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/schemas_registry_policy#registry_name SchemasRegistryPolicy#registry_name}. |
-| <code><a href="#@cdktf/provider-aws.schemasRegistryPolicy.SchemasRegistryPolicyConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/schemas_registry_policy#id SchemasRegistryPolicy#id}. |
+| <code><a href="#@cdktf/provider-aws.schemasRegistryPolicy.SchemasRegistryPolicyConfig.property.policy">policy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/schemas_registry_policy#policy SchemasRegistryPolicy#policy}. |
+| <code><a href="#@cdktf/provider-aws.schemasRegistryPolicy.SchemasRegistryPolicyConfig.property.registryName">registryName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/schemas_registry_policy#registry_name SchemasRegistryPolicy#registry_name}. |
+| <code><a href="#@cdktf/provider-aws.schemasRegistryPolicy.SchemasRegistryPolicyConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/schemas_registry_policy#id SchemasRegistryPolicy#id}. |
 | <code><a href="#@cdktf/provider-aws.schemasRegistryPolicy.SchemasRegistryPolicyConfig.property.region">region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -870,7 +870,7 @@ public readonly policy: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/schemas_registry_policy#policy SchemasRegistryPolicy#policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/schemas_registry_policy#policy SchemasRegistryPolicy#policy}.
 
 ---
 
@@ -882,7 +882,7 @@ public readonly registryName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/schemas_registry_policy#registry_name SchemasRegistryPolicy#registry_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/schemas_registry_policy#registry_name SchemasRegistryPolicy#registry_name}.
 
 ---
 
@@ -894,7 +894,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/schemas_registry_policy#id SchemasRegistryPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/schemas_registry_policy#id SchemasRegistryPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -911,7 +911,7 @@ public readonly region: string;
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/schemas_registry_policy#region SchemasRegistryPolicy#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/schemas_registry_policy#region SchemasRegistryPolicy#region}
 
 ---
 

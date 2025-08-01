@@ -4,7 +4,7 @@
 
 ### RekognitionStreamProcessor <a name="RekognitionStreamProcessor" id="@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessor"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/rekognition_stream_processor aws_rekognition_stream_processor}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/rekognition_stream_processor aws_rekognition_stream_processor}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessor.Initializer"></a>
 
@@ -65,7 +65,7 @@ RekognitionStreamProcessor.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessor.Initializer.parameter.region">region</a></code> | <code>java.lang.String</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessor.Initializer.parameter.regionsOfInterest">regionsOfInterest</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorRegionsOfInterest">RekognitionStreamProcessorRegionsOfInterest</a>></code> | regions_of_interest block. |
 | <code><a href="#@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessor.Initializer.parameter.settings">settings</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorSettings">RekognitionStreamProcessorSettings</a>></code> | settings block. |
-| <code><a href="#@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessor.Initializer.parameter.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/rekognition_stream_processor#tags RekognitionStreamProcessor#tags}. |
+| <code><a href="#@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessor.Initializer.parameter.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/rekognition_stream_processor#tags RekognitionStreamProcessor#tags}. |
 | <code><a href="#@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessor.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorTimeouts">RekognitionStreamProcessorTimeouts</a></code> | timeouts block. |
 
 ---
@@ -136,7 +136,7 @@ Must be unique amongst siblings in the same scope
 
 An identifier you assign to the stream processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/rekognition_stream_processor#name RekognitionStreamProcessor#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/rekognition_stream_processor#name RekognitionStreamProcessor#name}
 
 ---
 
@@ -146,7 +146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The Amazon Resource Number (ARN) of the IAM role that allows access to the stream processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/rekognition_stream_processor#role_arn RekognitionStreamProcessor#role_arn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/rekognition_stream_processor#role_arn RekognitionStreamProcessor#role_arn}
 
 ---
 
@@ -156,7 +156,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 data_sharing_preference block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/rekognition_stream_processor#data_sharing_preference RekognitionStreamProcessor#data_sharing_preference}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/rekognition_stream_processor#data_sharing_preference RekognitionStreamProcessor#data_sharing_preference}
 
 ---
 
@@ -166,7 +166,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 input block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/rekognition_stream_processor#input RekognitionStreamProcessor#input}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/rekognition_stream_processor#input RekognitionStreamProcessor#input}
 
 ---
 
@@ -178,7 +178,7 @@ The identifier for your AWS Key Management Service key (AWS KMS key).
 
 You can supply the Amazon Resource Name (ARN) of your KMS key, the ID of your KMS key, an alias for your KMS key, or an alias ARN.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/rekognition_stream_processor#kms_key_id RekognitionStreamProcessor#kms_key_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/rekognition_stream_processor#kms_key_id RekognitionStreamProcessor#kms_key_id}
 
 ---
 
@@ -188,7 +188,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 notification_channel block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/rekognition_stream_processor#notification_channel RekognitionStreamProcessor#notification_channel}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/rekognition_stream_processor#notification_channel RekognitionStreamProcessor#notification_channel}
 
 ---
 
@@ -198,7 +198,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 output block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/rekognition_stream_processor#output RekognitionStreamProcessor#output}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/rekognition_stream_processor#output RekognitionStreamProcessor#output}
 
 ---
 
@@ -208,7 +208,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/rekognition_stream_processor#region RekognitionStreamProcessor#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/rekognition_stream_processor#region RekognitionStreamProcessor#region}
 
 ---
 
@@ -218,7 +218,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 regions_of_interest block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/rekognition_stream_processor#regions_of_interest RekognitionStreamProcessor#regions_of_interest}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/rekognition_stream_processor#regions_of_interest RekognitionStreamProcessor#regions_of_interest}
 
 ---
 
@@ -228,7 +228,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/rekognition_stream_processor#settings RekognitionStreamProcessor#settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/rekognition_stream_processor#settings RekognitionStreamProcessor#settings}
 
 ---
 
@@ -236,7 +236,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/rekognition_stream_processor#tags RekognitionStreamProcessor#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/rekognition_stream_processor#tags RekognitionStreamProcessor#tags}.
 
 ---
 
@@ -246,7 +246,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/rekognition_stream_processor#timeouts RekognitionStreamProcessor#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/rekognition_stream_processor#timeouts RekognitionStreamProcessor#timeouts}
 
 ---
 
@@ -834,7 +834,7 @@ The construct id used in the generated config for the RekognitionStreamProcessor
 
 The id of the existing RekognitionStreamProcessor that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/rekognition_stream_processor#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/rekognition_stream_processor#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1387,7 +1387,7 @@ RekognitionStreamProcessorConfig.builder()
 | <code><a href="#@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorConfig.property.region">region</a></code> | <code>java.lang.String</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorConfig.property.regionsOfInterest">regionsOfInterest</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorRegionsOfInterest">RekognitionStreamProcessorRegionsOfInterest</a>></code> | regions_of_interest block. |
 | <code><a href="#@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorConfig.property.settings">settings</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorSettings">RekognitionStreamProcessorSettings</a>></code> | settings block. |
-| <code><a href="#@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorConfig.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/rekognition_stream_processor#tags RekognitionStreamProcessor#tags}. |
+| <code><a href="#@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorConfig.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/rekognition_stream_processor#tags RekognitionStreamProcessor#tags}. |
 | <code><a href="#@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorTimeouts">RekognitionStreamProcessorTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1472,7 +1472,7 @@ public java.lang.String getName();
 
 An identifier you assign to the stream processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/rekognition_stream_processor#name RekognitionStreamProcessor#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/rekognition_stream_processor#name RekognitionStreamProcessor#name}
 
 ---
 
@@ -1486,7 +1486,7 @@ public java.lang.String getRoleArn();
 
 The Amazon Resource Number (ARN) of the IAM role that allows access to the stream processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/rekognition_stream_processor#role_arn RekognitionStreamProcessor#role_arn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/rekognition_stream_processor#role_arn RekognitionStreamProcessor#role_arn}
 
 ---
 
@@ -1500,7 +1500,7 @@ public java.lang.Object getDataSharingPreference();
 
 data_sharing_preference block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/rekognition_stream_processor#data_sharing_preference RekognitionStreamProcessor#data_sharing_preference}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/rekognition_stream_processor#data_sharing_preference RekognitionStreamProcessor#data_sharing_preference}
 
 ---
 
@@ -1514,7 +1514,7 @@ public java.lang.Object getInput();
 
 input block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/rekognition_stream_processor#input RekognitionStreamProcessor#input}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/rekognition_stream_processor#input RekognitionStreamProcessor#input}
 
 ---
 
@@ -1530,7 +1530,7 @@ The identifier for your AWS Key Management Service key (AWS KMS key).
 
 You can supply the Amazon Resource Name (ARN) of your KMS key, the ID of your KMS key, an alias for your KMS key, or an alias ARN.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/rekognition_stream_processor#kms_key_id RekognitionStreamProcessor#kms_key_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/rekognition_stream_processor#kms_key_id RekognitionStreamProcessor#kms_key_id}
 
 ---
 
@@ -1544,7 +1544,7 @@ public java.lang.Object getNotificationChannel();
 
 notification_channel block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/rekognition_stream_processor#notification_channel RekognitionStreamProcessor#notification_channel}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/rekognition_stream_processor#notification_channel RekognitionStreamProcessor#notification_channel}
 
 ---
 
@@ -1558,7 +1558,7 @@ public java.lang.Object getOutput();
 
 output block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/rekognition_stream_processor#output RekognitionStreamProcessor#output}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/rekognition_stream_processor#output RekognitionStreamProcessor#output}
 
 ---
 
@@ -1572,7 +1572,7 @@ public java.lang.String getRegion();
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/rekognition_stream_processor#region RekognitionStreamProcessor#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/rekognition_stream_processor#region RekognitionStreamProcessor#region}
 
 ---
 
@@ -1586,7 +1586,7 @@ public java.lang.Object getRegionsOfInterest();
 
 regions_of_interest block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/rekognition_stream_processor#regions_of_interest RekognitionStreamProcessor#regions_of_interest}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/rekognition_stream_processor#regions_of_interest RekognitionStreamProcessor#regions_of_interest}
 
 ---
 
@@ -1600,7 +1600,7 @@ public java.lang.Object getSettings();
 
 settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/rekognition_stream_processor#settings RekognitionStreamProcessor#settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/rekognition_stream_processor#settings RekognitionStreamProcessor#settings}
 
 ---
 
@@ -1612,7 +1612,7 @@ public java.util.Map<java.lang.String, java.lang.String> getTags();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/rekognition_stream_processor#tags RekognitionStreamProcessor#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/rekognition_stream_processor#tags RekognitionStreamProcessor#tags}.
 
 ---
 
@@ -1626,7 +1626,7 @@ public RekognitionStreamProcessorTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/rekognition_stream_processor#timeouts RekognitionStreamProcessor#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/rekognition_stream_processor#timeouts RekognitionStreamProcessor#timeouts}
 
 ---
 
@@ -1661,7 +1661,7 @@ public java.lang.Object getOptIn();
 
 Do you want to share data with Rekognition to improve model performance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/rekognition_stream_processor#opt_in RekognitionStreamProcessor#opt_in}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/rekognition_stream_processor#opt_in RekognitionStreamProcessor#opt_in}
 
 ---
 
@@ -1696,7 +1696,7 @@ public java.lang.Object getKinesisVideoStream();
 
 kinesis_video_stream block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/rekognition_stream_processor#kinesis_video_stream RekognitionStreamProcessor#kinesis_video_stream}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/rekognition_stream_processor#kinesis_video_stream RekognitionStreamProcessor#kinesis_video_stream}
 
 ---
 
@@ -1730,7 +1730,7 @@ public java.lang.String getArn();
 
 ARN of the Kinesis video stream stream that streams the source video.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/rekognition_stream_processor#arn RekognitionStreamProcessor#arn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/rekognition_stream_processor#arn RekognitionStreamProcessor#arn}
 
 ---
 
@@ -1764,7 +1764,7 @@ public java.lang.String getSnsTopicArn();
 
 The Amazon Resource Number (ARN) of the Amazon Amazon Simple Notification Service topic to which Amazon Rekognition posts the completion status.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/rekognition_stream_processor#sns_topic_arn RekognitionStreamProcessor#sns_topic_arn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/rekognition_stream_processor#sns_topic_arn RekognitionStreamProcessor#sns_topic_arn}
 
 ---
 
@@ -1802,7 +1802,7 @@ public java.lang.Object getKinesisDataStream();
 
 kinesis_data_stream block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/rekognition_stream_processor#kinesis_data_stream RekognitionStreamProcessor#kinesis_data_stream}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/rekognition_stream_processor#kinesis_data_stream RekognitionStreamProcessor#kinesis_data_stream}
 
 ---
 
@@ -1816,7 +1816,7 @@ public java.lang.Object getS3Destination();
 
 s3_destination block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/rekognition_stream_processor#s3_destination RekognitionStreamProcessor#s3_destination}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/rekognition_stream_processor#s3_destination RekognitionStreamProcessor#s3_destination}
 
 ---
 
@@ -1850,7 +1850,7 @@ public java.lang.String getArn();
 
 ARN of the output Amazon Kinesis Data Streams stream.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/rekognition_stream_processor#arn RekognitionStreamProcessor#arn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/rekognition_stream_processor#arn RekognitionStreamProcessor#arn}
 
 ---
 
@@ -1886,7 +1886,7 @@ public java.lang.String getBucket();
 
 The name of the Amazon S3 bucket you want to associate with the streaming video project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/rekognition_stream_processor#bucket RekognitionStreamProcessor#bucket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/rekognition_stream_processor#bucket RekognitionStreamProcessor#bucket}
 
 ---
 
@@ -1900,7 +1900,7 @@ public java.lang.String getKeyPrefix();
 
 The prefix value of the location within the bucket that you want the information to be published to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/rekognition_stream_processor#key_prefix RekognitionStreamProcessor#key_prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/rekognition_stream_processor#key_prefix RekognitionStreamProcessor#key_prefix}
 
 ---
 
@@ -1938,7 +1938,7 @@ public java.lang.Object getBoundingBox();
 
 bounding_box block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/rekognition_stream_processor#bounding_box RekognitionStreamProcessor#bounding_box}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/rekognition_stream_processor#bounding_box RekognitionStreamProcessor#bounding_box}
 
 ---
 
@@ -1952,7 +1952,7 @@ public java.lang.Object getPolygon();
 
 polygon block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/rekognition_stream_processor#polygon RekognitionStreamProcessor#polygon}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/rekognition_stream_processor#polygon RekognitionStreamProcessor#polygon}
 
 ---
 
@@ -1992,7 +1992,7 @@ public java.lang.Number getHeight();
 
 Height of the bounding box as a ratio of the overall image height.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/rekognition_stream_processor#height RekognitionStreamProcessor#height}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/rekognition_stream_processor#height RekognitionStreamProcessor#height}
 
 ---
 
@@ -2006,7 +2006,7 @@ public java.lang.Number getLeft();
 
 Left coordinate of the bounding box as a ratio of overall image width.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/rekognition_stream_processor#left RekognitionStreamProcessor#left}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/rekognition_stream_processor#left RekognitionStreamProcessor#left}
 
 ---
 
@@ -2020,7 +2020,7 @@ public java.lang.Number getTop();
 
 Top coordinate of the bounding box as a ratio of overall image height.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/rekognition_stream_processor#top RekognitionStreamProcessor#top}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/rekognition_stream_processor#top RekognitionStreamProcessor#top}
 
 ---
 
@@ -2034,7 +2034,7 @@ public java.lang.Number getWidth();
 
 Width of the bounding box as a ratio of the overall image width.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/rekognition_stream_processor#width RekognitionStreamProcessor#width}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/rekognition_stream_processor#width RekognitionStreamProcessor#width}
 
 ---
 
@@ -2070,7 +2070,7 @@ public java.lang.Number getX();
 
 The value of the X coordinate for a point on a Polygon.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/rekognition_stream_processor#x RekognitionStreamProcessor#x}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/rekognition_stream_processor#x RekognitionStreamProcessor#x}
 
 ---
 
@@ -2084,7 +2084,7 @@ public java.lang.Number getY();
 
 The value of the Y coordinate for a point on a Polygon.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/rekognition_stream_processor#y RekognitionStreamProcessor#y}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/rekognition_stream_processor#y RekognitionStreamProcessor#y}
 
 ---
 
@@ -2122,7 +2122,7 @@ public java.lang.Object getConnectedHome();
 
 connected_home block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/rekognition_stream_processor#connected_home RekognitionStreamProcessor#connected_home}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/rekognition_stream_processor#connected_home RekognitionStreamProcessor#connected_home}
 
 ---
 
@@ -2136,7 +2136,7 @@ public java.lang.Object getFaceSearch();
 
 face_search block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/rekognition_stream_processor#face_search RekognitionStreamProcessor#face_search}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/rekognition_stream_processor#face_search RekognitionStreamProcessor#face_search}
 
 ---
 
@@ -2172,7 +2172,7 @@ public java.util.List<java.lang.String> getLabels();
 
 Specifies what you want to detect in the video, such as people, packages, or pets.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/rekognition_stream_processor#labels RekognitionStreamProcessor#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/rekognition_stream_processor#labels RekognitionStreamProcessor#labels}
 
 ---
 
@@ -2186,7 +2186,7 @@ public java.lang.Number getMinConfidence();
 
 The minimum confidence required to label an object in the video.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/rekognition_stream_processor#min_confidence RekognitionStreamProcessor#min_confidence}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/rekognition_stream_processor#min_confidence RekognitionStreamProcessor#min_confidence}
 
 ---
 
@@ -2222,7 +2222,7 @@ public java.lang.String getCollectionId();
 
 The ID of a collection that contains faces that you want to search for.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/rekognition_stream_processor#collection_id RekognitionStreamProcessor#collection_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/rekognition_stream_processor#collection_id RekognitionStreamProcessor#collection_id}
 
 ---
 
@@ -2236,7 +2236,7 @@ public java.lang.Number getFaceMatchThreshold();
 
 Minimum face match confidence score that must be met to return a result for a recognized face.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/rekognition_stream_processor#face_match_threshold RekognitionStreamProcessor#face_match_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/rekognition_stream_processor#face_match_threshold RekognitionStreamProcessor#face_match_threshold}
 
 ---
 
@@ -2274,7 +2274,7 @@ public java.lang.String getCreate();
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/rekognition_stream_processor#create RekognitionStreamProcessor#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/rekognition_stream_processor#create RekognitionStreamProcessor#create}
 
 ---
 
@@ -2288,7 +2288,7 @@ public java.lang.String getDelete();
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/rekognition_stream_processor#delete RekognitionStreamProcessor#delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/rekognition_stream_processor#delete RekognitionStreamProcessor#delete}
 
 ---
 
@@ -2302,7 +2302,7 @@ public java.lang.String getUpdate();
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/rekognition_stream_processor#update RekognitionStreamProcessor#update}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/rekognition_stream_processor#update RekognitionStreamProcessor#update}
 
 ---
 

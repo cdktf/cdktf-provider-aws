@@ -4,7 +4,7 @@
 
 ### DynamodbResourcePolicy <a name="DynamodbResourcePolicy" id="@cdktf/provider-aws.dynamodbResourcePolicy.DynamodbResourcePolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/dynamodb_resource_policy aws_dynamodb_resource_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/dynamodb_resource_policy aws_dynamodb_resource_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dynamodbResourcePolicy.DynamodbResourcePolicy.Initializer"></a>
 
@@ -481,7 +481,7 @@ The construct id used in the generated config for the DynamodbResourcePolicy to 
 
 The id of the existing DynamodbResourcePolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/dynamodb_resource_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/dynamodb_resource_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -807,9 +807,9 @@ const dynamodbResourcePolicyConfig: dynamodbResourcePolicy.DynamodbResourcePolic
 | <code><a href="#@cdktf/provider-aws.dynamodbResourcePolicy.DynamodbResourcePolicyConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dynamodbResourcePolicy.DynamodbResourcePolicyConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dynamodbResourcePolicy.DynamodbResourcePolicyConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbResourcePolicy.DynamodbResourcePolicyConfig.property.policy">policy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/dynamodb_resource_policy#policy DynamodbResourcePolicy#policy}. |
-| <code><a href="#@cdktf/provider-aws.dynamodbResourcePolicy.DynamodbResourcePolicyConfig.property.resourceArn">resourceArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/dynamodb_resource_policy#resource_arn DynamodbResourcePolicy#resource_arn}. |
-| <code><a href="#@cdktf/provider-aws.dynamodbResourcePolicy.DynamodbResourcePolicyConfig.property.confirmRemoveSelfResourceAccess">confirmRemoveSelfResourceAccess</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/dynamodb_resource_policy#confirm_remove_self_resource_access DynamodbResourcePolicy#confirm_remove_self_resource_access}. |
+| <code><a href="#@cdktf/provider-aws.dynamodbResourcePolicy.DynamodbResourcePolicyConfig.property.policy">policy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/dynamodb_resource_policy#policy DynamodbResourcePolicy#policy}. |
+| <code><a href="#@cdktf/provider-aws.dynamodbResourcePolicy.DynamodbResourcePolicyConfig.property.resourceArn">resourceArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/dynamodb_resource_policy#resource_arn DynamodbResourcePolicy#resource_arn}. |
+| <code><a href="#@cdktf/provider-aws.dynamodbResourcePolicy.DynamodbResourcePolicyConfig.property.confirmRemoveSelfResourceAccess">confirmRemoveSelfResourceAccess</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/dynamodb_resource_policy#confirm_remove_self_resource_access DynamodbResourcePolicy#confirm_remove_self_resource_access}. |
 | <code><a href="#@cdktf/provider-aws.dynamodbResourcePolicy.DynamodbResourcePolicyConfig.property.region">region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -892,7 +892,7 @@ public readonly policy: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/dynamodb_resource_policy#policy DynamodbResourcePolicy#policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/dynamodb_resource_policy#policy DynamodbResourcePolicy#policy}.
 
 ---
 
@@ -904,7 +904,7 @@ public readonly resourceArn: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/dynamodb_resource_policy#resource_arn DynamodbResourcePolicy#resource_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/dynamodb_resource_policy#resource_arn DynamodbResourcePolicy#resource_arn}.
 
 ---
 
@@ -916,7 +916,7 @@ public readonly confirmRemoveSelfResourceAccess: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/dynamodb_resource_policy#confirm_remove_self_resource_access DynamodbResourcePolicy#confirm_remove_self_resource_access}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/dynamodb_resource_policy#confirm_remove_self_resource_access DynamodbResourcePolicy#confirm_remove_self_resource_access}.
 
 ---
 
@@ -930,7 +930,7 @@ public readonly region: string;
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/dynamodb_resource_policy#region DynamodbResourcePolicy#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/dynamodb_resource_policy#region DynamodbResourcePolicy#region}
 
 ---
 

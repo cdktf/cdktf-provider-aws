@@ -1646,6 +1646,8 @@ The following submodules are available:
 - [quicksightGroupMembership](./quicksightGroupMembership.typescript.md)
 - [quicksightIamPolicyAssignment](./quicksightIamPolicyAssignment.typescript.md)
 - [quicksightIngestion](./quicksightIngestion.typescript.md)
+- [quicksightIpRestriction](./quicksightIpRestriction.typescript.md)
+- [quicksightKeyRegistration](./quicksightKeyRegistration.typescript.md)
 - [quicksightNamespace](./quicksightNamespace.typescript.md)
 - [quicksightRefreshSchedule](./quicksightRefreshSchedule.typescript.md)
 - [quicksightRoleMembership](./quicksightRoleMembership.typescript.md)
