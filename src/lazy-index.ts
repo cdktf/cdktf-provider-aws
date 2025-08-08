@@ -943,6 +943,7 @@ Object.defineProperty(exports, 'networkfirewallLoggingConfiguration', { get: fun
 Object.defineProperty(exports, 'networkfirewallResourcePolicy', { get: function () { return require('./networkfirewall-resource-policy'); } });
 Object.defineProperty(exports, 'networkfirewallRuleGroup', { get: function () { return require('./networkfirewall-rule-group'); } });
 Object.defineProperty(exports, 'networkfirewallTlsInspectionConfiguration', { get: function () { return require('./networkfirewall-tls-inspection-configuration'); } });
+Object.defineProperty(exports, 'networkfirewallVpcEndpointAssociation', { get: function () { return require('./networkfirewall-vpc-endpoint-association'); } });
 Object.defineProperty(exports, 'networkmanagerAttachmentAccepter', { get: function () { return require('./networkmanager-attachment-accepter'); } });
 Object.defineProperty(exports, 'networkmanagerConnectAttachment', { get: function () { return require('./networkmanager-connect-attachment'); } });
 Object.defineProperty(exports, 'networkmanagerConnectPeer', { get: function () { return require('./networkmanager-connect-peer'); } });
@@ -1027,6 +1028,7 @@ Object.defineProperty(exports, 'qldbStream', { get: function () { return require
 Object.defineProperty(exports, 'quicksightAccountSettings', { get: function () { return require('./quicksight-account-settings'); } });
 Object.defineProperty(exports, 'quicksightAccountSubscription', { get: function () { return require('./quicksight-account-subscription'); } });
 Object.defineProperty(exports, 'quicksightAnalysis', { get: function () { return require('./quicksight-analysis'); } });
+Object.defineProperty(exports, 'quicksightCustomPermissions', { get: function () { return require('./quicksight-custom-permissions'); } });
 Object.defineProperty(exports, 'quicksightDashboard', { get: function () { return require('./quicksight-dashboard'); } });
 Object.defineProperty(exports, 'quicksightDataSet', { get: function () { return require('./quicksight-data-set'); } });
 Object.defineProperty(exports, 'quicksightDataSource', { get: function () { return require('./quicksight-data-source'); } });
@@ -1040,11 +1042,13 @@ Object.defineProperty(exports, 'quicksightIpRestriction', { get: function () { r
 Object.defineProperty(exports, 'quicksightKeyRegistration', { get: function () { return require('./quicksight-key-registration'); } });
 Object.defineProperty(exports, 'quicksightNamespace', { get: function () { return require('./quicksight-namespace'); } });
 Object.defineProperty(exports, 'quicksightRefreshSchedule', { get: function () { return require('./quicksight-refresh-schedule'); } });
+Object.defineProperty(exports, 'quicksightRoleCustomPermission', { get: function () { return require('./quicksight-role-custom-permission'); } });
 Object.defineProperty(exports, 'quicksightRoleMembership', { get: function () { return require('./quicksight-role-membership'); } });
 Object.defineProperty(exports, 'quicksightTemplate', { get: function () { return require('./quicksight-template'); } });
 Object.defineProperty(exports, 'quicksightTemplateAlias', { get: function () { return require('./quicksight-template-alias'); } });
 Object.defineProperty(exports, 'quicksightTheme', { get: function () { return require('./quicksight-theme'); } });
 Object.defineProperty(exports, 'quicksightUser', { get: function () { return require('./quicksight-user'); } });
+Object.defineProperty(exports, 'quicksightUserCustomPermission', { get: function () { return require('./quicksight-user-custom-permission'); } });
 Object.defineProperty(exports, 'quicksightVpcConnection', { get: function () { return require('./quicksight-vpc-connection'); } });
 Object.defineProperty(exports, 'ramPrincipalAssociation', { get: function () { return require('./ram-principal-association'); } });
 Object.defineProperty(exports, 'ramResourceAssociation', { get: function () { return require('./ram-resource-association'); } });
@@ -1506,6 +1510,7 @@ Object.defineProperty(exports, 'wafv2RuleGroup', { get: function () { return req
 Object.defineProperty(exports, 'wafv2WebAcl', { get: function () { return require('./wafv2-web-acl'); } });
 Object.defineProperty(exports, 'wafv2WebAclAssociation', { get: function () { return require('./wafv2-web-acl-association'); } });
 Object.defineProperty(exports, 'wafv2WebAclLoggingConfiguration', { get: function () { return require('./wafv2-web-acl-logging-configuration'); } });
+Object.defineProperty(exports, 'wafv2WebAclRuleGroupAssociation', { get: function () { return require('./wafv2-web-acl-rule-group-association'); } });
 Object.defineProperty(exports, 'workspacesConnectionAlias', { get: function () { return require('./workspaces-connection-alias'); } });
 Object.defineProperty(exports, 'workspacesDirectory', { get: function () { return require('./workspaces-directory'); } });
 Object.defineProperty(exports, 'workspacesIpGroup', { get: function () { return require('./workspaces-ip-group'); } });

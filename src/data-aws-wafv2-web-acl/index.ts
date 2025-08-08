@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/data-sources/wafv2_web_acl
+// https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/data-sources/wafv2_web_acl
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,30 +13,34 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsWafv2WebAclConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/data-sources/wafv2_web_acl#id DataAwsWafv2WebAcl#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/data-sources/wafv2_web_acl#id DataAwsWafv2WebAcl#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/data-sources/wafv2_web_acl#name DataAwsWafv2WebAcl#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/data-sources/wafv2_web_acl#name DataAwsWafv2WebAcl#name}
   */
-  readonly name: string;
+  readonly name?: string;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/data-sources/wafv2_web_acl#region DataAwsWafv2WebAcl#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/data-sources/wafv2_web_acl#region DataAwsWafv2WebAcl#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/data-sources/wafv2_web_acl#scope DataAwsWafv2WebAcl#scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/data-sources/wafv2_web_acl#resource_arn DataAwsWafv2WebAcl#resource_arn}
+  */
+  readonly resourceArn?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/data-sources/wafv2_web_acl#scope DataAwsWafv2WebAcl#scope}
   */
   readonly scope: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/data-sources/wafv2_web_acl aws_wafv2_web_acl}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/data-sources/wafv2_web_acl aws_wafv2_web_acl}
 */
 export class DataAwsWafv2WebAcl extends cdktf.TerraformDataSource {
 
@@ -52,7 +56,7 @@ export class DataAwsWafv2WebAcl extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataAwsWafv2WebAcl resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsWafv2WebAcl to import
-  * @param importFromId The id of the existing DataAwsWafv2WebAcl that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/data-sources/wafv2_web_acl#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsWafv2WebAcl that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/data-sources/wafv2_web_acl#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsWafv2WebAcl to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -64,7 +68,7 @@ export class DataAwsWafv2WebAcl extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/data-sources/wafv2_web_acl aws_wafv2_web_acl} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/data-sources/wafv2_web_acl aws_wafv2_web_acl} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -75,7 +79,7 @@ export class DataAwsWafv2WebAcl extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_wafv2_web_acl',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.7.0',
+        providerVersion: '6.8.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
@@ -89,6 +93,7 @@ export class DataAwsWafv2WebAcl extends cdktf.TerraformDataSource {
     this._id = config.id;
     this._name = config.name;
     this._region = config.region;
+    this._resourceArn = config.resourceArn;
     this._scope = config.scope;
   }
 
@@ -122,13 +127,16 @@ export class DataAwsWafv2WebAcl extends cdktf.TerraformDataSource {
     return this._id;
   }
 
-  // name - computed: false, optional: false, required: true
+  // name - computed: false, optional: true, required: false
   private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
   }
   public set name(value: string) {
     this._name = value;
+  }
+  public resetName() {
+    this._name = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
@@ -149,6 +157,22 @@ export class DataAwsWafv2WebAcl extends cdktf.TerraformDataSource {
   // Temporarily expose input value. Use with caution.
   public get regionInput() {
     return this._region;
+  }
+
+  // resource_arn - computed: false, optional: true, required: false
+  private _resourceArn?: string; 
+  public get resourceArn() {
+    return this.getStringAttribute('resource_arn');
+  }
+  public set resourceArn(value: string) {
+    this._resourceArn = value;
+  }
+  public resetResourceArn() {
+    this._resourceArn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get resourceArnInput() {
+    return this._resourceArn;
   }
 
   // scope - computed: false, optional: false, required: true
@@ -173,6 +197,7 @@ export class DataAwsWafv2WebAcl extends cdktf.TerraformDataSource {
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       region: cdktf.stringToTerraform(this._region),
+      resource_arn: cdktf.stringToTerraform(this._resourceArn),
       scope: cdktf.stringToTerraform(this._scope),
     };
   }
@@ -193,6 +218,12 @@ export class DataAwsWafv2WebAcl extends cdktf.TerraformDataSource {
       },
       region: {
         value: cdktf.stringToHclTerraform(this._region),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      resource_arn: {
+        value: cdktf.stringToHclTerraform(this._resourceArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
