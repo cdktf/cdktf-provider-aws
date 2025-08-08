@@ -1,3 +1,3 @@
 # `aws_ebs_snapshot_block_public_access`
 
-Refer to the Terraform Registry for docs: [`aws_ebs_snapshot_block_public_access`](https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/ebs_snapshot_block_public_access).
+Refer to the Terraform Registry for docs: [`aws_ebs_snapshot_block_public_access`](https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/ebs_snapshot_block_public_access).

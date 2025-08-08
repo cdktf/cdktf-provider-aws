@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/dataexchange_revision_assets
+// https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/dataexchange_revision_assets
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,47 +13,47 @@ import * as cdktf from 'cdktf';
 
 export interface DataexchangeRevisionAssetsConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/dataexchange_revision_assets#comment DataexchangeRevisionAssets#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/dataexchange_revision_assets#comment DataexchangeRevisionAssets#comment}
   */
   readonly comment?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/dataexchange_revision_assets#data_set_id DataexchangeRevisionAssets#data_set_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/dataexchange_revision_assets#data_set_id DataexchangeRevisionAssets#data_set_id}
   */
   readonly dataSetId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/dataexchange_revision_assets#finalized DataexchangeRevisionAssets#finalized}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/dataexchange_revision_assets#finalized DataexchangeRevisionAssets#finalized}
   */
   readonly finalized?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/dataexchange_revision_assets#force_destroy DataexchangeRevisionAssets#force_destroy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/dataexchange_revision_assets#force_destroy DataexchangeRevisionAssets#force_destroy}
   */
   readonly forceDestroy?: boolean | cdktf.IResolvable;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/dataexchange_revision_assets#region DataexchangeRevisionAssets#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/dataexchange_revision_assets#region DataexchangeRevisionAssets#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/dataexchange_revision_assets#tags DataexchangeRevisionAssets#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/dataexchange_revision_assets#tags DataexchangeRevisionAssets#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
   * asset block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/dataexchange_revision_assets#asset DataexchangeRevisionAssets#asset}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/dataexchange_revision_assets#asset DataexchangeRevisionAssets#asset}
   */
   readonly asset?: DataexchangeRevisionAssetsAsset[] | cdktf.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/dataexchange_revision_assets#timeouts DataexchangeRevisionAssets#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/dataexchange_revision_assets#timeouts DataexchangeRevisionAssets#timeouts}
   */
   readonly timeouts?: DataexchangeRevisionAssetsTimeouts;
 }
 export interface DataexchangeRevisionAssetsAssetCreateS3DataAccessFromS3BucketAssetSourceKmsKeysToGrant {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/dataexchange_revision_assets#kms_key_arn DataexchangeRevisionAssets#kms_key_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/dataexchange_revision_assets#kms_key_arn DataexchangeRevisionAssets#kms_key_arn}
   */
   readonly kmsKeyArn: string;
 }
@@ -166,21 +166,21 @@ export class DataexchangeRevisionAssetsAssetCreateS3DataAccessFromS3BucketAssetS
 }
 export interface DataexchangeRevisionAssetsAssetCreateS3DataAccessFromS3BucketAssetSource {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/dataexchange_revision_assets#bucket DataexchangeRevisionAssets#bucket}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/dataexchange_revision_assets#bucket DataexchangeRevisionAssets#bucket}
   */
   readonly bucket: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/dataexchange_revision_assets#key_prefixes DataexchangeRevisionAssets#key_prefixes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/dataexchange_revision_assets#key_prefixes DataexchangeRevisionAssets#key_prefixes}
   */
   readonly keyPrefixes?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/dataexchange_revision_assets#keys DataexchangeRevisionAssets#keys}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/dataexchange_revision_assets#keys DataexchangeRevisionAssets#keys}
   */
   readonly keys?: string[];
   /**
   * kms_keys_to_grant block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/dataexchange_revision_assets#kms_keys_to_grant DataexchangeRevisionAssets#kms_keys_to_grant}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/dataexchange_revision_assets#kms_keys_to_grant DataexchangeRevisionAssets#kms_keys_to_grant}
   */
   readonly kmsKeysToGrant?: DataexchangeRevisionAssetsAssetCreateS3DataAccessFromS3BucketAssetSourceKmsKeysToGrant[] | cdktf.IResolvable;
 }
@@ -382,7 +382,7 @@ export interface DataexchangeRevisionAssetsAssetCreateS3DataAccessFromS3Bucket {
   /**
   * asset_source block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/dataexchange_revision_assets#asset_source DataexchangeRevisionAssets#asset_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/dataexchange_revision_assets#asset_source DataexchangeRevisionAssets#asset_source}
   */
   readonly assetSource?: DataexchangeRevisionAssetsAssetCreateS3DataAccessFromS3BucketAssetSource[] | cdktf.IResolvable;
 }
@@ -508,11 +508,11 @@ export class DataexchangeRevisionAssetsAssetCreateS3DataAccessFromS3BucketList e
 }
 export interface DataexchangeRevisionAssetsAssetImportAssetsFromS3AssetSource {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/dataexchange_revision_assets#bucket DataexchangeRevisionAssets#bucket}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/dataexchange_revision_assets#bucket DataexchangeRevisionAssets#bucket}
   */
   readonly bucket: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/dataexchange_revision_assets#key DataexchangeRevisionAssets#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/dataexchange_revision_assets#key DataexchangeRevisionAssets#key}
   */
   readonly key: string;
 }
@@ -653,7 +653,7 @@ export interface DataexchangeRevisionAssetsAssetImportAssetsFromS3 {
   /**
   * asset_source block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/dataexchange_revision_assets#asset_source DataexchangeRevisionAssets#asset_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/dataexchange_revision_assets#asset_source DataexchangeRevisionAssets#asset_source}
   */
   readonly assetSource?: DataexchangeRevisionAssetsAssetImportAssetsFromS3AssetSource[] | cdktf.IResolvable;
 }
@@ -769,7 +769,7 @@ export class DataexchangeRevisionAssetsAssetImportAssetsFromS3List extends cdktf
 }
 export interface DataexchangeRevisionAssetsAssetImportAssetsFromSignedUrl {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/dataexchange_revision_assets#filename DataexchangeRevisionAssets#filename}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/dataexchange_revision_assets#filename DataexchangeRevisionAssets#filename}
   */
   readonly filename: string;
 }
@@ -884,19 +884,19 @@ export interface DataexchangeRevisionAssetsAsset {
   /**
   * create_s3_data_access_from_s3_bucket block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/dataexchange_revision_assets#create_s3_data_access_from_s3_bucket DataexchangeRevisionAssets#create_s3_data_access_from_s3_bucket}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/dataexchange_revision_assets#create_s3_data_access_from_s3_bucket DataexchangeRevisionAssets#create_s3_data_access_from_s3_bucket}
   */
   readonly createS3DataAccessFromS3Bucket?: DataexchangeRevisionAssetsAssetCreateS3DataAccessFromS3Bucket[] | cdktf.IResolvable;
   /**
   * import_assets_from_s3 block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/dataexchange_revision_assets#import_assets_from_s3 DataexchangeRevisionAssets#import_assets_from_s3}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/dataexchange_revision_assets#import_assets_from_s3 DataexchangeRevisionAssets#import_assets_from_s3}
   */
   readonly importAssetsFromS3?: DataexchangeRevisionAssetsAssetImportAssetsFromS3[] | cdktf.IResolvable;
   /**
   * import_assets_from_signed_url block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/dataexchange_revision_assets#import_assets_from_signed_url DataexchangeRevisionAssets#import_assets_from_signed_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/dataexchange_revision_assets#import_assets_from_signed_url DataexchangeRevisionAssets#import_assets_from_signed_url}
   */
   readonly importAssetsFromSignedUrl?: DataexchangeRevisionAssetsAssetImportAssetsFromSignedUrl[] | cdktf.IResolvable;
 }
@@ -1097,7 +1097,7 @@ export interface DataexchangeRevisionAssetsTimeouts {
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/dataexchange_revision_assets#create DataexchangeRevisionAssets#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/dataexchange_revision_assets#create DataexchangeRevisionAssets#create}
   */
   readonly create?: string;
 }
@@ -1191,7 +1191,7 @@ export class DataexchangeRevisionAssetsTimeoutsOutputReference extends cdktf.Com
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/dataexchange_revision_assets aws_dataexchange_revision_assets}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/dataexchange_revision_assets aws_dataexchange_revision_assets}
 */
 export class DataexchangeRevisionAssets extends cdktf.TerraformResource {
 
@@ -1207,7 +1207,7 @@ export class DataexchangeRevisionAssets extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a DataexchangeRevisionAssets resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataexchangeRevisionAssets to import
-  * @param importFromId The id of the existing DataexchangeRevisionAssets that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/dataexchange_revision_assets#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataexchangeRevisionAssets that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/dataexchange_revision_assets#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataexchangeRevisionAssets to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -1219,7 +1219,7 @@ export class DataexchangeRevisionAssets extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/dataexchange_revision_assets aws_dataexchange_revision_assets} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/dataexchange_revision_assets aws_dataexchange_revision_assets} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1230,7 +1230,7 @@ export class DataexchangeRevisionAssets extends cdktf.TerraformResource {
       terraformResourceType: 'aws_dataexchange_revision_assets',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.7.0',
+        providerVersion: '6.8.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

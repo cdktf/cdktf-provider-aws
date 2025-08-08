@@ -4,7 +4,7 @@
 
 ### SsmServiceSetting <a name="SsmServiceSetting" id="@cdktf/provider-aws.ssmServiceSetting.SsmServiceSetting"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/ssm_service_setting aws_ssm_service_setting}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/ssm_service_setting aws_ssm_service_setting}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ssmServiceSetting.SsmServiceSetting.Initializer"></a>
 
@@ -481,7 +481,7 @@ The construct id used in the generated config for the SsmServiceSetting to impor
 
 The id of the existing SsmServiceSetting that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/ssm_service_setting#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/ssm_service_setting#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -819,9 +819,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/ssmservicesetting"
 | <code><a href="#@cdktf/provider-aws.ssmServiceSetting.SsmServiceSettingConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ssmServiceSetting.SsmServiceSettingConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ssmServiceSetting.SsmServiceSettingConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ssmServiceSetting.SsmServiceSettingConfig.property.settingId">SettingId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/ssm_service_setting#setting_id SsmServiceSetting#setting_id}. |
-| <code><a href="#@cdktf/provider-aws.ssmServiceSetting.SsmServiceSettingConfig.property.settingValue">SettingValue</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/ssm_service_setting#setting_value SsmServiceSetting#setting_value}. |
-| <code><a href="#@cdktf/provider-aws.ssmServiceSetting.SsmServiceSettingConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/ssm_service_setting#id SsmServiceSetting#id}. |
+| <code><a href="#@cdktf/provider-aws.ssmServiceSetting.SsmServiceSettingConfig.property.settingId">SettingId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/ssm_service_setting#setting_id SsmServiceSetting#setting_id}. |
+| <code><a href="#@cdktf/provider-aws.ssmServiceSetting.SsmServiceSettingConfig.property.settingValue">SettingValue</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/ssm_service_setting#setting_value SsmServiceSetting#setting_value}. |
+| <code><a href="#@cdktf/provider-aws.ssmServiceSetting.SsmServiceSettingConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/ssm_service_setting#id SsmServiceSetting#id}. |
 | <code><a href="#@cdktf/provider-aws.ssmServiceSetting.SsmServiceSettingConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -904,7 +904,7 @@ SettingId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/ssm_service_setting#setting_id SsmServiceSetting#setting_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/ssm_service_setting#setting_id SsmServiceSetting#setting_id}.
 
 ---
 
@@ -916,7 +916,7 @@ SettingValue *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/ssm_service_setting#setting_value SsmServiceSetting#setting_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/ssm_service_setting#setting_value SsmServiceSetting#setting_value}.
 
 ---
 
@@ -928,7 +928,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/ssm_service_setting#id SsmServiceSetting#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/ssm_service_setting#id SsmServiceSetting#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -945,7 +945,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/ssm_service_setting#region SsmServiceSetting#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/ssm_service_setting#region SsmServiceSetting#region}
 
 ---
 

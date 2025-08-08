@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/quicksight_user
+// https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/quicksight_user
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,54 +13,54 @@ import * as cdktf from 'cdktf';
 
 export interface QuicksightUserConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/quicksight_user#aws_account_id QuicksightUser#aws_account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/quicksight_user#aws_account_id QuicksightUser#aws_account_id}
   */
   readonly awsAccountId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/quicksight_user#email QuicksightUser#email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/quicksight_user#email QuicksightUser#email}
   */
   readonly email: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/quicksight_user#iam_arn QuicksightUser#iam_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/quicksight_user#iam_arn QuicksightUser#iam_arn}
   */
   readonly iamArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/quicksight_user#id QuicksightUser#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/quicksight_user#id QuicksightUser#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/quicksight_user#identity_type QuicksightUser#identity_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/quicksight_user#identity_type QuicksightUser#identity_type}
   */
   readonly identityType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/quicksight_user#namespace QuicksightUser#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/quicksight_user#namespace QuicksightUser#namespace}
   */
   readonly namespace?: string;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/quicksight_user#region QuicksightUser#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/quicksight_user#region QuicksightUser#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/quicksight_user#session_name QuicksightUser#session_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/quicksight_user#session_name QuicksightUser#session_name}
   */
   readonly sessionName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/quicksight_user#user_name QuicksightUser#user_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/quicksight_user#user_name QuicksightUser#user_name}
   */
   readonly userName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/quicksight_user#user_role QuicksightUser#user_role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/quicksight_user#user_role QuicksightUser#user_role}
   */
   readonly userRole: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/quicksight_user aws_quicksight_user}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/quicksight_user aws_quicksight_user}
 */
 export class QuicksightUser extends cdktf.TerraformResource {
 
@@ -76,7 +76,7 @@ export class QuicksightUser extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a QuicksightUser resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the QuicksightUser to import
-  * @param importFromId The id of the existing QuicksightUser that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/quicksight_user#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing QuicksightUser that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/quicksight_user#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the QuicksightUser to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -88,7 +88,7 @@ export class QuicksightUser extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/quicksight_user aws_quicksight_user} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/quicksight_user aws_quicksight_user} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -99,7 +99,7 @@ export class QuicksightUser extends cdktf.TerraformResource {
       terraformResourceType: 'aws_quicksight_user',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.7.0',
+        providerVersion: '6.8.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
@@ -258,7 +258,7 @@ export class QuicksightUser extends cdktf.TerraformResource {
     return this.getStringAttribute('user_invitation_url');
   }
 
-  // user_name - computed: false, optional: true, required: false
+  // user_name - computed: true, optional: true, required: false
   private _userName?: string; 
   public get userName() {
     return this.getStringAttribute('user_name');

@@ -4,7 +4,7 @@
 
 ### VerifiedpermissionsSchema <a name="VerifiedpermissionsSchema" id="@cdktf/provider-aws.verifiedpermissionsSchema.VerifiedpermissionsSchema"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/verifiedpermissions_schema aws_verifiedpermissions_schema}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/verifiedpermissions_schema aws_verifiedpermissions_schema}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.verifiedpermissionsSchema.VerifiedpermissionsSchema.Initializer"></a>
 
@@ -494,7 +494,7 @@ The construct id used in the generated config for the VerifiedpermissionsSchema 
 
 The id of the existing VerifiedpermissionsSchema that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/verifiedpermissions_schema#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/verifiedpermissions_schema#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -809,7 +809,7 @@ new VerifiedpermissionsSchemaConfig {
 | <code><a href="#@cdktf/provider-aws.verifiedpermissionsSchema.VerifiedpermissionsSchemaConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.verifiedpermissionsSchema.VerifiedpermissionsSchemaConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.verifiedpermissionsSchema.VerifiedpermissionsSchemaConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.verifiedpermissionsSchema.VerifiedpermissionsSchemaConfig.property.policyStoreId">PolicyStoreId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/verifiedpermissions_schema#policy_store_id VerifiedpermissionsSchema#policy_store_id}. |
+| <code><a href="#@cdktf/provider-aws.verifiedpermissionsSchema.VerifiedpermissionsSchemaConfig.property.policyStoreId">PolicyStoreId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/verifiedpermissions_schema#policy_store_id VerifiedpermissionsSchema#policy_store_id}. |
 | <code><a href="#@cdktf/provider-aws.verifiedpermissionsSchema.VerifiedpermissionsSchemaConfig.property.definition">Definition</a></code> | <code>object</code> | definition block. |
 | <code><a href="#@cdktf/provider-aws.verifiedpermissionsSchema.VerifiedpermissionsSchemaConfig.property.region">Region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
@@ -893,7 +893,7 @@ public string PolicyStoreId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/verifiedpermissions_schema#policy_store_id VerifiedpermissionsSchema#policy_store_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/verifiedpermissions_schema#policy_store_id VerifiedpermissionsSchema#policy_store_id}.
 
 ---
 
@@ -907,7 +907,7 @@ public object Definition { get; set; }
 
 definition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/verifiedpermissions_schema#definition VerifiedpermissionsSchema#definition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/verifiedpermissions_schema#definition VerifiedpermissionsSchema#definition}
 
 ---
 
@@ -921,7 +921,7 @@ public string Region { get; set; }
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/verifiedpermissions_schema#region VerifiedpermissionsSchema#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/verifiedpermissions_schema#region VerifiedpermissionsSchema#region}
 
 ---
 
@@ -941,7 +941,7 @@ new VerifiedpermissionsSchemaDefinition {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.verifiedpermissionsSchema.VerifiedpermissionsSchemaDefinition.property.value">Value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/verifiedpermissions_schema#value VerifiedpermissionsSchema#value}. |
+| <code><a href="#@cdktf/provider-aws.verifiedpermissionsSchema.VerifiedpermissionsSchemaDefinition.property.value">Value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/verifiedpermissions_schema#value VerifiedpermissionsSchema#value}. |
 
 ---
 
@@ -953,7 +953,7 @@ public string Value { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/verifiedpermissions_schema#value VerifiedpermissionsSchema#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/verifiedpermissions_schema#value VerifiedpermissionsSchema#value}.
 
 ---
 

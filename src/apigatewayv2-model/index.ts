@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/apigatewayv2_model
+// https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/apigatewayv2_model
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,42 +13,42 @@ import * as cdktf from 'cdktf';
 
 export interface Apigatewayv2ModelConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/apigatewayv2_model#api_id Apigatewayv2Model#api_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/apigatewayv2_model#api_id Apigatewayv2Model#api_id}
   */
   readonly apiId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/apigatewayv2_model#content_type Apigatewayv2Model#content_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/apigatewayv2_model#content_type Apigatewayv2Model#content_type}
   */
   readonly contentType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/apigatewayv2_model#description Apigatewayv2Model#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/apigatewayv2_model#description Apigatewayv2Model#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/apigatewayv2_model#id Apigatewayv2Model#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/apigatewayv2_model#id Apigatewayv2Model#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/apigatewayv2_model#name Apigatewayv2Model#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/apigatewayv2_model#name Apigatewayv2Model#name}
   */
   readonly name: string;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/apigatewayv2_model#region Apigatewayv2Model#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/apigatewayv2_model#region Apigatewayv2Model#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/apigatewayv2_model#schema Apigatewayv2Model#schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/apigatewayv2_model#schema Apigatewayv2Model#schema}
   */
   readonly schema: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/apigatewayv2_model aws_apigatewayv2_model}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/apigatewayv2_model aws_apigatewayv2_model}
 */
 export class Apigatewayv2Model extends cdktf.TerraformResource {
 
@@ -64,7 +64,7 @@ export class Apigatewayv2Model extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a Apigatewayv2Model resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Apigatewayv2Model to import
-  * @param importFromId The id of the existing Apigatewayv2Model that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/apigatewayv2_model#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Apigatewayv2Model that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/apigatewayv2_model#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Apigatewayv2Model to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -76,7 +76,7 @@ export class Apigatewayv2Model extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/apigatewayv2_model aws_apigatewayv2_model} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/apigatewayv2_model aws_apigatewayv2_model} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -87,7 +87,7 @@ export class Apigatewayv2Model extends cdktf.TerraformResource {
       terraformResourceType: 'aws_apigatewayv2_model',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.7.0',
+        providerVersion: '6.8.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

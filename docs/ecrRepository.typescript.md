@@ -4,7 +4,7 @@
 
 ### EcrRepository <a name="EcrRepository" id="@cdktf/provider-aws.ecrRepository.EcrRepository"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/ecr_repository aws_ecr_repository}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/ecr_repository aws_ecr_repository}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ecrRepository.EcrRepository.Initializer"></a>
 
@@ -75,12 +75,14 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.ecrRepository.EcrRepository.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-aws.ecrRepository.EcrRepository.putEncryptionConfiguration">putEncryptionConfiguration</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecrRepository.EcrRepository.putImageScanningConfiguration">putImageScanningConfiguration</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ecrRepository.EcrRepository.putImageTagMutabilityExclusionFilter">putImageTagMutabilityExclusionFilter</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecrRepository.EcrRepository.putTimeouts">putTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecrRepository.EcrRepository.resetEncryptionConfiguration">resetEncryptionConfiguration</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecrRepository.EcrRepository.resetForceDelete">resetForceDelete</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecrRepository.EcrRepository.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecrRepository.EcrRepository.resetImageScanningConfiguration">resetImageScanningConfiguration</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecrRepository.EcrRepository.resetImageTagMutability">resetImageTagMutability</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ecrRepository.EcrRepository.resetImageTagMutabilityExclusionFilter">resetImageTagMutabilityExclusionFilter</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecrRepository.EcrRepository.resetRegion">resetRegion</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecrRepository.EcrRepository.resetTags">resetTags</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecrRepository.EcrRepository.resetTagsAll">resetTagsAll</a></code> | *No description.* |
@@ -400,6 +402,18 @@ public putImageScanningConfiguration(value: EcrRepositoryImageScanningConfigurat
 
 ---
 
+##### `putImageTagMutabilityExclusionFilter` <a name="putImageTagMutabilityExclusionFilter" id="@cdktf/provider-aws.ecrRepository.EcrRepository.putImageTagMutabilityExclusionFilter"></a>
+
+```typescript
+public putImageTagMutabilityExclusionFilter(value: IResolvable | EcrRepositoryImageTagMutabilityExclusionFilter[]): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.ecrRepository.EcrRepository.putImageTagMutabilityExclusionFilter.parameter.value"></a>
+
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.ecrRepository.EcrRepositoryImageTagMutabilityExclusionFilter">EcrRepositoryImageTagMutabilityExclusionFilter</a>[]
+
+---
+
 ##### `putTimeouts` <a name="putTimeouts" id="@cdktf/provider-aws.ecrRepository.EcrRepository.putTimeouts"></a>
 
 ```typescript
@@ -440,6 +454,12 @@ public resetImageScanningConfiguration(): void
 
 ```typescript
 public resetImageTagMutability(): void
+```
+
+##### `resetImageTagMutabilityExclusionFilter` <a name="resetImageTagMutabilityExclusionFilter" id="@cdktf/provider-aws.ecrRepository.EcrRepository.resetImageTagMutabilityExclusionFilter"></a>
+
+```typescript
+public resetImageTagMutabilityExclusionFilter(): void
 ```
 
 ##### `resetRegion` <a name="resetRegion" id="@cdktf/provider-aws.ecrRepository.EcrRepository.resetRegion"></a>
@@ -569,7 +589,7 @@ The construct id used in the generated config for the EcrRepository to import.
 
 The id of the existing EcrRepository that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/ecr_repository#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/ecr_repository#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -602,6 +622,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/
 | <code><a href="#@cdktf/provider-aws.ecrRepository.EcrRepository.property.arn">arn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecrRepository.EcrRepository.property.encryptionConfiguration">encryptionConfiguration</a></code> | <code><a href="#@cdktf/provider-aws.ecrRepository.EcrRepositoryEncryptionConfigurationList">EcrRepositoryEncryptionConfigurationList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecrRepository.EcrRepository.property.imageScanningConfiguration">imageScanningConfiguration</a></code> | <code><a href="#@cdktf/provider-aws.ecrRepository.EcrRepositoryImageScanningConfigurationOutputReference">EcrRepositoryImageScanningConfigurationOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ecrRepository.EcrRepository.property.imageTagMutabilityExclusionFilter">imageTagMutabilityExclusionFilter</a></code> | <code><a href="#@cdktf/provider-aws.ecrRepository.EcrRepositoryImageTagMutabilityExclusionFilterList">EcrRepositoryImageTagMutabilityExclusionFilterList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecrRepository.EcrRepository.property.registryId">registryId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecrRepository.EcrRepository.property.repositoryUrl">repositoryUrl</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecrRepository.EcrRepository.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-aws.ecrRepository.EcrRepositoryTimeoutsOutputReference">EcrRepositoryTimeoutsOutputReference</a></code> | *No description.* |
@@ -609,6 +630,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/
 | <code><a href="#@cdktf/provider-aws.ecrRepository.EcrRepository.property.forceDeleteInput">forceDeleteInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecrRepository.EcrRepository.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecrRepository.EcrRepository.property.imageScanningConfigurationInput">imageScanningConfigurationInput</a></code> | <code><a href="#@cdktf/provider-aws.ecrRepository.EcrRepositoryImageScanningConfiguration">EcrRepositoryImageScanningConfiguration</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ecrRepository.EcrRepository.property.imageTagMutabilityExclusionFilterInput">imageTagMutabilityExclusionFilterInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.ecrRepository.EcrRepositoryImageTagMutabilityExclusionFilter">EcrRepositoryImageTagMutabilityExclusionFilter</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecrRepository.EcrRepository.property.imageTagMutabilityInput">imageTagMutabilityInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecrRepository.EcrRepository.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecrRepository.EcrRepository.property.regionInput">regionInput</a></code> | <code>string</code> | *No description.* |
@@ -797,6 +819,16 @@ public readonly imageScanningConfiguration: EcrRepositoryImageScanningConfigurat
 
 ---
 
+##### `imageTagMutabilityExclusionFilter`<sup>Required</sup> <a name="imageTagMutabilityExclusionFilter" id="@cdktf/provider-aws.ecrRepository.EcrRepository.property.imageTagMutabilityExclusionFilter"></a>
+
+```typescript
+public readonly imageTagMutabilityExclusionFilter: EcrRepositoryImageTagMutabilityExclusionFilterList;
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.ecrRepository.EcrRepositoryImageTagMutabilityExclusionFilterList">EcrRepositoryImageTagMutabilityExclusionFilterList</a>
+
+---
+
 ##### `registryId`<sup>Required</sup> <a name="registryId" id="@cdktf/provider-aws.ecrRepository.EcrRepository.property.registryId"></a>
 
 ```typescript
@@ -864,6 +896,16 @@ public readonly imageScanningConfigurationInput: EcrRepositoryImageScanningConfi
 ```
 
 - *Type:* <a href="#@cdktf/provider-aws.ecrRepository.EcrRepositoryImageScanningConfiguration">EcrRepositoryImageScanningConfiguration</a>
+
+---
+
+##### `imageTagMutabilityExclusionFilterInput`<sup>Optional</sup> <a name="imageTagMutabilityExclusionFilterInput" id="@cdktf/provider-aws.ecrRepository.EcrRepository.property.imageTagMutabilityExclusionFilterInput"></a>
+
+```typescript
+public readonly imageTagMutabilityExclusionFilterInput: IResolvable | EcrRepositoryImageTagMutabilityExclusionFilter[];
+```
+
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.ecrRepository.EcrRepositoryImageTagMutabilityExclusionFilter">EcrRepositoryImageTagMutabilityExclusionFilter</a>[]
 
 ---
 
@@ -1038,15 +1080,16 @@ const ecrRepositoryConfig: ecrRepository.EcrRepositoryConfig = { ... }
 | <code><a href="#@cdktf/provider-aws.ecrRepository.EcrRepositoryConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecrRepository.EcrRepositoryConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecrRepository.EcrRepositoryConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ecrRepository.EcrRepositoryConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/ecr_repository#name EcrRepository#name}. |
+| <code><a href="#@cdktf/provider-aws.ecrRepository.EcrRepositoryConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/ecr_repository#name EcrRepository#name}. |
 | <code><a href="#@cdktf/provider-aws.ecrRepository.EcrRepositoryConfig.property.encryptionConfiguration">encryptionConfiguration</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.ecrRepository.EcrRepositoryEncryptionConfiguration">EcrRepositoryEncryptionConfiguration</a>[]</code> | encryption_configuration block. |
-| <code><a href="#@cdktf/provider-aws.ecrRepository.EcrRepositoryConfig.property.forceDelete">forceDelete</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/ecr_repository#force_delete EcrRepository#force_delete}. |
-| <code><a href="#@cdktf/provider-aws.ecrRepository.EcrRepositoryConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/ecr_repository#id EcrRepository#id}. |
+| <code><a href="#@cdktf/provider-aws.ecrRepository.EcrRepositoryConfig.property.forceDelete">forceDelete</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/ecr_repository#force_delete EcrRepository#force_delete}. |
+| <code><a href="#@cdktf/provider-aws.ecrRepository.EcrRepositoryConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/ecr_repository#id EcrRepository#id}. |
 | <code><a href="#@cdktf/provider-aws.ecrRepository.EcrRepositoryConfig.property.imageScanningConfiguration">imageScanningConfiguration</a></code> | <code><a href="#@cdktf/provider-aws.ecrRepository.EcrRepositoryImageScanningConfiguration">EcrRepositoryImageScanningConfiguration</a></code> | image_scanning_configuration block. |
-| <code><a href="#@cdktf/provider-aws.ecrRepository.EcrRepositoryConfig.property.imageTagMutability">imageTagMutability</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/ecr_repository#image_tag_mutability EcrRepository#image_tag_mutability}. |
+| <code><a href="#@cdktf/provider-aws.ecrRepository.EcrRepositoryConfig.property.imageTagMutability">imageTagMutability</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/ecr_repository#image_tag_mutability EcrRepository#image_tag_mutability}. |
+| <code><a href="#@cdktf/provider-aws.ecrRepository.EcrRepositoryConfig.property.imageTagMutabilityExclusionFilter">imageTagMutabilityExclusionFilter</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.ecrRepository.EcrRepositoryImageTagMutabilityExclusionFilter">EcrRepositoryImageTagMutabilityExclusionFilter</a>[]</code> | image_tag_mutability_exclusion_filter block. |
 | <code><a href="#@cdktf/provider-aws.ecrRepository.EcrRepositoryConfig.property.region">region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktf/provider-aws.ecrRepository.EcrRepositoryConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/ecr_repository#tags EcrRepository#tags}. |
-| <code><a href="#@cdktf/provider-aws.ecrRepository.EcrRepositoryConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/ecr_repository#tags_all EcrRepository#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.ecrRepository.EcrRepositoryConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/ecr_repository#tags EcrRepository#tags}. |
+| <code><a href="#@cdktf/provider-aws.ecrRepository.EcrRepositoryConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/ecr_repository#tags_all EcrRepository#tags_all}. |
 | <code><a href="#@cdktf/provider-aws.ecrRepository.EcrRepositoryConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-aws.ecrRepository.EcrRepositoryTimeouts">EcrRepositoryTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1129,7 +1172,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/ecr_repository#name EcrRepository#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/ecr_repository#name EcrRepository#name}.
 
 ---
 
@@ -1143,7 +1186,7 @@ public readonly encryptionConfiguration: IResolvable | EcrRepositoryEncryptionCo
 
 encryption_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/ecr_repository#encryption_configuration EcrRepository#encryption_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/ecr_repository#encryption_configuration EcrRepository#encryption_configuration}
 
 ---
 
@@ -1155,7 +1198,7 @@ public readonly forceDelete: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/ecr_repository#force_delete EcrRepository#force_delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/ecr_repository#force_delete EcrRepository#force_delete}.
 
 ---
 
@@ -1167,7 +1210,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/ecr_repository#id EcrRepository#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/ecr_repository#id EcrRepository#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1184,7 +1227,7 @@ public readonly imageScanningConfiguration: EcrRepositoryImageScanningConfigurat
 
 image_scanning_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/ecr_repository#image_scanning_configuration EcrRepository#image_scanning_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/ecr_repository#image_scanning_configuration EcrRepository#image_scanning_configuration}
 
 ---
 
@@ -1196,7 +1239,21 @@ public readonly imageTagMutability: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/ecr_repository#image_tag_mutability EcrRepository#image_tag_mutability}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/ecr_repository#image_tag_mutability EcrRepository#image_tag_mutability}.
+
+---
+
+##### `imageTagMutabilityExclusionFilter`<sup>Optional</sup> <a name="imageTagMutabilityExclusionFilter" id="@cdktf/provider-aws.ecrRepository.EcrRepositoryConfig.property.imageTagMutabilityExclusionFilter"></a>
+
+```typescript
+public readonly imageTagMutabilityExclusionFilter: IResolvable | EcrRepositoryImageTagMutabilityExclusionFilter[];
+```
+
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.ecrRepository.EcrRepositoryImageTagMutabilityExclusionFilter">EcrRepositoryImageTagMutabilityExclusionFilter</a>[]
+
+image_tag_mutability_exclusion_filter block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/ecr_repository#image_tag_mutability_exclusion_filter EcrRepository#image_tag_mutability_exclusion_filter}
 
 ---
 
@@ -1210,7 +1267,7 @@ public readonly region: string;
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/ecr_repository#region EcrRepository#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/ecr_repository#region EcrRepository#region}
 
 ---
 
@@ -1222,7 +1279,7 @@ public readonly tags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/ecr_repository#tags EcrRepository#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/ecr_repository#tags EcrRepository#tags}.
 
 ---
 
@@ -1234,7 +1291,7 @@ public readonly tagsAll: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/ecr_repository#tags_all EcrRepository#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/ecr_repository#tags_all EcrRepository#tags_all}.
 
 ---
 
@@ -1248,7 +1305,7 @@ public readonly timeouts: EcrRepositoryTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/ecr_repository#timeouts EcrRepository#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/ecr_repository#timeouts EcrRepository#timeouts}
 
 ---
 
@@ -1266,8 +1323,8 @@ const ecrRepositoryEncryptionConfiguration: ecrRepository.EcrRepositoryEncryptio
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.ecrRepository.EcrRepositoryEncryptionConfiguration.property.encryptionType">encryptionType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/ecr_repository#encryption_type EcrRepository#encryption_type}. |
-| <code><a href="#@cdktf/provider-aws.ecrRepository.EcrRepositoryEncryptionConfiguration.property.kmsKey">kmsKey</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/ecr_repository#kms_key EcrRepository#kms_key}. |
+| <code><a href="#@cdktf/provider-aws.ecrRepository.EcrRepositoryEncryptionConfiguration.property.encryptionType">encryptionType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/ecr_repository#encryption_type EcrRepository#encryption_type}. |
+| <code><a href="#@cdktf/provider-aws.ecrRepository.EcrRepositoryEncryptionConfiguration.property.kmsKey">kmsKey</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/ecr_repository#kms_key EcrRepository#kms_key}. |
 
 ---
 
@@ -1279,7 +1336,7 @@ public readonly encryptionType: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/ecr_repository#encryption_type EcrRepository#encryption_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/ecr_repository#encryption_type EcrRepository#encryption_type}.
 
 ---
 
@@ -1291,7 +1348,7 @@ public readonly kmsKey: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/ecr_repository#kms_key EcrRepository#kms_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/ecr_repository#kms_key EcrRepository#kms_key}.
 
 ---
 
@@ -1309,7 +1366,7 @@ const ecrRepositoryImageScanningConfiguration: ecrRepository.EcrRepositoryImageS
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.ecrRepository.EcrRepositoryImageScanningConfiguration.property.scanOnPush">scanOnPush</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/ecr_repository#scan_on_push EcrRepository#scan_on_push}. |
+| <code><a href="#@cdktf/provider-aws.ecrRepository.EcrRepositoryImageScanningConfiguration.property.scanOnPush">scanOnPush</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/ecr_repository#scan_on_push EcrRepository#scan_on_push}. |
 
 ---
 
@@ -1321,7 +1378,50 @@ public readonly scanOnPush: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/ecr_repository#scan_on_push EcrRepository#scan_on_push}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/ecr_repository#scan_on_push EcrRepository#scan_on_push}.
+
+---
+
+### EcrRepositoryImageTagMutabilityExclusionFilter <a name="EcrRepositoryImageTagMutabilityExclusionFilter" id="@cdktf/provider-aws.ecrRepository.EcrRepositoryImageTagMutabilityExclusionFilter"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-aws.ecrRepository.EcrRepositoryImageTagMutabilityExclusionFilter.Initializer"></a>
+
+```typescript
+import { ecrRepository } from '@cdktf/provider-aws'
+
+const ecrRepositoryImageTagMutabilityExclusionFilter: ecrRepository.EcrRepositoryImageTagMutabilityExclusionFilter = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.ecrRepository.EcrRepositoryImageTagMutabilityExclusionFilter.property.filter">filter</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/ecr_repository#filter EcrRepository#filter}. |
+| <code><a href="#@cdktf/provider-aws.ecrRepository.EcrRepositoryImageTagMutabilityExclusionFilter.property.filterType">filterType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/ecr_repository#filter_type EcrRepository#filter_type}. |
+
+---
+
+##### `filter`<sup>Required</sup> <a name="filter" id="@cdktf/provider-aws.ecrRepository.EcrRepositoryImageTagMutabilityExclusionFilter.property.filter"></a>
+
+```typescript
+public readonly filter: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/ecr_repository#filter EcrRepository#filter}.
+
+---
+
+##### `filterType`<sup>Required</sup> <a name="filterType" id="@cdktf/provider-aws.ecrRepository.EcrRepositoryImageTagMutabilityExclusionFilter.property.filterType"></a>
+
+```typescript
+public readonly filterType: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/ecr_repository#filter_type EcrRepository#filter_type}.
 
 ---
 
@@ -1339,7 +1439,7 @@ const ecrRepositoryTimeouts: ecrRepository.EcrRepositoryTimeouts = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.ecrRepository.EcrRepositoryTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/ecr_repository#delete EcrRepository#delete}. |
+| <code><a href="#@cdktf/provider-aws.ecrRepository.EcrRepositoryTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/ecr_repository#delete EcrRepository#delete}. |
 
 ---
 
@@ -1351,7 +1451,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/ecr_repository#delete EcrRepository#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/ecr_repository#delete EcrRepository#delete}.
 
 ---
 
@@ -2109,6 +2209,477 @@ public readonly internalValue: EcrRepositoryImageScanningConfiguration;
 ```
 
 - *Type:* <a href="#@cdktf/provider-aws.ecrRepository.EcrRepositoryImageScanningConfiguration">EcrRepositoryImageScanningConfiguration</a>
+
+---
+
+
+### EcrRepositoryImageTagMutabilityExclusionFilterList <a name="EcrRepositoryImageTagMutabilityExclusionFilterList" id="@cdktf/provider-aws.ecrRepository.EcrRepositoryImageTagMutabilityExclusionFilterList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-aws.ecrRepository.EcrRepositoryImageTagMutabilityExclusionFilterList.Initializer"></a>
+
+```typescript
+import { ecrRepository } from '@cdktf/provider-aws'
+
+new ecrRepository.EcrRepositoryImageTagMutabilityExclusionFilterList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.ecrRepository.EcrRepositoryImageTagMutabilityExclusionFilterList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-aws.ecrRepository.EcrRepositoryImageTagMutabilityExclusionFilterList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-aws.ecrRepository.EcrRepositoryImageTagMutabilityExclusionFilterList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-aws.ecrRepository.EcrRepositoryImageTagMutabilityExclusionFilterList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.ecrRepository.EcrRepositoryImageTagMutabilityExclusionFilterList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktf/provider-aws.ecrRepository.EcrRepositoryImageTagMutabilityExclusionFilterList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-aws.ecrRepository.EcrRepositoryImageTagMutabilityExclusionFilterList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktf/provider-aws.ecrRepository.EcrRepositoryImageTagMutabilityExclusionFilterList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ecrRepository.EcrRepositoryImageTagMutabilityExclusionFilterList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-aws.ecrRepository.EcrRepositoryImageTagMutabilityExclusionFilterList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-aws.ecrRepository.EcrRepositoryImageTagMutabilityExclusionFilterList.get">get</a></code> | *No description.* |
+
+---
+
+##### `allWithMapKey` <a name="allWithMapKey" id="@cdktf/provider-aws.ecrRepository.EcrRepositoryImageTagMutabilityExclusionFilterList.allWithMapKey"></a>
+
+```typescript
+public allWithMapKey(mapKeyAttributeName: string): DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-aws.ecrRepository.EcrRepositoryImageTagMutabilityExclusionFilterList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* string
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-aws.ecrRepository.EcrRepositoryImageTagMutabilityExclusionFilterList.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-aws.ecrRepository.EcrRepositoryImageTagMutabilityExclusionFilterList.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.ecrRepository.EcrRepositoryImageTagMutabilityExclusionFilterList.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-aws.ecrRepository.EcrRepositoryImageTagMutabilityExclusionFilterList.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktf/provider-aws.ecrRepository.EcrRepositoryImageTagMutabilityExclusionFilterList.get"></a>
+
+```typescript
+public get(index: number): EcrRepositoryImageTagMutabilityExclusionFilterOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-aws.ecrRepository.EcrRepositoryImageTagMutabilityExclusionFilterList.get.parameter.index"></a>
+
+- *Type:* number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.ecrRepository.EcrRepositoryImageTagMutabilityExclusionFilterList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-aws.ecrRepository.EcrRepositoryImageTagMutabilityExclusionFilterList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ecrRepository.EcrRepositoryImageTagMutabilityExclusionFilterList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.ecrRepository.EcrRepositoryImageTagMutabilityExclusionFilter">EcrRepositoryImageTagMutabilityExclusionFilter</a>[]</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-aws.ecrRepository.EcrRepositoryImageTagMutabilityExclusionFilterList.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.ecrRepository.EcrRepositoryImageTagMutabilityExclusionFilterList.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.ecrRepository.EcrRepositoryImageTagMutabilityExclusionFilterList.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | EcrRepositoryImageTagMutabilityExclusionFilter[];
+```
+
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.ecrRepository.EcrRepositoryImageTagMutabilityExclusionFilter">EcrRepositoryImageTagMutabilityExclusionFilter</a>[]
+
+---
+
+
+### EcrRepositoryImageTagMutabilityExclusionFilterOutputReference <a name="EcrRepositoryImageTagMutabilityExclusionFilterOutputReference" id="@cdktf/provider-aws.ecrRepository.EcrRepositoryImageTagMutabilityExclusionFilterOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-aws.ecrRepository.EcrRepositoryImageTagMutabilityExclusionFilterOutputReference.Initializer"></a>
+
+```typescript
+import { ecrRepository } from '@cdktf/provider-aws'
+
+new ecrRepository.EcrRepositoryImageTagMutabilityExclusionFilterOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.ecrRepository.EcrRepositoryImageTagMutabilityExclusionFilterOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-aws.ecrRepository.EcrRepositoryImageTagMutabilityExclusionFilterOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-aws.ecrRepository.EcrRepositoryImageTagMutabilityExclusionFilterOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-aws.ecrRepository.EcrRepositoryImageTagMutabilityExclusionFilterOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-aws.ecrRepository.EcrRepositoryImageTagMutabilityExclusionFilterOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.ecrRepository.EcrRepositoryImageTagMutabilityExclusionFilterOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktf/provider-aws.ecrRepository.EcrRepositoryImageTagMutabilityExclusionFilterOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktf/provider-aws.ecrRepository.EcrRepositoryImageTagMutabilityExclusionFilterOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-aws.ecrRepository.EcrRepositoryImageTagMutabilityExclusionFilterOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ecrRepository.EcrRepositoryImageTagMutabilityExclusionFilterOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ecrRepository.EcrRepositoryImageTagMutabilityExclusionFilterOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ecrRepository.EcrRepositoryImageTagMutabilityExclusionFilterOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ecrRepository.EcrRepositoryImageTagMutabilityExclusionFilterOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ecrRepository.EcrRepositoryImageTagMutabilityExclusionFilterOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ecrRepository.EcrRepositoryImageTagMutabilityExclusionFilterOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ecrRepository.EcrRepositoryImageTagMutabilityExclusionFilterOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ecrRepository.EcrRepositoryImageTagMutabilityExclusionFilterOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ecrRepository.EcrRepositoryImageTagMutabilityExclusionFilterOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ecrRepository.EcrRepositoryImageTagMutabilityExclusionFilterOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ecrRepository.EcrRepositoryImageTagMutabilityExclusionFilterOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-aws.ecrRepository.EcrRepositoryImageTagMutabilityExclusionFilterOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-aws.ecrRepository.EcrRepositoryImageTagMutabilityExclusionFilterOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-aws.ecrRepository.EcrRepositoryImageTagMutabilityExclusionFilterOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.ecrRepository.EcrRepositoryImageTagMutabilityExclusionFilterOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-aws.ecrRepository.EcrRepositoryImageTagMutabilityExclusionFilterOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.ecrRepository.EcrRepositoryImageTagMutabilityExclusionFilterOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-aws.ecrRepository.EcrRepositoryImageTagMutabilityExclusionFilterOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.ecrRepository.EcrRepositoryImageTagMutabilityExclusionFilterOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-aws.ecrRepository.EcrRepositoryImageTagMutabilityExclusionFilterOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.ecrRepository.EcrRepositoryImageTagMutabilityExclusionFilterOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-aws.ecrRepository.EcrRepositoryImageTagMutabilityExclusionFilterOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.ecrRepository.EcrRepositoryImageTagMutabilityExclusionFilterOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-aws.ecrRepository.EcrRepositoryImageTagMutabilityExclusionFilterOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.ecrRepository.EcrRepositoryImageTagMutabilityExclusionFilterOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-aws.ecrRepository.EcrRepositoryImageTagMutabilityExclusionFilterOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.ecrRepository.EcrRepositoryImageTagMutabilityExclusionFilterOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-aws.ecrRepository.EcrRepositoryImageTagMutabilityExclusionFilterOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.ecrRepository.EcrRepositoryImageTagMutabilityExclusionFilterOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-aws.ecrRepository.EcrRepositoryImageTagMutabilityExclusionFilterOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.ecrRepository.EcrRepositoryImageTagMutabilityExclusionFilterOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-aws.ecrRepository.EcrRepositoryImageTagMutabilityExclusionFilterOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-aws.ecrRepository.EcrRepositoryImageTagMutabilityExclusionFilterOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-aws.ecrRepository.EcrRepositoryImageTagMutabilityExclusionFilterOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.ecrRepository.EcrRepositoryImageTagMutabilityExclusionFilterOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-aws.ecrRepository.EcrRepositoryImageTagMutabilityExclusionFilterOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.ecrRepository.EcrRepositoryImageTagMutabilityExclusionFilterOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-aws.ecrRepository.EcrRepositoryImageTagMutabilityExclusionFilterOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ecrRepository.EcrRepositoryImageTagMutabilityExclusionFilterOutputReference.property.filterInput">filterInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ecrRepository.EcrRepositoryImageTagMutabilityExclusionFilterOutputReference.property.filterTypeInput">filterTypeInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ecrRepository.EcrRepositoryImageTagMutabilityExclusionFilterOutputReference.property.filter">filter</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ecrRepository.EcrRepositoryImageTagMutabilityExclusionFilterOutputReference.property.filterType">filterType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ecrRepository.EcrRepositoryImageTagMutabilityExclusionFilterOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.ecrRepository.EcrRepositoryImageTagMutabilityExclusionFilter">EcrRepositoryImageTagMutabilityExclusionFilter</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-aws.ecrRepository.EcrRepositoryImageTagMutabilityExclusionFilterOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.ecrRepository.EcrRepositoryImageTagMutabilityExclusionFilterOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `filterInput`<sup>Optional</sup> <a name="filterInput" id="@cdktf/provider-aws.ecrRepository.EcrRepositoryImageTagMutabilityExclusionFilterOutputReference.property.filterInput"></a>
+
+```typescript
+public readonly filterInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `filterTypeInput`<sup>Optional</sup> <a name="filterTypeInput" id="@cdktf/provider-aws.ecrRepository.EcrRepositoryImageTagMutabilityExclusionFilterOutputReference.property.filterTypeInput"></a>
+
+```typescript
+public readonly filterTypeInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `filter`<sup>Required</sup> <a name="filter" id="@cdktf/provider-aws.ecrRepository.EcrRepositoryImageTagMutabilityExclusionFilterOutputReference.property.filter"></a>
+
+```typescript
+public readonly filter: string;
+```
+
+- *Type:* string
+
+---
+
+##### `filterType`<sup>Required</sup> <a name="filterType" id="@cdktf/provider-aws.ecrRepository.EcrRepositoryImageTagMutabilityExclusionFilterOutputReference.property.filterType"></a>
+
+```typescript
+public readonly filterType: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.ecrRepository.EcrRepositoryImageTagMutabilityExclusionFilterOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | EcrRepositoryImageTagMutabilityExclusionFilter;
+```
+
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.ecrRepository.EcrRepositoryImageTagMutabilityExclusionFilter">EcrRepositoryImageTagMutabilityExclusionFilter</a>
 
 ---
 

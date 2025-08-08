@@ -4,7 +4,7 @@
 
 ### KinesisResourcePolicy <a name="KinesisResourcePolicy" id="@cdktf/provider-aws.kinesisResourcePolicy.KinesisResourcePolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/kinesis_resource_policy aws_kinesis_resource_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/kinesis_resource_policy aws_kinesis_resource_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kinesisResourcePolicy.KinesisResourcePolicy.Initializer"></a>
 
@@ -474,7 +474,7 @@ The construct id used in the generated config for the KinesisResourcePolicy to i
 
 The id of the existing KinesisResourcePolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/kinesis_resource_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/kinesis_resource_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -767,8 +767,8 @@ const kinesisResourcePolicyConfig: kinesisResourcePolicy.KinesisResourcePolicyCo
 | <code><a href="#@cdktf/provider-aws.kinesisResourcePolicy.KinesisResourcePolicyConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.kinesisResourcePolicy.KinesisResourcePolicyConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.kinesisResourcePolicy.KinesisResourcePolicyConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.kinesisResourcePolicy.KinesisResourcePolicyConfig.property.policy">policy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/kinesis_resource_policy#policy KinesisResourcePolicy#policy}. |
-| <code><a href="#@cdktf/provider-aws.kinesisResourcePolicy.KinesisResourcePolicyConfig.property.resourceArn">resourceArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/kinesis_resource_policy#resource_arn KinesisResourcePolicy#resource_arn}. |
+| <code><a href="#@cdktf/provider-aws.kinesisResourcePolicy.KinesisResourcePolicyConfig.property.policy">policy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/kinesis_resource_policy#policy KinesisResourcePolicy#policy}. |
+| <code><a href="#@cdktf/provider-aws.kinesisResourcePolicy.KinesisResourcePolicyConfig.property.resourceArn">resourceArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/kinesis_resource_policy#resource_arn KinesisResourcePolicy#resource_arn}. |
 | <code><a href="#@cdktf/provider-aws.kinesisResourcePolicy.KinesisResourcePolicyConfig.property.region">region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -851,7 +851,7 @@ public readonly policy: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/kinesis_resource_policy#policy KinesisResourcePolicy#policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/kinesis_resource_policy#policy KinesisResourcePolicy#policy}.
 
 ---
 
@@ -863,7 +863,7 @@ public readonly resourceArn: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/kinesis_resource_policy#resource_arn KinesisResourcePolicy#resource_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/kinesis_resource_policy#resource_arn KinesisResourcePolicy#resource_arn}.
 
 ---
 
@@ -877,7 +877,7 @@ public readonly region: string;
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/kinesis_resource_policy#region KinesisResourcePolicy#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/kinesis_resource_policy#region KinesisResourcePolicy#region}
 
 ---
 

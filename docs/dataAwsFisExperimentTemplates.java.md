@@ -4,7 +4,7 @@
 
 ### DataAwsFisExperimentTemplates <a name="DataAwsFisExperimentTemplates" id="@cdktf/provider-aws.dataAwsFisExperimentTemplates.DataAwsFisExperimentTemplates"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/data-sources/fis_experiment_templates aws_fis_experiment_templates}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/data-sources/fis_experiment_templates aws_fis_experiment_templates}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsFisExperimentTemplates.DataAwsFisExperimentTemplates.Initializer"></a>
 
@@ -40,7 +40,7 @@ DataAwsFisExperimentTemplates.Builder.create(Construct scope, java.lang.String i
 | <code><a href="#@cdktf/provider-aws.dataAwsFisExperimentTemplates.DataAwsFisExperimentTemplates.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsFisExperimentTemplates.DataAwsFisExperimentTemplates.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsFisExperimentTemplates.DataAwsFisExperimentTemplates.Initializer.parameter.region">region</a></code> | <code>java.lang.String</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktf/provider-aws.dataAwsFisExperimentTemplates.DataAwsFisExperimentTemplates.Initializer.parameter.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/data-sources/fis_experiment_templates#tags DataAwsFisExperimentTemplates#tags}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsFisExperimentTemplates.DataAwsFisExperimentTemplates.Initializer.parameter.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/data-sources/fis_experiment_templates#tags DataAwsFisExperimentTemplates#tags}. |
 
 ---
 
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/data-sources/fis_experiment_templates#region DataAwsFisExperimentTemplates#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/data-sources/fis_experiment_templates#region DataAwsFisExperimentTemplates#region}
 
 ---
 
@@ -118,7 +118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/data-sources/fis_experiment_templates#tags DataAwsFisExperimentTemplates#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/data-sources/fis_experiment_templates#tags DataAwsFisExperimentTemplates#tags}.
 
 ---
 
@@ -455,7 +455,7 @@ The construct id used in the generated config for the DataAwsFisExperimentTempla
 
 The id of the existing DataAwsFisExperimentTemplates that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/data-sources/fis_experiment_templates#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/data-sources/fis_experiment_templates#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -719,7 +719,7 @@ DataAwsFisExperimentTemplatesConfig.builder()
 | <code><a href="#@cdktf/provider-aws.dataAwsFisExperimentTemplates.DataAwsFisExperimentTemplatesConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsFisExperimentTemplates.DataAwsFisExperimentTemplatesConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsFisExperimentTemplates.DataAwsFisExperimentTemplatesConfig.property.region">region</a></code> | <code>java.lang.String</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktf/provider-aws.dataAwsFisExperimentTemplates.DataAwsFisExperimentTemplatesConfig.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/data-sources/fis_experiment_templates#tags DataAwsFisExperimentTemplates#tags}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsFisExperimentTemplates.DataAwsFisExperimentTemplatesConfig.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/data-sources/fis_experiment_templates#tags DataAwsFisExperimentTemplates#tags}. |
 
 ---
 
@@ -803,7 +803,7 @@ public java.lang.String getRegion();
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/data-sources/fis_experiment_templates#region DataAwsFisExperimentTemplates#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/data-sources/fis_experiment_templates#region DataAwsFisExperimentTemplates#region}
 
 ---
 
@@ -815,7 +815,7 @@ public java.util.Map<java.lang.String, java.lang.String> getTags();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/data-sources/fis_experiment_templates#tags DataAwsFisExperimentTemplates#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/data-sources/fis_experiment_templates#tags DataAwsFisExperimentTemplates#tags}.
 
 ---
 
