@@ -4,7 +4,7 @@
 
 ### FinspaceKxDatabase <a name="FinspaceKxDatabase" id="@cdktf/provider-aws.finspaceKxDatabase.FinspaceKxDatabase"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/finspace_kx_database aws_finspace_kx_database}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/finspace_kx_database aws_finspace_kx_database}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.finspaceKxDatabase.FinspaceKxDatabase.Initializer"></a>
 
@@ -522,7 +522,7 @@ The construct id used in the generated config for the FinspaceKxDatabase to impo
 
 The id of the existing FinspaceKxDatabase that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/finspace_kx_database#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/finspace_kx_database#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -963,13 +963,13 @@ new FinspaceKxDatabaseConfig {
 | <code><a href="#@cdktf/provider-aws.finspaceKxDatabase.FinspaceKxDatabaseConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.finspaceKxDatabase.FinspaceKxDatabaseConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.finspaceKxDatabase.FinspaceKxDatabaseConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.finspaceKxDatabase.FinspaceKxDatabaseConfig.property.environmentId">EnvironmentId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/finspace_kx_database#environment_id FinspaceKxDatabase#environment_id}. |
-| <code><a href="#@cdktf/provider-aws.finspaceKxDatabase.FinspaceKxDatabaseConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/finspace_kx_database#name FinspaceKxDatabase#name}. |
-| <code><a href="#@cdktf/provider-aws.finspaceKxDatabase.FinspaceKxDatabaseConfig.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/finspace_kx_database#description FinspaceKxDatabase#description}. |
-| <code><a href="#@cdktf/provider-aws.finspaceKxDatabase.FinspaceKxDatabaseConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/finspace_kx_database#id FinspaceKxDatabase#id}. |
+| <code><a href="#@cdktf/provider-aws.finspaceKxDatabase.FinspaceKxDatabaseConfig.property.environmentId">EnvironmentId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/finspace_kx_database#environment_id FinspaceKxDatabase#environment_id}. |
+| <code><a href="#@cdktf/provider-aws.finspaceKxDatabase.FinspaceKxDatabaseConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/finspace_kx_database#name FinspaceKxDatabase#name}. |
+| <code><a href="#@cdktf/provider-aws.finspaceKxDatabase.FinspaceKxDatabaseConfig.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/finspace_kx_database#description FinspaceKxDatabase#description}. |
+| <code><a href="#@cdktf/provider-aws.finspaceKxDatabase.FinspaceKxDatabaseConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/finspace_kx_database#id FinspaceKxDatabase#id}. |
 | <code><a href="#@cdktf/provider-aws.finspaceKxDatabase.FinspaceKxDatabaseConfig.property.region">Region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktf/provider-aws.finspaceKxDatabase.FinspaceKxDatabaseConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/finspace_kx_database#tags FinspaceKxDatabase#tags}. |
-| <code><a href="#@cdktf/provider-aws.finspaceKxDatabase.FinspaceKxDatabaseConfig.property.tagsAll">TagsAll</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/finspace_kx_database#tags_all FinspaceKxDatabase#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.finspaceKxDatabase.FinspaceKxDatabaseConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/finspace_kx_database#tags FinspaceKxDatabase#tags}. |
+| <code><a href="#@cdktf/provider-aws.finspaceKxDatabase.FinspaceKxDatabaseConfig.property.tagsAll">TagsAll</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/finspace_kx_database#tags_all FinspaceKxDatabase#tags_all}. |
 | <code><a href="#@cdktf/provider-aws.finspaceKxDatabase.FinspaceKxDatabaseConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-aws.finspaceKxDatabase.FinspaceKxDatabaseTimeouts">FinspaceKxDatabaseTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1052,7 +1052,7 @@ public string EnvironmentId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/finspace_kx_database#environment_id FinspaceKxDatabase#environment_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/finspace_kx_database#environment_id FinspaceKxDatabase#environment_id}.
 
 ---
 
@@ -1064,7 +1064,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/finspace_kx_database#name FinspaceKxDatabase#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/finspace_kx_database#name FinspaceKxDatabase#name}.
 
 ---
 
@@ -1076,7 +1076,7 @@ public string Description { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/finspace_kx_database#description FinspaceKxDatabase#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/finspace_kx_database#description FinspaceKxDatabase#description}.
 
 ---
 
@@ -1088,7 +1088,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/finspace_kx_database#id FinspaceKxDatabase#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/finspace_kx_database#id FinspaceKxDatabase#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1105,7 +1105,7 @@ public string Region { get; set; }
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/finspace_kx_database#region FinspaceKxDatabase#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/finspace_kx_database#region FinspaceKxDatabase#region}
 
 ---
 
@@ -1117,7 +1117,7 @@ public System.Collections.Generic.IDictionary<string, string> Tags { get; set; }
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/finspace_kx_database#tags FinspaceKxDatabase#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/finspace_kx_database#tags FinspaceKxDatabase#tags}.
 
 ---
 
@@ -1129,7 +1129,7 @@ public System.Collections.Generic.IDictionary<string, string> TagsAll { get; set
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/finspace_kx_database#tags_all FinspaceKxDatabase#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/finspace_kx_database#tags_all FinspaceKxDatabase#tags_all}.
 
 ---
 
@@ -1143,7 +1143,7 @@ public FinspaceKxDatabaseTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/finspace_kx_database#timeouts FinspaceKxDatabase#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/finspace_kx_database#timeouts FinspaceKxDatabase#timeouts}
 
 ---
 
@@ -1165,9 +1165,9 @@ new FinspaceKxDatabaseTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.finspaceKxDatabase.FinspaceKxDatabaseTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/finspace_kx_database#create FinspaceKxDatabase#create}. |
-| <code><a href="#@cdktf/provider-aws.finspaceKxDatabase.FinspaceKxDatabaseTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/finspace_kx_database#delete FinspaceKxDatabase#delete}. |
-| <code><a href="#@cdktf/provider-aws.finspaceKxDatabase.FinspaceKxDatabaseTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/finspace_kx_database#update FinspaceKxDatabase#update}. |
+| <code><a href="#@cdktf/provider-aws.finspaceKxDatabase.FinspaceKxDatabaseTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/finspace_kx_database#create FinspaceKxDatabase#create}. |
+| <code><a href="#@cdktf/provider-aws.finspaceKxDatabase.FinspaceKxDatabaseTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/finspace_kx_database#delete FinspaceKxDatabase#delete}. |
+| <code><a href="#@cdktf/provider-aws.finspaceKxDatabase.FinspaceKxDatabaseTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/finspace_kx_database#update FinspaceKxDatabase#update}. |
 
 ---
 
@@ -1179,7 +1179,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/finspace_kx_database#create FinspaceKxDatabase#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/finspace_kx_database#create FinspaceKxDatabase#create}.
 
 ---
 
@@ -1191,7 +1191,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/finspace_kx_database#delete FinspaceKxDatabase#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/finspace_kx_database#delete FinspaceKxDatabase#delete}.
 
 ---
 
@@ -1203,7 +1203,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/finspace_kx_database#update FinspaceKxDatabase#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/finspace_kx_database#update FinspaceKxDatabase#update}.
 
 ---
 

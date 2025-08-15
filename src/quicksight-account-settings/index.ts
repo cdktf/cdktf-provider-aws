@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/quicksight_account_settings
+// https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/quicksight_account_settings
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,21 +13,21 @@ import * as cdktf from 'cdktf';
 
 export interface QuicksightAccountSettingsConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/quicksight_account_settings#aws_account_id QuicksightAccountSettings#aws_account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/quicksight_account_settings#aws_account_id QuicksightAccountSettings#aws_account_id}
   */
   readonly awsAccountId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/quicksight_account_settings#default_namespace QuicksightAccountSettings#default_namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/quicksight_account_settings#default_namespace QuicksightAccountSettings#default_namespace}
   */
   readonly defaultNamespace?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/quicksight_account_settings#termination_protection_enabled QuicksightAccountSettings#termination_protection_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/quicksight_account_settings#termination_protection_enabled QuicksightAccountSettings#termination_protection_enabled}
   */
   readonly terminationProtectionEnabled?: boolean | cdktf.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/quicksight_account_settings#timeouts QuicksightAccountSettings#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/quicksight_account_settings#timeouts QuicksightAccountSettings#timeouts}
   */
   readonly timeouts?: QuicksightAccountSettingsTimeouts;
 }
@@ -35,13 +35,13 @@ export interface QuicksightAccountSettingsTimeouts {
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/quicksight_account_settings#create QuicksightAccountSettings#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/quicksight_account_settings#create QuicksightAccountSettings#create}
   */
   readonly create?: string;
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/quicksight_account_settings#update QuicksightAccountSettings#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/quicksight_account_settings#update QuicksightAccountSettings#update}
   */
   readonly update?: string;
 }
@@ -164,7 +164,7 @@ export class QuicksightAccountSettingsTimeoutsOutputReference extends cdktf.Comp
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/quicksight_account_settings aws_quicksight_account_settings}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/quicksight_account_settings aws_quicksight_account_settings}
 */
 export class QuicksightAccountSettings extends cdktf.TerraformResource {
 
@@ -180,7 +180,7 @@ export class QuicksightAccountSettings extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a QuicksightAccountSettings resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the QuicksightAccountSettings to import
-  * @param importFromId The id of the existing QuicksightAccountSettings that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/quicksight_account_settings#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing QuicksightAccountSettings that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/quicksight_account_settings#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the QuicksightAccountSettings to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -192,7 +192,7 @@ export class QuicksightAccountSettings extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/quicksight_account_settings aws_quicksight_account_settings} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/quicksight_account_settings aws_quicksight_account_settings} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -203,7 +203,7 @@ export class QuicksightAccountSettings extends cdktf.TerraformResource {
       terraformResourceType: 'aws_quicksight_account_settings',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.8.0',
+        providerVersion: '6.9.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

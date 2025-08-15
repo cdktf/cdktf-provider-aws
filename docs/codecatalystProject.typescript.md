@@ -4,7 +4,7 @@
 
 ### CodecatalystProject <a name="CodecatalystProject" id="@cdktf/provider-aws.codecatalystProject.CodecatalystProject"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/codecatalyst_project aws_codecatalyst_project}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/codecatalyst_project aws_codecatalyst_project}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.codecatalystProject.CodecatalystProject.Initializer"></a>
 
@@ -508,7 +508,7 @@ The construct id used in the generated config for the CodecatalystProject to imp
 
 The id of the existing CodecatalystProject that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/codecatalyst_project#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/codecatalyst_project#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -867,10 +867,10 @@ const codecatalystProjectConfig: codecatalystProject.CodecatalystProjectConfig =
 | <code><a href="#@cdktf/provider-aws.codecatalystProject.CodecatalystProjectConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.codecatalystProject.CodecatalystProjectConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.codecatalystProject.CodecatalystProjectConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.codecatalystProject.CodecatalystProjectConfig.property.displayName">displayName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/codecatalyst_project#display_name CodecatalystProject#display_name}. |
-| <code><a href="#@cdktf/provider-aws.codecatalystProject.CodecatalystProjectConfig.property.spaceName">spaceName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/codecatalyst_project#space_name CodecatalystProject#space_name}. |
-| <code><a href="#@cdktf/provider-aws.codecatalystProject.CodecatalystProjectConfig.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/codecatalyst_project#description CodecatalystProject#description}. |
-| <code><a href="#@cdktf/provider-aws.codecatalystProject.CodecatalystProjectConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/codecatalyst_project#id CodecatalystProject#id}. |
+| <code><a href="#@cdktf/provider-aws.codecatalystProject.CodecatalystProjectConfig.property.displayName">displayName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/codecatalyst_project#display_name CodecatalystProject#display_name}. |
+| <code><a href="#@cdktf/provider-aws.codecatalystProject.CodecatalystProjectConfig.property.spaceName">spaceName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/codecatalyst_project#space_name CodecatalystProject#space_name}. |
+| <code><a href="#@cdktf/provider-aws.codecatalystProject.CodecatalystProjectConfig.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/codecatalyst_project#description CodecatalystProject#description}. |
+| <code><a href="#@cdktf/provider-aws.codecatalystProject.CodecatalystProjectConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/codecatalyst_project#id CodecatalystProject#id}. |
 | <code><a href="#@cdktf/provider-aws.codecatalystProject.CodecatalystProjectConfig.property.region">region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktf/provider-aws.codecatalystProject.CodecatalystProjectConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-aws.codecatalystProject.CodecatalystProjectTimeouts">CodecatalystProjectTimeouts</a></code> | timeouts block. |
 
@@ -954,7 +954,7 @@ public readonly displayName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/codecatalyst_project#display_name CodecatalystProject#display_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/codecatalyst_project#display_name CodecatalystProject#display_name}.
 
 ---
 
@@ -966,7 +966,7 @@ public readonly spaceName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/codecatalyst_project#space_name CodecatalystProject#space_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/codecatalyst_project#space_name CodecatalystProject#space_name}.
 
 ---
 
@@ -978,7 +978,7 @@ public readonly description: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/codecatalyst_project#description CodecatalystProject#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/codecatalyst_project#description CodecatalystProject#description}.
 
 ---
 
@@ -990,7 +990,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/codecatalyst_project#id CodecatalystProject#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/codecatalyst_project#id CodecatalystProject#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1007,7 +1007,7 @@ public readonly region: string;
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/codecatalyst_project#region CodecatalystProject#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/codecatalyst_project#region CodecatalystProject#region}
 
 ---
 
@@ -1021,7 +1021,7 @@ public readonly timeouts: CodecatalystProjectTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/codecatalyst_project#timeouts CodecatalystProject#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/codecatalyst_project#timeouts CodecatalystProject#timeouts}
 
 ---
 
@@ -1039,9 +1039,9 @@ const codecatalystProjectTimeouts: codecatalystProject.CodecatalystProjectTimeou
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.codecatalystProject.CodecatalystProjectTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/codecatalyst_project#create CodecatalystProject#create}. |
-| <code><a href="#@cdktf/provider-aws.codecatalystProject.CodecatalystProjectTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/codecatalyst_project#delete CodecatalystProject#delete}. |
-| <code><a href="#@cdktf/provider-aws.codecatalystProject.CodecatalystProjectTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/codecatalyst_project#update CodecatalystProject#update}. |
+| <code><a href="#@cdktf/provider-aws.codecatalystProject.CodecatalystProjectTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/codecatalyst_project#create CodecatalystProject#create}. |
+| <code><a href="#@cdktf/provider-aws.codecatalystProject.CodecatalystProjectTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/codecatalyst_project#delete CodecatalystProject#delete}. |
+| <code><a href="#@cdktf/provider-aws.codecatalystProject.CodecatalystProjectTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/codecatalyst_project#update CodecatalystProject#update}. |
 
 ---
 
@@ -1053,7 +1053,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/codecatalyst_project#create CodecatalystProject#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/codecatalyst_project#create CodecatalystProject#create}.
 
 ---
 
@@ -1065,7 +1065,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/codecatalyst_project#delete CodecatalystProject#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/codecatalyst_project#delete CodecatalystProject#delete}.
 
 ---
 
@@ -1077,7 +1077,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/codecatalyst_project#update CodecatalystProject#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/codecatalyst_project#update CodecatalystProject#update}.
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### IamUserPolicyAttachmentsExclusive <a name="IamUserPolicyAttachmentsExclusive" id="@cdktf/provider-aws.iamUserPolicyAttachmentsExclusive.IamUserPolicyAttachmentsExclusive"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/iam_user_policy_attachments_exclusive aws_iam_user_policy_attachments_exclusive}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/iam_user_policy_attachments_exclusive aws_iam_user_policy_attachments_exclusive}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iamUserPolicyAttachmentsExclusive.IamUserPolicyAttachmentsExclusive.Initializer"></a>
 
@@ -467,7 +467,7 @@ The construct id used in the generated config for the IamUserPolicyAttachmentsEx
 
 The id of the existing IamUserPolicyAttachmentsExclusive that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/iam_user_policy_attachments_exclusive#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/iam_user_policy_attachments_exclusive#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -727,8 +727,8 @@ const iamUserPolicyAttachmentsExclusiveConfig: iamUserPolicyAttachmentsExclusive
 | <code><a href="#@cdktf/provider-aws.iamUserPolicyAttachmentsExclusive.IamUserPolicyAttachmentsExclusiveConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iamUserPolicyAttachmentsExclusive.IamUserPolicyAttachmentsExclusiveConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iamUserPolicyAttachmentsExclusive.IamUserPolicyAttachmentsExclusiveConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iamUserPolicyAttachmentsExclusive.IamUserPolicyAttachmentsExclusiveConfig.property.policyArns">policyArns</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/iam_user_policy_attachments_exclusive#policy_arns IamUserPolicyAttachmentsExclusive#policy_arns}. |
-| <code><a href="#@cdktf/provider-aws.iamUserPolicyAttachmentsExclusive.IamUserPolicyAttachmentsExclusiveConfig.property.userName">userName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/iam_user_policy_attachments_exclusive#user_name IamUserPolicyAttachmentsExclusive#user_name}. |
+| <code><a href="#@cdktf/provider-aws.iamUserPolicyAttachmentsExclusive.IamUserPolicyAttachmentsExclusiveConfig.property.policyArns">policyArns</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/iam_user_policy_attachments_exclusive#policy_arns IamUserPolicyAttachmentsExclusive#policy_arns}. |
+| <code><a href="#@cdktf/provider-aws.iamUserPolicyAttachmentsExclusive.IamUserPolicyAttachmentsExclusiveConfig.property.userName">userName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/iam_user_policy_attachments_exclusive#user_name IamUserPolicyAttachmentsExclusive#user_name}. |
 
 ---
 
@@ -810,7 +810,7 @@ public readonly policyArns: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/iam_user_policy_attachments_exclusive#policy_arns IamUserPolicyAttachmentsExclusive#policy_arns}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/iam_user_policy_attachments_exclusive#policy_arns IamUserPolicyAttachmentsExclusive#policy_arns}.
 
 ---
 
@@ -822,7 +822,7 @@ public readonly userName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/iam_user_policy_attachments_exclusive#user_name IamUserPolicyAttachmentsExclusive#user_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/iam_user_policy_attachments_exclusive#user_name IamUserPolicyAttachmentsExclusive#user_name}.
 
 ---
 

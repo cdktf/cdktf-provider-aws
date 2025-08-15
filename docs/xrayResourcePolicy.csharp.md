@@ -4,7 +4,7 @@
 
 ### XrayResourcePolicy <a name="XrayResourcePolicy" id="@cdktf/provider-aws.xrayResourcePolicy.XrayResourcePolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/xray_resource_policy aws_xray_resource_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/xray_resource_policy aws_xray_resource_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.xrayResourcePolicy.XrayResourcePolicy.Initializer"></a>
 
@@ -488,7 +488,7 @@ The construct id used in the generated config for the XrayResourcePolicy to impo
 
 The id of the existing XrayResourcePolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/xray_resource_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/xray_resource_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -838,10 +838,10 @@ new XrayResourcePolicyConfig {
 | <code><a href="#@cdktf/provider-aws.xrayResourcePolicy.XrayResourcePolicyConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.xrayResourcePolicy.XrayResourcePolicyConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.xrayResourcePolicy.XrayResourcePolicyConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.xrayResourcePolicy.XrayResourcePolicyConfig.property.policyDocument">PolicyDocument</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/xray_resource_policy#policy_document XrayResourcePolicy#policy_document}. |
-| <code><a href="#@cdktf/provider-aws.xrayResourcePolicy.XrayResourcePolicyConfig.property.policyName">PolicyName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/xray_resource_policy#policy_name XrayResourcePolicy#policy_name}. |
-| <code><a href="#@cdktf/provider-aws.xrayResourcePolicy.XrayResourcePolicyConfig.property.bypassPolicyLockoutCheck">BypassPolicyLockoutCheck</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/xray_resource_policy#bypass_policy_lockout_check XrayResourcePolicy#bypass_policy_lockout_check}. |
-| <code><a href="#@cdktf/provider-aws.xrayResourcePolicy.XrayResourcePolicyConfig.property.policyRevisionId">PolicyRevisionId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/xray_resource_policy#policy_revision_id XrayResourcePolicy#policy_revision_id}. |
+| <code><a href="#@cdktf/provider-aws.xrayResourcePolicy.XrayResourcePolicyConfig.property.policyDocument">PolicyDocument</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/xray_resource_policy#policy_document XrayResourcePolicy#policy_document}. |
+| <code><a href="#@cdktf/provider-aws.xrayResourcePolicy.XrayResourcePolicyConfig.property.policyName">PolicyName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/xray_resource_policy#policy_name XrayResourcePolicy#policy_name}. |
+| <code><a href="#@cdktf/provider-aws.xrayResourcePolicy.XrayResourcePolicyConfig.property.bypassPolicyLockoutCheck">BypassPolicyLockoutCheck</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/xray_resource_policy#bypass_policy_lockout_check XrayResourcePolicy#bypass_policy_lockout_check}. |
+| <code><a href="#@cdktf/provider-aws.xrayResourcePolicy.XrayResourcePolicyConfig.property.policyRevisionId">PolicyRevisionId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/xray_resource_policy#policy_revision_id XrayResourcePolicy#policy_revision_id}. |
 | <code><a href="#@cdktf/provider-aws.xrayResourcePolicy.XrayResourcePolicyConfig.property.region">Region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -924,7 +924,7 @@ public string PolicyDocument { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/xray_resource_policy#policy_document XrayResourcePolicy#policy_document}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/xray_resource_policy#policy_document XrayResourcePolicy#policy_document}.
 
 ---
 
@@ -936,7 +936,7 @@ public string PolicyName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/xray_resource_policy#policy_name XrayResourcePolicy#policy_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/xray_resource_policy#policy_name XrayResourcePolicy#policy_name}.
 
 ---
 
@@ -948,7 +948,7 @@ public object BypassPolicyLockoutCheck { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/xray_resource_policy#bypass_policy_lockout_check XrayResourcePolicy#bypass_policy_lockout_check}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/xray_resource_policy#bypass_policy_lockout_check XrayResourcePolicy#bypass_policy_lockout_check}.
 
 ---
 
@@ -960,7 +960,7 @@ public string PolicyRevisionId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/xray_resource_policy#policy_revision_id XrayResourcePolicy#policy_revision_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/xray_resource_policy#policy_revision_id XrayResourcePolicy#policy_revision_id}.
 
 ---
 
@@ -974,7 +974,7 @@ public string Region { get; set; }
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/xray_resource_policy#region XrayResourcePolicy#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/xray_resource_policy#region XrayResourcePolicy#region}
 
 ---
 

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/datazone_environment
+// https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/datazone_environment
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,57 +13,57 @@ import * as cdktf from 'cdktf';
 
 export interface DatazoneEnvironmentConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/datazone_environment#account_identifier DatazoneEnvironment#account_identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/datazone_environment#account_identifier DatazoneEnvironment#account_identifier}
   */
   readonly accountIdentifier?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/datazone_environment#account_region DatazoneEnvironment#account_region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/datazone_environment#account_region DatazoneEnvironment#account_region}
   */
   readonly accountRegion?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/datazone_environment#blueprint_identifier DatazoneEnvironment#blueprint_identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/datazone_environment#blueprint_identifier DatazoneEnvironment#blueprint_identifier}
   */
   readonly blueprintIdentifier?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/datazone_environment#description DatazoneEnvironment#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/datazone_environment#description DatazoneEnvironment#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/datazone_environment#domain_identifier DatazoneEnvironment#domain_identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/datazone_environment#domain_identifier DatazoneEnvironment#domain_identifier}
   */
   readonly domainIdentifier: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/datazone_environment#glossary_terms DatazoneEnvironment#glossary_terms}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/datazone_environment#glossary_terms DatazoneEnvironment#glossary_terms}
   */
   readonly glossaryTerms?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/datazone_environment#name DatazoneEnvironment#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/datazone_environment#name DatazoneEnvironment#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/datazone_environment#profile_identifier DatazoneEnvironment#profile_identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/datazone_environment#profile_identifier DatazoneEnvironment#profile_identifier}
   */
   readonly profileIdentifier: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/datazone_environment#project_identifier DatazoneEnvironment#project_identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/datazone_environment#project_identifier DatazoneEnvironment#project_identifier}
   */
   readonly projectIdentifier: string;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/datazone_environment#region DatazoneEnvironment#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/datazone_environment#region DatazoneEnvironment#region}
   */
   readonly region?: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/datazone_environment#timeouts DatazoneEnvironment#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/datazone_environment#timeouts DatazoneEnvironment#timeouts}
   */
   readonly timeouts?: DatazoneEnvironmentTimeouts;
   /**
   * user_parameters block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/datazone_environment#user_parameters DatazoneEnvironment#user_parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/datazone_environment#user_parameters DatazoneEnvironment#user_parameters}
   */
   readonly userParameters?: DatazoneEnvironmentUserParameters[] | cdktf.IResolvable;
 }
@@ -342,19 +342,19 @@ export interface DatazoneEnvironmentTimeouts {
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/datazone_environment#create DatazoneEnvironment#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/datazone_environment#create DatazoneEnvironment#create}
   */
   readonly create?: string;
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/datazone_environment#delete DatazoneEnvironment#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/datazone_environment#delete DatazoneEnvironment#delete}
   */
   readonly delete?: string;
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/datazone_environment#update DatazoneEnvironment#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/datazone_environment#update DatazoneEnvironment#update}
   */
   readonly update?: string;
 }
@@ -506,11 +506,11 @@ export class DatazoneEnvironmentTimeoutsOutputReference extends cdktf.ComplexObj
 }
 export interface DatazoneEnvironmentUserParameters {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/datazone_environment#name DatazoneEnvironment#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/datazone_environment#name DatazoneEnvironment#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/datazone_environment#value DatazoneEnvironment#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/datazone_environment#value DatazoneEnvironment#value}
   */
   readonly value?: string;
 }
@@ -655,7 +655,7 @@ export class DatazoneEnvironmentUserParametersList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/datazone_environment aws_datazone_environment}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/datazone_environment aws_datazone_environment}
 */
 export class DatazoneEnvironment extends cdktf.TerraformResource {
 
@@ -671,7 +671,7 @@ export class DatazoneEnvironment extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a DatazoneEnvironment resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DatazoneEnvironment to import
-  * @param importFromId The id of the existing DatazoneEnvironment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/datazone_environment#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DatazoneEnvironment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/datazone_environment#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DatazoneEnvironment to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -683,7 +683,7 @@ export class DatazoneEnvironment extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/datazone_environment aws_datazone_environment} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/datazone_environment aws_datazone_environment} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -694,7 +694,7 @@ export class DatazoneEnvironment extends cdktf.TerraformResource {
       terraformResourceType: 'aws_datazone_environment',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.8.0',
+        providerVersion: '6.9.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

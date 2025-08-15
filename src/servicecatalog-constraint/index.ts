@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/servicecatalog_constraint
+// https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/servicecatalog_constraint
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,64 +13,64 @@ import * as cdktf from 'cdktf';
 
 export interface ServicecatalogConstraintConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/servicecatalog_constraint#accept_language ServicecatalogConstraint#accept_language}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/servicecatalog_constraint#accept_language ServicecatalogConstraint#accept_language}
   */
   readonly acceptLanguage?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/servicecatalog_constraint#description ServicecatalogConstraint#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/servicecatalog_constraint#description ServicecatalogConstraint#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/servicecatalog_constraint#id ServicecatalogConstraint#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/servicecatalog_constraint#id ServicecatalogConstraint#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/servicecatalog_constraint#parameters ServicecatalogConstraint#parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/servicecatalog_constraint#parameters ServicecatalogConstraint#parameters}
   */
   readonly parameters: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/servicecatalog_constraint#portfolio_id ServicecatalogConstraint#portfolio_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/servicecatalog_constraint#portfolio_id ServicecatalogConstraint#portfolio_id}
   */
   readonly portfolioId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/servicecatalog_constraint#product_id ServicecatalogConstraint#product_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/servicecatalog_constraint#product_id ServicecatalogConstraint#product_id}
   */
   readonly productId: string;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/servicecatalog_constraint#region ServicecatalogConstraint#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/servicecatalog_constraint#region ServicecatalogConstraint#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/servicecatalog_constraint#type ServicecatalogConstraint#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/servicecatalog_constraint#type ServicecatalogConstraint#type}
   */
   readonly type: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/servicecatalog_constraint#timeouts ServicecatalogConstraint#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/servicecatalog_constraint#timeouts ServicecatalogConstraint#timeouts}
   */
   readonly timeouts?: ServicecatalogConstraintTimeouts;
 }
 export interface ServicecatalogConstraintTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/servicecatalog_constraint#create ServicecatalogConstraint#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/servicecatalog_constraint#create ServicecatalogConstraint#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/servicecatalog_constraint#delete ServicecatalogConstraint#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/servicecatalog_constraint#delete ServicecatalogConstraint#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/servicecatalog_constraint#read ServicecatalogConstraint#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/servicecatalog_constraint#read ServicecatalogConstraint#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/servicecatalog_constraint#update ServicecatalogConstraint#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/servicecatalog_constraint#update ServicecatalogConstraint#update}
   */
   readonly update?: string;
 }
@@ -251,7 +251,7 @@ export class ServicecatalogConstraintTimeoutsOutputReference extends cdktf.Compl
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/servicecatalog_constraint aws_servicecatalog_constraint}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/servicecatalog_constraint aws_servicecatalog_constraint}
 */
 export class ServicecatalogConstraint extends cdktf.TerraformResource {
 
@@ -267,7 +267,7 @@ export class ServicecatalogConstraint extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ServicecatalogConstraint resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ServicecatalogConstraint to import
-  * @param importFromId The id of the existing ServicecatalogConstraint that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/servicecatalog_constraint#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ServicecatalogConstraint that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/servicecatalog_constraint#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ServicecatalogConstraint to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -279,7 +279,7 @@ export class ServicecatalogConstraint extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/servicecatalog_constraint aws_servicecatalog_constraint} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/servicecatalog_constraint aws_servicecatalog_constraint} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -290,7 +290,7 @@ export class ServicecatalogConstraint extends cdktf.TerraformResource {
       terraformResourceType: 'aws_servicecatalog_constraint',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.8.0',
+        providerVersion: '6.9.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
