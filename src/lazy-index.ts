@@ -114,8 +114,10 @@ Object.defineProperty(exports, 'appstreamImageBuilder', { get: function () { ret
 Object.defineProperty(exports, 'appstreamStack', { get: function () { return require('./appstream-stack'); } });
 Object.defineProperty(exports, 'appstreamUser', { get: function () { return require('./appstream-user'); } });
 Object.defineProperty(exports, 'appstreamUserStackAssociation', { get: function () { return require('./appstream-user-stack-association'); } });
+Object.defineProperty(exports, 'appsyncApi', { get: function () { return require('./appsync-api'); } });
 Object.defineProperty(exports, 'appsyncApiCache', { get: function () { return require('./appsync-api-cache'); } });
 Object.defineProperty(exports, 'appsyncApiKey', { get: function () { return require('./appsync-api-key'); } });
+Object.defineProperty(exports, 'appsyncChannelNamespace', { get: function () { return require('./appsync-channel-namespace'); } });
 Object.defineProperty(exports, 'appsyncDatasource', { get: function () { return require('./appsync-datasource'); } });
 Object.defineProperty(exports, 'appsyncDomainName', { get: function () { return require('./appsync-domain-name'); } });
 Object.defineProperty(exports, 'appsyncDomainNameApiAssociation', { get: function () { return require('./appsync-domain-name-api-association'); } });

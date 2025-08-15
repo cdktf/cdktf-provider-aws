@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/notifications_notification_hub
+// https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/notifications_notification_hub
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,13 +13,13 @@ import * as cdktf from 'cdktf';
 
 export interface NotificationsNotificationHubConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/notifications_notification_hub#notification_hub_region NotificationsNotificationHub#notification_hub_region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/notifications_notification_hub#notification_hub_region NotificationsNotificationHub#notification_hub_region}
   */
   readonly notificationHubRegion: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/notifications_notification_hub#timeouts NotificationsNotificationHub#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/notifications_notification_hub#timeouts NotificationsNotificationHub#timeouts}
   */
   readonly timeouts?: NotificationsNotificationHubTimeouts;
 }
@@ -27,13 +27,13 @@ export interface NotificationsNotificationHubTimeouts {
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/notifications_notification_hub#create NotificationsNotificationHub#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/notifications_notification_hub#create NotificationsNotificationHub#create}
   */
   readonly create?: string;
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/notifications_notification_hub#delete NotificationsNotificationHub#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/notifications_notification_hub#delete NotificationsNotificationHub#delete}
   */
   readonly delete?: string;
 }
@@ -156,7 +156,7 @@ export class NotificationsNotificationHubTimeoutsOutputReference extends cdktf.C
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/notifications_notification_hub aws_notifications_notification_hub}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/notifications_notification_hub aws_notifications_notification_hub}
 */
 export class NotificationsNotificationHub extends cdktf.TerraformResource {
 
@@ -172,7 +172,7 @@ export class NotificationsNotificationHub extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a NotificationsNotificationHub resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NotificationsNotificationHub to import
-  * @param importFromId The id of the existing NotificationsNotificationHub that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/notifications_notification_hub#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing NotificationsNotificationHub that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/notifications_notification_hub#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NotificationsNotificationHub to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -184,7 +184,7 @@ export class NotificationsNotificationHub extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/notifications_notification_hub aws_notifications_notification_hub} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/notifications_notification_hub aws_notifications_notification_hub} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -195,7 +195,7 @@ export class NotificationsNotificationHub extends cdktf.TerraformResource {
       terraformResourceType: 'aws_notifications_notification_hub',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.8.0',
+        providerVersion: '6.9.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
