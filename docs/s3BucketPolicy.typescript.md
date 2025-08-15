@@ -4,7 +4,7 @@
 
 ### S3BucketPolicy <a name="S3BucketPolicy" id="@cdktf/provider-aws.s3BucketPolicy.S3BucketPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/s3_bucket_policy aws_s3_bucket_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/s3_bucket_policy aws_s3_bucket_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.s3BucketPolicy.S3BucketPolicy.Initializer"></a>
 
@@ -481,7 +481,7 @@ The construct id used in the generated config for the S3BucketPolicy to import.
 
 The id of the existing S3BucketPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/s3_bucket_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/s3_bucket_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -785,9 +785,9 @@ const s3BucketPolicyConfig: s3BucketPolicy.S3BucketPolicyConfig = { ... }
 | <code><a href="#@cdktf/provider-aws.s3BucketPolicy.S3BucketPolicyConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.s3BucketPolicy.S3BucketPolicyConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.s3BucketPolicy.S3BucketPolicyConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3BucketPolicy.S3BucketPolicyConfig.property.bucket">bucket</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/s3_bucket_policy#bucket S3BucketPolicy#bucket}. |
-| <code><a href="#@cdktf/provider-aws.s3BucketPolicy.S3BucketPolicyConfig.property.policy">policy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/s3_bucket_policy#policy S3BucketPolicy#policy}. |
-| <code><a href="#@cdktf/provider-aws.s3BucketPolicy.S3BucketPolicyConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/s3_bucket_policy#id S3BucketPolicy#id}. |
+| <code><a href="#@cdktf/provider-aws.s3BucketPolicy.S3BucketPolicyConfig.property.bucket">bucket</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/s3_bucket_policy#bucket S3BucketPolicy#bucket}. |
+| <code><a href="#@cdktf/provider-aws.s3BucketPolicy.S3BucketPolicyConfig.property.policy">policy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/s3_bucket_policy#policy S3BucketPolicy#policy}. |
+| <code><a href="#@cdktf/provider-aws.s3BucketPolicy.S3BucketPolicyConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/s3_bucket_policy#id S3BucketPolicy#id}. |
 | <code><a href="#@cdktf/provider-aws.s3BucketPolicy.S3BucketPolicyConfig.property.region">region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -870,7 +870,7 @@ public readonly bucket: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/s3_bucket_policy#bucket S3BucketPolicy#bucket}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/s3_bucket_policy#bucket S3BucketPolicy#bucket}.
 
 ---
 
@@ -882,7 +882,7 @@ public readonly policy: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/s3_bucket_policy#policy S3BucketPolicy#policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/s3_bucket_policy#policy S3BucketPolicy#policy}.
 
 ---
 
@@ -894,7 +894,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/s3_bucket_policy#id S3BucketPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/s3_bucket_policy#id S3BucketPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -911,7 +911,7 @@ public readonly region: string;
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/s3_bucket_policy#region S3BucketPolicy#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/s3_bucket_policy#region S3BucketPolicy#region}
 
 ---
 
