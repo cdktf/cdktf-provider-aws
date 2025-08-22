@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/main_route_table_association
+// https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/main_route_table_association
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktf from 'cdktf';
 
 export interface MainRouteTableAssociationConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/main_route_table_association#id MainRouteTableAssociation#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/main_route_table_association#id MainRouteTableAssociation#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,35 +22,35 @@ export interface MainRouteTableAssociationConfig extends cdktf.TerraformMetaArgu
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/main_route_table_association#region MainRouteTableAssociation#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/main_route_table_association#region MainRouteTableAssociation#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/main_route_table_association#route_table_id MainRouteTableAssociation#route_table_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/main_route_table_association#route_table_id MainRouteTableAssociation#route_table_id}
   */
   readonly routeTableId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/main_route_table_association#vpc_id MainRouteTableAssociation#vpc_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/main_route_table_association#vpc_id MainRouteTableAssociation#vpc_id}
   */
   readonly vpcId: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/main_route_table_association#timeouts MainRouteTableAssociation#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/main_route_table_association#timeouts MainRouteTableAssociation#timeouts}
   */
   readonly timeouts?: MainRouteTableAssociationTimeouts;
 }
 export interface MainRouteTableAssociationTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/main_route_table_association#create MainRouteTableAssociation#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/main_route_table_association#create MainRouteTableAssociation#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/main_route_table_association#delete MainRouteTableAssociation#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/main_route_table_association#delete MainRouteTableAssociation#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/main_route_table_association#update MainRouteTableAssociation#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/main_route_table_association#update MainRouteTableAssociation#update}
   */
   readonly update?: string;
 }
@@ -202,7 +202,7 @@ export class MainRouteTableAssociationTimeoutsOutputReference extends cdktf.Comp
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/main_route_table_association aws_main_route_table_association}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/main_route_table_association aws_main_route_table_association}
 */
 export class MainRouteTableAssociation extends cdktf.TerraformResource {
 
@@ -218,7 +218,7 @@ export class MainRouteTableAssociation extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a MainRouteTableAssociation resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the MainRouteTableAssociation to import
-  * @param importFromId The id of the existing MainRouteTableAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/main_route_table_association#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing MainRouteTableAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/main_route_table_association#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the MainRouteTableAssociation to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -230,7 +230,7 @@ export class MainRouteTableAssociation extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/main_route_table_association aws_main_route_table_association} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/main_route_table_association aws_main_route_table_association} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -241,7 +241,7 @@ export class MainRouteTableAssociation extends cdktf.TerraformResource {
       terraformResourceType: 'aws_main_route_table_association',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.9.0',
+        providerVersion: '6.10.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

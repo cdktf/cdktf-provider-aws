@@ -1,7 +1,7 @@
 
-# CDKTF prebuilt bindings for hashicorp/aws provider version 6.9.0
+# CDKTF prebuilt bindings for hashicorp/aws provider version 6.10.0
 
-This repo builds and publishes the [Terraform aws provider](https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs) bindings for [CDK for Terraform](https://cdk.tf).
+This repo builds and publishes the [Terraform aws provider](https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs) bindings for [CDK for Terraform](https://cdk.tf).
 
 ## Available Packages
 
@@ -63,7 +63,7 @@ This project is explicitly not tracking the Terraform aws provider version 1:1. 
 These are the upstream dependencies:
 
 - [CDK for Terraform](https://cdk.tf)
-- [Terraform aws provider](https://registry.terraform.io/providers/hashicorp/aws/6.9.0)
+- [Terraform aws provider](https://registry.terraform.io/providers/hashicorp/aws/6.10.0)
 - [Terraform Engine](https://terraform.io)
 
 If there are breaking changes (backward incompatible) in any of the above, the major version of this project will be bumped.
