@@ -4,7 +4,7 @@
 
 ### Instance <a name="Instance" id="@cdktf/provider-aws.instance.Instance"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance aws_instance}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance aws_instance}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.instance.Instance.Initializer"></a>
 
@@ -84,6 +84,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.instance.Instance.putMaintenanceOptions">PutMaintenanceOptions</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.instance.Instance.putMetadataOptions">PutMetadataOptions</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.instance.Instance.putNetworkInterface">PutNetworkInterface</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.instance.Instance.putPrimaryNetworkInterface">PutPrimaryNetworkInterface</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.instance.Instance.putPrivateDnsNameOptions">PutPrivateDnsNameOptions</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.instance.Instance.putRootBlockDevice">PutRootBlockDevice</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.instance.Instance.putTimeouts">PutTimeouts</a></code> | *No description.* |
@@ -120,6 +121,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.instance.Instance.resetNetworkInterface">ResetNetworkInterface</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.instance.Instance.resetPlacementGroup">ResetPlacementGroup</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.instance.Instance.resetPlacementPartitionNumber">ResetPlacementPartitionNumber</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.instance.Instance.resetPrimaryNetworkInterface">ResetPrimaryNetworkInterface</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.instance.Instance.resetPrivateDnsNameOptions">ResetPrivateDnsNameOptions</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.instance.Instance.resetPrivateIp">ResetPrivateIp</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.instance.Instance.resetRegion">ResetRegion</a></code> | *No description.* |
@@ -560,6 +562,18 @@ private void PutNetworkInterface(object Value)
 
 ---
 
+##### `PutPrimaryNetworkInterface` <a name="PutPrimaryNetworkInterface" id="@cdktf/provider-aws.instance.Instance.putPrimaryNetworkInterface"></a>
+
+```csharp
+private void PutPrimaryNetworkInterface(InstancePrimaryNetworkInterface Value)
+```
+
+###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.instance.Instance.putPrimaryNetworkInterface.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-aws.instance.InstancePrimaryNetworkInterface">InstancePrimaryNetworkInterface</a>
+
+---
+
 ##### `PutPrivateDnsNameOptions` <a name="PutPrivateDnsNameOptions" id="@cdktf/provider-aws.instance.Instance.putPrivateDnsNameOptions"></a>
 
 ```csharp
@@ -794,6 +808,12 @@ private void ResetPlacementGroup()
 private void ResetPlacementPartitionNumber()
 ```
 
+##### `ResetPrimaryNetworkInterface` <a name="ResetPrimaryNetworkInterface" id="@cdktf/provider-aws.instance.Instance.resetPrimaryNetworkInterface"></a>
+
+```csharp
+private void ResetPrimaryNetworkInterface()
+```
+
 ##### `ResetPrivateDnsNameOptions` <a name="ResetPrivateDnsNameOptions" id="@cdktf/provider-aws.instance.Instance.resetPrivateDnsNameOptions"></a>
 
 ```csharp
@@ -999,7 +1019,7 @@ The construct id used in the generated config for the Instance to import.
 
 The id of the existing Instance that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1045,6 +1065,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/
 | <code><a href="#@cdktf/provider-aws.instance.Instance.property.networkInterface">NetworkInterface</a></code> | <code><a href="#@cdktf/provider-aws.instance.InstanceNetworkInterfaceList">InstanceNetworkInterfaceList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.instance.Instance.property.outpostArn">OutpostArn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.instance.Instance.property.passwordData">PasswordData</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.instance.Instance.property.primaryNetworkInterface">PrimaryNetworkInterface</a></code> | <code><a href="#@cdktf/provider-aws.instance.InstancePrimaryNetworkInterfaceOutputReference">InstancePrimaryNetworkInterfaceOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.instance.Instance.property.primaryNetworkInterfaceId">PrimaryNetworkInterfaceId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.instance.Instance.property.privateDns">PrivateDns</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.instance.Instance.property.privateDnsNameOptions">PrivateDnsNameOptions</a></code> | <code><a href="#@cdktf/provider-aws.instance.InstancePrivateDnsNameOptionsOutputReference">InstancePrivateDnsNameOptionsOutputReference</a></code> | *No description.* |
@@ -1086,6 +1107,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/
 | <code><a href="#@cdktf/provider-aws.instance.Instance.property.networkInterfaceInput">NetworkInterfaceInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.instance.Instance.property.placementGroupInput">PlacementGroupInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.instance.Instance.property.placementPartitionNumberInput">PlacementPartitionNumberInput</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.instance.Instance.property.primaryNetworkInterfaceInput">PrimaryNetworkInterfaceInput</a></code> | <code><a href="#@cdktf/provider-aws.instance.InstancePrimaryNetworkInterface">InstancePrimaryNetworkInterface</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.instance.Instance.property.privateDnsNameOptionsInput">PrivateDnsNameOptionsInput</a></code> | <code><a href="#@cdktf/provider-aws.instance.InstancePrivateDnsNameOptions">InstancePrivateDnsNameOptions</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.instance.Instance.property.privateIpInput">PrivateIpInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.instance.Instance.property.regionInput">RegionInput</a></code> | <code>string</code> | *No description.* |
@@ -1441,6 +1463,16 @@ public string PasswordData { get; }
 ```
 
 - *Type:* string
+
+---
+
+##### `PrimaryNetworkInterface`<sup>Required</sup> <a name="PrimaryNetworkInterface" id="@cdktf/provider-aws.instance.Instance.property.primaryNetworkInterface"></a>
+
+```csharp
+public InstancePrimaryNetworkInterfaceOutputReference PrimaryNetworkInterface { get; }
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.instance.InstancePrimaryNetworkInterfaceOutputReference">InstancePrimaryNetworkInterfaceOutputReference</a>
 
 ---
 
@@ -1851,6 +1883,16 @@ public double PlacementPartitionNumberInput { get; }
 ```
 
 - *Type:* double
+
+---
+
+##### `PrimaryNetworkInterfaceInput`<sup>Optional</sup> <a name="PrimaryNetworkInterfaceInput" id="@cdktf/provider-aws.instance.Instance.property.primaryNetworkInterfaceInput"></a>
+
+```csharp
+public InstancePrimaryNetworkInterface PrimaryNetworkInterfaceInput { get; }
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.instance.InstancePrimaryNetworkInterface">InstancePrimaryNetworkInterface</a>
 
 ---
 
@@ -2421,7 +2463,7 @@ new InstanceCapacityReservationSpecification {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.instance.InstanceCapacityReservationSpecification.property.capacityReservationPreference">CapacityReservationPreference</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#capacity_reservation_preference Instance#capacity_reservation_preference}. |
+| <code><a href="#@cdktf/provider-aws.instance.InstanceCapacityReservationSpecification.property.capacityReservationPreference">CapacityReservationPreference</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#capacity_reservation_preference Instance#capacity_reservation_preference}. |
 | <code><a href="#@cdktf/provider-aws.instance.InstanceCapacityReservationSpecification.property.capacityReservationTarget">CapacityReservationTarget</a></code> | <code><a href="#@cdktf/provider-aws.instance.InstanceCapacityReservationSpecificationCapacityReservationTarget">InstanceCapacityReservationSpecificationCapacityReservationTarget</a></code> | capacity_reservation_target block. |
 
 ---
@@ -2434,7 +2476,7 @@ public string CapacityReservationPreference { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#capacity_reservation_preference Instance#capacity_reservation_preference}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#capacity_reservation_preference Instance#capacity_reservation_preference}.
 
 ---
 
@@ -2448,7 +2490,7 @@ public InstanceCapacityReservationSpecificationCapacityReservationTarget Capacit
 
 capacity_reservation_target block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#capacity_reservation_target Instance#capacity_reservation_target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#capacity_reservation_target Instance#capacity_reservation_target}
 
 ---
 
@@ -2469,8 +2511,8 @@ new InstanceCapacityReservationSpecificationCapacityReservationTarget {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.instance.InstanceCapacityReservationSpecificationCapacityReservationTarget.property.capacityReservationId">CapacityReservationId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#capacity_reservation_id Instance#capacity_reservation_id}. |
-| <code><a href="#@cdktf/provider-aws.instance.InstanceCapacityReservationSpecificationCapacityReservationTarget.property.capacityReservationResourceGroupArn">CapacityReservationResourceGroupArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#capacity_reservation_resource_group_arn Instance#capacity_reservation_resource_group_arn}. |
+| <code><a href="#@cdktf/provider-aws.instance.InstanceCapacityReservationSpecificationCapacityReservationTarget.property.capacityReservationId">CapacityReservationId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#capacity_reservation_id Instance#capacity_reservation_id}. |
+| <code><a href="#@cdktf/provider-aws.instance.InstanceCapacityReservationSpecificationCapacityReservationTarget.property.capacityReservationResourceGroupArn">CapacityReservationResourceGroupArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#capacity_reservation_resource_group_arn Instance#capacity_reservation_resource_group_arn}. |
 
 ---
 
@@ -2482,7 +2524,7 @@ public string CapacityReservationId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#capacity_reservation_id Instance#capacity_reservation_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#capacity_reservation_id Instance#capacity_reservation_id}.
 
 ---
 
@@ -2494,7 +2536,7 @@ public string CapacityReservationResourceGroupArn { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#capacity_reservation_resource_group_arn Instance#capacity_reservation_resource_group_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#capacity_reservation_resource_group_arn Instance#capacity_reservation_resource_group_arn}.
 
 ---
 
@@ -2546,6 +2588,7 @@ new InstanceConfig {
     object NetworkInterface = null,
     string PlacementGroup = null,
     double PlacementPartitionNumber = null,
+    InstancePrimaryNetworkInterface PrimaryNetworkInterface = null,
     InstancePrivateDnsNameOptions PrivateDnsNameOptions = null,
     string PrivateIp = null,
     string Region = null,
@@ -2577,56 +2620,57 @@ new InstanceConfig {
 | <code><a href="#@cdktf/provider-aws.instance.InstanceConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.instance.InstanceConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.instance.InstanceConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.instance.InstanceConfig.property.ami">Ami</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#ami Instance#ami}. |
-| <code><a href="#@cdktf/provider-aws.instance.InstanceConfig.property.associatePublicIpAddress">AssociatePublicIpAddress</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#associate_public_ip_address Instance#associate_public_ip_address}. |
-| <code><a href="#@cdktf/provider-aws.instance.InstanceConfig.property.availabilityZone">AvailabilityZone</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#availability_zone Instance#availability_zone}. |
+| <code><a href="#@cdktf/provider-aws.instance.InstanceConfig.property.ami">Ami</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#ami Instance#ami}. |
+| <code><a href="#@cdktf/provider-aws.instance.InstanceConfig.property.associatePublicIpAddress">AssociatePublicIpAddress</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#associate_public_ip_address Instance#associate_public_ip_address}. |
+| <code><a href="#@cdktf/provider-aws.instance.InstanceConfig.property.availabilityZone">AvailabilityZone</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#availability_zone Instance#availability_zone}. |
 | <code><a href="#@cdktf/provider-aws.instance.InstanceConfig.property.capacityReservationSpecification">CapacityReservationSpecification</a></code> | <code><a href="#@cdktf/provider-aws.instance.InstanceCapacityReservationSpecification">InstanceCapacityReservationSpecification</a></code> | capacity_reservation_specification block. |
 | <code><a href="#@cdktf/provider-aws.instance.InstanceConfig.property.cpuOptions">CpuOptions</a></code> | <code><a href="#@cdktf/provider-aws.instance.InstanceCpuOptions">InstanceCpuOptions</a></code> | cpu_options block. |
 | <code><a href="#@cdktf/provider-aws.instance.InstanceConfig.property.creditSpecification">CreditSpecification</a></code> | <code><a href="#@cdktf/provider-aws.instance.InstanceCreditSpecification">InstanceCreditSpecification</a></code> | credit_specification block. |
-| <code><a href="#@cdktf/provider-aws.instance.InstanceConfig.property.disableApiStop">DisableApiStop</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#disable_api_stop Instance#disable_api_stop}. |
-| <code><a href="#@cdktf/provider-aws.instance.InstanceConfig.property.disableApiTermination">DisableApiTermination</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#disable_api_termination Instance#disable_api_termination}. |
+| <code><a href="#@cdktf/provider-aws.instance.InstanceConfig.property.disableApiStop">DisableApiStop</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#disable_api_stop Instance#disable_api_stop}. |
+| <code><a href="#@cdktf/provider-aws.instance.InstanceConfig.property.disableApiTermination">DisableApiTermination</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#disable_api_termination Instance#disable_api_termination}. |
 | <code><a href="#@cdktf/provider-aws.instance.InstanceConfig.property.ebsBlockDevice">EbsBlockDevice</a></code> | <code>object</code> | ebs_block_device block. |
-| <code><a href="#@cdktf/provider-aws.instance.InstanceConfig.property.ebsOptimized">EbsOptimized</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#ebs_optimized Instance#ebs_optimized}. |
-| <code><a href="#@cdktf/provider-aws.instance.InstanceConfig.property.enablePrimaryIpv6">EnablePrimaryIpv6</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#enable_primary_ipv6 Instance#enable_primary_ipv6}. |
+| <code><a href="#@cdktf/provider-aws.instance.InstanceConfig.property.ebsOptimized">EbsOptimized</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#ebs_optimized Instance#ebs_optimized}. |
+| <code><a href="#@cdktf/provider-aws.instance.InstanceConfig.property.enablePrimaryIpv6">EnablePrimaryIpv6</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#enable_primary_ipv6 Instance#enable_primary_ipv6}. |
 | <code><a href="#@cdktf/provider-aws.instance.InstanceConfig.property.enclaveOptions">EnclaveOptions</a></code> | <code><a href="#@cdktf/provider-aws.instance.InstanceEnclaveOptions">InstanceEnclaveOptions</a></code> | enclave_options block. |
 | <code><a href="#@cdktf/provider-aws.instance.InstanceConfig.property.ephemeralBlockDevice">EphemeralBlockDevice</a></code> | <code>object</code> | ephemeral_block_device block. |
-| <code><a href="#@cdktf/provider-aws.instance.InstanceConfig.property.fetchPasswordData">FetchPasswordData</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#get_password_data Instance#get_password_data}. |
-| <code><a href="#@cdktf/provider-aws.instance.InstanceConfig.property.forceDestroy">ForceDestroy</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#force_destroy Instance#force_destroy}. |
-| <code><a href="#@cdktf/provider-aws.instance.InstanceConfig.property.hibernation">Hibernation</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#hibernation Instance#hibernation}. |
-| <code><a href="#@cdktf/provider-aws.instance.InstanceConfig.property.hostId">HostId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#host_id Instance#host_id}. |
-| <code><a href="#@cdktf/provider-aws.instance.InstanceConfig.property.hostResourceGroupArn">HostResourceGroupArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#host_resource_group_arn Instance#host_resource_group_arn}. |
-| <code><a href="#@cdktf/provider-aws.instance.InstanceConfig.property.iamInstanceProfile">IamInstanceProfile</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#iam_instance_profile Instance#iam_instance_profile}. |
-| <code><a href="#@cdktf/provider-aws.instance.InstanceConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#id Instance#id}. |
-| <code><a href="#@cdktf/provider-aws.instance.InstanceConfig.property.instanceInitiatedShutdownBehavior">InstanceInitiatedShutdownBehavior</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#instance_initiated_shutdown_behavior Instance#instance_initiated_shutdown_behavior}. |
+| <code><a href="#@cdktf/provider-aws.instance.InstanceConfig.property.fetchPasswordData">FetchPasswordData</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#get_password_data Instance#get_password_data}. |
+| <code><a href="#@cdktf/provider-aws.instance.InstanceConfig.property.forceDestroy">ForceDestroy</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#force_destroy Instance#force_destroy}. |
+| <code><a href="#@cdktf/provider-aws.instance.InstanceConfig.property.hibernation">Hibernation</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#hibernation Instance#hibernation}. |
+| <code><a href="#@cdktf/provider-aws.instance.InstanceConfig.property.hostId">HostId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#host_id Instance#host_id}. |
+| <code><a href="#@cdktf/provider-aws.instance.InstanceConfig.property.hostResourceGroupArn">HostResourceGroupArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#host_resource_group_arn Instance#host_resource_group_arn}. |
+| <code><a href="#@cdktf/provider-aws.instance.InstanceConfig.property.iamInstanceProfile">IamInstanceProfile</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#iam_instance_profile Instance#iam_instance_profile}. |
+| <code><a href="#@cdktf/provider-aws.instance.InstanceConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#id Instance#id}. |
+| <code><a href="#@cdktf/provider-aws.instance.InstanceConfig.property.instanceInitiatedShutdownBehavior">InstanceInitiatedShutdownBehavior</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#instance_initiated_shutdown_behavior Instance#instance_initiated_shutdown_behavior}. |
 | <code><a href="#@cdktf/provider-aws.instance.InstanceConfig.property.instanceMarketOptions">InstanceMarketOptions</a></code> | <code><a href="#@cdktf/provider-aws.instance.InstanceInstanceMarketOptions">InstanceInstanceMarketOptions</a></code> | instance_market_options block. |
-| <code><a href="#@cdktf/provider-aws.instance.InstanceConfig.property.instanceType">InstanceType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#instance_type Instance#instance_type}. |
-| <code><a href="#@cdktf/provider-aws.instance.InstanceConfig.property.ipv6AddressCount">Ipv6AddressCount</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#ipv6_address_count Instance#ipv6_address_count}. |
-| <code><a href="#@cdktf/provider-aws.instance.InstanceConfig.property.ipv6Addresses">Ipv6Addresses</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#ipv6_addresses Instance#ipv6_addresses}. |
-| <code><a href="#@cdktf/provider-aws.instance.InstanceConfig.property.keyName">KeyName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#key_name Instance#key_name}. |
+| <code><a href="#@cdktf/provider-aws.instance.InstanceConfig.property.instanceType">InstanceType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#instance_type Instance#instance_type}. |
+| <code><a href="#@cdktf/provider-aws.instance.InstanceConfig.property.ipv6AddressCount">Ipv6AddressCount</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#ipv6_address_count Instance#ipv6_address_count}. |
+| <code><a href="#@cdktf/provider-aws.instance.InstanceConfig.property.ipv6Addresses">Ipv6Addresses</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#ipv6_addresses Instance#ipv6_addresses}. |
+| <code><a href="#@cdktf/provider-aws.instance.InstanceConfig.property.keyName">KeyName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#key_name Instance#key_name}. |
 | <code><a href="#@cdktf/provider-aws.instance.InstanceConfig.property.launchTemplate">LaunchTemplate</a></code> | <code><a href="#@cdktf/provider-aws.instance.InstanceLaunchTemplate">InstanceLaunchTemplate</a></code> | launch_template block. |
 | <code><a href="#@cdktf/provider-aws.instance.InstanceConfig.property.maintenanceOptions">MaintenanceOptions</a></code> | <code><a href="#@cdktf/provider-aws.instance.InstanceMaintenanceOptions">InstanceMaintenanceOptions</a></code> | maintenance_options block. |
 | <code><a href="#@cdktf/provider-aws.instance.InstanceConfig.property.metadataOptions">MetadataOptions</a></code> | <code><a href="#@cdktf/provider-aws.instance.InstanceMetadataOptions">InstanceMetadataOptions</a></code> | metadata_options block. |
-| <code><a href="#@cdktf/provider-aws.instance.InstanceConfig.property.monitoring">Monitoring</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#monitoring Instance#monitoring}. |
+| <code><a href="#@cdktf/provider-aws.instance.InstanceConfig.property.monitoring">Monitoring</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#monitoring Instance#monitoring}. |
 | <code><a href="#@cdktf/provider-aws.instance.InstanceConfig.property.networkInterface">NetworkInterface</a></code> | <code>object</code> | network_interface block. |
-| <code><a href="#@cdktf/provider-aws.instance.InstanceConfig.property.placementGroup">PlacementGroup</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#placement_group Instance#placement_group}. |
-| <code><a href="#@cdktf/provider-aws.instance.InstanceConfig.property.placementPartitionNumber">PlacementPartitionNumber</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#placement_partition_number Instance#placement_partition_number}. |
+| <code><a href="#@cdktf/provider-aws.instance.InstanceConfig.property.placementGroup">PlacementGroup</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#placement_group Instance#placement_group}. |
+| <code><a href="#@cdktf/provider-aws.instance.InstanceConfig.property.placementPartitionNumber">PlacementPartitionNumber</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#placement_partition_number Instance#placement_partition_number}. |
+| <code><a href="#@cdktf/provider-aws.instance.InstanceConfig.property.primaryNetworkInterface">PrimaryNetworkInterface</a></code> | <code><a href="#@cdktf/provider-aws.instance.InstancePrimaryNetworkInterface">InstancePrimaryNetworkInterface</a></code> | primary_network_interface block. |
 | <code><a href="#@cdktf/provider-aws.instance.InstanceConfig.property.privateDnsNameOptions">PrivateDnsNameOptions</a></code> | <code><a href="#@cdktf/provider-aws.instance.InstancePrivateDnsNameOptions">InstancePrivateDnsNameOptions</a></code> | private_dns_name_options block. |
-| <code><a href="#@cdktf/provider-aws.instance.InstanceConfig.property.privateIp">PrivateIp</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#private_ip Instance#private_ip}. |
+| <code><a href="#@cdktf/provider-aws.instance.InstanceConfig.property.privateIp">PrivateIp</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#private_ip Instance#private_ip}. |
 | <code><a href="#@cdktf/provider-aws.instance.InstanceConfig.property.region">Region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktf/provider-aws.instance.InstanceConfig.property.rootBlockDevice">RootBlockDevice</a></code> | <code><a href="#@cdktf/provider-aws.instance.InstanceRootBlockDevice">InstanceRootBlockDevice</a></code> | root_block_device block. |
-| <code><a href="#@cdktf/provider-aws.instance.InstanceConfig.property.secondaryPrivateIps">SecondaryPrivateIps</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#secondary_private_ips Instance#secondary_private_ips}. |
-| <code><a href="#@cdktf/provider-aws.instance.InstanceConfig.property.securityGroups">SecurityGroups</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#security_groups Instance#security_groups}. |
-| <code><a href="#@cdktf/provider-aws.instance.InstanceConfig.property.sourceDestCheck">SourceDestCheck</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#source_dest_check Instance#source_dest_check}. |
-| <code><a href="#@cdktf/provider-aws.instance.InstanceConfig.property.subnetId">SubnetId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#subnet_id Instance#subnet_id}. |
-| <code><a href="#@cdktf/provider-aws.instance.InstanceConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#tags Instance#tags}. |
-| <code><a href="#@cdktf/provider-aws.instance.InstanceConfig.property.tagsAll">TagsAll</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#tags_all Instance#tags_all}. |
-| <code><a href="#@cdktf/provider-aws.instance.InstanceConfig.property.tenancy">Tenancy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#tenancy Instance#tenancy}. |
+| <code><a href="#@cdktf/provider-aws.instance.InstanceConfig.property.secondaryPrivateIps">SecondaryPrivateIps</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#secondary_private_ips Instance#secondary_private_ips}. |
+| <code><a href="#@cdktf/provider-aws.instance.InstanceConfig.property.securityGroups">SecurityGroups</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#security_groups Instance#security_groups}. |
+| <code><a href="#@cdktf/provider-aws.instance.InstanceConfig.property.sourceDestCheck">SourceDestCheck</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#source_dest_check Instance#source_dest_check}. |
+| <code><a href="#@cdktf/provider-aws.instance.InstanceConfig.property.subnetId">SubnetId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#subnet_id Instance#subnet_id}. |
+| <code><a href="#@cdktf/provider-aws.instance.InstanceConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#tags Instance#tags}. |
+| <code><a href="#@cdktf/provider-aws.instance.InstanceConfig.property.tagsAll">TagsAll</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#tags_all Instance#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.instance.InstanceConfig.property.tenancy">Tenancy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#tenancy Instance#tenancy}. |
 | <code><a href="#@cdktf/provider-aws.instance.InstanceConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-aws.instance.InstanceTimeouts">InstanceTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktf/provider-aws.instance.InstanceConfig.property.userData">UserData</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#user_data Instance#user_data}. |
-| <code><a href="#@cdktf/provider-aws.instance.InstanceConfig.property.userDataBase64">UserDataBase64</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#user_data_base64 Instance#user_data_base64}. |
-| <code><a href="#@cdktf/provider-aws.instance.InstanceConfig.property.userDataReplaceOnChange">UserDataReplaceOnChange</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#user_data_replace_on_change Instance#user_data_replace_on_change}. |
-| <code><a href="#@cdktf/provider-aws.instance.InstanceConfig.property.volumeTags">VolumeTags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#volume_tags Instance#volume_tags}. |
-| <code><a href="#@cdktf/provider-aws.instance.InstanceConfig.property.vpcSecurityGroupIds">VpcSecurityGroupIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#vpc_security_group_ids Instance#vpc_security_group_ids}. |
+| <code><a href="#@cdktf/provider-aws.instance.InstanceConfig.property.userData">UserData</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#user_data Instance#user_data}. |
+| <code><a href="#@cdktf/provider-aws.instance.InstanceConfig.property.userDataBase64">UserDataBase64</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#user_data_base64 Instance#user_data_base64}. |
+| <code><a href="#@cdktf/provider-aws.instance.InstanceConfig.property.userDataReplaceOnChange">UserDataReplaceOnChange</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#user_data_replace_on_change Instance#user_data_replace_on_change}. |
+| <code><a href="#@cdktf/provider-aws.instance.InstanceConfig.property.volumeTags">VolumeTags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#volume_tags Instance#volume_tags}. |
+| <code><a href="#@cdktf/provider-aws.instance.InstanceConfig.property.vpcSecurityGroupIds">VpcSecurityGroupIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#vpc_security_group_ids Instance#vpc_security_group_ids}. |
 
 ---
 
@@ -2708,7 +2752,7 @@ public string Ami { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#ami Instance#ami}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#ami Instance#ami}.
 
 ---
 
@@ -2720,7 +2764,7 @@ public object AssociatePublicIpAddress { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#associate_public_ip_address Instance#associate_public_ip_address}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#associate_public_ip_address Instance#associate_public_ip_address}.
 
 ---
 
@@ -2732,7 +2776,7 @@ public string AvailabilityZone { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#availability_zone Instance#availability_zone}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#availability_zone Instance#availability_zone}.
 
 ---
 
@@ -2746,7 +2790,7 @@ public InstanceCapacityReservationSpecification CapacityReservationSpecification
 
 capacity_reservation_specification block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#capacity_reservation_specification Instance#capacity_reservation_specification}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#capacity_reservation_specification Instance#capacity_reservation_specification}
 
 ---
 
@@ -2760,7 +2804,7 @@ public InstanceCpuOptions CpuOptions { get; set; }
 
 cpu_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#cpu_options Instance#cpu_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#cpu_options Instance#cpu_options}
 
 ---
 
@@ -2774,7 +2818,7 @@ public InstanceCreditSpecification CreditSpecification { get; set; }
 
 credit_specification block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#credit_specification Instance#credit_specification}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#credit_specification Instance#credit_specification}
 
 ---
 
@@ -2786,7 +2830,7 @@ public object DisableApiStop { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#disable_api_stop Instance#disable_api_stop}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#disable_api_stop Instance#disable_api_stop}.
 
 ---
 
@@ -2798,7 +2842,7 @@ public object DisableApiTermination { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#disable_api_termination Instance#disable_api_termination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#disable_api_termination Instance#disable_api_termination}.
 
 ---
 
@@ -2812,7 +2856,7 @@ public object EbsBlockDevice { get; set; }
 
 ebs_block_device block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#ebs_block_device Instance#ebs_block_device}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#ebs_block_device Instance#ebs_block_device}
 
 ---
 
@@ -2824,7 +2868,7 @@ public object EbsOptimized { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#ebs_optimized Instance#ebs_optimized}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#ebs_optimized Instance#ebs_optimized}.
 
 ---
 
@@ -2836,7 +2880,7 @@ public object EnablePrimaryIpv6 { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#enable_primary_ipv6 Instance#enable_primary_ipv6}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#enable_primary_ipv6 Instance#enable_primary_ipv6}.
 
 ---
 
@@ -2850,7 +2894,7 @@ public InstanceEnclaveOptions EnclaveOptions { get; set; }
 
 enclave_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#enclave_options Instance#enclave_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#enclave_options Instance#enclave_options}
 
 ---
 
@@ -2864,7 +2908,7 @@ public object EphemeralBlockDevice { get; set; }
 
 ephemeral_block_device block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#ephemeral_block_device Instance#ephemeral_block_device}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#ephemeral_block_device Instance#ephemeral_block_device}
 
 ---
 
@@ -2876,7 +2920,7 @@ public object FetchPasswordData { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#get_password_data Instance#get_password_data}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#get_password_data Instance#get_password_data}.
 
 ---
 
@@ -2888,7 +2932,7 @@ public object ForceDestroy { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#force_destroy Instance#force_destroy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#force_destroy Instance#force_destroy}.
 
 ---
 
@@ -2900,7 +2944,7 @@ public object Hibernation { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#hibernation Instance#hibernation}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#hibernation Instance#hibernation}.
 
 ---
 
@@ -2912,7 +2956,7 @@ public string HostId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#host_id Instance#host_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#host_id Instance#host_id}.
 
 ---
 
@@ -2924,7 +2968,7 @@ public string HostResourceGroupArn { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#host_resource_group_arn Instance#host_resource_group_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#host_resource_group_arn Instance#host_resource_group_arn}.
 
 ---
 
@@ -2936,7 +2980,7 @@ public string IamInstanceProfile { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#iam_instance_profile Instance#iam_instance_profile}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#iam_instance_profile Instance#iam_instance_profile}.
 
 ---
 
@@ -2948,7 +2992,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#id Instance#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#id Instance#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2963,7 +3007,7 @@ public string InstanceInitiatedShutdownBehavior { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#instance_initiated_shutdown_behavior Instance#instance_initiated_shutdown_behavior}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#instance_initiated_shutdown_behavior Instance#instance_initiated_shutdown_behavior}.
 
 ---
 
@@ -2977,7 +3021,7 @@ public InstanceInstanceMarketOptions InstanceMarketOptions { get; set; }
 
 instance_market_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#instance_market_options Instance#instance_market_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#instance_market_options Instance#instance_market_options}
 
 ---
 
@@ -2989,7 +3033,7 @@ public string InstanceType { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#instance_type Instance#instance_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#instance_type Instance#instance_type}.
 
 ---
 
@@ -3001,7 +3045,7 @@ public double Ipv6AddressCount { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#ipv6_address_count Instance#ipv6_address_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#ipv6_address_count Instance#ipv6_address_count}.
 
 ---
 
@@ -3013,7 +3057,7 @@ public string[] Ipv6Addresses { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#ipv6_addresses Instance#ipv6_addresses}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#ipv6_addresses Instance#ipv6_addresses}.
 
 ---
 
@@ -3025,7 +3069,7 @@ public string KeyName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#key_name Instance#key_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#key_name Instance#key_name}.
 
 ---
 
@@ -3039,7 +3083,7 @@ public InstanceLaunchTemplate LaunchTemplate { get; set; }
 
 launch_template block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#launch_template Instance#launch_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#launch_template Instance#launch_template}
 
 ---
 
@@ -3053,7 +3097,7 @@ public InstanceMaintenanceOptions MaintenanceOptions { get; set; }
 
 maintenance_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#maintenance_options Instance#maintenance_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#maintenance_options Instance#maintenance_options}
 
 ---
 
@@ -3067,7 +3111,7 @@ public InstanceMetadataOptions MetadataOptions { get; set; }
 
 metadata_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#metadata_options Instance#metadata_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#metadata_options Instance#metadata_options}
 
 ---
 
@@ -3079,7 +3123,7 @@ public object Monitoring { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#monitoring Instance#monitoring}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#monitoring Instance#monitoring}.
 
 ---
 
@@ -3093,7 +3137,7 @@ public object NetworkInterface { get; set; }
 
 network_interface block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#network_interface Instance#network_interface}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#network_interface Instance#network_interface}
 
 ---
 
@@ -3105,7 +3149,7 @@ public string PlacementGroup { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#placement_group Instance#placement_group}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#placement_group Instance#placement_group}.
 
 ---
 
@@ -3117,7 +3161,21 @@ public double PlacementPartitionNumber { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#placement_partition_number Instance#placement_partition_number}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#placement_partition_number Instance#placement_partition_number}.
+
+---
+
+##### `PrimaryNetworkInterface`<sup>Optional</sup> <a name="PrimaryNetworkInterface" id="@cdktf/provider-aws.instance.InstanceConfig.property.primaryNetworkInterface"></a>
+
+```csharp
+public InstancePrimaryNetworkInterface PrimaryNetworkInterface { get; set; }
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.instance.InstancePrimaryNetworkInterface">InstancePrimaryNetworkInterface</a>
+
+primary_network_interface block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#primary_network_interface Instance#primary_network_interface}
 
 ---
 
@@ -3131,7 +3189,7 @@ public InstancePrivateDnsNameOptions PrivateDnsNameOptions { get; set; }
 
 private_dns_name_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#private_dns_name_options Instance#private_dns_name_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#private_dns_name_options Instance#private_dns_name_options}
 
 ---
 
@@ -3143,7 +3201,7 @@ public string PrivateIp { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#private_ip Instance#private_ip}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#private_ip Instance#private_ip}.
 
 ---
 
@@ -3157,7 +3215,7 @@ public string Region { get; set; }
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#region Instance#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#region Instance#region}
 
 ---
 
@@ -3171,7 +3229,7 @@ public InstanceRootBlockDevice RootBlockDevice { get; set; }
 
 root_block_device block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#root_block_device Instance#root_block_device}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#root_block_device Instance#root_block_device}
 
 ---
 
@@ -3183,7 +3241,7 @@ public string[] SecondaryPrivateIps { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#secondary_private_ips Instance#secondary_private_ips}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#secondary_private_ips Instance#secondary_private_ips}.
 
 ---
 
@@ -3195,7 +3253,7 @@ public string[] SecurityGroups { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#security_groups Instance#security_groups}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#security_groups Instance#security_groups}.
 
 ---
 
@@ -3207,7 +3265,7 @@ public object SourceDestCheck { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#source_dest_check Instance#source_dest_check}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#source_dest_check Instance#source_dest_check}.
 
 ---
 
@@ -3219,7 +3277,7 @@ public string SubnetId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#subnet_id Instance#subnet_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#subnet_id Instance#subnet_id}.
 
 ---
 
@@ -3231,7 +3289,7 @@ public System.Collections.Generic.IDictionary<string, string> Tags { get; set; }
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#tags Instance#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#tags Instance#tags}.
 
 ---
 
@@ -3243,7 +3301,7 @@ public System.Collections.Generic.IDictionary<string, string> TagsAll { get; set
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#tags_all Instance#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#tags_all Instance#tags_all}.
 
 ---
 
@@ -3255,7 +3313,7 @@ public string Tenancy { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#tenancy Instance#tenancy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#tenancy Instance#tenancy}.
 
 ---
 
@@ -3269,7 +3327,7 @@ public InstanceTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#timeouts Instance#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#timeouts Instance#timeouts}
 
 ---
 
@@ -3281,7 +3339,7 @@ public string UserData { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#user_data Instance#user_data}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#user_data Instance#user_data}.
 
 ---
 
@@ -3293,7 +3351,7 @@ public string UserDataBase64 { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#user_data_base64 Instance#user_data_base64}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#user_data_base64 Instance#user_data_base64}.
 
 ---
 
@@ -3305,7 +3363,7 @@ public object UserDataReplaceOnChange { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#user_data_replace_on_change Instance#user_data_replace_on_change}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#user_data_replace_on_change Instance#user_data_replace_on_change}.
 
 ---
 
@@ -3317,7 +3375,7 @@ public System.Collections.Generic.IDictionary<string, string> VolumeTags { get; 
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#volume_tags Instance#volume_tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#volume_tags Instance#volume_tags}.
 
 ---
 
@@ -3329,7 +3387,7 @@ public string[] VpcSecurityGroupIds { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#vpc_security_group_ids Instance#vpc_security_group_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#vpc_security_group_ids Instance#vpc_security_group_ids}.
 
 ---
 
@@ -3351,9 +3409,9 @@ new InstanceCpuOptions {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.instance.InstanceCpuOptions.property.amdSevSnp">AmdSevSnp</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#amd_sev_snp Instance#amd_sev_snp}. |
-| <code><a href="#@cdktf/provider-aws.instance.InstanceCpuOptions.property.coreCount">CoreCount</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#core_count Instance#core_count}. |
-| <code><a href="#@cdktf/provider-aws.instance.InstanceCpuOptions.property.threadsPerCore">ThreadsPerCore</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#threads_per_core Instance#threads_per_core}. |
+| <code><a href="#@cdktf/provider-aws.instance.InstanceCpuOptions.property.amdSevSnp">AmdSevSnp</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#amd_sev_snp Instance#amd_sev_snp}. |
+| <code><a href="#@cdktf/provider-aws.instance.InstanceCpuOptions.property.coreCount">CoreCount</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#core_count Instance#core_count}. |
+| <code><a href="#@cdktf/provider-aws.instance.InstanceCpuOptions.property.threadsPerCore">ThreadsPerCore</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#threads_per_core Instance#threads_per_core}. |
 
 ---
 
@@ -3365,7 +3423,7 @@ public string AmdSevSnp { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#amd_sev_snp Instance#amd_sev_snp}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#amd_sev_snp Instance#amd_sev_snp}.
 
 ---
 
@@ -3377,7 +3435,7 @@ public double CoreCount { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#core_count Instance#core_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#core_count Instance#core_count}.
 
 ---
 
@@ -3389,7 +3447,7 @@ public double ThreadsPerCore { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#threads_per_core Instance#threads_per_core}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#threads_per_core Instance#threads_per_core}.
 
 ---
 
@@ -3409,7 +3467,7 @@ new InstanceCreditSpecification {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.instance.InstanceCreditSpecification.property.cpuCredits">CpuCredits</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#cpu_credits Instance#cpu_credits}. |
+| <code><a href="#@cdktf/provider-aws.instance.InstanceCreditSpecification.property.cpuCredits">CpuCredits</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#cpu_credits Instance#cpu_credits}. |
 
 ---
 
@@ -3421,7 +3479,7 @@ public string CpuCredits { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#cpu_credits Instance#cpu_credits}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#cpu_credits Instance#cpu_credits}.
 
 ---
 
@@ -3451,17 +3509,17 @@ new InstanceEbsBlockDevice {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.instance.InstanceEbsBlockDevice.property.deviceName">DeviceName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#device_name Instance#device_name}. |
-| <code><a href="#@cdktf/provider-aws.instance.InstanceEbsBlockDevice.property.deleteOnTermination">DeleteOnTermination</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#delete_on_termination Instance#delete_on_termination}. |
-| <code><a href="#@cdktf/provider-aws.instance.InstanceEbsBlockDevice.property.encrypted">Encrypted</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#encrypted Instance#encrypted}. |
-| <code><a href="#@cdktf/provider-aws.instance.InstanceEbsBlockDevice.property.iops">Iops</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#iops Instance#iops}. |
-| <code><a href="#@cdktf/provider-aws.instance.InstanceEbsBlockDevice.property.kmsKeyId">KmsKeyId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#kms_key_id Instance#kms_key_id}. |
-| <code><a href="#@cdktf/provider-aws.instance.InstanceEbsBlockDevice.property.snapshotId">SnapshotId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#snapshot_id Instance#snapshot_id}. |
-| <code><a href="#@cdktf/provider-aws.instance.InstanceEbsBlockDevice.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#tags Instance#tags}. |
-| <code><a href="#@cdktf/provider-aws.instance.InstanceEbsBlockDevice.property.tagsAll">TagsAll</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#tags_all Instance#tags_all}. |
-| <code><a href="#@cdktf/provider-aws.instance.InstanceEbsBlockDevice.property.throughput">Throughput</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#throughput Instance#throughput}. |
-| <code><a href="#@cdktf/provider-aws.instance.InstanceEbsBlockDevice.property.volumeSize">VolumeSize</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#volume_size Instance#volume_size}. |
-| <code><a href="#@cdktf/provider-aws.instance.InstanceEbsBlockDevice.property.volumeType">VolumeType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#volume_type Instance#volume_type}. |
+| <code><a href="#@cdktf/provider-aws.instance.InstanceEbsBlockDevice.property.deviceName">DeviceName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#device_name Instance#device_name}. |
+| <code><a href="#@cdktf/provider-aws.instance.InstanceEbsBlockDevice.property.deleteOnTermination">DeleteOnTermination</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#delete_on_termination Instance#delete_on_termination}. |
+| <code><a href="#@cdktf/provider-aws.instance.InstanceEbsBlockDevice.property.encrypted">Encrypted</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#encrypted Instance#encrypted}. |
+| <code><a href="#@cdktf/provider-aws.instance.InstanceEbsBlockDevice.property.iops">Iops</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#iops Instance#iops}. |
+| <code><a href="#@cdktf/provider-aws.instance.InstanceEbsBlockDevice.property.kmsKeyId">KmsKeyId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#kms_key_id Instance#kms_key_id}. |
+| <code><a href="#@cdktf/provider-aws.instance.InstanceEbsBlockDevice.property.snapshotId">SnapshotId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#snapshot_id Instance#snapshot_id}. |
+| <code><a href="#@cdktf/provider-aws.instance.InstanceEbsBlockDevice.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#tags Instance#tags}. |
+| <code><a href="#@cdktf/provider-aws.instance.InstanceEbsBlockDevice.property.tagsAll">TagsAll</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#tags_all Instance#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.instance.InstanceEbsBlockDevice.property.throughput">Throughput</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#throughput Instance#throughput}. |
+| <code><a href="#@cdktf/provider-aws.instance.InstanceEbsBlockDevice.property.volumeSize">VolumeSize</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#volume_size Instance#volume_size}. |
+| <code><a href="#@cdktf/provider-aws.instance.InstanceEbsBlockDevice.property.volumeType">VolumeType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#volume_type Instance#volume_type}. |
 
 ---
 
@@ -3473,7 +3531,7 @@ public string DeviceName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#device_name Instance#device_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#device_name Instance#device_name}.
 
 ---
 
@@ -3485,7 +3543,7 @@ public object DeleteOnTermination { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#delete_on_termination Instance#delete_on_termination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#delete_on_termination Instance#delete_on_termination}.
 
 ---
 
@@ -3497,7 +3555,7 @@ public object Encrypted { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#encrypted Instance#encrypted}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#encrypted Instance#encrypted}.
 
 ---
 
@@ -3509,7 +3567,7 @@ public double Iops { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#iops Instance#iops}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#iops Instance#iops}.
 
 ---
 
@@ -3521,7 +3579,7 @@ public string KmsKeyId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#kms_key_id Instance#kms_key_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#kms_key_id Instance#kms_key_id}.
 
 ---
 
@@ -3533,7 +3591,7 @@ public string SnapshotId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#snapshot_id Instance#snapshot_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#snapshot_id Instance#snapshot_id}.
 
 ---
 
@@ -3545,7 +3603,7 @@ public System.Collections.Generic.IDictionary<string, string> Tags { get; set; }
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#tags Instance#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#tags Instance#tags}.
 
 ---
 
@@ -3557,7 +3615,7 @@ public System.Collections.Generic.IDictionary<string, string> TagsAll { get; set
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#tags_all Instance#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#tags_all Instance#tags_all}.
 
 ---
 
@@ -3569,7 +3627,7 @@ public double Throughput { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#throughput Instance#throughput}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#throughput Instance#throughput}.
 
 ---
 
@@ -3581,7 +3639,7 @@ public double VolumeSize { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#volume_size Instance#volume_size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#volume_size Instance#volume_size}.
 
 ---
 
@@ -3593,7 +3651,7 @@ public string VolumeType { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#volume_type Instance#volume_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#volume_type Instance#volume_type}.
 
 ---
 
@@ -3613,7 +3671,7 @@ new InstanceEnclaveOptions {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.instance.InstanceEnclaveOptions.property.enabled">Enabled</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#enabled Instance#enabled}. |
+| <code><a href="#@cdktf/provider-aws.instance.InstanceEnclaveOptions.property.enabled">Enabled</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#enabled Instance#enabled}. |
 
 ---
 
@@ -3625,7 +3683,7 @@ public object Enabled { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#enabled Instance#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#enabled Instance#enabled}.
 
 ---
 
@@ -3647,9 +3705,9 @@ new InstanceEphemeralBlockDevice {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.instance.InstanceEphemeralBlockDevice.property.deviceName">DeviceName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#device_name Instance#device_name}. |
-| <code><a href="#@cdktf/provider-aws.instance.InstanceEphemeralBlockDevice.property.noDevice">NoDevice</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#no_device Instance#no_device}. |
-| <code><a href="#@cdktf/provider-aws.instance.InstanceEphemeralBlockDevice.property.virtualName">VirtualName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#virtual_name Instance#virtual_name}. |
+| <code><a href="#@cdktf/provider-aws.instance.InstanceEphemeralBlockDevice.property.deviceName">DeviceName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#device_name Instance#device_name}. |
+| <code><a href="#@cdktf/provider-aws.instance.InstanceEphemeralBlockDevice.property.noDevice">NoDevice</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#no_device Instance#no_device}. |
+| <code><a href="#@cdktf/provider-aws.instance.InstanceEphemeralBlockDevice.property.virtualName">VirtualName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#virtual_name Instance#virtual_name}. |
 
 ---
 
@@ -3661,7 +3719,7 @@ public string DeviceName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#device_name Instance#device_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#device_name Instance#device_name}.
 
 ---
 
@@ -3673,7 +3731,7 @@ public object NoDevice { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#no_device Instance#no_device}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#no_device Instance#no_device}.
 
 ---
 
@@ -3685,7 +3743,7 @@ public string VirtualName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#virtual_name Instance#virtual_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#virtual_name Instance#virtual_name}.
 
 ---
 
@@ -3706,7 +3764,7 @@ new InstanceInstanceMarketOptions {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.instance.InstanceInstanceMarketOptions.property.marketType">MarketType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#market_type Instance#market_type}. |
+| <code><a href="#@cdktf/provider-aws.instance.InstanceInstanceMarketOptions.property.marketType">MarketType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#market_type Instance#market_type}. |
 | <code><a href="#@cdktf/provider-aws.instance.InstanceInstanceMarketOptions.property.spotOptions">SpotOptions</a></code> | <code><a href="#@cdktf/provider-aws.instance.InstanceInstanceMarketOptionsSpotOptions">InstanceInstanceMarketOptionsSpotOptions</a></code> | spot_options block. |
 
 ---
@@ -3719,7 +3777,7 @@ public string MarketType { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#market_type Instance#market_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#market_type Instance#market_type}.
 
 ---
 
@@ -3733,7 +3791,7 @@ public InstanceInstanceMarketOptionsSpotOptions SpotOptions { get; set; }
 
 spot_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#spot_options Instance#spot_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#spot_options Instance#spot_options}
 
 ---
 
@@ -3756,10 +3814,10 @@ new InstanceInstanceMarketOptionsSpotOptions {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.instance.InstanceInstanceMarketOptionsSpotOptions.property.instanceInterruptionBehavior">InstanceInterruptionBehavior</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#instance_interruption_behavior Instance#instance_interruption_behavior}. |
-| <code><a href="#@cdktf/provider-aws.instance.InstanceInstanceMarketOptionsSpotOptions.property.maxPrice">MaxPrice</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#max_price Instance#max_price}. |
-| <code><a href="#@cdktf/provider-aws.instance.InstanceInstanceMarketOptionsSpotOptions.property.spotInstanceType">SpotInstanceType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#spot_instance_type Instance#spot_instance_type}. |
-| <code><a href="#@cdktf/provider-aws.instance.InstanceInstanceMarketOptionsSpotOptions.property.validUntil">ValidUntil</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#valid_until Instance#valid_until}. |
+| <code><a href="#@cdktf/provider-aws.instance.InstanceInstanceMarketOptionsSpotOptions.property.instanceInterruptionBehavior">InstanceInterruptionBehavior</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#instance_interruption_behavior Instance#instance_interruption_behavior}. |
+| <code><a href="#@cdktf/provider-aws.instance.InstanceInstanceMarketOptionsSpotOptions.property.maxPrice">MaxPrice</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#max_price Instance#max_price}. |
+| <code><a href="#@cdktf/provider-aws.instance.InstanceInstanceMarketOptionsSpotOptions.property.spotInstanceType">SpotInstanceType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#spot_instance_type Instance#spot_instance_type}. |
+| <code><a href="#@cdktf/provider-aws.instance.InstanceInstanceMarketOptionsSpotOptions.property.validUntil">ValidUntil</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#valid_until Instance#valid_until}. |
 
 ---
 
@@ -3771,7 +3829,7 @@ public string InstanceInterruptionBehavior { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#instance_interruption_behavior Instance#instance_interruption_behavior}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#instance_interruption_behavior Instance#instance_interruption_behavior}.
 
 ---
 
@@ -3783,7 +3841,7 @@ public string MaxPrice { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#max_price Instance#max_price}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#max_price Instance#max_price}.
 
 ---
 
@@ -3795,7 +3853,7 @@ public string SpotInstanceType { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#spot_instance_type Instance#spot_instance_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#spot_instance_type Instance#spot_instance_type}.
 
 ---
 
@@ -3807,7 +3865,7 @@ public string ValidUntil { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#valid_until Instance#valid_until}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#valid_until Instance#valid_until}.
 
 ---
 
@@ -3829,9 +3887,9 @@ new InstanceLaunchTemplate {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.instance.InstanceLaunchTemplate.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#id Instance#id}. |
-| <code><a href="#@cdktf/provider-aws.instance.InstanceLaunchTemplate.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#name Instance#name}. |
-| <code><a href="#@cdktf/provider-aws.instance.InstanceLaunchTemplate.property.version">Version</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#version Instance#version}. |
+| <code><a href="#@cdktf/provider-aws.instance.InstanceLaunchTemplate.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#id Instance#id}. |
+| <code><a href="#@cdktf/provider-aws.instance.InstanceLaunchTemplate.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#name Instance#name}. |
+| <code><a href="#@cdktf/provider-aws.instance.InstanceLaunchTemplate.property.version">Version</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#version Instance#version}. |
 
 ---
 
@@ -3843,7 +3901,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#id Instance#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#id Instance#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -3858,7 +3916,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#name Instance#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#name Instance#name}.
 
 ---
 
@@ -3870,7 +3928,7 @@ public string Version { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#version Instance#version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#version Instance#version}.
 
 ---
 
@@ -3890,7 +3948,7 @@ new InstanceMaintenanceOptions {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.instance.InstanceMaintenanceOptions.property.autoRecovery">AutoRecovery</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#auto_recovery Instance#auto_recovery}. |
+| <code><a href="#@cdktf/provider-aws.instance.InstanceMaintenanceOptions.property.autoRecovery">AutoRecovery</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#auto_recovery Instance#auto_recovery}. |
 
 ---
 
@@ -3902,7 +3960,7 @@ public string AutoRecovery { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#auto_recovery Instance#auto_recovery}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#auto_recovery Instance#auto_recovery}.
 
 ---
 
@@ -3926,11 +3984,11 @@ new InstanceMetadataOptions {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.instance.InstanceMetadataOptions.property.httpEndpoint">HttpEndpoint</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#http_endpoint Instance#http_endpoint}. |
-| <code><a href="#@cdktf/provider-aws.instance.InstanceMetadataOptions.property.httpProtocolIpv6">HttpProtocolIpv6</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#http_protocol_ipv6 Instance#http_protocol_ipv6}. |
-| <code><a href="#@cdktf/provider-aws.instance.InstanceMetadataOptions.property.httpPutResponseHopLimit">HttpPutResponseHopLimit</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#http_put_response_hop_limit Instance#http_put_response_hop_limit}. |
-| <code><a href="#@cdktf/provider-aws.instance.InstanceMetadataOptions.property.httpTokens">HttpTokens</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#http_tokens Instance#http_tokens}. |
-| <code><a href="#@cdktf/provider-aws.instance.InstanceMetadataOptions.property.instanceMetadataTags">InstanceMetadataTags</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#instance_metadata_tags Instance#instance_metadata_tags}. |
+| <code><a href="#@cdktf/provider-aws.instance.InstanceMetadataOptions.property.httpEndpoint">HttpEndpoint</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#http_endpoint Instance#http_endpoint}. |
+| <code><a href="#@cdktf/provider-aws.instance.InstanceMetadataOptions.property.httpProtocolIpv6">HttpProtocolIpv6</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#http_protocol_ipv6 Instance#http_protocol_ipv6}. |
+| <code><a href="#@cdktf/provider-aws.instance.InstanceMetadataOptions.property.httpPutResponseHopLimit">HttpPutResponseHopLimit</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#http_put_response_hop_limit Instance#http_put_response_hop_limit}. |
+| <code><a href="#@cdktf/provider-aws.instance.InstanceMetadataOptions.property.httpTokens">HttpTokens</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#http_tokens Instance#http_tokens}. |
+| <code><a href="#@cdktf/provider-aws.instance.InstanceMetadataOptions.property.instanceMetadataTags">InstanceMetadataTags</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#instance_metadata_tags Instance#instance_metadata_tags}. |
 
 ---
 
@@ -3942,7 +4000,7 @@ public string HttpEndpoint { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#http_endpoint Instance#http_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#http_endpoint Instance#http_endpoint}.
 
 ---
 
@@ -3954,7 +4012,7 @@ public string HttpProtocolIpv6 { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#http_protocol_ipv6 Instance#http_protocol_ipv6}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#http_protocol_ipv6 Instance#http_protocol_ipv6}.
 
 ---
 
@@ -3966,7 +4024,7 @@ public double HttpPutResponseHopLimit { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#http_put_response_hop_limit Instance#http_put_response_hop_limit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#http_put_response_hop_limit Instance#http_put_response_hop_limit}.
 
 ---
 
@@ -3978,7 +4036,7 @@ public string HttpTokens { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#http_tokens Instance#http_tokens}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#http_tokens Instance#http_tokens}.
 
 ---
 
@@ -3990,7 +4048,7 @@ public string InstanceMetadataTags { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#instance_metadata_tags Instance#instance_metadata_tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#instance_metadata_tags Instance#instance_metadata_tags}.
 
 ---
 
@@ -4013,10 +4071,10 @@ new InstanceNetworkInterface {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.instance.InstanceNetworkInterface.property.deviceIndex">DeviceIndex</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#device_index Instance#device_index}. |
-| <code><a href="#@cdktf/provider-aws.instance.InstanceNetworkInterface.property.networkInterfaceId">NetworkInterfaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#network_interface_id Instance#network_interface_id}. |
-| <code><a href="#@cdktf/provider-aws.instance.InstanceNetworkInterface.property.deleteOnTermination">DeleteOnTermination</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#delete_on_termination Instance#delete_on_termination}. |
-| <code><a href="#@cdktf/provider-aws.instance.InstanceNetworkInterface.property.networkCardIndex">NetworkCardIndex</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#network_card_index Instance#network_card_index}. |
+| <code><a href="#@cdktf/provider-aws.instance.InstanceNetworkInterface.property.deviceIndex">DeviceIndex</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#device_index Instance#device_index}. |
+| <code><a href="#@cdktf/provider-aws.instance.InstanceNetworkInterface.property.networkInterfaceId">NetworkInterfaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#network_interface_id Instance#network_interface_id}. |
+| <code><a href="#@cdktf/provider-aws.instance.InstanceNetworkInterface.property.deleteOnTermination">DeleteOnTermination</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#delete_on_termination Instance#delete_on_termination}. |
+| <code><a href="#@cdktf/provider-aws.instance.InstanceNetworkInterface.property.networkCardIndex">NetworkCardIndex</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#network_card_index Instance#network_card_index}. |
 
 ---
 
@@ -4028,7 +4086,7 @@ public double DeviceIndex { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#device_index Instance#device_index}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#device_index Instance#device_index}.
 
 ---
 
@@ -4040,7 +4098,7 @@ public string NetworkInterfaceId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#network_interface_id Instance#network_interface_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#network_interface_id Instance#network_interface_id}.
 
 ---
 
@@ -4052,7 +4110,7 @@ public object DeleteOnTermination { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#delete_on_termination Instance#delete_on_termination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#delete_on_termination Instance#delete_on_termination}.
 
 ---
 
@@ -4064,7 +4122,39 @@ public double NetworkCardIndex { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#network_card_index Instance#network_card_index}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#network_card_index Instance#network_card_index}.
+
+---
+
+### InstancePrimaryNetworkInterface <a name="InstancePrimaryNetworkInterface" id="@cdktf/provider-aws.instance.InstancePrimaryNetworkInterface"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-aws.instance.InstancePrimaryNetworkInterface.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Aws;
+
+new InstancePrimaryNetworkInterface {
+    string NetworkInterfaceId
+};
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.instance.InstancePrimaryNetworkInterface.property.networkInterfaceId">NetworkInterfaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#network_interface_id Instance#network_interface_id}. |
+
+---
+
+##### `NetworkInterfaceId`<sup>Required</sup> <a name="NetworkInterfaceId" id="@cdktf/provider-aws.instance.InstancePrimaryNetworkInterface.property.networkInterfaceId"></a>
+
+```csharp
+public string NetworkInterfaceId { get; set; }
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#network_interface_id Instance#network_interface_id}.
 
 ---
 
@@ -4086,9 +4176,9 @@ new InstancePrivateDnsNameOptions {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.instance.InstancePrivateDnsNameOptions.property.enableResourceNameDnsAaaaRecord">EnableResourceNameDnsAaaaRecord</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#enable_resource_name_dns_aaaa_record Instance#enable_resource_name_dns_aaaa_record}. |
-| <code><a href="#@cdktf/provider-aws.instance.InstancePrivateDnsNameOptions.property.enableResourceNameDnsARecord">EnableResourceNameDnsARecord</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#enable_resource_name_dns_a_record Instance#enable_resource_name_dns_a_record}. |
-| <code><a href="#@cdktf/provider-aws.instance.InstancePrivateDnsNameOptions.property.hostnameType">HostnameType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#hostname_type Instance#hostname_type}. |
+| <code><a href="#@cdktf/provider-aws.instance.InstancePrivateDnsNameOptions.property.enableResourceNameDnsAaaaRecord">EnableResourceNameDnsAaaaRecord</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#enable_resource_name_dns_aaaa_record Instance#enable_resource_name_dns_aaaa_record}. |
+| <code><a href="#@cdktf/provider-aws.instance.InstancePrivateDnsNameOptions.property.enableResourceNameDnsARecord">EnableResourceNameDnsARecord</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#enable_resource_name_dns_a_record Instance#enable_resource_name_dns_a_record}. |
+| <code><a href="#@cdktf/provider-aws.instance.InstancePrivateDnsNameOptions.property.hostnameType">HostnameType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#hostname_type Instance#hostname_type}. |
 
 ---
 
@@ -4100,7 +4190,7 @@ public object EnableResourceNameDnsAaaaRecord { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#enable_resource_name_dns_aaaa_record Instance#enable_resource_name_dns_aaaa_record}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#enable_resource_name_dns_aaaa_record Instance#enable_resource_name_dns_aaaa_record}.
 
 ---
 
@@ -4112,7 +4202,7 @@ public object EnableResourceNameDnsARecord { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#enable_resource_name_dns_a_record Instance#enable_resource_name_dns_a_record}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#enable_resource_name_dns_a_record Instance#enable_resource_name_dns_a_record}.
 
 ---
 
@@ -4124,7 +4214,7 @@ public string HostnameType { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#hostname_type Instance#hostname_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#hostname_type Instance#hostname_type}.
 
 ---
 
@@ -4152,15 +4242,15 @@ new InstanceRootBlockDevice {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.instance.InstanceRootBlockDevice.property.deleteOnTermination">DeleteOnTermination</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#delete_on_termination Instance#delete_on_termination}. |
-| <code><a href="#@cdktf/provider-aws.instance.InstanceRootBlockDevice.property.encrypted">Encrypted</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#encrypted Instance#encrypted}. |
-| <code><a href="#@cdktf/provider-aws.instance.InstanceRootBlockDevice.property.iops">Iops</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#iops Instance#iops}. |
-| <code><a href="#@cdktf/provider-aws.instance.InstanceRootBlockDevice.property.kmsKeyId">KmsKeyId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#kms_key_id Instance#kms_key_id}. |
-| <code><a href="#@cdktf/provider-aws.instance.InstanceRootBlockDevice.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#tags Instance#tags}. |
-| <code><a href="#@cdktf/provider-aws.instance.InstanceRootBlockDevice.property.tagsAll">TagsAll</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#tags_all Instance#tags_all}. |
-| <code><a href="#@cdktf/provider-aws.instance.InstanceRootBlockDevice.property.throughput">Throughput</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#throughput Instance#throughput}. |
-| <code><a href="#@cdktf/provider-aws.instance.InstanceRootBlockDevice.property.volumeSize">VolumeSize</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#volume_size Instance#volume_size}. |
-| <code><a href="#@cdktf/provider-aws.instance.InstanceRootBlockDevice.property.volumeType">VolumeType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#volume_type Instance#volume_type}. |
+| <code><a href="#@cdktf/provider-aws.instance.InstanceRootBlockDevice.property.deleteOnTermination">DeleteOnTermination</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#delete_on_termination Instance#delete_on_termination}. |
+| <code><a href="#@cdktf/provider-aws.instance.InstanceRootBlockDevice.property.encrypted">Encrypted</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#encrypted Instance#encrypted}. |
+| <code><a href="#@cdktf/provider-aws.instance.InstanceRootBlockDevice.property.iops">Iops</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#iops Instance#iops}. |
+| <code><a href="#@cdktf/provider-aws.instance.InstanceRootBlockDevice.property.kmsKeyId">KmsKeyId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#kms_key_id Instance#kms_key_id}. |
+| <code><a href="#@cdktf/provider-aws.instance.InstanceRootBlockDevice.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#tags Instance#tags}. |
+| <code><a href="#@cdktf/provider-aws.instance.InstanceRootBlockDevice.property.tagsAll">TagsAll</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#tags_all Instance#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.instance.InstanceRootBlockDevice.property.throughput">Throughput</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#throughput Instance#throughput}. |
+| <code><a href="#@cdktf/provider-aws.instance.InstanceRootBlockDevice.property.volumeSize">VolumeSize</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#volume_size Instance#volume_size}. |
+| <code><a href="#@cdktf/provider-aws.instance.InstanceRootBlockDevice.property.volumeType">VolumeType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#volume_type Instance#volume_type}. |
 
 ---
 
@@ -4172,7 +4262,7 @@ public object DeleteOnTermination { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#delete_on_termination Instance#delete_on_termination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#delete_on_termination Instance#delete_on_termination}.
 
 ---
 
@@ -4184,7 +4274,7 @@ public object Encrypted { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#encrypted Instance#encrypted}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#encrypted Instance#encrypted}.
 
 ---
 
@@ -4196,7 +4286,7 @@ public double Iops { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#iops Instance#iops}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#iops Instance#iops}.
 
 ---
 
@@ -4208,7 +4298,7 @@ public string KmsKeyId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#kms_key_id Instance#kms_key_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#kms_key_id Instance#kms_key_id}.
 
 ---
 
@@ -4220,7 +4310,7 @@ public System.Collections.Generic.IDictionary<string, string> Tags { get; set; }
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#tags Instance#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#tags Instance#tags}.
 
 ---
 
@@ -4232,7 +4322,7 @@ public System.Collections.Generic.IDictionary<string, string> TagsAll { get; set
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#tags_all Instance#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#tags_all Instance#tags_all}.
 
 ---
 
@@ -4244,7 +4334,7 @@ public double Throughput { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#throughput Instance#throughput}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#throughput Instance#throughput}.
 
 ---
 
@@ -4256,7 +4346,7 @@ public double VolumeSize { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#volume_size Instance#volume_size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#volume_size Instance#volume_size}.
 
 ---
 
@@ -4268,7 +4358,7 @@ public string VolumeType { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#volume_type Instance#volume_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#volume_type Instance#volume_type}.
 
 ---
 
@@ -4291,10 +4381,10 @@ new InstanceTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.instance.InstanceTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#create Instance#create}. |
-| <code><a href="#@cdktf/provider-aws.instance.InstanceTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#delete Instance#delete}. |
-| <code><a href="#@cdktf/provider-aws.instance.InstanceTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#read Instance#read}. |
-| <code><a href="#@cdktf/provider-aws.instance.InstanceTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#update Instance#update}. |
+| <code><a href="#@cdktf/provider-aws.instance.InstanceTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#create Instance#create}. |
+| <code><a href="#@cdktf/provider-aws.instance.InstanceTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#delete Instance#delete}. |
+| <code><a href="#@cdktf/provider-aws.instance.InstanceTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#read Instance#read}. |
+| <code><a href="#@cdktf/provider-aws.instance.InstanceTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#update Instance#update}. |
 
 ---
 
@@ -4306,7 +4396,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#create Instance#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#create Instance#create}.
 
 ---
 
@@ -4318,7 +4408,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#delete Instance#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#delete Instance#delete}.
 
 ---
 
@@ -4330,7 +4420,7 @@ public string Read { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#read Instance#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#read Instance#read}.
 
 ---
 
@@ -4342,7 +4432,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance#update Instance#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance#update Instance#update}.
 
 ---
 
@@ -9342,6 +9432,288 @@ public object InternalValue { get; }
 ```
 
 - *Type:* object
+
+---
+
+
+### InstancePrimaryNetworkInterfaceOutputReference <a name="InstancePrimaryNetworkInterfaceOutputReference" id="@cdktf/provider-aws.instance.InstancePrimaryNetworkInterfaceOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-aws.instance.InstancePrimaryNetworkInterfaceOutputReference.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Aws;
+
+new InstancePrimaryNetworkInterfaceOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.instance.InstancePrimaryNetworkInterfaceOutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>HashiCorp.Cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-aws.instance.InstancePrimaryNetworkInterfaceOutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktf/provider-aws.instance.InstancePrimaryNetworkInterfaceOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* HashiCorp.Cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-aws.instance.InstancePrimaryNetworkInterfaceOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-aws.instance.InstancePrimaryNetworkInterfaceOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.instance.InstancePrimaryNetworkInterfaceOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.instance.InstancePrimaryNetworkInterfaceOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.instance.InstancePrimaryNetworkInterfaceOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.instance.InstancePrimaryNetworkInterfaceOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.instance.InstancePrimaryNetworkInterfaceOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.instance.InstancePrimaryNetworkInterfaceOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.instance.InstancePrimaryNetworkInterfaceOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.instance.InstancePrimaryNetworkInterfaceOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.instance.InstancePrimaryNetworkInterfaceOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.instance.InstancePrimaryNetworkInterfaceOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.instance.InstancePrimaryNetworkInterfaceOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-aws.instance.InstancePrimaryNetworkInterfaceOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-aws.instance.InstancePrimaryNetworkInterfaceOutputReference.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-aws.instance.InstancePrimaryNetworkInterfaceOutputReference.getAnyMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-aws.instance.InstancePrimaryNetworkInterfaceOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-aws.instance.InstancePrimaryNetworkInterfaceOutputReference.getBooleanAttribute"></a>
+
+```csharp
+private IResolvable GetBooleanAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-aws.instance.InstancePrimaryNetworkInterfaceOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-aws.instance.InstancePrimaryNetworkInterfaceOutputReference.getBooleanMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-aws.instance.InstancePrimaryNetworkInterfaceOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-aws.instance.InstancePrimaryNetworkInterfaceOutputReference.getListAttribute"></a>
+
+```csharp
+private string[] GetListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-aws.instance.InstancePrimaryNetworkInterfaceOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-aws.instance.InstancePrimaryNetworkInterfaceOutputReference.getNumberAttribute"></a>
+
+```csharp
+private double GetNumberAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-aws.instance.InstancePrimaryNetworkInterfaceOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-aws.instance.InstancePrimaryNetworkInterfaceOutputReference.getNumberListAttribute"></a>
+
+```csharp
+private double[] GetNumberListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-aws.instance.InstancePrimaryNetworkInterfaceOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-aws.instance.InstancePrimaryNetworkInterfaceOutputReference.getNumberMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-aws.instance.InstancePrimaryNetworkInterfaceOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-aws.instance.InstancePrimaryNetworkInterfaceOutputReference.getStringAttribute"></a>
+
+```csharp
+private string GetStringAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-aws.instance.InstancePrimaryNetworkInterfaceOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-aws.instance.InstancePrimaryNetworkInterfaceOutputReference.getStringMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-aws.instance.InstancePrimaryNetworkInterfaceOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-aws.instance.InstancePrimaryNetworkInterfaceOutputReference.interpolationForAttribute"></a>
+
+```csharp
+private IResolvable InterpolationForAttribute(string Property)
+```
+
+###### `Property`<sup>Required</sup> <a name="Property" id="@cdktf/provider-aws.instance.InstancePrimaryNetworkInterfaceOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-aws.instance.InstancePrimaryNetworkInterfaceOutputReference.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktf/provider-aws.instance.InstancePrimaryNetworkInterfaceOutputReference.resolve.parameter._context"></a>
+
+- *Type:* HashiCorp.Cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-aws.instance.InstancePrimaryNetworkInterfaceOutputReference.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.instance.InstancePrimaryNetworkInterfaceOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-aws.instance.InstancePrimaryNetworkInterfaceOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.instance.InstancePrimaryNetworkInterfaceOutputReference.property.deleteOnTermination">DeleteOnTermination</a></code> | <code>HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.instance.InstancePrimaryNetworkInterfaceOutputReference.property.networkInterfaceIdInput">NetworkInterfaceIdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.instance.InstancePrimaryNetworkInterfaceOutputReference.property.networkInterfaceId">NetworkInterfaceId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.instance.InstancePrimaryNetworkInterfaceOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-aws.instance.InstancePrimaryNetworkInterface">InstancePrimaryNetworkInterface</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-aws.instance.InstancePrimaryNetworkInterfaceOutputReference.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-aws.instance.InstancePrimaryNetworkInterfaceOutputReference.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `DeleteOnTermination`<sup>Required</sup> <a name="DeleteOnTermination" id="@cdktf/provider-aws.instance.InstancePrimaryNetworkInterfaceOutputReference.property.deleteOnTermination"></a>
+
+```csharp
+public IResolvable DeleteOnTermination { get; }
+```
+
+- *Type:* HashiCorp.Cdktf.IResolvable
+
+---
+
+##### `NetworkInterfaceIdInput`<sup>Optional</sup> <a name="NetworkInterfaceIdInput" id="@cdktf/provider-aws.instance.InstancePrimaryNetworkInterfaceOutputReference.property.networkInterfaceIdInput"></a>
+
+```csharp
+public string NetworkInterfaceIdInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `NetworkInterfaceId`<sup>Required</sup> <a name="NetworkInterfaceId" id="@cdktf/provider-aws.instance.InstancePrimaryNetworkInterfaceOutputReference.property.networkInterfaceId"></a>
+
+```csharp
+public string NetworkInterfaceId { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.instance.InstancePrimaryNetworkInterfaceOutputReference.property.internalValue"></a>
+
+```csharp
+public InstancePrimaryNetworkInterface InternalValue { get; }
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.instance.InstancePrimaryNetworkInterface">InstancePrimaryNetworkInterface</a>
 
 ---
 

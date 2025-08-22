@@ -4,7 +4,7 @@
 
 ### MediaStoreContainerPolicy <a name="MediaStoreContainerPolicy" id="@cdktf/provider-aws.mediaStoreContainerPolicy.MediaStoreContainerPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/media_store_container_policy aws_media_store_container_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/media_store_container_policy aws_media_store_container_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.mediaStoreContainerPolicy.MediaStoreContainerPolicy.Initializer"></a>
 
@@ -481,7 +481,7 @@ The construct id used in the generated config for the MediaStoreContainerPolicy 
 
 The id of the existing MediaStoreContainerPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/media_store_container_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/media_store_container_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -797,9 +797,9 @@ new MediaStoreContainerPolicyConfig {
 | <code><a href="#@cdktf/provider-aws.mediaStoreContainerPolicy.MediaStoreContainerPolicyConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.mediaStoreContainerPolicy.MediaStoreContainerPolicyConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.mediaStoreContainerPolicy.MediaStoreContainerPolicyConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.mediaStoreContainerPolicy.MediaStoreContainerPolicyConfig.property.containerName">ContainerName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/media_store_container_policy#container_name MediaStoreContainerPolicy#container_name}. |
-| <code><a href="#@cdktf/provider-aws.mediaStoreContainerPolicy.MediaStoreContainerPolicyConfig.property.policy">Policy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/media_store_container_policy#policy MediaStoreContainerPolicy#policy}. |
-| <code><a href="#@cdktf/provider-aws.mediaStoreContainerPolicy.MediaStoreContainerPolicyConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/media_store_container_policy#id MediaStoreContainerPolicy#id}. |
+| <code><a href="#@cdktf/provider-aws.mediaStoreContainerPolicy.MediaStoreContainerPolicyConfig.property.containerName">ContainerName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/media_store_container_policy#container_name MediaStoreContainerPolicy#container_name}. |
+| <code><a href="#@cdktf/provider-aws.mediaStoreContainerPolicy.MediaStoreContainerPolicyConfig.property.policy">Policy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/media_store_container_policy#policy MediaStoreContainerPolicy#policy}. |
+| <code><a href="#@cdktf/provider-aws.mediaStoreContainerPolicy.MediaStoreContainerPolicyConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/media_store_container_policy#id MediaStoreContainerPolicy#id}. |
 | <code><a href="#@cdktf/provider-aws.mediaStoreContainerPolicy.MediaStoreContainerPolicyConfig.property.region">Region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -882,7 +882,7 @@ public string ContainerName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/media_store_container_policy#container_name MediaStoreContainerPolicy#container_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/media_store_container_policy#container_name MediaStoreContainerPolicy#container_name}.
 
 ---
 
@@ -894,7 +894,7 @@ public string Policy { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/media_store_container_policy#policy MediaStoreContainerPolicy#policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/media_store_container_policy#policy MediaStoreContainerPolicy#policy}.
 
 ---
 
@@ -906,7 +906,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/media_store_container_policy#id MediaStoreContainerPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/media_store_container_policy#id MediaStoreContainerPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -923,7 +923,7 @@ public string Region { get; set; }
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/media_store_container_policy#region MediaStoreContainerPolicy#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/media_store_container_policy#region MediaStoreContainerPolicy#region}
 
 ---
 

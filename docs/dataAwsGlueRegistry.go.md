@@ -4,7 +4,7 @@
 
 ### DataAwsGlueRegistry <a name="DataAwsGlueRegistry" id="@cdktf/provider-aws.dataAwsGlueRegistry.DataAwsGlueRegistry"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/data-sources/glue_registry aws_glue_registry}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/data-sources/glue_registry aws_glue_registry}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsGlueRegistry.DataAwsGlueRegistry.Initializer"></a>
 
@@ -372,7 +372,7 @@ The construct id used in the generated config for the DataAwsGlueRegistry to imp
 
 The id of the existing DataAwsGlueRegistry that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/data-sources/glue_registry#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/data-sources/glue_registry#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -642,7 +642,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsglueregistry"
 | <code><a href="#@cdktf/provider-aws.dataAwsGlueRegistry.DataAwsGlueRegistryConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsGlueRegistry.DataAwsGlueRegistryConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsGlueRegistry.DataAwsGlueRegistryConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsGlueRegistry.DataAwsGlueRegistryConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/data-sources/glue_registry#name DataAwsGlueRegistry#name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsGlueRegistry.DataAwsGlueRegistryConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/data-sources/glue_registry#name DataAwsGlueRegistry#name}. |
 | <code><a href="#@cdktf/provider-aws.dataAwsGlueRegistry.DataAwsGlueRegistryConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -725,7 +725,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/data-sources/glue_registry#name DataAwsGlueRegistry#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/data-sources/glue_registry#name DataAwsGlueRegistry#name}.
 
 ---
 
@@ -739,7 +739,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/data-sources/glue_registry#region DataAwsGlueRegistry#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/data-sources/glue_registry#region DataAwsGlueRegistry#region}
 
 ---
 

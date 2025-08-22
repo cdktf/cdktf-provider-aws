@@ -4,7 +4,7 @@
 
 ### DatapipelinePipeline <a name="DatapipelinePipeline" id="@cdktf/provider-aws.datapipelinePipeline.DatapipelinePipeline"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/datapipeline_pipeline aws_datapipeline_pipeline}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/datapipeline_pipeline aws_datapipeline_pipeline}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.datapipelinePipeline.DatapipelinePipeline.Initializer"></a>
 
@@ -502,7 +502,7 @@ The construct id used in the generated config for the DatapipelinePipeline to im
 
 The id of the existing DatapipelinePipeline that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/datapipeline_pipeline#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/datapipeline_pipeline#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -850,12 +850,12 @@ const datapipelinePipelineConfig: datapipelinePipeline.DatapipelinePipelineConfi
 | <code><a href="#@cdktf/provider-aws.datapipelinePipeline.DatapipelinePipelineConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.datapipelinePipeline.DatapipelinePipelineConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.datapipelinePipeline.DatapipelinePipelineConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.datapipelinePipeline.DatapipelinePipelineConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/datapipeline_pipeline#name DatapipelinePipeline#name}. |
-| <code><a href="#@cdktf/provider-aws.datapipelinePipeline.DatapipelinePipelineConfig.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/datapipeline_pipeline#description DatapipelinePipeline#description}. |
-| <code><a href="#@cdktf/provider-aws.datapipelinePipeline.DatapipelinePipelineConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/datapipeline_pipeline#id DatapipelinePipeline#id}. |
+| <code><a href="#@cdktf/provider-aws.datapipelinePipeline.DatapipelinePipelineConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/datapipeline_pipeline#name DatapipelinePipeline#name}. |
+| <code><a href="#@cdktf/provider-aws.datapipelinePipeline.DatapipelinePipelineConfig.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/datapipeline_pipeline#description DatapipelinePipeline#description}. |
+| <code><a href="#@cdktf/provider-aws.datapipelinePipeline.DatapipelinePipelineConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/datapipeline_pipeline#id DatapipelinePipeline#id}. |
 | <code><a href="#@cdktf/provider-aws.datapipelinePipeline.DatapipelinePipelineConfig.property.region">region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktf/provider-aws.datapipelinePipeline.DatapipelinePipelineConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/datapipeline_pipeline#tags DatapipelinePipeline#tags}. |
-| <code><a href="#@cdktf/provider-aws.datapipelinePipeline.DatapipelinePipelineConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/datapipeline_pipeline#tags_all DatapipelinePipeline#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.datapipelinePipeline.DatapipelinePipelineConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/datapipeline_pipeline#tags DatapipelinePipeline#tags}. |
+| <code><a href="#@cdktf/provider-aws.datapipelinePipeline.DatapipelinePipelineConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/datapipeline_pipeline#tags_all DatapipelinePipeline#tags_all}. |
 
 ---
 
@@ -937,7 +937,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/datapipeline_pipeline#name DatapipelinePipeline#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/datapipeline_pipeline#name DatapipelinePipeline#name}.
 
 ---
 
@@ -949,7 +949,7 @@ public readonly description: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/datapipeline_pipeline#description DatapipelinePipeline#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/datapipeline_pipeline#description DatapipelinePipeline#description}.
 
 ---
 
@@ -961,7 +961,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/datapipeline_pipeline#id DatapipelinePipeline#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/datapipeline_pipeline#id DatapipelinePipeline#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -978,7 +978,7 @@ public readonly region: string;
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/datapipeline_pipeline#region DatapipelinePipeline#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/datapipeline_pipeline#region DatapipelinePipeline#region}
 
 ---
 
@@ -990,7 +990,7 @@ public readonly tags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/datapipeline_pipeline#tags DatapipelinePipeline#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/datapipeline_pipeline#tags DatapipelinePipeline#tags}.
 
 ---
 
@@ -1002,7 +1002,7 @@ public readonly tagsAll: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/datapipeline_pipeline#tags_all DatapipelinePipeline#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/datapipeline_pipeline#tags_all DatapipelinePipeline#tags_all}.
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### RekognitionCollection <a name="RekognitionCollection" id="@cdktf/provider-aws.rekognitionCollection.RekognitionCollection"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/rekognition_collection aws_rekognition_collection}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/rekognition_collection aws_rekognition_collection}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.rekognitionCollection.RekognitionCollection.Initializer"></a>
 
@@ -501,7 +501,7 @@ The construct id used in the generated config for the RekognitionCollection to i
 
 The id of the existing RekognitionCollection that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/rekognition_collection#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/rekognition_collection#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -863,7 +863,7 @@ new RekognitionCollectionConfig {
 | <code><a href="#@cdktf/provider-aws.rekognitionCollection.RekognitionCollectionConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.rekognitionCollection.RekognitionCollectionConfig.property.collectionId">CollectionId</a></code> | <code>string</code> | The name of the Rekognition collection. |
 | <code><a href="#@cdktf/provider-aws.rekognitionCollection.RekognitionCollectionConfig.property.region">Region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktf/provider-aws.rekognitionCollection.RekognitionCollectionConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/rekognition_collection#tags RekognitionCollection#tags}. |
+| <code><a href="#@cdktf/provider-aws.rekognitionCollection.RekognitionCollectionConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/rekognition_collection#tags RekognitionCollection#tags}. |
 | <code><a href="#@cdktf/provider-aws.rekognitionCollection.RekognitionCollectionConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-aws.rekognitionCollection.RekognitionCollectionTimeouts">RekognitionCollectionTimeouts</a></code> | timeouts block. |
 
 ---
@@ -948,7 +948,7 @@ public string CollectionId { get; set; }
 
 The name of the Rekognition collection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/rekognition_collection#collection_id RekognitionCollection#collection_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/rekognition_collection#collection_id RekognitionCollection#collection_id}
 
 ---
 
@@ -962,7 +962,7 @@ public string Region { get; set; }
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/rekognition_collection#region RekognitionCollection#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/rekognition_collection#region RekognitionCollection#region}
 
 ---
 
@@ -974,7 +974,7 @@ public System.Collections.Generic.IDictionary<string, string> Tags { get; set; }
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/rekognition_collection#tags RekognitionCollection#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/rekognition_collection#tags RekognitionCollection#tags}.
 
 ---
 
@@ -988,7 +988,7 @@ public RekognitionCollectionTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/rekognition_collection#timeouts RekognitionCollection#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/rekognition_collection#timeouts RekognitionCollection#timeouts}
 
 ---
 
@@ -1022,7 +1022,7 @@ public string Create { get; set; }
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/rekognition_collection#create RekognitionCollection#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/rekognition_collection#create RekognitionCollection#create}
 
 ---
 

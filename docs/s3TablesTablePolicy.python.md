@@ -4,7 +4,7 @@
 
 ### S3TablesTablePolicy <a name="S3TablesTablePolicy" id="@cdktf/provider-aws.s3TablesTablePolicy.S3TablesTablePolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/s3tables_table_policy aws_s3tables_table_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/s3tables_table_policy aws_s3tables_table_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.s3TablesTablePolicy.S3TablesTablePolicy.Initializer"></a>
 
@@ -40,10 +40,10 @@ s3TablesTablePolicy.S3TablesTablePolicy(
 | <code><a href="#@cdktf/provider-aws.s3TablesTablePolicy.S3TablesTablePolicy.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.s3TablesTablePolicy.S3TablesTablePolicy.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.s3TablesTablePolicy.S3TablesTablePolicy.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3TablesTablePolicy.S3TablesTablePolicy.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/s3tables_table_policy#name S3TablesTablePolicy#name}. |
-| <code><a href="#@cdktf/provider-aws.s3TablesTablePolicy.S3TablesTablePolicy.Initializer.parameter.namespace">namespace</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/s3tables_table_policy#namespace S3TablesTablePolicy#namespace}. |
-| <code><a href="#@cdktf/provider-aws.s3TablesTablePolicy.S3TablesTablePolicy.Initializer.parameter.resourcePolicy">resource_policy</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/s3tables_table_policy#resource_policy S3TablesTablePolicy#resource_policy}. |
-| <code><a href="#@cdktf/provider-aws.s3TablesTablePolicy.S3TablesTablePolicy.Initializer.parameter.tableBucketArn">table_bucket_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/s3tables_table_policy#table_bucket_arn S3TablesTablePolicy#table_bucket_arn}. |
+| <code><a href="#@cdktf/provider-aws.s3TablesTablePolicy.S3TablesTablePolicy.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/s3tables_table_policy#name S3TablesTablePolicy#name}. |
+| <code><a href="#@cdktf/provider-aws.s3TablesTablePolicy.S3TablesTablePolicy.Initializer.parameter.namespace">namespace</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/s3tables_table_policy#namespace S3TablesTablePolicy#namespace}. |
+| <code><a href="#@cdktf/provider-aws.s3TablesTablePolicy.S3TablesTablePolicy.Initializer.parameter.resourcePolicy">resource_policy</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/s3tables_table_policy#resource_policy S3TablesTablePolicy#resource_policy}. |
+| <code><a href="#@cdktf/provider-aws.s3TablesTablePolicy.S3TablesTablePolicy.Initializer.parameter.tableBucketArn">table_bucket_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/s3tables_table_policy#table_bucket_arn S3TablesTablePolicy#table_bucket_arn}. |
 | <code><a href="#@cdktf/provider-aws.s3TablesTablePolicy.S3TablesTablePolicy.Initializer.parameter.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/s3tables_table_policy#name S3TablesTablePolicy#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/s3tables_table_policy#name S3TablesTablePolicy#name}.
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/s3tables_table_policy#namespace S3TablesTablePolicy#namespace}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/s3tables_table_policy#namespace S3TablesTablePolicy#namespace}.
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/s3tables_table_policy#resource_policy S3TablesTablePolicy#resource_policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/s3tables_table_policy#resource_policy S3TablesTablePolicy#resource_policy}.
 
 ---
 
@@ -136,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/s3tables_table_policy#table_bucket_arn S3TablesTablePolicy#table_bucket_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/s3tables_table_policy#table_bucket_arn S3TablesTablePolicy#table_bucket_arn}.
 
 ---
 
@@ -146,7 +146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/s3tables_table_policy#region S3TablesTablePolicy#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/s3tables_table_policy#region S3TablesTablePolicy#region}
 
 ---
 
@@ -626,7 +626,7 @@ The construct id used in the generated config for the S3TablesTablePolicy to imp
 
 The id of the existing S3TablesTablePolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/s3tables_table_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/s3tables_table_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -965,10 +965,10 @@ s3TablesTablePolicy.S3TablesTablePolicyConfig(
 | <code><a href="#@cdktf/provider-aws.s3TablesTablePolicy.S3TablesTablePolicyConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.s3TablesTablePolicy.S3TablesTablePolicyConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.s3TablesTablePolicy.S3TablesTablePolicyConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3TablesTablePolicy.S3TablesTablePolicyConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/s3tables_table_policy#name S3TablesTablePolicy#name}. |
-| <code><a href="#@cdktf/provider-aws.s3TablesTablePolicy.S3TablesTablePolicyConfig.property.namespace">namespace</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/s3tables_table_policy#namespace S3TablesTablePolicy#namespace}. |
-| <code><a href="#@cdktf/provider-aws.s3TablesTablePolicy.S3TablesTablePolicyConfig.property.resourcePolicy">resource_policy</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/s3tables_table_policy#resource_policy S3TablesTablePolicy#resource_policy}. |
-| <code><a href="#@cdktf/provider-aws.s3TablesTablePolicy.S3TablesTablePolicyConfig.property.tableBucketArn">table_bucket_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/s3tables_table_policy#table_bucket_arn S3TablesTablePolicy#table_bucket_arn}. |
+| <code><a href="#@cdktf/provider-aws.s3TablesTablePolicy.S3TablesTablePolicyConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/s3tables_table_policy#name S3TablesTablePolicy#name}. |
+| <code><a href="#@cdktf/provider-aws.s3TablesTablePolicy.S3TablesTablePolicyConfig.property.namespace">namespace</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/s3tables_table_policy#namespace S3TablesTablePolicy#namespace}. |
+| <code><a href="#@cdktf/provider-aws.s3TablesTablePolicy.S3TablesTablePolicyConfig.property.resourcePolicy">resource_policy</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/s3tables_table_policy#resource_policy S3TablesTablePolicy#resource_policy}. |
+| <code><a href="#@cdktf/provider-aws.s3TablesTablePolicy.S3TablesTablePolicyConfig.property.tableBucketArn">table_bucket_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/s3tables_table_policy#table_bucket_arn S3TablesTablePolicy#table_bucket_arn}. |
 | <code><a href="#@cdktf/provider-aws.s3TablesTablePolicy.S3TablesTablePolicyConfig.property.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -1051,7 +1051,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/s3tables_table_policy#name S3TablesTablePolicy#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/s3tables_table_policy#name S3TablesTablePolicy#name}.
 
 ---
 
@@ -1063,7 +1063,7 @@ namespace: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/s3tables_table_policy#namespace S3TablesTablePolicy#namespace}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/s3tables_table_policy#namespace S3TablesTablePolicy#namespace}.
 
 ---
 
@@ -1075,7 +1075,7 @@ resource_policy: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/s3tables_table_policy#resource_policy S3TablesTablePolicy#resource_policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/s3tables_table_policy#resource_policy S3TablesTablePolicy#resource_policy}.
 
 ---
 
@@ -1087,7 +1087,7 @@ table_bucket_arn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/s3tables_table_policy#table_bucket_arn S3TablesTablePolicy#table_bucket_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/s3tables_table_policy#table_bucket_arn S3TablesTablePolicy#table_bucket_arn}.
 
 ---
 
@@ -1101,7 +1101,7 @@ region: str
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/s3tables_table_policy#region S3TablesTablePolicy#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/s3tables_table_policy#region S3TablesTablePolicy#region}
 
 ---
 
