@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/codeconnections_connection
+// https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/codeconnections_connection
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,31 +13,31 @@ import * as cdktf from 'cdktf';
 
 export interface CodeconnectionsConnectionConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/codeconnections_connection#host_arn CodeconnectionsConnection#host_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/codeconnections_connection#host_arn CodeconnectionsConnection#host_arn}
   */
   readonly hostArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/codeconnections_connection#name CodeconnectionsConnection#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/codeconnections_connection#name CodeconnectionsConnection#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/codeconnections_connection#provider_type CodeconnectionsConnection#provider_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/codeconnections_connection#provider_type CodeconnectionsConnection#provider_type}
   */
   readonly providerType?: string;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/codeconnections_connection#region CodeconnectionsConnection#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/codeconnections_connection#region CodeconnectionsConnection#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/codeconnections_connection#tags CodeconnectionsConnection#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/codeconnections_connection#tags CodeconnectionsConnection#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/codeconnections_connection#timeouts CodeconnectionsConnection#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/codeconnections_connection#timeouts CodeconnectionsConnection#timeouts}
   */
   readonly timeouts?: CodeconnectionsConnectionTimeouts;
 }
@@ -45,19 +45,19 @@ export interface CodeconnectionsConnectionTimeouts {
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/codeconnections_connection#create CodeconnectionsConnection#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/codeconnections_connection#create CodeconnectionsConnection#create}
   */
   readonly create?: string;
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/codeconnections_connection#delete CodeconnectionsConnection#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/codeconnections_connection#delete CodeconnectionsConnection#delete}
   */
   readonly delete?: string;
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/codeconnections_connection#update CodeconnectionsConnection#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/codeconnections_connection#update CodeconnectionsConnection#update}
   */
   readonly update?: string;
 }
@@ -209,7 +209,7 @@ export class CodeconnectionsConnectionTimeoutsOutputReference extends cdktf.Comp
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/codeconnections_connection aws_codeconnections_connection}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/codeconnections_connection aws_codeconnections_connection}
 */
 export class CodeconnectionsConnection extends cdktf.TerraformResource {
 
@@ -225,7 +225,7 @@ export class CodeconnectionsConnection extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a CodeconnectionsConnection resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CodeconnectionsConnection to import
-  * @param importFromId The id of the existing CodeconnectionsConnection that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/codeconnections_connection#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing CodeconnectionsConnection that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/codeconnections_connection#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CodeconnectionsConnection to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -237,7 +237,7 @@ export class CodeconnectionsConnection extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/codeconnections_connection aws_codeconnections_connection} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/codeconnections_connection aws_codeconnections_connection} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -248,7 +248,7 @@ export class CodeconnectionsConnection extends cdktf.TerraformResource {
       terraformResourceType: 'aws_codeconnections_connection',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.9.0',
+        providerVersion: '6.10.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

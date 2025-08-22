@@ -1,3 +1,3 @@
 # `aws_iot_event_configurations`
 
-Refer to the Terraform Registry for docs: [`aws_iot_event_configurations`](https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/iot_event_configurations).
+Refer to the Terraform Registry for docs: [`aws_iot_event_configurations`](https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/iot_event_configurations).
