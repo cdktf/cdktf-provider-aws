@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/apigatewayv2_deployment
+// https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/apigatewayv2_deployment
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,15 +13,15 @@ import * as cdktf from 'cdktf';
 
 export interface Apigatewayv2DeploymentConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/apigatewayv2_deployment#api_id Apigatewayv2Deployment#api_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/apigatewayv2_deployment#api_id Apigatewayv2Deployment#api_id}
   */
   readonly apiId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/apigatewayv2_deployment#description Apigatewayv2Deployment#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/apigatewayv2_deployment#description Apigatewayv2Deployment#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/apigatewayv2_deployment#id Apigatewayv2Deployment#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/apigatewayv2_deployment#id Apigatewayv2Deployment#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -30,17 +30,17 @@ export interface Apigatewayv2DeploymentConfig extends cdktf.TerraformMetaArgumen
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/apigatewayv2_deployment#region Apigatewayv2Deployment#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/apigatewayv2_deployment#region Apigatewayv2Deployment#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/apigatewayv2_deployment#triggers Apigatewayv2Deployment#triggers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/apigatewayv2_deployment#triggers Apigatewayv2Deployment#triggers}
   */
   readonly triggers?: { [key: string]: string };
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/apigatewayv2_deployment aws_apigatewayv2_deployment}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/apigatewayv2_deployment aws_apigatewayv2_deployment}
 */
 export class Apigatewayv2Deployment extends cdktf.TerraformResource {
 
@@ -56,7 +56,7 @@ export class Apigatewayv2Deployment extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a Apigatewayv2Deployment resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Apigatewayv2Deployment to import
-  * @param importFromId The id of the existing Apigatewayv2Deployment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/apigatewayv2_deployment#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Apigatewayv2Deployment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/apigatewayv2_deployment#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Apigatewayv2Deployment to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -68,7 +68,7 @@ export class Apigatewayv2Deployment extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/apigatewayv2_deployment aws_apigatewayv2_deployment} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/apigatewayv2_deployment aws_apigatewayv2_deployment} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -79,7 +79,7 @@ export class Apigatewayv2Deployment extends cdktf.TerraformResource {
       terraformResourceType: 'aws_apigatewayv2_deployment',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.10.0',
+        providerVersion: '6.11.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

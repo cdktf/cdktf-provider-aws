@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/connect_bot_association
+// https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/connect_bot_association
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,36 +13,36 @@ import * as cdktf from 'cdktf';
 
 export interface ConnectBotAssociationConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/connect_bot_association#id ConnectBotAssociation#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/connect_bot_association#id ConnectBotAssociation#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/connect_bot_association#instance_id ConnectBotAssociation#instance_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/connect_bot_association#instance_id ConnectBotAssociation#instance_id}
   */
   readonly instanceId: string;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/connect_bot_association#region ConnectBotAssociation#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/connect_bot_association#region ConnectBotAssociation#region}
   */
   readonly region?: string;
   /**
   * lex_bot block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/connect_bot_association#lex_bot ConnectBotAssociation#lex_bot}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/connect_bot_association#lex_bot ConnectBotAssociation#lex_bot}
   */
   readonly lexBot: ConnectBotAssociationLexBot;
 }
 export interface ConnectBotAssociationLexBot {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/connect_bot_association#lex_region ConnectBotAssociation#lex_region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/connect_bot_association#lex_region ConnectBotAssociation#lex_region}
   */
   readonly lexRegion?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/connect_bot_association#name ConnectBotAssociation#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/connect_bot_association#name ConnectBotAssociation#name}
   */
   readonly name: string;
 }
@@ -152,7 +152,7 @@ export class ConnectBotAssociationLexBotOutputReference extends cdktf.ComplexObj
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/connect_bot_association aws_connect_bot_association}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/connect_bot_association aws_connect_bot_association}
 */
 export class ConnectBotAssociation extends cdktf.TerraformResource {
 
@@ -168,7 +168,7 @@ export class ConnectBotAssociation extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ConnectBotAssociation resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ConnectBotAssociation to import
-  * @param importFromId The id of the existing ConnectBotAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/connect_bot_association#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ConnectBotAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/connect_bot_association#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ConnectBotAssociation to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -180,7 +180,7 @@ export class ConnectBotAssociation extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/connect_bot_association aws_connect_bot_association} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/connect_bot_association aws_connect_bot_association} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -191,7 +191,7 @@ export class ConnectBotAssociation extends cdktf.TerraformResource {
       terraformResourceType: 'aws_connect_bot_association',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.10.0',
+        providerVersion: '6.11.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

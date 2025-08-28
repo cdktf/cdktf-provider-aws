@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/rekognition_collection
+// https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/rekognition_collection
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,23 +15,23 @@ export interface RekognitionCollectionConfig extends cdktf.TerraformMetaArgument
   /**
   * The name of the Rekognition collection
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/rekognition_collection#collection_id RekognitionCollection#collection_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/rekognition_collection#collection_id RekognitionCollection#collection_id}
   */
   readonly collectionId: string;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/rekognition_collection#region RekognitionCollection#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/rekognition_collection#region RekognitionCollection#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/rekognition_collection#tags RekognitionCollection#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/rekognition_collection#tags RekognitionCollection#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/rekognition_collection#timeouts RekognitionCollection#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/rekognition_collection#timeouts RekognitionCollection#timeouts}
   */
   readonly timeouts?: RekognitionCollectionTimeouts;
 }
@@ -39,7 +39,7 @@ export interface RekognitionCollectionTimeouts {
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/rekognition_collection#create RekognitionCollection#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/rekognition_collection#create RekognitionCollection#create}
   */
   readonly create?: string;
 }
@@ -133,7 +133,7 @@ export class RekognitionCollectionTimeoutsOutputReference extends cdktf.ComplexO
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/rekognition_collection aws_rekognition_collection}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/rekognition_collection aws_rekognition_collection}
 */
 export class RekognitionCollection extends cdktf.TerraformResource {
 
@@ -149,7 +149,7 @@ export class RekognitionCollection extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a RekognitionCollection resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the RekognitionCollection to import
-  * @param importFromId The id of the existing RekognitionCollection that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/rekognition_collection#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing RekognitionCollection that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/rekognition_collection#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the RekognitionCollection to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -161,7 +161,7 @@ export class RekognitionCollection extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/rekognition_collection aws_rekognition_collection} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/rekognition_collection aws_rekognition_collection} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -172,7 +172,7 @@ export class RekognitionCollection extends cdktf.TerraformResource {
       terraformResourceType: 'aws_rekognition_collection',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.10.0',
+        providerVersion: '6.11.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

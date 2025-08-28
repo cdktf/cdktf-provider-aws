@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/data-sources/servicequotas_templates
+// https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/data-sources/servicequotas_templates
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,11 +13,11 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsServicequotasTemplatesConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/data-sources/servicequotas_templates#aws_region DataAwsServicequotasTemplates#aws_region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/data-sources/servicequotas_templates#aws_region DataAwsServicequotasTemplates#aws_region}
   */
   readonly awsRegion?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/data-sources/servicequotas_templates#region DataAwsServicequotasTemplates#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/data-sources/servicequotas_templates#region DataAwsServicequotasTemplates#region}
   */
   readonly region?: string;
 }
@@ -133,7 +133,7 @@ export class DataAwsServicequotasTemplatesTemplatesList extends cdktf.ComplexLis
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/data-sources/servicequotas_templates aws_servicequotas_templates}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/data-sources/servicequotas_templates aws_servicequotas_templates}
 */
 export class DataAwsServicequotasTemplates extends cdktf.TerraformDataSource {
 
@@ -149,7 +149,7 @@ export class DataAwsServicequotasTemplates extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataAwsServicequotasTemplates resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsServicequotasTemplates to import
-  * @param importFromId The id of the existing DataAwsServicequotasTemplates that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/data-sources/servicequotas_templates#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsServicequotasTemplates that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/data-sources/servicequotas_templates#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsServicequotasTemplates to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -161,7 +161,7 @@ export class DataAwsServicequotasTemplates extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/data-sources/servicequotas_templates aws_servicequotas_templates} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/data-sources/servicequotas_templates aws_servicequotas_templates} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -172,7 +172,7 @@ export class DataAwsServicequotasTemplates extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_servicequotas_templates',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.10.0',
+        providerVersion: '6.11.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
