@@ -4,7 +4,7 @@
 
 ### BackupFramework <a name="BackupFramework" id="@cdktf/provider-aws.backupFramework.BackupFramework"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/backup_framework aws_backup_framework}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/backup_framework aws_backup_framework}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.backupFramework.BackupFramework.Initializer"></a>
 
@@ -535,7 +535,7 @@ The construct id used in the generated config for the BackupFramework to import.
 
 The id of the existing BackupFramework that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/backup_framework#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/backup_framework#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -988,12 +988,12 @@ new BackupFrameworkConfig {
 | <code><a href="#@cdktf/provider-aws.backupFramework.BackupFrameworkConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.backupFramework.BackupFrameworkConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.backupFramework.BackupFrameworkConfig.property.control">Control</a></code> | <code>object</code> | control block. |
-| <code><a href="#@cdktf/provider-aws.backupFramework.BackupFrameworkConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/backup_framework#name BackupFramework#name}. |
-| <code><a href="#@cdktf/provider-aws.backupFramework.BackupFrameworkConfig.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/backup_framework#description BackupFramework#description}. |
-| <code><a href="#@cdktf/provider-aws.backupFramework.BackupFrameworkConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/backup_framework#id BackupFramework#id}. |
+| <code><a href="#@cdktf/provider-aws.backupFramework.BackupFrameworkConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/backup_framework#name BackupFramework#name}. |
+| <code><a href="#@cdktf/provider-aws.backupFramework.BackupFrameworkConfig.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/backup_framework#description BackupFramework#description}. |
+| <code><a href="#@cdktf/provider-aws.backupFramework.BackupFrameworkConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/backup_framework#id BackupFramework#id}. |
 | <code><a href="#@cdktf/provider-aws.backupFramework.BackupFrameworkConfig.property.region">Region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktf/provider-aws.backupFramework.BackupFrameworkConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/backup_framework#tags BackupFramework#tags}. |
-| <code><a href="#@cdktf/provider-aws.backupFramework.BackupFrameworkConfig.property.tagsAll">TagsAll</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/backup_framework#tags_all BackupFramework#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.backupFramework.BackupFrameworkConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/backup_framework#tags BackupFramework#tags}. |
+| <code><a href="#@cdktf/provider-aws.backupFramework.BackupFrameworkConfig.property.tagsAll">TagsAll</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/backup_framework#tags_all BackupFramework#tags_all}. |
 | <code><a href="#@cdktf/provider-aws.backupFramework.BackupFrameworkConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-aws.backupFramework.BackupFrameworkTimeouts">BackupFrameworkTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1078,7 +1078,7 @@ public object Control { get; set; }
 
 control block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/backup_framework#control BackupFramework#control}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/backup_framework#control BackupFramework#control}
 
 ---
 
@@ -1090,7 +1090,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/backup_framework#name BackupFramework#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/backup_framework#name BackupFramework#name}.
 
 ---
 
@@ -1102,7 +1102,7 @@ public string Description { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/backup_framework#description BackupFramework#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/backup_framework#description BackupFramework#description}.
 
 ---
 
@@ -1114,7 +1114,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/backup_framework#id BackupFramework#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/backup_framework#id BackupFramework#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1131,7 +1131,7 @@ public string Region { get; set; }
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/backup_framework#region BackupFramework#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/backup_framework#region BackupFramework#region}
 
 ---
 
@@ -1143,7 +1143,7 @@ public System.Collections.Generic.IDictionary<string, string> Tags { get; set; }
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/backup_framework#tags BackupFramework#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/backup_framework#tags BackupFramework#tags}.
 
 ---
 
@@ -1155,7 +1155,7 @@ public System.Collections.Generic.IDictionary<string, string> TagsAll { get; set
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/backup_framework#tags_all BackupFramework#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/backup_framework#tags_all BackupFramework#tags_all}.
 
 ---
 
@@ -1169,7 +1169,7 @@ public BackupFrameworkTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/backup_framework#timeouts BackupFramework#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/backup_framework#timeouts BackupFramework#timeouts}
 
 ---
 
@@ -1191,7 +1191,7 @@ new BackupFrameworkControl {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.backupFramework.BackupFrameworkControl.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/backup_framework#name BackupFramework#name}. |
+| <code><a href="#@cdktf/provider-aws.backupFramework.BackupFrameworkControl.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/backup_framework#name BackupFramework#name}. |
 | <code><a href="#@cdktf/provider-aws.backupFramework.BackupFrameworkControl.property.inputParameter">InputParameter</a></code> | <code>object</code> | input_parameter block. |
 | <code><a href="#@cdktf/provider-aws.backupFramework.BackupFrameworkControl.property.scope">Scope</a></code> | <code><a href="#@cdktf/provider-aws.backupFramework.BackupFrameworkControlScope">BackupFrameworkControlScope</a></code> | scope block. |
 
@@ -1205,7 +1205,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/backup_framework#name BackupFramework#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/backup_framework#name BackupFramework#name}.
 
 ---
 
@@ -1219,7 +1219,7 @@ public object InputParameter { get; set; }
 
 input_parameter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/backup_framework#input_parameter BackupFramework#input_parameter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/backup_framework#input_parameter BackupFramework#input_parameter}
 
 ---
 
@@ -1233,7 +1233,7 @@ public BackupFrameworkControlScope Scope { get; set; }
 
 scope block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/backup_framework#scope BackupFramework#scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/backup_framework#scope BackupFramework#scope}
 
 ---
 
@@ -1254,8 +1254,8 @@ new BackupFrameworkControlInputParameter {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.backupFramework.BackupFrameworkControlInputParameter.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/backup_framework#name BackupFramework#name}. |
-| <code><a href="#@cdktf/provider-aws.backupFramework.BackupFrameworkControlInputParameter.property.value">Value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/backup_framework#value BackupFramework#value}. |
+| <code><a href="#@cdktf/provider-aws.backupFramework.BackupFrameworkControlInputParameter.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/backup_framework#name BackupFramework#name}. |
+| <code><a href="#@cdktf/provider-aws.backupFramework.BackupFrameworkControlInputParameter.property.value">Value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/backup_framework#value BackupFramework#value}. |
 
 ---
 
@@ -1267,7 +1267,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/backup_framework#name BackupFramework#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/backup_framework#name BackupFramework#name}.
 
 ---
 
@@ -1279,7 +1279,7 @@ public string Value { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/backup_framework#value BackupFramework#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/backup_framework#value BackupFramework#value}.
 
 ---
 
@@ -1301,9 +1301,9 @@ new BackupFrameworkControlScope {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.backupFramework.BackupFrameworkControlScope.property.complianceResourceIds">ComplianceResourceIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/backup_framework#compliance_resource_ids BackupFramework#compliance_resource_ids}. |
-| <code><a href="#@cdktf/provider-aws.backupFramework.BackupFrameworkControlScope.property.complianceResourceTypes">ComplianceResourceTypes</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/backup_framework#compliance_resource_types BackupFramework#compliance_resource_types}. |
-| <code><a href="#@cdktf/provider-aws.backupFramework.BackupFrameworkControlScope.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/backup_framework#tags BackupFramework#tags}. |
+| <code><a href="#@cdktf/provider-aws.backupFramework.BackupFrameworkControlScope.property.complianceResourceIds">ComplianceResourceIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/backup_framework#compliance_resource_ids BackupFramework#compliance_resource_ids}. |
+| <code><a href="#@cdktf/provider-aws.backupFramework.BackupFrameworkControlScope.property.complianceResourceTypes">ComplianceResourceTypes</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/backup_framework#compliance_resource_types BackupFramework#compliance_resource_types}. |
+| <code><a href="#@cdktf/provider-aws.backupFramework.BackupFrameworkControlScope.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/backup_framework#tags BackupFramework#tags}. |
 
 ---
 
@@ -1315,7 +1315,7 @@ public string[] ComplianceResourceIds { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/backup_framework#compliance_resource_ids BackupFramework#compliance_resource_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/backup_framework#compliance_resource_ids BackupFramework#compliance_resource_ids}.
 
 ---
 
@@ -1327,7 +1327,7 @@ public string[] ComplianceResourceTypes { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/backup_framework#compliance_resource_types BackupFramework#compliance_resource_types}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/backup_framework#compliance_resource_types BackupFramework#compliance_resource_types}.
 
 ---
 
@@ -1339,7 +1339,7 @@ public System.Collections.Generic.IDictionary<string, string> Tags { get; set; }
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/backup_framework#tags BackupFramework#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/backup_framework#tags BackupFramework#tags}.
 
 ---
 
@@ -1361,9 +1361,9 @@ new BackupFrameworkTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.backupFramework.BackupFrameworkTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/backup_framework#create BackupFramework#create}. |
-| <code><a href="#@cdktf/provider-aws.backupFramework.BackupFrameworkTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/backup_framework#delete BackupFramework#delete}. |
-| <code><a href="#@cdktf/provider-aws.backupFramework.BackupFrameworkTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/backup_framework#update BackupFramework#update}. |
+| <code><a href="#@cdktf/provider-aws.backupFramework.BackupFrameworkTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/backup_framework#create BackupFramework#create}. |
+| <code><a href="#@cdktf/provider-aws.backupFramework.BackupFrameworkTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/backup_framework#delete BackupFramework#delete}. |
+| <code><a href="#@cdktf/provider-aws.backupFramework.BackupFrameworkTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/backup_framework#update BackupFramework#update}. |
 
 ---
 
@@ -1375,7 +1375,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/backup_framework#create BackupFramework#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/backup_framework#create BackupFramework#create}.
 
 ---
 
@@ -1387,7 +1387,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/backup_framework#delete BackupFramework#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/backup_framework#delete BackupFramework#delete}.
 
 ---
 
@@ -1399,7 +1399,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/backup_framework#update BackupFramework#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/backup_framework#update BackupFramework#update}.
 
 ---
 

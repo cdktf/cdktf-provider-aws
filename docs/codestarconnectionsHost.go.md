@@ -4,7 +4,7 @@
 
 ### CodestarconnectionsHost <a name="CodestarconnectionsHost" id="@cdktf/provider-aws.codestarconnectionsHost.CodestarconnectionsHost"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/codestarconnections_host aws_codestarconnections_host}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/codestarconnections_host aws_codestarconnections_host}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.codestarconnectionsHost.CodestarconnectionsHost.Initializer"></a>
 
@@ -521,7 +521,7 @@ The construct id used in the generated config for the CodestarconnectionsHost to
 
 The id of the existing CodestarconnectionsHost that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/codestarconnections_host#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/codestarconnections_host#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -928,10 +928,10 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/codestarconnectionshost"
 | <code><a href="#@cdktf/provider-aws.codestarconnectionsHost.CodestarconnectionsHostConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.codestarconnectionsHost.CodestarconnectionsHostConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.codestarconnectionsHost.CodestarconnectionsHostConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.codestarconnectionsHost.CodestarconnectionsHostConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/codestarconnections_host#name CodestarconnectionsHost#name}. |
-| <code><a href="#@cdktf/provider-aws.codestarconnectionsHost.CodestarconnectionsHostConfig.property.providerEndpoint">ProviderEndpoint</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/codestarconnections_host#provider_endpoint CodestarconnectionsHost#provider_endpoint}. |
-| <code><a href="#@cdktf/provider-aws.codestarconnectionsHost.CodestarconnectionsHostConfig.property.providerType">ProviderType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/codestarconnections_host#provider_type CodestarconnectionsHost#provider_type}. |
-| <code><a href="#@cdktf/provider-aws.codestarconnectionsHost.CodestarconnectionsHostConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/codestarconnections_host#id CodestarconnectionsHost#id}. |
+| <code><a href="#@cdktf/provider-aws.codestarconnectionsHost.CodestarconnectionsHostConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/codestarconnections_host#name CodestarconnectionsHost#name}. |
+| <code><a href="#@cdktf/provider-aws.codestarconnectionsHost.CodestarconnectionsHostConfig.property.providerEndpoint">ProviderEndpoint</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/codestarconnections_host#provider_endpoint CodestarconnectionsHost#provider_endpoint}. |
+| <code><a href="#@cdktf/provider-aws.codestarconnectionsHost.CodestarconnectionsHostConfig.property.providerType">ProviderType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/codestarconnections_host#provider_type CodestarconnectionsHost#provider_type}. |
+| <code><a href="#@cdktf/provider-aws.codestarconnectionsHost.CodestarconnectionsHostConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/codestarconnections_host#id CodestarconnectionsHost#id}. |
 | <code><a href="#@cdktf/provider-aws.codestarconnectionsHost.CodestarconnectionsHostConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktf/provider-aws.codestarconnectionsHost.CodestarconnectionsHostConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-aws.codestarconnectionsHost.CodestarconnectionsHostTimeouts">CodestarconnectionsHostTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktf/provider-aws.codestarconnectionsHost.CodestarconnectionsHostConfig.property.vpcConfiguration">VpcConfiguration</a></code> | <code><a href="#@cdktf/provider-aws.codestarconnectionsHost.CodestarconnectionsHostVpcConfiguration">CodestarconnectionsHostVpcConfiguration</a></code> | vpc_configuration block. |
@@ -1016,7 +1016,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/codestarconnections_host#name CodestarconnectionsHost#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/codestarconnections_host#name CodestarconnectionsHost#name}.
 
 ---
 
@@ -1028,7 +1028,7 @@ ProviderEndpoint *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/codestarconnections_host#provider_endpoint CodestarconnectionsHost#provider_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/codestarconnections_host#provider_endpoint CodestarconnectionsHost#provider_endpoint}.
 
 ---
 
@@ -1040,7 +1040,7 @@ ProviderType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/codestarconnections_host#provider_type CodestarconnectionsHost#provider_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/codestarconnections_host#provider_type CodestarconnectionsHost#provider_type}.
 
 ---
 
@@ -1052,7 +1052,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/codestarconnections_host#id CodestarconnectionsHost#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/codestarconnections_host#id CodestarconnectionsHost#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1069,7 +1069,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/codestarconnections_host#region CodestarconnectionsHost#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/codestarconnections_host#region CodestarconnectionsHost#region}
 
 ---
 
@@ -1083,7 +1083,7 @@ Timeouts CodestarconnectionsHostTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/codestarconnections_host#timeouts CodestarconnectionsHost#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/codestarconnections_host#timeouts CodestarconnectionsHost#timeouts}
 
 ---
 
@@ -1097,7 +1097,7 @@ VpcConfiguration CodestarconnectionsHostVpcConfiguration
 
 vpc_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/codestarconnections_host#vpc_configuration CodestarconnectionsHost#vpc_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/codestarconnections_host#vpc_configuration CodestarconnectionsHost#vpc_configuration}
 
 ---
 
@@ -1119,9 +1119,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/codestarconnectionshost"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.codestarconnectionsHost.CodestarconnectionsHostTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/codestarconnections_host#create CodestarconnectionsHost#create}. |
-| <code><a href="#@cdktf/provider-aws.codestarconnectionsHost.CodestarconnectionsHostTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/codestarconnections_host#delete CodestarconnectionsHost#delete}. |
-| <code><a href="#@cdktf/provider-aws.codestarconnectionsHost.CodestarconnectionsHostTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/codestarconnections_host#update CodestarconnectionsHost#update}. |
+| <code><a href="#@cdktf/provider-aws.codestarconnectionsHost.CodestarconnectionsHostTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/codestarconnections_host#create CodestarconnectionsHost#create}. |
+| <code><a href="#@cdktf/provider-aws.codestarconnectionsHost.CodestarconnectionsHostTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/codestarconnections_host#delete CodestarconnectionsHost#delete}. |
+| <code><a href="#@cdktf/provider-aws.codestarconnectionsHost.CodestarconnectionsHostTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/codestarconnections_host#update CodestarconnectionsHost#update}. |
 
 ---
 
@@ -1133,7 +1133,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/codestarconnections_host#create CodestarconnectionsHost#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/codestarconnections_host#create CodestarconnectionsHost#create}.
 
 ---
 
@@ -1145,7 +1145,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/codestarconnections_host#delete CodestarconnectionsHost#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/codestarconnections_host#delete CodestarconnectionsHost#delete}.
 
 ---
 
@@ -1157,7 +1157,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/codestarconnections_host#update CodestarconnectionsHost#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/codestarconnections_host#update CodestarconnectionsHost#update}.
 
 ---
 
@@ -1180,10 +1180,10 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/codestarconnectionshost"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.codestarconnectionsHost.CodestarconnectionsHostVpcConfiguration.property.securityGroupIds">SecurityGroupIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/codestarconnections_host#security_group_ids CodestarconnectionsHost#security_group_ids}. |
-| <code><a href="#@cdktf/provider-aws.codestarconnectionsHost.CodestarconnectionsHostVpcConfiguration.property.subnetIds">SubnetIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/codestarconnections_host#subnet_ids CodestarconnectionsHost#subnet_ids}. |
-| <code><a href="#@cdktf/provider-aws.codestarconnectionsHost.CodestarconnectionsHostVpcConfiguration.property.vpcId">VpcId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/codestarconnections_host#vpc_id CodestarconnectionsHost#vpc_id}. |
-| <code><a href="#@cdktf/provider-aws.codestarconnectionsHost.CodestarconnectionsHostVpcConfiguration.property.tlsCertificate">TlsCertificate</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/codestarconnections_host#tls_certificate CodestarconnectionsHost#tls_certificate}. |
+| <code><a href="#@cdktf/provider-aws.codestarconnectionsHost.CodestarconnectionsHostVpcConfiguration.property.securityGroupIds">SecurityGroupIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/codestarconnections_host#security_group_ids CodestarconnectionsHost#security_group_ids}. |
+| <code><a href="#@cdktf/provider-aws.codestarconnectionsHost.CodestarconnectionsHostVpcConfiguration.property.subnetIds">SubnetIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/codestarconnections_host#subnet_ids CodestarconnectionsHost#subnet_ids}. |
+| <code><a href="#@cdktf/provider-aws.codestarconnectionsHost.CodestarconnectionsHostVpcConfiguration.property.vpcId">VpcId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/codestarconnections_host#vpc_id CodestarconnectionsHost#vpc_id}. |
+| <code><a href="#@cdktf/provider-aws.codestarconnectionsHost.CodestarconnectionsHostVpcConfiguration.property.tlsCertificate">TlsCertificate</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/codestarconnections_host#tls_certificate CodestarconnectionsHost#tls_certificate}. |
 
 ---
 
@@ -1195,7 +1195,7 @@ SecurityGroupIds *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/codestarconnections_host#security_group_ids CodestarconnectionsHost#security_group_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/codestarconnections_host#security_group_ids CodestarconnectionsHost#security_group_ids}.
 
 ---
 
@@ -1207,7 +1207,7 @@ SubnetIds *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/codestarconnections_host#subnet_ids CodestarconnectionsHost#subnet_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/codestarconnections_host#subnet_ids CodestarconnectionsHost#subnet_ids}.
 
 ---
 
@@ -1219,7 +1219,7 @@ VpcId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/codestarconnections_host#vpc_id CodestarconnectionsHost#vpc_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/codestarconnections_host#vpc_id CodestarconnectionsHost#vpc_id}.
 
 ---
 
@@ -1231,7 +1231,7 @@ TlsCertificate *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/codestarconnections_host#tls_certificate CodestarconnectionsHost#tls_certificate}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/codestarconnections_host#tls_certificate CodestarconnectionsHost#tls_certificate}.
 
 ---
 

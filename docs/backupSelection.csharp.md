@@ -4,7 +4,7 @@
 
 ### BackupSelection <a name="BackupSelection" id="@cdktf/provider-aws.backupSelection.BackupSelection"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/backup_selection aws_backup_selection}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/backup_selection aws_backup_selection}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.backupSelection.BackupSelection.Initializer"></a>
 
@@ -535,7 +535,7 @@ The construct id used in the generated config for the BackupSelection to import.
 
 The id of the existing BackupSelection that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/backup_selection#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/backup_selection#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -964,7 +964,7 @@ public object StringEquals { get; set; }
 
 string_equals block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/backup_selection#string_equals BackupSelection#string_equals}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/backup_selection#string_equals BackupSelection#string_equals}
 
 ---
 
@@ -978,7 +978,7 @@ public object StringLike { get; set; }
 
 string_like block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/backup_selection#string_like BackupSelection#string_like}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/backup_selection#string_like BackupSelection#string_like}
 
 ---
 
@@ -992,7 +992,7 @@ public object StringNotEquals { get; set; }
 
 string_not_equals block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/backup_selection#string_not_equals BackupSelection#string_not_equals}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/backup_selection#string_not_equals BackupSelection#string_not_equals}
 
 ---
 
@@ -1006,7 +1006,7 @@ public object StringNotLike { get; set; }
 
 string_not_like block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/backup_selection#string_not_like BackupSelection#string_not_like}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/backup_selection#string_not_like BackupSelection#string_not_like}
 
 ---
 
@@ -1027,8 +1027,8 @@ new BackupSelectionConditionStringEquals {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.backupSelection.BackupSelectionConditionStringEquals.property.key">Key</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/backup_selection#key BackupSelection#key}. |
-| <code><a href="#@cdktf/provider-aws.backupSelection.BackupSelectionConditionStringEquals.property.value">Value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/backup_selection#value BackupSelection#value}. |
+| <code><a href="#@cdktf/provider-aws.backupSelection.BackupSelectionConditionStringEquals.property.key">Key</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/backup_selection#key BackupSelection#key}. |
+| <code><a href="#@cdktf/provider-aws.backupSelection.BackupSelectionConditionStringEquals.property.value">Value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/backup_selection#value BackupSelection#value}. |
 
 ---
 
@@ -1040,7 +1040,7 @@ public string Key { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/backup_selection#key BackupSelection#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/backup_selection#key BackupSelection#key}.
 
 ---
 
@@ -1052,7 +1052,7 @@ public string Value { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/backup_selection#value BackupSelection#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/backup_selection#value BackupSelection#value}.
 
 ---
 
@@ -1073,8 +1073,8 @@ new BackupSelectionConditionStringLike {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.backupSelection.BackupSelectionConditionStringLike.property.key">Key</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/backup_selection#key BackupSelection#key}. |
-| <code><a href="#@cdktf/provider-aws.backupSelection.BackupSelectionConditionStringLike.property.value">Value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/backup_selection#value BackupSelection#value}. |
+| <code><a href="#@cdktf/provider-aws.backupSelection.BackupSelectionConditionStringLike.property.key">Key</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/backup_selection#key BackupSelection#key}. |
+| <code><a href="#@cdktf/provider-aws.backupSelection.BackupSelectionConditionStringLike.property.value">Value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/backup_selection#value BackupSelection#value}. |
 
 ---
 
@@ -1086,7 +1086,7 @@ public string Key { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/backup_selection#key BackupSelection#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/backup_selection#key BackupSelection#key}.
 
 ---
 
@@ -1098,7 +1098,7 @@ public string Value { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/backup_selection#value BackupSelection#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/backup_selection#value BackupSelection#value}.
 
 ---
 
@@ -1119,8 +1119,8 @@ new BackupSelectionConditionStringNotEquals {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.backupSelection.BackupSelectionConditionStringNotEquals.property.key">Key</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/backup_selection#key BackupSelection#key}. |
-| <code><a href="#@cdktf/provider-aws.backupSelection.BackupSelectionConditionStringNotEquals.property.value">Value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/backup_selection#value BackupSelection#value}. |
+| <code><a href="#@cdktf/provider-aws.backupSelection.BackupSelectionConditionStringNotEquals.property.key">Key</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/backup_selection#key BackupSelection#key}. |
+| <code><a href="#@cdktf/provider-aws.backupSelection.BackupSelectionConditionStringNotEquals.property.value">Value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/backup_selection#value BackupSelection#value}. |
 
 ---
 
@@ -1132,7 +1132,7 @@ public string Key { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/backup_selection#key BackupSelection#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/backup_selection#key BackupSelection#key}.
 
 ---
 
@@ -1144,7 +1144,7 @@ public string Value { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/backup_selection#value BackupSelection#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/backup_selection#value BackupSelection#value}.
 
 ---
 
@@ -1165,8 +1165,8 @@ new BackupSelectionConditionStringNotLike {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.backupSelection.BackupSelectionConditionStringNotLike.property.key">Key</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/backup_selection#key BackupSelection#key}. |
-| <code><a href="#@cdktf/provider-aws.backupSelection.BackupSelectionConditionStringNotLike.property.value">Value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/backup_selection#value BackupSelection#value}. |
+| <code><a href="#@cdktf/provider-aws.backupSelection.BackupSelectionConditionStringNotLike.property.key">Key</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/backup_selection#key BackupSelection#key}. |
+| <code><a href="#@cdktf/provider-aws.backupSelection.BackupSelectionConditionStringNotLike.property.value">Value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/backup_selection#value BackupSelection#value}. |
 
 ---
 
@@ -1178,7 +1178,7 @@ public string Key { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/backup_selection#key BackupSelection#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/backup_selection#key BackupSelection#key}.
 
 ---
 
@@ -1190,7 +1190,7 @@ public string Value { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/backup_selection#value BackupSelection#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/backup_selection#value BackupSelection#value}.
 
 ---
 
@@ -1232,14 +1232,14 @@ new BackupSelectionConfig {
 | <code><a href="#@cdktf/provider-aws.backupSelection.BackupSelectionConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.backupSelection.BackupSelectionConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.backupSelection.BackupSelectionConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupSelection.BackupSelectionConfig.property.iamRoleArn">IamRoleArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/backup_selection#iam_role_arn BackupSelection#iam_role_arn}. |
-| <code><a href="#@cdktf/provider-aws.backupSelection.BackupSelectionConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/backup_selection#name BackupSelection#name}. |
-| <code><a href="#@cdktf/provider-aws.backupSelection.BackupSelectionConfig.property.planId">PlanId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/backup_selection#plan_id BackupSelection#plan_id}. |
+| <code><a href="#@cdktf/provider-aws.backupSelection.BackupSelectionConfig.property.iamRoleArn">IamRoleArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/backup_selection#iam_role_arn BackupSelection#iam_role_arn}. |
+| <code><a href="#@cdktf/provider-aws.backupSelection.BackupSelectionConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/backup_selection#name BackupSelection#name}. |
+| <code><a href="#@cdktf/provider-aws.backupSelection.BackupSelectionConfig.property.planId">PlanId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/backup_selection#plan_id BackupSelection#plan_id}. |
 | <code><a href="#@cdktf/provider-aws.backupSelection.BackupSelectionConfig.property.condition">Condition</a></code> | <code>object</code> | condition block. |
-| <code><a href="#@cdktf/provider-aws.backupSelection.BackupSelectionConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/backup_selection#id BackupSelection#id}. |
-| <code><a href="#@cdktf/provider-aws.backupSelection.BackupSelectionConfig.property.notResources">NotResources</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/backup_selection#not_resources BackupSelection#not_resources}. |
+| <code><a href="#@cdktf/provider-aws.backupSelection.BackupSelectionConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/backup_selection#id BackupSelection#id}. |
+| <code><a href="#@cdktf/provider-aws.backupSelection.BackupSelectionConfig.property.notResources">NotResources</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/backup_selection#not_resources BackupSelection#not_resources}. |
 | <code><a href="#@cdktf/provider-aws.backupSelection.BackupSelectionConfig.property.region">Region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktf/provider-aws.backupSelection.BackupSelectionConfig.property.resources">Resources</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/backup_selection#resources BackupSelection#resources}. |
+| <code><a href="#@cdktf/provider-aws.backupSelection.BackupSelectionConfig.property.resources">Resources</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/backup_selection#resources BackupSelection#resources}. |
 | <code><a href="#@cdktf/provider-aws.backupSelection.BackupSelectionConfig.property.selectionTag">SelectionTag</a></code> | <code>object</code> | selection_tag block. |
 
 ---
@@ -1322,7 +1322,7 @@ public string IamRoleArn { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/backup_selection#iam_role_arn BackupSelection#iam_role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/backup_selection#iam_role_arn BackupSelection#iam_role_arn}.
 
 ---
 
@@ -1334,7 +1334,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/backup_selection#name BackupSelection#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/backup_selection#name BackupSelection#name}.
 
 ---
 
@@ -1346,7 +1346,7 @@ public string PlanId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/backup_selection#plan_id BackupSelection#plan_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/backup_selection#plan_id BackupSelection#plan_id}.
 
 ---
 
@@ -1360,7 +1360,7 @@ public object Condition { get; set; }
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/backup_selection#condition BackupSelection#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/backup_selection#condition BackupSelection#condition}
 
 ---
 
@@ -1372,7 +1372,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/backup_selection#id BackupSelection#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/backup_selection#id BackupSelection#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1387,7 +1387,7 @@ public string[] NotResources { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/backup_selection#not_resources BackupSelection#not_resources}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/backup_selection#not_resources BackupSelection#not_resources}.
 
 ---
 
@@ -1401,7 +1401,7 @@ public string Region { get; set; }
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/backup_selection#region BackupSelection#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/backup_selection#region BackupSelection#region}
 
 ---
 
@@ -1413,7 +1413,7 @@ public string[] Resources { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/backup_selection#resources BackupSelection#resources}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/backup_selection#resources BackupSelection#resources}.
 
 ---
 
@@ -1427,7 +1427,7 @@ public object SelectionTag { get; set; }
 
 selection_tag block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/backup_selection#selection_tag BackupSelection#selection_tag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/backup_selection#selection_tag BackupSelection#selection_tag}
 
 ---
 
@@ -1449,9 +1449,9 @@ new BackupSelectionSelectionTag {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.backupSelection.BackupSelectionSelectionTag.property.key">Key</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/backup_selection#key BackupSelection#key}. |
-| <code><a href="#@cdktf/provider-aws.backupSelection.BackupSelectionSelectionTag.property.type">Type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/backup_selection#type BackupSelection#type}. |
-| <code><a href="#@cdktf/provider-aws.backupSelection.BackupSelectionSelectionTag.property.value">Value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/backup_selection#value BackupSelection#value}. |
+| <code><a href="#@cdktf/provider-aws.backupSelection.BackupSelectionSelectionTag.property.key">Key</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/backup_selection#key BackupSelection#key}. |
+| <code><a href="#@cdktf/provider-aws.backupSelection.BackupSelectionSelectionTag.property.type">Type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/backup_selection#type BackupSelection#type}. |
+| <code><a href="#@cdktf/provider-aws.backupSelection.BackupSelectionSelectionTag.property.value">Value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/backup_selection#value BackupSelection#value}. |
 
 ---
 
@@ -1463,7 +1463,7 @@ public string Key { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/backup_selection#key BackupSelection#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/backup_selection#key BackupSelection#key}.
 
 ---
 
@@ -1475,7 +1475,7 @@ public string Type { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/backup_selection#type BackupSelection#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/backup_selection#type BackupSelection#type}.
 
 ---
 
@@ -1487,7 +1487,7 @@ public string Value { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/backup_selection#value BackupSelection#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/backup_selection#value BackupSelection#value}.
 
 ---
 

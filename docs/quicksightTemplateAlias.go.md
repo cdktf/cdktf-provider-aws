@@ -4,7 +4,7 @@
 
 ### QuicksightTemplateAlias <a name="QuicksightTemplateAlias" id="@cdktf/provider-aws.quicksightTemplateAlias.QuicksightTemplateAlias"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/quicksight_template_alias aws_quicksight_template_alias}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/quicksight_template_alias aws_quicksight_template_alias}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightTemplateAlias.QuicksightTemplateAlias.Initializer"></a>
 
@@ -481,7 +481,7 @@ The construct id used in the generated config for the QuicksightTemplateAlias to
 
 The id of the existing QuicksightTemplateAlias that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/quicksight_template_alias#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/quicksight_template_alias#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -842,10 +842,10 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/quicksighttemplatealias"
 | <code><a href="#@cdktf/provider-aws.quicksightTemplateAlias.QuicksightTemplateAliasConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.quicksightTemplateAlias.QuicksightTemplateAliasConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.quicksightTemplateAlias.QuicksightTemplateAliasConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.quicksightTemplateAlias.QuicksightTemplateAliasConfig.property.aliasName">AliasName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/quicksight_template_alias#alias_name QuicksightTemplateAlias#alias_name}. |
-| <code><a href="#@cdktf/provider-aws.quicksightTemplateAlias.QuicksightTemplateAliasConfig.property.templateId">TemplateId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/quicksight_template_alias#template_id QuicksightTemplateAlias#template_id}. |
-| <code><a href="#@cdktf/provider-aws.quicksightTemplateAlias.QuicksightTemplateAliasConfig.property.templateVersionNumber">TemplateVersionNumber</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/quicksight_template_alias#template_version_number QuicksightTemplateAlias#template_version_number}. |
-| <code><a href="#@cdktf/provider-aws.quicksightTemplateAlias.QuicksightTemplateAliasConfig.property.awsAccountId">AwsAccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/quicksight_template_alias#aws_account_id QuicksightTemplateAlias#aws_account_id}. |
+| <code><a href="#@cdktf/provider-aws.quicksightTemplateAlias.QuicksightTemplateAliasConfig.property.aliasName">AliasName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/quicksight_template_alias#alias_name QuicksightTemplateAlias#alias_name}. |
+| <code><a href="#@cdktf/provider-aws.quicksightTemplateAlias.QuicksightTemplateAliasConfig.property.templateId">TemplateId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/quicksight_template_alias#template_id QuicksightTemplateAlias#template_id}. |
+| <code><a href="#@cdktf/provider-aws.quicksightTemplateAlias.QuicksightTemplateAliasConfig.property.templateVersionNumber">TemplateVersionNumber</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/quicksight_template_alias#template_version_number QuicksightTemplateAlias#template_version_number}. |
+| <code><a href="#@cdktf/provider-aws.quicksightTemplateAlias.QuicksightTemplateAliasConfig.property.awsAccountId">AwsAccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/quicksight_template_alias#aws_account_id QuicksightTemplateAlias#aws_account_id}. |
 | <code><a href="#@cdktf/provider-aws.quicksightTemplateAlias.QuicksightTemplateAliasConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -928,7 +928,7 @@ AliasName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/quicksight_template_alias#alias_name QuicksightTemplateAlias#alias_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/quicksight_template_alias#alias_name QuicksightTemplateAlias#alias_name}.
 
 ---
 
@@ -940,7 +940,7 @@ TemplateId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/quicksight_template_alias#template_id QuicksightTemplateAlias#template_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/quicksight_template_alias#template_id QuicksightTemplateAlias#template_id}.
 
 ---
 
@@ -952,7 +952,7 @@ TemplateVersionNumber *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/quicksight_template_alias#template_version_number QuicksightTemplateAlias#template_version_number}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/quicksight_template_alias#template_version_number QuicksightTemplateAlias#template_version_number}.
 
 ---
 
@@ -964,7 +964,7 @@ AwsAccountId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/quicksight_template_alias#aws_account_id QuicksightTemplateAlias#aws_account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/quicksight_template_alias#aws_account_id QuicksightTemplateAlias#aws_account_id}.
 
 ---
 
@@ -978,7 +978,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/quicksight_template_alias#region QuicksightTemplateAlias#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/quicksight_template_alias#region QuicksightTemplateAlias#region}
 
 ---
 

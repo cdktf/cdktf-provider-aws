@@ -4,7 +4,7 @@
 
 ### DocdbClusterParameterGroup <a name="DocdbClusterParameterGroup" id="@cdktf/provider-aws.docdbClusterParameterGroup.DocdbClusterParameterGroup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/docdb_cluster_parameter_group aws_docdb_cluster_parameter_group}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/docdb_cluster_parameter_group aws_docdb_cluster_parameter_group}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.docdbClusterParameterGroup.DocdbClusterParameterGroup.Initializer"></a>
 
@@ -536,7 +536,7 @@ The construct id used in the generated config for the DocdbClusterParameterGroup
 
 The id of the existing DocdbClusterParameterGroup that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/docdb_cluster_parameter_group#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/docdb_cluster_parameter_group#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -961,15 +961,15 @@ const docdbClusterParameterGroupConfig: docdbClusterParameterGroup.DocdbClusterP
 | <code><a href="#@cdktf/provider-aws.docdbClusterParameterGroup.DocdbClusterParameterGroupConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.docdbClusterParameterGroup.DocdbClusterParameterGroupConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.docdbClusterParameterGroup.DocdbClusterParameterGroupConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.docdbClusterParameterGroup.DocdbClusterParameterGroupConfig.property.family">family</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/docdb_cluster_parameter_group#family DocdbClusterParameterGroup#family}. |
-| <code><a href="#@cdktf/provider-aws.docdbClusterParameterGroup.DocdbClusterParameterGroupConfig.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/docdb_cluster_parameter_group#description DocdbClusterParameterGroup#description}. |
-| <code><a href="#@cdktf/provider-aws.docdbClusterParameterGroup.DocdbClusterParameterGroupConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/docdb_cluster_parameter_group#id DocdbClusterParameterGroup#id}. |
-| <code><a href="#@cdktf/provider-aws.docdbClusterParameterGroup.DocdbClusterParameterGroupConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/docdb_cluster_parameter_group#name DocdbClusterParameterGroup#name}. |
-| <code><a href="#@cdktf/provider-aws.docdbClusterParameterGroup.DocdbClusterParameterGroupConfig.property.namePrefix">namePrefix</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/docdb_cluster_parameter_group#name_prefix DocdbClusterParameterGroup#name_prefix}. |
+| <code><a href="#@cdktf/provider-aws.docdbClusterParameterGroup.DocdbClusterParameterGroupConfig.property.family">family</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/docdb_cluster_parameter_group#family DocdbClusterParameterGroup#family}. |
+| <code><a href="#@cdktf/provider-aws.docdbClusterParameterGroup.DocdbClusterParameterGroupConfig.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/docdb_cluster_parameter_group#description DocdbClusterParameterGroup#description}. |
+| <code><a href="#@cdktf/provider-aws.docdbClusterParameterGroup.DocdbClusterParameterGroupConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/docdb_cluster_parameter_group#id DocdbClusterParameterGroup#id}. |
+| <code><a href="#@cdktf/provider-aws.docdbClusterParameterGroup.DocdbClusterParameterGroupConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/docdb_cluster_parameter_group#name DocdbClusterParameterGroup#name}. |
+| <code><a href="#@cdktf/provider-aws.docdbClusterParameterGroup.DocdbClusterParameterGroupConfig.property.namePrefix">namePrefix</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/docdb_cluster_parameter_group#name_prefix DocdbClusterParameterGroup#name_prefix}. |
 | <code><a href="#@cdktf/provider-aws.docdbClusterParameterGroup.DocdbClusterParameterGroupConfig.property.parameter">parameter</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.docdbClusterParameterGroup.DocdbClusterParameterGroupParameter">DocdbClusterParameterGroupParameter</a>[]</code> | parameter block. |
 | <code><a href="#@cdktf/provider-aws.docdbClusterParameterGroup.DocdbClusterParameterGroupConfig.property.region">region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktf/provider-aws.docdbClusterParameterGroup.DocdbClusterParameterGroupConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/docdb_cluster_parameter_group#tags DocdbClusterParameterGroup#tags}. |
-| <code><a href="#@cdktf/provider-aws.docdbClusterParameterGroup.DocdbClusterParameterGroupConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/docdb_cluster_parameter_group#tags_all DocdbClusterParameterGroup#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.docdbClusterParameterGroup.DocdbClusterParameterGroupConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/docdb_cluster_parameter_group#tags DocdbClusterParameterGroup#tags}. |
+| <code><a href="#@cdktf/provider-aws.docdbClusterParameterGroup.DocdbClusterParameterGroupConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/docdb_cluster_parameter_group#tags_all DocdbClusterParameterGroup#tags_all}. |
 
 ---
 
@@ -1051,7 +1051,7 @@ public readonly family: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/docdb_cluster_parameter_group#family DocdbClusterParameterGroup#family}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/docdb_cluster_parameter_group#family DocdbClusterParameterGroup#family}.
 
 ---
 
@@ -1063,7 +1063,7 @@ public readonly description: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/docdb_cluster_parameter_group#description DocdbClusterParameterGroup#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/docdb_cluster_parameter_group#description DocdbClusterParameterGroup#description}.
 
 ---
 
@@ -1075,7 +1075,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/docdb_cluster_parameter_group#id DocdbClusterParameterGroup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/docdb_cluster_parameter_group#id DocdbClusterParameterGroup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1090,7 +1090,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/docdb_cluster_parameter_group#name DocdbClusterParameterGroup#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/docdb_cluster_parameter_group#name DocdbClusterParameterGroup#name}.
 
 ---
 
@@ -1102,7 +1102,7 @@ public readonly namePrefix: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/docdb_cluster_parameter_group#name_prefix DocdbClusterParameterGroup#name_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/docdb_cluster_parameter_group#name_prefix DocdbClusterParameterGroup#name_prefix}.
 
 ---
 
@@ -1116,7 +1116,7 @@ public readonly parameter: IResolvable | DocdbClusterParameterGroupParameter[];
 
 parameter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/docdb_cluster_parameter_group#parameter DocdbClusterParameterGroup#parameter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/docdb_cluster_parameter_group#parameter DocdbClusterParameterGroup#parameter}
 
 ---
 
@@ -1130,7 +1130,7 @@ public readonly region: string;
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/docdb_cluster_parameter_group#region DocdbClusterParameterGroup#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/docdb_cluster_parameter_group#region DocdbClusterParameterGroup#region}
 
 ---
 
@@ -1142,7 +1142,7 @@ public readonly tags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/docdb_cluster_parameter_group#tags DocdbClusterParameterGroup#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/docdb_cluster_parameter_group#tags DocdbClusterParameterGroup#tags}.
 
 ---
 
@@ -1154,7 +1154,7 @@ public readonly tagsAll: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/docdb_cluster_parameter_group#tags_all DocdbClusterParameterGroup#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/docdb_cluster_parameter_group#tags_all DocdbClusterParameterGroup#tags_all}.
 
 ---
 
@@ -1172,9 +1172,9 @@ const docdbClusterParameterGroupParameter: docdbClusterParameterGroup.DocdbClust
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.docdbClusterParameterGroup.DocdbClusterParameterGroupParameter.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/docdb_cluster_parameter_group#name DocdbClusterParameterGroup#name}. |
-| <code><a href="#@cdktf/provider-aws.docdbClusterParameterGroup.DocdbClusterParameterGroupParameter.property.value">value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/docdb_cluster_parameter_group#value DocdbClusterParameterGroup#value}. |
-| <code><a href="#@cdktf/provider-aws.docdbClusterParameterGroup.DocdbClusterParameterGroupParameter.property.applyMethod">applyMethod</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/docdb_cluster_parameter_group#apply_method DocdbClusterParameterGroup#apply_method}. |
+| <code><a href="#@cdktf/provider-aws.docdbClusterParameterGroup.DocdbClusterParameterGroupParameter.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/docdb_cluster_parameter_group#name DocdbClusterParameterGroup#name}. |
+| <code><a href="#@cdktf/provider-aws.docdbClusterParameterGroup.DocdbClusterParameterGroupParameter.property.value">value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/docdb_cluster_parameter_group#value DocdbClusterParameterGroup#value}. |
+| <code><a href="#@cdktf/provider-aws.docdbClusterParameterGroup.DocdbClusterParameterGroupParameter.property.applyMethod">applyMethod</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/docdb_cluster_parameter_group#apply_method DocdbClusterParameterGroup#apply_method}. |
 
 ---
 
@@ -1186,7 +1186,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/docdb_cluster_parameter_group#name DocdbClusterParameterGroup#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/docdb_cluster_parameter_group#name DocdbClusterParameterGroup#name}.
 
 ---
 
@@ -1198,7 +1198,7 @@ public readonly value: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/docdb_cluster_parameter_group#value DocdbClusterParameterGroup#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/docdb_cluster_parameter_group#value DocdbClusterParameterGroup#value}.
 
 ---
 
@@ -1210,7 +1210,7 @@ public readonly applyMethod: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/docdb_cluster_parameter_group#apply_method DocdbClusterParameterGroup#apply_method}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/docdb_cluster_parameter_group#apply_method DocdbClusterParameterGroup#apply_method}.
 
 ---
 

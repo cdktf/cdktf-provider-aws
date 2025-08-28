@@ -4,7 +4,7 @@
 
 ### Inspector2Filter <a name="Inspector2Filter" id="@cdktf/provider-aws.inspector2Filter.Inspector2Filter"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter aws_inspector2_filter}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter aws_inspector2_filter}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.inspector2Filter.Inspector2Filter.Initializer"></a>
 
@@ -42,13 +42,13 @@ inspector2Filter.Inspector2Filter(
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2Filter.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2Filter.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2Filter.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2Filter.Initializer.parameter.action">action</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#action Inspector2Filter#action}. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2Filter.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#name Inspector2Filter#name}. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2Filter.Initializer.parameter.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#description Inspector2Filter#description}. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2Filter.Initializer.parameter.action">action</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#action Inspector2Filter#action}. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2Filter.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#name Inspector2Filter#name}. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2Filter.Initializer.parameter.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#description Inspector2Filter#description}. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2Filter.Initializer.parameter.filterCriteria">filter_criteria</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria">Inspector2FilterFilterCriteria</a>]]</code> | filter_criteria block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2Filter.Initializer.parameter.reason">reason</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#reason Inspector2Filter#reason}. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2Filter.Initializer.parameter.reason">reason</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#reason Inspector2Filter#reason}. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2Filter.Initializer.parameter.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2Filter.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#tags Inspector2Filter#tags}. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2Filter.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#tags Inspector2Filter#tags}. |
 
 ---
 
@@ -116,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#action Inspector2Filter#action}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#action Inspector2Filter#action}.
 
 ---
 
@@ -124,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#name Inspector2Filter#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#name Inspector2Filter#name}.
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#description Inspector2Filter#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#description Inspector2Filter#description}.
 
 ---
 
@@ -142,7 +142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 filter_criteria block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#filter_criteria Inspector2Filter#filter_criteria}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#filter_criteria Inspector2Filter#filter_criteria}
 
 ---
 
@@ -150,7 +150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#reason Inspector2Filter#reason}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#reason Inspector2Filter#reason}.
 
 ---
 
@@ -160,7 +160,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#region Inspector2Filter#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#region Inspector2Filter#region}
 
 ---
 
@@ -168,7 +168,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#tags Inspector2Filter#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#tags Inspector2Filter#tags}.
 
 ---
 
@@ -691,7 +691,7 @@ The construct id used in the generated config for the Inspector2Filter to import
 
 The id of the existing Inspector2Filter that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1098,13 +1098,13 @@ inspector2Filter.Inspector2FilterConfig(
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterConfig.property.action">action</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#action Inspector2Filter#action}. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#name Inspector2Filter#name}. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterConfig.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#description Inspector2Filter#description}. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterConfig.property.action">action</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#action Inspector2Filter#action}. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#name Inspector2Filter#name}. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterConfig.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#description Inspector2Filter#description}. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterConfig.property.filterCriteria">filter_criteria</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria">Inspector2FilterFilterCriteria</a>]]</code> | filter_criteria block. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterConfig.property.reason">reason</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#reason Inspector2Filter#reason}. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterConfig.property.reason">reason</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#reason Inspector2Filter#reason}. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterConfig.property.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#tags Inspector2Filter#tags}. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#tags Inspector2Filter#tags}. |
 
 ---
 
@@ -1186,7 +1186,7 @@ action: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#action Inspector2Filter#action}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#action Inspector2Filter#action}.
 
 ---
 
@@ -1198,7 +1198,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#name Inspector2Filter#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#name Inspector2Filter#name}.
 
 ---
 
@@ -1210,7 +1210,7 @@ description: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#description Inspector2Filter#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#description Inspector2Filter#description}.
 
 ---
 
@@ -1224,7 +1224,7 @@ filter_criteria: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCri
 
 filter_criteria block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#filter_criteria Inspector2Filter#filter_criteria}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#filter_criteria Inspector2Filter#filter_criteria}
 
 ---
 
@@ -1236,7 +1236,7 @@ reason: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#reason Inspector2Filter#reason}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#reason Inspector2Filter#reason}.
 
 ---
 
@@ -1250,7 +1250,7 @@ region: str
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#region Inspector2Filter#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#region Inspector2Filter#region}
 
 ---
 
@@ -1262,7 +1262,7 @@ tags: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#tags Inspector2Filter#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#tags Inspector2Filter#tags}.
 
 ---
 
@@ -1275,6 +1275,8 @@ from cdktf_cdktf_provider_aws import inspector2_filter
 
 inspector2Filter.Inspector2FilterFilterCriteria(
   aws_account_id: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaAwsAccountId]] = None,
+  code_repository_project_name: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaCodeRepositoryProjectName]] = None,
+  code_repository_provider_type: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaCodeRepositoryProviderType]] = None,
   code_vulnerability_detector_name: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName]] = None,
   code_vulnerability_detector_tags: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags]] = None,
   code_vulnerability_file_path: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath]] = None,
@@ -1285,6 +1287,8 @@ inspector2Filter.Inspector2FilterFilterCriteria(
   ec2_instance_vpc_id: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaEc2InstanceVpcId]] = None,
   ecr_image_architecture: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaEcrImageArchitecture]] = None,
   ecr_image_hash: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaEcrImageHash]] = None,
+  ecr_image_in_use_count: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaEcrImageInUseCount]] = None,
+  ecr_image_last_in_use_at: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaEcrImageLastInUseAt]] = None,
   ecr_image_pushed_at: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaEcrImagePushedAt]] = None,
   ecr_image_registry: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaEcrImageRegistry]] = None,
   ecr_image_repository_name: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaEcrImageRepositoryName]] = None,
@@ -1324,6 +1328,8 @@ inspector2Filter.Inspector2FilterFilterCriteria(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.awsAccountId">aws_account_id</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaAwsAccountId">Inspector2FilterFilterCriteriaAwsAccountId</a>]]</code> | aws_account_id block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.codeRepositoryProjectName">code_repository_project_name</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectName">Inspector2FilterFilterCriteriaCodeRepositoryProjectName</a>]]</code> | code_repository_project_name block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.codeRepositoryProviderType">code_repository_provider_type</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderType">Inspector2FilterFilterCriteriaCodeRepositoryProviderType</a>]]</code> | code_repository_provider_type block. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.codeVulnerabilityDetectorName">code_vulnerability_detector_name</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName">Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName</a>]]</code> | code_vulnerability_detector_name block. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.codeVulnerabilityDetectorTags">code_vulnerability_detector_tags</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags">Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags</a>]]</code> | code_vulnerability_detector_tags block. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.codeVulnerabilityFilePath">code_vulnerability_file_path</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath">Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath</a>]]</code> | code_vulnerability_file_path block. |
@@ -1334,6 +1340,8 @@ inspector2Filter.Inspector2FilterFilterCriteria(
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.ec2InstanceVpcId">ec2_instance_vpc_id</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceVpcId">Inspector2FilterFilterCriteriaEc2InstanceVpcId</a>]]</code> | ec2_instance_vpc_id block. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.ecrImageArchitecture">ecr_image_architecture</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageArchitecture">Inspector2FilterFilterCriteriaEcrImageArchitecture</a>]]</code> | ecr_image_architecture block. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.ecrImageHash">ecr_image_hash</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageHash">Inspector2FilterFilterCriteriaEcrImageHash</a>]]</code> | ecr_image_hash block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.ecrImageInUseCount">ecr_image_in_use_count</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCount">Inspector2FilterFilterCriteriaEcrImageInUseCount</a>]]</code> | ecr_image_in_use_count block. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.ecrImageLastInUseAt">ecr_image_last_in_use_at</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAt">Inspector2FilterFilterCriteriaEcrImageLastInUseAt</a>]]</code> | ecr_image_last_in_use_at block. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.ecrImagePushedAt">ecr_image_pushed_at</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImagePushedAt">Inspector2FilterFilterCriteriaEcrImagePushedAt</a>]]</code> | ecr_image_pushed_at block. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.ecrImageRegistry">ecr_image_registry</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRegistry">Inspector2FilterFilterCriteriaEcrImageRegistry</a>]]</code> | ecr_image_registry block. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.ecrImageRepositoryName">ecr_image_repository_name</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRepositoryName">Inspector2FilterFilterCriteriaEcrImageRepositoryName</a>]]</code> | ecr_image_repository_name block. |
@@ -1378,7 +1386,35 @@ aws_account_id: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCrit
 
 aws_account_id block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#aws_account_id Inspector2Filter#aws_account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#aws_account_id Inspector2Filter#aws_account_id}
+
+---
+
+##### `code_repository_project_name`<sup>Optional</sup> <a name="code_repository_project_name" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.codeRepositoryProjectName"></a>
+
+```python
+code_repository_project_name: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaCodeRepositoryProjectName]]
+```
+
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectName">Inspector2FilterFilterCriteriaCodeRepositoryProjectName</a>]]
+
+code_repository_project_name block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#code_repository_project_name Inspector2Filter#code_repository_project_name}
+
+---
+
+##### `code_repository_provider_type`<sup>Optional</sup> <a name="code_repository_provider_type" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.codeRepositoryProviderType"></a>
+
+```python
+code_repository_provider_type: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaCodeRepositoryProviderType]]
+```
+
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderType">Inspector2FilterFilterCriteriaCodeRepositoryProviderType</a>]]
+
+code_repository_provider_type block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#code_repository_provider_type Inspector2Filter#code_repository_provider_type}
 
 ---
 
@@ -1392,7 +1428,7 @@ code_vulnerability_detector_name: typing.Union[IResolvable, typing.List[Inspecto
 
 code_vulnerability_detector_name block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#code_vulnerability_detector_name Inspector2Filter#code_vulnerability_detector_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#code_vulnerability_detector_name Inspector2Filter#code_vulnerability_detector_name}
 
 ---
 
@@ -1406,7 +1442,7 @@ code_vulnerability_detector_tags: typing.Union[IResolvable, typing.List[Inspecto
 
 code_vulnerability_detector_tags block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#code_vulnerability_detector_tags Inspector2Filter#code_vulnerability_detector_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#code_vulnerability_detector_tags Inspector2Filter#code_vulnerability_detector_tags}
 
 ---
 
@@ -1420,7 +1456,7 @@ code_vulnerability_file_path: typing.Union[IResolvable, typing.List[Inspector2Fi
 
 code_vulnerability_file_path block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#code_vulnerability_file_path Inspector2Filter#code_vulnerability_file_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#code_vulnerability_file_path Inspector2Filter#code_vulnerability_file_path}
 
 ---
 
@@ -1434,7 +1470,7 @@ component_id: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriter
 
 component_id block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#component_id Inspector2Filter#component_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#component_id Inspector2Filter#component_id}
 
 ---
 
@@ -1448,7 +1484,7 @@ component_type: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCrit
 
 component_type block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#component_type Inspector2Filter#component_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#component_type Inspector2Filter#component_type}
 
 ---
 
@@ -1462,7 +1498,7 @@ ec2_instance_image_id: typing.Union[IResolvable, typing.List[Inspector2FilterFil
 
 ec2_instance_image_id block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#ec2_instance_image_id Inspector2Filter#ec2_instance_image_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#ec2_instance_image_id Inspector2Filter#ec2_instance_image_id}
 
 ---
 
@@ -1476,7 +1512,7 @@ ec2_instance_subnet_id: typing.Union[IResolvable, typing.List[Inspector2FilterFi
 
 ec2_instance_subnet_id block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#ec2_instance_subnet_id Inspector2Filter#ec2_instance_subnet_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#ec2_instance_subnet_id Inspector2Filter#ec2_instance_subnet_id}
 
 ---
 
@@ -1490,7 +1526,7 @@ ec2_instance_vpc_id: typing.Union[IResolvable, typing.List[Inspector2FilterFilte
 
 ec2_instance_vpc_id block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#ec2_instance_vpc_id Inspector2Filter#ec2_instance_vpc_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#ec2_instance_vpc_id Inspector2Filter#ec2_instance_vpc_id}
 
 ---
 
@@ -1504,7 +1540,7 @@ ecr_image_architecture: typing.Union[IResolvable, typing.List[Inspector2FilterFi
 
 ecr_image_architecture block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#ecr_image_architecture Inspector2Filter#ecr_image_architecture}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#ecr_image_architecture Inspector2Filter#ecr_image_architecture}
 
 ---
 
@@ -1518,7 +1554,35 @@ ecr_image_hash: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCrit
 
 ecr_image_hash block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#ecr_image_hash Inspector2Filter#ecr_image_hash}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#ecr_image_hash Inspector2Filter#ecr_image_hash}
+
+---
+
+##### `ecr_image_in_use_count`<sup>Optional</sup> <a name="ecr_image_in_use_count" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.ecrImageInUseCount"></a>
+
+```python
+ecr_image_in_use_count: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaEcrImageInUseCount]]
+```
+
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCount">Inspector2FilterFilterCriteriaEcrImageInUseCount</a>]]
+
+ecr_image_in_use_count block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#ecr_image_in_use_count Inspector2Filter#ecr_image_in_use_count}
+
+---
+
+##### `ecr_image_last_in_use_at`<sup>Optional</sup> <a name="ecr_image_last_in_use_at" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteria.property.ecrImageLastInUseAt"></a>
+
+```python
+ecr_image_last_in_use_at: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaEcrImageLastInUseAt]]
+```
+
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAt">Inspector2FilterFilterCriteriaEcrImageLastInUseAt</a>]]
+
+ecr_image_last_in_use_at block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#ecr_image_last_in_use_at Inspector2Filter#ecr_image_last_in_use_at}
 
 ---
 
@@ -1532,7 +1596,7 @@ ecr_image_pushed_at: typing.Union[IResolvable, typing.List[Inspector2FilterFilte
 
 ecr_image_pushed_at block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#ecr_image_pushed_at Inspector2Filter#ecr_image_pushed_at}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#ecr_image_pushed_at Inspector2Filter#ecr_image_pushed_at}
 
 ---
 
@@ -1546,7 +1610,7 @@ ecr_image_registry: typing.Union[IResolvable, typing.List[Inspector2FilterFilter
 
 ecr_image_registry block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#ecr_image_registry Inspector2Filter#ecr_image_registry}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#ecr_image_registry Inspector2Filter#ecr_image_registry}
 
 ---
 
@@ -1560,7 +1624,7 @@ ecr_image_repository_name: typing.Union[IResolvable, typing.List[Inspector2Filte
 
 ecr_image_repository_name block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#ecr_image_repository_name Inspector2Filter#ecr_image_repository_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#ecr_image_repository_name Inspector2Filter#ecr_image_repository_name}
 
 ---
 
@@ -1574,7 +1638,7 @@ ecr_image_tags: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCrit
 
 ecr_image_tags block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#ecr_image_tags Inspector2Filter#ecr_image_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#ecr_image_tags Inspector2Filter#ecr_image_tags}
 
 ---
 
@@ -1588,7 +1652,7 @@ epss_score: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteria
 
 epss_score block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#epss_score Inspector2Filter#epss_score}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#epss_score Inspector2Filter#epss_score}
 
 ---
 
@@ -1602,7 +1666,7 @@ exploit_available: typing.Union[IResolvable, typing.List[Inspector2FilterFilterC
 
 exploit_available block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#exploit_available Inspector2Filter#exploit_available}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#exploit_available Inspector2Filter#exploit_available}
 
 ---
 
@@ -1616,7 +1680,7 @@ finding_arn: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteri
 
 finding_arn block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#finding_arn Inspector2Filter#finding_arn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#finding_arn Inspector2Filter#finding_arn}
 
 ---
 
@@ -1630,7 +1694,7 @@ finding_status: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCrit
 
 finding_status block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#finding_status Inspector2Filter#finding_status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#finding_status Inspector2Filter#finding_status}
 
 ---
 
@@ -1644,7 +1708,7 @@ finding_type: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriter
 
 finding_type block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#finding_type Inspector2Filter#finding_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#finding_type Inspector2Filter#finding_type}
 
 ---
 
@@ -1658,7 +1722,7 @@ first_observed_at: typing.Union[IResolvable, typing.List[Inspector2FilterFilterC
 
 first_observed_at block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#first_observed_at Inspector2Filter#first_observed_at}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#first_observed_at Inspector2Filter#first_observed_at}
 
 ---
 
@@ -1672,7 +1736,7 @@ fix_available: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCrite
 
 fix_available block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#fix_available Inspector2Filter#fix_available}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#fix_available Inspector2Filter#fix_available}
 
 ---
 
@@ -1686,7 +1750,7 @@ inspector_score: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCri
 
 inspector_score block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#inspector_score Inspector2Filter#inspector_score}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#inspector_score Inspector2Filter#inspector_score}
 
 ---
 
@@ -1700,7 +1764,7 @@ lambda_function_execution_role_arn: typing.Union[IResolvable, typing.List[Inspec
 
 lambda_function_execution_role_arn block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#lambda_function_execution_role_arn Inspector2Filter#lambda_function_execution_role_arn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#lambda_function_execution_role_arn Inspector2Filter#lambda_function_execution_role_arn}
 
 ---
 
@@ -1714,7 +1778,7 @@ lambda_function_last_modified_at: typing.Union[IResolvable, typing.List[Inspecto
 
 lambda_function_last_modified_at block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#lambda_function_last_modified_at Inspector2Filter#lambda_function_last_modified_at}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#lambda_function_last_modified_at Inspector2Filter#lambda_function_last_modified_at}
 
 ---
 
@@ -1728,7 +1792,7 @@ lambda_function_layers: typing.Union[IResolvable, typing.List[Inspector2FilterFi
 
 lambda_function_layers block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#lambda_function_layers Inspector2Filter#lambda_function_layers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#lambda_function_layers Inspector2Filter#lambda_function_layers}
 
 ---
 
@@ -1742,7 +1806,7 @@ lambda_function_name: typing.Union[IResolvable, typing.List[Inspector2FilterFilt
 
 lambda_function_name block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#lambda_function_name Inspector2Filter#lambda_function_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#lambda_function_name Inspector2Filter#lambda_function_name}
 
 ---
 
@@ -1756,7 +1820,7 @@ lambda_function_runtime: typing.Union[IResolvable, typing.List[Inspector2FilterF
 
 lambda_function_runtime block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#lambda_function_runtime Inspector2Filter#lambda_function_runtime}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#lambda_function_runtime Inspector2Filter#lambda_function_runtime}
 
 ---
 
@@ -1770,7 +1834,7 @@ last_observed_at: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCr
 
 last_observed_at block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#last_observed_at Inspector2Filter#last_observed_at}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#last_observed_at Inspector2Filter#last_observed_at}
 
 ---
 
@@ -1784,7 +1848,7 @@ network_protocol: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCr
 
 network_protocol block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#network_protocol Inspector2Filter#network_protocol}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#network_protocol Inspector2Filter#network_protocol}
 
 ---
 
@@ -1798,7 +1862,7 @@ port_range: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteria
 
 port_range block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#port_range Inspector2Filter#port_range}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#port_range Inspector2Filter#port_range}
 
 ---
 
@@ -1812,7 +1876,7 @@ related_vulnerabilities: typing.Union[IResolvable, typing.List[Inspector2FilterF
 
 related_vulnerabilities block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#related_vulnerabilities Inspector2Filter#related_vulnerabilities}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#related_vulnerabilities Inspector2Filter#related_vulnerabilities}
 
 ---
 
@@ -1826,7 +1890,7 @@ resource_id: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteri
 
 resource_id block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#resource_id Inspector2Filter#resource_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#resource_id Inspector2Filter#resource_id}
 
 ---
 
@@ -1840,7 +1904,7 @@ resource_tags: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCrite
 
 resource_tags block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#resource_tags Inspector2Filter#resource_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#resource_tags Inspector2Filter#resource_tags}
 
 ---
 
@@ -1854,7 +1918,7 @@ resource_type: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCrite
 
 resource_type block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#resource_type Inspector2Filter#resource_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#resource_type Inspector2Filter#resource_type}
 
 ---
 
@@ -1868,7 +1932,7 @@ severity: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaSe
 
 severity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#severity Inspector2Filter#severity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#severity Inspector2Filter#severity}
 
 ---
 
@@ -1882,7 +1946,7 @@ title: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaTitle
 
 title block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#title Inspector2Filter#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#title Inspector2Filter#title}
 
 ---
 
@@ -1896,7 +1960,7 @@ updated_at: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteria
 
 updated_at block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#updated_at Inspector2Filter#updated_at}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#updated_at Inspector2Filter#updated_at}
 
 ---
 
@@ -1910,7 +1974,7 @@ vendor_severity: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCri
 
 vendor_severity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#vendor_severity Inspector2Filter#vendor_severity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#vendor_severity Inspector2Filter#vendor_severity}
 
 ---
 
@@ -1924,7 +1988,7 @@ vulnerability_id: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCr
 
 vulnerability_id block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#vulnerability_id Inspector2Filter#vulnerability_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#vulnerability_id Inspector2Filter#vulnerability_id}
 
 ---
 
@@ -1938,7 +2002,7 @@ vulnerability_source: typing.Union[IResolvable, typing.List[Inspector2FilterFilt
 
 vulnerability_source block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#vulnerability_source Inspector2Filter#vulnerability_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#vulnerability_source Inspector2Filter#vulnerability_source}
 
 ---
 
@@ -1952,7 +2016,7 @@ vulnerable_packages: typing.Union[IResolvable, typing.List[Inspector2FilterFilte
 
 vulnerable_packages block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#vulnerable_packages Inspector2Filter#vulnerable_packages}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#vulnerable_packages Inspector2Filter#vulnerable_packages}
 
 ---
 
@@ -1973,8 +2037,8 @@ inspector2Filter.Inspector2FilterFilterCriteriaAwsAccountId(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaAwsAccountId.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaAwsAccountId.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#value Inspector2Filter#value}. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaAwsAccountId.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaAwsAccountId.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#value Inspector2Filter#value}. |
 
 ---
 
@@ -1986,7 +2050,7 @@ comparison: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}.
 
 ---
 
@@ -1998,7 +2062,99 @@ value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#value Inspector2Filter#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#value Inspector2Filter#value}.
+
+---
+
+### Inspector2FilterFilterCriteriaCodeRepositoryProjectName <a name="Inspector2FilterFilterCriteriaCodeRepositoryProjectName" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectName"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectName.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_aws import inspector2_filter
+
+inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectName(
+  comparison: str,
+  value: str
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectName.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectName.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#value Inspector2Filter#value}. |
+
+---
+
+##### `comparison`<sup>Required</sup> <a name="comparison" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectName.property.comparison"></a>
+
+```python
+comparison: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}.
+
+---
+
+##### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectName.property.value"></a>
+
+```python
+value: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#value Inspector2Filter#value}.
+
+---
+
+### Inspector2FilterFilterCriteriaCodeRepositoryProviderType <a name="Inspector2FilterFilterCriteriaCodeRepositoryProviderType" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderType"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderType.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_aws import inspector2_filter
+
+inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderType(
+  comparison: str,
+  value: str
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderType.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderType.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#value Inspector2Filter#value}. |
+
+---
+
+##### `comparison`<sup>Required</sup> <a name="comparison" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderType.property.comparison"></a>
+
+```python
+comparison: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}.
+
+---
+
+##### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderType.property.value"></a>
+
+```python
+value: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#value Inspector2Filter#value}.
 
 ---
 
@@ -2019,8 +2175,8 @@ inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#value Inspector2Filter#value}. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#value Inspector2Filter#value}. |
 
 ---
 
@@ -2032,7 +2188,7 @@ comparison: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}.
 
 ---
 
@@ -2044,7 +2200,7 @@ value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#value Inspector2Filter#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#value Inspector2Filter#value}.
 
 ---
 
@@ -2065,8 +2221,8 @@ inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#value Inspector2Filter#value}. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#value Inspector2Filter#value}. |
 
 ---
 
@@ -2078,7 +2234,7 @@ comparison: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}.
 
 ---
 
@@ -2090,7 +2246,7 @@ value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#value Inspector2Filter#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#value Inspector2Filter#value}.
 
 ---
 
@@ -2111,8 +2267,8 @@ inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#value Inspector2Filter#value}. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#value Inspector2Filter#value}. |
 
 ---
 
@@ -2124,7 +2280,7 @@ comparison: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}.
 
 ---
 
@@ -2136,7 +2292,7 @@ value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#value Inspector2Filter#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#value Inspector2Filter#value}.
 
 ---
 
@@ -2157,8 +2313,8 @@ inspector2Filter.Inspector2FilterFilterCriteriaComponentId(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentId.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentId.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#value Inspector2Filter#value}. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentId.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentId.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#value Inspector2Filter#value}. |
 
 ---
 
@@ -2170,7 +2326,7 @@ comparison: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}.
 
 ---
 
@@ -2182,7 +2338,7 @@ value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#value Inspector2Filter#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#value Inspector2Filter#value}.
 
 ---
 
@@ -2203,8 +2359,8 @@ inspector2Filter.Inspector2FilterFilterCriteriaComponentType(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentType.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentType.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#value Inspector2Filter#value}. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentType.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaComponentType.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#value Inspector2Filter#value}. |
 
 ---
 
@@ -2216,7 +2372,7 @@ comparison: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}.
 
 ---
 
@@ -2228,7 +2384,7 @@ value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#value Inspector2Filter#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#value Inspector2Filter#value}.
 
 ---
 
@@ -2249,8 +2405,8 @@ inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceImageId(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceImageId.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceImageId.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#value Inspector2Filter#value}. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceImageId.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceImageId.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#value Inspector2Filter#value}. |
 
 ---
 
@@ -2262,7 +2418,7 @@ comparison: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}.
 
 ---
 
@@ -2274,7 +2430,7 @@ value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#value Inspector2Filter#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#value Inspector2Filter#value}.
 
 ---
 
@@ -2295,8 +2451,8 @@ inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceSubnetId(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceSubnetId.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceSubnetId.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#value Inspector2Filter#value}. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceSubnetId.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceSubnetId.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#value Inspector2Filter#value}. |
 
 ---
 
@@ -2308,7 +2464,7 @@ comparison: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}.
 
 ---
 
@@ -2320,7 +2476,7 @@ value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#value Inspector2Filter#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#value Inspector2Filter#value}.
 
 ---
 
@@ -2341,8 +2497,8 @@ inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceVpcId(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceVpcId.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceVpcId.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#value Inspector2Filter#value}. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceVpcId.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceVpcId.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#value Inspector2Filter#value}. |
 
 ---
 
@@ -2354,7 +2510,7 @@ comparison: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}.
 
 ---
 
@@ -2366,7 +2522,7 @@ value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#value Inspector2Filter#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#value Inspector2Filter#value}.
 
 ---
 
@@ -2387,8 +2543,8 @@ inspector2Filter.Inspector2FilterFilterCriteriaEcrImageArchitecture(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageArchitecture.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageArchitecture.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#value Inspector2Filter#value}. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageArchitecture.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageArchitecture.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#value Inspector2Filter#value}. |
 
 ---
 
@@ -2400,7 +2556,7 @@ comparison: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}.
 
 ---
 
@@ -2412,7 +2568,7 @@ value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#value Inspector2Filter#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#value Inspector2Filter#value}.
 
 ---
 
@@ -2433,8 +2589,8 @@ inspector2Filter.Inspector2FilterFilterCriteriaEcrImageHash(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageHash.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageHash.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#value Inspector2Filter#value}. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageHash.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageHash.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#value Inspector2Filter#value}. |
 
 ---
 
@@ -2446,7 +2602,7 @@ comparison: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}.
 
 ---
 
@@ -2458,7 +2614,99 @@ value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#value Inspector2Filter#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#value Inspector2Filter#value}.
+
+---
+
+### Inspector2FilterFilterCriteriaEcrImageInUseCount <a name="Inspector2FilterFilterCriteriaEcrImageInUseCount" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCount"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCount.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_aws import inspector2_filter
+
+inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCount(
+  lower_inclusive: typing.Union[int, float],
+  upper_inclusive: typing.Union[int, float]
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCount.property.lowerInclusive">lower_inclusive</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#lower_inclusive Inspector2Filter#lower_inclusive}. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCount.property.upperInclusive">upper_inclusive</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#upper_inclusive Inspector2Filter#upper_inclusive}. |
+
+---
+
+##### `lower_inclusive`<sup>Required</sup> <a name="lower_inclusive" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCount.property.lowerInclusive"></a>
+
+```python
+lower_inclusive: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#lower_inclusive Inspector2Filter#lower_inclusive}.
+
+---
+
+##### `upper_inclusive`<sup>Required</sup> <a name="upper_inclusive" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCount.property.upperInclusive"></a>
+
+```python
+upper_inclusive: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#upper_inclusive Inspector2Filter#upper_inclusive}.
+
+---
+
+### Inspector2FilterFilterCriteriaEcrImageLastInUseAt <a name="Inspector2FilterFilterCriteriaEcrImageLastInUseAt" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAt"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAt.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_aws import inspector2_filter
+
+inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAt(
+  end_inclusive: str = None,
+  start_inclusive: str = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAt.property.endInclusive">end_inclusive</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#end_inclusive Inspector2Filter#end_inclusive}. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAt.property.startInclusive">start_inclusive</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#start_inclusive Inspector2Filter#start_inclusive}. |
+
+---
+
+##### `end_inclusive`<sup>Optional</sup> <a name="end_inclusive" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAt.property.endInclusive"></a>
+
+```python
+end_inclusive: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#end_inclusive Inspector2Filter#end_inclusive}.
+
+---
+
+##### `start_inclusive`<sup>Optional</sup> <a name="start_inclusive" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAt.property.startInclusive"></a>
+
+```python
+start_inclusive: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#start_inclusive Inspector2Filter#start_inclusive}.
 
 ---
 
@@ -2479,8 +2727,8 @@ inspector2Filter.Inspector2FilterFilterCriteriaEcrImagePushedAt(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImagePushedAt.property.endInclusive">end_inclusive</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#end_inclusive Inspector2Filter#end_inclusive}. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImagePushedAt.property.startInclusive">start_inclusive</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#start_inclusive Inspector2Filter#start_inclusive}. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImagePushedAt.property.endInclusive">end_inclusive</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#end_inclusive Inspector2Filter#end_inclusive}. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImagePushedAt.property.startInclusive">start_inclusive</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#start_inclusive Inspector2Filter#start_inclusive}. |
 
 ---
 
@@ -2492,7 +2740,7 @@ end_inclusive: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#end_inclusive Inspector2Filter#end_inclusive}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#end_inclusive Inspector2Filter#end_inclusive}.
 
 ---
 
@@ -2504,7 +2752,7 @@ start_inclusive: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#start_inclusive Inspector2Filter#start_inclusive}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#start_inclusive Inspector2Filter#start_inclusive}.
 
 ---
 
@@ -2525,8 +2773,8 @@ inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRegistry(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRegistry.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRegistry.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#value Inspector2Filter#value}. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRegistry.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRegistry.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#value Inspector2Filter#value}. |
 
 ---
 
@@ -2538,7 +2786,7 @@ comparison: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}.
 
 ---
 
@@ -2550,7 +2798,7 @@ value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#value Inspector2Filter#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#value Inspector2Filter#value}.
 
 ---
 
@@ -2571,8 +2819,8 @@ inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRepositoryName(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRepositoryName.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRepositoryName.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#value Inspector2Filter#value}. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRepositoryName.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRepositoryName.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#value Inspector2Filter#value}. |
 
 ---
 
@@ -2584,7 +2832,7 @@ comparison: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}.
 
 ---
 
@@ -2596,7 +2844,7 @@ value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#value Inspector2Filter#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#value Inspector2Filter#value}.
 
 ---
 
@@ -2617,8 +2865,8 @@ inspector2Filter.Inspector2FilterFilterCriteriaEcrImageTags(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageTags.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageTags.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#value Inspector2Filter#value}. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageTags.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageTags.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#value Inspector2Filter#value}. |
 
 ---
 
@@ -2630,7 +2878,7 @@ comparison: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}.
 
 ---
 
@@ -2642,7 +2890,7 @@ value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#value Inspector2Filter#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#value Inspector2Filter#value}.
 
 ---
 
@@ -2663,8 +2911,8 @@ inspector2Filter.Inspector2FilterFilterCriteriaEpssScore(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEpssScore.property.lowerInclusive">lower_inclusive</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#lower_inclusive Inspector2Filter#lower_inclusive}. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEpssScore.property.upperInclusive">upper_inclusive</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#upper_inclusive Inspector2Filter#upper_inclusive}. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEpssScore.property.lowerInclusive">lower_inclusive</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#lower_inclusive Inspector2Filter#lower_inclusive}. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEpssScore.property.upperInclusive">upper_inclusive</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#upper_inclusive Inspector2Filter#upper_inclusive}. |
 
 ---
 
@@ -2676,7 +2924,7 @@ lower_inclusive: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#lower_inclusive Inspector2Filter#lower_inclusive}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#lower_inclusive Inspector2Filter#lower_inclusive}.
 
 ---
 
@@ -2688,7 +2936,7 @@ upper_inclusive: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#upper_inclusive Inspector2Filter#upper_inclusive}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#upper_inclusive Inspector2Filter#upper_inclusive}.
 
 ---
 
@@ -2709,8 +2957,8 @@ inspector2Filter.Inspector2FilterFilterCriteriaExploitAvailable(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaExploitAvailable.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaExploitAvailable.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#value Inspector2Filter#value}. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaExploitAvailable.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaExploitAvailable.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#value Inspector2Filter#value}. |
 
 ---
 
@@ -2722,7 +2970,7 @@ comparison: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}.
 
 ---
 
@@ -2734,7 +2982,7 @@ value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#value Inspector2Filter#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#value Inspector2Filter#value}.
 
 ---
 
@@ -2755,8 +3003,8 @@ inspector2Filter.Inspector2FilterFilterCriteriaFindingArn(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingArn.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingArn.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#value Inspector2Filter#value}. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingArn.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingArn.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#value Inspector2Filter#value}. |
 
 ---
 
@@ -2768,7 +3016,7 @@ comparison: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}.
 
 ---
 
@@ -2780,7 +3028,7 @@ value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#value Inspector2Filter#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#value Inspector2Filter#value}.
 
 ---
 
@@ -2801,8 +3049,8 @@ inspector2Filter.Inspector2FilterFilterCriteriaFindingStatus(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingStatus.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingStatus.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#value Inspector2Filter#value}. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingStatus.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingStatus.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#value Inspector2Filter#value}. |
 
 ---
 
@@ -2814,7 +3062,7 @@ comparison: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}.
 
 ---
 
@@ -2826,7 +3074,7 @@ value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#value Inspector2Filter#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#value Inspector2Filter#value}.
 
 ---
 
@@ -2847,8 +3095,8 @@ inspector2Filter.Inspector2FilterFilterCriteriaFindingType(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingType.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingType.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#value Inspector2Filter#value}. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingType.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFindingType.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#value Inspector2Filter#value}. |
 
 ---
 
@@ -2860,7 +3108,7 @@ comparison: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}.
 
 ---
 
@@ -2872,7 +3120,7 @@ value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#value Inspector2Filter#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#value Inspector2Filter#value}.
 
 ---
 
@@ -2893,8 +3141,8 @@ inspector2Filter.Inspector2FilterFilterCriteriaFirstObservedAt(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFirstObservedAt.property.endInclusive">end_inclusive</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#end_inclusive Inspector2Filter#end_inclusive}. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFirstObservedAt.property.startInclusive">start_inclusive</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#start_inclusive Inspector2Filter#start_inclusive}. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFirstObservedAt.property.endInclusive">end_inclusive</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#end_inclusive Inspector2Filter#end_inclusive}. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFirstObservedAt.property.startInclusive">start_inclusive</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#start_inclusive Inspector2Filter#start_inclusive}. |
 
 ---
 
@@ -2906,7 +3154,7 @@ end_inclusive: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#end_inclusive Inspector2Filter#end_inclusive}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#end_inclusive Inspector2Filter#end_inclusive}.
 
 ---
 
@@ -2918,7 +3166,7 @@ start_inclusive: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#start_inclusive Inspector2Filter#start_inclusive}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#start_inclusive Inspector2Filter#start_inclusive}.
 
 ---
 
@@ -2939,8 +3187,8 @@ inspector2Filter.Inspector2FilterFilterCriteriaFixAvailable(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFixAvailable.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFixAvailable.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#value Inspector2Filter#value}. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFixAvailable.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaFixAvailable.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#value Inspector2Filter#value}. |
 
 ---
 
@@ -2952,7 +3200,7 @@ comparison: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}.
 
 ---
 
@@ -2964,7 +3212,7 @@ value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#value Inspector2Filter#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#value Inspector2Filter#value}.
 
 ---
 
@@ -2985,8 +3233,8 @@ inspector2Filter.Inspector2FilterFilterCriteriaInspectorScore(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaInspectorScore.property.lowerInclusive">lower_inclusive</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#lower_inclusive Inspector2Filter#lower_inclusive}. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaInspectorScore.property.upperInclusive">upper_inclusive</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#upper_inclusive Inspector2Filter#upper_inclusive}. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaInspectorScore.property.lowerInclusive">lower_inclusive</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#lower_inclusive Inspector2Filter#lower_inclusive}. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaInspectorScore.property.upperInclusive">upper_inclusive</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#upper_inclusive Inspector2Filter#upper_inclusive}. |
 
 ---
 
@@ -2998,7 +3246,7 @@ lower_inclusive: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#lower_inclusive Inspector2Filter#lower_inclusive}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#lower_inclusive Inspector2Filter#lower_inclusive}.
 
 ---
 
@@ -3010,7 +3258,7 @@ upper_inclusive: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#upper_inclusive Inspector2Filter#upper_inclusive}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#upper_inclusive Inspector2Filter#upper_inclusive}.
 
 ---
 
@@ -3031,8 +3279,8 @@ inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#value Inspector2Filter#value}. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#value Inspector2Filter#value}. |
 
 ---
 
@@ -3044,7 +3292,7 @@ comparison: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}.
 
 ---
 
@@ -3056,7 +3304,7 @@ value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#value Inspector2Filter#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#value Inspector2Filter#value}.
 
 ---
 
@@ -3077,8 +3325,8 @@ inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt.property.endInclusive">end_inclusive</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#end_inclusive Inspector2Filter#end_inclusive}. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt.property.startInclusive">start_inclusive</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#start_inclusive Inspector2Filter#start_inclusive}. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt.property.endInclusive">end_inclusive</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#end_inclusive Inspector2Filter#end_inclusive}. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt.property.startInclusive">start_inclusive</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#start_inclusive Inspector2Filter#start_inclusive}. |
 
 ---
 
@@ -3090,7 +3338,7 @@ end_inclusive: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#end_inclusive Inspector2Filter#end_inclusive}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#end_inclusive Inspector2Filter#end_inclusive}.
 
 ---
 
@@ -3102,7 +3350,7 @@ start_inclusive: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#start_inclusive Inspector2Filter#start_inclusive}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#start_inclusive Inspector2Filter#start_inclusive}.
 
 ---
 
@@ -3123,8 +3371,8 @@ inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLayers(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLayers.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLayers.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#value Inspector2Filter#value}. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLayers.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionLayers.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#value Inspector2Filter#value}. |
 
 ---
 
@@ -3136,7 +3384,7 @@ comparison: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}.
 
 ---
 
@@ -3148,7 +3396,7 @@ value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#value Inspector2Filter#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#value Inspector2Filter#value}.
 
 ---
 
@@ -3169,8 +3417,8 @@ inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionName(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionName.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionName.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#value Inspector2Filter#value}. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionName.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionName.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#value Inspector2Filter#value}. |
 
 ---
 
@@ -3182,7 +3430,7 @@ comparison: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}.
 
 ---
 
@@ -3194,7 +3442,7 @@ value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#value Inspector2Filter#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#value Inspector2Filter#value}.
 
 ---
 
@@ -3215,8 +3463,8 @@ inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionRuntime(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionRuntime.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionRuntime.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#value Inspector2Filter#value}. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionRuntime.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLambdaFunctionRuntime.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#value Inspector2Filter#value}. |
 
 ---
 
@@ -3228,7 +3476,7 @@ comparison: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}.
 
 ---
 
@@ -3240,7 +3488,7 @@ value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#value Inspector2Filter#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#value Inspector2Filter#value}.
 
 ---
 
@@ -3261,8 +3509,8 @@ inspector2Filter.Inspector2FilterFilterCriteriaLastObservedAt(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLastObservedAt.property.endInclusive">end_inclusive</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#end_inclusive Inspector2Filter#end_inclusive}. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLastObservedAt.property.startInclusive">start_inclusive</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#start_inclusive Inspector2Filter#start_inclusive}. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLastObservedAt.property.endInclusive">end_inclusive</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#end_inclusive Inspector2Filter#end_inclusive}. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaLastObservedAt.property.startInclusive">start_inclusive</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#start_inclusive Inspector2Filter#start_inclusive}. |
 
 ---
 
@@ -3274,7 +3522,7 @@ end_inclusive: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#end_inclusive Inspector2Filter#end_inclusive}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#end_inclusive Inspector2Filter#end_inclusive}.
 
 ---
 
@@ -3286,7 +3534,7 @@ start_inclusive: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#start_inclusive Inspector2Filter#start_inclusive}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#start_inclusive Inspector2Filter#start_inclusive}.
 
 ---
 
@@ -3307,8 +3555,8 @@ inspector2Filter.Inspector2FilterFilterCriteriaNetworkProtocol(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaNetworkProtocol.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaNetworkProtocol.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#value Inspector2Filter#value}. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaNetworkProtocol.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaNetworkProtocol.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#value Inspector2Filter#value}. |
 
 ---
 
@@ -3320,7 +3568,7 @@ comparison: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}.
 
 ---
 
@@ -3332,7 +3580,7 @@ value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#value Inspector2Filter#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#value Inspector2Filter#value}.
 
 ---
 
@@ -3353,8 +3601,8 @@ inspector2Filter.Inspector2FilterFilterCriteriaPortRange(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaPortRange.property.beginInclusive">begin_inclusive</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#begin_inclusive Inspector2Filter#begin_inclusive}. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaPortRange.property.endInclusive">end_inclusive</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#end_inclusive Inspector2Filter#end_inclusive}. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaPortRange.property.beginInclusive">begin_inclusive</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#begin_inclusive Inspector2Filter#begin_inclusive}. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaPortRange.property.endInclusive">end_inclusive</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#end_inclusive Inspector2Filter#end_inclusive}. |
 
 ---
 
@@ -3366,7 +3614,7 @@ begin_inclusive: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#begin_inclusive Inspector2Filter#begin_inclusive}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#begin_inclusive Inspector2Filter#begin_inclusive}.
 
 ---
 
@@ -3378,7 +3626,7 @@ end_inclusive: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#end_inclusive Inspector2Filter#end_inclusive}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#end_inclusive Inspector2Filter#end_inclusive}.
 
 ---
 
@@ -3399,8 +3647,8 @@ inspector2Filter.Inspector2FilterFilterCriteriaRelatedVulnerabilities(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaRelatedVulnerabilities.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaRelatedVulnerabilities.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#value Inspector2Filter#value}. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaRelatedVulnerabilities.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaRelatedVulnerabilities.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#value Inspector2Filter#value}. |
 
 ---
 
@@ -3412,7 +3660,7 @@ comparison: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}.
 
 ---
 
@@ -3424,7 +3672,7 @@ value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#value Inspector2Filter#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#value Inspector2Filter#value}.
 
 ---
 
@@ -3445,8 +3693,8 @@ inspector2Filter.Inspector2FilterFilterCriteriaResourceId(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceId.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceId.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#value Inspector2Filter#value}. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceId.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceId.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#value Inspector2Filter#value}. |
 
 ---
 
@@ -3458,7 +3706,7 @@ comparison: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}.
 
 ---
 
@@ -3470,7 +3718,7 @@ value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#value Inspector2Filter#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#value Inspector2Filter#value}.
 
 ---
 
@@ -3492,9 +3740,9 @@ inspector2Filter.Inspector2FilterFilterCriteriaResourceTags(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTags.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTags.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#key Inspector2Filter#key}. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTags.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#value Inspector2Filter#value}. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTags.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTags.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#key Inspector2Filter#key}. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceTags.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#value Inspector2Filter#value}. |
 
 ---
 
@@ -3506,7 +3754,7 @@ comparison: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}.
 
 ---
 
@@ -3518,7 +3766,7 @@ key: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#key Inspector2Filter#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#key Inspector2Filter#key}.
 
 ---
 
@@ -3530,7 +3778,7 @@ value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#value Inspector2Filter#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#value Inspector2Filter#value}.
 
 ---
 
@@ -3551,8 +3799,8 @@ inspector2Filter.Inspector2FilterFilterCriteriaResourceType(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceType.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceType.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#value Inspector2Filter#value}. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceType.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaResourceType.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#value Inspector2Filter#value}. |
 
 ---
 
@@ -3564,7 +3812,7 @@ comparison: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}.
 
 ---
 
@@ -3576,7 +3824,7 @@ value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#value Inspector2Filter#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#value Inspector2Filter#value}.
 
 ---
 
@@ -3597,8 +3845,8 @@ inspector2Filter.Inspector2FilterFilterCriteriaSeverity(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaSeverity.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaSeverity.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#value Inspector2Filter#value}. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaSeverity.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaSeverity.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#value Inspector2Filter#value}. |
 
 ---
 
@@ -3610,7 +3858,7 @@ comparison: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}.
 
 ---
 
@@ -3622,7 +3870,7 @@ value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#value Inspector2Filter#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#value Inspector2Filter#value}.
 
 ---
 
@@ -3643,8 +3891,8 @@ inspector2Filter.Inspector2FilterFilterCriteriaTitle(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaTitle.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaTitle.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#value Inspector2Filter#value}. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaTitle.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaTitle.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#value Inspector2Filter#value}. |
 
 ---
 
@@ -3656,7 +3904,7 @@ comparison: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}.
 
 ---
 
@@ -3668,7 +3916,7 @@ value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#value Inspector2Filter#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#value Inspector2Filter#value}.
 
 ---
 
@@ -3689,8 +3937,8 @@ inspector2Filter.Inspector2FilterFilterCriteriaUpdatedAt(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaUpdatedAt.property.endInclusive">end_inclusive</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#end_inclusive Inspector2Filter#end_inclusive}. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaUpdatedAt.property.startInclusive">start_inclusive</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#start_inclusive Inspector2Filter#start_inclusive}. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaUpdatedAt.property.endInclusive">end_inclusive</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#end_inclusive Inspector2Filter#end_inclusive}. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaUpdatedAt.property.startInclusive">start_inclusive</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#start_inclusive Inspector2Filter#start_inclusive}. |
 
 ---
 
@@ -3702,7 +3950,7 @@ end_inclusive: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#end_inclusive Inspector2Filter#end_inclusive}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#end_inclusive Inspector2Filter#end_inclusive}.
 
 ---
 
@@ -3714,7 +3962,7 @@ start_inclusive: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#start_inclusive Inspector2Filter#start_inclusive}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#start_inclusive Inspector2Filter#start_inclusive}.
 
 ---
 
@@ -3735,8 +3983,8 @@ inspector2Filter.Inspector2FilterFilterCriteriaVendorSeverity(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVendorSeverity.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVendorSeverity.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#value Inspector2Filter#value}. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVendorSeverity.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVendorSeverity.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#value Inspector2Filter#value}. |
 
 ---
 
@@ -3748,7 +3996,7 @@ comparison: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}.
 
 ---
 
@@ -3760,7 +4008,7 @@ value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#value Inspector2Filter#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#value Inspector2Filter#value}.
 
 ---
 
@@ -3781,8 +4029,8 @@ inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilityId(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilityId.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilityId.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#value Inspector2Filter#value}. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilityId.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilityId.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#value Inspector2Filter#value}. |
 
 ---
 
@@ -3794,7 +4042,7 @@ comparison: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}.
 
 ---
 
@@ -3806,7 +4054,7 @@ value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#value Inspector2Filter#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#value Inspector2Filter#value}.
 
 ---
 
@@ -3827,8 +4075,8 @@ inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilitySource(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilitySource.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilitySource.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#value Inspector2Filter#value}. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilitySource.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilitySource.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#value Inspector2Filter#value}. |
 
 ---
 
@@ -3840,7 +4088,7 @@ comparison: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}.
 
 ---
 
@@ -3852,7 +4100,7 @@ value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#value Inspector2Filter#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#value Inspector2Filter#value}.
 
 ---
 
@@ -3900,7 +4148,7 @@ architecture: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriter
 
 architecture block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#architecture Inspector2Filter#architecture}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#architecture Inspector2Filter#architecture}
 
 ---
 
@@ -3914,7 +4162,7 @@ epoch: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaVulne
 
 epoch block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#epoch Inspector2Filter#epoch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#epoch Inspector2Filter#epoch}
 
 ---
 
@@ -3928,7 +4176,7 @@ file_path: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaV
 
 file_path block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#file_path Inspector2Filter#file_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#file_path Inspector2Filter#file_path}
 
 ---
 
@@ -3942,7 +4190,7 @@ name: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaVulner
 
 name block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#name Inspector2Filter#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#name Inspector2Filter#name}
 
 ---
 
@@ -3956,7 +4204,7 @@ release: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaVul
 
 release block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#release Inspector2Filter#release}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#release Inspector2Filter#release}
 
 ---
 
@@ -3970,7 +4218,7 @@ source_lambda_layer_arn: typing.Union[IResolvable, typing.List[Inspector2FilterF
 
 source_lambda_layer_arn block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#source_lambda_layer_arn Inspector2Filter#source_lambda_layer_arn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#source_lambda_layer_arn Inspector2Filter#source_lambda_layer_arn}
 
 ---
 
@@ -3984,7 +4232,7 @@ source_layer_hash: typing.Union[IResolvable, typing.List[Inspector2FilterFilterC
 
 source_layer_hash block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#source_layer_hash Inspector2Filter#source_layer_hash}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#source_layer_hash Inspector2Filter#source_layer_hash}
 
 ---
 
@@ -3998,7 +4246,7 @@ version: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaVul
 
 version block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#version Inspector2Filter#version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#version Inspector2Filter#version}
 
 ---
 
@@ -4019,8 +4267,8 @@ inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#value Inspector2Filter#value}. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#value Inspector2Filter#value}. |
 
 ---
 
@@ -4032,7 +4280,7 @@ comparison: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}.
 
 ---
 
@@ -4044,7 +4292,7 @@ value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#value Inspector2Filter#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#value Inspector2Filter#value}.
 
 ---
 
@@ -4065,8 +4313,8 @@ inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesEpoch(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesEpoch.property.lowerInclusive">lower_inclusive</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#lower_inclusive Inspector2Filter#lower_inclusive}. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesEpoch.property.upperInclusive">upper_inclusive</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#upper_inclusive Inspector2Filter#upper_inclusive}. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesEpoch.property.lowerInclusive">lower_inclusive</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#lower_inclusive Inspector2Filter#lower_inclusive}. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesEpoch.property.upperInclusive">upper_inclusive</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#upper_inclusive Inspector2Filter#upper_inclusive}. |
 
 ---
 
@@ -4078,7 +4326,7 @@ lower_inclusive: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#lower_inclusive Inspector2Filter#lower_inclusive}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#lower_inclusive Inspector2Filter#lower_inclusive}.
 
 ---
 
@@ -4090,7 +4338,7 @@ upper_inclusive: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#upper_inclusive Inspector2Filter#upper_inclusive}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#upper_inclusive Inspector2Filter#upper_inclusive}.
 
 ---
 
@@ -4111,8 +4359,8 @@ inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesFilePath(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesFilePath.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesFilePath.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#value Inspector2Filter#value}. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesFilePath.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesFilePath.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#value Inspector2Filter#value}. |
 
 ---
 
@@ -4124,7 +4372,7 @@ comparison: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}.
 
 ---
 
@@ -4136,7 +4384,7 @@ value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#value Inspector2Filter#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#value Inspector2Filter#value}.
 
 ---
 
@@ -4157,8 +4405,8 @@ inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesName(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesName.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesName.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#value Inspector2Filter#value}. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesName.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesName.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#value Inspector2Filter#value}. |
 
 ---
 
@@ -4170,7 +4418,7 @@ comparison: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}.
 
 ---
 
@@ -4182,7 +4430,7 @@ value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#value Inspector2Filter#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#value Inspector2Filter#value}.
 
 ---
 
@@ -4203,8 +4451,8 @@ inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesRelease(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesRelease.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesRelease.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#value Inspector2Filter#value}. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesRelease.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesRelease.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#value Inspector2Filter#value}. |
 
 ---
 
@@ -4216,7 +4464,7 @@ comparison: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}.
 
 ---
 
@@ -4228,7 +4476,7 @@ value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#value Inspector2Filter#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#value Inspector2Filter#value}.
 
 ---
 
@@ -4249,8 +4497,8 @@ inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLay
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#value Inspector2Filter#value}. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#value Inspector2Filter#value}. |
 
 ---
 
@@ -4262,7 +4510,7 @@ comparison: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}.
 
 ---
 
@@ -4274,7 +4522,7 @@ value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#value Inspector2Filter#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#value Inspector2Filter#value}.
 
 ---
 
@@ -4295,8 +4543,8 @@ inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#value Inspector2Filter#value}. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#value Inspector2Filter#value}. |
 
 ---
 
@@ -4308,7 +4556,7 @@ comparison: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}.
 
 ---
 
@@ -4320,7 +4568,7 @@ value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#value Inspector2Filter#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#value Inspector2Filter#value}.
 
 ---
 
@@ -4341,8 +4589,8 @@ inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesVersion(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesVersion.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}. |
-| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesVersion.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#value Inspector2Filter#value}. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesVersion.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesVersion.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#value Inspector2Filter#value}. |
 
 ---
 
@@ -4354,7 +4602,7 @@ comparison: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}.
 
 ---
 
@@ -4366,7 +4614,7 @@ value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#value Inspector2Filter#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#value Inspector2Filter#value}.
 
 ---
 
@@ -4876,6 +5124,1022 @@ internal_value: typing.Union[IResolvable, Inspector2FilterFilterCriteriaAwsAccou
 ```
 
 - *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaAwsAccountId">Inspector2FilterFilterCriteriaAwsAccountId</a>]
+
+---
+
+
+### Inspector2FilterFilterCriteriaCodeRepositoryProjectNameList <a name="Inspector2FilterFilterCriteriaCodeRepositoryProjectNameList" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameList.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_aws import inspector2_filter
+
+inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameList(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  wraps_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameList.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameList.get">get</a></code> | *No description.* |
+
+---
+
+##### `all_with_map_key` <a name="all_with_map_key" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameList.allWithMapKey"></a>
+
+```python
+def all_with_map_key(
+  map_key_attribute_name: str
+) -> DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* str
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameList.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameList.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameList.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameList.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameList.get"></a>
+
+```python
+def get(
+  index: typing.Union[int, float]
+) -> Inspector2FilterFilterCriteriaCodeRepositoryProjectNameOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameList.get.parameter.index"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectName">Inspector2FilterFilterCriteriaCodeRepositoryProjectName</a>]]</code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameList.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameList.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameList.property.internalValue"></a>
+
+```python
+internal_value: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaCodeRepositoryProjectName]]
+```
+
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectName">Inspector2FilterFilterCriteriaCodeRepositoryProjectName</a>]]
+
+---
+
+
+### Inspector2FilterFilterCriteriaCodeRepositoryProjectNameOutputReference <a name="Inspector2FilterFilterCriteriaCodeRepositoryProjectNameOutputReference" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameOutputReference.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_aws import inspector2_filter
+
+inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  complex_object_index: typing.Union[int, float],
+  complex_object_is_from_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of this item in the list.
+
+---
+
+##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameOutputReference.property.comparisonInput">comparison_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectName">Inspector2FilterFilterCriteriaCodeRepositoryProjectName</a>]</code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `comparison_input`<sup>Optional</sup> <a name="comparison_input" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameOutputReference.property.comparisonInput"></a>
+
+```python
+comparison_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `value_input`<sup>Optional</sup> <a name="value_input" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameOutputReference.property.valueInput"></a>
+
+```python
+value_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `comparison`<sup>Required</sup> <a name="comparison" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameOutputReference.property.comparison"></a>
+
+```python
+comparison: str
+```
+
+- *Type:* str
+
+---
+
+##### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameOutputReference.property.value"></a>
+
+```python
+value: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameOutputReference.property.internalValue"></a>
+
+```python
+internal_value: typing.Union[IResolvable, Inspector2FilterFilterCriteriaCodeRepositoryProjectName]
+```
+
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectName">Inspector2FilterFilterCriteriaCodeRepositoryProjectName</a>]
+
+---
+
+
+### Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeList <a name="Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeList" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeList.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_aws import inspector2_filter
+
+inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeList(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  wraps_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeList.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeList.get">get</a></code> | *No description.* |
+
+---
+
+##### `all_with_map_key` <a name="all_with_map_key" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeList.allWithMapKey"></a>
+
+```python
+def all_with_map_key(
+  map_key_attribute_name: str
+) -> DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* str
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeList.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeList.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeList.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeList.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeList.get"></a>
+
+```python
+def get(
+  index: typing.Union[int, float]
+) -> Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeList.get.parameter.index"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderType">Inspector2FilterFilterCriteriaCodeRepositoryProviderType</a>]]</code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeList.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeList.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeList.property.internalValue"></a>
+
+```python
+internal_value: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaCodeRepositoryProviderType]]
+```
+
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderType">Inspector2FilterFilterCriteriaCodeRepositoryProviderType</a>]]
+
+---
+
+
+### Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeOutputReference <a name="Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeOutputReference" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeOutputReference.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_aws import inspector2_filter
+
+inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  complex_object_index: typing.Union[int, float],
+  complex_object_is_from_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of this item in the list.
+
+---
+
+##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeOutputReference.property.comparisonInput">comparison_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeOutputReference.property.comparison">comparison</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderType">Inspector2FilterFilterCriteriaCodeRepositoryProviderType</a>]</code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `comparison_input`<sup>Optional</sup> <a name="comparison_input" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeOutputReference.property.comparisonInput"></a>
+
+```python
+comparison_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `value_input`<sup>Optional</sup> <a name="value_input" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeOutputReference.property.valueInput"></a>
+
+```python
+value_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `comparison`<sup>Required</sup> <a name="comparison" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeOutputReference.property.comparison"></a>
+
+```python
+comparison: str
+```
+
+- *Type:* str
+
+---
+
+##### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeOutputReference.property.value"></a>
+
+```python
+value: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeOutputReference.property.internalValue"></a>
+
+```python
+internal_value: typing.Union[IResolvable, Inspector2FilterFilterCriteriaCodeRepositoryProviderType]
+```
+
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderType">Inspector2FilterFilterCriteriaCodeRepositoryProviderType</a>]
 
 ---
 
@@ -9956,6 +11220,1036 @@ internal_value: typing.Union[IResolvable, Inspector2FilterFilterCriteriaEcrImage
 ```
 
 - *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageHash">Inspector2FilterFilterCriteriaEcrImageHash</a>]
+
+---
+
+
+### Inspector2FilterFilterCriteriaEcrImageInUseCountList <a name="Inspector2FilterFilterCriteriaEcrImageInUseCountList" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountList.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_aws import inspector2_filter
+
+inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountList(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  wraps_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountList.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountList.get">get</a></code> | *No description.* |
+
+---
+
+##### `all_with_map_key` <a name="all_with_map_key" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountList.allWithMapKey"></a>
+
+```python
+def all_with_map_key(
+  map_key_attribute_name: str
+) -> DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* str
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountList.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountList.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountList.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountList.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountList.get"></a>
+
+```python
+def get(
+  index: typing.Union[int, float]
+) -> Inspector2FilterFilterCriteriaEcrImageInUseCountOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountList.get.parameter.index"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCount">Inspector2FilterFilterCriteriaEcrImageInUseCount</a>]]</code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountList.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountList.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountList.property.internalValue"></a>
+
+```python
+internal_value: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaEcrImageInUseCount]]
+```
+
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCount">Inspector2FilterFilterCriteriaEcrImageInUseCount</a>]]
+
+---
+
+
+### Inspector2FilterFilterCriteriaEcrImageInUseCountOutputReference <a name="Inspector2FilterFilterCriteriaEcrImageInUseCountOutputReference" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountOutputReference.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_aws import inspector2_filter
+
+inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  complex_object_index: typing.Union[int, float],
+  complex_object_is_from_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of this item in the list.
+
+---
+
+##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountOutputReference.property.lowerInclusiveInput">lower_inclusive_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountOutputReference.property.upperInclusiveInput">upper_inclusive_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountOutputReference.property.lowerInclusive">lower_inclusive</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountOutputReference.property.upperInclusive">upper_inclusive</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCount">Inspector2FilterFilterCriteriaEcrImageInUseCount</a>]</code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `lower_inclusive_input`<sup>Optional</sup> <a name="lower_inclusive_input" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountOutputReference.property.lowerInclusiveInput"></a>
+
+```python
+lower_inclusive_input: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `upper_inclusive_input`<sup>Optional</sup> <a name="upper_inclusive_input" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountOutputReference.property.upperInclusiveInput"></a>
+
+```python
+upper_inclusive_input: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `lower_inclusive`<sup>Required</sup> <a name="lower_inclusive" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountOutputReference.property.lowerInclusive"></a>
+
+```python
+lower_inclusive: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `upper_inclusive`<sup>Required</sup> <a name="upper_inclusive" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountOutputReference.property.upperInclusive"></a>
+
+```python
+upper_inclusive: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountOutputReference.property.internalValue"></a>
+
+```python
+internal_value: typing.Union[IResolvable, Inspector2FilterFilterCriteriaEcrImageInUseCount]
+```
+
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCount">Inspector2FilterFilterCriteriaEcrImageInUseCount</a>]
+
+---
+
+
+### Inspector2FilterFilterCriteriaEcrImageLastInUseAtList <a name="Inspector2FilterFilterCriteriaEcrImageLastInUseAtList" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtList.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_aws import inspector2_filter
+
+inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtList(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  wraps_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtList.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtList.get">get</a></code> | *No description.* |
+
+---
+
+##### `all_with_map_key` <a name="all_with_map_key" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtList.allWithMapKey"></a>
+
+```python
+def all_with_map_key(
+  map_key_attribute_name: str
+) -> DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* str
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtList.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtList.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtList.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtList.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtList.get"></a>
+
+```python
+def get(
+  index: typing.Union[int, float]
+) -> Inspector2FilterFilterCriteriaEcrImageLastInUseAtOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtList.get.parameter.index"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAt">Inspector2FilterFilterCriteriaEcrImageLastInUseAt</a>]]</code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtList.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtList.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtList.property.internalValue"></a>
+
+```python
+internal_value: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaEcrImageLastInUseAt]]
+```
+
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAt">Inspector2FilterFilterCriteriaEcrImageLastInUseAt</a>]]
+
+---
+
+
+### Inspector2FilterFilterCriteriaEcrImageLastInUseAtOutputReference <a name="Inspector2FilterFilterCriteriaEcrImageLastInUseAtOutputReference" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtOutputReference.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_aws import inspector2_filter
+
+inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  complex_object_index: typing.Union[int, float],
+  complex_object_is_from_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of this item in the list.
+
+---
+
+##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtOutputReference.resetEndInclusive">reset_end_inclusive</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtOutputReference.resetStartInclusive">reset_start_inclusive</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `reset_end_inclusive` <a name="reset_end_inclusive" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtOutputReference.resetEndInclusive"></a>
+
+```python
+def reset_end_inclusive() -> None
+```
+
+##### `reset_start_inclusive` <a name="reset_start_inclusive" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtOutputReference.resetStartInclusive"></a>
+
+```python
+def reset_start_inclusive() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtOutputReference.property.endInclusiveInput">end_inclusive_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtOutputReference.property.startInclusiveInput">start_inclusive_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtOutputReference.property.endInclusive">end_inclusive</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtOutputReference.property.startInclusive">start_inclusive</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAt">Inspector2FilterFilterCriteriaEcrImageLastInUseAt</a>]</code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `end_inclusive_input`<sup>Optional</sup> <a name="end_inclusive_input" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtOutputReference.property.endInclusiveInput"></a>
+
+```python
+end_inclusive_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `start_inclusive_input`<sup>Optional</sup> <a name="start_inclusive_input" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtOutputReference.property.startInclusiveInput"></a>
+
+```python
+start_inclusive_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `end_inclusive`<sup>Required</sup> <a name="end_inclusive" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtOutputReference.property.endInclusive"></a>
+
+```python
+end_inclusive: str
+```
+
+- *Type:* str
+
+---
+
+##### `start_inclusive`<sup>Required</sup> <a name="start_inclusive" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtOutputReference.property.startInclusive"></a>
+
+```python
+start_inclusive: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtOutputReference.property.internalValue"></a>
+
+```python
+internal_value: typing.Union[IResolvable, Inspector2FilterFilterCriteriaEcrImageLastInUseAt]
+```
+
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAt">Inspector2FilterFilterCriteriaEcrImageLastInUseAt</a>]
 
 ---
 
@@ -19912,6 +22206,8 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putAwsAccountId">put_aws_account_id</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putCodeRepositoryProjectName">put_code_repository_project_name</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putCodeRepositoryProviderType">put_code_repository_provider_type</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putCodeVulnerabilityDetectorName">put_code_vulnerability_detector_name</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putCodeVulnerabilityDetectorTags">put_code_vulnerability_detector_tags</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putCodeVulnerabilityFilePath">put_code_vulnerability_file_path</a></code> | *No description.* |
@@ -19922,6 +22218,8 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putEc2InstanceVpcId">put_ec2_instance_vpc_id</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putEcrImageArchitecture">put_ecr_image_architecture</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putEcrImageHash">put_ecr_image_hash</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putEcrImageInUseCount">put_ecr_image_in_use_count</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putEcrImageLastInUseAt">put_ecr_image_last_in_use_at</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putEcrImagePushedAt">put_ecr_image_pushed_at</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putEcrImageRegistry">put_ecr_image_registry</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putEcrImageRepositoryName">put_ecr_image_repository_name</a></code> | *No description.* |
@@ -19954,6 +22252,8 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putVulnerabilitySource">put_vulnerability_source</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putVulnerablePackages">put_vulnerable_packages</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.resetAwsAccountId">reset_aws_account_id</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.resetCodeRepositoryProjectName">reset_code_repository_project_name</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.resetCodeRepositoryProviderType">reset_code_repository_provider_type</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.resetCodeVulnerabilityDetectorName">reset_code_vulnerability_detector_name</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.resetCodeVulnerabilityDetectorTags">reset_code_vulnerability_detector_tags</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.resetCodeVulnerabilityFilePath">reset_code_vulnerability_file_path</a></code> | *No description.* |
@@ -19964,6 +22264,8 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.resetEc2InstanceVpcId">reset_ec2_instance_vpc_id</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.resetEcrImageArchitecture">reset_ecr_image_architecture</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.resetEcrImageHash">reset_ecr_image_hash</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.resetEcrImageInUseCount">reset_ecr_image_in_use_count</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.resetEcrImageLastInUseAt">reset_ecr_image_last_in_use_at</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.resetEcrImagePushedAt">reset_ecr_image_pushed_at</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.resetEcrImageRegistry">reset_ecr_image_registry</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.resetEcrImageRepositoryName">reset_ecr_image_repository_name</a></code> | *No description.* |
@@ -20184,6 +22486,34 @@ def put_aws_account_id(
 
 ---
 
+##### `put_code_repository_project_name` <a name="put_code_repository_project_name" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putCodeRepositoryProjectName"></a>
+
+```python
+def put_code_repository_project_name(
+  value: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaCodeRepositoryProjectName]]
+) -> None
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putCodeRepositoryProjectName.parameter.value"></a>
+
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectName">Inspector2FilterFilterCriteriaCodeRepositoryProjectName</a>]]
+
+---
+
+##### `put_code_repository_provider_type` <a name="put_code_repository_provider_type" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putCodeRepositoryProviderType"></a>
+
+```python
+def put_code_repository_provider_type(
+  value: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaCodeRepositoryProviderType]]
+) -> None
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putCodeRepositoryProviderType.parameter.value"></a>
+
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderType">Inspector2FilterFilterCriteriaCodeRepositoryProviderType</a>]]
+
+---
+
 ##### `put_code_vulnerability_detector_name` <a name="put_code_vulnerability_detector_name" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putCodeVulnerabilityDetectorName"></a>
 
 ```python
@@ -20321,6 +22651,34 @@ def put_ecr_image_hash(
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putEcrImageHash.parameter.value"></a>
 
 - *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageHash">Inspector2FilterFilterCriteriaEcrImageHash</a>]]
+
+---
+
+##### `put_ecr_image_in_use_count` <a name="put_ecr_image_in_use_count" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putEcrImageInUseCount"></a>
+
+```python
+def put_ecr_image_in_use_count(
+  value: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaEcrImageInUseCount]]
+) -> None
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putEcrImageInUseCount.parameter.value"></a>
+
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCount">Inspector2FilterFilterCriteriaEcrImageInUseCount</a>]]
+
+---
+
+##### `put_ecr_image_last_in_use_at` <a name="put_ecr_image_last_in_use_at" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putEcrImageLastInUseAt"></a>
+
+```python
+def put_ecr_image_last_in_use_at(
+  value: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaEcrImageLastInUseAt]]
+) -> None
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.putEcrImageLastInUseAt.parameter.value"></a>
+
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAt">Inspector2FilterFilterCriteriaEcrImageLastInUseAt</a>]]
 
 ---
 
@@ -20764,6 +23122,18 @@ def put_vulnerable_packages(
 def reset_aws_account_id() -> None
 ```
 
+##### `reset_code_repository_project_name` <a name="reset_code_repository_project_name" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.resetCodeRepositoryProjectName"></a>
+
+```python
+def reset_code_repository_project_name() -> None
+```
+
+##### `reset_code_repository_provider_type` <a name="reset_code_repository_provider_type" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.resetCodeRepositoryProviderType"></a>
+
+```python
+def reset_code_repository_provider_type() -> None
+```
+
 ##### `reset_code_vulnerability_detector_name` <a name="reset_code_vulnerability_detector_name" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.resetCodeVulnerabilityDetectorName"></a>
 
 ```python
@@ -20822,6 +23192,18 @@ def reset_ecr_image_architecture() -> None
 
 ```python
 def reset_ecr_image_hash() -> None
+```
+
+##### `reset_ecr_image_in_use_count` <a name="reset_ecr_image_in_use_count" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.resetEcrImageInUseCount"></a>
+
+```python
+def reset_ecr_image_in_use_count() -> None
+```
+
+##### `reset_ecr_image_last_in_use_at` <a name="reset_ecr_image_last_in_use_at" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.resetEcrImageLastInUseAt"></a>
+
+```python
+def reset_ecr_image_last_in_use_at() -> None
 ```
 
 ##### `reset_ecr_image_pushed_at` <a name="reset_ecr_image_pushed_at" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.resetEcrImagePushedAt"></a>
@@ -21018,6 +23400,8 @@ def reset_vulnerable_packages() -> None
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.awsAccountId">aws_account_id</a></code> | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaAwsAccountIdList">Inspector2FilterFilterCriteriaAwsAccountIdList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.codeRepositoryProjectName">code_repository_project_name</a></code> | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameList">Inspector2FilterFilterCriteriaCodeRepositoryProjectNameList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.codeRepositoryProviderType">code_repository_provider_type</a></code> | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeList">Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.codeVulnerabilityDetectorName">code_vulnerability_detector_name</a></code> | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorNameList">Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorNameList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.codeVulnerabilityDetectorTags">code_vulnerability_detector_tags</a></code> | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTagsList">Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTagsList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.codeVulnerabilityFilePath">code_vulnerability_file_path</a></code> | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityFilePathList">Inspector2FilterFilterCriteriaCodeVulnerabilityFilePathList</a></code> | *No description.* |
@@ -21028,6 +23412,8 @@ def reset_vulnerable_packages() -> None
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.ec2InstanceVpcId">ec2_instance_vpc_id</a></code> | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceVpcIdList">Inspector2FilterFilterCriteriaEc2InstanceVpcIdList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.ecrImageArchitecture">ecr_image_architecture</a></code> | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageArchitectureList">Inspector2FilterFilterCriteriaEcrImageArchitectureList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.ecrImageHash">ecr_image_hash</a></code> | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageHashList">Inspector2FilterFilterCriteriaEcrImageHashList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.ecrImageInUseCount">ecr_image_in_use_count</a></code> | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountList">Inspector2FilterFilterCriteriaEcrImageInUseCountList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.ecrImageLastInUseAt">ecr_image_last_in_use_at</a></code> | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtList">Inspector2FilterFilterCriteriaEcrImageLastInUseAtList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.ecrImagePushedAt">ecr_image_pushed_at</a></code> | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImagePushedAtList">Inspector2FilterFilterCriteriaEcrImagePushedAtList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.ecrImageRegistry">ecr_image_registry</a></code> | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRegistryList">Inspector2FilterFilterCriteriaEcrImageRegistryList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.ecrImageRepositoryName">ecr_image_repository_name</a></code> | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRepositoryNameList">Inspector2FilterFilterCriteriaEcrImageRepositoryNameList</a></code> | *No description.* |
@@ -21060,6 +23446,8 @@ def reset_vulnerable_packages() -> None
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.vulnerabilitySource">vulnerability_source</a></code> | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerabilitySourceList">Inspector2FilterFilterCriteriaVulnerabilitySourceList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.vulnerablePackages">vulnerable_packages</a></code> | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaVulnerablePackagesList">Inspector2FilterFilterCriteriaVulnerablePackagesList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.awsAccountIdInput">aws_account_id_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaAwsAccountId">Inspector2FilterFilterCriteriaAwsAccountId</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.codeRepositoryProjectNameInput">code_repository_project_name_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectName">Inspector2FilterFilterCriteriaCodeRepositoryProjectName</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.codeRepositoryProviderTypeInput">code_repository_provider_type_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderType">Inspector2FilterFilterCriteriaCodeRepositoryProviderType</a>]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.codeVulnerabilityDetectorNameInput">code_vulnerability_detector_name_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName">Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName</a>]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.codeVulnerabilityDetectorTagsInput">code_vulnerability_detector_tags_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags">Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags</a>]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.codeVulnerabilityFilePathInput">code_vulnerability_file_path_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath">Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath</a>]]</code> | *No description.* |
@@ -21070,6 +23458,8 @@ def reset_vulnerable_packages() -> None
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.ec2InstanceVpcIdInput">ec2_instance_vpc_id_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEc2InstanceVpcId">Inspector2FilterFilterCriteriaEc2InstanceVpcId</a>]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.ecrImageArchitectureInput">ecr_image_architecture_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageArchitecture">Inspector2FilterFilterCriteriaEcrImageArchitecture</a>]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.ecrImageHashInput">ecr_image_hash_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageHash">Inspector2FilterFilterCriteriaEcrImageHash</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.ecrImageInUseCountInput">ecr_image_in_use_count_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCount">Inspector2FilterFilterCriteriaEcrImageInUseCount</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.ecrImageLastInUseAtInput">ecr_image_last_in_use_at_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAt">Inspector2FilterFilterCriteriaEcrImageLastInUseAt</a>]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.ecrImagePushedAtInput">ecr_image_pushed_at_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImagePushedAt">Inspector2FilterFilterCriteriaEcrImagePushedAt</a>]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.ecrImageRegistryInput">ecr_image_registry_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRegistry">Inspector2FilterFilterCriteriaEcrImageRegistry</a>]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.ecrImageRepositoryNameInput">ecr_image_repository_name_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageRepositoryName">Inspector2FilterFilterCriteriaEcrImageRepositoryName</a>]]</code> | *No description.* |
@@ -21136,6 +23526,26 @@ aws_account_id: Inspector2FilterFilterCriteriaAwsAccountIdList
 ```
 
 - *Type:* <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaAwsAccountIdList">Inspector2FilterFilterCriteriaAwsAccountIdList</a>
+
+---
+
+##### `code_repository_project_name`<sup>Required</sup> <a name="code_repository_project_name" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.codeRepositoryProjectName"></a>
+
+```python
+code_repository_project_name: Inspector2FilterFilterCriteriaCodeRepositoryProjectNameList
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameList">Inspector2FilterFilterCriteriaCodeRepositoryProjectNameList</a>
+
+---
+
+##### `code_repository_provider_type`<sup>Required</sup> <a name="code_repository_provider_type" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.codeRepositoryProviderType"></a>
+
+```python
+code_repository_provider_type: Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeList
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeList">Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeList</a>
 
 ---
 
@@ -21236,6 +23646,26 @@ ecr_image_hash: Inspector2FilterFilterCriteriaEcrImageHashList
 ```
 
 - *Type:* <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageHashList">Inspector2FilterFilterCriteriaEcrImageHashList</a>
+
+---
+
+##### `ecr_image_in_use_count`<sup>Required</sup> <a name="ecr_image_in_use_count" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.ecrImageInUseCount"></a>
+
+```python
+ecr_image_in_use_count: Inspector2FilterFilterCriteriaEcrImageInUseCountList
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountList">Inspector2FilterFilterCriteriaEcrImageInUseCountList</a>
+
+---
+
+##### `ecr_image_last_in_use_at`<sup>Required</sup> <a name="ecr_image_last_in_use_at" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.ecrImageLastInUseAt"></a>
+
+```python
+ecr_image_last_in_use_at: Inspector2FilterFilterCriteriaEcrImageLastInUseAtList
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtList">Inspector2FilterFilterCriteriaEcrImageLastInUseAtList</a>
 
 ---
 
@@ -21559,6 +23989,26 @@ aws_account_id_input: typing.Union[IResolvable, typing.List[Inspector2FilterFilt
 
 ---
 
+##### `code_repository_project_name_input`<sup>Optional</sup> <a name="code_repository_project_name_input" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.codeRepositoryProjectNameInput"></a>
+
+```python
+code_repository_project_name_input: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaCodeRepositoryProjectName]]
+```
+
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectName">Inspector2FilterFilterCriteriaCodeRepositoryProjectName</a>]]
+
+---
+
+##### `code_repository_provider_type_input`<sup>Optional</sup> <a name="code_repository_provider_type_input" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.codeRepositoryProviderTypeInput"></a>
+
+```python
+code_repository_provider_type_input: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaCodeRepositoryProviderType]]
+```
+
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderType">Inspector2FilterFilterCriteriaCodeRepositoryProviderType</a>]]
+
+---
+
 ##### `code_vulnerability_detector_name_input`<sup>Optional</sup> <a name="code_vulnerability_detector_name_input" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.codeVulnerabilityDetectorNameInput"></a>
 
 ```python
@@ -21656,6 +24106,26 @@ ecr_image_hash_input: typing.Union[IResolvable, typing.List[Inspector2FilterFilt
 ```
 
 - *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageHash">Inspector2FilterFilterCriteriaEcrImageHash</a>]]
+
+---
+
+##### `ecr_image_in_use_count_input`<sup>Optional</sup> <a name="ecr_image_in_use_count_input" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.ecrImageInUseCountInput"></a>
+
+```python
+ecr_image_in_use_count_input: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaEcrImageInUseCount]]
+```
+
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCount">Inspector2FilterFilterCriteriaEcrImageInUseCount</a>]]
+
+---
+
+##### `ecr_image_last_in_use_at_input`<sup>Optional</sup> <a name="ecr_image_last_in_use_at_input" id="@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaOutputReference.property.ecrImageLastInUseAtInput"></a>
+
+```python
+ecr_image_last_in_use_at_input: typing.Union[IResolvable, typing.List[Inspector2FilterFilterCriteriaEcrImageLastInUseAt]]
+```
+
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAt">Inspector2FilterFilterCriteriaEcrImageLastInUseAt</a>]]
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### KmsExternalKey <a name="KmsExternalKey" id="@cdktf/provider-aws.kmsExternalKey.KmsExternalKey"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/kms_external_key aws_kms_external_key}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/kms_external_key aws_kms_external_key}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kmsExternalKey.KmsExternalKey.Initializer"></a>
 
@@ -79,6 +79,8 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.kmsExternalKey.KmsExternalKey.resetEnabled">resetEnabled</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.kmsExternalKey.KmsExternalKey.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.kmsExternalKey.KmsExternalKey.resetKeyMaterialBase64">resetKeyMaterialBase64</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.kmsExternalKey.KmsExternalKey.resetKeySpec">resetKeySpec</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.kmsExternalKey.KmsExternalKey.resetKeyUsage">resetKeyUsage</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.kmsExternalKey.KmsExternalKey.resetMultiRegion">resetMultiRegion</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.kmsExternalKey.KmsExternalKey.resetPolicy">resetPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.kmsExternalKey.KmsExternalKey.resetRegion">resetRegion</a></code> | *No description.* |
@@ -412,6 +414,18 @@ public resetId(): void
 public resetKeyMaterialBase64(): void
 ```
 
+##### `resetKeySpec` <a name="resetKeySpec" id="@cdktf/provider-aws.kmsExternalKey.KmsExternalKey.resetKeySpec"></a>
+
+```typescript
+public resetKeySpec(): void
+```
+
+##### `resetKeyUsage` <a name="resetKeyUsage" id="@cdktf/provider-aws.kmsExternalKey.KmsExternalKey.resetKeyUsage"></a>
+
+```typescript
+public resetKeyUsage(): void
+```
+
 ##### `resetMultiRegion` <a name="resetMultiRegion" id="@cdktf/provider-aws.kmsExternalKey.KmsExternalKey.resetMultiRegion"></a>
 
 ```typescript
@@ -551,7 +565,7 @@ The construct id used in the generated config for the KmsExternalKey to import.
 
 The id of the existing KmsExternalKey that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/kms_external_key#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/kms_external_key#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -584,13 +598,14 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0
 | <code><a href="#@cdktf/provider-aws.kmsExternalKey.KmsExternalKey.property.arn">arn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.kmsExternalKey.KmsExternalKey.property.expirationModel">expirationModel</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.kmsExternalKey.KmsExternalKey.property.keyState">keyState</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.kmsExternalKey.KmsExternalKey.property.keyUsage">keyUsage</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.kmsExternalKey.KmsExternalKey.property.bypassPolicyLockoutSafetyCheckInput">bypassPolicyLockoutSafetyCheckInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.kmsExternalKey.KmsExternalKey.property.deletionWindowInDaysInput">deletionWindowInDaysInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.kmsExternalKey.KmsExternalKey.property.descriptionInput">descriptionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.kmsExternalKey.KmsExternalKey.property.enabledInput">enabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.kmsExternalKey.KmsExternalKey.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.kmsExternalKey.KmsExternalKey.property.keyMaterialBase64Input">keyMaterialBase64Input</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.kmsExternalKey.KmsExternalKey.property.keySpecInput">keySpecInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.kmsExternalKey.KmsExternalKey.property.keyUsageInput">keyUsageInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.kmsExternalKey.KmsExternalKey.property.multiRegionInput">multiRegionInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.kmsExternalKey.KmsExternalKey.property.policyInput">policyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.kmsExternalKey.KmsExternalKey.property.regionInput">regionInput</a></code> | <code>string</code> | *No description.* |
@@ -603,6 +618,8 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0
 | <code><a href="#@cdktf/provider-aws.kmsExternalKey.KmsExternalKey.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.kmsExternalKey.KmsExternalKey.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.kmsExternalKey.KmsExternalKey.property.keyMaterialBase64">keyMaterialBase64</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.kmsExternalKey.KmsExternalKey.property.keySpec">keySpec</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.kmsExternalKey.KmsExternalKey.property.keyUsage">keyUsage</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.kmsExternalKey.KmsExternalKey.property.multiRegion">multiRegion</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.kmsExternalKey.KmsExternalKey.property.policy">policy</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.kmsExternalKey.KmsExternalKey.property.region">region</a></code> | <code>string</code> | *No description.* |
@@ -784,16 +801,6 @@ public readonly keyState: string;
 
 ---
 
-##### `keyUsage`<sup>Required</sup> <a name="keyUsage" id="@cdktf/provider-aws.kmsExternalKey.KmsExternalKey.property.keyUsage"></a>
-
-```typescript
-public readonly keyUsage: string;
-```
-
-- *Type:* string
-
----
-
 ##### `bypassPolicyLockoutSafetyCheckInput`<sup>Optional</sup> <a name="bypassPolicyLockoutSafetyCheckInput" id="@cdktf/provider-aws.kmsExternalKey.KmsExternalKey.property.bypassPolicyLockoutSafetyCheckInput"></a>
 
 ```typescript
@@ -848,6 +855,26 @@ public readonly idInput: string;
 
 ```typescript
 public readonly keyMaterialBase64Input: string;
+```
+
+- *Type:* string
+
+---
+
+##### `keySpecInput`<sup>Optional</sup> <a name="keySpecInput" id="@cdktf/provider-aws.kmsExternalKey.KmsExternalKey.property.keySpecInput"></a>
+
+```typescript
+public readonly keySpecInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `keyUsageInput`<sup>Optional</sup> <a name="keyUsageInput" id="@cdktf/provider-aws.kmsExternalKey.KmsExternalKey.property.keyUsageInput"></a>
+
+```typescript
+public readonly keyUsageInput: string;
 ```
 
 - *Type:* string
@@ -974,6 +1001,26 @@ public readonly keyMaterialBase64: string;
 
 ---
 
+##### `keySpec`<sup>Required</sup> <a name="keySpec" id="@cdktf/provider-aws.kmsExternalKey.KmsExternalKey.property.keySpec"></a>
+
+```typescript
+public readonly keySpec: string;
+```
+
+- *Type:* string
+
+---
+
+##### `keyUsage`<sup>Required</sup> <a name="keyUsage" id="@cdktf/provider-aws.kmsExternalKey.KmsExternalKey.property.keyUsage"></a>
+
+```typescript
+public readonly keyUsage: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `multiRegion`<sup>Required</sup> <a name="multiRegion" id="@cdktf/provider-aws.kmsExternalKey.KmsExternalKey.property.multiRegion"></a>
 
 ```typescript
@@ -1075,18 +1122,20 @@ const kmsExternalKeyConfig: kmsExternalKey.KmsExternalKeyConfig = { ... }
 | <code><a href="#@cdktf/provider-aws.kmsExternalKey.KmsExternalKeyConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.kmsExternalKey.KmsExternalKeyConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.kmsExternalKey.KmsExternalKeyConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.kmsExternalKey.KmsExternalKeyConfig.property.bypassPolicyLockoutSafetyCheck">bypassPolicyLockoutSafetyCheck</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/kms_external_key#bypass_policy_lockout_safety_check KmsExternalKey#bypass_policy_lockout_safety_check}. |
-| <code><a href="#@cdktf/provider-aws.kmsExternalKey.KmsExternalKeyConfig.property.deletionWindowInDays">deletionWindowInDays</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/kms_external_key#deletion_window_in_days KmsExternalKey#deletion_window_in_days}. |
-| <code><a href="#@cdktf/provider-aws.kmsExternalKey.KmsExternalKeyConfig.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/kms_external_key#description KmsExternalKey#description}. |
-| <code><a href="#@cdktf/provider-aws.kmsExternalKey.KmsExternalKeyConfig.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/kms_external_key#enabled KmsExternalKey#enabled}. |
-| <code><a href="#@cdktf/provider-aws.kmsExternalKey.KmsExternalKeyConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/kms_external_key#id KmsExternalKey#id}. |
-| <code><a href="#@cdktf/provider-aws.kmsExternalKey.KmsExternalKeyConfig.property.keyMaterialBase64">keyMaterialBase64</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/kms_external_key#key_material_base64 KmsExternalKey#key_material_base64}. |
-| <code><a href="#@cdktf/provider-aws.kmsExternalKey.KmsExternalKeyConfig.property.multiRegion">multiRegion</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/kms_external_key#multi_region KmsExternalKey#multi_region}. |
-| <code><a href="#@cdktf/provider-aws.kmsExternalKey.KmsExternalKeyConfig.property.policy">policy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/kms_external_key#policy KmsExternalKey#policy}. |
+| <code><a href="#@cdktf/provider-aws.kmsExternalKey.KmsExternalKeyConfig.property.bypassPolicyLockoutSafetyCheck">bypassPolicyLockoutSafetyCheck</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/kms_external_key#bypass_policy_lockout_safety_check KmsExternalKey#bypass_policy_lockout_safety_check}. |
+| <code><a href="#@cdktf/provider-aws.kmsExternalKey.KmsExternalKeyConfig.property.deletionWindowInDays">deletionWindowInDays</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/kms_external_key#deletion_window_in_days KmsExternalKey#deletion_window_in_days}. |
+| <code><a href="#@cdktf/provider-aws.kmsExternalKey.KmsExternalKeyConfig.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/kms_external_key#description KmsExternalKey#description}. |
+| <code><a href="#@cdktf/provider-aws.kmsExternalKey.KmsExternalKeyConfig.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/kms_external_key#enabled KmsExternalKey#enabled}. |
+| <code><a href="#@cdktf/provider-aws.kmsExternalKey.KmsExternalKeyConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/kms_external_key#id KmsExternalKey#id}. |
+| <code><a href="#@cdktf/provider-aws.kmsExternalKey.KmsExternalKeyConfig.property.keyMaterialBase64">keyMaterialBase64</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/kms_external_key#key_material_base64 KmsExternalKey#key_material_base64}. |
+| <code><a href="#@cdktf/provider-aws.kmsExternalKey.KmsExternalKeyConfig.property.keySpec">keySpec</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/kms_external_key#key_spec KmsExternalKey#key_spec}. |
+| <code><a href="#@cdktf/provider-aws.kmsExternalKey.KmsExternalKeyConfig.property.keyUsage">keyUsage</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/kms_external_key#key_usage KmsExternalKey#key_usage}. |
+| <code><a href="#@cdktf/provider-aws.kmsExternalKey.KmsExternalKeyConfig.property.multiRegion">multiRegion</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/kms_external_key#multi_region KmsExternalKey#multi_region}. |
+| <code><a href="#@cdktf/provider-aws.kmsExternalKey.KmsExternalKeyConfig.property.policy">policy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/kms_external_key#policy KmsExternalKey#policy}. |
 | <code><a href="#@cdktf/provider-aws.kmsExternalKey.KmsExternalKeyConfig.property.region">region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktf/provider-aws.kmsExternalKey.KmsExternalKeyConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/kms_external_key#tags KmsExternalKey#tags}. |
-| <code><a href="#@cdktf/provider-aws.kmsExternalKey.KmsExternalKeyConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/kms_external_key#tags_all KmsExternalKey#tags_all}. |
-| <code><a href="#@cdktf/provider-aws.kmsExternalKey.KmsExternalKeyConfig.property.validTo">validTo</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/kms_external_key#valid_to KmsExternalKey#valid_to}. |
+| <code><a href="#@cdktf/provider-aws.kmsExternalKey.KmsExternalKeyConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/kms_external_key#tags KmsExternalKey#tags}. |
+| <code><a href="#@cdktf/provider-aws.kmsExternalKey.KmsExternalKeyConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/kms_external_key#tags_all KmsExternalKey#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.kmsExternalKey.KmsExternalKeyConfig.property.validTo">validTo</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/kms_external_key#valid_to KmsExternalKey#valid_to}. |
 
 ---
 
@@ -1168,7 +1217,7 @@ public readonly bypassPolicyLockoutSafetyCheck: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/kms_external_key#bypass_policy_lockout_safety_check KmsExternalKey#bypass_policy_lockout_safety_check}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/kms_external_key#bypass_policy_lockout_safety_check KmsExternalKey#bypass_policy_lockout_safety_check}.
 
 ---
 
@@ -1180,7 +1229,7 @@ public readonly deletionWindowInDays: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/kms_external_key#deletion_window_in_days KmsExternalKey#deletion_window_in_days}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/kms_external_key#deletion_window_in_days KmsExternalKey#deletion_window_in_days}.
 
 ---
 
@@ -1192,7 +1241,7 @@ public readonly description: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/kms_external_key#description KmsExternalKey#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/kms_external_key#description KmsExternalKey#description}.
 
 ---
 
@@ -1204,7 +1253,7 @@ public readonly enabled: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/kms_external_key#enabled KmsExternalKey#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/kms_external_key#enabled KmsExternalKey#enabled}.
 
 ---
 
@@ -1216,7 +1265,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/kms_external_key#id KmsExternalKey#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/kms_external_key#id KmsExternalKey#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1231,7 +1280,31 @@ public readonly keyMaterialBase64: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/kms_external_key#key_material_base64 KmsExternalKey#key_material_base64}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/kms_external_key#key_material_base64 KmsExternalKey#key_material_base64}.
+
+---
+
+##### `keySpec`<sup>Optional</sup> <a name="keySpec" id="@cdktf/provider-aws.kmsExternalKey.KmsExternalKeyConfig.property.keySpec"></a>
+
+```typescript
+public readonly keySpec: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/kms_external_key#key_spec KmsExternalKey#key_spec}.
+
+---
+
+##### `keyUsage`<sup>Optional</sup> <a name="keyUsage" id="@cdktf/provider-aws.kmsExternalKey.KmsExternalKeyConfig.property.keyUsage"></a>
+
+```typescript
+public readonly keyUsage: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/kms_external_key#key_usage KmsExternalKey#key_usage}.
 
 ---
 
@@ -1243,7 +1316,7 @@ public readonly multiRegion: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/kms_external_key#multi_region KmsExternalKey#multi_region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/kms_external_key#multi_region KmsExternalKey#multi_region}.
 
 ---
 
@@ -1255,7 +1328,7 @@ public readonly policy: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/kms_external_key#policy KmsExternalKey#policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/kms_external_key#policy KmsExternalKey#policy}.
 
 ---
 
@@ -1269,7 +1342,7 @@ public readonly region: string;
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/kms_external_key#region KmsExternalKey#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/kms_external_key#region KmsExternalKey#region}
 
 ---
 
@@ -1281,7 +1354,7 @@ public readonly tags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/kms_external_key#tags KmsExternalKey#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/kms_external_key#tags KmsExternalKey#tags}.
 
 ---
 
@@ -1293,7 +1366,7 @@ public readonly tagsAll: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/kms_external_key#tags_all KmsExternalKey#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/kms_external_key#tags_all KmsExternalKey#tags_all}.
 
 ---
 
@@ -1305,7 +1378,7 @@ public readonly validTo: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/kms_external_key#valid_to KmsExternalKey#valid_to}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/kms_external_key#valid_to KmsExternalKey#valid_to}.
 
 ---
 
