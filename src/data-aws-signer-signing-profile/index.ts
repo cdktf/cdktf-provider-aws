@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/data-sources/signer_signing_profile
+// https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/data-sources/signer_signing_profile
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,24 +13,24 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsSignerSigningProfileConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/data-sources/signer_signing_profile#id DataAwsSignerSigningProfile#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/data-sources/signer_signing_profile#id DataAwsSignerSigningProfile#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/data-sources/signer_signing_profile#name DataAwsSignerSigningProfile#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/data-sources/signer_signing_profile#name DataAwsSignerSigningProfile#name}
   */
   readonly name: string;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/data-sources/signer_signing_profile#region DataAwsSignerSigningProfile#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/data-sources/signer_signing_profile#region DataAwsSignerSigningProfile#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/data-sources/signer_signing_profile#tags DataAwsSignerSigningProfile#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/data-sources/signer_signing_profile#tags DataAwsSignerSigningProfile#tags}
   */
   readonly tags?: { [key: string]: string };
 }
@@ -199,9 +199,84 @@ export class DataAwsSignerSigningProfileSignatureValidityPeriodList extends cdkt
     return new DataAwsSignerSigningProfileSignatureValidityPeriodOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface DataAwsSignerSigningProfileSigningMaterial {
+}
+
+export function dataAwsSignerSigningProfileSigningMaterialToTerraform(struct?: DataAwsSignerSigningProfileSigningMaterial): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataAwsSignerSigningProfileSigningMaterialToHclTerraform(struct?: DataAwsSignerSigningProfileSigningMaterial): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataAwsSignerSigningProfileSigningMaterialOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsSignerSigningProfileSigningMaterial | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsSignerSigningProfileSigningMaterial | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // certificate_arn - computed: true, optional: false, required: false
+  public get certificateArn() {
+    return this.getStringAttribute('certificate_arn');
+  }
+}
+
+export class DataAwsSignerSigningProfileSigningMaterialList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsSignerSigningProfileSigningMaterialOutputReference {
+    return new DataAwsSignerSigningProfileSigningMaterialOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/data-sources/signer_signing_profile aws_signer_signing_profile}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/data-sources/signer_signing_profile aws_signer_signing_profile}
 */
 export class DataAwsSignerSigningProfile extends cdktf.TerraformDataSource {
 
@@ -217,7 +292,7 @@ export class DataAwsSignerSigningProfile extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataAwsSignerSigningProfile resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsSignerSigningProfile to import
-  * @param importFromId The id of the existing DataAwsSignerSigningProfile that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/data-sources/signer_signing_profile#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsSignerSigningProfile that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/data-sources/signer_signing_profile#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsSignerSigningProfile to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -229,7 +304,7 @@ export class DataAwsSignerSigningProfile extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/data-sources/signer_signing_profile aws_signer_signing_profile} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/data-sources/signer_signing_profile aws_signer_signing_profile} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -240,7 +315,7 @@ export class DataAwsSignerSigningProfile extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_signer_signing_profile',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.10.0',
+        providerVersion: '6.11.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
@@ -331,6 +406,18 @@ export class DataAwsSignerSigningProfile extends cdktf.TerraformDataSource {
   private _signatureValidityPeriod = new DataAwsSignerSigningProfileSignatureValidityPeriodList(this, "signature_validity_period", false);
   public get signatureValidityPeriod() {
     return this._signatureValidityPeriod;
+  }
+
+  // signing_material - computed: true, optional: false, required: false
+  private _signingMaterial = new DataAwsSignerSigningProfileSigningMaterialList(this, "signing_material", false);
+  public get signingMaterial() {
+    return this._signingMaterial;
+  }
+
+  // signing_parameters - computed: true, optional: false, required: false
+  private _signingParameters = new cdktf.StringMap(this, "signing_parameters");
+  public get signingParameters() {
+    return this._signingParameters;
   }
 
   // status - computed: true, optional: false, required: false

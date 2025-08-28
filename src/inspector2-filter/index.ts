@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter
+// https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,45 +13,45 @@ import * as cdktf from 'cdktf';
 
 export interface Inspector2FilterConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#action Inspector2Filter#action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#action Inspector2Filter#action}
   */
   readonly action: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#description Inspector2Filter#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#description Inspector2Filter#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#name Inspector2Filter#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#name Inspector2Filter#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#reason Inspector2Filter#reason}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#reason Inspector2Filter#reason}
   */
   readonly reason?: string;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#region Inspector2Filter#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#region Inspector2Filter#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#tags Inspector2Filter#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#tags Inspector2Filter#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
   * filter_criteria block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#filter_criteria Inspector2Filter#filter_criteria}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#filter_criteria Inspector2Filter#filter_criteria}
   */
   readonly filterCriteria?: Inspector2FilterFilterCriteria[] | cdktf.IResolvable;
 }
 export interface Inspector2FilterFilterCriteriaAwsAccountId {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#value Inspector2Filter#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#value Inspector2Filter#value}
   */
   readonly value: string;
 }
@@ -188,13 +188,299 @@ export class Inspector2FilterFilterCriteriaAwsAccountIdList extends cdktf.Comple
     return new Inspector2FilterFilterCriteriaAwsAccountIdOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
-export interface Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName {
+export interface Inspector2FilterFilterCriteriaCodeRepositoryProjectName {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#value Inspector2Filter#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#value Inspector2Filter#value}
+  */
+  readonly value: string;
+}
+
+export function inspector2FilterFilterCriteriaCodeRepositoryProjectNameToTerraform(struct?: Inspector2FilterFilterCriteriaCodeRepositoryProjectName | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    comparison: cdktf.stringToTerraform(struct!.comparison),
+    value: cdktf.stringToTerraform(struct!.value),
+  }
+}
+
+
+export function inspector2FilterFilterCriteriaCodeRepositoryProjectNameToHclTerraform(struct?: Inspector2FilterFilterCriteriaCodeRepositoryProjectName | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    comparison: {
+      value: cdktf.stringToHclTerraform(struct!.comparison),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class Inspector2FilterFilterCriteriaCodeRepositoryProjectNameOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): Inspector2FilterFilterCriteriaCodeRepositoryProjectName | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._comparison !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.comparison = this._comparison;
+    }
+    if (this._value !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.value = this._value;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: Inspector2FilterFilterCriteriaCodeRepositoryProjectName | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._comparison = undefined;
+      this._value = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._comparison = value.comparison;
+      this._value = value.value;
+    }
+  }
+
+  // comparison - computed: false, optional: false, required: true
+  private _comparison?: string; 
+  public get comparison() {
+    return this.getStringAttribute('comparison');
+  }
+  public set comparison(value: string) {
+    this._comparison = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get comparisonInput() {
+    return this._comparison;
+  }
+
+  // value - computed: false, optional: false, required: true
+  private _value?: string; 
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+  public set value(value: string) {
+    this._value = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valueInput() {
+    return this._value;
+  }
+}
+
+export class Inspector2FilterFilterCriteriaCodeRepositoryProjectNameList extends cdktf.ComplexList {
+  public internalValue? : Inspector2FilterFilterCriteriaCodeRepositoryProjectName[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): Inspector2FilterFilterCriteriaCodeRepositoryProjectNameOutputReference {
+    return new Inspector2FilterFilterCriteriaCodeRepositoryProjectNameOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface Inspector2FilterFilterCriteriaCodeRepositoryProviderType {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}
+  */
+  readonly comparison: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#value Inspector2Filter#value}
+  */
+  readonly value: string;
+}
+
+export function inspector2FilterFilterCriteriaCodeRepositoryProviderTypeToTerraform(struct?: Inspector2FilterFilterCriteriaCodeRepositoryProviderType | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    comparison: cdktf.stringToTerraform(struct!.comparison),
+    value: cdktf.stringToTerraform(struct!.value),
+  }
+}
+
+
+export function inspector2FilterFilterCriteriaCodeRepositoryProviderTypeToHclTerraform(struct?: Inspector2FilterFilterCriteriaCodeRepositoryProviderType | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    comparison: {
+      value: cdktf.stringToHclTerraform(struct!.comparison),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): Inspector2FilterFilterCriteriaCodeRepositoryProviderType | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._comparison !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.comparison = this._comparison;
+    }
+    if (this._value !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.value = this._value;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: Inspector2FilterFilterCriteriaCodeRepositoryProviderType | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._comparison = undefined;
+      this._value = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._comparison = value.comparison;
+      this._value = value.value;
+    }
+  }
+
+  // comparison - computed: false, optional: false, required: true
+  private _comparison?: string; 
+  public get comparison() {
+    return this.getStringAttribute('comparison');
+  }
+  public set comparison(value: string) {
+    this._comparison = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get comparisonInput() {
+    return this._comparison;
+  }
+
+  // value - computed: false, optional: false, required: true
+  private _value?: string; 
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+  public set value(value: string) {
+    this._value = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valueInput() {
+    return this._value;
+  }
+}
+
+export class Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeList extends cdktf.ComplexList {
+  public internalValue? : Inspector2FilterFilterCriteriaCodeRepositoryProviderType[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeOutputReference {
+    return new Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}
+  */
+  readonly comparison: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#value Inspector2Filter#value}
   */
   readonly value: string;
 }
@@ -333,11 +619,11 @@ export class Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorNameList ext
 }
 export interface Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#value Inspector2Filter#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#value Inspector2Filter#value}
   */
   readonly value: string;
 }
@@ -476,11 +762,11 @@ export class Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTagsList ext
 }
 export interface Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#value Inspector2Filter#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#value Inspector2Filter#value}
   */
   readonly value: string;
 }
@@ -619,11 +905,11 @@ export class Inspector2FilterFilterCriteriaCodeVulnerabilityFilePathList extends
 }
 export interface Inspector2FilterFilterCriteriaComponentId {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#value Inspector2Filter#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#value Inspector2Filter#value}
   */
   readonly value: string;
 }
@@ -762,11 +1048,11 @@ export class Inspector2FilterFilterCriteriaComponentIdList extends cdktf.Complex
 }
 export interface Inspector2FilterFilterCriteriaComponentType {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#value Inspector2Filter#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#value Inspector2Filter#value}
   */
   readonly value: string;
 }
@@ -905,11 +1191,11 @@ export class Inspector2FilterFilterCriteriaComponentTypeList extends cdktf.Compl
 }
 export interface Inspector2FilterFilterCriteriaEc2InstanceImageId {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#value Inspector2Filter#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#value Inspector2Filter#value}
   */
   readonly value: string;
 }
@@ -1048,11 +1334,11 @@ export class Inspector2FilterFilterCriteriaEc2InstanceImageIdList extends cdktf.
 }
 export interface Inspector2FilterFilterCriteriaEc2InstanceSubnetId {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#value Inspector2Filter#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#value Inspector2Filter#value}
   */
   readonly value: string;
 }
@@ -1191,11 +1477,11 @@ export class Inspector2FilterFilterCriteriaEc2InstanceSubnetIdList extends cdktf
 }
 export interface Inspector2FilterFilterCriteriaEc2InstanceVpcId {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#value Inspector2Filter#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#value Inspector2Filter#value}
   */
   readonly value: string;
 }
@@ -1334,11 +1620,11 @@ export class Inspector2FilterFilterCriteriaEc2InstanceVpcIdList extends cdktf.Co
 }
 export interface Inspector2FilterFilterCriteriaEcrImageArchitecture {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#value Inspector2Filter#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#value Inspector2Filter#value}
   */
   readonly value: string;
 }
@@ -1477,11 +1763,11 @@ export class Inspector2FilterFilterCriteriaEcrImageArchitectureList extends cdkt
 }
 export interface Inspector2FilterFilterCriteriaEcrImageHash {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#value Inspector2Filter#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#value Inspector2Filter#value}
   */
   readonly value: string;
 }
@@ -1618,13 +1904,305 @@ export class Inspector2FilterFilterCriteriaEcrImageHashList extends cdktf.Comple
     return new Inspector2FilterFilterCriteriaEcrImageHashOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
-export interface Inspector2FilterFilterCriteriaEcrImagePushedAt {
+export interface Inspector2FilterFilterCriteriaEcrImageInUseCount {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#end_inclusive Inspector2Filter#end_inclusive}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#lower_inclusive Inspector2Filter#lower_inclusive}
+  */
+  readonly lowerInclusive: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#upper_inclusive Inspector2Filter#upper_inclusive}
+  */
+  readonly upperInclusive: number;
+}
+
+export function inspector2FilterFilterCriteriaEcrImageInUseCountToTerraform(struct?: Inspector2FilterFilterCriteriaEcrImageInUseCount | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    lower_inclusive: cdktf.numberToTerraform(struct!.lowerInclusive),
+    upper_inclusive: cdktf.numberToTerraform(struct!.upperInclusive),
+  }
+}
+
+
+export function inspector2FilterFilterCriteriaEcrImageInUseCountToHclTerraform(struct?: Inspector2FilterFilterCriteriaEcrImageInUseCount | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    lower_inclusive: {
+      value: cdktf.numberToHclTerraform(struct!.lowerInclusive),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    upper_inclusive: {
+      value: cdktf.numberToHclTerraform(struct!.upperInclusive),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class Inspector2FilterFilterCriteriaEcrImageInUseCountOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): Inspector2FilterFilterCriteriaEcrImageInUseCount | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._lowerInclusive !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.lowerInclusive = this._lowerInclusive;
+    }
+    if (this._upperInclusive !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.upperInclusive = this._upperInclusive;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: Inspector2FilterFilterCriteriaEcrImageInUseCount | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._lowerInclusive = undefined;
+      this._upperInclusive = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._lowerInclusive = value.lowerInclusive;
+      this._upperInclusive = value.upperInclusive;
+    }
+  }
+
+  // lower_inclusive - computed: false, optional: false, required: true
+  private _lowerInclusive?: number; 
+  public get lowerInclusive() {
+    return this.getNumberAttribute('lower_inclusive');
+  }
+  public set lowerInclusive(value: number) {
+    this._lowerInclusive = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get lowerInclusiveInput() {
+    return this._lowerInclusive;
+  }
+
+  // upper_inclusive - computed: false, optional: false, required: true
+  private _upperInclusive?: number; 
+  public get upperInclusive() {
+    return this.getNumberAttribute('upper_inclusive');
+  }
+  public set upperInclusive(value: number) {
+    this._upperInclusive = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get upperInclusiveInput() {
+    return this._upperInclusive;
+  }
+}
+
+export class Inspector2FilterFilterCriteriaEcrImageInUseCountList extends cdktf.ComplexList {
+  public internalValue? : Inspector2FilterFilterCriteriaEcrImageInUseCount[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): Inspector2FilterFilterCriteriaEcrImageInUseCountOutputReference {
+    return new Inspector2FilterFilterCriteriaEcrImageInUseCountOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface Inspector2FilterFilterCriteriaEcrImageLastInUseAt {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#end_inclusive Inspector2Filter#end_inclusive}
   */
   readonly endInclusive?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#start_inclusive Inspector2Filter#start_inclusive}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#start_inclusive Inspector2Filter#start_inclusive}
+  */
+  readonly startInclusive?: string;
+}
+
+export function inspector2FilterFilterCriteriaEcrImageLastInUseAtToTerraform(struct?: Inspector2FilterFilterCriteriaEcrImageLastInUseAt | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    end_inclusive: cdktf.stringToTerraform(struct!.endInclusive),
+    start_inclusive: cdktf.stringToTerraform(struct!.startInclusive),
+  }
+}
+
+
+export function inspector2FilterFilterCriteriaEcrImageLastInUseAtToHclTerraform(struct?: Inspector2FilterFilterCriteriaEcrImageLastInUseAt | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    end_inclusive: {
+      value: cdktf.stringToHclTerraform(struct!.endInclusive),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    start_inclusive: {
+      value: cdktf.stringToHclTerraform(struct!.startInclusive),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class Inspector2FilterFilterCriteriaEcrImageLastInUseAtOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): Inspector2FilterFilterCriteriaEcrImageLastInUseAt | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._endInclusive !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.endInclusive = this._endInclusive;
+    }
+    if (this._startInclusive !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.startInclusive = this._startInclusive;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: Inspector2FilterFilterCriteriaEcrImageLastInUseAt | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._endInclusive = undefined;
+      this._startInclusive = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._endInclusive = value.endInclusive;
+      this._startInclusive = value.startInclusive;
+    }
+  }
+
+  // end_inclusive - computed: false, optional: true, required: false
+  private _endInclusive?: string; 
+  public get endInclusive() {
+    return this.getStringAttribute('end_inclusive');
+  }
+  public set endInclusive(value: string) {
+    this._endInclusive = value;
+  }
+  public resetEndInclusive() {
+    this._endInclusive = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get endInclusiveInput() {
+    return this._endInclusive;
+  }
+
+  // start_inclusive - computed: false, optional: true, required: false
+  private _startInclusive?: string; 
+  public get startInclusive() {
+    return this.getStringAttribute('start_inclusive');
+  }
+  public set startInclusive(value: string) {
+    this._startInclusive = value;
+  }
+  public resetStartInclusive() {
+    this._startInclusive = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get startInclusiveInput() {
+    return this._startInclusive;
+  }
+}
+
+export class Inspector2FilterFilterCriteriaEcrImageLastInUseAtList extends cdktf.ComplexList {
+  public internalValue? : Inspector2FilterFilterCriteriaEcrImageLastInUseAt[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): Inspector2FilterFilterCriteriaEcrImageLastInUseAtOutputReference {
+    return new Inspector2FilterFilterCriteriaEcrImageLastInUseAtOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface Inspector2FilterFilterCriteriaEcrImagePushedAt {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#end_inclusive Inspector2Filter#end_inclusive}
+  */
+  readonly endInclusive?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#start_inclusive Inspector2Filter#start_inclusive}
   */
   readonly startInclusive?: string;
 }
@@ -1769,11 +2347,11 @@ export class Inspector2FilterFilterCriteriaEcrImagePushedAtList extends cdktf.Co
 }
 export interface Inspector2FilterFilterCriteriaEcrImageRegistry {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#value Inspector2Filter#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#value Inspector2Filter#value}
   */
   readonly value: string;
 }
@@ -1912,11 +2490,11 @@ export class Inspector2FilterFilterCriteriaEcrImageRegistryList extends cdktf.Co
 }
 export interface Inspector2FilterFilterCriteriaEcrImageRepositoryName {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#value Inspector2Filter#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#value Inspector2Filter#value}
   */
   readonly value: string;
 }
@@ -2055,11 +2633,11 @@ export class Inspector2FilterFilterCriteriaEcrImageRepositoryNameList extends cd
 }
 export interface Inspector2FilterFilterCriteriaEcrImageTags {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#value Inspector2Filter#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#value Inspector2Filter#value}
   */
   readonly value: string;
 }
@@ -2198,11 +2776,11 @@ export class Inspector2FilterFilterCriteriaEcrImageTagsList extends cdktf.Comple
 }
 export interface Inspector2FilterFilterCriteriaEpssScore {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#lower_inclusive Inspector2Filter#lower_inclusive}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#lower_inclusive Inspector2Filter#lower_inclusive}
   */
   readonly lowerInclusive: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#upper_inclusive Inspector2Filter#upper_inclusive}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#upper_inclusive Inspector2Filter#upper_inclusive}
   */
   readonly upperInclusive: number;
 }
@@ -2341,11 +2919,11 @@ export class Inspector2FilterFilterCriteriaEpssScoreList extends cdktf.ComplexLi
 }
 export interface Inspector2FilterFilterCriteriaExploitAvailable {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#value Inspector2Filter#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#value Inspector2Filter#value}
   */
   readonly value: string;
 }
@@ -2484,11 +3062,11 @@ export class Inspector2FilterFilterCriteriaExploitAvailableList extends cdktf.Co
 }
 export interface Inspector2FilterFilterCriteriaFindingArn {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#value Inspector2Filter#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#value Inspector2Filter#value}
   */
   readonly value: string;
 }
@@ -2627,11 +3205,11 @@ export class Inspector2FilterFilterCriteriaFindingArnList extends cdktf.ComplexL
 }
 export interface Inspector2FilterFilterCriteriaFindingStatus {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#value Inspector2Filter#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#value Inspector2Filter#value}
   */
   readonly value: string;
 }
@@ -2770,11 +3348,11 @@ export class Inspector2FilterFilterCriteriaFindingStatusList extends cdktf.Compl
 }
 export interface Inspector2FilterFilterCriteriaFindingType {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#value Inspector2Filter#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#value Inspector2Filter#value}
   */
   readonly value: string;
 }
@@ -2913,11 +3491,11 @@ export class Inspector2FilterFilterCriteriaFindingTypeList extends cdktf.Complex
 }
 export interface Inspector2FilterFilterCriteriaFirstObservedAt {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#end_inclusive Inspector2Filter#end_inclusive}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#end_inclusive Inspector2Filter#end_inclusive}
   */
   readonly endInclusive?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#start_inclusive Inspector2Filter#start_inclusive}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#start_inclusive Inspector2Filter#start_inclusive}
   */
   readonly startInclusive?: string;
 }
@@ -3062,11 +3640,11 @@ export class Inspector2FilterFilterCriteriaFirstObservedAtList extends cdktf.Com
 }
 export interface Inspector2FilterFilterCriteriaFixAvailable {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#value Inspector2Filter#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#value Inspector2Filter#value}
   */
   readonly value: string;
 }
@@ -3205,11 +3783,11 @@ export class Inspector2FilterFilterCriteriaFixAvailableList extends cdktf.Comple
 }
 export interface Inspector2FilterFilterCriteriaInspectorScore {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#lower_inclusive Inspector2Filter#lower_inclusive}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#lower_inclusive Inspector2Filter#lower_inclusive}
   */
   readonly lowerInclusive: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#upper_inclusive Inspector2Filter#upper_inclusive}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#upper_inclusive Inspector2Filter#upper_inclusive}
   */
   readonly upperInclusive: number;
 }
@@ -3348,11 +3926,11 @@ export class Inspector2FilterFilterCriteriaInspectorScoreList extends cdktf.Comp
 }
 export interface Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#value Inspector2Filter#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#value Inspector2Filter#value}
   */
   readonly value: string;
 }
@@ -3491,11 +4069,11 @@ export class Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArnList ex
 }
 export interface Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#end_inclusive Inspector2Filter#end_inclusive}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#end_inclusive Inspector2Filter#end_inclusive}
   */
   readonly endInclusive?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#start_inclusive Inspector2Filter#start_inclusive}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#start_inclusive Inspector2Filter#start_inclusive}
   */
   readonly startInclusive?: string;
 }
@@ -3640,11 +4218,11 @@ export class Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAtList exte
 }
 export interface Inspector2FilterFilterCriteriaLambdaFunctionLayers {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#value Inspector2Filter#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#value Inspector2Filter#value}
   */
   readonly value: string;
 }
@@ -3783,11 +4361,11 @@ export class Inspector2FilterFilterCriteriaLambdaFunctionLayersList extends cdkt
 }
 export interface Inspector2FilterFilterCriteriaLambdaFunctionName {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#value Inspector2Filter#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#value Inspector2Filter#value}
   */
   readonly value: string;
 }
@@ -3926,11 +4504,11 @@ export class Inspector2FilterFilterCriteriaLambdaFunctionNameList extends cdktf.
 }
 export interface Inspector2FilterFilterCriteriaLambdaFunctionRuntime {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#value Inspector2Filter#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#value Inspector2Filter#value}
   */
   readonly value: string;
 }
@@ -4069,11 +4647,11 @@ export class Inspector2FilterFilterCriteriaLambdaFunctionRuntimeList extends cdk
 }
 export interface Inspector2FilterFilterCriteriaLastObservedAt {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#end_inclusive Inspector2Filter#end_inclusive}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#end_inclusive Inspector2Filter#end_inclusive}
   */
   readonly endInclusive?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#start_inclusive Inspector2Filter#start_inclusive}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#start_inclusive Inspector2Filter#start_inclusive}
   */
   readonly startInclusive?: string;
 }
@@ -4218,11 +4796,11 @@ export class Inspector2FilterFilterCriteriaLastObservedAtList extends cdktf.Comp
 }
 export interface Inspector2FilterFilterCriteriaNetworkProtocol {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#value Inspector2Filter#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#value Inspector2Filter#value}
   */
   readonly value: string;
 }
@@ -4361,11 +4939,11 @@ export class Inspector2FilterFilterCriteriaNetworkProtocolList extends cdktf.Com
 }
 export interface Inspector2FilterFilterCriteriaPortRange {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#begin_inclusive Inspector2Filter#begin_inclusive}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#begin_inclusive Inspector2Filter#begin_inclusive}
   */
   readonly beginInclusive: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#end_inclusive Inspector2Filter#end_inclusive}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#end_inclusive Inspector2Filter#end_inclusive}
   */
   readonly endInclusive: number;
 }
@@ -4504,11 +5082,11 @@ export class Inspector2FilterFilterCriteriaPortRangeList extends cdktf.ComplexLi
 }
 export interface Inspector2FilterFilterCriteriaRelatedVulnerabilities {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#value Inspector2Filter#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#value Inspector2Filter#value}
   */
   readonly value: string;
 }
@@ -4647,11 +5225,11 @@ export class Inspector2FilterFilterCriteriaRelatedVulnerabilitiesList extends cd
 }
 export interface Inspector2FilterFilterCriteriaResourceId {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#value Inspector2Filter#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#value Inspector2Filter#value}
   */
   readonly value: string;
 }
@@ -4790,15 +5368,15 @@ export class Inspector2FilterFilterCriteriaResourceIdList extends cdktf.ComplexL
 }
 export interface Inspector2FilterFilterCriteriaResourceTags {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#key Inspector2Filter#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#key Inspector2Filter#key}
   */
   readonly key: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#value Inspector2Filter#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#value Inspector2Filter#value}
   */
   readonly value: string;
 }
@@ -4963,11 +5541,11 @@ export class Inspector2FilterFilterCriteriaResourceTagsList extends cdktf.Comple
 }
 export interface Inspector2FilterFilterCriteriaResourceType {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#value Inspector2Filter#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#value Inspector2Filter#value}
   */
   readonly value: string;
 }
@@ -5106,11 +5684,11 @@ export class Inspector2FilterFilterCriteriaResourceTypeList extends cdktf.Comple
 }
 export interface Inspector2FilterFilterCriteriaSeverity {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#value Inspector2Filter#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#value Inspector2Filter#value}
   */
   readonly value: string;
 }
@@ -5249,11 +5827,11 @@ export class Inspector2FilterFilterCriteriaSeverityList extends cdktf.ComplexLis
 }
 export interface Inspector2FilterFilterCriteriaTitle {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#value Inspector2Filter#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#value Inspector2Filter#value}
   */
   readonly value: string;
 }
@@ -5392,11 +5970,11 @@ export class Inspector2FilterFilterCriteriaTitleList extends cdktf.ComplexList {
 }
 export interface Inspector2FilterFilterCriteriaUpdatedAt {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#end_inclusive Inspector2Filter#end_inclusive}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#end_inclusive Inspector2Filter#end_inclusive}
   */
   readonly endInclusive?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#start_inclusive Inspector2Filter#start_inclusive}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#start_inclusive Inspector2Filter#start_inclusive}
   */
   readonly startInclusive?: string;
 }
@@ -5541,11 +6119,11 @@ export class Inspector2FilterFilterCriteriaUpdatedAtList extends cdktf.ComplexLi
 }
 export interface Inspector2FilterFilterCriteriaVendorSeverity {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#value Inspector2Filter#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#value Inspector2Filter#value}
   */
   readonly value: string;
 }
@@ -5684,11 +6262,11 @@ export class Inspector2FilterFilterCriteriaVendorSeverityList extends cdktf.Comp
 }
 export interface Inspector2FilterFilterCriteriaVulnerabilityId {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#value Inspector2Filter#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#value Inspector2Filter#value}
   */
   readonly value: string;
 }
@@ -5827,11 +6405,11 @@ export class Inspector2FilterFilterCriteriaVulnerabilityIdList extends cdktf.Com
 }
 export interface Inspector2FilterFilterCriteriaVulnerabilitySource {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#value Inspector2Filter#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#value Inspector2Filter#value}
   */
   readonly value: string;
 }
@@ -5970,11 +6548,11 @@ export class Inspector2FilterFilterCriteriaVulnerabilitySourceList extends cdktf
 }
 export interface Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#value Inspector2Filter#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#value Inspector2Filter#value}
   */
   readonly value: string;
 }
@@ -6113,11 +6691,11 @@ export class Inspector2FilterFilterCriteriaVulnerablePackagesArchitectureList ex
 }
 export interface Inspector2FilterFilterCriteriaVulnerablePackagesEpoch {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#lower_inclusive Inspector2Filter#lower_inclusive}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#lower_inclusive Inspector2Filter#lower_inclusive}
   */
   readonly lowerInclusive: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#upper_inclusive Inspector2Filter#upper_inclusive}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#upper_inclusive Inspector2Filter#upper_inclusive}
   */
   readonly upperInclusive: number;
 }
@@ -6256,11 +6834,11 @@ export class Inspector2FilterFilterCriteriaVulnerablePackagesEpochList extends c
 }
 export interface Inspector2FilterFilterCriteriaVulnerablePackagesFilePath {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#value Inspector2Filter#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#value Inspector2Filter#value}
   */
   readonly value: string;
 }
@@ -6399,11 +6977,11 @@ export class Inspector2FilterFilterCriteriaVulnerablePackagesFilePathList extend
 }
 export interface Inspector2FilterFilterCriteriaVulnerablePackagesName {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#value Inspector2Filter#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#value Inspector2Filter#value}
   */
   readonly value: string;
 }
@@ -6542,11 +7120,11 @@ export class Inspector2FilterFilterCriteriaVulnerablePackagesNameList extends cd
 }
 export interface Inspector2FilterFilterCriteriaVulnerablePackagesRelease {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#value Inspector2Filter#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#value Inspector2Filter#value}
   */
   readonly value: string;
 }
@@ -6685,11 +7263,11 @@ export class Inspector2FilterFilterCriteriaVulnerablePackagesReleaseList extends
 }
 export interface Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#value Inspector2Filter#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#value Inspector2Filter#value}
   */
   readonly value: string;
 }
@@ -6828,11 +7406,11 @@ export class Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerAr
 }
 export interface Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#value Inspector2Filter#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#value Inspector2Filter#value}
   */
   readonly value: string;
 }
@@ -6971,11 +7549,11 @@ export class Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHashList
 }
 export interface Inspector2FilterFilterCriteriaVulnerablePackagesVersion {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#value Inspector2Filter#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#value Inspector2Filter#value}
   */
   readonly value: string;
 }
@@ -7116,49 +7694,49 @@ export interface Inspector2FilterFilterCriteriaVulnerablePackages {
   /**
   * architecture block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#architecture Inspector2Filter#architecture}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#architecture Inspector2Filter#architecture}
   */
   readonly architecture?: Inspector2FilterFilterCriteriaVulnerablePackagesArchitecture[] | cdktf.IResolvable;
   /**
   * epoch block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#epoch Inspector2Filter#epoch}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#epoch Inspector2Filter#epoch}
   */
   readonly epoch?: Inspector2FilterFilterCriteriaVulnerablePackagesEpoch[] | cdktf.IResolvable;
   /**
   * file_path block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#file_path Inspector2Filter#file_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#file_path Inspector2Filter#file_path}
   */
   readonly filePath?: Inspector2FilterFilterCriteriaVulnerablePackagesFilePath[] | cdktf.IResolvable;
   /**
   * name block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#name Inspector2Filter#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#name Inspector2Filter#name}
   */
   readonly name?: Inspector2FilterFilterCriteriaVulnerablePackagesName[] | cdktf.IResolvable;
   /**
   * release block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#release Inspector2Filter#release}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#release Inspector2Filter#release}
   */
   readonly release?: Inspector2FilterFilterCriteriaVulnerablePackagesRelease[] | cdktf.IResolvable;
   /**
   * source_lambda_layer_arn block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#source_lambda_layer_arn Inspector2Filter#source_lambda_layer_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#source_lambda_layer_arn Inspector2Filter#source_lambda_layer_arn}
   */
   readonly sourceLambdaLayerArn?: Inspector2FilterFilterCriteriaVulnerablePackagesSourceLambdaLayerArn[] | cdktf.IResolvable;
   /**
   * source_layer_hash block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#source_layer_hash Inspector2Filter#source_layer_hash}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#source_layer_hash Inspector2Filter#source_layer_hash}
   */
   readonly sourceLayerHash?: Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHash[] | cdktf.IResolvable;
   /**
   * version block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#version Inspector2Filter#version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#version Inspector2Filter#version}
   */
   readonly version?: Inspector2FilterFilterCriteriaVulnerablePackagesVersion[] | cdktf.IResolvable;
 }
@@ -7479,253 +8057,277 @@ export interface Inspector2FilterFilterCriteria {
   /**
   * aws_account_id block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#aws_account_id Inspector2Filter#aws_account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#aws_account_id Inspector2Filter#aws_account_id}
   */
   readonly awsAccountId?: Inspector2FilterFilterCriteriaAwsAccountId[] | cdktf.IResolvable;
   /**
+  * code_repository_project_name block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#code_repository_project_name Inspector2Filter#code_repository_project_name}
+  */
+  readonly codeRepositoryProjectName?: Inspector2FilterFilterCriteriaCodeRepositoryProjectName[] | cdktf.IResolvable;
+  /**
+  * code_repository_provider_type block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#code_repository_provider_type Inspector2Filter#code_repository_provider_type}
+  */
+  readonly codeRepositoryProviderType?: Inspector2FilterFilterCriteriaCodeRepositoryProviderType[] | cdktf.IResolvable;
+  /**
   * code_vulnerability_detector_name block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#code_vulnerability_detector_name Inspector2Filter#code_vulnerability_detector_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#code_vulnerability_detector_name Inspector2Filter#code_vulnerability_detector_name}
   */
   readonly codeVulnerabilityDetectorName?: Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName[] | cdktf.IResolvable;
   /**
   * code_vulnerability_detector_tags block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#code_vulnerability_detector_tags Inspector2Filter#code_vulnerability_detector_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#code_vulnerability_detector_tags Inspector2Filter#code_vulnerability_detector_tags}
   */
   readonly codeVulnerabilityDetectorTags?: Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTags[] | cdktf.IResolvable;
   /**
   * code_vulnerability_file_path block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#code_vulnerability_file_path Inspector2Filter#code_vulnerability_file_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#code_vulnerability_file_path Inspector2Filter#code_vulnerability_file_path}
   */
   readonly codeVulnerabilityFilePath?: Inspector2FilterFilterCriteriaCodeVulnerabilityFilePath[] | cdktf.IResolvable;
   /**
   * component_id block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#component_id Inspector2Filter#component_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#component_id Inspector2Filter#component_id}
   */
   readonly componentId?: Inspector2FilterFilterCriteriaComponentId[] | cdktf.IResolvable;
   /**
   * component_type block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#component_type Inspector2Filter#component_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#component_type Inspector2Filter#component_type}
   */
   readonly componentType?: Inspector2FilterFilterCriteriaComponentType[] | cdktf.IResolvable;
   /**
   * ec2_instance_image_id block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#ec2_instance_image_id Inspector2Filter#ec2_instance_image_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#ec2_instance_image_id Inspector2Filter#ec2_instance_image_id}
   */
   readonly ec2InstanceImageId?: Inspector2FilterFilterCriteriaEc2InstanceImageId[] | cdktf.IResolvable;
   /**
   * ec2_instance_subnet_id block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#ec2_instance_subnet_id Inspector2Filter#ec2_instance_subnet_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#ec2_instance_subnet_id Inspector2Filter#ec2_instance_subnet_id}
   */
   readonly ec2InstanceSubnetId?: Inspector2FilterFilterCriteriaEc2InstanceSubnetId[] | cdktf.IResolvable;
   /**
   * ec2_instance_vpc_id block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#ec2_instance_vpc_id Inspector2Filter#ec2_instance_vpc_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#ec2_instance_vpc_id Inspector2Filter#ec2_instance_vpc_id}
   */
   readonly ec2InstanceVpcId?: Inspector2FilterFilterCriteriaEc2InstanceVpcId[] | cdktf.IResolvable;
   /**
   * ecr_image_architecture block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#ecr_image_architecture Inspector2Filter#ecr_image_architecture}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#ecr_image_architecture Inspector2Filter#ecr_image_architecture}
   */
   readonly ecrImageArchitecture?: Inspector2FilterFilterCriteriaEcrImageArchitecture[] | cdktf.IResolvable;
   /**
   * ecr_image_hash block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#ecr_image_hash Inspector2Filter#ecr_image_hash}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#ecr_image_hash Inspector2Filter#ecr_image_hash}
   */
   readonly ecrImageHash?: Inspector2FilterFilterCriteriaEcrImageHash[] | cdktf.IResolvable;
   /**
+  * ecr_image_in_use_count block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#ecr_image_in_use_count Inspector2Filter#ecr_image_in_use_count}
+  */
+  readonly ecrImageInUseCount?: Inspector2FilterFilterCriteriaEcrImageInUseCount[] | cdktf.IResolvable;
+  /**
+  * ecr_image_last_in_use_at block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#ecr_image_last_in_use_at Inspector2Filter#ecr_image_last_in_use_at}
+  */
+  readonly ecrImageLastInUseAt?: Inspector2FilterFilterCriteriaEcrImageLastInUseAt[] | cdktf.IResolvable;
+  /**
   * ecr_image_pushed_at block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#ecr_image_pushed_at Inspector2Filter#ecr_image_pushed_at}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#ecr_image_pushed_at Inspector2Filter#ecr_image_pushed_at}
   */
   readonly ecrImagePushedAt?: Inspector2FilterFilterCriteriaEcrImagePushedAt[] | cdktf.IResolvable;
   /**
   * ecr_image_registry block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#ecr_image_registry Inspector2Filter#ecr_image_registry}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#ecr_image_registry Inspector2Filter#ecr_image_registry}
   */
   readonly ecrImageRegistry?: Inspector2FilterFilterCriteriaEcrImageRegistry[] | cdktf.IResolvable;
   /**
   * ecr_image_repository_name block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#ecr_image_repository_name Inspector2Filter#ecr_image_repository_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#ecr_image_repository_name Inspector2Filter#ecr_image_repository_name}
   */
   readonly ecrImageRepositoryName?: Inspector2FilterFilterCriteriaEcrImageRepositoryName[] | cdktf.IResolvable;
   /**
   * ecr_image_tags block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#ecr_image_tags Inspector2Filter#ecr_image_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#ecr_image_tags Inspector2Filter#ecr_image_tags}
   */
   readonly ecrImageTags?: Inspector2FilterFilterCriteriaEcrImageTags[] | cdktf.IResolvable;
   /**
   * epss_score block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#epss_score Inspector2Filter#epss_score}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#epss_score Inspector2Filter#epss_score}
   */
   readonly epssScore?: Inspector2FilterFilterCriteriaEpssScore[] | cdktf.IResolvable;
   /**
   * exploit_available block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#exploit_available Inspector2Filter#exploit_available}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#exploit_available Inspector2Filter#exploit_available}
   */
   readonly exploitAvailable?: Inspector2FilterFilterCriteriaExploitAvailable[] | cdktf.IResolvable;
   /**
   * finding_arn block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#finding_arn Inspector2Filter#finding_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#finding_arn Inspector2Filter#finding_arn}
   */
   readonly findingArn?: Inspector2FilterFilterCriteriaFindingArn[] | cdktf.IResolvable;
   /**
   * finding_status block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#finding_status Inspector2Filter#finding_status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#finding_status Inspector2Filter#finding_status}
   */
   readonly findingStatus?: Inspector2FilterFilterCriteriaFindingStatus[] | cdktf.IResolvable;
   /**
   * finding_type block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#finding_type Inspector2Filter#finding_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#finding_type Inspector2Filter#finding_type}
   */
   readonly findingType?: Inspector2FilterFilterCriteriaFindingType[] | cdktf.IResolvable;
   /**
   * first_observed_at block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#first_observed_at Inspector2Filter#first_observed_at}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#first_observed_at Inspector2Filter#first_observed_at}
   */
   readonly firstObservedAt?: Inspector2FilterFilterCriteriaFirstObservedAt[] | cdktf.IResolvable;
   /**
   * fix_available block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#fix_available Inspector2Filter#fix_available}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#fix_available Inspector2Filter#fix_available}
   */
   readonly fixAvailable?: Inspector2FilterFilterCriteriaFixAvailable[] | cdktf.IResolvable;
   /**
   * inspector_score block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#inspector_score Inspector2Filter#inspector_score}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#inspector_score Inspector2Filter#inspector_score}
   */
   readonly inspectorScore?: Inspector2FilterFilterCriteriaInspectorScore[] | cdktf.IResolvable;
   /**
   * lambda_function_execution_role_arn block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#lambda_function_execution_role_arn Inspector2Filter#lambda_function_execution_role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#lambda_function_execution_role_arn Inspector2Filter#lambda_function_execution_role_arn}
   */
   readonly lambdaFunctionExecutionRoleArn?: Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArn[] | cdktf.IResolvable;
   /**
   * lambda_function_last_modified_at block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#lambda_function_last_modified_at Inspector2Filter#lambda_function_last_modified_at}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#lambda_function_last_modified_at Inspector2Filter#lambda_function_last_modified_at}
   */
   readonly lambdaFunctionLastModifiedAt?: Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAt[] | cdktf.IResolvable;
   /**
   * lambda_function_layers block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#lambda_function_layers Inspector2Filter#lambda_function_layers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#lambda_function_layers Inspector2Filter#lambda_function_layers}
   */
   readonly lambdaFunctionLayers?: Inspector2FilterFilterCriteriaLambdaFunctionLayers[] | cdktf.IResolvable;
   /**
   * lambda_function_name block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#lambda_function_name Inspector2Filter#lambda_function_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#lambda_function_name Inspector2Filter#lambda_function_name}
   */
   readonly lambdaFunctionName?: Inspector2FilterFilterCriteriaLambdaFunctionName[] | cdktf.IResolvable;
   /**
   * lambda_function_runtime block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#lambda_function_runtime Inspector2Filter#lambda_function_runtime}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#lambda_function_runtime Inspector2Filter#lambda_function_runtime}
   */
   readonly lambdaFunctionRuntime?: Inspector2FilterFilterCriteriaLambdaFunctionRuntime[] | cdktf.IResolvable;
   /**
   * last_observed_at block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#last_observed_at Inspector2Filter#last_observed_at}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#last_observed_at Inspector2Filter#last_observed_at}
   */
   readonly lastObservedAt?: Inspector2FilterFilterCriteriaLastObservedAt[] | cdktf.IResolvable;
   /**
   * network_protocol block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#network_protocol Inspector2Filter#network_protocol}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#network_protocol Inspector2Filter#network_protocol}
   */
   readonly networkProtocol?: Inspector2FilterFilterCriteriaNetworkProtocol[] | cdktf.IResolvable;
   /**
   * port_range block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#port_range Inspector2Filter#port_range}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#port_range Inspector2Filter#port_range}
   */
   readonly portRange?: Inspector2FilterFilterCriteriaPortRange[] | cdktf.IResolvable;
   /**
   * related_vulnerabilities block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#related_vulnerabilities Inspector2Filter#related_vulnerabilities}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#related_vulnerabilities Inspector2Filter#related_vulnerabilities}
   */
   readonly relatedVulnerabilities?: Inspector2FilterFilterCriteriaRelatedVulnerabilities[] | cdktf.IResolvable;
   /**
   * resource_id block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#resource_id Inspector2Filter#resource_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#resource_id Inspector2Filter#resource_id}
   */
   readonly resourceId?: Inspector2FilterFilterCriteriaResourceId[] | cdktf.IResolvable;
   /**
   * resource_tags block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#resource_tags Inspector2Filter#resource_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#resource_tags Inspector2Filter#resource_tags}
   */
   readonly resourceTags?: Inspector2FilterFilterCriteriaResourceTags[] | cdktf.IResolvable;
   /**
   * resource_type block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#resource_type Inspector2Filter#resource_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#resource_type Inspector2Filter#resource_type}
   */
   readonly resourceType?: Inspector2FilterFilterCriteriaResourceType[] | cdktf.IResolvable;
   /**
   * severity block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#severity Inspector2Filter#severity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#severity Inspector2Filter#severity}
   */
   readonly severity?: Inspector2FilterFilterCriteriaSeverity[] | cdktf.IResolvable;
   /**
   * title block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#title Inspector2Filter#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#title Inspector2Filter#title}
   */
   readonly title?: Inspector2FilterFilterCriteriaTitle[] | cdktf.IResolvable;
   /**
   * updated_at block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#updated_at Inspector2Filter#updated_at}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#updated_at Inspector2Filter#updated_at}
   */
   readonly updatedAt?: Inspector2FilterFilterCriteriaUpdatedAt[] | cdktf.IResolvable;
   /**
   * vendor_severity block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#vendor_severity Inspector2Filter#vendor_severity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#vendor_severity Inspector2Filter#vendor_severity}
   */
   readonly vendorSeverity?: Inspector2FilterFilterCriteriaVendorSeverity[] | cdktf.IResolvable;
   /**
   * vulnerability_id block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#vulnerability_id Inspector2Filter#vulnerability_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#vulnerability_id Inspector2Filter#vulnerability_id}
   */
   readonly vulnerabilityId?: Inspector2FilterFilterCriteriaVulnerabilityId[] | cdktf.IResolvable;
   /**
   * vulnerability_source block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#vulnerability_source Inspector2Filter#vulnerability_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#vulnerability_source Inspector2Filter#vulnerability_source}
   */
   readonly vulnerabilitySource?: Inspector2FilterFilterCriteriaVulnerabilitySource[] | cdktf.IResolvable;
   /**
   * vulnerable_packages block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#vulnerable_packages Inspector2Filter#vulnerable_packages}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#vulnerable_packages Inspector2Filter#vulnerable_packages}
   */
   readonly vulnerablePackages?: Inspector2FilterFilterCriteriaVulnerablePackages[] | cdktf.IResolvable;
 }
@@ -7737,6 +8339,8 @@ export function inspector2FilterFilterCriteriaToTerraform(struct?: Inspector2Fil
   }
   return {
     aws_account_id: cdktf.listMapper(inspector2FilterFilterCriteriaAwsAccountIdToTerraform, true)(struct!.awsAccountId),
+    code_repository_project_name: cdktf.listMapper(inspector2FilterFilterCriteriaCodeRepositoryProjectNameToTerraform, true)(struct!.codeRepositoryProjectName),
+    code_repository_provider_type: cdktf.listMapper(inspector2FilterFilterCriteriaCodeRepositoryProviderTypeToTerraform, true)(struct!.codeRepositoryProviderType),
     code_vulnerability_detector_name: cdktf.listMapper(inspector2FilterFilterCriteriaCodeVulnerabilityDetectorNameToTerraform, true)(struct!.codeVulnerabilityDetectorName),
     code_vulnerability_detector_tags: cdktf.listMapper(inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTagsToTerraform, true)(struct!.codeVulnerabilityDetectorTags),
     code_vulnerability_file_path: cdktf.listMapper(inspector2FilterFilterCriteriaCodeVulnerabilityFilePathToTerraform, true)(struct!.codeVulnerabilityFilePath),
@@ -7747,6 +8351,8 @@ export function inspector2FilterFilterCriteriaToTerraform(struct?: Inspector2Fil
     ec2_instance_vpc_id: cdktf.listMapper(inspector2FilterFilterCriteriaEc2InstanceVpcIdToTerraform, true)(struct!.ec2InstanceVpcId),
     ecr_image_architecture: cdktf.listMapper(inspector2FilterFilterCriteriaEcrImageArchitectureToTerraform, true)(struct!.ecrImageArchitecture),
     ecr_image_hash: cdktf.listMapper(inspector2FilterFilterCriteriaEcrImageHashToTerraform, true)(struct!.ecrImageHash),
+    ecr_image_in_use_count: cdktf.listMapper(inspector2FilterFilterCriteriaEcrImageInUseCountToTerraform, true)(struct!.ecrImageInUseCount),
+    ecr_image_last_in_use_at: cdktf.listMapper(inspector2FilterFilterCriteriaEcrImageLastInUseAtToTerraform, true)(struct!.ecrImageLastInUseAt),
     ecr_image_pushed_at: cdktf.listMapper(inspector2FilterFilterCriteriaEcrImagePushedAtToTerraform, true)(struct!.ecrImagePushedAt),
     ecr_image_registry: cdktf.listMapper(inspector2FilterFilterCriteriaEcrImageRegistryToTerraform, true)(struct!.ecrImageRegistry),
     ecr_image_repository_name: cdktf.listMapper(inspector2FilterFilterCriteriaEcrImageRepositoryNameToTerraform, true)(struct!.ecrImageRepositoryName),
@@ -7793,6 +8399,18 @@ export function inspector2FilterFilterCriteriaToHclTerraform(struct?: Inspector2
       isBlock: true,
       type: "set",
       storageClassType: "Inspector2FilterFilterCriteriaAwsAccountIdList",
+    },
+    code_repository_project_name: {
+      value: cdktf.listMapperHcl(inspector2FilterFilterCriteriaCodeRepositoryProjectNameToHclTerraform, true)(struct!.codeRepositoryProjectName),
+      isBlock: true,
+      type: "set",
+      storageClassType: "Inspector2FilterFilterCriteriaCodeRepositoryProjectNameList",
+    },
+    code_repository_provider_type: {
+      value: cdktf.listMapperHcl(inspector2FilterFilterCriteriaCodeRepositoryProviderTypeToHclTerraform, true)(struct!.codeRepositoryProviderType),
+      isBlock: true,
+      type: "set",
+      storageClassType: "Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeList",
     },
     code_vulnerability_detector_name: {
       value: cdktf.listMapperHcl(inspector2FilterFilterCriteriaCodeVulnerabilityDetectorNameToHclTerraform, true)(struct!.codeVulnerabilityDetectorName),
@@ -7853,6 +8471,18 @@ export function inspector2FilterFilterCriteriaToHclTerraform(struct?: Inspector2
       isBlock: true,
       type: "set",
       storageClassType: "Inspector2FilterFilterCriteriaEcrImageHashList",
+    },
+    ecr_image_in_use_count: {
+      value: cdktf.listMapperHcl(inspector2FilterFilterCriteriaEcrImageInUseCountToHclTerraform, true)(struct!.ecrImageInUseCount),
+      isBlock: true,
+      type: "set",
+      storageClassType: "Inspector2FilterFilterCriteriaEcrImageInUseCountList",
+    },
+    ecr_image_last_in_use_at: {
+      value: cdktf.listMapperHcl(inspector2FilterFilterCriteriaEcrImageLastInUseAtToHclTerraform, true)(struct!.ecrImageLastInUseAt),
+      isBlock: true,
+      type: "set",
+      storageClassType: "Inspector2FilterFilterCriteriaEcrImageLastInUseAtList",
     },
     ecr_image_pushed_at: {
       value: cdktf.listMapperHcl(inspector2FilterFilterCriteriaEcrImagePushedAtToHclTerraform, true)(struct!.ecrImagePushedAt),
@@ -8070,6 +8700,14 @@ export class Inspector2FilterFilterCriteriaOutputReference extends cdktf.Complex
       hasAnyValues = true;
       internalValueResult.awsAccountId = this._awsAccountId?.internalValue;
     }
+    if (this._codeRepositoryProjectName?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.codeRepositoryProjectName = this._codeRepositoryProjectName?.internalValue;
+    }
+    if (this._codeRepositoryProviderType?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.codeRepositoryProviderType = this._codeRepositoryProviderType?.internalValue;
+    }
     if (this._codeVulnerabilityDetectorName?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.codeVulnerabilityDetectorName = this._codeVulnerabilityDetectorName?.internalValue;
@@ -8109,6 +8747,14 @@ export class Inspector2FilterFilterCriteriaOutputReference extends cdktf.Complex
     if (this._ecrImageHash?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.ecrImageHash = this._ecrImageHash?.internalValue;
+    }
+    if (this._ecrImageInUseCount?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ecrImageInUseCount = this._ecrImageInUseCount?.internalValue;
+    }
+    if (this._ecrImageLastInUseAt?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ecrImageLastInUseAt = this._ecrImageLastInUseAt?.internalValue;
     }
     if (this._ecrImagePushedAt?.internalValue !== undefined) {
       hasAnyValues = true;
@@ -8242,6 +8888,8 @@ export class Inspector2FilterFilterCriteriaOutputReference extends cdktf.Complex
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._awsAccountId.internalValue = undefined;
+      this._codeRepositoryProjectName.internalValue = undefined;
+      this._codeRepositoryProviderType.internalValue = undefined;
       this._codeVulnerabilityDetectorName.internalValue = undefined;
       this._codeVulnerabilityDetectorTags.internalValue = undefined;
       this._codeVulnerabilityFilePath.internalValue = undefined;
@@ -8252,6 +8900,8 @@ export class Inspector2FilterFilterCriteriaOutputReference extends cdktf.Complex
       this._ec2InstanceVpcId.internalValue = undefined;
       this._ecrImageArchitecture.internalValue = undefined;
       this._ecrImageHash.internalValue = undefined;
+      this._ecrImageInUseCount.internalValue = undefined;
+      this._ecrImageLastInUseAt.internalValue = undefined;
       this._ecrImagePushedAt.internalValue = undefined;
       this._ecrImageRegistry.internalValue = undefined;
       this._ecrImageRepositoryName.internalValue = undefined;
@@ -8292,6 +8942,8 @@ export class Inspector2FilterFilterCriteriaOutputReference extends cdktf.Complex
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
       this._awsAccountId.internalValue = value.awsAccountId;
+      this._codeRepositoryProjectName.internalValue = value.codeRepositoryProjectName;
+      this._codeRepositoryProviderType.internalValue = value.codeRepositoryProviderType;
       this._codeVulnerabilityDetectorName.internalValue = value.codeVulnerabilityDetectorName;
       this._codeVulnerabilityDetectorTags.internalValue = value.codeVulnerabilityDetectorTags;
       this._codeVulnerabilityFilePath.internalValue = value.codeVulnerabilityFilePath;
@@ -8302,6 +8954,8 @@ export class Inspector2FilterFilterCriteriaOutputReference extends cdktf.Complex
       this._ec2InstanceVpcId.internalValue = value.ec2InstanceVpcId;
       this._ecrImageArchitecture.internalValue = value.ecrImageArchitecture;
       this._ecrImageHash.internalValue = value.ecrImageHash;
+      this._ecrImageInUseCount.internalValue = value.ecrImageInUseCount;
+      this._ecrImageLastInUseAt.internalValue = value.ecrImageLastInUseAt;
       this._ecrImagePushedAt.internalValue = value.ecrImagePushedAt;
       this._ecrImageRegistry.internalValue = value.ecrImageRegistry;
       this._ecrImageRepositoryName.internalValue = value.ecrImageRepositoryName;
@@ -8350,6 +9004,38 @@ export class Inspector2FilterFilterCriteriaOutputReference extends cdktf.Complex
   // Temporarily expose input value. Use with caution.
   public get awsAccountIdInput() {
     return this._awsAccountId.internalValue;
+  }
+
+  // code_repository_project_name - computed: false, optional: true, required: false
+  private _codeRepositoryProjectName = new Inspector2FilterFilterCriteriaCodeRepositoryProjectNameList(this, "code_repository_project_name", true);
+  public get codeRepositoryProjectName() {
+    return this._codeRepositoryProjectName;
+  }
+  public putCodeRepositoryProjectName(value: Inspector2FilterFilterCriteriaCodeRepositoryProjectName[] | cdktf.IResolvable) {
+    this._codeRepositoryProjectName.internalValue = value;
+  }
+  public resetCodeRepositoryProjectName() {
+    this._codeRepositoryProjectName.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get codeRepositoryProjectNameInput() {
+    return this._codeRepositoryProjectName.internalValue;
+  }
+
+  // code_repository_provider_type - computed: false, optional: true, required: false
+  private _codeRepositoryProviderType = new Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeList(this, "code_repository_provider_type", true);
+  public get codeRepositoryProviderType() {
+    return this._codeRepositoryProviderType;
+  }
+  public putCodeRepositoryProviderType(value: Inspector2FilterFilterCriteriaCodeRepositoryProviderType[] | cdktf.IResolvable) {
+    this._codeRepositoryProviderType.internalValue = value;
+  }
+  public resetCodeRepositoryProviderType() {
+    this._codeRepositoryProviderType.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get codeRepositoryProviderTypeInput() {
+    return this._codeRepositoryProviderType.internalValue;
   }
 
   // code_vulnerability_detector_name - computed: false, optional: true, required: false
@@ -8510,6 +9196,38 @@ export class Inspector2FilterFilterCriteriaOutputReference extends cdktf.Complex
   // Temporarily expose input value. Use with caution.
   public get ecrImageHashInput() {
     return this._ecrImageHash.internalValue;
+  }
+
+  // ecr_image_in_use_count - computed: false, optional: true, required: false
+  private _ecrImageInUseCount = new Inspector2FilterFilterCriteriaEcrImageInUseCountList(this, "ecr_image_in_use_count", true);
+  public get ecrImageInUseCount() {
+    return this._ecrImageInUseCount;
+  }
+  public putEcrImageInUseCount(value: Inspector2FilterFilterCriteriaEcrImageInUseCount[] | cdktf.IResolvable) {
+    this._ecrImageInUseCount.internalValue = value;
+  }
+  public resetEcrImageInUseCount() {
+    this._ecrImageInUseCount.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ecrImageInUseCountInput() {
+    return this._ecrImageInUseCount.internalValue;
+  }
+
+  // ecr_image_last_in_use_at - computed: false, optional: true, required: false
+  private _ecrImageLastInUseAt = new Inspector2FilterFilterCriteriaEcrImageLastInUseAtList(this, "ecr_image_last_in_use_at", true);
+  public get ecrImageLastInUseAt() {
+    return this._ecrImageLastInUseAt;
+  }
+  public putEcrImageLastInUseAt(value: Inspector2FilterFilterCriteriaEcrImageLastInUseAt[] | cdktf.IResolvable) {
+    this._ecrImageLastInUseAt.internalValue = value;
+  }
+  public resetEcrImageLastInUseAt() {
+    this._ecrImageLastInUseAt.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ecrImageLastInUseAtInput() {
+    return this._ecrImageLastInUseAt.internalValue;
   }
 
   // ecr_image_pushed_at - computed: false, optional: true, required: false
@@ -9030,7 +9748,7 @@ export class Inspector2FilterFilterCriteriaList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter aws_inspector2_filter}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter aws_inspector2_filter}
 */
 export class Inspector2Filter extends cdktf.TerraformResource {
 
@@ -9046,7 +9764,7 @@ export class Inspector2Filter extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a Inspector2Filter resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Inspector2Filter to import
-  * @param importFromId The id of the existing Inspector2Filter that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Inspector2Filter that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Inspector2Filter to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -9058,7 +9776,7 @@ export class Inspector2Filter extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/inspector2_filter aws_inspector2_filter} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/inspector2_filter aws_inspector2_filter} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -9069,7 +9787,7 @@ export class Inspector2Filter extends cdktf.TerraformResource {
       terraformResourceType: 'aws_inspector2_filter',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.10.0',
+        providerVersion: '6.11.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

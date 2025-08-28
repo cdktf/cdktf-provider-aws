@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/datazone_domain
+// https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/datazone_domain
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,55 +13,63 @@ import * as cdktf from 'cdktf';
 
 export interface DatazoneDomainConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/datazone_domain#description DatazoneDomain#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/datazone_domain#description DatazoneDomain#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/datazone_domain#domain_execution_role DatazoneDomain#domain_execution_role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/datazone_domain#domain_execution_role DatazoneDomain#domain_execution_role}
   */
   readonly domainExecutionRole: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/datazone_domain#kms_key_identifier DatazoneDomain#kms_key_identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/datazone_domain#domain_version DatazoneDomain#domain_version}
+  */
+  readonly domainVersion?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/datazone_domain#kms_key_identifier DatazoneDomain#kms_key_identifier}
   */
   readonly kmsKeyIdentifier?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/datazone_domain#name DatazoneDomain#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/datazone_domain#name DatazoneDomain#name}
   */
   readonly name: string;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/datazone_domain#region DatazoneDomain#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/datazone_domain#region DatazoneDomain#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/datazone_domain#skip_deletion_check DatazoneDomain#skip_deletion_check}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/datazone_domain#service_role DatazoneDomain#service_role}
+  */
+  readonly serviceRole?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/datazone_domain#skip_deletion_check DatazoneDomain#skip_deletion_check}
   */
   readonly skipDeletionCheck?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/datazone_domain#tags DatazoneDomain#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/datazone_domain#tags DatazoneDomain#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
   * single_sign_on block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/datazone_domain#single_sign_on DatazoneDomain#single_sign_on}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/datazone_domain#single_sign_on DatazoneDomain#single_sign_on}
   */
   readonly singleSignOn?: DatazoneDomainSingleSignOn[] | cdktf.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/datazone_domain#timeouts DatazoneDomain#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/datazone_domain#timeouts DatazoneDomain#timeouts}
   */
   readonly timeouts?: DatazoneDomainTimeouts;
 }
 export interface DatazoneDomainSingleSignOn {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/datazone_domain#type DatazoneDomain#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/datazone_domain#type DatazoneDomain#type}
   */
   readonly type?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/datazone_domain#user_assignment DatazoneDomain#user_assignment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/datazone_domain#user_assignment DatazoneDomain#user_assignment}
   */
   readonly userAssignment?: string;
 }
@@ -208,13 +216,13 @@ export interface DatazoneDomainTimeouts {
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/datazone_domain#create DatazoneDomain#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/datazone_domain#create DatazoneDomain#create}
   */
   readonly create?: string;
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/datazone_domain#delete DatazoneDomain#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/datazone_domain#delete DatazoneDomain#delete}
   */
   readonly delete?: string;
 }
@@ -337,7 +345,7 @@ export class DatazoneDomainTimeoutsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/datazone_domain aws_datazone_domain}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/datazone_domain aws_datazone_domain}
 */
 export class DatazoneDomain extends cdktf.TerraformResource {
 
@@ -353,7 +361,7 @@ export class DatazoneDomain extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a DatazoneDomain resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DatazoneDomain to import
-  * @param importFromId The id of the existing DatazoneDomain that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/datazone_domain#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DatazoneDomain that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/datazone_domain#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DatazoneDomain to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -365,7 +373,7 @@ export class DatazoneDomain extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/datazone_domain aws_datazone_domain} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/datazone_domain aws_datazone_domain} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -376,7 +384,7 @@ export class DatazoneDomain extends cdktf.TerraformResource {
       terraformResourceType: 'aws_datazone_domain',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.10.0',
+        providerVersion: '6.11.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
@@ -389,9 +397,11 @@ export class DatazoneDomain extends cdktf.TerraformResource {
     });
     this._description = config.description;
     this._domainExecutionRole = config.domainExecutionRole;
+    this._domainVersion = config.domainVersion;
     this._kmsKeyIdentifier = config.kmsKeyIdentifier;
     this._name = config.name;
     this._region = config.region;
+    this._serviceRole = config.serviceRole;
     this._skipDeletionCheck = config.skipDeletionCheck;
     this._tags = config.tags;
     this._singleSignOn.internalValue = config.singleSignOn;
@@ -434,6 +444,22 @@ export class DatazoneDomain extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get domainExecutionRoleInput() {
     return this._domainExecutionRole;
+  }
+
+  // domain_version - computed: true, optional: true, required: false
+  private _domainVersion?: string; 
+  public get domainVersion() {
+    return this.getStringAttribute('domain_version');
+  }
+  public set domainVersion(value: string) {
+    this._domainVersion = value;
+  }
+  public resetDomainVersion() {
+    this._domainVersion = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get domainVersionInput() {
+    return this._domainVersion;
   }
 
   // id - computed: true, optional: false, required: false
@@ -489,6 +515,22 @@ export class DatazoneDomain extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get regionInput() {
     return this._region;
+  }
+
+  // service_role - computed: false, optional: true, required: false
+  private _serviceRole?: string; 
+  public get serviceRole() {
+    return this.getStringAttribute('service_role');
+  }
+  public set serviceRole(value: string) {
+    this._serviceRole = value;
+  }
+  public resetServiceRole() {
+    this._serviceRole = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get serviceRoleInput() {
+    return this._serviceRole;
   }
 
   // skip_deletion_check - computed: false, optional: true, required: false
@@ -569,9 +611,11 @@ export class DatazoneDomain extends cdktf.TerraformResource {
     return {
       description: cdktf.stringToTerraform(this._description),
       domain_execution_role: cdktf.stringToTerraform(this._domainExecutionRole),
+      domain_version: cdktf.stringToTerraform(this._domainVersion),
       kms_key_identifier: cdktf.stringToTerraform(this._kmsKeyIdentifier),
       name: cdktf.stringToTerraform(this._name),
       region: cdktf.stringToTerraform(this._region),
+      service_role: cdktf.stringToTerraform(this._serviceRole),
       skip_deletion_check: cdktf.booleanToTerraform(this._skipDeletionCheck),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       single_sign_on: cdktf.listMapper(datazoneDomainSingleSignOnToTerraform, true)(this._singleSignOn.internalValue),
@@ -593,6 +637,12 @@ export class DatazoneDomain extends cdktf.TerraformResource {
         type: "simple",
         storageClassType: "string",
       },
+      domain_version: {
+        value: cdktf.stringToHclTerraform(this._domainVersion),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
       kms_key_identifier: {
         value: cdktf.stringToHclTerraform(this._kmsKeyIdentifier),
         isBlock: false,
@@ -607,6 +657,12 @@ export class DatazoneDomain extends cdktf.TerraformResource {
       },
       region: {
         value: cdktf.stringToHclTerraform(this._region),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      service_role: {
+        value: cdktf.stringToHclTerraform(this._serviceRole),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
