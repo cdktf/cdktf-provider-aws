@@ -4,7 +4,7 @@
 
 ### VpclatticeServiceNetwork <a name="VpclatticeServiceNetwork" id="@cdktf/provider-aws.vpclatticeServiceNetwork.VpclatticeServiceNetwork"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/vpclattice_service_network aws_vpclattice_service_network}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/vpclattice_service_network aws_vpclattice_service_network}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.vpclatticeServiceNetwork.VpclatticeServiceNetwork.Initializer"></a>
 
@@ -502,7 +502,7 @@ The construct id used in the generated config for the VpclatticeServiceNetwork t
 
 The id of the existing VpclatticeServiceNetwork that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/vpclattice_service_network#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/vpclattice_service_network#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -861,12 +861,12 @@ const vpclatticeServiceNetworkConfig: vpclatticeServiceNetwork.VpclatticeService
 | <code><a href="#@cdktf/provider-aws.vpclatticeServiceNetwork.VpclatticeServiceNetworkConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.vpclatticeServiceNetwork.VpclatticeServiceNetworkConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.vpclatticeServiceNetwork.VpclatticeServiceNetworkConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpclatticeServiceNetwork.VpclatticeServiceNetworkConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/vpclattice_service_network#name VpclatticeServiceNetwork#name}. |
-| <code><a href="#@cdktf/provider-aws.vpclatticeServiceNetwork.VpclatticeServiceNetworkConfig.property.authType">authType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/vpclattice_service_network#auth_type VpclatticeServiceNetwork#auth_type}. |
-| <code><a href="#@cdktf/provider-aws.vpclatticeServiceNetwork.VpclatticeServiceNetworkConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/vpclattice_service_network#id VpclatticeServiceNetwork#id}. |
+| <code><a href="#@cdktf/provider-aws.vpclatticeServiceNetwork.VpclatticeServiceNetworkConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/vpclattice_service_network#name VpclatticeServiceNetwork#name}. |
+| <code><a href="#@cdktf/provider-aws.vpclatticeServiceNetwork.VpclatticeServiceNetworkConfig.property.authType">authType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/vpclattice_service_network#auth_type VpclatticeServiceNetwork#auth_type}. |
+| <code><a href="#@cdktf/provider-aws.vpclatticeServiceNetwork.VpclatticeServiceNetworkConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/vpclattice_service_network#id VpclatticeServiceNetwork#id}. |
 | <code><a href="#@cdktf/provider-aws.vpclatticeServiceNetwork.VpclatticeServiceNetworkConfig.property.region">region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktf/provider-aws.vpclatticeServiceNetwork.VpclatticeServiceNetworkConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/vpclattice_service_network#tags VpclatticeServiceNetwork#tags}. |
-| <code><a href="#@cdktf/provider-aws.vpclatticeServiceNetwork.VpclatticeServiceNetworkConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/vpclattice_service_network#tags_all VpclatticeServiceNetwork#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.vpclatticeServiceNetwork.VpclatticeServiceNetworkConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/vpclattice_service_network#tags VpclatticeServiceNetwork#tags}. |
+| <code><a href="#@cdktf/provider-aws.vpclatticeServiceNetwork.VpclatticeServiceNetworkConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/vpclattice_service_network#tags_all VpclatticeServiceNetwork#tags_all}. |
 
 ---
 
@@ -948,7 +948,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/vpclattice_service_network#name VpclatticeServiceNetwork#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/vpclattice_service_network#name VpclatticeServiceNetwork#name}.
 
 ---
 
@@ -960,7 +960,7 @@ public readonly authType: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/vpclattice_service_network#auth_type VpclatticeServiceNetwork#auth_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/vpclattice_service_network#auth_type VpclatticeServiceNetwork#auth_type}.
 
 ---
 
@@ -972,7 +972,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/vpclattice_service_network#id VpclatticeServiceNetwork#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/vpclattice_service_network#id VpclatticeServiceNetwork#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -989,7 +989,7 @@ public readonly region: string;
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/vpclattice_service_network#region VpclatticeServiceNetwork#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/vpclattice_service_network#region VpclatticeServiceNetwork#region}
 
 ---
 
@@ -1001,7 +1001,7 @@ public readonly tags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/vpclattice_service_network#tags VpclatticeServiceNetwork#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/vpclattice_service_network#tags VpclatticeServiceNetwork#tags}.
 
 ---
 
@@ -1013,7 +1013,7 @@ public readonly tagsAll: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/vpclattice_service_network#tags_all VpclatticeServiceNetwork#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/vpclattice_service_network#tags_all VpclatticeServiceNetwork#tags_all}.
 
 ---
 

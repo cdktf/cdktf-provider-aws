@@ -4,7 +4,7 @@
 
 ### WorkspaceswebTrustStoreAssociation <a name="WorkspaceswebTrustStoreAssociation" id="@cdktf/provider-aws.workspaceswebTrustStoreAssociation.WorkspaceswebTrustStoreAssociation"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/workspacesweb_trust_store_association aws_workspacesweb_trust_store_association}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/workspacesweb_trust_store_association aws_workspacesweb_trust_store_association}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.workspaceswebTrustStoreAssociation.WorkspaceswebTrustStoreAssociation.Initializer"></a>
 
@@ -474,7 +474,7 @@ The construct id used in the generated config for the WorkspaceswebTrustStoreAss
 
 The id of the existing WorkspaceswebTrustStoreAssociation that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/workspacesweb_trust_store_association#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/workspacesweb_trust_store_association#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -767,8 +767,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/workspaceswebtruststoreas
 | <code><a href="#@cdktf/provider-aws.workspaceswebTrustStoreAssociation.WorkspaceswebTrustStoreAssociationConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.workspaceswebTrustStoreAssociation.WorkspaceswebTrustStoreAssociationConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.workspaceswebTrustStoreAssociation.WorkspaceswebTrustStoreAssociationConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.workspaceswebTrustStoreAssociation.WorkspaceswebTrustStoreAssociationConfig.property.portalArn">PortalArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/workspacesweb_trust_store_association#portal_arn WorkspaceswebTrustStoreAssociation#portal_arn}. |
-| <code><a href="#@cdktf/provider-aws.workspaceswebTrustStoreAssociation.WorkspaceswebTrustStoreAssociationConfig.property.trustStoreArn">TrustStoreArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/workspacesweb_trust_store_association#trust_store_arn WorkspaceswebTrustStoreAssociation#trust_store_arn}. |
+| <code><a href="#@cdktf/provider-aws.workspaceswebTrustStoreAssociation.WorkspaceswebTrustStoreAssociationConfig.property.portalArn">PortalArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/workspacesweb_trust_store_association#portal_arn WorkspaceswebTrustStoreAssociation#portal_arn}. |
+| <code><a href="#@cdktf/provider-aws.workspaceswebTrustStoreAssociation.WorkspaceswebTrustStoreAssociationConfig.property.trustStoreArn">TrustStoreArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/workspacesweb_trust_store_association#trust_store_arn WorkspaceswebTrustStoreAssociation#trust_store_arn}. |
 | <code><a href="#@cdktf/provider-aws.workspaceswebTrustStoreAssociation.WorkspaceswebTrustStoreAssociationConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -851,7 +851,7 @@ PortalArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/workspacesweb_trust_store_association#portal_arn WorkspaceswebTrustStoreAssociation#portal_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/workspacesweb_trust_store_association#portal_arn WorkspaceswebTrustStoreAssociation#portal_arn}.
 
 ---
 
@@ -863,7 +863,7 @@ TrustStoreArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/workspacesweb_trust_store_association#trust_store_arn WorkspaceswebTrustStoreAssociation#trust_store_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/workspacesweb_trust_store_association#trust_store_arn WorkspaceswebTrustStoreAssociation#trust_store_arn}.
 
 ---
 
@@ -877,7 +877,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/workspacesweb_trust_store_association#region WorkspaceswebTrustStoreAssociation#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/workspacesweb_trust_store_association#region WorkspaceswebTrustStoreAssociation#region}
 
 ---
 

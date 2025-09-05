@@ -4,7 +4,7 @@
 
 ### ElasticacheParameterGroup <a name="ElasticacheParameterGroup" id="@cdktf/provider-aws.elasticacheParameterGroup.ElasticacheParameterGroup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/elasticache_parameter_group aws_elasticache_parameter_group}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/elasticache_parameter_group aws_elasticache_parameter_group}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.elasticacheParameterGroup.ElasticacheParameterGroup.Initializer"></a>
 
@@ -522,7 +522,7 @@ The construct id used in the generated config for the ElasticacheParameterGroup 
 
 The id of the existing ElasticacheParameterGroup that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/elasticache_parameter_group#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/elasticache_parameter_group#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -941,14 +941,14 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/elasticacheparametergroup
 | <code><a href="#@cdktf/provider-aws.elasticacheParameterGroup.ElasticacheParameterGroupConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.elasticacheParameterGroup.ElasticacheParameterGroupConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.elasticacheParameterGroup.ElasticacheParameterGroupConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elasticacheParameterGroup.ElasticacheParameterGroupConfig.property.family">Family</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/elasticache_parameter_group#family ElasticacheParameterGroup#family}. |
-| <code><a href="#@cdktf/provider-aws.elasticacheParameterGroup.ElasticacheParameterGroupConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/elasticache_parameter_group#name ElasticacheParameterGroup#name}. |
-| <code><a href="#@cdktf/provider-aws.elasticacheParameterGroup.ElasticacheParameterGroupConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/elasticache_parameter_group#description ElasticacheParameterGroup#description}. |
-| <code><a href="#@cdktf/provider-aws.elasticacheParameterGroup.ElasticacheParameterGroupConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/elasticache_parameter_group#id ElasticacheParameterGroup#id}. |
+| <code><a href="#@cdktf/provider-aws.elasticacheParameterGroup.ElasticacheParameterGroupConfig.property.family">Family</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/elasticache_parameter_group#family ElasticacheParameterGroup#family}. |
+| <code><a href="#@cdktf/provider-aws.elasticacheParameterGroup.ElasticacheParameterGroupConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/elasticache_parameter_group#name ElasticacheParameterGroup#name}. |
+| <code><a href="#@cdktf/provider-aws.elasticacheParameterGroup.ElasticacheParameterGroupConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/elasticache_parameter_group#description ElasticacheParameterGroup#description}. |
+| <code><a href="#@cdktf/provider-aws.elasticacheParameterGroup.ElasticacheParameterGroupConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/elasticache_parameter_group#id ElasticacheParameterGroup#id}. |
 | <code><a href="#@cdktf/provider-aws.elasticacheParameterGroup.ElasticacheParameterGroupConfig.property.parameter">Parameter</a></code> | <code>interface{}</code> | parameter block. |
 | <code><a href="#@cdktf/provider-aws.elasticacheParameterGroup.ElasticacheParameterGroupConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktf/provider-aws.elasticacheParameterGroup.ElasticacheParameterGroupConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/elasticache_parameter_group#tags ElasticacheParameterGroup#tags}. |
-| <code><a href="#@cdktf/provider-aws.elasticacheParameterGroup.ElasticacheParameterGroupConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/elasticache_parameter_group#tags_all ElasticacheParameterGroup#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.elasticacheParameterGroup.ElasticacheParameterGroupConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/elasticache_parameter_group#tags ElasticacheParameterGroup#tags}. |
+| <code><a href="#@cdktf/provider-aws.elasticacheParameterGroup.ElasticacheParameterGroupConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/elasticache_parameter_group#tags_all ElasticacheParameterGroup#tags_all}. |
 
 ---
 
@@ -1030,7 +1030,7 @@ Family *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/elasticache_parameter_group#family ElasticacheParameterGroup#family}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/elasticache_parameter_group#family ElasticacheParameterGroup#family}.
 
 ---
 
@@ -1042,7 +1042,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/elasticache_parameter_group#name ElasticacheParameterGroup#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/elasticache_parameter_group#name ElasticacheParameterGroup#name}.
 
 ---
 
@@ -1054,7 +1054,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/elasticache_parameter_group#description ElasticacheParameterGroup#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/elasticache_parameter_group#description ElasticacheParameterGroup#description}.
 
 ---
 
@@ -1066,7 +1066,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/elasticache_parameter_group#id ElasticacheParameterGroup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/elasticache_parameter_group#id ElasticacheParameterGroup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1083,7 +1083,7 @@ Parameter interface{}
 
 parameter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/elasticache_parameter_group#parameter ElasticacheParameterGroup#parameter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/elasticache_parameter_group#parameter ElasticacheParameterGroup#parameter}
 
 ---
 
@@ -1097,7 +1097,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/elasticache_parameter_group#region ElasticacheParameterGroup#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/elasticache_parameter_group#region ElasticacheParameterGroup#region}
 
 ---
 
@@ -1109,7 +1109,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/elasticache_parameter_group#tags ElasticacheParameterGroup#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/elasticache_parameter_group#tags ElasticacheParameterGroup#tags}.
 
 ---
 
@@ -1121,7 +1121,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/elasticache_parameter_group#tags_all ElasticacheParameterGroup#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/elasticache_parameter_group#tags_all ElasticacheParameterGroup#tags_all}.
 
 ---
 
@@ -1142,8 +1142,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/elasticacheparametergroup
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.elasticacheParameterGroup.ElasticacheParameterGroupParameter.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/elasticache_parameter_group#name ElasticacheParameterGroup#name}. |
-| <code><a href="#@cdktf/provider-aws.elasticacheParameterGroup.ElasticacheParameterGroupParameter.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/elasticache_parameter_group#value ElasticacheParameterGroup#value}. |
+| <code><a href="#@cdktf/provider-aws.elasticacheParameterGroup.ElasticacheParameterGroupParameter.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/elasticache_parameter_group#name ElasticacheParameterGroup#name}. |
+| <code><a href="#@cdktf/provider-aws.elasticacheParameterGroup.ElasticacheParameterGroupParameter.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/elasticache_parameter_group#value ElasticacheParameterGroup#value}. |
 
 ---
 
@@ -1155,7 +1155,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/elasticache_parameter_group#name ElasticacheParameterGroup#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/elasticache_parameter_group#name ElasticacheParameterGroup#name}.
 
 ---
 
@@ -1167,7 +1167,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/elasticache_parameter_group#value ElasticacheParameterGroup#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/elasticache_parameter_group#value ElasticacheParameterGroup#value}.
 
 ---
 

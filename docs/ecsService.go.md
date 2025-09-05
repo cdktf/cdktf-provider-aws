@@ -4,7 +4,7 @@
 
 ### EcsService <a name="EcsService" id="@cdktf/provider-aws.ecsService.EcsService"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service aws_ecs_service}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service aws_ecs_service}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ecsService.EcsService.Initializer"></a>
 
@@ -908,7 +908,7 @@ The construct id used in the generated config for the EcsService to import.
 
 The id of the existing EcsService that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1968,9 +1968,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/ecsservice"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceAlarms.property.alarmNames">AlarmNames</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#alarm_names EcsService#alarm_names}. |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceAlarms.property.enable">Enable</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#enable EcsService#enable}. |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceAlarms.property.rollback">Rollback</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#rollback EcsService#rollback}. |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceAlarms.property.alarmNames">AlarmNames</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#alarm_names EcsService#alarm_names}. |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceAlarms.property.enable">Enable</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#enable EcsService#enable}. |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceAlarms.property.rollback">Rollback</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#rollback EcsService#rollback}. |
 
 ---
 
@@ -1982,7 +1982,7 @@ AlarmNames *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#alarm_names EcsService#alarm_names}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#alarm_names EcsService#alarm_names}.
 
 ---
 
@@ -1994,7 +1994,7 @@ Enable interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#enable EcsService#enable}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#enable EcsService#enable}.
 
 ---
 
@@ -2006,7 +2006,7 @@ Rollback interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#rollback EcsService#rollback}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#rollback EcsService#rollback}.
 
 ---
 
@@ -2028,9 +2028,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/ecsservice"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceCapacityProviderStrategy.property.capacityProvider">CapacityProvider</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#capacity_provider EcsService#capacity_provider}. |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceCapacityProviderStrategy.property.base">Base</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#base EcsService#base}. |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceCapacityProviderStrategy.property.weight">Weight</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#weight EcsService#weight}. |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceCapacityProviderStrategy.property.capacityProvider">CapacityProvider</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#capacity_provider EcsService#capacity_provider}. |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceCapacityProviderStrategy.property.base">Base</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#base EcsService#base}. |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceCapacityProviderStrategy.property.weight">Weight</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#weight EcsService#weight}. |
 
 ---
 
@@ -2042,7 +2042,7 @@ CapacityProvider *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#capacity_provider EcsService#capacity_provider}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#capacity_provider EcsService#capacity_provider}.
 
 ---
 
@@ -2054,7 +2054,7 @@ Base *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#base EcsService#base}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#base EcsService#base}.
 
 ---
 
@@ -2066,7 +2066,7 @@ Weight *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#weight EcsService#weight}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#weight EcsService#weight}.
 
 ---
 
@@ -2137,44 +2137,44 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/ecsservice"
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#name EcsService#name}. |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#name EcsService#name}. |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceConfig.property.alarms">Alarms</a></code> | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceAlarms">EcsServiceAlarms</a></code> | alarms block. |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceConfig.property.availabilityZoneRebalancing">AvailabilityZoneRebalancing</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#availability_zone_rebalancing EcsService#availability_zone_rebalancing}. |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceConfig.property.availabilityZoneRebalancing">AvailabilityZoneRebalancing</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#availability_zone_rebalancing EcsService#availability_zone_rebalancing}. |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceConfig.property.capacityProviderStrategy">CapacityProviderStrategy</a></code> | <code>interface{}</code> | capacity_provider_strategy block. |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceConfig.property.cluster">Cluster</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#cluster EcsService#cluster}. |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceConfig.property.cluster">Cluster</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#cluster EcsService#cluster}. |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceConfig.property.deploymentCircuitBreaker">DeploymentCircuitBreaker</a></code> | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceDeploymentCircuitBreaker">EcsServiceDeploymentCircuitBreaker</a></code> | deployment_circuit_breaker block. |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceConfig.property.deploymentConfiguration">DeploymentConfiguration</a></code> | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceDeploymentConfiguration">EcsServiceDeploymentConfiguration</a></code> | deployment_configuration block. |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceConfig.property.deploymentController">DeploymentController</a></code> | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceDeploymentController">EcsServiceDeploymentController</a></code> | deployment_controller block. |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceConfig.property.deploymentMaximumPercent">DeploymentMaximumPercent</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#deployment_maximum_percent EcsService#deployment_maximum_percent}. |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceConfig.property.deploymentMinimumHealthyPercent">DeploymentMinimumHealthyPercent</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#deployment_minimum_healthy_percent EcsService#deployment_minimum_healthy_percent}. |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceConfig.property.desiredCount">DesiredCount</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#desired_count EcsService#desired_count}. |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceConfig.property.enableEcsManagedTags">EnableEcsManagedTags</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#enable_ecs_managed_tags EcsService#enable_ecs_managed_tags}. |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceConfig.property.enableExecuteCommand">EnableExecuteCommand</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#enable_execute_command EcsService#enable_execute_command}. |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceConfig.property.forceDelete">ForceDelete</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#force_delete EcsService#force_delete}. |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceConfig.property.forceNewDeployment">ForceNewDeployment</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#force_new_deployment EcsService#force_new_deployment}. |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceConfig.property.healthCheckGracePeriodSeconds">HealthCheckGracePeriodSeconds</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#health_check_grace_period_seconds EcsService#health_check_grace_period_seconds}. |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceConfig.property.iamRole">IamRole</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#iam_role EcsService#iam_role}. |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#id EcsService#id}. |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceConfig.property.launchType">LaunchType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#launch_type EcsService#launch_type}. |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceConfig.property.deploymentMaximumPercent">DeploymentMaximumPercent</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#deployment_maximum_percent EcsService#deployment_maximum_percent}. |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceConfig.property.deploymentMinimumHealthyPercent">DeploymentMinimumHealthyPercent</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#deployment_minimum_healthy_percent EcsService#deployment_minimum_healthy_percent}. |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceConfig.property.desiredCount">DesiredCount</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#desired_count EcsService#desired_count}. |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceConfig.property.enableEcsManagedTags">EnableEcsManagedTags</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#enable_ecs_managed_tags EcsService#enable_ecs_managed_tags}. |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceConfig.property.enableExecuteCommand">EnableExecuteCommand</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#enable_execute_command EcsService#enable_execute_command}. |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceConfig.property.forceDelete">ForceDelete</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#force_delete EcsService#force_delete}. |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceConfig.property.forceNewDeployment">ForceNewDeployment</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#force_new_deployment EcsService#force_new_deployment}. |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceConfig.property.healthCheckGracePeriodSeconds">HealthCheckGracePeriodSeconds</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#health_check_grace_period_seconds EcsService#health_check_grace_period_seconds}. |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceConfig.property.iamRole">IamRole</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#iam_role EcsService#iam_role}. |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#id EcsService#id}. |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceConfig.property.launchType">LaunchType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#launch_type EcsService#launch_type}. |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceConfig.property.loadBalancer">LoadBalancer</a></code> | <code>interface{}</code> | load_balancer block. |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceConfig.property.networkConfiguration">NetworkConfiguration</a></code> | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceNetworkConfiguration">EcsServiceNetworkConfiguration</a></code> | network_configuration block. |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceConfig.property.orderedPlacementStrategy">OrderedPlacementStrategy</a></code> | <code>interface{}</code> | ordered_placement_strategy block. |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceConfig.property.placementConstraints">PlacementConstraints</a></code> | <code>interface{}</code> | placement_constraints block. |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceConfig.property.platformVersion">PlatformVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#platform_version EcsService#platform_version}. |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceConfig.property.propagateTags">PropagateTags</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#propagate_tags EcsService#propagate_tags}. |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceConfig.property.platformVersion">PlatformVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#platform_version EcsService#platform_version}. |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceConfig.property.propagateTags">PropagateTags</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#propagate_tags EcsService#propagate_tags}. |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceConfig.property.schedulingStrategy">SchedulingStrategy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#scheduling_strategy EcsService#scheduling_strategy}. |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceConfig.property.schedulingStrategy">SchedulingStrategy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#scheduling_strategy EcsService#scheduling_strategy}. |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceConfig.property.serviceConnectConfiguration">ServiceConnectConfiguration</a></code> | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfiguration">EcsServiceServiceConnectConfiguration</a></code> | service_connect_configuration block. |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceConfig.property.serviceRegistries">ServiceRegistries</a></code> | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceRegistries">EcsServiceServiceRegistries</a></code> | service_registries block. |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceConfig.property.sigintRollback">SigintRollback</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#sigint_rollback EcsService#sigint_rollback}. |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#tags EcsService#tags}. |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#tags_all EcsService#tags_all}. |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceConfig.property.taskDefinition">TaskDefinition</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#task_definition EcsService#task_definition}. |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceConfig.property.sigintRollback">SigintRollback</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#sigint_rollback EcsService#sigint_rollback}. |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#tags EcsService#tags}. |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#tags_all EcsService#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceConfig.property.taskDefinition">TaskDefinition</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#task_definition EcsService#task_definition}. |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceTimeouts">EcsServiceTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceConfig.property.triggers">Triggers</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#triggers EcsService#triggers}. |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceConfig.property.triggers">Triggers</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#triggers EcsService#triggers}. |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceConfig.property.volumeConfiguration">VolumeConfiguration</a></code> | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceVolumeConfiguration">EcsServiceVolumeConfiguration</a></code> | volume_configuration block. |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceConfig.property.vpcLatticeConfigurations">VpcLatticeConfigurations</a></code> | <code>interface{}</code> | vpc_lattice_configurations block. |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceConfig.property.waitForSteadyState">WaitForSteadyState</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#wait_for_steady_state EcsService#wait_for_steady_state}. |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceConfig.property.waitForSteadyState">WaitForSteadyState</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#wait_for_steady_state EcsService#wait_for_steady_state}. |
 
 ---
 
@@ -2256,7 +2256,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#name EcsService#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#name EcsService#name}.
 
 ---
 
@@ -2270,7 +2270,7 @@ Alarms EcsServiceAlarms
 
 alarms block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#alarms EcsService#alarms}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#alarms EcsService#alarms}
 
 ---
 
@@ -2282,7 +2282,7 @@ AvailabilityZoneRebalancing *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#availability_zone_rebalancing EcsService#availability_zone_rebalancing}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#availability_zone_rebalancing EcsService#availability_zone_rebalancing}.
 
 ---
 
@@ -2296,7 +2296,7 @@ CapacityProviderStrategy interface{}
 
 capacity_provider_strategy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#capacity_provider_strategy EcsService#capacity_provider_strategy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#capacity_provider_strategy EcsService#capacity_provider_strategy}
 
 ---
 
@@ -2308,7 +2308,7 @@ Cluster *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#cluster EcsService#cluster}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#cluster EcsService#cluster}.
 
 ---
 
@@ -2322,7 +2322,7 @@ DeploymentCircuitBreaker EcsServiceDeploymentCircuitBreaker
 
 deployment_circuit_breaker block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#deployment_circuit_breaker EcsService#deployment_circuit_breaker}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#deployment_circuit_breaker EcsService#deployment_circuit_breaker}
 
 ---
 
@@ -2336,7 +2336,7 @@ DeploymentConfiguration EcsServiceDeploymentConfiguration
 
 deployment_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#deployment_configuration EcsService#deployment_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#deployment_configuration EcsService#deployment_configuration}
 
 ---
 
@@ -2350,7 +2350,7 @@ DeploymentController EcsServiceDeploymentController
 
 deployment_controller block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#deployment_controller EcsService#deployment_controller}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#deployment_controller EcsService#deployment_controller}
 
 ---
 
@@ -2362,7 +2362,7 @@ DeploymentMaximumPercent *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#deployment_maximum_percent EcsService#deployment_maximum_percent}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#deployment_maximum_percent EcsService#deployment_maximum_percent}.
 
 ---
 
@@ -2374,7 +2374,7 @@ DeploymentMinimumHealthyPercent *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#deployment_minimum_healthy_percent EcsService#deployment_minimum_healthy_percent}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#deployment_minimum_healthy_percent EcsService#deployment_minimum_healthy_percent}.
 
 ---
 
@@ -2386,7 +2386,7 @@ DesiredCount *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#desired_count EcsService#desired_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#desired_count EcsService#desired_count}.
 
 ---
 
@@ -2398,7 +2398,7 @@ EnableEcsManagedTags interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#enable_ecs_managed_tags EcsService#enable_ecs_managed_tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#enable_ecs_managed_tags EcsService#enable_ecs_managed_tags}.
 
 ---
 
@@ -2410,7 +2410,7 @@ EnableExecuteCommand interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#enable_execute_command EcsService#enable_execute_command}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#enable_execute_command EcsService#enable_execute_command}.
 
 ---
 
@@ -2422,7 +2422,7 @@ ForceDelete interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#force_delete EcsService#force_delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#force_delete EcsService#force_delete}.
 
 ---
 
@@ -2434,7 +2434,7 @@ ForceNewDeployment interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#force_new_deployment EcsService#force_new_deployment}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#force_new_deployment EcsService#force_new_deployment}.
 
 ---
 
@@ -2446,7 +2446,7 @@ HealthCheckGracePeriodSeconds *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#health_check_grace_period_seconds EcsService#health_check_grace_period_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#health_check_grace_period_seconds EcsService#health_check_grace_period_seconds}.
 
 ---
 
@@ -2458,7 +2458,7 @@ IamRole *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#iam_role EcsService#iam_role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#iam_role EcsService#iam_role}.
 
 ---
 
@@ -2470,7 +2470,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#id EcsService#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#id EcsService#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2485,7 +2485,7 @@ LaunchType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#launch_type EcsService#launch_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#launch_type EcsService#launch_type}.
 
 ---
 
@@ -2499,7 +2499,7 @@ LoadBalancer interface{}
 
 load_balancer block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#load_balancer EcsService#load_balancer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#load_balancer EcsService#load_balancer}
 
 ---
 
@@ -2513,7 +2513,7 @@ NetworkConfiguration EcsServiceNetworkConfiguration
 
 network_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#network_configuration EcsService#network_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#network_configuration EcsService#network_configuration}
 
 ---
 
@@ -2527,7 +2527,7 @@ OrderedPlacementStrategy interface{}
 
 ordered_placement_strategy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#ordered_placement_strategy EcsService#ordered_placement_strategy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#ordered_placement_strategy EcsService#ordered_placement_strategy}
 
 ---
 
@@ -2541,7 +2541,7 @@ PlacementConstraints interface{}
 
 placement_constraints block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#placement_constraints EcsService#placement_constraints}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#placement_constraints EcsService#placement_constraints}
 
 ---
 
@@ -2553,7 +2553,7 @@ PlatformVersion *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#platform_version EcsService#platform_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#platform_version EcsService#platform_version}.
 
 ---
 
@@ -2565,7 +2565,7 @@ PropagateTags *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#propagate_tags EcsService#propagate_tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#propagate_tags EcsService#propagate_tags}.
 
 ---
 
@@ -2579,7 +2579,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#region EcsService#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#region EcsService#region}
 
 ---
 
@@ -2591,7 +2591,7 @@ SchedulingStrategy *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#scheduling_strategy EcsService#scheduling_strategy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#scheduling_strategy EcsService#scheduling_strategy}.
 
 ---
 
@@ -2605,7 +2605,7 @@ ServiceConnectConfiguration EcsServiceServiceConnectConfiguration
 
 service_connect_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#service_connect_configuration EcsService#service_connect_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#service_connect_configuration EcsService#service_connect_configuration}
 
 ---
 
@@ -2619,7 +2619,7 @@ ServiceRegistries EcsServiceServiceRegistries
 
 service_registries block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#service_registries EcsService#service_registries}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#service_registries EcsService#service_registries}
 
 ---
 
@@ -2631,7 +2631,7 @@ SigintRollback interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#sigint_rollback EcsService#sigint_rollback}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#sigint_rollback EcsService#sigint_rollback}.
 
 ---
 
@@ -2643,7 +2643,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#tags EcsService#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#tags EcsService#tags}.
 
 ---
 
@@ -2655,7 +2655,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#tags_all EcsService#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#tags_all EcsService#tags_all}.
 
 ---
 
@@ -2667,7 +2667,7 @@ TaskDefinition *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#task_definition EcsService#task_definition}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#task_definition EcsService#task_definition}.
 
 ---
 
@@ -2681,7 +2681,7 @@ Timeouts EcsServiceTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#timeouts EcsService#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#timeouts EcsService#timeouts}
 
 ---
 
@@ -2693,7 +2693,7 @@ Triggers *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#triggers EcsService#triggers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#triggers EcsService#triggers}.
 
 ---
 
@@ -2707,7 +2707,7 @@ VolumeConfiguration EcsServiceVolumeConfiguration
 
 volume_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#volume_configuration EcsService#volume_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#volume_configuration EcsService#volume_configuration}
 
 ---
 
@@ -2721,7 +2721,7 @@ VpcLatticeConfigurations interface{}
 
 vpc_lattice_configurations block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#vpc_lattice_configurations EcsService#vpc_lattice_configurations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#vpc_lattice_configurations EcsService#vpc_lattice_configurations}
 
 ---
 
@@ -2733,7 +2733,7 @@ WaitForSteadyState interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#wait_for_steady_state EcsService#wait_for_steady_state}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#wait_for_steady_state EcsService#wait_for_steady_state}.
 
 ---
 
@@ -2754,8 +2754,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/ecsservice"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceDeploymentCircuitBreaker.property.enable">Enable</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#enable EcsService#enable}. |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceDeploymentCircuitBreaker.property.rollback">Rollback</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#rollback EcsService#rollback}. |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceDeploymentCircuitBreaker.property.enable">Enable</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#enable EcsService#enable}. |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceDeploymentCircuitBreaker.property.rollback">Rollback</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#rollback EcsService#rollback}. |
 
 ---
 
@@ -2767,7 +2767,7 @@ Enable interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#enable EcsService#enable}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#enable EcsService#enable}.
 
 ---
 
@@ -2779,7 +2779,7 @@ Rollback interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#rollback EcsService#rollback}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#rollback EcsService#rollback}.
 
 ---
 
@@ -2801,9 +2801,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/ecsservice"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceDeploymentConfiguration.property.bakeTimeInMinutes">BakeTimeInMinutes</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#bake_time_in_minutes EcsService#bake_time_in_minutes}. |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceDeploymentConfiguration.property.bakeTimeInMinutes">BakeTimeInMinutes</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#bake_time_in_minutes EcsService#bake_time_in_minutes}. |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceDeploymentConfiguration.property.lifecycleHook">LifecycleHook</a></code> | <code>interface{}</code> | lifecycle_hook block. |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceDeploymentConfiguration.property.strategy">Strategy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#strategy EcsService#strategy}. |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceDeploymentConfiguration.property.strategy">Strategy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#strategy EcsService#strategy}. |
 
 ---
 
@@ -2815,7 +2815,7 @@ BakeTimeInMinutes *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#bake_time_in_minutes EcsService#bake_time_in_minutes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#bake_time_in_minutes EcsService#bake_time_in_minutes}.
 
 ---
 
@@ -2829,7 +2829,7 @@ LifecycleHook interface{}
 
 lifecycle_hook block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#lifecycle_hook EcsService#lifecycle_hook}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#lifecycle_hook EcsService#lifecycle_hook}
 
 ---
 
@@ -2841,7 +2841,7 @@ Strategy *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#strategy EcsService#strategy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#strategy EcsService#strategy}.
 
 ---
 
@@ -2863,9 +2863,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/ecsservice"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceDeploymentConfigurationLifecycleHook.property.hookTargetArn">HookTargetArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#hook_target_arn EcsService#hook_target_arn}. |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceDeploymentConfigurationLifecycleHook.property.lifecycleStages">LifecycleStages</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#lifecycle_stages EcsService#lifecycle_stages}. |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceDeploymentConfigurationLifecycleHook.property.roleArn">RoleArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#role_arn EcsService#role_arn}. |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceDeploymentConfigurationLifecycleHook.property.hookTargetArn">HookTargetArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#hook_target_arn EcsService#hook_target_arn}. |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceDeploymentConfigurationLifecycleHook.property.lifecycleStages">LifecycleStages</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#lifecycle_stages EcsService#lifecycle_stages}. |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceDeploymentConfigurationLifecycleHook.property.roleArn">RoleArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#role_arn EcsService#role_arn}. |
 
 ---
 
@@ -2877,7 +2877,7 @@ HookTargetArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#hook_target_arn EcsService#hook_target_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#hook_target_arn EcsService#hook_target_arn}.
 
 ---
 
@@ -2889,7 +2889,7 @@ LifecycleStages *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#lifecycle_stages EcsService#lifecycle_stages}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#lifecycle_stages EcsService#lifecycle_stages}.
 
 ---
 
@@ -2901,7 +2901,7 @@ RoleArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#role_arn EcsService#role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#role_arn EcsService#role_arn}.
 
 ---
 
@@ -2921,7 +2921,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/ecsservice"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceDeploymentController.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#type EcsService#type}. |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceDeploymentController.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#type EcsService#type}. |
 
 ---
 
@@ -2933,7 +2933,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#type EcsService#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#type EcsService#type}.
 
 ---
 
@@ -2957,11 +2957,11 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/ecsservice"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceLoadBalancer.property.containerName">ContainerName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#container_name EcsService#container_name}. |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceLoadBalancer.property.containerPort">ContainerPort</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#container_port EcsService#container_port}. |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceLoadBalancer.property.containerName">ContainerName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#container_name EcsService#container_name}. |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceLoadBalancer.property.containerPort">ContainerPort</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#container_port EcsService#container_port}. |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceLoadBalancer.property.advancedConfiguration">AdvancedConfiguration</a></code> | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceLoadBalancerAdvancedConfiguration">EcsServiceLoadBalancerAdvancedConfiguration</a></code> | advanced_configuration block. |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceLoadBalancer.property.elbName">ElbName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#elb_name EcsService#elb_name}. |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceLoadBalancer.property.targetGroupArn">TargetGroupArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#target_group_arn EcsService#target_group_arn}. |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceLoadBalancer.property.elbName">ElbName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#elb_name EcsService#elb_name}. |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceLoadBalancer.property.targetGroupArn">TargetGroupArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#target_group_arn EcsService#target_group_arn}. |
 
 ---
 
@@ -2973,7 +2973,7 @@ ContainerName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#container_name EcsService#container_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#container_name EcsService#container_name}.
 
 ---
 
@@ -2985,7 +2985,7 @@ ContainerPort *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#container_port EcsService#container_port}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#container_port EcsService#container_port}.
 
 ---
 
@@ -2999,7 +2999,7 @@ AdvancedConfiguration EcsServiceLoadBalancerAdvancedConfiguration
 
 advanced_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#advanced_configuration EcsService#advanced_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#advanced_configuration EcsService#advanced_configuration}
 
 ---
 
@@ -3011,7 +3011,7 @@ ElbName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#elb_name EcsService#elb_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#elb_name EcsService#elb_name}.
 
 ---
 
@@ -3023,7 +3023,7 @@ TargetGroupArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#target_group_arn EcsService#target_group_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#target_group_arn EcsService#target_group_arn}.
 
 ---
 
@@ -3046,10 +3046,10 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/ecsservice"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceLoadBalancerAdvancedConfiguration.property.alternateTargetGroupArn">AlternateTargetGroupArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#alternate_target_group_arn EcsService#alternate_target_group_arn}. |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceLoadBalancerAdvancedConfiguration.property.productionListenerRule">ProductionListenerRule</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#production_listener_rule EcsService#production_listener_rule}. |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceLoadBalancerAdvancedConfiguration.property.roleArn">RoleArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#role_arn EcsService#role_arn}. |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceLoadBalancerAdvancedConfiguration.property.testListenerRule">TestListenerRule</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#test_listener_rule EcsService#test_listener_rule}. |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceLoadBalancerAdvancedConfiguration.property.alternateTargetGroupArn">AlternateTargetGroupArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#alternate_target_group_arn EcsService#alternate_target_group_arn}. |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceLoadBalancerAdvancedConfiguration.property.productionListenerRule">ProductionListenerRule</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#production_listener_rule EcsService#production_listener_rule}. |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceLoadBalancerAdvancedConfiguration.property.roleArn">RoleArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#role_arn EcsService#role_arn}. |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceLoadBalancerAdvancedConfiguration.property.testListenerRule">TestListenerRule</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#test_listener_rule EcsService#test_listener_rule}. |
 
 ---
 
@@ -3061,7 +3061,7 @@ AlternateTargetGroupArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#alternate_target_group_arn EcsService#alternate_target_group_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#alternate_target_group_arn EcsService#alternate_target_group_arn}.
 
 ---
 
@@ -3073,7 +3073,7 @@ ProductionListenerRule *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#production_listener_rule EcsService#production_listener_rule}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#production_listener_rule EcsService#production_listener_rule}.
 
 ---
 
@@ -3085,7 +3085,7 @@ RoleArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#role_arn EcsService#role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#role_arn EcsService#role_arn}.
 
 ---
 
@@ -3097,7 +3097,7 @@ TestListenerRule *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#test_listener_rule EcsService#test_listener_rule}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#test_listener_rule EcsService#test_listener_rule}.
 
 ---
 
@@ -3119,9 +3119,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/ecsservice"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceNetworkConfiguration.property.subnets">Subnets</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#subnets EcsService#subnets}. |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceNetworkConfiguration.property.assignPublicIp">AssignPublicIp</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#assign_public_ip EcsService#assign_public_ip}. |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceNetworkConfiguration.property.securityGroups">SecurityGroups</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#security_groups EcsService#security_groups}. |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceNetworkConfiguration.property.subnets">Subnets</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#subnets EcsService#subnets}. |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceNetworkConfiguration.property.assignPublicIp">AssignPublicIp</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#assign_public_ip EcsService#assign_public_ip}. |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceNetworkConfiguration.property.securityGroups">SecurityGroups</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#security_groups EcsService#security_groups}. |
 
 ---
 
@@ -3133,7 +3133,7 @@ Subnets *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#subnets EcsService#subnets}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#subnets EcsService#subnets}.
 
 ---
 
@@ -3145,7 +3145,7 @@ AssignPublicIp interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#assign_public_ip EcsService#assign_public_ip}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#assign_public_ip EcsService#assign_public_ip}.
 
 ---
 
@@ -3157,7 +3157,7 @@ SecurityGroups *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#security_groups EcsService#security_groups}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#security_groups EcsService#security_groups}.
 
 ---
 
@@ -3178,8 +3178,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/ecsservice"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceOrderedPlacementStrategy.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#type EcsService#type}. |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceOrderedPlacementStrategy.property.field">Field</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#field EcsService#field}. |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceOrderedPlacementStrategy.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#type EcsService#type}. |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceOrderedPlacementStrategy.property.field">Field</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#field EcsService#field}. |
 
 ---
 
@@ -3191,7 +3191,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#type EcsService#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#type EcsService#type}.
 
 ---
 
@@ -3203,7 +3203,7 @@ Field *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#field EcsService#field}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#field EcsService#field}.
 
 ---
 
@@ -3224,8 +3224,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/ecsservice"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServicePlacementConstraints.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#type EcsService#type}. |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServicePlacementConstraints.property.expression">Expression</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#expression EcsService#expression}. |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServicePlacementConstraints.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#type EcsService#type}. |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServicePlacementConstraints.property.expression">Expression</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#expression EcsService#expression}. |
 
 ---
 
@@ -3237,7 +3237,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#type EcsService#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#type EcsService#type}.
 
 ---
 
@@ -3249,7 +3249,7 @@ Expression *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#expression EcsService#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#expression EcsService#expression}.
 
 ---
 
@@ -3272,9 +3272,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/ecsservice"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfiguration.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#enabled EcsService#enabled}. |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfiguration.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#enabled EcsService#enabled}. |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfiguration.property.logConfiguration">LogConfiguration</a></code> | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationLogConfiguration">EcsServiceServiceConnectConfigurationLogConfiguration</a></code> | log_configuration block. |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfiguration.property.namespace">Namespace</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#namespace EcsService#namespace}. |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfiguration.property.namespace">Namespace</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#namespace EcsService#namespace}. |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfiguration.property.service">Service</a></code> | <code>interface{}</code> | service block. |
 
 ---
@@ -3287,7 +3287,7 @@ Enabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#enabled EcsService#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#enabled EcsService#enabled}.
 
 ---
 
@@ -3301,7 +3301,7 @@ LogConfiguration EcsServiceServiceConnectConfigurationLogConfiguration
 
 log_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#log_configuration EcsService#log_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#log_configuration EcsService#log_configuration}
 
 ---
 
@@ -3313,7 +3313,7 @@ Namespace *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#namespace EcsService#namespace}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#namespace EcsService#namespace}.
 
 ---
 
@@ -3327,7 +3327,7 @@ Service interface{}
 
 service block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#service EcsService#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#service EcsService#service}
 
 ---
 
@@ -3349,8 +3349,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/ecsservice"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationLogConfiguration.property.logDriver">LogDriver</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#log_driver EcsService#log_driver}. |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationLogConfiguration.property.options">Options</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#options EcsService#options}. |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationLogConfiguration.property.logDriver">LogDriver</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#log_driver EcsService#log_driver}. |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationLogConfiguration.property.options">Options</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#options EcsService#options}. |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationLogConfiguration.property.secretOption">SecretOption</a></code> | <code>interface{}</code> | secret_option block. |
 
 ---
@@ -3363,7 +3363,7 @@ LogDriver *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#log_driver EcsService#log_driver}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#log_driver EcsService#log_driver}.
 
 ---
 
@@ -3375,7 +3375,7 @@ Options *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#options EcsService#options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#options EcsService#options}.
 
 ---
 
@@ -3389,7 +3389,7 @@ SecretOption interface{}
 
 secret_option block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#secret_option EcsService#secret_option}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#secret_option EcsService#secret_option}
 
 ---
 
@@ -3410,8 +3410,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/ecsservice"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationLogConfigurationSecretOption.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#name EcsService#name}. |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationLogConfigurationSecretOption.property.valueFrom">ValueFrom</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#value_from EcsService#value_from}. |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationLogConfigurationSecretOption.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#name EcsService#name}. |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationLogConfigurationSecretOption.property.valueFrom">ValueFrom</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#value_from EcsService#value_from}. |
 
 ---
 
@@ -3423,7 +3423,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#name EcsService#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#name EcsService#name}.
 
 ---
 
@@ -3435,7 +3435,7 @@ ValueFrom *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#value_from EcsService#value_from}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#value_from EcsService#value_from}.
 
 ---
 
@@ -3460,10 +3460,10 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/ecsservice"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationService.property.portName">PortName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#port_name EcsService#port_name}. |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationService.property.portName">PortName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#port_name EcsService#port_name}. |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationService.property.clientAlias">ClientAlias</a></code> | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationServiceClientAlias">EcsServiceServiceConnectConfigurationServiceClientAlias</a></code> | client_alias block. |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationService.property.discoveryName">DiscoveryName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#discovery_name EcsService#discovery_name}. |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationService.property.ingressPortOverride">IngressPortOverride</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#ingress_port_override EcsService#ingress_port_override}. |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationService.property.discoveryName">DiscoveryName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#discovery_name EcsService#discovery_name}. |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationService.property.ingressPortOverride">IngressPortOverride</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#ingress_port_override EcsService#ingress_port_override}. |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationService.property.timeout">Timeout</a></code> | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationServiceTimeout">EcsServiceServiceConnectConfigurationServiceTimeout</a></code> | timeout block. |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationService.property.tls">Tls</a></code> | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationServiceTls">EcsServiceServiceConnectConfigurationServiceTls</a></code> | tls block. |
 
@@ -3477,7 +3477,7 @@ PortName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#port_name EcsService#port_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#port_name EcsService#port_name}.
 
 ---
 
@@ -3491,7 +3491,7 @@ ClientAlias EcsServiceServiceConnectConfigurationServiceClientAlias
 
 client_alias block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#client_alias EcsService#client_alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#client_alias EcsService#client_alias}
 
 ---
 
@@ -3503,7 +3503,7 @@ DiscoveryName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#discovery_name EcsService#discovery_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#discovery_name EcsService#discovery_name}.
 
 ---
 
@@ -3515,7 +3515,7 @@ IngressPortOverride *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#ingress_port_override EcsService#ingress_port_override}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#ingress_port_override EcsService#ingress_port_override}.
 
 ---
 
@@ -3529,7 +3529,7 @@ Timeout EcsServiceServiceConnectConfigurationServiceTimeout
 
 timeout block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#timeout EcsService#timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#timeout EcsService#timeout}
 
 ---
 
@@ -3543,7 +3543,7 @@ Tls EcsServiceServiceConnectConfigurationServiceTls
 
 tls block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#tls EcsService#tls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#tls EcsService#tls}
 
 ---
 
@@ -3565,8 +3565,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/ecsservice"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationServiceClientAlias.property.port">Port</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#port EcsService#port}. |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationServiceClientAlias.property.dnsName">DnsName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#dns_name EcsService#dns_name}. |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationServiceClientAlias.property.port">Port</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#port EcsService#port}. |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationServiceClientAlias.property.dnsName">DnsName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#dns_name EcsService#dns_name}. |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationServiceClientAlias.property.testTrafficRules">TestTrafficRules</a></code> | <code>interface{}</code> | test_traffic_rules block. |
 
 ---
@@ -3579,7 +3579,7 @@ Port *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#port EcsService#port}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#port EcsService#port}.
 
 ---
 
@@ -3591,7 +3591,7 @@ DnsName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#dns_name EcsService#dns_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#dns_name EcsService#dns_name}.
 
 ---
 
@@ -3605,7 +3605,7 @@ TestTrafficRules interface{}
 
 test_traffic_rules block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#test_traffic_rules EcsService#test_traffic_rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#test_traffic_rules EcsService#test_traffic_rules}
 
 ---
 
@@ -3639,7 +3639,7 @@ Header EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRulesHe
 
 header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#header EcsService#header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#header EcsService#header}
 
 ---
 
@@ -3660,7 +3660,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/ecsservice"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRulesHeader.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#name EcsService#name}. |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRulesHeader.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#name EcsService#name}. |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRulesHeader.property.value">Value</a></code> | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRulesHeaderValue">EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRulesHeaderValue</a></code> | value block. |
 
 ---
@@ -3673,7 +3673,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#name EcsService#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#name EcsService#name}.
 
 ---
 
@@ -3687,7 +3687,7 @@ Value EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRulesHea
 
 value block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#value EcsService#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#value EcsService#value}
 
 ---
 
@@ -3707,7 +3707,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/ecsservice"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRulesHeaderValue.property.exact">Exact</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#exact EcsService#exact}. |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRulesHeaderValue.property.exact">Exact</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#exact EcsService#exact}. |
 
 ---
 
@@ -3719,7 +3719,7 @@ Exact *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#exact EcsService#exact}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#exact EcsService#exact}.
 
 ---
 
@@ -3740,8 +3740,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/ecsservice"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationServiceTimeout.property.idleTimeoutSeconds">IdleTimeoutSeconds</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#idle_timeout_seconds EcsService#idle_timeout_seconds}. |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationServiceTimeout.property.perRequestTimeoutSeconds">PerRequestTimeoutSeconds</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#per_request_timeout_seconds EcsService#per_request_timeout_seconds}. |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationServiceTimeout.property.idleTimeoutSeconds">IdleTimeoutSeconds</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#idle_timeout_seconds EcsService#idle_timeout_seconds}. |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationServiceTimeout.property.perRequestTimeoutSeconds">PerRequestTimeoutSeconds</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#per_request_timeout_seconds EcsService#per_request_timeout_seconds}. |
 
 ---
 
@@ -3753,7 +3753,7 @@ IdleTimeoutSeconds *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#idle_timeout_seconds EcsService#idle_timeout_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#idle_timeout_seconds EcsService#idle_timeout_seconds}.
 
 ---
 
@@ -3765,7 +3765,7 @@ PerRequestTimeoutSeconds *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#per_request_timeout_seconds EcsService#per_request_timeout_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#per_request_timeout_seconds EcsService#per_request_timeout_seconds}.
 
 ---
 
@@ -3788,8 +3788,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/ecsservice"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationServiceTls.property.issuerCertAuthority">IssuerCertAuthority</a></code> | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationServiceTlsIssuerCertAuthority">EcsServiceServiceConnectConfigurationServiceTlsIssuerCertAuthority</a></code> | issuer_cert_authority block. |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationServiceTls.property.kmsKey">KmsKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#kms_key EcsService#kms_key}. |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationServiceTls.property.roleArn">RoleArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#role_arn EcsService#role_arn}. |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationServiceTls.property.kmsKey">KmsKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#kms_key EcsService#kms_key}. |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationServiceTls.property.roleArn">RoleArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#role_arn EcsService#role_arn}. |
 
 ---
 
@@ -3803,7 +3803,7 @@ IssuerCertAuthority EcsServiceServiceConnectConfigurationServiceTlsIssuerCertAut
 
 issuer_cert_authority block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#issuer_cert_authority EcsService#issuer_cert_authority}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#issuer_cert_authority EcsService#issuer_cert_authority}
 
 ---
 
@@ -3815,7 +3815,7 @@ KmsKey *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#kms_key EcsService#kms_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#kms_key EcsService#kms_key}.
 
 ---
 
@@ -3827,7 +3827,7 @@ RoleArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#role_arn EcsService#role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#role_arn EcsService#role_arn}.
 
 ---
 
@@ -3847,7 +3847,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/ecsservice"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationServiceTlsIssuerCertAuthority.property.awsPcaAuthorityArn">AwsPcaAuthorityArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#aws_pca_authority_arn EcsService#aws_pca_authority_arn}. |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationServiceTlsIssuerCertAuthority.property.awsPcaAuthorityArn">AwsPcaAuthorityArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#aws_pca_authority_arn EcsService#aws_pca_authority_arn}. |
 
 ---
 
@@ -3859,7 +3859,7 @@ AwsPcaAuthorityArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#aws_pca_authority_arn EcsService#aws_pca_authority_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#aws_pca_authority_arn EcsService#aws_pca_authority_arn}.
 
 ---
 
@@ -3882,10 +3882,10 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/ecsservice"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceRegistries.property.registryArn">RegistryArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#registry_arn EcsService#registry_arn}. |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceRegistries.property.containerName">ContainerName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#container_name EcsService#container_name}. |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceRegistries.property.containerPort">ContainerPort</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#container_port EcsService#container_port}. |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceRegistries.property.port">Port</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#port EcsService#port}. |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceRegistries.property.registryArn">RegistryArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#registry_arn EcsService#registry_arn}. |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceRegistries.property.containerName">ContainerName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#container_name EcsService#container_name}. |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceRegistries.property.containerPort">ContainerPort</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#container_port EcsService#container_port}. |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceServiceRegistries.property.port">Port</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#port EcsService#port}. |
 
 ---
 
@@ -3897,7 +3897,7 @@ RegistryArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#registry_arn EcsService#registry_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#registry_arn EcsService#registry_arn}.
 
 ---
 
@@ -3909,7 +3909,7 @@ ContainerName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#container_name EcsService#container_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#container_name EcsService#container_name}.
 
 ---
 
@@ -3921,7 +3921,7 @@ ContainerPort *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#container_port EcsService#container_port}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#container_port EcsService#container_port}.
 
 ---
 
@@ -3933,7 +3933,7 @@ Port *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#port EcsService#port}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#port EcsService#port}.
 
 ---
 
@@ -3955,9 +3955,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/ecsservice"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#create EcsService#create}. |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#delete EcsService#delete}. |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#update EcsService#update}. |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#create EcsService#create}. |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#delete EcsService#delete}. |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#update EcsService#update}. |
 
 ---
 
@@ -3969,7 +3969,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#create EcsService#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#create EcsService#create}.
 
 ---
 
@@ -3981,7 +3981,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#delete EcsService#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#delete EcsService#delete}.
 
 ---
 
@@ -3993,7 +3993,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#update EcsService#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#update EcsService#update}.
 
 ---
 
@@ -4015,7 +4015,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/ecsservice"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceVolumeConfiguration.property.managedEbsVolume">ManagedEbsVolume</a></code> | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceVolumeConfigurationManagedEbsVolume">EcsServiceVolumeConfigurationManagedEbsVolume</a></code> | managed_ebs_volume block. |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceVolumeConfiguration.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#name EcsService#name}. |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceVolumeConfiguration.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#name EcsService#name}. |
 
 ---
 
@@ -4029,7 +4029,7 @@ ManagedEbsVolume EcsServiceVolumeConfigurationManagedEbsVolume
 
 managed_ebs_volume block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#managed_ebs_volume EcsService#managed_ebs_volume}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#managed_ebs_volume EcsService#managed_ebs_volume}
 
 ---
 
@@ -4041,7 +4041,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#name EcsService#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#name EcsService#name}.
 
 ---
 
@@ -4071,17 +4071,17 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/ecsservice"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceVolumeConfigurationManagedEbsVolume.property.roleArn">RoleArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#role_arn EcsService#role_arn}. |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceVolumeConfigurationManagedEbsVolume.property.encrypted">Encrypted</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#encrypted EcsService#encrypted}. |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceVolumeConfigurationManagedEbsVolume.property.fileSystemType">FileSystemType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#file_system_type EcsService#file_system_type}. |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceVolumeConfigurationManagedEbsVolume.property.iops">Iops</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#iops EcsService#iops}. |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceVolumeConfigurationManagedEbsVolume.property.kmsKeyId">KmsKeyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#kms_key_id EcsService#kms_key_id}. |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceVolumeConfigurationManagedEbsVolume.property.sizeInGb">SizeInGb</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#size_in_gb EcsService#size_in_gb}. |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceVolumeConfigurationManagedEbsVolume.property.snapshotId">SnapshotId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#snapshot_id EcsService#snapshot_id}. |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceVolumeConfigurationManagedEbsVolume.property.roleArn">RoleArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#role_arn EcsService#role_arn}. |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceVolumeConfigurationManagedEbsVolume.property.encrypted">Encrypted</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#encrypted EcsService#encrypted}. |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceVolumeConfigurationManagedEbsVolume.property.fileSystemType">FileSystemType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#file_system_type EcsService#file_system_type}. |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceVolumeConfigurationManagedEbsVolume.property.iops">Iops</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#iops EcsService#iops}. |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceVolumeConfigurationManagedEbsVolume.property.kmsKeyId">KmsKeyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#kms_key_id EcsService#kms_key_id}. |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceVolumeConfigurationManagedEbsVolume.property.sizeInGb">SizeInGb</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#size_in_gb EcsService#size_in_gb}. |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceVolumeConfigurationManagedEbsVolume.property.snapshotId">SnapshotId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#snapshot_id EcsService#snapshot_id}. |
 | <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceVolumeConfigurationManagedEbsVolume.property.tagSpecifications">TagSpecifications</a></code> | <code>interface{}</code> | tag_specifications block. |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceVolumeConfigurationManagedEbsVolume.property.throughput">Throughput</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#throughput EcsService#throughput}. |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceVolumeConfigurationManagedEbsVolume.property.volumeInitializationRate">VolumeInitializationRate</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#volume_initialization_rate EcsService#volume_initialization_rate}. |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceVolumeConfigurationManagedEbsVolume.property.volumeType">VolumeType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#volume_type EcsService#volume_type}. |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceVolumeConfigurationManagedEbsVolume.property.throughput">Throughput</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#throughput EcsService#throughput}. |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceVolumeConfigurationManagedEbsVolume.property.volumeInitializationRate">VolumeInitializationRate</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#volume_initialization_rate EcsService#volume_initialization_rate}. |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceVolumeConfigurationManagedEbsVolume.property.volumeType">VolumeType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#volume_type EcsService#volume_type}. |
 
 ---
 
@@ -4093,7 +4093,7 @@ RoleArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#role_arn EcsService#role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#role_arn EcsService#role_arn}.
 
 ---
 
@@ -4105,7 +4105,7 @@ Encrypted interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#encrypted EcsService#encrypted}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#encrypted EcsService#encrypted}.
 
 ---
 
@@ -4117,7 +4117,7 @@ FileSystemType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#file_system_type EcsService#file_system_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#file_system_type EcsService#file_system_type}.
 
 ---
 
@@ -4129,7 +4129,7 @@ Iops *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#iops EcsService#iops}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#iops EcsService#iops}.
 
 ---
 
@@ -4141,7 +4141,7 @@ KmsKeyId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#kms_key_id EcsService#kms_key_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#kms_key_id EcsService#kms_key_id}.
 
 ---
 
@@ -4153,7 +4153,7 @@ SizeInGb *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#size_in_gb EcsService#size_in_gb}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#size_in_gb EcsService#size_in_gb}.
 
 ---
 
@@ -4165,7 +4165,7 @@ SnapshotId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#snapshot_id EcsService#snapshot_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#snapshot_id EcsService#snapshot_id}.
 
 ---
 
@@ -4179,7 +4179,7 @@ TagSpecifications interface{}
 
 tag_specifications block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#tag_specifications EcsService#tag_specifications}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#tag_specifications EcsService#tag_specifications}
 
 ---
 
@@ -4191,7 +4191,7 @@ Throughput *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#throughput EcsService#throughput}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#throughput EcsService#throughput}.
 
 ---
 
@@ -4203,7 +4203,7 @@ VolumeInitializationRate *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#volume_initialization_rate EcsService#volume_initialization_rate}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#volume_initialization_rate EcsService#volume_initialization_rate}.
 
 ---
 
@@ -4215,7 +4215,7 @@ VolumeType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#volume_type EcsService#volume_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#volume_type EcsService#volume_type}.
 
 ---
 
@@ -4237,9 +4237,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/ecsservice"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceVolumeConfigurationManagedEbsVolumeTagSpecifications.property.resourceType">ResourceType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#resource_type EcsService#resource_type}. |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceVolumeConfigurationManagedEbsVolumeTagSpecifications.property.propagateTags">PropagateTags</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#propagate_tags EcsService#propagate_tags}. |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceVolumeConfigurationManagedEbsVolumeTagSpecifications.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#tags EcsService#tags}. |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceVolumeConfigurationManagedEbsVolumeTagSpecifications.property.resourceType">ResourceType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#resource_type EcsService#resource_type}. |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceVolumeConfigurationManagedEbsVolumeTagSpecifications.property.propagateTags">PropagateTags</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#propagate_tags EcsService#propagate_tags}. |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceVolumeConfigurationManagedEbsVolumeTagSpecifications.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#tags EcsService#tags}. |
 
 ---
 
@@ -4251,7 +4251,7 @@ ResourceType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#resource_type EcsService#resource_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#resource_type EcsService#resource_type}.
 
 ---
 
@@ -4263,7 +4263,7 @@ PropagateTags *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#propagate_tags EcsService#propagate_tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#propagate_tags EcsService#propagate_tags}.
 
 ---
 
@@ -4275,7 +4275,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#tags EcsService#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#tags EcsService#tags}.
 
 ---
 
@@ -4297,9 +4297,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/ecsservice"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceVpcLatticeConfigurations.property.portName">PortName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#port_name EcsService#port_name}. |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceVpcLatticeConfigurations.property.roleArn">RoleArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#role_arn EcsService#role_arn}. |
-| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceVpcLatticeConfigurations.property.targetGroupArn">TargetGroupArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#target_group_arn EcsService#target_group_arn}. |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceVpcLatticeConfigurations.property.portName">PortName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#port_name EcsService#port_name}. |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceVpcLatticeConfigurations.property.roleArn">RoleArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#role_arn EcsService#role_arn}. |
+| <code><a href="#@cdktf/provider-aws.ecsService.EcsServiceVpcLatticeConfigurations.property.targetGroupArn">TargetGroupArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#target_group_arn EcsService#target_group_arn}. |
 
 ---
 
@@ -4311,7 +4311,7 @@ PortName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#port_name EcsService#port_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#port_name EcsService#port_name}.
 
 ---
 
@@ -4323,7 +4323,7 @@ RoleArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#role_arn EcsService#role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#role_arn EcsService#role_arn}.
 
 ---
 
@@ -4335,7 +4335,7 @@ TargetGroupArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service#target_group_arn EcsService#target_group_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecs_service#target_group_arn EcsService#target_group_arn}.
 
 ---
 

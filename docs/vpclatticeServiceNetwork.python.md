@@ -4,7 +4,7 @@
 
 ### VpclatticeServiceNetwork <a name="VpclatticeServiceNetwork" id="@cdktf/provider-aws.vpclatticeServiceNetwork.VpclatticeServiceNetwork"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/vpclattice_service_network aws_vpclattice_service_network}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/vpclattice_service_network aws_vpclattice_service_network}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.vpclatticeServiceNetwork.VpclatticeServiceNetwork.Initializer"></a>
 
@@ -41,12 +41,12 @@ vpclatticeServiceNetwork.VpclatticeServiceNetwork(
 | <code><a href="#@cdktf/provider-aws.vpclatticeServiceNetwork.VpclatticeServiceNetwork.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.vpclatticeServiceNetwork.VpclatticeServiceNetwork.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.vpclatticeServiceNetwork.VpclatticeServiceNetwork.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpclatticeServiceNetwork.VpclatticeServiceNetwork.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/vpclattice_service_network#name VpclatticeServiceNetwork#name}. |
-| <code><a href="#@cdktf/provider-aws.vpclatticeServiceNetwork.VpclatticeServiceNetwork.Initializer.parameter.authType">auth_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/vpclattice_service_network#auth_type VpclatticeServiceNetwork#auth_type}. |
-| <code><a href="#@cdktf/provider-aws.vpclatticeServiceNetwork.VpclatticeServiceNetwork.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/vpclattice_service_network#id VpclatticeServiceNetwork#id}. |
+| <code><a href="#@cdktf/provider-aws.vpclatticeServiceNetwork.VpclatticeServiceNetwork.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/vpclattice_service_network#name VpclatticeServiceNetwork#name}. |
+| <code><a href="#@cdktf/provider-aws.vpclatticeServiceNetwork.VpclatticeServiceNetwork.Initializer.parameter.authType">auth_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/vpclattice_service_network#auth_type VpclatticeServiceNetwork#auth_type}. |
+| <code><a href="#@cdktf/provider-aws.vpclatticeServiceNetwork.VpclatticeServiceNetwork.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/vpclattice_service_network#id VpclatticeServiceNetwork#id}. |
 | <code><a href="#@cdktf/provider-aws.vpclatticeServiceNetwork.VpclatticeServiceNetwork.Initializer.parameter.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktf/provider-aws.vpclatticeServiceNetwork.VpclatticeServiceNetwork.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/vpclattice_service_network#tags VpclatticeServiceNetwork#tags}. |
-| <code><a href="#@cdktf/provider-aws.vpclatticeServiceNetwork.VpclatticeServiceNetwork.Initializer.parameter.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/vpclattice_service_network#tags_all VpclatticeServiceNetwork#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.vpclatticeServiceNetwork.VpclatticeServiceNetwork.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/vpclattice_service_network#tags VpclatticeServiceNetwork#tags}. |
+| <code><a href="#@cdktf/provider-aws.vpclatticeServiceNetwork.VpclatticeServiceNetwork.Initializer.parameter.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/vpclattice_service_network#tags_all VpclatticeServiceNetwork#tags_all}. |
 
 ---
 
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/vpclattice_service_network#name VpclatticeServiceNetwork#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/vpclattice_service_network#name VpclatticeServiceNetwork#name}.
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/vpclattice_service_network#auth_type VpclatticeServiceNetwork#auth_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/vpclattice_service_network#auth_type VpclatticeServiceNetwork#auth_type}.
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/vpclattice_service_network#id VpclatticeServiceNetwork#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/vpclattice_service_network#id VpclatticeServiceNetwork#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -143,7 +143,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/vpclattice_service_network#region VpclatticeServiceNetwork#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/vpclattice_service_network#region VpclatticeServiceNetwork#region}
 
 ---
 
@@ -151,7 +151,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/vpclattice_service_network#tags VpclatticeServiceNetwork#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/vpclattice_service_network#tags VpclatticeServiceNetwork#tags}.
 
 ---
 
@@ -159,7 +159,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/vpclattice_service_network#tags_all VpclatticeServiceNetwork#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/vpclattice_service_network#tags_all VpclatticeServiceNetwork#tags_all}.
 
 ---
 
@@ -667,7 +667,7 @@ The construct id used in the generated config for the VpclatticeServiceNetwork t
 
 The id of the existing VpclatticeServiceNetwork that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/vpclattice_service_network#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/vpclattice_service_network#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1040,12 +1040,12 @@ vpclatticeServiceNetwork.VpclatticeServiceNetworkConfig(
 | <code><a href="#@cdktf/provider-aws.vpclatticeServiceNetwork.VpclatticeServiceNetworkConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.vpclatticeServiceNetwork.VpclatticeServiceNetworkConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.vpclatticeServiceNetwork.VpclatticeServiceNetworkConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpclatticeServiceNetwork.VpclatticeServiceNetworkConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/vpclattice_service_network#name VpclatticeServiceNetwork#name}. |
-| <code><a href="#@cdktf/provider-aws.vpclatticeServiceNetwork.VpclatticeServiceNetworkConfig.property.authType">auth_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/vpclattice_service_network#auth_type VpclatticeServiceNetwork#auth_type}. |
-| <code><a href="#@cdktf/provider-aws.vpclatticeServiceNetwork.VpclatticeServiceNetworkConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/vpclattice_service_network#id VpclatticeServiceNetwork#id}. |
+| <code><a href="#@cdktf/provider-aws.vpclatticeServiceNetwork.VpclatticeServiceNetworkConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/vpclattice_service_network#name VpclatticeServiceNetwork#name}. |
+| <code><a href="#@cdktf/provider-aws.vpclatticeServiceNetwork.VpclatticeServiceNetworkConfig.property.authType">auth_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/vpclattice_service_network#auth_type VpclatticeServiceNetwork#auth_type}. |
+| <code><a href="#@cdktf/provider-aws.vpclatticeServiceNetwork.VpclatticeServiceNetworkConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/vpclattice_service_network#id VpclatticeServiceNetwork#id}. |
 | <code><a href="#@cdktf/provider-aws.vpclatticeServiceNetwork.VpclatticeServiceNetworkConfig.property.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktf/provider-aws.vpclatticeServiceNetwork.VpclatticeServiceNetworkConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/vpclattice_service_network#tags VpclatticeServiceNetwork#tags}. |
-| <code><a href="#@cdktf/provider-aws.vpclatticeServiceNetwork.VpclatticeServiceNetworkConfig.property.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/vpclattice_service_network#tags_all VpclatticeServiceNetwork#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.vpclatticeServiceNetwork.VpclatticeServiceNetworkConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/vpclattice_service_network#tags VpclatticeServiceNetwork#tags}. |
+| <code><a href="#@cdktf/provider-aws.vpclatticeServiceNetwork.VpclatticeServiceNetworkConfig.property.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/vpclattice_service_network#tags_all VpclatticeServiceNetwork#tags_all}. |
 
 ---
 
@@ -1127,7 +1127,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/vpclattice_service_network#name VpclatticeServiceNetwork#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/vpclattice_service_network#name VpclatticeServiceNetwork#name}.
 
 ---
 
@@ -1139,7 +1139,7 @@ auth_type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/vpclattice_service_network#auth_type VpclatticeServiceNetwork#auth_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/vpclattice_service_network#auth_type VpclatticeServiceNetwork#auth_type}.
 
 ---
 
@@ -1151,7 +1151,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/vpclattice_service_network#id VpclatticeServiceNetwork#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/vpclattice_service_network#id VpclatticeServiceNetwork#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1168,7 +1168,7 @@ region: str
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/vpclattice_service_network#region VpclatticeServiceNetwork#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/vpclattice_service_network#region VpclatticeServiceNetwork#region}
 
 ---
 
@@ -1180,7 +1180,7 @@ tags: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/vpclattice_service_network#tags VpclatticeServiceNetwork#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/vpclattice_service_network#tags VpclatticeServiceNetwork#tags}.
 
 ---
 
@@ -1192,7 +1192,7 @@ tags_all: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/vpclattice_service_network#tags_all VpclatticeServiceNetwork#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/vpclattice_service_network#tags_all VpclatticeServiceNetwork#tags_all}.
 
 ---
 

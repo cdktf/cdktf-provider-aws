@@ -4,7 +4,7 @@
 
 ### DataAwsConnectUser <a name="DataAwsConnectUser" id="@cdktf/provider-aws.dataAwsConnectUser.DataAwsConnectUser"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/data-sources/connect_user aws_connect_user}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/data-sources/connect_user aws_connect_user}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsConnectUser.DataAwsConnectUser.Initializer"></a>
 
@@ -41,12 +41,12 @@ dataAwsConnectUser.DataAwsConnectUser(
 | <code><a href="#@cdktf/provider-aws.dataAwsConnectUser.DataAwsConnectUser.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsConnectUser.DataAwsConnectUser.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsConnectUser.DataAwsConnectUser.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsConnectUser.DataAwsConnectUser.Initializer.parameter.instanceId">instance_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/data-sources/connect_user#instance_id DataAwsConnectUser#instance_id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsConnectUser.DataAwsConnectUser.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/data-sources/connect_user#id DataAwsConnectUser#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsConnectUser.DataAwsConnectUser.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/data-sources/connect_user#name DataAwsConnectUser#name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsConnectUser.DataAwsConnectUser.Initializer.parameter.instanceId">instance_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/data-sources/connect_user#instance_id DataAwsConnectUser#instance_id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsConnectUser.DataAwsConnectUser.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/data-sources/connect_user#id DataAwsConnectUser#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsConnectUser.DataAwsConnectUser.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/data-sources/connect_user#name DataAwsConnectUser#name}. |
 | <code><a href="#@cdktf/provider-aws.dataAwsConnectUser.DataAwsConnectUser.Initializer.parameter.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktf/provider-aws.dataAwsConnectUser.DataAwsConnectUser.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/data-sources/connect_user#tags DataAwsConnectUser#tags}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsConnectUser.DataAwsConnectUser.Initializer.parameter.userId">user_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/data-sources/connect_user#user_id DataAwsConnectUser#user_id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsConnectUser.DataAwsConnectUser.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/data-sources/connect_user#tags DataAwsConnectUser#tags}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsConnectUser.DataAwsConnectUser.Initializer.parameter.userId">user_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/data-sources/connect_user#user_id DataAwsConnectUser#user_id}. |
 
 ---
 
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/data-sources/connect_user#instance_id DataAwsConnectUser#instance_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/data-sources/connect_user#instance_id DataAwsConnectUser#instance_id}.
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/data-sources/connect_user#id DataAwsConnectUser#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/data-sources/connect_user#id DataAwsConnectUser#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -133,7 +133,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/data-sources/connect_user#name DataAwsConnectUser#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/data-sources/connect_user#name DataAwsConnectUser#name}.
 
 ---
 
@@ -143,7 +143,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/data-sources/connect_user#region DataAwsConnectUser#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/data-sources/connect_user#region DataAwsConnectUser#region}
 
 ---
 
@@ -151,7 +151,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/data-sources/connect_user#tags DataAwsConnectUser#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/data-sources/connect_user#tags DataAwsConnectUser#tags}.
 
 ---
 
@@ -159,7 +159,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/data-sources/connect_user#user_id DataAwsConnectUser#user_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/data-sources/connect_user#user_id DataAwsConnectUser#user_id}.
 
 ---
 
@@ -553,7 +553,7 @@ The construct id used in the generated config for the DataAwsConnectUser to impo
 
 The id of the existing DataAwsConnectUser that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/data-sources/connect_user#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/data-sources/connect_user#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -970,12 +970,12 @@ dataAwsConnectUser.DataAwsConnectUserConfig(
 | <code><a href="#@cdktf/provider-aws.dataAwsConnectUser.DataAwsConnectUserConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsConnectUser.DataAwsConnectUserConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsConnectUser.DataAwsConnectUserConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsConnectUser.DataAwsConnectUserConfig.property.instanceId">instance_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/data-sources/connect_user#instance_id DataAwsConnectUser#instance_id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsConnectUser.DataAwsConnectUserConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/data-sources/connect_user#id DataAwsConnectUser#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsConnectUser.DataAwsConnectUserConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/data-sources/connect_user#name DataAwsConnectUser#name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsConnectUser.DataAwsConnectUserConfig.property.instanceId">instance_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/data-sources/connect_user#instance_id DataAwsConnectUser#instance_id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsConnectUser.DataAwsConnectUserConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/data-sources/connect_user#id DataAwsConnectUser#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsConnectUser.DataAwsConnectUserConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/data-sources/connect_user#name DataAwsConnectUser#name}. |
 | <code><a href="#@cdktf/provider-aws.dataAwsConnectUser.DataAwsConnectUserConfig.property.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktf/provider-aws.dataAwsConnectUser.DataAwsConnectUserConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/data-sources/connect_user#tags DataAwsConnectUser#tags}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsConnectUser.DataAwsConnectUserConfig.property.userId">user_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/data-sources/connect_user#user_id DataAwsConnectUser#user_id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsConnectUser.DataAwsConnectUserConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/data-sources/connect_user#tags DataAwsConnectUser#tags}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsConnectUser.DataAwsConnectUserConfig.property.userId">user_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/data-sources/connect_user#user_id DataAwsConnectUser#user_id}. |
 
 ---
 
@@ -1057,7 +1057,7 @@ instance_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/data-sources/connect_user#instance_id DataAwsConnectUser#instance_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/data-sources/connect_user#instance_id DataAwsConnectUser#instance_id}.
 
 ---
 
@@ -1069,7 +1069,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/data-sources/connect_user#id DataAwsConnectUser#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/data-sources/connect_user#id DataAwsConnectUser#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1084,7 +1084,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/data-sources/connect_user#name DataAwsConnectUser#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/data-sources/connect_user#name DataAwsConnectUser#name}.
 
 ---
 
@@ -1098,7 +1098,7 @@ region: str
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/data-sources/connect_user#region DataAwsConnectUser#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/data-sources/connect_user#region DataAwsConnectUser#region}
 
 ---
 
@@ -1110,7 +1110,7 @@ tags: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/data-sources/connect_user#tags DataAwsConnectUser#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/data-sources/connect_user#tags DataAwsConnectUser#tags}.
 
 ---
 
@@ -1122,7 +1122,7 @@ user_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/data-sources/connect_user#user_id DataAwsConnectUser#user_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/data-sources/connect_user#user_id DataAwsConnectUser#user_id}.
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### WorkspaceswebUserSettingsAssociation <a name="WorkspaceswebUserSettingsAssociation" id="@cdktf/provider-aws.workspaceswebUserSettingsAssociation.WorkspaceswebUserSettingsAssociation"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/workspacesweb_user_settings_association aws_workspacesweb_user_settings_association}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/workspacesweb_user_settings_association aws_workspacesweb_user_settings_association}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.workspaceswebUserSettingsAssociation.WorkspaceswebUserSettingsAssociation.Initializer"></a>
 
@@ -474,7 +474,7 @@ The construct id used in the generated config for the WorkspaceswebUserSettingsA
 
 The id of the existing WorkspaceswebUserSettingsAssociation that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/workspacesweb_user_settings_association#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/workspacesweb_user_settings_association#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -767,8 +767,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/workspaceswebusersettings
 | <code><a href="#@cdktf/provider-aws.workspaceswebUserSettingsAssociation.WorkspaceswebUserSettingsAssociationConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.workspaceswebUserSettingsAssociation.WorkspaceswebUserSettingsAssociationConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.workspaceswebUserSettingsAssociation.WorkspaceswebUserSettingsAssociationConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.workspaceswebUserSettingsAssociation.WorkspaceswebUserSettingsAssociationConfig.property.portalArn">PortalArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/workspacesweb_user_settings_association#portal_arn WorkspaceswebUserSettingsAssociation#portal_arn}. |
-| <code><a href="#@cdktf/provider-aws.workspaceswebUserSettingsAssociation.WorkspaceswebUserSettingsAssociationConfig.property.userSettingsArn">UserSettingsArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/workspacesweb_user_settings_association#user_settings_arn WorkspaceswebUserSettingsAssociation#user_settings_arn}. |
+| <code><a href="#@cdktf/provider-aws.workspaceswebUserSettingsAssociation.WorkspaceswebUserSettingsAssociationConfig.property.portalArn">PortalArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/workspacesweb_user_settings_association#portal_arn WorkspaceswebUserSettingsAssociation#portal_arn}. |
+| <code><a href="#@cdktf/provider-aws.workspaceswebUserSettingsAssociation.WorkspaceswebUserSettingsAssociationConfig.property.userSettingsArn">UserSettingsArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/workspacesweb_user_settings_association#user_settings_arn WorkspaceswebUserSettingsAssociation#user_settings_arn}. |
 | <code><a href="#@cdktf/provider-aws.workspaceswebUserSettingsAssociation.WorkspaceswebUserSettingsAssociationConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -851,7 +851,7 @@ PortalArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/workspacesweb_user_settings_association#portal_arn WorkspaceswebUserSettingsAssociation#portal_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/workspacesweb_user_settings_association#portal_arn WorkspaceswebUserSettingsAssociation#portal_arn}.
 
 ---
 
@@ -863,7 +863,7 @@ UserSettingsArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/workspacesweb_user_settings_association#user_settings_arn WorkspaceswebUserSettingsAssociation#user_settings_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/workspacesweb_user_settings_association#user_settings_arn WorkspaceswebUserSettingsAssociation#user_settings_arn}.
 
 ---
 
@@ -877,7 +877,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/workspacesweb_user_settings_association#region WorkspaceswebUserSettingsAssociation#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/workspacesweb_user_settings_association#region WorkspaceswebUserSettingsAssociation#region}
 
 ---
 

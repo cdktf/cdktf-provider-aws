@@ -304,6 +304,7 @@ The following submodules are available:
 - [cognitoIdentityPoolRolesAttachment](./cognitoIdentityPoolRolesAttachment.java.md)
 - [cognitoIdentityProvider](./cognitoIdentityProvider.java.md)
 - [cognitoLogDeliveryConfiguration](./cognitoLogDeliveryConfiguration.java.md)
+- [cognitoManagedLoginBranding](./cognitoManagedLoginBranding.java.md)
 - [cognitoManagedUserPoolClient](./cognitoManagedUserPoolClient.java.md)
 - [cognitoResourceServer](./cognitoResourceServer.java.md)
 - [cognitoRiskConfiguration](./cognitoRiskConfiguration.java.md)
