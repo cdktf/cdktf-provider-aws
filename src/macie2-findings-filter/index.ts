@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/macie2_findings_filter
+// https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/macie2_findings_filter
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,90 +13,90 @@ import * as cdktf from 'cdktf';
 
 export interface Macie2FindingsFilterConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/macie2_findings_filter#action Macie2FindingsFilter#action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/macie2_findings_filter#action Macie2FindingsFilter#action}
   */
   readonly action: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/macie2_findings_filter#description Macie2FindingsFilter#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/macie2_findings_filter#description Macie2FindingsFilter#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/macie2_findings_filter#id Macie2FindingsFilter#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/macie2_findings_filter#id Macie2FindingsFilter#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/macie2_findings_filter#name Macie2FindingsFilter#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/macie2_findings_filter#name Macie2FindingsFilter#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/macie2_findings_filter#name_prefix Macie2FindingsFilter#name_prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/macie2_findings_filter#name_prefix Macie2FindingsFilter#name_prefix}
   */
   readonly namePrefix?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/macie2_findings_filter#position Macie2FindingsFilter#position}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/macie2_findings_filter#position Macie2FindingsFilter#position}
   */
   readonly position?: number;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/macie2_findings_filter#region Macie2FindingsFilter#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/macie2_findings_filter#region Macie2FindingsFilter#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/macie2_findings_filter#tags Macie2FindingsFilter#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/macie2_findings_filter#tags Macie2FindingsFilter#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/macie2_findings_filter#tags_all Macie2FindingsFilter#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/macie2_findings_filter#tags_all Macie2FindingsFilter#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
   * finding_criteria block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/macie2_findings_filter#finding_criteria Macie2FindingsFilter#finding_criteria}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/macie2_findings_filter#finding_criteria Macie2FindingsFilter#finding_criteria}
   */
   readonly findingCriteria: Macie2FindingsFilterFindingCriteria;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/macie2_findings_filter#timeouts Macie2FindingsFilter#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/macie2_findings_filter#timeouts Macie2FindingsFilter#timeouts}
   */
   readonly timeouts?: Macie2FindingsFilterTimeouts;
 }
 export interface Macie2FindingsFilterFindingCriteriaCriterion {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/macie2_findings_filter#eq Macie2FindingsFilter#eq}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/macie2_findings_filter#eq Macie2FindingsFilter#eq}
   */
   readonly eq?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/macie2_findings_filter#eq_exact_match Macie2FindingsFilter#eq_exact_match}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/macie2_findings_filter#eq_exact_match Macie2FindingsFilter#eq_exact_match}
   */
   readonly eqExactMatch?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/macie2_findings_filter#field Macie2FindingsFilter#field}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/macie2_findings_filter#field Macie2FindingsFilter#field}
   */
   readonly field: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/macie2_findings_filter#gt Macie2FindingsFilter#gt}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/macie2_findings_filter#gt Macie2FindingsFilter#gt}
   */
   readonly gt?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/macie2_findings_filter#gte Macie2FindingsFilter#gte}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/macie2_findings_filter#gte Macie2FindingsFilter#gte}
   */
   readonly gte?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/macie2_findings_filter#lt Macie2FindingsFilter#lt}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/macie2_findings_filter#lt Macie2FindingsFilter#lt}
   */
   readonly lt?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/macie2_findings_filter#lte Macie2FindingsFilter#lte}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/macie2_findings_filter#lte Macie2FindingsFilter#lte}
   */
   readonly lte?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/macie2_findings_filter#neq Macie2FindingsFilter#neq}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/macie2_findings_filter#neq Macie2FindingsFilter#neq}
   */
   readonly neq?: string[];
 }
@@ -414,7 +414,7 @@ export interface Macie2FindingsFilterFindingCriteria {
   /**
   * criterion block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/macie2_findings_filter#criterion Macie2FindingsFilter#criterion}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/macie2_findings_filter#criterion Macie2FindingsFilter#criterion}
   */
   readonly criterion?: Macie2FindingsFilterFindingCriteriaCriterion[] | cdktf.IResolvable;
 }
@@ -498,7 +498,7 @@ export class Macie2FindingsFilterFindingCriteriaOutputReference extends cdktf.Co
 }
 export interface Macie2FindingsFilterTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/macie2_findings_filter#create Macie2FindingsFilter#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/macie2_findings_filter#create Macie2FindingsFilter#create}
   */
   readonly create?: string;
 }
@@ -592,7 +592,7 @@ export class Macie2FindingsFilterTimeoutsOutputReference extends cdktf.ComplexOb
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/macie2_findings_filter aws_macie2_findings_filter}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/macie2_findings_filter aws_macie2_findings_filter}
 */
 export class Macie2FindingsFilter extends cdktf.TerraformResource {
 
@@ -608,7 +608,7 @@ export class Macie2FindingsFilter extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a Macie2FindingsFilter resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Macie2FindingsFilter to import
-  * @param importFromId The id of the existing Macie2FindingsFilter that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/macie2_findings_filter#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Macie2FindingsFilter that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/macie2_findings_filter#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Macie2FindingsFilter to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -620,7 +620,7 @@ export class Macie2FindingsFilter extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/macie2_findings_filter aws_macie2_findings_filter} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/macie2_findings_filter aws_macie2_findings_filter} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -631,7 +631,7 @@ export class Macie2FindingsFilter extends cdktf.TerraformResource {
       terraformResourceType: 'aws_macie2_findings_filter',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.11.0',
+        providerVersion: '6.12.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/dataexchange_event_action
+// https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/dataexchange_event_action
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,29 +15,29 @@ export interface DataexchangeEventActionConfig extends cdktf.TerraformMetaArgume
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/dataexchange_event_action#region DataexchangeEventAction#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/dataexchange_event_action#region DataexchangeEventAction#region}
   */
   readonly region?: string;
   /**
   * action block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/dataexchange_event_action#action DataexchangeEventAction#action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/dataexchange_event_action#action DataexchangeEventAction#action}
   */
   readonly action?: DataexchangeEventActionAction[] | cdktf.IResolvable;
   /**
   * event block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/dataexchange_event_action#event DataexchangeEventAction#event}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/dataexchange_event_action#event DataexchangeEventAction#event}
   */
   readonly event?: DataexchangeEventActionEvent[] | cdktf.IResolvable;
 }
 export interface DataexchangeEventActionActionExportRevisionToS3Encryption {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/dataexchange_event_action#kms_key_arn DataexchangeEventAction#kms_key_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/dataexchange_event_action#kms_key_arn DataexchangeEventAction#kms_key_arn}
   */
   readonly kmsKeyArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/dataexchange_event_action#type DataexchangeEventAction#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/dataexchange_event_action#type DataexchangeEventAction#type}
   */
   readonly type?: string;
 }
@@ -182,11 +182,11 @@ export class DataexchangeEventActionActionExportRevisionToS3EncryptionList exten
 }
 export interface DataexchangeEventActionActionExportRevisionToS3RevisionDestination {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/dataexchange_event_action#bucket DataexchangeEventAction#bucket}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/dataexchange_event_action#bucket DataexchangeEventAction#bucket}
   */
   readonly bucket: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/dataexchange_event_action#key_pattern DataexchangeEventAction#key_pattern}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/dataexchange_event_action#key_pattern DataexchangeEventAction#key_pattern}
   */
   readonly keyPattern?: string;
 }
@@ -330,13 +330,13 @@ export interface DataexchangeEventActionActionExportRevisionToS3 {
   /**
   * encryption block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/dataexchange_event_action#encryption DataexchangeEventAction#encryption}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/dataexchange_event_action#encryption DataexchangeEventAction#encryption}
   */
   readonly encryption?: DataexchangeEventActionActionExportRevisionToS3Encryption[] | cdktf.IResolvable;
   /**
   * revision_destination block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/dataexchange_event_action#revision_destination DataexchangeEventAction#revision_destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/dataexchange_event_action#revision_destination DataexchangeEventAction#revision_destination}
   */
   readonly revisionDestination?: DataexchangeEventActionActionExportRevisionToS3RevisionDestination[] | cdktf.IResolvable;
 }
@@ -483,7 +483,7 @@ export interface DataexchangeEventActionAction {
   /**
   * export_revision_to_s3 block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/dataexchange_event_action#export_revision_to_s3 DataexchangeEventAction#export_revision_to_s3}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/dataexchange_event_action#export_revision_to_s3 DataexchangeEventAction#export_revision_to_s3}
   */
   readonly exportRevisionToS3?: DataexchangeEventActionActionExportRevisionToS3[] | cdktf.IResolvable;
 }
@@ -599,7 +599,7 @@ export class DataexchangeEventActionActionList extends cdktf.ComplexList {
 }
 export interface DataexchangeEventActionEventRevisionPublished {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/dataexchange_event_action#data_set_id DataexchangeEventAction#data_set_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/dataexchange_event_action#data_set_id DataexchangeEventAction#data_set_id}
   */
   readonly dataSetId: string;
 }
@@ -714,7 +714,7 @@ export interface DataexchangeEventActionEvent {
   /**
   * revision_published block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/dataexchange_event_action#revision_published DataexchangeEventAction#revision_published}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/dataexchange_event_action#revision_published DataexchangeEventAction#revision_published}
   */
   readonly revisionPublished?: DataexchangeEventActionEventRevisionPublished[] | cdktf.IResolvable;
 }
@@ -830,7 +830,7 @@ export class DataexchangeEventActionEventList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/dataexchange_event_action aws_dataexchange_event_action}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/dataexchange_event_action aws_dataexchange_event_action}
 */
 export class DataexchangeEventAction extends cdktf.TerraformResource {
 
@@ -846,7 +846,7 @@ export class DataexchangeEventAction extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a DataexchangeEventAction resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataexchangeEventAction to import
-  * @param importFromId The id of the existing DataexchangeEventAction that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/dataexchange_event_action#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataexchangeEventAction that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/dataexchange_event_action#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataexchangeEventAction to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -858,7 +858,7 @@ export class DataexchangeEventAction extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/dataexchange_event_action aws_dataexchange_event_action} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/dataexchange_event_action aws_dataexchange_event_action} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -869,7 +869,7 @@ export class DataexchangeEventAction extends cdktf.TerraformResource {
       terraformResourceType: 'aws_dataexchange_event_action',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.11.0',
+        providerVersion: '6.12.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

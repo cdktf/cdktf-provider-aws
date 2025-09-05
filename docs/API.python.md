@@ -304,6 +304,7 @@ The following submodules are available:
 - [cognitoIdentityPoolRolesAttachment](./cognitoIdentityPoolRolesAttachment.python.md)
 - [cognitoIdentityProvider](./cognitoIdentityProvider.python.md)
 - [cognitoLogDeliveryConfiguration](./cognitoLogDeliveryConfiguration.python.md)
+- [cognitoManagedLoginBranding](./cognitoManagedLoginBranding.python.md)
 - [cognitoManagedUserPoolClient](./cognitoManagedUserPoolClient.python.md)
 - [cognitoResourceServer](./cognitoResourceServer.python.md)
 - [cognitoRiskConfiguration](./cognitoRiskConfiguration.python.md)

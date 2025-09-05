@@ -304,6 +304,7 @@ The following submodules are available:
 - [cognitoIdentityPoolRolesAttachment](./cognitoIdentityPoolRolesAttachment.typescript.md)
 - [cognitoIdentityProvider](./cognitoIdentityProvider.typescript.md)
 - [cognitoLogDeliveryConfiguration](./cognitoLogDeliveryConfiguration.typescript.md)
+- [cognitoManagedLoginBranding](./cognitoManagedLoginBranding.typescript.md)
 - [cognitoManagedUserPoolClient](./cognitoManagedUserPoolClient.typescript.md)
 - [cognitoResourceServer](./cognitoResourceServer.typescript.md)
 - [cognitoRiskConfiguration](./cognitoRiskConfiguration.typescript.md)

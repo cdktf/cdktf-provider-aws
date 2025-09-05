@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/snapshot_create_volume_permission
+// https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/snapshot_create_volume_permission
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,11 +13,11 @@ import * as cdktf from 'cdktf';
 
 export interface SnapshotCreateVolumePermissionConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/snapshot_create_volume_permission#account_id SnapshotCreateVolumePermission#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/snapshot_create_volume_permission#account_id SnapshotCreateVolumePermission#account_id}
   */
   readonly accountId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/snapshot_create_volume_permission#id SnapshotCreateVolumePermission#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/snapshot_create_volume_permission#id SnapshotCreateVolumePermission#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -26,27 +26,27 @@ export interface SnapshotCreateVolumePermissionConfig extends cdktf.TerraformMet
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/snapshot_create_volume_permission#region SnapshotCreateVolumePermission#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/snapshot_create_volume_permission#region SnapshotCreateVolumePermission#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/snapshot_create_volume_permission#snapshot_id SnapshotCreateVolumePermission#snapshot_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/snapshot_create_volume_permission#snapshot_id SnapshotCreateVolumePermission#snapshot_id}
   */
   readonly snapshotId: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/snapshot_create_volume_permission#timeouts SnapshotCreateVolumePermission#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/snapshot_create_volume_permission#timeouts SnapshotCreateVolumePermission#timeouts}
   */
   readonly timeouts?: SnapshotCreateVolumePermissionTimeouts;
 }
 export interface SnapshotCreateVolumePermissionTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/snapshot_create_volume_permission#create SnapshotCreateVolumePermission#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/snapshot_create_volume_permission#create SnapshotCreateVolumePermission#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/snapshot_create_volume_permission#delete SnapshotCreateVolumePermission#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/snapshot_create_volume_permission#delete SnapshotCreateVolumePermission#delete}
   */
   readonly delete?: string;
 }
@@ -169,7 +169,7 @@ export class SnapshotCreateVolumePermissionTimeoutsOutputReference extends cdktf
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/snapshot_create_volume_permission aws_snapshot_create_volume_permission}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/snapshot_create_volume_permission aws_snapshot_create_volume_permission}
 */
 export class SnapshotCreateVolumePermission extends cdktf.TerraformResource {
 
@@ -185,7 +185,7 @@ export class SnapshotCreateVolumePermission extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a SnapshotCreateVolumePermission resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SnapshotCreateVolumePermission to import
-  * @param importFromId The id of the existing SnapshotCreateVolumePermission that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/snapshot_create_volume_permission#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing SnapshotCreateVolumePermission that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/snapshot_create_volume_permission#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SnapshotCreateVolumePermission to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -197,7 +197,7 @@ export class SnapshotCreateVolumePermission extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/snapshot_create_volume_permission aws_snapshot_create_volume_permission} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/snapshot_create_volume_permission aws_snapshot_create_volume_permission} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -208,7 +208,7 @@ export class SnapshotCreateVolumePermission extends cdktf.TerraformResource {
       terraformResourceType: 'aws_snapshot_create_volume_permission',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.11.0',
+        providerVersion: '6.12.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

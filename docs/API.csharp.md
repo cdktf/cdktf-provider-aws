@@ -304,6 +304,7 @@ The following submodules are available:
 - [cognitoIdentityPoolRolesAttachment](./cognitoIdentityPoolRolesAttachment.csharp.md)
 - [cognitoIdentityProvider](./cognitoIdentityProvider.csharp.md)
 - [cognitoLogDeliveryConfiguration](./cognitoLogDeliveryConfiguration.csharp.md)
+- [cognitoManagedLoginBranding](./cognitoManagedLoginBranding.csharp.md)
 - [cognitoManagedUserPoolClient](./cognitoManagedUserPoolClient.csharp.md)
 - [cognitoResourceServer](./cognitoResourceServer.csharp.md)
 - [cognitoRiskConfiguration](./cognitoRiskConfiguration.csharp.md)
