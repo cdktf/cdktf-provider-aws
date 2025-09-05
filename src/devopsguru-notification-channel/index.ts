@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/devopsguru_notification_channel
+// https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/devopsguru_notification_channel
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,29 +15,29 @@ export interface DevopsguruNotificationChannelConfig extends cdktf.TerraformMeta
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/devopsguru_notification_channel#region DevopsguruNotificationChannel#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/devopsguru_notification_channel#region DevopsguruNotificationChannel#region}
   */
   readonly region?: string;
   /**
   * filters block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/devopsguru_notification_channel#filters DevopsguruNotificationChannel#filters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/devopsguru_notification_channel#filters DevopsguruNotificationChannel#filters}
   */
   readonly filters?: DevopsguruNotificationChannelFilters[] | cdktf.IResolvable;
   /**
   * sns block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/devopsguru_notification_channel#sns DevopsguruNotificationChannel#sns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/devopsguru_notification_channel#sns DevopsguruNotificationChannel#sns}
   */
   readonly sns?: DevopsguruNotificationChannelSns[] | cdktf.IResolvable;
 }
 export interface DevopsguruNotificationChannelFilters {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/devopsguru_notification_channel#message_types DevopsguruNotificationChannel#message_types}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/devopsguru_notification_channel#message_types DevopsguruNotificationChannel#message_types}
   */
   readonly messageTypes?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/devopsguru_notification_channel#severities DevopsguruNotificationChannel#severities}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/devopsguru_notification_channel#severities DevopsguruNotificationChannel#severities}
   */
   readonly severities?: string[];
 }
@@ -182,7 +182,7 @@ export class DevopsguruNotificationChannelFiltersList extends cdktf.ComplexList 
 }
 export interface DevopsguruNotificationChannelSns {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/devopsguru_notification_channel#topic_arn DevopsguruNotificationChannel#topic_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/devopsguru_notification_channel#topic_arn DevopsguruNotificationChannel#topic_arn}
   */
   readonly topicArn: string;
 }
@@ -295,7 +295,7 @@ export class DevopsguruNotificationChannelSnsList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/devopsguru_notification_channel aws_devopsguru_notification_channel}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/devopsguru_notification_channel aws_devopsguru_notification_channel}
 */
 export class DevopsguruNotificationChannel extends cdktf.TerraformResource {
 
@@ -311,7 +311,7 @@ export class DevopsguruNotificationChannel extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a DevopsguruNotificationChannel resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DevopsguruNotificationChannel to import
-  * @param importFromId The id of the existing DevopsguruNotificationChannel that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/devopsguru_notification_channel#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DevopsguruNotificationChannel that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/devopsguru_notification_channel#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DevopsguruNotificationChannel to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -323,7 +323,7 @@ export class DevopsguruNotificationChannel extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/devopsguru_notification_channel aws_devopsguru_notification_channel} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/devopsguru_notification_channel aws_devopsguru_notification_channel} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -334,7 +334,7 @@ export class DevopsguruNotificationChannel extends cdktf.TerraformResource {
       terraformResourceType: 'aws_devopsguru_notification_channel',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.11.0',
+        providerVersion: '6.12.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

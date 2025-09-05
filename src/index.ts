@@ -304,6 +304,7 @@ export * as cognitoIdentityPoolProviderPrincipalTag from './cognito-identity-poo
 export * as cognitoIdentityPoolRolesAttachment from './cognito-identity-pool-roles-attachment';
 export * as cognitoIdentityProvider from './cognito-identity-provider';
 export * as cognitoLogDeliveryConfiguration from './cognito-log-delivery-configuration';
+export * as cognitoManagedLoginBranding from './cognito-managed-login-branding';
 export * as cognitoManagedUserPoolClient from './cognito-managed-user-pool-client';
 export * as cognitoResourceServer from './cognito-resource-server';
 export * as cognitoRiskConfiguration from './cognito-risk-configuration';

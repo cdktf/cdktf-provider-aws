@@ -304,6 +304,7 @@ Object.defineProperty(exports, 'cognitoIdentityPoolProviderPrincipalTag', { get:
 Object.defineProperty(exports, 'cognitoIdentityPoolRolesAttachment', { get: function () { return require('./cognito-identity-pool-roles-attachment'); } });
 Object.defineProperty(exports, 'cognitoIdentityProvider', { get: function () { return require('./cognito-identity-provider'); } });
 Object.defineProperty(exports, 'cognitoLogDeliveryConfiguration', { get: function () { return require('./cognito-log-delivery-configuration'); } });
+Object.defineProperty(exports, 'cognitoManagedLoginBranding', { get: function () { return require('./cognito-managed-login-branding'); } });
 Object.defineProperty(exports, 'cognitoManagedUserPoolClient', { get: function () { return require('./cognito-managed-user-pool-client'); } });
 Object.defineProperty(exports, 'cognitoResourceServer', { get: function () { return require('./cognito-resource-server'); } });
 Object.defineProperty(exports, 'cognitoRiskConfiguration', { get: function () { return require('./cognito-risk-configuration'); } });

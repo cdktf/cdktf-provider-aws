@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/lex_intent
+// https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/lex_intent
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,98 +13,98 @@ import * as cdktf from 'cdktf';
 
 export interface LexIntentConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/lex_intent#create_version LexIntent#create_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/lex_intent#create_version LexIntent#create_version}
   */
   readonly createVersion?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/lex_intent#description LexIntent#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/lex_intent#description LexIntent#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/lex_intent#id LexIntent#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/lex_intent#id LexIntent#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/lex_intent#name LexIntent#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/lex_intent#name LexIntent#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/lex_intent#parent_intent_signature LexIntent#parent_intent_signature}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/lex_intent#parent_intent_signature LexIntent#parent_intent_signature}
   */
   readonly parentIntentSignature?: string;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/lex_intent#region LexIntent#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/lex_intent#region LexIntent#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/lex_intent#sample_utterances LexIntent#sample_utterances}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/lex_intent#sample_utterances LexIntent#sample_utterances}
   */
   readonly sampleUtterances?: string[];
   /**
   * conclusion_statement block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/lex_intent#conclusion_statement LexIntent#conclusion_statement}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/lex_intent#conclusion_statement LexIntent#conclusion_statement}
   */
   readonly conclusionStatement?: LexIntentConclusionStatement;
   /**
   * confirmation_prompt block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/lex_intent#confirmation_prompt LexIntent#confirmation_prompt}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/lex_intent#confirmation_prompt LexIntent#confirmation_prompt}
   */
   readonly confirmationPrompt?: LexIntentConfirmationPrompt;
   /**
   * dialog_code_hook block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/lex_intent#dialog_code_hook LexIntent#dialog_code_hook}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/lex_intent#dialog_code_hook LexIntent#dialog_code_hook}
   */
   readonly dialogCodeHook?: LexIntentDialogCodeHook;
   /**
   * follow_up_prompt block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/lex_intent#follow_up_prompt LexIntent#follow_up_prompt}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/lex_intent#follow_up_prompt LexIntent#follow_up_prompt}
   */
   readonly followUpPrompt?: LexIntentFollowUpPrompt;
   /**
   * fulfillment_activity block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/lex_intent#fulfillment_activity LexIntent#fulfillment_activity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/lex_intent#fulfillment_activity LexIntent#fulfillment_activity}
   */
   readonly fulfillmentActivity: LexIntentFulfillmentActivity;
   /**
   * rejection_statement block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/lex_intent#rejection_statement LexIntent#rejection_statement}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/lex_intent#rejection_statement LexIntent#rejection_statement}
   */
   readonly rejectionStatement?: LexIntentRejectionStatement;
   /**
   * slot block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/lex_intent#slot LexIntent#slot}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/lex_intent#slot LexIntent#slot}
   */
   readonly slot?: LexIntentSlot[] | cdktf.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/lex_intent#timeouts LexIntent#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/lex_intent#timeouts LexIntent#timeouts}
   */
   readonly timeouts?: LexIntentTimeouts;
 }
 export interface LexIntentConclusionStatementMessage {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/lex_intent#content LexIntent#content}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/lex_intent#content LexIntent#content}
   */
   readonly content: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/lex_intent#content_type LexIntent#content_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/lex_intent#content_type LexIntent#content_type}
   */
   readonly contentType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/lex_intent#group_number LexIntent#group_number}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/lex_intent#group_number LexIntent#group_number}
   */
   readonly groupNumber?: number;
 }
@@ -272,13 +272,13 @@ export class LexIntentConclusionStatementMessageList extends cdktf.ComplexList {
 }
 export interface LexIntentConclusionStatement {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/lex_intent#response_card LexIntent#response_card}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/lex_intent#response_card LexIntent#response_card}
   */
   readonly responseCard?: string;
   /**
   * message block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/lex_intent#message LexIntent#message}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/lex_intent#message LexIntent#message}
   */
   readonly message: LexIntentConclusionStatementMessage[] | cdktf.IResolvable;
 }
@@ -388,15 +388,15 @@ export class LexIntentConclusionStatementOutputReference extends cdktf.ComplexOb
 }
 export interface LexIntentConfirmationPromptMessage {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/lex_intent#content LexIntent#content}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/lex_intent#content LexIntent#content}
   */
   readonly content: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/lex_intent#content_type LexIntent#content_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/lex_intent#content_type LexIntent#content_type}
   */
   readonly contentType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/lex_intent#group_number LexIntent#group_number}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/lex_intent#group_number LexIntent#group_number}
   */
   readonly groupNumber?: number;
 }
@@ -564,17 +564,17 @@ export class LexIntentConfirmationPromptMessageList extends cdktf.ComplexList {
 }
 export interface LexIntentConfirmationPrompt {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/lex_intent#max_attempts LexIntent#max_attempts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/lex_intent#max_attempts LexIntent#max_attempts}
   */
   readonly maxAttempts: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/lex_intent#response_card LexIntent#response_card}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/lex_intent#response_card LexIntent#response_card}
   */
   readonly responseCard?: string;
   /**
   * message block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/lex_intent#message LexIntent#message}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/lex_intent#message LexIntent#message}
   */
   readonly message: LexIntentConfirmationPromptMessage[] | cdktf.IResolvable;
 }
@@ -710,11 +710,11 @@ export class LexIntentConfirmationPromptOutputReference extends cdktf.ComplexObj
 }
 export interface LexIntentDialogCodeHook {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/lex_intent#message_version LexIntent#message_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/lex_intent#message_version LexIntent#message_version}
   */
   readonly messageVersion: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/lex_intent#uri LexIntent#uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/lex_intent#uri LexIntent#uri}
   */
   readonly uri: string;
 }
@@ -821,15 +821,15 @@ export class LexIntentDialogCodeHookOutputReference extends cdktf.ComplexObject 
 }
 export interface LexIntentFollowUpPromptPromptMessage {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/lex_intent#content LexIntent#content}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/lex_intent#content LexIntent#content}
   */
   readonly content: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/lex_intent#content_type LexIntent#content_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/lex_intent#content_type LexIntent#content_type}
   */
   readonly contentType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/lex_intent#group_number LexIntent#group_number}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/lex_intent#group_number LexIntent#group_number}
   */
   readonly groupNumber?: number;
 }
@@ -997,17 +997,17 @@ export class LexIntentFollowUpPromptPromptMessageList extends cdktf.ComplexList 
 }
 export interface LexIntentFollowUpPromptPrompt {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/lex_intent#max_attempts LexIntent#max_attempts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/lex_intent#max_attempts LexIntent#max_attempts}
   */
   readonly maxAttempts: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/lex_intent#response_card LexIntent#response_card}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/lex_intent#response_card LexIntent#response_card}
   */
   readonly responseCard?: string;
   /**
   * message block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/lex_intent#message LexIntent#message}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/lex_intent#message LexIntent#message}
   */
   readonly message: LexIntentFollowUpPromptPromptMessage[] | cdktf.IResolvable;
 }
@@ -1143,15 +1143,15 @@ export class LexIntentFollowUpPromptPromptOutputReference extends cdktf.ComplexO
 }
 export interface LexIntentFollowUpPromptRejectionStatementMessage {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/lex_intent#content LexIntent#content}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/lex_intent#content LexIntent#content}
   */
   readonly content: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/lex_intent#content_type LexIntent#content_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/lex_intent#content_type LexIntent#content_type}
   */
   readonly contentType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/lex_intent#group_number LexIntent#group_number}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/lex_intent#group_number LexIntent#group_number}
   */
   readonly groupNumber?: number;
 }
@@ -1319,13 +1319,13 @@ export class LexIntentFollowUpPromptRejectionStatementMessageList extends cdktf.
 }
 export interface LexIntentFollowUpPromptRejectionStatement {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/lex_intent#response_card LexIntent#response_card}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/lex_intent#response_card LexIntent#response_card}
   */
   readonly responseCard?: string;
   /**
   * message block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/lex_intent#message LexIntent#message}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/lex_intent#message LexIntent#message}
   */
   readonly message: LexIntentFollowUpPromptRejectionStatementMessage[] | cdktf.IResolvable;
 }
@@ -1437,13 +1437,13 @@ export interface LexIntentFollowUpPrompt {
   /**
   * prompt block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/lex_intent#prompt LexIntent#prompt}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/lex_intent#prompt LexIntent#prompt}
   */
   readonly prompt: LexIntentFollowUpPromptPrompt;
   /**
   * rejection_statement block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/lex_intent#rejection_statement LexIntent#rejection_statement}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/lex_intent#rejection_statement LexIntent#rejection_statement}
   */
   readonly rejectionStatement: LexIntentFollowUpPromptRejectionStatement;
 }
@@ -1550,11 +1550,11 @@ export class LexIntentFollowUpPromptOutputReference extends cdktf.ComplexObject 
 }
 export interface LexIntentFulfillmentActivityCodeHook {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/lex_intent#message_version LexIntent#message_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/lex_intent#message_version LexIntent#message_version}
   */
   readonly messageVersion: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/lex_intent#uri LexIntent#uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/lex_intent#uri LexIntent#uri}
   */
   readonly uri: string;
 }
@@ -1661,13 +1661,13 @@ export class LexIntentFulfillmentActivityCodeHookOutputReference extends cdktf.C
 }
 export interface LexIntentFulfillmentActivity {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/lex_intent#type LexIntent#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/lex_intent#type LexIntent#type}
   */
   readonly type: string;
   /**
   * code_hook block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/lex_intent#code_hook LexIntent#code_hook}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/lex_intent#code_hook LexIntent#code_hook}
   */
   readonly codeHook?: LexIntentFulfillmentActivityCodeHook;
 }
@@ -1777,15 +1777,15 @@ export class LexIntentFulfillmentActivityOutputReference extends cdktf.ComplexOb
 }
 export interface LexIntentRejectionStatementMessage {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/lex_intent#content LexIntent#content}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/lex_intent#content LexIntent#content}
   */
   readonly content: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/lex_intent#content_type LexIntent#content_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/lex_intent#content_type LexIntent#content_type}
   */
   readonly contentType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/lex_intent#group_number LexIntent#group_number}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/lex_intent#group_number LexIntent#group_number}
   */
   readonly groupNumber?: number;
 }
@@ -1953,13 +1953,13 @@ export class LexIntentRejectionStatementMessageList extends cdktf.ComplexList {
 }
 export interface LexIntentRejectionStatement {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/lex_intent#response_card LexIntent#response_card}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/lex_intent#response_card LexIntent#response_card}
   */
   readonly responseCard?: string;
   /**
   * message block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/lex_intent#message LexIntent#message}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/lex_intent#message LexIntent#message}
   */
   readonly message: LexIntentRejectionStatementMessage[] | cdktf.IResolvable;
 }
@@ -2069,15 +2069,15 @@ export class LexIntentRejectionStatementOutputReference extends cdktf.ComplexObj
 }
 export interface LexIntentSlotValueElicitationPromptMessage {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/lex_intent#content LexIntent#content}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/lex_intent#content LexIntent#content}
   */
   readonly content: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/lex_intent#content_type LexIntent#content_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/lex_intent#content_type LexIntent#content_type}
   */
   readonly contentType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/lex_intent#group_number LexIntent#group_number}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/lex_intent#group_number LexIntent#group_number}
   */
   readonly groupNumber?: number;
 }
@@ -2245,17 +2245,17 @@ export class LexIntentSlotValueElicitationPromptMessageList extends cdktf.Comple
 }
 export interface LexIntentSlotValueElicitationPrompt {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/lex_intent#max_attempts LexIntent#max_attempts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/lex_intent#max_attempts LexIntent#max_attempts}
   */
   readonly maxAttempts: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/lex_intent#response_card LexIntent#response_card}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/lex_intent#response_card LexIntent#response_card}
   */
   readonly responseCard?: string;
   /**
   * message block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/lex_intent#message LexIntent#message}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/lex_intent#message LexIntent#message}
   */
   readonly message: LexIntentSlotValueElicitationPromptMessage[] | cdktf.IResolvable;
 }
@@ -2391,41 +2391,41 @@ export class LexIntentSlotValueElicitationPromptOutputReference extends cdktf.Co
 }
 export interface LexIntentSlot {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/lex_intent#description LexIntent#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/lex_intent#description LexIntent#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/lex_intent#name LexIntent#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/lex_intent#name LexIntent#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/lex_intent#priority LexIntent#priority}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/lex_intent#priority LexIntent#priority}
   */
   readonly priority?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/lex_intent#response_card LexIntent#response_card}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/lex_intent#response_card LexIntent#response_card}
   */
   readonly responseCard?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/lex_intent#sample_utterances LexIntent#sample_utterances}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/lex_intent#sample_utterances LexIntent#sample_utterances}
   */
   readonly sampleUtterances?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/lex_intent#slot_constraint LexIntent#slot_constraint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/lex_intent#slot_constraint LexIntent#slot_constraint}
   */
   readonly slotConstraint: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/lex_intent#slot_type LexIntent#slot_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/lex_intent#slot_type LexIntent#slot_type}
   */
   readonly slotType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/lex_intent#slot_type_version LexIntent#slot_type_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/lex_intent#slot_type_version LexIntent#slot_type_version}
   */
   readonly slotTypeVersion?: string;
   /**
   * value_elicitation_prompt block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/lex_intent#value_elicitation_prompt LexIntent#value_elicitation_prompt}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/lex_intent#value_elicitation_prompt LexIntent#value_elicitation_prompt}
   */
   readonly valueElicitationPrompt?: LexIntentSlotValueElicitationPrompt;
 }
@@ -2764,15 +2764,15 @@ export class LexIntentSlotList extends cdktf.ComplexList {
 }
 export interface LexIntentTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/lex_intent#create LexIntent#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/lex_intent#create LexIntent#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/lex_intent#delete LexIntent#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/lex_intent#delete LexIntent#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/lex_intent#update LexIntent#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/lex_intent#update LexIntent#update}
   */
   readonly update?: string;
 }
@@ -2924,7 +2924,7 @@ export class LexIntentTimeoutsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/lex_intent aws_lex_intent}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/lex_intent aws_lex_intent}
 */
 export class LexIntent extends cdktf.TerraformResource {
 
@@ -2940,7 +2940,7 @@ export class LexIntent extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a LexIntent resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the LexIntent to import
-  * @param importFromId The id of the existing LexIntent that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/lex_intent#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing LexIntent that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/lex_intent#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the LexIntent to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -2952,7 +2952,7 @@ export class LexIntent extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/lex_intent aws_lex_intent} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/lex_intent aws_lex_intent} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -2963,7 +2963,7 @@ export class LexIntent extends cdktf.TerraformResource {
       terraformResourceType: 'aws_lex_intent',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.11.0',
+        providerVersion: '6.12.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
