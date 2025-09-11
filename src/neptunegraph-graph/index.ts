@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/neptunegraph_graph
+// https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/neptunegraph_graph
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,7 +15,7 @@ export interface NeptunegraphGraphConfig extends cdktf.TerraformMetaArguments {
   /**
   * A value that indicates whether the graph has deletion protection enabled. The graph can't be deleted when deletion protection is enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/neptunegraph_graph#deletion_protection NeptunegraphGraph#deletion_protection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/neptunegraph_graph#deletion_protection NeptunegraphGraph#deletion_protection}
   */
   readonly deletionProtection?: boolean | cdktf.IResolvable;
   /**
@@ -25,25 +25,25 @@ export interface NeptunegraphGraphConfig extends cdktf.TerraformMetaArguments {
   * 								If you don't specify a graph name, a unique graph name is generated for you using the prefix graph-for, 
   * 								followed by a combination of Stack Name and a UUID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/neptunegraph_graph#graph_name NeptunegraphGraph#graph_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/neptunegraph_graph#graph_name NeptunegraphGraph#graph_name}
   */
   readonly graphName?: string;
   /**
   * Allows user to specify name prefix and have remainder of name automatically generated.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/neptunegraph_graph#graph_name_prefix NeptunegraphGraph#graph_name_prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/neptunegraph_graph#graph_name_prefix NeptunegraphGraph#graph_name_prefix}
   */
   readonly graphNamePrefix?: string;
   /**
   * Specifies a KMS key to use to encrypt data in the new graph.  Value must be ARN of KMS Key.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/neptunegraph_graph#kms_key_identifier NeptunegraphGraph#kms_key_identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/neptunegraph_graph#kms_key_identifier NeptunegraphGraph#kms_key_identifier}
   */
   readonly kmsKeyIdentifier?: string;
   /**
   * The provisioned memory-optimized Neptune Capacity Units (m-NCUs) to use for the graph.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/neptunegraph_graph#provisioned_memory NeptunegraphGraph#provisioned_memory}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/neptunegraph_graph#provisioned_memory NeptunegraphGraph#provisioned_memory}
   */
   readonly provisionedMemory: number;
   /**
@@ -54,35 +54,35 @@ export interface NeptunegraphGraphConfig extends cdktf.TerraformMetaArguments {
   * 								to create a PrivateGraphEndpoint in a given VPC to ensure the DNS name resolves to a private 
   * 								IP address that is reachable from the VPC.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/neptunegraph_graph#public_connectivity NeptunegraphGraph#public_connectivity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/neptunegraph_graph#public_connectivity NeptunegraphGraph#public_connectivity}
   */
   readonly publicConnectivity?: boolean | cdktf.IResolvable;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/neptunegraph_graph#region NeptunegraphGraph#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/neptunegraph_graph#region NeptunegraphGraph#region}
   */
   readonly region?: string;
   /**
   * The number of replicas in other AZs.  Value must be between 0 and 2.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/neptunegraph_graph#replica_count NeptunegraphGraph#replica_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/neptunegraph_graph#replica_count NeptunegraphGraph#replica_count}
   */
   readonly replicaCount?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/neptunegraph_graph#tags NeptunegraphGraph#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/neptunegraph_graph#tags NeptunegraphGraph#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/neptunegraph_graph#timeouts NeptunegraphGraph#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/neptunegraph_graph#timeouts NeptunegraphGraph#timeouts}
   */
   readonly timeouts?: NeptunegraphGraphTimeouts;
   /**
   * vector_search_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/neptunegraph_graph#vector_search_configuration NeptunegraphGraph#vector_search_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/neptunegraph_graph#vector_search_configuration NeptunegraphGraph#vector_search_configuration}
   */
   readonly vectorSearchConfiguration?: NeptunegraphGraphVectorSearchConfiguration[] | cdktf.IResolvable;
 }
@@ -90,19 +90,19 @@ export interface NeptunegraphGraphTimeouts {
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/neptunegraph_graph#create NeptunegraphGraph#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/neptunegraph_graph#create NeptunegraphGraph#create}
   */
   readonly create?: string;
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/neptunegraph_graph#delete NeptunegraphGraph#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/neptunegraph_graph#delete NeptunegraphGraph#delete}
   */
   readonly delete?: string;
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/neptunegraph_graph#update NeptunegraphGraph#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/neptunegraph_graph#update NeptunegraphGraph#update}
   */
   readonly update?: string;
 }
@@ -256,7 +256,7 @@ export interface NeptunegraphGraphVectorSearchConfiguration {
   /**
   * Specifies the number of dimensions for vector embeddings.  Value must be between 1 and 65,535.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/neptunegraph_graph#vector_search_dimension NeptunegraphGraph#vector_search_dimension}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/neptunegraph_graph#vector_search_dimension NeptunegraphGraph#vector_search_dimension}
   */
   readonly vectorSearchDimension?: number;
 }
@@ -372,7 +372,7 @@ export class NeptunegraphGraphVectorSearchConfigurationList extends cdktf.Comple
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/neptunegraph_graph aws_neptunegraph_graph}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/neptunegraph_graph aws_neptunegraph_graph}
 */
 export class NeptunegraphGraph extends cdktf.TerraformResource {
 
@@ -388,7 +388,7 @@ export class NeptunegraphGraph extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a NeptunegraphGraph resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NeptunegraphGraph to import
-  * @param importFromId The id of the existing NeptunegraphGraph that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/neptunegraph_graph#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing NeptunegraphGraph that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/neptunegraph_graph#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NeptunegraphGraph to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -400,7 +400,7 @@ export class NeptunegraphGraph extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/neptunegraph_graph aws_neptunegraph_graph} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/neptunegraph_graph aws_neptunegraph_graph} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -411,7 +411,7 @@ export class NeptunegraphGraph extends cdktf.TerraformResource {
       terraformResourceType: 'aws_neptunegraph_graph',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.12.0',
+        providerVersion: '6.13.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

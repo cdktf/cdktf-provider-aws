@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/networkmanager_vpc_attachment
+// https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/networkmanager_vpc_attachment
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,54 +13,62 @@ import * as cdktf from 'cdktf';
 
 export interface NetworkmanagerVpcAttachmentConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/networkmanager_vpc_attachment#core_network_id NetworkmanagerVpcAttachment#core_network_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/networkmanager_vpc_attachment#core_network_id NetworkmanagerVpcAttachment#core_network_id}
   */
   readonly coreNetworkId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/networkmanager_vpc_attachment#id NetworkmanagerVpcAttachment#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/networkmanager_vpc_attachment#id NetworkmanagerVpcAttachment#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/networkmanager_vpc_attachment#subnet_arns NetworkmanagerVpcAttachment#subnet_arns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/networkmanager_vpc_attachment#subnet_arns NetworkmanagerVpcAttachment#subnet_arns}
   */
   readonly subnetArns: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/networkmanager_vpc_attachment#tags NetworkmanagerVpcAttachment#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/networkmanager_vpc_attachment#tags NetworkmanagerVpcAttachment#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/networkmanager_vpc_attachment#tags_all NetworkmanagerVpcAttachment#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/networkmanager_vpc_attachment#tags_all NetworkmanagerVpcAttachment#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/networkmanager_vpc_attachment#vpc_arn NetworkmanagerVpcAttachment#vpc_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/networkmanager_vpc_attachment#vpc_arn NetworkmanagerVpcAttachment#vpc_arn}
   */
   readonly vpcArn: string;
   /**
   * options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/networkmanager_vpc_attachment#options NetworkmanagerVpcAttachment#options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/networkmanager_vpc_attachment#options NetworkmanagerVpcAttachment#options}
   */
   readonly options?: NetworkmanagerVpcAttachmentOptions;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/networkmanager_vpc_attachment#timeouts NetworkmanagerVpcAttachment#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/networkmanager_vpc_attachment#timeouts NetworkmanagerVpcAttachment#timeouts}
   */
   readonly timeouts?: NetworkmanagerVpcAttachmentTimeouts;
 }
 export interface NetworkmanagerVpcAttachmentOptions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/networkmanager_vpc_attachment#appliance_mode_support NetworkmanagerVpcAttachment#appliance_mode_support}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/networkmanager_vpc_attachment#appliance_mode_support NetworkmanagerVpcAttachment#appliance_mode_support}
   */
   readonly applianceModeSupport?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/networkmanager_vpc_attachment#ipv6_support NetworkmanagerVpcAttachment#ipv6_support}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/networkmanager_vpc_attachment#dns_support NetworkmanagerVpcAttachment#dns_support}
+  */
+  readonly dnsSupport?: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/networkmanager_vpc_attachment#ipv6_support NetworkmanagerVpcAttachment#ipv6_support}
   */
   readonly ipv6Support?: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/networkmanager_vpc_attachment#security_group_referencing_support NetworkmanagerVpcAttachment#security_group_referencing_support}
+  */
+  readonly securityGroupReferencingSupport?: boolean | cdktf.IResolvable;
 }
 
 export function networkmanagerVpcAttachmentOptionsToTerraform(struct?: NetworkmanagerVpcAttachmentOptionsOutputReference | NetworkmanagerVpcAttachmentOptions): any {
@@ -70,7 +78,9 @@ export function networkmanagerVpcAttachmentOptionsToTerraform(struct?: Networkma
   }
   return {
     appliance_mode_support: cdktf.booleanToTerraform(struct!.applianceModeSupport),
+    dns_support: cdktf.booleanToTerraform(struct!.dnsSupport),
     ipv6_support: cdktf.booleanToTerraform(struct!.ipv6Support),
+    security_group_referencing_support: cdktf.booleanToTerraform(struct!.securityGroupReferencingSupport),
   }
 }
 
@@ -87,8 +97,20 @@ export function networkmanagerVpcAttachmentOptionsToHclTerraform(struct?: Networ
       type: "simple",
       storageClassType: "boolean",
     },
+    dns_support: {
+      value: cdktf.booleanToHclTerraform(struct!.dnsSupport),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
     ipv6_support: {
       value: cdktf.booleanToHclTerraform(struct!.ipv6Support),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    security_group_referencing_support: {
+      value: cdktf.booleanToHclTerraform(struct!.securityGroupReferencingSupport),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -117,9 +139,17 @@ export class NetworkmanagerVpcAttachmentOptionsOutputReference extends cdktf.Com
       hasAnyValues = true;
       internalValueResult.applianceModeSupport = this._applianceModeSupport;
     }
+    if (this._dnsSupport !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.dnsSupport = this._dnsSupport;
+    }
     if (this._ipv6Support !== undefined) {
       hasAnyValues = true;
       internalValueResult.ipv6Support = this._ipv6Support;
+    }
+    if (this._securityGroupReferencingSupport !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.securityGroupReferencingSupport = this._securityGroupReferencingSupport;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -128,16 +158,20 @@ export class NetworkmanagerVpcAttachmentOptionsOutputReference extends cdktf.Com
     if (value === undefined) {
       this.isEmptyObject = false;
       this._applianceModeSupport = undefined;
+      this._dnsSupport = undefined;
       this._ipv6Support = undefined;
+      this._securityGroupReferencingSupport = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._applianceModeSupport = value.applianceModeSupport;
+      this._dnsSupport = value.dnsSupport;
       this._ipv6Support = value.ipv6Support;
+      this._securityGroupReferencingSupport = value.securityGroupReferencingSupport;
     }
   }
 
-  // appliance_mode_support - computed: false, optional: true, required: false
+  // appliance_mode_support - computed: true, optional: true, required: false
   private _applianceModeSupport?: boolean | cdktf.IResolvable; 
   public get applianceModeSupport() {
     return this.getBooleanAttribute('appliance_mode_support');
@@ -153,7 +187,23 @@ export class NetworkmanagerVpcAttachmentOptionsOutputReference extends cdktf.Com
     return this._applianceModeSupport;
   }
 
-  // ipv6_support - computed: false, optional: true, required: false
+  // dns_support - computed: true, optional: true, required: false
+  private _dnsSupport?: boolean | cdktf.IResolvable; 
+  public get dnsSupport() {
+    return this.getBooleanAttribute('dns_support');
+  }
+  public set dnsSupport(value: boolean | cdktf.IResolvable) {
+    this._dnsSupport = value;
+  }
+  public resetDnsSupport() {
+    this._dnsSupport = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dnsSupportInput() {
+    return this._dnsSupport;
+  }
+
+  // ipv6_support - computed: true, optional: true, required: false
   private _ipv6Support?: boolean | cdktf.IResolvable; 
   public get ipv6Support() {
     return this.getBooleanAttribute('ipv6_support');
@@ -168,18 +218,34 @@ export class NetworkmanagerVpcAttachmentOptionsOutputReference extends cdktf.Com
   public get ipv6SupportInput() {
     return this._ipv6Support;
   }
+
+  // security_group_referencing_support - computed: true, optional: true, required: false
+  private _securityGroupReferencingSupport?: boolean | cdktf.IResolvable; 
+  public get securityGroupReferencingSupport() {
+    return this.getBooleanAttribute('security_group_referencing_support');
+  }
+  public set securityGroupReferencingSupport(value: boolean | cdktf.IResolvable) {
+    this._securityGroupReferencingSupport = value;
+  }
+  public resetSecurityGroupReferencingSupport() {
+    this._securityGroupReferencingSupport = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get securityGroupReferencingSupportInput() {
+    return this._securityGroupReferencingSupport;
+  }
 }
 export interface NetworkmanagerVpcAttachmentTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/networkmanager_vpc_attachment#create NetworkmanagerVpcAttachment#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/networkmanager_vpc_attachment#create NetworkmanagerVpcAttachment#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/networkmanager_vpc_attachment#delete NetworkmanagerVpcAttachment#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/networkmanager_vpc_attachment#delete NetworkmanagerVpcAttachment#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/networkmanager_vpc_attachment#update NetworkmanagerVpcAttachment#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/networkmanager_vpc_attachment#update NetworkmanagerVpcAttachment#update}
   */
   readonly update?: string;
 }
@@ -331,7 +397,7 @@ export class NetworkmanagerVpcAttachmentTimeoutsOutputReference extends cdktf.Co
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/networkmanager_vpc_attachment aws_networkmanager_vpc_attachment}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/networkmanager_vpc_attachment aws_networkmanager_vpc_attachment}
 */
 export class NetworkmanagerVpcAttachment extends cdktf.TerraformResource {
 
@@ -347,7 +413,7 @@ export class NetworkmanagerVpcAttachment extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a NetworkmanagerVpcAttachment resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NetworkmanagerVpcAttachment to import
-  * @param importFromId The id of the existing NetworkmanagerVpcAttachment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/networkmanager_vpc_attachment#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing NetworkmanagerVpcAttachment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/networkmanager_vpc_attachment#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NetworkmanagerVpcAttachment to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -359,7 +425,7 @@ export class NetworkmanagerVpcAttachment extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/networkmanager_vpc_attachment aws_networkmanager_vpc_attachment} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/networkmanager_vpc_attachment aws_networkmanager_vpc_attachment} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -370,7 +436,7 @@ export class NetworkmanagerVpcAttachment extends cdktf.TerraformResource {
       terraformResourceType: 'aws_networkmanager_vpc_attachment',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.12.0',
+        providerVersion: '6.13.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
