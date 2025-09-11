@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/opensearch_package
+// https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/opensearch_package
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,44 +13,48 @@ import * as cdktf from 'cdktf';
 
 export interface OpensearchPackageConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/opensearch_package#id OpensearchPackage#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/opensearch_package#engine_version OpensearchPackage#engine_version}
+  */
+  readonly engineVersion?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/opensearch_package#id OpensearchPackage#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/opensearch_package#package_description OpensearchPackage#package_description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/opensearch_package#package_description OpensearchPackage#package_description}
   */
   readonly packageDescription?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/opensearch_package#package_name OpensearchPackage#package_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/opensearch_package#package_name OpensearchPackage#package_name}
   */
   readonly packageName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/opensearch_package#package_type OpensearchPackage#package_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/opensearch_package#package_type OpensearchPackage#package_type}
   */
   readonly packageType: string;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/opensearch_package#region OpensearchPackage#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/opensearch_package#region OpensearchPackage#region}
   */
   readonly region?: string;
   /**
   * package_source block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/opensearch_package#package_source OpensearchPackage#package_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/opensearch_package#package_source OpensearchPackage#package_source}
   */
   readonly packageSource: OpensearchPackagePackageSource;
 }
 export interface OpensearchPackagePackageSource {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/opensearch_package#s3_bucket_name OpensearchPackage#s3_bucket_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/opensearch_package#s3_bucket_name OpensearchPackage#s3_bucket_name}
   */
   readonly s3BucketName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/opensearch_package#s3_key OpensearchPackage#s3_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/opensearch_package#s3_key OpensearchPackage#s3_key}
   */
   readonly s3Key: string;
 }
@@ -157,7 +161,7 @@ export class OpensearchPackagePackageSourceOutputReference extends cdktf.Complex
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/opensearch_package aws_opensearch_package}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/opensearch_package aws_opensearch_package}
 */
 export class OpensearchPackage extends cdktf.TerraformResource {
 
@@ -173,7 +177,7 @@ export class OpensearchPackage extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a OpensearchPackage resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the OpensearchPackage to import
-  * @param importFromId The id of the existing OpensearchPackage that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/opensearch_package#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing OpensearchPackage that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/opensearch_package#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the OpensearchPackage to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -185,7 +189,7 @@ export class OpensearchPackage extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/opensearch_package aws_opensearch_package} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/opensearch_package aws_opensearch_package} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -196,7 +200,7 @@ export class OpensearchPackage extends cdktf.TerraformResource {
       terraformResourceType: 'aws_opensearch_package',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.12.0',
+        providerVersion: '6.13.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
@@ -207,6 +211,7 @@ export class OpensearchPackage extends cdktf.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
+    this._engineVersion = config.engineVersion;
     this._id = config.id;
     this._packageDescription = config.packageDescription;
     this._packageName = config.packageName;
@@ -222,6 +227,22 @@ export class OpensearchPackage extends cdktf.TerraformResource {
   // available_package_version - computed: true, optional: false, required: false
   public get availablePackageVersion() {
     return this.getStringAttribute('available_package_version');
+  }
+
+  // engine_version - computed: false, optional: true, required: false
+  private _engineVersion?: string; 
+  public get engineVersion() {
+    return this.getStringAttribute('engine_version');
+  }
+  public set engineVersion(value: string) {
+    this._engineVersion = value;
+  }
+  public resetEngineVersion() {
+    this._engineVersion = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get engineVersionInput() {
+    return this._engineVersion;
   }
 
   // id - computed: true, optional: true, required: false
@@ -322,6 +343,7 @@ export class OpensearchPackage extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      engine_version: cdktf.stringToTerraform(this._engineVersion),
       id: cdktf.stringToTerraform(this._id),
       package_description: cdktf.stringToTerraform(this._packageDescription),
       package_name: cdktf.stringToTerraform(this._packageName),
@@ -333,6 +355,12 @@ export class OpensearchPackage extends cdktf.TerraformResource {
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
+      engine_version: {
+        value: cdktf.stringToHclTerraform(this._engineVersion),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
       id: {
         value: cdktf.stringToHclTerraform(this._id),
         isBlock: false,

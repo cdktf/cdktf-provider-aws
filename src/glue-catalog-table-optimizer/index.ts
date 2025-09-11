@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/glue_catalog_table_optimizer
+// https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/glue_catalog_table_optimizer
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,43 +13,47 @@ import * as cdktf from 'cdktf';
 
 export interface GlueCatalogTableOptimizerConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/glue_catalog_table_optimizer#catalog_id GlueCatalogTableOptimizer#catalog_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/glue_catalog_table_optimizer#catalog_id GlueCatalogTableOptimizer#catalog_id}
   */
   readonly catalogId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/glue_catalog_table_optimizer#database_name GlueCatalogTableOptimizer#database_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/glue_catalog_table_optimizer#database_name GlueCatalogTableOptimizer#database_name}
   */
   readonly databaseName: string;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/glue_catalog_table_optimizer#region GlueCatalogTableOptimizer#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/glue_catalog_table_optimizer#region GlueCatalogTableOptimizer#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/glue_catalog_table_optimizer#table_name GlueCatalogTableOptimizer#table_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/glue_catalog_table_optimizer#table_name GlueCatalogTableOptimizer#table_name}
   */
   readonly tableName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/glue_catalog_table_optimizer#type GlueCatalogTableOptimizer#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/glue_catalog_table_optimizer#type GlueCatalogTableOptimizer#type}
   */
   readonly type: string;
   /**
   * configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/glue_catalog_table_optimizer#configuration GlueCatalogTableOptimizer#configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/glue_catalog_table_optimizer#configuration GlueCatalogTableOptimizer#configuration}
   */
   readonly configuration?: GlueCatalogTableOptimizerConfiguration[] | cdktf.IResolvable;
 }
 export interface GlueCatalogTableOptimizerConfigurationOrphanFileDeletionConfigurationIcebergConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/glue_catalog_table_optimizer#location GlueCatalogTableOptimizer#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/glue_catalog_table_optimizer#location GlueCatalogTableOptimizer#location}
   */
   readonly location?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/glue_catalog_table_optimizer#orphan_file_retention_period_in_days GlueCatalogTableOptimizer#orphan_file_retention_period_in_days}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/glue_catalog_table_optimizer#orphan_file_retention_period_in_days GlueCatalogTableOptimizer#orphan_file_retention_period_in_days}
   */
   readonly orphanFileRetentionPeriodInDays?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/glue_catalog_table_optimizer#run_rate_in_hours GlueCatalogTableOptimizer#run_rate_in_hours}
+  */
+  readonly runRateInHours?: number;
 }
 
 export function glueCatalogTableOptimizerConfigurationOrphanFileDeletionConfigurationIcebergConfigurationToTerraform(struct?: GlueCatalogTableOptimizerConfigurationOrphanFileDeletionConfigurationIcebergConfiguration | cdktf.IResolvable): any {
@@ -60,6 +64,7 @@ export function glueCatalogTableOptimizerConfigurationOrphanFileDeletionConfigur
   return {
     location: cdktf.stringToTerraform(struct!.location),
     orphan_file_retention_period_in_days: cdktf.numberToTerraform(struct!.orphanFileRetentionPeriodInDays),
+    run_rate_in_hours: cdktf.numberToTerraform(struct!.runRateInHours),
   }
 }
 
@@ -78,6 +83,12 @@ export function glueCatalogTableOptimizerConfigurationOrphanFileDeletionConfigur
     },
     orphan_file_retention_period_in_days: {
       value: cdktf.numberToHclTerraform(struct!.orphanFileRetentionPeriodInDays),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    run_rate_in_hours: {
+      value: cdktf.numberToHclTerraform(struct!.runRateInHours),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -116,6 +127,10 @@ export class GlueCatalogTableOptimizerConfigurationOrphanFileDeletionConfigurati
       hasAnyValues = true;
       internalValueResult.orphanFileRetentionPeriodInDays = this._orphanFileRetentionPeriodInDays;
     }
+    if (this._runRateInHours !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.runRateInHours = this._runRateInHours;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -125,6 +140,7 @@ export class GlueCatalogTableOptimizerConfigurationOrphanFileDeletionConfigurati
       this.resolvableValue = undefined;
       this._location = undefined;
       this._orphanFileRetentionPeriodInDays = undefined;
+      this._runRateInHours = undefined;
     }
     else if (cdktf.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
@@ -135,6 +151,7 @@ export class GlueCatalogTableOptimizerConfigurationOrphanFileDeletionConfigurati
       this.resolvableValue = undefined;
       this._location = value.location;
       this._orphanFileRetentionPeriodInDays = value.orphanFileRetentionPeriodInDays;
+      this._runRateInHours = value.runRateInHours;
     }
   }
 
@@ -169,6 +186,22 @@ export class GlueCatalogTableOptimizerConfigurationOrphanFileDeletionConfigurati
   public get orphanFileRetentionPeriodInDaysInput() {
     return this._orphanFileRetentionPeriodInDays;
   }
+
+  // run_rate_in_hours - computed: true, optional: true, required: false
+  private _runRateInHours?: number; 
+  public get runRateInHours() {
+    return this.getNumberAttribute('run_rate_in_hours');
+  }
+  public set runRateInHours(value: number) {
+    this._runRateInHours = value;
+  }
+  public resetRunRateInHours() {
+    this._runRateInHours = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get runRateInHoursInput() {
+    return this._runRateInHours;
+  }
 }
 
 export class GlueCatalogTableOptimizerConfigurationOrphanFileDeletionConfigurationIcebergConfigurationList extends cdktf.ComplexList {
@@ -194,7 +227,7 @@ export interface GlueCatalogTableOptimizerConfigurationOrphanFileDeletionConfigu
   /**
   * iceberg_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/glue_catalog_table_optimizer#iceberg_configuration GlueCatalogTableOptimizer#iceberg_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/glue_catalog_table_optimizer#iceberg_configuration GlueCatalogTableOptimizer#iceberg_configuration}
   */
   readonly icebergConfiguration?: GlueCatalogTableOptimizerConfigurationOrphanFileDeletionConfigurationIcebergConfiguration[] | cdktf.IResolvable;
 }
@@ -310,15 +343,19 @@ export class GlueCatalogTableOptimizerConfigurationOrphanFileDeletionConfigurati
 }
 export interface GlueCatalogTableOptimizerConfigurationRetentionConfigurationIcebergConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/glue_catalog_table_optimizer#clean_expired_files GlueCatalogTableOptimizer#clean_expired_files}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/glue_catalog_table_optimizer#clean_expired_files GlueCatalogTableOptimizer#clean_expired_files}
   */
   readonly cleanExpiredFiles?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/glue_catalog_table_optimizer#number_of_snapshots_to_retain GlueCatalogTableOptimizer#number_of_snapshots_to_retain}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/glue_catalog_table_optimizer#number_of_snapshots_to_retain GlueCatalogTableOptimizer#number_of_snapshots_to_retain}
   */
   readonly numberOfSnapshotsToRetain?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/glue_catalog_table_optimizer#snapshot_retention_period_in_days GlueCatalogTableOptimizer#snapshot_retention_period_in_days}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/glue_catalog_table_optimizer#run_rate_in_hours GlueCatalogTableOptimizer#run_rate_in_hours}
+  */
+  readonly runRateInHours?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/glue_catalog_table_optimizer#snapshot_retention_period_in_days GlueCatalogTableOptimizer#snapshot_retention_period_in_days}
   */
   readonly snapshotRetentionPeriodInDays?: number;
 }
@@ -331,6 +368,7 @@ export function glueCatalogTableOptimizerConfigurationRetentionConfigurationIceb
   return {
     clean_expired_files: cdktf.booleanToTerraform(struct!.cleanExpiredFiles),
     number_of_snapshots_to_retain: cdktf.numberToTerraform(struct!.numberOfSnapshotsToRetain),
+    run_rate_in_hours: cdktf.numberToTerraform(struct!.runRateInHours),
     snapshot_retention_period_in_days: cdktf.numberToTerraform(struct!.snapshotRetentionPeriodInDays),
   }
 }
@@ -350,6 +388,12 @@ export function glueCatalogTableOptimizerConfigurationRetentionConfigurationIceb
     },
     number_of_snapshots_to_retain: {
       value: cdktf.numberToHclTerraform(struct!.numberOfSnapshotsToRetain),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    run_rate_in_hours: {
+      value: cdktf.numberToHclTerraform(struct!.runRateInHours),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -394,6 +438,10 @@ export class GlueCatalogTableOptimizerConfigurationRetentionConfigurationIceberg
       hasAnyValues = true;
       internalValueResult.numberOfSnapshotsToRetain = this._numberOfSnapshotsToRetain;
     }
+    if (this._runRateInHours !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.runRateInHours = this._runRateInHours;
+    }
     if (this._snapshotRetentionPeriodInDays !== undefined) {
       hasAnyValues = true;
       internalValueResult.snapshotRetentionPeriodInDays = this._snapshotRetentionPeriodInDays;
@@ -407,6 +455,7 @@ export class GlueCatalogTableOptimizerConfigurationRetentionConfigurationIceberg
       this.resolvableValue = undefined;
       this._cleanExpiredFiles = undefined;
       this._numberOfSnapshotsToRetain = undefined;
+      this._runRateInHours = undefined;
       this._snapshotRetentionPeriodInDays = undefined;
     }
     else if (cdktf.Tokenization.isResolvable(value)) {
@@ -418,6 +467,7 @@ export class GlueCatalogTableOptimizerConfigurationRetentionConfigurationIceberg
       this.resolvableValue = undefined;
       this._cleanExpiredFiles = value.cleanExpiredFiles;
       this._numberOfSnapshotsToRetain = value.numberOfSnapshotsToRetain;
+      this._runRateInHours = value.runRateInHours;
       this._snapshotRetentionPeriodInDays = value.snapshotRetentionPeriodInDays;
     }
   }
@@ -452,6 +502,22 @@ export class GlueCatalogTableOptimizerConfigurationRetentionConfigurationIceberg
   // Temporarily expose input value. Use with caution.
   public get numberOfSnapshotsToRetainInput() {
     return this._numberOfSnapshotsToRetain;
+  }
+
+  // run_rate_in_hours - computed: true, optional: true, required: false
+  private _runRateInHours?: number; 
+  public get runRateInHours() {
+    return this.getNumberAttribute('run_rate_in_hours');
+  }
+  public set runRateInHours(value: number) {
+    this._runRateInHours = value;
+  }
+  public resetRunRateInHours() {
+    this._runRateInHours = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get runRateInHoursInput() {
+    return this._runRateInHours;
   }
 
   // snapshot_retention_period_in_days - computed: false, optional: true, required: false
@@ -494,7 +560,7 @@ export interface GlueCatalogTableOptimizerConfigurationRetentionConfiguration {
   /**
   * iceberg_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/glue_catalog_table_optimizer#iceberg_configuration GlueCatalogTableOptimizer#iceberg_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/glue_catalog_table_optimizer#iceberg_configuration GlueCatalogTableOptimizer#iceberg_configuration}
   */
   readonly icebergConfiguration?: GlueCatalogTableOptimizerConfigurationRetentionConfigurationIcebergConfiguration[] | cdktf.IResolvable;
 }
@@ -610,23 +676,23 @@ export class GlueCatalogTableOptimizerConfigurationRetentionConfigurationList ex
 }
 export interface GlueCatalogTableOptimizerConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/glue_catalog_table_optimizer#enabled GlueCatalogTableOptimizer#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/glue_catalog_table_optimizer#enabled GlueCatalogTableOptimizer#enabled}
   */
   readonly enabled: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/glue_catalog_table_optimizer#role_arn GlueCatalogTableOptimizer#role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/glue_catalog_table_optimizer#role_arn GlueCatalogTableOptimizer#role_arn}
   */
   readonly roleArn: string;
   /**
   * orphan_file_deletion_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/glue_catalog_table_optimizer#orphan_file_deletion_configuration GlueCatalogTableOptimizer#orphan_file_deletion_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/glue_catalog_table_optimizer#orphan_file_deletion_configuration GlueCatalogTableOptimizer#orphan_file_deletion_configuration}
   */
   readonly orphanFileDeletionConfiguration?: GlueCatalogTableOptimizerConfigurationOrphanFileDeletionConfiguration[] | cdktf.IResolvable;
   /**
   * retention_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/glue_catalog_table_optimizer#retention_configuration GlueCatalogTableOptimizer#retention_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/glue_catalog_table_optimizer#retention_configuration GlueCatalogTableOptimizer#retention_configuration}
   */
   readonly retentionConfiguration?: GlueCatalogTableOptimizerConfigurationRetentionConfiguration[] | cdktf.IResolvable;
 }
@@ -823,7 +889,7 @@ export class GlueCatalogTableOptimizerConfigurationList extends cdktf.ComplexLis
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/glue_catalog_table_optimizer aws_glue_catalog_table_optimizer}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/glue_catalog_table_optimizer aws_glue_catalog_table_optimizer}
 */
 export class GlueCatalogTableOptimizer extends cdktf.TerraformResource {
 
@@ -839,7 +905,7 @@ export class GlueCatalogTableOptimizer extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GlueCatalogTableOptimizer resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GlueCatalogTableOptimizer to import
-  * @param importFromId The id of the existing GlueCatalogTableOptimizer that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/glue_catalog_table_optimizer#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GlueCatalogTableOptimizer that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/glue_catalog_table_optimizer#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GlueCatalogTableOptimizer to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -851,7 +917,7 @@ export class GlueCatalogTableOptimizer extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/glue_catalog_table_optimizer aws_glue_catalog_table_optimizer} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/glue_catalog_table_optimizer aws_glue_catalog_table_optimizer} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -862,7 +928,7 @@ export class GlueCatalogTableOptimizer extends cdktf.TerraformResource {
       terraformResourceType: 'aws_glue_catalog_table_optimizer',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.12.0',
+        providerVersion: '6.13.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

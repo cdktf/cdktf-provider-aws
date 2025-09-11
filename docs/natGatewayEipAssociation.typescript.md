@@ -4,7 +4,7 @@
 
 ### NatGatewayEipAssociation <a name="NatGatewayEipAssociation" id="@cdktf/provider-aws.natGatewayEipAssociation.NatGatewayEipAssociation"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/nat_gateway_eip_association aws_nat_gateway_eip_association}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/nat_gateway_eip_association aws_nat_gateway_eip_association}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.natGatewayEipAssociation.NatGatewayEipAssociation.Initializer"></a>
 
@@ -494,7 +494,7 @@ The construct id used in the generated config for the NatGatewayEipAssociation t
 
 The id of the existing NatGatewayEipAssociation that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/nat_gateway_eip_association#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/nat_gateway_eip_association#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -809,8 +809,8 @@ const natGatewayEipAssociationConfig: natGatewayEipAssociation.NatGatewayEipAsso
 | <code><a href="#@cdktf/provider-aws.natGatewayEipAssociation.NatGatewayEipAssociationConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.natGatewayEipAssociation.NatGatewayEipAssociationConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.natGatewayEipAssociation.NatGatewayEipAssociationConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGatewayEipAssociation.NatGatewayEipAssociationConfig.property.allocationId">allocationId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/nat_gateway_eip_association#allocation_id NatGatewayEipAssociation#allocation_id}. |
-| <code><a href="#@cdktf/provider-aws.natGatewayEipAssociation.NatGatewayEipAssociationConfig.property.natGatewayId">natGatewayId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/nat_gateway_eip_association#nat_gateway_id NatGatewayEipAssociation#nat_gateway_id}. |
+| <code><a href="#@cdktf/provider-aws.natGatewayEipAssociation.NatGatewayEipAssociationConfig.property.allocationId">allocationId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/nat_gateway_eip_association#allocation_id NatGatewayEipAssociation#allocation_id}. |
+| <code><a href="#@cdktf/provider-aws.natGatewayEipAssociation.NatGatewayEipAssociationConfig.property.natGatewayId">natGatewayId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/nat_gateway_eip_association#nat_gateway_id NatGatewayEipAssociation#nat_gateway_id}. |
 | <code><a href="#@cdktf/provider-aws.natGatewayEipAssociation.NatGatewayEipAssociationConfig.property.region">region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktf/provider-aws.natGatewayEipAssociation.NatGatewayEipAssociationConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-aws.natGatewayEipAssociation.NatGatewayEipAssociationTimeouts">NatGatewayEipAssociationTimeouts</a></code> | timeouts block. |
 
@@ -894,7 +894,7 @@ public readonly allocationId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/nat_gateway_eip_association#allocation_id NatGatewayEipAssociation#allocation_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/nat_gateway_eip_association#allocation_id NatGatewayEipAssociation#allocation_id}.
 
 ---
 
@@ -906,7 +906,7 @@ public readonly natGatewayId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/nat_gateway_eip_association#nat_gateway_id NatGatewayEipAssociation#nat_gateway_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/nat_gateway_eip_association#nat_gateway_id NatGatewayEipAssociation#nat_gateway_id}.
 
 ---
 
@@ -920,7 +920,7 @@ public readonly region: string;
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/nat_gateway_eip_association#region NatGatewayEipAssociation#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/nat_gateway_eip_association#region NatGatewayEipAssociation#region}
 
 ---
 
@@ -934,7 +934,7 @@ public readonly timeouts: NatGatewayEipAssociationTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/nat_gateway_eip_association#timeouts NatGatewayEipAssociation#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/nat_gateway_eip_association#timeouts NatGatewayEipAssociation#timeouts}
 
 ---
 
@@ -967,7 +967,7 @@ public readonly create: string;
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/nat_gateway_eip_association#create NatGatewayEipAssociation#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/nat_gateway_eip_association#create NatGatewayEipAssociation#create}
 
 ---
 
@@ -981,7 +981,7 @@ public readonly delete: string;
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/nat_gateway_eip_association#delete NatGatewayEipAssociation#delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/nat_gateway_eip_association#delete NatGatewayEipAssociation#delete}
 
 ---
 

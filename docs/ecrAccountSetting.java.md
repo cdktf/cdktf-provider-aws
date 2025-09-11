@@ -4,7 +4,7 @@
 
 ### EcrAccountSetting <a name="EcrAccountSetting" id="@cdktf/provider-aws.ecrAccountSetting.EcrAccountSetting"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecr_account_setting aws_ecr_account_setting}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/ecr_account_setting aws_ecr_account_setting}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ecrAccountSetting.EcrAccountSetting.Initializer"></a>
 
@@ -40,8 +40,8 @@ EcrAccountSetting.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-aws.ecrAccountSetting.EcrAccountSetting.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecrAccountSetting.EcrAccountSetting.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecrAccountSetting.EcrAccountSetting.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ecrAccountSetting.EcrAccountSetting.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecr_account_setting#name EcrAccountSetting#name}. |
-| <code><a href="#@cdktf/provider-aws.ecrAccountSetting.EcrAccountSetting.Initializer.parameter.value">value</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecr_account_setting#value EcrAccountSetting#value}. |
+| <code><a href="#@cdktf/provider-aws.ecrAccountSetting.EcrAccountSetting.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/ecr_account_setting#name EcrAccountSetting#name}. |
+| <code><a href="#@cdktf/provider-aws.ecrAccountSetting.EcrAccountSetting.Initializer.parameter.value">value</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/ecr_account_setting#value EcrAccountSetting#value}. |
 | <code><a href="#@cdktf/provider-aws.ecrAccountSetting.EcrAccountSetting.Initializer.parameter.region">region</a></code> | <code>java.lang.String</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecr_account_setting#name EcrAccountSetting#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/ecr_account_setting#name EcrAccountSetting#name}.
 
 ---
 
@@ -118,7 +118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecr_account_setting#value EcrAccountSetting#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/ecr_account_setting#value EcrAccountSetting#value}.
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecr_account_setting#region EcrAccountSetting#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/ecr_account_setting#region EcrAccountSetting#region}
 
 ---
 
@@ -562,7 +562,7 @@ The construct id used in the generated config for the EcrAccountSetting to impor
 
 The id of the existing EcrAccountSetting that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecr_account_setting#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/ecr_account_setting#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -859,8 +859,8 @@ EcrAccountSettingConfig.builder()
 | <code><a href="#@cdktf/provider-aws.ecrAccountSetting.EcrAccountSettingConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecrAccountSetting.EcrAccountSettingConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecrAccountSetting.EcrAccountSettingConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ecrAccountSetting.EcrAccountSettingConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecr_account_setting#name EcrAccountSetting#name}. |
-| <code><a href="#@cdktf/provider-aws.ecrAccountSetting.EcrAccountSettingConfig.property.value">value</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecr_account_setting#value EcrAccountSetting#value}. |
+| <code><a href="#@cdktf/provider-aws.ecrAccountSetting.EcrAccountSettingConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/ecr_account_setting#name EcrAccountSetting#name}. |
+| <code><a href="#@cdktf/provider-aws.ecrAccountSetting.EcrAccountSettingConfig.property.value">value</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/ecr_account_setting#value EcrAccountSetting#value}. |
 | <code><a href="#@cdktf/provider-aws.ecrAccountSetting.EcrAccountSettingConfig.property.region">region</a></code> | <code>java.lang.String</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -943,7 +943,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecr_account_setting#name EcrAccountSetting#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/ecr_account_setting#name EcrAccountSetting#name}.
 
 ---
 
@@ -955,7 +955,7 @@ public java.lang.String getValue();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecr_account_setting#value EcrAccountSetting#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/ecr_account_setting#value EcrAccountSetting#value}.
 
 ---
 
@@ -969,7 +969,7 @@ public java.lang.String getRegion();
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecr_account_setting#region EcrAccountSetting#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/ecr_account_setting#region EcrAccountSetting#region}
 
 ---
 

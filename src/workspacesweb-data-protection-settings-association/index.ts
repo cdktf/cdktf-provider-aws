@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/workspacesweb_data_protection_settings_association
+// https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/workspacesweb_data_protection_settings_association
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,23 +13,23 @@ import * as cdktf from 'cdktf';
 
 export interface WorkspaceswebDataProtectionSettingsAssociationConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/workspacesweb_data_protection_settings_association#data_protection_settings_arn WorkspaceswebDataProtectionSettingsAssociation#data_protection_settings_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/workspacesweb_data_protection_settings_association#data_protection_settings_arn WorkspaceswebDataProtectionSettingsAssociation#data_protection_settings_arn}
   */
   readonly dataProtectionSettingsArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/workspacesweb_data_protection_settings_association#portal_arn WorkspaceswebDataProtectionSettingsAssociation#portal_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/workspacesweb_data_protection_settings_association#portal_arn WorkspaceswebDataProtectionSettingsAssociation#portal_arn}
   */
   readonly portalArn: string;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/workspacesweb_data_protection_settings_association#region WorkspaceswebDataProtectionSettingsAssociation#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/workspacesweb_data_protection_settings_association#region WorkspaceswebDataProtectionSettingsAssociation#region}
   */
   readonly region?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/workspacesweb_data_protection_settings_association aws_workspacesweb_data_protection_settings_association}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/workspacesweb_data_protection_settings_association aws_workspacesweb_data_protection_settings_association}
 */
 export class WorkspaceswebDataProtectionSettingsAssociation extends cdktf.TerraformResource {
 
@@ -45,7 +45,7 @@ export class WorkspaceswebDataProtectionSettingsAssociation extends cdktf.Terraf
   * Generates CDKTF code for importing a WorkspaceswebDataProtectionSettingsAssociation resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the WorkspaceswebDataProtectionSettingsAssociation to import
-  * @param importFromId The id of the existing WorkspaceswebDataProtectionSettingsAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/workspacesweb_data_protection_settings_association#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing WorkspaceswebDataProtectionSettingsAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/workspacesweb_data_protection_settings_association#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the WorkspaceswebDataProtectionSettingsAssociation to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -57,7 +57,7 @@ export class WorkspaceswebDataProtectionSettingsAssociation extends cdktf.Terraf
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/workspacesweb_data_protection_settings_association aws_workspacesweb_data_protection_settings_association} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/workspacesweb_data_protection_settings_association aws_workspacesweb_data_protection_settings_association} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -68,7 +68,7 @@ export class WorkspaceswebDataProtectionSettingsAssociation extends cdktf.Terraf
       terraformResourceType: 'aws_workspacesweb_data_protection_settings_association',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.12.0',
+        providerVersion: '6.13.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

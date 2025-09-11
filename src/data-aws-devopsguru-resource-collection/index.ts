@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/data-sources/devopsguru_resource_collection
+// https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/data-sources/devopsguru_resource_collection
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,11 @@ export interface DataAwsDevopsguruResourceCollectionConfig extends cdktf.Terrafo
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/data-sources/devopsguru_resource_collection#region DataAwsDevopsguruResourceCollection#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/data-sources/devopsguru_resource_collection#region DataAwsDevopsguruResourceCollection#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/data-sources/devopsguru_resource_collection#type DataAwsDevopsguruResourceCollection#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/data-sources/devopsguru_resource_collection#type DataAwsDevopsguruResourceCollection#type}
   */
   readonly type: string;
 }
@@ -180,7 +180,7 @@ export class DataAwsDevopsguruResourceCollectionTagsList extends cdktf.ComplexLi
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/data-sources/devopsguru_resource_collection aws_devopsguru_resource_collection}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/data-sources/devopsguru_resource_collection aws_devopsguru_resource_collection}
 */
 export class DataAwsDevopsguruResourceCollection extends cdktf.TerraformDataSource {
 
@@ -196,7 +196,7 @@ export class DataAwsDevopsguruResourceCollection extends cdktf.TerraformDataSour
   * Generates CDKTF code for importing a DataAwsDevopsguruResourceCollection resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsDevopsguruResourceCollection to import
-  * @param importFromId The id of the existing DataAwsDevopsguruResourceCollection that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/data-sources/devopsguru_resource_collection#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsDevopsguruResourceCollection that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/data-sources/devopsguru_resource_collection#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsDevopsguruResourceCollection to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -208,7 +208,7 @@ export class DataAwsDevopsguruResourceCollection extends cdktf.TerraformDataSour
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/data-sources/devopsguru_resource_collection aws_devopsguru_resource_collection} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/data-sources/devopsguru_resource_collection aws_devopsguru_resource_collection} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -219,7 +219,7 @@ export class DataAwsDevopsguruResourceCollection extends cdktf.TerraformDataSour
       terraformResourceType: 'aws_devopsguru_resource_collection',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.12.0',
+        providerVersion: '6.13.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

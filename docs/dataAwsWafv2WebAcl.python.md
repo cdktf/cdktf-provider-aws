@@ -4,7 +4,7 @@
 
 ### DataAwsWafv2WebAcl <a name="DataAwsWafv2WebAcl" id="@cdktf/provider-aws.dataAwsWafv2WebAcl.DataAwsWafv2WebAcl"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/data-sources/wafv2_web_acl aws_wafv2_web_acl}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/data-sources/wafv2_web_acl aws_wafv2_web_acl}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsWafv2WebAcl.DataAwsWafv2WebAcl.Initializer"></a>
 
@@ -40,11 +40,11 @@ dataAwsWafv2WebAcl.DataAwsWafv2WebAcl(
 | <code><a href="#@cdktf/provider-aws.dataAwsWafv2WebAcl.DataAwsWafv2WebAcl.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsWafv2WebAcl.DataAwsWafv2WebAcl.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsWafv2WebAcl.DataAwsWafv2WebAcl.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsWafv2WebAcl.DataAwsWafv2WebAcl.Initializer.parameter.scope">scope</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/data-sources/wafv2_web_acl#scope DataAwsWafv2WebAcl#scope}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsWafv2WebAcl.DataAwsWafv2WebAcl.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/data-sources/wafv2_web_acl#id DataAwsWafv2WebAcl#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsWafv2WebAcl.DataAwsWafv2WebAcl.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/data-sources/wafv2_web_acl#name DataAwsWafv2WebAcl#name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsWafv2WebAcl.DataAwsWafv2WebAcl.Initializer.parameter.scope">scope</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/data-sources/wafv2_web_acl#scope DataAwsWafv2WebAcl#scope}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsWafv2WebAcl.DataAwsWafv2WebAcl.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/data-sources/wafv2_web_acl#id DataAwsWafv2WebAcl#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsWafv2WebAcl.DataAwsWafv2WebAcl.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/data-sources/wafv2_web_acl#name DataAwsWafv2WebAcl#name}. |
 | <code><a href="#@cdktf/provider-aws.dataAwsWafv2WebAcl.DataAwsWafv2WebAcl.Initializer.parameter.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktf/provider-aws.dataAwsWafv2WebAcl.DataAwsWafv2WebAcl.Initializer.parameter.resourceArn">resource_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/data-sources/wafv2_web_acl#resource_arn DataAwsWafv2WebAcl#resource_arn}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsWafv2WebAcl.DataAwsWafv2WebAcl.Initializer.parameter.resourceArn">resource_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/data-sources/wafv2_web_acl#resource_arn DataAwsWafv2WebAcl#resource_arn}. |
 
 ---
 
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/data-sources/wafv2_web_acl#scope DataAwsWafv2WebAcl#scope}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/data-sources/wafv2_web_acl#scope DataAwsWafv2WebAcl#scope}.
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/data-sources/wafv2_web_acl#id DataAwsWafv2WebAcl#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/data-sources/wafv2_web_acl#id DataAwsWafv2WebAcl#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -131,7 +131,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/data-sources/wafv2_web_acl#name DataAwsWafv2WebAcl#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/data-sources/wafv2_web_acl#name DataAwsWafv2WebAcl#name}.
 
 ---
 
@@ -141,7 +141,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/data-sources/wafv2_web_acl#region DataAwsWafv2WebAcl#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/data-sources/wafv2_web_acl#region DataAwsWafv2WebAcl#region}
 
 ---
 
@@ -149,7 +149,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/data-sources/wafv2_web_acl#resource_arn DataAwsWafv2WebAcl#resource_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/data-sources/wafv2_web_acl#resource_arn DataAwsWafv2WebAcl#resource_arn}.
 
 ---
 
@@ -536,7 +536,7 @@ The construct id used in the generated config for the DataAwsWafv2WebAcl to impo
 
 The id of the existing DataAwsWafv2WebAcl that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/data-sources/wafv2_web_acl#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/data-sources/wafv2_web_acl#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -875,11 +875,11 @@ dataAwsWafv2WebAcl.DataAwsWafv2WebAclConfig(
 | <code><a href="#@cdktf/provider-aws.dataAwsWafv2WebAcl.DataAwsWafv2WebAclConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsWafv2WebAcl.DataAwsWafv2WebAclConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsWafv2WebAcl.DataAwsWafv2WebAclConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsWafv2WebAcl.DataAwsWafv2WebAclConfig.property.scope">scope</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/data-sources/wafv2_web_acl#scope DataAwsWafv2WebAcl#scope}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsWafv2WebAcl.DataAwsWafv2WebAclConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/data-sources/wafv2_web_acl#id DataAwsWafv2WebAcl#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsWafv2WebAcl.DataAwsWafv2WebAclConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/data-sources/wafv2_web_acl#name DataAwsWafv2WebAcl#name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsWafv2WebAcl.DataAwsWafv2WebAclConfig.property.scope">scope</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/data-sources/wafv2_web_acl#scope DataAwsWafv2WebAcl#scope}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsWafv2WebAcl.DataAwsWafv2WebAclConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/data-sources/wafv2_web_acl#id DataAwsWafv2WebAcl#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsWafv2WebAcl.DataAwsWafv2WebAclConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/data-sources/wafv2_web_acl#name DataAwsWafv2WebAcl#name}. |
 | <code><a href="#@cdktf/provider-aws.dataAwsWafv2WebAcl.DataAwsWafv2WebAclConfig.property.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktf/provider-aws.dataAwsWafv2WebAcl.DataAwsWafv2WebAclConfig.property.resourceArn">resource_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/data-sources/wafv2_web_acl#resource_arn DataAwsWafv2WebAcl#resource_arn}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsWafv2WebAcl.DataAwsWafv2WebAclConfig.property.resourceArn">resource_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/data-sources/wafv2_web_acl#resource_arn DataAwsWafv2WebAcl#resource_arn}. |
 
 ---
 
@@ -961,7 +961,7 @@ scope: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/data-sources/wafv2_web_acl#scope DataAwsWafv2WebAcl#scope}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/data-sources/wafv2_web_acl#scope DataAwsWafv2WebAcl#scope}.
 
 ---
 
@@ -973,7 +973,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/data-sources/wafv2_web_acl#id DataAwsWafv2WebAcl#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/data-sources/wafv2_web_acl#id DataAwsWafv2WebAcl#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -988,7 +988,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/data-sources/wafv2_web_acl#name DataAwsWafv2WebAcl#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/data-sources/wafv2_web_acl#name DataAwsWafv2WebAcl#name}.
 
 ---
 
@@ -1002,7 +1002,7 @@ region: str
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/data-sources/wafv2_web_acl#region DataAwsWafv2WebAcl#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/data-sources/wafv2_web_acl#region DataAwsWafv2WebAcl#region}
 
 ---
 
@@ -1014,7 +1014,7 @@ resource_arn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/data-sources/wafv2_web_acl#resource_arn DataAwsWafv2WebAcl#resource_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/data-sources/wafv2_web_acl#resource_arn DataAwsWafv2WebAcl#resource_arn}.
 
 ---
 

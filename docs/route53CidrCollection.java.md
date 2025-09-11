@@ -4,7 +4,7 @@
 
 ### Route53CidrCollection <a name="Route53CidrCollection" id="@cdktf/provider-aws.route53CidrCollection.Route53CidrCollection"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/route53_cidr_collection aws_route53_cidr_collection}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/route53_cidr_collection aws_route53_cidr_collection}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.route53CidrCollection.Route53CidrCollection.Initializer"></a>
 
@@ -38,7 +38,7 @@ Route53CidrCollection.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-aws.route53CidrCollection.Route53CidrCollection.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.route53CidrCollection.Route53CidrCollection.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.route53CidrCollection.Route53CidrCollection.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.route53CidrCollection.Route53CidrCollection.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/route53_cidr_collection#name Route53CidrCollection#name}. |
+| <code><a href="#@cdktf/provider-aws.route53CidrCollection.Route53CidrCollection.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/route53_cidr_collection#name Route53CidrCollection#name}. |
 
 ---
 
@@ -106,7 +106,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/route53_cidr_collection#name Route53CidrCollection#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/route53_cidr_collection#name Route53CidrCollection#name}.
 
 ---
 
@@ -533,7 +533,7 @@ The construct id used in the generated config for the Route53CidrCollection to i
 
 The id of the existing Route53CidrCollection that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/route53_cidr_collection#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/route53_cidr_collection#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -817,7 +817,7 @@ Route53CidrCollectionConfig.builder()
 | <code><a href="#@cdktf/provider-aws.route53CidrCollection.Route53CidrCollectionConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.route53CidrCollection.Route53CidrCollectionConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.route53CidrCollection.Route53CidrCollectionConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.route53CidrCollection.Route53CidrCollectionConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/route53_cidr_collection#name Route53CidrCollection#name}. |
+| <code><a href="#@cdktf/provider-aws.route53CidrCollection.Route53CidrCollectionConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/route53_cidr_collection#name Route53CidrCollection#name}. |
 
 ---
 
@@ -899,7 +899,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/route53_cidr_collection#name Route53CidrCollection#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/route53_cidr_collection#name Route53CidrCollection#name}.
 
 ---
 

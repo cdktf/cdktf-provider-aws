@@ -4,7 +4,7 @@
 
 ### RedshiftHsmConfiguration <a name="RedshiftHsmConfiguration" id="@cdktf/provider-aws.redshiftHsmConfiguration.RedshiftHsmConfiguration"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/redshift_hsm_configuration aws_redshift_hsm_configuration}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/redshift_hsm_configuration aws_redshift_hsm_configuration}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.redshiftHsmConfiguration.RedshiftHsmConfiguration.Initializer"></a>
 
@@ -495,7 +495,7 @@ The construct id used in the generated config for the RedshiftHsmConfiguration t
 
 The id of the existing RedshiftHsmConfiguration that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/redshift_hsm_configuration#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/redshift_hsm_configuration#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -942,16 +942,16 @@ const redshiftHsmConfigurationConfig: redshiftHsmConfiguration.RedshiftHsmConfig
 | <code><a href="#@cdktf/provider-aws.redshiftHsmConfiguration.RedshiftHsmConfigurationConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.redshiftHsmConfiguration.RedshiftHsmConfigurationConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.redshiftHsmConfiguration.RedshiftHsmConfigurationConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.redshiftHsmConfiguration.RedshiftHsmConfigurationConfig.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/redshift_hsm_configuration#description RedshiftHsmConfiguration#description}. |
-| <code><a href="#@cdktf/provider-aws.redshiftHsmConfiguration.RedshiftHsmConfigurationConfig.property.hsmConfigurationIdentifier">hsmConfigurationIdentifier</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/redshift_hsm_configuration#hsm_configuration_identifier RedshiftHsmConfiguration#hsm_configuration_identifier}. |
-| <code><a href="#@cdktf/provider-aws.redshiftHsmConfiguration.RedshiftHsmConfigurationConfig.property.hsmIpAddress">hsmIpAddress</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/redshift_hsm_configuration#hsm_ip_address RedshiftHsmConfiguration#hsm_ip_address}. |
-| <code><a href="#@cdktf/provider-aws.redshiftHsmConfiguration.RedshiftHsmConfigurationConfig.property.hsmPartitionName">hsmPartitionName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/redshift_hsm_configuration#hsm_partition_name RedshiftHsmConfiguration#hsm_partition_name}. |
-| <code><a href="#@cdktf/provider-aws.redshiftHsmConfiguration.RedshiftHsmConfigurationConfig.property.hsmPartitionPassword">hsmPartitionPassword</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/redshift_hsm_configuration#hsm_partition_password RedshiftHsmConfiguration#hsm_partition_password}. |
-| <code><a href="#@cdktf/provider-aws.redshiftHsmConfiguration.RedshiftHsmConfigurationConfig.property.hsmServerPublicCertificate">hsmServerPublicCertificate</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/redshift_hsm_configuration#hsm_server_public_certificate RedshiftHsmConfiguration#hsm_server_public_certificate}. |
-| <code><a href="#@cdktf/provider-aws.redshiftHsmConfiguration.RedshiftHsmConfigurationConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/redshift_hsm_configuration#id RedshiftHsmConfiguration#id}. |
+| <code><a href="#@cdktf/provider-aws.redshiftHsmConfiguration.RedshiftHsmConfigurationConfig.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/redshift_hsm_configuration#description RedshiftHsmConfiguration#description}. |
+| <code><a href="#@cdktf/provider-aws.redshiftHsmConfiguration.RedshiftHsmConfigurationConfig.property.hsmConfigurationIdentifier">hsmConfigurationIdentifier</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/redshift_hsm_configuration#hsm_configuration_identifier RedshiftHsmConfiguration#hsm_configuration_identifier}. |
+| <code><a href="#@cdktf/provider-aws.redshiftHsmConfiguration.RedshiftHsmConfigurationConfig.property.hsmIpAddress">hsmIpAddress</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/redshift_hsm_configuration#hsm_ip_address RedshiftHsmConfiguration#hsm_ip_address}. |
+| <code><a href="#@cdktf/provider-aws.redshiftHsmConfiguration.RedshiftHsmConfigurationConfig.property.hsmPartitionName">hsmPartitionName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/redshift_hsm_configuration#hsm_partition_name RedshiftHsmConfiguration#hsm_partition_name}. |
+| <code><a href="#@cdktf/provider-aws.redshiftHsmConfiguration.RedshiftHsmConfigurationConfig.property.hsmPartitionPassword">hsmPartitionPassword</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/redshift_hsm_configuration#hsm_partition_password RedshiftHsmConfiguration#hsm_partition_password}. |
+| <code><a href="#@cdktf/provider-aws.redshiftHsmConfiguration.RedshiftHsmConfigurationConfig.property.hsmServerPublicCertificate">hsmServerPublicCertificate</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/redshift_hsm_configuration#hsm_server_public_certificate RedshiftHsmConfiguration#hsm_server_public_certificate}. |
+| <code><a href="#@cdktf/provider-aws.redshiftHsmConfiguration.RedshiftHsmConfigurationConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/redshift_hsm_configuration#id RedshiftHsmConfiguration#id}. |
 | <code><a href="#@cdktf/provider-aws.redshiftHsmConfiguration.RedshiftHsmConfigurationConfig.property.region">region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktf/provider-aws.redshiftHsmConfiguration.RedshiftHsmConfigurationConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/redshift_hsm_configuration#tags RedshiftHsmConfiguration#tags}. |
-| <code><a href="#@cdktf/provider-aws.redshiftHsmConfiguration.RedshiftHsmConfigurationConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/redshift_hsm_configuration#tags_all RedshiftHsmConfiguration#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.redshiftHsmConfiguration.RedshiftHsmConfigurationConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/redshift_hsm_configuration#tags RedshiftHsmConfiguration#tags}. |
+| <code><a href="#@cdktf/provider-aws.redshiftHsmConfiguration.RedshiftHsmConfigurationConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/redshift_hsm_configuration#tags_all RedshiftHsmConfiguration#tags_all}. |
 
 ---
 
@@ -1033,7 +1033,7 @@ public readonly description: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/redshift_hsm_configuration#description RedshiftHsmConfiguration#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/redshift_hsm_configuration#description RedshiftHsmConfiguration#description}.
 
 ---
 
@@ -1045,7 +1045,7 @@ public readonly hsmConfigurationIdentifier: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/redshift_hsm_configuration#hsm_configuration_identifier RedshiftHsmConfiguration#hsm_configuration_identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/redshift_hsm_configuration#hsm_configuration_identifier RedshiftHsmConfiguration#hsm_configuration_identifier}.
 
 ---
 
@@ -1057,7 +1057,7 @@ public readonly hsmIpAddress: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/redshift_hsm_configuration#hsm_ip_address RedshiftHsmConfiguration#hsm_ip_address}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/redshift_hsm_configuration#hsm_ip_address RedshiftHsmConfiguration#hsm_ip_address}.
 
 ---
 
@@ -1069,7 +1069,7 @@ public readonly hsmPartitionName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/redshift_hsm_configuration#hsm_partition_name RedshiftHsmConfiguration#hsm_partition_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/redshift_hsm_configuration#hsm_partition_name RedshiftHsmConfiguration#hsm_partition_name}.
 
 ---
 
@@ -1081,7 +1081,7 @@ public readonly hsmPartitionPassword: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/redshift_hsm_configuration#hsm_partition_password RedshiftHsmConfiguration#hsm_partition_password}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/redshift_hsm_configuration#hsm_partition_password RedshiftHsmConfiguration#hsm_partition_password}.
 
 ---
 
@@ -1093,7 +1093,7 @@ public readonly hsmServerPublicCertificate: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/redshift_hsm_configuration#hsm_server_public_certificate RedshiftHsmConfiguration#hsm_server_public_certificate}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/redshift_hsm_configuration#hsm_server_public_certificate RedshiftHsmConfiguration#hsm_server_public_certificate}.
 
 ---
 
@@ -1105,7 +1105,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/redshift_hsm_configuration#id RedshiftHsmConfiguration#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/redshift_hsm_configuration#id RedshiftHsmConfiguration#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1122,7 +1122,7 @@ public readonly region: string;
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/redshift_hsm_configuration#region RedshiftHsmConfiguration#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/redshift_hsm_configuration#region RedshiftHsmConfiguration#region}
 
 ---
 
@@ -1134,7 +1134,7 @@ public readonly tags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/redshift_hsm_configuration#tags RedshiftHsmConfiguration#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/redshift_hsm_configuration#tags RedshiftHsmConfiguration#tags}.
 
 ---
 
@@ -1146,7 +1146,7 @@ public readonly tagsAll: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/redshift_hsm_configuration#tags_all RedshiftHsmConfiguration#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/redshift_hsm_configuration#tags_all RedshiftHsmConfiguration#tags_all}.
 
 ---
 

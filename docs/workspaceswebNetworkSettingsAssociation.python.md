@@ -4,7 +4,7 @@
 
 ### WorkspaceswebNetworkSettingsAssociation <a name="WorkspaceswebNetworkSettingsAssociation" id="@cdktf/provider-aws.workspaceswebNetworkSettingsAssociation.WorkspaceswebNetworkSettingsAssociation"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/workspacesweb_network_settings_association aws_workspacesweb_network_settings_association}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/workspacesweb_network_settings_association aws_workspacesweb_network_settings_association}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.workspaceswebNetworkSettingsAssociation.WorkspaceswebNetworkSettingsAssociation.Initializer"></a>
 
@@ -38,8 +38,8 @@ workspaceswebNetworkSettingsAssociation.WorkspaceswebNetworkSettingsAssociation(
 | <code><a href="#@cdktf/provider-aws.workspaceswebNetworkSettingsAssociation.WorkspaceswebNetworkSettingsAssociation.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.workspaceswebNetworkSettingsAssociation.WorkspaceswebNetworkSettingsAssociation.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.workspaceswebNetworkSettingsAssociation.WorkspaceswebNetworkSettingsAssociation.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.workspaceswebNetworkSettingsAssociation.WorkspaceswebNetworkSettingsAssociation.Initializer.parameter.networkSettingsArn">network_settings_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/workspacesweb_network_settings_association#network_settings_arn WorkspaceswebNetworkSettingsAssociation#network_settings_arn}. |
-| <code><a href="#@cdktf/provider-aws.workspaceswebNetworkSettingsAssociation.WorkspaceswebNetworkSettingsAssociation.Initializer.parameter.portalArn">portal_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/workspacesweb_network_settings_association#portal_arn WorkspaceswebNetworkSettingsAssociation#portal_arn}. |
+| <code><a href="#@cdktf/provider-aws.workspaceswebNetworkSettingsAssociation.WorkspaceswebNetworkSettingsAssociation.Initializer.parameter.networkSettingsArn">network_settings_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/workspacesweb_network_settings_association#network_settings_arn WorkspaceswebNetworkSettingsAssociation#network_settings_arn}. |
+| <code><a href="#@cdktf/provider-aws.workspaceswebNetworkSettingsAssociation.WorkspaceswebNetworkSettingsAssociation.Initializer.parameter.portalArn">portal_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/workspacesweb_network_settings_association#portal_arn WorkspaceswebNetworkSettingsAssociation#portal_arn}. |
 | <code><a href="#@cdktf/provider-aws.workspaceswebNetworkSettingsAssociation.WorkspaceswebNetworkSettingsAssociation.Initializer.parameter.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -108,7 +108,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/workspacesweb_network_settings_association#network_settings_arn WorkspaceswebNetworkSettingsAssociation#network_settings_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/workspacesweb_network_settings_association#network_settings_arn WorkspaceswebNetworkSettingsAssociation#network_settings_arn}.
 
 ---
 
@@ -116,7 +116,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/workspacesweb_network_settings_association#portal_arn WorkspaceswebNetworkSettingsAssociation#portal_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/workspacesweb_network_settings_association#portal_arn WorkspaceswebNetworkSettingsAssociation#portal_arn}.
 
 ---
 
@@ -126,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/workspacesweb_network_settings_association#region WorkspaceswebNetworkSettingsAssociation#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/workspacesweb_network_settings_association#region WorkspaceswebNetworkSettingsAssociation#region}
 
 ---
 
@@ -606,7 +606,7 @@ The construct id used in the generated config for the WorkspaceswebNetworkSettin
 
 The id of the existing WorkspaceswebNetworkSettingsAssociation that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/workspacesweb_network_settings_association#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/workspacesweb_network_settings_association#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -899,8 +899,8 @@ workspaceswebNetworkSettingsAssociation.WorkspaceswebNetworkSettingsAssociationC
 | <code><a href="#@cdktf/provider-aws.workspaceswebNetworkSettingsAssociation.WorkspaceswebNetworkSettingsAssociationConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.workspaceswebNetworkSettingsAssociation.WorkspaceswebNetworkSettingsAssociationConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.workspaceswebNetworkSettingsAssociation.WorkspaceswebNetworkSettingsAssociationConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.workspaceswebNetworkSettingsAssociation.WorkspaceswebNetworkSettingsAssociationConfig.property.networkSettingsArn">network_settings_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/workspacesweb_network_settings_association#network_settings_arn WorkspaceswebNetworkSettingsAssociation#network_settings_arn}. |
-| <code><a href="#@cdktf/provider-aws.workspaceswebNetworkSettingsAssociation.WorkspaceswebNetworkSettingsAssociationConfig.property.portalArn">portal_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/workspacesweb_network_settings_association#portal_arn WorkspaceswebNetworkSettingsAssociation#portal_arn}. |
+| <code><a href="#@cdktf/provider-aws.workspaceswebNetworkSettingsAssociation.WorkspaceswebNetworkSettingsAssociationConfig.property.networkSettingsArn">network_settings_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/workspacesweb_network_settings_association#network_settings_arn WorkspaceswebNetworkSettingsAssociation#network_settings_arn}. |
+| <code><a href="#@cdktf/provider-aws.workspaceswebNetworkSettingsAssociation.WorkspaceswebNetworkSettingsAssociationConfig.property.portalArn">portal_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/workspacesweb_network_settings_association#portal_arn WorkspaceswebNetworkSettingsAssociation#portal_arn}. |
 | <code><a href="#@cdktf/provider-aws.workspaceswebNetworkSettingsAssociation.WorkspaceswebNetworkSettingsAssociationConfig.property.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -983,7 +983,7 @@ network_settings_arn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/workspacesweb_network_settings_association#network_settings_arn WorkspaceswebNetworkSettingsAssociation#network_settings_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/workspacesweb_network_settings_association#network_settings_arn WorkspaceswebNetworkSettingsAssociation#network_settings_arn}.
 
 ---
 
@@ -995,7 +995,7 @@ portal_arn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/workspacesweb_network_settings_association#portal_arn WorkspaceswebNetworkSettingsAssociation#portal_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/workspacesweb_network_settings_association#portal_arn WorkspaceswebNetworkSettingsAssociation#portal_arn}.
 
 ---
 
@@ -1009,7 +1009,7 @@ region: str
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/workspacesweb_network_settings_association#region WorkspaceswebNetworkSettingsAssociation#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/workspacesweb_network_settings_association#region WorkspaceswebNetworkSettingsAssociation#region}
 
 ---
 

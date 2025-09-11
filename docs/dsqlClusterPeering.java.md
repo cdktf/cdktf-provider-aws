@@ -4,7 +4,7 @@
 
 ### DsqlClusterPeering <a name="DsqlClusterPeering" id="@cdktf/provider-aws.dsqlClusterPeering.DsqlClusterPeering"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/dsql_cluster_peering aws_dsql_cluster_peering}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/dsql_cluster_peering aws_dsql_cluster_peering}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dsqlClusterPeering.DsqlClusterPeering.Initializer"></a>
 
@@ -42,9 +42,9 @@ DsqlClusterPeering.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-aws.dsqlClusterPeering.DsqlClusterPeering.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dsqlClusterPeering.DsqlClusterPeering.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dsqlClusterPeering.DsqlClusterPeering.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dsqlClusterPeering.DsqlClusterPeering.Initializer.parameter.clusters">clusters</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/dsql_cluster_peering#clusters DsqlClusterPeering#clusters}. |
-| <code><a href="#@cdktf/provider-aws.dsqlClusterPeering.DsqlClusterPeering.Initializer.parameter.identifier">identifier</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/dsql_cluster_peering#identifier DsqlClusterPeering#identifier}. |
-| <code><a href="#@cdktf/provider-aws.dsqlClusterPeering.DsqlClusterPeering.Initializer.parameter.witnessRegion">witnessRegion</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/dsql_cluster_peering#witness_region DsqlClusterPeering#witness_region}. |
+| <code><a href="#@cdktf/provider-aws.dsqlClusterPeering.DsqlClusterPeering.Initializer.parameter.clusters">clusters</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/dsql_cluster_peering#clusters DsqlClusterPeering#clusters}. |
+| <code><a href="#@cdktf/provider-aws.dsqlClusterPeering.DsqlClusterPeering.Initializer.parameter.identifier">identifier</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/dsql_cluster_peering#identifier DsqlClusterPeering#identifier}. |
+| <code><a href="#@cdktf/provider-aws.dsqlClusterPeering.DsqlClusterPeering.Initializer.parameter.witnessRegion">witnessRegion</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/dsql_cluster_peering#witness_region DsqlClusterPeering#witness_region}. |
 | <code><a href="#@cdktf/provider-aws.dsqlClusterPeering.DsqlClusterPeering.Initializer.parameter.region">region</a></code> | <code>java.lang.String</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktf/provider-aws.dsqlClusterPeering.DsqlClusterPeering.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-aws.dsqlClusterPeering.DsqlClusterPeeringTimeouts">DsqlClusterPeeringTimeouts</a></code> | timeouts block. |
 
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/dsql_cluster_peering#clusters DsqlClusterPeering#clusters}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/dsql_cluster_peering#clusters DsqlClusterPeering#clusters}.
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/dsql_cluster_peering#identifier DsqlClusterPeering#identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/dsql_cluster_peering#identifier DsqlClusterPeering#identifier}.
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/dsql_cluster_peering#witness_region DsqlClusterPeering#witness_region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/dsql_cluster_peering#witness_region DsqlClusterPeering#witness_region}.
 
 ---
 
@@ -140,7 +140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/dsql_cluster_peering#region DsqlClusterPeering#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/dsql_cluster_peering#region DsqlClusterPeering#region}
 
 ---
 
@@ -150,7 +150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/dsql_cluster_peering#timeouts DsqlClusterPeering#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/dsql_cluster_peering#timeouts DsqlClusterPeering#timeouts}
 
 ---
 
@@ -604,7 +604,7 @@ The construct id used in the generated config for the DsqlClusterPeering to impo
 
 The id of the existing DsqlClusterPeering that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/dsql_cluster_peering#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/dsql_cluster_peering#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -947,9 +947,9 @@ DsqlClusterPeeringConfig.builder()
 | <code><a href="#@cdktf/provider-aws.dsqlClusterPeering.DsqlClusterPeeringConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dsqlClusterPeering.DsqlClusterPeeringConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dsqlClusterPeering.DsqlClusterPeeringConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dsqlClusterPeering.DsqlClusterPeeringConfig.property.clusters">clusters</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/dsql_cluster_peering#clusters DsqlClusterPeering#clusters}. |
-| <code><a href="#@cdktf/provider-aws.dsqlClusterPeering.DsqlClusterPeeringConfig.property.identifier">identifier</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/dsql_cluster_peering#identifier DsqlClusterPeering#identifier}. |
-| <code><a href="#@cdktf/provider-aws.dsqlClusterPeering.DsqlClusterPeeringConfig.property.witnessRegion">witnessRegion</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/dsql_cluster_peering#witness_region DsqlClusterPeering#witness_region}. |
+| <code><a href="#@cdktf/provider-aws.dsqlClusterPeering.DsqlClusterPeeringConfig.property.clusters">clusters</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/dsql_cluster_peering#clusters DsqlClusterPeering#clusters}. |
+| <code><a href="#@cdktf/provider-aws.dsqlClusterPeering.DsqlClusterPeeringConfig.property.identifier">identifier</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/dsql_cluster_peering#identifier DsqlClusterPeering#identifier}. |
+| <code><a href="#@cdktf/provider-aws.dsqlClusterPeering.DsqlClusterPeeringConfig.property.witnessRegion">witnessRegion</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/dsql_cluster_peering#witness_region DsqlClusterPeering#witness_region}. |
 | <code><a href="#@cdktf/provider-aws.dsqlClusterPeering.DsqlClusterPeeringConfig.property.region">region</a></code> | <code>java.lang.String</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktf/provider-aws.dsqlClusterPeering.DsqlClusterPeeringConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-aws.dsqlClusterPeering.DsqlClusterPeeringTimeouts">DsqlClusterPeeringTimeouts</a></code> | timeouts block. |
 
@@ -1033,7 +1033,7 @@ public java.util.List<java.lang.String> getClusters();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/dsql_cluster_peering#clusters DsqlClusterPeering#clusters}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/dsql_cluster_peering#clusters DsqlClusterPeering#clusters}.
 
 ---
 
@@ -1045,7 +1045,7 @@ public java.lang.String getIdentifier();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/dsql_cluster_peering#identifier DsqlClusterPeering#identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/dsql_cluster_peering#identifier DsqlClusterPeering#identifier}.
 
 ---
 
@@ -1057,7 +1057,7 @@ public java.lang.String getWitnessRegion();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/dsql_cluster_peering#witness_region DsqlClusterPeering#witness_region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/dsql_cluster_peering#witness_region DsqlClusterPeering#witness_region}.
 
 ---
 
@@ -1071,7 +1071,7 @@ public java.lang.String getRegion();
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/dsql_cluster_peering#region DsqlClusterPeering#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/dsql_cluster_peering#region DsqlClusterPeering#region}
 
 ---
 
@@ -1085,7 +1085,7 @@ public DsqlClusterPeeringTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/dsql_cluster_peering#timeouts DsqlClusterPeering#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/dsql_cluster_peering#timeouts DsqlClusterPeering#timeouts}
 
 ---
 
@@ -1119,7 +1119,7 @@ public java.lang.String getCreate();
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/dsql_cluster_peering#create DsqlClusterPeering#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/dsql_cluster_peering#create DsqlClusterPeering#create}
 
 ---
 

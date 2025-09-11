@@ -4,7 +4,7 @@
 
 ### OpensearchPackage <a name="OpensearchPackage" id="@cdktf/provider-aws.opensearchPackage.OpensearchPackage"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/opensearch_package aws_opensearch_package}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/opensearch_package aws_opensearch_package}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opensearchPackage.OpensearchPackage.Initializer"></a>
 
@@ -74,6 +74,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.opensearchPackage.OpensearchPackage.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-aws.opensearchPackage.OpensearchPackage.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-aws.opensearchPackage.OpensearchPackage.putPackageSource">putPackageSource</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.opensearchPackage.OpensearchPackage.resetEngineVersion">resetEngineVersion</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.opensearchPackage.OpensearchPackage.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.opensearchPackage.OpensearchPackage.resetPackageDescription">resetPackageDescription</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.opensearchPackage.OpensearchPackage.resetRegion">resetRegion</a></code> | *No description.* |
@@ -380,6 +381,12 @@ public putPackageSource(value: OpensearchPackagePackageSource): void
 
 ---
 
+##### `resetEngineVersion` <a name="resetEngineVersion" id="@cdktf/provider-aws.opensearchPackage.OpensearchPackage.resetEngineVersion"></a>
+
+```typescript
+public resetEngineVersion(): void
+```
+
 ##### `resetId` <a name="resetId" id="@cdktf/provider-aws.opensearchPackage.OpensearchPackage.resetId"></a>
 
 ```typescript
@@ -501,7 +508,7 @@ The construct id used in the generated config for the OpensearchPackage to impor
 
 The id of the existing OpensearchPackage that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/opensearch_package#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/opensearch_package#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -534,12 +541,14 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0
 | <code><a href="#@cdktf/provider-aws.opensearchPackage.OpensearchPackage.property.availablePackageVersion">availablePackageVersion</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.opensearchPackage.OpensearchPackage.property.packageId">packageId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.opensearchPackage.OpensearchPackage.property.packageSource">packageSource</a></code> | <code><a href="#@cdktf/provider-aws.opensearchPackage.OpensearchPackagePackageSourceOutputReference">OpensearchPackagePackageSourceOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.opensearchPackage.OpensearchPackage.property.engineVersionInput">engineVersionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.opensearchPackage.OpensearchPackage.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.opensearchPackage.OpensearchPackage.property.packageDescriptionInput">packageDescriptionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.opensearchPackage.OpensearchPackage.property.packageNameInput">packageNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.opensearchPackage.OpensearchPackage.property.packageSourceInput">packageSourceInput</a></code> | <code><a href="#@cdktf/provider-aws.opensearchPackage.OpensearchPackagePackageSource">OpensearchPackagePackageSource</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.opensearchPackage.OpensearchPackage.property.packageTypeInput">packageTypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.opensearchPackage.OpensearchPackage.property.regionInput">regionInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.opensearchPackage.OpensearchPackage.property.engineVersion">engineVersion</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.opensearchPackage.OpensearchPackage.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.opensearchPackage.OpensearchPackage.property.packageDescription">packageDescription</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.opensearchPackage.OpensearchPackage.property.packageName">packageName</a></code> | <code>string</code> | *No description.* |
@@ -720,6 +729,16 @@ public readonly packageSource: OpensearchPackagePackageSourceOutputReference;
 
 ---
 
+##### `engineVersionInput`<sup>Optional</sup> <a name="engineVersionInput" id="@cdktf/provider-aws.opensearchPackage.OpensearchPackage.property.engineVersionInput"></a>
+
+```typescript
+public readonly engineVersionInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktf/provider-aws.opensearchPackage.OpensearchPackage.property.idInput"></a>
 
 ```typescript
@@ -774,6 +793,16 @@ public readonly packageTypeInput: string;
 
 ```typescript
 public readonly regionInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `engineVersion`<sup>Required</sup> <a name="engineVersion" id="@cdktf/provider-aws.opensearchPackage.OpensearchPackage.property.engineVersion"></a>
+
+```typescript
+public readonly engineVersion: string;
 ```
 
 - *Type:* string
@@ -871,11 +900,12 @@ const opensearchPackageConfig: opensearchPackage.OpensearchPackageConfig = { ...
 | <code><a href="#@cdktf/provider-aws.opensearchPackage.OpensearchPackageConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.opensearchPackage.OpensearchPackageConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.opensearchPackage.OpensearchPackageConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.opensearchPackage.OpensearchPackageConfig.property.packageName">packageName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/opensearch_package#package_name OpensearchPackage#package_name}. |
+| <code><a href="#@cdktf/provider-aws.opensearchPackage.OpensearchPackageConfig.property.packageName">packageName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/opensearch_package#package_name OpensearchPackage#package_name}. |
 | <code><a href="#@cdktf/provider-aws.opensearchPackage.OpensearchPackageConfig.property.packageSource">packageSource</a></code> | <code><a href="#@cdktf/provider-aws.opensearchPackage.OpensearchPackagePackageSource">OpensearchPackagePackageSource</a></code> | package_source block. |
-| <code><a href="#@cdktf/provider-aws.opensearchPackage.OpensearchPackageConfig.property.packageType">packageType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/opensearch_package#package_type OpensearchPackage#package_type}. |
-| <code><a href="#@cdktf/provider-aws.opensearchPackage.OpensearchPackageConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/opensearch_package#id OpensearchPackage#id}. |
-| <code><a href="#@cdktf/provider-aws.opensearchPackage.OpensearchPackageConfig.property.packageDescription">packageDescription</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/opensearch_package#package_description OpensearchPackage#package_description}. |
+| <code><a href="#@cdktf/provider-aws.opensearchPackage.OpensearchPackageConfig.property.packageType">packageType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/opensearch_package#package_type OpensearchPackage#package_type}. |
+| <code><a href="#@cdktf/provider-aws.opensearchPackage.OpensearchPackageConfig.property.engineVersion">engineVersion</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/opensearch_package#engine_version OpensearchPackage#engine_version}. |
+| <code><a href="#@cdktf/provider-aws.opensearchPackage.OpensearchPackageConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/opensearch_package#id OpensearchPackage#id}. |
+| <code><a href="#@cdktf/provider-aws.opensearchPackage.OpensearchPackageConfig.property.packageDescription">packageDescription</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/opensearch_package#package_description OpensearchPackage#package_description}. |
 | <code><a href="#@cdktf/provider-aws.opensearchPackage.OpensearchPackageConfig.property.region">region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -958,7 +988,7 @@ public readonly packageName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/opensearch_package#package_name OpensearchPackage#package_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/opensearch_package#package_name OpensearchPackage#package_name}.
 
 ---
 
@@ -972,7 +1002,7 @@ public readonly packageSource: OpensearchPackagePackageSource;
 
 package_source block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/opensearch_package#package_source OpensearchPackage#package_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/opensearch_package#package_source OpensearchPackage#package_source}
 
 ---
 
@@ -984,7 +1014,19 @@ public readonly packageType: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/opensearch_package#package_type OpensearchPackage#package_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/opensearch_package#package_type OpensearchPackage#package_type}.
+
+---
+
+##### `engineVersion`<sup>Optional</sup> <a name="engineVersion" id="@cdktf/provider-aws.opensearchPackage.OpensearchPackageConfig.property.engineVersion"></a>
+
+```typescript
+public readonly engineVersion: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/opensearch_package#engine_version OpensearchPackage#engine_version}.
 
 ---
 
@@ -996,7 +1038,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/opensearch_package#id OpensearchPackage#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/opensearch_package#id OpensearchPackage#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1011,7 +1053,7 @@ public readonly packageDescription: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/opensearch_package#package_description OpensearchPackage#package_description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/opensearch_package#package_description OpensearchPackage#package_description}.
 
 ---
 
@@ -1025,7 +1067,7 @@ public readonly region: string;
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/opensearch_package#region OpensearchPackage#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/opensearch_package#region OpensearchPackage#region}
 
 ---
 
@@ -1043,8 +1085,8 @@ const opensearchPackagePackageSource: opensearchPackage.OpensearchPackagePackage
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.opensearchPackage.OpensearchPackagePackageSource.property.s3BucketName">s3BucketName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/opensearch_package#s3_bucket_name OpensearchPackage#s3_bucket_name}. |
-| <code><a href="#@cdktf/provider-aws.opensearchPackage.OpensearchPackagePackageSource.property.s3Key">s3Key</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/opensearch_package#s3_key OpensearchPackage#s3_key}. |
+| <code><a href="#@cdktf/provider-aws.opensearchPackage.OpensearchPackagePackageSource.property.s3BucketName">s3BucketName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/opensearch_package#s3_bucket_name OpensearchPackage#s3_bucket_name}. |
+| <code><a href="#@cdktf/provider-aws.opensearchPackage.OpensearchPackagePackageSource.property.s3Key">s3Key</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/opensearch_package#s3_key OpensearchPackage#s3_key}. |
 
 ---
 
@@ -1056,7 +1098,7 @@ public readonly s3BucketName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/opensearch_package#s3_bucket_name OpensearchPackage#s3_bucket_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/opensearch_package#s3_bucket_name OpensearchPackage#s3_bucket_name}.
 
 ---
 
@@ -1068,7 +1110,7 @@ public readonly s3Key: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/opensearch_package#s3_key OpensearchPackage#s3_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/opensearch_package#s3_key OpensearchPackage#s3_key}.
 
 ---
 

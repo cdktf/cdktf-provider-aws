@@ -4,7 +4,7 @@
 
 ### QuicksightKeyRegistration <a name="QuicksightKeyRegistration" id="@cdktf/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistration"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/quicksight_key_registration aws_quicksight_key_registration}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/quicksight_key_registration aws_quicksight_key_registration}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistration.Initializer"></a>
 
@@ -38,7 +38,7 @@ quicksightKeyRegistration.QuicksightKeyRegistration(
 | <code><a href="#@cdktf/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistration.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistration.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistration.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistration.Initializer.parameter.awsAccountId">aws_account_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/quicksight_key_registration#aws_account_id QuicksightKeyRegistration#aws_account_id}. |
+| <code><a href="#@cdktf/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistration.Initializer.parameter.awsAccountId">aws_account_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/quicksight_key_registration#aws_account_id QuicksightKeyRegistration#aws_account_id}. |
 | <code><a href="#@cdktf/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistration.Initializer.parameter.keyRegistration">key_registration</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistrationKeyRegistration">QuicksightKeyRegistrationKeyRegistration</a>]]</code> | key_registration block. |
 | <code><a href="#@cdktf/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistration.Initializer.parameter.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
@@ -108,7 +108,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/quicksight_key_registration#aws_account_id QuicksightKeyRegistration#aws_account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/quicksight_key_registration#aws_account_id QuicksightKeyRegistration#aws_account_id}.
 
 ---
 
@@ -118,7 +118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 key_registration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/quicksight_key_registration#key_registration QuicksightKeyRegistration#key_registration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/quicksight_key_registration#key_registration QuicksightKeyRegistration#key_registration}
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/quicksight_key_registration#region QuicksightKeyRegistration#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/quicksight_key_registration#region QuicksightKeyRegistration#region}
 
 ---
 
@@ -637,7 +637,7 @@ The construct id used in the generated config for the QuicksightKeyRegistration 
 
 The id of the existing QuicksightKeyRegistration that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/quicksight_key_registration#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/quicksight_key_registration#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -930,7 +930,7 @@ quicksightKeyRegistration.QuicksightKeyRegistrationConfig(
 | <code><a href="#@cdktf/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistrationConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistrationConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistrationConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistrationConfig.property.awsAccountId">aws_account_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/quicksight_key_registration#aws_account_id QuicksightKeyRegistration#aws_account_id}. |
+| <code><a href="#@cdktf/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistrationConfig.property.awsAccountId">aws_account_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/quicksight_key_registration#aws_account_id QuicksightKeyRegistration#aws_account_id}. |
 | <code><a href="#@cdktf/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistrationConfig.property.keyRegistration">key_registration</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistrationKeyRegistration">QuicksightKeyRegistrationKeyRegistration</a>]]</code> | key_registration block. |
 | <code><a href="#@cdktf/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistrationConfig.property.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
@@ -1014,7 +1014,7 @@ aws_account_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/quicksight_key_registration#aws_account_id QuicksightKeyRegistration#aws_account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/quicksight_key_registration#aws_account_id QuicksightKeyRegistration#aws_account_id}.
 
 ---
 
@@ -1028,7 +1028,7 @@ key_registration: typing.Union[IResolvable, typing.List[QuicksightKeyRegistratio
 
 key_registration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/quicksight_key_registration#key_registration QuicksightKeyRegistration#key_registration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/quicksight_key_registration#key_registration QuicksightKeyRegistration#key_registration}
 
 ---
 
@@ -1042,7 +1042,7 @@ region: str
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/quicksight_key_registration#region QuicksightKeyRegistration#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/quicksight_key_registration#region QuicksightKeyRegistration#region}
 
 ---
 
@@ -1063,8 +1063,8 @@ quicksightKeyRegistration.QuicksightKeyRegistrationKeyRegistration(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistrationKeyRegistration.property.keyArn">key_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/quicksight_key_registration#key_arn QuicksightKeyRegistration#key_arn}. |
-| <code><a href="#@cdktf/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistrationKeyRegistration.property.defaultKey">default_key</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/quicksight_key_registration#default_key QuicksightKeyRegistration#default_key}. |
+| <code><a href="#@cdktf/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistrationKeyRegistration.property.keyArn">key_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/quicksight_key_registration#key_arn QuicksightKeyRegistration#key_arn}. |
+| <code><a href="#@cdktf/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistrationKeyRegistration.property.defaultKey">default_key</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/quicksight_key_registration#default_key QuicksightKeyRegistration#default_key}. |
 
 ---
 
@@ -1076,7 +1076,7 @@ key_arn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/quicksight_key_registration#key_arn QuicksightKeyRegistration#key_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/quicksight_key_registration#key_arn QuicksightKeyRegistration#key_arn}.
 
 ---
 
@@ -1088,7 +1088,7 @@ default_key: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/quicksight_key_registration#default_key QuicksightKeyRegistration#default_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/quicksight_key_registration#default_key QuicksightKeyRegistration#default_key}.
 
 ---
 

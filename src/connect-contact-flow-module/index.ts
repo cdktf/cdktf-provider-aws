@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/connect_contact_flow_module
+// https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/connect_contact_flow_module
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,54 +13,54 @@ import * as cdktf from 'cdktf';
 
 export interface ConnectContactFlowModuleConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/connect_contact_flow_module#content ConnectContactFlowModule#content}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/connect_contact_flow_module#content ConnectContactFlowModule#content}
   */
   readonly content?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/connect_contact_flow_module#content_hash ConnectContactFlowModule#content_hash}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/connect_contact_flow_module#content_hash ConnectContactFlowModule#content_hash}
   */
   readonly contentHash?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/connect_contact_flow_module#description ConnectContactFlowModule#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/connect_contact_flow_module#description ConnectContactFlowModule#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/connect_contact_flow_module#filename ConnectContactFlowModule#filename}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/connect_contact_flow_module#filename ConnectContactFlowModule#filename}
   */
   readonly filename?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/connect_contact_flow_module#id ConnectContactFlowModule#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/connect_contact_flow_module#id ConnectContactFlowModule#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/connect_contact_flow_module#instance_id ConnectContactFlowModule#instance_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/connect_contact_flow_module#instance_id ConnectContactFlowModule#instance_id}
   */
   readonly instanceId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/connect_contact_flow_module#name ConnectContactFlowModule#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/connect_contact_flow_module#name ConnectContactFlowModule#name}
   */
   readonly name: string;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/connect_contact_flow_module#region ConnectContactFlowModule#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/connect_contact_flow_module#region ConnectContactFlowModule#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/connect_contact_flow_module#tags ConnectContactFlowModule#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/connect_contact_flow_module#tags ConnectContactFlowModule#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/connect_contact_flow_module#tags_all ConnectContactFlowModule#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/connect_contact_flow_module#tags_all ConnectContactFlowModule#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/connect_contact_flow_module aws_connect_contact_flow_module}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/connect_contact_flow_module aws_connect_contact_flow_module}
 */
 export class ConnectContactFlowModule extends cdktf.TerraformResource {
 
@@ -76,7 +76,7 @@ export class ConnectContactFlowModule extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ConnectContactFlowModule resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ConnectContactFlowModule to import
-  * @param importFromId The id of the existing ConnectContactFlowModule that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/connect_contact_flow_module#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ConnectContactFlowModule that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/connect_contact_flow_module#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ConnectContactFlowModule to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -88,7 +88,7 @@ export class ConnectContactFlowModule extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/connect_contact_flow_module aws_connect_contact_flow_module} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/connect_contact_flow_module aws_connect_contact_flow_module} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -99,7 +99,7 @@ export class ConnectContactFlowModule extends cdktf.TerraformResource {
       terraformResourceType: 'aws_connect_contact_flow_module',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.12.0',
+        providerVersion: '6.13.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
