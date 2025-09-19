@@ -1,3 +1,3 @@
 # `aws_bedrockagent_flow`
 
-Refer to the Terraform Registry for docs: [`aws_bedrockagent_flow`](https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/bedrockagent_flow).
+Refer to the Terraform Registry for docs: [`aws_bedrockagent_flow`](https://registry.terraform.io/providers/hashicorp/aws/6.14.0/docs/resources/bedrockagent_flow).

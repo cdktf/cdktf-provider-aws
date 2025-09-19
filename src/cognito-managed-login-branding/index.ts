@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/cognito_managed_login_branding
+// https://registry.terraform.io/providers/hashicorp/aws/6.14.0/docs/resources/cognito_managed_login_branding
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,53 +13,53 @@ import * as cdktf from 'cdktf';
 
 export interface CognitoManagedLoginBrandingConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/cognito_managed_login_branding#client_id CognitoManagedLoginBranding#client_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.0/docs/resources/cognito_managed_login_branding#client_id CognitoManagedLoginBranding#client_id}
   */
   readonly clientId: string;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/cognito_managed_login_branding#region CognitoManagedLoginBranding#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.0/docs/resources/cognito_managed_login_branding#region CognitoManagedLoginBranding#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/cognito_managed_login_branding#settings CognitoManagedLoginBranding#settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.0/docs/resources/cognito_managed_login_branding#settings CognitoManagedLoginBranding#settings}
   */
   readonly settings?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/cognito_managed_login_branding#use_cognito_provided_values CognitoManagedLoginBranding#use_cognito_provided_values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.0/docs/resources/cognito_managed_login_branding#use_cognito_provided_values CognitoManagedLoginBranding#use_cognito_provided_values}
   */
   readonly useCognitoProvidedValues?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/cognito_managed_login_branding#user_pool_id CognitoManagedLoginBranding#user_pool_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.0/docs/resources/cognito_managed_login_branding#user_pool_id CognitoManagedLoginBranding#user_pool_id}
   */
   readonly userPoolId: string;
   /**
   * asset block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/cognito_managed_login_branding#asset CognitoManagedLoginBranding#asset}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.0/docs/resources/cognito_managed_login_branding#asset CognitoManagedLoginBranding#asset}
   */
   readonly asset?: CognitoManagedLoginBrandingAsset[] | cdktf.IResolvable;
 }
 export interface CognitoManagedLoginBrandingAsset {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/cognito_managed_login_branding#bytes CognitoManagedLoginBranding#bytes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.0/docs/resources/cognito_managed_login_branding#bytes CognitoManagedLoginBranding#bytes}
   */
   readonly bytes?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/cognito_managed_login_branding#category CognitoManagedLoginBranding#category}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.0/docs/resources/cognito_managed_login_branding#category CognitoManagedLoginBranding#category}
   */
   readonly category: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/cognito_managed_login_branding#color_mode CognitoManagedLoginBranding#color_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.0/docs/resources/cognito_managed_login_branding#color_mode CognitoManagedLoginBranding#color_mode}
   */
   readonly colorMode: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/cognito_managed_login_branding#extension CognitoManagedLoginBranding#extension}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.0/docs/resources/cognito_managed_login_branding#extension CognitoManagedLoginBranding#extension}
   */
   readonly extension: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/cognito_managed_login_branding#resource_id CognitoManagedLoginBranding#resource_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.0/docs/resources/cognito_managed_login_branding#resource_id CognitoManagedLoginBranding#resource_id}
   */
   readonly resourceId?: string;
 }
@@ -282,7 +282,7 @@ export class CognitoManagedLoginBrandingAssetList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/cognito_managed_login_branding aws_cognito_managed_login_branding}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.0/docs/resources/cognito_managed_login_branding aws_cognito_managed_login_branding}
 */
 export class CognitoManagedLoginBranding extends cdktf.TerraformResource {
 
@@ -298,7 +298,7 @@ export class CognitoManagedLoginBranding extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a CognitoManagedLoginBranding resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CognitoManagedLoginBranding to import
-  * @param importFromId The id of the existing CognitoManagedLoginBranding that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/cognito_managed_login_branding#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing CognitoManagedLoginBranding that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.0/docs/resources/cognito_managed_login_branding#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CognitoManagedLoginBranding to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -310,7 +310,7 @@ export class CognitoManagedLoginBranding extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/cognito_managed_login_branding aws_cognito_managed_login_branding} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.0/docs/resources/cognito_managed_login_branding aws_cognito_managed_login_branding} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -321,7 +321,7 @@ export class CognitoManagedLoginBranding extends cdktf.TerraformResource {
       terraformResourceType: 'aws_cognito_managed_login_branding',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.13.0',
+        providerVersion: '6.14.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

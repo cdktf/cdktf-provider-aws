@@ -4,7 +4,7 @@
 
 ### WorkspaceswebTrustStore <a name="WorkspaceswebTrustStore" id="@cdktf/provider-aws.workspaceswebTrustStore.WorkspaceswebTrustStore"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/workspacesweb_trust_store aws_workspacesweb_trust_store}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.0/docs/resources/workspacesweb_trust_store aws_workspacesweb_trust_store}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.workspaceswebTrustStore.WorkspaceswebTrustStore.Initializer"></a>
 
@@ -501,7 +501,7 @@ The construct id used in the generated config for the WorkspaceswebTrustStore to
 
 The id of the existing WorkspaceswebTrustStore that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/workspacesweb_trust_store#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.0/docs/resources/workspacesweb_trust_store#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -809,7 +809,7 @@ const workspaceswebTrustStoreCertificate: workspaceswebTrustStore.WorkspaceswebT
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.workspaceswebTrustStore.WorkspaceswebTrustStoreCertificate.property.body">body</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/workspacesweb_trust_store#body WorkspaceswebTrustStore#body}. |
+| <code><a href="#@cdktf/provider-aws.workspaceswebTrustStore.WorkspaceswebTrustStoreCertificate.property.body">body</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.0/docs/resources/workspacesweb_trust_store#body WorkspaceswebTrustStore#body}. |
 
 ---
 
@@ -821,7 +821,7 @@ public readonly body: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/workspacesweb_trust_store#body WorkspaceswebTrustStore#body}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.0/docs/resources/workspacesweb_trust_store#body WorkspaceswebTrustStore#body}.
 
 ---
 
@@ -848,7 +848,7 @@ const workspaceswebTrustStoreConfig: workspaceswebTrustStore.WorkspaceswebTrustS
 | <code><a href="#@cdktf/provider-aws.workspaceswebTrustStore.WorkspaceswebTrustStoreConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.workspaceswebTrustStore.WorkspaceswebTrustStoreConfig.property.certificate">certificate</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.workspaceswebTrustStore.WorkspaceswebTrustStoreCertificate">WorkspaceswebTrustStoreCertificate</a>[]</code> | certificate block. |
 | <code><a href="#@cdktf/provider-aws.workspaceswebTrustStore.WorkspaceswebTrustStoreConfig.property.region">region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktf/provider-aws.workspaceswebTrustStore.WorkspaceswebTrustStoreConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/workspacesweb_trust_store#tags WorkspaceswebTrustStore#tags}. |
+| <code><a href="#@cdktf/provider-aws.workspaceswebTrustStore.WorkspaceswebTrustStoreConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.0/docs/resources/workspacesweb_trust_store#tags WorkspaceswebTrustStore#tags}. |
 
 ---
 
@@ -932,7 +932,7 @@ public readonly certificate: IResolvable | WorkspaceswebTrustStoreCertificate[];
 
 certificate block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/workspacesweb_trust_store#certificate WorkspaceswebTrustStore#certificate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.0/docs/resources/workspacesweb_trust_store#certificate WorkspaceswebTrustStore#certificate}
 
 ---
 
@@ -946,7 +946,7 @@ public readonly region: string;
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/workspacesweb_trust_store#region WorkspaceswebTrustStore#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.0/docs/resources/workspacesweb_trust_store#region WorkspaceswebTrustStore#region}
 
 ---
 
@@ -958,7 +958,7 @@ public readonly tags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/workspacesweb_trust_store#tags WorkspaceswebTrustStore#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.0/docs/resources/workspacesweb_trust_store#tags WorkspaceswebTrustStore#tags}.
 
 ---
 

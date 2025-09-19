@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/servicecatalog_tag_option
+// https://registry.terraform.io/providers/hashicorp/aws/6.14.0/docs/resources/servicecatalog_tag_option
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,52 +13,52 @@ import * as cdktf from 'cdktf';
 
 export interface ServicecatalogTagOptionConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/servicecatalog_tag_option#active ServicecatalogTagOption#active}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.0/docs/resources/servicecatalog_tag_option#active ServicecatalogTagOption#active}
   */
   readonly active?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/servicecatalog_tag_option#id ServicecatalogTagOption#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.0/docs/resources/servicecatalog_tag_option#id ServicecatalogTagOption#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/servicecatalog_tag_option#key ServicecatalogTagOption#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.0/docs/resources/servicecatalog_tag_option#key ServicecatalogTagOption#key}
   */
   readonly key: string;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/servicecatalog_tag_option#region ServicecatalogTagOption#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.0/docs/resources/servicecatalog_tag_option#region ServicecatalogTagOption#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/servicecatalog_tag_option#value ServicecatalogTagOption#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.0/docs/resources/servicecatalog_tag_option#value ServicecatalogTagOption#value}
   */
   readonly value: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/servicecatalog_tag_option#timeouts ServicecatalogTagOption#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.0/docs/resources/servicecatalog_tag_option#timeouts ServicecatalogTagOption#timeouts}
   */
   readonly timeouts?: ServicecatalogTagOptionTimeouts;
 }
 export interface ServicecatalogTagOptionTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/servicecatalog_tag_option#create ServicecatalogTagOption#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.0/docs/resources/servicecatalog_tag_option#create ServicecatalogTagOption#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/servicecatalog_tag_option#delete ServicecatalogTagOption#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.0/docs/resources/servicecatalog_tag_option#delete ServicecatalogTagOption#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/servicecatalog_tag_option#read ServicecatalogTagOption#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.0/docs/resources/servicecatalog_tag_option#read ServicecatalogTagOption#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/servicecatalog_tag_option#update ServicecatalogTagOption#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.0/docs/resources/servicecatalog_tag_option#update ServicecatalogTagOption#update}
   */
   readonly update?: string;
 }
@@ -239,7 +239,7 @@ export class ServicecatalogTagOptionTimeoutsOutputReference extends cdktf.Comple
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/servicecatalog_tag_option aws_servicecatalog_tag_option}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.0/docs/resources/servicecatalog_tag_option aws_servicecatalog_tag_option}
 */
 export class ServicecatalogTagOption extends cdktf.TerraformResource {
 
@@ -255,7 +255,7 @@ export class ServicecatalogTagOption extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ServicecatalogTagOption resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ServicecatalogTagOption to import
-  * @param importFromId The id of the existing ServicecatalogTagOption that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/servicecatalog_tag_option#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ServicecatalogTagOption that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.0/docs/resources/servicecatalog_tag_option#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ServicecatalogTagOption to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -267,7 +267,7 @@ export class ServicecatalogTagOption extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/servicecatalog_tag_option aws_servicecatalog_tag_option} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.0/docs/resources/servicecatalog_tag_option aws_servicecatalog_tag_option} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -278,7 +278,7 @@ export class ServicecatalogTagOption extends cdktf.TerraformResource {
       terraformResourceType: 'aws_servicecatalog_tag_option',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.13.0',
+        providerVersion: '6.14.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

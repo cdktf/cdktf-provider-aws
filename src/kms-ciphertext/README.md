@@ -1,3 +1,3 @@
 # `aws_kms_ciphertext`
 
-Refer to the Terraform Registry for docs: [`aws_kms_ciphertext`](https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/kms_ciphertext).
+Refer to the Terraform Registry for docs: [`aws_kms_ciphertext`](https://registry.terraform.io/providers/hashicorp/aws/6.14.0/docs/resources/kms_ciphertext).

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/workspacesweb_session_logger_association
+// https://registry.terraform.io/providers/hashicorp/aws/6.14.0/docs/resources/workspacesweb_session_logger_association
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,23 +13,23 @@ import * as cdktf from 'cdktf';
 
 export interface WorkspaceswebSessionLoggerAssociationConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/workspacesweb_session_logger_association#portal_arn WorkspaceswebSessionLoggerAssociation#portal_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.0/docs/resources/workspacesweb_session_logger_association#portal_arn WorkspaceswebSessionLoggerAssociation#portal_arn}
   */
   readonly portalArn: string;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/workspacesweb_session_logger_association#region WorkspaceswebSessionLoggerAssociation#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.0/docs/resources/workspacesweb_session_logger_association#region WorkspaceswebSessionLoggerAssociation#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/workspacesweb_session_logger_association#session_logger_arn WorkspaceswebSessionLoggerAssociation#session_logger_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.0/docs/resources/workspacesweb_session_logger_association#session_logger_arn WorkspaceswebSessionLoggerAssociation#session_logger_arn}
   */
   readonly sessionLoggerArn: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/workspacesweb_session_logger_association aws_workspacesweb_session_logger_association}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.0/docs/resources/workspacesweb_session_logger_association aws_workspacesweb_session_logger_association}
 */
 export class WorkspaceswebSessionLoggerAssociation extends cdktf.TerraformResource {
 
@@ -45,7 +45,7 @@ export class WorkspaceswebSessionLoggerAssociation extends cdktf.TerraformResour
   * Generates CDKTF code for importing a WorkspaceswebSessionLoggerAssociation resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the WorkspaceswebSessionLoggerAssociation to import
-  * @param importFromId The id of the existing WorkspaceswebSessionLoggerAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/workspacesweb_session_logger_association#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing WorkspaceswebSessionLoggerAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.0/docs/resources/workspacesweb_session_logger_association#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the WorkspaceswebSessionLoggerAssociation to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -57,7 +57,7 @@ export class WorkspaceswebSessionLoggerAssociation extends cdktf.TerraformResour
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/workspacesweb_session_logger_association aws_workspacesweb_session_logger_association} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.0/docs/resources/workspacesweb_session_logger_association aws_workspacesweb_session_logger_association} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -68,7 +68,7 @@ export class WorkspaceswebSessionLoggerAssociation extends cdktf.TerraformResour
       terraformResourceType: 'aws_workspacesweb_session_logger_association',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.13.0',
+        providerVersion: '6.14.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

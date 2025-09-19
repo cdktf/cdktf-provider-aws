@@ -1,3 +1,3 @@
 # `aws_ecs_account_setting_default`
 
-Refer to the Terraform Registry for docs: [`aws_ecs_account_setting_default`](https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/ecs_account_setting_default).
+Refer to the Terraform Registry for docs: [`aws_ecs_account_setting_default`](https://registry.terraform.io/providers/hashicorp/aws/6.14.0/docs/resources/ecs_account_setting_default).

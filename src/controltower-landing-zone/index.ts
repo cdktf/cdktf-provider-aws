@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/controltower_landing_zone
+// https://registry.terraform.io/providers/hashicorp/aws/6.14.0/docs/resources/controltower_landing_zone
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,38 +13,38 @@ import * as cdktf from 'cdktf';
 
 export interface ControltowerLandingZoneConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/controltower_landing_zone#id ControltowerLandingZone#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.0/docs/resources/controltower_landing_zone#id ControltowerLandingZone#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/controltower_landing_zone#manifest_json ControltowerLandingZone#manifest_json}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.0/docs/resources/controltower_landing_zone#manifest_json ControltowerLandingZone#manifest_json}
   */
   readonly manifestJson: string;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/controltower_landing_zone#region ControltowerLandingZone#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.0/docs/resources/controltower_landing_zone#region ControltowerLandingZone#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/controltower_landing_zone#tags ControltowerLandingZone#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.0/docs/resources/controltower_landing_zone#tags ControltowerLandingZone#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/controltower_landing_zone#tags_all ControltowerLandingZone#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.0/docs/resources/controltower_landing_zone#tags_all ControltowerLandingZone#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/controltower_landing_zone#version ControltowerLandingZone#version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.0/docs/resources/controltower_landing_zone#version ControltowerLandingZone#version}
   */
   readonly version: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/controltower_landing_zone#timeouts ControltowerLandingZone#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.0/docs/resources/controltower_landing_zone#timeouts ControltowerLandingZone#timeouts}
   */
   readonly timeouts?: ControltowerLandingZoneTimeouts;
 }
@@ -125,15 +125,15 @@ export class ControltowerLandingZoneDriftStatusList extends cdktf.ComplexList {
 }
 export interface ControltowerLandingZoneTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/controltower_landing_zone#create ControltowerLandingZone#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.0/docs/resources/controltower_landing_zone#create ControltowerLandingZone#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/controltower_landing_zone#delete ControltowerLandingZone#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.0/docs/resources/controltower_landing_zone#delete ControltowerLandingZone#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/controltower_landing_zone#update ControltowerLandingZone#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.0/docs/resources/controltower_landing_zone#update ControltowerLandingZone#update}
   */
   readonly update?: string;
 }
@@ -285,7 +285,7 @@ export class ControltowerLandingZoneTimeoutsOutputReference extends cdktf.Comple
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/controltower_landing_zone aws_controltower_landing_zone}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.0/docs/resources/controltower_landing_zone aws_controltower_landing_zone}
 */
 export class ControltowerLandingZone extends cdktf.TerraformResource {
 
@@ -301,7 +301,7 @@ export class ControltowerLandingZone extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ControltowerLandingZone resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ControltowerLandingZone to import
-  * @param importFromId The id of the existing ControltowerLandingZone that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/controltower_landing_zone#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ControltowerLandingZone that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.0/docs/resources/controltower_landing_zone#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ControltowerLandingZone to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -313,7 +313,7 @@ export class ControltowerLandingZone extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/controltower_landing_zone aws_controltower_landing_zone} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.0/docs/resources/controltower_landing_zone aws_controltower_landing_zone} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -324,7 +324,7 @@ export class ControltowerLandingZone extends cdktf.TerraformResource {
       terraformResourceType: 'aws_controltower_landing_zone',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.13.0',
+        providerVersion: '6.14.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
