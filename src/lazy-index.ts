@@ -349,6 +349,7 @@ Object.defineProperty(exports, 'connectUser', { get: function () { return requir
 Object.defineProperty(exports, 'connectUserHierarchyGroup', { get: function () { return require('./connect-user-hierarchy-group'); } });
 Object.defineProperty(exports, 'connectUserHierarchyStructure', { get: function () { return require('./connect-user-hierarchy-structure'); } });
 Object.defineProperty(exports, 'connectVocabulary', { get: function () { return require('./connect-vocabulary'); } });
+Object.defineProperty(exports, 'controltowerBaseline', { get: function () { return require('./controltower-baseline'); } });
 Object.defineProperty(exports, 'controltowerControl', { get: function () { return require('./controltower-control'); } });
 Object.defineProperty(exports, 'controltowerLandingZone', { get: function () { return require('./controltower-landing-zone'); } });
 Object.defineProperty(exports, 'costoptimizationhubEnrollmentStatus', { get: function () { return require('./costoptimizationhub-enrollment-status'); } });
@@ -976,6 +977,11 @@ Object.defineProperty(exports, 'notificationscontactsEmailContact', { get: funct
 Object.defineProperty(exports, 'oamLink', { get: function () { return require('./oam-link'); } });
 Object.defineProperty(exports, 'oamSink', { get: function () { return require('./oam-sink'); } });
 Object.defineProperty(exports, 'oamSinkPolicy', { get: function () { return require('./oam-sink-policy'); } });
+Object.defineProperty(exports, 'odbCloudAutonomousVmCluster', { get: function () { return require('./odb-cloud-autonomous-vm-cluster'); } });
+Object.defineProperty(exports, 'odbCloudExadataInfrastructure', { get: function () { return require('./odb-cloud-exadata-infrastructure'); } });
+Object.defineProperty(exports, 'odbCloudVmCluster', { get: function () { return require('./odb-cloud-vm-cluster'); } });
+Object.defineProperty(exports, 'odbNetwork', { get: function () { return require('./odb-network'); } });
+Object.defineProperty(exports, 'odbNetworkPeeringConnection', { get: function () { return require('./odb-network-peering-connection'); } });
 Object.defineProperty(exports, 'opensearchAuthorizeVpcEndpointAccess', { get: function () { return require('./opensearch-authorize-vpc-endpoint-access'); } });
 Object.defineProperty(exports, 'opensearchDomain', { get: function () { return require('./opensearch-domain'); } });
 Object.defineProperty(exports, 'opensearchDomainPolicy', { get: function () { return require('./opensearch-domain-policy'); } });
@@ -1603,6 +1609,7 @@ Object.defineProperty(exports, 'dataAwsBedrockInferenceProfile', { get: function
 Object.defineProperty(exports, 'dataAwsBedrockInferenceProfiles', { get: function () { return require('./data-aws-bedrock-inference-profiles'); } });
 Object.defineProperty(exports, 'dataAwsBedrockagentAgentVersions', { get: function () { return require('./data-aws-bedrockagent-agent-versions'); } });
 Object.defineProperty(exports, 'dataAwsBillingServiceAccount', { get: function () { return require('./data-aws-billing-service-account'); } });
+Object.defineProperty(exports, 'dataAwsBillingViews', { get: function () { return require('./data-aws-billing-views'); } });
 Object.defineProperty(exports, 'dataAwsBudgetsBudget', { get: function () { return require('./data-aws-budgets-budget'); } });
 Object.defineProperty(exports, 'dataAwsCallerIdentity', { get: function () { return require('./data-aws-caller-identity'); } });
 Object.defineProperty(exports, 'dataAwsCanonicalUserId', { get: function () { return require('./data-aws-canonical-user-id'); } });
@@ -1945,6 +1952,11 @@ Object.defineProperty(exports, 'dataAwsOamLink', { get: function () { return req
 Object.defineProperty(exports, 'dataAwsOamLinks', { get: function () { return require('./data-aws-oam-links'); } });
 Object.defineProperty(exports, 'dataAwsOamSink', { get: function () { return require('./data-aws-oam-sink'); } });
 Object.defineProperty(exports, 'dataAwsOamSinks', { get: function () { return require('./data-aws-oam-sinks'); } });
+Object.defineProperty(exports, 'dataAwsOdbCloudAutonomousVmCluster', { get: function () { return require('./data-aws-odb-cloud-autonomous-vm-cluster'); } });
+Object.defineProperty(exports, 'dataAwsOdbCloudExadataInfrastructure', { get: function () { return require('./data-aws-odb-cloud-exadata-infrastructure'); } });
+Object.defineProperty(exports, 'dataAwsOdbCloudVmCluster', { get: function () { return require('./data-aws-odb-cloud-vm-cluster'); } });
+Object.defineProperty(exports, 'dataAwsOdbNetwork', { get: function () { return require('./data-aws-odb-network'); } });
+Object.defineProperty(exports, 'dataAwsOdbNetworkPeeringConnection', { get: function () { return require('./data-aws-odb-network-peering-connection'); } });
 Object.defineProperty(exports, 'dataAwsOpensearchDomain', { get: function () { return require('./data-aws-opensearch-domain'); } });
 Object.defineProperty(exports, 'dataAwsOpensearchserverlessAccessPolicy', { get: function () { return require('./data-aws-opensearchserverless-access-policy'); } });
 Object.defineProperty(exports, 'dataAwsOpensearchserverlessCollection', { get: function () { return require('./data-aws-opensearchserverless-collection'); } });
